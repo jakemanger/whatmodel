@@ -6,7 +6,9 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 31.6** ±0.7 · #633 of 721 · from 22 benchmark results across 4 sources
+**score 32.6** ±0.8 · #640 of 724 · from 22 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,20 +22,20 @@ Microsoft · released 2023-09 · 1.42B params · mit
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Challenge</a>                        48.0%  ▁·▁··▁▁▇▂█●▃ beats 23/26   easy · avg 85%          41%  sharp · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">WinoGrande</a>                           72.5%  ▁····▁··▁▂█● beats 25/26   easy · avg 89%          12%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                                74.5%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 20/26   easy · avg 91%          10%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                             73.1%  ▁▁·▁▁▄▅▄█●▁▃ beats 23/26   easy · avg 88%         6.4%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                            62.6%  ▃···▁●▅█▇▃▁▁ beats 6/26    very easy · avg 92%    6.3%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">OpenBookQA</a>                           37.6%  █·▁▁▃·▁▃▅▇▃● beats 26/26   medium · avg 53%       4.8%  several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 12/26   easy · avg 88%         4.1%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">MedQA (USMLE, 4 options)</a>             31.1%  ▁▁··▄▁●··▄▃█ beats 6/17    easy · avg 76%         4.0%  sharp
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Social IQA</a>                           55.4%  ▁···▁▃█▁▁▁·● beats 26/26   medium · avg 63%       3.5%  blunt · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">SciQ</a>                                 93.2%  ▁·▁·▁·▃▅▃●▄▁ beats 16/26   very easy · avg 98%    3.0%  maxed out
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">MedMCQA</a>                              34.3%  ▂▂··▄▄●▂·▄██ beats 6/17    medium · avg 68%       2.3%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">LAMBADA (OpenAI version), last-wo…</a>   52.7%  ▁··●▁▁▁▂▆█▅▃ beats 2/26    very easy · avg 89%    1.6%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 11/276  medium · avg 73%       0.8%  at its level · noisy
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">PubMedQA</a>                             67.8%  ▂·▂▆·▄▂●▄▂█▂ beats 8/17    medium · avg 77%       0.4%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Challenge</a>                        48.0%  ▁·▁··▁▁▇▂█●▃ beats 23/26   easy · avg 82%          45%  sharp · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">WinoGrande</a>                           72.5%  ▁····▁··▁▂█● beats 25/26   easy · avg 87%          11%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                                74.5%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 20/26   easy · avg 88%         8.3%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                            62.6%  ▃···▁●▅█▇▃▁▁ beats 6/26    very easy · avg 91%    6.3%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                             73.1%  ▁▁·▁▁▄▅▄█●▁▃ beats 23/26   easy · avg 85%         5.4%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">OpenBookQA</a>                           37.6%  █·▁▁▃·▁▃▅▇▃● beats 26/26   hard · avg 48%         5.0%  several runs
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">MedQA (USMLE, 4 options)</a>             31.1%  ▁▁··▄▁●··▄▃█ beats 6/17    medium · avg 71%       3.9%  sharp
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 12/26   easy · avg 87%         3.9%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Social IQA</a>                           55.4%  ▁···▁▃█▁▁▁·● beats 26/26   medium · avg 60%       3.3%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">SciQ</a>                                 93.2%  ▁·▁·▁·▃▅▃●▄▁ beats 16/26   very easy · avg 97%    2.6%  blunt
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">MedMCQA</a>                              34.3%  ▂▂··▄▄●▂·▄██ beats 6/17    medium · avg 63%       2.0%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">LAMBADA (OpenAI version), last-wo…</a>   52.7%  ▁··●▁▁▁▂▆█▅▃ beats 2/26    very easy · avg 86%    1.5%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 11/276  medium · avg 72%       1.2%  noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">PubMedQA</a>                             67.8%  ▂·▂▆·▄▂●▄▂█▂ beats 8/17    medium · avg 75%       0.3%  blunt · at its level
 </pre>
 
 </details>
@@ -45,11 +47,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Stability AI</a>                                   10   67% ▇▇▇▇▇▇▇▇
-<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   26% ▇▇▇
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">Open Medical-LLM Leaderboard results</a>            3    7% ▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   25% ▇▇▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">Open Medical-LLM Leaderboard results</a>            3    6% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 31.6
+weighted average                                   = 32.6
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,9 @@
 
 NVIDIA · released 2025-05 · 14.77B params · nvidia-open-model-license
 
-**score 50.6** ±1.8 · #333 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.6** ±1.8 · #355 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ NVIDIA · released 2025-05 · 14.77B params · nvidia-open-model-license
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #283 of 458     99%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #289 of 460     99%      3
 </pre>
 
-<details><summary>coding · #283 of 458 · 99% of its score</summary>
+<details><summary>coding · #289 of 460 · 99% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   47.9%  ▄·●····▄▄▄█▄ beats 1/7    medium · avg 45%         43%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   47.9%  ▄·●····▄▄▄█▄ beats 1/7    medium · avg 45%         44%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    2.2%  ▃●····▃·█·▃▃ beats 1/7    very hard · avg 2.4%     35%  sharp · too hard for it
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   58.7%  ▄●···▄·▄▄█·▄ beats 1/7    medium · avg 57%         20%  at its level
 </pre>

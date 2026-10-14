@@ -6,7 +6,9 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 71.4** ±1.3 · #72 of 721 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.8** ±1.2 · #72 of 724 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,41 +16,41 @@ Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-lice
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #67 of 302     30%      5
-coding       ▁▁▁▃▆██▇▆●▃▁   #62 of 458*    8.1%      2
-math         ▁▂▃▅▆▅▄█●▁▁▁   #59 of 398*     11%      2
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #67 of 302     29%      5
+coding       ▁▁▁▃▆██▇▆●▃▁   #62 of 460*    8.3%      2
+math         ▁▁▃▅█▆▄█●▁▁▁   #62 of 424*     11%      2
 </pre>
 
-<details><summary>agent tasks · #67 of 302 · 30% of its score</summary>
+<details><summary>agent tasks · #67 of 302 · 29% of its score</summary>
 
-Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 1.8%     10%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.5%    9.1%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 19%          5.5%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       70.4%  ▄··········● beats 3/5    hard · avg 16%          3.5%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>         19.6%  █·▄▄······●▄ beats 4/5    very hard · avg 5.1%    2.2%  blunt
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 1.9%    8.9%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 19%          5.2%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       70.4%  ▄··········● beats 3/5    very hard · avg 15%     3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>         19.6%  █·▄▄······●▄ beats 4/5    very hard · avg 5.1%    2.1%  blunt
 </pre>
 
 </details>
 
-<details><summary>coding · #62 of 458 · 8.1% of its score</summary>
+<details><summary>coding · #62 of 460 · 8.3% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   92.4%  ▄······▄▄▄·● beats 5/5    medium · avg 50%    4.6%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             70.4%  ▄··········● beats 3/5    hard · avg 16%      3.5%  sharp · at its level · noisy
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   92.4%  ▄······▄▄▄·● beats 5/5    medium · avg 49%       4.5%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             70.4%  ▄··········● beats 3/5    very hard · avg 15%    3.8%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #59 of 398 · 11% of its score</summary>
+<details><summary>math · #62 of 424 · 11% of its score</summary>
 
-Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GLM-4.7](glm-4-7.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
+Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
@@ -62,11 +64,11 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   86.3%  █···██·█··●█ beats 4/5    hard · avg 42%           21%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           28.8%  █▄······▄·●▄ beats 4/5    very hard · avg 4.8%     14%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       86.2%  ▄·▄▄····▄··● beats 5/5    medium · avg 56%        7.4%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   80.0%  ▄···▄▄··▄··● beats 4/5    medium · avg 43%        5.7%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 61.0%  █··▄·▄·····● beats 4/5    hard · avg 25%          5.3%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   86.3%  █···██·█··●█ beats 4/5    hard · avg 41%           22%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           28.8%  █▄······▄·●▄ beats 4/5    very hard · avg 4.7%     14%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       86.2%  ▄·▄▄····▄··● beats 5/5    medium · avg 55%        7.7%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   80.0%  ▄···▄▄··▄··● beats 4/5    medium · avg 42%        6.0%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 61.0%  █··▄·▄·····● beats 4/5    hard · avg 25%          5.1%  at its level
 </pre>
 
 </details>
@@ -79,7 +81,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 71.4
+weighted average                              = 70.8
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

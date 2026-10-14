@@ -6,7 +6,9 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 72.6** ±0.9 · #60 of 721 · from 7 benchmark results across 3 sources
+**score 71.9** ±0.9 · #61 of 724 · from 7 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,41 +16,41 @@ OpenAI · released 2025-10 · proprietary
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #76 of 302*    5.0%      1
-math         ▁▂▃▅▆▅▄█●▁▁▁   #47 of 398*     63%      2
-web search   ▂▁▂●▄█▃▃▁▁·▁    #57 of 80*    5.0%      1
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #76 of 302*    5.1%      1
+math         ▁▁▃▅█▆▄█●▁▁▁   #45 of 424*     63%      2
+web search   ▂▁▂●▄█▃▃▁▁·▁    #57 of 80*    5.1%      1
 </pre>
 
-<details><summary>agent tasks · #76 of 302 · 5.0% of its score</summary>
+<details><summary>agent tasks · #76 of 302 · 5.1% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.0%  at its level
+<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.1%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #47 of 398 · 63% of its score</summary>
+<details><summary>math · #45 of 424 · 63% of its score</summary>
 
-Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [GPT-5](gpt-5.md) here, though they rank lower overall.
+Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [GPT-5](gpt-5.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   55.8%  ▂··▁▁▃▄▄●▅▃▃ beats 40/82  very hard · avg 1.2%     39%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      19.5%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 21/63  very hard · avg 0.1%     24%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   55.8%  ▂··▁▁▃▄▄●▅▃▃ beats 40/82  very hard · avg 1.1%     39%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      19.5%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 21/63  very hard · avg 0.1%     23%  sharp
 </pre>
 
 </details>
 
-<details><summary>web search · #57 of 80 · 5.0% of its score</summary>
+<details><summary>web search · #57 of 80 · 5.1% of its score</summary>
 
-Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank lower overall.
+Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.0%  at its level
+<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.1%  at its level
 </pre>
 
 </details>
@@ -57,10 +59,10 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>                   88.4%  ▁▁▁▁▂▄▅▅██●▄ beats 254/310  hard · avg 39%           10%  sharp
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    8.6%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>           30.7%  ▃··▃·▃●···▃█ beats 3/7      very hard · avg 4.5%    8.1%  at its level
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-pro-2025-10-06">ARC-AGI-1 public evaluation set (…</a>   77.0%  ▁·▇▃▁·█●▁·▇▃ beats 18/27    very hard · avg 4.2%    4.6%  sharp · noisy
+<a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>                   88.4%  ▁▁▁▁▂▄▅▅██●▄ beats 254/310  hard · avg 37%           11%  sharp
+<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>           30.7%  ▃··▃·▃●···▃█ beats 3/7      very hard · avg 4.4%    8.1%  at its level
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    8.1%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-pro-2025-10-06">ARC-AGI-1 public evaluation set (…</a>   77.0%  ▁·▇▃▁·█●▁·▇▃ beats 18/27    very hard · avg 3.8%    4.5%  sharp · noisy
 </pre>
 
 </details>
@@ -72,10 +74,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        2   63% ▇▇▇▇▇▇▇▇
-<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5">OpenAI vendor-reported benchmark scores…</a>        3   23% ▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5">OpenAI vendor-reported benchmark scores…</a>        3   24% ▇▇▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC Prize Foundation model_baseline out…</a>        2   13% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 72.6
+weighted average                                   = 71.9
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt))</sub>

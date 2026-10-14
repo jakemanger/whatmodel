@@ -6,7 +6,9 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 34.8** ±1.2 · #604 of 721 · from 13 benchmark results across 5 sources
+**score 36.4** ±1.1 · #609 of 724 · from 16 benchmark results across 8 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,47 +16,50 @@ TII · released 2023-05 · 41.8B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #434 of 458*     17%      2
-math    ▁▂●▅▆▅▄█▄▁▁▁   #372 of 398*    7.2%      1
+coding  ▁▁▁●▆██▇▆▄▃▁   #434 of 460*     17%      2
+math    ▁▁▃▅●▆▄█▄▁▁▁   #314 of 424*     10%      1
 </pre>
 
-<details><summary>coding · #434 of 458 · 17% of its score</summary>
+<details><summary>coding · #434 of 460 · 17% of its score</summary>
 
-Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>   24.4%  ▁▁▁▁▁●▅▅█▃▂▁ beats 25/190  easy · avg 71%     11%  sharp · at its level
-<a href="https://arxiv.org/html/2404.06395v3">MBPP</a>        36.5%  ▁▁▁●▅█▄▅▃▁▂▁ beats 10/81   easy · avg 70%    6.2%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>   24.4%  ▁▁▁▁▂●▆▆█▅▂▁ beats 36/205  easy · avg 66%     11%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">MBPP</a>        36.5%  ▁▁▁●▅█▆▅▄▁▂▁ beats 13/86   easy · avg 68%    6.4%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #372 of 398 · 7.2% of its score</summary>
+<details><summary>math · #314 of 424 · 10% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   22.4%  ▂▂●▅▅▆▅▇█▇▄▃ beats 13/146  easy · avg 74%    7.2%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   22.4%  ▂▂▂▂▃●▅▇██▆▄ beats 51/200  easy · avg 73%     10%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>other tests (10)</summary>
+<details><summary>other tests (13)</summary>
 
 <pre>
-test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Natural Questions (closed book)</a>      32.0%  ▁·▁·▁▂▁▂·▅▂● beats 27/28   medium · avg 58%     18%  at its level
-<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       36.2%  ▁▁▁▁▂●▅▅█▃▄▁ beats 17/129  medium · avg 68%     16%  sharp
-<a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        57.7%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 68/97   easy · avg 88%       11%  sharp · at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   26.6%  ▅····▃▅·█●·█ beats 8/13    medium · avg 60%    9.0%  at its level
-<a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 53.5%  ▁▁▁▁▁▂▃●█▃▆▃ beats 47/183  easy · avg 80%      7.6%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   42.3%  ▃▅▃··▅▃·●▃▃▅ beats 9/13    easy · avg 67%      6.4%  at its level
-<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               40.3%  ▁···▁▁●▁▂▂▃█ beats 3/33    medium · avg 62%    2.8%  noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 91/276  medium · avg 73%    2.3%  at its level · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-11%2018%3A15%3A47.309861.json">TruthfulQA MC2</a>                       41.6%  ▅▃●▆▁▂▅···▁▁ beats 12/31   medium · avg 64%    1.0%  blunt · at its level
-<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 84.4%  ▅·▃·▃··●▃··▃ beats 5/8     easy · avg 92%      0.7%  at its level · noisy
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       36.2%  ▁▁▁▁▂●▅▆█▃▃▁ beats 26/155   medium · avg 64%     15%  sharp
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Natural Questions (closed book)</a>      32.0%  ▁·▁·▁▂▁▂·▅▂● beats 27/28    medium · avg 48%     11%  typical
+<a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        57.7%  ▄▁▁▂▁▄█●▃▂▃▂ beats 102/140  easy · avg 85%      9.3%  sharp · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   61.7%  ▂·▄·▂█▄▄█▄▂● beats 20/21    easy · avg 74%      9.1%  blunt · at its level
+<a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 53.5%  ▁▁▁▁▁▂▂●██▆▄ beats 62/214   easy · avg 79%      8.2%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   26.6%  ▅····▃▅·█●·█ beats 8/13     medium · avg 52%    6.6%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   42.3%  ▃▅▃··▅▃·●▃▃▅ beats 9/13     medium · avg 61%    3.8%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 91/276   medium · avg 72%    2.6%  at its level · noisy
+<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               40.3%  ▁···▁▁●▁▂▂▃█ beats 3/33     medium · avg 59%    2.4%  noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   49.7%  ●▁····▃▁·▁·▁ beats 0/14     hard · avg 67%      2.4%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 84.4%  ▅·▃·▃··●▃··▃ beats 5/8      easy · avg 92%      0.6%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-11%2018%3A15%3A47.309861.json">TruthfulQA MC2</a>                       41.6%  ▅▃●▆▁▂▅···▁▁ beats 12/31    medium · avg 57%    0.4%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 32.1%  ▅▃▅··▃···●▃█ beats 6/10     hard · avg 37%      0.4%  blunt · noisy
 </pre>
 
 </details>
@@ -66,15 +71,18 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   62% ▇▇▇▇▇▇▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Hallucinations Leaderboard results</a>              2   19% ▇▇
-<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2   15% ▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Hallucinations Leaderboard results</a>              2   12% ▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2   10% ▇
+<a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1    9% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
+<a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    2% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    1% ▇
+<a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 34.8
+weighted average                                   = 36.4
 </pre>
 
-<sub>Licences: MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

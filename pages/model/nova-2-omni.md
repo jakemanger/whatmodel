@@ -6,7 +6,9 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 66.2** ±6.7 · #134 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 66.0** ±6.6 · #136 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -19,11 +21,11 @@ agent tasks  ▁▁▃▆█▆▅●▄▃▃▁   #106 of 336*     80%      1
 
 <details><summary>agent tasks · #106 of 336 · 80% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   75.7%  ▂··▄···▂▄●█▄ beats 6/13   medium · avg 45%     80%  at its level
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   75.7%  ▂··▄···▂▄●█▄ beats 6/13   medium · avg 44%     80%  at its level
 </pre>
 
 </details>
@@ -36,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                     1   80% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            20% ▇▇
-weighted average                        = 66.2
+weighted average                        = 66.0
 </pre>
 
 <sub>Licences: Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

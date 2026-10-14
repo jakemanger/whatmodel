@@ -6,7 +6,9 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 44.3** ±2.9 · #452 of 721 · from 3 benchmark results across 3 sources
+**score 45.5** ±2.7 · #457 of 724 · from 3 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #138 of 147     96%      3
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #138 of 147     97%      3
 </pre>
 
-<details><summary>vision &amp; documents · #138 of 147 · 96% of its score</summary>
+<details><summary>vision &amp; documents · #138 of 147 · 97% of its score</summary>
 
-Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        978.3  ▁▁●▂▂▂▄▅▅▆██ beats 6/145  avg 1068           51%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -0.412         35%  typical
-<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>     51.1%  █·█●····██·█ beats 2/5    hard · avg 48%     10%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        978.3  ▁▁●▂▂▂▄▅▅▆██ beats 6/145  avg 1058           55%  blunt
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -5.548         32%  typical
+<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>     51.1%  █·█●····██·█ beats 2/5    hard · avg 47%     10%  blunt · at its level
 </pre>
 
 </details>
@@ -36,11 +38,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   51% ▇▇▇▇▇▇
-<a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   35% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   55% ▇▇▇▇▇▇▇
+<a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   32% ▇▇▇▇
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1   10% ▇
-prior: pull toward the middle                        4% ▇
-weighted average                                   = 44.3
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 45.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

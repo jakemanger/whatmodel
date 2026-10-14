@@ -6,7 +6,9 @@
 
 ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
-**score 25.5** ±7.0 · #894 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.3** ±6.7 · #892 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▄▄▃▃▁   #333 of 336*     78%      1
+agent tasks  ●▁▃▆█▆▅▄▄▃▃▁   #333 of 336*     80%      1
 </pre>
 
-<details><summary>agent tasks · #333 of 336 · 78% of its score</summary>
+<details><summary>agent tasks · #333 of 336 · 80% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 
 <pre>
 test     result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   20.8%  ▁●▁▁▁▃▅█▅▄▁▁ beats 3/114  medium · avg 52%     78%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   20.8%  ▁●▁▁▁▃▅█▅▄▁▁ beats 3/114  medium · avg 51%     80%  blunt · at its level
 </pre>
 
 </details>
@@ -34,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   78% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       22% ▇▇▇
-weighted average                                   = 25.5
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       20% ▇▇
+weighted average                                   = 27.3
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

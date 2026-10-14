@@ -6,7 +6,9 @@
 
 WizardLM · released 2023-06 · bigscience-openrail-m
 
-**score 41.5** ±0.8 · #510 of 721 · from 3 benchmark results across 1 source
+**score 43.2** ±0.8 · #509 of 724 · from 3 benchmark results across 1 source
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ WizardLM · released 2023-06 · bigscience-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #355 of 458    100%      3
+coding  ▁▁▁▃●██▇▆▄▃▁   #355 of 460    100%      3
 </pre>
 
-<details><summary>coding · #355 of 458 · 100% of its score</summary>
+<details><summary>coding · #355 of 460 · 100% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Llama 34B Python](codellama-34b-python.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    56.7%  ▁·▁▁▃▄●▅█▃▁▁ beats 44/99  easy · avg 79%     53%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   50.6%  ▁·▁▁▁▃▄●▄█▃▁ beats 43/99  easy · avg 74%     39%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        54.2%  ▁···▁▁▂▅●█▆▂ beats 24/75  easy · avg 68%    7.0%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    56.7%  ▁·▁▁▃▄●▅█▃▁▁ beats 44/99  easy · avg 76%     51%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   50.6%  ▁·▁▁▁▃▄●▄█▃▁ beats 43/99  easy · avg 70%     41%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        54.2%  ▁···▁▁▂▅●█▆▂ beats 24/75  easy · avg 66%    7.8%  at its level
 </pre>
 
 </details>
@@ -38,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 41.5
+weighted average                                   = 43.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

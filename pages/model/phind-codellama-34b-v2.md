@@ -6,7 +6,9 @@
 
 Phind · released 2023-08 · 34B params · llama2
 
-**score 46.6** ±0.7 · #409 of 721 · from 6 benchmark results across 3 sources
+**score 48.2** ±0.7 · #400 of 724 · from 6 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,19 +16,19 @@ Phind · released 2023-08 · 34B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #299 of 458     86%      4
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #300 of 460     85%      4
 </pre>
 
-<details><summary>coding · #299 of 458 · 86% of its score</summary>
+<details><summary>coding · #300 of 460 · 85% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    71.3%  ▁·▁▁▃▄▆●█▃▁▁ beats 61/99  easy · avg 79%       54%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   67.1%  ▁·▁▁▁▃▄▄▄●▃▁ beats 64/99  easy · avg 74%       28%  sharp · at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   47.2%  ▁··▁▅▂█●▁··▁ beats 19/22  medium · avg 54%    1.8%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   39.7%  ▁·▂▃▁●▁▂···▁ beats 8/22   medium · avg 53%    1.7%  blunt · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    71.3%  ▁·▁▁▃▄▆●█▃▁▁ beats 61/99  easy · avg 76%       53%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   67.1%  ▁·▁▁▁▃▄▄▄●▃▁ beats 64/99  easy · avg 70%       28%  sharp · at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   47.2%  ▁··▁▅▂█●▁··▁ beats 19/22  medium · avg 52%    1.9%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   39.7%  ▁·▂▃▁●▁▂···▁ beats 8/22   medium · avg 51%    1.8%  blunt · at its level
 </pre>
 
 </details>
@@ -35,7 +37,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   45.6%  ▂▂▃▄▄█▁▄●▃▁▃ beats 30/42  medium · avg 55%     14%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   45.6%  ▂▂▃▄▄█▁▄●▃▁▃ beats 30/42  medium · avg 52%     15%  at its level
 </pre>
 
 </details>
@@ -46,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   63% ▇▇▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   33% ▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   61% ▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   35% ▇▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.6
+weighted average                                   = 48.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

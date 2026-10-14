@@ -6,7 +6,9 @@
 
 Sber · released 2026-07 · 433.77B params (28B active) · mit
 
-**score 54.9** ±1.3 · #270 of 721 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.1** ±1.3 · #279 of 724 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,46 +16,46 @@ Sber · released 2026-07 · 433.77B params (28B active) · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #169 of 302     20%      3
-coding       ▁▁▁▃▆█●▇▆▄▃▁   #236 of 458*     22%      2
-math         ▁▂▃▅▆●▄█▄▁▁▁    #207 of 398     48%      4
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #169 of 302     21%      3
+coding       ▁▁▁▃▆█●▇▆▄▃▁   #239 of 460*     23%      2
+math         ▁▁▃▅█●▄█▄▁▁▁    #209 of 424     46%      4
 </pre>
 
-<details><summary>agent tasks · #169 of 302 · 20% of its score</summary>
+<details><summary>agent tasks · #169 of 302 · 21% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>   42.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 31/131  hard · avg 25%           12%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">Terminal-Bench 2.0 (lab)</a>   13.5%  ●▂▅▅████▆▂▃▃ beats 0/36    very hard · avg 9.6%    6.2%  small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench (lab)</a>             50.0%  ▁▁▂▁·▁▁·▁●▂█ beats 10/25   hard · avg 34%          2.6%  blunt · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>   42.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 31/131  hard · avg 23%           12%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">Terminal-Bench 2.0 (lab)</a>   13.5%  ●▂▅▅████▆▂▃▃ beats 0/36    very hard · avg 9.7%    6.0%  small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench (lab)</a>             50.0%  ▁▁▂▁·▁▁·▁●▂█ beats 10/25   hard · avg 34%          2.6%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #236 of 458 · 22% of its score</summary>
+<details><summary>coding · #239 of 460 · 23% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>             42.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 31/131  hard · avg 25%       12%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">LiveCodeBench v6 (window unspecif…</a>   56.2%  ▂▃▄▄●██▅▄▇▃▆ beats 19/65   medium · avg 47%     11%  at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>             42.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 31/131  hard · avg 23%       12%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">LiveCodeBench v6 (window unspecif…</a>   56.2%  ▂▃▄▄●██▅▄▇▃▆ beats 19/65   medium · avg 46%     11%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #207 of 398 · 48% of its score</summary>
+<details><summary>math · #209 of 424 · 46% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026 (lab)</a>                      67.0%  ▁▁▁●▁▂▆█▆▂·▁ beats 7/49    medium · avg 53%     14%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025 (lab)</a>                      68.0%  ▁·▁▁▁▂▅▆●▇▅▁ beats 61/133  medium · avg 48%     14%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">HMMT 2025 (edition unspecified) (…</a>   36.7%  ●█▇▅▇▅▁·▁··▁ beats 2/32    hard · avg 30%       12%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (lab)</a>                32.0%  ▁●·▁▁▁▄▅█▄▂▃ beats 2/42    hard · avg 31%      9.0%  at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025 (lab)</a>                      68.0%  ▁·▁▁▁▂▅▆●▇▅▁ beats 61/133  medium · avg 47%     14%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026 (lab)</a>                      67.0%  ▁▁▁●▁▂▆█▆▂·▁ beats 7/49    medium · avg 52%     13%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">HMMT 2025 (edition unspecified) (…</a>   36.7%  ●█▇▅▇▅▁·▁··▁ beats 2/32    hard · avg 30%       11%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (lab)</a>                32.0%  ▁●·▁▁▁▄▅█▄▂▃ beats 2/42    hard · avg 30%      8.4%  at its level · small run
 </pre>
 
 </details>
@@ -62,8 +64,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond (lab)</a>                   61.1%  ▁▁▁▁▂▄▅●███▄ beats 113/310  hard · avg 45%       16%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecified)…</a>   43.7%  ▃▇▂▄▅●▂▄▄▆█▇ beats 30/80    medium · avg 40%    4.5%  at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond (lab)</a>                   61.1%  ▁▁▁▁▂▄▅●███▄ beats 113/310  hard · avg 44%       17%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecified)…</a>   43.7%  ▃▇▂▄▅●▂▄▄▆█▇ beats 30/80    medium · avg 39%    4.8%  at its level · small run
 </pre>
 
 </details>
@@ -76,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ai-sage-gigachat3-5-432b-a28b-reasoning"></a><a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">ai-sage/GigaChat3.5-432B-A28B-Reasoning…</a>       10   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.9
+weighted average                                   = 55.1
 </pre>
 
 <sub>Licences: ai-sage/GigaChat3.5-432B-A28B-Reasoning model card ([MIT](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md))</sub>

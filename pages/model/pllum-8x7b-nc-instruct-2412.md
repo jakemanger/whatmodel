@@ -6,7 +6,9 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 46.7B params (12.9B active) · cc-by-nc-4.0
 
-**score 47.6** ±3.8 · #505 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.8** ±3.5 · #506 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -19,8 +21,8 @@ PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 46.7B params (12.9B active)
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   62.3%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 38/95  easy · avg 66%     93%  at its level
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   62.3%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 38/95  medium · avg 64%     95%  at its level
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             7% ▇
-weighted average                        = 47.6
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             5% ▇
+weighted average                        = 48.8
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>

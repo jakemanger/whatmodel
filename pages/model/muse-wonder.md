@@ -6,7 +6,9 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 79.3** ±1.7 · #16 of 721 · from 5 benchmark results across 2 sources
+**score 78.0** ±1.7 · #16 of 724 · from 5 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -23,8 +25,8 @@ Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max 
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                      70.5%  █·█····●···█ beats 2/3    hard · avg 23%     10%  at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   72.6%  ●█·····█··██ beats 0/4    hard · avg 26%    6.2%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                      70.5%  █·█····●···█ beats 2/3    hard · avg 25%     10%  at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   72.6%  ●█·····█··██ beats 0/4    hard · avg 28%    5.9%  at its level · small run
 </pre>
 
 </details>
@@ -33,9 +35,9 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                            result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂▆●▆▆·▄ beats 15/24  very hard · avg 0.4%     72%  sharp · at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 8.7%    5.7%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 20%          4.7%  blunt · at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂▆●▆▆·▄ beats 15/24  very hard · avg 0.4%     73%  sharp · at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 9.9%    5.5%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%          4.6%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -46,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        1   72% ▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        1   73% ▇▇▇▇▇▇▇▇▇
 <a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4   26% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 79.3
+weighted average                                   = 78.0
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

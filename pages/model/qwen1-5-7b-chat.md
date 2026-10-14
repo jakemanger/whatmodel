@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-02 · 7.72B params · tongyi-qianwen
 
-**score 36.6** ±0.8 · #584 of 721 · from 13 benchmark results across 10 sources
+**score 38.6** ±0.7 · #577 of 724 · from 13 benchmark results across 10 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,30 +16,30 @@ Alibaba · released 2024-02 · 7.72B params · tongyi-qianwen
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #394 of 458*     26%      1
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #352 of 393     21%      3
+coding          ▁▁▁▃●██▇▆▄▃▁   #394 of 460*     25%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #352 of 395     22%      3
 </pre>
 
-<details><summary>coding · #394 of 458 · 26% of its score</summary>
+<details><summary>coding · #394 of 460 · 25% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 11/42  easy · avg 78%     26%  sharp · at its level
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 11/42  easy · avg 74%     25%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #352 of 393 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #352 of 395 · 22% of its score</summary>
 
-Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       14.8%  ▁▂▂▃▆●█▆▄▄▁▁ beats 39/122  medium · avg 39%     10%  typical
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1086.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 40/95   avg 1201            5.3%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1143.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 36/379  avg 1268            5.2%  blunt
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       14.8%  ▁▂▂▃▆●█▆▄▄▁▁ beats 39/122  hard · avg 35%     11%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1143.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 36/379  avg 1258          5.9%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1086.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 40/95   avg 1186          5.3%  typical
 </pre>
 
 </details>
@@ -46,15 +48,15 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           18.0%  ▁▁▁▂▂●▂█▆▃▅▃ beats 12/61    medium · avg 41%        14%  typical
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              25.5%  ▂▂▃●▄█▁▄▅▃▁▃ beats 10/42    medium · avg 55%        13%  at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-7B-Chat_5shots.zip">MMLU-Pro</a>                                       26.4%  ●▂▅█▃·█▃▅··▂ beats 1/23     medium · avg 57%       6.9%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.4232 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 6/52     avg 45.276 WB-Score    5.9%  sharp
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">MedQA (USMLE, 4 options)</a>                       45.4%  ▁▁··▄▁▁··●▃█ beats 8/17     easy · avg 76%         5.8%  sharp · at its level
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">MedMCQA</a>                                        45.3%  ▂▂··▄▄▂▂·●██ beats 9/17     medium · avg 68%       3.1%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                25.0%  ▁··▁▁●▂▆▅▆█▆ beats 4/70     medium · avg 64%       2.8%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 138/276  medium · avg 73%       1.0%  at its level · noisy
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">PubMedQA</a>                                       58.6%  ▂·▂●·▄▂▄▄▂█▂ beats 2/17     medium · avg 77%       0.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           18.0%  ▁▁▁▂▂●▂█▆▃▅▃ beats 12/61    medium · avg 38%        15%  typical
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              25.5%  ▂▂▃●▄█▁▄▅▃▁▃ beats 10/42    medium · avg 52%        13%  at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-7B-Chat_5shots.zip">MMLU-Pro</a>                                       26.4%  ●▂▅█▃·█▃▅··▂ beats 1/23     medium · avg 54%       7.2%  typical
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.4232 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 6/52     avg 42.747 WB-Score    6.1%  sharp
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">MedQA (USMLE, 4 options)</a>                       45.4%  ▁▁··▄▁▁··●▃█ beats 8/17     medium · avg 71%       4.4%  sharp · at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                25.0%  ▁··▁▁●▂▆▅▆█▆ beats 4/70     medium · avg 61%       3.2%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">MedMCQA</a>                                        45.3%  ▂▂··▄▄▂▂·●██ beats 9/17     medium · avg 63%       2.1%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 138/276  medium · avg 72%       1.2%  at its level · noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">PubMedQA</a>                                       58.6%  ▂·▂●·▄▂▄▄▂█▂ beats 2/17     medium · avg 75%       0.3%  blunt · at its level
 </pre>
 
 </details>
@@ -65,21 +67,21 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   39% ▇▇▇▇▇
-<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   14% ▇▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   10% ▇
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">Open Medical-LLM Leaderboard results</a>            3    9% ▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   38% ▇▇▇▇▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   15% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   11% ▇
 <a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-7B-Chat_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1    7% ▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">Open Medical-LLM Leaderboard results</a>            3    7% ▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    6% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    6% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    5% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 36.6
+weighted average                                   = 38.6
 </pre>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

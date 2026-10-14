@@ -6,7 +6,9 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.1** ±1.4 · #602 of 721 · from 8 benchmark results across 3 sources
+**score 37.2** ±1.3 · #600 of 724 · from 8 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,41 +16,41 @@ Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; 
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #441 of 458*     14%      1
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #362 of 393*     38%      2
-math            ▁▂●▅▆▅▄█▄▁▁▁   #347 of 398*    8.3%      1
+coding          ▁▁●▃▆██▇▆▄▃▁   #441 of 460*     12%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #363 of 395*     36%      2
+math            ▁▁▃▅●▆▄█▄▁▁▁   #292 of 424*     13%      1
 </pre>
 
-<details><summary>coding · #441 of 458 · 14% of its score</summary>
+<details><summary>coding · #441 of 460 · 12% of its score</summary>
 
-Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 1.1 2B IT](gemma-1-1-2b.md) here, though they rank lower overall.
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 1.1 2B IT](gemma-1-1-2b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   40.0%  ▃▃●·▆▃▃█▃▂▂▅ beats 5/25   very easy · avg 86%     14%  sharp · at its level
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   40.0%  ▃▃●·▆▃▃█▃▂▂▅ beats 5/25   easy · avg 83%     12%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #362 of 393 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #363 of 395 · 36% of its score</summary>
 
-Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.2%  ▁▂▂●▆▆█▆▄▄▁▁ beats 20/122  medium · avg 39%        30%  typical
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   84.2%  ▂▂·▆·▇▃●█▆▄▂ beats 22/45   very easy · avg 96%    7.9%  sharp · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.2%  ▁▂▂●▆▆█▆▄▄▁▁ beats 20/122  hard · avg 35%          32%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   84.2%  ▂▂·▆·▇▃●█▆▄▂ beats 22/45   very easy · avg 94%    4.0%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #347 of 398 · 8.3% of its score</summary>
+<details><summary>math · #292 of 424 · 13% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   34.5%  ▆▂▅●▅▅▃▆···▂ beats 11/25  easy · avg 73%    8.3%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   34.5%  ▆▂▅●▅▅▃▆···▂ beats 11/25  easy · avg 72%     13%  sharp · at its level
 </pre>
 
 </details>
@@ -57,10 +59,10 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 45.5%  ▁·····▂●▂▅·▁ beats 6/25     easy · avg 77%       23%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.7%  ▁▁▃▃▄●▄▁█··▁ beats 10/25    easy · avg 74%      8.8%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 106/276  medium · avg 73%    3.3%  at its level · noisy
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   44.5%  ▂··▁▃▂●▂█▅▁▂ beats 9/25     medium · avg 61%    3.1%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 45.5%  ▁·····▂●▂▅·▁ beats 6/25     medium · avg 74%     21%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.7%  ▁▁▃▃▄●▄▁█··▁ beats 10/25    medium · avg 72%     10%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 106/276  medium · avg 72%    3.8%  at its level · noisy
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   44.5%  ▂··▁▃▂●▂█▅▁▂ beats 9/25     medium · avg 59%    2.7%  blunt · at its level
 </pre>
 
 </details>
@@ -71,11 +73,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                               5   58% ▇▇▇▇▇▇▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   38% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    3% ▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                               5   60% ▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   36% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    4% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 35.1
+weighted average                              = 37.2
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

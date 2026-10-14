@@ -6,7 +6,9 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 46.5** ±6.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.5** ±6.6 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁▃▃●▃▅▄▇▇█▃   #147 of 182     80%      3
+vision &amp; documents  ▁▁▃▃●▃▅▄▇▇█▃   #147 of 182     81%      3
 </pre>
 
-<details><summary>vision &amp; documents · #147 of 182 · 80% of its score</summary>
+<details><summary>vision &amp; documents · #147 of 182 · 81% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>    74.7%  ▁··▁▁▁▁▁●▅▅█ beats 8/44   easy · avg 81%     35%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>    74.7%  ▁··▁▁▁▁▁●▅▅█ beats 8/44   easy · avg 80%     36%  blunt · small run
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>   78.0%  ▁·▃▁●▅▂█▅█▁▃ beats 5/37   easy · avg 82%     28%  blunt · small run
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>    85.0%  ▁▁▁▄▅▁▃·▃▃▃● beats 22/24  easy · avg 78%     16%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>    85.0%  ▁▁▁▄▅▁▃·▃▃▃● beats 22/24  easy · avg 78%     17%  blunt · small run
 </pre>
 
 </details>
@@ -36,9 +38,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                       3   80% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            20% ▇▇
-weighted average                        = 46.5
+<a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                       3   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            19% ▇▇
+weighted average                        = 47.5
 </pre>
 
 ## How to run it

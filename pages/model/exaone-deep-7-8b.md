@@ -6,7 +6,9 @@
 
 LG AI Research · released 2025-03 · 7.82B params · exaone
 
-**score 54.4** ±1.5 · #280 of 721 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.2** ±1.5 · #297 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,28 +16,28 @@ LG AI Research · released 2025-03 · 7.82B params · exaone
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  █●·········█      #2 of 3*     10%      1
-math    ▁▂▃▅▆●▄█▄▁▁▁   #193 of 398     57%      3
+coding  █●·········█      #2 of 3*    9.5%      1
+math    ▁▁▃▅█●▄█▄▁▁▁   #214 of 424     58%      3
 </pre>
 
-<details><summary>coding · #2 of 3 · 10% of its score</summary>
+<details><summary>coding · #2 of 3 · 9.5% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   55.2%  ▁···▁▁▃▅▅●▄▅ beats 21/37  medium · avg 43%     10%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   55.2%  ▁···▁▁▃▅▅●▄▅ beats 21/37  medium · avg 44%    9.5%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #193 of 398 · 57% of its score</summary>
+<details><summary>math · #214 of 424 · 58% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>   59.6%  █·●▄····▄··█ beats 2/6    medium · avg 53%        26%  sharp · at its level
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>   70.0%  ▁▁▁▂▁▃▁▅●██▃ beats 36/85  medium · avg 54%        20%  sharp · at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>    94.8%  ▁▃▂▃▅▇▅●█▅▂▁ beats 53/84  very easy · avg 91%     12%  maxed out · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>   59.6%  █·●▄····▄··█ beats 2/6    medium · avg 53%        29%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>   70.0%  ▁▁▁▂▁▃▁▅●██▃ beats 36/85  medium · avg 55%        19%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>    94.8%  ▁▃▂▃▅▇▅●█▅▂▁ beats 53/84  very easy · avg 91%     10%  maxed out · small run
 </pre>
 
 </details>
@@ -44,7 +46,7 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>   62.6%  █···●▄···▄·█ beats 2/6    hard · avg 51%     31%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>   62.6%  █···●▄···▄·█ beats 2/6    hard · avg 50%     32%  sharp · at its level
 </pre>
 
 </details>
@@ -57,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.4
+weighted average                                   = 54.2
 </pre>
 
 ## How to run it

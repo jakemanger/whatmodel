@@ -6,7 +6,9 @@
 
 SpeakLeash · released 2025-11 · 11.17B params · apache-2.0
 
-**score 54.8** ±2.3 · #272 of 721 · from 5 benchmark results across 4 sources
+**score 55.5** ±2.1 · #269 of 724 · from 5 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,11 +22,11 @@ SpeakLeash · released 2025-11 · 11.17B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   55.8%  ▄·▂▂▂··●▂▄·▄ beats 6/13    hard · avg 48%       34%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.7%  ▁▂▂▂▃█▃▆●▄▂▃ beats 68/95   easy · avg 66%       29%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   71.2%  ▁··▁▁▂▂▆▅▆●▆ beats 57/70   medium · avg 64%     23%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   77.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 66/100  medium · avg 68%    7.5%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   82.7%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 80/146  easy · avg 83%      4.3%  noisy
+<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   55.8%  ▄·▂▂▂··●▂▄·▄ beats 6/13    hard · avg 46%       33%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.7%  ▁▂▂▂▃█▃▆●▄▂▃ beats 68/95   medium · avg 64%     30%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   71.2%  ▁··▁▁▂▂▆▅▆●▆ beats 57/70   medium · avg 61%     23%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   77.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 66/100  medium · avg 66%    7.8%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   82.7%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 80/146  easy · avg 82%      4.2%  noisy
 </pre>
 
 </details>
@@ -35,12 +37,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   34% ▇▇▇▇
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>                          1   29% ▇▇▇▇
+<a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   33% ▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>                          1   30% ▇▇▇▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   23% ▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   12% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 54.8
+weighted average                                   = 55.5
 </pre>
 
 <sub>Licences: Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

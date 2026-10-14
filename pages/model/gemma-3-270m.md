@@ -6,7 +6,9 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 14.7** ±3.6 · #701 of 721 · from 5 benchmark results across 3 sources
+**score 16.4** ±3.6 · #700 of 724 · from 5 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Google · released 2025-08 · 0.27B params · gemma
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #340 of 393*     40%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #340 of 395*     44%      1
 </pre>
 
-<details><summary>chat &amp; writing · #340 of 393 · 40% of its score</summary>
+<details><summary>chat &amp; writing · #340 of 395 · 44% of its score</summary>
 
-Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall.
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   51.2%  ▁▁●▁▂▄▄▆█▃▂▁ beats 11/141  very easy · avg 87%     40%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   51.2%  ▁▁●▁▂▄▄▆█▃▂▁ beats 11/141  very easy · avg 87%     44%  at its level
 </pre>
 
 </details>
@@ -32,14 +34,14 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 26.7%  ▁●▁▁▂▄▅▅█▃▄▁ beats 1/129   easy · avg 81%          35%  sharp · too hard for it
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 83%         8.6%  noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 37/276  medium · avg 73%       7.8%  too hard for it · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 68%       2.8%  too hard for it · noisy
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (lab)</a>                  28.2%  ▆▁▁●▂▅▇█▄▃▃▂ beats 20/97   easy · avg 85%            —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (lab)</a>                     52.3%  ▁···●▁▁▅█▇▃▁ beats 4/87    easy · avg 89%            —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag (lab)</a>                      37.7%  ▁▁▁●▂▂▃▇█▆▅▃ beats 3/85    very easy · avg 92%       —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">PIQA (lab)</a>                           66.2%  ▁▁▁●▃▄▇█▄▃▁▁ beats 6/83    easy · avg 88%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 26.7%  ▁●▁▁▂▄▅▆█▃▃▁ beats 3/155   easy · avg 78%          30%  sharp · too hard for it
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 82%         8.9%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 37/276  medium · avg 72%       8.7%  too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 66%       2.7%  sharp · too hard for it · noisy
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (lab)</a>                  28.2%  ▄▁▁●▁▄█▇▃▂▃▂ beats 23/140  easy · avg 82%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag (lab)</a>                      37.7%  ▁▁▁●▂▂▄▆█▇▄▂ beats 11/135  very easy · avg 91%       —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (lab)</a>                     52.3%  ▁▁▁▁●▁▁▅▇█▃▁ beats 11/131  easy · avg 87%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">PIQA (lab)</a>                           66.2%  ▁▁▁●▂▃▅█▅▃▁▁ beats 10/123  easy · avg 87%            —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -50,11 +52,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="gap-google-gemma3"></a><a href="https://ai.google.dev/gemma/docs/core/model_card_3">Google DeepMind Gemma 3 270M IT model c…</a>        2   75% ▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   11% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    8% ▇
+<a name="gap-google-gemma3"></a><a href="https://ai.google.dev/gemma/docs/core/model_card_3">Google DeepMind Gemma 3 270M IT model c…</a>        2   74% ▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   12% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    9% ▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 14.7
+weighted average                                   = 16.4
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

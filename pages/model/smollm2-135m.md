@@ -6,7 +6,9 @@
 
 Hugging Face · released 2024-10 · 0.135B params · apache-2.0
 
-**score 20.6** ±8.6 · #916 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.7** ±8.3 · #913 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Hugging Face · released 2024-10 · 0.135B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   24.8%  ●▁▁▁▁▁▁▂▄█▄▃ beats 1/146  easy · avg 83%     67%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   24.8%  ●▁▁▁▁▁▁▂▄█▄▃ beats 1/146  easy · avg 82%     69%  noisy
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1   67% ▇▇▇▇▇▇▇▇
-prior: pull toward the middle            33% ▇▇▇▇
-weighted average                        = 20.6
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1   69% ▇▇▇▇▇▇▇▇
+prior: pull toward the middle            31% ▇▇▇▇
+weighted average                        = 21.7
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

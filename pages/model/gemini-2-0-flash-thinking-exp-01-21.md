@@ -6,7 +6,9 @@
 
 Google · released 2025-01 · proprietary
 
-**score 57.3** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 57.7** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,40 +16,40 @@ Google · released 2025-01 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #248 of 342*    4.1%      1
-coding       ▁▁▁▃▅▇●▇▅▄▃▁   #263 of 524*     45%      1
-math         ▁▂▃▅▇▅●█▄▁▁▁   #175 of 462*     17%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #248 of 342*    4.5%      1
+coding       ▁▁▁▃▅▇●▇▅▄▂▁   #265 of 529*     45%      1
+math         ▁▂▃▆█▇●▇▃▁▁▁   #175 of 523*     15%      1
 </pre>
 
-<details><summary>agent tasks · #248 of 342 · 4.1% of its score</summary>
+<details><summary>agent tasks · #248 of 342 · 4.5% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   58.7%  ▁▁▁▁▁▃▅█●▄▁▁ beats 79/114  medium · avg 52%    4.1%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   58.7%  ▁▁▁▁▁▃▅█●▄▁▁ beats 79/114  medium · avg 51%    4.5%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #263 of 524 · 45% of its score</summary>
+<details><summary>coding · #265 of 529 · 45% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   18.2%  ▂·▂▃●▂▃█▆▄▂▂ beats 9/49   very hard · avg 8.6%     45%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   18.2%  ▂·▂▃●▂▃█▆▄▂▂ beats 9/49   very hard · avg 7.3%     45%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #175 of 462 · 17% of its score</summary>
+<details><summary>math · #175 of 523 · 15% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   57.8%  ▃▃▄▃▃▃●▇█▃▂▅ beats 86/193  very hard · avg 8.6%     17%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   57.8%  ▃▃▄▃▃▃●▇█▃▂▅ beats 86/193  very hard · avg 6.9%     15%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -56,7 +58,7 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   57.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 85/208  hard · avg 40%     34%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   57.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 85/208  hard · avg 38%     35%  sharp · at its level
 </pre>
 
 </details>
@@ -69,9 +71,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        2   50% ▇▇▇▇▇▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   45% ▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    4% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.3
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

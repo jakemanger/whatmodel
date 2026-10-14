@@ -6,7 +6,9 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 7.74B params · other
 
-**score 43.1** ±1.9 · #642 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.9** ±1.7 · #632 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Chujie Zheng (ExPO) · released 2024-05 · 7.74B params · other
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #349 of 466*     98%      1
+chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #349 of 466*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #349 of 466 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #349 of 466 · 99% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
-test                            result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   22.7%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 58/122  medium · avg 39%     98%  typical
+test                            result  vs the others in its run   difficulty      counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   22.7%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 58/122  hard · avg 35%     99%  sharp
 </pre>
 
 </details>
@@ -34,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   2% ▇
-weighted average                              = 43.1
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 44.9
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

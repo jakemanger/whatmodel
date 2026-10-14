@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-11 · proprietary
 
-**score 53.0** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 54.0** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Alibaba · released 2024-11 · proprietary
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅●▅▅█▄▁▁▁   #269 of 462*     64%      2
+math  ▁▂▃▆█●▅▇▃▁▁▁   #288 of 523*     62%      2
 </pre>
 
-<details><summary>math · #269 of 462 · 64% of its score</summary>
+<details><summary>math · #288 of 523 · 62% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Tulu 2 70B](tulu-2-70b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               56.2%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 49/92   hard · avg 33%           53%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 33/193  very hard · avg 8.6%     11%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               56.2%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 49/92   hard · avg 27%           52%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 33/193  very hard · avg 6.9%     10%  sharp · noisy
 </pre>
 
 </details>
@@ -33,8 +35,8 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 43/208   hard · avg 40%       31%  sharp · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 234/276  medium · avg 73%    4.3%  at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 43/208   hard · avg 38%       32%  sharp · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 234/276  medium · avg 72%    5.0%  at its level · noisy
 </pre>
 
 </details>
@@ -45,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                               3   95% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    4% ▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                               3   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    5% ▇
 prior: pull toward the middle               1% ▇
-weighted average                          = 53.0
+weighted average                          = 54.0
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

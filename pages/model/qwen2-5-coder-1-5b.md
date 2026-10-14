@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 42.8** ±1.2 · #486 of 721 · from 9 benchmark results across 2 sources
+**score 44.1** ±1.1 · #494 of 724 · from 9 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,23 +16,23 @@ Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #348 of 458     96%      8
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #347 of 460     96%      8
 </pre>
 
-<details><summary>coding · #348 of 458 · 96% of its score</summary>
+<details><summary>coding · #347 of 460 · 96% of its score</summary>
 
-Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      70.7%  ▄·●···█··█·▄ beats 1/6    very easy · avg 86%     25%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   31.6%  ▁·▁●▄▁▆▄█▆▂▂ beats 3/62   medium · avg 54%        21%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     66.5%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 82%          19%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           69.2%  █···●██·██·█ beats 1/6    easy · avg 79%          11%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      56.7%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 71%         8.2%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          59.4%  ▄····●▄·▄·█▄ beats 1/6    easy · avg 67%         7.1%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     45.4%  █·█●·█··█·██ beats 2/6    medium · avg 57%       3.4%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     37.5%  ▄·●··▄·▄··▄▄ beats 1/6    medium · avg 55%       1.2%  blunt · at its level
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      70.7%  ▄·●···█··█·▄ beats 1/6    easy · avg 84%       24%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   31.6%  ▁·▁●▄▁▆▄█▆▂▂ beats 3/62   medium · avg 50%     23%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     66.5%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 80%       19%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           69.2%  █···●██·██·█ beats 1/6    easy · avg 77%       11%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      56.7%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 69%      8.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          59.4%  ▄····●▄·▄·█▄ beats 1/6    easy · avg 65%      7.0%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     45.4%  █·█●·█··█·██ beats 2/6    medium · avg 55%    3.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     37.5%  ▄·●··▄·▄··▄▄ beats 1/6    medium · avg 54%    1.2%  blunt · at its level
 </pre>
 
 </details>
@@ -39,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   32.5%  ▄······●▄█·█ beats 1/6    medium · avg 38%    3.8%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   32.5%  ▄······●▄█·█ beats 1/6    medium · avg 36%    3.8%  at its level
 </pre>
 
 </details>
@@ -50,10 +52,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                               8   78% ▇▇▇▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   21% ▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                               8   77% ▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   23% ▇▇▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 42.8
+weighted average                            = 44.1
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

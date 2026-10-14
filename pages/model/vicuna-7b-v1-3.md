@@ -6,7 +6,9 @@
 
 LMSYS · released 2023-06
 
-**score 32.6** ±2.4 · #834 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.8** ±2.1 · #624 of 724 · from 4 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,27 @@ LMSYS · released 2023-06
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #440 of 466*     98%      2
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #375 of 395*     78%      2
 </pre>
 
-<details><summary>chat &amp; writing · #440 of 466 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #375 of 395 · 78% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.2%  ▁▂▂●▆▆█▆▄▄▁▁ beats 15/122  medium · avg 39%        71%  typical
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   76.8%  ▂▂·▆·▇●▆█▆▄▂ beats 17/45   very easy · avg 96%     27%  sharp · at its level · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.2%  ▁▂▂●▆▆█▆▄▄▁▁ beats 15/122  hard · avg 35%          66%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   76.8%  ▂▂·▆·▇●▆█▆▄▂ beats 17/45   very easy · avg 94%     12%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.8%  ▁····▁▁·▁·▃● beats 9/11   hard · avg 63%     20%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   63.7%  ▅▅▃●·▃··▃·▃▃ beats 6/11   hard · avg 66%    0.3%  blunt · at its level
 </pre>
 
 </details>
@@ -34,13 +46,14 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                               results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   2% ▇
-weighted average                              = 32.6
+source                                    results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   78% ▇▇▇▇▇▇▇▇▇
+<a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2   20% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 34.8
 </pre>
 
-<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

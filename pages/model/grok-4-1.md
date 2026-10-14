@@ -6,7 +6,9 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 64.8** ±2.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.7** ±1.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,28 +16,28 @@ SpaceXAI (xAI) · released 2025-11 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇█●▅▄▂▁   #212 of 549*     63%      1
-chat &amp; writing  ▁▁▁▃▅▅▆█▆▆●▂    #44 of 579*     35%      1
+coding          ▁▁▁▃▅▇█●▅▄▂▁   #212 of 554*     62%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█▆▆●▂    #44 of 579*     36%      1
 </pre>
 
-<details><summary>coding · #212 of 549 · 63% of its score</summary>
+<details><summary>coding · #212 of 554 · 62% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1213.8  ▁▂●▃▅█▄▇▆▄▁▁ beats 6/119  avg 983        63%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1213.8  ▁▂●▃▅█▄▇▆▄▁▁ beats 6/119  avg 969        62%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #44 of 579 · 35% of its score</summary>
+<details><summary>chat &amp; writing · #44 of 579 · 36% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1465.2  ▁▁▁▂▃▃▃▆▆▇●▃ beats 336/379  avg 1268       35%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1465.2  ▁▁▁▂▃▃▃▆▆▇●▃ beats 336/379  avg 1258       36%  blunt
 </pre>
 
 </details>
@@ -48,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 64.8
+weighted average                        = 64.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

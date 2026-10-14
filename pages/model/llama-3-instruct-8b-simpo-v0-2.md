@@ -6,7 +6,9 @@
 
 Princeton NLP · released 2024-07 · 8.03B params
 
-**score 38.5** ±1.1 · #557 of 721 · from 4 benchmark results across 3 sources
+**score 40.4** ±1.1 · #553 of 724 · from 4 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Princeton NLP · released 2024-07 · 8.03B params
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅▆▅▄█▄▁▁▁   #379 of 398*     29%      1
+math  ▁▁●▅█▆▄█▄▁▁▁   #401 of 424*     29%      1
 </pre>
 
-<details><summary>math · #379 of 398 · 29% of its score</summary>
+<details><summary>math · #401 of 424 · 29% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   57.5%  ▁●·▁▄█▅▅▅███ beats 3/43   very easy · avg 89%     29%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   57.5%  ▁●·▁▄█▅▅▅███ beats 3/43   very easy · avg 87%     29%  sharp · at its level
 </pre>
 
 </details>
@@ -32,9 +34,9 @@ test                         result  vs the others in its run  difficulty       
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             55.2%  ▁·▁●▄▄▄▅█▄▂▁ beats 2/53     easy · avg 77%          56%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.1554 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 24/52    avg 45.276 WB-Score     12%  sharp
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 153/276  medium · avg 73%       2.3%  at its level · noisy
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             55.2%  ▁·▁●▄▄▄▅█▄▂▁ beats 2/53     easy · avg 75%          55%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.1554 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 24/52    avg 42.747 WB-Score     12%  sharp
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 153/276  medium · avg 72%       2.6%  at its level · noisy
 </pre>
 
 </details>
@@ -47,9 +49,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>        2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>              1   12% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    2% ▇
-prior: pull toward the middle                   1% ▇
-weighted average                              = 38.5
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    3% ▇
+prior: pull toward the middle                   0% ▇
+weighted average                              = 40.4
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

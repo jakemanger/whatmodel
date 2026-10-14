@@ -6,32 +6,44 @@
 
 Google · released 2022-10 · 0.077B params · apache-2.0
 
-**score 13.8** ±3.2 · #705 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 16.2** ±2.6 · #702 of 724 · from 11 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks Flan-T5 Small among every model on that task or test, worst to best.</sub>
 
 <pre>
-task  vs the others      rank  counts  tests
-math  ●█·█···█···█   #5 of 5*     18%      1
+task  vs the others          rank  counts  tests
+math  ●▁▃▅█▆▄█▄▁▁▁   #420 of 424*    3.9%      1
 </pre>
 
-<details><summary>math · #5 of 5 · 18% of its score</summary>
+<details><summary>math · #420 of 424 · 3.9% of its score</summary>
+
+Beats [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.2%  ●·▁·▁··▂▄█▄▄ beats 1/26   hard · avg 22%     18%  too hard for it
+test        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.2%  ●·▂·▄▂▂▂▂█▄▆ beats 1/18   medium · avg 47%    3.9%  sharp · too hard for it
 </pre>
 
 </details>
 
-<details><summary>other tests (2)</summary>
+<details><summary>other tests (10)</summary>
 
 <pre>
-test                  result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>   29.1%  ▁▁▁●▂▄▅▅█▃▄▁ beats 3/129  easy · avg 80%     39%  sharp · too hard for it
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>             28.7%  ▁▁▁●▁▂▃▅█▃▆▃ beats 5/183  easy · avg 82%     39%  typical
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 1.7%  █·●▂▄▂▂····▂ beats 5/12   easy · avg 70%       20%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           28.7%  ▁···●··▃▁▅▅█ beats 1/18   easy · avg 74%       19%  too hard for it
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    18.5%  ▂●··▂·▂··▂█▄ beats 1/10   medium · avg 56%     11%  blunt
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   34.6%  ▃····●·▃▃█▅▅ beats 1/10   easy · avg 81%       10%  typical
+<a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>    1.1%  ●··▂·▂▄▄·███ beats 0/18   medium · avg 61%    7.6%  too hard for it
+<a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   51.0%  █···●·····██ beats 1/3    medium · avg 68%    7.3%  too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 29.1%  ●▂▂▂·▅·▃▂█▃▃ beats 0/18   medium · avg 60%    5.7%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   11.6%  ●··▃·█▃·█▃·▃ beats 0/10   hard · avg 29%      5.5%  blunt
+<a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   51.8%  ▂●▄··▂▂█▄··▂ beats 1/12   easy · avg 90%      4.7%  noisy
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   21.0%  ●·█··██·▄▄▄▄ beats 0/10   medium · avg 43%    2.1%  blunt
 </pre>
 
 </details>
@@ -42,12 +54,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        3   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        5% ▇
-weighted average                                   = 13.8
+<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   37% ▇▇▇▇
+<a name="acl-2023-findings-emnlp-536"></a><a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS: A Zero-Shot Benchmark for …</a>        4   28% ▇▇▇
+<a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        1   20% ▇▇
+<a name="acl-2023-findings-emnlp-504"></a><a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA: Probe the World Models of LLMs w…</a>        1    7% ▇
+<a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    5% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 16.2
 </pre>
 
-<sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>
+<sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · POSQA: Probe the World Models of LLMs with Size Comparisons ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-504-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

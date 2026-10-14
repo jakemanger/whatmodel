@@ -6,7 +6,9 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 76.8** ±0.7 · #29 of 721 · from 19 benchmark results across 6 sources
+**score 75.6** ±0.7 · #30 of 724 · from 19 benchmark results across 6 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,9 +17,9 @@ OpenAI · released 2026-09 · closed weights
 <pre>
 task            vs the others         rank  counts  tests
 agent tasks     ▁▁▃▆█▆▅▅▅●▃▁    #36 of 302     16%      3
-coding          ▁▁▁▃▆██▇▆▄●▁    #32 of 458     13%      3
-chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #59 of 393*    4.4%      1
-math            ▁▂▃▅▆▅▄█▄●▁▁    #16 of 398     39%      3
+coding          ▁▁▁▃▆██▇▆▄●▁    #32 of 460     13%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #59 of 395*    4.7%      1
+math            ▁▁▃▅█▆▄█▄●▁▁    #16 of 424     38%      3
 </pre>
 
 <details><summary>agent tasks · #36 of 302 · 16% of its score</summary>
@@ -26,46 +28,46 @@ Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [DeepSeek V4 
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0135 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 26/49  avg -0.310 IPS          8.8%  sharp
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-luna-max-codex.json">Terminal-Bench 4.0</a>                       16.4%  █●▅▅▅·▅▃▃▅▅▅ beats 4/20   very hard · avg 0.4%    5.0%  sharp
-<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>            66.6%  ●··▃▃····▃·▃ beats 0/6    hard · avg 21%          2.6%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0135 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 26/49  avg -0.312 IPS          8.7%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-luna-max-codex.json">Terminal-Bench 4.0</a>                       16.4%  █●▅▅▅·▅▃▃▅▅▅ beats 4/20   very hard · avg 0.5%    4.8%  sharp
+<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>            66.6%  ●··▃▃····▃·▃ beats 0/6    hard · avg 22%          2.4%  at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #32 of 458 · 13% of its score</summary>
+<details><summary>coding · #32 of 460 · 13% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1578.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 89/119  avg 983           7.8%  sharp
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   80.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 34/49   hard · avg 18%    2.8%  typical
-<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        66.6%  ●··▃▃····▃·▃ beats 0/6     hard · avg 21%    2.6%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1578.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 89/119  avg 969           8.0%  sharp
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   80.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 34/49   hard · avg 17%    2.9%  typical
+<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        66.6%  ●··▃▃····▃·▃ beats 0/6     hard · avg 22%    2.4%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #59 of 393 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #59 of 395 · 4.7% of its score</summary>
 
 Trails [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1442.9  ▁▁▁▂▃▃▃▆▆▇●▃ beats 304/379  avg 1268      4.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1442.9  ▁▁▁▂▃▃▃▆▆▇●▃ beats 304/379  avg 1258      4.7%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #16 of 398 · 39% of its score</summary>
+<details><summary>math · #16 of 424 · 38% of its score</summary>
 
 Beats [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md), [Claude Opus 4.8](claude-opus-4-8.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      56.1%  ▁▂▁▂█▅●▂▁▁▁▁ beats 48/63    very hard · avg 0.1%     20%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   78.9%  ▂··▁▁▃▄▄█●▃▃ beats 67/82    very hard · avg 1.2%     18%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    98.9%  ▃▃▄▃▃▃▇▇█▃▂● beats 178/193  very hard · avg 8.6%    0.6%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      56.1%  ▁▂▁▂█▅●▂▁▁▁▁ beats 48/63    very hard · avg 0.1%     19%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   78.9%  ▂··▁▁▃▄▄█●▃▃ beats 67/82    very hard · avg 1.1%     19%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    98.9%  ▃▃▄▃▃▃▇▇█▃▂● beats 178/193  very hard · avg 6.9%    0.5%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -74,16 +76,16 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           44.2%  █▆▆▆●▂▅▂▂▂·▅ beats 19/30    very hard · avg 1.3%    7.8%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          7.0%  ●··▂▃▇▄█▂▃▁▁ beats 0/74     very hard · avg 9.4%    6.7%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                31.0%  █▁▁▁▁▂▁▄●▂▁▁ beats 105/135  very hard · avg 5.9%    4.1%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.5%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 175/208  hard · avg 40%          2.8%  sharp
-<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Professional (lab)</a>       60.8%  ▄·▄··▄▄·▄●·█ beats 5/8      hard · avg 20%          1.8%  blunt · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    41.4%  ▁▁▃▂▃▃▆●█▃▂▅ beats 38/78    very hard · avg 8.1%    1.8%  at its level
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   57.1%  ▁▁▃▂▂▄▁▃▄●▄█ beats 25/38    very hard · avg 14%     1.5%  at its level
-<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Hard (lab)</a>               25.4%  ▂··●····▂▄·█ beats 1/8      very hard · avg 9.7%    1.0%  blunt · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           44.2%  █▆▆▆●▂▅▂▂▂·▅ beats 19/30    very hard · avg 1.3%    7.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          7.0%  ●··▂▃▇▄█▂▃▁▁ beats 0/74     very hard · avg 9.4%    7.2%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                31.0%  █▁▁▁▁▂▁▄●▂▁▁ beats 105/135  very hard · avg 5.8%    4.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.5%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 175/208  hard · avg 38%          2.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    41.4%  ▁▁▃▂▃▃▆●█▃▂▅ beats 38/78    very hard · avg 7.4%    1.9%  at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Professional (lab)</a>       60.8%  ▄·▄··▄▄·▄●·█ beats 5/8      hard · avg 20%          1.7%  blunt · at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   57.1%  ▁▁▃▂▂▄▁▃▄●▄█ beats 25/38    very hard · avg 14%     1.7%  at its level
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   95.6%  ▁▁▃▁█▄▃●▆▂▂▂ beats 30/49    easy · avg 77%          1.0%  maxed out
 <a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench (lab)</a>                    50.0%  ▃·●·····█▃▃▅ beats 1/8      hard · avg 24%          1.0%  blunt · at its level
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   95.6%  ▁▁▃▁█▄▃●▆▂▂▂ beats 30/49    easy · avg 78%          0.9%  maxed out
+<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Hard (lab)</a>               25.4%  ▂··●····▂▄·█ beats 1/8      very hard · avg 9.7%    1.0%  blunt · at its level
 </pre>
 
 </details>
@@ -101,7 +103,7 @@ source                                    results  share of the score
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    4% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 76.8
+weighted average                                   = 75.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

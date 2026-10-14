@@ -6,7 +6,9 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 53.8** ±4.9 · #354 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.4** ±4.6 · #358 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ OpenAI · released 2025-03 · proprietary
 
 <pre>
 task        vs the others        rank  counts  tests
-web search  ▂●▂▆▄█▃▃▁▁·▁   #77 of 81*     89%      1
+web search  ▂●▂▆▄█▃▃▁▁·▁   #77 of 81*     90%      1
 </pre>
 
-<details><summary>web search · #77 of 81 · 89% of its score</summary>
+<details><summary>web search · #77 of 81 · 90% of its score</summary>
 
 Beats [GLM-4.5](glm-4-5.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1081.0  ●·▁▁▂▂▂█▅▂▁▁ beats 0/30   avg 1055       89%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1081.0  ●·▁▁▂▂▂█▅▂▁▁ beats 0/30   avg 1050       90%  blunt
 </pre>
 
 </details>
@@ -34,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            11% ▇
-weighted average                        = 53.8
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            10% ▇
+weighted average                        = 54.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

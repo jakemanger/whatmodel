@@ -6,7 +6,9 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · deepseek
 
-**score 48.5** ±0.7 · #372 of 721 · from 10 benchmark results across 4 sources
+**score 50.0** ±0.7 · #366 of 724 · from 10 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,20 +16,20 @@ UIUC (ise-uiuc) · released 2023-12 · 6.74B params · deepseek
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #272 of 458     75%      5
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #272 of 460     73%      5
 </pre>
 
-<details><summary>coding · #272 of 458 · 75% of its score</summary>
+<details><summary>coding · #272 of 460 · 73% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    76.8%  ▁·▁▁▃▄▆▅●▃▁▁ beats 78/99  easy · avg 79%       44%  sharp · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   71.3%  ▁·▁▁▁▃▄▄▄●▃▁ beats 74/99  easy · avg 74%       23%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        69.0%  ▁···▁▁▂▅▇█●▂ beats 59/75  easy · avg 68%      4.5%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   41.7%  ▁··▁▅▂●▇▁··▁ beats 12/22  medium · avg 54%    1.6%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   44.4%  ▁·▂▃▁█●▂···▁ beats 18/22  medium · avg 53%    1.5%  blunt · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    76.8%  ▁·▁▁▃▄▆▅●▃▁▁ beats 78/99  easy · avg 76%       42%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   71.3%  ▁·▁▁▁▃▄▄▄●▃▁ beats 74/99  easy · avg 70%       23%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        69.0%  ▁···▁▁▂▅▇█●▂ beats 59/75  easy · avg 66%      4.8%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   41.7%  ▁··▁▅▂●▇▁··▁ beats 12/22  medium · avg 52%    1.7%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   44.4%  ▁·▂▃▁█●▂···▁ beats 18/22  medium · avg 51%    1.6%  blunt · at its level
 </pre>
 
 </details>
@@ -36,10 +38,10 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>              50.0%  ▂▂▃▄▄█▁▄●▃▁▃ beats 35/42  medium · avg 55%     12%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        36.0%  ▃▂·▆▆█●▆▅▃▃▃ beats 19/33  medium · avg 41%    5.0%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 51%    4.8%  at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   69.8%  ▂·▂▂▂●▅▆▆▆▃█ beats 7/29   easy · avg 76%      2.6%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>              50.0%  ▂▂▃▄▄█▁▄●▃▁▃ beats 35/42  medium · avg 52%     13%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        36.0%  ▃▂·▆▆█●▆▅▃▃▃ beats 19/33  medium · avg 39%    5.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 48%    5.1%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   69.8%  ▂·▂▂▂●▅▆▆▆▃█ beats 7/29   easy · avg 74%      2.7%  at its level
 </pre>
 
 </details>
@@ -50,12 +52,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   59% ▇▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   28% ▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   10% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   57% ▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   29% ▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   11% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.5
+weighted average                                   = 50.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

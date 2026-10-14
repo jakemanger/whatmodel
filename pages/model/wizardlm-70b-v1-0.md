@@ -6,7 +6,9 @@
 
 Microsoft · released 2023-08 · 70B params · llama2
 
-**score 41.9** ±1.1 · #502 of 721 · from 14 benchmark results across 6 sources
+**score 44.0** ±1.0 · #496 of 724 · from 14 benchmark results across 6 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,45 +16,45 @@ Microsoft · released 2023-08 · 70B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #281 of 458    6.1%      4
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #315 of 393     50%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁   #297 of 398*    6.3%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #284 of 460    7.2%      4
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #315 of 395     51%      3
+math            ▁▁▃●█▆▄█▄▁▁▁   #341 of 424*    8.7%      1
 </pre>
 
-<details><summary>coding · #281 of 458 · 6.1% of its score</summary>
+<details><summary>coding · #284 of 460 · 7.2% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   49.0%  ▃··▁▂▂▃▂●▃▄▂ beats 24/47  medium · avg 54%    2.4%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   19.2%  █▂▁▁▂▂▂●▅▅▅▇ beats 19/47  medium · avg 36%    2.0%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.9%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 23/47  hard · avg 33%      1.7%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 41/47  easy · avg 67%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   49.0%  ▃··▁▂▂▃▂●▃▄▂ beats 24/47  medium · avg 50%    2.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   19.2%  █▂▁▁▂▂▂●▅▅▅▇ beats 19/47  hard · avg 32%      2.2%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.9%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 23/47  hard · avg 31%      2.1%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 41/47  easy · avg 66%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #315 of 393 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #315 of 395 · 51% of its score</summary>
 
-Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       17.6%  ▁▂▂▃▆●█▆▄▄▁▁ beats 45/122  medium · avg 39%     30%  typical
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1129.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 62/95   avg 1201             10%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1184.7  ▁▁▁▂●▃▃▆▆▇█▃ beats 62/379  avg 1268             10%  blunt
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       17.6%  ▁▂▂▃▆●█▆▄▄▁▁ beats 45/122  hard · avg 35%     31%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1184.7  ▁▁▁▂●▃▃▆▆▇█▃ beats 62/379  avg 1258           11%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1129.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 62/95   avg 1186           10%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #297 of 398 · 6.3% of its score</summary>
+<details><summary>math · #341 of 424 · 8.7% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
-test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>   73.2%  ▂▂▂▅▅▆▅●█▇▄▃ beats 77/146  easy · avg 82%    6.3%  sharp · at its level
+test   result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>   73.2%  ▂▂▂▂▃▄▅▇●█▆▄ beats 126/200  easy · avg 80%    8.7%  sharp · at its level
 </pre>
 
 </details>
@@ -61,12 +63,12 @@ test   result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                       51.1%  ▁▁▁▁▂▄▅●█▃▄▁ beats 50/129   medium · avg 68%     13%  sharp · at its level
-<a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                        71.9%  ▆▁▁▂▂▅▇█▄●▃▂ beats 84/97    easy · avg 86%      8.0%  sharp · at its level
-<a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                                 55.0%  ▁▁▁▁▁▂▃●█▃▆▃ beats 50/183   easy · avg 74%      6.2%  at its level
-<a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                      48.7%  █▄●··▄··▄█·█ beats 3/9      easy · avg 69%      5.1%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 180/276  medium · avg 73%    2.3%  at its level · noisy
-<a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                             80.7%  ▁▂▃▂▃▅▇█▇▆▄● beats 62/65    easy · avg 88%      2.2%  typical
+<a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                       51.1%  ▁▁▁▁▂▄▅●█▃▃▁ beats 68/155   medium · avg 63%     12%  sharp · at its level
+<a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                        71.9%  ▄▁▁▂▁▄█▇▃●▃▂ beats 121/140  easy · avg 82%      6.3%  sharp · at its level
+<a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                                 55.0%  ▁▁▁▁▁▂▂●██▆▄ beats 65/214   medium · avg 72%    6.3%  at its level
+<a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                      48.7%  █▄●··▄··▄█·█ beats 3/9      medium · avg 65%    4.5%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 180/276  medium · avg 72%    2.5%  at its level · noisy
+<a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                             80.7%  ▁▃▂▄▆█▅●▁··▁ beats 92/100   easy · avg 85%      1.4%  blunt
 </pre>
 
 </details>
@@ -77,17 +79,17 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2311.11045v2"></a><a href="https://arxiv.org/html/2311.11045v2">Orca 2: Teaching Small Language Models …</a>        6   41% ▇▇▇▇▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   30% ▇▇▇▇
+<a name="paper-2311.11045v2"></a><a href="https://arxiv.org/html/2311.11045v2">Orca 2: Teaching Small Language Models …</a>        6   39% ▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   31% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   10% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   10% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    6% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    7% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.9
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 44.0
 </pre>
 
-<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

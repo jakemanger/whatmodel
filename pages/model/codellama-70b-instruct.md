@@ -6,7 +6,9 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 46.0** ±0.6 · #420 of 721 · from 13 benchmark results across 7 sources
+**score 47.6** ±0.6 · #408 of 724 · from 13 benchmark results across 7 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,34 +16,34 @@ Meta · released 2024-01 · 69B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #303 of 458     78%      6
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #369 of 393*    5.7%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #304 of 460     77%      6
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #370 of 395*    6.3%      2
 </pre>
 
-<details><summary>coding · #303 of 458 · 78% of its score</summary>
+<details><summary>coding · #304 of 460 · 77% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            72.0%  ▁·▁▁▃▄▆▅●▃▁▁ beats 63/99  easy · avg 79%       43%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           65.9%  ▁·▁▁▁▃▄▄▄●▃▁ beats 62/99  easy · avg 74%       19%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   58.9%  ▁·▂▁▂▆▅█▄▄●▂ beats 33/35  medium · avg 65%    5.2%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.1%  ▄▇█▃▄▇▄▁●▃·▁ beats 32/35  medium · avg 49%    4.0%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   53.0%  ▁·▁▁▄██▄█▁▅● beats 34/35  medium · avg 56%    3.9%  sharp · at its level
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.2%  ▃▃▃█··▃▅··●▃ beats 9/11   easy · avg 73%      3.3%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            72.0%  ▁·▁▁▃▄▆▅●▃▁▁ beats 63/99  easy · avg 76%       42%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           65.9%  ▁·▁▁▁▃▄▄▄●▃▁ beats 62/99  easy · avg 70%       18%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   58.9%  ▁·▂▁▂▆▅█▄▄●▂ beats 33/35  medium · avg 61%    5.4%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.1%  ▄▇█▃▄▇▄▁●▃·▁ beats 32/35  medium · avg 45%    4.0%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   53.0%  ▁·▁▁▄██▄█▁▅● beats 34/35  medium · avg 51%    4.0%  sharp · at its level
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.2%  ▃▃▃█··▃▅··●▃ beats 9/11   easy · avg 71%      3.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #369 of 393 · 5.7% of its score</summary>
+<details><summary>chat &amp; writing · #370 of 395 · 6.3% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1039.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 22/95   avg 1201      2.9%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1119.1  ▁▁▁●▃▃▃▆▆▇█▃ beats 22/379  avg 1268      2.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1119.1  ▁▁▁●▃▃▃▆▆▇█▃ beats 22/379  avg 1258      3.3%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1039.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 22/95   avg 1186      3.0%  typical
 </pre>
 
 </details>
@@ -50,9 +52,9 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         47.7%  ▂▂▃▄▄█▁▄●▃▁▃ beats 33/42  medium · avg 55%    8.9%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   40.5%  ▃▂·▆▆██▆●▃▃▃ beats 26/33  medium · avg 41%    3.4%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   48.9%  ▂▁▁▄▂▅▇█●▂▂▂ beats 49/58  medium · avg 51%    3.4%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         47.7%  ▂▂▃▄▄█▁▄●▃▁▃ beats 33/42  medium · avg 52%    9.3%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   40.5%  ▃▂·▆▆██▆●▃▃▃ beats 26/33  medium · avg 39%    3.7%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   48.9%  ▂▁▁▄▂▅▇█●▂▂▂ beats 49/58  medium · avg 48%    3.6%  at its level
 </pre>
 
 </details>
@@ -63,18 +65,18 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   42% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   40% ▇▇▇▇▇
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   13% ▇▇
 <a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   11% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2    7% ▇
-<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    3% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.0
+weighted average                                   = 47.6
 </pre>
 
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

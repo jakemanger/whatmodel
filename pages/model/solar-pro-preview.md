@@ -6,7 +6,9 @@
 
 Upstage · released 2024-09 · 22.14B params · mit
 
-**score 50.5** ±6.5 · #427 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±6.0 · #434 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Upstage · released 2024-09 · 22.14B params · mit
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 209/276  medium · avg 73%     81%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 209/276  medium · avg 72%     84%  at its level · noisy
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle              19% ▇▇
-weighted average                          = 50.5
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle              16% ▇▇
+weighted average                          = 51.3
 </pre>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,9 @@
 
 Cohere
 
-**score 54.7** ±2.1 · #273 of 721 · from 6 benchmark results across 2 sources
+**score 54.6** ±2.1 · #288 of 724 · from 6 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,42 +16,42 @@ Cohere
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #150 of 302     58%      3
-coding       ▁▁▁▃▆██●▆▄▃▁   #183 of 458*    8.9%      1
-math         ▁▂▃▅▆●▄█▄▁▁▁   #209 of 398*     25%      1
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #150 of 302     59%      3
+coding       ▁▁▁▃▆██●▆▄▃▁   #184 of 460*    8.7%      1
+math         ▁▁▃▅█●▄█▄▁▁▁   #227 of 424*     24%      1
 </pre>
 
-<details><summary>agent tasks · #150 of 302 · 58% of its score</summary>
+<details><summary>agent tasks · #150 of 302 · 59% of its score</summary>
 
-Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty            counts  why
-<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>            37.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 30/89  hard · avg 25%           27%  sharp · at its level · small run
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   57.1%  ▁▁▁▂██▅▅●▂▂▂ beats 68/77  hard · avg 32%           18%  at its level
-<a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>          3.0%  ▂▅●▂▂▆▂▂█▅▅▂ beats 4/27   very hard · avg 4.2%     12%  sharp · too hard for it · small run
+<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>            37.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 30/89  hard · avg 26%           27%  sharp · at its level · small run
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   57.1%  ▁▁▁▂██▅▅●▂▂▂ beats 68/77  hard · avg 31%           19%  at its level
+<a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>          3.0%  ▂▅●▂▂▆▂▂█▅▅▂ beats 4/27   very hard · avg 4.2%     13%  sharp · too hard for it · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #183 of 458 · 8.9% of its score</summary>
+<details><summary>coding · #184 of 460 · 8.7% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>   30.0%  ▁····▃▄●▄█▆▂ beats 10/34  hard · avg 19%    8.9%  small run
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>   30.0%  ▁····▃▄●▄█▆▂ beats 10/34  hard · avg 19%    8.7%  small run
 </pre>
 
 </details>
 
-<details><summary>math · #209 of 398 · 25% of its score</summary>
+<details><summary>math · #227 of 424 · 24% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>   57.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 43/133  medium · avg 47%     25%  sharp · at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>   57.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 43/133  medium · avg 46%     24%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -58,7 +60,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   36.0%  ●········██▅ beats 0/8    medium · avg 41%    6.7%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   36.0%  ●········██▅ beats 0/8    medium · avg 42%    6.2%  at its level · small run
 </pre>
 
 </details>
@@ -69,10 +71,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        5   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   18% ▇▇
+<a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        5   79% ▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   19% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 54.7
+weighted average                                   = 54.6
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

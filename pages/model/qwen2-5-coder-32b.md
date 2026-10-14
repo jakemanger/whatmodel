@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 56.5** ±0.7 · #241 of 721 · from 25 benchmark results across 11 sources
+**score 57.5** ±0.7 · #235 of 724 · from 25 benchmark results across 11 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,44 +16,44 @@ Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁    #184 of 458     88%     17
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #253 of 393*    4.3%      1
+coding          ▁▁▁▃▆██●▆▄▃▁    #183 of 460     87%     17
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #253 of 395*    4.7%      1
 </pre>
 
-<details><summary>coding · #184 of 458 · 88% of its score</summary>
+<details><summary>coding · #183 of 460 · 87% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Command A Reasoning (08-2025)](command-a-reasoning-08-2025.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            92.1%  ▁·▁▁▃▄▆▅█▃●▁ beats 97/99  easy · avg 79%           19%  sharp · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           87.2%  ▁·▁▁▁▃▄▄▄█▃● beats 97/99  easy · avg 74%           18%  sharp · several runs
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   41.6%  ▁▁·▁▂▄▆█●▂·▂ beats 25/31  hard · avg 26%           12%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   16.4%  ▂·▂●▅▂▃█▆▄▂▂ beats 7/49   very hard · avg 8.6%     10%  sharp
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   71.4%  ▁·▁▂▄▁▆▄█●▂▂ beats 51/62  medium · avg 54%        7.0%  at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                77.0%  ▁···▁▁▂▅▇█▆● beats 73/75  easy · avg 68%          5.9%  several runs
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   24.5%  ▁▁▁●·▁▂▃▅▃█▇ beats 5/49   hard · avg 18%          3.3%  at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   41.6%  ▁··▁·▁●▁▆█▇█ beats 4/45   hard · avg 32%          2.3%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           90.2%  █···███·██·● beats 6/6    easy · avg 79%          2.3%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 71%          2.1%  typical
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     66.8%  ▃▁▁█▁▄●▃▄▇▁▄ beats 16/31  medium · avg 44%        1.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  medium · avg 36%        1.5%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     75.2%  █·██·█··█·█● beats 6/6    medium · avg 57%        1.1%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   44.1%  ▁▁▁▁▁▁▂▂▃█▅● beats 41/47  hard · avg 33%          1.0%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   85.7%  ▃··▁▂▂▃▂█▃▄● beats 45/47  medium · avg 54%        1.0%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     83.4%  ▄·█··▄·▄··▄● beats 6/6    medium · avg 55%        0.4%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 46/47  easy · avg 67%          0.0%  blunt · at its level · noisy
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            92.1%  ▁·▁▁▃▄▆▅█▃●▁ beats 97/99  easy · avg 76%           17%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           87.2%  ▁·▁▁▁▃▄▄▄█▃● beats 97/99  easy · avg 70%           17%  sharp · several runs
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   41.6%  ▁▁·▁▂▄▆█●▂·▂ beats 25/31  hard · avg 23%           12%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   16.4%  ▂·▂●▅▂▃█▆▄▂▂ beats 7/49   very hard · avg 7.3%     10%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   71.4%  ▁·▁▂▄▁▆▄█●▂▂ beats 51/62  medium · avg 50%        7.5%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                77.0%  ▁···▁▁▂▅▇█▆● beats 73/75  easy · avg 66%          5.9%  several runs
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   24.5%  ▁▁▁●·▁▂▃▅▃█▇ beats 5/49   hard · avg 17%          3.6%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   41.6%  ▁··▁·▁●▁▆█▇█ beats 4/45   hard · avg 29%          2.8%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           90.2%  █···███·██·● beats 6/6    easy · avg 77%          2.2%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 69%          2.1%  typical
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     66.8%  ▃▁▁█▁▄●▃▄▇▁▄ beats 16/31  medium · avg 39%        1.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  hard · avg 32%          1.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   44.1%  ▁▁▁▁▁▁▂▂▃█▅● beats 41/47  hard · avg 31%          1.3%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   85.7%  ▃··▁▂▂▃▂█▃▄● beats 45/47  medium · avg 50%        1.1%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     75.2%  █·██·█··█·█● beats 6/6    medium · avg 55%        1.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     83.4%  ▄·█··▄·▄··▄● beats 6/6    medium · avg 54%        0.4%  blunt · at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 46/47  easy · avg 66%          0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #253 of 393 · 4.3% of its score</summary>
+<details><summary>chat &amp; writing · #253 of 395 · 4.7% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1270.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 103/379  avg 1268      4.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1270.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 103/379  avg 1258      4.7%  blunt
 </pre>
 
 </details>
@@ -60,10 +62,10 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   34.1%  ▅··▃●·█·▃██▃ beats 4/15     hard · avg 24%      2.8%  at its level
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   84.6%  ▁▁●▁█▄▃▃▆▂▂▂ beats 5/49     easy · avg 78%      2.4%  typical
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        49.6%  ▄······▄▄█·● beats 6/6      medium · avg 38%    1.6%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 222/276  medium · avg 73%    0.8%  at its level · noisy
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   34.1%  ▅··▃●·█·▃██▃ beats 4/15     hard · avg 22%      3.0%  at its level
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   84.6%  ▁▁●▁█▄▃▃▆▂▂▂ beats 5/49     easy · avg 77%      2.7%  typical
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        49.6%  ▄······▄▄█·● beats 6/6      medium · avg 36%    1.6%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 222/276  medium · avg 72%    0.9%  at its level · noisy
 </pre>
 
 </details>
@@ -74,19 +76,19 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   34% ▇▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   16% ▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   32% ▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   15% ▇▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   12% ▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   10% ▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    7% ▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    8% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    6% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
-<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     2    4% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
+<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     2    5% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    4% ▇
 <a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.5
+weighted average                                   = 57.5
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

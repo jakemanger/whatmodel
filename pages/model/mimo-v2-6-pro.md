@@ -6,7 +6,9 @@
 
 Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
-**score 79.0** ±1.1 · #17 of 721 · from 13 benchmark results across 2 sources
+**score 77.7** ±1.1 · #18 of 724 · from 13 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,59 +16,59 @@ Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #18 of 302     50%      7
-coding              ▁▁▁▃▆██▇▆▄●▁   #23 of 458*     21%      2
-chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #20 of 393*     11%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #50 of 147*    7.6%      1
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #18 of 302     49%      7
+coding              ▁▁▁▃▆██▇▆▄●▁   #23 of 460*     22%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #20 of 395*     12%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #50 of 147*    8.5%      1
 </pre>
 
-<details><summary>agent tasks · #18 of 302 · 50% of its score</summary>
+<details><summary>agent tasks · #18 of 302 · 49% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0352 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 31/49  avg -0.310 IPS           22%  sharp
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>                 34.9%  ▁·▁··▁▇▇▅●█▃ beats 17/30  very hard · avg 0.4%     12%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>                 89.9%  ▁·▁·▁▁▄▃▄█▄● beats 56/58  hard · avg 21%          5.7%  small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>                   82.0%  █▄·▂▆▂▄▂▆▄●█ beats 21/25  hard · avg 25%          4.2%  small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/harness…</a>       31.6%  ▂·▂·█●···▂▄▄ beats 6/11   very hard · avg 6.4%    3.2%  at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>                76.9%  ▂·▂▂▅▃···▂●█ beats 13/18  hard · avg 31%          1.8%  blunt · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>            71.9%  ▂····▁▁▁▆█●▇ beats 22/29  hard · avg 18%          1.4%  at its level · noisy · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0352 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 31/49  avg -0.312 IPS           22%  sharp
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>                 34.9%  ▁·▁··▁▇▇▅●█▃ beats 17/30  very hard · avg 0.5%     11%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>                 89.9%  ▁·▁·▁▁▄▃▄█▄● beats 56/58  hard · avg 22%          5.3%  sharp · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>                   82.0%  █▄·▂▆▂▄▂▆▄●█ beats 21/25  hard · avg 27%          3.8%  small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/harness…</a>       31.6%  ▂·▂·█●···▂▄▄ beats 6/11   very hard · avg 6.5%    2.9%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>                76.9%  ▂·▂▂▅▃···▂●█ beats 13/18  hard · avg 32%          1.7%  blunt · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>            71.9%  ▂····▁▁▁▆█●▇ beats 22/29  hard · avg 18%          1.3%  at its level · noisy · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #23 of 458 · 21% of its score</summary>
+<details><summary>coding · #23 of 460 · 22% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1618.4  ▁▂▄▃▅█▄▇●▄▁▁ beats 98/119  avg 983            19%  sharp
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>   71.9%  ▂····▁▁▁▆█●▇ beats 22/29   hard · avg 18%    1.4%  at its level · noisy · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1618.4  ▁▂▄▃▅█▄▇●▄▁▁ beats 98/119  avg 969            21%  sharp
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>   71.9%  ▂····▁▁▁▆█●▇ beats 22/29   hard · avg 18%    1.3%  at its level · noisy · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #20 of 393 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #20 of 395 · 12% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1480.1  ▁▁▁▂▃▃▃▆▆▇█● beats 357/379  avg 1268       11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1480.1  ▁▁▁▂▃▃▃▆▆▇█● beats 357/379  avg 1258       12%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #50 of 147 · 7.6% of its score</summary>
+<details><summary>vision &amp; documents · #50 of 147 · 8.5% of its score</summary>
 
 Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemma 4 31B](gemma-4-31b.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1245.2  ▁▁▂▂▂▂▄▅▅▆●█ beats 98/145  avg 1068      7.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1245.2  ▁▁▂▂▂▂▄▅▅▆●█ beats 98/145  avg 1058      8.5%  blunt
 </pre>
 
 </details>
@@ -75,9 +77,9 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>   53.1%  ▃····▃·▃▃··● beats 6/6    very hard · avg 5.7%    4.2%  at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>   66.3%  ▄··▄···▄·▄·● beats 5/5    very hard · avg 6.5%    3.7%  at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>      17.8%  ▄···▄··▄▄··● beats 5/5    very hard · avg 0.6%    3.2%  noisy · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>   53.1%  ▃····▃·▃▃··● beats 6/6    very hard · avg 6.3%    3.7%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>   66.3%  ▄··▄···▄·▄·● beats 5/5    very hard · avg 7.2%    3.2%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>      17.8%  ▄···▄··▄▄··● beats 5/5    very hard · avg 0.7%    2.8%  noisy · small run
 </pre>
 
 </details>
@@ -88,10 +90,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   60% ▇▇▇▇▇▇▇
-<a name="first-party-xiaomi"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Xiaomi MiMo official model cards and do…</a>        9   39% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   63% ▇▇▇▇▇▇▇▇
+<a name="first-party-xiaomi"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Xiaomi MiMo official model cards and do…</a>        9   36% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 79.0
+weighted average                                   = 77.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

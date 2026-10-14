@@ -6,7 +6,9 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 80.6** ±0.9 · #14 of 721 · from 12 benchmark results across 5 sources
+**score 79.4** ±0.9 · #14 of 724 · from 12 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,7 +17,7 @@ OpenAI · released 2026-03 · proprietary
 <pre>
 task         vs the others         rank  counts  tests
 agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #16 of 302*     11%      2
-math         ▁▂▃▅▆▅▄█▄●▁▁    #14 of 398     62%      3
+math         ▁▁▃▅█▆▄█▄●▁▁    #14 of 424     62%      3
 web search   ▂▁▂▆▄█●▃▁▁·▁    #15 of 80*     11%      2
 </pre>
 
@@ -25,21 +27,21 @@ Beats [Muse Wonder Full](muse-wonder-full.md) here, though they rank higher over
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     89.3%  ▄··█▄··▄·●█▄ beats 5/8    hard · avg 32%         6.6%  typical
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    4.9%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     89.3%  ▄··█▄··▄·●█▄ beats 5/8    hard · avg 34%         6.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    5.0%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #14 of 398 · 62% of its score</summary>
+<details><summary>math · #14 of 424 · 62% of its score</summary>
 
 Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               58.5%  ▁▂▁▂█▅●▂▁▁▁▁ beats 50/63  very hard · avg 0.1%     32%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            82.5%  ▂··▁▁▃▄▄█▅●▃ beats 70/82  very hard · avg 1.2%     21%  sharp
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.1%    9.0%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               58.5%  ▁▂▁▂█▅●▂▁▁▁▁ beats 50/63  very hard · avg 0.1%     31%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            82.5%  ▂··▁▁▃▄▄█▅●▃ beats 70/82  very hard · avg 1.1%     21%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.0%    9.0%  at its level
 </pre>
 
 </details>
@@ -50,8 +52,8 @@ Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     89.3%  ▄··█▄··▄·●█▄ beats 5/8    hard · avg 32%         6.6%  typical
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    4.9%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     89.3%  ▄··█▄··▄·●█▄ beats 5/8    hard · avg 34%         6.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    5.0%  at its level
 </pre>
 
 </details>
@@ -60,12 +62,12 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           42.7%  ▃··▃·▃▃···▃● beats 6/7      very hard · avg 4.5%    9.3%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                58.6%  █▁▁▁▁▂▁▄▂▂●▁ beats 131/135  very hard · avg 5.9%    7.9%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.6%  ▁▁▁▁▂▄▆▄▅▇█● beats 203/208  hard · avg 40%          3.1%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    46.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 44/78    very hard · avg 8.1%    2.9%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>       36.7%  ██·······█·● beats 3/3      very hard · avg 7.4%    1.5%  at its level · small run
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC-AGI-1 public evaluation set (…</a>   98.3%  ▁·▇▃▁·█▇▁·▇● beats 27/27    very hard · avg 4.2%    1.4%  sharp · maxed out · noisy
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           42.7%  ▃··▃·▃▃···▃● beats 6/7      very hard · avg 4.4%    9.4%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                58.6%  █▁▁▁▁▂▁▄▂▂●▁ beats 131/135  very hard · avg 5.8%    8.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    46.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 44/78    very hard · avg 7.4%    3.2%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.6%  ▁▁▁▁▂▄▆▄▅▇█● beats 203/208  hard · avg 38%          3.1%  sharp · maxed out
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC-AGI-1 public evaluation set (…</a>   98.3%  ▁·▇▃▁·█▇▁·▇● beats 27/27    very hard · avg 3.8%    1.4%  sharp · maxed out · noisy
+<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>       36.7%  ██·······█·● beats 3/3      very hard · avg 7.9%    1.3%  at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   91.7%  ▁▂▁▂▅█●▃▄▃▁▁ beats 60/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -83,7 +85,7 @@ source                                    results  share of the score
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC Prize Foundation model_baseline out…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 80.6
+weighted average                                   = 79.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

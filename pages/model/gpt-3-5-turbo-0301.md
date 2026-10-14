@@ -6,65 +6,106 @@
 
 OpenAI · released 2023-03 · proprietary
 
-**score 46.0** ±0.6 · comparison only: no current run option verified · from 12 benchmark results across 6 sources
+**score 47.5** ±0.5 · comparison only: no current run option verified · from 68 benchmark results across 30 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks GPT-3.5 Turbo (0301) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #344 of 524     64%      4
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃    #383 of 463     24%      3
-math            ▁▂▃▅▇●▅█▄▁▁▁   #252 of 462*    1.9%      1
+task            vs the others         rank  counts  tests
+coding          ▁▁▁▃▅●█▇▅▄▂▁   #342 of 529     33%      5
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #383 of 466     13%      3
+math            ▁▂▃▆█●▅▇▃▁▁▁   #223 of 523    8.3%      3
 </pre>
 
-<details><summary>coding · #344 of 524 · 64% of its score</summary>
+<details><summary>coding · #342 of 529 · 33% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 65/99  easy · avg 79%          30%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           66.5%  ▁·▁▁▁▃▄▄▄●▃▁ beats 63/99  easy · avg 74%          24%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   57.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 27/62  medium · avg 54%       7.0%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.4%  ▃▃▃·▆▃▃█▃▂▂● beats 25/25  very easy · avg 86%    2.1%  sharp
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 65/99  easy · avg 76%       15%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           66.5%  ▁·▁▁▁▃▄▄▄●▃▁ beats 63/99  easy · avg 70%       13%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   57.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 27/62  medium · avg 50%    4.2%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.4%  ▃▃▃·▆▃▃█▃▂▂● beats 25/25  easy · avg 83%      1.0%  sharp
+<a href="https://aclanthology.org/2023.emnlp-industry.73.pdf">MBPP</a>                                 59.7%  ▁▁▁▄▅█▆▅●▁▂▁ beats 77/86  easy · avg 67%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #383 of 463 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #383 of 466 · 13% of its score</summary>
 
-Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       18.1%  ▁▂▂▃▆●█▆▄▄▁▁ beats 48/122  medium · avg 39%        14%  at its level
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   18.1%  ▂▁▁●█▅▄▃▃▅▃▁ beats 12/60   medium · avg 52%       9.5%  sharp · at its level
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   89.4%  ▂▂·▆·▇▃▆●▆▄▂ beats 30/45   very easy · avg 96%    0.6%  sharp · maxed out · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       18.1%  ▁▂▂▃▆●█▆▄▄▁▁ beats 48/122  hard · avg 35%         8.0%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   18.1%  ▂▁▁●█▅▄▃▃▅▃▁ beats 12/60   medium · avg 46%       5.1%  sharp · at its level
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   89.4%  ▂▂·▆·▇▃▆●▆▄▂ beats 30/45   very easy · avg 94%    0.2%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #252 of 462 · 1.9% of its score</summary>
+<details><summary>math · #223 of 523 · 8.3% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
-test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   76.0%  ▆▂▅█▅▅▃●···▂ beats 23/25  easy · avg 73%    1.9%  sharp · at its level
+test   result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   76.0%  ▆▂▅█▅▅▃●···▂ beats 23/25  easy · avg 72%      8.3%  sharp · at its level · several runs
+<a href="https://aclanthology.org/2023.findings-acl.29.pdf">MGSM</a>    57.2%  ▂·▁▁▁▁▁▂▅●▃▂ beats 32/42  medium · avg 47%       —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.findings-acl.29.pdf">MATH</a>    34.1%  ▃▅▂▆▅▃▅●█▃▃▂ beats 18/30  medium · avg 61%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>other tests (4)</summary>
+<details><summary>other tests (40)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.1%  ▁·····▂█▂●·▁ beats 22/25  easy · avg 77%      6.0%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 67.9%  ▁▁▃▃▄█▄▁●··▁ beats 24/25  easy · avg 74%      2.2%  at its level
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   47.6%  ▂··▄·▂▆▄●█·▂ beats 9/14   medium · avg 57%    1.7%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   51.9%  ▂··▁▃▂▂▂●▅▁▂ beats 14/25  medium · avg 61%    0.7%  blunt · at its level
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://aclanthology.org/2023.emnlp-main.550.pdf">AQuA-RAT</a>                             52.8%  █··▁▁▁··▁▁●▁ beats 26/27    medium · avg 58%       7.2%  sharp · at its level · small run · seve…
+<a href="https://aclanthology.org/2023.findings-acl.651.pdf">SVAMP</a>                                79.0%  █▆▆▅▂▅▂▅▂▂●▃ beats 27/30    very easy · avg 85%    5.4%  sharp · small run · several runs
+<a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">CommonsenseQA</a>                        75.4%  █·····▂▂▃▂▄● beats 33/38    easy · avg 80%         4.8%  sharp · at its level · small run · seve…
+<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   63.8%  █·····▃··●·▃ beats 5/6      medium · avg 71%       4.0%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.1%  ▁·····▂█▂●·▁ beats 22/25    medium · avg 74%       3.2%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>   51.8%  ▄···█·▄█··●▄ beats 6/7      medium · avg 56%       2.1%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">StrategyQA</a>                           69.2%  █····▂▂▁▂▂●▂ beats 22/25    medium · avg 72%       1.6%  at its level · small run · several runs
+<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   61.0%  █·▄······●·▄ beats 3/4      medium · avg 63%       1.5%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.392.pdf">OpenBookQA</a>                           80.0%  ▅▁▁▁▂▂▃█▃▁●▁ beats 101/107  easy · avg 78%         1.4%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 67.9%  ▁▁▃▃▄█▄▁●··▁ beats 24/25    medium · avg 72%       1.4%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.743.pdf">COPA</a>                                 96.3%  ▁·▁▁▁▅▅█▆▂▁● beats 65/67    very easy · avg 96%    1.1%  several runs
+<a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   37.0%  ▄······▄·●·▄ beats 2/4      medium · avg 38%       1.0%  sharp · at its level
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   47.6%  ▂··▄·▂▆▄●█·▂ beats 9/14     medium · avg 53%       1.0%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.392.pdf">BoolQ</a>                                67.7%  ▁····▁▂█▆▅▆● beats 103/103  medium · avg 75%       1.0%  at its level · small run · several runs
+<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   77.6%  ▄········▄·● beats 2/3      easy · avg 73%         1.0%  at its level
+<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>   50.2%  █······█··●█ beats 2/3      medium · avg 46%       0.9%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">ARC Challenge</a>                        57.2%  ▄▁▁▂▁▄█▇▃▂●▂ beats 130/140  medium · avg 72%       0.8%  sharp · at its level · small run
+<a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Spider dev execution accuracy, ze…</a>   70.9%  █·█▄··▄····● beats 6/6      medium · avg 54%       0.8%  sharp · at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>   17.7%  █··█····●··█ beats 2/3      very hard · avg 20%    0.7%  typical
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    49.3%  ▂▂··▂·▂··▂●▄ beats 6/10     medium · avg 56%       0.6%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   66.6%  ▃····▃·▃▃●▅▅ beats 4/10     easy · avg 81%         0.5%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">Social IQA</a>                           73.5%  ▁·▁██▄▅▁▂▃●▁ beats 57/59    medium · avg 71%       0.5%  blunt · at its level · small run · seve…
+<a href="https://aclanthology.org/2023.emnlp-main.891.pdf">RadNLI (3-class radiology NLI), z…</a>   45.4%  ●·█········█ beats 0/2      medium · avg 65%       0.4%  at its level · small run
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">WinoGrande</a>                           61.3%  ▁▁▁▁▂▁▁▅●█▃▁ beats 71/131   medium · avg 78%       0.4%  at its level · small run
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   51.9%  ▂··▁▃▂▂▂●▅▁▂ beats 14/25    medium · avg 59%       0.3%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-acl.551.pdf">SelfAware unanswerable-question d…</a>   54.1%  █▄▄●·······▄ beats 4/5      medium · avg 63%       0.3%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   25.1%  ▃··▃·█▃·●▃·▃ beats 7/10     hard · avg 29%         0.3%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">PIQA</a>                                 80.8%  ▁▁▁▂▂▃▅█▅●▁▁ beats 114/123  easy · avg 84%         0.3%  blunt · at its level · small run · seve…
+<a href="https://aclanthology.org/2023.findings-acl.50.pdf">Zero-shot relation extraction, va…</a>   40.1%  ●····▄····█▄ beats 1/5      medium · avg 50%       0.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   83.5%  ▂▂▄··▂▂●▄··▂ beats 7/12     easy · avg 90%         0.2%  noisy
+<a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   24.4%  ▂····▂··▂·●▄ beats 5/8      medium · avg 36%       0.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">HellaSwag</a>                            43.0%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 77/135   easy · avg 80%         0.2%  at its level · noisy · small run
+<a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">CAIL charge prediction, zero-shot…</a>   46.6%  █···●··█···█ beats 1/3      medium · avg 54%       0.1%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">ARC Easy</a>                             65.4%  ▁▃▂▄▆█▅▃▁··● beats 98/100   easy · avg 85%         0.1%  blunt · noisy · small run
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   27.1%  ▄·●··██·▄▄▄▄ beats 2/10     medium · avg 43%       0.1%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">Story Cloze Test</a>                     77.3%  ▃▃▃▂▅●▅▂▁··▂ beats 28/50    easy · avg 90%         0.1%  blunt · noisy · small run
+<a href="https://aclanthology.org/2023.emnlp-main.81.pdf">SciQ</a>                                 60.7%  ●·▁▂▂▃▆▃▇▆█▂ beats 1/51     very easy · avg 97%    0.0%  blunt · maxed out · noisy · small run
+<a href="https://aclanthology.org/2023.findings-acl.29.pdf">TriviaQA</a>                             85.9%  ▁▁▂▂▄▄▃▆▅█▅● beats 78/80    easy · avg 71%            —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.findings-acl.29.pdf">Natural Questions (closed book)</a>      48.1%  ▂▁▁▁▂▄▄▃▅█▅● beats 68/68    medium · avg 48%          —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.emnlp-main.392.pdf">DROP</a>                                 57.6%  ▃▅█▅·▃·●▄▂▁▃ beats 28/44    medium · avg 58%          —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -75,17 +116,80 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   55% ▇▇▇▇▇▇▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   14% ▇▇
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5   13% ▇▇
-<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    9% ▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    7% ▇
-<a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    2% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   27% ▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2    8% ▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5    8% ▇
+<a name="acl-2023-emnlp-main-85"></a><a href="https://aclanthology.org/2023.emnlp-main.85.pdf">Is ChatGPT a General-Purpose Natural La…</a>        7    7% ▇
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    5% ▇
+<a name="acl-2023-emnlp-main-927"></a><a href="https://aclanthology.org/2023.emnlp-main.927.pdf">It Ain't Over: A Multi-aspect Diverse M…</a>        3    4% ▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    4% ▇
+<a name="acl-2023-acl-long-41"></a><a href="https://aclanthology.org/2023.acl-long.41.pdf">Do Androids Laugh at Electric Sheep? Hu…</a>        1    4% ▇
+<a name="acl-2023-findings-acl-651"></a><a href="https://aclanthology.org/2023.findings-acl.651.pdf">Tab-CoT: Zero-shot Tabular Chain of Tho…</a>        3    3% ▇
+<a name="acl-2023-emnlp-main-81"></a><a href="https://aclanthology.org/2023.emnlp-main.81.pdf">Vera: A General-Purpose Plausibility Es…</a>       12    3% ▇
+<a name="acl-2023-emnlp-main-550"></a><a href="https://aclanthology.org/2023.emnlp-main.550.pdf">Unnatural Error Correction: GPT-4 Can A…</a>        1    3% ▇
+<a name="acl-2023-findings-emnlp-55"></a><a href="https://aclanthology.org/2023.findings-emnlp.55.pdf">Automatic Model Selection with Large La…</a>        2    3% ▇
+<a name="acl-2023-emnlp-industry-17"></a><a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">Investigating Table-to-Text Generation …</a>        1    2% ▇
+<a name="acl-2023-findings-emnlp-508"></a><a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">Examining Inter-Consistency of Large La…</a>        5    2% ▇
+<a name="acl-2023-findings-emnlp-691"></a><a href="https://aclanthology.org/2023.findings-emnlp.691.pdf">Self-Knowledge Guided Retrieval Augment…</a>        2    2% ▇
+<a name="acl-2023-blackboxnlp-1-7"></a><a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Self-Consistency of Large Language Mode…</a>        2    2% ▇
+<a name="acl-2023-emnlp-main-825"></a><a href="https://aclanthology.org/2023.emnlp-main.825.pdf">LLMLingua: Compressing Prompts for Acce…</a>        1    2% ▇
+<a name="acl-2023-findings-emnlp-536"></a><a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS: A Zero-Shot Benchmark for …</a>        4    1% ▇
+<a name="acl-2023-emnlp-main-392"></a><a href="https://aclanthology.org/2023.emnlp-main.392.pdf">MoT: Memory-of-Thought Enables ChatGPT …</a>        2    1% ▇
+<a name="acl-2023-emnlp-main-689"></a><a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench: Using Game Play to Evaluate …</a>        1    1% ▇
+<a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    1% ▇
+<a name="acl-2023-findings-emnlp-750"></a><a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Battle of the Large Language Models: Do…</a>        1    1% ▇
+<a name="acl-2023-emnlp-main-468"></a><a href="https://aclanthology.org/2023.emnlp-main.468.pdf">Have LLMs Advanced Enough? A Challengin…</a>        1    1% ▇
+<a name="acl-2023-findings-emnlp-743"></a><a href="https://aclanthology.org/2023.findings-emnlp.743.pdf">Is ChatGPT a Good Causal Reasoner? A Co…</a>        1    1% ▇
+<a name="acl-2023-emnlp-main-891"></a><a href="https://aclanthology.org/2023.emnlp-main.891.pdf">Exploring the Boundaries of GPT-4 in Ra…</a>        1    0% ▇
+<a name="acl-2023-findings-acl-551"></a><a href="https://aclanthology.org/2023.findings-acl.551.pdf">Do Large Language Models Know What They…</a>        1    0% ▇
+<a name="acl-2023-findings-acl-50"></a><a href="https://aclanthology.org/2023.findings-acl.50.pdf">Aligning Instruction Tasks Unlocks Larg…</a>        1    0% ▇
+<a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    0% ▇
+<a name="acl-2023-findings-emnlp-100"></a><a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA: A New Dataset for Testing the …</a>        1    0% ▇
+<a name="acl-2023-findings-emnlp-490"></a><a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">A Comprehensive Evaluation of Large Lan…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.0
+weighted average                                   = 47.5
 </pre>
 
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Is ChatGPT a General-Purpose Natural Language Processing Task Solver? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-85-CC-BY-4-0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · It Ain't Over: A Multi-aspect Diverse Math Word Problem Dataset ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-927-CC-BY-4-0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · Tab-CoT: Zero-shot Tabular Chain of Thought ([CC BY 4.0](../../licenses/acl-2023-findings-acl-651-CC-BY-4-0.txt)) · Vera: A General-Purpose Plausibility Estimation Model for Commonsense Statements ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-81-CC-BY-4-0.txt)) · Unnatural Error Correction: GPT-4 Can Almost Perfectly Handle Unnatural Scrambled Text ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-550-CC-BY-4-0.txt)) · Automatic Model Selection with Large Language Models for Reasoning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-55-CC-BY-4-0.txt)) · Investigating Table-to-Text Generation Capabilities of Large Language Models in Real-World Information Seeking Scenarios ([CC BY 4.0](../../licenses/acl-2023-emnlp-industry-17-CC-BY-4-0.txt)) · Examining Inter-Consistency of Large Language Models Collaboration: An In-depth Analysis via Debate ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-508-CC-BY-4-0.txt)) · Self-Knowledge Guided Retrieval Augmentation for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-691-CC-BY-4-0.txt)) · Self-Consistency of Large Language Models under Ambiguity ([CC BY 4.0](../../licenses/acl-2023-blackboxnlp-1-7-CC-BY-4-0.txt)) · LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-825-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · MoT: Memory-of-Thought Enables ChatGPT to Self-Improve ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-392-CC-BY-4-0.txt)) · clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-689-CC-BY-4-0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Battle of the Large Language Models: Dolly vs LLaMA vs Vicuna vs Guanaco vs Bard vs ChatGPT - A Text-to-SQL Parsing Comparison ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-750-CC-BY-4-0.txt)) · Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark For Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-468-CC-BY-4-0.txt)) · Is ChatGPT a Good Causal Reasoner? A Comprehensive Evaluation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-743-CC-BY-4-0.txt)) · Exploring the Boundaries of GPT-4 in Radiology ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-891-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt)) · A Comprehensive Evaluation of Large Language Models on Legal Judgment Prediction ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-490-CC-BY-4-0.txt))</sub>
+
+<details><summary>Not counted (31)</summary>
+
+<pre>
+source                  test                            score  why
+On Sample-Efficient C…  <a href="https://aclanthology.org/2023.emnlp-industry.73.pdf">HumanEval</a>                       63.0%  only model in this source's run
+On Sample-Efficient C…  <a href="https://aclanthology.org/2023.emnlp-industry.73.pdf">MBPP</a>                            59.7%  too few models have it yet
+MoT: Memory-of-Though…  <a href="https://aclanthology.org/2023.emnlp-main.392.pdf">AQuA-RAT</a>                        49.7%  only model in this source's run
+MoT: Memory-of-Though…  <a href="https://aclanthology.org/2023.emnlp-main.392.pdf">DROP</a>                            57.6%  too few models have it yet
+LLMLingua: Compressin…  <a href="https://aclanthology.org/2023.emnlp-main.825.pdf">BIG-Bench Hard</a>                  70.1%  only model in this source's run
+Exchange-of-Thought: …  <a href="https://aclanthology.org/2023.emnlp-main.936.pdf">GSM8K</a>                           79.1%  only model in this source's run
+Exchange-of-Thought: …  <a href="https://aclanthology.org/2023.emnlp-main.936.pdf">AQuA-RAT</a>                        55.1%  only model in this source's run
+Exchange-of-Thought: …  <a href="https://aclanthology.org/2023.emnlp-main.936.pdf">SVAMP</a>                           79.5%  only model in this source's run
+Robust Prompt Optimiz…  <a href="https://aclanthology.org/2023.emnlp-main.95.pdf">Social IQA</a>                      75.6%  only model in this source's run
+Robust Prompt Optimiz…  <a href="https://aclanthology.org/2023.emnlp-main.95.pdf">PIQA</a>                            83.6%  only model in this source's run
+Robust Prompt Optimiz…  <a href="https://aclanthology.org/2023.emnlp-main.95.pdf">OpenBookQA</a>                      80.1%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">BoolQ</a>                           90.1%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">COPA</a>                            94.0%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">BIG-Bench Hard</a>                  69.8%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">MMLU</a>                            68.9%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">TriviaQA</a>                        85.9%  too few models have it yet
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">Natural Questions (closed boo…</a>  48.1%  too few models have it yet
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">PIQA</a>                            62.1%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">Social IQA</a>                      66.1%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">HellaSwag</a>                       72.0%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">WinoGrande</a>                      66.8%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">ARC Easy</a>                        94.0%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">ARC Challenge</a>                   84.6%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">OpenBookQA</a>                      81.0%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">MATH</a>                            34.1%  too few models have it yet
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">GSM8K</a>                           87.7%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">MGSM</a>                            57.2%  too few models have it yet
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">HumanEval</a>                       61.2%  only model in this source's run
+A Systematic Study an…  <a href="https://aclanthology.org/2023.findings-acl.29.pdf">MBPP</a>                            73.8%  too few models have it yet
+R$^3$ Prompting: Revi…  <a href="https://aclanthology.org/2023.findings-emnlp.114.pdf">GSM8K</a>                           78.9%  only model in this source's run
+R$^3$ Prompting: Revi…  <a href="https://aclanthology.org/2023.findings-emnlp.114.pdf">SVAMP</a>                           79.9%  only model in this source's run
+</pre>
+
+</details>
 
 ## How to run it
 

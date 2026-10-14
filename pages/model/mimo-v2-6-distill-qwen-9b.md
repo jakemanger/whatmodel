@@ -6,7 +6,9 @@
 
 Xiaomi · released 2026-09 · 9.41B params · mit
 
-**score 65.1** ±2.2 · #144 of 721 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.9** ±2.2 · #142 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,7 +17,7 @@ Xiaomi · released 2026-09 · 9.41B params · mit
 <pre>
 task         vs the others          rank  counts  tests
 agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #122 of 302     89%      4
-coding       ▁▁▁▃▆██▇●▄▃▁   #121 of 458*     55%      2
+coding       ▁▁▁▃▆██▇●▄▃▁   #121 of 460*     57%      2
 </pre>
 
 <details><summary>agent tasks · #122 of 302 · 89% of its score</summary>
@@ -25,21 +27,21 @@ Beats [o3](o3.md), [GPT-5 mini](gpt-5-mini.md), [Gemini 2.5 Pro](gemini-2-5-pro.
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Pro (split unspecified)…</a>   44.6%  ▃·▁▁▁▂▂▃●▇▃▁ beats 23/55   very hard · avg 9.7%     29%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/131  hard · avg 24%           26%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Terminal-Bench 2.1 (lab)</a>             37.1%  ▁·▁·▁▁▄●▄█▄█ beats 13/58   very hard · avg 11%      25%  at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Toolathlon-Verified (lab)</a>            35.2%  ▂·●▂▅▃···▂██ beats 1/18    hard · avg 25%          8.1%  blunt · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/131  hard · avg 22%           28%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Terminal-Bench 2.1 (lab)</a>             37.1%  ▁·▁·▁▁▄●▄█▄█ beats 13/58   very hard · avg 11%      25%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Toolathlon-Verified (lab)</a>            35.2%  ▂·●▂▅▃···▂██ beats 1/18    hard · avg 23%          7.9%  blunt · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #121 of 458 · 55% of its score</summary>
+<details><summary>coding · #121 of 460 · 57% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Pro (split unspecified)…</a>   44.6%  ▃·▁▁▁▂▂▃●▇▃▁ beats 23/55   very hard · avg 9.7%     29%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/131  hard · avg 24%           26%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/131  hard · avg 22%           28%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -48,7 +50,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">AutomationBench v1.0.6 (lab)</a>   30.3%  ▃····▃·▃●··█ beats 3/6    very hard · avg 5.6%    9.2%  noisy · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">AutomationBench v1.0.6 (lab)</a>   30.3%  ▃····▃·▃●··█ beats 3/6    very hard · avg 5.8%    8.7%  noisy · small run
 </pre>
 
 </details>
@@ -61,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-xiaomimimo-mimo-v2-6-distill-qwen-9b"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B mo…</a>        5   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 65.1
+weighted average                                   = 64.9
 </pre>
 
 <sub>Licences: XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B model card ([MIT](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md))</sub>

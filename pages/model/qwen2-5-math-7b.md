@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.2** ±2.2 · #313 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 53.1** ±2.1 · #313 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▆●▄█▄▁▁▁   #230 of 398     98%      3
+math  ▁▁▃▅●▆▄█▄▁▁▁   #249 of 424     98%      3
 </pre>
 
-<details><summary>math · #230 of 398 · 98% of its score</summary>
+<details><summary>math · #249 of 424 · 98% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Tulu 2 70B](tulu-2-70b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                37.1%  ▃·····▃··█●▅ beats 6/8    medium · avg 37%        48%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       95.2%  ▄···█▄▄·▄·●█ beats 6/8    very easy · avg 92%     28%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   83.6%  ▃····▃·▅·▅·● beats 6/8    easy · avg 76%          22%  typical
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                37.1%  ▃·····▃··█●▅ beats 6/8    hard · avg 34%          48%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       95.2%  ▄···█▄▄·▄·●█ beats 6/8    very easy · avg 92%     29%  sharp · maxed out
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   83.6%  ▃····▃·▅·▅·● beats 6/8    easy · avg 73%          21%  typical
 </pre>
 
 </details>
@@ -38,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 52.2
+weighted average                        = 53.1
 </pre>
 
 ## How to run it

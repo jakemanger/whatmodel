@@ -6,7 +6,9 @@
 
 LAION (OpenAssistant) · released 2023-04 · 12B params · apache-2.0
 
-**score 21.8** ±1.4 · #684 of 721 · from 9 benchmark results across 6 sources
+**score 25.2** ±1.3 · #677 of 724 · from 11 benchmark results across 7 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,43 +16,45 @@ LAION (OpenAssistant) · released 2023-04 · 12B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #447 of 458*     12%      1
-chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃    #390 of 393     71%      6
+coding          ▁▁●▃▆██▇▆▄▃▁   #447 of 460*     12%      1
+chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃    #392 of 395     61%      6
 </pre>
 
-<details><summary>coding · #447 of 458 · 12% of its score</summary>
+<details><summary>coding · #447 of 460 · 12% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 
 <pre>
-test       result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    9.1%  ▄··▄····▄●█▄ beats 3/6    easy · avg 71%     12%  sharp · too hard for it
+test       result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    9.1%  ▄··▄····▄●█▄ beats 3/6    medium · avg 62%     12%  sharp · too hard for it
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #390 of 393 · 71% of its score</summary>
+<details><summary>chat &amp; writing · #392 of 395 · 61% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         912.0  ▂●▂▁▃▇█▆▇▄▂▂ beats 5/95   avg 1201                     18%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1023.5  ▁●▁▂▃▃▃▆▆▇█▃ beats 5/379  avg 1268                     18%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.3200 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 5/28   avg 8.826 MT-Bench scor…     16%  sharp · noisy
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         26.0%  ▂●·▆·▇▃▆█▆▄▂ beats 2/45   very easy · avg 96%          10%  sharp · at its level · noisy
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              3.3%  ▁●▂▃▆▆█▆▄▄▁▁ beats 2/122  medium · avg 39%            8.9%  too hard for it
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       3.9000 mean rank (1-11)  █···▄··▄···● beats 4/4    avg 6.442 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1023.5  ▁●▁▂▃▃▃▆▆▇█▃ beats 5/379  avg 1258                     18%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         912.0  ▂●▂▁▃▇█▆▇▄▂▂ beats 5/95   avg 1186                     16%  typical
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.3200 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 5/28   avg 8.518 MT-Bench scor…     13%  sharp · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              3.3%  ▁●▂▃▆▆█▆▄▄▁▁ beats 2/122  hard · avg 35%              9.2%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         26.0%  ▂●·▆·▇▃▆█▆▄▂ beats 2/45   very easy · avg 94%         4.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       3.9000 mean rank (1-11)  █···▄··▄···● beats 4/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
 
-<details><summary>other tests (2)</summary>
+<details><summary>other tests (4)</summary>
 
 <pre>
-test            result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>   30.0%  ●██··█·█·█·█ beats 0/6    easy · avg 76%     11%  sharp · too hard for it
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>             27.0%  ▄▄·●···▄▄·██ beats 2/8    easy · avg 78%    5.3%  typical
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       30.0%  ●██··█·█·█·█ beats 0/6    medium · avg 67%     12%  sharp · too hard for it
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 27.0%  ▄▄·●···▄▄·██ beats 2/8    easy · avg 74%      6.8%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   57.5%  █·●········█ beats 1/2    medium · avg 77%    4.4%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.844.pdf">TruthfulQA MC1</a>                       23.3%  █·····█····● beats 2/2    medium · avg 50%    2.7%  small run
 </pre>
 
 </details>
@@ -61,17 +65,18 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    3   28% ▇▇▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   19% ▇▇
-<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   18% ▇▇
+<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    3   31% ▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   18% ▇▇
-<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   16% ▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   16% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   14% ▇▇
+<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   13% ▇▇
+<a name="acl-2023-emnlp-main-844"></a><a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Aligning Large Language Models through …</a>        2    7% ▇
 <a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 21.8
+weighted average                                   = 25.2
 </pre>
 
-<sub>Licences: InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Aligning Large Language Models through Synthetic Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-844-CC-BY-4-0.txt)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

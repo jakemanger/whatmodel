@@ -6,7 +6,9 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 58.9** ±2.1 · #238 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 59.2** ±1.8 · #238 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #174 of 466*     39%      1
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #174 of 466*     35%      1
 </pre>
 
-<details><summary>chat &amp; writing · #174 of 466 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #174 of 466 · 35% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 185/379  avg 1268       39%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 185/379  avg 1258       35%  blunt
 </pre>
 
 </details>
@@ -32,7 +34,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5174  ▁▄▃▃▇▄●▃▅▁▁▁ beats 20/30  avg 0.423      59%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5174  ▁▄▃▃▇▄●▃▅▁▁▁ beats 20/30  avg 0.415      63%  sharp
 </pre>
 
 </details>
@@ -43,10 +45,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   59% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   39% ▇▇▇▇▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 58.9
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   63% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   35% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 59.2
 </pre>
 
 <sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

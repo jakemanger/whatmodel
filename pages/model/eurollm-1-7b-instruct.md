@@ -6,7 +6,9 @@
 
 UTTER (EuroLLM) · released 2024-08 · 1.66B params · apache-2.0
 
-**score 26.6** ±3.4 · #667 of 721 · from 3 benchmark results across 3 sources
+**score 29.1** ±3.1 · #663 of 724 · from 3 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,9 +22,9 @@ UTTER (EuroLLM) · released 2024-08 · 1.66B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.3%  ▁●▂▂▃█▃▆▅▄▂▃ beats 5/95    easy · avg 66%       67%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   30.8%  ●▁▁▁▁▁▁▁▂█▅▁ beats 31/276  medium · avg 73%     14%  noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   29.8%  ▁▁▁●▁▁▁▂▄█▄▃ beats 5/146   easy · avg 83%       14%  at its level · noisy
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.3%  ▁●▂▂▃█▃▆▅▄▂▃ beats 5/95    medium · avg 64%     67%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   30.8%  ●▁▁▁▁▁▁▁▂█▅▁ beats 31/276  medium · avg 72%     15%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   29.8%  ▁▁▁●▁▁▁▂▄█▄▃ beats 5/146   easy · avg 82%       14%  at its level · noisy
 </pre>
 
 </details>
@@ -34,10 +36,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                           results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                       1   67% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   15% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                  1   14% ▇▇
-prior: pull toward the middle               5% ▇
-weighted average                          = 26.6
+prior: pull toward the middle               4% ▇
+weighted average                          = 29.1
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

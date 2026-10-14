@@ -6,7 +6,9 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 57.8** ±1.5 · #221 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 57.8** ±1.6 · #230 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #194 of 458     99%      3
+coding  ▁▁▁▃▆██●▆▄▃▁   #195 of 460     99%      3
 </pre>
 
-<details><summary>coding · #194 of 458 · 99% of its score</summary>
+<details><summary>coding · #195 of 460 · 99% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 3/7    very hard · avg 2.4%     57%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   64.8%  ▄·▄····▄▄●█▄ beats 4/7    medium · avg 45%         29%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 3/7    very hard · avg 2.4%     56%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   64.8%  ▄·▄····▄▄●█▄ beats 4/7    medium · avg 45%         30%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   71.4%  ▄▄···▄·▄▄●·▄ beats 6/7    medium · avg 57%         13%  at its level
 </pre>
 

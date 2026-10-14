@@ -6,7 +6,9 @@
 
 LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 
-**score 67.0** ±1.3 · #113 of 721 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.6** ±1.3 · #116 of 724 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,55 +17,55 @@ LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 <pre>
 task            vs the others          rank  counts  tests
 agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #99 of 302     23%      3
-coding          ▁▁▁▃▆██▇●▄▃▁    #92 of 458*     11%      1
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #104 of 393*    5.1%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #109 of 398     38%      3
+coding          ▁▁▁▃▆██▇●▄▃▁    #93 of 460*     12%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #104 of 395*    5.3%      1
+math            ▁▁▃▅█▆▄●▄▁▁▁    #109 of 424     37%      3
 </pre>
 
 <details><summary>agent tasks · #99 of 302 · 23% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 20%           11%  sharp · at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>   43.8%  ▁·▁·▁▁▄●▄█▄█ beats 16/58   very hard · avg 11%     8.6%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>     14.2%  ▂▂·▅█▂▂●▂▅▂▃ beats 13/20   very hard · avg 5.6%    2.7%  blunt · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 18%           12%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>   43.8%  ▁·▁·▁▁▄●▄█▄█ beats 16/58   very hard · avg 11%     8.1%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>     14.2%  ▂▂·▅█▂▂●▂▅▂▃ beats 13/20   very hard · avg 5.8%    2.6%  blunt · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #92 of 458 · 11% of its score</summary>
+<details><summary>coding · #93 of 460 · 12% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 20%     11%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 18%     12%  sharp · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #104 of 393 · 5.1% of its score</summary>
+<details><summary>chat &amp; writing · #104 of 395 · 5.3% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecified) …</a>   92.4%  ▁▁▃▁▂▄▄▆█●▂▁ beats 125/141  easy · avg 80%    5.1%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecified) …</a>   92.4%  ▁▁▃▁▂▄▄▆█●▂▁ beats 125/141  easy · avg 79%    5.3%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #109 of 398 · 38% of its score</summary>
+<details><summary>math · #109 of 424 · 37% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [gpt-oss-120b](gpt-oss-120b.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>            92.3%  ▁▁▁▂▁▂▆●▆▂·▁ beats 29/49  medium · avg 60%     15%  sharp · maxed out · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>            92.3%  ▁▁▁▂▁▂▆●▆▂·▁ beats 29/49  medium · avg 61%     15%  sharp · maxed out · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>   78.4%  ▃▃▂▃·██●█▅▃▅ beats 17/33  hard · avg 34%       14%  sharp · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IMO-AnswerBench (lab)</a>      78.6%  ▁▁·▁▁▁▄●█▄▂▃ beats 18/42  medium · avg 38%    8.5%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IMO-AnswerBench (lab)</a>      78.6%  ▁▁·▁▁▁▄●█▄▂▃ beats 18/42  medium · avg 38%    8.1%  small run
 </pre>
 
 </details>
@@ -72,10 +74,10 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>                   82.2%  ▁▁▁▁▂▄▅▅█●█▄ beats 210/310  hard · avg 44%           13%  sharp · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                       83.5%  ▁▁·▁▁▁▃▂▄▅●▁ beats 157/188  medium · avg 56%        8.3%  small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>           18.3%  ▁▁▁▃▆▆●██▆▁▃ beats 44/104   very hard · avg 4.3%    7.3%  small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecified)…</a>   72.6%  ▃▇▂▄▅▅▂▄▄●█▇ beats 58/80    medium · avg 41%        4.4%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>                   82.2%  ▁▁▁▁▂▄▅▅█●█▄ beats 210/310  hard · avg 42%           14%  sharp · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                       83.5%  ▁▁·▁▁▁▃▂▄▅●▁ beats 157/188  medium · avg 55%        8.5%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>           18.3%  ▁▁▁▃▆▆●██▆▁▃ beats 44/104   very hard · avg 4.1%    7.1%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecified)…</a>   72.6%  ▃▇▂▄▅▅▂▄▄●█▇ beats 58/80    medium · avg 40%        4.5%  at its level · small run
 </pre>
 
 </details>
@@ -88,7 +90,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a><a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">LGAI-EXAONE/K-EXAONE-2.0-750B-A37B mode…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.0
+weighted average                                   = 66.6
 </pre>
 
 <sub>Licences: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE))</sub>

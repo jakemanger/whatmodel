@@ -6,7 +6,9 @@
 
 Google · released 2026-01 · 13.19B params · gemma
 
-**score 64.1** ±10.4 · #169 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 63.2** ±9.7 · #178 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Google · released 2026-01 · 13.19B params · gemma
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>   83.5%  █···█·█··█●█ beats 4/5    easy · avg 72%     52%  blunt
+<a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>   83.5%  █···█·█··█●█ beats 4/5    easy · avg 73%     58%  blunt
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                 results  share of the score
-<a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>        1   52% ▇▇▇▇▇▇
-prior: pull toward the middle                    48% ▇▇▇▇▇▇
-weighted average                                = 64.1
+<a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>        1   58% ▇▇▇▇▇▇▇
+prior: pull toward the middle                    42% ▇▇▇▇▇
+weighted average                                = 63.2
 </pre>
 
 <sub>Licences: TranslateGemma Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,9 @@
 
 Baidu · released 2026-01 · closed weights
 
-**score 67.1** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.9** ±3.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Baidu · released 2026-01 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃   #76 of 199*     93%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃   #76 of 199*     94%      1
 </pre>
 
-<details><summary>vision &amp; documents · #76 of 199 · 93% of its score</summary>
+<details><summary>vision &amp; documents · #76 of 199 · 94% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1218.9  ▁▁▂▂▂▂▄▅▅●██ beats 84/145  avg 1068       93%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1218.9  ▁▁▂▂▂▂▄▅▅●██ beats 84/145  avg 1058       94%  blunt
 </pre>
 
 </details>
@@ -34,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             7% ▇
-weighted average                        = 67.1
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             6% ▇
+weighted average                        = 66.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

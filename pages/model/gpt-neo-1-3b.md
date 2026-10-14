@@ -6,42 +6,55 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 13.7** ±2.0 · #706 of 721 · from 11 benchmark results across 4 sources
+**score 11.9** ±1.6 · #707 of 724 · from 20 benchmark results across 9 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks GPT-Neo 1.3B among every model on that task or test, worst to best.</sub>
 
 <pre>
-task  vs the others      rank  counts  tests
-math  ●···█······█   #3 of 3*    8.7%      1
+task  vs the others          rank  counts  tests
+math  ▁▁▃●█▆▄█▄▁▁▁   #368 of 424*    2.5%      1
 </pre>
 
-<details><summary>math · #3 of 3 · 8.7% of its score</summary>
+<details><summary>math · #368 of 424 · 2.5% of its score</summary>
 
-Trails [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>   24.1%  █···●··█···█ beats 1/3    hard · avg 46%    8.7%  too hard for it
+<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>   24.1%  ▃·▃▃●▅··▃·▃▃ beats 5/10   hard · avg 34%    2.5%  blunt · too hard for it
 </pre>
 
 </details>
 
-<details><summary>other tests (10)</summary>
+<details><summary>other tests (21)</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                      48.9%  ▄·●·█··▄▄··▄ beats 1/7     very easy · avg 92%     26%  at its level
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   57.2%  █·●··█··█··▄ beats 2/7     very easy · avg 90%     15%  blunt · at its level
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                     55.0%  ▄·●·▄▄▄··█·▄ beats 1/7     easy · avg 89%          15%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Natural Questions (closed book)</a>       4.0%  ▁·▁·▁●▁▂·▅▂█ beats 4/28    medium · avg 58%        13%  too hard for it
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                           71.1%  ●··▃··▃▃·▃·▃ beats 2/7     easy · avg 89%          10%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-23%2012%3A22%3A01.380579.json">TriviaQA</a>                             14.2%  ▁··▁█●▃▁▄▅▄█ beats 9/28    easy · avg 79%         3.0%  noisy
-<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                       54.4%  ●·▄▆·▄▂▄▄▂█▂ beats 2/20    medium · avg 75%       2.8%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-08%2021%3A38%3A29.151646.json">TruthfulQA MC2</a>                       39.6%  ▅▃●▆▁▂▅···▁▁ beats 8/31    medium · avg 64%       2.6%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   26.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 22/276  medium · avg 73%       2.1%  too hard for it · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-13%2013%3A02%3A51.572572.json">HaluEval QA hallucination detecti…</a>   46.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 15/27   medium · avg 70%       0.4%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                      48.9%  ▄·●·█··▄▄··▄ beats 1/7     very easy · avg 91%     24%  at its level · several runs
+<a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   40.8%  ▂·▄·▂●▄▄█▄▂▆ beats 5/21    easy · avg 74%          14%  blunt
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                     55.0%  ▄·●·▄▄▄··█·▄ beats 1/7     easy · avg 88%          12%  several runs
+<a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   39.1%  ▃···●·▃▅··▃█ beats 1/9     very easy · avg 85%    8.3%  at its level
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   57.2%  █·●··█··█··▄ beats 2/7     very easy · avg 88%    7.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Easy</a>                             56.2%  █·······●▄·█ beats 2/5     easy · avg 87%         7.1%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Challenge</a>                        23.1%  ●·········▂▂ beats 2/5     medium · avg 60%       6.3%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Natural Questions (closed book)</a>       4.0%  ▁·▁·▁●▁▂·▅▂█ beats 4/28    medium · avg 48%       5.8%  too hard for it
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                           71.1%  ●··▃··▃▃·▃·▃ beats 2/7     easy · avg 88%         4.5%  blunt · at its level
+<a href="https://aclanthology.org/2023.acl-long.367.pdf">UD English-GUM UPOS tagging, few-…</a>   68.5%  ▄·●▄·······█ beats 1/4     very easy · avg 92%    2.8%  blunt · at its level
+<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                       54.4%  ▂·····●█▅▆▆█ beats 3/24    medium · avg 74%       1.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-23%2012%3A22%3A01.380579.json">TriviaQA</a>                             14.2%  ▁··▁█●▃▁▄▅▄█ beats 9/28    easy · avg 71%         1.3%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   26.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 22/276  medium · avg 72%       1.2%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-08%2021%3A38%3A29.151646.json">TruthfulQA MC2</a>                       39.6%  ▅▃●▆▁▂▅···▁▁ beats 8/31    medium · avg 57%       0.7%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 1/4     easy · avg 76%         0.6%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-13%2013%3A02%3A51.572572.json">HaluEval QA hallucination detecti…</a>   46.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 15/27   hard · avg 66%         0.2%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA generation, % true (hu…</a>   37.9%  ██····█·●█·█ beats 3/5     medium · avg 42%       0.1%  blunt · at its level
+<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">OpenBookQA</a>                           21.6%  ●▁▁▁▂▂▃█▃▁▃▁ beats 2/107   hard · avg 48%            —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 25/103  easy · avg 88%            —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">COPA</a>                                 69.0%  ▁·▁▁▁●▅█▆▂▁▁ beats 14/67   easy · avg 92%            —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">SciQ</a>                                 86.0%  ▂·▁▂▂▃●▃▇▆█▂ beats 16/51   very easy · avg 97%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -52,15 +65,37 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card (lab)</a>            4   66% ▇▇▇▇▇▇▇▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Hallucinations Leaderboard results</a>              4   19% ▇▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card (lab)</a>        2   11% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 13.7
+<a name="acl-2023-emnlp-main-265"></a><a href="https://aclanthology.org/2023.emnlp-main.265.pdf">Preserving Privacy Through Dememorizati…</a>        4   31% ▇▇▇▇
+<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card (lab)</a>            4   30% ▇▇▇▇
+<a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1   14% ▇▇
+<a name="acl-2023-acl-long-367"></a><a href="https://aclanthology.org/2023.acl-long.367.pdf">Prompting Language Models for Linguisti…</a>        2   11% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Hallucinations Leaderboard results</a>              4    8% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card (lab)</a>        2    4% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    1% ▇
+<a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 11.9
 </pre>
 
-<sub>Licences: EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Prompting Language Models for Linguistic Structure ([CC BY 4.0](../../licenses/acl-2023-acl-long-367-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>
+
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source                  test           score  why
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">ARC Challenge</a>  23.1%  only model in this source's run
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">ARC Easy</a>       56.2%  only model in this source's run
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">BoolQ</a>          62.0%  too few models have it yet
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">COPA</a>           69.0%  too few models have it yet
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">MathQA</a>         24.1%  only model in this source's run
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">OpenBookQA</a>     21.6%  too few models have it yet
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">SciQ</a>           86.0%  too few models have it yet
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">TriviaQA</a>        5.2%  only model in this source's run
+What Language Model t…  <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">WinoGrande</a>     55.1%  only model in this source's run
+</pre>
+
+</details>
 
 ## How to run it
 

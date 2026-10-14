@@ -6,7 +6,9 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 66.1** ±1.3 · #128 of 721 · from 7 benchmark results across 2 sources
+**score 65.7** ±1.2 · #133 of 724 · from 7 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ Alibaba · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #142 of 398*     61%      2
+math                ▁▁▃▅█▆▄●▄▁▁▁   #140 of 424*     60%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #34 of 147*    1.3%      1
 </pre>
 
-<details><summary>math · #142 of 398 · 61% of its score</summary>
+<details><summary>math · #140 of 424 · 60% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   17.2%  ▂··▁▁●▄▄█▅▃▃ beats 9/82     very hard · avg 1.2%     50%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    84.4%  ▃▃▄▃▃▃▇●█▃▂▅ beats 124/193  very hard · avg 8.6%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   17.2%  ▂··▁▁●▄▄█▅▃▃ beats 9/82     very hard · avg 1.1%     51%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    84.4%  ▃▃▄▃▃▃▇●█▃▂▅ beats 124/193  very hard · avg 6.9%     10%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -36,7 +38,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   47.7%  ▃·▅▃▅▃··●··█ beats 8/11   very hard · avg 33%    1.3%  blunt · noisy
+<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   47.7%  ▃·▅▃▅▃··●··█ beats 8/11   very hard · avg 32%    1.3%  blunt · noisy
 </pre>
 
 </details>
@@ -45,10 +47,10 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   83.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 136/208  hard · avg 40%           22%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 79/135   very hard · avg 5.9%    5.0%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   12.0%  █··●▃▇▄█▂▃▁▁ beats 18/74    very hard · avg 9.4%    4.8%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              15.9%  ▁▁▃●▃▃▆▆█▃▂▅ beats 9/78     very hard · avg 8.1%    4.6%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   83.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 136/208  hard · avg 38%           22%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 79/135   very hard · avg 5.8%    5.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   12.0%  █··●▃▇▄█▂▃▁▁ beats 18/74    very hard · avg 9.4%    5.2%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              15.9%  ▁▁▃●▃▃▆▆█▃▂▅ beats 9/78     very hard · avg 7.4%    5.0%  at its level
 </pre>
 
 </details>
@@ -62,7 +64,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        6   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2610.12402v1-spacecast-bench"></a><a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench: Evaluating Predictive …</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 66.1
+weighted average                                   = 65.7
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

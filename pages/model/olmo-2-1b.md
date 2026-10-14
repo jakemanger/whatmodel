@@ -6,7 +6,9 @@
 
 Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
-**score 32.6** ±1.5 · #624 of 721 · from 9 benchmark results across 2 sources
+**score 34.9** ±1.4 · #621 of 724 · from 9 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,30 +16,30 @@ Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #336 of 393*     12%      2
-math            ▁▂●▅▆▅▄█▄▁▁▁   #362 of 398*     30%      2
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #336 of 395*     11%      2
+math            ▁▁●▅█▆▄█▄▁▁▁   #378 of 424*     30%      2
 </pre>
 
-<details><summary>chat &amp; writing · #336 of 393 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #336 of 395 · 11% of its score</summary>
 
-Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      70.1%  ▁▃▁▃▁●▁▁█▃▃▁ beats 8/22   easy · avg 80%      6.0%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>    9.1%  ▃●·▁▁█▇▅·▁·▁ beats 2/22   medium · avg 43%    5.6%  typical
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      70.1%  ▁▃▁▃▁●▁▁█▃▃▁ beats 8/22   easy · avg 78%      5.9%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>    9.1%  ▃●·▁▁█▇▅·▁·▁ beats 2/22   medium · avg 39%    5.5%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #362 of 398 · 30% of its score</summary>
+<details><summary>math · #378 of 424 · 30% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       68.3%  ▂▃··●▂▅█▆▃▂▃ beats 4/22   very easy · avg 88%     24%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   20.7%  ●▃█▂▂▆·····▁ beats 1/22   medium · avg 61%       5.9%  typical
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       68.3%  ▂▃··●▂▅█▆▃▂▃ beats 4/22   very easy · avg 87%     24%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   20.7%  ●▃█▂▂▆·····▁ beats 1/22   medium · avg 57%       5.8%  typical
 </pre>
 
 </details>
@@ -46,11 +48,11 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           40.0%  ▁●·▁·▁▁█·▃▃▅ beats 2/22    easy · avg 77%       26%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 35.0%  ●▄·▁▁·▅█·▄▄▁ beats 0/22    easy · avg 75%       20%  sharp
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 48.7%  ▃▃●·▃▃·▅█▂▅▂ beats 4/21    medium · avg 64%    4.7%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   45.0%  ▃▁▁▁▁▁●▁▂█▅▁ beats 60/276  medium · avg 73%    3.7%  at its level · noisy
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          12.9%  ▁●▁▃▃▃▁█▁▃·▄ beats 1/21    hard · avg 32%      3.4%  blunt
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           40.0%  ▁●·▁·▁▁█·▃▃▅ beats 2/22    easy · avg 75%       28%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 35.0%  ●▄·▁▁·▅█·▄▄▁ beats 0/22    medium · avg 72%     20%  sharp
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   45.0%  ▃▁▁▁▁▁●▁▂█▅▁ beats 60/276  medium · avg 72%    4.1%  at its level · noisy
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          12.9%  ▁●▁▃▃▃▁█▁▃·▄ beats 1/21    hard · avg 30%      3.7%  typical
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 48.7%  ▃▃●·▃▃·▅█▂▅▂ beats 4/21    medium · avg 60%    1.0%  blunt · at its level
 </pre>
 
 </details>
@@ -64,7 +66,7 @@ source                           results  share of the score
 <a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (lab)</a>                 8   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    4% ▇
 prior: pull toward the middle               1% ▇
-weighted average                          = 32.6
+weighted average                          = 34.9
 </pre>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

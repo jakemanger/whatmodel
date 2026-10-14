@@ -6,7 +6,9 @@
 
 QCRI · released 2025-06 · 8.78B params · apache-2.0
 
-**score 42.3** ±5.5 · #665 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.8** ±5.0 · #665 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ QCRI · released 2025-06 · 8.78B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   16.2%  ▁▁·▁▂▂●█▄▅▄▄ beats 13/66  hard · avg 31%     87%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   16.2%  ▁▁·▁▂▂●█▄▅▄▄ beats 13/66  hard · avg 29%     89%  typical
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1   87% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                  13% ▇▇
-weighted average                              = 42.3
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                  11% ▇
+weighted average                              = 43.8
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

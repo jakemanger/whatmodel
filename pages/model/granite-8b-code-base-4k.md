@@ -6,7 +6,9 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 38.7** ±1.2 · #548 of 721 · from 10 benchmark results across 3 sources
+**score 40.6** ±1.1 · #548 of 724 · from 10 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,34 +16,34 @@ IBM · released 2024-04 · 8.05B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #384 of 458     76%      6
-math    ▁▂▃▅●▅▄█▄▁▁▁   #273 of 398*    8.4%      2
+coding  ▁▁▁▃●██▇▆▄▃▁    #384 of 460     74%      6
+math    ▁▁▃▅█●▄█▄▁▁▁   #194 of 424*     10%      2
 </pre>
 
-<details><summary>coding · #384 of 458 · 76% of its score</summary>
+<details><summary>coding · #384 of 460 · 74% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 24/35  medium · avg 65%     22%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   26.4%  ▄▇█▃▄●▄▁▇▃·▁ beats 22/35  medium · avg 49%     13%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.6%  ▁·▁▁▄██▄●▁▅▅ beats 26/35  medium · avg 56%     12%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           42.2%  █·▅▃▃▃●▃▃▅·▅ beats 8/15   easy · avg 70%       12%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     36.0%  ▃▅█▃▃●·▃▃▅·▅ beats 8/15   medium · avg 59%     10%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     36.1%  ▃·▃██●▃·▃▃▅▃ beats 9/15   medium · avg 55%    7.7%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 24/35  medium · avg 61%     21%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   26.4%  ▄▇█▃▄●▄▁▇▃·▁ beats 22/35  medium · avg 45%     13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           42.2%  █·▅▃▃▃●▃▃▅·▅ beats 8/15   easy · avg 67%       12%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.6%  ▁·▁▁▄██▄●▁▅▅ beats 26/35  medium · avg 51%     12%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     36.0%  ▃▅█▃▃●·▃▃▅·▅ beats 8/15   medium · avg 56%    9.2%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     36.1%  ▃·▃██●▃·▃▃▅▃ beats 9/15   medium · avg 53%    7.5%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #273 of 398 · 8.4% of its score</summary>
+<details><summary>math · #194 of 424 · 10% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall.
 
 <pre>
 test         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>    21.4%  ▃·▃····▃···● beats 3/5    medium · avg 40%    4.4%  noisy
-<a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>   61.9%  ▄··▄···▄··█● beats 5/5    easy · avg 77%      4.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>   61.9%  ▄··▄···▄··█● beats 5/5    easy · avg 76%      5.5%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>    21.4%  ▃·▃····▃···● beats 3/5    medium · avg 37%    4.5%  typical
 </pre>
 
 </details>
@@ -50,8 +52,8 @@ test         result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.6%  ▂▁▁▄▂●▇█▆▂▂▂ beats 17/58  medium · avg 51%     13%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   34.5%  ▁▁▁▁●▁▁▂▄█▄▃ beats 9/146  easy · avg 83%      1.9%  at its level · noisy
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.6%  ▂▁▁▄▂●▇█▆▂▂▂ beats 17/58  medium · avg 48%     13%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   34.5%  ▁▁▁▁●▁▁▂▄█▄▃ beats 9/146  easy · avg 82%      2.1%  at its level · noisy
 </pre>
 
 </details>
@@ -62,11 +64,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        8   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        8   84% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   13% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 38.7
+weighted average                                   = 40.6
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

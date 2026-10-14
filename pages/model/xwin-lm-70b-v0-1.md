@@ -6,7 +6,9 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 43.9** ±1.2 · #465 of 721 · from 7 benchmark results across 2 sources
+**score 45.7** ±1.2 · #453 of 724 · from 7 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,41 +16,41 @@ Xwin-LM · released 2023-09 · 70B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #392 of 458*    8.9%      1
-chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #293 of 393*     49%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁   #263 of 398*    7.4%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #392 of 460*    7.4%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #293 of 395*     49%      2
+math            ▁▁▃▅█●▄█▄▁▁▁   #224 of 424*     11%      1
 </pre>
 
-<details><summary>coding · #392 of 458 · 8.9% of its score</summary>
+<details><summary>coding · #392 of 460 · 7.4% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   66.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 13/25  very easy · avg 86%    8.9%  sharp · at its level
+test                       result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   66.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 13/25  easy · avg 83%    7.4%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #293 of 393 · 49% of its score</summary>
+<details><summary>chat &amp; writing · #293 of 395 · 49% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       24.6%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 63/122  medium · avg 39%        46%  typical
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   95.6%  ▂▂·▆·▇▃▆█▆●▂ beats 43/45   very easy · avg 96%    2.7%  sharp · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       24.6%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 63/122  hard · avg 35%          47%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   95.6%  ▂▂·▆·▇▃▆█▆●▂ beats 43/45   very easy · avg 94%    1.6%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #263 of 398 · 7.4% of its score</summary>
+<details><summary>math · #224 of 424 · 11% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   65.5%  ▆▂▅█▅▅●▆···▂ beats 20/25  easy · avg 73%    7.4%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   65.5%  ▆▂▅█▅▅●▆···▂ beats 20/25  easy · avg 72%     11%  sharp · at its level
 </pre>
 
 </details>
@@ -57,9 +59,9 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       65.6%  ▁·····▂█▂●·▁ beats 19/25  easy · avg 77%       23%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.0%  ▁▁▃▃▄█▄▁●··▁ beats 20/25  easy · avg 74%      8.4%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   38.2%  ▂··▁●▂▂▂█▅▁▂ beats 5/25   medium · avg 61%    2.5%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       65.6%  ▁·····▂█▂●·▁ beats 19/25  medium · avg 74%     21%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.0%  ▁▁▃▃▄█▄▁●··▁ beats 20/25  medium · avg 72%    9.2%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   38.2%  ▂··▁●▂▂▂█▅▁▂ beats 5/25   medium · avg 59%    2.1%  blunt · at its level
 </pre>
 
 </details>
@@ -70,10 +72,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                     5   50% ▇▇▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                     5   51% ▇▇▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   49% ▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 43.9
+weighted average                              = 45.7
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

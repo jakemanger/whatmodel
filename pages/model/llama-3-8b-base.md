@@ -6,7 +6,9 @@
 
 Meta · released 2024-04 · 8.03B params · llama3
 
-**score 35.6** ±0.7 · #598 of 721 · from 9 benchmark results across 5 sources
+**score 37.4** ±0.8 · #596 of 724 · from 9 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ Meta · released 2024-04 · 8.03B params · llama3
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #417 of 458     83%      3
+coding  ▁▁▁●▆██▇▆▄▃▁   #417 of 460     84%      3
 </pre>
 
-<details><summary>coding · #417 of 458 · 83% of its score</summary>
+<details><summary>coding · #417 of 460 · 84% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    33.5%  ▁·▁▁▃●▆▅█▃▁▁ beats 18/99  easy · avg 79%     46%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   29.3%  ▁·▁▁▁▃●▄▄█▃▁ beats 18/99  easy · avg 74%     31%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        51.6%  ▁···▁▁▂●▇█▆▂ beats 21/75  easy · avg 68%    6.2%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    33.5%  ▁·▁▁▃●▆▅█▃▁▁ beats 18/99  easy · avg 76%     44%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   29.3%  ▁·▁▁▁▃●▄▄█▃▁ beats 18/99  easy · avg 70%     32%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        51.6%  ▁···▁▁▂●▇█▆▂ beats 21/75  easy · avg 66%    6.9%  at its level
 </pre>
 
 </details>
@@ -34,12 +36,12 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedQA (USMLE, 4 options)</a>             59.7%  ▁▁··▄▁▁··▄▃● beats 16/17   easy · avg 76%      5.3%  sharp · at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.8%  ▂▁▁●▂▅▇█▆▂▂▂ beats 9/58    medium · avg 51%    5.0%  at its level
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedMCQA</a>                              57.5%  ▂▂··▄▄▂▂·▄█● beats 16/17   medium · avg 68%    2.9%  at its level
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   47.6%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 23/81   medium · avg 58%    2.1%  blunt · at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   82.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 77/146  easy · avg 83%      0.8%  at its level · noisy
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">PubMedQA</a>                             74.8%  ▂·▂▆·▄▂▄▄▂●▂ beats 14/17   medium · avg 77%    0.4%  blunt · at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.8%  ▂▁▁●▂▅▇█▆▂▂▂ beats 9/58    medium · avg 48%    5.5%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedQA (USMLE, 4 options)</a>             59.7%  ▁▁··▄▁▁··▄▃● beats 16/17   medium · avg 71%    4.4%  sharp · at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   47.6%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 23/81   medium · avg 56%    2.7%  blunt · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedMCQA</a>                              57.5%  ▂▂··▄▄▂▂·▄█● beats 16/17   medium · avg 63%    2.1%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   82.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 77/146  easy · avg 82%      1.0%  at its level · noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">PubMedQA</a>                             74.8%  ▂·▂▆·▄▂▄▄▂●▂ beats 14/17   medium · avg 75%    0.3%  blunt · at its level
 </pre>
 
 </details>
@@ -50,13 +52,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">Open Medical-LLM Leaderboard results</a>            3    8% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    5% ▇
-<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    2% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">Open Medical-LLM Leaderboard results</a>            3    7% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    6% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 35.6
+weighted average                                   = 37.4
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

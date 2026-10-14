@@ -6,7 +6,9 @@
 
 Abacus.AI · released 2024-09 · 72.71B params · other (tongyi-qianwen)
 
-**score 54.9** ±2.5 · #320 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.0** ±2.3 · #308 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Abacus.AI · released 2024-09 · 72.71B params · other (tongyi-qianwen)
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #208 of 469*     97%      1
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #208 of 471*     98%      1
 </pre>
 
-<details><summary>coding · #208 of 469 · 97% of its score</summary>
+<details><summary>coding · #208 of 471 · 98% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.9%  ▁·▁▂▄▁▆▄●▆▂▂ beats 43/62  medium · avg 54%     97%  at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.9%  ▁·▁▂▄▁▆▄●▆▂▂ beats 43/62  medium · avg 50%     98%  sharp · at its level
 </pre>
 
 </details>
@@ -34,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                 3% ▇
-weighted average                            = 54.9
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                 2% ▇
+weighted average                            = 56.0
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

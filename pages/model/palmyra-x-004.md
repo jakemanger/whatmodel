@@ -6,7 +6,9 @@
 
 Writer · released 2024-10 · proprietary
 
-**score 51.7** ±3.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 52.8** ±3.3 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ Writer · released 2024-10 · proprietary
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #260 of 342     94%      3
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #260 of 342     95%      3
 </pre>
 
-<details><summary>agent tasks · #260 of 342 · 94% of its score</summary>
+<details><summary>agent tasks · #260 of 342 · 95% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.9%  ▁▁▁▂█●▅▅▆▂▂▂ beats 23/77   hard · avg 32%       50%  at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              56.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 65/114  medium · avg 52%     25%  blunt · at its level
-<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   88.6%  ▃▃▃▃▆▅▆●█▂▅▂ beats 19/31   easy · avg 79%       20%  blunt
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.9%  ▁▁▁▂█●▅▅▆▂▂▂ beats 23/77   hard · avg 31%       49%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              56.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 65/114  medium · avg 51%     25%  blunt · at its level
+<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   88.6%  ▃▃▃▃▆▅▆●█▂▅▂ beats 19/31   easy · avg 78%       21%  typical
 </pre>
 
 </details>
@@ -36,10 +38,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   75% ▇▇▇▇▇▇▇▇▇
-<a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1   20% ▇▇
-prior: pull toward the middle                        6% ▇
-weighted average                                   = 51.7
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   74% ▇▇▇▇▇▇▇▇▇
+<a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1   21% ▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 52.8
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

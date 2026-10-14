@@ -6,7 +6,9 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 33.0** ±1.0 · #620 of 721 · from 12 benchmark results across 3 sources
+**score 35.1** ±0.9 · #620 of 724 · from 14 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,35 +16,44 @@ BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #419 of 458     94%      8
-math    ▁●▃▅▆▅▄█▄▁▁▁   #388 of 398*    5.4%      1
+coding  ▁▁▁●▆██▇▆▄▃▁    #419 of 460     91%      8
+math    ▁▁▃●█▆▄█▄▁▁▁   #360 of 424*    7.4%      1
 </pre>
 
-<details><summary>coding · #419 of 458 · 94% of its score</summary>
+<details><summary>coding · #419 of 460 · 91% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                      29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 79%       24%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 37.4%  █·▅▃●▃▅▃▃▅·▅ beats 6/15   easy · avg 82%       19%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 65%     13%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           31.3%  ▁··▁●▂█▇▁··▁ beats 4/22   medium · avg 59%    9.2%  at its level · several runs
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 55%    8.1%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 53%    7.9%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.3%  ▄▇●▃▄▇▄▁▇▃·▁ beats 11/35  medium · avg 49%    6.8%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.9%  ▁·▁▁▄●█▄█▁▅▅ beats 11/35  medium · avg 56%    5.5%  sharp
+<a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                      29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 75%       26%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 37.4%  █·▅▃●▃▅▃▃▅·▅ beats 6/15   easy · avg 81%       18%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 61%     12%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           31.3%  ▁··▁●▂█▇▁··▁ beats 4/22   medium · avg 56%    8.4%  at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 53%    7.4%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 49%    7.2%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.3%  ▄▇●▃▄▇▄▁▇▃·▁ beats 11/35  medium · avg 45%    6.3%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.9%  ▁·▁▁▄●█▄█▁▅▅ beats 11/35  medium · avg 51%    5.1%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #388 of 398 · 5.4% of its score</summary>
+<details><summary>math · #360 of 424 · 7.4% of its score</summary>
 
-Beats [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 75%    5.4%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 76%    7.4%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   46.5%  ▄▄········▄● beats 3/4    medium · avg 58%    1.5%  blunt · at its level
 </pre>
 
 </details>
@@ -53,14 +64,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   48% ▇▇▇▇▇▇
-<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   45% ▇▇▇▇▇
-<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    6% ▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   47% ▇▇▇▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   42% ▇▇▇▇▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    5% ▇
+<a name="paper-2305.06161v2-starcoder"></a><a href="https://arxiv.org/html/2305.06161v2">StarCoder: may the source be with you! …</a>        1    4% ▇
+<a name="acl-2023-findings-emnlp-89"></a><a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">Execution-Based Evaluation for Open-Dom…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 33.0
+weighted average                                   = 35.1
 </pre>
 
-<sub>Licences: StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · StarCoder: may the source be with you! ([CC BY-SA 4.0](../../licenses/paper-2305.06161v2-starcoder-CC-BY-SA-4-0.txt)) · Execution-Based Evaluation for Open-Domain Code Generation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-89-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

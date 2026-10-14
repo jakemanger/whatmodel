@@ -6,7 +6,9 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 41.8** ±2.4 · #503 of 721 · from 3 benchmark results across 2 sources
+**score 43.5** ±2.4 · #501 of 724 · from 3 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ WizardLM · released 2023-08 · 13B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #347 of 458     97%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #346 of 460     97%      3
 </pre>
 
-<details><summary>coding · #347 of 458 · 97% of its score</summary>
+<details><summary>coding · #346 of 460 · 97% of its score</summary>
 
-Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>   64.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 105/190  easy · avg 82%       57%  sharp · at its level · small run
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        36.5%  ▁··▁▅●█▇▁··▁ beats 7/22     medium · avg 54%     21%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        41.3%  ▁·▂▃▁●▁▂···▁ beats 13/22    medium · avg 53%     20%  blunt · at its level
+<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>   64.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 120/205  easy · avg 78%       56%  sharp · at its level · small run
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        36.5%  ▁··▁▅●█▇▁··▁ beats 7/22     medium · avg 52%     21%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        41.3%  ▁·▂▃▁●▁▂···▁ beats 13/22    medium · avg 51%     20%  blunt · at its level
 </pre>
 
 </details>
@@ -36,10 +38,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1   57% ▇▇▇▇▇▇▇
-<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2   40% ▇▇▇▇▇
+<a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1   56% ▇▇▇▇▇▇▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2   42% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 41.8
+weighted average                                   = 43.5
 </pre>
 
 <sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

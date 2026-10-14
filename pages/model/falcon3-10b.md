@@ -6,7 +6,9 @@
 
 TII · released 2024-12 · 10.31B params · falcon-llm
 
-**score 43.8** ±2.7 · #469 of 721 · from 7 benchmark results across 3 sources
+**score 45.2** ±2.5 · #469 of 724 · from 7 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,32 +16,32 @@ TII · released 2024-12 · 10.31B params · falcon-llm
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #272 of 302*     38%      2
-coding       ▁▁▁▃▆●█▇▆▄▃▁    #345 of 458     44%      4
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #272 of 302*     36%      2
+coding       ▁▁▁▃▆●█▇▆▄▃▁    #349 of 460     47%      4
 </pre>
 
-<details><summary>agent tasks · #272 of 302 · 38% of its score</summary>
+<details><summary>agent tasks · #272 of 302 · 36% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   27.0%  ▁▁▁▂●█▅▅▆▂▂▂ beats 19/77   hard · avg 32%       24%  typical
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           45.1%  ▁▁▁▁▁●▅█▅▄▁▁ beats 22/114  medium · avg 52%     14%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   27.0%  ▁▁▁▂●█▅▅▆▂▂▂ beats 19/77   hard · avg 31%       22%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           45.1%  ▁▁▁▁▁●▅█▅▄▁▁ beats 22/114  medium · avg 51%     14%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #345 of 458 · 44% of its score</summary>
+<details><summary>coding · #349 of 460 · 47% of its score</summary>
 
-Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   18.0%  ▃··▁▂●▃▂█▃▄▂ beats 12/47  medium · avg 54%     17%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   12.0%  █▂▁▁▂▂●▃▅▅▅▇ beats 18/47  medium · avg 36%     15%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   22.3%  ▁▁▁▁▁▁▂▂●█▅▄ beats 14/47  hard · avg 33%       12%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   44.7%  ▁▁▁······●▃█ beats 4/47   easy · avg 67%      0.3%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   18.0%  ▃··▁▂●▃▂█▃▄▂ beats 12/47  medium · avg 50%     18%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   12.0%  █▂▁▁▂▂●▃▅▅▅▇ beats 18/47  hard · avg 32%       15%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   22.3%  ▁▁▁▁▁▁▂▂●█▅▄ beats 14/47  hard · avg 31%       13%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   44.7%  ▁▁▁······●▃█ beats 4/47   easy · avg 66%      0.5%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -48,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.6%  ▃▁▁▁▁▁▁▁▂█●▁ beats 219/276  medium · avg 73%     15%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.6%  ▃▁▁▁▁▁▁▁▂█●▁ beats 219/276  medium · avg 72%     15%  at its level · noisy
 </pre>
 
 </details>
@@ -59,11 +61,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   44% ▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   38% ▇▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   47% ▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   36% ▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   15% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 43.8
+weighted average                                   = 45.2
 </pre>
 
 <sub>Licences: CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

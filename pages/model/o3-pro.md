@@ -6,7 +6,9 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 70.1** ±1.6 · #83 of 721 · from 5 benchmark results across 4 sources
+**score 69.9** ±1.5 · #79 of 724 · from 5 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,40 +16,40 @@ OpenAI · released 2025-06 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▅▅▄▃▁   #121 of 302*    9.4%      1
-coding       ▁▁▁▃▆██▇▆●▃▁    #69 of 458*     41%      1
-math         ▁▂▃▅▆▅▄█●▁▁▁    #65 of 398*     15%      1
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁   #121 of 302*    9.3%      1
+coding       ▁▁▁▃▆██▇▆●▃▁    #68 of 460*     41%      1
+math         ▁▁▃▅█▆▄●▄▁▁▁    #66 of 424*     13%      1
 </pre>
 
-<details><summary>agent tasks · #121 of 302 · 9.4% of its score</summary>
+<details><summary>agent tasks · #121 of 302 · 9.3% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   19.3%  ▅··▃·●·█▃▅██ beats 3/15   very hard · avg 5.0%    9.4%  at its level
+<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   19.3%  ▅··▃·●·█▃▅██ beats 3/15   very hard · avg 5.0%    9.3%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #69 of 458 · 41% of its score</summary>
+<details><summary>coding · #68 of 460 · 41% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   84.9%  ▂·▂▃▅▂▃█▆▄▂● beats 48/49  very hard · avg 8.6%     41%  sharp
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   84.9%  ▂·▂▃▅▂▃█▆▄▂● beats 48/49  very hard · avg 7.3%     41%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #65 of 398 · 15% of its score</summary>
+<details><summary>math · #66 of 424 · 13% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>   93.0%  ▁▁▁▂▁▃▁▅███● beats 81/85  medium · avg 50%     15%  sharp · maxed out · small run
+<a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>   93.0%  ▁▁▁▂▁▃▁▅███● beats 81/85  medium · avg 50%     13%  sharp · maxed out · small run
 </pre>
 
 </details>
@@ -56,7 +58,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 222/310  hard · avg 39%          34%  sharp
+<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 222/310  hard · avg 37%          36%  sharp
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.7%  ●▂▁▂▅█▂▃▄▃▁▁ beats 2/98     very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -68,12 +70,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-openai-scores"></a><a href="https://help.openai.com/en/articles/9624314-model-release-notes">OpenAI vendor-reported benchmark scores…</a>        2   48% ▇▇▇▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://help.openai.com/en/articles/9624314-model-release-notes">OpenAI vendor-reported benchmark scores…</a>        2   49% ▇▇▇▇▇▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   41% ▇▇▇▇▇
 <a name="paper-2608.19741v4-thinkingbox"></a><a href="https://arxiv.org/html/2608.19741v4">One Success Isn't Reliability: Thinking…</a>        1    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 70.1
+weighted average                                   = 69.9
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

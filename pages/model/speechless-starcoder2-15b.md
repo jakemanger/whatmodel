@@ -6,7 +6,9 @@
 
 uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
-**score 45.4** ±0.8 · #439 of 721 · from 3 benchmark results across 1 source
+**score 47.0** ±0.8 · #433 of 724 · from 3 benchmark results across 1 source
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #318 of 458    100%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #317 of 460    100%      3
 </pre>
 
-<details><summary>coding · #318 of 458 · 100% of its score</summary>
+<details><summary>coding · #317 of 460 · 100% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.1%  ▁·▁▁▃▄▆●█▃▁▁ beats 52/99  easy · avg 79%     52%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   62.8%  ▁·▁▁▁▃▄▄●█▃▁ beats 56/99  easy · avg 74%     41%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        62.4%  ▁···▁▁▂▅▇●▆▂ beats 43/75  easy · avg 68%    7.3%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.1%  ▁·▁▁▃▄▆●█▃▁▁ beats 52/99  easy · avg 76%     50%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   62.8%  ▁·▁▁▁▃▄▄●█▃▁ beats 56/99  easy · avg 70%     42%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        62.4%  ▁···▁▁▂▅▇●▆▂ beats 43/75  easy · avg 66%    8.2%  at its level
 </pre>
 
 </details>
@@ -38,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.4
+weighted average                                   = 47.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

@@ -6,7 +6,9 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 52.9** ±1.0 · #303 of 721 · from 6 benchmark results across 3 sources
+**score 54.2** ±0.9 · #296 of 724 · from 6 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,40 +17,40 @@ DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-l
 <pre>
 task         vs the others          rank  counts  tests
 agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #235 of 302*    2.0%      1
-coding       ▁▁▁▃▆██●▆▄▃▁   #191 of 458*     38%      2
-math         ▁▂▃▅●▅▄█▄▁▁▁   #280 of 398*    7.6%      1
+coding       ▁▁▁▃▆██●▆▄▃▁   #189 of 460*     39%      2
+math         ▁▁▃▅●▆▄█▄▁▁▁   #297 of 424*    7.5%      1
 </pre>
 
 <details><summary>agent tasks · #235 of 302 · 2.0% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   54.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 57/114  medium · avg 52%    2.0%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   54.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 57/114  medium · avg 51%    2.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #191 of 458 · 38% of its score</summary>
+<details><summary>coding · #189 of 460 · 39% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    69.5%  ▁▂▆▃▆●▆▃▂·▁▁ beats 27/47  medium · avg 61%     22%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   72.9%  ▁·▁▂▄▁▆▄█●▂▂ beats 55/62  medium · avg 54%     16%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    69.5%  ▁▂▆▃▆●▆▃▂·▁▁ beats 27/47  medium · avg 57%     22%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   72.9%  ▁·▁▂▄▁▆▄█●▂▂ beats 55/62  medium · avg 50%     17%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #280 of 398 · 7.6% of its score</summary>
+<details><summary>math · #297 of 424 · 7.5% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   91.5%  ▁▄·▁▄█▅▅●███ beats 24/43  very easy · avg 89%    7.6%  sharp · maxed out
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   91.5%  ▁▄·▁▄█▅▅●███ beats 24/43  very easy · avg 87%    7.5%  sharp · maxed out
 </pre>
 
 </details>
@@ -57,8 +59,8 @@ test                         result  vs the others in its run  difficulty       
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   80.2%  ▁·▁▁▄▄▄●█▄▂▁ beats 28/53  easy · avg 77%     34%  typical
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   20.5%  ▁▁▃▆●█▁▁·▁▁▁ beats 31/57  hard · avg 18%     17%  sharp
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   80.2%  ▁·▁▁▄▄▄●█▄▂▁ beats 28/53  easy · avg 75%     34%  typical
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   20.5%  ▁▁▃▆●█▁▁·▁▁▁ beats 31/57  hard · avg 15%     17%  sharp · at its level
 </pre>
 
 </details>
@@ -69,11 +71,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             4   81% ▇▇▇▇▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   16% ▇▇
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             4   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   17% ▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 52.9
+weighted average                                   = 54.2
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

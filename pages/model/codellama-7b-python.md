@@ -6,7 +6,9 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 36.8** ±1.0 · #581 of 721 · from 6 benchmark results across 3 sources
+**score 38.6** ±0.9 · #578 of 724 · from 6 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,19 +16,19 @@ Meta · released 2023-08 · 6.74B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #398 of 458     79%      4
+coding  ▁▁▁▃●██▇▆▄▃▁   #398 of 460     79%      4
 </pre>
 
-<details><summary>coding · #398 of 458 · 79% of its score</summary>
+<details><summary>coding · #398 of 460 · 79% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          39.6%  ▁█▄●▇█·▄▇▅▄▄ beats 10/42  easy · avg 78%       63%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         47.6%  ▃▃▃●··▃▅··▅▃ beats 3/11   easy · avg 73%       10%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   37.3%  ▁··▁▅▂●▇▁··▁ beats 8/22   medium · avg 54%    3.0%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   35.9%  ▁·▂▃●█▁▂···▁ beats 7/22   medium · avg 53%    2.9%  blunt · at its level
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          39.6%  ▁█▄●▇█·▄▇▅▄▄ beats 10/42  easy · avg 74%       62%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         47.6%  ▃▃▃●··▃▅··▅▃ beats 3/11   easy · avg 71%       11%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   37.3%  ▁··▁▅▂●▇▁··▁ beats 8/22   medium · avg 52%    3.1%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   35.9%  ▁·▂▃●█▁▂···▁ beats 7/22   medium · avg 51%    3.0%  blunt · at its level
 </pre>
 
 </details>
@@ -35,7 +37,7 @@ test              result  vs the others in its run  difficulty        counts  wh
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   25.6%  ▂▂▃●▄█▁▄▅▃▁▃ beats 11/42  medium · avg 55%     20%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   25.6%  ▂▂▃●▄█▁▄▅▃▁▃ beats 11/42  medium · avg 52%     21%  at its level
 </pre>
 
 </details>
@@ -47,10 +49,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   61% ▇▇▇▇▇▇▇
-<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   32% ▇▇▇▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   33% ▇▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    6% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 36.8
+weighted average                                   = 38.6
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

@@ -6,7 +6,9 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 29.0** ±1.6 · #648 of 721 · from 7 benchmark results across 3 sources
+**score 32.0** ±1.5 · #643 of 724 · from 7 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,37 +16,37 @@ Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          █··········●       #1 of 2*     14%      1
-chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #382 of 393*     47%      2
-math            █··········●       #1 of 2*     14%      1
+coding          █··········●       #1 of 2*     13%      1
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #384 of 395*     46%      2
+math            █··········●       #1 of 2*     17%      1
 </pre>
 
-<details><summary>coding · #1 of 2 · 14% of its score</summary>
+<details><summary>coding · #1 of 2 · 13% of its score</summary>
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   27.8%  ▃●▄▁▄▃▃█▃▁▁▄ beats 3/27   easy · avg 83%     14%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   27.8%  ▃●▄▁▄▃▃█▃▁▁▄ beats 3/27   easy · avg 78%     13%  sharp · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #382 of 393 · 47% of its score</summary>
+<details><summary>chat &amp; writing · #384 of 395 · 46% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>   995.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 13/95   avg 1201       23%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1073.6  ▁▁●▂▃▃▃▆▆▇█▃ beats 13/379  avg 1268       23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1073.6  ▁▁●▂▃▃▃▆▆▇█▃ beats 13/379  avg 1258       24%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>   995.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 13/95   avg 1186       22%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #1 of 2 · 14% of its score</summary>
+<details><summary>math · #1 of 2 · 17% of its score</summary>
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>   11.0%  ●▂▂▅▅▆▅▇█▇▄▃ beats 3/146  easy · avg 68%     14%  sharp · small run
+test         result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>   11.0%  ▂▂▂▂●▄▅▇██▆▄ beats 35/200  medium · avg 64%     17%  sharp · small run
 </pre>
 
 </details>
@@ -53,9 +55,9 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 35.8%  ▁▁▁▁▂●▅▅█▃▄▁ beats 16/129  medium · avg 73%     14%  sharp · small run
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           46.1%  ▁▁▁▁▁▂●▅█▃▆▃ beats 30/183  medium · avg 73%    6.3%  noisy · small run
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   21.7%  ●··▂▂▃▂▂█▅▁▂ beats 0/27    medium · avg 57%    2.8%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 35.8%  ▁▁▁▁▂●▅▆█▃▃▁ beats 25/155  medium · avg 68%     13%  sharp · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           46.1%  ▁▁▁▁▁▂▂●██▆▄ beats 43/214  medium · avg 71%    7.0%  noisy · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   21.7%  ●··▂▂▃▂▂█▅▁▂ beats 0/27    medium · avg 54%    2.2%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -66,14 +68,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4#A5.T8">OLMo: Accelerating the Science of Langu…</a>        5   52% ▇▇▇▇▇▇
-<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   23% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   23% ▇▇▇
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4#A5.T8">OLMo: Accelerating the Science of Langu…</a>        5   53% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   24% ▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 29.0
+weighted average                                   = 32.0
 </pre>
 
-<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

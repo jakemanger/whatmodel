@@ -6,7 +6,9 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 38.1** ±3.6 · #564 of 721 · from 5 benchmark results across 3 sources
+**score 40.0** ±3.4 · #562 of 724 · from 5 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂●▅▆▅▄█▄▁▁▁   #367 of 398*     48%      2
+math  ▁▁●▅█▆▄█▄▁▁▁   #381 of 424*     44%      2
 </pre>
 
-<details><summary>math · #367 of 398 · 48% of its score</summary>
+<details><summary>math · #381 of 424 · 44% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 72%     29%  at its level · noisy
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 20%     19%  typical
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 69%     27%  at its level · noisy
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 19%     17%  typical
 </pre>
 
 </details>
@@ -33,9 +35,9 @@ test                         result  vs the others in its run  difficulty      c
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 68/146  easy · avg 83%          19%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   58.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 31/100  medium · avg 68%        17%  at its level · noisy
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▁▃▂▂▄▁▃▄▄▄█ beats 0/38    very hard · avg 14%     11%  too hard for it
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 68/146  easy · avg 82%          20%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   58.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 31/100  medium · avg 66%        19%  sharp · at its level · noisy
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▁▃▂▂▄▁▃▄▄▄█ beats 0/38    very hard · avg 14%     12%  too hard for it
 </pre>
 
 </details>
@@ -46,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                 results  share of the score
-<a name="card2-allenai-olmo-3-7b-instruct"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">allenai/Olmo-3-7B-Instruct model card</a>        2   48% ▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                        2   36% ▇▇▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>            1   11% ▇
-prior: pull toward the middle                     6% ▇
-weighted average                                = 38.1
+<a name="card2-allenai-olmo-3-7b-instruct"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">allenai/Olmo-3-7B-Instruct model card</a>        2   44% ▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                        2   39% ▇▇▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>            1   12% ▇
+prior: pull toward the middle                     5% ▇
+weighted average                                = 40.0
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

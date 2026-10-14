@@ -6,7 +6,9 @@
 
 Intel · released 2023-12 · 7.24B params · apache-2.0
 
-**score 49.3** ±5.8 · #465 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.1** ±5.3 · #472 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Intel · released 2023-12 · 7.24B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 132/276  medium · avg 73%        66%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 132/276  medium · avg 72%        68%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.4%  ▁▁▂▃▄▄█▆●▂▂▁ beats 112/140  very easy · avg 94%     19%  blunt · maxed out · noisy
 </pre>
 
@@ -32,10 +34,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>          1   66% ▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>          1   68% ▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   19% ▇▇
-prior: pull toward the middle                15% ▇▇
-weighted average                            = 49.3
+prior: pull toward the middle                13% ▇▇
+weighted average                            = 50.1
 </pre>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

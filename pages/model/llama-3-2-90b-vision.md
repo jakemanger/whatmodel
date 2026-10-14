@@ -6,7 +6,9 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 49.8** ±1.3 · #344 of 721 · from 13 benchmark results across 7 sources
+**score 51.1** ±1.2 · #342 of 724 · from 13 benchmark results across 7 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,36 +16,36 @@ Meta · released 2024-09 · 88.59B params · llama3.2
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #274 of 398     40%      3
+math                ▁▁▃▅●▆▄█▄▁▁▁   #286 of 424     38%      3
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #125 of 147     32%      7
 </pre>
 
-<details><summary>math · #274 of 398 · 40% of its score</summary>
+<details><summary>math · #286 of 424 · 38% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               39.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 31/92   hard · avg 33%           32%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/193  very hard · avg 8.6%    4.6%  sharp · noisy
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>       49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 53%        3.4%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               39.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 31/92   hard · avg 27%           30%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/193  very hard · avg 6.9%    4.0%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>       49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 51%        3.2%  at its level · noisy
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #125 of 147 · 32% of its score</summary>
 
-Trails [Qwen3.5 2B](qwen3-5-2b.md), [Pixtral 12B (2409)](pixtral-12b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
+Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Pixtral 12B (2409)](pixtral-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                                         result  vs the others in its run   difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1032.3  ▁▁▂▂●▂▄▅▅▆██ beats 19/145  avg 1068                     10%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -0.412                  6.8%  typical
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.748 MM-MT-Bench s…    5.0%  sharp · noisy
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    53.7%  ▂·▂······█●▄ beats 6/9     medium · avg 52%            3.6%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 53%            3.4%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.0%  ▃···●▃··▅▃▃▃ beats 1/9     easy · avg 74%              2.9%  blunt · at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       33.8%  ▄·▄●▄··▄▄▄▄█ beats 2/9     easy · avg 77%              0.2%  blunt · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1032.3  ▁▁▂▂●▂▄▅▅▆██ beats 19/145  avg 1058                     11%  blunt
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -5.548                  6.6%  typical
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.569 MM-MT-Bench s…    4.8%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    53.7%  ▂·▂······█●▄ beats 6/9     medium · avg 50%            3.5%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 51%            3.2%  at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.0%  ▃···●▃··▅▃▃▃ beats 1/9     easy · avg 73%              2.7%  blunt · at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       33.8%  ▄·▄●▄··▄▄▄▄█ beats 2/9     easy · avg 74%              0.3%  blunt · noisy
 </pre>
 
 </details>
@@ -52,10 +54,10 @@ test                                                         result  vs the othe
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.0%  ▁▁▁▁▂●▆▄▅▇█▅ beats 42/208   hard · avg 40%          17%  sharp
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.5%  ▁▁·▁▂▂▄█▄●▄▄ beats 44/66    hard · avg 31%         6.9%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 253/276  medium · avg 73%       3.2%  at its level · noisy
-<a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   35.6%  ●▂·▄█·▂▂·▄▄▂ beats 0/16     very hard · avg 36%    3.1%  blunt
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.0%  ▁▁▁▁▂●▆▄▅▇█▅ beats 42/208   hard · avg 38%          17%  sharp
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.5%  ▁▁·▁▂▂▄█▄●▄▄ beats 44/66    hard · avg 29%         8.1%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 253/276  medium · avg 72%       3.6%  at its level · noisy
+<a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   35.6%  ●▂·▄█·▂▂·▄▄▂ beats 0/16     very hard · avg 35%    3.5%  blunt
 </pre>
 
 </details>
@@ -66,15 +68,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   54% ▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   52% ▇▇▇▇▇▇
 <a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T2">Pixtral 12B</a>                                     5   15% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   10% ▇
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    7% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    8% ▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    7% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
-<a name="paper-2610.04118v1-longsocialbench"></a><a href="https://arxiv.org/html/2610.04118v1">LongSocialBench: Do Long-Context LLMs U…</a>        1    3% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
+<a name="paper-2610.04118v1-longsocialbench"></a><a href="https://arxiv.org/html/2610.04118v1">LongSocialBench: Do Long-Context LLMs U…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.8
+weighted average                                   = 51.1
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

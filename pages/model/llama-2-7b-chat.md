@@ -6,7 +6,9 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 29.7** ±0.9 · #646 of 721 · from 25 benchmark results across 17 sources
+**score 32.1** ±0.9 · #641 of 724 · from 30 benchmark results across 19 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,70 +16,75 @@ Meta · released 2023-07 · 6.74B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁●▁▃▆██▇▆▄▃▁   #452 of 458*    5.5%      1
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #377 of 393     38%      7
-math            ▁●▃▅▆▅▄█▄▁▁▁   #386 of 398*    2.7%      1
+coding          ▁●▁▃▆██▇▆▄▃▁   #453 of 460*    4.8%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #379 of 395     35%      7
+math            ▁▁▃●█▆▄█▄▁▁▁   #354 of 424*    3.9%      1
 </pre>
 
-<details><summary>coding · #452 of 458 · 5.5% of its score</summary>
+<details><summary>coding · #453 of 460 · 4.8% of its score</summary>
 
-Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [Pythia 6.9B](pythia-6-9b.md), [GPT-J 6B](gpt-j-6b.md) here, though they rank lower overall.
 
 <pre>
-test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   24.0%  ●▃▃·▆▃▃█▃▂▂▅ beats 0/25   very easy · avg 86%    5.5%  sharp · at its level
+test                       result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   24.0%  ●▃▃·▆▃▃█▃▂▂▅ beats 0/25   easy · avg 83%    4.8%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #377 of 393 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #379 of 395 · 35% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.3%  ▁▂●▃▆▆█▆▄▄▁▁ beats 8/122   medium · avg 39%            7.9%  too hard for it
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1036.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 21/95   avg 1201                    7.4%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1107.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 16/379  avg 1268                    7.3%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.2700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 14/28   avg 8.826 MT-Bench scor…    6.4%  sharp · noisy
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         71.4%  ▂▂·▆·●▃▆█▆▄▂ beats 16/45   very easy · avg 96%         4.4%  sharp · at its level · noisy
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                          4.6%  ●▁▁▅█▅▄▃▃▅▃▁ beats 2/60    medium · avg 52%            2.5%  sharp · too hard for it
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>                          0.7%  ●·▁▁▂▁▄▄▆▄█▄ beats 0/38    medium · avg 49%            1.8%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.3%  ▁▂●▃▆▆█▆▄▄▁▁ beats 8/122   hard · avg 35%              8.2%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1107.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 16/379  avg 1258                    7.9%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1036.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 21/95   avg 1186                    7.2%  typical
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.2700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 14/28   avg 8.518 MT-Bench scor…    5.6%  sharp · noisy
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                          4.6%  ●▁▁▅█▅▄▃▃▅▃▁ beats 2/60    medium · avg 46%            2.4%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         71.4%  ▂▂·▆·●▃▆█▆▄▂ beats 16/45   very easy · avg 94%         2.1%  sharp · at its level · noisy
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>                          0.7%  ●·▁▁▂▁▄▄▆▄█▄ beats 0/38    medium · avg 45%            1.9%  sharp · too hard for it
 </pre>
 
 </details>
 
-<details><summary>math · #386 of 398 · 2.7% of its score</summary>
+<details><summary>math · #354 of 424 · 3.9% of its score</summary>
 
-Beats [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 3/25   easy · avg 73%    2.7%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 3/25   easy · avg 72%    3.9%  sharp
 </pre>
 
 </details>
 
-<details><summary>other tests (16)</summary>
+<details><summary>other tests (21)</summary>
 
 <pre>
 test                                         result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                          11.6%  ▁▁▁●▂▃▂█▆▃▅▃ beats 6/61    medium · avg 41%         12%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2002%3A41%3A41.097397.json">Natural Questions (closed book)</a>               23.7%  ▁·▁·▁▂▁▂·▅●█ beats 18/28   medium · avg 58%        8.6%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  8.2621 WB-Score  ▁·▁●·▃█▄▇▆▅▆ beats 2/52    avg 45.276 WB-Score     8.3%  sharp
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                25.6%  ●·····▂█▂▅·▁ beats 0/25    easy · avg 77%          6.8%  sharp
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>            31.7%  ●▄▂▃█▄▃▆▃▅▂▂ beats 2/81    medium · avg 58%        2.9%  blunt · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                          46.8%  ▁▁▃▃●█▄▁█··▁ beats 7/25    easy · avg 74%          2.9%  typical
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>            25.4%  ▂··●·▂▆▄▂█·▂ beats 2/14    medium · avg 57%        2.7%  at its level
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>            16.5%  ▁▁▁●▁▂▂▃▄▆█▃ beats 6/97    hard · avg 32%          2.4%  blunt
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2023-12-22%2004%3A04%3A29.898143.json">TriviaQA</a>                                       8.8%  ▁··▁●▃▃▁▄▅▄█ beats 3/28    easy · avg 79%          1.3%  at its level · noisy
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>            22.7%  ●··▁▃▂▂▂█▅▁▂ beats 0/25    medium · avg 61%        1.2%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>            52.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 72/276  medium · avg 73%        1.1%  noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>            54.3%  ▁▁▁▁▁▁▁●▄█▄▃ beats 25/146  easy · avg 83%          1.1%  at its level · noisy
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                          11.6%  ▁▁▁●▂▃▂█▆▃▅▃ beats 6/61    medium · avg 38%         13%  typical
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  8.2621 WB-Score  ▁·▁●·▃█▄▇▆▅▆ beats 2/52    avg 42.747 WB-Score     8.3%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                25.6%  ●·····▂█▂▅·▁ beats 0/25    medium · avg 74%        6.4%  sharp
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2002%3A41%3A41.097397.json">Natural Questions (closed book)</a>               23.7%  ▁·▁·▁▂▁▂·▅●█ beats 18/28   medium · avg 48%        5.8%  typical
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>            31.7%  ●▄▂▃█▄▃▆▃▅▂▂ beats 2/81    medium · avg 56%        3.2%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                          46.8%  ▁▁▃▃●█▄▁█··▁ beats 7/25    medium · avg 72%        3.2%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>            56.7%  ▁····▁▁·▁·▃● beats 11/11   hard · avg 63%          2.8%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>            16.5%  ▁▁▁●▁▂▂▃▄▆█▃ beats 6/97    hard · avg 31%          2.7%  blunt
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>            25.4%  ▂··●·▂▆▄▂█·▂ beats 2/14    medium · avg 53%        2.6%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>            44.0%  ●·········▄▄ beats 0/3     medium · avg 68%        1.5%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>            52.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 72/276  medium · avg 72%        1.3%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>            54.3%  ▁▁▁▁▁▁▁●▄█▄▃ beats 25/146  easy · avg 82%          1.2%  at its level · noisy
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>            22.7%  ●··▁▃▂▂▂█▅▁▂ beats 0/25    medium · avg 59%        1.1%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>            88.7%  ▁▁▂●▄▄█▆▃▂▂▁ beats 19/140  very easy · avg 94%     1.0%  blunt · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2017%3A46%3A56.163631.json">TruthfulQA MC2</a>                                45.3%  ▅▃█●▁▂▅···▁▁ beats 20/31   medium · avg 64%        0.6%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2023-12-15%2009%3A48%3A47.637297.json">HaluEval QA hallucination detecti…</a>            52.3%  █▁▁·▁●·▁▁▁▁▁ beats 20/27   medium · avg 70%        0.5%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                          0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 8/135   very hard · avg 5.9%    0.0%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2023-12-22%2004%3A04%3A29.898143.json">TriviaQA</a>                                       8.8%  ▁··▁●▃▃▁▄▅▄█ beats 3/28    easy · avg 71%          0.8%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2023-12-15%2009%3A48%3A47.637297.json">HaluEval QA hallucination detecti…</a>            52.3%  █▁▁·▁●·▁▁▁▁▁ beats 20/27   hard · avg 66%          0.4%  too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval QA hallucination recogni…</a>            49.6%  ●··········▃ beats 0/3     very hard · avg 56%     0.3%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2017%3A46%3A56.163631.json">TruthfulQA MC2</a>                                45.3%  ▅▃█●▁▂▅···▁▁ beats 20/31   medium · avg 57%        0.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>            63.8%  ▅▅▃●·▃··▃·▃▃ beats 7/11    hard · avg 66%          0.0%  blunt · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                          0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 8/135   very hard · avg 5.8%    0.0%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval summarization hallucinat…</a>            49.5%  ●··········▃ beats 0/3     very hard · avg 50%     0.0%  blunt · too hard for it · noisy
 </pre>
 
 </details>
@@ -89,27 +96,29 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5   19% ▇▇
-<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   12% ▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   12% ▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2002%3A41%3A41.097397.json">Hallucinations Leaderboard results</a>              4   11% ▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   13% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   10% ▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    7% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2002%3A41%3A41.097397.json">Hallucinations Leaderboard results</a>              4    7% ▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    6% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
+<a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    3% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    3% ▇
 <a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    3% ▇
-<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    3% ▇
-<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    2% ▇
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    2% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>             1    2% ▇
+<a name="acl-2023-emnlp-main-397"></a><a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval: A Large-Scale Hallucination E…</a>        3    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                                        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 29.7
+weighted average                                   = 32.1
 </pre>
 
-<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-397-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

@@ -6,7 +6,9 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 24.9** ±2.7 · #675 of 721 · from 5 benchmark results across 2 sources
+**score 24.9** ±3.0 · #678 of 724 · from 5 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -19,12 +21,12 @@ Together · released 2023-05 · 2.8B params · apache-2.0
 <details><summary>other tests (5)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                     63.2%  ▁···▂▁▁▅●▇▃▁ beats 34/87  easy · avg 88%          39%  small run
-<a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                      63.2%  ▁▁▁▁▂▂▃●█▆▅▃ beats 28/85  very easy · avg 90%     26%  at its level · small run
-<a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), last-wo…</a>   65.4%  ▁··▁▁▂▂▂▃●█▅ beats 24/49  very easy · avg 89%     13%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                           74.7%  ▁▁▁▃▃▄●█▄▃▁▁ beats 34/83  easy · avg 88%          10%  blunt · at its level · small run
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 3/276  medium · avg 73%       8.0%  noisy
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                     63.2%  ▁▁▁▁▂▁▁▅●█▃▁ beats 50/131  easy · avg 86%          37%  small run
+<a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                      63.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 50/135  very easy · avg 89%     27%  at its level · small run
+<a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), last-wo…</a>   65.4%  ▁·····▁▁▃▃●█ beats 39/86   very easy · avg 87%     12%  blunt · at its level · small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 3/276   medium · avg 72%        11%  noisy
+<a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                           74.7%  ▁▁▁▂▂▃●█▅▃▁▁ beats 43/123  easy · avg 86%         9.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -35,9 +37,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama (lab)</a>                        4   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    8% ▇
-prior: pull toward the middle               3% ▇
+<a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama (lab)</a>                        4   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   11% ▇
+prior: pull toward the middle               4% ▇
 weighted average                          = 24.9
 </pre>
 

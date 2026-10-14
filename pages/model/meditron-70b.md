@@ -6,7 +6,9 @@
 
 EPFL LLM · released 2023-11 · 68.98B params · llama2
 
-**score 38.4** ±4.2 · #745 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.4** ±3.9 · #758 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,8 +22,8 @@ EPFL LLM · released 2023-11 · 68.98B params · llama2
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   15.7%  ▁▁▁●▁▂▂▃▄▆█▃ beats 4/97   hard · avg 32%       65%  blunt
-<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   56.5%  ▂···▂▂·▃▂▃●█ beats 8/17   medium · avg 53%     27%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   15.7%  ▁▁▁●▁▂▂▃▄▆█▃ beats 4/97   hard · avg 31%       67%  blunt
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   56.5%  ▂···▂▂·▃▂▃●█ beats 8/17   medium · avg 52%     26%  typical
 </pre>
 
 </details>
@@ -32,10 +34,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   65% ▇▇▇▇▇▇▇▇
-<a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   27% ▇▇▇
-prior: pull toward the middle                        8% ▇
-weighted average                                   = 38.4
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   26% ▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 39.4
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

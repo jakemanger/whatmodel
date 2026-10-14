@@ -6,7 +6,9 @@
 
 DeepSeek · released 2026-09 · 552B params (16B active) · mit
 
-**score 77.3** ±0.7 · #23 of 721 · from 25 benchmark results across 4 sources
+**score 76.2** ±0.7 · #23 of 724 · from 25 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,65 +16,65 @@ DeepSeek · released 2026-09 · 552B params (16B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅▄●▁    #12 of 302     21%      9
-coding          ▁▁▁▃▆██▇▆▄●▁   #22 of 458*    8.4%      2
-chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #27 of 393*    4.1%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁    #32 of 398     38%      4
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁    #12 of 302     20%      9
+coding          ▁▁▁▃▆██▇▆▄●▁   #22 of 460*    8.7%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #27 of 395*    4.5%      1
+math            ▁▁▃▅█▆▄█●▁▁▁    #32 of 424     38%      4
 web search      ██·········●      #1 of 3*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #12 of 302 · 21% of its score</summary>
+<details><summary>agent tasks · #12 of 302 · 20% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md), [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.4 Pro](gpt-5-4-pro.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0402 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 34/49  avg -0.310 IPS          8.2%  sharp
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>                 31.2%  ▁·▁··▁▇▇●██▃ beats 16/30  very hard · avg 0.3%    3.5%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>                 90.6%  ▁·▁·▁▁▄▃▄█▄● beats 57/58  hard · avg 26%          2.8%  small run
-<a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>       30.5%  █··▄●·▄····▄ beats 3/6    very hard · avg 6.7%    1.9%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0402 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 34/49  avg -0.312 IPS          8.3%  sharp
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>                 31.2%  ▁·▁··▁▇▇●██▃ beats 16/30  very hard · avg 0.3%    3.3%  sharp · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>                 90.6%  ▁·▁·▁▁▄▃▄█▄● beats 57/58  hard · avg 28%          2.6%  sharp · small run
+<a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>       30.5%  █··▄●·▄····▄ beats 3/6    very hard · avg 7.0%    1.9%  at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam with tools (…</a>       63.9%  ▂▂▂▁▄▂▃▆█▇▂● beats 49/54  hard · avg 17%          1.4%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>            74.2%  ▂····▁▁▁▆██● beats 27/29  hard · avg 21%          1.1%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, offici…</a>       31.8%  █··········● beats 2/2    very hard · avg 6.3%    1.1%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>                 30.0%  █··█·······● beats 2/2    very hard · avg 2.1%    0.7%  noisy · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>            74.2%  ▂····▁▁▁▆██● beats 27/29  hard · avg 22%          1.1%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, offici…</a>       31.8%  █··········● beats 2/2    very hard · avg 6.7%    1.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>                 30.0%  █··█·······● beats 2/2    very hard · avg 2.4%    0.6%  noisy · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Chartography with tools (lab)</a>            78.9%  ▃········●██ beats 2/8                               —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #22 of 458 · 8.4% of its score</summary>
+<details><summary>coding · #22 of 460 · 8.7% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1619.9  ▁▂▄▃▅█▄▇●▄▁▁ beats 101/119  avg 983           7.3%  sharp
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>   74.2%  ▂····▁▁▁▆██● beats 27/29    hard · avg 21%    1.1%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1619.9  ▁▂▄▃▅█▄▇●▄▁▁ beats 101/119  avg 969           7.6%  sharp
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>   74.2%  ▂····▁▁▁▆██● beats 27/29    hard · avg 22%    1.1%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #27 of 393 · 4.1% of its score</summary>
+<details><summary>chat &amp; writing · #27 of 395 · 4.5% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1474.4  ▁▁▁▂▃▃▃▆▆▇●▃ beats 349/379  avg 1268      4.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1474.4  ▁▁▁▂▃▃▃▆▆▇●▃ beats 349/379  avg 1258      4.5%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #32 of 398 · 38% of its score</summary>
+<details><summary>math · #32 of 424 · 38% of its score</summary>
 
 Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          26.8%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 28/63    very hard · avg 0.1%     19%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       67.4%  ▂··▁▁▃▄▄█●▃▃ beats 55/82    very hard · avg 1.2%     16%  sharp · at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">MathArena Apex (pass@1) (lab)</a>   65.6%  ▄····▄···▄●▄ beats 4/5      very hard · avg 15%     1.8%  at its level · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        98.3%  ▃▃▄▃▃▃▇▇█▃●▅ beats 173/193  very hard · avg 8.6%    0.5%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       67.4%  ▂··▁▁▃▄▄█●▃▃ beats 55/82    very hard · avg 1.1%     17%  sharp · at its level
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">MathArena Apex (pass@1) (lab)</a>   65.6%  ▄····▄···▄●▄ beats 4/5      hard · avg 16%          1.6%  at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        98.3%  ▃▃▄▃▃▃▇▇█▃●▅ beats 173/193  very hard · avg 6.9%    0.4%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -90,16 +92,16 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           34.2%  █▆●▆▆▂▅▂▂▂·▅ beats 11/30    very hard · avg 1.3%    7.4%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         43.0%  █··▂▃▇▄█●▃▁▁ beats 62/74    very hard · avg 9.4%    6.5%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         89.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 172/208  hard · avg 39%          6.3%  sharp · small run · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         43.0%  █··▂▃▇▄█●▃▁▁ beats 62/74    very hard · avg 9.4%    7.2%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           34.2%  █▆●▆▆▂▅▂▂▂·▅ beats 11/30    very hard · avg 1.3%    7.0%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         89.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 172/208  hard · avg 38%          6.7%  sharp · small run · several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam (lab)</a>           39.1%  ▁▁▁▃▆▆▇██●▁▃ beats 88/104   very hard · avg 5.3%    2.3%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                        64.0%  ▂▂·▂▂▄█▆▆▂▄● beats 21/21    very hard · avg 13%     1.9%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>         62.8%  ▄··▄···▄·▄·● beats 4/5      very hard · avg 7.3%    1.4%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                       88.1%  ▄···▄··▄█▄█● beats 8/8      medium · avg 37%        1.2%  small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ExploitGym (pass@1) (lab)</a>            15.3%  ▄···▄··▄▄··● beats 4/5      very hard · avg 0.5%    1.1%  noisy · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.1 ca…</a>   54.8%  █··█·······● beats 2/2      very hard · avg 12%     1.0%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ProgramBench (Almost@1) (lab)</a>        20.3%  █●·······█·█ beats 1/3      very hard · avg 4.9%    0.9%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                        64.0%  ▂▂·▂▂▄█▆▆▂▄● beats 21/21    very hard · avg 14%     1.8%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>         62.8%  ▄··▄···▄·▄·● beats 4/5      very hard · avg 8.2%    1.3%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                       88.1%  ▄···▄··▄█▄█● beats 8/8      medium · avg 39%        1.1%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ExploitGym (pass@1) (lab)</a>            15.3%  ▄···▄··▄▄··● beats 4/5      very hard · avg 0.6%    1.0%  noisy · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.1 ca…</a>   54.8%  █··█·······● beats 2/2      very hard · avg 13%     0.9%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ProgramBench (Almost@1) (lab)</a>        20.3%  █●·······█·█ beats 1/3      very hard · avg 5.0%    0.8%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">BabyVision with tools (lab)</a>          89.6%  no other model yet                                     —  not counted yet: no other model in the …
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ZeroBench main with tools (pass@5…</a>   49.0%  no other model yet                                     —  not counted yet: no other model in the …
 </pre>
@@ -112,12 +114,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        6   52% ▇▇▇▇▇▇
-<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">deepseek-ai/DeepSeek-V4.1-Flash model c…</a>       15   26% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        6   53% ▇▇▇▇▇▇
+<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">deepseek-ai/DeepSeek-V4.1-Flash model c…</a>       15   25% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   20% ▇▇
 <a name="paper-2610.04432v2-video2world"></a><a href="https://arxiv.org/html/2610.04432v2">Video2World: Benchmarking Coding Agents…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 77.3
+weighted average                                   = 76.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-V4.1-Flash model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V4.1-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

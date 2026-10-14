@@ -6,7 +6,9 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 48.4** ±1.7 · #376 of 721 · from 7 benchmark results across 2 sources
+**score 49.8** ±1.6 · #371 of 724 · from 7 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅●▅▄█▄▁▁▁   #292 of 398*     33%      2
+math  ▁▁▃●█▆▄█▄▁▁▁   #324 of 424*     37%      2
 </pre>
 
-<details><summary>math · #292 of 398 · 33% of its score</summary>
+<details><summary>math · #324 of 424 · 37% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                       86.0%  ▂▂▂▅▅▆▅▇●▇▄▃ beats 109/146  very easy · avg 89%     19%  sharp
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (lab)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 60%        14%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                       86.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 159/200  very easy · avg 88%     24%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (lab)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 56%        13%  at its level
 </pre>
 
 </details>
@@ -33,11 +35,11 @@ test                             result  vs the others in its run    difficulty 
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>                 71.6%  ▁▁▁▁▂▄▅▅●▃▄▁ beats 96/129   easy · avg 75%       22%  sharp · at its level · small run
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                           72.8%  ▁▁▁▁▁▂▃▅█●▆▃ beats 123/183  easy · avg 78%       17%  at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (lab)</a>      38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 35/104   hard · avg 40%       15%  sharp
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 159/276  medium · avg 73%    5.7%  at its level · noisy
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                          78.0%  ▅·▅····●▃▅█▅ beats 5/14     easy · avg 75%      5.1%  at its level · noisy
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>                 71.6%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 121/155  medium · avg 71%     20%  sharp · at its level · small run
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                           72.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 149/214  easy · avg 76%       17%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (lab)</a>      38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 35/104   hard · avg 38%       14%  sharp
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 159/276  medium · avg 72%    6.1%  at its level · noisy
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                          78.0%  ▅·▅····●▃▅█▅ beats 5/14     medium · avg 73%    4.4%  at its level · noisy
 </pre>
 
 </details>
@@ -51,7 +53,7 @@ source                                    results  share of the score
 <a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards …</a>        6   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.4
+weighted average                                   = 49.8
 </pre>
 
 <sub>Licences: InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

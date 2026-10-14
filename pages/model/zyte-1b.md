@@ -6,7 +6,9 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 8.3** ±2.4 · #711 of 721 · from 3 benchmark results across 1 source
+**score 10.4** ±2.5 · #710 of 724 · from 3 benchmark results across 1 source
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,18 @@ venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▆██▇▆▄▃▁   #458 of 458     97%      3
+coding  ●▁▁▃▆██▇▆▄▃▁   #460 of 460     97%      3
 </pre>
 
-<details><summary>coding · #458 of 458 · 97% of its score</summary>
+<details><summary>coding · #460 of 460 · 97% of its score</summary>
+
+Trails [StableLM-Base-Alpha 7B](stablelm-base-alpha-7b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>     2.4%  ●·▁▁▃▄▆▅█▃▁▁ beats 0/99   easy · avg 79%     41%  sharp · too hard for it
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>    1.8%  ●·▁▁▁▃▄▄▄█▃▁ beats 0/99   easy · avg 74%     29%  sharp · too hard for it
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>         7.5%  ●···▁▁▂▅▇█▆▂ beats 0/75   easy · avg 68%     28%  typical
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>     2.4%  ●·▁▁▃▄▆▅█▃▁▁ beats 0/99   easy · avg 76%     39%  sharp · too hard for it
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>         7.5%  ●···▁▁▂▅▇█▆▂ beats 0/75   easy · avg 66%     30%  typical
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>    1.8%  ●·▁▁▁▃▄▄▄█▃▁ beats 0/99   easy · avg 70%     29%  sharp · too hard for it
 </pre>
 
 </details>
@@ -36,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 8.3
+weighted average                                   = 10.4
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

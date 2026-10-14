@@ -6,7 +6,9 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 53.1** ±1.1 · #296 of 721 · from 12 benchmark results across 2 sources
+**score 54.4** ±1.1 · #293 of 724 · from 12 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,32 +16,32 @@ Ai2 · released 2024-11 · 70.55B params · llama3.1
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #230 of 393*    8.2%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #267 of 398     47%      4
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #230 of 395*    8.8%      2
+math            ▁▁▃▅●▆▄█▄▁▁▁    #281 of 424     50%      4
 </pre>
 
-<details><summary>chat &amp; writing · #230 of 393 · 8.2% of its score</summary>
+<details><summary>chat &amp; writing · #230 of 395 · 8.8% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.6%  ▁▁▃▄▆██●▃▃▁▁ beats 127/155  medium · avg 47%    5.4%  at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (lab)</a>      82.6%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 16/25    easy · avg 79%      2.8%  small run
+<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.6%  ▁▁▃▄▆██●▃▃▁▁ beats 127/155  medium · avg 43%    5.7%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (lab)</a>      82.6%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 16/25    easy · avg 78%      3.1%  small run
 </pre>
 
 </details>
 
-<details><summary>math · #267 of 398 · 47% of its score</summary>
+<details><summary>math · #281 of 424 · 50% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 33%           28%  sharp · at its level
-<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 58%        6.7%  at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▅▅▆▅▇█▇●▃ beats 134/146  very easy · avg 87%     6.2%  sharp · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/193   very hard · avg 8.6%    5.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 27%           29%  sharp · at its level
+<a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 187/200  easy · avg 84%          8.7%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 53%        7.2%  at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/193   very hard · avg 6.9%    5.8%  sharp · noisy
 </pre>
 
 </details>
@@ -48,12 +50,12 @@ test                             result  vs the others in its run    difficulty 
 
 <pre>
 test                  result  vs the others in its run    difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>           46.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 54/208   hard · avg 40%       16%  sharp · at its level
-<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   84.8%  ▁▁▁▁▂▄▅▅█▃●▁ beats 118/129  easy · avg 77%       10%  sharp · small run
-<a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.1%  ▅··▅·█▅●▅▃▃▅ beats 10/17    easy · avg 65%      8.3%  at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>             83.3%  ▁▁▁▁▁▂▃▅█▃●▃ beats 149/183  easy · avg 79%      6.9%  small run
-<a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>            46.3%  ▁▁▂▃▅▃▂█▂▃·● beats 33/36    hard · avg 35%      2.4%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>   67.9%  █▅▇▅▁▄▁▇●▄▁▁ beats 64/73    medium · avg 64%    0.9%  blunt · at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>           46.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 54/208   hard · avg 38%       18%  sharp · at its level
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   84.8%  ▁▁▁▁▂▄▅▆█▃●▁ beats 144/155  easy · avg 75%       10%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>             83.3%  ▁▁▁▁▁▂▂▅██●▄ beats 180/214  easy · avg 77%      7.9%  small run
+<a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>            46.3%  ▁▂▁▃▃█▂█▆▅▁● beats 37/40    hard · avg 34%      3.0%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.1%  ▃▅█▅·▃·▆●▂▁▃ beats 37/44    medium · avg 62%    1.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>   67.9%  █▇▇▄▂▄▁▆●▄▁▁ beats 70/79    medium · avg 60%    0.3%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -64,10 +66,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   50% ▇▇▇▇▇▇
-<a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   49% ▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   52% ▇▇▇▇▇▇
+<a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   47% ▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 53.1
+weighted average                                   = 54.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

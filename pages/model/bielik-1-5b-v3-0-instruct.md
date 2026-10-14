@@ -6,7 +6,9 @@
 
 SpeakLeash · released 2025-04 · 1.6B params · apache-2.0
 
-**score 39.5** ±3.2 · #540 of 721 · from 3 benchmark results across 2 sources
+**score 41.3** ±2.9 · #536 of 724 · from 3 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,9 +22,9 @@ SpeakLeash · released 2025-04 · 1.6B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   47.3%  ▁▂▂●▃█▃▆▅▄▂▃ beats 15/95   easy · avg 66%       68%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   71.8%  ▁▁▁▁▁▁▁▂●█▄▃ beats 41/146  easy · avg 83%       14%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   50.6%  ▃·▁▁▂▁●▅█▇▄▁ beats 27/100  medium · avg 68%     14%  at its level · noisy
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   47.3%  ▁▂▂●▃█▃▆▅▄▂▃ beats 15/95   medium · avg 64%     68%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   50.6%  ▃·▁▁▂▁●▅█▇▄▁ beats 27/100  medium · avg 66%     14%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   71.8%  ▁▁▁▁▁▁▁▂●█▄▃ beats 41/146  easy · avg 82%       14%  at its level · noisy
 </pre>
 
 </details>
@@ -36,7 +38,7 @@ source                         results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>               1   68% ▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   28% ▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 39.5
+weighted average                        = 41.3
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

@@ -6,7 +6,9 @@
 
 SILMA AI · released 2024-08 · 9.24B params · gemma
 
-**score 42.1** ±3.2 · #668 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.5** ±3.1 · #670 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ SILMA AI · released 2024-08 · 9.24B params · gemma
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #311 of 466*     65%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #311 of 466*     63%      1
 </pre>
 
-<details><summary>chat &amp; writing · #311 of 466 · 65% of its score</summary>
+<details><summary>chat &amp; writing · #311 of 466 · 63% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   34.2%  ▁·▁▁▂▁▄▄●▄█▄ beats 19/38  medium · avg 49%     65%  sharp · at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   34.2%  ▁·▁▁▂▁▄▄●▄█▄ beats 19/38  medium · avg 45%     63%  sharp · at its level
 </pre>
 
 </details>
@@ -32,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>    6.7%  ▁▁·▁●▂▄█▄▅▄▄ beats 5/66   hard · avg 31%     30%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>    6.7%  ▁▁·▁●▂▄█▄▅▄▄ beats 5/66   hard · avg 29%     33%  typical
 </pre>
 
 </details>
@@ -43,9 +45,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   5% ▇
-weighted average                              = 42.1
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   4% ▇
+weighted average                              = 43.5
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

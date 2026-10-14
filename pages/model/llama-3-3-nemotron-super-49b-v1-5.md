@@ -6,7 +6,9 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.4** ±1.4 · #228 of 721 · from 4 benchmark results across 2 sources
+**score 57.5** ±1.4 · #234 of 724 · from 4 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,30 +16,30 @@ NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #200 of 458     81%      3
-chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #167 of 393*     18%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #200 of 460     79%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #167 of 395*     21%      1
 </pre>
 
-<details><summary>coding · #200 of 458 · 81% of its score</summary>
+<details><summary>coding · #200 of 460 · 79% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.4%     46%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   61.9%  ▄·▄····▄●▄█▄ beats 3/7    medium · avg 45%         25%  at its level
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   68.1%  ▄▄···▄·●▄█·▄ beats 3/7    medium · avg 57%         11%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.4%     44%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   61.9%  ▄·▄····▄●▄█▄ beats 3/7    medium · avg 45%         24%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   68.1%  ▄▄···▄·●▄█·▄ beats 3/7    medium · avg 57%         10%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #167 of 393 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #167 of 395 · 21% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1342.9  ▁▁▁▂▃▃▃▆●▇█▃ beats 181/379  avg 1268       18%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1342.9  ▁▁▁▂▃▃▃▆●▇█▃ beats 181/379  avg 1258       21%  blunt
 </pre>
 
 </details>
@@ -48,10 +50,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   81% ▇▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   18% ▇▇
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   79% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   21% ▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 57.4
+weighted average                        = 57.5
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

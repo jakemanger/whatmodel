@@ -6,7 +6,9 @@
 
 ServiceNow · released 2025-11 · 14.9B params · mit
 
-**score 61.6** ±1.4 · #184 of 721 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.8** ±1.4 · #183 of 724 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,44 +16,44 @@ ServiceNow · released 2025-11 · 14.9B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #197 of 302     31%      3
-coding              ▁▁▁▃▆██●▆▄▃▁   #176 of 458*     61%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #197 of 302     32%      3
+coding              ▁▁▁▃▆██●▆▄▃▁   #176 of 460*     60%      2
 vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄    #89 of 147*     11%      2
 </pre>
 
-<details><summary>agent tasks · #197 of 302 · 31% of its score</summary>
+<details><summary>agent tasks · #197 of 302 · 32% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>      66.7%  █▄··●··▄·▄·▄ beats 3/6    medium · avg 37%        13%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>   23.0%  ●·█▄·······█ beats 1/6    very hard · avg 12%     10%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>     58.0%  ▄▄······▄●▄▄ beats 4/6    hard · avg 29%         9.2%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>      66.7%  █▄··●··▄·▄·▄ beats 3/6    medium · avg 36%        13%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>     58.0%  ▄▄······▄●▄▄ beats 4/6    hard · avg 28%          10%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>   23.0%  ●·█▄·······█ beats 1/6    very hard · avg 10%     10%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #176 of 458 · 61% of its score</summary>
+<details><summary>coding · #176 of 460 · 60% of its score</summary>
 
-Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   37.7%  ●▄····▄··█·▄ beats 0/6    very hard · avg 8.0%     52%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>             23.0%  ●·█▄·······█ beats 1/6    very hard · avg 12%      10%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   37.7%  ●▄····▄··█·▄ beats 0/6    very hard · avg 7.0%     51%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>             23.0%  ●·█▄·······█ beats 1/6    very hard · avg 10%      10%  sharp · at its level
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #89 of 147 · 11% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions) (la…</a>   56.0%  ▄·····●▄·▄·█ beats 1/5    hard · avg 33%    6.6%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions (la…</a>   89.8%  ▄····▄···●▄▄ beats 2/5    easy · avg 69%    4.0%  noisy
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions) (la…</a>   56.0%  ▄·····●▄·▄·█ beats 1/5    hard · avg 31%    7.1%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions (la…</a>   89.8%  ▄····▄···●▄▄ beats 2/5    easy · avg 66%    4.2%  noisy
 </pre>
 
 </details>
@@ -60,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified…</a>   83.3%  ▄·····▄●▄▄·▄ beats 3/6    easy · avg 66%    5.2%  blunt
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified…</a>   83.3%  ▄·····▄●▄▄·▄ beats 3/6    easy · avg 66%    5.0%  blunt
 </pre>
 
 </details>
@@ -73,7 +75,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.6
+weighted average                                   = 61.8
 </pre>
 
 <sub>Licences: ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>

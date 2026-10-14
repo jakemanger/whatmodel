@@ -6,7 +6,9 @@
 
 Gradient AI · released 2024-04 · 8.03B params · llama3
 
-**score 46.6** ±5.4 · #536 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.6** ±5.3 · #540 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,8 +22,8 @@ Gradient AI · released 2024-04 · 8.03B params · llama3
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>    76.3%  ▁▁·▁·●▃▄█▂·▁ beats 4/22   easy · avg 83%     64%  typical
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>   69.5%  ▄··▂▄▂▆●█▄▄▂ beats 11/21  easy · avg 68%     23%  at its level · noisy
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>    76.3%  ▁▁·▁·●▃▄█▂·▁ beats 4/22   easy · avg 81%     65%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>   69.5%  ▄··▂▄▂▆●█▄▄▂ beats 11/21  easy · avg 67%     22%  at its level · noisy
 </pre>
 
 </details>
@@ -32,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   87% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       13% ▇▇
-weighted average                                   = 46.6
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       12% ▇
+weighted average                                   = 47.6
 </pre>
 
 <sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>

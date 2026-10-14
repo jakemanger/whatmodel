@@ -6,7 +6,9 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 29.0** ±0.9 · #649 of 721 · from 12 benchmark results across 2 sources
+**score 29.7** ±1.0 · #656 of 724 · from 12 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,18 +22,18 @@ OpenLM Research · released 2023-07 · apache-2.0
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Challenge</a>                        42.4%  ▁·▁··▁▁▇▂●▆▃ beats 17/26   easy · avg 85%          46%  sharp
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">WinoGrande</a>                           65.8%  ▁····▁··▁▂●▄ beats 13/26   easy · avg 89%          12%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">BoolQ</a>                                71.4%  ▂▃▂▅▆▂▅●█▂▂▂ beats 15/26   easy · avg 91%          10%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Easy</a>                             69.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 18/26   easy · avg 88%         6.9%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                            74.6%  ▃···▁▇▅█●▃▁▁ beats 18/26   very easy · avg 92%    5.6%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                                 93.8%  ▁·▁·▁·▃▅▃●▄▁ beats 19/26   very easy · avg 98%    5.4%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                                 79.2%  ▁·▁··▁▁▃█▅●▂ beats 23/26   easy · avg 88%         4.4%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">OpenBookQA</a>                           30.2%  █·▁▁▃·▁▃●▇▃▄ beats 14/26   medium · avg 53%       3.5%  too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">LAMBADA (OpenAI version), last-wo…</a>   71.0%  ▁··▂▁▁▁▂▆●▅▃ beats 18/26   very easy · avg 89%    2.6%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 10/26   medium · avg 59%       2.5%  blunt
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   39.2%  ▃▁▁▁▁●▁▁▂█▅▁ beats 47/276  medium · avg 73%       1.1%  noisy
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">TruthfulQA MC2</a>                       34.6%  █·●·█▄···▄·█ beats 2/9     medium · avg 61%       0.5%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Challenge</a>                        42.4%  ▁·▁··▁▁▇▂●▆▃ beats 17/26   easy · avg 82%          48%  sharp
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">WinoGrande</a>                           65.8%  ▁····▁··▁▂●▄ beats 13/26   easy · avg 87%          11%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">BoolQ</a>                                71.4%  ▂▃▂▅▆▂▅●█▂▂▂ beats 15/26   easy · avg 88%         8.4%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                            74.6%  ▃···▁▇▅█●▃▁▁ beats 18/26   very easy · avg 91%    6.1%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Easy</a>                             69.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 18/26   easy · avg 85%         5.8%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                                 93.8%  ▁·▁·▁·▃▅▃●▄▁ beats 19/26   very easy · avg 97%    4.8%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                                 79.2%  ▁·▁··▁▁▃█▅●▂ beats 23/26   easy · avg 87%         4.2%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">OpenBookQA</a>                           30.2%  █·▁▁▃·▁▃●▇▃▄ beats 14/26   hard · avg 48%         3.7%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">LAMBADA (OpenAI version), last-wo…</a>   71.0%  ▁··▂▁▁▁▂▆●▅▃ beats 18/26   very easy · avg 86%    2.6%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 10/26   hard · avg 56%         2.4%  blunt
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   39.2%  ▃▁▁▁▁●▁▁▂█▅▁ beats 47/276  medium · avg 72%       1.7%  noisy
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">TruthfulQA MC2</a>                       34.6%  █·●·█▄···▄·█ beats 2/9     medium · avg 55%       0.4%  blunt · at its level
 </pre>
 
 </details>
@@ -43,9 +45,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                           results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Stability AI</a>                          11   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    2% ▇
 prior: pull toward the middle               0% ▇
-weighted average                          = 29.0
+weighted average                          = 29.7
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,9 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 55.6** ±1.1 · #255 of 721 · from 17 benchmark results across 7 sources
+**score 55.9** ±1.0 · #260 of 724 · from 17 benchmark results across 7 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,56 +16,56 @@ Mistral · released 2025-12 · 13.9B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #206 of 302     12%      3
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #289 of 458*     11%      2
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #276 of 393*    6.1%      2
-math            ▁▂▃▅▆●▄█▄▁▁▁   #197 of 398*     10%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #206 of 302     11%      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #290 of 460*     10%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #276 of 395*    5.7%      2
+math            ▁▁▃▅█●▄█▄▁▁▁   #206 of 424*    9.2%      1
 </pre>
 
-<details><summary>agent tasks · #206 of 302 · 12% of its score</summary>
+<details><summary>agent tasks · #206 of 302 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   28.3%  ▆··▆▄●▄▂▆▆█▄ beats 8/23    very hard · avg 14%    7.6%  sharp
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archive)</a>      38.8%  ▁▁▁▂▇▆●▆█▂▄▂ beats 51/111  medium · avg 37%       2.9%  at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3</a>                              52.7%  ▁▁▁▁▁▃▅●▆▅▄▁ beats 56/170  medium · avg 56%       1.4%  blunt · at its level
+<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   28.3%  ▆··▆▄●▄▂▆▆█▄ beats 8/23    very hard · avg 13%    6.7%  sharp
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archive)</a>      38.8%  ▁▁▁▂▇▆●▆█▂▄▂ beats 51/111  medium · avg 35%       2.8%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3</a>                              52.7%  ▁▁▁▁▁▃▅●▆▅▄▁ beats 56/170  medium · avg 55%       1.4%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #289 of 458 · 11% of its score</summary>
+<details><summary>coding · #290 of 460 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   42.4%  ▂▃▄●▅██▅▄▇▃▆ beats 10/65  hard · avg 34%      8.9%  at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E</a>                            71.5%  ▃··▄·▅▅▇●█▃▄ beats 19/31  medium · avg 56%    1.9%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   42.4%  ▂▃▄●▅██▅▄▇▃▆ beats 10/65  hard · avg 33%      8.5%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E</a>                            71.5%  ▃··▄·▅▅▇●█▃▄ beats 19/31  medium · avg 53%    1.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #276 of 393 · 6.1% of its score</summary>
+<details><summary>chat &amp; writing · #276 of 395 · 5.7% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   55.1%  ▃▃▂▅▃●▅█▅▅▂▃ beats 10/30   medium · avg 49%    4.8%  at its level · small run
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecified)</a>     67.3%  ▁▁▃▁●▄▄▆█▃▂▁ beats 30/141  easy · avg 76%      1.4%  typical
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   55.1%  ▃▃▂▅▃●▅█▅▅▂▃ beats 10/30   medium · avg 45%    4.3%  at its level · small run
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecified)</a>     67.3%  ▁▁▃▁●▄▄▆█▃▂▁ beats 30/141  easy · avg 75%      1.4%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #197 of 398 · 10% of its score</summary>
+<details><summary>math · #206 of 424 · 9.2% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified) (lab)</a>   90.4%  ▂▄▄▃█▇▅▆●▃▄▁ beats 66/80  easy · avg 83%     10%  small run · several runs
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified) (lab)</a>   90.4%  ▂▄▄▃█▇▅▆●▃▄▁ beats 66/80  easy · avg 83%    9.2%  small run · several runs
 </pre>
 
 </details>
@@ -72,12 +74,12 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4760  ▁▄▃▃▇●█▃▅▁▁▁ beats 13/30    avg 0.423               17%  sharp
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond</a>                         58.6%  ▁▁▁▁▂▄▅●███▄ beats 107/310  hard · avg 47%          16%  sharp · at its level
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   47.6%  ▂▃▅▂▆●█▅█▅▃▆ beats 12/34    medium · avg 42%       8.2%  blunt · at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.7%  ▂·▂▂·▂·▃▃·●▃ beats 8/14     easy · avg 80%         7.3%  typical
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux</a>                           85.9%  ▁▁▃▁▂▃▄●▇▅█▄ beats 21/63    easy · avg 78%         7.0%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.3%  ▂··▂▂·▂▆▆●·▄ beats 10/15    medium · avg 63%       4.5%  at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4760  ▁▄▃▃▇●█▃▅▁▁▁ beats 13/30    avg 0.415               20%  sharp
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond</a>                         58.6%  ▁▁▁▁▂▄▅●███▄ beats 107/310  hard · avg 45%          16%  sharp · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   47.6%  ▂▃▅▂▆●█▅█▅▃▆ beats 12/34    medium · avg 41%       8.8%  blunt · at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux</a>                           85.9%  ▁▁▃▁▂▃▄●▇▅█▄ beats 21/63    easy · avg 78%         6.5%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.7%  ▂·▂▂·▂·▃▃·●▃ beats 8/14     easy · avg 79%         6.4%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.3%  ▂··▂▂·▂▆▆●·▄ beats 10/15    medium · avg 62%       4.2%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus</a>                             86.6%  ▁··▁▁▁·▃▁●█▁ beats 9/16     easy · avg 82%         1.4%  blunt
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   80.6%  ▁●▁▂▅█▂▃▄▃▁▁ beats 5/98     very easy · avg 90%    0.0%  blunt
 </pre>
@@ -90,15 +92,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">JetBrains/Mellum2-12B-A2.5B-Instruct mo…</a>        8   41% ▇▇▇▇▇
-<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   25% ▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   12% ▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">mistralai/Ministral-3-14B-Instruct-2512…</a>        2   10% ▇
-<a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    8% ▇
+<a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">JetBrains/Mellum2-12B-A2.5B-Instruct mo…</a>        8   40% ▇▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   29% ▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   11% ▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">mistralai/Ministral-3-14B-Instruct-2512…</a>        2    9% ▇
+<a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    7% ▇
 <a name="card-mistralai-ministral-3-8b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md">mistralai/Ministral-3-8B-Instruct-2512 …</a>        1    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.6
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 55.9
 </pre>
 
 <sub>Licences: JetBrains/Mellum2-12B-A2.5B-Instruct model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Ministral-3-8B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

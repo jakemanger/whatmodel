@@ -6,7 +6,9 @@
 
 Allen Institute for AI · released 2024-02 · 1.18B params · apache-2.0
 
-**score 21.0** ±1.5 · #687 of 721 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 20.8** ±1.7 · #692 of 724 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,14 +22,14 @@ Allen Institute for AI · released 2024-02 · 1.18B params · apache-2.0
 
 <pre>
 test                 result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>   34.5%  ▃●······▃▅▃█ beats 1/8    easy · avg 88%          18%  sharp
-<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>      58.9%  ▂····●·▂·▂▂█ beats 1/8    easy · avg 89%          15%  typical
-<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>            88.1%  ▂·●···▂·▂·█▂ beats 1/8    very easy · avg 98%     14%  typical
-<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>       62.5%  ▂·····●▂·▂·█ beats 1/8    very easy · avg 92%     13%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>      46.4%  ▄·····▄●▄██▄ beats 2/8    easy · avg 84%          12%  typical
-<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>        58.1%  ▃···●·▃··▃▅█ beats 1/8    easy · avg 88%          11%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>           60.7%  ●····▃··█▃·▃ beats 0/8    easy · avg 92%          10%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>            73.7%  ▄····●·▄▄▄██ beats 1/8    easy · avg 88%         6.0%  blunt · at its level
+<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>   34.5%  ▃●······▃▅▃█ beats 1/8    easy · avg 86%          17%  sharp
+<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>       62.5%  ▂·····●▂·▂·█ beats 1/8    very easy · avg 91%     16%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>      58.9%  ▂····●·▂·▂▂█ beats 1/8    easy · avg 87%          16%  typical
+<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>            88.1%  ▂·●···▂·▂·█▂ beats 1/8    very easy · avg 98%     13%  blunt
+<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>      46.4%  ▄·····▄●▄██▄ beats 2/8    easy · avg 81%          12%  typical
+<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>        58.1%  ▃···●·▃··▃▅█ beats 1/8    easy · avg 85%          10%  blunt · at its level
+<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>           60.7%  ●····▃··█▃·▃ beats 0/8    easy · avg 88%         8.6%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>            73.7%  ▄····●·▄▄▄██ beats 1/8    easy · avg 87%         6.1%  blunt · at its level
 </pre>
 
 </details>
@@ -40,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 21.0
+weighted average                                   = 20.8
 </pre>
 
 <sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt))</sub>

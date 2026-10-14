@@ -6,7 +6,9 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 68.4** ±1.7 · #103 of 721 · from 4 benchmark results across 1 source
+**score 68.0** ±1.6 · #103 of 724 · from 4 benchmark results across 1 source
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,29 +16,29 @@ Z.ai · released 2026-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ▁▁▁▃▆██▇●▄▃▁   #85 of 458*     46%      1
-chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #75 of 393*     26%      1
+coding              ▁▁▁▃▆██▇●▄▃▁   #85 of 460*     45%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #75 of 395*     26%      1
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #64 of 147*     27%      2
 </pre>
 
-<details><summary>coding · #85 of 458 · 46% of its score</summary>
+<details><summary>coding · #85 of 460 · 45% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1399.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 46/119  avg 983        46%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1399.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 46/119  avg 969        45%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #75 of 393 · 26% of its score</summary>
+<details><summary>chat &amp; writing · #75 of 395 · 26% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1433.5  ▁▁▁▂▃▃▃▆▆▇●▃ beats 289/379  avg 1268       26%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1433.5  ▁▁▁▂▃▃▃▆▆▇●▃ beats 289/379  avg 1258       26%  blunt
 </pre>
 
 </details>
@@ -47,8 +49,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                               result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1230.1  ▁▁▂▂▂▂▄▅▅●██ beats 88/145  avg 1068       18%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1400.1  ●▁▃▃▄▃▇█▅▇▄▅ beats 0/37    avg 1336      8.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1230.1  ▁▁▂▂▂▂▄▅▅●██ beats 88/145  avg 1058       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1400.1  ●▁▃▃▄▃▇█▅▇▄▅ beats 0/37    avg 1331      8.7%  blunt
 </pre>
 
 </details>
@@ -61,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.4
+weighted average                        = 68.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

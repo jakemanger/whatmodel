@@ -6,7 +6,9 @@
 
 Mistral · released 2025-08 · closed weights
 
-**score 64.0** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 64.0** ±2.2 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,40 +16,40 @@ Mistral · released 2025-08 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅●▄▃▃▁   #115 of 342*     11%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #116 of 463*     50%      1
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #112 of 182*     35%      1
+agent tasks         ▁▁▂▆█▆▅●▄▃▃▁   #115 of 342*     10%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #116 of 466*     50%      1
+vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #112 of 182*     36%      1
 </pre>
 
-<details><summary>agent tasks · #115 of 342 · 11% of its score</summary>
+<details><summary>agent tasks · #115 of 342 · 10% of its score</summary>
 
-Beats [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   61.0%  ▅▃·▃▃▅▅█▃█▅● beats 18/19  hard · avg 27%     11%  at its level
+<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   61.0%  ▅▃·▃▃▅▅█▃█▅● beats 18/19  hard · avg 26%     10%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #116 of 463 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #116 of 466 · 50% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1407.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 252/379  avg 1268       50%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1407.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 252/379  avg 1258       50%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #112 of 182 · 35% of its score</summary>
+<details><summary>vision &amp; documents · #112 of 182 · 36% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1159.4  ▁▁▂▂▂▂▄●▅▆██ beats 53/145  avg 1068       35%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1159.4  ▁▁▂▂▂▂▄●▅▆██ beats 53/145  avg 1058       36%  blunt
 </pre>
 
 </details>
@@ -56,7 +58,7 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   88.6%  ▁▁▂●▄▄█▆▃▂▂▁ beats 18/140  very easy · avg 94%    1.7%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   88.6%  ▁▁▂●▄▄█▆▃▂▂▁ beats 18/140  very easy · avg 94%    1.6%  blunt · maxed out · noisy
 </pre>
 
 </details>
@@ -67,10 +69,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                1   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                1   10% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
-prior: pull toward the middle                 3% ▇
+prior: pull toward the middle                 2% ▇
 weighted average                            = 64.0
 </pre>
 

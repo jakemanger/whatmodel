@@ -6,7 +6,9 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 48.9** ±1.8 · #364 of 721 · from 10 benchmark results across 2 sources
+**score 49.7** ±1.7 · #374 of 724 · from 10 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,42 +16,42 @@ Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #218 of 302*    3.1%      1
-chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #140 of 393*    8.0%      1
-math            ▁▂▃▅▆●▄█▄▁▁▁    #210 of 398     38%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #218 of 302*    3.0%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #140 of 395*    8.4%      1
+math            ▁▁▃▅█●▄█▄▁▁▁    #215 of 424     38%      3
 </pre>
 
-<details><summary>agent tasks · #218 of 302 · 3.1% of its score</summary>
+<details><summary>agent tasks · #218 of 302 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>   57.0%  ▄▄·······▄█● beats 6/6    medium · avg 56%    3.1%  blunt · at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>   57.0%  ▄▄·······▄█● beats 6/6    medium · avg 55%    3.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #140 of 393 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #140 of 395 · 8.4% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (lab)</a>   88.4%  █·█··█·██·█● beats 6/6    very easy · avg 87%    8.0%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (lab)</a>   88.4%  █·█··█·██·█● beats 6/6    very easy · avg 86%    8.4%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #210 of 398 · 38% of its score</summary>
+<details><summary>math · #215 of 424 · 38% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>       85.6%  █····▄▄▄···● beats 6/6    very easy · avg 87%     17%  sharp
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>   31.7%  ▄█··▄···▄··● beats 5/6    hard · avg 33%          14%  sharp · at its level · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>    88.0%  ▄··█▄·▄···▄● beats 6/6    easy · avg 80%         7.0%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>       85.6%  █····▄▄▄···● beats 6/6    very easy · avg 87%     20%  sharp
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>   31.7%  ▄█··▄···▄··● beats 5/6    hard · avg 30%          12%  sharp · at its level · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>    88.0%  ▄··█▄·▄···▄● beats 6/6    easy · avg 77%         5.6%  noisy
 </pre>
 
 </details>
@@ -58,11 +60,11 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>                   37.9%  █··········● beats 4/5     hard · avg 41%       18%  sharp · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                       49.6%  █···█·██·█●█ beats 5/6     medium · avg 54%     13%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)…</a>   44.9%  ▄·█·█······● beats 5/6     medium · avg 43%     11%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   38.9%  ▃·▁▁▂●▂▅█▇▄▁ beats 20/100  medium · avg 68%    5.0%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   75.2%  ▁▁▁▁▁▁▁▂●█▄▃ beats 50/146  easy · avg 83%      3.3%  noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>                   37.9%  █··········● beats 4/5     hard · avg 39%       17%  sharp · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                       49.6%  █···█·██·█●█ beats 5/6     medium · avg 51%     12%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)…</a>   44.9%  ▄·█·█······● beats 5/6     medium · avg 42%     11%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   38.9%  ▃·▁▁▂●▂▅█▇▄▁ beats 20/100  medium · avg 66%    5.6%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   75.2%  ▁▁▁▁▁▁▁▂●█▄▃ beats 50/146  easy · avg 82%      3.6%  at its level · noisy
 </pre>
 
 </details>
@@ -73,10 +75,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-liquidai-lfm2-5-1-2b-thinking"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">LiquidAI/LFM2.5-1.2B-Thinking model car…</a>        8   90% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    8% ▇
+<a name="card-liquidai-lfm2-5-1-2b-thinking"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">LiquidAI/LFM2.5-1.2B-Thinking model car…</a>        8   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.9
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: LiquidAI/LFM2.5-1.2B-Thinking model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

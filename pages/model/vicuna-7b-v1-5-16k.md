@@ -6,7 +6,9 @@
 
 LMSYS · released 2023-07 · llama2
 
-**score 34.2** ±2.2 · #814 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.2** ±2.1 · #814 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ LMSYS · released 2023-07 · llama2
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>   14.5%  ▁▁▁▂●▃▂█▆▃▅▃ beats 8/61   medium · avg 41%     98%  typical
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>   14.5%  ▁▁▁▂●▃▂█▆▃▅▃ beats 8/61   medium · avg 38%     98%  typical
 </pre>
 
 </details>
@@ -33,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>            1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 34.2
+weighted average                        = 36.2
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0))</sub>

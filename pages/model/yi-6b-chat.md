@@ -6,7 +6,9 @@
 
 01.AI · released 2023-11 · 6.06B params · apache-2.0
 
-**score 30.2** ±2.4 · #859 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.5** ±2.2 · #854 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,8 +22,8 @@
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                  9.6%  ▁▁●▂▂▃▂█▆▃▅▃ beats 3/61    medium · avg 41%     89%  typical
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 90/276  medium · avg 73%    8.1%  noisy
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                  9.6%  ▁▁●▂▂▃▂█▆▃▅▃ beats 3/61    medium · avg 38%     89%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 90/276  medium · avg 72%    9.0%  noisy
 </pre>
 
 </details>
@@ -33,9 +35,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                           results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>              1   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    8% ▇
-prior: pull toward the middle               3% ▇
-weighted average                          = 30.2
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    9% ▇
+prior: pull toward the middle               2% ▇
+weighted average                          = 32.5
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

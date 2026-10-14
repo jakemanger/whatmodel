@@ -6,7 +6,9 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 34.9** ±3.0 · #603 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.5** ±3.0 · #608 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -21,9 +23,9 @@ math  ●··········█   #2 of 2     96%      3
 
 <pre>
 test                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       65.1%  ▁▃▂●▅▇▅▇█▅▂▁ beats 12/84  very easy · avg 87%     37%  at its level · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 43%        33%  sharp · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   32.7%  ▄·▂▂·●█▆·▆▄▄ beats 7/21   medium · avg 59%        26%  at its level · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       65.1%  ▁▃▂●▅▇▅▇█▅▂▁ beats 12/84  very easy · avg 86%     34%  at its level · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 38%        34%  sharp · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   32.7%  ▁·▃▁▁▂▁●▄▁▃▃ beats 12/27  medium · avg 55%        28%  small run
 </pre>
 
 </details>
@@ -36,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (l…</a>        3   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 34.9
+weighted average                                   = 36.5
 </pre>
 
 ## How to run it

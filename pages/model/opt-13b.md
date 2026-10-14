@@ -6,7 +6,9 @@
 
 Meta · released 2022-05 · 13B params · opt-175b-license-noncommercial
 
-**score 26.1** ±1.3 · #670 of 721 · from 11 benchmark results across 3 sources
+**score 25.9** ±0.8 · #675 of 724 · from 37 benchmark results across 10 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -16,21 +18,32 @@ Meta · released 2022-05 · 13B params · opt-175b-license-noncommercial
 
 </pre>
 
-<details><summary>other tests (11)</summary>
+<details><summary>other tests (22)</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        32.9%  █··▁·▁▁·▁▂●▂ beats 17/19   medium · avg 72%        20%  sharp
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           65.2%  ▄····▄▆▂▄▆▆● beats 16/19   easy · avg 89%          17%  at its level
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             67.1%  ▃·▅▃▃▅·██▃●█ beats 15/19   very easy · avg 90%     17%  at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 58%        14%  typical
-<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 76.0%  ▂·▄▄·▄▂▆▂▄●▄ beats 15/19   easy · avg 88%         9.4%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 90.8%  ▂··▂▃▂▂▆▃▃●▂ beats 17/19   very easy · avg 98%    8.5%  typical
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▃··▅▃▃▅▅▅█●█ beats 16/19   very easy · avg 89%    7.0%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2024-05-19%2018%3A26%3A05.712584.json">TriviaQA</a>                             41.0%  ▁··▁█▃▃▁▄●▄█ beats 16/28   easy · avg 79%         2.3%  at its level · noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 15/276  medium · avg 73%       1.9%  noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-22%2023%3A28%3A13.543609.json">TruthfulQA MC2</a>                       34.0%  ●▃█▆▁▂▅···▁▁ beats 1/31    medium · avg 64%       1.2%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-28%2004%3A38%3A57.693135.json">HaluEval QA hallucination detecti…</a>   35.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 8/27    medium · avg 70%       0.7%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        32.9%  █··▁·▁▁·▁▂●▂ beats 17/19   easy · avg 81%          33%  sharp · several runs
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           65.2%  ▄····▄▆▂▄▆▆● beats 16/19   easy · avg 88%          17%  at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             67.1%  ▃·▅▃▃▅·██▃●█ beats 15/19   easy · avg 87%          13%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 76.0%  ▂·▄▄·▄▂▆▂▄●▄ beats 15/19   easy · avg 87%         8.9%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.6%  ▂▂▄▂·▂·▆·▂●▂ beats 10/14   easy · avg 89%         4.6%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▃··▅▃▃▅▅▅█●█ beats 16/19   very easy · avg 87%    4.1%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 90.8%  ▂··▂▃▂▂▆▃▃●▂ beats 17/19   very easy · avg 98%    3.8%  blunt · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 48%       3.7%  typical
+<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   28.4%  ██···●█····█ beats 2/4     easy · avg 66%         2.3%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   51.5%  ▁····▁●·▁·▃█ beats 2/11    hard · avg 63%         1.8%  too hard for it
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            52.5%  ●█······▃▃·▅ beats 0/8     easy · avg 86%         1.6%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">COPA</a>                                 86.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 46/67   very easy · avg 95%    1.6%  at its level · small run
+<a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   57.7%  ▂▂··▂·●···▂▂ beats 5/8     easy · avg 79%         1.3%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 15/276  medium · avg 72%       0.8%  noisy
+<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Mintaka (English) closed-book zer…</a>   26.8%  ▄····▄···▄·● beats 3/4     medium · avg 48%       0.8%  blunt
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2024-05-19%2018%3A26%3A05.712584.json">TriviaQA</a>                             41.0%  ▁··▁█▃▃▁▄●▄█ beats 16/28   easy · avg 71%         0.6%  at its level · noisy
+<a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA (all factors), exact matc…</a>   21.9%  ▂····▂··▂·●▄ beats 3/8     medium · avg 36%       0.4%  blunt
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-13b/opt-13b.json">SuperGLUE WSC (prompted)</a>             60.6%  █·······▂·▂● beats 7/8     medium · avg 68%       0.2%  blunt · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-22%2023%3A28%3A13.543609.json">TruthfulQA MC2</a>                       34.0%  ●▃█▆▁▂▅···▁▁ beats 1/31    medium · avg 57%       0.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-28%2004%3A38%3A57.693135.json">HaluEval QA hallucination detecti…</a>   35.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 8/27    hard · avg 66%         0.2%  too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   68.5%  ▅▅▃█·▃··▃·●▃ beats 10/11   hard · avg 66%         0.0%  blunt · at its level
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-13b/opt-13b.json">LogiQA (harness)</a>                     22.7%  ●··········▁ beats 2/14    very hard · avg 25%    0.0%  too hard for it · noisy
 </pre>
 
 </details>
@@ -41,14 +54,21 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   79% ▇▇▇▇▇▇▇▇▇▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Hallucinations Leaderboard results</a>              4   18% ▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 26.1
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   26% ▇▇▇
+<a name="paper-2210.17323v2-gptq"></a><a href="https://arxiv.org/html/2210.17323v2">GPTQ: Accurate Post-Training Quantizati…</a>        5   24% ▇▇▇
+<a name="lm-eval-harness-results-2023-05"></a><a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-13b/opt-13b.json">EleutherAI lm-evaluation-harness result…</a>        8   23% ▇▇▇
+<a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        7   15% ▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Hallucinations Leaderboard results</a>              4    5% ▇
+<a name="acl-2023-nlrse-1-7"></a><a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Knowledge-Augmented Language Model Prom…</a>        2    3% ▇
+<a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    2% ▇
+<a name="acl-2023-findings-emnlp-152"></a><a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">Generative Calibration for In-context L…</a>        1    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="acl-2023-findings-emnlp-100"></a><a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA: A New Dataset for Testing the …</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 25.9
 </pre>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Knowledge-Augmented Language Model Prompting for Zero-Shot Knowledge Graph Question Answering ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-7-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Generative Calibration for In-context Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-152-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

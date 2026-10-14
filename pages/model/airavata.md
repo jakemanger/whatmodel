@@ -6,7 +6,9 @@
 
 AI4Bharat · released 2024-01 · 6.87B params · llama2
 
-**score 28.6** ±6.1 · #875 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 30.3** ±5.8 · #869 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ AI4Bharat · released 2024-01 · 6.87B params · llama2
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>    9.6%  ▁●▁▁·▂·█▆█▇▁ beats 1/31   medium · avg 48%     83%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>    9.6%  ▁●▁▁·▂·█▆█▇▁ beats 1/31   medium · avg 46%     85%  typical
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                  17% ▇▇
-weighted average                              = 28.6
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                  15% ▇▇
+weighted average                              = 30.3
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

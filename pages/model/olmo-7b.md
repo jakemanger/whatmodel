@@ -6,7 +6,9 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 28.4** ±1.2 · #657 of 721 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 29.7** ±1.2 · #655 of 724 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,24 +16,24 @@ Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
 <pre>
 task    vs the others      rank  counts  tests
-coding  ●··········█   #2 of 2*    7.3%      1
-math    ●··········█   #2 of 2*    7.2%      1
+coding  ●··········█   #2 of 2*    8.5%      1
+math    ●··········█   #2 of 2*     11%      1
 </pre>
 
-<details><summary>coding · #2 of 2 · 7.3% of its score</summary>
+<details><summary>coding · #2 of 2 · 8.5% of its score</summary>
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   21.4%  ●▃▄▁▄▃▃█▃▁▁▄ beats 0/27   easy · avg 83%    7.3%  sharp · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   21.4%  ●▃▄▁▄▃▃█▃▁▁▄ beats 0/27   easy · avg 78%    8.5%  sharp · small run
 </pre>
 
 </details>
 
-<details><summary>math · #2 of 2 · 7.2% of its score</summary>
+<details><summary>math · #2 of 2 · 11% of its score</summary>
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>    8.5%  ●▂▂▅▅▆▅▇█▇▄▃ beats 2/146  easy · avg 68%    7.2%  sharp · small run
+test         result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>    8.5%  ▂▂▂▂●▄▅▇██▆▄ beats 32/200  medium · avg 64%     11%  sharp · small run
 </pre>
 
 </details>
@@ -39,18 +41,18 @@ test         result  vs the others in its run  difficulty      counts  why
 <details><summary>other tests (11)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>                  48.5%  ▃▃······▃▅▃● beats 7/8    easy · avg 88%          18%  sharp · at its level
-<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                     67.9%  ▂····▂·▂·▂●█ beats 4/8    easy · avg 89%          12%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                     50.4%  ▄·····▄▄▄█●▄ beats 6/8    easy · avg 84%          11%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                      76.4%  ▂·····▂▂·▂·● beats 6/8    very easy · avg 92%    7.7%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                          73.4%  █····▃··●▃·▃ beats 4/8    easy · avg 92%         7.1%  at its level
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 31.7%  ▁▁▁▁●▄▅▅█▃▄▁ beats 9/129  medium · avg 73%       7.1%  sharp · small run
-<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                       65.4%  ▃···▃·▃··●▅█ beats 3/8    easy · avg 88%         6.9%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                           93.8%  ▂·▂···▂·▂·●▂ beats 5/8    very easy · avg 98%    6.2%  typical
-<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                           78.4%  ▄····▄·▄▄▄█● beats 7/8    easy · avg 88%         3.8%  blunt · at its level
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           28.3%  ▁▁●▁▁▂▃▅█▃▆▃ beats 4/183  medium · avg 73%       3.2%  noisy · small run
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   32.3%  ▃··●▂▃▂▂█▅▁▂ beats 4/27   medium · avg 57%       1.4%  blunt · at its level · small run
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>                  48.5%  ▃▃······▃▅▃● beats 7/8     easy · avg 86%          16%  sharp · at its level
+<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                     67.9%  ▂····▂·▂·▂●█ beats 4/8     easy · avg 87%          12%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                     50.4%  ▄·····▄▄▄█●▄ beats 6/8     easy · avg 81%          10%  at its level
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 31.7%  ▁▁▁▁●▄▅▆█▃▃▁ beats 16/155  medium · avg 68%       8.5%  sharp · small run
+<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                      76.4%  ▂·····▂▂·▂·● beats 6/8     very easy · avg 91%    8.4%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                       65.4%  ▃···▃·▃··●▅█ beats 3/8     easy · avg 85%         5.5%  blunt · at its level
+<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                          73.4%  █····▃··●▃·▃ beats 4/8     easy · avg 88%         5.5%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                           93.8%  ▂·▂···▂·▂·●▂ beats 5/8     very easy · avg 98%    5.1%  blunt
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           28.3%  ▁▁▁●▁▂▂▅██▆▄ beats 11/214  medium · avg 71%       4.3%  noisy · small run
+<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                           78.4%  ▄····▄·▄▄▄█● beats 7/8     easy · avg 87%         3.4%  blunt · at its level
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   32.3%  ▃··●▂▃▂▂█▅▁▂ beats 4/27    medium · avg 54%       1.5%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -63,7 +65,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 28.4
+weighted average                                   = 29.7
 </pre>
 
 <sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt))</sub>

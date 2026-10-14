@@ -6,7 +6,9 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 57.5** ±1.2 · #227 of 721 · from 13 benchmark results across 3 sources
+**score 57.7** ±1.1 · #231 of 724 · from 13 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,39 +16,39 @@ Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁   #173 of 302     60%      8
-coding       ▁▁▁▃▆█●▇▆▄▃▁   #208 of 458     71%      7
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁   #173 of 302     59%      8
+coding       ▁▁▁▃▆█●▇▆▄▃▁   #212 of 460     72%      7
 </pre>
 
-<details><summary>agent tasks · #173 of 302 · 60% of its score</summary>
+<details><summary>agent tasks · #173 of 302 · 59% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                  31.8%  ●▄·····▄▄▄▄█ beats 0/7      hard · avg 17%           21%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                  31.8%  ●▄·····▄▄▄▄█ beats 0/7      hard · avg 16%           21%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>              20.7%  ●·▄·····█▄█▄ beats 0/7      hard · avg 18%           11%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                  10.1%  ●······█▄▄█▄ beats 0/7      very hard · avg 7.1%     10%  typical
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>   19.8%  ▄···●···▄▄██ beats 1/7      very hard · avg 6.6%    7.2%  sharp
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                68.7%  ▁····▃·▂▇●▂▆ beats 19/28    medium · avg 45%        6.1%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>               48.0%  ▁▁▁·▅▄▁█●▁▁▇ beats 19/28    hard · avg 29%          4.2%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                       62.2%  ▁▁▁▁▁▃▅█●▅▄▁ beats 105/170  medium · avg 57%        1.6%  blunt · at its level · small run
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                  10.1%  ●······█▄▄█▄ beats 0/7      very hard · avg 7.0%    9.0%  sharp
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>   19.8%  ▄···●···▄▄██ beats 1/7      very hard · avg 6.5%    7.0%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                68.7%  ▁····▃·▂▇●▂▆ beats 19/28    medium · avg 45%        5.5%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>               48.0%  ▁▁▁·▅▄▁█●▁▁▇ beats 19/28    hard · avg 29%          3.9%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                       62.2%  ▁▁▁▁▁▃▅█●▅▄▁ beats 105/170  medium · avg 56%        1.6%  blunt · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                20.7%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #208 of 458 · 71% of its score</summary>
+<details><summary>coding · #212 of 460 · 72% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   31.8%  ●▄·····▄▄▄▄█ beats 0/7    hard · avg 17%           21%  sharp · at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   33.3%  ▂▁▁▃▆▃●▆█▃▄▂ beats 28/71  very hard · avg 11%      18%  sharp · at its level · small run
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   31.8%  ●▄·····▄▄▄▄█ beats 0/7    hard · avg 16%           21%  sharp · at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   33.3%  ▂▁▁▃▆▃●▆█▃▄▂ beats 28/71  very hard · avg 9.7%     18%  sharp · at its level · small run
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               20.7%  ●·▄·····█▄█▄ beats 0/7    hard · avg 18%           11%  at its level · several runs
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   38.5%  ▁▁▁▁·●▂▃▅▃█▇ beats 6/49   hard · avg 18%           10%  at its level
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    19.8%  ▄···●···▄▄██ beats 1/7    very hard · avg 6.6%    7.2%  sharp
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   38.5%  ▁▁▁▁·●▂▃▅▃█▇ beats 6/49   hard · avg 17%           10%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    19.8%  ▄···●···▄▄██ beats 1/7    very hard · avg 6.5%    7.0%  sharp
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>          18.3%  ●···▄▄█▄·▄·▄ beats 0/7    very hard · avg 13%     4.6%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 20.7%  ●··········█ beats 0/1                               —  not counted yet: no other model in the …
 </pre>
@@ -57,7 +59,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   85.0%  ▁▁●▁█▄▃▃▆▂▂▂ beats 6/49   easy · avg 78%    6.6%  typical
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   85.0%  ▁▁●▁█▄▃▃▆▂▂▂ beats 6/49   easy · avg 77%    7.5%  typical
 </pre>
 
 </details>
@@ -68,11 +70,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Qwen/Qwen3-Coder-30B-A3B-Instruct model…</a>        6   42% ▇▇▇▇▇
+<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Qwen/Qwen3-Coder-30B-A3B-Instruct model…</a>        6   41% ▇▇▇▇▇
 <a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card</a>         5   41% ▇▇▇▇▇
-<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2   16% ▇▇
+<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2   18% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.5
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: Qwen/Qwen3-Coder-30B-A3B-Instruct model card ([Apache-2.0](../../licenses/card-qwen-qwen3-coder-30b-a3b-instruct.txt)) · Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt))</sub>

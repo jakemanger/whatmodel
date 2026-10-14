@@ -6,7 +6,9 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 41.7** ±1.2 · #505 of 721 · from 7 benchmark results across 2 sources
+**score 43.4** ±1.2 · #504 of 724 · from 7 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,21 +16,21 @@ IBM · released 2024-04 · 33.72B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #352 of 458     85%      6
+coding  ▁▁▁▃●██▇▆▄▃▁   #352 of 460     85%      6
 </pre>
 
-<details><summary>coding · #352 of 458 · 85% of its score</summary>
+<details><summary>coding · #352 of 460 · 85% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 65%     23%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   34.1%  ▄▇█▃▄▇▄●▇▃·▁ beats 27/35  medium · avg 49%     16%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 56%     15%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 70%       13%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 59%     10%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     44.8%  ▃·▃██▅▃·▃▃●▃ beats 14/15  medium · avg 55%    8.3%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 61%     23%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   34.1%  ▄▇█▃▄▇▄●▇▃·▁ beats 27/35  medium · avg 45%     15%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 51%     15%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 67%       13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 56%     10%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     44.8%  ▃·▃██▅▃·▃▃●▃ beats 14/15  medium · avg 53%    8.3%  blunt · at its level
 </pre>
 
 </details>
@@ -37,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 51%     14%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 48%     15%  at its level
 </pre>
 
 </details>
@@ -49,9 +51,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   14% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   15% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.7
+weighted average                                   = 43.4
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

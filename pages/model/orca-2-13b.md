@@ -6,7 +6,9 @@
 
 Microsoft · released 2023-11 · other (microsoft-research-license)
 
-**score 32.4** ±2.4 · #626 of 721 · from 5 benchmark results across 2 sources
+**score 34.8** ±2.8 · #623 of 724 · from 5 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,11 +22,11 @@ Microsoft · released 2023-11 · other (microsoft-research-license)
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 15/28    medium · avg 58%        72%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2023-12-21%2023%3A45%3A21.730094.json">TriviaQA</a>                              9.8%  ▁··▁●▃▃▁▄▅▄█ beats 6/28     easy · avg 79%          10%  at its level · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.5%  ▁▁▂▃▄▄█▆●▂▂▁ beats 114/140  very easy · avg 94%    6.5%  blunt · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-03-12%2017%3A15%3A42.019083.json">HaluEval QA hallucination detecti…</a>   66.2%  █▁▁·▁▁·▁▁▁▁● beats 26/27    medium · avg 70%       4.5%  sharp · too hard for it · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2023-12-11%2010%3A45%3A23.033484.json">TruthfulQA MC2</a>                       55.8%  ▅▃█▆▁▂●···▁▁ beats 27/31    medium · avg 64%       4.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 15/28    medium · avg 48%        70%  typical
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.5%  ▁▁▂▃▄▄█▆●▂▂▁ beats 114/140  very easy · avg 94%     10%  blunt · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2023-12-21%2023%3A45%3A21.730094.json">TriviaQA</a>                              9.8%  ▁··▁●▃▃▁▄▅▄█ beats 6/28     easy · avg 71%         8.4%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-03-12%2017%3A15%3A42.019083.json">HaluEval QA hallucination detecti…</a>   66.2%  █▁▁·▁▁·▁▁▁▁● beats 26/27    hard · avg 66%         5.4%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2023-12-11%2010%3A45%3A23.033484.json">TruthfulQA MC2</a>                       55.8%  ▅▃█▆▁▂●···▁▁ beats 27/31    medium · avg 57%       2.4%  blunt · at its level
 </pre>
 
 </details>
@@ -35,10 +37,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                              results  share of the score
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Hallucinations Leaderboard results</a>        4   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>         1    6% ▇
-prior: pull toward the middle                  3% ▇
-weighted average                             = 32.4
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Hallucinations Leaderboard results</a>        4   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>         1   10% ▇
+prior: pull toward the middle                  4% ▇
+weighted average                             = 34.8
 </pre>
 
 <sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

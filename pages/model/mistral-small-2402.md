@@ -6,7 +6,9 @@
 
 Mistral · released 2024-02 · proprietary
 
-**score 44.8** ±1.3 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 46.4** ±1.3 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Mistral · released 2024-02 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂●█▆▅▄▄▃▃▁   #308 of 342*    3.5%      1
+agent tasks  ▁▁▂●█▆▅▄▄▃▃▁   #308 of 342*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #308 of 342 · 3.5% of its score</summary>
+<details><summary>agent tasks · #308 of 342 · 3.6% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   46.3%  ▁▁▁▁▁▃●█▅▄▁▁ beats 26/114  medium · avg 52%    3.5%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   46.3%  ▁▁▁▁▁▃●█▅▄▁▁ beats 26/114  medium · avg 51%    3.6%  blunt · at its level
 </pre>
 
 </details>
@@ -32,9 +34,9 @@ test     result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>      32.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 33/61  medium · avg 41%     59%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   39.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 25/58  medium · avg 51%     19%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   31.8%  ▃▂·▆●██▆▅▃▃▃ beats 8/33   medium · avg 41%     18%  at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>      32.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 33/61  medium · avg 38%     60%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   39.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 25/58  medium · avg 48%     18%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   31.8%  ▃▂·▆●██▆▅▃▃▃ beats 8/33   medium · avg 39%     18%  at its level
 </pre>
 
 </details>
@@ -45,11 +47,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   59% ▇▇▇▇▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2   37% ▇▇▇▇
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    3% ▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   60% ▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2   36% ▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.8
+weighted average                                   = 46.4
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

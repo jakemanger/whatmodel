@@ -6,7 +6,9 @@
 
 MosaicML · released 2023-05 · 6.7B params · apache-2.0
 
-**score 29.6** ±0.7 · comparison only: no current run option verified · from 30 benchmark results across 5 sources
+**score 30.2** ±0.7 · comparison only: no current run option verified · from 34 benchmark results across 6 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -16,24 +18,25 @@ MosaicML · released 2023-05 · 6.7B params · apache-2.0
 
 </pre>
 
-<details><summary>other tests (14)</summary>
+<details><summary>other tests (15)</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">ARC Challenge</a>                        41.9%  ▁·▁··▁▁▇▂●▆▃ beats 16/26  easy · avg 85%          36%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">WinoGrande</a>                           68.0%  ▁····▁··▁▂●▄ beats 19/26  easy · avg 89%          14%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">BoolQ</a>                                73.9%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 19/26  easy · avg 91%          10%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">HellaSwag</a>                            76.2%  ▃···▁▇▅█●▃▁▁ beats 20/26  very easy · avg 92%    7.7%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">ARC Easy</a>                             70.0%  ▁▁·▁▁▄▅▄●▅▁▃ beats 19/26  easy · avg 88%         7.6%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">OpenBookQA</a>                           31.4%  █·▁▁▃·▁▃▅●▃▄ beats 18/26  easy · avg 84%         7.0%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">SciQ</a>                                 93.7%  ▁·▁·▁·▃▅▃●▄▁ beats 18/26  very easy · avg 98%    4.6%  several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">PIQA</a>                                 78.9%  ▁·▁··▁▁▃█▅●▂ beats 21/26  easy · avg 88%         4.6%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">Social IQA</a>                           45.1%  ▁···▁▃█▁●▁·▁ beats 23/26  medium · avg 63%       2.7%  blunt · several runs
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.5%  ●····▃▅·██·█ beats 1/13   medium · avg 60%       2.2%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   30.4%  ▃▅▃··●▃·█▃▃▅ beats 4/13   easy · avg 67%         1.9%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▁··▂▁▁▁▂●█▅▃ beats 12/26  very easy · avg 89%    1.3%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">TruthfulQA MC2</a>                       33.5%  ●·█·█▄···▄·█ beats 1/9    medium · avg 61%       0.3%  blunt · at its level
-<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 65.6%  ▅·▃·●··█▃··▃ beats 3/8    easy · avg 92%         0.2%  at its level · noisy
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">ARC Challenge</a>                        41.9%  ▁·▁··▁▁▇▂●▆▃ beats 16/26  easy · avg 82%          39%  sharp · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">WinoGrande</a>                           68.0%  ▁····▁··▁▂●▄ beats 19/26  easy · avg 87%          12%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">HellaSwag</a>                            76.2%  ▃···▁▇▅█●▃▁▁ beats 20/26  very easy · avg 91%     10%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">BoolQ</a>                                73.9%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 19/26  easy · avg 88%         7.8%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">OpenBookQA</a>                           31.4%  █·▁▁▃·▁▃▅●▃▄ beats 18/26  easy · avg 81%         6.2%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">ARC Easy</a>                             70.0%  ▁▁·▁▁▄▅▄●▅▁▃ beats 19/26  easy · avg 85%         5.8%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">MMLU</a>                                 38.3%  ▄···●▄·█···▄ beats 1/5    easy · avg 79%         4.6%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">PIQA</a>                                 78.9%  ▁·▁··▁▁▃█▅●▂ beats 21/26  easy · avg 87%         4.0%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">SciQ</a>                                 93.7%  ▁·▁·▁·▃▅▃●▄▁ beats 18/26  very easy · avg 97%    3.8%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">Social IQA</a>                           45.1%  ▁···▁▃█▁●▁·▁ beats 23/26  medium · avg 60%       2.3%  blunt · several runs
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.5%  ●····▃▅·██·█ beats 1/13   medium · avg 52%       2.0%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   30.4%  ▃▅▃··●▃·█▃▃▅ beats 4/13   medium · avg 61%       1.4%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▁··▂▁▁▁▂●█▅▃ beats 12/26  very easy · avg 86%    1.2%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">TruthfulQA MC2</a>                       33.5%  ●·█·█▄···▄·█ beats 1/9    medium · avg 56%       0.3%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 65.6%  ▅·▃·●··█▃··▃ beats 3/8    easy · avg 92%         0.3%  at its level · noisy
 </pre>
 
 </details>
@@ -44,16 +47,17 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">Stability AI</a>                                   11   51% ▇▇▇▇▇▇
-<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   24% ▇▇▇
-<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   20% ▇▇
-<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    4% ▇
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">Stability AI</a>                                   11   46% ▇▇▇▇▇▇
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   21% ▇▇▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   17% ▇▇
+<a name="acl-2023-emnlp-main-183"></a><a href="https://aclanthology.org/2023.emnlp-main.183.pdf">Enhancing Chat Language Models by Scali…</a>        4   12% ▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    3% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 29.6
+weighted average                                   = 30.2
 </pre>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Enhancing Chat Language Models by Scaling High-quality Instructional Conversations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-183-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

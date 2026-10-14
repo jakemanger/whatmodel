@@ -6,24 +6,42 @@
 
 Google · released 2019-10 · 0.061B params · apache-2.0
 
-**score 42.8** ±8.8 · #485 of 721 · from 3 benchmark results across 1 source
+**score 11.8** ±2.9 · #708 of 724 · from 8 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks T5 Small among every model on that task or test, worst to best.</sub>
 
 <pre>
-
+task  vs the others          rank  counts  tests
+math  ▁●▃▅█▆▄█▄▁▁▁   #411 of 424*     12%      1
 </pre>
 
-<details><summary>other tests (4)</summary>
+<details><summary>math · #411 of 424 · 12% of its score</summary>
+
+Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.0%  ▅·▂●·······▂ beats 6/9    medium · avg 62%     12%  sharp · too hard for it · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   40.1%  ▃···▃▃·▃·▃·● beats 5/7    hard · avg 44%          62%  blunt
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>    6.5%  ●···█···██·▄ beats 0/7    very hard · avg 11%    2.1%  blunt · too hard for it
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   53.2%  █·······▁··● beats 7/7    very hard · avg 51%    1.5%  blunt · too hard for it · noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   12.6%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%          —  failed run: Failed run: average 12.63 v…
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   40.1%  ▃···▃▃·▃·▃·● beats 5/7    easy · avg 81%          41%  typical
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        19.3%  ●····▁·····▁ beats 5/9    easy · avg 75%          19%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 1.3%  █·●▂▄▂▂····▂ beats 4/12   easy · avg 70%          15%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           46.0%  ●········▁▃▁ beats 3/9    hard · avg 62%         5.0%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>    6.5%  ●···█···██·▄ beats 0/7    hard · avg 22%         3.7%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   53.2%  █·······▁··● beats 7/7    very hard · avg 52%    0.2%  blunt · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             24.8%  █·····▁·●··▁ beats 8/9    medium · avg 53%       0.1%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   12.6%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 72%          —  failed run: Failed run: average 12.63 v…
 </pre>
 
 </details>
@@ -33,13 +51,14 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                3   65% ▇▇▇▇▇▇▇▇
-prior: pull toward the middle            35% ▇▇▇▇
-weighted average                        = 42.8
+source                                    results  share of the score
+<a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        5   51% ▇▇▇▇▇▇
+<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3   45% ▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 11.8
 </pre>
 
-<sub>Licences: COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
 
 <details><summary>Not counted (1)</summary>
 

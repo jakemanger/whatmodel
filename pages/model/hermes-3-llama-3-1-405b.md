@@ -6,7 +6,9 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 51.3** ±1.2 · #324 of 721 · from 14 benchmark results across 2 sources
+**score 53.6** ±1.2 · #304 of 724 · from 14 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,26 +16,26 @@ Nous Research · released 2024-08 · 405.85B params · llama3
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #222 of 458*     24%      1
-chat &amp; writing  █········█·●       #1 of 3*    2.2%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #222 of 460*     27%      1
+chat &amp; writing  █········█·●       #1 of 3*    2.4%      1
 </pre>
 
-<details><summary>coding · #222 of 458 · 24% of its score</summary>
+<details><summary>coding · #222 of 460 · 27% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   63.9%  ▁·▁▂▄▁▆▄●▆▂▂ beats 32/62  medium · avg 54%     24%  at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   63.9%  ▁·▁▂▄▁▆▄●▆▂▂ beats 32/62  medium · avg 50%     27%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #1 of 3 · 2.2% of its score</summary>
+<details><summary>chat &amp; writing · #1 of 3 · 2.4% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▁▃▁▂▄▄●█▃▂▁ beats 72/141  easy · avg 79%    2.2%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▁▃▁▂▄▄●█▃▂▁ beats 72/141  easy · avg 77%    2.4%  small run
 </pre>
 
 </details>
@@ -41,19 +43,19 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (12)</summary>
 
 <pre>
-test                             result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▄▃ beats 48/104   hard · avg 41%          12%  sharp · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>              75.4%  ▁▁▁▁▂▄▅▅█●▄▁ beats 103/129  medium · avg 72%        12%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               69.5%  ▆▁▁▂▂▅▇█●▃▃▂ beats 80/97    medium · avg 73%        10%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        85.0%  ▁▁▁▁▁▂▃▅█▃●▃ beats 155/183  easy · avg 80%         7.0%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 52%       6.8%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  86.3%  ▁···▂▁▁▅█▇▃● beats 87/87    easy · avg 86%         6.3%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  48.8%  █▁▁▁▄▃▃●▂▁▄▂ beats 45/65    medium · avg 55%       5.9%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                       88.9%  ▁▄▅▆▂▆▄▄█▃▄● beats 58/58    easy · avg 90%         4.8%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   90.2%  ▁▁▁▁▂▂▃▇█▆▅● beats 85/85    very easy · avg 89%    4.3%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 53%       2.3%  blunt · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                        86.0%  ▁▁▁▃▃▄▇█▄▃●▁ beats 81/83    easy · avg 86%         1.8%  blunt · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>              65.6%  █▅▇▅▁▄▁▇●▄▁▁ beats 58/73    medium · avg 64%       1.0%  blunt · at its level · small run
+test                             result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▄▃ beats 48/104   hard · avg 38%       13%  sharp · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>              75.4%  ▁▁▁▁▂▄▅▆█●▃▁ beats 129/155  medium · avg 67%     12%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 67%    8.7%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        85.0%  ▁▁▁▁▁▂▂▅██●▄ beats 186/214  easy · avg 77%      8.3%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 47%    7.3%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 83%      5.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 49%      5.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 87%      3.6%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.5%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 51%    2.2%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                        86.0%  ▁▁▁▂▂▃▅█▅▃●▁ beats 121/123  easy · avg 85%      1.4%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>              65.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 64/79    medium · avg 59%    0.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -64,10 +66,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   75% ▇▇▇▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   24% ▇▇▇
+<a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   72% ▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   27% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 51.3
+weighted average                                   = 53.6
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

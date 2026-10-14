@@ -6,7 +6,9 @@
 
 NVIDIA · released 2024-10 · 8.41B params · nvidia-open-model-license
 
-**score 50.2** ±8.3 · #438 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.9** ±7.8 · #445 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ NVIDIA · released 2024-10 · 8.41B params · nvidia-open-model-license
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.1%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 86/146  easy · avg 83%     69%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.1%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 86/146  easy · avg 82%     73%  noisy
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1   69% ▇▇▇▇▇▇▇▇
-prior: pull toward the middle            31% ▇▇▇▇
-weighted average                        = 50.2
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1   73% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            27% ▇▇▇
+weighted average                        = 50.9
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

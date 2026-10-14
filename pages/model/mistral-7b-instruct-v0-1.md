@@ -6,7 +6,9 @@
 
 Mistral · released 2023-09 · 7.24B params · apache-2.0
 
-**score 32.0** ±1.0 · #628 of 721 · from 12 benchmark results across 8 sources
+**score 34.1** ±1.0 · #629 of 724 · from 13 benchmark results across 9 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,46 +16,47 @@ Mistral · released 2023-09 · 7.24B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #420 of 458*     36%      1
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #376 of 393*     17%      2
+coding          ▁▁▁●▆██▇▆▄▃▁   #420 of 460*     36%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #378 of 395*     19%      2
 </pre>
 
-<details><summary>coding · #420 of 458 · 36% of its score</summary>
+<details><summary>coding · #420 of 460 · 36% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   28.7%  ▁●▄▅▇█·▄▇▅▄▄ beats 3/42   easy · avg 78%     36%  sharp · at its level
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   28.7%  ▁●▄▅▇█·▄▇▅▄▄ beats 3/42   easy · avg 74%     36%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #376 of 393 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #378 of 395 · 19% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1008.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 16/95   avg 1201      8.7%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1110.3  ▁▁▁●▃▃▃▆▆▇█▃ beats 17/379  avg 1268      8.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1110.3  ▁▁▁●▃▃▃▆▆▇█▃ beats 17/379  avg 1258       10%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1008.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 16/95   avg 1186      9.1%  typical
 </pre>
 
 </details>
 
-<details><summary>other tests (9)</summary>
+<details><summary>other tests (10)</summary>
 
 <pre>
-test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    17.6%  ▂●▃▄▄█▁▄▅▃▁▃ beats 2/42    medium · avg 55%     17%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 14/28   medium · avg 58%     12%  typical
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                             24.2%  ●▂▅█▃·█▃▅··▂ beats 0/23    medium · avg 57%    9.0%  typical
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.5%  ▂●▂▃█▄▃▆▃▅▂▂ beats 8/81    medium · avg 58%    3.5%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-25%2022%3A42%3A33.912317.json">TriviaQA</a>                             52.2%  ▁··▁█▃▃▁▄▅●█ beats 20/28   easy · avg 79%      1.5%  at its level · noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   59.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 88/276  medium · avg 73%    1.5%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   69.0%  ▁▁▁▁▁▁▁▂●█▄▃ beats 37/146  easy · avg 83%      1.3%  at its level · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2023-12-24%2022%3A43%3A28.675599.json">TruthfulQA MC2</a>                       55.9%  ▅▃█▆▁▂●···▁▁ beats 28/31   medium · avg 64%    0.7%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2023-12-26%2009%3A44%3A31.720031.json">HaluEval QA hallucination detecti…</a>   49.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 4/27    medium · avg 70%    0.7%  sharp · too hard for it · noisy
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    17.6%  ▂●▃▄▄█▁▄▅▃▁▃ beats 2/42    medium · avg 52%        18%  typical
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                             24.2%  ●▂▅█▃·█▃▅··▂ beats 0/23    medium · avg 54%        10%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 14/28   medium · avg 48%       8.0%  typical
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.5%  ▂●▂▃█▄▃▆▃▅▂▂ beats 8/81    medium · avg 56%       4.2%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   59.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 88/276  medium · avg 72%       1.8%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   69.0%  ▁▁▁▁▁▁▁▂●█▄▃ beats 37/146  easy · avg 82%         1.6%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-25%2022%3A42%3A33.912317.json">TriviaQA</a>                             52.2%  ▁··▁█▃▃▁▄▅●█ beats 20/28   easy · avg 71%         1.0%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2023-12-26%2009%3A44%3A31.720031.json">HaluEval QA hallucination detecti…</a>   49.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 4/27    hard · avg 66%         0.6%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2023-12-24%2022%3A43%3A28.675599.json">TruthfulQA MC2</a>                       55.9%  ▅▃█▆▁▂●···▁▁ beats 28/31   medium · avg 57%       0.3%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   27.6%  ●·····▂····▁ beats 5/11    very hard · avg 55%    0.2%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -64,19 +67,20 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   52% ▇▇▇▇▇▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Hallucinations Leaderboard results</a>              4   14% ▇▇
-<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1    9% ▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   53% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   10% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Hallucinations Leaderboard results</a>              4   10% ▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   10% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    9% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
-<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
+<a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 32.0
+weighted average                                   = 34.1
 </pre>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

@@ -6,7 +6,9 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 28.5** ±2.6 · #876 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.2** ±2.7 · #862 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -23,8 +25,8 @@ Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Ge
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        5.7%  ▁▂●▃▆▆█▆▄▄▁▁ beats 12/122  medium · avg 39%        59%  too hard for it
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   48.8%  ▂▂·●·▇▃▆█▆▄▂ beats 8/45    very easy · avg 96%     38%  sharp · at its level · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        5.7%  ▁▂●▃▆▆█▆▄▄▁▁ beats 12/122  hard · avg 35%          75%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   48.8%  ▂▂·●·▇▃▆█▆▄▂ beats 8/45    very easy · avg 94%     21%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -33,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    0.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%       —  failed run: All nine published task sco…
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    0.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 72%       —  failed run: All nine published task sco…
 </pre>
 
 </details>
@@ -46,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   3% ▇
-weighted average                              = 28.5
+weighted average                              = 31.2
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

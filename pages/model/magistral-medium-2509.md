@@ -6,7 +6,9 @@
 
 Mistral · released 2025-09 · proprietary
 
-**score 62.5** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.3** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,29 +16,29 @@ Mistral · released 2025-09 · proprietary
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▃█······●·▃▃       #3 of 7*     13%      1
-math    ▁▂▃▅▇▅▅●▄▁▁▁   #154 of 462*     53%      2
+coding  ▃█······●·▃▃       #3 of 7*     12%      1
+math    ▁▂▃▆█▇●▇▃▁▁▁   #160 of 523*     53%      2
 </pre>
 
-<details><summary>coding · #3 of 7 · 13% of its score</summary>
+<details><summary>coding · #3 of 7 · 12% of its score</summary>
 
 Trails [Magistral Small 1.2](magistral-small-2509.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   75.0%  ▄█▄······▄·● beats 5/5    medium · avg 50%     13%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   75.0%  ▄█▄······▄·● beats 5/5    medium · avg 50%     12%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #154 of 462 · 53% of its score</summary>
+<details><summary>math · #160 of 523 · 53% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 49%     31%  sharp
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 60%     23%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 47%     32%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 60%     21%  sharp
 </pre>
 
 </details>
@@ -45,7 +47,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 53%     32%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 52%     34%  sharp
 </pre>
 
 </details>
@@ -58,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.5
+weighted average                                   = 62.3
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>

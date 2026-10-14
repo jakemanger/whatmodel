@@ -6,7 +6,9 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 33.2** ±2.3 · #828 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.1** ±2.4 · #827 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #433 of 466*     98%      2
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #433 of 466*     97%      2
 </pre>
 
-<details><summary>chat &amp; writing · #433 of 466 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #433 of 466 · 97% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.7%  ▁▂▂●▆▆█▆▄▄▁▁ beats 17/122  medium · avg 39%        72%  typical
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   78.5%  ▂▂·▆·▇●▆█▆▄▂ beats 18/45   very easy · avg 96%     25%  sharp · at its level · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.7%  ▁▂▂●▆▆█▆▄▄▁▁ beats 17/122  hard · avg 35%          83%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   78.5%  ▂▂·▆·▇●▆█▆▄▂ beats 18/45   very easy · avg 94%     14%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -33,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    0.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%       —  failed run: All nine published task sco…
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    0.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 72%       —  failed run: All nine published task sco…
 </pre>
 
 </details>
@@ -44,9 +46,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   2% ▇
-weighted average                              = 33.2
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   3% ▇
+weighted average                              = 35.1
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

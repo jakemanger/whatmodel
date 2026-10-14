@@ -6,7 +6,9 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 18.7** ±2.7 · #695 of 721 · from 6 benchmark results across 2 sources
+**score 21.9** ±2.6 · #689 of 724 · from 6 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,26 +16,26 @@ Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #342 of 393*    9.5%      1
-math            ●··········█       #2 of 2*     30%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #342 of 395*    9.2%      1
+math            ●··········█       #2 of 2*     37%      1
 </pre>
 
-<details><summary>chat &amp; writing · #342 of 393 · 9.5% of its score</summary>
+<details><summary>chat &amp; writing · #342 of 395 · 9.2% of its score</summary>
 
-Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified) …</a>   41.0%  ▁●▃▁▂▄▄▆█▃▂▁ beats 2/141  easy · avg 77%    9.5%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified) …</a>   41.0%  ▁●▃▁▂▄▄▆█▃▂▁ beats 2/141  easy · avg 75%    9.2%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #2 of 2 · 30% of its score</summary>
+<details><summary>math · #2 of 2 · 37% of its score</summary>
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>    7.4%  ●▂▂▅▅▆▅▇█▇▄▃ beats 0/146  easy · avg 83%     30%  sharp · small run
+test         result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>    7.4%  ▂▂▂●▃▄▅▇██▆▄ beats 29/200  easy · avg 83%     37%  sharp · small run
 </pre>
 
 </details>
@@ -41,11 +43,11 @@ test         result  vs the others in its run  difficulty      counts  why
 <details><summary>other tests (4)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (lab)</a>                 27.3%  ▁▁●▁▂▄▅▅█▃▄▁ beats 2/129  medium · avg 69%     33%  sharp · too hard for it · small run
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                      52.1%  ▁▁▁▁▂●▃▇█▆▅▃ beats 13/85  easy · avg 87%       15%  at its level · small run
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                           70.8%  ▁▁▁▃●▄▇█▄▃▁▁ beats 15/83  easy · avg 86%      6.8%  blunt · at its level · small run
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.9%  ●·▁▁▂▁▂▅█▇▄▁ beats 6/100  medium · avg 68%    2.3%  too hard for it · noisy
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (lab)</a>                 27.3%  ▁▁●▁▂▄▅▆█▃▃▁ beats 4/155   medium · avg 62%     31%  sharp · too hard for it · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                      52.1%  ▁▁▁▂▂●▄▆█▇▄▂ beats 25/135  easy · avg 83%       12%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                           70.8%  ▁▁▁▂●▃▅█▅▃▁▁ beats 23/123  easy · avg 85%      5.1%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.9%  ●·▁▁▂▁▂▅█▇▄▁ beats 6/100   medium · avg 66%    2.6%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -57,9 +59,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card3-huggingfacetb-smollm2-360m-instruct"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HuggingFaceTB/SmolLM2-360M-Instruct mod…</a>        5   94% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    3% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 18.7
+weighted average                                   = 21.9
 </pre>
 
 <sub>Licences: HuggingFaceTB/SmolLM2-360M-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

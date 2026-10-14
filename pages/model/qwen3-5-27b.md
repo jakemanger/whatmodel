@@ -6,7 +6,9 @@
 
 Alibaba · released 2026-02 · 27.8B params · apache-2.0
 
-**score 68.3** ±0.4 · #104 of 721 · from 139 benchmark results across 14 sources
+**score 67.9** ±0.4 · #104 of 724 · from 139 benchmark results across 14 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,88 +17,88 @@ Alibaba · released 2026-02 · 27.8B params · apache-2.0
 <pre>
 task                vs the others          rank  counts  tests
 agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #87 of 302     25%     18
-coding              ▁▁▁▃▆██▇●▄▃▁    #100 of 458     19%      7
-chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #100 of 393*    1.9%      2
-math                ▁▂▃▅▆▅▄●▄▁▁▁     #94 of 398     17%     12
+coding              ▁▁▁▃▆██▇●▄▃▁    #100 of 460     20%      7
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #100 of 395*    2.1%      2
+math                ▁▁▃▅█▆▄●▄▁▁▁     #96 of 424     17%     12
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #58 of 147     10%     21
-web search          ▂▁▂●▄█▃▃▁▁·▁      #62 of 80    3.5%      5
+web search          ▂▁▂●▄█▃▃▁▁·▁      #62 of 80    3.4%      5
 </pre>
 
 <details><summary>agent tasks · #87 of 302 · 25% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   68.6%  ▄▄·····▄▄▄▄● beats 6/7      hard · avg 17%          7.2%  sharp · at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.7%  ▄·▄·····█▄●▄ beats 6/7      hard · avg 18%          2.5%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   41.6%  ▄······█▄▄█● beats 7/7      very hard · avg 7.1%    2.0%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">τ²-bench aggregate (lab)</a>             79.0%  ▁▁▁·▂▂▄▃▃●█▂ beats 20/37    medium · avg 37%        1.7%  several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    42.1%  ▄···▄···▄▄█● beats 6/7      very hard · avg 6.6%    1.6%  sharp · at its level
-<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   64.6%  ▆··▆▄▂▄▂▆▆●▄ beats 18/23    very hard · avg 14%     1.4%  sharp · at its level
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwen-re…</a>   51.2%  ▄······▄●·▄▄ beats 3/5      hard · avg 18%          1.3%  at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Terminal-Bench 2.0 (lab)</a>             41.6%  ▂▂▅▅█●██▆▂▃▃ beats 15/36    very hard · avg 11%     1.1%  at its level · small run
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   68.6%  ▄▄·····▄▄▄▄● beats 6/7      hard · avg 16%          7.7%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.7%  ▄·▄·····█▄●▄ beats 6/7      hard · avg 18%          2.6%  at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   41.6%  ▄······█▄▄█● beats 7/7      very hard · avg 7.0%    2.0%  sharp · at its level
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">τ²-bench aggregate (lab)</a>             79.0%  ▁▁▁·▂▂▄▃▃●█▂ beats 20/37    medium · avg 37%        1.6%  several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    42.1%  ▄···▄···▄▄█● beats 6/7      very hard · avg 6.5%    1.6%  sharp · at its level
+<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   64.6%  ▆··▆▄▂▄▂▆▆●▄ beats 18/23    very hard · avg 13%     1.4%  sharp · at its level
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwen-re…</a>   51.2%  ▄······▄●·▄▄ beats 3/5      hard · avg 19%          1.2%  at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Terminal-Bench 2.0 (lab)</a>             41.6%  ▂▂▅▅█●██▆▂▃▃ beats 15/36    very hard · avg 11%     1.0%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">WideSearch (lab)</a>                     61.1%  █·▂●··▂···▂▂ beats 5/10     hard · avg 33%          0.9%  at its level · small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp-ZH (lab)</a>                  62.1%  ▁▁▁▁▁▃·▁▄▅●█ beats 16/23    hard · avg 23%          0.9%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OSWorld-Verified (lab)</a>               56.2%  █▄·▂●▂▄▂▆▄▆█ beats 7/25     hard · avg 21%          0.8%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp-ZH (lab)</a>                  62.1%  ▁▁▁▁▁▃·▁▄▅●█ beats 16/23    hard · avg 25%          0.8%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OSWorld-Verified (lab)</a>               56.2%  █▄·▂●▂▄▂▆▄▆█ beats 7/25     hard · avg 22%          0.8%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp (lab)</a>                     61.0%  ▂·▄▁▂▃▆▄●▂▃▄ beats 25/42    hard · avg 24%          0.7%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (lab)</a>         68.4%  ▂·▁▂▁·▁▃█●▆▂ beats 22/37    hard · avg 29%          0.7%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCPMark (lab)</a>                        36.3%  ▃·····█··▃●▃ beats 6/8      very hard · avg 10%     0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (lab)</a>         68.4%  ▂·▁▂▁·▁▃█●▆▂ beats 22/37    hard · avg 30%          0.7%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">Toolathlon (Tool Decathlon) (lab)</a>    31.5%  ▂▂▄▂●▄▆▂█▆██ beats 5/27     very hard · avg 11%     0.6%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Humanity's Last Exam with tools (…</a>   48.5%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 29/54    hard · avg 18%          0.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BFCL V4 (December 2025 archive) (…</a>   68.5%  ▁▁▁▂▇▆▆▆█▂●▂ beats 103/111  medium · avg 41%        0.4%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">τ³-bench (lab)</a>                       68.4%  ▁▁▂▁·▁▁·▁▁▂● beats 16/25    medium · avg 39%        0.4%  blunt · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCPMark (lab)</a>                        36.3%  ▃·····█··▃●▃ beats 6/8      very hard · avg 11%     0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Humanity's Last Exam with tools (…</a>   48.5%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 29/54    hard · avg 18%          0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BFCL V4 (December 2025 archive) (…</a>   68.5%  ▁▁▁▂▇▆▆▆█▂●▂ beats 103/111  medium · avg 40%        0.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">τ³-bench (lab)</a>                       68.4%  ▁▁▂▁·▁▁·▁▁▂● beats 16/25    medium · avg 39%        0.4%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #100 of 458 · 19% of its score</summary>
+<details><summary>coding · #100 of 460 · 20% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   68.6%  ▄▄·····▄▄▄▄● beats 6/7     hard · avg 17%          7.2%  sharp · at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   80.7%  ▁▁▃▁█▅▄▇▅▅●█ beats 32/38   medium · avg 47%        3.0%  several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1357.3  ▁▂▄▃●█▄▇▆▄▁▁ beats 31/119  avg 983                 2.8%  sharp
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.7%  ▄·▄·····█▄●▄ beats 6/7     hard · avg 18%          2.5%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    42.1%  ▄···▄···▄▄█● beats 6/7     very hard · avg 6.6%    1.6%  sharp · at its level
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwen-re…</a>   51.2%  ▄······▄●·▄▄ beats 3/5     hard · avg 18%          1.3%  at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   68.6%  ▄▄·····▄▄▄▄● beats 6/7     hard · avg 16%          7.7%  sharp · at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   80.7%  ▁▁▃▁█▅▄▇▅▅●█ beats 32/38   medium · avg 48%        3.0%  several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1357.3  ▁▂▄▃●█▄▇▆▄▁▁ beats 31/119  avg 969                 3.0%  sharp
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.7%  ▄·▄·····█▄●▄ beats 6/7     hard · avg 18%          2.6%  at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    42.1%  ▄···▄···▄▄█● beats 6/7     very hard · avg 6.5%    1.6%  sharp · at its level
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwen-re…</a>   51.2%  ▄······▄●·▄▄ beats 3/5     hard · avg 19%          1.2%  at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>          25.6%  ▄···●▄█▄·▄·▄ beats 1/7     very hard · avg 13%     0.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #100 of 393 · 1.9% of its score</summary>
+<details><summary>chat &amp; writing · #100 of 395 · 2.1% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1408.7  ▁▁▁▂▃▃▃▆▆●█▃ beats 253/379  avg 1268          1.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1408.7  ▁▁▁▂▃▃▃▆▆●█▃ beats 253/379  avg 1258          1.7%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">IFEval (aggregation unspecified) …</a>   95.0%  ▁▁▃▁▂▄▄▆█▃▂● beats 139/141  easy · avg 81%    0.4%  maxed out · small run
 </pre>
 
 </details>
 
-<details><summary>math · #94 of 398 · 17% of its score</summary>
+<details><summary>math · #96 of 424 · 17% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">HMMT February 2026 (lab)</a>             84.3%  ▃▃▂▃·██▆●▅▃▅ beats 25/33  medium · avg 36%        3.3%  sharp · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">HMMT February 2026 (lab)</a>             84.3%  ▃▃▂▃·██▆●▅▃▅ beats 25/33  medium · avg 36%        3.2%  sharp · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">AIME 2026 (lab)</a>                      92.6%  ▁▁▁▂▁▂▆●▆▂·▁ beats 32/49  medium · avg 58%        2.9%  sharp · maxed out · small run · several…
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">IMO-AnswerBench (lab)</a>                79.9%  ▁▁·▁▁▁▄▅●▄▂▃ beats 22/42  medium · avg 36%        2.2%  small run · several runs
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   31.3%  ▁▁▁▁●▇▄▃▁▃·▃ beats 6/24   very hard · avg 9.1%    1.9%  at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   53.3%  ▂··▄▂▄●▆▆▄▄█ beats 7/23   hard · avg 23%          1.4%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MATH-Vision (lab)</a>                    86.0%  ▁▁·▁··▄▁▃▇▇● beats 21/24  medium · avg 54%        1.3%  small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">HMMT February 2025 (lab)</a>             92.0%  ▁▁▁▃▁▅▅▃●█▁▄ beats 21/31  medium · avg 61%        1.0%  small run
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   41.2%  ▃·▃▃●▁·▄·▁▁▁ beats 8/18   hard · avg 19%          0.9%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">IMO-AnswerBench (lab)</a>                79.9%  ▁▁·▁▁▁▄▅●▄▂▃ beats 22/42  medium · avg 37%        2.2%  small run · several runs
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   31.3%  ▁▁▁▁●▇▄▃▁▃·▃ beats 6/24   very hard · avg 9.0%    1.9%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   53.3%  ▂··▄▂▄●▆▆▄▄█ beats 7/23   hard · avg 22%          1.5%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MATH-Vision (lab)</a>                    86.0%  ▁▁·▁··▄▁▃▇▇● beats 21/24  medium · avg 55%        1.2%  small run · several runs
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   41.2%  ▃·▃▃●▁·▄·▁▁▁ beats 8/18   hard · avg 19%          1.0%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">HMMT February 2025 (lab)</a>             92.0%  ▁▁▁▃▁▅▅▃●█▁▄ beats 21/31  medium · avg 62%        0.9%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MathVista (testmini) (lab)</a>           87.8%  ▁··▁▄▄▇█▅▆█● beats 46/47  medium · avg 64%        0.6%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">HMMT November 2025 (lab)</a>             89.8%  ▁▁····▁▅▃●▇▁ beats 13/23  easy · avg 68%          0.6%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">PolyMATH (lab)</a>                       71.2%  ▁···▃▁·▇█▄▄● beats 22/23  hard · avg 34%          0.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">DynaMath (lab)</a>                       87.7%  ▂·····▂··█▄● beats 10/10  medium · avg 65%        0.5%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">PolyMATH (lab)</a>                       71.2%  ▁···▃▁·▇█▄▄● beats 22/23  hard · avg 35%          0.5%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">DynaMath (lab)</a>                       87.7%  ▂·····▂··█▄● beats 10/10  easy · avg 65%          0.5%  small run
 </pre>
 
 </details>
@@ -107,42 +109,42 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MATH-Vision (lab)</a>                    86.0%  ▁▁·▁··▄▁▃▇▇● beats 21/24   medium · avg 54%       1.3%  small run · several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1216.4  ▁▁▂▂▂▂▄▅▅●██ beats 83/145  avg 1068               1.1%  blunt
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OmniDocBench 1.5 overall (higher …</a>   88.9%  ▂··▂▂▂··▂▂●▅ beats 6/13    easy · avg 70%         1.0%  small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">CharXiv (reasoning questions) (la…</a>   79.5%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 75/100  medium · avg 43%       0.7%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MATH-Vision (lab)</a>                    86.0%  ▁▁·▁··▄▁▃▇▇● beats 21/24   medium · avg 55%       1.2%  small run · several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1216.4  ▁▁▂▂▂▂▄▅▅●██ beats 83/145  avg 1058               1.2%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OmniDocBench 1.5 overall (higher …</a>   88.9%  ▂··▂▂▂··▂▂●▅ beats 6/13    easy · avg 71%         0.9%  small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">CharXiv (reasoning questions) (la…</a>   79.5%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 75/100  medium · avg 42%       0.7%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MathVista (testmini) (lab)</a>           87.8%  ▁··▁▄▄▇█▅▆█● beats 46/47   medium · avg 64%       0.6%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMMU (val) (lab)</a>                     82.3%  ▁····▁▁▄█▇▆● beats 49/52   medium · avg 58%       0.6%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMMU (val) (lab)</a>                     82.3%  ▁····▁▁▄█▇▆● beats 49/52   medium · avg 57%       0.6%  small run
+<a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   60.8%  ▃▃·▅·▃·█·●▅▅ beats 8/14    hard · avg 23%         0.6%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMMU Pro (lab)</a>                       75.0%  ▂▃▁▃▆▇▃▇▇●█▅ beats 38/52   medium · avg 47%       0.6%  at its level · small run
-<a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   60.8%  ▃▃·▅·▃·█·●▅▅ beats 8/14    hard · avg 24%         0.6%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMStar (lab)</a>                         81.0%  ▃▅▂▃▂▂▆█▆▆●▅ beats 30/34   medium · avg 63%       0.4%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">HallusionBench (lab)</a>                 70.0%  ▃▁·▃▃▃▄▅▄█▅● beats 31/32   medium · avg 55%       0.4%  blunt · at its level · small run · seve…
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">PMC-VQA (lab)</a>                        62.4%  ▃···▃··▃▃·▃● beats 5/7     medium · avg 39%       0.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMStar (lab)</a>                         81.0%  ▃▅▂▃▂▂▆█▆▆●▅ beats 30/34   medium · avg 62%       0.4%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">HallusionBench (lab)</a>                 70.0%  ▃▁·▃▃▃▄▅▄█▅● beats 31/32   medium · avg 54%       0.4%  blunt · at its level · small run · seve…
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">CountBench (lab)</a>                     97.8%  ▂▂▃▂·▂▂▃▃·▅● beats 18/18   very easy · avg 92%    0.4%  maxed out · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">SimpleVQA (lab)</a>                      56.0%  ▃·▃·▃·▃·●▅▃▃ beats 4/10    hard · avg 34%         0.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">PMC-VQA (lab)</a>                        62.4%  ▃···▃··▃▃·▃● beats 5/7     medium · avg 39%       0.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">SimpleVQA (lab)</a>                      56.0%  ▃·▃·▃·▃·●▅▃▃ beats 4/10    hard · avg 34%         0.3%  blunt · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMBench-EN dev v1.1 (lab)</a>            92.6%  █▄···▂··▄▂●▆ beats 11/14   easy · avg 82%         0.3%  blunt · maxed out · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">ScreenSpot-Pro (lab)</a>                 70.3%  ▂▃▅▆█●▅▂···▂ beats 18/24   medium · avg 48%       0.3%  blunt · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">AI2D test (lab)</a>                      92.9%  ▁▁▅▇▃▇·▄·●·▃ beats 23/28   easy · avg 86%         0.2%  blunt · small run · several runs
+<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   39.3%  ▃·▅▃▅●··▅··█ beats 6/11    very hard · avg 32%    0.2%  blunt · noisy
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">RealWorldQA (lab)</a>                    83.7%  ▂▃▂█▃██▆█▂●▆ beats 31/38   easy · avg 72%         0.2%  blunt · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">AI2D test (lab)</a>                      92.9%  ▁▁▅▇▃▇·▄·●·▃ beats 23/28   easy · avg 85%         0.2%  blunt · small run · several runs
-<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   39.3%  ▃·▅▃▅●··▅··█ beats 6/11    very hard · avg 33%    0.2%  blunt · noisy
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">CC-OCR (lab)</a>                         81.0%  ▁·▂··▂▂▃▃▂▆● beats 20/26   easy · avg 72%         0.1%  blunt · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">CC-OCR (lab)</a>                         81.0%  ▁·▂··▂▂▃▃▂▆● beats 20/26   easy · avg 71%         0.1%  blunt · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OCRBench (lab)</a>                       89.4%  ▁·▃▁▆▅▂█▅●▁▃ beats 29/37   easy · avg 83%         0.1%  blunt · small run
 <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   69.6%  ▂·▁·▂▂▅●·▁▂▂ beats 13/22   medium · avg 62%       0.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>web search · #62 of 80 · 3.5% of its score</summary>
+<details><summary>web search · #62 of 80 · 3.4% of its score</summary>
 
-Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Grok 4.3](grok-4-3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Grok 4.3](grok-4-3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">WideSearch (lab)</a>                     61.1%  █·▂●··▂···▂▂ beats 5/10   hard · avg 33%    0.9%  at its level · small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp-ZH (lab)</a>                  62.1%  ▁▁▁▁▁▃·▁▄▅●█ beats 16/23  hard · avg 23%    0.9%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp-ZH (lab)</a>                  62.1%  ▁▁▁▁▁▃·▁▄▅●█ beats 16/23  hard · avg 25%    0.8%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp (lab)</a>                     61.0%  ▂·▄▁▂▃▆▄●▂▃▄ beats 25/42  hard · avg 24%    0.7%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Humanity's Last Exam with tools (…</a>   48.5%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 29/54  hard · avg 18%    0.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">SealQA Seal-0 (lab)</a>                  47.2%  █····█·····● beats 2/2    hard · avg 19%    0.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Humanity's Last Exam with tools (…</a>   48.5%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 29/54  hard · avg 18%    0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">SealQA Seal-0 (lab)</a>                  47.2%  █····█·····● beats 2/2    hard · avg 20%    0.4%  at its level · small run
 </pre>
 
 </details>
@@ -151,51 +153,51 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">GPQA Diamond (lab)</a>                   85.5%  ▁▁▁▁▂▄▅▅█●█▄ beats 230/310  hard · avg 45%          6.2%  sharp · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">Humanity's Last Exam (lab)</a>           24.3%  ▁▁▁▃▆▆▇●█▆▁▃ beats 57/104   very hard · avg 5.2%    4.1%  several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MMLU-Pro (lab)</a>                       86.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 178/188  medium · avg 56%        3.6%  several runs
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">NL2Repo (lab)</a>                        27.3%  ▄·····●·▄▄·▄ beats 1/5      very hard · avg 8.3%    1.6%  at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VitaBench (lab)</a>                      41.9%  ▄··▂▄▆▆█▄▄●▂ beats 20/21    very hard · avg 11%     1.3%  at its level · small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">GPQA Diamond (lab)</a>                   85.5%  ▁▁▁▁▂▄▅▅█●█▄ beats 230/310  hard · avg 43%          6.8%  sharp · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">Humanity's Last Exam (lab)</a>           24.3%  ▁▁▁▃▆▆▇●█▆▁▃ beats 57/104   very hard · avg 5.1%    4.1%  several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MMLU-Pro (lab)</a>                       86.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 178/188  medium · avg 55%        3.7%  several runs
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">NL2Repo (lab)</a>                        27.3%  ▄·····●·▄▄·▄ beats 1/5      very hard · avg 8.6%    1.4%  at its level · several runs
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   39.4%  ▁▁▂▁▃▄█▆▄●▂▃ beats 32/39    very hard · avg 21%     1.2%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VitaBench (lab)</a>                      41.9%  ▄··▂▄▆▆█▄▄●▂ beats 20/21    very hard · avg 11%     1.2%  at its level · small run · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MedXPertQA MM (lab)</a>                  62.4%  ▂···▂·▃··▆▂● beats 11/13    very hard · avg 31%     1.2%  sharp · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">QwenClawBench (Qwen internal) (la…</a>   52.2%  ▄·▄····▄···● beats 3/4      hard · avg 22%          1.2%  at its level · several runs
-<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   39.4%  ▁▁▂▁▃▄█▆▄●▂▃ beats 32/39    very hard · avg 22%     1.1%  blunt · at its level
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">QwenClawBench (Qwen internal) (la…</a>   52.2%  ▄·▄····▄···● beats 3/4      hard · avg 22%          1.1%  at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">LongBench v2 (lab)</a>                   60.6%  ▂·▁·▂▂▁▃▄▁●▄ beats 22/28    very hard · avg 35%     0.9%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval Pass^3 (lab)</a>               46.2%  ●▄▄·▄·▄▄·▄·▄ beats 0/8      hard · avg 24%          0.9%  at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">LVBench (lab)</a>                        73.6%  ▇·█▅▅▄●··▃▁▁ beats 22/28    medium · avg 53%        0.8%  at its level · small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">DeepPlanning (lab)</a>                   22.6%  ▂·····▂··▄●▄ beats 4/9      very hard · avg 8.8%    0.8%  small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval Pass^3 (lab)</a>               46.2%  ●▄▄·▄·▄▄·▄·▄ beats 0/8      hard · avg 24%          0.8%  at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">LVBench (lab)</a>                        73.6%  ▇·█▅▅▄●··▃▁▁ beats 22/28    medium · avg 52%        0.8%  at its level · small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">DeepPlanning (lab)</a>                   22.6%  ▂·····▂··▄●▄ beats 4/9      very hard · avg 9.0%    0.8%  small run · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">C-Eval (lab)</a>                         90.5%  ▁···▁▁▂▁▂▂▃● beats 25/33    medium · avg 70%        0.8%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">ZEROBench subquestions (lab)</a>         36.2%  ▄·▄···▄·▄█●▄ beats 6/8      hard · avg 16%          0.8%  at its level · small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">INCLUDE (lab)</a>                        81.6%  ▂····▂▂▄▄▄█● beats 32/36    medium · avg 55%        0.8%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">SkillsBench 78-task subset (OpenC…</a>   27.2%  ▄·····▄···▄● beats 3/4      very hard · avg 10%     0.7%  at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">INCLUDE (lab)</a>                        81.6%  ▂····▂▂▄▄▄█● beats 32/36    medium · avg 55%        0.7%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMLU-Redux (lab)</a>                     93.2%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 53/63    easy · avg 78%          0.7%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMMLU (lab)</a>                          85.9%  ▂▁▁▂▃▂▄▄▅█●▃ beats 37/46    medium · avg 63%        0.7%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OJBench (lab)</a>                        40.1%  ▁···▁▃·▅▄▅█● beats 24/26    very hard · avg 13%     0.7%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">AndroidWorld (lab)</a>                   64.2%  ▁·▁▁▂▃█●▂▂·▂ beats 18/24    medium · avg 42%        0.6%  blunt · at its level · small run · seve…
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Video-MME (without subtitles) (la…</a>   82.8%  ▁▃▁▃▁·█▄▄▅·● beats 25/27    medium · avg 68%        0.6%  blunt · small run · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval average score (lab)</a>        64.3%  ▄·▄··█●▄▄▄▄▄ beats 4/9      medium · avg 48%        0.6%  blunt · at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Global PIQA (lab)</a>                    87.5%  ▃▃··▃··▃▃▅●▅ beats 9/11     medium · avg 72%        0.6%  small run
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   86.7%  ▁▂▂▂▃█▃▆▅▄▂● beats 92/95    easy · avg 66%          0.6%  typical
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">IFBench (aggregation unspecified)…</a>   76.5%  ▃▇▂▄▅▅▂▄▄▆●▇ beats 68/80    medium · avg 43%        0.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MAXIFE (lab)</a>                         88.0%  ▂·▂·▂···▆·▄● beats 10/11    easy · avg 65%          0.5%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMMLU (lab)</a>                          85.9%  ▂▁▁▂▃▂▄▄▅█●▃ beats 37/46    medium · avg 62%        0.7%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">SkillsBench 78-task subset (OpenC…</a>   27.2%  ▄·····▄···▄● beats 3/4      very hard · avg 11%     0.7%  at its level · several runs
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   86.7%  ▁▂▂▂▃█▃▆▅▄▂● beats 92/95    medium · avg 64%        0.6%  typical
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OJBench (lab)</a>                        40.1%  ▁···▁▃·▅▄▅█● beats 24/26    very hard · avg 13%     0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">AndroidWorld (lab)</a>                   64.2%  ▁·▁▁▂▃█●▂▂·▂ beats 18/24    medium · avg 41%        0.6%  at its level · small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Video-MME (without subtitles) (la…</a>   82.8%  ▁▃▁▃▁·█▄▄▅·● beats 25/27    medium · avg 67%        0.6%  blunt · small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval average score (lab)</a>        64.3%  ▄·▄··█●▄▄▄▄▄ beats 4/9      medium · avg 47%        0.6%  blunt · at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">IFBench (aggregation unspecified)…</a>   76.5%  ▃▇▂▄▅▅▂▄▄▆●▇ beats 68/80    medium · avg 42%        0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Global PIQA (lab)</a>                    87.5%  ▃▃··▃··▃▃▅●▅ beats 9/11     medium · avg 72%        0.5%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MultiChallenge (lab)</a>                 60.8%  ▁·▁·▁▃▆▅▃▁●▅ beats 20/29    hard · avg 30%          0.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VideoMMMU (lab)</a>                      82.3%  ▂···▂···▂▂●▆ beats 7/10     medium · avg 59%        0.5%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MAXIFE (lab)</a>                         88.0%  ▂·▂·▂···▆·▄● beats 10/11    easy · avg 66%          0.5%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">SuperGPQA (lab)</a>                      65.6%  ▂▁▂▂▅▆▃▇▇▇●▃ beats 42/46    medium · avg 36%        0.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMLU-ProX (lab)</a>                      82.2%  ▁·▁▁▁▂▁▃▂█●▄ beats 27/35    medium · avg 58%        0.5%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VLMs Are Blind (lab)</a>                 96.9%  ▂·▂·····▃··● beats 6/8      very easy · avg 89%     0.5%  maxed out · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMLU-ProX (lab)</a>                      82.2%  ▁·▁▁▁▂▁▃▂█●▄ beats 27/35    medium · avg 57%        0.5%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VideoMMMU (lab)</a>                      82.3%  ▂···▂···▂▂●▆ beats 7/10     medium · avg 60%        0.5%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VLMs Are Blind (lab)</a>                 96.9%  ▂·▂·····▃··● beats 6/8      very easy · avg 89%     0.4%  maxed out · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">LingoQA (lab)</a>                        82.0%  ▄······▄·█·● beats 5/5      medium · avg 57%        0.4%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">SLAKE (lab)</a>                          80.0%  ▄·····▄▄·█●▄ beats 6/7      medium · avg 59%        0.4%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Video-MME (with subtitles) (lab)</a>     87.0%  ▁▁▁▁▁·▁▃▁▁▁● beats 13/16    medium · avg 71%        0.4%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMVU (lab)</a>                           73.3%  ▃···▃···▃▃▅● beats 6/8      medium · avg 48%        0.4%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">RefSpatial-Bench (lab)</a>               67.7%  ▃·▃····▃▃▅●█ beats 6/10     medium · avg 40%        0.4%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">FullStackBench (Chinese) (lab)</a>       57.4%  █······●···█ beats 1/2      hard · avg 29%          0.4%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">FullStackBench (English) (lab)</a>       60.1%  █····●·····█ beats 1/2      hard · avg 32%          0.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">RefSpatial-Bench (lab)</a>               67.7%  ▃·▃····▃▃▅●█ beats 6/10     medium · avg 40%        0.4%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MLVU (lab)</a>                           85.9%  ▂···▂···▂▄●█ beats 6/10     easy · avg 69%          0.4%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMLongBench-Doc (lab)</a>                60.2%  ▃····▃··▃▃▅● beats 7/8      medium · avg 35%        0.4%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">ERQA (lab)</a>                           60.5%  ▃··▃··█·●█▅▅ beats 5/12     medium · avg 36%        0.4%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">EmbSpatial-Bench (lab)</a>               84.5%  ▁·····▁·▁·▃● beats 9/10     easy · avg 67%          0.4%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">EmbSpatial-Bench (lab)</a>               84.5%  ▁·····▁·▁·▃● beats 9/10     easy · avg 66%          0.4%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">NOVA-63 (lab)</a>                        58.1%  ▃▃·▃···▃█▃▃● beats 9/11     medium · avg 36%        0.3%  blunt · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MVBench (lab)</a>                        74.6%  ▁··▃▄▁▃▄▄▄●▄ beats 20/26    medium · avg 66%        0.1%  blunt · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">WMT24++ (lab)</a>                        77.6%  ▁·▁▁·▁·▁▂●█▃ beats 13/27    easy · avg 69%          0.1%  blunt · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MVBench (lab)</a>                        74.6%  ▁··▃▄▁▃▄▄▄●▄ beats 20/26    medium · avg 65%        0.1%  blunt · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">WMT24++ (lab)</a>                        77.6%  ▁·▁▁·▁·▁▂●█▃ beats 13/27    easy · avg 68%          0.1%  blunt · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   87.9%  ▁▂▁▂●█▂▃▄▃▁▁ beats 23/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -207,25 +209,25 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-qwen--qwen3.5-122b-a10b"></a><a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Qwen/Qwen3.5-122B-A10B model card (lab)</a>        71   39% ▇▇▇▇▇
-<a name="card-qwen--qwen3.6-35b-a3b"></a><a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">Qwen/Qwen3.6-35B-A3B model card (lab)</a>          27   17% ▇▇
+<a name="card-qwen--qwen3.5-122b-a10b"></a><a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Qwen/Qwen3.5-122B-A10B model card (lab)</a>        71   38% ▇▇▇▇▇
+<a name="card-qwen--qwen3.6-35b-a3b"></a><a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">Qwen/Qwen3.6-35B-A3B model card (lab)</a>          27   16% ▇▇
 <a name="card-qwen--qwen3.6-27b"></a><a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Qwen/Qwen3.6-27B model card (lab)</a>              16   16% ▇▇
 <a name="card-qwen--qwen3.5-27b"></a><a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">Qwen/Qwen3.5-27B model card (lab)</a>               7    8% ▇
 <a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card</a>         5    7% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3    5% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3    6% ▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        3    4% ▇
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    1% ▇
 <a name="paper-2606.05104v2-kina"></a><a href="https://arxiv.org/html/2606.05104v2">Knowledge Index of Noah's Ark</a>                   1    1% ▇
-<a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    1% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    1% ▇
+<a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    1% ▇
 <a name="paper-2610.12402v1-spacecast-bench"></a><a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench: Evaluating Predictive …</a>        1    0% ▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 68.3
+weighted average                                   = 67.9
 </pre>
 
-<sub>Licences: Qwen/Qwen3.5-122B-A10B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-122B-A10B.txt)) · Qwen/Qwen3.6-35B-A3B model card ([apache-2.0](../../licenses/Qwen--Qwen3.6-35B-A3B.txt)) · Qwen/Qwen3.6-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.6-27B.txt)) · Qwen/Qwen3.5-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-27B.txt)) · Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Qwen/Qwen3.5-122B-A10B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-122B-A10B.txt)) · Qwen/Qwen3.6-35B-A3B model card ([apache-2.0](../../licenses/Qwen--Qwen3.6-35B-A3B.txt)) · Qwen/Qwen3.6-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.6-27B.txt)) · Qwen/Qwen3.5-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-27B.txt)) · Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

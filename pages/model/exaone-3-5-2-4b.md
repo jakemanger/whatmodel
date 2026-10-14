@@ -6,7 +6,9 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 36.2** ±2.3 · #589 of 721 · from 7 benchmark results across 3 sources
+**score 37.6** ±2.2 · #594 of 724 · from 7 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,32 +16,32 @@ LG AI Research · released 2024-12 · 2.41B params · exaone
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #395 of 458     20%      4
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #271 of 393*     41%      2
+coding          ▁▁▁▃●██▇▆▄▃▁    #396 of 460     21%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #271 of 395*     39%      2
 </pre>
 
-<details><summary>coding · #395 of 458 · 20% of its score</summary>
+<details><summary>coding · #396 of 460 · 21% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   26.7%  ▃··▁▂▂●▂█▃▄▂ beats 17/47  medium · avg 54%    7.7%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.8%  ▁●▁▁▁▁▂▂▃█▅▄ beats 2/47   hard · avg 33%      6.7%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.8%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 8/47   medium · avg 36%    5.2%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.3%  ▁▁▁······▁●█ beats 13/47  easy · avg 67%      0.2%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   26.7%  ▃··▁▂▂●▂█▃▄▂ beats 17/47  medium · avg 50%    7.8%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.8%  ▁●▁▁▁▁▂▂▃█▅▄ beats 2/47   hard · avg 31%      7.4%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.8%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 8/47   hard · avg 32%      5.1%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.3%  ▁▁▁······▁●█ beats 13/47  easy · avg 66%      0.4%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #271 of 393 · 41% of its score</summary>
+<details><summary>chat &amp; writing · #271 of 395 · 39% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">Arena-Hard (version/judge unspeci…</a>   48.2%  ▃▃▂▅●▆▅█▅▅▂▃ beats 8/30   easy · avg 68%     23%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecified) …</a>   73.6%  ▄·●·▄·▄▄···█ beats 1/6    easy · avg 79%     18%  at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">Arena-Hard (version/judge unspeci…</a>   48.2%  ▃▃▂▅●▆▅█▅▅▂▃ beats 8/30   easy · avg 67%     21%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecified) …</a>   73.6%  ▄·●·▄·▄▄···█ beats 1/6    easy · avg 78%     18%  at its level
 </pre>
 
 </details>
@@ -47,8 +49,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   easy · avg 66%     37%  at its level
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   medium · avg 64%     38%  at its level
 </pre>
 
 </details>
@@ -59,11 +61,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   41% ▇▇▇▇▇
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   37% ▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   20% ▇▇
+<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   39% ▇▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   38% ▇▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   21% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 36.2
+weighted average                                   = 37.6
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

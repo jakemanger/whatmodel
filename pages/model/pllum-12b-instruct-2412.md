@@ -6,7 +6,9 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
-**score 44.8** ±2.9 · #593 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.2** ±2.7 · #593 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -19,9 +21,9 @@ PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   61.9%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 37/95  easy · avg 66%     55%  at its level
-<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   35.9%  ▄·●▂▂··█▂▄·▄ beats 2/13   hard · avg 48%     41%  at its level
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   61.9%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 37/95  medium · avg 64%     57%  at its level
+<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   35.9%  ▄·●▂▂··█▂▄·▄ beats 2/13   hard · avg 46%       40%  at its level
 </pre>
 
 </details>
@@ -32,10 +34,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   55% ▇▇▇▇▇▇▇
-<a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   41% ▇▇▇▇▇
-prior: pull toward the middle                        4% ▇
-weighted average                                   = 44.8
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   57% ▇▇▇▇▇▇▇
+<a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   40% ▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 46.2
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

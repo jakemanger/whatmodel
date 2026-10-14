@@ -6,7 +6,9 @@
 
 WizardLM · released 2023-08 · 34B params · llama2
 
-**score 45.7** ±0.7 · #432 of 721 · from 8 benchmark results across 4 sources
+**score 47.3** ±0.7 · #425 of 724 · from 8 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,20 +16,20 @@ WizardLM · released 2023-08 · 34B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #308 of 458     88%      5
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #309 of 460     87%      5
 </pre>
 
-<details><summary>coding · #308 of 458 · 88% of its score</summary>
+<details><summary>coding · #309 of 460 · 87% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 66/99  easy · avg 79%       54%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   64.6%  ▁·▁▁▁▃▄▄▄●▃▁ beats 59/99  easy · avg 74%       26%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.2%  ▁···▁▁▂▅▇●▆▂ beats 44/75  easy · avg 68%      4.7%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   42.7%  ▁··▁▅▂█●▁··▁ beats 15/22  medium · avg 54%    1.6%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   43.4%  ▁·▂▃▁●▁▂···▁ beats 16/22  medium · avg 53%    1.5%  blunt · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 66/99  easy · avg 76%       53%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   64.6%  ▁·▁▁▁▃▄▄▄●▃▁ beats 59/99  easy · avg 70%       26%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.2%  ▁···▁▁▂▅▇●▆▂ beats 44/75  easy · avg 66%      5.1%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   42.7%  ▁··▁▅▂█●▁··▁ beats 15/22  medium · avg 52%    1.7%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   43.4%  ▁·▂▃▁●▁▂···▁ beats 16/22  medium · avg 51%    1.6%  blunt · at its level
 </pre>
 
 </details>
@@ -36,7 +38,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   40.8%  ▂▂▃▄▄█▁●▅▃▁▃ beats 27/42  medium · avg 55%     12%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   40.8%  ▂▂▃▄▄█▁●▅▃▁▃ beats 27/42  medium · avg 52%     13%  at its level
 </pre>
 
 </details>
@@ -47,12 +49,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   63% ▇▇▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   30% ▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   61% ▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   31% ▇▇▇▇
 <a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1    4% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.7
+weighted average                                   = 47.3
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

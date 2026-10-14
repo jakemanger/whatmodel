@@ -6,7 +6,9 @@
 
 Meta · released 2024-09 · 10.7B params · llama3.2
 
-**score 42.6** ±1.8 · #491 of 721 · from 11 benchmark results across 4 sources
+**score 44.5** ±1.7 · #482 of 724 · from 11 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,46 +16,46 @@ Meta · released 2024-09 · 10.7B params · llama3.2
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #317 of 458*    8.5%      1
-math                ▁▂▃●▆▅▄█▄▁▁▁   #298 of 398*     14%      2
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #139 of 147     47%      6
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #316 of 460*    7.4%      1
+math                ▁▁▃▅●▆▄█▄▁▁▁   #307 of 424*     13%      2
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #139 of 147     46%      6
 </pre>
 
-<details><summary>coding · #317 of 458 · 8.5% of its score</summary>
+<details><summary>coding · #316 of 460 · 7.4% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>   62.8%  ▁▁▁▁▁▃▅●█▃▂▁ beats 103/190  easy · avg 72%    8.5%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>   62.8%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 118/205  easy · avg 66%    7.4%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #298 of 398 · 14% of its score</summary>
+<details><summary>math · #307 of 424 · 13% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>   48.3%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 25/80  medium · avg 55%    8.5%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>        24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 53%    5.7%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>   48.3%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 25/80  medium · avg 50%    8.2%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>        24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 51%    5.1%  at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #139 of 147 · 47% of its score</summary>
+<details><summary>vision &amp; documents · #139 of 147 · 46% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md), [MiniCPM-V 2.6](minicpm-v-2-6.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
 
 <pre>
 test                                                         result  vs the others in its run  difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                               992.7  ▁▁▂●▂▂▄▅▅▆██ beats 8/145  avg 1068                     19%  blunt
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  4.7900 MM-MT-Bench score (1-10)  ▅··●·█·▃▃··▅ beats 2/9    avg 5.748 MM-MT-Bench s…    9.5%  sharp · noisy
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.1%  ▃···●▃··▅▃▃▃ beats 2/9    easy · avg 74%              6.2%  blunt · at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    23.0%  ●·▂······█▄▄ beats 0/9    medium · avg 52%            5.7%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 53%            5.7%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       14.8%  ●·▄▄▄··▄▄▄▄█ beats 0/9    easy · avg 77%              0.5%  blunt · at its level · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                               992.7  ▁▁▂●▂▂▄▅▅▆██ beats 8/145  avg 1058                     21%  blunt
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  4.7900 MM-MT-Bench score (1-10)  ▅··●·█·▃▃··▅ beats 2/9    avg 5.569 MM-MT-Bench s…    8.8%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.1%  ▃···●▃··▅▃▃▃ beats 2/9    easy · avg 73%              5.5%  blunt · at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    23.0%  ●·▂······█▄▄ beats 0/9    medium · avg 50%            5.4%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 51%            5.1%  at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       14.8%  ●·▄▄▄··▄▄▄▄█ beats 0/9    easy · avg 74%              0.5%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -62,9 +64,9 @@ test                                                         result  vs the othe
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 103/183  easy · avg 77%       19%  at its level
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.4%  ▁▁·▁▂▂▄●▄▅▄▄ beats 19/66    hard · avg 31%      9.3%  typical
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 177/276  medium · avg 73%    6.2%  at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▂▅█●▆▄ beats 126/214  easy · avg 75%       20%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.4%  ▁▁·▁▂▂▄●▄▅▄▄ beats 19/66    hard · avg 29%       10%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 177/276  medium · avg 72%    6.7%  at its level · noisy
 </pre>
 
 </details>
@@ -75,12 +77,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B</a>                                8   64% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1   19% ▇▇
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1    9% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    6% ▇
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B</a>                                8   61% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1   21% ▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1   10% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    7% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 42.6
+weighted average                              = 44.5
 </pre>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

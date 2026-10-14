@@ -6,7 +6,9 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 60.8** ±2.7 · #188 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.1** ±2.6 · #197 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,28 +17,28 @@ Mistral · released 2025-12 · 24B params · apache-2.0
 <pre>
 task         vs the others          rank  counts  tests
 agent tasks  ●··········█        #2 of 2     97%      3
-coding       ▁▁▁▃▆██▇●▄▃▁   #129 of 458*     65%      2
+coding       ▁▁▁▃▆██▇●▄▃▁   #129 of 460*     67%      2
 </pre>
 
 <details><summary>agent tasks · #2 of 2 · 97% of its score</summary>
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       68.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 69/131  hard · avg 32%          40%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       22.5%  ▂▂●▅████▆▂▃▃ beats 3/36    very hard · avg 11%     32%  at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▂●▇█▃▃▁ beats 16/60   hard · avg 30%          25%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       68.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 69/131  hard · avg 33%          41%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       22.5%  ▂▂●▅████▆▂▃▃ beats 3/36    very hard · avg 11%     30%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▂●▇█▃▃▁ beats 16/60   hard · avg 31%          25%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #129 of 458 · 65% of its score</summary>
+<details><summary>coding · #129 of 460 · 67% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall.
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       68.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 69/131  hard · avg 32%     40%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▂●▇█▃▃▁ beats 16/60   hard · avg 30%     25%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       68.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 69/131  hard · avg 33%     41%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▂●▇█▃▃▁ beats 16/60   hard · avg 31%     25%  at its level · small run
 </pre>
 
 </details>
@@ -49,7 +51,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 60.8
+weighted average                                   = 60.1
 </pre>
 
 <sub>Licences: mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>

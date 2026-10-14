@@ -6,7 +6,9 @@
 
 Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
-**score 39.7** ±1.5 · #537 of 721 · from 10 benchmark results across 3 sources
+**score 40.8** ±1.3 · #545 of 724 · from 10 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,28 +16,28 @@ Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #266 of 393*    6.8%      1
-math            ▁▂▃●▆▅▄█▄▁▁▁   #296 of 398*     31%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #266 of 395*    5.7%      1
+math            ▁▁▃▅●▆▄█▄▁▁▁   #313 of 424*     39%      2
 </pre>
 
-<details><summary>chat &amp; writing · #266 of 393 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #266 of 395 · 5.7% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄····█▄···▄● beats 6/6    easy · avg 82%    6.8%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄····█▄···▄● beats 6/6    easy · avg 82%    5.7%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #296 of 398 · 31% of its score</summary>
+<details><summary>math · #313 of 424 · 39% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (lab)</a>    55.0%  █···█▄··●··▄ beats 5/6    easy · avg 77%     21%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (lab)</a>    55.0%  █···█▄··●··▄ beats 5/6    easy · avg 83%     29%  sharp · at its level
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K (lab)</a>   58.3%  ▄·█···▄·▄··● beats 5/6    easy · avg 83%     10%  sharp · at its level
 </pre>
 
@@ -45,13 +47,13 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                           55.2%  █·███·█··●·█ beats 5/6     easy · avg 75%       22%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                          46.7%  ▄···▄·▄▄··▄● beats 6/6     medium · avg 59%     11%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecified)…</a>   20.7%  ▄▄·▄····▄·●▄ beats 5/6     medium · avg 40%     10%  typical
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (lab)</a>      31.5%  █······▄▄█·● beats 6/6     hard · avg 39%      8.1%  sharp · too hard for it · noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   58.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 86/276  medium · avg 73%    4.3%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   29.6%  ▃·▁●▂▁▂▅█▇▄▁ beats 12/100  medium · avg 68%    3.1%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   63.1%  ▁▁▁▁▁▁▁●▄█▄▃ beats 33/146  easy · avg 83%      3.1%  at its level · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                           55.2%  █·███·█··●·█ beats 5/6     easy · avg 74%       20%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                          46.7%  ▄···▄·▄▄··▄● beats 6/6     medium · avg 57%    9.1%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecified)…</a>   20.7%  ▄▄·▄····▄·●▄ beats 5/6     medium · avg 38%    8.9%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (lab)</a>      31.5%  █······▄▄█·● beats 6/6     hard · avg 37%      6.6%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   58.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 86/276  medium · avg 72%    4.0%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   29.6%  ▃·▁●▂▁▂▅█▇▄▁ beats 12/100  medium · avg 66%    2.9%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   63.1%  ▁▁▁▁▁▁▁●▄█▄▃ beats 33/146  easy · avg 82%      2.8%  at its level · noisy
 </pre>
 
 </details>
@@ -62,11 +64,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card (lab)</a>        7   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card (lab)</a>        7   90% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                      2    6% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    4% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 39.7
+weighted average                              = 40.8
 </pre>
 
 <sub>Licences: LiquidAI/LFM2-1.2B model card ([LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/LICENSE)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

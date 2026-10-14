@@ -6,7 +6,9 @@
 
 EleutherAI · released 2023-02 · 0.162B params · apache-2.0
 
-**score 2.7** ±1.7 · #716 of 721 · from 7 benchmark results across 2 sources
+**score -1.9** ±1.7 · #718 of 724 · from 13 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -16,17 +18,21 @@ EleutherAI · released 2023-02 · 0.162B params · apache-2.0
 
 </pre>
 
-<details><summary>other tests (7)</summary>
+<details><summary>other tests (11)</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           74.1%  ▂··●▃▂▂▆▃▃█▂ beats 1/19    very easy · avg 98%     35%  at its level
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       43.5%  ▃·●▃▃▅·██▃██ beats 2/19    very easy · avg 90%     25%  at its level
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   32.8%  ▃··●▃▃▅▅▅███ beats 1/19    very easy · avg 89%     14%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           62.7%  ▂·●▄·▄▂▆▂▄█▄ beats 1/19    easy · avg 88%          14%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     53.1%  ▄····▄●▂▄▆▆█ beats 4/19    easy · avg 89%         7.4%  too hard for it
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  18.8%  ●··▁·▁▁·▁▂▁▂ beats 8/19    medium · avg 72%       2.7%  sharp · too hard for it
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 10/276  medium · avg 73%       0.7%  too hard for it · noisy
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           74.1%  ▂··●▃▂▂▆▃▃█▂ beats 1/19    very easy · avg 98%     23%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       43.5%  ▃·●▃▃▅·██▃██ beats 2/19    easy · avg 87%          21%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   34.1%  ▂·●·▂█▄▄█▄▂▆ beats 2/21    easy · avg 74%          11%  blunt
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           62.7%  ▂·●▄·▄▂▆▂▄█▄ beats 1/19    easy · avg 87%          11%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   32.8%  ▃··●▃▃▅▅▅███ beats 1/19    very easy · avg 87%     10%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     53.1%  ▄····▄●▂▄▆▆█ beats 4/19    easy · avg 87%         5.6%  too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  18.8%  ●··▁·▁▁·▁▂▁▂ beats 8/19    easy · avg 75%         5.0%  sharp · too hard for it · small run · s…
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">HellaSwag (lab)</a>                      29.4%  ●▁▁▂▂▂▄▆█▇▄▂ beats 3/135   easy · avg 83%         4.9%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                        1.1%  ●▁▂▂▄▄▃▆▅█▅▂ beats 0/80    medium · avg 58%       3.4%  too hard for it · small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">OpenBookQA (lab)</a>                     17.2%  ●▁▁▁▂▂▃█▃▁▃▁ beats 1/107   very hard · avg 29%    3.1%  too hard for it · small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 10/276  medium · avg 72%       0.5%  too hard for it · noisy
 </pre>
 
 </details>
@@ -37,13 +43,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   68% ▇▇▇▇▇▇▇▇
+<a name="acl-2023-emnlp-main-530"></a><a href="https://aclanthology.org/2023.emnlp-main.530.pdf">trlX: A Framework for Large Scale Reinf…</a>        5   19% ▇▇
+<a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1   11% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 2.7
+weighted average                                   = -1.9
 </pre>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · trlX: A Framework for Large Scale Reinforcement Learning from Human Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-530-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

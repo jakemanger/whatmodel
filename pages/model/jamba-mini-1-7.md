@@ -6,7 +6,9 @@
 
 AI21 Labs · released 2025-07 · 52B params (12B active) · jamba-open-model-license
 
-**score 48.7** ±14.9 · #480 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.7** ±14.9 · #511 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 

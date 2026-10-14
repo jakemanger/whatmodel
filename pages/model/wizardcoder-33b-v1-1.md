@@ -6,7 +6,9 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 49.5** ±0.7 · #353 of 721 · from 5 benchmark results across 3 sources
+**score 51.0** ±0.8 · #344 of 724 · from 5 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ WizardLM · released 2024-01 · 33.34B params · msft-research
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #261 of 458     84%      2
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #259 of 460     83%      2
 </pre>
 
-<details><summary>coding · #261 of 458 · 84% of its score</summary>
+<details><summary>coding · #259 of 460 · 83% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    79.9%  ▁·▁▁▃▄▆▅●▃▁▁ beats 83/99  easy · avg 79%     56%  sharp · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   73.2%  ▁·▁▁▁▃▄▄▄●▃▁ beats 82/99  easy · avg 74%     28%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    79.9%  ▁·▁▁▃▄▆▅●▃▁▁ beats 83/99  easy · avg 76%     55%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   73.2%  ▁·▁▁▁▃▄▄▄●▃▁ beats 82/99  easy · avg 70%     28%  sharp · at its level
 </pre>
 
 </details>
@@ -33,7 +35,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   53.3%  ▂▂▃▄▄█▁▄▅●▁▃ beats 38/42  medium · avg 55%     16%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   53.3%  ▂▂▃▄▄█▁▄▅●▁▃ beats 38/42  medium · avg 52%     17%  at its level
 </pre>
 
 </details>
@@ -44,11 +46,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   61% ▇▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   34% ▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   60% ▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   36% ▇▇▇▇
 <a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 49.5
+weighted average                                   = 51.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>

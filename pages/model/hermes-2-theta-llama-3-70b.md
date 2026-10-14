@@ -6,7 +6,9 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 47.6** ±1.9 · #386 of 721 · from 3 benchmark results across 1 source
+**score 49.0** ±1.9 · #384 of 724 · from 3 benchmark results across 1 source
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Nous Research · released 2024-06 · 70.55B params · llama3
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●▆▅▄█▄▁▁▁   #314 of 398*     67%      2
+math  ▁▁▃●█▆▄█▄▁▁▁   #337 of 424*     65%      2
 </pre>
 
-<details><summary>math · #314 of 398 · 67% of its score</summary>
+<details><summary>math · #337 of 424 · 65% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 33%           60%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/193  very hard · avg 8.6%    6.9%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 27%           59%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/193  very hard · avg 6.9%    6.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -33,7 +35,7 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   37.5%  ▁▁▁▁▂●▆▄▅▇█▅ beats 32/208  hard · avg 40%     32%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   37.5%  ▁▁▁▁▂●▆▄▅▇█▅ beats 32/208  hard · avg 38%     33%  sharp
 </pre>
 
 </details>
@@ -46,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                             3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 47.6
+weighted average                        = 49.0
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

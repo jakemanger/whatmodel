@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-04 · 7.25B params · other (tongyi-qianwen-research)
 
-**score 40.7** ±0.8 · #523 of 721 · from 4 benchmark results across 2 sources
+**score 42.5** ±0.8 · #520 of 724 · from 4 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,18 +16,18 @@ Alibaba · released 2024-04 · 7.25B params · other (tongyi-qianwen-research)
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #370 of 458     94%      3
+coding  ▁▁▁▃●██▇▆▄▃▁   #369 of 460     93%      3
 </pre>
 
-<details><summary>coding · #370 of 458 · 94% of its score</summary>
+<details><summary>coding · #369 of 460 · 93% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    51.8%  ▁·▁▁▃▄●▅█▃▁▁ beats 37/99  easy · avg 79%     51%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   45.7%  ▁·▁▁▁▃▄●▄█▃▁ beats 38/99  easy · avg 74%     37%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        60.8%  ▁···▁▁▂▅▇●▆▂ beats 38/75  easy · avg 68%    6.6%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    51.8%  ▁·▁▁▃▄●▅█▃▁▁ beats 37/99  easy · avg 76%     48%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   45.7%  ▁·▁▁▁▃▄●▄█▃▁ beats 38/99  easy · avg 70%     38%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        60.8%  ▁···▁▁▂▅▇●▆▂ beats 38/75  easy · avg 66%    7.3%  at its level
 </pre>
 
 </details>
@@ -34,7 +36,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 43/58  medium · avg 51%    5.9%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 43/58  medium · avg 48%    6.5%  at its level
 </pre>
 
 </details>
@@ -45,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    6% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.7
+weighted average                                   = 42.5
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

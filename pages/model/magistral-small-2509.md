@@ -6,7 +6,9 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 57.7** ±1.1 · #222 of 721 · from 14 benchmark results across 6 sources
+**score 57.9** ±1.0 · #227 of 724 · from 14 benchmark results across 6 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,42 +16,42 @@ Mistral · released 2025-09 · 24B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ██········●█      #2 of 4*    9.3%      2
-math                ▁▂▃▅▆▅●█▄▁▁▁   #179 of 398     37%      3
-vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #97 of 147*    8.4%      2
+coding              ██········●█      #2 of 4*    8.5%      2
+math                ▁▁▃▅█▆●█▄▁▁▁   #180 of 424     35%      3
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #97 of 147*    8.7%      2
 </pre>
 
-<details><summary>coding · #2 of 4 · 9.3% of its score</summary>
+<details><summary>coding · #2 of 4 · 8.5% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   70.9%  ▄█▄······●·▄ beats 4/5    medium · avg 50%    5.4%  at its level
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspecifie…</a>   60.7%  ▁···▁▁▃▅▅●▄▅ beats 25/37  medium · avg 41%    3.9%  at its level · small run
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   70.9%  ▄█▄······●·▄ beats 4/5    medium · avg 50%    5.1%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspecifie…</a>   60.7%  ▁···▁▁▃▅▅●▄▅ beats 25/37  medium · avg 41%    3.4%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #179 of 398 · 37% of its score</summary>
+<details><summary>math · #180 of 424 · 35% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 49%         15%  sharp · at its level
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         12%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/193  very hard · avg 8.6%    9.4%  sharp · at its level · noisy
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 47%         16%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         11%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/193  very hard · avg 6.9%    7.9%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #97 of 147 · 8.4% of its score</summary>
+<details><summary>vision &amp; documents · #97 of 147 · 8.7% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>   52.9%  ▂▅▃▅●▆▆▅▆█▆▂ beats 33/100  medium · avg 38%    4.6%  at its level · small run
-<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>   82.3%  ▂▄▄▅▇●█▇▇▂▁▂ beats 28/58   easy · avg 72%      3.8%  small run
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>   52.9%  ▂▅▃▅●▆▆▅▆█▆▂ beats 33/100  medium · avg 36%    4.8%  at its level · small run
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>   82.3%  ▂▄▄▅▇●█▇▇▂▁▂ beats 28/58   easy · avg 71%      3.9%  small run
 </pre>
 
 </details>
@@ -58,12 +60,12 @@ test                           result  vs the others in its run   difficulty    
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.6%  ▁▁▁▁▂▄●▄▅▇█▅ beats 60/208   hard · avg 40%           34%  sharp · at its level · several runs
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   32.3%  ▁▁·▁▂▂▄●▄▅▄▄ beats 29/66    hard · avg 31%          5.7%  at its level
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text generati…</a>   60.3%  ▄·▄█▄··▄▄·●▄ beats 7/8      medium · avg 41%        2.1%  at its level · small run
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   89.4%  ▃·▁▁▂▁▂▅█▇●▁ beats 90/100   medium · avg 68%        1.4%  at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 3.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 38/135   very hard · avg 5.9%    1.2%  sharp · too hard for it · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   95.5%  ▁▁▁▁▁▁▁▂▄█▄● beats 142/146  easy · avg 83%          0.8%  noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.6%  ▁▁▁▁▂▄●▄▅▇█▅ beats 60/208   hard · avg 38%           35%  sharp · at its level · several runs
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   32.3%  ▁▁·▁▂▂▄●▄▅▄▄ beats 29/66    hard · avg 29%          6.8%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text generati…</a>   60.3%  ▄·▄█▄··▄▄·●▄ beats 7/8      medium · avg 42%        2.0%  at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   89.4%  ▃·▁▁▂▁▂▅█▇●▁ beats 90/100   medium · avg 66%        1.7%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 3.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 38/135   very hard · avg 5.8%    1.3%  sharp · too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   95.5%  ▁▁▁▁▁▁▁▂▄█▄● beats 142/146  easy · avg 82%          0.9%  noisy
 </pre>
 
 </details>
@@ -75,16 +77,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   48% ▇▇▇▇▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   29% ▇▇▇▇
-<a name="paper-2510.01141v1-apriel-1-5"></a><a href="https://arxiv.org/abs/2510.01141v1">Apriel-1.5-15b-Thinker</a>                          2    8% ▇
-<a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        2    6% ▇
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    6% ▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.7
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   28% ▇▇▇
+<a name="paper-2510.01141v1-apriel-1-5"></a><a href="https://arxiv.org/abs/2510.01141v1">Apriel-1.5-15b-Thinker</a>                          2    9% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    7% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        2    5% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 57.9
 </pre>
 
-<sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 

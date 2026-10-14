@@ -6,7 +6,9 @@
 
 NVIDIA · released 2025-08 · 8.89B params · nvidia-open-model
 
-**score 55.6** ±0.7 · #256 of 721 · from 34 benchmark results across 5 sources
+**score 55.8** ±0.7 · #262 of 724 · from 34 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,9 +17,9 @@ NVIDIA · released 2025-08 · 8.89B params · nvidia-open-model
 <pre>
 task            vs the others          rank  counts  tests
 agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #180 of 302*    1.1%      1
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #217 of 458     23%      7
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #181 of 393    3.5%      4
-math            ▁▂▃▅▆▅●█▄▁▁▁    #163 of 398     33%      5
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #219 of 460     22%      7
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #181 of 395    3.8%      4
+math            ▁▁▃▅█▆●█▄▁▁▁    #163 of 424     32%      5
 </pre>
 
 <details><summary>agent tasks · #180 of 302 · 1.1% of its score</summary>
@@ -26,53 +28,53 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test           result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>   66.9%  ▁▁▁▁▁▃▅█▆●▄▁ beats 132/170  medium · avg 58%    1.1%  blunt · at its level · small run · seve…
+<a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>   66.9%  ▁▁▁▁▁▃▅█▆●▄▁ beats 132/170  medium · avg 57%    1.1%  blunt · at its level · small run · seve…
 </pre>
 
 </details>
 
-<details><summary>coding · #217 of 458 · 23% of its score</summary>
+<details><summary>coding · #219 of 460 · 22% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    4.8%  ▃▃····●·█·▃▃ beats 2/7    very hard · avg 2.4%    8.8%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   59.3%  ▄·▄····●▄▄█▄ beats 2/7    medium · avg 45%        5.9%  at its level
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   65.3%  ▄▄···●·▄▄█·▄ beats 2/7    medium · avg 57%        2.6%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                           89.7%  ▂·······▂·▂● beats 3/6    easy · avg 80%          1.7%  sharp
-<a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                                66.1%  ▄▄····▄·●··█ beats 3/5    medium · avg 62%        1.6%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                     83.4%  ▃▃·····▃·▃·● beats 5/6    easy · avg 65%          1.3%  typical
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">LiveCodeBench (version unspecifie…</a>   71.1%  ▁···▁▁▃▅▅█●▅ beats 31/37  medium · avg 44%        1.2%  at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    4.8%  ▃▃····●·█·▃▃ beats 2/7    very hard · avg 2.4%    8.4%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   59.3%  ▄·▄····●▄▄█▄ beats 2/7    medium · avg 45%        5.7%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   65.3%  ▄▄···●·▄▄█·▄ beats 2/7    medium · avg 57%        2.5%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                                66.1%  ▄▄····▄·●··█ beats 3/5    medium · avg 60%        1.7%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                           89.7%  ▂·······▂·▂● beats 3/6    easy · avg 78%          1.5%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                     83.4%  ▃▃·····▃·▃·● beats 5/6    medium · avg 64%        1.4%  typical
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">LiveCodeBench (version unspecifie…</a>   71.1%  ▁···▁▁▃▅▅█●▅ beats 31/37  medium · avg 45%        1.1%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #181 of 393 · 3.5% of its score</summary>
+<details><summary>chat &amp; writing · #181 of 395 · 3.8% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>       58.0%  █···█·█·●·██ beats 3/5    medium · avg 44%    2.4%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>       58.0%  █···█·█·●·██ beats 3/5    medium · avg 42%    2.6%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (lab)</a>     86.1%  ▁▁··▂··▂▇●▃▃ beats 16/26  easy · avg 77%      0.9%  small run
-<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>     86.0%  ▄▄·····●▄▄·▄ beats 3/6    easy · avg 79%      0.3%  noisy
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>     86.0%  ▄▄·····●▄▄·▄ beats 3/6    easy · avg 78%      0.3%  noisy
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">IFEval instruction-level strict (…</a>   90.3%  ▄▄····▄▄█▄·● beats 8/8                           —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>math · #163 of 398 · 33% of its score</summary>
+<details><summary>math · #163 of 424 · 32% of its score</summary>
 
-Beats [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     58.9%  ▄··▄····●▄▄▄ beats 3/6    medium · avg 51%        15%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     72.1%  ▄·····▄··▄●█ beats 4/6    medium · avg 59%        10%  sharp · at its level · several runs
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   42.4%  ▄······█▄▄·● beats 5/6    hard · avg 31%         3.3%  at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     94.4%  ▃·····▃···●█ beats 2/6    very easy · avg 90%    3.0%  maxed out
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">MATH-500 (lab)</a>                97.8%  ▁▃▂▃▅▇▅▇█●▂▁ beats 73/84  very easy · avg 92%    1.6%  maxed out · small run
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     58.9%  ▄··▄····●▄▄▄ beats 3/6    medium · avg 49%        16%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     72.1%  ▄·····▄··▄●█ beats 4/6    medium · avg 58%       9.2%  sharp · at its level · several runs
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     94.4%  ▃·····▃···●█ beats 2/6    very easy · avg 90%    3.1%  maxed out
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   42.4%  ▄······█▄▄·● beats 5/6    hard · avg 30%         3.1%  at its level
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">MATH-500 (lab)</a>                97.8%  ▁▃▂▃▅▇▅▇█●▂▁ beats 73/84  very easy · avg 92%    1.4%  maxed out · small run
 </pre>
 
 </details>
@@ -81,18 +83,18 @@ test                         result  vs the others in its run  difficulty       
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            56.2%  ▃······▃·▅·● beats 4/6      hard · avg 44%           12%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 84.3%  ▄···▄··█··●█ beats 4/6      easy · avg 77%          5.9%  several runs
-<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       86.2%  ▄·····▄·▄·●█ beats 3/6      easy · avg 78%          5.7%  sharp
-<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>                   64.0%  ▁▁▁▁▂▄▅●███▄ beats 124/310  hard · avg 47%          4.6%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    34.6%  █·█●·██····█ beats 2/5      hard · avg 31%          2.5%  at its level · small run · several runs
-<a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                       73.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 95/188   medium · avg 60%        2.3%  at its level · small run
-<a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                      83.1%  ▄····▄·▄●··█ beats 3/5      easy · avg 76%          2.3%  typical
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           60.8%  █▄····●·▄·▄▄ beats 3/6      medium · avg 54%        1.6%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                                17.9%  ▄··●···▄···█ beats 1/5      hard · avg 22%          1.3%  blunt · at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   62.4%  ▃·▁▁▂▁▂●█▇▄▁ beats 37/100   medium · avg 68%        0.6%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.1%  ▁▁▁▁▁▁▁▂▄█●▃ beats 125/146  easy · avg 83%          0.3%  noisy
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">Humanity's Last Exam (lab)</a>            6.5%  ▁▁▁●▆▆▇██▆▁▃ beats 7/104    very hard · avg 3.9%       —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            56.2%  ▃······▃·▅·● beats 4/6      hard · avg 43%           12%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 84.3%  ▄···▄··█··●█ beats 4/6      easy · avg 76%          6.4%  several runs
+<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       86.2%  ▄·····▄·▄·●█ beats 3/6      easy · avg 77%          5.3%  sharp
+<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>                   64.0%  ▁▁▁▁▂▄▅●███▄ beats 124/310  hard · avg 45%          5.0%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    34.6%  █·█●·██····█ beats 2/5      hard · avg 29%          2.6%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                       73.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 95/188   medium · avg 59%        2.3%  at its level · small run
+<a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                      83.1%  ▄····▄·▄●··█ beats 3/5      easy · avg 76%          2.2%  typical
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           60.8%  █▄····●·▄·▄▄ beats 3/6      medium · avg 52%        1.7%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                                17.9%  ▄··●···▄···█ beats 1/5      hard · avg 20%          1.6%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   62.4%  ▃·▁▁▂▁▂●█▇▄▁ beats 37/100   medium · avg 66%        0.7%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.1%  ▁▁▁▁▁▁▁▂▄█●▃ beats 125/146  easy · avg 82%          0.4%  noisy
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">Humanity's Last Exam (lab)</a>            6.5%  ▁▁▁●▆▆▇██▆▁▃ beats 7/104    very hard · avg 3.6%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -104,12 +106,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3</a>                                         14   41% ▇▇▇▇▇
-<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                                   11   39% ▇▇▇▇▇
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                                   11   38% ▇▇▇▇▇
 <a name="first-party-nvidia-scores"></a><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">NVIDIA vendor-reported benchmark scores…</a>        5   13% ▇▇
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>              2    6% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.6
+weighted average                                   = 55.8
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

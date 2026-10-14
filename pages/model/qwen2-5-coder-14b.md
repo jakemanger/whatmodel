@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 55.1** ±1.2 · #265 of 721 · from 15 benchmark results across 5 sources
+**score 56.0** ±1.2 · #258 of 724 · from 15 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,27 +16,27 @@ Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #211 of 458     83%     12
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #208 of 460     83%     12
 </pre>
 
-<details><summary>coding · #211 of 458 · 83% of its score</summary>
+<details><summary>coding · #208 of 460 · 83% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   69.2%  ▁·▁▂▄▁▆▄█●▂▂ beats 46/62  medium · avg 54%        23%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      89.6%  ▄·▄···█··●·▄ beats 5/6    very easy · avg 86%     12%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     87.2%  ▄·▄····▄▄·▄● beats 6/6    easy · avg 82%          11%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           86.2%  █···███·█●·█ beats 5/6    easy · avg 79%         7.7%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.6%  ▄·▄····▄▄·▄● beats 6/6    easy · avg 71%         7.0%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          72.8%  ▄····▄▄·▄·●▄ beats 5/6    easy · avg 67%         6.5%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.3%  █▂▁▁▂▂▂▃▅●▅▇ beats 30/47  medium · avg 36%       4.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     69.5%  █·██·█··█·●█ beats 5/6    medium · avg 57%       3.6%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   56.2%  ▃··▁▂▂▃▂●▃▄▂ beats 31/47  medium · avg 54%       3.3%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   46.6%  ▁▁▁▁▁▁▂▂▃█▅● beats 45/47  hard · avg 33%         3.2%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     79.5%  ▄·█··▄·▄··●▄ beats 5/6    medium · avg 55%       1.3%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.9%  ▁▁▁······▁▃● beats 27/47  easy · avg 67%         0.1%  blunt · at its level · noisy
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   69.2%  ▁·▁▂▄▁▆▄█●▂▂ beats 46/62  medium · avg 50%     24%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      89.6%  ▄·▄···█··●·▄ beats 5/6    easy · avg 84%       11%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     87.2%  ▄·▄····▄▄·▄● beats 6/6    easy · avg 80%       10%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           86.2%  █···███·█●·█ beats 5/6    easy · avg 77%      7.3%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.6%  ▄·▄····▄▄·▄● beats 6/6    easy · avg 69%      6.6%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          72.8%  ▄····▄▄·▄·●▄ beats 5/6    easy · avg 65%      6.1%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.3%  █▂▁▁▂▂▂▃▅●▅▇ beats 30/47  hard · avg 32%      5.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   46.6%  ▁▁▁▁▁▁▂▂▃█▅● beats 45/47  hard · avg 31%      4.0%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   56.2%  ▃··▁▂▂▃▂●▃▄▂ beats 31/47  medium · avg 50%    3.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     69.5%  █·██·█··█·●█ beats 5/6    medium · avg 55%    3.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     79.5%  ▄·█··▄·▄··●▄ beats 5/6    medium · avg 54%    1.2%  blunt · at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.9%  ▁▁▁······▁▃● beats 27/47  easy · avg 66%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -43,9 +45,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   32.8%  ▅··▃●·█·▃██▃ beats 3/15     hard · avg 24%      8.4%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        48.4%  ▄······▄▄█·● beats 5/6      medium · avg 38%    5.1%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 204/276  medium · avg 73%    2.6%  at its level · noisy
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   32.8%  ▅··▃●·█·▃██▃ beats 3/15     hard · avg 22%      8.8%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        48.4%  ▄······▄▄█·● beats 5/6      medium · avg 36%    4.8%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 204/276  medium · avg 72%    2.8%  at its level · noisy
 </pre>
 
 </details>
@@ -56,13 +58,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   53% ▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   23% ▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   11% ▇
-<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1    8% ▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   50% ▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   24% ▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   13% ▇▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1    9% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.1
+weighted average                                   = 56.0
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

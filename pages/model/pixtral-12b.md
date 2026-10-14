@@ -6,7 +6,9 @@
 
 Mistral · released 2024-09 · 12.4B params · apache-2.0
 
-**score 48.7** ±1.8 · #368 of 721 · from 11 benchmark results across 4 sources
+**score 49.9** ±1.7 · #367 of 724 · from 11 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,49 +16,49 @@ Mistral · released 2024-09 · 12.4B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #276 of 458*     21%      2
-math                ▁▂▃▅●▅▄█▄▁▁▁   #283 of 398*     15%      2
-vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #123 of 147     65%      8
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #275 of 460*     21%      2
+math                ▁▁▃▅●▆▄█▄▁▁▁   #287 of 424*     15%      2
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #123 of 147     64%      8
 </pre>
 
-<details><summary>coding · #276 of 458 · 21% of its score</summary>
+<details><summary>coding · #275 of 460 · 21% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   35.3%  ▄··●·▄··▄█·▄ beats 2/7      hard · avg 34%     14%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                      72.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 128/190  easy · avg 72%    7.6%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   35.3%  ▄··●·▄··▄█·▄ beats 2/7      hard · avg 33%     14%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                      72.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 143/205  easy · avg 66%    6.9%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #283 of 398 · 15% of its score</summary>
+<details><summary>math · #287 of 424 · 15% of its score</summary>
 
-Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (lab)</a>   48.1%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 24/80  medium · avg 55%    8.9%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>        58.3%  ▂····▂···▂●▆ beats 6/9    medium · avg 53%    6.4%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (lab)</a>   48.1%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 24/80  medium · avg 50%    8.8%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>        58.3%  ▂····▂···▂●▆ beats 6/9    medium · avg 51%    5.9%  at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #123 of 147 · 65% of its score</summary>
+<details><summary>vision &amp; documents · #123 of 147 · 64% of its score</summary>
 
-Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md), [Nova Pro](nova-pro.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
+Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md), [Nova Pro](nova-pro.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                                         result  vs the others in its run   difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1025.2  ▁▁▂▂●▂▄▅▅▆██ beats 17/145  avg 1068                     19%  blunt
-<a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>                            35.3%  ▄··●·▄··▄█·▄ beats 2/7     hard · avg 34%               14%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.0500 MM-MT-Bench score (1-10)  ▅··▃·█·●▃··▅ beats 6/9     avg 5.748 MM-MT-Bench s…    9.4%  sharp · noisy
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                              52.0%  ▂·▂······●▄▄ beats 4/9     medium · avg 52%            6.7%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                    58.3%  ▂····▂···▂●▆ beats 6/9     medium · avg 53%            6.4%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                             78.6%  ▃···█▃··▅▃●▃ beats 8/9     easy · avg 74%              5.6%  blunt · at its level
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1016.0  ▄▄·▄·●▄▄·▄·█ beats 3/8     avg 1038                    3.1%  blunt
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                                 81.8%  ▄·▄▄▄··▄▄▄●█ beats 7/9     easy · avg 77%              0.5%  blunt · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1025.2  ▁▁▂▂●▂▄▅▅▆██ beats 17/145  avg 1058                     21%  blunt
+<a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>                            35.3%  ▄··●·▄··▄█·▄ beats 2/7     hard · avg 33%               14%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.0500 MM-MT-Bench score (1-10)  ▅··▃·█·●▃··▅ beats 6/9     avg 5.569 MM-MT-Bench s…    8.9%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                              52.0%  ▂·▂······●▄▄ beats 4/9     medium · avg 50%            6.3%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                    58.3%  ▂····▂···▂●▆ beats 6/9     medium · avg 51%            5.9%  at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                             78.6%  ▃···█▃··▅▃●▃ beats 8/9     easy · avg 73%              5.1%  blunt · at its level
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1016.0  ▄▄·▄·●▄▄·▄·█ beats 3/8     avg 1030                    2.8%  blunt
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                                 81.8%  ▄·▄▄▄··▄▄▄●█ beats 7/9     easy · avg 74%              0.5%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -65,7 +67,7 @@ test                                                         result  vs the othe
 
 <pre>
 test        result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>   69.2%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 110/183  easy · avg 77%     18%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>   69.2%  ▁▁▁▁▁▂▂▅█●▆▄ beats 134/214  easy · avg 75%     19%  at its level
 </pre>
 
 </details>
@@ -76,12 +78,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B (lab)</a>                               8   63% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B (lab)</a>                               8   61% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇
 <a name="paper-2608.10408v1-viseditbench"></a><a href="https://arxiv.org/html/2608.10408v1">VisEditBench: Can Vision-Language Model…</a>        1   14% ▇▇
 <a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.7
+weighted average                                   = 49.9
 </pre>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>

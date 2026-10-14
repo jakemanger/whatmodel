@@ -6,7 +6,9 @@
 
 TinyLlama · released 2023-12 · 1.1B params · apache-2.0
 
-**score 21.4** ±8.6 · #910 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.5** ±8.4 · #914 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ TinyLlama · released 2023-12 · 1.1B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 36/276  medium · avg 73%     67%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 36/276  medium · avg 72%     68%  noisy
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   67% ▇▇▇▇▇▇▇▇
-prior: pull toward the middle              33% ▇▇▇▇
-weighted average                          = 21.4
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   68% ▇▇▇▇▇▇▇▇
+prior: pull toward the middle              32% ▇▇▇▇
+weighted average                          = 21.5
 </pre>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

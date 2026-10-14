@@ -6,52 +6,58 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 11.5** ±1.1 · #707 of 721 · from 29 benchmark results across 8 sources
+**score 6.7** ±0.9 · #714 of 724 · from 52 benchmark results across 15 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks GPT-2 XL (1.5B) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task  vs the others      rank  counts  tests
-math  █···●······█   #2 of 3*    2.4%      1
+task  vs the others          rank  counts  tests
+math  ▁▁●▅█▆▄█▄▁▁▁   #377 of 424*    0.7%      1
 </pre>
 
-<details><summary>math · #2 of 3 · 2.4% of its score</summary>
+<details><summary>math · #377 of 424 · 0.7% of its score</summary>
 
-Beats [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank higher overall.
+Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md) here, though they rank lower overall.
 
 <pre>
 test    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>   23.6%  ●···█··█···█ beats 0/3    hard · avg 46%    2.4%  too hard for it
+<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>   23.6%  ▃·▃▃●▅··▃·▃▃ beats 3/10   hard · avg 34%    0.7%  blunt · too hard for it
 </pre>
 
 </details>
 
-<details><summary>other tests (20)</summary>
+<details><summary>other tests (24)</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            40.0%  ●▃▃··▅····▃█ beats 0/8     very easy · avg 92%     17%  at its level · several runs
-<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        25.0%  ●····▃▃···▅█ beats 0/8     hard · avg 46%          13%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           22.4%  ●······▂·▆·▂ beats 0/8     very hard · avg 26%     12%  too hard for it · several runs
-<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             58.3%  ●·▃▃··▃··▃·█ beats 1/8     very easy · avg 90%    8.4%  at its level · several runs
-<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           58.3%  ●··█···█▄▄·▄ beats 1/8     easy · avg 90%         7.9%  several runs
-<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   30.1%  █···██·█···● beats 4/4     easy · avg 79%         7.4%  too hard for it
-<a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 70.5%  ▄●··▄·▄·▄·██ beats 1/8     easy · avg 89%         5.7%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                61.8%  ▄●▄···▄··█▄▄ beats 1/8     easy · avg 92%         4.6%  typical
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   51.2%  ●·▄··█··█··▄ beats 0/7     very easy · avg 90%    4.6%  blunt · at its level
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        38.6%  █·····█·█··● beats 3/3     easy · avg 83%         4.0%  at its level
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 69.0%  ▄·▄·●··▆▂··▂ beats 6/12    very easy · avg 96%    2.8%  at its level
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     67.6%  █····█···█·● beats 3/3     easy · avg 92%         2.2%  blunt · at its level
-<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 63%       2.0%  blunt
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">PubMedQA</a>                             60.4%  ▂·▂●·▄▂▄▄▂█▂ beats 4/17    medium · avg 75%       1.6%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedMCQA</a>                              30.9%  ▂▂··●▄▂▂·▄██ beats 3/17    medium · avg 68%       1.2%  too hard for it
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedQA (USMLE, 4 options)</a>             28.0%  ▁▁··●▁▁··▄▃█ beats 4/17    easy · avg 76%         1.1%  sharp · too hard for it
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.9%  ●▁▁▁▁▁▁▁▂█▅▁ beats 23/276  medium · avg 73%       0.6%  too hard for it · noisy
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   37.0%  ▃···▃▃·▃·●·█ beats 4/7     hard · avg 44%         0.5%  blunt
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   11.7%  ▄···█···█●·▄ beats 6/7     very hard · avg 11%    0.0%  blunt · too hard for it
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.1%  ●·······▁··▁ beats 3/7     very hard · avg 51%    0.0%  blunt · too hard for it · noisy
+<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        25.0%  ●····▃▃···▅█ beats 0/8     very hard · avg 27%     20%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            40.0%  ●▃▃··▅····▃█ beats 0/8     easy · avg 87%          15%  several runs
+<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           22.4%  ●······▂·▆·▂ beats 0/8     very hard · avg 26%     13%  too hard for it · several runs
+<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             58.3%  ●·▃▃··▃··▃·█ beats 1/8     easy · avg 87%         8.7%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     67.6%  ▃▃▃●▅█▅▂▁··▂ beats 15/50   easy · avg 91%         6.3%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   30.1%  █···██·█···● beats 4/4     easy · avg 86%         5.0%  too hard for it
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 69.0%  ▁·▁▁▁▅●█▆▂▁▁ beats 23/67   very easy · avg 97%    4.9%  at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 70.5%  ▄●··▄·▄·▄·██ beats 1/8     easy · avg 88%         4.6%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   37.0%  ▃···▃▃·▃·●·█ beats 4/7     easy · avg 81%         3.2%  typical
+<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                61.8%  ▄●▄···▄··█▄▄ beats 1/8     easy · avg 88%         3.1%  several runs
+<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           58.3%  ●··█···█▄▄·▄ beats 1/8     easy · avg 88%         3.0%  several runs
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 72%       2.5%  blunt · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   51.2%  ●·▄··█··█··▄ beats 0/7     very easy · avg 88%    2.5%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.345.pdf">TriviaQA</a>                             11.8%  ▁▁▂▂●▄▃▆▅█▅▂ beats 14/80   easy · avg 74%         1.6%  small run
+<a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   41.8%  ▂●··▂·█···▂▂ beats 1/8     easy · avg 79%         1.6%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.976.pdf">SciQ</a>                                 83.2%  ▂·▁▂▂●▆▃▇▆█▂ beats 9/51    very easy · avg 98%    1.2%  blunt · at its level · small run
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">PubMedQA</a>                             60.4%  ▂·▂●·▄▂▄▄▂█▂ beats 4/17    medium · avg 74%       0.8%  blunt · at its level · several runs
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedMCQA</a>                              30.9%  ▂▂··●▄▂▂·▄██ beats 3/17    medium · avg 63%       0.5%  too hard for it
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedQA (USMLE, 4 options)</a>             28.0%  ▁▁··●▁▁··▄▃█ beats 4/17    medium · avg 71%       0.4%  sharp · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   11.7%  ▄···█···█●·▄ beats 6/7     hard · avg 22%         0.3%  blunt · too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.9%  ●▁▁▁▁▁▁▁▂█▅▁ beats 23/276  medium · avg 72%       0.3%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA generation, % true (hu…</a>   29.3%  █●····█·██·█ beats 1/5     medium · avg 42%       0.0%  blunt · at its level
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.1%  ●·······▁··▁ beats 3/7     very hard · avg 52%    0.0%  blunt · too hard for it · noisy
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        38.6%  █·····▂●▃▂▄▄ beats 18/38   easy · avg 87%         0.0%  sharp · too hard for it · noisy · sever…
 </pre>
 
 </details>
@@ -62,19 +68,26 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>                        7   41% ▇▇▇▇▇
-<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   25% ▇▇▇
-<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card</a>                  4   19% ▇▇
-<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                           1    7% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card</a>              2    3% ▇
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">Open Medical-LLM Leaderboard results</a>            3    3% ▇
-<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3    1% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 11.5
+<a name="acl-2022-acl-long-565"></a><a href="https://aclanthology.org/2022.acl-long.565.pdf">Coherence boosting: When your pretraine…</a>        9   25% ▇▇▇
+<a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>                        7   20% ▇▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   11% ▇
+<a name="acl-2023-findings-emnlp-180"></a><a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">CASE: Commonsense-Augmented Score with …</a>        4   10% ▇
+<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card</a>                  4    9% ▇
+<a name="acl-2023-findings-emnlp-976"></a><a href="https://aclanthology.org/2023.findings-emnlp.976.pdf">Tunable Soft Prompts are Messengers in …</a>        5    8% ▇
+<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                           1    5% ▇
+<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3    4% ▇
+<a name="acl-2022-emnlp-main-15"></a><a href="https://aclanthology.org/2022.emnlp-main.15.pdf">RankGen: Improving Text Generation with…</a>        2    3% ▇
+<a name="acl-2023-findings-emnlp-345"></a><a href="https://aclanthology.org/2023.findings-emnlp.345.pdf">Adaptation with Self-Evaluation to Impr…</a>        1    2% ▇
+<a name="acl-2023-findings-emnlp-152"></a><a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">Generative Calibration for In-context L…</a>        1    2% ▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">Open Medical-LLM Leaderboard results</a>            3    1% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card</a>              2    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
+<a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 6.7
 </pre>
 
-<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Coherence boosting: When your pretrained language model is not paying enough attention ([CC BY 4.0](../../licenses/acl-2022-acl-long-565-CC-BY-4-0.txt)) · Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · CASE: Commonsense-Augmented Score with an Expanded Answer Space ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-180-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Tunable Soft Prompts are Messengers in Federated Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-976-CC-BY-4-0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · RankGen: Improving Text Generation with Large Ranking Models ([CC BY 4.0](../../licenses/acl-2022-emnlp-main-15-CC-BY-4-0.txt)) · Adaptation with Self-Evaluation to Improve Selective Prediction in LLMs ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-345-CC-BY-4-0.txt)) · Generative Calibration for In-context Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-152-CC-BY-4-0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

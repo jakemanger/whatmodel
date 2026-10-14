@@ -6,7 +6,9 @@
 
 Magpie-Align · released 2024-06 · 8.03B params · llama3
 
-**score 46.7** ±3.1 · #533 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.2** ±3.0 · #525 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Magpie-Align · released 2024-06 · 8.03B params · llama3
 
 <pre>
 test                                          result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.2902 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 29/52  avg 45.276 WB-Score     96%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.2902 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 29/52  avg 42.747 WB-Score     96%  sharp
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 46.7
+weighted average                        = 48.2
 </pre>
 
 <sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE))</sub>

@@ -6,7 +6,9 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 66.8** ±1.3 · #120 of 721 · from 5 benchmark results across 1 source
+**score 66.5** ±1.2 · #118 of 724 · from 5 benchmark results across 1 source
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Alibaba · released 2026-07 · closed weights
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅▆▅▄●▄▁▁▁   #132 of 398*     66%      2
+math  ▁▁▃▅█▆▄●▄▁▁▁   #133 of 424*     65%      2
 </pre>
 
-<details><summary>math · #132 of 398 · 66% of its score</summary>
+<details><summary>math · #133 of 424 · 65% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▅▃▃ beats 13/82    very hard · avg 1.2%     56%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/193  very hard · avg 8.6%     10%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▅▃▃ beats 13/82    very hard · avg 1.1%     56%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/193  very hard · avg 6.9%    9.0%  sharp · noisy
 </pre>
 
 </details>
@@ -33,9 +35,9 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 133/208  hard · avg 40%           22%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          23.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 91/135   very hard · avg 5.9%    5.7%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▃▁▁ beats 21/74    very hard · avg 9.4%    5.6%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 133/208  hard · avg 38%           22%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▃▁▁ beats 21/74    very hard · avg 9.4%    6.2%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          23.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 91/135   very hard · avg 5.8%    6.0%  sharp · noisy
 </pre>
 
 </details>
@@ -48,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 66.8
+weighted average                        = 66.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

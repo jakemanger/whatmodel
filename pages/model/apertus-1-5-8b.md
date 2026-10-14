@@ -6,7 +6,9 @@
 
 Swiss AI · released 2026-07 · 8.9B params · apache-2.0
 
-**score 47.5** ±7.4 · #512 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.3** ±6.9 · #523 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Swiss AI · released 2026-07 · 8.9B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   11.7%  ▁●▃▂▂▄▁▃▄▄▄█ beats 1/38   very hard · avg 14%     76%  typical
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   11.7%  ▁●▃▂▂▄▁▃▄▄▄█ beats 1/38   very hard · avg 14%     79%  typical
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   76% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                24% ▇▇▇
-weighted average                            = 47.5
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   79% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                21% ▇▇▇
+weighted average                            = 48.3
 </pre>
 
 <sub>Licences: Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

@@ -6,7 +6,9 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 53.7** ±2.6 · #356 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 53.5** ±2.5 · #380 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅▆▅●█▄▁▁▁   #175 of 400*     97%      2
+math  ▁▁▃▅█▆●█▄▁▁▁   #175 of 426*     97%      2
 </pre>
 
-<details><summary>math · #175 of 400 · 97% of its score</summary>
+<details><summary>math · #175 of 426 · 97% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     92.4%  ▃·····●···▅█ beats 1/6    very easy · avg 90%     50%  maxed out
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 31%          47%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     92.4%  ▃·····●···▅█ beats 1/6    very easy · avg 90%     54%  maxed out
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 30%          43%  at its level
 </pre>
 
 </details>
@@ -37,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card (lab)</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 53.7
+weighted average                                   = 53.5
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt))</sub>

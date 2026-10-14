@@ -6,7 +6,9 @@
 
 EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
-**score 21.2** ±1.3 · #685 of 721 · from 14 benchmark results across 4 sources
+**score 20.2** ±1.3 · #693 of 724 · from 15 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -16,21 +18,22 @@ EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
 </pre>
 
-<details><summary>other tests (11)</summary>
+<details><summary>other tests (12)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     59.4%  ▄····▄▆▂▄●▆█ beats 11/19  easy · avg 89%          22%  several runs
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       64.4%  ▃·▅▃▃▅·██●██ beats 13/19  very easy · avg 90%     17%  at its level
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  29.5%  █··▁·▁▁·●▂▁▂ beats 13/19  medium · avg 72%        12%  sharp · too hard for it
-<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           73.9%  ▂·▄▄·▄▂▆▂●█▄ beats 13/19  easy · avg 88%          11%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           88.2%  ▂··▂▃▂▂▆▃●█▂ beats 12/19  very easy · avg 98%     10%  typical
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   64.7%  ▃··▅▃▃▅▅▅●██ beats 13/19  very easy · avg 89%     10%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                            59.3%  ▁▁▁▁▂▂●▇█▆▅▃ beats 18/85  very easy · avg 90%    5.8%  at its level · small run
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">MedQA (USMLE, 4 options)</a>             24.3%  ●▁··▄▁▁··▄▃█ beats 0/17   easy · avg 76%         4.6%  sharp · too hard for it
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">MedMCQA</a>                              27.2%  ▂●··▄▄▂▂·▄██ beats 1/17   medium · avg 68%       3.6%  typical
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   24.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 8/276  medium · avg 73%       1.4%  noisy
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">PubMedQA</a>                             64.0%  ▂·▂▆·●▂▄▄▂█▂ beats 5/17   medium · avg 77%       1.0%  blunt · at its level
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     59.4%  ▄····▄▆▂▄●▆█ beats 11/19   easy · avg 87%          20%  several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  29.5%  █··▁·▁▁·●▂▁▂ beats 13/19   medium · avg 71%        14%  sharp · too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       64.4%  ▃·▅▃▃▅·██●██ beats 13/19   easy · avg 87%          13%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   44.1%  ▂·▄·▂█●▄█▄▂▆ beats 8/21    easy · avg 74%          12%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           73.9%  ▂·▄▄·▄▂▆▂●█▄ beats 13/19   easy · avg 87%          10%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   64.7%  ▃··▅▃▃▅▅▅●██ beats 13/19   very easy · avg 87%    8.8%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           88.2%  ▂··▂▃▂▂▆▃●█▂ beats 12/19   very easy · avg 98%    7.6%  blunt
+<a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                            59.3%  ▁▁▁▂▂▂●▆█▇▄▂ beats 38/135  very easy · avg 89%    5.4%  at its level · small run
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">MedQA (USMLE, 4 options)</a>             24.3%  ●▁··▄▁▁··▄▃█ beats 0/17    medium · avg 71%       3.6%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">MedMCQA</a>                              27.2%  ▂●··▄▄▂▂·▄██ beats 1/17    medium · avg 63%       2.7%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   24.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 8/276   medium · avg 72%       1.6%  noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">PubMedQA</a>                             64.0%  ▂·▂▆·●▂▄▄▂█▂ beats 5/17    medium · avg 75%       0.9%  blunt · at its level
 </pre>
 
 </details>
@@ -41,15 +44,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   70% ▇▇▇▇▇▇▇▇
-<a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama</a>                                       4   19% ▇▇
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">Open Medical-LLM Leaderboard results</a>            3    9% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   62% ▇▇▇▇▇▇▇
+<a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama</a>                                       4   17% ▇▇
+<a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1   12% ▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b/results_2024-05-20%2011%3A14%3A20.231541.json">Open Medical-LLM Leaderboard results</a>            3    7% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 21.2
+weighted average                                   = 20.2
 </pre>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

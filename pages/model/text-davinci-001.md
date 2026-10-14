@@ -6,7 +6,9 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 26.4** ±2.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 33.9** ±1.0 · comparison only: no current run option verified · from 20 benchmark results across 11 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,26 +16,54 @@ OpenAI · released 2022-01 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #458 of 463*     78%      2
+chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #461 of 466*     17%      2
+math            ▁▂▃●█▇▅▇▃▁▁▁   #403 of 523*     11%      1
 </pre>
 
-<details><summary>chat &amp; writing · #458 of 463 · 78% of its score</summary>
+<details><summary>chat &amp; writing · #461 of 466 · 17% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.0%  ▁▂▂●▆▆█▆▄▄▁▁ beats 19/122  medium · avg 39%        44%  too hard for it
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   15.2%  ●▂·▆·▇▃▆█▆▄▂ beats 0/45    very easy · avg 96%     35%  sharp · at its level · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.0%  ▁▂▂●▆▆█▆▄▄▁▁ beats 19/122  hard · avg 35%          14%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   15.2%  ●▂·▆·▇▃▆█▆▄▂ beats 0/45    very easy · avg 94%    2.9%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>other tests (1)</summary>
+<details><summary>math · #403 of 523 · 11% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   15.2%  ●··▄·▂▆▄▂█·▂ beats 0/14   medium · avg 57%     19%  typical
+test   result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2211.10435v2">GSM8K</a>   26.5%  ▂▂▂▂▃●▅▇██▆▄ beats 55/200  easy · avg 76%     11%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (17)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   35.6%  █·····●··▅·▃ beats 3/6      medium · avg 71%        15%  sharp
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">ARC Challenge</a>                        46.2%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 74/140   easy · avg 78%          14%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                64.2%  ▁····▁▂●▆▅▆▄ beats 34/103   medium · avg 78%       4.9%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">OpenBookQA</a>                           52.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 77/107   easy · avg 77%         4.8%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">HellaSwag</a>                            77.6%  ▁▁▁▂▂▂▄▆█●▄▂ beats 102/135  very easy · avg 90%    4.3%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">WinoGrande</a>                           66.3%  ▁▁▁▁▂▁▁▅●█▃▁ beats 69/131   easy · avg 86%         4.1%  at its level
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   15.2%  ●··▄·▂▆▄▂█·▂ beats 0/14     medium · avg 53%       4.1%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">COPA</a>                                 83.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 35/67    easy · avg 92%         3.4%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       4.8%  ▂▁▁▁▂●▄▃▅█▅▁ beats 14/68    very hard · avg 13%    2.8%  too hard for it
+<a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   80.6%  ▃·▃·····●▃▃█ beats 2/7      easy · avg 87%         2.4%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">ARC Easy</a>                             67.0%  ▁▃▂▄▆●▅▃▁··▁ beats 50/100   easy · avg 81%         2.3%  blunt · at its level
+<a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions English…</a>   52.1%  █····█··●··█ beats 2/3      easy · avg 70%         2.2%  at its level
+<a href="https://aclanthology.org/2023.findings-acl.551.pdf">SelfAware unanswerable-question d…</a>   49.6%  █●▄▄·······▄ beats 2/5      medium · avg 63%       1.7%  blunt · at its level
+<a href="https://aclanthology.org/2023.acl-long.754.pdf">Super-NaturalInstructions English…</a>   40.8%  ▄·▄······▄▄● beats 4/5      medium · avg 63%       1.5%  at its level · noisy · small run
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">PIQA</a>                                 79.1%  ▁▁▁▂▂▃▅●▅▃▁▁ beats 85/123   easy · avg 86%         1.4%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   51.9%  ●····▄·█···▄ beats 0/4      hard · avg 65%         1.3%  noisy
+<a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         63.1%  ▂▆·▄▄█▂·●··▂ beats 13/14    medium · avg 65%       0.8%  blunt · at its level
 </pre>
 
 </details>
@@ -44,13 +74,22 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   78% ▇▇▇▇▇▇▇▇▇
-<a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1   19% ▇▇
-prior: pull toward the middle                        3% ▇
-weighted average                                   = 26.4
+<a name="acl-2023-emnlp-main-758"></a><a href="https://aclanthology.org/2023.emnlp-main.758.pdf">UPRISE: Universal Prompt Retrieval for …</a>        9   42% ▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   17% ▇▇
+<a name="acl-2023-acl-long-41"></a><a href="https://aclanthology.org/2023.acl-long.41.pdf">Do Androids Laugh at Electric Sheep? Hu…</a>        1   15% ▇▇
+<a name="paper-2211.10435v2-pal"></a><a href="https://arxiv.org/html/2211.10435v2">PAL: Program-aided Language Models</a>              1   11% ▇
+<a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    4% ▇
+<a name="acl-2023-acl-long-550"></a><a href="https://aclanthology.org/2023.acl-long.550.pdf">Say What You Mean! Large Language Model…</a>        1    2% ▇
+<a name="acl-2022-emnlp-main-340"></a><a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions: Generalizati…</a>        1    2% ▇
+<a name="acl-2023-findings-acl-551"></a><a href="https://aclanthology.org/2023.findings-acl.551.pdf">Do Large Language Models Know What They…</a>        1    2% ▇
+<a name="acl-2023-acl-long-754"></a><a href="https://aclanthology.org/2023.acl-long.754.pdf">Self-Instruct: Aligning Language Models…</a>        1    1% ▇
+<a name="acl-2023-emnlp-main-600"></a><a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits: Measuring LLM Ability at Fac…</a>        1    1% ▇
+<a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 33.9
 </pre>
 
-<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-758-CC-BY-4-0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · PAL: Program-aided Language Models ([CC0 1.0](../../licenses/paper-2211.10435v2-pal-CC0-1-0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks ([CC BY 4.0](../../licenses/acl-2022-emnlp-main-340-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · Self-Instruct: Aligning Language Models with Self-Generated Instructions ([CC BY 4.0](../../licenses/acl-2023-acl-long-754-CC-BY-4-0.txt)) · SummEdits: Measuring LLM Ability at Factual Reasoning Through The Lens of Summarization ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-600-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

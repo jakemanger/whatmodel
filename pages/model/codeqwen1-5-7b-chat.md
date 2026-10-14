@@ -6,7 +6,9 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 50.4** ±0.7 · #336 of 721 · from 14 benchmark results across 3 sources
+**score 51.7** ±0.7 · #333 of 724 · from 14 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,22 +16,22 @@ Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #241 of 458     83%      7
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #240 of 460     82%      7
 </pre>
 
-<details><summary>coding · #241 of 458 · 83% of its score</summary>
+<details><summary>coding · #240 of 460 · 82% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>          83.5%  ▁·▁▁▃▄▆▅█●▁▁ beats 89/99  easy · avg 79%       36%  sharp · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>         78.7%  ▁·▁▁▁▃▄▄▄█●▁ beats 89/99  easy · avg 74%       31%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>              69.0%  ▁···▁▁▂▅▇█●▂ beats 61/75  easy · avg 68%      7.8%  at its level · several runs
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>         77.7%  █···██●·██·█ beats 3/6    easy · avg 79%      3.4%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>    70.8%  ▄·▄····●▄·▄█ beats 2/6    easy · avg 71%      2.9%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>   44.0%  █·●█·█··█·██ beats 1/6    medium · avg 57%    1.4%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>   38.8%  ▄·●··▄·▄··▄▄ beats 2/6    medium · avg 55%    0.5%  blunt · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>          83.5%  ▁·▁▁▃▄▆▅█●▁▁ beats 89/99  easy · avg 76%       34%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>         78.7%  ▁·▁▁▁▃▄▄▄█●▁ beats 89/99  easy · avg 70%       31%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>              69.0%  ▁···▁▁▂▅▇█●▂ beats 61/75  easy · avg 66%      8.3%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>         77.7%  █···██●·██·█ beats 3/6    easy · avg 77%      3.5%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>    70.8%  ▄·▄····●▄·▄█ beats 2/6    easy · avg 69%      3.0%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>   44.0%  █·●█·█··█·██ beats 1/6    medium · avg 55%    1.4%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>   38.8%  ▄·●··▄·▄··▄▄ beats 2/6    medium · avg 54%    0.5%  blunt · at its level
 </pre>
 
 </details>
@@ -38,9 +40,9 @@ test              result  vs the others in its run  difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        39.3%  ▃▂·▆▆██●▅▃▃▃ beats 24/33  medium · avg 41%    7.9%  at its level · several runs
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 39/58  medium · avg 51%    5.9%  at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   74.1%  ▂·▂▂▂▆●▆▆▆▃█ beats 10/29  easy · avg 76%      2.9%  typical
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        39.3%  ▃▂·▆▆██●▅▃▃▃ beats 24/33  medium · avg 39%    8.4%  at its level · several runs
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 39/58  medium · avg 48%    6.2%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   74.1%  ▂·▂▂▂▆●▆▆▆▃█ beats 10/29  easy · avg 74%      3.0%  typical
 </pre>
 
 </details>
@@ -51,11 +53,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   64% ▇▇▇▇▇▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   24% ▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   12% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   62% ▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   25% ▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   13% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 50.4
+weighted average                                   = 51.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

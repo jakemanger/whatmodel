@@ -6,7 +6,9 @@
 
 DeepSeek · released 2024-05 · 15.71B params (2.4B active) · deepseek
 
-**score 38.0** ±1.2 · #567 of 721 · from 15 benchmark results across 5 sources
+**score 39.9** ±1.1 · #563 of 724 · from 15 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,33 +16,33 @@ DeepSeek · released 2024-05 · 15.71B params (2.4B active) · deepseek
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #382 of 458     29%      7
-math    █··········●      #1 of 2*     12%      2
+coding  ▁▁▁▃●██▇▆▄▃▁   #381 of 460     29%      7
+math    █··········●      #1 of 2*     13%      2
 </pre>
 
-<details><summary>coding · #382 of 458 · 29% of its score</summary>
+<details><summary>coding · #381 of 460 · 29% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    3.6%  ●▁·▁▂▄▆█▅▂·▂ beats 0/31    hard · avg 26%       11%  sharp
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                      57.3%  ▁▁▁▁▁▃▅●█▃▂▁ beats 96/190  easy · avg 84%      8.6%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>                           45.8%  ▁▁▁▄●█▄▅▃▁▂▁ beats 23/81   easy · avg 71%      4.3%  at its level · small run
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   20.5%  ▃··▁▂▂●▂█▃▄▂ beats 15/47   medium · avg 54%    2.2%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   15.0%  ▁▁▁▁▁▁●▂▃█▅▄ beats 10/47   hard · avg 33%      1.8%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.9%  █▂▁▁▂●▂▃▅▅▅▇ beats 16/47   medium · avg 36%    1.5%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.8%  ▁▁▁······▁▃● beats 38/47   easy · avg 67%      0.1%  blunt · at its level · noisy
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    3.6%  ●▁·▁▂▄▆█▅▂·▂ beats 0/31     hard · avg 23%       10%  sharp
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                      57.3%  ▁▁▁▁▂▂▆●█▅▂▁ beats 111/205  easy · avg 81%      7.8%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>                           45.8%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 27/86    easy · avg 68%      3.9%  at its level · small run
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   20.5%  ▃··▁▂▂●▂█▃▄▂ beats 15/47    medium · avg 50%    2.5%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   15.0%  ▁▁▁▁▁▁●▂▃█▅▄ beats 10/47    hard · avg 31%      2.2%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.9%  █▂▁▁▂●▂▃▅▅▅▇ beats 16/47    hard · avg 32%      1.7%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.8%  ▁▁▁······▁▃● beats 38/47    easy · avg 66%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #1 of 2 · 12% of its score</summary>
+<details><summary>math · #1 of 2 · 13% of its score</summary>
 
 <pre>
-test         result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   72.0%  ▂▂▂▅▅▆▅●█▇▄▃ beats 73/146  very easy · avg 89%    7.2%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>    27.9%  ▃▅▂▆▅▃●▃█▃▃▂ beats 16/29   medium · avg 47%       4.9%  small run
+test         result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   72.0%  ▂▂▂▂▃▄▅▇●█▆▄ beats 122/200  very easy · avg 89%    8.7%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>    27.9%  ▃▅▂▆▅▃●▅█▃▃▂ beats 16/30    medium · avg 44%       4.7%  small run
 </pre>
 
 </details>
@@ -49,12 +51,12 @@ test         result  vs the others in its run   difficulty           counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 17.7%  ▁▁▁▂●▃▂█▆▃▅▃ beats 11/61    medium · avg 41%     34%  typical
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>                 48.1%  ▁▁▁▁▂▄●▅█▃▄▁ beats 41/129   easy · avg 75%      8.3%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>                           55.7%  ▁▁▁▁▁▂▃●█▃▆▃ beats 56/183   easy · avg 77%      5.9%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>                         60.1%  ▁···▁▁▂▁●▂▃█ beats 8/33     easy · avg 74%      4.3%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                          62.5%  ▅·●····█▃▅█▅ beats 3/14     easy · avg 76%      3.7%  at its level · small run
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 102/276  medium · avg 73%    2.5%  at its level · noisy
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 17.7%  ▁▁▁▂●▃▂█▆▃▅▃ beats 11/61    medium · avg 38%     34%  typical
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>                 48.1%  ▁▁▁▁▂▄●▆█▃▃▁ beats 55/155   medium · avg 70%    7.4%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>                           55.7%  ▁▁▁▁▁▂▂▅●█▆▄ beats 71/214   easy · avg 75%      6.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>                         60.1%  ▁···▁▁▂▁●▂▃█ beats 8/33     medium · avg 72%    3.7%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                          62.5%  ▅·●····█▃▅█▅ beats 3/14     easy · avg 74%      3.2%  at its level · small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 102/276  medium · avg 72%    2.8%  at its level · noisy
 </pre>
 
 </details>
@@ -65,13 +67,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-deepseek-scores"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">DeepSeek vendor-reported benchmark scor…</a>        8   47% ▇▇▇▇▇▇
+<a name="first-party-deepseek-scores"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">DeepSeek vendor-reported benchmark scor…</a>        8   45% ▇▇▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   34% ▇▇▇▇
-<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   11% ▇
+<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   10% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    6% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 38.0
+weighted average                                   = 39.9
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

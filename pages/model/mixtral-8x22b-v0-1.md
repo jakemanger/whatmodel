@@ -6,7 +6,9 @@
 
 Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
-**score 47.0** ±3.0 · #523 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.5** ±2.9 · #520 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 42/58  medium · avg 51%     96%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 42/58  medium · avg 48%     96%  at its level
 </pre>
 
 </details>
@@ -33,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                   1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 47.0
+weighted average                        = 48.5
 </pre>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

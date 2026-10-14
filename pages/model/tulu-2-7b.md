@@ -6,7 +6,9 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.8** ±1.7 · #596 of 721 · from 6 benchmark results across 2 sources
+**score 37.9** ±1.6 · #592 of 724 · from 6 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,28 +16,28 @@ Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; 
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #444 of 458*     23%      1
-math    ▁▂●▅▆▅▄█▄▁▁▁   #348 of 398*     13%      1
+coding  ▁▁●▃▆██▇▆▄▃▁   #445 of 460*     19%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #296 of 424*     21%      1
 </pre>
 
-<details><summary>coding · #444 of 458 · 23% of its score</summary>
+<details><summary>coding · #445 of 460 · 19% of its score</summary>
 
-Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [StarCoderBase 3B](starcoderbase-3b.md) here, though they rank lower overall.
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   36.9%  ▃▃●·▆▃▃█▃▂▂▅ beats 4/25   very easy · avg 86%     23%  sharp · at its level
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   36.9%  ▃▃●·▆▃▃█▃▂▂▅ beats 4/25   easy · avg 83%     19%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #348 of 398 · 13% of its score</summary>
+<details><summary>math · #296 of 424 · 21% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   34.0%  ▆▂▅●▅▅▃▆···▂ beats 10/25  easy · avg 73%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   34.0%  ▆▂▅●▅▅▃▆···▂ beats 10/25  easy · avg 72%     21%  sharp · at its level
 </pre>
 
 </details>
@@ -44,10 +46,10 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 48.5%  ▁·····▂●▂▅·▁ beats 8/25     easy · avg 77%       38%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.4%  ▁▁▃▃▄●▄▁█··▁ beats 9/25     easy · avg 74%       14%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 100/276  medium · avg 73%    5.4%  at its level · noisy
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   46.4%  ▂··▁▃▂▂●█▅▁▂ beats 10/25    medium · avg 61%    4.9%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 48.5%  ▁·····▂●▂▅·▁ beats 8/25     medium · avg 74%     34%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.4%  ▁▁▃▃▄●▄▁█··▁ beats 9/25     medium · avg 72%     16%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 100/276  medium · avg 72%    5.9%  at its level · noisy
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   46.4%  ▂··▁▃▂▂●█▅▁▂ beats 10/25    medium · avg 59%    4.0%  blunt · at its level
 </pre>
 
 </details>
@@ -59,9 +61,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                           results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                           5   93% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    5% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    6% ▇
 prior: pull toward the middle               1% ▇
-weighted average                          = 35.8
+weighted average                          = 37.9
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

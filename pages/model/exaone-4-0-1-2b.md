@@ -6,7 +6,9 @@
 
 LG AI Research · released 2025-07 · 1.28B params · exaone
 
-**score 46.8** ±1.5 · #403 of 721 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.3** ±1.4 · #421 of 724 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,43 +16,43 @@ LG AI Research · released 2025-07 · 1.28B params · exaone
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #271 of 302     16%      3
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #283 of 393*    6.0%      1
-math            ▁▂▃▅●▅▄█▄▁▁▁   #251 of 398*     34%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #271 of 302     15%      3
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #283 of 395*    6.4%      1
+math            ▁▁▃▅●▆▄█▄▁▁▁   #277 of 424*     35%      2
 </pre>
 
-<details><summary>agent tasks · #271 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #271 of 302 · 15% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>    28.1%  ▁····●·▂▇█▂▆ beats 1/28    medium · avg 38%    8.5%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>   20.5%  ●▁▁·▅▄▁█▇▁▁▇ beats 0/28    hard · avg 27%      5.2%  small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>           52.9%  ▁▁▁▁▁▃▅●▆▅▄▁ beats 58/170  medium · avg 57%    2.5%  blunt · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>    28.1%  ▁····●·▂▇█▂▆ beats 1/28    medium · avg 37%    7.8%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>   20.5%  ●▁▁·▅▄▁█▇▁▁▇ beats 0/28    hard · avg 27%      5.0%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>           52.9%  ▁▁▁▁▁▃▅●▆▅▄▁ beats 58/170  medium · avg 56%    2.4%  blunt · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #283 of 393 · 6.0% of its score</summary>
+<details><summary>chat &amp; writing · #283 of 395 · 6.4% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   67.8%  ●·▄·▄·▄▄···█ beats 0/6    easy · avg 79%    6.0%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   67.8%  ●·▄·▄·▄▄···█ beats 0/6    easy · avg 78%    6.4%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #251 of 398 · 34% of its score</summary>
+<details><summary>math · #277 of 424 · 35% of its score</summary>
 
-Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>            45.2%  ●·▄▄····▄··█ beats 0/6    medium · avg 53%     25%  sharp · at its level
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>   34.0%  ▁▁●▃▁▅▅▃██▁▄ beats 2/31   medium · avg 51%    9.1%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>            45.2%  ●·▄▄····▄··█ beats 0/6    medium · avg 53%     27%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>   34.0%  ▁▁●▃▁▅▅▃██▁▄ beats 2/31   medium · avg 50%    7.8%  at its level · small run
 </pre>
 
 </details>
@@ -59,9 +61,9 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>                52.0%  ●···▄▄···▄·█ beats 0/6     hard · avg 51%       22%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>                52.0%  ●···▄▄···▄·█ beats 0/6     hard · avg 50%       22%  sharp · at its level
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                    59.3%  ▁▁·▁▁▁▃●▄▅█▁ beats 60/188  medium · avg 62%     14%  at its level
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                  71.5%  ▁▁●▁▂▃▄▅▇▅█▄ beats 3/63    easy · avg 79%      6.6%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                  71.5%  ▁▁●▁▂▃▄▅▇▅█▄ beats 3/63    easy · avg 79%      6.1%  at its level · small run
 <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench symbol 0-shot</a>   26.5%  ●··········█ beats 0/1                            —  not counted yet: no other model in the …
 </pre>
 
@@ -75,7 +77,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">LG AI Research vendor-reported benchmar…</a>        9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 46.8
+weighted average                                   = 47.3
 </pre>
 
 <details><summary>Not counted (1)</summary>

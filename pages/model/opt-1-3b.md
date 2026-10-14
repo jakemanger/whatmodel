@@ -6,30 +6,59 @@
 
 Meta · released 2022-05 · 1.3B params · opt-175b-license-noncommercial
 
-**score 15.8** ±1.2 · #700 of 721 · from 14 benchmark results across 3 sources
+**score 14.4** ±0.8 · #703 of 724 · from 61 benchmark results across 11 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks OPT-1.3B among every model on that task or test, worst to best.</sub>
 
 <pre>
-
+task  vs the others          rank  counts  tests
+math  ▁▁▃●█▆▄█▄▁▁▁   #356 of 424*    0.7%      1
 </pre>
 
-<details><summary>other tests (10)</summary>
+<details><summary>math · #356 of 424 · 0.7% of its score</summary>
+
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall.
+
+<pre>
+test    result  vs the others in its run  difficulty      counts  why
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">MathQA</a>   23.3%  ▃·▃●█▅··▃·▃▃ beats 2/10   hard · avg 33%    0.7%  blunt · too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (25)</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             57.0%  ▃·▅▃▃▅·●█▃██ beats 9/19    very easy · avg 90%     23%  at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           59.7%  ▄····▄▆▂▄●▆█ beats 12/19   easy · avg 89%          17%  several runs
-<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 84.5%  ▂··▂▃▂▂●▃▃█▂ beats 8/19    very easy · avg 98%     12%  typical
-<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 71.7%  ▂·▄▄·▄▂▆●▄█▄ beats 11/19   easy · avg 88%          12%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.1%  ●··▁·▁▁·▁▂▁▂ beats 0/19    medium · avg 72%        12%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                59.6%  ●█▄···▄··█▄▄ beats 0/8     easy · avg 92%         7.5%  typical
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   57.9%  ▃··▅▃▃▅▅●███ beats 10/19   very easy · avg 89%    7.5%  blunt · at its level
-<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            41.5%  ▃●▃··▅····▃█ beats 1/8     easy · avg 83%         5.8%  typical
-<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.0%  ●······▂·▆·▂ beats 2/8     medium · avg 54%       1.7%  too hard for it · noisy
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 17/276  medium · avg 73%       1.0%  noisy
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             57.0%  ▃·▅▃▃▅·●█▃██ beats 9/19    easy · avg 87%          17%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.1%  ●··▁·▁▁·▁▂▁▂ beats 0/19    easy · avg 81%          17%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           59.7%  ▄····▄▆▂▄●▆█ beats 12/19   easy · avg 88%          13%  several runs
+<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 71.7%  ▂·▄▄·▄▂▆●▄█▄ beats 11/19   easy · avg 87%          10%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 84.5%  ▂··▂▃▂▂●▃▃█▂ beats 8/19    very easy · avg 98%    6.3%  blunt · several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   57.9%  ▃··▅▃▃▅▅●███ beats 10/19   very easy · avg 87%    5.5%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            41.5%  ▃●▃··▅····▃█ beats 1/8     easy · avg 82%         4.9%  several runs
+<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     70.8%  ▂▂▄▂·▂·●·▂█▂ beats 6/14    easy · avg 89%         4.0%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 79.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 29/67   very easy · avg 96%    3.9%  at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.0%  ●······▂·▆·▂ beats 2/8     very hard · avg 29%    3.8%  too hard for it · small run · several r…
+<a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   40.7%  ▂·▄·▂●▄▄█▄▂▆ beats 4/21    easy · avg 74%         3.7%  blunt · at its level
+<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                59.6%  ●█▄···▄··█▄▄ beats 0/8     easy · avg 88%         2.6%  several runs
+<a href="https://aclanthology.org/2023.acl-long.150.pdf">CommonsenseQA</a>                        17.9%  ●·····▂▂▃▂▄▄ beats 5/38    easy · avg 83%         1.1%  sharp · too hard for it · small run
+<a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (lab)</a>                 54.2%  ▅▃·▃··●·▅▅▃█ beats 4/13    medium · avg 75%       1.1%  too hard for it · small run
+<a href="https://arxiv.org/html/2212.12017v3">Winograd Schema Challenge (WSC273…</a>   73.3%  █▃·●▃▃█▅██▅▃ beats 5/21    easy · avg 92%         1.0%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2212.12017v3">MMLU (lab)</a>                           25.9%  ▁●▁▁▁▂▂▅██▆▄ beats 3/214   medium · avg 59%       0.8%  too hard for it · small run
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   51.3%  ▁····●▁·▁·▃█ beats 1/11    hard · avg 63%         0.8%  too hard for it
+<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (lab)</a>                 27.9%  ▁▁●▁▂▄▅▆█▃▃▁ beats 5/155   medium · avg 59%       0.6%  sharp · too hard for it · noisy · small…
+<a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (lab)</a>                 50.5%  █·●▁······▁▁ beats 9/13    medium · avg 71%       0.4%  sharp · too hard for it · noisy · small…
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 17/276  medium · avg 72%       0.4%  too hard for it · noisy
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-1.3b/opt-1.3b.json">SuperGLUE WSC (prompted)</a>             38.5%  ●·······▂·▂▃ beats 1/8     medium · avg 68%       0.3%  blunt · noisy · several runs
+<a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (lab)</a>      42.9%  ▂▃·▂●▂▂▂·▂·▂ beats 6/13    medium · avg 60%       0.2%  blunt · at its level · small run
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             57.9%  ▂·····▅●▅▆▆█ beats 5/24    medium · avg 73%       0.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   67.3%  ▅▅▃█·▃··●·▃▃ beats 9/11    hard · avg 66%         0.0%  blunt · at its level
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-1.3b/opt-1.3b.json">LogiQA (harness)</a>                     22.3%  ●··········▁ beats 5/14    very hard · avg 25%    0.0%  too hard for it · noisy
 </pre>
 
 </details>
@@ -40,14 +69,22 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   61% ▇▇▇▇▇▇▇
-<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        7   38% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 15.8
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   19% ▇▇
+<a name="paper-2210.17323v2-gptq"></a><a href="https://arxiv.org/html/2210.17323v2">GPTQ: Accurate Post-Training Quantizati…</a>        5   15% ▇▇
+<a name="lm-eval-harness-results-2023-05"></a><a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-1.3b/opt-1.3b.json">EleutherAI lm-evaluation-harness result…</a>        8   15% ▇▇
+<a name="acl-2023-emnlp-main-265"></a><a href="https://aclanthology.org/2023.emnlp-main.265.pdf">Preserving Privacy Through Dememorizati…</a>        9   14% ▇▇
+<a name="paper-2212.12017v3-opt-iml"></a><a href="https://arxiv.org/html/2212.12017v3">OPT-IML: Scaling Language Model Instruc…</a>       15   13% ▇▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        7   11% ▇
+<a name="acl-2023-findings-emnlp-976"></a><a href="https://aclanthology.org/2023.findings-emnlp.976.pdf">Tunable Soft Prompts are Messengers in …</a>        5    7% ▇
+<a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1    4% ▇
+<a name="acl-2023-acl-long-150"></a><a href="https://aclanthology.org/2023.acl-long.150.pdf">Symbolic Chain-of-Thought Distillation:…</a>        2    2% ▇
+<a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 14.4
 </pre>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization ([CC BY 4.0](../../licenses/paper-2212.12017v3-opt-iml-CC-BY-4-0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Tunable Soft Prompts are Messengers in Federated Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-976-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Symbolic Chain-of-Thought Distillation: Small Models Can Also \`\`Think'' Step-by-Step ([CC BY 4.0](../../licenses/acl-2023-acl-long-150-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

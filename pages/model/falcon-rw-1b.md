@@ -6,7 +6,9 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 20.2** ±1.6 · #692 of 721 · from 12 benchmark results across 2 sources
+**score 19.5** ±1.9 · #695 of 724 · from 12 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -19,19 +21,19 @@ TII · released 2023-04 · 1.3B params · apache-2.0
 <details><summary>other tests (12)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                63.2%  ▄█●···▄··█▄▄ beats 3/8    easy · avg 92%          14%  at its level
-<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           60.7%  █··●···█▄▄·▄ beats 2/8    easy · avg 90%          14%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Natural Questions (closed book)</a>       9.3%  ▁·▁·▁▂▁●·▅▂█ beats 9/28   medium · avg 58%        14%  typical
-<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        28.2%  ▅····▃●···▅█ beats 3/8    easy · avg 79%          13%  sharp · too hard for it
-<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             63.3%  ▅·▃●··▃··▃·█ beats 3/8    very easy · avg 90%     11%  at its level
-<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            46.6%  ▃▃▃··●····▃█ beats 3/8    easy · avg 83%          11%  at its level
-<a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 74.7%  ▄▄··▄·●·▄·██ beats 3/8    easy · avg 88%         6.3%  blunt · at its level
-<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.5%  █●····█▄▄··▄ beats 2/7    medium · avg 63%       5.8%  blunt
-<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.4%  ●······▂·▆·▂ beats 3/8    medium · avg 54%       4.1%  too hard for it · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-20%2023%3A51%3A12.755266.json">TriviaQA</a>                             31.4%  ▁··▁█▃▃▁●▅▄█ beats 13/28  easy · avg 79%         2.8%  noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-08%2010%3A44%3A07.732591.json">TruthfulQA MC2</a>                       36.0%  ●▃█▆▁▂▅···▁▁ beats 4/31   medium · avg 64%       1.8%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-13%2004%3A45%3A23.642544.json">HaluEval QA hallucination detecti…</a>   42.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 0/27   medium · avg 70%       0.5%  sharp · too hard for it · noisy
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        28.2%  ▅····▃●···▅█ beats 3/8    easy · avg 76%       17%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Natural Questions (closed book)</a>       9.3%  ▁·▁·▁▂▁●·▅▂█ beats 9/28   medium · avg 48%     14%  typical
+<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           60.7%  █··●···█▄▄·▄ beats 2/8    easy · avg 87%       13%  typical
+<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                63.2%  ▄█●···▄··█▄▄ beats 3/8    easy · avg 88%       12%  at its level
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            46.6%  ▃▃▃··●····▃█ beats 3/8    easy · avg 81%       11%  at its level
+<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             63.3%  ▅·▃●··▃··▃·█ beats 3/8    easy · avg 87%       10%  blunt · at its level
+<a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 74.7%  ▄▄··▄·●·▄·██ beats 3/8    easy · avg 87%      6.5%  blunt · at its level
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.5%  █●····█▄▄··▄ beats 2/7    medium · avg 60%    6.1%  blunt
+<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.4%  ●······▂·▆·▂ beats 3/8    hard · avg 49%      4.3%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-20%2023%3A51%3A12.755266.json">TriviaQA</a>                             31.4%  ▁··▁█▃▃▁●▅▄█ beats 13/28  easy · avg 71%      2.5%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-08%2010%3A44%3A07.732591.json">TruthfulQA MC2</a>                       36.0%  ●▃█▆▁▂▅···▁▁ beats 4/31   medium · avg 57%    1.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-13%2004%3A45%3A23.642544.json">HaluEval QA hallucination detecti…</a>   42.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 0/27   hard · avg 66%      0.5%  too hard for it · noisy
 </pre>
 
 </details>
@@ -42,10 +44,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Hallucinations Leaderboard results</a>              4   19% ▇▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 20.2
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Hallucinations Leaderboard results</a>              4   18% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 19.5
 </pre>
 
 <sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

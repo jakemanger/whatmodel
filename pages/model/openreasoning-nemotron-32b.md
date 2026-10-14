@@ -6,7 +6,9 @@
 
 NVIDIA · released 2025-07 · 32.76B params · cc-by-4.0
 
-**score 59.3** ±1.5 · #205 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.3** ±1.5 · #208 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ NVIDIA · released 2025-07 · 32.76B params · cc-by-4.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #177 of 458     99%      3
+coding  ▁▁▁▃▆██●▆▄▃▁   #177 of 460     99%      3
 </pre>
 
-<details><summary>coding · #177 of 458 · 99% of its score</summary>
+<details><summary>coding · #177 of 460 · 99% of its score</summary>
 
-Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    8.3%  ▃▃····▃·█·●▃ beats 6/7    very hard · avg 2.4%     61%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   66.2%  ▄·▄····▄▄▄●▄ beats 6/7    medium · avg 45%         26%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   66.2%  ▄·▄····▄▄▄●▄ beats 6/7    medium · avg 45%         27%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   70.2%  ▄▄···▄·▄●█·▄ beats 4/7    medium · avg 57%         12%  at its level
 </pre>
 

@@ -6,7 +6,9 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 61.2** ±2.3 · #205 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.5** ±2.3 · #205 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Alibaba · released 2025-04 · proprietary
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅▆▅●█▄▁▁▁   #147 of 400*    8.1%      1
+math  ▁▁▃▅█▆●█▄▁▁▁   #150 of 426*    7.3%      1
 </pre>
 
-<details><summary>math · #147 of 400 · 8.1% of its score</summary>
+<details><summary>math · #150 of 426 · 7.3% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    8.1%  typical
+<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    7.3%  typical
 </pre>
 
 </details>
@@ -32,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▅ beats 95/208  hard · avg 40%     89%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▅ beats 95/208  hard · avg 38%     90%  sharp · at its level
 </pre>
 
 </details>
@@ -43,10 +45,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    8% ▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    7% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 61.2
+weighted average                                   = 61.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

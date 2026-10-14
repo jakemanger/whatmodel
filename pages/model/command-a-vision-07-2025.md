@@ -6,7 +6,9 @@
 
 Cohere
 
-**score 56.7** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 57.4** ±3.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -21,8 +23,8 @@ vision &amp; documents  ●··········█   #2 of 2*     94%      2
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (la…</a>   82.0%  ▂▄▄▅▇●█▇▇▂▁▂ beats 27/58   easy · avg 71%     51%  small run
-<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (la…</a>   46.9%  ▂▅▃●▅▆▆▅▆█▆▂ beats 25/100  hard · avg 34%     43%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (la…</a>   82.0%  ▂▄▄▅▇●█▇▇▂▁▂ beats 27/58   easy · avg 70%     50%  small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (la…</a>   46.9%  ▂▅▃●▅▆▆▅▆█▆▂ beats 25/100  hard · avg 32%     44%  at its level · small run
 </pre>
 
 </details>
@@ -35,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 56.7
+weighted average                                   = 57.4
 </pre>
 
 ## How to run it

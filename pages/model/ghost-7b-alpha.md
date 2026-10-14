@@ -6,7 +6,9 @@
 
 Ghost X · released 2024-04 · 7.24B params · other (ghost-7b)
 
-**score 31.8** ±1.8 · #630 of 721 · from 5 benchmark results across 2 sources
+**score 33.5** ±2.0 · #632 of 724 · from 5 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Ghost X · released 2024-04 · 7.24B params · other (ghost-7b)
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #378 of 393*     56%      2
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #380 of 395*     60%      2
 </pre>
 
-<details><summary>chat &amp; writing · #378 of 393 · 56% of its score</summary>
+<details><summary>chat &amp; writing · #380 of 395 · 60% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        6.9%  ▁▂●▃▆▆█▆▄▄▁▁ beats 13/122  medium · avg 39%        40%  too hard for it
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   70.4%  ▂▂·▆·●▃▆█▆▄▂ beats 15/45   very easy · avg 96%     17%  sharp · at its level · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        6.9%  ▁▂●▃▆▆█▆▄▄▁▁ beats 13/122  hard · avg 35%          50%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   70.4%  ▂▂·▆·●▃▆█▆▄▂ beats 15/45   very easy · avg 94%     11%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -33,9 +35,9 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">MedQA (USMLE, 4 options)</a>   40.3%  ▁▁··▄▁▁··●▃█ beats 7/17   easy · avg 76%       25%  sharp
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">MedMCQA</a>                    38.1%  ▂▂··▄▄▂●·▄██ beats 7/17   medium · avg 68%     15%  typical
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">PubMedQA</a>                   69.2%  ▂·▂▆·▄▂●▄▂█▂ beats 9/17   medium · avg 77%    2.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">MedQA (USMLE, 4 options)</a>   40.3%  ▁▁··▄▁▁··●▃█ beats 7/17   medium · avg 71%     24%  sharp
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">MedMCQA</a>                    38.1%  ▂▂··▄▄▂●·▄██ beats 7/17   medium · avg 63%     12%  typical
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">PubMedQA</a>                   69.2%  ▂·▂▆·▄▂●▄▂█▂ beats 9/17   medium · avg 75%    2.0%  blunt · at its level
 </pre>
 
 </details>
@@ -46,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>         2   56% ▇▇▇▇▇▇▇
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">Open Medical-LLM Leaderboard results</a>        3   42% ▇▇▇▇▇
-prior: pull toward the middle                    1% ▇
-weighted average                               = 31.8
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>         2   60% ▇▇▇▇▇▇▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">Open Medical-LLM Leaderboard results</a>        3   38% ▇▇▇▇▇
+prior: pull toward the middle                    2% ▇
+weighted average                               = 33.5
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

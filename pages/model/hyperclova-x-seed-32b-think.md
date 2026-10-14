@@ -6,7 +6,9 @@
 
 NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
-**score 60.9** ±1.9 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 62.4** ±1.8 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,32 +16,32 @@ NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #145 of 342     81%      5
-web search   ●·▂▇▅█▃▄▁▂▁▁    #92 of 92*     12%      1
+agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #145 of 342     85%      5
+web search   ●·▂▇▅█▃▄▁▂▁▁    #92 of 92*     11%      1
 </pre>
 
-<details><summary>agent tasks · #145 of 342 · 81% of its score</summary>
+<details><summary>agent tasks · #145 of 342 · 85% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>             9.9%  ▂▅▆▂▂●▂▂█▅▅▂ beats 13/27  very hard · avg 2.4%     23%  sharp · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>               65.1%  ▁·▅█▆●▂▃▃▂▃▁ beats 52/89  very hard · avg 13%      19%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>                71.6%  ▁····▂▁▃▆●▃▁ beats 30/44  medium · avg 38%         16%  at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>               58.0%  ▁▁·▂▁▃▂▁●▅▂▃ beats 21/42  hard · avg 30%           13%  at its level
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.5%     12%  typical
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>             9.9%  ▂▅▆▂▂●▂▂█▅▅▂ beats 13/27  very hard · avg 2.0%     24%  sharp · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>               65.1%  ▁·▅█▆●▂▃▃▂▃▁ beats 52/89  very hard · avg 12%      21%  sharp · at its level
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>                71.6%  ▁····▂▁▃▆●▃▁ beats 30/44  medium · avg 36%         16%  at its level
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>               58.0%  ▁▁·▂▁▃▂▁●▅▂▃ beats 21/42  hard · avg 28%           13%  at its level
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.5%     11%  typical
 </pre>
 
 </details>
 
-<details><summary>web search · #92 of 92 · 12% of its score</summary>
+<details><summary>web search · #92 of 92 · 11% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.5%     12%  typical
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.5%     11%  typical
 </pre>
 
 </details>
@@ -48,9 +50,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>   57.2%  ▁▁▁▁▂▂●▇█▆▅▃ beats 17/85    medium · avg 65%    9.1%  at its level · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>        87.7%  ▁▁▁▁▁▂▃▅█▃▆● beats 171/183  medium · avg 72%    5.6%  noisy · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>        76.7%  ▁▁▁▃▃▄▇●▄▃▁▁ beats 48/83    easy · avg 84%      2.3%  blunt · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>   57.2%  ▁▁▁▂▂▂●▆█▇▄▂ beats 36/135   medium · avg 62%    6.4%  at its level · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>        87.7%  ▁▁▁▁▁▂▂▅██▆● beats 202/214  medium · avg 67%    5.7%  noisy · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>        76.7%  ▁▁▁▂▂▃▅●▅▃▁▁ beats 59/123   easy · avg 83%      1.5%  blunt · small run
 </pre>
 
 </details>
@@ -62,9 +64,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think (lab)</a>                    7   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1   12% ▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 60.9
+<a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1   11% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 62.4
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,9 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 40.7** ±0.9 · #521 of 721 · from 22 benchmark results across 6 sources
+**score 42.8** ±0.8 · #513 of 724 · from 22 benchmark results across 6 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,31 +16,31 @@ Meta · released 2023-07 · 69B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #411 of 458     20%      3
-math    ▁▂▃●▆▅▄█▄▁▁▁   #302 of 398     11%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #411 of 460     19%      3
+math    ▁▁▃▅█●▄█▄▁▁▁   #216 of 424     17%      2
 </pre>
 
-<details><summary>coding · #411 of 458 · 20% of its score</summary>
+<details><summary>coding · #411 of 460 · 19% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Code Llama 7B (base)](codellama-7b.md) here, though they rank lower overall.
 
 <pre>
-test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                   29.3%  █···█·██●··█ beats 4/5    easy · avg 66%          11%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   60.1%  ▃▃▃·▆●▃█▃▂▂▅ beats 11/25  very easy · avg 86%    4.9%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                        49.8%  ▄··▄·▄··●··▄ beats 3/5    easy · avg 71%         3.6%  at its level
+test                       result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                   29.3%  █···█·██●··█ beats 4/5    medium · avg 60%     11%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   60.1%  ▃▃▃·▆●▃█▃▂▂▅ beats 11/25  easy · avg 83%      4.4%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                        49.8%  ▄··▄·▄··●··▄ beats 3/5    easy · avg 69%      3.9%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #302 of 398 · 11% of its score</summary>
+<details><summary>math · #216 of 424 · 17% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
-test   result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   55.5%  ▆▂▅█▅●▃▆···▂ beats 18/25  easy · avg 82%      7.5%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>    13.8%  █·█·█·█●···█ beats 4/5    medium · avg 35%    3.4%  typical
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   55.5%  ▆▂▅█▅●▃▆···▂ beats 18/25  easy · avg 82%     13%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>    13.8%  █·█·█·█●···█ beats 4/5    hard · avg 32%    3.9%  typical
 </pre>
 
 </details>
@@ -47,21 +49,21 @@ test   result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.0%  ▁·····▂█▂●·▁ beats 20/25    easy · avg 77%          11%  sharp · at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                             36.3%  ▃▂●█▃·█▃▅··▂ beats 4/23     medium · avg 57%        10%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 64.5%  ▁▁▃▃▄█▄▁●··▁ beats 19/25    easy · avg 82%          10%  at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                        56.5%  ▄···▄···█●·▄ beats 4/5      easy · avg 82%          10%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      25.4%  █·····▄▄●··▄ beats 4/5      medium · avg 51%       6.2%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           80.4%  █··█·█·██··● beats 5/5      easy · avg 89%         5.6%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             73.0%  █···██··█·█● beats 5/5      very easy · avg 86%    4.7%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                            85.4%  █···██···██● beats 5/5      very easy · avg 92%    3.5%  typical
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                             79.9%  ▄···▄···●▄·▄ beats 3/5      very easy · avg 89%    2.3%  typical
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                                 82.6%  ▄····▄··█●·▄ beats 4/5      easy · avg 88%         1.5%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 139/276  medium · avg 73%       1.4%  at its level · noisy
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   62.6%  ▂··▁▃▂▂▂█▅▁● beats 24/25    medium · avg 61%       1.2%  blunt · at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   59.0%  ▃·▁▁▂▁▂●█▇▄▁ beats 33/100   medium · avg 68%       1.1%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 101/146  easy · avg 83%         1.0%  at its level · noisy
-<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 97.6%  ▅·▃·▃··█▃··● beats 8/8      easy · avg 92%         0.3%  at its level · noisy
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 64.5%  ▁▁▃▃▄█▄▁●··▁ beats 19/25    easy · avg 82%          12%  at its level · several runs
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                             36.3%  ▃▂●█▃·█▃▅··▂ beats 4/23     medium · avg 54%        11%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.0%  ▁·····▂█▂●·▁ beats 20/25    medium · avg 74%        10%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                        56.5%  ▄···▄···█●·▄ beats 4/5      easy · avg 77%         8.0%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           80.4%  █··█·█·██··● beats 5/5      easy · avg 86%         4.2%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      25.4%  █·····▄▄●··▄ beats 4/5      medium · avg 41%       4.2%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             73.0%  █···██··█·█● beats 5/5      easy · avg 81%         3.1%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                            85.4%  █···██···██● beats 5/5      very easy · avg 91%    2.8%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 139/276  medium · avg 72%       1.7%  at its level · noisy
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                             79.9%  ▄···▄···●▄·▄ beats 3/5      easy · avg 86%         1.5%  blunt
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   59.0%  ▃·▁▁▂▁▂●█▇▄▁ beats 33/100   medium · avg 66%       1.3%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 101/146  easy · avg 82%         1.1%  at its level · noisy
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                                 82.6%  ▄····▄··█●·▄ beats 4/5      easy · avg 87%         1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   62.6%  ▂··▁▃▂▂▂█▅▁● beats 24/25    medium · avg 59%       1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 97.6%  ▅·▃·▃··█▃··● beats 8/8      easy · avg 92%         0.3%  noisy
 </pre>
 
 </details>
@@ -72,14 +74,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts</a>                             12   61% ▇▇▇▇▇▇▇
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5   24% ▇▇▇
-<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   10% ▇
+<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts</a>                             12   58% ▇▇▇▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5   26% ▇▇▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   11% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.7
+weighted average                                   = 42.8
 </pre>
 
 <sub>Licences: Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

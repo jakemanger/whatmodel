@@ -6,7 +6,9 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 38.4** ±1.2 · #744 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.3** ±1.2 · #740 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ DeepSeek · released 2024-01 · 6.91B params · deepseek
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #403 of 469*     66%      1
+coding  ▁▁▁▃●██▇▆▄▃▁   #403 of 471*     65%      1
 </pre>
 
-<details><summary>coding · #403 of 469 · 66% of its score</summary>
+<details><summary>coding · #403 of 471 · 65% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 13/42  easy · avg 78%     66%  sharp · at its level
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 13/42  easy · avg 74%     65%  sharp · at its level
 </pre>
 
 </details>
@@ -32,7 +34,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   33.0%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 20/42  medium · avg 55%     34%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   33.0%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 20/42  medium · avg 52%     35%  at its level
 </pre>
 
 </details>
@@ -45,7 +47,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 38.4
+weighted average                                   = 40.3
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>

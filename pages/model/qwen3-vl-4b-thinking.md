@@ -6,7 +6,9 @@
 
 Alibaba · released 2025-10 · 4.44B params · apache-2.0
 
-**score 56.0** ±0.7 · #246 of 721 · from 27 benchmark results across 3 sources
+**score 56.4** ±0.7 · #250 of 724 · from 27 benchmark results across 3 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -15,9 +17,9 @@ Alibaba · released 2025-10 · 4.44B params · apache-2.0
 <pre>
 task                vs the others          rank  counts  tests
 agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #181 of 302*    2.0%      1
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #249 of 458*    4.3%      1
-chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #201 of 393*    2.8%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #154 of 398*     10%      2
+coding              ▁▁▁▃▆█●▇▆▄▃▁   #252 of 460*    4.1%      1
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #201 of 395*    2.9%      1
+math                ▁▁▃▅█▆●█▄▁▁▁   #154 of 424*     10%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #102 of 147     51%     15
 </pre>
 
@@ -27,64 +29,64 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>   67.3%  █▄··▄█·█●█▄█ beats 8/13   medium · avg 60%    2.0%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>   67.3%  █▄··▄█·█●█▄█ beats 8/13   medium · avg 59%    2.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #249 of 458 · 4.3% of its score</summary>
+<details><summary>coding · #252 of 460 · 4.1% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
-
-<pre>
-test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">LiveCodeBench v6 (window unspecif…</a>   51.3%  ▃▅█▅●▃▅···▃█ beats 9/16   medium · avg 35%    4.3%  at its level
-</pre>
-
-</details>
-
-<details><summary>chat &amp; writing · #201 of 393 · 2.8% of its score</summary>
-
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecified) …</a>   82.6%  ▃··▃···●█▅▃▃ beats 4/11   easy · avg 77%    2.8%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">LiveCodeBench v6 (window unspecif…</a>   51.3%  ▃▅█▅●▃▅···▃█ beats 9/16   hard · avg 34%    4.1%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #154 of 398 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #201 of 395 · 2.9% of its score</summary>
+
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecified) …</a>   82.6%  ▃··▃···●█▅▃▃ beats 4/11   easy · avg 76%    2.9%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #154 of 424 · 10% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>   79.5%  ▃··▃▅·▃█▅●▅█ beats 10/16  medium · avg 69%    5.3%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>              74.5%  ▃·▃▃█··▃▅●·█ beats 9/12   medium · avg 45%    4.6%  sharp · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>   79.5%  ▃··▃▅·▃█▅●▅█ beats 10/16  medium · avg 68%    5.2%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>              74.5%  ▃·▃▃█··▃▅●·█ beats 9/12   medium · avg 43%    4.6%  sharp · at its level
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #102 of 147 · 51% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Mistral Small 3.2 24B](mistral-small-3-2.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions) (la…</a>   50.3%  ▄▂▄▆●▄▆··▄█▂ beats 8/21   medium · avg 39%       9.2%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                     70.8%  ▂···▆▂▂▂▄●▄█ beats 10/16  medium · avg 61%       7.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions (la…</a>   83.9%  ▄··▂▂▂·▂●▄▂█ beats 6/14   easy · avg 74%         6.2%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>           79.5%  ▃··▃▅·▃█▅●▅█ beats 10/16  medium · avg 69%       5.3%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                         73.2%  ▂··▄▂▂·▄█●▄▆ beats 11/16  medium · avg 65%       5.0%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                       57.0%  ▃·█·▅▃▃▃●▅▃█ beats 10/16  medium · avg 46%       4.4%  at its level
-<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   34.7%  ▁·▁·▃▃▁●▃█·▄ beats 9/22   hard · avg 27%         2.5%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>                 64.1%  ▃·▃·▅▃▅▅▃▅●▅ beats 13/16  medium · avg 55%       2.0%  blunt · at its level
-<a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   34.5%  ▃▃·▅·●·█·█▅▅ beats 4/14   hard · avg 24%         1.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                        88.8%  ▂··▂·▂▃·▅▂●█ beats 11/17  easy · avg 85%         1.5%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    73.2%  ▅▃·▃▅▅·●·▃▅█ beats 8/16   easy · avg 71%         1.4%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions) (la…</a>   50.3%  ▄▂▄▆●▄▆··▄█▂ beats 8/21   medium · avg 38%       9.4%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                     70.8%  ▂···▆▂▂▂▄●▄█ beats 10/16  medium · avg 60%       7.6%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions (la…</a>   83.9%  ▄··▂▂▂·▂●▄▂█ beats 6/14   easy · avg 73%         6.3%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>           79.5%  ▃··▃▅·▃█▅●▅█ beats 10/16  medium · avg 68%       5.2%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                         73.2%  ▂··▄▂▂·▄█●▄▆ beats 11/16  medium · avg 64%       5.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                       57.0%  ▃·█·▅▃▃▃●▅▃█ beats 10/16  medium · avg 45%       4.4%  at its level
+<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   34.7%  ▁·▁·▃▃▁●▃█·▄ beats 9/22   hard · avg 26%         2.6%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>                 64.1%  ▃·▃·▅▃▅▅▃▅●▅ beats 13/16  medium · avg 54%       2.1%  blunt · at its level
+<a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   34.5%  ▃▃·▅·●·█·█▅▅ beats 4/14   hard · avg 23%         1.7%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                        88.8%  ▂··▂·▂▃·▅▂●█ beats 11/17  easy · avg 84%         1.5%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    73.2%  ▅▃·▃▅▅·●·▃▅█ beats 8/16   easy · avg 70%         1.4%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                         94.2%  ▃··▅▃●▃█▃█▅▅ beats 4/17   very easy · avg 94%    1.3%  blunt · maxed out
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>                 49.2%  ▂····▂●··▂█▆ beats 3/11   medium · avg 46%       1.2%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>                 49.2%  ▂····▂●··▂█▆ beats 3/11   medium · avg 45%       1.2%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                         73.8%  ▃··▃●·▅▅·█▅▃ beats 2/13   easy · avg 74%         1.0%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                       80.8%  ▅●·▃▃█▃▅▅▃·▃ beats 2/16   easy · avg 84%         0.5%  blunt
 </pre>
@@ -95,14 +97,14 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (lab)</a>      64.1%  ▂····▂·▂▂●▆█ beats 7/14   hard · avg 49%      8.7%  sharp · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                       73.6%  ▄·▄·▄▄▄▄●▄██ beats 6/12   medium · avg 63%    6.8%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                     86.0%  ▃··▃·▃·●▃▅▃▅ beats 5/11   easy · avg 79%      5.5%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      46.8%  ▄··▄·▄▄▄●▄██ beats 5/11   medium · avg 37%    4.3%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   52.0%  ▃··▃▅▃●▃▃▃·█ beats 5/11   medium · avg 43%    3.1%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        53.5%  ▅··●·▅▃▃·█·▃ beats 2/10   hard · avg 51%      3.0%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   68.9%  ▃··█··●█▃▃▅▃ beats 4/13   medium · avg 66%    2.7%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                        69.3%  ▂▂▂·▂●··▆▄·▂ beats 7/13   medium · avg 67%    1.1%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (lab)</a>      64.1%  ▂····▂·▂▂●▆█ beats 7/14   hard · avg 48%      8.8%  sharp · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                       73.6%  ▄·▄·▄▄▄▄●▄██ beats 6/12   medium · avg 62%    6.9%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                     86.0%  ▃··▃·▃·●▃▅▃▅ beats 5/11   easy · avg 79%      5.4%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      46.8%  ▄··▄·▄▄▄●▄██ beats 5/11   medium · avg 36%    4.1%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   52.0%  ▃··▃▅▃●▃▃▃·█ beats 5/11   medium · avg 42%    3.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        53.5%  ▅··●·▅▃▃·█·▃ beats 2/10   hard · avg 50%      2.9%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   68.9%  ▃··█··●█▃▃▅▃ beats 4/13   medium · avg 66%    2.8%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                        69.3%  ▂▂▂·▂●··▆▄·▂ beats 7/13   medium · avg 67%    1.2%  blunt · at its level
 </pre>
 
 </details>
@@ -113,11 +115,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=18">Qwen (lab)</a>                                     25   96% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    2% ▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=18">Qwen (lab)</a>                                     25   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    3% ▇
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.0
+weighted average                                   = 56.4
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

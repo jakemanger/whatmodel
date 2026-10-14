@@ -6,7 +6,9 @@
 
 DeepSeek · released 2023-10 · 1.35B params · deepseek
 
-**score 42.6** ±0.6 · #492 of 721 · from 14 benchmark results across 6 sources
+**score 44.1** ±0.6 · #492 of 724 · from 14 benchmark results across 6 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,25 +16,25 @@ DeepSeek · released 2023-10 · 1.35B params · deepseek
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #337 of 458     83%     10
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #337 of 460     82%     10
 </pre>
 
-<details><summary>coding · #337 of 458 · 83% of its score</summary>
+<details><summary>coding · #337 of 460 · 82% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            65.9%  ▁·▁▁▃▄▆●█▃▁▁ beats 51/99  easy · avg 79%       47%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           60.4%  ▁·▁▁▁▃▄▄●█▃▁ beats 53/99  easy · avg 74%       23%  sharp · at its level
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    6.5%  ▁●·▁▂▄▆█▅▂·▂ beats 1/31   hard · avg 26%      4.3%  sharp
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                54.8%  ▁···▁▁▂▅●█▆▂ beats 28/75  easy · avg 68%      4.0%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           27.2%  ▁··●▅▂█▇▁··▁ beats 1/22   medium · avg 54%    1.3%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           28.7%  ▁·●▃▁█▁▂···▁ beats 1/22   medium · avg 53%    1.2%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 3/47   medium · avg 54%    0.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 4/47   medium · avg 36%    0.7%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   11.7%  ▁▁▁▁▁●▂▂▃█▅▄ beats 7/47   hard · avg 33%      0.6%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    1.9%  ▁▁●······▁▃█ beats 3/47   easy · avg 67%      0.0%  blunt · at its level · noisy
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            65.9%  ▁·▁▁▃▄▆●█▃▁▁ beats 51/99  easy · avg 76%       45%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           60.4%  ▁·▁▁▁▃▄▄●█▃▁ beats 53/99  easy · avg 70%       23%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    6.5%  ▁●·▁▂▄▆█▅▂·▂ beats 1/31   hard · avg 23%      4.5%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                54.8%  ▁···▁▁▂▅●█▆▂ beats 28/75  easy · avg 66%      4.3%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           27.2%  ▁··●▅▂█▇▁··▁ beats 1/22   medium · avg 52%    1.4%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           28.7%  ▁·●▃▁█▁▂···▁ beats 1/22   medium · avg 51%    1.3%  blunt · at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 3/47   medium · avg 50%    1.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 4/47   hard · avg 32%      0.8%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   11.7%  ▁▁▁▁▁●▂▂▃█▅▄ beats 7/47   hard · avg 31%      0.8%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    1.9%  ▁▁●······▁▃█ beats 3/47   easy · avg 66%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -41,9 +43,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         34.9%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 24/42  medium · avg 55%     10%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   29.3%  ▂▁▁●▂▅▇█▆▂▂▂ beats 10/58  medium · avg 51%    3.8%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   22.7%  ●▂·▆▆██▆▅▃▃▃ beats 1/33   medium · avg 41%    3.7%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         34.9%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 24/42  medium · avg 52%     10%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   29.3%  ▂▁▁●▂▅▇█▆▂▂▂ beats 10/58  medium · avg 48%    4.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   22.7%  ●▂·▆▆██▆▅▃▃▃ beats 1/33   medium · avg 39%    3.9%  at its level
 </pre>
 
 </details>
@@ -54,14 +56,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   57% ▇▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   26% ▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2    7% ▇
-<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1    4% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   55% ▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   27% ▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2    8% ▇
+<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1    5% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    2% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 42.6
+weighted average                                   = 44.1
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

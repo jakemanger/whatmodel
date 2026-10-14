@@ -6,7 +6,9 @@
 
 OpenAI · released 2018-06 · 0.117B params · mit
 
-**score 2.7** ±4.7 · #945 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score -0.7** ±4.7 · #944 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,8 +22,8 @@ OpenAI · released 2018-06 · 0.117B params · mit
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.1%  █···●█·█···█ beats 1/4    easy · avg 79%       90%  too hard for it
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    2.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%       —  failed run: Already fixed by chance 0.3…
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.1%  █···●█·█···█ beats 1/4    easy · avg 86%       90%  too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    2.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 72%       —  failed run: Already fixed by chance 0.3…
 </pre>
 
 </details>
@@ -34,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                1   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            10% ▇
-weighted average                        = 2.7
+weighted average                        = -0.7
 </pre>
 
 <sub>Licences: PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt))</sub>

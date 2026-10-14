@@ -6,7 +6,9 @@
 
 OpenAI · released 2025-09 · closed weights
 
-**score 67.5** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.5** ±4.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ OpenAI · released 2025-09 · closed weights
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█▇●▄▂▁   #111 of 549*     90%      1
+coding  ▁▁▁▃▅▇█▇●▄▂▁   #111 of 554*     92%      1
 </pre>
 
-<details><summary>coding · #111 of 549 · 90% of its score</summary>
+<details><summary>coding · #111 of 554 · 92% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   75.0%  ▁··▁·▁▁▁▆█▇● beats 36/45  hard · avg 32%     90%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   75.0%  ▁··▁·▁▁▁▆█▇● beats 36/45  hard · avg 29%     92%  at its level
 </pre>
 
 </details>
@@ -34,8 +36,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>          1   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            10% ▇
+<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>          1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             8% ▇
 weighted average                        = 67.5
 </pre>
 

@@ -6,7 +6,9 @@
 
 MaralGPT · released 2023-12 · 7.24B params · mit
 
-**score 31.7** ±5.0 · #845 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.7** ±4.5 · #839 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ MaralGPT · released 2023-12 · 7.24B params · mit
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   33.4%  ▂●▂▃█▄▃▆▃▅▂▂ beats 5/81   medium · avg 58%     89%  blunt · at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   33.4%  ▂●▂▃█▄▃▆▃▅▂▂ beats 5/81   medium · avg 56%     91%  blunt · at its level
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                           results  share of the score
-<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>        1   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle              11% ▇
-weighted average                          = 31.7
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle               9% ▇
+weighted average                          = 33.7
 </pre>
 
 <sub>Licences: Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

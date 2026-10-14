@@ -6,7 +6,9 @@
 
 Nexusflow · released 2023-12 · 13.02B params · other
 
-**score 28.8** ±2.6 · #655 of 721 · from 5 benchmark results across 2 sources
+**score 30.3** ±3.0 · #652 of 724 · from 5 benchmark results across 2 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,16 +16,16 @@ Nexusflow · released 2023-12 · 13.02B params · other
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #291 of 302*     11%      1
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #291 of 302*     17%      1
 </pre>
 
-<details><summary>agent tasks · #291 of 302 · 11% of its score</summary>
+<details><summary>agent tasks · #291 of 302 · 17% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   36.0%  ▁▁▁▁●▃▅█▅▄▁▁ beats 11/114  medium · avg 52%     11%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   36.0%  ▁▁▁▁●▃▅█▅▄▁▁ beats 11/114  medium · avg 51%     17%  blunt · at its level
 </pre>
 
 </details>
@@ -32,10 +34,10 @@ test     result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Natural Questions (closed book)</a>      14.2%  ▁·▁·▁▂▁▂·●▂█ beats 12/28  medium · avg 58%     67%  typical
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-02-08%2018%3A51%3A34.994633.json">TriviaQA</a>                             42.3%  ▁··▁█▃▃▁▄●▄█ beats 18/28  easy · avg 79%       10%  at its level · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-01-30%2014%3A29%3A26.599300.json">TruthfulQA MC2</a>                       44.4%  ▅▃█●▁▂▅···▁▁ beats 18/31  medium · avg 64%    4.9%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-02-03%2010%3A10%3A35.690425.json">HaluEval QA hallucination detecti…</a>   23.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 12/27  medium · avg 70%    3.6%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Natural Questions (closed book)</a>      14.2%  ▁·▁·▁▂▁▂·●▂█ beats 12/28  medium · avg 48%     64%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-02-08%2018%3A51%3A34.994633.json">TriviaQA</a>                             42.3%  ▁··▁█▃▃▁▄●▄█ beats 18/28  easy · avg 71%      8.8%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-02-03%2010%3A10%3A35.690425.json">HaluEval QA hallucination detecti…</a>   23.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 12/27  hard · avg 66%      4.0%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-01-30%2014%3A29%3A26.599300.json">TruthfulQA MC2</a>                       44.4%  ▅▃█●▁▂▅···▁▁ beats 18/31  medium · avg 57%    2.7%  blunt · at its level
 </pre>
 
 </details>
@@ -46,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Hallucinations Leaderboard results</a>              4   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   11% ▇
-prior: pull toward the middle                        3% ▇
-weighted average                                   = 28.8
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Hallucinations Leaderboard results</a>              4   79% ▇▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   17% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 30.3
 </pre>
 
 <sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

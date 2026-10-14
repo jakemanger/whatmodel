@@ -6,7 +6,9 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 32.7** ±0.6 · #623 of 721 · from 15 benchmark results across 4 sources
+**score 34.7** ±0.6 · #625 of 724 · from 15 benchmark results across 4 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,37 +16,37 @@ Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #423 of 458     92%     10
-math    ▁▂●▅▆▅▄█▄▁▁▁   #356 of 398*    2.0%      1
+coding  ▁▁▁●▆██▇▆▄▃▁    #423 of 460     90%     10
+math    ▁▁▃▅●▆▄█▄▁▁▁   #308 of 424*    3.0%      1
 </pre>
 
-<details><summary>coding · #423 of 458 · 92% of its score</summary>
+<details><summary>coding · #423 of 460 · 90% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            29.3%  ▁·▁▁●▄▆▅█▃▁▁ beats 14/99  easy · avg 79%       48%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           25.6%  ▁·▁▁▁●▄▄▄█▃▁ beats 14/99  easy · avg 74%       17%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 34.8%  █·●▃▃▃▅▃▃▅·▅ beats 4/15   easy · avg 82%      6.9%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   27.8%  ▁·▂▁●▆▅█▄▄▁▂ beats 5/35   medium · avg 65%    4.8%  at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                45.8%  ▁···▁▁▂●▇█▆▂ beats 12/75  easy · avg 68%      3.8%  at its level
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              22.7%  ▄▄·▄●█▄█·█·▄ beats 4/12   medium · avg 53%    2.8%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.3%  ▄●█▃▄▇▄▁▇▃·▁ beats 3/35   medium · avg 49%    2.4%  typical
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           33.5%  ▃▅█●▃▅·▃▃▅·▅ beats 6/15   medium · avg 59%    2.3%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   10.5%  ▁·▁▁▄●█▄█▁▅▅ beats 7/35   medium · avg 56%    1.9%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           32.1%  ▃·▃●█▅▃·▃▃▅▃ beats 4/15   medium · avg 55%    1.9%  blunt · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            29.3%  ▁·▁▁●▄▆▅█▃▁▁ beats 14/99  easy · avg 76%       46%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           25.6%  ▁·▁▁▁●▄▄▄█▃▁ beats 14/99  easy · avg 70%       17%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 34.8%  █·●▃▃▃▅▃▃▅·▅ beats 4/15   easy · avg 81%      7.3%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   27.8%  ▁·▂▁●▆▅█▄▄▁▂ beats 5/35   medium · avg 61%    5.0%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                45.8%  ▁···▁▁▂●▇█▆▂ beats 12/75  easy · avg 66%      4.0%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              22.7%  ▄▄·▄●█▄█·█·▄ beats 4/12   medium · avg 49%    2.9%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.3%  ▄●█▃▄▇▄▁▇▃·▁ beats 3/35   medium · avg 45%    2.5%  typical
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           33.5%  ▃▅█●▃▅·▃▃▅·▅ beats 6/15   medium · avg 56%    2.3%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   10.5%  ▁·▁▁▄●█▄█▁▅▅ beats 7/35   medium · avg 51%    2.0%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           32.1%  ▃·▃●█▅▃·▃▃▅▃ beats 4/15   medium · avg 53%    1.9%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #356 of 398 · 2.0% of its score</summary>
+<details><summary>math · #308 of 424 · 3.0% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   39.7%  ▄▄▄·▄█·●█·█▄ beats 7/12   easy · avg 75%    2.0%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   39.7%  ▄▄▄·▄█·●█·█▄ beats 7/12   easy · avg 76%    3.0%  sharp · at its level
 </pre>
 
 </details>
@@ -53,7 +55,7 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   20.7%  ▂▂●▄▄█▁▄▅▃▁▃ beats 6/42   medium · avg 55%    6.3%  typical
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   20.7%  ▂▂●▄▄█▁▄▅▃▁▃ beats 6/42   medium · avg 52%    6.5%  typical
 </pre>
 
 </details>
@@ -64,12 +66,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   47% ▇▇▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   45% ▇▇▇▇▇
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   20% ▇▇
-<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   17% ▇▇
-<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   16% ▇▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   19% ▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   17% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 32.7
+weighted average                                   = 34.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>

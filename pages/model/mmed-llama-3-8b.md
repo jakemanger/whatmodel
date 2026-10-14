@@ -6,7 +6,9 @@
 
 SJTU MedLLM (Henrychur) · released 2024-05 · 8.03B params · llama3
 
-**score 37.0** ±5.0 · #774 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.5** ±4.5 · #775 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ SJTU MedLLM (Henrychur) · released 2024-05 · 8.03B params · llama3
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   20.4%  ▁▁▁▁▁●▂▃▄▆█▃ beats 10/97  hard · avg 32%     89%  blunt
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   20.4%  ▁▁▁▁▁●▂▃▄▆█▃ beats 10/97  hard · avg 31%     91%  blunt
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            11% ▇
-weighted average                        = 37.0
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             9% ▇
+weighted average                        = 38.5
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>

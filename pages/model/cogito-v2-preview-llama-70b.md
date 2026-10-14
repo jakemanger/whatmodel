@@ -6,7 +6,9 @@
 
 Deep Cogito · released 2025-07 · 70.55B params · llama3.1
 
-**score 61.2** ±7.2 · #206 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.5** ±6.6 · #206 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,8 +22,8 @@ Deep Cogito · released 2025-07 · 70.55B params · llama3.1
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   91.9%  ▃·▁▁▂▁▂▅█▇●▁ beats 97/100   medium · avg 68%     51%  noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.5%  ▁▁▁▁▁▁▁▂▄█●▃ beats 127/146  easy · avg 83%       26%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   91.9%  ▃·▁▁▂▁▂▅█▇●▁ beats 97/100   medium · avg 66%     53%  sharp · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.5%  ▁▁▁▁▁▁▁▂▄█●▃ beats 127/146  easy · avg 82%       27%  noisy
 </pre>
 
 </details>
@@ -32,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   77% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            23% ▇▇▇
-weighted average                        = 61.2
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            20% ▇▇
+weighted average                        = 61.5
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

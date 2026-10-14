@@ -6,31 +6,54 @@
 
 Meta · released 2022-05 · 2.7B params · opt-175b-license-noncommercial
 
-**score 19.1** ±0.9 · #694 of 721 · from 17 benchmark results across 3 sources
+**score 18.7** ±0.7 · #696 of 724 · from 40 benchmark results across 9 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
 <sub>● marks OPT-2.7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-
+task  vs the others          rank  counts  tests
+math  ▁▁▃●█▆▄█▄▁▁▁   #335 of 424*    0.7%      1
 </pre>
 
-<details><summary>other tests (11)</summary>
+<details><summary>math · #335 of 424 · 0.7% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall.
+
+<pre>
+test    result  vs the others in its run  difficulty      counts  why
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">MathQA</a>   23.8%  ▃·▃▃●▅··▃·▃▃ beats 4/10   hard · avg 33%    0.7%  blunt · too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (20)</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">ARC Challenge</a>                        31.3%  ▁·▁··▁●▇▂█▆▃ beats 3/26    easy · avg 85%          24%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">ARC Easy</a>                             54.3%  ▁▁·▁●▄▅▄█▅▁▃ beats 3/26    very easy · avg 90%     15%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">SciQ</a>                                 85.8%  ▁·▁·●·▃▅▃█▄▁ beats 2/26    very easy · avg 98%     14%  several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">WinoGrande</a>                           61.0%  ▁····▁··▁●█▄ beats 5/26    easy · avg 89%          14%  several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">PIQA</a>                                 73.8%  ▁·▁··▁▁●█▅█▂ beats 4/26    easy · avg 88%         8.8%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">BoolQ</a>                                60.3%  ▂●▂▅▆▂▅▆█▂▂▂ beats 2/26    easy · avg 91%         7.2%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">LAMBADA (OpenAI version), last-wo…</a>   63.6%  ▁··▂▁▁●▂▆█▅▃ beats 5/26    very easy · avg 89%    6.9%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">HellaSwag</a>                            60.6%  ▃···▁●▅█▇▃▁▁ beats 4/26    very easy · avg 92%    5.8%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">Social IQA</a>                           40.8%  ▁···▁●█▁▁▁·▁ beats 4/26    medium · avg 59%       1.6%  blunt
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">OpenBookQA</a>                           25.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 1/26    medium · avg 53%       1.4%  too hard for it
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 14/276  medium · avg 73%       0.6%  noisy
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">ARC Challenge</a>                        31.3%  ▁·▁··▁●▇▂█▆▃ beats 3/26    easy · avg 82%          26%  sharp · too hard for it · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">ARC Easy</a>                             54.3%  ▁▁·▁●▄▅▄█▅▁▃ beats 3/26    easy · avg 87%          15%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">WinoGrande</a>                           61.0%  ▁····▁··▁●█▄ beats 5/26    easy · avg 88%          12%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">PIQA</a>                                 73.8%  ▁·▁··▁▁●█▅█▂ beats 4/26    easy · avg 87%         8.6%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">SciQ</a>                                 85.8%  ▁·▁·●·▃▅▃█▄▁ beats 2/26    very easy · avg 97%    7.9%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">HellaSwag</a>                            60.6%  ▃···▁●▅█▇▃▁▁ beats 4/26    very easy · avg 91%    6.7%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">LAMBADA (OpenAI version), last-wo…</a>   63.6%  ▁··▂▁▁●▂▆█▅▃ beats 5/26    very easy · avg 87%    5.3%  blunt · at its level · several runs
+<a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   45.8%  ▂·▄·▂█●▄█▄▂▆ beats 9/21    easy · avg 74%         3.5%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">BoolQ</a>                                60.3%  ▂●▂▅▆▂▅▆█▂▂▂ beats 2/26    easy · avg 88%         3.5%  at its level
+<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     71.7%  ▂▂▄▂·▂·●·▂█▂ beats 7/14    easy · avg 89%         2.8%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 77.0%  ▁·▁▁▁▅●█▆▂▁▁ beats 26/67   very easy · avg 96%    1.9%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.345.pdf">TriviaQA</a>                             21.4%  ▁▁▂▂▄●▃▆▅█▅▂ beats 24/80   easy · avg 74%         1.7%  small run
+<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   19.9%  ●█···██····█ beats 0/4     easy · avg 66%         1.6%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">Social IQA</a>                           40.8%  ▁···▁●█▁▁▁·▁ beats 4/26    hard · avg 56%         0.9%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">OpenBookQA</a>                           25.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 1/26    hard · avg 48%         0.8%  too hard for it
+<a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Mintaka (English) closed-book zer…</a>   19.8%  ▄····●···▄·█ beats 1/4     medium · avg 48%       0.6%  blunt
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 14/276  medium · avg 72%       0.4%  noisy
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             60.8%  ▂·····▅█●▆▆█ beats 11/24   medium · avg 73%       0.2%  blunt · at its level
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-2.7b/opt-2.7b.json">SuperGLUE WSC (prompted)</a>             63.5%  █·······▂·▂● beats 8/8     medium · avg 68%       0.2%  blunt · noisy
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-2.7b/opt-2.7b.json">LogiQA (harness)</a>                     21.0%  ●··········▁ beats 4/14    very hard · avg 25%    0.0%  too hard for it · noisy
 </pre>
 
 </details>
@@ -41,14 +64,30 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">Stability AI</a>                                   10   65% ▇▇▇▇▇▇▇▇
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   34% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">Stability AI</a>                                   10   33% ▇▇▇▇
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   18% ▇▇
+<a name="paper-2210.17323v2-gptq"></a><a href="https://arxiv.org/html/2210.17323v2">GPTQ: Accurate Post-Training Quantizati…</a>        5   15% ▇▇
+<a name="lm-eval-harness-results-2023-05"></a><a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-2.7b/opt-2.7b.json">EleutherAI lm-evaluation-harness result…</a>        8   15% ▇▇
+<a name="acl-2023-emnlp-main-265"></a><a href="https://aclanthology.org/2023.emnlp-main.265.pdf">Preserving Privacy Through Dememorizati…</a>        6   10% ▇
+<a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1    4% ▇
+<a name="acl-2023-nlrse-1-7"></a><a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Knowledge-Augmented Language Model Prom…</a>        2    2% ▇
+<a name="acl-2023-findings-emnlp-345"></a><a href="https://aclanthology.org/2023.findings-emnlp.345.pdf">Adaptation with Self-Evaluation to Impr…</a>        1    2% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 19.1
+weighted average                                   = 18.7
 </pre>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Knowledge-Augmented Language Model Prompting for Zero-Shot Knowledge Graph Question Answering ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-7-CC-BY-4-0.txt)) · Adaptation with Self-Evaluation to Improve Selective Prediction in LLMs ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-345-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test   score  why
+Adapting Language Mod…  <a href="https://aclanthology.org/2023.emnlp-main.232.pdf">BoolQ</a>  55.8%  only model in this source's run
+Adapting Language Mod…  <a href="https://aclanthology.org/2023.emnlp-main.232.pdf">COPA</a>   66.8%  only model in this source's run
+</pre>
+
+</details>
 
 ## How to run it
 

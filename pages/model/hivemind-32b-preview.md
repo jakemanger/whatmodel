@@ -6,7 +6,9 @@
 
 PrentisAI (HiveLabsAI) · released 2026-04 · 32.76B params · other (proprietary)
 
-**score 73.7** ±4.1 · #54 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 73.1** ±3.8 · #51 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ PrentisAI (HiveLabsAI) · released 2026-04 · 32.76B params · other (proprietar
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1351.0  ▁·▂▁▄▅▅▃█●▁▁ beats 59/62  avg 1045       92%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1351.0  ▁·▂▁▄▅▅▃█●▁▁ beats 59/62  avg 1031       93%  typical
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        8% ▇
-weighted average                                   = 73.7
+<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 73.1
 </pre>
 
 <sub>Licences: EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>

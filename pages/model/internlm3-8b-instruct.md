@@ -6,7 +6,9 @@
 
 Shanghai AI Laboratory (InternLM) · released 2025-01 · 8.8B params · apache-2.0
 
-**score 54.2** ±10.5 · #345 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.8** ±10.1 · #346 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -20,7 +22,7 @@ Shanghai AI Laboratory (InternLM) · released 2025-01 · 8.8B params · apache-2
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.0%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 86/140  very easy · avg 94%     50%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.0%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 86/140  very easy · avg 94%     54%  blunt · maxed out · noisy
 </pre>
 
 </details>
@@ -31,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   50% ▇▇▇▇▇▇
-prior: pull toward the middle                50% ▇▇▇▇▇▇
-weighted average                            = 54.2
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   54% ▇▇▇▇▇▇▇
+prior: pull toward the middle                46% ▇▇▇▇▇
+weighted average                            = 54.8
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

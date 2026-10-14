@@ -6,7 +6,9 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 43.8** ±1.7 · #470 of 721 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.3** ±1.6 · #467 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,28 +16,28 @@ Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk;
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #310 of 458*     17%      1
-math    ▁▂▃●▆▅▄█▄▁▁▁   #295 of 398*     14%      1
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #310 of 460*     15%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #246 of 424*     22%      1
 </pre>
 
-<details><summary>coding · #310 of 458 · 17% of its score</summary>
+<details><summary>coding · #310 of 460 · 15% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   82.5%  ▃▃▃·▆▃▃█▃▂●▅ beats 22/25  very easy · avg 86%     17%  sharp · at its level
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   82.5%  ▃▃▃·▆▃▃█▃▂●▅ beats 22/25  easy · avg 83%     15%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #295 of 398 · 14% of its score</summary>
+<details><summary>math · #246 of 424 · 22% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   54.0%  ▆▂▅█▅●▃▆···▂ beats 17/25  easy · avg 73%     14%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   54.0%  ▆▂▅█▅●▃▆···▂ beats 17/25  easy · avg 72%     22%  sharp · at its level
 </pre>
 
 </details>
@@ -44,9 +46,9 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 64.3%  ▁·····▂█▂●·▁ beats 18/25  easy · avg 77%       46%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           53.6%  ▁▁▃▃▄●▄▁█··▁ beats 14/25  easy · avg 74%       16%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   60.6%  ▂··▁▃▂▂▂█▅●▂ beats 23/25  medium · avg 61%    4.9%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 64.3%  ▁·····▂█▂●·▁ beats 18/25  medium · avg 74%     40%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           53.6%  ▁▁▃▃▄●▄▁█··▁ beats 14/25  medium · avg 72%     18%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   60.6%  ▂··▁▃▂▂▂█▅●▂ beats 23/25  medium · avg 59%    4.1%  blunt · at its level
 </pre>
 
 </details>
@@ -59,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                         5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 43.8
+weighted average                        = 45.3
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>

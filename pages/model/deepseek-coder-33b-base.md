@@ -6,7 +6,9 @@
 
 DeepSeek · released 2023-10 · 33.34B params · deepseek
 
-**score 40.9** ±0.6 · #518 of 721 · from 11 benchmark results across 5 sources
+**score 42.7** ±0.6 · #517 of 724 · from 11 benchmark results across 5 sources
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,33 +16,33 @@ DeepSeek · released 2023-10 · 33.34B params · deepseek
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #368 of 458     85%      6
-math    ▁▂▃●▆▅▄█▄▁▁▁   #307 of 398*    2.2%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #368 of 460     84%      6
+math    ▁▁▃▅●▆▄█▄▁▁▁   #245 of 424*    3.6%      1
 </pre>
 
-<details><summary>coding · #368 of 458 · 85% of its score</summary>
+<details><summary>coding · #368 of 460 · 84% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    51.2%  ▁·▁▁▃▄●▅█▃▁▁ beats 36/99  easy · avg 79%       55%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   44.5%  ▁·▁▁▁▃▄●▄█▃▁ beats 36/99  easy · avg 74%       21%  sharp · at its level
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      40.2%  ▄▄·▄██▄█·█·● beats 12/12  medium · avg 53%    3.6%  at its level
-<a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         73.2%  ▄▄▄██▄·▄█·▄● beats 12/12  easy · avg 82%      3.4%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   46.5%  ▁··▁▅▂█●▁··▁ beats 18/22  medium · avg 54%    1.2%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   48.6%  ▁·▂▃▁█▁●···▁ beats 19/22  medium · avg 53%    1.1%  blunt · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    51.2%  ▁·▁▁▃▄●▅█▃▁▁ beats 36/99  easy · avg 76%       53%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   44.5%  ▁·▁▁▁▃▄●▄█▃▁ beats 36/99  easy · avg 70%       21%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      40.2%  ▄▄·▄██▄█·█·● beats 12/12  medium · avg 49%    3.6%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         73.2%  ▄▄▄██▄·▄█·▄● beats 12/12  easy · avg 81%      3.6%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   46.5%  ▁··▁▅▂█●▁··▁ beats 18/22  medium · avg 52%    1.3%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   48.6%  ▁·▂▃▁█▁●···▁ beats 19/22  medium · avg 51%    1.2%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #307 of 398 · 2.2% of its score</summary>
+<details><summary>math · #245 of 424 · 3.6% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   58.7%  ▄▄▄·▄█·██·●▄ beats 11/12  easy · avg 75%    2.2%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   58.7%  ▄▄▄·▄█·██·●▄ beats 11/12  easy · avg 76%    3.6%  sharp · at its level
 </pre>
 
 </details>
@@ -49,8 +51,8 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         36.8%  ▂▂▃▄▄█●▄▅▃▁▃ beats 25/42  medium · avg 55%    8.7%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   46.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 45/58  medium · avg 51%    3.4%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         36.8%  ▂▂▃▄▄█●▄▅▃▁▃ beats 25/42  medium · avg 52%    9.1%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   46.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 45/58  medium · avg 48%    3.6%  at its level
 </pre>
 
 </details>
@@ -61,13 +63,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   51% ▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   24% ▇▇▇
-<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   19% ▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   48% ▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   25% ▇▇▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   21% ▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    4% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.9
+weighted average                                   = 42.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

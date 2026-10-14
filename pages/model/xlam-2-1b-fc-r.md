@@ -6,7 +6,9 @@
 
 Salesforce · released 2025-03 · 1.54B params · cc-by-nc-4.0
 
-**score 51.0** ±3.9 · #415 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.0** ±3.8 · #415 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## What it's good at
 
@@ -14,17 +16,17 @@ Salesforce · released 2025-03 · 1.54B params · cc-by-nc-4.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #246 of 336*     93%      2
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #246 of 336*     94%      2
 </pre>
 
-<details><summary>agent tasks · #246 of 336 · 93% of its score</summary>
+<details><summary>agent tasks · #246 of 336 · 94% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   30.4%  ▁▁▁▂█●▅▅▆▂▂▂ beats 32/77   hard · avg 32%       62%  at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           58.2%  ▁▁▁▁▁▃▅█●▄▁▁ beats 74/114  medium · avg 52%     31%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   30.4%  ▁▁▁▂█●▅▅▆▂▂▂ beats 32/77   hard · avg 31%       62%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           58.2%  ▁▁▁▁▁▃▅█●▄▁▁ beats 74/114  medium · avg 51%     32%  blunt · at its level
 </pre>
 
 </details>
@@ -35,9 +37,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        7% ▇
-weighted average                                   = 51.0
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 52.0
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
