@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-07 · 284B params (13B active) · mit
 
-**score 74.0** ±0.6 · #47 of 719 · from 40 benchmark results across 8 sources
+**score 74.0** ±0.6 · #49 of 721 · from 40 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,26 +14,26 @@ DeepSeek · released 2026-07 · 284B params (13B active) · mit
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #43 of 300     17%      9
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #45 of 302     17%      9
 coding       ▁▁▁▃▆██▇▆▄●▁   #33 of 458     14%      4
 math         ▁▂▃▅▆▅▄█●▁▁▁   #39 of 398     33%      4
 web search   ●█·········█     #3 of 3*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #43 of 300 · 17% of its score</summary>
+<details><summary>agent tasks · #45 of 302 · 17% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>             82.7%  ▁·▁·▁▁▄▃▄█●▇ beats 42/56  hard · avg 26%          4.8%  small run · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>             82.7%  ▁·▁·▁▁▄▃▄█●█ beats 42/58  hard · avg 26%          4.9%  small run · several runs
 <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72 God…</a>   31.9%  █▄·█·●·██▄·▄ beats 5/11   very hard · avg 4.7%    2.7%  at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>              7.0%  ▁·▁··●▇▇▅██▃ beats 2/30   very hard · avg 0.3%    2.5%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>        54.4%  ▂····▁▁●▆██▆ beats 4/28   hard · avg 21%          2.0%  at its level · small run · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>              7.0%  ▁·▁··●▇▇▅██▃ beats 2/30   very hard · avg 0.3%    2.4%  sharp · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>        54.4%  ▂····▁▁●▆██▇ beats 4/29   hard · avg 21%          2.0%  at its level · small run · several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">Toolathlon-Verified (lab)</a>            70.3%  ▂·▂▂▅▃···●██ beats 8/18   hard · avg 33%          1.3%  blunt · at its level · small run · seve…
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam with tools (…</a>   51.5%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 32/54  hard · avg 17%          1.2%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, offici…</a>   25.2%  ●··········▄ beats 0/2    very hard · avg 6.3%    0.9%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   25.2%  ▂·▂·●▂···▂▄▄ beats 2/11   very hard · avg 7.2%    0.8%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   25.2%  ▂·▂·●▂···▂▄▄ beats 2/11   very hard · avg 7.1%    0.8%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>              7.6%  ●··█·······█ beats 0/2    very hard · avg 2.1%    0.5%  noisy · small run
 </pre>
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1581.0  ▁▂▄▃▅█▄▇●▄▁▁ beats 90/119  avg 983                 6.4%  sharp
 <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72 God…</a>   31.9%  █▄·█·●·██▄·▄ beats 5/11    very hard · avg 4.7%    2.7%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   77.9%  ▁▁▁▁·▁▂▃▅▃●▇ beats 29/49   hard · avg 18%          2.6%  at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>        54.4%  ▂····▁▁●▆██▆ beats 4/28    hard · avg 21%          2.0%  at its level · small run · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>        54.4%  ▂····▁▁●▆██▇ beats 4/29    hard · avg 21%          2.0%  at its level · small run · several runs
 </pre>
 
 </details>
@@ -91,7 +91,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam (lab)</a>           37.8%  ▁▁▁▃▆▆▇██●▁▃ beats 87/104   very hard · avg 5.3%    1.9%  at its level · small run
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-Pro (Daekeun Kim)</a>              79.2%  ●·▄█·····▄·▄ beats 0/5      medium · avg 40%        1.9%  typical
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            91.9%  ▄▄▄▂▂█▂▄▂●▂▄ beats 17/22    medium · avg 63%        1.5%  maxed out
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">AutomationBench (Public) (lab)</a>       25.1%  ●··········█ beats 0/1      very hard · avg 6.2%    1.5%  at its level · small run · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">AutomationBench (Public) (lab)</a>       25.1%  ●··········█ beats 0/1      very hard · avg 6.3%    1.5%  at its level · small run · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    33.6%  ▁▁▃▂▃▃●▆█▃▂▅ beats 25/78    very hard · avg 8.1%    1.4%  at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>         30.9%  ▄··●···▄·▄·█ beats 1/5      very hard · avg 7.3%    1.3%  at its level · small run
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">MuSR Korean (Daekeun Kim)</a>            81.2%  █·····●██·██ beats 1/5      medium · avg 42%        1.2%  typical

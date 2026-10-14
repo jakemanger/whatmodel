@@ -6,7 +6,7 @@
 
 Cohere · released 2024-04 · 104B params · cc-by-nc-4.0
 
-**score 44.5** ±0.5 · #448 of 719 · from 20 benchmark results across 12 sources
+**score 44.5** ±0.5 · #450 of 721 · from 20 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Cohere · released 2024-04 · 104B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #261 of 300*    0.5%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #264 of 302*    0.5%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #338 of 458     48%      5
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #267 of 393     10%      3
 math            ▁▂●▅▆▅▄█▄▁▁▁   #350 of 398*    9.1%      2
 </pre>
 
-<details><summary>agent tasks · #261 of 300 · 0.5% of its score</summary>
+<details><summary>agent tasks · #264 of 302 · 0.5% of its score</summary>
 
-Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
@@ -77,7 +77,7 @@ test                                result  vs the others in its run  difficulty
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             68.6%  ▁·▁▁▄●▄▅█▄▂▁ beats 14/53  easy · avg 77%          12%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           32.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 32/61  medium · avg 41%       8.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  36.7624 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 22/52  avg 45.277 WB-Score    2.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  36.7624 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 22/52  avg 45.276 WB-Score    2.7%  sharp
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>             44.1%  ●····▃▅·▃▅·█ beats 0/9    medium · avg 60%       2.3%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             13.9%  ▁▁▃●██▁▁·▁▁▁ beats 19/57  hard · avg 18%         2.0%  sharp
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institute, I…</a>             31.9%  ●··▃▃▃▃·▃·▃█ beats 0/9    hard · avg 41%         1.8%  sharp

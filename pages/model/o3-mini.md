@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-01 · proprietary
 
-**score 65.3** ±0.6 · #139 of 719 · from 50 benchmark results across 19 sources
+**score 65.3** ±0.6 · #141 of 721 · from 50 benchmark results across 19 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ OpenAI · released 2025-01 · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #238 of 300    8.3%      7
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #240 of 302    8.3%      7
 coding          ▁▁▁▃▆██▇●▄▃▁   #123 of 458     27%     10
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #138 of 393    8.9%      5
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #120 of 398     21%      9
 web search      ▂▁▂▆▄█▃●▁▁·▁     #8 of 80*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #238 of 300 · 8.3% of its score</summary>
+<details><summary>agent tasks · #240 of 302 · 8.3% of its score</summary>
 
 Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -79,7 +79,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            18.6%  ▂··▁▁●▄▄█▅▃▃ beats 11/82    very hard · avg 1.2%    8.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            18.6%  ▂··▁▁●▄▄█▅▃▃ beats 11/82    very hard · avg 1.2%    8.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             76.9%  ▃▃▄▃▃▃▇●█▃▂▅ beats 110/193  very hard · avg 8.6%    2.3%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         96.5%  ▂▂▅▆▄█▆▃▅▂●▄ beats 85/92    hard · avg 33%          2.2%  sharp
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspect E…</a>   96.9%  ▄··██▄··▄·▄● beats 8/9      medium · avg 53%        2.1%  sharp
@@ -141,7 +141,7 @@ source                                    results  share of the score
 <a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft</a>                                       9   10% ▇
 <a name="openai-simple-evals-readme"></a><a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">OpenAI simple-evals README benchmark re…</a>        7   10% ▇
 <a name="vector-inspect-evals-leaderboard"></a><a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">Vector Institute Evaluation Leaderboard</a>         4    9% ▇
-<a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1    8% ▇
+<a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1    7% ▇
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             1    6% ▇
 <a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2    5% ▇
 <a name="scicode-readme-leaderboard"></a><a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode leaderboard</a>                             1    4% ▇

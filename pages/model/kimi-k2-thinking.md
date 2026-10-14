@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-11 · 1000B params (32B active) · modified-mit
 
-**score 66.9** ±1.1 · #112 of 719 · from 13 benchmark results across 5 sources
+**score 66.9** ±1.1 · #114 of 721 · from 13 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Moonshot AI · released 2025-11 · 1000B params (32B active) · modified-mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #115 of 300     26%      4
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #118 of 302     26%      4
 coding          ▁▁▁▃▆██▇●▄▃▁   #124 of 458*     24%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃    #77 of 393*     11%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #101 of 398*     10%      2
-web search      ██···█····●█       #2 of 5*    3.8%      1
+web search      ██···█····●█       #2 of 5*    3.9%      1
 </pre>
 
-<details><summary>agent tasks · #115 of 300 · 26% of its score</summary>
+<details><summary>agent tasks · #118 of 302 · 26% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   35.7%  ▃··▃·▃▃██●▃▅ beats 11/14  very hard · avg 5.9%     10%  sharp · at its level
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   74.3%  ●······▄█·▄▄ beats 0/5    medium · avg 46%        7.2%  typical
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0</a>                   35.7%  ▂▂▅▅●███▆▂▃▃ beats 9/36   very hard · avg 11%     5.2%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>                           41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%          3.8%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>                           41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%          3.9%  at its level · small run
 </pre>
 
 </details>
@@ -70,13 +70,13 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>web search · #2 of 5 · 3.8% of its score</summary>
+<details><summary>web search · #2 of 5 · 3.9% of its score</summary>
 
 Beats [Kimi K2.5](kimi-k2-5.md) here, though they rank higher overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>   41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%    3.8%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>   41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%    3.9%  at its level · small run
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Meta · released 2026-07 · closed weights
 
-**score 74.9** ±1.0 · #42 of 719 · from 9 benchmark results across 4 sources
+**score 74.9** ±1.0 · #44 of 721 · from 9 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ Meta · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁   #51 of 300*     27%      2
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁   #53 of 302*     27%      2
 coding              ▁▁▁▃▆██▇▆●▃▁   #38 of 458*     17%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #10 of 393*     10%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁   #35 of 398*     32%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #22 of 147*     10%      2
 </pre>
 
-<details><summary>agent tasks · #51 of 300 · 27% of its score</summary>
+<details><summary>agent tasks · #53 of 302 · 27% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0488 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 12/49  avg -0.310 IPS           19%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0488 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 12/49  avg -0.310 IPS           20%  sharp
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        40.5%  ▃▃▂▃·▆▃▂█●▅▂ beats 20/25  very hard · avg 4.2%    7.2%  at its level
 </pre>
 
@@ -74,7 +74,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.m
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1281.1  ▁▁▂▂▂▂▄▅▅▆█● beats 127/145  avg 1068      6.7%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1479.5  ▁▁▃▃▄▃▇█▅●▄▅ beats 29/37    avg 1336      3.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1479.5  ▁▁▃▃▄▃▇█▅●▄▅ beats 29/37    avg 1336      3.2%  blunt
 </pre>
 
 </details>

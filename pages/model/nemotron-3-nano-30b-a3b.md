@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 57.4** ±0.9 · #227 of 719 · from 22 benchmark results across 9 sources
+**score 57.4** ±0.9 · #229 of 721 · from 22 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁     #175 of 300*     17%      5
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁     #177 of 302*     17%      5
 coding          ▁▁▁▃▆█●▇▆▄▃▁      #250 of 458     10%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃     #208 of 393*    7.5%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁      #143 of 398     25%      4
 web search                     not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · #175 of 300 · 17% of its score</summary>
+<details><summary>agent tasks · #177 of 302 · 17% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 test                      result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>            89.1%  ▁·▁▁▁▂▅▆█●▅▁ beats 111/133  medium · avg 64%    8.5%  sharp
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>            89.9%  ▁▁▁▂▁▂●█▆▂·▁ beats 22/49    medium · avg 65%    7.0%  sharp
-<a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>      70.4%  ▁▁·▁▁▁●▅█▄▂▃ beats 10/42    medium · avg 42%    5.9%  at its level
+<a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>      70.4%  ▁▁·▁▁▁●▅█▄▂▃ beats 10/42    medium · avg 42%    6.0%  at its level
 <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>   84.6%  ▁▁▁▃▁▅▅●██▁▄ beats 15/31    easy · avg 69%      4.0%  small run
 </pre>
 

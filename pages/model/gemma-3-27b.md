@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 27.4B params · gemma
 
-**score 52.6** ±0.5 · #305 of 719 · from 85 benchmark results across 29 sources
+**score 52.6** ±0.5 · #307 of 721 · from 85 benchmark results across 29 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2025-03 · 27.4B params · gemma
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #236 of 300    7.0%      7
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #238 of 302    7.0%      7
 coding              ▁▁▁▃▆●█▇▆▄▃▁   #288 of 458     14%     11
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #145 of 393    7.3%      6
 math                ▁▂▃▅▆●▄█▄▁▁▁   #196 of 398     15%      8
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #107 of 147     11%     14
 </pre>
 
-<details><summary>agent tasks · #236 of 300 · 7.0% of its score</summary>
+<details><summary>agent tasks · #238 of 302 · 7.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

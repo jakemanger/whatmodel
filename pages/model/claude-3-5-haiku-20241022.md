@@ -14,7 +14,7 @@ Anthropic · released 2024-10 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▆▅▄▄▃▂▁    #276 of 340    4.1%      4
+agent tasks         ▁▁▂●█▆▅▄▄▃▃▁    #278 of 342    4.1%      4
 coding              ▁▁▁▃▅▇█●▅▄▃▁    #215 of 524     22%      3
 chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #218 of 463*    7.1%      2
 math                ▁▂▃▅●▅▅█▄▁▁▁    #298 of 462     21%      4
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #130 of 182*    3
 web search          ▂·▂▇▅█▃●▁▂▁▁     #12 of 92*    1.3%      1
 </pre>
 
-<details><summary>agent tasks · #276 of 340 · 4.1% of its score</summary>
+<details><summary>agent tasks · #278 of 342 · 4.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

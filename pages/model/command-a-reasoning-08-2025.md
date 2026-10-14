@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 54.7** ±2.1 · #271 of 719 · from 6 benchmark results across 2 sources
+**score 54.7** ±2.1 · #273 of 721 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #148 of 300     58%      3
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #150 of 302     58%      3
 coding       ▁▁▁▃▆██●▆▄▃▁   #183 of 458*    8.9%      1
 math         ▁▂▃▅▆●▄█▄▁▁▁   #209 of 398*     25%      1
 </pre>
 
-<details><summary>agent tasks · #148 of 300 · 58% of its score</summary>
+<details><summary>agent tasks · #150 of 302 · 58% of its score</summary>
 
 Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

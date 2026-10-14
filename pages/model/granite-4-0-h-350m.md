@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.34B params · apache-2.0
 
-**score 26.8** ±1.1 · #662 of 719 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
+**score 26.8** ±1.1 · #664 of 721 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2025-10 · 0.34B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #268 of 300*    1.7%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #270 of 302*    1.7%      1
 coding          ●··········█        #4 of 4     40%      7
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #330 of 393*    7.4%      2
 math            ▁●▃▅▆▅▄█▄▁▁▁    #392 of 398     25%      5
 </pre>
 
-<details><summary>agent tasks · #268 of 300 · 1.7% of its score</summary>
+<details><summary>agent tasks · #270 of 302 · 1.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 

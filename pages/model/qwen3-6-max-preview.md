@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 72.3** ±1.2 · #61 of 719 · from 8 benchmark results across 2 sources
+**score 72.3** ±1.2 · #63 of 721 · from 8 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2026-04 · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #68 of 300*     24%      1
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #70 of 302*     24%      1
 coding          ▁▁▁▃▆██▇▆●▃▁   #55 of 458*     46%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #42 of 393*     12%      1
 math            ▁▂▃▅▆▅▄█●▁▁▁   #64 of 398*    3.9%      1
 </pre>
 
-<details><summary>agent tasks · #68 of 300 · 24% of its score</summary>
+<details><summary>agent tasks · #70 of 302 · 24% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                       result  vs the others in its run   difficulty      co
 
 <details><summary>chat &amp; writing · #42 of 393 · 12% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -72,7 +72,7 @@ test                          result  vs the others in its run    difficulty    
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   87.4%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 156/208  hard · avg 40%           12%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   19.0%  █··▂▃●▄█▂▃▁▁ beats 31/74    very hard · avg 9.4%     11%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 77/135   very hard · avg 5.9%    8.5%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              52.0%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 57/78    very hard · avg 8.1%    4.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              52.0%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 57/78    very hard · avg 8.1%    4.8%  at its level
 </pre>
 
 </details>

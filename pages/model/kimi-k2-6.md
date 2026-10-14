@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-04 · 1000B params (32B active) · modified-mit
 
-**score 72.7** ±0.5 · #57 of 719 · from 56 benchmark results across 17 sources
+**score 72.7** ±0.5 · #59 of 721 · from 56 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Moonshot AI · released 2026-04 · 1000B params (32B active) · modified-mit
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #52 of 300     20%     13
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #55 of 302     20%     13
 coding              ▁▁▁▃▆██▇▆●▃▁    #49 of 458     17%      7
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #41 of 393*    2.2%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #41 of 398     30%     11
@@ -22,9 +22,9 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #37 of 147    3.
 web search          ▂▁▂●▄█▃▃▁▁·▁     #56 of 80    3.1%      3
 </pre>
 
-<details><summary>agent tasks · #52 of 300 · 20% of its score</summary>
+<details><summary>agent tasks · #55 of 302 · 20% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -64,7 +64,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>chat &amp; writing · #41 of 393 · 2.2% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -80,13 +80,13 @@ Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Gemini 3.6 Fl
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            57.2%  ▂··▁▁▃▄▄●▅▃▃ beats 42/82    very hard · avg 1.2%     11%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               25.6%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 27/63    very hard · avg 0.1%    6.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               25.6%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 27/63    very hard · avg 0.1%    6.9%  sharp
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   43.0%  ▁▁▁▁█▇●▃▁▃·▃ beats 15/24    very hard · avg 9.1%    2.9%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   55.8%  █▃▅·●▃▃·▅·▃▃ beats 7/14     hard · avg 15%          2.5%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   71.7%  ▂··▄▂▄█▆▆▄●█ beats 19/23    hard · avg 23%          1.9%  at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   15.6%  █·▆●▂·▂▂···▂ beats 9/14     very hard · avg 0.8%    1.0%  sharp · noisy
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.7%  ▃▂▂▃●▃▂·▃··▂ beats 7/16     very hard · avg 0.7%    1.0%  sharp · noisy
 <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                      91.1%  ▄····▄·▄▄·●▄ beats 5/6      medium · avg 40%        0.9%  typical
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.7%  ▃▂▂▃●▃▂·▃··▂ beats 7/16     very hard · avg 0.8%    0.9%  sharp · noisy
 <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                            95.4%  ▄·▄·▄▄··●··▄ beats 4/6      medium · avg 56%        0.7%  sharp · maxed out · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             96.1%  ▃▃▄▃▃▃▇▇█●▂▅ beats 167/193  very hard · avg 8.6%    0.7%  sharp · maxed out · noisy
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>   35.9%  ▄··▄▄·●▄█▄·▄ beats 3/8      very hard · avg 11%     0.5%  at its level
@@ -125,9 +125,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 178/208  hard · avg 45%          5.3%  sharp · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 178/208  hard · avg 45%          5.2%  sharp · several runs
 <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>                 34.8%  ▄··█▄··▄·●·▄ beats 5/6      very hard · avg 5.7%    4.6%  at its level · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                     2.4%  ●▂·▆█▂▆▆▆▆·▄ beats 1/24     very hard · avg 0.4%    3.4%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                     2.4%  ●▂·▆█▂▆▆▆▆·▄ beats 1/24     very hard · avg 0.4%    3.3%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           21.7%  ●▆▆▆▆▂▅▂▂▂·▅ beats 2/30     very hard · avg 1.3%    3.2%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>            91.0%  ▄█▄▄·▄·····● beats 6/6      hard · avg 47%          3.0%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         18.0%  █··▂▃●▄█▂▃▁▁ beats 30/74    very hard · avg 9.4%    2.2%  sharp · noisy

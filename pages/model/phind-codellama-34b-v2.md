@@ -6,7 +6,7 @@
 
 Phind · released 2023-08 · 34B params · llama2
 
-**score 46.6** ±0.7 · #407 of 719 · from 6 benchmark results across 3 sources
+**score 46.6** ±0.7 · #409 of 721 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 

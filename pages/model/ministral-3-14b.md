@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 55.6** ±1.1 · #253 of 719 · from 17 benchmark results across 7 sources
+**score 55.6** ±1.1 · #255 of 721 · from 17 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2025-12 · 13.9B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #204 of 300     12%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #206 of 302     12%      3
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #289 of 458*     11%      2
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #276 of 393*    6.1%      2
 math            ▁▂▃▅▆●▄█▄▁▁▁   #197 of 398*     10%      1
 </pre>
 
-<details><summary>agent tasks · #204 of 300 · 12% of its score</summary>
+<details><summary>agent tasks · #206 of 302 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 64.6** ±0.6 · #147 of 719 · from 52 benchmark results across 9 sources
+**score 64.6** ±0.6 · #148 of 721 · from 52 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2025-07 · 355B params (32B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #126 of 300     18%     11
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #128 of 302     18%     11
 coding          ▁▁▁▃▆██●▆▄▃▁   #145 of 458     10%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #101 of 393    5.3%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #111 of 398     27%      4
 web search      ●▁▂▆▄█▃▃▁▁·▁    #78 of 80*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #126 of 300 · 18% of its score</summary>
+<details><summary>agent tasks · #128 of 302 · 18% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

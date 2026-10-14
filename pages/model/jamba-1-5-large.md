@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 50.3** ±1.2 · #336 of 719 · from 12 benchmark results across 3 sources
+**score 50.3** ±1.2 · #338 of 721 · from 12 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-li
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #111 of 300*    2.3%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #112 of 302*    2.3%      1
 coding          █··········●       #1 of 2*    8.4%      1
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #233 of 393     19%      3
 math            ▁▂▃▅●▅▄█▄▁▁▁   #249 of 398*    9.5%      1
 </pre>
 
-<details><summary>agent tasks · #111 of 300 · 2.3% of its score</summary>
+<details><summary>agent tasks · #112 of 302 · 2.3% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 

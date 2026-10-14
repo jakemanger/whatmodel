@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-03 · 671B params (37B active) · mit
 
-**score 60.2** ±0.7 · #192 of 719 · from 30 benchmark results across 17 sources
+**score 60.2** ±0.7 · #194 of 721 · from 30 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ DeepSeek · released 2025-03 · 671B params (37B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #173 of 300     22%      7
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #175 of 302     22%      7
 coding          ▁▁▁▃▆██●▆▄▃▁    #144 of 458     32%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #116 of 393*    6.3%      2
 math            ▁▂▃▅▆●▄█▄▁▁▁    #190 of 398     18%      6
 </pre>
 
-<details><summary>agent tasks · #173 of 300 · 22% of its score</summary>
+<details><summary>agent tasks · #175 of 302 · 22% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

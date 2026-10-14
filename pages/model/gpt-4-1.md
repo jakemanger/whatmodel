@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 62.2** ±0.5 · #173 of 719 · from 69 benchmark results across 23 sources
+**score 62.2** ±0.5 · #175 of 721 · from 69 benchmark results across 23 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #154 of 300     26%     11
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #156 of 302     26%     11
 coding              ▁▁▁▃▆██●▆▄▃▁   #142 of 458     19%      7
-chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #99 of 393    6.8%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #99 of 393    6.7%      4
 math                ▁▂▃▅▆▅●█▄▁▁▁   #182 of 398     14%      9
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #72 of 147    4.1%      3
 web search          ▂▁▂▆▄█▃▃▁●·▁     #3 of 80*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #154 of 300 · 26% of its score</summary>
+<details><summary>agent tasks · #156 of 302 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-fl
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   48.5%  ▁··●·▁▂▁▄█▄▁ beats 1/29   hard · avg 19%          7.0%  sharp · at its level · several runs
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   52.4%  ▂·▂▃▅▂▃●▆▄▂▂ beats 28/49  very hard · avg 8.6%    6.1%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   52.4%  ▂·▂▃▅▂▃●▆▄▂▂ beats 28/49  very hard · avg 8.6%    6.0%  sharp · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">LiveCodeBench (version unspecifie…</a>   39.2%  ●·······▄▄▄▄ beats 0/5    hard · avg 21%          1.6%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">HumanEval+</a>                           93.3%  ▄▄▄·····▄●·█ beats 4/6    easy · avg 67%          1.3%  sharp
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MBPP+</a>                                79.4%  ▃·····●█▃··▃ beats 1/6    medium · avg 62%        1.2%  typical
@@ -60,14 +60,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #99 of 393 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #99 of 393 · 6.7% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   50.0%  ▂·▃▅▅·▃●▆▂▂▂ beats 15/22    very hard · avg 13%    3.2%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1414.8  ▁▁▁▂▃▃▃▆▆●█▃ beats 263/379  avg 1268               2.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1414.8  ▁▁▁▂▃▃▃▆▆●█▃ beats 263/379  avg 1268               2.0%  blunt
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">IFEval (aggregation unspecified)</a>     85.6%  █··●·█··████ beats 1/6      easy · avg 75%         0.9%  typical
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   61.5%  ▆▂▂▆▂▂▃●▂▃·▂ beats 17/22    hard · avg 20%         0.6%  sharp · at its level · noisy
 </pre>

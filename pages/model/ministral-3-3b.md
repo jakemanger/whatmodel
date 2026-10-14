@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 45.1** ±0.8 · #439 of 719 · from 33 benchmark results across 8 sources
+**score 45.1** ±0.8 · #441 of 721 · from 33 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2025-12 · 3.85B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #282 of 300*    1.9%      1
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #284 of 302*    1.9%      1
 chat &amp; writing      ▁▁▁▃●▄▅█▆▆▇▃   #328 of 393*    3.9%      2
 math                ▁▂▃▅●▅▄█▄▁▁▁    #269 of 398     28%      4
 vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #130 of 147     11%      9
 </pre>
 
-<details><summary>agent tasks · #282 of 300 · 1.9% of its score</summary>
+<details><summary>agent tasks · #284 of 302 · 1.9% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

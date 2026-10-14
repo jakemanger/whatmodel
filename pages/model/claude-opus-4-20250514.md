@@ -14,7 +14,7 @@ Anthropic · released 2025-05 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▂▁    #131 of 340     31%      4
+agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #133 of 342     31%      4
 coding              ▁▁▁▃▅▇█▇●▄▃▁    #111 of 524     42%      4
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃    #92 of 463*    6.9%      1
 math                ▁▂▃▅▇▅●█▄▁▁▁   #193 of 462*    9.1%      2
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #81 of 182*    4
 web search          ▂·▂▇●█▃▄▁▂▁▁     #63 of 92*    2.8%      1
 </pre>
 
-<details><summary>agent tasks · #131 of 340 · 31% of its score</summary>
+<details><summary>agent tasks · #133 of 342 · 31% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

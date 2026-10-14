@@ -14,17 +14,17 @@ Baidu · released 2026-05 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅▆█▆▆●▂   #41 of 579*     69%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█▆▆●▂   #41 of 579*     68%      1
 web search      ▂▁▂▇▅●▃▄▁▂▁▁    #40 of 96*     28%      1
 </pre>
 
-<details><summary>chat &amp; writing · #41 of 579 · 69% of its score</summary>
+<details><summary>chat &amp; writing · #41 of 579 · 68% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1467.6  ▁▁▁▂▃▃▃▆▆▇●▃ beats 340/379  avg 1268       69%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1467.6  ▁▁▁▂▃▃▃▆▆▇●▃ beats 340/379  avg 1268       68%  blunt
 </pre>
 
 </details>

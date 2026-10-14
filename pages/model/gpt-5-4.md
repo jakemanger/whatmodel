@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 77.4** ±0.5 · #20 of 719 · from 54 benchmark results across 20 sources
+**score 77.4** ±0.5 · #22 of 721 · from 55 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ OpenAI · released 2026-03 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #33 of 300     24%     16
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #35 of 302     24%     16
 coding              ▁▁▁▃▆██▇▆●▃▁    #59 of 458    8.8%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #26 of 393*    2.2%      1
 math                ▁▂▃▅▆▅▄█▄●▁▁    #18 of 398     31%     10
@@ -22,19 +22,19 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #25 of 147    4.
 web search          ▂▁▂▆▄●▃▃▁▁·▁     #24 of 80    4.6%      3
 </pre>
 
-<details><summary>agent tasks · #33 of 300 · 24% of its score</summary>
+<details><summary>agent tasks · #35 of 302 · 24% of its score</summary>
 
 Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0105 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 22/49  avg -0.310 IPS          4.5%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0105 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 22/49  avg -0.310 IPS          4.4%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                       76.9%  ▁··▁·▁▂▁▄●▄▁ beats 23/29  hard · avg 19%          3.0%  sharp
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>       20.5%  ▄···█▄▄▄█▄·● beats 9/10   very hard · avg 1.7%    2.4%  typical
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                         82.7%  ▄··●▄··▄·▄█▄ beats 1/8    hard · avg 33%          2.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                         82.7%  ▄··●▄··▄·▄█▄ beats 1/8    hard · avg 32%          2.3%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-4_sierra_2026-03-25/submission.json">τ³-bench banking_knowledge (v1.0.…</a>       39.4%  ▃▃▂▃·▆▃▂●▅▅▂ beats 16/25  very hard · avg 4.2%    1.8%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (lab)</a>        54.6%  ▃··▃··▃··▃●▅ beats 6/8    very hard · avg 13%     1.6%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>       52.1%  ▃·▃·▅····●·█ beats 4/8    very hard · avg 12%     1.5%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>       52.1%  ▃·▃·▅····●·█ beats 4/8    very hard · avg 12%     1.4%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4">Terminal-Bench 2.0 (lab)</a>                 75.1%  ██···██··●██ beats 4/6    very hard · avg 14%     1.4%  at its level
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>       38.0%  ▄·▄··█···▄·● beats 5/6    very hard · avg 6.1%    1.3%  at its level
 <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>       65.4%  ▅··▃·▃·█▃▅█● beats 14/15  very hard · avg 5.0%    1.1%  at its level
@@ -54,7 +54,7 @@ Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md),
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1464.9  ▁▂▄▃▅█●▇▆▄▁▁ beats 63/119  avg 983                 4.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1464.9  ▁▂▄▃▅█●▇▆▄▁▁ beats 63/119  avg 983                 3.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   76.9%  ▁··▁·▁▂▁▄●▄▁ beats 23/29   hard · avg 19%          3.0%  sharp
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   38.0%  ▄·▄··█···▄·● beats 5/6     very hard · avg 6.1%    1.3%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4">SWE-bench Pro (lab)</a>                  57.7%  ▄·····▄·▄▄▄● beats 5/6     hard · avg 28%          0.6%  blunt · at its level
@@ -85,7 +85,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   67.8%  █▃▅·█▃▃·●·▃▃ beats 11/14    hard · avg 15%          2.3%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   76.1%  ▂··▄▂▄█▆▆▄▄● beats 23/23    hard · avg 23%          1.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   36.6%  █·▆█▂·▂●···▂ beats 13/14    very hard · avg 0.8%    1.4%  sharp · at its level · noisy
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   37.9%  ▃▂▂▃█▃▂·●··▂ beats 15/16    very hard · avg 0.7%    1.4%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   37.9%  ▃▂▂▃█▃▂·●··▂ beats 15/16    very hard · avg 0.8%    1.3%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   60.3%  ▃·▃▃█▁·▄·▁●▁ beats 17/18    hard · avg 19%          1.3%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 2026 (4…</a>   17.1%  ▂····▂·····● beats 5/5      very hard · avg 1.0%    1.0%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             95.3%  ▃▃▄▃▃▃▇▇█●▂▅ beats 160/193  very hard · avg 8.6%    0.3%  sharp · maxed out · noisy
@@ -113,20 +113,20 @@ Beats [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overal
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     82.7%  ▄··●▄··▄·▄█▄ beats 1/8    hard · avg 33%         2.3%  typical
-<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   52.1%  ▃·▃·▅····●·█ beats 4/8    very hard · avg 12%    1.5%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     82.7%  ▄··●▄··▄·▄█▄ beats 1/8    hard · avg 32%         2.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   52.1%  ▃·▃·▅····●·█ beats 4/8    very hard · avg 12%    1.4%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1194.5  ▁·▁▁▂▂▂●▅▂▁▁ beats 18/30  avg 1055               0.9%  blunt
 </pre>
 
 </details>
 
-<details><summary>other tests (21)</summary>
+<details><summary>other tests (22)</summary>
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    25.4%  ▄▂·▆█▂●▆▆▆·▄ beats 12/24    very hard · avg 0.4%    5.3%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    25.4%  ▄▂·▆█▂●▆▆▆·▄ beats 12/24    very hard · avg 0.4%    5.2%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           37.5%  █▆▆●▆▂▅▂▂▂·▅ beats 14/30    very hard · avg 1.3%    4.0%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%  █··▂▃▇▄●▂▃▁▁ beats 60/74    very hard · avg 9.4%    3.7%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%  █··▂▃▇▄●▂▃▁▁ beats 60/74    very hard · avg 9.4%    3.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-high">ARC-AGI-2 public evaluation set (…</a>   75.8%  █··▂▅▁▃▁▃·▁● beats 22/24    very hard · avg 0.3%    2.8%  sharp · at its level · noisy
 <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           39.8%  ▃··▃·▃▃···●█ beats 4/7      very hard · avg 4.5%    2.6%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                44.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 123/135  very hard · avg 5.9%    2.1%  sharp · at its level · noisy
@@ -136,14 +136,15 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 195/208  hard · avg 40%          1.3%  sharp
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        50.3%  ▃·▅▅█·▅█●▃▃▃ beats 14/17    very hard · avg 11%     1.3%  at its level
 <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, over…</a>   58.3%  ▄▄··▄▄·▄█▄█● beats 11/11    hard · avg 25%          1.2%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-5-6">HealthBench Professional (lab)</a>       48.1%  ●·▄··▄▄·▄█·█ beats 0/8      hard · avg 20%          0.9%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    45.1%  ▁▁▃▂▃▃▆●█▃▂▅ beats 41/78    very hard · avg 8.1%    0.9%  at its level
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-high">ARC-AGI-1 public evaluation set (…</a>   95.6%  ▁·▇▃▁·█▇▁·●▃ beats 25/27    very hard · avg 4.2%    0.7%  sharp · noisy
 <a href="https://openai.com/index/introducing-gpt-5-5">CyberGym (lab)</a>                       79.0%  ▄···▄··▄█●█▄ beats 5/8      hard · avg 31%          0.6%  small run
 <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench Hard (lab)</a>               30.3%  ▂··▂····●▄·█ beats 2/8      very hard · avg 9.7%    0.5%  blunt · at its level
 <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench (lab)</a>                    55.7%  ▃·▃·····●▃▃▅ beats 4/8      hard · avg 24%          0.5%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   15.6%  █·●▄·▄·▄·▄·█ beats 2/8      very hard · avg 1.5%    0.5%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>       33.0%  ██·······●·█ beats 2/3      very hard · avg 7.4%    0.4%  at its level · small run
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   73.3%  ▁··▃▁▁▁▅█▅▁● beats 23/24    medium · avg 52%        0.4%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>       33.0%  ██·······●·█ beats 2/3      very hard · avg 7.4%    0.4%  at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.0%  ▁▂▁▂▅█▂●▄▃▁▁ beats 70/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -156,7 +157,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                       11   40% ▇▇▇▇▇
-<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-4">OpenAI vendor-reported benchmark scores…</a>       13   15% ▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-4">OpenAI vendor-reported benchmark scores…</a>       14   15% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     6   14% ▇▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        7   12% ▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-high">ARC Prize Foundation model_baseline out…</a>        2    3% ▇

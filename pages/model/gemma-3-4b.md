@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 4.3B params · gemma
 
-**score 44.1** ±0.7 · #453 of 719 · from 57 benchmark results across 17 sources
+**score 44.1** ±0.7 · #455 of 721 · from 57 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2025-03 · 4.3B params · gemma
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #285 of 300*    2.3%      2
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #287 of 302*    2.3%      2
 coding              ▁▁▁▃●██▇▆▄▃▁    #361 of 458     11%      5
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃    #219 of 393    7.0%      3
 math                ▁▂▃▅●▅▄█▄▁▁▁    #254 of 398     11%      6
 vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #146 of 147    8.5%     10
 </pre>
 
-<details><summary>agent tasks · #285 of 300 · 2.3% of its score</summary>
+<details><summary>agent tasks · #287 of 302 · 2.3% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

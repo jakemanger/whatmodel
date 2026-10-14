@@ -6,7 +6,7 @@
 
 Google · released 2024-07 · 2.61B params · gemma
 
-**score 37.1** ±0.6 · #575 of 719 · from 29 benchmark results across 10 sources
+**score 37.1** ±0.6 · #577 of 721 · from 29 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -65,7 +65,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             51.9%  ▁·●▁▄▄▄▅█▄▂▁ beats 1/53     easy · avg 77%          18%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard</a>                                 43.5%  ▃▃···▃··●··▅ beats 3/7      medium · avg 67%       6.8%  sharp
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande</a>                                     68.9%  █···▄●▄▄···█ beats 3/7      easy · avg 84%         4.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  27.8260 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 9/52     avg 45.277 WB-Score    4.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  27.8260 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 9/52     avg 45.276 WB-Score    4.1%  sharp
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU</a>                                           56.8%  ▄····▄·▄▄●·█ beats 4/7      easy · avg 77%         3.7%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified)</a>                      29.4%  ▄·▄··▄··▄●·█ beats 5/7      hard · avg 39%         3.5%  sharp · too hard for it
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro</a>                                       27.2%  ▄·····█··●▄█ beats 3/7      medium · avg 47%       2.8%  typical

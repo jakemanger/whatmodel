@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 48.9** ±1.8 · #362 of 719 · from 10 benchmark results across 2 sources
+**score 48.9** ±1.8 · #364 of 721 · from 10 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #216 of 300*    3.1%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #218 of 302*    3.1%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #140 of 393*    8.0%      1
 math            ▁▂▃▅▆●▄█▄▁▁▁    #210 of 398     38%      3
 </pre>
 
-<details><summary>agent tasks · #216 of 300 · 3.1% of its score</summary>
+<details><summary>agent tasks · #218 of 302 · 3.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 

@@ -14,13 +14,13 @@ Xiaomi · released 2026-03 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▂▆█▆▅▄●▃▂▁    #71 of 340     45%      6
+agent tasks     ▁▁▂▆█▆▅▄●▃▃▁    #73 of 342     45%      6
 coding          ▁▁▁▃▅▇█▇▅●▃▁    #76 of 524     50%      3
 chat &amp; writing  ▁▁▁▃▅▄▆█▇▇●▃   #62 of 463*     14%      1
 web search      ●··········█      #2 of 2*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #71 of 340 · 45% of its score</summary>
+<details><summary>agent tasks · #73 of 342 · 45% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -91,7 +91,7 @@ source                                    results  share of the score
 <a name="card2-xiaomimimo-mimo-v2-5-pro"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">XiaomiMiMo/MiMo-V2.5-Pro model card (la…</a>        7   38% ▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   38% ▇▇▇▇▇
 <a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (lab)</a>           2   15% ▇▇
-<a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    7% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    8% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 69.9
 </pre>

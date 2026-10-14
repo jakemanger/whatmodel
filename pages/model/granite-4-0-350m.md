@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.352B params · apache-2.0
 
-**score 25.9** ±1.1 · #669 of 719 · from 24 benchmark results across 3 sources
+**score 25.9** ±1.1 · #671 of 721 · from 24 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2025-10 · 0.352B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #287 of 300*    3.5%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #289 of 302*    3.5%      2
 coding          ●··········█        #3 of 4     39%      7
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #358 of 393*    7.6%      2
 math            ●▂▃▅▆▅▄█▄▁▁▁    #393 of 398     25%      6
 </pre>
 
-<details><summary>agent tasks · #287 of 300 · 3.5% of its score</summary>
+<details><summary>agent tasks · #289 of 302 · 3.5% of its score</summary>
 
 Beats [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall.
 

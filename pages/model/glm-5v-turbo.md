@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 68.4** ±1.7 · #101 of 719 · from 4 benchmark results across 1 source
+**score 68.4** ±1.7 · #103 of 721 · from 4 benchmark results across 1 source
 
 ## What it's good at
 
@@ -48,7 +48,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 <pre>
 test                               result  vs the others in its run   difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1230.1  ▁▁▂▂▂▂▄▅▅●██ beats 88/145  avg 1068       18%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1400.1  ●▁▃▃▄▃▇█▅▇▄▅ beats 0/37    avg 1336      8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1400.1  ●▁▃▃▄▃▇█▅▇▄▅ beats 0/37    avg 1336      8.6%  blunt
 </pre>
 
 </details>

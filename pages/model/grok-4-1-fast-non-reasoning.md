@@ -14,10 +14,10 @@ SpaceXAI (xAI) · released 2025-11 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▂▁   #129 of 334*     91%      1
+agent tasks  ▁▁▃▆█▆●▄▄▃▃▁   #131 of 336*     91%      1
 </pre>
 
-<details><summary>agent tasks · #129 of 334 · 91% of its score</summary>
+<details><summary>agent tasks · #131 of 336 · 91% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank lower overall.
 

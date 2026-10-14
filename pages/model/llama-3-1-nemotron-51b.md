@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 51.0** ±1.8 · #324 of 719 · from 6 benchmark results across 2 sources
+**score 51.0** ±1.8 · #326 of 721 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 

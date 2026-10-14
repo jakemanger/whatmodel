@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 30B params · apache-2.0
 
-**score 55.9** ±1.1 · #246 of 719 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.9** ±1.1 · #248 of 721 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ IBM · released 2026-04 · 30B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #149 of 300*    1.4%      1
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #152 of 302*    1.4%      1
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #206 of 458     30%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #149 of 393*    2.3%      1
 math            ▄··········●        #2 of 3     22%      5
 </pre>
 
-<details><summary>agent tasks · #149 of 300 · 1.4% of its score</summary>
+<details><summary>agent tasks · #152 of 302 · 1.4% of its score</summary>
 
-Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test           result  vs the others in its run    difficulty        counts  why

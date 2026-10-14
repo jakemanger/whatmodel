@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 44.8** ±1.9 · #446 of 719 · from 4 benchmark results across 3 sources
+**score 44.8** ±1.9 · #448 of 721 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 

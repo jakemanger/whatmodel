@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · 35.5B params (3B active) · apache-2.0
 
-**score 67.6** ±0.5 · #105 of 719 · from 88 benchmark results across 10 sources
+**score 67.6** ±0.5 · #107 of 721 · from 88 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2026-04 · 35.5B params (3B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #88 of 300     22%     12
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #90 of 302     22%     12
 coding              ▁▁▁▃▆██▇●▄▃▁    #90 of 458     19%      7
 math                ▁▂▃▅▆▅▄●▄▁▁▁   #128 of 398     37%     13
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #55 of 147    6.0%     15
 web search          ▂▁●▆▄█▃▃▁▁·▁    #72 of 80*    1.8%      2
 </pre>
 
-<details><summary>agent tasks · #88 of 300 · 22% of its score</summary>
+<details><summary>agent tasks · #90 of 302 · 22% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   64.4%  ▄▄·····▄▄▄●█ beats 5/7    hard · avg 17%          6.4%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.0%  ▄·▄·····█▄●▄ beats 5/7    hard · avg 18%          3.4%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   34.8%  ▄······█▄▄●▄ beats 5/7    very hard · avg 7.2%    2.7%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   34.8%  ▄······█▄▄●▄ beats 5/7    very hard · avg 7.1%    2.7%  at its level
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    40.6%  ▄···▄···▄▄●█ beats 5/7    very hard · avg 6.6%    2.1%  sharp · at its level
 <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwen-re…</a>   49.5%  ▄······●█·▄▄ beats 1/5    hard · avg 18%          1.8%  at its level · several runs
 <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   12.0%  ▃····●··▃█·▃ beats 3/8    very hard · avg 3.5%    1.2%  typical
@@ -139,7 +139,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MMLU-Redux (lab)</a>                     93.3%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 54/63    easy · avg 78%          0.8%  small run
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.8%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 13/49    easy · avg 78%          0.7%  typical
 <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">LVBench (lab)</a>                        71.4%  ▇·█▅▅●▄··▃▁▁ beats 20/28    medium · avg 52%        0.6%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">DeepPlanning (lab)</a>                   25.9%  ▂·····▂··▄●▄ beats 7/9      very hard · avg 9.0%    0.6%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">DeepPlanning (lab)</a>                   25.9%  ▂·····▂··▄●▄ beats 7/9      very hard · avg 9.1%    0.6%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">ZEROBench subquestions (lab)</a>         34.4%  ▄·▄···▄·▄●█▄ beats 5/8      hard · avg 16%          0.5%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SuperGPQA (lab)</a>                      64.7%  ▂▁▂▂▅▆▃▇▇▇●▃ beats 40/46    medium · avg 36%        0.5%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">VideoMMMU (lab)</a>                      83.7%  ▂···▂···▂▂█● beats 8/10     medium · avg 61%        0.5%  small run
@@ -167,7 +167,7 @@ source                                    results  share of the score
 <a name="card-qwen--qwen3.6-35b-a3b"></a><a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">Qwen/Qwen3.6-35B-A3B model card (lab)</a>          27   23% ▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        5   15% ▇▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        4   12% ▇
-<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card</a>         5    9% ▇
+<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card</a>         5   10% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    3% ▇
 <a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1    1% ▇
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    0% ▇

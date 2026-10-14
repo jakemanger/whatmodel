@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-04 · proprietary
 
-**score 81.2** ±1.1 · #12 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 81.2** ±1.1 · #13 of 721 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Anthropic · released 2026-04 · proprietary
 
 <pre>
 task                vs the others        rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁   #10 of 300     67%      7
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁   #10 of 302     67%      7
 coding              ▁▁▁▃▆██▇▆▄●▁    #9 of 458     43%      3
 math                ▁▂▃▅▆▅▄█▄▁●▁   #9 of 398*    2.6%      1
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●   #1 of 147*    5.6%      1
 web search          ▂▁▂▆▄█●▃▁▁·▁   #20 of 80*     12%      2
 </pre>
 
-<details><summary>agent tasks · #10 of 300 · 67% of its score</summary>
+<details><summary>agent tasks · #10 of 302 · 67% of its score</summary>
 
-Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
+Beats [Muse Wonder Full](muse-wonder-full.md), [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why

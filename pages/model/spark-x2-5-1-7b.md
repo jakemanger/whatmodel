@@ -6,7 +6,7 @@
 
 iFLYTEK (SparkLLM) · released 2026-08 · 1.71B params · apache-2.0
 
-**score 55.0** ±1.1 · #266 of 719 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.0** ±1.1 · #268 of 721 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ iFLYTEK (SparkLLM) · released 2026-08 · 1.71B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #196 of 300     36%      9
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #198 of 302     36%      9
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #306 of 458     20%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #133 of 393*    0.4%      1
 math            ▁▂▃▅▆●▄█▄▁▁▁    #189 of 398     40%      3
 web search      █·█▄██·▄▄·●▄      #2 of 13*    1.8%      1
 </pre>
 
-<details><summary>agent tasks · #196 of 300 · 36% of its score</summary>
+<details><summary>agent tasks · #198 of 302 · 36% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), 
 test                      result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026 (lab)</a>   48.4%  █·▄··●··▄█·▄ beats 3/7    hard · avg 32%       19%  sharp · at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">AIME 2026 (lab)</a>            69.4%  ▁▁▁▂●▂▆█▆▂·▁ beats 9/49   medium · avg 53%     11%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench (lab)</a>      45.4%  ▄▄···●·▄··█▄ beats 2/6    hard · avg 32%      9.5%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench (lab)</a>      45.4%  ▄▄···●·▄··█▄ beats 2/6    hard · avg 32%       10%  at its level
 </pre>
 
 </details>

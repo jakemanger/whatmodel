@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 8.03B params · llama3
 
-**score 42.0** ±0.4 · #499 of 719 · from 45 benchmark results across 25 sources
+**score 42.0** ±0.4 · #501 of 721 · from 45 benchmark results across 25 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Meta · released 2024-04 · 8.03B params · llama3
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #292 of 300*    0.7%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #294 of 302*    0.7%      2
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #342 of 458     43%      9
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #294 of 393     11%      4
 math            ▁▂●▅▆▅▄█▄▁▁▁    #364 of 398    9.0%      6
 </pre>
 
-<details><summary>agent tasks · #292 of 300 · 0.7% of its score</summary>
+<details><summary>agent tasks · #294 of 302 · 0.7% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -90,7 +90,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Meta-Llama-3-8B-Instruct_5shots.zip">MMLU-Pro</a>                                       40.1%  ▃▂▅●▃·█▃▅··▂ beats 6/23     medium · avg 57%        2.6%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B-Instruct/results_2024-04-22%2022%3A18%3A47.513878.json">MedQA (USMLE, 4 options)</a>                       60.7%  ▁▁··▄▁▁··▄▃● beats 17/17    easy · avg 76%          2.1%  sharp · at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        36.8%  ▂▁▁▄▂●▇█▆▂▂▂ beats 18/58    medium · avg 51%        1.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.2028 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 11/52    avg 45.277 WB-Score     1.8%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.2028 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 11/52    avg 45.276 WB-Score     1.8%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        31.7%  ▃▂·▆●██▆▅▃▃▃ beats 7/33     medium · avg 41%        1.8%  at its level
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                                 54.4%  ▁▁▁▁▂▄▅●█▃▄▁ beats 57/129   easy · avg 75%          1.4%  sharp · at its level · small run
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Meta-Llama-3-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             43.7%  ●·▂▂▂▆▅▆▆▆▃█ beats 0/29     easy · avg 76%          1.3%  at its level

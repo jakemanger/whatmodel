@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
-**score 55.0** ±0.6 · #264 of 719 · from 55 benchmark results across 10 sources
+**score 55.0** ±0.6 · #266 of 721 · from 55 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #223 of 300     14%      7
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #225 of 302     14%      7
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #314 of 458     12%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #178 of 393    3.9%      2
 math            ▁▂▃▅▆▅●█▄▁▁▁   #177 of 398     16%      8
 </pre>
 
-<details><summary>agent tasks · #223 of 300 · 14% of its score</summary>
+<details><summary>agent tasks · #225 of 302 · 14% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -91,7 +91,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      62.0%  ▂····▂·▂▂●▆█ beats 6/14     hard · avg 49%          7.4%  sharp · at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     84.2%  ▃··▃·▃·●▃▅▃▅ beats 3/11     easy · avg 79%          4.8%  several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      42.8%  ▄··▄·▄●▄█▄██ beats 3/11     medium · avg 37%        3.5%  at its level · several runs
-<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 80.8%  ▄···▄▄·▄█··● beats 7/7      easy · avg 75%          3.0%  typical
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 80.8%  ▄···▄▄·▄█··● beats 7/7      easy · avg 75%          2.9%  typical
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               58.3%  █··▄··█··█·● beats 7/7      medium · avg 43%        2.2%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   82.1%  ▁●▃▁█▄▃▃▆▂▂▂ beats 2/49     easy · avg 78%          1.8%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   34.1%  ▁▁▁▁▁▂▂▃●▆█▃ beats 42/97    hard · avg 32%          1.6%  blunt · at its level

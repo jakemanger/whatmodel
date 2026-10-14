@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-08 · 6.89B params · cc-by-sa-4.0
 
-**score 28.8** ±0.9 · #651 of 719 · from 12 benchmark results across 2 sources
+**score 28.8** ±0.9 · #653 of 721 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">HellaSwag (lab)</a>                      74.3%  ▃···▁▇▅●▇▃▁▁ beats 17/26   very easy · avg 92%    5.7%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">SciQ (lab)</a>                           93.9%  ▁·▁·▁·▃▅▃●▄▁ beats 20/26   very easy · avg 98%    5.4%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">PIQA (lab)</a>                           78.5%  ▁·▁··▁▁▃█▅●▂ beats 18/26   easy · avg 88%         4.4%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">OpenBookQA (lab)</a>                     30.4%  █·▁▁▃·▁▃●▇▃▄ beats 15/26   medium · avg 53%       3.4%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">OpenBookQA (lab)</a>                     30.4%  █·▁▁▃·▁▃●▇▃▄ beats 15/26   medium · avg 53%       3.5%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">LAMBADA (OpenAI version), last-wo…</a>   74.2%  ▁··▂▁▁▁▂▆█●▃ beats 23/26   very easy · avg 89%    2.7%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">Social IQA (lab)</a>                     42.4%  ▁···▁▃●▁▁▁·▁ beats 15/26   medium · avg 59%       2.5%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   44.6%  ▃▁▁▁▁▁●▁▂█▅▁ beats 58/276  medium · avg 73%       1.1%  noisy

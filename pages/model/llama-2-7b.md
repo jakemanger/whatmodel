@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 30.6** ±0.5 · #638 of 719 · from 71 benchmark results across 11 sources
+**score 30.6** ±0.5 · #640 of 721 · from 71 benchmark results across 11 sources
 
 ## What it's good at
 

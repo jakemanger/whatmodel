@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 45.8** ±2.1 · #422 of 719 · from 7 benchmark results across 5 sources
+**score 45.8** ±2.1 · #424 of 721 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Amazon · released 2024-12 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #252 of 300     56%      4
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #254 of 302     56%      4
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #280 of 393*     39%      1
 </pre>
 
-<details><summary>agent tasks · #252 of 300 · 56% of its score</summary>
+<details><summary>agent tasks · #254 of 302 · 56% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 

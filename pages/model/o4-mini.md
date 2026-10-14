@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 66.2** ±0.6 · #125 of 719 · from 54 benchmark results across 18 sources
+**score 66.2** ±0.6 · #127 of 721 · from 54 benchmark results across 18 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ OpenAI · released 2025-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #150 of 300     17%      6
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #151 of 302     17%      6
 coding              ▁▁▁▃▆██▇●▄▃▁    #93 of 458     13%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #115 of 393     11%      5
 math                ▁▂▃▅▆▅▄●▄▁▁▁    #80 of 398     23%      8
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #73 of 147*    2.
 web search          ▂▁▂▆▄█▃▃▁▁·●     #2 of 80*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #150 of 300 · 17% of its score</summary>
+<details><summary>agent tasks · #151 of 302 · 17% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -75,8 +75,8 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4
 <pre>
 test                             result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>         36.1%  ▂··▁▁▃▄●█▅▃▃ beats 26/82    very hard · avg 1.2%     11%  sharp
-<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">HMMT 2025 (edition unspecified)</a>   66.7%  ▃█▇●▇▅▁·▁··▁ beats 18/32    hard · avg 27%          2.4%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>             4.9%  ▁▂●▂█▅▂▂▁▁▁▁ beats 9/63     very hard · avg 0.1%    2.4%  sharp · too hard for it
+<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">HMMT 2025 (edition unspecified)</a>   66.7%  ▃█▇●▇▅▁·▁··▁ beats 18/32    hard · avg 27%          2.4%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          81.7%  ▃▃▄▃▃▃▇●█▃▂▅ beats 117/193  very hard · avg 8.6%    2.3%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      97.8%  ▂▂▅▆▄█▆▃▅▂▃● beats 90/92    hard · avg 33%          2.2%  sharp · maxed out
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>     98.2%  ▃··▅▅▃···▃·● beats 9/9      medium · avg 61%        1.5%  sharp · maxed out
@@ -156,7 +156,7 @@ source                                    results  share of the score
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/o4-mini_openai_2024-06-20/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        3    5% ▇
 <a name="acl-kcl-2026"></a><a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchmark: Towar…</a>        2    3% ▇
 <a name="paper-2508.00828v1-finance-agent-benchmark"></a><a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark</a>                         1    3% ▇
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             2    3% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             2    2% ▇
 <a name="livecodebench-website-20250801"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official website results</a>          1    2% ▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    2% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇

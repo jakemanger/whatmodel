@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 36.3** ±1.1 · #585 of 719 · from 10 benchmark results across 6 sources
+**score 36.3** ±1.1 · #587 of 721 · from 10 benchmark results across 6 sources
 
 ## What it's good at
 

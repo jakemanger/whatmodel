@@ -6,7 +6,7 @@
 
 Google · released 2025-07 · closed weights
 
-**score 57.0** ±1.8 · #234 of 719 · from 8 benchmark results across 7 sources
+**score 57.0** ±1.8 · #236 of 721 · from 8 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Google · released 2025-07 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #190 of 300*     20%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #192 of 302*     20%      2
 math                ▁▂▃▅▆●▄█▄▁▁▁   #226 of 398*     12%      1
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #99 of 147*     64%      2
 </pre>
 
-<details><summary>agent tasks · #190 of 300 · 20% of its score</summary>
+<details><summary>agent tasks · #192 of 302 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

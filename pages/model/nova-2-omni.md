@@ -14,10 +14,10 @@ Amazon · released 2025-11 · closed weights
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▄▃▂▁   #105 of 334*     80%      1
+agent tasks  ▁▁▃▆█▆▅●▄▃▃▁   #106 of 336*     80%      1
 </pre>
 
-<details><summary>agent tasks · #105 of 334 · 80% of its score</summary>
+<details><summary>agent tasks · #106 of 336 · 80% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 

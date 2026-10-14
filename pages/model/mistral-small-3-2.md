@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 24B params · apache-2.0
 
-**score 55.8** ±1.0 · #247 of 719 · from 23 benchmark results across 10 sources
+**score 55.8** ±1.0 · #249 of 721 · from 23 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Mistral · released 2025-06 · 24B params · apache-2.0
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁     #211 of 300*    6.2%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁     #213 of 302*    6.2%      2
 coding                             not ranked yet       —      2
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃     #152 of 393*     14%      2
 math                ▁▂▃▅▆●▄█▄▁▁▁     #199 of 398*     11%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄      #101 of 147     17%      6
 </pre>
 
-<details><summary>agent tasks · #211 of 300 · 6.2% of its score</summary>
+<details><summary>agent tasks · #213 of 302 · 6.2% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1356.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 201/379  avg 1268          9.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1356.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 201/379  avg 1268          9.2%  blunt
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>   43.1%  ▁▁··▄●▁▃█▁▁▇ beats 5/22     hard · avg 22%    4.5%  sharp · at its level · small run
 </pre>
 

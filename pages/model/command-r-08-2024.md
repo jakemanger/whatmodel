@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 46.0** ±1.0 · #419 of 719 · from 16 benchmark results across 9 sources
+**score 46.0** ±1.0 · #421 of 721 · from 16 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #281 of 300*    5.7%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #283 of 302*    5.7%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #336 of 458     37%      6
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #275 of 393*    8.4%      1
 </pre>
 
-<details><summary>agent tasks · #281 of 300 · 5.7% of its score</summary>
+<details><summary>agent tasks · #283 of 302 · 5.7% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          74.3%  █●·██···████ beats 1/7    easy · avg 79%          5.3%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   11.0%  ▄●·▄·····█▄█ beats 1/7    hard · avg 19%          4.2%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 49%        3.1%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 6.8%    2.5%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 6.8%    2.6%  sharp · too hard for it · noisy
 </pre>
 
 </details>

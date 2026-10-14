@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-11 · closed weights
 
-**score 70.8** ±0.8 · #75 of 719 · from 28 benchmark results across 13 sources
+**score 70.8** ±0.8 · #77 of 721 · from 28 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ OpenAI · released 2025-11 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #92 of 300     26%      7
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #94 of 302     26%      7
 coding              ▁▁▁▃▆██▇●▄▃▁    #91 of 458     22%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #46 of 393*    5.3%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁   #74 of 398*    2.2%      1
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #49 of 147    8.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #40 of 80*    2.2%      1
 </pre>
 
-<details><summary>agent tasks · #92 of 300 · 26% of its score</summary>
+<details><summary>agent tasks · #94 of 302 · 26% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher o
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   68.0%  ▁··▁·▁▂●▄█▄▁ beats 7/29    hard · avg 19%     11%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1394.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 42/119  avg 983           9.4%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1394.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 42/119  avg 983           9.5%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   76.5%  ▁··▁·▁▁▁▆█▇● beats 42/45   hard · avg 32%    2.0%  typical
 </pre>
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>chat &amp; writing · #46 of 393 · 5.3% of its score</summary>
 
-Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
+Beats [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why

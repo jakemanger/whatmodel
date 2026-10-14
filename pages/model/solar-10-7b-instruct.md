@@ -6,7 +6,7 @@
 
 Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
-**score 37.4** ±0.7 · #569 of 719 · from 13 benchmark results across 8 sources
+**score 37.4** ±0.7 · #571 of 721 · from 13 benchmark results across 8 sources
 
 ## What it's good at
 

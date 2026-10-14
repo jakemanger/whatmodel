@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-08 · 8.1B params · minicpm-model-license
 
-**score 42.7** ±1.9 · #487 of 719 · from 5 benchmark results across 4 sources
+**score 42.7** ±1.9 · #489 of 721 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 

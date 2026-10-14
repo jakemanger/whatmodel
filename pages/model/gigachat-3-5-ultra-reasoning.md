@@ -6,7 +6,7 @@
 
 Sber · released 2026-09 · 438.09B params (28B active) · mit
 
-**score 66.6** ±1.4 · #119 of 719 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.6** ±1.4 · #121 of 721 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Sber · released 2026-09 · 438.09B params (28B active) · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #125 of 300     27%      3
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #127 of 302     27%      3
 coding       ▁▁▁▃▆██▇●▄▃▁   #114 of 458*     23%      2
 math         ▁▂▃▅▆▅▄●▄▁▁▁     #88 of 398     42%      4
 </pre>
 
-<details><summary>agent tasks · #125 of 300 · 27% of its score</summary>
+<details><summary>agent tasks · #127 of 302 · 27% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

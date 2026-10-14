@@ -14,11 +14,11 @@ Mistral · released 2023-12 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #283 of 340*    2.6%      1
+agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #285 of 342*    2.6%      1
 chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #344 of 463     97%      5
 </pre>
 
-<details><summary>agent tasks · #283 of 340 · 2.6% of its score</summary>
+<details><summary>agent tasks · #285 of 342 · 2.6% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 

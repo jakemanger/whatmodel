@@ -6,7 +6,7 @@
 
 iFLYTEK (SparkLLM) · released 2026-08 · 4.11B params · apache-2.0
 
-**score 65.7** ±1.1 · #134 of 719 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.7** ±1.1 · #136 of 721 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ iFLYTEK (SparkLLM) · released 2026-08 · 4.11B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #112 of 300     43%      9
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #115 of 302     43%      9
 coding          ▁▁▁▃▆██●▆▄▃▁   #136 of 458     25%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #98 of 393*    0.3%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #87 of 398     27%      3
 web search      █·█▄██·▄▄·▄●     #1 of 13*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #112 of 300 · 43% of its score</summary>
+<details><summary>agent tasks · #115 of 302 · 43% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

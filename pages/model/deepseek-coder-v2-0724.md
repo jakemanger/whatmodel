@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 52.9** ±1.0 · #301 of 719 · from 6 benchmark results across 3 sources
+**score 52.9** ±1.0 · #303 of 721 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-l
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #233 of 300*    2.0%      1
+agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #235 of 302*    2.0%      1
 coding       ▁▁▁▃▆██●▆▄▃▁   #191 of 458*     38%      2
 math         ▁▂▃▅●▅▄█▄▁▁▁   #280 of 398*    7.6%      1
 </pre>
 
-<details><summary>agent tasks · #233 of 300 · 2.0% of its score</summary>
+<details><summary>agent tasks · #235 of 302 · 2.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

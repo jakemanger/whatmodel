@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · closed weights
 
-**score 67.1** ±0.6 · #110 of 719 · from 52 benchmark results across 22 sources
+**score 67.1** ±0.6 · #112 of 721 · from 52 benchmark results across 22 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Google · released 2025-06 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #134 of 300     21%     12
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #136 of 302     21%     12
 coding              ▁▁▁▃▆██●▆▄▃▁   #164 of 458     16%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #57 of 393*    3.8%      2
 math                ▁▂▃▅▆▅▄●▄▁▁▁   #119 of 398     26%      7
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #54 of 147     1
 web search          ▂▁▂●▄█▃▃▁▁·▁    #59 of 80*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #134 of 300 · 21% of its score</summary>
+<details><summary>agent tasks · #136 of 302 · 21% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions) (la…</a>   69.6%  ▃·▃·●▃▃·▃▃█▅ beats 2/11     medium · avg 40%    4.2%  at its level
+<a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions) (la…</a>   69.6%  ▃·▃·●▃▃·▃▃█▅ beats 2/11     medium · avg 40%    4.1%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1247.5  ▁▁▂▂▂▂▄▅▅▆●█ beats 101/145  avg 1068            2.0%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   47.7%  ▁·▁·▃▃▁▇▃●·▄ beats 19/22    hard · avg 27%      1.6%  blunt · at its level
 <a href="https://arxiv.org/html/2602.04705v1#S6.T3">CharXiv descriptive questions</a>        93.4%  ▂▄▄▅▇▄█▇▇●▁▂ beats 55/58    easy · avg 70%      1.2%  typical
@@ -121,7 +121,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         85.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 146/208  hard · avg 43%          8.7%  sharp · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         85.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 146/208  hard · avg 43%          8.6%  sharp · several runs
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    60.5%  ▁···▁▃▂█▂▃▃● beats 23/23    hard · avg 18%          2.2%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Pro</a>                             86.7%  ▄·▄···█·▄··● beats 5/5      medium · avg 56%        2.2%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux</a>                           90.1%  ██●█··█····█ beats 2/5      medium · avg 74%        1.9%  typical
@@ -129,10 +129,10 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench</a>                            24.3%  █····█●·██·█ beats 2/5      very hard · avg 7.9%    1.4%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench</a>                              41.6%  ▄······▄▄·▄● beats 5/5      very hard · avg 12%     1.4%  at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     66.1%  ▂···█▂▆▆██▆● beats 23/23    very hard · avg 30%     1.2%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 80/135   very hard · avg 5.9%    1.2%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 80/135   very hard · avg 5.9%    1.1%  sharp · noisy
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   92.8%  ▁▁▃▁█●▃▃▆▂▂▂ beats 24/49    easy · avg 78%          1.0%  typical
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   51.5%  ▆▂·▄█·▂▂·●▄▂ beats 13/16    very hard · avg 36%     1.0%  blunt · at its level
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   52.2%  ▁▁▃▂▂▄▁▃▄●▄█ beats 21/38    very hard · avg 14%     1.0%  at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   52.2%  ▁▁▃▂▂▄▁▃▄●▄█ beats 21/38    very hard · avg 14%     0.9%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BeyondAIME</a>                           63.0%  ●··▄····▄··█ beats 0/5      medium · avg 41%        0.9%  at its level
 <a href="https://arxiv.org/html/2603.07316v1">FinSheet-Bench accuracy (501 ques…</a>   78.8%  ●···██·····█ beats 0/3      medium · avg 52%        0.8%  blunt
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   57.6%  ▁··▃▁▁▁●█▅▁▅ beats 6/24     medium · avg 52%        0.6%  blunt · at its level

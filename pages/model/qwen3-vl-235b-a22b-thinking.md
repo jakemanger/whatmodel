@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 64.0** ±0.8 · #156 of 719 · from 50 benchmark results across 4 sources
+**score 64.0** ±0.8 · #158 of 721 · from 50 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #152 of 300     13%      3
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #154 of 302     13%      3
 coding              ▁▁▁▃▆██▇●▄▃▁   #130 of 458*    1.8%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #118 of 393*    6.2%      2
 math                ▁▂▃▅▆▅▄●▄▁▁▁    #117 of 398     15%      6
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #79 of 147     32%     18
 </pre>
 
-<details><summary>agent tasks · #152 of 300 · 13% of its score</summary>
+<details><summary>agent tasks · #154 of 302 · 13% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06 · 33B params · non-commercial
 
-**score 39.1** ±1.1 · #543 of 719 · from 10 benchmark results across 8 sources
+**score 39.1** ±1.1 · #545 of 721 · from 10 benchmark results across 8 sources
 
 ## What it's good at
 

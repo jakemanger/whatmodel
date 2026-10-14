@@ -6,7 +6,7 @@
 
 ServiceNow · released 2025-11 · 14.9B params · mit
 
-**score 61.6** ±1.4 · #182 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.6** ±1.4 · #184 of 721 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ ServiceNow · released 2025-11 · 14.9B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #195 of 300     31%      3
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #197 of 302     31%      3
 coding              ▁▁▁▃▆██●▆▄▃▁   #176 of 458*     61%      2
 vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄    #89 of 147*     11%      2
 </pre>
 
-<details><summary>agent tasks · #195 of 300 · 31% of its score</summary>
+<details><summary>agent tasks · #197 of 302 · 31% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

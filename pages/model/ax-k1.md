@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 62.0** ±1.2 · #177 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.0** ±1.2 · #179 of 721 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 

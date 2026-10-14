@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 70.1** ±0.9 · #80 of 719 · from 15 benchmark results across 6 sources
+**score 70.1** ±0.9 · #82 of 721 · from 15 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ SpaceXAI (xAI) · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #108 of 300     11%      4
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #110 of 302     11%      4
 coding              ▁▁▁▃▆██▇●▄▃▁   #111 of 458*     12%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #61 of 393*    6.6%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁     #60 of 398     47%      3
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #52 of 147*    4
 web search          ▂▁▂●▄█▃▃▁▁·▁     #63 of 80*    4.8%      2
 </pre>
 
-<details><summary>agent tasks · #108 of 300 · 11% of its score</summary>
+<details><summary>agent tasks · #110 of 302 · 11% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   42.8%  ▂··▁▁▃▄●█▅▃▃ beats 29/82    very hard · avg 1.2%     31%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   42.8%  ▂··▁▁▃▄●█▅▃▃ beats 29/82    very hard · avg 1.2%     32%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      14.6%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 15/63    very hard · avg 0.1%     13%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 153/193  very hard · avg 8.6%    3.0%  sharp · noisy
 </pre>
@@ -100,7 +100,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 166/208  hard · avg 40%          7.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                25.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 95/135   very hard · avg 5.9%    3.7%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    33.2%  ▁▁▃▂▃▃●▆█▃▂▅ beats 24/78    very hard · avg 8.1%    2.5%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    33.2%  ▁▁▃▂▃▃●▆█▃▂▅ beats 24/78    very hard · avg 8.1%    2.4%  at its level
 <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    4.1%  ▃▃█▃·●···█▃▃ beats 6/12     very hard · avg 0.8%    2.2%  too hard for it
 </pre>
 
@@ -113,7 +113,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        6   61% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   26% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   25% ▇▇▇
 <a name="paper-2606.05405v2"></a><a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam</a>                               1    5% ▇
 <a name="paper-2610.00609v1-legal-research-bench"></a><a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench</a>                            2    4% ▇
 <a name="paper-2608.19741v4-thinkingbox"></a><a href="https://arxiv.org/html/2608.19741v4">One Success Isn't Reliability: Thinking…</a>        1    3% ▇

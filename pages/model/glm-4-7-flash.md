@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 
-**score 58.8** ±1.3 · #207 of 719 · from 10 benchmark results across 6 sources
+**score 58.8** ±1.3 · #209 of 721 · from 10 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -82,7 +82,7 @@ test              result  vs the others in its run  difficulty           counts 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         60.5%  ▁▁▁▁▂▄▆●▅▇█▅ beats 88/208  hard · avg 40%           27%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1151.3  ▁·▂▁▄●▅▃█▄▁▁ beats 20/62   avg 1045                8.9%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1151.3  ▁·▂▁▄●▅▃█▄▁▁ beats 20/62   avg 1045                9.0%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   94.1%  ▂·▂▂·▂·▃▃·█● beats 13/14   easy · avg 80%          8.0%  typical
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   83.1%  ▁▁●▁█▄▃▃▆▂▂▂ beats 3/49    easy · avg 78%          7.5%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   74.8%  ▂··▂▂·▂▆●█·▄ beats 7/15    medium · avg 63%        5.7%  at its level

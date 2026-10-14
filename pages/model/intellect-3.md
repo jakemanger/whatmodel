@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.7** ±1.1 · #145 of 719 · from 9 benchmark results across 3 sources
+**score 64.7** ±1.1 · #146 of 721 · from 9 benchmark results across 3 sources
 
 ## What it's good at
 

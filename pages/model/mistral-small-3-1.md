@@ -6,7 +6,7 @@
 
 Mistral · released 2025-03 · 24.01B params · apache-2.0
 
-**score 53.9** ±0.9 · #288 of 719 · from 28 benchmark results across 13 sources
+**score 53.9** ±0.9 · #290 of 721 · from 28 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Mistral · released 2025-03 · 24.01B params · apache-2.0
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #219 of 300    5.4%      3
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #219 of 302    5.4%      3
 coding                             not ranked yet       —      2
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃     #221 of 393*     11%      2
 math                ▁▂▃▅●▅▄█▄▁▁▁      #255 of 398     28%      4
@@ -22,9 +22,9 @@ vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄      #105 of 147   
 web search          ▂▁▂▆▄█▃●▁▁·▁       #11 of 80*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #219 of 300 · 5.4% of its score</summary>
+<details><summary>agent tasks · #219 of 302 · 5.4% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why

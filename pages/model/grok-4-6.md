@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-08 · closed weights
 
-**score 76.3** ±0.7 · #30 of 719 · from 18 benchmark results across 5 sources
+**score 76.3** ±0.7 · #32 of 721 · from 18 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,21 +14,21 @@ SpaceXAI (xAI) · released 2026-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #30 of 300     14%      3
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #32 of 302     14%      3
 coding              ▁▁▁▃▆██▇▆▄●▁   #20 of 458*     10%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #51 of 393*    4.1%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #27 of 398     36%      3
+math                ▁▂▃▅▆▅▄█●▁▁▁    #27 of 398     37%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #35 of 147*    4.2%      2
 </pre>
 
-<details><summary>agent tasks · #30 of 300 · 14% of its score</summary>
+<details><summary>agent tasks · #32 of 302 · 14% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0128 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 25/49  avg -0.310 IPS          8.2%  sharp
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json">Terminal-Bench 4.0</a>                       20.3%  █▅▅●▅·▅▃▃▅▅▅ beats 7/20   very hard · avg 0.4%    4.6%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json">Terminal-Bench 4.0</a>                       20.3%  █▅▅●▅·▅▃▃▅▅▅ beats 7/20   very hard · avg 0.4%    4.5%  sharp
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>       21.9%  ▁▁·▁▁▁▁▅▃█●█ beats 20/27  very hard · avg 2.4%    1.2%  typical
 </pre>
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>chat &amp; writing · #51 of 393 · 4.1% of its score</summary>
 
-Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+Beats [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -57,7 +57,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #27 of 398 · 36% of its score</summary>
+<details><summary>math · #27 of 398 · 37% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall. Trails [Qwen3.7 Max](qwen3-7-max.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Gemini 3.7 Flash](gemini-3-7-flash.md) here, though they rank lower overall.
 
@@ -86,12 +86,12 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    30.5%  ▄▂·▆█▂▆●▆▆·▄ beats 14/24    very hard · avg 0.4%    9.0%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           40.0%  █▆▆●▆▂▅▂▂▂·▅ beats 16/30    very hard · avg 1.3%    7.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         34.0%  █··▂▃▇▄●▂▃▁▁ beats 55/74    very hard · avg 9.4%    6.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    30.5%  ▄▂·▆█▂▆●▆▆·▄ beats 14/24    very hard · avg 0.4%    8.9%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           40.0%  █▆▆●▆▂▅▂▂▂·▅ beats 16/30    very hard · avg 1.3%    7.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         34.0%  █··▂▃▇▄●▂▃▁▁ beats 55/74    very hard · avg 9.4%    6.0%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                31.0%  █▁▁▁▁▂▁▄●▂▁▁ beats 107/135  very hard · avg 5.9%    3.7%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.2%  ▁▁▁▁▂▄▆▄▅▇█● beats 194/208  hard · avg 40%          2.7%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    48.9%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 52/78    very hard · avg 8.1%    1.7%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    48.9%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 52/78    very hard · avg 8.1%    1.6%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   96.8%  ▁▁▃▁█▄▃▃●▂▂▂ beats 39/49    easy · avg 78%          0.9%  maxed out
 </pre>
 

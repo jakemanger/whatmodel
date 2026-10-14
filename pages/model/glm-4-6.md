@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-09 · 357B params (32B active) · mit
 
-**score 66.0** ±0.8 · #128 of 719 · from 31 benchmark results across 7 sources
+**score 66.0** ±0.8 · #130 of 721 · from 31 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2025-09 · 357B params (32B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #109 of 300     40%     13
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #111 of 302     40%     13
 coding          ▁▁▁▃▆██▇●▄▃▁   #118 of 458     29%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #84 of 393*    6.3%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #86 of 398     16%      5
 web search      ▂●▂▆▄█▃▃▁▁·▁     #74 of 80     10%      4
 </pre>
 
-<details><summary>agent tasks · #109 of 300 · 40% of its score</summary>
+<details><summary>agent tasks · #111 of 302 · 40% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 

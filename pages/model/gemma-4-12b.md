@@ -6,7 +6,7 @@
 
 Google · released 2026-06 · 11.9B params · apache-2.0
 
-**score 62.3** ±0.8 · #172 of 719 · from 30 benchmark results across 3 sources
+**score 62.3** ±0.8 · #174 of 721 · from 30 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Google · released 2026-06 · 11.9B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #151 of 300     23%      8
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #153 of 302     23%      8
 coding              ▁▁▁▃▆██▇●▄▃▁   #127 of 458    6.6%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #74 of 393*    0.9%      2
 math                ▁▂▃▅▆▅●█▄▁▁▁   #161 of 398     20%      4
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #71 of 147     1
 web search          █·█▄█●·▄▄·▄▄     #5 of 13*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #151 of 300 · 23% of its score</summary>
+<details><summary>agent tasks · #153 of 302 · 23% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -108,8 +108,8 @@ test        result  vs the others in its run  difficulty           counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>                   78.8%  █···▄·····●█ beats 3/5    hard · avg 47%          7.2%  sharp · at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>                 13.1%  ▄▄·▄··▄·▄·▄● beats 6/7    very hard · avg 3.9%    7.2%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>                   78.8%  █···▄·····●█ beats 3/5    hard · avg 47%          7.2%  sharp · at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>                  48.7%  ▂···▂·▃··●▂█ beats 5/13   very hard · avg 30%     5.9%  sharp · at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified)</a>            72.8%  █···▃···▅·●▃ beats 6/7    hard · avg 45%          5.1%  sharp · at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                       77.2%  ▄··█···●··▄▄ beats 3/5    medium · avg 61%        3.6%  typical

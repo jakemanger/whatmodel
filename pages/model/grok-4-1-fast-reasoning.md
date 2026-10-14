@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 66.3** ±1.1 · #124 of 719 · from 15 benchmark results across 10 sources
+**score 66.3** ±1.1 · #126 of 721 · from 15 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ SpaceXAI (xAI) · released 2025-11 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #110 of 300     16%      4
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #113 of 302     17%      4
 coding              ▁▁▁▃▆██●▆▄▃▁   #162 of 458     28%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #78 of 393*     11%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁    #90 of 398     30%      4
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #78 of 147*    7.3%      1
-web search          ▂▁▂▆▄●▃▃▁▁·▁    #32 of 80*    4.3%      1
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #32 of 80*    4.4%      1
 </pre>
 
-<details><summary>agent tasks · #110 of 300 · 16% of its score</summary>
+<details><summary>agent tasks · #113 of 302 · 17% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -85,13 +85,13 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #32 of 80 · 4.3% of its score</summary>
+<details><summary>web search · #32 of 80 · 4.4% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.3-Codex](gpt-5-3-codex.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1194.2  ▁·▁▁▂▂▂●▅▂▁▁ beats 17/30  avg 1055      4.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1194.2  ▁·▁▁▂▂▂●▅▂▁▁ beats 17/30  avg 1055      4.4%  blunt
 </pre>
 
 </details>

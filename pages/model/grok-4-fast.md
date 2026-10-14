@@ -14,14 +14,14 @@ SpaceXAI (xAI) · released 2025-09 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▂▁   #128 of 340*    7.0%      1
+agent tasks         ▁▁▂▆█▆●▄▄▃▃▁   #129 of 342*    7.0%      1
 coding              ▁▁▁▃▅▇●▇▅▄▃▁   #240 of 524*     35%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #120 of 463*     20%      1
 vision &amp; documents  ▁▁▃●▂▃▅▄▇▇█▃   #154 of 182*     11%      2
 web search          ▂·▂▇●█▃▄▁▂▁▁     #59 of 92*    8.2%      1
 </pre>
 
-<details><summary>agent tasks · #128 of 340 · 7.0% of its score</summary>
+<details><summary>agent tasks · #129 of 342 · 7.0% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -94,7 +94,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   63% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   64% ▇▇▇▇▇▇▇▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4-fast-reasoning">ARC Prize Foundation model_baseline out…</a>        2   17% ▇▇
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        2   11% ▇
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-fast_sierra_2026-05-05/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    7% ▇

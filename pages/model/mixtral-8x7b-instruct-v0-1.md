@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.4** ±0.4 · #526 of 719 · from 32 benchmark results across 21 sources
+**score 40.4** ±0.4 · #528 of 721 · from 32 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #277 of 300*    0.4%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #279 of 302*    0.4%      1
 coding          ▁▁▁▃●██▇▆▄▃▁    #386 of 458     55%      8
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #307 of 393     12%      6
 math            ▁▂●▅▆▅▄█▄▁▁▁   #357 of 398*    5.7%      2
 </pre>
 
-<details><summary>agent tasks · #277 of 300 · 0.4% of its score</summary>
+<details><summary>agent tasks · #279 of 302 · 0.4% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md), [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             63.2%  ▁·▁▁●▄▄▅█▄▂▁ beats 5/53     easy · avg 77%         9.4%  at its level
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              29.3%  ▂▂▃▄●█▁▄▅▃▁▃ beats 14/42    medium · avg 55%       5.1%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mixtral-8x7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                                       41.9%  ▃▂▅●▃·█▃▅··▂ beats 8/23     medium · avg 57%       2.7%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.4703 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 18/52    avg 45.277 WB-Score    2.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.4703 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 18/52    avg 45.276 WB-Score    2.1%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             54.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 20/95    easy · avg 66%         1.4%  at its level
 <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                                 45.3%  ▁▁▁▁▂▄●▅█▃▄▁ beats 37/129   medium · avg 67%       1.2%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                58.6%  ▁··▁▁▂▂▆▅●█▆ beats 40/70    medium · avg 64%       1.1%  at its level

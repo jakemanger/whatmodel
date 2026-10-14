@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-05 · 8.03B params
 
-**score 50.6** ±1.4 · #332 of 719 · from 3 benchmark results across 3 sources
+**score 50.6** ±1.4 · #334 of 721 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -32,7 +32,7 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.0497 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 23/52    avg 45.277 WB-Score     20%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.0497 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 23/52    avg 45.276 WB-Score     20%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 152/276  medium · avg 73%       3.8%  at its level · noisy
 </pre>
 

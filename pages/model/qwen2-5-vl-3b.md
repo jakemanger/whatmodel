@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 3.75B params · qwen-research
 
-**score 44.0** ±1.0 · #460 of 719 · from 14 benchmark results across 2 sources
+**score 44.0** ±1.0 · #462 of 721 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 

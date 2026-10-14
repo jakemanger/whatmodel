@@ -14,10 +14,10 @@ Watt AI · released 2024-12 · 70.55B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁   #151 of 334*     79%      1
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #153 of 336*     79%      1
 </pre>
 
-<details><summary>agent tasks · #151 of 334 · 79% of its score</summary>
+<details><summary>agent tasks · #153 of 336 · 79% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

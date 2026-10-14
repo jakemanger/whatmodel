@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 1.28B params · exaone
 
-**score 46.8** ±1.5 · #401 of 719 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 46.8** ±1.5 · #403 of 721 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ LG AI Research · released 2025-07 · 1.28B params · exaone
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #269 of 300     16%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #271 of 302     16%      3
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #283 of 393*    6.0%      1
 math            ▁▂▃▅●▅▄█▄▁▁▁   #251 of 398*     34%      2
 </pre>
 
-<details><summary>agent tasks · #269 of 300 · 16% of its score</summary>
+<details><summary>agent tasks · #271 of 302 · 16% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

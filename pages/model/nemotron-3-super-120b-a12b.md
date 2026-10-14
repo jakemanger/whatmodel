@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
-**score 64.6** ±0.8 · #146 of 719 · from 26 benchmark results across 5 sources
+**score 64.6** ±0.8 · #147 of 721 · from 26 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁      #128 of 300     24%     10
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁      #131 of 302     24%     10
 coding          ▁▁▁▃▆██▇●▄▃▁      #117 of 458     16%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #147 of 393*    6.4%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁      #118 of 398     37%      7
 web search                     not ranked yet       —      2
 </pre>
 
-<details><summary>agent tasks · #128 of 300 · 24% of its score</summary>
+<details><summary>agent tasks · #131 of 302 · 24% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why

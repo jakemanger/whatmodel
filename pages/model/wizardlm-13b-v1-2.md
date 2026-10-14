@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 35.8** ±1.1 · #593 of 719 · from 14 benchmark results across 5 sources
+**score 35.8** ±1.1 · #595 of 721 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 

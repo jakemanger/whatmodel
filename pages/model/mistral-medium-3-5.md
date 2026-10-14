@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 64.4** ±0.9 · #152 of 719 · from 22 benchmark results across 5 sources
+**score 64.4** ±0.9 · #154 of 721 · from 22 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Mistral · released 2026-04 · 128B params · modified-mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #103 of 300     27%      8
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #104 of 302     28%      8
 coding              ▁▁▁▃▆██●▆▄▃▁    #148 of 458     18%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #80 of 393*    7.0%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #175 of 398*    9.5%      2
+math                ▁▂▃▅▆▅●█▄▁▁▁   #175 of 398*    9.4%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #75 of 147*    4.8%      1
 </pre>
 
-<details><summary>agent tasks · #103 of 300 · 27% of its score</summary>
+<details><summary>agent tasks · #104 of 302 · 28% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #175 of 398 · 9.5% of its score</summary>
+<details><summary>math · #175 of 398 · 9.4% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 

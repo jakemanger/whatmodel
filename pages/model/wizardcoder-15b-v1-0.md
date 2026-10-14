@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-06 · bigscience-openrail-m
 
-**score 41.5** ±0.8 · #508 of 719 · from 3 benchmark results across 1 source
+**score 41.5** ±0.8 · #510 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

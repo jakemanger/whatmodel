@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 3.3B params (0.8B active) · apache-2.0
 
-**score 34.7** ±1.0 · #604 of 719 · from 16 benchmark results across 2 sources
+**score 34.7** ±1.0 · #606 of 721 · from 16 benchmark results across 2 sources
 
 ## What it's good at
 

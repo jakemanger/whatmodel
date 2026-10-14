@@ -6,21 +6,35 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 84.4** ±6.5 · #4 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 83.8** ±3.4 · #5 of 721 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
 <sub>● marks Muse Wonder Full among every model on that task or test, worst to best.</sub>
 
 <pre>
-
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #17 of 302*     55%      2
 </pre>
 
-<details><summary>other tests (1)</summary>
+<details><summary>agent tasks · #17 of 302 · 55% of its score</summary>
+
+Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
 <pre>
-test                           result  vs the others in its run  difficulty            counts  why
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>   59.0%  ██·······█·● beats 3/3    very hard · avg 8.1%     81%  at its level · small run
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                      75.3%  █·█····█···● beats 3/3    hard · avg 23%     33%  typical
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   78.4%  ██·····●··██ beats 2/4    hard · avg 26%     22%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    59.0%  ██·······█·● beats 3/3    very hard · avg 8.7%     22%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 20%           18%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -31,9 +45,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 84.4
+<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 83.8
 </pre>
 
 ## How to run it

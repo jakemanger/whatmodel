@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 57.5** ±1.2 · #224 of 719 · from 13 benchmark results across 3 sources
+**score 57.5** ±1.2 · #227 of 721 · from 13 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁   #171 of 300     60%      8
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁   #173 of 302     60%      8
 coding       ▁▁▁▃▆█●▇▆▄▃▁   #208 of 458     71%      7
 </pre>
 
-<details><summary>agent tasks · #171 of 300 · 60% of its score</summary>
+<details><summary>agent tasks · #173 of 302 · 60% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -26,7 +26,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 test                               result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                  31.8%  ●▄·····▄▄▄▄█ beats 0/7      hard · avg 17%           21%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>              20.7%  ●·▄·····█▄█▄ beats 0/7      hard · avg 18%           11%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                  10.1%  ●······█▄▄█▄ beats 0/7      very hard · avg 7.2%    9.4%  typical
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                  10.1%  ●······█▄▄█▄ beats 0/7      very hard · avg 7.1%     10%  typical
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>   19.8%  ▄···●···▄▄██ beats 1/7      very hard · avg 6.6%    7.2%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                68.7%  ▁····▃·▂▇●▂▆ beats 19/28    medium · avg 45%        6.1%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>               48.0%  ▁▁▁·▅▄▁█●▁▁▇ beats 19/28    hard · avg 29%          4.2%  at its level · small run

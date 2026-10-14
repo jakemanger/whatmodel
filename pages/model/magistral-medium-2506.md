@@ -14,13 +14,13 @@ Mistral · released 2025-06 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆●▆▅▄▄▃▂▁   #232 of 340*    3.0%      1
+agent tasks     ▁▁▂▆●▆▅▄▄▃▃▁   #234 of 342*    3.0%      1
 coding          ▃●······▃·▃▃       #4 of 7*    8.7%      1
 chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #257 of 463*     16%      1
 math            ▁▂▃▅▇●▅█▄▁▁▁   #216 of 462*     47%      2
 </pre>
 
-<details><summary>agent tasks · #232 of 340 · 3.0% of its score</summary>
+<details><summary>agent tasks · #234 of 342 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

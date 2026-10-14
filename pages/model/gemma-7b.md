@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 32.1** ±0.6 · #625 of 719 · from 17 benchmark results across 11 sources
+**score 32.1** ±0.6 · #627 of 721 · from 17 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                         result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                             17.7%  ▂●▃▄▄█▁▄▅▃▁▃ beats 3/42    medium · avg 55%       6.7%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  6.6198 WB-Score  ▁·●▁·▃█▄▇▆▅▆ beats 1/52    avg 45.277 WB-Score    3.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  6.6198 WB-Score  ▁·●▁·▃█▄▇▆▅▆ beats 1/52    avg 45.276 WB-Score    3.9%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>            48.0%  ▃▁▁▁▁▁▁●▂█▅▁ beats 64/276  medium · avg 73%       0.6%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>            64.0%  ▁▁▁▁▁▁▁●▄█▄▃ beats 34/146  easy · avg 83%         0.5%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>            85.2%  ▁▁●▃▄▄█▆▃▂▂▁ beats 14/140  very easy · avg 94%    0.4%  blunt · noisy

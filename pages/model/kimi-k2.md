@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-07 · 1000B params (32B active) · modified-mit
 
-**score 65.9** ±0.8 · #129 of 719 · from 29 benchmark results across 9 sources
+**score 65.9** ±0.8 · #131 of 721 · from 29 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Moonshot AI · released 2025-07 · 1000B params (32B active) · modified-mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #117 of 300     25%      7
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #119 of 302     25%      7
 coding          ▁▁▁▃▆██●▆▄▃▁    #132 of 458     32%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #90 of 393*    8.2%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #133 of 398*    3.9%      2
 </pre>
 
-<details><summary>agent tasks · #117 of 300 · 25% of its score</summary>
+<details><summary>agent tasks · #119 of 302 · 25% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

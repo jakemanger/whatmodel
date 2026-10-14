@@ -6,7 +6,7 @@
 
 Meta · released 2024-12 · 70B params · llama-3.3
 
-**score 54.2** ±0.6 · #282 of 719 · from 60 benchmark results across 27 sources
+**score 54.2** ±0.6 · #284 of 721 · from 60 benchmark results across 27 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Meta · released 2024-12 · 70B params · llama-3.3
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #246 of 300     11%     10
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #248 of 302     11%     10
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #234 of 458     30%     14
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #207 of 393    9.2%      6
 math            ▁▂▃▅●▅▄█▄▁▁▁   #268 of 398     14%      7
 web search      ▂▁▂●▄█▃▃▁▁·▁    #55 of 80*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #246 of 300 · 11% of its score</summary>
+<details><summary>agent tasks · #248 of 302 · 11% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -89,7 +89,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails 
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         41.6%  ▂▂▅▆●█▆▃▅▂▃▄ beats 34/92   hard · avg 33%          7.0%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                            20.0%  ▁▁▁▂▁●▁▅███▃ beats 12/85   hard · avg 16%          2.6%  sharp · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              5.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 32/193  very hard · avg 8.6%    1.7%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              5.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 32/193  very hard · avg 8.6%    1.8%  sharp · noisy
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                93.6%  ▂▃··▃▂▅█▆▃●▃ beats 20/22   very easy · avg 88%     0.9%  sharp · maxed out
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            71.8%  ▃▃█▂▂●·····▁ beats 18/22   medium · avg 61%        0.9%  at its level
 <a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals)</a>                  89.1%  ▁·▁▁·▁▇●█▁▃▁ beats 10/20   easy · avg 82%          0.7%  blunt

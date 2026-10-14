@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 8.79B params · apache-2.0
 
-**score 54.3** ±0.9 · #280 of 719 · from 24 benchmark results across 3 sources
+**score 54.3** ±0.9 · #282 of 721 · from 24 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2026-04 · 8.79B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #206 of 300*    7.6%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #208 of 302*    7.6%      2
 coding          ▁▁▁▃▆██●▆▄▃▁    #193 of 458     36%      8
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #215 of 393*    8.9%      2
 math            ▄··········●        #1 of 3     17%      5
 </pre>
 
-<details><summary>agent tasks · #206 of 300 · 7.6% of its score</summary>
+<details><summary>agent tasks · #208 of 302 · 7.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

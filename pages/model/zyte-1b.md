@@ -6,7 +6,7 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 8.3** ±2.4 · #709 of 719 · from 3 benchmark results across 1 source
+**score 8.3** ±2.4 · #711 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

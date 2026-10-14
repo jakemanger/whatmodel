@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 57.2** ±0.9 · #230 of 719 · from 20 benchmark results across 5 sources
+**score 57.2** ±0.9 · #232 of 721 · from 20 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2025-05 · 8.19B params · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #262 of 300*    5.9%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #263 of 302*    5.9%      1
 coding       ▁▁▁▃▆█●▇▆▄▃▁    #248 of 458    8.9%      3
 math         ▁▂▃▅▆▅●█▄▁▁▁    #153 of 398     48%      6
 </pre>
 
-<details><summary>agent tasks · #262 of 300 · 5.9% of its score</summary>
+<details><summary>agent tasks · #263 of 302 · 5.9% of its score</summary>
 
 Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 

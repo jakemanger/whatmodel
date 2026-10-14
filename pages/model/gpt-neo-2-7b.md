@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 18.2** ±1.0 · #694 of 719 · from 25 benchmark results across 7 sources
+**score 18.2** ±1.0 · #696 of 721 · from 25 benchmark results across 7 sources
 
 ## What it's good at
 

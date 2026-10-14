@@ -14,12 +14,12 @@ Salesforce · released 2025-03 · 70.55B params · cc-by-nc-4.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▂▁   #136 of 334*     93%      2
+agent tasks  ▁▁▃▆█▆●▄▄▃▃▁   #139 of 336*     93%      2
 </pre>
 
-<details><summary>agent tasks · #136 of 334 · 93% of its score</summary>
+<details><summary>agent tasks · #139 of 336 · 93% of its score</summary>
 
-Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty        counts  why

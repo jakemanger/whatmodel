@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 72.0** ±1.0 · #65 of 719 · from 7 benchmark results across 2 sources
+**score 72.0** ±1.0 · #67 of 721 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -46,9 +46,9 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                   result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            87.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 160/208  hard · avg 40%          8.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            87.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 160/208  hard · avg 40%          8.5%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   21.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 84/135   very hard · avg 5.9%    5.6%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       36.5%  ▁▁▃▂▃▃●▆█▃▂▅ beats 31/78    very hard · avg 8.1%    3.3%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       36.5%  ▁▁▃▂▃▃●▆█▃▂▅ beats 31/78    very hard · avg 8.1%    3.2%  at its level
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 49.5** ±0.7 · #351 of 719 · from 5 benchmark results across 3 sources
+**score 49.5** ±0.7 · #353 of 721 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 

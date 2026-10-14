@@ -14,14 +14,14 @@ SpaceXAI (xAI) · released 2025-04 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #270 of 340*    9.3%      2
+agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #272 of 342*    9.3%      2
 coding          ▁▁▁▃▅▇█●▅▄▃▁   #158 of 524*     36%      2
 chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #168 of 463*     10%      1
 math            ▁▂▃▅▇▅●█▄▁▁▁    #178 of 462     22%      3
 web search      ▂·▂▇▅█▃▄▁▂●▁      #4 of 92*    7.4%      1
 </pre>
 
-<details><summary>agent tasks · #270 of 340 · 9.3% of its score</summary>
+<details><summary>agent tasks · #272 of 342 · 9.3% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

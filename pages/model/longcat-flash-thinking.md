@@ -14,13 +14,13 @@ Meituan · released 2025-09 · 560B params (27B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█▆▅●▄▃▂▁    #104 of 340     16%      4
+agent tasks     ▁▁▂▆█▆▅●▄▃▃▁    #106 of 342     16%      4
 coding          ▁▁▁▃▅▇█▇▅●▃▁    #57 of 524*    5.9%      1
 chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #147 of 463*    3.0%      1
 math            ▁▂▃▅▇▅▅●▄▁▁▁     #76 of 462     30%      4
 </pre>
 
-<details><summary>agent tasks · #104 of 340 · 16% of its score</summary>
+<details><summary>agent tasks · #106 of 342 · 16% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 

@@ -14,10 +14,10 @@ MeetKai · released 2024-07 · 8.03B params · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #250 of 334*     82%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #252 of 336*     82%      1
 </pre>
 
-<details><summary>agent tasks · #250 of 334 · 82% of its score</summary>
+<details><summary>agent tasks · #252 of 336 · 82% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 

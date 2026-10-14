@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2024-03 · 13.02B params · apache-2.0
 
-**score 40.5** ±0.8 · #525 of 719 · from 3 benchmark results across 1 source
+**score 40.5** ±0.8 · #527 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

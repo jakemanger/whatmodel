@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-07 · closed weights
 
-**score 74.9** ±0.7 · #41 of 719 · from 20 benchmark results across 7 sources
+**score 74.9** ±0.7 · #42 of 721 · from 20 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ SpaceXAI (xAI) · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #38 of 300     16%      4
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #40 of 302     16%      4
 coding              ▁▁▁▃▆██▇▆●▃▁   #36 of 458*     10%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #37 of 393*    4.0%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #36 of 398     49%      5
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #26 of 147*    4.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #27 of 80*    1.6%      1
 </pre>
 
-<details><summary>agent tasks · #38 of 300 · 16% of its score</summary>
+<details><summary>agent tasks · #40 of 302 · 16% of its score</summary>
 
 Beats [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8-Omni-Flash](qwen3-8-omni-flash.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>chat &amp; writing · #37 of 393 · 4.0% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -67,7 +67,7 @@ Beats [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank higher overal
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            57.2%  ▂··▁▁▃▄▄●▅▃▃ beats 43/82    very hard · avg 1.2%     19%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               24.4%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 25/63    very hard · avg 0.1%     16%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   66.7%  ▂···▄·█●▆▆▄▂ beats 8/19     very hard · avg 4.7%     11%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   66.7%  ▂···▄·█●▆▆▄▂ beats 8/19     very hard · avg 4.7%     10%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 2026 (…</a>   29.3%  ▄··█▂●▂▆▄··▂ beats 7/14     very hard · avg 1.1%    2.5%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             97.8%  ▃▃▄▃▃▃▇▇█▃●▅ beats 171/193  very hard · avg 8.6%    0.8%  sharp · maxed out · noisy
 </pre>
@@ -101,7 +101,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           22.5%  ●▆▆▆▆▂▅▂▂▂·▅ beats 3/30     very hard · avg 1.3%    6.5%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           22.5%  ●▆▆▆▆▂▅▂▂▂·▅ beats 3/30     very hard · avg 1.3%    6.6%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                36.0%  █▁▁▁▁▂▁▄●▂▁▁ beats 112/135  very hard · avg 5.9%    3.3%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.4%  ▁▁▁▁▂▄▆▄▅▇█● beats 197/208  hard · avg 40%          3.1%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    48.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 50/78    very hard · avg 8.1%    1.6%  at its level

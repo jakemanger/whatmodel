@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 7.72B params · tongyi-qianwen
 
-**score 36.6** ±0.8 · #582 of 719 · from 13 benchmark results across 10 sources
+**score 36.6** ±0.8 · #584 of 721 · from 13 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -49,7 +49,7 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           18.0%  ▁▁▁▂▂●▂█▆▃▅▃ beats 12/61    medium · avg 41%        14%  typical
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              25.5%  ▂▂▃●▄█▁▄▅▃▁▃ beats 10/42    medium · avg 55%        13%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-7B-Chat_5shots.zip">MMLU-Pro</a>                                       26.4%  ●▂▅█▃·█▃▅··▂ beats 1/23     medium · avg 57%       6.9%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.4232 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 6/52     avg 45.277 WB-Score    5.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.4232 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 6/52     avg 45.276 WB-Score    5.9%  sharp
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">MedQA (USMLE, 4 options)</a>                       45.4%  ▁▁··▄▁▁··●▃█ beats 8/17     easy · avg 76%         5.8%  sharp · at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Qwen/Qwen1.5-7B-Chat/results_2024-05-16%2015%3A11%3A42.235659.json">MedMCQA</a>                                        45.3%  ▂▂··▄▄▂▂·●██ beats 9/17     medium · avg 68%       3.1%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                25.0%  ▁··▁▁●▂▆▅▆█▆ beats 4/70     medium · avg 64%       2.8%  at its level

@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-02 · closed weights
 
-**score 72.1** ±0.6 · #63 of 719 · from 41 benchmark results across 22 sources
+**score 72.1** ±0.6 · #65 of 721 · from 41 benchmark results across 22 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Anthropic · released 2026-02 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #44 of 300     39%     12
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #46 of 302     39%     12
 coding              ▁▁▁▃▆██▇▆●▃▁    #45 of 458     28%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #30 of 393*    3.8%      1
 math                ▁▂▃▅▆▅●█▄▁▁▁   #148 of 398    3.5%      3
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #31 of 147     1
 web search          ▂▁▂▆▄●▃▃▁▁·▁     #31 of 80    5.2%      3
 </pre>
 
-<details><summary>agent tasks · #44 of 300 · 39% of its score</summary>
+<details><summary>agent tasks · #46 of 302 · 39% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall.
 
@@ -30,7 +30,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">SWE-bench Pro (split unspecified)…</a>   58.1%  ●█·▄·▄██···▄ beats 0/9    very hard · avg 7.7%     10%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.2%  ▁··▁·▁▂▁▄●▄▁ beats 18/29  hard · avg 19%          7.3%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Terminal-Bench 2.1 (lab)</a>             67.0%  ▁·▁·▁▁▄▃▄●▃▇ beats 31/56  hard · avg 17%          3.7%  at its level
+<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Terminal-Bench 2.1 (lab)</a>             67.0%  ▁·▁·▁▁▄▃▄●▄█ beats 31/58  hard · avg 17%          3.7%  at its level
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">OSWorld-Verified (lab)</a>               78.5%  █▄·▂▆▂▄▂▆●▆█ beats 17/25  hard · avg 29%          3.2%  at its level
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    9.9%  ▄···█▄●▄█▄·█ beats 4/10   very hard · avg 1.7%    3.0%  typical
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam with tools (…</a>   46.8%  ▁······●·▄·█ beats 1/10   very hard · avg 15%     2.4%  at its level

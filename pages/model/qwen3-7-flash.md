@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 66.8** ±1.3 · #118 of 719 · from 5 benchmark results across 1 source
+**score 66.8** ±1.3 · #120 of 721 · from 5 benchmark results across 1 source
 
 ## What it's good at
 
@@ -35,7 +35,7 @@ test                       result  vs the others in its run    difficulty       
 test                          result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 133/208  hard · avg 40%           22%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          23.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 91/135   very hard · avg 5.9%    5.7%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▃▁▁ beats 21/74    very hard · avg 9.4%    5.7%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▃▁▁ beats 21/74    very hard · avg 9.4%    5.6%  sharp · too hard for it · noisy
 </pre>
 
 </details>

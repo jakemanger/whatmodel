@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 72.3** ±0.6 · #60 of 719 · from 53 benchmark results across 28 sources
+**score 72.3** ±0.6 · #62 of 721 · from 53 benchmark results across 28 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ OpenAI · released 2025-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #81 of 300     20%     10
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #83 of 302     20%     10
 coding              ▁▁▁▃▆██▇▆●▃▁    #75 of 458     20%      6
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #72 of 393*    2.9%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #45 of 398     26%      6
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #68 of 147    7.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #41 of 80*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #81 of 300 · 20% of its score</summary>
+<details><summary>agent tasks · #83 of 302 · 20% of its score</summary>
 
 Trails [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>coding · #75 of 458 · 20% of its score</summary>
 
-Beats [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
+Beats [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [GLM-4.7](glm-4-7.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -76,7 +76,7 @@ Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [GPT-5 Pro](gp
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            55.4%  ▂··▁▁▃▄▄●▅▃▃ beats 39/82    very hard · avg 1.2%     15%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               22.0%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 22/63    very hard · avg 0.1%    8.4%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               22.0%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 22/63    very hard · avg 0.1%    8.5%  sharp
 <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-average …</a>   69.3%  ▃▃···█▃·▃·●▃ beats 7/8      hard · avg 15%          1.0%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             91.4%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 150/193  very hard · avg 8.6%    0.9%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         98.1%  ▂▂▅▆▄█▆▃▅▂▃● beats 92/92    hard · avg 33%          0.7%  sharp · maxed out

@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-06 · closed weights
 
-**score 74.7** ±0.5 · #43 of 719 · from 42 benchmark results across 11 sources
+**score 74.7** ±0.5 · #45 of 721 · from 42 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Anthropic · released 2026-06 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #36 of 300     38%     14
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #38 of 302     38%     14
 coding              ▁▁▁▃▆██▇▆●▃▁    #40 of 458     23%      7
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #40 of 393*    2.5%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #34 of 398     23%      4
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #33 of 147    4.
 web search          ▂▁▂▆▄●▃▃▁▁·▁     #29 of 80    4.0%      3
 </pre>
 
-<details><summary>agent tasks · #36 of 300 · 38% of its score</summary>
+<details><summary>agent tasks · #38 of 302 · 38% of its score</summary>
 
 Beats [GPT-5.6 Luna](gpt-5-6-luna.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                    result  vs the others in its run    diff
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0440 IPS  ▁▁▁▄▂▃▇█●▂▁▃ beats 38/49    avg -0.310 IPS          5.1%  sharp
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=116">SWE-bench Multilingual (lab)</a>             78.3%  ▃··●·▅▃▃█··▃ beats 1/9      hard · avg 32%          3.4%  typical
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=116">SWE-bench Verified (lab)</a>                 85.2%  ▁▁▁▁▁▁▂▄█●▁▁ beats 127/131  hard · avg 28%          3.3%  sharp
-<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Terminal-Bench 2.1 (lab)</a>                 80.4%  ▁·▁·▁▁▄▃▄█●▇ beats 39/56    hard · avg 17%          2.3%  typical
+<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Terminal-Bench 2.1 (lab)</a>                 80.4%  ▁·▁·▁▁▄▃▄█●█ beats 39/58    hard · avg 17%          2.3%  typical
 <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72 God…</a>       25.0%  █▄·●·▄·██▄·▄ beats 4/11     very hard · avg 4.7%    2.0%  at its level
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">OSWorld-Verified (lab)</a>                   81.2%  █▄·▂▆▂▄▂▆▄●█ beats 20/25    hard · avg 29%          1.9%  typical
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>       43.1%  ▃··▅··▃●▃▅▃▅ beats 5/12     very hard · avg 3.1%    1.9%  sharp · at its level
@@ -65,7 +65,7 @@ test                                result  vs the others in its run    difficul
 
 <details><summary>chat &amp; writing · #40 of 393 · 2.5% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -94,7 +94,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1264.5  ▁▁▂▂▂▂▄▅▅▆●█ beats 113/145  avg 1068               1.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1264.5  ▁▁▂▂▂▂▄▅▅▆●█ beats 113/145  avg 1068               1.7%  blunt
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=129">CharXiv (reasoning questions) (la…</a>   77.0%  ███··●·██··█ beats 3/6      hard · avg 29%         1.6%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1475.7  ▁▁▃▃▄▃▇█▅●▄▅ beats 26/37    avg 1336               0.8%  blunt
 <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   38.3%  ▃·▅▃●▃··▅··█ beats 5/11     very hard · avg 33%    0.3%  blunt · at its level · noisy
@@ -121,7 +121,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   77.4%  █···▁▁▁▂▃·●▂ beats 20/23    very hard · avg 29%     3.2%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         35.0%  █··▂▃▇▄●▂▃▁▁ beats 56/74    very hard · avg 9.4%    3.2%  sharp · noisy
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam (lab)</a>           43.1%  ▂·····▂·●▂█▄ beats 2/10     very hard · avg 5.8%    3.1%  at its level
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam (lab)</a>           43.1%  ▂·····▂·●▂█▄ beats 2/10     very hard · avg 5.8%    3.0%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                16.0%  █▁▁▁▁▂●▄▂▂▁▁ beats 70/135   very hard · avg 5.9%    2.1%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         80.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 129/208  hard · avg 40%          2.0%  sharp
 <a href="https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=215">Global-MMLU (lab)</a>                    89.2%  ▄●····▄▄··▄█ beats 1/6      medium · avg 63%        1.6%  typical

@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 36.6** ±1.7 · #583 of 719 · from 6 benchmark results across 5 sources
+**score 36.6** ±1.7 · #585 of 721 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.3181 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 5/52    avg 45.277 WB-Score     28%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.3181 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 5/52    avg 45.276 WB-Score     28%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        33.8%  ▂▁▁▄●▅▇█▆▂▂▂ beats 14/58   medium · avg 51%        26%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        25.5%  ▃●·▆▆██▆▅▃▃▃ beats 2/33    medium · avg 41%        24%  typical
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                 5.2%  ●··▁▁▂▂▆▅▆█▆ beats 0/70    medium · avg 64%        14%  at its level

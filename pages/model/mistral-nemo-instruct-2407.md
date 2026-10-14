@@ -6,7 +6,7 @@
 
 Mistral · released 2024-07 · 12.25B params · apache-2.0
 
-**score 44.4** ±0.8 · #449 of 719 · from 23 benchmark results across 15 sources
+**score 44.4** ±0.8 · #451 of 721 · from 23 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2024-07 · 12.25B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁    #256 of 300    4.2%      3
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁    #257 of 302    4.2%      3
 coding       ▁▁▁▃▆█●▇▆▄▃▁    #265 of 458    3.5%      4
 math         ▁▂●▅▆▅▄█▄▁▁▁   #345 of 398*     16%      2
 </pre>
 
-<details><summary>agent tasks · #256 of 300 · 4.2% of its score</summary>
+<details><summary>agent tasks · #257 of 302 · 4.2% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-pl
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   82.8%  ▁▄·▁▄█●▅▅███ beats 15/43  very easy · avg 89%     10%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  10.8%  ▂▂●▆▄█▆▃▅▂▃▄ beats 6/92   hard · avg 33%         6.1%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  10.8%  ▂▂●▆▄█▆▃▅▂▃▄ beats 6/92   hard · avg 33%         6.2%  sharp
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             66.9%  ▁·▁▁▄●▄▅█▄▂▁ beats 9/53     easy · avg 77%          26%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           29.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 24/61    medium · avg 41%        19%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.3751 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 32/52    avg 45.277 WB-Score    5.8%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.3751 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 32/52    avg 45.276 WB-Score    5.8%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             11.8%  ▁▁▃●██▁▁·▁▁▁ beats 13/57    hard · avg 18%         4.3%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Mistral-Nemo-Instruct-2407_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             57.4%  ▂·●▂▂▆▅▆▆▆▃█ beats 1/29     easy · avg 76%         3.9%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             58.8%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 27/95    easy · avg 66%         3.8%  at its level

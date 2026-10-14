@@ -91,7 +91,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             18.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 24/57   hard · avg 18%         2.5%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        42.5%  ▃▂·▆▆██▆▅●▃▃ beats 28/33   medium · avg 41%       2.4%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.4%  ▂▁▁▄▂▅▇█▆▂●▂ beats 53/58   medium · avg 51%       2.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.4815 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 34/52   avg 45.277 WB-Score    2.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.4815 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 34/52   avg 45.276 WB-Score    2.1%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 40/208  hard · avg 40%         2.0%  sharp
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             83.7%  ▁▁●▃▄▄█▆▃▂▂▁ beats 10/140  very easy · avg 94%    0.1%  blunt · maxed out · noisy
 </pre>

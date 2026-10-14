@@ -65,7 +65,7 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           39.2%  ▁▁▁▂▂▃▂█●▃▅▃ beats 43/61   medium · avg 41%        12%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        29.6%  ▃▂·●▆██▆▅▃▃▃ beats 6/33    medium · avg 41%       3.6%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        37.9%  ▂▁▁▄▂●▇█▆▂▂▂ beats 21/58   medium · avg 51%       3.5%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.8937 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 27/52   avg 45.277 WB-Score    3.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.8937 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 27/52   avg 45.276 WB-Score    3.3%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   38.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 36/208  hard · avg 40%         2.5%  sharp
 </pre>
 

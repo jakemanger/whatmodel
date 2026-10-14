@@ -66,7 +66,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              65.1%  ▂▂▃▄▄█▁▄▅▃▁● beats 41/42   medium · avg 55%        12%  at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>              41.4%  ●▃▃█·▃▃▅▃▃▃▅ beats 1/16    hard · avg 40%         7.4%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   42.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 45/208  hard · avg 40%         5.9%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  52.2775 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 42/52   avg 45.277 WB-Score    4.4%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  52.2775 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 42/52   avg 45.276 WB-Score    4.4%  sharp
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>             85.4%  ▂▂·●▄▄▂·█▂·▂ beats 4/16    easy · avg 80%         3.0%  typical
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>             81.5%  ▂▂▄▆●█·▂···▄ beats 7/16    easy · avg 79%         0.4%  blunt
 </pre>

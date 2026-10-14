@@ -6,7 +6,7 @@
 
 AWS (aws-prototyping) · released 2024-07 · 7.24B params · apache-2.0
 
-**score 48.8** ±4.4 · #365 of 719 · from 3 benchmark results across 2 sources
+**score 48.8** ±4.4 · #367 of 721 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

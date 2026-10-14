@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
-**score 73.2** ±0.8 · #55 of 719 · from 33 benchmark results across 9 sources
+**score 73.2** ±0.8 · #57 of 721 · from 33 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #45 of 300     29%      8
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #48 of 302     29%      8
 coding              ▁▁▁▃▆██▇▆▄●▁    #31 of 458     27%      6
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #68 of 393*    5.1%      1
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #39 of 147     15%      6
 </pre>
 
-<details><summary>agent tasks · #45 of 300 · 29% of its score</summary>
+<details><summary>agent tasks · #48 of 302 · 29% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
@@ -28,12 +28,12 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0166 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 14/49  avg -0.310 IPS           10%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwen-re…</a>        61.7%  ▂·····▂·▂█▃● beats 10/12  hard · avg 19%          5.2%  at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>                  73.0%  ▁·▁·▁▁▄▃▄●▃▇ beats 37/56  hard · avg 16%          3.5%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>                  73.0%  ▁·▁·▁▁▄▃▄●▄█ beats 37/58  hard · avg 16%          3.5%  at its level · small run
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>              73.8%  ▁··▁▃▂▅▇●▃▃▁ beats 40/60  hard · avg 29%          3.2%  typical
 <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>        51.7%  ▅··▃·▃·█▃●██ beats 9/15   very hard · avg 5.0%    2.4%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>                    84.3%  █▄·▂▆▂▄▂▆▄▆● beats 23/25  hard · avg 28%          2.0%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>                    84.3%  █▄·▂▆▂▄▂▆▄▆● beats 23/25  hard · avg 27%          2.0%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>                   64.8%  █···█······● beats 2/2    hard · avg 22%          1.3%  at its level · small run
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>             42.2%  ▂····●▁▁▆██▆ beats 2/28   hard · avg 16%          0.8%  at its level · noisy
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>             42.2%  ▂····●▁▁▆██▇ beats 2/29   hard · avg 15%          0.8%  at its level · noisy
 </pre>
 
 </details>
@@ -45,11 +45,11 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1591.2  ▁▂▄▃▅█▄▇●▄▁▁ beats 94/119  avg 983             9.1%  sharp
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   90.3%  ▃▅█▅▅▃▅···▃● beats 14/16   medium · avg 47%    5.3%  small run · several runs
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   90.3%  ▃▅█▅▅▃▅···▃● beats 14/16   medium · avg 47%    5.2%  small run · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwen-re…</a>   61.7%  ▂·····▂·▂█▃● beats 10/12   hard · avg 19%      5.2%  at its level · several runs
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   64.9%  ▁▁▁▁·▁▂▃●▃█▇ beats 16/49   hard · avg 18%      3.8%  at its level
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>         73.8%  ▁··▁▃▂▅▇●▃▃▁ beats 40/60   hard · avg 29%      3.2%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        42.2%  ▂····●▁▁▆██▆ beats 2/28    hard · avg 16%      0.8%  at its level · noisy
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        42.2%  ▂····●▁▁▆██▇ beats 2/29    hard · avg 15%      0.8%  at its level · noisy
 </pre>
 
 </details>

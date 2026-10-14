@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 58.5** ±1.0 · #211 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.5** ±1.0 · #213 of 721 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #194 of 300*    7.4%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #196 of 302*    7.4%      2
 coding          ▁▁▁▃▆██●▆▄▃▁    #192 of 458     53%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #108 of 393*    1.9%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #131 of 398*     18%      2
 </pre>
 
-<details><summary>agent tasks · #194 of 300 · 7.4% of its score</summary>
+<details><summary>agent tasks · #196 of 302 · 7.4% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

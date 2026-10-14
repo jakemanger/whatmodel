@@ -19,7 +19,7 @@ math  ▁▂▃▅▇▅▅█▄●▁▁   #20 of 462*     67%      2
 
 <details><summary>math · #20 of 462 · 67% of its score</summary>
 
-Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Kimi K3](kimi-k3.md) here, though they rank higher overall.
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why

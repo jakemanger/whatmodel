@@ -6,7 +6,7 @@
 
 OpenBMB · released 2026-09 · 2.52B params · apache-2.0
 
-**score 63.4** ±1.1 · #162 of 719 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.4** ±1.1 · #164 of 721 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ OpenBMB · released 2026-09 · 2.52B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #127 of 300     21%      5
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #129 of 302     21%      5
 coding          ▁▁▁▃▆██●▆▄▃▁    #154 of 458     34%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #172 of 393*    0.2%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #138 of 398     29%      4
 web search      █·█▄██·▄●·▄▄      #3 of 13*    5.1%      1
 </pre>
 
-<details><summary>agent tasks · #127 of 300 · 21% of its score</summary>
+<details><summary>agent tasks · #129 of 302 · 21% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

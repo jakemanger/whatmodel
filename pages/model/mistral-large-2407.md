@@ -6,7 +6,7 @@
 
 Mistral · released 2024-07 · 122.61B params · mistral-research
 
-**score 54.0** ±0.5 · #287 of 719 · from 34 benchmark results across 16 sources
+**score 54.0** ±0.5 · #289 of 721 · from 34 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2024-07 · 122.61B params · mistral-research
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #221 of 300*    1.0%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #223 of 302*    1.0%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #219 of 458     16%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #205 of 393    9.3%      3
 math            ▁▂▃▅●▅▄█▄▁▁▁    #258 of 398     20%      6
 </pre>
 
-<details><summary>agent tasks · #221 of 300 · 1.0% of its score</summary>
+<details><summary>agent tasks · #223 of 302 · 1.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -85,7 +85,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             29.0%  ▁▁▃▆█●▁▁·▁▁▁ beats 47/57    hard · avg 18%         5.4%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   49.0%  ▁▁▁▁▂▄●▄▅▇█▅ beats 66/208   hard · avg 40%         4.0%  sharp · at its level
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institute, I…</a>             47.3%  ▃··▃▃●▃·▃·▃█ beats 3/9      hard · avg 41%         3.5%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  55.5683 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 49/52    avg 45.277 WB-Score    2.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  55.5683 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 49/52    avg 45.276 WB-Score    2.9%  sharp
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified)</a>                      40.7%  ▂▁▂▂▄▃●▃▅█▄▃ beats 41/104   hard · avg 37%         2.7%  sharp · small run
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>             69.4%  ▃····▃●·▃▅·█ beats 3/9      medium · avg 60%       2.4%  at its level
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard</a>                                 70.8%  ▁▁▁▁▂▄▅▅●▃▄▁ beats 92/129   medium · avg 65%       2.3%  sharp · at its level · small run

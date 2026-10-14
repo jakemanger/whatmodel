@@ -6,7 +6,7 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 44.3** ±2.9 · #450 of 719 · from 3 benchmark results across 3 sources
+**score 44.3** ±2.9 · #452 of 721 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 

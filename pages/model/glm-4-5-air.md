@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 106B params (12B active) · mit
 
-**score 62.6** ±0.8 · #167 of 719 · from 33 benchmark results across 9 sources
+**score 62.6** ±0.8 · #169 of 721 · from 33 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2025-07 · 106B params (12B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #140 of 300     18%      9
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #142 of 302     18%      9
 coding          ▁▁▁▃▆██●▆▄▃▁    #161 of 458    7.4%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #135 of 393*    7.0%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁     #93 of 398     21%      3
 web search      ●▁▂▆▄█▃▃▁▁·▁     #80 of 80*    2.1%      1
 </pre>
 
-<details><summary>agent tasks · #140 of 300 · 18% of its score</summary>
+<details><summary>agent tasks · #142 of 302 · 18% of its score</summary>
 
 Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

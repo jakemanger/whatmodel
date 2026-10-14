@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 21B params (3.6B active) · apache-2.0
 
-**score 58.3** ±0.6 · #213 of 719 · from 64 benchmark results across 21 sources
+**score 58.3** ±0.6 · #215 of 721 · from 64 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ OpenAI · released 2025-08 · 21B params (3.6B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #202 of 300     11%     10
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #204 of 302     11%     10
 coding          ▁▁▁▃▆██●▆▄▃▁    #167 of 458     12%      6
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #198 of 393*    3.4%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #137 of 398     23%      5
 web search      ●··········█       #2 of 2*    0.7%      1
 </pre>
 
-<details><summary>agent tasks · #202 of 300 · 11% of its score</summary>
+<details><summary>agent tasks · #204 of 302 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

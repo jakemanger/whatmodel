@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · deepseek
 
-**score 48.5** ±0.7 · #370 of 719 · from 10 benchmark results across 4 sources
+**score 48.5** ±0.7 · #372 of 721 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.46B params · apache-2.0
 
-**score 40.4** ±0.8 · #527 of 719 · from 29 benchmark results across 2 sources
+**score 40.4** ±0.8 · #529 of 721 · from 29 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2025-10 · 1.46B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #245 of 300*    1.8%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #247 of 302*    1.8%      1
 coding          █··········●        #1 of 4     26%      7
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #237 of 393    6.2%      3
 math            ▁▂▃●▆▅▄█▄▁▁▁    #325 of 398     29%      7
 </pre>
 
-<details><summary>agent tasks · #245 of 300 · 1.8% of its score</summary>
+<details><summary>agent tasks · #247 of 302 · 1.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 0.35B params · opt-175b-license-noncommercial
 
-**score 4.6** ±1.7 · #712 of 719 · from 7 benchmark results across 2 sources
+**score 4.6** ±1.7 · #714 of 721 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 

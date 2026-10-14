@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 71.2** ±0.7 · #72 of 719 · from 30 benchmark results across 12 sources
+**score 71.2** ±0.7 · #74 of 721 · from 30 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ OpenAI · released 2026-03 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #61 of 300     18%     10
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #64 of 302     18%     10
 coding              ▁▁▁▃▆██▇●▄▃▁   #86 of 458*    8.5%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #56 of 393*    4.1%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #56 of 398     32%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #43 of 147*    6.2%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #43 of 147*    6.1%      2
 web search          ▂▁▂●▄█▃▃▁▁·▁     #61 of 80    6.8%      3
 </pre>
 
-<details><summary>agent tasks · #61 of 300 · 18% of its score</summary>
+<details><summary>agent tasks · #64 of 302 · 18% of its score</summary>
 
-Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -78,14 +78,14 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #43 of 147 · 6.2% of its score</summary>
+<details><summary>vision &amp; documents · #43 of 147 · 6.1% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty      counts  why
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">MMMU Pro (lab)</a>                    76.6%  ▅·····●·▃·█▃ beats 2/7      hard · avg 40%    3.3%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1250.8  ▁▁▂▂▂▂▄▅▅▆●█ beats 103/145  avg 1068          2.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1250.8  ▁▁▂▂▂▂▄▅▅▆●█ beats 103/145  avg 1068          2.8%  blunt
 </pre>
 
 </details>
@@ -113,7 +113,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          7.0%  ●··▂▃▇▄█▂▃▁▁ beats 9/74     very hard · avg 9.4%    3.2%  sharp · noisy
 <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   62.2%  ▅··▃▅·█·▃█●▃ beats 14/15    hard · avg 24%          2.9%  at its level
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-mini-high">ARC-AGI-1 public evaluation set (…</a>   66.3%  ▁·▇▃▁·█●▁·▇▃ beats 15/27    very hard · avg 4.2%    2.8%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                24.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 94/135   very hard · avg 5.9%    2.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                24.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 94/135   very hard · avg 5.9%    2.5%  sharp · noisy
 <a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1068.0  █··▄●··▄·▄·▄ beats 4/7      avg 816                 2.4%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    29.4%  ▁▁▃▂▃●▆▆█▃▂▅ beats 18/78    very hard · avg 8.1%    1.6%  at its level
 <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    2.2%  ●▃█▃·▅···█▃▃ beats 0/12     very hard · avg 0.8%    1.5%  too hard for it

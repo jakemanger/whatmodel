@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 7.17B params · apache-2.0
 
-**score 41.6** ±0.8 · #506 of 719 · from 3 benchmark results across 1 source
+**score 41.6** ±0.8 · #508 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

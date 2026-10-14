@@ -6,7 +6,7 @@
 
 beowolx · released 2023-12 · 7.24B params · mit
 
-**score 38.5** ±0.8 · #554 of 719 · from 3 benchmark results across 1 source
+**score 38.5** ±0.8 · #556 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

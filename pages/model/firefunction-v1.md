@@ -14,12 +14,12 @@ Fireworks AI · released 2024-02 · 46.7B params (12.9B active) · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #314 of 334*     82%      1
+agent tasks  ▁▁●▆█▆▅▄▄▃▃▁   #315 of 336*     82%      1
 </pre>
 
-<details><summary>agent tasks · #314 of 334 · 82% of its score</summary>
+<details><summary>agent tasks · #315 of 336 · 82% of its score</summary>
 
-Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 72.6** ±0.9 · #58 of 719 · from 7 benchmark results across 3 sources
+**score 72.6** ±0.9 · #60 of 721 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenAI · released 2025-10 · proprietary
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #74 of 300*    5.0%      1
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #76 of 302*    5.0%      1
 math         ▁▂▃▅▆▅▄█●▁▁▁   #47 of 398*     63%      2
 web search   ▂▁▂●▄█▃▃▁▁·▁    #57 of 80*    5.0%      1
 </pre>
 
-<details><summary>agent tasks · #74 of 300 · 5.0% of its score</summary>
+<details><summary>agent tasks · #76 of 302 · 5.0% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>                   88.4%  ▁▁▁▁▂▄▅▅██●▄ beats 254/310  hard · avg 39%           10%  sharp
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    8.7%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    8.6%  sharp · at its level · noisy
 <a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>           30.7%  ▃··▃·▃●···▃█ beats 3/7      very hard · avg 4.5%    8.1%  at its level
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-pro-2025-10-06">ARC-AGI-1 public evaluation set (…</a>   77.0%  ▁·▇▃▁·█●▁·▇▃ beats 18/27    very hard · avg 4.2%    4.6%  sharp · noisy
 </pre>

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 58.0** ±1.0 · #216 of 719 · from 18 benchmark results across 7 sources
+**score 58.0** ±1.0 · #218 of 721 · from 18 benchmark results across 7 sources
 
 ## What it's good at
 

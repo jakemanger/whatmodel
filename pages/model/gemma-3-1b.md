@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 1B params · gemma
 
-**score 30.8** ±0.7 · #636 of 719 · from 51 benchmark results across 13 sources
+**score 30.8** ±0.7 · #638 of 721 · from 51 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Google · released 2025-03 · 1B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #300 of 300    2.4%      2
+agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #302 of 302    2.4%      2
 coding          ▁▁▁●▆██▇▆▄▃▁   #437 of 458     10%      4
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #300 of 393    7.9%      4
 math            ▁▂●▅▆▅▄█▄▁▁▁   #352 of 398     31%      6
 </pre>
 
-<details><summary>agent tasks · #300 of 300 · 2.4% of its score</summary>
+<details><summary>agent tasks · #302 of 302 · 2.4% of its score</summary>
 
 Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 

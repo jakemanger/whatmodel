@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 41.2** ±1.9 · #512 of 719 · from 19 benchmark results across 4 sources
+**score 41.2** ±1.9 · #514 of 721 · from 19 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                              78.8%  ▁··▁▁▁▁▁▂●▅█ beats 17/44  easy · avg 82%         4.5%  blunt · small run · several runs
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">DocVQA (lab)</a>                         89.2%  ▁··▃●▁▁▇█▇▄▅ beats 3/28   very easy · avg 93%    3.8%  blunt · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   39.7%  ▅▃●··▅▃····▃ beats 4/9    hard · avg 43%         3.7%  blunt
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">HallusionBench (lab)</a>                 41.9%  ●▁·▃▃▃▄▅▄█▅▅ beats 1/32   medium · avg 56%       3.6%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">HallusionBench (lab)</a>                 41.9%  ●▁·▃▃▃▄▅▄█▅▅ beats 1/32   medium · avg 56%       3.7%  blunt · at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                              66.2%  ▁▁▁▄▅▁●·▃▃▃█ beats 11/24  easy · avg 76%         3.1%  blunt · at its level · several runs
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (lab)</a>                    60.7%  ▂▃●█▃██▆█▂▆▆ beats 3/38   easy · avg 71%         2.8%  blunt · at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (lab)</a>                       78.8%  ▁·▃▁●▅▂█▅█▁▃ beats 6/37   easy · avg 83%         2.4%  blunt · small run

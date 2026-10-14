@@ -6,7 +6,7 @@
 
 Mistral · released 2025-08 · closed weights
 
-**score 63.9** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 64.0** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2025-08 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅●▄▃▂▁   #113 of 340*     11%      1
+agent tasks         ▁▁▂▆█▆▅●▄▃▃▁   #115 of 342*     11%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #116 of 463*     50%      1
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #112 of 182*     35%      1
 </pre>
 
-<details><summary>agent tasks · #113 of 340 · 11% of its score</summary>
+<details><summary>agent tasks · #115 of 342 · 11% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ source                             results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                1   11% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
 prior: pull toward the middle                 3% ▇
-weighted average                            = 63.9
+weighted average                            = 64.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

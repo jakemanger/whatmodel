@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 8B params (4.5B active) · apache-2.0
 
-**score 52.6** ±0.6 · #306 of 719 · from 75 benchmark results across 13 sources
+**score 52.6** ±0.6 · #308 of 721 · from 75 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Google · released 2026-04 · 8B params (4.5B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #226 of 300     19%     15
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #230 of 302     19%     15
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #258 of 458     16%     10
 chat &amp; writing      ▁▁▁▃●▄▅█▆▆▇▃   #323 of 393    1.4%      2
 math                ▁▂▃▅●▅▄█▄▁▁▁   #244 of 398     23%      6
@@ -22,9 +22,9 @@ vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #111 of 147    5.
 web search          █·●▄██·▄▄·▄▄    #11 of 13*    1.3%      2
 </pre>
 
-<details><summary>agent tasks · #226 of 300 · 19% of its score</summary>
+<details><summary>agent tasks · #230 of 302 · 19% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>             8.0%  ██··●·█·█··█ beats 2/5    very hard · avg 4.8%    1.3%  sharp · too hard for it
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>     3.3%  █▂···●···▄·▂ beats 5/8    very hard · avg 7.6%    1.3%  sharp · noisy · several runs
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                      4.1%  ▂▂·●█▂▂▃▂▅▂▃ beats 4/20   very hard · avg 4.1%    1.0%  blunt · too hard for it · several runs
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1</a>                    3.4%  ▁·●·▁▁▄▃▄█▃▇ beats 1/56   very hard · avg 6.6%    1.0%  typical
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1</a>                    3.4%  ▁·●·▁▁▄▃▄█▄█ beats 1/58   very hard · avg 6.6%    1.0%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>                         7.0%  ▄▄·●▄▄·█···█ beats 2/8    very hard · avg 13%     0.9%  typical
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>                  67.1%  ▄····▄··●·▄█ beats 2/5    medium · avg 41%        0.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                             10.1%  ▃·▃·●·▃··▃·▃ beats 4/7    very hard · avg 14%     0.5%  blunt

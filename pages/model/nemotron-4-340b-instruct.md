@@ -33,7 +33,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.6725 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 37/52    avg 45.277 WB-Score     33%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.6725 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 37/52    avg 45.276 WB-Score     33%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             77.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 241/276  medium · avg 73%       6.2%  at its level · noisy
 </pre>
 

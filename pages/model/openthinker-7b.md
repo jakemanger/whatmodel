@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-01 · 7.62B params · apache-2.0
 
-**score 45.1** ±1.6 · #441 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 45.1** ±1.6 · #443 of 721 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 

@@ -14,11 +14,11 @@ Google · released 2025-04 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▆●▄▄▃▂▁   #152 of 340*    3.1%      1
+agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #153 of 342*    3.1%      1
 coding       ▁▁▁▃▅▇█▇●▄▃▁   #121 of 524*     95%      2
 </pre>
 
-<details><summary>agent tasks · #152 of 340 · 3.1% of its score</summary>
+<details><summary>agent tasks · #153 of 342 · 3.1% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

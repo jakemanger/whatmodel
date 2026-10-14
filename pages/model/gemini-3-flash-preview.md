@@ -6,7 +6,7 @@
 
 Google · released 2025-12 · closed weights
 
-**score 72.1** ±0.7 · #64 of 719 · from 28 benchmark results across 12 sources
+**score 72.1** ±0.7 · #66 of 721 · from 28 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Google · released 2025-12 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #78 of 300     17%      6
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #79 of 302     17%      6
 coding              ▁▁▁▃▆██▇▆●▃▁    #68 of 458     17%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #31 of 393*    4.0%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #50 of 398     39%      6
@@ -22,9 +22,9 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #29 of 147     1
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #35 of 80*    1.6%      1
 </pre>
 
-<details><summary>agent tasks · #78 of 300 · 17% of its score</summary>
+<details><summary>agent tasks · #79 of 302 · 17% of its score</summary>
 
-Beats [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiniMax-M2.7](minimax-m2-7.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md) here, though they rank lower overall.
+Beats [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -110,7 +110,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC-AGI-2 public evaluation set (…</a>   34.0%  █··▂▅▁▃▁●·▁▃ beats 18/24    very hard · avg 0.3%    4.2%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         89.4%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 168/208  hard · avg 40%          4.0%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         20.0%  █··▂▃●▄█▂▃▁▁ beats 34/74    very hard · avg 9.4%    3.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         20.0%  █··▂▃●▄█▂▃▁▁ beats 34/74    very hard · avg 9.4%    3.5%  sharp · noisy
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   43.9%  ▁▁▂▁▃▄█▆▄▅●▃ beats 36/39    very hard · avg 22%     3.0%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                40.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 117/135  very hard · avg 5.9%    2.7%  sharp · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gemini-3-flash-preview-thinking-minimal/results.json">ARC-AGI-1 public evaluation set (…</a>   31.9%  ▁·▇▃●·█▇▁·▇▃ beats 8/27     very hard · avg 4.2%    2.4%  sharp · noisy
@@ -126,7 +126,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        8   51% ▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        8   52% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     5   17% ▇▇
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        4    7% ▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC Prize Foundation model_baseline out…</a>        2    7% ▇

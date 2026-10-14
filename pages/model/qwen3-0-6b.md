@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
-**score 33.4** ±1.0 · #613 of 719 · from 26 benchmark results across 10 sources
+**score 33.4** ±1.0 · #615 of 721 · from 26 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #266 of 300*    3.7%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #268 of 302*    3.7%      2
 coding          ▁▁●▃▆██▇▆▄▃▁   #451 of 458*    9.3%      2
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #301 of 393*    4.0%      1
 math            ▁▂▃●▆▅▄█▄▁▁▁    #327 of 398     26%      4
 </pre>
 
-<details><summary>agent tasks · #266 of 300 · 3.7% of its score</summary>
+<details><summary>agent tasks · #268 of 302 · 3.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 

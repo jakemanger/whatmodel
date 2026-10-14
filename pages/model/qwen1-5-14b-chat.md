@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 14.2B params · tongyi-qianwen
 
-**score 41.0** ±0.8 · #513 of 719 · from 11 benchmark results across 9 sources
+**score 41.0** ±0.8 · #515 of 721 · from 11 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gem
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       23.9%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 62/122  medium · avg 39%     17%  typical
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1112.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 54/95   avg 1201            6.2%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1191.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 65/379  avg 1268            6.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1191.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 65/379  avg 1268            6.1%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>    5.0%  ▁·▁▁●▁▄▄▆▄█▄ beats 3/38    medium · avg 49%    4.0%  sharp
 </pre>
 

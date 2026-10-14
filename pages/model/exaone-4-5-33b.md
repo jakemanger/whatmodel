@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 64.9** ±2.0 · #143 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.9** ±2.0 · #145 of 721 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ LG AI Research · released 2026-04 · 34.4B params · exaone
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #116 of 300*     21%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #117 of 302*     21%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃     #139 of 393*    5.6%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁      #68 of 398*     22%      1
 vision &amp; documents                 not ranked yet       —      3
 </pre>
 
-<details><summary>agent tasks · #116 of 300 · 21% of its score</summary>
+<details><summary>agent tasks · #117 of 302 · 21% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

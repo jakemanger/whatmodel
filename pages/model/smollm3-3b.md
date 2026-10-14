@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 42.7** ±1.0 · #485 of 719 · from 25 benchmark results across 6 sources
+**score 42.7** ±1.0 · #487 of 721 · from 25 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #98 of 300*    1.8%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #100 of 302*    1.8%      1
 coding          ▁▁▁▃●██▇▆▄▃▁   #376 of 458*    2.6%      1
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #282 of 393*    7.6%      2
 math            ▁▂▃▅●▅▄█▄▁▁▁    #253 of 398     13%      3
 </pre>
 
-<details><summary>agent tasks · #98 of 300 · 1.8% of its score</summary>
+<details><summary>agent tasks · #100 of 302 · 1.8% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall.
 

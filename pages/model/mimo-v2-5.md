@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 68.9** ±0.9 · #94 of 719 · from 23 benchmark results across 6 sources
+**score 68.9** ±0.9 · #96 of 721 · from 23 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,27 +14,27 @@ Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #64 of 300     27%      8
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #65 of 302     27%      8
 coding              ▁▁▁▃▆██▇▆●▃▁     #67 of 458     22%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #73 of 393*    7.3%      1
 math                ▁▂▃▅▆▅●█▄▁▁▁   #162 of 398*    6.9%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #63 of 147     15%      4
 </pre>
 
-<details><summary>agent tasks · #64 of 300 · 27% of its score</summary>
+<details><summary>agent tasks · #65 of 302 · 27% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   56.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 32/55  very hard · avg 10%     4.7%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    8.6%  ▄···●▄▄▄█▄·█ beats 2/10   very hard · avg 1.7%    4.7%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                 13.4%  ▄▄····▄···●▄ beats 4/5    very hard · avg 1.8%    4.2%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                  41.7%  ▄········██● beats 5/5    very hard · avg 4.5%    4.1%  sharp · at its level
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Terminal-Bench 2.0 (lab)</a>             65.8%  ▂▂▅▅████●▂▃▃ beats 31/36  very hard · avg 15%     3.5%  at its level · small run
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>               63.9%  ▄▄▄·······█● beats 5/5    hard · avg 19%          2.7%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   73.0%  ▄··········● beats 4/5    hard · avg 16%          1.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                      8.7%  █·▄●······▄▄ beats 3/5    very hard · avg 5.1%    1.0%  blunt
+test                                result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   56.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 32/55  very hard · avg 10.0%    4.7%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    8.6%  ▄···●▄▄▄█▄·█ beats 2/10   very hard · avg 1.7%     4.7%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                 13.4%  ▄▄····▄···●▄ beats 4/5    very hard · avg 1.8%     4.2%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                  41.7%  ▄········██● beats 5/5    very hard · avg 4.5%     4.1%  sharp · at its level
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Terminal-Bench 2.0 (lab)</a>             65.8%  ▂▂▅▅████●▂▃▃ beats 31/36  very hard · avg 15%      3.5%  at its level · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>               63.9%  ▄▄▄·······█● beats 5/5    hard · avg 19%           2.7%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   73.0%  ▄··········● beats 4/5    hard · avg 16%           1.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                      8.7%  █·▄●······▄▄ beats 3/5    very hard · avg 5.1%     1.0%  blunt
 </pre>
 
 </details>
@@ -44,11 +44,11 @@ test                                result  vs the others in its run  difficulty
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1437.6  ▁▂▄▃▅●▄▇▆▄▁▁ beats 56/119  avg 983                 13%  sharp
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   56.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 32/55   very hard · avg 10%    4.7%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   89.1%  ▄······▄▄●·█ beats 3/5     medium · avg 50%       2.6%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   73.0%  ▄··········● beats 4/5     hard · avg 16%         1.9%  sharp · at its level · noisy
+test                                result  vs the others in its run   difficulty             counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1437.6  ▁▂▄▃▅●▄▇▆▄▁▁ beats 56/119  avg 983                   13%  sharp
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   56.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 32/55   very hard · avg 10.0%    4.7%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   89.1%  ▄······▄▄●·█ beats 3/5     medium · avg 50%         2.6%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   73.0%  ▄··········● beats 4/5     hard · avg 16%           1.9%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            92.3%  ▄▄··●····█·▄ beats 2/5    medium · avg 65%    4.6%  sharp · maxed out
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            92.3%  ▄▄··●····█·▄ beats 2/5    medium · avg 65%    4.5%  sharp · maxed out
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   61.4%  ●▄▄········█ beats 0/5    hard · avg 31%      2.3%  sharp · noisy
 </pre>
 

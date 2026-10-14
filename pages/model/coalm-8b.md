@@ -14,10 +14,10 @@ UIUC ConvAI & Oumi (CoALM) · released 2025-02 · 8.03B params · cc-by-nc-4.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #264 of 334*     93%      2
+agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #266 of 336*     93%      2
 </pre>
 
-<details><summary>agent tasks · #264 of 334 · 93% of its score</summary>
+<details><summary>agent tasks · #266 of 336 · 93% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

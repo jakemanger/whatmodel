@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
-**score 71.0** ±1.5 · #74 of 719 · from 4 benchmark results across 2 sources
+**score 71.0** ±1.5 · #76 of 721 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #62 of 300*     38%      1
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #62 of 302*     38%      1
 coding          ▁▁▁▃▆██▇▆●▃▁   #39 of 458*     34%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #79 of 393*     19%      1
 </pre>
 
-<details><summary>agent tasks · #62 of 300 · 38% of its score</summary>
+<details><summary>agent tasks · #62 of 302 · 38% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 

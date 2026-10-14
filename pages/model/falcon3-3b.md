@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 3.23B params · falcon-llm
 
-**score 36.5** ±3.1 · #584 of 719 · from 7 benchmark results across 3 sources
+**score 36.5** ±3.1 · #586 of 721 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ TII · released 2024-12 · 3.23B params · falcon-llm
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁●▃▆█▆▅▅▅▄▃▁   #293 of 300*     43%      2
+agent tasks  ▁●▃▆█▆▅▅▅▄▃▁   #295 of 302*     43%      2
 coding       ▁▁▁▃●██▇▆▄▃▁    #375 of 458     36%      4
 </pre>
 
-<details><summary>agent tasks · #293 of 300 · 43% of its score</summary>
+<details><summary>agent tasks · #295 of 302 · 43% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

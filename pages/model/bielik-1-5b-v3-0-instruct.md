@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-04 · 1.6B params · apache-2.0
 
-**score 39.5** ±3.2 · #538 of 719 · from 3 benchmark results across 2 sources
+**score 39.5** ±3.2 · #540 of 721 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

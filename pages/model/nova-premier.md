@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 54.1** ±1.6 · #285 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.1** ±1.6 · #287 of 721 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Amazon · released 2025-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #157 of 300*     25%      2
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #159 of 302*     25%      2
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #251 of 458*    6.2%      1
 math                █··········●       #1 of 2*     25%      2
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #108 of 147*     15%      2
 </pre>
 
-<details><summary>agent tasks · #157 of 300 · 25% of its score</summary>
+<details><summary>agent tasks · #159 of 302 · 25% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

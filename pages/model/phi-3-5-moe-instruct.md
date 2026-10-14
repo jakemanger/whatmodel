@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 41.87B params (6.6B active) · mit
 
-**score 47.9** ±1.2 · #382 of 719 · from 6 benchmark results across 4 sources
+**score 47.9** ±1.2 · #384 of 721 · from 6 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           56.4%  ▆●▄▄█▄▂·▄█·▄ beats 4/23     medium · avg 58%        19%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            61.8%  ▄▄●▂▂█▂▄▂█▂▄ beats 5/22     medium · avg 63%        17%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   29.5%  ▁▁▁▁▁▂▂●▄▆█▃ beats 30/97    hard · avg 32%         6.2%  blunt · at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   25.3%  ●···▁▁▁▂▃·▆▂ beats 3/23     very hard · avg 29%    3.1%  sharp · too hard for it
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   25.3%  ●···▁▁▁▂▃·▆▂ beats 3/23     very hard · avg 29%    3.0%  sharp · too hard for it
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.5%  ▁▁▂▃▄▄█▆●▂▂▁ beats 115/140  very easy · avg 94%    0.9%  blunt · maxed out · noisy
 </pre>
 

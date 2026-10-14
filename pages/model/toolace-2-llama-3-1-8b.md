@@ -14,10 +14,10 @@ Team-ACE (Huawei Noah's Ark & USTC) · released 2025-03 · 8.03B params · apach
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁   #171 of 334*     93%      2
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #173 of 336*     93%      2
 </pre>
 
-<details><summary>agent tasks · #171 of 334 · 93% of its score</summary>
+<details><summary>agent tasks · #173 of 336 · 93% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

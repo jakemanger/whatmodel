@@ -14,7 +14,7 @@ Google · released 2025-11 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅▄●▃▂▁    #79 of 340     35%     10
+agent tasks         ▁▁▂▆█▆▅▄●▃▃▁    #81 of 342     35%     10
 coding              ▁▁▁▃▅▇█▇▅●▃▁    #72 of 524     19%      3
 chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #16 of 463*    4.8%      1
 math                ▁▂▃▅▇▅▅█●▁▁▁    #52 of 462     11%      5
@@ -22,13 +22,13 @@ vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃    #24 of 182     1
 web search          ▂·▂▇▅●▃▄▁▂▁▁    #33 of 92*    2.0%      1
 </pre>
 
-<details><summary>agent tasks · #79 of 340 · 35% of its score</summary>
+<details><summary>agent tasks · #81 of 342 · 35% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.9%  ▁··▁·▁▂▁●█▄▁ beats 11/29  hard · avg 19%          9.1%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.9%  ▁··▁·▁▂▁●█▄▁ beats 11/29  hard · avg 19%          9.2%  sharp
 <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set)</a>               66.6%  ▄······▄▄▄●█ beats 4/6    hard · avg 25%          6.3%  at its level · several runs
 <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf#page=2">τ²-bench Telecom (lab)</a>               98.0%  ▁·▅█▆▅▂▃▃▂●▁ beats 81/89  medium · avg 56%        4.2%  sharp · maxed out · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-pro_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   18.0%  ▃▃▂●·▆▃▂█▅▅▂ beats 6/25   very hard · avg 4.2%    3.3%  at its level
@@ -48,7 +48,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.9%  ▁··▁·▁▂▁●█▄▁ beats 11/29   hard · avg 19%    9.1%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.9%  ▁··▁·▁▂▁●█▄▁ beats 11/29   hard · avg 19%    9.2%  sharp
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1439.0  ▁▂▄▃▅●▄▇▆▄▁▁ beats 58/119  avg 983           8.6%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   75.0%  ▁··▁·▁▁▁▆█▇● beats 37/45   hard · avg 32%    1.7%  typical
 </pre>

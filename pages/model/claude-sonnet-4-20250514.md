@@ -14,14 +14,14 @@ Anthropic · released 2025-05 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▂▁    #145 of 340     22%     11
+agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #147 of 342     22%     11
 coding              ▁▁▁▃▅▇█▇●▄▃▁    #140 of 524     22%      6
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #127 of 463*    5.0%      2
 math                ▁▂▃▅▇▅●█▄▁▁▁    #195 of 462    9.4%      5
-vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #82 of 182*    2.5%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #82 of 182*    2.4%      1
 </pre>
 
-<details><summary>agent tasks · #145 of 340 · 22% of its score</summary>
+<details><summary>agent tasks · #147 of 342 · 22% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -85,13 +85,13 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #82 of 182 · 2.5% of its score</summary>
+<details><summary>vision &amp; documents · #82 of 182 · 2.4% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1206.2  ▁▁▂▂▂▂▄▅▅●██ beats 74/145  avg 1068      2.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1206.2  ▁▁▂▂▂▂▄▅▅●██ beats 74/145  avg 1068      2.4%  blunt
 </pre>
 
 </details>

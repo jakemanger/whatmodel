@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 3.21B params · llama3.2
 
-**score 38.4** ±0.5 · #556 of 719 · from 65 benchmark results across 17 sources
+**score 38.4** ±0.5 · #558 of 721 · from 65 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Meta · released 2024-09 · 3.21B params · llama3.2
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #272 of 300    2.0%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #274 of 302    2.0%      3
 coding          ▁▁▁▃●██▇▆▄▃▁   #372 of 458    9.2%      7
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #334 of 393    6.2%      4
 math            ▁▂●▅▆▅▄█▄▁▁▁   #344 of 398     19%      7
 </pre>
 
-<details><summary>agent tasks · #272 of 300 · 2.0% of its score</summary>
+<details><summary>agent tasks · #274 of 302 · 2.0% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

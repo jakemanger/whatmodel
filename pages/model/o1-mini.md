@@ -14,20 +14,20 @@ OpenAI · released 2024-09 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█●▅▄▄▃▂▁    #173 of 340    5.6%      4
+agent tasks     ▁▁▂▆█●▅▄▄▃▃▁    #175 of 342    5.6%      4
 coding          ▁▁▁▃▅▇█●▅▄▃▁    #171 of 524     41%     12
 chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #196 of 463*    5.6%      2
 math            ▁▂▃▅▇▅●█▄▁▁▁    #183 of 462     15%      9
 </pre>
 
-<details><summary>agent tasks · #173 of 340 · 5.6% of its score</summary>
+<details><summary>agent tasks · #175 of 342 · 5.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   28.6%  █··▄·●█·▄··▄ beats 3/7    hard · avg 18%          1.8%  at its level
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   56.7%  █···█▄▄·▄●·█ beats 8/10   hard · avg 29%          1.6%  at its level
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   56.7%  █···█▄▄·▄●·█ beats 8/10   hard · avg 29%          1.5%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   14.9%  ▃▅▃·▅▃●··█·▃ beats 7/11   very hard · avg 3.9%    1.4%  sharp · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   67.8%  ▅····▅▅▃●·▃█ beats 7/11   medium · avg 55%        0.9%  blunt · at its level
 </pre>

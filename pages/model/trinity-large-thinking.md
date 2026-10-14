@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 62.5** ±1.6 · #170 of 719 · from 5 benchmark results across 2 sources
+**score 62.5** ±1.6 · #172 of 721 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -17,7 +17,7 @@ task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
 coding          ▁▁▁▃▆██●▆▄▃▁     #169 of 458*     43%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #141 of 393*     24%      1
-math            █··········●         #1 of 2*    3.2%      1
+math            █··········●         #1 of 2*    3.1%      1
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -51,11 +51,11 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #1 of 2 · 3.2% of its score</summary>
+<details><summary>math · #1 of 2 · 3.1% of its score</summary>
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 39%    3.2%  sharp · noisy · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 39%    3.1%  sharp · noisy · small run
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 69.3** ±0.7 · #90 of 719 · from 32 benchmark results across 5 sources
+**score 69.3** ±0.7 · #92 of 721 · from 32 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #83 of 300     22%      7
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #85 of 302     23%      7
 coding          ▁▁▁▃▆██▇●▄▃▁    #84 of 458     20%      6
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #81 of 393*    4.5%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #81 of 393*    4.4%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #108 of 398    6.6%      3
 web search      ▂▁●▆▄█▃▃▁▁·▁    #71 of 80*    4.6%      2
 </pre>
 
-<details><summary>agent tasks · #83 of 300 · 22% of its score</summary>
+<details><summary>agent tasks · #85 of 302 · 23% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>             70.7%  ●····██·████ beats 0/6    hard · avg 22%         6.0%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>         67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%         4.3%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>             56.4%  █··▄●·▄····▄ beats 4/6    very hard · avg 12%    4.2%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>             56.4%  █··▄●·▄····▄ beats 4/6    very hard · avg 12%    4.3%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                     44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 16%         2.4%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with tools (…</a>   37.4%  ●····▄·█·▄·▄ beats 0/5    hard · avg 16%         2.2%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                       70.9%  ▄····▄·●·▄·█ beats 2/6    medium · avg 40%       2.0%  blunt · at its level
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>coding · #84 of 458 · 20% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -54,13 +54,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #81 of 393 · 4.5% of its score</summary>
+<details><summary>chat &amp; writing · #81 of 393 · 4.4% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.2  ▁▁▁▂▃▃▃▆▆●█▃ beats 279/379  avg 1268      4.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.2  ▁▁▁▂▃▃▃▆▆●█▃ beats 279/379  avg 1268      4.4%  blunt
 </pre>
 
 </details>

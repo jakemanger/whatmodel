@@ -6,7 +6,7 @@
 
 Baidu · released 2025-06 · 300B params (47B active) · apache-2.0
 
-**score 59.8** ±1.3 · #196 of 719 · from 18 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.8** ±1.3 · #198 of 721 · from 18 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 

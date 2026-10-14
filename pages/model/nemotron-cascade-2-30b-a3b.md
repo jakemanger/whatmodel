@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 65.5** ±1.4 · #136 of 719 · from 13 benchmark results across 2 sources
+**score 65.5** ±1.4 · #138 of 721 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 

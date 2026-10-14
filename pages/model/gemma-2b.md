@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 26.6** ±0.8 · #664 of 719 · from 12 benchmark results across 9 sources
+**score 26.6** ±0.8 · #666 of 721 · from 12 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  -9.6919 WB-Score  ●·▁▁·▃█▄▇▆▅▆ beats 0/52    avg 45.277 WB-Score    7.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  -9.6919 WB-Score  ●·▁▁·▃█▄▇▆▅▆ beats 0/52    avg 45.276 WB-Score    7.3%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             34.3%  ▃▁●▁▁▁▁▁▂█▅▁ beats 40/276  medium · avg 73%       0.9%  noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>             27.6%  ▃·●▁▂▁▂▅█▇▄▁ beats 10/100  medium · avg 68%       0.4%  noisy
 </pre>

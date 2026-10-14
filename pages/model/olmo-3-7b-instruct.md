@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 45.5** ±0.8 · #433 of 719 · from 29 benchmark results across 5 sources
+**score 45.5** ±0.8 · #435 of 721 · from 29 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #288 of 300    3.4%      3
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #290 of 302    3.4%      3
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #340 of 458     14%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #218 of 393    4.4%      2
 math            ▁▂▃▅▆●▄█▄▁▁▁   #200 of 398     20%      4
 </pre>
 
-<details><summary>agent tasks · #288 of 300 · 3.4% of its score</summary>
+<details><summary>agent tasks · #290 of 302 · 3.4% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 

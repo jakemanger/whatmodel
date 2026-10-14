@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 51.3** ±1.2 · #322 of 719 · from 14 benchmark results across 2 sources
+**score 51.3** ±1.2 · #324 of 721 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 

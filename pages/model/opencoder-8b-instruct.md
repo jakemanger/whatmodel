@@ -6,7 +6,7 @@
 
 INF (infly) · released 2024-11 · 7.77B params · other (inf)
 
-**score 51.1** ±0.9 · #323 of 719 · from 5 benchmark results across 2 sources
+**score 51.1** ±0.9 · #325 of 721 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 

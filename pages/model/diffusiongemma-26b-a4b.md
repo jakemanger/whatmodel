@@ -14,13 +14,13 @@ Google · released 2026-06 · 25.82B params (3.8B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #190 of 340*     10%      1
+agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #192 of 342*     10%      1
 coding              ▁▁▁▃▅▇█●▅▄▃▁   #211 of 524*    9.2%      1
 math                ▁▂▃▅▇●▅█▄▁▁▁   #209 of 462*     19%      2
 vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃    #117 of 182     15%      3
 </pre>
 
-<details><summary>agent tasks · #190 of 340 · 10% of its score</summary>
+<details><summary>agent tasks · #192 of 342 · 10% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

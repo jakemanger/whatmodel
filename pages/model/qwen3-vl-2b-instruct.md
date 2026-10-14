@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 43.9** ±0.7 · #464 of 719 · from 41 benchmark results across 5 sources
+**score 43.9** ±0.7 · #466 of 721 · from 41 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #235 of 300*    1.8%      1
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #237 of 302*    1.8%      1
 coding              ▁▁▁●▆██▇▆▄▃▁   #414 of 458*    2.6%      1
 chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #279 of 393*    4.2%      1
 math                ▁▂▃▅●▅▄█▄▁▁▁   #290 of 398*    9.1%      2
 vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #131 of 147     53%     19
 </pre>
 
-<details><summary>agent tasks · #235 of 300 · 1.8% of its score</summary>
+<details><summary>agent tasks · #237 of 302 · 1.8% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

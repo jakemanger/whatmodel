@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 43.9** ±0.6 · #461 of 719 · from 22 benchmark results across 10 sources
+**score 43.9** ±0.6 · #463 of 721 · from 22 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #279 of 300*    0.8%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #281 of 302*    0.8%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #344 of 458*     11%      1
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #274 of 393*    2.8%      1
 math            ▁▂▃●▆▅▄█▄▁▁▁    #330 of 398     28%      5
 </pre>
 
-<details><summary>agent tasks · #279 of 300 · 0.8% of its score</summary>
+<details><summary>agent tasks · #281 of 302 · 0.8% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 47.7** ±1.4 · #383 of 719 · from 12 benchmark results across 4 sources
+**score 47.7** ±1.4 · #385 of 721 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Google · released 2025-06 · 7.85B params (4B active) · gemma
 <pre>
 task            vs the others          rank  counts  tests
 coding          █··········●        #1 of 2     24%      3
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #202 of 393*     19%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #202 of 393*     18%      1
 math            █··········●       #1 of 2*     22%      2
 </pre>
 
@@ -30,13 +30,13 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #202 of 393 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #202 of 393 · 18% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1317.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 147/379  avg 1268       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1317.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 147/379  avg 1268       18%  blunt
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="gap-google-gemma3n"></a><a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Google DeepMind Gemma 3n E2B IT model c…</a>        8   67% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   18% ▇▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    8% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    6% ▇
 prior: pull toward the middle                        1% ▇

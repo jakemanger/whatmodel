@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 55.1** ±1.8 · #262 of 719 · from 15 benchmark results across 2 sources
+**score 55.1** ±1.8 · #264 of 721 · from 15 benchmark results across 2 sources
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 28.9** ±0.6 · #649 of 719 · from 37 benchmark results across 9 sources
+**score 28.9** ±0.6 · #651 of 721 · from 37 benchmark results across 9 sources
 
 ## What it's good at
 

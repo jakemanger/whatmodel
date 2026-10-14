@@ -6,7 +6,7 @@
 
 LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
-**score 56.9** ±2.3 · #237 of 719 · from 3 benchmark results across 1 source
+**score 56.9** ±2.3 · #239 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

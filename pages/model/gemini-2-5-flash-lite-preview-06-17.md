@@ -14,12 +14,12 @@ Google · released 2025-06 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▆▅▄▄▃▂▁   #267 of 340*     12%      1
+agent tasks         ▁▁▂●█▆▅▄▄▃▃▁   #270 of 342*     12%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #155 of 463*     51%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #98 of 182*     35%      1
 </pre>
 
-<details><summary>agent tasks · #267 of 340 · 12% of its score</summary>
+<details><summary>agent tasks · #270 of 342 · 12% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

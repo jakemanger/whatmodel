@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-04 · 284B params (13B active) · mit
 
-**score 71.5** ±0.5 · #68 of 719 · from 58 benchmark results across 10 sources
+**score 71.5** ±0.5 · #70 of 721 · from 58 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ DeepSeek · released 2026-04 · 284B params (13B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁    #65 of 300     24%     13
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁    #66 of 302     24%     13
 coding          ▁▁▁▃▆██▇▆●▃▁    #71 of 458     22%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #67 of 393*    2.7%      1
 math            ▁▂▃▅▆▅▄█●▁▁▁    #46 of 398     28%     13
 web search      ▂▁●▆▄█▃▃▁▁·▁    #70 of 80*    2.8%      2
 </pre>
 
-<details><summary>agent tasks · #65 of 300 · 24% of its score</summary>
+<details><summary>agent tasks · #66 of 302 · 24% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
@@ -78,7 +78,7 @@ Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [GPT-5 Pro](gp
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   47.5%  ▁·····▅●█▄·▁ beats 5/20     very hard · avg 7.3%    6.1%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   47.5%  ▁·····▅●█▄·▁ beats 5/20     very hard · avg 7.3%    6.0%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   43.8%  ▁▁▁▁█▇●▃▁▃·▃ beats 16/24    very hard · avg 9.1%    3.4%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   52.5%  █▃●·█▃▃·▅·▃▃ beats 5/14     hard · avg 15%          3.1%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                      91.1%  ▄····▄·▄▄·●▄ beats 4/6      medium · avg 40%        2.4%  several runs
@@ -89,7 +89,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 2026 (5…</a>   19.5%  ██·▄●▄····▄▄ beats 5/8      very hard · avg 1.6%    1.2%  sharp
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025</a>                            88.9%  ▁·▁▁▁▂▅▆█●▅▁ beats 109/133  medium · avg 48%        1.1%  sharp · maxed out · small run
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   19.6%  █·▆█●·▂▂···▂ beats 11/14    very hard · avg 0.8%    1.1%  sharp · noisy
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   17.7%  ▃▂▂▃█●▂·▃··▂ beats 11/16    very hard · avg 0.7%    1.0%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   17.7%  ▃▂▂▃█●▂·▃··▂ beats 11/16    very hard · avg 0.8%    1.0%  sharp · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>                   94.7%  █▄▄········● beats 5/5      hard · avg 31%          0.7%  sharp · noisy
 </pre>
 

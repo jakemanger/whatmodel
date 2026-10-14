@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · 27.8B params · apache-2.0
 
-**score 68.3** ±0.4 · #102 of 719 · from 139 benchmark results across 14 sources
+**score 68.3** ±0.4 · #104 of 721 · from 139 benchmark results across 14 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Alibaba · released 2026-02 · 27.8B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #85 of 300     25%     18
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #87 of 302     25%     18
 coding              ▁▁▁▃▆██▇●▄▃▁    #100 of 458     19%      7
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #100 of 393*    1.9%      2
 math                ▁▂▃▅▆▅▄●▄▁▁▁     #94 of 398     17%     12
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #58 of 147     
 web search          ▂▁▂●▄█▃▃▁▁·▁      #62 of 80    3.5%      5
 </pre>
 
-<details><summary>agent tasks · #85 of 300 · 25% of its score</summary>
+<details><summary>agent tasks · #87 of 302 · 25% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   68.6%  ▄▄·····▄▄▄▄● beats 6/7      hard · avg 17%          7.2%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.7%  ▄·▄·····█▄●▄ beats 6/7      hard · avg 18%          2.5%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   41.6%  ▄······█▄▄█● beats 7/7      very hard · avg 7.2%    2.0%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   41.6%  ▄······█▄▄█● beats 7/7      very hard · avg 7.1%    2.0%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">τ²-bench aggregate (lab)</a>             79.0%  ▁▁▁·▂▂▄▃▃●█▂ beats 20/37    medium · avg 37%        1.7%  several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    42.1%  ▄···▄···▄▄█● beats 6/7      very hard · avg 6.6%    1.6%  sharp · at its level
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   64.6%  ▆··▆▄▂▄▂▆▆●▄ beats 18/23    very hard · avg 14%     1.4%  sharp · at its level
@@ -57,7 +57,7 @@ Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   68.6%  ▄▄·····▄▄▄▄● beats 6/7     hard · avg 17%          7.2%  sharp · at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   80.7%  ▁▁▃▁█▅▄▇▅▅●█ beats 32/38   medium · avg 47%        3.1%  several runs
+<a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   80.7%  ▁▁▃▁█▅▄▇▅▅●█ beats 32/38   medium · avg 47%        3.0%  several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1357.3  ▁▂▄▃●█▄▇▆▄▁▁ beats 31/119  avg 983                 2.8%  sharp
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               57.7%  ▄·▄·····█▄●▄ beats 6/7     hard · avg 18%          2.5%  at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    42.1%  ▄···▄···▄▄█● beats 6/7     very hard · avg 6.6%    1.6%  sharp · at its level

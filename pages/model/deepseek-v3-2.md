@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-12 · 685B params (37B active) · mit
 
-**score 68.0** ±0.8 · #104 of 719 · from 30 benchmark results across 21 sources
+**score 68.0** ±0.8 · #106 of 721 · from 30 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ DeepSeek · released 2025-12 · 685B params (37B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #99 of 300     15%      8
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #101 of 302     15%      8
 coding          ▁▁▁▃▆██▇●▄▃▁   #112 of 458     15%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #85 of 393*    5.5%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #75 of 398     22%      7
 </pre>
 
-<details><summary>agent tasks · #99 of 300 · 15% of its score</summary>
+<details><summary>agent tasks · #101 of 302 · 15% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 

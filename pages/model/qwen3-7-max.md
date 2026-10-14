@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-05 · closed weights
 
-**score 73.9** ±0.7 · #50 of 719 · from 16 benchmark results across 6 sources
+**score 73.9** ±0.7 · #52 of 721 · from 16 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ Alibaba · released 2026-05 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #53 of 300     27%      6
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #54 of 302     27%      6
 coding       ▁▁▁▃▆██▇▆●▃▁   #47 of 458*     16%      2
 math         ▁▂▃▅▆▅▄█●▁▁▁    #26 of 398     40%      3
 web search   ▂▁▂▆●█▃▃▁▁·▁    #47 of 80*    1.7%      1
 </pre>
 
-<details><summary>agent tasks · #53 of 300 · 27% of its score</summary>
+<details><summary>agent tasks · #54 of 302 · 27% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Kimi K2.6](kimi-k2-6.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0513 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 11/49  avg -0.310 IPS          9.2%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                        77.3%  ▁··▁·▁▂▁▄█●▁ beats 24/29  hard · avg 19%          8.0%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                        77.3%  ▁··▁·▁▂▁▄█●▁ beats 24/29  hard · avg 19%          7.9%  sharp
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>        11.8%  ▄···█▄▄●█▄·█ beats 5/10   very hard · avg 1.7%    4.1%  typical
 <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set)</a>                    76.4%  █··█·██·█●██ beats 5/7    hard · avg 29%          2.7%  at its level
 <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>        25.2%  ▄█··▄▄●██·▄█ beats 5/12   very hard · avg 5.9%    1.7%  at its level
@@ -43,7 +43,7 @@ Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-
 <pre>
 test                       result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1514.9  ▁▂▄▃▅█▄●▆▄▁▁ beats 74/119  avg 983           8.2%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          77.3%  ▁··▁·▁▂▁▄█●▁ beats 24/29   hard · avg 19%    8.0%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          77.3%  ▁··▁·▁▂▁▄█●▁ beats 24/29   hard · avg 19%    7.9%  sharp
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                     9.5%  ▄▂·●█▂▆▆▆▆·▄ beats 4/24     very hard · avg 0.4%    7.9%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         32.0%  █··▂▃▇▄●▂▃▁▁ beats 51/74    very hard · avg 9.4%    5.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         32.0%  █··▂▃▇▄●▂▃▁▁ beats 51/74    very hard · avg 9.4%    5.2%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 179/208  hard · avg 40%          3.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                19.0%  █▁▁▁▁▂●▄▂▂▁▁ beats 74/135   very hard · avg 5.9%    3.6%  sharp · noisy
 <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    2.7%  ▃●█▃·▅···█▃▃ beats 1/12     very hard · avg 0.8%    2.0%  too hard for it

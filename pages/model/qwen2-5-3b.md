@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 3.09B params · qwen-research
 
-**score 42.6** ±0.6 · #491 of 719 · from 32 benchmark results across 11 sources
+**score 42.6** ±0.6 · #493 of 721 · from 32 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2024-09 · 3.09B params · qwen-research
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #254 of 300*    0.8%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #256 of 302*    0.8%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #322 of 458     12%      5
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #273 of 393*    2.5%      1
 math            ▁▂▃●▆▅▄█▄▁▁▁    #317 of 398     16%      4
 </pre>
 
-<details><summary>agent tasks · #254 of 300 · 0.8% of its score</summary>
+<details><summary>agent tasks · #256 of 302 · 0.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

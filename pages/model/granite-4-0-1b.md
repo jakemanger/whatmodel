@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 40.5** ±0.8 · #523 of 719 · from 32 benchmark results across 3 sources
+**score 40.5** ±0.8 · #525 of 721 · from 32 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2025-10 · 1.63B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #232 of 300*    1.7%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #234 of 302*    1.7%      1
 coding          █··········●        #2 of 4     25%      7
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #245 of 393    6.0%      3
 math            ▁▂▃●▆▅▄█▄▁▁▁    #316 of 398     28%      8
 </pre>
 
-<details><summary>agent tasks · #232 of 300 · 1.7% of its score</summary>
+<details><summary>agent tasks · #234 of 302 · 1.7% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall.
 

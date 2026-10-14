@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-01 · 1.84B params · tongyi-qianwen-research
 
-**score 23.8** ±2.4 · #680 of 719 · from 4 benchmark results across 4 sources
+**score 23.8** ±2.4 · #682 of 721 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 

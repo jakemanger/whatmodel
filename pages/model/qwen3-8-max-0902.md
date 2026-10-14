@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 75.8** ±0.8 · #34 of 719 · from 10 benchmark results across 4 sources
+**score 75.8** ±0.8 · #36 of 721 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,18 +14,18 @@ Alibaba · released 2026-09 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #22 of 300*     10%      2
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #24 of 302*    9.5%      2
 coding       ▁▁▁▃▆██▇▆▄●▁   #11 of 458*     11%      1
 math         ▁▂▃▅▆▅▄█●▁▁▁    #25 of 398     56%      3
 </pre>
 
-<details><summary>agent tasks · #22 of 300 · 10% of its score</summary>
+<details><summary>agent tasks · #24 of 302 · 9.5% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json">Terminal-Bench 4.0</a>                   27.0%  █▅▅▅●·▅▃▃▅▅▅ beats 10/20  very hard · avg 0.4%    6.7%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json">Terminal-Bench 4.0</a>                   27.0%  █▅▅▅●·▅▃▃▅▅▅ beats 10/20  very hard · avg 0.4%    6.6%  sharp
 <a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>   26.6%  ●··▄█·▄····▄ beats 1/6    very hard · avg 6.7%    2.9%  at its level
 </pre>
 
@@ -61,7 +61,7 @@ test                       result  vs the others in its run    difficulty       
 test                        result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.0%  ●▆▆▆▆▂▅▂▂▂·▅ beats 0/30     very hard · avg 1.3%     11%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>        40.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 118/135  very hard · avg 5.9%    5.5%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 92.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 188/208  hard · avg 40%          4.4%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 92.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 188/208  hard · avg 40%          4.3%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>            47.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 48/78    very hard · avg 8.1%    2.5%  at its level
 </pre>
 

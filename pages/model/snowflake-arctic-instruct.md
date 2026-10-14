@@ -6,7 +6,7 @@
 
 Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
-**score 41.4** ±1.7 · #509 of 719 · from 5 benchmark results across 4 sources
+**score 41.4** ±1.7 · #511 of 721 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 

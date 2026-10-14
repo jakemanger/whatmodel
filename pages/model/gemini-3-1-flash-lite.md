@@ -6,7 +6,7 @@
 
 Google · released 2026-03 · closed weights
 
-**score 66.8** ±1.0 · #116 of 719 · from 11 benchmark results across 6 sources
+**score 66.8** ±1.0 · #118 of 721 · from 11 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Google · released 2026-03 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #130 of 300*    4.5%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #132 of 302*    4.5%      1
 coding              ▁▁▁▃▆██●▆▄▃▁   #156 of 458*     15%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #76 of 393*    8.2%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁    #115 of 398     39%      3
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #60 of 147*     
 web search          ▂●▂▆▄█▃▃▁▁·▁     #75 of 80*    4.5%      1
 </pre>
 
-<details><summary>agent tasks · #130 of 300 · 4.5% of its score</summary>
+<details><summary>agent tasks · #132 of 302 · 4.5% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

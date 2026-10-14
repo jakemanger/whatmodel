@@ -14,10 +14,10 @@ Salesforce · released 2025-03 · 1.54B params · cc-by-nc-4.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #244 of 334*     93%      2
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #246 of 336*     93%      2
 </pre>
 
-<details><summary>agent tasks · #244 of 334 · 93% of its score</summary>
+<details><summary>agent tasks · #246 of 336 · 93% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

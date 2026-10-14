@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 218B params (25B active) · cc-by-nc-4.0
 
-**score 71.3** ±5.9 · #71 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.3** ±5.9 · #73 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ Cohere · released 2026-08 · 218B params (25B active) · cc-by-nc-4.0
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   89.7%  ▂·▂··▂·▄▂·●▆ beats 7/12   medium · avg 64%     42%  noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   89.7%  ▂·▂··▂·▄▂·●▆ beats 7/12   medium · avg 64%     41%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        80.6%  █·▃·▅▅▃···●▃ beats 9/10   easy · avg 71%       24%  blunt
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   83.6%  ▄·▄▄▄·▄██▄█● beats 12/12  easy · avg 66%       19%  blunt
 </pre>

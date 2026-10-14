@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-11 · other (microsoft-research-license)
 
-**score 32.4** ±2.4 · #624 of 719 · from 5 benchmark results across 2 sources
+**score 32.4** ±2.4 · #626 of 721 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 

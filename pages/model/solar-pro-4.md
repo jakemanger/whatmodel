@@ -6,7 +6,7 @@
 
 Upstage · released 2026-08 · closed weights
 
-**score 64.5** ±1.5 · #148 of 719 · from 3 benchmark results across 1 source
+**score 64.5** ±1.5 · #150 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,18 +14,18 @@ Upstage · released 2026-08 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #118 of 300*     41%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #120 of 302*     42%      1
 coding          ▁▁▁▃▆██▇●▄▃▁   #101 of 458*     37%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #123 of 393*     21%      1
 </pre>
 
-<details><summary>agent tasks · #118 of 300 · 41% of its score</summary>
+<details><summary>agent tasks · #120 of 302 · 42% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1590 IPS  ●▁▁▄▂▃▇█▂▂▁▃ beats 0/49   avg -0.310 IPS     41%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1590 IPS  ●▁▁▄▂▃▇█▂▂▁▃ beats 0/49   avg -0.310 IPS     42%  sharp
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 25.2B params (3.8B active) · apache-2.0
 
-**score 63.8** ±0.6 · #158 of 719 · from 62 benchmark results across 18 sources
+**score 63.8** ±0.6 · #160 of 721 · from 62 benchmark results across 18 sources
 
 ## What it's good at
 
@@ -14,22 +14,22 @@ Google · released 2026-04 · 25.2B params (3.8B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #153 of 300     26%     13
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #155 of 302     26%     13
 coding              ▁▁▁▃▆██▇●▄▃▁   #120 of 458     21%     10
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #69 of 393*    3.3%      2
-math                ▁▂▃▅▆▅▄●▄▁▁▁    #98 of 398    7.9%      3
+math                ▁▂▃▅▆▅▄●▄▁▁▁    #98 of 398    7.8%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #56 of 147    9.1%      5
 web search          ●▁▂▆▄█▃▃▁▁·▁    #77 of 80*    0.8%      1
 </pre>
 
-<details><summary>agent tasks · #153 of 300 · 26% of its score</summary>
+<details><summary>agent tasks · #155 of 302 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   35.8%  ▄●·····▄▄▄▄█ beats 1/7    hard · avg 17%          3.5%  sharp · at its level
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   27.3%  ▄······●▄▄█▄ beats 2/7    very hard · avg 7.2%    3.3%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   27.3%  ▄······●▄▄█▄ beats 2/7    very hard · avg 7.1%    3.3%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>            14.0%  ██··█·●·█··█ beats 3/5    very hard · avg 4.8%    3.2%  sharp
 <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>             68.2%  ▄·▄··▄····●▄ beats 3/5    hard · avg 33%          2.9%  at its level · several runs
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   38.4%  ▆··▆▄▂●▂▆▆█▄ beats 10/23  very hard · avg 14%     2.8%  sharp · at its level
@@ -51,7 +51,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kim
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1358.5  ▁▂▄▃●█▄▇▆▄▁▁ beats 32/119  avg 983                 5.2%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1358.5  ▁▂▄▃●█▄▇▆▄▁▁ beats 32/119  avg 983                 5.3%  sharp
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   35.8%  ▄●·····▄▄▄▄█ beats 1/7     hard · avg 17%          3.5%  sharp · at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   38.9%  ▁▁▁▁·●▂▃▅▃█▇ beats 7/49    hard · avg 18%          2.6%  at its level
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>     9.6%  ●···▄···▄▄██ beats 0/7     very hard · avg 6.6%    2.6%  sharp · at its level
@@ -77,7 +77,7 @@ test            result  vs the others in its run    difficulty           counts 
 
 </details>
 
-<details><summary>math · #98 of 398 · 7.9% of its score</summary>
+<details><summary>math · #98 of 398 · 7.8% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -141,7 +141,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 6.0%  █●▁▁▁▂▁▄▂▂▁▁ beats 48/135   very hard · avg 5.9%    0.8%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   63.2%  ▁··▃▁▁▁▅●▅▁▅ beats 14/24    medium · avg 52%        0.6%  blunt · at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                             8.7%  █···●······█ beats 1/2      very hard · avg 3.9%    0.6%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">SkillsBench 78-task subset (OpenC…</a>   12.3%  ▄·····●···▄█ beats 1/4      very hard · avg 7.1%    0.6%  typical
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">SkillsBench 78-task subset (OpenC…</a>   12.3%  ▄·····●···▄█ beats 1/4      very hard · avg 7.1%    0.5%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.8%  ▁▂▁▂▅█▂▃▄●▁▁ beats 87/98    very easy · avg 90%     0.0%  blunt
 </pre>
 

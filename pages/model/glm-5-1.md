@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · 744B params (40B active) · mit
 
-**score 70.7** ±0.5 · #76 of 719 · from 81 benchmark results across 17 sources
+**score 70.7** ±0.5 · #78 of 721 · from 81 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2026-04 · 744B params (40B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁    #55 of 300     26%     19
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁    #57 of 302     26%     19
 coding          ▁▁▁▃▆██▇▆●▃▁    #53 of 458     18%      9
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #39 of 393*    2.3%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #73 of 398     33%     16
 web search      ▂▁▂▆●█▃▃▁▁·▁     #48 of 80    5.4%      5
 </pre>
 
-<details><summary>agent tasks · #55 of 300 · 26% of its score</summary>
+<details><summary>agent tasks · #57 of 302 · 26% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall.
 
@@ -71,7 +71,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>chat &amp; writing · #39 of 393 · 2.3% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run    difficulty      counts  why
@@ -90,8 +90,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            36.8%  ▂··▁▁▃▄●█▅▃▃ beats 27/82    very hard · avg 1.2%    8.9%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   36.3%  ▁·····●██▄·▁ beats 4/20     very hard · avg 7.3%    4.1%  sharp · at its level
 <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                            95.4%  ▄·▄·▄▄··●··▄ beats 5/6      medium · avg 62%        2.8%  sharp · maxed out · small run · several…
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   39.1%  ▁▁▁▁█●▄▃▁▃·▃ beats 11/24    very hard · avg 9.1%    2.3%  at its level
 <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT February 2026 (lab)</a>             82.6%  ▃▃▂▃·██▆●▅▃▅ beats 21/33    hard · avg 30%          2.3%  sharp · small run · several runs
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   39.1%  ▁▁▁▁█●▄▃▁▃·▃ beats 11/24    very hard · avg 9.1%    2.3%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   49.2%  █●▅·█▃▃·▅·▃▃ beats 3/14     hard · avg 15%          2.1%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                      86.8%  ▄····▄·●▄·█▄ beats 2/6      medium · avg 39%        1.9%  small run · several runs
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   65.2%  ▂··▄▂▄█▆▆●▄█ beats 16/23    hard · avg 23%          1.6%  at its level
@@ -100,7 +100,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 2026 (5…</a>   10.0%  ●█·▄▄▄····▄▄ beats 1/8      very hard · avg 1.6%    0.8%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 156/193  very hard · avg 8.6%    0.8%  sharp · noisy
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>    6.5%  ●·▆█▂·▂▂···▂ beats 2/14     very hard · avg 0.8%    0.7%  sharp · noisy
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>    9.3%  ▃▂▂●█▃▂·▃··▂ beats 4/16     very hard · avg 0.7%    0.6%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>    9.3%  ▃▂▂●█▃▂·▃··▂ beats 4/16     very hard · avg 0.8%    0.6%  sharp · noisy
 <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT November 2025 (lab)</a>             94.0%  ▁▁····▁▅▃█●▁ beats 20/23    easy · avg 70%          0.6%  maxed out · small run
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 2026 (4…</a>    2.4%  ▂····●·····█ beats 1/5      very hard · avg 1.0%    0.5%  too hard for it
 </pre>

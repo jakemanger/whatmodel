@@ -6,7 +6,7 @@
 
 Nomic AI · released 2023-04 · 13B params · gpl
 
-**score 26.3** ±1.9 · #667 of 719 · from 3 benchmark results across 3 sources
+**score 26.3** ±1.9 · #669 of 721 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 24.5** ±0.6 · #675 of 719 · from 30 benchmark results across 6 sources
+**score 24.5** ±0.6 · #677 of 721 · from 30 benchmark results across 6 sources
 
 ## What it's good at
 

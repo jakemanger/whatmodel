@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 2400B params (95B active) · qwen3.8-max-license
 
-**score 78.1** ±0.6 · #18 of 719 · from 23 benchmark results across 8 sources
+**score 78.1** ±0.6 · #20 of 721 · from 23 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Alibaba · released 2026-08 · 2400B params (95B active) · qwen3.8-max-license
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #18 of 300     13%      3
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #19 of 302     13%      3
 coding              ▁▁▁▃▆██▇▆▄●▁    #10 of 458     11%      3
-chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #18 of 393*    3.6%      1
-math                ▁▂▃▅▆▅▄█▄●▁▁    #19 of 398     54%      9
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #18 of 393*    3.5%      1
+math                ▁▂▃▅▆▅▄█▄●▁▁    #19 of 398     55%      9
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #2 of 147*    5.5%      2
 </pre>
 
-<details><summary>agent tasks · #18 of 300 · 13% of its score</summary>
+<details><summary>agent tasks · #19 of 302 · 13% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A49B)](hy4-preview.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
@@ -47,18 +47,18 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #18 of 393 · 3.6% of its score</summary>
+<details><summary>chat &amp; writing · #18 of 393 · 3.5% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1481.6  ▁▁▁▂▃▃▃▆▆▇█● beats 360/379  avg 1268      3.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1481.6  ▁▁▁▂▃▃▃▆▆▇█● beats 360/379  avg 1268      3.5%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #19 of 398 · 54% of its score</summary>
+<details><summary>math · #19 of 398 · 55% of its score</summary>
 
 Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.4](gpt-5-4.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   45.5%  ▂▂▆█▃●▂▂▂··▂ beats 13/18    very hard · avg 0.7%    3.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   69.2%  ▁··▁▄█●▁·▃·▁ beats 13/17    very hard · avg 11%     2.6%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet">MathArena ArXivMath August 2026, …</a>   57.9%  █▄·●·······█ beats 3/5      very hard · avg 4.8%    1.8%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet">MathArena BrokenArXiv August 2026…</a>   69.6%  ▄▄·····▄·●·█ beats 3/5      very hard · avg 5.6%    0.8%  at its level · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet">MathArena BrokenArXiv August 2026…</a>   69.6%  ▄▄·····▄·●·█ beats 3/5      very hard · avg 5.7%    0.8%  at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             99.4%  ▃▃▄▃▃▃▇▇█▃▂● beats 183/193  very hard · avg 8.6%    0.4%  sharp · maxed out · noisy
 </pre>
 
@@ -84,7 +84,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fabl
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://qwen.ai/blog?id=qwen3.8">CharXiv (reasoning questions) (la…</a>   88.4%  ▄▂▄▆▄▄▆··▄█● beats 21/21    medium · avg 39%    3.1%  typical
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1301.2  ▁▁▂▂▂▂▄▅▅▆█● beats 144/145  avg 1068            2.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1301.2  ▁▁▂▂▂▂▄▅▅▆█● beats 144/145  avg 1068            2.4%  blunt
 </pre>
 
 </details>

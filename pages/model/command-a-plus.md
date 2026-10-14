@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 64.2** ±1.0 · #153 of 719 · from 23 benchmark results across 3 sources
+**score 64.2** ±1.0 · #155 of 721 · from 23 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #138 of 300     25%      6
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #140 of 302     25%      6
 coding              ▁▁▁▃▆██●▆▄▃▁   #152 of 458    9.2%      3
 math                ▁▂▃▅▆▅▄●▄▁▁▁   #104 of 398     17%      3
 vision &amp; documents  ······●·····      #1 of 1*    5.8%      2
 </pre>
 
-<details><summary>agent tasks · #138 of 300 · 25% of its score</summary>
+<details><summary>agent tasks · #140 of 302 · 25% of its score</summary>
 
 Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

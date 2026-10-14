@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.6** ±0.8 · #210 of 719 · from 32 benchmark results across 5 sources
+**score 58.6** ±0.8 · #212 of 721 · from 32 benchmark results across 5 sources
 
 ## What it's good at
 

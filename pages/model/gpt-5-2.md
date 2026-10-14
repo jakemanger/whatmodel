@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · closed weights
 
-**score 73.7** ±0.5 · #51 of 719 · from 50 benchmark results across 26 sources
+**score 73.7** ±0.5 · #53 of 721 · from 50 benchmark results across 26 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ OpenAI · released 2025-12 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #58 of 300     23%     14
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #60 of 302     23%     14
 coding              ▁▁▁▃▆██▇●▄▃▁    #79 of 458     10%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #70 of 393*    2.5%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #31 of 398     31%      9
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #44 of 147    4.
 web search          ▂▁▂▆●█▃▃▁▁·▁    #51 of 80*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #58 of 300 · 23% of its score</summary>
+<details><summary>agent tasks · #60 of 302 · 23% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>coding · #79 of 458 · 10% of its score</summary>
 
-Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
+Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -81,7 +81,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   37.5%  ▁▁▁▁█●▄▃▁▃·▃ beats 10/24    very hard · avg 9.1%    3.2%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   67.9%  ▂··▄▂▄█▆▆●▄█ beats 17/23    hard · avg 23%          2.1%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   52.2%  ▃·▃▃█▁·●·▁▁▁ beats 15/18    hard · avg 19%          1.5%  at its level
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   25.8%  ▃▂▂▃█▃●·▃··▂ beats 13/16    very hard · avg 0.7%    1.1%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   25.8%  ▃▂▂▃█▃●·▃··▂ beats 13/16    very hard · avg 0.8%    1.1%  sharp · noisy
 <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">MATH-Vision</a>                          83.0%  █·····●▄·▄·▄ beats 2/5      medium · avg 46%        0.9%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             96.1%  ▃▃▄▃▃▃▇▇█●▂▅ beats 166/193  very hard · avg 8.6%    0.6%  sharp · maxed out · noisy
 <a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench (200 graduate-le…</a>   13.5%  ▃▅·▃··●▃█··▃ beats 5/10     very hard · avg 3.0%    0.5%  noisy
@@ -119,12 +119,12 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    23.0%  ▄▂·▆█▂●▆▆▆·▄ beats 11/24    very hard · avg 0.4%    4.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    23.0%  ▄▂·▆█▂●▆▆▆·▄ beats 11/24    very hard · avg 0.4%    4.1%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           38.3%  █▆▆●▆▂▅▂▂▂·▅ beats 15/30    very hard · avg 1.3%    3.8%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   74.6%  █···▁▁▁▂▃·●▂ beats 18/23    very hard · avg 29%     3.3%  sharp · at its level
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-2025-12-11-thinking-medium/results.json">ARC-AGI-2 public evaluation set (…</a>   27.6%  █··▂▅▁▃●▃·▁▃ beats 17/24    very hard · avg 0.3%    2.9%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         23.0%  █··▂▃▇●█▂▃▁▁ beats 41/74    very hard · avg 9.4%    2.8%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         91.4%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 184/208  hard · avg 40%          2.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         23.0%  █··▂▃▇●█▂▃▁▁ beats 41/74    very hard · avg 9.4%    2.7%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         91.4%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 184/208  hard · avg 40%          2.1%  sharp
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   39.5%  ▁▁▂▁▃▄█▆▄●▂▃ beats 33/39    very hard · avg 22%     1.9%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                49.0%  █▁▁▁▁▂▁▄▂▂●▁ beats 127/135  very hard · avg 5.9%    1.9%  sharp · noisy
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   62.4%  ▂▃▅▂▆▃█▅█▅▃● beats 32/34    medium · avg 42%        1.6%  blunt · at its level
@@ -132,7 +132,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           90.9%  ▆▄▄▄█▄▂·▄●·▄ beats 18/23    medium · avg 58%        1.4%  typical
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-2025-12-11-thinking-xhigh/results.json">ARC-AGI-1 public evaluation set (…</a>   95.0%  ▁·▇▃▁·█▇▁·●▃ beats 22/27    very hard · avg 4.2%    1.3%  sharp · noisy
 <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input (Z.…</a>   35.2%  ▄··▄▄·▄▄█·●▄ beats 7/8      very hard · avg 11%     1.2%  at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            91.8%  ▄▄▄▂▂█▂▄▂●▂▄ beats 16/22    medium · avg 63%        1.1%  typical
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            91.8%  ▄▄▄▂▂█▂▄▂●▂▄ beats 16/22    medium · avg 63%        1.0%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    37.1%  ▁▁▃▂▃▃●▆█▃▂▅ beats 32/78    very hard · avg 8.1%    1.0%  at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   47.0%  ▁▁▃▂▂▄▁▃●▄▄█ beats 18/38    very hard · avg 14%     0.9%  at its level
 <a href="https://arxiv.org/html/2602.13964v4">HLE-Verified full set, text-only …</a>   43.3%  █·█·····●··█ beats 2/3      very hard · avg 14%     0.8%  at its level
@@ -148,7 +148,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                       10   41% ▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                       10   42% ▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     5   10% ▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        4    8% ▇
 <a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3    6% ▇

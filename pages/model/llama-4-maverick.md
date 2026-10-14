@@ -6,7 +6,7 @@
 
 Meta · released 2025-04 · 402B params (17B active) · llama-4
 
-**score 56.8** ±0.8 · #238 of 719 · from 27 benchmark results across 20 sources
+**score 56.8** ±0.8 · #240 of 721 · from 27 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Meta · released 2025-04 · 402B params (17B active) · llama-4
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #239 of 300    8.8%      5
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #241 of 302    8.8%      5
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #215 of 458     17%      3
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #190 of 393     15%      3
 math                ▁▂▃▅▆●▄█▄▁▁▁   #195 of 398     20%      3
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #95 of 147     1
 web search          ▂▁▂●▄█▃▃▁▁·▁    #54 of 80*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #239 of 300 · 8.8% of its score</summary>
+<details><summary>agent tasks · #241 of 302 · 8.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

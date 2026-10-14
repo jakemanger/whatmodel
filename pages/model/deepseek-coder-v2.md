@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 236B params (21B active) · deepseek
 
-**score 52.9** ±0.7 · #299 of 719 · from 12 benchmark results across 8 sources
+**score 52.9** ±0.7 · #301 of 721 · from 12 benchmark results across 8 sources
 
 ## What it's good at
 

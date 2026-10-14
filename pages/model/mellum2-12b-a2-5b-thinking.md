@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 54.1** ±1.3 · #286 of 719 · from 18 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.1** ±1.3 · #288 of 721 · from 18 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,19 +14,19 @@ JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #249 of 300     24%      5
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #251 of 302     24%      5
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #227 of 458     36%      5
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #250 of 393*    4.4%      1
 </pre>
 
-<details><summary>agent tasks · #249 of 300 · 24% of its score</summary>
+<details><summary>agent tasks · #251 of 302 · 24% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL V4 (December 2025 archive) (…</a>   45.6%  ▁▁▁▂▇▆▆▆●▂▄▂ beats 70/111   medium · avg 42%        8.0%  at its level · several runs
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (lab)</a>              0.6%  ●·▁·▁▁▄▃▄█▃▇ beats 0/56     very hard · avg 6.6%    5.7%  typical
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (lab)</a>              0.6%  ●·▁·▁▁▄▃▄█▄█ beats 0/58     very hard · avg 6.6%    5.8%  typical
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>              2.0%  ▁●▁▁▁▁▂▄█▆▁▁ beats 1/131    hard · avg 17%          5.1%  sharp · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>    0.0%  ●·▁▁▁▂▂▃█▇▃▁ beats 0/55     very hard · avg 7.6%    4.0%  sharp · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL v3 (lab)</a>                        69.4%  ▁▁▁▁▁▃▅█▆●▄▁ beats 147/170  medium · avg 58%        1.6%  blunt · at its level

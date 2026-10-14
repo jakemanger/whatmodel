@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 51.7** ±0.9 · #315 of 719 · from 19 benchmark results across 10 sources
+**score 51.7** ±0.9 · #317 of 721 · from 19 benchmark results across 10 sources
 
 ## What it's good at
 

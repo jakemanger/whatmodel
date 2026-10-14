@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 69.9** ±0.8 · #83 of 719 · from 14 benchmark results across 7 sources
+**score 69.9** ±0.8 · #85 of 721 · from 14 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #113 of 300*     18%      2
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #116 of 302*     18%      2
 coding              ▁▁▁▃▆██▇▆●▃▁    #64 of 458*     24%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #58 of 393*    6.2%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁     #66 of 398     34%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #28 of 147*     10%      2
 </pre>
 
-<details><summary>agent tasks · #113 of 300 · 18% of its score</summary>
+<details><summary>agent tasks · #116 of 302 · 18% of its score</summary>
 
 Beats [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

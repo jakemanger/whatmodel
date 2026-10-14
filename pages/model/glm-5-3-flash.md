@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-08 · 320B params (18B active) · mit
 
-**score 73.9** ±0.7 · #48 of 719 · from 21 benchmark results across 8 sources
+**score 73.9** ±0.7 · #50 of 721 · from 21 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Z.ai · released 2026-08 · 320B params (18B active) · mit
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #24 of 300     22%      7
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #25 of 302     22%      7
 coding              ▁▁▁▃▆██▇▆▄●▁    #24 of 458     13%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #28 of 393*    4.7%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁    #48 of 398     41%      3
@@ -22,19 +22,19 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #23 of 147*    3.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #36 of 80*    1.3%      1
 </pre>
 
-<details><summary>agent tasks · #24 of 300 · 22% of its score</summary>
+<details><summary>agent tasks · #25 of 302 · 22% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0044 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 18/49  avg -0.310 IPS          9.4%  sharp
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-z-ai-glm-5-3-flash-none-claude-code.json">Terminal-Bench 4.0</a>                        35.8%  █▅▅▅▅·●▃▃▅▅▅ beats 11/20  very hard · avg 0.4%    4.2%  sharp
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Terminal-Bench 2.1 (lab)</a>                  84.3%  ▁·▁·▁▁▄▃▄█▃● beats 45/56  hard · avg 23%          2.6%  small run
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-z-ai-glm-5-3-flash-none-claude-code.json">Terminal-Bench 4.0</a>                        35.8%  █▅▅▅▅·●▃▃▅▅▅ beats 11/20  very hard · avg 0.4%    4.1%  sharp
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Terminal-Bench 2.1 (lab)</a>                  84.3%  ▁·▁·▁▁▄▃▄█▄● beats 46/58  hard · avg 23%          2.6%  small run
 <a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>        25.7%  ●··▄█·▄····▄ beats 0/6    very hard · avg 6.7%    2.1%  at its level
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Humanity's Last Exam with tools (…</a>        55.3%  ▂▂▂▁▄▂▃▆█●▂▆ beats 39/54  hard · avg 17%          1.3%  at its level · small run
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/harness…</a>        26.3%  ▂·▂·●▂···▂▄▄ beats 3/11   very hard · avg 6.9%    1.0%  at its level · small run
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>             63.4%  ▂····▁▁▁▆●█▆ beats 10/28  hard · avg 19%          1.0%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>             63.4%  ▂····▁▁▁▆●█▇ beats 10/29  hard · avg 19%          1.0%  at its level · small run
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1615.6  ▁▂▄▃▅█▄▇●▄▁▁ beats 97/119  avg 983           8.4%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   68.8%  ▁▁▁▁·▁▂▃●▃█▇ beats 22/49   hard · avg 18%    3.4%  at its level
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>        63.4%  ▂····▁▁▁▆●█▆ beats 10/28   hard · avg 19%    1.0%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>        63.4%  ▂····▁▁▁▆●█▇ beats 10/29   hard · avg 19%    1.0%  at its level · small run
 </pre>
 
 </details>
@@ -82,7 +82,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.m
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1278.4  ▁▁▂▂▂▂▄▅▅▆█● beats 122/145  avg 1068            3.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1278.4  ▁▁▂▂▂▂▄▅▅▆█● beats 122/145  avg 1068            3.2%  blunt
 <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   79.7%  ▂·▁·▂▂▅█·▁▂● beats 22/22    medium · avg 62%    0.1%  blunt · at its level
 </pre>
 
@@ -103,7 +103,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          8.0%  ●··▂▃▇▄█▂▃▁▁ beats 15/74    very hard · avg 9.4%    5.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          8.0%  ●··▂▃▇▄█▂▃▁▁ beats 15/74    very hard · avg 9.4%    5.3%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.2%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 174/208  hard · avg 40%          4.0%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                14.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 68/135   very hard · avg 5.9%    3.7%  sharp · noisy
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   27.9%  ▁▁▃▂▂●▁▃▄▄▄█ beats 11/38    very hard · avg 14%     1.7%  at its level

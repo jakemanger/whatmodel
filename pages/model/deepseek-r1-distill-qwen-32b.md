@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 32.8B params · mit
 
-**score 55.8** ±0.8 · #248 of 719 · from 28 benchmark results across 11 sources
+**score 55.8** ±0.8 · #250 of 721 · from 28 benchmark results across 11 sources
 
 ## What it's good at
 

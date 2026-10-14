@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 3B params · apache-2.0
 
-**score 17.4** ±1.9 · #697 of 719 · from 3 benchmark results across 3 sources
+**score 17.4** ±1.9 · #699 of 721 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 

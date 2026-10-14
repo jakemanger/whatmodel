@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 63.9** ±1.2 · #157 of 719 · from 10 benchmark results across 4 sources
+**score 63.9** ±1.2 · #159 of 721 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,18 +14,18 @@ Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #132 of 300     36%      7
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #133 of 302     36%      7
 coding          ▁▁▁▃▆██●▆▄▃▁    #141 of 458     63%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #122 of 393*     13%      1
 </pre>
 
-<details><summary>agent tasks · #132 of 300 · 36% of its score</summary>
+<details><summary>agent tasks · #133 of 302 · 36% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   23.9%  ▃··▃·▃▃●█▅▃▅ beats 4/14     very hard · avg 5.9%     11%  sharp
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   23.9%  ▃··▃·▃▃●█▅▃▅ beats 4/14     very hard · avg 5.9%     10%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 74/131   hard · avg 28%          8.0%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                 77.5%  ▁····▃·▂▇█▂● beats 23/28    medium · avg 45%        5.9%  small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60    hard · avg 25%          5.2%  at its level · small run
@@ -71,7 +71,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Qwen/Qwen3-Coder-30B-A3B-Instruct model…</a>        6   45% ▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   37% ▇▇▇▇
-<a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   11% ▇
+<a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   10% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    7% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 63.9

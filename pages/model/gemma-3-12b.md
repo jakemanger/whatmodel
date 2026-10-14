@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 12.2B params · gemma
 
-**score 51.5** ±0.6 · #317 of 719 · from 56 benchmark results across 16 sources
+**score 51.5** ±0.6 · #319 of 721 · from 56 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2025-03 · 12.2B params · gemma
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #250 of 300*    2.3%      2
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #252 of 302*    2.3%      2
 coding              ▁▁▁▃▆●█▇▆▄▃▁    #293 of 458    9.0%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #168 of 393*    4.0%      2
 math                ▁▂▃▅▆●▄█▄▁▁▁    #203 of 398     15%      6
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #124 of 147    7.2%      9
 </pre>
 
-<details><summary>agent tasks · #250 of 300 · 2.3% of its score</summary>
+<details><summary>agent tasks · #252 of 302 · 2.3% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -107,8 +107,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.8%  ▂▃▅▂●▃█▅█▅▃▆ beats 8/34     medium · avg 42%        2.6%  blunt · at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.3%  █··▄··█··●·▄ beats 5/7      medium · avg 43%        2.5%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>               69.5%  ▂···▂·●▂▂·██ beats 2/12     medium · avg 66%        2.4%  at its level
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                        6.3%  ▄▄▄●█▆███·▂█ beats 6/32     very hard · avg 7.4%    2.3%  typical
 <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   53.3%  ▄·▂▂▂··●▂▄·▄ beats 5/13     hard · avg 48%          2.3%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                        6.3%  ▄▄▄●█▆███·▂█ beats 6/32     very hard · avg 7.4%    2.3%  typical
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4 pat…</a>   74.4%  ▄·······▄●·▄ beats 2/4      easy · avg 73%          1.8%  typical
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        69.2%  ▃··▃▃··▅···● beats 6/7      medium · avg 57%        1.8%  at its level
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   66.2%  █······█··●█ beats 2/3      medium · avg 63%        1.8%  at its level

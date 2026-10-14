@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
-**score 57.1** ±1.0 · #232 of 719 · from 22 benchmark results across 6 sources
+**score 57.1** ±1.0 · #234 of 721 · from 22 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #185 of 300     27%      6
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #187 of 302     27%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #220 of 458     38%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #154 of 393*    9.0%      2
 math            ▁▂▃▅●▅▄█▄▁▁▁   #243 of 398*    9.0%      2
 web search      ▂▁▂▆●█▃▃▁▁·▁     #44 of 80*    4.3%      1
 </pre>
 
-<details><summary>agent tasks · #185 of 300 · 27% of its score</summary>
+<details><summary>agent tasks · #187 of 302 · 27% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

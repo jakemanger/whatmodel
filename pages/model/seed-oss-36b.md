@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 62.5** ±1.0 · #169 of 719 · from 21 benchmark results across 2 sources
+**score 62.5** ±1.0 · #171 of 721 · from 21 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #136 of 300     15%      4
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #138 of 302     15%      4
 coding          ▁▁▁▃▆██▇●▄▃▁    #122 of 458     12%      3
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #191 of 393*    1.6%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #140 of 398     20%      3
 </pre>
 
-<details><summary>agent tasks · #136 of 300 · 15% of its score</summary>
+<details><summary>agent tasks · #138 of 302 · 15% of its score</summary>
 
 Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -77,7 +77,7 @@ test                      result  vs the others in its run   difficulty         
 test                        result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 71.5%  ▁▁▁▁▂▄▆▄●▇█▅ beats 108/208  hard · avg 40%           26%  sharp · at its level · several runs
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU (lab)</a>                   87.4%  ▁▁▁▁▁▂▃▅█▃▆● beats 170/183  medium · avg 72%        5.3%  typical
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam (lab)</a>   10.1%  ▁▁▁▃●▆▇██▆▁▃ beats 16/104   very hard · avg 4.2%    5.2%  typical
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam (lab)</a>   10.1%  ▁▁▁▃●▆▇██▆▁▃ beats 16/104   very hard · avg 4.2%    5.3%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU-Pro (lab)</a>               82.7%  ▁▁·▁▁▁▃▂▄▅●▁ beats 151/188  medium · avg 63%        4.6%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU (lab)</a>                  78.4%  ▂▁▁▂▃▂▄▄▅●█▃ beats 26/46    medium · avg 65%        4.0%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SuperGPQA (lab)</a>              55.7%  ▂▁▂▂▅▆▃▇●▇█▃ beats 27/46    medium · avg 37%        3.3%  at its level

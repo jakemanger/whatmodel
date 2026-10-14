@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 70.55B params · llama3
 
-**score 49.6** ±0.4 · #350 of 719 · from 34 benchmark results across 23 sources
+**score 49.6** ±0.4 · #352 of 721 · from 34 benchmark results across 23 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Meta · released 2024-04 · 70.55B params · llama3
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #251 of 300*    0.4%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #253 of 302*    0.4%      1
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #267 of 458     42%     10
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #258 of 393     16%      4
 math            ▁▂▃●▆▅▄█▄▁▁▁    #310 of 398    9.0%      4
 </pre>
 
-<details><summary>agent tasks · #251 of 300 · 0.4% of its score</summary>
+<details><summary>agent tasks · #253 of 302 · 0.4% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -88,8 +88,8 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             16.8%  ▁▁▃▆●█▁▁·▁▁▁ beats 23/57    hard · avg 18%         2.6%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        43.2%  ▃▂·▆▆██▆▅●▃▃ beats 29/33    medium · avg 41%       2.3%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.9%  ▂▁▁▄▂▅▇█▆▂●▂ beats 55/58    medium · avg 51%       2.2%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 39/208   hard · avg 40%         2.1%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.7708 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 38/52    avg 45.277 WB-Score    2.0%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 39/208   hard · avg 40%         2.0%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.7708 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 38/52    avg 45.276 WB-Score    2.0%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             75.6%  ▁▂▂▂▃█▃▆●▄▂▃ beats 71/95    easy · avg 66%         1.2%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                71.2%  ▁··▁▁▂▂▆▅▆●▆ beats 58/70    medium · avg 64%       1.0%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>             26.1%  ▁▁·▁▂▂▄●▄▅▄▄ beats 21/66    hard · avg 31%         0.8%  at its level

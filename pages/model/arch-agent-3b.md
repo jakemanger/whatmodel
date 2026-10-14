@@ -14,10 +14,10 @@ Katanemo · released 2025-06 · 3.09B params · other (katanemo-research)
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #227 of 334*     90%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #229 of 336*     90%      1
 </pre>
 
-<details><summary>agent tasks · #227 of 334 · 90% of its score</summary>
+<details><summary>agent tasks · #229 of 336 · 90% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 74.2** ±1.4 · #46 of 719 · from 8 benchmark results across 4 sources
+**score 74.2** ±1.4 · #48 of 721 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,25 +14,25 @@ OpenAI · released 2026-02 · closed weights
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #46 of 300     99%      8
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #47 of 302     99%      8
 coding       ▁▁▁▃▆██▇▆●▃▁   #51 of 458     44%      3
 web search   ▂▁▂▆▄●▃▃▁▁·▁   #34 of 80*     20%      1
 </pre>
 
-<details><summary>agent tasks · #46 of 300 · 99% of its score</summary>
+<details><summary>agent tasks · #47 of 302 · 99% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   74.8%  ▁··▁·▁▂▁▄●▄▁ beats 17/29  hard · avg 19%           29%  sharp
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 33%           20%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 32%           20%  typical
 <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (lab)</a>    51.9%  ▃··▃··▃··●█▅ beats 3/8    very hard · avg 13%      12%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>             77.3%  ██···██··█●█ beats 5/6    very hard · avg 14%      12%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.3%     10%  sharp · at its level · noisy
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 17%          7.0%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 28%          4.7%  blunt · at its level
-<a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    3.6%  ▁▁·▁▁●▁▅▃█▅█ beats 4/27   very hard · avg 2.4%    4.5%  typical
+<a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    3.6%  ▁▁·▁▁●▁▅▃█▅█ beats 4/27   very hard · avg 2.4%    4.4%  typical
 </pre>
 
 </details>
@@ -56,7 +56,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank highe
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>   77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 33%     20%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>   77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 32%     20%  typical
 </pre>
 
 </details>

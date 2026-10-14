@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 67.6** ±0.7 · #106 of 719 · from 31 benchmark results across 8 sources
+**score 67.6** ±0.7 · #108 of 721 · from 31 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,26 +14,26 @@ MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercia
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁     #77 of 300     22%      7
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁     #80 of 302     22%      7
 coding          ▁▁▁▃▆██▇●▄▃▁     #89 of 458     28%      7
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #93 of 393*    4.4%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #93 of 393*    4.3%      1
 math            ▁▂▃▅▆▅●█▄▁▁▁   #165 of 398*    4.7%      2
 web search      ▂▁▂●▄█▃▃▁▁·▁     #67 of 80*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #77 of 300 · 22% of its score</summary>
+<details><summary>agent tasks · #80 of 302 · 22% of its score</summary>
 
-Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall.
+Beats [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>                   75.3%  █····██·█●██ beats 4/6    hard · avg 22%         6.3%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>               71.8%  ▄··▄●···▄▄·█ beats 2/6    hard · avg 30%         4.4%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>                   55.5%  █··▄●·▄····▄ beats 3/6    very hard · avg 12%    4.1%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>                   55.5%  █··▄●·▄····▄ beats 3/6    very hard · avg 12%    4.2%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                           54.1%  ▄·▄▄···●··█▄ beats 3/6    hard · avg 16%         2.3%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                             66.1%  ●····▄·█·▄·█ beats 0/6    medium · avg 40%       2.0%  blunt · at its level
 <a href="https://arxiv.org/html/2606.15007v1">τ³-bench telecom (tau2-bench ≥ v1…</a>   89.6%  ●·▄···▄·▄·█▄ beats 0/6    easy · avg 77%         1.5%  maxed out
-<a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 tasks…</a>   49.0%  ●··▄·▄·█···▄ beats 0/5    hard · avg 27%         0.9%  blunt · at its level
+<a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 tasks…</a>   49.0%  ●··▄·▄·█···▄ beats 0/5    hard · avg 27%         1.0%  blunt · at its level
 </pre>
 
 </details>
@@ -55,13 +55,13 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #93 of 393 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #93 of 393 · 4.3% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1415.0  ▁▁▁▂▃▃▃▆▆●█▃ beats 264/379  avg 1268      4.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1415.0  ▁▁▁▂▃▃▃▆▆●█▃ beats 264/379  avg 1268      4.3%  blunt
 </pre>
 
 </details>

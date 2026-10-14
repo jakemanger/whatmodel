@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 357B params (32B active) · mit
 
-**score 68.6** ±0.7 · #98 of 719 · from 48 benchmark results across 11 sources
+**score 68.6** ±0.7 · #99 of 721 · from 48 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2025-12 · 357B params (32B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #90 of 300     37%     11
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #92 of 302     37%     11
 coding          ▁▁▁▃▆██▇▆●▃▁    #74 of 458     17%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #62 of 393*    4.1%      1
 math            ▁▂▃▅▆▅▄█●▁▁▁    #55 of 398     16%      7
 web search      ▂▁▂●▄█▃▃▁▁·▁     #68 of 80     11%      4
 </pre>
 
-<details><summary>agent tasks · #90 of 300 · 37% of its score</summary>
+<details><summary>agent tasks · #92 of 302 · 37% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md) here, though they rank lower overall.
 
@@ -44,11 +44,11 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>coding · #74 of 458 · 17% of its score</summary>
 
-Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall.
+Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1434.5  ▁▂▄▃▅●▄▇▆▄▁▁ beats 54/119  avg 983             7.3%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1434.5  ▁▂▄▃▅●▄▇▆▄▁▁ beats 54/119  avg 983             7.4%  sharp
 <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Verified (lab)</a>             73.8%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 94/131  hard · avg 25%      5.0%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>         66.7%  ▁··▁▃▂▅●█▃▃▁ beats 26/60   hard · avg 28%      3.2%  at its level · small run · several runs
 <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unspecif…</a>   84.9%  ▂▃▄▄▅██▅▄●▃▆ beats 51/65   medium · avg 47%    1.9%  small run

@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-06 · 428B params (23B active) · minimax-community
 
-**score 70.1** ±1.0 · #79 of 719 · from 16 benchmark results across 8 sources
+**score 70.1** ±1.0 · #81 of 721 · from 16 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ MiniMax · released 2026-06 · 428B params (23B active) · minimax-community
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #57 of 300     35%      5
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #59 of 302     35%      5
 coding              ▁▁▁▃▆██▇▆●▃▁    #56 of 458*     21%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #66 of 393*    8.8%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁   #139 of 398*    4.0%      1
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #59 of 147    9
 web search          ▂▁▂▆●█▃▃▁▁·▁     #43 of 80*    2.8%      1
 </pre>
 
-<details><summary>agent tasks · #57 of 300 · 35% of its score</summary>
+<details><summary>agent tasks · #59 of 302 · 35% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall.
 
@@ -102,7 +102,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 180/208  hard · avg 40%           11%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          7.0%  ●··▂▃▇▄█▂▃▁▁ beats 13/74    very hard · avg 9.4%    5.8%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                14.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 67/135   very hard · avg 5.9%    4.9%  sharp · noisy
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   31.3%  ▁▁▃▂▂▄●▃▄▄▄█ beats 13/38    very hard · avg 14%     3.1%  at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   31.3%  ▁▁▃▂▂▄●▃▄▄▄█ beats 13/38    very hard · avg 14%     3.0%  at its level
 <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    2.9%  ▃▃●▃·▅···█▃▃ beats 3/12     very hard · avg 0.8%    3.0%  too hard for it
 </pre>
 

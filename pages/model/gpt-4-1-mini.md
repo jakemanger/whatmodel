@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 60.2** ±0.6 · #191 of 719 · from 43 benchmark results across 19 sources
+**score 60.2** ±0.6 · #193 of 721 · from 43 benchmark results across 19 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ OpenAI · released 2025-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #165 of 300     16%     10
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #166 of 302     16%     10
 coding              ▁▁▁▃▆██●▆▄▃▁   #175 of 458*     10%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃    #128 of 393    9.4%      3
 math                ▁▂▃▅▆▅●█▄▁▁▁    #174 of 398     18%      5
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #77 of 147    7
 web search          ▂▁▂▆▄█▃▃▁●·▁      #5 of 80*    2.0%      1
 </pre>
 
-<details><summary>agent tasks · #165 of 300 · 16% of its score</summary>
+<details><summary>agent tasks · #166 of 302 · 16% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

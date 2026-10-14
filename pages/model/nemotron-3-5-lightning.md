@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 62.1** ±2.2 · #174 of 719 · from 3 benchmark results across 2 sources
+**score 62.1** ±2.2 · #176 of 721 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

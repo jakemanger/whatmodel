@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
-**score 56.5** ±0.8 · #240 of 719 · from 33 benchmark results across 8 sources
+**score 56.5** ±0.8 · #242 of 721 · from 33 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #166 of 300     19%      6
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #167 of 302     19%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #223 of 458*    2.8%      1
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #184 of 393*    6.6%      2
 math            ▁▂▃▅▆▅●█▄▁▁▁    #181 of 398     27%      6
 </pre>
 
-<details><summary>agent tasks · #166 of 300 · 19% of its score</summary>
+<details><summary>agent tasks · #167 of 302 · 19% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -81,7 +81,7 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/README.md">MMLU-Pro (lab)</a>                       74.0%  ▁▁·▁▁▁▃▂▄●█▁ beats 98/188   medium · avg 66%       6.2%  at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">GPQA (subset unspecified) (lab)</a>      65.8%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 68/104   medium · avg 51%       5.9%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.9%  ▂▃▅▂▆▃●▅█▅▃▆ beats 15/34    medium · avg 42%       4.9%  blunt · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.9%  ▂▃▅▂▆▃●▅█▅▃▆ beats 15/34    medium · avg 42%       4.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   40.0%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 76/97    hard · avg 32%         3.5%  blunt · at its level
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   24.8%  ▁▁▂▁▃●█▆▄▅▂▃ beats 9/39     very hard · avg 22%    3.2%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">INCLUDE (lab)</a>                        64.4%  ▂····▂▂▄●▄█▄ beats 15/36    medium · avg 59%       2.7%  at its level · small run

@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-08 · 2.8B params · cc-by-sa-4.0
 
-**score 23.9** ±1.0 · #679 of 719 · from 12 benchmark results across 2 sources
+**score 23.9** ±1.0 · #681 of 721 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 

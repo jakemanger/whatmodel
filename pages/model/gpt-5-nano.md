@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 61.8** ±0.8 · #179 of 719 · from 26 benchmark results across 13 sources
+**score 61.8** ±0.8 · #181 of 721 · from 26 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ OpenAI · released 2025-08 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #172 of 300     20%      6
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #174 of 302     20%      6
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #173 of 393*    6.1%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁    #130 of 398     34%      7
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #93 of 147*    6.4%      2
 </pre>
 
-<details><summary>agent tasks · #172 of 300 · 20% of its score</summary>
+<details><summary>agent tasks · #174 of 302 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>    7.9%  ▃··●·▃▃██▅▃▅ beats 1/14   very hard · avg 5.9%    4.2%  sharp
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   40.6%  █···●▄▄·▄█·█ beats 3/10   hard · avg 29%          3.8%  at its level
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   40.6%  █···●▄▄·▄█·█ beats 3/10   hard · avg 29%          3.7%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    3.4%  ▃▅●·▅▃▃··█·▃ beats 3/11   very hard · avg 3.9%    3.6%  sharp · noisy
 <a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               35.5%  ▃·●▅▃▃··█▃▃▅ beats 2/13   hard · avg 16%          3.2%  sharp · at its level · noisy
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      51.4%  ▁▁▁▂██▅▅●▂▂▂ beats 59/77  hard · avg 32%          3.1%  at its level

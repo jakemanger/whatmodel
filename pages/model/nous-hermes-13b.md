@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 33.9** ±2.2 · #610 of 719 · from 3 benchmark results across 2 sources
+**score 33.9** ±2.2 · #612 of 721 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   55.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 77/276  medium · avg 73%    8.0%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   55.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 77/276  medium · avg 73%    7.9%  at its level · noisy
 </pre>
 
 </details>

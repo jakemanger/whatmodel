@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 43.5** ±1.8 · #475 of 719 · from 10 benchmark results across 2 sources
+**score 43.5** ±1.8 · #477 of 721 · from 10 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #247 of 300*    3.1%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #250 of 302*    3.1%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #161 of 393*     10%      1
 math            ▁▂▃●▆▅▄█▄▁▁▁    #299 of 398     43%      3
 </pre>
 
-<details><summary>agent tasks · #247 of 300 · 3.1% of its score</summary>
+<details><summary>agent tasks · #250 of 302 · 3.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 

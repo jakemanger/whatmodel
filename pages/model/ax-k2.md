@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 69.2** ±1.4 · #92 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.2** ±1.4 · #94 of 721 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ math    ▁▂▃▅▆▅▄█●▁▁▁   #43 of 398*    7.7%      1
 
 <details><summary>coding · #76 of 458 · 17% of its score</summary>
 
-Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
+Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [GLM-4.7](glm-4-7.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

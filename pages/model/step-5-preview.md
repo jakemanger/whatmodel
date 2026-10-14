@@ -14,13 +14,13 @@ StepFun · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅▄▄●▂▁   #39 of 340*     36%      1
+agent tasks         ▁▁▂▆█▆▅▄▄●▃▁   #41 of 342*     36%      1
 coding              ▁▁▁▃▅▇█▇▅▄●▁   #34 of 524*     32%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #56 of 463*     18%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #43 of 182*     13%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #43 of 182*     12%      1
 </pre>
 
-<details><summary>agent tasks · #39 of 340 · 36% of its score</summary>
+<details><summary>agent tasks · #41 of 342 · 36% of its score</summary>
 
 Beats [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8-Omni-Flash](qwen3-8-omni-flash.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 <details><summary>chat &amp; writing · #56 of 463 · 18% of its score</summary>
 
-Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+Beats [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -53,13 +53,13 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #43 of 182 · 13% of its score</summary>
+<details><summary>vision &amp; documents · #43 of 182 · 12% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1259.7  ▁▁▂▂▂▂▄▅▅▆●█ beats 108/145  avg 1068       13%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1259.7  ▁▁▂▂▂▂▄▅▅▆●█ beats 108/145  avg 1068       12%  blunt
 </pre>
 
 </details>

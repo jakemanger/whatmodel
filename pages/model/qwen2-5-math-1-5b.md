@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 45.8** ±2.0 · #427 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.8** ±2.0 · #429 of 721 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 

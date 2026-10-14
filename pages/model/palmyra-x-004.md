@@ -14,10 +14,10 @@ Writer · released 2024-10 · proprietary
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #258 of 340     94%      3
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #260 of 342     94%      3
 </pre>
 
-<details><summary>agent tasks · #258 of 340 · 94% of its score</summary>
+<details><summary>agent tasks · #260 of 342 · 94% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

@@ -14,10 +14,10 @@ Watt AI · released 2024-12 · 8.03B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁   #180 of 334*     80%      1
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #182 of 336*     80%      1
 </pre>
 
-<details><summary>agent tasks · #180 of 334 · 80% of its score</summary>
+<details><summary>agent tasks · #182 of 336 · 80% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

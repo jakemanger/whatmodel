@@ -6,7 +6,7 @@
 
 Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
-**score 47.0** ±3.0 · #522 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±3.0 · #523 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

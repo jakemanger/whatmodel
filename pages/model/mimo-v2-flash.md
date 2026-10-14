@@ -6,7 +6,7 @@
 
 Xiaomi · released 2025-12 · 309.8B params (15B active) · mit
 
-**score 66.1** ±1.2 · #127 of 719 · from 12 benchmark results across 3 sources
+**score 66.1** ±1.2 · #129 of 721 · from 12 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,21 +14,21 @@ Xiaomi · released 2025-12 · 309.8B params (15B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #101 of 300*     19%      2
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #103 of 302*     19%      2
 coding          ▁▁▁▃▆██●▆▄▃▁   #135 of 458*     31%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #124 of 393*     14%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁     #84 of 398     19%      4
 web search      █●···█····██       #4 of 5*     10%      1
 </pre>
 
-<details><summary>agent tasks · #101 of 300 · 19% of its score</summary>
+<details><summary>agent tasks · #103 of 302 · 19% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>        51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 19%       10%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>   84.1%  ▄······●█·▄▄ beats 1/5    medium · avg 46%    9.5%  typical
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>   84.1%  ▄······●█·▄▄ beats 1/5    medium · avg 46%    9.4%  typical
 </pre>
 
 </details>

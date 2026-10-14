@@ -23,8 +23,8 @@ coding       ▁▁▁▃▆██▇▆●▃▁   #51 of 469*     93%      2
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▂▅▇●▃▃▁ beats 49/60  hard · avg 28%           66%  small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▅▃▃·▃·▅▅▅●▃▃ beats 13/15  hard · avg 30%           26%  blunt · at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▄●▃▇ beats 34/56  very hard · avg 7.2%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▅▃▃·▃·▅▅▅●▃▃ beats 13/15  hard · avg 30%           27%  blunt · at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▄●▄█ beats 34/58  very hard · avg 7.1%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Toolathlon-Verified (lab)</a>      49.7%  ▂·▂▂▅●···▂██ beats 6/18   hard · avg 25%             —  not counted yet: no other model in the …
 </pre>
 
@@ -37,7 +37,7 @@ Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-
 <pre>
 test                          result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▂▅▇●▃▃▁ beats 49/60  hard · avg 28%     66%  small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▅▃▃·▃·▅▅▅●▃▃ beats 13/15  hard · avg 30%     26%  blunt · at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▅▃▃·▃·▅▅▅●▃▃ beats 13/15  hard · avg 30%     27%  blunt · at its level · small run
 </pre>
 
 </details>

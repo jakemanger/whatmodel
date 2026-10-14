@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 3.97B params · nvidia-open-model
 
-**score 54.2** ±0.9 · #283 of 719 · from 26 benchmark results across 2 sources
+**score 54.2** ±0.9 · #285 of 721 · from 26 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2026-03 · 3.97B params · nvidia-open-model
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #242 of 300     21%      7
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #244 of 302     21%      7
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #275 of 458     19%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #160 of 393*    0.2%      2
 math            ▁▂▃▅▆●▄█▄▁▁▁    #187 of 398     38%      4
 web search      ●·█▄██·▄▄·▄▄     #13 of 13*    2.4%      1
 </pre>
 
-<details><summary>agent tasks · #242 of 300 · 21% of its score</summary>
+<details><summary>agent tasks · #244 of 302 · 21% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

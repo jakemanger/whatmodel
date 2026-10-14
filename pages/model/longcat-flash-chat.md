@@ -6,7 +6,7 @@
 
 Meituan · released 2025-08 · 560B params (27B active) · mit
 
-**score 65.4** ±1.0 · #138 of 719 · from 23 benchmark results across 2 sources
+**score 65.4** ±1.0 · #140 of 721 · from 23 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Meituan · released 2025-08 · 560B params (27B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #102 of 300     21%      5
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #105 of 302     21%      5
 coding          ▁▁▁▃▆██●▆▄▃▁    #159 of 458     22%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #107 of 393*     12%      2
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #129 of 398    7.7%      3
 </pre>
 
-<details><summary>agent tasks · #102 of 300 · 21% of its score</summary>
+<details><summary>agent tasks · #105 of 302 · 21% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why

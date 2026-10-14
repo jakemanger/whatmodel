@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.7** ±0.9 · #520 of 719 · from 19 benchmark results across 5 sources
+**score 40.7** ±0.9 · #522 of 721 · from 19 benchmark results across 5 sources
 
 ## What it's good at
 

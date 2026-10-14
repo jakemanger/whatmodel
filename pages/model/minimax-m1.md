@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 62.3** ±1.3 · #171 of 719 · from 13 benchmark results across 2 sources
+**score 62.3** ±1.3 · #173 of 721 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ······●·····       #1 of 1*    8.7%      3
+agent tasks     ······●·····       #1 of 1*    8.8%      3
 coding          ······●·····       #1 of 1*     13%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #143 of 393*     14%      1
 math            ······●·····        #1 of 1     26%      3
 </pre>
 
-<details><summary>agent tasks · #1 of 1 · 8.7% of its score</summary>
+<details><summary>agent tasks · #1 of 1 · 8.8% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/131  hard · avg 24%    8.7%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/131  hard · avg 24%    8.8%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Airline (GPT-4.1 user) (l…</a>   62.0%  █··········● beats 1/1                          —  not counted yet: no other model in the …
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Retail (GPT-4.1 user) (la…</a>   63.5%  ●··········█ beats 0/1                          —  not counted yet: no other model in the …
 </pre>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/131  hard · avg 24%      8.7%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/131  hard · avg 24%      8.8%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   65.0%  ▃···●··▅··▃▃ beats 3/7     medium · avg 42%    4.3%  at its level · small run
 </pre>
 

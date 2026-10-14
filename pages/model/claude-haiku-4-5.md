@@ -6,7 +6,7 @@
 
 Anthropic · released 2025-10 · closed weights
 
-**score 64.1** ±0.8 · #154 of 719 · from 28 benchmark results across 15 sources
+**score 64.1** ±0.8 · #156 of 721 · from 28 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Anthropic · released 2025-10 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁    #124 of 300     32%     10
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁    #126 of 302     32%     10
 coding              ▁▁▁▃▆██▇●▄▃▁    #119 of 458     27%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #94 of 393*    5.6%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁   #106 of 398*     11%      2
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #61 of 147*    1
 web search          ●▁▂▆▄█▃▃▁▁·▁     #79 of 80*    3.2%      1
 </pre>
 
-<details><summary>agent tasks · #124 of 300 · 32% of its score</summary>
+<details><summary>agent tasks · #126 of 302 · 32% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

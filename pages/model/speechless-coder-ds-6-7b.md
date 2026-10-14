@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-12 · apache-2.0
 
-**score 46.7** ±0.8 · #405 of 719 · from 3 benchmark results across 1 source
+**score 46.7** ±0.8 · #407 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

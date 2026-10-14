@@ -14,14 +14,14 @@ Anthropic · released 2024-10 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁    #236 of 340    7.9%      7
+agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁    #238 of 342    7.9%      7
 coding              ▁▁▁▃▅▇█●▅▄▃▁    #156 of 524     26%      8
 chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃    #162 of 463     13%      5
 math                ▁▂▃▅▇●▅█▄▁▁▁    #263 of 462     17%      5
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #109 of 182*    3.2%      2
 </pre>
 
-<details><summary>agent tasks · #236 of 340 · 7.9% of its score</summary>
+<details><summary>agent tasks · #238 of 342 · 7.9% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 

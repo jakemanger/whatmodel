@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 1.24B params · llama3.2
 
-**score 29.8** ±0.6 · #642 of 719 · from 65 benchmark results across 19 sources
+**score 29.8** ±0.6 · #644 of 721 · from 65 benchmark results across 19 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Meta · released 2024-09 · 1.24B params · llama3.2
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #296 of 300    2.3%      3
+agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #298 of 302    2.3%      3
 coding          ▁▁▁▃●██▇▆▄▃▁   #407 of 458    8.7%      6
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #368 of 393     12%      6
 math            ▁●▃▅▆▅▄█▄▁▁▁   #377 of 398     25%      6
 </pre>
 
-<details><summary>agent tasks · #296 of 300 · 2.3% of its score</summary>
+<details><summary>agent tasks · #298 of 302 · 2.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

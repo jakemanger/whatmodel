@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-08 · 11.17B params · apache-2.0
 
-**score 49.8** ±2.2 · #344 of 719 · from 6 benchmark results across 5 sources
+**score 49.8** ±2.2 · #346 of 721 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ SpeakLeash · released 2024-08 · 11.17B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #280 of 300*     29%      2
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #282 of 302*     29%      2
 </pre>
 
-<details><summary>agent tasks · #280 of 300 · 29% of its score</summary>
+<details><summary>agent tasks · #282 of 302 · 29% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 HKUST NLP · released 2023-12 · 7.24B params · apache-2.0
 
-**score 40.0** ±1.9 · #531 of 719 · from 3 benchmark results across 2 sources
+**score 40.0** ±1.9 · #533 of 721 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

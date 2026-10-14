@@ -14,11 +14,11 @@ OpenAI · released 2026-01 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▆▅▄●▃▂▁    #63 of 340     52%      4
+agent tasks  ▁▁▂▆█▆▅▄●▃▃▁    #65 of 342     52%      4
 coding       ▁▁▁▃▅▇█▇●▄▃▁   #128 of 524     66%      3
 </pre>
 
-<details><summary>agent tasks · #63 of 340 · 52% of its score</summary>
+<details><summary>agent tasks · #65 of 342 · 52% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>             64.0%  ██···█●··███ beats 3/6    very hard · avg 14%      21%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               38.2%  ●▄·····▄·▄▄▄ beats 0/6    hard · avg 17%           12%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14  very hard · avg 2.3%     12%  sharp · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 28%          7.4%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 28%          7.5%  blunt · at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Tra
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.9  ▁▂▄▃●█▄▇▆▄▁▁ beats 25/119  avg 983                  47%  sharp
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.3%     12%  sharp · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 28%          7.4%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 28%          7.5%  blunt · at its level
 </pre>
 
 </details>

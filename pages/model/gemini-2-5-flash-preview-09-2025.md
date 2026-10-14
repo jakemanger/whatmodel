@@ -14,13 +14,13 @@ Google · released 2025-09 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▂▁    #179 of 340     26%      3
+agent tasks         ▁▁▂▆█●▅▄▄▃▃▁    #181 of 342     26%      3
 coding              ▁▁▁▃▅▇█●▅▄▃▁   #195 of 524*     51%      2
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #122 of 463*     15%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇●█▃    #70 of 182*     11%      1
 </pre>
 
-<details><summary>agent tasks · #179 of 340 · 26% of its score</summary>
+<details><summary>agent tasks · #181 of 342 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

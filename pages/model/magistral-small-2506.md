@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.2** ±1.2 · #257 of 719 · from 8 benchmark results across 4 sources
+**score 55.2** ±1.2 · #259 of 721 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2025-06 · 23.57B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #276 of 300*    2.3%      1
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #278 of 302*    2.3%      1
 coding       ●█········██       #4 of 4*    6.6%      1
 math         ▁▂▃▅▆●▄█▄▁▁▁    #198 of 398     45%      3
 </pre>
 
-<details><summary>agent tasks · #276 of 300 · 2.3% of its score</summary>
+<details><summary>agent tasks · #278 of 302 · 2.3% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

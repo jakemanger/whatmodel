@@ -14,10 +14,10 @@ MadeAgents · released 2024-12 · 3.09B params · other (qwen-research)
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #234 of 334*     93%      2
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #237 of 336*     93%      2
 </pre>
 
-<details><summary>agent tasks · #234 of 334 · 93% of its score</summary>
+<details><summary>agent tasks · #237 of 336 · 93% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

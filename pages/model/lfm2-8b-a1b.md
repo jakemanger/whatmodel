@@ -14,12 +14,12 @@ Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁    #328 of 340    3.8%      4
+agent tasks     ▁▁●▆█▆▅▄▄▃▃▁    #330 of 342    3.8%      4
 chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #284 of 463*    4.8%      2
 math            ▁▂▃▅●▅▅█▄▁▁▁    #277 of 462     31%      7
 </pre>
 
-<details><summary>agent tasks · #328 of 340 · 3.8% of its score</summary>
+<details><summary>agent tasks · #330 of 342 · 3.8% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 72.71B params · tongyi-qianwen
 
-**score 50.5** ±0.5 · #333 of 719 · from 29 benchmark results across 20 sources
+**score 50.5** ±0.5 · #335 of 721 · from 29 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -73,7 +73,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>                  38.2%  ▃▂·▆▆██●▅▃▃▃ beats 21/33    medium · avg 41%       3.1%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 41/208   hard · avg 40%         3.0%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>                  53.9%  ▂▁▁▄▂▅▇█▆▂●▂ beats 54/58    medium · avg 51%       3.0%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.4977 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 33/52    avg 45.277 WB-Score    2.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.4977 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 33/52    avg 45.276 WB-Score    2.7%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             73.1%  ▁▂▂▂▃█▃●▅▄▂▃ beats 63/95    easy · avg 66%         1.6%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                72.1%  ▁··▁▁▂▂▆▅▆█● beats 59/70    medium · avg 64%       1.3%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             65.1%  ▂▄▂▃█▄▃▆●▅▂▂ beats 64/81    medium · avg 58%       1.0%  blunt · at its level

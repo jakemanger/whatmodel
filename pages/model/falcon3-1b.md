@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 1.67B params · falcon-llm
 
-**score 23.9** ±4.2 · #678 of 719 · from 7 benchmark results across 3 sources
+**score 23.9** ±4.2 · #680 of 721 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ TII · released 2024-12 · 1.67B params · falcon-llm
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #299 of 300*     51%      2
+agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #301 of 302*     51%      2
 coding       ▁▁▁●▆██▇▆▄▃▁    #436 of 458     23%      4
 </pre>
 
-<details><summary>agent tasks · #299 of 300 · 51% of its score</summary>
+<details><summary>agent tasks · #301 of 302 · 51% of its score</summary>
 
 Beats [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 

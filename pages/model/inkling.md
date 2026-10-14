@@ -6,7 +6,7 @@
 
 Thinking Machines · released 2026-07 · 975B params (41B active) · apache-2.0
 
-**score 69.6** ±0.7 · #87 of 719 · from 30 benchmark results across 5 sources
+**score 69.6** ±0.7 · #89 of 721 · from 30 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Thinking Machines · released 2026-07 · 975B params (41B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #79 of 300     23%     10
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #81 of 302     23%     10
 coding              ▁▁▁▃▆██▇●▄▃▁    #80 of 458     13%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #63 of 393*    4.5%      1
 math                ▁▂▃▅▆▅▄●▄▁▁▁    #89 of 398     37%      5
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #65 of 147*    3.
 web search          ●··········█      #2 of 2*    2.5%      2
 </pre>
 
-<details><summary>agent tasks · #79 of 300 · 23% of its score</summary>
+<details><summary>agent tasks · #81 of 302 · 23% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [MiniMax-M2.7](minimax-m2-7.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                     result  vs the others in its run    dif
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1086 IPS  ▁▁●▄▂▃▇█▂▂▁▃ beats 2/49     avg -0.310 IPS          9.1%  sharp
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>                  77.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 114/131  hard · avg 26%          2.8%  sharp · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/inkling_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        25.0%  ▃▃▂▃·●▃▂█▅▅▂ beats 8/25     very hard · avg 4.2%    2.7%  typical
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>                  63.8%  ▁·▁·▁▁▄▃▄●▃▇ beats 26/56    hard · avg 17%          2.5%  at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>                  63.8%  ▁·▁·▁▁▄▃▄●▄█ beats 26/58    hard · avg 17%          2.6%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MCP-Atlas (public set) (lab)</a>              78.8%  ▂·▁▂▁·▁▃█▆●▂ beats 34/37    medium · avg 36%        1.6%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam with tools (…</a>        46.0%  ▂▂▂▁▄▂▃●█▇▂▆ beats 21/54    hard · avg 16%          1.3%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">BrowseComp with context managemen…</a>        77.1%  ▅·▅▃·●▃·█▅·▃ beats 6/14     medium · avg 44%        1.2%  small run
@@ -44,7 +44,7 @@ test                                     result  vs the others in its run    dif
 
 <details><summary>coding · #80 of 458 · 13% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty      counts  why

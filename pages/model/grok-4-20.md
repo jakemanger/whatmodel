@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 71.4** ±0.8 · #69 of 719 · from 15 benchmark results across 6 sources
+**score 71.4** ±0.8 · #71 of 721 · from 15 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ SpaceXAI (xAI) · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #106 of 300*    3.8%      1
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #106 of 302*    3.8%      1
 coding              ▁▁▁▃▆██▇●▄▃▁    #99 of 458*     10%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #32 of 393*    5.8%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁     #53 of 398     45%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #41 of 147*    6.0%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #41 of 147*    5.9%      2
 </pre>
 
-<details><summary>agent tasks · #106 of 300 · 3.8% of its score</summary>
+<details><summary>agent tasks · #106 of 302 · 3.8% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -67,7 +67,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #41 of 147 · 6.0% of its score</summary>
+<details><summary>vision &amp; documents · #41 of 147 · 5.9% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ test                               result  vs the others in its run    difficult
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         89.3%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 167/208  hard · avg 40%          6.3%  sharp
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4.20-beta-0309b-reasoning">ARC-AGI-2 public evaluation set (…</a>   63.6%  █··▂▅▁▃▁▃·●▃ beats 21/24    very hard · avg 0.3%    5.8%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4.20-beta-0309b-reasoning">ARC-AGI-2 public evaluation set (…</a>   63.6%  █··▂▅▁▃▁▃·●▃ beats 21/24    very hard · avg 0.3%    5.7%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4.20-beta-0309b-reasoning">ARC-AGI-1 public evaluation set (…</a>   95.5%  ▁·▇▃▁·█▇▁·●▃ beats 23/27    very hard · avg 4.2%    3.8%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                24.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 92/135   very hard · avg 5.9%    3.7%  sharp · noisy
 <a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1057.0  █··▄●··▄·▄·▄ beats 3/7      avg 816                 3.4%  typical

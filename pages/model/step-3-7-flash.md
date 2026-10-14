@@ -6,7 +6,7 @@
 
 StepFun · released 2026-05 · 198B params (11B active) · apache-2.0
 
-**score 66.9** ±1.0 · #114 of 719 · from 13 benchmark results across 2 sources
+**score 66.9** ±1.0 · #116 of 721 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ math         ▁▂▃▅▆▅▄●▄▁▁▁      #102 of 398     93%     1
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Terminal-Bench 2.1 (lab)</a>             59.5%  ▁·▁·▁▁▄▃●█▃▇ beats 23/56  very hard · avg 7.2%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Terminal-Bench 2.1 (lab)</a>             59.5%  ▁·▁·▁▁▄▃●█▄█ beats 23/58  very hard · avg 7.1%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">SWE-bench Pro (split unspecified)…</a>   56.3%  ▃·▁▁▁▂▂▃●▇▃▁ beats 33/55  very hard · avg 4.3%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Toolathlon (Tool Decathlon) (lab)</a>    49.5%  ▂▂▄▂▄▄▆▂●▆██ beats 16/27                             —  not counted yet: no other model in the …
 </pre>
@@ -55,7 +55,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 2026 (5…</a>    8.5%  ●█·▄▄▄····▄▄ beats 0/8    very hard · avg 1.6%    3.1%  sharp
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet">MathArena ArXivLean June 2026 (46…</a>    0.0%  ●····▄▄███·▄ beats 0/9    very hard · avg 0.7%    2.7%  sharp · too hard for it
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   10.7%  █·●█▂·▂▂···▂ beats 4/14   very hard · avg 0.8%    2.4%  sharp · noisy
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   12.1%  ▃▂▂▃●▃▂·▃··▂ beats 9/16   very hard · avg 0.7%    2.3%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   12.1%  ▃▂▂▃●▃▂·▃··▂ beats 9/16   very hard · avg 0.8%    2.2%  sharp · too hard for it · noisy
 </pre>
 
 </details>

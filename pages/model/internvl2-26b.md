@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
-**score 46.7** ±1.5 · #403 of 719 · from 17 benchmark results across 5 sources
+**score 46.7** ±1.5 · #405 of 721 · from 17 benchmark results across 5 sources
 
 ## What it's good at
 

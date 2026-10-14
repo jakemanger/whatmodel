@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 73.0** ±2.3 · #56 of 719 · from 3 benchmark results across 1 source
+**score 73.0** ±2.3 · #58 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

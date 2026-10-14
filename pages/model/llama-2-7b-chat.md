@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 29.7** ±0.9 · #644 of 719 · from 25 benchmark results across 17 sources
+**score 29.7** ±0.9 · #646 of 721 · from 25 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -64,7 +64,7 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                         result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                          11.6%  ▁▁▁●▂▃▂█▆▃▅▃ beats 6/61    medium · avg 41%         12%  typical
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2002%3A41%3A41.097397.json">Natural Questions (closed book)</a>               23.7%  ▁·▁·▁▂▁▂·▅●█ beats 18/28   medium · avg 58%        8.6%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  8.2621 WB-Score  ▁·▁●·▃█▄▇▆▅▆ beats 2/52    avg 45.277 WB-Score     8.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  8.2621 WB-Score  ▁·▁●·▃█▄▇▆▅▆ beats 2/52    avg 45.276 WB-Score     8.3%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                25.6%  ●·····▂█▂▅·▁ beats 0/25    easy · avg 77%          6.8%  sharp
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>            31.7%  ●▄▂▃█▄▃▆▃▅▂▂ beats 2/81    medium · avg 58%        2.9%  blunt · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                          46.8%  ▁▁▃▃●█▄▁█··▁ beats 7/25    easy · avg 74%          2.9%  typical

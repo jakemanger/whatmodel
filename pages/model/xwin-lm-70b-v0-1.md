@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 43.9** ±1.2 · #463 of 719 · from 7 benchmark results across 2 sources
+**score 43.9** ±1.2 · #465 of 721 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 

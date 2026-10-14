@@ -14,10 +14,10 @@ TeleAI (ZJared) · released 2025-01 · 7.62B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #245 of 334*     82%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #247 of 336*     82%      1
 </pre>
 
-<details><summary>agent tasks · #245 of 334 · 82% of its score</summary>
+<details><summary>agent tasks · #247 of 336 · 82% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

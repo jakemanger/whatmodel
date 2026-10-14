@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-09 · closed weights
 
-**score 74.5** ±0.8 · #44 of 719 · from 12 benchmark results across 3 sources
+**score 74.5** ±0.8 · #46 of 721 · from 12 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ SpaceXAI (xAI) · released 2026-09 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #20 of 300*     12%      2
-coding          ▁▁▁▃▆██▇▆▄●▁   #15 of 458*    9.5%      1
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #21 of 302*     12%      2
+coding          ▁▁▁▃▆██▇▆▄●▁   #15 of 458*    9.4%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #60 of 393*    5.3%      1
 math            ▁▂▃▅▆▅▄█●▁▁▁    #49 of 398     47%      3
 </pre>
 
-<details><summary>agent tasks · #20 of 300 · 12% of its score</summary>
+<details><summary>agent tasks · #21 of 302 · 12% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A49B)](hy4-preview.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
@@ -32,13 +32,13 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #15 of 458 · 9.5% of its score</summary>
+<details><summary>coding · #15 of 458 · 9.4% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1637.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 106/119  avg 983       9.5%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1637.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 106/119  avg 983       9.4%  sharp
 </pre>
 
 </details>
@@ -72,9 +72,9 @@ test                       result  vs the others in its run    difficulty       
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     20.8%  ●▆▆▆▆▂▅▂▂▂·▅ beats 1/30     very hard · avg 1.3%    8.6%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   29.0%  █··▂▃▇▄●▂▃▁▁ beats 46/74    very hard · avg 9.4%    6.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   29.0%  █··▂▃▇▄●▂▃▁▁ beats 46/74    very hard · avg 9.4%    6.5%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          38.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 114/135  very hard · avg 5.9%    4.3%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   92.7%  ▁▁▁▁▂▄▆▄▅▇█● beats 191/208  hard · avg 40%          4.3%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   92.7%  ▁▁▁▁▂▄▆▄▅▇█● beats 191/208  hard · avg 40%          4.2%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              56.0%  ▁▁▃▂▃▃▆▆█●▂▅ beats 61/78    very hard · avg 8.1%    2.1%  at its level
 </pre>
 

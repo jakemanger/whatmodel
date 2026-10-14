@@ -6,7 +6,7 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 71.4** ±1.3 · #70 of 719 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.4** ±1.3 · #72 of 721 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-lice
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #63 of 300     30%      5
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #67 of 302     30%      5
 coding       ▁▁▁▃▆██▇▆●▃▁   #62 of 458*    8.1%      2
 math         ▁▂▃▅▆▅▄█●▁▁▁   #59 of 398*     11%      2
 </pre>
 
-<details><summary>agent tasks · #63 of 300 · 30% of its score</summary>
+<details><summary>agent tasks · #67 of 302 · 30% of its score</summary>
 
-Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why

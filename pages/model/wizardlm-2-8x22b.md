@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 49.4** ±1.3 · #352 of 719 · from 7 benchmark results across 6 sources
+**score 49.4** ±1.3 · #354 of 721 · from 7 benchmark results across 6 sources
 
 ## What it's good at
 

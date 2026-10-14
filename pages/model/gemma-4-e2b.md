@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
-**score 46.7** ±0.6 · #402 of 719 · from 78 benchmark results across 12 sources
+**score 46.7** ±0.6 · #404 of 721 · from 78 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #273 of 300     15%     15
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #275 of 302     15%     15
 coding              ▁▁▁▃▆●█▇▆▄▃▁   #349 of 458     10%      8
 chat &amp; writing      ▁▁▁●▅▄▅█▆▆▇▃   #367 of 393    1.8%      2
 math                ▁▂▃▅●▅▄█▄▁▁▁   #277 of 398     25%      6
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #132 of 147     1
 web search          ●·█▄██·▄▄·▄▄    #12 of 13*    1.0%      2
 </pre>
 
-<details><summary>agent tasks · #273 of 300 · 15% of its score</summary>
+<details><summary>agent tasks · #275 of 302 · 15% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

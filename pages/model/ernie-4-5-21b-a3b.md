@@ -14,13 +14,13 @@ Baidu · released 2025-06 · 21B params (3B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #311 of 340*    3.1%      1
+agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #313 of 342*    3.1%      1
 coding          ●··········█        #2 of 2     15%      3
 chat &amp; writing  ●··········█       #2 of 2*    2.8%      1
 math            ●··········█        #2 of 2     30%      4
 </pre>
 
-<details><summary>agent tasks · #311 of 340 · 3.1% of its score</summary>
+<details><summary>agent tasks · #313 of 342 · 3.1% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

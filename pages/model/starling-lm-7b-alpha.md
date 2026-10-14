@@ -6,7 +6,7 @@
 
 UC Berkeley (NEST) · released 2023-11 · 7.24B params · apache-2.0
 
-**score 38.9** ±1.1 · #545 of 719 · from 11 benchmark results across 8 sources
+**score 38.9** ±1.1 · #547 of 721 · from 11 benchmark results across 8 sources
 
 ## What it's good at
 

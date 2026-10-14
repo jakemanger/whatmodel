@@ -14,14 +14,14 @@ Anthropic · released 2024-02 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #256 of 340*    0.4%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁   #258 of 342*    0.4%      1
 coding              ▁▁▁▃▅▇●▇▅▄▃▁    #275 of 524     36%      7
 chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃    #248 of 463     15%      4
 math                ▁▂▃▅●▅▅█▄▁▁▁    #321 of 462    9.0%      4
 vision &amp; documents  ▁▁▃●▂▃▅▄▇▇█▃    #153 of 182    8.2%      9
 </pre>
 
-<details><summary>agent tasks · #256 of 340 · 0.4% of its score</summary>
+<details><summary>agent tasks · #258 of 342 · 0.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -107,7 +107,7 @@ test                                          result  vs the others in its run  
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   47.2%  ▁▁▁▁▂▄●▄▅▇█▅ beats 56/208  hard · avg 40%          2.4%  sharp · at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        45.2%  ▃▂·▆▆██▆▅▃●▃ beats 30/33   medium · avg 41%        2.2%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        56.8%  ▂▁▁▄▂▅▇█▆▂▂● beats 56/58   medium · avg 51%        2.0%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  51.7140 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 41/52   avg 45.277 WB-Score     1.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  51.7140 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 41/52   avg 45.276 WB-Score     1.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                              12.6%  ▁▁●▂▃▃▆▆█▃▂▅ beats 5/78    very hard · avg 8.1%    0.2%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                           5.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 16/135  very hard · avg 5.9%    0.1%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             89.9%  ▁▁▂●▄▄█▆▃▂▂▁ beats 25/140  very easy · avg 94%     0.1%  blunt · maxed out · noisy

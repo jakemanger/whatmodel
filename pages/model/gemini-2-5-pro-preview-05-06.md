@@ -14,13 +14,13 @@ Google · released 2025-05 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #238 of 340*    2.1%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁   #239 of 342*    2.1%      1
 coding              ▁▁▁▃▅▇█▇●▄▃▁    #104 of 524     41%      3
 math                ▁▂▃▅▇▅▅●▄▁▁▁   #109 of 462*    7.3%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #84 of 182*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #238 of 340 · 2.1% of its score</summary>
+<details><summary>agent tasks · #239 of 342 · 2.1% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 

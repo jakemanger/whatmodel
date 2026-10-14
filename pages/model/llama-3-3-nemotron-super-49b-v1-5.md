@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.4** ±1.4 · #226 of 719 · from 4 benchmark results across 2 sources
+**score 57.4** ±1.4 · #228 of 721 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 

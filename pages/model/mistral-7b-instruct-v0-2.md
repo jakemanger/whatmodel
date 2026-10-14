@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 7.24B params · apache-2.0
 
-**score 35.9** ±0.5 · #592 of 719 · from 24 benchmark results across 15 sources
+**score 35.9** ±0.5 · #594 of 721 · from 24 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -56,7 +56,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              14.7%  ●▂▃▄▄█▁▄▅▃▁▃ beats 1/42     medium · avg 55%       5.9%  at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.2/results_2024-02-12%2015%3A18%3A27.775649.json">Natural Questions (closed book)</a>                24.7%  ▁·▁·▁▂▁▂·▅▂● beats 19/28    medium · avg 58%       3.9%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.2_5shots.zip">MMLU-Pro</a>                                       28.8%  ▃●▅█▃·█▃▅··▂ beats 2/23     medium · avg 57%       3.1%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.6337 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 8/52     avg 45.277 WB-Score    2.8%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.6337 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 8/52     avg 45.276 WB-Score    2.8%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                53.3%  ▁··▁▁▂▂▆●▆█▆ beats 27/70    medium · avg 64%       1.3%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             39.4%  ▂▄●▃█▄▃▆▃▅▂▂ beats 13/81    medium · avg 58%       1.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>              0.5%  ●▁·▁▂▂▄█▄▅▄▄ beats 0/66     hard · avg 31%         0.5%  typical

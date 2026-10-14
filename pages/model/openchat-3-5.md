@@ -6,7 +6,7 @@
 
 OpenChat · released 2023-10 · 7B params · apache-2.0
 
-**score 41.3** ±1.5 · #510 of 719 · from 7 benchmark results across 4 sources
+**score 41.3** ±1.5 · #512 of 721 · from 7 benchmark results across 4 sources
 
 ## What it's good at
 

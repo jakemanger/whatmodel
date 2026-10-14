@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 42.1** ±1.7 · #498 of 719 · from 7 benchmark results across 4 sources
+**score 42.1** ±1.7 · #500 of 721 · from 7 benchmark results across 4 sources
 
 ## What it's good at
 

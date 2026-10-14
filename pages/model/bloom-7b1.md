@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 21.1** ±0.9 · #684 of 719 · from 19 benchmark results across 6 sources
+**score 21.1** ±0.9 · #686 of 721 · from 19 benchmark results across 6 sources
 
 ## What it's good at
 

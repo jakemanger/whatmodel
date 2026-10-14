@@ -6,7 +6,7 @@
 
 Google · released 2026-08 · closed weights
 
-**score 76.2** ±0.6 · #32 of 719 · from 31 benchmark results across 9 sources
+**score 76.2** ±0.6 · #34 of 721 · from 31 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,24 +14,24 @@ Google · released 2026-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #41 of 300     18%      8
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #43 of 302     18%      8
 coding              ▁▁▁▃▆██▇▆▄●▁    #27 of 458     10%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #13 of 393*    3.0%      1
 math                ▁▂▃▅▆▅▄█▄●▁▁    #24 of 398     48%      8
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #5 of 147*    4.9%      2
 </pre>
 
-<details><summary>agent tasks · #41 of 300 · 18% of its score</summary>
+<details><summary>agent tasks · #43 of 302 · 18% of its score</summary>
 
 Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0149 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 15/49  avg -0.310 IPS          6.0%  sharp
-<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  81.6%  ▁·▁·▁▁▄▃▄█▃● beats 49/56  hard · avg 23%          3.6%  small run · several runs
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-gemini-gemini-3-7-flash-high-mini-swe-agent.json">Terminal-Bench 4.0</a>                        11.2%  ●▅▅▅▅·▅▃▃▅▅▅ beats 0/20   very hard · avg 0.4%    3.3%  sharp
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  81.6%  ▁·▁·▁▁▄▃▄█▄● beats 50/58  hard · avg 23%          3.6%  small run · several runs
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-gemini-gemini-3-7-flash-high-mini-swe-agent.json">Terminal-Bench 4.0</a>                        11.2%  ●▅▅▅▅·▅▃▃▅▅▅ beats 0/20   very hard · avg 0.4%    3.2%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecified)…</a>        60.4%  ▃·▁▁▁▂▂▃█●▃▁ beats 41/55  very hard · avg 6.5%    2.0%  sharp · at its level · small run
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>             65.3%  ▂····▁▁▁▆●█▆ beats 11/28  hard · avg 23%          1.0%  at its level · small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>             65.3%  ▂····▁▁▁▆●█▇ beats 11/29  hard · avg 23%          1.0%  at its level · small run
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>        10.8%  ▁▁·▁▁▁▁▅●█▅█ beats 11/27  very hard · avg 2.4%    0.9%  typical
 <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (lab)</a>                  14.9%  █·█··█●····█ beats 3/4    very hard · avg 1.7%    0.7%  small run
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">τ³-bench Banking (lab)</a>                    30.9%  ▂▂·▅█▂▂▃▂▅▂● beats 19/20  very hard · avg 7.0%    0.5%  blunt · small run
@@ -48,14 +48,14 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1591.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 95/119  avg 983                 5.3%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecified)…</a>   60.4%  ▃·▁▁▁▂▂▃█●▃▁ beats 41/55   very hard · avg 6.5%    2.0%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   79.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 32/49   hard · avg 18%          1.9%  typical
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>        65.3%  ▂····▁▁▁▆●█▆ beats 11/28   hard · avg 23%          1.0%  at its level · small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>        65.3%  ▂····▁▁▁▆●█▇ beats 11/29   hard · avg 23%          1.0%  at its level · small run
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #13 of 393 · 3.0% of its score</summary>
 
-Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
+Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md), [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -73,7 +73,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               36.6%  ▁▂▁▂█●▂▂▁▁▁▁ beats 41/63    very hard · avg 0.1%     13%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            71.6%  ▂··▁▁▃▄▄█●▃▃ beats 60/82    very hard · avg 1.2%     13%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   62.5%  ▂···▄·█●▆▆▄▂ beats 7/19     very hard · avg 4.7%    7.5%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   57.5%  ▁·····▅█●▄·▁ beats 11/20    very hard · avg 7.3%    6.6%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   57.5%  ▁·····▅█●▄·▁ beats 11/20    very hard · avg 7.3%    6.5%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   19.3%  ▂▂▆●▃▃▂▂▂··▂ beats 6/18     very hard · avg 0.7%    2.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   47.5%  ▁··▁●█▄▁·▃·▁ beats 4/17     very hard · avg 11%     2.3%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet">MathArena ArXivLean June 2026 (46…</a>   21.7%  ▄····▄▄█●█·▄ beats 5/9      very hard · avg 0.7%    2.0%  sharp
@@ -99,7 +99,7 @@ test                                result  vs the others in its run    difficul
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           26.7%  █●▆▆▆▂▅▂▂▂·▅ beats 6/30     very hard · avg 1.3%    5.2%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%  █··▂▃▇▄●▂▃▁▁ beats 59/74    very hard · avg 9.4%    4.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%  █··▂▃▇▄●▂▃▁▁ beats 59/74    very hard · avg 9.4%    4.3%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                47.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 124/135  very hard · avg 5.9%    2.7%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.8%  ▁▁▁▁▂▄▆▄▅▇█● beats 204/208  hard · avg 40%          2.0%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    69.2%  ▁▁▃▂▃▃▆▆█▃▂● beats 70/78    very hard · avg 8.1%    1.2%  at its level

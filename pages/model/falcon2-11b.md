@@ -6,7 +6,7 @@
 
 TII · released 2024-05 · 11.1B params · falcon-llm
 
-**score 41.7** ±3.3 · #504 of 719 · from 3 benchmark results across 3 sources
+**score 41.7** ±3.3 · #506 of 721 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 

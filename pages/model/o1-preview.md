@@ -56,7 +56,7 @@ Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mim
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1388.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 231/379  avg 1268            3.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1388.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 231/379  avg 1268            3.5%  blunt
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   90.4%  ▂▁▁▅█▅▄▃▃▅▃● beats 59/60    medium · avg 52%    3.3%  sharp
 </pre>
 

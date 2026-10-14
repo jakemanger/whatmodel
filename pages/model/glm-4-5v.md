@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-08 · 106B params (12B active) · mit
 
-**score 61.1** ±1.6 · #184 of 719 · from 12 benchmark results across 4 sources
+**score 61.1** ±1.6 · #186 of 721 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 

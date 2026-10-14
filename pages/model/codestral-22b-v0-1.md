@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 49.7** ±0.8 · #348 of 719 · from 7 benchmark results across 4 sources
+**score 49.7** ±0.8 · #350 of 721 · from 7 benchmark results across 4 sources
 
 ## What it's good at
 

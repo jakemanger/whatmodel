@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 48.7** ±2.1 · #367 of 719 · from 8 benchmark results across 4 sources
+**score 48.7** ±2.1 · #369 of 721 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Amazon · released 2024-12 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #230 of 300     31%      4
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #232 of 302     31%      4
 chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #264 of 393*     39%      1
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #129 of 147*     27%      1
 </pre>
 
-<details><summary>agent tasks · #230 of 300 · 31% of its score</summary>
+<details><summary>agent tasks · #232 of 302 · 31% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 

@@ -14,10 +14,10 @@ MadeAgents · released 2024-12 · 0.49B params · cc-by-nc-4.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #302 of 334*     92%      2
+agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #303 of 336*     92%      2
 </pre>
 
-<details><summary>agent tasks · #302 of 334 · 92% of its score</summary>
+<details><summary>agent tasks · #303 of 336 · 92% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

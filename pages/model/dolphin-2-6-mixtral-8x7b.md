@@ -6,7 +6,7 @@
 
 Cognitive Computations · released 2023-12 · apache-2.0
 
-**score 43.9** ±0.8 · #465 of 719 · from 3 benchmark results across 1 source
+**score 43.9** ±0.8 · #467 of 721 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

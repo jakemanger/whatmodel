@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
-**score 65.6** ±1.2 · #135 of 719 · from 12 benchmark results across 5 sources
+**score 65.6** ±1.2 · #137 of 721 · from 12 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #96 of 300     43%      4
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #98 of 302     43%      4
 coding          ▁▁▁▃▆██▇●▄▃▁    #96 of 458*     24%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #125 of 393*     13%      1
 math            ▁▂▃▅▆●▄█▄▁▁▁    #201 of 398     10%      3
-web search      ●█···█····██       #5 of 5*    9.4%      1
+web search      ●█···█····██       #5 of 5*    9.3%      1
 </pre>
 
-<details><summary>agent tasks · #96 of 300 · 43% of its score</summary>
+<details><summary>agent tasks · #98 of 302 · 43% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   60.6%  ▆··▆▄▂▄▂▆●█▄ beats 16/23  very hard · avg 14%     13%  sharp · at its level
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 36%        12%  sharp · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   86.6%  ▄······▄█·●▄ beats 4/5    medium · avg 46%       9.5%  typical
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 19%         9.4%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 19%         9.3%  at its level
 </pre>
 
 </details>
@@ -70,11 +70,11 @@ test                result  vs the others in its run  difficulty        counts  
 
 </details>
 
-<details><summary>web search · #5 of 5 · 9.4% of its score</summary>
+<details><summary>web search · #5 of 5 · 9.3% of its score</summary>
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 19%    9.4%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 19%    9.3%  at its level
 </pre>
 
 </details>

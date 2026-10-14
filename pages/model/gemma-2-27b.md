@@ -6,7 +6,7 @@
 
 Google · released 2024-06 · 27.23B params · gemma
 
-**score 49.7** ±0.6 · #346 of 719 · from 34 benchmark results across 16 sources
+**score 49.7** ±0.6 · #348 of 721 · from 34 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -77,7 +77,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                                 72.7%  ▁▄·▁▁·▅●·▄▄▁ beats 15/22    easy · avg 75%         3.9%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                           70.7%  ▁▂·▁·▁▁●·▃▃▅ beats 11/22    easy · avg 77%         3.7%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   36.5%  ▁▁▁▁▂●▆▄▅▇█▅ beats 31/208   hard · avg 40%         3.4%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.5402 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 39/52    avg 45.277 WB-Score    3.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.5402 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 39/52    avg 45.276 WB-Score    3.3%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/google--gemma-2-27b-it_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             80.2%  ▂·▂▂▂▆▅▆●▆▃█ beats 18/29    easy · avg 76%         1.8%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>             38.2%  ▁▁▁▁▁▂▂▃▄●█▃ beats 61/97    hard · avg 32%         1.4%  blunt · at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             60.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 54/81    medium · avg 58%       1.2%  blunt · at its level

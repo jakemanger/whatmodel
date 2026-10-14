@@ -6,7 +6,7 @@
 
 TII · released 2025-05 · 7.59B params · other (falcon-llm-license)
 
-**score 46.3** ±3.1 · #414 of 719 · from 3 benchmark results across 2 sources
+**score 46.3** ±3.1 · #416 of 721 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 72B params · qwen
 
-**score 55.1** ±0.5 · #259 of 719 · from 62 benchmark results across 30 sources
+**score 55.1** ±0.5 · #261 of 721 · from 62 benchmark results across 30 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2024-09 · 72B params · qwen
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #197 of 300    5.7%      6
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #199 of 302    5.7%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #216 of 458     29%     16
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #212 of 393     15%      9
 math            ▁▂▃▅▆●▄█▄▁▁▁   #221 of 398     12%      6
 </pre>
 
-<details><summary>agent tasks · #197 of 300 · 5.7% of its score</summary>
+<details><summary>agent tasks · #199 of 302 · 5.7% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

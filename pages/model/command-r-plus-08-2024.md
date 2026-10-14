@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.2** ±0.9 · #393 of 719 · from 17 benchmark results across 7 sources
+**score 47.2** ±0.9 · #395 of 721 · from 17 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #265 of 300*    6.0%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #267 of 302*    6.0%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #327 of 458     37%      6
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #249 of 393*    8.1%      1
 </pre>
 
-<details><summary>agent tasks · #265 of 300 · 6.0% of its score</summary>
+<details><summary>agent tasks · #267 of 302 · 6.0% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

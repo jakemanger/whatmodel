@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 57.4** ±1.0 · #228 of 719 · from 20 benchmark results across 6 sources
+**score 57.4** ±1.0 · #230 of 721 · from 20 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2025-12 · 13.9B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #237 of 300*    3.0%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #239 of 302*    3.0%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #224 of 458     11%      2
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #302 of 393*    0.7%      1
 math            █·····█····●        #1 of 3     28%      2
 </pre>
 
-<details><summary>agent tasks · #237 of 300 · 3.0% of its score</summary>
+<details><summary>agent tasks · #239 of 302 · 3.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

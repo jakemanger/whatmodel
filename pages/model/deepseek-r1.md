@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 685B params (37B active) · mit
 
-**score 63.1** ±0.5 · #164 of 719 · from 64 benchmark results across 21 sources
+**score 63.1** ±0.5 · #166 of 721 · from 64 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ DeepSeek · released 2025-01 · 685B params (37B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #218 of 300    4.1%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #221 of 302    4.1%      3
 coding          ▁▁▁▃▆██●▆▄▃▁   #137 of 458     26%     10
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #112 of 393     12%      6
 math            ▁▂▃▅▆▅●█▄▁▁▁   #150 of 398     16%      7
 </pre>
 
-<details><summary>agent tasks · #218 of 300 · 4.1% of its score</summary>
+<details><summary>agent tasks · #221 of 302 · 4.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](st
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   58.0%  ▂·▃▅▅·▃█●▂▂▂ beats 16/22    very hard · avg 13%    3.8%  sharp · at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   92.3%  ▂▁▁▅█▅▃▃▃▅▃● beats 62/62    medium · avg 54%       2.7%  sharp · maxed out · small run
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1398.1  ▁▁▁▂▃▃▃▆▆●█▃ beats 242/379  avg 1268               2.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1398.1  ▁▁▁▂▃▃▃▆▆●█▃ beats 242/379  avg 1268               2.4%  blunt
 <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>           83.4%  ▄▄··▄·●··█·▄ beats 3/6      easy · avg 74%         1.3%  several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AlpacaEval 2 length-controlled (l…</a>   87.6%  ▁▁▃▄▆██▆▃▃▁● beats 155/155  medium · avg 50%       1.1%  small run
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   77.0%  ▆▂▂▆▂▂▃█▂●·▂ beats 21/22    hard · avg 20%         0.7%  sharp · at its level · noisy

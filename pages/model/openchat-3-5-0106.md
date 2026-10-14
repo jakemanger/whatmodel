@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-01 · 7.24B params · apache-2.0
 
-**score 45.8** ±0.6 · #425 of 719 · from 10 benchmark results across 7 sources
+**score 45.8** ±0.6 · #427 of 721 · from 10 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gem
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1114.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 55/95   avg 1201      3.7%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.7  ▁▁▁▂●▃▃▆▆▇█▃ beats 58/379  avg 1268      3.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.7  ▁▁▁▂●▃▃▆▆▇█▃ beats 58/379  avg 1268      3.6%  blunt
 </pre>
 
 </details>

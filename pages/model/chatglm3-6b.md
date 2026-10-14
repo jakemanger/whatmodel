@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 27.1** ±2.1 · #661 of 719 · from 4 benchmark results across 4 sources
+**score 27.1** ±2.1 · #663 of 721 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #283 of 300*     10%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #285 of 302*     10%      1
 chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #385 of 393*     82%      2
 </pre>
 
-<details><summary>agent tasks · #283 of 300 · 10% of its score</summary>
+<details><summary>agent tasks · #285 of 302 · 10% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 235B params (22B active) · apache-2.0
 
-**score 66.3** ±0.5 · #123 of 719 · from 92 benchmark results across 12 sources
+**score 66.3** ±0.5 · #125 of 721 · from 92 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-07 · 235B params (22B active) · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #145 of 300     22%      8
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #146 of 302     22%      8
 coding          ▁▁▁▃▆██▇●▄▃▁    #88 of 458    3.9%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #110 of 393    7.3%      4
 math            ▁▂▃▅▆▅▄●▄▁▁▁    #67 of 398     18%      6
 </pre>
 
-<details><summary>agent tasks · #145 of 300 · 22% of its score</summary>
+<details><summary>agent tasks · #146 of 302 · 22% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.1%  ▁▁▃▁█▅▄▇●▅▃█ beats 26/38  medium · avg 44%    2.5%  at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.1%  ▁▁▃▁█▅▄▇●▅▃█ beats 26/38  medium · avg 44%    2.6%  at its level · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">LiveCodeBench (version unspecifie…</a>   75.4%  ▄······▄●▄·▄ beats 3/5    medium · avg 39%    1.3%  at its level
 </pre>
 

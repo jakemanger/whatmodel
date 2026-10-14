@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 10.31B params · falcon-llm
 
-**score 43.8** ±2.7 · #467 of 719 · from 7 benchmark results across 3 sources
+**score 43.8** ±2.7 · #469 of 721 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ TII · released 2024-12 · 10.31B params · falcon-llm
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #270 of 300*     38%      2
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #272 of 302*     38%      2
 coding       ▁▁▁▃▆●█▇▆▄▃▁    #345 of 458     44%      4
 </pre>
 
-<details><summary>agent tasks · #270 of 300 · 38% of its score</summary>
+<details><summary>agent tasks · #272 of 302 · 38% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

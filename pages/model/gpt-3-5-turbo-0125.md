@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-01 · proprietary
 
-**score 46.3** ±0.5 · #411 of 719 · from 35 benchmark results across 17 sources
+**score 46.3** ±0.5 · #413 of 721 · from 35 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ OpenAI · released 2024-01 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #243 of 300*    0.5%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #245 of 302*    0.5%      1
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #269 of 458     22%      3
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #291 of 393     13%      5
 math            ▁▂●▅▆▅▄█▄▁▁▁    #342 of 398     13%      7
 </pre>
 
-<details><summary>agent tasks · #243 of 300 · 0.5% of its score</summary>
+<details><summary>agent tasks · #245 of 302 · 0.5% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -87,7 +87,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                           70.2%  ▁▂·▁·▁▁●·▃▃▅ beats 10/22    easy · avg 77%          3.2%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        38.2%  ▃▂·▆▆██●▅▃▃▃ beats 22/33    medium · avg 41%        2.8%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        50.6%  ▂▁▁▄▂▅▇█▆●▂▂ beats 51/58    medium · avg 51%        2.8%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.0160 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 14/52    avg 45.277 WB-Score     2.6%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.0160 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 14/52    avg 45.276 WB-Score     2.6%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             10.1%  ▁▁▃●██▁▁·▁▁▁ beats 10/57    hard · avg 18%          2.4%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   27.2%  ▁▁●▁▂▄▆▄▅▇█▅ beats 10/208   hard · avg 40%          2.0%  sharp
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>             49.1%  ▁▁▁▁·▂·●▆█▇▁ beats 6/31     medium · avg 48%        1.2%  at its level

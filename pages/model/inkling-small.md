@@ -6,7 +6,7 @@
 
 Thinking Machines · released 2026-07 · 266B params (12B active) · apache-2.0
 
-**score 69.9** ±0.7 · #84 of 719 · from 34 benchmark results across 5 sources
+**score 69.9** ±0.7 · #86 of 721 · from 34 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,7 +14,7 @@ Thinking Machines · released 2026-07 · 266B params (12B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #76 of 300     19%      9
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #78 of 302     19%      9
 coding              ▁▁▁▃▆██▇●▄▃▁     #81 of 458     12%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #105 of 393*    4.3%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁     #54 of 398     36%      5
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #70 of 147    5
 web search          █··········●       #1 of 2*    2.3%      2
 </pre>
 
-<details><summary>agent tasks · #76 of 300 · 19% of its score</summary>
+<details><summary>agent tasks · #78 of 302 · 19% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
@@ -30,11 +30,11 @@ Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), 
 test                                     result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1033 IPS  ▁▁●▄▂▃▇█▂▂▁▃ beats 3/49     avg -0.310 IPS          8.6%  sharp
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>                  80.2%  ▁▁▁▁▁▁▂▄█●▁▁ beats 125/131  hard · avg 26%          2.6%  sharp · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>                  64.7%  ▁·▁·▁▁▄▃▄●▃▇ beats 29/56    hard · avg 17%          2.4%  at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>                  64.7%  ▁·▁·▁▁▄▃▄●▄█ beats 29/58    hard · avg 17%          2.4%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MCP-Atlas (public set) (lab)</a>              79.6%  ▂·▁▂▁·▁▃█▆▆● beats 36/37    medium · avg 36%        1.5%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam with tools (…</a>        47.8%  ▂▂▂▁▄▂▃●█▇▂▆ beats 25/54    hard · avg 16%          1.2%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">BrowseComp with context managemen…</a>        77.4%  ▅·▅▃·●▃·█▅·▃ beats 7/14     medium · avg 44%        1.1%  small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified (lab)</a>                 54.4%  ▂·▂▂▅●···▂██ beats 7/18     hard · avg 28%          0.8%  blunt · at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified (lab)</a>                 54.4%  ▂·▂▂▅●···▂██ beats 7/18     hard · avg 28%          0.7%  blunt · at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                       55.9%  ▅▃▃·▃·▅●▅█▃▃ beats 7/15     hard · avg 30%          0.6%  blunt · at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">τ³-bench Banking (lab)</a>                    15.5%  ▂▂·▅█▂▂▃●▅▂▃ beats 14/20    very hard · avg 5.9%    0.6%  blunt · small run
 </pre>
@@ -43,11 +43,11 @@ test                                     result  vs the others in its run    dif
 
 <details><summary>coding · #81 of 458 · 12% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>          1408.2  ▁▂▄▃▅●▄▇▆▄▁▁ beats 47/119   avg 983           7.7%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>          1408.2  ▁▂▄▃▅●▄▇▆▄▁▁ beats 47/119   avg 983           7.6%  sharp
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>            80.2%  ▁▁▁▁▁▁▂▄█●▁▁ beats 125/131  hard · avg 26%    2.6%  sharp · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SciCode (level unspecified) (lab)</a>   48.7%  ▁····▃▄▄▄█▆● beats 33/34    hard · avg 18%    1.1%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                 55.9%  ▅▃▃·▃·▅●▅█▃▃ beats 7/15     hard · avg 30%    0.6%  blunt · at its level · small run
@@ -108,8 +108,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.5%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 165/208  hard · avg 40%          8.8%  sharp · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          6.0%  ●··▂▃▇▄█▂▃▁▁ beats 4/74     very hard · avg 9.4%    2.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.5%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 165/208  hard · avg 40%          8.7%  sharp · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          6.0%  ●··▂▃▇▄█▂▃▁▁ beats 4/74     very hard · avg 9.4%    2.7%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    19.1%  ▁▁▃▂●▃▆▆█▃▂▅ beats 11/78    very hard · avg 8.1%    2.6%  at its level · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                18.0%  █▁▁▁▁▂●▄▂▂▁▁ beats 73/135   very hard · avg 5.9%    2.3%  sharp · noisy
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam (lab)</a>           31.6%  ▁▁▁▃▆▆▇█●▆▁▃ beats 77/104   very hard · avg 5.8%    1.9%  at its level · small run

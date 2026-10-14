@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
-**score 59.3** ±0.8 · #202 of 719 · from 27 benchmark results across 13 sources
+**score 59.3** ±0.8 · #204 of 721 · from 27 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #222 of 300*    2.9%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #224 of 302*    2.9%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #203 of 458     28%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #164 of 393     23%      5
 math            ▁▂▃▅▆▅●█▄▁▁▁    #146 of 398    9.3%      3
 </pre>
 
-<details><summary>agent tasks · #222 of 300 · 2.9% of its score</summary>
+<details><summary>agent tasks · #224 of 302 · 2.9% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 
 <pre>
 test                       result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    59.2%  ▃▃▄▃▃▃●▇█▃▂▅ beats 89/193  very hard · avg 8.6%    6.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    59.2%  ▃▃▄▃▃▃●▇█▃▂▅ beats 89/193  very hard · avg 8.6%    6.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   98.1%  ▃▃█▂▂▆·····● beats 22/22   medium · avg 61%        1.7%  typical
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       95.5%  ▂▃··▃▂▅█▆▃▂● beats 22/22   very easy · avg 88%     1.3%  sharp · maxed out
 </pre>

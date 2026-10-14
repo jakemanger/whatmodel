@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 64.5** ±1.2 · #149 of 719 · from 7 benchmark results across 5 sources
+**score 64.5** ±1.2 · #151 of 721 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #104 of 300     34%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #107 of 302     34%      3
 coding          ▁▁▁▃▆██●▆▄▃▁   #133 of 458*     23%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #166 of 393*     13%      1
 </pre>
 
-<details><summary>agent tasks · #104 of 300 · 34% of its score</summary>
+<details><summary>agent tasks · #107 of 302 · 34% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why

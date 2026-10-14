@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 123B params · mistral-research
 
-**score 55.1** ±1.0 · #260 of 719 · from 18 benchmark results across 14 sources
+**score 55.1** ±1.0 · #262 of 721 · from 18 benchmark results across 14 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2024-11 · 123B params · mistral-research
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #220 of 300    7.0%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #222 of 302    7.0%      3
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #213 of 458*     14%      1
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #217 of 393*    8.2%      1
 math            ▁▂▃▅●▅▄█▄▁▁▁   #245 of 398*     26%      2
 </pre>
 
-<details><summary>agent tasks · #220 of 300 · 7.0% of its score</summary>
+<details><summary>agent tasks · #222 of 302 · 7.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

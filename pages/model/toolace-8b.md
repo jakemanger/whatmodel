@@ -14,10 +14,10 @@ Team-ACE (Huawei Noah's Ark & USTC) · released 2024-08 · 8.03B params · apach
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #238 of 334*     82%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #240 of 336*     82%      1
 </pre>
 
-<details><summary>agent tasks · #238 of 334 · 82% of its score</summary>
+<details><summary>agent tasks · #240 of 336 · 82% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

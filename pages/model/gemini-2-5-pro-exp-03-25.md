@@ -14,11 +14,11 @@ Google · released 2025-03 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #221 of 340*     10%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #222 of 342*     10%      1
 coding       ▁▁▁▃▅▇█▇▅●▃▁    #56 of 524*    4.5%      1
 </pre>
 
-<details><summary>agent tasks · #221 of 340 · 10% of its score</summary>
+<details><summary>agent tasks · #222 of 342 · 10% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

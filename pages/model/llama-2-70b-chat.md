@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 68.98B params · llama2
 
-**score 38.5** ±0.8 · #551 of 719 · from 28 benchmark results across 16 sources
+**score 38.5** ±0.8 · #553 of 721 · from 28 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -39,7 +39,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             14.7%  ▁▂▂▃●▆█▆▄▄▁▁ beats 36/122  medium · avg 39%             12%  typical
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         11.6%  ▂▁●▅█▅▄▃▃▅▃▁ beats 5/60    medium · avg 52%            6.8%  sharp
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1108.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 51/95   avg 1201                    5.4%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1170.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 49/379  avg 1268                    5.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1170.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 49/379  avg 1268                    5.3%  blunt
 <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.8600 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 20/28   avg 8.826 MT-Bench scor…    4.7%  sharp · noisy
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>                          3.0%  ▁·▁●▂▁▄▄▆▄█▄ beats 2/38    medium · avg 49%            3.0%  sharp
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         92.7%  ▂▂·▆·▇▃▆█●▄▂ beats 35/45   very easy · avg 96%         1.9%  sharp · noisy
@@ -66,7 +66,7 @@ test                      result  vs the others in its run  difficulty          
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                 49.0%  ▁·····▂●▂▅·▁ beats 10/25    easy · avg 77%          14%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                           60.9%  ▁▁▃▃▄█▄●█··▁ beats 18/25    easy · avg 74%         6.2%  at its level · several runs
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  20.6596 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 3/52     avg 45.277 WB-Score    6.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  20.6596 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 3/52     avg 45.276 WB-Score    6.1%  sharp
 <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                                  67.7%  ▆▁▁▂▂▅▇█●▃▃▂ beats 78/97    easy · avg 86%         4.4%  sharp · at its level
 <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                                46.7%  █●▄··▄··▄█·█ beats 2/9      easy · avg 69%         2.7%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>             51.6%  ▂··▄·▂▆▄▂●·▂ beats 12/14    medium · avg 57%       2.4%  at its level

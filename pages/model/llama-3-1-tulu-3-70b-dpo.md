@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 53.1** ±1.1 · #294 of 719 · from 12 benchmark results across 2 sources
+**score 53.1** ±1.1 · #296 of 721 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 

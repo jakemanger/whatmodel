@@ -14,10 +14,10 @@ ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▄▄▃▂▁   #331 of 334*     78%      1
+agent tasks  ●▁▃▆█▆▅▄▄▃▃▁   #333 of 336*     78%      1
 </pre>
 
-<details><summary>agent tasks · #331 of 334 · 78% of its score</summary>
+<details><summary>agent tasks · #333 of 336 · 78% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 

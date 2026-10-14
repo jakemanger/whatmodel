@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.6** ±1.1 · #200 of 719 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.6** ±1.1 · #202 of 721 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-licen
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #161 of 300     20%      6
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #163 of 302     20%      6
 coding       ▁▁▁▃▆●█▇▆▄▃▁   #313 of 458*    9.4%      2
 math         ▁▂▃▅▆▅●█▄▁▁▁   #176 of 398*     20%      2
 </pre>
 
-<details><summary>agent tasks · #161 of 300 · 20% of its score</summary>
+<details><summary>agent tasks · #163 of 302 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -28,7 +28,7 @@ test                          result  vs the others in its run  difficulty      
 <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  hard · avg 15%          5.4%  sharp · at its level · noisy · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          4.0%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.5%    3.7%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.8%    3.3%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.8%    3.4%  too hard for it
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       15.4%  ●··········█ beats 1/5    hard · avg 16%          2.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.1%    1.1%  blunt
 </pre>

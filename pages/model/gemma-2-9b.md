@@ -6,7 +6,7 @@
 
 Google · released 2024-06 · 9.24B params · gemma
 
-**score 47.2** ±0.5 · #392 of 719 · from 56 benchmark results across 20 sources
+**score 47.2** ±0.5 · #394 of 721 · from 56 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -78,7 +78,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                                 64.9%  ▁▄·▁▁·●█·▄▄▁ beats 7/22     easy · avg 75%         5.9%  sharp · at its level · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                                  89.8%  ▂▂▂█▂···●··▂ beats 8/10     very easy · avg 91%    3.8%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             12.8%  ▁▁▃●██▁▁·▁▁▁ beats 16/57    hard · avg 18%         2.4%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  42.6962 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 31/52    avg 45.277 WB-Score    2.4%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  42.6962 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 31/52    avg 45.276 WB-Score    2.4%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                                     90.0%  ▂··▄█▂·▂···● beats 10/10    easy · avg 88%         2.4%  typical
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                                       50.1%  █▄▄·█▄●▄·▄·▄ beats 7/10     medium · avg 57%       2.0%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   27.5%  ▁▁●▁▂▄▆▄▅▇█▅ beats 11/208   hard · avg 40%         1.9%  sharp
