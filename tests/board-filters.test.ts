@@ -22,19 +22,19 @@ const setQuery = `set=${encodeURIComponent(secondary.id)}`;
 test('announced previews appear on default and task boards without implying public access', async () => {
   for (const query of ['', 'task=agents', 'retired=1']) {
     const board = view(query);
-    const argon = board.shown.find((r) => r.id === 'gemini-4-argon');
-    assert.ok(argon, 'Argon must appear without opting into historical models');
-    assert.equal(argon.where, 'preview');
-    assert.equal(whereLabel(argon), 'limited preview');
-    assert.ok(argon.score !== null);
-    assert.equal(argon.cmd, null);
-    assert.equal(argon.price, null);
-    assert.ok(!board.outside.comparisonOnly.some((m) => m.id === argon.id));
+    const preview = board.shown.find((r) => r.id === 'claude-mythos-preview');
+    assert.ok(preview, 'A scored preview must appear without opting into historical models');
+    assert.equal(preview.where, 'preview');
+    assert.equal(whereLabel(preview), 'limited preview');
+    assert.ok(preview.score !== null);
+    assert.equal(preview.cmd, null);
+    assert.equal(preview.price, null);
+    assert.ok(!board.outside.comparisonOnly.some((m) => m.id === preview.id));
     const body = await (await leaderboard(new Request(`https://whatmodel.sh/api?${query}&format=json&n=10000`), 'llm')).json();
-    assert.equal(body.models.find((r: {id: string}) => r.id === argon.id)?.where, 'preview');
+    assert.equal(body.models.find((r: {id: string}) => r.id === preview.id)?.where, 'preview');
   }
   for (const query of ['max=0', 'ram=16&gpu=apple&max=0', 'max=10', 'max=0&retired=1']) {
-    assert.ok(!view(query).shown.some((r) => r.id === 'gemini-4-argon'), 'A preview with no run route cannot satisfy a local or price filter');
+    assert.ok(!view(query).shown.some((r) => r.id === 'claude-mythos-preview'), 'A preview with no run route cannot satisfy a local or price filter');
   }
 });
 

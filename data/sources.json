@@ -3045,9 +3045,10 @@
   },
   {
     "id": "first-party-meta-scores",
-    "name": "Meta vendor-reported benchmark scores for its own Muse models (Muse Wonder model card)",
+    "name": "Meta vendor-reported benchmark scores for its own Muse models (Muse Wonder model card, Muse Spark 1.3 evaluation methodology)",
     "match": [
-      "research.meta.ai/static/muse-wonder-model-card"
+      "research.meta.ai/static/muse-wonder-model-card",
+      "research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -3056,7 +3057,7 @@
     "checked": "2026-10-14",
     "exact": true,
     "icon": "research.meta.ai",
-    "attribution": "Meta, vendor-reported results for Meta’s own Muse Wonder models from the Muse Wonder model card (2026-10-12); individual figures hand-recorded 2026-10-14; percentages converted to fractions. Only rows Meta ran itself; scores the card credits to Artificial Analysis, Vals AI, Surge, Datacurve or Abundant AI, and other labs’ columns, are not used. Lab-reported, not independent measurements. No endorsement.",
+    "attribution": "Meta, vendor-reported results for Meta’s own Muse models from the Muse Wonder model card (2026-10-12) and the Muse Spark 1.3 evaluation methodology (2026-09-02); individual figures hand-recorded 2026-10-14; percentages converted to fractions. Only rows Meta ran itself; scores the documents credit to Artificial Analysis, Vals AI, Surge, Datacurve or Abundant AI, and other labs’ columns, are not used. Lab-reported, not independent measurements. No endorsement.",
     "quote": "Owner policy 2026-10-07: a vendor’s published scores for its own models may be hand-recorded one figure at a time with link, date and printed settings, labelled lab-reported; cells the source credits to a third party are not used."
   },
   {
@@ -8072,7 +8073,8 @@
     "name": "Google Gemini API official model documentation",
     "match": [
       "ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview",
-      "ai.google.dev/gemini-api/docs/models/gemini-3-pro-preview"
+      "ai.google.dev/gemini-api/docs/models/gemini-3-pro-preview",
+      "ai.google.dev/gemini-api/docs/models/gemini-4-argon"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
@@ -11689,7 +11691,9 @@
       "deepmind.google/models/model-cards/gemini-3-5-flash-lite",
       "deepmind.google/models/model-cards/gemini-3-1-flash-lite",
       "storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf",
-      "deepmind.google/models/model-cards/gemini-3-1-pro"
+      "deepmind.google/models/model-cards/gemini-3-1-pro",
+      "deepmind.google/models/model-cards/gemini-4-argon",
+      "deepmind.google/models/evals-methodology/gemini-4-argon"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",

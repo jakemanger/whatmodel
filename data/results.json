@@ -268246,5 +268246,492 @@
       "raw_value": "59.0",
       "scale_divisor": 100
     }
+  },
+  {
+    "model": "claude-opus-5-5",
+    "bench": "healthbench-professional",
+    "score": 0.6559999999999999,
+    "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-30",
+    "mode": "adaptive thinking, max effort",
+    "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'HealthBench Professional', column 'Claude Opus 5.5' = 65.6 (length-adjusted; §8.15.2 gives the raw score 77.1%). Claude Opus 4.8 grader, five trials, no tools or custom system prompt; vendor-reported. The table's GPT-6 Astra column is another lab's model and is not used.",
+    "evidence": {
+      "kind": "table",
+      "table_index": "8.1.A",
+      "row_label": "HealthBench Professional",
+      "column_label": "Claude Opus 5.5",
+      "raw_value": "65.6",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-opus-5",
+    "bench": "healthbench-professional",
+    "score": 0.598,
+    "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-30",
+    "mode": "adaptive thinking, max effort",
+    "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'HealthBench Professional', column 'Claude Opus 5' = 59.8 (length-adjusted; §8.15.2 gives the raw score 73.4%). Claude Opus 4.8 grader, five trials, no tools or custom system prompt; vendor-reported. The table's GPT-6 Astra column is another lab's model and is not used.",
+    "evidence": {
+      "kind": "table",
+      "table_index": "8.1.A",
+      "row_label": "HealthBench Professional",
+      "column_label": "Claude Opus 5",
+      "raw_value": "59.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-fable-5-1",
+    "bench": "healthbench-professional",
+    "score": 0.621,
+    "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-30",
+    "mode": "adaptive thinking, max effort",
+    "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'HealthBench Professional', column 'Claude Fable 5.1' = 62.1 (length-adjusted; §8.15.2 gives the raw score 74.2%). Claude Opus 4.8 grader, five trials, no tools or custom system prompt; vendor-reported. The table's GPT-6 Astra column is another lab's model and is not used.",
+    "evidence": {
+      "kind": "table",
+      "table_index": "8.1.A",
+      "row_label": "HealthBench Professional",
+      "column_label": "Claude Fable 5.1",
+      "raw_value": "62.1",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "healthbench-professional",
+    "score": 0.605,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card, capabilities scorecard, row 'HealthBench Pro', column 'Muse Wonder (max)'. Card: 'HealthBench Pro evaluates responses to 525 professional-grade health questions. Models answer without tools, and a GPT-5.4 grader scores each response against physician-written rubrics. We run the official tasks and grading in a common internal framework. The primary metric is the length-normalized weighted rubric score.' Its Claude values (Fable 5.1 62.1, Opus 5.5 65.6) are Anthropic's length-adjusted HealthBench Professional figures, so this is the same test and score.",
+    "evidence": {
+      "kind": "table",
+      "section": "Personal and professional agents",
+      "row_label": "HealthBench Pro",
+      "column_label": "Muse Wonder (max)",
+      "raw_value": "60.5",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder-full",
+    "bench": "healthbench-professional",
+    "score": 0.623,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card, capabilities scorecard, row 'HealthBench Pro', column 'Muse Wonder Full (max)'. Card: 'HealthBench Pro evaluates responses to 525 professional-grade health questions. Models answer without tools, and a GPT-5.4 grader scores each response against physician-written rubrics. We run the official tasks and grading in a common internal framework. The primary metric is the length-normalized weighted rubric score.' Its Claude values (Fable 5.1 62.1, Opus 5.5 65.6) are Anthropic's length-adjusted HealthBench Professional figures, so this is the same test and score.",
+    "evidence": {
+      "kind": "table",
+      "section": "Personal and professional agents",
+      "row_label": "HealthBench Pro",
+      "column_label": "Muse Wonder Full (max)",
+      "raw_value": "62.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-opus-5-5",
+    "bench": "osworld-2-1",
+    "score": 0.818,
+    "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-30",
+    "mode": "max reasoning effort",
+    "note": "Anthropic, Claude Opus 5.5 System Card, §8.13.3 'OSWorld 2.0' (p. 205-206): 'we updated to the September 10, 2026 versions of the benchmark's task files, task assets, and companion web applications' (released by the authors as osworld-v2.1) and kept every screenshot with server-side context compaction; 1080p, up to 500 steps, max effort, Claude Opus 4.8 as model grader, pass@1 averaged over five runs. Partial score 81.8% (strict 48.7%).",
+    "evidence": {
+      "kind": "prose",
+      "page": 206,
+      "column_label": "Claude Opus 5.5",
+      "raw_value": "81.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-fable-5-1",
+    "bench": "osworld-2-1",
+    "score": 0.807,
+    "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-30",
+    "mode": "max reasoning effort",
+    "note": "Anthropic, Claude Opus 5.5 System Card, §8.13.3 'OSWorld 2.0' (p. 205-206): 'we updated to the September 10, 2026 versions of the benchmark's task files, task assets, and companion web applications' (released by the authors as osworld-v2.1) and kept every screenshot with server-side context compaction; 1080p, up to 500 steps, max effort, Claude Opus 4.8 as model grader, pass@1 averaged over five runs. Partial score 80.7% (strict 42.8%), re-evaluated under the same conditions.",
+    "evidence": {
+      "kind": "prose",
+      "page": 206,
+      "column_label": "Claude Fable 5.1",
+      "raw_value": "80.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-opus-5",
+    "bench": "osworld-2-1",
+    "score": 0.74,
+    "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-30",
+    "mode": "max reasoning effort",
+    "note": "Anthropic, Claude Opus 5.5 System Card, §8.13.3 'OSWorld 2.0' (p. 205-206): 'we updated to the September 10, 2026 versions of the benchmark's task files, task assets, and companion web applications' (released by the authors as osworld-v2.1) and kept every screenshot with server-side context compaction; 1080p, up to 500 steps, max effort, Claude Opus 4.8 as model grader, pass@1 averaged over five runs. Partial score 74.0% (strict 37.2%), re-evaluated under the same conditions.",
+    "evidence": {
+      "kind": "prose",
+      "page": 206,
+      "column_label": "Claude Opus 5",
+      "raw_value": "74",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "osworld-2-1",
+    "score": 0.726,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card, scorecard row 'OSWorld V2.1', partial score. Card: 'We run the updated V2.1 evaluation in a common internal framework while preserving the official task environments and programmatic graders. The primary metric is mean per-task partial reward.' Its Claude Opus 5.5 value (81.8) is Anthropic's September-10 figure, the same release. Muse Wonder: 72.6 partial, 34.3 binary.",
+    "evidence": {
+      "kind": "table",
+      "section": "Personal and professional agents",
+      "row_label": "osworld-2-1",
+      "column_label": "Muse Wonder (max)",
+      "raw_value": "72.6",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder-full",
+    "bench": "osworld-2-1",
+    "score": 0.784,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card, scorecard row 'OSWorld V2.1', partial score. Card: 'We run the updated V2.1 evaluation in a common internal framework while preserving the official task environments and programmatic graders. The primary metric is mean per-task partial reward.' Its Claude Opus 5.5 value (81.8) is Anthropic's September-10 figure, the same release. Muse Wonder Full: 78.4 partial, 39.4 binary.",
+    "evidence": {
+      "kind": "table",
+      "section": "Personal and professional agents",
+      "row_label": "osworld-2-1",
+      "column_label": "Muse Wonder Full (max)",
+      "raw_value": "78.4",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-fable-5-1",
+    "bench": "osworld-2-0808",
+    "score": 0.779,
+    "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=189",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Anthropic, Claude Fable 5.1 & Mythos 5.1 System Card, §8.14.3 'OSWorld 2.0' (p. 189): 'We evaluated the authors' August 2026 task release with their subsequent task fixes, plus fixes to task setup and grading scripts that we reported to the authors'; 1080p, up to 500 steps, max effort, Claude Opus 4.8 as model grader, pass@1 averaged over five runs. Partial score 77.9% (strict 41.7%).",
+    "evidence": {
+      "kind": "prose",
+      "page": 189,
+      "column_label": "Claude Fable 5.1",
+      "raw_value": "77.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-opus-5",
+    "bench": "osworld-2-0808",
+    "score": 0.754,
+    "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=189",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Anthropic, Claude Fable 5.1 & Mythos 5.1 System Card, §8.14.3 'OSWorld 2.0' (p. 189): 'We evaluated the authors' August 2026 task release with their subsequent task fixes, plus fixes to task setup and grading scripts that we reported to the authors'; 1080p, up to 500 steps, max effort, Claude Opus 4.8 as model grader, pass@1 averaged over five runs. Partial score 75.4% (strict 39.6%), re-evaluated under the same conditions.",
+    "evidence": {
+      "kind": "prose",
+      "page": 189,
+      "column_label": "Claude Opus 5",
+      "raw_value": "75.4",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-fable-5",
+    "bench": "osworld-2-0808",
+    "score": 0.7290000000000001,
+    "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=189",
+    "source_id": "first-party-anthropic-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Anthropic, Claude Fable 5.1 & Mythos 5.1 System Card, §8.14.3 'OSWorld 2.0' (p. 189): 'We evaluated the authors' August 2026 task release with their subsequent task fixes, plus fixes to task setup and grading scripts that we reported to the authors'; 1080p, up to 500 steps, max effort, Claude Opus 4.8 as model grader, pass@1 averaged over five runs. Partial score 72.9% (strict 36.1%), re-evaluated under the same conditions.",
+    "evidence": {
+      "kind": "prose",
+      "page": 189,
+      "column_label": "Claude Fable 5",
+      "raw_value": "72.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-3",
+    "bench": "osworld-2-0808",
+    "score": 0.669,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'OSWorld 2.0'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 'All results on OSWorld 2.0 were evaluated using version 08.08, except Muse Spark 1.2, which was evaluated on version 06.24' (so Muse Spark 1.2's 47.6 is a different release and not recorded here); common internal framework, official environments and graders; partial score 66.9, binary 32.0. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "osworld-2-0808",
+      "column_label": "Muse Spark 1.3 (max)",
+      "raw_value": "66.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-3",
+    "bench": "jobbench",
+    "score": 0.649,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'JobBench'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 'We use the official task set and a file-aware rubric grader. The primary metric is the mean rubric score across tasks.' Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "jobbench",
+      "column_label": "Muse Spark 1.3 (max)",
+      "raw_value": "64.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-2",
+    "bench": "jobbench",
+    "score": 0.616,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'JobBench'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 'We use the official task set and a file-aware rubric grader. The primary metric is the mean rubric score across tasks.' Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "jobbench",
+      "column_label": "Muse Spark 1.2 (xhigh)",
+      "raw_value": "61.6",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "jobbench",
+    "score": 0.705,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card, scorecard row 'JobBench'. Card: 'JobBench contains 65 professional tasks across 35 white-collar occupations ... scored against task-specific rubrics. The primary metric is mean reward across tasks', the same measure the Muse Spark 1.3 methodology calls the mean rubric score.",
+    "evidence": {
+      "kind": "table",
+      "section": "Personal and professional agents",
+      "row_label": "jobbench",
+      "column_label": "Muse Wonder (max)",
+      "raw_value": "70.5",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder-full",
+    "bench": "jobbench",
+    "score": 0.753,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card, scorecard row 'JobBench'. Card: 'JobBench contains 65 professional tasks across 35 white-collar occupations ... scored against task-specific rubrics. The primary metric is mean reward across tasks', the same measure the Muse Spark 1.3 methodology calls the mean rubric score.",
+    "evidence": {
+      "kind": "table",
+      "section": "Personal and professional agents",
+      "row_label": "jobbench",
+      "column_label": "Muse Wonder Full (max)",
+      "raw_value": "75.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-3",
+    "bench": "deepsearchqa",
+    "score": 0.903,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'DeepSearchQA'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 900 questions; 'We use the same search backend and browser harness across all models. We use F1-score as the primary metric.' Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "deepsearchqa",
+      "column_label": "Muse Spark 1.3 (max)",
+      "raw_value": "90.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-2",
+    "bench": "deepsearchqa",
+    "score": 0.8590000000000001,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'DeepSearchQA'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 900 questions; same search backend and browser harness for all models; F1 score. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "deepsearchqa",
+      "column_label": "Muse Spark 1.2 (xhigh)",
+      "raw_value": "85.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-3",
+    "bench": "automationbench-public-zapier",
+    "score": 0.496,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'AutomationBench'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 'We use the public v3 task set' of 600 workflows, the benchmark's automation tools and deterministic end-state assertions; pass@1. Its Opus 5 value (50.3) equals Zapier's README figure, the same public set. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "automationbench-public-zapier",
+      "column_label": "Muse Spark 1.3 (max)",
+      "raw_value": "49.6",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-2",
+    "bench": "automationbench-public-zapier",
+    "score": 0.382,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'AutomationBench'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. public v3 task set of 600 workflows; pass@1. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agent",
+      "row_label": "automationbench-public-zapier",
+      "column_label": "Muse Spark 1.2 (xhigh)",
+      "raw_value": "38.2",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-3",
+    "bench": "terminal-bench-2.1",
+    "score": 0.888,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'Terminal-Bench 2.1'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 89 tasks, each model's native coding harness in Meta's internal agent framework and an isolated cloud sandbox; official verifier; mean pass@1. Highest effort (max) recorded; the xhigh column reads 89.2. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Coding",
+      "row_label": "terminal-bench-2.1",
+      "column_label": "Muse Spark 1.3 (max)",
+      "raw_value": "88.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-2",
+    "bench": "terminal-bench-2.1",
+    "score": 0.8290000000000001,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'Terminal-Bench 2.1'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 89 tasks, native coding harness in Meta's internal agent framework; mean pass@1. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Coding",
+      "row_label": "terminal-bench-2.1",
+      "column_label": "Muse Spark 1.2 (xhigh)",
+      "raw_value": "82.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-1-3",
+    "bench": "deepswe-v1-1",
+    "score": 0.754,
+    "source": "https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-09-02",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark 1.3 evaluation methodology (2026-09-02), scorecard row 'DeepSWE v1.1'. Muse Spark 1.3 results come from the Meta Model API at max effort, Muse Spark 1.2 at xhigh. 'We run Muse Spark 1.3 max with a mini-swe agent'; task pass rate (functional and regression tests both pass). Muse Spark 1.2's 55.0 came from Datacurve's leaderboard, so it is not recorded. Only Meta's own models are used; the GPT-5.6 Sol and Opus 5 columns are other labs' models.",
+    "evidence": {
+      "kind": "table",
+      "section": "Coding",
+      "row_label": "deepswe-v1-1",
+      "column_label": "Muse Spark 1.3 (max)",
+      "raw_value": "75.4",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gemini-4-argon",
+    "bench": "agents-last-exam",
+    "score": 0.395,
+    "source": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+    "source_id": "first-party-google-scores",
+    "by": "lab",
+    "date": "2026-10-13",
+    "mode": "highest thinking setting",
+    "note": "Google DeepMind Gemini 4 Argon model card (2026-10-13), benchmark table, row 'Agent's Last Exam', note 'Pass rate', column 'Gemini 4 Argon' = 39.5%. Evaluation methodology document: 'Agent's Last Exam results for Gemini 4 Argon are self computed using the default ALE-Claw harness and a 5-hour window, with safety filters enabled ... We report the binary pass rate.' Only Google's own model is used: the methodology takes the GPT-6 Astra and Opus 5.5 values from the public leaderboard.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "Agent's Last Exam",
+      "column_label": "Gemini 4 Argon",
+      "raw_value": "39.5%",
+      "scale_divisor": 100
+    }
   }
 ]

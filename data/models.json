@@ -49089,19 +49089,26 @@
   },
   {
     "id": "gemini-4-argon",
-    "name": "Gemini 4 Argon (limited preview)",
-    "availability": "preview",
-    "availability_source": "https://blog.google/intl/en-in/products/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+    "name": "Gemini 4 Argon",
     "provider": "Google",
     "category": "llm",
     "open_weights": false,
     "license": "proprietary",
-    "api": null,
+    "api": {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      "provider": "Google",
+      "price_in": 2,
+      "price_out": 10,
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "price_note": "USD per 1M tokens, Gemini API Standard paid tier for gemini-4-argon, introductory price through 2026-11-30 (output includes thinking tokens); it rises to $4.00 input and $20.00 output on 2026-12-01. Cached input $0.10 (implicit caching only) and batch prices excluded; no prompt-length tiers; not on the Free tier. Google official pricing page, observed 2026-10-14."
+    },
     "local": null,
     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
-    "identity_note": "Exact Arena entry 'gemini-4-argon-high' in the October 2026 pinned dataset. Comparison identity; no public run route inferred from leaderboard inclusion. Announced September 30, 2026; initially limited to trusted cyber defenders through Fairwind. Broad developer access and the announced introductory pricing are prospective, so no generally available API is listed. Arena evaluated High reasoning.",
+    "identity_note": "Exact Arena entry 'gemini-4-argon-high' in the October 2026 pinned dataset (Arena evaluated High reasoning). Announced September 30, 2026 with access initially limited to trusted cyber defenders through Fairwind; generally available on the Gemini API as the stable model gemini-4-argon since the October 13, 2026 model card.",
     "released": "2026-09",
-    "released_source": "https://blog.google/intl/en-in/products/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+    "released_source": "https://blog.google/intl/en-in/products/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+    "context_k": 1048.576,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon"
   },
   {
     "id": "gpt-6-1-sol",
