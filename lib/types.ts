@@ -38,8 +38,9 @@ export type Model = {
   released?: string;
   released_source?: string;
   // preview: announced limited access, visible without claiming a public run route; app: available
-  // only in the maker's own app or subscription (no API or download), named in `app`.
-  availability?: "preview" | "app";
+  // only in the maker's own app or subscription (no API or download), named in `app`; research: a lab's
+  // research model that was never offered to the public (it still anchors the scale, like retired ones).
+  availability?: "preview" | "app" | "research";
   app?: string;
   availability_source?: string;
   source?: string;

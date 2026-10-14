@@ -13,9 +13,10 @@ import { boardView, modelView, pageModels } from '../lib/views.ts';
 import { TASKS } from '../lib/tasks.ts';
 
 const view = (query = '') => boardView('llm', new URLSearchParams(query));
-// Text models now share one scale; set behaviour is tested on the first category that still has several.
+// Imports can introduce disconnected sets, including among historical text models.
 const SET_CAT = (['llm', 'image', 'tts', 'stt', 'video'] as const).find((c) => comparisonSets[c].length > 1)!;
-const setView = (query = '') => boardView(SET_CAT, new URLSearchParams(query));
+// These tests cover set membership, including models below the default evidence threshold.
+const setView = (query = '') => boardView(SET_CAT, new URLSearchParams(`thin=1&${query}`));
 const secondary = comparisonSets[SET_CAT][1];
 const setQuery = `set=${encodeURIComponent(secondary.id)}`;
 
@@ -107,6 +108,18 @@ test('scored comparison-only models are listed by default, labelled, and never f
   assert.ok(!view().shown.some((r) => r.where === 'retired' && r.score === null), 'Unscored retired models stay outside the default table');
   const retiredRows = (q: string) => view(q).shown.filter((r) => r.where === 'retired').length;
   assert.ok(retiredRows('retired=1') >= retiredRows(''), '?retired=1 lists every retired model the default lists');
+});
+
+test('never-released research models anchor scores without claiming a runnable route', () => {
+  const research = view('retired=1&thin=1').rows.filter((r) => r.where === 'research');
+  assert.ok(research.length > 0);
+  for (const row of research) {
+    assert.equal(whereLabel(row), 'never released');
+    assert.equal(row.cmd, null);
+  }
+  for (const query of ['retired=0', 'max=0', 'ram=32&gpu=apple&max=any']) {
+    assert.ok(!view(query).shown.some((r) => r.where === 'research'), query);
+  }
 });
 
 test('task rankings use their own evidence, survive serialization and combine with hardware', async () => {
@@ -225,14 +238,14 @@ test('hardware filtering and score sorting never create scores for uncalibrated 
 
 test('API, terminal output, charts and copied commands use the selected score mode', async () => {
   for (const score of ['', '&score=set']) {
-    const query = `${setQuery}${score}&all=1&retired=1&n=10000`;
+    const query = `${setQuery}${score}&all=1&retired=1&thin=1&n=10000`;
     const board = setView(query);
     const response = await leaderboard(new Request(`https://whatmodel.sh/api?${query}&format=json`), SET_CAT).json();
     assert.equal(response.score_mode, board.scoreMode);
     assert.equal(response.comparison_set, secondary.id);
     assert.deepEqual(response.models.map((r: { id: string; score: number | null }) => [r.id, r.score]), board.shown.map((r) => [r.id, r.score]));
   }
-  const uncalibrated = setView(setQuery);
+  const uncalibrated = setView(`${setQuery}&retired=1`);
   assert.deepEqual(chartsFor(uncalibrated.rows, SET_CAT), []);
   const output = toText(uncalibrated.rows, null, null, { cat: SET_CAT, color: false, base: 'https://whatmodel.sh', limit: 1000, all: true, benches: uncalibrated.benches, updated: '' });
   assert.match(output, /not yet calibrated/);

@@ -80,6 +80,13 @@ fabricated accuracy or Elo conversion. Lower-is-better distances keep their raw 
 
 ## Maker icons
 
+`data/maker-countries.json` holds the geographic groups used by the open-versus-closed chart and is
+included in the public data export. Keys are maker names (the provider logo's `name` when available,
+otherwise `Model.provider`); values are `us`, `cn`, `intl` (international collaboration), or `other`.
+Unknown makers use `other`. The initial mapping was moved unchanged from the site's race chart;
+it covers its historical line leaders, not every provider. BigScience, EleutherAI and M-A-P are
+classified as international collaborations. Review a maker's own information before adding a classification.
+
 Each model row shows its maker's logo. `data/icons.json` holds one entry per logo, one line each:
 
 ```json

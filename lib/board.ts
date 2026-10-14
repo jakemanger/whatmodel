@@ -67,7 +67,7 @@ export function boardFromData(data: BoardData, q: URLSearchParams) {
     specs, max, thinBelow: 3, retired, includeUnscored: true,
     gFor: (m, v) => ({ g: scores.get(m.id)!.g, label: catOf(m) === "llm" ? bitsLabel(bitsOf(v)) : v.quant }),
     speedFor: (m, v, s, offloaded) => measuredFor(data.speeds, data.hardware, m, v, s, offloaded),
-  }).filter((r) => allRetired || r.where !== "retired" || scores.has(r.id));
+  }).filter((r) => allRetired || (r.where !== "retired" && r.where !== "research") || scores.has(r.id));
   // Text models with fewer than three results are only listed with ?thin=1; the rest are renumbered without them.
   const all = q.has("all");
   const thin = q.get("thin") === "1";

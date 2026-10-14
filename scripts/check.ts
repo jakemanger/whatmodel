@@ -23,6 +23,10 @@ const kv = load<{ source: string; models: Record<string, { full: number; swa?: [
 const UNITS = ["image", "video-second", "1M-chars", "audio-minute"];
 
 const errors: string[] = [];
+// Geographic groups used by the public open-versus-closed chart.
+for (const [maker, country] of Object.entries(load<Record<string, string>>("maker-countries.json"))) {
+  if (!maker.trim() || !["us", "cn", "intl", "other"].includes(country)) errors.push(`maker-countries.json: invalid classification for ${maker}`);
+}
 const retired: string[] = []; // no API or weights: kept to anchor the fit, not listed
 const noPrice: string[] = []; // API with no published price: never passes a budget filter
 const ids = new Set<string>();
@@ -31,7 +35,7 @@ for (const m of models) {
   if (ids.has(m.id)) errors.push(`duplicate model: ${m.id}`);
   ids.add(m.id);
   if (catalogueOnly(m)) retired.push(m.id);
-  if (m.availability !== undefined && (!["preview", "app"].includes(m.availability) || !/^https?:\/\//.test(m.availability_source ?? "")))
+  if (m.availability !== undefined && (!["preview", "app", "research"].includes(m.availability) || !/^https?:\/\//.test(m.availability_source ?? "")))
     errors.push(`${m.id}: ${m.availability} availability needs a reviewed announcement URL`);
   if (m.availability === "app" && !m.app) errors.push(`${m.id}: app availability needs the app's name`);
   for (const v of m.local?.variants ?? []) {
