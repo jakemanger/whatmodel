@@ -6,7 +6,7 @@
 
 Google · released 2022-06 · 540.35B params · proprietary
 
-**score 47.6** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 47.7** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▆█●▅▇▃▁▁▁   #241 of 523     54%      2
+math  ▁▁▃▆█●▅█▄▁▁▁   #248 of 526     53%      2
 </pre>
 
-<details><summary>math · #241 of 523 · 54% of its score</summary>
+<details><summary>math · #248 of 526 · 53% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          58.8%  ▃····▃··▃··● beats 5/5    easy · avg 66%     48%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   33.6%  ▄··▄··▄·▄··● beats 5/5    hard · avg 32%    6.2%  at its level
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          58.8%  ▃····▃··▃··● beats 5/5    easy · avg 65%     46%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   33.6%  ▄··▄··▄·▄··● beats 5/5    hard · avg 32%    6.3%  at its level
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ test                result  vs the others in its run  difficulty      counts  wh
 <pre>
 test                              result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2210.11399v2">CommonsenseQA (lab)</a>                72.2%  █·····▂▂▃▂●▄ beats 32/38   easy · avg 83%       17%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   63.9%  ▄······▄▄·▄● beats 5/5     medium · avg 62%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   63.9%  ▄······▄▄·▄● beats 5/5     medium · avg 62%     14%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11399v2">BIG-Bench Hard (lab)</a>               37.2%  ▁▁▁▁▂●▅▆█▃▃▁ beats 28/155  medium · avg 52%     10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>         17.6%  ▄·····▄█··▄● beats 5/5     hard · avg 15%      5.8%  typical
+<a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>         17.6%  ▄·····▄█··▄● beats 5/5     hard · avg 15%      5.9%  typical
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="paper-2206.14858v2"></a><a href="https://arxiv.org/html/2206.14858v2">Solving Quantitative Reasoning Problems…</a>        4   56% ▇▇▇▇▇▇▇
 <a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>        3   43% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 47.6
+weighted average                                   = 47.7
 </pre>
 
 <sub>Licences: Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt))</sub>

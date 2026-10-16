@@ -6,7 +6,7 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 45.4** ±2.7 · #463 of 725 · from 3 benchmark results across 3 sources
+**score 45.5** ±2.7 · #461 of 725 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails 
 <pre>
 test                                  result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        978.3  ▁▁●▂▂▂▄▅▅▆██ beats 6/145  avg 1058           55%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -5.431         32%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -5.446         32%  typical
 <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>     51.1%  █·█●····██·█ beats 2/5    hard · avg 48%     10%  blunt · at its level
 </pre>
 
@@ -42,7 +42,7 @@ source                                    results  share of the score
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   32% ▇▇▇▇
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1   10% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 45.4
+weighted average                                   = 45.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

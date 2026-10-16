@@ -25,7 +25,7 @@ coding       ▁▁▁▃▆██▇●▄▃▁   #128 of 460     81%      4
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 27%          24%  sharp · at its level · small run · seve…
-<a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%  ▂▂▅▅●███▆▂▃▃ beats 8/36    very hard · avg 11%     19%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%  ▂▂▅▅●███▆▂▃▃ beats 8/36    very hard · avg 11%     18%  at its level · small run · several runs
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%  ▁··▁▃▂●▇█▃▃▁ beats 18/60   hard · avg 28%          18%  at its level · small run · several runs
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%  ●▃▃·▃·▅▅▅█▃▃ beats 1/15    hard · avg 30%         3.4%  blunt · at its level · small run
 </pre>
@@ -38,7 +38,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 21/119  avg 970            36%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 21/119  avg 969            36%  sharp
 <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 27%     24%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%  ▁··▁▃▂●▇█▃▃▁ beats 18/60   hard · avg 28%     18%  at its level · small run · several runs
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%  ●▃▃·▃·▅▅▅█▃▃ beats 1/15    hard · avg 30%    3.4%  blunt · at its level · small run

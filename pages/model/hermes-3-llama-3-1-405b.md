@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #222 of 460*     27%      1
-chat &amp; writing  █········█·●       #1 of 3*    2.4%      1
+chat &amp; writing  █········█·●       #1 of 3*    2.5%      1
 </pre>
 
 <details><summary>coding · #222 of 460 · 27% of its score</summary>
@@ -31,11 +31,11 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #1 of 3 · 2.4% of its score</summary>
+<details><summary>chat &amp; writing · #1 of 3 · 2.5% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▁▃▁▂▄▄●█▃▂▁ beats 72/141  easy · avg 77%    2.4%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▁▃▁▂▄▄●█▃▂▁ beats 72/141  easy · avg 77%    2.5%  small run
 </pre>
 
 </details>
@@ -46,11 +46,11 @@ test                                result  vs the others in its run   difficult
 test                             result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▄▃ beats 48/104   hard · avg 38%       13%  sharp · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>              75.4%  ▁▁▁▁▂▄▅▆█●▃▁ beats 129/155  medium · avg 67%     12%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 67%    8.7%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 67%    8.6%  sharp · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        85.0%  ▁▁▁▁▁▂▂▅██●▄ beats 186/214  easy · avg 77%      8.3%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 48%    7.3%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 83%      5.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 47%    7.4%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 49%      5.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 83%      4.9%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 87%      3.6%  small run
 <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.5%  small run
 <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 51%    2.2%  blunt · at its level · small run

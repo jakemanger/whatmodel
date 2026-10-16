@@ -6,7 +6,7 @@
 
 IBM · released 2026-08 · 3.66B params · apache-2.0
 
-**score 57.3** ±0.8 · #238 of 725 · from 35 benchmark results across 3 sources
+**score 57.3** ±0.8 · #236 of 725 · from 35 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #180 of 303     13%      6
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #181 of 306     13%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #226 of 460     21%      6
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #227 of 395     10%      3
-math            ▁▁▃▅█▆●█▄▁▁▁   #151 of 424     30%      5
+math            ▁▁▃▅█▆●█▄▁▁▁   #152 of 427     30%      5
 web search      █·█▄█●·▄▄·▄▄     #6 of 13*    2.1%      1
 </pre>
 
-<details><summary>agent tasks · #180 of 303 · 13% of its score</summary>
+<details><summary>agent tasks · #181 of 306 · 13% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty            counts  why
@@ -45,7 +45,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unspecif…</a>   58.9%  ▃····█·▃▅●·▃ beats 7/8    medium · avg 38%        8.3%  at its level · several runs
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unspecif…</a>   58.9%  ▃····█·▃▅●·▃ beats 7/8    medium · avg 38%        8.4%  at its level · several runs
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Easy)</a>      54.6%  ▄···█▄··▄●▄▄ beats 6/8    hard · avg 32%          3.4%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Medium)</a>     5.3%  █···▂··●▂··▂ beats 6/8    very hard · avg 1.9%    3.2%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                   36.8%  ▄··▄▄█··▄·▄● beats 7/8    very hard · avg 10%     2.5%  sharp · noisy
@@ -61,22 +61,22 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](grani
 
 <pre>
 test                              result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                    1289.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 123/379  avg 1258          6.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                    1289.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 123/379  avg 1258          6.3%  blunt
 <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Arena-Hard v2 aggregate (lab)</a>      35.0%  ▁▁··●▃▁▃█▁▁▇ beats 3/22     hard · avg 27%    3.3%  sharp · at its level · small run
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecified)</a>   93.7%  ▄▄····▄··██● beats 8/8      easy · avg 75%    0.2%  noisy
 </pre>
 
 </details>
 
-<details><summary>math · #151 of 424 · 30% of its score</summary>
+<details><summary>math · #152 of 427 · 30% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>                  79.4%  █▄▄▄▄····●·▄ beats 7/8    medium · avg 59%        12%  sharp · small run · several runs
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>         60.8%  ▅··▃▃·▃··▃·● beats 6/8    hard · avg 29%         8.0%  sharp · at its level
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                  83.5%  ▄·▄█·▄▄···●▄ beats 7/8    medium · avg 47%       5.1%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>         60.8%  ▅··▃▃·▃··▃·● beats 6/8    hard · avg 30%         7.9%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                  83.5%  ▄·▄█·▄▄···●▄ beats 7/8    medium · avg 47%       5.0%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">HMMT February 2025 (lab)</a>   66.7%  ▁▁▁▃▁●▅▃██▁▄ beats 8/31   medium · avg 58%       2.8%  at its level · small run
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500</a>                   97.0%  ██▄▄▄··●···▄ beats 7/8    very easy · avg 89%    2.3%  maxed out
 </pre>
@@ -98,7 +98,7 @@ test           result  vs the others in its run  difficulty           counts  wh
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                             65.8%  ▂··▂●·▂▂···▂ beats 5/8     medium · avg 58%       6.5%  at its level · several runs
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                             65.8%  ▂··▂●·▂▂···▂ beats 5/8     medium · avg 54%       6.5%  at its level · small run · several runs
 <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">GPQA (subset unspecified) (lab)</a>      54.8%  ▂▁▂▂▄▃▆▃●█▄▃ beats 56/104  hard · avg 41%         5.1%  sharp · at its level · small run
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench</a>                              21.8%  ▃····▃▅··●▃▃ beats 6/8     very hard · avg 12%    2.8%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux</a>                           78.9%  ▂···●··▂▂··▂ beats 1/8     easy · avg 76%         2.7%  typical
@@ -109,8 +109,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">IFBench prompt-level (lab)</a>           74.3%  █▄●··▄·▄···▄ beats 3/6     medium · avg 62%       1.4%  at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">ProfBench (lab)</a>                      32.1%  ●·········██ beats 0/2     hard · avg 24%         1.4%  at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 64k (lab)</a>                      67.5%  ▁▁·●·▂▃▅█▂▁▁ beats 2/25    easy · avg 69%         1.2%  small run
-<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-ProX-Lite (lab)</a>                 27.8%  ●·········██ beats 0/2     hard · avg 33%         1.0%  at its level · small run
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspecified)</a>   75.9%  ▄▄···▄·▄·▄█● beats 7/8     medium · avg 59%       0.9%  blunt · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-ProX-Lite (lab)</a>                 27.8%  ●·········██ beats 0/2     hard · avg 33%         0.9%  at its level · small run
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspecified)</a>   75.9%  ▄▄···▄·▄·▄█● beats 7/8     medium · avg 59%       0.9%  at its level
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
-**score 43.2** ±1.6 · #508 of 725 · from 5 benchmark results across 4 sources
+**score 43.2** ±1.6 · #509 of 725 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.0%  ▁▁▂▃▄▄█●▃▂▂▁ beats 103/140  very easy · avg 94%    2.3%  blunt · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.0%  ▁▁▂▃▄▄█●▃▂▂▁ beats 103/140  very easy · avg 94%    2.4%  blunt · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   95.7%  ▁▂▁▂▅█▂▃▄▃●▁ beats 95/98    very easy · avg 90%    0.0%  blunt
 </pre>
 

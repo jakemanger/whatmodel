@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 57.9** ±0.9 · #226 of 725 · from 24 benchmark results across 5 sources
+**score 57.9** ±0.9 · #224 of 725 · from 24 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆██●▆▄▃▁   #142 of 460*     12%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #174 of 395     11%      3
-math            ▁▁▃▅█▆●█▄▁▁▁    #169 of 424     19%      3
+math            ▁▁▃▅█▆●█▄▁▁▁    #171 of 427     19%      3
 </pre>
 
 <details><summary>coding · #142 of 460 · 12% of its score</summary>
@@ -36,7 +36,7 @@ test                                result  vs the others in its run    difficul
 
 <details><summary>chat &amp; writing · #174 of 395 · 11% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -47,15 +47,15 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #169 of 424 · 19% of its score</summary>
+<details><summary>math · #171 of 427 · 19% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 44%    8.3%  sharp · at its level · small run · seve…
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 55%    7.3%  sharp · small run · several runs
-<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>   43.8%  ▁▁▁●▁▅▅▃██▁▄ beats 4/31   hard · avg 31%      3.1%  at its level · small run
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 44%    8.4%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 55%    7.4%  sharp · small run · several runs
+<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>   43.8%  ▁▁▁●▁▅▅▃██▁▄ beats 4/31   hard · avg 31%      3.0%  at its level · small run
 </pre>
 
 </details>

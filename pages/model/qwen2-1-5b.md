@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁●▃▆█▆▅▅▅▄▃▁   #298 of 303*    1.3%      1
+agent tasks     ▁●▃▆█▆▅▅▅▄▃▁   #301 of 306*    1.3%      1
 coding          █··········●       #1 of 2*    3.9%      1
 chat &amp; writing  █··········●       #1 of 2*    1.3%      1
-math            ▁●▃▅█▆▄█▄▁▁▁    #405 of 424     45%      4
+math            ▁▁●▅█▆▄█▄▁▁▁    #408 of 427     45%      4
 </pre>
 
-<details><summary>agent tasks · #298 of 303 · 1.3% of its score</summary>
+<details><summary>agent tasks · #301 of 306 · 1.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -51,15 +51,15 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #405 of 424 · 45% of its score</summary>
+<details><summary>math · #408 of 427 · 45% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       64.1%  ●···█▄▄·▄·▄█ beats 0/8    very easy · avg 92%     21%  sharp · at its level · several runs
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>       43.4%  ●▄·▁▄█▅▅▅███ beats 0/43   very easy · avg 87%     17%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   25.1%  ●····▃·▅·▅·█ beats 0/8    easy · avg 74%         4.2%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   25.1%  ●····▃·▅·▅·█ beats 0/8    easy · avg 73%         4.3%  at its level
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                 5.5%  ●·····▃··█▅▅ beats 0/8    hard · avg 34%         2.7%  typical
 </pre>
 

@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #134 of 343     31%      4
-coding              ▁▁▁▃▅▇█▇●▄▂▁    #109 of 529     41%      4
+agent tasks         ▁▁▂▆█▆●▄▄▃▂▁    #135 of 346     31%      4
+coding              ▁▁▁▃▅▇█▇●▄▂▁    #110 of 529     41%      4
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃    #92 of 466*    7.4%      1
-math                ▁▂▃▆█▇●▇▃▁▁▁   #193 of 523*    8.1%      2
+math                ▁▁▃▆██●█▄▁▁▁   #194 of 526*    8.1%      2
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #81 of 182*    5.2%      1
 web search          ▂·▂▇●█▃▄▁▂▁▁     #63 of 92*    3.0%      1
 </pre>
 
-<details><summary>agent tasks · #134 of 343 · 31% of its score</summary>
+<details><summary>agent tasks · #135 of 346 · 31% of its score</summary>
 
-Beats [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty            counts  why
@@ -38,9 +38,9 @@ test                   result  vs the others in its run  difficulty            c
 
 </details>
 
-<details><summary>coding · #109 of 529 · 41% of its score</summary>
+<details><summary>coding · #110 of 529 · 41% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
+Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 122B-A10B](qwen3-5-122b-a10b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -63,14 +63,14 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #193 of 523 · 8.1% of its score</summary>
+<details><summary>math · #194 of 526 · 8.1% of its score</summary>
 
 Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               85.0%  ▂▂▅▆▄█▆▃●▂▃▄ beats 72/92   hard · avg 27%          4.1%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   64.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 92/193  very hard · avg 6.9%    3.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   64.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 92/195  very hard · avg 6.9%    3.9%  sharp · noisy
 </pre>
 
 </details>
@@ -101,7 +101,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         76.3%  ▁▁▁▁▂▄▆▄●▇█▅ beats 117/208  hard · avg 38%          10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         76.3%  ▁▁▁▁▂▄▆▄●▇█▄ beats 117/209  hard · avg 38%          10%  sharp · at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1260.4  ▁·▂▁▄▅▅▃●▄▁▁ beats 37/62    avg 1031               4.4%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   81.0%  ▁▁·▁▂▂▄█▄▅▄● beats 63/66    hard · avg 29%         3.6%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   74.5%  ▁▁▁▁·▂·█▆█●▁ beats 27/31    medium · avg 46%       2.6%  typical

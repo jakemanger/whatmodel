@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #281 of 460     76%      6
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #282 of 460     76%      6
 </pre>
 
-<details><summary>coding · #281 of 460 · 76% of its score</summary>
+<details><summary>coding · #282 of 460 · 76% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    46.9%  ▂▂▃▄▄█▁▄●▃▁▃ beats 32/42  medium · avg 52%     12%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              35.3%  ▃▂·▆▆█●▆▅▃▃▃ beats 16/33  medium · avg 39%    4.7%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              35.3%  ▃▂·▆▆█●▆▅▃▃▃ beats 16/33  medium · avg 39%    4.8%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.2%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 35/58  medium · avg 48%    4.6%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--deepseek-coder-6.7b-instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   73.6%  ▂·▂▂▂▆●▆▆▆▃█ beats 9/29   easy · avg 74%      2.5%  at its level
 </pre>

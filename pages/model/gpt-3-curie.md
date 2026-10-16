@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 24.9** ±1.0 · comparison only: no current run option verified · from 31 benchmark results across 7 sources
+**score 24.8** ±1.0 · comparison only: no current run option verified · from 31 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆█▇▅▇▃▁▁▁   #494 of 523*    6.4%      1
+math  ▁●▃▆██▅█▄▁▁▁   #502 of 526*    6.8%      1
 </pre>
 
-<details><summary>math · #494 of 523 · 6.4% of its score</summary>
+<details><summary>math · #502 of 526 · 6.8% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.5%  ▅·▂●·······▂ beats 8/9    medium · avg 63%    6.4%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.5%  ▅·▂●·······▂ beats 8/9    medium · avg 62%    6.8%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -37,14 +37,14 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        24.7%  █····●·····▁ beats 8/9    easy · avg 75%          13%  sharp · too hard for it · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                           65.6%  ▄·▄·▄▄▄··●·▄ beats 6/7    easy · avg 87%          12%  at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        33.4%  ▄····▄···●▄▄ beats 2/5    easy · avg 78%          10%  sharp
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            68.5%  ▄·█·█··▄●··▄ beats 6/7    very easy · avg 91%     10%  at its level · several runs
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                11.3%  █·▆▂▄▂●····▂ beats 11/12  easy · avg 70%         7.0%  sharp
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   69.3%  █·▄··█··●··▄ beats 5/7    very easy · avg 88%    4.5%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     21.7%  ······●····· beats 1/5    very hard · avg 25%    4.3%  too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>    8.2%  ●·▄······▄·▄ beats 0/4    medium · avg 63%       3.8%  typical
-<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             19.6%  █···█·█●█··█ beats 3/5    medium · avg 64%       3.4%  typical
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            68.5%  ▄·█·█··▄●··▄ beats 6/7    easy · avg 82%          10%  at its level · several runs
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                11.3%  █·▆▂▄▂●····▂ beats 11/12  easy · avg 70%         6.8%  sharp
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   69.3%  █·▄··█··●··▄ beats 5/7    very easy · avg 88%    4.4%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     21.7%  ······●····· beats 1/5    very hard · avg 25%    4.4%  too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             19.6%  █···█·█●█··█ beats 3/5    easy · avg 67%         4.2%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>    8.2%  ●·▄······▄·▄ beats 0/4    medium · avg 63%       3.7%  typical
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           29.0%  ▅·······●··▃ beats 3/5    hard · avg 49%         3.3%  too hard for it
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 77.9%  █··▃··▃▃·●·▃ beats 6/7    easy · avg 88%         3.3%  blunt · at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 77.9%  █··▃··▃▃·●·▃ beats 6/7    easy · avg 88%         3.2%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             68.2%  ▄···▄··●·▄·▄ beats 3/5    easy · avg 87%         2.6%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 91.8%  ██····█●█··█ beats 3/5    very easy · avg 98%    2.3%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 1 (prompted)</a>              32.5%  ●··▂·······▂ beats 0/5    hard · avg 46%         2.1%  sharp · too hard for it · noisy
@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted)</a>              35.3%  ▃······●█··▃ beats 1/5    hard · avg 43%         1.5%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                37.7%  ▄····▄█●···▄ beats 4/5    medium · avg 56%       1.3%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted)</a>              33.8%  █●·███·····█ beats 1/5    very hard · avg 43%    1.3%  too hard for it · noisy
-<a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy)</a>      28.8%  ▃······█···● beats 4/5    very hard · avg 35%    1.2%  blunt · too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy)</a>      28.8%  ▃······█···● beats 4/5    very hard · avg 35%    1.1%  blunt · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           54.7%  █········▁▃● beats 9/9    hard · avg 62%         1.1%  too hard for it · noisy
 <a href="https://arxiv.org/html/2204.06745v1">HEAD-QA (English, harness)</a>           31.7%  █··█····●··█ beats 2/3    medium · avg 58%       1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">SuperGLUE WSC (prompted)</a>             54.8%  █··········● beats 5/5    hard · avg 62%         0.8%  blunt
@@ -74,10 +74,10 @@ source                                    results  share of the score
 <a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card</a>                  4   13% ▇▇
 <a name="acl-2023-emnlp-main-927"></a><a href="https://aclanthology.org/2023.emnlp-main.927.pdf">It Ain't Over: A Multi-aspect Diverse M…</a>        1    4% ▇
 <a name="acl-2023-emnlp-main-522"></a><a href="https://aclanthology.org/2023.emnlp-main.522.pdf">Increasing Probability Mass on Answer C…</a>        2    4% ▇
-<a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    3% ▇
+<a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    2% ▇
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 24.9
+weighted average                                   = 24.8
 </pre>
 
 <sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · It Ain't Over: A Multi-aspect Diverse Math Word Problem Dataset ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-927-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

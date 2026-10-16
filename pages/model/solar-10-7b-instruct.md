@@ -26,7 +26,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    43.3%  ▁·▁▁▃●▆▅█▃▁▁ beats 27/99  easy · avg 76%     40%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    43.3%  ▁·▁▁▃●▆▅█▃▁▁ beats 27/99  easy · avg 76%     39%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   37.2%  ▁·▁▁▁▃●▄▄█▃▁ beats 26/99  easy · avg 70%     29%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        36.2%  ▁···▁●▂▅▇█▆▂ beats 4/75   easy · avg 66%    6.0%  at its level
 </pre>
@@ -51,10 +51,10 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   57.6%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 24/95    medium · avg 64%    4.1%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">MedQA (USMLE, 4 options)</a>             54.7%  ▁▁··▄▁▁··▄▃● beats 13/17    medium · avg 71%    4.0%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      57.4%  ▁··▁▁▂▂▆▅●█▆ beats 35/70    medium · avg 61%    2.9%  at its level
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">MedMCQA</a>                              47.4%  ▂▂··▄▄▂▂·▄●█ beats 10/17    medium · avg 63%    1.9%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      57.4%  ▁··▁▁▂▂▆▅●█▆ beats 35/70    medium · avg 61%    3.0%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">MedMCQA</a>                              47.4%  ▂▂··▄▄▂▂·▄●█ beats 10/17    medium · avg 63%    1.8%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 184/276  medium · avg 72%    1.1%  at its level · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-01-05%2008%3A53%3A29.123401.json">TriviaQA</a>                             42.0%  ▁··▁█▃▃▁▄●▄█ beats 17/28    easy · avg 71%      0.5%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-01-05%2008%3A53%3A29.123401.json">TriviaQA</a>                             42.0%  ▁··▁█▃▃▁▄●▄█ beats 17/28    easy · avg 73%      0.6%  at its level · noisy
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16%2015%3A38%3A23.436788.json">PubMedQA</a>                             52.6%  ●·▂▆·▄▂▄▄▂█▂ beats 0/17     medium · avg 75%    0.2%  blunt · at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-02-17%2003%3A25%3A34.987605.json">TruthfulQA MC2</a>                       71.7%  ▅▃█▆▁▂▅···▁● beats 31/31    medium · avg 57%    0.1%  blunt · at its level
 </pre>

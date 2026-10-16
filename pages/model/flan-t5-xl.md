@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 37.2** ±0.9 · #599 of 725 · from 22 benchmark results across 14 sources
+**score 37.3** ±0.9 · #599 of 725 · from 22 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▅█▆▄█▄▁▁▁   #397 of 424     25%      2
+math  ▁▁●▅█▆▄█▄▁▁▁   #403 of 427     24%      2
 </pre>
 
-<details><summary>math · #397 of 424 · 25% of its score</summary>
+<details><summary>math · #403 of 427 · 24% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        13.5%  ▂▂▂▂●▄▅▇██▆▄ beats 40/200  medium · avg 50%     18%  sharp · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    1.9%  ▆·●·▄▂▂▂▂█▄▆ beats 3/18    medium · avg 48%    7.0%  sharp
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        13.5%  ▂▂▂▂●▄▅▇██▆▄ beats 40/206  medium · avg 49%     17%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    1.9%  ▆·●·▄▂▂▂▂█▄▆ beats 3/18    medium · avg 47%    7.0%  sharp
 </pre>
 
 </details>
@@ -35,10 +35,10 @@ test        result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           52.4%  ▁···▁··▃▁●▅█ beats 6/18   easy · avg 74%          26%  at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 67%        23%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           52.4%  ▁···▁··▃▁●▅█ beats 6/18   easy · avg 74%          27%  at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 67%        24%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   16.6%  ▂··▂·▂●▄·███ beats 3/18   medium · avg 61%       4.3%  at its level
-<a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   58.0%  █···█·····█● beats 3/3    medium · avg 68%       3.3%  typical
+<a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   58.0%  █···█·····█● beats 3/3    medium · avg 68%       3.4%  typical
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   69.6%  ▃····▃·▃▃●▅▅ beats 6/10   easy · avg 81%         2.6%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    46.6%  ▂▂··▂·▂··●█▄ beats 4/10   medium · avg 56%       2.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   38.0%  █···▄▄·▄▄●·▄ beats 6/7    medium · avg 51%       2.0%  blunt · at its level
@@ -62,9 +62,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   31% ▇▇▇▇
-<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2   23% ▇▇▇
+<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2   24% ▇▇▇
 <a name="paper-2301.12726v1-specializing"></a><a href="https://arxiv.org/html/2301.12726v1">Specializing Smaller Language Models to…</a>        1   14% ▇▇
-<a name="acl-2023-acl-long-136"></a><a href="https://aclanthology.org/2023.acl-long.136.pdf">Augmentation-Adapted Retriever Improves…</a>        2    8% ▇
+<a name="acl-2023-acl-long-136"></a><a href="https://aclanthology.org/2023.acl-long.136.pdf">Augmentation-Adapted Retriever Improves…</a>        2    9% ▇
 <a name="acl-2023-findings-emnlp-536"></a><a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS: A Zero-Shot Benchmark for …</a>        4    6% ▇
 <a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        1    4% ▇
 <a name="acl-2023-findings-emnlp-504"></a><a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA: Probe the World Models of LLMs w…</a>        1    3% ▇
@@ -76,7 +76,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-acl-50"></a><a href="https://aclanthology.org/2023.findings-acl.50.pdf">Aligning Instruction Tasks Unlocks Larg…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 37.2
+weighted average                                   = 37.3
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In ([CC BY 4.0](../../licenses/acl-2023-acl-long-136-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt)) · POSQA: Probe the World Models of LLMs with Size Comparisons ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-504-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-782-CC-BY-4-0.txt)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

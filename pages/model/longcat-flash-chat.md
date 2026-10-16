@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #105 of 303     22%      5
-coding          ▁▁▁▃▆██●▆▄▃▁    #160 of 460     22%      4
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #106 of 306     22%      5
+coding          ▁▁▁▃▆██●▆▄▃▁    #161 of 460     22%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #107 of 395*     13%      2
-math            ▁▁▃▅█▆▄●▄▁▁▁    #121 of 424    7.8%      3
+math            ▁▁▃▅█▆▄●▄▁▁▁    #125 of 427    7.9%      3
 </pre>
 
-<details><summary>agent tasks · #105 of 303 · 22% of its score</summary>
+<details><summary>agent tasks · #106 of 306 · 22% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified (lab)</a>             60.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/131  hard · avg 16%          7.6%  sharp · at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail (lab)</a>                71.3%  ▅···●·▃····▃ beats 4/6     medium · avg 40%        4.9%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified (lab)</a>             60.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/131  hard · avg 16%          7.7%  sharp · at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail (lab)</a>                71.3%  ▅···●·▃····▃ beats 4/6     medium · avg 39%        4.9%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Telecom (lab)</a>               73.7%  ██··███···█● beats 6/6     very hard · avg 8.5%    4.4%  sharp · at its level · noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Airline (lab)</a>               58.0%  ▄·▄··▄···█●▄ beats 5/6     hard · avg 24%          3.2%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Terminal-Bench (pre-2.0 release) …</a>   39.5%  ▄·▄···▄▄···● beats 4/5     very hard · avg 12%     1.9%  at its level
@@ -37,16 +37,16 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #160 of 460 · 22% of its score</summary>
+<details><summary>coding · #161 of 460 · 22% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Grok 4.1 Fast (Reasoning)](grok-4-1-fast-reasoning.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified (lab)</a>             60.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/131  hard · avg 16%      7.6%  sharp · at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified (lab)</a>             60.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/131  hard · avg 16%      7.7%  sharp · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">LiveCodeBench (version unspecifie…</a>   48.0%  █·······▄▄▄● beats 5/5     hard · avg 20%      6.2%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MBPP+ (lab)</a>                          79.6%  ▃·····▃●▃··▃ beats 2/6     medium · avg 60%    4.3%  typical
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">HumanEval+ (lab)</a>                     88.4%  ▄▄●·····▄▄·█ beats 2/6     easy · avg 65%      4.1%  sharp · maxed out
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">HumanEval+ (lab)</a>                     88.4%  ▄▄●·····▄▄·█ beats 2/6     easy · avg 65%      4.0%  sharp · maxed out
 </pre>
 
 </details>
@@ -63,15 +63,15 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #121 of 424 · 7.8% of its score</summary>
+<details><summary>math · #125 of 427 · 7.9% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2025 (lab)</a>   61.3%  ▄▄···▄▄··●·█ beats 4/6    hard · avg 16%         4.1%  sharp · at its level · noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2024 (lab)</a>   70.4%  ▁▁▁▂▁▃▁▅●██▃ beats 38/85  hard · avg 30%         2.2%  sharp · at its level · noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MATH-500 (lab)</a>    96.4%  ▄·▄··●··▄·▄▄ beats 3/6    very easy · avg 87%    1.6%  maxed out · noisy
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2024 (lab)</a>   70.4%  ▁▁▁▂▁▃▁▅●██▃ beats 38/85  hard · avg 29%         2.2%  sharp · at its level · noisy
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MATH-500 (lab)</a>    96.4%  ▄·▄··●··▄·▄▄ beats 3/6    very easy · avg 87%    1.5%  maxed out · noisy
 </pre>
 
 </details>
@@ -87,8 +87,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">C-Eval (lab)</a>                         90.4%  █····▄·▄·●▄▄ beats 4/6    medium · avg 68%        3.5%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">VitaBench (lab)</a>                      24.3%  █·······▄█·● beats 6/6    very hard · avg 6.3%    3.4%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">COLLIE (constrained text generati…</a>   57.1%  ▄···▄█▄····● beats 6/6    hard · avg 30%          3.3%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">ZebraLogic (lab)</a>                     89.3%  █···█··██●·█ beats 4/5    medium · avg 51%        1.4%  noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME (lab)</a>                     43.0%  █····█·●▄··▄ beats 4/6    hard · avg 24%          1.1%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">ZebraLogic (lab)</a>                     89.3%  █···█··██●·█ beats 4/5    medium · avg 50%        1.5%  noisy
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME (lab)</a>                     43.0%  █····█·●▄··▄ beats 4/6    hard · avg 23%          1.1%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">DROP (lab)</a>                           79.1%  ▄···▄·▄●·▄·▄ beats 4/6    medium · avg 58%        0.4%  blunt · at its level · noisy
 </pre>
 
@@ -100,7 +100,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-meituan-longcat-flash-chat"></a><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Meituan LongCat-Flash-Chat model card (…</a>       22   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="card-meituan-longcat-flash-chat"></a><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Meituan LongCat-Flash-Chat model card (…</a>       22   91% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 65.8

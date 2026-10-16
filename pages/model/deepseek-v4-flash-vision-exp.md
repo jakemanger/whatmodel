@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 74.2** ±2.3 · #40 of 725 · from 8 benchmark results across 2 sources
+**score 74.2** ±2.3 · #38 of 725 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁     #34 of 303     58%      4
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁     #34 of 306     58%      4
 coding              ▁▁▁▃▆██▇▆●▃▁    #72 of 460*     12%      1
 vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄   #121 of 147*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #34 of 303 · 58% of its score</summary>
+<details><summary>agent tasks · #34 of 306 · 58% of its score</summary>
 
-Beats [Muse Spark Open](muse-spark-open.md), [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>             83.9%  ▁·▁·▁▁▄▃▄█●█ beats 44/58  hard · avg 24%           26%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>        59.3%  ▂····▁▁▁●██▇ beats 8/29   hard · avg 19%           12%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>        59.3%  ▂····▁▁▁●██▇ beats 8/29   hard · avg 20%           12%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   27.3%  ▂·▂·●▂···▂▄▄ beats 4/11   very hard · avg 7.3%     11%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>            75.9%  ▂·▂▂▅▃···▂●█ beats 12/18  medium · avg 35%        8.5%  blunt · at its level · small run
 </pre>
@@ -41,7 +41,7 @@ Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)
 
 <pre>
 test                           result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%  ▂····▁▁▁●██▇ beats 8/29   hard · avg 19%     12%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%  ▂····▁▁▁●██▇ beats 8/29   hard · avg 20%     12%  at its level · small run
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 35.5** ±0.6 · #615 of 725 · from 20 benchmark results across 9 sources
+**score 35.5** ±0.6 · #616 of 725 · from 20 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁    #427 of 460     60%      4
+coding          ▁▁▁●▆██▇▆▄▃▁    #427 of 460     59%      4
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #362 of 395     15%      4
-math            ▁▁▃▅●▆▄█▄▁▁▁   #319 of 424*    2.6%      1
+math            ▁▁▃▅●▆▄█▄▁▁▁   #326 of 427*    2.5%      1
 </pre>
 
-<details><summary>coding · #427 of 460 · 60% of its score</summary>
+<details><summary>coding · #427 of 460 · 59% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                   30.0%  ▁·▁▁●▄▆▅█▃▁▁ beats 15/99  easy · avg 76%     32%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                   30.0%  ▁·▁▁●▄▆▅█▃▁▁ beats 15/99  easy · avg 76%     31%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                  23.2%  ▁·▁▁▁●▄▄▄█▃▁ beats 11/99  easy · avg 70%     20%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                       34.7%  ▁···▁●▂▅▇█▆▂ beats 3/75   easy · avg 66%    4.7%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   54.3%  ▃▃▃·●▃▃█▃▂▂▅ beats 9/25   easy · avg 83%    2.8%  sharp · at its level
@@ -49,13 +49,13 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #319 of 424 · 2.6% of its score</summary>
+<details><summary>math · #326 of 427 · 2.5% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   28.0%  ▆▂▅●▅▅▃▆···▂ beats 8/25   easy · avg 72%    2.6%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   28.0%  ▆▂▅●▅▅▃▆···▂ beats 8/25   easy · avg 72%    2.5%  sharp · at its level
 </pre>
 
 </details>
@@ -65,12 +65,12 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 16.7%  ▁▁▁▂●▃▂█▆▃▅▃ beats 10/61    medium · avg 38%    8.6%  typical
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       44.9%  ▁·····▂●▂▅·▁ beats 5/25     medium · avg 74%    4.3%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       44.9%  ▁·····▂●▂▅·▁ beats 5/25     medium · avg 74%    4.4%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 58.6%  ▁▁▃▃▄█●▁█··▁ beats 17/25    medium · avg 72%    3.9%  at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/HuggingFaceH4/zephyr-7b-beta/results_2024-02-11%2013%3A29%3A45.375857.json">Natural Questions (closed book)</a>      25.2%  ▁·▁·▁▂▁▂·▅▂● beats 20/28    medium · avg 48%    3.6%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.5%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 111/276  medium · avg 72%    0.8%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   23.7%  ●··▁▃▂▂▂█▅▁▂ beats 1/25     medium · avg 59%    0.6%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/HuggingFaceH4/zephyr-7b-beta/results_2023-12-29%2001%3A37%3A53.771889.json">TriviaQA</a>                             64.4%  ▁··▁█▃▃▁▄▅▄● beats 24/28    easy · avg 71%      0.4%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/HuggingFaceH4/zephyr-7b-beta/results_2023-12-29%2001%3A37%3A53.771889.json">TriviaQA</a>                             64.4%  ▁··▁█▃▃▁▄▅▄● beats 24/28    easy · avg 73%      0.5%  at its level · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/HuggingFaceH4/zephyr-7b-beta/results_2023-12-15%2001%3A27%3A07.699123.json">HaluEval QA hallucination detecti…</a>   51.8%  █▁▁·●▁·▁▁▁▁▁ beats 19/27    hard · avg 66%      0.3%  noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/HuggingFaceH4/zephyr-7b-beta/results_2023-12-08%2022%3A58%3A30.457732.json">TruthfulQA MC2</a>                       55.1%  ▅▃█▆▁▂●···▁▁ beats 26/31    medium · avg 57%    0.1%  blunt · at its level
 </pre>

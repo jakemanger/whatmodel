@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 6.94B params (1B active) · apache-2.0
 
-**score 48.8** ±0.9 · #389 of 725 · from 24 benchmark results across 3 sources
+**score 48.9** ±0.9 · #388 of 725 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -19,7 +19,7 @@ task            vs the others          rank  counts  tests
 agent tasks     ▄·●········█       #3 of 4*    1.3%      1
 coding          █···●······▄        #2 of 4     32%      7
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #235 of 395*    4.7%      2
-math            ▁▁▃▅█●▄█▄▁▁▁    #241 of 424     25%      5
+math            ▁▁▃▅█●▄█▄▁▁▁    #244 of 427     25%      5
 </pre>
 
 <details><summary>agent tasks · #3 of 4 · 1.3% of its score</summary>
@@ -41,7 +41,7 @@ test                result  vs the others in its run    difficulty        counts
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+ (lab)</a>     76.0%  ▁·▁▁▂▃▄▄█●▄▃ beats 98/145   easy · avg 79%      8.2%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP (lab)</a>           80.0%  ▁▁▁▄▅█▆▅▄●▂▁ beats 80/86    easy · avg 77%      3.9%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>   41.1%  ▅····▃·█▃▅●▃ beats 11/12    medium · avg 41%    3.1%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>      55.8%  ▃··▄·▅●▇▄█▃▄ beats 10/31    medium · avg 56%    3.0%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>      55.8%  ▃··▄·▅●▇▄█▃▄ beats 10/31    medium · avg 56%    3.1%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+ (lab)</a>          69.0%  ▁··▁▁▃▄█●▄▁▁ beats 80/120   easy · avg 68%      2.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (lab)</a>     39.6%  ▂▂█●▅▂▁·▁·▁▁ beats 23/51    medium · avg 46%    1.7%  blunt · at its level
 </pre>
@@ -60,13 +60,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #241 of 424 · 25% of its score</summary>
+<details><summary>math · #244 of 427 · 25% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                          84.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 150/200  very easy · avg 86%    8.8%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                          84.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 150/206  very easy · avg 86%    8.5%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   69.6%  ▁·▃▁▁▂▁█▄▁●▃ beats 24/27    easy · avg 68%         5.4%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>           49.9%  ▅····▅·●▃▃·▅ beats 6/10     medium · avg 52%       5.2%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>                   81.1%  ▃▃····▃·▅▅●▃ beats 7/10     easy · avg 82%         4.1%  typical
@@ -79,10 +79,10 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      32.6%  ▂▁▂▂▄●▆▃▅█▄▃ beats 29/104   very hard · avg 35%    7.1%  sharp
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 66.3%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 103/155  easy · avg 74%         7.0%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      32.6%  ▂▁▂▂▄●▆▃▅█▄▃ beats 29/104   very hard · avg 35%    7.2%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 66.3%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 103/155  medium · avg 74%       7.0%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (lab)</a>                           68.7%  ▁▁▁▁▁▂▂▅█●▆▄ beats 130/214  medium · avg 72%       6.7%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                       44.9%  ▁▁·▁▁▁●▂▄▅█▁ beats 40/188   medium · avg 50%       4.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                       44.9%  ▁▁·▁▁▁●▂▄▅█▁ beats 40/188   medium · avg 50%       5.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                        53.1%  ▂····▂▂●▄▄█▄ beats 9/36     medium · avg 56%       4.2%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          61.9%  ▂▁▁▂▃▂▄●▅██▃ beats 15/46    medium · avg 62%       3.7%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   70.4%  ▃·▁▁▂▁▂▅●▇▄▁ beats 51/100   medium · avg 66%       1.6%  sharp · at its level · noisy
@@ -98,11 +98,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-ibm-granite-granite-4-0-h-small"></a><a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">ibm-granite/granite-4.0-h-small model c…</a>       21   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="card2-ibm-granite-granite-4-0-h-small"></a><a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">ibm-granite/granite-4.0-h-small model c…</a>       21   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.8
+weighted average                                   = 48.9
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-small model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.0-h-small.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

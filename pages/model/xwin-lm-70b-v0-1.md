@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #392 of 460*    7.4%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #392 of 460*    7.5%      1
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #293 of 395*     49%      2
-math            ▁▁▃▅█●▄█▄▁▁▁   #224 of 424*     11%      1
+math            ▁▁▃▅█●▄█▄▁▁▁   #232 of 427*     11%      1
 </pre>
 
-<details><summary>coding · #392 of 460 · 7.4% of its score</summary>
+<details><summary>coding · #392 of 460 · 7.5% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   66.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 13/25  easy · avg 83%    7.4%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   66.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 13/25  easy · avg 83%    7.5%  sharp · at its level
 </pre>
 
 </details>
@@ -44,9 +44,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #224 of 424 · 11% of its score</summary>
+<details><summary>math · #232 of 427 · 11% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
@@ -60,7 +60,7 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       65.6%  ▁·····▂█▂●·▁ beats 19/25  medium · avg 74%     21%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.0%  ▁▁▃▃▄█▄▁●··▁ beats 20/25  medium · avg 72%    9.2%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.0%  ▁▁▃▃▄█▄▁●··▁ beats 20/25  medium · avg 72%    9.3%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   38.2%  ▂··▁●▂▂▂█▅▁▂ beats 5/25   medium · avg 59%    2.1%  blunt · at its level
 </pre>
 

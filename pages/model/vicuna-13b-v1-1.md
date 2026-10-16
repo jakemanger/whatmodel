@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 13B params
 
-**score 41.8** ±2.1 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 41.9** ±2.1 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,9 +24,9 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://aclanthology.org/2023.findings-emnlp.242.pdf">CommonsenseQA</a>                        50.6%  █·····▂▂●▂▄▄ beats 23/38   easy · avg 80%       35%  sharp · at its level · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.242.pdf">ARC Challenge</a>                        53.2%  ▄▁▁▂▁▄█●▃▂▃▂ beats 94/140  medium · avg 70%     25%  sharp · at its level · small run
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   57.8%  █▁····▃▁·●·▁ beats 13/14   hard · avg 67%       15%  sharp · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.242.pdf">OpenBookQA</a>                           49.0%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 67/107  medium · avg 55%     15%  small run
-<a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   56.1%  ▄····●·█···▄ beats 1/4     hard · avg 65%      8.2%  noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   57.8%  █▁····▃▁·●·▁ beats 13/14   hard · avg 66%       15%  sharp · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   56.1%  ▄····●·█···▄ beats 1/4     hard · avg 65%      8.3%  noisy
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1   15% ▇▇
 <a name="acl-2023-emnlp-main-600"></a><a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits: Measuring LLM Ability at Fac…</a>        1    8% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 41.8
+weighted average                                   = 41.9
 </pre>
 
 <sub>Licences: Search Augmented Instruction Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-242-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · SummEdits: Measuring LLM Ability at Factual Reasoning Through The Lens of Summarization ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-600-CC-BY-4-0.txt))</sub>

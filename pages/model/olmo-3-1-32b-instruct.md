@@ -21,7 +21,7 @@ chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #183 of 395*     32% 
 
 <details><summary>chat &amp; writing · #183 of 395 · 32% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -35,7 +35,7 @@ test            result  vs the others in its run    difficulty  counts  why
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4560  ▁▄▃▃●▄█▃▅▁▁▁ beats 11/30   avg 0.415            58%  sharp
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   76.7%  ▃·▁▁▂▁▂▅●▇▄▁ beats 64/100  medium · avg 66%    5.3%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   76.7%  ▃·▁▁▂▁▂▅●▇▄▁ beats 64/100  medium · avg 66%    5.4%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   84.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 96/146  easy · avg 82%      2.9%  noisy
 </pre>
 

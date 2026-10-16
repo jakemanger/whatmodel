@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 50.7** ±0.9 · #350 of 725 · from 17 benchmark results across 3 sources
+**score 50.8** ±0.9 · #348 of 725 · from 17 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #253 of 460     10%      3
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #338 of 395*    5.4%      2
-math            ▁▁▃▅█▆●█▄▁▁▁    #167 of 424     36%      4
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #338 of 395*    5.3%      2
+math            ▁▁▃▅█▆●█▄▁▁▁    #167 of 427     36%      4
 </pre>
 
 <details><summary>coding · #253 of 460 · 10% of its score</summary>
@@ -27,35 +27,35 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>         87.4%  ▂·······▂·●█ beats 2/6    easy · avg 78%      3.9%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>         87.4%  ▂·······▂·●█ beats 2/6    easy · avg 78%      3.5%  sharp · noisy
 <a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>              61.4%  ▄●····▄·▄··█ beats 1/5    medium · avg 60%    3.3%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>   68.0%  ▃▃·····●·▃·█ beats 2/6    medium · avg 64%    2.9%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>   68.0%  ▃▃·····●·▃·█ beats 2/6    medium · avg 64%    3.2%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #338 of 395 · 5.4% of its score</summary>
+<details><summary>chat &amp; writing · #338 of 395 · 5.3% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>     24.0%  ●···█·█·█·██ beats 0/5    medium · avg 42%    4.7%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 79%      0.7%  noisy
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 78%      0.7%  noisy
 </pre>
 
 </details>
 
-<details><summary>math · #167 of 424 · 36% of its score</summary>
+<details><summary>math · #167 of 427 · 36% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     57.2%  ▄··▄····●▄▄▄ beats 2/6    medium · avg 49%        12%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     67.7%  ▄·····▄··●██ beats 2/6    medium · avg 58%        11%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     57.2%  ▄··▄····●▄▄▄ beats 2/6    medium · avg 49%        13%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     67.7%  ▄·····▄··●██ beats 2/6    medium · avg 57%        11%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     94.5%  ▃·····▃···●█ beats 3/6    very easy · avg 90%    8.2%  typical
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 31%         5.0%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 31%         5.1%  at its level
 </pre>
 
 </details>
@@ -64,14 +64,14 @@ test                         result  vs the others in its run  difficulty       
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       77.1%  ▄·····▄·●·██ beats 2/6    easy · avg 77%       13%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            47.6%  ▃······▃·●·█ beats 3/6    hard · avg 43%       11%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 77.4%  ▄···▄··●··▄█ beats 2/6    easy · avg 76%      7.6%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       77.1%  ▄·····▄·●·██ beats 2/6    easy · avg 76%       12%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            47.6%  ▃······▃·●·█ beats 3/6    hard · avg 43%       10%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 77.4%  ▄···▄··●··▄█ beats 2/6    easy · avg 76%      8.4%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                      78.6%  ▄····●·▄▄··█ beats 1/5    easy · avg 76%      4.7%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   19.8%  ▁▁▁▁●▂▂▃▄▆█▃ beats 8/97   hard · avg 31%      4.5%  blunt · at its level
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           34.9%  █●····▄·▄·▄▄ beats 2/6    medium · avg 52%    3.3%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           34.9%  █●····▄·▄·▄▄ beats 2/6    medium · avg 51%    3.6%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                                18.0%  ▄··●···▄···█ beats 2/5    hard · avg 20%      2.5%  typical
-<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    23.0%  ●·██·██····█ beats 0/5    medium · avg 35%    1.9%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    23.0%  ●·██·██····█ beats 0/5    hard · avg 35%      2.0%  at its level
 </pre>
 
 </details>
@@ -86,7 +86,7 @@ source                              results  share of the score
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>        2   13% ▇▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                1    5% ▇
 prior: pull toward the middle                  0% ▇
-weighted average                             = 50.7
+weighted average                             = 50.8
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>

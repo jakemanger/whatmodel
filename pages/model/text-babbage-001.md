@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 4.0** ±2.4 · comparison only: no current run option verified · from 12 benchmark results across 4 sources
+**score 3.8** ±2.4 · comparison only: no current run option verified · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▂▃▆█▇▅▇▃▁▁▁   #520 of 523*    4.4%      1
+math  ●▁▃▆██▅█▄▁▁▁   #523 of 526*    4.6%      1
 </pre>
 
-<details><summary>math · #520 of 523 · 4.4% of its score</summary>
+<details><summary>math · #523 of 526 · 4.6% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>    0.5%  ●·▅▃▃▃·▃·▃▃▅ beats 1/12   easy · avg 67%    4.4%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>    0.5%  ●·▅▃▃▃·▃·▃▃▅ beats 1/12   easy · avg 66%    4.6%  sharp · too hard for it
 </pre>
 
 </details>
@@ -38,13 +38,13 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                 1.4%  ▅●▃▅··▃▃·▃▃█ beats 2/12   easy · avg 83%          20%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                 1.7%  ▃●█···▅·▃▃▃▅ beats 2/12   easy · avg 82%          14%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding</a>          4.0%  ▃·●·▅▃▅·▃▃·█ beats 1/12   medium · avg 52%        11%  too hard for it
-<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   19.0%  ●·····▃··▅·▃ beats 1/6    medium · avg 71%       4.1%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">StrategyQA</a>                           45.8%  ●·····▅▃▃▅▃█ beats 1/12   medium · avg 70%       4.0%  too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        12.0%  ●······▁·▁▁▃ beats 4/12   easy · avg 87%         3.0%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   19.0%  ●·····▃··▅·▃ beats 1/6    medium · avg 71%       4.0%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">StrategyQA</a>                           45.8%  ●·····▅▃▃▅▃█ beats 1/12   medium · avg 70%       3.9%  too hard for it
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         34.2%  ▂▆·●▄█▂·▂··▂ beats 4/14   medium · avg 65%       3.0%  blunt · at its level
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>        0.0%  ●·····▃·▁·▄▁ beats 4/12   medium · avg 81%       2.8%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        12.0%  ●······▁·▁▁▃ beats 4/12   easy · avg 87%         2.9%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>        0.0%  ●·····▃·▁·▄▁ beats 4/12   medium · avg 81%       2.7%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   52.4%  ▂▂●··▂▂█▄··▂ beats 2/12   easy · avg 90%         1.9%  too hard for it · noisy
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                              4.3%  ●▁·▁▁·····▂▁ beats 5/12   medium · avg 48%       0.3%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                              4.3%  ●▁·▁▁·····▂▁ beats 5/12   hard · avg 48%         0.3%  sharp · too hard for it
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    3% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    2% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 4.0
+weighted average                                   = 3.8
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

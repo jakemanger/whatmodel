@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 10.31B params · falcon-llm
 
-**score 45.1** ±2.5 · #471 of 725 · from 7 benchmark results across 3 sources
+**score 45.2** ±2.4 · #471 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #273 of 303*     36%      2
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #276 of 306*     36%      2
 coding       ▁▁▁▃▆●█▇▆▄▃▁    #349 of 460     47%      4
 </pre>
 
-<details><summary>agent tasks · #273 of 303 · 36% of its score</summary>
+<details><summary>agent tasks · #276 of 306 · 36% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   18.0%  ▃··▁▂●▃▂█▃▄▂ beats 12/47  medium · avg 51%     18%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   12.0%  █▂▁▁▂▂●▃▅▅▅▇ beats 18/47  hard · avg 32%       15%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   22.3%  ▁▁▁▁▁▁▂▂●█▅▄ beats 14/47  hard · avg 31%       13%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   44.7%  ▁▁▁······●▃█ beats 4/47   easy · avg 67%      0.5%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   44.7%  ▁▁▁······●▃█ beats 4/47   easy · avg 67%      0.6%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   36% ▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   15% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 45.1
+weighted average                                   = 45.2
 </pre>
 
 <sub>Licences: CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

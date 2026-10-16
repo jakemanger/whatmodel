@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 32.8** ±1.0 · #637 of 725 · from 11 benchmark results across 2 sources
+**score 32.9** ±1.0 · #638 of 725 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,13 +23,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">ARC Challenge</a>                        49.1%  ▁·▁··▁▁▇▂█▆● beats 24/26   easy · avg 82%          52%  sharp · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">WinoGrande</a>                           66.0%  ▁····▁··▁▂●▄ beats 14/26   easy · avg 87%          11%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">BoolQ</a>                                74.6%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 21/26   easy · avg 88%         7.8%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">WinoGrande</a>                           66.0%  ▁····▁··▁▂●▄ beats 14/26   easy · avg 86%          11%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">BoolQ</a>                                74.6%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 21/26   easy · avg 88%         7.9%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">HellaSwag</a>                            88.8%  ▃···▁▇▅█▇▃▁● beats 26/26   very easy · avg 91%    5.2%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">ARC Easy</a>                             65.2%  ▁▁·▁▁▄▅●█▅▁▃ beats 13/26   easy · avg 85%         5.2%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">OpenBookQA</a>                           32.2%  █·▁▁▃·▁▃▅●▃▄ beats 21/26   hard · avg 48%         4.2%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">OpenBookQA</a>                           32.2%  █·▁▁▃·▁▃▅●▃▄ beats 21/26   hard · avg 48%         4.4%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">PIQA</a>                                 74.0%  ▁·▁··▁▁●█▅█▂ beats 5/26    easy · avg 87%         3.8%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">SciQ</a>                                 93.2%  ▁·▁·▁·▃▅▃●▄▁ beats 15/26   very easy · avg 98%    3.8%  blunt · maxed out
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">SciQ</a>                                 93.2%  ▁·▁·▁·▃▅▃●▄▁ beats 15/26   very easy · avg 97%    3.8%  blunt · maxed out
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">Social IQA</a>                           49.4%  ▁···▁▃█▁▁●·▁ beats 25/26   hard · avg 56%         2.4%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">LAMBADA (OpenAI version), last-wo…</a>   69.7%  ▁··▂▁▁▁▂▆●▅▃ beats 13/26   very easy · avg 86%    2.2%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   58.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 85/276  medium · avg 72%       1.8%  noisy
@@ -46,7 +46,7 @@ source                           results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">Stability AI</a>                          10   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    2% ▇
 prior: pull toward the middle               0% ▇
-weighted average                          = 32.8
+weighted average                          = 32.9
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

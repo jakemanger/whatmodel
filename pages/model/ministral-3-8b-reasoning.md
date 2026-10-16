@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #145 of 460*    8.5%      1
+coding  ▁▁▁▃▆██●▆▄▃▁   #145 of 460*    8.4%      1
 math    █·····●····█        #2 of 3     36%      2
 </pre>
 
-<details><summary>coding · #145 of 460 · 8.5% of its score</summary>
+<details><summary>coding · #145 of 460 · 8.4% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspecifie…</a>   61.6%  ▁···▁▁▃▅▅█●▅ beats 27/37  medium · avg 49%    8.5%  at its level · small run · several runs
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspecifie…</a>   61.6%  ▁···▁▁▃▅▅█●▅ beats 27/37  medium · avg 49%    8.4%  at its level · small run · several runs
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>                   66.8%  ▁▁▁▁▂▄▅▅●██▄ beats 141/310  medium · avg 52%     25%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>                   66.8%  ▁▁▁▁▂▄▅▅●██▄ beats 141/311  medium · avg 52%     25%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4312  ▁▄▃●▇▄█▃▅▁▁▁ beats 7/30     avg 0.415            19%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.1%  ▂▃▅▂●▃█▅█▅▃▆ beats 7/34     medium · avg 41%    8.6%  blunt · at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   58.5%  ▂···▂▂·▃▂▃●█ beats 11/17    medium · avg 52%    2.5%  at its level
@@ -59,15 +59,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">mistralai/Ministral-3-8B-Reasoning-2512…</a>        4   34% ▇▇▇▇
-<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">mistralai/Ministral-3-3B-Reasoning-2512…</a>        4   34% ▇▇▇▇
+<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">mistralai/Ministral-3-3B-Reasoning-2512…</a>        4   35% ▇▇▇▇
+<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">mistralai/Ministral-3-8B-Reasoning-2512…</a>        4   35% ▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   28% ▇▇▇
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 54.4
 </pre>
 
-<sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

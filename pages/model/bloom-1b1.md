@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 7.2** ±1.1 · #714 of 725 · from 36 benchmark results across 6 sources
+**score 6.8** ±1.1 · #714 of 725 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  █··●·█·██··█       #5 of 6*    3.2%      1
-math    ▁●▃▅█▆▄█▄▁▁▁   #418 of 424*    1.5%      1
+coding  █··●·█·██··█       #5 of 6*    3.0%      1
+math    ▁●▃▅█▆▄█▄▁▁▁   #421 of 427*    1.4%      1
 </pre>
 
-<details><summary>coding · #5 of 6 · 3.2% of its score</summary>
+<details><summary>coding · #5 of 6 · 3.0% of its score</summary>
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    2.5%  ▄···●·▄·█··▄ beats 1/5    easy · avg 78%    3.2%  sharp · too hard for it
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    2.5%  ▄···●·▄·█··▄ beats 1/5    easy · avg 78%    3.0%  sharp · too hard for it
 </pre>
 
 </details>
 
-<details><summary>math · #418 of 424 · 1.5% of its score</summary>
+<details><summary>math · #421 of 427 · 1.4% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md), [Flan-T5 Small](flan-t5-small.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test   result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_gsm8k_8-shot.json">GSM8K</a>    0.8%  ▄●█▄···▄·▄·▄ beats 1/7    easy · avg 66%    1.5%  sharp · too hard for it
+test   result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_gsm8k_8-shot.json">GSM8K</a>    0.8%  ▄●█▄···▄·▄·▄ beats 1/7    medium · avg 65%    1.4%  sharp · too hard for it
 </pre>
 
 </details>
@@ -46,24 +46,24 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             51.5%  ▃·▅▃▃●·██▃██ beats 5/19   easy · avg 87%           19%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 67.2%  ▂·▄▄·●▂▆▂▄█▄ beats 6/19   easy · avg 87%           12%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           54.7%  ▄····▄▆●▄▆▆█ beats 7/19   easy · avg 88%          9.2%  several runs
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   42.6%  ▃··▅▃●▅▅▅███ beats 4/19   very easy · avg 87%     7.9%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.6%  ●··▁·▁▁·▁▂▁▂ beats 4/19   easy · avg 81%          7.8%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 83.3%  ▂··▂▃▂▂●▃▃█▂ beats 6/19   very easy · avg 98%     7.3%  blunt · at its level
-<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     63.3%  ▂▂●▂·▂·▆·▂█▂ beats 3/14   easy · avg 89%          5.1%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           54.7%  ▄····▄▆●▄▆▆█ beats 7/19   easy · avg 88%          8.8%  several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   42.6%  ▃··▅▃●▅▅▅███ beats 4/19   very easy · avg 87%     7.8%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.6%  ●··▁·▁▁·▁▂▁▂ beats 4/19   easy · avg 81%          7.6%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 83.3%  ▂··▂▃▂▂●▃▃█▂ beats 6/19   very easy · avg 98%     7.0%  blunt · at its level
+<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     63.3%  ▂▂●▂·▂·▆·▂█▂ beats 3/14   easy · avg 89%          5.0%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           57.0%  ▃··█●▃▃▅·▃▃▃ beats 4/12   very easy · avg 95%     5.0%  at its level · several runs
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">HellaSwag</a>                            34.6%  ▄·●▄·▄·▄··▄█ beats 1/7    easy · avg 81%          4.5%  typical
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">CoQA</a>                                 45.6%  ▄····●▄·▄▄·█ beats 1/6    very easy · avg 92%     4.0%  at its level
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   68.5%  ▄●·▄·▄··█··█ beats 1/7    very easy · avg 93%     3.3%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Natural Questions (closed book)</a>       2.9%  ▁·▁·●▂▁▂·▅▂█ beats 2/28   medium · avg 48%        2.0%  too hard for it
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">BoolQ</a>                                59.1%  ▄··●·█▄··█·▄ beats 1/7    easy · avg 87%          1.7%  typical
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">RACE-high</a>                            32.6%  ▄···●··▄▄··█ beats 1/6    medium · avg 52%        1.4%  blunt
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-23%2000%3A02%3A01.385072.json">TriviaQA</a>                              8.6%  ▁··▁●▃▃▁▄▅▄█ beats 2/28   hard · avg 34%          1.3%  too hard for it · several runs
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">DROP</a>                                  8.6%  ▄▄···●·▄·▄·▄ beats 2/6    hard · avg 34%          1.3%  blunt
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-23%2000%3A02%3A01.385072.json">TriviaQA</a>                              8.6%  ▁··▁●▃▃▁▄▅▄█ beats 2/28   medium · avg 44%        4.5%  too hard for it · several runs
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">HellaSwag</a>                            34.6%  ▄·●▄·▄·▄··▄█ beats 1/7    easy · avg 81%          4.3%  typical
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">CoQA</a>                                 45.6%  ▄····●▄·▄▄·█ beats 1/6    very easy · avg 92%     3.8%  at its level
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   68.5%  ▄●·▄·▄··█··█ beats 1/7    very easy · avg 93%     3.1%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Natural Questions (closed book)</a>       2.9%  ▁·▁·●▂▁▂·▅▂█ beats 2/28   medium · avg 48%        1.9%  too hard for it
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">BoolQ</a>                                59.1%  ▄··●·█▄··█·▄ beats 1/7    easy · avg 87%          1.6%  typical
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">RACE-high</a>                            32.6%  ▄···●··▄▄··█ beats 1/6    medium · avg 51%        1.4%  blunt
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">DROP</a>                                  8.6%  ▄▄···●·▄·▄·▄ beats 2/6    hard · avg 34%          1.2%  blunt
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">OpenBookQA</a>                           19.6%  ●········▂▂▂ beats 3/7    hard · avg 40%          0.7%  too hard for it
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-08%2015%3A05%3A15.296709.json">TruthfulQA MC2</a>                       41.8%  ▅▃●▆▁▂▅···▁▁ beats 13/31  medium · avg 57%        0.6%  blunt · at its level · several runs
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_question_answering_0-shot.json">WebQuestions (closed book)</a>            1.4%  █···▄··▄●▄·▄ beats 4/6    very hard · avg 3.6%    0.1%  blunt · too hard for it
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-13%2020%3A48%3A36.485842.json">HaluEval QA hallucination detecti…</a>   44.9%  ●▁▁·▁▁·▁▁▁▁▁ beats 11/27  hard · avg 66%          0.1%  too hard for it · noisy
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_question_answering_0-shot.json">WebQuestions (closed book)</a>            1.4%  █···▄··▄●▄·▄ beats 4/6    very hard · avg 3.5%    0.1%  blunt · too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-13%2020%3A48%3A36.485842.json">HaluEval QA hallucination detecti…</a>   44.9%  ●▁▁·▁▁·▁▁▁▁▁ beats 11/27  hard · avg 66%          0.0%  too hard for it · noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_question_answering_0-shot.json">LogiQA (harness)</a>                     18.9%  ●··········▁ beats 12/14  very hard · avg 25%     0.0%  too hard for it · noisy
 </pre>
 
@@ -75,14 +75,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lm-eval-harness-results-2023-05"></a><a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">EleutherAI lm-evaluation-harness result…</a>       17   40% ▇▇▇▇▇
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   30% ▇▇▇▇
-<a name="paper-2210.17323v2-gptq"></a><a href="https://arxiv.org/html/2210.17323v2">GPTQ: Accurate Post-Training Quantizati…</a>        5   22% ▇▇▇
+<a name="lm-eval-harness-results-2023-05"></a><a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">EleutherAI lm-evaluation-harness result…</a>       17   42% ▇▇▇▇▇
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   29% ▇▇▇▇
+<a name="paper-2210.17323v2-gptq"></a><a href="https://arxiv.org/html/2210.17323v2">GPTQ: Accurate Post-Training Quantizati…</a>        5   21% ▇▇▇
 <a name="paper-2211.05100v4"></a><a href="https://arxiv.org/html/2211.05100v4">BLOOM: A 176B-Parameter Open-Access Mul…</a>        1    3% ▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Hallucinations Leaderboard results</a>              4    3% ▇
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        3    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 7.2
+weighted average                                   = 6.8
 </pre>
 
 <sub>Licences: EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt))</sub>

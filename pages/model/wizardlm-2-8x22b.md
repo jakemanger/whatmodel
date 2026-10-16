@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #305 of 460*     29%      1
-math    ▁▁▃●█▆▄█▄▁▁▁   #327 of 424*     28%      1
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #306 of 460*     29%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #329 of 427*     28%      1
 </pre>
 
-<details><summary>coding · #305 of 460 · 29% of its score</summary>
+<details><summary>coding · #306 of 460 · 29% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -31,9 +31,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #327 of 424 · 28% of its score</summary>
+<details><summary>math · #329 of 427 · 28% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
@@ -46,7 +46,7 @@ test          result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         43.4%  ▁▁▁▁▂▄●▄▅▇█▅ beats 47/208  hard · avg 38%          16%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         43.4%  ▁▁▁▁▂▄●▄▅▇█▄ beats 47/209  hard · avg 38%          16%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.0%  ▁▂▂▂▃█▃▆●▄▂▃ beats 65/95   medium · avg 64%        11%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      69.6%  ▁··▁▁▂▂▆▅▆●▆ beats 51/70   medium · avg 61%       8.7%  at its level
 <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge for cr…</a>   55.4%  ▃▃··●▅▅···█▃ beats 2/10    medium · avg 53%       5.5%  at its level

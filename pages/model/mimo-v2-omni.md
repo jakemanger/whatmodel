@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-03 · closed weights
 
-**score 67.5** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+**score 67.4** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   17% ▇▇
 <a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo vendor-reported benchmark s…</a>        1   10% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.5
+weighted average                                   = 67.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XiaomiMiMo/MiMo-V2.5 model card ([MIT](../../licenses/XiaomiMiMo--MiMo-V2.5.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 64.1** ±1.1 · #153 of 725 · from 7 benchmark results across 5 sources
+**score 64.0** ±1.1 · #153 of 725 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #107 of 303     30%      3
-coding          ▁▁▁▃▆██●▆▄▃▁   #133 of 460*     22%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #108 of 306     30%      3
+coding          ▁▁▁▃▆██●▆▄▃▁   #132 of 460*     22%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #166 of 395*     13%      1
 </pre>
 
-<details><summary>agent tasks · #107 of 303 · 30% of its score</summary>
+<details><summary>agent tasks · #108 of 306 · 30% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   53.5%  ▆··▆▄▂▄▂●▆█▄ beats 14/23  very hard · avg 13%      11%  sharp · at its level
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 37%         10%  sharp · small run
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 5.9%    8.9%  sharp
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 38%         10%  sharp · small run
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 5.9%    9.0%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #133 of 460 · 22% of its score</summary>
+<details><summary>coding · #132 of 460 · 22% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1296.6  ▁▂▄●▅█▄▇▆▄▁▁ beats 20/119  avg 970        22%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1296.6  ▁▂▄●▅█▄▇▆▄▁▁ beats 20/119  avg 969        22%  sharp
 </pre>
 
 </details>
@@ -72,13 +72,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   36% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   35% ▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   34% ▇▇▇▇
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1   11% ▇
 <a name="first-party-minimax-scores"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">MiniMax vendor-reported benchmark score…</a>        1   10% ▇
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.1
+weighted average                                   = 64.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt))</sub>

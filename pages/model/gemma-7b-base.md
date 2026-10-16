@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  ▁▁▁●▆██▇▆▄▃▁   #416 of 460     70%      7
-math    ▁▁▃▅█●▄█▄▁▁▁   #213 of 424    5.8%      2
+math    ▁▁▃▅█●▄█▄▁▁▁   #222 of 427    5.6%      2
 </pre>
 
 <details><summary>coding · #416 of 460 · 70% of its score</summary>
@@ -28,22 +28,22 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            35.4%  ▁·▁▁▃●▆▅█▃▁▁ beats 20/99  easy · avg 76%       39%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           28.7%  ▁·▁▁▁▃●▄▄█▃▁ beats 17/99  easy · avg 70%       16%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   34.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 12/35  medium · avg 61%    4.4%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   34.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 12/35  medium · avg 61%    4.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                43.4%  ▁···▁▁●▅▇█▆▂ beats 9/75   easy · avg 66%      3.4%  at its level
-<a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           44.4%  ▁▁▁▄●█▆▅▄▁▂▁ beats 25/86  easy · avg 71%      2.7%  at its level · several runs
+<a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           44.4%  ▁▁▁▄●█▆▅▄▁▂▁ beats 25/86  easy · avg 71%      2.8%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 9/35   medium · avg 45%    2.4%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    7.4%  ▁·▁▁●██▄█▁▅▅ beats 3/35   medium · avg 51%    2.0%  sharp
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    7.4%  ▁·▁▁●██▄█▁▅▅ beats 3/35   medium · avg 51%    2.1%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #213 of 424 · 5.8% of its score</summary>
+<details><summary>math · #222 of 427 · 5.6% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>   53.3%  ▄··▄···▄··●▄ beats 4/5    easy · avg 79%      3.7%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>   53.3%  ▄··▄···▄··●▄ beats 4/5    easy · avg 78%      3.5%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2405.04324v1">MATH</a>    24.1%  ▃·▃····▃···● beats 5/5    medium · avg 48%    2.1%  small run · several runs
 </pre>
 
@@ -64,13 +64,13 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                     72.3%  ▁▁▁▁▂▁▁▅▇●▃▁ beats 102/131  easy · avg 84%         0.8%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed book) (…</a>   23.0%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 48/68    medium · avg 39%       0.8%  small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report) (l…</a>   41.7%  ▄··········● beats 2/2      medium · avg 62%       0.7%  at its level · small run
-<a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                       63.4%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 54/80    easy · avg 78%         0.6%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                       63.4%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 54/80    easy · avg 80%         0.7%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                      81.2%  ▁▁▁▂▂▂▄▆█▇●▂ beats 117/135  easy · avg 89%         0.6%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 109/276  medium · avg 72%       0.6%  at its level · noisy
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                          83.2%  ▁····▁▂█▆▅●▄ beats 84/103   easy · avg 89%         0.6%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   84.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 98/146   easy · avg 82%         0.5%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   33.5%  ▃·▁▁●▁▂▅█▇▄▁ beats 17/100   medium · avg 66%       0.4%  sharp · noisy
-<a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                     51.8%  ▁·▁██▄●▁▂▃▇▁ beats 38/59    medium · avg 63%       0.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                     51.8%  ▁·▁██▄●▁▂▃▇▁ beats 38/59    medium · avg 62%       0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                       81.5%  ▁▃▂▄▆█▅●▁··▁ beats 93/100   easy · avg 87%         0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                           81.2%  ▁▁▁▂▂▃▅█●▃▁▁ beats 101/123  easy · avg 86%         0.2%  blunt · at its level · small run
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-7b/results_2024-05-16%2018%3A02%3A08.310603.json">PubMedQA</a>                             75.6%  ▂·▂▆·▄▂▄▄▂●▂ beats 16/17    medium · avg 75%       0.1%  blunt · at its level

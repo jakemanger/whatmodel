@@ -6,7 +6,7 @@
 
 OpenChat · released 2023-10 · 7B params · apache-2.0
 
-**score 43.4** ±1.4 · #503 of 725 · from 7 benchmark results across 4 sources
+**score 43.5** ±1.4 · #502 of 725 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #340 of 460*     16%      1
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #321 of 395*     39%      2
-math            █··········●       #1 of 2*     14%      1
+math            █··········●       #1 of 2*     13%      1
 </pre>
 
 <details><summary>coding · #340 of 460 · 16% of its score</summary>
@@ -38,17 +38,17 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Cod
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1183.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 59/379  avg 1258       20%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1183.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 59/379  avg 1258       21%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1101.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 47/95   avg 1186       18%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #1 of 2 · 14% of its score</summary>
+<details><summary>math · #1 of 2 · 13% of its score</summary>
 
 <pre>
 test         result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K (lab)</a>   77.3%  ▂▂▂▂▃▄▅▇█●▆▄ beats 135/200  very easy · avg 88%     14%  sharp · at its level · small run
+<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K (lab)</a>   77.3%  ▂▂▂▂▃▄▅▇█●▆▄ beats 134/206  very easy · avg 88%     13%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test         result  vs the others in its run    difficulty           counts  wh
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard (lab)</a>                 63.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 93/155   easy · avg 76%       12%  sharp · at its level · small run
 <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU (lab)</a>                           64.3%  ▁▁▁▁▁▂▂▅●█▆▄ beats 101/214  easy · avg 75%       10%  at its level · small run
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   37.1%  ▂··▄·▂●▄▂█·▂ beats 5/14     medium · avg 53%    8.6%  at its level
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   37.1%  ▂··▄·▂●▄▂█·▂ beats 5/14     medium · avg 53%    8.7%  at its level
 </pre>
 
 </details>
@@ -70,12 +70,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-openchat-openchat-3-5"></a><a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">OpenChat 3.5 model card (lab)</a>                   4   52% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
+<a name="card2-openchat-openchat-3-5"></a><a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">OpenChat 3.5 model card (lab)</a>                   4   51% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   18% ▇▇
 <a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.4
+weighted average                                   = 43.5
 </pre>
 
 <sub>Licences: OpenChat 3.5 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>

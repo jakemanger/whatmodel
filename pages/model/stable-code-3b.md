@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 34.7** ±0.6 · #626 of 725 · from 15 benchmark results across 4 sources
+**score 34.7** ±0.6 · #625 of 725 · from 15 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁▁●▆██▇▆▄▃▁    #423 of 460     90%     10
-math    ▁▁▃▅●▆▄█▄▁▁▁   #308 of 424*    3.0%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #319 of 427*    2.8%      1
 </pre>
 
 <details><summary>coding · #423 of 460 · 90% of its score</summary>
@@ -40,13 +40,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #308 of 424 · 3.0% of its score</summary>
+<details><summary>math · #319 of 427 · 2.8% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   39.7%  ▄▄▄·▄█·●█·█▄ beats 7/12   easy · avg 76%    3.0%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   39.7%  ▄▄▄·▄█·●█·█▄ beats 7/12   easy · avg 75%    2.8%  sharp · at its level
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   20.7%  ▂▂●▄▄█▁▄▅▃▁▃ beats 6/42   medium · avg 52%    6.5%  typical
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   20.7%  ▂▂●▄▄█▁▄▅▃▁▃ beats 6/42   medium · avg 52%    6.6%  typical
 </pre>
 
 </details>

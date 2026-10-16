@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
-**score 53.8** ±0.9 · #301 of 725 · from 29 benchmark results across 6 sources
+**score 53.7** ±0.9 · #301 of 725 · from 29 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▁▃▅█●▄█▄▁▁▁   #237 of 424     16%      2
+math                ▁▁▃▅█●▄█▄▁▁▁   #240 of 427     16%      2
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #116 of 147     87%     18
 </pre>
 
-<details><summary>math · #237 of 424 · 16% of its score</summary>
+<details><summary>math · #240 of 427 · 16% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>   70.5%  ▃··▃▅·▃●▅▅▅█ beats 5/16   medium · avg 68%     12%  at its level · several runs
-<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            25.9%  ▁▁·●··▄▁▃▇▇█ beats 2/24   hard · avg 25%      4.8%  small run
+<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>   70.5%  ▃··▃▅·▃●▅▅▅█ beats 5/16   medium · avg 68%     11%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            25.9%  ▁▁·●··▄▁▃▇▇█ beats 2/24   hard · avg 25%      4.7%  small run
 </pre>
 
 </details>
@@ -38,14 +38,14 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 
 <pre>
 test                                                         result  vs the others in its run   difficulty                counts  why
-<a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                                              64.5%  ▂···▆▂▂●▄▄▄█ beats 6/16    medium · avg 60%             16%  at its level · several runs
-<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>                                    70.5%  ▃··▃▅·▃●▅▅▅█ beats 5/16    medium · avg 68%             12%  at its level · several runs
+<a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                                              64.5%  ▂···▆▂▂●▄▄▄█ beats 6/16    medium · avg 61%             16%  at its level · several runs
+<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>                                    70.5%  ▃··▃▅·▃●▅▅▅█ beats 5/16    medium · avg 68%             11%  at its level · several runs
 <a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                                                  68.3%  ▂··▄▂▂·●█▂▄▆ beats 6/16    medium · avg 64%             11%  at its level · several runs
 <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                                                46.2%  ▃·█·▅●▃▃▅▅▃█ beats 6/16    medium · avg 45%             11%  at its level · several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1084.8  ▁▁▂▂▂●▄▅▅▆██ beats 27/145  avg 1058                    6.6%  blunt
-<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                             25.9%  ▁▁·●··▄▁▃▇▇█ beats 2/24    hard · avg 25%              4.8%  small run
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                          -9.0000  ▃▃▃·▃●·▅▃▃▃▃ beats 5/12    avg -5.431                  3.8%  typical
-<a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                                  96.5%  ▃··▅▃▅▃█▃█●▅ beats 14/17   very easy · avg 94%         3.6%  blunt · maxed out · several runs
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                             25.9%  ▁▁·●··▄▁▃▇▇█ beats 2/24    hard · avg 25%              4.7%  small run
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                          -9.0000  ▃▃▃·▃●·▅▃▃▃▃ beats 5/12    avg -5.446                  3.8%  typical
+<a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                                  96.5%  ▃··▅▃▅▃█▃█●▅ beats 14/17   very easy · avg 94%         3.7%  blunt · maxed out · several runs
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                                          58.1%  ▃·▃·▅▃▅●▃▅█▅ beats 8/16    medium · avg 54%            3.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                                                 88.3%  ▂··▂·▂▃·▅●▆█ beats 8/17    easy · avg 84%              3.0%  blunt · several runs
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.5900 MM-MT-Bench score (1-10)  ▅··▃·█·▃●··▅ beats 7/9     avg 5.573 MM-MT-Bench s…    2.8%  sharp · noisy
@@ -53,7 +53,7 @@ test                                                         result  vs the othe
 <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>                                          84.5%  ▃·▃▅█▃▃▃●▃▃▃ beats 10/13   easy · avg 80%              2.5%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   81.6%  ▃···█▃··▅▃▃● beats 9/9     easy · avg 73%              1.5%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                                                87.7%  ▅█·▃▃█●▅▅▃·▃ beats 10/16   easy · avg 84%              0.9%  blunt
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1037.0  ▄▄·▄·▄▄●·▄·█ beats 5/8     avg 1031                    0.9%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1037.0  ▄▄·▄·▄▄●·▄·█ beats 5/8     avg 1030                    0.9%  blunt
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                                                  68.7%  ▁·●··▂▂▃▃▂▆█ beats 2/26    easy · avg 72%              0.7%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                                                 85.5%  █······▄·▄▄● beats 5/5     easy · avg 80%              0.5%  blunt
 </pre>
@@ -84,7 +84,7 @@ source                                    results  share of the score
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    4% ▇
 <a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 53.8
+weighted average                                   = 53.7
 </pre>
 
 <sub>Licences: Qwen2.5-VL-32B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>

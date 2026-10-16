@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁●▆██▇▆▄▃▁   #421 of 460*    3.3%      1
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #335 of 395     36%      7
-math            ▁▁●▅█▆▄█▄▁▁▁    #395 of 424     14%      4
+math            ▁▁●▅█▆▄█▄▁▁▁    #395 of 427     14%      4
 </pre>
 
 <details><summary>coding · #421 of 460 · 3.3% of its score</summary>
@@ -42,23 +42,23 @@ test                                                      result  vs the others 
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         11.6%  ▂▁●▅█▅▄▃▃▅▃▁ beats 5/60    medium · avg 46%            6.2%  sharp
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1170.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 49/379  avg 1258                    5.3%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1108.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 51/95   avg 1186                    4.8%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.8600 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 20/28   avg 8.521 MT-Bench scor…    3.8%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.8600 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 20/28   avg 8.514 MT-Bench scor…    3.7%  sharp · noisy
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>                          3.0%  ▁·▁●▂▁▄▄▆▄█▄ beats 2/38    medium · avg 45%            2.8%  sharp
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         92.7%  ▂▂·▆·▇▃▆█●▄▂ beats 35/45   very easy · avg 94%         0.9%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #395 of 424 · 14% of its score</summary>
+<details><summary>math · #395 of 427 · 14% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                      59.0%  ▆▂▅█▅▅●▆···▂ beats 19/25  easy · avg 80%          8.7%  sharp · at its level · several runs
-<a href="https://aclanthology.org/2023.findings-emnlp.826.pdf">MGSM</a>                       34.1%  ▂·▁▁▁▁▁▂●█▃▂ beats 14/42  medium · avg 63%        3.4%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                      59.0%  ▆▂▅█▅▅●▆···▂ beats 19/25  easy · avg 80%          8.2%  sharp · at its level · several runs
+<a href="https://aclanthology.org/2023.findings-emnlp.826.pdf">MGSM</a>                       34.1%  ▂·▁▁▁▁▁▂●█▃▂ beats 14/42  medium · avg 62%        3.4%  sharp · at its level · small run
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                3.3%  ●▂▅▆▄█▆▃▅▂▃▄ beats 0/92   hard · avg 27%          2.2%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.0%  ●▃▄▃▃▃▇▇█▃▂▅ beats 1/193  very hard · avg 6.9%    0.1%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.0%  ●▃▄▃▃▃▇▇█▃▂▅ beats 1/195  very hard · avg 6.9%    0.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -68,15 +68,15 @@ test                      result  vs the others in its run  difficulty          
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                 49.0%  ▁·····▂●▂▅·▁ beats 10/25    medium · avg 74%        12%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                           60.9%  ▁▁▃▃▄█▄●█··▁ beats 18/25    medium · avg 72%       6.1%  at its level · several runs
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  20.6596 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 3/52     avg 42.785 WB-Score    5.5%  sharp
-<a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>             37.6%  ▄···█·▄●··▄▄ beats 5/7      medium · avg 56%       4.5%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                           60.9%  ▁▁▃▃▄█▄●█··▁ beats 18/25    medium · avg 72%       6.2%  at its level · several runs
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  20.6596 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 3/52     avg 42.742 WB-Score    5.5%  sharp
+<a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>             37.6%  ▄···█·▄●··▄▄ beats 5/7      medium · avg 56%       4.6%  at its level
 <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                                  67.7%  ▄▁▁▂▁▄█▇●▂▃▂ beats 114/140  easy · avg 82%         3.2%  sharp · at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             32.6%  ●▄▂▃█▄▃▆▃▅▂▂ beats 3/81     medium · avg 56%       2.4%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>             25.1%  ▁▁▁▁▁▂●▃▄▆█▃ beats 18/97    hard · avg 31%         2.3%  blunt
 <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                                46.7%  █●▄··▄··▄█·█ beats 2/9      medium · avg 65%       2.2%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>             51.6%  ▂··▄·▂▆▄▂●·▂ beats 12/14    medium · avg 53%       2.2%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   26.3%  ▁●▁▁▂▄▆▄▅▇█▅ beats 7/208    hard · avg 38%         1.7%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   26.3%  ▁●▁▁▂▄▆▄▅▇█▄ beats 7/209    hard · avg 38%         1.8%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             65.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 118/276  medium · avg 72%       1.2%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>             57.5%  ▁▁▁▁▁▁▁●▄█▄▃ beats 29/146   easy · avg 82%         0.8%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>             44.4%  ▂··▁▃▂●▂█▅▁▂ beats 8/25     medium · avg 59%       0.8%  blunt · at its level
@@ -97,7 +97,7 @@ source                                    results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5   18% ▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   13% ▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    6% ▇
-<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    5% ▇
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    6% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    5% ▇
 <a name="acl-2023-emnlp-industry-17"></a><a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">Investigating Table-to-Text Generation …</a>        1    5% ▇

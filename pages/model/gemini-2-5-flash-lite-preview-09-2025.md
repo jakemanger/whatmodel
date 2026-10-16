@@ -33,7 +33,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>vision &amp; documents · #109 of 199 · 40% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▆█●▅▇▃▁▁▁   #288 of 523*     62%      2
+math  ▁▁▃▆█●▅█▄▁▁▁   #291 of 526*     62%      2
 </pre>
 
-<details><summary>math · #288 of 523 · 62% of its score</summary>
+<details><summary>math · #291 of 526 · 62% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               56.2%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 49/92   hard · avg 27%           52%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 33/193  very hard · avg 6.9%     10%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 33/195  very hard · avg 6.9%     10%  sharp · noisy
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 43/208   hard · avg 38%       32%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.8%  ▁▁▁▁▂●▆▄▅▇█▄ beats 43/209   hard · avg 38%       32%  sharp · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 234/276  medium · avg 72%    5.0%  at its level · noisy
 </pre>
 

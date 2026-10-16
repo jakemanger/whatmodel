@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 75.35B params (9.3B active) · openmdw-1.1
 
-**score 63.6** ±1.2 · #163 of 725 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.6** ±1.2 · #162 of 725 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #138 of 303     52%      5
-coding       ▁▁▁▃▆██●▆▄▃▁   #131 of 460*     12%      3
-math         ▁▁▃▅█▆▄●▄▁▁▁   #122 of 424*     16%      2
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #140 of 306     52%      5
+coding       ▁▁▁▃▆██●▆▄▃▁   #130 of 460*     12%      3
+math         ▁▁▃▅█▆▄●▄▁▁▁   #123 of 427*     17%      2
 </pre>
 
-<details><summary>agent tasks · #138 of 303 · 52% of its score</summary>
+<details><summary>agent tasks · #140 of 306 · 52% of its score</summary>
 
-Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Telecom (lab)</a>      61.5%  ▁·▅█▆●▂▃▃▂▃▁ beats 50/89   hard · avg 19%           23%  sharp · at its level
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Telecom (lab)</a>      61.5%  ▁·▅█▆●▂▃▃▂▃▁ beats 50/89   hard · avg 19%           22%  sharp · at its level
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Terminal-Bench Hard (lab)</a>   24.0%  ▂▅▆▂▂▆▂▂●▅▅▂ beats 18/27   very hard · avg 5.0%     12%  sharp · small run
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (lab)</a>    56.9%  ▁▁▁▁▁▁▂●█▆▁▁ beats 46/131  hard · avg 21%          8.6%  sharp · at its level · small run
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (lab)</a>       63.2%  ▁····▂▁▃●█▃▁ beats 15/44   hard · avg 34%          5.0%  at its level · small run
@@ -36,9 +36,9 @@ test                       result  vs the others in its run   difficulty        
 
 </details>
 
-<details><summary>coding · #131 of 460 · 12% of its score</summary>
+<details><summary>coding · #130 of 460 · 12% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
@@ -49,9 +49,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #122 of 424 · 16% of its score</summary>
+<details><summary>math · #123 of 427 · 17% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty        counts  why

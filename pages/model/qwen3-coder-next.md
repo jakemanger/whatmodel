@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task         vs the others            rank  counts  tests
 agent tasks                 not ranked yet       —      4
-coding       ▁▁▁▃▆██●▆▄▃▁     #172 of 460*    8.9%      4
-math         ▁▁▃▅█▆▄█●▁▁▁      #61 of 424*     16%      1
+coding       ▁▁▁▃▆██●▆▄▃▁     #173 of 460*    8.9%      4
+math         ▁▁▃▅█▆▄█●▁▁▁      #63 of 427*     16%      1
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #172 of 460 · 8.9% of its score</summary>
+<details><summary>coding · #173 of 460 · 8.9% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #61 of 424 · 16% of its score</summary>
+<details><summary>math · #63 of 427 · 16% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 

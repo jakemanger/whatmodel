@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅█▆●█▄▁▁▁   #175 of 424*     26%      2
+math  ▁▁▃▅█▆●█▄▁▁▁   #178 of 427*     26%      2
 </pre>
 
-<details><summary>math · #175 of 424 · 26% of its score</summary>
+<details><summary>math · #178 of 427 · 26% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 53%        20%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>    94.6%  ▁▃▂▃▅▇▅●█▅▂▁ beats 52/84  very easy · avg 86%    5.2%  noisy
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 53%        21%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>    94.6%  ▁▃▂▃▅▇▅●█▅▂▁ beats 52/84  very easy · avg 86%    5.1%  noisy
 </pre>
 
 </details>
@@ -35,10 +35,10 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>                   52.0%  ▁▁▁▁▂▄●▅███▄ beats 93/310  medium · avg 52%     31%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>                   52.0%  ▁▁▁▁▂▄●▅███▄ beats 93/311  medium · avg 52%     31%  sharp
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   21.3%  ▁▁▁▁▁●▂▃▄▆█▃ beats 14/97   hard · avg 31%       25%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   41.0%  ▃·▁▁▂●▂▅█▇▄▁ beats 22/100  medium · avg 66%    9.5%  sharp · at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   55.7%  ▁▁▁▁▁▁▁●▄█▄▃ beats 26/146  easy · avg 82%      6.9%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   55.7%  ▁▁▁▁▁▁▁●▄█▄▃ beats 26/146  easy · avg 82%      7.0%  at its level · noisy
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-microsoft-phi-4-mini-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">microsoft/Phi-4-mini-reasoning model ca…</a>        3   57% ▇▇▇▇▇▇▇
+<a name="card-microsoft-phi-4-mini-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">microsoft/Phi-4-mini-reasoning model ca…</a>        3   56% ▇▇▇▇▇▇▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   25% ▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   16% ▇▇
 prior: pull toward the middle                        2% ▇

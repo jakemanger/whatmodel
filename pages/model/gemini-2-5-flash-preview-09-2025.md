@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▃▁    #182 of 343     26%      3
+agent tasks         ▁▁▂▆█●▅▄▄▃▂▁    #184 of 346     26%      3
 coding              ▁▁▁▃▅▇█●▅▄▂▁   #195 of 529*     50%      2
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #122 of 466*     16%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇●█▃    #70 of 182*     12%      1
 </pre>
 
-<details><summary>agent tasks · #182 of 343 · 26% of its score</summary>
+<details><summary>agent tasks · #184 of 346 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>      61.7%  █●··▄··▄·▄·▄ beats 2/6    medium · avg 36%        10%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>   34.2%  █·█●·······█ beats 4/6    very hard · avg 10%    8.1%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>   34.2%  █·█●·······█ beats 4/6    very hard · avg 10%    8.2%  sharp · at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>     56.7%  ▄▄······●█▄▄ beats 2/6    hard · avg 28%         7.7%  at its level
 </pre>
 
@@ -42,7 +42,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   40.0%  ●▄····▄··█·▄ beats 1/6    very hard · avg 7.1%     42%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   34.2%  █·█●·······█ beats 4/6    very hard · avg 10%     8.1%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   34.2%  █·█●·······█ beats 4/6    very hard · avg 10%     8.2%  sharp · at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   82.5%  ▄·····●█▄▄·▄ beats 1/6    easy · avg 66%    3.8%  blunt
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   82.5%  ▄·····●█▄▄·▄ beats 1/6    easy · avg 66%    3.8%  typical
 </pre>
 
 </details>

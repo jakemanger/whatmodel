@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 8.63B params · proprietary
 
-**score 37.5** ±1.5 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 37.5** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●█▇▅▇▃▁▁▁   #447 of 523*     17%      1
+math  ▁▁▃●██▅█▄▁▁▁   #458 of 526*     17%      1
 </pre>
 
-<details><summary>math · #447 of 523 · 17% of its score</summary>
+<details><summary>math · #458 of 526 · 17% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    8.2%  ▆·▂·▄▂●▂▂█▄▆ beats 7/18   medium · avg 48%     17%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    8.2%  ▆·▂·▄▂●▂▂█▄▆ beats 7/18   medium · avg 47%     17%  sharp
 </pre>
 
 </details>

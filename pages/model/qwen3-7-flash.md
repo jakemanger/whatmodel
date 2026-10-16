@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅█▆▄●▄▁▁▁   #133 of 424*     65%      2
+math  ▁▁▃▅█▆▄●▄▁▁▁   #137 of 427*     66%      2
 </pre>
 
-<details><summary>math · #133 of 424 · 65% of its score</summary>
+<details><summary>math · #137 of 427 · 66% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▅▃▃ beats 13/82    very hard · avg 1.1%     56%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/193  very hard · avg 6.9%    9.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▆▄▃ beats 13/84    very hard · avg 1.1%     57%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/195  very hard · avg 6.9%    8.9%  sharp · noisy
 </pre>
 
 </details>
@@ -35,9 +35,9 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 133/208  hard · avg 38%           22%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▃▁▁ beats 21/74    very hard · avg 9.4%    6.2%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          23.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 91/135   very hard · avg 5.8%    6.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▄ beats 133/209  hard · avg 38%           22%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▄▁▁ beats 21/75    very hard · avg 9.4%    6.1%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          23.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 91/135   very hard · avg 5.8%    5.9%  sharp · noisy
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 68.5** ±1.3 · #96 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.4** ±1.3 · #96 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  ▁▁▁▃▆██▇●▄▃▁   #75 of 460*     17%      2
-math    ▁▁▃▅█▆▄█●▁▁▁   #47 of 424*    7.5%      1
+math    ▁▁▃▅█▆▄█●▁▁▁   #48 of 427*    7.5%      1
 </pre>
 
 <details><summary>coding · #75 of 460 · 17% of its score</summary>
@@ -26,13 +26,13 @@ Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](gro
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   84.0%  ▄··█····▄●·█ beats 4/6    medium · avg 46%    8.5%  typical
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   84.0%  ▄··█····▄●·█ beats 4/6    medium · avg 46%    8.4%  typical
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (lab)</a>    41.0%  ▄·····▄●▄▄·▄ beats 2/6    hard · avg 16%      8.2%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #47 of 424 · 7.5% of its score</summary>
+<details><summary>math · #48 of 427 · 7.5% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.5
+weighted average                        = 68.4
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

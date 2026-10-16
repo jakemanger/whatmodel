@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  ▁●▁▃▆██▇▆▄▃▁   #456 of 460     28%      5
-math    ▁▁▃▅●▆▄█▄▁▁▁   #247 of 424     32%      4
+math    ▁▁▃▅█●▄█▄▁▁▁   #250 of 427     32%      4
 </pre>
 
 <details><summary>coding · #456 of 460 · 28% of its score</summary>
@@ -27,7 +27,7 @@ Trails [GPT-Neo 2.7B](gpt-neo-2-7b.md), [Phi-1 (1.3B)](phi-1.md), [Pythia 6.9B](
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   16.9%  ●····▄▄··▄█▄ beats 0/6    medium · avg 41%     15%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 2/47   medium · avg 51%    4.5%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 2/47   medium · avg 51%    4.6%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    2.2%  ●▁▁▁▁▁▂▂▃█▅▄ beats 0/47   hard · avg 31%      4.5%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 3/47   hard · avg 32%      2.9%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    0.0%  ●▁▁······▁▃█ beats 1/47   easy · avg 67%      0.3%  blunt · at its level · noisy
@@ -35,16 +35,16 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #247 of 424 · 32% of its score</summary>
+<details><summary>math · #250 of 427 · 32% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       83.9%  ●·▄▄·▄▄█···▄ beats 0/7     very easy · avg 91%      18%  typical
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   62.9%  ●█·▄····▄▄·█ beats 0/7     easy · avg 76%          8.2%  at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      28.9%  ●·▃·▃▃···█·▃ beats 0/7     medium · avg 50%        5.2%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             21.4%  ▃▃▄▃●▃▇▇█▃▂▅ beats 59/193  very hard · avg 6.9%    0.4%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      28.9%  ●·▃·▃▃···█·▃ beats 0/7     medium · avg 49%        5.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             21.4%  ▃▃▄▃●▃▇▇█▃▂▅ beats 59/195  very hard · avg 6.9%    0.4%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   14.3%  ▁▁●▁▁▂▂▃▄▆█▃ beats 3/97    hard · avg 31%           12%  blunt
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         33.6%  ▁▁▁▁●▄▆▄▅▇█▅ beats 24/208  hard · avg 38%           12%  sharp · too hard for it · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         33.6%  ▁▁▁▁●▄▆▄▅▇█▄ beats 24/209  hard · avg 38%           12%  sharp · too hard for it · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.3%  ●▁▁▁▁▁▁▁▂█▅▁ beats 26/276  medium · avg 72%        6.2%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   29.9%  ▁▁▁●▁▁▁▂▄█▄▃ beats 6/146   easy · avg 82%          5.0%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   32.1%  ▃·▁▁●▁▂▅█▇▄▁ beats 14/100  medium · avg 66%        4.0%  sharp · noisy

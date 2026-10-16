@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 11.8B params · apache-2.0
 
-**score 24.8** ±0.9 · #680 of 725 · from 22 benchmark results across 7 sources
+**score 24.7** ±0.9 · #681 of 725 · from 22 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,9 +23,9 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">ARC Challenge</a>                        35.1%  ▁·▁··▁▁●▂█▆▃ beats 8/26    easy · avg 82%          32%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">WinoGrande</a>                           64.0%  ▁····▁··▁▂●▄ beats 8/26    easy · avg 87%          13%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">WinoGrande</a>                           64.0%  ▁····▁··▁▂●▄ beats 8/26    easy · avg 86%          13%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">ARC Easy</a>                             63.7%  ▁▁·▁▁▄▅●█▅▁▃ beats 11/26   easy · avg 87%         9.4%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">SciQ</a>                                 90.2%  ▁·▁·▁·▃●▃█▄▁ beats 8/26    very easy · avg 98%    6.7%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">SciQ</a>                                 90.2%  ▁·▁·▁·▃●▃█▄▁ beats 8/26    very easy · avg 97%    6.6%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 11/26   easy · avg 87%         6.4%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">BoolQ</a>                                67.3%  ▂▃▂▅▆●▅▆█▂▂▂ beats 11/26   easy · avg 88%         5.5%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   50.0%  ▂·▄·▂█▄▄●▄▂▆ beats 13/21   easy · avg 74%         5.2%  blunt · at its level
@@ -33,11 +33,11 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">LAMBADA (OpenAI version), last-wo…</a>   70.6%  ▁··▂▁▁▁▂▆●▅▃ beats 15/26   very easy · avg 87%    4.4%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>    7.8%  ●···█·▄█··▄▄ beats 0/7     medium · avg 56%       3.6%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   15.3%  ▅····▃●·██·█ beats 4/13    medium · avg 52%       2.2%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.2%  ▃▅●··▅▃·█▃▃▅ beats 3/13    medium · avg 61%       1.8%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">OpenBookQA</a>                           26.4%  █·▁▁●·▁▃▅▇▃▄ beats 9/26    hard · avg 48%         1.7%  too hard for it
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.2%  ▃▅●··▅▃·█▃▃▅ beats 3/13    medium · avg 60%       1.8%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">OpenBookQA</a>                           26.4%  █·▁▁●·▁▃▅▇▃▄ beats 9/26    hard · avg 48%         1.8%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 12/26   hard · avg 56%         1.4%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   34.0%  ▃▁●▁▁▁▁▁▂█▅▁ beats 39/276  medium · avg 72%       0.9%  noisy
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.1%  ●▁····▃▁·▁·▁ beats 3/14    hard · avg 67%         0.3%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.1%  ●▁····▃▁·▁·▁ beats 3/14    hard · avg 66%         0.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -56,7 +56,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 24.8
+weighted average                                   = 24.7
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Investigating Table-to-Text Generation Capabilities of Large Language Models in Real-World Information Seeking Scenarios ([CC BY 4.0](../../licenses/acl-2023-emnlp-industry-17-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt))</sub>

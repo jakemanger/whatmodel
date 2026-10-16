@@ -22,17 +22,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                        40.8%  ▁·▁··▁▁▇▂●▆▃ beats 15/26   easy · avg 82%          35%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                           66.1%  ▁····▁··▁▂●▄ beats 15/26   easy · avg 87%          11%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                            71.4%  ▃···▁▇▅●▇▃▁▁ beats 14/26   very easy · avg 91%    7.5%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                        40.8%  ▁·▁··▁▁▇▂●▆▃ beats 15/26   easy · avg 82%          34%  sharp · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                           66.1%  ▁····▁··▁▂●▄ beats 15/26   easy · avg 86%          11%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                            71.4%  ▃···▁▇▅●▇▃▁▁ beats 14/26   very easy · avg 91%    7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                             68.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 15/26   easy · avg 85%         5.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                                69.5%  ▂▃▂▅▆▂●▆█▂▂▂ beats 12/26   easy · avg 88%         5.0%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 49%         4.7%  too hard for it · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 98%    4.5%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 49%         4.9%  too hard for it · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 97%    4.5%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                                 77.4%  ▁·▁··▁▁▃█●█▂ beats 16/26   easy · avg 87%         3.6%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                       25.9%  █···█·██●··█ beats 4/5     easy · avg 67%         3.2%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness) (lab)</a>               23.0%  ······●····· beats 4/5     very hard · avg 25%    3.0%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), last-wo…</a>   72.0%  ▁··▂▁▁▁▂▆█●▃ beats 20/26   very easy · avg 86%    2.9%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                       25.9%  █···█·██●··█ beats 4/5     medium · avg 64%       2.5%  at its level
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   58.1%  ▃···▅·▃●··▃█ beats 4/9     very easy · avg 85%    2.4%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 1 (prompted) (lab)</a>        34.0%  █··●·······▂ beats 4/5     hard · avg 46%         2.0%  sharp · too hard for it · noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 11/26   hard · avg 56%         1.4%  blunt
@@ -56,8 +56,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Stability AI</a>                                   10   56% ▇▇▇▇▇▇▇
-<a name="paper-2204.06745v1"></a><a href="https://arxiv.org/html/2204.06745v1">GPT-NeoX-20B: An Open-Source Autoregres…</a>       16   37% ▇▇▇▇
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Stability AI</a>                                   10   55% ▇▇▇▇▇▇▇
+<a name="paper-2204.06745v1"></a><a href="https://arxiv.org/html/2204.06745v1">GPT-NeoX-20B: An Open-Source Autoregres…</a>       16   38% ▇▇▇▇▇
 <a name="acl-2023-acl-long-367"></a><a href="https://aclanthology.org/2023.acl-long.367.pdf">Prompting Language Models for Linguisti…</a>        2    3% ▇
 <a name="acl-2023-findings-emnlp-152"></a><a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">Generative Calibration for In-context L…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-530"></a><a href="https://aclanthology.org/2023.emnlp-main.530.pdf">trlX: A Framework for Large Scale Reinf…</a>        1    1% ▇

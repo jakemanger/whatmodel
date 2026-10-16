@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-09 · minicpm-model-license
 
-**score 48.8** ±2.0 · #388 of 725 · from 3 benchmark results across 2 sources
+**score 48.8** ±2.0 · #389 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #261 of 303*     26%      2
-coding       ▁▁▁▃▆●█▇▆▄▃▁   #286 of 460*     72%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #264 of 306*     26%      2
+coding       ▁▁▁▃▆●█▇▆▄▃▁   #287 of 460*     72%      1
 </pre>
 
-<details><summary>agent tasks · #261 of 303 · 26% of its score</summary>
+<details><summary>agent tasks · #264 of 306 · 26% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #286 of 460 · 72% of its score</summary>
+<details><summary>coding · #287 of 460 · 72% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

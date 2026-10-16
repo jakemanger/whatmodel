@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 1.67B params · falcon-llm
 
-**score 26.3** ±3.9 · #675 of 725 · from 7 benchmark results across 3 sources
+**score 26.4** ±3.9 · #674 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #302 of 303*     49%      2
+agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #305 of 306*     49%      2
 coding       ▁▁▁●▆██▇▆▄▃▁    #436 of 460     24%      4
 </pre>
 
-<details><summary>agent tasks · #302 of 303 · 49% of its score</summary>
+<details><summary>agent tasks · #305 of 306 · 49% of its score</summary>
 
 Beats [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   24% ▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   20% ▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 26.3
+weighted average                                   = 26.4
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

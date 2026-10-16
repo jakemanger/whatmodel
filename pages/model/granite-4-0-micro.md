@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.4B params · apache-2.0
 
-**score 47.2** ±0.8 · #425 of 725 · from 27 benchmark results across 4 sources
+**score 47.2** ±0.8 · #426 of 725 · from 27 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -19,7 +19,7 @@ task            vs the others          rank  counts  tests
 agent tasks     ▄·▄········●       #2 of 4*    1.2%      1
 coding          ●···▄······▄        #3 of 4     30%      7
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #222 of 395*    4.5%      2
-math            ▁▁▃▅●▆▄█▄▁▁▁    #273 of 424     25%      6
+math            ▁▁▃▅●▆▄█▄▁▁▁    #270 of 427     25%      6
 </pre>
 
 <details><summary>agent tasks · #2 of 4 · 1.2% of its score</summary>
@@ -62,18 +62,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #273 of 424 · 25% of its score</summary>
+<details><summary>math · #270 of 427 · 25% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Mistral Large 2 (2407)](mistral-large-2407.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                          85.5%  ▂▂▂▂▃▄▅▇█●▆▄ beats 155/200  very easy · avg 86%     8.8%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                          85.5%  ▂▂▂▂▃▄▅▇█●▆▄ beats 155/206  very easy · avg 86%     8.5%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   62.1%  ▁·▃▁▁▂▁█▄●▃▃ beats 21/27    easy · avg 68%          5.1%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>           44.6%  ▅····▅·●▃▃·▅ beats 5/10     medium · avg 52%        4.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>                   79.8%  ▃▃····▃·▅●█▃ beats 6/10     easy · avg 82%          4.0%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   28.6%  █·▄●██···█·▄ beats 3/10     medium · avg 44%        1.6%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              2.8%  ▃●▄▃▃▃▇▇█▃▂▅ beats 23/193   very hard · avg 6.9%    0.9%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              2.8%  ▃●▄▃▃▃▇▇█▃▂▅ beats 23/195   very hard · avg 6.9%    0.9%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -82,10 +82,10 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 72.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 126/155  easy · avg 74%          6.5%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 72.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 126/155  medium · avg 74%        6.6%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (lab)</a>                           66.0%  ▁▁▁▁▁▂▂▅●█▆▄ beats 112/214  medium · avg 72%        6.2%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      30.1%  ▂▁▂▂●▃▆▃▅█▄▃ beats 22/104   very hard · avg 35%     5.7%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         28.3%  ▁▁▁●▂▄▆▄▅▇█▅ beats 14/208   hard · avg 38%          5.5%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      30.1%  ▂▁▂▂●▃▆▃▅█▄▃ beats 22/104   very hard · avg 35%     5.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         28.3%  ▁▁▁●▂▄▆▄▅▇█▄ beats 14/209   hard · avg 38%          5.5%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                       44.5%  ▁▁·▁▁▁●▂▄▅█▁ beats 38/188   medium · avg 50%        4.4%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                        51.6%  ▂····▂●▄▄▄█▄ beats 6/36     medium · avg 56%        3.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          55.1%  ▂▁▁▂▃▂●▄▅██▃ beats 11/46    medium · avg 62%        3.4%  at its level

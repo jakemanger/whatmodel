@@ -6,7 +6,7 @@
 
 IBM · released 2025-02 · 2.53B params · apache-2.0
 
-**score 38.6** ±1.3 · #580 of 725 · from 10 benchmark results across 2 sources
+**score 38.7** ±1.3 · #579 of 725 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #333 of 395*     12%      2
-math            ▁▁▃●█▆▄█▄▁▁▁    #353 of 424     45%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #333 of 395*     13%      2
+math            ▁▁▃●█▆▄█▄▁▁▁    #355 of 427     45%      3
 </pre>
 
-<details><summary>chat &amp; writing · #333 of 395 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #333 of 395 · 13% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   61.6%  ●▄·▄······▄█ beats 0/5    easy · avg 78%      6.8%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   24.9%  ●·▄··▄·····█ beats 1/5    medium · avg 54%    5.7%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   61.6%  ●▄·▄······▄█ beats 0/5    easy · avg 78%      6.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   24.9%  ●·▄··▄·····█ beats 1/5    medium · avg 54%    5.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #353 of 424 · 45% of its score</summary>
+<details><summary>math · #355 of 427 · 45% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       67.0%  ●··▄·····▄·█ beats 0/5    very easy · avg 89%      31%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    35.5%  ●···▄·▄▄···▄ beats 1/5    easy · avg 69%          7.6%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    0.9%  ●···▄▄▄····▄ beats 0/5    very hard · avg 8.7%    6.6%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       67.0%  ●··▄·····▄·█ beats 0/5    very easy · avg 89%      30%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    35.5%  ●···▄·▄▄···▄ beats 1/5    easy · avg 69%          7.7%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    0.9%  ●···▄▄▄····▄ beats 0/5    very hard · avg 8.7%    6.8%  sharp · too hard for it
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test             result  vs the others in its run  difficulty            counts 
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>                 61.4%  ●·▄·····▄▄·▄ beats 0/5    easy · avg 81%          18%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                           57.2%  ▄●········▄█ beats 2/5    easy · avg 76%          15%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          20.6%  ▄·●······▄·█ beats 2/5    hard · avg 33%         5.4%  typical
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          20.6%  ▄·●······▄·█ beats 2/5    hard · avg 33%         5.5%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   83.5%  ▁▁●▃▄▄█▆▃▂▂▁ beats 9/140  very easy · avg 94%    1.7%  blunt · noisy
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                           23.8%  ▃●·····▃···█ beats 1/5    medium · avg 54%       0.8%  blunt · at its level
 </pre>
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="card2-ibm-granite-granite-3-3-8b-instruct"></a><a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">ibm-granite/granite-3.3-8b-instruct mod…</a>        9   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 38.6
+weighted average                                   = 38.7
 </pre>
 
 <sub>Licences: ibm-granite/granite-3.3-8b-instruct model card ([Apache-2.0](../../licenses/ibm-granite--granite-3.3-8b-instruct.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

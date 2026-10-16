@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▅█▆▄█▄▁▁▁   #381 of 424*     44%      2
+math  ▁▁●▅█▆▄█▄▁▁▁   #383 of 427*     44%      2
 </pre>
 
-<details><summary>math · #381 of 424 · 44% of its score</summary>
+<details><summary>math · #383 of 427 · 44% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 

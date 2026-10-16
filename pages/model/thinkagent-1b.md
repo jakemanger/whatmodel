@@ -6,7 +6,7 @@
 
 ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
-**score 27.3** ±6.7 · #893 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.4** ±6.7 · #893 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▄▄▃▃▁   #334 of 337*     80%      1
+agent tasks  ●▁▃▆█▆▅▄▄▃▃▁   #337 of 340*     80%      1
 </pre>
 
-<details><summary>agent tasks · #334 of 337 · 80% of its score</summary>
+<details><summary>agent tasks · #337 of 340 · 80% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       20% ▇▇
-weighted average                                   = 27.3
+weighted average                                   = 27.4
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

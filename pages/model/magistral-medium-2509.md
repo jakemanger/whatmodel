@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃█······●·▃▃       #3 of 7*     12%      1
-math    ▁▂▃▆█▇●▇▃▁▁▁   #160 of 523*     53%      2
+math    ▁▁▃▆██●█▄▁▁▁   #162 of 526*     53%      2
 </pre>
 
 <details><summary>coding · #3 of 7 · 12% of its score</summary>
@@ -31,14 +31,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #160 of 523 · 53% of its score</summary>
+<details><summary>math · #162 of 526 · 53% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 48%     32%  sharp
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 60%     21%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 47%     32%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 59%     21%  sharp
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 52%     34%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 52%     33%  sharp
 </pre>
 
 </details>

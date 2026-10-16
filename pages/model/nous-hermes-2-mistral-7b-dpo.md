@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-02 · 7.24B params · apache-2.0
 
-**score 42.3** ±2.5 · #523 of 725 · from 4 benchmark results across 2 sources
+**score 42.4** ±2.5 · #523 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,10 +36,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">Open Medical-LLM Leaderboard results</a>        3   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">Open Medical-LLM Leaderboard results</a>        3   82% ▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1   15% ▇▇
 prior: pull toward the middle                    3% ▇
-weighted average                               = 42.3
+weighted average                               = 42.4
 </pre>
 
 <sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

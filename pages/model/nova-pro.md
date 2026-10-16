@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #215 of 303     14%      4
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #219 of 306     14%      4
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #263 of 460*     27%      2
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #232 of 395*     13%      1
 math                ●··········█       #2 of 2*     11%      2
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #127 of 147     17%      3
 </pre>
 
-<details><summary>agent tasks · #215 of 303 · 14% of its score</summary>
+<details><summary>agent tasks · #219 of 306 · 14% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      25.0%  ▁▁▁▂●█▅▅▆▂▂▂ beats 14/77   hard · avg 31%      5.2%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      25.0%  ▁▁▁▂●█▅▅▆▂▂▂ beats 14/77   hard · avg 31%      5.3%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              60.8%  ▁▁▁▁▁▃▅█●▄▁▁ beats 83/114  medium · avg 51%    4.3%  blunt · at its level · several runs
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   86.8%  ▃▃▃▃▆▅●▅█▂▅▂ beats 17/31   easy · avg 78%      2.5%  typical
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   29.0%  ▅▃·▃●▅▅█▃█▅▅ beats 4/19    hard · avg 26%      2.1%  at its level
@@ -44,7 +44,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 19/62  medium · avg 50%     25%  sharp · at its level
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>                   22.3%  ▅····●·█▃▅█▃ beats 2/12   hard · avg 26%      2.9%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>                   22.3%  ▅····●·█▃▅█▃ beats 2/12   hard · avg 26%      2.8%  at its level · small run
 </pre>
 
 </details>
@@ -64,8 +64,8 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>    5.3%  ▁·▁●▁▂▅▆█▇▅▁ beats 4/133  very hard · avg 12%    6.9%  sharp · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    76.6%  ▁▃▂▃●▇▅▇█▅▂▁ beats 20/84  easy · avg 79%         4.5%  small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>    5.3%  ▁·▁●▁▂▅▆█▇▅▁ beats 4/133  very hard · avg 12%    7.0%  sharp · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    76.6%  ▁▃▂▃●▇▅▇█▅▂▁ beats 20/84  easy · avg 79%         4.4%  small run
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ Trails [Qwen3.5 2B](qwen3-5-2b.md), [InternVL2-26B](internvl2-26b.md), [Qwen3-VL
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1018.7  ▁▁▂●▂▂▄▅▅▆██ beats 14/145  avg 1058            9.2%  blunt
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions) (la…</a>   40.6%  ▂▅▃●▅▆▆▅▆█▆▂ beats 19/100  medium · avg 38%    4.2%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions) (la…</a>   40.6%  ▂▅▃●▅▆▆▅▆█▆▂ beats 19/100  medium · avg 38%    4.1%  at its level · small run
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv descriptive questions (la…</a>   70.5%  ▂▄▄●▇▄█▇▇▂▁▂ beats 13/58   easy · avg 72%      4.1%  at its level · small run
 </pre>
 
@@ -87,7 +87,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>                   50.0%  ▁▁▁▁▂▄●▅███▄ beats 86/310   hard · avg 45%         9.4%  sharp · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>                   50.0%  ▁▁▁▁▂▄●▅███▄ beats 86/311   hard · avg 45%         9.4%  sharp · at its level · small run
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>                           85.9%  ▁▁▁▁▁▂▂▅██●▄ beats 192/214  easy · avg 81%         5.9%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.2%  ▁▁▂▃▄▄█▆▃●▂▁ beats 124/140  very easy · avg 94%    0.8%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▄●▁▁ beats 91/98    very easy · avg 90%    0.0%  blunt

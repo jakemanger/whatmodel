@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 7.17B params · bigcode-openrail-m
 
-**score 36.6** ±0.6 · #606 of 725 · from 19 benchmark results across 5 sources
+**score 36.7** ±0.6 · #606 of 725 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #413 of 460     85%      9
-math    ▁▁▃▅●▆▄█▄▁▁▁   #299 of 424    5.0%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #413 of 460     86%      9
+math    ▁▁▃▅●▆▄█▄▁▁▁   #312 of 427    4.8%      2
 </pre>
 
-<details><summary>coding · #413 of 460 · 85% of its score</summary>
+<details><summary>coding · #413 of 460 · 86% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -39,13 +39,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #299 of 424 · 5.0% of its score</summary>
+<details><summary>math · #312 of 427 · 4.8% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall.
 
 <pre>
 test         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   40.4%  ▄▄▄·▄█·█●·█▄ beats 8/12   easy · avg 76%      4.2%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   40.4%  ▄▄▄·▄█·█●·█▄ beats 8/12   easy · avg 75%      3.9%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">MATH</a>          10.4%  ▃·▃····●···█ beats 2/5    medium · avg 37%    0.9%  typical
 </pre>
 
@@ -55,7 +55,7 @@ test         result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               25.0%  ▂▂▃●▄█▁▄▅▃▁▃ beats 9/42   medium · avg 52%    6.5%  typical
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               25.0%  ▂▂▃●▄█▁▄▅▃▁▃ beats 9/42   medium · avg 52%    6.6%  typical
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   28.5%  ▂▁▁●▂▅▇█▆▂▂▂ beats 7/58   medium · avg 48%    2.9%  at its level
 </pre>
 
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        8   18% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 36.6
+weighted average                                   = 36.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

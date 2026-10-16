@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█▇●▄▂▁   #111 of 554*     92%      1
+coding  ▁▁▁▂▅▇█▇●▄▂▁   #110 of 554*     92%      1
 </pre>
 
-<details><summary>coding · #111 of 554 · 92% of its score</summary>
+<details><summary>coding · #110 of 554 · 92% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [MiniMax-M2.1](minimax-m2-1.md), [MiniMax-M2.5](minimax-m2-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

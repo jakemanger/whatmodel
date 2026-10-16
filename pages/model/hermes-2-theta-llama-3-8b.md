@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.6352 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 13/52    avg 42.785 WB-Score     54%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.6352 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 13/52    avg 42.742 WB-Score     54%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                54.9%  ▁··▁▁▂▂▆●▆█▆ beats 31/70    medium · avg 61%        31%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             70.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 164/276  medium · avg 72%        12%  at its level · noisy
 </pre>

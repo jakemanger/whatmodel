@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #221 of 303    5.6%      3
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #224 of 306    5.6%      3
 coding                             not ranked yet       —      2
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃     #221 of 395*     11%      2
-math                ▁▁▃▅●▆▄█▄▁▁▁      #268 of 424     26%      4
+math                ▁▁▃▅●▆▄█▄▁▁▁      #272 of 427     26%      4
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄      #105 of 147     14%      5
 web search          ▂▁▂▆▄█▃●▁▁·▁       #11 of 80*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #221 of 303 · 5.6% of its score</summary>
+<details><summary>agent tasks · #224 of 306 · 5.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -53,20 +53,20 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](grani
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1303.1  ▁▁▁▂▃▃▃●▆▇█▃ beats 129/379  avg 1258          7.9%  blunt
-<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>   19.6%  ▁●··▄▃▁▃█▁▁▇ beats 1/22     hard · avg 20%    3.1%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1303.1  ▁▁▁▂▃▃▃●▆▇█▃ beats 129/379  avg 1258          7.8%  blunt
+<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>   19.6%  ▁●··▄▃▁▃█▁▁▇ beats 1/22     hard · avg 20%    3.0%  sharp · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #268 of 424 · 26% of its score</summary>
+<details><summary>math · #272 of 427 · 26% of its score</summary>
 
-Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      46.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 40/92   hard · avg 27%           17%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 25/193  very hard · avg 6.9%    3.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 25/195  very hard · avg 6.9%    3.8%  sharp · noisy
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MATH (subset unspecified) (lab)</a>   69.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 41/80   medium · avg 59%        3.2%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MathVista (testmini) (lab)</a>        68.9%  ▁··▁▄▄▇●▅▆█▄ beats 24/47   medium · avg 61%        2.2%  at its level · small run
 </pre>
@@ -79,7 +79,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o
 
 <pre>
 test                             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1127.1  ▁▁▂▂▂▂●▅▅▆██ beats 39/145  avg 1058               5.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1127.1  ▁▁▂▂▂▂●▅▅▆██ beats 39/145  avg 1058               5.5%  blunt
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▄█●▆▆ beats 26/52   medium · avg 56%       4.3%  at its level · small run · several runs
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MathVista (testmini) (lab)</a>        68.9%  ▁··▁▄▄▇●▅▆█▄ beats 24/47   medium · avg 61%       2.2%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">ChartQA (lab)</a>                     86.2%  ▁··▁▁▁▁▁▂▅●█ beats 27/44   easy · avg 81%         1.4%  blunt · small run · several runs
@@ -103,7 +103,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.9%  ▁▁▁▁▂▄●▄▅▇█▅ beats 44/208   hard · avg 38%           17%  sharp · at its level · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.9%  ▁▁▁▁▂▄●▄▅▇█▄ beats 44/209   hard · avg 38%           17%  sharp · at its level · several runs
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   78.0%  ▁▂▂▂▃█▃▆●▄▂▃ beats 75/95    medium · avg 64%        5.0%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1055.9  ▁·▂●▄▅▅▃█▄▁▁ beats 5/62     avg 1031                4.7%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.7%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 68/97    hard · avg 31%          4.5%  blunt · at its level

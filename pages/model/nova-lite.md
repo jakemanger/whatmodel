@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #233 of 303     30%      4
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #236 of 306     30%      4
 chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #264 of 395*     39%      1
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #129 of 147*     27%      1
 </pre>
 
-<details><summary>agent tasks · #233 of 303 · 30% of its score</summary>
+<details><summary>agent tasks · #236 of 306 · 30% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              55.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 60/114  medium · avg 51%    8.3%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              55.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 60/114  medium · avg 51%    8.5%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">BFCL V4 (2025-11-03 archive, mode…</a>   33.2%  ▃··●▃▃·▅·▃·█ beats 1/10    hard · avg 33%      7.8%  at its level
-<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   86.8%  ▃▃▃▃▆▅●▅█▂▅▂ beats 16/31   easy · avg 78%      7.5%  typical
+<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   86.8%  ▃▃▃▃▆▅●▅█▂▅▂ beats 16/31   easy · avg 78%      7.6%  typical
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   16.0%  ●▃·▃▃▅▅█▃█▅▅ beats 0/19    hard · avg 26%      6.1%  at its level
 </pre>
 

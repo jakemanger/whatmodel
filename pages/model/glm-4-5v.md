@@ -33,7 +33,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>vision &amp; documents · #90 of 147 · 68% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -41,9 +41,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>        63.0%  ▄·····▄▄·●·█ beats 3/5     hard · avg 31%       16%  at its level · several runs
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.8%  ▁·▁·▃▃▁▇▃●·▄ beats 14/22   hard · avg 26%       12%  blunt · at its level
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     75.4%  ▁····▁▁▄█▇●▆ beats 38/52   medium · avg 57%    6.4%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.0%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.1%  at its level · small run
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        90.8%  ▄····▄···●▄▄ beats 3/5     easy · avg 66%      5.0%  noisy
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 20/34   medium · avg 62%    4.7%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 20/34   medium · avg 62%    4.8%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                       86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 20/37   easy · avg 82%      1.5%  blunt · small run
 </pre>
 

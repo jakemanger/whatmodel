@@ -19,7 +19,7 @@ task            vs the others          rank  counts  tests
 agent tasks     ······●·····       #1 of 1*    9.0%      3
 coding          ······●·····       #1 of 1*     13%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #143 of 395*     16%      1
-math            ······●·····        #1 of 1     24%      3
+math            ······●·····        #1 of 1     25%      3
 </pre>
 
 <details><summary>agent tasks · #1 of 1 · 9.0% of its score</summary>
@@ -54,12 +54,12 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #1 of 1 · 24% of its score</summary>
+<details><summary>math · #1 of 1 · 25% of its score</summary>
 
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (lab)</a>   76.9%  ▁·▁▁▁▂▅▆●▇▅▁ beats 77/133  medium · avg 41%        10%  sharp · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (lab)</a>   86.0%  ▁▁▁▂▁▃▁▅█●█▃ beats 61/85   medium · avg 55%       9.1%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (lab)</a>   76.9%  ▁·▁▁▁▂▅▆●▇▅▁ beats 77/133  medium · avg 40%        10%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (lab)</a>   86.0%  ▁▁▁▂▁▃▁▅█●█▃ beats 61/85   medium · avg 55%       9.2%  sharp · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (lab)</a>    96.8%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 64/84   very easy · avg 89%    5.2%  maxed out · small run
 </pre>
 
@@ -69,13 +69,13 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (lab)</a>           70.0%  ▁▁▁▁▂▄▅▅●██▄ beats 153/310  hard · avg 41%           13%  sharp · at its level · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>    8.4%  ▁▁▁●▆▆▇██▆▁▃ beats 11/104   very hard · avg 3.1%    6.4%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (lab)</a>           70.0%  ▁▁▁▁▂▄▅▅●██▄ beats 153/311  hard · avg 41%           13%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>    8.4%  ▁▁▁●▆▆▇██▆▁▃ beats 11/104   very hard · avg 3.1%    6.3%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (lab)</a>           61.5%  ▂·▁·▂▂▁▃▄▁●▄ beats 24/28    hard · avg 40%          6.1%  at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (lab)</a>             86.8%  █·▁▁▁▇·●▄▁▄▁ beats 14/24    medium · avg 58%        5.8%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (lab)</a>               81.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 131/188  medium · avg 59%        5.7%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (lab)</a>               18.5%  ▄▄▄▆█▆●██·▂█ beats 19/32    very hard · avg 7.3%    5.6%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (lab)</a>             86.8%  █·▁▁▁▇·●▄▁▄▁ beats 14/24    medium · avg 59%        5.6%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (lab)</a>         44.7%  ▁·▁·▁▃●▅▃▁█▅ beats 9/29     hard · avg 27%          3.6%  at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (lab)</a>         44.7%  ▁·▁·▁▃●▅▃▁█▅ beats 9/29     hard · avg 27%          3.5%  at its level · small run
 </pre>
 
 </details>

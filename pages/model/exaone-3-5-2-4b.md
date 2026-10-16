@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 37.6** ±2.2 · #595 of 725 · from 7 benchmark results across 3 sources
+**score 37.7** ±2.2 · #595 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #271 of 395 · 39% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   38% ▇▇▇▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   21% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 37.6
+weighted average                                   = 37.7
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

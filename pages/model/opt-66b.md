@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▁▁▁   #417 of 424*    1.3%      1
+math  ▁●▃▅█▆▄█▄▁▁▁   #420 of 427*    1.3%      1
 </pre>
 
-<details><summary>math · #417 of 424 · 1.3% of its score</summary>
+<details><summary>math · #420 of 427 · 1.3% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ●▂▂▂▃▄▅▇██▆▄ beats 0/200  medium · avg 64%    1.3%  sharp · noisy
+<a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ●▂▂▂▃▄▅▇██▆▄ beats 0/206  medium · avg 63%    1.3%  sharp · noisy
 </pre>
 
 </details>
@@ -41,12 +41,12 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   52.8%  ▂·▄·▂█▄▄●▄▂▆ beats 14/21   easy · avg 74%         3.8%  blunt · at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     77.3%  ▂▂▄▂·▂·▆·▂●▂ beats 13/14   easy · avg 89%         3.6%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            56.4%  ▅●······▃▃·▅ beats 3/8     very easy · avg 90%    3.5%  at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   73.9%  ▃··▅▃▃▅▅▅██● beats 19/19   very easy · avg 87%    3.0%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   73.9%  ▃··▅▃▃▅▅▅██● beats 19/19   very easy · avg 87%    3.1%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">COPA</a>                                 74.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 45/67   easy · avg 92%         2.8%  at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 92.6%  ▂··▂▃▂▂▆▃▃█● beats 19/19   very easy · avg 98%    2.6%  blunt · several runs
-<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                60.7%  ▁····▁▂●▆▅▆▄ beats 17/103  medium · avg 78%       2.0%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                60.7%  ▁····▁▂●▆▅▆▄ beats 17/103  medium · avg 78%       2.1%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">OpenBookQA</a>                           46.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 54/107  easy · avg 77%         2.0%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       0.3%  ●▁▁▁▂▄▄▃▅█▅▁ beats 1/68    very hard · avg 13%    1.0%  too hard for it
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       0.3%  ●▁▁▁▂▄▄▃▅█▅▁ beats 1/68    very hard · avg 13%    1.1%  too hard for it
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.0%  ▃▁▁●▁▁▁▁▂█▅▁ beats 41/276  medium · avg 72%       0.8%  noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-66b/opt-66b.json">SuperGLUE WSC (prompted)</a>             54.8%  █·······●·▂▃ beats 5/8     medium · avg 68%       0.2%  blunt · noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-66b/opt-66b.json">LogiQA (harness)</a>                     22.7%  ●··········▁ beats 0/14    very hard · avg 25%    0.0%  too hard for it · noisy

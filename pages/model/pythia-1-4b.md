@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 1.41B params · apache-2.0
 
-**score 13.9** ±1.4 · #706 of 725 · from 15 benchmark results across 4 sources
+**score 13.8** ±1.4 · #706 of 725 · from 15 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,16 +22,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       60.6%  ▃·▅▃▃▅·█●▃██ beats 11/19   easy · avg 87%          17%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  26.0%  █··●·▁▁·▁▂▁▂ beats 10/19   easy · avg 75%          16%  sharp · too hard for it · small run · s…
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       60.6%  ▃·▅▃▃▅·█●▃██ beats 11/19   easy · avg 87%          16%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  26.0%  █··●·▁▁·▁▂▁▂ beats 10/19   easy · avg 74%          16%  sharp · too hard for it · small run · s…
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   42.2%  ▂·▄·▂●▄▄█▄▂▆ beats 7/21    easy · avg 74%          11%  blunt · at its level
 <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     57.3%  ▄····▄▆▂●▆▆█ beats 9/19    easy · avg 87%          10%  typical
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           86.5%  ▂··▂▃▂▂▆●▃█▂ beats 11/19   very easy · avg 98%     10%  blunt
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           86.5%  ▂··▂▃▂▂▆●▃█▂ beats 11/19   very easy · avg 98%    9.5%  blunt
 <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           71.1%  ▂·▄▄·▄▂●▂▄█▄ beats 10/19   easy · avg 87%         8.2%  blunt · at its level
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   61.6%  ▃··▅▃▃▅▅▅●██ beats 11/19   very easy · avg 87%    6.7%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.530.pdf">OpenBookQA (lab)</a>                     19.8%  ●▁▁▁▂▂▃█▃▁▃▁ beats 0/107   very hard · avg 29%    6.4%  too hard for it · small run
 <a href="https://aclanthology.org/2023.emnlp-main.530.pdf">HellaSwag (lab)</a>                      40.2%  ▁▁▁●▂▂▄▆█▇▄▂ beats 13/135  easy · avg 83%         5.7%  small run
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                        4.8%  ▁▁●▂▄▄▃▆▅█▅▂ beats 4/80    medium · avg 58%       4.6%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                        4.8%  ▁▁●▂▄▄▃▆▅█▅▂ beats 4/80    medium · avg 61%       5.5%  small run
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">MedQA (USMLE, 4 options)</a>             27.5%  ▁▁··●▁▁··▄▃█ beats 2/17    medium · avg 71%       1.9%  sharp · too hard for it
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">MedMCQA</a>                              31.5%  ▂▂··▄●▂▂·▄██ beats 4/17    medium · avg 63%       1.8%  too hard for it
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">PubMedQA</a>                             59.4%  ▂·▂●·▄▂▄▄▂█▂ beats 3/17    medium · avg 75%       0.9%  blunt · at its level
@@ -45,12 +45,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   55% ▇▇▇▇▇▇▇
-<a name="acl-2023-emnlp-main-530"></a><a href="https://aclanthology.org/2023.emnlp-main.530.pdf">trlX: A Framework for Large Scale Reinf…</a>        5   29% ▇▇▇
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   54% ▇▇▇▇▇▇▇
+<a name="acl-2023-emnlp-main-530"></a><a href="https://aclanthology.org/2023.emnlp-main.530.pdf">trlX: A Framework for Large Scale Reinf…</a>        5   30% ▇▇▇▇
 <a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1   11% ▇
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">Open Medical-LLM Leaderboard results</a>            3    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 13.9
+weighted average                                   = 13.8
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · trlX: A Framework for Large Scale Reinforcement Learning from Human Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-530-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

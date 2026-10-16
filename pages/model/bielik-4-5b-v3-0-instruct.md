@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-04 · 4.76B params · apache-2.0
 
-**score 48.7** ±2.0 · #393 of 725 · from 5 benchmark results across 4 sources
+**score 48.8** ±2.0 · #391 of 725 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -42,7 +42,7 @@ source                                    results  share of the score
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   26% ▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   14% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 48.7
+weighted average                                   = 48.8
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

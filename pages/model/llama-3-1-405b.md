@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 405B params · llama-3.1
 
-**score 55.9** ±0.5 · #258 of 725 · from 36 benchmark results across 19 sources
+**score 56.0** ±0.5 · #255 of 725 · from 36 benchmark results across 19 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #207 of 303     12%      8
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #210 of 306     12%      8
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #214 of 460     30%     10
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #185 of 395     11%      3
-math            ▁▁▃▅●▆▄█▄▁▁▁   #258 of 424     12%      4
+math            ▁▁▃▅●▆▄█▄▁▁▁   #262 of 427     12%      4
 </pre>
 
-<details><summary>agent tasks · #207 of 303 · 12% of its score</summary>
+<details><summary>agent tasks · #210 of 306 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   24.0%  █··●·▄█·▄··▄ beats 2/7    hard · avg 17%          1.5%  typical
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   64.6%  ▅····▅●▃▃·▃█ beats 4/11   medium · avg 53%        1.1%  blunt · at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    7.2%  ▃▅▃·●▃▃··█·▃ beats 4/11   very hard · avg 3.5%    0.8%  sharp · noisy
-<a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                      26.0%  ▁▁●·▅▄▁█▇▁▁▇ beats 2/28   hard · avg 22%          0.7%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                      26.0%  ▁▁●·▅▄▁█▇▁▁▇ beats 2/28   hard · avg 21%          0.7%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Retail</a>                       29.1%  ▁····●·▂▇█▂▆ beats 2/28   hard · avg 26%          0.5%  at its level · noisy
 </pre>
 
@@ -62,27 +62,27 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #185 of 395 · 11% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   69.3%  ▂▁▁▅█▅▄▃●▅▃▁ beats 45/60    medium · avg 46%    5.6%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   69.3%  ▂▁▁▅█▅▄▃●▅▃▁ beats 45/60    medium · avg 46%    5.7%  sharp · at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1335.4  ▁▁▁▂▃▃▃▆●▇█▃ beats 171/379  avg 1258            2.8%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   50.7%  ▁·▁▁▂▁▄▄▆▄●▄ beats 27/38    medium · avg 45%    2.1%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #258 of 424 · 12% of its score</summary>
+<details><summary>math · #262 of 427 · 12% of its score</summary>
 
 Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  49.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 42/92   hard · avg 27%          6.0%  sharp · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                     20.0%  ▁▁▁▂▁●▁▅███▃ beats 11/85   very hard · avg 14%     2.2%  sharp · small run
+<a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                     20.0%  ▁▁▁▂▁●▁▅███▃ beats 11/85   very hard · avg 13%     2.3%  sharp · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   96.0%  ▁▄·▁▄█▅▅▅██● beats 40/43   very easy · avg 87%     1.8%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       9.7%  ▃▃▄●▃▃▇▇█▃▂▅ beats 50/193  very hard · avg 6.9%    1.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       9.7%  ▃▃▄●▃▃▇▇█▃▂▅ beats 50/195  very hard · avg 6.9%    1.6%  sharp · noisy
 </pre>
 
 </details>
@@ -94,7 +94,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 54.3%  ▁▁▁▂▂▃▂█▆▃▅● beats 58/61    medium · avg 38%        12%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   84.4%  ▁·▁▁▄▄▄▅●▄▂▁ beats 42/53    easy · avg 75%         9.0%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   25.0%  ▁▁▃▆█●▁▁·▁▁▁ beats 38/57    hard · avg 15%         5.5%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.9%  ▁▁▁▁▂▄●▄▅▇█▅ beats 71/208   hard · avg 38%         4.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.9%  ▁▁▁▁▂▄●▄▅▇█▄ beats 71/209   hard · avg 38%         4.2%  sharp · at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.4  ▁·▂▁●▅▅▃█▄▁▁ beats 6/62     avg 1031               1.7%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>          90.4%  ▄▄▄··▄▄··●·█ beats 5/7      easy · avg 79%         1.5%  typical
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   29.6%  ▁▁▂▁▃▄●▆▄▅▂▃ beats 19/39    very hard · avg 21%    1.4%  typical
@@ -133,7 +133,7 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.9
+weighted average                                   = 56.0
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

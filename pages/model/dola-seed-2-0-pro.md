@@ -6,7 +6,7 @@
 
 ByteDance · proprietary
 
-**score 72.4** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 72.3** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -32,7 +32,7 @@ test                    result  vs the others in its run  difficulty      counts
 
 <details><summary>chat &amp; writing · #49 of 466 · 40% of its score</summary>
 
-Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
+Beats [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   68% ▇▇▇▇▇▇▇▇
 <a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (la…</a>        1   30% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 72.4
+weighted average                                   = 72.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ByteDance Seed - Seed2.0 Model Card ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

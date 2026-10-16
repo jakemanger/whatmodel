@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 7.6** ±1.4 · comparison only: no current run option verified · from 30 benchmark results across 6 sources
+**score 7.4** ±1.4 · comparison only: no current run option verified · from 30 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆█▇▅▇▃▁▁▁   #504 of 523*    3.5%      2
+math  ▁●▃▆██▅█▄▁▁▁   #507 of 526*    3.7%      2
 </pre>
 
-<details><summary>math · #504 of 523 · 3.5% of its score</summary>
+<details><summary>math · #507 of 526 · 3.7% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test    result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>     1.7%  ▅·▂●·······▂ beats 5/9    medium · avg 62%    1.9%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>   24.3%  ▃·▃▃█●··▃·▃▃ beats 6/10   hard · avg 34%      1.9%  blunt · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>     1.7%  ▅·▂●·······▂ beats 5/9    medium · avg 63%    1.7%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -35,15 +35,15 @@ test    result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            43.4%  ●·█·█··▄▄··▄ beats 0/7    very easy · avg 91%     16%  at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            43.4%  ●·█·█··▄▄··▄ beats 0/7    very easy · avg 91%     15%  at its level · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                           52.9%  ●·▄·▄▄▄··█·▄ beats 0/7    easy · avg 87%          12%  several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   51.6%  ●·▄··█··█··▄ beats 1/7    very easy · avg 88%     11%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     21.8%  ······●····· beats 3/5    very hard · avg 25%     10%  too hard for it
-<a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 84.3%  ●█····███··█ beats 0/5    very easy · avg 98%    8.4%  blunt
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 70.5%  ●··▃··▃▃·▃·▃ beats 0/7    easy · avg 88%         6.8%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             51.4%  ●···▄··█·▄·▄ beats 0/5    easy · avg 87%         5.5%  blunt · at its level
+<a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 84.3%  ●█····███··█ beats 0/5    very easy · avg 98%    8.3%  blunt
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 70.5%  ●··▃··▃▃·▃·▃ beats 0/7    easy · avg 88%         6.7%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             51.4%  ●···▄··█·▄·▄ beats 0/5    easy · avg 87%         5.4%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        22.5%  ●····▄···█▄▄ beats 0/5    easy · avg 78%         4.4%  sharp · too hard for it
-<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                              5.0%  ●···█·███··█ beats 0/5    medium · avg 64%       3.5%  typical
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                              5.0%  ●···█·███··█ beats 0/5    easy · avg 67%         4.1%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        18.4%  ●····▁·····▁ beats 7/9    easy · avg 75%         2.4%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 2.0%  █·●▂▄▂▂····▂ beats 6/12   easy · avg 70%         2.2%  sharp · too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                32.0%  ●····▄█▄···▄ beats 0/5    medium · avg 56%       2.0%  blunt
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    2% ▇
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 7.6
+weighted average                                   = 7.4
 </pre>
 
 <sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

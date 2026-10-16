@@ -6,7 +6,7 @@
 
 OpenAI · released 2021-08 · proprietary
 
-**score 32.8** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 4 sources
+**score 32.7** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●█▇▅▇▃▁▁▁   #443 of 523*     28%      1
+math  ▁▁▃●██▅█▄▁▁▁   #453 of 526*     28%      1
 </pre>
 
-<details><summary>math · #443 of 523 · 28% of its score</summary>
+<details><summary>math · #453 of 526 · 28% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">GSM8K</a>   14.7%  ▂▂▂▂●▄▅▇██▆▄ beats 41/200  easy · avg 70%     28%  sharp · several runs
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">GSM8K</a>   14.7%  ▂▂▂▂●▄▅▇██▆▄ beats 41/206  easy · avg 69%     28%  sharp · several runs
 </pre>
 
 </details>
@@ -34,11 +34,11 @@ test   result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">SVAMP</a>                                41.2%  █▆▆▅▂▅▂●▂▂▅▃ beats 23/30  easy · avg 84%       33%  sharp · at its level · several runs
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">AQuA-RAT</a>                             22.4%  █··●▁▁··▁▁▁▁ beats 18/27  medium · avg 56%     16%  sharp · too hard for it · several runs
-<a href="https://aclanthology.org/2023.findings-emnlp.167.pdf">CommonsenseQA</a>                        46.8%  █·····▂▂●▂▄▄ beats 21/38  easy · avg 87%       13%  sharp · at its level · small run
-<a href="https://aclanthology.org/2023.acl-long.855.pdf">CoNLL-2003 English NER, few-shot …</a>   61.9%  ▃···▅·▃●··▃█ beats 5/9    easy · avg 84%      5.2%  at its level · small run
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      33.6%  ▄●········▄█ beats 1/4    medium · avg 58%    3.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">SVAMP</a>                                41.2%  █▆▆▅▂▅▂●▂▂▅▃ beats 23/30  easy · avg 84%       34%  sharp · at its level · several runs
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">AQuA-RAT</a>                             22.4%  █··●▁▁··▁▁▁▁ beats 18/27  medium · avg 55%     16%  sharp · too hard for it · several runs
+<a href="https://aclanthology.org/2023.findings-emnlp.167.pdf">CommonsenseQA</a>                        46.8%  █·····▂▂●▂▄▄ beats 21/38  easy · avg 87%       14%  sharp · at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.855.pdf">CoNLL-2003 English NER, few-shot …</a>   61.9%  ▃···▅·▃●··▃█ beats 5/9    easy · avg 84%      5.3%  at its level · small run
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      33.6%  ▄●········▄█ beats 1/4    medium · avg 57%    3.2%  blunt · at its level
 </pre>
 
 </details>
@@ -49,12 +49,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2023-ijcnlp-main-20"></a><a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">Faithful Chain-of-Thought Reasoning</a>             3   48% ▇▇▇▇▇▇
+<a name="acl-2023-ijcnlp-main-20"></a><a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">Faithful Chain-of-Thought Reasoning</a>             3   47% ▇▇▇▇▇▇
 <a name="acl-2023-findings-emnlp-167"></a><a href="https://aclanthology.org/2023.findings-emnlp.167.pdf">Large Language Models are Better Reason…</a>        4   43% ▇▇▇▇▇
 <a name="acl-2023-acl-long-855"></a><a href="https://aclanthology.org/2023.acl-long.855.pdf">CodeIE: Large Code Generation Models ar…</a>        1    5% ▇
 <a name="acl-2023-findings-emnlp-89"></a><a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">Execution-Based Evaluation for Open-Dom…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 32.8
+weighted average                                   = 32.7
 </pre>
 
 <sub>Licences: Faithful Chain-of-Thought Reasoning ([CC BY 4.0](../../licenses/acl-2023-ijcnlp-main-20-CC-BY-4-0.txt)) · Large Language Models are Better Reasoners with Self-Verification ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-167-CC-BY-4-0.txt)) · CodeIE: Large Code Generation Models are Better Few-Shot Information Extractors ([CC BY 4.0](../../licenses/acl-2023-acl-long-855-CC-BY-4-0.txt)) · Execution-Based Evaluation for Open-Domain Code Generation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-89-CC-BY-4-0.txt))</sub>

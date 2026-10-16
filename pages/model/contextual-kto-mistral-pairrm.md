@@ -6,7 +6,7 @@
 
 Contextual AI · released 2024-03 · 7.24B params · apache-2.0
 
-**score 48.0** ±1.6 · #531 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±1.6 · #532 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

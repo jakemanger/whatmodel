@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 57.4** ±0.9 · #237 of 725 · from 20 benchmark results across 5 sources
+**score 57.4** ±0.9 · #235 of 725 · from 20 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #265 of 303*    5.8%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #267 of 306*    5.7%      1
 coding       ▁▁▁▃▆█●▇▆▄▃▁    #249 of 460    8.8%      3
-math         ▁▁▃▅█▆●█▄▁▁▁    #152 of 424     45%      6
+math         ▁▁▃▅█▆●█▄▁▁▁    #153 of 427     45%      6
 </pre>
 
-<details><summary>agent tasks · #265 of 303 · 5.8% of its score</summary>
+<details><summary>agent tasks · #267 of 306 · 5.7% of its score</summary>
 
 Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                 result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard</a>    1.4%  ●▅▆▂▂▆▂▂█▅▅▂ beats 0/27   very hard · avg 1.2%    5.8%  sharp · too hard for it
+<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard</a>    1.4%  ●▅▆▂▂▆▂▂█▅▅▂ beats 0/27   very hard · avg 1.3%    5.7%  sharp · too hard for it
 </pre>
 
 </details>
@@ -39,22 +39,22 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   57.2%  █·●·▄····▄·▄ beats 2/5    medium · avg 41%        5.6%  at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">LiveCodeBench v6 (Aug 2024–May 20…</a>   60.5%  ▂●▅▃█▃▂····▂ beats 2/17   medium · avg 48%        2.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">LiveCodeBench v6 (Aug 2024–May 20…</a>   60.5%  ▂●▅▃█▃▂····▂ beats 2/17   medium · avg 48%        1.9%  at its level · small run
 <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>                 2.6%  ●··▄····█▄·▄ beats 0/5    very hard · avg 3.7%    1.2%  too hard for it
 </pre>
 
 </details>
 
-<details><summary>math · #152 of 424 · 45% of its score</summary>
+<details><summary>math · #153 of 427 · 45% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                         83.3%  █▄···●·····▄ beats 4/5     medium · avg 62%         13%  sharp · several runs
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                         83.3%  █▄···●·····▄ beats 4/5     medium · avg 61%         14%  sharp · several runs
 <a href="https://arxiv.org/html/2601.02346v1">AIME 2025</a>                         75.8%  ▄·█··●····▄▄ beats 3/5     medium · avg 51%         13%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   54.3%  ▄··▄▄·●····█ beats 3/5     hard · avg 28%          9.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          43.9%  ▃▃▄▃▃●▇▇█▃▂▅ beats 73/193  very hard · avg 6.9%    5.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          43.9%  ▃▃▄▃▃●▇▇█▃▂▅ beats 73/195  very hard · avg 6.9%    5.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                          96.8%  ▄·▄·····●··█ beats 3/5     very easy · avg 92%     3.8%  maxed out
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (lab)</a>          61.5%  ▁▁▁▃▁●▅▃██▁▄ beats 6/31    medium · avg 60%           —  not counted yet: no other model in the …
 </pre>
@@ -68,7 +68,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond</a>                         61.4%  ●·········▂▂ beats 3/5     hard · avg 43%           21%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                             69.1%  █··●··███··█ beats 1/5     medium · avg 56%        5.4%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   36.9%  ▁▁▁▁▁▂▂▃▄●█▃ beats 54/97   hard · avg 31%          4.8%  blunt · at its level
-<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>                  5.6%  █··●█···█·██ beats 1/5     very hard · avg 3.6%    4.7%  too hard for it
+<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>                  5.6%  █··●█···█·██ beats 1/5     very hard · avg 3.6%    4.8%  too hard for it
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)</a>    29.2%  ●██···██···█ beats 0/5     hard · avg 33%          1.6%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.0%  ▃·▁▁▂▁▂▅●▇▄▁ beats 48/100  medium · avg 66%        1.2%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 3.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 24/135  very hard · avg 5.8%    0.9%  sharp · too hard for it · noisy
@@ -83,7 +83,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       11   67% ▇▇▇▇▇▇▇▇
+<a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       11   68% ▇▇▇▇▇▇▇▇
 <a name="card-deepseek-ai-deepseek-r1-0528-qwen3-8b"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">deepseek-ai/DeepSeek-R1-0528-Qwen3-8B m…</a>        4   19% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">Epoch AI</a>                                        2    6% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    5% ▇

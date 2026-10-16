@@ -6,7 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 36.5** ±0.7 · #608 of 725 · from 7 benchmark results across 4 sources
+**score 36.5** ±0.7 · #609 of 725 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    34.1%  ▁·▁▁▃●▆▅█▃▁▁ beats 19/99  easy · avg 76%     58%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   29.3%  ▁·▁▁▁▃●▄▄█▃▁ beats 19/99  easy · avg 70%     26%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        46.1%  ▁···▁▁▂●▇█▆▂ beats 13/75  easy · avg 66%    5.6%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        46.1%  ▁···▁▁▂●▇█▆▂ beats 13/75  easy · avg 66%    5.7%  at its level
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty      counts  why
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                 23.5%  ▂▂▃●▄█▁▄▅▃▁▃ beats 8/42   medium · avg 52%     10%  typical
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   44.7%  ▄▄········●█ beats 2/4    medium · avg 58%    0.8%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   44.7%  ▄▄········●█ beats 2/4    medium · avg 57%    0.8%  blunt · at its level
 </pre>
 
 </details>

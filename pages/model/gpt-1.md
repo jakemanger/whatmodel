@@ -6,7 +6,7 @@
 
 OpenAI · released 2018-06 · 0.117B params · mit
 
-**score -0.7** ±4.7 · #945 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score -0.8** ±4.7 · #945 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                1   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            10% ▇
-weighted average                        = -0.7
+weighted average                        = -0.8
 </pre>
 
 <sub>Licences: PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt))</sub>

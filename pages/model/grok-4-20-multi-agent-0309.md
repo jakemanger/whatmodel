@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #33 of 395*     47%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #33 of 395*     46%      1
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #45 of 147*     33%      1
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #25 of 80*     19%      1
 </pre>
 
-<details><summary>chat &amp; writing · #33 of 395 · 47% of its score</summary>
+<details><summary>chat &amp; writing · #33 of 395 · 46% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1470.6  ▁▁▁▂▃▃▃▆▆▇●▃ beats 341/379  avg 1258       47%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1470.6  ▁▁▁▂▃▃▃▆▆▇●▃ beats 341/379  avg 1258       46%  blunt
 </pre>
 
 </details>

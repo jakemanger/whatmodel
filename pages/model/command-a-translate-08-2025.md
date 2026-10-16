@@ -35,8 +35,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                         3   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             9% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                         3   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             8% ▇
 weighted average                        = 51.7
 </pre>
 

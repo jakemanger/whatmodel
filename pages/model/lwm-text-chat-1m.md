@@ -6,7 +6,7 @@
 
 Large World Model (UC Berkeley) · released 2024-02
 
-**score 43.1** ±4.9 · #684 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.1** ±4.9 · #685 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>    68.1%  ▁▁·●·▂▃▄█▂·▁ beats 2/22   easy · avg 82%     68%  at its level
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>    68.1%  ▁▁·●·▂▃▄█▂·▁ beats 2/22   easy · avg 81%     68%  at its level
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>   65.0%  ▄··▂▄▂●██▄▄▂ beats 8/21   easy · avg 67%     21%  at its level · noisy
 </pre>
 

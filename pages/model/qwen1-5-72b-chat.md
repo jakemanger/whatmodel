@@ -22,7 +22,7 @@ chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #287 of 395     21%  
 
 <details><summary>coding · #320 of 460 · 44% of its score</summary>
 
-Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
@@ -54,12 +54,12 @@ test                                result  vs the others in its run   difficult
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           29.3%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 25/61    medium · avg 38%       9.3%  at its level
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              42.0%  ▂▂▃▄▄█▁●▅▃▁▃ beats 28/42    medium · avg 52%       7.1%  at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro</a>                                       47.1%  ▃▂▅█●·█▃▅··▂ beats 11/23    medium · avg 54%       4.0%  at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro</a>                                       47.1%  ▃▂▅█●·█▃▅··▂ beats 11/23    medium · avg 54%       4.1%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>                  32.6%  ▃▂·▆▆●█▆▅▃▃▃ beats 11/33    medium · avg 39%       2.8%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>                  39.8%  ▂▁▁▄▂▅●█▆▂▂▂ beats 27/58    medium · avg 48%       2.8%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.9277 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 30/52    avg 42.785 WB-Score    2.7%  sharp
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             63.2%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 42/95    medium · avg 64%       1.9%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   28.8%  ▁▁▁●▂▄▆▄▅▇█▅ beats 15/208   hard · avg 38%         1.8%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.9277 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 30/52    avg 42.742 WB-Score    2.7%  sharp
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             63.2%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 42/95    medium · avg 64%       2.0%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   28.8%  ▁▁▁●▂▄▆▄▅▇█▄ beats 15/209   hard · avg 38%         1.8%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                68.0%  ▁··▁▁▂▂▆▅▆●▆ beats 47/70    medium · avg 61%       1.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             74.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 217/276  medium · avg 72%       0.6%  at its level · noisy
 </pre>

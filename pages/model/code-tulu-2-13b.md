@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 41.2** ±1.6 · #539 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 41.2** ±1.6 · #541 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁▁▃▆●█▇▆▄▃▁   #345 of 460*     18%      1
-math    ▁▁▃▅●▆▄█▄▁▁▁   #284 of 424*     22%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #293 of 427*     21%      1
 </pre>
 
 <details><summary>coding · #345 of 460 · 18% of its score</summary>
@@ -31,13 +31,13 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #284 of 424 · 22% of its score</summary>
+<details><summary>math · #293 of 427 · 21% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   41.0%  ▆▂▅█●▅▃▆···▂ beats 14/25  easy · avg 72%     22%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   41.0%  ▆▂▅█●▅▃▆···▂ beats 14/25  easy · avg 72%     21%  sharp · at its level
 </pre>
 
 </details>
@@ -46,9 +46,9 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 52.8%  ▁·····▂█●▅·▁ beats 15/25  medium · avg 74%     38%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 52.8%  ▁·····▂█●▅·▁ beats 15/25  medium · avg 74%     39%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           45.9%  ▁▁▃▃●█▄▁█··▁ beats 6/25   medium · avg 72%     17%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   55.7%  ▂··▁▃▂▂▂█●▁▂ beats 20/25  medium · avg 59%    4.0%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   55.7%  ▂··▁▃▂▂▂█●▁▂ beats 20/25  medium · avg 59%    4.1%  blunt · at its level
 </pre>
 
 </details>

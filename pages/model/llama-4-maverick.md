@@ -6,7 +6,7 @@
 
 Meta · released 2025-04 · 402B params (17B active) · llama-4
 
-**score 57.4** ±0.8 · #236 of 725 · from 27 benchmark results across 20 sources
+**score 57.4** ±0.8 · #234 of 725 · from 27 benchmark results across 20 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #242 of 303    8.9%      5
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #245 of 306    9.0%      5
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #215 of 460     16%      3
-chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #190 of 395     15%      3
-math                ▁▁▃▅█●▄█▄▁▁▁   #196 of 424     19%      3
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #190 of 395     14%      3
+math                ▁▁▃▅█●▄█▄▁▁▁   #199 of 427     19%      3
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #95 of 147     11%      4
 web search          ▂▁▂●▄█▃▃▁▁·▁    #54 of 80*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #242 of 303 · 8.9% of its score</summary>
+<details><summary>agent tasks · #245 of 306 · 9.0% of its score</summary>
 
-Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
+Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      37.3%  ▁▁▁▂██●▅▆▂▂▂ beats 42/77   hard · avg 31%          2.9%  at its level
 <a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    3.1%  ●·▃▃·█▅▅▅▅▃▅ beats 2/18    very hard · avg 5.3%    2.7%  sharp
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              52.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 49/114  medium · avg 51%        1.3%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              52.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 49/114  medium · avg 51%        1.4%  blunt · at its level
 <a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    6.1%  ▄···▄▄·▄▄·▄● beats 6/7     very hard · avg 2.5%    1.1%  blunt · too hard for it
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   74.1%  ▃▃●▃▆▅▆▅█▂▅▂ beats 4/31    easy · avg 78%          0.9%  typical
 </pre>
@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #190 of 395 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #190 of 395 · 14% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -65,14 +65,14 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #196 of 424 · 19% of its score</summary>
+<details><summary>math · #199 of 427 · 19% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         73.0%  ▂▂▅▆▄█▆●▅▂▃▄ beats 62/92   hard · avg 27%           13%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             20.6%  ▃▃▄▃●▃▇▇█▃▂▅ beats 58/193  very hard · avg 6.9%    4.2%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             20.6%  ▃▃▄▃●▃▇▇█▃▂▅ beats 58/195  very hard · avg 6.9%    4.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-average …</a>   14.7%  ●▃···█▃·▃·▃▃ beats 0/8     very hard · avg 15%     1.6%  at its level
 </pre>
 
@@ -107,7 +107,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         67.0%  ▁▁▁▁▂▄▆▄●▇█▅ beats 101/208  hard · avg 38%          10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         67.0%  ▁▁▁▁▂▄▆▄●▇█▄ beats 101/209  hard · avg 38%          10%  sharp · at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    25.6%  ▁···▁▃●█▂▃▃▂ beats 6/23     hard · avg 17%         4.0%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1062.0  ▁·▂▁●▅▅▃█▄▁▁ beats 8/62     avg 1031               3.8%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   78.7%  ▁▂▂▂▃█▃▆▅●▂▃ beats 77/95    medium · avg 64%       3.8%  typical

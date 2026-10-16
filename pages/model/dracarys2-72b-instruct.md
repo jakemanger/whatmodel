@@ -6,7 +6,7 @@
 
 Abacus.AI · released 2024-09 · 72.71B params · other (tongyi-qianwen)
 
-**score 56.0** ±2.3 · #307 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.0** ±2.3 · #308 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #208 of 471*     98%      1
+coding  ▁▁▁▃▆█●▇▅▄▃▁   #208 of 471*     98%      1
 </pre>
 
 <details><summary>coding · #208 of 471 · 98% of its score</summary>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 57.5** ±0.7 · #234 of 725 · from 25 benchmark results across 11 sources
+**score 57.5** ±0.7 · #232 of 725 · from 25 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,12 +30,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           87.2%  ▁·▁▁▁▃▄▄▄█▃● beats 97/99  easy · avg 70%           17%  sharp · several runs
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   41.6%  ▁▁·▁▂▄▆█●▂·▂ beats 25/31  hard · avg 23%           12%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   16.4%  ▂·▂●▅▂▃█▆▄▂▂ beats 7/49   very hard · avg 7.3%     10%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   71.4%  ▁·▁▂▄▁▆▄█●▂▂ beats 51/62  medium · avg 50%        7.5%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   71.4%  ▁·▁▂▄▁▆▄█●▂▂ beats 51/62  medium · avg 50%        7.6%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                77.0%  ▁···▁▁▂▅▇█▆● beats 73/75  easy · avg 66%          5.9%  several runs
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   24.5%  ▁▁▁●·▁▂▃▅▃█▇ beats 5/49   hard · avg 17%          3.6%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   41.6%  ▁··▁·▁●▁▆█▇█ beats 4/45   hard · avg 29%          2.8%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           90.2%  █···███·██·● beats 6/6    easy · avg 77%          2.2%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 69%          2.1%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 69%          2.0%  typical
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     66.8%  ▃▁▁█▁▄●▃▄▇▁▄ beats 16/31  medium · avg 39%        1.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  hard · avg 32%          1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   44.1%  ▁▁▁▁▁▁▂▂▃█▅● beats 41/47  hard · avg 31%          1.3%  at its level

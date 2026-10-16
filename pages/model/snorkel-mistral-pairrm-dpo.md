@@ -6,7 +6,7 @@
 
 Snorkel AI · released 2024-01 · apache-2.0
 
-**score 45.5** ±1.3 · #612 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.6** ±1.3 · #612 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   61% ▇▇▇▇▇▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>           1   38% ▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 45.5
+weighted average                              = 45.6
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt))</sub>

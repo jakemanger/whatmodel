@@ -6,7 +6,7 @@
 
 Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
-**score 48.6** ±1.7 · #395 of 725 · from 8 benchmark results across 7 sources
+**score 48.6** ±1.7 · #396 of 725 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #287 of 303     19%      3
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #290 of 306     19%      3
 </pre>
 
-<details><summary>agent tasks · #287 of 303 · 19% of its score</summary>
+<details><summary>agent tasks · #290 of 306 · 19% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   21.2%  ▄●····█▄···▄ beats 1/5     hard · avg 25%      7.3%  typical
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              39.1%  ▁▁▁▁●▃▅█▅▄▁▁ beats 12/114  medium · avg 51%    6.4%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              39.1%  ▁▁▁▁●▃▅█▅▄▁▁ beats 12/114  medium · avg 51%    6.5%  blunt · at its level
 <a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (lab)</a>      81.0%  █·········●█ beats 2/5     easy · avg 77%      5.5%  blunt
 </pre>
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.0990 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 28/52    avg 42.785 WB-Score     31%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.0990 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 28/52    avg 42.742 WB-Score     31%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             59.0%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 28/95    medium · avg 64%        22%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                61.8%  ▁··▁▁▂▂▆▅●█▆ beats 43/70    medium · avg 61%        18%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             75.0%  ▃▁▁▁▁▁▁▁▂█●▁ beats 225/276  medium · avg 72%       6.9%  at its level · noisy

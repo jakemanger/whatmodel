@@ -26,7 +26,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 12/99  easy · avg 76%       40%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 12/99  easy · avg 76%       39%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           25.0%  ▁·▁▁▁●▄▄▄█▃▁ beats 13/99  easy · avg 70%       18%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   19.8%  ▁·●▁▂▆▅█▄▄▁▂ beats 2/35   medium · avg 61%    5.4%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                36.8%  ▁···▁▁●▅▇█▆▂ beats 5/75   easy · avg 66%      4.4%  at its level
@@ -42,7 +42,7 @@ Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       10.4%  ▁▂▂▃●▆█▆▄▄▁▁ beats 23/122  hard · avg 35%      5.0%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       10.4%  ▁▂▂▃●▆█▆▄▄▁▁ beats 23/122  hard · avg 35%      5.1%  sharp · too hard for it
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1137.7  ▁▁▁●▃▃▃▆▆▇█▃ beats 30/379  avg 1258            4.0%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1029.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 19/95   avg 1186            3.6%  typical
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>    7.5%  ▂●▁▅█▅▄▃▃▅▃▁ beats 3/60    medium · avg 46%    1.7%  sharp · too hard for it
@@ -55,7 +55,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                         result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                             17.7%  ▂●▃▄▄█▁▄▅▃▁▃ beats 3/42    medium · avg 52%       7.0%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  6.6198 WB-Score  ▁·●▁·▃█▄▇▆▅▆ beats 1/52    avg 42.785 WB-Score    4.2%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  6.6198 WB-Score  ▁·●▁·▃█▄▇▆▅▆ beats 1/52    avg 42.742 WB-Score    4.2%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>            48.0%  ▃▁▁▁▁▁▁●▂█▅▁ beats 64/276  medium · avg 72%       0.7%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>            64.0%  ▁▁▁▁▁▁▁●▄█▄▃ beats 34/146  easy · avg 82%         0.6%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>            85.2%  ▁▁●▃▄▄█▆▃▂▂▁ beats 14/140  very easy · avg 94%    0.5%  blunt · noisy

@@ -6,7 +6,7 @@
 
 Watt AI · released 2024-12 · 70.55B params · apache-2.0
 
-**score 66.9** ±6.5 · #117 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.9** ±6.4 · #117 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #154 of 337*     81%      1
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #156 of 340*     81%      1
 </pre>
 
-<details><summary>agent tasks · #154 of 337 · 81% of its score</summary>
+<details><summary>agent tasks · #156 of 340 · 81% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

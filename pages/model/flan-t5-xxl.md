@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 39.0** ±0.9 · #572 of 725 · from 26 benchmark results across 18 sources
+**score 39.1** ±0.9 · #572 of 725 · from 26 benchmark results across 18 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #224 of 395*    0.0%      1
-math            ▁▁●▅█▆▄█▄▁▁▁    #390 of 424     24%      2
+math            ▁▁●▅█▆▄█▄▁▁▁    #394 of 427     24%      2
 </pre>
 
 <details><summary>chat &amp; writing · #224 of 395 · 0.0% of its score</summary>
@@ -26,19 +26,19 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](grani
 
 <pre>
 test                                                 result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.710 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #390 of 424 · 24% of its score</summary>
+<details><summary>math · #394 of 427 · 24% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        16.1%  ▂▂▂▂▃●▅▇██▆▄ beats 44/200  medium · avg 50%     17%  sharp · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    4.9%  ▆·▂·●▂▂▂▂█▄▆ beats 5/18    medium · avg 48%    7.3%  sharp
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        16.1%  ▂▂▂▂▃●▅▇██▆▄ beats 44/206  medium · avg 49%     16%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    4.9%  ▆·▂·●▂▂▂▂█▄▆ beats 5/18    medium · avg 47%    7.2%  sharp
 </pre>
 
 </details>
@@ -51,13 +51,13 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           55.1%  ▁···▁··▃▁●▅█ beats 8/18   easy · avg 74%          22%  at its level · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 52%       4.6%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   19.0%  ▂··▂·▂●▄·███ beats 4/18   medium · avg 61%       4.0%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   medium · avg 61%       2.5%  at its level
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   75.2%  ▃····▃·▃▃█●▅ beats 7/10   easy · avg 81%         2.2%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   medium · avg 60%       2.5%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   75.2%  ▃····▃·▃▃█●▅ beats 7/10   easy · avg 81%         2.3%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    48.3%  ▂▂··▂·▂··▂●▄ beats 5/10   medium · avg 56%       2.0%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   66.1%  █▁····▃▁·▁·● beats 14/14  hard · avg 67%         2.0%  sharp · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   66.1%  █▁····▃▁·▁·● beats 14/14  hard · avg 66%         2.0%  sharp · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   34.9%  █···▄▄·●▄▄·▄ beats 4/7    medium · avg 51%       1.8%  blunt · at its level
-<a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   83.1%  ▃·▃·····▃▃●█ beats 4/7    easy · avg 87%         1.6%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.782.pdf">BIG-Bench Hard, 27 subsets, zero-…</a>   41.0%  █····█··█··● beats 3/3    medium · avg 56%       1.6%  blunt · at its level
+<a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   83.1%  ▃·▃·····▃▃●█ beats 4/7    easy · avg 87%         1.6%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.700.pdf">HateCheck functional tests, zero-…</a>   80.9%  █·····█·█··● beats 3/3    easy · avg 84%         1.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   19.3%  ▃··▃·●▃·█▃·▃ beats 3/10   hard · avg 29%         1.0%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   79.4%  ▂▂▄··▂▂●▄··▂ beats 6/12   easy · avg 90%         0.9%  at its level · noisy
@@ -77,16 +77,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   30% ▇▇▇▇
 <a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2   22% ▇▇▇
-<a name="paper-2301.12726v1-specializing"></a><a href="https://arxiv.org/html/2301.12726v1">Specializing Smaller Language Models to…</a>        1   14% ▇▇
+<a name="paper-2301.12726v1-specializing"></a><a href="https://arxiv.org/html/2301.12726v1">Specializing Smaller Language Models to…</a>        1   13% ▇▇
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    7% ▇
 <a name="acl-2023-findings-emnlp-536"></a><a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS: A Zero-Shot Benchmark for …</a>        4    6% ▇
 <a name="acl-2023-acl-long-806"></a><a href="https://aclanthology.org/2023.acl-long.806.pdf">Unnatural Instructions: Tuning Language…</a>        1    4% ▇
-<a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        1    4% ▇
 <a name="acl-2023-emnlp-main-522"></a><a href="https://aclanthology.org/2023.emnlp-main.522.pdf">Increasing Probability Mass on Answer C…</a>        1    4% ▇
+<a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        1    3% ▇
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    2% ▇
 <a name="acl-2023-emnlp-main-483"></a><a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SCITAB: A Challenging Benchmark for Com…</a>        1    2% ▇
-<a name="acl-2023-acl-long-550"></a><a href="https://aclanthology.org/2023.acl-long.550.pdf">Say What You Mean! Large Language Model…</a>        1    2% ▇
 <a name="acl-2023-emnlp-main-782"></a><a href="https://aclanthology.org/2023.emnlp-main.782.pdf">The CoT Collection: Improving Zero-shot…</a>        1    2% ▇
+<a name="acl-2023-acl-long-550"></a><a href="https://aclanthology.org/2023.acl-long.550.pdf">Say What You Mean! Large Language Model…</a>        1    2% ▇
 <a name="acl-2023-findings-emnlp-700"></a><a href="https://aclanthology.org/2023.findings-emnlp.700.pdf">InstructSafety: A Unified Framework for…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    1% ▇
 <a name="acl-2023-findings-acl-50"></a><a href="https://aclanthology.org/2023.findings-acl.50.pdf">Aligning Instruction Tasks Unlocks Larg…</a>        1    1% ▇
@@ -94,10 +94,10 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 <a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 39.0
+weighted average                                   = 39.1
 </pre>
 
-<sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Unnatural Instructions: Tuning Language Models with ([CC BY 4.0](../../licenses/acl-2023-acl-long-806-CC-BY-4-0.txt)) · Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-782-CC-BY-4-0.txt)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · StoryAnalogy: Deriving Story-level Analogies from Large Language Models to Unlock Analogical Understanding ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-706-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Unnatural Instructions: Tuning Language Models with ([CC BY 4.0](../../licenses/acl-2023-acl-long-806-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-782-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · StoryAnalogy: Deriving Story-level Analogies from Large Language Models to Unlock Analogical Understanding ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-706-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

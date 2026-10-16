@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 47.1** ±1.8 · #431 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.2** ±1.8 · #429 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅●▆▄█▄▁▁▁   #298 of 424     98%      3
+math  ▁▁▃▅●▆▄█▄▁▁▁   #297 of 427     98%      3
 </pre>
 
-<details><summary>math · #298 of 424 · 98% of its score</summary>
+<details><summary>math · #297 of 427 · 98% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       84.8%  ▄···●▄▄·▄·▄█ beats 2/8    very easy · avg 92%     44%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       84.8%  ▄···●▄▄·▄·▄█ beats 2/8    very easy · avg 92%     43%  sharp
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                29.4%  ▃·····▃··●▅▅ beats 2/8    hard · avg 34%          33%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.8%  ▃····▃·▅·●·█ beats 5/8    easy · avg 74%          22%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.8%  ▃····▃·▅·●·█ beats 5/8    easy · avg 73%          23%  at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 47.1
+weighted average                        = 47.2
 </pre>
 
 ## How to run it

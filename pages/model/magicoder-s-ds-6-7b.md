@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #272 of 460     74%      5
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #273 of 460     73%      5
 </pre>
 
-<details><summary>coding · #272 of 460 · 74% of its score</summary>
+<details><summary>coding · #273 of 460 · 73% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    76.8%  ▁·▁▁▃▄▆▅●▃▁▁ beats 78/99  easy · avg 76%       42%  sharp · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   71.3%  ▁·▁▁▁▃▄▄▄●▃▁ beats 74/99  easy · avg 70%       23%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        69.0%  ▁···▁▁▂▅▇█●▂ beats 59/75  easy · avg 66%      4.8%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        69.0%  ▁···▁▁▂▅▇█●▂ beats 59/75  easy · avg 66%      4.9%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   41.7%  ▁··▁▅▂●▇▁··▁ beats 12/22  medium · avg 52%    1.7%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   44.4%  ▁·▂▃▁█●▂···▁ beats 18/22  medium · avg 51%    1.6%  blunt · at its level
 </pre>
@@ -40,7 +40,7 @@ test        result  vs the others in its run  difficulty        counts  why
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>              50.0%  ▂▂▃▄▄█▁▄●▃▁▃ beats 35/42  medium · avg 52%     13%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        36.0%  ▃▂·▆▆█●▆▅▃▃▃ beats 19/33  medium · avg 39%    5.4%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 48%    5.1%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 48%    5.2%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   69.8%  ▂·▂▂▂●▅▆▆▆▃█ beats 7/29   easy · avg 74%      2.7%  at its level
 </pre>
 

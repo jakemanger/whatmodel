@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁▁▃▆█●▇▆▄▃▁   #199 of 460*     36%      2
-math    ▁▁▃▅●▆▄█▄▁▁▁   #276 of 424*    6.7%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #279 of 427*    6.6%      1
 </pre>
 
 <details><summary>coding · #199 of 460 · 36% of its score</summary>
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #276 of 424 · 6.7% of its score</summary>
+<details><summary>math · #279 of 427 · 6.6% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   93.9%  ▁▄·▁▄█▅▅▅●██ beats 31/43  very easy · avg 87%    6.7%  sharp · maxed out
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   93.9%  ▁▄·▁▄█▅▅▅●██ beats 31/43  very easy · avg 87%    6.6%  sharp · maxed out
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             80.8%  ▁·▁▁▄▄▄▅●▄▂▁ beats 30/53  easy · avg 75%          31%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             22.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 35/57  hard · avg 15%          16%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.9943 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 45/52  avg 42.785 WB-Score    9.4%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.9943 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 45/52  avg 42.742 WB-Score    9.4%  sharp
 </pre>
 
 </details>

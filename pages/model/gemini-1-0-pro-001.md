@@ -17,12 +17,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #336 of 466*     44%      2
-math            ▁▂▃●█▇▅▇▃▁▁▁   #456 of 523*     32%      2
+math            ▁▁▃●██▅█▄▁▁▁   #455 of 526*     32%      2
 </pre>
 
 <details><summary>chat &amp; writing · #336 of 466 · 44% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
@@ -32,14 +32,14 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #456 of 523 · 32% of its score</summary>
+<details><summary>math · #455 of 526 · 32% of its score</summary>
 
-Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md) here, though they rank lower overall.
+Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.2%  ▂▂●▆▄█▆▃▅▂▃▄ beats 7/92   hard · avg 27%           29%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.1%  ●▃▄▃▃▃▇▇█▃▂▅ beats 9/193  very hard · avg 6.9%    2.7%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.1%  ●▃▄▃▃▃▇▇█▃▂▅ beats 9/195  very hard · avg 6.9%    2.7%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                      result  vs the others in its run  difficulty          
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.0%  ▁▁▁▁●▄▆▄▅▇█▅ beats 26/208   hard · avg 38%       17%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.0%  ▁▁▁▁●▄▆▄▅▇█▄ beats 26/209   hard · avg 38%       17%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 163/276  medium · avg 72%    5.4%  at its level · noisy
 </pre>
 

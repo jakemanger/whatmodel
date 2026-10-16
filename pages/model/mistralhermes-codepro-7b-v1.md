@@ -27,7 +27,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    47.6%  ▁·▁▁▃▄●▅█▃▁▁ beats 31/99  easy · avg 76%     52%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   42.1%  ▁·▁▁▁▃▄●▄█▃▁ beats 33/99  easy · avg 70%     40%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        46.4%  ▁···▁▁▂●▇█▆▂ beats 14/75  easy · avg 66%    7.8%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        46.4%  ▁···▁▁▂●▇█▆▂ beats 14/75  easy · avg 66%    7.9%  at its level
 </pre>
 
 </details>

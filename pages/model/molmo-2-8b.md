@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 55.8** ±1.7 · #263 of 725 · from 15 benchmark results across 2 sources
+**score 55.7** ±1.7 · #263 of 725 · from 15 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,13 +17,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others          rank  counts  tests
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #195 of 395*     30%      1
-math                ▁▁▃▅●▆▄█▄▁▁▁   #312 of 424*    8.1%      1
+math                ▁▁▃▅●▆▄█▄▁▁▁   #311 of 427*    8.1%      1
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄    #109 of 147     69%     14
 </pre>
 
 <details><summary>chat &amp; writing · #195 of 395 · 30% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -32,9 +32,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #312 of 424 · 8.1% of its score</summary>
+<details><summary>math · #311 of 427 · 8.1% of its score</summary>
 
-Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                         93.2%  ▁··▃▁▁▁●█▇▄▅ beats 8/28    very easy · avg 93%    2.6%  blunt · maxed out · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (val) …</a>   35.5%  ▃··▃·▃····●▃ beats 3/6     hard · avg 21%         2.5%  blunt · at its level
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                    77.6%  ▂▃▂█▃██●█▂▆▆ beats 23/38   easy · avg 73%         2.5%  blunt · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference Elo (…</a>  1057.0  ▄··▄··●··▄█▄ beats 2/6     avg 967                2.3%  blunt
+<a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference Elo (…</a>  1057.0  ▄··▄··●··▄█▄ beats 2/6     avg 967                2.2%  blunt
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                      95.8%  ▁▁▅▇▃▇·▄·█·● beats 27/28   easy · avg 87%         1.3%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video captio…</a>   43.2%  █···█·█●██·█ beats 3/6     hard · avg 31%         1.2%  blunt · at its level
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                        85.7%  ▁▁▁▄▅▁▃·▃▃▃● beats 24/24   easy · avg 79%         1.2%  blunt · small run
@@ -76,7 +76,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   51% ▇▇▇▇▇▇
 <a name="paper-2601.10611v4-molmo2"></a><a href="https://arxiv.org/html/2601.10611v4#S4.T6">Molmo2: Open Weights and Data for Visio…</a>       13   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.8
+weighted average                                   = 55.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

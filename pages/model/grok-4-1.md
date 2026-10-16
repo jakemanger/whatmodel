@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇█●▅▄▂▁   #212 of 554*     62%      1
+coding          ▁▁▁▂▅▇█●▅▄▂▁   #212 of 554*     62%      1
 chat &amp; writing  ▁▁▁▃▅▅▆█▆▆●▂    #44 of 579*     36%      1
 </pre>
 
@@ -26,14 +26,14 @@ Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](mi
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1213.8  ▁▂●▃▅█▄▇▆▄▁▁ beats 6/119  avg 970        62%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1213.8  ▁▂●▃▅█▄▇▆▄▁▁ beats 6/119  avg 969        62%  sharp
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #44 of 579 · 36% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-6 Luna](gpt-6-luna.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why

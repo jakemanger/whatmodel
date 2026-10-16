@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅▇●▇▅▄▂▁    #245 of 529     50%      5
+coding              ▁▁▁▃▅▇●▇▅▄▂▁    #244 of 529     49%      5
 chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #184 of 466*    4.5%      1
-math                ▁▂▃▆█●▅▇▃▁▁▁   #239 of 523*     12%      2
+math                ▁▁▃▆█●▅█▄▁▁▁   #241 of 526*     12%      2
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #102 of 182*    5.1%      2
 </pre>
 
-<details><summary>coding · #245 of 529 · 50% of its score</summary>
+<details><summary>coding · #244 of 529 · 49% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -48,14 +48,14 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #239 of 523 · 12% of its score</summary>
+<details><summary>math · #241 of 526 · 12% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 27%          9.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/193  very hard · avg 6.9%    2.9%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 27%          9.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/195  very hard · avg 6.9%    3.0%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.
 <pre>
 test                                 result  vs the others in its run   difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1179.4  ▁▁▂▂▂▂▄▅●▆██ beats 60/145  avg 1058      3.2%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -5.431    1.9%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -5.446    1.9%  typical
 </pre>
 
 </details>
@@ -76,20 +76,20 @@ test                                 result  vs the others in its run   difficul
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         57.2%  ▁▁▁▁▂▄▆●▅▇█▅ beats 86/208  hard · avg 38%         7.2%  sharp · at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-pro-002_5shots.zip">MMLU-Pro</a>                             70.2%  ▃▂▅█▃·█●▅··▂ beats 18/23   medium · avg 54%       6.7%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         57.2%  ▁▁▁▁▂▄▆●▅▇█▄ beats 86/209  hard · avg 38%         7.2%  sharp · at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-pro-002_5shots.zip">MMLU-Pro</a>                             70.2%  ▃▂▅█▃·█●▅··▂ beats 18/23   medium · avg 54%       6.8%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   20.7%  ▂·█··●▄·▂▂·▄ beats 7/13    avg 35%                3.2%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.9%  ▁▁▁▁▁▂▂▃▄▆█● beats 89/97   hard · avg 31%         2.6%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.9%  ▁▁▁▁▁▂▂▃▄▆█● beats 89/97   hard · avg 31%         2.7%  blunt · at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 54.9%  ▄█·▄·▄●·▄··▄ beats 5/7     medium · avg 40%       2.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/gemini-1.5-pro-002_google_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   83.7%  ▂·▂▂▂▆▅▆▆●▃█ beats 21/29   easy · avg 74%         1.8%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   79.9%  ▂·▄··▂▂·▄▂█● beats 12/13   medium · avg 51%       1.4%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   79.9%  ▂·▄··▂▂·▄▂█● beats 12/13   medium · avg 51%       1.5%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   58.5%  ▂·▂·▂█▂▄●··▄ beats 11/13   very hard · avg 54%    0.8%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    5.2%  ▃···▃·█▃▅▃●█ beats 9/13    avg 11%                0.8%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   57.7%  ▂·······▆●▆▆ beats 5/13    very hard · avg 57%    0.6%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   55.4%  ▃█▃●▃·▃·▃▅▃▃ beats 5/13    medium · avg 56%       0.3%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   51.6%  ▃··▃▃▃·▃▅▅█● beats 13/13   medium · avg 39%       0.2%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   93.7%  ▁▁▂▃▄●█▆▃▂▂▁ beats 49/140  very easy · avg 94%    0.2%  blunt · maxed out · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   34.2%  ▄▂···▂▆▂█●·▂ beats 12/13   avg 84%                0.1%  blunt · noisy
+<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   34.2%  ▄▂···▂▆▂█●·▂ beats 12/13   avg 84%                0.2%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>    5.4%  ▂▂▂··▂▂·▂▂█● beats 13/13   avg 14%                0.0%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VocalSound human-sound reco…</a>   52.8%  ██●▄·█·█·█▄▄ beats 4/13    easy · avg 67%         0.0%  blunt · at its level · noisy
 </pre>

@@ -16,26 +16,26 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #289 of 303*    0.9%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #283 of 460     58%      3
-chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #308 of 395     24%      4
-math            ▁▁▃●█▆▄█▄▁▁▁   #369 of 424*    5.5%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #292 of 306*    1.0%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #284 of 460     58%      3
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #308 of 395     25%      4
+math            ▁▁▃●█▆▄█▄▁▁▁   #371 of 427*    5.5%      1
 </pre>
 
-<details><summary>agent tasks · #289 of 303 · 0.9% of its score</summary>
+<details><summary>agent tasks · #292 of 306 · 1.0% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   39.2%  ▁▁▁▁●▃▅█▅▄▁▁ beats 13/114  medium · avg 51%    0.9%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   39.2%  ▁▁▁▁●▃▅█▅▄▁▁ beats 13/114  medium · avg 51%    1.0%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #283 of 460 · 58% of its score</summary>
+<details><summary>coding · #284 of 460 · 58% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
@@ -46,7 +46,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #308 of 395 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #308 of 395 · 25% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #369 of 424 · 5.5% of its score</summary>
+<details><summary>math · #371 of 427 · 5.5% of its score</summary>
 
 Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
@@ -75,9 +75,9 @@ test          result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  32.5989 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 20/52   avg 42.785 WB-Score    4.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.9%  ▁▁▁▁●▄▆▄▅▇█▅ beats 21/208  hard · avg 38%         3.2%  sharp
-<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                                 48.5%  ▁▁▁▁▂▄●▆█▃▃▁ beats 56/155  medium · avg 62%       2.8%  sharp · at its level · small run
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  32.5989 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 20/52   avg 42.742 WB-Score    4.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.9%  ▁▁▁▁●▄▆▄▅▇█▄ beats 21/209  hard · avg 38%         3.2%  sharp
+<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                                 48.5%  ▁▁▁▁▂▄●▆█▃▃▁ beats 56/155  medium · avg 62%       2.9%  sharp · at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             91.7%  ▁▁▂▃●▄█▆▃▂▂▁ beats 34/140  very easy · avg 94%    0.3%  blunt · maxed out · noisy
 </pre>
 

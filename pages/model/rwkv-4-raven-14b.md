@@ -6,7 +6,7 @@
 
 RWKV (BlinkDL) · released 2023-04 · 14B params · apache-2.0
 
-**score 27.5** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 27.6** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,13 +21,13 @@ chat &amp; writing  ▁●▁▃▅▄▆█▇▇▇▃   #456 of 466     98%  
 
 <details><summary>chat &amp; writing · #456 of 466 · 98% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [ChatGLM2-6B](chatglm2-6b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1042.3  ▁●▁▂▃▃▃▆▆▇█▃ beats 7/379  avg 1258                     38%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         971.0  ▂▁▂●▃▇█▆▇▄▂▂ beats 12/95  avg 1186                     34%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.9800 MT-Bench score (1-10)  ▆▂●▆▆▄██▂▄▄▆ beats 4/28   avg 8.521 MT-Bench scor…     27%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.9800 MT-Bench score (1-10)  ▆▂●▆▆▄██▂▄▄▆ beats 4/28   avg 8.514 MT-Bench scor…     27%  sharp · noisy
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ source                                    results  share of the score
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   34% ▇▇▇▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   27% ▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 27.5
+weighted average                                   = 27.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

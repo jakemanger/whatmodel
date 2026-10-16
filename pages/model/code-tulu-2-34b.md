@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 45.3** ±1.6 · #468 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.3** ±1.6 · #469 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #310 of 460*     15%      1
-math    ▁▁▃▅●▆▄█▄▁▁▁   #246 of 424*     22%      1
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #311 of 460*     15%      1
+math    ▁▁▃▅●▆▄█▄▁▁▁   #259 of 427*     21%      1
 </pre>
 
-<details><summary>coding · #310 of 460 · 15% of its score</summary>
+<details><summary>coding · #311 of 460 · 15% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
@@ -31,13 +31,13 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #246 of 424 · 22% of its score</summary>
+<details><summary>math · #259 of 427 · 21% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   54.0%  ▆▂▅█▅●▃▆···▂ beats 17/25  easy · avg 72%     22%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   54.0%  ▆▂▅█▅●▃▆···▂ beats 17/25  easy · avg 72%     21%  sharp · at its level
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 64.3%  ▁·····▂█▂●·▁ beats 18/25  medium · avg 74%     40%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 64.3%  ▁·····▂█▂●·▁ beats 18/25  medium · avg 74%     41%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           53.6%  ▁▁▃▃▄●▄▁█··▁ beats 14/25  medium · avg 72%     18%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   60.6%  ▂··▁▃▂▂▂█▅●▂ beats 23/25  medium · avg 59%    4.1%  blunt · at its level
 </pre>

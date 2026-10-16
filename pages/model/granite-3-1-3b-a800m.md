@@ -16,28 +16,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #318 of 395*    7.6%      1
-math            ▁▁▃●█▆▄█▄▁▁▁   #358 of 424*     36%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #318 of 395*    8.0%      1
+math            ▁▁▃●█▆▄█▄▁▁▁   #359 of 427*     35%      1
 </pre>
 
-<details><summary>chat &amp; writing · #318 of 395 · 7.6% of its score</summary>
+<details><summary>chat &amp; writing · #318 of 395 · 8.0% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   55.2%  ▁▁●▁▂▄▄▆█▃▂▁ beats 19/141  easy · avg 76%    7.6%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   55.2%  ▁▁●▁▂▄▄▆█▃▂▁ beats 19/141  easy · avg 76%    8.0%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #358 of 424 · 36% of its score</summary>
+<details><summary>math · #359 of 427 · 35% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   49.0%  ▂▂▂▂▃▄▅●██▆▄ beats 87/200  easy · avg 85%     36%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   49.0%  ▂▂▂▂▃▄▅●██▆▄ beats 86/206  easy · avg 84%     35%  sharp · at its level
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ test         result  vs the others in its run   difficulty      counts  why
 test                 result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>   50.4%  ▄▁▁▂▁▄█●▃▂▃▂ beats 87/140  easy · avg 77%       24%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>      64.9%  ▁▁▁▁▂▁▁▅●█▃▁ beats 58/131  medium · avg 80%     12%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>            52.2%  ▁▁▁▁▁▂▂●██▆▄ beats 57/214  medium · avg 73%     10%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>       73.0%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 83/135  easy · avg 87%       10%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>            52.2%  ▁▁▁▁▁▂▂●██▆▄ beats 57/214  medium · avg 73%    9.4%  at its level
 </pre>
 
 </details>

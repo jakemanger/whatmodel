@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂●█▆▅▄▄▃▃▁   #309 of 343*    3.6%      1
+agent tasks  ▁▁▂●█▆▅▄▄▃▂▁   #312 of 346*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #309 of 343 · 3.6% of its score</summary>
+<details><summary>agent tasks · #312 of 346 · 3.6% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -35,8 +35,8 @@ test     result  vs the others in its run   difficulty        counts  why
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>      32.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 33/61  medium · avg 38%     60%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   39.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 25/58  medium · avg 48%     18%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   31.8%  ▃▂·▆●██▆▅▃▃▃ beats 8/33   medium · avg 39%     18%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   39.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 25/58  medium · avg 48%     18%  at its level
 </pre>
 
 </details>

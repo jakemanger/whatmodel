@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▂▁   #289 of 554*     98%      1
+coding  ▁▁▁▂▅▇●▇▅▄▂▁   #289 of 554*     98%      1
 </pre>
 
 <details><summary>coding · #289 of 554 · 98% of its score</summary>

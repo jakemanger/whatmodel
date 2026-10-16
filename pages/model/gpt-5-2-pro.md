@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 75.9** ±1.0 · #29 of 725 · from 4 benchmark results across 2 sources
+**score 75.8** ±1.0 · #28 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█▆▄█▄●▁▁   #21 of 424*     85%      2
+math  ▁▁▃▅█▆▄█▄●▁▁   #22 of 427*     85%      2
 </pre>
 
-<details><summary>math · #21 of 424 · 85% of its score</summary>
+<details><summary>math · #22 of 427 · 85% of its score</summary>
 
-Beats [Muse Spark 1.3](muse-spark-1-3.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Kimi K3](kimi-k3.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Muse Spark 1.3](muse-spark-1-3.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      46.0%  ▁▂▁▂█●▂▂▁▁▁▁ beats 43/63  very hard · avg 0.1%     44%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   74.0%  ▂··▁▁▃▄▄█●▃▃ beats 62/82  very hard · avg 1.1%     41%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      46.0%  ▁▂▁▂█●▂▃▁▁▁▁ beats 44/65  very hard · avg 0.1%     44%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   74.0%  ▂··▁▁▃▄▄█●▄▃ beats 63/84  very hard · avg 1.1%     40%  sharp · at its level
 </pre>
 
 </details>
@@ -35,8 +35,8 @@ test                       result  vs the others in its run  difficulty         
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC-AGI-2 public evaluation set (…</a>   37.9%  █··▂▅▁▃▁●·▁▃ beats 19/24  very hard · avg 0.3%     12%  sharp · at its level · noisy
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-pro-2025-12-11-high/results.json">ARC-AGI-1 public evaluation set (…</a>   94.6%  ▁·▇▃▁·█▇▁·●▃ beats 21/27  very hard · avg 3.8%    3.3%  sharp · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC-AGI-2 public evaluation set (…</a>   37.9%  █··▂▅▁▃▁●·▁▃ beats 19/24  very hard · avg 0.3%     11%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-pro-2025-12-11-high/results.json">ARC-AGI-1 public evaluation set (…</a>   94.6%  ▁·▇▃▁·█▇▁·●▃ beats 21/27  very hard · avg 3.8%    3.2%  sharp · noisy
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC Prize Foundation model_baseline out…</a>        2   15% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 75.9
+weighted average                                   = 75.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt))</sub>

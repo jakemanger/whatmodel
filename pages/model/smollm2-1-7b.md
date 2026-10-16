@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃●██▇▆▄▃▁   #406 of 460*    6.4%      1
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #374 of 395     19%      4
-math            ▁▁●▅█▆▄█▄▁▁▁    #382 of 424     30%      2
+math            ▁▁●▅█▆▄█▄▁▁▁    #385 of 427     30%      2
 </pre>
 
 <details><summary>coding · #406 of 460 · 6.4% of its score</summary>
@@ -46,13 +46,13 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #382 of 424 · 30% of its score</summary>
+<details><summary>math · #385 of 427 · 30% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 88%     22%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 87%     22%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   20.3%  ●▃█▂▂▆·····▁ beats 0/22   medium · avg 57%       7.6%  small run · several runs
 </pre>
 
@@ -63,10 +63,10 @@ test                       result  vs the others in its run  difficulty         
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       39.8%  ▁●·▁▁·▅█·▄▄▁ beats 2/22    medium · avg 72%     15%  sharp · several runs
-<a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 75%       13%  typical
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    medium · avg 64%    8.2%  at its level
-<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.6%  at its level · small run
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 31%      1.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 75%       14%  typical
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    medium · avg 64%    8.3%  at its level
+<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.5%  at its level · small run
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 30%      1.8%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 82%      1.7%  at its level · noisy
 <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▂▂▃●█▅▃▁▁ beats 42/123  easy · avg 84%      1.1%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 60%    0.5%  blunt · at its level
@@ -80,7 +80,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                     8   45% ▇▇▇▇▇
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                     8   46% ▇▇▇▇▇
 <a name="paper-2502.02737v1"></a><a href="https://arxiv.org/html/2502.02737v1">SmolLM2 paper (lab)</a>                  7   33% ▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   11% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1    8% ▇

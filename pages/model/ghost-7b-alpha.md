@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #380 of 395*     60%      2
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #380 of 395*     61%      2
 </pre>
 
-<details><summary>chat &amp; writing · #380 of 395 · 60% of its score</summary>
+<details><summary>chat &amp; writing · #380 of 395 · 61% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>         2   60% ▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>         2   61% ▇▇▇▇▇▇▇
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">Open Medical-LLM Leaderboard results</a>        3   38% ▇▇▇▇▇
 prior: pull toward the middle                    2% ▇
 weighted average                               = 33.5

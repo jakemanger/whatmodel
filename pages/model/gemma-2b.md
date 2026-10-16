@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 28.7** ±0.8 · #667 of 725 · from 12 benchmark results across 9 sources
+**score 28.7** ±0.8 · #666 of 725 · from 12 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            17.7%  ▁·▁●▃▄▆▅█▃▁▁ beats 5/99   easy · avg 76%       33%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           15.2%  ▁·▁▁●▃▄▄▄█▃▁ beats 5/99   easy · avg 70%       23%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   11.5%  ●·▂▁▂▆▅█▄▄▁▂ beats 0/35   medium · avg 61%    7.9%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.2%  ●▇█▃▄▇▄▁▇▃·▁ beats 0/35   medium · avg 45%    3.3%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.2%  ●▇█▃▄▇▄▁▇▃·▁ beats 0/35   medium · avg 45%    3.4%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   16.7%  ▁·▁▁▄█●▄█▁▅▅ beats 16/35  medium · avg 51%    2.2%  sharp · too hard for it
 </pre>
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  -9.6919 WB-Score  ●·▁▁·▃█▄▇▆▅▆ beats 0/52    avg 42.785 WB-Score    7.8%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  -9.6919 WB-Score  ●·▁▁·▃█▄▇▆▅▆ beats 0/52    avg 42.742 WB-Score    7.9%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             34.3%  ▃▁●▁▁▁▁▁▂█▅▁ beats 40/276  medium · avg 72%       1.1%  noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>             27.6%  ▃·●▁▂▁▂▅█▇▄▁ beats 10/100  medium · avg 66%       0.5%  sharp · noisy
 </pre>
@@ -69,9 +69,9 @@ source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   56% ▇▇▇▇▇▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   13% ▇▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    8% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    7% ▇
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1    5% ▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1    6% ▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇

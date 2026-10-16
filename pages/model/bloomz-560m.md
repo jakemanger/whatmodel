@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 0.559B params · bigscience-bloom-rail-1.0
 
-**score 14.5** ±3.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 14.4** ±3.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others      rank  counts  tests
-coding  ●···▄·▄·▄··▄   #6 of 6*     62%      1
+coding  ●···▄·▄·▄··▄   #6 of 6*     63%      1
 </pre>
 
-<details><summary>coding · #6 of 6 · 62% of its score</summary>
+<details><summary>coding · #6 of 6 · 63% of its score</summary>
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (lab)</a>    2.2%  ●█··█··█·█·█ beats 0/5    medium · avg 59%     62%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (lab)</a>    2.2%  ●█··█··█·█·█ beats 0/5    medium · avg 59%     63%  sharp · too hard for it
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ test             result  vs the others in its run  difficulty        counts  why
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     49.8%  ●··▁▃·▁··▁·▃ beats 0/12   medium · avg 68%     12%  too hard for it · noisy
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           51.0%  ●··█▅▃▃▅·▃▃▃ beats 0/12   easy · avg 91%       11%  at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 0/4    easy · avg 76%      3.5%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 0/4    easy · avg 75%      3.4%  blunt · at its level
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>               58.5%  █·▂··●··▂▂▂▃ beats 6/12   easy · avg 88%      2.6%  blunt · at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 24.0%  ●▃▅··▃···▃▃█ beats 1/10   hard · avg 37%      1.8%  blunt · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 24.0%  ●▃▅··▃···▃▃█ beats 1/10   hard · avg 37%      1.7%  blunt · too hard for it · noisy
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        4   88% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    4% ▇
+<a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    3% ▇
 <a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    2% ▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 14.5
+weighted average                                   = 14.4
 </pre>
 
 <sub>Licences: Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt))</sub>

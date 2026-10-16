@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #324 of 460     13%      4
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #325 of 460     13%      4
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #364 of 395     75%      3
 </pre>
 
-<details><summary>coding · #324 of 460 · 13% of its score</summary>
+<details><summary>coding · #325 of 460 · 13% of its score</summary>
 
-Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

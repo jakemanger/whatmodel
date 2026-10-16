@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 3.95B params · tongyi-qianwen-research
 
-**score 34.3** ±1.5 · #627 of 725 · from 5 benchmark results across 5 sources
+**score 34.3** ±1.5 · #628 of 725 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 11.3%  ▁▁▁●▂▃▂█▆▃▅▃ beats 5/61    medium · avg 38%     45%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   61.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 93/276  medium · avg 72%    4.4%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   72.8%  ▁▁▁▁▁▁▁▂●█▄▃ beats 44/146  easy · avg 82%      3.7%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   72.8%  ▁▁▁▁▁▁▁▂●█▄▃ beats 44/146  easy · avg 82%      3.8%  at its level · noisy
 </pre>
 
 </details>

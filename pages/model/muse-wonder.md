@@ -6,7 +6,7 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 78.0** ±1.7 · #17 of 725 · from 5 benchmark results across 2 sources
+**score 79.2** ±0.8 · #14 of 725 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,28 +16,44 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #31 of 303*     16%      2
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #31 of 306*    3.6%      2
+math         ▁▁▃▅█▆▄█▄▁●▁    #14 of 427     49%      3
 </pre>
 
-<details><summary>agent tasks · #31 of 303 · 16% of its score</summary>
+<details><summary>agent tasks · #31 of 306 · 3.6% of its score</summary>
 
-Beats [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
+Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                      70.5%  █·█····●···█ beats 2/3    hard · avg 25%     10%  at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   72.6%  ●█·····█··██ beats 0/4    hard · avg 28%    5.9%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                      70.5%  █·█····●···█ beats 2/3    hard · avg 24%    2.2%  at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   72.6%  ●█·····█··██ beats 0/4    hard · avg 27%    1.4%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>other tests (3)</summary>
+<details><summary>math · #14 of 427 · 49% of its score</summary>
+
+Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though they rank lower overall.
 
 <pre>
-test                            result  vs the others in its run  difficulty             counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂▆●▆▆·▄ beats 15/24  very hard · avg 0.4%      73%  sharp · at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 10.0%    5.5%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%           4.6%  blunt · at its level · small run
+test                       result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      70.7%  ▁▂▁▂█▅▂●▁▁▁▁ beats 53/65    very hard · avg 0.1%     29%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   82.1%  ▂··▁▁▃▄▄█▆●▃ beats 70/84    very hard · avg 1.1%     20%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    99.4%  ▃▃▄▃▃▃▇▇█▃▂● beats 184/195  very hard · avg 6.9%    0.4%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂▆●▆▆·▄ beats 15/24  very hard · avg 0.4%     17%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     51.0%  █··▂▃▇▄█▂●▁▁ beats 65/75  very hard · avg 9.4%     14%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       54.2%  █▆▆▆▆▂●▂▂▂·▅ beats 22/31  very hard · avg 1.3%     12%  sharp · at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 9.6%    1.3%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 20%          1.1%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -48,10 +64,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        1   73% ▇▇▇▇▇▇▇▇▇
-<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4   26% ▇▇▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 78.0
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        6   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4    6% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 79.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

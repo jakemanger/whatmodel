@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 12.0** ±1.6 · #708 of 725 · from 20 benchmark results across 9 sources
+**score 11.8** ±1.6 · #708 of 725 · from 20 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▁▁▁   #368 of 424*    2.5%      1
+math  ▁▁▃●█▆▄█▄▁▁▁   #370 of 427*    2.5%      1
 </pre>
 
-<details><summary>math · #368 of 424 · 2.5% of its score</summary>
+<details><summary>math · #370 of 427 · 2.5% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall.
 
@@ -39,22 +39,22 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                     55.0%  ▄·●·▄▄▄··█·▄ beats 1/7     easy · avg 88%          12%  several runs
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   39.1%  ▃···●·▃▅··▃█ beats 1/9     very easy · avg 85%    8.3%  at its level
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   57.2%  █·●··█··█··▄ beats 2/7     very easy · avg 88%    7.2%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Easy</a>                             56.2%  █·······●▄·█ beats 2/5     easy · avg 87%         7.1%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Challenge</a>                        23.1%  ●·········▂▂ beats 2/5     medium · avg 60%       6.3%  sharp · too hard for it · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Natural Questions (closed book)</a>       4.0%  ▁·▁·▁●▁▂·▅▂█ beats 4/28    medium · avg 48%       5.8%  too hard for it
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Easy</a>                             56.2%  █·······●▄·█ beats 2/5     easy · avg 87%         7.0%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Challenge</a>                        23.1%  ●·········▂▂ beats 2/5     medium · avg 59%       6.4%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Natural Questions (closed book)</a>       4.0%  ▁·▁·▁●▁▂·▅▂█ beats 4/28    medium · avg 48%       5.9%  too hard for it
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                           71.1%  ●··▃··▃▃·▃·▃ beats 2/7     easy · avg 88%         4.5%  blunt · at its level
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">UD English-GUM UPOS tagging, few-…</a>   68.5%  ▄·●▄·······█ beats 1/4     very easy · avg 92%    2.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-23%2012%3A22%3A01.380579.json">TriviaQA</a>                             14.2%  ▁··▁█●▃▁▄▅▄█ beats 9/28    easy · avg 73%         1.4%  noisy
 <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                       54.4%  ▂·····●█▅▆▆█ beats 3/24    medium · avg 74%       1.3%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-23%2012%3A22%3A01.380579.json">TriviaQA</a>                             14.2%  ▁··▁█●▃▁▄▅▄█ beats 9/28    easy · avg 71%         1.3%  noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   26.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 22/276  medium · avg 72%       1.2%  too hard for it · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-08%2021%3A38%3A29.151646.json">TruthfulQA MC2</a>                       39.6%  ▅▃●▆▁▂▅···▁▁ beats 8/31    medium · avg 57%       0.7%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 1/4     easy · avg 76%         0.6%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 1/4     easy · avg 75%         0.6%  blunt · at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-13%2013%3A02%3A51.572572.json">HaluEval QA hallucination detecti…</a>   46.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 15/27   hard · avg 66%         0.2%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA generation, % true (hu…</a>   37.9%  ██····█·●█·█ beats 3/5     medium · avg 42%       0.1%  blunt · at its level
 <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">OpenBookQA</a>                           21.6%  ●▁▁▁▂▂▃█▃▁▃▁ beats 2/107   hard · avg 48%            —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 25/103  easy · avg 88%            —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">COPA</a>                                 69.0%  ▁·▁▁▁●▅█▆▂▁▁ beats 14/67   easy · avg 92%            —  not counted yet: no other model in the …
-<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">SciQ</a>                                 86.0%  ▂·▁▂▂▃●▃▇▆█▂ beats 16/51   very easy · avg 98%       —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">SciQ</a>                                 86.0%  ▂·▁▂▂▃●▃▇▆█▂ beats 16/51   very easy · avg 97%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    1% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 12.0
+weighted average                                   = 11.8
 </pre>
 
 <sub>Licences: Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Prompting Language Models for Linguistic Structure ([CC BY 4.0](../../licenses/acl-2023-acl-long-367-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

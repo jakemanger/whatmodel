@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ●··········█       #2 of 2*     14%      1
-chat &amp; writing  ●··········█       #2 of 2*    4.7%      1
-math            ▁●▃▅█▆▄█▄▁▁▁   #408 of 424*     18%      1
+chat &amp; writing  ●··········█       #2 of 2*    4.8%      1
+math            ▁▁●▅█▆▄█▄▁▁▁   #407 of 427*     17%      1
 </pre>
 
 <details><summary>coding · #2 of 2 · 14% of its score</summary>
@@ -30,22 +30,22 @@ test             result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #2 of 2 · 4.7% of its score</summary>
+<details><summary>chat &amp; writing · #2 of 2 · 4.8% of its score</summary>
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (lab)</a>   20.0%  ●▁··▂··▂▇█▃▃ beats 0/26   medium · avg 64%    4.7%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (lab)</a>   20.0%  ●▁··▂··▂▇█▃▃ beats 0/26   medium · avg 64%    4.8%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #408 of 424 · 18% of its score</summary>
+<details><summary>math · #407 of 427 · 17% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Qwen2 1.5B Instruct](qwen2-1-5b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>   40.1%  ▂▂▂▂▃▄●▇██▆▄ beats 74/200  very easy · avg 92%     18%  sharp · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>   40.1%  ▂▂▂▂▃▄●▇██▆▄ beats 73/206  very easy · avg 91%     17%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                  7.7%  ▁●▁▂▂▃▂█▆▃▅▃ beats 2/61    medium · avg 38%     32%  too hard for it
 <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                           37.9%  ▁▁▁▁▁▂●▅██▆▄ beats 28/214  easy · avg 79%       10%  small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   30.6%  ●▄▂▃█▄▃▆▃▅▂▂ beats 1/81    medium · avg 56%     10%  blunt · at its level
-<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                         45.2%  ▁···▁▁●▁▂▂▃█ beats 5/33    easy · avg 80%      7.1%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                         45.2%  ▁···▁▁●▁▂▂▃█ beats 5/33    easy · avg 80%      7.2%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   44.4%  ▃▁▁▁▁▁●▁▂█▅▁ beats 57/276  medium · avg 72%    3.6%  noisy
 </pre>
 
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="card2-qwen-qwen2-0-5b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">Qwen2-0.5B-Instruct model card (lab)</a>        5   54% ▇▇▇▇▇▇
+<a name="card2-qwen-qwen2-0-5b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">Qwen2-0.5B-Instruct model card (lab)</a>        5   53% ▇▇▇▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                   1   32% ▇▇▇▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>             1   10% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    4% ▇

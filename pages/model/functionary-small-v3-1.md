@@ -6,7 +6,7 @@
 
 MeetKai · released 2024-07 · 8.03B params · mit
 
-**score 53.7** ±6.1 · #373 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.8** ±6.0 · #370 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #254 of 337*     83%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #256 of 340*     84%      1
 </pre>
 
-<details><summary>agent tasks · #254 of 337 · 83% of its score</summary>
+<details><summary>agent tasks · #256 of 340 · 84% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   56.0%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 61/114  medium · avg 51%     83%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   56.0%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 61/114  medium · avg 51%     84%  blunt · at its level
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       17% ▇▇
-weighted average                                   = 53.7
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       16% ▇▇
+weighted average                                   = 53.8
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

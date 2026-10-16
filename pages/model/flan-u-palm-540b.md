@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▆█▇●▇▃▁▁▁   #185 of 523*     32%      1
+math  ▁▁▃▆██●█▄▁▁▁   #189 of 526*     31%      1
 </pre>
 
-<details><summary>math · #185 of 523 · 32% of its score</summary>
+<details><summary>math · #189 of 526 · 31% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   60.4%  ▆·▂·▄▂▂▂▂█▄● beats 18/18  medium · avg 48%     32%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   60.4%  ▆·▂·▄▂▂▂▂█▄● beats 18/18  medium · avg 47%     31%  sharp · at its level
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test        result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 59.3%  ▂▂▂▂·▅·▃▂█▃● beats 18/18  medium · avg 60%     30%  sharp · at its level
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           74.1%  ▁···▁··▃▁▅▅● beats 18/18  easy · avg 74%       27%  at its level
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           74.1%  ▁···▁··▃▁▅▅● beats 18/18  easy · avg 74%       28%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   68.3%  ▂··▂·▂▄▄·██● beats 18/18  medium · avg 61%     10%  at its level
 </pre>
 

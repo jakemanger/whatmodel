@@ -6,7 +6,7 @@
 
 Nondzu · released 2023-10 · 7.24B params · apache-2.0
 
-**score 40.5** ±0.8 · #732 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.5** ±0.8 · #733 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #392 of 471*    100%      2
+coding  ▁▁▁▃●██▇▅▄▃▁   #392 of 471*    100%      2
 </pre>
 
 <details><summary>coding · #392 of 471 · 100% of its score</summary>

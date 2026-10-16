@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 50.4** ±1.2 · #360 of 725 · from 14 benchmark results across 5 sources
+**score 50.4** ±1.2 · #359 of 725 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #269 of 395     28%      3
-math            ▁▁▃●█▆▄█▄▁▁▁   #330 of 424     19%      3
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #269 of 395     27%      3
+math            ▁▁▃●█▆▄█▄▁▁▁   #334 of 427     19%      3
 </pre>
 
-<details><summary>chat &amp; writing · #269 of 395 · 28% of its score</summary>
+<details><summary>chat &amp; writing · #269 of 395 · 27% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -33,14 +33,14 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #330 of 424 · 19% of its score</summary>
+<details><summary>math · #334 of 427 · 19% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 57%       8.3%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 88%    7.3%  sharp
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 87%    7.5%  sharp
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>    9.8%  ●···▃▃···▃▃█ beats 1/8    hard · avg 23%         2.9%  typical
 </pre>
 
@@ -52,7 +52,7 @@ test                               result  vs the others in its run  difficulty 
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           77.3%  ▁▂·▁·▁▁█·●▃▅ beats 14/22    easy · avg 75%       21%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 70.6%  ▁▄·▁▁·▅●·▄▄▁ beats 12/22    medium · avg 72%     19%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 31%      4.4%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 30%      4.4%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 224/276  medium · avg 72%    3.4%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 66%    2.8%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   90.8%  ▁▁▁▁▁▁▁▂▄█●▃ beats 119/146  easy · avg 82%      1.8%  noisy
@@ -67,7 +67,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (lab)</a>                          8   70% ▇▇▇▇▇▇▇▇
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (lab)</a>                          8   71% ▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card (…</a>        2    6% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    5% ▇

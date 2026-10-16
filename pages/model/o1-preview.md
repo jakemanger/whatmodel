@@ -17,9 +17,9 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
-coding          ▁▁▁▃▅▇█●▅▄▂▁      #150 of 529     42%     11
+coding          ▁▁▁▃▅▇█●▅▄▂▁      #149 of 529     42%     11
 chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃     #140 of 466*    7.3%      2
-math            ▁▂▃▆█▇●▇▃▁▁▁      #203 of 523     14%      5
+math            ▁▁▃▆██●█▄▁▁▁      #205 of 526     14%      5
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -31,17 +31,17 @@ test                      result  vs the others in its run   difficulty      cou
 
 </details>
 
-<details><summary>coding · #150 of 529 · 42% of its score</summary>
+<details><summary>coding · #149 of 529 · 42% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   52.5%  ▁▁·▁▂▄▆█▅●·▂ beats 29/31   hard · avg 23%           10%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           89.0%  ▁·▁▁▁▃▄▄▄█▃● beats 99/99   easy · avg 70%          6.8%  sharp · maxed out
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           89.0%  ▁·▁▁▁▃▄▄▄█▃● beats 99/99   easy · avg 70%          6.7%  sharp · maxed out
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            96.3%  ▁·▁▁▃▄▆▅█▃▁● beats 99/99   easy · avg 76%          6.2%  sharp · maxed out
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    95.9%  ▁▂▆▃▆█▆▃▂·▁● beats 47/47   medium · avg 57%        4.5%  sharp
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   79.7%  ▁·▁▂▄▁▆▄█▆●▂ beats 59/62   medium · avg 50%        4.4%  sharp
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   79.7%  ▁·▁▂▄▁▆▄█▆●▂ beats 59/62   medium · avg 50%        4.5%  sharp
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    7.7%  ▃···█··▂·▃·● beats 16/17   very hard · avg 1.0%    4.1%  sharp · too hard for it
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                80.2%  ▁···▁▁▂▅▇█▆● beats 75/75   easy · avg 66%          2.6%  typical
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   65.2%  ▁··▁·▁▁▁▆●▇█ beats 21/45   hard · avg 29%          2.2%  at its level
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #203 of 523 · 14% of its score</summary>
+<details><summary>math · #205 of 526 · 14% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -72,7 +72,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Tra
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 67/92   hard · avg 27%          4.1%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   84.5%  ▁▁▁▆█▂▇▇▄··● beats 37/38   hard · avg 30%          4.0%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 66/193  very hard · avg 6.9%    3.0%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 66/195  very hard · avg 6.9%    3.0%  sharp · at its level · noisy
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        85.5%  ▃··▅●▃···▃·█ beats 3/9     medium · avg 60%        2.1%  sharp
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            90.8%  ▁····▁▅▁█●▃▁ beats 13/16   easy · avg 80%          1.0%  typical
 </pre>
@@ -86,7 +86,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   71.4%  ▁▁▃▆██▁▁·●▁▁ beats 54/57   hard · avg 15%         8.9%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   92.8%  ▁·▁▁▄▄▄▅█▄▂● beats 53/53   easy · avg 75%         7.6%  typical
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    73.3%  █▃▃█·▃▃▅●▃▃▅ beats 12/16   hard · avg 38%         7.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 70/208  hard · avg 38%         6.4%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.3%  ▁▁▁▁▂▄●▄▅▇█▄ beats 70/209  hard · avg 38%         6.3%  sharp · at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>   90.8%  ▂▂·█▄▄▂·●▂·▂ beats 14/16   easy · avg 79%         2.1%  typical
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 66.0%  ▄█·▄·▄▄·▄··● beats 7/7     medium · avg 40%       2.0%  at its level
 <a href="https://arxiv.org/html/2412.16720v2#S6.T17">MMMLU (lab)</a>                          86.7%  ▂▁▁▂▃▂▄▄▅█●▃ beats 39/46   medium · avg 64%       1.3%  small run

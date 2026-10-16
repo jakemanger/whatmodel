@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆██●▆▄▃▁   #153 of 460*    3.9%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #153 of 395*     12%      1
-math            ▁▁▃▅█▆▄█●▁▁▁     #55 of 424     22%      3
+math            ▁▁▃▅█▆▄█●▁▁▁     #57 of 427     22%      3
 </pre>
 
 <details><summary>coding · #153 of 460 · 3.9% of its score</summary>
@@ -43,14 +43,14 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #55 of 424 · 22% of its score</summary>
+<details><summary>math · #57 of 427 · 22% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 50%        11%  sharp
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>   88.0%  █·█···███··● beats 5/5    medium · avg 42%        10%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 49%        11%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>   88.0%  █·█···███··● beats 5/5    medium · avg 41%        10%  sharp
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>    98.1%  ▄······▄▄▄·● beats 5/5    very easy · avg 86%    1.1%  maxed out · noisy
 </pre>
 
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="primeintellect-intellect3-card-eval"></a><a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Prime Intellect INTELLECT-3 model card:…</a>        7   66% ▇▇▇▇▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   21% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
-prior: pull toward the middle                        1% ▇
+prior: pull toward the middle                        0% ▇
 weighted average                                   = 64.5
 </pre>
 

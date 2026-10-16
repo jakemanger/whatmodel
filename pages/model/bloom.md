@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 28.7** ±1.1 · #666 of 725 · from 16 benchmark results across 7 sources
+**score 28.6** ±1.1 · #667 of 725 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,13 +34,13 @@ test             result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2210.17323v2">ARC Challenge</a>                        45.0%  █▃··▃··▅▃█▅● beats 14/14  easy · avg 81%          27%  sharp
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     48.6%  ●··▁▃·▁··▁·▃ beats 1/12   easy · avg 87%          12%  at its level · several runs
-<a href="https://arxiv.org/html/2210.02414v2">CommonsenseQA</a>                        42.8%  █·····▂▂●▂▄▄ beats 19/38  very easy · avg 93%    9.1%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2210.17323v2">ARC Easy</a>                             67.5%  ▅▃▃▃▃▃▃▃▅·●▃ beats 13/14  easy · avg 84%         7.3%  blunt · at its level
-<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.9%  ▂▂▄▂·▂·▆·▂●▂ beats 11/14  easy · avg 89%         6.2%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 79.2%  ▄·█▄·█▄▄▄█●█ beats 12/14  easy · avg 88%         6.0%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2210.17323v2">LAMBADA (OpenAI version), last-wo…</a>   67.4%  ▄▄▄█▄·█·▄●██ beats 9/14   very easy · avg 87%    4.6%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2210.02414v2">CommonsenseQA</a>                        42.8%  █·····▂▂●▂▄▄ beats 19/38  very easy · avg 93%    9.3%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2210.17323v2">ARC Easy</a>                             67.5%  ▅▃▃▃▃▃▃▃▅·●▃ beats 13/14  easy · avg 83%         7.3%  blunt · at its level
+<a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.9%  ▂▂▄▂·▂·▆·▂●▂ beats 11/14  easy · avg 89%         6.3%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 79.2%  ▄·█▄·█▄▄▄█●█ beats 12/14  easy · avg 87%         6.0%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2210.17323v2">LAMBADA (OpenAI version), last-wo…</a>   67.4%  ▄▄▄█▄·█·▄●██ beats 9/14   very easy · avg 87%    4.7%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   49.3%  ██···●█···██ beats 2/5    easy · avg 74%         3.1%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            55.9%  ▅●······▃▃·▅ beats 2/8    easy · avg 86%         3.0%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            55.9%  ▅●······▃▃·▅ beats 2/8    easy · avg 85%         3.0%  at its level
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           55.0%  ▃··●▅▃▃▅·▃▃▃ beats 2/12   easy · avg 91%         1.7%  at its level · noisy · several runs
 </pre>
 
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="acl-2023-wmt-1-44"></a><a href="https://aclanthology.org/2023.wmt-1.44.pdf">Towards Effective Disambiguation for Ma…</a>        1    3% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 28.7
+weighted average                                   = 28.6
 </pre>
 
 <sub>Licences: GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · GLM-130B: An Open Bilingual Pre-trained Model ([CC BY 4.0](../../licenses/paper-2210.02414v2-glm130b-CC-BY-4-0.txt)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 7.62B params · apache-2.0
 
-**score 49.6** ±1.9 · #378 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.7** ±1.9 · #377 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅●▆▄█▄▁▁▁   #285 of 424     98%      3
+math  ▁▁▃▅●▆▄█▄▁▁▁   #287 of 427     98%      3
 </pre>
 
-<details><summary>math · #285 of 424 · 98% of its score</summary>
+<details><summary>math · #287 of 427 · 98% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                34.6%  ▃·····▃··█●▅ beats 5/8    hard · avg 34%          39%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       89.9%  ▄···█▄●·▄·▄█ beats 4/8    very easy · avg 92%     38%  sharp
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.1%  ▃····▃·▅·●·█ beats 4/8    easy · avg 74%          22%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       89.9%  ▄···█▄●·▄·▄█ beats 4/8    very easy · avg 92%     37%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.1%  ▃····▃·▅·●·█ beats 4/8    easy · avg 73%          22%  at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 49.6
+weighted average                        = 49.7
 </pre>
 
 ## How to run it

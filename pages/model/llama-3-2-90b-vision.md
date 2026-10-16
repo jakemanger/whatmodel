@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 51.1** ±1.2 · #341 of 725 · from 13 benchmark results across 7 sources
+**score 51.1** ±1.2 · #343 of 725 · from 13 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▁▃▅●▆▄█▄▁▁▁   #286 of 424     38%      3
+math                ▁▁▃▅●▆▄█▄▁▁▁   #288 of 427     38%      3
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #125 of 147     32%      7
 </pre>
 
-<details><summary>math · #286 of 424 · 38% of its score</summary>
+<details><summary>math · #288 of 427 · 38% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               39.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 31/92   hard · avg 27%           30%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/193  very hard · avg 6.9%    4.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/195  very hard · avg 6.9%    4.0%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>       49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 51%        3.2%  at its level · noisy
 </pre>
 
@@ -40,7 +40,7 @@ Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.
 <pre>
 test                                                         result  vs the others in its run   difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1032.3  ▁▁▂▂●▂▄▅▅▆██ beats 19/145  avg 1058                     11%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -5.431                  6.6%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -5.446                  6.6%  typical
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.573 MM-MT-Bench s…    4.8%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    53.7%  ▂·▂······█●▄ beats 6/9     medium · avg 50%            3.5%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 51%            3.2%  at its level · noisy
@@ -54,7 +54,7 @@ test                                                         result  vs the othe
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.0%  ▁▁▁▁▂●▆▄▅▇█▅ beats 42/208   hard · avg 38%          17%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.0%  ▁▁▁▁▂●▆▄▅▇█▄ beats 42/209   hard · avg 38%          17%  sharp
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.5%  ▁▁·▁▂▂▄█▄●▄▄ beats 44/66    hard · avg 29%         8.1%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 253/276  medium · avg 72%       3.6%  at its level · noisy
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   35.6%  ●▂·▄█·▂▂·▄▄▂ beats 0/16     very hard · avg 35%    3.5%  blunt

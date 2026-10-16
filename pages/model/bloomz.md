@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others      rank  counts  tests
-coding  █···▄·▄·▄··●   #1 of 6*     56%      1
+coding  █···▄·▄·▄··●   #1 of 6*     57%      1
 </pre>
 
-<details><summary>coding · #1 of 6 · 56% of its score</summary>
+<details><summary>coding · #1 of 6 · 57% of its score</summary>
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (lab)</a>   12.1%  ██··█··█·█·● beats 5/5    medium · avg 59%     56%  sharp
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (lab)</a>   12.1%  ██··█··█·█·● beats 5/5    medium · avg 59%     57%  sharp
 </pre>
 
 </details>
@@ -32,9 +32,9 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     58.4%  █··▁▃·▁··▁·● beats 11/12  easy · avg 87%          26%  at its level · several runs
-<a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   55.2%  ██···██···●█ beats 4/5    easy · avg 74%         6.1%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            57.1%  ▅●······▃▃·▅ beats 4/8    easy · avg 86%         5.8%  at its level
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     58.4%  █··▁▃·▁··▁·● beats 11/12  easy · avg 87%          25%  at its level · several runs
+<a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   55.2%  ██···██···●█ beats 4/5    easy · avg 74%         6.0%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            57.1%  ▅●······▃▃·▅ beats 4/8    easy · avg 85%         5.9%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">LAMBADA (OpenAI version), last-wo…</a>   67.8%  ▁·····▁▁▃▃●█ beats 46/86  very easy · avg 85%    2.5%  blunt · at its level · small run
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           88.0%  ▃··█▅▃▃▅·▃●▃ beats 11/12  easy · avg 91%         2.0%  at its level · noisy
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>               95.7%  █·▂··▃··▂▂▂● beats 12/12  easy · avg 88%         0.5%  blunt · at its level · noisy
@@ -48,8 +48,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        4   65% ▇▇▇▇▇▇▇▇
-<a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        3   28% ▇▇▇
+<a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        4   66% ▇▇▇▇▇▇▇▇
+<a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        3   27% ▇▇▇
 <a name="acl-2023-wmt-1-44"></a><a href="https://aclanthology.org/2023.wmt-1.44.pdf">Towards Effective Disambiguation for Ma…</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 32.8

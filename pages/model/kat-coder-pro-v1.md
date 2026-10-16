@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2025-10 · closed weights
 
-**score 61.8** ±2.3 · #203 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.8** ±2.3 · #204 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #158 of 471*     98%      1
+coding  ▁▁▁▃▆██●▅▄▃▁   #158 of 471*     98%      1
 </pre>
 
 <details><summary>coding · #158 of 471 · 98% of its score</summary>
@@ -25,7 +25,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 14/119  avg 970        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 14/119  avg 969        98%  sharp
 </pre>
 
 </details>

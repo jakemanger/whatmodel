@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 7.3B params · apache-2.0
 
-**score 43.2** ±1.2 · #509 of 725 · from 14 benchmark results across 5 sources
+**score 43.3** ±1.2 · #507 of 725 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #286 of 395*     11%      2
-math            ▁▁▃●█▆▄█▄▁▁▁    #361 of 424     26%      3
+math            ▁▁▃●█▆▄█▄▁▁▁    #363 of 427     26%      3
 </pre>
 
 <details><summary>chat &amp; writing · #286 of 395 · 11% of its score</summary>
@@ -27,18 +27,18 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   29.1%  ▃▃·▁▁●▇▅·▁·▁ beats 6/22   medium · avg 39%    7.6%  sharp
-<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      72.3%  ▁▃▁▃▁●▁▁█▃▃▁ beats 9/22   easy · avg 78%      3.8%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      72.3%  ▁▃▁▃▁●▁▁█▃▃▁ beats 9/22   easy · avg 78%      3.7%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #361 of 424 · 26% of its score</summary>
+<details><summary>math · #363 of 427 · 26% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         85.1%  ▂▃··▃▂▅●▆▃▂▃ beats 13/22  very easy · avg 88%     14%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         85.1%  ▂▃··▃▂▅●▆▃▂▃ beats 13/22  very easy · avg 87%     14%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     32.5%  ▃●█▂▂▆·····▁ beats 4/22   medium · avg 57%       9.3%  at its level · several runs
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation) (lab)</a>    5.2%  ●···▄·▄·▄··█ beats 1/6    hard · avg 19%         2.7%  typical
 </pre>
@@ -49,14 +49,14 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           61.3%  ▁▂·▁·▁●█·▃▃▅ beats 5/22     easy · avg 75%          25%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 51.4%  ▁▄·▁●·▅█·▄▄▁ beats 5/22     medium · avg 72%        22%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          23.2%  ▁▁▁▃▃●▁█▁▃·▄ beats 8/21     hard · avg 31%         3.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           61.3%  ▁▂·▁·▁●█·▃▃▅ beats 5/22     easy · avg 75%          26%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 51.4%  ▁▄·▁●·▅█·▄▄▁ beats 5/22     medium · avg 72%        21%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          23.2%  ▁▁▁▃▃●▁█▁▃·▄ beats 8/21     hard · avg 30%         3.8%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 105/276  medium · avg 72%       3.7%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 38/100   medium · avg 66%       2.9%  sharp · at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   79.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 62/146   easy · avg 82%         2.5%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   79.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 62/146   easy · avg 82%         2.4%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   88.9%  ▁▁▂●▄▄█▆▃▂▂▁ beats 21/140   very easy · avg 94%    1.4%  blunt · noisy
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 56.5%  ▃▃▂·▃●·▅█▂▅▂ beats 8/21     medium · avg 60%       0.7%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 56.5%  ▃▃▂·▃●·▅█▂▅▂ beats 8/21     medium · avg 60%       0.6%  blunt · at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.2
+weighted average                                   = 43.3
 </pre>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

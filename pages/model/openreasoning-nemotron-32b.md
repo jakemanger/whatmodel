@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 32.76B params · cc-by-4.0
 
-**score 59.2** ±1.5 · #209 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.0** ±1.5 · #210 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,8 +25,8 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Dev
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    8.3%  ▃▃····▃·█·●▃ beats 6/7    very hard · avg 2.4%     61%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   66.2%  ▄·▄····▄▄▄●▄ beats 6/7    medium · avg 45%         27%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    8.3%  ▃▃····▃·█·●▃ beats 6/7    very hard · avg 2.5%     61%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   66.2%  ▄·▄····▄▄▄●▄ beats 6/7    medium · avg 46%         26%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   70.2%  ▄▄···▄·▄●█·▄ beats 4/7    medium · avg 57%         12%  at its level
 </pre>
 
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 59.2
+weighted average                        = 59.0
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

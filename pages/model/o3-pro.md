@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▅▅▄▃▁   #122 of 303*    9.3%      1
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁   #123 of 306*    9.3%      1
 coding       ▁▁▁▃▆██▇▆●▃▁    #68 of 460*     41%      1
-math         ▁▁▃▅█▆▄●▄▁▁▁    #66 of 424*     13%      1
+math         ▁▁▃▅█▆▄█●▁▁▁    #68 of 427*     13%      1
 </pre>
 
-<details><summary>agent tasks · #122 of 303 · 9.3% of its score</summary>
+<details><summary>agent tasks · #123 of 306 · 9.3% of its score</summary>
 
-Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #66 of 424 · 13% of its score</summary>
+<details><summary>math · #68 of 427 · 13% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 222/310  hard · avg 37%          36%  sharp
+<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 222/311  hard · avg 38%          36%  sharp
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.7%  ●▂▁▂▅█▂▃▄▃▁▁ beats 2/98     very easy · avg 90%    0.0%  blunt
 </pre>
 

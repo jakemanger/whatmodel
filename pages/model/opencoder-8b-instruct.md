@@ -36,7 +36,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/infly--OpenCoder-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   76.9%  ▂·▂▂▂▆▅●▆▆▃█ beats 11/29   easy · avg 74%    4.8%  typical
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/infly--OpenCoder-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   76.9%  ▂·▂▂▂▆▅●▆▆▃█ beats 11/29   easy · avg 74%    4.9%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   46.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 18/146  easy · avg 82%    1.0%  noisy
 </pre>
 

@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁     #82 of 303     14%      6
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁     #82 of 306     14%      6
 coding          ▁▁▁▃▆██▇●▄▃▁    #95 of 460*    3.2%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #117 of 395*    8.0%      1
-math            ▁▁▃▅█▆▄●▄▁▁▁     #81 of 424     60%     13
+math            ▁▁▃▅█▆▄●▄▁▁▁     #86 of 427     60%     13
 web search      ██···█····█●       #1 of 5*    6.9%      3
 </pre>
 
-<details><summary>agent tasks · #82 of 303 · 14% of its score</summary>
+<details><summary>agent tasks · #82 of 306 · 14% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [MiniMax-M2.7](minimax-m2-7.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (lab)</a>                  66.9%  ▁▁▁▁▁▃·▁▄▅▄● beats 19/23   hard · avg 20%         4.6%  at its level
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate (lab)</a>             88.2%  ▄······▄█·▄● beats 5/5     medium · avg 48%       4.1%  typical
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0 (lab)</a>             51.0%  ▂▂▅▅██●█▆▂▃▃ beats 20/36   very hard · avg 11%    3.1%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                     51.6%  ▂·▄▁▂▃▆●█▂▃▄ beats 19/42   hard · avg 17%         2.3%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                     51.6%  ▂·▄▁▂▃▆●█▂▃▄ beats 19/42   hard · avg 17%         2.4%  at its level · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">SWE-bench Verified (lab)</a>             74.4%  ▁▁▁▁▁▁▂▄█●▁▁ beats 96/131  hard · avg 18%            —  not counted yet: no other model in the …
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp with context managemen…</a>   69.0%  ▅·▅●·█▃·█▅·▃ beats 4/14                              —  not counted yet: no other model in the …
 </pre>
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>coding · #95 of 460 · 3.2% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -62,22 +62,22 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #81 of 424 · 60% of its score</summary>
+<details><summary>math · #86 of 427 · 60% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   33.8%  ▁·····●██▄·▁ beats 1/20     very hard · avg 7.4%     15%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.8%  ▁▁▁▁●▇▄▃▁▃·▃ beats 9/24     very hard · avg 9.1%    8.8%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   33.8%  ▁·····●██▄·▁ beats 1/20     very hard · avg 7.5%     15%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.8%  ▁▁▁▁●▇▄▃▁▃·▃ beats 9/24     very hard · avg 9.1%    8.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   43.3%  ●▃▅·█▃▃·▅·▃▃ beats 0/14     hard · avg 16%          7.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   60.3%  ▂··▄▂▄█▆●▄▄█ beats 13/23    hard · avg 22%          6.7%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025 (lab)</a>                      97.3%  ▁·▁▁▁▂▅▆█▇▅● beats 133/133  easy · avg 69%          4.6%  sharp · maxed out · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025 (lab)</a>                      97.3%  ▁·▁▁▁▂▅▆█▇▅● beats 133/133  easy · avg 69%          4.7%  sharp · maxed out · small run
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   41.9%  ▃·▃▃●▁·▄·▁▁▁ beats 10/18    hard · avg 19%          4.5%  at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   13.9%  ▂▂●█▃▃▂▂▂··▂ beats 2/18     very hard · avg 0.8%    3.2%  sharp · noisy
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench (lab)</a>                85.4%  ▁▁·▁▁▁▄▅█●▂▃ beats 33/42    medium · avg 36%        2.4%  small run
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>    7.1%  ●·▆█▂·▂▂···▂ beats 3/14     very hard · avg 0.9%    1.9%  sharp · noisy
-<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.3%  ▃▂▂▃●▃▂·▃··▂ beats 6/16     very hard · avg 0.9%    1.8%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.3%  ▃▂▂▃●▃▂·▃··▂ beats 6/16     very hard · avg 0.9%    1.7%  sharp · noisy
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 2026 (4…</a>    0.0%  ●····▂·····█ beats 0/5      very hard · avg 1.1%    1.7%  too hard for it
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025 (lab)</a>             94.0%  ▁▁····▁▅▃█●▁ beats 19/23    easy · avg 66%          1.1%  noisy
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025 (lab)</a>             98.4%  ▁▁▁▃▁▅▅▃██▁● beats 31/31    medium · avg 60%        0.8%  noisy · small run
@@ -92,7 +92,7 @@ Beats [Kimi K2.5](kimi-k2-5.md) here, though they rank higher overall.
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (lab)</a>                  66.9%  ▁▁▁▁▁▃·▁▄▅▄● beats 19/23  hard · avg 20%    4.6%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                     51.6%  ▂·▄▁▂▃▆●█▂▃▄ beats 19/42  hard · avg 17%    2.3%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                     51.6%  ▂·▄▁▂▃▆●█▂▃▄ beats 19/42  hard · avg 17%    2.4%  at its level · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp with context managemen…</a>   69.0%  ▅·▅●·█▃·█▅·▃ beats 4/14                        —  not counted yet: no other model in the …
 </pre>
 

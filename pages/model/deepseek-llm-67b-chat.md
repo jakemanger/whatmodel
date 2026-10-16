@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #248 of 460     10%      4
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #322 of 395     72%      3
-math            ▁▁●▅█▆▄█▄▁▁▁   #388 of 424*     11%      2
+math            ▁▁●▅█▆▄█▄▁▁▁   #391 of 427*     11%      2
 </pre>
 
 <details><summary>coding · #248 of 460 · 10% of its score</summary>
@@ -29,7 +29,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   47.0%  ▃··▁▂▂▃▂●▃▄▂ beats 23/47  medium · avg 51%    3.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   39.7%  ▁▁▁▁▁▁▂▂▃█●▄ beats 39/47  hard · avg 31%      3.0%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.8%  █▂▁▁▂▂▂▃▅●▅▇ beats 31/47  hard · avg 32%      2.9%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.8%  █▂▁▁▂▂▂▃▅●▅▇ beats 31/47  hard · avg 32%      3.0%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 45/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
@@ -48,14 +48,14 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #388 of 424 · 11% of its score</summary>
+<details><summary>math · #391 of 427 · 11% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%  ▂●▅▆▄█▆▃▅▂▃▄ beats 4/92   hard · avg 27%           10%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/193  very hard · avg 6.9%    0.7%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/195  very hard · avg 6.9%    0.7%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ test                      result  vs the others in its run  difficulty          
 
 <pre>
 test                   result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            24.6%  ●▁▁▁▂▄▆▄▅▇█▅ beats 2/208   hard · avg 38%          6.9%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            24.6%  ●▁▁▁▂▄▆▄▅▇█▄ beats 2/209   hard · avg 38%          6.9%  sharp · too hard for it
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>    0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 15/135  very hard · avg 5.8%    0.2%  sharp · too hard for it · noisy
 </pre>
 

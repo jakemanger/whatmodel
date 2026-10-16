@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-07 · 1000B params (32B active) · modified-mit
 
-**score 66.1** ±0.8 · #124 of 725 · from 29 benchmark results across 9 sources
+**score 66.1** ±0.8 · #123 of 725 · from 29 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #119 of 303     26%      7
-coding          ▁▁▁▃▆██●▆▄▃▁    #132 of 460     31%      5
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #121 of 306     26%      7
+coding          ▁▁▁▃▆██●▆▄▃▁    #131 of 460     31%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #90 of 395*    9.0%      2
-math            ▁▁▃▅█▆▄●▄▁▁▁   #128 of 424*    4.0%      2
+math            ▁▁▃▅█▆▄●▄▁▁▁   #131 of 427*    4.0%      2
 </pre>
 
-<details><summary>agent tasks · #119 of 303 · 26% of its score</summary>
+<details><summary>agent tasks · #121 of 306 · 26% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Telecom</a>                     67.5%  ██··███···●█ beats 5/6     very hard · avg 8.5%     10%  sharp · at its level · several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Telecom</a>                     67.5%  ██··███···●█ beats 5/6     very hard · avg 8.5%    9.5%  sharp · at its level · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">SWE-bench Verified</a>                   64.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 62/131  hard · avg 16%          5.4%  sharp · at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail</a>                      70.8%  ▅···●·▃····▃ beats 3/6     medium · avg 40%        3.5%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail</a>                      70.8%  ▅···●·▃····▃ beats 3/6     medium · avg 39%        3.5%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      59.1%  ▁▁▁▂██▅▅▆●▂▂ beats 70/77   hard · avg 31%          3.0%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Airline</a>                     54.2%  ▄·▄··▄···●▄▄ beats 3/6     hard · avg 24%          2.3%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Terminal-Bench (pre-2.0 release)</a>     25.9%  ▄·▄···●▄···█ beats 2/5     very hard · avg 12%     1.4%  at its level
@@ -39,9 +39,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #132 of 460 · 31% of its score</summary>
+<details><summary>coding · #131 of 460 · 31% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -66,9 +66,9 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #128 of 424 · 4.0% of its score</summary>
+<details><summary>math · #131 of 427 · 4.0% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty           counts  why
@@ -90,8 +90,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">C-Eval</a>                               91.3%  █····▄·▄·▄●▄ beats 5/6      medium · avg 68%        2.4%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">VitaBench</a>                            18.2%  █·······●█·█ beats 2/6      very hard · avg 6.3%    2.4%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">COLLIE (constrained text generati…</a>   56.3%  ▄···▄█▄····● beats 5/6      hard · avg 30%          2.4%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">ZebraLogic</a>                           89.1%  █···█··█●█·█ beats 3/5      medium · avg 51%        1.0%  noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME</a>                           36.6%  █····●·▄▄··▄ beats 3/6      hard · avg 24%          0.8%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">ZebraLogic</a>                           89.1%  █···█··█●█·█ beats 3/5      medium · avg 50%        1.0%  noisy
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME</a>                           36.6%  █····●·▄▄··▄ beats 3/6      hard · avg 23%          0.8%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   81.8%  ▃▁▁▁▁▁▁▁▂█▅● beats 266/276  medium · avg 72%        0.8%  noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">DROP</a>                                 89.0%  ▄···▄·▄█·▄·● beats 6/6      medium · avg 58%        0.3%  blunt · at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.9%  ▁▁▂▃▄▄█▆▃▂●▁ beats 137/140  very easy · avg 94%     0.2%  blunt · maxed out · noisy
@@ -107,7 +107,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-meituan-longcat-flash-chat"></a><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">Meituan LongCat-Flash-Chat model card</a>          21   62% ▇▇▇▇▇▇▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   15% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    6% ▇
 <a name="card-moonshotai-kimi-k2-instruct"></a><a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">Moonshot AI Kimi-K2-Instruct model card…</a>        1    6% ▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    4% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    3% ▇

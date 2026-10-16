@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2023-12 · cc-by-nc-nd-4.0
 
-**score 42.7** ±0.8 · #694 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.7** ±0.8 · #695 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #365 of 471*    100%      2
+coding  ▁▁▁▃●██▇▅▄▃▁   #365 of 471*    100%      2
 </pre>
 
 <details><summary>coding · #365 of 471 · 100% of its score</summary>

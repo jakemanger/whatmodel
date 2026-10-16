@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁   #240 of 343*    2.2%      1
-coding              ▁▁▁▃▅▇█▇●▄▂▁    #103 of 529     41%      3
-math                ▁▂▃▆█▇▅●▃▁▁▁   #106 of 523*    7.3%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #243 of 346*    2.2%      1
+coding              ▁▁▁▃▅▇█▇●▄▂▁    #104 of 529     41%      3
+math                ▁▁▃▆██▅●▄▁▁▁   #109 of 526*    7.4%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #84 of 182*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #240 of 343 · 2.2% of its score</summary>
+<details><summary>agent tasks · #243 of 346 · 2.2% of its score</summary>
 
-Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
+Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
@@ -33,26 +33,26 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #103 of 529 · 41% of its score</summary>
+<details><summary>coding · #104 of 529 · 41% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   76.9%  ▂·▂▃▅▂▃█▆▄●▂ beats 44/49  very hard · avg 7.3%     27%  sharp · at its level
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   71.8%  ▃▃▅▃··▃▅█●▅▃ beats 12/15  hard · avg 24%          7.2%  sharp · at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   67.4%  ▁··▁·▁▁▁▆●▇█ beats 25/45  hard · avg 29%          5.9%  at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   71.8%  ▃▃▅▃··▃▅█●▅▃ beats 12/15  hard · avg 24%          7.1%  sharp · at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   67.4%  ▁··▁·▁▁▁▆●▇█ beats 25/45  hard · avg 29%          6.0%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #106 of 523 · 7.3% of its score</summary>
+<details><summary>math · #109 of 526 · 7.4% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   95.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 83/92  hard · avg 27%    7.3%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   95.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 83/92  hard · avg 27%    7.4%  sharp · maxed out
 </pre>
 
 </details>
@@ -72,12 +72,12 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.7%  ▁▁▁▁▂▄▆▄●▇█▅ beats 99/208  hard · avg 38%          17%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.7%  ▁▁▁▁▂▄▆▄●▇█▄ beats 99/209  hard · avg 38%          17%  sharp · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    3.9%  ▂·█··▆▄·▂▂·● beats 13/13   avg 35%                8.5%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   68.4%  ▁▁·▁▂▂▄█▄▅●▄ beats 54/66   hard · avg 29%         6.0%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   71.8%  ▁▁▁▁·▂·█▆●▇▁ beats 21/31   medium · avg 46%       4.3%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   75.1%  ▂·▂·▂█▂▄▄··● beats 12/13   very hard · avg 54%    3.4%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   81.3%  ▂·▄··▂▂·▄▂█● beats 13/13   medium · avg 51%       2.5%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   81.3%  ▂·▄··▂▂·▄▂█● beats 13/13   medium · avg 51%       2.6%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   65.5%  ▂·······▆█▆● beats 12/13   very hard · avg 57%    2.1%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    3.9%  ▃···▃·█▃▅▃▅● beats 13/13   avg 11%                2.1%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   68.3%  ▃█▃▅▃·▃·●▅▃▃ beats 9/13    medium · avg 56%       0.7%  blunt · at its level

@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others        rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #9 of 303*     41%      4
-coding          ▁▁▁▃▆██▇▆▄●▁   #8 of 460*     38%      2
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #9 of 306*     41%      4
+coding          ▁▁▁▃▆██▇▆▄●▁   #8 of 460*     39%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆▇●   #1 of 395*     20%      1
 </pre>
 
-<details><summary>agent tasks · #9 of 303 · 41% of its score</summary>
+<details><summary>agent tasks · #9 of 306 · 41% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md), [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall. Trails [Claude Fable 5](claude-fable-5.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0757 IPS  ▁▁▁▄▂▃▇█▂●▁▃ beats 41/49  avg -0.311 IPS           36%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0757 IPS  ▁▁▁▄▂▃▇█▂●▁▃ beats 41/49  avg -0.310 IPS           36%  sharp
 <a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>            77.9%  ▂····▁▁▁▆██● beats 29/29  hard · avg 25%          5.1%  at its level · small run
 <a href="https://deepmind.google/models/gemini/#performance">Terminal-Bench 4.0 (lab)</a>                 57.4%  ▁·▁··▁▇▇▅█●▃ beats 25/30  very hard · avg 0.5%       —  not counted yet: no other model in the …
 <a href="https://deepmind.google/models/model-cards/gemini-4-argon/">Agents' Last Exam (pass@1, offici…</a>       39.5%  █····▄·····● beats 3/3                               —  not counted yet: no other model in the …
@@ -35,13 +35,13 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #8 of 460 · 38% of its score</summary>
+<details><summary>coding · #8 of 460 · 39% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1679.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 112/119  avg 970            33%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1679.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 112/119  avg 969            33%  sharp
 <a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>   77.9%  ▂····▁▁▁▆██● beats 29/29    hard · avg 25%    5.1%  at its level · small run
 </pre>
 

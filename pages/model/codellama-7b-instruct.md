@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 37.9** ±0.7 · #591 of 725 · from 14 benchmark results across 5 sources
+**score 37.9** ±0.7 · #592 of 725 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #397 of 460     63%      6
-math    ▁▁▃●█▆▄█▄▁▁▁   #345 of 424*    4.0%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #397 of 460     64%      6
+math    ▁▁▃●█▆▄█▄▁▁▁   #353 of 427*    3.7%      1
 </pre>
 
-<details><summary>coding · #397 of 460 · 63% of its score</summary>
+<details><summary>coding · #397 of 460 · 64% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -36,13 +36,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #345 of 424 · 4.0% of its score</summary>
+<details><summary>math · #353 of 427 · 3.7% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   17.0%  ▆●▅█▅▅▃▆···▂ beats 4/25   easy · avg 72%    4.0%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   17.0%  ▆●▅█▅▅▃▆···▂ beats 4/25   easy · avg 72%    3.7%  sharp · at its level
 </pre>
 
 </details>
@@ -52,10 +52,10 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    27.9%  ▂▂▃▄●█▁▄▅▃▁▃ beats 12/42  medium · avg 52%     12%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       38.4%  ▁·····●█▂▅·▁ beats 1/25   medium · avg 74%    6.6%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       38.4%  ▁·····●█▂▅·▁ beats 1/25   medium · avg 74%    6.7%  sharp · at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              25.4%  ▂●▁▄▂▅▇█▆▂▂▂ beats 4/58   medium · avg 48%    5.2%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              21.8%  ●▂·▆▆██▆▅▃▃▃ beats 0/33   medium · avg 39%    4.8%  typical
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.5%  ▁▁●▃▄█▄▁█··▁ beats 2/25   medium · avg 72%    3.0%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.5%  ▁▁●▃▄█▄▁█··▁ beats 2/25   medium · avg 72%    3.1%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   41.6%  ▂··▁▃●▂▂█▅▁▂ beats 7/25   medium · avg 59%    0.8%  blunt · at its level
 </pre>
 

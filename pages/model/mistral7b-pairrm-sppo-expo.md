@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 7.24B params · apache-2.0
 
-**score 48.6** ±1.5 · #519 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.6** ±1.5 · #518 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #304 of 466*     93% 
 
 <details><summary>chat &amp; writing · #304 of 466 · 93% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty      counts  why

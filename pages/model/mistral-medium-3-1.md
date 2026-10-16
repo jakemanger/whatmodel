@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅●▄▃▃▁   #116 of 343*     10%      1
+agent tasks         ▁▁▂▆█▆▅●▄▃▂▁   #117 of 346*     10%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #116 of 466*     50%      1
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #112 of 182*     36%      1
 </pre>
 
-<details><summary>agent tasks · #116 of 343 · 10% of its score</summary>
+<details><summary>agent tasks · #117 of 346 · 10% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

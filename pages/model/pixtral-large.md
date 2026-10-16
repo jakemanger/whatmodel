@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅█●▄█▄▁▁▁   #231 of 424*     20%      1
+math                ▁▁▃▅█●▄█▄▁▁▁   #235 of 427*     20%      1
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄    #112 of 147     97%      4
 </pre>
 
-<details><summary>math · #231 of 424 · 20% of its score</summary>
+<details><summary>math · #235 of 427 · 20% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                             result  vs the others in its run   difficulty  
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1095.2  ▁▁▂▂▂▂●▅▅▆██ beats 29/145  avg 1058             51%  blunt
 <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>        69.4%  ▁··▁▄▄▇█●▆█▄ beats 25/47   medium · avg 61%     20%  at its level · small run
 <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▄█●▆▆ beats 25/52   medium · avg 56%     20%  at its level · small run
-<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                     88.1%  ▁··▁▁▁▁▁▂▅▅● beats 34/44   easy · avg 82%      6.4%  blunt · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                     88.1%  ▁··▁▁▁▁▁▂▅▅● beats 34/44   easy · avg 82%      6.5%  blunt · small run
 </pre>
 
 </details>

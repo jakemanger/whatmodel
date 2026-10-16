@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▂▁    #369 of 529     43%      3
+coding          ▁▁▁▃▅●█▇▅▄▂▁    #370 of 529     43%      3
 chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃    #332 of 466     26%      4
-math            ▁▂▃●█▇▅▇▃▁▁▁   #396 of 523*    5.1%      2
+math            ▁▁▃●██▅█▄▁▁▁   #399 of 526*    5.1%      2
 </pre>
 
-<details><summary>coding · #369 of 529 · 43% of its score</summary>
+<details><summary>coding · #370 of 529 · 43% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
@@ -36,7 +36,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <details><summary>chat &amp; writing · #332 of 466 · 26% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -48,14 +48,14 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #396 of 523 · 5.1% of its score</summary>
+<details><summary>math · #399 of 526 · 5.1% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               24.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 22/92   hard · avg 27%          4.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.9%  ▃●▄▃▃▃▇▇█▃▂▅ beats 14/193  very hard · avg 6.9%    0.4%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.9%  ▃●▄▃▃▃▇▇█▃▂▅ beats 14/195  very hard · avg 6.9%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -66,9 +66,9 @@ test                      result  vs the others in its run   difficulty         
 test                                          result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           39.2%  ▁▁▁▂▂▃▂█●▃▅▃ beats 43/61   medium · avg 38%        13%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        29.6%  ▃▂·●▆██▆▅▃▃▃ beats 6/33    medium · avg 39%       3.7%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        37.9%  ▂▁▁▄▂●▇█▆▂▂▂ beats 21/58   medium · avg 48%       3.6%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.8937 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 27/52   avg 42.785 WB-Score    3.5%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   38.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 36/208  hard · avg 38%         2.7%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        37.9%  ▂▁▁▄▂●▇█▆▂▂▂ beats 21/58   medium · avg 48%       3.7%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.8937 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 27/52   avg 42.742 WB-Score    3.5%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   38.8%  ▁▁▁▁▂●▆▄▅▇█▄ beats 36/209  hard · avg 38%         2.7%  sharp
 </pre>
 
 </details>

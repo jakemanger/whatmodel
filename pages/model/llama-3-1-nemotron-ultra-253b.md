@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 61.0** ±1.4 · #188 of 725 · from 10 benchmark results across 5 sources
+**score 61.0** ±1.4 · #189 of 725 · from 10 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #228 of 303*    4.4%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #231 of 306*    4.4%      3
 coding          ▁▁▁▃▆██▇●▄▃▁    #77 of 460*    1.9%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #157 of 395     32%      3
 math            ●··········█        #2 of 2     31%      3
 </pre>
 
-<details><summary>agent tasks · #228 of 303 · 4.4% of its score</summary>
+<details><summary>agent tasks · #231 of 306 · 4.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -67,8 +67,8 @@ Trails [Llama 3.3 Nemotron Super 49B v1](llama-3-3-nemotron-super-49b-v1.md) her
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   72.5%  ▁·▁▁▁▂▅▆●▇▅▁ beats 70/133  medium · avg 37%        13%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 48%        11%  sharp · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 68/84   very easy · avg 91%    6.8%  maxed out · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 47%        11%  sharp · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 68/84   very easy · avg 91%    6.7%  maxed out · small run
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 176/310  hard · avg 45%     17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 176/311  hard · avg 46%     17%  sharp · at its level · small run
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1031           13%  typical
 </pre>
 

@@ -313875,5 +313875,923 @@
     "date": "2026-10-12",
     "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'muse-wonder-1.0_max'; run id AFigcTGzpgZgMi6j2fpboa; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.003883473863441843.",
     "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-4-31b",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.859,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'Gemma 4 31B', column 'Balanced Performance (%)' = 85.9. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "Gemma 4 31B",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "85.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-6-35b-a3b",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.817,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'Qwen3.6-35B-A3B', column 'Balanced Performance (%)' = 81.7. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3.6-35B-A3B",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "81.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-oss-20b",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.778,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'GPT-OSS-20B', column 'Balanced Performance (%)' = 77.8. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "GPT-OSS-20B",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "77.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "devstral-small-2",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.742,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'Devstral-Small-2-24B-Instruct-2512', column 'Balanced Performance (%)' = 74.2. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "Devstral-Small-2-24B-Instruct-2512",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "74.2",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-5-35b-a3b",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.739,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'Qwen3.5-35B-A3B', column 'Balanced Performance (%)' = 73.9. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3.5-35B-A3B",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "73.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-5-9b",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.621,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'Qwen3.5-9B', column 'Balanced Performance (%)' = 62.1. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3.5-9B",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "62.1",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "ministral-3-14b",
+    "bench": "nextsteps-dataprep-balanced",
+    "score": 0.526,
+    "source": "https://arxiv.org/pdf/2607.21482v2",
+    "source_id": "paper-2607.21482v2-nextsteps-dataprep",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "UCL authors' own runs, arXiv:2607.21482v2 Table 3 'LLM performance under the accuracy threshold (0.95 categorical, 0.0001 numeric)', row 'Ministral-3-14B-Instruct-2512', column 'Balanced Performance (%)' = 52.6. SmolAgents agent, detailed prompt, temperature 0.8, three runs per task; inference precision not stated (deployment tiers 'approximated from their respective quantized models').",
+    "evidence": {
+      "kind": "pdf-table",
+      "table_label": "Table 3",
+      "row_label": "Ministral-3-14B-Instruct-2512",
+      "column_label": "Balanced Performance (%)",
+      "raw_value": "52.6",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "devstral-small-2",
+    "bench": "swe-bench-verified",
+    "score": 0.591,
+    "source": "https://arxiv.org/html/2601.20789v3",
+    "source_id": "paper-2601.20789v3-sera",
+    "by": "independent",
+    "date": "2026-05-29",
+    "note": "Ai2 replication, arXiv:2601.20789v3 Table 1 (SWE-bench Verified resolve rate), row 'Devstral-Small-2', context 64K, '59.1% ± 1.1%' (mean over 3 random seeds; SWE-agent-based setup with full context retention). The 32K-context replication of the same models is not added; the 256K Devstral row has no ± (not replicated) and is not used.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Devstral-Small-2",
+      "column_label": "Resolve Rate (Context 64K)",
+      "raw_value": "59.1",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "glm-4-5-air",
+    "bench": "swe-bench-verified",
+    "score": 0.574,
+    "source": "https://arxiv.org/html/2601.20789v3",
+    "source_id": "paper-2601.20789v3-sera",
+    "by": "independent",
+    "date": "2026-05-29",
+    "note": "Ai2 replication, arXiv:2601.20789v3 Table 1 (SWE-bench Verified resolve rate), row 'GLM-4.5-Air', context 64K, '57.4% ± 0.5%' (mean over 3 random seeds; SWE-agent-based setup with full context retention). The 32K-context replication of the same models is not added; the 256K Devstral row has no ± (not replicated) and is not used.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "GLM-4.5-Air",
+      "column_label": "Resolve Rate (Context 64K)",
+      "raw_value": "57.4",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "glm-4-7-flash",
+    "bench": "swe-bench-verified",
+    "score": 0.397,
+    "source": "https://arxiv.org/html/2601.20789v3",
+    "source_id": "paper-2601.20789v3-sera",
+    "by": "independent",
+    "date": "2026-05-29",
+    "note": "Ai2 replication, arXiv:2601.20789v3 Table 1 (SWE-bench Verified resolve rate), row 'GLM-4.7-Flash', context 64K, '39.7% ± 1.8%' (mean over 3 random seeds; SWE-agent-based setup with full context retention). The 32K-context replication of the same models is not added; the 256K Devstral row has no ± (not replicated) and is not used.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "GLM-4.7-Flash",
+      "column_label": "Resolve Rate (Context 64K)",
+      "raw_value": "39.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-opus-4-6",
+    "bench": "schedbench-subset-solver-feasibility",
+    "score": 0.567,
+    "source": "https://arxiv.org/html/2608.18409v2",
+    "source_id": "paper-2608.18409v2-schedbench",
+    "by": "independent",
+    "date": "2026-09-09",
+    "note": "Authors' new run (‡), arXiv:2608.18409v2 Table 1 'Per-model results on SCHEDBench subset', row 'claude-opus-4-6', Solver-Mediated Generation 'Feas. (%)' = 56.7‡, N=300.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "claude-opus-4-6",
+      "column_label": "Solver-Mediated Generation Feas. (%)",
+      "raw_value": "56.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-5",
+    "bench": "schedbench-subset-solver-feasibility",
+    "score": 0.533,
+    "source": "https://arxiv.org/html/2608.18409v2",
+    "source_id": "paper-2608.18409v2-schedbench",
+    "by": "independent",
+    "date": "2026-09-09",
+    "note": "Authors' new run (‡), arXiv:2608.18409v2 Table 1 'Per-model results on SCHEDBench subset', row 'gpt-5.5 (2026-04-23)', Solver-Mediated Generation 'Feas. (%)' = 53.3‡, N=300.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "gpt-5.5 (2026-04-23)",
+      "column_label": "Solver-Mediated Generation Feas. (%)",
+      "raw_value": "53.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "bench": "schedbench-subset-solver-feasibility",
+    "score": 0.35,
+    "source": "https://arxiv.org/html/2608.18409v2",
+    "source_id": "paper-2608.18409v2-schedbench",
+    "by": "independent",
+    "date": "2026-09-09",
+    "note": "Authors' new run (‡), arXiv:2608.18409v2 Table 1 'Per-model results on SCHEDBench subset', row 'claude-sonnet-4-6', Solver-Mediated Generation 'Feas. (%)' = 35.0‡, N=300.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "claude-sonnet-4-6",
+      "column_label": "Solver-Mediated Generation Feas. (%)",
+      "raw_value": "35.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "schedbench-subset-solver-feasibility",
+    "score": 0.12,
+    "source": "https://arxiv.org/html/2608.18409v2",
+    "source_id": "paper-2608.18409v2-schedbench",
+    "by": "independent",
+    "date": "2026-09-09",
+    "note": "Authors' new run (‡), arXiv:2608.18409v2 Table 1 'Per-model results on SCHEDBench subset', row 'gemini-3-flash-preview', Solver-Mediated Generation 'Feas. (%)' = 12.0‡, N=300.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "gemini-3-flash-preview",
+      "column_label": "Solver-Mediated Generation Feas. (%)",
+      "raw_value": "12.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "devstral-small-2",
+    "bench": "schedbench-subset-solver-feasibility",
+    "score": 0.07,
+    "source": "https://arxiv.org/html/2608.18409v2",
+    "source_id": "paper-2608.18409v2-schedbench",
+    "by": "independent",
+    "date": "2026-09-09",
+    "note": "Authors' new run (‡), arXiv:2608.18409v2 Table 1 'Per-model results on SCHEDBench subset', row 'devstral-small-2-24b (2025-12-09)', Solver-Mediated Generation 'Feas. (%)' = 7.0‡, N=300.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "devstral-small-2-24b (2025-12-09)",
+      "column_label": "Solver-Mediated Generation Feas. (%)",
+      "raw_value": "7.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "bench": "kopa-bench-pass1",
+    "score": 0.4655,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Claude Sonnet 4.6', KOPA-Bench 'pass@1' = 0.4655 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Claude Sonnet 4.6",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.4655",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.6013,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Claude Sonnet 4.6', BFCL 'Multi-Turn' = 60.13 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Claude Sonnet 4.6",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "60.13",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-1",
+    "bench": "kopa-bench-pass1",
+    "score": 0.3706,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'GPT-5.1', KOPA-Bench 'pass@1' = 0.3706 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "GPT-5.1",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.3706",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "gpt-5-1",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.3812,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'GPT-5.1', BFCL 'Multi-Turn' = 38.12 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "GPT-5.1",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "38.12",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-5-27b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.4482,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Qwen3.5-27B', KOPA-Bench 'pass@1' = 0.4482 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Qwen3.5-27B",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.4482",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-5-27b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.6538,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Qwen3.5-27B', BFCL 'Multi-Turn' = 65.38 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Qwen3.5-27B",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "65.38",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gemma-4-26b-a4b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.3534,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'gemma-4-26B-A4B-it', KOPA-Bench 'pass@1' = 0.3534 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "gemma-4-26B-A4B-it",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.3534",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "gemma-4-26b-a4b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.5538,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'gemma-4-26B-A4B-it', BFCL 'Multi-Turn' = 55.38 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "gemma-4-26B-A4B-it",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "55.38",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "exaone-4-5-33b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.2586,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "lab",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'EXAONE-4.5-33B', KOPA-Bench 'pass@1' = 0.2586 (mean of four rollouts). Authors are at LG CNS (LG Group), so recorded as lab for EXAONE.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "EXAONE-4.5-33B",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.2586",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "exaone-4-5-33b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.53,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "lab",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'EXAONE-4.5-33B', BFCL 'Multi-Turn' = 53.00 ('computed via the official evaluation repository'; BFCL version not stated). Authors are at LG CNS (LG Group), so recorded as lab for EXAONE.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "EXAONE-4.5-33B",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "53.00",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-5-9b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.3275,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Qwen3.5-9B', KOPA-Bench 'pass@1' = 0.3275 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Qwen3.5-9B",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.3275",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-5-9b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.5225,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Qwen3.5-9B', BFCL 'Multi-Turn' = 52.25 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Qwen3.5-9B",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "52.25",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gemma-4-e4b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.1862,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'gemma-4-E4B-it', KOPA-Bench 'pass@1' = 0.1862 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "gemma-4-E4B-it",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.1862",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "gemma-4-e4b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.2075,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'gemma-4-E4B-it', BFCL 'Multi-Turn' = 20.75 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "gemma-4-E4B-it",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "20.75",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-5-4b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.1758,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Qwen3.5-4B', KOPA-Bench 'pass@1' = 0.1758 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Qwen3.5-4B",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.1758",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-5-4b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.4908,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Qwen3.5-4B', BFCL 'Multi-Turn' = 49.08 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Qwen3.5-4B",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "49.08",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "ministral-3-8b",
+    "bench": "kopa-bench-pass1",
+    "score": 0.1299,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Ministral-3-8B-Instruct-2512', KOPA-Bench 'pass@1' = 0.1299 (mean of four rollouts).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Ministral-3-8B-Instruct-2512",
+      "column_label": "KOPA-Bench pass@1",
+      "raw_value": "0.1299",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "ministral-3-8b",
+    "bench": "bfcl-multiturn-version-unspecified",
+    "score": 0.245,
+    "source": "https://arxiv.org/html/2609.05395v1",
+    "source_id": "paper-2609.05395v1-kopa",
+    "by": "independent",
+    "date": "2026-09-04",
+    "note": "LG CNS authors' run, arXiv:2609.05395v1 Table 1, row 'Ministral-3-8B-Instruct-2512', BFCL 'Multi-Turn' = 24.50 ('computed via the official evaluation repository'; BFCL version not stated).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 1",
+      "row_label": "Ministral-3-8B-Instruct-2512",
+      "column_label": "BFCL Multi-Turn",
+      "raw_value": "24.50",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-0-6b",
+    "bench": "gsm8k",
+    "score": 0.809,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'Qwen3-0.6B', column 'GSM8K' = 0.809. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "Qwen3-0.6B",
+      "column_label": "GSM8K",
+      "raw_value": "0.809",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-1-7b",
+    "bench": "gsm8k",
+    "score": 0.908,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'Qwen3-1.7B', column 'GSM8K' = 0.908. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "Qwen3-1.7B",
+      "column_label": "GSM8K",
+      "raw_value": "0.908",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-4b-thinking-2507",
+    "bench": "gsm8k",
+    "score": 0.949,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'Qwen3-4B-Thinking-2507', column 'GSM8K' = 0.949. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "Qwen3-4B-Thinking-2507",
+      "column_label": "GSM8K",
+      "raw_value": "0.949",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-8b",
+    "bench": "gsm8k",
+    "score": 0.949,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'Qwen3-8B', column 'GSM8K' = 0.949. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "Qwen3-8B",
+      "column_label": "GSM8K",
+      "raw_value": "0.949",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "qwen3-14b",
+    "bench": "gsm8k",
+    "score": 0.947,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'Qwen3-14B', column 'GSM8K' = 0.947. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "Qwen3-14B",
+      "column_label": "GSM8K",
+      "raw_value": "0.947",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "deepseek-r1-distill-llama-8b",
+    "bench": "gsm8k",
+    "score": 0.872,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'DeepSeek-R1-Distill-Llama-8B', column 'GSM8K' = 0.872. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "DeepSeek-R1-Distill-Llama-8B",
+      "column_label": "GSM8K",
+      "raw_value": "0.872",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "deepseek-r1-distill-qwen-7b",
+    "bench": "gsm8k",
+    "score": 0.915,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'DeepSeek-R1-Distill-Qwen-7B', column 'GSM8K' = 0.915. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "DeepSeek-R1-Distill-Qwen-7B",
+      "column_label": "GSM8K",
+      "raw_value": "0.915",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "nemotron-cascade-8b-thinking",
+    "bench": "gsm8k",
+    "score": 0.93,
+    "source": "https://arxiv.org/html/2604.19444v1",
+    "source_id": "paper-2604.19444v1-calibration",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "Columbia authors' run, arXiv:2604.19444v1 Table 6, row 'Nemotron-Cascade-8B-Thinking', column 'GSM8K' = 0.930. 1,000 sampled GSM8K examples (not the full 1,319 test set), zero-shot prompt 'Please reason step by step, and put your final answer within \\boxed{}', vLLM, temperature 0.6, top_p 0.95, top_k 20.",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 6",
+      "row_label": "Nemotron-Cascade-8B-Thinking",
+      "column_label": "GSM8K",
+      "raw_value": "0.930",
+      "scale_divisor": 1
+    }
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "webcompass-overall",
+    "score": 0.674,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Claude-Opus-4.5', column 'Overall' = 67.40 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Claude-Opus-4.5",
+      "column_label": "Overall",
+      "raw_value": "67.40",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "webcompass-overall",
+    "score": 0.6668,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Gemini-3-Pro-Preview', column 'Overall' = 66.68 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Gemini-3-Pro-Preview",
+      "column_label": "Overall",
+      "raw_value": "66.68",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "webcompass-overall",
+    "score": 0.6542,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Gemini-3-Flash-Preview', column 'Overall' = 65.42 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Gemini-3-Flash-Preview",
+      "column_label": "Overall",
+      "raw_value": "65.42",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "webcompass-overall",
+    "score": 0.619,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'GPT-5.2', column 'Overall' = 61.90 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "GPT-5.2",
+      "column_label": "Overall",
+      "raw_value": "61.90",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "webcompass-overall",
+    "score": 0.5712,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Claude-Sonnet-4.5', column 'Overall' = 57.12 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Claude-Sonnet-4.5",
+      "column_label": "Overall",
+      "raw_value": "57.12",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-instruct",
+    "bench": "webcompass-overall",
+    "score": 0.4114,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Qwen3-VL 235B-A22B-Instruct', column 'Overall' = 41.14 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3-VL 235B-A22B-Instruct",
+      "column_label": "Overall",
+      "raw_value": "41.14",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-thinking",
+    "bench": "webcompass-overall",
+    "score": 0.3878,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Qwen3-VL 235B-A22B-Thinking', column 'Overall' = 38.78 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3-VL 235B-A22B-Thinking",
+      "column_label": "Overall",
+      "raw_value": "38.78",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-vl-32b-instruct",
+    "bench": "webcompass-overall",
+    "score": 0.352,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Qwen3-VL 32B-Instruct', column 'Overall' = 35.20 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3-VL 32B-Instruct",
+      "column_label": "Overall",
+      "raw_value": "35.20",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-vl-30b-a3b-thinking",
+    "bench": "webcompass-overall",
+    "score": 0.2958,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Qwen3-VL 30B-A3B-Thinking', column 'Overall' = 29.58 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3-VL 30B-A3B-Thinking",
+      "column_label": "Overall",
+      "raw_value": "29.58",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "qwen3-vl-30b-a3b-instruct",
+    "bench": "webcompass-overall",
+    "score": 0.2808,
+    "source": "https://arxiv.org/html/2604.18224v1",
+    "source_id": "paper-2604.18224v1-webcompass",
+    "by": "independent",
+    "date": "2026-04-20",
+    "note": "WebCompass authors' run, arXiv:2604.18224v1 Table 3, row 'Qwen3-VL 30B-A3B-Instruct', column 'Overall' = 28.08 (mean of nine dimension scores; Claude Opus 4.5 is the automatic judge, so Claude rows are judged by a same-family model).",
+    "evidence": {
+      "kind": "table",
+      "table_label": "Table 3",
+      "row_label": "Qwen3-VL 30B-A3B-Instruct",
+      "column_label": "Overall",
+      "raw_value": "28.08",
+      "scale_divisor": 100
+    }
   }
 ]

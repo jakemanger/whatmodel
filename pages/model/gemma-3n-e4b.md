@@ -26,7 +26,7 @@ math            █··········●       #1 of 2*     25%      2
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      75.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 158/205  easy · avg 77%     11%  sharp · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 68%    5.7%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 67%    5.7%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   25.7%  ▃●·····▃█··▅ beats 1/7      hard · avg 32%    4.2%  at its level · small run
 </pre>
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run    difficul
 
 <details><summary>chat &amp; writing · #202 of 395 · 19% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -47,8 +47,8 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>   11.6%  ▁·▁▁●▂▅▆█▇▅▁ beats 6/133  hard · avg 17%     12%  sharp · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        60.7%  ▂·▁▁▁▁▁▂▅█●▂ beats 35/42  easy · avg 67%     12%  sharp · at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>   11.6%  ▁·▁▁●▂▅▆█▇▅▁ beats 6/133  hard · avg 17%     13%  sharp · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        60.7%  ▂·▁▁▁▁▁▂▅█●▂ beats 35/42  easy · avg 66%     12%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test             result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   55.0%  ▂▄▂▃█●▃▆▃▅▂▂ beats 40/81    medium · avg 56%    8.7%  blunt · at its level
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                           64.9%  ▁▁▁▁▁▂▂▅●█▆▄ beats 105/214  medium · avg 70%    8.6%  at its level · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                       50.6%  ▁▁·▁▁▁▃●▄▅█▁ beats 51/188   medium · avg 53%    6.9%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                       50.6%  ▁▁·▁▁▁▃●▄▅█▁ beats 51/188   medium · avg 53%    7.0%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                    60.3%  ▃●▃·▃···▅·▅█ beats 1/11     medium · avg 63%    3.9%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   71.3%  ▃·▁▁▂▁▂▅●▇▄▁ beats 54/100   medium · avg 66%    3.7%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.2%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 66/146   easy · avg 82%      2.4%  at its level · noisy

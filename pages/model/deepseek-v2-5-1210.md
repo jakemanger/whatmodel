@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
-**score 56.6** ±1.3 · #249 of 725 · from 6 benchmark results across 5 sources
+**score 56.6** ±1.3 · #248 of 725 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #201 of 460*     66%      2
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #192 of 395*     27%      2
-math            ▁▁▃▅█●▄█▄▁▁▁   #235 of 424*    5.6%      1
+math            ▁▁▃▅█●▄█▄▁▁▁   #237 of 427*    5.5%      1
 </pre>
 
 <details><summary>coding · #201 of 460 · 66% of its score</summary>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #192 of 395 · 27% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run    difficulty      counts  why
@@ -45,13 +45,13 @@ test                        result  vs the others in its run    difficulty      
 
 </details>
 
-<details><summary>math · #235 of 424 · 5.6% of its score</summary>
+<details><summary>math · #237 of 427 · 5.5% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>   82.8%  ▁▃▂▃▅●▅▇█▅▂▁ beats 24/84  easy · avg 76%    5.6%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>   82.8%  ▁▃▂▃▅●▅▇█▅▂▁ beats 24/84  easy · avg 76%    5.5%  small run
 </pre>
 
 </details>

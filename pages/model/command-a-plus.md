@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #141 of 303     24%      6
-coding              ▁▁▁▃▆██●▆▄▃▁   #152 of 460    9.0%      3
-math                ▁▁▃▅█▆▄●▄▁▁▁   #119 of 424     17%      3
-vision &amp; documents  ······●·····      #1 of 1*    5.8%      2
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #143 of 306     24%      6
+coding              ▁▁▁▃▆██●▆▄▃▁   #151 of 460    9.1%      3
+math                ▁▁▃▅█▆▄●▄▁▁▁   #121 of 427     17%      3
+vision &amp; documents  ······●·····      #1 of 1*    5.9%      2
 </pre>
 
-<details><summary>agent tasks · #141 of 303 · 24% of its score</summary>
+<details><summary>agent tasks · #143 of 306 · 24% of its score</summary>
 
-Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.5%    8.2%  sharp · several runs
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.6%    8.1%  sharp · several runs
 <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>   85.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 63/89  hard · avg 26%          5.7%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>      1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.9%    3.5%  too hard for it
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>   27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.2%  at its level
@@ -38,7 +38,7 @@ test                    result  vs the others in its run  difficulty            
 
 </details>
 
-<details><summary>coding · #152 of 460 · 9.0% of its score</summary>
+<details><summary>coding · #151 of 460 · 9.1% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
 
@@ -51,20 +51,20 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #119 of 424 · 17% of its score</summary>
+<details><summary>math · #121 of 427 · 17% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [A.X K1 (519B-A33B)](ax-k1.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      medium · avg 65%    8.5%  sharp
-<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 46%    4.5%  sharp · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      easy · avg 65%      8.4%  sharp
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 46%    4.6%  sharp · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   73.5%  █▄●········█ beats 3/5      hard · avg 31%      3.7%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #1 of 1 · 5.8% of its score</summary>
+<details><summary>vision &amp; documents · #1 of 1 · 5.9% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why

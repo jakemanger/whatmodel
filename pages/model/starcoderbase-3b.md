@@ -6,7 +6,7 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 29.6** ±0.8 · #659 of 725 · from 12 benchmark results across 3 sources
+**score 29.7** ±0.8 · #657 of 725 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁●▃▆██▇▆▄▃▁    #442 of 460     96%      9
-math    ▁▁●▅█▆▄█▄▁▁▁   #393 of 424*    3.6%      1
+math    ▁▁●▅█▆▄█▄▁▁▁   #398 of 427*    3.4%      1
 </pre>
 
 <details><summary>coding · #442 of 460 · 96% of its score</summary>
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            17.7%  ▁·▁●▃▄▆▅█▃▁▁ beats 6/99   easy · avg 76%       41%  sharp · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           15.9%  ▁·▁▁●▃▄▄▄█▃▁ beats 6/99   easy · avg 70%       21%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 29.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 0/15   easy · avg 81%       12%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   21.8%  ▁·▂●▂▆▅█▄▄▁▂ beats 3/35   medium · avg 61%    6.9%  typical
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   21.8%  ▁·▂●▂▆▅█▄▄▁▂ beats 3/35   medium · avg 61%    7.0%  typical
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        14.2%  ●▄·▄██▄█·█·▄ beats 0/12   medium · avg 49%    4.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           27.5%  ●▅█▃▃▅·▃▃▅·▅ beats 0/15   medium · avg 56%    3.6%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   11.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 2/35   medium · avg 45%    3.0%  typical
@@ -39,13 +39,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #393 of 424 · 3.6% of its score</summary>
+<details><summary>math · #398 of 427 · 3.4% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>    8.0%  ●▄▄·▄█·██·█▄ beats 0/12   easy · avg 76%    3.6%  sharp
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>    8.0%  ●▄▄·▄█·██·█▄ beats 0/12   easy · avg 75%    3.4%  sharp
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   26% ▇▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   23% ▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 29.6
+weighted average                                   = 29.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>

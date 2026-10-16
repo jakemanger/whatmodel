@@ -6,7 +6,7 @@
 
 Meta · released 2026-10 · 816B params (42B active) · muse-model-license
 
-**score 78.6** ±3.1 · #16 of 725 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 74.9** ±0.9 · #36 of 725 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others            rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅●▃▁      #49 of 303*     27%      2
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁      #49 of 306*    2.0%      2
+math         ▁▁▃▅█▆▄█▄●▁▁       #26 of 427     81%      3
 web search                  not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · #49 of 303 · 27% of its score</summary>
+<details><summary>agent tasks · #49 of 306 · 2.0% of its score</summary>
 
 Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">OSWorld-Verified (lab)</a>               80.4%  █▃·▂▅▂▃▂▅▃●▆ beats 20/27  hard · avg 16%     27%  small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">OSWorld-Verified (lab)</a>               80.4%  █▃·▂▅▂▃▂▅▃●▆ beats 20/27  hard · avg 18%    2.0%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Humanity's Last Exam with tools (…</a>   61.0%  ▂▂▂▁▄▂▃▆█▇●▆ beats 48/55  hard · avg 16%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>math · #26 of 427 · 81% of its score</summary>
+
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
+
+<pre>
+test                       result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   69.8%  ▂··▁▁▃▄▄█●▄▃ beats 59/84    very hard · avg 1.1%     40%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      31.7%  ▁▂▁▂█●▂▃▁▁▁▁ beats 37/65    very hard · avg 0.1%     40%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    98.1%  ▃▃▄▃▃▃▇▇█▃●▅ beats 172/195  very hard · avg 6.9%    1.2%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -41,16 +55,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>other tests (6)</summary>
+<details><summary>other tests (8)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">SimpleVQA with tools (search) (la…</a>   73.6%  █·········█● beats 2/2    hard · avg 25%     25%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Video-MME v2 (with subtitles) (la…</a>   61.5%  █·········●█ beats 1/2    hard · avg 16%     24%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">IntPhys 2 (lab)</a>                      68.3%  █···█······● beats 2/2    hard · avg 25%     20%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">ZeroBench main with tools (pass@5…</a>   50.0%  █··········● beats 1/1                         —  not counted yet: no other model in the …
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools (lab)</a>          80.2%  █··········● beats 1/1                         —  not counted yet: no other model in the …
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools (lab)</a>            49.4%  █··········● beats 1/1                         —  not counted yet: no other model in the …
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.6%  ▁▁▁▁▂▄▆▄▅▇●▄ beats 166/209  hard · avg 38%          6.1%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    56.6%  ▁▁▃▂▃▃▆▆█●▂▅ beats 62/79    very hard · avg 7.5%    3.9%  at its level
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Video-MME v2 (with subtitles) (la…</a>   61.5%  █·········●█ beats 1/2      hard · avg 17%          2.3%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">SimpleVQA with tools (search) (la…</a>   73.6%  █·········█● beats 2/2      hard · avg 26%          2.3%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">IntPhys 2 (lab)</a>                      68.3%  █···█······● beats 2/2      hard · avg 26%          1.8%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">ZeroBench main with tools (pass@5…</a>   50.0%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools (lab)</a>          80.2%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools (lab)</a>            49.4%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -61,10 +77,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-meta-scores"></a><a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Meta vendor-reported benchmark scores f…</a>        4   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        4% ▇
-weighted average                                   = 78.6
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        5   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-meta-scores"></a><a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Meta vendor-reported benchmark scores f…</a>        4    8% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 74.9
 </pre>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (4)</summary>
 

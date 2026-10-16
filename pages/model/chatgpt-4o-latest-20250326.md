@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · closed weights
 
-**score 65.0** ±1.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 64.9** ±1.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -63,7 +63,7 @@ source                         results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>        1   59% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   40% ▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 65.0
+weighted average                        = 64.9
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

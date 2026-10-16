@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #249 of 343*    4.5%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #252 of 346*    4.6%      1
 coding       ▁▁▁▃▅▇●▇▅▄▂▁   #265 of 529*     45%      1
-math         ▁▂▃▆█▇●▇▃▁▁▁   #175 of 523*     15%      1
+math         ▁▁▃▆██●█▄▁▁▁   #177 of 526*     15%      1
 </pre>
 
-<details><summary>agent tasks · #249 of 343 · 4.5% of its score</summary>
+<details><summary>agent tasks · #252 of 346 · 4.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   58.7%  ▁▁▁▁▁▃▅█●▄▁▁ beats 79/114  medium · avg 51%    4.5%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   58.7%  ▁▁▁▁▁▃▅█●▄▁▁ beats 79/114  medium · avg 51%    4.6%  blunt · at its level
 </pre>
 
 </details>
@@ -43,13 +43,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #175 of 523 · 15% of its score</summary>
+<details><summary>math · #177 of 526 · 15% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   57.8%  ▃▃▄▃▃▃●▇█▃▂▅ beats 86/193  very hard · avg 6.9%     15%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   57.8%  ▃▃▄▃▃▃●▇█▃▂▅ beats 86/195  very hard · avg 6.9%     15%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   57.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 85/208  hard · avg 38%     35%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   57.1%  ▁▁▁▁▂▄▆●▅▇█▄ beats 85/209  hard · avg 38%     35%  sharp · at its level
 </pre>
 
 </details>

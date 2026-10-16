@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #384 of 460     74%      6
-math    ▁▁▃▅█●▄█▄▁▁▁   #194 of 424*     10%      2
+coding  ▁▁▁▃●██▇▆▄▃▁    #384 of 460     75%      6
+math    ▁▁▃▅█●▄█▄▁▁▁   #202 of 427*     10%      2
 </pre>
 
-<details><summary>coding · #384 of 460 · 74% of its score</summary>
+<details><summary>coding · #384 of 460 · 75% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -31,18 +31,18 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           42.2%  █·▅▃▃▃●▃▃▅·▅ beats 8/15   easy · avg 67%       12%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.6%  ▁·▁▁▄██▄●▁▅▅ beats 26/35  medium · avg 51%     12%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     36.0%  ▃▅█▃▃●·▃▃▅·▅ beats 8/15   medium · avg 56%    9.2%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     36.1%  ▃·▃██●▃·▃▃▅▃ beats 9/15   medium · avg 53%    7.5%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     36.1%  ▃·▃██●▃·▃▃▅▃ beats 9/15   medium · avg 53%    7.6%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #194 of 424 · 10% of its score</summary>
+<details><summary>math · #202 of 427 · 10% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall.
 
 <pre>
 test         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>   61.9%  ▄··▄···▄··█● beats 5/5    easy · avg 76%      5.5%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>   61.9%  ▄··▄···▄··█● beats 5/5    easy · avg 75%      5.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>    21.4%  ▃·▃····▃···● beats 3/5    medium · avg 37%    4.5%  typical
 </pre>
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-12 · cc-by-nc-4.0
 
-**score 42.3** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.4** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             6% ▇
-weighted average                        = 42.3
+weighted average                        = 42.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
-**score 65.1** ±1.2 · #141 of 725 · from 12 benchmark results across 5 sources
+**score 65.0** ±1.2 · #141 of 725 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #99 of 303     41%      4
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #100 of 306     41%      4
 coding          ▁▁▁▃▆██▇●▄▃▁    #96 of 460*     25%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #125 of 395*     15%      1
-math            ▁▁▃▅█●▄█▄▁▁▁    #225 of 424    9.1%      3
-web search      ●█···█····██       #5 of 5*    8.7%      1
+math            ▁▁▃▅█●▄█▄▁▁▁    #227 of 427    9.0%      3
+web search      ●█···█····██       #5 of 5*    8.6%      1
 </pre>
 
-<details><summary>agent tasks · #99 of 303 · 41% of its score</summary>
+<details><summary>agent tasks · #100 of 306 · 41% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   60.6%  ▆··▆▄▂▄▂▆●█▄ beats 16/23  very hard · avg 13%     12%  sharp · at its level
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 37%        11%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 38%        11%  sharp · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   86.6%  ▄······▄█·●▄ beats 4/5    medium · avg 48%       8.7%  typical
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 20%         8.7%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 20%         8.6%  at its level
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1384.4  ▁▂▄▃▅●▄▇▆▄▁▁ beats 38/119  avg 970        25%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1384.4  ▁▂▄▃▅●▄▇▆▄▁▁ beats 38/119  avg 969        25%  sharp
 </pre>
 
 </details>
@@ -59,9 +59,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #225 of 424 · 9.1% of its score</summary>
+<details><summary>math · #227 of 427 · 9.0% of its score</summary>
 
-Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
@@ -72,11 +72,11 @@ test                result  vs the others in its run  difficulty        counts  
 
 </details>
 
-<details><summary>web search · #5 of 5 · 8.7% of its score</summary>
+<details><summary>web search · #5 of 5 · 8.6% of its score</summary>
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 20%    8.7%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 20%    8.6%  at its level
 </pre>
 
 </details>
@@ -104,7 +104,7 @@ source                                    results  share of the score
 <a name="first-party-minimax-scores"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">MiniMax vendor-reported benchmark score…</a>        1   11% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.1
+weighted average                                   = 65.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

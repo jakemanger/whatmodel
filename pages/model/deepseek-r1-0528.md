@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #196 of 303     13%     13
-coding          ▁▁▁▃▆██▇●▄▃▁   #116 of 460     39%      7
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #199 of 306     13%     13
+coding          ▁▁▁▃▆██▇●▄▃▁   #115 of 460     38%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #87 of 395*    3.3%      1
-math            ▁▁▃▅█▆▄●▄▁▁▁    #97 of 424     18%      6
+math            ▁▁▃▅█▆▄●▄▁▁▁   #100 of 427     19%      6
 web search      ●········█·█       #3 of 3    2.6%      3
 </pre>
 
-<details><summary>agent tasks · #196 of 303 · 13% of its score</summary>
+<details><summary>agent tasks · #199 of 306 · 13% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6     hard · avg 18%          3.5%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6     hard · avg 17%          3.5%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                      59.9%  ●▄··▄··▄·▄·▄ beats 0/6     medium · avg 36%        1.9%  at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                     47.3%  ▄●······▄█▄▄ beats 1/6     hard · avg 28%          1.5%  at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp-ZH (lab)</a>                  35.7%  ▁▁▁▁▁▃·●▄▅▄█ beats 7/23    very hard · avg 15%     1.1%  at its level · small run
@@ -46,15 +46,15 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #116 of 460 · 39% of its score</summary>
+<details><summary>coding · #115 of 460 · 38% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   71.4%  ▂·▂▃▅▂▃█▆●▂▂ beats 39/49  very hard · avg 7.3%     26%  sharp · at its level · several runs
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6    hard · avg 18%          3.5%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   59.6%  ▁▁▁▁·▁▂●▅▃█▇ beats 14/49  hard · avg 17%          2.8%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6    hard · avg 17%          3.5%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   59.6%  ▁▁▁▁·▁▂●▅▃█▇ beats 14/49  hard · avg 17%          2.9%  at its level
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   62.5%  ▄●·▄·····█·▄ beats 1/5    medium · avg 45%        1.8%  at its level · several runs
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   68.5%  ▁··▁·▁▁▁▆█●█ beats 27/45  hard · avg 29%          1.7%  at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   73.3%  ▃···█··●··▃▃ beats 4/7    medium · avg 43%        1.3%  at its level · small run · several runs
@@ -74,16 +74,16 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #97 of 424 · 18% of its score</summary>
+<details><summary>math · #100 of 427 · 19% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                            83.2%  █···●██·█··█ beats 1/5     medium · avg 50%        6.2%  sharp · several runs
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                            73.4%  ●·█···███··█ beats 0/5     medium · avg 42%        5.2%  sharp · several runs
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                            83.2%  █···●██·█··█ beats 1/5     medium · avg 49%        6.3%  sharp · several runs
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                            73.4%  ●·█···███··█ beats 0/5     medium · avg 41%        5.3%  sharp · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         96.6%  ▂▂▅▆▄█▆▃▅▂▃● beats 86/92   hard · avg 27%          2.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             66.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 93/193  very hard · avg 6.9%    2.2%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             66.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 93/195  very hard · avg 6.9%    2.2%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">HMMT 2025 (edition unspecified) (…</a>   79.4%  ▃█▇▅●▅▁·▁··▁ beats 25/32   hard · avg 21%          1.9%  sharp · at its level · noisy · small ru…
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                             87.3%  ●······▄▄▄·█ beats 0/5     very easy · avg 86%     0.3%  maxed out · noisy
 </pre>
@@ -105,13 +105,13 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         76.3%  ▁▁▁▁▂▄▆▄●▇█▅ beats 118/208  hard · avg 41%           17%  sharp · at its level · several runs
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         76.3%  ▁▁▁▁▂▄▆▄●▇█▄ beats 118/209  hard · avg 41%           17%  sharp · at its level · several runs
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>                 15.9%  ▄····▄·█·●·▄ beats 4/5      very hard · avg 4.1%    5.4%  several runs
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                             75.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 171/188  medium · avg 50%        2.8%  several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">MMLU-Redux (lab)</a>                     93.4%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 56/63    easy · avg 80%          2.3%  small run · several runs
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.2%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 11/49    easy · avg 77%          1.3%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">SimpleQA (lab)</a>                       27.8%  ▄▄▄▆█▆██●·▂█ beats 26/32    very hard · avg 9.3%    1.1%  at its level · small run
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   73.8%  ●·····▄█▄▄·▄ beats 0/6      easy · avg 66%          0.7%  blunt
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   73.8%  ●·····▄█▄▄·▄ beats 0/6      easy · avg 66%          0.7%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">CNMO 2024 (lab)</a>                      86.9%  █··········● beats 1/1      medium · avg 58%        0.6%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">FRAMES (lab)</a>                         83.0%  █··········● beats 1/1      medium · avg 64%        0.6%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   92.3%  ▁▁▂▃●▄█▆▃▂▂▁ beats 38/140   very easy · avg 94%     0.1%  blunt · maxed out · noisy

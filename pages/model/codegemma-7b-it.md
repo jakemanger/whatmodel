@@ -40,8 +40,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 23/58  medium · avg 48%    4.7%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   32.1%  ▃▂·▆●██▆▅▃▃▃ beats 10/33  medium · avg 39%    4.6%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 23/58  medium · avg 48%    4.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   32.1%  ▃▂·▆●██▆▅▃▃▃ beats 10/33  medium · avg 39%    4.7%  at its level
 </pre>
 
 </details>

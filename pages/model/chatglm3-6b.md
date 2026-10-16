@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 30.0** ±2.0 · #654 of 725 · from 4 benchmark results across 4 sources
+**score 30.1** ±2.0 · #654 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #286 of 303*     10%      1
-chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #387 of 395*     82%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #289 of 306*     10%      1
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #387 of 395*     81%      2
 </pre>
 
-<details><summary>agent tasks · #286 of 303 · 10% of its score</summary>
+<details><summary>agent tasks · #289 of 306 · 10% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #387 of 395 · 82% of its score</summary>
+<details><summary>chat &amp; writing · #387 of 395 · 81% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 79/276  medium · avg 72%    6.4%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 79/276  medium · avg 72%    6.5%  noisy
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="paper-2406.12793v2-chatglm"></a><a href="https://arxiv.org/html/2406.12793v2#S3.T7">ChatGLM: A Family of Large Language Mod…</a>        1   10% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 30.0
+weighted average                                   = 30.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

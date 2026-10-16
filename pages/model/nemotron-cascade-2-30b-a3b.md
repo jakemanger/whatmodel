@@ -19,7 +19,7 @@ task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      4
 coding          ▁▁▁▃▆██▇●▄▃▁       #98 of 460     28%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃      #64 of 395*    7.0%      1
-math            ▁▁▃▅█▆▄●▄▁▁▁      #102 of 424     40%      4
+math            ▁▁▃▅█▆▄●▄▁▁▁      #105 of 427     40%      4
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -60,13 +60,13 @@ test                           result  vs the others in its run  difficulty     
 
 </details>
 
-<details><summary>math · #102 of 424 · 40% of its score</summary>
+<details><summary>math · #105 of 427 · 40% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>            92.4%  ▁·▁▁▁▂▅▆█▇●▁ beats 122/133  medium · avg 64%     12%  sharp · maxed out
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>            92.4%  ▁·▁▁▁▂▅▆█▇●▁ beats 122/133  medium · avg 64%     13%  sharp · maxed out
 <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>      79.3%  ▁▁·▁▁▁▄▅●▄▂▃ beats 20/42    medium · avg 43%     11%  typical
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>            90.9%  ▁▁▁▂▁▂▆●▆▂·▁ beats 24/49    easy · avg 65%       10%  sharp · maxed out
 <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>   94.6%  ▁▁▁▃▁▅▅▃█●▁▄ beats 25/31    easy · avg 71%      6.4%  small run
@@ -78,12 +78,12 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.3%  ▂·▂▂·▂·▃▃·●▃ beats 11/14    easy · avg 79%          6.0%  maxed out
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   70.8%  ▂··▂▂·▂●▆█·▄ beats 5/15     medium · avg 63%        5.7%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.3%  ▂·▂▂·▂·▃▃·●▃ beats 11/14    easy · avg 79%          5.9%  maxed out
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   70.8%  ▂··▂▂·▂●▆█·▄ beats 5/15     medium · avg 63%        5.6%  typical
 <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>                 45.3%  ▁·▁·▁▃●▅▃▁█▅ beats 10/29    hard · avg 27%          5.1%  at its level · small run
 <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                      72.5%  ▁·▁▁▁▂▁●▂█▅▄ beats 10/35    medium · avg 53%        4.4%  small run
 <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                       12.2%  ●··········▄ beats 1/2      very hard · avg 7.1%    3.4%  blunt · small run
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond (lab)</a>                   76.1%  ▁▁▁▁▂▄▅▅●██▄ beats 177/310  hard · avg 38%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond (lab)</a>                   76.1%  ▁▁▁▁▂▄▅▅●██▄ beats 177/311  hard · avg 38%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Pro (lab)</a>                       79.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 125/188  medium · avg 54%           —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam (lab)</a>           17.7%  ▁▁▁▃▆▆●██▆▁▃ beats 40/104   very hard · avg 3.6%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Redux (lab)</a>                     86.3%  ▁▁▃▁▂▃▄●▇▅█▄ beats 25/63    easy · avg 76%             —  not counted yet: no other model in the …
@@ -99,8 +99,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="report-2603.19220v2"></a><a href="https://arxiv.org/html/2603.19220v2">NVIDIA (lab)</a>                        11   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   12% ▇
+<a name="report-2603.19220v2"></a><a href="https://arxiv.org/html/2603.19220v2">NVIDIA (lab)</a>                        11   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   11% ▇
 prior: pull toward the middle             1% ▇
 weighted average                        = 64.9
 </pre>

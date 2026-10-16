@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #210 of 460     54%      6
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #210 of 460     53%      6
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #259 of 395     19%      3
-math            ▁▁▃▅●▆▄█▄▁▁▁   #280 of 424*    3.5%      1
+math            ▁▁▃▅●▆▄█▄▁▁▁   #281 of 427*    3.5%      1
 </pre>
 
-<details><summary>coding · #210 of 460 · 54% of its score</summary>
+<details><summary>coding · #210 of 460 · 53% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #280 of 424 · 3.5% of its score</summary>
+<details><summary>math · #281 of 427 · 3.5% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -78,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   40% ▇▇▇▇▇
-<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             3   27% ▇▇▇
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             3   28% ▇▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   10% ▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   10% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇

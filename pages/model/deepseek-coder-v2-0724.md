@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #236 of 303*    2.0%      1
+agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #239 of 306*    2.1%      1
 coding       ▁▁▁▃▆██●▆▄▃▁   #189 of 460*     39%      2
-math         ▁▁▃▅●▆▄█▄▁▁▁   #297 of 424*    7.5%      1
+math         ▁▁▃▅●▆▄█▄▁▁▁   #300 of 427*    7.5%      1
 </pre>
 
-<details><summary>agent tasks · #236 of 303 · 2.0% of its score</summary>
+<details><summary>agent tasks · #239 of 306 · 2.1% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   54.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 57/114  medium · avg 51%    2.0%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   54.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 57/114  medium · avg 51%    2.1%  blunt · at its level
 </pre>
 
 </details>
@@ -44,9 +44,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #297 of 424 · 7.5% of its score</summary>
+<details><summary>math · #300 of 427 · 7.5% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why

@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 44.5** ±0.9 · #482 of 725 · from 19 benchmark results across 6 sources
+**score 44.6** ±0.9 · #482 of 725 · from 19 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,44 +16,44 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #259 of 303*    3.0%      1
-chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #298 of 395     18%      3
-math            ▁▁▃▅●▆▄█▄▁▁▁    #310 of 424     34%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #263 of 306*    3.1%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #298 of 395     19%      3
+math            ▁▁▃▅●▆▄█▄▁▁▁    #314 of 427     33%      3
 </pre>
 
-<details><summary>agent tasks · #259 of 303 · 3.0% of its score</summary>
+<details><summary>agent tasks · #263 of 306 · 3.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 20/77  hard · avg 31%    3.0%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 20/77  hard · avg 31%    3.1%  typical
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #298 of 395 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #298 of 395 · 19% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1208.5  ▁▁▁▂▃●▃▆▆▇█▃ beats 72/379  avg 1258            9.2%  blunt
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   73.2%  ▄▄·▄······●█ beats 3/5     easy · avg 78%      5.6%  at its level · several runs
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   37.6%  █·▄··●·····█ beats 3/5     medium · avg 54%    3.5%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   73.2%  ▄▄·▄······●█ beats 3/5     easy · avg 78%      5.7%  at its level · several runs
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   37.6%  █·▄··●·····█ beats 3/5     medium · avg 54%    3.6%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #310 of 424 · 34% of its score</summary>
+<details><summary>math · #314 of 427 · 33% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       79.1%  █··▄·····●·█ beats 3/5    very easy · avg 89%      23%  sharp · several runs
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    2.0%  █···●▄▄····▄ beats 2/5    very hard · avg 8.7%    6.4%  sharp · too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    48.7%  █···●·▄▄···▄ beats 2/5    easy · avg 69%          4.1%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       79.1%  █··▄·····●·█ beats 3/5    very easy · avg 89%      22%  sharp · several runs
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    2.0%  █···●▄▄····▄ beats 2/5    very hard · avg 8.7%    6.6%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    48.7%  █···●·▄▄···▄ beats 2/5    easy · avg 69%          4.2%  at its level
 </pre>
 
 </details>
@@ -64,11 +64,11 @@ test             result  vs the others in its run  difficulty            counts 
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                           66.8%  ▄█········▄● beats 4/5      easy · avg 76%          12%  at its level · several runs
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>                 69.9%  █·▄·····▄●·▄ beats 4/5      easy · avg 81%          10%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>                  62.6%  ▄▁▁▂▁▄█▇●▂▃▂ beats 109/140  easy · avg 77%         8.6%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>                  62.6%  ▄▁▁▂▁▄█▇●▂▃▂ beats 109/140  easy · avg 77%         8.5%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                     75.4%  ▁▁▁▁▂▁▁▅▇█●▁ beats 114/131  medium · avg 80%       4.2%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          28.7%  ▄·█······▄·● beats 5/5      hard · avg 33%         3.6%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>                      84.5%  ▁▁▁▂▂▂▄▆█▇●▂ beats 125/135  easy · avg 87%         2.7%  typical
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 195/276  medium · avg 72%       2.1%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 195/276  medium · avg 72%       2.2%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.4%  ▁▁▂▃●▄█▆▃▂▂▁ beats 30/140   very easy · avg 94%    0.7%  blunt · noisy
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                           58.6%  ▃▃·····▃···● beats 4/5      medium · avg 54%       0.4%  blunt · at its level
 </pre>
@@ -88,7 +88,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.5
+weighted average                                   = 44.6
 </pre>
 
 <sub>Licences: ibm-granite/granite-3.3-8b-instruct model card ([Apache-2.0](../../licenses/ibm-granite--granite-3.3-8b-instruct.txt)) · ibm-granite/granite-3.1-3b-a800m-instruct model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

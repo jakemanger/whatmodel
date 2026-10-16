@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #367 of 460    5.6%      4
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #344 of 395     50%      4
-math            ▁▁●▅█▆▄█▄▁▁▁   #385 of 424*     11%      1
+coding          ▁▁▁▃●██▇▆▄▃▁    #366 of 460    5.7%      4
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #344 of 395     51%      4
+math            ▁▁●▅█▆▄█▄▁▁▁   #386 of 427*     10%      1
 </pre>
 
-<details><summary>coding · #367 of 460 · 5.6% of its score</summary>
+<details><summary>coding · #366 of 460 · 5.7% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -35,13 +35,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #344 of 395 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #344 of 395 · 51% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       14.5%  ▁▂▂▃●▆█▆▄▄▁▁ beats 35/122  hard · avg 35%          23%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       14.5%  ▁▂▂▃●▆█▆▄▄▁▁ beats 35/122  hard · avg 35%          24%  sharp
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1149.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 39/379  avg 1258                13%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1083.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 39/95   avg 1186                12%  typical
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   89.2%  ▂▂·▆·▇▃▆●▆▄▂ beats 29/45   very easy · avg 94%    2.6%  sharp · noisy
@@ -49,13 +49,13 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #385 of 424 · 11% of its score</summary>
+<details><summary>math · #386 of 427 · 10% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>   48.6%  ▂▂▂▂▃▄▅●██▆▄ beats 84/200  easy · avg 80%     11%  sharp · at its level
+<a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>   48.6%  ▂▂▂▂▃▄▅●██▆▄ beats 83/206  easy · avg 80%     10%  sharp · at its level
 </pre>
 
 </details>
@@ -65,10 +65,10 @@ test   result  vs the others in its run   difficulty      counts  why
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>    38.5%  ▁▁▁▁▂●▅▆█▃▃▁ beats 33/155  medium · avg 63%     11%  sharp
-<a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>     50.4%  ▄▁▁▂▁▄█●▃▂▃▂ beats 88/140  easy · avg 82%      7.7%  sharp · at its level
-<a href="https://arxiv.org/html/2311.11045v2">MMLU</a>              42.8%  ▁▁▁▁▁▂●▅██▆▄ beats 34/214  medium · avg 72%    6.8%  at its level
-<a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>   38.3%  ●▄▄··▄··▄█·█ beats 0/9     medium · avg 65%    5.3%  at its level
-<a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>          69.0%  ▁▃▂▄▆●▅▃▁··▁ beats 60/100  easy · avg 85%      1.9%  blunt · at its level
+<a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>     50.4%  ▄▁▁▂▁▄█●▃▂▃▂ beats 88/140  easy · avg 82%      7.6%  sharp · at its level
+<a href="https://arxiv.org/html/2311.11045v2">MMLU</a>              42.8%  ▁▁▁▁▁▂●▅██▆▄ beats 34/214  medium · avg 72%    6.9%  at its level
+<a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>   38.3%  ●▄▄··▄··▄█·█ beats 0/9     medium · avg 65%    5.4%  at its level
+<a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>          69.0%  ▁▃▂▄▆●▅▃▁··▁ beats 60/100  easy · avg 85%      1.8%  blunt · at its level
 </pre>
 
 </details>
@@ -79,7 +79,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2311.11045v2"></a><a href="https://arxiv.org/html/2311.11045v2">Orca 2: Teaching Small Language Models …</a>        6   44% ▇▇▇▇▇
+<a name="paper-2311.11045v2"></a><a href="https://arxiv.org/html/2311.11045v2">Orca 2: Teaching Small Language Models …</a>        6   43% ▇▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   26% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   13% ▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   12% ▇

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
-**score 59.6** ±0.8 · #207 of 725 · from 27 benchmark results across 13 sources
+**score 59.6** ±0.8 · #206 of 725 · from 27 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #225 of 303*    2.9%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #228 of 306*    3.0%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #202 of 460     28%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #164 of 395     21%      5
-math            ▁▁▃▅█▆●█▄▁▁▁    #148 of 424    8.2%      3
+math            ▁▁▃▅█▆▄●▄▁▁▁    #150 of 427    8.2%      3
 </pre>
 
-<details><summary>agent tasks · #225 of 303 · 2.9% of its score</summary>
+<details><summary>agent tasks · #228 of 306 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -44,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   61.6%  ▁··▁·▁▁▁▆●▇█ beats 16/45  hard · avg 29%          4.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   63.8%  █▂▁▁▂▂▂▃▅▅▅● beats 42/47  hard · avg 32%          2.3%  sharp · at its level · noisy
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     87.0%  ▃▁▁█▁▄▅▃▄●▁▄ beats 23/31  medium · avg 39%        2.3%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.9%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 30/47  hard · avg 31%          1.9%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   77.2%  ▃··▁▂▂▃▂█▃●▂ beats 41/47  medium · avg 51%        1.3%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.9%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 30/47  hard · avg 31%          2.0%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   77.2%  ▃··▁▂▂▃▂█▃●▂ beats 41/47  medium · avg 51%        1.4%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   60.9%  ▁▁▁······▁●█ beats 10/47  easy · avg 67%          0.1%  blunt · at its level · noisy
 </pre>
 
@@ -57,8 +57,8 @@ Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 3
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   43.5%  ▂·▃▅▅·▃●▆▂▂▂ beats 11/22    very hard · avg 12%    7.9%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1335.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 174/379  avg 1258               6.9%  blunt
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   43.5%  ▂·▃▅▅·▃●▆▂▂▂ beats 11/22    very hard · avg 12%    7.8%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1335.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 174/379  avg 1258               6.8%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       82.4%  ▃▃·▁▁█▇▅·▁·● beats 22/22    medium · avg 39%       4.1%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   60.9%  ▆▂▂▆▂▂▃●▂▃·▂ beats 16/22    hard · avg 18%         1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            85.8%  ▁▃▁▃▁▄▁▁█●▃▁ beats 19/22    easy · avg 78%         0.9%  typical
@@ -66,15 +66,15 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #148 of 424 · 8.2% of its score</summary>
+<details><summary>math · #150 of 427 · 8.2% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    59.2%  ▃▃▄▃▃▃●▇█▃▂▅ beats 89/193  very hard · avg 6.9%    5.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    59.2%  ▃▃▄▃▃▃●▇█▃▂▅ beats 89/195  very hard · avg 6.9%    5.3%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   98.1%  ▃▃█▂▂▆·····● beats 22/22   medium · avg 57%        1.8%  typical
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       95.5%  ▂▃··▃▂▅█▆▃▂● beats 22/22   very easy · avg 88%     1.1%  sharp · maxed out
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       95.5%  ▂▃··▃▂▅█▆▃▂● beats 22/22   very easy · avg 87%     1.2%  sharp · maxed out
 </pre>
 
 </details>
@@ -83,12 +83,12 @@ test                       result  vs the others in its run   difficulty        
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         65.3%  ▁▁▁▁▂▄▆▄●▇█▅ beats 94/208   hard · avg 38%           11%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         65.3%  ▁▁▁▁▂▄▆▄●▇█▄ beats 94/209   hard · avg 38%           11%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 88.4%  ▁▂·▁·▁▁█·▃▃● beats 22/22    easy · avg 75%          5.6%  typical
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       89.6%  ▁▄·▁▁·▅█·▄▄● beats 22/22    medium · avg 72%        5.1%  sharp
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.4%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 67/97    hard · avg 31%          4.1%  blunt · at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1197.5  ▁·▂▁▄▅●▃█▄▁▁ beats 30/62    avg 1031                4.1%  typical
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/QwQ-32B-Fireworks">ARC-AGI-1 public evaluation set (…</a>   11.3%  ▁·●▃▁·█▇▁·▇▃ beats 3/27     very hard · avg 3.8%    3.6%  sharp · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/QwQ-32B-Fireworks">ARC-AGI-1 public evaluation set (…</a>   11.3%  ▁·●▃▁·█▇▁·▇▃ beats 3/27     very hard · avg 3.8%    3.7%  sharp · noisy
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   60.6%  ▂▄▂▃█▄▃●▃▅▂▂ beats 52/81    medium · avg 56%        2.7%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 5.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 0/135    very hard · avg 5.8%    1.0%  sharp · too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   85.3%  ▃·▁▁▂▁▂▅█●▄▁ beats 84/100   medium · avg 66%        0.9%  sharp · noisy
@@ -106,7 +106,7 @@ source                                    results  share of the score
 <a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                                6   19% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   18% ▇▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   16% ▇▇
-<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   10% ▇
+<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2    9% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     2    6% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    6% ▇

@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task                vs the others          rank  counts  tests
 coding              ▁▁▁▃▅▇●▇▅▄▂▁    #264 of 529     15%      3
 chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #221 of 466*    4.8%      1
-math                ▁▂▃▆●▇▅▇▃▁▁▁    #343 of 523     23%      4
+math                ▁▁▃▆●█▅█▄▁▁▁    #344 of 526     23%      4
 vision &amp; documents  ▁▁▃▃▂●▅▄▇▇█▃    #137 of 182     16%      5
 </pre>
 
@@ -46,16 +46,16 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #343 of 523 · 23% of its score</summary>
+<details><summary>math · #344 of 526 · 23% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         40.7%  ▂▂▅▆●█▆▃▅▂▃▄ beats 33/92   hard · avg 27%           11%  sharp · at its level
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   39.8%  ▁▁▁▆█▂●▇▄··▂ beats 20/38   hard · avg 30%          6.3%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   39.8%  ▁▁▁▆█▂●▇▄··▂ beats 20/38   hard · avg 30%          6.4%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          93.4%  ▁▄·▁▄█▅▅▅●██ beats 29/43   very easy · avg 87%     3.8%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              6.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 40/193  very hard · avg 6.9%    2.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              6.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 40/195  very hard · avg 6.9%    2.1%  sharp · noisy
 </pre>
 
 </details>
@@ -81,15 +81,15 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   82.8%  ▁·▁▁▄▄▄▅●▄▂▁ beats 38/53   easy · avg 75%          17%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   19.4%  ▁▁▃▆●█▁▁·▁▁▁ beats 28/57   hard · avg 15%         8.5%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         45.9%  ▁▁▁▁▂▄●▄▅▇█▅ beats 51/208  hard · avg 38%         6.6%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         45.9%  ▁▁▁▁▂▄●▄▅▇█▄ beats 51/209  hard · avg 38%         6.6%  sharp · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   21.3%  ▂·█··●▄·▂▂·▄ beats 6/13    avg 35%                3.4%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   65.9%  ▂·▄··▂▂·●▂█▄ beats 6/13    medium · avg 51%       1.7%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    7.1%  ▃···▃·█▃●▃▅█ beats 7/13    avg 11%                0.8%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   52.4%  ▂·▂·▂●▂▄▄··▄ beats 3/13    very hard · avg 54%    0.7%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   56.4%  ▂·······●█▆▆ beats 3/13    very hard · avg 57%    0.6%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   51.1%  ▃●▃▅▃·▃·▃▅▃▃ beats 2/13    medium · avg 56%       0.3%  blunt · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   46.9%  ▃··▃▃▃·▃▅●█▅ beats 8/13    medium · avg 39%       0.2%  blunt · at its level
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   90.9%  ▁▁▂▃●▄█▆▃▂▂▁ beats 27/140  very easy · avg 94%    0.2%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   90.9%  ▁▁▂▃●▄█▆▃▂▂▁ beats 27/140  very easy · avg 94%    0.3%  blunt · maxed out · noisy
+<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   46.9%  ▃··▃▃▃·▃▅●█▅ beats 8/13    medium · avg 39%       0.3%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   46.3%  ▄▂···▂▆▂●▂·▂ beats 8/13    avg 84%                0.2%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>    7.3%  ▂▂▂··▂▂·▂▂●▆ beats 7/13    avg 14%                0.0%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VocalSound human-sound reco…</a>   49.2%  █●▄▄·█·█·█▄▄ beats 2/13    easy · avg 67%         0.0%  blunt · at its level · noisy

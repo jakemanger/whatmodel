@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-05 · closed weights
 
-**score 68.2** ±1.0 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
+**score 68.2** ±0.9 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others         rank  counts  tests
 chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #32 of 466*     10%      1
-math                ▁▂▃▆█▇▅●▃▁▁▁   #137 of 523     58%      3
+math                ▁▁▃▆██▅●▄▁▁▁   #141 of 526     59%      3
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃    #30 of 182     15%      3
 </pre>
 
@@ -32,15 +32,15 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #137 of 523 · 58% of its score</summary>
+<details><summary>math · #141 of 526 · 59% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   26.3%  ▂··▁▁▃●▄█▅▃▃ beats 18/82   very hard · avg 1.1%     40%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       2.4%  ▁●▁▂█▅▂▂▁▁▁▁ beats 5/63    very hard · avg 0.1%     13%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    68.1%  ▃▃▄▃▃▃●▇█▃▂▅ beats 98/193  very hard · avg 6.9%    4.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   26.3%  ▂··▁▁▃●▄█▆▄▃ beats 18/84   very hard · avg 1.1%     41%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       2.4%  ▁●▁▂█▅▂▃▁▁▁▁ beats 5/65    very hard · avg 0.1%     13%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    68.1%  ▃▃▄▃▃▃●▇█▃▂▅ beats 98/195  very hard · avg 6.9%    4.3%  sharp · noisy
 </pre>
 
 </details>
@@ -51,9 +51,9 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.m
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1276.0  ▁▁▂▂▂▂▄▅▅▆█● beats 120/145  avg 1058          6.9%  blunt
-<a href="https://openai.com/index/gpt-5-5-instant">CharXiv (reasoning questions) (la…</a>   81.6%  ▄··▂█··▂···● beats 8/9      hard · avg 32%    5.3%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1460.3  ▁▁▃▃▄▃▇●▅▇▄▅ beats 17/37    avg 1331          3.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1276.0  ▁▁▂▂▂▂▄▅▅▆█● beats 120/145  avg 1058          6.8%  blunt
+<a href="https://openai.com/index/gpt-5-5-instant">CharXiv (reasoning questions) (la…</a>   81.6%  ▄··▂█··▂···● beats 8/9      hard · avg 32%    5.2%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1460.3  ▁▁▃▃▄▃▇●▅▇▄▅ beats 17/37    avg 1331          3.1%  blunt
 </pre>
 
 </details>
@@ -62,8 +62,8 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                   result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            82.5%  ▁▁▁▁▂▄▆▄▅●█▅ beats 135/208  hard · avg 38%           12%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   12.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 56/135   very hard · avg 5.8%    4.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            82.5%  ▁▁▁▁▂▄▆▄▅●█▄ beats 135/209  hard · avg 38%           12%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   12.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 56/135   very hard · avg 5.8%    4.5%  sharp · noisy
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        5   75% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   20% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   19% ▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/gpt-5-5-instant">OpenAI vendor-reported benchmark scores…</a>        1    5% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 68.2

@@ -18926,5 +18926,126 @@
     "scope": "Proposed ledger id 'acl-2023-wmt-1-44-dibimt'. Table 3 'Average' DiBiMT accuracy with 1-shot prompting for LLaMA 7B/65B, BLOOM 7.1B/176B, BLOOMZ 7.1B/176B. Not used: 0/3/5-shot rows (one protocol), per-direction columns (sub-scores of the average), NMT systems, DeepL/Google Translate, Alpaca 7B (checkpoint not named), fine-tuned (LoRA) rows (Table 5), FLORES (Table 6, translation metrics).",
     "icon": "aclanthology.org",
     "license_url": "/licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt"
+  },
+  {
+    "id": "paper-2607.21482v2-nextsteps-dataprep",
+    "name": "Agentic coding without the cloud: evaluating open-weight LLMs on longitudinal data preparation tasks (arXiv:2607.21482v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2607.21482v2",
+      "arxiv.org/abs/2607.21482v2",
+      "arxiv.org/pdf/2607.21482v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2607.21482v2",
+    "quote": "arXiv abs page for 2607.21482v2 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-16). Authors (UCL Centre for Advanced Research Computing, UCL Centre for Longitudinal Studies, University of Bristol) ran every model themselves: 'Each task was executed autonomously by an AI agent ... We opted for Hugging Face's SmolAgents ... Each task was run a total of three times with a temperature of 0.8.' No author is affiliated with a model maker.",
+    "attribution": "Mack Nixon, Liam Wright, Yevgeniya Kovalchuk, Alison Fang-Wei Wu, Martin Danka, Andy Boyd, David Bann, 'Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks', arXiv:2607.21482v2 (2026), CC BY 4.0. Changes: Table 3 'Balanced Performance (%)' column transcribed, divided by 100, labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 3 (accuracy threshold 0.95 categorical / 1e-4 numeric), Balanced Performance column, all seven models with valid output. HTML rendering unavailable; read from the PDF.",
+    "verdict": "allowed",
+    "checked": "2026-10-16",
+    "evidence_url": "https://arxiv.org/abs/2607.21482v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2601.20789v3-sera",
+    "name": "SERA: Soft-Verified Efficient Repository Agents (arXiv:2601.20789v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2601.20789v3",
+      "arxiv.org/abs/2601.20789v3"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2601.20789v3",
+    "quote": "arXiv abs page for 2601.20789v3 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-16). Table 1 caption: 'Standard deviations reported where available from our replications using 3 random seeds.' Only rows with a ± (the authors' own replications) are used; rows without ± are copied from other reports. Authors are at Allen Institute for AI, University of Washington and CMU (no maker affiliation for Mistral or Zhipu).",
+    "attribution": "Ethan Shen, Daniel Tormoen, Saurabh Shah, Ali Farhadi, Tim Dettmers, 'SERA: Soft-Verified Efficient Repository Agents', arXiv:2601.20789v3 (2026), CC BY 4.0. Changes: selected replicated cells of Table 1 transcribed, divided by 100, labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 1 SWE-bench Verified, 64K evaluation context, rows marked with ± (Ai2 replications, 3 seeds): Devstral-Small-2, GLM-4.5-Air, GLM-4.7-Flash.",
+    "verdict": "allowed",
+    "checked": "2026-10-16",
+    "evidence_url": "https://arxiv.org/abs/2601.20789v3",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2608.18409v2-schedbench",
+    "name": "Improving Natural-Language Combinatorial-Optimization Accuracy in Resource-Constrained Language Models via Formal Abstractions (arXiv:2608.18409v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.18409v2",
+      "arxiv.org/abs/2608.18409v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2608.18409v2",
+    "quote": "arXiv abs page for 2608.18409v2 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-16). Table 1 caption: '‡ marks new results'; text: 'We include previously reported DIRECT and SOLVER results from SCHEDBench, with newly generated results marked explicitly'. Only ‡ cells in the solver-mediated column are used. Authors are an independent researcher and UC Berkeley.",
+    "attribution": "Shrenil Shaun Sharma, Avi Sharma, 'Improving Natural-Language Combinatorial-Optimization Accuracy in Resource-Constrained Language Models via Formal Abstractions', arXiv:2608.18409v2 (2026), CC BY 4.0. Changes: ‡-marked solver-mediated feasibility cells of Table 1 transcribed, divided by 100. No endorsement.",
+    "scope": "Table 1, Solver-Mediated Generation 'Feas. (%)' column, ‡ (new) rows of plain models only; SDDL rows (a method, not a model) excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-16",
+    "evidence_url": "https://arxiv.org/abs/2608.18409v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.05395v1-kopa",
+    "name": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe (arXiv:2609.05395v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.05395v1",
+      "arxiv.org/abs/2609.05395v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.05395v1",
+    "quote": "arXiv abs page for 2609.05395v1 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-16). Table 1 caption: 'BFCL scores are computed via the official evaluation repository. The bottom block reports our fine-tuned models.' Baselines are the authors' own runs. Authors are at LG CNS, an LG Group affiliate of EXAONE's maker LG AI Research, so the EXAONE row is recorded as by: lab.",
+    "attribution": "Dain Kim, Eungi Cho, Kyumin Kim, Shinyeong Noh, Kyuseong Lim (LG CNS), 'Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe', arXiv:2609.05395v1 (2026), CC BY 4.0. Changes: Table 1 KOPA-Bench pass@1 and BFCL Multi-Turn cells for the untuned models transcribed. No endorsement.",
+    "scope": "Table 1, untuned models only (the authors' fine-tuned '(Ours)' rows excluded): KOPA-Bench pass@1 (four-rollout mean) and BFCL Multi-Turn.",
+    "verdict": "allowed",
+    "checked": "2026-10-16",
+    "evidence_url": "https://arxiv.org/abs/2609.05395v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2604.19444v1-calibration",
+    "name": "Unsupervised Confidence Calibration for Reasoning LLMs from a Single Generation (arXiv:2604.19444v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.19444v1",
+      "arxiv.org/abs/2604.19444v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2604.19444v1",
+    "quote": "arXiv abs page for 2604.19444v1 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-16). Appendix A: 'We use the vLLM library to produce all language model outputs ... all models and datasets use the exact same prompt, sampling parameters ... test data with a temperature of 0.6, TopP=0.95, and TopK=20'; 'For each dataset, we sample 1000 examples.' Authors are at Columbia University.",
+    "attribution": "Thomas Zollo, Jimmy Wang, Richard Zemel, 'Unsupervised Confidence Calibration for Reasoning LLMs from a Single Generation', arXiv:2604.19444v1 (2026), CC BY 4.0. Changes: Table 6 GSM8K accuracy column transcribed, labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 6 'Accuracy for all model/dataset combinations', GSM8K column; OpenReasoning-Nemotron-7B row not used (not in the catalogue).",
+    "verdict": "allowed",
+    "checked": "2026-10-16",
+    "evidence_url": "https://arxiv.org/abs/2604.19444v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2604.18224v1-webcompass",
+    "name": "WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models (arXiv:2604.18224v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.18224v1",
+      "arxiv.org/abs/2604.18224v1"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2604.18224v1",
+    "quote": "arXiv abs page for 2604.18224v1 links http://creativecommons.org/licenses/by-sa/4.0/ (checked 2026-10-16). Section 4.2: 'Table 3 presents the overall and per-task-type scores for all evaluated models'; 'Overall is the arithmetic mean of all nine dimension scores.' Benchmark authors' own runs. Authors are at Nanjing University and Kuaishou Technology (no Alibaba, Anthropic, Google or OpenAI affiliation). Share-alike: derived data must stay under CC BY-SA.",
+    "attribution": "Xinping Lei, Xinyu Che, Junqi Xiong, Chenchen Zhang, Yukai Huang, Chenyu Zhou et al. (Nanjing University, Kuaishou Technology), 'WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models', arXiv:2604.18224v1 (2026), CC BY-SA 4.0. Changes: Table 3 'Overall' column transcribed, divided by 100. No endorsement.",
+    "scope": "Table 3 Overall column, all ten models.",
+    "verdict": "allowed",
+    "checked": "2026-10-16",
+    "evidence_url": "https://arxiv.org/abs/2604.18224v1",
+    "icon": "arxiv.org"
   }
 ]

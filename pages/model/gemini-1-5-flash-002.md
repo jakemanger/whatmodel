@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #180 of 343*    0.7%      1
-coding              ▁▁▁▃▅▇●▇▅▄▂▁    #290 of 529     56%      5
+agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #183 of 346*    0.7%      1
+coding              ▁▁▁▃▅▇●▇▅▄▂▁    #291 of 529     55%      5
 chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #249 of 466*    4.3%      1
-math                ▁▂▃▆█●▅▇▃▁▁▁   #273 of 523*     11%      2
+math                ▁▁▃▆█●▅█▄▁▁▁   #276 of 526*     11%      2
 vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #118 of 182*    3.0%      1
 </pre>
 
-<details><summary>agent tasks · #180 of 343 · 0.7% of its score</summary>
+<details><summary>agent tasks · #183 of 346 · 0.7% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #290 of 529 · 56% of its score</summary>
+<details><summary>coding · #291 of 529 · 55% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -60,14 +60,14 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #273 of 523 · 11% of its score</summary>
+<details><summary>math · #276 of 526 · 11% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               61.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 51/92   hard · avg 27%          9.3%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   16.3%  ▃▃▄▃●▃▇▇█▃▂▅ beats 55/193  very hard · avg 6.9%    1.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   16.3%  ▃▃▄▃●▃▇▇█▃▂▅ beats 55/195  very hard · avg 6.9%    1.8%  sharp · noisy
 </pre>
 
 </details>
@@ -87,8 +87,8 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-flash-002_5shots.zip">MMLU-Pro</a>                             64.0%  ▃▂▅█▃·●▃▅··▂ beats 16/23    medium · avg 54%       6.8%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 58/208   hard · avg 38%         5.8%  sharp · at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-flash-002_5shots.zip">MMLU-Pro</a>                             64.0%  ▃▂▅█▃·●▃▅··▂ beats 16/23    medium · avg 54%       6.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▄●▄▅▇█▄ beats 58/209   hard · avg 38%         5.8%  sharp · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   21.4%  ▂·█··●▄·▂▂·▄ beats 5/13     avg 35%                3.0%  typical
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 49.6%  ▄█·●·▄▄·▄··▄ beats 3/7      medium · avg 40%       2.3%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/gemini-1.5-flash-002_google_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   77.6%  ▂·▂▂▂▆▅●▆▆▃█ beats 14/29    easy · avg 74%         2.0%  typical
@@ -113,7 +113,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   41% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   40% ▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   17% ▇▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1    9% ▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    8% ▇

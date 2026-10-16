@@ -6,7 +6,7 @@
 
 FuseAI · released 2024-11 · 7.62B params
 
-**score 60.2** ±1.5 · #222 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.2** ±1.5 · #221 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

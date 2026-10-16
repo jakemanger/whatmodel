@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #261 of 395*     22%      2
-math            ▁▁▃▅█▆●█▄▁▁▁    #165 of 424     48%      3
+math            ▁▁▃▅█▆●█▄▁▁▁    #168 of 427     48%      3
 </pre>
 
 <details><summary>chat &amp; writing · #261 of 395 · 22% of its score</summary>
@@ -26,15 +26,15 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>    3.2%  ●·▃▅▅·▃█▆▂▂▂ beats 0/22   very hard · avg 12%     18%  sharp
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>    3.2%  ●·▃▅▅·▃█▆▂▂▂ beats 0/22   very hard · avg 12%     17%  sharp
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   23.6%  ▆▂▂●▂▂▃█▂▃·▂ beats 6/22   hard · avg 18%         4.3%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #165 of 424 · 48% of its score</summary>
+<details><summary>math · #168 of 427 · 48% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
@@ -49,7 +49,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 125/310  hard · avg 51%     29%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 125/311  hard · avg 51%     29%  sharp · at its level
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   77% ▇▇▇▇▇▇▇▇▇
+<a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   78% ▇▇▇▇▇▇▇▇▇
 <a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 54.8

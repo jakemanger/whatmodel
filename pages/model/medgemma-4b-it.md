@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · 4.3B params · health-ai-developer-foundations
 
-**score 47.4** ±2.5 · #420 of 725 · from 4 benchmark results across 4 sources
+**score 47.5** ±2.5 · #415 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -41,7 +41,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   15% ▇▇
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   14% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 47.4
+weighted average                                   = 47.5
 </pre>
 
 <sub>Licences: Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

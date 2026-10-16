@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 45.9** ±1.5 · #599 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.0** ±1.5 · #598 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                          result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.5594 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 19/52  avg 42.785 WB-Score     24%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.5594 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 19/52  avg 42.742 WB-Score     24%  sharp
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   75% ▇▇▇▇▇▇▇▇▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>              1   24% ▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 45.9
+weighted average                              = 46.0
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE))</sub>

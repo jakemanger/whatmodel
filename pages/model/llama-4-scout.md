@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁    #274 of 303     11%      4
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁    #277 of 306     11%      4
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #193 of 395*     10%      1
-math                ▁▁▃▅█●▄█▄▁▁▁   #229 of 424*     26%      2
+math                ▁▁▃▅█●▄█▄▁▁▁   #234 of 427*     26%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #100 of 147*    8.9%      2
 web search          ▂▁▂▆▄●▃▃▁▁·▁     #33 of 80*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #274 of 303 · 11% of its score</summary>
+<details><summary>agent tasks · #277 of 306 · 11% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      28.1%  ▁▁▁▂█●▅▅▆▂▂▂ beats 26/77   hard · avg 31%          4.3%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      28.1%  ▁▁▁▂█●▅▅▆▂▂▂ beats 26/77   hard · avg 31%          4.4%  at its level
 <a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    5.8%  █·▃●·█▅▅▅▅▃▅ beats 4/18    very hard · avg 5.3%    3.3%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              45.4%  ▁▁▁▁▁●▅█▅▄▁▁ beats 24/114  medium · avg 51%        2.1%  blunt · at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   62.9%  ●▃▃▃▆▅▆▅█▂▅▂ beats 0/31    easy · avg 78%          1.6%  typical
@@ -39,7 +39,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>chat &amp; writing · #193 of 395 · 10% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -48,14 +48,14 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #229 of 424 · 26% of its score</summary>
+<details><summary>math · #234 of 427 · 26% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               62.3%  ▂▂▅▆▄█●▃▅▂▃▄ beats 52/92   hard · avg 27%           21%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    7.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 45/193  very hard · avg 6.9%    4.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    7.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 45/195  very hard · avg 6.9%    4.9%  sharp · noisy
 </pre>
 
 </details>
@@ -87,8 +87,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         51.8%  ▁▁▁▁▂▄●▄▅▇█▅ beats 73/208   hard · avg 38%          14%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   75.0%  ▁▂▂▂▃█▃▆●▄▂▃ beats 69/95    medium · avg 64%       6.2%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         51.8%  ▁▁▁▁▂▄●▄▅▇█▄ beats 73/209   hard · avg 38%          14%  sharp · at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   75.0%  ▁▂▂▂▃█▃▆●▄▂▃ beats 69/95    medium · avg 64%       6.3%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>   993.6  ▁·●▁▄▅▅▃█▄▁▁ beats 3/62     avg 1031               5.9%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   35.1%  ▁▁▁▁▁▂▂▃▄●█▃ beats 45/97    hard · avg 31%         5.6%  blunt · at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   69.0%  ▂▄▂▃█▄▃▆▃●▂▂ beats 70/81    medium · avg 56%       4.2%  blunt · at its level
@@ -107,7 +107,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   41% ▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   40% ▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   17% ▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    6% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    6% ▇

@@ -41,7 +41,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 201/276  medium · avg 72%       6.1%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   88.1%  ▃·▁▁▂▁▂▅█▇●▁ beats 88/100   medium · avg 66%       5.0%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.7%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 104/146  easy · avg 82%         2.9%  noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.5%  ▁▁▂▃●▄█▆▃▂▂▁ beats 31/140   very easy · avg 94%    1.5%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.5%  ▁▁▂▃●▄█▆▃▂▂▁ beats 31/140   very easy · avg 94%    1.6%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.1%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 32/98    very easy · avg 90%    0.0%  blunt
 </pre>
 

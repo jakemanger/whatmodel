@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 35.1** ±1.3 · #620 of 725 · from 8 benchmark results across 3 sources
+**score 35.1** ±1.3 · #621 of 725 · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              20.2%  ●▁▁▄▂▅▇█▆▂▂▂ beats 0/58   medium · avg 48%     15%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   33.4%  ▁▁▁▁●▁▁▂▄█▄▃ beats 8/146  easy · avg 82%      2.7%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   33.4%  ▁▁▁▁●▁▁▂▄█▄▃ beats 8/146  easy · avg 82%      2.8%  at its level · noisy
 </pre>
 
 </details>

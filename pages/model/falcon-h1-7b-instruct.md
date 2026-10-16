@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>        2   77% ▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1   19% ▇▇
-prior: pull toward the middle                   4% ▇
+prior: pull toward the middle                   3% ▇
 weighted average                              = 47.6
 </pre>
 

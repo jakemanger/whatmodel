@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 55.4** ±1.6 · #271 of 725 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 55.4** ±1.5 · #270 of 725 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #159 of 303*     25%      2
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #251 of 460*    6.0%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #162 of 306*     25%      2
+coding              ▁▁▁▃▆█●▇▆▄▃▁   #251 of 460*    5.9%      1
 math                █··········●       #1 of 2*     23%      2
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #108 of 147*     16%      2
 </pre>
 
-<details><summary>agent tasks · #159 of 303 · 25% of its score</summary>
+<details><summary>agent tasks · #162 of 306 · 25% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,13 +34,13 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #251 of 460 · 6.0% of its score</summary>
+<details><summary>coding · #251 of 460 · 5.9% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>   28.1%  ▅····▃·●▃▅█▃ beats 3/12   hard · avg 26%    6.0%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>   28.1%  ▅····▃·●▃▅█▃ beats 3/12   hard · avg 26%    5.9%  at its level · small run
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ test                result  vs the others in its run  difficulty      counts  wh
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>   16.0%  ▁·▁▁●▂▅▆█▇▅▁ beats 9/133  very hard · avg 12%     15%  sharp · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    82.0%  ▁▃▂▃▅●▅▇█▅▂▁ beats 23/84  easy · avg 79%         7.8%  small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>   16.0%  ▁·▁▁●▂▅▆█▇▅▁ beats 9/133  very hard · avg 12%     16%  sharp · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    82.0%  ▁▃▂▃▅●▅▇█▅▂▁ beats 23/84  easy · avg 79%         7.7%  small run
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>   57.1%  ▁▁▁▁▂▄▅●███▄ beats 104/310  hard · avg 45%     19%  sharp · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>   57.1%  ▁▁▁▁▂▄▅●███▄ beats 104/311  hard · avg 45%     19%  sharp · at its level · small run
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>           87.4%  ▁▁▁▁▁▂▂▅██▆● beats 199/214  easy · avg 81%     10%  small run
 </pre>
 

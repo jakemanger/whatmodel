@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-05 · 16.8B params (2.75B active) · mit
 
-**score 52.7** ±6.1 · #402 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.7** ±6.0 · #402 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #262 of 337*     84%      1
+agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #264 of 340*     84%      1
 </pre>
 
-<details><summary>agent tasks · #262 of 337 · 84% of its score</summary>
+<details><summary>agent tasks · #264 of 340 · 84% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 

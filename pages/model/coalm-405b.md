@@ -6,7 +6,7 @@
 
 UIUC ConvAI & Oumi (CoALM) · released 2025-02 · 405.85B params · cc-by-nc-4.0
 
-**score 59.6** ±6.2 · #236 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.6** ±6.2 · #235 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #207 of 337*     83%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #211 of 340*     83%      1
 </pre>
 
-<details><summary>agent tasks · #207 of 337 · 83% of its score</summary>
+<details><summary>agent tasks · #211 of 340 · 83% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 

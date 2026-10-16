@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 3.09B params · qwen-research
 
-**score 44.4** ±0.6 · #484 of 725 · from 32 benchmark results across 11 sources
+**score 44.4** ±0.6 · #485 of 725 · from 32 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #257 of 303*    0.8%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #326 of 460     13%      5
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #260 of 306*    0.8%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #327 of 460     13%      5
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #273 of 395*    2.5%      1
-math            ▁▁▃●█▆▄█▄▁▁▁    #336 of 424     21%      4
+math            ▁▁▃●█▆▄█▄▁▁▁    #340 of 427     21%      4
 </pre>
 
-<details><summary>agent tasks · #257 of 303 · 0.8% of its score</summary>
+<details><summary>agent tasks · #260 of 306 · 0.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -33,9 +33,9 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #326 of 460 · 13% of its score</summary>
+<details><summary>coding · #327 of 460 · 13% of its score</summary>
 
-Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #273 of 395 · 2.5% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -59,14 +59,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #336 of 424 · 21% of its score</summary>
+<details><summary>math · #340 of 427 · 21% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                                 53.5%  ▅▃●█·▅···▃·▃ beats 3/10   easy · avg 71%         8.0%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                                80.6%  █·●▄▄█···█·▄ beats 3/10   very easy · avg 90%    7.3%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                                80.6%  █·●▄▄█···█·▄ beats 3/10   very easy · avg 90%    7.1%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   25.5%  ▁▁▁▆●▂▇▇▄··▂ beats 14/38  hard · avg 30%         2.7%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                 61.7%  █▄██···▄●▄·▄ beats 8/10   medium · avg 61%       2.7%  at its level
 </pre>
@@ -78,12 +78,12 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   64.3%  ▁·▁▁●▄▄▅█▄▂▁ beats 6/53     easy · avg 75%          18%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                        82.6%  ▂▂▂●▂···▄··▂ beats 3/10     very easy · avg 89%    7.0%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                        82.6%  ▂▂▂●▂···▄··▂ beats 3/10     very easy · avg 89%    6.9%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                                 65.0%  █▄●▄▄▄·▄▄··▄ beats 4/10     easy · avg 75%         5.7%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                       56.2%  ██●·█▄·▄▄··▄ beats 4/10     medium · avg 71%       4.5%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                       56.2%  ██●·█▄·▄▄··▄ beats 4/10     medium · avg 71%       4.6%  sharp · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           79.3%  ▂··●█▂·▂···▄ beats 2/10     easy · avg 85%         3.7%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                             44.7%  █▄▄·●▄▄▄·▄·▄ beats 5/10     medium · avg 54%       3.2%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   50.1%  ▁▂▂●▃█▃▆▅▄▂▃ beats 16/95    medium · avg 64%       2.9%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   50.1%  ▁▂▂●▃█▃▆▅▄▂▃ beats 16/95    medium · avg 64%       3.0%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        55.9%  █▄▄█●··█···▄ beats 6/10     medium · avg 63%       2.9%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    4.8%  ▁●▃▆██▁▁·▁▁▁ beats 2/57     hard · avg 15%         2.4%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      36.1%  ▁··▁▁▂●▆▅▆█▆ beats 9/70     medium · avg 61%       2.3%  at its level

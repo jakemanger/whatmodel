@@ -6,7 +6,7 @@
 
 iFLYTEK (SparkLLM) · released 2026-08 · 4.11B params · apache-2.0
 
-**score 65.8** ±1.1 · #132 of 725 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.7** ±1.1 · #132 of 725 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #117 of 303     42%      9
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #118 of 306     42%      9
 coding          ▁▁▁▃▆██●▆▄▃▁   #137 of 460     25%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #98 of 395*    0.3%      1
-math            ▁▁▃▅█▆▄●▄▁▁▁    #83 of 424     27%      3
+math            ▁▁▃▅█▆▄●▄▁▁▁    #80 of 427     27%      3
 web search      █·█▄██·▄▄·▄●     #1 of 13*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #117 of 303 · 42% of its score</summary>
+<details><summary>agent tasks · #118 of 306 · 42% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>coding · #137 of 460 · 25% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -67,14 +67,14 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #83 of 424 · 27% of its score</summary>
+<details><summary>math · #80 of 427 · 27% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md), [EXAONE 4.5 33B](exaone-4-5-33b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026 (lab)</a>   81.2%  █·▄··▄··▄█·● beats 7/7    hard · avg 31%       14%  sharp
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench (lab)</a>      74.2%  ▄▄···▄·▄··█● beats 6/6    hard · avg 31%      7.5%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026 (lab)</a>   81.2%  █·▄··▄··▄█·● beats 7/7    hard · avg 31%       13%  sharp
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench (lab)</a>      74.2%  ▄▄···▄·▄··█● beats 6/6    hard · avg 32%      7.4%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">AIME 2026 (lab)</a>            90.7%  ▁▁▁▂▁▂▆●▆▂·▁ beats 23/49  medium · avg 52%    5.8%  sharp
 </pre>
 
@@ -108,7 +108,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                  results  share of the score
 <a name="card3-xhtoken-spark-x2-5-4b"></a><a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">XHToken/Spark-X2.5-4B model card (lab)</a>       17  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                      0% ▇
-weighted average                                 = 65.8
+weighted average                                 = 65.7
 </pre>
 
 <sub>Licences: XHToken/Spark-X2.5-4B model card ([Apache-2.0](https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md))</sub>

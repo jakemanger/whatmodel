@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▁▁▁   #337 of 424*     65%      2
+math  ▁▁▃●█▆▄█▄▁▁▁   #341 of 427*     65%      2
 </pre>
 
-<details><summary>math · #337 of 424 · 65% of its score</summary>
+<details><summary>math · #341 of 427 · 65% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 27%           59%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/193  very hard · avg 6.9%    6.3%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/195  very hard · avg 6.9%    6.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   37.5%  ▁▁▁▁▂●▆▄▅▇█▅ beats 32/208  hard · avg 38%     33%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   37.5%  ▁▁▁▁▂●▆▄▅▇█▄ beats 32/209  hard · avg 38%     33%  sharp
 </pre>
 
 </details>

@@ -39,7 +39,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 31.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 30/61    medium · avg 38%     39%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/microsoft--Phi-3-medium-4k-instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   68.4%  ▂·▂▂▂●▅▆▆▆▃█ beats 5/29     easy · avg 74%      7.2%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      57.1%  ▁··▁▁▂▂▆▅●█▆ beats 34/70    medium · avg 61%    6.6%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 194/276  medium · avg 72%    2.5%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 194/276  medium · avg 72%    2.6%  at its level · noisy
 </pre>
 
 </details>

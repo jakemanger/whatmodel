@@ -6,7 +6,7 @@
 
 Google · released 2026-06 · 25.82B params (3.8B active) · apache-2.0
 
-**score 58.4** ±1.4 · comparison only: no current run option verified · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.5** ±1.4 · comparison only: no current run option verified · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #194 of 343*    9.1%      1
+agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #195 of 346*    9.0%      1
 coding              ▁▁▁▃▅▇█●▅▄▂▁   #214 of 529*    9.3%      1
-math                ▁▂▃▆█●▅▇▃▁▁▁   #210 of 523*     19%      2
+math                ▁▁▃▆██●█▄▁▁▁   #213 of 526*     18%      2
 vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃    #117 of 182     15%      3
 </pre>
 
-<details><summary>agent tasks · #194 of 343 · 9.1% of its score</summary>
+<details><summary>agent tasks · #195 of 346 · 9.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">τ²-bench aggregate (lab)</a>   56.2%  ▁▁▁·▂▂●▃▃▅█▂ beats 7/37   medium · avg 36%    9.1%  at its level · small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">τ²-bench aggregate (lab)</a>   56.2%  ▁▁▁·▂▂●▃▃▅█▂ beats 7/37   medium · avg 36%    9.0%  at its level · small run
 </pre>
 
 </details>
@@ -44,13 +44,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #210 of 523 · 19% of its score</summary>
+<details><summary>math · #213 of 526 · 18% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
 <pre>
 test               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">AIME 2026 (lab)</a>     69.1%  ▁▁▁▂●▂▆█▆▂·▁ beats 8/49   medium · avg 50%     11%  sharp · at its level · small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">AIME 2026 (lab)</a>     69.1%  ▁▁▁▂●▂▆█▆▂·▁ beats 8/49   medium · avg 50%     12%  sharp · at its level · small run
 <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MATH-Vision (lab)</a>   70.5%  ▁▁·▁··▄▁●▇▇█ beats 8/24   medium · avg 53%    7.0%  at its level · small run
 </pre>
 
@@ -63,8 +63,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MATH-Vision (lab)</a>          70.5%  ▁▁·▁··▄▁●▇▇█ beats 8/24   medium · avg 53%    7.0%  at its level · small run
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMMU Pro (lab)</a>             54.3%  ▂▃▁▃▆●▃▇▇██▅ beats 17/52  medium · avg 45%    5.0%  at its level · small run
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">OmniDocBench 1.5 ↓ (lab)</a>   31.9%  █●█·····████ beats 1/6    avg 36%             2.5%  blunt · small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMMU Pro (lab)</a>             54.3%  ▂▃▁▃▆●▃▇▇██▅ beats 17/52  medium · avg 45%    5.1%  at its level · small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">OmniDocBench 1.5 ↓ (lab)</a>   31.9%  █●█·····████ beats 1/6    avg 37%             2.5%  blunt · small run
 </pre>
 
 </details>
@@ -73,12 +73,12 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">GPQA Diamond (lab)</a>             73.2%  ▁▁▁▁▂▄▅▅●██▄ beats 165/310  hard · avg 48%           17%  sharp · at its level · small run
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MedXPertQA MM (lab)</a>            49.0%  ▂···▂·▃··●▂█ beats 6/13     hard · avg 33%           10%  sharp · at its level · small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">GPQA Diamond (lab)</a>             73.2%  ▁▁▁▁▂▄▅▅●██▄ beats 165/311  hard · avg 48%           17%  sharp · at its level · small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MedXPertQA MM (lab)</a>            49.0%  ▂···▂·▃··●▂█ beats 6/13     hard · avg 32%           10%  sharp · at its level · small run
 <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMLU-Pro (lab)</a>                 77.6%  ▁▁·▁▁▁▃▂▄●█▁ beats 111/188  medium · avg 59%        8.0%  at its level · small run
 <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MRCR v2 8-needle, 128k (lab)</a>   32.0%  █▄●█·▄···▄·▄ beats 3/8      hard · avg 21%          7.0%  at its level · small run
 <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMMLU (lab)</a>                    81.5%  ▂▁▁▂▃▂▄▄▅●█▃ beats 33/46    medium · avg 67%        6.8%  at its level · small run
-<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">Humanity's Last Exam (lab)</a>     11.0%  ▁▁▁▃●▆▇██▆▁▃ beats 20/104   very hard · avg 3.9%    5.7%  small run
+<a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">Humanity's Last Exam (lab)</a>     11.0%  ▁▁▁▃●▆▇██▆▁▃ beats 20/104   very hard · avg 3.8%    5.7%  small run
 </pre>
 
 </details>
@@ -91,7 +91,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-google-diffusiongemma-26b-a4b-it"></a><a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">google/diffusiongemma-26B-A4B-it model …</a>       12   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 58.4
+weighted average                                   = 58.5
 </pre>
 
 <sub>Licences: google/diffusiongemma-26B-A4B-it model card ([Apache-2.0](https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md))</sub>

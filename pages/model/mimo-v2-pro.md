@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▂▆█▆▅▄●▃▃▁    #74 of 343     43%      6
+agent tasks     ▁▁▂▆█▆▅▄●▃▂▁    #74 of 346     43%      6
 coding          ▁▁▁▃▅▇█▇▅●▂▁    #76 of 529     51%      3
 chat &amp; writing  ▁▁▁▃▅▄▆█▇▇●▃   #62 of 466*     15%      1
 web search      ●··········█      #2 of 2*    3.5%      1
 </pre>
 
-<details><summary>agent tasks · #74 of 343 · 43% of its score</summary>
+<details><summary>agent tasks · #74 of 346 · 43% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1432.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 52/119   avg 970                 26%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1432.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 52/119   avg 969                 26%  sharp
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   55.0%  ▃·▁▁▁▂▂▃●▇▃▁ beats 30/55    very hard · avg 10%     17%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">SWE-bench Verified (lab)</a>             78.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 117/131  hard · avg 25%         8.4%  sharp · small run
 </pre>

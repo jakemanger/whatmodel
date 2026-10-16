@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 3B params · bigscience-bloom-rail-1.0
 
-**score 26.7** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 26.6** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,8 +34,8 @@ test             result  vs the others in its run  difficulty        counts  why
 test                    result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>         51.8%  █··▁▃·●··▁·▃ beats 9/12   medium · avg 68%     10%  noisy
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>               73.0%  ▃··█▅▃▃●·▃▃▃ beats 9/12   easy · avg 91%      4.5%  at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>     36.4%  ▅▃▅··▃···▃▃● beats 9/10   hard · avg 37%      1.1%  blunt · too hard for it · noisy
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>   85.2%  █·▂··▃··▂●▂▃ beats 9/12   easy · avg 88%      1.0%  blunt · at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>     36.4%  ▅▃▅··▃···▃▃● beats 9/10   hard · avg 37%      1.0%  blunt · too hard for it · noisy
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        4   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    1% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 26.7
+weighted average                                   = 26.6
 </pre>
 
 <sub>Licences: Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt))</sub>

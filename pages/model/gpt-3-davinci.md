@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂●▆█▇▅▇▃▁▁▁   #479 of 523    6.7%      2
+math  ▁▁●▆██▅█▄▁▁▁   #484 of 526    6.6%      2
 </pre>
 
-<details><summary>math · #479 of 523 · 6.7% of its score</summary>
+<details><summary>math · #484 of 526 · 6.6% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty        counts  why
-<a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ▂▂▂▂●▄▅▇██▆▄ beats 34/200  medium · avg 62%    4.5%  sharp · small run · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 48%    2.2%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ▂▂▂▂●▄▅▇██▆▄ beats 34/206  medium · avg 61%    4.4%  sharp · small run · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 47%    2.2%  sharp · too hard for it
 </pre>
 
 </details>
@@ -37,16 +37,16 @@ test   result  vs the others in its run   difficulty        counts  why
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        43.5%  ▄····▄···█▄● beats 5/5     easy · avg 78%          14%  sharp · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                           72.0%  ▄·▄·▄▄▄··█·● beats 7/7     easy · avg 87%          10%  at its level · several runs
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            78.0%  ▄·█·█··▄▄··● beats 7/7     easy · avg 83%         8.3%  at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            78.0%  ▄·█·█··▄▄··● beats 7/7     easy · avg 82%         8.2%  at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        58.2%  █·····▂▂▃●▄▄ beats 26/38   very easy · avg 93%    8.0%  sharp · at its level · small run · seve…
-<a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 39.7%  ▁···▁··●▁▅▅█ beats 3/18    easy · avg 74%         7.1%  several runs
+<a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 39.7%  ▁···▁··●▁▅▅█ beats 3/18    easy · avg 74%         7.2%  several runs
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           33.6%  ▅·······█··● beats 5/5     hard · avg 49%         4.8%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   17.1%  █·●······▄·▄ beats 2/4     medium · avg 63%       2.9%  typical
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       33.6%  ▂▂▂●·▅·▃▂█▃▃ beats 3/18    medium · avg 60%       2.4%  sharp
-<a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             76.2%  ▄···▄··█·▄·● beats 5/5     easy · avg 87%         2.4%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5     easy · avg 67%         2.8%  at its level
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       33.6%  ▂▂▂●·▅·▃▂█▃▃ beats 3/18    medium · avg 60%       2.5%  sharp
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     22.7%  ······●····· beats 0/5     very hard · avg 25%    2.4%  too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             76.2%  ▄···▄··█·▄·● beats 5/5     easy · avg 87%         2.4%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   20.2%  ●········▄·█ beats 0/3     easy · avg 73%         2.2%  at its level
-<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5     medium · avg 64%       2.1%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 24/103  medium · avg 78%       2.1%  at its level
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   75.0%  █·▄··█··█··● beats 7/7     very easy · avg 88%    2.1%  blunt · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 1 (prompted)</a>              36.3%  █··▂·······● beats 5/5     hard · avg 46%         2.1%  sharp · too hard for it · noisy
@@ -55,13 +55,13 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">COPA</a>                                 80.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 30/67   easy · avg 92%         1.6%  at its level
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>    6.0%  ●······█··██ beats 0/3     medium · avg 46%       1.2%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       0.0%  ●▁▁▁▂▄▄▃▅█▅▁ beats 0/68    very hard · avg 13%    1.2%  too hard for it
-<a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   70.8%  ▃·●·····▃▃▃█ beats 1/7     easy · avg 87%         1.1%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted)</a>              36.9%  ▃······▃█··● beats 5/5     hard · avg 43%         1.1%  too hard for it
-<a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted)</a>              37.5%  ██·███·····● beats 5/5     very hard · avg 43%    1.0%  too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   70.8%  ▃·●·····▃▃▃█ beats 1/7     easy · avg 87%         1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted)</a>              37.5%  ██·███·····● beats 5/5     very hard · avg 43%    1.1%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions English…</a>   45.0%  █····●··█··█ beats 1/3     easy · avg 70%         1.0%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>    0.6%  ●······█··▄▄ beats 0/4     medium · avg 50%       1.0%  typical
-<a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 94.9%  ██····███··● beats 5/5     very easy · avg 98%    1.0%  blunt · maxed out
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>   50.0%  ●·········▄▄ beats 1/3     medium · avg 68%       1.0%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 94.9%  ██····███··● beats 5/5     very easy · avg 98%    1.0%  blunt · maxed out
 <a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy)</a>      26.7%  ▃······●···▅ beats 1/5     very hard · avg 35%    0.8%  blunt · too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                42.6%  ▄····▄█▄···● beats 5/5     medium · avg 56%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-acl.551.pdf">SelfAware unanswerable-question d…</a>   45.7%  ●▄▄▄·······▄ beats 0/5     medium · avg 63%       0.8%  blunt · at its level
@@ -91,8 +91,8 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-522"></a><a href="https://aclanthology.org/2023.emnlp-main.522.pdf">Increasing Probability Mass on Answer C…</a>        2    3% ▇
 <a name="acl-2023-emnlp-main-927"></a><a href="https://aclanthology.org/2023.emnlp-main.927.pdf">It Ain't Over: A Multi-aspect Diverse M…</a>        1    3% ▇
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    2% ▇
-<a name="acl-2023-resourceful-1-13"></a><a href="https://aclanthology.org/2023.resourceful-1.13.pdf">Bridging the Resource Gap: Exploring th…</a>        1    2% ▇
 <a name="acl-2023-nlrse-1-2"></a><a href="https://aclanthology.org/2023.nlrse-1.2.pdf">Exploring the Curious Case of Code Prom…</a>        2    2% ▇
+<a name="acl-2023-resourceful-1-13"></a><a href="https://aclanthology.org/2023.resourceful-1.13.pdf">Bridging the Resource Gap: Exploring th…</a>        1    2% ▇
 <a name="acl-2023-emnlp-main-397"></a><a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval: A Large-Scale Hallucination E…</a>        3    1% ▇
 <a name="acl-2023-acl-long-550"></a><a href="https://aclanthology.org/2023.acl-long.550.pdf">Say What You Mean! Large Language Model…</a>        1    1% ▇
 <a name="acl-2022-emnlp-main-340"></a><a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions: Generalizati…</a>        1    1% ▇
@@ -104,7 +104,7 @@ prior: pull toward the middle                        0% ▇
 weighted average                                   = 31.6
 </pre>
 
-<sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-758-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Making Language Models Better Reasoners with Step-Aware Verifier ([CC BY 4.0](../../licenses/acl-2023-acl-long-291-CC-BY-4-0.txt)) · GLM-130B: An Open Bilingual Pre-trained Model ([CC BY 4.0](../../licenses/paper-2210.02414v2-glm130b-CC-BY-4-0.txt)) · Self-Consistency of Large Language Models under Ambiguity ([CC BY 4.0](../../licenses/acl-2023-blackboxnlp-1-7-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · It Ain't Over: A Multi-aspect Diverse Math Word Problem Dataset ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-927-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · Bridging the Resource Gap: Exploring the Efficacy of English and Multilingual LLMs for Swedish ([CC BY 4.0](../../licenses/acl-2023-resourceful-1-13-CC-BY-4-0.txt)) · Exploring the Curious Case of Code Prompts ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-2-CC-BY-4-0.txt)) · HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-397-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks ([CC BY 4.0](../../licenses/acl-2022-emnlp-main-340-CC-BY-4-0.txt)) · API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-187-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · Self-Instruct: Aligning Language Models with Self-Generated Instructions ([CC BY 4.0](../../licenses/acl-2023-acl-long-754-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>
+<sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-758-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Making Language Models Better Reasoners with Step-Aware Verifier ([CC BY 4.0](../../licenses/acl-2023-acl-long-291-CC-BY-4-0.txt)) · GLM-130B: An Open Bilingual Pre-trained Model ([CC BY 4.0](../../licenses/paper-2210.02414v2-glm130b-CC-BY-4-0.txt)) · Self-Consistency of Large Language Models under Ambiguity ([CC BY 4.0](../../licenses/acl-2023-blackboxnlp-1-7-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · It Ain't Over: A Multi-aspect Diverse Math Word Problem Dataset ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-927-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · Exploring the Curious Case of Code Prompts ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-2-CC-BY-4-0.txt)) · Bridging the Resource Gap: Exploring the Efficacy of English and Multilingual LLMs for Swedish ([CC BY 4.0](../../licenses/acl-2023-resourceful-1-13-CC-BY-4-0.txt)) · HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-397-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks ([CC BY 4.0](../../licenses/acl-2022-emnlp-main-340-CC-BY-4-0.txt)) · API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-187-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · Self-Instruct: Aligning Language Models with Self-Generated Instructions ([CC BY 4.0](../../licenses/acl-2023-acl-long-754-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▂▁   #244 of 554*     98%      1
+coding  ▁▁▁▂▅▇●▇▅▄▂▁   #244 of 554*     98%      1
 </pre>
 
 <details><summary>coding · #244 of 554 · 98% of its score</summary>
@@ -25,7 +25,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1167.0  ▁●▄▃▅█▄▇▆▄▁▁ beats 2/119  avg 970        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1167.0  ▁●▄▃▅█▄▇▆▄▁▁ beats 2/119  avg 969        98%  sharp
 </pre>
 
 </details>

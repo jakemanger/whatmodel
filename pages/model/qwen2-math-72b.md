@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 50.6** ±1.2 · #358 of 725 · from 4 benchmark results across 2 sources
+**score 50.7** ±1.2 · #354 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▄▁▁▁   #240 of 424     37%      3
+math  ▁▁▃▅█●▄█▄▁▁▁   #241 of 427     37%      3
 </pre>
 
-<details><summary>math · #240 of 424 · 37% of its score</summary>
+<details><summary>math · #241 of 427 · 37% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                40.1%  ▃·····▃··█▅● beats 7/8    hard · avg 34%          16%  at its level
 <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       96.7%  ▄···█▄▄·▄·▄● beats 8/8    very easy · avg 92%     13%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 74%         8.2%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 73%         8.4%  at its level
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ source                         results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>            1   62% ▇▇▇▇▇▇▇
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   37% ▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 50.6
+weighted average                        = 50.7
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0))</sub>

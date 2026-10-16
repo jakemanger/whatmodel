@@ -6,7 +6,7 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 70.7** ±1.2 · #74 of 725 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.7** ±1.2 · #73 of 725 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #66 of 303     29%      5
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #67 of 306     29%      5
 coding       ▁▁▁▃▆██▇▆●▃▁   #62 of 460*    8.3%      2
-math         ▁▁▃▅█▆▄█●▁▁▁   #62 of 424*     11%      2
+math         ▁▁▃▅█▆▄█●▁▁▁   #64 of 427*     11%      2
 </pre>
 
-<details><summary>agent tasks · #66 of 303 · 29% of its score</summary>
+<details><summary>agent tasks · #67 of 306 · 29% of its score</summary>
 
-Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.5%    9.1%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.6%    9.0%  sharp · at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 1.9%    8.9%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 19%          5.2%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       70.4%  ▄··········● beats 3/5    very hard · avg 15%     3.8%  sharp · at its level · noisy
@@ -42,20 +42,20 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   92.4%  ▄······▄▄▄·● beats 5/5    medium · avg 49%       4.5%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   92.4%  ▄······▄▄▄·● beats 5/5    medium · avg 49%       4.6%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             70.4%  ▄··········● beats 3/5    very hard · avg 15%    3.8%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #62 of 424 · 11% of its score</summary>
+<details><summary>math · #64 of 427 · 11% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    medium · avg 65%    7.2%  sharp · maxed out
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 31%      4.0%  sharp · noisy
+test                      result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    easy · avg 65%    7.2%  sharp · maxed out
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 31%    4.0%  sharp · noisy
 </pre>
 
 </details>

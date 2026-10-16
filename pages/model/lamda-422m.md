@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 0.422B params · proprietary
 
-**score 0.9** ±3.0 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 0.7** ±3.0 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▂▃▆█▇▅▇▃▁▁▁   #521 of 523*    4.5%      1
+math  ●▁▃▆██▅█▄▁▁▁   #524 of 526*    4.8%      1
 </pre>
 
-<details><summary>math · #521 of 523 · 4.5% of its score</summary>
+<details><summary>math · #524 of 526 · 4.8% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    0.4%  ●·▅▃▃▃·▃·▃▃▅ beats 0/12   easy · avg 67%    4.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    0.4%  ●·▅▃▃▃·▃·▃▃▅ beats 0/12   easy · avg 66%    4.8%  sharp · too hard for it
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     46.4%  ●·····▅▃▃▅▃█ beats 0/12   medium · avg 70%       5.1%  too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   50.0%  ●·····▃·▁·▄▁ beats 2/12   medium · avg 81%       3.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  20.1%  ●······▁·▁▁▃ beats 2/12   easy · avg 87%         2.9%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                        8.3%  ●▁·▁▁·····▂▁ beats 3/12   medium · avg 48%       0.3%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                        8.3%  ●▁·▁▁·····▂▁ beats 3/12   hard · avg 48%         0.3%  sharp · too hard for it
 </pre>
 
 </details>
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2201.11903v6"></a><a href="https://arxiv.org/html/2201.11903v6">Chain-of-Thought Prompting Elicits Reas…</a>        9   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 0.9
+weighted average                                   = 0.7
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt))</sub>

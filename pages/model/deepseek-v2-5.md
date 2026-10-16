@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁    #187 of 460     32%      4
+coding          ▁▁▁▃▆██●▆▄▃▁    #188 of 460     32%      4
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #214 of 395*    9.3%      2
-math            ▁▁▃▅●▆▄█▄▁▁▁    #282 of 424     15%      3
+math            ▁▁▃▅●▆▄█▄▁▁▁    #284 of 427     15%      3
 </pre>
 
-<details><summary>coding · #187 of 460 · 32% of its score</summary>
+<details><summary>coding · #188 of 460 · 32% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Command A Reasoning (08-2025)](command-a-reasoning-08-2025.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                        result  vs the others in its run    difficulty      
 
 </details>
 
-<details><summary>math · #282 of 424 · 15% of its score</summary>
+<details><summary>math · #284 of 427 · 15% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 

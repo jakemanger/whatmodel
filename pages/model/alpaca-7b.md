@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂●▆█▇▅▇▃▁▁▁   #466 of 523*     28%      1
+math  ▁▁●▆██▅█▄▁▁▁   #474 of 526*     27%      1
 </pre>
 
-<details><summary>math · #466 of 523 · 28% of its score</summary>
+<details><summary>math · #474 of 526 · 27% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
+Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://aclanthology.org/2023.emnlp-main.216.pdf">GSM8K</a>    8.6%  █··●······▄▄ beats 2/5    easy · avg 67%     28%  sharp
+<a href="https://aclanthology.org/2023.emnlp-main.216.pdf">GSM8K</a>    8.6%  █··●······▄▄ beats 2/5    easy · avg 66%     27%  sharp
 </pre>
 
 </details>
@@ -35,11 +35,11 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">MMLU</a>                                 42.9%  ▄···▄●·█···▄ beats 2/5    easy · avg 79%          26%  several runs
-<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.6%  ▄·▄···●·▄··▄ beats 2/5    easy · avg 87%          18%  sharp · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            76.9%  ▄·▄●··▄····▄ beats 2/5    very easy · avg 92%    9.2%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.6%  ▄·▄···●·▄··▄ beats 2/5    easy · avg 86%          18%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            76.9%  ▄·▄●··▄····▄ beats 2/5    very easy · avg 92%    9.1%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   62.9%  █·█········● beats 2/2    medium · avg 77%       5.7%  small run
-<a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   27.6%  ●···▄▄·▄▄▄·▄ beats 1/7    medium · avg 51%       4.1%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   15.2%  ▄······●··▄▄ beats 1/4    medium · avg 50%       3.7%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   27.6%  ●···▄▄·▄▄▄·▄ beats 1/7    medium · avg 51%       4.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   15.2%  ▄······●··▄▄ beats 1/4    medium · avg 50%       3.8%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">TruthfulQA MC1</a>                       19.5%  █·····●····█ beats 1/2    medium · avg 50%       3.5%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">TruthfulQA MC2</a>                       39.6%  ▃···●·▃····▃ beats 1/5    medium · avg 56%       0.7%  blunt · at its level
 </pre>
@@ -52,8 +52,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2023-emnlp-main-183"></a><a href="https://aclanthology.org/2023.emnlp-main.183.pdf">Enhancing Chat Language Models by Scali…</a>        4   47% ▇▇▇▇▇▇
-<a name="acl-2023-emnlp-main-216"></a><a href="https://aclanthology.org/2023.emnlp-main.216.pdf">INFORM : Information eNtropy based mult…</a>        1   28% ▇▇▇
+<a name="acl-2023-emnlp-main-183"></a><a href="https://aclanthology.org/2023.emnlp-main.183.pdf">Enhancing Chat Language Models by Scali…</a>        4   48% ▇▇▇▇▇▇
+<a name="acl-2023-emnlp-main-216"></a><a href="https://aclanthology.org/2023.emnlp-main.216.pdf">INFORM : Information eNtropy based mult…</a>        1   27% ▇▇▇
 <a name="acl-2023-emnlp-main-844"></a><a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Aligning Large Language Models through …</a>        3   16% ▇▇
 <a name="acl-2023-emnlp-main-483"></a><a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SCITAB: A Challenging Benchmark for Com…</a>        1    4% ▇
 <a name="acl-2023-emnlp-main-187"></a><a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank: A Comprehensive Benchmark for…</a>        1    4% ▇

@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 44.4** ±1.4 · #485 of 725 · from 13 benchmark results across 2 sources
+**score 44.4** ±1.4 · #486 of 725 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #243 of 395*     12%      1
-math            ▁▁▃▅●▆▄█▄▁▁▁   #294 of 424*    8.3%      2
+math            ▁▁▃▅●▆▄█▄▁▁▁   #294 of 427*    8.3%      2
 </pre>
 
 <details><summary>chat &amp; writing · #243 of 395 · 12% of its score</summary>
@@ -26,18 +26,18 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures (lab)</a>   79.6%  █··▄▄·●····▄ beats 4/5    easy · avg 84%     12%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures (lab)</a>   79.6%  █··▄▄·●····▄ beats 4/5    easy · avg 83%     12%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #294 of 424 · 8.3% of its score</summary>
+<details><summary>math · #294 of 427 · 8.3% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       63.6%  ▃····●·█···▃ beats 1/5    easy · avg 79%    7.2%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       63.6%  ▃····●·█···▃ beats 1/5    easy · avg 79%    7.1%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (l…</a>   82.4%  █·█··█●█···█ beats 3/5    easy · avg 83%    1.1%  blunt
 </pre>
 
@@ -52,11 +52,11 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   22.2%  █··█●█··█··█ beats 2/5     hard · avg 31%          10%  typical
 <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (lab)</a>                       26.0%  ██●···██···█ beats 2/5     medium · avg 42%        10%  typical
 <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (lab)</a>    60.3%  ▄··█●··▄···▄ beats 3/5     easy · avg 69%         8.6%  at its level
-<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (l…</a>   55.4%  ▄·█····●···▄ beats 4/5     medium · avg 59%       7.8%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (l…</a>   55.4%  ▄·█····●···▄ beats 4/5     medium · avg 59%       7.7%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid…</a>   74.3%  ▄·▄·●···▄··▄ beats 3/5     easy · avg 80%         5.8%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.5%  ▃·▁▁▂▁▂●█▇▄▁ beats 39/100  medium · avg 66%       3.7%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 54/146  easy · avg 82%         3.0%  at its level · noisy
-<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (lab)</a>                       60.8%  █·····██●·██ beats 3/5     easy · avg 71%         1.9%  blunt · at its level
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (lab)</a>                       60.8%  █·····██●·██ beats 3/5     easy · avg 71%         2.0%  blunt · at its level
 </pre>
 
 </details>

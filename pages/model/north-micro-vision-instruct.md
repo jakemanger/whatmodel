@@ -39,12 +39,12 @@ Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-on
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions (la…</a>   60.0%  ●·▄·······▄█ beats 1/5    easy · avg 78%       19%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar (lab)</a>                         51.8%  ▄▄●█·······▄ beats 2/5    medium · avg 61%     12%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>            68.7%  ●·····▃··▃·▃ beats 0/5    easy · avg 79%      7.4%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>            68.7%  ●·····▃··▃·▃ beats 0/5    easy · avg 79%      7.3%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench (lab)</a>                 61.5%  ▄▄·●·····█·▄ beats 2/5    easy · avg 65%      5.9%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench (lab)</a>                     72.5%  ▄··▄··●··▄·▄ beats 2/5    easy · avg 84%      3.5%  noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA (lab)</a>                    62.2%  ▄···█··●▄··▄ beats 3/5    easy · avg 68%      3.1%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench (lab)</a>                       79.2%  █··███·●···█ beats 4/5    easy · avg 81%      2.3%  blunt
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                      77.5%  █···▄▄···●·▄ beats 4/5    easy · avg 81%      1.6%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                      77.5%  █···▄▄···●·▄ beats 4/5    easy · avg 81%      1.7%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA (lab)</a>                        80.8%  ▄······▄··█● beats 4/5    easy · avg 79%      1.0%  blunt · at its level · noisy
 </pre>
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU (lab)</a>                           50.4%  ▄·····●▄··▄█ beats 1/5    medium · avg 68%     16%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                       30.7%  █●·······▄▄▄ beats 2/5    medium · avg 49%     14%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified…</a>   37.3%  ▄·●··█▄····▄ beats 1/5    medium · avg 57%    5.9%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified…</a>   37.3%  ▄·●··█▄····▄ beats 1/5    medium · avg 57%    5.9%  at its level
 </pre>
 
 </details>

@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▆█●▅▇▃▁▁▁   #270 of 523*     66%      2
+math  ▁▁▃▆█●▅█▄▁▁▁   #280 of 526*     65%      2
 </pre>
 
-<details><summary>math · #270 of 523 · 66% of its score</summary>
+<details><summary>math · #280 of 526 · 65% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          52.4%  ▃····▃··▃··● beats 3/5    easy · avg 66%     56%  sharp · at its level
-<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   27.6%  ▄··▄··▄·▄··● beats 4/5    hard · avg 32%     10%  at its level
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          52.4%  ▃····▃··▃··● beats 3/5    easy · avg 65%     54%  sharp · at its level
+<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   27.6%  ▄··▄··▄·▄··● beats 4/5    hard · avg 32%     11%  at its level
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                result  vs the others in its run  difficulty      counts  wh
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   53.9%  ▄······▄▄·●█ beats 3/5    medium · avg 62%     23%  sharp · at its level
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   53.9%  ▄······▄▄·●█ beats 3/5    medium · avg 62%     24%  sharp · at its level
 <a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>         12.9%  ▄·····▄█··●▄ beats 4/5    hard · avg 15%       10%  typical
 </pre>
 

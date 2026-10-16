@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 60.0** ±1.0 · #199 of 725 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.0** ±1.0 · #201 of 725 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #191 of 303*     20%      2
+agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #192 of 306*     20%      2
 coding       ▁▁▁▃▆█●▇▆▄▃▁   #204 of 460*    9.1%      2
-math         ▁▁▃▅█▆▄●▄▁▁▁    #120 of 424     38%      4
+math         ▁▁▃▅█▆▄●▄▁▁▁    #124 of 427     38%      4
 </pre>
 
-<details><summary>agent tasks · #191 of 303 · 20% of its score</summary>
+<details><summary>agent tasks · #192 of 306 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (lab)</a>      25.4%  ▁·▅●▆▅▂▃▃▂▃▁ beats 15/89  very hard · avg 11%      10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>    4.9%  ▂▅▆●▂▆▂▂█▅▅▂ beats 8/27   very hard · avg 1.2%     10%  sharp · too hard for it
+<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>    4.9%  ▂▅▆●▂▆▂▂█▅▅▂ beats 8/27   very hard · avg 1.3%     10%  sharp · too hard for it
 </pre>
 
 </details>
@@ -39,22 +39,22 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   68.6%  █·▄·▄····●·▄ beats 4/5    medium · avg 41%        7.2%  at its level
-<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>           3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.7%    1.9%  too hard for it
+<a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   68.6%  █·▄·▄····●·▄ beats 4/5    medium · avg 41%        7.3%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>           3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.7%    1.8%  too hard for it
 </pre>
 
 </details>
 
-<details><summary>math · #120 of 424 · 38% of its score</summary>
+<details><summary>math · #124 of 427 · 38% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified) (…</a>   64.9%  ▄··▄▄·▄····● beats 5/5    hard · avg 28%          12%  sharp · at its level
-<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                      88.1%  █▄···█·····● beats 5/5    medium · avg 62%        11%  sharp
-<a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                      83.1%  ▄·█··▄····●▄ beats 4/5    medium · avg 51%        10%  sharp
-<a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                       97.4%  ▄·▄·····█··● beats 5/5    very easy · avg 92%    4.4%  maxed out
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                      88.1%  █▄···█·····● beats 5/5    medium · avg 61%        11%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                      83.1%  ▄·█··▄····●▄ beats 4/5    medium · avg 51%        11%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                       97.4%  ▄·▄·····█··● beats 5/5    very easy · avg 92%    4.3%  maxed out
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>                   61.3%  ●·········▂▂ beats 2/5    hard · avg 43%           16%  sharp · at its level
-<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.6%    7.7%  typical
+<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.6%    7.8%  typical
 <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 56%        6.8%  at its level
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 33%          2.2%  at its level
 </pre>

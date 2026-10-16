@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #114 of 303     15%      4
-coding              ▁▁▁▃▆██●▆▄▃▁   #161 of 460     28%      3
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #115 of 306     15%      4
+coding              ▁▁▁▃▆██●▆▄▃▁   #163 of 460     28%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #78 of 395*     11%      1
-math                ▁▁▃▅█▆▄●▄▁▁▁    #89 of 424     29%      4
+math                ▁▁▃▅█▆▄●▄▁▁▁    #91 of 427     29%      4
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #78 of 147*    7.9%      1
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #32 of 80*    4.5%      1
 </pre>
 
-<details><summary>agent tasks · #114 of 303 · 15% of its score</summary>
+<details><summary>agent tasks · #115 of 306 · 15% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      69.6%  ▁▁▁▂██▅▅▆▂●▂ beats 74/77  hard · avg 31%          5.0%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      69.6%  ▁▁▁▂██▅▅▆▂●▂ beats 74/77  hard · avg 31%          5.2%  at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   13.1%  ▃●▂▃·▆▃▂█▅▅▂ beats 2/25   very hard · avg 4.2%    5.0%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>    1.2%  ●··▃·▃██▃▃▃█ beats 0/14   very hard · avg 2.6%    3.4%  sharp · noisy
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     82.7%  ▂··▄···▂▄▄█● beats 13/13  medium · avg 45%        1.9%  at its level
@@ -38,14 +38,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #161 of 460 · 28% of its score</summary>
+<details><summary>coding · #163 of 460 · 28% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1241.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 10/119  avg 970                  19%  sharp
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   71.6%  ▁··▁·▁▁▁▆█●█ beats 33/45   hard · avg 29%          5.6%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1241.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 10/119  avg 969                  19%  sharp
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   71.6%  ▁··▁·▁▁▁▆█●█ beats 33/45   hard · avg 29%          5.7%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>    1.2%  ●··▃·▃██▃▃▃█ beats 0/14    very hard · avg 2.6%    3.4%  sharp · noisy
 </pre>
 
@@ -62,7 +62,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #89 of 424 · 29% of its score</summary>
+<details><summary>math · #91 of 427 · 29% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
 
@@ -102,7 +102,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   33.7%  ▁▁▂▁▃▄█▆●▅▂▃ beats 26/39  very hard · avg 21%    7.5%  at its level
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   33.7%  ▁▁▂▁▃▄█▆●▅▂▃ beats 26/39  very hard · avg 21%    7.6%  at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   80.8%  ▁●▁▂▅█▂▃▄▃▁▁ beats 6/98   very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -122,7 +122,7 @@ source                                    results  share of the score
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    5% ▇
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1    3% ▇
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI</a>                                      1    2% ▇
-<a name="paper-2603.26996v1-formalproofbench"></a><a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench</a>                                1    1% ▇
+<a name="paper-2603.26996v1-formalproofbench"></a><a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench</a>                                1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 65.9

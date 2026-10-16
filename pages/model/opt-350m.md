@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 0.35B params · opt-175b-license-noncommercial
 
-**score 1.2** ±1.3 · #716 of 725 · from 23 benchmark results across 7 sources
+**score 0.9** ±1.3 · #716 of 725 · from 23 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,12 +26,12 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 74.8%  ▂··▂●▂▂▆▃▃█▂ beats 2/19    very easy · avg 98%     19%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 64.4%  ▂·▄●·▄▂▆▂▄█▄ beats 4/19    easy · avg 87%          16%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   45.2%  ▃··▅▃▃●▅▅███ beats 5/19    very easy · avg 87%     11%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           52.3%  ▄····●▆▂▄▆▆█ beats 2/19    easy · avg 88%         8.1%  too hard for it · several runs
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           52.3%  ▄····●▆▂▄▆▆█ beats 2/19    easy · avg 88%         8.0%  too hard for it · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   32.3%  ▂·●·▂█▄▄█▄▂▆ beats 1/21    easy · avg 74%         6.6%  blunt
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     63.2%  ▂▂●▂·▂·▆·▂█▂ beats 2/14    easy · avg 89%         6.1%  blunt
 <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        20.7%  ●··▁·▁▁·▁▂▁▂ beats 1/19    easy · avg 81%         5.6%  sharp · too hard for it · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.617.pdf">COPA</a>                                 72.0%  ▁·▁▁▁▅●█▆▂▁▁ beats 18/67   very easy · avg 96%    2.4%  at its level · small run
-<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   65.0%  █··········● beats 3/4     easy · avg 76%         0.4%  blunt · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   65.0%  █··········● beats 3/4     easy · avg 75%         0.4%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   23.3%  ●▁▁▁▁▁▁▁▂█▅▁ beats 13/276  medium · avg 72%       0.3%  too hard for it · noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-350m/opt-350m.json">SuperGLUE WSC (prompted)</a>             36.5%  ●·······▂·▂▃ beats 2/8     medium · avg 68%       0.2%  blunt · too hard for it · noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-350m/opt-350m.json">LogiQA (harness)</a>                     21.0%  ●··········▁ beats 6/14    very hard · avg 25%    0.0%  too hard for it · noisy
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    0% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 1.2
+weighted average                                   = 0.9
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Revisiting Block-based Quantisation: What is Important for Sub-8-bit LLM Inference? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-617-CC-BY-4-0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

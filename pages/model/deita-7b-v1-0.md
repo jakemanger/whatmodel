@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 124/276  medium · avg 72%    7.7%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 124/276  medium · avg 72%    7.8%  at its level · noisy
 </pre>
 
 </details>

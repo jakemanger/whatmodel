@@ -6,7 +6,7 @@
 
 TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
-**score 40.2** ±1.8 · #557 of 725 · from 4 benchmark results across 3 sources
+**score 40.2** ±1.8 · #558 of 725 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.0%  ▅····▃▅·██·● beats 13/13  medium · avg 52%     20%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   49.3%  ▃▅▃··▅▃·█▃▃● beats 12/13  medium · avg 61%     11%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   49.3%  ▃▅▃··▅▃·█▃▃● beats 12/13  medium · avg 60%     11%  at its level
 </pre>
 
 </details>

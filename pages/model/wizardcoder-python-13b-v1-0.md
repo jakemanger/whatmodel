@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 43.5** ±2.4 · #502 of 725 · from 3 benchmark results across 2 sources
+**score 43.5** ±2.4 · #503 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-V
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>   64.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 120/205  easy · avg 79%       56%  sharp · at its level · small run
+<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>   64.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 120/205  easy · avg 78%       56%  sharp · at its level · small run
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        36.5%  ▁··▁▅●█▇▁··▁ beats 7/22     medium · avg 52%     21%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        41.3%  ▁·▂▃▁●▁▂···▁ beats 13/22    medium · avg 51%     20%  blunt · at its level
 </pre>

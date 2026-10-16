@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  ▁▁▁●▆██▇▆▄▃▁   #411 of 460     19%      3
-math    ▁▁▃▅█●▄█▄▁▁▁   #216 of 424     17%      2
+math    ▁▁▃▅█●▄█▄▁▁▁   #228 of 427     16%      2
 </pre>
 
 <details><summary>coding · #411 of 460 · 19% of its score</summary>
@@ -33,13 +33,13 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>math · #216 of 424 · 17% of its score</summary>
+<details><summary>math · #228 of 427 · 16% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   55.5%  ▆▂▅█▅●▃▆···▂ beats 18/25  easy · avg 82%     13%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   55.5%  ▆▂▅█▅●▃▆···▂ beats 18/25  easy · avg 82%     12%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>    13.8%  █·█·█·█●···█ beats 4/5    hard · avg 32%    3.9%  typical
 </pre>
 
@@ -51,18 +51,18 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 64.5%  ▁▁▃▃▄█▄▁●··▁ beats 19/25    easy · avg 82%          12%  at its level · several runs
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                             36.3%  ▃▂●█▃·█▃▅··▂ beats 4/23     medium · avg 54%        11%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.0%  ▁·····▂█▂●·▁ beats 20/25    medium · avg 74%        10%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.0%  ▁·····▂█▂●·▁ beats 20/25    medium · avg 74%        11%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                        56.5%  ▄···▄···█●·▄ beats 4/5      easy · avg 77%         8.0%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           80.4%  █··█·█·██··● beats 5/5      easy · avg 86%         4.3%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      25.4%  █·····▄▄●··▄ beats 4/5      medium · avg 41%       4.2%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             73.0%  █···██··█·█● beats 5/5      easy · avg 81%         3.1%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           80.4%  █··█·█·██··● beats 5/5      easy · avg 86%         4.2%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      25.4%  █·····▄▄●··▄ beats 4/5      medium · avg 41%       4.1%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             73.0%  █···██··█·█● beats 5/5      easy · avg 82%         3.5%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                            85.4%  █···██···██● beats 5/5      very easy · avg 91%    2.8%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 139/276  medium · avg 72%       1.7%  at its level · noisy
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                             79.9%  ▄···▄···●▄·▄ beats 3/5      easy · avg 86%         1.5%  blunt
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   59.0%  ▃·▁▁▂▁▂●█▇▄▁ beats 33/100   medium · avg 66%       1.3%  sharp · at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 101/146  easy · avg 82%         1.1%  at its level · noisy
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                                 82.6%  ▄····▄··█●·▄ beats 4/5      easy · avg 87%         1.1%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 101/146  easy · avg 82%         1.2%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   62.6%  ▂··▁▃▂▂▂█▅▁● beats 24/25    medium · avg 59%       1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                                 82.6%  ▄····▄··█●·▄ beats 4/5      easy · avg 86%         1.1%  blunt · at its level
 <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 97.6%  ▅·▃·▃··█▃··● beats 8/8      easy · avg 92%         0.3%  noisy
 </pre>
 

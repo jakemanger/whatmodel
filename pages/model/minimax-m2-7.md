@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 67.1** ±0.7 · #109 of 725 · from 31 benchmark results across 8 sources
+**score 67.0** ±0.7 · #110 of 725 · from 31 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁     #79 of 303     21%      7
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁     #79 of 306     21%      7
 coding          ▁▁▁▃▆██▇●▄▃▁     #91 of 460     29%      7
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #93 of 395*    4.8%      1
-math            ▁▁▃▅█▆●█▄▁▁▁   #166 of 424*    4.5%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #93 of 395*    4.7%      1
+math            ▁▁▃▅█▆●█▄▁▁▁   #169 of 427*    4.5%      2
 web search      ▂▁▂●▄█▃▃▁▁·▁     #67 of 80*    2.2%      1
 </pre>
 
-<details><summary>agent tasks · #79 of 303 · 21% of its score</summary>
+<details><summary>agent tasks · #79 of 306 · 21% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>                   55.5%  █··▄●·▄····▄ beats 3/6    very hard · avg 13%    4.0%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                           54.1%  ▄·▄▄···●··█▄ beats 3/6    hard · avg 16%         2.2%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                             66.1%  ●····▄·█·▄·█ beats 0/6    medium · avg 41%       2.0%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">τ³-bench telecom (tau2-bench ≥ v1…</a>   89.6%  ●·▄···▄·▄·█▄ beats 0/6    easy · avg 78%         1.3%  maxed out
+<a href="https://arxiv.org/html/2606.15007v1">τ³-bench telecom (tau2-bench ≥ v1…</a>   89.6%  ●·▄···▄·▄·█▄ beats 0/6    easy · avg 79%         1.3%  maxed out
 <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 tasks…</a>   49.0%  ●··▄·▄·█···▄ beats 0/5    hard · avg 28%         0.9%  blunt · at its level
 </pre>
 
@@ -46,10 +46,10 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1397.0  ▁▂▄▃▅●▄▇▆▄▁▁ beats 44/119  avg 970             8.1%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1397.0  ▁▂▄▃▅●▄▇▆▄▁▁ beats 44/119  avg 969             8.0%  sharp
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>                   75.3%  █····██·█●██ beats 4/6     hard · avg 20%      6.6%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>               71.8%  ▄··▄●···▄▄·█ beats 2/6     hard · avg 30%      4.4%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unspecif…</a>   77.2%  ●█···█··████ beats 0/6     medium · avg 45%    2.9%  typical
+<a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unspecif…</a>   77.2%  ●█···█··████ beats 0/6     medium · avg 45%    3.0%  typical
 <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>                  38.3%  ●····▃··█·▃▃ beats 0/6     hard · avg 18%      2.4%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025)</a>      69.8%  ●··█····▄▄·█ beats 0/6     medium · avg 46%    2.2%  typical
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>          47.0%  ▄·····▄█▄●·▄ beats 5/6     hard · avg 16%      2.0%  at its level
@@ -57,24 +57,24 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #93 of 395 · 4.8% of its score</summary>
+<details><summary>chat &amp; writing · #93 of 395 · 4.7% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1415.0  ▁▁▁▂▃▃▃▆▆●█▃ beats 264/379  avg 1258      4.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1415.0  ▁▁▁▂▃▃▃▆▆●█▃ beats 264/379  avg 1258      4.7%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #166 of 424 · 4.5% of its score</summary>
+<details><summary>math · #169 of 427 · 4.5% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>   68.3%  ●····▄·▄▄·█▄ beats 0/6    medium · avg 41%    2.4%  typical
+<a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>   68.3%  ●····▄·▄▄·█▄ beats 0/6    medium · avg 41%    2.3%  typical
 <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>         88.8%  ▄·●·▄▄··█··▄ beats 1/6    medium · avg 56%    2.1%  sharp · noisy
 </pre>
 
@@ -97,14 +97,14 @@ test        result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                         87.4%  ▄·····▄█●▄·▄ beats 4/6    hard · avg 43%           10%  sharp
 <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>            86.6%  ▄●▄▄·▄·····▄ beats 1/6    hard · avg 47%          8.3%  sharp
-<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>                 23.1%  ●··█▄··▄·▄·▄ beats 0/6    very hard · avg 5.7%    7.5%  several runs
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>                 23.1%  ●··█▄··▄·▄·▄ beats 0/6    very hard · avg 5.6%    7.5%  several runs
 <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                             81.9%  ●·····▄▄▄·▄█ beats 0/6    medium · avg 52%        4.8%  typical
 <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                     87.3%  ▃······●··█▃ beats 1/6    medium · avg 61%        4.2%  typical
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)</a>    75.7%  ▃······●▃▃·▃ beats 1/6    medium · avg 43%        2.6%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                            78.4%  ●·····▄·▄▄█▄ beats 0/6    medium · avg 57%        2.5%  typical
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                            78.4%  ●·····▄·▄▄█▄ beats 0/6    medium · avg 57%        2.4%  typical
 <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, over…</a>   46.1%  ●▄··▄▄·▄█▄██ beats 0/11   hard · avg 25%          2.4%  blunt · at its level
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        33.8%  ▃·▅▅●·▅█▅▃▃▃ beats 5/17   very hard · avg 11%     2.2%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>         74.6%  ▄●·▄··▄▄···█ beats 1/6    medium · avg 46%        2.1%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>         74.6%  ▄●·▄··▄▄···█ beats 1/6    medium · avg 46%        2.0%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                       42.5%  ●··········█ beats 0/6    hard · avg 27%          1.8%  at its level
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset</a>         75.2%  ▃······▃▃▃●▃ beats 6/7    hard · avg 21%          1.4%  at its level · noisy
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>           28.4%  ▄··▄▄●···█·█ beats 3/7    very hard · avg 8.9%    1.3%  at its level
@@ -120,7 +120,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2606.15007v1"></a><a href="https://arxiv.org/html/2606.15007v1">NVIDIA</a>                                         16   52% ▇▇▇▇▇▇
+<a name="report-2606.15007v1"></a><a href="https://arxiv.org/html/2606.15007v1">NVIDIA</a>                                         16   53% ▇▇▇▇▇▇
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report</a>                         7   26% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   13% ▇▇
 <a name="card-final-ling-3-0-flash"></a><a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash model card</a>           2    3% ▇
@@ -129,7 +129,7 @@ source                                    results  share of the score
 <a name="paper-2605.22535v1"></a><a href="https://arxiv.org/html/2605.22535v1">TerminalWorld: Benchmarking Agents on R…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 67.1
+weighted average                                   = 67.0
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · inclusionAI/Ling-3.0-flash model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 22.9** ±0.7 · #688 of 725 · from 37 benchmark results across 8 sources
+**score 22.8** ±0.7 · #688 of 725 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁●▃▆██▇▆▄▃▁   #451 of 460*    1.8%      1
-math    ▁▁●▅█▆▄█▄▁▁▁   #394 of 424*    2.1%      1
+math    ▁▁●▅█▆▄█▄▁▁▁   #401 of 427*    2.0%      1
 </pre>
 
 <details><summary>coding · #451 of 460 · 1.8% of its score</summary>
@@ -31,13 +31,13 @@ test       result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #394 of 424 · 2.1% of its score</summary>
+<details><summary>math · #401 of 427 · 2.0% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2306.04751v2">GSM8K</a>    3.5%  ●···▄▄····▄▄ beats 1/5    easy · avg 73%    2.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2306.04751v2">GSM8K</a>    3.5%  ●···▄▄····▄▄ beats 1/5    easy · avg 71%    2.0%  sharp · too hard for it
 </pre>
 
 </details>
@@ -47,19 +47,19 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Challenge</a>                        35.3%  ▁·▁··▁▁●▂█▆▃ beats 9/26   easy · avg 82%          26%  sharp · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                           60.6%  ▁····▁··▁●█▄ beats 4/26   easy · avg 87%          12%  several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                             61.1%  ▁▁·▁▁▄●▄█▅▁▃ beats 7/26   easy · avg 87%         9.5%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                            63.9%  ▃···▁●▅█▇▃▁▁ beats 7/26   very easy · avg 91%    8.2%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                                 89.8%  ▁·▁·▁·●▅▃█▄▁ beats 5/26   very easy · avg 98%    7.2%  blunt · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                           25.8%  █·●▁▃·▁▃▅▇▃▄ beats 6/26   very hard · avg 29%    6.1%  too hard for it · small run · several r…
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                           60.6%  ▁····▁··▁●█▄ beats 4/26   easy · avg 86%          12%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                             61.1%  ▁▁·▁▁▄●▄█▅▁▃ beats 7/26   easy · avg 87%         9.4%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                            63.9%  ▃···▁●▅█▇▃▁▁ beats 7/26   very easy · avg 91%    8.1%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                                 89.8%  ▁·▁·▁·●▅▃█▄▁ beats 5/26   very easy · avg 97%    7.2%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                           25.8%  █·●▁▃·▁▃▅▇▃▄ beats 6/26   very hard · avg 29%    6.2%  too hard for it · small run · several r…
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                                 75.1%  ▁·▁··▁▁▃●▅█▂ beats 7/26   easy · avg 87%         5.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">BoolQ</a>                                64.0%  ▂▃▂●▆▂▅▆█▂▂▂ beats 5/26   easy · avg 88%         5.4%  at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   46.8%  ▂·▄·▂█▄●█▄▂▆ beats 10/21  easy · avg 74%         3.6%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), last-wo…</a>   67.0%  ▁··▂▁▁▁▂●█▅▃ beats 9/26   very easy · avg 87%    3.1%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.1%  ●···▄··▄··▄▄ beats 0/5    easy · avg 74%         2.1%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                       15.1%  ▁▁▂▂▄●▃▆▅█▅▂ beats 18/80  medium · avg 58%       1.7%  small run
+<a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.1%  ●···▄··▄··▄▄ beats 0/5    easy · avg 74%         2.2%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                       15.1%  ▁▁▂▂▄●▃▆▅█▅▂ beats 18/80  medium · avg 61%       2.1%  small run
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   11.0%  ▅····●▅·██·█ beats 2/13   medium · avg 52%       1.3%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.7%  ▃●▃··▅▃·█▃▃▅ beats 2/13   medium · avg 61%       1.2%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.7%  ▃●▃··▅▃·█▃▃▅ beats 2/13   medium · avg 60%       1.2%  typical
 <a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 26.2%  ▄·●····▄·▄·█ beats 1/5    easy · avg 75%         1.0%  noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                           40.7%  ▁···▁●█▁▁▁·▁ beats 3/26   hard · avg 56%         0.9%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 6/276  medium · avg 72%       0.6%  noisy
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 22.9
+weighted average                                   = 22.8
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · trlX: A Framework for Large Scale Reinforcement Learning from Human Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-530-CC-BY-4-0.txt)) · How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources ([CC BY 4.0](../../licenses/paper-2306.04751v2-tulu1-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

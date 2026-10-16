@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.5** ±1.4 · #233 of 725 · from 4 benchmark results across 2 sources
+**score 57.3** ±1.4 · #237 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,8 +26,8 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.4%     44%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   61.9%  ▄·▄····▄●▄█▄ beats 3/7    medium · avg 45%         24%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.5%     44%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   61.9%  ▄·▄····▄●▄█▄ beats 3/7    medium · avg 46%         24%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   68.1%  ▄▄···▄·●▄█·▄ beats 3/7    medium · avg 57%         10%  at its level
 </pre>
 
@@ -53,7 +53,7 @@ source                         results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   79% ▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   21% ▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 57.5
+weighted average                        = 57.3
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

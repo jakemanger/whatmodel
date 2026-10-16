@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 40.2** ±0.7 · #558 of 725 · from 14 benchmark results across 5 sources
+**score 40.3** ±0.7 · #556 of 725 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁▁▃●██▇▆▄▃▁    #378 of 460     63%      6
-math    ▁▁▃●█▆▄█▄▁▁▁   #328 of 424*    4.1%      1
+math    ▁▁▃●█▆▄█▄▁▁▁   #343 of 427*    3.8%      1
 </pre>
 
 <details><summary>coding · #378 of 460 · 63% of its score</summary>
@@ -27,22 +27,22 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                            48.8%  ▁█▄▅▇●·▄▇▅▄▄ beats 19/42  easy · avg 74%       36%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   39.4%  ▁·▂▁▂▆▅●▄▄▁▂ beats 17/35  medium · avg 61%    8.3%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   39.4%  ▁·▂▁▂▆▅●▄▄▁▂ beats 17/35  medium · avg 61%    8.4%  at its level
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           49.4%  ▃▃▃●··▃▅··▅▃ beats 5/11   easy · avg 71%      6.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   27.7%  ▄▇█▃▄●▄▁▇▃·▁ beats 23/35  medium · avg 45%    4.9%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   15.8%  ▁·▁▁▄█●▄█▁▅▅ beats 15/35  medium · avg 51%    4.5%  sharp
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            69.2%  ▃▃▃·▆▃▃●▃▂▂▅ beats 17/25  easy · avg 83%      3.3%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            69.2%  ▃▃▃·▆▃▃●▃▂▂▅ beats 17/25  easy · avg 83%      3.4%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #328 of 424 · 4.1% of its score</summary>
+<details><summary>math · #343 of 427 · 3.8% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   23.0%  ▆▂●█▅▅▃▆···▂ beats 6/25   easy · avg 72%    4.1%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   23.0%  ▆▂●█▅▅▃▆···▂ beats 6/25   easy · avg 72%    3.8%  sharp · at its level
 </pre>
 
 </details>
@@ -52,11 +52,11 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    33.8%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 23/42  medium · avg 52%     12%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       48.0%  ▁·····▂●▂▅·▁ beats 7/25   medium · avg 74%    6.8%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       48.0%  ▁·····▂●▂▅·▁ beats 7/25   medium · avg 74%    6.9%  sharp · at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              29.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 11/58  medium · avg 48%    5.1%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              28.2%  ▃▂·●▆██▆▅▃▃▃ beats 4/33   medium · avg 39%    4.8%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 43.3%  ▁▁▃●▄█▄▁█··▁ beats 4/25   medium · avg 72%    3.1%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   37.8%  ▂··▁●▂▂▂█▅▁▂ beats 4/25   medium · avg 59%    0.7%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   37.8%  ▂··▁●▂▂▂█▅▁▂ beats 4/25   medium · avg 59%    0.8%  blunt · at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   18% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2   10% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.2
+weighted average                                   = 40.3
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

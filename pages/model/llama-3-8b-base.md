@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 8.03B params · llama3
 
-**score 37.4** ±0.8 · #597 of 725 · from 9 benchmark results across 5 sources
+**score 37.4** ±0.8 · #598 of 725 · from 9 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    33.5%  ▁·▁▁▃●▆▅█▃▁▁ beats 18/99  easy · avg 76%     44%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   29.3%  ▁·▁▁▁▃●▄▄█▃▁ beats 18/99  easy · avg 70%     32%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        51.6%  ▁···▁▁▂●▇█▆▂ beats 21/75  easy · avg 66%    6.9%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        51.6%  ▁···▁▁▂●▇█▆▂ beats 21/75  easy · avg 66%    7.0%  at its level
 </pre>
 
 </details>
@@ -36,10 +36,10 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.8%  ▂▁▁●▂▅▇█▆▂▂▂ beats 9/58    medium · avg 48%    5.5%  at its level
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedQA (USMLE, 4 options)</a>             59.7%  ▁▁··▄▁▁··▄▃● beats 16/17   medium · avg 71%    4.4%  sharp · at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.8%  ▂▁▁●▂▅▇█▆▂▂▂ beats 9/58    medium · avg 48%    5.6%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedQA (USMLE, 4 options)</a>             59.7%  ▁▁··▄▁▁··▄▃● beats 16/17   medium · avg 71%    4.3%  sharp · at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   47.6%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 23/81   medium · avg 56%    2.7%  blunt · at its level
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedMCQA</a>                              57.5%  ▂▂··▄▄▂▂·▄█● beats 16/17   medium · avg 63%    2.1%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">MedMCQA</a>                              57.5%  ▂▂··▄▄▂▂·▄█● beats 16/17   medium · avg 63%    2.0%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   82.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 77/146  easy · avg 82%      1.0%  at its level · noisy
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B/results_2024-04-30%2002%3A10%3A59.556091.json">PubMedQA</a>                             74.8%  ▂·▂▆·▄▂▄▄▂●▂ beats 14/17   medium · avg 75%    0.3%  blunt · at its level
 </pre>

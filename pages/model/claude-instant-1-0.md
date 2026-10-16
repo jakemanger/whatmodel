@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-03 · proprietary
 
-**score 49.8** ±3.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.8** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▆●▇▅▇▃▁▁▁   #303 of 526*     42%      1
+math  ▁▁▃▆●█▅█▃▁▁▁   #310 of 529*     40%      1
 </pre>
 
-<details><summary>math · #303 of 526 · 42% of its score</summary>
+<details><summary>math · #310 of 529 · 40% of its score</summary>
 
-Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>   70.8%  ▂▂▂▂▃▄▅▇●█▆▄ beats 120/200  easy · avg 69%     42%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>   70.8%  ▂▂▂▂▃▄▅▇●█▆▄ beats 119/206  easy · avg 68%     40%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test   result  vs the others in its run    difficulty      counts  why
 
 <pre>
 test            result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2305.17306v1">BIG-Bench Hard</a>   66.9%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 105/155  medium · avg 69%     54%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2305.17306v1">BIG-Bench Hard</a>   66.9%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 105/155  medium · avg 69%     56%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 49.8
 </pre>

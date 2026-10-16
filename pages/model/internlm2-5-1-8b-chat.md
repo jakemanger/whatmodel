@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-07 · 1.89B params · other
 
-**score 32.7** ±6.7 · #852 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.7** ±6.6 · #854 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

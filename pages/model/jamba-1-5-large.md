@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #113 of 303*    2.3%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #113 of 306*    2.3%      1
 coding          █··········●       #1 of 2*    7.5%      1
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #233 of 395     20%      3
-math            ▁▁▃▅●▆▄█▄▁▁▁   #272 of 424*     12%      1
+math            ▁▁▃▅●▆▄█▄▁▁▁   #269 of 427*     11%      1
 </pre>
 
-<details><summary>agent tasks · #113 of 303 · 2.3% of its score</summary>
+<details><summary>agent tasks · #113 of 306 · 2.3% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 69%    7.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 68%    7.5%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -55,13 +55,13 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #272 of 424 · 12% of its score</summary>
+<details><summary>math · #269 of 427 · 11% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Mistral Large 2 (2407)](mistral-large-2407.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>   87.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 162/200  easy · avg 82%     12%  sharp · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>   87.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 161/206  easy · avg 82%     11%  sharp · small run
 </pre>
 
 </details>
@@ -73,8 +73,8 @@ test                             result  vs the others in its run    difficulty 
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                          49.5%  ▃▂▅█●·█▃▅··▂ beats 12/23    medium · avg 54%        27%  at its level · several runs
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▄▃ beats 32/104   very hard · avg 35%     11%  sharp · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>              65.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 98/155   medium · avg 61%        10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/214  easy · avg 75%         8.0%  at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>               93.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 139/140  easy · avg 76%         1.9%  sharp · at its level · noisy · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/214  easy · avg 75%         8.1%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>               93.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 139/140  easy · avg 76%         1.8%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -86,7 +86,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2408.12570v1-jamba15"></a><a href="https://arxiv.org/html/2408.12570v1#S6.T2">Jamba-1.5: Hybrid Transformer-Mamba Mod…</a>       10   66% ▇▇▇▇▇▇▇▇
-<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   21% ▇▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   21% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   13% ▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 51.9

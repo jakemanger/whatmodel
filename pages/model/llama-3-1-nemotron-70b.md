@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 52.9** ±0.9 · #315 of 725 · from 19 benchmark results across 10 sources
+**score 53.0** ±0.9 · #314 of 725 · from 19 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #267 of 460*     19%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #268 of 460*     19%      2
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #213 of 395     41%      6
-math            ▁▁▃▅●▆▄█▄▁▁▁   #311 of 424*     11%      2
+math            ▁▁▃▅●▆▄█▄▁▁▁   #307 of 427*     10%      2
 </pre>
 
-<details><summary>coding · #267 of 460 · 19% of its score</summary>
+<details><summary>coding · #268 of 460 · 19% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -49,13 +49,13 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #311 of 424 · 11% of its score</summary>
+<details><summary>math · #307 of 427 · 10% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">GSM8K</a>                       84.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 151/200  easy · avg 84%      6.0%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">GSM8K</a>                       84.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 151/206  easy · avg 84%      5.8%  sharp · small run
 <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified)</a>   55.0%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 31/80    medium · avg 53%    4.7%  at its level · small run
 </pre>
 
@@ -65,15 +65,15 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard</a>                       78.5%  ▁▁▁▁▂▄▅▆█●▃▁ beats 133/155  easy · avg 75%      6.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard</a>                       78.5%  ▁▁▁▁▂▄▅▆█●▃▁ beats 133/155  easy · avg 74%      6.6%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">MMLU</a>                                 83.8%  ▁▁▁▁▁▂▂▅██●▄ beats 182/214  easy · avg 77%      5.3%  small run
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   32.8%  ▁▁▁▁▁▂▂▃●▆█▃ beats 38/97    hard · avg 31%      4.6%  blunt · at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 43.1%  ●█·▄·▄▄·▄··▄ beats 0/7      medium · avg 40%    4.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   61.8%  ▂·▂●▂▆▅▆▆▆▃█ beats 2/29     easy · avg 74%      4.2%  typical
 <a href="https://arxiv.org/html/2411.15124v5">PopQA</a>                                36.4%  ▁▂▁▃▃█▂█▆●▁▆ beats 33/40    hard · avg 34%      1.9%  at its level · small run
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.5%  ▁▁▁▁▁▁▁▂▄█▄● beats 131/146  easy · avg 82%      0.8%  noisy
-<a href="https://arxiv.org/html/2411.15124v5">DROP</a>                                 68.8%  ▃▅█▅·▃·▆●▂▁▃ beats 34/44    medium · avg 62%    0.8%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2</a>                       62.6%  █▇▇▄▂▄▁●▅▄▁▁ beats 53/79    medium · avg 60%    0.2%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.5%  ▁▁▁▁▁▁▁▂▄█▄● beats 131/146  easy · avg 82%      0.9%  noisy
+<a href="https://arxiv.org/html/2411.15124v5">DROP</a>                                 68.8%  ▃▅█▅·▃·▆●▂▁▃ beats 34/44    medium · avg 61%    0.7%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2</a>                       62.6%  █▇▇▄▂▄▁●▅▄▁▁ beats 53/79    medium · avg 59%    0.2%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K models leaderboard</a>                     1    4% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 52.9
+weighted average                                   = 53.0
 </pre>
 
 <sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

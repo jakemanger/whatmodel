@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 6.74B params · deepseek
 
-**score 40.9** ±0.6 · #544 of 725 · from 12 benchmark results across 5 sources
+**score 40.9** ±0.6 · #545 of 725 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #386 of 460     85%      7
-math    ▁▁▃▅●▆▄█▄▁▁▁   #295 of 424*    3.4%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #385 of 460     85%      7
+math    ▁▁▃▅●▆▄█▄▁▁▁   #308 of 427*    3.2%      1
 </pre>
 
-<details><summary>coding · #386 of 460 · 85% of its score</summary>
+<details><summary>coding · #385 of 460 · 85% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -28,7 +28,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test        result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    47.6%  ▁·▁▁▃▄●▅█▃▁▁ beats 32/99  easy · avg 76%       51%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   39.6%  ▁·▁▁▁▃▄●▄█▃▁ beats 30/99  easy · avg 70%       20%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        58.7%  ▁···▁▁▂▅●█▆▂ beats 34/75  easy · avg 66%      3.9%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        58.7%  ▁···▁▁▂▅●█▆▂ beats 34/75  easy · avg 66%      4.0%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         70.2%  ▄▄▄██▄·▄█·●▄ beats 11/12  easy · avg 81%      3.7%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      28.9%  ▄▄·▄██▄●·█·▄ beats 9/12   medium · avg 49%    3.4%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   41.9%  ▁··▁▅▂●▇▁··▁ beats 13/22  medium · avg 52%    1.2%  at its level
@@ -37,13 +37,13 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #295 of 424 · 3.4% of its score</summary>
+<details><summary>math · #308 of 427 · 3.2% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   41.9%  ▄▄▄·▄█·█●·█▄ beats 9/12   easy · avg 76%    3.4%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   41.9%  ▄▄▄·▄█·█●·█▄ beats 9/12   easy · avg 75%    3.2%  sharp · at its level
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   50% ▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   23% ▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   24% ▇▇▇
 <a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   20% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇

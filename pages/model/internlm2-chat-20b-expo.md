@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 19.86B params · other
 
-**score 47.0** ±1.6 · #573 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±1.6 · #574 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

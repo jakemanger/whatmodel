@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #292 of 395     19%      3
-math            ▁●▃▅█▆▄█▄▁▁▁   #409 of 424*     12%      1
+math            ▁▁●▅█▆▄█▄▁▁▁   #411 of 427*     12%      1
 </pre>
 
 <details><summary>chat &amp; writing · #292 of 395 · 19% of its score</summary>
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #409 of 424 · 12% of its score</summary>
+<details><summary>math · #411 of 427 · 12% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -50,12 +50,12 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             61.1%  ▁·▁▁●▄▄▅█▄▂▁ beats 3/53     easy · avg 75%          26%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           26.8%  ▁▁▁▂▂▃●█▆▃▅▃ beats 20/61    medium · avg 38%        17%  at its level
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_c4ai-command-r-v01_5shots.zip">MMLU-Pro</a>                                       36.6%  ▃▂●█▃·█▃▅··▂ beats 5/23     medium · avg 54%       7.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.5331 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 12/52    avg 42.785 WB-Score    5.6%  sharp
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                56.4%  ▁··▁▁▂▂▆▅●█▆ beats 33/70    medium · avg 61%       3.2%  at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_c4ai-command-r-v01_5shots.zip">MMLU-Pro</a>                                       36.6%  ▃▂●█▃·█▃▅··▂ beats 5/23     medium · avg 54%       8.0%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.5331 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 12/52    avg 42.742 WB-Score    5.6%  sharp
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                56.4%  ▁··▁▁▂▂▆▅●█▆ beats 33/70    medium · avg 61%       3.3%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>              9.9%  ▁▁▃●██▁▁·▁▁▁ beats 9/57     hard · avg 15%         2.9%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             55.4%  ▂▄▂▃█▄●▆▃▅▂▂ beats 44/81    medium · avg 56%       2.5%  blunt · at its level
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                                      84.9%  ▁▁·▁·▂▃▄●▂·▁ beats 15/22    easy · avg 82%         1.4%  at its level
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                                      84.9%  ▁▁·▁·▂▃▄●▂·▁ beats 15/22    easy · avg 81%         1.4%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 151/276  medium · avg 72%       1.2%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>             84.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 93/146   easy · avg 82%         0.8%  at its level · noisy
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                                     76.0%  ▄··▂▄▂▆█●▄▄▂ beats 14/21    easy · avg 67%         0.4%  at its level · noisy

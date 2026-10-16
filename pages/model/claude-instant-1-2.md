@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▂▁    #412 of 529     78%      2
+coding          ▁▁▁▃●▇█▇▅▄▂▁    #411 of 529     78%      2
 chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #348 of 466*     16%      1
-math            ▁▂▃▆●▇▅▇▃▁▁▁   #337 of 523*    5.9%      1
+math            ▁▁▃▆●█▅█▄▁▁▁   #338 of 526*    5.7%      1
 </pre>
 
-<details><summary>coding · #412 of 529 · 78% of its score</summary>
+<details><summary>coding · #411 of 529 · 78% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -44,13 +44,13 @@ test                            result  vs the others in its run   difficulty   
 
 </details>
 
-<details><summary>math · #337 of 523 · 5.9% of its score</summary>
+<details><summary>math · #338 of 526 · 5.7% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run    difficulty           counts  why
-<a href="https://www.anthropic.com/news/releasing-claude-instant-1-2">GSM8K (lab)</a>   86.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 160/200  very easy · avg 90%    5.9%  sharp
+<a href="https://www.anthropic.com/news/releasing-claude-instant-1-2">GSM8K (lab)</a>   86.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 159/206  very easy · avg 90%    5.7%  sharp
 </pre>
 
 </details>

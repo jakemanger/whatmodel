@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.0704B params · apache-2.0
 
-**score -12.6** ±2.3 · #724 of 725 · from 7 benchmark results across 2 sources
+**score -13.1** ±2.3 · #725 of 725 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           60.1%  ●··▂▃▂▂▆▃▃█▂ beats 0/19   very easy · avg 98%     42%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           60.1%  ●··▂▃▂▂▆▃▃█▂ beats 0/19   very easy · avg 98%     41%  blunt · at its level
 <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       37.4%  ●·▅▃▃▅·██▃██ beats 0/19   easy · avg 87%          21%  blunt
 <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           59.5%  ●·▄▄·▄▂▆▂▄█▄ beats 0/19   easy · avg 87%          15%  blunt
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   18.5%  ●··▅▃▃▅▅▅███ beats 0/19   very easy · avg 87%     15%  blunt · at its level
@@ -42,7 +42,7 @@ source                                    results  share of the score
 <a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = -12.6
+weighted average                                   = -13.1
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -19,7 +19,7 @@ task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
 coding          ▁▁▁▃▆██●▆▄▃▁     #169 of 460*     43%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #141 of 395*     25%      1
-math            █··········●         #1 of 2*    3.0%      1
+math            █··········●         #1 of 2*    3.1%      1
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -37,7 +37,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6  ▁▂●▃▅█▄▇▆▄▁▁ beats 9/119  avg 970        43%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6  ▁▂●▃▅█▄▇▆▄▁▁ beats 9/119  avg 969        43%  sharp
 </pre>
 
 </details>
@@ -53,11 +53,11 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #1 of 2 · 3.0% of its score</summary>
+<details><summary>math · #1 of 2 · 3.1% of its score</summary>
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 36%    3.0%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 35%    3.1%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -66,7 +66,7 @@ test             result  vs the others in its run    difficulty        counts  w
 
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●██▄ beats 180/310  hard · avg 43%       19%  sharp · at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●██▄ beats 180/311  hard · avg 43%       19%  sharp · at its level · small run
 <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 58%    8.5%  small run
 </pre>
 
@@ -78,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   69% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   68% ▇▇▇▇▇▇▇▇
 <a name="first-party-arcee-scores"></a><a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">Arcee AI vendor-reported benchmark scor…</a>        3   30% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 62.5

@@ -38,7 +38,7 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Cod
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       23.9%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 62/122  hard · avg 35%       18%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1191.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 65/379  avg 1258            6.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1191.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 65/379  avg 1258            6.7%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1112.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 54/95   avg 1186            6.1%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>    5.0%  ▁·▁▁●▁▄▄▆▄█▄ beats 3/38    medium · avg 45%    4.1%  sharp · at its level
 </pre>

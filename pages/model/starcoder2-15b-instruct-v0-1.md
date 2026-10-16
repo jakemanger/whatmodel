@@ -6,7 +6,7 @@
 
 BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
-**score 47.1** ±0.8 · #430 of 725 · from 5 benchmark results across 2 sources
+**score 47.1** ±0.8 · #431 of 725 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #322 of 460     86%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #323 of 460     86%      3
 </pre>
 
-<details><summary>coding · #322 of 460 · 86% of its score</summary>
+<details><summary>coding · #323 of 460 · 86% of its score</summary>
 
-Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.7%  ▁·▁▁▃▄▆●█▃▁▁ beats 53/99  easy · avg 76%     43%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.7%  ▁·▁▁▃▄▆●█▃▁▁ beats 53/99  easy · avg 76%     42%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   60.4%  ▁·▁▁▁▃▄▄●█▃▁ beats 52/99  easy · avg 70%     36%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        65.1%  ▁···▁▁▂▅▇●▆▂ beats 52/75  easy · avg 66%    7.0%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        65.1%  ▁···▁▁▂▅▇●▆▂ beats 52/75  easy · avg 66%    7.1%  at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 39%    7.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 39%    7.1%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 48%    7.0%  at its level
 </pre>
 

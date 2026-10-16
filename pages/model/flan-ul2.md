@@ -6,7 +6,7 @@
 
 Google · released 2023-03 · 20B params · apache-2.0
 
-**score 47.8** ±3.5 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 47.9** ±3.5 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,10 +22,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    56.9%  ▂▂··▂·▂··▂█● beats 10/10  medium · avg 56%        32%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    56.9%  ▂▂··▂·▂··▂█● beats 10/10  medium · avg 56%        33%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   75.6%  ▃····▃·▃▃█●▅ beats 8/10   easy · avg 81%          30%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   25.5%  ▃··▃·█▃·●▃·▃ beats 8/10   hard · avg 29%          18%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   23.0%  ●·····▂····▁ beats 6/11   very hard · avg 55%     10%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   23.0%  ●·····▂····▁ beats 6/11   very hard · avg 55%    9.5%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   51.3%  ▄·█··██·▄▄▄● beats 10/10  medium · avg 43%       4.9%  blunt · at its level
 </pre>
 
@@ -38,9 +38,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-536"></a><a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS: A Zero-Shot Benchmark for …</a>        4   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1   10% ▇
+<a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    9% ▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 47.8
+weighted average                                   = 47.9
 </pre>
 
 <sub>Licences: ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

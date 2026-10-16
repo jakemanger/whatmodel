@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃●██▇▆▄▃▁    #374 of 460     70%      6
-chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃   #391 of 395*    7.9%      2
-math            ▁▁▃▅█●▄█▄▁▁▁   #205 of 424*    3.0%      1
+chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃   #391 of 395*    8.0%      2
+math            ▁▁▃▅█●▄█▄▁▁▁   #215 of 427*    2.8%      1
 </pre>
 
 <details><summary>coding · #374 of 460 · 70% of its score</summary>
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #391 of 395 · 7.9% of its score</summary>
+<details><summary>chat &amp; writing · #391 of 395 · 8.0% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
@@ -49,13 +49,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #205 of 424 · 3.0% of its score</summary>
+<details><summary>math · #215 of 427 · 2.8% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▂▃▄▅●██▆▄ beats 97/200  easy · avg 73%    3.0%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▂▃▄▅●██▆▄ beats 96/206  easy · avg 72%    2.8%  sharp · at its level
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ test   result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    31.8%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 16/42    medium · avg 52%       7.9%  at its level
-<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       43.4%  ▁▁▁▁▂▄●▆█▃▃▁ beats 44/155   medium · avg 64%       4.6%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       43.4%  ▁▁▁▁▂▄●▆█▃▃▁ beats 44/155   medium · avg 64%       4.7%  sharp · at its level
 <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        71.3%  ▄▁▁▂▁▄█▇▃●▃▂ beats 120/140  easy · avg 85%         2.3%  sharp · at its level
 <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 52.7%  ▁▁▁▁▁▂▂●██▆▄ beats 60/214   easy · avg 79%         2.2%  at its level
 <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               23.4%  ●···▁▁▂▁▂▂▃█ beats 0/33     medium · avg 59%       0.7%  at its level · noisy
@@ -83,7 +83,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   48% ▇▇▇▇▇▇
-<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   23% ▇▇▇
 <a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   18% ▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2    8% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇

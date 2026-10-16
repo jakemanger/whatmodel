@@ -6,7 +6,7 @@
 
 TeleAI (ZJared) · released 2025-01 · 7.62B params · apache-2.0
 
-**score 54.7** ±6.1 · #347 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.7** ±6.0 · #348 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #248 of 337*     83%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #251 of 340*     84%      1
 </pre>
 
-<details><summary>agent tasks · #248 of 337 · 83% of its score</summary>
+<details><summary>agent tasks · #251 of 340 · 84% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>   57.3%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 69/114  medium · avg 51%     83%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>   57.3%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 69/114  medium · avg 51%     84%  blunt · at its level
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       17% ▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       16% ▇▇
 weighted average                                   = 54.7
 </pre>
 

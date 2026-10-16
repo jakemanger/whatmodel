@@ -21,7 +21,7 @@ vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #103 of 199*     
 
 <details><summary>vision &amp; documents · #103 of 199 · 94% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Qwen3.5 4B](qwen3-5-4b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.5 4B](qwen3-5-4b.md), [GPT-4.1 mini](gpt-4-1-mini.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

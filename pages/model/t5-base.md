@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▁▁▁   #413 of 424*     13%      1
+math  ▁●▃▅█▆▄█▄▁▁▁   #416 of 427*     15%      1
 </pre>
 
-<details><summary>math · #413 of 424 · 13% of its score</summary>
+<details><summary>math · #416 of 427 · 15% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    1.7%  ▅·▂●·······▂ beats 4/9    medium · avg 63%     13%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    1.7%  ▅·▂●·······▂ beats 4/9    medium · avg 62%     15%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -36,9 +36,9 @@ test   result  vs the others in its run  difficulty        counts  why
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   42.3%  ▃···▃▃·▃·▃·● beats 6/7    easy · avg 81%          37%  typical
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        13.4%  ●····▁·····▁ beats 4/9    easy · avg 75%          21%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 0.3%  ●·▆▂▄▂▂····▂ beats 3/12   easy · avg 70%          17%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           52.5%  █········●▃▁ beats 6/9    hard · avg 62%         4.8%  too hard for it · noisy
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   10.3%  ▄···█···●█·▄ beats 3/7    hard · avg 22%         3.2%  blunt · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 0.3%  ●·▆▂▄▂▂····▂ beats 3/12   easy · avg 70%          16%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                           52.5%  █········●▃▁ beats 6/9    hard · avg 62%         4.7%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   10.3%  ▄···█···●█·▄ beats 3/7    hard · avg 22%         3.1%  blunt · too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   49.5%  ●·······▁··▁ beats 1/7    very hard · avg 52%    0.1%  blunt · too hard for it · noisy
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             23.2%  █·····●·▁··▁ beats 7/9    medium · avg 53%       0.1%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   13.7%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 72%          —  failed run: Failed run: average 13.68 v…
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        5   56% ▇▇▇▇▇▇▇
+<a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        5   57% ▇▇▇▇▇▇▇
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3   40% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 14.1

@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-01 · 7.24B params · apache-2.0
 
-**score 47.4** ±0.6 · #416 of 725 · from 10 benchmark results across 7 sources
+**score 47.4** ±0.6 · #418 of 725 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #295 of 460     73%      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #296 of 460     73%      3
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #316 of 395*    8.2%      2
 </pre>
 
-<details><summary>coding · #295 of 460 · 73% of its score</summary>
+<details><summary>coding · #296 of 460 · 73% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    72.6%  ▁·▁▁▃▄▆▅●▃▁▁ beats 64/99  easy · avg 76%     45%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   67.7%  ▁·▁▁▁▃▄▄▄●▃▁ beats 66/99  easy · avg 70%     24%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        54.5%  ▁···▁▁▂▅●█▆▂ beats 26/75  easy · avg 66%    4.6%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        54.5%  ▁···▁▁▂▅●█▆▂ beats 26/75  easy · avg 66%    4.7%  at its level
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    42.1%  ▂▂▃▄▄█▁●▅▃▁▃ beats 29/42    medium · avg 52%     12%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   52.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 17/95    medium · avg 64%    3.2%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   52.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 17/95    medium · avg 64%    3.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      43.8%  ▁··▁▁▂▂●▅▆█▆ beats 13/70    medium · avg 61%    2.6%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   70.5%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 168/276  medium · avg 72%    1.0%  at its level · noisy
 </pre>

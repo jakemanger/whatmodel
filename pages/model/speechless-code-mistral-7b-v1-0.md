@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #387 of 460     98%      3
+coding  ▁▁▁▃●██▇▆▄▃▁   #386 of 460     98%      3
 </pre>
 
-<details><summary>coding · #387 of 460 · 98% of its score</summary>
+<details><summary>coding · #386 of 460 · 98% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    48.2%  ▁·▁▁▃▄●▅█▃▁▁ beats 33/99  easy · avg 76%     52%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    48.2%  ▁·▁▁▃▄●▅█▃▁▁ beats 33/99  easy · avg 76%     51%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   41.5%  ▁·▁▁▁▃▄●▄█▃▁ beats 31/99  easy · avg 70%     39%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        48.7%  ▁···▁▁▂●▇█▆▂ beats 18/75  easy · avg 66%    7.7%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        48.7%  ▁···▁▁▂●▇█▆▂ beats 18/75  easy · avg 66%    7.8%  at its level
 </pre>
 
 </details>

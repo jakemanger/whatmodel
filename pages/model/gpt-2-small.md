@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -12.8** ±1.5 · #725 of 725 · from 35 benchmark results across 9 sources
+**score -13.1** ±1.5 · #724 of 725 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▆▄█▄▁▁▁   #422 of 424*    0.1%      1
+math  ●▁▃▅█▆▄█▄▁▁▁   #425 of 427*    0.1%      1
 </pre>
 
-<details><summary>math · #422 of 424 · 0.1% of its score</summary>
+<details><summary>math · #425 of 427 · 0.1% of its score</summary>
 
 Beats [GPT-2 Large (774M)](gpt-2-large.md), [GPT-2 Medium (355M)](gpt-2-medium.md) here, though they rank higher overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    0.4%  ●·▂█·······▂ beats 2/9    medium · avg 63%    0.1%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    0.4%  ●·▂█·······▂ beats 2/9    medium · avg 62%    0.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -35,14 +35,14 @@ test   result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                           16.4%  ●▁▁▁▂▂▃█▃▁▃▁ beats 13/107  very hard · avg 26%     25%  too hard for it · several runs
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                        20.1%  ●▁▁▂▁▄█▇▃▂▃▂ beats 5/140   very hard · avg 27%     18%  sharp · too hard for it · several runs
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                        20.1%  ●▁▁▂▁▄█▇▃▂▃▂ beats 5/140   very hard · avg 27%     17%  sharp · too hard for it · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 61.0%  ▁·▁▁●▅▅█▆▂▁▁ beats 5/67    very easy · avg 97%     14%  several runs
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             42.9%  ▁●▂▄▆█▅▃▁··▁ beats 6/100   very easy · avg 90%     11%  blunt · several runs
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             42.9%  ▁●▂▄▆█▅▃▁··▁ beats 6/100   very easy · avg 90%     10%  blunt · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     60.0%  ●▃▃▂▅█▅▂▁··▂ beats 3/50    easy · avg 91%          10%  blunt · several runs
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                            28.6%  ●▁▁▂▂▂▄▆█▇▄▂ beats 1/135   easy · avg 87%         8.9%  too hard for it · several runs
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                            28.6%  ●▁▁▂▂▂▄▆█▇▄▂ beats 1/135   easy · avg 87%         8.8%  too hard for it · several runs
 <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   23.6%  ●···██·█···█ beats 0/4     easy · avg 86%         3.4%  too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   31.1%  ▃···●▃·▃·▃·█ beats 1/7     easy · avg 81%         3.0%  too hard for it
-<a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">Social IQA</a>                           39.7%  ▁·▁●█▄▅▁▂▃▇▁ beats 3/59    medium · avg 72%       2.3%  blunt · too hard for it
+<a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">Social IQA</a>                           39.7%  ▁·▁●█▄▅▁▂▃▇▁ beats 3/59    medium · avg 71%       2.3%  blunt · too hard for it
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">PIQA</a>                                 62.9%  ▁●▁▂▂▃▅█▅▃▁▁ beats 2/123   easy · avg 89%         2.2%  blunt
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">BoolQ</a>                                49.4%  ●····▁▂█▆▅▆▄ beats 0/103   easy · avg 91%         1.4%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>    7.9%  ▄···●···██·▄ beats 2/7     hard · avg 22%         0.5%  blunt · too hard for it
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    0% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = -12.8
+weighted average                                   = -13.1
 </pre>
 
 <sub>Licences: Coherence boosting: When your pretrained language model is not paying enough attention ([CC BY 4.0](../../licenses/acl-2022-acl-long-565-CC-BY-4-0.txt)) · Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · CASE: Commonsense-Augmented Score with an Expanded Answer Space ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-180-CC-BY-4-0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

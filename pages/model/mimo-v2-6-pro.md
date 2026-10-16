@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
-**score 77.6** ±1.1 · #19 of 725 · from 13 benchmark results across 2 sources
+**score 77.6** ±1.1 · #18 of 725 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #18 of 303     49%      7
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #18 of 306     49%      7
 coding              ▁▁▁▃▆██▇▆▄●▁   #23 of 460*     22%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #20 of 395*     12%      1
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #50 of 147*    8.5%      1
 </pre>
 
-<details><summary>agent tasks · #18 of 303 · 49% of its score</summary>
+<details><summary>agent tasks · #18 of 306 · 49% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Spark Open](muse-spark-open.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+Beats [Muse Wonder](muse-wonder.md), [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0352 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 31/49  avg -0.311 IPS           22%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0352 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 31/49  avg -0.310 IPS           22%  sharp
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>                 34.9%  ▁·▁··▁▇▇▅●█▃ beats 17/30  very hard · avg 0.5%     11%  sharp · at its level · small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>                 89.9%  ▁·▁·▁▁▄▃▄█▄● beats 56/58  hard · avg 22%          5.3%  sharp · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>                   82.0%  █▃·▂▅▂▃▂▅▃●▆ beats 23/27  hard · avg 23%          4.4%  small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>                   82.0%  █▃·▂▅▂▃▂▅▃●▆ beats 23/27  hard · avg 24%          4.2%  small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/harness…</a>       31.6%  ▂·▂·█●···▂▄▄ beats 6/11   very hard · avg 6.5%    2.9%  at its level · small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>                76.9%  ▂·▂▂▅▃···▂●█ beats 13/18  hard · avg 32%          1.7%  blunt · at its level · small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>            71.9%  ▂····▁▁▁▆█●▇ beats 22/29  hard · avg 18%          1.3%  at its level · noisy · small run
@@ -45,7 +45,7 @@ Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Grok 
 
 <pre>
 test                           result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1618.4  ▁▂▄▃▅█▄▇●▄▁▁ beats 98/119  avg 970            20%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1618.4  ▁▂▄▃▅█▄▇●▄▁▁ beats 98/119  avg 969            20%  sharp
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>   71.9%  ▂····▁▁▁▆█●▇ beats 22/29   hard · avg 18%    1.3%  at its level · noisy · small run
 </pre>
 
@@ -77,7 +77,7 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>   53.1%  ▃····▃·▃▃··● beats 6/6    very hard · avg 6.3%    3.7%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>   53.1%  ▃····▃·▃▃··● beats 6/6    very hard · avg 6.4%    3.7%  at its level · small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>   66.3%  ▄··▄···▄·▄·● beats 5/5    very hard · avg 7.3%    3.2%  at its level · small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>      17.8%  ▄···▄··▄▄··● beats 5/5    very hard · avg 0.7%    2.7%  noisy · small run
 </pre>

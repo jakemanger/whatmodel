@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁●▅█▆▄█▄▁▁▁   #403 of 424*     19%      2
+math                ▁▁●▅█▆▄█▄▁▁▁   #405 of 427*     19%      2
 vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #145 of 147     85%     12
 </pre>
 
-<details><summary>math · #403 of 424 · 19% of its score</summary>
+<details><summary>math · #405 of 427 · 19% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -38,10 +38,10 @@ Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128
 
 <pre>
 test                        result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>             41.1%  ●···▆▂▂▂▄▄▄█ beats 0/16   medium · avg 60%        16%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>             41.1%  ●···▆▂▂▂▄▄▄█ beats 0/16   medium · avg 61%        16%  at its level
 <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>   43.0%  ●··▃▅·▃█▅▅▅█ beats 0/16   medium · avg 68%        15%  at its level
 <a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                 48.0%  ●··▄▂▂·▄█▂▄▆ beats 0/16   medium · avg 64%        12%  at its level
-<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>               37.6%  ▃·●·▅▃▃▃▅▅▃█ beats 2/16   medium · avg 45%       7.1%  typical
+<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>               37.6%  ▃·●·▅▃▃▃▅▅▃█ beats 2/16   medium · avg 45%       7.0%  typical
 <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                 90.1%  ●··▅▃▅▃█▃█▅▅ beats 0/17   very easy · avg 94%    6.5%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                73.5%  ●··▂·▂▃·▅▂▆█ beats 0/17   easy · avg 84%         6.1%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>         41.7%  ●·▃·▅▃▅▅▃▅█▅ beats 0/16   medium · avg 54%       5.3%  blunt · at its level
@@ -49,7 +49,7 @@ test                        result  vs the others in its run  difficulty        
 <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>            62.9%  ●▃·▃▅▅·█·▃▅█ beats 0/16   easy · avg 70%         4.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 25%         3.7%  too hard for it · small run
 <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>               80.9%  ▅●·▃▃█▃▅▅▃·▃ beats 3/16   easy · avg 84%         1.9%  blunt
-<a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                79.7%  ●······▄·▄▄▄ beats 1/5    easy · avg 80%         1.0%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                79.7%  ●······▄·▄▄▄ beats 1/5    easy · avg 80%         0.9%  blunt
 </pre>
 
 </details>

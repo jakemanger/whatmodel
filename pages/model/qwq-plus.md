@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅█▆●█▄▁▁▁   #150 of 426*    7.3%      1
+math  ▁▁▃▅█▆●█▄▁▁▁   #152 of 429*    7.3%      1
 </pre>
 
-<details><summary>math · #150 of 426 · 7.3% of its score</summary>
+<details><summary>math · #152 of 429 · 7.3% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▅ beats 95/208  hard · avg 38%     90%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▄ beats 95/209  hard · avg 38%     90%  sharp · at its level
 </pre>
 
 </details>

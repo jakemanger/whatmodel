@@ -6,7 +6,7 @@
 
 Google · released 2025-07 · closed weights
 
-**score 57.4** ±1.7 · #235 of 725 · from 8 benchmark results across 7 sources
+**score 57.4** ±1.7 · #233 of 725 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #193 of 303*     20%      2
-math                ▁▁▃▅█●▄█▄▁▁▁   #236 of 424*     10%      1
-vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #99 of 147*     64%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #196 of 306*     20%      2
+math                ▁▁▃▅█●▄█▄▁▁▁   #239 of 427*     10%      1
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #99 of 147*     63%      2
 </pre>
 
-<details><summary>agent tasks · #193 of 303 · 20% of its score</summary>
+<details><summary>agent tasks · #196 of 306 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #236 of 424 · 10% of its score</summary>
+<details><summary>math · #239 of 427 · 10% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test         result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #99 of 147 · 64% of its score</summary>
+<details><summary>vision &amp; documents · #99 of 147 · 63% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank lower overall.
 

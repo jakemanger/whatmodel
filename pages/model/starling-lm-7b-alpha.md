@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #337 of 395     66%      4
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #337 of 395     65%      4
 </pre>
 
-<details><summary>chat &amp; writing · #337 of 395 · 66% of its score</summary>
+<details><summary>chat &amp; writing · #337 of 395 · 65% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -41,8 +41,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   52.6%  ▁▂▂▂●█▃▆▅▄▂▃ beats 18/95    medium · avg 64%    9.4%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      46.3%  ▁··▁▁▂▂●▅▆█▆ beats 19/70    medium · avg 61%    7.0%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 162/276  medium · avg 72%    2.7%  at its level · noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-21%2009%3A43%3A40.146761.json">HaluEval QA hallucination detecti…</a>   59.7%  █▁▁·▁▁·▁▁●▁▁ beats 24/27    hard · avg 66%      1.2%  noisy
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-22%2011%3A21%3A54.818457.json">TriviaQA</a>                             66.0%  ▁··▁█▃▃▁▄▅▄● beats 26/28    easy · avg 71%      1.2%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-22%2011%3A21%3A54.818457.json">TriviaQA</a>                             66.0%  ▁··▁█▃▃▁▄▅▄● beats 26/28    easy · avg 73%      1.3%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2023-12-21%2009%3A43%3A40.146761.json">HaluEval QA hallucination detecti…</a>   59.7%  █▁▁·▁▁·▁▁●▁▁ beats 24/27    hard · avg 66%      1.1%  noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/berkeley-nest/Starling-LM-7B-alpha/results_2024-02-25%2012%3A45%3A15.485715.json">TruthfulQA MC2</a>                       47.3%  ▅▃█▆●▂▅···▁▁ beats 22/31    medium · avg 57%    0.3%  blunt · at its level
 </pre>
 

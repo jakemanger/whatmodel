@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 321B params (38B active) · apache-2.0
 
-**score 59.6** ±2.3 · #234 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.6** ±2.3 · #233 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>vision &amp; documents · #96 of 150 · 40% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #301 of 303*    6.6%      1
-coding          ▁▁▁▃▆██●▆▄▃▁   #155 of 460*    2.9%      1
+agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #304 of 306*    6.6%      1
+coding          ▁▁▁▃▆██●▆▄▃▁   #154 of 460*    2.9%      1
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #343 of 395*     31%      1
 </pre>
 
-<details><summary>agent tasks · #301 of 303 · 6.6% of its score</summary>
+<details><summary>agent tasks · #304 of 306 · 6.6% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test     result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #155 of 460 · 2.9% of its score</summary>
+<details><summary>coding · #154 of 460 · 2.9% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   31.7%  ▁▁▁▁▁▂▂▃●▆█▃ beats 35/97    hard · avg 31%          15%  blunt · at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   61.9%  ▂▄▂▃█▄▃●▃▅▂▂ beats 56/81    medium · avg 56%        14%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 238/276  medium · avg 72%       7.1%  at its level · noisy
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   83.9%  ▁▁●▃▄▄█▆▃▂▂▁ beats 11/140   very easy · avg 94%    2.2%  blunt · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   83.9%  ▁▁●▃▄▄█▆▃▂▂▁ beats 11/140   very easy · avg 94%    2.3%  blunt · maxed out · noisy
 </pre>
 
 </details>

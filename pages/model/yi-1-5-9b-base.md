@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 44.2** ±1.8 · #492 of 725 · from 7 benchmark results across 4 sources
+**score 44.2** ±1.8 · #493 of 725 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,13 +22,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.5%  ▂▁▁▄▂●▇█▆▂▂▂ beats 16/58    medium · avg 48%     35%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.5%  ▂▁▁▄▂●▇█▆▂▂▂ beats 16/58    medium · avg 48%     36%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedQA (USMLE, 4 options)</a>             55.4%  ▁▁··▄▁▁··▄▃● beats 14/17    medium · avg 71%     29%  sharp · at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedMCQA</a>                              53.3%  ▂▂··▄▄▂▂·▄█● beats 14/17    medium · avg 63%     13%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 145/276  medium · avg 72%    7.8%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   79.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 69/100   medium · avg 66%    6.1%  sharp · at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 83/146   easy · avg 82%      5.0%  at its level · noisy
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">PubMedQA</a>                             71.6%  ▂·▂▆·▄▂▄●▂█▂ beats 11/17    medium · avg 75%    1.6%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 145/276  medium · avg 72%    7.9%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   79.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 69/100   medium · avg 66%    6.2%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 83/146   easy · avg 82%      5.1%  at its level · noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">PubMedQA</a>                             71.6%  ▂·▂▆·▄▂▄●▂█▂ beats 11/17    medium · avg 75%    1.5%  blunt · at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                results  share of the score
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">Open Medical-LLM Leaderboard results</a>        3   44% ▇▇▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                          1   35% ▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                          1   36% ▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                       2   11% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    8% ▇
 prior: pull toward the middle                    1% ▇

@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁    #226 of 343    8.1%      3
+agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁    #229 of 346    8.1%      3
 chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #174 of 466*    9.2%      1
-math                ▁▂▃▆█▇●▇▃▁▁▁   #205 of 523*     21%      2
+math                ▁▁▃▆██●█▄▁▁▁   #207 of 526*     21%      2
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #104 of 182*    6.5%      1
 web search          ▂·▂▇▅█▃▄●▂▁▁     #10 of 92*    5.1%      1
 </pre>
 
-<details><summary>agent tasks · #226 of 343 · 8.1% of its score</summary>
+<details><summary>agent tasks · #229 of 346 · 8.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -47,21 +47,21 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #205 of 523 · 21% of its score</summary>
+<details><summary>math · #207 of 526 · 21% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               82.2%  ▂▂▅▆▄█▆▃●▂▃▄ beats 68/92   hard · avg 27%           14%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 67/193  very hard · avg 6.9%    7.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 67/195  very hard · avg 6.9%    7.3%  sharp · at its level · noisy
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #104 of 182 · 6.5% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -85,9 +85,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         64.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 92/208   hard · avg 38%          16%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         64.1%  ▁▁▁▁▂▄▆●▅▇█▄ beats 92/209   hard · avg 38%          15%  sharp · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   17.8%  ▂·█··▆●·▂▂·▄ beats 8/13     avg 35%                6.5%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.0%  ▁▁▁▁▁▂▂▃▄▆█● beats 88/97    hard · avg 31%         5.5%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.0%  ▁▁▁▁▁▂▂▃▄▆█● beats 88/97    hard · avg 31%         5.6%  blunt · at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1096.6  ▁·▂▁●▅▅▃█▄▁▁ beats 12/62    avg 1031               5.5%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   85.8%  ▁▂▂▂▃█▃▆▅▄▂● beats 90/95    medium · avg 64%       4.8%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   73.8%  ▂▄▂▃█▄▃▆▃▅●▂ beats 77/81    medium · avg 56%       3.6%  blunt · at its level

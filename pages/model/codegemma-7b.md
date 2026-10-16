@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 40.1** ±0.6 · #560 of 725 · from 14 benchmark results across 4 sources
+**score 40.1** ±0.6 · #561 of 725 · from 14 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁▁▃●██▇▆▄▃▁    #393 of 460     93%      9
-math    ▁▁▃▅█●▄█▄▁▁▁   #222 of 424*    3.1%      2
+math    ▁▁▃▅█●▄█▄▁▁▁   #231 of 427*    3.1%      2
 </pre>
 
 <details><summary>coding · #393 of 460 · 93% of its score</summary>
@@ -30,8 +30,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           41.5%  ▁·▁▁▁▃▄●▄█▃▁ beats 32/99  easy · avg 70%       24%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 20/35  medium · avg 61%    6.7%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 53.0%  █·▅▃▃▃▅▃▃▅·● beats 15/15  easy · avg 67%      6.0%  at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                52.4%  ▁···▁▁▂▅●█▆▂ beats 22/75  easy · avg 66%      4.8%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.4%  ▄●█▃▄▇▄▁▇▃·▁ beats 4/35   medium · avg 45%    3.9%  typical
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                52.4%  ▁···▁▁▂▅●█▆▂ beats 22/75  easy · avg 66%      4.9%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.4%  ▄●█▃▄▇▄▁▇▃·▁ beats 4/35   medium · avg 45%    4.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   10.1%  ▁·▁▁▄●█▄█▁▅▅ beats 6/35   medium · avg 51%    3.6%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           42.6%  ▃▅█▃▃▅·▃▃●·▅ beats 12/15  medium · avg 56%    2.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           43.9%  ▃·▃██▅▃·▃▃●▃ beats 13/15  medium · avg 53%    2.4%  blunt · at its level
@@ -39,13 +39,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #222 of 424 · 3.1% of its score</summary>
+<details><summary>math · #231 of 427 · 3.1% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>   49.0%  ▄··▄···▄··●▄ beats 3/5    easy · avg 76%      1.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>   49.0%  ▄··▄···▄··●▄ beats 3/5    easy · avg 75%      1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2405.04324v1">MATH</a>    21.8%  ▃·▃····▃···● beats 4/5    medium · avg 37%    1.4%  typical
 </pre>
 

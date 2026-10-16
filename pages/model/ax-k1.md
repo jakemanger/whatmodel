@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 61.7** ±1.2 · #185 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.7** ±1.2 · #186 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #151 of 460*     14%      2
-math    ▁▁▃▅█▆▄●▄▁▁▁   #118 of 424*     10%      1
+coding  ▁▁▁▃▆██●▆▄▃▁   #152 of 460*     14%      2
+math    ▁▁▃▅█▆▄●▄▁▁▁   #120 of 427*     10%      1
 </pre>
 
-<details><summary>coding · #151 of 460 · 14% of its score</summary>
+<details><summary>coding · #152 of 460 · 14% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #118 of 424 · 10% of its score</summary>
+<details><summary>math · #120 of 427 · 10% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
@@ -47,9 +47,9 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 43%           41%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 43%           40%  sharp · at its level
 <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               77.8%  ●······▅··█▃ beats 0/6    medium · avg 61%         17%  at its level
-<a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 43%        9.2%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 43%        9.3%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.2%  typical
 </pre>
 

@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others         rank  counts  tests
 chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #12 of 466*     34%      1
-math                ▁▂▃▆█▇▅●▃▁▁▁   #76 of 523*    5.2%      1
+math                ▁▁▃▆██▅●▄▁▁▁   #78 of 526*    5.1%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #14 of 182*     35%      2
 </pre>
 
@@ -32,13 +32,13 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #76 of 523 · 5.2% of its score</summary>
+<details><summary>math · #78 of 526 · 5.1% of its score</summary>
 
 Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/193  very hard · avg 6.9%    5.2%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/195  very hard · avg 6.9%    5.1%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test          result  vs the others in its run    difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   89.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 171/208  hard · avg 38%     24%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   89.8%  ▁▁▁▁▂▄▆▄▅▇●▄ beats 172/209  hard · avg 38%     24%  sharp
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   69% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   70% ▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             2   29% ▇▇▇
 prior: pull toward the middle             1% ▇
 weighted average                        = 74.1

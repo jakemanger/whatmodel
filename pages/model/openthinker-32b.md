@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▁▁▁▃▆██●▆▄▃▁   #178 of 460*    4.0%      1
-math    ▁▁▃▅█▆●█▄▁▁▁    #179 of 424     57%      3
+math    ▁▁▃▅█▆●█▄▁▁▁    #181 of 427     57%      3
 </pre>
 
 <details><summary>coding · #178 of 460 · 4.0% of its score</summary>
@@ -31,7 +31,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>math · #179 of 424 · 57% of its score</summary>
+<details><summary>math · #181 of 427 · 57% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●███▄ beats 122/310  hard · avg 51%     39%  sharp · at its level · several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●███▄ beats 122/311  hard · avg 51%     38%  sharp · at its level · several runs
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   61% ▇▇▇▇▇▇▇
-<a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model car…</a>        4   39% ▇▇▇▇▇
+<a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model car…</a>        4   38% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 54.7
 </pre>

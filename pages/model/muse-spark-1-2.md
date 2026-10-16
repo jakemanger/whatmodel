@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · closed weights
 
-**score 73.9** ±1.2 · #44 of 725 · from 9 benchmark results across 3 sources
+**score 73.9** ±1.2 · #43 of 725 · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #50 of 303     42%      4
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #50 of 306     41%      4
 coding              ▁▁▁▃▆██▇▆●▃▁   #42 of 460*     25%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●    #9 of 395*     15%      1
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #8 of 147*     10%      1
 web search          ●··········█      #2 of 2*    3.1%      1
 </pre>
 
-<details><summary>agent tasks · #50 of 303 · 42% of its score</summary>
+<details><summary>agent tasks · #50 of 306 · 41% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0327 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 13/49  avg -0.311 IPS       27%  sharp
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Terminal-Bench 2.1 (lab)</a>                  82.9%  ▁·▁·▁▁▄▃▄█●█ beats 43/58  hard · avg 25%      6.8%  sharp · small run
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">JobBench (lab)</a>                            61.6%  ●·█····█···█ beats 0/3    hard · avg 25%      4.7%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0327 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 13/49  avg -0.310 IPS       27%  sharp
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Terminal-Bench 2.1 (lab)</a>                  82.9%  ▁·▁·▁▁▄▃▄█●█ beats 43/58  hard · avg 25%      6.9%  sharp · small run
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">JobBench (lab)</a>                            61.6%  ●·█····█···█ beats 0/3    hard · avg 24%      4.7%  at its level
 <a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (lab)</a>                        85.9%  ▄·▄▄···▄●··█ beats 4/6    medium · avg 52%    3.1%  small run
 </pre>
 
@@ -43,7 +43,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1531.8  ▁▂▄▃▅█▄●▆▄▁▁ beats 79/119  avg 970        25%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1531.8  ▁▂▄▃▅█▄●▆▄▁▁ beats 79/119  avg 969        25%  sharp
 </pre>
 
 </details>
@@ -83,7 +83,7 @@ test                result  vs the others in its run  difficulty        counts  
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    60.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 64/78  very hard · avg 7.4%    5.8%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    60.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 65/79  very hard · avg 7.5%    5.9%  at its level
 <a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">AutomationBench public set (Zapie…</a>   38.2%  ●······▄█··█ beats 1/6    very hard · avg 12%     2.4%  at its level · small run
 </pre>
 

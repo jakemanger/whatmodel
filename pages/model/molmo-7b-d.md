@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others          rank  counts  tests
 coding              ▁●▁▃▆██▇▆▄▃▁   #455 of 460*    5.1%      1
-math                ▁▁●▅█▆▄█▄▁▁▁    #396 of 424     14%      2
+math                ▁▁●▅█▆▄█▄▁▁▁    #396 of 427     14%      2
 vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #137 of 147     75%     14
 </pre>
 
@@ -32,7 +32,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #396 of 424 · 14% of its score</summary>
+<details><summary>math · #396 of 427 · 14% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -56,14 +56,14 @@ test                                                         result  vs the othe
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   57.1%  ●···█▃··▅▃▃▃ beats 0/9    easy · avg 73%              6.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>                            32.9%  ●·█···█·█·██ beats 0/5    medium · avg 45%            6.8%  at its level
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                          72.6%  ▃·▃▅●▃▃▃▃▃▃▃ beats 6/13   easy · avg 78%              6.3%  at its level · small run
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.7200 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 1/9    avg 5.573 MM-MT-Bench s…    6.2%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.7200 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 1/9    avg 5.573 MM-MT-Bench s…    6.1%  sharp · noisy
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                              88.5%  ▂▂▃▂·▂●▃▃·▅█ beats 6/18   very easy · avg 91%         5.7%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       27.0%  ▄·●▄▄··▄▄▄▄█ beats 1/9    easy · avg 83%              2.8%  blunt · small run · several runs
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                                  92.2%  ▁··▃▁▁●▇█▇▄▅ beats 5/28   very easy · avg 93%         2.7%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                             70.7%  ▂▃▂█▃●█▆█▂▆▆ beats 13/38  easy · avg 73%              2.0%  blunt · at its level · small run
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1056.0  ▄▄·▄·▄▄▄·●·█ beats 6/8    avg 1031                    2.0%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1056.0  ▄▄·▄·▄▄▄·●·█ beats 6/8    avg 1030                    2.0%  blunt
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                               93.2%  ▁▁▅▇▃▇·▄·●·▃ beats 24/28  easy · avg 87%              1.1%  blunt · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                                 81.7%  ▁▁▁▄▅▁▃·▃●▃█ beats 15/24  easy · avg 79%              1.0%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                                 81.7%  ▁▁▁▄▅▁▃·▃●▃█ beats 15/24  easy · avg 79%              1.0%  blunt · small run
 </pre>
 
 </details>

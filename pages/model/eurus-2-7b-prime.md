@@ -34,7 +34,7 @@ test                result  vs the others in its run  difficulty           count
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   33.9%  ▁▁▁▁●▄▆▄▅▇█▅ beats 25/208  hard · avg 38%     35%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   33.9%  ▁▁▁▁●▄▆▄▅▇█▄ beats 25/209  hard · avg 38%     35%  sharp
 </pre>
 
 </details>

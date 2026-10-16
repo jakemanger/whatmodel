@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃●······▃·▃▃       #5 of 7*     10%      1
-math    ▁▂▃▆█●▅▇▃▁▁▁   #247 of 523*     57%      2
+math    ▁▁▃▆█●▅█▄▁▁▁   #247 of 526*     57%      2
 </pre>
 
 <details><summary>coding · #5 of 7 · 10% of its score</summary>
@@ -31,14 +31,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #247 of 523 · 57% of its score</summary>
+<details><summary>math · #247 of 526 · 57% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   61.0%  ●▃·····▃···▃ beats 0/5    medium · avg 48%     33%  sharp · at its level
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   72.0%  ●▃·····▃···▃ beats 2/5    medium · avg 60%     24%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   61.0%  ●▃·····▃···▃ beats 0/5    medium · avg 47%     33%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   72.0%  ●▃·····▃···▃ beats 2/5    medium · avg 59%     24%  sharp · at its level
 </pre>
 
 </details>

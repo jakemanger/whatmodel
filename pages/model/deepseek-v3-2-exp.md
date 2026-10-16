@@ -16,56 +16,56 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #142 of 303*    4.0%      1
-coding          ▁▁▁▃▆██●▆▄▃▁    #134 of 460     43%      4
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #83 of 395*    8.9%      1
-math            ▁▁▃▅█▆▄●▄▁▁▁     #72 of 424     14%      3
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #144 of 306*    4.1%      1
+coding          ▁▁▁▃▆██●▆▄▃▁    #133 of 460     43%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #83 of 395*    8.8%      1
+math            ▁▁▃▅█▆▄●▄▁▁▁     #74 of 427     14%      3
 </pre>
 
-<details><summary>agent tasks · #142 of 303 · 4.0% of its score</summary>
+<details><summary>agent tasks · #144 of 306 · 4.1% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   54.1%  ▁▁▁▂██▅▅●▂▂▂ beats 63/77  hard · avg 31%    4.0%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   54.1%  ▁▁▁▂██▅▅●▂▂▂ beats 63/77  hard · avg 31%    4.1%  at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #134 of 460 · 43% of its score</summary>
+<details><summary>coding · #133 of 460 · 43% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   74.2%  ▂·▂▃▅▂▃█▆●▂▂ beats 43/49   very hard · avg 7.3%     21%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1271.8  ▁▂▄●▅█▄▇▆▄▁▁ beats 17/119  avg 970                  15%  sharp
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   64.1%  ▁··▁·▁▁▁▆●▇█ beats 19/45   hard · avg 29%          4.4%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1271.8  ▁▂▄●▅█▄▇▆▄▁▁ beats 17/119  avg 969                  15%  sharp
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   64.1%  ▁··▁·▁▁▁▆●▇█ beats 19/45   hard · avg 29%          4.5%  at its level
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   71.6%  ▄▄·▄·····█·● beats 5/5     medium · avg 45%        2.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #83 of 395 · 8.9% of its score</summary>
+<details><summary>chat &amp; writing · #83 of 395 · 8.8% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Qwen3.5 122B-A10B](qwen3-5-122b-a10b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1424.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 276/379  avg 1258      8.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1424.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 276/379  avg 1258      8.8%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #72 of 424 · 14% of its score</summary>
+<details><summary>math · #74 of 427 · 14% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>   88.1%  █···███·●··█ beats 4/5    medium · avg 50%       7.2%  sharp
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>   84.7%  █·█···██●··█ beats 4/5    medium · avg 42%       6.4%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>   88.1%  █···███·●··█ beats 4/5    medium · avg 49%       7.3%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>   84.7%  █·█···██●··█ beats 4/5    medium · avg 41%       6.5%  sharp
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>    96.8%  ▄······▄●▄·█ beats 2/5    very easy · avg 86%    0.7%  maxed out · noisy
 </pre>
 

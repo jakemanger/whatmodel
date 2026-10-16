@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 33.6** ±0.7 · #631 of 725 · from 12 benchmark results across 4 sources
+**score 33.7** ±0.7 · #631 of 725 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   30.4%  ▁·▂▁▂●▅█▄▄▁▂ beats 6/35   medium · avg 61%    7.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 30.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 1/15   easy · avg 67%      7.1%  at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.6%  ▁···▁▁▂●▇█▆▂ beats 15/75  easy · avg 66%      5.9%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.3%  ▄▇█●▄▇▄▁▇▃·▁ beats 14/35  medium · avg 45%    3.4%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.3%  ▄▇█●▄▇▄▁▇▃·▁ beats 14/35  medium · avg 45%    3.5%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           29.6%  ▃●█▃▃▅·▃▃▅·▅ beats 1/15   medium · avg 56%    3.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           32.1%  ▃·▃●█▅▃·▃▃▅▃ beats 3/15   medium · avg 53%    2.8%  blunt · at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    4.4%  ▁·●▁▄██▄█▁▅▅ beats 1/35   medium · avg 51%    2.7%  sharp
@@ -58,7 +58,7 @@ source                                    results  share of the score
 <a name="paper-2406.11409v2"></a><a href="https://arxiv.org/html/2406.11409v2">CodeGemma: Open Code Models Based on Ge…</a>        2    9% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 33.6
+weighted average                                   = 33.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

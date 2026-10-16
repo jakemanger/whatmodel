@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 212/276  medium · avg 72%     44%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.7%  ▁▁·▁·▂▃▄●▂·▁ beats 19/22    easy · avg 82%       34%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.7%  ▁▁·▁·▂▃▄●▂·▁ beats 19/22    easy · avg 81%       34%  typical
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           83.1%  ▄··▂▄▂▆██▄●▂ beats 19/21    easy · avg 67%       13%  at its level · noisy
 </pre>
 

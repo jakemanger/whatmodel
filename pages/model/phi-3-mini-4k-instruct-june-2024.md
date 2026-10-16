@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-06 · 3.82B params · mit
 
-**score 45.8** ±0.9 · #451 of 725 · from 7 benchmark results across 3 sources
+**score 45.8** ±0.9 · #452 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #323 of 460*     23%      1
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #356 of 395*    8.4%      1
-math            ▁▁▃●█▆▄█▄▁▁▁   #372 of 424*     22%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #324 of 460*     23%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #356 of 395*    8.3%      1
+math            ▁▁▃●█▆▄█▄▁▁▁   #375 of 427*     22%      2
 </pre>
 
-<details><summary>coding · #323 of 460 · 23% of its score</summary>
+<details><summary>coding · #324 of 460 · 23% of its score</summary>
 
-Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
@@ -32,20 +32,20 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #356 of 395 · 8.4% of its score</summary>
+<details><summary>chat &amp; writing · #356 of 395 · 8.3% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1143.1  ▁▁▁●▃▃▃▆▆▇█▃ beats 35/379  avg 1258      8.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1143.1  ▁▁▁●▃▃▃▆▆▇█▃ beats 35/379  avg 1258      8.3%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #372 of 424 · 22% of its score</summary>
+<details><summary>math · #375 of 427 · 22% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

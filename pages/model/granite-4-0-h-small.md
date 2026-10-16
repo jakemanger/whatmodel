@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 52.6** ±0.6 · #322 of 725 · from 39 benchmark results across 7 sources
+**score 52.7** ±0.6 · #320 of 725 · from 39 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -19,7 +19,7 @@ task            vs the others         rank  counts  tests
 agent tasks     ▄·▄········●      #1 of 4*    0.7%      1
 coding          █···▄······●       #1 of 4     15%      7
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #231 of 395    6.6%      3
-math            ▁▁▃▅█●▄█▄▁▁▁   #233 of 424     22%      8
+math            ▁▁▃▅█●▄█▄▁▁▁   #230 of 427     22%      8
 </pre>
 
 <details><summary>agent tasks · #1 of 4 · 0.7% of its score</summary>
@@ -59,19 +59,19 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #233 of 424 · 22% of its score</summary>
+<details><summary>math · #230 of 427 · 22% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                83.9%  █····●··▄·▄█ beats 2/7    very easy · avg 85%    7.7%  sharp · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                83.9%  █····●··▄·▄█ beats 2/7    very easy · avg 85%    7.6%  sharp · several runs
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>           59.3%  ▅····▅·█●▃·▅ beats 7/10   medium · avg 52%       2.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   74.0%  ▁·▃▁▁▂▁█▄▁▃● beats 25/27  easy · avg 68%         2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            75.7%  █●··▄█▄····▄ beats 2/7    easy · avg 80%         2.4%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>                   87.4%  ▃▃····▃·▅▅█● beats 10/10  easy · avg 82%         1.9%  typical
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          28.9%  ▄··▄█●··▄··▄ beats 4/7    hard · avg 28%         1.8%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              75.7%  ▄·▄·▄▄▄·●··█ beats 5/7    easy · avg 68%         1.5%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              75.7%  ▄·▄·▄▄▄·●··█ beats 5/7    easy · avg 68%         1.6%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   38.7%  █·▄▄●█···█·▄ beats 5/10   medium · avg 44%       1.0%  at its level
 </pre>
 
@@ -83,15 +83,15 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 76.7%  ▄···▄▄·▄●··█ beats 5/7      easy · avg 74%         8.3%  at its level · several runs
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4452  ▁▄▃▃●▄█▃▅▁▁▁ beats 10/30    avg 0.415              8.0%  sharp
-<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         38.6%  ▄···█·▄·●·▄▄ beats 4/7      very hard · avg 36%    7.6%  sharp
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             57.1%  ▄····█·▄●·▄▄ beats 4/7      medium · avg 54%       6.5%  at its level · several runs
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      40.6%  ▂▁▂▂▄▃●▃▅█▄▃ beats 40/104   very hard · avg 35%    4.7%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         38.6%  ▄···█·▄·●·▄▄ beats 4/7      hard · avg 36%         7.4%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             57.1%  ▄····█·▄●·▄▄ beats 4/7      medium · avg 54%       6.4%  at its level · several runs
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      40.6%  ▂▁▂▂▄▃●▃▅█▄▃ beats 40/104   very hard · avg 35%    4.8%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   44.5%  ▂▃▅▂●▃█▅█▅▃▆ beats 10/34    medium · avg 41%       3.5%  blunt · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▆█●▃▁ beats 137/155  easy · avg 74%         3.3%  sharp · at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.6%  █··▄··█··●·▄ beats 6/7      medium · avg 41%       2.7%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▆█●▃▁ beats 137/155  medium · avg 74%       3.4%  sharp · at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.6%  █··▄··█··●·▄ beats 6/7      medium · avg 41%       2.8%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                        64.0%  ▂····▂▂▄●▄█▄ beats 14/36    medium · avg 56%       2.3%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          69.7%  ▂▁▁▂▃▂▄●▅██▃ beats 19/46    medium · avg 62%       2.0%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        67.4%  ▃··▃▃··▅···● beats 5/7      medium · avg 56%       2.0%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          69.7%  ▂▁▁▂▃▂▄●▅██▃ beats 19/46    medium · avg 62%       2.0%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             68.1%  ▄···▄·█·▄·●█ beats 5/7      medium · avg 58%       1.7%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 2/7      medium · avg 46%       1.4%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   53.2%  ▁··▃▁●▁▅█▅▁▅ beats 4/24     hard · avg 51%         0.9%  blunt · at its level
@@ -116,7 +116,7 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 52.6
+weighted average                                   = 52.7
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-small model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.0-h-small.txt)) · Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #219 of 343*     11%      2
-coding       ▁▁▁▃▅▇█●▅▄▂▁   #155 of 529*     39%      2
-math         ▁▂▃▆█▇●▇▃▁▁▁   #180 of 523*     22%      2
+agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #222 of 346*     11%      2
+coding       ▁▁▁▃▅▇█●▅▄▂▁   #156 of 529*     39%      2
+math         ▁▁▃▆██●█▄▁▁▁   #182 of 526*     22%      2
 web search   ▂·▂▇▅█▃▄▁●▁▁      #6 of 92*    8.5%      1
 </pre>
 
-<details><summary>agent tasks · #219 of 343 · 11% of its score</summary>
+<details><summary>agent tasks · #222 of 346 · 11% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -34,26 +34,26 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #155 of 529 · 39% of its score</summary>
+<details><summary>coding · #156 of 529 · 39% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   53.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 29/49  very hard · avg 7.3%     32%  sharp · at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   60.2%  ▁··▁·▁▁▁●█▇█ beats 14/45  hard · avg 29%          6.8%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   60.2%  ▁··▁·▁▁▁●█▇█ beats 14/45  hard · avg 29%          6.9%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #180 of 523 · 22% of its score</summary>
+<details><summary>math · #182 of 526 · 22% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               88.7%  ▂▂▅▆▄█▆▃●▂▃▄ beats 76/92   hard · avg 27%           13%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/193  very hard · avg 6.9%    9.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/195  very hard · avg 6.9%    9.4%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -73,8 +73,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.8%  ▁▁▁▁▂▄▆▄●▇█▅ beats 114/208  hard · avg 38%     20%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1031          7.4%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.8%  ▁▁▁▁▂▄▆▄●▇█▄ beats 114/209  hard · avg 38%     20%  sharp · at its level
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1031          7.5%  typical
 </pre>
 
 </details>

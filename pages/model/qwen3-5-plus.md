@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 68.3** ±1.7 · #97 of 725 · from 7 benchmark results across 3 sources
+**score 68.2** ±1.6 · #99 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #109 of 303*     10%      1
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #109 of 306*     10%      1
 coding       ▁▁▁▃▆██●▆▄▃▁   #138 of 460*     10%      1
-math         ▁▁▃▅█▆▄●▄▁▁▁    #82 of 424*     13%      1
+math         ▁▁▃▅█▆▄●▄▁▁▁    #87 of 427*     13%      1
 </pre>
 
-<details><summary>agent tasks · #109 of 303 · 10% of its score</summary>
+<details><summary>agent tasks · #109 of 306 · 10% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>coding · #138 of 460 · 10% of its score</summary>
 
-Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -43,13 +43,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #82 of 424 · 13% of its score</summary>
+<details><summary>math · #87 of 427 · 13% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 129/193  very hard · avg 6.9%     13%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 129/195  very hard · avg 6.9%     13%  sharp · noisy
 </pre>
 
 </details>
@@ -58,10 +58,10 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         84.8%  ▁▁▁▁▂▄▆▄▅●█▅ beats 144/208  hard · avg 38%           36%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         16.0%  █··▂●▇▄█▂▃▁▁ beats 23/74    very hard · avg 9.4%     16%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         84.8%  ▁▁▁▁▂▄▆▄▅●█▄ beats 144/209  hard · avg 38%           35%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         16.0%  █··▂●▇▄█▂▄▁▁ beats 23/75    very hard · avg 9.4%     16%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                22.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 88/135   very hard · avg 5.8%     14%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    25.4%  ▁▁▃▂▃●▆▆█▃▂▅ beats 16/78    very hard · avg 7.4%     10%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    25.4%  ▁▁▃▂▃●▆▆█▄▂▅ beats 16/79    very hard · avg 7.5%     10%  at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.3%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 36/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -77,7 +77,7 @@ source                             results  share of the score
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                          1   10% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>        1    0% ▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 68.3
+weighted average                            = 68.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

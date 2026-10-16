@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   47.1%  ▂·●··▆▄·▂▂·▄ beats 2/13   avg 35%                 44%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   47.1%  ▂·●··▆▄·▂▂·▄ beats 2/13   avg 35%                 43%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   51.4%  ▂·▄··●▂·▄▂█▄ beats 3/13   medium · avg 51%        22%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>   16.3%  ▃···●·█▃▅▃▅█ beats 1/13   avg 11%                 11%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   62.3%  ▂·······▆█▆● beats 11/13  very hard · avg 57%    6.2%  blunt

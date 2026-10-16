@@ -6,7 +6,7 @@
 
 Katanemo · released 2025-06 · 32.76B params · other (katanemo-research)
 
-**score 58.7** ±4.4 · #246 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.7** ±4.3 · #245 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #171 of 337*     91%      1
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #173 of 340*     92%      1
 </pre>
 
-<details><summary>agent tasks · #171 of 337 · 91% of its score</summary>
+<details><summary>agent tasks · #173 of 340 · 92% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   45.4%  ▁▁▁▂██▅●▆▂▂▂ beats 50/77  hard · avg 31%     91%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   45.4%  ▁▁▁▂██▅●▆▂▂▂ beats 50/77  hard · avg 31%     92%  at its level
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        9% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
 weighted average                                   = 58.7
 </pre>
 

@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #239 of 395     36%      3
-math            ▁▁▃▅●▆▄█▄▁▁▁   #263 of 424*     26%      2
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #239 of 395     37%      3
+math            ▁▁▃▅●▆▄█▄▁▁▁   #265 of 427*     26%      2
 </pre>
 
-<details><summary>chat &amp; writing · #239 of 395 · 36% of its score</summary>
+<details><summary>chat &amp; writing · #239 of 395 · 37% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.1  ▁▁▁▂▃▃●▆▆▇█▃ beats 113/379  avg 1258             22%  blunt
-<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.8%  ▁▁▃▄▆██●▃▃▁▁ beats 128/155  medium · avg 43%    9.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.8%  ▁▁▃▄▆██●▃▃▁▁ beats 128/155  medium · avg 43%     10%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (lab)</a>      83.2%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 18/25    easy · avg 78%      5.1%  small run
 </pre>
 
 </details>
 
-<details><summary>math · #263 of 424 · 26% of its score</summary>
+<details><summary>math · #265 of 427 · 26% of its score</summary>
 
-Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 188/200  easy · avg 84%       14%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 191/206  easy · avg 84%       13%  sharp · small run
 <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   63.0%  ▂▄▄▃█●▅▆▄▃▄▁ beats 37/80    medium · avg 53%     12%  at its level · small run
 </pre>
 
@@ -49,11 +49,11 @@ test                             result  vs the others in its run    difficulty 
 
 <pre>
 test                  result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   85.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 145/155  easy · avg 75%       16%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   85.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 145/155  easy · avg 74%       16%  sharp · small run
 <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>             83.1%  ▁▁▁▁▁▂▂▅██●▄ beats 178/214  easy · avg 77%       13%  small run
 <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>            46.5%  ▁▂▁▃▃█▂█▆▅▁● beats 38/40    hard · avg 34%      5.1%  at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.3%  ▃▅█▅·▃·▆●▂▁▃ beats 38/44    medium · avg 62%    2.0%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>   67.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 69/79    medium · avg 60%    0.6%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.3%  ▃▅█▅·▃·▆●▂▁▃ beats 38/44    medium · avg 61%    1.9%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>   67.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 69/79    medium · avg 59%    0.6%  blunt · at its level · small run
 </pre>
 
 </details>

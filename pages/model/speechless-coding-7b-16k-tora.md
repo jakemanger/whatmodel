@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-10 · llama2
 
-**score 42.7** ±0.8 · #518 of 725 · from 3 benchmark results across 1 source
+**score 42.7** ±0.8 · #519 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    54.9%  ▁·▁▁▃▄●▅█▃▁▁ beats 40/99  easy · avg 76%     52%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    54.9%  ▁·▁▁▃▄●▅█▃▁▁ beats 40/99  easy · avg 76%     51%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   50.6%  ▁·▁▁▁▃▄●▄█▃▁ beats 42/99  easy · avg 70%     40%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        50.6%  ▁···▁▁▂●▇█▆▂ beats 20/75  easy · avg 66%    7.8%  at its level
 </pre>

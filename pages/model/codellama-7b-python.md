@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 38.6** ±0.9 · #579 of 725 · from 6 benchmark results across 3 sources
+**score 38.7** ±0.9 · #578 of 725 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   33% ▇▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    6% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 38.6
+weighted average                                   = 38.7
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

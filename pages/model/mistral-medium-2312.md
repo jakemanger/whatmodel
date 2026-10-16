@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · closed weights
 
-**score 47.2** ±1.1 · comparison only: no current run option verified · from 6 benchmark results across 5 sources
+**score 47.3** ±1.1 · comparison only: no current run option verified · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #286 of 343*    2.7%      1
+agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #289 of 346*    2.7%      1
 chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #344 of 466     97%      5
 </pre>
 
-<details><summary>agent tasks · #286 of 343 · 2.7% of its score</summary>
+<details><summary>agent tasks · #289 of 346 · 2.7% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ source                                    results  share of the score
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   11% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 47.2
+weighted average                                   = 47.3
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

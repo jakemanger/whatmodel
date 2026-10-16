@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 36.5** ±3.0 · #609 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.5** ±3.0 · #610 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,9 +23,9 @@ math  ●··········█   #2 of 2     96%      3
 
 <pre>
 test                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 38%        35%  sharp · small run
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       65.1%  ▁▃▂●▅▇▅▇█▅▂▁ beats 12/84  very easy · avg 86%     34%  at its level · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 38%        34%  sharp · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   32.7%  ▁·▃▁▁▂▁●▄▁▃▃ beats 12/27  medium · avg 55%        28%  small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   32.7%  ▁·▃▁▁▂▁●▄▁▃▃ beats 12/27  medium · avg 55%        27%  small run
 </pre>
 
 </details>

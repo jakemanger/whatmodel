@@ -33,9 +33,9 @@ test             result  vs the others in its run  difficulty        counts  why
 <pre>
 test                    result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>         51.1%  █··▁●·▁··▁·▃ beats 8/12   medium · avg 68%     12%  too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>               58.0%  ▃··█●▃▃▅·▃▃▃ beats 5/12   easy · avg 91%      8.9%  at its level · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>   59.0%  █·▂··●··▂▂▂▃ beats 7/12   easy · avg 88%      2.1%  blunt · at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>     22.4%  ●▃▅··▃···▃▃█ beats 0/10   hard · avg 37%      1.6%  blunt · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>               58.0%  ▃··█●▃▃▅·▃▃▃ beats 5/12   easy · avg 91%      8.7%  at its level · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>   59.0%  █·▂··●··▂▂▂▃ beats 7/12   easy · avg 88%      2.0%  blunt · at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>     22.4%  ●▃▅··▃···▃▃█ beats 0/10   hard · avg 37%      1.5%  blunt · too hard for it · noisy
 </pre>
 
 </details>

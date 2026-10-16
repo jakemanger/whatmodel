@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others          rank  counts  tests
 coding              ▁▁▁▃▅▇●▇▅▄▂▁   #284 of 529*     16%      2
-chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #279 of 466*    5.2%      1
-math                ▁▂▃●█▇▅▇▃▁▁▁    #388 of 523     23%      4
+chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #279 of 466*    5.1%      1
+math                ▁▁▃▆●█▅█▄▁▁▁    #390 of 526     23%      4
 vision &amp; documents  ▁▁▃▃●▃▅▄▇▇█▃    #149 of 182     12%      4
 </pre>
 
@@ -34,27 +34,27 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #279 of 466 · 5.2% of its score</summary>
+<details><summary>chat &amp; writing · #279 of 466 · 5.1% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.5  ▁▁▁▂▃▃●▆▆▇█▃ beats 115/379  avg 1258      5.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.5  ▁▁▁▂▃▃●▆▆▇█▃ beats 115/379  avg 1258      5.1%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #388 of 523 · 23% of its score</summary>
+<details><summary>math · #390 of 526 · 23% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Falcon 40B (base)](falcon-40b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.1%  ▂▂▅●▄█▆▃▅▂▃▄ beats 23/92   hard · avg 27%           10%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   34.8%  ▁▁▁▆█●▇▇▄··▂ beats 17/38   hard · avg 30%          6.2%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          91.4%  ▁▄·▁▄█▅▅●███ beats 23/43   very easy · avg 87%     5.5%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 26/193  very hard · avg 6.9%    1.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 26/195  very hard · avg 6.9%    1.4%  sharp · noisy
 </pre>
 
 </details>
@@ -79,7 +79,7 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   77.4%  ▁·▁▁▄▄▄●█▄▂▁ beats 24/53    easy · avg 75%          21%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   19.4%  ▁▁▃▆●█▁▁·▁▁▁ beats 29/57    hard · avg 15%         7.2%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         40.4%  ▁▁▁▁▂●▆▄▅▇█▅ beats 38/208   hard · avg 38%         5.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         40.4%  ▁▁▁▁▂●▆▄▅▇█▄ beats 38/209   hard · avg 38%         5.7%  sharp
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   49.8%  ▂·●··▆▄·▂▂·▄ beats 1/13     avg 35%                3.6%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   72.2%  ▂·▄··▂▂·▄●█▄ beats 7/13     medium · avg 51%       1.8%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 254/276  medium · avg 72%       1.1%  at its level · noisy

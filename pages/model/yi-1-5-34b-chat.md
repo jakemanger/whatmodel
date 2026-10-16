@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #294 of 460     17%      5
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #295 of 460     17%      5
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #299 of 395*    9.3%      2
-math            ▁▁▃●█▆▄█▄▁▁▁    #334 of 424     19%      3
+math            ▁▁▃●█▆▄█▄▁▁▁    #338 of 427     19%      3
 </pre>
 
-<details><summary>coding · #294 of 460 · 17% of its score</summary>
+<details><summary>coding · #295 of 460 · 17% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    44.1%  ▁▂●▃▆█▆▃▂·▁▁ beats 7/47   medium · avg 57%     13%  sharp · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   57.0%  ▃··▁▂▂▃▂●▃▄▂ beats 32/47  medium · avg 51%    1.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   57.0%  ▃··▁▂▂▃▂●▃▄▂ beats 32/47  medium · avg 51%    1.5%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   24.6%  █▂▁▁▂▂▂▃●▅▅▇ beats 23/47  hard · avg 32%      1.4%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   31.1%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 24/47  hard · avg 31%      1.1%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   66.1%  ▁▁▁······▁●█ beats 15/47  easy · avg 67%      0.0%  blunt · at its level · noisy
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #334 of 424 · 19% of its score</summary>
+<details><summary>math · #338 of 427 · 19% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
@@ -65,13 +65,13 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             72.8%  ▁·▁▁▄▄●▅█▄▂▁ beats 17/53    easy · avg 75%          22%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             72.8%  ▁·▁▁▄▄●▅█▄▂▁ beats 17/53    easy · avg 75%          23%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        33.5%  ▃▂·▆▆●█▆▅▃▃▃ beats 12/33    medium · avg 39%       5.4%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        43.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 37/58    medium · avg 48%       5.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 42.785 WB-Score    5.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 42.742 WB-Score    5.1%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             11.5%  ▁▁▃●██▁▁·▁▁▁ beats 11/57    hard · avg 15%         4.4%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             46.6%  ▁▂▂●▃█▃▆▅▄▂▃ beats 14/95    medium · avg 64%       3.7%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.0%  ▁▁▁▁●▄▆▄▅▇█▅ beats 20/208   hard · avg 38%         3.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.0%  ▁▁▁▁●▄▆▄▅▇█▄ beats 20/209   hard · avg 38%         3.6%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                46.3%  ▁··▁▁▂▂●▅▆█▆ beats 21/70    medium · avg 61%       2.9%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             73.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 203/276  medium · avg 72%       1.1%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             96.3%  ▁▁▂▃▄▄█●▃▂▂▁ beats 90/140   very easy · avg 94%    0.3%  blunt · maxed out · noisy

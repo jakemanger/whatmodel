@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-02 · 230B params (10B active) · modified-mit
 
-**score 65.4** ±1.1 · #137 of 725 · from 11 benchmark results across 9 sources
+**score 65.3** ±1.1 · #138 of 725 · from 11 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #103 of 303     20%      3
-coding          ▁▁▁▃▆██▇●▄▃▁     #97 of 460     33%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #103 of 306     20%      3
+coding          ▁▁▁▃▆██▇●▄▃▁     #97 of 460     32%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #120 of 395*     14%      1
 </pre>
 
-<details><summary>agent tasks · #103 of 303 · 20% of its score</summary>
+<details><summary>agent tasks · #103 of 306 · 20% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
@@ -29,27 +29,27 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   62.6%  ▆··▆▄▂▄▂▆●█▄ beats 17/23  very hard · avg 13%      12%  sharp · at its level
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   15.2%  ●·▄··█···▄·█ beats 0/6    very hard · avg 6.4%    4.7%  typical
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.8%  ▃··▃·▃●█▃▃▃█ beats 4/14   very hard · avg 2.6%    4.0%  sharp · noisy
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.8%  ▃··▃·▃●█▃▃▃█ beats 4/14   very hard · avg 2.6%    4.1%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>coding · #97 of 460 · 33% of its score</summary>
+<details><summary>coding · #97 of 460 · 32% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1386.2  ▁▂▄▃▅●▄▇▆▄▁▁ beats 39/119  avg 970                  24%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1386.2  ▁▂▄▃▅●▄▇▆▄▁▁ beats 39/119  avg 969                  24%  sharp
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   15.2%  ●·▄··█···▄·█ beats 0/6     very hard · avg 6.4%    4.7%  typical
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.8%  ▃··▃·▃●█▃▃▃█ beats 4/14    very hard · avg 2.6%    4.0%  sharp · noisy
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.8%  ▃··▃·▃●█▃▃▃█ beats 4/14    very hard · avg 2.6%    4.1%  sharp · noisy
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #120 of 395 · 14% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 mini](gpt-5-mini.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -64,9 +64,9 @@ test            result  vs the others in its run    difficulty  counts  why
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5">ARC-AGI-1 public evaluation set (…</a>   59.1%  ▁·▇▃▁·●▇▁·▇▃ beats 12/27  very hard · avg 3.8%     11%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   42.8%  ▅··▃▅·●·▃██▃ beats 6/15   hard · avg 22%           10%  at its level
-<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.3%  ▁▁▂▁▃▄█●▄▅▂▃ beats 23/39  very hard · avg 21%     9.3%  at its level
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.3%  ▁▁▂▁▃▄█●▄▅▂▃ beats 23/39  very hard · avg 21%     9.4%  at its level
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        27.1%  ▃·●▅█·▅█▅▃▃▃ beats 2/17   very hard · avg 11%     6.1%  at its level
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/minimax-m2.5">ARC-AGI-2 public evaluation set (…</a>    5.4%  █··▂●▁▃▁▃·▁▃ beats 11/24  very hard · avg 0.3%    5.3%  sharp · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/minimax-m2.5">ARC-AGI-2 public evaluation set (…</a>    5.4%  █··▂●▁▃▁▃·▁▃ beats 11/24  very hard · avg 0.3%    5.4%  sharp · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.9%  ▁▂▁▂▅█●▃▄▃▁▁ beats 57/98  very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -88,7 +88,7 @@ source                                    results  share of the score
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.4
+weighted average                                   = 65.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

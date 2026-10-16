@@ -28,7 +28,7 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    22.6%  ▁·▁▁●▄▆▅█▃▁▁ beats 7/99   easy · avg 76%     41%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   17.7%  ▁·▁▁●▃▄▄▄█▃▁ beats 7/99   easy · avg 70%     28%  sharp
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        23.3%  ▁···●▁▂▅▇█▆▂ beats 1/75   easy · avg 66%    8.1%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        23.3%  ▁···●▁▂▅▇█▆▂ beats 1/75   easy · avg 66%    8.2%  at its level
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1116.6  ▁▁▁●▃▃▃▆▆▇█▃ beats 21/379  avg 1258            7.9%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1044.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 24/95   avg 1186            7.1%  typical
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>    3.4%  ●▁▁▅█▅▄▃▃▅▃▁ beats 1/60    medium · avg 46%    1.9%  sharp · too hard for it
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>    3.4%  ●▁▁▅█▅▄▃▃▅▃▁ beats 1/60    medium · avg 46%    2.0%  sharp · too hard for it
 </pre>
 
 </details>

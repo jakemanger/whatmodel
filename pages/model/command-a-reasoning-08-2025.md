@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 54.5** ±2.0 · #291 of 725 · from 6 benchmark results across 2 sources
+**score 54.6** ±2.0 · #289 of 725 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #151 of 303     59%      3
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #153 of 306     59%      3
 coding       ▁▁▁▃▆██●▆▄▃▁   #184 of 460*    8.7%      1
-math         ▁▁▃▅█●▄█▄▁▁▁   #227 of 424*     24%      1
+math         ▁▁▃▅█●▄█▄▁▁▁   #226 of 427*     24%      1
 </pre>
 
-<details><summary>agent tasks · #151 of 303 · 59% of its score</summary>
+<details><summary>agent tasks · #153 of 306 · 59% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty            counts  why
 <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>            37.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 30/89  hard · avg 26%           27%  sharp · at its level · small run
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   57.1%  ▁▁▁▂██▅▅●▂▂▂ beats 68/77  hard · avg 31%           19%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   57.1%  ▁▁▁▂██▅▅●▂▂▂ beats 68/77  hard · avg 31%           20%  at its level
 <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>          3.0%  ▂▅●▂▂▆▂▂█▅▅▂ beats 4/27   very hard · avg 4.2%     13%  sharp · too hard for it · small run
 </pre>
 
@@ -45,9 +45,9 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>math · #227 of 424 · 24% of its score</summary>
+<details><summary>math · #226 of 427 · 24% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
@@ -60,7 +60,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   36.0%  ●········██▅ beats 0/8    medium · avg 42%    6.2%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   36.0%  ●········██▅ beats 0/8    medium · avg 42%    6.1%  at its level · small run
 </pre>
 
 </details>
@@ -72,9 +72,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        5   79% ▇▇▇▇▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   19% ▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   20% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 54.5
+weighted average                                   = 54.6
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

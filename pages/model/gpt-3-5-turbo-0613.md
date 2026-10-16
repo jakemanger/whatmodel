@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁    #324 of 529     17%      4
+coding          ▁▁▁▃▅▇●▇▅▄▂▁    #325 of 529     18%      4
 chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #352 of 466     42%      4
-math            ▁▂▃▆█●▅▇▃▁▁▁   #220 of 523*    4.3%      1
+math            ▁▁▃▆█●▅█▄▁▁▁   #223 of 526*    4.0%      1
 </pre>
 
-<details><summary>coding · #324 of 529 · 17% of its score</summary>
+<details><summary>coding · #325 of 529 · 18% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   50.4%  ▁·▁▂▄▁●▄█▆▂▂ beats 14/62  medium · avg 50%     11%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.0%  ▃▃▃·▆▃▃█▃▂▂● beats 24/25  easy · avg 83%      2.6%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.0%  ▃▃▃·▆▃▃█▃▂▂● beats 24/25  easy · avg 83%      2.7%  sharp
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           49.0%  ▁··▁▅▂█▇●··▁ beats 21/22  medium · avg 52%    2.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           49.4%  ▁·▂▃▁█▁●···▁ beats 20/22  medium · avg 51%    2.0%  blunt · at its level
 </pre>
@@ -44,18 +44,18 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             22.4%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 57/122  hard · avg 35%               20%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.8%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 24/60   medium · avg 46%             13%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1161.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 70/95   avg 1186                    5.2%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.521 MT-Bench scor…    4.1%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.514 MT-Bench scor…    4.0%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #220 of 523 · 4.3% of its score</summary>
+<details><summary>math · #223 of 526 · 4.0% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   76.5%  ▆▂▅█▅▅▃●···▂ beats 24/25  easy · avg 72%    4.3%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   76.5%  ▆▂▅█▅▅▃●···▂ beats 24/25  easy · avg 72%    4.0%  sharp · at its level
 </pre>
 
 </details>
@@ -66,10 +66,10 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           51.0%  ▆●▄▄█▄▂·▄█·▄ beats 3/23   medium · avg 56%       9.4%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            52.7%  ▄●▄▂▂█▂▄▂█▂▄ beats 2/22   medium · avg 61%       8.3%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       70.8%  ▁·····▂█▂●·▁ beats 24/25  medium · avg 74%       8.0%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       70.8%  ▁·····▂█▂●·▁ beats 24/25  medium · avg 74%       8.1%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.7%  ▁▁▃▃▄█▄▁●··▁ beats 21/25  medium · avg 72%       3.6%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   49.2%  ▂··▄·▂▆▄▂●·▂ beats 10/14  medium · avg 53%       2.5%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   47.2%  ▄······█··●▄ beats 3/4    medium · avg 50%       1.6%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   47.2%  ▄······█··●▄ beats 3/4    medium · avg 50%       1.7%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   21.0%  ●···▁▁▁▂▃·▆▂ beats 0/23   very hard · avg 29%    1.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   51.2%  ▂··▁▃▂▂▂●▅▁▂ beats 13/25  medium · avg 59%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   53.5%  █·····●····▁ beats 9/11   very hard · avg 55%    0.4%  sharp · too hard for it · noisy
@@ -89,8 +89,8 @@ source                                    results  share of the score
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   13% ▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   11% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    5% ▇
-<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    4% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    4% ▇
+<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    4% ▇
 <a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    3% ▇
 <a name="acl-2023-emnlp-main-187"></a><a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank: A Comprehensive Benchmark for…</a>        1    2% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
@@ -98,7 +98,7 @@ prior: pull toward the middle                        0% ▇
 weighted average                                   = 47.3
 </pre>
 
-<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-187-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>
+<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-187-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>
 
 ## How to run it
 

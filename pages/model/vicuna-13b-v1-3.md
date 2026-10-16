@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06
 
-**score 37.1** ±2.0 · #602 of 725 · from 4 benchmark results across 2 sources
+**score 37.2** ±2.0 · #602 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -47,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   79% ▇▇▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   79% ▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2   19% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 37.1
+weighted average                                   = 37.2
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt))</sub>
