@@ -13,14 +13,14 @@ export type QuantFinding = {
   study?: string; // findings sharing a study come from one table, so they're correlated
 };
 
-// "q4_k_m" → 4, "ud-q2_k_xl" → 2, "ud-iq1_m" → 1, "q8_0" → 8, "f16" → 16.
+// "q4_k_m" → 4, "ud-q2_k_xl" → 2, "ud-iq1_m" → 1, "q8_0" → 8, "f16" → 16, "mlx-3bit" → 3, "mlx-8bit" → 8.
 // QAT (trained for 4-bit) and MXFP4 (gpt-oss ships in it) are kept separate.
 export function bitsOf(v: Variant): Bits {
   const q = v.quant.toLowerCase();
   if (q.includes("qat")) return "qat";
   if (q.includes("mxfp4")) return "mxfp4";
   if (/(^|[^a-z])b?f16/.test(q)) return 16;
-  const m = q.match(/(?:^|[^a-z])i?q(\d)/);
+  const m = q.match(/(?:^|[^a-z])i?q(\d)/) ?? q.match(/(?:^|[^a-z0-9])(\d{1,2})-?bit(?![a-z])/);
   return m ? Number(m[1]) : 4;
 }
 
