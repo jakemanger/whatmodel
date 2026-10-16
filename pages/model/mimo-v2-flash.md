@@ -6,7 +6,7 @@
 
 Xiaomi · released 2025-12 · 309.8B params (15B active) · mit
 
-**score 65.5** ±1.2 · #136 of 724 · from 12 benchmark results across 3 sources
+**score 65.4** ±1.2 · #138 of 725 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #103 of 302*     18%      2
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #104 of 303*     18%      2
 coding          ▁▁▁▃▆██●▆▄▃▁   #136 of 460*     32%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #124 of 395*     15%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁    #107 of 424     19%      4
 web search      █●···█····██       #4 of 5*    8.8%      1
 </pre>
 
-<details><summary>agent tasks · #103 of 302 · 18% of its score</summary>
+<details><summary>agent tasks · #104 of 303 · 18% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1292.5  ▁▂▄●▅█▄▇▆▄▁▁ beats 19/119  avg 969              26%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1292.5  ▁▂▄●▅█▄▇▆▄▁▁ beats 19/119  avg 970              26%  sharp
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unspecif…</a>   81.6%  ▂▃▄▄▅██▅●▇▃▆ beats 46/65   medium · avg 48%    6.4%  small run
 </pre>
 
@@ -102,7 +102,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   41% ▇▇▇▇▇
 <a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.5
+weighted average                                   = 65.4
 </pre>
 
 <sub>Licences: stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

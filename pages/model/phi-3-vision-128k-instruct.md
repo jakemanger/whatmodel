@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 43.1** ±1.7 · #510 of 724 · from 9 benchmark results across 4 sources
+**score 43.0** ±1.7 · #511 of 725 · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>        60.5%  ▄█●▄▄·██·▄·█ beats 3/12   easy · avg 69%       41%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      881.1  ●▁▂▂▂▂▄▅▅▆██ beats 0/145  avg 1058             22%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        31.6%  ▂▂▂●▃▂·▂▂··▂ beats 4/13   hard · avg 34%       14%  typical
-<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                     40.4%  ▁····▁●▄█▇▆▆ beats 2/52   hard · avg 48%      9.0%  small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                     40.4%  ▁····▁●▄█▇▆▆ beats 2/52   hard · avg 48%      8.9%  small run
 <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>           44.5%  ▁··▁●▄▇█▅▆█▄ beats 4/47   medium · avg 48%    5.8%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   38.4%  ▅●█··▅▃····▃ beats 2/9    hard · avg 42%      3.2%  blunt
 <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                        81.4%  ▁··▁▁▁▁▁▂●▅█ beats 16/44  easy · avg 78%      1.3%  blunt · at its level · noisy · small run
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (lab)</a>                    5   18% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.1
+weighted average                                   = 43.0
 </pre>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

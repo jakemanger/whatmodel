@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 66.0** ±1.0 · #129 of 724 · from 15 benchmark results across 10 sources
+**score 65.9** ±1.0 · #130 of 725 · from 15 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #113 of 302     15%      4
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #114 of 303     15%      4
 coding              ▁▁▁▃▆██●▆▄▃▁   #161 of 460     28%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #78 of 395*     11%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁    #89 of 424     29%      4
@@ -24,16 +24,16 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #78 of 147*    7.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #32 of 80*    4.5%      1
 </pre>
 
-<details><summary>agent tasks · #113 of 302 · 15% of its score</summary>
+<details><summary>agent tasks · #114 of 303 · 15% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      69.6%  ▁▁▁▂██▅▅▆▂●▂ beats 74/77  hard · avg 31%          5.0%  at its level
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   13.1%  ▃●▂▃·▆▃▂█▅▅▂ beats 2/25   very hard · avg 4.1%    5.0%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   13.1%  ▃●▂▃·▆▃▂█▅▅▂ beats 2/25   very hard · avg 4.2%    5.0%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>    1.2%  ●··▃·▃██▃▃▃█ beats 0/14   very hard · avg 2.6%    3.4%  sharp · noisy
-<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     82.7%  ▂··▄···▂▄▄█● beats 13/13  medium · avg 44%        1.9%  at its level
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     82.7%  ▂··▄···▂▄▄█● beats 13/13  medium · avg 45%        1.9%  at its level
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1241.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 10/119  avg 969                  19%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1241.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 10/119  avg 970                  19%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   71.6%  ▁··▁·▁▁▁▆█●█ beats 33/45   hard · avg 29%          5.6%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>    1.2%  ●··▃·▃██▃▃▃█ beats 0/14    very hard · avg 2.6%    3.4%  sharp · noisy
 </pre>
@@ -68,7 +68,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.0%  ▁▁▁▁●▇▄▃▁▃·▃ beats 8/24   very hard · avg 9.0%     12%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.0%  ▁▁▁▁●▇▄▃▁▃·▃ beats 8/24   very hard · avg 9.1%     12%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   53.3%  ▂··▄▂▄●▆▆▄▄█ beats 8/23   hard · avg 22%          9.4%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   50.0%  ▃·▃▃█▁·●·▁▁▁ beats 13/18  hard · avg 19%          6.1%  at its level
 <a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench (200 graduate-le…</a>    4.0%  ▃●·▃··▅▃█··▃ beats 1/10   very hard · avg 3.0%    1.5%  noisy
@@ -78,7 +78,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>vision &amp; documents · #78 of 147 · 7.9% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -125,7 +125,7 @@ source                                    results  share of the score
 <a name="paper-2603.26996v1-formalproofbench"></a><a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench</a>                                1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 66.0
+weighted average                                   = 65.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · FormalProofBench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

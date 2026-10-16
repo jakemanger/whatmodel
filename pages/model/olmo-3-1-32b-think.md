@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 58.5** ±0.9 · #214 of 724 · from 21 benchmark results across 5 sources
+**score 58.4** ±0.9 · #215 of 725 · from 21 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,13 +36,13 @@ test                    result  vs the others in its run  difficulty        coun
 
 <details><summary>chat &amp; writing · #229 of 395 · 13% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 114/379  avg 1258            8.2%  blunt
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (l…</a>   69.1%  █···█·█·█·●█ beats 4/5      medium · avg 42%    4.2%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   93.8%  ▄▄·····█▄▄·● beats 6/6      easy · avg 78%      0.5%  noisy
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   93.8%  ▄▄·····█▄▄·● beats 6/6      easy · avg 79%      0.5%  noisy
 </pre>
 
 </details>
@@ -86,13 +86,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3 (lab)</a>                                   14   66% ▇▇▇▇▇▇▇▇
+<a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3 (lab)</a>                                   14   65% ▇▇▇▇▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   21% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card (…</a>        2    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.5
+weighted average                                   = 58.4
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

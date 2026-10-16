@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 47.6** ±1.3 · #409 of 724 · from 11 benchmark results across 3 sources
+**score 47.6** ±1.3 · #410 of 725 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turb
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       87.4%  ▂▃··▃▂▅█●▃▂▃ beats 14/22  very easy · avg 87%     12%  sharp
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       87.4%  ▂▃··▃▂▅█●▃▂▃ beats 14/22  very easy · avg 88%     12%  sharp
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   39.2%  ▃▃●▂▂▆·····▁ beats 6/22   medium · avg 57%       6.9%  at its level
 </pre>
 
@@ -50,7 +50,7 @@ test                             result  vs the others in its run  difficulty   
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 7/22    easy · avg 75%          28%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 63.0%  ▁▄·▁▁·●█·▄▄▁ beats 6/22    medium · avg 72%        25%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          28.8%  ▁▁▁▃▃▃▁●▁▃·▄ beats 12/21   hard · avg 30%         5.0%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          28.8%  ▁▁▁▃▃▃▁●▁▃·▄ beats 12/21   hard · avg 31%         5.0%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.5%  ▃·▁▁▂▁▂▅●▇▄▁ beats 45/100  medium · avg 66%       3.5%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 84/146  easy · avg 82%         2.5%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   89.2%  ▁▁▂●▄▄█▆▃▂▂▁ beats 22/140  very easy · avg 94%    1.3%  blunt · maxed out · noisy

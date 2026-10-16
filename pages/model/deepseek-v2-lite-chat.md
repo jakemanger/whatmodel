@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-05 · 15.71B params (2.4B active) · deepseek
 
-**score 39.9** ±1.1 · #563 of 724 · from 15 benchmark results across 5 sources
+**score 39.8** ±1.1 · #564 of 725 · from 15 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,10 +29,10 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    3.6%  ●▁·▁▂▄▆█▅▂·▂ beats 0/31     hard · avg 23%       10%  sharp
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                      57.3%  ▁▁▁▁▂▂▆●█▅▂▁ beats 111/205  easy · avg 81%      7.8%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>                           45.8%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 27/86    easy · avg 68%      3.9%  at its level · small run
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   20.5%  ▃··▁▂▂●▂█▃▄▂ beats 15/47    medium · avg 50%    2.5%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   20.5%  ▃··▁▂▂●▂█▃▄▂ beats 15/47    medium · avg 51%    2.5%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   15.0%  ▁▁▁▁▁▁●▂▃█▅▄ beats 10/47    hard · avg 31%      2.2%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.9%  █▂▁▁▂●▂▃▅▅▅▇ beats 16/47    hard · avg 32%      1.7%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.8%  ▁▁▁······▁▃● beats 38/47    easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.8%  ▁▁▁······▁▃● beats 38/47    easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test         result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   72.0%  ▂▂▂▂▃▄▅▇●█▆▄ beats 122/200  very easy · avg 89%    8.7%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   72.0%  ▂▂▂▂▃▄▅▇●█▆▄ beats 122/200  very easy · avg 90%    8.7%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>    27.9%  ▃▅▂▆▅▃●▅█▃▃▂ beats 16/30    medium · avg 44%       4.7%  small run
 </pre>
 
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    6% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 39.9
+weighted average                                   = 39.8
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

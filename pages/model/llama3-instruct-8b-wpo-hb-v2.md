@@ -6,7 +6,7 @@
 
 wzhouad (WPO) · released 2024-07 · 8.03B params
 
-**score 56.6** ±1.5 · #293 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.6** ±1.5 · #294 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

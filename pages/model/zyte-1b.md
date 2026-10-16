@@ -6,7 +6,7 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 10.4** ±2.5 · #710 of 724 · from 3 benchmark results across 1 source
+**score 10.5** ±2.5 · #711 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 10.4
+weighted average                                   = 10.5
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

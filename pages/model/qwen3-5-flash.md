@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 64.4** ±1.0 · #149 of 724 · from 9 benchmark results across 3 sources
+**score 64.4** ±1.0 · #149 of 725 · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank h
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1243.1  ▁▂●▃▅█▄▇▆▄▁▁ beats 11/119  avg 969        20%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1243.1  ▁▂●▃▅█▄▇▆▄▁▁ beats 11/119  avg 970        20%  sharp
 </pre>
 
 </details>

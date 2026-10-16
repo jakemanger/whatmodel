@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 42.8** ±0.8 · #513 of 724 · from 22 benchmark results across 6 sources
+**score 42.8** ±0.8 · #514 of 725 · from 22 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                             36.3%  ▃▂●█▃·█▃▅··▂ beats 4/23     medium · avg 54%        11%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.0%  ▁·····▂█▂●·▁ beats 20/25    medium · avg 74%        10%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                        56.5%  ▄···▄···█●·▄ beats 4/5      easy · avg 77%         8.0%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           80.4%  █··█·█·██··● beats 5/5      easy · avg 86%         4.2%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           80.4%  █··█·█·██··● beats 5/5      easy · avg 86%         4.3%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      25.4%  █·····▄▄●··▄ beats 4/5      medium · avg 41%       4.2%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             73.0%  █···██··█·█● beats 5/5      easy · avg 81%         3.1%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                            85.4%  █···██···██● beats 5/5      very easy · avg 91%    2.8%  typical

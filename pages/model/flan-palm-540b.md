@@ -25,7 +25,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   57.0%  ▆·▂·▄▂▂▂▂█▄● beats 17/18  medium · avg 47%     24%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   57.0%  ▆·▂·▄▂▂▂▂█▄● beats 17/18  medium · avg 48%     24%  sharp · at its level
 </pre>
 
 </details>

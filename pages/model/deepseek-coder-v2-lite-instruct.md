@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 15.71B params (2.4B active) · deepseek
 
-**score 46.4** ±1.1 · #442 of 724 · from 10 benchmark results across 7 sources
+**score 46.4** ±1.1 · #443 of 725 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #299 of 302*    2.9%      1
+agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #300 of 303*    2.9%      1
 coding       ▁▁▁▃▆●█▇▆▄▃▁    #312 of 460     34%      6
 </pre>
 
-<details><summary>agent tasks · #299 of 302 · 2.9% of its score</summary>
+<details><summary>agent tasks · #300 of 303 · 2.9% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -39,10 +39,10 @@ Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   20.6%  ▁▁·▁▂●▆█▅▂·▂ beats 5/31   hard · avg 23%       19%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     46.1%  ▃▁▁█▁●▅▃▄▇▁▄ beats 11/31  medium · avg 39%    4.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   12.8%  ▃··▁▂●▃▂█▃▄▂ beats 10/47  medium · avg 50%    3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   12.8%  ▃··▁▂●▃▂█▃▄▂ beats 10/47  medium · avg 51%    3.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.2%  █▂▁▁▂●▂▃▅▅▅▇ beats 15/47  hard · avg 32%      3.5%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   27.0%  ▁▁▁▁▁▁▂▂●█▅▄ beats 18/47  hard · avg 31%      2.9%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 31/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 31/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>

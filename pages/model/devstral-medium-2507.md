@@ -25,7 +25,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1075.8  ●▂▄▃▅█▄▇▆▄▁▁ beats 0/119  avg 969        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1075.8  ●▂▄▃▅█▄▇▆▄▁▁ beats 0/119  avg 970        98%  sharp
 </pre>
 
 </details>

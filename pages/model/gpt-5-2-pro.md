@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 75.9** ±1.0 · #28 of 724 · from 4 benchmark results across 2 sources
+**score 75.9** ±1.0 · #29 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ math  ▁▁▃▅█▆▄█▄●▁▁   #21 of 424*     85%      2
 
 <details><summary>math · #21 of 424 · 85% of its score</summary>
 
-Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Muse Spark 1.3](muse-spark-1-3.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
+Beats [Muse Spark 1.3](muse-spark-1-3.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Kimi K3](kimi-k3.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty            counts  why

@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-11 · 1000B params (32B active) · modified-mit
 
-**score 66.6** ±1.1 · #115 of 724 · from 13 benchmark results across 5 sources
+**score 66.5** ±1.1 · #118 of 725 · from 13 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #118 of 302     24%      4
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #120 of 303     24%      4
 coding          ▁▁▁▃▆██▇●▄▃▁   #124 of 460*     26%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃    #77 of 395*     12%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁   #105 of 424*    8.6%      2
 web search      ██···█····●█       #2 of 5*    3.5%      1
 </pre>
 
-<details><summary>agent tasks · #118 of 302 · 24% of its score</summary>
+<details><summary>agent tasks · #120 of 303 · 24% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -43,8 +43,8 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1321.4  ▁▂▄●▅█▄▇▆▄▁▁ beats 22/119  avg 969            20%  sharp
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   70.7%  ▁··▁·▁▁▁▆█●█ beats 32/45   hard · avg 29%    5.9%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1321.4  ▁▂▄●▅█▄▇▆▄▁▁ beats 22/119  avg 970            20%  sharp
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   70.7%  ▁··▁·▁▁▁▆█●█ beats 32/45   hard · avg 29%    6.0%  at its level
 </pre>
 
 </details>
@@ -101,13 +101,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   32% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   33% ▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   28% ▇▇▇
 <a name="card2-stepfun-ai-step-3-5-flash"></a><a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">stepfun-ai/Step-3.5-Flash model card</a>            6   24% ▇▇▇
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1    9% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 66.6
+weighted average                                   = 66.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>

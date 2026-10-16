@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 74.2** ±1.4 · #40 of 724 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 74.2** ±1.4 · #39 of 725 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #44 of 302     23%      3
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #44 of 303     23%      3
 coding              ▁▁▁▃▆██▇▆▄●▁    #25 of 460     31%      4
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #14 of 147*     21%      1
 </pre>
 
-<details><summary>agent tasks · #44 of 302 · 23% of its score</summary>
+<details><summary>agent tasks · #44 of 303 · 23% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -63,8 +63,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>                   91.0%  ▁▁▁▁▂▄▅▅██●▄ beats 278/310  hard · avg 40%           25%  sharp
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>           36.5%  ▁▁▁▃▆▆▇█●▆▁▃ beats 84/104   very hard · avg 5.1%     14%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>                   91.0%  ▁▁▁▁▂▄▅▅██●▄ beats 278/310  hard · avg 40%           26%  sharp
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>           36.5%  ▁▁▁▃▆▆▇█●▆▁▃ beats 84/104   very hard · avg 5.2%     14%  at its level
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecified)…</a>   81.5%  ▃▇▂▄▅▅▂▄▄▆█● beats 79/80    medium · avg 41%        8.2%  typical
 </pre>
 

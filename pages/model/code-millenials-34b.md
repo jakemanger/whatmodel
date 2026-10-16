@@ -6,7 +6,7 @@
 
 Bud Ecosystem · released 2024-01 · 33.75B params · llama2
 
-**score 49.8** ±0.9 · #373 of 724 · from 3 benchmark results across 1 source
+**score 49.7** ±0.9 · #376 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

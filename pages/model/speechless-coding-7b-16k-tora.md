@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-10 · llama2
 
-**score 42.7** ±0.8 · #518 of 724 · from 3 benchmark results across 1 source
+**score 42.7** ±0.8 · #518 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

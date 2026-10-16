@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
-**score 40.8** ±1.3 · #545 of 724 · from 10 benchmark results across 3 sources
+**score 40.8** ±1.3 · #546 of 725 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #266 of 395*    5.7%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #266 of 395*    5.6%      1
 math            ▁▁▃▅●▆▄█▄▁▁▁   #313 of 424*     39%      2
 </pre>
 
-<details><summary>chat &amp; writing · #266 of 395 · 5.7% of its score</summary>
+<details><summary>chat &amp; writing · #266 of 395 · 5.6% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄····█▄···▄● beats 6/6    easy · avg 82%    5.7%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄····█▄···▄● beats 6/6    easy · avg 82%    5.6%  at its level
 </pre>
 
 </details>

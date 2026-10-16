@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 34.39B params · apache-2.0
 
-**score 47.3** ±0.7 · #422 of 724 · from 20 benchmark results across 11 sources
+**score 47.3** ±0.7 · #422 of 725 · from 20 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,10 +28,10 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    44.1%  ▁▂●▃▆█▆▃▂·▁▁ beats 7/47   medium · avg 57%     13%  sharp · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   57.0%  ▃··▁▂▂▃▂●▃▄▂ beats 32/47  medium · avg 50%    1.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   57.0%  ▃··▁▂▂▃▂●▃▄▂ beats 32/47  medium · avg 51%    1.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   24.6%  █▂▁▁▂▂▂▃●▅▅▇ beats 23/47  hard · avg 32%      1.4%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   31.1%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 24/47  hard · avg 31%      1.1%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   66.1%  ▁▁▁······▁●█ beats 15/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   66.1%  ▁▁▁······▁●█ beats 15/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             72.8%  ▁·▁▁▄▄●▅█▄▂▁ beats 17/53    easy · avg 75%          22%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        33.5%  ▃▂·▆▆●█▆▅▃▃▃ beats 12/33    medium · avg 39%       5.4%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        43.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 37/58    medium · avg 48%       5.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 42.747 WB-Score    5.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 42.785 WB-Score    5.1%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             11.5%  ▁▁▃●██▁▁·▁▁▁ beats 11/57    hard · avg 15%         4.4%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             46.6%  ▁▂▂●▃█▃▆▅▄▂▃ beats 14/95    medium · avg 64%       3.7%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.0%  ▁▁▁▁●▄▆▄▅▇█▅ beats 20/208   hard · avg 38%         3.6%  sharp

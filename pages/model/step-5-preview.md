@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅▄▄●▃▁   #41 of 342*     35%      1
+agent tasks         ▁▁▂▆█▆▅▄▄●▃▁   #41 of 343*     35%      1
 coding              ▁▁▁▃▅▇█▇▅▄●▁   #34 of 529*     32%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #56 of 466*     19%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #43 of 182*     13%      1
 </pre>
 
-<details><summary>agent tasks · #41 of 342 · 35% of its score</summary>
+<details><summary>agent tasks · #41 of 343 · 35% of its score</summary>
 
-Beats [Gemini 3.7 Flash](gemini-3-7-flash.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0048 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 21/49  avg -0.312 IPS     35%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0048 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 21/49  avg -0.311 IPS     35%  sharp
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1570.2  ▁▂▄▃▅█▄▇●▄▁▁ beats 88/119  avg 969        32%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1570.2  ▁▂▄▃▅█▄▇●▄▁▁ beats 88/119  avg 970        32%  sharp
 </pre>
 
 </details>

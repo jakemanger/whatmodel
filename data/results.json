@@ -313416,62 +313416,362 @@
   },
   {
     "model": "muse-spark-open",
-    "bench": "zerobench-main-with-tools-pass5",
-    "score": 0.5,
-    "source": "https://research.meta.ai/blog/muse-spark-open#key-benchmarks",
+    "bench": "osworld-verified",
+    "score": 0.804,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
     "source_id": "first-party-meta-scores",
     "by": "lab",
     "date": "2026-10-15",
     "mode": "xhigh reasoning effort",
-    "note": "Meta own evaluation in the Muse Spark Open blog post (2026-10-15), 'Key Benchmarks' scorecard image, column 'Muse Spark Open (xhigh)', section 'Multimodal (with tools)'. Evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology): reasoning effort xhigh (512), temperature 1.0, top_p 1.0; multimodal evals run with tool use enabled (tools not itemised). Only rows Meta ran itself are used: the methodology credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, and GDPval-AA, SciCode, AA-Omniscience, Terminal-Bench 2.1 and DeepSWE to Artificial Analysis. Other models' columns are not used. Methodology: 100-question main set; a question counts if at least one of five sampled responses is judged correct (pass@5); internal runs.",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'OSWorld Verified', section 'Agentic'. Methodology: 361-task split excluding Google Drive-dependent tasks; GUI computer-control tool only (no shell); 1920x1080 screenshots, normalised 0-1000 coordinates; 200-step cap; mean per-task reward averaged over four attempts per task; Meta's own runs.",
     "evidence": {
-      "kind": "chart-label",
-      "row_label": "ZeroBench",
+      "kind": "table",
+      "section": "Agentic",
+      "heading": "Benchmarks",
+      "row_label": "OSWorld Verified",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "80.4",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "hle-with-tools",
+    "score": 0.61,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'HLE (w/ tools)', section 'Knowledge & Reasoning'. Methodology: internal runs with bash and browser tools, blocklisting huggingface.co, kaggle.com, paperswithcode.com and lmsys.org. Subset (text-only vs full) not stated for the with-tools setting.",
+    "evidence": {
+      "kind": "table",
+      "section": "Knowledge & Reasoning",
+      "heading": "Benchmarks",
+      "row_label": "HLE (w/ tools)",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "61.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "zerobench-main-with-tools-pass5",
+    "score": 0.5,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'ZeroBench (w/ tools)', section 'Multimodal'. Methodology: 100-question main set; a question counts if at least one of five sampled responses is judged correct (pass@5), GPT-OSS-120B grader; internal runs.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "ZeroBench (w/ tools)",
       "column_label": "Muse Spark Open (xhigh)",
       "raw_value": "50.0",
-      "scale_divisor": 100,
-      "asset_url": "https://research.meta.ai/articles/muse-spark-open/benchmarks/benchmark-scorecard-light-v6.png",
-      "asset_sha256": "df5a416fe3ddfaeb74c44e21f4fa8a5430f6444686df0e1fb604ee3c597dcaf6"
+      "scale_divisor": 100
     }
   },
   {
     "model": "muse-spark-open",
     "bench": "babyvision-with-tools",
     "score": 0.802,
-    "source": "https://research.meta.ai/blog/muse-spark-open#key-benchmarks",
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
     "source_id": "first-party-meta-scores",
     "by": "lab",
     "date": "2026-10-15",
     "mode": "xhigh reasoning effort",
-    "note": "Meta own evaluation in the Muse Spark Open blog post (2026-10-15), 'Key Benchmarks' scorecard image, column 'Muse Spark Open (xhigh)', section 'Multimodal (with tools)'. Evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology): reasoning effort xhigh (512), temperature 1.0, top_p 1.0; multimodal evals run with tool use enabled (tools not itemised). Only rows Meta ran itself are used: the methodology credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, and GDPval-AA, SciCode, AA-Omniscience, Terminal-Bench 2.1 and DeepSWE to Artificial Analysis. Other models' columns are not used. Methodology: all 388 questions; mean accuracy averaged over 5 internal runs.",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'BabyVision (w/ tools)', section 'Multimodal'. Methodology: all 388 questions; GPT-OSS-120B grader; mean accuracy averaged over 5 internal runs.",
     "evidence": {
-      "kind": "chart-label",
-      "row_label": "BabyVision",
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "BabyVision (w/ tools)",
       "column_label": "Muse Spark Open (xhigh)",
       "raw_value": "80.2",
-      "scale_divisor": 100,
-      "asset_url": "https://research.meta.ai/articles/muse-spark-open/benchmarks/benchmark-scorecard-light-v6.png",
-      "asset_sha256": "df5a416fe3ddfaeb74c44e21f4fa8a5430f6444686df0e1fb604ee3c597dcaf6"
+      "scale_divisor": 100
     }
   },
   {
     "model": "muse-spark-open",
     "bench": "simplevqa-with-tools",
     "score": 0.736,
-    "source": "https://research.meta.ai/blog/muse-spark-open#key-benchmarks",
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
     "source_id": "first-party-meta-scores",
     "by": "lab",
     "date": "2026-10-15",
     "mode": "xhigh reasoning effort",
-    "note": "Meta own evaluation in the Muse Spark Open blog post (2026-10-15), 'Key Benchmarks' scorecard image, column 'Muse Spark Open (xhigh)', section 'Multimodal (with tools)'. Evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology): reasoning effort xhigh (512), temperature 1.0, top_p 1.0; multimodal evals run with tool use enabled (tools not itemised). Only rows Meta ran itself are used: the methodology credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, and GDPval-AA, SciCode, AA-Omniscience, Terminal-Bench 2.1 and DeepSWE to Artificial Analysis. Other models' columns are not used. Methodology: 2,024-question bilingual set (1,013 English, 1,011 Chinese); raw accuracy averaged over 5 internal runs. The tools are not named, so search access is assumed rather than stated.",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'SimpleVQA (w/ tools)', section 'Multimodal'. Methodology: 2,024-question bilingual set (1,013 English, 1,011 Chinese); GPT-OSS-120B grader; raw accuracy averaged over 5 internal runs. Tools are not itemised, so search access is assumed rather than stated.",
     "evidence": {
-      "kind": "chart-label",
-      "row_label": "SimpleVQA",
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "SimpleVQA (w/ tools)",
       "column_label": "Muse Spark Open (xhigh)",
       "raw_value": "73.6",
-      "scale_divisor": 100,
-      "asset_url": "https://research.meta.ai/articles/muse-spark-open/benchmarks/benchmark-scorecard-light-v6.png",
-      "asset_sha256": "df5a416fe3ddfaeb74c44e21f4fa8a5430f6444686df0e1fb604ee3c597dcaf6"
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "worldvqa-with-tools",
+    "score": 0.494,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'WorldVQA (w/ tools)', section 'Multimodal'. Methodology: official headline subset of 3,000 questions across eight categories (Notable People excluded); GPT-OSS-120B grader; internal runs.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "WorldVQA (w/ tools)",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "49.4",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "intphys-2",
+    "score": 0.683,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'IntPhys2', section 'Multimodal'. Methodology: official violation-of-expectation protocol on the main split (1,012 videos); internal runs.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "IntPhys2",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "68.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "videomme-v2-with-sub",
+    "score": 0.615,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the pinned meta-models/Muse-Spark-Open-816B-A42B model card (gated repo; the card page is public), 'Benchmarks' table, column 'Muse Spark Open (xhigh)'. Card: 'For Muse Spark Open we use xhigh reasoning effort, temperature = 1.0, top_p=1.0, top_k=disabled across benchmarks.' Only rows the linked evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology) says Meta ran itself are used: it credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, Toolathlon to the official evaluation service, and the AA Index, GDPval-AA, AA-Omniscience, SciCode, GPQA Diamond, DeepSWE, SWE-Atlas-QnA and Terminal-Bench 2.1 to Artificial Analysis. Other models' columns are not used. Row 'VideoMMEv2', section 'Multimodal'. Methodology: 0-shot on the full set, subtitles in the prompt, no audio, official grouped scoring; internal runs.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "VideoMMEv2",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "61.5",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "osworld-verified",
+    "score": 0.401,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'OSWorld Verified', column 'Inkling (xhigh)' = 40.1; percent converted to fraction. Methodology: 'Results for our model and Inkling are from our own runs; Kimi K3's number is self-reported.' 361-task split without Google Drive tasks, GUI tool only, 200-step cap, mean reward over four attempts; Inkling receives the screenshot upscaled to 2048x1152 and emits absolute pixel coordinates. Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Agentic",
+      "heading": "Benchmarks",
+      "row_label": "OSWorld Verified",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "40.1",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "zerobench-main-with-tools-pass5",
+    "score": 0.14,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'ZeroBench (w/ tools)', column 'Inkling (xhigh)' = 14.0; percent converted to fraction. Methodology: 'We report internal runs for Muse Spark and Inkling, and cite Kimi K3's self reported number.' 100-question main set, pass@5, GPT-OSS-120B grader, tools enabled. Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "ZeroBench (w/ tools)",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "14.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "babyvision-with-tools",
+    "score": 0.342,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'BabyVision (w/ tools)', column 'Inkling (xhigh)' = 34.2; percent converted to fraction. Methodology: 'For internal runs on Muse Spark and Inkling, each eval was run 5 times ... We cite Kimi K3's self reported number.' 388 questions, GPT-OSS-120B grader, tools enabled. Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "BabyVision (w/ tools)",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "34.2",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "simplevqa-with-tools",
+    "score": 0.523,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'SimpleVQA (w/ tools)', column 'Inkling (xhigh)' = 52.3; percent converted to fraction. Methodology: 'We report results from internal runs for all 3 multimodal models and report the average of 5 runs.' 2,024-question bilingual set, GPT-OSS-120B grader, tools enabled (not itemised). Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "SimpleVQA (w/ tools)",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "52.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "worldvqa-with-tools",
+    "score": 0.18,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'WorldVQA (w/ tools)', column 'Inkling (xhigh)' = 18.0; percent converted to fraction. Methodology: 'We report results from internal runs for our model and Inkling, and cite Kimi K3's self reported number.' 3,000-question headline subset, GPT-OSS-120B grader, tools enabled. Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "WorldVQA (w/ tools)",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "18.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "intphys-2",
+    "score": 0.552,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'IntPhys2', column 'Inkling (xhigh)' = 55.2; percent converted to fraction. Methodology: 'Results for Muse Spark Open, Inkling, and Kimi K3 are from internal runs.' Official violation-of-expectation protocol, main split (1,012 videos). Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "IntPhys2",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "55.2",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "inkling",
+    "bench": "videomme-v2-with-sub",
+    "score": 0.369,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'VideoMMEv2', column 'Inkling (xhigh)' = 36.9; percent converted to fraction. Methodology: 'Results for Muse Spark Open, Inkling, and Kimi K3 are from internal runs.' 0-shot, full set, subtitles in the prompt, no audio, official grouped scoring. Methodology settings for Inkling: reasoning effort xhigh (effort=0.99), temperature 1.0, top_p 1.0. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "VideoMMEv2",
+      "column_label": "Inkling (xhigh)",
+      "raw_value": "36.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "kimi-k3",
+    "bench": "simplevqa-with-tools",
+    "score": 0.719,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "max reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'SimpleVQA (w/ tools)', column 'Kimi K3 (max)' = 71.9; percent converted to fraction. Methodology: 'We report results from internal runs for all 3 multimodal models and report the average of 5 runs.' 2,024-question bilingual set, GPT-OSS-120B grader, tools enabled (not itemised). Methodology settings for Kimi K3: reasoning effort max, temperature 1.0, top_p 0.95 for single-step tasks. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "SimpleVQA (w/ tools)",
+      "column_label": "Kimi K3 (max)",
+      "raw_value": "71.9",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "kimi-k3",
+    "bench": "intphys-2",
+    "score": 0.603,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "max reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'IntPhys2', column 'Kimi K3 (max)' = 60.3; percent converted to fraction. Methodology: 'Results for Muse Spark Open, Inkling, and Kimi K3 are from internal runs.' Official violation-of-expectation protocol, main split (1,012 videos). Methodology settings for Kimi K3: reasoning effort max, temperature 1.0, top_p 0.95 for single-step tasks. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "IntPhys2",
+      "column_label": "Kimi K3 (max)",
+      "raw_value": "60.3",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "kimi-k3",
+    "bench": "videomme-v2-with-sub",
+    "score": 0.654,
+    "source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md",
+    "source_id": "first-party-meta-scores",
+    "by": "independent",
+    "date": "2026-10-15",
+    "mode": "max reasoning effort",
+    "note": "Meta Superintelligence Lab's own run of a third-party model, pinned meta-models/Muse-Spark-Open-816B-A42B model card, 'Benchmarks' table, row 'VideoMMEv2', column 'Kimi K3 (max)' = 65.4; percent converted to fraction. Methodology: 'Results for Muse Spark Open, Inkling, and Kimi K3 are from internal runs.' 0-shot, full set, subtitles in the prompt, no audio, official grouped scoring. Methodology settings for Kimi K3: reasoning effort max, temperature 1.0, top_p 0.95 for single-step tasks. Cells the methodology credits to self-reports, official leaderboards, Scale AI or Artificial Analysis are not used.",
+    "evidence": {
+      "kind": "table",
+      "section": "Multimodal",
+      "heading": "Benchmarks",
+      "row_label": "VideoMMEv2",
+      "column_label": "Kimi K3 (max)",
+      "raw_value": "65.4",
+      "scale_divisor": 100
     }
   }
 ]

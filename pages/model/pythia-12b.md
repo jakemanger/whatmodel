@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 11.8B params · apache-2.0
 
-**score 24.8** ±0.9 · #679 of 724 · from 22 benchmark results across 7 sources
+**score 24.8** ±0.9 · #680 of 725 · from 22 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">ARC Challenge</a>                        35.1%  ▁·▁··▁▁●▂█▆▃ beats 8/26    easy · avg 82%          32%  sharp · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">WinoGrande</a>                           64.0%  ▁····▁··▁▂●▄ beats 8/26    easy · avg 87%          13%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">ARC Easy</a>                             63.7%  ▁▁·▁▁▄▅●█▅▁▃ beats 11/26   easy · avg 87%         9.4%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">SciQ</a>                                 90.2%  ▁·▁·▁·▃●▃█▄▁ beats 8/26    very easy · avg 97%    6.7%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">SciQ</a>                                 90.2%  ▁·▁·▁·▃●▃█▄▁ beats 8/26    very easy · avg 98%    6.7%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 11/26   easy · avg 87%         6.4%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">BoolQ</a>                                67.3%  ▂▃▂▅▆●▅▆█▂▂▂ beats 11/26   easy · avg 88%         5.5%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   50.0%  ▂·▄·▂█▄▄●▄▂▆ beats 13/21   easy · avg 74%         5.2%  blunt · at its level

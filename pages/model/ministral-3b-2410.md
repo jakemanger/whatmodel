@@ -25,7 +25,7 @@ math            ▁▂▃●█▇▅▇▃▁▁▁    #440 of 523     36%     
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   77.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 168/205  easy · avg 79%    2.3%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   77.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 168/205  easy · avg 80%    2.4%  sharp · at its level · noisy · small run
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>        67.7%  ▁▁▁▄▅█▆●▄▁▂▁ beats 65/86    easy · avg 74%    2.1%  at its level · small run
 </pre>
 

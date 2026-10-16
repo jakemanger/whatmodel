@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
-**score 56.7** ±0.8 · #245 of 724 · from 33 benchmark results across 8 sources
+**score 56.6** ±0.8 · #248 of 725 · from 33 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #167 of 302     18%      6
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #170 of 303     18%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #223 of 460*    2.7%      1
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #184 of 395*    6.1%      2
 math            ▁▁▃▅█▆●█▄▁▁▁    #183 of 424     27%      6
 </pre>
 
-<details><summary>agent tasks · #167 of 302 · 18% of its score</summary>
+<details><summary>agent tasks · #170 of 303 · 18% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">HMMT 2025 (edition unspecified) (…</a>   55.5%  ▃█●▅▇▅▁·▁··▁ beats 13/32   hard · avg 33%          6.3%  sharp · at its level · small run
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   23.9%  ●··▄▂▄█▆▆▄▄█ beats 0/23    hard · avg 22%          5.3%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">AIME 2025 (lab)</a>                      81.3%  ▁·▁▁▁▂▅▆█●▅▁ beats 87/133  medium · avg 58%        5.3%  sharp · small run
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   18.0%  ▁●▁▁█▇▄▃▁▃·▃ beats 1/24    very hard · avg 9.0%    4.6%  typical
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   18.0%  ▁●▁▁█▇▄▃▁▃·▃ beats 1/24    very hard · avg 9.1%    4.6%  typical
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   32.4%  ▃·●▃█▁·▄·▁▁▁ beats 2/18    hard · avg 19%          3.2%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">PolyMATH (lab)</a>                       46.2%  ▁···▃▁·●█▄▄▄ beats 8/23    hard · avg 34%          2.2%  at its level · small run
 </pre>
@@ -117,7 +117,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.7
+weighted average                                   = 56.6
 </pre>
 
 <sub>Licences: Qwen/Qwen3-4B-Thinking-2507 model card ([apache-2.0](../../licenses/Qwen--Qwen3-4B-Thinking-2507.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen/Qwen3.5-0.8B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-0.8B.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.19B params · apache-2.0
 
-**score 47.7** ±0.9 · #407 of 724 · from 24 benchmark results across 3 sources
+**score 47.7** ±0.9 · #408 of 725 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -69,7 +69,7 @@ Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                          81.3%  ▂▂▂▂▃▄▅▇█●▆▄ beats 143/200  very easy · avg 86%    9.2%  sharp
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   66.4%  ▁·▃▁▁▂▁█▄▁●▃ beats 22/27    easy · avg 68%         5.5%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   66.4%  ▁·▃▁▁▂▁█▄▁●▃ beats 22/27    easy · avg 68%         5.4%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>           43.8%  ▅····▅·●▃▃·▅ beats 4/10     medium · avg 52%       5.1%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>                   77.5%  ▃▃····▃·▅●█▃ beats 5/10     easy · avg 82%         4.2%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   44.5%  █·▄▄█●···█·▄ beats 6/10     medium · avg 44%       1.7%  at its level
@@ -81,7 +81,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 69.4%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 112/155  medium · avg 74%       7.0%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 69.4%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 112/155  easy · avg 74%         7.0%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (lab)</a>                           67.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 120/214  medium · avg 72%       6.6%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      32.1%  ▂▁▂▂▄●▆▃▅█▄▃ beats 27/104   very hard · avg 35%    6.4%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                       43.5%  ▁▁·▁▁▁●▂▄▅█▁ beats 34/188   medium · avg 50%       4.8%  at its level

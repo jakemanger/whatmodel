@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
-**score 58.1** ±0.9 · #221 of 724 · from 18 benchmark results across 4 sources
+**score 58.1** ±0.9 · #221 of 725 · from 18 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -42,7 +42,7 @@ Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)]
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1306.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 135/379  avg 1258            8.8%  blunt
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (l…</a>   74.2%  █···█·█·█·█● beats 5/5      medium · avg 42%    4.6%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   89.0%  ▄▄·····█▄●·▄ beats 5/6      easy · avg 78%      0.5%  noisy
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   89.0%  ▄▄·····█▄●·▄ beats 5/6      easy · avg 79%      0.5%  noisy
 </pre>
 
 </details>
@@ -69,7 +69,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      58.1%  ▃······▃·▅·● beats 6/6    hard · avg 43%       14%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 89.8%  ▄·····▄·▄·█● beats 6/6    easy · avg 77%      8.5%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           85.4%  ▄···▄··█··▄● beats 5/6    easy · avg 76%      5.5%  typical
-<a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.2%  ▄····▄·▄▄··● beats 4/5    easy · avg 76%      3.7%  typical
+<a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.2%  ▄····▄·▄▄··● beats 4/5    easy · avg 76%      3.6%  typical
 <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          31.9%  ▄··█···▄···● beats 5/5    hard · avg 20%      3.2%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     76.0%  █▄····▄·▄·●▄ beats 5/6    medium · avg 52%    3.0%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   47.6%  █·██·█●····█ beats 4/5    medium · avg 35%    2.2%  at its level

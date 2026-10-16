@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
-**score 53.7** ±1.5 · #301 of 724 · from 16 benchmark results across 7 sources
+**score 53.6** ±1.5 · #304 of 725 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,16 +21,16 @@ vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #110 of 147     7
 
 <details><summary>vision &amp; documents · #110 of 147 · 78% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Pixtral Large (2411)](pixtral-large.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Pixtral Large (2411)](pixtral-large.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1118.6  ▁▁▂▂▂▂●▅▅▆██ beats 34/145  avg 1058                16%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   31.8%  ▁·▁·▃▃●▇▃█·▄ beats 6/22    hard · avg 26%          10%  blunt · at its level
 <a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>        39.1%  ▂▅●▅▅▆▆▅▆█▆▂ beats 16/100  medium · avg 36%       9.3%  at its level · small run
-<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>        72.5%  ▂▄▄●▇▄█▇▇▂▁▂ beats 16/58   easy · avg 71%         8.8%  small run
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>        72.5%  ▂▄▄●▇▄█▇▇▂▁▂ beats 16/58   easy · avg 71%         8.7%  small run
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   48.2%  █·█···●·█·██ beats 2/5     medium · avg 45%       8.3%  at its level
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                       49.5%  ▂▃▁▃●▇▃▇▇██▅ beats 10/52   hard · avg 42%         7.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                       49.5%  ▂▃▁▃●▇▃▇▇██▅ beats 10/52   hard · avg 43%         7.6%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                         69.5%  ▃▅▂▃▂▂●█▆▆█▅ beats 12/34   medium · avg 64%       6.0%  at its level · small run
 <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   52.1%  ▅······▃·▅·● beats 7/7     very hard · avg 36%    4.1%  noisy
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>                 39.4%  ▂●▅▆██▅▂···▂ beats 1/24    medium · avg 42%       2.8%  blunt · at its level · small run
@@ -48,7 +48,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   80.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 263/276  medium · avg 72%    4.8%  at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                        49.0%  ●·█▅▅▄▄··▃▁▁ beats 4/28     hard · avg 47%      4.0%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles) (la…</a>   70.5%  ▁▃▁▃▁·●▄▄▅·▇ beats 10/27    medium · avg 67%    4.0%  blunt · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                   22.0%  ●·▁▁▂▃█▅▂▂·▂ beats 0/24     hard · avg 31%      3.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                   22.0%  ●·▁▁▂▃█▅▂▂·▂ beats 0/24     hard · avg 32%      3.4%  at its level · small run
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
 <a name="paper-2508.13680v5-vmmu"></a><a href="https://arxiv.org/html/2508.13680v5">VMMU: A Vietnamese Multitask Multimodal…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 53.7
+weighted average                                   = 53.6
 </pre>
 
 <sub>Licences: Qwen2.5-VL-32B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

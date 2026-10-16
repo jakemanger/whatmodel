@@ -25,7 +25,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   40.3%  ▆·▂·▄▂▂▂▂█●▆ beats 14/18  medium · avg 47%     30%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   40.3%  ▆·▂·▄▂▂▂▂█●▆ beats 14/18  medium · avg 48%     30%  sharp · at its level
 </pre>
 
 </details>

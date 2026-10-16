@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 57.8** ±1.6 · #230 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 57.7** ±1.6 · #231 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 57.8
+weighted average                        = 57.7
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                 0.8%  ●▃▃▅··▃▃·▃▃█ beats 1/12   easy · avg 83%          20%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                 0.8%  ●▅█···▅·▃▃▃▅ beats 0/12   easy · avg 82%          14%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding</a>          4.3%  ▃·●·▅▃▅·▃▃·█ beats 2/12   medium · avg 52%        12%  too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">StrategyQA</a>                           20.6%  ●·····▅▃▃▅▃█ beats 2/12   medium · avg 70%       4.5%  too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">StrategyQA</a>                           20.6%  ●·····▅▃▃▅▃█ beats 2/12   medium · avg 70%       4.6%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   20.1%  ●·····▃··▅·▃ beats 2/6    medium · avg 71%       4.0%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         25.2%  ▂●·▄▄█▂·▂··▂ beats 1/14   medium · avg 65%       3.8%  blunt
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>       33.8%  ●·····▃·▁·▄▁ beats 5/12   medium · avg 81%       2.7%  sharp · too hard for it

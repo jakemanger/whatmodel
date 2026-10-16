@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-01 · proprietary
 
-**score 47.9** ±0.5 · #405 of 724 · from 35 benchmark results across 17 sources
+**score 47.9** ±0.5 · #405 of 725 · from 35 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #245 of 302*    0.5%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #246 of 303*    0.5%      1
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #269 of 460     21%      3
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #291 of 395     13%      5
 math            ▁▁▃●█▆▄█▄▁▁▁    #367 of 424     13%      7
 </pre>
 
-<details><summary>agent tasks · #245 of 302 · 0.5% of its score</summary>
+<details><summary>agent tasks · #246 of 303 · 0.5% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -70,10 +70,10 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          80.4%  ▁▄·▁▄●▅▅▅███ beats 12/43   very easy · avg 87%     3.8%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         11.6%  ▂▂●▆▄█▆▃▅▂▃▄ beats 8/92    hard · avg 27%          3.4%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   13.7%  ▁▁●▆█▂▇▇▄··▂ beats 2/38    hard · avg 30%          2.4%  sharp
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                74.3%  ▂▃··▃●▅█▆▃▂▃ beats 5/22    very easy · avg 87%     1.5%  sharp
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                74.3%  ▂▃··▃●▅█▆▃▂▃ beats 5/22    very easy · avg 88%     1.5%  sharp
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            41.2%  ▃▃●▂▂▆·····▁ beats 10/22   medium · avg 57%        0.9%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              2.2%  ▃●▄▃▃▃▇▇█▃▂▅ beats 17/193  very hard · avg 6.9%    0.3%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             0.0%  ●··▁▁▃▄▄█▅▃▃ beats 1/82    very hard · avg 1.1%    0.3%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              2.2%  ▃●▄▃▃▃▇▇█▃▂▅ beats 17/193  very hard · avg 6.9%    0.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -89,13 +89,13 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                                 66.6%  ▁▄·▁▁·●█·▄▄▁ beats 9/22     medium · avg 72%        3.4%  sharp · at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        38.2%  ▃▂·▆▆██●▅▃▃▃ beats 22/33    medium · avg 39%        2.8%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        50.6%  ▂▁▁▄▂▅▇█▆●▂▂ beats 51/58    medium · avg 48%        2.7%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.0160 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 14/52    avg 42.747 WB-Score     2.6%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.0160 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 14/52    avg 42.785 WB-Score     2.6%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             10.1%  ▁▁▃●██▁▁·▁▁▁ beats 10/57    hard · avg 15%          2.4%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   27.2%  ▁▁●▁▂▄▆▄▅▇█▅ beats 10/208   hard · avg 38%          2.0%  sharp
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>             35.3%  ▁▁▁▁▁▂▂▃▄●█▃ beats 47/97    hard · avg 31%          1.3%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>             49.1%  ▁▁▁▁·▂·●▆█▇▁ beats 6/31     medium · avg 46%        1.3%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             50.7%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 35/81    medium · avg 56%        1.1%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                          45.0%  ▁▁▁▃▃▃▁█▁▃·● beats 19/21    hard · avg 30%          0.7%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                          45.0%  ▁▁▁▃▃▃▁█▁▃·● beats 19/21    hard · avg 31%          0.7%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             72.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 193/276  medium · avg 72%        0.6%  at its level · noisy
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>             12.9%  ▁▁●▂▂▄▁▃▄▄▄█ beats 2/38     very hard · avg 14%     0.4%  typical
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                                 62.9%  ▃▃▂·▃▃·●█▂▅▂ beats 10/21    medium · avg 60%        0.1%  blunt · at its level

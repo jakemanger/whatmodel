@@ -6,7 +6,7 @@
 
 Mistral · released 2025-01 · 23.57B params · apache-2.0
 
-**score 54.1** ±1.0 · #298 of 724 · from 18 benchmark results across 12 sources
+**score 54.1** ±1.0 · #299 of 725 · from 18 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -60,9 +60,9 @@ test                      result  vs the others in its run   difficulty         
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 57/208   hard · avg 38%           14%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.2%  ▁▂▂▂▃█▃▆●▄▂▃ beats 66/95    medium · avg 64%        6.6%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.2%  ▁▂▂▂▃█▃▆●▄▂▃ beats 66/95    medium · avg 64%        6.7%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.9  ▁·▂▁●▅▅▃█▄▁▁ beats 7/62     avg 1031                6.1%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.5%  ▁▁▁▁▁▂▂▃▄●█▃ beats 57/97    hard · avg 31%          5.7%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.5%  ▁▁▁▁▁▂▂▃▄●█▃ beats 57/97    hard · avg 31%          5.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   39.8%  ▁▁·▁▂▂▄█●▅▄▄ beats 36/66    hard · avg 29%          5.7%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   50.3%  ▁▁▁▁·▂·●▆█▇▁ beats 7/31     medium · avg 46%        5.2%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      70.5%  ▁··▁▁▂▂▆▅▆●▆ beats 53/70    medium · avg 61%        5.2%  at its level

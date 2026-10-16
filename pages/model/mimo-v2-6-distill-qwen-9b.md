@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-09 · 9.41B params · mit
 
-**score 64.9** ±2.2 · #142 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.9** ±2.2 · #143 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #122 of 302     89%      4
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #123 of 303     89%      4
 coding       ▁▁▁▃▆██▇●▄▃▁   #121 of 460*     57%      2
 </pre>
 
-<details><summary>agent tasks · #122 of 302 · 89% of its score</summary>
+<details><summary>agent tasks · #123 of 303 · 89% of its score</summary>
 
 Beats [o3](o3.md), [GPT-5 mini](gpt-5-mini.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 32.8B params · apache-2.0
 
-**score 55.8** ±0.6 · #261 of 724 · from 35 benchmark results across 17 sources
+**score 55.8** ±0.6 · #262 of 725 · from 35 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #200 of 302*    0.8%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #201 of 303*    0.8%      1
 coding          ▁▁▁▃▆██●▆▄▃▁    #196 of 460     20%      6
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #225 of 395    5.8%      3
 math            ▁▁▃▅█●▄█▄▁▁▁    #239 of 424     18%      6
 </pre>
 
-<details><summary>agent tasks · #200 of 302 · 0.8% of its score</summary>
+<details><summary>agent tasks · #201 of 303 · 0.8% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -43,15 +43,15 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    69.9%  ▁▂▆▃▆●▆▃▂·▁▁ beats 28/47  medium · avg 57%    7.9%  sharp · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   67.6%  █▂▁▁▂▂▂▃▅▅▅● beats 46/47  hard · avg 32%      1.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   45.0%  ▁▁▁▁▁▁▂▂▃█▅● beats 42/47  hard · avg 31%      1.0%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   89.5%  ▃··▁▂▂▃▂█▃▄● beats 46/47  medium · avg 50%    1.0%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   71.0%  ▁▁▁······▁▃● beats 20/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   89.5%  ▃··▁▂▂▃▂█▃▄● beats 46/47  medium · avg 51%    1.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   71.0%  ▁▁▁······▁▃● beats 20/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #225 of 395 · 5.8% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -72,7 +72,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   59.5%  ▁▁▁▆█▂▇▇●··▂ beats 33/38   hard · avg 30%          4.9%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              7.4%  ▃▃▄●▃▃▇▇█▃▂▅ beats 42/193  very hard · avg 6.9%    2.0%  sharp · noisy
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            77.9%  ▃▃█▂▂●·····▁ beats 21/22   medium · avg 57%        1.7%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                87.5%  ▂▃··▃▂▅█●▃▂▃ beats 15/22   very easy · avg 87%     1.0%  sharp · maxed out
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                87.5%  ▂▃··▃▂▅█●▃▂▃ beats 15/22   very easy · avg 88%     1.0%  sharp · maxed out
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>          19.2%  ▅···●▃···▃▃█ beats 2/8     hard · avg 23%          0.9%  at its level
 </pre>
 
@@ -94,7 +94,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      71.2%  ▁··▁▁▂▂▆▅▆●▆ beats 56/70    medium · avg 61%        1.8%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-32B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   87.6%  ▂·▂▂▂▆▅▆▆▆▃● beats 25/29    easy · avg 74%          1.6%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   62.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 57/81    medium · avg 56%        1.6%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                26.1%  ▁▁▁▃▃▃●█▁▃·▄ beats 9/21     hard · avg 30%          1.2%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                26.1%  ▁▁▁▃▃▃●█▁▃·▄ beats 9/21     hard · avg 31%          1.2%  at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   64.9%  ▂···▂▂·▃▂▃█● beats 15/17    medium · avg 52%        0.9%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   80.2%  ▃▁▁▁▁▁▁▁▂█●▁ beats 261/276  medium · avg 72%        0.7%  at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 40/135   very hard · avg 5.8%    0.3%  sharp · too hard for it · noisy

@@ -34,7 +34,7 @@ test                               result  vs the others in its run  difficulty 
 
 <details><summary>chat &amp; writing · #264 of 466 · 20% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -60,7 +60,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             81.2%  ▁·▁▁▄▄▄▅●▄▂▁ beats 31/53  easy · avg 75%          31%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             18.8%  ▁▁▃▆●█▁▁·▁▁▁ beats 26/57  hard · avg 15%          12%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.9273 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 40/52  avg 42.747 WB-Score    8.4%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.9273 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 40/52  avg 42.785 WB-Score    8.4%  sharp
 </pre>
 
 </details>

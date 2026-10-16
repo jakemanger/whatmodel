@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 49.5** ±0.7 · #378 of 724 · from 26 benchmark results across 2 sources
+**score 49.5** ±0.7 · #379 of 725 · from 26 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #229 of 302*    2.1%      1
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #230 of 303*    2.1%      1
 coding              ▁▁▁▃●██▇▆▄▃▁   #371 of 460*    3.5%      1
 chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #252 of 395*    3.5%      1
 math                ▁▁▃▅█●▄█▄▁▁▁   #219 of 424*     10%      2
 vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄    #120 of 147     51%     14
 </pre>
 
-<details><summary>agent tasks · #229 of 302 · 2.1% of its score</summary>
+<details><summary>agent tasks · #230 of 303 · 2.1% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecified) …</a>   75.1%  ▃··●···██▅▃▃ beats 1/11   easy · avg 76%    3.5%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecified) …</a>   75.1%  ▃··●···██▅▃▃ beats 1/11   easy · avg 77%    3.5%  typical
 </pre>
 
 </details>
@@ -99,7 +99,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                       62.3%  ▄·▄·●▄▄▄█▄██ beats 2/12   medium · avg 62%    7.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (lab)</a>      49.5%  ▂····▂·●▂█▆█ beats 2/14   hard · avg 48%      7.1%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                     76.9%  ▃··●·▃·█▃▅▃▅ beats 1/11   easy · avg 79%      6.8%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      34.6%  ▄··●·▄▄▄█▄██ beats 1/11   medium · avg 36%    3.7%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      34.6%  ▄··●·▄▄▄█▄██ beats 1/11   medium · avg 37%    3.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   46.1%  ▃··▃●▃▃▃▃▃·█ beats 2/11   medium · avg 42%    2.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   62.1%  ▃··●··▅█▃▃▅▃ beats 2/13   medium · avg 66%    2.8%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        47.6%  ●··▃·▅▃▃·█·▃ beats 1/10   hard · avg 50%      2.5%  at its level

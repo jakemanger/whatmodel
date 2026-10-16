@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 43.9** ±2.8 · #498 of 724 · from 3 benchmark results across 3 sources
+**score 43.8** ±2.8 · #499 of 725 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -42,7 +42,7 @@ source                                    results  share of the score
 <a name="paper-2504.07072v2-kaleidoscope"></a><a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope: In-language Exams for Mas…</a>        1   29% ▇▇▇
 <a name="paper-2508.13680v5-vmmu"></a><a href="https://arxiv.org/html/2508.13680v5">VMMU: A Vietnamese Multitask Multimodal…</a>        1    8% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 43.9
+weighted average                                   = 43.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

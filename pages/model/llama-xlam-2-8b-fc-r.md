@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 8.03B params · cc-by-nc-4.0
 
-**score 62.1** ±3.7 · #196 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.1** ±3.7 · #196 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #161 of 336*     94%      2
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #162 of 337*     94%      2
 </pre>
 
-<details><summary>agent tasks · #161 of 336 · 94% of its score</summary>
+<details><summary>agent tasks · #162 of 337 · 94% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

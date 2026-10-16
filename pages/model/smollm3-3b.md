@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 44.0** ±0.9 · #495 of 724 · from 25 benchmark results across 6 sources
+**score 43.9** ±0.9 · #498 of 725 · from 25 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #100 of 302*    1.7%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #101 of 303*    1.7%      1
 coding          ▁▁▁▃●██▇▆▄▃▁   #382 of 460*    2.2%      1
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #282 of 395*    7.5%      2
 math            ▁▁▃▅●▆▄█▄▁▁▁    #259 of 424     11%      3
 </pre>
 
-<details><summary>agent tasks · #100 of 302 · 1.7% of its score</summary>
+<details><summary>agent tasks · #101 of 303 · 1.7% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
@@ -51,7 +51,7 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>         72.4%  ●··▄▄·▄····▄ beats 1/5     easy · avg 84%    5.4%  typical
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecified) …</a>   71.2%  ▁▁▃▁▂●▄▆█▃▂▁ beats 33/141  easy · avg 79%    2.1%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecified) …</a>   71.2%  ▁▁▃▁▂●▄▆█▃▂▁ beats 33/141  easy · avg 80%    2.1%  at its level · small run
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gp
 
 <pre>
 test                            result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025 (lab)</a>                  36.7%  ▁·▁▁▁▂●▆█▇▅▁ beats 23/133  medium · avg 51%    7.4%  sharp · at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025 (lab)</a>                  36.7%  ▁·▁▁▁▂●▆█▇▅▁ beats 23/133  medium · avg 52%    7.4%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%  ▃····▃·●···▃ beats 3/5     easy · avg 79%      3.3%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   81.1%  █·█··●██···█ beats 2/5     easy · avg 83%      0.5%  blunt
 </pre>
@@ -85,7 +85,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid)</a>   68.7%  ▄·●·█···▄··▄ beats 1/5      easy · avg 80%      2.6%  at its level
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (lab)</a>                    64.1%  ▃▅●·▃···▅·▅█ beats 3/11     medium · avg 69%    2.4%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.5%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 135/276  medium · avg 72%    2.1%  at its level · noisy
-<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                             58.9%  █·····█●█·██ beats 2/5      easy · avg 83%      2.0%  blunt · small run · several runs
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                             58.9%  █·····█●█·██ beats 2/5      easy · avg 83%      1.9%  blunt · small run · several runs
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard (lab)</a>                   30.8%  ●····█·····█ beats 0/2      medium · avg 39%    1.7%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   59.0%  ▃·▁▁▂▁▂●█▇▄▁ beats 32/100   medium · avg 66%    1.6%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   75.7%  ▁▁▁▁▁▁▁▂●█▄▃ beats 51/146   easy · avg 82%      1.4%  at its level · noisy
@@ -106,7 +106,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.0
+weighted average                                   = 43.9
 </pre>
 
 <sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · HuggingFaceTB/SmolLM3-3B model card ([Apache-2.0](../../licenses/HuggingFaceTB--SmolLM3-3B.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

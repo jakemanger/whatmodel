@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-10 · proprietary
 
-**score 46.1** ±2.4 · comparison only: no current run option verified · from 10 benchmark results across 1 source
+**score 46.0** ±2.4 · comparison only: no current run option verified · from 10 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -44,7 +44,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 46.1
+weighted average                                   = 46.0
 </pre>
 
 <sub>Licences: AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

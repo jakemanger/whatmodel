@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 
-**score 66.6** ±1.3 · #116 of 724 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.6** ±1.3 · #115 of 725 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #99 of 302     23%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #100 of 303     23%      3
 coding          ▁▁▁▃▆██▇●▄▃▁    #93 of 460*     12%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #104 of 395*    5.3%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁    #109 of 424     37%      3
 </pre>
 
-<details><summary>agent tasks · #99 of 302 · 23% of its score</summary>
+<details><summary>agent tasks · #100 of 303 · 23% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 18%           12%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 19%           12%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>   43.8%  ▁·▁·▁▁▄●▄█▄█ beats 16/58   very hard · avg 11%     8.1%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>     14.2%  ▂▂·▅█▂▂●▂▅▂▃ beats 13/20   very hard · avg 5.8%    2.6%  blunt · small run
 </pre>
@@ -41,7 +41,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                      result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 18%     12%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 19%     12%  sharp · at its level · small run
 </pre>
 
 </details>

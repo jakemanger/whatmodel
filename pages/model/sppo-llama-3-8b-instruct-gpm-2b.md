@@ -6,7 +6,7 @@
 
 general-preference (GPM) · released 2024-10 · 8.03B params · apache-2.0
 
-**score 50.2** ±1.5 · #470 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±1.5 · #471 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

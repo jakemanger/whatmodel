@@ -6,7 +6,7 @@
 
 OpenBMB · released 2026-09 · 2.52B params · apache-2.0
 
-**score 63.6** ±1.0 · #163 of 724 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.5** ±1.0 · #165 of 725 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #129 of 302     21%      5
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #130 of 303     21%      5
 coding          ▁▁▁▃▆██●▆▄▃▁    #154 of 460     33%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #172 of 395*    0.3%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁    #138 of 424     29%      4
 web search      █·█▄██·▄●·▄▄      #3 of 13*    4.7%      1
 </pre>
 
-<details><summary>agent tasks · #129 of 302 · 21% of its score</summary>
+<details><summary>agent tasks · #130 of 303 · 21% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 10%     5.7%  sharp · at its level · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 10%     5.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)…</a>   14.4%  █▂···▂···●·▂ beats 7/8    very hard · avg 4.0%    4.8%  sharp · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH (lab)</a>                  43.5%  ▄▄·▄▄▄·█···● beats 8/8    very hard · avg 12%     4.7%  at its level · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive) (…</a>   66.6%  ▄·█·▄▄▄▄·▄·● beats 8/8    medium · avg 43%        4.0%  at its level
@@ -46,7 +46,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Medium)…</a>   17.5%  █···▂··▄▂··● beats 8/8    very hard · avg 1.9%     10%  sharp · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unspecif…</a>   69.1%  ▃····█·▃▅▃·● beats 8/8    medium · avg 38%        7.0%  at its level
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 10%     5.7%  sharp · at its level · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 10%     5.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   68.0%  ▄···█▄··▄█▄● beats 8/8    hard · avg 32%          5.7%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)…</a>   14.4%  █▂···▂···●·▂ beats 7/8    very hard · avg 4.0%    4.8%  sharp · noisy
 </pre>
@@ -97,7 +97,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2 (lab)</a>                   43.7%  ▃······▅▅▃·● beats 7/8    very hard · avg 32%    5.1%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro (lab)</a>                       70.8%  ▂··▂█·▂●···▂ beats 7/8    medium · avg 58%       4.4%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA (lab)</a>                      40.8%  ▃·▃·▃▅●····▃ beats 7/8    hard · avg 31%         3.9%  at its level
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux (lab)</a>                     84.7%  ▂···█··▂●··▂ beats 7/8    easy · avg 76%         3.4%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux (lab)</a>                     84.7%  ▂···█··▂●··▂ beats 7/8    easy · avg 76%         3.5%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFBench (aggregation unspecified)…</a>   66.3%  ▅····▃▃·█·●▃ beats 7/8    medium · avg 43%       2.4%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspecified…</a>   71.8%  ▄▄···▄·▄·▄●█ beats 5/8    medium · avg 59%       1.4%  blunt
 </pre>
@@ -112,7 +112,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                results  share of the score
 <a name="card3-openbmb-minicpm5-2b"></a><a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">openbmb/MiniCPM5-2B model card (lab)</a>       20  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                    0% ▇
-weighted average                               = 63.6
+weighted average                               = 63.5
 </pre>
 
 <sub>Licences: openbmb/MiniCPM5-2B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

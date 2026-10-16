@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 72.6** ±0.6 · #54 of 724 · from 27 benchmark results across 8 sources
+**score 72.6** ±0.6 · #55 of 725 · from 27 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #71 of 302     13%      4
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #72 of 303     13%      4
 coding              ▁▁▁▃▆██▇▆●▃▁   #41 of 460*    8.1%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #16 of 395*    3.6%      1
 math                ▁▁▃▅█▆▄█●▁▁▁    #42 of 424     50%      8
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #20 of 147    8.7%      5
 </pre>
 
-<details><summary>agent tasks · #71 of 302 · 13% of its score</summary>
+<details><summary>agent tasks · #72 of 303 · 13% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0768 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 5/49   avg -0.312 IPS          6.6%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0768 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 5/49   avg -0.311 IPS          6.6%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  73.0%  ▁·▁·▁▁▄▃▄█●█ beats 38/58  hard · avg 25%          4.1%  sharp · small run · several runs
-<a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>        11.7%  ●··▅··▃█▃▅▃▅ beats 0/12   very hard · avg 3.5%    2.1%  sharp · at its level
+<a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>        11.7%  ●··▅··▃█▃▅▃▅ beats 0/12   very hard · avg 3.5%    2.0%  sharp · at its level
 <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (lab)</a>                   5.4%  ●·█··██····█ beats 0/4    very hard · avg 1.8%    0.6%  small run
 </pre>
 
@@ -43,8 +43,8 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1536.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 80/119  avg 969                 6.1%  sharp
-<a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>   11.7%  ●··▅··▃█▃▅▃▅ beats 0/12    very hard · avg 3.5%    2.1%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1536.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 80/119  avg 970                 6.1%  sharp
+<a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>   11.7%  ●··▅··▃█▃▅▃▅ beats 0/12    very hard · avg 3.5%    2.0%  sharp · at its level
 </pre>
 
 </details>

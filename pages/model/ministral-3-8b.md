@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.92B params · apache-2.0
 
-**score 53.3** ±0.8 · #308 of 724 · from 21 benchmark results across 8 sources
+**score 53.3** ±0.8 · #309 of 725 · from 21 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #212 of 302*    3.8%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #213 of 303*    3.8%      1
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #285 of 395*    2.9%      1
 math            ▁▁▃▅█●▄█▄▁▁▁    #217 of 424     23%      4
 </pre>
 
-<details><summary>agent tasks · #212 of 302 · 3.8% of its score</summary>
+<details><summary>agent tasks · #213 of 303 · 3.8% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   89.7%  ▂·▂▂·▂·▃●·█▃ beats 6/14   easy · avg 79%         5.0%  typical
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               43.3%  █··▄··●··█·▄ beats 3/7    medium · avg 41%       4.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        55.4%  ▃··▃▃··●···█ beats 3/7    medium · avg 56%       3.3%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   73.1%  ▂··▂▂·▂●▆█·▄ beats 6/15   medium · avg 62%       2.9%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   73.1%  ▂··▂▂·▂●▆█·▄ beats 6/15   medium · avg 63%       2.9%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             56.4%  ▄···▄·●·▄·▄█ beats 2/7    medium · avg 58%       2.9%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    52.4%  ▄··▄█▄··▄··● beats 7/7    medium · avg 46%       2.3%  blunt · at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   54.4%  ▂···▂▂·▃▂●██ beats 6/17   medium · avg 52%       1.7%  at its level

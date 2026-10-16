@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
-**score 65.1** ±1.2 · #140 of 724 · from 12 benchmark results across 5 sources
+**score 65.1** ±1.2 · #141 of 725 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #98 of 302     41%      4
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #99 of 303     41%      4
 coding          ▁▁▁▃▆██▇●▄▃▁    #96 of 460*     25%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #125 of 395*     15%      1
 math            ▁▁▃▅█●▄█▄▁▁▁    #225 of 424    9.1%      3
 web search      ●█···█····██       #5 of 5*    8.7%      1
 </pre>
 
-<details><summary>agent tasks · #98 of 302 · 41% of its score</summary>
+<details><summary>agent tasks · #99 of 303 · 41% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1384.4  ▁▂▄▃▅●▄▇▆▄▁▁ beats 38/119  avg 969        25%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1384.4  ▁▂▄▃▅●▄▇▆▄▁▁ beats 38/119  avg 970        25%  sharp
 </pre>
 
 </details>

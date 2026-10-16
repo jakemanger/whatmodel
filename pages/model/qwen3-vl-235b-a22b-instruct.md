@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 63.7** ±0.7 · #159 of 724 · from 39 benchmark results across 4 sources
+**score 63.6** ±0.7 · #162 of 725 · from 39 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #168 of 302*    0.6%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #167 of 303*    0.6%      1
 coding              ▁▁▁▃▆██●▆▄▃▁   #171 of 460*    2.9%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃     #97 of 395     10%      3
 math                ▁▁▃▅█▆▄●▄▁▁▁     #98 of 424     11%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #74 of 147     47%     15
 </pre>
 
-<details><summary>agent tasks · #168 of 302 · 0.6% of its score</summary>
+<details><summary>agent tasks · #167 of 303 · 0.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #97 of 395 · 10% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
@@ -74,7 +74,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>vision &amp; documents · #74 of 147 · 47% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
@@ -132,7 +132,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   10% ▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 63.7
+weighted average                                   = 63.6
 </pre>
 
 <sub>Licences: Qwen3-VL-235B-A22B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

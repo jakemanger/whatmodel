@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 18.0** ±0.9 · #697 of 724 · from 47 benchmark results across 14 sources
+**score 18.0** ±0.9 · #698 of 725 · from 47 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   40.2%  ▃···●·▃▅··▃█ beats 2/9     very easy · avg 85%    2.6%  at its level
 <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           23.2%  ●······▂·▆·▂ beats 1/8     easy · avg 77%         2.4%  several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   51.5%  ▂▂··●·█···▂▂ beats 2/8     easy · avg 79%         1.5%  blunt · at its level
-<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.0%  ●▄····█▄▄··▄ beats 1/7     medium · avg 60%       1.2%  blunt
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.0%  ●▄····█▄▄··▄ beats 1/7     medium · avg 61%       1.2%  blunt
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">UD English-GUM UPOS tagging, few-…</a>   70.4%  ▄·▄●·······█ beats 2/4     very easy · avg 92%    0.8%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             58.3%  ▂·····▅●▅▆▆█ beats 7/24    medium · avg 74%       0.6%  blunt · at its level · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 20/276  medium · avg 72%       0.6%  noisy

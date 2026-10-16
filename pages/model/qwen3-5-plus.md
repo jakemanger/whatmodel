@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 68.3** ±1.7 · #97 of 724 · from 7 benchmark results across 3 sources
+**score 68.3** ±1.7 · #97 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #108 of 302*     10%      1
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #109 of 303*     10%      1
 coding       ▁▁▁▃▆██●▆▄▃▁   #138 of 460*     10%      1
 math         ▁▁▃▅█▆▄●▄▁▁▁    #82 of 424*     13%      1
 </pre>
 
-<details><summary>agent tasks · #108 of 302 · 10% of its score</summary>
+<details><summary>agent tasks · #109 of 303 · 10% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 

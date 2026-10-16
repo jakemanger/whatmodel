@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7.62B params · mit
 
-**score 48.1** ±0.9 · #401 of 724 · from 31 benchmark results across 12 sources
+**score 48.1** ±0.9 · #402 of 725 · from 31 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,10 +28,10 @@ Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   37.6%  ▄····●▄··▄█▄ beats 1/6    medium · avg 41%    5.8%  at its level
 <a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">LiveCodeBench v2</a>                     50.1%  ▄··●·▄···▄▄█ beats 1/7    medium · avg 50%    3.6%  at its level · several runs
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.1%  ●··▁▂▂▃▂█▃▄▂ beats 0/47   medium · avg 50%    2.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.1%  ●··▁▂▂▃▂█▃▄▂ beats 0/47   medium · avg 51%    2.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.2%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 1/47   hard · avg 32%      2.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    6.7%  ▁▁▁●▁▁▂▂▃█▅▄ beats 5/47   hard · avg 31%      1.9%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    1.0%  ▁●▁······▁▃█ beats 2/47   easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    1.0%  ▁●▁······▁▃█ beats 2/47   easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>            87.9%  ●·····▃···▅█ beats 0/6     very easy · avg 90%    9.2%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       92.8%  ▄·▄▄·●▄█···▄ beats 3/7     very easy · avg 89%    9.1%  small run · several runs
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025</a>                            33.3%  ▁·▁▁▁▂●▆█▇▅▁ beats 20/133  medium · avg 38%       7.3%  sharp · at its level · small run
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>          28.5%  ●······█▄▄·█ beats 0/6     hard · avg 30%         4.4%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>          28.5%  ●······█▄▄·█ beats 0/6     hard · avg 31%         4.4%  at its level
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   68.5%  ▄●·▄····▄▄·█ beats 1/7     easy · avg 76%         1.8%  at its level
 </pre>
 

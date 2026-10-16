@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.248B params · apache-2.0
 
-**score 24.8** ±1.4 · #680 of 724 · from 16 benchmark results across 9 sources
+**score 24.8** ±1.4 · #681 of 725 · from 16 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bl
 <pre>
 test        result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2301.12726v1">GSM8K</a>         3.0%  ▂▂●▂▃▄▅▇██▆▄ beats 22/200  medium · avg 50%     11%  sharp · too hard for it
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.4%  ●·▂·▄▂▂▂▂█▄▆ beats 0/18    medium · avg 47%    3.9%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.4%  ●·▂·▄▂▂▂▂█▄▆ beats 0/18    medium · avg 48%    3.9%  sharp · too hard for it
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   26.6%  ●···▄▄·▄▄▄·▄ beats 0/7    medium · avg 51%    3.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.acl-long.136.pdf">PopQA</a>                                 8.8%  ▁●▁▃▃█▂█▆▅▁▆ beats 1/40   hard · avg 31%      2.1%  too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   84.6%  ▂▂▄··▂▂●▄··▂ beats 8/12   easy · avg 90%      2.1%  at its level · noisy
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   16.5%  ▃··●·█▃·█▃·▃ beats 1/10   hard · avg 29%      2.0%  blunt
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   16.5%  ▃··●·█▃·█▃·▃ beats 1/10   hard · avg 29%      2.1%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   26.9%  ▄·●··██·▄▄▄▄ beats 1/10   medium · avg 43%    0.7%  blunt · at its level
 </pre>
 

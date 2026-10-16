@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 10.7B params · apache-2.0
 
-**score 57.1** ±2.3 · #241 of 724 · from 10 benchmark results across 1 source
+**score 57.0** ±2.3 · #242 of 725 · from 10 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -44,7 +44,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 57.1
+weighted average                                   = 57.0
 </pre>
 
 <sub>Licences: AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

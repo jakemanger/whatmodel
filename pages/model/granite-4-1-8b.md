@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 8.79B params · apache-2.0
 
-**score 55.4** ±0.9 · #272 of 724 · from 24 benchmark results across 3 sources
+**score 55.4** ±0.9 · #272 of 725 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #208 of 302*    7.8%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #209 of 303*    7.8%      2
 coding          ▁▁▁▃▆██●▆▄▃▁    #194 of 460     35%      8
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #215 of 395*    9.5%      2
 math            ▄··········●        #1 of 3     18%      5
 </pre>
 
-<details><summary>agent tasks · #208 of 302 · 7.8% of its score</summary>
+<details><summary>agent tasks · #209 of 303 · 7.8% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -40,9 +40,9 @@ Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwe
 
 <pre>
 test                       result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1190.3  ▁●▄▃▅█▄▇▆▄▁▁ beats 4/119    avg 969              13%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1190.3  ▁●▄▃▅█▄▇▆▄▁▁ beats 4/119    avg 970              13%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">HumanEval (lab)</a>             85.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 189/205  easy · avg 77%      5.8%  sharp · small run
-<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">HumanEval+ (lab)</a>            79.9%  ▁·▁▁▂▃▄▄█●▄▃ beats 109/145  easy · avg 72%      5.2%  sharp · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">HumanEval+ (lab)</a>            79.9%  ▁·▁▁▂▃▄▄█●▄▃ beats 109/145  easy · avg 73%      5.2%  sharp · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MBPP (lab)</a>                  87.3%  ▁▁▁▄▅█▆▅▄▁▂● beats 85/86    easy · avg 74%      2.5%  small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MultiPL-E (lab)</a>             60.3%  ▃··▄·▅▅●▄█▃▄ beats 13/31    medium · avg 53%    2.4%  at its level · small run
 <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">BigCodeBench (lab)</a>          35.0%  ▅····▃·█▃●█▃ beats 7/12     hard · avg 30%      2.3%  at its level · small run

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 57.5** ±0.7 · #235 of 724 · from 25 benchmark results across 11 sources
+**score 57.5** ±0.7 · #234 of 725 · from 25 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -39,10 +39,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     66.8%  ▃▁▁█▁▄●▃▄▇▁▄ beats 16/31  medium · avg 39%        1.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  hard · avg 32%          1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   44.1%  ▁▁▁▁▁▁▂▂▃█▅● beats 41/47  hard · avg 31%          1.3%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   85.7%  ▃··▁▂▂▃▂█▃▄● beats 45/47  medium · avg 50%        1.1%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   85.7%  ▃··▁▂▂▃▂█▃▄● beats 45/47  medium · avg 51%        1.1%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     75.2%  █·██·█··█·█● beats 6/6    medium · avg 55%        1.1%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     83.4%  ▄·█··▄·▄··▄● beats 6/6    medium · avg 54%        0.4%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 46/47  easy · avg 66%          0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 46/47  easy · avg 67%          0.0%  blunt · at its level · noisy
 </pre>
 
 </details>

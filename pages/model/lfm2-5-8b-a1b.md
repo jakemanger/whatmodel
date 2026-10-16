@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-05 · 8.47B params (1.5B active) · lfm1.0
 
-**score 52.7** ±0.9 · #319 of 724 · from 29 benchmark results across 2 sources
+**score 52.7** ±0.9 · #319 of 725 · from 29 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #217 of 302     17%      8
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #216 of 303     17%      8
 coding          ▁▁▁▃●██▇▆▄▃▁    #383 of 460     18%      5
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #126 of 395*    1.7%      1
 math            ▁▁▃▅█●▄█▄▁▁▁    #212 of 424     41%      4
 web search      █·█●██·▄▄·▄▄      #9 of 13*    2.4%      1
 </pre>
 
-<details><summary>agent tasks · #217 of 302 · 17% of its score</summary>
+<details><summary>agent tasks · #216 of 303 · 17% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 41.2** ±1.5 · #538 of 724 · from 8 benchmark results across 5 sources
+**score 41.1** ±1.5 · #541 of 725 · from 8 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,7 +29,7 @@ test                                  result  vs the others in its run  difficul
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        964.4  ▁▁●▂▂▂▄▅▅▆██ beats 5/145  avg 1058             17%  blunt
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv descriptive questions (te…</a>     51.5%  ●··▄··█··▄·▄ beats 0/6    easy · avg 69%       16%  at its level
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          22.5%  ●▂▂█▃▂·▂▂··▂ beats 0/13   hard · avg 34%       10%  typical
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -5.548           10%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -5.431           10%  typical
 <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                       51.1%  ▁····▁▁▄●▇▆▆ beats 10/52  medium · avg 59%    6.5%  at its level · small run
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv reasoning questions (test…</a>     20.0%  ●··▄▄▄█····▄ beats 0/6    hard · avg 30%      5.8%  typical
 <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                          69.5%  ▁▁▁▄●▁▃·▃▃▃█ beats 6/24   easy · avg 77%      0.9%  blunt · at its level · small run
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   10% ▇
 <a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>                2    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.2
+weighted average                                   = 41.1
 </pre>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LLaVA repository model zoo ([Apache-2.0](https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE))</sub>

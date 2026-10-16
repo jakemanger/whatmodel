@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 66.3** ±0.9 · #121 of 724 · from 14 benchmark results across 6 sources
+**score 66.2** ±0.9 · #122 of 725 · from 14 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #141 of 302*    4.0%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #142 of 303*    4.0%      1
 coding          ▁▁▁▃▆██●▆▄▃▁    #134 of 460     43%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃    #83 of 395*    8.9%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁     #72 of 424     14%      3
 </pre>
 
-<details><summary>agent tasks · #141 of 302 · 4.0% of its score</summary>
+<details><summary>agent tasks · #142 of 303 · 4.0% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   74.2%  ▂·▂▃▅▂▃█▆●▂▂ beats 43/49   very hard · avg 7.3%     21%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1271.8  ▁▂▄●▅█▄▇▆▄▁▁ beats 17/119  avg 969                  15%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1271.8  ▁▂▄●▅█▄▇▆▄▁▁ beats 17/119  avg 970                  15%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   64.1%  ▁··▁·▁▁▁▆●▇█ beats 19/45   hard · avg 29%          4.4%  at its level
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   71.6%  ▄▄·▄·····█·● beats 5/5     medium · avg 45%        2.8%  at its level
 </pre>
@@ -97,7 +97,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 66.3
+weighted average                                   = 66.2
 </pre>
 
 <sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

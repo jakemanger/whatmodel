@@ -25,7 +25,7 @@ Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](f
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    1.6%  ▅·●█·······▂ beats 3/9    medium · avg 62%    3.4%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    1.6%  ▅·●█·······▂ beats 3/9    medium · avg 63%    3.4%  sharp · too hard for it · noisy
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.8** ±0.9 · #514 of 724 · from 19 benchmark results across 5 sources
+**score 42.8** ±0.9 · #515 of 725 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

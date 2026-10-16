@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 38.4** ±1.1 · #583 of 724 · from 10 benchmark results across 6 sources
+**score 38.4** ±1.1 · #584 of 725 · from 10 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

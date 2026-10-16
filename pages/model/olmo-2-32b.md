@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 50.4** ±1.2 · #359 of 724 · from 14 benchmark results across 5 sources
+**score 50.4** ±1.2 · #360 of 725 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B I
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 57%       8.3%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 87%    7.3%  sharp
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 88%    7.3%  sharp
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>    9.8%  ●···▃▃···▃▃█ beats 1/8    hard · avg 23%         2.9%  typical
 </pre>
 
@@ -52,7 +52,7 @@ test                               result  vs the others in its run  difficulty 
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           77.3%  ▁▂·▁·▁▁█·●▃▅ beats 14/22    easy · avg 75%       21%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 70.6%  ▁▄·▁▁·▅●·▄▄▁ beats 12/22    medium · avg 72%     19%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 30%      4.4%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 31%      4.4%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 224/276  medium · avg 72%    3.4%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 66%    2.8%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   90.8%  ▁▁▁▁▁▁▁▂▄█●▃ beats 119/146  easy · avg 82%      1.8%  noisy

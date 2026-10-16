@@ -54,7 +54,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 27%          9.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 27%          9.1%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/193  very hard · avg 6.9%    2.9%  sharp · at its level · noisy
 </pre>
 
@@ -67,7 +67,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.
 <pre>
 test                                 result  vs the others in its run   difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1179.4  ▁▁▂▂▂▂▄▅●▆██ beats 60/145  avg 1058      3.2%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -5.548    1.9%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -5.431    1.9%  typical
 </pre>
 
 </details>

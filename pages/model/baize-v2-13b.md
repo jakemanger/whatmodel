@@ -6,7 +6,7 @@
 
 Project Baize · released 2023-05 · cc-by-nc-4.0
 
-**score 33.8** ±2.5 · #838 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.8** ±2.5 · #839 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 23.57B params · apache-2.0
 
-**score 54.6** ±1.4 · #289 of 724 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.6** ±1.4 · #289 of 725 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   62.0%  ●▃·····▃···▃ beats 1/5    medium · avg 47%     33%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   62.0%  ●▃·····▃···▃ beats 1/5    medium · avg 48%     33%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   70.5%  ●▃·····▃···▃ beats 0/5    medium · avg 60%     24%  sharp · at its level
 </pre>
 

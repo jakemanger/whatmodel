@@ -6,7 +6,7 @@
 
 Cognitive Computations · released 2023-12 · apache-2.0
 
-**score 45.5** ±0.8 · #460 of 724 · from 3 benchmark results across 1 source
+**score 45.5** ±0.8 · #459 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

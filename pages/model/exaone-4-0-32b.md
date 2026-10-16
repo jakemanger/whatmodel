@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 58.8** ±0.9 · #211 of 724 · from 29 benchmark results across 4 sources
+**score 58.8** ±0.9 · #212 of 725 · from 29 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #183 of 302     33%      7
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #184 of 303     33%      7
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #232 of 460*    6.8%      2
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #194 of 395*    1.7%      1
 math            ▁▁▃▅█▆●█▄▁▁▁    #153 of 424     17%      4
 </pre>
 
-<details><summary>agent tasks · #183 of 302 · 33% of its score</summary>
+<details><summary>agent tasks · #184 of 303 · 33% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▅▄▇▃▆ beats 31/65  medium · avg 45%        3.6%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▅▄▇▃▆ beats 31/65  medium · avg 46%        3.6%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>    4.8%  █··▄▂▂●█▄·▄▆ beats 8/22   very hard · avg 3.2%    3.2%  sharp · small run
 </pre>
 
@@ -84,7 +84,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    32.6%  ▁···▁▃▂●▂▃▃▂ beats 11/23    hard · avg 17%          5.5%  at its level
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                       81.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 136/188  medium · avg 62%        4.6%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.6%  ▂·▂▂·▂·●▃·█▃ beats 5/14     easy · avg 79%          4.1%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 62%        3.0%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 63%        3.0%  at its level
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>           10.6%  ▁▁▁▃●▆▇██▆▁▃ beats 18/104   very hard · avg 4.2%    2.7%  small run
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     36.4%  ▂···█▂●▆██▆▂ beats 8/23     very hard · avg 29%     2.6%  typical
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                     92.3%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 46/63    easy · avg 79%          1.8%  small run

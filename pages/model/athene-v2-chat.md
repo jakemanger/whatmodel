@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-11 · 72.7B params · nexusflow-research
 
-**score 57.2** ±1.4 · #239 of 724 · from 5 benchmark results across 4 sources
+**score 57.2** ±1.4 · #240 of 725 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

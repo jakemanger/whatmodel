@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 7B params · deepseek
 
-**score 36.6** ±1.6 · #606 of 724 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.6** ±1.6 · #607 of 725 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test         result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   62.6%  ▂▂▂▂▃▄▅▇●█▆▄ beats 105/200  very easy · avg 89%     20%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   62.6%  ▂▂▂▂▃▄▅▇●█▆▄ beats 105/200  very easy · avg 90%     20%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>    14.7%  ▃▅▂▆●▃▅▅█▃▃▂ beats 12/30    medium · avg 44%        10%  small run
 </pre>
 

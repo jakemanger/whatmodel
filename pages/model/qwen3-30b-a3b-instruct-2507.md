@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 60.5** ±0.6 · #192 of 724 · from 60 benchmark results across 10 sources
+**score 60.4** ±0.6 · #193 of 725 · from 60 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #202 of 302     19%      7
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #203 of 303     19%      7
 coding          ▁▁▁▃▆██●▆▄▃▁   #197 of 460     16%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #127 of 395    8.8%      3
 math            ▁▁▃▅█▆▄●▄▁▁▁   #129 of 424     12%      4
 </pre>
 
-<details><summary>agent tasks · #202 of 302 · 19% of its score</summary>
+<details><summary>agent tasks · #203 of 303 · 19% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md) here,
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Aider polyglot (225 exercises, tw…</a>   35.6%  ▂▁▁▃▆▃●▆█▃▄▂ beats 30/71  very hard · avg 7.8%     11%  sharp · at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Aider polyglot (225 exercises, tw…</a>   35.6%  ▂▁▁▃▆▃●▆█▃▄▂ beats 30/71  very hard · avg 7.9%     11%  sharp · at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   43.2%  ▁▁●▁█▅▄▇▅▅▃█ beats 2/38   hard · avg 26%          2.8%  at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MultiPL-E (lab)</a>                      83.8%  ▃··▄·▅▅▇▄█●▄ beats 28/31  easy · avg 68%          2.4%  several runs
 </pre>
@@ -123,7 +123,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="libra-leaderboard"></a><a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/Qwen_Qwen3-30B-A3B-Instruct-2507.json">ai-forever LIBRA leaderboard</a>                    1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 60.5
+weighted average                                   = 60.4
 </pre>
 
 <sub>Licences: Qwen/Qwen3-Next-80B-A3B-Instruct model card ([apache-2.0](../../licenses/Qwen--Qwen3-Next-80B-A3B-Instruct.txt)) · Qwen/Qwen3-30B-A3B-Instruct-2507 model card ([apache-2.0](../../licenses/Qwen--Qwen3-30B-A3B-Instruct-2507.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · ai-forever LIBRA leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>

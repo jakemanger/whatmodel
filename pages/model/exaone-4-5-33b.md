@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 64.4** ±1.9 · #148 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.3** ±1.9 · #150 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #117 of 302*     20%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #118 of 303*     20%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃     #139 of 395*    6.0%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁      #77 of 424*     24%      1
 vision &amp; documents                 not ranked yet       —      3
 </pre>
 
-<details><summary>agent tasks · #117 of 302 · 20% of its score</summary>
+<details><summary>agent tasks · #118 of 303 · 20% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">LG AI Research vendor-reported benchmar…</a>        5   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 64.4
+weighted average                                   = 64.3
 </pre>
 
 <details><summary>Not counted (4)</summary>

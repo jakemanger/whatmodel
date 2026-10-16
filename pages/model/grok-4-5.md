@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-07 · closed weights
 
-**score 73.9** ±0.6 · #44 of 724 · from 20 benchmark results across 7 sources
+**score 73.9** ±0.6 · #43 of 725 · from 20 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #40 of 302     16%      4
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #40 of 303     16%      4
 coding              ▁▁▁▃▆██▇▆●▃▁   #36 of 460*     10%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #37 of 395*    4.3%      1
 math                ▁▁▃▅█▆▄█●▁▁▁    #36 of 424     47%      5
@@ -24,15 +24,15 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #26 of 147*    4.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #27 of 80*    1.7%      1
 </pre>
 
-<details><summary>agent tasks · #40 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #40 of 303 · 16% of its score</summary>
 
-Beats [Gemini 3.7 Flash](gemini-3-7-flash.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0121 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 24/49  avg -0.312 IPS          8.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0121 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 24/49  avg -0.311 IPS          8.0%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-xai-grok-4-5-none-grok-build.json">Terminal-Bench 4.0</a>                       12.4%  ●▅▅▅▅·▅▃▃▅▅▅ beats 2/20   very hard · avg 0.5%    3.8%  sharp
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-5_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>       47.9%  ▃▃▂▃·▆▃▂█▅●▂ beats 23/25  very hard · avg 4.1%    2.9%  at its level
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-5_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>       47.9%  ▃▃▂▃·▆▃▂█▅●▂ beats 23/25  very hard · avg 4.2%    2.9%  at its level
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>       51.8%  ▂·▁▁··▇▇●▂·▁ beats 22/25  hard · avg 28%          1.3%  blunt · at its level
 </pre>
 
@@ -44,7 +44,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1551.8  ▁▂▄▃▅█▄●▆▄▁▁ beats 85/119  avg 969           7.4%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1551.8  ▁▂▄▃▅█▄●▆▄▁▁ beats 85/119  avg 970           7.4%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   78.4%  ▁▁▁▁·▁▂▃▅▃●▇ beats 30/49   hard · avg 17%    3.0%  at its level
 </pre>
 

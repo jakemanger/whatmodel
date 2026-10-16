@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 1.3B params · opt-175b-license-noncommercial
 
-**score 14.4** ±0.8 · #703 of 724 · from 61 benchmark results across 11 sources
+**score 14.4** ±0.8 · #704 of 725 · from 61 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 71.7%  ▂·▄▄·▄▂▆●▄█▄ beats 11/19   easy · avg 87%          10%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 84.5%  ▂··▂▃▂▂●▃▃█▂ beats 8/19    very easy · avg 98%    6.3%  blunt · several runs
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   57.9%  ▃··▅▃▃▅▅●███ beats 10/19   very easy · avg 87%    5.5%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            41.5%  ▃●▃··▅····▃█ beats 1/8     easy · avg 82%         4.9%  several runs
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            41.5%  ▃●▃··▅····▃█ beats 1/8     easy · avg 82%         5.0%  several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     70.8%  ▂▂▄▂·▂·●·▂█▂ beats 6/14    easy · avg 89%         4.0%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 79.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 29/67   very easy · avg 96%    3.9%  at its level · several runs
 <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.0%  ●······▂·▆·▂ beats 2/8     very hard · avg 29%    3.8%  too hard for it · small run · several r…

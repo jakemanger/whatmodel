@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
-**score 64.8** ±0.9 · #144 of 724 · from 25 benchmark results across 3 sources
+**score 64.8** ±0.9 · #145 of 725 · from 25 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #124 of 302     24%      7
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #125 of 303     24%      7
 coding          ▁▁▁▃▆██▇●▄▃▁    #125 of 460     13%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #132 of 395*    4.1%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁     #99 of 424     31%      5
 web search      ▂●▂▆▄█▃▃▁▁·▁     #76 of 80*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #124 of 302 · 24% of its score</summary>
+<details><summary>agent tasks · #125 of 303 · 24% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 18%          6.0%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 19%          6.0%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>               73.5%  ▁·▅█▆▅●▃▃▂▃▁ beats 58/89   hard · avg 16%          4.6%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>             30.3%  ▁·▁·▁▁●▃▄█▄█ beats 9/58    very hard · avg 11%     3.9%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   10.3%  ▃····●··▃█·▃ beats 1/8     very hard · avg 3.5%    3.6%  typical
@@ -46,9 +46,9 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 18%          6.0%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 19%          6.0%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>   25.9%  █··▄▂▂██▄·▄● beats 21/22   very hard · avg 3.2%    4.0%  sharp · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   80.7%  ▂▃▄▄▅██▅●▇▃▆ beats 45/65   medium · avg 45%        3.4%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   80.7%  ▂▃▄▄▅██▅●▇▃▆ beats 45/65   medium · avg 46%        3.4%  small run
 </pre>
 
 </details>

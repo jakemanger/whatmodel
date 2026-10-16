@@ -6,7 +6,7 @@
 
 OpenChat · released 2023-10 · 7B params · apache-2.0
 
-**score 43.4** ±1.4 · #502 of 724 · from 7 benchmark results across 4 sources
+**score 43.4** ±1.4 · #503 of 725 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -59,7 +59,7 @@ test         result  vs the others in its run    difficulty           counts  wh
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard (lab)</a>                 63.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 93/155   easy · avg 76%       12%  sharp · at its level · small run
 <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU (lab)</a>                           64.3%  ▁▁▁▁▁▂▂▅●█▆▄ beats 101/214  easy · avg 75%       10%  at its level · small run
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   37.1%  ▂··▄·▂●▄▂█·▂ beats 5/14     medium · avg 53%    8.7%  at its level
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   37.1%  ▂··▄·▂●▄▂█·▂ beats 5/14     medium · avg 53%    8.6%  at its level
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
-**score 56.7** ±2.2 · #247 of 724 · from 3 benchmark results across 1 source
+**score 56.7** ±2.2 · #246 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   37.0%  ▂··●▂▄█▆▆▄▄█ beats 1/23   hard · avg 22%           40%  at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   14.1%  ●▁▁▁█▇▄▃▁▃·▃ beats 0/24   very hard · avg 9.0%     34%  typical
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   14.1%  ●▁▁▁█▇▄▃▁▃·▃ beats 0/24   very hard · avg 9.1%     34%  typical
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   26.5%  ●·▃▃█▁·▄·▁▁▁ beats 0/18   hard · avg 19%           24%  at its level
 </pre>
 

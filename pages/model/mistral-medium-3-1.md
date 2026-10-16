@@ -6,7 +6,7 @@
 
 Mistral · released 2025-08 · closed weights
 
-**score 64.0** ±2.2 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 63.9** ±2.2 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅●▄▃▃▁   #115 of 342*     10%      1
+agent tasks         ▁▁▂▆█▆▅●▄▃▃▁   #116 of 343*     10%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #116 of 466*     50%      1
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #112 of 182*     36%      1
 </pre>
 
-<details><summary>agent tasks · #115 of 342 · 10% of its score</summary>
+<details><summary>agent tasks · #116 of 343 · 10% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ source                             results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                1   10% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
 prior: pull toward the middle                 2% ▇
-weighted average                            = 64.0
+weighted average                            = 63.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

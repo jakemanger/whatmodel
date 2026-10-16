@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #153 of 342*    3.3%      1
+agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #154 of 343*    3.3%      1
 coding       ▁▁▁▃▅▇█▇●▄▂▁   #120 of 529*     95%      2
 </pre>
 
-<details><summary>agent tasks · #153 of 342 · 3.3% of its score</summary>
+<details><summary>agent tasks · #154 of 343 · 3.3% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

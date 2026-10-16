@@ -25,7 +25,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mi
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.5%  ▅·▂●·······▂ beats 8/9    medium · avg 62%    6.4%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.5%  ▅·▂●·······▂ beats 8/9    medium · avg 63%    6.4%  sharp · too hard for it · noisy
 </pre>
 
 </details>

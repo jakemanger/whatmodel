@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 44.4** ±1.4 · #485 of 724 · from 13 benchmark results across 2 sources
+**score 44.4** ±1.4 · #485 of 725 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #243 of 395*     12%      1
-math            ▁▁▃▅●▆▄█▄▁▁▁   #294 of 424*    8.4%      2
+math            ▁▁▃▅●▆▄█▄▁▁▁   #294 of 424*    8.3%      2
 </pre>
 
 <details><summary>chat &amp; writing · #243 of 395 · 12% of its score</summary>
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #294 of 424 · 8.4% of its score</summary>
+<details><summary>math · #294 of 424 · 8.3% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2511.23404v1">MMLU (lab)</a>                           64.4%  ▄█···●·····▄ beats 3/5     medium · avg 73%        17%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMLU (lab)</a>                           64.4%  ▄█···●·····▄ beats 3/5     medium · avg 73%        18%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond (lab)</a>                   26.6%  █●····███··█ beats 1/5     very hard · avg 33%     11%  sharp · too hard for it
 <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   22.2%  █··█●█··█··█ beats 2/5     hard · avg 31%          10%  typical
 <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (lab)</a>                       26.0%  ██●···██···█ beats 2/5     medium · avg 42%        10%  typical

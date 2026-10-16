@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.34B params · apache-2.0
 
-**score 29.0** ±1.0 · #664 of 724 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
+**score 29.0** ±1.0 · #665 of 725 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #270 of 302*    1.7%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #271 of 303*    1.7%      1
 coding          ●··········█        #4 of 4     39%      7
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #330 of 395*    7.2%      2
 math            ▁▁●▅█▆▄█▄▁▁▁    #400 of 424     27%      5
 </pre>
 
-<details><summary>agent tasks · #270 of 302 · 1.7% of its score</summary>
+<details><summary>agent tasks · #271 of 303 · 1.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 

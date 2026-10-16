@@ -25,7 +25,7 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [M
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   60.4%  ▆·▂·▄▂▂▂▂█▄● beats 18/18  medium · avg 47%     32%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   60.4%  ▆·▂·▄▂▂▂▂█▄● beats 18/18  medium · avg 48%     32%  sharp · at its level
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Databricks · released 2024-03 · 132B params (36B active) · databricks-open-model
 
-**score 47.3** ±0.6 · #423 of 724 · from 13 benchmark results across 9 sources
+**score 47.3** ±0.6 · #423 of 725 · from 13 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #288 of 302*    0.9%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #289 of 303*    0.9%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #283 of 460     58%      3
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #308 of 395     24%      4
 math            ▁▁▃●█▆▄█▄▁▁▁   #369 of 424*    5.5%      1
 </pre>
 
-<details><summary>agent tasks · #288 of 302 · 0.9% of its score</summary>
+<details><summary>agent tasks · #289 of 303 · 0.9% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ test          result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  32.5989 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 20/52   avg 42.747 WB-Score    4.6%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  32.5989 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 20/52   avg 42.785 WB-Score    4.6%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.9%  ▁▁▁▁●▄▆▄▅▇█▅ beats 21/208  hard · avg 38%         3.2%  sharp
 <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                                 48.5%  ▁▁▁▁▂▄●▆█▃▃▁ beats 56/155  medium · avg 62%       2.8%  sharp · at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             91.7%  ▁▁▂▃●▄█▆▃▂▂▁ beats 34/140  very easy · avg 94%    0.3%  blunt · maxed out · noisy

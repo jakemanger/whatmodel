@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-12 · apache-2.0
 
-**score 48.4** ±0.9 · #398 of 724 · from 3 benchmark results across 1 source
+**score 48.4** ±0.9 · #399 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

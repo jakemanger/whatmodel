@@ -6,7 +6,7 @@
 
 Nanbeige · released 2025-11 · 3.93B params · apache-2.0
 
-**score 54.8** ±3.0 · #345 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.7** ±3.0 · #348 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #150 of 336*     40%      1
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #151 of 337*     40%      1
 </pre>
 
-<details><summary>agent tasks · #150 of 336 · 40% of its score</summary>
+<details><summary>agent tasks · #151 of 337 · 40% of its score</summary>
 
 Beats [watt-tool-70B](watt-tool-70b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   56% ▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   40% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 54.8
+weighted average                                   = 54.7
 </pre>
 
 <sub>Licences: EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

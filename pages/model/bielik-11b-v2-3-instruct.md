@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-08 · 11.17B params · apache-2.0
 
-**score 51.1** ±2.0 · #343 of 724 · from 6 benchmark results across 5 sources
+**score 51.0** ±2.0 · #345 of 725 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #282 of 302*     27%      2
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #283 of 303*     27%      2
 </pre>
 
-<details><summary>agent tasks · #282 of 302 · 27% of its score</summary>
+<details><summary>agent tasks · #283 of 303 · 27% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   10% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    5% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 51.1
+weighted average                                   = 51.0
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

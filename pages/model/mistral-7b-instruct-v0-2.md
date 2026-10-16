@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 7.24B params · apache-2.0
 
-**score 37.9** ±0.5 · #590 of 724 · from 24 benchmark results across 15 sources
+**score 37.8** ±0.5 · #593 of 725 · from 24 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #345 of 395     11%  
 
 <details><summary>coding · #405 of 460 · 61% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -57,7 +57,7 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           20.1%  ▁▁▁▂▂●▂█▆▃▅▃ beats 15/61    medium · avg 38%       6.9%  typical
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              14.7%  ●▂▃▄▄█▁▄▅▃▁▃ beats 1/42     medium · avg 52%       6.2%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.2_5shots.zip">MMLU-Pro</a>                                       28.8%  ▃●▅█▃·█▃▅··▂ beats 2/23     medium · avg 54%       3.4%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.6337 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 8/52     avg 42.747 WB-Score    3.0%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.6337 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 8/52     avg 42.785 WB-Score    3.0%  sharp
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.2/results_2024-02-12%2015%3A18%3A27.775649.json">Natural Questions (closed book)</a>                24.7%  ▁·▁·▁▂▁▂·▅▂● beats 19/28    medium · avg 48%       2.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                53.3%  ▁··▁▁▂▂▆●▆█▆ beats 27/70    medium · avg 61%       1.6%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             39.4%  ▂▄●▃█▄▃▆▃▅▂▂ beats 13/81    medium · avg 56%       1.3%  blunt · at its level
@@ -93,7 +93,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 37.9
+weighted average                                   = 37.8
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

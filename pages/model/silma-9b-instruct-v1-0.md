@@ -6,7 +6,7 @@
 
 SILMA AI · released 2024-08 · 9.24B params · gemma
 
-**score 43.5** ±3.1 · #670 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.5** ±3.1 · #671 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

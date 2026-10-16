@@ -6,7 +6,7 @@
 
 DeepReinforce · released 2026-06 · 35B params (3B active) · mit
 
-**score 67.0** ±1.0 · #111 of 724 · from 17 benchmark results across 2 sources
+**score 67.0** ±1.0 · #112 of 725 · from 17 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▅▄▃▁    #95 of 302     78%      9
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁    #96 of 303     78%      9
 coding       ▁▁▁▃▆██▇●▄▃▁   #103 of 460     51%      4
 web search   ●··········█       #2 of 2    8.6%      3
 </pre>
 
-<details><summary>agent tasks · #95 of 302 · 78% of its score</summary>
+<details><summary>agent tasks · #96 of 303 · 78% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   55.8%  ▄▄·····●▄▄▄█ beats 2/7    hard · avg 16%           19%  sharp · at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   36.0%  ▄······█▄▄●▄ beats 6/7    very hard · avg 7.0%     18%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   36.0%  ▄······█▄▄●▄ beats 6/7    very hard · avg 7.1%     18%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    34.5%  ▄···▄···▄●██ beats 3/7    very hard · avg 6.5%     16%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               51.7%  ▄·▄·····█●█▄ beats 4/7    hard · avg 18%           10%  at its level · several runs
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     63.5%  ▂·▄▁▂▃▆▄●▂▃▄ beats 28/42  hard · avg 24%          3.6%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>         64.4%  ▂·▁▂▁·▁▃●▆▆▂ beats 17/37  hard · avg 30%          3.4%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   30.1%  ▂▂▂▁●▂▃▆█▇▂▆ beats 9/54   very hard · avg 12%     2.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   30.1%  ▂▂▂▁●▂▃▆█▇▂▆ beats 9/55   very hard · avg 12%     2.8%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     63.4%  █·●▆··▂···▂▂ beats 4/10   medium · avg 36%        2.3%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>            42.4%  ▂·▂●▅▃···▂██ beats 2/18   hard · avg 26%          1.8%  blunt · at its level · small run
 </pre>
@@ -49,7 +49,7 @@ test                               result  vs the others in its run  difficulty 
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                  55.8%  ▄▄·····●▄▄▄█ beats 2/7    hard · avg 16%           19%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>   34.5%  ▄···▄···▄●██ beats 3/7    very hard · avg 6.5%     16%  sharp · at its level · several runs
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>              51.7%  ▄·▄·····█●█▄ beats 4/7    hard · avg 18%           10%  at its level · several runs
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>         30.3%  ▄···▄▄●▄·▄·▄ beats 3/7    very hard · avg 13%     5.2%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>         30.3%  ▄···▄▄●▄·▄·▄ beats 3/7    very hard · avg 13%     5.1%  at its level
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test                               result  vs the others in its run  difficulty 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     63.5%  ▂·▄▁▂▃▆▄●▂▃▄ beats 28/42  hard · avg 24%         3.6%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   30.1%  ▂▂▂▁●▂▃▆█▇▂▆ beats 9/54   very hard · avg 12%    2.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   30.1%  ▂▂▂▁●▂▃▆█▇▂▆ beats 9/55   very hard · avg 12%    2.8%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     63.4%  █·●▆··▂···▂▂ beats 4/10   medium · avg 36%       2.3%  at its level · small run
 </pre>
 
@@ -70,7 +70,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>           86.2%  ▁▁▁▁▂▄▅▅██●▄ beats 237/310  hard · avg 44%          9.1%  sharp · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>   20.8%  ▁▁▁▃▆▆●██▆▁▃ beats 49/104   very hard · avg 4.7%    4.3%  small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>   20.8%  ▁▁▁▃▆▆●██▆▁▃ beats 49/104   very hard · avg 4.8%    4.3%  small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">NL2Repo (lab)</a>                34.6%  ▂▂·▂▂▄●▆▆▂▄▆ beats 6/21     very hard · avg 12%     3.2%  at its level · small run
 </pre>
 

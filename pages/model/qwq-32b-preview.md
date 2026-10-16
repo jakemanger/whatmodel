@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 46.4** ±1.7 · #441 of 724 · from 8 benchmark results across 8 sources
+**score 46.4** ±1.7 · #442 of 725 · from 8 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #300 of 302*    6.6%      1
+agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #301 of 303*    6.6%      1
 coding          ▁▁▁▃▆██●▆▄▃▁   #155 of 460*    2.9%      1
 chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #343 of 395*     31%      1
 </pre>
 
-<details><summary>agent tasks · #300 of 302 · 6.6% of its score</summary>
+<details><summary>agent tasks · #301 of 303 · 6.6% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 

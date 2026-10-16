@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 57.5** ±0.9 · #236 of 724 · from 20 benchmark results across 5 sources
+**score 57.4** ±0.9 · #237 of 725 · from 20 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #263 of 302*    5.8%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #265 of 303*    5.8%      1
 coding       ▁▁▁▃▆█●▇▆▄▃▁    #249 of 460    8.8%      3
 math         ▁▁▃▅█▆●█▄▁▁▁    #152 of 424     45%      6
 </pre>
 
-<details><summary>agent tasks · #263 of 302 · 5.8% of its score</summary>
+<details><summary>agent tasks · #265 of 303 · 5.8% of its score</summary>
 
 Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -89,7 +89,7 @@ source                                    results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    5% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.5
+weighted average                                   = 57.4
 </pre>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card ([MIT](../../licenses/card-deepseek-ai-deepseek-r1-0528-qwen3-8b.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

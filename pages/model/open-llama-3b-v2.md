@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 24.7** ±1.1 · #681 of 724 · from 12 benchmark results across 2 sources
+**score 24.7** ±1.1 · #683 of 725 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">BoolQ</a>                                65.7%  ▂▃▂▅●▂▅▆█▂▂▂ beats 9/26    easy · avg 88%         9.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">HellaSwag</a>                            70.0%  ▃···▁▇▅●▇▃▁▁ beats 12/26   very easy · avg 91%    7.9%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">ARC Easy</a>                             63.5%  ▁▁·▁▁▄●▄█▅▁▃ beats 10/26   easy · avg 85%         7.1%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">SciQ</a>                                 92.4%  ▁·▁·▁·▃▅●█▄▁ beats 12/26   very easy · avg 97%    7.0%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">SciQ</a>                                 92.4%  ▁·▁·▁·▃▅●█▄▁ beats 12/26   very easy · avg 98%    7.0%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">PIQA</a>                                 76.7%  ▁·▁··▁▁▃█●█▂ beats 14/26   easy · avg 87%         5.1%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">LAMBADA (OpenAI version), last-wo…</a>   66.7%  ▁··▂▁▁▁▂●█▅▃ beats 8/26    very easy · avg 86%    3.3%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json">OpenBookQA</a>                           26.0%  █·▁●▃·▁▃▅▇▃▄ beats 7/26    hard · avg 48%         3.0%  too hard for it

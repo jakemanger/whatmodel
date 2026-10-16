@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 2B params · proprietary
 
-**score 10.1** ±1.8 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 10.2** ±1.8 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2201.11903v6"></a><a href="https://arxiv.org/html/2201.11903v6">Chain-of-Thought Prompting Elicits Reas…</a>        9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 10.1
+weighted average                                   = 10.2
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt))</sub>

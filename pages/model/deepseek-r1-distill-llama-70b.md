@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 58.3** ±0.9 · #218 of 724 · from 18 benchmark results across 7 sources
+**score 58.2** ±0.9 · #219 of 725 · from 18 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,9 +28,9 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   57.5%  ▄····▄▄··▄●▄ beats 5/6    medium · avg 41%    7.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   47.3%  █▂▁▁▂▂▂▃▅▅●▇ beats 35/47  hard · avg 32%      3.4%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   28.7%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 19/47  hard · avg 31%      2.6%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   68.8%  ▃··▁▂▂▃▂█●▄▂ beats 37/47  medium · avg 50%    2.1%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   61.2%  ▁▁▁······▁●█ beats 11/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   28.7%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 19/47  hard · avg 31%      2.7%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   68.8%  ▃··▁▂▂▃▂█●▄▂ beats 37/47  medium · avg 51%    2.1%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   61.2%  ▁▁▁······▁●█ beats 11/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               89.9%  ▂▂▅▆▄█▆▃▅●▃▄ beats 78/92   hard · avg 27%           18%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   51.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 78/193  very hard · avg 6.9%    6.7%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   51.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 78/193  very hard · avg 6.9%    6.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>            70.0%  ▃·▃·▃▃···●·▃ beats 5/7     medium · avg 42%        5.2%  sharp · at its level · noisy · several …
 <a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                  51.5%  ●··▄··█··▄·▄ beats 0/6     hard · avg 32%          4.4%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>             94.5%  ▄·▄▄·▄▄●···▄ beats 6/7     very easy · avg 91%     1.7%  maxed out
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="judgemark-v2-results"></a><a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 results</a>                            1    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.3
+weighted average                                   = 58.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

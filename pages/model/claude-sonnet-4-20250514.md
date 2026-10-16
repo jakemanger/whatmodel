@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #147 of 342     22%     11
+agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #148 of 343     22%     11
 coding              ▁▁▁▃▅▇█▇●▄▂▁    #139 of 529     21%      6
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #127 of 466*    5.4%      2
 math                ▁▂▃▆█▇●▇▃▁▁▁    #195 of 523    8.7%      5
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #82 of 182*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #147 of 342 · 22% of its score</summary>
+<details><summary>agent tasks · #148 of 343 · 22% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Telecom</a>                     46.2%  ██··██●···██ beats 4/6    very hard · avg 8.5%    5.6%  sharp · at its level · several runs
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   40.4%  ▃▅▃·▅▃▃··●·▃ beats 9/11   very hard · avg 3.4%    2.8%  sharp · at its level · noisy
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   40.4%  ▃▅▃·▅▃▃··●·▃ beats 9/11   very hard · avg 3.5%    2.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   63.3%  █···█▄▄·▄█·● beats 10/10  hard · avg 27%          2.3%  at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json">τ-bench Retail (lab)</a>                 80.5%  ▁····▃·▂▇█▂● beats 26/28  medium · avg 44%        2.2%  small run
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail</a>                      80.0%  ▅···█·▃····● beats 6/6    medium · avg 39%        2.1%  at its level
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json">τ-bench Airline (lab)</a>                60.0%  ▁▁▁·▅▄▁█▇▁▁● beats 25/28  hard · avg 25%          1.5%  at its level · small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail</a>                      80.0%  ▅···█·▃····● beats 6/6    medium · avg 40%        2.1%  at its level
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json">τ-bench Airline (lab)</a>                60.0%  ▁▁▁·▅▄▁█▇▁▁● beats 25/28  hard · avg 26%          1.5%  at its level · small run
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Airline</a>                     60.0%  ▄·▄··▄···█▄● beats 6/6    hard · avg 24%          1.4%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-4-Sonnet/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   70.7%  ▅····▅▅▃▃·▃● beats 9/11   medium · avg 53%        1.3%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   70.3%  ▄▄····█▄···● beats 5/5    hard · avg 25%          1.2%  at its level
@@ -89,7 +89,7 @@ test                      result  vs the others in its run   difficulty         
 
 <details><summary>vision &amp; documents · #82 of 182 · 2.7% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -108,9 +108,9 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    35.5%  ▁···▁▃▂█●▃▃▂ beats 14/23    hard · avg 17%          2.9%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1224.3  ▁·▂▁▄▅▅●█▄▁▁ beats 34/62    avg 1031                2.3%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   75.6%  ▁▁·▁▂▂▄█▄▅▄● beats 59/66    hard · avg 29%          2.0%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">CMMLU</a>                                86.5%  █····▄··●▄▄▄ beats 3/6      medium · avg 66%        1.7%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">CMMLU</a>                                86.5%  █····▄··●▄▄▄ beats 3/6      medium · avg 67%        1.7%  typical
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     45.7%  ▂···█▂▆▆●█▆▂ beats 15/23    very hard · avg 29%     1.6%  at its level
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">C-Eval</a>                               86.6%  █····●·▄·▄▄▄ beats 2/6      medium · avg 67%        1.5%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">C-Eval</a>                               86.6%  █····●·▄·▄▄▄ beats 2/6      medium · avg 68%        1.5%  typical
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   92.3%  ▁▁▃▁█●▃▃▆▂▂▂ beats 21/49    easy · avg 77%          1.5%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   69.8%  ▁▁▁▁·▂·█▆●▇▁ beats 18/31    medium · avg 46%        1.4%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">COLLIE (constrained text generati…</a>   51.2%  ▄···▄█●····█ beats 4/6      hard · avg 30%          1.4%  at its level
@@ -119,7 +119,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   52.0%  ▆▂·▄█·▂▂·▄●▂ beats 14/16    very hard · avg 35%     1.4%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   62.5%  ▁··▃▁▁▁▅●▅▁▅ beats 13/24    hard · avg 51%          0.8%  blunt · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">ZebraLogic</a>                           75.8%  █···●··███·█ beats 1/5      medium · avg 51%        0.6%  noisy
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME</a>                           20.5%  ●····█·▄▄··▄ beats 0/6      hard · avg 23%          0.5%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME</a>                           20.5%  ●····█·▄▄··▄ beats 0/6      hard · avg 24%          0.5%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">DROP</a>                                 73.1%  ▄···▄·●█·▄·▄ beats 2/6      medium · avg 58%        0.2%  blunt · at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.5%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 76/140   very easy · avg 94%     0.1%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.7%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 43/98    very easy · avg 90%     0.0%  blunt

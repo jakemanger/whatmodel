@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.077B params · apache-2.0
 
-**score 16.2** ±2.6 · #702 of 724 · from 11 benchmark results across 5 sources
+**score 16.2** ±2.6 · #703 of 725 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Tra
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.2%  ●·▂·▄▂▂▂▂█▄▆ beats 1/18   medium · avg 47%    3.9%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.2%  ●·▂·▄▂▂▂▂█▄▆ beats 1/18   medium · avg 48%    3.9%  sharp · too hard for it
 </pre>
 
 </details>

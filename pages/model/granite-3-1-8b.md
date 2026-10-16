@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 44.5** ±0.9 · #481 of 724 · from 19 benchmark results across 6 sources
+**score 44.5** ±0.9 · #482 of 725 · from 19 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #259 of 302*    3.0%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #259 of 303*    3.0%      1
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #298 of 395     18%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁    #310 of 424     34%      3
 </pre>
 
-<details><summary>agent tasks · #259 of 302 · 3.0% of its score</summary>
+<details><summary>agent tasks · #259 of 303 · 3.0% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-n
 <pre>
 test             result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       79.1%  █··▄·····●·█ beats 3/5    very easy · avg 89%      23%  sharp · several runs
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    2.0%  █···●▄▄····▄ beats 2/5    very hard · avg 8.7%    6.5%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    2.0%  █···●▄▄····▄ beats 2/5    very hard · avg 8.7%    6.4%  sharp · too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    48.7%  █···●·▄▄···▄ beats 2/5    easy · avg 69%          4.1%  at its level
 </pre>
 

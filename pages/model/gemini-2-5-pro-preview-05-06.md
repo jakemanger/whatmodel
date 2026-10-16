@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 66.6** ±1.1 · comparison only: no current run option verified · from 19 benchmark results across 8 sources
+**score 66.5** ±1.1 · comparison only: no current run option verified · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁   #239 of 342*    2.2%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁   #240 of 343*    2.2%      1
 coding              ▁▁▁▃▅▇█▇●▄▂▁    #103 of 529     41%      3
 math                ▁▂▃▆█▇▅●▃▁▁▁   #106 of 523*    7.3%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #84 of 182*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #239 of 342 · 2.2% of its score</summary>
+<details><summary>agent tasks · #240 of 343 · 2.2% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -59,11 +59,11 @@ test          result  vs the others in its run  difficulty      counts  why
 
 <details><summary>vision &amp; documents · #84 of 182 · 1.9% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   61.3%  █·██····██·● beats 5/5    hard · avg 47%    1.9%  blunt · at its level
+<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   61.3%  █·██····██·● beats 5/5    hard · avg 48%    1.9%  blunt · at its level
 </pre>
 
 </details>
@@ -104,7 +104,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 66.6
+weighted average                                   = 66.5
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

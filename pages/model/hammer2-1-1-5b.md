@@ -6,7 +6,7 @@
 
 MadeAgents · released 2024-12 · 1.54B params · cc-by-nc-4.0
 
-**score 50.0** ±3.8 · #476 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±3.8 · #475 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #262 of 336*     93%      2
+agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #263 of 337*     94%      2
 </pre>
 
-<details><summary>agent tasks · #262 of 336 · 93% of its score</summary>
+<details><summary>agent tasks · #263 of 337 · 94% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -37,8 +37,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        7% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
 weighted average                                   = 50.0
 </pre>
 

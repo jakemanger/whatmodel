@@ -6,7 +6,7 @@
 
 TII · released 2025-05 · 3.15B params · other (falcon-llm-license)
 
-**score 40.5** ±3.2 · #550 of 724 · from 3 benchmark results across 2 sources
+**score 40.5** ±3.2 · #551 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

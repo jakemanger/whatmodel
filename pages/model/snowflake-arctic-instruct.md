@@ -6,7 +6,7 @@
 
 Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
-**score 43.2** ±1.6 · #507 of 724 · from 5 benchmark results across 4 sources
+**score 43.2** ±1.6 · #508 of 725 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

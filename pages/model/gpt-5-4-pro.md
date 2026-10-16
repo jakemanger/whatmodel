@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 79.4** ±0.9 · #14 of 724 · from 12 benchmark results across 5 sources
+**score 79.3** ±0.9 · #14 of 725 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #16 of 302*     11%      2
-math         ▁▁▃▅█▆▄█▄●▁▁    #14 of 424     62%      3
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #16 of 303*     11%      2
+math         ▁▁▃▅█▆▄█▄●▁▁    #14 of 424     61%      3
 web search   ▂▁▂▆▄█●▃▁▁·▁    #15 of 80*     11%      2
 </pre>
 
-<details><summary>agent tasks · #16 of 302 · 11% of its score</summary>
+<details><summary>agent tasks · #16 of 303 · 11% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #14 of 424 · 62% of its score</summary>
+<details><summary>math · #14 of 424 · 61% of its score</summary>
 
 Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though the
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               58.5%  ▁▂▁▂█▅●▂▁▁▁▁ beats 50/63  very hard · avg 0.1%     31%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            82.5%  ▂··▁▁▃▄▄█▅●▃ beats 70/82  very hard · avg 1.1%     21%  sharp
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.0%    9.0%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.1%    9.0%  at its level
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ source                                    results  share of the score
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC Prize Foundation model_baseline out…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 79.4
+weighted average                                   = 79.3
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

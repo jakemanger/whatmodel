@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 62.1** ±0.7 · #179 of 724 · from 35 benchmark results across 3 sources
+**score 62.0** ±0.7 · #180 of 725 · from 35 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #157 of 302     21%      5
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #158 of 303     21%      5
 coding              ▁▁▁▃▆██●▆▄▃▁   #175 of 460*    3.5%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #151 of 395*    2.1%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁    #108 of 424    8.7%      4
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #83 of 147     38%     13
 </pre>
 
-<details><summary>agent tasks · #157 of 302 · 21% of its score</summary>
+<details><summary>agent tasks · #158 of 303 · 21% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   87.8%  ▃··▃···██▅▃● beats 11/11  easy · avg 76%    2.1%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   87.8%  ▃··▃···██▅▃● beats 11/11  easy · avg 77%    2.1%  typical
 </pre>
 
 </details>
@@ -103,7 +103,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      73.1%  ▂····▂·▂▂█▆● beats 11/14    hard · avg 48%      7.3%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       82.1%  ▄·▄·▄▄▄▄█▄█● beats 12/12    medium · avg 62%    4.9%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      59.0%  ▄··▄·▄▄▄█▄█● beats 11/11    medium · avg 36%    3.8%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      59.0%  ▄··▄·▄▄▄█▄█● beats 11/11    medium · avg 37%    3.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     91.9%  ▃··▃·▃·█▃▅▃● beats 11/11    easy · avg 79%      3.6%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                        62.6%  ▅··▃·▅▃▃·●·▃ beats 8/10     hard · avg 50%      2.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>                   63.7%  ▃··▃▅▃▃▃▃▃·● beats 10/11    medium · avg 42%    2.7%  at its level
@@ -126,7 +126,7 @@ source                                 results  share of the score
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think</a>                       7   13% ▇▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card</a>        2    2% ▇
 prior: pull toward the middle                     0% ▇
-weighted average                                = 62.1
+weighted average                                = 62.0
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt))</sub>

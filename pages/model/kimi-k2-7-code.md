@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 71.3** ±0.9 · #67 of 724 · from 7 benchmark results across 2 sources
+**score 71.2** ±0.9 · #70 of 725 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,14 +26,14 @@ Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9  ▁▂▄▃▅█●▇▆▄▁▁ beats 64/119  avg 969        15%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9  ▁▂▄▃▅█●▇▆▄▁▁ beats 64/119  avg 970        15%  sharp
 </pre>
 
 </details>
 
 <details><summary>math · #52 of 424 · 66% of its score</summary>
 
-Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
+Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
@@ -64,7 +64,7 @@ source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             6   84% ▇▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   15% ▇▇
 prior: pull toward the middle             0% ▇
-weighted average                        = 71.3
+weighted average                        = 71.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

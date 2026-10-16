@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 45.6** ±0.6 · #455 of 724 · from 22 benchmark results across 10 sources
+**score 45.6** ±0.6 · #456 of 725 · from 22 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #281 of 302*    0.8%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #282 of 303*    0.8%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #344 of 460*     11%      1
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #274 of 395*    2.8%      1
 math            ▁▁▃●█▆▄█▄▁▁▁    #349 of 424     29%      5
 </pre>
 
-<details><summary>agent tasks · #281 of 302 · 0.8% of its score</summary>
+<details><summary>agent tasks · #282 of 303 · 0.8% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                          85.7%  ▄···█●▄·▄·▄█ beats 3/8    very easy · avg 92%     10%  sharp · several runs
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          80.1%  ▁▄·▁▄●▅▅▅███ beats 10/43  very easy · avg 87%    7.3%  sharp
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>      52.9%  ▃····●·▅·▅·█ beats 1/8    easy · avg 73%         4.5%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>      52.9%  ▃····●·▅·▅·█ beats 1/8    easy · avg 74%         4.5%  at its level · several runs
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                   19.5%  ▃·····●··█▅▅ beats 1/8    hard · avg 34%         3.4%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   23.9%  ▁▁▁▆●▂▇▇▄··▂ beats 12/38  hard · avg 30%         3.2%  sharp
 </pre>
@@ -78,7 +78,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 26.6%  ▁▁▁▂▂▃●█▆▃▅▃ beats 19/61    medium · avg 38%     14%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        40.7%  ▂▁▁▄▂▅●█▆▂▂▂ beats 29/58    medium · avg 48%    4.2%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        28.0%  ▃▂·●▆██▆▅▃▃▃ beats 3/33     medium · avg 39%    4.2%  at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                       65.0%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 96/155   medium · avg 71%    3.0%  sharp · at its level · small run
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                       65.0%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 96/155   medium · avg 72%    3.0%  sharp · at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    8.4%  ▁▁●▆██▁▁·▁▁▁ beats 5/57     hard · avg 15%      2.9%  sharp
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                 70.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 141/214  easy · avg 76%      2.8%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      53.7%  ▁··▁▁▂▂▆●▆█▆ beats 28/70    medium · avg 61%    2.4%  at its level

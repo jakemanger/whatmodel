@@ -6,7 +6,7 @@
 
 Anthropic · released 2024-10 · proprietary
 
-**score 54.7** ±0.6 · comparison only: no current run option verified · from 25 benchmark results across 15 sources
+**score 54.6** ±0.6 · comparison only: no current run option verified · from 25 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▆▅▄▄▃▃▁    #278 of 342    4.1%      4
+agent tasks         ▁▁▂●█▆▅▄▄▃▃▁    #279 of 343    4.1%      4
 coding              ▁▁▁▃▅▇█●▅▄▂▁    #215 of 529     23%      3
 chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #218 of 466*    7.4%      2
 math                ▁▂▃▆●▇▅▇▃▁▁▁    #328 of 523     20%      4
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #130 of 182*    3
 web search          ▂·▂▇▅█▃●▁▂▁▁     #12 of 92*    1.3%      1
 </pre>
 
-<details><summary>agent tasks · #278 of 342 · 4.1% of its score</summary>
+<details><summary>agent tasks · #279 of 343 · 4.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1126.8  ▁▁▂▂▂▂●▅▅▆██ beats 38/145  avg 1058          2.9%  blunt
-<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   47.6%  ●·██····██·█ beats 0/5     hard · avg 47%    0.6%  blunt · at its level
+<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   47.6%  ●·██····██·█ beats 0/5     hard · avg 48%    0.6%  blunt · at its level
 </pre>
 
 </details>
@@ -140,7 +140,7 @@ source                                    results  share of the score
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 54.7
+weighted average                                   = 54.6
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

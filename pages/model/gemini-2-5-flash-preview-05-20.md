@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #230 of 342*     12%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #229 of 343*     12%      1
 coding       ▁▁▁▃▅▇█●▅▄▂▁    #145 of 529     50%      3
 math         ▁▂▃▆█▇▅●▃▁▁▁   #149 of 523*     10%      1
 </pre>
 
-<details><summary>agent tasks · #230 of 342 · 12% of its score</summary>
+<details><summary>agent tasks · #229 of 343 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   55.1%  ▂·▂▃▅▂▃●▆▄▂▂ beats 30/49  very hard · avg 7.3%     34%  sharp · at its level
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   61.9%  ▃▃▅▃··▃▅●▅▅▃ beats 8/15   hard · avg 24%          8.6%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   61.9%  ▃▃▅▃··▃▅●▅▅▃ beats 8/15   hard · avg 24%          8.5%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   63.4%  ▁··▁·▁▁▁▆●▇█ beats 18/45  hard · avg 29%          7.3%  at its level
 </pre>
 

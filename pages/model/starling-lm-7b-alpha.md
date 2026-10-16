@@ -6,7 +6,7 @@
 
 UC Berkeley (NEST) · released 2023-11 · 7.24B params · apache-2.0
 
-**score 41.2** ±1.1 · #537 of 724 · from 11 benchmark results across 8 sources
+**score 41.2** ±1.1 · #538 of 725 · from 11 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.8B params · apache-2.0
 
-**score 50.3** ±1.0 · #361 of 724 · from 12 benchmark results across 4 sources
+**score 50.3** ±1.0 · #362 of 725 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -60,15 +60,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">mistralai/Ministral-3-8B-Reasoning-2512…</a>        4   35% ▇▇▇▇
 <a name="card-mistralai-ministral-3-3b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">mistralai/Ministral-3-3B-Reasoning-2512…</a>        4   35% ▇▇▇▇
+<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">mistralai/Ministral-3-8B-Reasoning-2512…</a>        4   35% ▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   26% ▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 50.3
 </pre>
 
-<sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 

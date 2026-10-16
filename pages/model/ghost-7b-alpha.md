@@ -6,7 +6,7 @@
 
 Ghost X · released 2024-04 · 7.24B params · other (ghost-7b)
 
-**score 33.5** ±2.0 · #632 of 724 · from 5 benchmark results across 2 sources
+**score 33.5** ±2.0 · #633 of 725 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

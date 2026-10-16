@@ -59,7 +59,7 @@ test                      result  vs the others in its run  difficulty        co
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Humanity's Last Exam (lab)</a>           18.3%  ▁▁▁▃▆▆●██▆▁▃ beats 46/104  very hard · avg 4.0%    9.2%  small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset (lab)</a>     11.9%  ●··▄▄▄···█·█ beats 0/7     very hard · avg 8.8%    7.1%  at its level
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset (lab)</a>     11.9%  ●··▄▄▄···█·█ beats 0/7     very hard · avg 8.9%    7.1%  at its level
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset (lab)</a>   62.2%  ▃······▃●▃█▃ beats 2/7     hard · avg 21%          6.9%  at its level · noisy
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SysBench (aggregation unspecified…</a>   86.5%  █··█····●··█ beats 2/3     medium · avg 63%        4.5%  small run
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Multi-IF (aggregation unspecified…</a>   89.3%  ▁▁▁▁▁▁▃▄█▄▁● beats 41/41   easy · avg 66%          4.0%  blunt · small run

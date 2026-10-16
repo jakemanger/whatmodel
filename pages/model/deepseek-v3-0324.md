@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-03 · 671B params (37B active) · mit
 
-**score 60.7** ±0.7 · #188 of 724 · from 30 benchmark results across 17 sources
+**score 60.6** ±0.7 · #189 of 725 · from 30 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #175 of 302     23%      7
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #176 of 303     23%      7
 coding          ▁▁▁▃▆██●▆▄▃▁    #146 of 460     32%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #116 of 395*    6.8%      2
 math            ▁▁▃▅█●▄█▄▁▁▁    #190 of 424     16%      6
 </pre>
 
-<details><summary>agent tasks · #175 of 302 · 23% of its score</summary>
+<details><summary>agent tasks · #176 of 303 · 23% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -124,7 +124,7 @@ source                                    results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 60.7
+weighted average                                   = 60.6
 </pre>
 
 <sub>Licences: deepseek-ai/DeepSeek-V3.1 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3.1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Moonshot AI Kimi-K2-Instruct model card ([Modified MIT License (Kimi K2)](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · deepseek-ai/DeepSeek-V3-0324 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3-0324.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

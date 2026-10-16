@@ -6,7 +6,7 @@
 
 Google · released 2024-06 · 9.24B params · gemma
 
-**score 48.7** ±0.5 · #391 of 724 · from 56 benchmark results across 20 sources
+**score 48.7** ±0.5 · #391 of 725 · from 56 benchmark results across 20 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,9 +29,9 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    46.0%  ▁▂▆●▆█▆▃▂·▁▁ beats 11/47  medium · avg 57%    6.1%  sharp · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   52.0%  █▂▁▁▂▂▂▃▅▅●▇ beats 36/47  hard · avg 32%      0.7%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   49.6%  ▃··▁▂▂▃▂●▃▄▂ beats 25/47  medium · avg 50%    0.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   49.6%  ▃··▁▂▂▃▂●▃▄▂ beats 25/47  medium · avg 51%    0.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   39.0%  ▁▁▁▁▁▁▂▂▃█●▄ beats 38/47  hard · avg 31%      0.5%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   74.1%  ▁▁▁······▁▃● beats 29/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   74.1%  ▁▁▁······▁▃● beats 29/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          87.4%  ▁▄·▁▄█▅●▅███ beats 20/43  very easy · avg 87%     3.2%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   19.4%  ▁▁▁●█▂▇▇▄··▂ beats 7/38   hard · avg 30%          2.3%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            29.8%  ▃●█▂▂▆·····▁ beats 3/22   medium · avg 56%        2.0%  at its level · several runs
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                 51.3%  █▄█●···▄▄▄·▄ beats 6/10   medium · avg 61%        1.6%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                 51.3%  █▄█●···▄▄▄·▄ beats 6/10   medium · avg 61%        1.5%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.6%  ●▃▄▃▃▃▇▇█▃▂▅ beats 4/193  very hard · avg 6.9%    0.3%  sharp · too hard for it · noisy
 </pre>
 
@@ -79,7 +79,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                           69.1%  ▁▂·▁·▁▁●·▃▃▅ beats 9/22     easy · avg 75%         8.0%  at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                                 64.9%  ▁▄·▁▁·●█·▄▄▁ beats 7/22     medium · avg 72%       5.7%  sharp · at its level · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                                  89.8%  ▂▂▂█▂···●··▂ beats 8/10     very easy · avg 89%    3.2%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  42.6962 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 31/52    avg 42.747 WB-Score    2.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  42.6962 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 31/52    avg 42.785 WB-Score    2.3%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             12.8%  ▁▁▃●██▁▁·▁▁▁ beats 16/57    hard · avg 15%         2.3%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                                       50.1%  █▄▄·█▄●▄·▄·▄ beats 7/10     medium · avg 54%       2.0%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   27.5%  ▁▁●▁▂▄▆▄▅▇█▅ beats 11/208   hard · avg 38%         1.9%  sharp
@@ -93,7 +93,7 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                                     74.0%  ▃····▃▃█▃·▅● beats 9/10     medium · avg 71%       0.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                                      87.1%  ▃▅█·▃▃▃···●▃ beats 9/10     easy · avg 82%         0.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                                     74.7%  ▃·▃▅●█·▃···▃ beats 5/10     medium · avg 76%       0.6%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                          28.3%  ▁▁▁▃▃▃▁●▁▃·▄ beats 10/21    hard · avg 30%         0.6%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                          28.3%  ▁▁▁▃▃▃▁●▁▃·▄ beats 10/21    hard · avg 31%         0.6%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                          85.7%  ▃··▃··██▃·●▃ beats 9/10     easy · avg 83%         0.6%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             74.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 216/276  medium · avg 72%       0.5%  at its level · noisy
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>             43.9%  ▂···▂▂·●▂▃██ beats 3/17     medium · avg 52%       0.5%  at its level

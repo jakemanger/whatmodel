@@ -6,7 +6,7 @@
 
 Mistral · released 2024-10 · 8.02B params · mistral-research
 
-**score 45.4** ±0.6 · #462 of 724 · from 39 benchmark results across 12 sources
+**score 45.3** ±0.6 · #466 of 725 · from 39 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #255 of 302*    1.8%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #256 of 303*    1.8%      3
 coding          █··········●       #1 of 2*    2.9%      2
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #284 of 395    8.5%      4
 math            ▁▁▃●█▆▄█▄▁▁▁    #355 of 424     29%      5
 </pre>
 
-<details><summary>agent tasks · #255 of 302 · 1.8% of its score</summary>
+<details><summary>agent tasks · #256 of 303 · 1.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   76.8%  ▁▁▁▁▂▂▆▆█●▂▁ beats 163/205  easy · avg 79%    1.5%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   76.8%  ▁▁▁▁▂▂▆▆█●▂▁ beats 163/205  easy · avg 80%    1.5%  sharp · at its level · noisy · small run
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>        70.0%  ▁▁▁▄▅█▆●▄▁▂▁ beats 68/86    easy · avg 74%    1.4%  at its level · small run
 </pre>
 
@@ -66,7 +66,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       80.0%  ▂▃··▃▂●█▆▃▂▃ beats 7/22   very easy · avg 90%     11%  sharp · several runs
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                        56.7%  ▅▃▃●·▅···▃·▃ beats 5/10   easy · avg 71%         8.8%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                        56.7%  ▅▃▃●·▅···▃·▃ beats 5/10   easy · avg 71%         8.7%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                14.9%  ▂▂●▆▄█▆▃▅▂▃▄ beats 13/92  hard · avg 27%         4.0%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                        41.6%  ●▄██···▄▄▄·▄ beats 0/10   medium · avg 61%       3.0%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.0%  ▃▃●▂▂▆·····▁ beats 7/22   medium · avg 57%       2.6%  at its level · several runs
@@ -91,7 +91,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           63.1%  ▃····▃●█▃·▅▅ beats 2/10     medium · avg 71%       1.4%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           77.6%  ▃·▃▅▅█·●···▃ beats 9/10     medium · avg 76%       1.2%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                80.5%  ▃··▃··█●▃·▃▃ beats 6/10     easy · avg 83%         1.1%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                20.2%  ▁▁▁▃●▃▁█▁▃·▄ beats 6/21     hard · avg 30%         1.1%  typical
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                20.2%  ▁▁▁▃●▃▁█▁▃·▄ beats 6/21     hard · avg 31%         1.1%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 181/276  medium · avg 72%       1.0%  at its level · noisy
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            26.3%  █··●▂··▂▂··▄ beats 5/10     very hard · avg 32%    0.9%  sharp · too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   82.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 79/146   easy · avg 82%         0.6%  at its level · noisy
@@ -122,7 +122,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.4
+weighted average                                   = 45.3
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

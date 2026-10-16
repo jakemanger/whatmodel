@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 4.44B params · apache-2.0
 
-**score 56.4** ±0.7 · #250 of 724 · from 27 benchmark results across 3 sources
+**score 56.3** ±0.7 · #253 of 725 · from 27 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #181 of 302*    2.0%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #182 of 303*    2.0%      1
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #252 of 460*    4.1%      1
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #201 of 395*    2.9%      1
 math                ▁▁▃▅█▆●█▄▁▁▁   #154 of 424*     10%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #102 of 147     51%     15
 </pre>
 
-<details><summary>agent tasks · #181 of 302 · 2.0% of its score</summary>
+<details><summary>agent tasks · #182 of 303 · 2.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)]
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecified) …</a>   82.6%  ▃··▃···●█▅▃▃ beats 4/11   easy · avg 76%    2.9%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecified) …</a>   82.6%  ▃··▃···●█▅▃▃ beats 4/11   easy · avg 77%    2.9%  typical
 </pre>
 
 </details>
@@ -100,7 +100,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (lab)</a>      64.1%  ▂····▂·▂▂●▆█ beats 7/14   hard · avg 48%      8.8%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                       73.6%  ▄·▄·▄▄▄▄●▄██ beats 6/12   medium · avg 62%    6.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                     86.0%  ▃··▃·▃·●▃▅▃▅ beats 5/11   easy · avg 79%      5.4%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      46.8%  ▄··▄·▄▄▄●▄██ beats 5/11   medium · avg 36%    4.1%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      46.8%  ▄··▄·▄▄▄●▄██ beats 5/11   medium · avg 37%    4.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   52.0%  ▃··▃▅▃●▃▃▃·█ beats 5/11   medium · avg 42%    3.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        53.5%  ▅··●·▅▃▃·█·▃ beats 2/10   hard · avg 50%      2.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   68.9%  ▃··█··●█▃▃▅▃ beats 4/13   medium · avg 66%    2.8%  blunt · at its level
@@ -119,7 +119,7 @@ source                                    results  share of the score
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    3% ▇
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.4
+weighted average                                   = 56.3
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

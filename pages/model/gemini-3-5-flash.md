@@ -6,7 +6,7 @@
 
 Google · released 2026-05 · closed weights
 
-**score 73.1** ±0.6 · #49 of 724 · from 30 benchmark results across 9 sources
+**score 73.0** ±0.6 · #51 of 725 · from 30 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #51 of 302    8.4%      4
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #52 of 303    8.4%      4
 coding              ▁▁▁▃▆██▇▆●▃▁   #52 of 460*     11%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #24 of 395*    3.3%      1
 math                ▁▁▃▅█▆▄█●▁▁▁    #40 of 424     58%     13
@@ -24,14 +24,14 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #16 of 147    7.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #42 of 80*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #51 of 302 · 8.4% of its score</summary>
+<details><summary>agent tasks · #52 of 303 · 8.4% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   79.3%  ▁··▁·▁▂▁▄█●▁ beats 28/29  hard · avg 18%          5.6%  sharp
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   30.8%  ▄█··▄▄▄█●·▄█ beats 8/12   very hard · avg 6.1%    1.0%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   30.8%  ▄█··▄▄▄█●·▄█ beats 8/12   very hard · avg 6.2%    1.0%  at its level
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>   49.5%  ▂·▁▁··▇▇●▂·▁ beats 18/25  hard · avg 28%          1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>   15.6%  ▁▁·▁▁▁▁▅▃●▅█ beats 14/27  very hard · avg 2.3%    0.8%  typical
 </pre>
@@ -45,7 +45,7 @@ Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-
 <pre>
 test                       result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          79.3%  ▁··▁·▁▂▁▄█●▁ beats 28/29   hard · avg 18%    5.6%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1499.0  ▁▂▄▃▅█●▇▆▄▁▁ beats 69/119  avg 969           5.6%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1499.0  ▁▂▄▃▅█●▇▆▄▁▁ beats 69/119  avg 970           5.6%  sharp
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #40 of 424 · 58% of its score</summary>
 
-Beats [Grok 4.7](grok-4-7.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [DeepSeek V4 Flash (0731)](deepseek-v4-flash.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank lower overall.
+Beats [Grok 4.7](grok-4-7.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
@@ -71,7 +71,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               26.8%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 29/63    very hard · avg 0.1%     11%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   52.1%  ▂···▄·●█▆▆▄▂ beats 4/19     very hard · avg 4.9%    7.5%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   52.5%  ▁·····▅●█▄·▁ beats 9/20     very hard · avg 7.4%    6.6%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   50.8%  ▁▁▁▁█▇▄●▁▃·▃ beats 18/24    very hard · avg 9.0%    3.9%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   50.8%  ▁▁▁▁█▇▄●▁▃·▃ beats 18/24    very hard · avg 9.1%    3.9%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   55.8%  █▃▅·●▃▃·▅·▃▃ beats 8/14     hard · avg 16%          3.1%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   44.2%  ▁··▁●█▄▁·▃·▁ beats 2/17     very hard · avg 11%     2.4%  at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   21.3%  ▂▂▆●▃▃▂▂▂··▂ beats 7/18     very hard · avg 0.8%    2.3%  sharp · at its level · noisy
@@ -104,7 +104,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank highe
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   30.8%  ▄█··▄▄▄█●·▄█ beats 8/12   very hard · avg 6.1%    1.0%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   30.8%  ▄█··▄▄▄█●·▄█ beats 8/12   very hard · avg 6.2%    1.0%  at its level
 </pre>
 
 </details>
@@ -140,7 +140,7 @@ source                                    results  share of the score
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    1% ▇
 <a name="paper-2610.12402v1-spacecast-bench"></a><a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench: Evaluating Predictive …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 73.1
+weighted average                                   = 73.0
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

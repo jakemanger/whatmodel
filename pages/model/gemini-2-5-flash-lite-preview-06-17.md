@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▆▅▄▄▃▃▁   #270 of 342*     11%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁   #270 of 343*     11%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #155 of 466*     51%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #98 of 182*     36%      1
 </pre>
 
-<details><summary>agent tasks · #270 of 342 · 11% of its score</summary>
+<details><summary>agent tasks · #270 of 343 · 11% of its score</summary>
 
-Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -45,7 +45,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>vision &amp; documents · #98 of 182 · 36% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall. Trails [Qwen3.5 4B](qwen3-5-4b.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

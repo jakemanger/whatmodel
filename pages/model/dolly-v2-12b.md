@@ -39,7 +39,7 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md), [FastChat-T5 3B](fastchat-t5-3b.md), 
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             982.4  ●▁▁▂▃▃▃▆▆▇█▃ beats 2/379  avg 1258                     18%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         856.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 2/95   avg 1186                     16%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.2800 MT-Bench score (1-10)  ▆●▂▆▆▄██▂▄▄▆ beats 3/28   avg 8.518 MT-Bench scor…     13%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.2800 MT-Bench score (1-10)  ▆●▂▆▆▄██▂▄▄▆ beats 3/28   avg 8.521 MT-Bench scor…     13%  sharp · noisy
 <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       6.9000 mean rank (1-11)  █···●··▄···▄ beats 2/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
@@ -50,7 +50,7 @@ test                                                      result  vs the others 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 25.7%  ●▄·▄···▄▄·██ beats 0/8    easy · avg 79%          15%  several runs
-<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        42.2%  ●·▄···█·▄··▄ beats 0/5    easy · avg 86%          10%  sharp
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        42.2%  ●·▄···█·▄··▄ beats 0/5    easy · avg 87%          10%  sharp
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            72.6%  ●·▄█··▄····▄ beats 0/5    very easy · avg 92%    8.8%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   56.6%  ●·█········█ beats 0/2    medium · avg 77%       4.0%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">TruthfulQA MC1</a>                       15.2%  ●·····█····█ beats 0/2    medium · avg 50%       2.5%  small run

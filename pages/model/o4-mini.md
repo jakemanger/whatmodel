@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 66.0** ±0.6 · #128 of 724 · from 54 benchmark results across 18 sources
+**score 66.0** ±0.6 · #129 of 725 · from 54 benchmark results across 18 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #151 of 302     17%      6
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #152 of 303     17%      6
 coding              ▁▁▁▃▆██▇●▄▃▁    #92 of 460     13%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #115 of 395     10%      5
 math                ▁▁▃▅█▆▄●▄▁▁▁    #78 of 424     23%      8
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #73 of 147*    2.
 web search          ▂▁▂▆▄█▃▃▁▁·●     #2 of 80*    2.5%      1
 </pre>
 
-<details><summary>agent tasks · #151 of 302 · 17% of its score</summary>
+<details><summary>agent tasks · #152 of 303 · 17% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -61,8 +61,8 @@ Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](st
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   79.1%  ▂·▃▅▅·▃█▆▂●▂ beats 21/22    very hard · avg 12%    3.7%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1390.8  ▁▁▁▂▃▃▃▆▆●█▃ beats 234/379  avg 1258               3.2%  blunt
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   79.1%  ▂·▃▅▅·▃█▆▂●▂ beats 21/22    very hard · avg 12%    3.6%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1390.8  ▁▁▁▂▃▃▃▆▆●█▃ beats 234/379  avg 1258               3.3%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Arena-Hard v2 aggregate</a>              59.3%  ▁▁··▄▃▁●█▁▁▇ beats 9/22     hard · avg 27%         1.8%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   58.7%  ▆▂▂▆▂▂▃●▂▃·▂ beats 14/22    hard · avg 18%         0.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">IFEval (aggregation unspecified)</a>     92.4%  ▁▁▃▁▂▄▄▆█●▂▁ beats 127/141  easy · avg 76%         0.7%  typical
@@ -90,7 +90,7 @@ test                             result  vs the others in its run    difficulty 
 
 <details><summary>vision &amp; documents · #73 of 147 · 2.3% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -131,7 +131,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    18.8%  ▁▁▃●▃▃▆▆█▃▂▅ beats 10/78    very hard · avg 7.4%    1.1%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">MMLU-ProX</a>                            79.0%  ▁·▁▁▁▂▁▃▂●▅▄ beats 20/35    medium · avg 59%        0.9%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Creative Writing v3</a>                  78.8%  ▂····▂●··▆█▆ beats 3/14     medium · avg 64%        0.8%  typical
-<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Multi-IF (aggregation unspecified)</a>   78.0%  ▁▁▁▁▁▁▃▄●▄▁▂ beats 28/41    medium · avg 59%        0.8%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Multi-IF (aggregation unspecified)</a>   78.0%  ▁▁▁▁▁▁▃▄●▄▁▂ beats 28/41    medium · avg 60%        0.8%  blunt
 <a href="https://arxiv.org/html/2601.03267v2#S3.T8">SimpleQA (lab)</a>                       24.0%  ▄▄▄▆█▆█●█·▂█ beats 22/32    very hard · avg 8.9%    0.7%  at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">SuperGPQA</a>                            56.4%  ▂▁▂▂▅▆▃▇●▇█▃ beats 29/46    medium · avg 37%        0.7%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">WritingBench</a>                         78.4%  ▁·▁●▁··▅█▂▂▁ beats 2/20     easy · avg 65%          0.7%  typical

@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-04 · proprietary
 
-**score 63.6** ±1.0 · comparison only: no current run option verified · from 10 benchmark results across 8 sources
+**score 63.5** ±1.0 · comparison only: no current run option verified · from 10 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #272 of 342*    9.4%      2
+agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #273 of 343*    9.4%      2
 coding          ▁▁▁▃▅▇█●▅▄▂▁   #157 of 529*     35%      2
 chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #168 of 466*     11%      1
 math            ▁▂▃▆█▇●▇▃▁▁▁    #176 of 523     20%      3
 web search      ▂·▂▇▅█▃▄▁▂●▁      #4 of 92*    7.3%      1
 </pre>
 
-<details><summary>agent tasks · #272 of 342 · 9.4% of its score</summary>
+<details><summary>agent tasks · #273 of 343 · 9.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -107,7 +107,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 63.6
+weighted average                                   = 63.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

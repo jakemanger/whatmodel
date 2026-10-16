@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 67B params · deepseek
 
-**score 42.9** ±1.2 · #511 of 724 · from 11 benchmark results across 5 sources
+**score 42.9** ±1.2 · #512 of 725 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,10 +27,10 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   47.0%  ▃··▁▂▂▃▂●▃▄▂ beats 23/47  medium · avg 50%    3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   47.0%  ▃··▁▂▂▃▂●▃▄▂ beats 23/47  medium · avg 51%    3.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   39.7%  ▁▁▁▁▁▁▂▂▃█●▄ beats 39/47  hard · avg 31%      3.0%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.8%  █▂▁▁▂▂▂▃▅●▅▇ beats 31/47  hard · avg 32%      2.9%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 45/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 45/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>

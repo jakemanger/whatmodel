@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 61.8** ±1.2 · #184 of 724 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.7** ±1.2 · #185 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -47,10 +47,10 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 43%           40%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 43%           41%  sharp · at its level
 <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               77.8%  ●······▅··█▃ beats 0/6    medium · avg 61%         17%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 43%        9.2%  at its level
-<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.1%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.2%  typical
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 61.8
+weighted average                        = 61.7
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

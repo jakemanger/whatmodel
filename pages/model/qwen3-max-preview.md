@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 68.3** ±3.0 · #101 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 68.2** ±3.0 · #103 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ source                             results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              1   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
 prior: pull toward the middle                 4% ▇
-weighted average                            = 68.3
+weighted average                            = 68.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

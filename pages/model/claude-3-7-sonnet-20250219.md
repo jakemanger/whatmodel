@@ -6,7 +6,7 @@
 
 Anthropic · released 2025-02 · proprietary
 
-**score 65.3** ±0.7 · comparison only: no current run option verified · from 35 benchmark results across 22 sources
+**score 65.2** ±0.7 · comparison only: no current run option verified · from 35 benchmark results across 22 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #201 of 342     28%      9
+agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #202 of 343     28%      9
 coding              ▁▁▁▃▅▇█▇●▄▂▁   #133 of 529     27%      4
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #138 of 466     13%      4
 math                ▁▂▃▆█▇●▇▃▁▁▁   #173 of 523     10%      5
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #88 of 182    6.
 web search          ▂·▂▇▅█▃▄▁▂▁●     #1 of 92*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #201 of 342 · 28% of its score</summary>
+<details><summary>agent tasks · #202 of 343 · 28% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>coding · #133 of 529 · 27% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Solar Pro 4](solar-pro-4.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -88,14 +88,14 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>vision &amp; documents · #88 of 182 · 6.5% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1192.8  ▁▁▂▂▂▂▄▅●▆██ beats 66/145  avg 1058          3.4%  blunt
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>        70.9%  ▄·····▄▄·▄·● beats 4/5     hard · avg 31%    1.6%  at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        93.3%  ▄····▄···█▄● beats 5/5     easy · avg 66%    0.8%  noisy
-<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   58.0%  █·██····█●·█ beats 4/5     hard · avg 47%    0.8%  blunt · at its level
+<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   58.0%  █·██····█●·█ beats 4/5     hard · avg 48%    0.8%  blunt · at its level
 </pre>
 
 </details>
@@ -158,7 +158,7 @@ source                                    results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 65.3
+weighted average                                   = 65.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Multi-SWE-bench experiments ([Apache-2.0](../../licenses/multi-swe-bench-experiments-Apache-2.0.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

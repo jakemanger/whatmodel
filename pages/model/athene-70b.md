@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-07 · 70.6B params · nexusflow-research
 
-**score 51.9** ±0.8 · #329 of 724 · from 8 benchmark results across 4 sources
+**score 51.9** ±0.8 · #330 of 725 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             76.6%  ▁·▁▁▄▄▄●█▄▂▁ beats 23/53  easy · avg 75%          27%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             16.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 22/57  hard · avg 15%          10%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  59.5374 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 52/52  avg 42.747 WB-Score    7.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  59.5374 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 52/52  avg 42.785 WB-Score    7.1%  sharp
 </pre>
 
 </details>

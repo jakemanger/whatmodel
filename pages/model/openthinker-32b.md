@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.8** ±1.2 · #286 of 724 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.7** ±1.2 · #288 of 725 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   61% ▇▇▇▇▇▇▇
 <a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model car…</a>        4   39% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.8
+weighted average                                   = 54.7
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 70B params · llama-3.1
 
-**score 53.6** ±0.4 · #302 of 724 · from 58 benchmark results across 28 sources
+**score 53.6** ±0.4 · #302 of 725 · from 58 benchmark results across 28 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #243 of 302    6.1%      7
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #244 of 303    6.1%      7
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #243 of 460     19%     10
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #238 of 395     10%      5
 math            ▁▁▃▅●▆▄█▄▁▁▁   #289 of 424     16%      7
 </pre>
 
-<details><summary>agent tasks · #243 of 302 · 6.1% of its score</summary>
+<details><summary>agent tasks · #244 of 303 · 6.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   57.6%  ●····▅▅▃▃·▃█ beats 1/11    medium · avg 53%        0.8%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   17.6%  ●▄····█▄···▄ beats 0/5     hard · avg 25%          0.6%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              53.6%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 52/114  medium · avg 51%        0.4%  blunt · at its level
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    2.1%  ▃●▃·▅▃▃··█·▃ beats 1/11    very hard · avg 3.4%    0.4%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    2.1%  ▃●▃·▅▃▃··█·▃ beats 1/11    very hard · avg 3.5%    0.4%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -52,9 +52,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     10.3%  ●▁▁█▁▄▅▃▄▇▁▄ beats 1/31   medium · avg 39%        1.0%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   69.0%  █▂▁▁▂▂▂▃▅▅▅● beats 47/47  hard · avg 32%          0.8%  sharp · at its level · noisy
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    0.0%  ●···█··▂·▃·▂ beats 2/17   very hard · avg 1.0%    0.7%  sharp · too hard for it
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   76.7%  ▃··▁▂▂▃▂█▃●▂ beats 40/47  medium · avg 50%        0.6%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   76.7%  ▃··▁▂▂▃▂█▃●▂ beats 40/47  medium · avg 51%        0.6%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   50.3%  ▁▁▁▁▁▁▂▂▃█▅● beats 47/47  hard · avg 31%          0.6%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   68.4%  ▁▁▁······▁●█ beats 16/47  easy · avg 66%          0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   68.4%  ▁▁▁······▁●█ beats 16/47  easy · avg 67%          0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -95,7 +95,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 48.4%  ▁▁▁▂▂▃▂█▆▃●▃ beats 51/61    medium · avg 38%       8.7%  at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 48.4%  ▁▁▁▂▂▃▂█▆▃●▃ beats 51/61    medium · avg 38%       8.8%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   83.0%  ▁·▁▁▄▄▄▅●▄▂▁ beats 40/53    easy · avg 75%         7.7%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   24.9%  ▁▁▃▆█●▁▁·▁▁▁ beats 36/57    hard · avg 15%         3.5%  sharp
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 85.2%  ▁▂·▁·▁▁█·▃▃● beats 19/22    easy · avg 75%         3.5%  at its level · several runs
@@ -106,18 +106,18 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>   66.9%  ▃····▃●·▃▅·█ beats 2/9      medium · avg 58%       1.8%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   72.5%  ▁▂▂▂▃█▃●▅▄▂▃ beats 59/95    medium · avg 64%       1.4%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.1%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 64/97    hard · avg 31%         1.2%  blunt · at its level
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.0%  ▁▁·▁▂▂▄█▄●▄▄ beats 42/66    hard · avg 29%         1.1%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.0%  ▁▁·▁▂▂▄█▄●▄▄ beats 42/66    hard · avg 29%         1.2%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      72.5%  ▁··▁▁▂▂▆▅▆█● beats 61/70    medium · avg 61%       1.1%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   70.5%  ▁▁▁▁·▂·█▆●▇▁ beats 19/31    medium · avg 46%       1.1%  at its level
 <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>                  70.4%  ▄▁▁▂▁▄█▇●▂▃▂ beats 118/140  medium · avg 65%       1.1%  sharp · at its level · small run
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Llama-3.1-70B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   77.3%  ▂·▂▂▂▆▅●▆▆▃█ beats 12/29    easy · avg 74%         1.0%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   68.0%  ▂▄▂▃█▄▃▆▃●▂▂ beats 67/81    medium · avg 56%       0.9%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                46.5%  ▁▁▁▃▃▃▁█▁▃·● beats 20/21    hard · avg 30%         0.7%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                46.5%  ▁▁▁▃▃▃▁█▁▃·● beats 20/21    hard · avg 31%         0.7%  at its level
 <a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>                     85.1%  ▁▁▁▁▂▁▁▅▇█▃● beats 130/131  easy · avg 83%         0.6%  at its level · small run
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   38.0%  ▆●·▄█·▂▂·▄▄▂ beats 3/16     very hard · avg 35%    0.5%  blunt
 <a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>                      86.4%  ▁▁▁▂▂▂▄▆█▇▄● beats 130/135  easy · avg 85%         0.5%  small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 255/276  medium · avg 72%       0.4%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            88.4%  ▁▁·▁·▂▃▄█●·▁ beats 21/22    easy · avg 81%         0.4%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            88.4%  ▁▁·▁·▂▃▄█●·▁ beats 21/22    easy · avg 82%         0.4%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.9%  ▁▁▁▁▁▁▁▂▄█▄● beats 133/146  easy · avg 82%         0.2%  noisy
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           66.6%  ▄··▂▄▂▆●█▄▄▂ beats 9/21     easy · avg 67%         0.1%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.0%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 59/140   very easy · avg 94%    0.1%  blunt · maxed out · noisy

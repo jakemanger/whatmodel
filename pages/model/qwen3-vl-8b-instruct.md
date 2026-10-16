@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 55.5** ±0.7 · #268 of 724 · from 31 benchmark results across 5 sources
+**score 55.4** ±0.7 · #273 of 725 · from 31 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #194 of 302*    3.0%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #194 of 303*    3.0%      2
 coding              ▁▁▁▃▆●█▇▆▄▃▁   #330 of 460*    3.9%      1
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #188 of 395*    2.8%      1
 math                ▁▁▃▅█▆●█▄▁▁▁    #184 of 424     12%      4
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #104 of 147     50%     16
 </pre>
 
-<details><summary>agent tasks · #194 of 302 · 3.0% of its score</summary>
+<details><summary>agent tasks · #194 of 303 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   83.7%  ▃··▃···█●▅▃▃ beats 7/11   easy · avg 76%    2.8%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   83.7%  ▃··▃···█●▅▃▃ beats 7/11   easy · avg 77%    2.8%  typical
 </pre>
 
 </details>
@@ -104,7 +104,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      61.9%  ▂····▂·▂▂●▆█ beats 4/14   hard · avg 48%      8.3%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       71.6%  ▄·▄·▄▄▄●█▄██ beats 5/12   medium · avg 62%    6.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     84.9%  ▃··▃·▃·●▃▅▃▅ beats 4/11   easy · avg 79%      5.4%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      44.5%  ▄··▄·▄▄●█▄██ beats 4/11   medium · avg 36%    3.9%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      44.5%  ▄··▄·▄▄●█▄██ beats 4/11   medium · avg 37%    3.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   47.6%  ▃··▃●▃▃▃▃▃·█ beats 3/11   medium · avg 42%    2.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        58.0%  ▅··▃·▅●▃·█·▃ beats 5/10   hard · avg 50%      2.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   71.4%  ▃··█··▅●▃▃▅▃ beats 7/13   medium · avg 66%    2.7%  blunt · at its level
@@ -125,7 +125,7 @@ source                                    results  share of the score
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.5
+weighted average                                   = 55.4
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

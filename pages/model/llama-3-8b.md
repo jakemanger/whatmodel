@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 8.03B params · llama3
 
-**score 43.7** ±0.4 · #500 of 724 · from 45 benchmark results across 25 sources
+**score 43.7** ±0.4 · #500 of 725 · from 45 benchmark results across 25 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #294 of 302*    0.8%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #295 of 303*    0.8%      2
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #343 of 460     41%      9
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #294 of 395     12%      4
 math            ▁▁●▅█▆▄█▄▁▁▁    #386 of 424     10%      6
 </pre>
 
-<details><summary>agent tasks · #294 of 302 · 0.8% of its score</summary>
+<details><summary>agent tasks · #295 of 303 · 0.8% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       22.9%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 60/122  hard · avg 35%      5.2%  sharp
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   20.6%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 14/60   medium · avg 46%    3.1%  sharp
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   20.6%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 14/60   medium · avg 46%    3.0%  sharp
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1223.6  ▁▁▁▂▃●▃▆▆▇█▃ beats 79/379  avg 1258            1.8%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1150.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 66/95   avg 1186            1.7%  typical
 </pre>
@@ -90,12 +90,12 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             61.7%  ▁·▁▁●▄▄▅█▄▂▁ beats 4/53     easy · avg 75%          8.7%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           27.6%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 21/61    medium · avg 38%        5.9%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Meta-Llama-3-8B-Instruct_5shots.zip">MMLU-Pro</a>                                       40.1%  ▃▂▅●▃·█▃▅··▂ beats 6/23     medium · avg 54%        2.7%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.2028 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 11/52    avg 42.747 WB-Score     1.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.2028 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 11/52    avg 42.785 WB-Score     1.9%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        36.8%  ▂▁▁▄▂●▇█▆▂▂▂ beats 18/58    medium · avg 48%        1.9%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        31.7%  ▃▂·▆●██▆▅▃▃▃ beats 7/33     medium · avg 39%        1.9%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B-Instruct/results_2024-04-22%2022%3A18%3A47.513878.json">MedQA (USMLE, 4 options)</a>                       60.7%  ▁▁··▄▁▁··▄▃● beats 17/17    medium · avg 71%        1.6%  sharp · at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             60.0%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 30/95    medium · avg 64%        1.4%  at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                                 54.4%  ▁▁▁▁▂▄▅●█▃▃▁ beats 75/155   medium · avg 71%        1.4%  sharp · at its level · small run
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                                 54.4%  ▁▁▁▁▂▄▅●█▃▃▁ beats 75/155   medium · avg 72%        1.4%  sharp · at its level · small run
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                           68.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 125/214  easy · avg 76%          1.3%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Meta-Llama-3-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             43.7%  ●·▂▂▂▆▅▆▆▆▃█ beats 0/29     easy · avg 74%          1.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                46.3%  ▁··▁▁▂▂●▅▆█▆ beats 20/70    medium · avg 61%        1.1%  at its level

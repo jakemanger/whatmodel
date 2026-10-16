@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
-**score 56.7** ±1.3 · #246 of 724 · from 6 benchmark results across 5 sources
+**score 56.6** ±1.3 · #249 of 725 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="opencompass-compassacademic-space-predictions"></a><a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">OpenCompass CompassAcademic leaderboard</a>         2    9% ▇
 <a name="first-party-deepseek-scores"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">DeepSeek vendor-reported benchmark scor…</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 56.7
+weighted average                                   = 56.6
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

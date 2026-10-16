@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 62.4** ±1.0 · #174 of 724 · from 21 benchmark results across 2 sources
+**score 62.4** ±1.0 · #174 of 725 · from 21 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #138 of 302     15%      4
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #139 of 303     15%      4
 coding          ▁▁▁▃▆██▇●▄▃▁    #122 of 460     12%      3
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #191 of 395*    1.6%      1
 math            ▁▁▃▅█▆▄●▄▁▁▁    #142 of 424     19%      3
 </pre>
 
-<details><summary>agent tasks · #138 of 302 · 15% of its score</summary>
+<details><summary>agent tasks · #139 of 303 · 15% of its score</summary>
 
 Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -66,9 +66,9 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   67.5%  ▃▃▄▃▃▃●▇█▃▂▅ beats 97/193  very hard · avg 6.9%    7.8%  sharp · at its level · noisy
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024 (lab)</a>            91.7%  ▁▁▁▂▁▃▁▅██●▃ beats 78/85   easy · avg 68%          5.6%  sharp
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2025 (lab)</a>            84.7%  ▁·▁▁▁▂▅▆█●▅▁ beats 98/133  medium · avg 55%        5.3%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   67.5%  ▃▃▄▃▃▃●▇█▃▂▅ beats 97/193  very hard · avg 6.9%    7.7%  sharp · at its level · noisy
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024 (lab)</a>            91.7%  ▁▁▁▂▁▃▁▅██●▃ beats 78/85   easy · avg 69%          5.6%  sharp
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2025 (lab)</a>            84.7%  ▁·▁▁▁▂▅▆█●▅▁ beats 98/133  medium · avg 56%        5.3%  sharp
 </pre>
 
 </details>

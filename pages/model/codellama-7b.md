@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 35.8** ±0.5 · #611 of 724 · from 37 benchmark results across 8 sources
+**score 35.8** ±0.5 · #612 of 725 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

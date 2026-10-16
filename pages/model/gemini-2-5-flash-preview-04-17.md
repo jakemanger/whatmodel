@@ -6,7 +6,7 @@
 
 Google · released 2025-04 · proprietary
 
-**score 62.9** ±1.4 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
+**score 62.8** ±1.4 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -47,11 +47,11 @@ test                      result  vs the others in its run    difficulty        
 
 <details><summary>vision &amp; documents · #105 of 182 · 3.3% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   57.2%  █·██····●█·█ beats 3/5    hard · avg 47%    3.3%  blunt · at its level
+<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>   57.2%  █·██····●█·█ beats 3/5    hard · avg 48%    3.3%  blunt · at its level
 </pre>
 
 </details>
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.9
+weighted average                                   = 62.8
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

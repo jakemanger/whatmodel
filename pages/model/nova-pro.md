@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 50.8** ±1.1 · #346 of 724 · from 17 benchmark results across 6 sources
+**score 50.8** ±1.1 · #347 of 725 · from 17 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #215 of 302     14%      4
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #215 of 303     14%      4
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #263 of 460*     27%      2
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #232 of 395*     13%      1
 math                ●··········█       #2 of 2*     11%      2
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #127 of 147     17%      3
 </pre>
 
-<details><summary>agent tasks · #215 of 302 · 14% of its score</summary>
+<details><summary>agent tasks · #215 of 303 · 14% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #232 of 395 · 13% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why

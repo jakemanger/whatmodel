@@ -36,7 +36,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 
 <pre>
 test         result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 47%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 48%     13%  sharp · at its level
 <a href="https://arxiv.org/html/2204.02311v5">GSM8K (lab)</a>   48.7%  ▂▂▂▂▃▄▅●██▆▄ beats 85/200  easy · avg 69%       11%  sharp · at its level · small run
 </pre>
 

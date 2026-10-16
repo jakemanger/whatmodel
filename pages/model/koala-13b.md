@@ -39,7 +39,7 @@ Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Ge
 test                                                      result  vs the others in its run   difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.9  ▁▁●▂▃▃▃▆▆▇█▃ beats 12/379  avg 1258                     12%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         967.0  ▂▁▂●▃▇█▆▇▄▂▂ beats 11/95   avg 1186                     11%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.3500 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 10/28   avg 8.518 MT-Bench scor…    8.6%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.3500 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 10/28   avg 8.521 MT-Bench scor…    8.6%  sharp · noisy
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                                                      result  vs the others 
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 44.6%  ▄▄·▄···▄▄·●█ beats 5/8    easy · avg 79%          18%  at its level · several runs
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       34.6%  ███··●·█·█·█ beats 3/6    medium · avg 67%        14%  sharp
-<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.9%  ▄·▄···●·▄··▄ beats 3/5    easy · avg 86%          11%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.9%  ▄·▄···●·▄··▄ beats 3/5    easy · avg 87%          11%  sharp · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            77.5%  ▄·▄●··▄····▄ beats 3/5    very easy · avg 92%    5.0%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   24.9%  ▂··●·▂▆▄▂█·▂ beats 1/14   medium · avg 53%       4.0%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   52.8%  █▁····●▁·▁·▁ beats 11/14  hard · avg 67%         1.3%  sharp · too hard for it · noisy

@@ -6,7 +6,7 @@
 
 Google · released 2024-12 · proprietary
 
-**score 61.0** ±1.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 60.9** ±1.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                             results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>            1   65% ▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   34% ▇▇▇▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 61.0
+weighted average                            = 60.9
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

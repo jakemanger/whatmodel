@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁    #238 of 342    8.4%      7
+agent tasks         ▁▁▂▆●▆▅▄▄▃▃▁    #239 of 343    8.4%      7
 coding              ▁▁▁▃▅▇█●▅▄▂▁    #156 of 529     26%      8
 chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃    #162 of 466     13%      5
 math                ▁▂▃▆█●▅▇▃▁▁▁    #282 of 523     16%      5
 vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #109 of 182*    3.4%      2
 </pre>
 
-<details><summary>agent tasks · #238 of 342 · 8.4% of its score</summary>
+<details><summary>agent tasks · #239 of 343 · 8.4% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   36.2%  █··▄·▄█·●··▄ beats 6/7     hard · avg 17%          2.0%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   56.4%  █···█▄▄·▄●·█ beats 7/10    hard · avg 27%          2.0%  at its level
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   39.1%  ▃▅▃·▅▃▃··●·▃ beats 8/11    very hard · avg 3.4%    1.6%  sharp · noisy
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   39.1%  ▃▅▃·▅▃▃··●·▃ beats 8/11    very hard · avg 3.5%    1.6%  sharp · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   69.8%  ▅····▅▅▃▃·●█ beats 8/11    medium · avg 53%        1.2%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              56.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 66/114  medium · avg 51%        0.7%  blunt · at its level
 <a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    4.7%  ▄···▄▄·●▄·▄█ beats 3/7     very hard · avg 2.5%    0.6%  blunt · too hard for it
@@ -90,7 +90,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>vision &amp; documents · #109 of 182 · 3.4% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why

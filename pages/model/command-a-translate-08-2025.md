@@ -6,7 +6,7 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.8** ±4.4 · #332 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.7** ±4.4 · #334 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                         3   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             9% ▇
-weighted average                        = 51.8
+weighted average                        = 51.7
 </pre>
 
 <sub>Licences: Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

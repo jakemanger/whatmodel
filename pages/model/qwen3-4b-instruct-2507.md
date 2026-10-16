@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
-**score 55.6** ±0.6 · #265 of 724 · from 55 benchmark results across 10 sources
+**score 55.6** ±0.6 · #266 of 725 · from 55 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #225 of 302     14%      7
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #226 of 303     14%      7
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #315 of 460     12%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #178 of 395    3.9%      2
 math            ▁▁▃▅█▆●█▄▁▁▁   #176 of 424     15%      8
 </pre>
 
-<details><summary>agent tasks · #225 of 302 · 14% of its score</summary>
+<details><summary>agent tasks · #226 of 303 · 14% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                     61.9%  █▄··●█·█▄█▄█ beats 3/13   medium · avg 59%       1.7%  blunt · at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Retail (lab)</a>              48.7%  ▁····▃·●▇█▂▆ beats 4/28   hard · avg 29%         1.5%  at its level · small run
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   35.7%  ▁▁▁▂██●▅▆▂▂▂ beats 39/77  hard · avg 31%         1.4%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Retail (lab)</a>             40.4%  ▁····●▁▃▆█▃▁ beats 4/44   hard · avg 27%         1.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Retail (lab)</a>             40.4%  ▁····●▁▃▆█▃▁ beats 4/44   hard · avg 28%         1.4%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Airline (lab)</a>            24.0%  ●▁·▂▁▃▂▁█▅▂▃ beats 0/42   hard · avg 16%         1.1%  small run
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Airline (lab)</a>             32.0%  ▁▁▁·●▄▁█▇▁▁▇ beats 5/28   hard · avg 18%         1.0%  at its level · small run
 </pre>
@@ -60,7 +60,7 @@ Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   83.4%  ▃··▃···█●▅▃▃ beats 6/11   easy · avg 76%    2.5%  several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   83.4%  ▃··▃···█●▅▃▃ beats 6/11   easy · avg 77%    2.5%  several runs
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Arena-Hard v2 aggregate (lab)</a>        43.4%  ▁▁··▄●▁▃█▁▁▇ beats 6/22   hard · avg 19%    1.4%  sharp · at its level · small run
 </pre>
 
@@ -92,7 +92,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       69.6%  ▄·▄·▄▄●▄█▄██ beats 4/12     medium · avg 62%        8.5%  at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      62.0%  ▂····▂·▂▂●▆█ beats 6/14     hard · avg 48%          7.5%  sharp · at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     84.2%  ▃··▃·▃·●▃▅▃▅ beats 3/11     easy · avg 79%          4.7%  several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      42.8%  ▄··▄·▄●▄█▄██ beats 3/11     medium · avg 36%        3.4%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      42.8%  ▄··▄·▄●▄█▄██ beats 3/11     medium · avg 37%        3.4%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 80.8%  ▄···▄▄·▄█··● beats 7/7      easy · avg 74%          3.2%  typical
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               58.3%  █··▄··█··█·● beats 7/7      medium · avg 41%        2.0%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   82.1%  ▁●▃▁█▄▃▃▆▂▂▂ beats 2/49     easy · avg 77%          2.0%  typical

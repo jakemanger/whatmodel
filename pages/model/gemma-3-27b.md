@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 27.4B params · gemma
 
-**score 53.6** ±0.5 · #303 of 724 · from 85 benchmark results across 29 sources
+**score 53.6** ±0.5 · #303 of 725 · from 85 benchmark results across 29 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #238 of 302    6.6%      7
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #239 of 303    6.6%      7
 coding              ▁▁▁▃▆●█▇▆▄▃▁   #287 of 460     14%     11
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #145 of 395    7.2%      6
 math                ▁▁▃▅█●▄█▄▁▁▁   #197 of 424     14%      8
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #107 of 147     10%     14
 </pre>
 
-<details><summary>agent tasks · #238 of 302 · 6.6% of its score</summary>
+<details><summary>agent tasks · #239 of 303 · 6.6% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                             result  vs the others in its run   difficulty  
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   29.5%  ▁▁▁▂█●▅▅▆▂▂▂ beats 29/77   hard · avg 31%          1.0%  at its level
 <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>          16.2%  ●·▄··▄····█▄ beats 0/5     hard · avg 32%          1.0%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           59.1%  ▁▁▁▁▁▃▅█●▄▁▁ beats 80/114  medium · avg 51%        0.5%  blunt · at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>                6.6%  ●····▄··▄·▄█ beats 0/5     medium · avg 39%        0.5%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>                6.6%  ●····▄··▄·▄█ beats 0/5     medium · avg 40%        0.5%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -103,14 +103,14 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1159.8  ▁▁▂▂▂▂▄●▅▆██ beats 54/145  avg 1058               1.7%  blunt
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                       49.7%  █●·█····█·██ beats 1/5     medium · avg 48%       1.4%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>                 70.6%  ▄●·······█·▄ beats 2/5     easy · avg 69%         1.3%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>                 70.6%  ▄●·······█·▄ beats 2/5     easy · avg 70%         1.3%  typical
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   43.0%  ▄··█·●··▄█·▄ beats 3/7     hard · avg 33%         1.2%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>                    46.0%  ●█·█·····███ beats 0/5     medium · avg 52%       1.1%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                     64.9%  ▁····▁▁▄█●▆▆ beats 29/52   medium · avg 57%       0.9%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>           67.6%  ▁··▁▄▄▇●▅▆█▄ beats 22/47   medium · avg 60%       0.9%  at its level · small run
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>             36.5%  ●·█·····████ beats 0/5     avg 31%                0.5%  blunt
 <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   39.1%  ▅······▃·●·█ beats 4/7     very hard · avg 36%    0.4%  noisy
-<a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    71.0%  ▃▅▃●·▃▅·▃·▃▅ beats 5/13    easy · avg 71%         0.3%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    71.0%  ▃▅▃●·▃▅·▃·▃▅ beats 5/13    easy · avg 72%         0.3%  blunt · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                        78.0%  ▁··▁▁▁▁▁▂●▅█ beats 11/44   easy · avg 77%         0.3%  blunt · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                         86.6%  ▁··●▁▁▁▇█▇▄▅ beats 1/28    very easy · avg 89%    0.2%  blunt · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                        65.1%  ▁▁●▄▅▁▃·▃▃▃█ beats 2/24    easy · avg 74%         0.1%  blunt · small run
@@ -138,14 +138,14 @@ test                                result  vs the others in its run    difficul
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>               75.1%  ▂···▂·▂●▂·██ beats 3/12     medium · avg 64%        1.4%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.9%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 74/97    hard · avg 31%          1.4%  blunt · at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    23.6%  ▁···▁●▂█▂▃▃▂ beats 4/23     hard · avg 17%          1.3%  typical
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   50.3%  ▁▁▁▁·▂·●▆█▇▁ beats 8/31     medium · avg 46%        1.2%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   50.3%  ▁▁▁▁·▂·●▆█▇▁ beats 8/31     medium · avg 46%        1.3%  at its level
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4 pat…</a>   75.5%  ▄·······▄●·▄ beats 3/4      easy · avg 71%          1.1%  typical
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                        32.0%  ●▄·▄······▄█ beats 0/5      medium · avg 39%        1.1%  at its level
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   70.5%  █······█··█● beats 3/3      medium · avg 60%        1.1%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   64.6%  ▂▄▂▃█▄▃▆●▅▂▂ beats 62/81    medium · avg 56%        1.1%  blunt · at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>         13.5%  ●▄·▄···█···▄ beats 0/5      hard · avg 21%          1.0%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro avg (l…</a>   19.3%  ●··▄···▄·▄·▄ beats 0/5      hard · avg 27%          0.8%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                30.9%  ▁▁▁▃▃▃▁●▁▃·▄ beats 15/21    hard · avg 30%          0.8%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                30.9%  ▁▁▁▃▃▃▁●▁▃·▄ beats 15/21    hard · avg 31%          0.8%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>                74.9%  ▄········▄·● beats 2/3      easy · avg 72%          0.7%  typical
 <a href="https://arxiv.org/html/2503.19786v1">RULER 128k (lab)</a>                     66.0%  ▃··▅▄●▅█▇·▃▃ beats 12/32    medium · avg 58%        0.7%  at its level · small run
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   36.5%  ●▂·▄█·▂▂·▄▄▂ beats 2/16     very hard · avg 35%     0.6%  blunt

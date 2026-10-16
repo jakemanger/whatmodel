@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 14.8B params · mit
 
-**score 55.9** ±1.0 · #259 of 724 · from 18 benchmark results across 8 sources
+**score 55.9** ±1.0 · #260 of 725 · from 18 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,9 +28,9 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   53.1%  ▄····▄▄··●█▄ beats 3/6    medium · avg 41%    8.7%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   53.2%  █▂▁▁▂▂▂▃▅▅●▇ beats 37/47  hard · avg 32%      4.3%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   31.3%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 25/47  hard · avg 31%      3.1%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   66.8%  ▃··▁▂▂▃▂█●▄▂ beats 36/47  medium · avg 50%    2.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   72.7%  ▁▁▁······▁▃● beats 23/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   31.3%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 25/47  hard · avg 31%      3.2%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   66.8%  ▃··▁▂▂▃▂█●▄▂ beats 36/47  medium · avg 51%    2.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   72.7%  ▁▁▁······▁▃● beats 23/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         87.1%  ▂▂▅▆▄█▆▃●▂▃▄ beats 73/92   hard · avg 27%           25%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             50.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 76/193  very hard · avg 6.9%    6.3%  sharp · noisy
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      69.7%  ▃·▃·▃▃···●·▃ beats 4/7     medium · avg 49%        3.0%  sharp · at its level · noisy
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      69.7%  ▃·▃·▃▃···●·▃ beats 4/7     medium · avg 50%        3.0%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       93.9%  ▄·▄▄·▄●█···▄ beats 4/7     very easy · avg 91%     2.4%  maxed out
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   70.2%  ▄●·▄····▄▄·█ beats 2/7     easy · avg 76%          2.0%  typical
 </pre>

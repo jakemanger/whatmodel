@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 20.9** ±0.7 · #691 of 724 · from 56 benchmark results across 13 sources
+**score 20.9** ±0.7 · #692 of 725 · from 56 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                                 72.7%  ▁·▁··▁●▃█▅█▂ beats 3/26    easy · avg 87%          5.7%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                                62.8%  ▂▃▂●▆▂▅▆█▂▂▂ beats 4/26    easy · avg 88%          5.7%  at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           69.0%  ▃··█▅▃▃●·▃▃▃ beats 8/12    very easy · avg 95%     4.1%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 7/26    very easy · avg 97%     2.9%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 7/26    very easy · avg 98%     2.9%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                           25.2%  ●·▁▁▃·▁▃▅▇▃▄ beats 2/26    easy · avg 77%          2.9%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), last-wo…</a>   57.6%  ▁··▂▁●▁▂▆█▅▃ beats 4/26    very easy · avg 87%     2.7%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-7b1/results_2024-02-26%2019%3A43%3A19.008314.json">Natural Questions (closed book)</a>       8.1%  ▁·▁·▁▂▁●·▅▂█ beats 7/28    medium · avg 48%        2.5%  several runs

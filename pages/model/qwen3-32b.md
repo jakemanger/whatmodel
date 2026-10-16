@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 32.8B params · apache-2.0
 
-**score 57.8** ±0.4 · #229 of 724 · from 103 benchmark results across 23 sources
+**score 57.7** ±0.4 · #230 of 725 · from 103 benchmark results across 23 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #186 of 302     22%     10
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #187 of 303     22%     10
 coding          ▁▁▁▃▆██●▆▄▃▁   #191 of 460     13%      8
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #162 of 395    7.9%      5
 math            ▁▁▃▅█▆●█▄▁▁▁   #168 of 424     17%      8
 </pre>
 
-<details><summary>agent tasks · #186 of 302 · 22% of its score</summary>
+<details><summary>agent tasks · #187 of 303 · 22% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -165,7 +165,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.8
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: Qwen/Qwen3-Next-80B-A3B-Thinking model card ([apache-2.0](../../licenses/Qwen--Qwen3-Next-80B-A3B-Thinking.txt)) · Qwen/Qwen3-Next-80B-A3B-Instruct model card ([apache-2.0](../../licenses/Qwen--Qwen3-Next-80B-A3B-Instruct.txt)) · Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · ByteDance-Seed/Seed-OSS-36B-Instruct model card ([apache-2.0](../../licenses/ByteDance-Seed--Seed-OSS-36B-Instruct.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Google · released 2025-07 · closed weights
 
-**score 57.5** ±1.7 · #232 of 724 · from 8 benchmark results across 7 sources
+**score 57.4** ±1.7 · #235 of 725 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #192 of 302*     20%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #193 of 303*     20%      2
 math                ▁▁▃▅█●▄█▄▁▁▁   #236 of 424*     10%      1
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #99 of 147*     64%      2
 </pre>
 
-<details><summary>agent tasks · #192 of 302 · 20% of its score</summary>
+<details><summary>agent tasks · #193 of 303 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   26.2%  ▁▁▃▂▂●▁▃▄▄▄█ beats 10/38    very hard · avg 14%    7.8%  typical
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   26.2%  ▁▁▃▂▂●▁▃▄▄▄█ beats 10/38    very hard · avg 14%    7.7%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   82.3%  ▃▁▁▁▁▁▁▁▂█▅● beats 269/276  medium · avg 72%       5.9%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.1%  ▁▁▂▃▄▄█●▃▂▂▁ beats 107/140  very easy · avg 94%    1.4%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   96.7%  ▁▂▁▂▅█▂▃▄▃▁● beats 97/98    very easy · avg 90%    0.0%  blunt
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.5
+weighted average                                   = 57.4
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Qwen/Qwen3.5-4B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-4B.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

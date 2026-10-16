@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -12.8** ±1.5 · #724 of 724 · from 35 benchmark results across 9 sources
+**score -12.8** ±1.5 · #725 of 725 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [GPT-2 Large (774M)](gpt-2-large.md), [GPT-2 Medium (355M)](gpt-2-medium.m
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    0.4%  ●·▂█·······▂ beats 2/9    medium · avg 62%    0.1%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    0.4%  ●·▂█·······▂ beats 2/9    medium · avg 63%    0.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>

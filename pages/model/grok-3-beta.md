@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-04 · proprietary
 
-**score 63.6** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 6 sources
+**score 63.5** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #218 of 342*     11%      2
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #219 of 343*     11%      2
 coding       ▁▁▁▃▅▇█●▅▄▂▁   #155 of 529*     39%      2
 math         ▁▂▃▆█▇●▇▃▁▁▁   #180 of 523*     22%      2
 web search   ▂·▂▇▅█▃▄▁●▁▁      #6 of 92*    8.5%      1
 </pre>
 
-<details><summary>agent tasks · #218 of 342 · 11% of its score</summary>
+<details><summary>agent tasks · #219 of 343 · 11% of its score</summary>
 
-Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -53,7 +53,7 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               88.7%  ▂▂▅▆▄█▆▃●▂▃▄ beats 76/92   hard · avg 27%           13%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/193  very hard · avg 6.9%    9.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/193  very hard · avg 6.9%    9.3%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -92,7 +92,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    7% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.6
+weighted average                                   = 63.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

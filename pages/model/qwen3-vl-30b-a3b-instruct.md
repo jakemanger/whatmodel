@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 31.1B params (3B active) · apache-2.0
 
-**score 58.0** ±0.7 · #224 of 724 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.0** ±0.7 · #224 of 725 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #185 of 302*    2.2%      1
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #186 of 303*    2.2%      1
 coding              ▁▁▁▃▆●█▇▆▄▃▁   #306 of 460*    4.4%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #171 of 395*    2.9%      1
 math                ▁▁▃▅█▆●█▄▁▁▁   #162 of 424*     10%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄     #96 of 147     49%     13
 </pre>
 
-<details><summary>agent tasks · #185 of 302 · 2.2% of its score</summary>
+<details><summary>agent tasks · #186 of 303 · 2.2% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=22">IFEval (aggregation unspecified) …</a>   85.8%  ▃··▃···██▅●▃ beats 10/11  easy · avg 76%    2.9%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=22">IFEval (aggregation unspecified) …</a>   85.8%  ▃··▃···██▅●▃ beats 10/11  easy · avg 77%    2.9%  typical
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ test                        result  vs the others in its run  difficulty        
 
 <details><summary>vision &amp; documents · #96 of 147 · 49% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -98,7 +98,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">GPQA (subset unspecified) (lab)</a>      70.4%  ▂····▂·▂▂█●█ beats 10/14  hard · avg 48%      9.4%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">MMLU-Pro (lab)</a>                       77.8%  ▄·▄·▄▄▄▄█▄●█ beats 9/12   medium · avg 62%    7.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=22">MMLU-Redux (lab)</a>                     88.4%  ▃··▃·▃·█▃●▃▅ beats 7/11   easy · avg 79%      5.3%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=22">SuperGPQA (lab)</a>                      53.1%  ▄··▄·▄▄▄█▄●█ beats 8/11   medium · avg 36%    4.5%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=22">SuperGPQA (lab)</a>                      53.1%  ▄··▄·▄▄▄█▄●█ beats 8/11   medium · avg 37%    4.5%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>                   54.3%  ▃··▃▅▃▃●▃▃·█ beats 6/11   medium · avg 42%    3.3%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                        62.5%  ▅··▃·▅▃▃·●·▃ beats 7/10   hard · avg 50%      3.2%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (la…</a>   74.5%  ▃··█··▅█▃●▅▃ beats 10/13  medium · avg 66%    2.9%  blunt · at its level

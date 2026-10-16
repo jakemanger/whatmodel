@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.738B params · apache-2.0
 
-**score 16.8** ±2.4 · #699 of 724 · from 8 benchmark results across 2 sources
+**score 16.8** ±2.4 · #700 of 725 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mi
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.4%  ▅·▂●·······▂ beats 7/9    medium · avg 62%     15%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.4%  ▅·▂●·······▂ beats 7/9    medium · avg 63%     15%  sharp · too hard for it · noisy
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 66.5** ±1.2 · #118 of 724 · from 5 benchmark results across 1 source
+**score 66.4** ±1.2 · #119 of 725 · from 5 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 66.5
+weighted average                        = 66.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

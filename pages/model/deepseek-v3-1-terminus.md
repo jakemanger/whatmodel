@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 66.3** ±1.3 · #120 of 724 · from 11 benchmark results across 2 sources
+**score 66.3** ±1.3 · #121 of 725 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #125 of 302     30%      5
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #126 of 303     30%      5
 coding          ▁▁▁▃▆██▇●▄▃▁   #102 of 460     42%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #91 of 395*     17%      1
 web search      █········█·●      #1 of 3*     11%      2
 </pre>
 
-<details><summary>agent tasks · #125 of 302 · 30% of its score</summary>
+<details><summary>agent tasks · #126 of 303 · 30% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 

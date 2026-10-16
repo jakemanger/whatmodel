@@ -6,7 +6,7 @@
 
 Baichuan · released 2025-01 · 14.47B params
 
-**score 54.6** ±3.9 · #352 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±3.9 · #352 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

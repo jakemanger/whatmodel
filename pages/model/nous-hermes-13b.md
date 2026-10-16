@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 36.4** ±2.2 · #610 of 724 · from 3 benchmark results across 2 sources
+**score 36.4** ±2.2 · #611 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

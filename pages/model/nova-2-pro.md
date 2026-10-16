@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 63.2** ±2.0 · #166 of 724 · from 3 benchmark results across 2 sources
+**score 63.2** ±2.0 · #167 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #96 of 302*    7.5%      1
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #97 of 303*    7.5%      1
 </pre>
 
-<details><summary>agent tasks · #96 of 302 · 7.5% of its score</summary>
+<details><summary>agent tasks · #97 of 303 · 7.5% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   78.5%  ▂··▄···▂▄▄●▄ beats 8/13   medium · avg 44%    7.5%  at its level
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   78.5%  ▂··▄···▂▄▄●▄ beats 8/13   medium · avg 45%    7.5%  at its level
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   54.1%  █···▁▁▁▂●·▆▂ beats 14/23  very hard · avg 28%     46%  sharp · at its level
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   54.1%  █···▁▁▁▂●·▆▂ beats 14/23  very hard · avg 29%     46%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           73.1%  ▆▄▄▄●▄▂·▄█·▄ beats 12/23  medium · avg 56%        45%  typical
 </pre>
 

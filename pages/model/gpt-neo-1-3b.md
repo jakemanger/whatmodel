@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 11.9** ±1.6 · #707 of 724 · from 20 benchmark results across 9 sources
+**score 12.0** ±1.6 · #708 of 725 · from 20 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">OpenBookQA</a>                           21.6%  ●▁▁▁▂▂▃█▃▁▃▁ beats 2/107   hard · avg 48%            —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 25/103  easy · avg 88%            —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">COPA</a>                                 69.0%  ▁·▁▁▁●▅█▆▂▁▁ beats 14/67   easy · avg 92%            —  not counted yet: no other model in the …
-<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">SciQ</a>                                 86.0%  ▂·▁▂▂▃●▃▇▆█▂ beats 16/51   very easy · avg 97%       —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2022.findings-emnlp.54.pdf">SciQ</a>                                 86.0%  ▂·▁▂▂▃●▃▇▆█▂ beats 16/51   very easy · avg 98%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    1% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 11.9
+weighted average                                   = 12.0
 </pre>
 
 <sub>Licences: Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Prompting Language Models for Linguistic Structure ([CC BY 4.0](../../licenses/acl-2023-acl-long-367-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

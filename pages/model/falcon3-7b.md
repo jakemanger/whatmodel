@@ -6,7 +6,7 @@
 
 TII · released 2024-11 · 7.46B params · falcon-llm
 
-**score 45.4** ±2.5 · #465 of 724 · from 7 benchmark results across 3 sources
+**score 45.4** ±2.5 · #465 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #276 of 302*     36%      2
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #277 of 303*     36%      2
 coding       ▁▁▁▃▆●█▇▆▄▃▁    #331 of 460     47%      4
 </pre>
 
-<details><summary>agent tasks · #276 of 302 · 36% of its score</summary>
+<details><summary>agent tasks · #277 of 303 · 36% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -38,10 +38,10 @@ Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-inst
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   35.3%  ▃··▁▂▂▃●█▃▄▂ beats 19/47  medium · avg 50%     18%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   35.3%  ▃··▁▂▂▃●█▃▄▂ beats 19/47  medium · avg 51%     18%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   22.6%  █▂▁▁▂▂▂●▅▅▅▇ beats 21/47  hard · avg 32%       15%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   14.3%  ▁▁▁▁▁▁●▂▃█▅▄ beats 9/47   hard · avg 31%       13%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.2%  ▁▁▁······▁▃● beats 25/47  easy · avg 66%      0.5%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.2%  ▁▁▁······▁▃● beats 25/47  easy · avg 67%      0.5%  blunt · at its level · noisy
 </pre>
 
 </details>

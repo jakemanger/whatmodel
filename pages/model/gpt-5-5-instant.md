@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-05 · closed weights
 
-**score 68.3** ±1.0 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
+**score 68.2** ±1.0 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   20% ▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/gpt-5-5-instant">OpenAI vendor-reported benchmark scores…</a>        1    5% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 68.3
+weighted average                                   = 68.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

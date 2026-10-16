@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 47.4** ±0.9 · #418 of 724 · from 16 benchmark results across 9 sources
+**score 47.4** ±0.9 · #417 of 725 · from 16 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #283 of 302*    5.9%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #284 of 303*    5.9%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #336 of 460     37%      6
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #275 of 395*    8.9%      1
 </pre>
 
-<details><summary>agent tasks · #283 of 302 · 5.9% of its score</summary>
+<details><summary>agent tasks · #284 of 303 · 5.9% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   59.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 49/81    medium · avg 56%       4.0%  blunt · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        34.3%  ▄··▄●···▄▄█▄ beats 2/7      hard · avg 34%         3.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 218/276  medium · avg 72%       2.1%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.6%  ▁▁·▁·▂▃▄●▂·▁ beats 18/22    easy · avg 81%         2.0%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.6%  ▁▁·▁·▂▃▄●▂·▁ beats 18/22    easy · avg 82%         2.0%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   88.2%  ▁▁▁▁▁▁▁▂▄█●▃ beats 109/146  easy · avg 82%         1.2%  at its level · noisy
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           74.7%  ▄··▂▄▂▆█●▄▄▂ beats 13/21    easy · avg 67%         0.7%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.1%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 60/140   very easy · avg 94%    0.6%  blunt · maxed out · noisy

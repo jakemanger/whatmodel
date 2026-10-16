@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 70.55B params · llama3
 
-**score 47.5** ±2.1 · #413 of 724 · from 4 benchmark results across 4 sources
+**score 47.5** ±2.1 · #414 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 36/58    medium · avg 48%     52%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      46.1%  ▁··▁▁▂▂●▅▆█▆ beats 18/70    medium · avg 61%     28%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      46.1%  ▁··▁▁▂▂●▅▆█▆ beats 18/70    medium · avg 61%     29%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   77.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 242/276  medium · avg 72%     11%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   91.8%  ▁▁▁▁▁▁▁▂▄█●▃ beats 123/146  easy · avg 82%      6.4%  at its level · noisy
 </pre>
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                  results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                            1   52% ▇▇▇▇▇▇
-<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   28% ▇▇▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   29% ▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1   11% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                         1    6% ▇
 prior: pull toward the middle                      2% ▇

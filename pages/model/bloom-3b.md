@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 3B params · bigscience-bloom-rail-1.0
 
-**score 16.3** ±0.8 · #701 of 724 · from 47 benchmark results across 8 sources
+**score 16.3** ±0.8 · #702 of 725 · from 47 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">ARC Easy</a>                             53.3%  ▁▁·●▁▄▅▄█▅▁▃ beats 2/26    easy · avg 87%           14%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">WinoGrande</a>                           58.5%  ▁····▁··●▂█▄ beats 3/26    easy · avg 88%           11%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">PIQA</a>                                 70.6%  ▁·▁··●▁▃█▅█▂ beats 2/26    easy · avg 87%          8.7%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">SciQ</a>                                 89.1%  ▁·▁·▁·●▅▃█▄▁ beats 4/26    very easy · avg 97%     6.9%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">SciQ</a>                                 89.1%  ▁·▁·▁·●▅▃█▄▁ beats 4/26    very easy · avg 98%     6.9%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">HellaSwag</a>                            54.5%  ▃···●▇▅█▇▃▁▁ beats 2/26    very easy · avg 91%     6.7%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">LAMBADA (OpenAI version), last-wo…</a>   51.7%  ▁··●▁▁▁▂▆█▅▃ beats 1/26    very easy · avg 87%     5.4%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">BoolQ</a>                                61.7%  ▂▃●▅▆▂▅▆█▂▂▂ beats 3/26    easy · avg 88%          4.5%  several runs

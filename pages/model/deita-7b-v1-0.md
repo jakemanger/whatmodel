@@ -6,7 +6,7 @@
 
 HKUST NLP · released 2023-12 · 7.24B params · apache-2.0
 
-**score 41.9** ±1.8 · #529 of 724 · from 3 benchmark results across 2 sources
+**score 41.9** ±1.8 · #530 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

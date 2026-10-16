@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 56.9** ±0.9 · #242 of 724 · from 20 benchmark results across 6 sources
+**score 56.9** ±0.9 · #243 of 725 · from 20 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #239 of 302*    3.0%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #240 of 303*    3.0%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #225 of 460     10%      2
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #302 of 395*    0.8%      1
 math            █·····█····●        #1 of 3     25%      2
 </pre>
 
-<details><summary>agent tasks · #239 of 302 · 3.0% of its score</summary>
+<details><summary>agent tasks · #240 of 303 · 3.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4807  ▁▄▃▃▇●█▃▅▁▁▁ beats 14/30    avg 0.415            16%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 13/34    medium · avg 41%    7.0%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.2%  ▂·▂▂·▂·▃▃·●▃ beats 10/14    easy · avg 79%      4.7%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   86.9%  ▂··▂▂·▂▆▆█·● beats 14/15    medium · avg 62%    3.2%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   86.9%  ▂··▂▂·▂▆▆█·● beats 14/15    medium · avg 63%    3.2%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">MMLU-Redux</a>                           84.4%  ▁▁▃▁▂▃●▅▇▅█▄ beats 17/63    easy · avg 76%      3.2%  typical
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   63.5%  ▂···▂▂·▃▂▃█● beats 13/17    medium · avg 52%    2.1%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GSM-Plus</a>                             86.5%  ▁··▁▁▁·▃▁●█▁ beats 8/16     easy · avg 83%      1.4%  blunt
@@ -89,8 +89,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">mistralai/Ministral-3-3B-Reasoning-2512…</a>        4   26% ▇▇▇
 <a name="card-mistralai-ministral-3-8b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">mistralai/Ministral-3-8B-Reasoning-2512…</a>        4   26% ▇▇▇
+<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">mistralai/Ministral-3-3B-Reasoning-2512…</a>        4   26% ▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   23% ▇▇▇
 <a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">JetBrains/Mellum2-12B-A2.5B-Thinking mo…</a>        7   15% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    8% ▇
@@ -99,7 +99,7 @@ prior: pull toward the middle                        0% ▇
 weighted average                                   = 56.9
 </pre>
 
-<sub>Licences: mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · JetBrains/Mellum2-12B-A2.5B-Thinking model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · JetBrains/Mellum2-12B-A2.5B-Thinking model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (4)</summary>
 

@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 13.02B params · llama2
 
-**score 35.6** ±0.8 · #612 of 724 · from 30 benchmark results across 16 sources
+**score 35.5** ±0.8 · #614 of 725 · from 30 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -41,7 +41,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              8.4%  ▁▂▂●▆▆█▆▄▄▁▁ beats 18/122  hard · avg 35%               10%  sharp
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1141.4  ▁▁▁●▃▃▃▆▆▇█▃ beats 33/379  avg 1258                    7.2%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1081.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 38/95   avg 1186                    6.5%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.6500 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 19/28   avg 8.518 MT-Bench scor…    5.1%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.6500 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 19/28   avg 8.521 MT-Bench scor…    5.1%  sharp · noisy
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>                          2.0%  ▁·●▁▂▁▄▄▆▄█▄ beats 1/38    medium · avg 45%            2.4%  sharp
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         81.1%  ▂▂·▆·▇●▆█▆▄▂ beats 19/45   very easy · avg 94%         1.7%  sharp · at its level · noisy
 </pre>
@@ -109,7 +109,7 @@ source                                    results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                                        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 35.6
+weighted average                                   = 35.5
 </pre>
 
 <sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

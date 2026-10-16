@@ -6,7 +6,7 @@
 
 Anthropic · released 2025-05 · proprietary
 
-**score 67.1** ±0.8 · comparison only: no current run option verified · from 18 benchmark results across 10 sources
+**score 67.0** ±0.8 · comparison only: no current run option verified · from 18 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #133 of 342     31%      4
+agent tasks         ▁▁▂▆█▆●▄▄▃▃▁    #134 of 343     31%      4
 coding              ▁▁▁▃▅▇█▇●▄▂▁    #109 of 529     41%      4
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃    #92 of 466*    7.4%      1
 math                ▁▂▃▆█▇●▇▃▁▁▁   #193 of 523*    8.1%      2
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #81 of 182*    5
 web search          ▂·▂▇●█▃▄▁▂▁▁     #63 of 92*    3.0%      1
 </pre>
 
-<details><summary>agent tasks · #133 of 342 · 31% of its score</summary>
+<details><summary>agent tasks · #134 of 343 · 31% of its score</summary>
 
 Beats [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                   result  vs the others in its run  difficulty            c
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      70.7%  ▁··▁·▁▂▁●█▄▁ beats 8/29   hard · avg 18%           17%  sharp · at its level
 <a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>        57.0%  ██··█·██··●█ beats 5/6    very hard · avg 8.5%    7.2%  sharp · at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Retail (lab)</a>    81.4%  ▁····▃·▂▇█▂● beats 27/28  medium · avg 44%        4.0%  small run
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Airline (lab)</a>   59.6%  ▁▁▁·▅▄▁█▇▁▁● beats 24/28  hard · avg 25%          2.8%  at its level · small run
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Airline (lab)</a>   59.6%  ▁▁▁·▅▄▁█▇▁▁● beats 24/28  hard · avg 26%          2.8%  at its level · small run
 </pre>
 
 </details>
@@ -70,14 +70,14 @@ Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               85.0%  ▂▂▅▆▄█▆▃●▂▃▄ beats 72/92   hard · avg 27%          4.1%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   64.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 92/193  very hard · avg 6.9%    4.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   64.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 92/193  very hard · avg 6.9%    3.9%  sharp · noisy
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #81 of 182 · 5.2% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -128,7 +128,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 67.1
+weighted average                                   = 67.0
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Moonshot AI Kimi-K2-Instruct model card ([Modified MIT License (Kimi K2)](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE)) · τ-bench leaderboard: Anthropic's own submissions ([MIT](https://opensource.org/license/mit)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

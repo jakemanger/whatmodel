@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
-**score 38.4** ±1.1 · #586 of 724 · from 16 benchmark results across 2 sources
+**score 38.3** ±1.1 · #587 of 725 · from 16 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -45,7 +45,7 @@ test                        result  vs the others in its run  difficulty        
 <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                 90.1%  ●··▅▃▅▃█▃█▅▅ beats 0/17   very easy · avg 94%    6.5%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                73.5%  ●··▂·▂▃·▅▂▆█ beats 0/17   easy · avg 84%         6.1%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>         41.7%  ●·▃·▅▃▅▅▃▅█▅ beats 0/16   medium · avg 54%       5.3%  blunt · at its level
-<a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>         65.5%  ▃·▃●█▃▃▃▃▃▃▃ beats 3/13   easy · avg 79%         5.2%  at its level · small run
+<a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>         65.5%  ▃·▃●█▃▃▃▃▃▃▃ beats 3/13   easy · avg 80%         5.2%  at its level · small run
 <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>            62.9%  ●▃·▃▅▅·█·▃▅█ beats 0/16   easy · avg 70%         4.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 25%         3.7%  too hard for it · small run
 <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>               80.9%  ▅●·▃▃█▃▅▅▃·▃ beats 3/16   easy · avg 84%         1.9%  blunt
@@ -58,7 +58,7 @@ test                        result  vs the others in its run  difficulty        
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles) (la…</a>   55.6%  ●··█··▅█▃▃▅▃ beats 0/13    medium · avg 66%       7.0%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles) (la…</a>   55.6%  ●··█··▅█▃▃▅▃ beats 0/13    medium · avg 66%       7.1%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (lab)</a>     60.4%  ▁▁●▁▁·▁▃▁▁▁█ beats 2/16    medium · avg 73%       3.3%  at its level · small run
 <a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                        63.2%  ▂●▂·▂█··▆▄·▂ beats 1/13    medium · avg 67%       3.0%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.7%  ▁▁▂▃●▄█▆▃▂▂▁ beats 33/140  very easy · avg 94%    1.4%  blunt · noisy
@@ -75,7 +75,7 @@ source                             results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (lab)</a>                              15   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    1% ▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 38.4
+weighted average                            = 38.3
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

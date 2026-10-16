@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.5** ±1.1 · #267 of 724 · from 8 benchmark results across 4 sources
+**score 55.5** ±1.1 · #268 of 725 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #278 of 302*    2.5%      1
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #279 of 303*    2.5%      1
 coding       ●█········██       #4 of 4*    6.3%      1
 math         ▁▁▃▅█●▄█▄▁▁▁    #204 of 424     42%      3
 </pre>
 
-<details><summary>agent tasks · #278 of 302 · 2.5% of its score</summary>
+<details><summary>agent tasks · #279 of 303 · 2.5% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 47%         20%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 48%         20%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         15%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/193  very hard · avg 6.9%    7.2%  sharp · noisy
 </pre>

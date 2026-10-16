@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-12 · 14.7B params · mit
 
-**score 53.4** ±0.6 · #306 of 724 · from 49 benchmark results across 17 sources
+**score 53.4** ±0.6 · #307 of 725 · from 49 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #266 of 302*    2.6%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #268 of 303*    2.6%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #224 of 460     18%      7
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #268 of 395     12%      4
 math            ▁▁▃▅█●▄█▄▁▁▁    #226 of 424     16%      5
 </pre>
 
-<details><summary>agent tasks · #266 of 302 · 2.6% of its score</summary>
+<details><summary>agent tasks · #268 of 303 · 2.6% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -44,9 +44,9 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (lab)</a>                      82.6%  ▁▁▁▁▂▂▆▆█●▂▁ beats 183/205  easy · avg 71%      2.1%  sharp · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   44.8%  █▂▁▁▂▂▂▃▅▅●▇ beats 34/47    hard · avg 32%      1.5%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2412.08905v1">HumanEval (simple-evals) (lab)</a>       82.6%  ▂●▆█▅▃··▂··▂ beats 3/19     easy · avg 76%      1.2%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   77.5%  ▃··▁▂▂▃▂█▃●▂ beats 42/47    medium · avg 50%    1.2%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   77.5%  ▃··▁▂▂▃▂█▃●▂ beats 42/47    medium · avg 51%    1.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   37.1%  ▁▁▁▁▁▁▂▂▃█●▄ beats 37/47    hard · avg 31%      1.1%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.6%  ▁▁▁······▁▃● beats 35/47    easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.6%  ▁▁▁······▁▃● beats 35/47    easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -96,7 +96,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      64.4%  ▁··▁▁▂▂▆▅▆●▆ beats 44/70    medium · avg 61%        2.1%  at its level
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified) (lab)</a>      56.1%  ▂▁▂▂▄▃▆▃●█▄▃ beats 59/104   hard · avg 43%          1.9%  sharp · at its level · small run
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU (lab)</a>                           84.8%  ▁▁▁▁▁▂▂▅██●▄ beats 185/214  easy · avg 77%          1.8%  small run
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.2%  ●···▁▁▁▂▃·▆▂ beats 6/23     very hard · avg 28%     1.7%  sharp · too hard for it
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.2%  ●···▁▁▁▂▃·▆▂ beats 6/23     very hard · avg 29%     1.7%  sharp · too hard for it
 <a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot CoT…</a>   84.8%  ▁···▂▁●█▂▂▃▁ beats 5/22     easy · avg 79%          1.4%  typical
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA (lab)</a>                        3.0%  ●▄▄▆█▆███·▂█ beats 1/32     very hard · avg 4.5%    1.3%  too hard for it · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 230/276  medium · avg 72%        0.9%  at its level · noisy

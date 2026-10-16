@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2023-09 · apache-2.0
 
-**score 41.5** ±3.3 · #713 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.5** ±3.3 · #714 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

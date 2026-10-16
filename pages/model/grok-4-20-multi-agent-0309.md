@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 72.3** ±2.1 · #58 of 724 · from 3 benchmark results across 1 source
+**score 72.2** ±2.1 · #59 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -62,7 +62,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 72.3
+weighted average                        = 72.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

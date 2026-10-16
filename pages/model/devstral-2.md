@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 61.7** ±1.6 · #185 of 724 · from 5 benchmark results across 3 sources
+**score 61.6** ±1.6 · #186 of 725 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here,
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1196.1  ▁●▄▃▅█▄▇▆▄▁▁ beats 5/119   avg 969            45%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1196.1  ▁●▄▃▅█▄▇▆▄▁▁ beats 5/119   avg 970            45%  sharp
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 85/131  hard · avg 33%     15%  sharp · at its level · small run
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▂▅●█▃▃▁ beats 21/60   hard · avg 31%    9.2%  at its level · small run
 </pre>
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   35% ▇▇▇▇
 <a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   18% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.7
+weighted average                                   = 61.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>

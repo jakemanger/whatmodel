@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 62.3** ±1.2 · #175 of 724 · from 13 benchmark results across 2 sources
+**score 62.2** ±1.2 · #176 of 725 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -89,7 +89,7 @@ source                                    results  share of the score
 <a name="card-minimaxai--minimax-m1-80k"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MiniMaxAI/MiniMax-M1-80k model card (la…</a>       12   83% ▇▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.3
+weighted average                                   = 62.2
 </pre>
 
 <sub>Licences: MiniMaxAI/MiniMax-M1-80k model card ([apache-2.0](../../licenses/MiniMaxAI--MiniMax-M1-80k.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

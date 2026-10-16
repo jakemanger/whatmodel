@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 49.8** ±0.5 · #369 of 724 · from 51 benchmark results across 18 sources
+**score 49.7** ±0.5 · #371 of 725 · from 51 benchmark results across 18 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #233 of 302    4.7%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #234 of 303    4.7%      3
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #264 of 460     15%      6
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #260 of 395    4.5%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁   #269 of 424     17%      7
 </pre>
 
-<details><summary>agent tasks · #233 of 302 · 4.7% of its score</summary>
+<details><summary>agent tasks · #234 of 303 · 4.7% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -44,9 +44,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    52.8%  ▁▂▆●▆█▆▃▂·▁▁ beats 14/47  medium · avg 57%    7.5%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   25.3%  ▁▁·▁▂▄●█▅▂·▂ beats 12/31  hard · avg 23%      4.9%  sharp
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   34.2%  █▂▁▁▂▂▂▃▅●▅▇ beats 28/47  hard · avg 32%      0.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   51.6%  ▃··▁▂▂▃▂●▃▄▂ beats 27/47  medium · avg 50%    0.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   51.6%  ▃··▁▂▂▃▂●▃▄▂ beats 27/47  medium · avg 51%    0.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   35.7%  ▁▁▁▁▁▁▂▂▃█●▄ beats 34/47  hard · avg 31%      0.7%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.9%  ▁▁▁······▁▃● beats 33/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.9%  ▁▁▁······▁▃● beats 33/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -103,7 +103,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           71.1%  ▃····▃▃█▃·●▅ beats 7/10     medium · avg 71%        1.0%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                            80.0%  ▃▅█·▃●▃···▃▃ beats 7/10     easy · avg 82%          0.9%  typical
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            30.6%  █··▄▂··▂●··▄ beats 8/10     very hard · avg 32%     0.9%  sharp · noisy
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                18.1%  ▁▁▁▃●▃▁█▁▃·▄ beats 5/21     hard · avg 30%          0.8%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                18.1%  ▁▁▁▃●▃▁█▁▃·▄ beats 5/21     hard · avg 31%          0.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           75.3%  ▃·▃▅▅●·▃···▃ beats 7/10     medium · avg 76%        0.8%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                80.0%  ▃··▃··█●▃·▃▃ beats 5/10     easy · avg 83%          0.7%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 211/276  medium · avg 72%        0.6%  at its level · noisy
@@ -140,7 +140,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Reinforcing Real-world Service Agents: InteractCS-RL ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Synthesize and Reward: Reinforcement Learning for Multi-Step Tool Use in Live Environments ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

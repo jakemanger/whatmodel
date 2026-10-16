@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
-**score 47.0** ±0.8 · #433 of 724 · from 3 benchmark results across 1 source
+**score 47.0** ±0.8 · #433 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

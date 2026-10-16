@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 67.0** ±0.5 · #110 of 724 · from 53 benchmark results across 22 sources
+**score 67.0** ±0.5 · #110 of 725 · from 53 benchmark results across 22 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁    #123 of 302     35%     17
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁    #124 of 303     36%     17
 coding              ▁▁▁▃▆██▇●▄▃▁    #110 of 460     19%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #121 of 395*    3.1%      1
 math                ▁▁▃▅█▆▄█●▁▁▁     #59 of 424     21%      7
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #85 of 147    7
 web search          ▂▁●▆▄█▃▃▁▁·▁     #73 of 80*    1.7%      1
 </pre>
 
-<details><summary>agent tasks · #123 of 302 · 35% of its score</summary>
+<details><summary>agent tasks · #124 of 303 · 36% of its score</summary>
 
 Beats [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -33,20 +33,20 @@ test                                result  vs the others in its run  difficulty
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   64.7%  ▁··▁·▁●▁▄█▄▁ beats 6/29   hard · avg 18%          8.9%  sharp · at its level · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">τ²-bench aggregate</a>                   69.8%  ▁▁▁·▂▂▄●▃▅█▂ beats 15/37  medium · avg 37%        3.0%  several runs
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   24.0%  ▃··▃·▃▃●█▅▃▅ beats 5/14   very hard · avg 5.9%    2.5%  sharp · at its level
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   47.7%  ▃▅▃·▅▃▃··●·▃ beats 10/11  very hard · avg 3.4%    2.4%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               74.1%  ▃·▅▅▃●··█▃▃▅ beats 6/13   hard · avg 15%          2.1%  sharp · at its level · noisy · several …
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   47.7%  ▃▅▃·▅▃▃··●·▃ beats 10/11  very hard · avg 3.5%    2.4%  sharp · at its level · noisy
+<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               74.1%  ▃·▅▅▃●··█▃▃▅ beats 6/13   hard · avg 16%          2.1%  sharp · at its level · noisy · several …
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (lab)</a>             38.2%  ●█···██··███ beats 0/6    very hard · avg 15%     2.0%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Toolathlon (Tool Decathlon) (lab)</a>    26.9%  ●··▃··▃··▃█▅ beats 0/8    very hard · avg 13%     1.8%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   60.6%  █···█▄▄·▄█·● beats 9/10   hard · avg 27%          1.8%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                      73.4%  █▄··▄··▄·●·▄ beats 5/6    medium · avg 36%        1.8%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                      73.4%  █▄··▄··▄·●·▄ beats 5/6    medium · avg 36%        1.7%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam with tools (…</a>   31.6%  ●·▃·▅····▅·█ beats 0/8    very hard · avg 12%     1.7%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (lab)</a>               42.0%  █●·····▄·▄▄▄ beats 2/6    hard · avg 15%          1.5%  at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                     59.3%  ▄▄······▄█●▄ beats 5/6    hard · avg 28%          1.4%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      55.5%  ▁▁▁▂██▅▅●▂▂▂ beats 65/77  hard · avg 31%          1.4%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (lab)</a>               42.0%  █●·····▄·▄▄▄ beats 2/6    hard · avg 18%          1.2%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.2%  ▃··▃·▃●█▃▃▃█ beats 3/14   very hard · avg 2.6%    1.0%  sharp · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   71.0%  ▅····▅▅▃▃·▃● beats 10/11  medium · avg 53%        1.0%  blunt · at its level
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>                  45.7%  ●·····▄·▄▄▄█ beats 0/6    hard · avg 28%          0.8%  blunt · at its level
-<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     69.8%  ▂··▄···●▄▄█▄ beats 3/13   medium · avg 44%        0.5%  at its level
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     69.8%  ▂··▄···●▄▄█▄ beats 3/13   medium · avg 45%        0.5%  at its level
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   64.7%  ▁··▁·▁●▁▄█▄▁ beats 6/29   hard · avg 18%          8.9%  sharp · at its level · several runs
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   71.6%  █▄····▄··●·▄ beats 5/6    very hard · avg 7.0%    7.0%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   71.6%  █▄····▄··●·▄ beats 5/6    very hard · avg 7.1%    7.0%  sharp · at its level
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   60.0%  ▄··█·▄··●█·▄ beats 4/7    hard · avg 33%          1.6%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.2%  ▃··▃·▃●█▃▃▃█ beats 3/14   very hard · avg 2.6%    1.0%  sharp · noisy
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>                  45.7%  ●·····▄·▄▄▄█ beats 0/6    hard · avg 28%          0.8%  blunt · at its level
@@ -96,7 +96,7 @@ test                                result  vs the others in its run    difficul
 
 <details><summary>vision &amp; documents · #85 of 147 · 7.9% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.5 4B](qwen3-5-4b.md), [GPT-4.1 mini](gpt-4-1-mini.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Qwen3.5 4B](qwen3-5-4b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -126,8 +126,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.0%  ▁▁▁▁▂▄▆▄●▇█▅ beats 112/208  hard · avg 38%          4.3%  sharp · at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   60.6%  █···▁▁▁▂●·▆▂ beats 15/23    very hard · avg 28%     4.2%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.0%  ▁▁▁▁▂▄▆▄●▇█▅ beats 112/208  hard · avg 38%          4.2%  sharp · at its level
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   60.6%  █···▁▁▁▂●·▆▂ beats 15/23    very hard · avg 29%     4.2%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           82.2%  ▆▄▄▄█▄●·▄█·▄ beats 15/23    medium · avg 56%        2.8%  typical
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>           18.3%  ●··▃·▃▃···▃█ beats 0/7      very hard · avg 4.4%    2.4%  typical
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    40.3%  ▁···▁▃▂█●▃▃▂ beats 15/23    hard · avg 17%          2.4%  at its level

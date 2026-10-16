@@ -25,7 +25,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), 
 
 <pre>
 test         result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    49.9%  ▆·▂·▄▂▂▂▂█▄● beats 16/18   medium · avg 47%     18%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    49.9%  ▆·▂·▄▂▂▂▂█▄● beats 16/18   medium · avg 48%     18%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11399v2">GSM8K (lab)</a>   58.5%  ▂▂▂▂▃▄▅●██▆▄ beats 99/200  easy · avg 67%      8.4%  sharp · at its level · small run
 </pre>
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   54.6%  ▂··▂·▂▄▄·█●█ beats 14/18    medium · avg 61%       4.5%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">ARC Challenge (lab)</a>                  60.3%  ▄▁▁▂▁▄█▇●▂▃▂ beats 107/140  medium · avg 65%       4.3%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2210.11399v2">WinoGrande (lab)</a>                     82.6%  ▁▁▁▁▂▁▁▅▇█▃● beats 127/131  easy · avg 85%         3.5%  at its level
-<a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   21.7%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 44/68    hard · avg 29%         3.4%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   21.7%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 44/68    hard · avg 29%         3.5%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">OpenBookQA (lab)</a>                     53.6%  ▅▁▁▁▂▂▃█●▁▃▁ beats 84/107   medium · avg 55%       2.8%  at its level · small run
 <a href="https://arxiv.org/html/2210.11399v2">TriviaQA (lab)</a>                       76.4%  ▁▁▂▂▄▄▃▆▅█●▂ beats 74/80    easy · avg 79%         2.6%  typical
 <a href="https://arxiv.org/html/2210.11399v2">BoolQ (lab)</a>                          88.8%  ▁····▁▂█▆▅▆● beats 101/103  easy · avg 90%         2.6%  typical

@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 37.2** ±0.5 · #599 of 724 · from 37 benchmark results across 9 sources
+**score 37.2** ±0.5 · #600 of 725 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

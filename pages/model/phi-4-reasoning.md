@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.0** ±0.9 · #222 of 724 · from 24 benchmark results across 5 sources
+**score 57.9** ±0.9 · #226 of 725 · from 24 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -68,7 +68,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4815  ▁▄▃▃▇●█▃▅▁▁▁ beats 15/30    avg 0.415            15%  sharp
 <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                       74.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 100/188  medium · avg 58%    8.6%  at its level · several runs
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 14/34    medium · avg 41%    6.7%  blunt · at its level
-<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.7%  ▄···▄····▄·● beats 3/4      easy · avg 85%      4.1%  sharp · noisy · several runs
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.7%  ▄···▄····▄·● beats 3/4      easy · avg 85%      4.0%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 142/276  medium · avg 72%    1.5%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   48.7%  ▃·▁▁▂▁●▅█▇▄▁ beats 25/100   medium · avg 66%    1.2%  sharp · noisy
 <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                      76.6%  █·█·█·█●··██ beats 4/6      easy · avg 68%      1.0%  blunt · at its level · small run · seve…
@@ -89,7 +89,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.0
+weighted average                                   = 57.9
 </pre>
 
 <sub>Licences: Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

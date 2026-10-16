@@ -6,7 +6,7 @@
 
 Google · released 2024-10 · proprietary
 
-**score 49.5** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 49.4** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -74,7 +74,7 @@ source                           results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                               2   36% ▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    7% ▇
 prior: pull toward the middle               1% ▇
-weighted average                          = 49.5
+weighted average                          = 49.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

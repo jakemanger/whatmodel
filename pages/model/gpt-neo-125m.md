@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score -3.2** ±2.2 · #721 of 724 · from 20 benchmark results across 6 sources
+**score -3.2** ±2.2 · #722 of 725 · from 20 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

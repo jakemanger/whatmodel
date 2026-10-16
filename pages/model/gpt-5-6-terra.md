@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-07 · closed weights
 
-**score 77.2** ±0.5 · #19 of 724 · from 39 benchmark results across 11 sources
+**score 77.2** ±0.5 · #20 of 725 · from 39 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #27 of 302     22%     10
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #27 of 303     22%     10
 coding              ▁▁▁▃▆██▇▆●▃▁    #43 of 460     12%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #36 of 395*    2.7%      1
 math                ▁▁▃▅█▆▄█▄▁●▁    #13 of 424     38%      3
@@ -24,13 +24,13 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #30 of 147    5.
 web search          ▂▁▂▆▄█▃●▁▁·▁    #13 of 80*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #27 of 302 · 22% of its score</summary>
+<details><summary>agent tasks · #27 of 303 · 22% of its score</summary>
 
-Beats [Muse Wonder](muse-wonder.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0040 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 20/49  avg -0.312 IPS          5.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0040 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 20/49  avg -0.311 IPS          5.1%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-openai-gpt-5-6-terra-max-codex.json">Terminal-Bench 4.0</a>                       21.5%  █▅▅●▅·▅▃▃▅▅▅ beats 8/20   very hard · avg 0.5%    3.1%  sharp · at its level
 <a href="https://openai.com/index/gpt-5-6">BrowseComp (lab)</a>                         87.5%  ▄··█▄··●·▄█▄ beats 4/8    hard · avg 34%          2.3%  typical
 <a href="https://openai.com/index/gpt-5-6">SWE-bench Pro (split unspecified)…</a>       63.4%  ▃·▁▁▁▂▂▃█●▃▁ beats 45/55  very hard · avg 5.4%    2.3%  sharp · at its level
@@ -50,7 +50,7 @@ Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Mistr
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1519.1  ▁▂▄▃▅█▄●▆▄▁▁ beats 77/119  avg 969                 4.6%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1519.1  ▁▂▄▃▅█▄●▆▄▁▁ beats 77/119  avg 970                 4.7%  sharp
 <a href="https://openai.com/index/gpt-5-6">SWE-bench Pro (split unspecified)…</a>   63.4%  ▃·▁▁▁▂▂▃█●▃▁ beats 45/55   very hard · avg 5.4%    2.3%  sharp · at its level
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>   51.8%  ▃··▅··▃█▃●▃▅ beats 8/12    very hard · avg 3.5%    1.7%  sharp · at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   81.3%  ▁▁▁▁·▁▂▃▅▃●▇ beats 36/49   hard · avg 17%          1.5%  typical
@@ -114,17 +114,17 @@ test              result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         35.0%  █··▂▃▇▄●▂▃▁▁ beats 57/74    very hard · avg 9.4%    4.7%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           54.2%  █▆▆▆▆▂●▂▂▂·▅ beats 22/30    very hard · avg 1.3%    4.4%  sharp · at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   77.9%  █···▁▁▁▂▃·●▂ beats 21/23    very hard · avg 28%     2.7%  sharp
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   77.9%  █···▁▁▁▂▃·●▂ beats 21/23    very hard · avg 29%     2.7%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                54.0%  █▁▁▁▁▂▁▄▂▂●▁ beats 130/135  very hard · avg 5.8%    2.7%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 196/208  hard · avg 38%          1.3%  sharp · maxed out
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           92.2%  ▆▄▄▄█▄▂·▄●·▄ beats 21/23    medium · avg 56%        1.3%  maxed out
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KoBALT-700 (Daekeun Kim)</a>             76.6%  ▄▄●·····▄··▄ beats 2/5      hard · avg 39%          1.2%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    43.2%  ▁▁▃▂▃▃▆●█▃▂▅ beats 39/78    very hard · avg 7.4%    1.1%  at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-Pro (Daekeun Kim)</a>              84.4%  ▄·●█·····▄·▄ beats 1/5      medium · avg 42%        1.0%  typical
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-Pro (Daekeun Kim)</a>              84.4%  ▄·●█·····▄·▄ beats 1/5      medium · avg 43%        1.0%  typical
 <a href="https://deploymentsafety.openai.com/gpt-5-6">HealthBench Professional (lab)</a>       57.7%  ▄·▄··▄●·▄█·█ beats 3/8      hard · avg 20%          1.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   53.2%  ▁▁▃▂▂▄▁▃▄●▄█ beats 22/38    very hard · avg 14%     1.0%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            92.8%  ▄▄▄▂▂█▂▄▂●▂▄ beats 19/22    medium · avg 61%        0.9%  maxed out
-<a href="https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md">AutomationBench public set (Zapie…</a>   37.2%  ●······▄█··▄ beats 0/4      very hard · avg 11%     0.8%  at its level
+<a href="https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md">AutomationBench public set (Zapie…</a>   37.2%  ●······▄█··▄ beats 0/4      very hard · avg 11%     0.9%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">MuSR Korean (Daekeun Kim)</a>            83.2%  █·····██●·██ beats 3/5      medium · avg 44%        0.7%  typical
 <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench Hard (lab)</a>               34.3%  ▂··▂····▂▄·● beats 8/8      very hard · avg 9.7%    0.6%  blunt · at its level
 <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench (lab)</a>                    58.7%  ▃·▃·····█▃▃● beats 8/8      hard · avg 24%          0.6%  blunt · at its level

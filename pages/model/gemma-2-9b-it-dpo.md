@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 9.24B params
 
-**score 60.1** ±1.3 · #199 of 724 · from 3 benchmark results across 3 sources
+**score 60.0** ±1.3 · #201 of 725 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.2230 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 43/52    avg 42.747 WB-Score     20%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.2230 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 43/52    avg 42.785 WB-Score     20%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             70.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 167/276  medium · avg 72%       3.2%  noisy
 </pre>
 
@@ -50,7 +50,7 @@ source                               results  share of the score
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>              1   20% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    3% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 60.1
+weighted average                              = 60.0
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 34.3** ±0.6 · #627 of 724 · from 12 benchmark results across 5 sources
+**score 34.3** ±0.6 · #628 of 725 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -31,7 +31,7 @@ test        result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         55.4%  ▄▄▄█●▄·▄█·▄▄ beats 6/12   easy · avg 81%      4.8%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        47.9%  ▁···▁▁▂●▇█▆▂ beats 17/75  easy · avg 66%      4.6%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      16.2%  ▄●·▄██▄█·█·▄ beats 1/12   medium · avg 49%    3.3%  typical
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   27.8%  ▁··▁●▂█▇▁··▁ beats 2/22   medium · avg 52%    1.3%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   27.8%  ▁··▁●▂█▇▁··▁ beats 2/22   medium · avg 52%    1.2%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   31.0%  ▁·●▃▁█▁▂···▁ beats 2/22   medium · avg 51%    1.2%  blunt · at its level
 </pre>
 

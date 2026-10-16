@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 80.7** ±1.1 · #9 of 724 · from 5 benchmark results across 2 sources
+**score 80.6** ±1.1 · #9 of 725 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #14 of 302*     16%      2
-math         ▁▁▃▅█▆▄█▄▁●▁    #9 of 424*     69%      2
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #14 of 303*     16%      2
+math         ▁▁▃▅█▆▄█▄▁●▁    #9 of 424*     68%      2
 web search   ▂▁▂▆▄█▃●▁▁·▁    #14 of 80*     16%      2
 </pre>
 
-<details><summary>agent tasks · #14 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #14 of 303 · 16% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md) here, though they rank higher overall. Trails [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #9 of 424 · 69% of its score</summary>
+<details><summary>math · #9 of 424 · 68% of its score</summary>
 
 Beats [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [Claude Fable 5](claude-fable-5.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank lower overall.
 
@@ -72,10 +72,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        2   69% ▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        2   68% ▇▇▇▇▇▇▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-5">OpenAI vendor-reported benchmark scores…</a>        3   31% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 80.7
+weighted average                                   = 80.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

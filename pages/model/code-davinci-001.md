@@ -25,7 +25,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">GSM8K</a>   14.7%  ▂▂▂▂●▄▅▇██▆▄ beats 41/200  easy · avg 69%     28%  sharp · several runs
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">GSM8K</a>   14.7%  ▂▂▂▂●▄▅▇██▆▄ beats 41/200  easy · avg 70%     28%  sharp · several runs
 </pre>
 
 </details>

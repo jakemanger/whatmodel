@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-08 · 6.89B params · cc-by-sa-4.0
 
-**score 29.5** ±1.0 · #661 of 724 · from 12 benchmark results across 2 sources
+**score 29.5** ±1.0 · #662 of 725 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">BoolQ (lab)</a>                          70.3%  ▂▃▂▅▆▂●▆█▂▂▂ beats 13/26   easy · avg 88%         8.5%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">HellaSwag (lab)</a>                      74.3%  ▃···▁▇▅●▇▃▁▁ beats 17/26   very easy · avg 91%    6.2%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">ARC Easy (lab)</a>                       69.1%  ▁▁·▁▁▄▅▄●▅▁▃ beats 16/26   easy · avg 85%         5.8%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">SciQ (lab)</a>                           93.9%  ▁·▁·▁·▃▅▃●▄▁ beats 20/26   very easy · avg 97%    4.8%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">SciQ (lab)</a>                           93.9%  ▁·▁·▁·▃▅▃●▄▁ beats 20/26   very easy · avg 98%    4.8%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">PIQA (lab)</a>                           78.5%  ▁·▁··▁▁▃█▅●▂ beats 18/26   easy · avg 87%         4.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">OpenBookQA (lab)</a>                     30.4%  █·▁▁▃·▁▃●▇▃▄ beats 15/26   hard · avg 48%         3.6%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json">LAMBADA (OpenAI version), last-wo…</a>   74.2%  ▁··▂▁▁▁▂▆█●▃ beats 23/26   very easy · avg 86%    2.6%  blunt · at its level

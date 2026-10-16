@@ -6,7 +6,7 @@
 
 Together · released 2023-06 · 6.9B params · apache-2.0
 
-**score 27.7** ±0.9 · #671 of 724 · from 21 benchmark results across 4 sources
+**score 27.7** ±0.9 · #672 of 725 · from 21 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">BoolQ</a>                                70.8%  ▂▃▂▅▆▂●▆█▂▂▂ beats 14/26  easy · avg 88%         8.7%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">ARC Easy</a>                             69.2%  ▁▁·▁▁▄▅▄●▅▁▃ beats 17/26  easy · avg 85%         7.0%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">OpenBookQA</a>                           29.0%  █·▁▁▃·▁●▅▇▃▄ beats 11/26  easy · avg 81%         6.8%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">SciQ</a>                                 92.7%  ▁·▁·▁·▃▅●█▄▁ beats 13/26  very easy · avg 97%    6.5%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">SciQ</a>                                 92.7%  ▁·▁·▁·▃▅●█▄▁ beats 13/26  very easy · avg 98%    6.5%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">PIQA</a>                                 77.1%  ▁·▁··▁▁▃█●█▂ beats 15/26  easy · avg 87%         4.8%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">LAMBADA (OpenAI version), last-wo…</a>   71.3%  ▁··▂▁▁▁▂▆●▅▃ beats 19/26  very easy · avg 86%    1.9%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">Social IQA</a>                           42.6%  ▁···▁▃●▁▁▁·▁ beats 17/26  hard · avg 56%         1.6%  blunt
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">Stability AI</a>                                   11   66% ▇▇▇▇▇▇▇▇
 <a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   32% ▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
-<a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    1% ▇
+<a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 27.7
 </pre>

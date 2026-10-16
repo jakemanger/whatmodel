@@ -6,7 +6,7 @@
 
 IBM · released 2024-07 · 20.07B params · apache-2.0
 
-**score 46.2** ±3.9 · #592 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.2** ±3.9 · #592 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #290 of 336*     93%      2
+agent tasks  ▁▁▃●█▆▅▄▄▃▃▁   #292 of 337*     93%      2
 </pre>
 
-<details><summary>agent tasks · #290 of 336 · 93% of its score</summary>
+<details><summary>agent tasks · #292 of 337 · 93% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 IBM · released 2025-04 · 8.17B params · apache-2.0
 
-**score 47.0** ±1.2 · #432 of 724 · from 13 benchmark results across 4 sources
+**score 46.9** ±1.2 · #436 of 725 · from 13 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -72,7 +72,7 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 47.0
+weighted average                                   = 46.9
 </pre>
 
 <sub>Licences: ibm-granite/granite-3.3-8b-instruct model card ([Apache-2.0](../../licenses/ibm-granite--granite-3.3-8b-instruct.txt)) · allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

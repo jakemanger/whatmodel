@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 45.9** ±1.5 · #599 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.9** ±1.5 · #599 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                          result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.5594 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 19/52  avg 42.747 WB-Score     24%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  31.5594 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 19/52  avg 42.785 WB-Score     24%  sharp
 </pre>
 
 </details>

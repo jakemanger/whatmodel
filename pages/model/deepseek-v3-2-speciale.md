@@ -26,7 +26,7 @@ Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">AIME 2025 (lab)</a>                      96.0%  ▁·▁▁▁▂▅▆█▇▅● beats 131/133  medium · avg 53%     37%  sharp · maxed out · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">HMMT 2025 (edition unspecified) (…</a>   99.2%  ▃█▇▅▇▅▁·▁··● beats 32/32    medium · avg 46%     30%  sharp · maxed out · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">HMMT 2025 (edition unspecified) (…</a>   99.2%  ▃█▇▅▇▅▁·▁··● beats 32/32    medium · avg 47%     30%  sharp · maxed out · small run
 </pre>
 
 </details>

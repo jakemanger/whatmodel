@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
-**score 48.0** ±1.5 · #403 of 724 · from 17 benchmark results across 5 sources
+**score 48.0** ±1.5 · #404 of 725 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,14 +40,14 @@ test                                 result  vs the others in its run   difficul
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>         62.4%  ▄█▄●▄·██·▄·█ beats 4/12    easy · avg 69%          27%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1024.8  ▁▁▂▂●▂▄▅▅▆██ beats 16/145  avg 1058                16%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>         33.4%  ▂▂▂●▃▂·▂▂··▂ beats 7/13    hard · avg 34%          13%  at its level
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -5.548             9.3%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -5.431             9.3%  typical
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (lab)</a>                      51.2%  ▁····▁▁▄●▇▆▆ beats 11/52   medium · avg 56%       6.2%  at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (lab)</a>            59.4%  ▁··▁▄▄●█▅▆█▄ beats 15/47   medium · avg 65%       5.8%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>    43.5%  ▅▃█··●▃····▃ beats 7/9     hard · avg 42%         2.6%  blunt
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">HallusionBench (lab)</a>                  50.7%  ▃▁·●▃▃▄▅▄█▅▅ beats 4/32    medium · avg 55%       2.2%  blunt · at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">DocVQA (lab)</a>                          92.9%  ▁··▃▁▁▁●█▇▄▅ beats 7/28    very easy · avg 93%    2.0%  blunt · maxed out · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">ChartQA (lab)</a>                         84.9%  ▁··▁▁▁▁▁▂▅●█ beats 24/44   easy · avg 82%         1.9%  blunt · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">RealWorldQA (lab)</a>                     68.3%  ▂▃▂█●██▆█▂▆▆ beats 9/38    easy · avg 70%         1.6%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">RealWorldQA (lab)</a>                     68.3%  ▂▃▂█●██▆█▂▆▆ beats 9/38    easy · avg 71%         1.6%  blunt · at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OCRBench (lab)</a>                        82.5%  ▁·▃▁▆●▂█▅█▁▃ beats 13/37   easy · avg 83%         1.4%  blunt · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">AI2D test (lab)</a>                       84.5%  ▁▁▅▇▃●·▄·█·▃ beats 16/28   easy · avg 84%         0.9%  blunt · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">TextVQA (lab)</a>                         82.3%  ▁▁▁▄▅▁▃·▃●▃█ beats 16/24   easy · avg 77%         0.8%  blunt · small run

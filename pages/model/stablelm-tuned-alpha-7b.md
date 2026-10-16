@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7B params · cc-by-nc-sa-4.0
 
-**score 18.0** ±1.9 · #698 of 724 · from 4 benchmark results across 4 sources
+**score 18.0** ±1.9 · #699 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             953.1  ●▁▁▂▃▃▃▆▆▇█▃ beats 0/379  avg 1258                     38%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         843.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 0/95   avg 1186                     34%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.7500 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 1/28   avg 8.518 MT-Bench scor…     27%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.7500 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 1/28   avg 8.521 MT-Bench scor…     27%  sharp · noisy
 <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       8.7100 mean rank (1-11)  ●···▄··▄···▄ beats 1/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 

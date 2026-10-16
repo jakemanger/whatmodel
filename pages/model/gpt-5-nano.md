@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 61.8** ±0.8 · #181 of 724 · from 26 benchmark results across 13 sources
+**score 61.8** ±0.8 · #182 of 725 · from 26 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #174 of 302     19%      6
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #175 of 303     19%      6
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #173 of 395*    6.4%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁    #131 of 424     32%      7
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #93 of 147*    6.5%      2
 </pre>
 
-<details><summary>agent tasks · #174 of 302 · 19% of its score</summary>
+<details><summary>agent tasks · #175 of 303 · 19% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -30,9 +30,9 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   40.6%  █···●▄▄·▄█·█ beats 3/10   hard · avg 27%          3.9%  at its level
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>    7.9%  ▃··●·▃▃██▅▃▅ beats 1/14   very hard · avg 5.9%    3.8%  sharp
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    3.4%  ▃▅●·▅▃▃··█·▃ beats 3/11   very hard · avg 3.4%    3.6%  sharp · noisy
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    3.4%  ▃▅●·▅▃▃··█·▃ beats 3/11   very hard · avg 3.5%    3.6%  sharp · noisy
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      51.4%  ▁▁▁▂██▅▅●▂▂▂ beats 59/77  hard · avg 31%          3.0%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               35.5%  ▃·●▅▃▃··█▃▃▅ beats 2/13   hard · avg 15%          2.9%  sharp · at its level · noisy
+<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               35.5%  ▃·●▅▃▃··█▃▃▅ beats 2/13   hard · avg 16%          2.9%  sharp · at its level · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-nano/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   64.8%  ▅····▅●▃▃·▃█ beats 5/11   medium · avg 53%        2.3%  blunt · at its level
 </pre>
 
@@ -72,7 +72,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1146.2  ▁▁▂▂▂▂▄●▅▆██ beats 47/145  avg 1058            4.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1146.2  ▁▁▂▂▂▂▄●▅▆██ beats 47/145  avg 1058            4.6%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md">MATH-Vision</a>                       62.2%  ▁▁·▁··▄▁●▇▇█ beats 7/24    medium · avg 46%    2.0%  at its level
 </pre>
 
@@ -84,7 +84,7 @@ test                             result  vs the others in its run   difficulty  
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         69.4%  ▁▁▁▁▂▄▆▄●▇█▅ beats 104/208  hard · avg 38%           11%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           72.0%  ▆▄▄▄●▄▂·▄█·▄ beats 9/23     medium · avg 56%        7.5%  typical
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   51.7%  █···▁▁▁▂●·▆▂ beats 13/23    very hard · avg 28%     6.5%  sharp
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   51.7%  █···▁▁▁▂●·▆▂ beats 13/23    very hard · avg 29%     6.5%  sharp
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            78.6%  ▄▄▄▂▂●▂▄▂█▂▄ beats 10/22    medium · avg 61%        5.9%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    11.7%  ▁▁●▂▃▃▆▆█▃▂▅ beats 3/78     very hard · avg 7.4%    1.7%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                27.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 100/135  very hard · avg 5.8%    1.3%  sharp · too hard for it · noisy

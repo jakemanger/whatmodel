@@ -28,7 +28,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   50.4%  ▁·▁▂▄▁●▄█▆▂▂ beats 14/62  medium · avg 50%     11%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.0%  ▃▃▃·▆▃▃█▃▂▂● beats 24/25  easy · avg 83%      2.7%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.0%  ▃▃▃·▆▃▃█▃▂▂● beats 24/25  easy · avg 83%      2.6%  sharp
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           49.0%  ▁··▁▅▂█▇●··▁ beats 21/22  medium · avg 52%    2.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           49.4%  ▁·▂▃▁█▁●···▁ beats 20/22  medium · avg 51%    2.0%  blunt · at its level
 </pre>
@@ -44,7 +44,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             22.4%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 57/122  hard · avg 35%               20%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.8%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 24/60   medium · avg 46%             13%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1161.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 70/95   avg 1186                    5.2%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.518 MT-Bench scor…    4.1%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.521 MT-Bench scor…    4.1%  sharp · noisy
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.7%  ▁▁▃▃▄█▄▁●··▁ beats 21/25  medium · avg 72%       3.6%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   49.2%  ▂··▄·▂▆▄▂●·▂ beats 10/14  medium · avg 53%       2.5%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   47.2%  ▄······█··●▄ beats 3/4    medium · avg 50%       1.6%  at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   21.0%  ●···▁▁▁▂▃·▆▂ beats 0/23   very hard · avg 28%    1.0%  sharp · too hard for it
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   21.0%  ●···▁▁▁▂▃·▆▂ beats 0/23   very hard · avg 29%    1.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   51.2%  ▂··▁▃▂▂▂●▅▁▂ beats 13/25  medium · avg 59%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   53.5%  █·····●····▁ beats 9/11   very hard · avg 55%    0.4%  sharp · too hard for it · noisy
 </pre>

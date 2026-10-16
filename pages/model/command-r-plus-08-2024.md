@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 48.6** ±0.9 · #393 of 724 · from 17 benchmark results across 7 sources
+**score 48.6** ±0.9 · #394 of 725 · from 17 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #267 of 302*    6.3%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #267 of 303*    6.3%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #327 of 460     37%      6
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #249 of 395*    8.6%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #249 of 395*    8.7%      1
 </pre>
 
-<details><summary>agent tasks · #267 of 302 · 6.3% of its score</summary>
+<details><summary>agent tasks · #267 of 303 · 6.3% of its score</summary>
 
-Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty      counts  why
@@ -48,13 +48,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #249 of 395 · 8.6% of its score</summary>
+<details><summary>chat &amp; writing · #249 of 395 · 8.7% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.3  ▁▁▁▂▃▃●▆▆▇█▃ beats 108/379  avg 1258      8.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.3  ▁▁▁▂▃▃●▆▆▇█▃ beats 108/379  avg 1258      8.7%  blunt
 </pre>
 
 </details>
@@ -67,9 +67,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    77.0%  ▄▄●··▄▄··▄·█ beats 2/7     easy · avg 79%         6.8%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   63.0%  ▂▄▂▃█▄▃●▃▅▂▂ beats 60/81   medium · avg 56%       3.9%  blunt · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        25.8%  ●··▄▄···▄▄█▄ beats 0/7     hard · avg 34%         3.5%  at its level
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           64.6%  ▄··▂▄▂●██▄▄▂ beats 7/21    easy · avg 69%         2.4%  at its level · small run · several runs
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           64.6%  ▄··▂▄▂●██▄▄▂ beats 7/21    easy · avg 70%         2.4%  at its level · small run · several runs
 <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>                   27.8%  ▂·●·▂▂▁▃▄▁█▄ beats 2/28    very hard · avg 33%    1.9%  small run
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            85.4%  ▁▁·▁·▂▃▄●▂·▁ beats 16/22   easy · avg 81%         1.9%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            85.4%  ▁▁·▁·▂▃▄●▂·▁ beats 16/22   easy · avg 82%         1.9%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   94.6%  ▁▁▂▃▄●█▆▃▂▂▁ beats 56/140  very easy · avg 94%    0.6%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.1%  ▁▂▁▂▅█▂●▄▃▁▁ beats 72/98   very easy · avg 90%    0.0%  blunt
 </pre>

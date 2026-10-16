@@ -6,7 +6,7 @@
 
 Google · released 2026-08 · closed weights
 
-**score 75.2** ±0.6 · #34 of 724 · from 31 benchmark results across 9 sources
+**score 75.1** ±0.6 · #35 of 725 · from 31 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #43 of 302     17%      8
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #43 of 303     17%      8
 coding              ▁▁▁▃▆██▇▆▄●▁    #27 of 460     10%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #13 of 395*    3.3%      1
 math                ▁▁▃▅█▆▄█▄●▁▁    #24 of 424     47%      8
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #5 of 147*    5.3%      2
 </pre>
 
-<details><summary>agent tasks · #43 of 302 · 17% of its score</summary>
+<details><summary>agent tasks · #43 of 303 · 17% of its score</summary>
 
-Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0149 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 15/49  avg -0.312 IPS          6.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0149 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 15/49  avg -0.311 IPS          6.0%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  81.6%  ▁·▁·▁▁▄▃▄█▄● beats 50/58  hard · avg 25%          3.4%  sharp · small run · several runs
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-gemini-gemini-3-7-flash-high-mini-swe-agent.json">Terminal-Bench 4.0</a>                        11.2%  ●▅▅▅▅·▅▃▃▅▅▅ beats 0/20   very hard · avg 0.5%    3.2%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecified)…</a>        60.4%  ▃·▁▁▁▂▂▃█●▃▁ beats 41/55  very hard · avg 6.6%    1.8%  sharp · at its level · small run
@@ -47,7 +47,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1591.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 95/119  avg 969                 5.5%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1591.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 95/119  avg 970                 5.6%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   79.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 32/49   hard · avg 17%          2.1%  typical
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecified)…</a>   60.4%  ▃·▁▁▁▂▂▃█●▃▁ beats 41/55   very hard · avg 6.6%    1.8%  sharp · at its level · small run
 <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>        65.3%  ▂····▁▁▁▆●█▇ beats 11/29   hard · avg 25%          0.9%  at its level · small run
@@ -129,7 +129,7 @@ source                                    results  share of the score
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    1% ▇
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 75.2
+weighted average                                   = 75.1
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Google Cloud developer's guides to Gemini 3.8 Flash and 3.7 Flash ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

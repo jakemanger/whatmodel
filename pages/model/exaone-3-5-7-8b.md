@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 7.82B params · exaone
 
-**score 50.4** ±3.6 · #464 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.4** ±3.6 · #464 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #242 of 466*     94% 
 
 <details><summary>chat &amp; writing · #242 of 466 · 94% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

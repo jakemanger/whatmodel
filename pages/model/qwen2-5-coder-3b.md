@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 3.09B params · qwen-research
 
-**score 48.8** ±1.2 · #390 of 724 · from 9 benchmark results across 2 sources
+**score 48.8** ±1.2 · #390 of 725 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     80.5%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 80%       17%  sharp
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           73.6%  █···█●█·██·█ beats 2/6    easy · avg 77%       10%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      72.1%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 69%      8.2%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          62.4%  ▄····▄●·▄·█▄ beats 2/6    easy · avg 65%      7.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          62.4%  ▄····▄●·▄·█▄ beats 2/6    easy · avg 66%      7.3%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     53.2%  █·██·●··█·██ beats 3/6    medium · avg 55%    3.6%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     56.0%  ▄·█··●·▄··▄▄ beats 3/6    medium · avg 54%    1.3%  blunt · at its level
 </pre>

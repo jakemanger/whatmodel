@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 46.5** ±2.2 · #439 of 724 · from 6 benchmark results across 3 sources
+**score 46.5** ±2.2 · #440 of 725 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
-**score 50.6** ±1.7 · #354 of 724 · from 17 benchmark results across 4 sources
+**score 50.6** ±1.7 · #353 of 725 · from 17 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,13 +40,13 @@ test                                                         result  vs the othe
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1044.9  ▁▁▂▂●▂▄▅▅▆██ beats 21/145  avg 1058                     21%  blunt
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    52.7%  ▂·▂······●▄▄ beats 5/9     medium · avg 53%             15%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          52.2%  ▂····▂···▂●▆ beats 4/9     medium · avg 58%             15%  at its level · small run · several runs
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.5100 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 0/9     avg 5.569 MM-MT-Bench s…    9.2%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.5100 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 0/9     avg 5.573 MM-MT-Bench s…    9.2%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   75.2%  ▃···█▃··●▃▃▃ beats 5/9     easy · avg 73%              8.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                          81.9%  ▃·▃▅█▃▃●▃▃▃▃ beats 9/13    easy · avg 78%              7.9%  small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                              91.2%  ▂▂▃▂·▂▂●▃·▅█ beats 7/18    very easy · avg 91%         6.5%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       75.6%  ▄·▄▄▄··▄▄●▄█ beats 6/9     easy · avg 83%              3.5%  blunt · small run · several runs
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                                  93.5%  ▁··▃▁▁▁●█▇▄▅ beats 10/28   very easy · avg 93%         3.1%  blunt · maxed out · small run
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1077.0  ▄▄·▄·▄▄▄·▄·● beats 8/8     avg 1030                    2.9%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1077.0  ▄▄·▄·▄▄▄·▄·● beats 8/8     avg 1031                    2.9%  blunt
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                             75.2%  ▂▃▂█▃█●▆█▂▆▆ beats 20/38   easy · avg 73%              2.7%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                               96.3%  ▁▁▅▇▃▇·▄·█·● beats 28/28   easy · avg 87%              1.4%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                                 83.1%  ▁▁▁▄▅▁▃·▃▃●█ beats 17/24   easy · avg 79%              1.3%  blunt · small run

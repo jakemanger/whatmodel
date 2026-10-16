@@ -6,7 +6,7 @@
 
 01.AI · released 2024-10 · closed weights
 
-**score 56.3** ±1.2 · #252 of 724 · from 4 benchmark results across 4 sources
+**score 56.3** ±1.2 · #252 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

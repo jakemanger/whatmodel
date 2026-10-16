@@ -6,7 +6,7 @@
 
 Google · released 2022-04 · 62.5B params · proprietary
 
-**score 39.5** ±0.5 · comparison only: no current run option verified · from 74 benchmark results across 10 sources · † every result so far was reported by its maker
+**score 39.4** ±0.5 · comparison only: no current run option verified · from 74 benchmark results across 10 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>          29.9%  █·▅▃▃▃·▃·●▃▅ beats 9/12   easy · avg 67%       16%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>           18.2%  ▆·▂·▄▂▂●▂█▄▆ beats 8/18   medium · avg 47%    2.1%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>           18.2%  ▆·▂·▄▂▂●▂█▄▆ beats 8/18   medium · avg 48%    2.1%  sharp
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    4.4%  ▄··●··▄·▄··█ beats 1/5    hard · avg 32%      0.6%  typical
 </pre>
 
@@ -50,14 +50,14 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        80.3%  ▅▃█···▅·▃●▃▅ beats 9/12     very easy · avg 94%      11%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          46.7%  ▃▅█···▅·▃●▃▅ beats 9/12     easy · avg 82%          9.3%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          61.9%  ▅▃▃▅··▃▃·▃●█ beats 9/12     easy · avg 83%          7.2%  sharp · at its level
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  65.4%  █······▁·▁●▃ beats 9/12     easy · avg 87%          5.9%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  65.4%  █······▁·▁●▃ beats 9/12     easy · avg 87%          6.0%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       22.4%  █▁·▁●·····▂▁ beats 9/12     medium · avg 48%        4.5%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           55.1%  ▁···▁··▃▁●▅█ beats 7/18     easy · avg 74%          4.3%  at its level · several runs
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (lab)</a>                     76.6%  ▄····▄··▄·█● beats 5/6      easy · avg 85%          3.3%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   72.1%  █·····▃·▁·●▁ beats 11/12    medium · avg 81%        2.8%  sharp · at its level
 <a href="https://arxiv.org/html/2204.02311v5">TriviaQA (lab)</a>                       67.3%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 64/80    easy · avg 79%          2.2%  at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 37.4%  ▂▂▂▂·●·▃▂█▃▃ beats 5/18     medium · avg 60%        2.1%  sharp
-<a href="https://arxiv.org/html/2204.02311v5">BoolQ (lab)</a>                          84.8%  ▁····▁▂█▆▅●▄ beats 90/103   easy · avg 90%          2.0%  at its level · several runs
+<a href="https://arxiv.org/html/2204.02311v5">BoolQ (lab)</a>                          84.8%  ▁····▁▂█▆▅●▄ beats 90/103   easy · avg 90%          2.1%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   29.8%  ▃·▅·▅▃▅·▃●·█ beats 9/12     medium · avg 52%        2.0%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   18.1%  ▂▁▁▁▂▄▄▃●█▅▁ beats 40/68    hard · avg 32%          2.0%  several runs
 <a href="https://arxiv.org/html/2204.02311v5">ARC Challenge (lab)</a>                  52.5%  ▄▁▁▂▁▄█●▃▂▃▂ beats 91/140   medium · avg 66%        1.6%  sharp · at its level · small run · seve…
@@ -114,7 +114,7 @@ source                                    results  share of the score
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    1% ▇
 <a name="acl-2023-acl-long-9"></a><a href="https://aclanthology.org/2023.acl-long.9.pdf">Natural Language to Code Generation in …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 39.5
+weighted average                                   = 39.4
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · PaLM: Scaling Language Modeling with Pathways ([CC BY 4.0](../../licenses/paper-2204.02311v5-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt)) · Universal Self-Adaptive Prompting ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-461-CC-BY-4-0.txt)) · Better Zero-Shot Reasoning with Self-Adaptive Prompting ([CC BY 4.0](../../licenses/acl-2023-findings-acl-216-CC-BY-4-0.txt)) · Large Language Models Encode Clinical Knowledge ([CC BY 4.0](../../licenses/paper-2212.13138v1-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · Natural Language to Code Generation in Interactive Data Science Notebooks ([CC BY 4.0](../../licenses/acl-2023-acl-long-9-CC-BY-4-0.txt))</sub>

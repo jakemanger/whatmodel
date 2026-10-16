@@ -6,7 +6,7 @@
 
 Katanemo · released 2025-06 · 1.54B params · other (katanemo-research)
 
-**score 51.0** ±4.6 · #443 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.0** ±4.6 · #444 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #253 of 336*     90%      1
+agent tasks  ▁▁▃▆●▆▅▄▄▃▃▁   #255 of 337*     90%      1
 </pre>
 
-<details><summary>agent tasks · #253 of 336 · 90% of its score</summary>
+<details><summary>agent tasks · #255 of 337 · 90% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why

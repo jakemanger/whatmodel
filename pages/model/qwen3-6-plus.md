@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 69.3** ±0.8 · #85 of 724 · from 14 benchmark results across 7 sources
+**score 69.2** ±0.8 · #86 of 725 · from 14 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #116 of 302*     18%      2
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #115 of 303*     18%      2
 coding              ▁▁▁▃▆██▇▆●▃▁    #64 of 460*     25%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #58 of 395*    6.6%      1
 math                ▁▁▃▅█▆▄█●▁▁▁     #64 of 424     33%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #28 of 147*     10%      2
 </pre>
 
-<details><summary>agent tasks · #116 of 302 · 18% of its score</summary>
+<details><summary>agent tasks · #115 of 303 · 18% of its score</summary>
 
 Beats [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 <pre>
 test                       result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          57.9%  ▁··▁·●▂▁▄█▄▁ beats 3/29    hard · avg 18%     14%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1460.7  ▁▂▄▃▅█●▇▆▄▁▁ beats 61/119  avg 969            11%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1460.7  ▁▂▄▃▅█●▇▆▄▁▁ beats 61/119  avg 970            11%  sharp
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #64 of 424 · 33% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
@@ -110,7 +110,7 @@ source                                    results  share of the score
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 <a name="paper-2605.08498v1"></a><a href="https://arxiv.org/html/2605.08498v1">MathConstraint: Automated Generation of…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 69.3
+weighted average                                   = 69.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt))</sub>

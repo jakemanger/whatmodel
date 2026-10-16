@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 236B params (21B active) · deepseek
 
-**score 54.2** ±0.7 · #295 of 724 · from 12 benchmark results across 8 sources
+**score 54.2** ±0.7 · #296 of 725 · from 12 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
-**score 63.2** ±0.8 · #165 of 724 · from 31 benchmark results across 6 sources
+**score 63.2** ±0.8 · #166 of 725 · from 31 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #193 of 302     15%      6
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #195 of 303     15%      6
 coding          ▁▁▁▃▆██●▆▄▃▁   #168 of 460     16%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #111 of 395     10%      3
 math            ▁▁▃▅█▆▄●▄▁▁▁    #75 of 424    8.0%      3
 </pre>
 
-<details><summary>agent tasks · #193 of 302 · 15% of its score</summary>
+<details><summary>agent tasks · #195 of 303 · 15% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Aider polyglot (225 exercises, tw…</a>   49.8%  ▂▁▁▃▆▃▄●█▃▄▂ beats 41/71  very hard · avg 7.8%     11%  sharp · at its level
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Aider polyglot (225 exercises, tw…</a>   49.8%  ▂▁▁▃▆▃▄●█▃▄▂ beats 41/71  very hard · avg 7.9%     11%  sharp · at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   56.6%  ▁▁▃▁█●▄▇▅▅▃█ beats 11/38  hard · avg 26%          2.4%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MultiPL-E (lab)</a>                      87.8%  ▃··▄·▅▅▇▄█▃● beats 30/31  easy · avg 68%          2.0%  typical
 </pre>

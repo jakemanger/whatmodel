@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 69.5** ±0.8 · #83 of 724 · from 15 benchmark results across 6 sources
+**score 69.4** ±0.8 · #85 of 725 · from 15 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #110 of 302     10%      4
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #110 of 303     10%      4
 coding              ▁▁▁▃▆██▇●▄▃▁   #112 of 460*     12%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #61 of 395*    7.0%      1
 math                ▁▁▃▅█▆▄█●▁▁▁     #58 of 424     46%      3
@@ -24,15 +24,15 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #52 of 147*    5
 web search          ▂▁▂●▄█▃▃▁▁·▁     #63 of 80*    4.8%      2
 </pre>
 
-<details><summary>agent tasks · #110 of 302 · 10% of its score</summary>
+<details><summary>agent tasks · #110 of 303 · 10% of its score</summary>
 
 Beats [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    4.3%  ●···█▄▄▄█▄·█ beats 0/10   very hard · avg 1.8%    4.2%  typical
-<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   14.4%  ▅··●·▃·█▃▅██ beats 2/15   very hard · avg 5.0%    2.6%  sharp · at its level
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 6.1%    1.9%  typical
+<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   14.4%  ▅··●·▃·█▃▅██ beats 2/15   very hard · avg 5.0%    2.7%  sharp · at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 6.2%    1.9%  typical
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>   21.3%  ▁▁·▁▁▁▁▅▃█●█ beats 19/27  very hard · avg 2.3%    1.4%  typical
 </pre>
 
@@ -44,7 +44,7 @@ Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [So
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1356.6  ▁▂▄▃●█▄▇▆▄▁▁ beats 30/119  avg 969        12%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1356.6  ▁▂▄▃●█▄▇▆▄▁▁ beats 30/119  avg 970        12%  sharp
 </pre>
 
 </details>
@@ -91,7 +91,7 @@ Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1193.2  ▁·▁▁▂▂▂●▅▂▁▁ beats 15/30  avg 1050                2.8%  blunt
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 6.1%    1.9%  typical
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 6.2%    1.9%  typical
 </pre>
 
 </details>
@@ -121,7 +121,7 @@ source                                    results  share of the score
 <a name="paper-2608.19741v4-thinkingbox"></a><a href="https://arxiv.org/html/2608.19741v4">One Success Isn't Reliability: Thinking…</a>        1    3% ▇
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 69.5
+weighted average                                   = 69.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

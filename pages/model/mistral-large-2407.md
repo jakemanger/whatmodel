@@ -6,7 +6,7 @@
 
 Mistral · released 2024-07 · 122.61B params · mistral-research
 
-**score 55.2** ±0.5 · #274 of 724 · from 34 benchmark results across 16 sources
+**score 55.2** ±0.5 · #275 of 725 · from 34 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #223 of 302*    1.1%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #224 of 303*    1.1%      2
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #218 of 460     16%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #205 of 395    9.4%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁    #274 of 424     20%      6
 </pre>
 
-<details><summary>agent tasks · #223 of 302 · 1.1% of its score</summary>
+<details><summary>agent tasks · #224 of 303 · 1.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -87,7 +87,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             29.0%  ▁▁▃▆█●▁▁·▁▁▁ beats 47/57    hard · avg 15%         5.3%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   49.0%  ▁▁▁▁▂▄●▄▅▇█▅ beats 66/208   hard · avg 38%         4.1%  sharp · at its level
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institute, I…</a>             47.3%  ▃··▃▃●▃·▃·▃█ beats 3/9      hard · avg 40%         3.2%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  55.5683 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 49/52    avg 42.747 WB-Score    2.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  55.5683 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 49/52    avg 42.785 WB-Score    2.9%  sharp
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified)</a>                      40.7%  ▂▁▂▂▄▃●▃▅█▄▃ beats 41/104   very hard · avg 35%    2.7%  sharp · small run
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>             69.4%  ▃····▃●·▃▅·█ beats 3/9      medium · avg 58%       2.4%  at its level
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard</a>                                 70.8%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 117/155  medium · avg 61%       2.2%  sharp · at its level · small run
@@ -97,7 +97,7 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                78.1%  ▁··▁▁▂▂▆▅▆█● beats 70/70    medium · avg 61%       1.4%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Mistral-Large-Instruct-2407_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             82.4%  ▂·▂▂▂▆▅▆▆●▃█ beats 19/29    easy · avg 74%         1.3%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             64.8%  ▂▄▂▃█▄▃▆●▅▂▂ beats 63/81    medium · avg 56%       1.2%  blunt · at its level
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                                      78.8%  ▁▁·▁·▂●▄█▂·▁ beats 6/22     easy · avg 81%         0.4%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                                      78.8%  ▁▁·▁·▂●▄█▂·▁ beats 6/22     easy · avg 82%         0.4%  typical
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge</a>                                  65.0%  ▄▁▁▂▁▄█▇●▂▃▂ beats 112/140  easy · avg 76%         0.3%  sharp · noisy · small run
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                                     23.7%  ●··▂▄▂▆██▄▄▂ beats 1/21     easy · avg 67%         0.2%  at its level · noisy
 </pre>

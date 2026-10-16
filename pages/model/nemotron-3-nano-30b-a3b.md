@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 57.3** ±0.9 · #238 of 724 · from 22 benchmark results across 9 sources
+**score 57.3** ±0.9 · #239 of 725 · from 22 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁     #177 of 302*     16%      5
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁     #178 of 303*     16%      5
 coding          ▁▁▁▃▆█●▇▆▄▃▁      #250 of 460    9.1%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃     #208 of 395*    8.0%      2
 math            ▁▁▃▅█▆●█▄▁▁▁      #146 of 424     23%      4
 web search                     not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · #177 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #178 of 303 · 16% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -32,8 +32,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations">τ²-bench Telecom (lab)</a>               42.2%  ▁·▅█●▅▂▃▃▂▃▁ beats 35/89   hard · avg 19%           12%  sharp · at its level
 <a href="https://arxiv.org/html/2512.20848v1#S3.T3">Terminal-Bench Hard (lab)</a>             8.5%  ▂▅▆▂▂●▂▂█▅▅▂ beats 11/27   very hard · avg 5.0%    4.3%  sharp · small run
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">BFCL V4 (December 2025 archive) (…</a>   53.8%  ▁▁▁▂▇▆▆▆●▂▄▂ beats 81/111  hard · avg 31%             —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with tools (…</a>   15.5%  ●▂▂▁▄▂▃▆█▇▂▆ beats 0/54    hard · avg 16%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">τ²-bench aggregate (lab)</a>             49.0%  ▁▁▁·▂●▄▃▃▅█▂ beats 6/37    medium · avg 41%           —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with tools (…</a>   15.5%  ●▂▂▁▄▂▃▆█▇▂▆ beats 0/55    hard · avg 16%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">τ²-bench aggregate (lab)</a>             49.0%  ▁▁▁·▂●▄▃▃▅█▂ beats 6/37    medium · avg 42%           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 <pre>
 test                      result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>            89.1%  ▁·▁▁▁▂▅▆█●▅▁ beats 111/133  medium · avg 64%    8.0%  sharp
-<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>            89.9%  ▁▁▁▂▁▂●█▆▂·▁ beats 22/49    medium · avg 65%    6.5%  sharp
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>            89.9%  ▁▁▁▂▁▂●█▆▂·▁ beats 22/49    easy · avg 65%      6.5%  sharp
 <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>      70.4%  ▁▁·▁▁▁●▅█▄▂▃ beats 10/42    medium · avg 43%    5.5%  at its level
 <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>   84.6%  ▁▁▁▃▁▅▅●██▁▄ beats 15/31    easy · avg 71%      3.2%  small run
 </pre>
@@ -83,7 +83,7 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with tools (…</a>   15.5%  ●▂▂▁▄▂▃▆█▇▂▆ beats 0/54   hard · avg 16%       —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with tools (…</a>   15.5%  ●▂▂▁▄▂▃▆█▇▂▆ beats 0/55   hard · avg 16%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -98,7 +98,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.0%  ▂·▂▂·▂·▃▃·●▃ beats 9/14     easy · avg 79%          4.2%  typical
 <a href="https://arxiv.org/html/2512.20848v1">MMLU-ProX (lab)</a>                      59.5%  ▁·▁▁●▂▁▃▂█▅▄ beats 3/35     medium · avg 53%        3.8%  at its level · small run · several runs
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      45.8%  ▁··▁▁▂▂●▅▆█▆ beats 17/70    medium · avg 61%        3.5%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   69.2%  ▂··▂▂·●▆▆█·▄ beats 3/15     medium · avg 62%        2.9%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   69.2%  ▂··▂▂·●▆▆█·▄ beats 3/15     medium · avg 63%        2.9%  at its level
 <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>                 38.5%  ▁·▁·▁●▆▅▃▁█▅ beats 3/29     hard · avg 27%          2.0%  at its level · small run
 <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                       12.0%  ●··········▄ beats 0/2      very hard · avg 7.1%    1.1%  blunt · small run
 <a href="https://arxiv.org/html/2512.20848v1">miniF2F (pass@1) (lab)</a>               50.0%  ▃·█▅·····●·▃ beats 7/8      very hard · avg 14%     0.2%  blunt · noisy · small run

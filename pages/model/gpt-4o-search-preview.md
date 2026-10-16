@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 54.4** ±4.6 · #358 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.3** ±4.6 · #359 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            10% ▇
-weighted average                        = 54.4
+weighted average                        = 54.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

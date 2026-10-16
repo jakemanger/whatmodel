@@ -6,7 +6,7 @@
 
 xDAN-AI · released 2023-12 · 7.24B params · cc-by-4.0
 
-**score 37.5** ±0.8 · #595 of 724 · from 3 benchmark results across 1 source
+**score 37.5** ±0.8 · #596 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

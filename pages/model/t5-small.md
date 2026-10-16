@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.061B params · apache-2.0
 
-**score 11.8** ±2.9 · #708 of 724 · from 8 benchmark results across 2 sources
+**score 11.9** ±2.9 · #709 of 725 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md)
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.0%  ▅·▂●·······▂ beats 6/9    medium · avg 62%     12%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>    2.0%  ▅·▂●·······▂ beats 6/9    medium · avg 63%     12%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        5   51% ▇▇▇▇▇▇
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3   45% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 11.8
+weighted average                                   = 11.9
 </pre>
 
 <sub>Licences: Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-10 · 7.24B params · apache-2.0
 
-**score 41.7** ±0.9 · #530 of 724 · from 14 benchmark results across 8 sources
+**score 41.7** ±0.9 · #531 of 725 · from 14 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃●██▇▆▄▃▁   #359 of 460*    6.6%      1
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #332 of 395     37%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #332 of 395     36%      3
 math            ●··········█       #2 of 2*    5.8%      1
 </pre>
 
@@ -32,7 +32,7 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #332 of 395 · 37% of its score</summary>
+<details><summary>chat &amp; writing · #332 of 395 · 36% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 46.7** ±1.2 · #437 of 724 · from 10 benchmark results across 5 sources
+**score 46.7** ±1.2 · #438 of 725 · from 10 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   50.8%  ▃··▁▂▂▃▂●▃▄▂ beats 26/47  medium · avg 50%    4.2%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   50.8%  ▃··▁▂▂▃▂●▃▄▂ beats 26/47  medium · avg 51%    4.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   43.0%  █▂▁▁▂▂▂▃▅●▅▇ beats 32/47  hard · avg 32%      3.9%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.2%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 20/47  hard · avg 31%      3.2%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.7%  ▁▁▁······▁▃● beats 37/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.7%  ▁▁▁······▁▃● beats 37/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 30.3%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 28/61    medium · avg 38%     53%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         27.6%  ▁▁●▁▂▄▆▄▅▇█▅ beats 12/208   hard · avg 38%       10%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 188/276  medium · avg 72%    3.4%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            78.6%  ▁▁·▁·▂●▄█▂·▁ beats 5/22     easy · avg 81%      3.4%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            78.6%  ▁▁·▁·▂●▄█▂·▁ beats 5/22     easy · avg 82%      3.4%  typical
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           46.1%  ▄··▂●▂▆██▄▄▂ beats 3/21     easy · avg 67%      1.1%  at its level · noisy
 </pre>
 

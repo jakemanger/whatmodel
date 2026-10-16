@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 3.82B params · mit
 
-**score 40.1** ±1.5 · #559 of 724 · from 5 benchmark results across 5 sources
+**score 40.0** ±1.5 · #561 of 725 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -54,7 +54,7 @@ source                                    results  share of the score
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1   14% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 40.1
+weighted average                                   = 40.0
 </pre>
 
 <sub>Licences: MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

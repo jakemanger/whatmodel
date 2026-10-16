@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█●▅▄▄▃▃▁    #175 of 342    6.0%      4
+agent tasks     ▁▁▂▆█●▅▄▄▃▃▁    #176 of 343    6.0%      4
 coding          ▁▁▁▃▅▇█●▅▄▂▁    #170 of 529     41%     12
 chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #196 of 466*    6.0%      2
 math            ▁▂▃▆█▇●▇▃▁▁▁    #181 of 523     14%      9
 </pre>
 
-<details><summary>agent tasks · #175 of 342 · 6.0% of its score</summary>
+<details><summary>agent tasks · #176 of 343 · 6.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   28.6%  █··▄·●█·▄··▄ beats 3/7    hard · avg 17%          1.8%  at its level
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   28.6%  █··▄·●█·▄··▄ beats 3/7    hard · avg 17%          1.7%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   56.7%  █···█▄▄·▄●·█ beats 8/10   hard · avg 27%          1.7%  at its level
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   14.9%  ▃▅▃·▅▃●··█·▃ beats 7/11   very hard · avg 3.4%    1.5%  sharp · noisy
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   14.9%  ▃▅▃·▅▃●··█·▃ beats 7/11   very hard · avg 3.5%    1.5%  sharp · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   67.8%  ▅····▅▅▃●·▃█ beats 7/11   medium · avg 53%        1.0%  blunt · at its level
 </pre>
 
@@ -83,7 +83,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025</a>                   38.0%  ▁▁▁●▁▅▅▃██▁▄ beats 3/31    hard · avg 31%          1.0%  at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          96.1%  ▁▄·▁▄█▅▅▅██● beats 41/43   very easy · avg 87%     0.9%  sharp · maxed out
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            89.9%  ▁····▁▅▁●▁▃▁ beats 10/16   easy · avg 80%          0.8%  typical
-<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">AIME 2024</a>                            64.0%  ▁▁▁▂▁▃▁▅●██▃ beats 30/85   medium · avg 39%        0.3%  sharp · at its level · noisy
+<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">AIME 2024</a>                            64.0%  ▁▁▁▂▁▃▁▅●██▃ beats 30/85   medium · avg 40%        0.3%  sharp · at its level · noisy
 <a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">MATH-500</a>                             85.6%  ▁▃▂▃▅●▅▇█▅▂▁ beats 28/84   easy · avg 84%          0.2%  maxed out · noisy
 </pre>
 

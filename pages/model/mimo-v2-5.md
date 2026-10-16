@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 68.3** ±0.9 · #96 of 724 · from 23 benchmark results across 6 sources
+**score 68.2** ±0.9 · #99 of 725 · from 23 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #65 of 302     25%      8
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #67 of 303     25%      8
 coding              ▁▁▁▃▆██▇▆●▃▁     #69 of 460     22%      4
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #73 of 395*    7.9%      1
 math                ▁▁▃▅█▆●█▄▁▁▁   #171 of 424*    6.8%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #63 of 147     15%      4
 </pre>
 
-<details><summary>agent tasks · #65 of 302 · 25% of its score</summary>
+<details><summary>agent tasks · #67 of 303 · 25% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall.
 
@@ -47,7 +47,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1437.6  ▁▂▄▃▅●▄▇▆▄▁▁ beats 56/119  avg 969                 13%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1437.6  ▁▂▄▃▅●▄▇▆▄▁▁ beats 56/119  avg 970                 13%  sharp
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   56.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 32/55   very hard · avg 10%    4.4%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   89.1%  ▄······▄▄●·█ beats 3/5     medium · avg 49%       2.6%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   73.0%  ▄··········● beats 4/5     very hard · avg 15%    2.0%  sharp · at its level · noisy
@@ -121,7 +121,7 @@ source                                    results  share of the score
 <a name="paper-2609.05141v2-scidocbench"></a><a href="https://arxiv.org/html/2609.05141v2">SciDocBench: A Workflow-Centered Benchm…</a>        1    3% ▇
 <a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-5">Xiaomi MiMo vendor-reported benchmark s…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 68.3
+weighted average                                   = 68.2
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XiaomiMiMo/MiMo-V2.5 model card ([MIT](../../licenses/XiaomiMiMo--MiMo-V2.5.txt)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

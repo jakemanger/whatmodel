@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.352B params · apache-2.0
 
-**score 28.1** ±1.0 · #667 of 724 · from 24 benchmark results across 3 sources
+**score 28.1** ±1.0 · #668 of 725 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #289 of 302*    3.5%      2
-coding          ●··········█        #3 of 4     38%      7
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #290 of 303*    3.5%      2
+coding          ●··········█        #3 of 4     39%      7
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #358 of 395*    7.3%      2
 math            ▁●▃▅█▆▄█▄▁▁▁    #407 of 424     26%      6
 </pre>
 
-<details><summary>agent tasks · #289 of 302 · 3.5% of its score</summary>
+<details><summary>agent tasks · #290 of 303 · 3.5% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall.
 
@@ -34,7 +34,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #3 of 4 · 38% of its score</summary>
+<details><summary>coding · #3 of 4 · 39% of its score</summary>
 
 Beats [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank higher overall.
 

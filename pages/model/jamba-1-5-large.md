@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 51.9** ±1.1 · #330 of 724 · from 12 benchmark results across 3 sources
+**score 51.9** ±1.1 · #331 of 725 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #112 of 302*    2.3%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁   #113 of 303*    2.3%      1
 coding          █··········●       #1 of 2*    7.5%      1
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #233 of 395     20%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁   #272 of 424*     12%      1
 </pre>
 
-<details><summary>agent tasks · #112 of 302 · 2.3% of its score</summary>
+<details><summary>agent tasks · #113 of 303 · 2.3% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -37,14 +37,14 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 68%    7.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 69%    7.5%  sharp · at its level · small run
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #233 of 395 · 20% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why

@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.9** ±1.4 · #284 of 724 · from 6 benchmark results across 2 sources
+**score 54.8** ±1.4 · #285 of 725 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   77% ▇▇▇▇▇▇▇▇▇
 <a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.9
+weighted average                                   = 54.8
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt))</sub>

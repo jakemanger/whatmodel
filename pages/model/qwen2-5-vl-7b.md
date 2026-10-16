@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
-**score 50.3** ±1.0 · #363 of 724 · from 14 benchmark results across 2 sources
+**score 50.3** ±1.0 · #363 of 725 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▆▄█▄▁▁▁   #243 of 424*     12%      1
+math                ▁▁▃▅●▆▄█▄▁▁▁   #243 of 424*     11%      1
 vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄    #119 of 147    100%     14
 </pre>
 
-<details><summary>math · #243 of 424 · 12% of its score</summary>
+<details><summary>math · #243 of 424 · 11% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>   68.2%  ▃··▃▅·●█▅▅▅█ beats 4/16   medium · avg 68%     12%  at its level
+<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>   68.2%  ▃··▃▅·●█▅▅▅█ beats 4/16   medium · avg 68%     11%  at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2502.13923v1">CharXiv (reasoning questions) (la…</a>   42.5%  ▄▂●▆▄▄▆··▄█▂ beats 4/21   medium · avg 38%        17%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">CharXiv descriptive questions (la…</a>   73.9%  ▄··▂●▂·▂▄▄▂█ beats 3/14   easy · avg 73%          16%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                     58.6%  ▂···▆●▂▂▄▄▄█ beats 4/16   medium · avg 60%        15%  at its level
-<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>           68.2%  ▃··▃▅·●█▅▅▅█ beats 4/16   medium · avg 68%        12%  at its level
+<a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>           68.2%  ▃··▃▅·●█▅▅▅█ beats 4/16   medium · avg 68%        11%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                         63.9%  ▂··▄▂●·▄█▂▄▆ beats 4/16   medium · avg 64%        10%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                       38.3%  ▃·●·▅▃▃▃▅▅▃█ beats 3/16   medium · avg 45%       7.9%  at its level
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   23.3%  ▁·▁·●▃▁▇▃█·▄ beats 3/22   hard · avg 26%         4.4%  blunt · at its level

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 75.6** ±0.7 · #30 of 724 · from 19 benchmark results across 6 sources
+**score 75.6** ±0.7 · #31 of 725 · from 19 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅●▃▁    #36 of 302     16%      3
+agent tasks     ▁▁▃▆█▆▅▅▅●▃▁    #36 of 303     16%      3
 coding          ▁▁▁▃▆██▇▆▄●▁    #32 of 460     13%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #59 of 395*    4.7%      1
 math            ▁▁▃▅█▆▄█▄●▁▁    #16 of 424     38%      3
 </pre>
 
-<details><summary>agent tasks · #36 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #36 of 303 · 16% of its score</summary>
 
-Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0135 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 26/49  avg -0.312 IPS          8.7%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0135 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 26/49  avg -0.311 IPS          8.7%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-luna-max-codex.json">Terminal-Bench 4.0</a>                       16.4%  █●▅▅▅·▅▃▃▅▅▅ beats 4/20   very hard · avg 0.5%    4.8%  sharp
 <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>            66.6%  ●··▃▃····▃·▃ beats 0/6    hard · avg 22%          2.4%  at its level
 </pre>
@@ -41,7 +41,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1578.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 89/119  avg 969           8.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1578.7  ▁▂▄▃▅█▄▇●▄▁▁ beats 89/119  avg 970           8.0%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   80.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 34/49   hard · avg 17%    2.9%  typical
 <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        66.6%  ●··▃▃····▃·▃ beats 0/6     hard · avg 22%    2.4%  at its level
 </pre>
@@ -66,7 +66,7 @@ Beats [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md), [Claude Opus 4.8](claude-
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      56.1%  ▁▂▁▂█▅●▂▁▁▁▁ beats 48/63    very hard · avg 0.1%     19%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   78.9%  ▂··▁▁▃▄▄█●▃▃ beats 67/82    very hard · avg 1.1%     19%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   78.9%  ▂··▁▁▃▄▄█●▃▃ beats 67/82    very hard · avg 1.1%     18%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    98.9%  ▃▃▄▃▃▃▇▇█▃▂● beats 178/193  very hard · avg 6.9%    0.5%  sharp · maxed out · noisy
 </pre>
 
@@ -97,7 +97,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        8   62% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   21% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   22% ▇▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">OpenAI vendor-reported benchmark scores…</a>        4    6% ▇
 <a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-luna-max-codex.json">Terminal-Bench 4.0 official leaderboard…</a>        1    5% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    4% ▇

@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-08 · 753B params (40B active) · glm-5.3-license
 
-**score 75.0** ±0.7 · #35 of 724 · from 13 benchmark results across 4 sources
+**score 74.9** ±0.7 · #36 of 725 · from 13 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #15 of 302*     16%      2
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #15 of 303*     16%      2
 coding          ▁▁▁▃▆██▇▆▄●▁   #21 of 460*     13%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆▇●   #22 of 395*    5.6%      1
 math            ▁▁▃▅█▆▄█●▁▁▁    #28 of 424     46%      3
 </pre>
 
-<details><summary>agent tasks · #15 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #15 of 303 · 16% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md), [GPT-5.4 Pro](gpt-5-4-pro.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0236 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 27/49  avg -0.312 IPS           10%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0236 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 27/49  avg -0.311 IPS           10%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-anthropic-glm-5-3-max-claude-code.json">Terminal-Bench 4.0</a>                       41.8%  █▅▅▅▅·▅●▃▅▅▅ beats 13/20  very hard · avg 0.5%    5.4%  sharp
 </pre>
 
@@ -40,7 +40,7 @@ Beats [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1623.0  ▁▂▄▃▅█▄▇●▄▁▁ beats 102/119  avg 969           9.5%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1623.0  ▁▂▄▃▅█▄▇●▄▁▁ beats 102/119  avg 970           9.5%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   69.7%  ▁▁▁▁·▁▂▃▅●█▇ beats 23/49    hard · avg 17%    3.6%  typical
 </pre>
 
@@ -94,7 +94,7 @@ source                                    results  share of the score
 <a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-anthropic-glm-5-3-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1    5% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    5% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 75.0
+weighted average                                   = 74.9
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt))</sub>

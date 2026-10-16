@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 45.8** ±0.7 · #450 of 724 · from 26 benchmark results across 4 sources
+**score 45.8** ±0.7 · #450 of 725 · from 26 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                            80.9%  ▃▅█·▃▃●···▃▃ beats 8/10    easy · avg 82%         1.9%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           65.4%  ▃····▃▃●▃·▅▅ beats 5/10    medium · avg 71%       1.7%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           73.4%  ▃·▃●▅█·▃···▃ beats 3/10    medium · avg 76%       1.5%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          29.1%  ▁▁▁▃▃▃▁●▁▃·▄ beats 13/21   hard · avg 30%         1.3%  typical
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          29.1%  ▁▁▁▃▃▃▁●▁▃·▄ beats 13/21   hard · avg 31%         1.3%  typical
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                79.3%  ▃··▃··●█▃·▃▃ beats 3/10    easy · avg 83%         1.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            29.9%  █··▄▂··●▂··▄ beats 7/10    very hard · avg 32%    1.1%  sharp · too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 92/146  easy · avg 82%         0.7%  at its level · noisy

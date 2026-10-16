@@ -6,7 +6,7 @@
 
 Mistral · released 2025-03 · 24.01B params · apache-2.0
 
-**score 55.0** ±0.9 · #280 of 724 · from 28 benchmark results across 13 sources
+**score 55.0** ±0.9 · #279 of 725 · from 28 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #219 of 302    5.5%      3
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #221 of 303    5.6%      3
 coding                             not ranked yet       —      2
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃     #221 of 395*     11%      2
 math                ▁▁▃▅●▆▄█▄▁▁▁      #268 of 424     26%      4
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄      #105 of 147   
 web search          ▂▁▂▆▄█▃●▁▁·▁       #11 of 80*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #219 of 302 · 5.5% of its score</summary>
+<details><summary>agent tasks · #221 of 303 · 5.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -109,7 +109,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.7%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 68/97    hard · avg 31%          4.5%  blunt · at its level
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU (lab)</a>                           80.6%  ▁▁▁▁▁▂▂▅██●▄ beats 170/214  medium · avg 71%        3.6%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU-Pro (lab)</a>                       66.8%  ▁▁·▁▁▁▃▂●▅█▁ beats 78/188   medium · avg 56%        2.8%  at its level · small run
-<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                       10.4%  ▄▄▄▆●▆███·▂█ beats 12/32    very hard · avg 7.2%    2.6%  small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                       10.4%  ▄▄▄▆●▆███·▂█ beats 12/32    very hard · avg 7.3%    2.6%  small run
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   61.2%  ▁··▃▁▁▁▅●▅▁▅ beats 10/24    hard · avg 51%          1.6%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   93.1%  ▃·▁▁▂▁▂▅█▇▄● beats 99/100   medium · avg 66%        1.3%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   94.4%  ▁▁▁▁▁▁▁▂▄█▄● beats 139/146  easy · avg 82%          0.7%  noisy

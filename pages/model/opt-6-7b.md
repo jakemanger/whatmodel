@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 23.8** ±0.7 · #685 of 724 · from 40 benchmark results across 11 sources
+**score 23.8** ±0.7 · #686 of 725 · from 40 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">WinoGrande</a>                           65.4%  ▁····▁··▁▂●▄ beats 12/26   easy · avg 88%          12%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">ARC Easy</a>                             60.1%  ▁▁·▁▁●▅▄█▅▁▃ beats 6/26    easy · avg 87%          11%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 13/26   easy · avg 87%         7.3%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 6/26    very easy · avg 97%    5.6%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 6/26    very easy · avg 98%    5.6%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">LAMBADA (OpenAI version), last-wo…</a>   67.6%  ▁··▂▁▁▁▂●█▅▃ beats 10/26   very easy · avg 87%    4.2%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">BoolQ</a>                                66.0%  ▂▃▂▅●▂▅▆█▂▂▂ beats 10/26   easy · avg 88%         3.4%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   48.5%  ▂·▄·▂█▄●█▄▂▆ beats 11/21   easy · avg 74%         3.2%  blunt · at its level

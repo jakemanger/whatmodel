@@ -6,7 +6,7 @@
 
 Baidu · released 2025-06 · 300B params (47B active) · apache-2.0
 
-**score 60.4** ±1.3 · #193 of 724 · from 18 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.4** ±1.3 · #194 of 725 · from 18 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ math            ······●·····    #1 of 1     34%      4
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                     92.1%  ▁·▁▁▂▃▄▄█▅▄● beats 138/145  easy · avg 82%    6.5%  sharp · maxed out · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspecifie…</a>   38.8%  ▁···▁▁▃●▅█▄▅ beats 7/37     hard · avg 26%    5.3%  at its level · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                          81.0%  ▁··▁▁▃▄█▆▄●▁ beats 115/120  easy · avg 69%    3.1%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                          81.0%  ▁··▁▁▃▄█▆▄●▁ beats 115/120  easy · avg 69%    3.2%  small run
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test             result  vs the others in its run    difficulty           counts
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>                 94.3%  ▁▁▁▁▂▄▅▆█▃▃● beats 155/155  easy · avg 77%      8.0%  sharp · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>                 94.3%  ▁▁▁▁▂▄▅▆█▃▃● beats 155/155  easy · avg 78%      8.0%  sharp · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                           86.5%  ▁▁▁▁▁▂▂▅██▆● beats 197/214  medium · avg 71%    7.2%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                       45.9%  ▄▄▄▆█▆███·●█ beats 28/32    hard · avg 17%      6.0%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                       78.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 117/188  medium · avg 59%    5.8%  small run

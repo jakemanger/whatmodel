@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 54.2** ±0.9 · #296 of 724 · from 6 benchmark results across 3 sources
+**score 54.2** ±0.9 · #297 of 725 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #235 of 302*    2.0%      1
+agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #236 of 303*    2.0%      1
 coding       ▁▁▁▃▆██●▆▄▃▁   #189 of 460*     39%      2
 math         ▁▁▃▅●▆▄█▄▁▁▁   #297 of 424*    7.5%      1
 </pre>
 
-<details><summary>agent tasks · #235 of 302 · 2.0% of its score</summary>
+<details><summary>agent tasks · #236 of 303 · 2.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

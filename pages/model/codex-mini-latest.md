@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-05 · proprietary
 
-**score 60.7** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.6** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             7% ▇
-weighted average                        = 60.7
+weighted average                        = 60.6
 </pre>
 
 <sub>Licences: WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>

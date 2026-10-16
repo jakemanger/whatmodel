@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-07 · 235.74B params (21B active) · other (deepseek)
 
-**score 54.7** ±0.9 · #287 of 724 · from 6 benchmark results across 3 sources
+**score 54.7** ±0.9 · #287 of 725 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -49,7 +49,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             80.8%  ▁·▁▁▄▄▄▅●▄▂▁ beats 30/53  easy · avg 75%          31%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             22.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 35/57  hard · avg 15%          16%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.9943 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 45/52  avg 42.747 WB-Score    9.4%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.9943 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 45/52  avg 42.785 WB-Score    9.4%  sharp
 </pre>
 
 </details>

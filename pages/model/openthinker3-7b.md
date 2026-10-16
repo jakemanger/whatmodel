@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 50.7** ±0.9 · #350 of 724 · from 17 benchmark results across 3 sources
+**score 50.7** ±0.9 · #350 of 725 · from 17 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -41,7 +41,7 @@ Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>     24.0%  ●···█·█·█·██ beats 0/5    medium · avg 42%    4.7%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 78%      0.7%  noisy
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 79%      0.7%  noisy
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ test                         result  vs the others in its run  difficulty       
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     57.2%  ▄··▄····●▄▄▄ beats 2/6    medium · avg 49%        12%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     67.7%  ▄·····▄··●██ beats 2/6    medium · avg 58%        11%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     94.5%  ▃·····▃···●█ beats 3/6    very easy · avg 90%    8.2%  typical
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 30%         5.0%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 31%         5.0%  at its level
 </pre>
 
 </details>

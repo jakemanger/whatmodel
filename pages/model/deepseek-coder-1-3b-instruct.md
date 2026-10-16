@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.35B params · deepseek
 
-**score 44.1** ±0.6 · #492 of 724 · from 14 benchmark results across 6 sources
+**score 44.1** ±0.6 · #493 of 725 · from 14 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -31,10 +31,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                54.8%  ▁···▁▁▂▅●█▆▂ beats 28/75  easy · avg 66%      4.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           27.2%  ▁··●▅▂█▇▁··▁ beats 1/22   medium · avg 52%    1.4%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           28.7%  ▁·●▃▁█▁▂···▁ beats 1/22   medium · avg 51%    1.3%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 3/47   medium · avg 50%    1.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 3/47   medium · avg 51%    1.0%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 4/47   hard · avg 32%      0.8%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   11.7%  ▁▁▁▁▁●▂▂▃█▅▄ beats 7/47   hard · avg 31%      0.8%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    1.9%  ▁▁●······▁▃█ beats 3/47   easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    1.9%  ▁▁●······▁▃█ beats 3/47   easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>

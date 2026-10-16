@@ -6,7 +6,7 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 78.0** ±1.7 · #16 of 724 · from 5 benchmark results across 2 sources
+**score 78.0** ±1.7 · #17 of 725 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #31 of 302*     16%      2
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #31 of 303*     16%      2
 </pre>
 
-<details><summary>agent tasks · #31 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #31 of 303 · 16% of its score</summary>
 
-Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
+Beats [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
@@ -34,10 +34,10 @@ test                               result  vs the others in its run  difficulty 
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                            result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂▆●▆▆·▄ beats 15/24  very hard · avg 0.4%     73%  sharp · at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 9.9%    5.5%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%          4.6%  blunt · at its level · small run
+test                            result  vs the others in its run  difficulty             counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂▆●▆▆·▄ beats 15/24  very hard · avg 0.4%      73%  sharp · at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 10.0%    5.5%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%           4.6%  blunt · at its level · small run
 </pre>
 
 </details>

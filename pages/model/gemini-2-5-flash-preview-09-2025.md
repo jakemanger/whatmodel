@@ -6,7 +6,7 @@
 
 Google · released 2025-09 · closed weights
 
-**score 63.3** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources
+**score 63.2** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▃▁    #181 of 342     26%      3
+agent tasks         ▁▁▂▆█●▅▄▄▃▃▁    #182 of 343     26%      3
 coding              ▁▁▁▃▅▇█●▅▄▂▁   #195 of 529*     50%      2
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #122 of 466*     16%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇●█▃    #70 of 182*     12%      1
 </pre>
 
-<details><summary>agent tasks · #181 of 342 · 26% of its score</summary>
+<details><summary>agent tasks · #182 of 343 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   40.0%  ●▄····▄··█·▄ beats 1/6    very hard · avg 7.0%     42%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   40.0%  ●▄····▄··█·▄ beats 1/6    very hard · avg 7.1%     42%  sharp · at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   34.2%  █·█●·······█ beats 4/6    very hard · avg 10%     8.1%  sharp · at its level
 </pre>
 
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        5   71% ▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   28% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.3
+weighted average                                   = 63.2
 </pre>
 
 <sub>Licences: ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

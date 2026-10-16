@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 37.6** ±2.2 · #594 of 724 · from 7 benchmark results across 3 sources
+**score 37.6** ±2.2 · #595 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   26.7%  ▃··▁▂▂●▂█▃▄▂ beats 17/47  medium · avg 50%    7.8%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   26.7%  ▃··▁▂▂●▂█▃▄▂ beats 17/47  medium · avg 51%    7.8%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.8%  ▁●▁▁▁▁▂▂▃█▅▄ beats 2/47   hard · avg 31%      7.4%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.8%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 8/47   hard · avg 32%      5.1%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.3%  ▁▁▁······▁●█ beats 13/47  easy · avg 66%      0.4%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.3%  ▁▁▁······▁●█ beats 13/47  easy · avg 67%      0.4%  blunt · at its level · noisy
 </pre>
 
 </details>

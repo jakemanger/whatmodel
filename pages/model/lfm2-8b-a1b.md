@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
-**score 46.8** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
+**score 46.7** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▃▁    #330 of 342    3.7%      4
+agent tasks     ▁▁●▆█▆▅▄▄▃▃▁    #331 of 343    3.7%      4
 chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #284 of 466*    4.9%      2
 math            ▁▂▃▆●▇▅▇▃▁▁▁    #292 of 523     30%      7
 </pre>
 
-<details><summary>agent tasks · #330 of 342 · 3.7% of its score</summary>
+<details><summary>agent tasks · #331 of 343 · 3.7% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                84.6%  █····●··▄·▄█ beats 3/7     very easy · avg 85%     11%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            82.6%  █▄··●█▄····▄ beats 3/7     easy · avg 80%         5.1%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       74.2%  ▃····▃·●···▃ beats 4/5     easy · avg 79%         4.5%  at its level · several runs
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                      20.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 11/133  hard · avg 33%         3.9%  sharp · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                      20.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 11/133  hard · avg 34%         3.9%  sharp · small run
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              56.5%  ▄·●·▄▄▄·▄··█ beats 1/7     easy · avg 68%         2.8%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          26.5%  ▄··▄●█··▄··▄ beats 3/7     hard · avg 28%         2.4%  typical
 <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (l…</a>   84.4%  █·█··██●···█ beats 4/5     easy · avg 83%         0.4%  blunt
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (lab)</a>                    11   32% ▇▇▇▇
 <a name="card-liquidai-lfm2-5-8b-a1b"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model card (lab)</a>         9   13% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.8
+weighted average                                   = 46.7
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>

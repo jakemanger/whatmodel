@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06
 
-**score 34.8** ±2.1 · #624 of 724 · from 4 benchmark results across 2 sources
+**score 34.8** ±2.1 · #625 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

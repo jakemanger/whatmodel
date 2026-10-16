@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 32.8B params · mit
 
-**score 56.0** ±0.8 · #257 of 724 · from 28 benchmark results across 11 sources
+**score 56.0** ±0.8 · #256 of 725 · from 28 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -31,9 +31,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     32.3%  ▃▁▁●▁▄▅▃▄▇▁▄ beats 7/31   medium · avg 39%    3.1%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.6%  █▂▁▁▂▂▂▃▅▅▅● beats 44/47  hard · avg 32%      2.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.6%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 21/47  hard · avg 31%      2.0%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   76.4%  ▃··▁▂▂▃▂█▃●▂ beats 39/47  medium · avg 50%    1.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   76.4%  ▃··▁▂▂▃▂█▃●▂ beats 39/47  medium · avg 51%    1.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">LiveCodeBench v2</a>                     71.2%  ▄··█·▄···▄▄● beats 6/7    medium · avg 59%    1.8%  at its level · small run
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.2%  ▁▁▁······▁▃● beats 24/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   73.2%  ▁▁▁······▁▃● beats 24/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>

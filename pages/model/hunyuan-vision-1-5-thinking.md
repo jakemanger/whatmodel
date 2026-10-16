@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · closed weights
 
-**score 63.0** ±2.3 · #180 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.9** ±2.3 · #182 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 63.0
+weighted average                        = 62.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

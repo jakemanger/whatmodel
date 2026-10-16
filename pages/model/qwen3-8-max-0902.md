@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 74.9** ±0.8 · #36 of 724 · from 10 benchmark results across 4 sources
+**score 74.8** ±0.8 · #37 of 725 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #24 of 302*    9.2%      2
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #24 of 303*    9.3%      2
 coding       ▁▁▁▃▆██▇▆▄●▁   #11 of 460*     12%      1
 math         ▁▁▃▅█▆▄█▄●▁▁    #25 of 424     56%      3
 </pre>
 
-<details><summary>agent tasks · #24 of 302 · 9.2% of its score</summary>
+<details><summary>agent tasks · #24 of 303 · 9.3% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Spark Open](muse-spark-open.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -39,7 +39,7 @@ Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1670.0  ▁▂▄▃▅█▄▇▆●▁▁ beats 110/119  avg 969        12%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1670.0  ▁▂▄▃▅█▄▇▆●▁▁ beats 110/119  avg 970        12%  sharp
 </pre>
 
 </details>
@@ -80,7 +80,7 @@ source                                    results  share of the score
 <a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1    7% ▇
 <a name="paper-2610.04432v2-video2world"></a><a href="https://arxiv.org/html/2610.04432v2">Video2World: Benchmarking Coding Agents…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 74.9
+weighted average                                   = 74.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

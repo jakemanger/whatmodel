@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-06 · bigscience-openrail-m
 
-**score 43.2** ±0.8 · #509 of 724 · from 3 benchmark results across 1 source
+**score 43.2** ±0.8 · #510 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 53.0** ±0.9 · #314 of 724 · from 19 benchmark results across 10 sources
+**score 52.9** ±0.9 · #315 of 725 · from 19 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K models leaderboard</a>                     1    4% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 53.0
+weighted average                                   = 52.9
 </pre>
 
 <sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

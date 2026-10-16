@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 45.7** ±1.2 · #453 of 724 · from 7 benchmark results across 2 sources
+**score 45.7** ±1.2 · #454 of 725 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

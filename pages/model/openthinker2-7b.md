@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 7.62B params · apache-2.0
 
-**score 49.2** ±1.7 · #382 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.2** ±1.7 · #383 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

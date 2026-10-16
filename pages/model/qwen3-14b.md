@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 14.8B params · apache-2.0
 
-**score 58.6** ±1.0 · #213 of 724 · from 17 benchmark results across 12 sources
+**score 58.5** ±1.0 · #214 of 725 · from 17 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #172 of 302     29%      3
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #173 of 303     29%      3
 math         ▁▁▃▅█▆●█▄▁▁▁   #144 of 424*    7.9%      1
 </pre>
 
-<details><summary>agent tasks · #172 of 302 · 29% of its score</summary>
+<details><summary>agent tasks · #173 of 303 · 29% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   53.7%  ▂▃▅▂▆▃█▅●▅▃▆ beats 23/34    medium · avg 41%        8.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   40.2%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 77/97    hard · avg 31%          6.5%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   29.7%  ▁▁·▁▂▂▄●▄▅▄▄ beats 25/66    hard · avg 29%          6.4%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   70.2%  ▁▂▂▂▃█▃●▅▄▂▃ beats 53/95    medium · avg 64%        6.1%  typical
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   70.2%  ▁▂▂▂▃█▃●▅▄▂▃ beats 53/95    medium · avg 64%        6.2%  typical
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   26.0%  ▁▁▂▁▃●█▆▄▅▂▃ beats 11/39    very hard · avg 21%     5.9%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   57.8%  ▂▄▂▃█▄●▆▃▅▂▂ beats 47/81    medium · avg 56%        4.4%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 258/276  medium · avg 72%        2.0%  at its level · noisy
@@ -84,7 +84,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.6
+weighted average                                   = 58.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

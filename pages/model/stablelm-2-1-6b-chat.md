@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-04 · 1.64B params · other
 
-**score 37.2** ±6.2 · #802 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.2** ±6.2 · #803 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

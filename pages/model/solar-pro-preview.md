@@ -6,7 +6,7 @@
 
 Upstage · released 2024-09 · 22.14B params · mit
 
-**score 51.3** ±6.0 · #434 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±6.0 · #433 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

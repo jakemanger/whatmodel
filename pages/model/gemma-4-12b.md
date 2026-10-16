@@ -6,7 +6,7 @@
 
 Google · released 2026-06 · 11.9B params · apache-2.0
 
-**score 62.5** ±0.8 · #171 of 724 · from 30 benchmark results across 3 sources
+**score 62.4** ±0.8 · #175 of 725 · from 30 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #153 of 302     22%      8
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #155 of 303     22%      8
 coding              ▁▁▁▃▆██▇●▄▃▁   #127 of 460    6.7%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #74 of 395*    0.9%      2
 math                ▁▁▃▅█▆●█▄▁▁▁   #156 of 424     19%      4
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #71 of 147     1
 web search          █·█▄█●·▄▄·▄▄     #5 of 13*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #153 of 302 · 22% of its score</summary>
+<details><summary>agent tasks · #155 of 303 · 22% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -37,14 +37,14 @@ test                             result  vs the others in its run   difficulty  
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archive)</a>   37.4%  ▁▁▁▂▇▆●▆█▂▄▂ beats 48/111  hard · avg 34%          1.6%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>                        10.0%  ▅···●·▃···▃▃ beats 4/7     very hard · avg 9.7%    1.4%  noisy
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                          13.3%  ▃·▃·█·●··▃·▃ beats 5/7     very hard · avg 12%     1.3%  typical
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               77.6%  ▄····▄··▄·●█ beats 3/5     medium · avg 39%        1.1%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               77.6%  ▄····▄··▄·●█ beats 3/5     medium · avg 40%        1.1%  sharp · at its level · noisy
 </pre>
 
 </details>
 
 <details><summary>coding · #127 of 460 · 6.7% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -83,13 +83,13 @@ test                result  vs the others in its run  difficulty        counts  
 
 <details><summary>vision &amp; documents · #71 of 147 · 10% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>             69.1%  ██·█····●·██ beats 3/5    medium · avg 48%    3.7%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>          79.7%  ██·█·····●██ beats 3/5    medium · avg 52%    2.6%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>       88.4%  ▄█·······●·▄ beats 3/5    easy · avg 69%      2.5%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>       88.4%  ▄█·······●·▄ beats 3/5    easy · avg 70%      2.5%  typical
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>   16.4%  █·█·····█●██ beats 3/5    avg 31%             1.4%  blunt
 </pre>
 
@@ -97,7 +97,7 @@ test                      result  vs the others in its run  difficulty        co
 
 <details><summary>web search · #5 of 13 · 1.4% of its score</summary>
 
-Trails [Spark-X2.5 1.7B](spark-x2-5-1-7b.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails [Spark-X2.5 1.7B](spark-x2-5-1-7b.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty            counts  why
@@ -119,7 +119,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>         43.4%  ▄▄·▄···●···▄ beats 3/5    hard · avg 21%          3.3%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                        74.0%  ▄▄·▄······▄● beats 4/5    medium · avg 39%        2.8%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro avg (l…</a>   53.0%  █··▄···●·▄·▄ beats 3/5    hard · avg 27%          2.5%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                             5.2%  ●···█······█ beats 0/2    very hard · avg 3.9%    1.0%  small run
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                             5.2%  ●···█······█ beats 0/2    very hard · avg 4.0%    1.0%  small run
 </pre>
 
 </details>
@@ -134,7 +134,7 @@ source                                  results  share of the score
 <a name="card3-xhtoken-spark-x2-5-4b"></a><a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">XHToken/Spark-X2.5-4B model card</a>              9   33% ▇▇▇▇
 <a name="card2-google-gemma-4-31b-it"></a><a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">google/gemma-4-31B-it model card (lab)</a>        1    3% ▇
 prior: pull toward the middle                      0% ▇
-weighted average                                 = 62.5
+weighted average                                 = 62.4
 </pre>
 
 <sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XHToken/Spark-X2.5-4B model card ([Apache-2.0](https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt))</sub>

@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 70B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 47.4** ±1.7 · #419 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.4** ±1.7 · #418 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

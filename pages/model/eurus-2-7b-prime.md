@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 45.6** ±2.3 · #454 of 724 · from 4 benchmark results across 2 sources
+**score 45.6** ±2.3 · #455 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

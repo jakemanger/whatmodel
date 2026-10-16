@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 46.3** ±0.8 · #445 of 724 · from 29 benchmark results across 5 sources
+**score 46.3** ±0.8 · #446 of 725 · from 29 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #290 of 302    3.5%      3
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #291 of 303    3.5%      3
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #341 of 460     13%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #218 of 395    4.6%      2
 math            ▁▁▃▅█●▄█▄▁▁▁   #200 of 424     19%      4
 </pre>
 
-<details><summary>agent tasks · #290 of 302 · 3.5% of its score</summary>
+<details><summary>agent tasks · #291 of 303 · 3.5% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 

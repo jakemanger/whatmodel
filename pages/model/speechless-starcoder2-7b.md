@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 7.17B params · apache-2.0
 
-**score 43.3** ±0.8 · #505 of 724 · from 3 benchmark results across 1 source
+**score 43.3** ±0.8 · #506 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

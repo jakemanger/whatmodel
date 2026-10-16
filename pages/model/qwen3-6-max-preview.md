@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 71.6** ±1.1 · #63 of 724 · from 8 benchmark results across 2 sources
+**score 71.6** ±1.1 · #64 of 725 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #70 of 302*     24%      1
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #71 of 303*     24%      1
 coding          ▁▁▁▃▆██▇▆●▃▁   #55 of 460*     46%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #42 of 395*     13%      1
-math            ▁▁▃▅█▆▄█●▁▁▁   #63 of 424*    3.3%      1
+math            ▁▁▃▅█▆▄█●▁▁▁   #63 of 424*    3.2%      1
 </pre>
 
-<details><summary>agent tasks · #70 of 302 · 24% of its score</summary>
+<details><summary>agent tasks · #71 of 303 · 24% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-
 <pre>
 test                       result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          76.7%  ▁··▁·▁▂▁▄●▄▁ beats 20/29   hard · avg 18%     24%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1481.5  ▁▂▄▃▅█●▇▆▄▁▁ beats 66/119  avg 969            22%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1481.5  ▁▂▄▃▅█●▇▆▄▁▁ beats 66/119  avg 970            22%  sharp
 </pre>
 
 </details>
@@ -56,13 +56,13 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #63 of 424 · 3.3% of its score</summary>
+<details><summary>math · #63 of 424 · 3.2% of its score</summary>
 
-Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
+Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   91.1%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 145/193  very hard · avg 6.9%    3.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   91.1%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 145/193  very hard · avg 6.9%    3.2%  sharp · noisy
 </pre>
 
 </details>

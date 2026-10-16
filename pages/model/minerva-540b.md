@@ -6,7 +6,7 @@
 
 Google · released 2022-06 · 540.35B params · proprietary
 
-**score 47.7** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 47.6** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="paper-2206.14858v2"></a><a href="https://arxiv.org/html/2206.14858v2">Solving Quantitative Reasoning Problems…</a>        4   56% ▇▇▇▇▇▇▇
 <a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>        3   43% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 47.7
+weighted average                                   = 47.6
 </pre>
 
 <sub>Licences: Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt))</sub>

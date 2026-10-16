@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2023-11 · 13.02B params · cc-by-nc-nd-4.0
 
-**score 35.8** ±0.9 · #816 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.8** ±0.9 · #817 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

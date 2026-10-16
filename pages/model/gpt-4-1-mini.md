@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 60.6** ±0.6 · #189 of 724 · from 43 benchmark results across 19 sources
+**score 60.5** ±0.6 · #191 of 725 · from 43 benchmark results across 19 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #166 of 302     16%     10
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #166 of 303     16%     10
 coding              ▁▁▁▃▆██●▆▄▃▁   #174 of 460*     10%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃    #128 of 395    8.8%      3
 math                ▁▁▃▅█▆●█▄▁▁▁    #174 of 424     18%      5
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #77 of 147    7
 web search          ▂▁▂▆▄█▃▃▁●·▁      #5 of 80*    2.0%      1
 </pre>
 
-<details><summary>agent tasks · #166 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #166 of 303 · 16% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json">τ²-bench Retail</a>                      61.4%  ▁····▂▁▃●█▃▁ beats 12/44   medium · avg 39%        2.2%  at its level
 <a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   20.3%  █·▃▃·█▅●▅▅▃▅ beats 11/18   very hard · avg 5.3%    2.0%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      50.4%  ▁▁▁▂██▅▅●▂▂▂ beats 57/77   hard · avg 31%          1.7%  at its level
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json">τ²-bench Airline</a>                     48.7%  ▁▁·▂▁▃●▁█▅▂▃ beats 12/42   hard · avg 28%          1.4%  at its level
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json">τ²-bench Airline</a>                     48.7%  ▁▁·▂▁▃●▁█▅▂▃ beats 12/42   hard · avg 28%          1.5%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              65.2%  ▁▁▁▁▁▃▅█▅●▁▁ beats 98/114  medium · avg 51%        0.7%  blunt · at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   56.0%  ▅▃·▃▃▅▅█▃█●▅ beats 17/19   hard · avg 26%          0.7%  at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   91.0%  ▃▃▃▃▆▅▆▅●▂▅▂ beats 25/31   easy · avg 78%          0.5%  typical
@@ -116,7 +116,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         65.8%  ▁▁▁▁▂▄▆▄●▇█▅ beats 98/208   hard · avg 38%          6.1%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           72.1%  ▆▄▄▄●▄▂·▄█·▄ beats 10/23    medium · avg 56%        4.4%  typical
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            78.9%  ▄▄▄▂▂●▂▄▂█▂▄ beats 11/22    medium · avg 61%        3.5%  typical
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   35.6%  █···▁●▁▂▃·▆▂ beats 9/23     very hard · avg 28%     3.3%  sharp
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   35.6%  █···▁●▁▂▃·▆▂ beats 9/23     very hard · avg 29%     3.3%  sharp
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    30.9%  ▁···▁▃▂●▂▃▃▂ beats 8/23     hard · avg 17%          2.5%  at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>   87.5%  ▂▂·█▄●▂·█▂·▂ beats 9/16     easy · avg 79%          2.2%  typical
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1171.0  ▁·▂▁▄▅●▃█▄▁▁ beats 26/62    avg 1031                2.2%  typical
@@ -161,7 +161,7 @@ source                                    results  share of the score
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 60.6
+weighted average                                   = 60.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · OpenAI simple-evals README benchmark results ([MIT](../../licenses/openai-simple-evals-MIT.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

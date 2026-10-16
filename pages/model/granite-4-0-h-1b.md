@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.46B params · apache-2.0
 
-**score 42.1** ±0.8 · #525 of 724 · from 29 benchmark results across 2 sources
+**score 42.1** ±0.8 · #526 of 725 · from 29 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #247 of 302*    1.8%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #248 of 303*    1.8%      1
 coding          █··········●        #1 of 4     25%      7
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #237 of 395    6.3%      3
 math            ▁▁▃●█▆▄█▄▁▁▁    #325 of 424     30%      7
 </pre>
 
-<details><summary>agent tasks · #247 of 302 · 1.8% of its score</summary>
+<details><summary>agent tasks · #248 of 303 · 1.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall.
 
@@ -91,7 +91,7 @@ test                               result  vs the others in its run   difficulty
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                       43.4%  ▂····●▂▄▄▄█▄ beats 4/36    medium · avg 51%    2.9%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                         49.4%  ▂▁▁▂▃●▄▄▅██▃ beats 10/46   medium · avg 56%    2.4%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)</a>   24.9%  ▄·█·●······█ beats 3/6     medium · avg 42%    2.2%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                        24.3%  ●··········█ beats 0/5     hard · avg 39%      2.0%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                        24.3%  ●··········█ beats 0/5     hard · avg 40%      2.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>

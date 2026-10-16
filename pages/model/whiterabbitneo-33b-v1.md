@@ -6,7 +6,7 @@
 
 WhiteRabbitNeo · released 2023-12 · other (deepseek)
 
-**score 48.6** ±0.9 · #396 of 724 · from 3 benchmark results across 1 source
+**score 48.6** ±0.9 · #397 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

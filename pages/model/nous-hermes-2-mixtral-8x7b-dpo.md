@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-01 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.0** ±1.7 · #526 of 724 · from 4 benchmark results across 4 sources
+**score 42.0** ±1.7 · #527 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.7114 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 17/52    avg 42.747 WB-Score     32%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.7114 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 17/52    avg 42.785 WB-Score     32%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 133/276  medium · avg 72%       7.0%  at its level · noisy
 </pre>
 

@@ -6,7 +6,7 @@
 
 beowolx · released 2023-12 · 7.24B params · mit
 
-**score 40.2** ±0.8 · #558 of 724 · from 3 benchmark results across 1 source
+**score 40.2** ±0.8 · #559 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

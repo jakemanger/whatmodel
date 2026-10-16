@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 405B params · llama-3.1
 
-**score 56.0** ±0.5 · #255 of 724 · from 36 benchmark results across 19 sources
+**score 55.9** ±0.5 · #258 of 725 · from 36 benchmark results across 19 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #205 of 302     12%      8
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #207 of 303     12%      8
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #214 of 460     30%     10
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #185 of 395     11%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁   #258 of 424     12%      4
 </pre>
 
-<details><summary>agent tasks · #205 of 302 · 12% of its score</summary>
+<details><summary>agent tasks · #207 of 303 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   25.6%  █····███·█●█ beats 5/6    very hard · avg 14%     2.4%  sharp
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   43.3%  █···█●▄·▄█·█ beats 4/10   hard · avg 27%          1.6%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   24.0%  █··●·▄█·▄··▄ beats 2/7    hard · avg 17%          1.5%  typical
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   64.6%  ▅····▅●▃▃·▃█ beats 4/11   medium · avg 53%        1.0%  blunt · at its level
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    7.2%  ▃▅▃·●▃▃··█·▃ beats 4/11   very hard · avg 3.4%    0.8%  sharp · noisy
-<a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                      26.0%  ▁▁●·▅▄▁█▇▁▁▇ beats 2/28   hard · avg 21%          0.7%  at its level
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   64.6%  ▅····▅●▃▃·▃█ beats 4/11   medium · avg 53%        1.1%  blunt · at its level
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>    7.2%  ▃▅▃·●▃▃··█·▃ beats 4/11   very hard · avg 3.5%    0.8%  sharp · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                      26.0%  ▁▁●·▅▄▁█▇▁▁▇ beats 2/28   hard · avg 22%          0.7%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Retail</a>                       29.1%  ▁····●·▂▇█▂▆ beats 2/28   hard · avg 26%          0.5%  at its level · noisy
 </pre>
 
@@ -46,7 +46,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   37.3%  ▁▁·▁▂▄▆●▅▂·▂ beats 22/31  hard · avg 23%          6.6%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   37.3%  ▁▁·▁▂▄▆●▅▂·▂ beats 22/31  hard · avg 23%          6.5%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    73.5%  ▁▂▆▃▆█●▃▂·▁▁ beats 32/47  medium · avg 57%        5.9%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.2%  ▁·▁▂▄▁▆▄●▆▂▂ beats 39/62  medium · avg 50%        4.7%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 17%          3.2%  sharp · at its level
@@ -133,7 +133,7 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.0
+weighted average                                   = 55.9
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

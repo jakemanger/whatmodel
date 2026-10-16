@@ -26,7 +26,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md)
 <pre>
 test   result  vs the others in its run   difficulty        counts  why
 <a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ▂▂▂▂●▄▅▇██▆▄ beats 34/200  medium · avg 62%    4.5%  sharp · small run · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 47%    2.2%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 48%    2.2%  sharp · too hard for it
 </pre>
 
 </details>
@@ -46,8 +46,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             76.2%  ▄···▄··█·▄·● beats 5/5     easy · avg 87%         2.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     22.7%  ······●····· beats 0/5     very hard · avg 25%    2.4%  too hard for it
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   20.2%  ●········▄·█ beats 0/3     easy · avg 73%         2.2%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 24/103  medium · avg 78%       2.1%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5     medium · avg 64%       2.1%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 24/103  medium · avg 78%       2.1%  at its level
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   75.0%  █·▄··█··█··● beats 7/7     very easy · avg 88%    2.1%  blunt · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 1 (prompted)</a>              36.3%  █··▂·······● beats 5/5     hard · avg 46%         2.1%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   21.6%  ▂··▂·▂▄●·███ beats 5/18    medium · avg 61%       1.9%  typical

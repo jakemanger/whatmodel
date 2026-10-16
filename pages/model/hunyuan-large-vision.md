@@ -6,7 +6,7 @@
 
 Tencent · released 2025-05 · closed weights
 
-**score 56.4** ±2.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.3** ±2.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ vision &amp; documents  ▁▁▃▃▂▃●▅▇▇█▃   #122 of 199*     
 
 <details><summary>chat &amp; writing · #319 of 579 · 57% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 56.4
+weighted average                        = 56.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

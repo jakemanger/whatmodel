@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 3.75B params · qwen-research
 
-**score 44.9** ±1.0 · #474 of 724 · from 14 benchmark results across 2 sources
+**score 44.9** ±1.0 · #474 of 725 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

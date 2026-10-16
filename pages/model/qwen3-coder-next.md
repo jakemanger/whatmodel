@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · 79.7B params (3B active) · apache-2.0
 
-**score 67.1** ±1.7 · #109 of 724 · from 5 benchmark results across 2 sources
+**score 67.0** ±1.7 · #111 of 725 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (lab)</a>             70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 79/131  hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (lab)</a>         62.8%  ▁··▁▃▂▅●█▃▃▁ beats 22/60   hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▃·▁▁▁▂▂▃●▇▃▁ beats 21/55   very hard · avg 4.0%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">Terminal-Bench 2.0 (lab)</a>             36.2%  ▂▂▅▅●███▆▂▃▃ beats 10/36   very hard · avg 9.7%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">Terminal-Bench 2.0 (lab)</a>             36.2%  ▂▂▅▅●███▆▂▃▃ beats 10/36   very hard · avg 9.8%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>math · #61 of 424 · 16% of its score</summary>
 
-Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
+Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="vector-inspect-evals-leaderboard"></a><a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">Vector Institute Evaluation Leaderboard</a>         4   78% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   21% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.1
+weighted average                                   = 67.0
 </pre>
 
 <sub>Licences: Vector Institute Evaluation Leaderboard ([Apache-2.0](../../licenses/vector-inspect-evals-leaderboard-Apache-2.0.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>

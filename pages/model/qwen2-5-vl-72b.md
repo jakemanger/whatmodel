@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 73.4B params · qwen
 
-**score 56.3** ±0.9 · #251 of 724 · from 29 benchmark results across 9 sources
+**score 56.3** ±0.9 · #251 of 725 · from 29 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ test                        result  vs the others in its run  difficulty        
 
 <details><summary>vision &amp; documents · #103 of 147 · 92% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                 result  vs the others in its run   difficulty           counts  why
@@ -45,7 +45,7 @@ test                                 result  vs the others in its run   difficul
 <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>            74.8%  ▃··▃▅·▃█●▅▅█ beats 8/16    medium · avg 68%       7.5%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1121.2  ▁▁▂▂▂▂●▅▅▆██ beats 36/145  avg 1058               5.6%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>    36.6%  ▁·▁·▃▃▁●▃█·▄ beats 10/22   hard · avg 26%         3.8%  blunt · at its level
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  35.3300  ▃▃▃·▃█·▅▃●▃▃ beats 10/12   avg -5.548             3.2%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  35.3300  ▃▃▃·▃█·▅▃●▃▃ beats 10/12   avg -5.431             3.2%  typical
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                  55.2%  ▃·▃·▅▃●▅▃▅█▅ beats 6/16    medium · avg 54%       3.0%  blunt · at its level
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>    52.9%  █·█···█·●·██ beats 3/5     medium · avg 45%       2.9%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                          96.4%  ▃··▅▃▅▃█▃●▅▅ beats 13/17   very easy · avg 94%    2.8%  blunt · maxed out · several runs
@@ -53,7 +53,7 @@ test                                 result  vs the others in its run   difficul
 <a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                     75.7%  ▅▃·▃▅▅·█·●▅█ beats 11/16   easy · avg 70%         2.1%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                          79.8%  ▃··▃▅·▅▅·●▅▃ beats 9/13    easy · avg 74%         1.9%  blunt · several runs
 <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>    51.7%  ▅······▃·▅·● beats 6/7     very hard · avg 36%    1.6%  noisy
-<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>    50.6%  █·●█····██·█ beats 1/5     hard · avg 47%         1.2%  blunt · at its level
+<a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>    50.6%  █·●█····██·█ beats 1/5     hard · avg 48%         1.2%  blunt · at its level
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>                  43.6%  ▂●▅▆██▅▂···▂ beats 2/24    medium · avg 42%       1.0%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2502.13923v1">OCRBench (lab)</a>                        88.5%  ▅█·▃▃█▃●▅▃·▃ beats 12/16   easy · avg 84%         0.7%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">TextVQA (lab)</a>                         83.5%  █······●·▄▄▄ beats 2/5     easy · avg 80%         0.4%  blunt
@@ -69,7 +69,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 251/276  medium · avg 72%    1.5%  at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                        47.3%  ●·█▅▅▄▄··▃▁▁ beats 1/28     hard · avg 47%      1.4%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles) (la…</a>   73.3%  ▁▃▁▃▁·█●▄▅·▇ beats 15/27    medium · avg 67%    1.3%  blunt · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                   35.0%  ▁·●▁▂▃█▅▂▂·▂ beats 1/24     hard · avg 31%      1.2%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                   35.0%  ▁·●▁▂▃█▅▂▂·▂ beats 1/24     hard · avg 32%      1.2%  at its level · small run
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 53.5** ±2.5 · #380 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 53.5** ±2.5 · #380 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     92.4%  ▃·····●···▅█ beats 1/6    very easy · avg 90%     54%  maxed out
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 30%          43%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 31%          43%  at its level
 </pre>
 
 </details>

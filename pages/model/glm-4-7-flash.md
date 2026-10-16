@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 
-**score 59.0** ±1.2 · #210 of 724 · from 10 benchmark results across 6 sources
+**score 58.9** ±1.2 · #211 of 725 · from 10 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,7 +29,7 @@ web search                     not ranked yet       —      1
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">SWE-bench Verified (lab)</a>   59.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 52/131  hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (lab)</a>           42.8%  ▂·▄▁▂▃●▄█▂▃▄ beats 15/42   very hard · avg 9.7%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">τ²-bench aggregate (lab)</a>   79.5%  ▁▁▁·▂▂▄▃▃●█▂ beats 22/37   medium · avg 41%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">τ²-bench aggregate (lab)</a>   79.5%  ▁▁▁·▂▂▄▃▃●█▂ beats 22/37   medium · avg 42%           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -87,7 +87,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1151.3  ▁·▂▁▄●▅▃█▄▁▁ beats 20/62   avg 1031                9.4%  typical
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   83.1%  ▁▁●▁█▄▃▃▆▂▂▂ beats 3/49    easy · avg 77%          8.4%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   94.1%  ▂·▂▂·▂·▃▃·█● beats 13/14   easy · avg 79%          7.5%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   74.8%  ▂··▂▂·▂▆●█·▄ beats 7/15    medium · avg 62%        5.5%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   74.8%  ▂··▂▂·▂▆●█·▄ beats 7/15    medium · avg 63%        5.5%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 31/135  very hard · avg 5.8%    2.1%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.7%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 51/98   very easy · avg 90%     0.0%  blunt
 <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">GPQA (subset unspecified) (lab)</a>      75.2%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 87/104  very hard · avg 32%        —  not counted yet: no other model in the …
@@ -109,7 +109,7 @@ source                                    results  share of the score
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 59.0
+weighted average                                   = 58.9
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

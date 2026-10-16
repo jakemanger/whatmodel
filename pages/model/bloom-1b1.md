@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 7.1** ±1.1 · #713 of 724 · from 36 benchmark results across 6 sources
+**score 7.2** ±1.1 · #714 of 725 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">HellaSwag</a>                            34.6%  ▄·●▄·▄·▄··▄█ beats 1/7    easy · avg 81%          4.5%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">CoQA</a>                                 45.6%  ▄····●▄·▄▄·█ beats 1/6    very easy · avg 92%     4.0%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   68.5%  ▄●·▄·▄··█··█ beats 1/7    very easy · avg 93%     3.3%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Natural Questions (closed book)</a>       2.9%  ▁·▁·●▂▁▂·▅▂█ beats 2/28   medium · avg 48%        1.9%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Natural Questions (closed book)</a>       2.9%  ▁·▁·●▂▁▂·▅▂█ beats 2/28   medium · avg 48%        2.0%  too hard for it
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">BoolQ</a>                                59.1%  ▄··●·█▄··█·▄ beats 1/7    easy · avg 87%          1.7%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">RACE-high</a>                            32.6%  ▄···●··▄▄··█ beats 1/6    medium · avg 52%        1.4%  blunt
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-23%2000%3A02%3A01.385072.json">TriviaQA</a>                              8.6%  ▁··▁●▃▃▁▄▅▄█ beats 2/28   hard · avg 34%          1.3%  too hard for it · several runs
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Hallucinations Leaderboard results</a>              4    3% ▇
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        3    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 7.1
+weighted average                                   = 7.2
 </pre>
 
 <sub>Licences: EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt))</sub>

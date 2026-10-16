@@ -21,7 +21,7 @@ chat &amp; writing  ▁▁▁▃▅▅▆█▆●▆▂   #125 of 579*     96% 
 
 <details><summary>chat &amp; writing · #125 of 579 · 96% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why

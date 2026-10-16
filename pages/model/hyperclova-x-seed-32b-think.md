@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #145 of 342     85%      5
+agent tasks  ▁▁▂▆█▆●▄▄▃▃▁   #146 of 343     85%      5
 web search   ●·▂▇▅█▃▄▁▂▁▁    #92 of 92*     11%      1
 </pre>
 
-<details><summary>agent tasks · #145 of 342 · 85% of its score</summary>
+<details><summary>agent tasks · #146 of 343 · 85% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-06 · 11.17B params · apache-2.0
 
-**score 55.1** ±2.6 · #278 of 724 · from 4 benchmark results across 3 sources
+**score 55.0** ±2.6 · #282 of 725 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                                    results  share of the score
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   35% ▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   18% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 55.1
+weighted average                                   = 55.0
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

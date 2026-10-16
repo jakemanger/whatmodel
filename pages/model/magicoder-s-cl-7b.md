@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · llama2
 
-**score 48.3** ±0.9 · #399 of 724 · from 3 benchmark results across 1 source
+**score 48.3** ±0.9 · #400 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

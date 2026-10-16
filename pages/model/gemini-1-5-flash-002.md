@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #180 of 342*    0.7%      1
+agent tasks         ▁▁▂▆█●▅▄▄▃▃▁   #180 of 343*    0.7%      1
 coding              ▁▁▁▃▅▇●▇▅▄▂▁    #290 of 529     56%      5
 chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #249 of 466*    4.3%      1
 math                ▁▂▃▆█●▅▇▃▁▁▁   #273 of 523*     11%      2
 vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #118 of 182*    3.0%      1
 </pre>
 
-<details><summary>agent tasks · #180 of 342 · 0.7% of its score</summary>
+<details><summary>agent tasks · #180 of 343 · 0.7% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

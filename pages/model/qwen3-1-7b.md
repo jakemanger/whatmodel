@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 2.03B params · apache-2.0
 
-**score 44.5** ±0.5 · #480 of 724 · from 72 benchmark results across 16 sources
+**score 44.5** ±0.5 · #481 of 725 · from 72 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #236 of 302    4.5%      4
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #237 of 303    4.5%      4
 coding          ▁▁▁▃●██▇▆▄▃▁   #361 of 460*    2.4%      2
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #272 of 395    3.1%      2
 math            ▁▁▃▅●▆▄█▄▁▁▁    #270 of 424     28%     11
 </pre>
 
-<details><summary>agent tasks · #236 of 302 · 4.5% of its score</summary>
+<details><summary>agent tasks · #237 of 303 · 4.5% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -67,14 +67,14 @@ Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-
 <pre>
 test                         result  vs the others in its run   difficulty            counts  why
 <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         77.9%  ●····█··▄·▄█ beats 0/7     very easy · avg 85%      10%  sharp · at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>               36.8%  ▃·●▃█··▃▅▃·█ beats 1/12    medium · avg 51%        5.7%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>               36.8%  ▃·●▃█··▃▅▃·█ beats 1/12    medium · avg 52%        5.7%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM</a>                          66.6%  █···█▄··▄··● beats 6/6     easy · avg 83%          4.4%  sharp · at its level
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     70.6%  ●▄··▄█▄····▄ beats 1/7     easy · avg 80%          2.5%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       63.6%  ▄·▄·●▄▄·▄··█ beats 2/7     easy · avg 68%          1.3%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT February 2025 (lab)</a>      10.2%  ●▁▁▃▁▅▅▃██▁▄ beats 0/31    hard · avg 33%          1.1%  small run
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   23.4%  ▄··●██··▄··▄ beats 1/7     hard · avg 28%          1.0%  typical
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PolyMATH (lab)</a>                25.2%  ▁···●▁·▇█▄▄▄ beats 1/23    hard · avg 29%          0.8%  small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT November 2025 (lab)</a>       8.9%  ●▁····▁▅▃█▇▁ beats 0/23    medium · avg 36%        0.7%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT November 2025 (lab)</a>       8.9%  ●▁····▁▅▃█▇▁ beats 0/23    medium · avg 37%        0.7%  at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                      81.9%  ▄··█▄·▄···●▄ beats 5/6     easy · avg 77%          0.7%  at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       8.1%  ▃▃▄●▃▃▇▇█▃▂▅ beats 47/193  very hard · avg 6.9%    0.2%  sharp · too hard for it · noisy
 </pre>
@@ -104,7 +104,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   18.3%  ▁▁●▁▃▄█▆▄▅▂▃ beats 3/39     very hard · avg 21%     0.9%  typical
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Global PIQA (lab)</a>                    63.1%  ▃●··▃··▃▃▅█▅ beats 1/11     medium · avg 70%        0.9%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SuperGPQA (lab)</a>                      31.2%  ▂▁●▂▅▆▃▇▇▇█▃ beats 4/46     medium · avg 39%        0.9%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MAXIFE (lab)</a>                         50.7%  ▂·●·▂···▆·▄█ beats 1/11     medium · avg 62%        0.9%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MAXIFE (lab)</a>                         50.7%  ▂·●·▂···▆·▄█ beats 1/11     medium · avg 62%        0.8%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-ProX (lab)</a>                      49.4%  ▁·●▁▁▂▁▃▂█▅▄ beats 1/35     medium · avg 57%        0.8%  at its level · small run
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU</a>                          62.3%  ▃●▃·▃···▅·▅█ beats 2/11     medium · avg 69%        0.8%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 148/276  medium · avg 72%        0.7%  at its level · noisy

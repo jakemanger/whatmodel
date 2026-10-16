@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.6** ±1.1 · #146 of 724 · from 9 benchmark results across 3 sources
+**score 64.5** ±1.1 · #147 of 725 · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -45,7 +45,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #55 of 424 · 22% of its score</summary>
 
-Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall.
+Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   21% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.6
+weighted average                                   = 64.5
 </pre>
 
 <sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

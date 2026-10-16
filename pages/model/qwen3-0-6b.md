@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
-**score 35.2** ±0.9 · #616 of 724 · from 26 benchmark results across 10 sources
+**score 35.1** ±0.9 · #618 of 725 · from 26 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #268 of 302*    3.4%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #269 of 303*    3.4%      2
 coding          ▁●▁▃▆██▇▆▄▃▁   #452 of 460*    7.8%      2
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #301 of 395*    3.8%      1
 math            ▁▁▃●█▆▄█▄▁▁▁    #346 of 424     30%      4
 </pre>
 
-<details><summary>agent tasks · #268 of 302 · 3.4% of its score</summary>
+<details><summary>agent tasks · #269 of 303 · 3.4% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 
@@ -101,7 +101,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3</a>                                          9   45% ▇▇▇▇▇
 <a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card</a>                   7   37% ▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    3% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
@@ -110,7 +110,7 @@ source                                    results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 35.2
+weighted average                                   = 35.1
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · LiquidAI/LFM2-1.2B model card ([LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/LICENSE)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

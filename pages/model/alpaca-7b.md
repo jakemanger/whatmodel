@@ -35,8 +35,8 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">MMLU</a>                                 42.9%  ▄···▄●·█···▄ beats 2/5    easy · avg 79%          26%  several runs
-<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.6%  ▄·▄···●·▄··▄ beats 2/5    easy · avg 86%          18%  sharp · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            76.9%  ▄·▄●··▄····▄ beats 2/5    very easy · avg 92%    9.1%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.6%  ▄·▄···●·▄··▄ beats 2/5    easy · avg 87%          18%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            76.9%  ▄·▄●··▄····▄ beats 2/5    very easy · avg 92%    9.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   62.9%  █·█········● beats 2/2    medium · avg 77%       5.7%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   27.6%  ●···▄▄·▄▄▄·▄ beats 1/7    medium · avg 51%       4.1%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>   15.2%  ▄······●··▄▄ beats 1/4    medium · avg 50%       3.7%  typical

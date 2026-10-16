@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 55.4** ±1.6 · #271 of 724 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 55.4** ±1.6 · #271 of 725 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #159 of 302*     25%      2
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #159 of 303*     25%      2
 coding              ▁▁▁▃▆█●▇▆▄▃▁   #251 of 460*    6.0%      1
 math                █··········●       #1 of 2*     23%      2
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #108 of 147*     16%      2
 </pre>
 
-<details><summary>agent tasks · #159 of 302 · 25% of its score</summary>
+<details><summary>agent tasks · #159 of 303 · 25% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-09 · 14.2B params · tongyi-qianwen
 
-**score 40.3** ±0.9 · #554 of 724 · from 6 benchmark results across 5 sources
+**score 40.3** ±0.9 · #555 of 725 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

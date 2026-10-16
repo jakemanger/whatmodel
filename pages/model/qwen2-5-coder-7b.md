@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.6** ±1.0 · #322 of 724 · from 15 benchmark results across 5 sources
+**score 52.6** ±1.0 · #323 of 725 · from 15 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -31,13 +31,13 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     84.1%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 80%       10%  sharp
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           83.5%  █···███·●█·█ beats 4/6    easy · avg 77%      6.5%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      76.5%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 69%      5.5%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          71.7%  ▄····▄▄·▄·●▄ beats 4/6    easy · avg 65%      5.0%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   10.7%  █▂▁▁▂▂●▃▅▅▅▇ beats 17/47  hard · avg 32%      3.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   55.2%  ▃··▁▂▂▃▂●▃▄▂ beats 30/47  medium · avg 50%    3.1%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          71.7%  ▄····▄▄·▄·●▄ beats 4/6    easy · avg 66%      5.0%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   10.7%  █▂▁▁▂▂●▃▅▅▅▇ beats 17/47  hard · avg 32%      4.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   55.2%  ▃··▁▂▂▃▂●▃▄▂ beats 30/47  medium · avg 51%    3.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   41.0%  ▁▁▁▁▁▁▂▂▃█●▄ beats 40/47  hard · avg 31%      2.8%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     65.8%  █·██·█··●·██ beats 4/6    medium · avg 55%    2.6%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     65.9%  ▄·█··▄·●··▄▄ beats 4/6    medium · avg 54%    0.9%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 43/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 43/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 3.09B params · qwen-research
 
-**score 44.4** ±0.6 · #484 of 724 · from 32 benchmark results across 11 sources
+**score 44.4** ±0.6 · #484 of 725 · from 32 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #256 of 302*    0.8%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #257 of 303*    0.8%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #326 of 460     13%      5
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #273 of 395*    2.5%      1
 math            ▁▁▃●█▆▄█▄▁▁▁    #336 of 424     21%      4
 </pre>
 
-<details><summary>agent tasks · #256 of 302 · 0.8% of its score</summary>
+<details><summary>agent tasks · #257 of 303 · 0.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -40,10 +40,10 @@ Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-inst
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    33.1%  ▁●▆▃▆█▆▃▂·▁▁ beats 1/47   medium · avg 57%     10%  sharp · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   45.2%  ▃··▁▂▂▃▂●▃▄▂ beats 21/47  medium · avg 50%    1.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   45.2%  ▃··▁▂▂▃▂●▃▄▂ beats 21/47  medium · avg 51%    1.0%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   35.0%  █▂▁▁▂▂▂▃▅●▅▇ beats 29/47  hard · avg 32%      0.8%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   21.3%  ▁▁▁▁▁▁▂●▃█▅▄ beats 13/47  hard · avg 31%      0.8%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   68.8%  ▁▁▁······▁●█ beats 17/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   68.8%  ▁▁▁······▁●█ beats 17/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>

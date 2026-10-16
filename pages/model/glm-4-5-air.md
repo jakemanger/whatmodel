@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 106B params (12B active) · mit
 
-**score 62.5** ±0.8 · #170 of 724 · from 33 benchmark results across 9 sources
+**score 62.5** ±0.8 · #171 of 725 · from 33 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #142 of 302     17%      9
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #143 of 303     17%      9
 coding          ▁▁▁▃▆██●▆▄▃▁    #163 of 460    7.0%      4
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #135 of 395*    7.4%      2
 math            ▁▁▃▅█▆▄●▄▁▁▁     #93 of 424     19%      3
 web search      ●▁▂▆▄█▃▃▁▁·▁     #80 of 80*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #142 of 302 · 17% of its score</summary>
+<details><summary>agent tasks · #143 of 303 · 17% of its score</summary>
 
 Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o1 (20
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>             57.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 49/131   hard · avg 23%         3.5%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom</a>                     28.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 22/89    very hard · avg 14%    2.7%  sharp · at its level · noisy · small run
-<a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>                 77.9%  ▁····▃·▂▇█▂● beats 24/28    medium · avg 45%       2.5%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>                 77.9%  ▁····▃·▂▇█▂● beats 24/28    medium · avg 46%       2.5%  at its level · small run
 <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                     21.3%  ▂·▄▁●▃▆▄█▂▃▄ beats 7/42     very hard · avg 11%    1.9%  at its level · small run
 <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>                60.8%  ▁▁▁·▅▄▁█▇▁▁● beats 28/28    hard · avg 29%         1.8%  at its level · small run
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">BFCL V4 (2025-11-03 archive, mode…</a>   68.9%  ▃··▅▃▃·▅·▃·● beats 8/10     hard · avg 33%         1.4%  at its level
@@ -103,7 +103,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   54.1%  ▂▃▅▂▆▃█▅●▅▃▆ beats 24/34    medium · avg 41%        4.9%  blunt · at its level
 <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (lab)</a>      75.0%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 86/104   hard · avg 46%          3.7%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                           87.4%  ▁▁▁▁▁▂▂▅██▆● beats 200/214  medium · avg 69%        2.9%  small run
-<a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                       14.5%  ▄▄▄▆█▆●██·▂█ beats 16/32    very hard · avg 7.2%    1.8%  small run
+<a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                       14.5%  ▄▄▄▆█▆●██·▂█ beats 16/32    very hard · avg 7.3%    1.8%  small run
 <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>                 42.5%  ▁·▁·▁▃●▅▃▁█▅ beats 7/29     hard · avg 27%          1.3%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 73/100   medium · avg 66%        0.7%  sharp · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   95.8%  ▁▁▁▁▁▁▁▂▄█▄● beats 144/146  easy · avg 82%          0.3%  noisy

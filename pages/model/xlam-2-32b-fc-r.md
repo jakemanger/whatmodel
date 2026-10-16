@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 32.76B params · cc-by-nc-4.0
 
-**score 66.5** ±3.7 · #124 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.5** ±3.7 · #124 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▃▁   #145 of 336*     94%      2
+agent tasks  ▁▁▃▆█▆●▄▄▃▃▁   #146 of 337*     94%      2
 </pre>
 
-<details><summary>agent tasks · #145 of 336 · 94% of its score</summary>
+<details><summary>agent tasks · #146 of 337 · 94% of its score</summary>
 
 Beats [watt-tool-70B](watt-tool-70b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 

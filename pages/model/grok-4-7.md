@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-09 · closed weights
 
-**score 73.7** ±0.7 · #46 of 724 · from 12 benchmark results across 3 sources
+**score 73.6** ±0.7 · #48 of 725 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #21 of 302*     12%      2
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #21 of 303*     12%      2
 coding          ▁▁▁▃▆██▇▆▄●▁   #15 of 460*     10%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #60 of 395*    5.7%      1
 math            ▁▁▃▅█▆▄█●▁▁▁    #49 of 424     46%      3
 </pre>
 
-<details><summary>agent tasks · #21 of 302 · 12% of its score</summary>
+<details><summary>agent tasks · #21 of 303 · 12% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [Hy4 preview (770B-A49B)](hy4-preview.md) here, though they rank higher overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Spark Open](muse-spark-open.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0404 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 35/49  avg -0.312 IPS           10%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0404 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 35/49  avg -0.311 IPS           11%  sharp
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>       22.2%  ▁▁·▁▁▁▁▅▃█●█ beats 21/27  very hard · avg 2.3%    1.5%  typical
 </pre>
 
@@ -40,7 +40,7 @@ Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1637.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 106/119  avg 969        10%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1637.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 106/119  avg 970        10%  sharp
 </pre>
 
 </details>
@@ -92,7 +92,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   26% ▇▇▇
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 73.7
+weighted average                                   = 73.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-07
 
-**score 22.7** ±3.8 · #910 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 22.7** ±3.8 · #911 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

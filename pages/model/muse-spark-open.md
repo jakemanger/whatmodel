@@ -4,22 +4,87 @@
 
 # Muse Spark Open
 
-Meta · released 2026-10
+Meta · released 2026-10 · 816B params (42B active) · muse-model-license
 
-Meta blog post 2026-10-15 and the gated (manual approval) repo meta-models/Muse-Spark-Open-816B-A42B@0fb0247: 816B total / 42B active MoE, natively multimodal, weights under the Muse Model License with limited commercial terms. Epoch model\_metadata.csv lists 'Muse Spark Open' (Meta AI, 2026-10-15, 'Open weights (restricted use)', low/medium/high/xhigh) with no results yet; not on the LMArena text leaderboard as of dataset revision 7131711 (2026-10-16). Hosted APIs exist (Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter, Together AI per the blog) but none has a reviewed price source yet, so no API price is listed.
+**score 78.6** ±3.1 · #16 of 725 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
-[Model and usage documentation](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## What it's good at
+
+<sub>● marks Muse Spark Open among every model on that task or test, worst to best.</sub>
 
 <pre>
-test                                result  reported by  source
-ZeroBench main with tools (pass@5)   50.0%  lab          <a href="https://research.meta.ai/blog/muse-spark-open#key-benchmarks">Meta vendor-reported benchmar…</a>
-BabyVision with tools                80.2%  lab          <a href="https://research.meta.ai/blog/muse-spark-open#key-benchmarks">Meta vendor-reported benchmar…</a>
-SimpleVQA with tools (search)        73.6%  lab          <a href="https://research.meta.ai/blog/muse-spark-open#key-benchmarks">Meta vendor-reported benchmar…</a>
+task         vs the others            rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁      #49 of 303*     27%      2
+web search                  not ranked yet       —      1
 </pre>
 
+<details><summary>agent tasks · #49 of 303 · 27% of its score</summary>
+
+Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">OSWorld-Verified (lab)</a>               80.4%  █▃·▂▅▂▃▂▅▃●▆ beats 20/27  hard · avg 16%     27%  small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Humanity's Last Exam with tools (…</a>   61.0%  ▂▂▂▁▄▂▃▆█▇●▆ beats 48/55  hard · avg 16%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>web search · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Humanity's Last Exam with tools (…</a>   61.0%  ▂▂▂▁▄▂▃▆█▇●▆ beats 48/55  hard · avg 16%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">SimpleVQA with tools (search) (la…</a>   73.6%  █·········█● beats 2/2    hard · avg 25%     25%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Video-MME v2 (with subtitles) (la…</a>   61.5%  █·········●█ beats 1/2    hard · avg 16%     24%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">IntPhys 2 (lab)</a>                      68.3%  █···█······● beats 2/2    hard · avg 25%     20%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">ZeroBench main with tools (pass@5…</a>   50.0%  █··········● beats 1/1                         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools (lab)</a>          80.2%  █··········● beats 1/1                         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools (lab)</a>            49.4%  █··········● beats 1/1                         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="first-party-meta-scores"></a><a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Meta vendor-reported benchmark scores f…</a>        4   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 78.6
+</pre>
+
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source                  test                            score  why
+Meta vendor-reported …  <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Humanity's Last Exam with too…</a>  61.0%  too few models have it yet
+Meta vendor-reported …  <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">ZeroBench main with tools (pa…</a>  50.0%  too few models have it yet
+Meta vendor-reported …  <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools</a>           80.2%  too few models have it yet
+Meta vendor-reported …  <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools</a>             49.4%  too few models have it yet
+</pre>
+
+</details>
+
 ## How to run it
+
+### Through an API
+
+api (Fireworks AI) · $2.00/M blended · $1.25 in / $4.25 out per 1M tokens · [fireworks.ai](https://fireworks.ai/models/fireworks/muse-spark-open)
+
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/3f893bf02c54a49ebdee0048a812e2ac7f5bd514/providers/fireworks-ai/models/accounts/fireworks/models/muse-spark-open.toml): Fireworks AI serverless standard rate from models.dev (cost input 1.25, output 4.25 USD per 1M tokens; cached input 0.15 excluded). Provider-specific tiers, long-context surcharges, caching and promotions may differ. Fireworks serves text and image input. · [context source](https://github.com/anomalyco/models.dev/blob/3f893bf02c54a49ebdee0048a812e2ac7f5bd514/models/meta/muse-spark-open.toml): models.dev entry for Muse Spark Open (pinned): limit.context 1,048,576 tokens, citing Meta's blog, model card and developer docs; Meta's blog states a 1M-token context window. Model ceiling, not a promise by any hosted API. Observed 2026-10-16.</sub>
 
 ### llama.cpp (recommended)
 
@@ -87,4 +152,4 @@ Other versions: 3bit (~359.21 GB, Mac only) `mlx_lm.chat --model mlx-community/M
 
 Official weights and documentation: [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/muse-spark-open)
+[interactive version](https://whatmodel.sh/model/muse-spark-open) · [JSON](https://whatmodel.sh/api?format=json&all=1)

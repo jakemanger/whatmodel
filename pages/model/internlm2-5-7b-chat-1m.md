@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 47.6** ±4.1 · #410 of 724 · from 3 benchmark results across 2 sources
+**score 47.6** ±4.1 · #411 of 725 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 160/276  medium · avg 72%     40%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            75.5%  ▁▁·▁·●▃▄█▂·▁ beats 3/22     easy · avg 81%       39%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            75.5%  ▁▁·▁·●▃▄█▂·▁ beats 3/22     easy · avg 82%       39%  typical
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           68.9%  ▄··▂▄▂▆●█▄▄▂ beats 10/21    easy · avg 67%       13%  at its level · noisy
 </pre>
 

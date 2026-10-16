@@ -27,7 +27,7 @@ Beats [Phi-2 (2.7B)](phi-2.md), [Falcon 40B Instruct](falcon-40b-instruct.md), [
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1063.4  ▁▁●▂▃▃▃▆▆▇█▃ beats 9/379  avg 1258                     34%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         944.0  ▂▁●▁▃▇█▆▇▄▂▂ beats 8/95   avg 1186                     31%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.4200 MT-Bench score (1-10)  ▆▂▂▆▆●██▂▄▄▆ beats 12/28  avg 8.518 MT-Bench scor…     24%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.4200 MT-Bench score (1-10)  ▆▂▂▆▆●██▂▄▄▆ beats 12/28  avg 8.521 MT-Bench scor…     24%  sharp · noisy
 </pre>
 
 </details>

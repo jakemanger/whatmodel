@@ -78113,7 +78113,14 @@
     "active_b": 42,
     "params_b_source": "https://research.meta.ai/blog/muse-spark-open",
     "params_note": "Meta blog post (2026-10-15): 816B total parameters, 42B active (mixture of experts). Hugging Face safetensors metadata for meta-models/Muse-Spark-Open-816B-A42B@0fb0247 counts 822,036,529,664 parameters (BF16 821,906,490,368 + F32 130,039,296), which includes the multimodal encoders.",
-    "api": null,
+    "api": {
+      "url": "https://fireworks.ai/models/fireworks/muse-spark-open",
+      "provider": "Fireworks AI",
+      "price_in": 1.25,
+      "price_out": 4.25,
+      "price_source": "https://github.com/anomalyco/models.dev/blob/3f893bf02c54a49ebdee0048a812e2ac7f5bd514/providers/fireworks-ai/models/accounts/fireworks/models/muse-spark-open.toml",
+      "price_note": "Fireworks AI serverless standard rate from models.dev (cost input 1.25, output 4.25 USD per 1M tokens; cached input 0.15 excluded). Provider-specific tiers, long-context surcharges, caching and promotions may differ. Fireworks serves text and image input."
+    },
     "local": {
       "variants": [
         {
@@ -78184,11 +78191,11 @@
         }
       ]
     },
-    "context_k": 1000,
-    "context_source": "https://research.meta.ai/blog/muse-spark-open",
-    "context_note": "Meta blog post (2026-10-15): natively multimodal with a 1M-token context window (stated rounded). Model ceiling, not a promise by any hosted API. Observed 2026-10-16.",
+    "context_k": 1048.576,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/3f893bf02c54a49ebdee0048a812e2ac7f5bd514/models/meta/muse-spark-open.toml",
+    "context_note": "models.dev entry for Muse Spark Open (pinned): limit.context 1,048,576 tokens, citing Meta's blog, model card and developer docs; Meta's blog states a 1M-token context window. Model ceiling, not a promise by any hosted API. Observed 2026-10-16.",
     "model_repo": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-    "identity_note": "Meta blog post 2026-10-15 and the gated (manual approval) repo meta-models/Muse-Spark-Open-816B-A42B@0fb0247: 816B total / 42B active MoE, natively multimodal, weights under the Muse Model License with limited commercial terms. Epoch model_metadata.csv lists 'Muse Spark Open' (Meta AI, 2026-10-15, 'Open weights (restricted use)', low/medium/high/xhigh) with no results yet; not on the LMArena text leaderboard as of dataset revision 7131711 (2026-10-16). Hosted APIs exist (Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter, Together AI per the blog) but none has a reviewed price source yet, so no API price is listed.",
+    "identity_note": "Meta blog post 2026-10-15 and the gated (manual approval) repo meta-models/Muse-Spark-Open-816B-A42B@0fb0247: 816B total / 42B active MoE, natively multimodal, weights under the Muse Model License with limited commercial terms. Epoch model_metadata.csv lists 'Muse Spark Open' (Meta AI, 2026-10-15, 'Open weights (restricted use)', low/medium/high/xhigh) with no results yet; not on the LMArena text leaderboard as of dataset revision 7131711 (2026-10-16). Hosted APIs exist (Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter, Together AI per the blog); the listed price is Fireworks AI's.",
     "identity_sources": [
       "https://research.meta.ai/blog/muse-spark-open",
       "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"

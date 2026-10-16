@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 40.0** ±3.4 · #562 of 724 · from 5 benchmark results across 3 sources
+**score 40.0** ±3.4 · #563 of 725 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

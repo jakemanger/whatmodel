@@ -6,7 +6,7 @@
 
 Meta · released 2025-04 · 109B params (17B active) · llama-4
 
-**score 55.1** ±1.0 · #277 of 724 · from 19 benchmark results across 14 sources
+**score 55.1** ±1.0 · #278 of 725 · from 19 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁    #273 of 302     11%      4
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁    #274 of 303     11%      4
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #193 of 395*     10%      1
 math                ▁▁▃▅█●▄█▄▁▁▁   #229 of 424*     26%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #100 of 147*    8.9%      2
 web search          ▂▁▂▆▄●▃▃▁▁·▁     #33 of 80*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #273 of 302 · 11% of its score</summary>
+<details><summary>agent tasks · #274 of 303 · 11% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

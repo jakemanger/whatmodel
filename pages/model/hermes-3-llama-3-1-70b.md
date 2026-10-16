@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 70.55B params · llama3
 
-**score 50.5** ±1.0 · #358 of 724 · from 14 benchmark results across 2 sources
+**score 50.5** ±1.0 · #359 of 725 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ test                             result  vs the others in its run    difficulty 
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   37.7%  ▂▁▂▂▄▃●▃▅█▄▃ beats 33/104   hard · avg 38%      8.8%  sharp · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        79.1%  ▁▁▁▁▁▂▂▅██●▄ beats 164/214  easy · avg 77%      6.9%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               65.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 113/140  medium · avg 67%    6.8%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    47.2%  ▁▁·▁▁▁●▂▄▅█▁ beats 42/188   medium · avg 47%    5.4%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    47.2%  ▁▁·▁▁▁●▂▄▅█▁ beats 42/188   medium · avg 48%    5.4%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  83.2%  ▁▁▁▁▂▁▁▅▇█▃● beats 128/131  easy · avg 83%      4.0%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  49.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 69/107   hard · avg 49%      3.5%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   88.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 132/135  easy · avg 87%      3.0%  small run

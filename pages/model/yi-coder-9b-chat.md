@@ -6,7 +6,7 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 49.8** ±1.3 · #370 of 724 · from 8 benchmark results across 5 sources
+**score 49.7** ±1.3 · #373 of 725 · from 8 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,9 +28,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 20/62  medium · avg 50%     35%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   23.5%  ▁▁·▁▂●▆█▅▂·▂ beats 8/31   hard · avg 23%       33%  sharp
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.9%  █▂▁▁●▂▂▃▅▅▅▇ beats 13/47  hard · avg 32%      6.1%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   33.0%  ▃··▁▂▂▃●█▃▄▂ beats 18/47  medium · avg 50%    5.6%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   33.0%  ▃··▁▂▂▃●█▃▄▂ beats 18/47  medium · avg 51%    5.6%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.4%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 27/47  hard · avg 31%      4.5%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   52.1%  ▁▁▁······●▃█ beats 6/47   easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   52.1%  ▁▁▁······●▃█ beats 6/47   easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/01-ai--Yi-Coder-9B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPlus / EvalPerf published evaluatio…</a>        1   11% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

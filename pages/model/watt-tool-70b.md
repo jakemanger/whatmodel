@@ -6,7 +6,7 @@
 
 Watt AI · released 2024-12 · 70.55B params · apache-2.0
 
-**score 67.0** ±6.5 · #116 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.9** ±6.5 · #117 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #153 of 336*     81%      1
+agent tasks  ▁▁▃▆█●▅▄▄▃▃▁   #154 of 337*     81%      1
 </pre>
 
-<details><summary>agent tasks · #153 of 336 · 81% of its score</summary>
+<details><summary>agent tasks · #154 of 337 · 81% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       19% ▇▇
-weighted average                                   = 67.0
+weighted average                                   = 66.9
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

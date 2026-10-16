@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 63.6** ±1.2 · #162 of 724 · from 10 benchmark results across 4 sources
+**score 63.6** ±1.2 · #161 of 725 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #133 of 302     33%      7
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #134 of 303     33%      7
 coding          ▁▁▁▃▆██●▆▄▃▁    #141 of 460     64%      6
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #122 of 395*     14%      1
 </pre>
 
-<details><summary>agent tasks · #133 of 302 · 33% of its score</summary>
+<details><summary>agent tasks · #134 of 303 · 33% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -44,8 +44,8 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1274.2  ▁▂▄●▅█▄▇▆▄▁▁ beats 18/119  avg 969                  24%  sharp
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   61.8%  ▂▁▁▃▆▃▄▆●▃▄▂ beats 55/71   very hard · avg 9.7%     19%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1274.2  ▁▂▄●▅█▄▇▆▄▁▁ beats 18/119  avg 970                  24%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   61.8%  ▂▁▁▃▆▃▄▆●▃▄▂ beats 55/71   very hard · avg 9.8%     19%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   61.2%  ▁··▁·▁▁▁▆●▇█ beats 15/45   hard · avg 29%          7.9%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 74/131  hard · avg 27%          7.8%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60   hard · avg 24%          4.9%  at its level · small run

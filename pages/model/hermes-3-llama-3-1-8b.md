@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 43.8** ±1.1 · #499 of 724 · from 16 benchmark results across 4 sources
+**score 43.7** ±1.1 · #501 of 725 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>                  58.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 104/140  medium · avg 67%    8.4%  sharp · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>      29.4%  ▂▁▂▂●▃▆▃▅█▄▃ beats 17/104   hard · avg 38%      7.1%  sharp · small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 31/81    medium · avg 56%    6.3%  blunt · at its level
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                       32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/188   medium · avg 47%    6.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                       32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/188   medium · avg 48%    6.0%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                     77.7%  ▁▁▁▁▂▁▁▅▇█●▁ beats 123/131  easy · avg 83%      5.4%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                      82.8%  ▁▁▁▂▂▂▄▆█▇●▂ beats 120/135  easy · avg 87%      4.5%  small run
 <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                          85.0%  ▁····▁▂█▆▅▆● beats 92/103   easy · avg 88%      4.1%  at its level · small run
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    6% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.8
+weighted average                                   = 43.7
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 8.03B params · llama3.1
 
-**score 46.3** ±0.3 · #443 of 724 · from 87 benchmark results across 31 sources
+**score 46.3** ±0.3 · #444 of 725 · from 87 benchmark results across 31 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #262 of 302    1.5%      4
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #263 of 303    1.5%      4
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #314 of 460     28%     13
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #297 of 395    6.0%      6
 math            ▁▁▃●█▆▄█▄▁▁▁   #339 of 424     14%      8
 </pre>
 
-<details><summary>agent tasks · #262 of 302 · 1.5% of its score</summary>
+<details><summary>agent tasks · #263 of 303 · 1.5% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -51,10 +51,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP</a>                                 52.2%  ▄···▄·▄▄█··● beats 7/7    medium · avg 61%    0.7%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>    8.2%  ●▁▁▁·▁▂▃▅▃█▇ beats 0/49   hard · avg 17%      0.4%  typical
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     25.1%  ▃▁▁●▁▄▅▃▄▇▁▄ beats 4/31   medium · avg 39%    0.4%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   54.3%  ▃··▁▂▂▃▂●▃▄▂ beats 29/47  medium · avg 50%    0.3%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   54.3%  ▃··▁▂▂▃▂●▃▄▂ beats 29/47  medium · avg 51%    0.3%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   29.8%  █▂▁▁▂▂▂▃●▅▅▇ beats 25/47  hard · avg 32%      0.3%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   26.2%  ▁▁▁▁▁▁▂▂●█▅▄ beats 17/47  hard · avg 31%      0.3%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   71.8%  ▁▁▁······▁▃● beats 21/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   71.8%  ▁▁▁······▁▃● beats 21/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -123,11 +123,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.9%  ▁▁·▁▂▂▄●▄▅▄▄ beats 20/66    hard · avg 29%          0.5%  typical
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           71.8%  ▃·●▅▅█·▃···▃ beats 1/10     medium · avg 76%        0.4%  blunt · at its level · several runs
 <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge for cr…</a>   35.7%  ●▃··▃▅▅···█▃ beats 0/10     medium · avg 53%        0.4%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                28.4%  ▁▁▁▃▃▃▁●▁▃·▄ beats 11/21    hard · avg 30%          0.3%  at its level
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            84.7%  ▁▁·▁·▂▃▄●▂·▁ beats 14/22    easy · avg 81%          0.3%  typical
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                28.4%  ▁▁▁▃▃▃▁●▁▃·▄ beats 11/21    hard · avg 31%          0.3%  at its level
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            84.7%  ▁▁·▁·▂▃▄●▂·▁ beats 14/22    easy · avg 82%          0.3%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   70.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 166/276  medium · avg 72%        0.3%  at its level · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   38.7%  ●··▃▁▁▁▅█▅▁▅ beats 0/24     hard · avg 51%          0.2%  blunt · at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.0%  ●···▁▁▁▂▃·▆▂ beats 7/23     very hard · avg 28%     0.2%  sharp · too hard for it
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.0%  ●···▁▁▁▂▃·▆▂ beats 7/23     very hard · avg 29%     0.2%  sharp · too hard for it
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   84.4%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 95/146   easy · avg 82%          0.2%  at its level · noisy
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                                 83.2%  ▃·▅·▃█·▃●··▃ beats 8/10     medium · avg 82%        0.1%  blunt · at its level
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       55.1%  ▃▃▂·●▃·▅█▂▅▂ beats 6/21     medium · avg 64%        0.1%  blunt · at its level · several runs

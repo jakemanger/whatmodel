@@ -6,7 +6,7 @@
 
 Reka AI · released 2025-03 · 20.91B params · apache-2.0
 
-**score 53.0** ±5.4 · #395 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±5.4 · #397 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   87% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            13% ▇▇
-weighted average                        = 53.0
+weighted average                        = 52.9
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 24.6** ±0.7 · #682 of 724 · from 44 benchmark results across 12 sources
+**score 24.7** ±0.7 · #682 of 725 · from 44 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">WinoGrande</a>                           64.2%  ▁····▁··▁▂●▄ beats 9/26    easy · avg 87%         9.0%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">HellaSwag</a>                            66.2%  ▃···▁▇●█▇▃▁▁ beats 8/26    very easy · avg 91%    7.7%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Easy</a>                             62.2%  ▁▁·▁▁▄●▄█▅▁▃ beats 8/26    easy · avg 85%         3.8%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">SciQ</a>                                 91.5%  ▁·▁·▁·▃●▃█▄▁ beats 10/26   very easy · avg 97%    3.6%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">SciQ</a>                                 91.5%  ▁·▁·▁·▃●▃█▄▁ beats 10/26   very easy · avg 98%    3.6%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">PIQA</a>                                 75.6%  ▁·▁··▁▁▃●▅█▂ beats 8/26    easy · avg 87%         3.4%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">BoolQ</a>                                65.4%  ▂▃▂▅●▂▅▆█▂▂▂ beats 8/26    easy · avg 88%         3.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), last-wo…</a>   68.2%  ▁··▂▁▁▁▂●█▅▃ beats 11/26   very easy · avg 86%    3.4%  blunt · at its level · several runs
@@ -101,7 +101,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    0% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 24.6
+weighted average                                   = 24.7
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Prompting Language Models for Linguistic Structure ([CC BY 4.0](../../licenses/acl-2023-acl-long-367-CC-BY-4-0.txt)) · Generative Calibration for In-context Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-152-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

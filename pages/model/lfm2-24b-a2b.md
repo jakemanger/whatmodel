@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 51.5** ±1.1 · #335 of 724 · from 11 benchmark results across 1 source
+**score 51.4** ±1.1 · #338 of 725 · from 11 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -56,7 +56,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 51.5
+weighted average                                   = 51.4
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>

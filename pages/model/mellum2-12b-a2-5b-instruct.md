@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.8** ±1.6 · #347 of 724 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.8** ±1.6 · #348 of 725 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #178 of 302*     10%      2
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #179 of 303*     10%      2
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #319 of 460*     25%      2
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #242 of 395*    4.0%      1
 </pre>
 
-<details><summary>agent tasks · #178 of 302 · 10% of its score</summary>
+<details><summary>agent tasks · #179 of 303 · 10% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 

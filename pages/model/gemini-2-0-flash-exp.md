@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   17.1%  ▂·█··▆●·▂▂·▄ beats 9/13   avg 35%                 13%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   75.4%  ▂·▄··▂▂·▄▂●▄ beats 9/13   medium · avg 51%       6.0%  at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    4.4%  ▃···▃·█▃▅▃▅● beats 11/13  avg 11%                3.3%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    4.4%  ▃···▃·█▃▅▃▅● beats 11/13  avg 11%                3.2%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   53.0%  ▂·▂·▂●▂▄▄··▄ beats 6/13   very hard · avg 54%    3.2%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   60.4%  ▂·······▆█●▆ beats 10/13  very hard · avg 57%    2.6%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   69.8%  ▃█▃▅▃·▃·▃●▃▃ beats 11/13  medium · avg 56%       1.2%  blunt · at its level

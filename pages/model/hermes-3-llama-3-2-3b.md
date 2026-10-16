@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-12 · 3.21B params · llama3
 
-**score 40.0** ±3.4 · #748 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.0** ±3.4 · #749 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

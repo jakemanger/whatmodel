@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 53.2** ±0.8 · #309 of 724 · from 25 benchmark results across 5 sources
+**score 53.1** ±0.8 · #312 of 725 · from 25 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -56,7 +56,7 @@ test                               result  vs the others in its run  difficulty 
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                     64.6%  ▄··▄····█●▄▄ beats 4/6    medium · avg 49%       9.1%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     71.6%  ▄·····▄··▄●█ beats 3/6    medium · avg 58%       8.1%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     95.1%  ▃·····▃···▅● beats 5/6    very easy · avg 90%    5.4%  maxed out
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   37.8%  ▄······●▄▄·█ beats 1/6    hard · avg 30%         4.1%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   37.8%  ▄······●▄▄·█ beats 1/6    hard · avg 31%         4.1%  at its level
 </pre>
 
 </details>
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">JetBrains/Mellum2-12B-A2.5B-Thinking mo…</a>        5   10% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 53.2
+weighted average                                   = 53.1
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · JetBrains/Mellum2-12B-A2.5B-Thinking model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

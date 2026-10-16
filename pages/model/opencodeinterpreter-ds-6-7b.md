@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · 6.74B params · apache-2.0
 
-**score 50.7** ±0.9 · #352 of 724 · from 3 benchmark results across 1 source
+**score 50.7** ±0.9 · #352 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

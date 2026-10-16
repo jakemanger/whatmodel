@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2024-03 · 13.02B params · apache-2.0
 
-**score 42.2** ±0.8 · #524 of 724 · from 3 benchmark results across 1 source
+**score 42.2** ±0.8 · #525 of 725 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

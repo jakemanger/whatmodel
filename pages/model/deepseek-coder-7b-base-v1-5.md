@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 40.3** ±1.2 · #740 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.3** ±1.2 · #741 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 44.0** ±1.3 · #497 of 724 · from 4 benchmark results across 4 sources
+**score 44.0** ±1.3 · #497 of 725 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

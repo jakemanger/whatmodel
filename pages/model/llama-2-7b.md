@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 31.8** ±0.5 · #644 of 724 · from 73 benchmark results across 12 sources
+**score 31.8** ±0.5 · #645 of 725 · from 73 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -60,13 +60,13 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2024-02-11%2021%3A35%3A55.239271.json">Natural Questions (closed book)</a>      27.1%  ▁·▁·▁▂▁▂·▅▂● beats 23/28   medium · avg 48%       3.7%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                                 77.7%  ▁·▁··▁▁▃█●█▂ beats 17/26   easy · avg 87%         2.9%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-22%2004%3A21%3A19.624624.json">TriviaQA</a>                              9.2%  ▁··▁●▃▃▁▄▅▄█ beats 4/28    easy · avg 81%         2.1%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                                 93.6%  ▁·▁·▁·▃▅▃●▄▁ beats 17/26   very easy · avg 97%    1.9%  blunt · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                           43.5%  ▁···▁▃█●▁▁·▁ beats 21/26   medium · avg 60%       1.3%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                                 93.6%  ▁·▁·▁·▃▅▃●▄▁ beats 17/26   very easy · avg 98%    1.9%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                           43.5%  ▁···▁▃█●▁▁·▁ beats 21/26   medium · avg 61%       1.3%  blunt · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.4%  ▁····▁▁·▁·▃● beats 7/11    hard · avg 63%         1.0%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">LAMBADA (OpenAI version), last-wo…</a>   73.5%  ▁··▂▁▁▁▂▆█●▃ beats 21/26   very easy · avg 86%    0.6%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   48.9%  ▃▁▁▁▁▁▁●▂█▅▁ beats 65/276  medium · avg 72%       0.5%  noisy
-<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               32.4%  ▁···●▁▂▁▂▂▃█ beats 1/33    medium · avg 59%       0.4%  noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   52.8%  ▁▁▁▁▁▁●▂▄█▄▃ beats 21/146  easy · avg 82%         0.4%  at its level · noisy
+<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               32.4%  ▁···●▁▂▁▂▂▃█ beats 1/33    medium · avg 59%       0.4%  noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   51.2%  ▂··▁▃▂▂▂●▅▁▂ beats 12/25   medium · avg 59%       0.4%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   31.3%  ▃·▁▁●▁▂▅█▇▄▁ beats 13/100  medium · avg 66%       0.3%  sharp · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-08%2020%3A10%3A43.772045.json">TruthfulQA MC2</a>                       39.0%  ▅●█▆▁▂▅···▁▁ beats 7/31    medium · avg 55%       0.2%  blunt · at its level · several runs

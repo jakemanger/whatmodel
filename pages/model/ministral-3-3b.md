@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 46.3** ±0.8 · #444 of 724 · from 33 benchmark results across 8 sources
+**score 46.3** ±0.8 · #445 of 725 · from 33 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #284 of 302*    1.7%      1
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #285 of 303*    1.7%      1
 chat &amp; writing      ▁▁▁▃●▄▅█▆▆▇▃   #328 of 395*    3.6%      2
 math                ▁▁▃▅●▆▄█▄▁▁▁    #278 of 424     28%      4
 vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #130 of 147     10%      9
 </pre>
 
-<details><summary>agent tasks · #284 of 302 · 1.7% of its score</summary>
+<details><summary>agent tasks · #285 of 303 · 1.7% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 45%    2.5%  at its level · small run
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 45%    2.4%  at its level · small run
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified)</a>     72.5%  ▄···▄●▄····▄ beats 2/5    easy · avg 78%      1.2%  at its level
 </pre>
 
@@ -65,9 +65,9 @@ Beats [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   76.6%  █·▄·······▄● beats 5/5    easy · avg 77%      3.2%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          53.1%  ▄▄▄●·······▄ beats 4/5    medium · avg 60%    2.4%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             69.2%  ●·····▃··▃·▃ beats 1/5    easy · avg 78%      1.3%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   76.6%  █·▄·······▄● beats 5/5    easy · avg 78%      3.2%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          53.1%  ▄▄▄●·······▄ beats 4/5    medium · avg 61%    2.4%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             69.2%  ●·····▃··▃·▃ beats 1/5    easy · avg 79%      1.3%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                  65.2%  ▄▄·▄·····●·▄ beats 3/5    easy · avg 65%      1.1%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                      73.7%  ▄··▄··●··▄·▄ beats 3/5    easy · avg 84%      0.6%  noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                     58.3%  ▄···●··▄▄··▄ beats 2/5    easy · avg 68%      0.6%  blunt · at its level
@@ -87,7 +87,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 2/7     medium · avg 54%       8.5%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.6%  ▄···●·▄·█·▄▄ beats 1/7     very hard · avg 36%    6.1%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   39.3%  ▂▃●▂▆▃█▅█▅▃▆ beats 4/34    medium · avg 41%       4.8%  blunt · at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               26.7%  ●··▄··█··█·▄ beats 0/7     medium · avg 41%       3.7%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               26.7%  ●··▄··█··█·▄ beats 0/7     medium · avg 41%       3.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        38.4%  ●··▃▃··▅···█ beats 0/7     medium · avg 56%       2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             39.4%  ●···▄·█·▄·▄█ beats 0/7     medium · avg 58%       2.3%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 3/7     medium · avg 46%       2.0%  blunt · at its level

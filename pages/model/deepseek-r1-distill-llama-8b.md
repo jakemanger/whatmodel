@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 8.03B params · mit
 
-**score 46.8** ±1.3 · #436 of 724 · from 18 benchmark results across 7 sources
+**score 46.8** ±1.2 · #437 of 725 · from 18 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,10 +27,10 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   39.6%  ▄····▄●··▄█▄ beats 2/6    medium · avg 41%     12%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    6.8%  ▃··▁●▂▃▂█▃▄▂ beats 6/47   medium · avg 50%    4.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    6.8%  ▃··▁●▂▃▂█▃▄▂ beats 6/47   medium · avg 51%    4.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.6%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 7/47   hard · avg 32%      4.5%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    4.9%  ▁▁●▁▁▁▂▂▃█▅▄ beats 3/47   hard · avg 31%      3.7%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    0.4%  ●▁▁······▁▃█ beats 0/47   easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>    0.4%  ●▁▁······▁▃█ beats 0/47   easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ test             result  vs the others in its run  difficulty           counts  
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>                   49.0%  ▄·····●·█▄▄▄ beats 1/7     hard · avg 48%       30%  sharp · several runs
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   28.5%  ▁▁▁▁▁▂▂●▄▆█▃ beats 24/97   hard · avg 31%      8.3%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   42.4%  ▃▁▁▁▁▁●▁▂█▅▁ beats 50/276  medium · avg 72%    3.8%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   42.4%  ▃▁▁▁▁▁●▁▂█▅▁ beats 50/276  medium · avg 72%    3.9%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   53.7%  ▃·▁▁▂▁▂●█▇▄▁ beats 28/100  medium · avg 66%    3.1%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   78.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 61/146  easy · avg 82%      2.3%  at its level · noisy
 </pre>

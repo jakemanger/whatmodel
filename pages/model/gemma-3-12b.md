@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 12.2B params · gemma
 
-**score 52.5** ±0.6 · #324 of 724 · from 56 benchmark results across 16 sources
+**score 52.5** ±0.6 · #325 of 725 · from 56 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #252 of 302*    2.3%      2
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #253 of 303*    2.3%      2
 coding              ▁▁▁▃▆●█▇▆▄▃▁    #293 of 460    8.7%      5
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #168 of 395*    4.2%      2
 math                ▁▁▃▅█●▄█▄▁▁▁    #208 of 424     15%      6
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #124 of 147    6.9%      9
 </pre>
 
-<details><summary>agent tasks · #252 of 302 · 2.3% of its score</summary>
+<details><summary>agent tasks · #253 of 303 · 2.3% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -88,7 +88,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>           62.9%  ▁··▁▄▄▇●▅▆█▄ beats 19/47  medium · avg 60%       1.3%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                     59.6%  ▁····▁▁▄●▇▆▆ beats 22/52  medium · avg 57%       1.3%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">InfographicVQA (lab)</a>                 64.9%  ▃·▃●█▃▃▃▃▃▃▃ beats 2/13   medium · avg 65%       0.9%  at its level · small run
-<a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    71.6%  ▃▅▃●·▃▅·▃·▃▅ beats 6/13   easy · avg 71%         0.5%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    71.6%  ▃▅▃●·▃▅·▃·▃▅ beats 6/13   easy · avg 72%         0.5%  blunt · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                        75.7%  ▁··▁▁▁▁▁●▅▅█ beats 9/44   easy · avg 77%         0.4%  blunt · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                         87.1%  ▁··●▁▁▁▇█▇▄▅ beats 2/28   very easy · avg 89%    0.3%  blunt · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                        67.7%  ▁▁▁●▅▁▃·▃▃▃█ beats 4/24   easy · avg 74%         0.2%  blunt · at its level · small run

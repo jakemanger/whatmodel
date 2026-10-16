@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 32B params · exaone
 
-**score 55.7** ±1.5 · #264 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.7** ±1.5 · #265 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

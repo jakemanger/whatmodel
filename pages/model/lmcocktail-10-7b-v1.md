@@ -6,7 +6,7 @@
 
 Yhyu13 · released 2023-12 · 10.73B params · llama2
 
-**score 43.2** ±1.8 · #682 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.2** ±1.8 · #683 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

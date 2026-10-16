@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 81.1** ±0.7 · #8 of 724 · from 21 benchmark results across 7 sources
+**score 81.1** ±0.7 · #8 of 725 · from 21 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅▅▄▃●     #7 of 302     20%      4
+agent tasks     ▁▁▃▆█▆▅▅▅▄▃●     #7 of 303     20%      4
 coding          ▁▁▁▃▆██▇▆▄●▁     #7 of 460     13%      3
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #43 of 395*    4.9%      1
 math            ▁▁▃▅█▆▄█▄▁●▁     #5 of 424     25%      3
 </pre>
 
-<details><summary>agent tasks · #7 of 302 · 20% of its score</summary>
+<details><summary>agent tasks · #7 of 303 · 20% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0971 IPS  ▁▁▁▄▂▃▇█▂▂●▃ beats 44/49  avg -0.312 IPS          9.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0971 IPS  ▁▁▁▄▂▃▇█▂▂●▃ beats 44/49  avg -0.311 IPS          9.1%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-sol-max-codex.json">Terminal-Bench 4.0</a>                       49.4%  █▅▅▅▅·▅▃▃●▅▅ beats 15/20  very hard · avg 0.5%    6.6%  sharp · at its level
 <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>            68.8%  █··●▃····▃·▃ beats 3/6    hard · avg 22%          2.2%  at its level
 <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">Agents' Last Exam (metric/harness…</a>       56.4%  ▂·▂·█▂···▂▄● beats 10/11  very hard · avg 12%     1.7%  at its level
@@ -40,7 +40,7 @@ test                                    result  vs the others in its run  diffic
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1689.0  ▁▂▄▃▅█▄▇▆●▁▁ beats 113/119  avg 969           8.3%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1689.0  ▁▂▄▃▅█▄▇▆●▁▁ beats 113/119  avg 970           8.3%  sharp
 <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        68.8%  █··●▃····▃·▃ beats 3/6      hard · avg 22%    2.2%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   82.7%  ▁▁▁▁·▁▂▃▅▃█● beats 39/49    hard · avg 17%    2.1%  typical
 </pre>

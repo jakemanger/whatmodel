@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 38.2** ±1.1 · #587 of 724 · from 14 benchmark results across 5 sources
+**score 38.2** ±1.1 · #588 of 725 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,10 +27,10 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    4.6%  ▃··●▂▂▃▂█▃▄▂ beats 5/47   medium · avg 50%    2.1%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    4.6%  ▃··●▂▂▃▂█▃▄▂ beats 5/47   medium · avg 51%    2.1%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   22.9%  ▁▁▁▁▁▁▂▂●█▅▄ beats 15/47  hard · avg 31%      2.0%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.1%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 0/47   hard · avg 32%      1.4%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.1%  ▁▁▁······▁●█ beats 12/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.1%  ▁▁▁······▁●█ beats 12/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>

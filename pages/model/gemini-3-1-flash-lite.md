@@ -6,7 +6,7 @@
 
 Google · released 2026-03 · closed weights
 
-**score 66.5** ±0.9 · #117 of 724 · from 11 benchmark results across 6 sources
+**score 66.5** ±0.9 · #117 of 725 · from 11 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #132 of 302*    3.9%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #133 of 303*    3.9%      1
 coding              ▁▁▁▃▆██●▆▄▃▁   #156 of 460*     15%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #76 of 395*    8.7%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁    #110 of 424     38%      3
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #60 of 147*     
 web search          ▂●▂▆▄█▃▃▁▁·▁     #75 of 80*    3.9%      1
 </pre>
 
-<details><summary>agent tasks · #132 of 302 · 3.9% of its score</summary>
+<details><summary>agent tasks · #133 of 303 · 3.9% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.7  ▁▂●▃▅█▄▇▆▄▁▁ beats 15/119  avg 969        15%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.7  ▁▂●▃▅█▄▇▆▄▁▁ beats 15/119  avg 970        15%  sharp
 </pre>
 
 </details>

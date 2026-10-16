@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 72.71B params · qwen
 
-**score 55.2** ±2.1 · #276 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.2** ±2.1 · #277 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                44.1%  ▃·····▃··█▅● beats 8/8    hard · avg 34%          53%  at its level
 <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       95.9%  ▄···█▄▄·▄·▄● beats 7/8    very easy · avg 92%     25%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   85.9%  ▃····▃·▅·▅·● beats 8/8    easy · avg 73%          20%  typical
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   85.9%  ▃····▃·▅·▅·● beats 8/8    easy · avg 74%          20%  typical
 </pre>
 
 </details>

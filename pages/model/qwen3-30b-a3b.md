@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 30.5B params (3.3B active) · apache-2.0
 
-**score 55.6** ±0.4 · #266 of 724 · from 112 benchmark results across 16 sources
+**score 55.6** ±0.4 · #267 of 725 · from 112 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #207 of 302     22%      6
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #208 of 303     22%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #242 of 460     10%      3
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #189 of 395     11%      5
 math            ▁▁▃▅█●▄█▄▁▁▁   #193 of 424     15%      4
 </pre>
 
-<details><summary>agent tasks · #207 of 302 · 22% of its score</summary>
+<details><summary>agent tasks · #208 of 303 · 22% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 test                    result  vs the others in its run   difficulty            counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>   22.8%  ●·█········█ beats 0/6     very hard · avg 9.4%    9.3%  sharp · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/README.md">τ-bench Retail (lab)</a>     38.3%  ▁····▃·▂●█▂▆ beats 12/28   medium · avg 35%        3.8%  at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/README.md">τ²-bench Retail (lab)</a>    31.6%  ▁····●▁▃▆█▃▁ beats 1/44    hard · avg 27%          2.9%  at its level · small run · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/README.md">τ²-bench Retail (lab)</a>    31.6%  ▁····●▁▃▆█▃▁ beats 1/44    hard · avg 28%          2.9%  at its level · small run · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/README.md">τ-bench Airline (lab)</a>    18.0%  ▁▁▁·●▄▁█▇▁▁▇ beats 4/28    hard · avg 27%          2.5%  at its level · small run · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/README.md">τ²-bench Airline (lab)</a>   18.0%  ▁▁·●▁▃▂▁█▅▂▃ beats 2/42    hard · avg 16%          2.2%  small run · several runs
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                  65.7%  ▁▁▁▁▁▃▅█▅●▁▁ beats 99/114  medium · avg 51%        1.6%  blunt · at its level · several runs
@@ -57,7 +57,7 @@ Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">Arena-Hard v2 aggregate (lab)</a>        36.3%  ▁▁··●▃▁▃█▁▁▇ beats 4/22     hard · avg 26%         4.6%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">Arena-Hard v2 aggregate (lab)</a>        36.3%  ▁▁··●▃▁▃█▁▁▇ beats 4/22     hard · avg 27%         4.6%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1326.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 164/379  avg 1258               2.1%  blunt
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   33.9%  ▂·▃▅▅·●█▆▂▂▂ beats 10/22    very hard · avg 12%    1.9%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/README.md">IFEval (aggregation unspecified) …</a>   86.5%  ▁▁▃▁▂▄▄●█▃▂▁ beats 83/141   easy · avg 76%         1.9%  small run · several runs

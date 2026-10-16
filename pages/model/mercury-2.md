@@ -6,7 +6,7 @@
 
 Inception · proprietary
 
-**score 58.7** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 58.6** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1170.0  ▁●▄▃▅█▄▇▆▄▁▁ beats 3/119  avg 969        62%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1170.0  ▁●▄▃▅█▄▇▆▄▁▁ beats 3/119  avg 970        62%  sharp
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ source                             results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>        1    0% ▇
 prior: pull toward the middle                 2% ▇
-weighted average                            = 58.7
+weighted average                            = 58.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

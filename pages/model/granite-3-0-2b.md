@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 2.63B params · apache-2.0
 
-**score 40.8** ±0.8 · #544 of 724 · from 22 benchmark results across 5 sources
+**score 40.8** ±0.8 · #545 of 725 · from 22 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,10 +29,10 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      50.6%  ▄·▄█·▄·●···█ beats 5/7    easy · avg 77%      9.1%  sharp · at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           41.0%  ▄···▄·▄▄●··█ beats 5/7    medium · avg 61%    4.4%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   14.2%  ▃··▁▂●▃▂█▃▄▂ beats 11/47  medium · avg 50%    1.6%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   14.2%  ▃··▁▂●▃▂█▃▄▂ beats 11/47  medium · avg 51%    1.6%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.4%  ▁▁▁▁▁▁▂●▃█▅▄ beats 12/47  hard · avg 31%      1.3%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.0%  █●▁▁▂▂▂▃▅▅▅▇ beats 9/47   hard · avg 32%      1.1%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   69.0%  ▁▁▁······▁●█ beats 18/47  easy · avg 66%      0.1%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   69.0%  ▁▁▁······▁●█ beats 18/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                     71.9%  █···▄▄▄●···█ beats 5/7     medium · avg 80%       5.5%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                      76.8%  ▄·▄··█▄·●·▄▄ beats 5/7     easy · avg 85%         3.5%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>                  54.4%  ▄····█··▄●▄█ beats 4/7     medium · avg 72%       3.3%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                     43.2%  ▄▄··▄··▄·●▄▄ beats 5/7     medium · avg 54%       3.3%  typical
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                     43.2%  ▄▄··▄··▄·●▄▄ beats 5/7     medium · avg 55%       3.3%  typical
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (lab)</a>                          84.9%  ▄▄····▄▄·●·█ beats 5/7     easy · avg 88%         2.2%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   71.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 40/146  easy · avg 82%         1.2%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.2%  ▁▁▂▃●▄█▆▃▂▂▁ beats 28/140  very easy · avg 94%    0.7%  blunt · noisy

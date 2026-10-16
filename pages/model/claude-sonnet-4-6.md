@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-02 · closed weights
 
-**score 71.3** ±0.6 · #66 of 724 · from 41 benchmark results across 22 sources
+**score 71.3** ±0.6 · #66 of 725 · from 41 benchmark results across 22 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #46 of 302     38%     12
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #46 of 303     38%     12
 coding              ▁▁▁▃▆██▇▆●▃▁    #46 of 460     28%      5
-chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #30 of 395*    4.1%      1
-math                ▁▁▃▅█▆●█▄▁▁▁   #145 of 424    3.2%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #30 of 395*    4.0%      1
+math                ▁▁▃▅█▆●█▄▁▁▁   #145 of 424    3.1%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #31 of 147     12%      7
-web search          ▂▁▂▆▄●▃▃▁▁·▁     #31 of 80    5.2%      3
+web search          ▂▁▂▆▄●▃▃▁▁·▁     #31 of 80    5.1%      3
 </pre>
 
-<details><summary>agent tasks · #46 of 302 · 38% of its score</summary>
+<details><summary>agent tasks · #46 of 303 · 38% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall.
+Beats [Muse Spark Open](muse-spark-open.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">SWE-bench Pro (split unspecified)…</a>   58.1%  ●█·▄·▄██···▄ beats 0/9    very hard · avg 8.1%     10%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.2%  ▁··▁·▁▂▁▄●▄▁ beats 18/29  hard · avg 18%          7.7%  sharp · at its level
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Terminal-Bench 2.1 (lab)</a>             67.0%  ▁·▁·▁▁▄▃▄●▄█ beats 31/58  hard · avg 18%          3.4%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">OSWorld-Verified (lab)</a>               78.5%  █▄·▂▆▂▄▂▆●▆█ beats 17/25  hard · avg 31%          3.0%  typical
+<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">OSWorld-Verified (lab)</a>               78.5%  █▃·▂▅▂▃▂▅●▆▆ beats 18/27  hard · avg 27%          3.4%  at its level
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    9.9%  ▄···█▄●▄█▄·█ beats 4/10   very hard · avg 1.8%    2.7%  typical
-<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam with tools (…</a>   46.8%  ▁······●·▄·█ beats 1/10   very hard · avg 14%     2.4%  at its level
+<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam with tools (…</a>   46.8%  ▁······●·▄·█ beats 1/10   very hard · avg 14%     2.3%  at its level
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=135">Toolathlon (Tool Decathlon) (lab)</a>    49.4%  ●···█··█·███ beats 0/5    hard · avg 16%          2.1%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   51.5%  ▃··▃·▃██▃▃●█ beats 11/14  very hard · avg 2.6%    1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   59.2%  ▅··▃·▃·█▃▅●█ beats 12/15  very hard · avg 5.0%    1.6%  sharp · at its level
 <a href="https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf#page=18">τ²-bench Telecom (lab)</a>               97.9%  ▁·▅█▆▅▂▃▃▂●▁ beats 80/89  hard · avg 29%          1.2%  sharp · noisy
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   38.5%  ▄█··▄▄▄██·●█ beats 10/12  very hard · avg 6.1%    1.2%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   38.5%  ▄█··▄▄▄██·●█ beats 10/12  very hard · avg 6.2%    1.2%  at its level
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    8.4%  ▁▁·▁▁▁▁●▃█▅█ beats 9/27   very hard · avg 2.3%    0.9%  typical
 </pre>
 
@@ -54,25 +54,25 @@ Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">SWE-bench Pro (split unspecified)…</a>   58.1%  ●█·▄·▄██···▄ beats 0/9     very hard · avg 8.1%     10%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.2%  ▁··▁·▁▂▁▄●▄▁ beats 18/29   hard · avg 18%          7.7%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1521.4  ▁▂▄▃▅█▄●▆▄▁▁ beats 78/119  avg 969                 6.9%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1521.4  ▁▂▄▃▅█▄●▆▄▁▁ beats 78/119  avg 970                 6.9%  sharp
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   74.5%  ▄··█·▄··▄█·● beats 7/7     hard · avg 33%          1.9%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   51.5%  ▃··▃·▃██▃▃●█ beats 11/14   very hard · avg 2.6%    1.7%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #30 of 395 · 4.1% of its score</summary>
+<details><summary>chat &amp; writing · #30 of 395 · 4.0% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1472.2  ▁▁▁▂▃▃▃▆▆▇●▃ beats 344/379  avg 1258      4.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1472.2  ▁▁▁▂▃▃▃▆▆▇●▃ beats 344/379  avg 1258      4.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #145 of 424 · 3.2% of its score</summary>
+<details><summary>math · #145 of 424 · 3.1% of its score</summary>
 
 Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -102,15 +102,15 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #31 of 80 · 5.2% of its score</summary>
+<details><summary>web search · #31 of 80 · 5.1% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.3-Codex](gpt-5-3-codex.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam with tools (…</a>   46.8%  ▁······●·▄·█ beats 1/10   very hard · avg 14%     2.4%  at its level
+<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam with tools (…</a>   46.8%  ▁······●·▄·█ beats 1/10   very hard · avg 14%     2.3%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1201.0  ▁·▁▁▂▂▂█●▂▁▁ beats 21/30  avg 1050                1.6%  blunt
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   38.5%  ▄█··▄▄▄██·●█ beats 10/12  very hard · avg 6.1%    1.2%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   38.5%  ▄█··▄▄▄██·●█ beats 10/12  very hard · avg 6.2%    1.2%  at its level
 </pre>
 
 </details>
@@ -119,19 +119,19 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam (lab)</a>           34.6%  ▂·····●·▄▂█▄ beats 1/10     very hard · avg 5.8%    4.2%  at its level
+<a href="https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115">Humanity's Last Exam (lab)</a>           34.6%  ▂·····●·▄▂█▄ beats 1/10     very hard · avg 5.9%    4.1%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         78.8%  ▁▁▁▁▂▄▆▄▅●█▅ beats 123/208  hard · avg 38%          3.8%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         14.0%  █··▂●▇▄█▂▃▁▁ beats 20/74    very hard · avg 9.4%    3.6%  sharp · noisy
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.0%  ▁▁▂▁▃▄█●▄▅▂▃ beats 20/39    very hard · avg 21%     3.1%  at its level
 <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   59.7%  ▅··▃▅·█·▃█●▃ beats 12/15    hard · avg 22%          2.8%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 3.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 17/135   very hard · avg 5.8%    2.7%  sharp · noisy
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1384.2  ▁·▂▁▄▅▅▃█▄●▁ beats 61/62    avg 1031                2.4%  typical
-<a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1043.0  █··●█··▄·▄·▄ beats 2/7      avg 818                 2.1%  typical
-<a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, over…</a>   56.0%  ▄▄··▄▄·▄█●██ beats 7/11     hard · avg 25%          2.1%  blunt · at its level
+<a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1043.0  █··●█··▄·▄·▄ beats 2/7      avg 819                 2.1%  typical
+<a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, over…</a>   56.0%  ▄▄··▄▄·▄█●██ beats 7/11     hard · avg 25%          2.0%  blunt · at its level
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   44.3%  ▆▂·▄█·●▂·▄▄▂ beats 10/16    very hard · avg 35%     1.6%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    32.8%  ▁▁▃▂▃▃●▆█▃▂▅ beats 23/78    very hard · avg 7.4%    1.6%  at its level
 <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    7.3%  ▃▃█▃·▅···█●▃ beats 11/12    very hard · avg 0.8%    1.4%  too hard for it
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>           54.4%  ▄··▄▄▄···█·● beats 7/7      very hard · avg 8.8%    1.2%  at its level
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>           54.4%  ▄··▄▄▄···█·● beats 7/7      very hard · avg 8.9%    1.2%  at its level
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset</a>         79.5%  ▃······▃▃▃█● beats 7/7      hard · avg 21%          1.0%  at its level · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   64.8%  ▁··▃▁▁▁▅█●▁▅ beats 16/24    hard · avg 51%          0.8%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.4%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 38/98    very easy · avg 90%     0.0%  blunt

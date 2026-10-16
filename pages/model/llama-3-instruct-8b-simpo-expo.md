@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 8.03B params · llama3
 
-**score 52.1** ±1.3 · #328 of 724 · from 3 benchmark results across 3 sources
+**score 52.1** ±1.3 · #328 of 725 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #226 of 395*     76% 
 
 <details><summary>chat &amp; writing · #226 of 395 · 76% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty      counts  why
@@ -34,7 +34,7 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  35.0150 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 21/52    avg 42.747 WB-Score     19%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  35.0150 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 21/52    avg 42.785 WB-Score     19%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 137/276  medium · avg 72%       4.0%  at its level · noisy
 </pre>
 

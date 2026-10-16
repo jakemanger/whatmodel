@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 41.6** ±0.5 · #533 of 724 · from 23 benchmark results across 7 sources
+**score 41.6** ±0.5 · #534 of 725 · from 23 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            51.8%  ▁·▁▁▃▄●▅█▃▁▁ beats 38/99  easy · avg 76%       37%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           43.9%  ▁·▁▁▁▃▄●▄█▃▁ beats 35/99  easy · avg 70%       17%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 48.6%  █·▅▃▃▃▅▃▃●·▅ beats 13/15  easy · avg 71%      8.9%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 48.6%  █·▅▃▃▃▅▃▃●·▅ beats 13/15  easy · avg 71%      8.8%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 23/35  medium · avg 61%    4.6%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                56.3%  ▁···▁▁▂▅●█▆▂ beats 32/75  easy · avg 66%      3.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                     47.2%  ▁··▁▅▂█●▁··▁ beats 20/22  medium · avg 56%    3.0%  at its level · several runs

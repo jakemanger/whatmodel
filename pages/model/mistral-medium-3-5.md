@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 64.1** ±0.8 · #153 of 724 · from 22 benchmark results across 5 sources
+**score 64.1** ±0.8 · #154 of 725 · from 22 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,27 +16,27 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #104 of 302     27%      8
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #106 of 303     27%      8
 coding              ▁▁▁▃▆██●▆▄▃▁    #147 of 460     18%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #80 of 395*    7.4%      1
 math                ▁▁▃▅█▆●█▄▁▁▁   #178 of 424*    8.9%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #75 of 147*    5.3%      1
 </pre>
 
-<details><summary>agent tasks · #104 of 302 · 27% of its score</summary>
+<details><summary>agent tasks · #106 of 303 · 27% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1238 IPS  ▁●▁▄▂▃▇█▂▂▁▃ beats 1/49   avg -0.312 IPS           14%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1238 IPS  ▁●▁▄▂▃▇█▂▂▁▃ beats 1/49   avg -0.311 IPS           14%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                       33.3%  ▄········█●▄ beats 3/5    very hard · avg 4.5%    3.1%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                       6.1%  ▄▄····●···█▄ beats 2/5    very hard · avg 1.9%    2.6%  too hard for it
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                    30.7%  ▄●▄·······█▄ beats 1/5    hard · avg 19%          2.4%  at its level
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>        41.9%  ▂·▁▁··●▇█▂·▁ beats 4/25   hard · avg 28%          2.1%  blunt · at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                        69.6%  ▄··········● beats 2/5    very hard · avg 15%     1.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                           5.8%  ●·▄▄······▄▄ beats 0/5    very hard · avg 5.1%    0.7%  blunt
-<a href="https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks">τ³-bench telecom (tau2-bench ≥ v1…</a>        91.4%  ▄·▄●▂··▂▂·▂▄ beats 6/13   medium · avg 63%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks">τ³-bench telecom (tau2-bench ≥ v1…</a>        91.4%  ▄·▄●▂··▂▂·▂▄ beats 6/13   medium · avg 64%           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1262.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 16/119  avg 969                 13%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1262.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 16/119  avg 970                 13%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   84.9%  ▄······●▄▄·█ beats 1/5     medium · avg 49%       3.1%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   69.6%  ▄··········● beats 2/5     very hard · avg 15%    1.9%  sharp · at its level · noisy
 </pre>
@@ -79,7 +79,7 @@ test                result  vs the others in its run  difficulty        counts  
 
 <details><summary>vision &amp; documents · #75 of 147 · 5.3% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

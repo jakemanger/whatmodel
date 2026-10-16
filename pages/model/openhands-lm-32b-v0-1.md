@@ -6,7 +6,7 @@
 
 All Hands AI · released 2025-03 · 32.76B params · mit
 
-**score 51.8** ±3.1 · #421 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±3.1 · #424 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             4% ▇
-weighted average                        = 51.8
+weighted average                        = 51.7
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

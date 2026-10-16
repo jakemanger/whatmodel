@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · other (tongyi-qianwen-research)
 
-**score 42.5** ±0.8 · #520 of 724 · from 4 benchmark results across 2 sources
+**score 42.5** ±0.8 · #521 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

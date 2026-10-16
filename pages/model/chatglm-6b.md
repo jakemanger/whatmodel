@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-03 · 6.2B params · chatglm-6b-license
 
-**score 24.5** ±1.4 · #683 of 724 · from 11 benchmark results across 9 sources
+**score 24.5** ±1.4 · #684 of 725 · from 11 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -39,7 +39,7 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             995.8  ●▁▁▂▃▃▃▆▆▇█▃ beats 4/379  avg 1258                     22%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         874.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 3/95   avg 1186                     20%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5000 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 6/28   avg 8.518 MT-Bench scor…     16%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5000 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 6/28   avg 8.521 MT-Bench scor…     16%  sharp · noisy
 <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       5.6300 mean rank (1-11)  █···▄··●···▄ beats 3/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 

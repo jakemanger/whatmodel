@@ -6,7 +6,7 @@
 
 Mistral · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 50.1** ±0.6 · #364 of 724 · from 20 benchmark results across 15 sources
+**score 50.1** ±0.6 · #365 of 725 · from 20 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #280 of 302*    0.7%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #281 of 303*    0.7%      1
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #270 of 460     56%      8
 chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #288 of 395     29%      4
 </pre>
 
-<details><summary>agent tasks · #280 of 302 · 0.7% of its score</summary>
+<details><summary>agent tasks · #281 of 303 · 0.7% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   71.2%  ▁▂▂▂▃█▃●▅▄▂▃ beats 57/95    medium · avg 64%       2.5%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      67.6%  ▁··▁▁▂▂▆▅▆●▆ beats 46/70    medium · avg 61%       2.0%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.6%  ▃▁▁▁▁▁▁▁▂█●▁ beats 235/276  medium · avg 72%       0.8%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            84.7%  ▁▁·▁·▂▃▄●▂·▁ beats 13/22    easy · avg 81%         0.7%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            84.7%  ▁▁·▁·▂▃▄●▂·▁ beats 13/22    easy · avg 82%         0.7%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.3%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 66/140   very easy · avg 94%    0.2%  blunt · maxed out · noisy
 </pre>
 

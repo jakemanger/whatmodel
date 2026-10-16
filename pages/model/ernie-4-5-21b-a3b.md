@@ -6,7 +6,7 @@
 
 Baidu · released 2025-06 · 21B params (3B active) · apache-2.0
 
-**score 52.9** ±1.2 · comparison only: no current run option verified · from 21 benchmark results across 3 sources
+**score 52.8** ±1.2 · comparison only: no current run option verified · from 21 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #313 of 342*    3.6%      1
+agent tasks     ▁▁▂●█▆▅▄▄▃▃▁   #314 of 343*    3.6%      1
 coding          ●··········█        #2 of 2     14%      3
 chat &amp; writing  ●··········█       #2 of 2*    2.9%      1
 math            ●··········█        #2 of 2     30%      4
 </pre>
 
-<details><summary>agent tasks · #313 of 342 · 3.6% of its score</summary>
+<details><summary>agent tasks · #314 of 343 · 3.6% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test             result  vs the others in its run    difficulty           counts
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>                 83.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 141/155  easy · avg 77%      8.1%  sharp · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>                 83.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 141/155  easy · avg 78%      8.1%  sharp · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                           76.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 155/214  medium · avg 71%    7.0%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                       66.0%  ▁▁·▁▁▁▃▂●▅█▁ beats 76/188   medium · avg 59%    5.4%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                         85.4%  ▁···▁▁▂▁▂▂●█ beats 15/33    easy · avg 78%      5.1%  small run
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    4% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 52.9
+weighted average                                   = 52.8
 </pre>
 
 <sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

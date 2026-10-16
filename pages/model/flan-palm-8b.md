@@ -25,7 +25,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    8.2%  ▆·▂·▄▂●▂▂█▄▆ beats 7/18   medium · avg 47%     17%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    8.2%  ▆·▂·▄▂●▂▂█▄▆ beats 7/18   medium · avg 48%     17%  sharp
 </pre>
 
 </details>

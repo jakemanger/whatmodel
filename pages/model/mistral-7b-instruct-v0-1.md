@@ -6,7 +6,7 @@
 
 Mistral · released 2023-09 · 7.24B params · apache-2.0
 
-**score 34.1** ±1.0 · #629 of 724 · from 13 benchmark results across 9 sources
+**score 34.1** ±1.0 · #630 of 725 · from 13 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

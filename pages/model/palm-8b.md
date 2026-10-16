@@ -26,7 +26,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mi
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>           4.1%  █·▅▃●▃·▃·▃▃▅ beats 6/12   easy · avg 67%      8.1%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>            3.4%  ▆·▂·●▂▂▂▂█▄▆ beats 4/18   medium · avg 47%    0.9%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>            3.4%  ▆·▂·●▂▂▂▂█▄▆ beats 4/18   medium · avg 48%    0.9%  sharp · too hard for it
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    1.5%  ●··▄··▄·▄··█ beats 0/5    hard · avg 32%      0.4%  too hard for it
 </pre>
 

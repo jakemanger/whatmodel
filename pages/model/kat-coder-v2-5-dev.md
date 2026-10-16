@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2026-07 · 35B params (3B active) · apache-2.0
 
-**score 69.8** ±1.5 · #81 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.7** ±1.5 · #82 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #86 of 302     88%      4
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #87 of 303     88%      4
 coding       ▁▁▁▃▆██▇▆●▃▁   #65 of 460     71%      4
 </pre>
 
-<details><summary>agent tasks · #86 of 302 · 88% of its score</summary>
+<details><summary>agent tasks · #87 of 303 · 88% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>             32.6%  ▄······█▄●█▄ beats 4/7    very hard · avg 7.0%     28%  sharp · at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>             32.6%  ▄······█▄●█▄ beats 4/7    very hard · avg 7.1%     28%  sharp · at its level
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified (lab)</a>             69.4%  ▄▄·····▄▄▄▄● beats 7/7    hard · avg 16%           25%  sharp · at its level
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)…</a>   46.0%  ▄···▄···▄▄█● beats 7/7    very hard · avg 6.5%     22%  sharp · at its level
 <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual (lab)</a>         63.0%  ▄·▄·····█▄█● beats 7/7    hard · avg 18%           13%  at its level
@@ -56,7 +56,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 69.8
+weighted average                                   = 69.7
 </pre>
 
 <sub>Licences: Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

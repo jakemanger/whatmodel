@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▃▁   #129 of 342*    6.8%      1
+agent tasks         ▁▁▂▆█▆●▄▄▃▃▁   #130 of 343*    6.7%      1
 coding              ▁▁▁▃▅▇●▇▅▄▂▁   #241 of 529*     35%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #120 of 466*     21%      1
 vision &amp; documents  ▁▁▃●▂▃▅▄▇▇█▃   #154 of 182*     12%      2
 web search          ▂·▂▇●█▃▄▁▂▁▁     #59 of 92*    8.3%      1
 </pre>
 
-<details><summary>agent tasks · #129 of 342 · 6.8% of its score</summary>
+<details><summary>agent tasks · #130 of 343 · 6.7% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-fast_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   15.7%  ▃▃●▃·▆▃▂█▅▅▂ beats 4/25   very hard · avg 4.1%    6.8%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-fast_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   15.7%  ▃▃●▃·▆▃▂█▅▅▂ beats 4/25   very hard · avg 4.2%    6.7%  typical
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](mi
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1158.9  ▁●▄▃▅█▄▇▆▄▁▁ beats 1/119  avg 969        35%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1158.9  ▁●▄▃▅█▄▇▆▄▁▁ beats 1/119  avg 970        35%  sharp
 </pre>
 
 </details>

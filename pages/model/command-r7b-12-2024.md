@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 45.5** ±1.3 · #459 of 724 · from 14 benchmark results across 4 sources
+**score 45.5** ±1.3 · #458 of 725 · from 14 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #249 of 302     19%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #251 of 303     19%      3
 coding          ▁▁▁▃●██▇▆▄▃▁    #364 of 460     35%      5
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #223 of 395*     12%      2
 </pre>
 
-<details><summary>agent tasks · #249 of 302 · 19% of its score</summary>
+<details><summary>agent tasks · #251 of 303 · 19% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #223 of 395 · 12% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

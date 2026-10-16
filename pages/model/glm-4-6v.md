@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 62.3** ±1.6 · #176 of 724 · from 10 benchmark results across 3 sources
+**score 62.2** ±1.6 · #178 of 725 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>vision &amp; documents · #88 of 147 · 61% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="glm-v-github-bench-image"></a><a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">Z.ai GLM-V GitHub repository benchmark …</a>        7   41% ▇▇▇▇▇
 <a name="paper-2609.05141v2-scidocbench"></a><a href="https://arxiv.org/html/2609.05141v2">SciDocBench: A Workflow-Centered Benchm…</a>        1    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.3
+weighted average                                   = 62.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

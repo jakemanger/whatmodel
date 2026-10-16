@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 33.34B params · deepseek
 
-**score 51.3** ±0.6 · #338 of 724 · from 16 benchmark results across 7 sources
+**score 51.2** ±0.6 · #339 of 725 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -32,9 +32,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           46.5%  ▁··▁▅▂█●▁··▁ beats 17/22  medium · avg 52%    1.5%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.2%  █▂▁●▂▂▂▃▅▅▅▇ beats 12/47  hard · avg 32%      1.5%  sharp · at its level · noisy
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           49.9%  ▁·▂▃▁█▁●···▁ beats 21/22  medium · avg 51%    1.5%  blunt · at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    9.0%  ▃··▁●▂▃▂█▃▄▂ beats 8/47   medium · avg 50%    1.3%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    9.0%  ▃··▁●▂▃▂█▃▄▂ beats 8/47   medium · avg 51%    1.3%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.8%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 28/47  hard · avg 31%      1.1%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   69.8%  ▁▁▁······▁▃● beats 19/47  easy · avg 66%      0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   69.8%  ▁▁▁······▁▃● beats 19/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -66,7 +66,7 @@ source                                    results  share of the score
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
 <a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 51.3
+weighted average                                   = 51.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>

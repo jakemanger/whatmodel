@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
-**score 70.2** ±1.4 · #77 of 724 · from 4 benchmark results across 2 sources
+**score 70.2** ±1.4 · #78 of 725 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #62 of 302*     37%      1
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #65 of 303*     37%      1
 coding          ▁▁▁▃▆██▇▆●▃▁   #39 of 460*     34%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #79 of 395*     20%      1
 </pre>
 
-<details><summary>agent tasks · #62 of 302 · 37% of its score</summary>
+<details><summary>agent tasks · #65 of 303 · 37% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0656 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 9/49   avg -0.312 IPS     37%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0656 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 9/49   avg -0.311 IPS     37%  sharp
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 82/119  avg 969        34%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 82/119  avg 970        34%  sharp
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test               result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   20.0%  ▁▁▃▂●▃▆▆█▃▂▅ beats 12/78  very hard · avg 7.4%    7.7%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   20.0%  ▁▁▃▂●▃▆▆█▃▂▅ beats 12/78  very hard · avg 7.4%    7.6%  at its level
 </pre>
 
 </details>
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   92% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">Epoch AI</a>                             1    8% ▇
 prior: pull toward the middle             1% ▇
 weighted average                        = 70.2

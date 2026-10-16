@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 68.0** ±0.7 · #100 of 724 · from 23 benchmark results across 7 sources
+**score 68.0** ±0.7 · #101 of 725 · from 23 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #93 of 302     16%      7
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #94 of 303     17%      7
 coding              ▁▁▁▃▆██▇●▄▃▁    #83 of 460*    6.4%      2
-chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #109 of 395*    5.9%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #109 of 395*    5.8%      1
 math                ▁▁▃▅█▆▄█●▁▁▁     #60 of 424     34%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #80 of 147*    8.7%      2
 web search          ▂▁▂●▄█▃▃▁▁·▁     #69 of 80*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #93 of 302 · 16% of its score</summary>
+<details><summary>agent tasks · #94 of 303 · 17% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (lab)</a>             46.3%  █●···██··███ beats 1/6    very hard · avg 15%    3.8%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (lab)</a>             46.3%  █●···██··███ beats 1/6    very hard · avg 15%    3.7%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Toolathlon (Tool Decathlon) (lab)</a>    35.5%  ▃··●··▃··▃█▅ beats 1/8    very hard · avg 13%    3.5%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam with tools (…</a>   37.7%  ▃·●·▅····▅·█ beats 1/8    very hard · avg 12%    3.3%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (lab)</a>               39.0%  ●▄·····▄·▄▄▄ beats 1/6    hard · avg 18%         2.2%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">τ²-bench Telecom (lab)</a>               92.5%  ▃·▅▅▃▃··●▃▃▅ beats 7/13   hard · avg 15%         2.2%  sharp · at its level · noisy
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (lab)</a>               39.0%  ●▄·····▄·▄▄▄ beats 1/6    hard · avg 15%         2.8%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">τ²-bench Telecom (lab)</a>               92.5%  ▃·▅▅▃▃··●▃▃▅ beats 7/13   hard · avg 16%         2.2%  sharp · at its level · noisy
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>                  52.4%  ▄·····●·▄▄▄█ beats 1/6    hard · avg 28%         1.5%  blunt · at its level
 <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain conversatio…</a>    7.2%  ●▂··▂·▂·▂▂█▄ beats 0/11   hard · avg 25%         0.0%  blunt · at its level · noisy
 </pre>
@@ -53,13 +53,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #109 of 395 · 5.9% of its score</summary>
+<details><summary>chat &amp; writing · #109 of 395 · 5.8% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1401.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 246/379  avg 1258      5.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1401.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 246/379  avg 1258      5.8%  blunt
 </pre>
 
 </details>
@@ -79,7 +79,7 @@ test                       result  vs the others in its run    difficulty       
 
 <details><summary>vision &amp; documents · #80 of 147 · 8.7% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty      counts  why

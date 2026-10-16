@@ -6,7 +6,7 @@
 
 Google · released 2025-12 · closed weights
 
-**score 71.5** ±0.6 · #64 of 724 · from 28 benchmark results across 12 sources
+**score 71.4** ±0.6 · #65 of 725 · from 28 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #79 of 302     17%      6
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #80 of 303     17%      6
 coding              ▁▁▁▃▆██▇▆●▃▁    #67 of 460     17%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #31 of 395*    4.2%      1
 math                ▁▁▃▅█▆▄█●▁▁▁    #50 of 424     38%      6
@@ -24,18 +24,18 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #29 of 147     1
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #35 of 80*    1.7%      1
 </pre>
 
-<details><summary>agent tasks · #79 of 302 · 17% of its score</summary>
+<details><summary>agent tasks · #80 of 303 · 17% of its score</summary>
 
-Beats [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+Beats [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiniMax-M2.7](minimax-m2-7.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29  hard · avg 18%          7.9%  sharp · at its level
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   27.3%  ▃▃▂▃·▆●▂█▅▅▂ beats 12/25  very hard · avg 4.1%    2.6%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29  hard · avg 18%          8.0%  sharp · at its level
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   27.3%  ▃▃▂▃·▆●▂█▅▅▂ beats 12/25  very hard · avg 4.2%    2.6%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   20.2%  ▃··▃·▃█●▃▃▃█ beats 7/14   very hard · avg 2.6%    1.8%  sharp · at its level · noisy
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   82.5%  ▃······▃·▃●▃ beats 4/6    medium · avg 50%        1.6%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   82.5%  ▃······▃·▃●▃ beats 4/6    medium · avg 51%        1.6%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   76.8%  ▄▄·●··▄·▄··▄ beats 3/6    medium · avg 47%        1.5%  typical
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   91.2%  █·▄●▄······▄ beats 4/6    medium · avg 63%        1.2%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   91.2%  █·▄●▄······▄ beats 4/6    medium · avg 64%        1.2%  typical
 </pre>
 
 </details>
@@ -46,8 +46,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29   hard · avg 18%          7.9%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1438.9  ▁▂▄▃▅●▄▇▆▄▁▁ beats 57/119  avg 969                 7.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29   hard · avg 18%          8.0%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1438.9  ▁▂▄▃▅●▄▇▆▄▁▁ beats 57/119  avg 970                 7.2%  sharp
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   20.2%  ▃··▃·▃█●▃▃▃█ beats 7/14    very hard · avg 2.6%    1.8%  sharp · at its level · noisy
 </pre>
 
@@ -141,7 +141,7 @@ source                                    results  share of the score
 <a name="paper-2610.12402v1-spacecast-bench"></a><a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench: Evaluating Predictive …</a>        1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 71.5
+weighted average                                   = 71.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · FormalProofBench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

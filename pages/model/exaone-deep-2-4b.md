@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 50.1** ±1.5 · #365 of 724 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.0** ±1.5 · #367 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.1
+weighted average                                   = 50.0
 </pre>
 
 ## How to run it

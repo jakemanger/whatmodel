@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 22.9** ±0.7 · #687 of 724 · from 37 benchmark results across 8 sources
+**score 22.9** ±0.7 · #688 of 725 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                           60.6%  ▁····▁··▁●█▄ beats 4/26   easy · avg 87%          12%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                             61.1%  ▁▁·▁▁▄●▄█▅▁▃ beats 7/26   easy · avg 87%         9.5%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                            63.9%  ▃···▁●▅█▇▃▁▁ beats 7/26   very easy · avg 91%    8.2%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                                 89.8%  ▁·▁·▁·●▅▃█▄▁ beats 5/26   very easy · avg 97%    7.2%  blunt · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                                 89.8%  ▁·▁·▁·●▅▃█▄▁ beats 5/26   very easy · avg 98%    7.2%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                           25.8%  █·●▁▃·▁▃▅▇▃▄ beats 6/26   very hard · avg 29%    6.1%  too hard for it · small run · several r…
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                                 75.1%  ▁·▁··▁▁▃●▅█▂ beats 7/26   easy · avg 87%         5.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">BoolQ</a>                                64.0%  ▂▃▂●▆▂▅▆█▂▂▂ beats 5/26   easy · avg 88%         5.4%  at its level · several runs

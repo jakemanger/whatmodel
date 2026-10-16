@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · proprietary
 
-**score 67.8** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
+**score 67.7** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #222 of 342*     10%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▃▁   #224 of 343*     10%      1
 coding       ▁▁▁▃▅▇█▇▅●▂▁    #55 of 529*    4.4%      1
 </pre>
 
-<details><summary>agent tasks · #222 of 342 · 10% of its score</summary>
+<details><summary>agent tasks · #224 of 343 · 10% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="livecodebench-website-20250801"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json">LiveCodeBench official website results</a>          1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    2% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 67.8
+weighted average                                   = 67.7
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

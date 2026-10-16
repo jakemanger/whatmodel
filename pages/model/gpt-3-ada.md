@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 7.5** ±1.4 · comparison only: no current run option verified · from 30 benchmark results across 6 sources
+**score 7.6** ±1.4 · comparison only: no current run option verified · from 30 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](f
 <pre>
 test    result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>   24.3%  ▃·▃▃█●··▃·▃▃ beats 6/10   hard · avg 34%      1.9%  blunt · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>     1.7%  ▅·▂●·······▂ beats 5/9    medium · avg 62%    1.7%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">GSM8K</a>     1.7%  ▅·▂●·······▂ beats 5/9    medium · avg 63%    1.7%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    2% ▇
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 7.5
+weighted average                                   = 7.6
 </pre>
 
 <sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

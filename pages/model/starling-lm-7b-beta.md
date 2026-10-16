@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-03 · 7.24B params · apache-2.0
 
-**score 41.6** ±1.0 · #532 of 724 · from 11 benchmark results across 9 sources
+**score 41.6** ±1.0 · #533 of 725 · from 11 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           16.6%  ▁▁▁▂●▃▂█▆▃▅▃ beats 9/61     medium · avg 38%        31%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.1694 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 15/52    avg 42.747 WB-Score     11%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.1694 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 15/52    avg 42.785 WB-Score     11%  sharp
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Nexusflow/Starling-LM-7B-beta/results_2024-03-31%2023%3A41%3A55.096049.json">MedQA (USMLE, 4 options)</a>                       52.5%  ▁▁··▄▁▁··▄●█ beats 11/17    medium · avg 71%       8.8%  sharp · at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                45.1%  ▁··▁▁▂▂●▅▆█▆ beats 14/70    medium · avg 61%       6.2%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Nexusflow/Starling-LM-7B-beta/results_2024-03-31%2023%3A41%3A55.096049.json">MedMCQA</a>                                        50.2%  ▂▂··▄▄▂▂·▄●█ beats 13/17    medium · avg 63%       4.0%  at its level

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 61.0** ±1.4 · #187 of 724 · from 10 benchmark results across 5 sources
+**score 61.0** ±1.4 · #188 of 725 · from 10 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #227 of 302*    4.4%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #228 of 303*    4.4%      3
 coding          ▁▁▁▃▆██▇●▄▃▁    #77 of 460*    1.9%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #157 of 395     32%      3
 math            ●··········█        #2 of 2     31%      3
 </pre>
 
-<details><summary>agent tasks · #227 of 302 · 4.4% of its score</summary>
+<details><summary>agent tasks · #228 of 303 · 4.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 01.AI · released 2023-11 · 34.39B params · apache-2.0
 
-**score 45.0** ±1.0 · #471 of 724 · from 8 benchmark results across 7 sources
+**score 45.0** ±1.0 · #472 of 725 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

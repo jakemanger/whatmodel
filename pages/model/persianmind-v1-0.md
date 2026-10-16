@@ -6,7 +6,7 @@
 
 University of Tehran · released 2024-01 · 6.82B params · cc-by-nc-sa-4.0
 
-**score 36.5** ±4.5 · #811 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.5** ±4.5 · #812 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

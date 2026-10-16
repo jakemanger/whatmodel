@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 57.9** ±1.0 · #227 of 724 · from 14 benchmark results across 6 sources
+**score 57.8** ±1.0 · #229 of 725 · from 14 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 47%         16%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 48%         16%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         11%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/193  very hard · avg 6.9%    7.9%  sharp · at its level · noisy
 </pre>
@@ -46,7 +46,7 @@ test                      result  vs the others in its run   difficulty         
 
 <details><summary>vision &amp; documents · #97 of 147 · 8.7% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run   difficulty        counts  why
@@ -83,7 +83,7 @@ source                                    results  share of the score
 <a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        2    5% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.9
+weighted average                                   = 57.8
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

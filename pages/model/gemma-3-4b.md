@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 4.3B params · gemma
 
-**score 45.5** ±0.6 · #456 of 724 · from 57 benchmark results across 17 sources
+**score 45.4** ±0.6 · #460 of 725 · from 57 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #287 of 302*    2.3%      2
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #288 of 303*    2.3%      2
 coding              ▁▁▁▃●██▇▆▄▃▁    #362 of 460     11%      5
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃    #219 of 395    7.3%      3
 math                ▁▁▃▅●▆▄█▄▁▁▁    #264 of 424     11%      6
 vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #146 of 147    8.0%     10
 </pre>
 
-<details><summary>agent tasks · #287 of 302 · 2.3% of its score</summary>
+<details><summary>agent tasks · #288 of 303 · 2.3% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -89,7 +89,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>           50.0%  ▁··▁▄●▇█▅▆█▄ beats 8/47   medium · avg 60%       1.5%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                     48.8%  ▁····▁▁●█▇▆▆ beats 7/52   medium · avg 57%       1.4%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">InfographicVQA (lab)</a>                 50.0%  ●·▃▅█▃▃▃▃▃▃▃ beats 0/13   medium · avg 65%       1.1%  at its level · small run
-<a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    62.4%  ●▅▃█·▃▅·▃·▃▅ beats 0/13   easy · avg 71%         0.6%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    62.4%  ●▅▃█·▃▅·▃·▃▅ beats 0/13   easy · avg 72%         0.6%  blunt · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                        68.8%  ▁··▁▁▁▁●▂▅▅█ beats 5/44   easy · avg 77%         0.5%  blunt · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                         75.8%  ●··▃▁▁▁▇█▇▄▅ beats 0/28   very easy · avg 89%    0.4%  blunt · small run
 <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   25.4%  ●······▃·▅·█ beats 0/7    very hard · avg 36%    0.4%  noisy
@@ -160,7 +160,7 @@ source                                    results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 <a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>           1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.5
+weighted average                                   = 45.4
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · TranslateGemma Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

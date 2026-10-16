@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 236B params (21B active) · deepseek
 
-**score 54.8** ±0.8 · #285 of 724 · from 13 benchmark results across 7 sources
+**score 54.7** ±0.8 · #286 of 725 · from 13 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,7 +29,7 @@ Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwe
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    70.0%  ▁▂▆▃▆●▆▃▂·▁▁ beats 29/47  medium · avg 57%     14%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   72.2%  ▁·▁▂▄▁▆▄█●▂▂ beats 54/62  medium · avg 50%     11%  sharp · at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   49.0%  ▁··▁·▁▁●▆█▇█ beats 6/45   hard · avg 29%      3.5%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   49.0%  ▁··▁·▁▁●▆█▇█ beats 6/45   hard · avg 29%      3.6%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     83.4%  ▃▁▁█▁▄▅▃●▇▁▄ beats 22/31  medium · avg 39%    2.8%  sharp · at its level · noisy
 </pre>
 
@@ -86,7 +86,7 @@ source                                    results  share of the score
 <a name="opencompass-compassacademic-space-predictions"></a><a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">OpenCompass CompassAcademic leaderboard</a>         2    3% ▇
 <a name="first-party-deepseek-scores"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">DeepSeek vendor-reported benchmark scor…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 54.8
+weighted average                                   = 54.7
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

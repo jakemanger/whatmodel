@@ -6,7 +6,7 @@
 
 MedAIBase (Ant Group) · released 2025-12 · 102.89B params (6.1B active) · apache-2.0
 
-**score 55.1** ±3.9 · #335 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.1** ±3.9 · #335 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

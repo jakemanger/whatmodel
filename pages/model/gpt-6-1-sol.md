@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · proprietary
 
-**score 83.6** ±0.7 · #3 of 724 · from 20 benchmark results across 6 sources
+**score 83.6** ±0.7 · #3 of 725 · from 20 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄▃●    #4 of 302*     17%      2
+agent tasks         ▁▁▃▆█▆▅▅▅▄▃●    #4 of 303*     17%      2
 coding              ▁▁▁▃▆██▇▆▄▃●    #4 of 460*     11%      2
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #17 of 395*    5.3%      1
 math                ▁▁▃▅█▆▄█▄▁▁●     #2 of 424     18%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●   #13 of 147*    3.7%      1
 </pre>
 
-<details><summary>agent tasks · #4 of 302 · 17% of its score</summary>
+<details><summary>agent tasks · #4 of 303 · 17% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md) here, though they rank higher overall. Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank lower overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1123 IPS  ▁▁▁▄▂▃▇█▂▂●▃ beats 45/49  avg -0.312 IPS           10%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1123 IPS  ▁▁▁▄▂▃▇█▂▂●▃ beats 45/49  avg -0.311 IPS           10%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-1-sol-max-codex.json">Terminal-Bench 4.0</a>                       58.2%  █▅▅▅▅·▅▃▃▅●▅ beats 18/20  very hard · avg 0.5%    7.1%  sharp · at its level
 </pre>
 
@@ -41,7 +41,7 @@ Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower ov
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1757.8  ▁▂▄▃▅█▄▇▆▄▁● beats 116/119  avg 969           9.0%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1757.8  ▁▂▄▃▅█▄▇▆▄▁● beats 116/119  avg 970           9.0%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   87.0%  ▁▁▁▁·▁▂▃▅▃█● beats 47/49    hard · avg 17%    1.8%  typical
 </pre>
 

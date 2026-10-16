@@ -41,7 +41,7 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md), [FastChat-T5 3B](fastchat-t5-3b.md), 
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             975.0  ●▁▁▂▃▃▃▆▆▇█▃ beats 1/379  avg 1258                    2.7%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         853.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 1/95   avg 1186                    2.4%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.6100 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 0/28   avg 8.518 MT-Bench scor…    1.9%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.6100 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 0/28   avg 8.521 MT-Bench scor…    1.9%  sharp · noisy
 </pre>
 
 </details>

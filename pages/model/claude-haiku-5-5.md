@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-10 · proprietary
 
-**score 76.1** ±0.7 · #25 of 724 · from 15 benchmark results across 3 sources
+**score 76.1** ±0.7 · #26 of 725 · from 15 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #13 of 302     28%      5
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #13 of 303     28%      5
 coding       ▁▁▁▃▆██▇▆▄●▁   #30 of 460     23%      3
 math         ▁▁▃▅█▆▄█▄●▁▁   #20 of 424     37%      3
 web search   ▂▁▂▆▄●▃▃▁▁·▁   #28 of 80*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #13 of 302 · 28% of its score</summary>
+<details><summary>agent tasks · #13 of 303 · 28% of its score</summary>
 
 Beats [Muse Wonder Full](muse-wonder-full.md), [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.4 Pro](gpt-5-4-pro.md) here, though they rank higher overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Pro (split unspecified)…</a>   64.8%  ▄●·▄·▄██···▄ beats 2/9    very hard · avg 8.1%     10%  sharp · at its level
 <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (lab)</a>             39.2%  ▄·····▄··●██ beats 2/7    very hard · avg 0.6%    5.6%  sharp · at its level
 <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (lab)</a>         83.7%  ▃··▃·●▃▃█··▃ beats 2/9    hard · avg 31%          5.3%  typical
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (lab)</a>        86.2%  ▃········▃●█ beats 4/7    very hard · avg 5.1%    4.0%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (lab)</a>        86.2%  ▃········▃●█ beats 4/7    very hard · avg 5.2%    4.0%  sharp · at its level
 <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   57.4%  ▁······▁·●·█ beats 3/10   very hard · avg 14%     2.7%  at its level
 </pre>
 
@@ -44,7 +44,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Pro (split unspecified)…</a>   64.8%  ▄●·▄·▄██···▄ beats 2/9     very hard · avg 8.1%     10%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1586.9  ▁▂▄▃▅█▄▇●▄▁▁ beats 93/119  avg 969                 7.9%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1586.9  ▁▂▄▃▅█▄▇●▄▁▁ beats 93/119  avg 970                 7.9%  sharp
 <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (lab)</a>         83.7%  ▃··▃·●▃▃█··▃ beats 2/9     hard · avg 31%          5.3%  typical
 </pre>
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>math · #20 of 424 · 37% of its score</summary>
 
-Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
+Beats [Muse Spark 1.3](muse-spark-1-3.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
@@ -80,9 +80,9 @@ test                                result  vs the others in its run  difficulty
 test                          result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   30.0%  █··▂▃▇▄●▂▃▁▁ beats 48/74    very hard · avg 9.4%    7.4%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     47.5%  █▆▆▆▆●▅▂▂▂·▅ beats 21/30    very hard · avg 1.3%    7.3%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (lab)</a>     45.9%  ▂·····▂·●▂█▄ beats 3/10     very hard · avg 5.8%    5.3%  at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (lab)</a>     45.9%  ▂·····▂·●▂█▄ beats 3/10     very hard · avg 5.9%    5.3%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   89.6%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 169/208  hard · avg 38%          2.6%  sharp
-<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=134">Global-MMLU (lab)</a>              87.8%  ●▄····▄▄··▄█ beats 0/6      medium · avg 63%        2.4%  typical
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=134">Global-MMLU (lab)</a>              87.8%  ●▄····▄▄··▄█ beats 0/6      medium · avg 64%        2.4%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              23.8%  ▁▁▃▂●▃▆▆█▃▂▅ beats 15/78    very hard · avg 7.4%    1.9%  at its level
 </pre>
 

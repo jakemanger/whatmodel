@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 54.6** ±2.1 · #288 of 724 · from 6 benchmark results across 2 sources
+**score 54.5** ±2.0 · #291 of 725 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #150 of 302     59%      3
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #151 of 303     59%      3
 coding       ▁▁▁▃▆██●▆▄▃▁   #184 of 460*    8.7%      1
 math         ▁▁▃▅█●▄█▄▁▁▁   #227 of 424*     24%      1
 </pre>
 
-<details><summary>agent tasks · #150 of 302 · 59% of its score</summary>
+<details><summary>agent tasks · #151 of 303 · 59% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        5   79% ▇▇▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   19% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 54.6
+weighted average                                   = 54.5
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

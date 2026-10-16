@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 72.29B params · tongyi-qianwen
 
-**score 47.0** ±0.5 · #431 of 724 · from 19 benchmark results across 15 sources
+**score 47.0** ±0.5 · #432 of 725 · from 19 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -57,7 +57,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro</a>                                       47.1%  ▃▂▅█●·█▃▅··▂ beats 11/23    medium · avg 54%       4.0%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>                  32.6%  ▃▂·▆▆●█▆▅▃▃▃ beats 11/33    medium · avg 39%       2.8%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>                  39.8%  ▂▁▁▄▂▅●█▆▂▂▂ beats 27/58    medium · avg 48%       2.8%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.9277 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 30/52    avg 42.747 WB-Score    2.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.9277 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 30/52    avg 42.785 WB-Score    2.7%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             63.2%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 42/95    medium · avg 64%       1.9%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   28.8%  ▁▁▁●▂▄▆▄▅▇█▅ beats 15/208   hard · avg 38%         1.8%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                68.0%  ▁··▁▁▂▂▆▅▆●▆ beats 47/70    medium · avg 61%       1.5%  at its level

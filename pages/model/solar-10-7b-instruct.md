@@ -6,7 +6,7 @@
 
 Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
-**score 39.3** ±0.7 · #567 of 724 · from 13 benchmark results across 8 sources
+**score 39.3** ±0.7 · #568 of 725 · from 13 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

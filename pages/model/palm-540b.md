@@ -37,7 +37,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>          56.9%  █·▅▃▃▃·▃·▃▃● beats 11/12  easy · avg 67%       17%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>           45.9%  ▆·▂·▄▂▂▂▂█●▆ beats 15/18  medium · avg 47%    3.8%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>           45.9%  ▆·▂·▄▂▂▂▂█●▆ beats 15/18  medium · avg 48%    3.8%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    8.8%  ▄··▄··●·▄··█ beats 2/5    hard · avg 32%      0.6%  at its level
 </pre>
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 49.1%  ▂▂▂▂·▅·▃▂●▃▃ beats 12/18    medium · avg 60%        4.6%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           71.3%  ▁···▁··▃▁▅▅● beats 15/18    easy · avg 74%          4.4%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        93.3%  ▅▃█···▅·▃▃▃● beats 12/12    very easy · avg 94%     4.3%  sharp
-<a href="https://arxiv.org/html/2203.11171v4">ARC Challenge (lab)</a>                  85.2%  ▄▁▁▂▁▄█▇▃▂●▂ beats 132/140  easy · avg 86%          3.7%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2203.11171v4">ARC Challenge (lab)</a>                  85.2%  ▄▁▁▂▁▄█▇▃▂●▂ beats 132/140  easy · avg 86%          3.8%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   80.5%  █·····▃·▁·▄● beats 12/12    medium · avg 81%        2.4%  sharp · at its level
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (lab)</a>                     80.1%  ▄····▄··▄·█● beats 6/6      easy · avg 85%          2.4%  at its level · several runs
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   21.2%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 43/68    hard · avg 32%          1.9%  at its level · several runs
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (lab)</a>                          88.0%  ▁····▁▂█▆▅▆● beats 97/103   easy · avg 90%          1.4%  several runs
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     68.6%  █·····▅▃▃▅▃● beats 12/12    medium · avg 70%        1.4%  at its level · several runs
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   58.9%  ▄······▄▄▄·● beats 4/5      medium · avg 58%        1.3%  at its level
-<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        48.4%  █▁▃·▃·▄·▃··● beats 16/16    hard · avg 51%          1.2%  sharp · small run
+<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        48.4%  █▁▃·▃·▄·▃··● beats 16/16    hard · avg 51%          1.1%  sharp · small run
 <a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    54.5%  ▄·····▄··█·● beats 4/5      medium · avg 55%        1.1%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (lab)</a>                      83.4%  ▁▁▁▂▂▂▄▆█▇●▂ beats 121/135  easy · avg 87%          1.0%  several runs
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   52.9%  ▂··▂·▂▄▄·█●█ beats 13/18    medium · avg 61%        1.0%  at its level

@@ -6,7 +6,7 @@
 
 ZJU AI4H · released 2025-10 · 15.21B params · apache-2.0
 
-**score 54.0** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.0** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-05 · 11.17B params · apache-2.0
 
-**score 54.1** ±2.8 · #365 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 54.0** ±2.8 · #368 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ source                                    results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>                          1   54% ▇▇▇▇▇▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   42% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 54.1
+weighted average                                   = 54.0
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

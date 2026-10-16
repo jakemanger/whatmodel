@@ -6,7 +6,7 @@
 
 Google · released 2024-07 · 2.61B params · gemma
 
-**score 39.2** ±0.6 · #569 of 724 · from 29 benchmark results across 10 sources
+**score 39.2** ±0.6 · #570 of 725 · from 29 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -67,7 +67,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             51.9%  ▁·●▁▄▄▄▅█▄▂▁ beats 1/53     easy · avg 75%          18%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard</a>                                 43.5%  ▃▃···▃··●··▅ beats 3/7      medium · avg 63%       6.6%  sharp
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU</a>                                           56.8%  ▄····▄·▄▄●·█ beats 4/7      easy · avg 75%         4.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  27.8260 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 9/52     avg 42.747 WB-Score    4.2%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  27.8260 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 9/52     avg 42.785 WB-Score    4.2%  sharp
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified)</a>                      29.4%  ▄·▄··▄··▄●·█ beats 5/7      hard · avg 37%         3.6%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             53.0%  ▁▂▂▂●█▃▆▅▄▂▃ beats 19/95    medium · avg 64%       3.1%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro</a>                                       27.2%  ▄·····█··●▄█ beats 3/7      medium · avg 44%       2.9%  typical
@@ -75,7 +75,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag</a>                                      71.2%  ▄·▄··●▄·▄·▄▄ beats 2/7      easy · avg 85%         1.9%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             44.4%  ▂▄▂●█▄▃▆▃▅▂▂ beats 18/81    medium · avg 56%       1.8%  blunt · at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge</a>                                  57.4%  ▄····█··▄▄●█ beats 5/7      medium · avg 72%       1.7%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA</a>                                     44.2%  ▄▄··▄··▄·█●▄ beats 6/7      medium · avg 54%       1.6%  typical
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA</a>                                     44.2%  ▄▄··▄··▄·█●▄ beats 6/7      medium · avg 55%       1.6%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>              4.2%  ▁●▃▆██▁▁·▁▁▁ beats 1/57     hard · avg 15%         1.2%  sharp · too hard for it
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ</a>                                          84.4%  ▄▄····▄▄·●·█ beats 4/7      easy · avg 88%         1.2%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 136/276  medium · avg 72%       0.9%  at its level · noisy

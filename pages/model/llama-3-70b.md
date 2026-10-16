@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 70.55B params · llama3
 
-**score 51.1** ±0.4 · #341 of 724 · from 34 benchmark results across 23 sources
+**score 51.0** ±0.4 · #343 of 725 · from 34 benchmark results across 23 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #253 of 302*    0.4%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #254 of 303*    0.4%      1
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #266 of 460     40%     10
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #258 of 395     17%      4
 math            ▁▁▃●█▆▄█▄▁▁▁    #333 of 424    8.9%      4
 </pre>
 
-<details><summary>agent tasks · #253 of 302 · 0.4% of its score</summary>
+<details><summary>agent tasks · #254 of 303 · 0.4% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -91,7 +91,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        43.2%  ▃▂·▆▆██▆▅●▃▃ beats 29/33    medium · avg 39%       2.3%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.9%  ▂▁▁▄▂▅▇█▆▂●▂ beats 55/58    medium · avg 48%       2.2%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 39/208   hard · avg 38%         2.1%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.7708 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 38/52    avg 42.747 WB-Score    2.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.7708 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 38/52    avg 42.785 WB-Score    2.1%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             75.6%  ▁▂▂▂▃█▃▆●▄▂▃ beats 71/95    medium · avg 64%       1.4%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                71.2%  ▁··▁▁▂▂▆▅▆●▆ beats 58/70    medium · avg 61%       1.1%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>             26.1%  ▁▁·▁▂▂▄●▄▅▄▄ beats 21/66    hard · avg 29%         1.0%  at its level
@@ -134,7 +134,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 51.1
+weighted average                                   = 51.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

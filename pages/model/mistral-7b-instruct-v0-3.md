@@ -6,7 +6,7 @@
 
 Mistral · released 2024-05 · 7.25B params · apache-2.0
 
-**score 41.1** ±1.0 · #541 of 724 · from 15 benchmark results across 10 sources
+**score 41.0** ±1.0 · #543 of 725 · from 15 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ math            ▁●▃▅█▆▄█▄▁▁▁    #406 of 424    7.8%     
 
 <pre>
 test             result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   38.4%  ▁▁▁▁▂▂●▆█▅▂▁ beats 63/205  easy · avg 79%    4.2%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   38.4%  ▁▁▁▁▂▂●▆█▅▂▁ beats 63/205  easy · avg 80%    4.2%  sharp · at its level · noisy · small run
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>        50.2%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 37/86   easy · avg 74%    3.7%  at its level · small run
 </pre>
 
@@ -90,7 +90,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 41.1
+weighted average                                   = 41.0
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

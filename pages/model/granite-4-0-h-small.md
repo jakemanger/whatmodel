@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 52.7** ±0.6 · #318 of 724 · from 39 benchmark results across 7 sources
+**score 52.6** ±0.6 · #322 of 725 · from 39 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ test                result  vs the others in its run    difficulty        counts
 
 <details><summary>chat &amp; writing · #231 of 395 · 6.6% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
@@ -87,7 +87,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             57.1%  ▄····█·▄●·▄▄ beats 4/7      medium · avg 54%       6.5%  at its level · several runs
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      40.6%  ▂▁▂▂▄▃●▃▅█▄▃ beats 40/104   very hard · avg 35%    4.7%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   44.5%  ▂▃▅▂●▃█▅█▅▃▆ beats 10/34    medium · avg 41%       3.5%  blunt · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▆█●▃▁ beats 137/155  medium · avg 74%       3.3%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▆█●▃▁ beats 137/155  easy · avg 74%         3.3%  sharp · at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.6%  █··▄··█··●·▄ beats 6/7      medium · avg 41%       2.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                        64.0%  ▂····▂▂▄●▄█▄ beats 14/36    medium · avg 56%       2.3%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          69.7%  ▂▁▁▂▃▂▄●▅██▃ beats 19/46    medium · avg 62%       2.0%  at its level
@@ -116,7 +116,7 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 52.7
+weighted average                                   = 52.6
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-small model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.0-h-small.txt)) · Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

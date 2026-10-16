@@ -6,7 +6,7 @@
 
 Meta · released 2024-12 · 70B params · llama-3.3
 
-**score 55.3** ±0.5 · #273 of 724 · from 60 benchmark results across 27 sources
+**score 55.3** ±0.5 · #274 of 725 · from 60 benchmark results across 27 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #248 of 302     11%     10
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #249 of 303     11%     10
 coding          ▁▁▁▃▆█●▇▆▄▃▁   #234 of 460     29%     14
 chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #207 of 395    9.2%      6
 math            ▁▁▃▅●▆▄█▄▁▁▁   #283 of 424     13%      7
 web search      ▂▁▂●▄█▃▃▁▁·▁    #55 of 80*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #248 of 302 · 11% of its score</summary>
+<details><summary>agent tasks · #249 of 303 · 11% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      31.9%  ▁▁▁▂█●▅▅▆▂▂▂ beats 34/77   hard · avg 31%          1.3%  at its level
 <a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    2.8%  ●·▃▃·█▅▅▅▅▃▅ beats 1/18    very hard · avg 5.3%    1.0%  sharp
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>   42.9%  ▂·▁▁··●▇█▂·▁ beats 5/25    hard · avg 28%          0.8%  blunt · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                      35.3%  ▁▁▁·▅●▁█▇▁▁▇ beats 7/28    hard · avg 21%          0.8%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                      35.3%  ▁▁▁·▅●▁█▇▁▁▇ beats 7/28    hard · avg 22%          0.8%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              52.2%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 44/114  medium · avg 51%        0.6%  blunt · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Retail</a>                        6.2%  ●····▃·▂▇█▂▆ beats 0/28    hard · avg 26%          0.5%  at its level · noisy
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   20.0%  ▅●·▃▃▅▅█▃█▅▅ beats 2/19    hard · avg 26%          0.5%  at its level
@@ -61,8 +61,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                       58.0%  ▄··▄·▄·█··●█ beats 5/7      medium · avg 47%        1.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.9%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 29/47    hard · avg 31%          0.8%  at its level
 <a href="https://arxiv.org/html/2412.08905v1">HumanEval (simple-evals)</a>             78.9%  ▂●▆█▅▃··▂··▂ beats 1/19     easy · avg 76%          0.8%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   78.0%  ▃··▁▂▂▃▂█▃●▂ beats 43/47    medium · avg 50%        0.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   66.0%  ▁▁▁······▁●█ beats 14/47    easy · avg 66%          0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   78.0%  ▃··▁▂▂▃▂█▃●▂ beats 43/47    medium · avg 51%        0.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   66.0%  ▁▁▁······▁●█ beats 14/47    easy · avg 67%          0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -93,7 +93,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                            20.0%  ▁▁▁▂▁●▁▅███▃ beats 12/85   very hard · avg 14%     2.3%  sharp · small run
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              5.1%  ▃▃●▃▃▃▇▇█▃▂▅ beats 32/193  very hard · avg 6.9%    1.5%  sharp · noisy
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            71.8%  ▃▃█▂▂●·····▁ beats 18/22   medium · avg 57%        0.9%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                93.6%  ▂▃··▃▂▅█▆▃●▃ beats 20/22   very easy · avg 87%     0.8%  sharp · maxed out
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                93.6%  ▂▃··▃▂▅█▆▃●▃ beats 20/22   very easy · avg 88%     0.8%  sharp · maxed out
 <a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals)</a>                  89.1%  ▁·▁▁·▁▇●█▁▃▁ beats 10/20   easy · avg 81%          0.7%  typical
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>    8.5%  ●··▄▄·▄▄█▄·▄ beats 0/8     very hard · avg 11%     0.4%  typical
 </pre>
@@ -131,7 +131,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>              41.9%  ▄··▄▄···●▄█▄ beats 3/7      hard · avg 34%         1.3%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   68.5%  ▂▄▂▃█▄▃▆▃●▂▂ beats 68/81    medium · avg 56%       1.3%  blunt · at its level
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4 pat…</a>   83.9%  ▄·······▄█·● beats 4/4      easy · avg 71%         1.2%  typical
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                48.2%  ▁▁▁▃▃▃▁█▁▃·● beats 21/21    hard · avg 30%         0.9%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                48.2%  ▁▁▁▃▃▃▁█▁▃·● beats 21/21    hard · avg 31%         0.9%  at its level
 <a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot CoT)</a>   86.3%  ▁···▂▁▅●▂▂▃▁ beats 11/22    easy · avg 79%         0.9%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.2%  ▃▁▁▁▁▁▁▁▂█●▁ beats 252/276  medium · avg 72%       0.6%  at its level · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   61.7%  ▁··▃▁▁▁▅●▅▁▅ beats 12/24    hard · avg 51%         0.6%  blunt · at its level

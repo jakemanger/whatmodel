@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 685B params (37B active) · mit
 
-**score 63.5** ±0.5 · #164 of 724 · from 64 benchmark results across 21 sources
+**score 63.5** ±0.5 · #164 of 725 · from 64 benchmark results across 21 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #221 of 302    4.3%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #222 of 303    4.3%      3
 coding          ▁▁▁▃▆██●▆▄▃▁   #135 of 460     27%     10
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #112 of 395     12%      6
 math            ▁▁▃▅█▆●█▄▁▁▁   #149 of 424     15%      7
 </pre>
 
-<details><summary>agent tasks · #221 of 302 · 4.3% of its score</summary>
+<details><summary>agent tasks · #222 of 303 · 4.3% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>             49.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 39/131  hard · avg 17%          3.1%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>             49.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 39/131  hard · avg 18%          3.1%  sharp · at its level · small run · seve…
 <a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    5.9%  ▄···▄▄·▄▄·●█ beats 5/7     very hard · avg 2.5%    0.6%  blunt · too hard for it
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>                              56.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 67/114  medium · avg 51%        0.5%  blunt · at its level
 </pre>
@@ -42,7 +42,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   56.9%  ▂·▂▃▅▂▃█●▄▂▂ beats 32/49   very hard · avg 7.3%     14%  sharp · at its level · several runs
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>             49.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 39/131  hard · avg 17%          3.1%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>             49.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 39/131  hard · avg 18%          3.1%  sharp · at its level · small run · seve…
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    4.6%  ▃···█··▂·●·▂ beats 15/17   very hard · avg 1.0%    2.9%  sharp · too hard for it
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   65.9%  ▄····▄▄··▄█● beats 6/6     medium · avg 41%        1.9%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   68.7%  ▁··▁·▁▁▁▆█●█ beats 28/45   hard · avg 29%          1.5%  at its level
@@ -109,7 +109,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">C-Eval (lab)</a>                         91.8%  ▁···▁▁▂▁▂▂▃● beats 29/33    easy · avg 74%          0.9%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">CNMO 2024 (lab)</a>                      78.8%  ●··········█ beats 0/1      medium · avg 58%        0.8%  small run · several runs
 <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge for cr…</a>   77.0%  ▃▃··▃▅▅···●▃ beats 7/10     medium · avg 53%        0.7%  typical
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA (lab)</a>                63.7%  ▄··▄●▄··▄··█ beats 2/6      medium · avg 46%        0.6%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA (lab)</a>                63.7%  ▄··▄●▄··▄··█ beats 2/6      medium · avg 47%        0.6%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">DROP (lab)</a>                           92.2%  ▃▅█▅·▃·▆▄▂▁● beats 44/44    easy · avg 65%          0.2%  blunt · small run
 <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH</a>                            85.0%  █·█·█·██··█● beats 6/6      medium · avg 64%        0.1%  blunt · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   85.7%  ▁▁●▃▄▄█▆▃▂▂▁ beats 15/140   very easy · avg 94%     0.1%  blunt · maxed out · noisy

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 31.1B params (3B active) · apache-2.0
 
-**score 59.8** ±0.7 · #204 of 724 · from 26 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.8** ±0.7 · #205 of 725 · from 26 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #184 of 302*     11%      2
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #185 of 303*     11%      2
 coding              ▁▁▁▃▆██●▆▄▃▁   #180 of 460*    4.1%      1
 chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #209 of 395*    2.6%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁   #130 of 424*    8.7%      2
 vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #91 of 147     45%     13
 </pre>
 
-<details><summary>agent tasks · #184 of 302 · 11% of its score</summary>
+<details><summary>agent tasks · #185 of 303 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                    result  vs the others in its run  difficulty            
 
 <details><summary>coding · #180 of 460 · 4.1% of its score</summary>
 
-Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Thinking 2507](qwen3-30b-a3b-thinking-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -52,7 +52,7 @@ Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)]
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   81.7%  ▃··▃···●█▅▃▃ beats 2/11   easy · avg 76%    2.6%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   81.7%  ▃··▃···●█▅▃▃ beats 2/11   easy · avg 77%    2.6%  typical
 </pre>
 
 </details>
@@ -99,7 +99,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      74.4%  ▂····▂·▂▂█▆● beats 13/14  hard · avg 48%      8.7%  sharp · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       80.5%  ▄·▄·▄▄▄▄█▄█● beats 11/12  medium · avg 62%    6.2%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     90.9%  ▃··▃·▃·█▃▅▃● beats 10/11  easy · avg 79%      4.6%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      56.4%  ▄··▄·▄▄▄█▄█● beats 10/11  medium · avg 36%    4.3%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      56.4%  ▄··▄·▄▄▄█▄█● beats 10/11  medium · avg 37%    4.3%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>                   55.0%  ▃··▃▅▃▃▃●▃·█ beats 7/11   medium · avg 42%    3.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                        59.2%  ▅··▃·▅▃●·█·▃ beats 6/10   hard · avg 50%      3.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (la…</a>   73.3%  ▃··█··▅█●▃▅▃ beats 9/13   medium · avg 66%    2.7%  blunt · at its level

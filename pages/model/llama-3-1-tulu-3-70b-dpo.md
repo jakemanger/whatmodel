@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 54.4** ±1.1 · #293 of 724 · from 12 benchmark results across 2 sources
+**score 54.3** ±1.1 · #294 of 725 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ math            ▁▁▃▅●▆▄█▄▁▁▁    #281 of 424     50%     
 
 <details><summary>chat &amp; writing · #230 of 395 · 8.8% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
@@ -38,7 +38,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [
 
 <pre>
 test                             result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 27%           29%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 27%           28%  sharp · at its level
 <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 187/200  easy · avg 84%          8.7%  sharp · small run
 <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 53%        7.2%  at its level · small run
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/193   very hard · avg 6.9%    5.8%  sharp · noisy
@@ -69,7 +69,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   52% ▇▇▇▇▇▇
 <a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   47% ▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.4
+weighted average                                   = 54.3
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

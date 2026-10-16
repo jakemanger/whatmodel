@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 42.2** ±0.8 · #523 of 724 · from 32 benchmark results across 3 sources
+**score 42.2** ±0.8 · #524 of 725 · from 32 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #234 of 302*    1.7%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #235 of 303*    1.7%      1
 coding          █··········●        #2 of 4     24%      7
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #245 of 395    6.1%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁    #318 of 424     30%      8
 </pre>
 
-<details><summary>agent tasks · #234 of 302 · 1.7% of its score</summary>
+<details><summary>agent tasks · #235 of 303 · 1.7% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall.
 

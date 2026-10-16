@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 3.82B params · mit
 
-**score 41.3** ±1.5 · #535 of 724 · from 10 benchmark results across 7 sources
+**score 41.3** ±1.5 · #536 of 725 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-inst
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   45.9%  ▃··▁▂▂▃▂●▃▄▂ beats 22/47  medium · avg 50%    5.1%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   45.9%  ▃··▁▂▂▃▂●▃▄▂ beats 22/47  medium · avg 51%    5.1%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    7.7%  ▁▁▁▁●▁▂▂▃█▅▄ beats 6/47   hard · avg 31%      4.2%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   30.7%  █▂▁▁▂▂▂▃●▅▅▇ beats 26/47  hard · avg 32%      3.7%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.9%  ▁▁▁······▁▃● beats 39/47  easy · avg 66%      0.2%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.9%  ▁▁▁······▁▃● beats 39/47  easy · avg 67%      0.2%  blunt · at its level · noisy
 </pre>
 
 </details>

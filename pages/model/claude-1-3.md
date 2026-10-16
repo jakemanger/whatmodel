@@ -52,7 +52,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   37.1%  ▄······▄·●·▄ beats 3/4      medium · avg 38%       7.8%  sharp · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    52.3%  ▂▂··▂·▂··▂●▄ beats 8/10     medium · avg 56%       4.1%  blunt · at its level
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       86.7%  ▁▁▂▂▄▄▃▆▅█▅● beats 79/80    easy · avg 84%         4.1%  small run
-<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   84.8%  ▃····▃·▃▃█▅● beats 9/10     easy · avg 81%         3.6%  at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   84.8%  ▃····▃·▃▃█▅● beats 9/10     easy · avg 81%         3.7%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   59.8%  ▄····▄·●···▄ beats 2/4      hard · avg 65%         3.6%  at its level · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   32.6%  ▃··▃·█▃·█▃·● beats 10/10    hard · avg 29%         2.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   89.7%  ▂▂▄··▂▂█●··▂ beats 10/12    easy · avg 90%         1.3%  noisy

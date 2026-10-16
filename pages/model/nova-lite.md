@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 49.9** ±1.9 · #368 of 724 · from 8 benchmark results across 4 sources
+**score 49.9** ±1.9 · #369 of 725 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #232 of 302     30%      4
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #233 of 303     30%      4
 chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #264 of 395*     39%      1
 vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #129 of 147*     27%      1
 </pre>
 
-<details><summary>agent tasks · #232 of 302 · 30% of its score</summary>
+<details><summary>agent tasks · #233 of 303 · 30% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 

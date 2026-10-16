@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.6** ±1.1 · #207 of 724 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.5** ±1.1 · #208 of 725 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #163 of 302     20%      6
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #165 of 303     20%      6
 coding       ▁▁▁▃▆●█▇▆▄▃▁   #313 of 460*    9.2%      2
 math         ▁▁▃▅█▆●█▄▁▁▁   #177 of 424*     19%      2
 </pre>
 
-<details><summary>agent tasks · #163 of 302 · 20% of its score</summary>
+<details><summary>agent tasks · #165 of 303 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -83,7 +83,7 @@ source                               results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="report-2601.07022v1"></a><a href="https://arxiv.org/html/2601.07022v1">Solar Open Technical Report (lab)</a>          1    5% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 59.6
+weighted average                              = 59.5
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Solar Open Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

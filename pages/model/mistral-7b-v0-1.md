@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
-**score 37.3** ±0.5 · #597 of 724 · from 59 benchmark results across 10 sources
+**score 37.3** ±0.5 · #598 of 725 · from 59 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -64,13 +64,13 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">OpenBookQA</a>                           32.8%  █·▁▁▃·▁▃▅▇●▄ beats 22/26   hard · avg 48%         1.2%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 52%       1.1%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">Social IQA</a>                           42.7%  ▁···▁▃●▁▁▁·▁ beats 19/26   hard · avg 56%         0.8%  blunt · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">SciQ</a>                                 95.9%  ▁·▁·▁·▃▅▃█▄● beats 26/26   very easy · avg 97%    0.7%  blunt · maxed out
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">SciQ</a>                                 95.9%  ▁·▁·▁·▃▅▃█▄● beats 26/26   very easy · avg 98%    0.7%  blunt · maxed out
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.8%  ▃▅▃··▅▃·●▃▃▅ beats 7/13    medium · avg 61%       0.6%  at its level
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report)</a>       41.2%  ▄··········● beats 1/2     medium · avg 62%       0.5%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   61.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 92/276  medium · avg 72%       0.4%  at its level · noisy
 <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               46.1%  ▁···▁▁●▁▂▂▃█ beats 6/33    medium · avg 59%       0.4%  noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">LAMBADA (OpenAI version), last-wo…</a>   75.7%  ▁··▂▁▁▁▂▆█▅● beats 25/26   very easy · avg 86%    0.4%  blunt
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 53/146  easy · avg 82%         0.3%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 53/146  easy · avg 82%         0.4%  at its level · noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-23%2022%3A54%3A12.386937.json">HaluEval QA hallucination detecti…</a>   54.5%  █▁▁·▁▁·●▁▁▁▁ beats 21/27   hard · avg 66%         0.2%  noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2023-12-09%2002%3A59%3A23.060797.json">TruthfulQA MC2</a>                       42.6%  ▅▃●▆▁▂▅···▁▁ beats 15/31   medium · avg 57%       0.1%  blunt · at its level
 </pre>

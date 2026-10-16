@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆●▆▅▄▄▃▃▁   #234 of 342*    3.2%      1
+agent tasks     ▁▁▂▆●▆▅▄▄▃▃▁   #235 of 343*    3.2%      1
 coding          ▃●······▃·▃▃       #4 of 7*    8.0%      1
 chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #257 of 466*     18%      1
 math            ▁▂▃▆█●▅▇▃▁▁▁   #229 of 523*     45%      2
 </pre>
 
-<details><summary>agent tasks · #234 of 342 · 3.2% of its score</summary>
+<details><summary>agent tasks · #235 of 343 · 3.2% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   65.0%  █●·····▃···▃ beats 3/5    medium · avg 47%     26%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   65.0%  █●·····▃···▃ beats 3/5    medium · avg 48%     26%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   73.6%  █●·····▃···▃ beats 3/5    medium · avg 60%     19%  sharp · at its level
 </pre>
 

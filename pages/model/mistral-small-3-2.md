@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 24B params · apache-2.0
 
-**score 56.6** ±1.0 · #248 of 724 · from 23 benchmark results across 10 sources
+**score 56.6** ±1.0 · #247 of 725 · from 23 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁     #213 of 302*    6.3%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁     #214 of 303*    6.3%      2
 coding                             not ranked yet       —      2
 chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃     #152 of 395*     14%      2
 math                ▁▁▃▅█●▄█▄▁▁▁     #203 of 424*     10%      2
 vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄      #101 of 147     17%      6
 </pre>
 
-<details><summary>agent tasks · #213 of 302 · 6.3% of its score</summary>
+<details><summary>agent tasks · #214 of 303 · 6.3% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -94,7 +94,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1162.3  ▁·▂▁▄▅●▃█▄▁▁ beats 23/62    avg 1031                6.0%  typical
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU (lab)</a>                           80.5%  ▁▁▁▁▁▂▂▅██●▄ beats 169/214  medium · avg 71%        4.4%  small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU-Pro (lab)</a>                       69.1%  ▁▁·▁▁▁▃▂●▅█▁ beats 83/188   medium · avg 56%        3.5%  at its level · small run
-<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                       12.1%  ▄▄▄▆█●███·▂█ beats 14/32    very hard · avg 7.2%    3.5%  small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                       12.1%  ▄▄▄▆█●███·▂█ beats 14/32    very hard · avg 7.3%    3.5%  small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   34.0%  ▃▇▂●▅▅▂▄▄▆█▇ beats 19/80    hard · avg 28%          2.7%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   90.4%  ▃·▁▁▂▁▂▅█▇●▁ beats 92/100   medium · avg 66%        1.5%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 1.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 39/135   very hard · avg 5.8%    1.0%  sharp · too hard for it · noisy
@@ -112,7 +112,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card2-mistralai-mistral-small-3-2-24b-instruct-2506"></a><a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">mistralai/Mistral-Small-3.2-24B-Instruc…</a>        9   32% ▇▇▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   23% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   22% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   17% ▇▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    6% ▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    6% ▇

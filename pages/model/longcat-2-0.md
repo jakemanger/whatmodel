@@ -6,7 +6,7 @@
 
 Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-**score 72.1** ±1.9 · #59 of 724 · from 7 benchmark results across 2 sources
+**score 72.0** ±1.9 · #60 of 725 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁      #72 of 302*     24%      6
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁      #73 of 303*     24%      6
 coding                         not ranked yet       —      2
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #131 of 395*    5.3%      1
 math            ▁▁▃▅█▆▄█●▁▁▁      #51 of 424*     14%      1
 web search      ▂▁▂▆▄●▃▃▁▁·▁       #38 of 80*     13%      2
 </pre>
 
-<details><summary>agent tasks · #72 of 302 · 24% of its score</summary>
+<details><summary>agent tasks · #73 of 303 · 24% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                       78.8%  ██●█··█····█ beats 2/5    medium · avg 44%         13%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                       78.8%  ██●█··█····█ beats 2/5    medium · avg 45%         13%  typical
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>   44.5%  ▂·▁▁··●▇█▂·▁ beats 9/25   hard · avg 28%           11%  blunt · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Multilingual (lab)</a>         77.3%  ▁··▁▃▂▅▇●▃▃▁ beats 47/60  hard · avg 18%             —  not counted yet: no other model in the …
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">Terminal-Bench 2.1 (lab)</a>             70.8%  ▁·▁·▁▁▄▃▄●▄█ beats 35/58  very hard · avg 7.0%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">Terminal-Bench 2.1 (lab)</a>             70.8%  ▁·▁·▁▁▄▃▄●▄█ beats 35/58  very hard · avg 7.1%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">BrowseComp (lab)</a>                     79.9%  ▂·▄▁▂▃▆▄█●▃▄ beats 34/42  very hard · avg 9.7%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Pro (lab)</a>                  59.5%  ▅▃▃·▃·▅▅▅█●▃ beats 14/15                             —  not counted yet: no other model in the …
 </pre>
@@ -77,7 +77,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Gemini 3.5 Flash](gemini-3
 
 <pre>
 test              result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>     78.8%  ██●█··█····█ beats 2/5    medium · avg 44%         13%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>     78.8%  ██●█··█····█ beats 2/5    medium · avg 45%         13%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">BrowseComp (lab)</a>   79.9%  ▂·▄▁▂▃▆▄█●▃▄ beats 34/42  very hard · avg 9.7%       —  not counted yet: no other model in the …
 </pre>
 
@@ -103,7 +103,7 @@ source                                    results  share of the score
 <a name="card-meituan-longcat--longcat-2.0"></a><a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 model card …</a>        6   88% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1   11% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 72.1
+weighted average                                   = 72.0
 </pre>
 
 <sub>Licences: meituan-longcat/LongCat-2.0 model card ([mit](../../licenses/meituan-longcat--LongCat-2.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 46.7** ±1.8 · #438 of 724 · from 4 benchmark results across 3 sources
+**score 46.7** ±1.8 · #439 of 725 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

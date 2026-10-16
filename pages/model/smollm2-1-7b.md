@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 33.1** ±1.0 · #635 of 724 · from 18 benchmark results across 5 sources
+**score 33.1** ±1.0 · #636 of 725 · from 18 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -52,7 +52,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Comm
 
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 87%     22%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 88%     22%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   20.3%  ●▃█▂▂▆·····▁ beats 0/22   medium · avg 57%       7.6%  small run · several runs
 </pre>
 
@@ -66,7 +66,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 75%       13%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    medium · avg 64%    8.2%  at its level
 <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.6%  at its level · small run
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 30%      1.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 31%      1.8%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 82%      1.7%  at its level · noisy
 <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▂▂▃●█▅▃▁▁ beats 42/123  easy · avg 84%      1.1%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 60%    0.5%  blunt · at its level

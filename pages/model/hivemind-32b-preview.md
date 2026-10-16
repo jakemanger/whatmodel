@@ -6,7 +6,7 @@
 
 PrentisAI (HiveLabsAI) · released 2026-04 · 32.76B params · other (proprietary)
 
-**score 73.1** ±3.8 · #51 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 73.1** ±3.8 · #50 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

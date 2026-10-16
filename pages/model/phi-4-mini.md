@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-02 · 3.84B params · mit
 
-**score 45.4** ±0.6 · #461 of 724 · from 40 benchmark results across 10 sources
+**score 45.4** ±0.6 · #461 of 725 · from 40 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁●▃▆█▆▅▅▅▄▃▁   #296 of 302    2.3%      3
+agent tasks     ▁●▃▆█▆▅▅▅▄▃▁   #297 of 303    2.3%      3
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #308 of 460    7.2%      4
 chat &amp; writing  █··········●      #1 of 2*    0.6%      1
 math            ▁▁▃▅●▆▄█▄▁▁▁   #305 of 424     22%      5
 </pre>
 
-<details><summary>agent tasks · #296 of 302 · 2.3% of its score</summary>
+<details><summary>agent tasks · #297 of 303 · 2.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -98,7 +98,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (lab)</a>      25.2%  ●··▄▂··▂▂··▄ beats 3/10     very hard · avg 32%    0.9%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (lab)</a>        43.0%  ▂▁▁▃▂▅▇●▅▂▂▂ beats 35/60    medium · avg 49%       0.8%  at its level · small run
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     22.0%  ●···█▂▆▆██▆▂ beats 0/23     very hard · avg 29%    0.6%  too hard for it
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   25.3%  ●···▁▁▁▂▃·▆▂ beats 5/23     very hard · avg 28%    0.6%  sharp · too hard for it
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   25.3%  ●···▁▁▁▂▃·▆▂ beats 5/23     very hard · avg 29%    0.6%  sharp · too hard for it
 <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (lab)</a>        33.8%  ▁▁··▁▁▂▅●▅▅▅ beats 20/49    hard · avg 33%         0.5%  at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (lab)</a>                           77.6%  ▃·▅·▃●·▃▅··▃ beats 4/10     medium · avg 82%       0.4%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.6%  ▁▁▂▃▄▄█●▃▂▂▁ beats 96/140   very easy · avg 94%    0.3%  blunt · maxed out · noisy

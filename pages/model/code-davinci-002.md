@@ -38,7 +38,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>   63.1%  █·▅▃▃▃·▃·▃▃● beats 12/12  easy · avg 67%       25%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    35.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 12/18  medium · avg 47%    2.7%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    35.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 12/18  medium · avg 48%    2.7%  sharp · at its level
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2203.11171v4">MultiArith</a>                           96.2%  █·········█● beats 2/2      very easy · avg 95%    1.0%  sharp · maxed out · small run · several…
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   48.1%  ▂··▂·▂▄▄·█●█ beats 12/18    medium · avg 61%       1.0%  at its level
 <a href="https://aclanthology.org/2023.acl-long.855.pdf">CoNLL-2003 English NER, few-shot …</a>   82.3%  ▃···▅·▃▅··▃● beats 8/9      easy · avg 83%         0.8%  small run · several runs
-<a href="https://arxiv.org/html/2210.01296v2">Natural Questions (closed book)</a>      31.4%  ▂▁▁▁▂▄▄▃▅█●▁ beats 63/68    medium · avg 38%       0.7%  at its level · small run
+<a href="https://arxiv.org/html/2210.01296v2">Natural Questions (closed book)</a>      31.4%  ▂▁▁▁▂▄▄▃▅█●▁ beats 63/68    medium · avg 39%       0.7%  at its level · small run
 <a href="https://arxiv.org/html/2203.11171v4">AddSub</a>                               89.4%  █·········●█ beats 1/2      very easy · avg 89%    0.5%  small run
 <a href="https://aclanthology.org/2023.acl-long.9.pdf">ARCADE New Tasks pass@1 (notebook…</a>   23.4%  █·█········● beats 2/2      hard · avg 23%         0.5%  small run
 <a href="https://arxiv.org/html/2210.01296v2">TriviaQA</a>                             81.8%  ▁▁▂▂▄▄▃▆▅█▅● beats 77/80    easy · avg 80%         0.4%  small run

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · 2.27B params · apache-2.0
 
-**score 47.5** ±0.6 · #412 of 724 · from 109 benchmark results across 13 sources
+**score 47.5** ±0.6 · #413 of 725 · from 109 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #277 of 302    9.3%     10
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #278 of 303    9.3%     10
 coding              ▁▁●▃▆██▇▆▄▃▁   #440 of 460    8.3%      7
 chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #247 of 395    1.2%      1
 math                ▁▁▃▅●▆▄█▄▁▁▁   #301 of 424     26%     13
@@ -24,7 +24,7 @@ vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #114 of 147     1
 web search          █·█▄●█·▄▄·▄▄     #8 of 13*    0.9%      2
 </pre>
 
-<details><summary>agent tasks · #277 of 302 · 9.3% of its score</summary>
+<details><summary>agent tasks · #278 of 303 · 9.3% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 In
 test                               result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive)</a>     43.6%  ▄·●·▄▄▄▄·▄·▄ beats 1/8    medium · avg 43%        1.9%  at its level · several runs
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                   5.0%  ▄··▄▄●··▄·▄█ beats 3/8    very hard · avg 13%     1.7%  sharp · small run · several runs
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>    0.8%  █●···▂···▄·▂ beats 4/8    very hard · avg 7.7%    1.1%  sharp · too hard for it · small run · s…
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">MCP-Atlas (public set)</a>              14.8%  ●·▁▂▁·▁▃█▆▆▂ beats 1/37   hard · avg 20%          1.0%  typical
-<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">τ²-bench aggregate (lab)</a>            48.8%  ▁▁▁·▂●▄▃▃▅█▂ beats 5/37   medium · avg 44%        1.0%  at its level · small run
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>    0.8%  █●···▂···▄·▂ beats 4/8    very hard · avg 7.8%    1.1%  sharp · too hard for it · small run · s…
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">MCP-Atlas (public set)</a>              14.8%  ●·▁▂▁·▁▃█▆▆▂ beats 1/37   hard · avg 21%          1.0%  typical
+<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">τ²-bench aggregate (lab)</a>            48.8%  ▁▁▁·▂●▄▃▃▅█▂ beats 5/37   medium · avg 45%        1.0%  at its level · small run
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SWE-bench Multilingual</a>               5.0%  ●··▁▃▂▅▇█▃▃▁ beats 0/60   hard · avg 17%          0.9%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>                       18.2%  ▄▄·▄▄▄·●···█ beats 5/8    very hard · avg 12%     0.6%  noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                     2.1%  ▂●·▅█▂▂▃▂▅▂▃ beats 1/20   very hard · avg 3.5%    0.4%  blunt · too hard for it
@@ -53,7 +53,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unspecif…</a>   20.2%  ●····█·▃▅▃·▃ beats 0/8    medium · avg 38%        2.1%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                    5.0%  ▄··▄▄●··▄·▄█ beats 3/8    very hard · avg 13%     1.7%  sharp · small run · several runs
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Easy)</a>      10.3%  ●···█▄··▄█▄▄ beats 0/8    hard · avg 32%          1.4%  at its level
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>     0.8%  █●···▂···▄·▂ beats 4/8    very hard · avg 7.7%    1.1%  sharp · too hard for it · small run · s…
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>     0.8%  █●···▂···▄·▂ beats 4/8    very hard · avg 7.8%    1.1%  sharp · too hard for it · small run · s…
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SWE-bench Multilingual</a>                5.0%  ●··▁▃▂▅▇█▃▃▁ beats 0/60   hard · avg 17%          0.9%  typical
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified)</a>           6.0%  ●·····██████ beats 0/6    hard · avg 17%          0.6%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Medium)</a>     0.0%  ●···▂··▄▂··▂ beats 2/8    very hard · avg 1.9%    0.5%  sharp · too hard for it · noisy
@@ -79,7 +79,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-n
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>                   20.5%  ●··▃▃·▃··▃·█ beats 1/8    hard · avg 31%          6.9%  sharp · several runs
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                            29.0%  ●·▄█·▄▄···█▄ beats 0/8    medium · avg 51%        6.1%  sharp · at its level · several runs
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                            29.0%  ●·▄█·▄▄···█▄ beats 0/8    medium · avg 52%        6.1%  sharp · at its level · several runs
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>                            29.6%  ●▄▄▄▄····█·▄ beats 0/8    medium · avg 41%        2.9%  sharp · at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500</a>                             85.8%  ●█▄▄▄··▄···▄ beats 1/8    very easy · avg 89%     2.2%  typical
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>    1.9%  ●·····▅██▄·▁ beats 0/20   very hard · avg 7.4%    1.5%  sharp · too hard for it
@@ -87,7 +87,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>    4.2%  ●···▄·██▆▆▄▂ beats 0/19   very hard · avg 4.9%    1.1%  sharp · too hard for it
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PolyMATH (lab)</a>                       26.1%  ▁···●▁·▇█▄▄▄ beats 2/23   hard · avg 29%          0.9%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MathVista (testmini) (lab)</a>           76.7%  ▁··▁▄▄▇█▅●█▄ beats 30/47  easy · avg 74%          0.9%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT November 2025 (lab)</a>             19.6%  ▁●····▁▅▃█▇▁ beats 1/23   medium · avg 36%        0.8%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT November 2025 (lab)</a>             19.6%  ▁●····▁▅▃█▇▁ beats 1/23   medium · avg 37%        0.8%  at its level · small run
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   10.6%  ●··▁▄█▄▁·▃·▁ beats 0/17   very hard · avg 11%     0.8%  typical
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">DynaMath (lab)</a>                       73.6%  ▂·····●··█▄▆ beats 1/10   easy · avg 70%          0.6%  at its level · small run
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 2026 (…</a>    2.8%  ●··█▂▂▂▆▄··▂ beats 0/14   very hard · avg 1.2%    0.1%  sharp · too hard for it · noisy
@@ -101,11 +101,11 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                               61.4%  ▄▄▄█·······● beats 5/5     medium · avg 60%       1.9%  at its level · several runs
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>        76.1%  █·▄·······▄● beats 4/5     easy · avg 77%         1.6%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                               61.4%  ▄▄▄█·······● beats 5/5     medium · avg 61%       1.9%  at its level · several runs
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>        76.1%  █·▄·······▄● beats 4/5     easy · avg 78%         1.6%  at its level
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   16.2%  ▁·●·▃▃▁▇▃█·▄ beats 1/22    hard · avg 26%         1.3%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">CharXiv (reasoning questions) (la…</a>   58.8%  ▂▅▃▅▅●▆▅▆█▆▂ beats 43/100  medium · avg 57%       1.1%  at its level · small run
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>                  76.0%  █·····▃··▃·● beats 5/5     easy · avg 78%         1.0%  blunt · several runs
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>                  76.0%  █·····▃··▃·● beats 5/5     easy · avg 79%         1.0%  blunt · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMU (val) (lab)</a>                     64.2%  ▁····▁▁▄█●▆▆ beats 27/52   medium · avg 64%       0.9%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MathVista (testmini) (lab)</a>           76.7%  ▁··▁▄▄▇█▅●█▄ beats 30/47   easy · avg 74%         0.9%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMU Pro (lab)</a>                       50.3%  ▂▃▁▃●▇▃▇▇██▅ beats 12/52   medium · avg 49%       0.9%  at its level · small run
@@ -150,8 +150,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                                 54.3%  ▄·····▄●··▄█ beats 2/5     medium · avg 68%        1.7%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">INCLUDE (lab)</a>                        55.4%  ▂····▂▂●▄▄█▄ beats 10/36   medium · avg 59%        1.5%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">C-Eval (lab)</a>                         73.2%  ▁···▁▁▂▁▂●▃█ beats 11/33   easy · avg 74%          1.3%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMLU (lab)</a>                          63.1%  ▂▁▁▂▃▂▄●▅██▃ beats 16/46   medium · avg 64%        1.3%  at its level · small run
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   56.2%  ▂··▂●·▂▆▆█·▄ beats 2/15    medium · avg 62%        1.3%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMLU (lab)</a>                          63.1%  ▂▁▁▂▃▂▄●▅██▃ beats 16/46   medium · avg 65%        1.3%  at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   56.2%  ▂··▂●·▂▆▆█·▄ beats 2/15    medium · avg 63%        1.3%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2</a>                         24.9%  ●······▅▅▃·█ beats 0/8     very hard · avg 34%     1.2%  noisy · small run · several runs
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>                  2.1%  ●▄·▄··▄·▄·▄█ beats 0/7     very hard · avg 3.6%    1.1%  too hard for it
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspecified)</a>   57.1%  ▄▄···●·▄·▄██ beats 2/8     medium · avg 57%        1.1%  blunt · at its level · several runs

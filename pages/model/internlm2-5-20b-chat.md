@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-08 · 19.9B params · other
 
-**score 47.1** ±1.5 · #428 of 724 · from 7 benchmark results across 4 sources
+**score 47.1** ±1.5 · #429 of 725 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   70.7%  ▃··▁▂▂▃▂█●▄▂ beats 38/47  medium · avg 50%    6.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   70.7%  ▃··▁▂▂▃▂█●▄▂ beats 38/47  medium · avg 51%    6.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   55.3%  █▂▁▁▂▂▂▃▅▅●▇ beats 38/47  hard · avg 32%      6.4%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   33.4%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 32/47  hard · avg 31%      5.2%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 30/47  easy · avg 66%      0.2%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 30/47  easy · avg 67%      0.2%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Cod
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   31.2%  ▂▁▁▅█●▄▃▃▅▃▁ beats 26/60   medium · avg 46%     52%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   31.2%  ▂▁▁▅█●▄▃▃▅▃▁ beats 26/60   medium · avg 46%     51%  sharp · at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1190.7  ▁▁▁▂●▃▃▆▆▇█▃ beats 64/379  avg 1258             23%  blunt
 </pre>
 
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   52% ▇▇▇▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   51% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   23% ▇▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   19% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇

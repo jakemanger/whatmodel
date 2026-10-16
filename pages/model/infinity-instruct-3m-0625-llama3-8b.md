@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 8.03B params · apache-2.0
 
-**score 47.2** ±1.6 · #563 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.2** ±1.6 · #564 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

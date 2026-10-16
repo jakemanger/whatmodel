@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 35.5** ±0.6 · #614 of 724 · from 20 benchmark results across 9 sources
+**score 35.5** ±0.6 · #615 of 725 · from 20 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁    #427 of 460     59%      4
+coding          ▁▁▁●▆██▇▆▄▃▁    #427 of 460     60%      4
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #362 of 395     15%      4
-math            ▁▁▃▅●▆▄█▄▁▁▁   #319 of 424*    2.7%      1
+math            ▁▁▃▅●▆▄█▄▁▁▁   #319 of 424*    2.6%      1
 </pre>
 
-<details><summary>coding · #427 of 460 · 59% of its score</summary>
+<details><summary>coding · #427 of 460 · 60% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -49,13 +49,13 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #319 of 424 · 2.7% of its score</summary>
+<details><summary>math · #319 of 424 · 2.6% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   28.0%  ▆▂▅●▅▅▃▆···▂ beats 8/25   easy · avg 72%    2.7%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   28.0%  ▆▂▅●▅▅▃▆···▂ beats 8/25   easy · avg 72%    2.6%  sharp · at its level
 </pre>
 
 </details>

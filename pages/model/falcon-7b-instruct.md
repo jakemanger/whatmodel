@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 25.6** ±2.2 · #676 of 724 · from 11 benchmark results across 7 sources
+**score 25.6** ±2.2 · #677 of 725 · from 11 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

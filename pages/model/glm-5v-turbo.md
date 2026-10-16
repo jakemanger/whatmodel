@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 68.0** ±1.6 · #103 of 724 · from 4 benchmark results across 1 source
+**score 67.9** ±1.6 · #104 of 725 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1399.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 46/119  avg 969        45%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1399.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 46/119  avg 970        45%  sharp
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.0
+weighted average                        = 67.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

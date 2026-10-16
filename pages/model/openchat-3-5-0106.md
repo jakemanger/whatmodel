@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-01 · 7.24B params · apache-2.0
 
-**score 47.4** ±0.6 · #417 of 724 · from 10 benchmark results across 7 sources
+**score 47.4** ±0.6 · #416 of 725 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

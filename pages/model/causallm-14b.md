@@ -6,7 +6,7 @@
 
 CausalLM · released 2023-10 · wtfpl
 
-**score 41.3** ±1.9 · #717 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.3** ±1.9 · #718 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

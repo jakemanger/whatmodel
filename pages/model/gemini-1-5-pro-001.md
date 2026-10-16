@@ -62,7 +62,7 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>vision &amp; documents · #137 of 182 · 16% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Pixtral Large (2411)](pixtral-large.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md), [Qwen2.5-VL 32B Instruct](qwen2-5-vl-32b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Pixtral Large (2411)](pixtral-large.md) here, though they rank higher overall. Trails [Qwen2.5-VL 32B Instruct](qwen2-5-vl-32b.md), [Gemma 3 27B](gemma-3-27b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why

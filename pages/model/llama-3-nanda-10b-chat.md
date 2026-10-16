@@ -6,7 +6,7 @@
 
 MBZUAI & Inception · released 2024-10 · llama3
 
-**score 43.8** ±4.3 · #664 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 43.7** ±4.3 · #668 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards (la…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 43.8
+weighted average                                   = 43.7
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

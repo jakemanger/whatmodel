@@ -6,7 +6,7 @@
 
 Meta · released 2026-04 · closed weights
 
-**score 74.2** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 74.1** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -73,7 +73,7 @@ source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   69% ▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             2   29% ▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 74.2
+weighted average                        = 74.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-08 · 320B params (18B active) · mit
 
-**score 73.0** ±0.7 · #52 of 724 · from 21 benchmark results across 8 sources
+**score 72.9** ±0.7 · #53 of 725 · from 21 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #25 of 302     21%      7
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #25 of 303     21%      7
 coding              ▁▁▁▃▆██▇▆▄●▁    #24 of 460     13%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #28 of 395*    5.1%      1
 math                ▁▁▃▅█▆▄█●▁▁▁    #48 of 424     40%      3
@@ -24,18 +24,18 @@ vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #23 of 147*    3.
 web search          ▂▁▂▆▄●▃▃▁▁·▁    #36 of 80*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #25 of 302 · 21% of its score</summary>
+<details><summary>agent tasks · #25 of 303 · 21% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [Muse Wonder](muse-wonder.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
+Beats [GPT-5.5](gpt-5-5.md), [Muse Spark Open](muse-spark-open.md), [Muse Wonder](muse-wonder.md) here, though they rank higher overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0044 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 18/49  avg -0.312 IPS          9.3%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0044 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 18/49  avg -0.311 IPS          9.4%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-z-ai-glm-5-3-flash-none-claude-code.json">Terminal-Bench 4.0</a>                        35.8%  █▅▅▅▅·●▃▃▅▅▅ beats 11/20  very hard · avg 0.5%    4.0%  sharp
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Terminal-Bench 2.1 (lab)</a>                  84.3%  ▁·▁·▁▁▄▃▄█▄● beats 46/58  hard · avg 25%          2.3%  sharp · small run
 <a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>        25.7%  ●··▄█·▄····▄ beats 0/6    very hard · avg 7.0%    1.9%  at its level
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Humanity's Last Exam with tools (…</a>        55.3%  ▂▂▂▁▄▂▃▆█●▂▆ beats 39/54  hard · avg 17%          1.2%  at its level · small run
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/harness…</a>        26.3%  ▂·▂·●▂···▂▄▄ beats 3/11   very hard · avg 6.9%    0.9%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Humanity's Last Exam with tools (…</a>        55.3%  ▂▂▂▁▄▂▃▆█●▂▆ beats 39/55  hard · avg 17%          1.2%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/harness…</a>        26.3%  ▂·▂·●▂···▂▄▄ beats 3/11   very hard · avg 7.0%    0.9%  at its level · small run
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>             63.4%  ▂····▁▁▁▆●█▇ beats 10/29  hard · avg 19%          0.9%  at its level · small run
 </pre>
 
@@ -47,7 +47,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1615.6  ▁▂▄▃▅█▄▇●▄▁▁ beats 97/119  avg 969           8.6%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1615.6  ▁▂▄▃▅█▄▇●▄▁▁ beats 97/119  avg 970           8.6%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   68.8%  ▁▁▁▁·▁▂▃●▃█▇ beats 22/49   hard · avg 17%    3.6%  at its level
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>        63.4%  ▂····▁▁▁▆●█▇ beats 10/29   hard · avg 19%    0.9%  at its level · small run
 </pre>
@@ -96,7 +96,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Gemini 3.5 Flash](gemini-3
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Humanity's Last Exam with tools (…</a>   55.3%  ▂▂▂▁▄▂▃▆█●▂▆ beats 39/54  hard · avg 17%    1.2%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Humanity's Last Exam with tools (…</a>   55.3%  ▂▂▂▁▄▂▃▆█●▂▆ beats 39/55  hard · avg 17%    1.2%  at its level · small run
 </pre>
 
 </details>
@@ -110,7 +110,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                14.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 68/135   very hard · avg 5.8%    3.8%  sharp · noisy
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   27.9%  ▁▁▃▂▂●▁▃▄▄▄█ beats 11/38    very hard · avg 14%     1.8%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   94.6%  ▁▁▃▁█▄●▃▆▂▂▂ beats 28/49    easy · avg 77%          1.3%  maxed out
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">AutomationBench v1.0.6 (lab)</a>         48.8%  ▃····▃·▃▃··● beats 4/6      very hard · avg 6.3%    1.1%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">AutomationBench v1.0.6 (lab)</a>         48.8%  ▃····▃·▃▃··● beats 4/6      very hard · avg 6.4%    1.1%  at its level · small run
 </pre>
 
 </details>
@@ -130,7 +130,7 @@ source                                    results  share of the score
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 73.0
+weighted average                                   = 72.9
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.3-Flash model card ([MIT](../../licenses/zai-org--GLM-5.3-Flash.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

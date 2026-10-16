@@ -6,7 +6,7 @@
 
 Poolside · released 2026-06 · 33B params (3B active) · openmdw-1.1
 
-**score 64.8** ±2.4 · #143 of 724 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.8** ±2.4 · #144 of 725 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

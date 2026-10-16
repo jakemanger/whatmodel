@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 321B params (38B active) · apache-2.0
 
-**score 59.7** ±2.3 · #233 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.6** ±2.3 · #234 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>vision &amp; documents · #96 of 150 · 40% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 59.7
+weighted average                        = 59.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

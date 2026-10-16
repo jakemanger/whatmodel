@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 55.9** ±1.0 · #260 of 724 · from 17 benchmark results across 7 sources
+**score 55.9** ±1.0 · #261 of 725 · from 17 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #206 of 302     11%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #206 of 303     11%      3
 coding          ▁▁▁▃▆●█▇▆▄▃▁   #290 of 460*     10%      2
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #276 of 395*    5.7%      2
 math            ▁▁▃▅█●▄█▄▁▁▁   #206 of 424*    9.2%      1
 </pre>
 
-<details><summary>agent tasks · #206 of 302 · 11% of its score</summary>
+<details><summary>agent tasks · #206 of 303 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -79,7 +79,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   47.6%  ▂▃▅▂▆●█▅█▅▃▆ beats 12/34    medium · avg 41%       8.8%  blunt · at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux</a>                           85.9%  ▁▁▃▁▂▃▄●▇▅█▄ beats 21/63    easy · avg 78%         6.5%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   92.7%  ▂·▂▂·▂·▃▃·●▃ beats 8/14     easy · avg 79%         6.4%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.3%  ▂··▂▂·▂▆▆●·▄ beats 10/15    medium · avg 62%       4.2%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.3%  ▂··▂▂·▂▆▆●·▄ beats 10/15    medium · avg 63%       4.2%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus</a>                             86.6%  ▁··▁▁▁·▃▁●█▁ beats 9/16     easy · avg 82%         1.4%  blunt
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   80.6%  ▁●▁▂▅█▂▃▄▃▁▁ beats 5/98     very easy · avg 90%    0.0%  blunt
 </pre>

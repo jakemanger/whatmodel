@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 1.67B params · falcon-llm
 
-**score 26.3** ±3.9 · #674 of 724 · from 7 benchmark results across 3 sources
+**score 26.3** ±3.9 · #675 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #301 of 302*     49%      2
+agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #302 of 303*     49%      2
 coding       ▁▁▁●▆██▇▆▄▃▁    #436 of 460     24%      4
 </pre>
 
-<details><summary>agent tasks · #301 of 302 · 49% of its score</summary>
+<details><summary>agent tasks · #302 of 303 · 49% of its score</summary>
 
 Beats [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 
@@ -39,9 +39,9 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.4%  ▁●▁▁▁▁▂▂▃█▅▄ beats 1/47   hard · avg 31%       13%  too hard for it
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 1/47   medium · avg 50%    6.7%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 1/47   medium · avg 51%    6.7%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 2/47   hard · avg 32%      3.5%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   55.8%  ▁▁▁······●▃█ beats 7/47   easy · avg 66%      1.5%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   55.8%  ▁▁▁······●▃█ beats 7/47   easy · avg 67%      1.5%  blunt · at its level · noisy
 </pre>
 
 </details>

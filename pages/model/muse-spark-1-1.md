@@ -6,7 +6,7 @@
 
 Meta · released 2026-07 · closed weights
 
-**score 74.0** ±1.0 · #43 of 724 · from 9 benchmark results across 4 sources
+**score 73.9** ±1.0 · #45 of 725 · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▅●▄▃▁   #53 of 302*     27%      2
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁   #54 of 303*     27%      2
 coding              ▁▁▁▃▆██▇▆●▃▁   #38 of 460*     18%      1
 chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #10 of 395*     11%      1
 math                ▁▁▃▅█▆▄█●▁▁▁   #35 of 424*     29%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #22 of 147*     11%      2
 </pre>
 
-<details><summary>agent tasks · #53 of 302 · 27% of its score</summary>
+<details><summary>agent tasks · #54 of 303 · 27% of its score</summary>
 
-Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [Hunyuan Hy3 (295B-A21B)](hy3.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0488 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 12/49  avg -0.312 IPS           20%  sharp
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        40.5%  ▃▃▂▃·▆▃▂█●▅▂ beats 20/25  very hard · avg 4.1%    7.1%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0488 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 12/49  avg -0.311 IPS           20%  sharp
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        40.5%  ▃▃▂▃·▆▃▂█●▅▂ beats 20/25  very hard · avg 4.2%    7.1%  at its level
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.7  ▁▂▄▃▅█▄●▆▄▁▁ beats 83/119  avg 969        18%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.7  ▁▂▄▃▅█▄●▆▄▁▁ beats 83/119  avg 970        18%  sharp
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #35 of 424 · 29% of its score</summary>
 
-Beats [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
+Beats [Claude Opus 4.7](claude-opus-4-7.md), [Grok 4.5](grok-4-5.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -101,7 +101,7 @@ source                                    results  share of the score
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    7% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">Epoch AI</a>                                        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 74.0
+weighted average                                   = 73.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

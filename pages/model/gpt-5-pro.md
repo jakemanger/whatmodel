@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 71.9** ±0.9 · #61 of 724 · from 7 benchmark results across 3 sources
+**score 71.9** ±0.9 · #62 of 725 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #76 of 302*    5.1%      1
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #77 of 303*    5.1%      1
 math         ▁▁▃▅█▆▄█●▁▁▁   #45 of 424*     63%      2
 web search   ▂▁▂●▄█▃▃▁▁·▁    #57 of 80*    5.1%      1
 </pre>
 
-<details><summary>agent tasks · #76 of 302 · 5.1% of its score</summary>
+<details><summary>agent tasks · #77 of 303 · 5.1% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 

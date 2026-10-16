@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 47.1** ±1.8 · #430 of 724 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.1** ±1.8 · #431 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-n
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       84.8%  ▄···●▄▄·▄·▄█ beats 2/8    very easy · avg 92%     44%  sharp
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                29.4%  ▃·····▃··●▅▅ beats 2/8    hard · avg 34%          33%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.8%  ▃····▃·▅·●·█ beats 5/8    easy · avg 73%          22%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.8%  ▃····▃·▅·●·█ beats 5/8    easy · avg 74%          22%  at its level
 </pre>
 
 </details>
