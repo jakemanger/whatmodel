@@ -291049,7 +291049,8 @@
       "raw_value": 0,
       "scale_divisor": 1
     },
-    "source_id": "lm-eval-harness-results-2023-05"
+    "source_id": "lm-eval-harness-results-2023-05",
+    "invalid": "Exactly 0.0% on TriviaQA (0-shot) for a model that scores 56–63% (5-shot) in its own paper, while far smaller BLOOM models score 1–6% in the same harness folder; an exact zero points to an answer-format or scoring failure, not ability."
   },
   {
     "model": "llama-7b",
@@ -291410,7 +291411,8 @@
       "raw_value": 0,
       "scale_divisor": 1
     },
-    "source_id": "lm-eval-harness-results-2023-05"
+    "source_id": "lm-eval-harness-results-2023-05",
+    "invalid": "Exactly 0.0% on TriviaQA (0-shot) for a model that scores 56–63% (5-shot) in its own paper, while far smaller BLOOM models score 1–6% in the same harness folder; an exact zero points to an answer-format or scoring failure, not ability."
   },
   {
     "model": "llama-13b",
@@ -313773,5 +313775,105 @@
       "raw_value": "65.4",
       "scale_divisor": 100
     }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.3170731707317073,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-10-15",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'Muse-Spark-Open-816B-A42B_xhigh'; run id YifYkfNddMSuE8uBNdbvLi; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07357611282438223.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "frontiermath",
+    "score": 0.6982456140350877,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-10-15",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'Muse-Spark-Open-816B-A42B_xhigh'; run id e3e3h9r7Fouu4wsAeVzTnV; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027237781633151586.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "gpqa-diamond",
+    "score": 0.8857323232323232,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-10-15",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'Muse-Spark-Open-816B-A42B_xhigh'; run id JnKpor8c3EKWGvmyjLFVzH; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.018706209910489154.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "otis-mock-aime",
+    "score": 0.9805555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-10-15",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'Muse-Spark-Open-816B-A42B_xhigh'; run id hB4XzBdWkdpG3WJVYqeRM8; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01253502388483925.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "simpleqa-verified",
+    "score": 0.566,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-10-15",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'Muse-Spark-Open-816B-A42B_xhigh'; run id dNuxLdV4DWqfSvtTq6NnK8; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01568087656637504.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.7073170731707317,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-10-12",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'muse-wonder-1.0_max'; run id 76KF9F9owpePuyHpP68mdZ; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07194088392074452.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "frontiermath",
+    "score": 0.8210526315789474,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-10-12",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'muse-wonder-1.0_max'; run id hwVgELmPofPY3Vqm7BRLxs; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02274515950332741.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "epoch-furniture",
+    "score": 0.5416666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv",
+    "by": "independent",
+    "date": "2026-10-15",
+    "note": "Epoch AI internal evaluation; file furniture_assembly.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'muse-wonder-1.0_max'; run id iuNhWVj65sV54m3cKVwv9x; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06432138878020231.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "epoch-mystery-games",
+    "score": 0.51,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-10-14",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'muse-wonder-1.0_max'; run id gmscEuzbtZeUeFUFZMZiAV; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05024183937956913.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "otis-mock-aime",
+    "score": 0.9944444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-10-12",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-16 (zip sha256 efc3ac2e90496c3c9dba5898d375a01a51523d00386041c06f2991161bbe0059); exact model version 'muse-wonder-1.0_max'; run id AFigcTGzpgZgMi6j2fpboa; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.003883473863441843.",
+    "source_id": "epoch-internal"
   }
 ]
