@@ -78098,5 +78098,100 @@
     ],
     "released_source": "https://web.archive.org/web/20210811013459/https://openai.com/blog/openai-codex/",
     "identity_note": "Comparison-only. Smaller first-generation OpenAI Codex API model 'code-cushman-001' (OpenAI deprecations page, Codex models, shut down 2023-03-23). Release month from the 2021-08-10 Codex API private-beta announcement (archived). Parameter count never officially published."
+  },
+  {
+    "id": "muse-spark-open",
+    "name": "Muse Spark Open",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://research.meta.ai/blog/muse-spark-open",
+    "open_weights": true,
+    "license": "muse-model-license",
+    "license_source": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+    "params_b": 816,
+    "active_b": 42,
+    "params_b_source": "https://research.meta.ai/blog/muse-spark-open",
+    "params_note": "Meta blog post (2026-10-15): 816B total parameters, 42B active (mixture of experts). Hugging Face safetensors metadata for meta-models/Muse-Spark-Open-816B-A42B@0fb0247 counts 822,036,529,664 parameters (BF16 821,906,490,368 + F32 130,039,296), which includes the multimodal encoders.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ud-iq1_s",
+          "gb": 179.74,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-IQ1_S",
+          "source": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF/tree/c00670568b6ce5e56a247f67091247984df2a01e",
+          "note": "gb is the download size from the Hugging Face API file listing of unsloth/Muse-Spark-Open-816B-A42B-GGUF@c006705 (fetched 2026-10-16): 5 files (UD-IQ1_S/Muse-Spark-Open-816B-A42B-UD-IQ1_S-00001-of-00005.gguf …) 175.64 GB plus the vision projector mmproj-BF16.gguf 4.10 GB, which llama-server -hf also downloads. `-hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-IQ1_S` resolves to UD-IQ1_S/Muse-Spark-Open-816B-A42B-UD-IQ1_S-00001-of-00005.gguf (HF manifest). Needs a llama.cpp build with the muse_spark architecture."
+        },
+        {
+          "quant": "ud-q2_k_xl",
+          "gb": 315.32,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q2_K_XL",
+          "source": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF/tree/c00670568b6ce5e56a247f67091247984df2a01e",
+          "note": "gb is the download size from the Hugging Face API file listing of unsloth/Muse-Spark-Open-816B-A42B-GGUF@c006705 (fetched 2026-10-16): 8 files (UD-Q2_K_XL/Muse-Spark-Open-816B-A42B-UD-Q2_K_XL-00001-of-00008.gguf …) 311.23 GB plus the vision projector mmproj-BF16.gguf 4.10 GB, which llama-server -hf also downloads. `-hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q2_K_XL` resolves to UD-Q2_K_XL/Muse-Spark-Open-816B-A42B-UD-Q2_K_XL-00001-of-00008.gguf (HF manifest). Needs a llama.cpp build with the muse_spark architecture."
+        },
+        {
+          "quant": "q2_k",
+          "gb": 306.26,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q2_K",
+          "source": "https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF/tree/ada96652107984f184027153a77ec250d67ed271",
+          "note": "gb is the download size from the Hugging Face API file listing of ggml-org/Muse-Spark-Open-816B-A42B-GGUF@ada9665 (fetched 2026-10-16): 22 files (Muse-Spark-Open-816B-A42B-Q2_K-00001-of-00022.gguf …) 304.08 GB plus the vision projector mmproj-Muse-Spark-Open-816B-A42B-Q8_0.gguf 2.18 GB, which llama-server -hf also downloads. `-hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q2_K` resolves to Muse-Spark-Open-816B-A42B-Q2_K-00001-of-00022.gguf (HF manifest). Needs a llama.cpp build with the muse_spark architecture."
+        },
+        {
+          "quant": "mlx-3bit",
+          "gb": 359.21,
+          "gb_estimated": true,
+          "cmd": "pip install \"git+https://github.com/ml-explore/mlx-lm.git@refs/pull/1975/head\" && mlx_lm.chat --model mlx-community/Muse-Spark-Open-816B-A42B-3bit",
+          "platform": "mac",
+          "source": "https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-3bit/tree/b7521af78bddb86c0de111e48fe93ff549711de9",
+          "note": "gb is the size of the 83 safetensors files in mlx-community/Muse-Spark-Open-816B-A42B-3bit@b7521af (Hugging Face API file listing, fetched 2026-10-16). The model card installs mlx-lm from pull request 1975 (muse_spark support not yet in a release); text only, without the vision encoder."
+        },
+        {
+          "quant": "mlx-4bit",
+          "gb": 461.7,
+          "gb_estimated": true,
+          "cmd": "pip install \"git+https://github.com/ml-explore/mlx-lm.git@refs/pull/1975/head\" && mlx_lm.chat --model mlx-community/Muse-Spark-Open-816B-A42B-4bit",
+          "platform": "mac",
+          "source": "https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit/tree/a030c4bde7045f0352c013cbc7fda64dc2dcbb78",
+          "note": "gb is the size of the 94 safetensors files in mlx-community/Muse-Spark-Open-816B-A42B-4bit@a030c4b (Hugging Face API file listing, fetched 2026-10-16). The model card installs mlx-lm from pull request 1975 (muse_spark support not yet in a release); text only, without the vision encoder."
+        },
+        {
+          "quant": "q4_k_s",
+          "gb": 472.25,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q4_K_S",
+          "source": "https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF/tree/ada96652107984f184027153a77ec250d67ed271",
+          "note": "gb is the download size from the Hugging Face API file listing of ggml-org/Muse-Spark-Open-816B-A42B-GGUF@ada9665 (fetched 2026-10-16): 22 files (Muse-Spark-Open-816B-A42B-Q4_K_S-00001-of-00022.gguf …) 470.07 GB plus the vision projector mmproj-Muse-Spark-Open-816B-A42B-Q8_0.gguf 2.18 GB, which llama-server -hf also downloads. `-hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q4_K_S` resolves to Muse-Spark-Open-816B-A42B-Q4_K_S-00001-of-00022.gguf (HF manifest). Needs a llama.cpp build with the muse_spark architecture."
+        },
+        {
+          "quant": "ud-q4_k_xl",
+          "gb": 509.6,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q4_K_XL",
+          "source": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF/tree/c00670568b6ce5e56a247f67091247984df2a01e",
+          "note": "gb is the download size from the Hugging Face API file listing of unsloth/Muse-Spark-Open-816B-A42B-GGUF@c006705 (fetched 2026-10-16): 12 files (UD-Q4_K_XL/Muse-Spark-Open-816B-A42B-UD-Q4_K_XL-00001-of-00012.gguf …) 505.50 GB plus the vision projector mmproj-BF16.gguf 4.10 GB, which llama-server -hf also downloads. `-hf unsloth/Muse-Spark-Open-816B-A42B-GGUF:UD-Q4_K_XL` resolves to UD-Q4_K_XL/Muse-Spark-Open-816B-A42B-UD-Q4_K_XL-00001-of-00012.gguf (HF manifest). Needs a llama.cpp build with the muse_spark architecture."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 873.83,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q8_0",
+          "source": "https://huggingface.co/ggml-org/Muse-Spark-Open-816B-A42B-GGUF/tree/ada96652107984f184027153a77ec250d67ed271",
+          "note": "gb is the download size from the Hugging Face API file listing of ggml-org/Muse-Spark-Open-816B-A42B-GGUF@ada9665 (fetched 2026-10-16): 10 files (Muse-Spark-Open-816B-A42B-Q8_0-00001-of-00010.gguf …) 871.65 GB plus the vision projector mmproj-Muse-Spark-Open-816B-A42B-Q8_0.gguf 2.18 GB, which llama-server -hf also downloads. `-hf ggml-org/Muse-Spark-Open-816B-A42B-GGUF:Q8_0` resolves to Muse-Spark-Open-816B-A42B-Q8_0-00001-of-00010.gguf (HF manifest). Needs a llama.cpp build with the muse_spark architecture."
+        }
+      ]
+    },
+    "context_k": 1000,
+    "context_source": "https://research.meta.ai/blog/muse-spark-open",
+    "context_note": "Meta blog post (2026-10-15): natively multimodal with a 1M-token context window (stated rounded). Model ceiling, not a promise by any hosted API. Observed 2026-10-16.",
+    "model_repo": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+    "identity_note": "Meta blog post 2026-10-15 and the gated (manual approval) repo meta-models/Muse-Spark-Open-816B-A42B@0fb0247: 816B total / 42B active MoE, natively multimodal, weights under the Muse Model License with limited commercial terms. Epoch model_metadata.csv lists 'Muse Spark Open' (Meta AI, 2026-10-15, 'Open weights (restricted use)', low/medium/high/xhigh) with no results yet; not on the LMArena text leaderboard as of dataset revision 7131711 (2026-10-16). Hosted APIs exist (Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter, Together AI per the blog) but none has a reviewed price source yet, so no API price is listed.",
+    "identity_sources": [
+      "https://research.meta.ai/blog/muse-spark-open",
+      "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
+    ]
   }
 ]

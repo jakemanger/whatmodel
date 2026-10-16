@@ -54,7 +54,7 @@ API speeds are our own measurements: we stream a fixed prompt to each model thre
 
 ## Benchmarks
 
-22113 results, each with a source link. Download the [raw results](../data/results.json), [benchmark definitions](../data/benchmarks.json), or [rankings as JSON](https://whatmodel.sh/api?format=json&all=1).
+22116 results, each with a source link. Download the [raw results](../data/results.json), [benchmark definitions](../data/benchmarks.json), or [rankings as JSON](https://whatmodel.sh/api?format=json&all=1).
 
 **Share of evidence** is how much of all the weight behind a category's scores comes from that run, averaged over its scored models.
 
@@ -474,8 +474,8 @@ test (evaluator)                                          models     a      σ  
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">RealWorldQA (first-party-qwen-scores)</a>                         17  0.57   0.22     7.0   0.0%
 <a href="https://lastexam.ai">Humanity's Last Exam (primeintellect-intellect3-card-ev…</a>       6  1.47   0.29    25.3   0.0%
 <a href="https://arxiv.org/html/2607.02770v1">MMMLU</a>                                                          7  1.28   0.37    11.8   0.0%
-<a href="https://github.com/idavidrein/gpqa">GPQA Diamond (card-mistralai-ministral-3-3b-reasoning-2…</a>       3  2.21   0.36    38.5   0.0%
 <a href="https://github.com/idavidrein/gpqa">GPQA Diamond (card-mistralai-ministral-3-8b-reasoning-2…</a>       3  2.21   0.36    38.5   0.0%
+<a href="https://github.com/idavidrein/gpqa">GPQA Diamond (card-mistralai-ministral-3-3b-reasoning-2…</a>       3  2.21   0.36    38.5   0.0%
 <a href="https://github.com/idavidrein/gpqa">GPQA Diamond (card-liquidai-lfm2-5-1-2b-thinking)</a>              6  2.21   0.71     9.6   0.0%
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT) (openai-simple-evals…</a>      17  0.99   0.25    15.4   0.0%
 <a href="https://arxiv.org/abs/2212.13138v1">MedMCQA (few-shot prompted) (paper-2212.13138v1)</a>               6  1.40   0.36    14.8   0.0%
@@ -622,8 +622,8 @@ test (evaluator)                                          models     a      σ  
 <a href="https://lastexam.ai">Humanity's Last Exam (first-party-qwen-scores)</a>                 4  1.47   0.34    19.0   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (paper-2411.15124v5)</a>                                      3  1.63   0.36    20.3   0.0%
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626">MathArena BrokenArXiv June 2026 (54 problems)</a>                 15  2.32   0.67    12.1   0.0%
-<a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.95   0.36    29.8   0.0%
 <a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card-mistralai-ministral-3-3b-reasoning-2512)</a>       3  1.95   0.36    29.8   0.0%
+<a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.95   0.36    29.8   0.0%
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (paper-2601.03286v1-hyperclova-x-32b-th…</a>       5  1.34   0.36    13.6   0.0%
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-option MCQ over discus…</a>      17  0.86   0.30     8.0   0.0%
 <a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card3-ai-sage-gigachat3-5-432b-a28b-reasonin…</a>       3  1.95   0.41    22.5   0.0%
@@ -683,8 +683,8 @@ test (evaluator)                                          models     a      σ  
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (card2-ibm-granite-granite-4-0-h-small)</a>         4  1.84   0.36    25.6   0.0%
 <a href="https://epoch.ai/benchmarks/use-this-data">LiveCodeBench v6 (Feb–May 2025)</a>                                7  1.26   0.36    12.2   0.0%
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified) (paper-2411.15124v5)</a>                 3  1.53   0.36    18.3   0.0%
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.85   0.35    27.2   0.0%
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-3b-reasoning-2512)</a>       3  1.85   0.35    27.2   0.0%
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.85   0.35    27.2   0.0%
 <a href="https://artofproblemsolving.com/wiki/index.php/2026_AIME_I">AIME 2026 (paper-2608.30181v1-ax-k2)</a>                           7  1.90   0.56    11.4   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (paper-2408.12570v1-jamba15)</a>         3  1.89   0.35    28.3   0.0%
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Terminal-Bench 2.0 (report-2605.27605v1)</a>                       2  1.62   0.39    17.1   0.0%
@@ -3611,10 +3611,10 @@ Source: https://aclanthology.org/2026.eacl-short.17.pdf
 Licence: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
 Changes: Selected numerical cells transcribed into JSON; percentages divided by100; benchmark names and settings clarified. No model weights, test questions, full chart artwork or model-generated answers redistributed.
 No endorsement.</sub>
-- **Meta official pricing and model documentation** · first-party · Factual list price (not licensed content) · [terms](https://dev.meta.ai/docs/pricing-rate-limits) · checked 2026-10-09  
-  <sub>Meta official pricing/docs, observed 2026-09-25</sub>
-- **Meta vendor-reported benchmark scores for its own Muse models (Muse Wonder model card, Muse Spark 1.3 evaluation methodology)** · first-party · Factual vendor-reported score (not licensed content) · [terms](https://research.meta.ai/blog/muse-wonder) · checked 2026-10-14  
-  <sub>Meta, vendor-reported results for Meta’s own Muse models from the Muse Wonder model card (2026-10-12) and the Muse Spark 1.3 evaluation methodology (2026-09-02); individual figures hand-recorded 2026-10-14; percentages converted to fractions. Only rows Meta ran itself; scores the documents credit to Artificial Analysis, Vals AI, Surge, Datacurve or Abundant AI, and other labs’ columns, are not used. Lab-reported, not independent measurements. No endorsement.</sub>
+- **Meta official pricing and model documentation** · first-party · Factual list price (not licensed content) · [terms](https://dev.meta.ai/docs/pricing-rate-limits) · checked 2026-10-16  
+  <sub>Meta official pricing/docs, observed 2026-09-25; Muse Spark Open blog post (parameter count and context window), observed 2026-10-16</sub>
+- **Meta vendor-reported benchmark scores for its own Muse models (Muse Wonder model card, Muse Spark 1.3 evaluation methodology, Muse Spark Open scorecard)** · first-party · Factual vendor-reported score (not licensed content) · [terms](https://research.meta.ai/blog/muse-wonder) · checked 2026-10-16  
+  <sub>Meta, vendor-reported results for Meta’s own Muse models from the Muse Wonder model card (2026-10-12) and the Muse Spark 1.3 evaluation methodology (2026-09-02); individual figures hand-recorded 2026-10-14; percentages converted to fractions. Muse Spark Open blog scorecard (2026-10-15), figures hand-recorded 2026-10-16 from the image with its evaluation methodology PDF. Only rows Meta ran itself; scores the documents credit to Artificial Analysis, Vals AI, Surge, Datacurve or Abundant AI, and other labs’ columns, are not used. Lab-reported, not independent measurements. No endorsement.</sub>
 - **xAI official pricing and model documentation** · first-party · Factual list price (not licensed content) · [terms](https://docs.x.ai/developers/models.md) · checked 2026-09-25  
   <sub>xAI official pricing/docs, observed 2026-09-25</sub>
 - **Amazon Web Services official pricing and model documentation** · first-party · Factual list price (not licensed content) · [terms](https://aws.amazon.com/nova/pricing) · checked 2026-09-25  

@@ -2,11 +2,11 @@
 
 <h1 align="center"><a href="https://whatmodel.sh"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/banner-dark.svg"><img alt="whatmodel.sh: find the best AI models you can run" src="docs/images/banner-light.svg" width="600"></picture></a></h1>
 
-<p align="center"><b>The open AI model leaderboard.</b> Every model is ranked by one score built from 22,113 published benchmark results, with its price, the memory it needs and the command to run it.<br>Filter by your computer or budget at <a href="https://whatmodel.sh">whatmodel.sh</a>, or read the same leaderboard below. <a href="#about-this-repo">About this repo</a></p>
+<p align="center"><b>The open AI model leaderboard.</b> Every model is ranked by one score built from 22,116 published benchmark results, with its price, the memory it needs and the command to run it.<br>Filter by your computer or budget at <a href="https://whatmodel.sh">whatmodel.sh</a>, or read the same leaderboard below. <a href="#about-this-repo">About this repo</a></p>
 
 **llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md)
 
-updated 2026-10-14 08:02 UTC · 879 models · scores combine 566 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-10-16 03:16 UTC · 880 models · scores combine 566 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -975,11 +975,12 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 877  <a href="pages/model/gpt-2-small.md">GPT-2 Small (124M)</a>                       -13±2   local                ~1.6GB                   1k  <a href="pages/model/gpt-2-small.md#run-it-on-your-own-machine">LM Studio ›</a>
   —  <a href="pages/model/grok-build-0-1.md">Grok Build 0.1</a>              no reviewed results  api $1.25/M                                 256k  <a href="https://docs.x.ai/docs/models">x.ai ↗</a>
   —  <a href="pages/model/k2-horizon-7b.md">K2 Horizon 7B</a>                    not scored yet  local                  ~8GB                 524k  <a href="pages/model/k2-horizon-7b.md#run-it-on-your-own-machine">llama.cpp ›</a>
+  —  <a href="pages/model/muse-spark-open.md">Muse Spark Open</a>                  not scored yet  local                ~190GB                   1M  <a href="pages/model/muse-spark-open.md#run-it-on-your-own-machine">llama.cpp ›</a>
 </pre>
 
 \+ 305 models with fewer than 3 results aren't ranked here · [show them](https://whatmodel.sh/?thin=1)
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 879 of 1212 catalogue models listed here · [sources and licences](pages/method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 880 of 1213 catalogue models listed here · [sources and licences](pages/method.md#sources)
 
 ## About this repo
 

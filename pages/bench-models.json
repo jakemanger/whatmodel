@@ -1210,5 +1210,6 @@
 {"id":"vicuna-7b-v1-1","name":"Vicuna 7B v1.1","provider":"LMSYS","score":36.6,"n":4,"params_b":7,"variants":[]},
 {"id":"bloomz-7b1-mt","name":"BLOOMZ 7.1B MT","provider":"BigScience","score":47,"n":1,"params_b":7.07,"variants":[]},
 {"id":"code-davinci-001","name":"Codex code-davinci-001","provider":"OpenAI","score":32.8,"n":9,"params_b":null,"variants":[]},
-{"id":"code-cushman-001","name":"Codex code-cushman-001","provider":"OpenAI","score":34.7,"n":2,"params_b":null,"variants":[]}
+{"id":"code-cushman-001","name":"Codex code-cushman-001","provider":"OpenAI","score":34.7,"n":2,"params_b":null,"variants":[]},
+{"id":"muse-spark-open","name":"Muse Spark Open","provider":"Meta","score":null,"n":0,"params_b":816,"variants":[{"rt":"gguf","ref":"unsloth/Muse-Spark-Open-816B-A42B-GGUF","quant":"UD-IQ1_S","gb":179.74},{"rt":"gguf","ref":"unsloth/Muse-Spark-Open-816B-A42B-GGUF","quant":"UD-Q2_K_XL","gb":315.32},{"rt":"gguf","ref":"ggml-org/Muse-Spark-Open-816B-A42B-GGUF","quant":"Q2_K","gb":306.26},{"rt":"mlx","ref":"mlx-community/Muse-Spark-Open-816B-A42B-3bit","quant":"3bit","gb":359.21},{"rt":"mlx","ref":"mlx-community/Muse-Spark-Open-816B-A42B-4bit","quant":"4bit","gb":461.7},{"rt":"gguf","ref":"ggml-org/Muse-Spark-Open-816B-A42B-GGUF","quant":"Q4_K_S","gb":472.25},{"rt":"gguf","ref":"unsloth/Muse-Spark-Open-816B-A42B-GGUF","quant":"UD-Q4_K_XL","gb":509.6},{"rt":"gguf","ref":"ggml-org/Muse-Spark-Open-816B-A42B-GGUF","quant":"Q8_0","gb":873.83}]}
 ]

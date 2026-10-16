@@ -313413,5 +313413,65 @@
       "scale_divisor": 100
     },
     "source_id": "acl-2023-wmt-1-44"
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "zerobench-main-with-tools-pass5",
+    "score": 0.5,
+    "source": "https://research.meta.ai/blog/muse-spark-open#key-benchmarks",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark Open blog post (2026-10-15), 'Key Benchmarks' scorecard image, column 'Muse Spark Open (xhigh)', section 'Multimodal (with tools)'. Evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology): reasoning effort xhigh (512), temperature 1.0, top_p 1.0; multimodal evals run with tool use enabled (tools not itemised). Only rows Meta ran itself are used: the methodology credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, and GDPval-AA, SciCode, AA-Omniscience, Terminal-Bench 2.1 and DeepSWE to Artificial Analysis. Other models' columns are not used. Methodology: 100-question main set; a question counts if at least one of five sampled responses is judged correct (pass@5); internal runs.",
+    "evidence": {
+      "kind": "chart-label",
+      "row_label": "ZeroBench",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "50.0",
+      "scale_divisor": 100,
+      "asset_url": "https://research.meta.ai/articles/muse-spark-open/benchmarks/benchmark-scorecard-light-v6.png",
+      "asset_sha256": "df5a416fe3ddfaeb74c44e21f4fa8a5430f6444686df0e1fb604ee3c597dcaf6"
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "babyvision-with-tools",
+    "score": 0.802,
+    "source": "https://research.meta.ai/blog/muse-spark-open#key-benchmarks",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark Open blog post (2026-10-15), 'Key Benchmarks' scorecard image, column 'Muse Spark Open (xhigh)', section 'Multimodal (with tools)'. Evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology): reasoning effort xhigh (512), temperature 1.0, top_p 1.0; multimodal evals run with tool use enabled (tools not itemised). Only rows Meta ran itself are used: the methodology credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, and GDPval-AA, SciCode, AA-Omniscience, Terminal-Bench 2.1 and DeepSWE to Artificial Analysis. Other models' columns are not used. Methodology: all 388 questions; mean accuracy averaged over 5 internal runs.",
+    "evidence": {
+      "kind": "chart-label",
+      "row_label": "BabyVision",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "80.2",
+      "scale_divisor": 100,
+      "asset_url": "https://research.meta.ai/articles/muse-spark-open/benchmarks/benchmark-scorecard-light-v6.png",
+      "asset_sha256": "df5a416fe3ddfaeb74c44e21f4fa8a5430f6444686df0e1fb604ee3c597dcaf6"
+    }
+  },
+  {
+    "model": "muse-spark-open",
+    "bench": "simplevqa-with-tools",
+    "score": 0.736,
+    "source": "https://research.meta.ai/blog/muse-spark-open#key-benchmarks",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-15",
+    "mode": "xhigh reasoning effort",
+    "note": "Meta own evaluation in the Muse Spark Open blog post (2026-10-15), 'Key Benchmarks' scorecard image, column 'Muse Spark Open (xhigh)', section 'Multimodal (with tools)'. Evaluation methodology (research.meta.ai/static/muse-spark-open-evaluation-methodology): reasoning effort xhigh (512), temperature 1.0, top_p 1.0; multimodal evals run with tool use enabled (tools not itemised). Only rows Meta ran itself are used: the methodology credits JobBench to its official leaderboard, MCP-Atlas and HLE-Diamond to Scale AI, and GDPval-AA, SciCode, AA-Omniscience, Terminal-Bench 2.1 and DeepSWE to Artificial Analysis. Other models' columns are not used. Methodology: 2,024-question bilingual set (1,013 English, 1,011 Chinese); raw accuracy averaged over 5 internal runs. The tools are not named, so search access is assumed rather than stated.",
+    "evidence": {
+      "kind": "chart-label",
+      "row_label": "SimpleVQA",
+      "column_label": "Muse Spark Open (xhigh)",
+      "raw_value": "73.6",
+      "scale_divisor": 100,
+      "asset_url": "https://research.meta.ai/articles/muse-spark-open/benchmarks/benchmark-scorecard-light-v6.png",
+      "asset_sha256": "df5a416fe3ddfaeb74c44e21f4fa8a5430f6444686df0e1fb604ee3c597dcaf6"
+    }
   }
 ]
