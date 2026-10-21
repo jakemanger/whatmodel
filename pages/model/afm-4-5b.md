@@ -6,7 +6,7 @@
 
 Arcee AI · released 2025-07 · 4.62B params · apache-2.0
 
-**score 49.7** ±5.2 · #489 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±5.1 · #494 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

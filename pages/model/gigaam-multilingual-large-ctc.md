@@ -6,7 +6,7 @@
 
 Sber · released 2026-07 · 0.6B params · mit
 
-**score 46.5** ±7.0 · #114 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 46.5** ±7.0 · #115 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,8 +22,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">Common Voice English WER (version…</a>   21.5%  █···●·█····█ beats 1/3    avg 20%        61%  typical
-<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER (lab)</a>         9.4%  ▁··▁▁▁●▂▃█▂▁ beats 8/64   avg 6.6%       20%  blunt
+<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">Common Voice English WER (version…</a>   21.5%  █···●·█····█ beats 1/3    avg 20%        62%  typical
+<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER (lab)</a>         9.4%  ▁··▁▁▁●▂▃█▂▁ beats 8/64   avg 6.6%       19%  blunt
 </pre>
 
 </details>

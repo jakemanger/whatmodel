@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 69.8** ±1.5 · #81 of 725 · from 5 benchmark results across 4 sources
+**score 69.7** ±1.5 · #82 of 729 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,36 +16,36 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▅▅▄▃▁   #123 of 306*    9.3%      1
-coding       ▁▁▁▃▆██▇▆●▃▁    #68 of 460*     41%      1
+agent tasks  ▁▁▃▆█▅●▅▅▄▂▁   #127 of 310*    9.2%      1
+coding       ▁▁▁▃▆▇█▇▅●▃▁    #70 of 466*     41%      1
 math         ▁▁▃▅█▆▄█●▁▁▁    #68 of 427*     13%      1
 </pre>
 
-<details><summary>agent tasks · #123 of 306 · 9.3% of its score</summary>
+<details><summary>agent tasks · #127 of 310 · 9.2% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   19.3%  ▅··▃·●·█▃▅██ beats 3/15   very hard · avg 5.0%    9.3%  sharp · at its level
+<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   19.3%  ▅··▃·●·█▃▅██ beats 3/15   very hard · avg 5.1%    9.2%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #68 of 460 · 41% of its score</summary>
+<details><summary>coding · #70 of 466 · 41% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   84.9%  ▂·▂▃▅▂▃█▆▄▂● beats 48/49  very hard · avg 7.3%     41%  sharp
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   84.9%  ▂·▂▃▅▂▃█▆▄▂● beats 48/49  very hard · avg 7.5%     41%  sharp
 </pre>
 
 </details>
 
 <details><summary>math · #68 of 427 · 13% of its score</summary>
 
-Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
@@ -58,7 +58,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 222/311  hard · avg 38%          36%  sharp
+<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 223/315  hard · avg 38%          36%  sharp
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.7%  ●▂▁▂▅█▂▃▄▃▁▁ beats 2/98     very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="paper-2608.19741v4-thinkingbox"></a><a href="https://arxiv.org/html/2608.19741v4">One Success Isn't Reliability: Thinking…</a>        1    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 69.8
+weighted average                                   = 69.7
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

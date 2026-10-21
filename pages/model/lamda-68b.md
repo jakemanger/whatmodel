@@ -34,13 +34,13 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        30.6%  ▅▃█···●·▃▃▃▅ beats 7/12   very easy · avg 94%     38%  sharp · at its level
+<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        30.6%  ▅▃█···●·▃▃▃▅ beats 7/12   very easy · avg 94%     37%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          18.8%  ▃▅█···●·▃▃▃▅ beats 7/12   easy · avg 82%          18%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          23.1%  ▅▃▃▅··●▃·▃▃█ beats 6/12   easy · avg 83%          17%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  37.0%  █······●·▁▁▃ beats 7/12   easy · avg 87%         6.8%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   15.5%  ▃·▅·▅▃●·▃▃·█ beats 7/12   medium · avg 52%       4.1%  typical
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   55.2%  █·····●·▁·▄▁ beats 7/12   medium · avg 81%       3.6%  sharp
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.2%  ●▁·▁▁·····▂▁ beats 0/12   hard · avg 48%         1.8%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.2%  ●▁·▁▁·····▂▁ beats 0/12   medium · avg 48%       1.8%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     59.6%  █·····▅▃▃●▃█ beats 8/12   medium · avg 70%       1.5%  typical
 </pre>
 

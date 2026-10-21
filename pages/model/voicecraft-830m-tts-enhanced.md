@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-04 · 0.83B params · coqui-public-model-license
 
-**score 37.3** ±8.4 · #93 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.3** ±8.5 · #95 of 119 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -43,8 +43,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-amphion-maskgct-mit"></a><a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Amphion MaskGCT README · zero-shot TTS …</a>        2   72% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       28% ▇▇▇
+<a name="speech-amphion-maskgct-mit"></a><a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Amphion MaskGCT README · zero-shot TTS …</a>        2   71% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       29% ▇▇▇
 weighted average                                   = 37.3
 </pre>
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 12.1** ±1.4 · comparison only: no current run option verified · from 18 benchmark results across 9 sources
+**score 12.0** ±1.4 · comparison only: no current run option verified · from 18 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         41.7%  ▂▆·▄●█▂·▂··▂ beats 7/14    medium · avg 65%       1.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   53.5%  ▂▂●··▂▂█▄··▂ beats 3/12    easy · avg 90%         1.2%  noisy
 <a href="https://aclanthology.org/2023.findings-eacl.31.pdf">CREPE event likelihood change (3-…</a>   35.6%  █●····█····█ beats 1/3     medium · avg 52%       0.9%  blunt
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             13.4%  ●▁·▁▁·····▂▁ beats 4/12    hard · avg 48%         0.4%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             13.4%  ●▁·▁▁·····▂▁ beats 4/12    medium · avg 48%       0.5%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   21.0%  ●·····▂····▁ beats 2/11    very hard · avg 55%    0.0%  sharp · too hard for it · noisy
 </pre>
 
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="acl-2023-resourceful-1-13"></a><a href="https://aclanthology.org/2023.resourceful-1.13.pdf">Bridging the Resource Gap: Exploring th…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 12.1
+weighted average                                   = 12.0
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · In-Context Demonstration Selection with Cross Entropy Difference ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-81-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Causal Reasoning of Entities and Events in Procedural Texts ([CC BY 4.0](../../licenses/acl-2023-findings-eacl-31-CC-BY-4-0.txt)) · Bridging the Resource Gap: Exploring the Efficacy of English and Multilingual LLMs for Swedish ([CC BY 4.0](../../licenses/acl-2023-resourceful-1-13-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

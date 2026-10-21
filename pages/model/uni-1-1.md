@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄▄█●▁▂▁▁   #20 of 126*     71%      1
-image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #18 of 62*     27%      1
+image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #18 of 62*     27%      1
 </pre>
 
 <details><summary>text to image · #20 of 126 · 71% of its score</summary>
@@ -37,7 +37,7 @@ Beats [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md),
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1315.2  ▂▁▁▂▆▇█●▆▅▁▂ beats 34/53  avg 1153       27%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1316.5  ▂▁▁▃▆█▄●▄█▁▂ beats 34/53  avg 1153       27%  typical
 </pre>
 
 </details>

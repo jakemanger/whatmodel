@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅●▄▄█▃▁▂▁▁   #79 of 126*     79%      1
-image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁    #58 of 62*     14%      1
+image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁    #58 of 62*     14%      1
 </pre>
 
 <details><summary>text to image · #79 of 126 · 79% of its score</summary>
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>image to image / editing · #58 of 62 · 14% of its score</summary>
 
-Trails [Stable Diffusion 3.5 Large](sd-3-5-large.md), [OmniGen2](omnigen2.md), [BAGEL](bagel.md) here, though they rank lower overall.
+Trails [OmniGen2](omnigen2.md), [Stable Diffusion 3.5 Large](sd-3-5-large.md), [BAGEL](bagel.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

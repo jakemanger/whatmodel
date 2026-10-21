@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-08 · 2.8B params · cc-by-sa-4.0
 
-**score 24.0** ±1.2 · #685 of 725 · from 12 benchmark results across 2 sources
+**score 24.0** ±1.2 · #689 of 729 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">SciQ (lab)</a>                           92.1%  ▁·▁·▁·▃▅●█▄▁ beats 11/26   very easy · avg 97%    7.3%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">PIQA (lab)</a>                           76.0%  ▁·▁··▁▁▃●▅█▂ beats 9/26    easy · avg 87%         5.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">LAMBADA (OpenAI version), last-wo…</a>   70.3%  ▁··▂▁▁▁▂▆●▅▃ beats 14/26   very easy · avg 86%    3.5%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">OpenBookQA (lab)</a>                     26.4%  █·▁▁●·▁▃▅▇▃▄ beats 8/26    hard · avg 48%         3.0%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">OpenBookQA (lab)</a>                     26.4%  █·▁▁●·▁▃▅▇▃▄ beats 8/26    hard · avg 49%         3.0%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">Social IQA (lab)</a>                     42.5%  ▁···▁▃●▁▁▁·▁ beats 16/26   hard · avg 56%         2.5%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   30.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 32/276  medium · avg 72%       1.5%  noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json">TruthfulQA MC2 (lab)</a>                 35.9%  █·█·●▄···▄·█ beats 5/9     medium · avg 55%       0.4%  blunt · at its level

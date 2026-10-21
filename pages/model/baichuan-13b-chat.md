@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-07
 
-**score 22.8** ±3.7 · #911 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 22.7** ±3.7 · #916 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ●▁▁▄▆▅▆█▆▆▆▂   #464 of 466*     94%      2
+chat &amp; writing  ●▁▁▄▆▅▆█▆▆▆▃   #467 of 469*     94%      2
 </pre>
 
-<details><summary>chat &amp; writing · #464 of 466 · 94% of its score</summary>
+<details><summary>chat &amp; writing · #467 of 469 · 94% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   6% ▇
-weighted average                              = 22.8
+weighted average                              = 22.7
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

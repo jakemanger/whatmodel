@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-03 · proprietary
 
-**score 49.8** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gp
 
 <pre>
 test   result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>   70.8%  ▂▂▂▂▃▄▅▇●█▆▄ beats 119/206  easy · avg 68%     40%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>   70.8%  ▂▂▂▂▃▄▅▇●█▆▄ beats 119/206  easy · avg 69%     40%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2305.17306v1"></a><a href="https://arxiv.org/html/2305.17306v1">Chain-of-Thought Hub: A Continuous Effo…</a>        2   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt))</sub>

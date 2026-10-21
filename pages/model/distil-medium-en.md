@@ -6,7 +6,7 @@
 
 Hugging Face (Distil-Whisper) · released 2023-10 · 0.39B params · mit
 
-**score 44.1** ±3.4 · #125 of 162 · from 3 benchmark results across 2 sources
+**score 44.1** ±3.4 · #126 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

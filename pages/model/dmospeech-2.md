@@ -6,7 +6,7 @@
 
 Columbia University / NewsBreak (Yinghao Aaron Li, Xilin Jiang et al.) · released 2025-07 · 0.3B params · mit
 
-**score 61.5** ±3.7 · #37 of 118 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.6** ±3.7 · #36 of 119 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker simila…</a>   69.8%  ▁·▂▂▂●▆▃▅··▂ beats 14/30  medium · avg 53%     37%  at its level
 <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker simila…</a>   76.0%  ▁·▂··▂·●▄·▃▄ beats 9/25   medium · avg 62%     35%  typical
 <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper large-…</a>    1.8%  ▁···▂▂▂▂█●▄▂ beats 21/35  avg 3.6%             13%  blunt
-<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER…</a>    1.5%  ▁·▂▁▁▁●▃▅█·▂ beats 7/30   avg 2.1%            9.5%  blunt
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER…</a>    1.5%  ▁·▂▁▁▁●▃▅█·▂ beats 7/30   avg 2.1%            9.3%  blunt
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 61.5
+weighted average                                   = 61.6
 </pre>
 
 <sub>Licences: DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt))</sub>

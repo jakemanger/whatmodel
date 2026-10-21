@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 52.8** ±1.7 · #319 of 725 · from 6 benchmark results across 2 sources
+**score 52.7** ±1.7 · #323 of 729 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #240 of 395*     32%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃   #243 of 398*     31%      1
 math            ▁▁▃▅●▆▄█▄▁▁▁   #268 of 427*     21%      1
 </pre>
 
-<details><summary>chat &amp; writing · #240 of 395 · 32% of its score</summary>
+<details><summary>chat &amp; writing · #243 of 398 · 31% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 116/379  avg 1258       32%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 116/382  avg 1259       31%  blunt
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-
 
 <pre>
 test         result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>   91.4%  ▂▂▂▂▃▄▅▇██●▄ beats 183/206  very easy · avg 86%     21%  sharp · small run
+<a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>   91.4%  ▂▂▂▂▃▄▅▇██●▄ beats 183/206  very easy · avg 87%     21%  sharp · small run
 </pre>
 
 </details>
@@ -61,9 +61,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2411.19146v5-puzzle"></a><a href="https://arxiv.org/html/2411.19146v5">Puzzle: Distillation-Based NAS for Infe…</a>        5   67% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   32% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   31% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 52.8
+weighted average                                   = 52.7
 </pre>
 
 <sub>Licences: Puzzle: Distillation-Based NAS for Inference-Optimized LLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

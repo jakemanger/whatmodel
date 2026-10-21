@@ -6,7 +6,7 @@
 
 OuteAI · released 2024-11 · 0.5B params · cc-by-nc-4.0
 
-**score 31.1** ±6.3 · #103 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.0** ±6.4 · #104 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-cloneval-space-apache"></a><a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · Open Voice Cloning Leaderboa…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       16% ▇▇
-weighted average                                   = 31.1
+weighted average                                   = 31.0
 </pre>
 
 <sub>Licences: ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt))</sub>

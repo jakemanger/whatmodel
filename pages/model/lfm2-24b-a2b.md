@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 51.4** ±1.1 · #337 of 725 · from 11 benchmark results across 1 source
+**score 51.3** ±1.1 · #341 of 729 · from 11 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -42,7 +42,7 @@ test                               result  vs the others in its run  difficulty 
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                            57.6%  ▄····█·▄●·▄▄ beats 5/7    medium · avg 54%     11%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>              43.3%  █··▄··●··█·▄ beats 4/7    medium · avg 41%    8.0%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>       57.0%  ▃··▃▃··●···█ beats 4/7    medium · avg 56%    5.8%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>            62.3%  ▄···▄·█·●·▄█ beats 4/7    medium · avg 58%    5.1%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>            62.3%  ▄···▄·█·●·▄█ beats 4/7    medium · avg 59%    5.0%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>   49.0%  ▄··▄█▄··●··█ beats 5/7    medium · avg 46%    4.0%  blunt · at its level
 </pre>
 
@@ -56,7 +56,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 51.4
+weighted average                                   = 51.3
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>

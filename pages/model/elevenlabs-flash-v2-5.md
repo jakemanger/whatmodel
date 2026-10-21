@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2024-12 · proprietary
 
-**score 62.5** ±2.0 · #30 of 118 · from 8 benchmark results across 4 sources
+**score 62.4** ±2.0 · #30 of 119 · from 8 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [Eleven v3](elevenlabs-v3.md) here, though they rank higher overall.
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   41.3%  █●·········█ beats 1/2    hard · avg 22%    8.6%  at its level · small run
 <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language speaker …</a>   53.8%  █●·········█ beats 1/2    hard · avg 31%    8.4%  at its level · small run
-<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    1.6%  █····█·····● beats 2/2    avg 5.4%          4.5%  small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    1.6%  █····█·····● beats 2/2    avg 5.3%          4.5%  small run
 <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>    0.9%  █··········● beats 2/2    avg 3.3%          3.9%  small run
 </pre>
 
@@ -37,8 +37,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                   result  vs the others in its run  difficulty              counts  why
-<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>     1191.0  ▁···▁▃··●▄▁▇ beats 6/18   avg 1078                   37%  typical
-<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>     1225.4  ▃·▃▃▃·▃█●▃·▃ beats 8/12   avg 1080                   19%  typical
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>     1191.0  ▁···▁▃··●▄▁▇ beats 6/18   avg 1080                   37%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>     1225.4  ▃·▃▃▃·▃█●▃·▃ beats 8/12   avg 1082                   19%  typical
 <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired human …</a>   0.16 / 2  ▄·▄········● beats 3/3    medium · avg -0.58 / 2    8.4%  at its level
 <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired human …</a>  -0.12 / 2  █·······█·█● beats 3/3    hard · avg -0.90 / 2      7.9%  at its level
 </pre>
@@ -56,7 +56,7 @@ source                                    results  share of the score
 <a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   19% ▇▇
 <a name="speech-rime-alpha-bench-ccby"></a><a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime Alpha TTS Benchmark v1.0.0 · Suppo…</a>        2   16% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 62.5
+weighted average                                   = 62.4
 </pre>
 
 <sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt))</sub>

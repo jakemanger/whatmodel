@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
-**score 70.2** ±1.4 · #77 of 725 · from 4 benchmark results across 2 sources
+**score 71.5** ±1.2 · #65 of 729 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,50 +15,63 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <sub>● marks Mistral Large 4 (public preview) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #65 of 306*     37%      1
-coding          ▁▁▁▃▆██▇▆●▃▁   #39 of 460*     34%      1
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #79 of 395*     20%      1
+task                vs the others         rank  counts  tests
+agent tasks         ▁▁▃▆█▅▅▅●▄▂▁   #55 of 310*     33%      1
+coding              ▁▁▁▃▆▇█▇▅●▃▁   #42 of 466*     26%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▆●▃   #79 of 398*     14%      1
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #46 of 154*    9.4%      1
 </pre>
 
-<details><summary>agent tasks · #65 of 306 · 37% of its score</summary>
+<details><summary>agent tasks · #55 of 310 · 33% of its score</summary>
 
-Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.1](muse-spark-1-1.md), [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank higher overall. Trails [Beam 1.0 501B A23B](beam-1-0-501b-a23b.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0656 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 9/49   avg -0.310 IPS     37%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0455 IPS  ▁▁▁▃●▃█▁▁▁▁▁ beats 12/52  avg -0.361 IPS     33%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #39 of 460 · 34% of its score</summary>
+<details><summary>coding · #42 of 466 · 26% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 82/119  avg 969        34%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1542.5  ▁▁▃▃▆█▄●▅▅▁▁ beats 86/126  avg 978        26%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #79 of 395 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #79 of 398 · 14% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1429.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 283/379  avg 1258       20%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1432.8  ▁▁▁▂▃▃▃▆▆▇●▃ beats 288/382  avg 1259       14%  blunt
 </pre>
 
 </details>
 
-<details><summary>other tests (1)</summary>
+<details><summary>vision &amp; documents · #46 of 154 · 9.4% of its score</summary>
+
+Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
 
 <pre>
-test               result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   20.0%  ▁▁▃▂●▃▆▆█▄▂▅ beats 12/79  very hard · avg 7.5%    7.7%  at its level
+test                             result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1251.9  ▁▁▂▂▂▂▃▄▄▅●▇ beats 109/152  avg 1061      9.4%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                   result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   33.0%  █▁▁▁▁▂▃▃●▂▁▁ beats 109/136  very hard · avg 5.8%     10%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       20.0%  ▁▁▃▂●▃▆▆█▄▂▅ beats 12/79    very hard · avg 7.6%    5.7%  at its level
 </pre>
 
 </details>
@@ -69,10 +82,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">Epoch AI</a>                             1    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                             2   16% ▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 70.2
+weighted average                        = 71.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

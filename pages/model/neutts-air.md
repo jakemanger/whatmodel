@@ -6,7 +6,7 @@
 
 Neuphonic · released 2025-10 · 0.552B params · apache-2.0
 
-**score 36.2** ±10.0 · #97 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±10.1 · #97 of 119 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.27 / 5  ●▄█·▄▄▄▄▄·▄█ beats 0/11   easy · avg 4.20 / 5     31%  blunt · at its level
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.06 / 5  █··▄▄██●·▄▄▄ beats 8/11   easy · avg 3.99 / 5     29%  blunt · at its level
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.06 / 5  █··▄▄██●·▄▄▄ beats 8/11   easy · avg 3.99 / 5     28%  blunt · at its level
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   60% ▇▇▇▇▇▇▇
-prior: pull toward the middle                       40% ▇▇▇▇▇
-weighted average                                   = 36.2
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   59% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       41% ▇▇▇▇▇
+weighted average                                   = 36.3
 </pre>
 
 <sub>Licences: CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score -3.4** ±2.2 · #722 of 725 · from 20 benchmark results across 6 sources
+**score -3.4** ±2.2 · #726 of 729 · from 20 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -43,8 +43,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">UD English-GUM UPOS tagging, few-…</a>   64.3%  ●·▄▄·······█ beats 0/4     very easy · avg 92%    6.5%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">WinoGrande</a>                           50.4%  ▁●▁▁▂▁▁▅▇█▃▁ beats 4/131   easy · avg 85%         4.8%  too hard for it
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-02-12%2009%3A09%3A48.570004.json">Natural Questions (closed book)</a>       0.5%  ●·▁·▁▂▁▂·▅▂█ beats 0/28    medium · avg 48%       4.0%  too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PIQA</a>                                 63.0%  ▁●▁▂▂▃▅█▅▃▁▁ beats 4/123   easy · avg 87%         3.8%  blunt · small run
-<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Challenge</a>                        19.1%  ●·········▂▂ beats 3/5     medium · avg 59%       2.5%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PIQA</a>                                 63.0%  ▁●▁▂▂▃▅█▅▃▁▁ beats 4/123   easy · avg 87%         3.9%  blunt · small run
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">ARC Challenge</a>                        19.1%  ●·········▂▂ beats 3/5     medium · avg 60%       2.5%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>    7.9%  ▄···●···██·▄ beats 1/7     hard · avg 22%         1.5%  blunt · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             55.1%  ▂·····▅●▅▆▆█ beats 4/24    medium · avg 73%       1.3%  blunt · at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2023-12-08%2019%3A24%3A13.797490.json">TruthfulQA MC2</a>                       45.6%  ▅▃█●▁▂▅···▁▁ beats 21/31   medium · avg 57%       1.2%  blunt · at its level

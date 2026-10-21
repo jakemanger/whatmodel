@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 0.33B params · apache-2.0
 
-**score 44.6** ±2.4 · #124 of 162 · from 4 benchmark results across 3 sources
+**score 44.5** ±2.4 · #125 of 163 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -34,9 +34,9 @@ test                       result  vs the others in its run  difficulty  counts 
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>   11.8%  ▅···▃···●▃██ beats 3/10   avg 13%        14%  sharp · noisy
+<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>   11.8%  ▅···▃···●▃██ beats 3/10   avg 13%        15%  sharp · noisy
 <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Common Vo…</a>   17.6%  ▂▂▂····●▆··█ beats 3/10   avg 21%        10%  sharp · noisy
-<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   46.7%  ▃·●▂▅█▅▃▂▅▂▂ beats 2/22   avg 40%       5.8%  blunt
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   46.7%  ▃·●▂▅█▅▃▂▅▂▂ beats 2/22   avg 40%       5.7%  blunt
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="speech-omniasr-paper-bysa"></a><a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR: Open-Source Multilingu…</a>        2   25% ▇▇▇
 <a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    6% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 44.6
+weighted average                                   = 44.5
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>

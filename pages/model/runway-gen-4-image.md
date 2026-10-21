@@ -25,7 +25,7 @@ Beats [Recraft V3](recraft-v3.md), [GLM-Image](glm-image.md) here, though they r
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1024.2  ▂▂●▄▇█▄▂▄▂·▂ beats 11/75  avg 1027       97%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1024.2  ▂▂●▄▇█▅▂▄▂·▂ beats 11/75  avg 1027       97%  typical
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 MyShell · released 2024-01 · mit
 
-**score 50.7** ±14.4 · #64 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.7** ±14.5 · #64 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

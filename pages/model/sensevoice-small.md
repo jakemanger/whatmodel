@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2024-07 · 0.234B params · funasr-model-license
 
-**score 45.5** ±2.6 · #120 of 162 · from 8 benchmark results across 2 sources
+**score 45.4** ±2.7 · #122 of 163 · from 8 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                                    results  share of the score
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/sensevoice-small.json">transcribe.cpp model catalog · LibriSpe…</a>        3   55% ▇▇▇▇▇▇▇
 <a name="card3-microsoft-vibevoice-asr-bitnet"></a><a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">microsoft/VibeVoice-ASR-BitNet model ca…</a>        5   42% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 45.5
+weighted average                                   = 45.4
 </pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · microsoft/VibeVoice-ASR-BitNet model card ([MIT](https://opensource.org/licenses/MIT))</sub>

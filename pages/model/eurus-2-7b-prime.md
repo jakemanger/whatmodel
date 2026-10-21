@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 45.6** ±2.3 · #455 of 725 · from 4 benchmark results across 2 sources
+**score 45.5** ±2.3 · #459 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ math  █··········●   #1 of 2     62%      3
 test                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>      26.7%  ▁▁▁▂▁●▁▅███▃ beats 14/85  medium · avg 38%        27%  sharp · at its level · small run
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   38.6%  ▁·▃▁▁▂▁●▄▁▃▃ beats 16/27  medium · avg 55%        18%  at its level · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       79.2%  ▁▃▂▃●▇▅▇█▅▂▁ beats 21/84  very easy · avg 86%     17%  small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       79.2%  ▁▃▂▃●▇▅▇█▄▂▁ beats 21/85  very easy · avg 86%     17%  small run
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (l…</a>        3   62% ▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   35% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 45.6
+weighted average                                   = 45.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

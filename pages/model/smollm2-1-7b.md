@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 33.1** ±1.0 · #636 of 725 · from 18 benchmark results across 5 sources
+**score 33.1** ±1.0 · #640 of 729 · from 18 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #406 of 460*    6.4%      1
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #374 of 395     19%      4
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #412 of 466*    6.4%      1
+chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃    #377 of 398     19%      4
 math            ▁▁●▅█▆▄█▄▁▁▁    #385 of 427     30%      2
 </pre>
 
-<details><summary>coding · #406 of 460 · 6.4% of its score</summary>
+<details><summary>coding · #412 of 466 · 6.4% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
@@ -32,16 +32,16 @@ test             result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #374 of 395 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #377 of 398 · 19% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1114.6  ▁▁▁●▃▃▃▆▆▇█▃ beats 19/379  avg 1258             11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1114.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 19/382  avg 1259             11%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            51.6%  ▁●▁▃▁▄▁▁█▃▃▁ beats 1/22    easy · avg 78%      3.1%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>        5.8%  ●▃·▁▁█▇▅·▁·▁ beats 0/22    medium · avg 39%    2.4%  sharp
-<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified) …</a>   56.7%  ▁▁▃●▂▄▄▆█▃▂▁ beats 20/141  easy · avg 76%      2.0%  at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified) …</a>   56.7%  ▁▂▄●▂▄▆█▇▄▂▁ beats 20/142  easy · avg 76%      2.0%  at its level · small run
 </pre>
 
 </details>
@@ -66,8 +66,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 75%       14%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    medium · avg 64%    8.3%  at its level
 <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.5%  at its level · small run
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 30%      1.8%  typical
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 82%      1.7%  at its level · noisy
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 31%      1.8%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 82%      1.8%  at its level · noisy
 <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▂▂▃●█▅▃▁▁ beats 42/123  easy · avg 84%      1.1%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 60%    0.5%  blunt · at its level
 </pre>
@@ -82,7 +82,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                     8   46% ▇▇▇▇▇
 <a name="paper-2502.02737v1"></a><a href="https://arxiv.org/html/2502.02737v1">SmolLM2 paper (lab)</a>                  7   33% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   11% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1    8% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1    2% ▇
 prior: pull toward the middle             0% ▇

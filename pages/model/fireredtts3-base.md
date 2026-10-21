@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2026-08 · 2.12B params · apache-2.0
 
-**score 67.2** ±2.6 · #7 of 118 · from 5 benchmark results across 1 source
+**score 67.3** ±2.6 · #7 of 119 · from 5 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">UltraEval-Audio</a>                      5   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             3% ▇
-weighted average                        = 67.2
+weighted average                        = 67.3
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt))</sub>

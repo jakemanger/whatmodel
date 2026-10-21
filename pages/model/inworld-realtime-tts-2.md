@@ -4,9 +4,9 @@
 
 # Inworld Realtime TTS-2
 
-Inworld · released 2026-08 · proprietary
+Inworld · released 2026-05 · proprietary
 
-**score 61.0** ±1.8 · #39 of 118 · from 7 benchmark results across 4 sources
+**score 60.8** ±1.8 · #40 of 119 · from 8 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -18,17 +18,18 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 </pre>
 
-<details><summary>other tests (7)</summary>
+<details><summary>other tests (8)</summary>
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1197.8  ▁···▁▃··●▄▁▇ beats 8/18   avg 1078                  29%  typical
-<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1189.4  ▃·▃▃▃·●██▃·▃ beats 4/12   avg 1080                  15%  typical
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1197.8  ▁···▁▃··●▄▁▇ beats 8/18   avg 1080                  29%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1189.4  ▃·▃▃▃·●██▃·▃ beats 4/12   avg 1082                  15%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      3.8%  ▄·····●··▄██ beats 1/7    avg 8.3%                  13%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      4.5%  ▄·····▄●▄█·▄ beats 3/7    avg 12%                   12%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      4.5%  ▄·····▄●▄█·▄ beats 3/7    avg 11%                   11%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.81 / 5  █··▄●▄····▄▄ beats 4/7    hard · avg 2.00 / 5       11%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.18 / 5  ▃▃●···▃···▃▃ beats 3/7    medium · avg 2.52 / 5     10%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.18 / 5  ▃▃●···▃···▃▃ beats 3/7    medium · avg 2.53 / 5     10%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qualit…</a>  3.33 / 5  ●·█········▄ beats 1/4    medium · avg 2.70 / 5    8.2%  at its level
+<a href="https://arxiv.org/html/2610.18010v1">MiniMax multilingual 24-language …</a>      3.3%  ●·█········█ beats 0/2    avg 2.9%                 0.7%  blunt · small run
 </pre>
 
 </details>
@@ -39,15 +40,16 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report</a>                         4   46% ▇▇▇▇▇▇
+<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report</a>                         4   45% ▇▇▇▇▇
 <a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   29% ▇▇▇▇
 <a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   15% ▇▇
 <a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               1    8% ▇
+<a name="fish-drama3-report"></a><a href="https://arxiv.org/html/2610.18010v1">Fish Audio Drama 3 technical report</a>             1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.0
+weighted average                                   = 60.8
 </pre>
 
-<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Fish Audio Drama 3 technical report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

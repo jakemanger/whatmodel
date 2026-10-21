@@ -6,7 +6,7 @@
 
 Fish Audio · released 2026-03 · 4.56B params · fish-audio-research-license
 
-**score 62.6** ±1.4 · #29 of 118 · from 25 benchmark results across 9 sources
+**score 62.6** ±1.4 · #28 of 119 · from 25 benchmark results across 9 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -26,13 +26,13 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-Cosy
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-en · speaker simila…</a>     64.9%  ●·█·██·▄·▄·▄ beats 0/10   medium · avg 53%          14%  at its level · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-zh · speaker simila…</a>     72.8%  ●··▃█▅▅··▃·▃ beats 0/10   medium · avg 62%         9.2%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-zh · speaker simila…</a>     72.8%  ●··▃█▅▅··▃·▃ beats 0/10   medium · avg 62%         9.3%  typical
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>      1.3%  ▄··▄▄····●▄▄ beats 3/6    avg 3.7%                 6.1%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">MiniMax multilingual test set · 2…</a>      8.1%  ●··█·····█·█ beats 0/3    avg 18%                  5.0%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-en · Whisper large-…</a>      1.8%  ▃··▃▅··▅·●▃▅ beats 6/11   avg 3.6%                 5.0%  blunt · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">MiniMax multilingual test set · 2…</a>      8.1%  ●··█·····█·█ beats 0/3    avg 18%                  5.1%  typical
 <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcriber…</a>      1.6%  ▃··········● beats 2/3    avg 4.2%                 5.0%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-zh · Paraformer CER</a>       1.0%  ▂··▄··▂▂●·▄▂ beats 7/11   avg 2.1%                 4.3%  blunt · several runs
-<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.80 / 5  █·····██···● beats 3/3    medium · avg 2.52 / 5    2.0%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-en · Whisper large-…</a>      1.8%  ▃··▃▅··▅·●▃▅ beats 6/11   avg 3.6%                 5.0%  blunt · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-zh · Paraformer CER</a>       1.0%  ▂··▄··▂▂●·▄▂ beats 7/11   avg 2.1%                 4.2%  blunt · several runs
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.80 / 5  █·····██···● beats 3/3    medium · avg 2.51 / 5    2.0%  at its level
 </pre>
 
 </details>
@@ -42,13 +42,13 @@ test                                  result  vs the others in its run  difficul
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      2.9%  ▄·····█··●██ beats 3/7    avg 8.3%                 8.2%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      4.5%  ▄·····▄●▄█·▄ beats 2/7    avg 12%                  7.1%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.71 / 5  █··●█▄····▄▄ beats 2/7    hard · avg 2.00 / 5      6.9%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.21 / 5  ▃▃●···▃···▃▃ beats 4/7    medium · avg 2.52 / 5    6.1%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      4.5%  ▄·····▄●▄█·▄ beats 2/7    avg 11%                  7.1%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.71 / 5  █··●█▄····▄▄ beats 2/7    hard · avg 2.00 / 5      6.8%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.21 / 5  ▃▃●···▃···▃▃ beats 4/7    medium · avg 2.53 / 5    6.1%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qualit…</a>  3.34 / 5  █·●········▄ beats 3/4    medium · avg 2.70 / 5    5.0%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Code-S…</a>  3.48 / 5  █··▄·······● beats 3/3    medium · avg 2.67 / 5    3.4%  at its level
 <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English TTS…</a>     87.5%  █··█●█·····█ beats 2/4    easy · avg 79%           2.9%  typical
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Identity …</a>  3.53 / 5  █·····▄····● beats 3/4    medium · avg 3.08 / 5    2.9%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Identity …</a>  3.53 / 5  █·····▄····● beats 3/4    medium · avg 3.08 / 5    2.8%  at its level
 <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>     54.0%  ▃·····▂▂▂●█▆ beats 5/15   medium · avg 46%         2.6%  blunt · at its level
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>      5.1%  ▃·▃·▃·····●█ beats 3/6    avg 44%                  1.3%  sharp · noisy
 <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>    1057.4  ▂▂··▃·●▅···▂ beats 8/12   avg 1018                 1.3%  blunt

@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 1.55B params · mit
 
-**score 62.9** ±1.7 · #27 of 118 · from 9 benchmark results across 1 source
+**score 63.0** ±1.7 · #27 of 119 · from 9 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,8 +27,8 @@ Trails [F5-TTS Base (v0)](f5-tts-base.md), [E2 TTS Base (F5-TTS reproduction)](e
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · speaker simila…</a>   67.3%  █·●·██·▄·▄·▄ beats 2/10   medium · avg 53%     14%  at its level
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · speaker simila…</a>   76.0%  ▃··▃●▅▅··▃·▃ beats 2/10   medium · avg 62%     14%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · Whisper large-…</a>    2.5%  ▃··▃●··▅·█▃▅ beats 3/11   avg 3.6%            5.4%  blunt
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · Paraformer CER</a>     1.1%  ▂··▄··▂●█·▄▂ beats 4/11   avg 2.1%            4.8%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · Whisper large-…</a>    2.5%  ▃··▃●··▅·█▃▅ beats 3/11   avg 3.6%            5.3%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · Paraformer CER</a>     1.1%  ▂··▄··▂●█·▄▂ beats 4/11   avg 2.1%            4.7%  blunt
 </pre>
 
 </details>
@@ -37,8 +37,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · WER</a>                9.4%  █··██·●█████ beats 3/8    avg 26%              18%  sharp
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.6%  █▄···●▄·█··▄ beats 4/8    avg 9.2%             15%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · WER</a>                9.4%  █··██·●█████ beats 3/8    avg 27%              18%  sharp
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.6%  █▄···●▄·█··▄ beats 4/8    avg 9.3%             15%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-zh · CER</a>                9.1%  ▃▃·▃··●▃█··▃ beats 3/8    avg 23%              12%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · speaker simila…</a>   73.4%  ▄█▄·▄··▄··●█ beats 6/8    medium · avg 49%     11%  at its level
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval EN (zero-shot English) ·…</a>    6.6%  ▃·······▃●█▅ beats 3/8    avg 16%             4.7%  noisy
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">UltraEval-Audio</a>                      9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 62.9
+weighted average                        = 63.0
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt))</sub>

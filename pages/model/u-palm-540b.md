@@ -21,11 +21,11 @@ math  ▁▁▃▆█●▅█▄▁▁▁   #221 of 526     26%      2
 
 <details><summary>math · #221 of 526 · 26% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    49.9%  ▆·▂·▄▂▂▂▂█▄● beats 16/18   medium · avg 47%     18%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    49.9%  ▆·▂·▄▂▂▂▂█▄● beats 16/18   medium · avg 48%     18%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11399v2">GSM8K (lab)</a>   58.5%  ▂▂▂▂▃▄▅●██▆▄ beats 98/206  easy · avg 67%      8.1%  sharp · at its level · small run
 </pre>
 

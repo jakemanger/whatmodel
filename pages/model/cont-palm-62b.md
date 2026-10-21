@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 62.5B params · proprietary
 
-**score 43.1** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 43.0** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,8 +24,8 @@ math    ▁▁▃▆█●▅█▄▁▁▁   #294 of 526*     23%      2
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   23.7%  ▁▁▁▁▂●▆▆█▅▂▁ beats 34/205  medium · avg 45%     10%  sharp · at its level
-<a href="https://arxiv.org/html/2204.02311v5">MBPP (lab)</a>        31.2%  ▁▁▁●▅█▆▅▄▁▂▁ beats 8/86    medium · avg 49%    4.5%  at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   23.7%  ▁▁▁▁▂●▆▆█▅▂▁ beats 34/205  medium · avg 46%     10%  sharp · at its level
+<a href="https://arxiv.org/html/2204.02311v5">MBPP (lab)</a>        31.2%  ▁▁▁●▅█▆▅▄▁▂▁ beats 8/86    medium · avg 50%    4.5%  at its level · small run
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 
 <pre>
 test         result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 47%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 48%     13%  sharp · at its level
 <a href="https://arxiv.org/html/2204.02311v5">GSM8K (lab)</a>   48.7%  ▂▂▂▂▃▄▅●██▆▄ beats 84/206  easy · avg 69%       10%  sharp · at its level · small run
 </pre>
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           61.2%  ▁···▁··▃▁▅●█ beats 10/18    easy · avg 74%       22%  at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.7%  ▂▂▂▂·▅·●▂█▃▃ beats 8/18     medium · avg 60%     13%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   45.7%  ▂··▂·▂▄▄·●██ beats 10/18    medium · avg 61%    5.7%  at its level
-<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (lab)</a>                       71.8%  ▁▁▂▂▄▄▃▆▅█●▂ beats 71/80    easy · avg 80%      4.4%  at its level
+<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (lab)</a>                       71.8%  ▁▁▂▂▄▄▃▆▅█●▂ beats 71/80    easy · avg 81%      4.4%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   21.8%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 45/68    hard · avg 32%      4.4%  typical
 <a href="https://arxiv.org/html/2204.02311v5">WinoGrande (lab)</a>                     77.0%  ▁▁▁▁▂▁▁▅▇█●▁ beats 118/131  easy · avg 85%      4.3%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (lab)</a>                          83.9%  ▁····▁▂█▆▅●▄ beats 87/103   easy · avg 89%      3.2%  at its level
@@ -69,7 +69,7 @@ source                                    results  share of the score
 <a name="paper-2204.02311v5"></a><a href="https://arxiv.org/html/2204.02311v5">PaLM: Scaling Language Modeling with Pa…</a>       11   51% ▇▇▇▇▇▇
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 43.1
+weighted average                                   = 43.0
 </pre>
 
 <sub>Licences: PaLM: Scaling Language Modeling with Pathways ([CC BY 4.0](../../licenses/paper-2204.02311v5-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>

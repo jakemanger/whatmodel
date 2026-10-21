@@ -6,7 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 36.5** ±0.7 · #609 of 725 · from 7 benchmark results across 4 sources
+**score 36.4** ±0.7 · #613 of 729 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #414 of 460     89%      3
+coding  ▁▁▁●▆▇█▇▅▄▃▁   #420 of 466     89%      3
 </pre>
 
-<details><summary>coding · #414 of 460 · 89% of its score</summary>
+<details><summary>coding · #420 of 466 · 89% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty      counts  why
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                 23.5%  ▂▂▃●▄█▁▄▅▃▁▃ beats 8/42   medium · avg 52%     10%  typical
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   44.7%  ▄▄········●█ beats 2/4    medium · avg 57%    0.8%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   44.7%  ▄▄········●█ beats 2/4    medium · avg 58%    0.8%  blunt · at its level
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2305.06161v2-starcoder"></a><a href="https://arxiv.org/html/2305.06161v2">StarCoder: may the source be with you! …</a>        1    2% ▇
 <a name="acl-2023-findings-emnlp-89"></a><a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">Execution-Based Evaluation for Open-Dom…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 36.5
+weighted average                                   = 36.4
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder: may the source be with you! ([CC BY-SA 4.0](../../licenses/paper-2305.06161v2-starcoder-CC-BY-SA-4-0.txt)) · Execution-Based Evaluation for Open-Domain Code Generation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-89-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Canopy Labs · released 2025-03 · 3B params · apache-2.0
 
-**score 47.4** ±4.6 · #73 of 118 · from 3 benchmark results across 2 sources
+**score 47.3** ±4.7 · #74 of 119 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     29.4%  ▅▅▃▃█●▅▃·▃·▅ beats 9/16   hard · avg 30%          56%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     29.4%  ▅▅▃▃█●▅▃·▃·▅ beats 9/16   hard · avg 31%          56%  at its level
 <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.76 / 5  ▄·█·█●····█▄ beats 5/8    easy · avg 3.93 / 5     19%  blunt · at its level
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           17.7%  ▂▄··▂▄●··█▄▆ beats 6/16   avg 16%                 16%  blunt
 </pre>
@@ -38,7 +38,7 @@ source                                    results  share of the score
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   72% ▇▇▇▇▇▇▇▇▇
 <a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   19% ▇▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 47.4
+weighted average                                   = 47.3
 </pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>

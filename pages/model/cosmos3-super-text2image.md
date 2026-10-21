@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 62.8** ±2.3 · #29 of 144 · from 5 benchmark results across 2 sources
+**score 62.8** ±2.3 · #30 of 144 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -25,8 +25,8 @@ Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher ov
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1151.6  ▂▂▃▄▇●▄▂▄▂·▂ beats 46/75  avg 1027             82%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.076          5.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1151.6  ▂▂▃▄▇●▅▂▄▂·▂ beats 46/75  avg 1027             82%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.076          5.0%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    41.2%  ●·······▄█▄▄ beats 0/5    medium · avg 60%    1.3%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    89.1%  █······███●█ beats 4/5    easy · avg 85%      0.0%  blunt
 </pre>

@@ -35,10 +35,10 @@ test   result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">SVAMP</a>                                41.2%  █▆▆▅▂▅▂●▂▂▅▃ beats 23/30  easy · avg 84%       34%  sharp · at its level · several runs
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">AQuA-RAT</a>                             22.4%  █··●▁▁··▁▁▁▁ beats 18/27  medium · avg 55%     16%  sharp · too hard for it · several runs
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">AQuA-RAT</a>                             22.4%  █··●▁▁··▁▁▁▁ beats 18/27  medium · avg 56%     16%  sharp · too hard for it · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.167.pdf">CommonsenseQA</a>                        46.8%  █·····▂▂●▂▄▄ beats 21/38  easy · avg 87%       14%  sharp · at its level · small run
 <a href="https://aclanthology.org/2023.acl-long.855.pdf">CoNLL-2003 English NER, few-shot …</a>   61.9%  ▃···▅·▃●··▃█ beats 5/9    easy · avg 84%      5.3%  at its level · small run
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      33.6%  ▄●········▄█ beats 1/4    medium · avg 57%    3.2%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      33.6%  ▄●········▄█ beats 1/4    medium · avg 58%    3.2%  blunt · at its level
 </pre>
 
 </details>

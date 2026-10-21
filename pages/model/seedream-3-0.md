@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▁▂▇▇▆▅●▇▂▃▁▁   #64 of 157     86%      3
-image to image / edit…  ▁▁▁▃▂▃●▃▃▃▁▁   #44 of 81*     19%      1
+image to image / edit…  ▁▁▁▃▂▂●▃▄▄▂▁   #44 of 81*     19%      1
 </pre>
 
 <details><summary>text to image · #64 of 157 · 86% of its score</summary>
@@ -26,7 +26,7 @@ Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher over
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1081.6  ▂▂▃▄●█▄▂▄▂·▂ beats 21/75  avg 1027           49%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1081.6  ▂▂▃▄●█▅▂▄▂·▂ beats 21/75  avg 1027           49%  typical
 <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.4%  ▂▃··▂··▃●··▂ beats 9/11   hard · avg 18%     19%  sharp · at its level
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   23.4%  ▆●·▂▂····▂▂█ beats 3/13   hard · avg 20%     18%  sharp · at its level · noisy
 </pre>

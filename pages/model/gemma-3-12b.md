@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 12.2B params · gemma
 
-**score 52.5** ±0.6 · #325 of 725 · from 56 benchmark results across 16 sources
+**score 52.4** ±0.6 · #329 of 729 · from 56 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #255 of 306*    2.4%      2
-coding              ▁▁▁▃▆●█▇▆▄▃▁    #294 of 460    8.7%      5
-chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #168 of 395*    4.2%      2
+agent tasks         ▁▁▃●█▅▅▅▅▄▂▁   #259 of 310*    2.4%      2
+coding              ▁▁▁▃▆●█▇▅▄▃▁    #299 of 466    8.7%      5
+chat &amp; writing      ▁▁▁▃▆▄▆█●▆▇▃   #171 of 398*    4.2%      2
 math                ▁▁▃▅█●▄█▄▁▁▁    #205 of 427     15%      6
-vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #124 of 147    6.9%      9
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #130 of 154    6.9%      9
 </pre>
 
-<details><summary>agent tasks · #255 of 306 · 2.4% of its score</summary>
+<details><summary>agent tasks · #259 of 310 · 2.4% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -35,29 +35,29 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #294 of 460 · 8.7% of its score</summary>
+<details><summary>coding · #299 of 466 · 8.7% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                      85.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 192/205  easy · avg 82%      2.8%  sharp
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                      85.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 192/205  easy · avg 83%      2.8%  sharp
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   35.0%  ▄··●·▄··▄█·▄ beats 1/7      hard · avg 33%      1.8%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                           73.0%  ▁▁▁▄▅█▆▅●▁▂▁ beats 73/86    easy · avg 70%      1.7%  at its level
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspecifie…</a>   24.6%  ▁···▁▁●▅▅█▄▅ beats 3/37     hard · avg 23%      1.6%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspecifie…</a>   24.6%  ▁···▁●▁█▇▃▄▁ beats 3/38     hard · avg 23%      1.6%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>                 47.9%  ▂·······▂▂●▆ beats 4/11     medium · avg 42%    0.7%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #168 of 395 · 4.2% of its score</summary>
+<details><summary>chat &amp; writing · #171 of 398 · 4.2% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1341.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 179/379  avg 1258               3.7%  blunt
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   88.9%  ▁▁▃▁▂▄▄▆●▃▂▁ beats 105/141  very easy · avg 87%    0.6%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1341.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 179/382  avg 1259               3.6%  blunt
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   88.9%  ▁▂▄▂▂▄▆█●▄▂▁ beats 105/142  very easy · avg 88%    0.6%  typical
 </pre>
 
 </details>
@@ -73,25 +73,25 @@ test                         result  vs the others in its run   difficulty      
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   35.5%  ▄··▄██··●··▄ beats 6/7     hard · avg 28%          1.5%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>    62.9%  ▁··▁▄▄▇●▅▆█▄ beats 19/47   medium · avg 60%        1.3%  at its level · small run
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       84.0%  ▄·▄·▄▄▄·▄··● beats 6/7     easy · avg 68%          1.3%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      16.7%  ▃▃▄▃●▃▇▇█▃▂▅ beats 56/195  very hard · avg 6.9%    1.2%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      16.7%  ▃▃▄▃●▃▇▇█▃▂▅ beats 56/195  very hard · avg 7.0%    1.2%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #124 of 147 · 6.9% of its score</summary>
+<details><summary>vision &amp; documents · #130 of 154 · 6.9% of its score</summary>
 
-Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Pixtral 12B (2409)](pixtral-12b.md) here, though they rank lower overall.
+Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   35.0%  ▄··●·▄··▄█·▄ beats 1/7    hard · avg 33%         1.8%  at its level
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>           62.9%  ▁··▁▄▄▇●▅▆█▄ beats 19/47  medium · avg 60%       1.3%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                     59.6%  ▁····▁▁▄●▇▆▆ beats 22/52  medium · avg 57%       1.3%  at its level · small run
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">InfographicVQA (lab)</a>                 64.9%  ▃·▃●█▃▃▃▃▃▃▃ beats 2/13   medium · avg 65%       0.9%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>           62.9%  ▁··▁▄▄▇●▅▆█▄ beats 19/47  medium · avg 60%       1.3%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">InfographicVQA (lab)</a>                 64.9%  ▃·▃●█▃▃▃▃▃▃▃ beats 2/13   easy · avg 65%         0.9%  at its level · small run
 <a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                    71.6%  ▃▅▃●·▃▅·▃·▃▅ beats 6/13   easy · avg 72%         0.5%  blunt · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                        75.7%  ▁··▁▁▁▁▁●▅▅█ beats 9/44   easy · avg 77%         0.4%  blunt · small run
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                         87.1%  ▁··●▁▁▁▇█▇▄▅ beats 2/28   very easy · avg 89%    0.3%  blunt · small run
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                        67.7%  ▁▁▁●▅▁▃·▃▃▃█ beats 4/24   easy · avg 74%         0.2%  blunt · at its level · small run
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                        67.7%  ▁▁▁●▅▁▃·▃▃▃█ beats 4/24   easy · avg 74%         0.1%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2503.19786v1">AI2D test (lab)</a>                      84.2%  ▁▁▅▇▃●·▄·█·▃ beats 15/28  easy · avg 83%         0.1%  blunt · small run
 </pre>
 
@@ -103,31 +103,31 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         39.5%  ▁▁▁▁▂●▆▄▅▇█▄ beats 37/209   hard · avg 36%           14%  sharp · several runs
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 76.2%  ▄···▄▄·▄●··█ beats 4/7      easy · avg 74%          7.2%  at its level · several runs
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4379  ▁▄▃▃●▄█▃▅▁▁▁ beats 8/30     avg 0.415               6.6%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4379  ▁▄▃▃●▄█▃▅▁▁▁ beats 8/30     avg 0.417               6.6%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             55.8%  ▄····█·●█·▄▄ beats 3/7      medium · avg 54%        4.4%  at its level · several runs
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 85.7%  ▁▁▁▁▂▄▅▆█▃●▁ beats 146/155  easy · avg 78%          3.3%  sharp
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 85.7%  ▁▁▁▁▂▄▅▆█▃●▁ beats 146/155  easy · avg 79%          3.3%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.8%  ▂▃▅▂●▃█▅█▅▃▆ beats 8/34     medium · avg 41%        2.9%  blunt · at its level
 <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   53.3%  ▄·▂▂▂··●▂▄·▄ beats 5/13     hard · avg 46%          2.4%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.3%  █··▄··█··●·▄ beats 5/7      medium · avg 41%        2.3%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                        6.3%  ▄▄▄●█▆███·▂█ beats 6/32     very hard · avg 6.7%    2.2%  typical
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>               69.5%  ▂···▂·●▂▂·██ beats 2/12     medium · avg 64%        2.1%  at its level
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.3%  ▁▁▁▁▁▂▂▃▄●█▃ beats 56/97    hard · avg 31%          2.0%  blunt · at its level
-<a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4 pat…</a>   74.4%  ▄·······▄●·▄ beats 2/4      easy · avg 70%          1.7%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.3%  ▁▁▁▁▁▂▂▃▄●█▃ beats 56/97    hard · avg 31%          2.1%  blunt · at its level
+<a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4 pat…</a>   74.4%  ▄·······▄●·▄ beats 2/4      easy · avg 71%          1.7%  typical
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        69.2%  ▃··▃▃··▅···● beats 6/7      medium · avg 56%        1.7%  at its level
-<a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   66.2%  █······█··●█ beats 2/3      medium · avg 60%        1.6%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   61.7%  ▂▄▂▃█▄▃●▃▅▂▂ beats 55/81    medium · avg 56%        1.6%  blunt · at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             69.4%  ▄···▄·█·▄·▄● beats 6/7      medium · avg 58%        1.4%  at its level
+<a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   66.2%  █······█··●█ beats 2/3      medium · avg 60%        1.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             69.4%  ▄···▄·█·▄·▄● beats 6/7      medium · avg 59%        1.4%  at its level
 <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro avg (l…</a>   16.3%  ▄▄·●▄·▄·▄·▄▄ beats 2/8      hard · avg 17%          1.4%  small run
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    43.6%  ▄··●█▄··▄··█ beats 1/7      medium · avg 46%        1.2%  blunt · at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>                75.8%  ▄········▄·● beats 3/3      easy · avg 72%          1.1%  typical
 <a href="https://arxiv.org/html/2503.19786v1">RULER 128k (lab)</a>                     57.1%  ▃··▅●▇▅█▇·▃▃ beats 8/32     medium · avg 58%        1.1%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 233/276  medium · avg 72%        0.8%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.9%  ▃·▁▁▂▁▂▅█●▄▁ beats 75/100   medium · avg 66%        0.7%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>                 51.6%  █······█··●█ beats 2/3      medium · avg 51%        0.6%  blunt · at its level
+<a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>                 51.6%  █······█··●█ beats 2/3      medium · avg 52%        0.6%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   85.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 99/146   easy · avg 82%          0.4%  noisy
 <a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>                        81.6%  █···█·●··███ beats 2/5      easy · avg 73%          0.2%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.2%  ▁▁▂▃▄▄█●▃▂▂▁ beats 110/140  very easy · avg 94%     0.2%  blunt · maxed out · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 28/135   very hard · avg 5.8%    0.2%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 28/136   very hard · avg 5.8%    0.2%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   95.6%  ▁▂▁▂▅█▂▃▄▃●▁ beats 94/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -141,10 +141,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="gap-google-gemma3"></a><a href="https://ai.google.dev/gemma/docs/core/model_card_3">Google DeepMind Gemma 3 270M IT model c…</a>       19   30% ▇▇▇▇
 <a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   28% ▇▇▇
-<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2    9% ▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   10% ▇
 <a name="report-2503.19786v1"></a><a href="https://arxiv.org/html/2503.19786v1">Gemma Team (lab)</a>                                6    7% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3    6% ▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
 <a name="mimic-cdm-leaderboard"></a><a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC Clinical Decision Making leaderbo…</a>        2    3% ▇
 <a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1    2% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    2% ▇
@@ -156,7 +156,7 @@ source                                    results  share of the score
 <a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>           1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 52.5
+weighted average                                   = 52.4
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · TranslateGemma Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

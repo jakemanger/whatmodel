@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄▄█●▁▂▁▁   #18 of 126*     71%      1
-image to image / edit…  ▁▁·▃▂▃█●▃▄▁▁    #21 of 62*     27%      1
+image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #22 of 62*     27%      1
 </pre>
 
 <details><summary>text to image · #18 of 126 · 71% of its score</summary>
@@ -31,13 +31,13 @@ test                   result  vs the others in its run  difficulty  counts  why
 
 </details>
 
-<details><summary>image to image / editing · #21 of 62 · 27% of its score</summary>
+<details><summary>image to image / editing · #22 of 62 · 27% of its score</summary>
 
-Trails [Seedream 5.0 Lite](seedream-5-0-lite.md), [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Uni-1.1 Max](uni-1-1-max.md) here, though they rank lower overall.
+Trails [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Seedream 5.0 Lite](seedream-5-0-lite.md), [Grok Imagine Image Pro](grok-imagine-image-pro.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1303.2  ▂▁▁▂▆▇●▄▆▅▁▂ beats 32/53  avg 1153       27%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1302.5  ▂▁▁▃▆█▄●▄█▁▂ beats 31/53  avg 1153       27%  typical
 </pre>
 
 </details>

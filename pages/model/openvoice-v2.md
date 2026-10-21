@@ -6,7 +6,7 @@
 
 MyShell · released 2024-04 · mit
 
-**score 25.7** ±3.0 · #111 of 118 · from 7 benchmark results across 4 sources
+**score 25.4** ±3.0 · #112 of 119 · from 7 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -24,11 +24,11 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.59 / 5  ▅·●▅▅·█▃▃▅·▅ beats 3/17   easy · avg 4.03 / 5       67%  at its level
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     24.0%  ●·····▂▂▂▃█▆ beats 1/15   medium · avg 46%          10%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     82.0%  ▄●·····▄··▄█ beats 1/5    very easy · avg 88%      7.6%  blunt
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.92 / 5  ▅··▃▅··▅●▅██ beats 7/17   medium · avg 3.30 / 5    5.7%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     82.5%  ▂▂●·▂·█▆▂·▄▂ beats 4/17   very easy · avg 89%      5.0%  blunt
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     82.0%  ▄●·····▄··▄█ beats 1/5    very easy · avg 87%      7.6%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.92 / 5  ▅··▃▅··▅●▅██ beats 7/17   medium · avg 3.29 / 5    5.7%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     82.5%  ▂▂●·▂·█▆▂·▄▂ beats 4/17   very easy · avg 89%      4.9%  blunt
 <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     86.2%  ▂▂····▃·▃▅●█ beats 9/14   very easy · avg 86%      0.9%  blunt
-<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>      7.0%  ▂▂▂··▂·▃●▃█▂ beats 7/15   avg 8.6%                 0.2%  blunt · noisy
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>      7.0%  ▂▂▂··▂·▃●▃█▂ beats 7/15   avg 8.6%                 0.1%  blunt · noisy
 </pre>
 
 </details>
@@ -40,11 +40,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   73% ▇▇▇▇▇▇▇▇▇
-<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2   13% ▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2   12% ▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   10% ▇
 <a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                      1    1% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 25.7
+weighted average                                   = 25.4
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>

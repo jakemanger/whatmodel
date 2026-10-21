@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 2.95B params · apache-2.0
 
-**score 40.0** ±4.2 · #750 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 40.0** ±4.2 · #755 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #369 of 466*     92%      1
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▃   #372 of 469*     92%      1
 </pre>
 
-<details><summary>chat &amp; writing · #369 of 466 · 92% of its score</summary>
+<details><summary>chat &amp; writing · #372 of 469 · 92% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

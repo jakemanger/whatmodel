@@ -25,7 +25,7 @@ Beats [Nano Banana Pro (Gemini 3 Pro Image)](nano-banana-pro.md) here, though th
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1255.2  ▂▂▃▄▇█▄▂●▂·▂ beats 64/75  avg 1027           72%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1255.2  ▂▂▃▄▇█▅▂●▂·▂ beats 64/75  avg 1027           72%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   93.7%  ▆▆·▂▂····▂▂● beats 10/13  hard · avg 20%     18%  sharp · noisy
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   88.3%  ▁▂▂█▃▁▂●·▁·▁ beats 18/22  hard · avg 28%    8.1%  sharp · noisy
 </pre>

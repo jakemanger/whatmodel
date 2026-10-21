@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · 1.7B params · apache-2.0
 
-**score 64.7** ±1.0 · #18 of 118 · from 38 benchmark results across 9 sources
+**score 64.9** ±1.0 · #18 of 119 · from 38 benchmark results across 9 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 task           vs the others       rank  counts  tests
-voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #11 of 37     23%      7
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #11 of 37     22%      7
 </pre>
 
-<details><summary>voice cloning · #11 of 37 · 23% of its score</summary>
+<details><summary>voice cloning · #11 of 37 · 22% of its score</summary>
 
 Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md) here, though they rank higher overall. Trails [VoxCPM2](voxcpm2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · speaker simila…</a>   71.2%  █·█·█●·▄·▄·▄ beats 7/10   medium · avg 53%    8.2%  at its level · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker simila…</a>   76.9%  ▃··▃█●▅··▃·▃ beats 6/10   medium · avg 62%    4.3%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker simila…</a>   76.9%  ▃··▃█●▅··▃·▃ beats 6/10   medium · avg 62%    4.4%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper large-…</a>    1.6%  ▃··▃▅··▅·█▃● beats 11/11  avg 3.6%            3.5%  blunt · several runs
-<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    1.3%  ▄··▄▄····●▄▄ beats 4/6    avg 3.7%            3.1%  typical
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    1.3%  ▄··▄▄····●▄▄ beats 4/6    avg 3.7%            3.0%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-en WER (transcriber…</a>    1.2%  ▄········█▄● beats 5/5    avg 4.2%            1.9%  small run
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer CER</a>     0.9%  ▂··▄··▂▂█·▄● beats 11/11  avg 2.1%            1.6%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer CER</a>     0.9%  ▂··▄··▂▂█·▄● beats 11/11  avg 2.1%            1.5%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-zh error rate (tran…</a>    0.8%  █··········● beats 1/1                           —  not counted yet: no other model in the …
 </pre>
 
@@ -40,19 +40,19 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · WER</a>                  7.9%  █··██·██●███ beats 5/8    avg 26%                   13%  sharp · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · speaker simila…</a>     66.1%  ▄●▄·▄··▄··▄█ beats 1/8    medium · avg 49%         8.7%  at its level · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-zh · CER</a>                 11.3%  ●▃·▃··▃▃█··▃ beats 0/8    avg 23%                  7.2%  several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · WER</a>                  7.9%  █··██·██●███ beats 5/8    avg 27%                   13%  sharp · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · speaker simila…</a>     66.1%  ▄●▄·▄··▄··▄█ beats 1/8    medium · avg 49%         8.9%  at its level · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-zh · CER</a>                 11.3%  ●▃·▃··▃▃█··▃ beats 0/8    avg 23%                  7.3%  several runs
 <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (predic…</a>  3.87 / 5  ▄·····█·▄●·█ beats 4/6    medium · avg 2.98 / 5    6.9%  at its level · several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval EN (zero-shot English) ·…</a>      3.8%  ▃·······▃▅█● beats 8/8    avg 16%                  6.8%  several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      3.1%  █▄···█▄·█··● beats 8/8    avg 9.2%                 4.8%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      3.1%  █▄···█▄·█··● beats 8/8    avg 9.3%                 4.8%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      2.3%  ▄·····█··▄█● beats 7/7    avg 8.3%                 4.1%  typical
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      5.1%  ▄···▄··▄··●█ beats 4/6    avg 20%                  3.7%  several runs
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      2.9%  ▄·····▄█▄█·● beats 7/7    avg 12%                  3.6%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.91 / 5  █··▄█●····▄▄ beats 5/7    hard · avg 2.00 / 5      3.5%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.61 / 5  ▃▃█···▃···▃● beats 7/7    medium · avg 2.52 / 5    3.0%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      2.9%  ▄·····▄█▄█·● beats 7/7    avg 11%                  3.6%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.91 / 5  █··▄█●····▄▄ beats 5/7    hard · avg 2.00 / 5      3.4%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall speak…</a>     62.6%  ▄·●·█▄·····▄ beats 2/6    medium · avg 44%         3.0%  at its level
-<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.59 / 5  █··█●······▄ beats 4/6    medium · avg 2.84 / 5    2.7%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.61 / 5  ▃▃█···▃···▃● beats 7/7    medium · avg 2.53 / 5    3.0%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.59 / 5  █··█●······▄ beats 4/6    medium · avg 2.83 / 5    2.8%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall WER (…</a>     17.6%  ●··▄█····▄·█ beats 0/6    avg 20%                  1.5%  noisy
 <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English TTS…</a>     86.9%  ●··███·····█ beats 0/4    easy · avg 79%           1.4%  typical
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     61.0%  ▃·····▂▂▂▃█● beats 15/15  medium · avg 46%         1.3%  blunt · at its level
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2    1% ▇
 <a name="speech-balacoon-baselines-apache"></a><a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/qwen3_tts/daps_celeb/metrics.yaml">balacoon speech_gen_baselines · zero-sh…</a>        4    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 64.7
+weighted average                                   = 64.9
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · Qwen/Qwen3-TTS-12Hz-1.7B-Base model card ([Apache-2.0](../../licenses/Qwen--Qwen3-TTS-12Hz-1.7B-Base.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt))</sub>

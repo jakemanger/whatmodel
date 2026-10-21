@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-01 · 1.84B params · tongyi-qianwen-research
 
-**score 26.4** ±2.2 · #675 of 725 · from 4 benchmark results across 4 sources
+**score 26.4** ±2.2 · #679 of 729 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃   #390 of 395*     30%      1
+chat &amp; writing  ▁●▁▃▆▄▆█▆▆▇▃   #393 of 398*     30%      1
 </pre>
 
-<details><summary>chat &amp; writing · #390 of 395 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #393 of 398 · 30% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 

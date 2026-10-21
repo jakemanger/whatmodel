@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃▄●█▃▁▂▁▁   #62 of 126     88%     16
-image to image / edit…  ▁▁·▃▂●█▃▃▄▁▁   #46 of 62*    9.1%      1
+image to image / edit…  ▁▁·▃▂●█▃▅▅▂▁   #46 of 62*    9.2%      1
 </pre>
 
 <details><summary>text to image · #62 of 126 · 88% of its score</summary>
@@ -26,14 +26,14 @@ Trails [LongCat-Image](longcat-image.md), [LLaDA-Image-Turbo](llada-image-turbo.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1056.8  ▂▂▃●▇█▄▂▄▂·▂ beats 16/75  avg 1027             25%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1056.8  ▂▂▃●▇█▅▂▄▂·▂ beats 16/75  avg 1027             25%  typical
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            67.5%  ▅▂█▂▂●····▂▂ beats 11/13  easy · avg 69%       11%  typical
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   24.9%  ▂▃··▂··●█··▂ beats 4/11   hard · avg 18%      9.1%  sharp
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   24.9%  ▂▃··▂··●█··▂ beats 4/11   hard · avg 18%      9.2%  sharp
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    87.7%  ▄····▄█▄▄●▄█ beats 7/10   easy · avg 82%      8.9%  typical
-<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   27.5%  ▆●·▂▂····▂▂█ beats 4/13   hard · avg 20%      8.3%  sharp · at its level · noisy
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   27.5%  ▆●·▂▂····▂▂█ beats 4/13   hard · avg 20%      8.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>   87.0%  ▂█····▄●▄··▂ beats 7/11   easy · avg 79%      8.2%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   41.3%  ▁▂▂●▃▁▂▃·▁·▁ beats 8/22   hard · avg 28%      6.5%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   87.0%  ▄··█▄·▄··●·▄ beats 5/6    easy · avg 84%      5.5%  typical
+<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   87.0%  ▄··█▄·▄··●·▄ beats 5/6    easy · avg 84%      5.4%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   62.0%  ▄·▆▂▆█▄▆▂●·▄ beats 19/22  medium · avg 60%    3.1%  at its level
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1) (…</a>   49.2%  ●▅▅·▅▅█·█··▃ beats 2/17   medium · avg 46%    2.7%  blunt · at its level
 <a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   56.6%  ▄●·········▄ beats 1/3    medium · avg 58%    0.5%  blunt · at its level · noisy
@@ -46,13 +46,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>image to image / editing · #46 of 62 · 9.1% of its score</summary>
+<details><summary>image to image / editing · #46 of 62 · 9.2% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   24.9%  ▂▃··▂··●█··▂ beats 4/11   hard · avg 18%    9.1%  sharp
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   24.9%  ▂▃··▂··●█··▂ beats 4/11   hard · avg 18%    9.2%  sharp
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>  1110.5  ▃··▅▃··▃▃··● beats 7/8    avg 1012          6.3%  typical
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   991.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 15/34  avg 875           3.8%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   991.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 15/34  avg 874           3.8%  typical
 <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   25.7%  ▅·▃·●··▃·█▃▃ beats 3/9    hard · avg 28%    0.8%  blunt · at its level
 </pre>
 
@@ -74,7 +74,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   25% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   25% ▇▇▇
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   11% ▇
 <a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1    9% ▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1    9% ▇

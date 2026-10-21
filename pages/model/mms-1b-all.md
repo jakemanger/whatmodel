@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · 0.96B params · cc-by-nc-4.0
 
-**score 25.3** ±3.3 · #148 of 162 · from 7 benchmark results across 6 sources
+**score 25.1** ±3.3 · #149 of 163 · from 7 benchmark results across 6 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   39.1%  ▂▂···▃●▅█▃▂▂ beats 4/16   avg 32%        15%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   29.8%  ▄·●·▄▄▄▄·█▄▄ beats 2/10   avg 15%        11%  blunt
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   54.5%  ●·▂▂▅█▅▃▂▅▂▂ beats 1/22   avg 40%        11%  blunt
-<a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources,…</a>   31.5%  ▃··▃●··▅··█▅ beats 2/9    avg 17%       9.1%  blunt
+<a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources,…</a>   31.5%  ▃··▃●··▅··█▅ beats 2/9    avg 17%       9.0%  blunt
 <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   45.5%  ●·▅·▅▃▃·▃▃▃█ beats 0/12   avg 24%       6.8%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   68.0%  ▃●····▃▅▃·▅▃ beats 1/10   avg 41%       4.9%  blunt
 </pre>
@@ -46,7 +46,7 @@ source                                 results  share of the score
 <a name="speech-stt-turkasr-bench-mit"></a><a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">Turkish ASR Leaderboard</a>                      1    9% ▇
 <a name="speech-stt-quranic-asr-lb-apache"></a><a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard</a>                      1    7% ▇
 prior: pull toward the middle                     4% ▇
-weighted average                                = 25.3
+weighted average                                = 25.1
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>

@@ -17,25 +17,25 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▁▂▇▇▆▅█▇▂●▁▁   #14 of 157*     64%      1
-image to image / edit…  ▁▁▁▃▂▃█▃▃●▁▁     #8 of 81*     24%      1
+image to image / edit…  ▁▁▁▃▂▂█▃▄●▂▁     #7 of 81*     24%      1
 </pre>
 
 <details><summary>text to image · #14 of 157 · 64% of its score</summary>
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1254.2  ▂▂▃▄▇█▄▂●▂·▂ beats 63/75  avg 1027       64%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1254.2  ▂▂▃▄▇█▅▂●▂·▂ beats 63/75  avg 1027       64%  typical
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #8 of 81 · 24% of its score</summary>
+<details><summary>image to image / editing · #7 of 81 · 24% of its score</summary>
 
-Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-banana-2.md), [Nano Banana Pro (Gemini 3 Pro Image)](nano-banana-pro.md) here, though they rank higher overall.
+Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-banana-2.md), [Muse Image](muse-image.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1400.9  ▂▁▁▂▆▇█▄▆●▁▂ beats 46/53  avg 1153       24%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1399.9  ▂▁▁▃▆█▄█▄●▁▂ beats 47/53  avg 1153       24%  typical
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1042.1  ▁▁▁▄▂█●▁▁▂▁▁ beats 24/34  avg 875        10%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1042.1  ▁▁▁▄▂█●▁▁▂▁▁ beats 24/34  avg 874        10%  typical
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 1.72B params · bigscience-bloom-rail-1.0
 
-**score 23.2** ±2.6 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 23.1** ±2.6 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        4   96% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    1% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 23.2
+weighted average                                   = 23.1
 </pre>
 
 <sub>Licences: Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt))</sub>

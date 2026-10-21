@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-07 · proprietary
 
-**score 63.9** ±4.1 · #11 of 162 · from 3 benchmark results across 2 sources
+**score 63.9** ±4.1 · #11 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="speech-stt-voicecodebench-report"></a><a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench</a>                           2   71% ▇▇▇▇▇▇▇▇▇
 <a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>        1   22% ▇▇▇
-prior: pull toward the middle                 6% ▇
+prior: pull toward the middle                 7% ▇
 weighted average                            = 63.9
 </pre>
 

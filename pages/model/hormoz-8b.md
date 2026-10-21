@@ -6,7 +6,7 @@
 
 Mann-E · released 2025-02 · 8.03B params · mit
 
-**score 47.7** ±4.4 · #538 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.6** ±4.3 · #544 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle               8% ▇
-weighted average                          = 47.7
+weighted average                          = 47.6
 </pre>
 
 <sub>Licences: Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

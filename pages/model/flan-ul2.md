@@ -6,7 +6,7 @@
 
 Google · released 2023-03 · 20B params · apache-2.0
 
-**score 47.9** ±3.5 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 47.8** ±3.5 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -39,8 +39,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-536"></a><a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS: A Zero-Shot Benchmark for …</a>        4   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    9% ▇
-prior: pull toward the middle                        6% ▇
-weighted average                                   = 47.9
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 47.8
 </pre>
 
 <sub>Licences: ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

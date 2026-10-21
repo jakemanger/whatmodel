@@ -6,7 +6,7 @@
 
 OpenBMB · released 2026-04 · 2B params · apache-2.0
 
-**score 64.0** ±1.1 · #20 of 118 · from 27 benchmark results across 6 sources
+**score 64.1** ±1.1 · #21 of 119 · from 27 benchmark results across 6 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -26,14 +26,14 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [LongCat-
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-en · speaker simila…</a>     75.3%  █·█·██·▄·●·▄ beats 9/10   medium · avg 53%         8.1%  at its level · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-zh · speaker simila…</a>     79.4%  ▃··▃█▅▅··●·▃ beats 9/10   medium · avg 62%         5.4%  typical
-<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker simila…</a>     75.6%  ●·····██···█ beats 0/3    medium · avg 58%         3.4%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-zh · speaker simila…</a>     79.4%  ▃··▃█▅▅··●·▃ beats 9/10   medium · avg 62%         5.5%  typical
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker simila…</a>     75.6%  ●·····██···█ beats 0/3    medium · avg 58%         3.5%  typical
 <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker simila…</a>     72.5%  ●····█··█··█ beats 0/3    medium · avg 54%         3.4%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">MiniMax multilingual test set · 2…</a>      7.1%  █··●·····█·█ beats 1/3    avg 18%                  3.1%  typical
 <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcriber…</a>      1.5%  ▃··········● beats 3/3    avg 4.2%                 3.1%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-en · Whisper large-…</a>      1.6%  ▃··▃▅··▅·█▃● beats 10/11  avg 3.6%                 2.2%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-en · Whisper large-…</a>      1.6%  ▃··▃▅··▅·█▃● beats 10/11  avg 3.6%                 2.1%  blunt
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-zh · Paraformer CER…</a>      0.9%  ▂··▄··▂▂█·●▂ beats 10/11  avg 2.1%                 1.9%  blunt
-<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.42 / 5  ●·····██···█ beats 0/3    medium · avg 2.52 / 5    1.2%  at its level
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.42 / 5  ●·····██···█ beats 0/3    medium · avg 2.51 / 5    1.2%  at its level
 </pre>
 
 </details>
@@ -42,16 +42,16 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · WER (lab)</a>            7.2%  █··██·████●█ beats 7/8    avg 26%                   13%  sharp · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-zh · CER (lab)</a>            8.3%  ▃▃·▃··▃▃●··▃ beats 7/8    avg 23%                  8.8%  several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · speaker simila…</a>     69.1%  ▄█▄·●··▄··▄█ beats 4/8    medium · avg 49%         6.6%  at its level · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      3.5%  █▄···█●·█··▄ beats 5/8    avg 9.2%                 5.8%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · WER (lab)</a>            7.2%  █··██·████●█ beats 7/8    avg 27%                   13%  sharp · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-zh · CER (lab)</a>            8.3%  ▃▃·▃··▃▃●··▃ beats 7/8    avg 23%                  8.9%  several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · speaker simila…</a>     69.1%  ▄█▄·●··▄··▄█ beats 4/8    medium · avg 49%         6.7%  at its level · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      3.5%  █▄···█●·█··▄ beats 5/8    avg 9.3%                 5.9%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      3.6%  ▄·····●··▄██ beats 2/7    avg 8.3%                 5.0%  typical
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.73 / 5  ●·▄·▄▄·▄···▄ beats 1/6    medium · avg 2.98 / 5    4.8%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      5.1%  ▄·····●█▄█·▄ beats 1/7    avg 12%                  4.4%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.40 / 5  ●··▄█▄····▄▄ beats 0/7    hard · avg 2.00 / 5      4.3%  at its level
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      6.2%  ▄···▄··●··██ beats 2/6    avg 20%                  4.0%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.07 / 5  ●▃█···▃···▃▃ beats 0/7    medium · avg 2.52 / 5    3.7%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      5.1%  ▄·····●█▄█·▄ beats 1/7    avg 11%                  4.4%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.40 / 5  ●··▄█▄····▄▄ beats 0/7    hard · avg 2.00 / 5      4.2%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      6.2%  ▄···▄··●··██ beats 2/6    avg 20%                  3.9%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.07 / 5  ●▃█···▃···▃▃ beats 0/7    medium · avg 2.53 / 5    3.7%  at its level
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added langua…</a>      4.2%  █··●······██ beats 1/3    avg 12%                  2.8%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval EN (zero-shot English) ·…</a>      5.3%  ▃·······▃▅●▅ beats 5/8    avg 16%                  1.9%  noisy
 <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English TTS…</a>     88.6%  █··███·····● beats 4/4    easy · avg 79%           1.7%  typical
@@ -73,7 +73,7 @@ source                               results  share of the score
 <a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot</a>                1    2% ▇
 <a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                           1    1% ▇
 prior: pull toward the middle                   0% ▇
-weighted average                              = 64.0
+weighted average                              = 64.1
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · nineninesix/gepard-1.0 model card ([Apache-2.0](https://opensource.org/licenses/Apache-2.0)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>

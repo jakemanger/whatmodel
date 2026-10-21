@@ -6,7 +6,7 @@
 
 xAI · released 2026-09 · proprietary
 
-**score 70.3** ±3.3 · #2 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 70.3** ±3.3 · #2 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    0.8%  ▃·▃▅·▅▅·▃▅█● beats 15/16  avg 4.8%       96%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    0.8%  ▃·▃▅·▅▅·▃▅█● beats 15/16  avg 4.7%       96%  typical
 <a href="https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md">raven.eval · German read/parliame…</a>    8.2%  █··········● beats 1/1                     —  not counted yet: no other model in the …
 </pre>
 

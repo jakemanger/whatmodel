@@ -41,7 +41,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-llada-image"></a><a href="https://arxiv.org/html/2609.03796v1#S5.T5">LLaDA-Image: Building Strong Image Gene…</a>        5   70% ▇▇▇▇▇▇▇▇
+<a name="visual-llada-image"></a><a href="https://arxiv.org/html/2609.03796v1#S5.T5">LLaDA-Image: Building Strong Image Gene…</a>        5   69% ▇▇▇▇▇▇▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   28% ▇▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 55.1

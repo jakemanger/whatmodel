@@ -6,7 +6,7 @@
 
 Google · released 2026-08 · proprietary
 
-**score 66.8** ±6.0 · #9 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.8** ±6.0 · #9 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

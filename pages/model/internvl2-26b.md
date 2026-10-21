@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
-**score 48.0** ±1.5 · #404 of 725 · from 17 benchmark results across 5 sources
+**score 47.9** ±1.5 · #409 of 729 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others          rank  counts  tests
 math                ▁▁▃▅●▆▄█▄▁▁▁   #266 of 427*    5.8%      1
-vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #126 of 147     90%     14
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #133 of 154     90%     14
 </pre>
 
 <details><summary>math · #266 of 427 · 5.8% of its score</summary>
@@ -31,20 +31,20 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #126 of 147 · 90% of its score</summary>
+<details><summary>vision &amp; documents · #133 of 154 · 90% of its score</summary>
 
 Beats [Nova Pro](nova-pro.md), [Nova Lite](nova-lite.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 
 <pre>
 test                                 result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>         62.4%  ▄█▄●▄·██·▄·█ beats 4/12    easy · avg 69%          27%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1024.8  ▁▁▂▂●▂▄▅▅▆██ beats 16/145  avg 1058                16%  blunt
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>         62.4%  ▄█▄●▄·██·▄·█ beats 4/12    easy · avg 69%          28%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1024.8  ▁▁▂▂●▂▃▄▄▅█▇ beats 16/152  avg 1061                15%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>         33.4%  ▂▂▂●▃▂·▂▂··▂ beats 7/13    hard · avg 34%          13%  at its level
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -5.446             9.3%  typical
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (lab)</a>                      51.2%  ▁····▁▁▄●▇▆▆ beats 11/52   medium · avg 56%       6.2%  at its level · small run
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -4.932             9.4%  typical
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (lab)</a>                      51.2%  ▁····▁▁▄●▇▆▆ beats 11/52   medium · avg 56%       6.3%  at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (lab)</a>            59.4%  ▁··▁▄▄●█▅▆█▄ beats 15/47   medium · avg 65%       5.8%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>    43.5%  ▅▃█··●▃····▃ beats 7/9     hard · avg 42%         2.6%  blunt
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">HallusionBench (lab)</a>                  50.7%  ▃▁·●▃▃▄▅▄█▅▅ beats 4/32    medium · avg 55%       2.2%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">HallusionBench (lab)</a>                  50.7%  ▃▁·●▃▃▄▅▄█▅▅ beats 4/32    medium · avg 55%       2.3%  blunt · at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">DocVQA (lab)</a>                          92.9%  ▁··▃▁▁▁●█▇▄▅ beats 7/28    very easy · avg 93%    2.0%  blunt · maxed out · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">ChartQA (lab)</a>                         84.9%  ▁··▁▁▁▁▁▂▅●█ beats 24/44   easy · avg 82%         2.0%  blunt · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">RealWorldQA (lab)</a>                     68.3%  ▂▃▂█●██▆█▂▆▆ beats 9/38    easy · avg 71%         1.7%  blunt · at its level · small run
@@ -60,7 +60,7 @@ test                                 result  vs the others in its run   difficul
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (with subtitles) (lab)</a>     57.1%  ▁●▁▁▁·▁▃▁▁▁█ beats 1/16   medium · avg 66%    4.1%  at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (without subtitles) (la…</a>   54.8%  ▁●▁▃▁·█▄▄▅·▇ beats 1/27   medium · avg 63%    3.1%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (without subtitles) (la…</a>   54.8%  ▁●▁▃▁·█▄▄▅·▇ beats 1/27   medium · avg 63%    3.2%  blunt · at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MVBench (lab)</a>                        67.5%  ▁··▃▄▁●▄▄▄█▄ beats 7/26   medium · avg 67%    1.6%  blunt · at its level · small run
 </pre>
 
@@ -74,11 +74,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   40% ▇▇▇▇▇
 <a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OpenGVLab InternVL2 model cards (lab)</a>          12   32% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    9% ▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.0
+weighted average                                   = 47.9
 </pre>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · OpenGVLab InternVL2 model cards ([MIT](https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

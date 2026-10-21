@@ -6,7 +6,7 @@
 
 EleutherAI · released 2022-02 · 20.55B params · apache-2.0
 
-**score 27.9** ±0.8 · #670 of 725 · from 32 benchmark results across 7 sources
+**score 27.9** ±0.8 · #674 of 729 · from 32 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                            71.4%  ▃···▁▇▅●▇▃▁▁ beats 14/26   very easy · avg 91%    7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                             68.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 15/26   easy · avg 85%         5.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                                69.5%  ▂▃▂▅▆▂●▆█▂▂▂ beats 12/26   easy · avg 88%         5.0%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 49%         4.9%  too hard for it · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 49%         4.8%  too hard for it · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 97%    4.5%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                                 77.4%  ▁·▁··▁▁▃█●█▂ beats 16/26   easy · avg 87%         3.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                       25.9%  █···█·██●··█ beats 4/5     easy · avg 67%         3.2%  at its level

@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 2.26B params · mit
 
-**score 56.7** ±3.9 · #59 of 162 · from 5 benchmark results across 2 sources
+**score 56.7** ±3.9 · #58 of 163 · from 5 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -24,8 +24,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.0%  ▁▁▁▃··▁▁▂█●▆ beats 60/86   avg 8.2%       51%  blunt
 <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting error ra…</a>    6.7%  ▄···▄·····▄● beats 3/4     avg 19%        17%  sharp · noisy · small run
-<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (lab)</a>      4.2%  ▁▁▁▂▅▃▅●█▂▂▁ beats 33/54   avg 5.3%       15%  small run
-<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (lab)</a>      2.0%  ▁·▁·▁▁▁▁▃▇●▆ beats 56/100  avg 2.2%      5.5%  blunt · small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (lab)</a>      4.2%  ▁···▁▁▁▆▆●▆▁ beats 35/56   avg 5.3%       16%  small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (lab)</a>      2.0%  ▁·▁·▁▁▁▁▃▇●▆ beats 58/102  avg 2.2%      5.5%  blunt · small run
 <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (lab)</a>         5.8%  ▁··▁▁▁▁▂●█▂▁ beats 22/64   avg 6.4%      4.9%  blunt · small run
 </pre>
 

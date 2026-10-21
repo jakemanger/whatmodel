@@ -6,7 +6,7 @@
 
 Speechmatics · released 2023-03 · proprietary
 
-**score 59.7** ±2.0 · #35 of 162 · from 8 benchmark results across 4 sources
+**score 59.7** ±2.0 · #35 of 163 · from 8 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 task                    vs the others       rank  counts  tests
 long-form transcripti…  ▁▁▄▁·▁▂█▄▁●▁   #2 of 27*     13%      1
-multilingual transcri…  ▂··▃▄█▆▅●▂·▂   #8 of 36*     44%      1
+multilingual transcri…  ▂··▃▄█▆▅●▂·▂   #8 of 36*     45%      1
 </pre>
 
 <details><summary>long-form transcription · #2 of 27 · 13% of its score</summary>
@@ -31,13 +31,13 @@ test                            result  vs the others in its run  difficulty  co
 
 </details>
 
-<details><summary>multilingual transcription · #8 of 36 · 44% of its score</summary>
+<details><summary>multilingual transcription · #8 of 36 · 45% of its score</summary>
 
 Beats [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md), [Nova-3](deepgram-nova-3.md), [Qwen3-ASR-1.7B](qwen3-asr-1-7b.md) here, though they rank higher overall. Trails [SeamlessM4T v2 Large](seamless-m4t-v2-large.md), [Whisper large-v3](whisper-large-v3.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>    4.3%  ▂··▂▃▂█▃●▂▁▁ beats 25/29  avg 8.9%       44%  typical
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>    4.3%  ▂··▂▃▂█▃●▂▁▁ beats 25/29  avg 8.9%       45%  typical
 </pre>
 
 </details>
@@ -49,9 +49,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.9%  ▁▁▁▃··▁▁▂█●▆ beats 62/86  avg 8.2%       13%  blunt
 <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    9.0%  █▃●▅▃···▃··▃ beats 4/9    avg 15%        10%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    2.2%  ▃·····▃●█▃▅▅ beats 3/11   avg 3.4%      7.8%  typical
-<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    3.0%  ▂·····▄▂●▂▂▄ beats 6/11   avg 4.6%      3.7%  typical
-<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   12.3%  ▃·▃▅··▃●▅▅█▃ beats 5/13   avg 16%       3.4%  blunt
-<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   19.5%  ▃·▅·▅▃●·▃▃▃█ beats 6/12   avg 24%       2.4%  blunt
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    3.0%  ▂·····▄▂●▂▂▄ beats 6/11   avg 4.6%      3.6%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   12.3%  ▃·▃▅··▃●▅▅█▃ beats 5/13   avg 16%       3.3%  blunt
+<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   19.5%  ▃·▅·▅▃●·▃▃▃█ beats 6/12   avg 24%       2.3%  blunt
 </pre>
 
 </details>

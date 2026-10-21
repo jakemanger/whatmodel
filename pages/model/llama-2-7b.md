@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 31.9** ±0.5 · #645 of 725 · from 73 benchmark results across 12 sources
+**score 31.8** ±0.5 · #649 of 729 · from 73 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #450 of 460     12%      3
+coding  ▁▁●▃▆▇█▇▅▄▃▁   #456 of 466     12%      3
 math    ▁▁▃●█▆▄█▄▁▁▁   #374 of 427    8.5%      2
 </pre>
 
-<details><summary>coding · #450 of 460 · 12% of its score</summary>
+<details><summary>coding · #456 of 466 · 12% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [GPT-J 6B](gpt-j-6b.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
@@ -53,13 +53,13 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                           69.6%  ▁····▁··▁▂█● beats 22/26   easy · avg 86%         8.9%  at its level · several runs
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.8%  ▁▁●▃▄█▄▁█··▁ beats 3/25    easy · avg 82%         6.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">HellaSwag</a>                            75.9%  ▃···▁▇▅█●▃▁▁ beats 19/26   very easy · avg 91%    6.0%  at its level · several runs
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       39.3%  ▁·····●█▂▅·▁ beats 2/25    medium · avg 64%       4.7%  sharp · several runs
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       39.3%  ▁·····●█▂▅·▁ beats 2/25    medium · avg 64%       4.8%  sharp · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">BoolQ</a>                                77.7%  ▂▃▂▅▆▂▅▆█●▂▂ beats 24/26   easy · avg 88%         4.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Easy</a>                             74.5%  ▁▁·▁▁▄▅▄█▅●▃ beats 24/26   easy · avg 85%         4.1%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2024-02-11%2021%3A35%3A55.239271.json">Natural Questions (closed book)</a>      27.1%  ▁·▁·▁▂▁▂·▅▂● beats 23/28   medium · avg 48%       3.7%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">OpenBookQA</a>                           31.4%  █·▁▁▃·▁▃▅●▃▄ beats 19/26   easy · avg 81%         3.7%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                                 77.7%  ▁·▁··▁▁▃█●█▂ beats 17/26   easy · avg 87%         2.8%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-22%2004%3A21%3A19.624624.json">TriviaQA</a>                              9.2%  ▁··▁●▃▃▁▄▅▄█ beats 4/28    easy · avg 82%         2.4%  at its level · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-hf/results_2023-12-22%2004%3A21%3A19.624624.json">TriviaQA</a>                              9.2%  ▁··▁●▃▃▁▄▅▄█ beats 4/28    easy · avg 83%         2.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                                 93.6%  ▁·▁·▁·▃▅▃●▄▁ beats 17/26   very easy · avg 97%    1.9%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                           43.5%  ▁···▁▃█●▁▁·▁ beats 21/26   medium · avg 60%       1.3%  blunt · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.4%  ▁····▁▁·▁·▃● beats 7/11    hard · avg 63%         1.0%  typical
@@ -96,7 +96,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 31.9
+weighted average                                   = 31.8
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 24.9** ±3.0 · #680 of 725 · from 5 benchmark results across 2 sources
+**score 24.9** ±3.0 · #684 of 729 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                     63.2%  ▁▁▁▁▂▁▁▅●█▃▁ beats 50/131  easy · avg 85%          37%  small run
+<a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                     63.2%  ▁▁▁▁▂▁▁▅●█▃▁ beats 50/131  easy · avg 86%          37%  small run
 <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                      63.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 50/135  very easy · avg 89%     27%  at its level · small run
 <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), last-wo…</a>   65.4%  ▁·····▁▁▃▃●█ beats 39/86   very easy · avg 87%     12%  blunt · at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 3/276   medium · avg 72%        11%  noisy

@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · closed weights
 
-**score 68.5** ±1.9 · #4 of 118 · from 14 benchmark results across 7 sources
+**score 68.5** ±1.9 · #4 of 119 · from 14 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 task           vs the others        rank  counts  tests
-voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #23 of 37*    5.2%      1
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #23 of 37*    5.3%      1
 </pre>
 
-<details><summary>voice cloning · #23 of 37 · 5.2% of its score</summary>
+<details><summary>voice cloning · #23 of 37 · 5.3% of its score</summary>
 
 Trails [E2 TTS Base (F5-TTS reproduction)](e2-tts-base.md), [DMOSpeech 2](dmospeech-2.md), [Qwen3-TTS 12Hz 0.6B Base](qwen3-tts-12hz-0-6b-base.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark · 7 Ghanaian…</a>   20.0%  ●··········▄ beats 0/2    avg 46%       5.2%  small run
+<a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark · 7 Ghanaian…</a>   20.0%  ●··········▄ beats 0/2    avg 46%       5.3%  small run
 </pre>
 
 </details>
@@ -35,16 +35,16 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      2.6%  ▄·····█··▄●█ beats 5/7    avg 8.3%                  15%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      4.0%  ▄·····▄█●█·▄ beats 4/7    avg 12%                   13%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  3.51 / 5  █··▄█▄····▄● beats 7/7    hard · avg 2.00 / 5       13%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.55 / 5  ▃▃█···▃···●▃ beats 6/7    medium · avg 2.52 / 5     11%  at its level
-<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-item C…</a>     79.8%  █···█······● beats 2/2    medium · avg 48%         7.4%  small run
-<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · English CER …</a>      0.8%  █······█···● beats 2/2    avg 3.6%                 7.2%  small run
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Role-F…</a>  3.97 / 5  ▄·····█····● beats 3/3    medium · avg 2.58 / 5    6.8%  at its level
-<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utteranc…</a>      3.3%  █······█···● beats 2/2    avg 12%                  6.6%  small run
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      4.0%  ▄·····▄█●█·▄ beats 4/7    avg 11%                   13%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  3.51 / 5  █··▄█▄····▄● beats 7/7    hard · avg 2.00 / 5       12%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.55 / 5  ▃▃█···▃···●▃ beats 6/7    medium · avg 2.53 / 5     11%  at its level
+<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-item C…</a>     79.8%  █···█······● beats 2/2    medium · avg 48%         7.5%  small run
+<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · English CER …</a>      0.8%  █······█···● beats 2/2    avg 3.6%                 7.3%  small run
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Role-F…</a>  3.97 / 5  ▄·····█····● beats 3/3    medium · avg 2.58 / 5    6.9%  at its level
+<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utteranc…</a>      3.3%  █······█···● beats 2/2    avg 12%                  6.7%  small run
 <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English TTS…</a>     87.6%  █··██●·····█ beats 3/4    easy · avg 79%           4.4%  typical
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability (hu…</a>  3.82 / 5  █·▄······●·▄ beats 3/4    medium · avg 3.01 / 5    4.3%  at its level
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.64 / 5  ███···█····● beats 4/4    medium · avg 2.87 / 5    2.8%  blunt · at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.64 / 5  ███···█····● beats 4/4    medium · avg 2.88 / 5    2.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>    1147.5  ▂▂··▃·█▅···● beats 12/12  avg 1018                 2.3%  blunt
 <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (Chir…</a>      2.9%  ▄·····▄·▄·█● beats 6/6    avg 8.7%                 0.0%  blunt · noisy
 </pre>

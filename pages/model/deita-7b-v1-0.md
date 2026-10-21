@@ -6,7 +6,7 @@
 
 HKUST NLP · released 2023-12 · 7.24B params · apache-2.0
 
-**score 41.9** ±1.8 · #530 of 725 · from 3 benchmark results across 2 sources
+**score 41.9** ±1.8 · #532 of 729 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #329 of 395*     91%      2
+chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #332 of 398*     91%      2
 </pre>
 
-<details><summary>chat &amp; writing · #329 of 395 · 91% of its score</summary>
+<details><summary>chat &amp; writing · #332 of 398 · 91% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

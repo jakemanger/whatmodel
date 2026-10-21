@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2024-09 · 0.4B params · apache-2.0
 
-**score 47.7** ±2.6 · #72 of 118 · from 9 benchmark results across 3 sources
+**score 47.8** ±2.6 · #73 of 119 · from 9 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,10 +23,10 @@ voice cloning  ▁·▁▁▁●▁▁▇█▃▃   #32 of 37     64%      5
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>     46.0%  ●·▂▂▂█▆▃▅··▂ beats 0/30   medium · avg 53%          19%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>     46.0%  ●·▂▂▂█▆▃▅··▂ beats 0/30   medium · avg 53%          20%  at its level
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>     63.0%  ●·▂··▂·█▄·▃▄ beats 0/25   medium · avg 62%          18%  at its level
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  2.36 / 5  ●········█·▄ beats 0/3    medium · avg 2.47 / 5     15%  at its level
-<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>      3.8%  ▁···●▂▂▂█▆▄▂ beats 1/35   avg 3.6%                 7.2%  blunt
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  2.36 / 5  ●········█·▄ beats 0/3    medium · avg 2.46 / 5     15%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>      3.8%  ▁···●▂▂▂█▆▄▂ beats 1/35   avg 3.6%                 7.1%  blunt
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER</a>       1.5%  ▁·▂▁▁▁●▃▅█·▂ beats 8/30   avg 2.1%                 4.0%  blunt
 </pre>
 
@@ -37,8 +37,8 @@ test                                  result  vs the others in its run  difficul
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     47.0%  ●·········█▄ beats 0/3    medium · avg 52%        21%  at its level
-<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.7%  █·····█·●··█ beats 2/3    avg 4.1%               8.8%  typical
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.42 / 5  ▄●█·▄▄▄▄▄·▄█ beats 1/11   easy · avg 4.20 / 5    1.8%  blunt
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.7%  █·····█·●··█ beats 2/3    avg 4.2%               8.8%  typical
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.42 / 5  ▄●█·▄▄▄▄▄·▄█ beats 1/11   easy · avg 4.20 / 5    1.7%  blunt
 <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.61 / 5  █··●▄██▄·▄▄▄ beats 2/11   easy · avg 3.99 / 5    1.7%  blunt · at its level
 </pre>
 
@@ -52,9 +52,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   79% ▇▇▇▇▇▇▇▇▇
 <a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        1   15% ▇▇
-<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2    4% ▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2    3% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 47.7
+weighted average                                   = 47.8
 </pre>
 
 <sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>

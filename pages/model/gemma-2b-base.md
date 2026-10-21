@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 31.0** ±0.6 · #649 of 725 · from 37 benchmark results across 9 sources
+**score 30.9** ±0.6 · #653 of 729 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #438 of 460     67%      7
+coding  ▁▁▁●▆▇█▇▅▄▃▁    #444 of 466     67%      7
 math    ▁▁▃▅●▆▄█▄▁▁▁   #330 of 427*    3.9%      2
 </pre>
 
-<details><summary>coding · #438 of 460 · 67% of its score</summary>
+<details><summary>coding · #444 of 466 · 67% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -29,9 +29,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            25.0%  ▁·▁▁●▄▆▅█▃▁▁ beats 9/99   easy · avg 76%       37%  sharp · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           20.7%  ▁·▁▁▁●▄▄▄█▃▁ beats 8/99   easy · avg 70%       14%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   17.2%  ▁·●▁▂▆▅█▄▄▁▂ beats 1/35   medium · avg 61%    4.6%  typical
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                34.1%  ▁···▁●▂▅▇█▆▂ beats 2/75   easy · avg 66%      4.0%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                34.1%  ▁···▁●▂▅▇█▆▂ beats 2/75   easy · avg 66%      4.1%  at its level
 <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           29.2%  ▁▁●▄▅█▆▅▄▁▂▁ beats 7/86   easy · avg 71%      3.3%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 1/35   medium · avg 45%    2.1%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 1/35   medium · avg 46%    2.1%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    1.9%  ●·▁▁▄██▄█▁▅▅ beats 0/35   medium · avg 51%    1.5%  sharp
 </pre>
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>                 35.2%  ▁▁▁▁▂●▅▆█▃▃▁ beats 24/155  easy · avg 79%         2.0%  sharp · small run
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-2b/results_2024-05-18%2022%3A12%3A37.308839.json">MedQA (USMLE, 4 options)</a>             29.2%  ▁▁··▄●▁··▄▃█ beats 5/17    medium · avg 71%       1.9%  sharp
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>                  42.1%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 59/140  easy · avg 78%         1.8%  sharp · small run
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/google/gemma-2b/results_2024-03-17%2019%3A52%3A39.397717.json">TriviaQA</a>                             47.8%  ▁··▁█▃▃▁▄●▄█ beats 19/28   easy · avg 80%         1.4%  at its level · small run · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/google/gemma-2b/results_2024-03-17%2019%3A52%3A39.397717.json">TriviaQA</a>                             47.8%  ▁··▁█▃▃▁▄●▄█ beats 19/28   easy · avg 81%         1.4%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                           42.3%  ▁▁▁▁▁▂●▅██▆▄ beats 33/214  easy · avg 81%         1.4%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                     47.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 62/107  medium · avg 68%       1.1%  small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                     65.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 62/131  easy · avg 84%         1.0%  at its level · small run
@@ -95,7 +95,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 31.0
+weighted average                                   = 30.9
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Gemma report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

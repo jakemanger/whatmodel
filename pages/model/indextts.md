@@ -6,7 +6,7 @@
 
 IndexTeam (bilibili) · released 2025-03 · bilibili-model-use-license
 
-**score 62.2** ±3.2 · #31 of 118 · from 6 benchmark results across 1 source
+**score 62.3** ±3.2 · #31 of 119 · from 6 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [VoxCPM 0
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker simila…</a>     61.0%  ▁·▂●▂█▆▃▅··▂ beats 4/30   medium · avg 53%          21%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.98 / 5  ▄█▄··▄···▄·● beats 6/6    medium · avg 2.52 / 5     11%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.98 / 5  ▄█▄··▄···▄·● beats 6/6    medium · avg 2.51 / 5     11%  at its level · small run
 <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper large-…</a>      1.9%  ▁···▂▂▂▂●▆▄▂ beats 15/35  avg 3.6%                  10%  blunt · small run
 </pre>
 
@@ -37,8 +37,8 @@ test                                  result  vs the others in its run  difficul
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>     62.0%  ▄······●·█▄▄ beats 1/5    medium · avg 52%          24%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  4.35 / 5  █···█······● beats 2/2    medium · avg 3.15 / 5     15%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>      2.6%  █····██●█··█ beats 3/5    avg 4.1%                  15%  small run
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  4.35 / 5  █···█······● beats 2/2    medium · avg 3.13 / 5     15%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>      2.6%  █····██●█··█ beats 3/5    avg 4.2%                  15%  small run
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        6   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 62.2
+weighted average                                   = 62.3
 </pre>
 
 <sub>Licences: DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt))</sub>

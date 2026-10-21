@@ -6,7 +6,7 @@
 
 HKUST Audio · released 2025-01 · 8.57B params · cc-by-nc-4.0
 
-**score 51.5** ±2.6 · #62 of 118 · from 6 benchmark results across 2 sources
+**score 51.7** ±2.6 · #62 of 119 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                                    results  share of the score
 <a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   53% ▇▇▇▇▇▇
 <a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        2   44% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 51.5
+weighted average                                   = 51.7
 </pre>
 
 <sub>Licences: DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt))</sub>

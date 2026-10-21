@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄▄█●▁▂▁▁   #19 of 126*     64%      1
-image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #16 of 62*     24%      1
+image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #16 of 62*     24%      1
 </pre>
 
 <details><summary>text to image · #19 of 126 · 64% of its score</summary>
@@ -37,7 +37,7 @@ Beats [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md),
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1334.2  ▂▁▁▂▆▇█●▆▅▁▂ beats 36/53  avg 1153       24%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1333.7  ▂▁▁▃▆█▄●▄█▁▂ beats 36/53  avg 1153       24%  typical
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   846.1  ▁●▁▄▂█▂▁▁▂▁▁ beats 1/34   avg 875        10%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   846.1  ▁●▁▄▂█▂▁▁▂▁▁ beats 1/34   avg 874        10%  typical
 </pre>
 
 </details>

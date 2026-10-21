@@ -22,7 +22,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    1.1%  ▃·▃▅·▅▅·▃●██ beats 9/16   avg 4.8%       96%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    1.1%  ▃·▃▅·▅▅·▃●██ beats 9/16   avg 4.7%       96%  typical
 </pre>
 
 </details>

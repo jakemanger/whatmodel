@@ -6,7 +6,7 @@
 
 Google · released 2022-06 · 540.35B params · proprietary
 
-**score 47.7** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 47.6** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          58.8%  ▃····▃··▃··● beats 5/5    easy · avg 65%     46%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          58.8%  ▃····▃··▃··● beats 5/5    easy · avg 66%     46%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   33.6%  ▄··▄··▄·▄··● beats 5/5    hard · avg 32%    6.3%  at its level
 </pre>
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="paper-2206.14858v2"></a><a href="https://arxiv.org/html/2206.14858v2">Solving Quantitative Reasoning Problems…</a>        4   56% ▇▇▇▇▇▇▇
 <a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>        3   43% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 47.7
+weighted average                                   = 47.6
 </pre>
 
 <sub>Licences: Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.162B params · apache-2.0
 
-**score -2.1** ±1.7 · #719 of 725 · from 13 benchmark results across 4 sources
+**score -2.1** ±1.7 · #723 of 729 · from 13 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -34,7 +34,7 @@ test             result  vs the others in its run  difficulty        counts  why
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     58.4%  █··▁▃·▁··▁·● beats 11/12  easy · avg 87%          25%  at its level · several runs
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   55.2%  ██···██···●█ beats 4/5    easy · avg 74%         6.0%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            57.1%  ▅●······▃▃·▅ beats 4/8    easy · avg 85%         5.9%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            57.1%  ▅●······▃▃·▅ beats 4/8    easy · avg 86%         5.9%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">LAMBADA (OpenAI version), last-wo…</a>   67.8%  ▁·····▁▁▃▃●█ beats 46/86  very easy · avg 85%    2.5%  blunt · at its level · small run
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           88.0%  ▃··█▅▃▃▅·▃●▃ beats 11/12  easy · avg 91%         2.0%  at its level · noisy
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>               95.7%  █·▂··▃··▂▂▂● beats 12/12  easy · avg 88%         0.5%  blunt · at its level · noisy

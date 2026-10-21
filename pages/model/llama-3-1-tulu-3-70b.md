@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.6B params · llama3.1
 
-**score 55.0** ±1.4 · #280 of 725 · from 10 benchmark results across 2 sources
+**score 54.9** ±1.4 · #283 of 729 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #239 of 395     37%      3
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃    #242 of 398     36%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁   #265 of 427*     26%      2
 </pre>
 
-<details><summary>chat &amp; writing · #239 of 395 · 37% of its score</summary>
+<details><summary>chat &amp; writing · #242 of 398 · 36% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.1  ▁▁▁▂▃▃●▆▆▇█▃ beats 113/379  avg 1258             22%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.2  ▁▁▁▂▃▃●▆▆▇█▃ beats 113/382  avg 1259             22%  blunt
 <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.8%  ▁▁▃▄▆██●▃▃▁▁ beats 128/155  medium · avg 43%     10%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (lab)</a>      83.2%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 18/25    easy · avg 78%      5.1%  small run
 </pre>
@@ -49,7 +49,7 @@ test                             result  vs the others in its run    difficulty 
 
 <pre>
 test                  result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   85.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 145/155  easy · avg 74%       16%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   85.0%  ▁▁▁▁▂▄▅▆█▃●▁ beats 145/155  easy · avg 75%       16%  sharp · small run
 <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>             83.1%  ▁▁▁▁▁▂▂▅██●▄ beats 178/214  easy · avg 77%       13%  small run
 <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>            46.5%  ▁▂▁▃▃█▂█▆▅▁● beats 38/40    hard · avg 34%      5.1%  at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.3%  ▃▅█▅·▃·▆●▂▁▃ beats 38/44    medium · avg 61%    1.9%  blunt · at its level · small run
@@ -65,9 +65,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   77% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.0
+weighted average                                   = 54.9
 </pre>
 
 <sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2026-01 · 52B params (12B active) · apache-2.0
 
-**score 51.6** ±14.9 · #426 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.6** ±14.9 · #430 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

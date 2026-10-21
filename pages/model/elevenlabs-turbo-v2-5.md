@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2024-07 · proprietary
 
-**score 63.5** ±4.3 · #23 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.4** ±4.3 · #23 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>  1234.2  ▃·▃▃▃·▃█●▃·▃ beats 10/12  avg 1080       93%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>  1234.2  ▃·▃▃▃·▃█●▃·▃ beats 10/12  avg 1082       92%  typical
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        7% ▇
-weighted average                                   = 63.5
+<a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 63.4
 </pre>
 
 <sub>Licences: The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>

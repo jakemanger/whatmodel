@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
-**score 50.2** ±1.0 · #364 of 725 · from 14 benchmark results across 2 sources
+**score 50.1** ±1.0 · #368 of 729 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others          rank  counts  tests
 math                ▁▁▃▅█●▄█▄▁▁▁   #246 of 427*     11%      1
-vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄    #119 of 147    100%     14
+vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄    #126 of 154    100%     14
 </pre>
 
 <details><summary>math · #246 of 427 · 11% of its score</summary>
@@ -31,7 +31,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #119 of 147 · 100% of its score</summary>
+<details><summary>vision &amp; documents · #126 of 154 · 100% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 
@@ -41,11 +41,11 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2502.13923v1">CharXiv descriptive questions (la…</a>   73.9%  ▄··▂●▂·▂▄▄▂█ beats 3/14   easy · avg 74%          16%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                     58.6%  ▂···▆●▂▂▄▄▄█ beats 4/16   medium · avg 61%        15%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>           68.2%  ▃··▃▅·●█▅▅▅█ beats 4/16   medium · avg 68%        11%  at its level
-<a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                         63.9%  ▂··▄▂●·▄█▂▄▆ beats 4/16   medium · avg 64%        10%  at its level
-<a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                       38.3%  ▃·●·▅▃▃▃▅▅▃█ beats 3/16   medium · avg 45%       7.9%  at its level
+<a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                         63.9%  ▂··▄▂●·▄█▂▄▆ beats 4/16   medium · avg 65%        10%  at its level
+<a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                       38.3%  ▃·●·▅▃▃▃▅▅▃█ beats 3/16   medium · avg 46%       7.8%  at its level
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   23.3%  ▁·▁·●▃▁▇▃█·▄ beats 3/22   hard · avg 26%         4.3%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                 52.9%  ▃·▃·▅●▅▅▃▅█▅ beats 4/16   medium · avg 54%       4.1%  blunt · at its level
-<a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                        87.3%  ▂··▂·▂▃·●▂▆█ beats 7/17   easy · avg 84%         3.5%  blunt
+<a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                        87.3%  ▂··▂·▂▃·●▂▆█ beats 7/17   easy · avg 85%         3.5%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                         95.7%  ▃··▅▃▅▃█●█▅▅ beats 10/17  very easy · avg 94%    3.2%  blunt · maxed out
 <a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                    68.5%  ▅▃·●▅▅·█·▃▅█ beats 3/16   easy · avg 70%         3.0%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                         77.8%  ▃··▃▅·▅●·█▅▃ beats 7/13   easy · avg 74%         2.0%  blunt · at its level
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1">Qwen (lab)</a>                                     13   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 50.2
+weighted average                                   = 50.1
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

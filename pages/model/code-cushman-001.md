@@ -6,7 +6,7 @@
 
 OpenAI · released 2021-08 · proprietary
 
-**score 34.7** ±5.0 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.7** ±4.9 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.acl-long.9.pdf">ARCADE New Tasks pass@1 (notebook…</a>    8.9%  █·●········█ beats 1/2    hard · avg 23%       47%  small run
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      31.9%  ●▄········▄█ beats 0/4    medium · avg 57%     42%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      31.9%  ●▄········▄█ beats 0/4    medium · avg 58%     42%  blunt · at its level
 </pre>
 
 </details>

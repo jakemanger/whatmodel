@@ -6,7 +6,7 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 65.2** ±1.5 · #14 of 118 · from 16 benchmark results across 3 sources
+**score 65.3** ±1.6 · #14 of 119 · from 16 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -39,13 +39,13 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                 11.7%  ●····█·█████ beats 0/6    avg 26%                   21%  sharp · several runs
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                 11.7%  ●····█·█████ beats 0/6    avg 27%                   21%  sharp · several runs
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>                 11.8%  ●▄▄···▄··▄·█ beats 0/6    avg 23%                   15%  several runs
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.72 / 5  ●·▄·▄▄·▄···▄ beats 0/6    medium · avg 2.98 / 5     10%  at its level
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>     10.6%  ●···▄··▄··██ beats 0/6    avg 20%                  8.2%  typical
-<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot English) ·…</a>      4.5%  ▁·······▁▃█● beats 10/14  avg 16%                  8.0%  small run
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     76.0%  ▄·····▄▄·▄▄● beats 5/6    medium · avg 49%         4.4%  at its level
-<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>     60.0%  ▃·····▂▂▂▃█● beats 14/15  medium · avg 46%         3.3%  blunt · at its level
+<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot English) ·…</a>      4.5%  ▁·······▁▃█● beats 10/14  avg 16%                  8.1%  small run
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>     10.6%  ●···▄··▄··██ beats 0/6    avg 20%                  8.0%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     76.0%  ▄·····▄▄·▄▄● beats 5/6    medium · avg 49%         4.5%  at its level
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>     60.0%  ▃·····▂▂▂▃█● beats 14/15  medium · avg 46%         3.2%  blunt · at its level
 <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>      6.0%  ▂▂▂··▂·▃▃●█▂ beats 8/15   avg 8.6%                 0.0%  blunt · noisy
 </pre>
 
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (lab)</a>                 7   40% ▇▇▇▇▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.2
+weighted average                                   = 65.3
 </pre>
 
 <sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · dots.tts Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>

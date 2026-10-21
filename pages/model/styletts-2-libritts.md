@@ -6,7 +6,7 @@
 
 Yinghao Aaron Li et al. (Columbia University) · released 2023-11 · styletts2-pretrained-model-terms
 
-**score 30.3** ±2.1 · #104 of 118 · from 16 benchmark results across 8 sources
+**score 30.0** ±2.1 · #105 of 119 · from 16 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -36,14 +36,14 @@ test                                result  vs the others in its run  difficulty
 test                                  result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.93 / 5  ▅·█▅●·█▃▃▅·▅ beats 8/17   easy · avg 4.03 / 5          33%  at its level
 <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>      2.5%  █···█··█···● beats 3/3    avg 0.7%                    8.4%  typical
-<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  4.23 / 5  █·█········● beats 2/2    very easy · avg 4.64 / 5    7.2%  at its level · small run
-<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>     37.5%  ●··········█ beats 0/3    easy · avg 72%              6.1%  at its level
-<a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation · English zero-…</a>     47.3%  ●····▄·····▄ beats 1/3    easy · avg 80%              5.8%  at its level
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  4.23 / 5  █·█········● beats 2/2    very easy · avg 4.64 / 5    7.1%  at its level · small run
+<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>     37.5%  ●··········█ beats 0/3    easy · avg 73%              6.2%  at its level
+<a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation · English zero-…</a>     47.3%  ●····▄·····▄ beats 1/3    easy · avg 81%              6.0%  at its level
 <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>     23.0%  ●·····▂▂▂▃█▆ beats 0/15   medium · avg 46%            5.1%  blunt · at its level
-<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · HuBE…</a>      1.6%  ██·········● beats 2/2    avg 0.6%                    4.9%  noisy · small run
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · HuBE…</a>      1.6%  ██·········● beats 2/2    avg 0.6%                    4.8%  noisy · small run
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>     863.1  █▄●····▄··▄▄ beats 4/7    avg 995                     4.8%  typical
-<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  3.42 / 5  ●··█·······█ beats 0/2    very easy · avg 4.55 / 5    3.6%  at its level · small run
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.01 / 5  ▅··▃▅··▅●▅██ beats 9/17   medium · avg 3.30 / 5       2.8%  blunt · at its level
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  3.42 / 5  ●··█·······█ beats 0/2    very easy · avg 4.56 / 5    3.7%  at its level · small run
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.01 / 5  ▅··▃▅··▅●▅██ beats 9/17   medium · avg 3.29 / 5       2.7%  blunt · at its level
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     84.7%  ▂▂█·●·█▆▂·▄▂ beats 6/17   very easy · avg 89%         2.2%  blunt
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TTSDS …</a>     83.0%  ▄····●▄▄▄▄·█ beats 1/7    very easy · avg 86%         1.0%  blunt
 <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     88.0%  ▂▂····▃·▃▅▂● beats 14/14  very easy · avg 86%         0.4%  blunt
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   36% ▇▇▇▇
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   35% ▇▇▇▇
 <a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation</a>                               2   19% ▇▇
 <a name="speech-stylettszs-report-bysa"></a><a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS: Efficient High-Quality Zer…</a>        3   16% ▇▇
 <a name="speech-ditto-tts-report-ccby"></a><a href="https://arxiv.org/html/2406.11427v2">DiTTo-TTS: Diffusion Transformers for S…</a>        2   15% ▇▇
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           1    2% ▇
 <a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                      1    0% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 30.3
+weighted average                                   = 30.0
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion ([CC BY-SA 4.0](../../licenses/speech-stylettszs-report-bysa.txt)) · DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors ([CC BY 4.0](../../licenses/speech-ditto-tts-report-ccby.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>

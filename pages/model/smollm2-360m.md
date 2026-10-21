@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 21.9** ±2.7 · #690 of 725 · from 6 benchmark results across 2 sources
+**score 21.8** ±2.7 · #694 of 729 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #342 of 395*    9.4%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #345 of 398*    9.4%      1
 math            ●··········█       #2 of 2*     36%      1
 </pre>
 
-<details><summary>chat &amp; writing · #342 of 395 · 9.4% of its score</summary>
+<details><summary>chat &amp; writing · #345 of 398 · 9.4% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified) …</a>   41.0%  ▁●▃▁▂▄▄▆█▃▂▁ beats 2/141  easy · avg 75%    9.4%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified) …</a>   41.0%  ▁●▄▂▂▄▆█▇▄▂▁ beats 2/142  easy · avg 75%    9.4%  at its level · small run
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="card3-huggingfacetb-smollm2-360m-instruct"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HuggingFaceTB/SmolLM2-360M-Instruct mod…</a>        5   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    3% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 21.9
+weighted average                                   = 21.8
 </pre>
 
 <sub>Licences: HuggingFaceTB/SmolLM2-360M-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 3.3B params (0.8B active) · apache-2.0
 
-**score 37.0** ±1.6 · #603 of 725 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.9** ±1.6 · #607 of 729 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #318 of 395*    8.0%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #321 of 398*    8.0%      1
 math            ▁▁▃●█▆▄█▄▁▁▁   #359 of 427*     35%      1
 </pre>
 
-<details><summary>chat &amp; writing · #318 of 395 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #321 of 398 · 8.0% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   55.2%  ▁▁●▁▂▄▄▆█▃▂▁ beats 19/141  easy · avg 76%    8.0%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   55.2%  ▁▂●▂▂▄▆█▇▄▂▁ beats 19/142  easy · avg 76%    8.0%  at its level
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 
 <pre>
 test         result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   49.0%  ▂▂▂▂▃▄▅●██▆▄ beats 86/206  easy · avg 84%     35%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   49.0%  ▂▂▂▂▃▄▅●██▆▄ beats 86/206  easy · avg 85%     35%  sharp · at its level
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a><a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ibm-granite/granite-3.1-3b-a800m-instru…</a>        6   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 37.0
+weighted average                                   = 36.9
 </pre>
 
 <sub>Licences: ibm-granite/granite-3.1-3b-a800m-instruct model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md))</sub>

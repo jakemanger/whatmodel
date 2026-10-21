@@ -6,7 +6,7 @@
 
 Supertone · released 2026-05 · 0.099B params · openrail-m
 
-**score 55.0** ±9.7 · #52 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.9** ±9.7 · #52 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
 prior: pull toward the middle            38% ▇▇▇▇▇
-weighted average                        = 55.0
+weighted average                        = 54.9
 </pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>

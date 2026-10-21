@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2026-03 · 0.61B params · cc-by-nc-4.0
 
-**score 65.7** ±2.0 · #12 of 118 · from 15 benchmark results across 6 sources
+**score 65.8** ±2.0 · #12 of 119 · from 15 benchmark results across 6 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,10 +28,10 @@ test                                  result  vs the others in its run  difficul
 <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker simila…</a>     74.1%  ▁·▂▂▂█▆▃▅··● beats 29/30  medium · avg 53%          18%  at its level · several runs
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>      1.2%  ▄··▄▄····█●▄ beats 5/6    avg 3.7%                  13%  typical
 <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcriber…</a>      1.6%  ▃··········● beats 1/3    avg 4.2%                  10%  typical
-<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker simila…</a>     77.7%  ▁·▂··▂·█●·▃▄ beats 18/25  medium · avg 62%         8.4%  typical
+<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker simila…</a>     77.7%  ▁·▂··▂·█●·▃▄ beats 18/25  medium · avg 62%         8.5%  typical
 <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark · 7 Ghanaian…</a>     14.1%  █··········● beats 2/2    avg 46%                  5.9%  small run
 <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper large-…</a>      1.6%  ▁···▂▂▂▂█●▄▂ beats 26/35  avg 3.6%                 4.3%  blunt
-<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.63 / 5  █·····●█···█ beats 1/3    medium · avg 2.52 / 5    4.2%  at its level
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.63 / 5  █·····●█···█ beats 1/3    medium · avg 2.51 / 5    4.2%  at its level
 <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer CER…</a>      0.8%  ▁·▂▁▁▁▂▃▅●·▂ beats 27/30  avg 2.1%                 2.8%  blunt
 </pre>
 
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="nsanku-tts-benchmark-mit"></a><a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark</a>                            1    6% ▇
 <a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                                1    3% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 65.7
+weighted average                                   = 65.8
 </pre>
 
 <sub>Licences: OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech ([CC BY 4.0](../../licenses/speech-wayu-thai-tts-ccby.txt)) · nineninesix/gepard-1.0 model card ([Apache-2.0](https://opensource.org/licenses/Apache-2.0)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · nsanku TTS Benchmark ([MIT](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/README.md)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>

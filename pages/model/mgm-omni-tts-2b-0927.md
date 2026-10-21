@@ -6,7 +6,7 @@
 
 MGM-Omni (CUHK) · released 2025-09 · 2.15B params · apache-2.0
 
-**score 58.7** ±4.3 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 58.8** ±4.4 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">UltraEval-Audio</a>                                 2   66% ▇▇▇▇▇▇▇▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   27% ▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 58.7
+weighted average                                   = 58.8
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>

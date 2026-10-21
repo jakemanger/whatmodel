@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 24.6** ±0.7 · #683 of 725 · from 44 benchmark results across 12 sources
+**score 24.6** ±0.7 · #686 of 729 · from 44 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others            rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁     #449 of 460*     25%      3
+coding  ▁▁●▃▆▇█▇▅▄▃▁     #455 of 466*     25%      3
 math                   not ranked yet       —      1
 </pre>
 
-<details><summary>coding · #449 of 460 · 25% of its score</summary>
+<details><summary>coding · #455 of 466 · 25% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Easy</a>                             62.2%  ▁▁·▁▁▄●▄█▅▁▃ beats 8/26    easy · avg 85%         3.8%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">SciQ</a>                                 91.5%  ▁·▁·▁·▃●▃█▄▁ beats 10/26   very easy · avg 97%    3.6%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">PIQA</a>                                 75.6%  ▁·▁··▁▁▃●▅█▂ beats 8/26    easy · avg 87%         3.4%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">BoolQ</a>                                65.4%  ▂▃▂▅●▂▅▆█▂▂▂ beats 8/26    easy · avg 88%         3.4%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">BoolQ</a>                                65.4%  ▂▃▂▅●▂▅▆█▂▂▂ beats 8/26    easy · avg 88%         3.3%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), last-wo…</a>   68.2%  ▁··▂▁▁▁▂●█▅▃ beats 11/26   very easy · avg 86%    3.3%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   49.8%  ▂·▄·▂█▄▄●▄▂▆ beats 12/21   easy · avg 74%         3.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">OpenBookQA</a>                           29.0%  █·▁▁▃·▁●▅▇▃▄ beats 12/26   hard · avg 49%         2.7%  too hard for it · several runs
@@ -64,7 +64,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   57.7%  ▂▂··▂·●···▂▂ beats 6/8     easy · avg 79%         0.9%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">Social IQA</a>                           41.1%  ▁···▁●█▁▁▁·▁ beats 6/26    hard · avg 56%         0.9%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted) (lab)</a>        35.5%  ▃······▃●··▃ beats 4/5     hard · avg 43%         0.7%  too hard for it
-<a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness) (lab)</a>          37.3%  ▄····▄●▄···▄ beats 3/5     medium · avg 56%       0.7%  blunt
+<a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness) (lab)</a>          37.3%  ▄····▄●▄···▄ beats 3/5     medium · avg 56%       0.6%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted) (lab)</a>        34.0%  ██·●██·····█ beats 2/5     very hard · avg 43%    0.6%  too hard for it · noisy
 <a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy) (…</a>   26.7%  ▃······●···▅ beats 2/5     very hard · avg 35%    0.6%  blunt · too hard for it
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.7%  ▃▁▁●▁▁▁▁▂█▅▁ beats 43/276  medium · avg 72%       0.5%  noisy

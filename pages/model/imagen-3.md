@@ -25,7 +25,7 @@ Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank lo
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.0  ▂▂▃●▇█▄▂▄▂·▂ beats 17/75  avg 1027             66%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.0  ▂▂▃●▇█▅▂▄▂·▂ beats 17/75  avg 1027             66%  typical
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              70.7%  ██·▄·●·█···▄ beats 5/8    easy · avg 71%       20%  at its level
 <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   47.4%  █··█●▄·▄▄·▄▄ beats 4/9    medium · avg 51%     12%  at its level
 </pre>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   66% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   66% ▇▇▇▇▇▇▇▇
 <a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   32% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 51.6

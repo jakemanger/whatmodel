@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 32.1** ±1.0 · #643 of 725 · from 11 benchmark results across 2 sources
+**score 32.1** ±1.0 · #646 of 729 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">BoolQ</a>                                71.7%  ▂▃▂▅▆▂▅●█▂▂▂ beats 16/26   easy · avg 88%         8.0%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">HellaSwag</a>                            85.0%  ▃···▁▇▅█▇▃●▁ beats 25/26   very easy · avg 91%    5.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">ARC Easy</a>                             64.5%  ▁▁·▁▁▄▅●█▅▁▃ beats 12/26   easy · avg 85%         5.3%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">OpenBookQA</a>                           35.6%  █·▁▁▃·▁▃▅▇▃● beats 25/26   hard · avg 48%         4.3%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">OpenBookQA</a>                           35.6%  █·▁▁▃·▁▃▅▇▃● beats 25/26   hard · avg 49%         4.3%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">SciQ</a>                                 90.7%  ▁·▁·▁·▃●▃█▄▁ beats 9/26    very easy · avg 97%    4.0%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">PIQA</a>                                 78.7%  ▁·▁··▁▁▃█▅●▂ beats 20/26   easy · avg 87%         3.9%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">Social IQA</a>                           47.0%  ▁···▁▃█▁▁●·▁ beats 24/26   hard · avg 56%         2.4%  blunt

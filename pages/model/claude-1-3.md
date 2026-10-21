@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▂▁   #412 of 529*     11%      1
+coding  ▁▁▁▂▅●█▇▅▄▃▁   #417 of 535*     11%      1
 math    ▁▁▃▆█●▅█▄▁▁▁    #253 of 526     30%      1
 </pre>
 
-<details><summary>coding · #412 of 529 · 11% of its score</summary>
+<details><summary>coding · #417 of 535 · 11% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -47,9 +47,9 @@ test   result  vs the others in its run    difficulty           counts  why
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (lab)</a>                  90.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 136/140  very easy · avg 90%     10%  sharp · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           77.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 158/214  easy · avg 80%          10%  at its level · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           77.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 158/214  easy · avg 81%          10%  at its level · small run
 <a href="https://arxiv.org/html/2305.17306v1">BIG-Bench Hard</a>                       67.3%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 106/155  medium · avg 69%       9.4%  sharp · at its level · small run
-<a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   37.1%  ▄······▄·●·▄ beats 3/4      medium · avg 38%       7.8%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   37.1%  ▄······▄·●·▄ beats 3/4      medium · avg 38%       7.7%  sharp · at its level
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       86.7%  ▁▁▂▂▄▄▃▆▅█▅● beats 79/80    easy · avg 85%         4.8%  small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    52.3%  ▂▂··▂·▂··▂●▄ beats 8/10     medium · avg 56%       4.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   84.8%  ▃····▃·▃▃█▅● beats 9/10     easy · avg 81%         3.7%  at its level

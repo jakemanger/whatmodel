@@ -25,7 +25,7 @@ Beats [Wan 2.7 Image](wan-2-7-image.md), [HunyuanImage 2.1](hunyuanimage-2-1.md)
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1149.5  ▂▂▃▄▇●▄▂▄▂·▂ beats 44/75  avg 1027             41%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1149.5  ▂▂▃▄▇●▅▂▄▂·▂ beats 44/75  avg 1027             41%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>    19.1%  ●▆·▂▂····▂▂█ beats 2/13   hard · avg 20%       15%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    29.9%  ▁▂●█▃▁▂▃·▁·▁ beats 4/22   hard · avg 28%       11%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     41.0%  ▄·●···▄▄▄▄▄▄ beats 2/8    medium · avg 36%    5.4%  blunt · at its level
@@ -43,7 +43,7 @@ test                                 result  vs the others in its run  difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   924.8  ▁▁▁●▂█▂▁▁▂▁▁ beats 5/34   avg 875           6.4%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   924.8  ▁▁▁●▂█▂▁▁▂▁▁ beats 5/34   avg 874           6.4%  typical
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   84.0%  ▄···●··▄···█ beats 1/5    easy · avg 78%    5.8%  typical
 </pre>
 
@@ -55,7 +55,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   41% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   41% ▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   15% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    9% ▇

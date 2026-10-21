@@ -6,7 +6,7 @@
 
 Mistral · released 2026-02 · 4.43B params · apache-2.0
 
-**score 52.7** ±1.5 · #85 of 162 · from 15 benchmark results across 7 sources
+**score 52.7** ±1.5 · #86 of 163 · from 15 benchmark results across 7 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 task                    vs the others       rank  counts  tests
-long-form transcripti…  █·····█···█●    #1 of 4*    4.5%      1
+long-form transcripti…  █·····█···█●    #1 of 4*    4.6%      1
 multilingual transcri…  ▂··▃●█▆▅▄▂·▂   #30 of 36     35%      4
 </pre>
 
-<details><summary>long-form transcription · #1 of 4 · 4.5% of its score</summary>
+<details><summary>long-form transcription · #1 of 4 · 4.6% of its score</summary>
 
 Beats [Voxtral Mini Transcribe V2](voxtral-mini-transcribe-2.md), [Kyutai STT 2.6B (en)](kyutai-stt-2-6b-en.md), [GPT-4o Mini Transcribe](gpt-4o-mini-transcribe.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long-for…</a>    7.7%  ▄··●·······▄ beats 1/3    avg 11%       4.5%  typical
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long-for…</a>    7.7%  ▄··●·······▄ beats 1/3    avg 11%       4.6%  typical
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             6.3%  ▂··▂▃▂●▃█▂▁▁ beats 9/29   avg 8.9%       25%  typical
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice 12-…</a>   15.2%  ●··█·······█ beats 0/2    avg 18%       4.6%  small run
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-langua…</a>    8.7%  ●·█········█ beats 0/2    avg 11%       4.2%  small run
-<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   48.5%  █●▃··▅▃▃··▃▃ beats 3/10   avg 38%       1.2%  noisy
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   48.5%  █●▃··▅▃▃··▃▃ beats 3/10   avg 38%       1.3%  noisy
 </pre>
 
 </details>
@@ -49,15 +49,15 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    5.1%  ●·▃▅·▅▅·▃▅██ beats 0/16   avg 4.8%       18%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    5.1%  ●·▃▅·▅▅·▃▅██ beats 0/16   avg 4.7%       18%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">LibriSpeech test-clean WER</a>            2.1%  ▁···▁▁▂·▄▄●█ beats 25/56  avg 2.3%       10%  blunt · several runs
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.7%  ▁▁▁▃··▁▁▂●█▆ beats 45/86  avg 8.2%      7.3%  blunt
 <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/mistralai__Voxtral-Mini-4B-Realtime-2602.json">Dutch ASR Leaderboard · average W…</a>   10.2%  ▄··▄●···█··▄ beats 2/6    avg 16%       5.3%  typical
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English short-fo…</a>    8.5%  ●··█·█·····█ beats 0/3    avg 12%       4.8%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">FLEURS English test WER</a>               6.3%  ▁··▁▁▁▁▁●▃█▁ beats 15/56  avg 5.8%      3.7%  blunt
-<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">FLEURS Mandarin test error rate</a>      10.4%  ▂▂··▂▄▂▂·●██ beats 8/17   avg 12%       3.6%  typical
-<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER</a>                  10.1%  ▁····▁··▁▄●▂ beats 8/17   avg 10.0%     3.3%  small run
-<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER</a>            4.1%  ▁▁▁▂▅▃▅▄●▂▂▁ beats 34/54  avg 4.8%      3.2%  small run
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">FLEURS Mandarin test error rate</a>      10.4%  ▂▂··▂▄▂▂·●██ beats 8/17   avg 12%       3.5%  typical
+<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER</a>                  10.1%  ▁····▁··▁▄●▂ beats 8/17   avg 9.9%      3.3%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER</a>            4.1%  ▁···▁▁▁▆▆●▆▁ beats 36/56  avg 4.8%      3.2%  small run
 </pre>
 
 </details>

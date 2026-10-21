@@ -6,7 +6,7 @@
 
 NVIDIA · released 2023-06 · 0.115B params · cc-by-4.0
 
-**score 45.4** ±3.2 · #121 of 162 · from 4 benchmark results across 2 sources
+**score 45.4** ±3.2 · #121 of 163 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -35,8 +35,8 @@ test                            result  vs the others in its run  difficulty  co
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    9.0%  ▁▁▁▃··▁▁▂●█▆ beats 23/86   avg 8.2%       35%  blunt
-<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/fastconformer_en.csv">LibriSpeech test-other WER (lab)</a>      4.2%  ▁▁▁▂▅▃▅●█▂▂▁ beats 32/54   avg 3.5%       21%  typical
-<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/fastconformer_en.csv">LibriSpeech test-clean WER (lab)</a>      2.1%  ▁·▁·▁▁▁▁▃▇●▆ beats 52/100  avg 1.8%      6.0%  blunt
+<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/fastconformer_en.csv">LibriSpeech test-other WER (lab)</a>      4.2%  ▁···▁▁▁▆▆●▆▁ beats 34/56   avg 3.4%       21%  typical
+<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/fastconformer_en.csv">LibriSpeech test-clean WER (lab)</a>      2.1%  ▁·▁·▁▁▁▁▃▇●▆ beats 54/102  avg 1.8%      6.0%  blunt
 </pre>
 
 </details>

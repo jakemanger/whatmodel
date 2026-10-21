@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 61.7** ±1.2 · #186 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.6** ±1.2 · #190 of 729 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #152 of 460*     14%      2
+coding  ▁▁▁▃▆▇█●▅▄▃▁   #158 of 466*     14%      2
 math    ▁▁▃▅█▆▄●▄▁▁▁   #120 of 427*     10%      1
 </pre>
 
-<details><summary>coding · #152 of 460 · 14% of its score</summary>
+<details><summary>coding · #158 of 466 · 14% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.9%  ▄··●····▄▄·█ beats 1/6    medium · avg 46%    8.5%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.9%  ▄··●····▄▄·█ beats 1/6    medium · avg 46%    8.4%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (lab)</a>    24.1%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 16%      5.8%  at its level
 </pre>
 
@@ -38,7 +38,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   91.3%  ▄·▄·●▄··█··▄ beats 2/6    medium · avg 56%     10%  sharp · noisy
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   91.3%  ▄·▄·●▄··█··▄ beats 2/6    medium · avg 57%     10%  sharp · noisy
 </pre>
 
 </details>
@@ -47,10 +47,10 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 43%           40%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 43%           41%  sharp · at its level
 <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               77.8%  ●······▅··█▃ beats 0/6    medium · avg 61%         17%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 43%        9.3%  at its level
-<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.2%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.3%  typical
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 61.7
+weighted average                        = 61.6
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

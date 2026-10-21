@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-03 · proprietary
 
-**score 44.6** ±0.4 · comparison only: no current run option verified · from 67 benchmark results across 28 sources
+**score 44.5** ±0.4 · comparison only: no current run option verified · from 67 benchmark results across 28 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gp
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>   46.9%  █·▅▃▃▃·▃·▃●▅ beats 10/12  easy · avg 66%       22%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    23.7%  ▆·▂·▄▂▂▂●█▄▆ beats 9/18   medium · avg 47%    2.5%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    23.7%  ▆·▂·▄▂▂▂●█▄▆ beats 9/18   medium · avg 48%    2.5%  sharp · at its level
 </pre>
 
 </details>
@@ -36,13 +36,13 @@ test   result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                68.9%  ▃▅█···▅·▃▃●▅ beats 10/12    easy · avg 82%          14%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             35.8%  █▁·▁▁·····●▁ beats 11/12    hard · avg 48%          12%  sharp · several runs
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             35.8%  █▁·▁▁·····●▁ beats 11/12    medium · avg 48%        12%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        79.5%  █······▁·▁▁● beats 11/12    easy · avg 75%         9.0%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union)</a>              87.1%  ▅▃█···▅·▃▃●▅ beats 10/12    very easy · avg 94%    5.9%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                71.3%  ▅▃▃▅··▃▃·▃▃● beats 10/12    easy · avg 83%         5.2%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 63.1%  ▁···▁··▃▁▅●█ beats 11/18    easy · avg 74%         4.5%  at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       48.6%  ▂▂▂▂·▅·▃▂●▃▃ beats 11/18    medium · avg 60%       3.8%  sharp · at its level · several runs
-<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   57.2%  █·····▃··●·▃ beats 4/6      medium · avg 71%       3.5%  sharp · at its level
+<a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   57.2%  █·····▃··●·▃ beats 4/6      medium · avg 71%       3.4%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>       69.6%  █·····▃·▁·●▁ beats 9/12     medium · avg 81%       2.6%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding</a>         43.8%  ▃·▅·▅▃▅·▃▃·● beats 10/12    medium · avg 52%       2.2%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA</a>                           65.9%  █·····▅▃▃▅▃● beats 10/12    medium · avg 70%       2.0%  at its level · several runs
@@ -112,7 +112,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-eacl-31"></a><a href="https://aclanthology.org/2023.findings-eacl.31.pdf">Causal Reasoning of Entities and Events…</a>        1    0% ▇
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.6
+weighted average                                   = 44.5
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Faithful Chain-of-Thought Reasoning ([CC BY 4.0](../../licenses/acl-2023-ijcnlp-main-20-CC-BY-4-0.txt)) · INFORM : Information eNtropy based multi-step reasoning FOR large language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-216-CC-BY-4-0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · Making Language Models Better Reasoners with Step-Aware Verifier ([CC BY 4.0](../../licenses/acl-2023-acl-long-291-CC-BY-4-0.txt)) · Vera: A General-Purpose Plausibility Estimation Model for Commonsense Statements ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-81-CC-BY-4-0.txt)) · Complexity-Based Prompting for Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2210.00720v2-CC-BY-4-0.txt)) · Tab-CoT: Zero-shot Tabular Chain of Thought ([CC BY 4.0](../../licenses/acl-2023-findings-acl-651-CC-BY-4-0.txt)) · Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In ([CC BY 4.0](../../licenses/acl-2023-acl-long-136-CC-BY-4-0.txt)) · Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them ([CC BY 4.0](../../licenses/acl-2023-findings-acl-824-bbh-CC-BY-4-0.txt)) · Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters ([CC BY 4.0](../../licenses/acl-2023-acl-long-153-CC-BY-4-0.txt)) · MoT: Memory-of-Thought Enables ChatGPT to Self-Improve ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-392-CC-BY-4-0.txt)) · Improving Mathematics Tutoring With A Code Scratchpad ([CC BY 4.0](../../licenses/acl-2023-bea-1-2-CC-BY-4-0.txt)) · HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-397-CC-BY-4-0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Exploring the Curious Case of Code Prompts ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-2-CC-BY-4-0.txt)) · Is ChatGPT a Good Causal Reasoner? A Comprehensive Evaluation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-743-CC-BY-4-0.txt)) · trlX: A Framework for Large Scale Reinforcement Learning from Human Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-530-CC-BY-4-0.txt)) · Code4Struct: Code Generation for Few-Shot Event Structure Prediction ([CC BY 4.0](../../licenses/acl-2023-acl-long-202-CC-BY-4-0.txt)) · CodeIE: Large Code Generation Models are Better Few-Shot Information Extractors ([CC BY 4.0](../../licenses/acl-2023-acl-long-855-CC-BY-4-0.txt)) · SummEdits: Measuring LLM Ability at Factual Reasoning Through The Lens of Summarization ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-600-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · Causal Reasoning of Entities and Events in Procedural Texts ([CC BY 4.0](../../licenses/acl-2023-findings-eacl-31-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

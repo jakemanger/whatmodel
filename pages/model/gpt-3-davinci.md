@@ -26,7 +26,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-
 <pre>
 test   result  vs the others in its run   difficulty        counts  why
 <a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ▂▂▂▂●▄▅▇██▆▄ beats 34/206  medium · avg 61%    4.4%  sharp · small run · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 47%    2.2%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 48%    2.2%  sharp · too hard for it
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        58.2%  █·····▂▂▃●▄▄ beats 26/38   very easy · avg 93%    8.0%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 39.7%  ▁···▁··●▁▅▅█ beats 3/18    easy · avg 74%         7.2%  several runs
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           33.6%  ▅·······█··● beats 5/5     hard · avg 49%         4.8%  several runs
-<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   17.1%  █·●······▄·▄ beats 2/4     medium · avg 63%       2.9%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   17.1%  █·●······▄·▄ beats 2/4     medium · avg 64%       2.9%  typical
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5     easy · avg 67%         2.8%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       33.6%  ▂▂▂●·▅·▃▂█▃▃ beats 3/18    medium · avg 60%       2.5%  sharp
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     22.7%  ······●····· beats 0/5     very hard · avg 25%    2.4%  too hard for it
@@ -57,8 +57,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       0.0%  ●▁▁▁▂▄▄▃▅█▅▁ beats 0/68    very hard · avg 13%    1.2%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted)</a>              36.9%  ▃······▃█··● beats 5/5     hard · avg 43%         1.1%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   70.8%  ▃·●·····▃▃▃█ beats 1/7     easy · avg 87%         1.1%  blunt · at its level
-<a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted)</a>              37.5%  ██·███·····● beats 5/5     very hard · avg 43%    1.1%  too hard for it · noisy
-<a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions English…</a>   45.0%  █····●··█··█ beats 1/3     easy · avg 70%         1.0%  at its level
+<a href="https://arxiv.org/html/2204.06745v1">ANLI Round 2 (prompted)</a>              37.5%  ██·███·····● beats 5/5     very hard · avg 43%    1.0%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions English…</a>   45.0%  █····●··█··█ beats 1/3     easy · avg 71%         1.0%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.187.pdf">API-Bank evaluation system, zero-…</a>    0.6%  ●······█··▄▄ beats 0/4     medium · avg 50%       1.0%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>   50.0%  ●·········▄▄ beats 1/3     medium · avg 68%       1.0%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 94.9%  ██····███··● beats 5/5     very easy · avg 98%    1.0%  blunt · maxed out

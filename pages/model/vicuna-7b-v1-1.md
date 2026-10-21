@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 7B params
 
-**score 36.7** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 36.6** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-242"></a><a href="https://aclanthology.org/2023.findings-emnlp.242.pdf">Search Augmented Instruction Learning</a>           3   86% ▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1   11% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 36.7
+weighted average                                   = 36.6
 </pre>
 
 <sub>Licences: Search Augmented Instruction Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-242-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt))</sub>

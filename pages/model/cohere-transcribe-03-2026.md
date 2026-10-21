@@ -6,7 +6,7 @@
 
 Cohere · released 2026-03 · 2.07B params · apache-2.0
 
-**score 61.7** ±1.8 · #21 of 162 · from 10 benchmark results across 6 sources
+**score 61.7** ±1.8 · #21 of 163 · from 10 benchmark results across 6 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    5.4%  ▁▁▁▃··▁▁▂██● beats 86/86  avg 8.2%       11%  blunt
 <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/CohereLabs__cohere-transcribe-03-2026.json">Dutch ASR Leaderboard · average W…</a>    8.4%  ▄··▄█···●··▄ beats 4/6    avg 16%       8.0%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS English test WER</a>               5.1%  ▁··▁▁▁▁▁▁●█▁ beats 24/56  avg 5.8%      5.6%  blunt
-<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS Mandarin test error rate</a>      11.2%  ▂▂··▂▄▂▂·●██ beats 7/17   avg 12%       5.4%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS Mandarin test error rate</a>      11.2%  ▂▂··▂▄▂▂·●██ beats 7/17   avg 12%       5.3%  typical
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   30.7%  ▃·▂▂▅█▅▃▂●▂▂ beats 18/22  avg 40%       3.2%  blunt
 <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   15.2%  ▃·▅·▅▃▃·●▃▃█ beats 7/12   avg 24%       2.0%  blunt
 <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   14.5%  ▂·▂··▂····▆● beats 6/9    avg 18%       1.3%  blunt

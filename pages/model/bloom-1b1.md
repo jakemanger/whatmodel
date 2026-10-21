@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 6.8** ±1.1 · #714 of 725 · from 36 benchmark results across 6 sources
+**score 6.8** ±1.1 · #718 of 729 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ math    ▁●▃▅█▆▄█▄▁▁▁   #421 of 427*    1.4%      1
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    2.5%  ▄···●·▄·█··▄ beats 1/5    easy · avg 78%    3.0%  sharp · too hard for it
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    2.5%  ▄···●·▄·█··▄ beats 1/5    easy · avg 79%    3.0%  sharp · too hard for it
 </pre>
 
 </details>

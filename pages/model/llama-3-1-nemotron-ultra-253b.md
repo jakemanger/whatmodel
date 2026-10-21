@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 61.0** ±1.4 · #189 of 725 · from 10 benchmark results across 5 sources
+**score 60.8** ±1.4 · #193 of 729 · from 10 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,28 +16,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #231 of 306*    4.4%      3
-coding          ▁▁▁▃▆██▇●▄▃▁    #77 of 460*    1.9%      2
-chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #157 of 395     32%      3
+agent tasks     ▁▁▃▆●▅▅▅▅▄▂▁   #235 of 310*    4.5%      3
+coding          ▁▁▁▃▆▇█▇▅●▃▁    #76 of 466*    1.9%      2
+chat &amp; writing  ▁▁▁▃▆▄▆█●▆▇▃    #161 of 398     32%      3
 math            ●··········█        #2 of 2     31%      3
 </pre>
 
-<details><summary>agent tasks · #231 of 306 · 4.4% of its score</summary>
+<details><summary>agent tasks · #235 of 310 · 4.5% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           56.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 64/114  medium · avg 51%    4.4%  blunt · at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   10.0%  ▁▁▁▂▇▆▆▆█▂▄▂ beats 0/111   hard · avg 31%         —  failed run: No function call was ever e…
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           56.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 64/114  medium · avg 51%    4.5%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   10.0%  ▁▁▁▂▇▆▆▆█▂▄▂ beats 0/112   hard · avg 31%         —  failed run: No function call was ever e…
 <a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (lab)</a>                74.1%  █··········● beats 1/1                            —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #77 of 460 · 1.9% of its score</summary>
+<details><summary>coding · #76 of 466 · 1.9% of its score</summary>
 
-Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -47,15 +47,15 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #157 of 395 · 32% of its score</summary>
+<details><summary>chat &amp; writing · #161 of 398 · 32% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1347.6  ▁▁▁▂▃▃▃▆●▇█▃ beats 190/379  avg 1258           22%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1347.6  ▁▁▁▂▃▃▃▆●▇█▃ beats 190/382  avg 1259           22%  blunt
 <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge unspeci…</a>   87.0%  ▃▃▂▅▃▆▅█▅▅▂● beats 29/30    easy · avg 70%    6.0%  small run
-<a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecified) …</a>   88.9%  ▁▁▃▁▂▄▄▆●▃▂▁ beats 102/141  easy · avg 79%    3.8%  small run
+<a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecified) …</a>   88.9%  ▁▂▄▂▂▄▆█●▄▂▁ beats 102/142  easy · avg 80%    3.8%  small run
 </pre>
 
 </details>
@@ -67,8 +67,8 @@ Trails [Llama 3.3 Nemotron Super 49B v1](llama-3-3-nemotron-super-49b-v1.md) her
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   72.5%  ▁·▁▁▁▂▅▆●▇▅▁ beats 70/133  medium · avg 37%        13%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 47%        11%  sharp · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 68/84   very easy · avg 91%    6.7%  maxed out · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 48%        11%  sharp · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 69/85   very easy · avg 91%    6.7%  maxed out · small run
 </pre>
 
 </details>
@@ -77,8 +77,8 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 176/311  hard · avg 46%     17%  sharp · at its level · small run
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1031           13%  typical
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●▇█▄ beats 177/315  hard · avg 46%     17%  sharp · at its level · small run
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1032           13%  typical
 </pre>
 
 </details>
@@ -90,12 +90,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (lab)</a>                                    6   58% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   13% ▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    4% ▇
 <a name="livecodebench-website-20250801"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json">LiveCodeBench official website results</a>          1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.0
+weighted average                                   = 60.8
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt))</sub>

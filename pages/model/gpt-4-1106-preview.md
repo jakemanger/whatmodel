@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 55.0** ±0.6 · comparison only: no current run option verified · from 21 benchmark results across 11 sources
+**score 54.9** ±0.6 · comparison only: no current run option verified · from 21 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁   #256 of 529     41%      6
-chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #247 of 466     23%      5
+coding          ▁▁▁▂▅▇●▇▅▄▃▁   #263 of 535     41%      6
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #251 of 469     23%      5
 math            ▁▁▃▆●█▅█▄▁▁▁   #346 of 526     10%      3
 </pre>
 
-<details><summary>coding · #256 of 529 · 41% of its score</summary>
+<details><summary>coding · #263 of 535 · 41% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -31,22 +31,22 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           81.7%  ▁·▁▁▁▃▄▄▄█●▁ beats 92/99  easy · avg 70%       12%  sharp
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   35.7%  ▁▁·▁▂▄▆●▅▂·▂ beats 20/31  hard · avg 23%      7.4%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   65.4%  ▁·▁▂▄▁▆▄●▆▂▂ beats 38/62  medium · avg 50%    5.7%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                73.3%  ▁···▁▁▂▅▇█●▂ beats 69/75  easy · avg 66%      2.9%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                73.3%  ▁···▁▁▂▅▇█●▂ beats 69/75  easy · avg 66%      3.0%  at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>       83.7%  ●█▆▆▂··▂···▂ beats 0/15   easy · avg 83%      1.1%  typical
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #247 of 466 · 23% of its score</summary>
+<details><summary>chat &amp; writing · #251 of 469 · 23% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run    difficulty                counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             50.0%  ▁▂▂▃▆▆█▆▄●▁▁ beats 105/122  hard · avg 35%               14%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1312.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 141/379  avg 1258                    3.2%  blunt
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1265.0  ▂▁▂▁▃▇█▆▇▄▂● beats 92/95    avg 1186                    2.9%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  9.3200 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄▄● beats 28/28    avg 8.514 MT-Bench scor…    2.3%  sharp · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1312.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 141/382  avg 1259                    3.2%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1265.0  ▂▁▂▁▃▇█▆▇▄▂● beats 92/95    avg 1187                    2.9%  typical
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  9.3200 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄▄● beats 28/28    avg 8.525 MT-Bench scor…    2.3%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         97.7%  ▂▂·▆·▇▃▆█▆▄● beats 45/45    very easy · avg 94%         0.1%  sharp · maxed out · noisy
 </pre>
 
@@ -58,7 +58,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         40.0%  ▂▂▅▆●█▆▃▅▂▃▄ beats 32/92  hard · avg 27%      7.1%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         40.0%  ▂▂▅▆●█▆▃▅▂▃▄ beats 32/92  hard · avg 28%      7.0%  sharp · at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH (simple-evals, original test…</a>   64.3%  ●····▄··▄··█ beats 0/5    medium · avg 61%    1.3%  at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            87.1%  ▁····▁●▁█▁▃▁ beats 5/16   easy · avg 80%      1.2%  typical
 </pre>
@@ -73,7 +73,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    42.5%  ●▃▃█·▃▃▅▃▃▃▅ beats 2/16    hard · avg 38%      5.0%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         42.4%  ▁▁▁▁▂▄●▄▅▇█▄ beats 46/209  hard · avg 38%      4.6%  sharp · at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>   84.7%  ▂▂·●▄▄▂·█▂·▂ beats 2/16    easy · avg 79%      2.4%  typical
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            87.0%  ▁▁·▁·▂▃▄█●·▁ beats 20/22   easy · avg 81%      0.5%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            87.0%  ▁▁·▁·▂▃▄█●·▁ beats 20/22   easy · avg 82%      0.5%  typical
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>   83.2%  ▂▂▄▆▆●·▂···▄ beats 10/16   easy · avg 78%      0.3%  blunt
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           81.2%  ▄··▂▄▂▆██●▄▂ beats 17/21   easy · avg 67%      0.2%  at its level · noisy
 </pre>
@@ -98,7 +98,7 @@ source                                    results  share of the score
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    2% ▇
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.0
+weighted average                                   = 54.9
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · OpenAI simple-evals README benchmark results ([MIT](../../licenses/openai-simple-evals-MIT.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>

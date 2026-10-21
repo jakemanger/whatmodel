@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 3.6B params · cc-by-sa-4.0
 
-**score 0.5** ±1.7 · #717 of 725 · from 12 benchmark results across 2 sources
+**score 0.5** ±1.7 · #721 of 729 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,10 +28,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">PIQA (lab)</a>                           63.8%  ●·▁··▁▁▃█▅█▂ beats 0/26   easy · avg 87%         9.4%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">BoolQ (lab)</a>                          57.6%  ●▃▂▅▆▂▅▆█▂▂▂ beats 0/26   easy · avg 88%         8.3%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">LAMBADA (OpenAI version), last-wo…</a>   41.7%  ●··▂▁▁▁▂▆█▅▃ beats 0/26   very easy · avg 86%    8.0%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (lab)</a>                  25.8%  ●·▁··▁▁▇▂█▆▃ beats 0/26   easy · avg 82%         7.6%  sharp · too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (lab)</a>                  25.8%  ●·▁··▁▁▇▂█▆▃ beats 0/26   easy · avg 82%         7.7%  sharp · too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">WinoGrande (lab)</a>                     52.6%  ▁····●··▁▂█▄ beats 1/26   easy · avg 86%         6.5%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Social IQA (lab)</a>                     35.6%  ●···▁▃█▁▁▁·▁ beats 0/26   hard · avg 56%         2.2%  blunt · too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (lab)</a>                     17.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 5/26   hard · avg 48%         0.9%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (lab)</a>                     17.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 5/26   hard · avg 49%         0.9%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">TruthfulQA MC2 (lab)</a>                 40.5%  █·█·█▄···▄·● beats 9/9    medium · avg 55%       0.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 2/276  medium · avg 72%       0.6%  too hard for it · noisy
 </pre>

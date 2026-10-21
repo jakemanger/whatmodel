@@ -6,7 +6,7 @@
 
 Nari Labs · released 2025-11 · 1.92B params · apache-2.0
 
-**score 44.8** ±6.2 · #78 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.7** ±6.2 · #79 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-tts-deepfake-age-ccby"></a><a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in the Age of …</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       15% ▇▇
-weighted average                                   = 44.8
+weighted average                                   = 44.7
 </pre>
 
 <sub>Licences: Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

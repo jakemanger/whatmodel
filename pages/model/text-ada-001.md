@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>       33.8%  ●·····▃·▁·▄▁ beats 5/12   medium · avg 81%       2.7%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        14.7%  ●······▁·▁▁▃ beats 5/12   easy · avg 87%         2.7%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   50.6%  ●▂▄··▂▂█▄··▂ beats 0/12   easy · avg 90%         2.1%  too hard for it · noisy
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                              8.7%  ●▁·▁▁·····▂▁ beats 6/12   hard · avg 48%         0.3%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                              8.7%  ●▁·▁▁·····▂▁ beats 6/12   medium · avg 48%       0.3%  sharp · too hard for it
 </pre>
 
 </details>

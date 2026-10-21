@@ -6,7 +6,7 @@
 
 Microsoft AI · released 2026-06 · closed weights
 
-**score 62.2** ±8.0 · #18 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.3** ±8.0 · #17 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                 1   75% ▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            25% ▇▇▇
-weighted average                        = 62.2
+weighted average                        = 62.3
 </pre>
 
 <sub>Licences: koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>

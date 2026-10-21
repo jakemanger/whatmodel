@@ -6,7 +6,7 @@
 
 Saama AI Labs · released 2024-04 · llama3
 
-**score 41.2** ±2.3 · #542 of 725 · from 4 benchmark results across 2 sources
+**score 41.1** ±2.3 · #546 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">MedQA (USMLE, 4 options)</a>             57.8%  ▁▁··▄▁▁··▄▃● beats 15/17  medium · avg 71%     47%  sharp · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   14.2%  ▁▁●▁▁▂▂▃▄▆█▃ beats 2/97   hard · avg 31%       26%  blunt
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">MedMCQA</a>                              57.8%  ▂▂··▄▄▂▂·▄█● beats 17/17  medium · avg 63%     22%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">MedMCQA</a>                              57.8%  ▂▂··▄▄▂▂·▄█● beats 17/17  medium · avg 63%     21%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">PubMedQA</a>                             72.0%  ▂·▂▆·▄▂▄▄●█▂ beats 12/17  medium · avg 75%    2.7%  blunt · at its level
 </pre>
 
@@ -36,10 +36,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">Open Medical-LLM Leaderboard results</a>        3   72% ▇▇▇▇▇▇▇▇▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">Open Medical-LLM Leaderboard results</a>        3   71% ▇▇▇▇▇▇▇▇▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                  1   26% ▇▇▇
 prior: pull toward the middle                    2% ▇
-weighted average                               = 41.2
+weighted average                               = 41.1
 </pre>
 
 <sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>

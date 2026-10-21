@@ -6,7 +6,7 @@
 
 ESPnet · released 2022-06 · 0.11688B params · cc-by-4.0
 
-**score 44.0** ±3.9 · #127 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 43.9** ±3.9 · #128 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-espnet-librispeech-20260929"></a><a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">ESPnet LibriSpeech ASR recipe results (…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 44.0
+weighted average                                   = 43.9
 </pre>
 
 <sub>Licences: ESPnet LibriSpeech ASR recipe results ([Apache-2.0](../../licenses/speech-espnet-librispeech-20260929.txt))</sub>

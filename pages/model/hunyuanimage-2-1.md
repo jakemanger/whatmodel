@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
-**score 57.8** ±2.3 · #56 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.9** ±2.3 · #56 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1   16% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 57.8
+weighted average                                   = 57.9
 </pre>
 
 <sub>Licences: Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>

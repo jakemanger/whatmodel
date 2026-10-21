@@ -25,7 +25,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          16.2%  ▃····●··▃··█ beats 1/5    easy · avg 65%     58%  sharp
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          16.2%  ▃····●··▃··█ beats 1/5    easy · avg 66%     58%  sharp
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   14.1%  ▄··▄··▄·●··█ beats 3/5    hard · avg 32%    8.6%  typical
 </pre>
 

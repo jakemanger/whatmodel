@@ -25,9 +25,9 @@ Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher over
 
 <pre>
 test                                 result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1083.5  ▂▂▃▄●█▄▂▄▂·▂ beats 22/75  avg 1027                30%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1083.5  ▂▂▃▄●█▅▂▄▂·▂ beats 22/75  avg 1027                30%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     85.7%  ▄····▄█●▄█▄█ beats 4/10   easy · avg 82%          10%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 28%         8.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 28%         8.1%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 41%       6.0%  at its level
 <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>             91.7%  ▃·····▅●█▅▃▃ beats 4/12   very easy · avg 88%    5.9%  small run
 <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>             92.6%  ▃·······█●██ beats 6/12   very easy · avg 89%    4.6%  maxed out · small run

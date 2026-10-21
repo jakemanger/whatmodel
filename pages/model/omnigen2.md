@@ -6,7 +6,7 @@
 
 BAAI · released 2025-06 · 4B params · apache-2.0
 
-**score 41.6** ±1.7 · #101 of 144 · from 13 benchmark results across 12 sources
+**score 41.6** ±1.7 · #102 of 144 · from 13 benchmark results across 12 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -17,12 +17,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅●▃▄▄█▃▁▂▁▁   #91 of 126*     21%      3
-image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁     #55 of 62     57%      8
+image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁     #55 of 62     57%      8
 </pre>
 
 <details><summary>text to image · #91 of 126 · 21% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md), [Stable Diffusion 3.5 Medium](sd-3-5-medium.md), [Playground v2.5](playground-v2-5.md) here, though they rank lower overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md), [Playground v2.5](playground-v2-5.md), [Stable Diffusion 3.5 Medium](sd-3-5-medium.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>image to image / editing · #55 of 62 · 57% of its score</summary>
 
-Beats [UNO](uno.md), [BAGEL](bagel.md) here, though they rank higher overall.
+Beats [UNO](uno.md), [BAGEL](bagel.md), [Stable Diffusion 3.5 Large](sd-3-5-large.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   68.2%  ▄●▄··█··▄·▄▄ beats 1/8    easy · avg 74%      5.9%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   34.7%  ▄·●▄▄▄··█▄·▄ beats 1/8    medium · avg 50%    4.9%  at its level
 <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editing (…</a>   58.0%  █··●··██···█ beats 1/4    easy · avg 73%      4.3%  blunt · at its level
-<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   79.5%  ▃▃▃··▃·····● beats 6/6    medium · avg 65%    2.8%  at its level · noisy
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   79.5%  ▃▃▃··▃·····● beats 6/6    medium · avg 65%    2.7%  at its level · noisy
 <a href="https://arxiv.org/html/2506.18871v4">GEdit-Bench-EN overall (G_O, GPT-…</a>   72.1%  ▄·····█·▄●·▄ beats 4/5                           —  not counted yet: no other model in the …
 </pre>
 

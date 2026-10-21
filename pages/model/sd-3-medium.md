@@ -28,7 +28,7 @@ test                                  result  vs the others in its run  difficul
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>              52.1%  ▅▂●▂▂▂····▂▂ beats 4/13   easy · avg 69%          47%  at its level
 <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.27 / 5  █▄·▄██▄▄●▄▄▄ beats 11/14  easy · avg 3.83 / 5     38%  at its level
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>     42.0%  ▄·▆▂●█▄▆▂▄·▄ beats 8/22   medium · avg 60%        11%  at its level
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    5.3100  ●·····▃··▃·█ beats 0/5    avg 10.058             1.8%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    5.3100  ●·····▃··▃·█ beats 0/5    avg 10.057             1.8%  sharp · noisy
 </pre>
 
 </details>

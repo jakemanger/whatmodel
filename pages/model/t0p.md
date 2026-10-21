@@ -6,7 +6,7 @@
 
 BigScience · released 2021-10 · 11B params · apache-2.0
 
-**score 37.9** ±9.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.8** ±9.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1   60% ▇▇▇▇▇▇▇
 prior: pull toward the middle                       40% ▇▇▇▇▇
-weighted average                                   = 37.9
+weighted average                                   = 37.8
 </pre>
 
 <sub>Licences: LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

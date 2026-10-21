@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 13B params · opt-175b-license-noncommercial
 
-**score 25.9** ±0.8 · #676 of 725 · from 37 benchmark results across 10 sources
+**score 25.9** ±0.8 · #680 of 729 · from 37 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,11 +28,11 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 76.0%  ▂·▄▄·▄▂▆▂▄●▄ beats 15/19   easy · avg 87%         8.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.6%  ▂▂▄▂·▂·▆·▂●▂ beats 10/14   easy · avg 89%         4.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▃··▅▃▃▅▅▅█●█ beats 16/19   very easy · avg 87%    4.1%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 48%       3.8%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 48%       3.9%  typical
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 90.8%  ▂··▂▃▂▂▆▃▃●▂ beats 17/19   very easy · avg 98%    3.8%  blunt · several runs
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   28.4%  ██···●█····█ beats 2/4     easy · avg 66%         2.3%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   51.5%  ▁····▁●·▁·▃█ beats 2/11    hard · avg 63%         1.8%  too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            52.5%  ●█······▃▃·▅ beats 0/8     easy · avg 85%         1.7%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            52.5%  ●█······▃▃·▅ beats 0/8     easy · avg 86%         1.7%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">COPA</a>                                 86.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 46/67   very easy · avg 95%    1.6%  at its level · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   57.7%  ▂▂··▂·●···▂▂ beats 5/8     easy · avg 79%         1.3%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 15/276  medium · avg 72%       0.9%  noisy

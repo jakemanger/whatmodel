@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 44.2** ±0.7 · #491 of 725 · from 10 benchmark results across 4 sources
+**score 44.1** ±0.7 · #496 of 729 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #348 of 460     90%      7
+coding  ▁▁▁▃▆●█▇▅▄▃▁   #353 of 466     90%      7
 </pre>
 
-<details><summary>coding · #348 of 460 · 90% of its score</summary>
+<details><summary>coding · #353 of 466 · 90% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           51.8%  ▁·▁▁▁▃▄▄●█▃▁ beats 45/99  easy · avg 70%       27%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.6%  ▁·▂▁▂▆▅●▄▄▁▂ beats 21/35  medium · avg 61%    7.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                56.9%  ▁···▁▁▂▅●█▆▂ beats 33/75  easy · avg 66%      5.1%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   38.4%  ▄▇█▃▄▇▄▁●▃·▁ beats 30/35  medium · avg 45%    5.0%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   38.4%  ▄▇█▃▄▇▄▁●▃·▁ beats 30/35  medium · avg 46%    5.0%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   45.8%  ▁·▁▁▄██▄█▁●▅ beats 31/35  medium · avg 51%    4.9%  sharp · at its level
 <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           54.2%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 44/86  easy · avg 71%      2.2%  at its level
 </pre>
@@ -57,7 +57,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2    9% ▇
 <a name="paper-2406.11409v2"></a><a href="https://arxiv.org/html/2406.11409v2">CodeGemma: Open Code Models Based on Ge…</a>        2    8% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.2
+weighted average                                   = 44.1
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>

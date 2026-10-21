@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-07 · 0.364B params · nvidia-open-model-license
 
-**score 39.2** ±6.1 · #88 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.0** ±6.1 · #89 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-carun-tts-bench-apache"></a><a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun/tts-bench: intelligibility benchm…</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       15% ▇▇
-weighted average                                   = 39.2
+weighted average                                   = 39.0
 </pre>
 
 <sub>Licences: carun/tts-bench: intelligibility benchmark of four open TTS engines ([Apache-2.0](https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt))</sub>

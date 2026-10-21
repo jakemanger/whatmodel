@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -13.1** ±1.5 · #724 of 725 · from 35 benchmark results across 9 sources
+**score -13.1** ±1.5 · #729 of 729 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ test   result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                           16.4%  ●▁▁▁▂▂▃█▃▁▃▁ beats 13/107  very hard · avg 26%     25%  too hard for it · several runs
-<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                        20.1%  ●▁▁▂▁▄█▇▃▂▃▂ beats 5/140   very hard · avg 27%     17%  sharp · too hard for it · several runs
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                        20.1%  ●▁▁▂▁▄█▇▃▂▃▂ beats 5/140   very hard · avg 27%     18%  sharp · too hard for it · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 61.0%  ▁·▁▁●▅▅█▆▂▁▁ beats 5/67    very easy · avg 97%     14%  several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             42.9%  ▁●▂▄▆█▅▃▁··▁ beats 6/100   very easy · avg 90%     10%  blunt · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     60.0%  ●▃▃▂▅█▅▂▁··▂ beats 3/50    easy · avg 91%          10%  blunt · several runs

@@ -6,7 +6,7 @@
 
 Nexusflow · released 2023-12 · 13.02B params · other
 
-**score 30.4** ±3.0 · #653 of 725 · from 5 benchmark results across 2 sources
+**score 30.3** ±2.9 · #657 of 729 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #295 of 306*     17%      1
+agent tasks  ▁▁●▆█▅▅▅▅▄▂▁   #299 of 310*     17%      1
 </pre>
 
-<details><summary>agent tasks · #295 of 306 · 17% of its score</summary>
+<details><summary>agent tasks · #299 of 310 · 17% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Hallucinations Leaderboard results</a>              4   79% ▇▇▇▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   17% ▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 30.4
+weighted average                                   = 30.3
 </pre>
 
 <sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · 0.96B params · cc-by-nc-4.0
 
-**score -9.4** ±4.8 · #161 of 162 · from 3 benchmark results across 2 sources
+**score -9.8** ±4.9 · #162 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   39.8%  ●▁▁▃··▁▁▂██▆ beats 0/86   avg 8.2%       81%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   39.8%  ●▁▁▃··▁▁▂██▆ beats 0/86   avg 8.2%       80%  blunt
 <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>       30.2%  ●····▂▂▂█▃▃▂ beats 0/13   avg 9.2%      5.9%  blunt
 <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>           15.4%  ●··▂·▃▂█▂▃▃▃ beats 0/16   avg 1.7%      4.6%  blunt · noisy
 </pre>
@@ -35,10 +35,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   80% ▇▇▇▇▇▇▇▇▇▇
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                  2   10% ▇
 prior: pull toward the middle             9% ▇
-weighted average                        = -9.4
+weighted average                        = -9.8
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>

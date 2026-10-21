@@ -6,7 +6,7 @@
 
 Wayu Research / Paxa Labs · released 2026-08 · 0.082B params · cc-by-nc-4.0
 
-**score 63.8** ±3.9 · #22 of 118 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.9** ±3.9 · #22 of 119 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-wayu-thai-tts-ccby"></a><a href="https://arxiv.org/html/2609.03502v1">Building and Evaluating Fixed-Voice Tha…</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 63.8
+weighted average                                   = 63.9
 </pre>
 
 <sub>Licences: Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech ([CC BY 4.0](../../licenses/speech-wayu-thai-tts-ccby.txt))</sub>

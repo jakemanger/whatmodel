@@ -6,7 +6,7 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 10.5** ±2.5 · #711 of 725 · from 3 benchmark results across 1 source
+**score 10.5** ±2.5 · #715 of 729 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▆██▇▆▄▃▁   #460 of 460     97%      3
+coding  ●▁▁▃▆▇█▇▅▄▃▁   #466 of 466     97%      3
 </pre>
 
-<details><summary>coding · #460 of 460 · 97% of its score</summary>
+<details><summary>coding · #466 of 466 · 97% of its score</summary>
 
 Trails [StableLM-Base-Alpha 7B](stablelm-base-alpha-7b.md) here, though they rank lower overall.
 

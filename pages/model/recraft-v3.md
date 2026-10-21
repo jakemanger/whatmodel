@@ -25,7 +25,7 @@ Trails [Runway Gen-4 Image](runway-gen-4-image.md), [GLM-Image](glm-image.md), [
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1020.6  ▂▂●▄▇█▄▂▄▂·▂ beats 10/75  avg 1027             56%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1020.6  ▂▂●▄▇█▅▂▄▂·▂ beats 10/75  avg 1027             56%  typical
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              73.2%  ██·▄·▄·●···▄ beats 6/8    easy · avg 71%       18%  at its level
 <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   44.1%  █··●▄▄·▄▄·▄▄ beats 3/9    medium · avg 51%     10%  at its level
 </pre>

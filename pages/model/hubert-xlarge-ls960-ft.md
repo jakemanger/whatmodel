@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.96B params · apache-2.0
 
-**score 15.7** ±4.1 · #151 of 162 · from 5 benchmark results across 4 sources
+**score 15.5** ±4.1 · #152 of 163 · from 5 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -41,7 +41,7 @@ source                         results  share of the score
 <a name="speech-stt-afrispeech200-report-ccby"></a><a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200</a>                       1    9% ▇
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                  2    8% ▇
 prior: pull toward the middle             7% ▇
-weighted average                        = 15.7
+weighted average                        = 15.5
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>

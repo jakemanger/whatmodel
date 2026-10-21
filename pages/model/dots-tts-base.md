@@ -6,7 +6,7 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 66.6** ±2.4 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.7** ±2.5 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,8 +27,8 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [dots.tts
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker simila…</a>   76.8%  ▁·▂▂▂█▆▃●··▂ beats 24/30  medium · avg 53%     15%  small run
 <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker simila…</a>   80.5%  ▁·▂··▂·█▄·●▄ beats 21/25  medium · avg 62%     13%  small run
-<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper large-…</a>    1.3%  ▁···▂▂▂▂█▆●▂ beats 31/35  avg 3.6%            6.1%  blunt · small run
-<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer CER…</a>    1.0%  ▁·▂▁▁▁▂▃▅●·▂ beats 20/30  avg 2.1%            4.5%  blunt · small run
+<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper large-…</a>    1.3%  ▁···▂▂▂▂█▆●▂ beats 31/35  avg 3.6%            6.0%  blunt · small run
+<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer CER…</a>    1.0%  ▁·▂▁▁▁▂▃▅●·▂ beats 20/30  avg 2.1%            4.4%  blunt · small run
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>          6.0%  ▂······▅▅█●▃ beats 15/18  avg 26%        24%  sharp · small run
+<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>          6.0%  ▂······▅▅█●▃ beats 15/18  avg 27%        24%  sharp · small run
 <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot English) ·…</a>    5.2%  ▁·······▁▃●▇ beats 6/14   avg 16%        20%  small run
 <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>          9.7%  ▃▅·▃●▅▅▃▅▃·█ beats 4/15   avg 23%        15%  small run
 </pre>
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (lab)</a>        7   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle               2% ▇
-weighted average                          = 66.6
+weighted average                          = 66.7
 </pre>
 
 <sub>Licences: dots.tts Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

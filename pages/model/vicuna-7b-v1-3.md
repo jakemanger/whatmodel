@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06
 
-**score 34.9** ±2.1 · #624 of 725 · from 4 benchmark results across 2 sources
+**score 34.8** ±2.1 · #628 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #375 of 395*     78%      2
+chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃   #378 of 398*     78%      2
 </pre>
 
-<details><summary>chat &amp; writing · #375 of 395 · 78% of its score</summary>
+<details><summary>chat &amp; writing · #378 of 398 · 78% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   78% ▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2   20% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 34.9
+weighted average                                   = 34.8
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt))</sub>

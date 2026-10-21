@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 38.1** ±0.9 · #589 of 725 · from 29 benchmark results across 12 sources
+**score 38.1** ±0.9 · #593 of 729 · from 29 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #269 of 306*    1.8%      1
-coding          ▁▁▁▃●██▇▆▄▃▁    #356 of 460    9.2%      5
-chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #377 of 395    6.5%      3
+agent tasks     ▁▁▃●█▅▅▅▅▄▂▁   #273 of 310*    1.8%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #362 of 466    9.2%      5
+chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃    #380 of 398    6.5%      3
 math            ▁▁▃●█▆▄█▄▁▁▁    #357 of 427     24%      2
 </pre>
 
-<details><summary>agent tasks · #269 of 306 · 1.8% of its score</summary>
+<details><summary>agent tasks · #273 of 310 · 1.8% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall.
 
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #356 of 460 · 9.2% of its score</summary>
+<details><summary>coding · #362 of 466 · 9.2% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #377 of 395 · 6.5% of its score</summary>
+<details><summary>chat &amp; writing · #380 of 398 · 6.5% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Ge
 test                              result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>      7.4%  ●▃·▁▁█▇▅·▁·▁ beats 1/22   medium · avg 39%    2.8%  sharp
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>          44.2%  ●▃▁▃▁▄▁▁█▃▃▁ beats 0/22   easy · avg 78%      2.2%  at its level
-<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified)</a>   47.4%  ▁▁●▁▂▄▄▆█▃▂▁ beats 7/141  easy · avg 76%      1.5%  at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified)</a>   47.4%  ▁●▄▂▂▄▆█▇▄▂▁ beats 7/142  easy · avg 76%      1.5%  at its level · small run
 </pre>
 
 </details>
@@ -82,11 +82,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.2%  ▁●▂▂▃█▃▆▅▄▂▃ beats 4/95     medium · avg 64%       6.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      27.8%  ▁··▁▁●▂▆▅▆█▆ beats 6/70     medium · avg 61%       4.7%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 9/81     medium · avg 56%       3.8%  blunt · at its level
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 31%         3.5%  blunt
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 31%         3.6%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   13.2%  ▁▁·▁▂●▄█▄▅▄▄ beats 9/66     hard · avg 29%         1.9%  typical
 <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                            60.9%  ▁▁▁▂▂▂▄●█▇▄▂ beats 43/135   easy · avg 82%         1.9%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 117/276  medium · avg 72%       1.8%  at its level · noisy
-<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                15.5%  ▁▁▁●▃▃▁█▁▃·▄ beats 3/21     hard · avg 30%         1.7%  typical
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                15.5%  ▁▁▁●▃▃▁█▁▃·▄ beats 3/21     hard · avg 31%         1.7%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.0%  ▁▁▁▁▁▁▁▂●█▄▃ beats 52/146   easy · avg 82%         1.4%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.6%  ▃·▁▁▂▁▂●█▇▄▁ beats 40/100   medium · avg 66%       1.2%  sharp · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   84.2%  ▁▁●▃▄▄█▆▃▂▂▁ beats 12/140   very easy · avg 94%    0.9%  blunt · noisy

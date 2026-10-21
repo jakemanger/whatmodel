@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 29.7** ±1.0 · #658 of 725 · from 12 benchmark results across 2 sources
+**score 29.7** ±1.0 · #661 of 729 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Easy</a>                             69.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 18/26   easy · avg 85%         5.8%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                                 93.8%  ▁·▁·▁·▃▅▃●▄▁ beats 19/26   very easy · avg 97%    4.7%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                                 79.2%  ▁·▁··▁▁▃█▅●▂ beats 23/26   easy · avg 87%         4.2%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">OpenBookQA</a>                           30.2%  █·▁▁▃·▁▃●▇▃▄ beats 14/26   hard · avg 48%         3.8%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">OpenBookQA</a>                           30.2%  █·▁▁▃·▁▃●▇▃▄ beats 14/26   hard · avg 49%         3.8%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">LAMBADA (OpenAI version), last-wo…</a>   71.0%  ▁··▂▁▁▁▂▆●▅▃ beats 18/26   very easy · avg 86%    2.6%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 10/26   hard · avg 56%         2.4%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   39.2%  ▃▁▁▁▁●▁▁▂█▅▁ beats 47/276  medium · avg 72%       1.7%  noisy

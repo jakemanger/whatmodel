@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 37.9** ±0.7 · #592 of 725 · from 14 benchmark results across 5 sources
+**score 37.9** ±0.7 · #594 of 729 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #397 of 460     64%      6
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #403 of 466     64%      6
 math    ▁▁▃●█▆▄█▄▁▁▁   #353 of 427*    3.7%      1
 </pre>
 
-<details><summary>coding · #397 of 460 · 64% of its score</summary>
+<details><summary>coding · #403 of 466 · 64% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                            43.3%  ▁█▄▅●█·▄▇▅▄▄ beats 15/42  easy · avg 74%       36%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   37.9%  ▁·▂▁▂▆●█▄▄▁▂ beats 16/35  medium · avg 61%    8.5%  at its level
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           44.4%  ▃●▃█··▃▅··▅▃ beats 1/11   easy · avg 71%      6.5%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   25.1%  ▄▇█▃▄●▄▁▇▃·▁ beats 20/35  medium · avg 45%    4.7%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   25.1%  ▄▇█▃▄●▄▁▇▃·▁ beats 20/35  medium · avg 46%    4.7%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.8%  ▁·▁▁▄●█▄█▁▅▅ beats 10/35  medium · avg 51%    4.1%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            64.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 12/25  easy · avg 83%      3.7%  sharp · at its level
 </pre>

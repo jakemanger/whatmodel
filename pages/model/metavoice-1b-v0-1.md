@@ -6,7 +6,7 @@
 
 MetaVoice · released 2024-02 · 1.2B params · apache-2.0
 
-**score 19.8** ±3.1 · #114 of 118 · from 9 benchmark results across 5 sources
+**score 19.4** ±3.1 · #115 of 119 · from 9 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -24,12 +24,12 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.18 / 5  ●·█▅▅·█▃▃▅·▅ beats 1/17   easy · avg 4.03 / 5       64%  at its level
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>     795.7  ●▄█····▄··▄▄ beats 1/7    avg 995                   11%  typical
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.49 / 5  ▅··▃●··▅█▅██ beats 4/17   medium · avg 3.30 / 5    5.8%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     86.3%  ▂▂█·▂·●▆▂·▄▂ beats 8/17   very easy · avg 89%      5.6%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.49 / 5  ▅··▃●··▅█▅██ beats 4/17   medium · avg 3.29 / 5    5.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     86.3%  ▂▂█·▂·●▆▂·▄▂ beats 8/17   very easy · avg 89%      5.5%  blunt
 <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.06 / 5  ▄▄█·▄●▄▄▄·▄█ beats 5/11   easy · avg 4.20 / 5      3.4%  blunt · at its level
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.07 / 5  ●··▄▄██▄·▄▄▄ beats 1/11   easy · avg 3.99 / 5      3.0%  blunt · at its level
-<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TTSDS …</a>     79.2%  ●····▄▄▄▄▄·█ beats 0/7    very easy · avg 86%      2.4%  blunt
-<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     80.7%  ▂▂····●·▃▅▂█ beats 2/14   very easy · avg 86%      1.0%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.07 / 5  ●··▄▄██▄·▄▄▄ beats 1/11   easy · avg 3.99 / 5      2.9%  blunt · at its level
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TTSDS …</a>     79.2%  ●····▄▄▄▄▄·█ beats 0/7    very easy · avg 86%      2.3%  blunt
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     80.7%  ▂▂····●·▃▅▂█ beats 2/14   very easy · avg 86%      0.9%  blunt
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WER of…</a>     43.3%  ●▄▄··█▄··▄·▄ beats 0/7    avg 17%                  0.2%  blunt · noisy
 </pre>
 
@@ -47,7 +47,7 @@ source                                    results  share of the score
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           1    6% ▇
 <a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                      1    1% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 19.8
+weighted average                                   = 19.4
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>

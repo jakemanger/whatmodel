@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 175B params · opt-175b-license-noncommercial
 
-**score 32.9** ±1.0 · comparison only: no current run option verified · from 26 benchmark results across 4 sources
+**score 32.8** ±1.0 · comparison only: no current run option verified · from 26 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     79.8%  ▂▂▄▂·▂·▆·▂█● beats 14/14   easy · avg 89%         7.7%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2212.12017v3">MMLU (lab)</a>                           34.2%  ▁▁▁▁▁●▂▅██▆▄ beats 18/214  medium · avg 59%       4.8%  small run
 <a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (lab)</a>                 30.2%  ▁▁▁●▂▄▅▆█▃▃▁ beats 11/155  medium · avg 59%       4.6%  sharp · noisy · small run
-<a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 81.1%  ▄·█▄·█▄▄▄██● beats 14/14   easy · avg 87%         4.0%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 81.1%  ▄·█▄·█▄▄▄██● beats 14/14   easy · avg 88%         4.0%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.8%  ▁····▁▁·▁·▃● beats 8/11    hard · avg 63%         3.7%  typical
 <a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (lab)</a>                 60.3%  ▅▃·▃··▅·▅●▃█ beats 8/13    medium · avg 75%       3.3%  small run
 <a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (lab)</a>                 56.6%  █·▂▁······●▁ beats 12/13   medium · avg 71%       3.0%  sharp · too hard for it · noisy · small…
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        4   19% ▇▇
 <a name="acl-2023-emnlp-main-726"></a><a href="https://aclanthology.org/2023.emnlp-main.726.pdf">Can Language Models Understand Physical…</a>        2    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 32.9
+weighted average                                   = 32.8
 </pre>
 
 <sub>Licences: GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization ([CC BY 4.0](../../licenses/paper-2212.12017v3-opt-iml-CC-BY-4-0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · Can Language Models Understand Physical Concepts? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-726-CC-BY-4-0.txt))</sub>

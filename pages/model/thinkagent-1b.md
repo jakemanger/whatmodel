@@ -6,7 +6,7 @@
 
 ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
-**score 27.4** ±6.7 · #893 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.4** ±6.7 · #898 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▄▄▃▃▁   #337 of 340*     80%      1
+agent tasks  ●▁▃▆█▅▅▄▄▄▁▁   #341 of 344*     80%      1
 </pre>
 
-<details><summary>agent tasks · #337 of 340 · 80% of its score</summary>
+<details><summary>agent tasks · #341 of 344 · 80% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 

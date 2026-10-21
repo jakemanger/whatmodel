@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 39.1** ±0.9 · #572 of 725 · from 26 benchmark results across 18 sources
+**score 39.1** ±0.9 · #576 of 729 · from 26 benchmark results across 18 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #224 of 395*    0.0%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃   #226 of 398*    0.0%      1
 math            ▁▁●▅█▆▄█▄▁▁▁    #394 of 427     24%      2
 </pre>
 
-<details><summary>chat &amp; writing · #224 of 395 · 0.0% of its score</summary>
+<details><summary>chat &amp; writing · #226 of 398 · 0.0% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
 
 <pre>
 test                                                 result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.710 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-
 <pre>
 test        result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        16.1%  ▂▂▂▂▃●▅▇██▆▄ beats 44/206  medium · avg 49%     16%  sharp · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    4.9%  ▆·▂·●▂▂▂▂█▄▆ beats 5/18    medium · avg 47%    7.2%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    4.9%  ▆·▂·●▂▂▂▂█▄▆ beats 5/18    medium · avg 48%    7.2%  sharp
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           55.1%  ▁···▁··▃▁●▅█ beats 8/18   easy · avg 74%          22%  at its level · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 52%       4.6%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   19.0%  ▂··▂·▂●▄·███ beats 4/18   medium · avg 61%       4.0%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   medium · avg 60%       2.5%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   medium · avg 61%       2.5%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   75.2%  ▃····▃·▃▃█●▅ beats 7/10   easy · avg 81%         2.3%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    48.3%  ▂▂··▂·▂··▂●▄ beats 5/10   medium · avg 56%       2.0%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   66.1%  █▁····▃▁·▁·● beats 14/14  hard · avg 66%         2.0%  sharp · noisy

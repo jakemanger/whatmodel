@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 2.112B params · apache-2.0
 
-**score 60.6** ±3.9 · #29 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.6** ±3.9 · #29 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

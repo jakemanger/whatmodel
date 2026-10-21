@@ -24,8 +24,8 @@ math    ▁▁▃▆●█▅█▄▁▁▁   #373 of 526     18%      3
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   15.9%  ▁▁▁▁●▂▆▆█▅▂▁ beats 27/205  medium · avg 45%    1.7%  sharp
-<a href="https://arxiv.org/html/2204.02311v5">MBPP (lab)</a>        21.4%  ▁●▁▄▅█▆▅▄▁▂▁ beats 3/86    medium · avg 49%    0.9%  at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   15.9%  ▁▁▁▁●▂▆▆█▅▂▁ beats 27/205  medium · avg 46%    1.7%  sharp
+<a href="https://arxiv.org/html/2204.02311v5">MBPP (lab)</a>        21.4%  ▁●▁▄▅█▆▅▄▁▂▁ beats 3/86    medium · avg 50%    0.9%  at its level · small run
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](a
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>          29.9%  █·▅▃▃▃·▃·●▃▅ beats 9/12   easy · avg 66%       15%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>           18.2%  ▆·▂·▄▂▂●▂█▄▆ beats 8/18   medium · avg 47%    2.1%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>           18.2%  ▆·▂·▄▂▂●▂█▄▆ beats 8/18   medium · avg 48%    2.1%  sharp
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    4.4%  ▄··●··▄·▄··█ beats 1/5    hard · avg 32%      0.6%  typical
 </pre>
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          46.7%  ▃▅█···▅·▃●▃▅ beats 9/12     easy · avg 82%          9.2%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          61.9%  ▅▃▃▅··▃▃·▃●█ beats 9/12     easy · avg 83%          7.2%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  65.4%  █······▁·▁●▃ beats 9/12     easy · avg 87%          5.9%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       22.4%  █▁·▁●·····▂▁ beats 9/12     hard · avg 48%          4.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       22.4%  █▁·▁●·····▂▁ beats 9/12     medium · avg 48%        4.5%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           55.1%  ▁···▁··▃▁●▅█ beats 7/18     easy · avg 74%          4.4%  at its level · several runs
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (lab)</a>                     76.6%  ▄····▄··▄·█● beats 5/6      easy · avg 85%          3.2%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   72.1%  █·····▃·▁·●▁ beats 11/12    medium · avg 81%        2.8%  sharp · at its level
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (lab)</a>                      79.7%  ▁▁▁▂▂▂▄▆█●▄▂ beats 109/135  easy · avg 87%          1.5%  at its level · several runs
 <a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>     39.1%  ▄······▄●·▄█ beats 2/5      medium · avg 62%        1.4%  sharp
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   40.9%  ▄······▄●▄·█ beats 2/5      medium · avg 58%        1.3%  typical
-<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        36.4%  █▁▃·▃·●·▃··▁ beats 13/16    hard · avg 51%          1.3%  sharp · small run
+<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        36.4%  █▁▃·▃·●·▃··▁ beats 13/16    hard · avg 51%          1.2%  sharp · small run
 <a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    43.4%  ▄·····▄··●·█ beats 2/5      medium · avg 55%        1.1%  typical
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   40.5%  ▂··▂·▂▄▄·●██ beats 7/18     medium · avg 61%        1.1%  at its level
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     58.4%  █·····▅▃▃●▃█ beats 7/12     medium · avg 70%        1.0%  several runs
@@ -112,7 +112,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-acl-216"></a><a href="https://aclanthology.org/2023.findings-acl.216.pdf">Better Zero-Shot Reasoning with Self-Ad…</a>        3    3% ▇
 <a name="paper-2212.13138v1"></a><a href="https://arxiv.org/html/2212.13138v1">Large Language Models Encode Clinical K…</a>        3    3% ▇
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    1% ▇
-<a name="acl-2023-acl-long-9"></a><a href="https://aclanthology.org/2023.acl-long.9.pdf">Natural Language to Code Generation in …</a>        1    1% ▇
+<a name="acl-2023-acl-long-9"></a><a href="https://aclanthology.org/2023.acl-long.9.pdf">Natural Language to Code Generation in …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 39.4
 </pre>

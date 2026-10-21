@@ -6,7 +6,7 @@
 
 Cartesia · released 2024-05 · proprietary
 
-**score 42.2** ±2.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 42.0** ±2.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,8 +22,8 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>   975.0  ●···▁▃··█▄▁▇ beats 0/18   avg 1078       64%  typical
-<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>  1027.5  ●·▃▃▃·▃██▃·▃ beats 0/12   avg 1080       33%  typical
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>   975.0  ●···▁▃··█▄▁▇ beats 0/18   avg 1080       64%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>  1027.5  ●·▃▃▃·▃██▃·▃ beats 0/12   avg 1082       33%  typical
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ source                                    results  share of the score
 <a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   64% ▇▇▇▇▇▇▇▇
 <a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   33% ▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 42.2
+weighted average                                   = 42.0
 </pre>
 
 <sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>

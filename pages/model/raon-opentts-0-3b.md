@@ -6,7 +6,7 @@
 
 KRAFTON · released 2026-04 · 0.3B params · cc-by-nc-4.0
 
-**score 64.9** ±1.9 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.1** ±1.9 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md) here, thou
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker simila…</a>   68.7%  ▄····▄·●▄█▄▄ beats 2/8    medium · avg 53%     13%  at its level
-<a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper large-…</a>    1.9%  ▄···█▄▄·●▄·▄ beats 6/8    avg 3.6%            6.3%  blunt
+<a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper large-…</a>    1.9%  ▄···█▄▄·●▄·▄ beats 6/8    avg 3.6%            6.2%  blunt
 </pre>
 
 </details>
@@ -39,8 +39,8 @@ test                                  result  vs the others in its run  difficul
 <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker simila…</a>     73.0%  ▄··█··▄·●··▄ beats 4/6    medium · avg 49%          13%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (predic…</a>  3.77 / 5  ▄·····●·▄▄·█ beats 1/6    medium · avg 2.98 / 5     11%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall speak…</a>     62.3%  ▄·●·█▄·····▄ beats 1/6    medium · avg 44%          11%  at its level
-<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.60 / 5  █··█●······▄ beats 5/6    medium · avg 2.84 / 5     10%  at its level
-<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER (lab)</a>            7.3%  ▄·······█·●█ beats 4/6    avg 26%                   10%  sharp
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.60 / 5  █··█●······▄ beats 5/6    medium · avg 2.83 / 5     10%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER (lab)</a>            7.3%  ▄·······█·●█ beats 4/6    avg 27%                  9.4%  sharp
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall WER (…</a>      2.9%  ▄··▄█····▄·● beats 5/6    avg 20%                  5.5%  noisy
 </pre>
 
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.9
+weighted average                                   = 65.1
 </pre>
 
 <sub>Licences: Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt))</sub>

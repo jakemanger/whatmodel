@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃▄▄█▃●▂▁▁   #12 of 126     42%      8
-image to image / edit…  ▁▁·▃▂▃█▃▃●▁▁     #7 of 62     26%      5
+image to image / edit…  ▁▁·▃▂▂█▃▅●▂▁     #7 of 62     26%      5
 </pre>
 
 <details><summary>text to image · #12 of 126 · 42% of its score</summary>
@@ -26,7 +26,7 @@ Trails [Reve 2.0](reve-2-0.md), [Seedream 5.0 Pro](seedream-5-0-pro.md), [Qwen-I
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1234.1  ▂▂▃▄▇█▄●▄▂·▂ beats 60/75  avg 1027             19%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1234.1  ▂▂▃▄▇█▅●▄▂·▂ beats 60/75  avg 1027             19%  typical
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    93.0%  ▄█▂▂▂▂▆▄·▂·● beats 16/16  hard · avg 26%       15%  sharp
 <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    93.1%  ▂█····▄▄▄··● beats 11/11  easy · avg 79%      2.4%  maxed out
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     62.9%  ▄·█···▄▄▄▄●▄ beats 7/8    medium · avg 36%    2.4%  blunt · at its level
@@ -45,7 +45,7 @@ Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-ban
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           79.8%  ▃▃▂·▃▆▂█·▃·● beats 20/20  hard · avg 45%           12%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1386.0  ▂▁▁▂▆▇█▄●▅▁▂ beats 42/53  avg 1153                7.3%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1385.2  ▂▁▁▃▆█▄█▄●▁▂ beats 42/53  avg 1153                7.2%  typical
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   61.2%  ▄▄····▄▄█▄·● beats 7/8    hard · avg 34%          3.3%  at its level
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1096.0  ▃▂····▂█▂▃▂● beats 14/14  avg 956                 2.9%  blunt
 <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>   22.3%  ▄········▄█● beats 4/4    very hard · avg 7.1%    1.1%  typical
@@ -58,9 +58,9 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>   41.6%  ▄··▄█····▄●▄ beats 5/6    very hard · avg 1.4%     16%  sharp · at its level
-<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    4.6%  ▄·▄···●·▄▄·▄ beats 3/6    very hard · avg 0.6%    5.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    4.6%  ▄·▄···●·▄▄·▄ beats 3/6    very hard · avg 0.6%    5.2%  sharp · too hard for it
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    87.8%  ▂··▂█▂▄▂▂·▂● beats 12/12  medium · avg 41%        4.0%  typical
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1071.6  ▁▁▁▄▂█▂●▁▂▁▁ beats 26/34  avg 875                 3.0%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1071.6  ▁▁▁▄▂█▂●▁▂▁▁ beats 26/34  avg 874                 3.0%  typical
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   90.7%  ▄···█··▄···● beats 4/5    easy · avg 78%          1.3%  maxed out
 <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   68.4%  ▂···▂·▂█▆▅·● beats 15/15  hard · avg 31%          1.2%  at its level
 <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   34.4%  ▅·▃·▃··▃·●▃▃ beats 6/9    hard · avg 28%          0.7%  blunt · at its level
@@ -74,7 +74,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   26% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   26% ▇▇▇
 <a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   16% ▇▇
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   15% ▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   12% ▇

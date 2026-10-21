@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.724.pdf">MMLU</a>                                 30.9%  ▁▁▁▁●▂▂▅██▆▄ beats 14/214  medium · avg 73%     33%  small run
+<a href="https://aclanthology.org/2023.acl-long.724.pdf">MMLU</a>                                 30.9%  ▁▁▁▁●▂▂▅██▆▄ beats 14/214  medium · avg 74%     33%  small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   21.4%  ●····▃·▃▃█▅▅ beats 0/10    easy · avg 81%       13%  typical
 <a href="https://aclanthology.org/2023.acl-long.806.pdf">Super-NaturalInstructions English…</a>   40.3%  ▄·▄······▄●█ beats 3/5     easy · avg 77%       13%  at its level · small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    25.0%  ▂▂··●·▂··▂█▄ beats 2/10    medium · avg 56%     12%  blunt

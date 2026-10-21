@@ -6,7 +6,7 @@
 
 SparkAudio · released 2025-02 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 51.7** ±3.2 · #61 of 118 · from 6 benchmark results across 2 sources
+**score 51.8** ±3.2 · #61 of 119 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 task           vs the others       rank  counts  tests
-voice cloning  ▁·▁▁▁▁▁●▇█▃▃   #29 of 37     81%      4
+voice cloning  ▁·▁▁▁▁▁●▇█▃▃   #29 of 37     82%      4
 </pre>
 
-<details><summary>voice cloning · #29 of 37 · 81% of its score</summary>
+<details><summary>voice cloning · #29 of 37 · 82% of its score</summary>
 
 Beats [CosyVoice-300M](cosyvoice-300m.md) here, though they rank higher overall.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker simila…</a>   65.7%  ▁·●··▂·█▄·▃▄ beats 2/25   medium · avg 62%     32%  at its level
 <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker simila…</a>   57.2%  ▁·●▂▂█▆▃▅··▂ beats 1/30   medium · avg 53%     32%  at its level
 <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper large-…</a>    2.3%  ▁···▂▂▂▂●▆▄▂ beats 13/35  avg 3.6%             10%  blunt
-<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER</a>     1.7%  ▁·▂▁▁▁▂▃●█·▂ beats 13/30  avg 2.1%            7.1%  blunt
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER</a>     1.7%  ▁·▂▁▁▁▂▃●█·▂ beats 13/30  avg 2.1%            7.0%  blunt
 </pre>
 
 </details>
@@ -49,10 +49,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   82% ▇▇▇▇▇▇▇▇▇▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   14% ▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 51.7
+weighted average                                   = 51.8
 </pre>
 
 <sub>Licences: DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>

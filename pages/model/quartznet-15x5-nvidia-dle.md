@@ -22,8 +22,8 @@ Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=libri
 
 <pre>
 test                              result  vs the others in its run   difficulty  counts  why
-<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-clean WER (lab)</a>    3.7%  ▁·▁·▁▁▁●▃▇█▆ beats 11/100  avg 3.5%       17%  small run
-<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-other WER (lab)</a>   10.7%  ●▁▁▂▅▃▅▄█▂▂▁ beats 0/54    avg 10%        16%  small run
+<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-clean WER (lab)</a>    3.7%  ▁·▁·▁▁▁●▃▇█▆ beats 13/102  avg 3.5%       17%  small run
+<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-other WER (lab)</a>   10.7%  ▁···●▁▁▆▆█▆▁ beats 1/56    avg 10%        16%  small run
 </pre>
 
 </details>

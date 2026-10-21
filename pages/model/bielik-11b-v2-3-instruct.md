@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-08 · 11.17B params · apache-2.0
 
-**score 51.0** ±2.0 · #345 of 725 · from 6 benchmark results across 5 sources
+**score 51.0** ±2.0 · #349 of 729 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #286 of 306*     28%      2
+agent tasks  ▁▁●▆█▅▅▅▅▄▂▁   #290 of 310*     28%      2
 </pre>
 
-<details><summary>agent tasks · #286 of 306 · 28% of its score</summary>
+<details><summary>agent tasks · #290 of 310 · 28% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 0.81B params · cc-by-4.0
 
-**score 59.9** ±2.1 · #33 of 162 · from 5 benchmark results across 3 sources
+**score 59.9** ±2.1 · #33 of 163 · from 5 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,11 +22,11 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   23.8%  ▂····▂···▂●█ beats 5/11   avg 46%        29%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   23.8%  ▂····▂···▂●█ beats 5/11   avg 46%        30%  typical
 <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   19.1%  ▂▂····▂·▅·▃● beats 9/12   avg 52%        25%  sharp
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">LibriSpeech test-clean WER</a>            1.6%  ▁···▁▁▂·▄▄█● beats 42/56  avg 2.3%       20%  blunt
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.3%  ▁▁▁▃··▁▁▂██● beats 73/86  avg 8.2%       16%  blunt
-<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">FLEURS English test WER</a>               4.8%  ▁··▁▁▁▁▁▁▃●▁ beats 30/56  avg 5.8%      8.0%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">FLEURS English test WER</a>               4.8%  ▁··▁▁▁▁▁▁▃●▁ beats 30/56  avg 5.8%      7.9%  blunt
 </pre>
 
 </details>

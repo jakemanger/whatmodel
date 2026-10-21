@@ -25,7 +25,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1013.3  ▂▂●▄▇█▄▂▄▂·▂ beats 8/75   avg 1027             57%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1013.3  ▂▂●▄▇█▅▂▄▂·▂ beats 8/75   avg 1027             57%  typical
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              61.5%  █●·▄·▄·█···▄ beats 2/8    easy · avg 71%       20%  at its level
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   12.2%  ▃··▃·●▃▃▅··▃ beats 2/9    hard · avg 24%       12%  typical
 <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   50.8%  █··█▄●·▄▄·▄▄ beats 5/9    medium · avg 51%     10%  at its level

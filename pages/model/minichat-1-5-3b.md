@@ -6,7 +6,7 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 35.1** ±2.4 · #828 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.1** ±2.4 · #833 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #433 of 466*     97%      2
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▃   #436 of 469*     97%      2
 </pre>
 
-<details><summary>chat &amp; writing · #433 of 466 · 97% of its score</summary>
+<details><summary>chat &amp; writing · #436 of 469 · 97% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

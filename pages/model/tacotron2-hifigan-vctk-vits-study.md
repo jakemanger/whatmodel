@@ -6,7 +6,7 @@
 
 VITS study (public implementations) · released 2021-06 · closed weights
 
-**score 19.4** ±5.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 19.2** ±5.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       12% ▇
-weighted average                                   = 19.4
+weighted average                                   = 19.2
 </pre>
 
 <sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt))</sub>

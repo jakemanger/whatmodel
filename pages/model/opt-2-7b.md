@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 2.7B params · opt-175b-license-noncommercial
 
-**score 18.6** ±0.7 · #697 of 725 · from 40 benchmark results across 9 sources
+**score 18.6** ±0.7 · #701 of 729 · from 40 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 77.0%  ▁·▁▁▁▅●█▆▂▁▁ beats 26/67   very easy · avg 96%    1.8%  at its level
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   19.9%  ●█···██····█ beats 0/4     easy · avg 66%         1.6%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">Social IQA</a>                           40.8%  ▁···▁●█▁▁▁·▁ beats 4/26    hard · avg 56%         0.9%  blunt
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">OpenBookQA</a>                           25.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 1/26    hard · avg 48%         0.8%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">OpenBookQA</a>                           25.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 1/26    hard · avg 49%         0.8%  too hard for it
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">Mintaka (English) closed-book zer…</a>   19.8%  ▄····●···▄·█ beats 1/4     medium · avg 48%       0.6%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 14/276  medium · avg 72%       0.4%  noisy
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             60.8%  ▂·····▅█●▆▆█ beats 11/24   medium · avg 73%       0.2%  blunt · at its level

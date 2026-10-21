@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
-**score 34.9** ±1.4 · #622 of 725 · from 9 benchmark results across 2 sources
+**score 34.9** ±1.4 · #626 of 729 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #336 of 395*     11%      2
+chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #339 of 398*     11%      2
 math            ▁▁●▅█▆▄█▄▁▁▁   #381 of 427*     30%      2
 </pre>
 
-<details><summary>chat &amp; writing · #336 of 395 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #339 of 398 · 11% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Comm
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       68.3%  ▂▃··●▂▅█▆▃▂▃ beats 4/22   very easy · avg 87%     25%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   20.7%  ●▃█▂▂▆·····▁ beats 1/22   medium · avg 57%       5.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   20.7%  ●▃█▂▂▆·····▁ beats 1/22   medium · avg 58%       5.8%  typical
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           40.0%  ▁●·▁·▁▁█·▃▃▅ beats 2/22    easy · avg 75%       29%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 35.0%  ●▄·▁▁·▅█·▄▄▁ beats 0/22    medium · avg 72%     20%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   45.0%  ▃▁▁▁▁▁●▁▂█▅▁ beats 60/276  medium · avg 72%    4.1%  at its level · noisy
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          12.9%  ▁●▁▃▃▃▁█▁▃·▄ beats 1/21    hard · avg 30%      3.7%  typical
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          12.9%  ▁●▁▃▃▃▁█▁▃·▄ beats 1/21    hard · avg 31%      3.7%  typical
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 48.7%  ▃▃●·▃▃·▅█▂▅▂ beats 4/21    medium · avg 60%    0.9%  blunt · at its level
 </pre>
 

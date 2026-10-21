@@ -6,7 +6,7 @@
 
 Collabora · released 2024-05 · mit
 
-**score 28.0** ±3.3 · #108 of 118 · from 3 benchmark results across 2 sources
+**score 27.7** ±3.3 · #109 of 119 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.68 / 5  ▅·█●▅·█▃▃▅·▅ beats 5/17   easy · avg 4.03 / 5       83%  at its level
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.12 / 5  ▅··▃▅··▅█●██ beats 11/17  medium · avg 3.30 / 5    7.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.12 / 5  ▅··▃▅··▅█●██ beats 11/17  medium · avg 3.29 / 5    7.0%  blunt · at its level
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     86.2%  ▂▂█·▂·●▆▂·▄▂ beats 7/17   very easy · avg 89%      5.8%  blunt
 </pre>
 
@@ -38,7 +38,7 @@ source                                 results  share of the score
 <a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                2   90% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>        1    6% ▇
 prior: pull toward the middle                     4% ▇
-weighted average                                = 28.0
+weighted average                                = 27.7
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>

@@ -6,7 +6,7 @@
 
 SILMA AI · released 2026-03 · 0.15B params · apache-2.0
 
-**score 48.0** ±9.7 · #71 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±9.7 · #72 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Deepgram · released 2025-02 · proprietary
 
-**score 61.3** ±1.6 · #23 of 162 · from 17 benchmark results across 12 sources
+**score 61.3** ±1.6 · #23 of 163 · from 17 benchmark results across 12 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -35,19 +35,19 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    1.4%  ▃·▃▅·▅▅·●▅██ beats 8/16   avg 4.8%           22%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    1.4%  ▃·▃▅·▅▅·●▅██ beats 8/16   avg 4.7%           21%  typical
 <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpeech …</a>   10.1%  █·▄··▄··●·▄▄ beats 4/6    avg 37%            11%  sharp
 <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    9.5%  ●▃▃▅▃···▃··▃ beats 1/9    avg 15%           6.8%  typical
 <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canonical …</a>   90.9%  ▄···▄··▄▄▄·● beats 5/6    easy · avg 77%    6.5%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    2.5%  ▃·····●▅█▃▅▅ beats 1/11   avg 3.4%          5.0%  typical
-<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic dialec…</a>   46.6%  █··█·█●··█·█ beats 3/5    avg 79%           5.0%  typical
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic dialec…</a>   46.6%  █··█·█●··█·█ beats 3/5    avg 78%           5.0%  typical
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus WER…</a>    7.1%  █··········● beats 2/2    avg 16%           4.9%  small run
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech corpu…</a>    8.9%  █··█·······● beats 2/2    avg 19%           4.9%  small run
 <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (300 E…</a>    8.2%  ▄·●·▄·▄█···▄ beats 1/6    avg 12%           4.7%  typical
 <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22-key…</a>   15.3%  ●··········▄ beats 1/2    avg 29%           4.3%  small run
-<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus WER</a>       6.6%  ●··█·······█ beats 0/2    avg 9.9%          3.7%  small run
+<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus WER</a>       6.6%  ●··█·······█ beats 0/2    avg 9.8%          3.7%  small run
 <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-lang…</a>    7.5%  ●·····▄··▄█▄ beats 0/5    avg 7.9%          2.9%  typical
-<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    2.9%  ▂·····▄▂●▂▂▄ beats 7/11   avg 4.6%          2.4%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    2.9%  ▂·····▄▂●▂▂▄ beats 7/11   avg 4.6%          2.3%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   16.1%  ▃·●▅··▃▃▅▅█▃ beats 1/13   avg 16%           2.2%  blunt
 <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   14.1%  ▃·▅·▅▃▃·▃●▃█ beats 8/12   avg 24%           1.5%  blunt
 <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · RU 10-clip pilot me…</a>   31.0%  ●··········█ beats 0/1                         —  not counted yet: no other model in the …
@@ -62,7 +62,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-stt-pipecat-bsd2"></a><a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · semantic WER re…</a>        1   22% ▇▇▇
+<a name="speech-stt-pipecat-bsd2"></a><a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · semantic WER re…</a>        1   21% ▇▇▇
 <a name="speech-stt-ru-mit"></a><a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT benchmark by domain</a>                 3   14% ▇▇
 <a name="speech-stt-voicecodebench-report"></a><a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench</a>                                  2   11% ▇
 <a name="speech-stt-bangla-riverborn-mit"></a><a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla Speech-to-Text Benchmark v1.0</a>            1   11% ▇

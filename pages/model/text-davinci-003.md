@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #452 of 466*    0.3%      1
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #455 of 469*    0.3%      1
 math            ▁▁▃▆█●▅█▄▁▁▁    #278 of 526     29%      2
 </pre>
 
-<details><summary>chat &amp; writing · #452 of 466 · 0.3% of its score</summary>
+<details><summary>chat &amp; writing · #455 of 469 · 0.3% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.emnlp-main.216.pdf">GSM8K</a>   56.5%  █··█······▄● beats 5/5    easy · avg 66%       23%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    36.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 13/18  medium · avg 47%    6.4%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    36.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 13/18  medium · avg 48%    6.4%  sharp · at its level · several runs
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test   result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">AQuA-RAT</a>                             46.9%  █··▁▁▁··▁●▁▁ beats 25/27    medium · avg 55%        16%  sharp · at its level · several runs
+<a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">AQuA-RAT</a>                             46.9%  █··▁▁▁··▁●▁▁ beats 25/27    medium · avg 56%        16%  sharp · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        62.8%  █·····▂▂▃▂▄● beats 34/38    easy · avg 80%         8.7%  sharp · at its level · small run · seve…
 <a href="https://aclanthology.org/2023.ijcnlp-main.20.pdf">SVAMP</a>                                79.5%  █▆▆▅▂▅▂▅▂▂▅● beats 29/30    easy · avg 84%         6.4%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 64.8%  ▁···▁··▃▁▅●█ beats 12/18    easy · avg 74%         6.2%  at its level · several runs
@@ -60,7 +60,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>   68.4%  █·········▄● beats 3/3      medium · avg 68%       1.4%  sharp · at its level · noisy
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   66.0%  ▄········●·█ beats 1/3      easy · avg 73%         1.4%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   43.7%  ▂··▄·▂▆●▂█·▂ beats 7/14     medium · avg 53%       1.4%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   15.8%  ▄······●·█·▄ beats 1/4      medium · avg 38%       1.4%  sharp · at its level
+<a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   15.8%  ▄······●·█·▄ beats 1/4      medium · avg 38%       1.3%  sharp · at its level
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>   31.2%  █······●··██ beats 1/3      medium · avg 46%       1.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>   12.2%  █··●····█··█ beats 1/3      very hard · avg 20%    0.9%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    52.7%  ▂▂··▂·▂··▂█● beats 9/10     medium · avg 56%       0.8%  blunt · at its level

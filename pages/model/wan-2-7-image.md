@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄●█▃▁▂▁▁   #52 of 126*     46%      1
-image to image / edit…  ▁▁·▃▂▃█●▃▄▁▁    #25 of 62*     53%      2
+image to image / edit…  ▁▁·▃▂▂█●▅▅▂▁    #25 of 62*     53%      2
 </pre>
 
 <details><summary>text to image · #52 of 126 · 46% of its score</summary>
@@ -26,7 +26,7 @@ Trails [Qwen-Image-2512](qwen-image-2512.md), [HunyuanImage 3.0](hunyuanimage-3-
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1101.1  ▂▂▃▄●█▄▂▄▂·▂ beats 25/75  avg 1027       46%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1101.1  ▂▂▃▄●█▅▂▄▂·▂ beats 25/75  avg 1027       46%  typical
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   64.6%  ▃▃▂·▃▆▂█·●·▃ beats 18/20  hard · avg 45%     36%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1301.2  ▂▁▁▂▆▇●▄▆▅▁▂ beats 28/53  avg 1153           17%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1300.6  ▂▁▁▃▆█▄●▄█▁▂ beats 28/53  avg 1153           17%  typical
 </pre>
 
 </details>

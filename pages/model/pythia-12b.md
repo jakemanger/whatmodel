@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 11.8B params · apache-2.0
 
-**score 24.7** ±0.9 · #681 of 725 · from 22 benchmark results across 7 sources
+**score 24.7** ±0.9 · #685 of 729 · from 22 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,8 +33,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">LAMBADA (OpenAI version), last-wo…</a>   70.6%  ▁··▂▁▁▁▂▆●▅▃ beats 15/26   very easy · avg 87%    4.4%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>    7.8%  ●···█·▄█··▄▄ beats 0/7     medium · avg 56%       3.6%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   15.3%  ▅····▃●·██·█ beats 4/13    medium · avg 52%       2.2%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.2%  ▃▅●··▅▃·█▃▃▅ beats 3/13    medium · avg 60%       1.8%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">OpenBookQA</a>                           26.4%  █·▁▁●·▁▃▅▇▃▄ beats 9/26    hard · avg 48%         1.8%  too hard for it
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.2%  ▃▅●··▅▃·█▃▃▅ beats 3/13    medium · avg 61%       1.8%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">OpenBookQA</a>                           26.4%  █·▁▁●·▁▃▅▇▃▄ beats 9/26    hard · avg 49%         1.8%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 12/26   hard · avg 56%         1.4%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   34.0%  ▃▁●▁▁▁▁▁▂█▅▁ beats 39/276  medium · avg 72%       0.9%  noisy
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.1%  ●▁····▃▁·▁·▁ beats 3/14    hard · avg 66%         0.3%  sharp · too hard for it · noisy

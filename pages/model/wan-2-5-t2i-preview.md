@@ -25,7 +25,7 @@ Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. T
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1115.6  ▂▂▃▄●█▄▂▄▂·▂ beats 31/75  avg 1027       97%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1115.6  ▂▂▃▄●█▅▂▄▂·▂ beats 31/75  avg 1027       97%  typical
 </pre>
 
 </details>

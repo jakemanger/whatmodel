@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 44.1** ±1.1 · #496 of 725 · from 9 benchmark results across 2 sources
+**score 44.1** ±1.1 · #499 of 729 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #347 of 460     96%      8
+coding  ▁▁▁▃▆●█▇▅▄▃▁   #355 of 466     96%      8
 </pre>
 
-<details><summary>coding · #347 of 460 · 96% of its score</summary>
+<details><summary>coding · #355 of 466 · 96% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           69.2%  █···●██·██·█ beats 1/6    easy · avg 77%       11%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      56.7%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 69%      8.1%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          59.4%  ▄····●▄·▄·█▄ beats 1/6    easy · avg 66%      7.0%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     45.4%  █·█●·█··█·██ beats 2/6    medium · avg 55%    3.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     45.4%  █·█●·█··█·██ beats 2/6    medium · avg 56%    3.3%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     37.5%  ▄·●··▄·▄··▄▄ beats 1/6    medium · avg 54%    1.2%  blunt · at its level
 </pre>
 

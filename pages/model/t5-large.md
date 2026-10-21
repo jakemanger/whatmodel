@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.738B params · apache-2.0
 
-**score 16.7** ±2.4 · #700 of 725 · from 8 benchmark results across 2 sources
+**score 16.7** ±2.4 · #704 of 729 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

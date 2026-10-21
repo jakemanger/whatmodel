@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.46B params · apache-2.0
 
-**score 42.1** ±0.8 · #526 of 725 · from 29 benchmark results across 2 sources
+**score 42.1** ±0.8 · #530 of 729 · from 29 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #251 of 306*    1.8%      1
+agent tasks     ▁▁▃●█▅▅▅▅▄▂▁   #254 of 310*    1.8%      1
 coding          █··········●        #1 of 4     25%      7
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #237 of 395    6.3%      3
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃    #241 of 398    6.3%      3
 math            ▁▁▃▅●▆▄█▄▁▁▁    #327 of 427     30%      7
 </pre>
 
-<details><summary>agent tasks · #251 of 306 · 1.8% of its score</summary>
+<details><summary>agent tasks · #254 of 310 · 1.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall.
 
@@ -50,7 +50,7 @@ test                result  vs the others in its run    difficulty           cou
 
 </details>
 
-<details><summary>chat &amp; writing · #237 of 395 · 6.3% of its score</summary>
+<details><summary>chat &amp; writing · #241 of 398 · 6.3% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -69,12 +69,12 @@ Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B I
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                                69.6%  █····▄●▄···█ beats 3/6    very easy · avg 86%     15%  sharp · at its level · several runs
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>           35.0%  ▅····●·█▃▃·▅ beats 3/10   medium · avg 50%       4.1%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                                69.6%  █····▄●▄···█ beats 3/6    very easy · avg 87%     15%  sharp · at its level · several runs
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>           35.0%  ▅····●·█▃▃·▅ beats 3/10   medium · avg 50%       4.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (lab)</a>                   49.4%  ▁·▃▁▁▂▁█●▁▃▃ beats 20/27  medium · avg 59%       3.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (lab)</a>                   65.7%  ▃▃····●·▅▅█▃ beats 2/10   easy · avg 78%         2.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   27.5%  █·●▄██···█·▄ beats 2/10   medium · avg 46%       2.1%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                             1.0%  ▄●··▄···▄··█ beats 1/6    hard · avg 29%         1.8%  sharp · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                             1.0%  ▄●··▄···▄··█ beats 1/6    hard · avg 30%         1.8%  sharp · noisy
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                             47.2%  ▄··█●·▄···▄▄ beats 3/6    easy · avg 77%         1.6%  at its level · noisy
 </pre>
 
@@ -85,13 +85,13 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                               result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BIG-Bench Hard (lab)</a>                59.7%  ▁▁▁▁▂▄▅●█▃▃▁ beats 86/155  easy · avg 75%      7.8%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (lab)</a>     29.7%  ▂▁▂▂●▃▆▃▅█▄▃ beats 19/104  hard · avg 37%      7.1%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (lab)</a>     29.7%  ▂▁▂▂●▃▆▃▅█▄▃ beats 19/104  hard · avg 37%      7.2%  sharp · too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (lab)</a>                          59.7%  ▁▁▁▁▁▂▂▅●█▆▄ beats 85/214  easy · avg 74%      6.6%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                            27.6%  █···█·●█·███ beats 2/6     medium · avg 46%    5.8%  several runs
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                       43.4%  ▂····●▂▄▄▄█▄ beats 4/36    medium · avg 51%    2.9%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                         49.4%  ▂▁▁▂▃●▄▄▅██▃ beats 10/46   medium · avg 56%    2.4%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)</a>   24.9%  ▄·█·●······█ beats 3/6     medium · avg 42%    2.2%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                        24.3%  ●··········█ beats 0/5     hard · avg 39%      2.1%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                        24.3%  ●··········█ beats 0/5     hard · avg 40%      2.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>

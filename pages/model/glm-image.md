@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃●▄█▃▁▂▁▁   #70 of 126     90%      9
-image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #43 of 62*    8.8%      1
+image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁   #43 of 62*    8.8%      1
 </pre>
 
 <details><summary>text to image · #70 of 126 · 90% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Recraft V3](recraft-v3.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1012.1  ▂▂●▄▇█▄▂▄▂·▂ beats 6/75   avg 1027             58%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1012.1  ▂▂●▄▇█▅▂▄▂·▂ beats 6/75   avg 1027             58%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>   83.9%  ▄····▄●▄▄█▄█ beats 2/10   easy · avg 82%       25%  typical
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>     48.2%  ●▅▅·▅▅█·█··▃ beats 0/17   medium · avg 46%    6.3%  blunt · at its level
 <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">DPG-Bench (lab)</a>                     84.8%  ▄·▂·▂●█▄▂▄▂▂ beats 4/17                          —  not counted yet: no other model in the …

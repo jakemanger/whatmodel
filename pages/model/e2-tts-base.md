@@ -6,7 +6,7 @@
 
 SWivid (SJTU X-LANCE) · released 2024-10 · 0.3332B params · cc-by-nc-4.0
 
-**score 59.8** ±1.8 · #41 of 118 · from 20 benchmark results across 5 sources
+**score 60.0** ±1.8 · #41 of 119 · from 20 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [MOSS-TTS
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>     71.0%  ▁·▂▂▂█●▃▅··▂ beats 17/30  medium · avg 53%          16%  at its level · several runs
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  3.29 / 5  ▄········█·● beats 3/3    medium · avg 2.47 / 5    7.9%  at its level
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  3.29 / 5  ▄········█·● beats 3/3    medium · avg 2.46 / 5    8.0%  at its level
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>     73.0%  ▁·▂··●·█▄·▃▄ beats 4/25   medium · avg 62%         7.2%  at its level
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>      2.2%  ▁···▂▂▂●█▆▄▂ beats 9/35   avg 3.6%                 6.8%  blunt · several runs
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.20 / 5  ▄█▄··●···▄·▄ beats 4/6    medium · avg 2.52 / 5    3.4%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.20 / 5  ▄█▄··●···▄·▄ beats 4/6    medium · avg 2.51 / 5    3.5%  at its level · small run
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER…</a>      2.0%  ▁·▂▁▁●▂▃▅█·▂ beats 5/30   avg 2.1%                 2.0%  blunt
 </pre>
 
@@ -40,12 +40,12 @@ test                                  result  vs the others in its run  difficul
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     69.0%  ▄·········█● beats 3/3    medium · avg 52%          18%  at its level · several runs
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.37 / 5  ▅·█▅▅·█▃▃▅·● beats 16/17  easy · avg 4.03 / 5       14%  typical
-<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.9%  █·····●·█··█ beats 1/3    avg 4.1%                 9.3%  small run · several runs
-<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  3.47 / 5  ●···█······█ beats 0/2    medium · avg 3.15 / 5    5.2%  at its level · small run
-<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>    1116.7  █▄█····▄··●▄ beats 6/7    avg 995                  3.8%  typical
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.41 / 5  ▅··▃▅··▅█▅█● beats 17/17  medium · avg 3.30 / 5    2.1%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     89.8%  ▄▄·····▄··▄● beats 5/5    very easy · avg 88%      1.7%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.37 / 5  ▅·█▅▅·█▃▃▅·● beats 16/17  easy · avg 4.03 / 5       13%  typical
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.9%  █·····●·█··█ beats 1/3    avg 4.2%                 9.3%  small run · several runs
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  3.47 / 5  ●···█······█ beats 0/2    medium · avg 3.13 / 5    5.3%  at its level · small run
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>    1116.7  █▄█····▄··●▄ beats 6/7    avg 995                  3.7%  typical
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.41 / 5  ▅··▃▅··▅█▅█● beats 17/17  medium · avg 3.29 / 5    2.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     89.8%  ▄▄·····▄··▄● beats 5/5    very easy · avg 87%      1.6%  blunt
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     89.5%  ▂▂█·▂·█▆▂·●▂ beats 15/17  very easy · avg 89%      1.2%  blunt
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TTSDS …</a>     86.3%  ▄····▄▄▄▄▄·● beats 7/7    very easy · avg 86%      0.6%  blunt
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WER of…</a>     30.8%  ▄▄●··█▄··▄·▄ beats 2/7    avg 17%                  0.1%  blunt · noisy
@@ -59,13 +59,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        7   40% ▇▇▇▇▇
-<a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   35% ▇▇▇▇
-<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   16% ▇▇
-<a name="speech-sap-voicerecon-ccby"></a><a href="https://arxiv.org/html/2606.21343v1">An Evaluation Framework for TTS Voice R…</a>        3    5% ▇
+<a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        7   41% ▇▇▇▇▇
+<a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   36% ▇▇▇▇
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   15% ▇▇
+<a name="speech-sap-voicerecon-ccby"></a><a href="https://arxiv.org/html/2606.21343v1">An Evaluation Framework for TTS Voice R…</a>        3    4% ▇
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 59.8
+weighted average                                   = 60.0
 </pre>
 
 <sub>Licences: DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>

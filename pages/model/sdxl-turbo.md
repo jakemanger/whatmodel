@@ -36,7 +36,7 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.695 FID     10%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.697 FID     10%  typical
 </pre>
 
 </details>

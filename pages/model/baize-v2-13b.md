@@ -6,7 +6,7 @@
 
 Project Baize · released 2023-05 · cc-by-nc-4.0
 
-**score 33.8** ±2.5 · #840 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.8** ±2.5 · #845 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #448 of 466*     97%      2
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▃   #451 of 469*     97%      2
 </pre>
 
-<details><summary>chat &amp; writing · #448 of 466 · 97% of its score</summary>
+<details><summary>chat &amp; writing · #451 of 469 · 97% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 25.7** ±2.2 · #677 of 725 · from 11 benchmark results across 7 sources
+**score 25.7** ±2.2 · #681 of 729 · from 11 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #388 of 395*     42%      2
+chat &amp; writing  ▁▁●▃▆▄▆█▆▆▇▃   #391 of 398*     42%      2
 </pre>
 
-<details><summary>chat &amp; writing · #388 of 395 · 42% of its score</summary>
+<details><summary>chat &amp; writing · #391 of 398 · 42% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [ChatGLM2-6B](chatglm2-6b.md), [Qwen1.5 1.8B Chat](qwen1-5-1-8b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 

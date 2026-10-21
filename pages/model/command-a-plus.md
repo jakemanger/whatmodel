@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 63.9** ±1.0 · #156 of 725 · from 23 benchmark results across 3 sources
+**score 63.8** ±1.0 · #157 of 729 · from 23 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,55 +16,55 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #143 of 306     24%      6
-coding              ▁▁▁▃▆██●▆▄▃▁   #151 of 460    9.1%      3
-math                ▁▁▃▅█▆▄●▄▁▁▁   #121 of 427     17%      3
-vision &amp; documents  ······●·····      #1 of 1*    5.9%      2
+agent tasks         ▁▁▃▆█▅●▅▅▄▂▁   #142 of 310     24%      6
+coding              ▁▁▁▃▆▇█●▅▄▃▁   #160 of 466    9.2%      3
+math                ▁▁▃▅█▆▄●▄▁▁▁   #121 of 427     16%      3
+vision &amp; documents  ······●·····      #1 of 1*    5.8%      2
 </pre>
 
-<details><summary>agent tasks · #143 of 306 · 24% of its score</summary>
+<details><summary>agent tasks · #142 of 310 · 24% of its score</summary>
 
-Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.6%    8.1%  sharp · several runs
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.5%    8.3%  sharp · several runs
 <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>   85.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 63/89  hard · avg 26%          5.7%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>      1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.9%    3.5%  too hard for it
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>   27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.2%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>       14.4%  ●··········█ beats 0/5    very hard · avg 15%     2.6%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>          5.8%  ●·▄▄······▄▄ beats 1/5    very hard · avg 5.1%    1.0%  blunt
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>   27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.1%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>       14.4%  ●··········█ beats 0/5    very hard · avg 15%     2.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>          5.8%  ●·▄▄······▄▄ beats 1/5    very hard · avg 5.2%    1.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>coding · #151 of 460 · 9.1% of its score</summary>
+<details><summary>coding · #160 of 466 · 9.2% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   86.1%  ▄······▄●▄·█ beats 2/5    medium · avg 49%       4.2%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   14.4%  ●··········█ beats 0/5    very hard · avg 15%    2.6%  sharp · at its level · noisy
-<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>    38.0%  ▁····▃▄▄▄●▆▂ beats 21/34  hard · avg 19%         2.2%  at its level · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   86.1%  ▄······▄●▄·█ beats 2/5    medium · avg 49%       4.3%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   14.4%  ●··········█ beats 0/5    very hard · avg 15%    2.7%  sharp · at its level · noisy
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>    38.0%  ▁····▃▄▄▅●▇▃ beats 22/37  hard · avg 19%         2.2%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #121 of 427 · 17% of its score</summary>
+<details><summary>math · #121 of 427 · 16% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [A.X K1 (519B-A33B)](ax-k1.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      easy · avg 65%      8.4%  sharp
-<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 46%    4.6%  sharp · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      medium · avg 65%    8.2%  sharp
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 46%    4.5%  sharp · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   73.5%  █▄●········█ beats 3/5      hard · avg 31%      3.7%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #1 of 1 · 5.9% of its score</summary>
+<details><summary>vision &amp; documents · #1 of 1 · 5.8% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
@@ -80,7 +80,7 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         75.6%  █···●█·█··██ beats 1/5    hard · avg 41%           21%  sharp · at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             79.0%  ●·▄▄····▄··█ beats 0/5    medium · avg 55%        6.7%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 11.4%  ●▄······▄·▄▄ beats 0/5    very hard · avg 4.7%    6.1%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 11.4%  ●▄······▄·▄▄ beats 0/5    very hard · avg 4.6%    6.0%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    73.9%  ▄···▄▄··●··█ beats 3/5    medium · avg 42%        4.5%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       45.8%  █··●·▄·····█ beats 2/5    hard · avg 25%          3.2%  at its level
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   68.7%  ▂·●··▂·▄▂·█▆ beats 1/12   medium · avg 63%        1.8%  noisy
@@ -101,7 +101,7 @@ source                                    results  share of the score
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        7   24% ▇▇▇
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                                    3    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 63.9
+weighted average                                   = 63.8
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

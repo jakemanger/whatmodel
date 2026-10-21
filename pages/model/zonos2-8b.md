@@ -6,7 +6,7 @@
 
 Zyphra · released 2026-06 · 8B params (0.9B active) · apache-2.0
 
-**score 56.5** ±2.4 · #51 of 118 · from 5 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 56.5** ±2.5 · #50 of 119 · from 5 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -34,10 +34,10 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      6.1%  ●·····█··▄██ beats 0/7    avg 8.3%                  26%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      9.3%  ●·····▄█▄█·▄ beats 0/7    avg 12%                   22%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      9.3%  ●·····▄█▄█·▄ beats 0/7    avg 11%                   22%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.40 / 5  ●··▄█▄····▄▄ beats 1/7    hard · avg 2.00 / 5       20%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.13 / 5  ▃●█···▃···▃▃ beats 1/7    medium · avg 2.52 / 5     19%  at its level
-<a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English TTS…</a>     87.5%  █··●██·····█ beats 1/4    easy · avg 79%            10%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.13 / 5  ▃●█···▃···▃▃ beats 1/7    medium · avg 2.53 / 5     19%  at its level
+<a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English TTS…</a>     87.5%  █··●██·····█ beats 1/4    easy · avg 79%            11%  typical
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                             results  share of the score
 <a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report (lab)</a>            4   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot (lab)</a>        1   10% ▇
+<a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot (lab)</a>        1   11% ▇
 prior: pull toward the middle                 2% ▇
 weighted average                            = 56.5
 </pre>

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 44.9** ±0.5 · #475 of 725 · from 38 benchmark results across 10 sources
+**score 44.8** ±0.5 · #480 of 729 · from 38 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #232 of 306*    0.4%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #330 of 460     12%      5
+agent tasks     ▁▁▃▆●▅▅▅▅▄▂▁   #236 of 310*    0.4%      1
+coding          ▁▁▁▃▆●█▇▅▄▃▁    #336 of 466     12%      5
 chat &amp; writing  ●··········█       #2 of 2*    0.4%      1
 math            ▁▁▃●█▆▄█▄▁▁▁    #358 of 427     21%      5
 </pre>
 
-<details><summary>agent tasks · #232 of 306 · 0.4% of its score</summary>
+<details><summary>agent tasks · #236 of 310 · 0.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #330 of 460 · 12% of its score</summary>
+<details><summary>coding · #336 of 466 · 12% of its score</summary>
 
 Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -41,9 +41,9 @@ Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qw
 test                               result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   42.1%  ▁▂●▃▆█▆▃▂·▁▁ beats 6/47     medium · avg 57%    7.7%  sharp · at its level
 <a href="https://arxiv.org/html/2503.01743v2">HumanEval (lab)</a>                     70.1%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 133/205  easy · avg 81%      1.7%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2503.01743v2">HumanEval+ (lab)</a>                    62.8%  ▁·▁▁▂▃▄●█▅▄▃ beats 62/145   easy · avg 77%      1.6%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2503.01743v2">HumanEval+ (lab)</a>                    62.8%  ▁·▁▁▂▃▄●█▅▄▃ beats 62/145   easy · avg 78%      1.6%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2503.01743v2">MBPP (lab)</a>                          70.0%  ▁▁▁▄▅█▆●▄▁▂▁ beats 69/86    easy · avg 74%      0.9%  at its level · small run
-<a href="https://arxiv.org/html/2503.01743v2">MBPP+ (lab)</a>                         63.8%  ▁··▁▁▃▄●▆▄▁▁ beats 57/120   easy · avg 69%      0.6%  at its level · small run
+<a href="https://arxiv.org/html/2503.01743v2">MBPP+ (lab)</a>                         63.8%  ▁··▁▁▃▄●▆▄▁▁ beats 57/120   easy · avg 70%      0.6%  at its level · small run
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecified) …</a>   50.6%  ▁▁●▁▂▄▄▆█▃▂▁ beats 9/141  easy · avg 73%    0.4%  at its level · small run
+<a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecified) …</a>   50.6%  ▁▂●▂▂▄▆█▇▄▂▁ beats 9/142  easy · avg 73%    0.4%  at its level · small run
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM (lab)</a>                           49.6%  ▅●▃█·▅···▃·▃ beats 2/10   easy · avg 71%         6.1%  sharp · at its level
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          82.0%  ▁▄·▁▄●▅▅▅███ beats 13/43  very easy · avg 87%    5.6%  sharp
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          82.0%  ▁▄·▁▄●▅▅▅███ beats 13/43  very easy · avg 87%    5.5%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (lab)</a>                          76.9%  ●·█▄▄█···█·▄ beats 1/10   very easy · avg 90%    5.3%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   18.7%  ▁▁▁●█▂▇▇▄··▂ beats 6/38   hard · avg 30%         2.2%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH (lab)</a>                           49.8%  █▄█●···▄▄▄·▄ beats 5/10   medium · avg 61%       2.1%  at its level
@@ -81,7 +81,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (lab)</a>                  84.6%  ▂▂▂█●···▄··▂ beats 7/10     very easy · avg 89%    5.1%  sharp
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           43.0%  ●▄▄▄█▄▂·▄█·▄ beats 1/23     medium · avg 56%       4.7%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (lab)</a>                           65.5%  █▄█●▄▄·▄▄··▄ beats 5/10     easy · avg 75%         4.4%  at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            44.2%  ●▄▄▂▂█▂▄▂█▂▄ beats 0/22     medium · avg 61%       4.2%  at its level
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            44.2%  ●▄▄▂▂█▂▄▂█▂▄ beats 0/22     medium · avg 61%       4.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (lab)</a>                 63.1%  ██▄·●▄·▄▄··▄ beats 5/10     medium · avg 71%       3.5%  sharp · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (lab)</a>                     81.2%  ▂··▄●▂·▂···▄ beats 6/10     easy · avg 85%         2.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (lab)</a>                       47.4%  █▄▄·█●▄▄·▄·▄ beats 6/10     medium · avg 54%       2.5%  at its level
@@ -123,7 +123,7 @@ source                                    results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 <a name="libra-leaderboard"></a><a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">ai-forever LIBRA leaderboard</a>                    1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.9
+weighted average                                   = 44.8
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · ai-forever LIBRA leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>

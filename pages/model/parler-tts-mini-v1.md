@@ -6,7 +6,7 @@
 
 Hugging Face (Parler-TTS) · released 2024-08 · 0.88B params · apache-2.0
 
-**score 43.9** ±6.1 · #82 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.9** ±6.2 · #82 of 119 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.83 / 5  ▄·····▄·▄●·▄ beats 4/5    easy · avg 4.11 / 5     82%  at its level
-<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.7%  ▄··········● beats 3/5    avg 6.4%               2.6%  blunt · noisy
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.7%  ▄··········● beats 3/5    avg 6.5%               2.6%  blunt · noisy
 </pre>
 
 </details>

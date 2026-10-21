@@ -4540,14 +4540,7 @@
     "license": "mit",
     "params_b": 552,
     "active_b": 16,
-    "api": {
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "price_in": 0.15,
-      "price_out": 0.6,
-      "price_source": "https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepseek/models/deepseek-v4-flash-vision-exp.toml",
-      "price_note": "Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.",
-      "provider": "DeepSeek"
-    },
+    "api": null,
     "local": {
       "variants": [
         {
@@ -4564,7 +4557,8 @@
     },
     "context_k": 1000,
     "context_source": "https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-v4.1-flash.toml",
-    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "identity_note": "September checkpoint remains available as local weights. DeepSeek official API pricing observed 2026-10-21 states legacy Flash aliases now serve DeepSeek-V4.1-Flash-1017; the old direct-provider API route was removed to preserve checkpoint identity."
   },
   {
     "id": "kimi-k2",
@@ -10265,7 +10259,7 @@
     "name": "Inworld Realtime TTS-2",
     "provider": "Inworld",
     "category": "tts",
-    "released": "2026-08",
+    "released": "2026-05",
     "open_weights": false,
     "license": "proprietary",
     "api": {
@@ -10276,7 +10270,8 @@
       "price_source": "https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2",
       "price_note": "USD per 1M input characters. Realtime TTS 2.0, standard hosted endpoint. Character billing, not a token conversion. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped."
     },
-    "local": null
+    "local": null,
+    "released_source": "https://docs.inworld.ai/release-notes/tts"
   },
   {
     "id": "speechify-simba-3-2",
@@ -78200,5 +78195,418 @@
       "https://research.meta.ai/blog/muse-spark-open",
       "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
     ]
+  },
+  {
+    "id": "beam-1-0-501b-a23b",
+    "name": "Beam 1.0 501B A23B",
+    "provider": "Reflection",
+    "category": "llm",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": {
+      "url": "https://developers.reflection.ai/models",
+      "provider": "Reflection"
+    },
+    "local": null,
+    "model_repo": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+    "source": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/README.md",
+    "released_source": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/README.md",
+    "license": "apache-2.0",
+    "params_b": 501.3,
+    "active_b": 23.4,
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/README.md",
+    "context_note": "Official card: 1M context; exact 1,048,576 limit corroborated by Reflection developer model documentation, observed 2026-10-21.",
+    "identity_note": "Final 16 October released checkpoint; BF16 lab results, Arena settings retained per result. Earlier 5 October prerelease scores excluded."
+  },
+  {
+    "id": "deepseek-v4-1-flash-1017",
+    "name": "DeepSeek V4.1 Flash 1017",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "provider": "DeepSeek",
+      "price_in": 0.15,
+      "price_out": 0.6,
+      "price_source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "price_note": "USD per 1M tokens, off-peak uncached input/output. Peak rates are $0.30/$1.20, 01:00–04:00 and 06:00–10:00 UTC weekdays excluding Chinese public holidays. Cached input excluded. API deepseek-flash serves the 1017 checkpoint; old Flash aliases also route here. Observed 2026-10-21."
+    },
+    "local": null,
+    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md",
+    "released_source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md",
+    "license": "mit",
+    "context_k": 1000,
+    "context_source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "context_note": "1M tokens per official API pricing/specification, observed 2026-10-21."
+  },
+  {
+    "id": "nemotron-3-5-super-vl-120b-a12b",
+    "name": "Nemotron 3.5 Super VL 120B A12B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 240,
+          "gb_estimated": true,
+          "cmd": "vllm serve nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 \\\n  --served-model-name nemotron-3.5-super-vl \\\n  --tensor-parallel-size 4 \\\n  --trust-remote-code \\\n  --gpu-memory-utilization=0.85 \\\n  --allowed-local-media-path=/ \\\n  --max-num-seqs=32 \\\n  --limit-mm-per-prompt '{\"video\": 1, \"image\": 1}' \\\n  --video-pruning-rate 0.5 \\\n  --media-io-kwargs '{\"video\": {\"fps\": 2, \"num_frames\": 256}}' \\\n  --enable-auto-tool-choice \\\n  --tool-call-parser qwen3_coder \\\n  --reasoning-parser nemotron_v3 \\\n  --speculative_config.method mtp \\\n  --speculative_config.num_speculative_tokens 3",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+          "note": "Estimated weight storage from parameter count at BF16, excludes runtime and context memory. Follow pinned card dependency requirements."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+    "released_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+    "license": "open-mdw-1.1",
+    "params_b": 120,
+    "active_b": 12,
+    "context_k": 1000,
+    "context_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+    "context_note": "Official card context ceiling; actual runtime recipes may use a smaller window. Observed 2026-10-21.",
+    "identity_note": "Precision is retained in each measurement: lab rows BF16; Super VL Arena rows NVFP4. Quantized deployment is not a separate checkpoint ranking."
+  },
+  {
+    "id": "nemotron-3-5-bolt-74b-a9b",
+    "name": "Nemotron 3.5 Bolt 74B A9B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 148,
+          "gb_estimated": true,
+          "cmd": "wget https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/resolve/main/ultra_v3_reasoning_parser.py\n\nexport VLLM_USE_V2_MODEL_RUNNER=1\n\nvllm serve nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 \\\n  --trust-remote-code \\\n  --load-format auto \\\n  --tensor-parallel-size 1 \\\n  --max-model-len 262144 \\\n  --max-num-seqs 1 \\\n  --enable-chunked-prefill \\\n  --attention-backend FLASHINFER \\\n  --mamba-backend flashinfer \\\n  --mamba-cache-mode align \\\n  --seed 42 \\\n  --allowed-local-media-path / \\\n  --limit-mm-per-prompt '{\"video\":1,\"image\":1}' \\\n  --video-pruning-rate 0.5 \\\n  --media-io-kwargs '{\"video\":{\"fps\":2,\"num_frames\":256}}' \\\n  --enable-auto-tool-choice \\\n  --tool-call-parser qwen3_coder \\\n  --reasoning-parser-plugin ultra_v3_reasoning_parser.py \\\n  --reasoning-parser ultra_v3",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md",
+          "note": "Estimated weight storage from parameter count at BF16, excludes runtime and context memory. Follow pinned card dependency requirements."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md",
+    "released_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md",
+    "license": "open-mdw-1.1",
+    "params_b": 74,
+    "active_b": 9,
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md",
+    "context_note": "Official card context ceiling; actual runtime recipes may use a smaller window. Observed 2026-10-21.",
+    "identity_note": "Precision is retained in each measurement: lab rows BF16; Super VL Arena rows NVFP4. Quantized deployment is not a separate checkpoint ranking."
+  },
+  {
+    "id": "lfm2-5-24b-a2b",
+    "name": "LFM2.5 24B-A2B",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "Q4_K_M",
+          "gb": 14.4,
+          "gb_estimated": true,
+          "cmd": "llama-cli -hf LiquidAI/LFM2.5-24B-A2B-GGUF --hf-file LFM2.5-24B-A2B-Q4_K_M.gguf --temp 0.1 --top-k 50 --repeat-penalty 1.05",
+          "source": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF/blob/0912d33141f77e10705345a6732bfd83f0252fdc/README.md",
+          "note": "Weight estimate uses 0.6 bytes/parameter including quantization overhead; runtime and KV memory are extra. Official GGUF and command reviewed, not executed."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md",
+    "license": "lfm1.0",
+    "params_b": 24,
+    "active_b": 2.45,
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md"
+  },
+  {
+    "id": "minimax-m3-1-flash",
+    "name": "MiniMax M3.1 Flash",
+    "provider": "MiniMax",
+    "category": "llm",
+    "released": "2026-10",
+    "open_weights": false,
+    "api": {
+      "url": "https://platform.minimax.io/docs/pricing/overview",
+      "provider": "MiniMax",
+      "price_in": 0.15,
+      "price_out": 0.6,
+      "price_source": "https://platform.minimax.io/docs/pricing/overview",
+      "price_note": "USD per 1M input/output tokens for MiniMax-M3.1-Flash. Cache-read discount excluded. Observed 2026-10-21."
+    },
+    "local": null,
+    "source": "https://www.minimax.io/blog/minimax-m31f",
+    "released_source": "https://www.minimax.io/blog/minimax-m31f",
+    "license": "proprietary",
+    "context_k": 1000,
+    "context_source": "https://www.minimax.io/blog/minimax-m31f",
+    "context_note": "Official release states 1M context, observed 2026-10-21."
+  },
+  {
+    "id": "flux-3-image-klein",
+    "name": "FLUX.3 Image Klein",
+    "provider": "Black Forest Labs",
+    "category": "image",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": {
+      "url": "https://bfl.ai",
+      "provider": "Black Forest Labs"
+    },
+    "local": null,
+    "model_repo": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+    "source": "https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/337337621b8526e120f2275d250242f4a6bedd75/README.md",
+    "released_source": "https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/337337621b8526e120f2275d250242f4a6bedd75/README.md",
+    "license": "flux-kommunity",
+    "identity_note": "5.6B image transformer plus Qwen3-VL-4B encoder and separate prompt processing. Gated open weights; licence has commercial eligibility conditions. No quality measurement or memory requirement inferred from component size."
+  },
+  {
+    "id": "qwen-image-2-1-turbo",
+    "name": "Qwen-Image 2.1 Turbo",
+    "provider": "Alibaba (Qwen)",
+    "category": "image",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+    "source": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/fc13ba1986fcb905854dc8de2f52eee395f49b5b/README.md",
+    "released_source": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/fc13ba1986fcb905854dc8de2f52eee395f49b5b/README.md",
+    "license": "other",
+    "identity_note": "Distinct Turbo checkpoint. Diffusers instructions on pinned model card; no verified memory requirement or API price imported."
+  },
+  {
+    "id": "moss-image-sft",
+    "name": "MOSS-Image SFT",
+    "provider": "OpenMOSS",
+    "category": "image",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": {
+      "url": "https://platform.mosi.cn",
+      "provider": "OpenMOSS"
+    },
+    "local": null,
+    "model_repo": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+    "source": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT/blob/f972bd4b4b9e3852133cc5da954d87bc32cd8fb9/README.md",
+    "released_source": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT/blob/f972bd4b4b9e3852133cc5da954d87bc32cd8fb9/README.md",
+    "license": "apache-2.0",
+    "identity_note": "SFT checkpoint, not Base; 5B generator with separate 9B text encoder. Report ablations and ambiguous layout-evaluation checkpoint were not assigned to this model."
+  },
+  {
+    "id": "fish-audio-drama-3",
+    "name": "Fish Audio Drama 3",
+    "provider": "Fish Audio",
+    "category": "tts",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 0,
+          "gb_estimated": true,
+          "cmd": "sgl-omni serve --model-path fishaudio/drama-3 --port 8000",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/fishaudio/drama-3/blob/b2b5ee998034b2975720906c815e7fb0e9f007bd/README.md",
+          "note": "Runtime documented by maker, not executed in this review. Memory is an automatic parameter/precision estimate including generic runtime headroom; not a measured requirement."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/fishaudio/drama-3",
+    "source": "https://huggingface.co/fishaudio/drama-3/blob/b2b5ee998034b2975720906c815e7fb0e9f007bd/README.md",
+    "released_source": "https://huggingface.co/fishaudio/drama-3/blob/b2b5ee998034b2975720906c815e7fb0e9f007bd/README.md",
+    "license": "fish-audio-research-license",
+    "params_b": 35,
+    "active_b": 3,
+    "identity_note": "Public checkpoint with maker-documented runtime. Memory is estimated from parameters and precision, not measured; no API price verified in this pass."
+  },
+  {
+    "id": "aurora-asr-1m",
+    "name": "AuroraASR-1M",
+    "provider": "AuroraAI Research",
+    "category": "stt",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0,
+          "gb_estimated": true,
+          "cmd": "python -m pip install torch transformers sentencepiece soundfile && python -c \"import soundfile as sf; from transformers import AutoModelForCTC; model = AutoModelForCTC.from_pretrained('AuroraAI-Research/AuroraASR-1M', trust_remote_code=True).eval(); wav, sr = sf.read('audio.wav', dtype='float32'); print(model.transcribe(wav)[0])\"",
+          "source": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md",
+          "note": "Official reference FP32 transcription; provide 16 kHz mono audio.wav. Automatic memory estimate, not a measured requirement; framework overhead may differ. Runtime documentation reviewed, not executed."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M",
+    "source": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md",
+    "released_source": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md",
+    "license": "apache-2.0",
+    "identity_note": "Pinned public FP32 checkpoint and maker-documented Transformers runtime; custom code required. Weight count is 949,073 per architecture section; runtime memory is estimated, not measured.",
+    "params_b": 0.000949073,
+    "params_b_source": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md"
+  },
+  {
+    "id": "cactus-whistle",
+    "name": "Cactus Whistle",
+    "provider": "Cactus Compute",
+    "category": "stt",
+    "released": "2026-10",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/Cactus-Compute/whistle",
+    "source": "https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md",
+    "released_source": "https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md",
+    "license": "apache-2.0",
+    "identity_note": "Pinned public model card and documented runtime. No measured runtime memory requirement verified; model file size is not labelled as RAM."
+  },
+  {
+    "id": "phonon-2",
+    "name": "Phonon-2",
+    "provider": "Fermion Research",
+    "category": "stt",
+    "released": "2026-09",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "2-bit",
+          "gb": 0,
+          "gb_estimated": true,
+          "cmd": "python3.12 -m venv .venv && source .venv/bin/activate && pip install fermion-research mlx mlx-audio mlx-lm soundfile scipy zstandard && phonon transcribe recording.wav",
+          "platform": "mac",
+          "source": "https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md",
+          "note": "Runtime documented by maker, not executed in this review. Memory is an automatic parameter/precision estimate including generic runtime headroom; not a measured requirement."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/FermionResearch/Phonon-2",
+    "source": "https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md",
+    "released_source": "https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md",
+    "license": "cc-by-4.0",
+    "identity_note": "Public checkpoint with maker-documented runtime. Memory is estimated from parameters and precision, not measured; no API price verified in this pass.",
+    "params_b": 0.6
+  },
+  {
+    "id": "phonon-1",
+    "name": "Phonon-1",
+    "provider": "Fermion Research",
+    "category": "stt",
+    "released": "2026-08",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/FermionResearch/Phonon-1",
+    "source": "https://huggingface.co/FermionResearch/Phonon-1/blob/68f96e309cd19bf5b9b72c0ead80eed92a499eae/README.md",
+    "released_source": "https://huggingface.co/FermionResearch/Phonon-1/blob/68f96e309cd19bf5b9b72c0ead80eed92a499eae/README.md",
+    "license": "cc-by-4.0",
+    "identity_note": "Pinned public model card and documented runtime. No measured runtime memory requirement verified; model file size is not labelled as RAM."
+  },
+  {
+    "id": "voxtral-mini-transcribe-3",
+    "name": "Voxtral Mini Transcribe 3",
+    "provider": "Mistral AI",
+    "category": "stt",
+    "released": "2026-10",
+    "open_weights": false,
+    "api": {
+      "url": "https://mistral.ai/news/voxtral-3",
+      "provider": "Mistral AI",
+      "price": 0.0035,
+      "unit": "audio-minute",
+      "price_source": "https://mistral.ai/news/voxtral-3",
+      "price_note": "Official USD API rate for this Voxtral 3 variant, observed 2026-10-21. Enterprise self-deployment terms separate."
+    },
+    "local": null,
+    "source": "https://mistral.ai/news/voxtral-3",
+    "released_source": "https://mistral.ai/news/voxtral-3",
+    "license": "proprietary",
+    "identity_note": "20 October Voxtral 3 family release; exact batch/realtime/TTS variant retained. Public API confirmed, public downloadable weights not verified. No incompatible FLEURS subset or third-party AA result imported."
+  },
+  {
+    "id": "voxtral-small-transcribe-3",
+    "name": "Voxtral Small Transcribe 3",
+    "provider": "Mistral AI",
+    "category": "stt",
+    "released": "2026-10",
+    "open_weights": false,
+    "api": {
+      "url": "https://mistral.ai/news/voxtral-3",
+      "provider": "Mistral AI",
+      "price": 0.004,
+      "unit": "audio-minute",
+      "price_source": "https://mistral.ai/news/voxtral-3",
+      "price_note": "Official USD API rate for this Voxtral 3 variant, observed 2026-10-21. Enterprise self-deployment terms separate."
+    },
+    "local": null,
+    "source": "https://mistral.ai/news/voxtral-3",
+    "released_source": "https://mistral.ai/news/voxtral-3",
+    "license": "proprietary",
+    "identity_note": "20 October Voxtral 3 family release; exact batch/realtime/TTS variant retained. Public API confirmed, public downloadable weights not verified. No incompatible FLEURS subset or third-party AA result imported."
+  },
+  {
+    "id": "voxtral-mini-transcribe-realtime-3",
+    "name": "Voxtral Mini Transcribe Realtime 3",
+    "provider": "Mistral AI",
+    "category": "stt",
+    "released": "2026-10",
+    "open_weights": false,
+    "api": {
+      "url": "https://mistral.ai/news/voxtral-3",
+      "provider": "Mistral AI",
+      "price": 0.008,
+      "unit": "audio-minute",
+      "price_source": "https://mistral.ai/news/voxtral-3",
+      "price_note": "Official USD API rate for this Voxtral 3 variant, observed 2026-10-21. Enterprise self-deployment terms separate."
+    },
+    "local": null,
+    "source": "https://mistral.ai/news/voxtral-3",
+    "released_source": "https://mistral.ai/news/voxtral-3",
+    "license": "proprietary",
+    "identity_note": "20 October Voxtral 3 family release; exact batch/realtime/TTS variant retained. Public API confirmed, public downloadable weights not verified. No incompatible FLEURS subset or third-party AA result imported."
+  },
+  {
+    "id": "voxtral-mini-tts-3",
+    "name": "Voxtral Mini TTS 3",
+    "provider": "Mistral AI",
+    "category": "tts",
+    "released": "2026-10",
+    "open_weights": false,
+    "api": {
+      "url": "https://mistral.ai/news/voxtral-3",
+      "provider": "Mistral AI",
+      "price": 13,
+      "unit": "1M-chars",
+      "price_source": "https://mistral.ai/news/voxtral-3",
+      "price_note": "Official USD API rate for this Voxtral 3 variant, observed 2026-10-21. Enterprise self-deployment terms separate."
+    },
+    "local": null,
+    "source": "https://mistral.ai/news/voxtral-3",
+    "released_source": "https://mistral.ai/news/voxtral-3",
+    "license": "proprietary",
+    "identity_note": "20 October Voxtral 3 family release; exact batch/realtime/TTS variant retained. Public API confirmed, public downloadable weights not verified. No incompatible FLEURS subset or third-party AA result imported."
   }
 ]

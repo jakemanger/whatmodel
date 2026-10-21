@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
-**score 31.2** ±1.7 · #648 of 725 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 31.2** ±1.7 · #651 of 729 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #347 of 395*    9.2%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #350 of 398*    9.2%      1
 math            ▁▁●▅█▆▄█▄▁▁▁   #384 of 427*     36%      1
 </pre>
 
-<details><summary>chat &amp; writing · #347 of 395 · 9.2% of its score</summary>
+<details><summary>chat &amp; writing · #350 of 398 · 9.2% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   46.9%  ▁●▃▁▂▄▄▆█▃▂▁ beats 6/141  easy · avg 76%    9.2%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   46.9%  ▁●▄▂▂▄▆█▇▄▂▁ beats 6/142  easy · avg 76%    9.2%  at its level
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Comm
 
 <pre>
 test         result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   33.9%  ▂▂▂▂▃▄●▇██▆▄ beats 65/206  easy · avg 84%     36%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   33.9%  ▂▂▂▂▃▄●▇██▆▄ beats 65/206  easy · avg 85%     36%  sharp · at its level
 </pre>
 
 </details>

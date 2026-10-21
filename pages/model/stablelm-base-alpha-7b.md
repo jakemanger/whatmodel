@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7.9B params · cc-by-sa-4.0
 
-**score 8.2** ±1.4 · #712 of 725 · from 16 benchmark results across 4 sources
+**score 8.2** ±1.4 · #716 of 729 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▆██▇▆▄▃▁   #459 of 460     18%      2
+coding  ●▁▁▃▆▇█▇▅▄▃▁   #465 of 466     18%      2
 </pre>
 
-<details><summary>coding · #459 of 460 · 18% of its score</summary>
+<details><summary>coding · #465 of 466 · 18% of its score</summary>
 
 Beats [Zyte-1B](zyte-1b.md) here, though they rank higher overall.
 
@@ -44,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">PIQA (lab)</a>                           66.8%  ▁·●··▁▁▃█▅█▂ beats 1/26   easy · avg 87%         6.8%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">LAMBADA (OpenAI version), last-wo…</a>   55.1%  ▁··▂●▁▁▂▆█▅▃ beats 3/26   very easy · avg 86%    5.4%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">Social IQA (lab)</a>                     39.5%  ▁···●▃█▁▁▁·▁ beats 1/26   hard · avg 56%         2.0%  blunt · too hard for it
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 26.2%  ▄●·▄···▄▄·██ beats 1/8    easy · avg 74%         1.5%  too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">OpenBookQA (lab)</a>                     21.4%  ●·▁▁▃·▁▃▅▇▃▄ beats 4/26   hard · avg 48%         1.1%  too hard for it
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 26.2%  ▄●·▄···▄▄·██ beats 1/8    easy · avg 74%         1.6%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">OpenBookQA (lab)</a>                     21.4%  ●·▁▁▃·▁▃▅▇▃▄ beats 4/26   hard · avg 49%         1.1%  too hard for it
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 1/276  medium · avg 72%       0.7%  too hard for it · noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">TruthfulQA MC2 (lab)</a>                 40.0%  █·█·█▄···▄·● beats 8/9    medium · avg 55%       0.6%  blunt · at its level
 </pre>

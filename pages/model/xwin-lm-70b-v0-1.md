@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 45.7** ±1.2 · #454 of 725 · from 7 benchmark results across 2 sources
+**score 45.7** ±1.2 · #457 of 729 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #392 of 460*    7.5%      1
-chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #293 of 395*     49%      2
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #398 of 466*    7.5%      1
+chat &amp; writing  ▁▁▁▃▆●▆█▆▆▇▃   #296 of 398*     49%      2
 math            ▁▁▃▅█●▄█▄▁▁▁   #232 of 427*     11%      1
 </pre>
 
-<details><summary>coding · #392 of 460 · 7.5% of its score</summary>
+<details><summary>coding · #398 of 466 · 7.5% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                       result  vs the others in its run  difficulty      cou
 
 </details>
 
-<details><summary>chat &amp; writing · #293 of 395 · 49% of its score</summary>
+<details><summary>chat &amp; writing · #296 of 398 · 49% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

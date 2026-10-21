@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃▄▄●▃▁▂▁▁   #42 of 126     56%      9
-image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁    #40 of 62     20%      3
+image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁    #40 of 62     20%      3
 </pre>
 
 <details><summary>text to image · #42 of 126 · 56% of its score</summary>
@@ -27,7 +27,7 @@ Beats [Wan 2.7 Image](wan-2-7-image.md), [Wan 2.5 Text-to-Image Preview](wan-2-5
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    42.3%  ▄█▂▂▂●▆▄·▂·▂ beats 9/16   hard · avg 26%       24%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1145.8  ▂▂▃▄▇●▄▂▄▂·▂ beats 41/75  avg 1027             15%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1145.8  ▂▂▃▄▇●▅▂▄▂·▂ beats 41/75  avg 1027             15%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     89.5%  ▄····▄█▄▄█▄● beats 10/10  easy · avg 82%      4.8%  typical
 <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    87.2%  ▂█····▄●▄··▂ beats 8/11   easy · avg 79%      4.4%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    41.0%  ▁▂▂●▃▁▂▃·▁·▁ beats 7/22   hard · avg 28%      4.3%  sharp · at its level · noisy
@@ -46,7 +46,7 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher over
 <pre>
 test                         result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    52.2%  ▃▃▂·▃▆▂●·▃·▃ beats 13/20  hard · avg 45%     12%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.6  ▂▁▁▂▆●█▄▆▅▁▂ beats 14/53  avg 1153          5.9%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.0  ▂▁▁▃▆●▄█▄█▁▂ beats 14/53  avg 1153          5.8%  typical
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1006.0  ▃▂····▂●▂▃▂▃ beats 6/14   avg 956           2.3%  blunt
 </pre>
 
@@ -57,7 +57,7 @@ test                         result  vs the others in its run  difficulty      c
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>   19.1%  ▃·█▅▃·●▃···▃ beats 8/10   very hard · avg 7.6%     16%  sharp
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   945.7  ▁▁▁▄●█▂▁▁▂▁▁ beats 9/34   avg 875                 2.4%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   945.7  ▁▁▁▄●█▂▁▁▂▁▁ beats 9/34   avg 874                 2.4%  typical
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   87.6%  ▄···█··●···█ beats 3/5    easy · avg 78%          2.1%  typical
 <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    4.6%  ▃·····█●▃·▃▅ beats 4/9    very hard · avg 4.3%    1.3%  too hard for it
 <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   29.9%  ▂···▂·▂●▆▅·▂ beats 7/15   hard · avg 31%          0.9%  at its level

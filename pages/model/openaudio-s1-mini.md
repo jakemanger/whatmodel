@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 40.6** ±5.1 · #84 of 118 · from 4 benchmark results across 3 sources
+**score 40.5** ±5.1 · #86 of 119 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,10 +22,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval · 9-l…</a>     12.3%  ●········█·█ beats 0/2    avg 5.9%                58%  small run
+<a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval · 9-l…</a>     12.3%  ●········█·█ beats 0/2    avg 5.8%                59%  small run
 <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>     931.4  ●▂··▃·█▅···▂ beats 0/12   avg 1018                17%  blunt
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.16 / 5  ▄▄█·▄▄●▄▄·▄█ beats 6/11   easy · avg 4.20 / 5    7.6%  blunt
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.29 / 5  █··▄▄██▄·▄●▄ beats 10/11  easy · avg 3.99 / 5    7.0%  blunt · at its level
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.16 / 5  ▄▄█·▄▄●▄▄·▄█ beats 6/11   easy · avg 4.20 / 5    7.3%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.29 / 5  █··▄▄██▄·▄●▄ beats 10/11  easy · avg 3.99 / 5    6.9%  blunt · at its level
 </pre>
 
 </details>
@@ -36,11 +36,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-lemas-report-bysa"></a><a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual audio suite report</a>           1   58% ▇▇▇▇▇▇▇
+<a name="speech-lemas-report-bysa"></a><a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual audio suite report</a>           1   59% ▇▇▇▇▇▇▇
 <a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                                1   17% ▇▇
-<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   15% ▇▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   14% ▇▇
 prior: pull toward the middle                       10% ▇
-weighted average                                   = 40.6
+weighted average                                   = 40.5
 </pre>
 
 <sub>Licences: LEMAS multilingual audio suite report ([CC BY-SA 4.0](../../licenses/speech-lemas-report-bysa.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>

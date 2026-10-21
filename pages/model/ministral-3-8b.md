@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.92B params · apache-2.0
 
-**score 53.1** ±0.8 · #313 of 725 · from 23 benchmark results across 9 sources
+**score 53.0** ±0.8 · #317 of 729 · from 23 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #216 of 306*    3.6%      1
-chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #285 of 395*    2.8%      1
+agent tasks     ▁▁▃▆●▅▅▅▅▄▂▁   #220 of 310*    3.6%      1
+chat &amp; writing  ▁▁▁▃▆●▆█▆▆▇▃   #289 of 398*    2.8%      1
 math            ▁▁▃▅█●▄█▄▁▁▁    #214 of 427     23%      4
 </pre>
 
-<details><summary>agent tasks · #216 of 306 · 3.6% of its score</summary>
+<details><summary>agent tasks · #220 of 310 · 3.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #285 of 395 · 2.8% of its score</summary>
+<details><summary>chat &amp; writing · #289 of 398 · 2.8% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -61,20 +61,20 @@ test                         result  vs the others in its run  difficulty       
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4442  ▁▄▃▃●▄█▃▅▁▁▁ beats 9/30   avg 0.415               13%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4442  ▁▄▃▃●▄█▃▅▁▁▁ beats 9/30   avg 0.417               13%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         44.8%  ▄···█·▄·█·●▄ beats 6/7    hard · avg 36%          12%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 79.8%  ▄···▄▄·▄█··● beats 6/7    easy · avg 74%         7.9%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             63.9%  ▄····█·▄█·●▄ beats 6/7    medium · avg 54%       6.0%  at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   44.4%  ▂▃▅▂●▃█▅█▅▃▆ beats 9/34   medium · avg 41%       5.7%  blunt · at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   89.7%  ▂·▂▂·▂·▃●·█▃ beats 6/14   easy · avg 79%         4.7%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   89.7%  ▂·▂▂·▂·▃●·█▃ beats 6/14   easy · avg 80%         4.7%  typical
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               43.3%  █··▄··●··█·▄ beats 3/7    medium · avg 41%       4.5%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        55.4%  ▃··▃▃··●···█ beats 3/7    medium · avg 56%       3.3%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             56.4%  ▄···▄·●·▄·▄█ beats 2/7    medium · avg 58%       2.8%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        55.4%  ▃··▃▃··●···█ beats 3/7    medium · avg 56%       3.2%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             56.4%  ▄···▄·●·▄·▄█ beats 2/7    medium · avg 59%       2.8%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   73.1%  ▂··▂▂·▂●▆█·▄ beats 6/15   medium · avg 63%       2.8%  at its level
 <a href="https://arxiv.org/html/2609.05395v1">KOPA-Bench (pass@1)</a>                  13.0%  ●·█··▄··█▄·█ beats 0/8    very hard · avg 13%    2.4%  typical
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    52.4%  ▄··▄█▄··▄··● beats 7/7    medium · avg 46%       2.3%  blunt · at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   54.4%  ▂···▂▂·▃▂●██ beats 6/17   medium · avg 52%       1.7%  at its level
-<a href="https://arxiv.org/html/2609.05395v1">BFCL multi-turn (version not stat…</a>   24.5%  ▄●···▄·▄█▄▄▄ beats 1/8    hard · avg 25%         1.5%  at its level
+<a href="https://arxiv.org/html/2609.05395v1">BFCL multi-turn (version not stat…</a>   24.5%  ▄●···▄·▄█▄▄▄ beats 1/8    hard · avg 26%         1.5%  at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   78.3%  ●▂▁▂▅█▂▃▄▃▁▁ beats 3/98   very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -96,7 +96,7 @@ source                                    results  share of the score
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 53.1
+weighted average                                   = 53.0
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Ministral-3-8B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

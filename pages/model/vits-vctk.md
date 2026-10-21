@@ -6,7 +6,7 @@
 
 Kakao Enterprise (Jaehyeon Kim et al.) · released 2021-06 · mit
 
-**score 34.3** ±4.5 · #99 of 118 · from 3 benchmark results across 2 sources
+**score 34.0** ±4.5 · #101 of 119 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,8 +22,8 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty                counts  why
-<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS (lab)</a>      4.38 / 5  █····█·····● beats 2/2    very easy · avg 4.73 / 5     46%  small run
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      8.5%  ●▅▃▃█▅▅▃·▃·▅ beats 0/16   hard · avg 30%               30%  typical
+<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS (lab)</a>      4.38 / 5  █····█·····● beats 2/2    very easy · avg 4.73 / 5     47%  small run
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      8.5%  ●▅▃▃█▅▅▃·▃·▅ beats 0/16   hard · avg 31%               30%  typical
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           27.5%  ▂●··▂▄▄··█▄▆ beats 2/16   avg 16%                      15%  blunt
 </pre>
 
@@ -35,10 +35,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   46% ▇▇▇▇▇▇
+<a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   47% ▇▇▇▇▇▇
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   45% ▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 34.3
+weighted average                                   = 34.0
 </pre>
 
 <sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>

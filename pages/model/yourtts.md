@@ -6,7 +6,7 @@
 
 Coqui / Edresson Casanova et al. · released 2021-12 · cc-by-nc-nd-4.0
 
-**score 18.1** ±2.7 · #115 of 118 · from 7 benchmark results across 3 sources
+**score 17.9** ±2.7 · #117 of 119 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -34,10 +34,10 @@ test                                result  vs the others in its run  difficulty
 test                                  result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS listenin…</a>  2.79 / 5  ●········█·█ beats 0/2    very easy · avg 4.72 / 5     22%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>      7.9%  ●···█··█···█ beats 0/3    avg 0.7%                     14%  typical
-<a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English zero-…</a>     46.2%  ●····▄·····▄ beats 0/3    easy · avg 80%               10%  at its level
-<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>     37.5%  ●··········█ beats 1/3    easy · avg 72%              9.5%  at its level
+<a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English zero-…</a>     46.2%  ●····▄·····▄ beats 0/3    easy · avg 81%               10%  at its level
+<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>     37.5%  ●··········█ beats 1/3    easy · avg 73%               10%  at its level
 <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (250…</a>     41.0%  ●····█·····█ beats 0/2    easy · avg 77%              9.4%  at its level · small run
-<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (Lib…</a>      6.6%  ●······█···█ beats 0/2    avg 1.0%                    9.4%  small run
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (Lib…</a>      6.6%  ●······█···█ beats 0/2    avg 1.0%                    9.3%  small run
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation (lab)</a>                         2   32% ▇▇▇▇
 <a name="speech-ditto-tts-report-ccby"></a><a href="https://arxiv.org/html/2406.11427v2">DiTTo-TTS: Diffusion Transformers for S…</a>        2   24% ▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 18.1
+weighted average                                   = 17.9
 </pre>
 
 <sub>Licences: VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild ([CC BY-SA 4.0](../../licenses/speech-voicecraft-report-bysa.txt)) · ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors ([CC BY 4.0](../../licenses/speech-ditto-tts-report-ccby.txt))</sub>

@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 3.08B params · apache-2.0
 
-**score 53.6** ±2.4 · #81 of 162 · from 4 benchmark results across 3 sources
+**score 53.6** ±2.4 · #82 of 163 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -34,9 +34,9 @@ test                       result  vs the others in its run  difficulty  counts 
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>    7.8%  ▅···▃···▃▃●█ beats 6/10   avg 13%        14%  sharp · noisy
+<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>    7.8%  ▅···▃···▃▃●█ beats 6/10   avg 13%        15%  sharp · noisy
 <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Common Vo…</a>   13.7%  ▂▂▂····▂●··█ beats 6/10   avg 21%        10%  sharp · noisy
-<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   37.8%  ▃·▂▂▅█●▃▂▅▂▂ beats 12/22  avg 40%       5.8%  blunt
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   37.8%  ▃·▂▂▅█●▃▂▅▂▂ beats 12/22  avg 40%       5.7%  blunt
 </pre>
 
 </details>

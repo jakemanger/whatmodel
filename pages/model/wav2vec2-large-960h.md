@@ -6,7 +6,7 @@
 
 Meta · released 2020-06 · 0.32B params · apache-2.0
 
-**score 7.0** ±3.3 · #158 of 162 · from 7 benchmark results across 5 sources
+**score 6.7** ±3.3 · #159 of 163 · from 7 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/facebook/wav2vec2-large-960h/blob/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      6.3%  ▂·▂·●······█ beats 2/6    avg 0.2%       33%  typical
 <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>            3.0%  ▂··▂·▃▂█▂●▃▃ beats 11/16  avg 0.4%       14%  blunt · several runs
 <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 African …</a>   71.7%  ●██····█████ beats 0/7    avg 30%       5.9%  blunt
-<a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   39.3%  ●·▂··▂····▆█ beats 0/9    avg 18%       4.3%  blunt
+<a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   39.3%  ●·▂··▂····▆█ beats 0/9    avg 18%       4.2%  blunt
 <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>       16.5%  ▂····▂●▂█▃▃▂ beats 2/13   avg 9.2%      2.7%  blunt
 </pre>
 
@@ -44,7 +44,7 @@ source                                    results  share of the score
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                             2    5% ▇
 <a name="speech-stt-sap-dysarthric-report"></a><a href="https://arxiv.org/html/2605.02782v2">Dysarthric ASR with clinical context on…</a>        1    4% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 7.0
+weighted average                                   = 6.7
 </pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>

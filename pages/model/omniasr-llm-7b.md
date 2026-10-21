@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 7.8B params · apache-2.0
 
-**score 57.9** ±2.3 · #49 of 162 · from 6 benchmark results across 5 sources
+**score 57.9** ±2.3 · #49 of 163 · from 6 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -36,9 +36,9 @@ test                       result  vs the others in its run  difficulty  counts 
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>    5.6%  ▅···▃···▃▃█● beats 10/10  avg 13%        13%  sharp · noisy
 <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Common Vo…</a>    6.4%  ▂▂▂····▂▆··● beats 10/10  avg 21%       9.0%  sharp · noisy
-<a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>   14.8%  ▂●·····▂▂·█▂ beats 1/8    avg 13%       8.4%  typical
+<a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>   14.8%  ▂●·····▂▂·█▂ beats 1/8    avg 13%       8.3%  typical
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   28.3%  ▃·▂▂▅█▅▃▂▅●▂ beats 21/22  avg 40%       5.1%  blunt
-<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   34.0%  ▃·●·▅▃▃·▃▃▃█ beats 1/12   avg 24%       3.2%  blunt
+<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   34.0%  ▃·●·▅▃▃·▃▃▃█ beats 1/12   avg 24%       3.1%  blunt
 </pre>
 
 </details>

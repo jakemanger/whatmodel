@@ -23,7 +23,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>  1027.7  ▃··▅▃··●▃··█ beats 4/8    avg 1012       58%  typical
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   930.2  ▁▁▁●▂█▂▁▁▂▁▁ beats 7/34   avg 875        35%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   930.2  ▁▁▁●▂█▂▁▁▂▁▁ beats 7/34   avg 874        35%  typical
 </pre>
 
 </details>

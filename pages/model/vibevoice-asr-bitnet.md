@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-07 · 2.81B params · mit
 
-**score 50.2** ±4.0 · #98 of 162 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.2** ±4.0 · #99 of 163 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (lab)</a>      5.2%  ▄··▄··▄···●▄ beats 4/5    avg 7.4%       19%  typical
 <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (lab)</a>      2.4%  █·●·█·█···██ beats 1/5    avg 2.2%       12%  blunt
 <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error rate (…</a>    8.3%  ▄·▂▄▂▄█●▂▂·▆ beats 12/20  avg 7.3%       11%  typical
-<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>         5.2%  ▄·····●▄▄··█ beats 1/5    avg 5.5%       11%  blunt
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>         5.2%  ▄·····●▄▄··█ beats 1/5    avg 5.4%       11%  blunt
 </pre>
 
 </details>

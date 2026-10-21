@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-03 · 0.83B params · coqui-public-model-license
 
-**score 32.3** ±4.2 · #101 of 118 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 32.1** ±4.2 · #102 of 119 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-voicecraft-report-bysa"></a><a href="https://arxiv.org/html/2403.16973v3">VoiceCraft: Zero-Shot Speech Editing an…</a>        3   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 32.3
+weighted average                                   = 32.1
 </pre>
 
 <sub>Licences: VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild ([CC BY-SA 4.0](../../licenses/speech-voicecraft-report-bysa.txt))</sub>

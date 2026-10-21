@@ -6,7 +6,7 @@
 
 oddadmix · released 2026-07 · 0.082B params · apache-2.0
 
-**score 41.5** ±9.7 · #83 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.4** ±9.7 · #84 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
 prior: pull toward the middle            38% ▇▇▇▇▇
-weighted average                        = 41.5
+weighted average                        = 41.4
 </pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>

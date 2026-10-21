@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 13B params
 
-**score 41.9** ±2.1 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 41.8** ±2.1 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -41,7 +41,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1   15% ▇▇
 <a name="acl-2023-emnlp-main-600"></a><a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits: Measuring LLM Ability at Fac…</a>        1    8% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 41.9
+weighted average                                   = 41.8
 </pre>
 
 <sub>Licences: Search Augmented Instruction Learning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-242-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · SummEdits: Measuring LLM Ability at Factual Reasoning Through The Lens of Summarization ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-600-CC-BY-4-0.txt))</sub>

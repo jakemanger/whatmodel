@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 70.55B params · llama3
 
-**score 50.6** ±1.0 · #358 of 725 · from 14 benchmark results across 2 sources
+**score 50.5** ±1.0 · #362 of 729 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ chat &amp; writing  █········●·█   #2 of 3*    2.0%      1
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   81.2%  ▁▁▃▁▂▄●▆█▃▂▁ beats 55/141  easy · avg 77%    2.0%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   81.2%  ▁▂▄▂▂▄●█▇▄▂▁ beats 55/142  easy · avg 77%    2.0%  small run
 </pre>
 
 </details>
@@ -35,9 +35,9 @@ test                             result  vs the others in its run    difficulty 
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>              40.1%  ▁▁▁▂▂▃▂█▆●▅▃ beats 44/61    medium · avg 38%     44%  at its level
 <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>              67.8%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 107/155  medium · avg 67%    9.2%  sharp · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   37.7%  ▂▁▂▂▄▃●▃▅█▄▃ beats 33/104   hard · avg 38%      8.9%  sharp · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        79.1%  ▁▁▁▁▁▂▂▅██●▄ beats 164/214  easy · avg 77%      6.9%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        79.1%  ▁▁▁▁▁▂▂▅██●▄ beats 164/214  easy · avg 78%      6.9%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               65.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 113/140  medium · avg 67%    6.7%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    47.2%  ▁▁·▁▁▁●▂▄▅█▁ beats 42/188   medium · avg 47%    5.4%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    47.2%  ▁▁·▁▁▁●▂▄▅█▁ beats 42/188   medium · avg 48%    5.4%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  83.2%  ▁▁▁▁▂▁▁▅▇█▃● beats 128/131  easy · avg 83%      3.9%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  49.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 69/107   hard · avg 49%      3.5%  at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   88.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 132/135  easy · avg 87%      3.0%  small run
@@ -58,7 +58,7 @@ source                                    results  share of the score
 <a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   55% ▇▇▇▇▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   44% ▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 50.6
+weighted average                                   = 50.5
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0))</sub>

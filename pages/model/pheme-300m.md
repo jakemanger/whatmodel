@@ -6,7 +6,7 @@
 
 PolyAI · released 2024-01 · 0.3B params · cc-by-4.0
 
-**score 37.4** ±3.3 · #92 of 118 · from 4 benchmark results across 3 sources
+**score 37.2** ±3.4 · #96 of 119 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,8 +23,8 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  3.35 / 5  ▅·█▅▅·●▃▃▅·▅ beats 9/17   easy · avg 4.03 / 5       82%  at its level
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.99 / 5  ▅··▃▅··▅●▅██ beats 8/17   medium · avg 3.30 / 5    7.2%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     87.1%  ▂▂█·▂·█●▂·▄▂ beats 12/17  very easy · avg 89%      5.3%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.99 / 5  ▅··▃▅··▅●▅██ beats 8/17   medium · avg 3.29 / 5    7.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     87.1%  ▂▂█·▂·█●▂·▄▂ beats 12/17  very easy · avg 89%      5.2%  blunt
 <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     84.9%  ▂▂····▃·▃●▂█ beats 6/14   very easy · avg 86%      1.0%  blunt
 </pre>
 
@@ -39,8 +39,8 @@ source                                 results  share of the score
 <a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                2   89% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>        1    5% ▇
 <a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                   1    1% ▇
-prior: pull toward the middle                     4% ▇
-weighted average                                = 37.4
+prior: pull toward the middle                     5% ▇
+weighted average                                = 37.2
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>

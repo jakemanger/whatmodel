@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 34.7** ±0.6 · #625 of 725 · from 15 benchmark results across 4 sources
+**score 34.7** ±0.6 · #629 of 729 · from 15 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #423 of 460     90%     10
+coding  ▁▁▁●▆▇█▇▅▄▃▁    #429 of 466     90%     10
 math    ▁▁▃▅●▆▄█▄▁▁▁   #319 of 427*    2.8%      1
 </pre>
 
-<details><summary>coding · #423 of 460 · 90% of its score</summary>
+<details><summary>coding · #429 of 466 · 90% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   27.8%  ▁·▂▁●▆▅█▄▄▁▂ beats 5/35   medium · avg 61%    5.0%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                45.8%  ▁···▁▁▂●▇█▆▂ beats 12/75  easy · avg 66%      4.0%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              22.7%  ▄▄·▄●█▄█·█·▄ beats 4/12   medium · avg 49%    2.9%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.3%  ▄●█▃▄▇▄▁▇▃·▁ beats 3/35   medium · avg 45%    2.5%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.3%  ▄●█▃▄▇▄▁▇▃·▁ beats 3/35   medium · avg 46%    2.5%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           33.5%  ▃▅█●▃▅·▃▃▅·▅ beats 6/15   medium · avg 56%    2.3%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   10.5%  ▁·▁▁▄●█▄█▁▅▅ beats 7/35   medium · avg 51%    2.0%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           32.1%  ▃·▃●█▅▃·▃▃▅▃ beats 4/15   medium · avg 53%    1.9%  blunt · at its level

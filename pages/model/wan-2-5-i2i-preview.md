@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 52.8** ±4.0 · #74 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±4.1 · #74 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·▃▂●█▃▃▄▁▁   #47 of 62*     93%      1
+image to image / edit…  ▁▁·▃▂●█▃▅▅▂▁   #48 of 62*     93%      1
 </pre>
 
-<details><summary>image to image / editing · #47 of 62 · 93% of its score</summary>
+<details><summary>image to image / editing · #48 of 62 · 93% of its score</summary>
 
-Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1181.1  ▂▁▁▂●▇█▄▆▅▁▂ beats 9/53   avg 1153       93%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1181.1  ▂▁▁▃●█▄█▄█▁▂ beats 8/53   avg 1153       93%  typical
 </pre>
 
 </details>

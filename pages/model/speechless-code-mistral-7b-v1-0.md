@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-10 · apache-2.0
 
-**score 40.4** ±0.8 · #553 of 725 · from 4 benchmark results across 2 sources
+**score 40.4** ±0.8 · #557 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #386 of 460     98%      3
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #394 of 466     98%      3
 </pre>
 
-<details><summary>coding · #386 of 460 · 98% of its score</summary>
+<details><summary>coding · #394 of 466 · 98% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 

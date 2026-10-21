@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.7** ±0.8 · #212 of 725 · from 32 benchmark results across 5 sources
+**score 58.6** ±0.8 · #216 of 729 · from 32 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,35 +16,35 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁   #172 of 460     13%      5
-chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #150 of 395    7.4%      3
+coding          ▁▁▁▃▆▇█●▅▄▃▁   #179 of 466     13%      5
+chat &amp; writing  ▁▁▁▃▆▄▆█●▆▇▃   #153 of 398    7.4%      3
 math            ▁▁▃▅█▆●█▄▁▁▁   #158 of 427     35%      5
 </pre>
 
-<details><summary>coding · #172 of 460 · 13% of its score</summary>
+<details><summary>coding · #179 of 466 · 13% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                     92.3%  ▁·▁▁▂▃▄▄█▅▄● beats 139/145  easy · avg 76%          8.0%  sharp · several runs
+<a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                     92.3%  ▁·▁▁▂▃▄▄█▅▄● beats 139/145  easy · avg 77%          8.0%  sharp · several runs
 <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   53.1%  ●·▄·▄····▄·▄ beats 1/5      medium · avg 41%        4.1%  at its level
-<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>                 7.2%  ▄··▄····█●·▄ beats 4/5      very hard · avg 3.7%    0.9%  too hard for it
+<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>                 7.2%  ▄··▄····█●·▄ beats 4/5      very hard · avg 3.8%    0.9%  too hard for it
 <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">LiveCodeBench (Aug 1, 2024–Feb 1,…</a>   53.1%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2504.21318v1">LiveCodeBench 2024-08 to 2025-01 …</a>   53.1%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #150 of 395 · 7.4% of its score</summary>
+<details><summary>chat &amp; writing · #153 of 398 · 7.4% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2504.21318v1">Arena-Hard (version/judge unspeci…</a>   79.0%  ▃▃▂▅▃▆▅█▅●▂▃ beats 27/30   medium · avg 59%    5.4%  at its level · several runs
-<a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruction…</a>   84.9%  █·········█● beats 2/2     easy · avg 66%      1.1%  small run
-<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▁▃▁▂▄▄●█▃▂▁ beats 73/141  easy · avg 73%      0.9%  typical
+<a href="https://arxiv.org/html/2504.21318v1">Arena-Hard (version/judge unspeci…</a>   79.0%  ▃▃▂▅▃▆▅█▅●▂▃ beats 27/30   medium · avg 59%    5.3%  at its level · several runs
+<a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruction…</a>   84.9%  █·········█● beats 2/2     easy · avg 67%      1.1%  small run
+<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▂▄▂▂▄▆●▇▄▂▁ beats 73/142  easy · avg 73%      0.9%  typical
 </pre>
 
 </details>
@@ -56,10 +56,10 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                   78.0%  █··▄··█··●·▄ beats 5/6    medium · avg 51%        12%  sharp · several runs
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                   81.3%  ▄···▄█·▄●··▄ beats 5/6    medium · avg 61%        12%  sharp · several runs
-<a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   47.7%  ▄··●▄·▄····█ beats 1/5    hard · avg 28%         6.7%  sharp · at its level
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                   81.3%  ▄···▄█·▄●··▄ beats 5/6    medium · avg 62%        12%  sharp · several runs
+<a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   47.7%  ▄··●▄·▄····█ beats 1/5    hard · avg 29%         6.7%  sharp · at its level
 <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                          95.4%  ▄·●·····█··█ beats 1/5    very easy · avg 92%    2.5%  maxed out
-<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>          53.6%  ▁▁▁▃●▅▅▃██▁▄ beats 5/31   hard · avg 31%         2.2%  at its level · small run
+<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>          53.6%  ▁▁▁▃●▅▅▃██▁▄ beats 5/31   hard · avg 32%         2.2%  at its level · small run
 </pre>
 
 </details>
@@ -93,7 +93,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.7
+weighted average                                   = 58.6
 </pre>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2026-09 · proprietary
 
-**score 36.6** ±4.3 · #95 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.1** ±4.3 · #91 of 119 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -18,11 +18,12 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 </pre>
 
-<details><summary>other tests (1)</summary>
+<details><summary>other tests (2)</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS intelli…</a>    1.4%  ▄········●██ beats 2/6    avg 0.3%       93%  typical
+<a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS intelli…</a>    1.4%  ▄········●██ beats 2/6    avg 0.3%       89%  typical
+<a href="https://arxiv.org/html/2610.18010v1">MiniMax multilingual 24-language …</a>    2.5%  █·█········● beats 2/2    avg 2.9%      3.9%  blunt · small run
 </pre>
 
 </details>
@@ -32,13 +33,14 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>             1   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             7% ▇
-weighted average                        = 36.6
+source                               results  share of the score
+<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>                   1   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="fish-drama3-report"></a><a href="https://arxiv.org/html/2610.18010v1">Fish Audio Drama 3 technical report</a>        1    4% ▇
+prior: pull toward the middle                   7% ▇
+weighted average                              = 38.1
 </pre>
 
-<sub>Licences: EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Fish Audio Drama 3 technical report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

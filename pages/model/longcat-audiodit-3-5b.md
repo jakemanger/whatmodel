@@ -6,7 +6,7 @@
 
 Meituan · released 2026-03 · 3.5B params · mit
 
-**score 65.8** ±2.0 · #10 of 118 · from 10 benchmark results across 2 sources
+**score 66.0** ±2.0 · #9 of 119 · from 10 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,9 +28,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker simila…</a>   80.6%  █·····●█···█ beats 1/3    medium · avg 58%     11%  typical
 <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker simila…</a>   77.1%  █····●··█··█ beats 1/3    medium · avg 54%     11%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · speaker simila…</a>   78.6%  ▁·▂▂▂█▆▃●··▂ beats 27/30  medium · avg 53%    8.3%  at its level · small run
-<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · speaker simila…</a>   81.8%  ▁·▂··▂·█▄·▃● beats 25/25  medium · avg 62%    7.3%  small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · speaker simila…</a>   81.8%  ▁·▂··▂·█▄·▃● beats 25/25  medium · avg 62%    7.4%  small run
 <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · Whisper large-…</a>    1.5%  ▁···▂▂▂▂█●▄▂ beats 28/35  avg 3.6%            3.3%  blunt · small run
-<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · Paraformer CER…</a>    1.1%  ▁·▂▁▁▁▂▃●█·▂ beats 16/30  avg 2.1%            2.5%  blunt · small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · Paraformer CER…</a>    1.1%  ▁·▂▁▁▁▂▃●█·▂ beats 16/30  avg 2.1%            2.4%  blunt · small run
 </pre>
 
 </details>
@@ -39,10 +39,10 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                  8.5%  █····●·█████ beats 1/6    avg 26%                   19%  sharp
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                  8.5%  █····●·█████ beats 1/6    avg 27%                   19%  sharp
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.84 / 5  █·▄·●▄·▄···▄ beats 3/6    medium · avg 2.98 / 5     15%  at its level
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>                  9.2%  ▄▄▄···●··▄·█ beats 3/6    avg 23%                   14%  typical
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     73.9%  ▄·····▄▄·▄●█ beats 4/6    medium · avg 49%         7.0%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     73.9%  ▄·····▄▄·▄●█ beats 4/6    medium · avg 49%         7.2%  at its level
 </pre>
 
 </details>
@@ -56,7 +56,7 @@ source                                    results  share of the score
 <a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>             6   77% ▇▇▇▇▇▇▇▇▇
 <a name="card3-meituan-longcat-longcat-audiodit-3-5b"></a><a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">meituan-longcat/LongCat-AudioDiT-3.5B m…</a>        4   21% ▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 65.8
+weighted average                                   = 66.0
 </pre>
 
 <sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · meituan-longcat/LongCat-AudioDiT-3.5B model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/LICENSE))</sub>

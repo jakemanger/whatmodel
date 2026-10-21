@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁●·▃▂▃█▃▃▄▁▁   #60 of 62*     83%      1
+image to image / edit…  ▁●·▃▂▂█▃▅▅▂▁   #60 of 62*     83%      1
 </pre>
 
 <details><summary>image to image / editing · #60 of 62 · 83% of its score</summary>

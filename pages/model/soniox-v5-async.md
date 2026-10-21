@@ -6,7 +6,7 @@
 
 Soniox · released 2026-06 · proprietary
 
-**score 68.2** ±4.6 · #5 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 68.3** ±4.6 · #5 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                results  share of the score
 <a name="speech-stt-bangla-riverborn-mit"></a><a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla Speech-to-Text Benchmark v1.0</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                    8% ▇
-weighted average                               = 68.2
+weighted average                               = 68.3
 </pre>
 
 <sub>Licences: Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt))</sub>

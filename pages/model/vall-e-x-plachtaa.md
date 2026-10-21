@@ -6,7 +6,7 @@
 
 Plachtaa (community) · released 2023-08 · mit
 
-**score 31.4** ±4.2 · #102 of 118 · from 5 benchmark results across 3 sources
+**score 31.2** ±4.2 · #103 of 119 · from 5 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,10 +23,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.38 / 5  ▄·····●·▄█·▄ beats 1/5    easy · avg 4.11 / 5     45%  at its level
-<a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-clean…</a>     90.1%  █·█········● beats 2/2    very easy · avg 97%     36%  small run
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.86 / 5  ▄▄█·●▄▄▄▄·▄█ beats 4/11   easy · avg 4.20 / 5    5.7%  blunt · at its level
+<a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-clean…</a>     90.1%  █·█········● beats 2/2    very easy · avg 97%     37%  small run
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.86 / 5  ▄▄█·●▄▄▄▄·▄█ beats 4/11   easy · avg 4.20 / 5    5.6%  blunt · at its level
 <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.07 / 5  ●··▄▄██▄·▄▄▄ beats 0/11   easy · avg 3.99 / 5    5.1%  blunt · at its level
-<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>     27.3%  ●··········█ beats 1/5    avg 6.4%               1.2%  blunt · noisy
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>     27.3%  ●··········█ beats 1/5    avg 6.5%               1.2%  blunt · noisy
 </pre>
 
 </details>
@@ -37,11 +37,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   46% ▇▇▇▇▇▇
-<a name="speech-cloneval-space-apache"></a><a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · Open Voice Cloning Leaderboa…</a>        1   36% ▇▇▇▇
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   46% ▇▇▇▇▇
+<a name="speech-cloneval-space-apache"></a><a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · Open Voice Cloning Leaderboa…</a>        1   37% ▇▇▇▇
 <a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   11% ▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 31.4
+weighted average                                   = 31.2
 </pre>
 
 <sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>

@@ -6,7 +6,7 @@
 
 Moondream · released 2026-09 · cc-by-4.0
 
-**score 57.0** ±3.8 · #55 of 162 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 56.5** ±3.3 · #61 of 163 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -18,13 +18,14 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 </pre>
 
-<details><summary>other tests (3)</summary>
+<details><summary>other tests (4)</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">TED-LIUM long-form WER (lab)</a>          2.5%  █····█·███●█ beats 5/6    avg 4.6%       35%  sharp · small run
-<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">FLEURS 25 European languages, mea…</a>   10.6%  █····●·····█ beats 1/2    avg 18%        31%  small run
-<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Granite 5.0 report · Open ASR pub…</a>    6.6%  ●···█······█ beats 0/2    avg 11%        29%  small run
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">TED-LIUM long-form WER (lab)</a>          2.5%  █····█·███●█ beats 5/6    avg 4.5%       27%  sharp · small run
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">FLEURS 25 European languages, mea…</a>   10.6%  █····●·····█ beats 1/2    avg 18%        24%  small run
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Granite 5.0 report · Open ASR pub…</a>    6.6%  ●···█······█ beats 0/2    avg 10%        23%  small run
+<a href="https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md">Open ASR seven English sets (Ferm…</a>    5.7%  █······●···█ beats 1/2    avg 8.4%       22%  small run
 </pre>
 
 </details>
@@ -35,12 +36,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card3-moondream-parakeet-cards"></a><a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Moondream parakeet-ultra and parakeet-r…</a>        3   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        5% ▇
-weighted average                                   = 57.0
+<a name="card3-moondream-parakeet-cards"></a><a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Moondream parakeet-ultra and parakeet-r…</a>        3   74% ▇▇▇▇▇▇▇▇▇
+<a name="phonon-2-card"></a><a href="https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md">Phonon-2 model card</a>                             1   22% ▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 56.5
 </pre>
 
-<sub>Licences: Moondream parakeet-ultra and parakeet-redux model cards ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Moondream parakeet-ultra and parakeet-redux model cards ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phonon-2 model card ([cc-by-4.0](../../licenses/CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

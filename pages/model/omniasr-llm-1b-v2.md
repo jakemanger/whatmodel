@@ -6,7 +6,7 @@
 
 Meta · released 2025-12 · 2.28B params · apache-2.0
 
-**score 55.6** ±2.8 · #64 of 162 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.6** ±2.8 · #65 of 163 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md),
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             6.1%  ▂··▂▃▂●▃█▂▁▁ beats 13/29  avg 8.9%       92%  typical
-<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   16.6%  █▃▃··▅▃●··▃▃ beats 8/10   avg 38%       4.6%  noisy
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   16.6%  █▃▃··▅▃●··▃▃ beats 8/10   avg 38%       4.7%  noisy
 </pre>
 
 </details>

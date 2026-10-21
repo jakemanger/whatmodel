@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-05 · 14.77B params · nvidia-open-model-license
 
-**score 50.3** ±1.8 · #363 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.2** ±1.8 · #367 of 729 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #290 of 460     99%      3
+coding  ▁▁▁▃▆●█▇▅▄▃▁   #298 of 466     99%      3
 </pre>
 
-<details><summary>coding · #290 of 460 · 99% of its score</summary>
+<details><summary>coding · #298 of 466 · 99% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   47.9%  ▄·●····▄▄▄█▄ beats 1/7    medium · avg 46%         43%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   47.9%  ▄·●····▄▄▄█▄ beats 1/7    medium · avg 46%         44%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    2.2%  ▃●····▃·█·▃▃ beats 1/7    very hard · avg 2.5%     35%  sharp · too hard for it
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   58.7%  ▄●···▄·▄▄█·▄ beats 1/7    medium · avg 57%         20%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   58.7%  ▄●···▄·▄▄█·▄ beats 1/7    medium · avg 58%         20%  at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 50.3
+weighted average                        = 50.2
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

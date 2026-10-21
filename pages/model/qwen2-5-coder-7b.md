@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.6** ±1.0 · #322 of 725 · from 15 benchmark results across 5 sources
+**score 52.6** ±1.0 · #325 of 729 · from 15 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #245 of 460     94%     13
+coding  ▁▁▁▃▆▇●▇▅▄▃▁   #251 of 466     94%     13
 </pre>
 
-<details><summary>coding · #245 of 460 · 94% of its score</summary>
+<details><summary>coding · #251 of 466 · 94% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -34,8 +34,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          71.7%  ▄····▄▄·▄·●▄ beats 4/6    easy · avg 66%      5.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   10.7%  █▂▁▁▂▂●▃▅▅▅▇ beats 17/47  hard · avg 32%      4.0%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   55.2%  ▃··▁▂▂▃▂●▃▄▂ beats 30/47  medium · avg 51%    3.2%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   41.0%  ▁▁▁▁▁▁▂▂▃█●▄ beats 40/47  hard · avg 31%      2.8%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     65.8%  █·██·█··●·██ beats 4/6    medium · avg 55%    2.6%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   41.0%  ▁▁▁▁▁▁▂▂▃█●▄ beats 40/47  hard · avg 31%      2.9%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     65.8%  █·██·█··●·██ beats 4/6    medium · avg 56%    2.6%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     65.9%  ▄·█··▄·●··▄▄ beats 4/6    medium · avg 54%    0.9%  blunt · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 43/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        41.0%  ▄······▄▄●·█ beats 4/6      medium · avg 36%    3.5%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 187/276  medium · avg 72%    2.3%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 187/276  medium · avg 72%    2.4%  at its level · noisy
 </pre>
 
 </details>

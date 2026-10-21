@@ -6,7 +6,7 @@
 
 Meta · released 2023-11 · 2.31B params · cc-by-nc-4.0
 
-**score 54.8** ±3.5 · #75 of 162 · from 8 benchmark results across 7 sources
+**score 54.9** ±3.5 · #75 of 163 · from 8 benchmark results across 7 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 task                    vs the others       rank  counts  tests
-multilingual transcri…  ▂··▃▄█▆▅▄▂·●   #2 of 36*    7.0%      1
+multilingual transcri…  ▂··▃▄█▆▅▄▂·●   #2 of 36*    7.1%      1
 </pre>
 
-<details><summary>multilingual transcription · #2 of 36 · 7.0% of its score</summary>
+<details><summary>multilingual transcription · #2 of 36 · 7.1% of its score</summary>
 
 Beats [Universal-3.5 Pro](assemblyai-universal-3-5-pro.md), [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md), [Cohere Transcribe (03-2026)](cohere-transcribe-03-2026.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>    8.1%  █▃▃··▅▃▃··●▃ beats 9/10   avg 38%       7.0%  noisy
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>    8.1%  █▃▃··▅▃▃··●▃ beats 9/10   avg 38%       7.1%  noisy
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">Common Voice English WER (version…</a>   16.2%  █···█·█····● beats 3/3    avg 20%        15%  typical
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   38.2%  ▃·▂▂▅●▅▃▂▅▂▂ beats 10/22  avg 40%        12%  blunt
 <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources,…</a>   21.6%  ▃··▃▃··●··█▅ beats 4/9    avg 17%        10%  blunt
-<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   25.9%  ▃·▅·●▃▃·▃▃▃█ beats 3/12   avg 24%       7.4%  blunt
+<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   25.9%  ▃·▅·●▃▃·▃▃▃█ beats 3/12   avg 24%       7.3%  blunt
 <a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER</a>               5.8%  ▁··▁▁▁▁▂●█▂▁ beats 21/64  avg 6.6%      4.8%  blunt
 </pre>
 
@@ -59,7 +59,7 @@ source                                    results  share of the score
 <a name="speech-stt-quranic-asr-lb-apache"></a><a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard</a>                         1    7% ▇
 <a name="speech-stt-iberian-bench-ccby"></a><a href="https://arxiv.org/html/2609.36920v1">Benchmarking Automatic Speech Recogniti…</a>        1    7% ▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 54.8
+weighted average                                   = 54.9
 </pre>
 
 <sub>Licences: Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance Models for Multilingual ASR and AST ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · ai-sage/GigaAM-Multilingual model card ([MIT](https://opensource.org/licenses/MIT)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

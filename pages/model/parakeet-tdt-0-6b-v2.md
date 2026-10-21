@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-05 · 0.6B params · cc-by-4.0
 
-**score 60.4** ±1.4 · #30 of 162 · from 21 benchmark results across 7 sources
+**score 60.4** ±1.4 · #30 of 163 · from 21 benchmark results across 7 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -39,12 +39,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   18.4%  ▂▂····▂·▅·▃● beats 10/12  avg 52%        11%  sharp
 <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER</a>            3.1%  ███·····██·● beats 5/5    avg 5.7%      9.2%  several runs
 <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">SPGISpeech test WER (lab)</a>             2.2%  ▄▄··▄██··▄●█ beats 9/11   avg 5.4%      6.9%  sharp
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.0%  ▁▁▁▃··▁▁▂██● beats 77/86  avg 8.2%      6.8%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.0%  ▁▁▁▃··▁▁▂██● beats 77/86  avg 8.2%      6.7%  blunt
 <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">Earnings-22 WER (short-form, Open…</a>   11.2%  █······██●·█ beats 3/4    avg 21%       5.7%  typical
 <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">AMI WER (Open ASR / ESB test spli…</a>   11.2%  ▄▄·······●·▄ beats 3/4    avg 24%       5.4%  typical
 <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER</a>            5.3%  ▄··▄··▄···●▄ beats 3/5    avg 9.0%      5.1%  several runs
+<a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba cod…</a>   66.1%  █··█·█···█·● beats 4/4    avg 130%      5.0%  typical
 <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">GigaSpeech test WER (lab)</a>             9.7%  ▁····▁··▁▄●▂ beats 13/17  avg 17%       5.0%  typical
-<a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba cod…</a>   66.1%  █··█·█···█·● beats 4/4    avg 131%      5.0%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v2.json">FLEURS English test WER</a>               4.1%  ▁··▁▁▁▁▁▁▃●▁ beats 50/56  avg 5.8%      4.8%  blunt · several runs
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    2.0%  ▂·····▄▂█▂▂● beats 10/11  avg 4.6%      1.9%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   11.2%  ▃·▃▅··▃▃▅●█▃ beats 8/13   avg 16%       1.7%  blunt

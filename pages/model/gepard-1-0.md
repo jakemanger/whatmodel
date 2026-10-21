@@ -6,7 +6,7 @@
 
 nineninesix.ai · released 2026-06 · 0.556B params · apache-2.0
 
-**score 52.5** ±3.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 52.7** ±3.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [CosyVoice-300M](cosyvoice-300m.md) here, though they rank higher overall.
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · speaker simila…</a>     58.5%  ▁·●▂▂█▆▃▅··▂ beats 2/30   medium · avg 53%          40%  at its level
 <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcriber…</a>      3.6%  ●··········█ beats 0/3    avg 4.2%                  39%  typical
-<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.64 / 5  █·····█●···█ beats 2/3    medium · avg 2.52 / 5     16%  at its level
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.64 / 5  █·····█●···█ beats 2/3    medium · avg 2.51 / 5     16%  at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                   results  share of the score
 <a name="card3-nineninesix-gepard-1-0"></a><a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">nineninesix/gepard-1.0 model card (lab)</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       6% ▇
-weighted average                                  = 52.5
+weighted average                                  = 52.7
 </pre>
 
 <sub>Licences: nineninesix/gepard-1.0 model card ([Apache-2.0](https://opensource.org/licenses/Apache-2.0))</sub>

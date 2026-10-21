@@ -32,14 +32,25 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/document_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/search_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/video_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/agent/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-21",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",
@@ -3301,13 +3312,15 @@
     "id": "first-party-minimax",
     "name": "MiniMax official pricing and model documentation",
     "match": [
-      "platform.minimax.io/docs/guides/pricing-paygo.md"
+      "platform.minimax.io/docs/guides/pricing-paygo.md",
+      "platform.minimax.io/docs/pricing/overview",
+      "www.minimax.io/blog/minimax-m31f"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-21",
     "exact": true,
     "icon": "minimax.io",
     "attribution": "MiniMax official pricing/docs, observed 2026-09-25",
@@ -3536,13 +3549,14 @@
       "docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
       "docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
       "docs.mistral.ai/models/mistral-large-4",
-      "huggingface.co/mistralai/Mixtral-8x22B-v0.1/blob/e1cd34ff1747406fb2277635ed25242803009bc2/config.json"
+      "huggingface.co/mistralai/Mixtral-8x22B-v0.1/blob/e1cd34ff1747406fb2277635ed25242803009bc2/config.json",
+      "mistral.ai/news/voxtral-3/"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://mistral.ai/pricing/api",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-21",
     "exact": true,
     "icon": "mistral.ai",
     "attribution": "Mistral AI official pricing/docs, observed 2026-09-25",
@@ -3785,13 +3799,14 @@
     "match": [
       "huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md",
       "huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
-      "huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md"
+      "huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+      "huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-21",
     "exact": true,
     "icon": "liquid.ai",
     "attribution": "Liquid AI official pricing/docs, observed 2026-09-25",
@@ -7171,13 +7186,14 @@
       "huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/config.json",
       "huggingface.co/deepseek-ai/DeepSeek-V2.5/blob/c85b5ede86f2a598af339624cac5723861e557ed/config.json",
       "huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/config.json",
-      "huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/config.json"
+      "huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/config.json",
+      "api-docs.deepseek.com/quick_start/pricing/"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json",
     "verdict": "allowed",
-    "checked": "2026-10-10",
+    "checked": "2026-10-21",
     "exact": true,
     "icon": "deepseek.com",
     "attribution": "DeepSeek official pricing/docs, observed 2026-09-25",
@@ -11186,7 +11202,9 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md",
-      "huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/blob/64261e01bfabab557842e5803a7ea96cc09489a5/config.json"
+      "huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/blob/64261e01bfabab557842e5803a7ea96cc09489a5/config.json",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11194,7 +11212,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "NVIDIA official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-09"
+    "checked": "2026-10-21"
   },
   {
     "id": "first-party-openchat",
@@ -12236,13 +12254,15 @@
       "arxiv.org/html/2604.12374v1#S3.T5",
       "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations",
       "huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks",
-      "huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks"
+      "huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-21",
     "exact": true,
     "icon": "huggingface.co",
     "attribution": "NVIDIA, vendor-reported results for NVIDIA's own Nemotron models from pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
@@ -19047,5 +19067,123 @@
     "checked": "2026-10-16",
     "evidence_url": "https://arxiv.org/abs/2604.18224v1",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "beam-1-card",
+    "name": "Reflection Beam 1.0 model card",
+    "match": [
+      "huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "Apache-2.0",
+    "terms_url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/78f8f654d40a40919b8e9954b40dd879ecb9a692/LICENSE",
+    "quote": "Pinned repository LICENSE applies to the model card; selected own-model measurements and same-maker sibling runs only.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "huggingface.co",
+    "attribution": "Reflection Beam 1.0 model card. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
+    "license_url": "/licenses/beam-1-card.txt"
+  },
+  {
+    "id": "deepseek-1017-card",
+    "name": "DeepSeek V4.1 Flash 1017 model card",
+    "match": [
+      "huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "MIT",
+    "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/LICENSE",
+    "quote": "Pinned repository LICENSE applies to the model card; selected own-model measurements and same-maker sibling runs only.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "huggingface.co",
+    "attribution": "DeepSeek V4.1 Flash 1017 model card. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
+    "license_url": "/licenses/deepseek-1017-card.txt"
+  },
+  {
+    "id": "first-party-liquid-scores",
+    "name": "Liquid AI own-model benchmark facts",
+    "match": [
+      "huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md",
+    "quote": "Owner rule 2026-10-07: hand-record individual own-model figures on existing benchmarks; exclude competitors and third-party measurements.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "huggingface.co",
+    "attribution": "Liquid AI own-model benchmark facts. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md."
+  },
+  {
+    "id": "fish-drama3-report",
+    "name": "Fish Audio Drama 3 technical report",
+    "match": [
+      "arxiv.org/html/2610.18010v1"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2610.18010",
+    "quote": "Paper HTML declares Creative Commons Attribution 4.0 International; only new runs identified in section 5.3/Table 6.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "arxiv.org",
+    "attribution": "Fish Audio Drama 3 technical report. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
+    "license_url": "/licenses/CC-BY-4.0.txt"
+  },
+  {
+    "id": "aurora-asr-1m-card",
+    "name": "AuroraASR-1M model card",
+    "match": [
+      "huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "apache-2.0",
+    "terms_url": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md",
+    "quote": "Pinned model card frontmatter explicitly declares apache-2.0; original author measurements only; copied competitor cells excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "huggingface.co",
+    "attribution": "AuroraASR-1M model card. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
+    "license_url": "/licenses/cards-gap-LICENSE-Apache-2.0.txt"
+  },
+  {
+    "id": "cactus-whistle-card",
+    "name": "Cactus Whistle model card",
+    "match": [
+      "huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "apache-2.0",
+    "terms_url": "https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md",
+    "quote": "Pinned model card frontmatter explicitly declares apache-2.0; original author measurements only; copied competitor cells excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "huggingface.co",
+    "attribution": "Cactus Whistle model card. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
+    "license_url": "/licenses/cards-gap-LICENSE-Apache-2.0.txt"
+  },
+  {
+    "id": "phonon-2-card",
+    "name": "Phonon-2 model card",
+    "match": [
+      "huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "cc-by-4.0",
+    "terms_url": "https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md",
+    "quote": "Pinned model card frontmatter explicitly declares cc-by-4.0; original author measurements only; copied competitor cells excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-21",
+    "icon": "huggingface.co",
+    "attribution": "Phonon-2 model card. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
+    "license_url": "/licenses/CC-BY-4.0.txt"
   }
 ]

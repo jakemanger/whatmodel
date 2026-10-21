@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-08 · 8.03B params · llama3
 
-**score 50.9** ±4.2 · #346 of 725 · from 3 benchmark results across 2 sources
+**score 50.9** ±4.2 · #350 of 729 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 155/276  medium · avg 72%     42%  at its level · noisy
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            83.2%  ▁▁·▁·▂▃●█▂·▁ beats 10/22    easy · avg 81%       36%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            83.2%  ▁▁·▁·▂▃●█▂·▁ beats 10/22    easy · avg 82%       37%  typical
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           81.6%  ▄··▂▄▂▆██●▄▂ beats 18/21    easy · avg 67%       13%  at its level · noisy
 </pre>
 

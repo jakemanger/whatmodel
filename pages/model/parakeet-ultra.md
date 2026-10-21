@@ -6,7 +6,7 @@
 
 Moondream · released 2026-09 · 0.627B params · cc-by-4.0
 
-**score 58.7** ±2.7 · #41 of 162 · from 5 benchmark results across 2 sources
+**score 58.5** ±2.8 · #42 of 163 · from 5 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,9 +23,9 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">LibriSpeech test-clean WER</a>            1.8%  ▁···▁▁▂·▄▄●█ beats 36/56  avg 2.3%       33%  blunt
-<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER (lab)</a>          1.9%  █····█·████● beats 6/6    avg 4.6%       19%  sharp · small run
+<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER (lab)</a>          1.9%  █····█·████● beats 6/6    avg 4.5%       19%  sharp · small run
 <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">FLEURS 25 European languages, mea…</a>    9.6%  █····█·····● beats 2/2    avg 18%        17%  small run
-<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Granite 5.0 report · Open ASR pub…</a>    5.8%  █···█······● beats 2/2    avg 11%        15%  small run
+<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Granite 5.0 report · Open ASR pub…</a>    5.8%  █···█······● beats 2/2    avg 10%        16%  small run
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">FLEURS English test WER</a>               4.3%  ▁··▁▁▁▁▁▁▃●▁ beats 44/56  avg 5.8%       13%  blunt
 </pre>
 
@@ -38,9 +38,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card3-moondream-parakeet-cards"></a><a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Moondream parakeet-ultra and parakeet-r…</a>        3   51% ▇▇▇▇▇▇
-<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">transcribe.cpp model catalog · LibriSpe…</a>        2   47% ▇▇▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">transcribe.cpp model catalog · LibriSpe…</a>        2   46% ▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 58.7
+weighted average                                   = 58.5
 </pre>
 
 <sub>Licences: Moondream parakeet-ultra and parakeet-redux model cards ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>

@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 55.4** ±1.5 · #270 of 725 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 55.3** ±1.5 · #273 of 729 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #162 of 306*     25%      2
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #251 of 460*    5.9%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▂▁   #166 of 310*     24%      2
+coding              ▁▁▁▃▆▇●▇▅▄▃▁   #255 of 466*    5.9%      1
 math                █··········●       #1 of 2*     23%      2
-vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #108 of 147*     16%      2
+vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄   #115 of 154*     16%      2
 </pre>
 
-<details><summary>agent tasks · #162 of 306 · 25% of its score</summary>
+<details><summary>agent tasks · #166 of 310 · 24% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   34.0%  █····███·██● beats 6/6      very hard · avg 14%     22%  sharp
+<a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   34.0%  █····███·██● beats 6/6      very hard · avg 15%     22%  sharp
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BFCL v3 (lab)</a>                        63.7%  ▁▁▁▁▁▃▅█●▅▄▁ beats 115/170  medium · avg 58%       2.8%  blunt · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #251 of 460 · 5.9% of its score</summary>
+<details><summary>coding · #255 of 466 · 5.9% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -50,12 +50,12 @@ test                result  vs the others in its run  difficulty      counts  wh
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>   16.0%  ▁·▁▁●▂▅▆█▇▅▁ beats 9/133  very hard · avg 12%     16%  sharp · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    82.0%  ▁▃▂▃▅●▅▇█▅▂▁ beats 23/84  easy · avg 79%         7.7%  small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    82.0%  ▁▃▂▃▄●▅▇█▄▂▁ beats 23/85  easy · avg 79%         7.7%  small run
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #108 of 147 · 16% of its score</summary>
+<details><summary>vision &amp; documents · #115 of 154 · 16% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>   57.1%  ▁▁▁▁▂▄▅●███▄ beats 104/311  hard · avg 45%     19%  sharp · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>   57.1%  ▁▁▁▁▂▄▅●█▇█▄ beats 104/315  hard · avg 45%     19%  sharp · at its level · small run
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>           87.4%  ▁▁▁▁▁▂▂▅██▆● beats 199/214  easy · avg 81%     10%  small run
 </pre>
 
@@ -86,7 +86,7 @@ source                                    results  share of the score
 <a name="first-party-amazon-scores"></a><a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">Amazon vendor-reported benchmark scores…</a>        8   77% ▇▇▇▇▇▇▇▇▇
 <a name="massive-agents-paper"></a><a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents (lab)</a>                            1   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.4
+weighted average                                   = 55.3
 </pre>
 
 <sub>Licences: MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Cartesia · released 2025-06 · proprietary
 
-**score 54.6** ±2.9 · #77 of 162 · from 3 benchmark results across 2 sources
+**score 54.6** ±2.9 · #78 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    3.8%  ▃·●▅·▅▅·▃▅██ beats 1/16   avg 4.8%       72%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    3.8%  ▃·●▅·▅▅·▃▅██ beats 1/16   avg 4.7%       72%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    2.0%  ▃·····▃▅●▃▅▅ beats 4/11   avg 3.4%       17%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   11.6%  ▃·▃▅··▃▃●▅█▃ beats 7/13   avg 16%       7.3%  blunt
 </pre>

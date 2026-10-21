@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 20.6** ±0.7 · #693 of 725 · from 56 benchmark results across 13 sources
+**score 20.6** ±0.7 · #697 of 729 · from 56 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ math    ▁●▃▅█▆▄█▄▁▁▁   #414 of 427*    5.5%      1
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    7.7%  ▄···▄·▄·●··▄ beats 4/5    easy · avg 78%    5.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    7.7%  ▄···▄·▄·●··▄ beats 4/5    easy · avg 79%    5.1%  sharp · too hard for it
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-7b1/bloom-7b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   81.3%  ▄▄·▄·▄··●··█ beats 5/7     very easy · avg 93%     1.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   41.0%  ●█···██···██ beats 0/5     easy · avg 74%          1.1%  blunt · at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.2%  ●····▃▅·██·█ beats 0/13    medium · avg 52%        1.0%  too hard for it
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   18.1%  ●▅▃··▅▃·█▃▃▅ beats 0/13    medium · avg 60%        1.0%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   18.1%  ●▅▃··▅▃·█▃▃▅ beats 0/13    medium · avg 61%        1.0%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-7b1/bloom-7b1_reading_comprehension_0-shot.json">RACE-high</a>                            36.6%  ▄···█··▄●··█ beats 4/6     medium · avg 51%        0.8%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 14/26   hard · avg 56%          0.8%  blunt
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-7b1/bloom-7b1_reading_comprehension_0-shot.json">DROP</a>                                  9.9%  ▄▄···█·●·▄·▄ beats 4/6     hard · avg 34%          0.7%  blunt

@@ -6,7 +6,7 @@
 
 Google · released 2026-03 · closed weights
 
-**score 66.4** ±0.9 · #118 of 725 · from 11 benchmark results across 6 sources
+**score 66.3** ±0.9 · #120 of 729 · from 11 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,79 +16,79 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #135 of 306*    3.9%      1
-coding              ▁▁▁▃▆██●▆▄▃▁   #156 of 460*     15%      1
-chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #76 of 395*    8.7%      1
-math                ▁▁▃▅█▆▄●▄▁▁▁    #116 of 427     39%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #60 of 147*     18%      2
-web search          ▂●▂▆▄█▃▃▁▁·▁     #75 of 80*    3.9%      1
+agent tasks         ▁▁▃▆█▅●▅▅▄▂▁   #139 of 310*    3.9%      1
+coding              ▁▁▁▃▆▇█●▅▄▃▁   #163 of 466*     16%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▆●▃    #78 of 398*    8.6%      1
+math                ▁▁▃▅█▆▄●▄▁▁▁    #116 of 427     38%      3
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄    #66 of 154*     18%      2
+web search          ▁●▁▅▄█▃▄·▁·▁     #79 of 84*    3.9%      1
 </pre>
 
-<details><summary>agent tasks · #135 of 306 · 3.9% of its score</summary>
+<details><summary>agent tasks · #139 of 310 · 3.9% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   11.3%  ▃····●··▃█·▃ beats 2/8    very hard · avg 3.5%    3.9%  typical
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   11.3%  ▃····●··▃█·▃ beats 2/8    very hard · avg 3.6%    3.9%  typical
 </pre>
 
 </details>
 
-<details><summary>coding · #156 of 460 · 15% of its score</summary>
+<details><summary>coding · #163 of 466 · 16% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.7  ▁▂●▃▅█▄▇▆▄▁▁ beats 15/119  avg 969        15%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1256.6  ▁▁▃●▆█▄▇▅▅▁▁ beats 15/126  avg 978        16%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #76 of 395 · 8.7% of its score</summary>
+<details><summary>chat &amp; writing · #78 of 398 · 8.6% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1432.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 288/379  avg 1258      8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1432.9  ▁▁▁▂▃▃▃▆▆▇●▃ beats 289/382  avg 1259      8.6%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #116 of 427 · 39% of its score</summary>
+<details><summary>math · #116 of 427 · 38% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-120b](gpt-oss-120b.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            27.7%  ▂··▁▁▃●▄█▆▄▃ beats 19/84    very hard · avg 1.1%     32%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             80.0%  ▃▃▄▃▃▃▇●█▃▂▅ beats 115/195  very hard · avg 6.9%    5.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            27.7%  ▂··▁▁▃●▄█▆▄▃ beats 19/84    very hard · avg 1.1%     31%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             80.0%  ▃▃▄▃▃▃▇●█▃▂▅ beats 115/195  very hard · avg 7.0%    5.0%  sharp · noisy
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>   24.9%  ▄··▄●·▄▄█▄·▄ beats 2/8      very hard · avg 11%     1.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #60 of 147 · 18% of its score</summary>
+<details><summary>vision &amp; documents · #66 of 154 · 18% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [o3](o3.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (la…</a>   73.2%  ▃·▃·▃●▃·▃▃█▅ beats 3/11    medium · avg 38%     12%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1234.6  ▁▁▂▂▂▂▄▅▅●██ beats 91/145  avg 1058            6.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1234.6  ▁▁▂▂▂▂▃▄▄●█▇ beats 93/152  avg 1061            5.6%  blunt
 </pre>
 
 </details>
 
-<details><summary>web search · #75 of 80 · 3.9% of its score</summary>
+<details><summary>web search · #79 of 84 · 3.9% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   11.3%  ▃····●··▃█·▃ beats 2/8    very hard · avg 3.5%    3.9%  typical
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   11.3%  ▃····●··▃█·▃ beats 2/8    very hard · avg 3.6%    3.9%  typical
 </pre>
 
 </details>
@@ -98,7 +98,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         81.8%  ▁▁▁▁▂▄▆▄▅●█▄ beats 130/209  hard · avg 38%           12%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 82/135   very hard · avg 5.8%    3.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                20.0%  █▁▁▁▁▂●▃▃▂▁▁ beats 82/136   very hard · avg 5.8%    3.4%  sharp · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   91.8%  ▁▂▁▂▅█●▃▄▃▁▁ beats 61/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -111,13 +111,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        4   52% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   29% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   30% ▇▇▇▇
 <a name="first-party-google-scores"></a><a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">Google DeepMind Gemini model page and m…</a>        1   12% ▇
 <a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1    4% ▇
 <a name="paper-2605.08498v1"></a><a href="https://arxiv.org/html/2605.08498v1">MathConstraint: Automated Generation of…</a>        1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 66.4
+weighted average                                   = 66.3
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

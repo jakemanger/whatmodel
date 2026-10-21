@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 50.0** ±1.5 · #367 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.9** ±1.5 · #371 of 729 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ math    ▁▁▃▅█●▄█▄▁▁▁   #251 of 427     61%      3
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▃▅●█▄▅ beats 14/37  medium · avg 45%    9.0%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▁●▇▃▄▁ beats 14/38  medium · avg 45%    9.0%  at its level · small run
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>   47.9%  ●·▄▄····▄··█ beats 1/6    medium · avg 53%        30%  sharp · at its level
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>   52.5%  ▁▁▁▂▁▃▁●███▃ beats 24/85  medium · avg 55%        19%  sharp · at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>    92.3%  ▁▃▂▃▅▇●▇█▅▂▁ beats 43/84  very easy · avg 92%     11%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>    92.3%  ▁▃▂▃▄▇●▇█▄▂▁ beats 43/85  very easy · avg 92%     11%  small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.0
+weighted average                                   = 49.9
 </pre>
 
 ## How to run it

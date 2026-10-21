@@ -6,7 +6,7 @@
 
 Fireworks AI · released 2024-02 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.9** ±6.1 · #689 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.8** ±6.1 · #696 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▄▄▃▃▁   #319 of 340*     84%      1
+agent tasks  ▁▁●▆█▅▅▄▄▄▁▁   #323 of 344*     84%      1
 </pre>
 
-<details><summary>agent tasks · #319 of 340 · 84% of its score</summary>
+<details><summary>agent tasks · #323 of 344 · 84% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       16% ▇▇
-weighted average                                   = 42.9
+weighted average                                   = 42.8
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

@@ -35,7 +35,7 @@ test                                  result  vs the others in its run  difficul
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1800 mean human alignment score  █▄▄·█·▄█●▄·▄ beats 9/11   avg 6.285 mean human al…     40%  typical
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        21.8500 FID  █··█●······█ beats 2/3    avg 11.695 FID               14%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        21.8500 FID  █··█●······█ beats 2/3    avg 11.697 FID               14%  typical
 </pre>
 
 </details>

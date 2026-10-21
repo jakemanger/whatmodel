@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · closed weights
 
-**score 71.5** ±3.0 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
+**score 71.6** ±3.0 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,13 +22,13 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     75.6%  ▅▅▃▃█▅▅▃·▃·● beats 16/16  hard · avg 30%            26%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     75.6%  ▅▅▃▃█▅▅▃·▃·● beats 16/16  hard · avg 31%            26%  at its level
 <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean instruc…</a>     85.4%  ▄··········● beats 2/2    medium · avg 42%          22%  sharp · small run
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Role-F…</a>  3.64 / 5  ▄·····●····▄ beats 2/3    medium · avg 2.58 / 5     16%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability (hu…</a>  3.66 / 5  █·●······▄·▄ beats 2/4    medium · avg 3.01 / 5     10%  at its level
 <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean instruc…</a>     88.7%  ▄····█··▄··● beats 4/4    easy · avg 66%           8.9%  typical
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.44 / 5  ███···●····█ beats 3/4    medium · avg 2.87 / 5    6.8%  blunt · at its level
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           10.4%  ▂▄··▂▄▄··█▄● beats 15/16  avg 16%                  6.4%  blunt
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.44 / 5  ███···●····█ beats 3/4    medium · avg 2.88 / 5    6.7%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           10.4%  ▂▄··▂▄▄··█▄● beats 15/16  avg 16%                  6.3%  blunt
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ source                                    results  share of the score
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   32% ▇▇▇▇
 <a name="speech-instructttseval-ccby"></a><a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval: instruction-following …</a>        2   31% ▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 71.5
+weighted average                                   = 71.6
 </pre>
 
 <sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt))</sub>

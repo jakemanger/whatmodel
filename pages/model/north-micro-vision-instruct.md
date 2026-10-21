@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 2.4B params · apache-2.0
 
-**score 41.9** ±1.8 · #529 of 725 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 41.8** ±1.8 · #534 of 729 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,35 +16,35 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #255 of 395*    6.8%      1
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #136 of 147     55%      9
+chat &amp; writing      ▁▁▁▃▆▄●█▆▆▇▃   #259 of 398*    6.9%      1
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #143 of 154     55%      9
 </pre>
 
-<details><summary>chat &amp; writing · #255 of 395 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #259 of 398 · 6.9% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄···▄█●····▄ beats 4/5    easy · avg 78%    6.8%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄···▄█●····▄ beats 4/5    easy · avg 78%    6.9%  at its level
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #136 of 147 · 55% of its score</summary>
+<details><summary>vision &amp; documents · #143 of 154 · 55% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions (la…</a>   60.0%  ●·▄·······▄█ beats 1/5    easy · avg 78%       19%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar (lab)</a>                         51.8%  ▄▄●█·······▄ beats 2/5    medium · avg 61%     12%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>            68.7%  ●·····▃··▃·▃ beats 0/5    easy · avg 79%      7.3%  blunt · at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench (lab)</a>                 61.5%  ▄▄·●·····█·▄ beats 2/5    easy · avg 65%      5.9%  blunt · at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench (lab)</a>                     72.5%  ▄··▄··●··▄·▄ beats 2/5    easy · avg 84%      3.5%  noisy
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench (lab)</a>                 61.5%  ▄▄·●·····█·▄ beats 2/5    easy · avg 66%      5.9%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench (lab)</a>                     72.5%  ▄··▄··●··▄·▄ beats 2/5    easy · avg 84%      3.4%  noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA (lab)</a>                    62.2%  ▄···█··●▄··▄ beats 3/5    easy · avg 68%      3.1%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench (lab)</a>                       79.2%  █··███·●···█ beats 4/5    easy · avg 81%      2.3%  blunt
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                      77.5%  █···▄▄···●·▄ beats 4/5    easy · avg 81%      1.7%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                      77.5%  █···▄▄···●·▄ beats 4/5    easy · avg 81%      1.6%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA (lab)</a>                        80.8%  ▄······▄··█● beats 4/5    easy · avg 79%      1.0%  blunt · at its level · noisy
 </pre>
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU (lab)</a>                           50.4%  ▄·····●▄··▄█ beats 1/5    medium · avg 68%     16%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU (lab)</a>                           50.4%  ▄·····●▄··▄█ beats 1/5    medium · avg 69%     16%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                       30.7%  █●·······▄▄▄ beats 2/5    medium · avg 49%     14%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified…</a>   37.3%  ▄·●··█▄····▄ beats 1/5    medium · avg 57%    5.9%  at its level
 </pre>
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.9
+weighted average                                   = 41.8
 </pre>
 
 <sub>Licences: CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.06B params · cc-by-4.0
 
-**score 54.8** ±2.7 · #74 of 162 · from 4 benchmark results across 2 sources
+**score 54.7** ±2.7 · #76 of 163 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   51% ▇▇▇▇▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   46% ▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 54.8
+weighted average                                   = 54.7
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>

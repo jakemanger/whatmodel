@@ -6,7 +6,7 @@
 
 University of Tehran · released 2024-01 · 6.82B params · cc-by-nc-sa-4.0
 
-**score 36.6** ±4.4 · #810 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.5** ±4.4 · #815 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle               9% ▇
-weighted average                          = 36.6
+weighted average                          = 36.5
 </pre>
 
 <sub>Licences: Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

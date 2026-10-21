@@ -6,7 +6,7 @@
 
 Cohere · released 2026-07 · 2.07B params · apache-2.0
 
-**score 63.2** ±3.2 · #14 of 162 · from 4 benchmark results across 3 sources
+**score 63.3** ±3.3 · #14 of 163 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -48,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">transcribe.cpp model catalog · LibriSpe…</a>        2   65% ▇▇▇▇▇▇▇▇
-<a name="speech-stt-qcri-aura-ccby"></a><a href="https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv">QCRI Arabic + English ASR leaderboard</a>           1   21% ▇▇
+<a name="speech-stt-qcri-aura-ccby"></a><a href="https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv">QCRI Arabic + English ASR leaderboard</a>           1   21% ▇▇▇
 <a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1   10% ▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 63.2
+weighted average                                   = 63.3
 </pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · QCRI Arabic + English ASR leaderboard ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>

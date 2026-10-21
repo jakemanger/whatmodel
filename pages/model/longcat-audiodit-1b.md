@@ -6,7 +6,7 @@
 
 Meituan · released 2026-03 · 1B params · mit
 
-**score 65.8** ±4.1 · #11 of 118 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.0** ±4.1 · #10 of 119 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -41,7 +41,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-meituan-longcat-longcat-audiodit-3-5b"></a><a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">meituan-longcat/LongCat-AudioDiT-3.5B m…</a>        4   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 65.8
+weighted average                                   = 66.0
 </pre>
 
 <sub>Licences: meituan-longcat/LongCat-AudioDiT-3.5B model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/LICENSE))</sub>

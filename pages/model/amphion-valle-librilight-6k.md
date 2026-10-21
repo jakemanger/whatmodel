@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-01 · mit
 
-**score 46.6** ±14.4 · #75 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±14.4 · #76 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>   83.7%  ▂▂····▃·●▅▂█ beats 4/14   very easy · avg 86%     17%  blunt
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>   83.7%  ▂▂····▃·●▅▂█ beats 4/14   very easy · avg 86%     16%  blunt
 </pre>
 
 </details>
@@ -33,8 +33,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>           1   17% ▇▇
-prior: pull toward the middle            83% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>           1   16% ▇▇
+prior: pull toward the middle            84% ▇▇▇▇▇▇▇▇▇▇
 weighted average                        = 46.6
 </pre>
 

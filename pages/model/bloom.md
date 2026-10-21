@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 28.6** ±1.1 · #667 of 725 · from 16 benchmark results across 7 sources
+**score 28.6** ±1.1 · #671 of 729 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ coding  █··█·█·██··●   #1 of 6*     20%      1
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>   15.5%  ▄···▄·▄·█··● beats 5/5    easy · avg 78%     20%  sharp
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>   15.5%  ▄···▄·▄·█··● beats 5/5    easy · avg 79%     20%  sharp
 </pre>
 
 </details>
@@ -37,10 +37,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2210.02414v2">CommonsenseQA</a>                        42.8%  █·····▂▂●▂▄▄ beats 19/38  very easy · avg 93%    9.3%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2210.17323v2">ARC Easy</a>                             67.5%  ▅▃▃▃▃▃▃▃▅·●▃ beats 13/14  easy · avg 83%         7.3%  blunt · at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.9%  ▂▂▄▂·▂·▆·▂●▂ beats 11/14  easy · avg 89%         6.3%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 79.2%  ▄·█▄·█▄▄▄█●█ beats 12/14  easy · avg 87%         6.0%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 79.2%  ▄·█▄·█▄▄▄█●█ beats 12/14  easy · avg 88%         6.0%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2210.17323v2">LAMBADA (OpenAI version), last-wo…</a>   67.4%  ▄▄▄█▄·█·▄●██ beats 9/14   very easy · avg 87%    4.7%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   49.3%  ██···●█···██ beats 2/5    easy · avg 74%         3.1%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            55.9%  ▅●······▃▃·▅ beats 2/8    easy · avg 85%         3.0%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            55.9%  ▅●······▃▃·▅ beats 2/8    easy · avg 86%         3.0%  at its level
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           55.0%  ▃··●▅▃▃▅·▃▃▃ beats 2/12   easy · avg 91%         1.7%  at its level · noisy · several runs
 </pre>
 

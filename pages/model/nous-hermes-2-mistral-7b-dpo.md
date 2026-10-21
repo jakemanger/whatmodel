@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-02 · 7.24B params · apache-2.0
 
-**score 42.4** ±2.5 · #523 of 725 · from 4 benchmark results across 2 sources
+**score 42.3** ±2.5 · #527 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedQA (USMLE, 4 options)</a>             53.1%  ▁▁··▄▁▁··▄▃● beats 12/17    medium · avg 71%     55%  sharp · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedQA (USMLE, 4 options)</a>             53.1%  ▁▁··▄▁▁··▄▃● beats 12/17    medium · avg 71%     54%  sharp · at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedMCQA</a>                              49.0%  ▂▂··▄▄▂▂·▄●█ beats 11/17    medium · avg 63%     25%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 129/276  medium · avg 72%     15%  at its level · noisy
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">PubMedQA</a>                             74.8%  ▂·▂▆·▄▂▄▄▂●▂ beats 15/17    medium · avg 75%    3.0%  blunt · at its level
@@ -39,7 +39,7 @@ source                                results  share of the score
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">Open Medical-LLM Leaderboard results</a>        3   82% ▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1   15% ▇▇
 prior: pull toward the middle                    3% ▇
-weighted average                               = 42.4
+weighted average                               = 42.3
 </pre>
 
 <sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

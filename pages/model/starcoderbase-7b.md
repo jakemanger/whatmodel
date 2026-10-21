@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 7.53B params · bigcode-openrail-m
 
-**score 32.7** ±0.7 · #641 of 725 · from 16 benchmark results across 4 sources
+**score 32.7** ±0.7 · #643 of 729 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #435 of 460     94%      9
+coding  ▁▁▁●▆▇█▇▅▄▃▁   #441 of 466     94%      9
 math    ▁▁●▅█▆▄█▄▁▁▁   #389 of 427    5.9%      2
 </pre>
 
-<details><summary>coding · #435 of 460 · 94% of its score</summary>
+<details><summary>coding · #441 of 466 · 94% of its score</summary>
 
-Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
+Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            24.4%  ▁·▁▁●▄▆▅█▃▁▁ beats 8/99   easy · avg 76%       40%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           21.3%  ▁·▁▁▁●▄▄▄█▃▁ beats 10/99  easy · avg 70%       20%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           21.3%  ▁·▁▁▁●▄▄▄█▃▁ beats 10/99  easy · avg 70%       21%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 34.8%  █·●▃▃▃▅▃▃▅·▅ beats 3/15   easy · avg 81%       10%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   26.7%  ▁·▂▁●▆▅█▄▄▁▂ beats 4/35   medium · avg 61%    6.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           29.7%  ▁··▁●▂█▇▁··▁ beats 3/22   medium · avg 56%    4.5%  at its level · several runs
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           32.2%  ▁·▂●▁█▁▂···▁ beats 3/22   medium · avg 53%    4.0%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        19.1%  ▄▄·●██▄█·█·▄ beats 2/12   medium · avg 49%    3.6%  typical
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   14.8%  ▄▇●▃▄▇▄▁▇▃·▁ beats 8/35   medium · avg 45%    3.0%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   14.8%  ▄▇●▃▄▇▄▁▇▃·▁ beats 8/35   medium · avg 46%    3.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.5%  ▁·▁▁▄●█▄█▁▅▅ beats 9/35   medium · avg 51%    2.2%  sharp
 </pre>
 
@@ -46,7 +46,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md)
 <pre>
 test         result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   14.9%  ▄▄●·▄█·██·█▄ beats 2/12   easy · avg 75%      4.9%  sharp · several runs
-<a href="https://arxiv.org/html/2405.04324v1">MATH</a>           2.4%  ●·▃····▃···█ beats 0/5    medium · avg 37%    1.0%  typical
+<a href="https://arxiv.org/html/2405.04324v1">MATH</a>           2.4%  ●·▃····▃···█ beats 0/5    medium · avg 37%    1.0%  noisy
 </pre>
 
 </details>

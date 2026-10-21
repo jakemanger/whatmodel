@@ -6,7 +6,7 @@
 
 general-preference (GPM) · released 2024-10 · 8.03B params · apache-2.0
 
-**score 50.2** ±1.5 · #471 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±1.5 · #475 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #291 of 466*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #295 of 469*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #291 of 466 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #295 of 469 · 99% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

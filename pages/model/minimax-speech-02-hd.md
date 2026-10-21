@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-03 · proprietary
 
-**score 62.6** ±2.7 · #28 of 118 · from 3 benchmark results across 2 sources
+**score 62.5** ±2.7 · #29 of 119 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,8 +22,8 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>  1260.7  ▁···▁▃··█▄▁● beats 14/18  avg 1078           68%  typical
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   36.8%  ▅▅▃▃█▅●▃·▃·▅ beats 11/16  hard · avg 30%     24%  at its level
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>  1260.7  ▁···▁▃··█▄▁● beats 14/18  avg 1080           68%  typical
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   36.8%  ▅▅▃▃█▅●▃·▃·▅ beats 11/16  hard · avg 31%     24%  at its level
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>         10.1%  ▂▄··▂▄▄··█▄● beats 16/16  avg 16%           5.2%  blunt
 </pre>
 
@@ -38,7 +38,7 @@ source                                    results  share of the score
 <a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   68% ▇▇▇▇▇▇▇▇
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   29% ▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 62.6
+weighted average                                   = 62.5
 </pre>
 
 <sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>

@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  19.0%  ●······▁·▁▁▃ beats 0/12   easy · avg 87%         4.2%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   50.0%  ●·····▃·▁·▄▁ beats 0/12   medium · avg 81%       3.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     54.1%  █·····▅●▃▅▃█ beats 5/12   medium · avg 70%       2.7%  too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       18.6%  ●▁·▁▁·····▂▁ beats 1/12   hard · avg 48%         0.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       18.6%  ●▁·▁▁·····▂▁ beats 1/12   medium · avg 48%       0.5%  sharp · too hard for it
 </pre>
 
 </details>

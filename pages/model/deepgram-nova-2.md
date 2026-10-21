@@ -6,7 +6,7 @@
 
 Deepgram · released 2023-09 · closed weights
 
-**score 59.7** ±4.1 · #36 of 162 · from 3 benchmark results across 1 source
+**score 59.7** ±4.1 · #36 of 163 · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus WER…</a>    9.3%  ●··········▄ beats 1/2    avg 16%        34%  small run
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech corpu…</a>   10.2%  █··●·······█ beats 1/2    avg 19%        34%  small run
-<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus WER</a>       4.0%  █··█·······● beats 2/2    avg 9.9%       26%  small run
+<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus WER</a>       4.0%  █··█·······● beats 2/2    avg 9.8%       26%  small run
 <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · RU 10-clip pilot me…</a>   21.4%  █··········● beats 1/1                     —  not counted yet: no other model in the …
 <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · EN 10-clip pilot me…</a>   20.5%  █··········● beats 1/1                     —  not counted yet: no other model in the …
 </pre>

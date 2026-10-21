@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.9** ±1.6 · #593 of 725 · from 6 benchmark results across 2 sources
+**score 37.9** ±1.6 · #595 of 729 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #445 of 460*     19%      1
+coding  ▁▁●▃▆▇█▇▅▄▃▁   #451 of 466*     19%      1
 math    ▁▁▃▅●▆▄█▄▁▁▁   #313 of 427*     19%      1
 </pre>
 
-<details><summary>coding · #445 of 460 · 19% of its score</summary>
+<details><summary>coding · #451 of 466 · 19% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 

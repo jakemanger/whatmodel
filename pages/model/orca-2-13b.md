@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-11 · other (microsoft-research-license)
 
-**score 34.6** ±2.8 · #626 of 725 · from 5 benchmark results across 2 sources
+**score 34.5** ±2.8 · #630 of 729 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                              results  share of the score
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Hallucinations Leaderboard results</a>        4   86% ▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>         1   10% ▇
 prior: pull toward the middle                  4% ▇
-weighted average                             = 34.6
+weighted average                             = 34.5
 </pre>
 
 <sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

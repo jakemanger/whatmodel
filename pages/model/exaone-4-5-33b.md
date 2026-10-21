@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 63.8** ±1.6 · #158 of 725 · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 63.7** ±1.6 · #161 of 729 · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #120 of 306*     14%      1
-chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃     #139 of 395*    4.7%      1
+agent tasks         ▁▁▃▆█▅●▅▅▄▂▁     #121 of 310*     14%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█●▆▇▃     #142 of 398*    4.7%      1
 math                ▁▁▃▅█▆▄●▄▁▁▁      #79 of 427*     19%      1
 vision &amp; documents                 not ranked yet       —      3
 </pre>
 
-<details><summary>agent tasks · #120 of 306 · 14% of its score</summary>
+<details><summary>agent tasks · #121 of 310 · 14% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
@@ -33,9 +33,9 @@ test                    result  vs the others in its run  difficulty      counts
 
 </details>
 
-<details><summary>chat &amp; writing · #139 of 395 · 4.7% of its score</summary>
+<details><summary>chat &amp; writing · #142 of 398 · 4.7% of its score</summary>
 
-Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -73,7 +73,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>                   80.5%  █···▄▄···▄·● beats 6/6      hard · avg 51%          27%  sharp
 <a href="https://arxiv.org/html/2609.05395v1">KOPA-Bench (pass@1) (lab)</a>            25.9%  ▄·█··●··█▄·█ beats 3/8      very hard · avg 13%     14%  at its level
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                       83.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 155/188  medium · avg 62%        13%  typical
-<a href="https://arxiv.org/html/2609.05395v1">BFCL multi-turn (version not stat…</a>   53.0%  ▄▄···▄·▄●▄▄▄ beats 5/8      hard · avg 25%         7.0%  at its level
+<a href="https://arxiv.org/html/2609.05395v1">BFCL multi-turn (version not stat…</a>   53.0%  ▄▄···▄·▄●▄▄▄ beats 5/8      hard · avg 26%         7.0%  at its level
 </pre>
 
 </details>
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">LG AI Research vendor-reported benchmar…</a>        5   78% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2609.05395v1-kopa"></a><a href="https://arxiv.org/html/2609.05395v1">Multi-Step Tool-Calling over Korean Ope…</a>        2   21% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.8
+weighted average                                   = 63.7
 </pre>
 
 <sub>Licences: Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Playground · released 2024-02 · 2.57B params · playground-v2dot5-community
 
-**score 40.8** ±1.7 · #105 of 144 · from 7 benchmark results across 7 sources
+**score 40.8** ±1.7 · #106 of 144 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -31,7 +31,7 @@ test                                  result  vs the others in its run  difficul
 <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       46.0%  ▄·▄·█▄▄●···▄ beats 6/7    easy · avg 66%          18%  at its level
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>     49.0%  ▄·▆▂▆█●▆▂▄·▄ beats 13/22  medium · avg 60%       6.1%  at its level
 <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.37 / 5  ▄·●········█ beats 1/3    easy · avg 3.87 / 5    5.3%  at its level
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.2700  ▃·····▃··▃·● beats 3/5    avg 10.058             1.0%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.2700  ▃·····▃··▃·● beats 3/5    avg 10.057             1.0%  sharp · noisy
 </pre>
 
 </details>

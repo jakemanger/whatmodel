@@ -6,7 +6,7 @@
 
 Google · released 2026-01 · 13.19B params · gemma
 
-**score 63.2** ±9.7 · #178 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 63.1** ±9.7 · #182 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                 results  share of the score
 <a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>        1   58% ▇▇▇▇▇▇▇
 prior: pull toward the middle                    42% ▇▇▇▇▇
-weighted average                                = 63.2
+weighted average                                = 63.1
 </pre>
 
 <sub>Licences: TranslateGemma Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

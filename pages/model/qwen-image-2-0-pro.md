@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    65.5%  ▂··▂█▂●▂▂·▂▂ beats 8/12   medium · avg 41%     31%  at its level
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   986.3  ▁▁▁▄▂●▂▁▁▂▁▁ beats 12/34  avg 875              17%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   986.3  ▁▁▁▄▂●▂▁▁▂▁▁ beats 12/34  avg 874              17%  typical
 </pre>
 
 </details>

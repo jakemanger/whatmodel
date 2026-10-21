@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 49.1** ±0.7 · #384 of 725 · from 9 benchmark results across 3 sources
+**score 49.1** ±0.7 · #387 of 729 · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #289 of 460     85%      7
+coding  ▁▁▁▃▆●█▇▅▄▃▁   #295 of 466     85%      7
 </pre>
 
-<details><summary>coding · #289 of 460 · 85% of its score</summary>
+<details><summary>coding · #295 of 466 · 85% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                62.2%  ▁···▁▁▂▅▇●▆▂ beats 42/75  easy · avg 66%      5.4%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    4.6%  █▂▁▁●▂▂▃▅▅▅▇ beats 14/47  hard · avg 32%      1.6%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   11.4%  ▃··▁▂●▃▂█▃▄▂ beats 9/47   medium · avg 51%    1.6%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   36.3%  ▁▁▁▁▁▁▂▂▃█●▄ beats 35/47  hard · avg 31%      1.2%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   36.3%  ▁▁▁▁▁▁▂▂▃█●▄ beats 35/47  hard · avg 31%      1.3%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   58.1%  ▁▁▁······▁●█ beats 9/47   easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 

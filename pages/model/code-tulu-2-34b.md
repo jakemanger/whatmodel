@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 45.3** ±1.6 · #469 of 725 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.3** ±1.6 · #472 of 729 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #311 of 460*     15%      1
+coding  ▁▁▁▃▆●█▇▅▄▃▁   #317 of 466*     15%      1
 math    ▁▁▃▅●▆▄█▄▁▁▁   #259 of 427*     21%      1
 </pre>
 
-<details><summary>coding · #311 of 460 · 15% of its score</summary>
+<details><summary>coding · #317 of 466 · 15% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Oruk AI · released 2026-09 · 0.627B params · cc-by-sa-4.0
 
-**score 56.5** ±3.9 · #61 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.5** ±3.9 · #60 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.07B params · cc-by-4.0
 
-**score 58.0** ±1.6 · #45 of 162 · from 14 benchmark results across 4 sources
+**score 58.0** ±1.6 · #45 of 163 · from 14 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -42,9 +42,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, Open…</a>   14.1%  ●······███·█ beats 0/4    avg 21%       7.0%  typical
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">AMI WER (Open ASR / ESB test spli…</a>   17.1%  ●▄·······█·▄ beats 0/4    avg 24%       6.7%  typical
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER (lab)</a>            10.0%  ▁····▁··▁▄●▂ beats 10/17  avg 17%       6.2%  typical
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER (lab)</a>      2.5%  ▁▁▁▂▅▃▅▄█▂▂● beats 54/54  avg 5.4%      5.0%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER (lab)</a>      2.5%  ▁···▁▁▁▆▆█▆● beats 56/56  avg 5.4%      5.0%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">FLEURS English test WER</a>               4.5%  ▁··▁▁▁▁▁▁▃●▁ beats 39/56  avg 5.8%      4.2%  blunt
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER (lab)</a>      5.4%  █▄▄··████▄●█ beats 13/16  avg 9.0%      3.4%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER (lab)</a>      5.4%  █▄▄··████▄●█ beats 13/16  avg 9.0%      3.3%  typical
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form) (l…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 19/27  avg 5.0%      0.3%  blunt
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test WER…</a>    5.8%  no other model yet                         —  not counted yet: no other model in the …
 </pre>

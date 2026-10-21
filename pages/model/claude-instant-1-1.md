@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-05 · proprietary
 
-**score 44.6** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
+**score 44.5** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▂▁   #422 of 529*     20%      1
+coding  ▁▁▁▂●▇█▇▅▄▃▁   #429 of 535*     20%      1
 math    ▁▁▃▆●█▅█▄▁▁▁   #369 of 526*     28%      1
 </pre>
 
-<details><summary>coding · #422 of 529 · 20% of its score</summary>
+<details><summary>coding · #429 of 535 · 20% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test         result  vs the others in its run    difficulty           counts  wh
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (lab)</a>                  85.7%  ▄▁▁▂▁▄█▇▃▂●▂ beats 133/140  very easy · avg 90%     21%  sharp · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           73.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 150/214  easy · avg 80%          18%  at its level · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           73.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 150/214  easy · avg 81%          18%  at its level · small run
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       78.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 76/80    easy · avg 85%         9.1%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   65.7%  ▂▂▄··●▂█▄··▂ beats 4/12     easy · avg 90%         2.6%  at its level · noisy
 </pre>
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">Anthropic system cards and model announ…</a>        7   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.6
+weighted average                                   = 44.5
 </pre>
 
 <sub>Licences: An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

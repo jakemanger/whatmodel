@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2025-06 · 0.123B params · apache-2.0
 
-**score 61.9** ±3.4 · #34 of 118 · from 6 benchmark results across 2 sources
+**score 62.1** ±3.4 · #33 of 119 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker simila…</a>   69.7%  ▁·▂▂▂●▆▃▅··▂ beats 12/30  medium · avg 53%     32%  at its level
 <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker simila…</a>   75.1%  ▁·▂··▂·●▄·▃▄ beats 6/25   medium · avg 62%     27%  typical
 <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper large-…</a>    1.7%  ▁···▂▂▂▂█●▄▂ beats 22/35  avg 3.6%             12%  blunt
-<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer CER</a>     1.4%  ▁·▂▁▁▁▂●▅█·▂ beats 9/30   avg 2.1%            8.1%  blunt
+<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer CER</a>     1.4%  ▁·▂▁▁▁▂●▅█·▂ beats 9/30   avg 2.1%            8.0%  blunt
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="speech-omnivoice-report-ccby"></a><a href="https://arxiv.org/html/2604.00688v3">OmniVoice: Towards Omnilingual Zero-Sho…</a>        4   80% ▇▇▇▇▇▇▇▇▇▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   16% ▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 61.9
+weighted average                                   = 62.1
 </pre>
 
 <sub>Licences: OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>

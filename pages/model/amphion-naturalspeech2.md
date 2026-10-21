@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2023-12 · mit
 
-**score 14.0** ±3.1 · #117 of 118 · from 6 benchmark results across 4 sources
+**score 13.6** ±3.2 · #118 of 119 · from 6 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -25,9 +25,9 @@ test                                  result  vs the others in its run  difficul
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.06 / 5  ●·█▅▅·█▃▃▅·▅ beats 0/17   easy · avg 4.03 / 5       58%  at its level
 <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  2.35 / 5  ●·····▄·▄█·▄ beats 0/5    easy · avg 4.11 / 5       24%  at its level
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     81.2%  ▂●█·▂·█▆▂·▄▂ beats 1/17   very easy · avg 89%      6.2%  blunt
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.05 / 5  ●··▃▅··▅█▅██ beats 1/17   medium · avg 3.30 / 5    5.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.05 / 5  ●··▃▅··▅█▅██ beats 1/17   medium · avg 3.29 / 5    5.8%  blunt · at its level
 <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     82.1%  ▂▂····●·▃▅▂█ beats 3/14   very easy · avg 86%      1.0%  blunt
-<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.6%  ▄··········● beats 5/5    avg 6.4%                 0.7%  blunt · noisy
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.6%  ▄··········● beats 5/5    avg 6.5%                 0.7%  blunt · noisy
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ source                                  results  share of the score
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>         1    6% ▇
 <a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                    1    1% ▇
 prior: pull toward the middle                      4% ▇
-weighted average                                 = 14.0
+weighted average                                 = 13.6
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>

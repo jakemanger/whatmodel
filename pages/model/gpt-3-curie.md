@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 24.8** ±1.0 · comparison only: no current run option verified · from 31 benchmark results across 7 sources
+**score 24.7** ±1.0 · comparison only: no current run option verified · from 31 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,9 +40,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            68.5%  ▄·█·█··▄●··▄ beats 6/7    easy · avg 82%          10%  at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                11.3%  █·▆▂▄▂●····▂ beats 11/12  easy · avg 70%         6.8%  sharp
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   69.3%  █·▄··█··●··▄ beats 5/7    very easy · avg 88%    4.4%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     21.7%  ······●····· beats 1/5    very hard · avg 25%    4.4%  too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     21.7%  ······●····· beats 1/5    very hard · avg 25%    4.3%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             19.6%  █···█·█●█··█ beats 3/5    easy · avg 67%         4.2%  typical
-<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>    8.2%  ●·▄······▄·▄ beats 0/4    medium · avg 63%       3.7%  typical
+<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>    8.2%  ●·▄······▄·▄ beats 0/4    medium · avg 64%       3.7%  typical
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           29.0%  ▅·······●··▃ beats 3/5    hard · avg 49%         3.3%  too hard for it
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 77.9%  █··▃··▃▃·●·▃ beats 6/7    easy · avg 88%         3.2%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             68.2%  ▄···▄··●·▄·▄ beats 3/5    easy · avg 87%         2.6%  blunt · at its level
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    2% ▇
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 24.8
+weighted average                                   = 24.7
 </pre>
 
 <sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · It Ain't Over: A Multi-aspect Diverse Math Word Problem Dataset ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-927-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt))</sub>

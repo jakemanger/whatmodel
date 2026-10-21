@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄▄█▃▁●▁▁   #11 of 126*     71%      1
-image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #14 of 62*     27%      1
+image to image / edit…  ▁▁·▃▂▂█▃▅●▂▁    #14 of 62*     27%      1
 </pre>
 
 <details><summary>text to image · #11 of 126 · 71% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Nano Banana Pro (Gemini 3 Pro Image)](nano-banana-pro.md) here, though th
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1269.2  ▂▂▃▄▇█▄▂●▂·▂ beats 67/75  avg 1027       71%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1269.2  ▂▂▃▄▇█▅▂●▂·▂ beats 67/75  avg 1027       71%  typical
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Qwen-Image-2.1](qwe
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1358.5  ▂▁▁▂▆▇█▄●▅▁▂ beats 38/53  avg 1153       27%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1357.8  ▂▁▁▃▆█▄█●█▁▂ beats 38/53  avg 1153       27%  typical
 </pre>
 
 </details>

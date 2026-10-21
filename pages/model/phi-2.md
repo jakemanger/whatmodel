@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 40.4** ±0.6 · #552 of 725 · from 19 benchmark results across 8 sources
+**score 40.4** ±0.6 · #556 of 729 · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #374 of 460     70%      6
-chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃   #391 of 395*    8.0%      2
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #380 of 466     70%      6
+chat &amp; writing  ▁●▁▃▆▄▆█▆▆▇▃   #394 of 398*    8.0%      2
 math            ▁▁▃▅█●▄█▄▁▁▁   #215 of 427*    2.8%      1
 </pre>
 
-<details><summary>coding · #374 of 460 · 70% of its score</summary>
+<details><summary>coding · #380 of 466 · 70% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #391 of 395 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #394 of 398 · 8.0% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▂▃▄▅●██▆▄ beats 96/206  easy · avg 72%    2.8%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▂▃▄▅●██▆▄ beats 96/206  easy · avg 73%    2.8%  sharp · at its level
 </pre>
 
 </details>
@@ -65,11 +65,11 @@ test   result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    31.8%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 16/42    medium · avg 52%       7.9%  at its level
-<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       43.4%  ▁▁▁▁▂▄●▆█▃▃▁ beats 44/155   medium · avg 64%       4.7%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       43.4%  ▁▁▁▁▂▄●▆█▃▃▁ beats 44/155   medium · avg 64%       4.7%  sharp
 <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        71.3%  ▄▁▁▂▁▄█▇▃●▃▂ beats 120/140  easy · avg 85%         2.3%  sharp · at its level
 <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 52.7%  ▁▁▁▁▁▂▂●██▆▄ beats 60/214   easy · avg 79%         2.2%  at its level
-<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               23.4%  ●···▁▁▂▁▂▂▃█ beats 0/33     medium · avg 59%       0.7%  at its level · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.5%  ▃▁▁▁●▁▁▁▂█▅▁ beats 45/276   medium · avg 72%       0.7%  at its level · noisy
+<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               23.4%  ●···▁▁▂▁▂▂▃█ beats 0/33     medium · avg 59%       0.7%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   93.3%  ▁▁▂▃▄●█▆▃▂▂▁ beats 45/140   very easy · avg 94%    0.3%  blunt · noisy
 <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 90.2%  ▅·▃·▃··█●··▃ beats 7/8      easy · avg 92%         0.1%  at its level · noisy
 </pre>

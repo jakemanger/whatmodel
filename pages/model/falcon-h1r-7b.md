@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 60.0** ±1.0 · #201 of 725 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.9** ±1.0 · #204 of 729 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #192 of 306*     20%      2
-coding       ▁▁▁▃▆█●▇▆▄▃▁   #204 of 460*    9.1%      2
+agent tasks  ▁▁▃▆●▅▅▅▅▄▂▁   #194 of 310*     20%      2
+coding       ▁▁▁▃▆▇●▇▅▄▃▁   #210 of 466*    9.1%      2
 math         ▁▁▃▅█▆▄●▄▁▁▁    #124 of 427     38%      4
 </pre>
 
-<details><summary>agent tasks · #192 of 306 · 20% of its score</summary>
+<details><summary>agent tasks · #194 of 310 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,14 +33,14 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>coding · #204 of 460 · 9.1% of its score</summary>
+<details><summary>coding · #210 of 466 · 9.1% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   68.6%  █·▄·▄····●·▄ beats 4/5    medium · avg 41%        7.3%  at its level
-<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>           3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.7%    1.8%  too hard for it
+<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>           3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.8%    1.8%  too hard for it
 </pre>
 
 </details>
@@ -51,8 +51,8 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified) (…</a>   64.9%  ▄··▄▄·▄····● beats 5/5    hard · avg 28%          12%  sharp · at its level
-<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                      88.1%  █▄···█·····● beats 5/5    medium · avg 61%        11%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified) (…</a>   64.9%  ▄··▄▄·▄····● beats 5/5    hard · avg 29%          12%  sharp · at its level
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                      88.1%  █▄···█·····● beats 5/5    medium · avg 62%        11%  sharp
 <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                      83.1%  ▄·█··▄····●▄ beats 4/5    medium · avg 51%        11%  sharp
 <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                       97.4%  ▄·▄·····█··● beats 5/5    very easy · avg 92%    4.3%  maxed out
 </pre>
@@ -64,7 +64,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>                   61.3%  ●·········▂▂ beats 2/5    hard · avg 43%           16%  sharp · at its level
-<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.6%    7.8%  typical
+<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.6%    7.9%  typical
 <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 56%        6.8%  at its level
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 33%          2.2%  at its level
 </pre>
@@ -79,7 +79,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       12  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 60.0
+weighted average                                   = 59.9
 </pre>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt))</sub>

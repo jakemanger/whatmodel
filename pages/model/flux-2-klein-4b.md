@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃●▄█▃▁▂▁▁   #68 of 126     75%      3
-image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #42 of 62*     24%      2
+image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁   #42 of 62*     24%      2
 </pre>
 
 <details><summary>text to image · #68 of 126 · 75% of its score</summary>
@@ -26,7 +26,7 @@ Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md), [Photon](luma-photon.md)
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1030.0  ▂▂▃●▇█▄▂▄▂·▂ beats 12/75  avg 1027           45%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1030.0  ▂▂▃●▇█▅▂▄▂·▂ beats 12/75  avg 1027           45%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    84.3%  ▄····▄●▄▄█▄█ beats 3/10   easy · avg 82%     18%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   19.6%  ▁●▂█▃▁▂▃·▁·▁ beats 2/22   hard · avg 28%     11%  sharp · at its level · noisy
 </pre>
@@ -39,7 +39,7 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-k
 
 <pre>
 test                         result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1187.5  ▂▁▁▂●▇█▄▆▅▁▂ beats 10/53  avg 1153       17%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1187.0  ▂▁▁▃●█▄█▄█▁▂ beats 10/53  avg 1153       17%  typical
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1031.0  ▃▂····▂█●▃▂▃ beats 9/14   avg 956       6.8%  blunt
 </pre>
 
@@ -51,7 +51,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   63% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   62% ▇▇▇▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    7% ▇

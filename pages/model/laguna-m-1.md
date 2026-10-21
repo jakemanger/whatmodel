@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 66.2** ±1.8 · #120 of 725 · from 4 benchmark results across 2 sources
+**score 66.1** ±1.7 · #124 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  █···█······●       #1 of 3     43%      4
-coding       ▁▁▁▃▆██▇●▄▃▁   #114 of 460     84%      4
+agent tasks  █···█······●       #1 of 3     42%      4
+coding       ▁▁▁▃▆▇█▇●▄▃▁   #121 of 466     85%      4
 </pre>
 
-<details><summary>agent tasks · #1 of 3 · 43% of its score</summary>
+<details><summary>agent tasks · #1 of 3 · 42% of its score</summary>
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 97/131  hard · avg 27%          18%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▅█●▁▁ beats 99/134  hard · avg 27%          17%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%  ▂▂▅▅█●██▆▂▃▃ beats 16/36   very hard · avg 12%     14%  at its level · small run
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▂▅●█▃▃▁ beats 25/60   hard · avg 27%          11%  at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▅▃●·▃·▅▅▅█▃▃ beats 3/15                              —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▁▄●█▂▂▁ beats 25/62   hard · avg 27%          11%  at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▄▂●▂▄▂▆█·▂·▂ beats 3/16                              —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #114 of 460 · 84% of its score</summary>
+<details><summary>coding · #121 of 466 · 85% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1  ▁▂▄▃●█▄▇▆▄▁▁ beats 27/119  avg 969            55%  sharp
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 97/131  hard · avg 27%     18%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▂▅●█▃▃▁ beats 25/60   hard · avg 27%     11%  at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▅▃●·▃·▅▅▅█▃▃ beats 3/15                         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1349.9  ▁▁▃▃●█▄▇▅▅▁▁ beats 27/126  avg 978            56%  sharp
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▅█●▁▁ beats 99/134  hard · avg 27%     17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▁▄●█▂▂▁ beats 25/62   hard · avg 27%     11%  at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▄▂●▂▄▂▆█·▂·▂ beats 3/16                         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -52,10 +52,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   55% ▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (lab)</a>                       3   43% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   56% ▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (lab)</a>                       3   42% ▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 66.2
+weighted average                        = 66.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Poolside ([CC BY-SA 4.0](../../licenses/report-2605.27605v1.txt))</sub>

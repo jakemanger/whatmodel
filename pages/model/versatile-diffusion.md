@@ -34,8 +34,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                       result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  340.0000 wins  ▄·········●▄ beats 1/3    avg 526.557 wins     76%  sharp
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>    18.4000 FID  ▄··········● beats 1/2    avg 7.871 FID        16%  blunt · small run
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  340.0000 wins  ▄·········●▄ beats 1/3    avg 526.538 wins     76%  sharp
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>    18.4000 FID  ▄··········● beats 1/2    avg 7.872 FID        16%  blunt · small run
 </pre>
 
 </details>

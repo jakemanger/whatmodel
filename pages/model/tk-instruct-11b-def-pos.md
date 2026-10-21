@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions English…</a>   62.0%  █····█··█··● beats 3/3    easy · avg 70%       64%  at its level
+<a href="https://aclanthology.org/2022.emnlp-main.340.pdf">Super-NaturalInstructions English…</a>   62.0%  █····█··█··● beats 3/3    easy · avg 71%       64%  at its level
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         49.9%  ▂▆·▄▄●▂·▂··▂ beats 10/14  medium · avg 65%     21%  blunt · at its level
 </pre>
 

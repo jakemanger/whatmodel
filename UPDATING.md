@@ -42,7 +42,18 @@ fabricated accuracy or Elo conversion. Lower-is-better distances keep their raw 
 5. Run `npm run check`. It must pass. Look at each category's top 5 and leave-one-out error, and say in
    the PR if either moved a lot. Do not enable speed calibration merely because more reference measurements
    were added: exact model, download, hardware, engine and workload matching must first be established.
-6. Ask before triggering GitHub Actions through a push or PR. After approval, open a PR titled `data: <what changed>` that lists each added model, result and speed with its source.
+6. Complete the website/RSS handoff after every search, even when no new data was found:
+   in the `whatmodel-site` checkout, follow its `AGENTS.md` data-update order, ensure its
+   `whatmodel/` submodule contains the reviewed data, then run `npm run sync-data` from
+   the **website root**. This prepares scores before recording any new category or
+   subcategory #1, with saved evidence and charts. Review the history and new images,
+   preserve all earlier announcements, and include `site/feed-history.json` and new
+   `public/rss/` images with the website's submodule-pin update. Repeat the refresh and
+   local validation before a deployment push if data or scoring changed. If the website
+   checkout is unavailable, explicitly report the RSS handoff as outstanding.
+7. Ask before triggering GitHub Actions through a push or PR, or deploying. Finish the
+   local preparation and checks first. After approval, open a PR titled `data: <what changed>`
+   that lists each added model, result and speed with its source.
 
 ## Rules
 

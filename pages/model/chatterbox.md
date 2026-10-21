@@ -6,7 +6,7 @@
 
 Resemble AI · released 2025-05 · 0.5B params · mit
 
-**score 49.5** ±4.7 · #68 of 118 · from 4 benchmark results across 2 sources
+**score 49.4** ±4.8 · #68 of 119 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,10 +22,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     24.5%  ▅▅▃▃●▅▅▃·▃·▅ beats 6/16   hard · avg 30%          63%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     24.5%  ▅▅▃▃●▅▅▃·▃·▅ beats 6/16   hard · avg 31%          63%  at its level
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           13.1%  ▂▄··▂▄▄··●▄▆ beats 9/16   avg 16%                 16%  blunt
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.33 / 5  ▄▄█·▄▄▄▄●·▄█ beats 8/11   easy · avg 4.20 / 5    5.9%  blunt
-<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.23 / 5  █··▄▄██▄·●▄▄ beats 9/11   easy · avg 3.99 / 5    5.7%  blunt · at its level
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.33 / 5  ▄▄█·▄▄▄▄●·▄█ beats 8/11   easy · avg 4.20 / 5    5.7%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.23 / 5  █··▄▄██▄·●▄▄ beats 9/11   easy · avg 3.99 / 5    5.6%  blunt · at its level
 </pre>
 
 </details>
@@ -36,10 +36,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   79% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   12% ▇
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   11% ▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 49.5
+weighted average                                   = 49.4
 </pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>

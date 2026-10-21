@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.1B params · cc-by-4.0
 
-**score 58.6** ±2.0 · #42 of 162 · from 7 benchmark results across 4 sources
+**score 58.6** ±2.0 · #41 of 163 · from 7 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ test                            result  vs the others in its run  difficulty  co
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   23.4%  ▂····▂···▂●█ beats 6/11   avg 46%        25%  typical
-<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   27.1%  ▂▂····▂·●·▃█ beats 4/12   avg 52%        21%  sharp
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   27.1%  ▂▂····▂·●·▃█ beats 4/12   avg 52%        22%  sharp
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">LibriSpeech test-clean WER</a>            1.4%  ▁···▁▁▂·▄▄█● beats 50/56  avg 2.3%       17%  blunt
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.0%  ▁▁▁▃··▁▁▂█●▆ beats 61/86  avg 8.2%       13%  blunt
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">FLEURS English test WER</a>               4.2%  ▁··▁▁▁▁▁▁▃●▁ beats 45/56  avg 5.8%      6.8%  blunt
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   46% ▇▇▇▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   47% ▇▇▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   27% ▇▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   24% ▇▇▇
 <a name="speech-stt-sap-dysarthric-report"></a><a href="https://arxiv.org/html/2605.02782v2">Dysarthric ASR with clinical context on…</a>        1    2% ▇

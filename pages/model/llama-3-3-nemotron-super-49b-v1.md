@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 58.4** ±1.6 · #217 of 725 · from 7 benchmark results across 2 sources
+**score 58.2** ±1.6 · #221 of 729 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
 coding                         not ranked yet       —      1
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃      #180 of 395     39%      3
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃      #183 of 398     39%      3
 math            █··········●          #1 of 2     40%      3
 </pre>
 
@@ -40,15 +40,15 @@ test                                result  vs the others in its run  counts  wh
 
 </details>
 
-<details><summary>chat &amp; writing · #180 of 395 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #183 of 398 · 39% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1327.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 166/379  avg 1258           26%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1327.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 166/382  avg 1259           26%  blunt
 <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge unspeci…</a>   88.3%  ▃▃▂▅▃▆▅█▅▅▂● beats 30/30    easy · avg 70%    7.8%  small run
-<a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecified) …</a>   89.2%  ▁▁▃▁▂▄▄▆●▃▂▁ beats 108/141  easy · avg 79%    5.0%  small run
+<a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecified) …</a>   89.2%  ▁▂▄▂▂▄▆█●▄▂▁ beats 108/142  easy · avg 80%    5.0%  small run
 </pre>
 
 </details>
@@ -59,9 +59,9 @@ Beats [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here,
 
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   60.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 47/133  medium · avg 37%        16%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   67.5%  ▁▁▁▂▁▃▁▅●██▃ beats 32/85   medium · avg 47%        14%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    96.6%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 62/84   very easy · avg 91%    8.9%  maxed out · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   60.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 47/133  medium · avg 37%        17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   67.5%  ▁▁▁▂▁▃▁▅●██▃ beats 32/85   medium · avg 48%        14%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    96.6%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 63/85   very easy · avg 91%    8.9%  maxed out · small run
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>   66.7%  ▁▁▁▁▂▄▅▅●██▄ beats 140/311  hard · avg 46%     20%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>   66.7%  ▁▁▁▁▂▄▅▅●▇█▄ beats 140/315  hard · avg 46%     20%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -84,7 +84,7 @@ source                         results  share of the score
 <a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (lab)</a>                         6   73% ▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   26% ▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 58.4
+weighted average                        = 58.2
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 53.3** ±6.0 · #57 of 118 · from 3 benchmark results across 2 sources
+**score 53.3** ±6.1 · #57 of 119 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,8 +22,8 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     48.0%  ▃·····▂▂●▃█▆ beats 4/15   medium · avg 46%          52%  blunt · at its level
-<a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preference MO…</a>  3.43 / 5  █·●········█ beats 1/2    medium · avg 3.08 / 5     33%  at its level · small run
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     48.0%  ▃·····▂▂●▃█▆ beats 4/15   medium · avg 46%          51%  blunt · at its level
+<a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preference MO…</a>  3.43 / 5  █·●········█ beats 1/2    medium · avg 3.08 / 5     34%  at its level · small run
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     23.0%  ▂▂●··▂·▃▃▃█▂ beats 2/15   avg 8.6%                 0.6%  blunt · noisy
 </pre>
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   52% ▇▇▇▇▇▇
-<a name="speech-vibevoice-mit-figure"></a><a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">Microsoft VibeVoice own subjective eval…</a>        1   33% ▇▇▇▇
+<a name="speech-vibevoice-mit-figure"></a><a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">Microsoft VibeVoice own subjective eval…</a>        1   34% ▇▇▇▇
 prior: pull toward the middle                       15% ▇▇
 weighted average                                   = 53.3
 </pre>

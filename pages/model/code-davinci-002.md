@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▂▁   #442 of 529*    1.0%      1
+coding  ▁▁▁▂●▇█▇▅▄▃▁   #448 of 535*    1.0%      1
 math    ▁▁▃▆█●▅█▄▁▁▁    #265 of 526     27%      2
 </pre>
 
-<details><summary>coding · #442 of 529 · 1.0% of its score</summary>
+<details><summary>coding · #448 of 535 · 1.0% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2305.06161v2">HumanEval</a>   45.9%  ▁▁▁▁▂▂▆●█▅▂▁ beats 83/205  easy · avg 68%    1.0%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2305.06161v2">HumanEval</a>   45.9%  ▁▁▁▁▂▂▆●█▅▂▁ beats 83/205  easy · avg 69%    1.0%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.m
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>   63.1%  █·▅▃▃▃·▃·▃▃● beats 12/12  easy · avg 66%       25%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    35.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 12/18  medium · avg 47%    2.7%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    35.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 12/18  medium · avg 48%    2.7%  sharp · at its level
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test   result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             45.3%  █▁·▁▁·····▂● beats 12/12    hard · avg 48%          17%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             45.3%  █▁·▁▁·····▂● beats 12/12    medium · avg 48%        17%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                76.4%  ▃▅█···▅·▃▃▃● beats 11/12    easy · avg 82%          14%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        82.3%  █······▁·▁▁● beats 12/12    easy · avg 87%         8.3%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                80.4%  ▅▃▃▅··▃▃·▃▃● beats 12/12    easy · avg 83%         5.5%  sharp · several runs
@@ -69,7 +69,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   58.5%  █·····●····█ beats 1/2      medium · avg 65%       0.4%  at its level · small run
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">WinoGrande</a>                           60.7%  ▁▁▁▁▂▁▁●▇█▃▁ beats 36/131   medium · avg 73%       0.4%  at its level
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   84.9%  ▃·▃·····▃▃▃● beats 7/7      easy · avg 87%         0.3%  blunt · at its level
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      47.1%  ▄▄········▄● beats 4/4      medium · avg 57%       0.3%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>      47.1%  ▄▄········▄● beats 4/4      medium · avg 58%       0.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">HellaSwag</a>                            65.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 53/135   easy · avg 77%         0.3%  at its level
 <a href="https://aclanthology.org/2023.findings-acl.50.pdf">Zero-shot relation extraction, va…</a>   39.8%  ●····▄····█▄ beats 0/5      medium · avg 50%       0.2%  blunt · at its level
 <a href="https://arxiv.org/html/2203.11171v4">ARC Easy</a>                             94.0%  ▁▃▂▄▆█▅▃▁··● beats 99/100   easy · avg 87%         0.1%  blunt

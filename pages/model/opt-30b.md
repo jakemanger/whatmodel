@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 28.0** ±0.7 · #669 of 725 · from 48 benchmark results across 11 sources
+**score 28.0** ±0.7 · #673 of 729 · from 48 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,13 +37,13 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (lab)</a>                     57.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 87/107  hard · avg 48%         1.9%  too hard for it · small run · several r…
 <a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (lab)</a>                 58.1%  ▅▃·▃··▅·●▅▃█ beats 6/13    medium · avg 75%       1.6%  small run
 <a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (lab)</a>                 50.2%  ●·▂▁······▁▁ beats 0/13    medium · avg 71%       1.3%  sharp · too hard for it · noisy · small…
-<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            54.3%  ●█······▃▃·▅ beats 1/8     easy · avg 85%         1.3%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            54.3%  ●█······▃▃·▅ beats 1/8     easy · avg 86%         1.3%  at its level
 <a href="https://arxiv.org/html/2210.01296v2">Natural Questions (closed book)</a>      15.0%  ▂▁▁▁▂▄▄▃●█▅▁ beats 35/68   medium · avg 38%       1.1%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        53.2%  █·····▂▂▃●▄▄ beats 24/38   very easy · avg 91%    1.1%  sharp · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   57.0%  ▂▂··▂·●···▂▂ beats 4/8     easy · avg 79%         1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2212.12017v3">BoolQ (lab)</a>                          64.0%  ▁····▁▂●▆▅▆▄ beats 31/103  easy · avg 84%         0.9%  at its level · small run
 <a href="https://arxiv.org/html/2212.12017v3">Winograd Schema Challenge (WSC273…</a>   83.5%  █▃·▅▃▃█▅●█▅▃ beats 13/21   easy · avg 92%         0.8%  blunt · at its level · small run
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   39.5%  ▃▁▁▁▁●▁▁▂█▅▁ beats 48/276  medium · avg 72%       0.7%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   39.5%  ▃▁▁▁▁●▁▁▂█▅▁ beats 48/276  medium · avg 72%       0.8%  noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-30b/opt-30b.json">SuperGLUE WSC (prompted)</a>             59.6%  █·······▂·●▃ beats 6/8     medium · avg 68%       0.4%  blunt · noisy · several runs
 <a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (lab)</a>      28.6%  ●▃·▂█▂▂▂·▂·▂ beats 0/13    medium · avg 60%       0.2%  blunt · at its level · small run
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-30b/opt-30b.json">LogiQA (harness)</a>                     21.7%  ●··········▁ beats 1/14    very hard · avg 25%    0.0%  too hard for it · noisy

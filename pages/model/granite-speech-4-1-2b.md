@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 2.31B params · apache-2.0
 
-**score 62.3** ±3.3 · #15 of 162 · from 3 benchmark results across 2 sources
+**score 62.3** ±3.3 · #16 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json">LibriSpeech test-clean WER</a>            1.3%  ▁···▁▁▂·▄▄█● beats 53/56  avg 2.3%       48%  blunt
-<a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba cod…</a>   73.5%  ●··█·█···█·█ beats 0/4    avg 131%       28%  typical
+<a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba cod…</a>   73.5%  ●··█·█···█·█ beats 0/4    avg 130%       28%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json">FLEURS English test WER</a>               4.1%  ▁··▁▁▁▁▁▁▃●▁ beats 49/56  avg 5.8%       19%  blunt
 <a href="https://huggingface.co/ibm-granite/granite-speech-4.1-2b/blob/de575db64086f84fdc79da4932d1076e965bc546/README.md">Granite Speech · LScln punctuatio…</a>   25.7%  no other model yet                         —  not counted yet: no other model in the …
 </pre>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   68% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   67% ▇▇▇▇▇▇▇▇
 <a name="speech-stt-yoruba-cs-report"></a><a href="https://arxiv.org/html/2609.11786v1">Switch-aware evaluation of ASR on Engli…</a>        1   28% ▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 62.3

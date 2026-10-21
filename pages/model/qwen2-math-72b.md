@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 50.7** ±1.2 · #354 of 725 · from 4 benchmark results across 2 sources
+**score 50.7** ±1.2 · #352 of 729 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                40.1%  ▃·····▃··█▅● beats 7/8    hard · avg 34%          16%  at its level
 <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       96.7%  ▄···█▄▄·▄·▄● beats 8/8    very easy · avg 92%     13%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 73%         8.4%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 74%         8.4%  at its level
 </pre>
 
 </details>

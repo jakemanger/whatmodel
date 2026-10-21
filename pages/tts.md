@@ -4,11 +4,11 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md)
 
-updated 2026-10-16 03:16 UTC · 179 models · scores combine 101 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-10-21 08:35 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
-[All sets](https://whatmodel.sh/tts) · [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot · 148 models](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925) · [VITS 2021 LJ Speech human MOS · 5 models](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos) · [Grad-TTS 2021 LJ Speech human MOS · 4 models](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos)
+[All sets](https://whatmodel.sh/tts) · [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot · 149 models](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925) · [VITS 2021 LJ Speech human MOS · 5 models](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos) · [Grad-TTS 2021 LJ Speech human MOS · 4 models](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos)
 
 Filtering keeps overall scores. On the site, choose **within selected set** to use only that set’s evaluations. Models without a shared score scale are marked **not yet calibrated**.
 
@@ -29,11 +29,11 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
 
 ```text
   score vs API price
-       │                                        OpenAudio S1 ◆● Voxtral TTS (4B)
+       │                                        OpenAudio S1 ◆∘
     60 ┤ · · · · ··· · · · · · · · ·Simba 3.2·◆───────◇──────◇ · ◇ · ◇ ·◇· · · ·◇· ◇ · · · ◇ ·
-       │  ●───────────────────────────────────┘                ◇     ∘  ◇  ◇    ◇   ◇      ◇
-    40 ┤ · · · · ··· · · · · · · · · · · · · · · · · ··· · · ∘◇· · · · · · · · · · · · · · · ·
-       │                                         ∘                          ◇          ◇
+       │  ●─Kokoro 82M v1.0───────────────────┘                ◇     ∘  ◇  ◇    ◇   ◇      ◇
+    40 ┤ · · · · ··· · · · · · · · · · · · · · · · · ··· · · ∘◇· · · · · · · · · · · · ◇ · · ·
+       │                                         ∘                          ◇
        └──────────┬───────────────────────────────────┬────────────────────────────────────┬──
                  $1                                  $10                                 $100
 ```
@@ -44,12 +44,12 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   score vs API price (USD per 1M characters, log)
   ● open weights  ◆ API only  ─┘ best for the price
        │                                                      OpenAudio S1
-       │          ·                                   ·      ◆● Voxtral TTS (4B)           ·
+       │          ·                                   ·      ◆∘                            ·
        │                                                     │   ◇              ◇
        │          ·                           ◆─Simba 3.2────◇                     ◇       ·
-       │                                      │              ◇          ◇       ◇          ◇
-       │          ·                           │       ◇      ∘       ◇          ◇          ◇
-    60 ┤ · · · · · · · · · · · · · · · · · · ·│· · · · · · · ◇ · · · · · · · · · · ◇ · · · · ·
+       │                                      │              ∘          ◇       ◇          ◇
+       │          ·                           │       ◇      ∘                  ◇          ◇
+    60 ┤ · · · · · · · · · · · · · · · · · · ·│· · · · · · · ◇ · · · ◇ · · · · · · ◇ · · · · ·
        │          ·                           │       ·              ◇  ◇       ◇   ◇      ·
        │                                      │
        │  ●─Kokoro 82M v1.0───────────────────┘       ·        ◇                           ·
@@ -58,8 +58,8 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
        │                                                      ◇
        │          ·                                   ·                                    ·
     40 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │          ·                                   ·                                ◇   ·
-       │                                         ∘                          ◇
+       │          ·                                   ·                     ◇          ◇   ·
+       │                                         ∘
        │          ·                                   ·                                    ·
        └──────────┬───────────────────────────────────┬────────────────────────────────────┬──
                  $1                                  $10                                 $100
@@ -69,25 +69,25 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   score vs memory to run it (GB, log)
   ─┘ best for the memory
        │
-       │  ·                 ·                      ·                 ● Voxtral TTS (4B)
-       │                dots.tts MF 2B (MeanFlow,… ●─────────────────┘   ∘
-       │  ·                 ●─VoxCPM2─●─OmniVoice──∘    ∘         ∘  ∘ ∘       ∘      ·    ∘
-    60 ┤ ·●─IndexTTS (v1)───┘· · · · ·∘· · · ∘ · · · · · · ·∘· · · · · · · · · · · · · · · · ·
-       │  ∘                 ∘                      ∘        ∘        ·                ·
-       │  ∘                           ∘            ∘                                  ∘
-       │  ∘                 ∘         ∘      ∘     ·        ∘        ·                ·
-       │  ∘                                  ∘                 ∘
-    40 ┤ ·∘· · · · · · · · ·∘· · · · · · · · ∘ · · · · · · · · · · · · · · · · · · · ··· · · ·
-       │                              ∘      ∘     ∘        ∘
-       │  ∘                 ∘                      ∘                 ·                ·
-       │                    ∘         ∘            ∘              ∘
-       │  ∘                 ·                ∘     ·                 ·                ·
-    20 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ · · · · · · · · · · · ·
-       │  ·                 ·                      ·                 ·                ·
-       │                    ∘                ∘
-       │  ·                 ·                      ·                 ·                ·
-       └──┬─────────────────┬──────────────────────┬─────────────────┬────────────────┬───────
-         1GB               2GB                    5GB              10GB             20GB
+       │                                            ● Voxtral TTS (4B)       ·      ·     ·
+       │    dots.tts MF 2B (MeanFlow,… ●────────────┘  ∘
+       │  ●────VoxCPM2─●──────●────────∘   ∘      ∘ ∘ ∘    ∘    ·   ∘        ·      ·     ·
+    60 ┤ ·∘· · · · ·OmniVoice·∘· · ∘ · · · · ·∘· · · · · · · · · · · · · · · · · · · · · · · ·
+       │  ∘            ∘               ∘      ∘                 ·            ·      ·     ·
+       │  ∘                   ∘        ∘                        ∘
+       │  ∘            ∘      ∘    ∘                            ·            ·      ·     ·∘
+       │  ∘                        ∘          ∘ ∘
+    40 ┤ ·∘· · · · · · ∘ · · · · · ∘ · · · · · · · · · · · · · ··· · · · · · · · · ··· · ··· ·
+       │                      ∘    ∘   ∘      ∘
+       │  ∘            ∘               ∘      ∘                 ·            ·      ·     ·
+       │  ∘            ∘      ∘        ∘          ∘
+       │  ∘                        ∘                            ·            ·      ·     ·
+    20 ┤ · · · · · · · · · · · · · · · · · · · · · ·∘· · · · · · · · · · · · · · · · · · · · ·
+       │                                                        ·            ·      ·     ·
+       │               ∘           ∘
+       │                                                        ·            ·      ·     ·
+       └────────────────────────────────────────────────────────┬────────────┬──────┬─────┬───
+                                                              20GB         40GB   60GB  80GB
 ```
 
 </details>
@@ -97,8 +97,8 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   1  <a href="model/seed-tts-2-0-standard.md">Seed TTS 2.0 Standard</a>                     84±5*  comparison only
   2  <a href="model/azure-neural-tts-xiaoxiao.md">Azure Neural TTS Xiaoxiao</a>                 74±4*  comparison only
   3  <a href="model/gemini-2-5-flash-preview-tts.md">Gemini 2.5 Flash Preview …</a>                72±3   comparison only
-  4  <a href="model/voxtral-tts.md">Voxtral TTS (4B)</a>                          71±4†  api $16.00/M char…   ~10GB         <a href="https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03">mistral.ai ↗</a>
-  5  <a href="model/openaudio-s1.md">OpenAudio S1</a>                             71±8*†  api $15.00/M chars                 <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
+  4  <a href="model/openaudio-s1.md">OpenAudio S1</a>                             71±8*†  api $15.00/M chars                 <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
+  5  <a href="model/voxtral-tts.md">Voxtral TTS (4B)</a>                          71±4†  api $16.00/M char…   ~10GB         <a href="https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03">mistral.ai ↗</a>
   6  <a href="model/gemini-2-5-pro-preview-tts.md">Gemini 2.5 Pro Preview TTS</a>                69±3   comparison only
   7  <a href="model/qwen-audio-3-0-tts-plus.md">Qwen-Audio-3.0-TTS-Plus</a>                   69±2†  api $20.00/M chars                 <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
   8  <a href="model/gemini-3-1-flash-tts-preview.md">Gemini 3.1 Flash TTS Prev…</a>                69±2   api $50.00/M chars                 <a href="https://fal.ai/models/fal-ai/gemini-3.1-flash-tts">fal.ai ↗</a>
@@ -107,42 +107,42 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
  11  <a href="model/xai-grok-tts.md">Grok TTS</a>                                  68±3   api $15.00/M chars                 <a href="https://docs.x.ai/developers/model-capabilities/audio/text-to-speech">x.ai ↗</a>
  12  <a href="model/fireredtts3-base.md">FireRedTTS3 (base)</a>                        67±3   local                ~12GB         <a href="model/fireredtts3-base.md#run-it-on-your-own-machine">how to run ›</a>
  13  <a href="model/speechify-simba-3-2.md">Simba 3.2</a>                                 67±3*  api $6.00/M chars                  <a href="https://speechify.ai/pricing">speechify.ai ↗</a>
- 14  <a href="model/dots-tts-base.md">dots.tts Base (Pretrain) …</a>                67±2†  comparison only
- 15  <a href="model/minimax-speech-2-8-turbo.md">MiniMax Speech 2.8 Turbo</a>                  66±3*  api $60.00/M chars                 <a href="https://platform.minimax.io/docs/pricing/overview">minimax.io ↗</a>
- 16  <a href="model/longcat-audiodit-3-5b.md">LongCat-AudioDiT-3.5B</a>                     66±2   local                ~15GB         <a href="model/longcat-audiodit-3-5b.md#run-it-on-your-own-machine">how to run ›</a>
- 17  <a href="model/longcat-audiodit-1b.md">LongCat-AudioDiT-1B</a>                       66±4†  local               ~5.7GB         <a href="model/longcat-audiodit-1b.md#run-it-on-your-own-machine">how to run ›</a>
+ 14  <a href="model/dots-tts-base.md">dots.tts Base (Pretrain) …</a>                67±3†  comparison only
+ 15  <a href="model/longcat-audiodit-3-5b.md">LongCat-AudioDiT-3.5B</a>                     66±2   local                ~15GB         <a href="model/longcat-audiodit-3-5b.md#run-it-on-your-own-machine">how to run ›</a>
+ 16  <a href="model/longcat-audiodit-1b.md">LongCat-AudioDiT-1B</a>                       66±4†  local               ~5.7GB         <a href="model/longcat-audiodit-1b.md#run-it-on-your-own-machine">how to run ›</a>
+ 17  <a href="model/minimax-speech-2-8-turbo.md">MiniMax Speech 2.8 Turbo</a>                  66±3*  api $60.00/M chars                 <a href="https://platform.minimax.io/docs/pricing/overview">minimax.io ↗</a>
  18  <a href="model/omnivoice.md">OmniVoice</a>                                 66±2   local               ~3.3GB         <a href="model/omnivoice.md#run-it-on-your-own-machine">how to run ›</a>
  19  <a href="model/minimax-speech-2-8-hd.md">MiniMax Speech 2.8 HD</a>                     66±2   api $100.00/M cha…                 <a href="https://platform.minimax.io/docs/pricing/overview">minimax.io ↗</a>
  20  <a href="model/dots-tts-soar.md">dots.tts SOAR 2B</a>                          65±2   local               ~5.2GB         <a href="model/dots-tts-soar.md#run-it-on-your-own-machine">how to run ›</a>
- 21  <a href="model/elevenlabs-v3.md">Eleven v3</a>                                 65±1   api $100.00/M cha…                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
- 22  <a href="model/google-chirp-3-hd.md">Chirp 3: HD</a>                               65±4*  api $30.00/M chars                 <a href="https://cloud.google.com/text-to-speech/pricing">google.com ↗</a>
+ 21  <a href="model/google-chirp-3-hd.md">Chirp 3: HD</a>                               65±4*  api $30.00/M chars                 <a href="https://cloud.google.com/text-to-speech/pricing">google.com ↗</a>
+ 22  <a href="model/elevenlabs-v3.md">Eleven v3</a>                                 65±1   api $100.00/M cha…                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
  23  <a href="model/higgs-audio-v3-tts.md">Higgs Audio V3 TTS</a>                        65±3   api $15.00/M char…   ~10GB         <a href="https://docs.boson.ai">boson.ai ↗</a>
  24  <a href="model/raon-opentts-0-3b.md">Raon-OpenTTS-0.3B</a>                         65±2†  comparison only
  25  <a href="model/qwen3-tts-12hz-1-7b-base.md">Qwen3-TTS 12Hz 1.7B Base</a>                  65±1   local               ~4.5GB         <a href="model/qwen3-tts-12hz-1-7b-base.md#run-it-on-your-own-machine">how to run ›</a>
  26  <a href="model/voxcpm-0-5b.md">VoxCPM 0.5B</a>                               64±1   local                 ~5GB         <a href="model/voxcpm-0-5b.md#run-it-on-your-own-machine">how to run ›</a>
- 27  <a href="model/voxcpm2.md">VoxCPM2</a>                                   64±1   local               ~2.3GB         <a href="model/voxcpm2.md#run-it-on-your-own-machine">how to run ›</a>
- 28  <a href="model/fun-cosyvoice3-0-5b-2512.md">Fun-CosyVoice3-0.5B-2512</a>                  64±1   local               ~5.4GB         <a href="model/fun-cosyvoice3-0-5b-2512.md#run-it-on-your-own-machine">how to run ›</a>
+ 27  <a href="model/fun-cosyvoice3-0-5b-2512.md">Fun-CosyVoice3-0.5B-2512</a>                  64±1   local               ~5.4GB         <a href="model/fun-cosyvoice3-0-5b-2512.md#run-it-on-your-own-machine">how to run ›</a>
+ 28  <a href="model/voxcpm2.md">VoxCPM2</a>                                   64±1   local               ~2.3GB         <a href="model/voxcpm2.md#run-it-on-your-own-machine">how to run ›</a>
  29  <a href="model/wayu-paxa-tts-edge.md">Wayu-Paxa-TTS-Edge</a>                        64±4†  local               ~0.3GB         <a href="model/wayu-paxa-tts-edge.md#run-it-on-your-own-machine">how to run ›</a>
- 30  <a href="model/elevenlabs-turbo-v2-5.md">Eleven Turbo v2.5</a>                         64±4*  api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
- 31  <a href="model/fish-audio-s2-1-pro.md">Fish Audio S2.1 Pro</a>                       63±3*  api $15.00/M chars                 <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
- 32  <a href="model/indextts-2.md">IndexTTS-2</a>                                63±1   local               ~8.9GB         <a href="model/indextts-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 30  <a href="model/elevenlabs-turbo-v2-5.md">Eleven Turbo v2.5</a>                         63±4*  api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
+ 31  <a href="model/indextts-2.md">IndexTTS-2</a>                                63±1   local               ~8.9GB         <a href="model/indextts-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 32  <a href="model/fish-audio-s2-1-pro.md">Fish Audio S2.1 Pro</a>                       63±3*  api $15.00/M chars                 <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
  33  <a href="model/moss-tts-v1-5.md">MOSS-TTS v1.5 (8B)</a>                        63±2   local                ~24GB         <a href="model/moss-tts-v1-5.md#run-it-on-your-own-machine">how to run ›</a>
  34  <a href="model/glm-tts.md">GLM-TTS</a>                                   63±2   local               ~8.9GB         <a href="model/glm-tts.md#run-it-on-your-own-machine">how to run ›</a>
  35  <a href="model/cartesia-sonic-3-5.md">Sonic 3.5</a>                                 63±2   comparison only
- 36  <a href="model/minimax-speech-02-hd.md">MiniMax Speech-02-HD</a>                      63±3   api $100.00/M cha…                 <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
- 37  <a href="model/fish-audio-s2-pro.md">Fish Audio S2 Pro</a>                         63±1   api $15.00/M char…   ~11GB         <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
- 38  <a href="model/elevenlabs-flash-v2-5.md">Eleven Flash v2.5</a>                         63±2   api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
+ 36  <a href="model/fish-audio-s2-pro.md">Fish Audio S2 Pro</a>                         63±1   api $15.00/M char…   ~11GB         <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
+ 37  <a href="model/minimax-speech-02-hd.md">MiniMax Speech-02-HD</a>                      63±3   api $100.00/M cha…                 <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
+ 38  <a href="model/elevenlabs-flash-v2-5.md">Eleven Flash v2.5</a>                         62±2   api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
  39  <a href="model/indextts.md">IndexTTS (v1)</a>                             62±3   local               ~1.2GB         <a href="model/indextts.md#run-it-on-your-own-machine">how to run ›</a>
  40  <a href="model/f5-tts-v1-base.md">F5-TTS v1 Base</a>                            62±3   local               ~1.4GB         <a href="model/f5-tts-v1-base.md#run-it-on-your-own-machine">how to run ›</a>
- 41  <a href="model/inworld-tts-1-5-max.md">Inworld TTS-1.5 Max</a>                       62±3*  api $10.00/M chars                 <a href="https://fal.ai/models/fal-ai/inworld-tts">fal.ai ↗</a>
- 42  <a href="model/zipvoice.md">ZipVoice</a>                                  62±3   local               ~0.2GB         <a href="model/zipvoice.md#run-it-on-your-own-machine">how to run ›</a>
- 43  <a href="model/ghana-tts-72k.md">Ghana TTS 72k</a>                            62±7*†  comparison only
+ 41  <a href="model/zipvoice.md">ZipVoice</a>                                  62±3   local               ~0.2GB         <a href="model/zipvoice.md#run-it-on-your-own-machine">how to run ›</a>
+ 42  <a href="model/ghana-tts-72k.md">Ghana TTS 72k</a>                            62±7*†  comparison only
+ 43  <a href="model/inworld-tts-1-5-max.md">Inworld TTS-1.5 Max</a>                       62±3*  api $10.00/M chars                 <a href="https://fal.ai/models/fal-ai/inworld-tts">fal.ai ↗</a>
  44  <a href="model/qwen3-tts-12hz-0-6b-base.md">Qwen3-TTS 12Hz 0.6B Base</a>                  62±2   local               ~2.5GB         <a href="model/qwen3-tts-12hz-0-6b-base.md#run-it-on-your-own-machine">how to run ›</a>
- 45  <a href="model/elevenlabs-flash-v2.md">Eleven Flash v2</a>                           62±3*  api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
- 46  <a href="model/dmospeech-2.md">DMOSpeech 2</a>                               62±4†  local               ~4.3GB         <a href="model/dmospeech-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 45  <a href="model/dmospeech-2.md">DMOSpeech 2</a>                               62±4†  local               ~4.3GB         <a href="model/dmospeech-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 46  <a href="model/elevenlabs-flash-v2.md">Eleven Flash v2</a>                           62±3*  api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
  47  <a href="model/elevenlabs-turbo-v2.md">Eleven Turbo v2</a>                           61±3*  api $50.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
- 48  <a href="model/inworld-realtime-tts-2.md">Inworld Realtime TTS-2</a>                    61±2   api $25.00/M chars                 <a href="https://replicate.com/inworld/realtime-tts-2">replicate.com ↗</a>
- 49  <a href="model/cosyvoice2-0-5b.md">CosyVoice2-0.5B</a>                           61±1   local               ~4.1GB         <a href="model/cosyvoice2-0-5b.md#run-it-on-your-own-machine">how to run ›</a>
+ 48  <a href="model/cosyvoice2-0-5b.md">CosyVoice2-0.5B</a>                           61±1   local               ~4.1GB         <a href="model/cosyvoice2-0-5b.md#run-it-on-your-own-machine">how to run ›</a>
+ 49  <a href="model/inworld-realtime-tts-2.md">Inworld Realtime TTS-2</a>                    61±2   api $25.00/M chars                 <a href="https://replicate.com/inworld/realtime-tts-2">replicate.com ↗</a>
  50  <a href="model/e2-tts-base.md">E2 TTS Base (F5-TTS repro…</a>                60±2   local               ~1.3GB         <a href="model/e2-tts-base.md#run-it-on-your-own-machine">how to run ›</a>
  51  <a href="model/minimax-speech-02-turbo.md">MiniMax Speech-02-Turbo</a>                   60±3*  api $60.00/M chars                 <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
  52  <a href="model/openai-tts-1.md">TTS-1</a>                                     59±4   api $15.00/M chars                 <a href="https://developers.openai.com/api/docs/pricing">openai.com ↗</a>
@@ -154,94 +154,95 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
  58  <a href="model/gpt-4o-mini-tts.md">GPT-4o mini TTS</a>                           58±2   comparison only
  59  <a href="model/cartesia-sonic-2.md">Sonic 2</a>                                   58±3*  comparison only
  60  <a href="model/f5-tts-base.md">F5-TTS Base (v0)</a>                          57±2   local               ~1.4GB         <a href="model/f5-tts-base.md#run-it-on-your-own-machine">how to run ›</a>
- 61  <a href="model/openai-tts-1-hd.md">TTS-1 HD</a>                                  57±7*  api $30.00/M chars                 <a href="https://developers.openai.com/api/docs/pricing">openai.com ↗</a>
- 62  <a href="model/deepgram-aura-2.md">Deepgram Aura 2</a>                           57±3   api $30.00/M chars                 <a href="https://deepgram.com/pricing">deepgram.com ↗</a>
- 63  <a href="model/zonos2-8b.md">ZONOS2 8B</a>                                 57±2†  local               ~5.2GB         <a href="model/zonos2-8b.md#run-it-on-your-own-machine">how to run ›</a>
+ 61  <a href="model/deepgram-aura-2.md">Deepgram Aura 2</a>                           57±3   api $30.00/M chars                 <a href="https://deepgram.com/pricing">deepgram.com ↗</a>
+ 62  <a href="model/zonos2-8b.md">ZONOS2 8B</a>                                 57±3†  local               ~5.2GB         <a href="model/zonos2-8b.md#run-it-on-your-own-machine">how to run ›</a>
+ 63  <a href="model/openai-tts-1-hd.md">TTS-1 HD</a>                                  56±7*  api $30.00/M chars                 <a href="https://developers.openai.com/api/docs/pricing">openai.com ↗</a>
  64  <a href="model/supertonic-3.md">Supertonic 3</a>                             55±10*  local               ~0.4GB         <a href="model/supertonic-3.md#run-it-on-your-own-machine">how to run ›</a>
  65  <a href="model/elevenlabs-v3-alpha.md">ElevenLabs v3 Alpha</a>                       55±9*  comparison only
  66  <a href="model/higgs-audio-v2.md">Higgs Audio V2</a>                            55±3   local                 ~7GB         <a href="model/higgs-audio-v2.md#run-it-on-your-own-machine">how to run ›</a>
  67  <a href="model/fasih-tts-v1.md">Fasih-TTS-V1</a>                             55±10*  local               ~1.9GB         <a href="model/fasih-tts-v1.md#run-it-on-your-own-machine">how to run ›</a>
- 68  <a href="model/cosyvoice-300m.md">CosyVoice-300M</a>                            54±3   local               ~2.3GB         <a href="model/cosyvoice-300m.md#run-it-on-your-own-machine">how to run ›</a>
+ 68  <a href="model/cosyvoice-300m.md">CosyVoice-300M</a>                            55±3   local               ~2.3GB         <a href="model/cosyvoice-300m.md#run-it-on-your-own-machine">how to run ›</a>
  69  <a href="model/chatterbox-multilingual-v3.md">Chatterbox Multilingual V3</a>               54±10*  local               ~3.2GB         <a href="model/chatterbox-multilingual-v3.md#run-it-on-your-own-machine">how to run ›</a>
  70  <a href="model/vibevoice-1-5b.md">VibeVoice 1.5B</a>                            53±6   local               ~5.4GB         <a href="model/vibevoice-1-5b.md#run-it-on-your-own-machine">how to run ›</a>
  71  <a href="model/smallest-lightning-v3-1.md">Lightning v3.1</a>                            53±3*  api $17.50/M chars                 <a href="https://smallest.ai/pricing">smallest.ai ↗</a>
  72  <a href="model/gepard-1-0.md">Gepard 1.0</a>                                53±4†  comparison only
- 73  <a href="model/kokoro-82m.md">Kokoro 82M v1.0</a>                           52±3   api $0.62/M chars…  ~0.3GB         <a href="https://deepinfra.com/hexgrad/Kokoro-82M">deepinfra.com ↗</a>
- 74  <a href="model/lemas-tts-multilingual-prosody.md">LEMAS-TTS (w/ prosody, mu…</a>               52±6*†  local               ~1.5GB         <a href="model/lemas-tts-multilingual-prosody.md#run-it-on-your-own-machine">how to run ›</a>
- 75  <a href="model/neuphonic-neu-hq.md">Neuphonic neu_hq</a>                          52±3*  comparison only
- 76  <a href="model/spark-tts-0-5b.md">Spark-TTS 0.5B</a>                            52±3   local               ~2.9GB         <a href="model/spark-tts-0-5b.md#run-it-on-your-own-machine">how to run ›</a>
- 77  <a href="model/llasa-8b.md">Llasa-8B</a>                                  52±3   local                ~20GB         <a href="model/llasa-8b.md#run-it-on-your-own-machine">how to run ›</a>
+ 73  <a href="model/lemas-tts-multilingual-prosody.md">LEMAS-TTS (w/ prosody, mu…</a>               52±6*†  local               ~1.5GB         <a href="model/lemas-tts-multilingual-prosody.md#run-it-on-your-own-machine">how to run ›</a>
+ 74  <a href="model/kokoro-82m.md">Kokoro 82M v1.0</a>                           52±3   api $0.62/M chars…  ~0.3GB         <a href="https://deepinfra.com/hexgrad/Kokoro-82M">deepinfra.com ↗</a>
+ 75  <a href="model/spark-tts-0-5b.md">Spark-TTS 0.5B</a>                            52±3   local               ~2.9GB         <a href="model/spark-tts-0-5b.md#run-it-on-your-own-machine">how to run ›</a>
+ 76  <a href="model/llasa-8b.md">Llasa-8B</a>                                  52±3   local                ~20GB         <a href="model/llasa-8b.md#run-it-on-your-own-machine">how to run ›</a>
+ 77  <a href="model/neuphonic-neu-hq.md">Neuphonic neu_hq</a>                          52±3*  comparison only
  78  <a href="model/gradium-tts.md">Gradium TTS</a>                               51±3*  api $38.00/M chars                 <a href="https://docs.gradium.ai/api-reference/endpoint/tts-post">gradium.ai ↗</a>
- 79  <a href="model/openvoice-v1.md">OpenVoice V1</a>                             51±14*  local               ~0.3GB         <a href="model/openvoice-v1.md#run-it-on-your-own-machine">how to run ›</a>
- 80  <a href="model/elevenlabs-multilingual-v2.md">Eleven Multilingual v2</a>                    51±5   api $100.00/M cha…                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
+ 79  <a href="model/openvoice-v1.md">OpenVoice V1</a>                             51±15*  local               ~0.3GB         <a href="model/openvoice-v1.md#run-it-on-your-own-machine">how to run ›</a>
+ 80  <a href="model/elevenlabs-multilingual-v2.md">Eleven Multilingual v2</a>                    50±5   api $100.00/M cha…                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
  81  <a href="model/azure-ameha-neural.md">Azure Ameha Neural</a>                       50±16*  comparison only
  82  <a href="model/azure-mekdes-neural.md">Azure Mekdes Neural</a>                      50±16*  comparison only
  83  <a href="model/addis-voice-2.md">Addis Voice 2</a>                           50±16*†  comparison only
  84  <a href="model/lemas-tts-multilingual-grl.md">LEMAS-TTS (w/o prosody, m…</a>               50±6*†  local               ~1.4GB         <a href="model/lemas-tts-multilingual-grl.md#run-it-on-your-own-machine">how to run ›</a>
  85  <a href="model/mms-tts-amh.md">MMS TTS Amharic</a>                          50±16*  local               ~0.2GB         <a href="model/mms-tts-amh.md#run-it-on-your-own-machine">how to run ›</a>
- 86  <a href="model/chatterbox.md">Chatterbox</a>                                50±5   api $25.00/M char…  ~2.9GB    ~2×  <a href="https://replicate.com/resemble-ai/chatterbox">replicate.com ↗</a>
- 87  <a href="model/parler-tts-mini-v0-1.md">Parler-TTS Mini v0.1</a>                     49±14*  local               ~2.6GB         <a href="model/parler-tts-mini-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
- 88  <a href="model/fish-speech-1-2.md">Fish Speech 1.2</a>                          49±14*  local               ~1.2GB         <a href="model/fish-speech-1-2.md#run-it-on-your-own-machine">how to run ›</a>
- 89  <a href="model/silma-tts-v1.md">SILMA TTS v1</a>                             48±10*  local               ~2.7GB         <a href="model/silma-tts-v1.md#run-it-on-your-own-machine">how to run ›</a>
- 90  <a href="model/fireredtts-1.md">FireRedTTS (v1)</a>                           48±3   local               ~3.1GB         <a href="model/fireredtts-1.md#run-it-on-your-own-machine">how to run ›</a>
- 91  <a href="model/vokan.md">Vokan</a>                                    48±14*  comparison only
- 92  <a href="model/orpheus-tts-0-1-finetune-prod.md">Orpheus TTS 3B 0.1 (finet…</a>                47±5   api $15.00/M char…  ~2.4GB         <a href="https://docs.together.ai/docs/serverless/models">together.ai ↗</a>
- 93  <a href="model/kyutai-tts-1-6b-en-fr.md">Kyutai TTS 1.6B en/fr</a>                     47±5*  local               ~4.1GB         <a href="model/kyutai-tts-1-6b-en-fr.md#run-it-on-your-own-machine">how to run ›</a>
- 94  <a href="model/mimo-v2-5-tts.md">MiMo v2.5 TTS</a>                             47±4*  comparison only
- 95  <a href="model/amphion-valle-librilight-6k.md">Amphion VALL-E (LibriLigh…</a>               47±14*  local               ~1.6GB         <a href="model/amphion-valle-librilight-6k.md#run-it-on-your-own-machine">how to run ›</a>
- 96  <a href="model/piper-en-us-lessac-medium.md">Piper (en_US lessac mediu…</a>                47±5*  local               ~0.1GB         <a href="model/piper-en-us-lessac-medium.md#run-it-on-your-own-machine">how to run ›</a>
- 97  <a href="model/amphion-vevo.md">Vevo (Amphion)</a>                            46±3   local               ~6.8GB         <a href="model/amphion-vevo.md#run-it-on-your-own-machine">how to run ›</a>
- 98  <a href="model/qwen3-tts-12hz-0-6b-customvoice.md">Qwen3-TTS 12Hz 0.6B Custo…</a>                46±6*  comparison only
- 99  <a href="model/dia2-2b.md">Dia2 2B</a>                                   45±6*  local               ~8.1GB         <a href="model/dia2-2b.md#run-it-on-your-own-machine">how to run ›</a>
-100  <a href="model/amazon-polly-neural.md">Amazon Polly Neural</a>                       45±4*  api $16.00/M chars                 <a href="https://aws.amazon.com/polly/pricing">aws.amazon.com ↗</a>
-101  <a href="model/kitten-tts-nano-0-8.md">KittenTTS Nano 0.8</a>                        44±5*  comparison only
-102  <a href="model/gpt-sovits-v2.md">GPT-SoVITS v2</a>                             44±4   local               ~1.1GB         <a href="model/gpt-sovits-v2.md#run-it-on-your-own-machine">how to run ›</a>
-103  <a href="model/melotts-english.md">MeloTTS English</a>                           44±5   local               ~0.7GB         <a href="model/melotts-english.md#run-it-on-your-own-machine">how to run ›</a>
+ 86  <a href="model/chatterbox.md">Chatterbox</a>                                49±5   api $25.00/M char…  ~2.9GB    ~2×  <a href="https://replicate.com/resemble-ai/chatterbox">replicate.com ↗</a>
+ 87  <a href="model/parler-tts-mini-v0-1.md">Parler-TTS Mini v0.1</a>                     49±15*  local               ~2.6GB         <a href="model/parler-tts-mini-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
+ 88  <a href="model/fish-speech-1-2.md">Fish Speech 1.2</a>                          49±15*  local               ~1.2GB         <a href="model/fish-speech-1-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 89  <a href="model/fish-audio-drama-3.md">Fish Audio Drama 3</a>                      49±13*†  local                ~85GB         <a href="model/fish-audio-drama-3.md#run-it-on-your-own-machine">how to run ›</a>
+ 90  <a href="model/silma-tts-v1.md">SILMA TTS v1</a>                             48±10*  local               ~2.7GB         <a href="model/silma-tts-v1.md#run-it-on-your-own-machine">how to run ›</a>
+ 91  <a href="model/fireredtts-1.md">FireRedTTS (v1)</a>                           48±3   local               ~3.1GB         <a href="model/fireredtts-1.md#run-it-on-your-own-machine">how to run ›</a>
+ 92  <a href="model/vokan.md">Vokan</a>                                    48±15*  comparison only
+ 93  <a href="model/orpheus-tts-0-1-finetune-prod.md">Orpheus TTS 3B 0.1 (finet…</a>                47±5   api $15.00/M char…  ~2.4GB         <a href="https://docs.together.ai/docs/serverless/models">together.ai ↗</a>
+ 94  <a href="model/kyutai-tts-1-6b-en-fr.md">Kyutai TTS 1.6B en/fr</a>                     47±5*  local               ~4.1GB         <a href="model/kyutai-tts-1-6b-en-fr.md#run-it-on-your-own-machine">how to run ›</a>
+ 95  <a href="model/mimo-v2-5-tts.md">MiMo v2.5 TTS</a>                             47±4*  comparison only
+ 96  <a href="model/amphion-valle-librilight-6k.md">Amphion VALL-E (LibriLigh…</a>               47±14*  local               ~1.6GB         <a href="model/amphion-valle-librilight-6k.md#run-it-on-your-own-machine">how to run ›</a>
+ 97  <a href="model/piper-en-us-lessac-medium.md">Piper (en_US lessac mediu…</a>                47±5*  local               ~0.1GB         <a href="model/piper-en-us-lessac-medium.md#run-it-on-your-own-machine">how to run ›</a>
+ 98  <a href="model/amphion-vevo.md">Vevo (Amphion)</a>                            46±3   local               ~6.8GB         <a href="model/amphion-vevo.md#run-it-on-your-own-machine">how to run ›</a>
+ 99  <a href="model/qwen3-tts-12hz-0-6b-customvoice.md">Qwen3-TTS 12Hz 0.6B Custo…</a>                46±6*  comparison only
+100  <a href="model/dia2-2b.md">Dia2 2B</a>                                   45±6*  local               ~8.1GB         <a href="model/dia2-2b.md#run-it-on-your-own-machine">how to run ›</a>
+101  <a href="model/amazon-polly-neural.md">Amazon Polly Neural</a>                       45±5*  api $16.00/M chars                 <a href="https://aws.amazon.com/polly/pricing">aws.amazon.com ↗</a>
+102  <a href="model/kitten-tts-nano-0-8.md">KittenTTS Nano 0.8</a>                        44±5*  comparison only
+103  <a href="model/gpt-sovits-v2.md">GPT-SoVITS v2</a>                             44±4   local               ~1.1GB         <a href="model/gpt-sovits-v2.md#run-it-on-your-own-machine">how to run ›</a>
 104  <a href="model/parler-tts-mini-v1.md">Parler-TTS Mini v1</a>                        44±6*  local               ~3.5GB         <a href="model/parler-tts-mini-v1.md#run-it-on-your-own-machine">how to run ›</a>
-105  <a href="model/cartesia-sonic.md">Sonic (1)</a>                                 42±3*  comparison only
-106  <a href="model/nabra-82m-v0-1.md">Nabra-82M v0.1</a>                           42±10*  local               ~0.3GB         <a href="model/nabra-82m-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
-107  <a href="model/openaudio-s1-mini.md">OpenAudio S1 Mini</a>                         41±5   api price unknown…  ~1.7GB         <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
-108  <a href="model/fish-speech-1-5.md">Fish Speech 1.5</a>                           41±3   local               ~1.5GB         <a href="model/fish-speech-1-5.md#run-it-on-your-own-machine">how to run ›</a>
-109  <a href="model/ema-lightning.md">EMA Lightning</a>                             40±3*  local                 ~0GB         <a href="model/ema-lightning.md#run-it-on-your-own-machine">how to run ›</a>
-110  <a href="model/antalia-2-mini.md">Antalia-2 Mini</a>                           40±4*†  comparison only
-111  <a href="model/hierspeechpp-v1-1.md">HierSpeech++ v1.1</a>                         39±3   local               ~2.1GB         <a href="model/hierspeechpp-v1-1.md#run-it-on-your-own-machine">how to run ›</a>
-112  <a href="model/trendyol-tts.md">Trendyol-TTS</a>                              39±3*  comparison only
-113  <a href="model/magpie-tts-multilingual-357m.md">Magpie TTS Multilingual 3…</a>                39±6*  local               ~0.7GB    ~1×  <a href="model/magpie-tts-multilingual-357m.md#run-it-on-your-own-machine">how to run ›</a>
-114  <a href="model/zonos-v0-1.md">Zonos v0.1</a>                                39±4   api price unknown…  ~4.3GB         <a href="https://zyphra.com">zyphra.com ↗</a>
-115  <a href="model/maya1.md">Maya1</a>                                     38±6*  local               ~6.7GB         <a href="model/maya1.md#run-it-on-your-own-machine">how to run ›</a>
-116  <a href="model/gemini-3-8-flash-tts.md">Gemini 3.8 Flash TTS</a>                      37±3*  api price unknown                  <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
-117  <a href="model/pheme-300m.md">Pheme 300M</a>                                37±3   local               ~3.6GB         <a href="model/pheme-300m.md#run-it-on-your-own-machine">how to run ›</a>
-118  <a href="model/voicecraft-830m-tts-enhanced.md">VoiceCraft 830M TTSEnhanc…</a>                37±8*  local               ~4.5GB         <a href="model/voicecraft-830m-tts-enhanced.md#run-it-on-your-own-machine">how to run ›</a>
-119  <a href="model/gemini-3-8-flash-lite-tts.md">Gemini 3.8 Flash-Lite TTS</a>                 37±3*  api price unknown                  <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
-120  <a href="model/elevenlabs-v4.md">Eleven v4</a>                                 37±4*  api $80.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
-121  <a href="model/amphion-valle-v2.md">Amphion VALL-E v2 recipe …</a>                36±3   local               ~2.9GB         <a href="model/amphion-valle-v2.md#run-it-on-your-own-machine">how to run ›</a>
+105  <a href="model/melotts-english.md">MeloTTS English</a>                           44±5   local               ~0.7GB         <a href="model/melotts-english.md#run-it-on-your-own-machine">how to run ›</a>
+106  <a href="model/cartesia-sonic.md">Sonic (1)</a>                                 42±3*  comparison only
+107  <a href="model/nabra-82m-v0-1.md">Nabra-82M v0.1</a>                           41±10*  local               ~0.3GB         <a href="model/nabra-82m-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
+108  <a href="model/ema-lightning.md">EMA Lightning</a>                             41±3*  local                 ~0GB         <a href="model/ema-lightning.md#run-it-on-your-own-machine">how to run ›</a>
+109  <a href="model/openaudio-s1-mini.md">OpenAudio S1 Mini</a>                         41±5   api price unknown…  ~1.7GB         <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">fish.audio ↗</a>
+110  <a href="model/fish-speech-1-5.md">Fish Speech 1.5</a>                           40±3   local               ~1.5GB         <a href="model/fish-speech-1-5.md#run-it-on-your-own-machine">how to run ›</a>
+111  <a href="model/antalia-2-mini.md">Antalia-2 Mini</a>                           40±4*†  comparison only
+112  <a href="model/trendyol-tts.md">Trendyol-TTS</a>                              40±3*  comparison only
+113  <a href="model/hierspeechpp-v1-1.md">HierSpeech++ v1.1</a>                         39±3   local               ~2.1GB         <a href="model/hierspeechpp-v1-1.md#run-it-on-your-own-machine">how to run ›</a>
+114  <a href="model/magpie-tts-multilingual-357m.md">Magpie TTS Multilingual 3…</a>                39±6*  local               ~0.7GB    ~1×  <a href="model/magpie-tts-multilingual-357m.md#run-it-on-your-own-machine">how to run ›</a>
+115  <a href="model/zonos-v0-1.md">Zonos v0.1</a>                                39±5   api price unknown…  ~4.3GB         <a href="https://zyphra.com">zyphra.com ↗</a>
+116  <a href="model/elevenlabs-v4.md">Eleven v4</a>                                 38±4*  api $80.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
+117  <a href="model/gemini-3-8-flash-tts.md">Gemini 3.8 Flash TTS</a>                      38±3*  api price unknown                  <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+118  <a href="model/maya1.md">Maya1</a>                                     38±6*  local               ~6.7GB         <a href="model/maya1.md#run-it-on-your-own-machine">how to run ›</a>
+119  <a href="model/gemini-3-8-flash-lite-tts.md">Gemini 3.8 Flash-Lite TTS</a>                 38±3*  api price unknown                  <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+120  <a href="model/voicecraft-830m-tts-enhanced.md">VoiceCraft 830M TTSEnhanc…</a>                37±9*  local               ~4.5GB         <a href="model/voicecraft-830m-tts-enhanced.md#run-it-on-your-own-machine">how to run ›</a>
+121  <a href="model/pheme-300m.md">Pheme 300M</a>                                37±3   local               ~3.6GB         <a href="model/pheme-300m.md#run-it-on-your-own-machine">how to run ›</a>
 122  <a href="model/neutts-air.md">NeuTTS Air</a>                               36±10*  local                 ~4GB         <a href="model/neutts-air.md#run-it-on-your-own-machine">how to run ›</a>
 123  <a href="model/elevenlabs-v4-turbo.md">Eleven v4 Turbo</a>                           36±4*  api $40.00/M chars                 <a href="https://elevenlabs.io/pricing/api">elevenlabs.io ↗</a>
-124  <a href="model/vits-vctk.md">VITS (VCTK multi-speaker)</a>                 34±5   local               ~0.2GB         <a href="model/vits-vctk.md#run-it-on-your-own-machine">how to run ›</a>
+124  <a href="model/amphion-valle-v2.md">Amphion VALL-E v2 recipe …</a>                36±3   local               ~2.9GB         <a href="model/amphion-valle-v2.md#run-it-on-your-own-machine">how to run ›</a>
 125  <a href="model/sesame-csm-1b.md">Sesame CSM-1B</a>                             34±5   api $7.00/M chars…  ~6.6GB         <a href="https://deepinfra.com/sesame/csm-1b">deepinfra.com ↗</a>
-126  <a href="model/voicecraft-830m.md">VoiceCraft 830M (giga830M)</a>                32±4†  local               ~4.5GB         <a href="model/voicecraft-830m.md#run-it-on-your-own-machine">how to run ›</a>
-127  <a href="model/vall-e-x-plachtaa.md">VALL-E X (Plachtaa open i…</a>                31±4   local               ~1.6GB         <a href="model/vall-e-x-plachtaa.md#run-it-on-your-own-machine">how to run ›</a>
-128  <a href="model/outetts-0-2-500m.md">OuteTTS 0.2 500M</a>                          31±6*  local               ~0.9GB         <a href="model/outetts-0-2-500m.md#run-it-on-your-own-machine">how to run ›</a>
-129  <a href="model/simple-tts.md">Simple-TTS</a>                                31±5*  comparison only
-130  <a href="model/styletts-2-libritts.md">StyleTTS 2 (LibriTTS)</a>                     30±2   local               ~0.9GB         <a href="model/styletts-2-libritts.md#run-it-on-your-own-machine">how to run ›</a>
-131  <a href="model/xtts-v2.md">XTTS v2</a>                                   30±2   local               ~1.9GB         <a href="model/xtts-v2.md#run-it-on-your-own-machine">how to run ›</a>
-132  <a href="model/tortoise-tts-v2.md">Tortoise TTS v2</a>                           29±2   local               ~4.5GB         <a href="model/tortoise-tts-v2.md#run-it-on-your-own-machine">how to run ›</a>
-133  <a href="model/parler-tts-large-v1.md">Parler-TTS Large v1</a>                       29±3   local               ~9.3GB         <a href="model/parler-tts-large-v1.md#run-it-on-your-own-machine">how to run ›</a>
-134  <a href="model/whisperspeech-v1-95-medium.md">WhisperSpeech v1.95 Mediu…</a>                28±3   local               ~3.2GB         <a href="model/whisperspeech-v1-95-medium.md#run-it-on-your-own-machine">how to run ›</a>
-135  <a href="model/glow-tts-hifigan-vctk-vits-study.md">Glow-TTS + HiFi-GAN (VCTK…</a>                28±6*  comparison only
-136  <a href="model/hierspeechpp-libritts960.md">HierSpeech++ (LibriTTS-96…</a>                28±5   local               ~2.1GB         <a href="model/hierspeechpp-libritts960.md#run-it-on-your-own-machine">how to run ›</a>
-137  <a href="model/piper-tr-tr-dfki-medium.md">Piper (tr_TR dfki medium)</a>                 26±4*  local               ~0.1GB         <a href="model/piper-tr-tr-dfki-medium.md#run-it-on-your-own-machine">how to run ›</a>
-138  <a href="model/openvoice-v2.md">OpenVoice V2</a>                              26±3   local               ~0.8GB         <a href="model/openvoice-v2.md#run-it-on-your-own-machine">how to run ›</a>
-139  <a href="model/bark.md">Bark</a>                                      25±3   local               ~4.5GB         <a href="model/bark.md#run-it-on-your-own-machine">how to run ›</a>
-140  <a href="model/speecht5-tts.md">SpeechT5 TTS</a>                              23±3   local               ~0.7GB         <a href="model/speecht5-tts.md#run-it-on-your-own-machine">how to run ›</a>
-141  <a href="model/metavoice-1b-v0-1.md">MetaVoice 1B v0.1</a>                         20±3   local               ~9.7GB         <a href="model/metavoice-1b-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
-142  <a href="model/tacotron2-hifigan-vctk-vits-study.md">Tacotron 2 + HiFi-GAN (VC…</a>                19±6*  comparison only
-143  <a href="model/yourtts.md">YourTTS</a>                                   18±3   local               ~0.4GB         <a href="model/yourtts.md#run-it-on-your-own-machine">how to run ›</a>
+126  <a href="model/vits-vctk.md">VITS (VCTK multi-speaker)</a>                 34±5   local               ~0.2GB         <a href="model/vits-vctk.md#run-it-on-your-own-machine">how to run ›</a>
+127  <a href="model/voicecraft-830m.md">VoiceCraft 830M (giga830M)</a>                32±4†  local               ~4.5GB         <a href="model/voicecraft-830m.md#run-it-on-your-own-machine">how to run ›</a>
+128  <a href="model/vall-e-x-plachtaa.md">VALL-E X (Plachtaa open i…</a>                31±4   local               ~1.6GB         <a href="model/vall-e-x-plachtaa.md#run-it-on-your-own-machine">how to run ›</a>
+129  <a href="model/outetts-0-2-500m.md">OuteTTS 0.2 500M</a>                          31±6*  local               ~0.9GB         <a href="model/outetts-0-2-500m.md#run-it-on-your-own-machine">how to run ›</a>
+130  <a href="model/simple-tts.md">Simple-TTS</a>                                31±5*  comparison only
+131  <a href="model/styletts-2-libritts.md">StyleTTS 2 (LibriTTS)</a>                     30±2   local               ~0.9GB         <a href="model/styletts-2-libritts.md#run-it-on-your-own-machine">how to run ›</a>
+132  <a href="model/xtts-v2.md">XTTS v2</a>                                   30±2   local               ~1.9GB         <a href="model/xtts-v2.md#run-it-on-your-own-machine">how to run ›</a>
+133  <a href="model/tortoise-tts-v2.md">Tortoise TTS v2</a>                           29±2   local               ~4.5GB         <a href="model/tortoise-tts-v2.md#run-it-on-your-own-machine">how to run ›</a>
+134  <a href="model/parler-tts-large-v1.md">Parler-TTS Large v1</a>                       29±3   local               ~9.3GB         <a href="model/parler-tts-large-v1.md#run-it-on-your-own-machine">how to run ›</a>
+135  <a href="model/whisperspeech-v1-95-medium.md">WhisperSpeech v1.95 Mediu…</a>                28±3   local               ~3.2GB         <a href="model/whisperspeech-v1-95-medium.md#run-it-on-your-own-machine">how to run ›</a>
+136  <a href="model/glow-tts-hifigan-vctk-vits-study.md">Glow-TTS + HiFi-GAN (VCTK…</a>                28±6*  comparison only
+137  <a href="model/hierspeechpp-libritts960.md">HierSpeech++ (LibriTTS-96…</a>                27±5   local               ~2.1GB         <a href="model/hierspeechpp-libritts960.md#run-it-on-your-own-machine">how to run ›</a>
+138  <a href="model/piper-tr-tr-dfki-medium.md">Piper (tr_TR dfki medium)</a>                 27±4*  local               ~0.1GB         <a href="model/piper-tr-tr-dfki-medium.md#run-it-on-your-own-machine">how to run ›</a>
+139  <a href="model/openvoice-v2.md">OpenVoice V2</a>                              25±3   local               ~0.8GB         <a href="model/openvoice-v2.md#run-it-on-your-own-machine">how to run ›</a>
+140  <a href="model/bark.md">Bark</a>                                      25±3   local               ~4.5GB         <a href="model/bark.md#run-it-on-your-own-machine">how to run ›</a>
+141  <a href="model/speecht5-tts.md">SpeechT5 TTS</a>                              23±3   local               ~0.7GB         <a href="model/speecht5-tts.md#run-it-on-your-own-machine">how to run ›</a>
+142  <a href="model/metavoice-1b-v0-1.md">MetaVoice 1B v0.1</a>                         19±3   local               ~9.7GB         <a href="model/metavoice-1b-v0-1.md#run-it-on-your-own-machine">how to run ›</a>
+143  <a href="model/tacotron2-hifigan-vctk-vits-study.md">Tacotron 2 + HiFi-GAN (VC…</a>                19±6*  comparison only
 144  <a href="model/mms-tts-tur.md">MMS TTS Turkish</a>                           18±4*  local               ~0.2GB         <a href="model/mms-tts-tur.md#run-it-on-your-own-machine">how to run ›</a>
-145  <a href="model/antalia-1.md">Antalia 1</a>                                 17±3*  comparison only
-146  <a href="model/amphion-naturalspeech2.md">Amphion NaturalSpeech 2 (…</a>                14±3   local               ~1.7GB         <a href="model/amphion-naturalspeech2.md#run-it-on-your-own-machine">how to run ›</a>
-147  <a href="model/coqui-tr-common-voice-glow-tts.md">Glow-TTS Common Voice (Tu…</a>                11±4*  local                 ~4GB         <a href="model/coqui-tr-common-voice-glow-tts.md#run-it-on-your-own-machine">how to run ›</a>
-148  <a href="model/freyatts-small.md">FreyaTTS-small</a>                             9±4*  comparison only
+145  <a href="model/yourtts.md">YourTTS</a>                                   18±3   local               ~0.4GB         <a href="model/yourtts.md#run-it-on-your-own-machine">how to run ›</a>
+146  <a href="model/antalia-1.md">Antalia 1</a>                                 17±3*  comparison only
+147  <a href="model/amphion-naturalspeech2.md">Amphion NaturalSpeech 2 (…</a>                14±3   local               ~1.7GB         <a href="model/amphion-naturalspeech2.md#run-it-on-your-own-machine">how to run ›</a>
+148  <a href="model/coqui-tr-common-voice-glow-tts.md">Glow-TTS Common Voice (Tu…</a>                11±4*  local                 ~4GB         <a href="model/coqui-tr-common-voice-glow-tts.md#run-it-on-your-own-machine">how to run ›</a>
+149  <a href="model/freyatts-small.md">FreyaTTS-small</a>                             9±4*  comparison only
   —  <a href="model/azure-hd-2-5.md">Azure HD 2.5</a>                no reviewed results  api $22.00/M chars                 <a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/">azure.microsoft…</a>
   —  <a href="model/breeze-tts-2.md">Breeze TTS 2</a>                no reviewed results  api $28.00/M char…    ~3GB         <a href="https://breezeblue.ai">breezeblue.ai ↗</a>
   —  <a href="model/chatterbox-turbo.md">Chatterbox Turbo</a>            no reviewed results  local                 ~3GB         <a href="model/chatterbox-turbo.md#run-it-on-your-own-machine">how to run ›</a>
@@ -273,9 +274,10 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   —  <a href="model/coqui-fr-css10-vits.md">VITS CSS10 (French)</a>         no reviewed results  local                 ~4GB         <a href="model/coqui-fr-css10-vits.md#run-it-on-your-own-machine">how to run ›</a>
   —  <a href="model/coqui-es-css10-vits.md">VITS CSS10 (Spanish)</a>        no reviewed results  local                 ~4GB         <a href="model/coqui-es-css10-vits.md#run-it-on-your-own-machine">how to run ›</a>
   —  <a href="model/coqui-de-thorsten-vits.md">VITS Thorsten (German)</a>      no reviewed results  local                 ~4GB         <a href="model/coqui-de-thorsten-vits.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/voxtral-mini-tts-3.md">Voxtral Mini TTS 3</a>          no reviewed results  api $13.00/M chars                 <a href="https://mistral.ai/news/voxtral-3">mistral.ai ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 179 of 187 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 181 of 189 catalogue models listed here · [sources and licences](method.md#sources)
 
 <details><summary>Models without a score (1)</summary>
 

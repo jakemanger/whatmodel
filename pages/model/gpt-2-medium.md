@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-05 · 0.355B params · mit
 
-**score -5.4** ±1.3 · #723 of 725 · from 36 benchmark results across 9 sources
+**score -5.4** ±1.3 · #727 of 729 · from 36 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">PIQA</a>                                 67.6%  ▁▁▁●▂▃▅█▅▃▁▁ beats 15/123  easy · avg 89%         1.9%  blunt · at its level
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">BoolQ</a>                                56.6%  ▁····▁●█▆▅▆▄ beats 4/103   easy · avg 91%         1.6%  noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   10.5%  ▄···█···●█·▄ beats 4/7     hard · avg 22%         0.5%  blunt · too hard for it
-<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 0.0%  ●·▆▂▄▂▂····▂ beats 1/12    easy · avg 70%         0.3%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 0.0%  ●·▆▂▄▂▂····▂ beats 1/12    easy · avg 70%         0.4%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">StrategyQA</a>                            0.1%  ●········▁▃▁ beats 1/9     hard · avg 62%         0.3%  too hard for it · noisy
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                         0.0%  ●····▁·····▁ beats 1/9     easy · avg 75%         0.3%  sharp · too hard for it · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.1%  ●▁▁▁▁▁▁▁▂█▅▁ beats 24/276  medium · avg 72%       0.2%  too hard for it · noisy

@@ -6,7 +6,7 @@
 
 Reve · closed weights
 
-**score 58.3** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.3** ±4.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁▁▃▂▃●▃▃▃▁▁   #40 of 81*     93%      1
+image to image / edit…  ▁▁▁▃▂▂●▃▄▄▂▁   #39 of 81*     93%      1
 </pre>
 
-<details><summary>image to image / editing · #40 of 81 · 93% of its score</summary>
+<details><summary>image to image / editing · #39 of 81 · 93% of its score</summary>
 
-Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image-Edit-2511](qwen-image-edit-2511.md) here, though they rank lower overall.
+Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [Qwen-Image-Edit-2511](qwen-image-edit-2511.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1234.5  ▂▁▁▂▆●█▄▆▅▁▂ beats 19/53  avg 1153       93%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1234.6  ▂▁▁▃▆●▄█▄█▁▂ beats 19/53  avg 1153       93%  typical
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             7% ▇
 weighted average                        = 58.3
 </pre>

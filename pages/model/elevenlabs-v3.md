@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2026-02 · proprietary
 
-**score 65.1** ±1.3 · #15 of 118 · from 20 benchmark results across 8 sources
+**score 65.1** ±1.3 · #16 of 119 · from 20 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -25,9 +25,9 @@ Trails [Eleven Flash v2.5](elevenlabs-flash-v2-5.md) here, though they rank lowe
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   39.2%  ●█·········█ beats 0/2    hard · avg 22%    3.6%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   39.2%  ●█·········█ beats 0/2    hard · avg 22%    3.7%  at its level · small run
 <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language speaker …</a>   49.7%  ●█·········█ beats 0/2    hard · avg 31%    3.5%  at its level · small run
-<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    2.2%  ●····█·····█ beats 0/2    avg 5.4%          1.9%  small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    2.2%  ●····█·····█ beats 0/2    avg 5.3%          1.9%  small run
 <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>    1.3%  ●··········▄ beats 0/2    avg 3.3%          1.7%  small run
 </pre>
 
@@ -37,20 +37,20 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1281.1  ▁···▁▃··█▄▁● beats 18/18  avg 1078                  16%  typical
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                  5.8%  █····█·████● beats 6/6    avg 26%                  8.2%  sharp
-<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1231.8  ▃·▃▃▃·▃█●▃·▃ beats 9/12   avg 1080                 8.2%  typical
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1281.1  ▁···▁▃··█▄▁● beats 18/18  avg 1080                  16%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1231.8  ▃·▃▃▃·▃█●▃·▃ beats 9/12   avg 1082                 8.2%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                  5.8%  █····█·████● beats 6/6    avg 27%                  8.1%  sharp
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      2.4%  ▄·····█··▄█● beats 6/7    avg 8.3%                 7.1%  typical
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.92 / 5  █·▄·▄▄·●···▄ beats 5/6    medium · avg 2.98 / 5    6.5%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      3.8%  ▄·····▄█▄●·▄ beats 5/7    avg 12%                  6.2%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  3.39 / 5  █··▄█▄····●▄ beats 6/7    hard · avg 2.00 / 5      6.0%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.92 / 5  █·▄·▄▄·●···▄ beats 5/6    medium · avg 2.98 / 5    6.6%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      3.8%  ▄·····▄█▄●·▄ beats 5/7    avg 11%                  6.1%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  3.39 / 5  █··▄█▄····●▄ beats 6/7    hard · avg 2.00 / 5      5.9%  at its level
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>                 10.7%  ▄▄●···▄··▄·█ beats 2/6    avg 23%                  5.8%  typical
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      5.1%  ▄···▄··▄··●█ beats 3/6    avg 20%                  5.6%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.35 / 5  ▃▃█···●···▃▃ beats 5/7    medium · avg 2.52 / 5    5.2%  at its level
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added langua…</a>      5.1%  ●··█······██ beats 0/3    avg 12%                  3.9%  typical
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     48.9%  ●·····▄▄·▄▄█ beats 0/6    medium · avg 49%         3.0%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      5.1%  ▄···▄··▄··●█ beats 3/6    avg 20%                  5.5%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.35 / 5  ▃▃█···●···▃▃ beats 5/7    medium · avg 2.53 / 5    5.2%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added langua…</a>      5.1%  ●··█······██ beats 0/3    avg 12%                  4.0%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     48.9%  ●·····▄▄·▄▄█ beats 0/6    medium · avg 49%         3.1%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Code-S…</a>  3.33 / 5  ●··▄·······▄ beats 0/3    medium · avg 2.67 / 5    2.8%  at its level
-<a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 Indian la…</a>    1056.3  ▄····▄·····● beats 3/3    avg 897                  2.3%  typical
+<a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 Indian la…</a>    1056.3  ▄····▄·····● beats 3/3    avg 899                  2.3%  typical
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability (hu…</a>  3.59 / 5  ●·▄······▄·▄ beats 0/4    medium · avg 3.01 / 5    2.1%  at its level
 <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (Chir…</a>    111.7%  ●·····▄·▄·██ beats 0/6    avg 8.7%                 0.0%  blunt · noisy
 </pre>

@@ -6,7 +6,7 @@
 
 IBM · released 2026-08 · 0.47B params · apache-2.0
 
-**score 62.2** ±3.9 · #17 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.2** ±3.9 · #18 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>            1.3%  ▁···▁▁▂·▄▄█● beats 51/56  avg 2.3%       67%  blunt
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>               4.6%  ▁··▁▁▁▁▁▁▃●▁ beats 34/56  avg 5.8%       27%  blunt
-<a href="https://arxiv.org/html/2609.20104v1">Granite 5.0 report · Open ASR pub…</a>    5.7%  █···█·····█● beats 3/3    avg 11%          —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2609.20104v1">Granite 5.0 report · Open ASR pub…</a>    5.7%  █···█·····█● beats 3/3    avg 10%          —  not counted yet: no other model in the …
 </pre>
 
 </details>

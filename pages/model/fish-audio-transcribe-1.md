@@ -6,7 +6,7 @@
 
 Fish Audio · proprietary
 
-**score 62.2** ±4.9 · #19 of 162 · from 3 benchmark results across 1 source
+**score 62.2** ±4.9 · #19 of 163 · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

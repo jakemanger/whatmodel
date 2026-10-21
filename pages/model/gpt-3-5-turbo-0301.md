@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-03 · proprietary
 
-**score 47.5** ±0.5 · comparison only: no current run option verified · from 68 benchmark results across 30 sources
+**score 47.4** ±0.5 · comparison only: no current run option verified · from 68 benchmark results across 30 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▂▁   #342 of 529     33%      5
-chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #383 of 466     14%      3
+coding          ▁▁▁▂▅●█▇▅▄▃▁   #348 of 535     33%      5
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #386 of 469     14%      3
 math            ▁▁▃▆█●▅█▄▁▁▁   #231 of 526    8.0%      3
 </pre>
 
-<details><summary>coding · #342 of 529 · 33% of its score</summary>
+<details><summary>coding · #348 of 535 · 33% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #383 of 466 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #386 of 469 · 14% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -51,12 +51,12 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>math · #231 of 526 · 8.0% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   76.0%  ▆▂▅█▅▅▃●···▂ beats 23/25  easy · avg 72%      8.0%  sharp · at its level · several runs
-<a href="https://aclanthology.org/2023.findings-acl.29.pdf">MGSM</a>    57.2%  ▂·▁▁▁▁▁▂▅●▃▂ beats 32/42  medium · avg 47%       —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.findings-acl.29.pdf">MGSM</a>    57.2%  ▂·▁▁▁▁▁▂▅●▃▂ beats 32/42  medium · avg 48%       —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2023.findings-acl.29.pdf">MATH</a>    34.1%  ▃▅▂▆▅▃▅●█▃▃▂ beats 18/30  medium · avg 61%       —  not counted yet: no other model in the …
 </pre>
 
@@ -66,14 +66,14 @@ test   result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://aclanthology.org/2023.emnlp-main.550.pdf">AQuA-RAT</a>                             52.8%  █··▁▁▁··▁▁●▁ beats 26/27    medium · avg 58%       7.2%  sharp · at its level · small run · seve…
+<a href="https://aclanthology.org/2023.emnlp-main.550.pdf">AQuA-RAT</a>                             52.8%  █··▁▁▁··▁▁●▁ beats 26/27    medium · avg 58%       7.1%  sharp · at its level · small run · seve…
 <a href="https://aclanthology.org/2023.findings-acl.651.pdf">SVAMP</a>                                79.0%  █▆▆▅▂▅▂▅▂▂●▃ beats 27/30    very easy · avg 85%    5.3%  sharp · small run · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">CommonsenseQA</a>                        75.4%  █·····▂▂▃▂▄● beats 33/38    easy · avg 80%         4.8%  sharp · at its level · small run · seve…
 <a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   63.8%  █·····▃··●·▃ beats 5/6      medium · avg 71%       4.0%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       66.1%  ▁·····▂█▂●·▁ beats 22/25    medium · avg 74%       3.2%  sharp · at its level
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>   51.8%  ▄···█·▄█··●▄ beats 6/7      medium · avg 56%       2.1%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">StrategyQA</a>                           69.2%  █····▂▂▁▂▂●▂ beats 22/25    medium · avg 72%       1.6%  at its level · small run · several runs
-<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   61.0%  █·▄······●·▄ beats 3/4      medium · avg 63%       1.5%  at its level
+<a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   61.0%  █·▄······●·▄ beats 3/4      medium · avg 64%       1.5%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.392.pdf">OpenBookQA</a>                           80.0%  ▅▁▁▁▂▂▃█▃▁●▁ beats 101/107  easy · avg 78%         1.5%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 67.9%  ▁▁▃▃▄█▄▁●··▁ beats 24/25    medium · avg 72%       1.4%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.743.pdf">COPA</a>                                 96.3%  ▁·▁▁▁▅▅█▆▂▁● beats 65/67    very easy · avg 96%    1.1%  several runs
@@ -147,7 +147,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-100"></a><a href="https://aclanthology.org/2023.findings-emnlp.100.pdf">MenatQA: A New Dataset for Testing the …</a>        1    0% ▇
 <a name="acl-2023-findings-emnlp-490"></a><a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">A Comprehensive Evaluation of Large Lan…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 47.5
+weighted average                                   = 47.4
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Is ChatGPT a General-Purpose Natural Language Processing Task Solver? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-85-CC-BY-4-0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · It Ain't Over: A Multi-aspect Diverse Math Word Problem Dataset ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-927-CC-BY-4-0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · Vera: A General-Purpose Plausibility Estimation Model for Commonsense Statements ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-81-CC-BY-4-0.txt)) · Unnatural Error Correction: GPT-4 Can Almost Perfectly Handle Unnatural Scrambled Text ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-550-CC-BY-4-0.txt)) · Tab-CoT: Zero-shot Tabular Chain of Thought ([CC BY 4.0](../../licenses/acl-2023-findings-acl-651-CC-BY-4-0.txt)) · Automatic Model Selection with Large Language Models for Reasoning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-55-CC-BY-4-0.txt)) · Investigating Table-to-Text Generation Capabilities of Large Language Models in Real-World Information Seeking Scenarios ([CC BY 4.0](../../licenses/acl-2023-emnlp-industry-17-CC-BY-4-0.txt)) · Examining Inter-Consistency of Large Language Models Collaboration: An In-depth Analysis via Debate ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-508-CC-BY-4-0.txt)) · Self-Knowledge Guided Retrieval Augmentation for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-691-CC-BY-4-0.txt)) · Self-Consistency of Large Language Models under Ambiguity ([CC BY 4.0](../../licenses/acl-2023-blackboxnlp-1-7-CC-BY-4-0.txt)) · LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-825-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · MoT: Memory-of-Thought Enables ChatGPT to Self-Improve ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-392-CC-BY-4-0.txt)) · clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-689-CC-BY-4-0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · Battle of the Large Language Models: Dolly vs LLaMA vs Vicuna vs Guanaco vs Bard vs ChatGPT - A Text-to-SQL Parsing Comparison ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-750-CC-BY-4-0.txt)) · Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark For Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-468-CC-BY-4-0.txt)) · Is ChatGPT a Good Causal Reasoner? A Comprehensive Evaluation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-743-CC-BY-4-0.txt)) · Exploring the Boundaries of GPT-4 in Radiology ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-891-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · MenatQA: A New Dataset for Testing the Temporal Comprehension and Reasoning Abilities of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-100-CC-BY-4-0.txt)) · A Comprehensive Evaluation of Large Language Models on Legal Judgment Prediction ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-490-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 50.4** ±1.2 · #359 of 725 · from 14 benchmark results across 5 sources
+**score 50.3** ±1.2 · #363 of 729 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #269 of 395     27%      3
+chat &amp; writing  ▁▁▁▃▆▄●█▆▆▇▃   #273 of 398     27%      3
 math            ▁▁▃●█▆▄█▄▁▁▁   #334 of 427     19%      3
 </pre>
 
-<details><summary>chat &amp; writing · #269 of 395 · 27% of its score</summary>
+<details><summary>chat &amp; writing · #273 of 398 · 27% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1251.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 93/379  avg 1258             15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1251.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 91/382  avg 1259             15%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   42.8%  ▃▃·▁▁█●▅·▁·▁ beats 16/22   medium · avg 39%     10%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      85.6%  ▁▃▁▃▁▄▁▁█●▃▁ beats 18/22   easy · avg 78%      2.8%  typical
 </pre>
@@ -39,7 +39,7 @@ Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B I
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 57%       8.3%  at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 58%       8.3%  at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 87%    7.5%  sharp
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>    9.8%  ●···▃▃···▃▃█ beats 1/8    hard · avg 23%         2.9%  typical
 </pre>
@@ -52,9 +52,9 @@ test                               result  vs the others in its run  difficulty 
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           77.3%  ▁▂·▁·▁▁█·●▃▅ beats 14/22    easy · avg 75%       21%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 70.6%  ▁▄·▁▁·▅●·▄▄▁ beats 12/22    medium · avg 72%     19%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 30%      4.4%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 31%      4.4%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 224/276  medium · avg 72%    3.4%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 66%    2.8%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 66%    2.9%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   90.8%  ▁▁▁▁▁▁▁▂▄█●▃ beats 119/146  easy · avg 82%      1.8%  noisy
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 73.2%  ▃▃▂·▃▃·▅█▂▅● beats 21/21    medium · avg 60%    0.6%  blunt · at its level
 </pre>
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    5% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.4
+weighted average                                   = 50.3
 </pre>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

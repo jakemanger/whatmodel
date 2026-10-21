@@ -6,7 +6,7 @@
 
 AssemblyAI · released 2026-07 · proprietary
 
-**score 67.4** ±2.5 · #7 of 162 · from 5 benchmark results across 3 sources
+**score 67.5** ±2.5 · #7 of 163 · from 5 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -34,9 +34,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    0.9%  ▃·▃▅·▅▅·▃▅●█ beats 13/16  avg 4.8%       54%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    0.9%  ▃·▃▅·▅▅·▃▅●█ beats 13/16  avg 4.7%       54%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    1.6%  ▃·····▃▅█▃▅● beats 10/11  avg 3.4%       13%  typical
-<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    1.9%  ▂·····▄▂█▂▂● beats 11/11  avg 4.6%      5.9%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    1.9%  ▂·····▄▂█▂▂● beats 11/11  avg 4.6%      5.8%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   10.4%  ▃·▃▅··▃▃▅▅●▃ beats 10/13  avg 16%       5.4%  blunt
 </pre>
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="speech-stt-verli-mit"></a><a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verliapp/stt-benchmark · independent ST…</a>        3   24% ▇▇▇
 <a name="speech-stt-cose-e-ccby"></a><a href="https://arxiv.org/html/2609.35645v1">CoSE-E: A Benchmark for Code-switched S…</a>        1   20% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 67.4
+weighted average                                   = 67.5
 </pre>
 
 <sub>Licences: Pipecat STT Benchmark · semantic WER results table ([BSD-2-Clause](https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/LICENSE)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · CoSE-E: A Benchmark for Code-switched Speech Evaluation in Enterprise Settings ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

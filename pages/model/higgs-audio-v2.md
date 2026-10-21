@@ -6,7 +6,7 @@
 
 Boson AI · released 2025-07 · 5.8B params · boson-higgs-audio-2-community
 
-**score 54.7** ±3.1 · #53 of 118 · from 7 benchmark results across 3 sources
+**score 54.7** ±3.2 · #53 of 119 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   38.9%  ▅▅▃▃█▅●▃·▃·▅ beats 12/16  hard · avg 30%       31%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   38.9%  ▅▅▃▃█▅●▃·▃·▅ beats 12/16  hard · avg 31%       31%  at its level
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   56.0%  ▃·····▂▂▂▃●▆ beats 9/15   medium · avg 46%     14%  blunt · at its level
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER (lab)</a>   19.4%  ▂▄··▂●▄··█▄▆ beats 4/16   avg 16%             7.2%  blunt
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>   49.9%  ▃·●·▃·····▃█ beats 1/6    avg 44%             6.9%  sharp · noisy

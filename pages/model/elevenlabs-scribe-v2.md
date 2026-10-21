@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2026-01 · proprietary
 
-**score 66.4** ±1.4 · #10 of 162 · from 21 benchmark results across 15 sources
+**score 66.4** ±1.4 · #10 of 163 · from 21 benchmark results across 15 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 task                    vs the others       rank  counts  tests
-long-form transcripti…  ▁▁▄▁·▁▂█▄▁▁●   #1 of 27*    6.9%      1
+long-form transcripti…  ▁▁▄▁·▁▂█▄▁▁●   #1 of 27*    6.8%      1
 multilingual transcri…  ▂··▃▄█▆▅▄▂·●    #1 of 36     34%      4
 </pre>
 
-<details><summary>long-form transcription · #1 of 27 · 6.9% of its score</summary>
+<details><summary>long-form transcription · #1 of 27 · 6.8% of its score</summary>
 
 <pre>
 test                            result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    6.2%  ▁▁▅▁·▃▅█▆▁▂● beats 29/30  avg 12%       6.9%  typical
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    6.2%  ▁▁▅▁·▃▅█▆▁▂● beats 29/30  avg 12%       6.8%  typical
 </pre>
 
 </details>
@@ -47,20 +47,20 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    5.8%  ▁▁▁▃··▁▁▂██● beats 80/86  avg 8.2%          6.9%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    5.8%  ▁▁▁▃··▁▁▂██● beats 80/86  avg 8.2%          6.8%  blunt
 <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    6.7%  █▃▃▅▃···▃··● beats 9/9    avg 15%           5.4%  typical
 <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/ElevenLabs-scribe_v2.json">Dutch ASR Leaderboard · average W…</a>    6.9%  ▄··▄█···█··● beats 6/6    avg 16%           5.0%  typical
 <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat · Visua…</a>    4.1%  █·········█● beats 2/2    avg 43%           4.7%  sharp · noisy · small run
 <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canonical …</a>   91.6%  ▄···▄··▄▄▄·● beats 6/6    easy · avg 77%    4.1%  typical
-<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic dialec…</a>   41.1%  █··█·██··●·█ beats 4/5    avg 79%           4.0%  typical
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic dialec…</a>   41.1%  █··█·██··●·█ beats 4/5    avg 78%           4.0%  typical
 <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (300 E…</a>    6.9%  ▄·▄·●·▄█···▄ beats 2/6    avg 12%           3.8%  typical
 <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22-key…</a>   10.5%  █··········● beats 2/2    avg 29%           3.5%  small run
 <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English doma…</a>   16.2%  ▄·······●·█▄ beats 1/4    avg 28%           3.4%  typical
 <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmark · …</a>   13.2%  █··········● beats 2/2    avg 55%           3.2%  small run
 <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai CER</a>       6.2%  █··█·······● beats 2/2    avg 17%           3.1%  small run
 <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English accen…</a>   21.9%  ▄······●··▄█ beats 1/4    avg 36%           2.9%  typical
-<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   13.3%  ▂▂···▃▂▅█▃▂● beats 16/16  avg 32%           2.6%  blunt
 <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>          19.7%  █·······●··█ beats 1/2    avg 52%           2.6%  small run
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   13.3%  ▂▂···▃▂▅█▃▂● beats 16/16  avg 32%           2.6%  blunt
 <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-lang…</a>    3.9%  ▄·····▄··▄●▄ beats 4/5    avg 7.9%          2.3%  typical
 <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   12.5%  ▃·▅·▅▃▃·▃▃●█ beats 9/12   avg 24%           1.2%  blunt
 </pre>

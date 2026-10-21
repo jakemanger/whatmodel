@@ -6,7 +6,7 @@
 
 hexgrad · released 2025-01 · 0.082B params · apache-2.0
 
-**score 52.2** ±2.9 · #59 of 118 · from 7 benchmark results across 4 sources
+**score 52.0** ±3.0 · #60 of 119 · from 7 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -21,14 +21,14 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <details><summary>other tests (7)</summary>
 
 <pre>
-test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     25.9%  ▅▅▃▃●▅▅▃·▃·▅ beats 8/16   hard · avg 30%            26%  at its level
-<a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence Eng…</a>      2.3%  █····█·····● beats 2/2    avg 2.9%                  20%  small run
-<a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison · 20…</a>  4.52 / 5  █······█···● beats 2/2    easy · avg 4.39 / 5       16%  small run
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Identity …</a>  3.50 / 5  █·····●····█ beats 2/4    medium · avg 3.08 / 5     14%  at its level
-<a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison · 20…</a>      5.7%  ▄··········● beats 1/2    avg 5.6%                  12%  small run
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           13.4%  ▂▄··▂▄▄··●▄▆ beats 8/16   avg 16%                  6.3%  blunt
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form Stabi…</a>  3.54 / 5  █······█·██● beats 4/4    medium · avg 3.42 / 5    2.0%  blunt · at its level
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     25.9%  ▅▅▃▃●▅▅▃·▃·▅ beats 8/16   hard · avg 31%               26%  at its level
+<a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence Eng…</a>      2.3%  █····█·····● beats 2/2    avg 2.9%                     20%  small run
+<a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison · 20…</a>  4.52 / 5  █······█···● beats 2/2    very easy · avg 4.40 / 5     17%  small run
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Identity …</a>  3.50 / 5  █·····●····█ beats 2/4    medium · avg 3.08 / 5        14%  at its level
+<a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison · 20…</a>      5.7%  ▄··········● beats 1/2    avg 5.6%                     12%  small run
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           13.4%  ▂▄··▂▄▄··●▄▆ beats 8/16   avg 16%                     6.2%  blunt
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form Stabi…</a>  3.54 / 5  █······█·██● beats 4/4    medium · avg 3.42 / 5       2.0%  blunt · at its level
 </pre>
 
 </details>
@@ -40,11 +40,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   32% ▇▇▇▇
-<a name="speech-paradee-report-ccby"></a><a href="https://arxiv.org/html/2610.06817v1">Paradee: Distilling Kokoro-82M into an …</a>        2   28% ▇▇▇
+<a name="speech-paradee-report-ccby"></a><a href="https://arxiv.org/html/2610.06817v1">Paradee: Distilling Kokoro-82M into an …</a>        2   29% ▇▇▇
 <a name="speech-carun-tts-bench-apache"></a><a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun/tts-bench: intelligibility benchm…</a>        1   20% ▇▇
 <a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               2   16% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 52.2
+weighted average                                   = 52.0
 </pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · carun/tts-bench: intelligibility benchmark of four open TTS engines ([Apache-2.0](https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>

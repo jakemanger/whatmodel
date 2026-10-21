@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 2.91B params · apache-2.0
 
-**score 19.8** ±1.2 · #695 of 725 · from 15 benchmark results across 3 sources
+**score 19.8** ±1.2 · #699 of 729 · from 15 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,11 +27,11 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">BoolQ</a>                                64.1%  ▂▃▂●▆▂▅▆█▂▂▂ beats 6/26    easy · avg 88%          10%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">SciQ</a>                                 88.2%  ▁·▁·▁·●▅▃█▄▁ beats 3/26    very easy · avg 97%    9.5%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">HellaSwag</a>                            59.4%  ▃···▁●▅█▇▃▁▁ beats 3/26    very easy · avg 91%    9.1%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">ARC Easy</a>                             59.1%  ▁▁·▁▁●▅▄█▅▁▃ beats 5/26    easy · avg 85%         8.1%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">ARC Easy</a>                             59.1%  ▁▁·▁▁●▅▄█▅▁▃ beats 5/26    easy · avg 85%         8.0%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">PIQA</a>                                 74.1%  ▁·▁··▁▁●█▅█▂ beats 6/26    easy · avg 87%         5.8%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">LAMBADA (OpenAI version), last-wo…</a>   65.1%  ▁··▂▁▁▁●▆█▅▃ beats 6/26    very easy · avg 86%    4.0%  blunt · at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b-deduped/results_2024-05-18%2020%3A42%3A45.067839.json">MedQA (USMLE, 4 options)</a>             27.7%  ▁▁··●▁▁··▄▃█ beats 3/17    medium · avg 71%       2.8%  sharp · too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">OpenBookQA</a>                           23.8%  ●·▁▁▃·▁▃▅▇▃▄ beats 0/26    hard · avg 48%         2.4%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">OpenBookQA</a>                           23.8%  ●·▁▁▃·▁▃▅▇▃▄ beats 0/26    hard · avg 49%         2.4%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">Social IQA</a>                           40.9%  ▁···▁●█▁▁▁·▁ beats 5/26    hard · avg 56%         2.4%  blunt
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-2.8b-deduped/results_2024-05-18%2020%3A42%3A45.067839.json">MedMCQA</a>                              26.3%  ●▂··▄▄▂▂·▄██ beats 0/17    medium · avg 63%       2.1%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   24.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 34/276  medium · avg 72%       1.3%  noisy

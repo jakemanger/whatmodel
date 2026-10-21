@@ -6,7 +6,7 @@
 
 Useful Sensors (Moonshine AI) · released 2024-10 · 0.062B params · mit
 
-**score 37.8** ±3.2 · #141 of 162 · from 3 benchmark results across 2 sources
+**score 37.7** ±3.2 · #142 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">LibriSpeech test-clean WER</a>            3.3%  ▁···▁▁▂·●▄██ beats 8/56   avg 2.3%       44%  blunt
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   10.0%  ▁▁▁▃··▁▁●██▆ beats 21/86  avg 8.2%       35%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   10.0%  ▁▁▁▃··▁▁●██▆ beats 21/86  avg 8.2%       34%  blunt
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">FLEURS English test WER</a>              12.3%  ▁··▁▁●▁▁▁▃█▁ beats 4/56   avg 5.8%       18%  blunt
 </pre>
 
@@ -36,9 +36,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">transcribe.cpp model catalog · LibriSpe…</a>        2   62% ▇▇▇▇▇▇▇
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   35% ▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   34% ▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 37.8
+weighted average                                   = 37.7
 </pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>

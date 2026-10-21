@@ -6,7 +6,7 @@
 
 OpenMOSS · released 2026-05 · 8.49B params · apache-2.0
 
-**score 63.2** ±1.5 · #26 of 118 · from 16 benchmark results across 4 sources
+**score 63.3** ±1.5 · #26 of 119 · from 16 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md) here, thou
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · speaker simila…</a>   68.0%  █·●·██·▄·▄·▄ beats 3/10   medium · avg 53%     11%  at its level
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · speaker simila…</a>   76.1%  ▃··▃●▅▅··▃·▃ beats 4/10   medium · avg 62%     11%  typical
-<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    1.7%  ▄··●▄····█▄▄ beats 1/6    avg 3.7%            7.5%  typical
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    1.7%  ▄··●▄····█▄▄ beats 1/6    avg 3.7%            7.4%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">MiniMax multilingual test set · 2…</a>    5.9%  █··█·····●·█ beats 2/3    avg 18%             6.2%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper large-…</a>    2.7%  ▃··●▅··▅·█▃▅ beats 1/11   avg 3.6%            4.8%  blunt · several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer CER</a>     1.5%  ●··▄··▂▂█·▄▂ beats 0/11   avg 2.1%            3.8%  blunt
@@ -39,10 +39,10 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · WER</a>                6.4%  █··██·█████● beats 8/8    avg 26%              15%  sharp
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.9%  █●···█▄·█··▄ beats 2/8    avg 9.2%             12%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-zh · CER</a>                8.4%  ▃▃·▃··▃▃●··▃ beats 5/8    avg 23%             9.4%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · speaker simila…</a>   66.4%  ▄●▄·▄··▄··▄█ beats 2/8    medium · avg 49%    8.8%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · WER</a>                6.4%  █··██·█████● beats 8/8    avg 27%              14%  sharp
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.9%  █●···█▄·█··▄ beats 2/8    avg 9.3%             12%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-zh · CER</a>                8.4%  ▃▃·▃··▃▃●··▃ beats 5/8    avg 23%             9.5%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · speaker simila…</a>   66.4%  ▄●▄·▄··▄··▄█ beats 2/8    medium · avg 49%    9.0%  at its level
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval EN (zero-shot English) ·…</a>    5.5%  ▃·······▃▅●▅ beats 4/8    avg 16%             3.8%  noisy
 <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>   57.0%  ▃·····▂▂▂▃●▆ beats 10/15  medium · avg 46%    3.2%  blunt · at its level
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>    3.8%  ▃·▃·▃·····▃● beats 4/6    avg 44%             1.6%  sharp · noisy
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2    3% ▇
 <a name="speech-sglang-omni-cookbooks-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/moss_tts.md">SGLang-Omni serving cookbooks</a>                   1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.2
+weighted average                                   = 63.3
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · SGLang-Omni serving cookbooks ([Apache-2.0](https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/LICENSE))</sub>

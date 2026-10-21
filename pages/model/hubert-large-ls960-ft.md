@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.32B params · apache-2.0
 
-**score 15.3** ±4.3 · #152 of 162 · from 4 benchmark results across 3 sources
+**score 15.0** ±4.3 · #153 of 163 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -39,7 +39,7 @@ source                         results  share of the score
 <a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation">Meta (lab)</a>                           1   20% ▇▇
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                  2    8% ▇
 prior: pull toward the middle             7% ▇
-weighted average                        = 15.3
+weighted average                        = 15.0
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>

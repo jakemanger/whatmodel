@@ -6,7 +6,7 @@
 
 Kyutai · released 2025-06 · 2.6B params · cc-by-4.0
 
-**score 56.9** ±3.5 · #57 of 162 · from 3 benchmark results across 2 sources
+**score 56.9** ±3.5 · #56 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

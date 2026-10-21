@@ -6,7 +6,7 @@
 
 Suno · released 2023-04 · 0.9B params · mit
 
-**score 25.4** ±2.9 · #112 of 118 · from 7 benchmark results across 5 sources
+**score 25.1** ±2.9 · #113 of 119 · from 7 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,10 +23,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.51 / 5  ▅·●▅▅·█▃▃▅·▅ beats 2/17   easy · avg 4.03 / 5       63%  at its level
-<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.61 / 5  ▄·█·●▄····█▄ beats 4/8    easy · avg 3.93 / 5      9.1%  blunt · at its level
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      9.0%  ●▅▃▃█▅▅▃·▃·▅ beats 1/16   hard · avg 30%           7.5%  too hard for it
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           20.7%  ▂▄··●▄▄··█▄▆ beats 3/16   avg 16%                  6.1%  blunt
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.49 / 5  ▅··▃●··▅█▅██ beats 3/17   medium · avg 3.30 / 5    5.4%  blunt · at its level
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.61 / 5  ▄·█·●▄····█▄ beats 4/8    easy · avg 3.93 / 5      9.2%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      9.0%  ●▅▃▃█▅▅▃·▃·▅ beats 1/16   hard · avg 31%           7.6%  too hard for it
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           20.7%  ▂▄··●▄▄··█▄▆ beats 3/16   avg 16%                  6.2%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.49 / 5  ▅··▃●··▅█▅██ beats 3/17   medium · avg 3.29 / 5    5.3%  blunt · at its level
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     82.2%  ▂▂●·▂·█▆▂·▄▂ beats 3/17   very easy · avg 89%      4.7%  blunt
 <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     73.1%  ▂●····▃·▃▅▂█ beats 1/14   very easy · avg 86%      0.8%  blunt
 </pre>
@@ -45,7 +45,7 @@ source                                    results  share of the score
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           1    5% ▇
 <a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                      1    1% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 25.4
+weighted average                                   = 25.1
 </pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>

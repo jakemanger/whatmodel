@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 49.3** ±1.3 · #382 of 725 · from 12 benchmark results across 4 sources
+**score 49.2** ±1.3 · #386 of 729 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          █··········●        #1 of 2     21%      3
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #202 of 395*     19%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃   #205 of 398*     19%      1
 math            █··········●       #1 of 2*     25%      2
 </pre>
 
@@ -26,19 +26,19 @@ math            █··········●       #1 of 2*     25%      2
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      75.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 158/205  easy · avg 77%     11%  sharp · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 67%    5.7%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 68%    5.7%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   25.7%  ▃●·····▃█··▅ beats 1/7      hard · avg 32%    4.2%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #202 of 395 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #205 of 398 · 19% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1317.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 147/379  avg 1258       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1317.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 149/382  avg 1259       19%  blunt
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test            result  vs the others in its run    difficulty  counts  why
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>   11.6%  ▁·▁▁●▂▅▆█▇▅▁ beats 6/133  hard · avg 17%     13%  sharp · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        60.7%  ▂·▁▁▁▁▁▂▅█●▂ beats 35/42  easy · avg 66%     12%  sharp · at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        60.7%  ▂·▁▁▁▁▁▂▅█●▂ beats 35/42  easy · avg 67%     12%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test             result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   55.0%  ▂▄▂▃█●▃▆▃▅▂▂ beats 40/81    medium · avg 56%    8.7%  blunt · at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   55.0%  ▂▄▂▃█●▃▆▃▅▂▂ beats 40/81    medium · avg 56%    8.8%  blunt · at its level
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                           64.9%  ▁▁▁▁▁▂▂▅●█▆▄ beats 105/214  medium · avg 70%    8.6%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                       50.6%  ▁▁·▁▁▁▃●▄▅█▁ beats 51/188   medium · avg 53%    7.0%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                    60.3%  ▃●▃·▃···▅·▅█ beats 1/11     medium · avg 63%    3.9%  at its level · small run
@@ -76,11 +76,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="gap-google-gemma3n"></a><a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Google DeepMind Gemma 3n E2B IT model c…</a>        8   65% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    9% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.3
+weighted average                                   = 49.2
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3n E2B IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

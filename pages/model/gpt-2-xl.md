@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 6.5** ±0.9 · #715 of 725 · from 52 benchmark results across 15 sources
+**score 6.5** ±0.9 · #719 of 729 · from 52 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

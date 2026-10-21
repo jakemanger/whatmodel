@@ -22,12 +22,12 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1198.8  ▁···▁▃··●▄▁▇ beats 9/18   avg 1078                  28%  typical
-<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1257.2  ▃·▃▃▃·▃██●·▃ beats 11/12  avg 1080                  15%  typical
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1198.8  ▁···▁▃··●▄▁▇ beats 9/18   avg 1080                  28%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1257.2  ▃·▃▃▃·▃██●·▃ beats 11/12  avg 1082                  15%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      2.6%  ▄·····█··▄●█ beats 4/7    avg 8.3%                  13%  typical
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      3.6%  ▄·····▄█▄●·▄ beats 6/7    avg 12%                   11%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      3.6%  ▄·····▄█▄●·▄ beats 6/7    avg 11%                   11%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  2.77 / 5  █··▄●▄····▄▄ beats 3/7    hard · avg 2.00 / 5       11%  at its level
-<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.18 / 5  ▃▃●···▃···▃▃ beats 2/7    medium · avg 2.52 / 5    9.4%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.18 / 5  ▃▃●···▃···▃▃ beats 2/7    medium · avg 2.53 / 5    9.4%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qualit…</a>  3.37 / 5  █·█········● beats 4/4    medium · avg 2.70 / 5    7.7%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Identity …</a>  3.53 / 5  █·····▄····● beats 4/4    medium · avg 3.08 / 5    4.4%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form Stabi…</a>  3.53 / 5  █······█·█●█ beats 3/4    medium · avg 3.42 / 5    0.6%  blunt · at its level

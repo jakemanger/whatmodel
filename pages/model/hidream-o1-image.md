@@ -25,7 +25,7 @@ Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. T
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1116.2  ▂▂▃▄●█▄▂▄▂·▂ beats 33/75  avg 1027                53%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1116.2  ▂▂▃▄●█▅▂▄▂·▂ beats 33/75  avg 1027                53%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    86.8%  ▄····▄█▄●█▄█ beats 5/10   easy · avg 82%          16%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   45.6%  ▁▂▂●▃▁▂▃·▁·▁ beats 11/22  hard · avg 28%          15%  sharp · at its level · noisy
 <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                      89.8%  ▄·▂·▂▆█▄▂▄▂● beats 17/17  very easy · avg 87%    4.3%  small run
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   988.2  ▁▁▁▄▂●▂▁▁▂▁▁ beats 13/34  avg 875       8.3%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   988.2  ▁▁▁▄▂●▂▁▁▂▁▁ beats 13/34  avg 874       8.3%  typical
 </pre>
 
 </details>

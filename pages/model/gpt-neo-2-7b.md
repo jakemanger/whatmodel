@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 17.9** ±0.9 · #699 of 725 · from 47 benchmark results across 14 sources
+**score 17.9** ±0.9 · #703 of 729 · from 47 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁●▁▃▆██▇▆▄▃▁   #454 of 460*     20%      2
+coding  ▁●▁▃▆▇█▇▅▄▃▁   #460 of 466*     20%      2
 math    ▁▁●▅█▆▄█▄▁▁▁    #397 of 427    4.0%      2
 </pre>
 
-<details><summary>coding · #454 of 460 · 20% of its score</summary>
+<details><summary>coding · #460 of 466 · 20% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [ChatGLM-6B](chatglm-6b.md) here, though they rank higher overall.
 
@@ -49,15 +49,15 @@ test    result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            42.7%  ▃▃●··▅····▃█ beats 2/8     easy · avg 82%          15%  at its level · several runs
-<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        27.4%  ▅····●▃···▅█ beats 2/8     medium · avg 59%        10%  sharp · too hard for it · noisy · sever…
-<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           57.7%  ●··█···█▄▄·▄ beats 0/8     easy · avg 85%         9.0%  small run · several runs
+<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        27.4%  ▅····●▃···▅█ beats 2/8     medium · avg 60%        10%  sharp · too hard for it · noisy · sever…
+<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           57.7%  ●··█···█▄▄·▄ beats 0/8     easy · avg 86%         9.0%  small run · several runs
 <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             61.1%  ▅·●▃··▃··▃·█ beats 2/8     easy · avg 87%         5.8%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 79.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 28/67   very easy · avg 96%    4.7%  at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   41.6%  ▂·▄·▂●▄▄█▄▂▆ beats 6/21    easy · avg 74%         4.6%  blunt · at its level
 <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 72.9%  ▄▄··●·▄·▄·██ beats 2/8     easy · avg 88%         4.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                61.8%  ▄●▄···▄··█▄▄ beats 2/8     easy · avg 88%         4.3%  at its level · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   62.2%  █·▄··●··█··▄ beats 3/7     very easy · avg 88%    4.3%  blunt · at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-2.7B/results_2024-03-06%2021%3A19%3A57.134182.json">Natural Questions (closed book)</a>       5.7%  ▁·▁·▁▂●▂·▅▂█ beats 6/28    medium · avg 48%       3.3%  too hard for it · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-2.7B/results_2024-03-06%2021%3A19%3A57.134182.json">Natural Questions (closed book)</a>       5.7%  ▁·▁·▁▂●▂·▅▂█ beats 6/28    medium · avg 48%       3.4%  too hard for it · several runs
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   40.2%  ▃···●·▃▅··▃█ beats 2/9     very easy · avg 85%    2.7%  at its level
 <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           23.2%  ●······▂·▆·▂ beats 1/8     easy · avg 77%         2.4%  several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   51.5%  ▂▂··●·█···▂▂ beats 2/8     easy · avg 79%         1.5%  blunt · at its level

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 0.182B params · cc-by-4.0
 
-**score 53.7** ±3.2 · #80 of 162 · from 3 benchmark results across 2 sources
+**score 53.7** ±3.2 · #81 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">LibriSpeech test-clean WER</a>            1.9%  ▁···▁▁▂·▄▄●█ beats 28/56  avg 2.3%       44%  blunt
-<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.1%  ▁▁▁▃··▁▁▂█●▆ beats 58/86  avg 8.2%       35%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.1%  ▁▁▁▃··▁▁▂█●▆ beats 58/86  avg 8.2%       34%  blunt
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">FLEURS English test WER</a>               6.0%  ▁··▁▁▁▁▁▁●█▁ beats 18/56  avg 5.8%       18%  blunt
 </pre>
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">transcribe.cpp model catalog · LibriSpe…</a>        2   62% ▇▇▇▇▇▇▇
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   35% ▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   34% ▇▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 53.7
 </pre>

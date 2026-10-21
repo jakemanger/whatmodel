@@ -6,7 +6,7 @@
 
 Zyphra · released 2025-02 · 1.6B params · apache-2.0
 
-**score 39.1** ±4.4 · #89 of 118 · from 7 benchmark results across 3 sources
+**score 38.9** ±4.5 · #90 of 119 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,11 +22,11 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     14.1%  ▅●▃▃█▅▅▃·▃·▅ beats 3/16   hard · avg 30%          37%  typical
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     14.1%  ▅●▃▃█▅▅▃·▃·▅ beats 3/16   hard · avg 31%          37%  typical
 <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.39 / 5  ▄·●·█▄····█▄ beats 2/8    easy · avg 3.93 / 5     20%  blunt · at its level
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           19.1%  ▂▄··▂●▄··█▄▆ beats 5/16   avg 16%                 14%  blunt
-<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS-cel…</a>     67.5%  ▄·······●··▄ beats 2/3    easy · avg 71%         8.4%  blunt · at its level
-<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK · R…</a>     77.5%  █···█····█·● beats 3/3    easy · avg 74%         6.9%  blunt · at its level
+<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS-cel…</a>     67.5%  ▄·······●··▄ beats 2/3    easy · avg 71%         8.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK · R…</a>     77.5%  █···█····█·● beats 3/3    easy · avg 74%         6.8%  blunt · at its level
 <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK · W…</a>      1.3%  █····●····██ beats 1/3    avg 1.0%               3.2%  blunt
 <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS-cel…</a>      7.5%  █●········██ beats 1/3    avg 4.1%               3.0%  blunt
 </pre>
@@ -40,10 +40,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   51% ▇▇▇▇▇▇
-<a name="speech-balacoon-baselines-apache"></a><a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon speech_gen_baselines · zero-sh…</a>        4   22% ▇▇▇
+<a name="speech-balacoon-baselines-apache"></a><a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon speech_gen_baselines · zero-sh…</a>        4   21% ▇▇▇
 <a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   20% ▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 39.1
+weighted average                                   = 38.9
 </pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>

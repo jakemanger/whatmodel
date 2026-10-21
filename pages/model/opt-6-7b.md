@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 23.7** ±0.7 · #686 of 725 · from 40 benchmark results across 11 sources
+**score 23.7** ±0.7 · #690 of 729 · from 40 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ●▁▁▃▆██▇▆▄▃▁   #458 of 460*    1.8%      1
+coding  ●▁▁▃▆▇█▇▅▄▃▁   #464 of 466*    1.8%      1
 math    ▁▁●▅█▆▄█▄▁▁▁   #409 of 427*    5.2%      1
 </pre>
 
-<details><summary>coding · #458 of 460 · 1.8% of its score</summary>
+<details><summary>coding · #464 of 466 · 1.8% of its score</summary>
 
 Trails [GPT-Neo 2.7B](gpt-neo-2-7b.md), [Phi-1 (1.3B)](phi-1.md), [Pythia 6.9B](pythia-6-9b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     74.6%  ▂▂▄▂·▂·▆·●█▂ beats 9/14    easy · avg 89%         2.4%  blunt · at its level
 <a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.5%  ●···▄··▄··▄▄ beats 1/5     easy · avg 74%         2.1%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.nlrse-1.7.pdf">WebQSP closed-book zero-shot (ans…</a>   29.8%  ██···█●····█ beats 3/4     easy · avg 66%         1.6%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">OpenBookQA</a>                           27.6%  █·▁▁▃·●▃▅▇▃▄ beats 10/26   hard · avg 48%         1.1%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">OpenBookQA</a>                           27.6%  █·▁▁▃·●▃▅▇▃▄ beats 10/26   hard · avg 49%         1.1%  too hard for it
 <a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 24.6%  ●·▄····▄·▄·█ beats 0/5     easy · avg 75%         1.0%  noisy
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">Social IQA</a>                           42.6%  ▁···▁▃●▁▁▁·▁ beats 18/26   hard · avg 56%         0.9%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.617.pdf">COPA</a>                                 81.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 33/67   very easy · avg 96%    0.7%  at its level · small run

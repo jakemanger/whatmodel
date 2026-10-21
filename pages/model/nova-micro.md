@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 47.4** ±2.0 · #416 of 725 · from 7 benchmark results across 5 sources
+**score 47.3** ±2.0 · #422 of 729 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #258 of 306     54%      4
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #280 of 395*     41%      1
+agent tasks     ▁▁▃●█▅▅▅▅▄▂▁    #262 of 310     55%      4
+chat &amp; writing  ▁▁▁▃▆▄●█▆▆▇▃   #284 of 398*     41%      1
 </pre>
 
-<details><summary>agent tasks · #258 of 306 · 54% of its score</summary>
+<details><summary>agent tasks · #262 of 310 · 55% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>    5.5%  █····█●█·███ beats 2/6     very hard · avg 14%     22%  sharp
+<a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>    5.5%  █····█●█·███ beats 2/6     very hard · avg 15%     22%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      22.3%  ▁▁▁▂●█▅▅▆▂▂▂ beats 10/77   hard · avg 31%          15%  at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              51.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 43/114  medium · avg 51%       8.9%  blunt · at its level
-<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   82.9%  ▃▃▃▃▆●▆▅█▂▅▂ beats 12/31   easy · avg 78%         8.6%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              51.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 43/114  medium · avg 51%       9.0%  blunt · at its level
+<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   82.9%  ▃▃▃▃▆●▆▅█▂▅▂ beats 12/31   easy · avg 78%         8.7%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #280 of 395 · 41% of its score</summary>
+<details><summary>chat &amp; writing · #284 of 398 · 41% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1240.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 90/379  avg 1258       41%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1240.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 89/382  avg 1259       41%  blunt
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    3% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 47.4
+weighted average                                   = 47.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

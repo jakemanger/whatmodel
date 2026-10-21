@@ -6,7 +6,7 @@
 
 Google · released 2022-04 · 8.63B params · proprietary
 
-**score 25.8** ±0.7 · comparison only: no current run option verified · from 51 benchmark results across 6 sources · † every result so far was reported by its maker
+**score 25.7** ±0.7 · comparison only: no current run option verified · from 51 benchmark results across 6 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>           4.1%  █·▅▃●▃·▃·▃▃▅ beats 6/12   easy · avg 66%      8.0%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>            3.4%  ▆·▂·●▂▂▂▂█▄▆ beats 4/18   medium · avg 47%    0.9%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>            3.4%  ▆·▂·●▂▂▂▂█▄▆ beats 4/18   medium · avg 48%    0.9%  sharp · too hard for it
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    1.5%  ●··▄··▄·▄··█ beats 0/5    hard · avg 32%      0.4%  too hard for it
 </pre>
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (lab)</a>                     69.3%  ▄····▄··▄·●█ beats 3/6     easy · avg 85%          2.7%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   12.9%  ▃·▅·▅▃●·▃▃·█ beats 6/12    medium · avg 52%        2.7%  typical
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   55.1%  █·····●·▁·▄▁ beats 6/12    medium · avg 81%        2.2%  sharp
-<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (lab)</a>                       39.5%  ▁▁▂▂▄▄▃●▅█▅▂ beats 36/80   easy · avg 80%          2.0%  at its level
+<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (lab)</a>                       39.5%  ▁▁▂▂▄▄▃●▅█▅▂ beats 36/80   easy · avg 81%          2.0%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (lab)</a>                      68.7%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 65/135  easy · avg 88%          1.5%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">BoolQ (lab)</a>                          68.3%  ▁····▁▂█●▅▆▄ beats 48/103  easy · avg 89%          1.4%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">MultiRC (SuperGLUE, prompted, F1a…</a>   47.5%  ▃·●██···▅··▃ beats 1/10    very easy · avg 85%     1.4%  at its level · small run
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 30.8%  ▂●▂▂·▅·▃▂█▃▃ beats 1/18    medium · avg 60%        1.1%  sharp · too hard for it
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   25.0%  ▂··▂·▂▄●·███ beats 6/18    medium · avg 61%        1.1%  typical
 <a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>     22.0%  ●······▄▄·▄█ beats 0/5     medium · avg 62%        1.1%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       21.7%  █▁·●▁·····▂▁ beats 8/12    hard · avg 48%          1.0%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       21.7%  █▁·●▁·····▂▁ beats 8/12    medium · avg 48%        1.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     55.6%  █·····▅▃●▅▃█ beats 6/12    medium · avg 70%        1.0%  typical
 <a href="https://arxiv.org/html/2204.02311v5">SQuAD 2.0 (prompted, F1) (lab)</a>       56.4%  ▃▃···▃▃●▃▃▃▃ beats 5/10    very easy · avg 85%     1.0%  at its level · small run
 <a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    26.7%  ●·····▄··█·█ beats 0/5     medium · avg 55%        1.0%  too hard for it
@@ -76,8 +76,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.02311v5">DROP (lab)</a>                           45.1%  ▃▅█▅·●·▆▄▂▁▃ beats 26/44   medium · avg 61%        0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (lab)</a>            33.1%  ▅··▃▃●··▃▅·▃ beats 4/10    medium · avg 53%        0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">WiC (prompted) (lab)</a>                 47.0%  ●·▂▁······▁▁ beats 6/13    hard · avg 60%          0.3%  sharp · too hard for it · noisy · small…
-<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 3 (prompted) (lab)</a>        34.5%  ▂·▆●██·▄··▂▂ beats 4/16    hard · avg 44%          0.3%  too hard for it · small run
 <a href="https://arxiv.org/html/2204.02311v5">RACE-high (lab)</a>                      42.3%  ▂▄·▂▂▂▂▂▆●▂█ beats 11/17   medium · avg 53%        0.3%  blunt · small run
+<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 3 (prompted) (lab)</a>        34.5%  ▂·▆●██·▄··▂▂ beats 4/16    hard · avg 44%          0.3%  too hard for it · small run
 <a href="https://arxiv.org/html/2204.02311v5">OpenBookQA (lab)</a>                     48.4%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 63/107  medium · avg 59%        0.2%  noisy · small run
 <a href="https://arxiv.org/html/2204.02311v5">CommitmentBank (prompted) (lab)</a>      41.1%  ▂▃·▂●▂▂▂·▂·▂ beats 5/13    medium · avg 60%        0.2%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">WebQuestions (closed book) (lab)</a>      6.7%  ▅▅▃▅▃·▃▃●█▅▃ beats 10/17   very hard · avg 4.1%    0.0%  blunt · too hard for it · small run
@@ -98,7 +98,7 @@ source                                    results  share of the score
 <a name="paper-2212.13138v1"></a><a href="https://arxiv.org/html/2212.13138v1">Large Language Models Encode Clinical K…</a>        3    2% ▇
 <a name="acl-2023-eacl-main-7"></a><a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoDict: Probing language models for i…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 25.8
+weighted average                                   = 25.7
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · PaLM: Scaling Language Modeling with Pathways ([CC BY 4.0](../../licenses/paper-2204.02311v5-CC-BY-4-0.txt)) · Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt)) · Large Language Models Encode Clinical Knowledge ([CC BY 4.0](../../licenses/paper-2212.13138v1-CC-BY-4-0.txt)) · WinoDict: Probing language models for in-context word acquisition ([CC BY 4.0](../../licenses/acl-2023-eacl-main-7-CC-BY-4-0.txt))</sub>

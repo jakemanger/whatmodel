@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 4.38B params · apache-2.0
 
-**score 57.1** ±2.4 · #53 of 162 · from 5 benchmark results across 4 sources
+**score 57.1** ±2.4 · #53 of 163 · from 5 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ test                       result  vs the others in its run  difficulty  counts 
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>    6.2%  ▅···▃···▃▃█● beats 9/10   avg 13%        14%  sharp · noisy
 <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Common Vo…</a>    6.6%  ▂▂▂····▂▆··● beats 8/10   avg 21%        10%  sharp · noisy
-<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   30.0%  ▃·▂▂▅█▅▃▂●▂▂ beats 20/22  avg 40%       5.6%  blunt
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   30.0%  ▃·▂▂▅█▅▃▂●▂▂ beats 20/22  avg 40%       5.5%  blunt
 <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   11.3%  ▃·▅·▅▃▃·▃▃▃● beats 10/12  avg 24%       3.4%  blunt
 </pre>
 

@@ -6,7 +6,7 @@
 
 LEMAS Project · released 2026-01 · cc-by-4.0
 
-**score 52.2** ±6.1 · #60 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 52.1** ±6.1 · #59 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval · 9-l…</a>    4.8%  █········█·● beats 2/2    avg 5.9%       85%  small run
+<a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval · 9-l…</a>    4.8%  █········█·● beats 2/2    avg 5.8%       85%  small run
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-lemas-report-bysa"></a><a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual audio suite report (…</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       15% ▇▇
-weighted average                                   = 52.2
+weighted average                                   = 52.1
 </pre>
 
 <sub>Licences: LEMAS multilingual audio suite report ([CC BY-SA 4.0](../../licenses/speech-lemas-report-bysa.txt))</sub>

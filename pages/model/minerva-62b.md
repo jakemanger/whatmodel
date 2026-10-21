@@ -25,7 +25,7 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          52.4%  ▃····▃··▃··● beats 3/5    easy · avg 65%     54%  sharp · at its level
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          52.4%  ▃····▃··▃··● beats 3/5    easy · avg 66%     54%  sharp · at its level
 <a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   27.6%  ▄··▄··▄·▄··● beats 4/5    hard · avg 32%     11%  at its level
 </pre>
 

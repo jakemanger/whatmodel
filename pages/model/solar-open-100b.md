@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.5** ±1.1 · #207 of 725 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.5** ±1.1 · #211 of 729 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,35 +16,35 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #171 of 306     20%      6
-coding       ▁▁▁▃▆●█▇▆▄▃▁   #315 of 460*    9.3%      2
+agent tasks  ▁▁▃▆█●▅▅▅▄▂▁    #179 of 310     20%      6
+coding       ▁▁▁▃▆●█▇▅▄▃▁   #324 of 466*    9.4%      2
 math         ▁▁▃▅█▆●█▄▁▁▁   #179 of 427*     19%      2
 </pre>
 
-<details><summary>agent tasks · #171 of 306 · 20% of its score</summary>
+<details><summary>agent tasks · #179 of 310 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  very hard · avg 14%     5.2%  sharp · at its level · noisy · small run
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.6%    3.7%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          3.7%  at its level
+<a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  very hard · avg 15%     5.2%  sharp · at its level · noisy · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.5%    3.8%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          3.6%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       15.4%  ●··········█ beats 1/5    very hard · avg 15%     3.1%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.9%    3.1%  too hard for it
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       15.4%  ●··········█ beats 1/5    very hard · avg 15%     3.0%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.1%    1.0%  blunt
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.2%    1.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>coding · #315 of 460 · 9.3% of its score</summary>
+<details><summary>coding · #324 of 466 · 9.4% of its score</summary>
 
-Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
+Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   56.5%  ●······▄▄▄·█ beats 0/5    medium · avg 49%       6.3%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             15.4%  ●··········█ beats 1/5    very hard · avg 15%    3.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   56.5%  ●······▄▄▄·█ beats 0/5    medium · avg 49%       6.4%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             15.4%  ●··········█ beats 1/5    very hard · avg 15%    3.1%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -54,9 +54,9 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    easy · avg 65%     14%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   68.9%  █●▄········█ beats 2/5    hard · avg 31%    5.3%  sharp · at its level · noisy
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    medium · avg 65%     14%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   68.9%  █●▄········█ beats 2/5    hard · avg 31%      5.2%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   66.2%  ●···██·█··██ beats 0/5    hard · avg 41%           29%  sharp · at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       80.4%  ▄·●▄····▄··█ beats 1/5    medium · avg 55%         10%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   57.7%  ●···▄▄··▄··█ beats 0/5    medium · avg 42%        6.0%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.7%    5.8%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.6%    5.7%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 40.5%  ●··▄·▄·····█ beats 1/5    hard · avg 25%          3.8%  at its level
 </pre>
 

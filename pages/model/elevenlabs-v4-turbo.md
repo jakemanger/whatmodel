@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2026-09 · proprietary
 
-**score 35.8** ±4.3 · #98 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±4.4 · #98 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS intelli…</a>    1.5%  ▄········●██ beats 1/6    avg 0.3%       93%  typical
+<a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS intelli…</a>    1.5%  ▄········●██ beats 1/6    avg 0.3%       92%  typical
 </pre>
 
 </details>
@@ -33,9 +33,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>             1   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             7% ▇
-weighted average                        = 35.8
+<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>             1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             8% ▇
+weighted average                        = 36.3
 </pre>
 
 <sub>Licences: EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

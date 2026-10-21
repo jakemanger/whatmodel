@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 68.4** ±1.3 · #96 of 725 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.3** ±1.3 · #99 of 729 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██▇●▄▃▁   #75 of 460*     17%      2
+coding  ▁▁▁▃▆▇█▇▅●▃▁   #81 of 466*     17%      2
 math    ▁▁▃▅█▆▄█●▁▁▁   #48 of 427*    7.5%      1
 </pre>
 
-<details><summary>coding · #75 of 460 · 17% of its score</summary>
+<details><summary>coding · #81 of 466 · 17% of its score</summary>
 
-Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
+Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -38,7 +38,7 @@ Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   97.1%  ▄·▄·▄▄··█··● beats 6/6    medium · avg 56%    7.5%  sharp · maxed out · noisy
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   97.1%  ▄·▄·▄▄··█··● beats 6/6    medium · avg 57%    7.5%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.4
+weighted average                        = 68.3
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

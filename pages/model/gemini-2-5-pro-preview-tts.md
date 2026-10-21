@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · closed weights
 
-**score 69.3** ±2.8 · comparison only: no current run option verified · from 8 benchmark results across 4 sources
+**score 69.4** ±2.8 · comparison only: no current run option verified · from 8 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,14 +22,14 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     72.2%  ▅▅▃▃█▅▅▃·▃·● beats 15/16  hard · avg 30%            24%  at its level
-<a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean instruc…</a>     84.8%  ▄··········● beats 1/2    medium · avg 42%          21%  sharp · small run
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     72.2%  ▅▅▃▃█▅▅▃·▃·● beats 15/16  hard · avg 31%            24%  at its level
+<a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean instruc…</a>     84.8%  ▄··········● beats 1/2    medium · avg 42%          22%  sharp · small run
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Role-F…</a>  3.63 / 5  ▄·····●····▄ beats 1/3    medium · avg 2.58 / 5     15%  at its level
 <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability (hu…</a>  3.89 / 5  █·▄······▄·● beats 4/4    medium · avg 3.01 / 5     10%  at its level
 <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean instruc…</a>     80.3%  ▄····█··●··▄ beats 3/4    easy · avg 66%           8.4%  typical
 <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preference MO…</a>  3.65 / 5  █·█········● beats 2/2    medium · avg 3.08 / 5    6.4%  at its level · small run
-<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.32 / 5  ██●···█····█ beats 2/4    medium · avg 2.87 / 5    6.2%  blunt · at its level
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           11.8%  ▂▄··▂▄▄··█●▆ beats 12/16  avg 16%                  5.7%  blunt
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.32 / 5  ██●···█····█ beats 2/4    medium · avg 2.88 / 5    6.1%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           11.8%  ▂▄··▂▄▄··█●▆ beats 12/16  avg 16%                  5.6%  blunt
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ source                                    results  share of the score
 <a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   30% ▇▇▇▇
 <a name="speech-vibevoice-mit-figure"></a><a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">Microsoft VibeVoice own subjective eval…</a>        1    6% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 69.3
+weighted average                                   = 69.4
 </pre>
 
 <sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · Microsoft VibeVoice own subjective evaluation figure ([MIT](../../licenses/speech-followup-NOTICES.txt))</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.074B params · apache-2.0
 
-**score 24.7** ±2.7 · #149 of 162 · from 10 benchmark results across 6 sources
+**score 24.5** ±2.7 · #150 of 163 · from 10 benchmark results across 6 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.json">FLEURS Mandarin test error rate</a>      36.2%  ▂●··▂▄▂▂·▆██ beats 1/17   avg 12%        12%  typical
 <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir) co…</a>   45.9%  ▄··●·▄▄▄··██ beats 1/8    avg 12%        12%  typical
 <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   96.7%  ▂●···▃▂▅█▃▂▂ beats 1/16   avg 32%       9.5%  blunt
-<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   33.8%  ▄·●·▄▄▄▄·█▄▄ beats 1/10   avg 15%       7.3%  blunt
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   33.8%  ▄·●·▄▄▄▄·█▄▄ beats 1/10   avg 15%       7.2%  blunt
 <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources,…</a>   34.5%  ▃··●▃··▅··█▅ beats 1/9    avg 17%       5.9%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   64.1%  ▃●····▃▅▃·▅▃ beats 3/10   avg 41%       3.2%  blunt
 <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>       13.3%  ▂····▂▂▂█●▃▂ beats 9/13   avg 9.2%      1.8%  blunt
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="speech-stt-turkasr-bench-mit"></a><a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">Turkish ASR Leaderboard</a>                         1    6% ▇
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                             2    3% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 24.7
+weighted average                                   = 24.5
 </pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>

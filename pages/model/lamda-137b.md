@@ -24,7 +24,7 @@ math    ▁▁▃●██▅█▄▁▁▁   #444 of 526*     13%      1
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   14.0%  ▁▁▁▁●▂▆▆█▅▂▁ beats 24/205  medium · avg 45%    1.9%  sharp
+<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   14.0%  ▁▁▁▁●▂▆▆█▅▂▁ beats 24/205  medium · avg 46%    1.9%  sharp
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          37.5%  ▃▅█···▅·●▃▃▅ beats 8/12    easy · avg 82%          18%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          46.6%  ▅▃▃▅··▃▃·●▃█ beats 8/12    easy · avg 83%          15%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  53.6%  █······▁·●▁▃ beats 8/12    easy · avg 87%         9.3%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.6%  █●·▁▁·····▂▁ beats 7/12    hard · avg 48%         4.8%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.6%  █●·▁▁·····▂▁ beats 7/12    medium · avg 48%       4.8%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2203.11171v4">ARC Challenge (lab)</a>                  55.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 98/140  easy · avg 86%         3.6%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   59.5%  █·····▃·●·▄▁ beats 8/12    medium · avg 81%       3.5%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   21.5%  ▃·▅·▅▃▅·●▃·█ beats 8/12    medium · avg 52%       3.0%  at its level

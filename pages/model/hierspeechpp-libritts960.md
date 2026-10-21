@@ -6,7 +6,7 @@
 
 Korea University (Sang-Hoon Lee et al.) · released 2023-11 · 0.097B params · mit
 
-**score 27.5** ±4.9 · #109 of 118 · from 3 benchmark results across 1 source
+**score 27.4** ±4.9 · #110 of 119 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -23,8 +23,8 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 <pre>
 test                                  result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  3.54 / 5  ●·█········█ beats 0/2    very easy · avg 4.64 / 5     42%  at its level · small run
-<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · HuBE…</a>      7.8%  ●█·········█ beats 0/2    avg 0.6%                     28%  noisy · small run
-<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  4.27 / 5  █··█·······● beats 2/2    very easy · avg 4.55 / 5     21%  at its level · small run
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · HuBE…</a>      7.8%  ●█·········█ beats 0/2    avg 0.6%                     27%  noisy · small run
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  4.27 / 5  █··█·······● beats 2/2    very easy · avg 4.56 / 5     22%  at its level · small run
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-stylettszs-report-bysa"></a><a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS: Efficient High-Quality Zer…</a>        3   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       10% ▇
-weighted average                                   = 27.5
+weighted average                                   = 27.4
 </pre>
 
 <sub>Licences: StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion ([CC BY-SA 4.0](../../licenses/speech-stylettszs-report-bysa.txt))</sub>

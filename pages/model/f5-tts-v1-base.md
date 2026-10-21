@@ -6,7 +6,7 @@
 
 SWivid (SJTU X-LANCE) · released 2025-03 · 0.337B params · cc-by-nc-4.0
 
-**score 62.1** ±2.7 · #32 of 118 · from 9 benchmark results across 2 sources
+**score 62.2** ±2.7 · #32 of 119 · from 9 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -25,10 +25,10 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-Cosy
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  3.08 / 5  ▄········●·▄ beats 2/3    medium · avg 2.47 / 5     17%  at its level
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  3.08 / 5  ▄········●·▄ beats 2/3    medium · avg 2.46 / 5     17%  at its level
 <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker simila…</a>     68.0%  ▁·▂▂▂●▆▃▅··▂ beats 10/30  medium · avg 53%          15%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.66 / 5  ▄█▄··▄···●·▄ beats 5/6    medium · avg 2.52 / 5    7.6%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper large-…</a>      1.4%  ▁···▂▂▂▂█▆●▂ beats 30/35  avg 3.6%                 7.1%  blunt · small run
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.66 / 5  ▄█▄··▄···●·▄ beats 5/6    medium · avg 2.51 / 5    7.6%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper large-…</a>      1.4%  ▁···▂▂▂▂█▆●▂ beats 30/35  avg 3.6%                 7.0%  blunt · small run
 </pre>
 
 </details>
@@ -38,8 +38,8 @@ test                                  result  vs the others in its run  difficul
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>     68.0%  ▄······▄·█●▄ beats 4/5    medium · avg 52%          18%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  3.83 / 5  █···●······█ beats 1/2    medium · avg 3.15 / 5     11%  at its level · small run
-<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>      2.0%  █····████··● beats 5/5    avg 4.1%                  11%  small run
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  3.83 / 5  █···●······█ beats 1/2    medium · avg 3.13 / 5     11%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>      2.0%  █····████··● beats 5/5    avg 4.2%                  11%  small run
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     56.0%  ▃·····▂▂▂▃●▆ beats 8/15   medium · avg 46%          10%  blunt · at its level
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     12.0%  ▂▂▂··●·▃▃▃█▂ beats 3/15   avg 8.6%                 0.1%  blunt · noisy
 </pre>
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        7   87% ▇▇▇▇▇▇▇▇▇▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   10% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 62.1
+weighted average                                   = 62.2
 </pre>
 
 <sub>Licences: DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>

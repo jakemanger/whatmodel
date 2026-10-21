@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 0.618B params · nvidia-open-model-license
 
-**score 48.8** ±3.9 · #107 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.8** ±3.9 · #108 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

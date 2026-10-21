@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄▄●▃▁▂▁▁   #40 of 126*     59%      2
-image to image / edit…  ▁▁·▃▂▃█●▃▄▁▁    #23 of 62*     18%      1
+image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #21 of 62*     18%      1
 </pre>
 
 <details><summary>text to image · #40 of 126 · 59% of its score</summary>
@@ -26,19 +26,19 @@ Trails [Krea 2 Medium](krea-2-medium.md), [ERNIE-Image](ernie-image.md), [Emu3.5
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1103.5  ▂▂▃▄●█▄▂▄▂·▂ beats 26/75  avg 1027           47%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1103.5  ▂▂▃▄●█▅▂▄▂·▂ beats 26/75  avg 1027           47%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   85.7%  ▁▂▂█▃▁●▃·▁·▁ beats 17/22  hard · avg 28%     12%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #23 of 62 · 18% of its score</summary>
+<details><summary>image to image / editing · #21 of 62 · 18% of its score</summary>
 
-Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md) here, though they rank higher overall. Trails [HunyuanImage 3.0-Instruct](hunyuanimage-3-0-instruct.md) here, though they rank lower overall.
+Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1302.6  ▂▁▁▂▆▇●▄▆▅▁▂ beats 30/53  avg 1153       18%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1302.1  ▂▁▁▃▆█▄●▄█▁▂ beats 30/53  avg 1153       18%  typical
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test              result  vs the others in its run  difficulty  counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    74.5%  ▂··▂█▂▄▂●·▂▂ beats 10/12  medium · avg 41%     15%  at its level
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1007.6  ▁▁▁▄▂●▂▁▁▂▁▁ beats 19/34  avg 875             7.3%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1007.6  ▁▁▁▄▂●▂▁▁▂▁▁ beats 19/34  avg 874             7.3%  typical
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   15% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   12% ▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    7% ▇

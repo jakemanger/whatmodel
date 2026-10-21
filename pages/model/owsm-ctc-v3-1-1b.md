@@ -6,7 +6,7 @@
 
 ESPnet (CMU WAVLab) · released 2024-02 · 1.01B params · cc-by-4.0
 
-**score 49.9** ±4.1 · #102 of 162 · from 3 benchmark results across 2 sources
+**score 49.8** ±4.2 · #103 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    8.1%  ▁▁▁▃··▁▁▂●█▆ beats 34/86   avg 8.2%       59%  blunt
-<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (lab)</a>      5.1%  ▁▁▁▂▅▃●▄█▂▂▁ beats 21/54   avg 5.0%       26%  small run
-<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (lab)</a>      2.4%  ▁·▁·▁▁▁▁▃●█▆ beats 38/100  avg 2.3%      8.0%  blunt · small run
+<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (lab)</a>      5.1%  ▁···▁▁▁▆●█▆▁ beats 23/56   avg 4.9%       26%  small run
+<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (lab)</a>      2.4%  ▁·▁·▁▁▁▁▃●█▆ beats 40/102  avg 2.3%      8.0%  blunt · small run
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ source                          results  share of the score
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                  1   59% ▇▇▇▇▇▇▇
 <a name="first-party-espnet-owsm-v4-report"></a><a href="https://arxiv.org/html/2506.00338v1">OWSM v4 technical report (lab)</a>        2   34% ▇▇▇▇
 prior: pull toward the middle              7% ▇
-weighted average                         = 49.9
+weighted average                         = 49.8
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>

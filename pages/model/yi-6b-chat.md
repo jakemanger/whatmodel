@@ -6,7 +6,7 @@
 
 01.AI · released 2023-11 · 6.06B params · apache-2.0
 
-**score 32.5** ±2.2 · #855 of 952 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.5** ±2.2 · #860 of 957 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                  9.6%  ▁▁●▂▂▃▂█▆▃▅▃ beats 3/61    medium · avg 38%     89%  typical
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 90/276  medium · avg 72%    9.0%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 90/276  medium · avg 72%    9.1%  noisy
 </pre>
 
 </details>

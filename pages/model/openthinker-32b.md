@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.7** ±1.2 · #288 of 725 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.6** ±1.2 · #292 of 729 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #178 of 460*    4.0%      1
+coding  ▁▁▁▃▆▇█●▅▄▃▁   #183 of 466*    4.0%      1
 math    ▁▁▃▅█▆●█▄▁▁▁    #181 of 427     57%      3
 </pre>
 
-<details><summary>coding · #178 of 460 · 4.0% of its score</summary>
+<details><summary>coding · #183 of 466 · 4.0% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 test             result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>   68.0%  ▁▁▁▂▁▃▁▅●██▃ beats 34/85   medium · avg 56%        26%  sharp · at its level · several runs
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   49.3%  ▁·▁▁▁▂▅●█▇▅▁ beats 35/133  medium · avg 36%        16%  sharp · at its level
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.6%  ▁▃▂▃▅▇●▇█▅▂▁ beats 41/84   very easy · avg 85%     15%  several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.6%  ▁▃▂▃▄▇●▇█▄▂▁ beats 41/85   very easy · avg 86%     15%  several runs
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●███▄ beats 122/311  hard · avg 51%     38%  sharp · at its level · several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●█▇█▄ beats 122/315  hard · avg 51%     38%  sharp · at its level · several runs
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   61% ▇▇▇▇▇▇▇
 <a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model car…</a>        4   38% ▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.7
+weighted average                                   = 54.6
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

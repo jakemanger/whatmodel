@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 54.6** ±2.0 · #289 of 725 · from 6 benchmark results across 2 sources
+**score 54.5** ±2.0 · #293 of 729 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #153 of 306     59%      3
-coding       ▁▁▁▃▆██●▆▄▃▁   #184 of 460*    8.7%      1
+agent tasks  ▁▁▃▆█●▅▅▅▄▂▁    #161 of 310     59%      3
+coding       ▁▁▁▃▆▇█●▅▄▃▁   #192 of 466*    8.6%      1
 math         ▁▁▃▅█●▄█▄▁▁▁   #226 of 427*     24%      1
 </pre>
 
-<details><summary>agent tasks · #153 of 306 · 59% of its score</summary>
+<details><summary>agent tasks · #161 of 310 · 59% of its score</summary>
 
-Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty            counts  why
@@ -34,13 +34,13 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #184 of 460 · 8.7% of its score</summary>
+<details><summary>coding · #192 of 466 · 8.6% of its score</summary>
 
-Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>   30.0%  ▁····▃▄●▄█▆▂ beats 10/34  hard · avg 19%    8.7%  small run
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>   30.0%  ▁····▃▄●▅█▇▃ beats 10/37  hard · avg 19%    8.6%  small run
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        5   79% ▇▇▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   20% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 54.6
+weighted average                                   = 54.5
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

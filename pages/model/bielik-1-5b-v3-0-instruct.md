@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-04 · 1.6B params · apache-2.0
 
-**score 41.3** ±2.9 · #537 of 725 · from 3 benchmark results across 2 sources
+**score 41.3** ±2.8 · #541 of 729 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

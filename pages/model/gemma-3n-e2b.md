@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 44.9** ±1.5 · #474 of 725 · from 12 benchmark results across 4 sources
+**score 44.8** ±1.5 · #479 of 729 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ math    ●··········█   #2 of 2*     28%      2
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      66.5%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 127/205  easy · avg 77%     14%  sharp · at its level · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           56.6%  ▁▁▁▄▅█●▅▄▁▂▁ beats 51/86    easy · avg 67%    7.0%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           56.6%  ▁▁▁▄▅█●▅▄▁▂▁ beats 51/86    easy · avg 68%    7.0%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   18.6%  ●▃·····▃█··▅ beats 0/7      hard · avg 32%    4.7%  small run
 </pre>
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        53.1%  ▂·▁▁▁▁▁▂▅●▃▂ beats 26/42  easy · avg 66%     15%  sharp · at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        53.1%  ▂·▁▁▁▁▁▂▅●▃▂ beats 26/42  easy · avg 67%     15%  sharp · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>    6.7%  ▁·▁●▁▂▅▆█▇▅▁ beats 5/133  hard · avg 17%     13%  sharp · small run
 </pre>
 
@@ -69,7 +69,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    8% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.9
+weighted average                                   = 44.8
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3n E2B IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

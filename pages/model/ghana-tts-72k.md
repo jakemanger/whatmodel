@@ -6,7 +6,7 @@
 
 GhanaNLP · released 2026-06 · 0.652B params · mit
 
-**score 61.8** ±7.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 61.9** ±7.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="nsanku-tts-benchmark-mit"></a><a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark (lab)</a>           1   79% ▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            21% ▇▇▇
-weighted average                        = 61.8
+weighted average                        = 61.9
 </pre>
 
 <sub>Licences: nsanku TTS Benchmark ([MIT](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/README.md))</sub>

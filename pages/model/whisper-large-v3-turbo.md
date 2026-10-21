@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-10 · 0.81B params · mit
 
-**score 57.2** ±1.2 · #52 of 162 · from 31 benchmark results across 13 sources
+**score 57.2** ±1.2 · #52 of 163 · from 31 benchmark results across 13 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -49,19 +49,19 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3-turbo.json">LibriSpeech test-clean WER</a>            2.0%  ▁···▁▁▂·▄▄●█ beats 26/56  avg 2.3%      7.1%  blunt · several runs
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.8%  ▁▁▁▃··▁▁▂●█▆ beats 41/86  avg 8.2%      4.9%  blunt
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER</a>                   3.0%  ▄▄··▄●█··▄██ beats 4/11   avg 5.3%      4.7%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER</a>                   3.0%  ▄▄··▄●█··▄██ beats 4/11   avg 5.2%      4.7%  sharp
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER</a>               5.0%  █·······██·● beats 3/3    avg 11%       4.3%  sharp
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER</a>                3.1%  █······█·█·● beats 3/3    avg 6.9%      4.0%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER</a>                3.1%  █······█·█·● beats 3/3    avg 6.8%      4.0%  sharp
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">AMI WER (Open ASR / ESB test spli…</a>   16.1%  ▃●▃▃·····▅·▃ beats 1/8    avg 24%       3.8%  typical
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 WER (short-form, Open…</a>   11.6%  ▃······●█▃·▃ beats 3/8    avg 18%       3.6%  typical
-<a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set average…</a>   10.1%  ▂·······▂··● beats 4/6    avg 13%       3.3%  typical
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER</a>                  12.8%  █········██● beats 3/3    avg 20%       3.3%  typical
+<a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set average…</a>   10.1%  ▂·······▂··● beats 4/6    avg 13%       3.3%  typical
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER</a>                  10.1%  ▁····▁··▁▄●▂ beats 7/17   avg 15%       3.1%  typical
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER</a>             9.8%  █········██● beats 3/3    avg 15%       3.1%  typical
 <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. Shmyr…</a>   16.2%  ●·····█····█ beats 0/2    avg 25%       2.9%  small run
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    2.0%  ▃·····▃▅●▃▅▅ beats 6/11   avg 3.4%      2.9%  typical
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER</a>            13.3%  █······█·█·● beats 3/3    avg 20%       2.9%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER</a>            4.2%  ▁▁▁▂▅▃▅●█▂▂▁ beats 31/54  avg 6.6%      2.6%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER</a>            4.2%  ▁···▁▁▁▆▆●▆▁ beats 33/56  avg 6.6%      2.6%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3-turbo.json">FLEURS English test WER</a>               4.4%  ▁··▁▁▁▁▁▁▃●▁ beats 42/56  avg 5.8%      2.5%  blunt
 <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22-key…</a>   15.4%  ●··········▄ beats 0/2    avg 29%       2.5%  small run
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3-turbo.json">FLEURS Mandarin test error rate</a>       8.5%  ▂▂··▂▄▂▂·▆●█ beats 13/17  avg 12%       2.4%  typical
@@ -71,7 +71,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   10.1%  ▄·█·▄▄▄▄·█●▄ beats 9/10   avg 15%       1.4%  blunt
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   40.1%  ▃·▂▂▅●▅▃▂▅▂▂ beats 8/22   avg 40%       1.4%  blunt
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    3.1%  ▂·····▄▂●▂▂▄ beats 5/11   avg 4.6%      1.4%  typical
-<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   11.9%  ▃·▃▅··▃▃●▅█▃ beats 6/13   avg 16%       1.3%  blunt
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   11.9%  ▃·▃▅··▃▃●▅█▃ beats 6/13   avg 16%       1.2%  blunt
 <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources,…</a>   12.9%  ▃··▃▃··▅··█● beats 8/9    avg 17%       1.2%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   33.1%  ▃█····▃▅▃·●▃ beats 9/10   avg 41%       0.6%  blunt
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form)</a>        3.6%  ▁·▁▇█▃·▁▁▃●▄ beats 24/27  avg 5.3%      0.2%  blunt
@@ -88,7 +88,7 @@ source                                    results  share of the score
 <a name="card2-distil-whisper-distil-large-v3-5"></a><a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">distil-whisper/distil-large-v3.5 model …</a>       12   36% ▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            3   26% ▇▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3-turbo.json">transcribe.cpp model catalog · LibriSpe…</a>        3   11% ▇
-<a name="speech-stt-verli-mit"></a><a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verliapp/stt-benchmark · independent ST…</a>        3    6% ▇
+<a name="speech-stt-verli-mit"></a><a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verliapp/stt-benchmark · independent ST…</a>        3    5% ▇
 <a name="speech-stt-liteasr-report-ccby"></a><a href="https://arxiv.org/html/2502.20583v2">LiteASR</a>                                         1    3% ▇
 <a name="speech-stt-ru-shmyrev-espeech-mit"></a><a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard</a>                         1    3% ▇
 <a name="speech-stt-openbench-mit"></a><a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · open reproducible sp…</a>        1    2% ▇

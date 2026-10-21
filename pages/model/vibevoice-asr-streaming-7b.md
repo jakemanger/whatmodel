@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-09 · 8.67B params · mit
 
-**score 47.2** ±5.1 · #112 of 162 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.2** ±5.1 · #112 of 163 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,9 +22,9 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                              result  vs the others in its run   difficulty  counts  why
-<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER (lab)</a>          10.2%  ▁····▁··▁●█▂ beats 6/17    avg 10.0%      40%  small run
-<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER (lab)</a>    6.5%  ▁▁▁▂●▃▅▄█▂▂▁ beats 11/54   avg 4.8%       38%  small run
-<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER (lab)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 39/100  avg 2.1%       12%  blunt · small run
+<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER (lab)</a>          10.2%  ▁····▁··▁●█▂ beats 6/17    avg 9.9%       40%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER (lab)</a>    6.5%  ▁···▁▁▁●▆█▆▁ beats 13/56   avg 4.8%       38%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER (lab)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 41/102  avg 2.1%       12%  blunt · small run
 </pre>
 
 </details>

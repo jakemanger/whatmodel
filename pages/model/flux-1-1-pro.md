@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅●▄▄█▃▁▂▁▁   #78 of 126     89%      5
-image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁   #54 of 62*    9.4%      1
+image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁   #54 of 62*    9.4%      1
 </pre>
 
 <details><summary>text to image · #78 of 126 · 89% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                 1015.6  ▂▂●▄▇█▄▂▄▂·▂ beats 9/75   avg 1027                40%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                 1015.6  ▂▂●▄▇█▅▂▄▂·▂ beats 9/75   avg 1027                40%  typical
 <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.47 / 5  █▄·▄██▄▄█▄●▄ beats 13/14  easy · avg 3.83 / 5     18%  at its level
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                                58.8%  ●█·▄·▄·█···▄ beats 0/8    easy · avg 71%          14%  at its level
 <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>     10.0%  ▂●··▂··▃█··▂ beats 2/11   hard · avg 18%         9.4%  sharp
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   40% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   40% ▇▇▇▇▇
 <a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   21% ▇▇▇
 <a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   18% ▇▇
 <a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   10% ▇

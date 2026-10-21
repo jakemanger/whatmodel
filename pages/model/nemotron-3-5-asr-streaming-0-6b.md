@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 0.64B params · openmdw-1.1
 
-**score 43.5** ±2.5 · #128 of 162 · from 9 benchmark results across 5 sources
+**score 43.4** ±2.5 · #129 of 163 · from 9 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -26,8 +26,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS English test WER</a>               7.9%  ▁··▁▁▁▁●▁▃█▁ beats 8/56   avg 5.8%       11%  blunt
 <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md">Picovoice STT benchmark · English…</a>    7.8%  █·█···▄▄▄··● beats 7/7    avg 8.3%       11%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS Mandarin test error rate</a>      18.9%  ▂▂··▂●▂▂·▆██ beats 4/17   avg 12%        11%  typical
-<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER</a>                  11.8%  ▁····▁··●▄█▂ beats 2/17   avg 10.0%      10%  small run
-<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER</a>            6.8%  ▁▁▁●▅▃▅▄█▂▂▁ beats 6/54   avg 4.8%      9.5%  small run
+<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER</a>                  11.8%  ▁····▁··●▄█▂ beats 2/17   avg 9.9%       10%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER</a>            6.8%  ▁···▁▁▁●▆█▆▁ beats 8/56   avg 4.8%      9.5%  small run
 <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   47.4%  ▂▂···●▂▅█▃▂▂ beats 2/16   avg 32%       8.4%  blunt
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   35.9%  ▃·▂▂▅█●▃▂▅▂▂ beats 14/22  avg 40%       6.3%  blunt
 </pre>
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>               1    8% ▇
 <a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    6% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 43.5
+weighted average                                   = 43.4
 </pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · VibeVoice-ASR-Streaming Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>

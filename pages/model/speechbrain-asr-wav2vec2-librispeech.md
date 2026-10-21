@@ -6,7 +6,7 @@
 
 SpeechBrain · released 2022-06 · 0.32B params · apache-2.0
 
-**score 34.9** ±4.4 · #143 of 162 · from 3 benchmark results across 2 sources
+**score 34.8** ±4.4 · #144 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   14.3%  ▁▁▁▃··●▁▂██▆ beats 12/86   avg 8.2%       66%  blunt
-<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (lab)</a>      4.0%  ▁▁▁▂▅▃▅▄●▂▂▁ beats 39/54   avg 2.8%       20%  small run
-<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (lab)</a>      1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 62/100  avg 1.6%      6.7%  blunt · small run
+<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (lab)</a>      4.0%  ▁···▁▁▁▆▆●▆▁ beats 41/56   avg 2.8%       20%  small run
+<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (lab)</a>      1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 64/102  avg 1.6%      6.7%  blunt · small run
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ source                                    results  share of the score
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   66% ▇▇▇▇▇▇▇▇
 <a name="first-party-speechbrain-asr-cards"></a><a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">SpeechBrain Hugging Face ASR model card…</a>        2   27% ▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 34.9
+weighted average                                   = 34.8
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · SpeechBrain Hugging Face ASR model cards: published LibriSpeech/VoxPopuli WER for its own checkpoints ([Apache-2.0](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md))</sub>

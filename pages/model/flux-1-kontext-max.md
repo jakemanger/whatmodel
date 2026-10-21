@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-05 · closed weights
 
-**score 54.7** ±1.9 · #68 of 144 · from 4 benchmark results across 3 sources
+**score 54.8** ±1.9 · #68 of 144 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅▅▃▄●█▃▁▂▁▁   #58 of 126*     71%      2
-image to image / edit…  ▁▁·▃▂●█▃▃▄▁▁    #48 of 62*     20%      1
+image to image / edit…  ▁▁·▃▂●█▃▅▅▂▁    #47 of 62*     20%      1
 </pre>
 
 <details><summary>text to image · #58 of 126 · 71% of its score</summary>
@@ -26,19 +26,19 @@ Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank higher ov
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1074.4  ▂▂▃▄●█▄▂▄▂·▂ beats 20/75  avg 1027           53%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1074.4  ▂▂▃▄●█▅▂▄▂·▂ beats 20/75  avg 1027           53%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   28.5%  ▆●·▂▂····▂▂█ beats 5/13   hard · avg 20%     18%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #48 of 62 · 20% of its score</summary>
+<details><summary>image to image / editing · #47 of 62 · 20% of its score</summary>
 
 Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1180.7  ▂▁▁▂●▇█▄▆▅▁▂ beats 8/53   avg 1153       20%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1182.3  ▂▁▁▃●█▄█▄█▁▂ beats 9/53   avg 1153       20%  typical
 </pre>
 
 </details>
@@ -58,11 +58,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   73% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   73% ▇▇▇▇▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   18% ▇▇
 <a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1    7% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.7
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 54.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

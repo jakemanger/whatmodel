@@ -6,7 +6,7 @@
 
 MediaTek Research · released 2025-06 · 1.543B params · apache-2.0
 
-**score 54.4** ±3.5 · #78 of 162 · from 3 benchmark results across 1 source
+**score 54.4** ±3.5 · #79 of 163 · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

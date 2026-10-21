@@ -6,7 +6,7 @@
 
 PKU-Baichuan MLSystemLab · released 2024-08 · 70.55B params · llama3
 
-**score 59.7** ±1.5 · #230 of 952 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.7** ±1.5 · #234 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #163 of 466*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▃   #167 of 469*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #163 of 466 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #167 of 469 · 99% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 

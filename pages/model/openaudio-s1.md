@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · proprietary
 
-**score 71.3** ±7.5 · #2 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 71.4** ±7.5 · #1 of 119 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 task           vs the others       rank  counts  tests
-voice cloning  ▁·▁▁▁▁▁▁▇█▃●   #3 of 37*     78%      2
+voice cloning  ▁·▁▁▁▁▁▁▇█▃●   #3 of 37*     77%      2
 </pre>
 
-<details><summary>voice cloning · #3 of 37 · 78% of its score</summary>
+<details><summary>voice cloning · #3 of 37 · 77% of its score</summary>
 
 Trails [dots.tts SOAR 2B](dots-tts-soar.md), [Qwen-Audio-3.0-TTS-Plus](qwen-audio-3-0-tts-plus.md) here, though they rank lower overall.
 
@@ -47,9 +47,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                results  share of the score
-<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (lab)</a>        2   78% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   22% ▇▇▇
-weighted average                               = 71.3
+<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (lab)</a>        2   77% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   23% ▇▇▇
+weighted average                               = 71.4
 </pre>
 
 <sub>Licences: Fish Audio S2 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

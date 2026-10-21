@@ -6,7 +6,7 @@
 
 Inworld · proprietary
 
-**score 62.0** ±5.5 · #20 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.0** ±5.5 · #20 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    1.7%  ▃·····▃▅█▃●▅ beats 9/11   avg 3.4%       62%  typical
-<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   10.3%  ▃·▃▅··▃▃▅▅●▃ beats 11/13  avg 16%        27%  blunt
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   10.3%  ▃·▃▅··▃▃▅▅●▃ beats 11/13  avg 16%        26%  blunt
 </pre>
 
 </details>

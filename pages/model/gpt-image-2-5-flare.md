@@ -17,14 +17,14 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃▄▄█▃▁▂▁●   #2 of 126*     66%      2
-image to image / edit…  ▁▁·▃▂▃█▃▃▄▁●    #2 of 62*     23%      1
+image to image / edit…  ▁▁·▃▂▂█▃▅▅▂●    #2 of 62*     23%      1
 </pre>
 
 <details><summary>text to image · #2 of 126 · 66% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1397.6  ▂▂▃▄▇█▄▂▄▂·● beats 74/75  avg 1027           61%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1397.6  ▂▂▃▄▇█▅▂▄▂·● beats 74/75  avg 1027           61%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   94.6%  ▆▆·▂▂····▂▂● beats 12/13  hard · avg 20%    5.2%  sharp · maxed out · noisy
 </pre>
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1481.0  ▂▁▁▂▆▇█▄▆▅▁● beats 52/53  avg 1153       23%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1480.7  ▂▁▁▃▆█▄█▄█▁● beats 52/53  avg 1153       23%  typical
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1207.1  ▁▁▁▄▂█▂▁▁▂▁● beats 33/34  avg 875       9.4%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1207.1  ▁▁▁▄▂█▂▁▁▂▁● beats 33/34  avg 874       9.5%  typical
 </pre>
 
 </details>

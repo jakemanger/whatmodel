@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2024-07 · 0.3B params · apache-2.0
 
-**score 54.4** ±2.6 · #55 of 118 · from 10 benchmark results across 3 sources
+**score 54.5** ±2.6 · #55 of 119 · from 10 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>   64.0%  ▁·▂▂●█▆▃▅··▂ beats 5/30   medium · avg 53%     19%  at its level
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>   75.0%  ▁·▂··▂·●▄·▃▄ beats 5/25   medium · avg 62%     17%  at its level
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>    3.4%  ▁···▂●▂▂█▆▄▂ beats 3/35   avg 3.6%             11%  blunt · several runs
-<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER</a>     3.1%  ▁·●▁▁▁▂▃▅█·▂ beats 1/30   avg 2.1%            7.0%  blunt · several runs
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER</a>     3.1%  ▁·●▁▁▁▂▃▅█·▂ beats 1/30   avg 2.1%            6.9%  blunt · several runs
 </pre>
 
 </details>
@@ -39,8 +39,8 @@ test                                result  vs the others in its run  difficulty
 test                                  result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     66.0%  ▄·········●▄ beats 2/3    medium · avg 52%        21%  at its level
 <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  4.15 / 5  ▄·····▄·▄█·● beats 5/5    easy · avg 4.11 / 5     12%  typical
-<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      3.6%  ●·····█·█··█ beats 0/3    avg 4.1%               9.0%  typical
-<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      5.0%  ▄··········● beats 2/5    avg 6.4%               0.5%  blunt · noisy
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      3.6%  ●·····█·█··█ beats 0/3    avg 4.2%               9.1%  typical
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      5.0%  ▄··········● beats 2/5    avg 6.5%               0.5%  blunt · noisy
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   12% ▇
 <a name="speech-amphion-maskgct-mit"></a><a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Amphion MaskGCT README · zero-shot TTS …</a>        2    7% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 54.4
+weighted average                                   = 54.5
 </pre>
 
 <sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt))</sub>

@@ -6,7 +6,7 @@
 
 Soniox · released 2026-06 · proprietary
 
-**score 67.2** ±3.3 · #8 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.3** ±3.3 · #8 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    1.1%  ▃·▃▅·▅▅·▃●██ beats 10/16  avg 4.8%       96%  typical
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    1.1%  ▃·▃▅·▅▅·▃●██ beats 10/16  avg 4.7%       96%  typical
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-stt-pipecat-bsd2"></a><a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · semantic WER re…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 67.2
+weighted average                                   = 67.3
 </pre>
 
 <sub>Licences: Pipecat STT Benchmark · semantic WER results table ([BSD-2-Clause](https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/LICENSE))</sub>

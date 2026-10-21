@@ -6,7 +6,7 @@
 
 Mistral · released 2026-02 · proprietary
 
-**score 59.3** ±2.8 · #38 of 162 · from 6 benchmark results across 3 sources
+**score 59.3** ±2.8 · #38 of 163 · from 6 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

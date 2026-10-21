@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 63.1** ±2.0 · #167 of 725 · from 3 benchmark results across 2 sources
+**score 63.0** ±2.0 · #171 of 729 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,11 +15,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <sub>● marks Nova 2 Pro (Preview) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #97 of 306*    7.5%      1
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆█▅▅●▅▄▂▁   #101 of 310*    7.5%      1
 </pre>
 
-<details><summary>agent tasks · #97 of 306 · 7.5% of its score</summary>
+<details><summary>agent tasks · #101 of 310 · 7.5% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
@@ -47,9 +47,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                 results  share of the score
 <a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                             1    8% ▇
+<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                             1    7% ▇
 prior: pull toward the middle                     2% ▇
-weighted average                                = 63.1
+weighted average                                = 63.0
 </pre>
 
 <sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

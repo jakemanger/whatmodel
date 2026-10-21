@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 0.61B params · cc-by-4.0
 
-**score 54.0** ±2.7 · #79 of 162 · from 4 benchmark results across 2 sources
+**score 54.0** ±2.7 · #80 of 163 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

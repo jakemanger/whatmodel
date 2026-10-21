@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 1.55B params · apache-2.0
 
-**score 49.4** ±2.4 · #105 of 162 · from 7 benchmark results across 4 sources
+**score 49.4** ±2.5 · #106 of 163 · from 7 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 

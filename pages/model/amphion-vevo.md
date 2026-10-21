@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-12 · 1.32B params · cc-by-nc-4.0
 
-**score 46.2** ±3.1 · #77 of 118 · from 9 benchmark results across 4 sources
+**score 46.2** ±3.1 · #78 of 119 · from 9 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,10 +22,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.01 / 5  ▅·█▅▅·█▃▃●·▅ beats 14/17  easy · avg 4.03 / 5       61%  at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.01 / 5  ▅·█▅▅·█▃▃●·▅ beats 14/17  easy · avg 4.03 / 5       62%  at its level
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>     836.0  █●█····▄··▄▄ beats 2/7    avg 995                   11%  typical
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.36 / 5  ▅··▃▅··▅█▅█● beats 16/17  medium · avg 3.30 / 5    6.3%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     86.8%  ▄▄·····●··▄█ beats 2/5    very easy · avg 88%      6.1%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.36 / 5  ▅··▃▅··▅█▅█● beats 16/17  medium · avg 3.29 / 5    6.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     86.8%  ▄▄·····●··▄█ beats 2/5    very easy · avg 87%      6.1%  blunt
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     86.5%  ▂▂█·▂·●▆▂·▄▂ beats 10/17  very easy · avg 89%      4.1%  blunt
 <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.48 / 5  ▄▄█·▄▄▄▄▄·●█ beats 9/11   easy · avg 4.20 / 5      2.6%  blunt
 <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.66 / 5  █··▄●██▄·▄▄▄ beats 3/11   easy · avg 3.99 / 5      2.5%  blunt · at its level

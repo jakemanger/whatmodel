@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.6B params · apache-2.0
 
-**score 61.7** ±1.6 · #35 of 118 · from 11 benchmark results across 3 sources
+**score 61.8** ±1.6 · #35 of 119 · from 11 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 task           vs the others       rank  counts  tests
-voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #16 of 37     43%      6
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #16 of 37     42%      6
 </pre>
 
-<details><summary>voice cloning · #16 of 37 · 43% of its score</summary>
+<details><summary>voice cloning · #16 of 37 · 42% of its score</summary>
 
 Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-CosyVoice3-0.5B-2512](fun-cosyvoice3-0-5b-2512.md), [IndexTTS-2](indextts-2.md) here, though they rank higher overall.
 
@@ -27,9 +27,9 @@ Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-Cosy
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · speaker simila…</a>   70.5%  █·█·█●·▄·▄·▄ beats 6/10   medium · avg 53%     14%  at its level
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker simila…</a>   76.5%  ▃··▃█●▅··▃·▃ beats 5/10   medium · avg 62%     13%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper large-…</a>    1.7%  ▃··▃▅··▅·█●▅ beats 9/11   avg 3.6%            5.6%  blunt · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper large-…</a>    1.7%  ▃··▃▅··▅·█●▅ beats 9/11   avg 3.6%            5.5%  blunt · several runs
 <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-en WER (transcriber…</a>    1.3%  ▄········█▄● beats 4/5    avg 4.2%            5.4%  small run
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer CER</a>     1.0%  ▂··▄··▂▂●·▄▂ beats 8/11   avg 2.1%            4.5%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer CER</a>     1.0%  ▂··▄··▂▂●·▄▂ beats 8/11   avg 2.1%            4.4%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-zh error rate (tran…</a>    0.9%  ●··········█ beats 0/1                           —  not counted yet: no other model in the …
 </pre>
 
@@ -39,8 +39,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · WER</a>               10.7%  █··█●·██████ beats 2/8    avg 26%              17%  sharp
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.4%  █▄···█▄·●··▄ beats 6/8    avg 9.2%             14%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · WER</a>               10.7%  █··█●·██████ beats 2/8    avg 27%              17%  sharp
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.4%  █▄···█▄·●··▄ beats 6/8    avg 9.3%             14%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-zh · CER</a>               10.7%  ▃●·▃··▃▃█··▃ beats 1/8    avg 23%              11%  typical
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · speaker simila…</a>   67.0%  ▄█●·▄··▄··▄█ beats 3/8    medium · avg 49%     11%  at its level
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval EN (zero-shot English) ·…</a>   33.9%  ●·······▃▅█▅ beats 0/8    avg 16%             4.4%  noisy
@@ -58,7 +58,7 @@ source                                    results  share of the score
 <a name="card2-qwen-qwen3-tts-12hz-1-7b-base"></a><a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Qwen/Qwen3-TTS-12Hz-1.7B-Base model car…</a>        1    5% ▇
 <a name="speech-sglang-omni-cookbooks-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/qwen3_tts.md">SGLang-Omni serving cookbooks</a>                   1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.7
+weighted average                                   = 61.8
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Qwen/Qwen3-TTS-12Hz-1.7B-Base model card ([Apache-2.0](../../licenses/Qwen--Qwen3-TTS-12Hz-1.7B-Base.txt)) · SGLang-Omni serving cookbooks ([Apache-2.0](https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/LICENSE))</sub>

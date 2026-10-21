@@ -6,7 +6,7 @@
 
 Meta · released 2025-12 · 0.98B params · apache-2.0
 
-**score 49.5** ±2.7 · #104 of 162 · from 4 benchmark results across 3 sources
+**score 49.5** ±2.7 · #105 of 163 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -35,8 +35,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   23.9%  ▄·█·●▄▄▄·█▄▄ beats 3/10   avg 15%       7.2%  blunt
-<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   67.2%  ▃●····▃▅▃·▅▃ beats 2/10   avg 41%       3.2%  blunt
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   23.9%  ▄·█·●▄▄▄·█▄▄ beats 3/10   avg 15%       7.1%  blunt
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   67.2%  ▃●····▃▅▃·▅▃ beats 2/10   avg 41%       3.1%  blunt
 </pre>
 
 </details>

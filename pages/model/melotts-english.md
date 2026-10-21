@@ -6,7 +6,7 @@
 
 MyShell · released 2024-02 · mit
 
-**score 43.9** ±4.5 · #81 of 118 · from 3 benchmark results across 2 sources
+**score 43.8** ±4.5 · #83 of 119 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,9 +22,9 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-large W…</a>      6.4%  ▄··········● beats 2/2    avg 4.3%                46%  small run
 <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.80 / 5  ▄·····▄·▄●·▄ beats 3/5    easy · avg 4.11 / 5     45%  at its level
-<a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-large W…</a>      6.4%  ▄··········● beats 2/2    avg 4.3%                45%  small run
-<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.6%  ▄··········● beats 4/5    avg 6.4%               1.4%  blunt · noisy
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.6%  ▄··········● beats 4/5    avg 6.5%               1.4%  blunt · noisy
 </pre>
 
 </details>
@@ -35,10 +35,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   47% ▇▇▇▇▇▇
-<a name="speech-tts-deepfake-age-ccby"></a><a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in the Age of …</a>        1   45% ▇▇▇▇▇
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   46% ▇▇▇▇▇▇
+<a name="speech-tts-deepfake-age-ccby"></a><a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in the Age of …</a>        1   46% ▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 43.9
+weighted average                                   = 43.8
 </pre>
 
 <sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃▄▄█▃●▂▁▁   #14 of 126     68%      5
-image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #15 of 62     24%      5
+image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #15 of 62     24%      5
 </pre>
 
 <details><summary>text to image · #14 of 126 · 68% of its score</summary>
@@ -25,7 +25,7 @@ image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #15 of 62     2
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   81.5%  ▄█▂▂▂▂▆▄·●·▂ beats 15/16  hard · avg 26%       29%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1237.4  ▂▂▃▄▇█▄●▄▂·▂ beats 61/75  avg 1027             28%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1237.4  ▂▂▃▄▇█▅●▄▂·▂ beats 61/75  avg 1027             28%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   58.0%  ▁▂▂█●▁▂▃·▁·▁ beats 13/22  hard · avg 28%      4.4%  sharp · noisy
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>    59.8%  ▄·█···▄▄▄●▄▄ beats 6/8    medium · avg 36%    3.6%  blunt · at its level
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>      59.7%  █▅▅·▅▅█·●··▃ beats 15/17  medium · avg 46%    2.9%  blunt · at its level
@@ -39,10 +39,10 @@ Beats [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md) 
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1369.7  ▂▁▁▂▆▇█▄●▅▁▂ beats 40/53  avg 1153                 11%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1367.5  ▂▁▁▃▆█▄█●█▁▂ beats 40/53  avg 1153                 10%  typical
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   63.2%  ▄▄····▄▄█▄·● beats 8/8    hard · avg 34%          5.1%  at its level
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1071.0  ▃▂····▂█▂▃●▃ beats 12/14  avg 956                 4.1%  blunt
-<a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   71.5%  ▄·▄▄▄▄··█●·▄ beats 7/8    medium · avg 50%        2.5%  at its level
+<a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   71.5%  ▄·▄▄▄▄··█●·▄ beats 7/8    medium · avg 50%        2.6%  at its level
 <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>    5.7%  ●········▄█▄ beats 0/4    very hard · avg 7.1%    1.4%  typical
 </pre>
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1131.9  ▁▁▁▄▂█▂▁▁●▁▁ beats 30/34  avg 875             4.3%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1131.9  ▁▁▁▄▂█▂▁▁●▁▁ beats 30/34  avg 874             4.3%  typical
 <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   59.6%  ▂·▂▃·▂·▃▂·▃● beats 13/14  medium · avg 42%    3.6%  blunt · at its level
 </pre>
 

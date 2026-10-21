@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 71.4** ±3.8 · #1 of 118 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.4** ±3.9 · #2 of 119 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ voice cloning  █···█······●   #1 of 3     94%      4
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   62.8%  ██·········● beats 2/2    hard · avg 22%     33%  at its level · small run
 <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language speaker …</a>   74.3%  ██·········● beats 2/2    hard · avg 31%     30%  at its level · small run
-<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    1.9%  █····●·····█ beats 1/2    avg 5.4%           17%  small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    1.9%  █····●·····█ beats 1/2    avg 5.3%           17%  small run
 <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>    1.2%  ●··········▄ beats 1/2    avg 3.3%           15%  small run
 </pre>
 

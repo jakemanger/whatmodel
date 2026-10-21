@@ -6,7 +6,7 @@
 
 Meta · released 2021-04 · 0.32B params · apache-2.0
 
-**score 14.9** ±4.6 · #153 of 162 · from 4 benchmark results across 3 sources
+**score 14.6** ±4.6 · #154 of 163 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                                    results  share of the score
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                             2   10% ▇
 <a name="speech-stt-sap-dysarthric-report"></a><a href="https://arxiv.org/html/2605.02782v2">Dysarthric ASR with clinical context on…</a>        1    8% ▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 14.9
+weighted average                                   = 14.6
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>

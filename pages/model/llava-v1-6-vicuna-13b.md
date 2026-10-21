@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 34.3** ±5.5 · #836 of 952 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 34.2** ±5.5 · #841 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #145 of 150*     86%      2
+vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄   #152 of 157*     86%      2
 </pre>
 
-<details><summary>vision &amp; documents · #145 of 150 · 86% of its score</summary>
+<details><summary>vision &amp; documents · #152 of 157 · 86% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md), [LLaVA-v1.6-34B](llava-v1-6-34b.md) here, though they rank higher overall.
 
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                            results  share of the score
 <a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>        2   86% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle               14% ▇▇
-weighted average                           = 34.3
+weighted average                           = 34.2
 </pre>
 
 <sub>Licences: LLaVA repository model zoo ([Apache-2.0](https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE))</sub>

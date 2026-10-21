@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 55.6** ±1.8 · #63 of 162 · from 16 benchmark results across 4 sources
+**score 55.6** ±1.8 · #64 of 163 · from 16 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice 12-…</a>   12.8%  █··●·······█ beats 1/2    avg 18%       7.1%  small run
-<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-langua…</a>    8.0%  █·●········█ beats 1/2    avg 11%       6.5%  small run
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-langua…</a>    8.0%  █·●········█ beats 1/2    avg 11%       6.6%  small run
 <a href="https://arxiv.org/html/2609.32082v1">mu-bench voice-agent caller utter…</a>   27.2%  ●·····▄····▄ beats 1/3    avg 39%       4.7%  typical
 </pre>
 
@@ -55,10 +55,10 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English short-fo…</a>    7.9%  █··█·●·····█ beats 2/3     avg 12%       7.4%  typical
 <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-form W…</a>   12.3%  █····█·●···█ beats 2/3     avg 21%       7.3%  typical
 <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>                  14.8%  ▁····●··▁▄█▂ beats 1/17    avg 19%       7.1%  typical
-<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>            4.7%  ▁▁▁▂▅▃●▄█▂▂▁ beats 27/54   avg 6.0%      6.2%  typical
-<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   22.2%  ▂▂···▃▂▅█●▂▂ beats 13/16   avg 32%       4.4%  blunt
+<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>            4.7%  ▁···▁▁▁▆●█▆▁ beats 29/56   avg 6.0%      6.2%  typical
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   22.2%  ▂▂···▃▂▅█●▂▂ beats 13/16   avg 32%       4.3%  blunt
 <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>            7.3%  █▄▄··●███▄██ beats 4/16    avg 11%       3.7%  typical
-<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>            1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 60/100  avg 2.3%      1.9%  blunt
+<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>            1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 62/102  avg 2.3%      1.9%  blunt
 <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>               3.2%  ▁··▁▁▁▁▂▃█●▁ beats 63/64   avg 4.8%      1.6%  blunt
 </pre>
 

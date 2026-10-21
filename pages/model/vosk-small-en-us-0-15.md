@@ -6,7 +6,7 @@
 
 Alpha Cephei (Vosk) · released 2020-12 · apache-2.0
 
-**score 30.8** ±6.3 · #144 of 162 · from 3 benchmark results across 2 sources
+**score 30.7** ±6.3 · #145 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · English…</a>   18.4%  █·●···▄▄▄··▄ beats 3/7    avg 8.3%       67%  typical
-<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (lab)</a>      9.8%  ▁·●·▁▁▁▁▃▇█▆ beats 2/100  avg 3.1%       14%  blunt · small run
+<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (lab)</a>      9.8%  ▁·●·▁▁▁▁▃▇█▆ beats 3/102  avg 3.1%       14%  blunt · small run
 <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form) (l…</a>   10.4%  ▁·▁▇█●·▁▁▃█▄ beats 13/27  avg 6.3%      3.3%  blunt · small run
 </pre>
 
@@ -38,7 +38,7 @@ source                                    results  share of the score
 <a name="speech-stt-picovoice-apache"></a><a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice speech-to-text-benchmark · En…</a>        1   67% ▇▇▇▇▇▇▇▇
 <a name="first-party-alphacephei-vosk-models"></a><a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">Alpha Cephei Vosk models page (lab)</a>             2   18% ▇▇
 prior: pull toward the middle                       15% ▇▇
-weighted average                                   = 30.8
+weighted average                                   = 30.7
 </pre>
 
 <sub>Licences: Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt))</sub>

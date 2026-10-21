@@ -6,7 +6,7 @@
 
 SWivid (SJTU X-LANCE) · released 2024-10 · 0.3358B params · cc-by-nc-4.0
 
-**score 56.9** ±2.4 · #48 of 118 · from 10 benchmark results across 3 sources
+**score 57.1** ±2.4 · #48 of 119 · from 10 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -25,9 +25,9 @@ Beats [GLM-TTS](glm-tts.md), [CosyVoice2-0.5B](cosyvoice2-0-5b.md), [MaskGCT](ma
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>   67.0%  ▁·▂▂▂●▆▃▅··▂ beats 7/30   medium · avg 53%     15%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>   67.0%  ▁·▂▂▂●▆▃▅··▂ beats 7/30   medium · avg 53%     16%  at its level
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>   76.0%  ▁·▂··▂·●▄·▃▄ beats 10/25  medium · avg 62%     13%  at its level
-<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>    1.8%  ▁···▂▂▂▂●▆▄▂ beats 16/35  avg 3.6%            6.2%  blunt
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>    1.8%  ▁···▂▂▂▂●▆▄▂ beats 16/35  avg 3.6%            6.1%  blunt
 <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER…</a>    1.6%  ▁·▂▁▁▁●▃▅█·▂ beats 6/30   avg 2.1%            3.4%  blunt
 </pre>
 
@@ -39,9 +39,9 @@ test                                result  vs the others in its run  difficulty
 test                                  result  vs the others in its run  difficulty             counts  why
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.10 / 5  ▅·█▅▅·█▃▃●·▅ beats 15/17  easy · avg 4.03 / 5       26%  typical
 <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     66.0%  ▄·········●▄ beats 1/3    medium · avg 52%          17%  at its level
-<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.4%  █·····█·█··● beats 3/3    avg 4.1%                 7.5%  typical
-<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.33 / 5  ▅··▃▅··▅█▅█● beats 15/17  medium · avg 3.30 / 5    3.6%  blunt · at its level
-<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     89.4%  ▄▄·····▄··▄● beats 4/5    very easy · avg 88%      3.0%  blunt
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.4%  █·····█·█··● beats 3/3    avg 4.2%                 7.6%  typical
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.33 / 5  ▅··▃▅··▅█▅█● beats 15/17  medium · avg 3.29 / 5    3.5%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     89.4%  ▄▄·····▄··▄● beats 4/5    very easy · avg 87%      3.0%  blunt
 <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     89.6%  ▂▂█·▂·█▆▂·●▂ beats 16/17  very easy · avg 89%      2.1%  blunt
 </pre>
 
@@ -54,10 +54,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   63% ▇▇▇▇▇▇▇▇
-<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   30% ▇▇▇▇
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   29% ▇▇▇▇
 <a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2    5% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 56.9
+weighted average                                   = 57.1
 </pre>
 
 <sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>

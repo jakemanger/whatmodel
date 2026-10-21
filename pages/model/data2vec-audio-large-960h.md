@@ -6,7 +6,7 @@
 
 Meta · released 2022-04 · 0.31B params · apache-2.0
 
-**score 13.1** ±3.5 · #157 of 162 · from 3 benchmark results across 2 sources
+**score 12.8** ±3.6 · #158 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ source                         results  share of the score
 <a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">Meta (lab)</a>                           2   52% ▇▇▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   43% ▇▇▇▇▇
 prior: pull toward the middle             5% ▇
-weighted average                        = 13.1
+weighted average                        = 12.8
 </pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>

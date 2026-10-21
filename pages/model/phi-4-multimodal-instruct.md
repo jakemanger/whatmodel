@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-02 · 5.57B params · mit
 
-**score 57.9** ±1.8 · #48 of 162 · from 7 benchmark results across 5 sources
+**score 57.9** ±1.8 · #48 of 163 · from 7 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [Qwen3-ASR-1.7B](qwen3-asr-1-7b.md), [Voxtral Mini Transcribe V2](voxtral-
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             4.4%  ▂··▂▃▂█▃●▂▁▁ beats 23/29  avg 8.9%       39%  typical
-<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   56.3%  ●▃▃··▅▃▃··▃▃ beats 1/10   avg 38%       1.9%  noisy
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   56.3%  ●▃▃··▅▃▃··▃▃ beats 1/10   avg 38%       2.0%  noisy
 </pre>
 
 </details>

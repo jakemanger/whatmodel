@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others         rank  counts  tests
 text to image           ▂▅●▃▄▄█▃▁▂▁▁   #88 of 126*     27%      1
-image to image / edit…  ▁▁·▃●▃█▃▃▄▁▁     #52 of 62     57%      9
+image to image / edit…  ▁▁·▃●▂█▃▅▅▂▁     #52 of 62     57%      9
 </pre>
 
 <details><summary>text to image · #88 of 126 · 27% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   941.1  ●▂▃▄▇█▄▂▄▂·▂ beats 2/75   avg 1027       27%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   941.1  ●▂▃▄▇█▅▂▄▂·▂ beats 2/75   avg 1027       27%  typical
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [FLUX1.1 \[pro\]](flux-1-1-pro.md) here, though they rank higher overall.
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           38.6%  ▃▃▂·▃●▂█·▃·▃ beats 9/20   hard · avg 45%       15%  typical
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1149.2  ▂▁▁●▆▇█▄▆▅▁▂ beats 6/53   avg 1153             10%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1151.4  ▂▁▁●▆█▄█▄█▁▂ beats 6/53   avg 1153             10%  typical
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   15.1%  ●·········█▂ beats 1/7    medium · avg 42%    6.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   59.3%  ●·▄···▄██··▄ beats 0/7    easy · avg 66%      6.1%  at its level
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              68.0%  ▂····▂▄●▄·█▂ beats 4/11   easy · avg 73%      5.8%  at its level
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   37% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   37% ▇▇▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   15% ▇▇
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   13% ▇▇
 <a name="visual-hp-edit"></a><a href="https://arxiv.org/html/2604.19406v1#S5.T1">HP-Edit: A Human-Preference Post-Traini…</a>        1    6% ▇

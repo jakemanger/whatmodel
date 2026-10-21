@@ -6,7 +6,7 @@
 
 Mistral · released 2025-03 · 24.01B params · apache-2.0
 
-**score 55.0** ±0.9 · #279 of 725 · from 28 benchmark results across 13 sources
+**score 54.8** ±0.9 · #287 of 729 · from 28 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁      #224 of 306    5.6%      3
+agent tasks         ▁▁▃▆●▅▅▅▅▄▂▁      #228 of 310    5.6%      3
 coding                             not ranked yet       —      2
-chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃     #221 of 395*     11%      2
+chat &amp; writing      ▁▁▁▃▆▄▆●▆▆▇▃     #224 of 398*     11%      2
 math                ▁▁▃▅●▆▄█▄▁▁▁      #272 of 427     26%      4
-vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄      #105 of 147     14%      5
-web search          ▂▁▂▆▄█▃●▁▁·▁       #11 of 80*    2.6%      1
+vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄      #112 of 154     14%      5
+web search          ▁▁▁▅▄█▃●·▁·▁       #12 of 84*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #224 of 306 · 5.6% of its score</summary>
+<details><summary>agent tasks · #228 of 310 · 5.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   10.8%  █·▃▃·●▅▅▅▅▃▅ beats 5/18    very hard · avg 5.3%    2.6%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   10.8%  █·▃▃·●▅▅▅▅▃▅ beats 5/18    very hard · avg 5.4%    2.6%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              57.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 72/114  medium · avg 51%        1.7%  blunt · at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   91.2%  ▃▃▃▃▆▅▆▅●▂▅▂ beats 26/31   easy · avg 78%          1.3%  typical
 </pre>
@@ -47,14 +47,14 @@ test                     result  vs the others in its run  counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #221 of 395 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #224 of 398 · 11% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1303.1  ▁▁▁▂▃▃▃●▆▇█▃ beats 129/379  avg 1258          7.8%  blunt
-<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>   19.6%  ▁●··▄▃▁▃█▁▁▇ beats 1/22     hard · avg 20%    3.0%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1302.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 128/382  avg 1259          7.8%  blunt
+<a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>   19.6%  ▁●··▄▃▁▃█▁▁▇ beats 1/22     hard · avg 20%    3.1%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -65,21 +65,21 @@ Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      46.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 40/92   hard · avg 27%           17%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 25/195  very hard · avg 6.9%    3.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      46.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 40/92   hard · avg 28%           17%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 25/195  very hard · avg 7.0%    3.8%  sharp · noisy
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MATH (subset unspecified) (lab)</a>   69.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 41/80   medium · avg 59%        3.2%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MathVista (testmini) (lab)</a>        68.9%  ▁··▁▄▄▇●▅▆█▄ beats 24/47   medium · avg 61%        2.2%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #105 of 147 · 14% of its score</summary>
+<details><summary>vision &amp; documents · #112 of 154 · 14% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1127.1  ▁▁▂▂▂▂●▅▅▆██ beats 39/145  avg 1058               5.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1127.4  ▁▁▂▂▂▂●▄▄▅█▇ beats 38/152  avg 1061               5.1%  blunt
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▄█●▆▆ beats 26/52   medium · avg 56%       4.3%  at its level · small run · several runs
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MathVista (testmini) (lab)</a>        68.9%  ▁··▁▄▄▇●▅▆█▄ beats 24/47   medium · avg 61%       2.2%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">ChartQA (lab)</a>                     86.2%  ▁··▁▁▁▁▁▂▅●█ beats 27/44   easy · avg 81%         1.4%  blunt · small run · several runs
@@ -88,13 +88,13 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #11 of 80 · 2.6% of its score</summary>
+<details><summary>web search · #12 of 84 · 2.6% of its score</summary>
 
 Beats [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   10.8%  █·▃▃·●▅▅▅▅▃▅ beats 5/18   very hard · avg 5.3%    2.6%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   10.8%  █·▃▃·●▅▅▅▅▃▅ beats 5/18   very hard · avg 5.4%    2.6%  sharp
 </pre>
 
 </details>
@@ -104,16 +104,16 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         41.9%  ▁▁▁▁▂▄●▄▅▇█▄ beats 44/209   hard · avg 38%           17%  sharp · at its level · several runs
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   78.0%  ▁▂▂▂▃█▃▆●▄▂▃ beats 75/95    medium · avg 64%        5.0%  at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1055.9  ▁·▂●▄▅▅▃█▄▁▁ beats 5/62     avg 1031                4.7%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.7%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 68/97    hard · avg 31%          4.5%  blunt · at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   78.0%  ▁▂▂▂▃█▃▆●▄▂▃ beats 75/95    medium · avg 64%        5.1%  at its level
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1055.9  ▁·▂●▄▅▅▃█▄▁▁ beats 5/62     avg 1032                4.7%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.7%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 68/97    hard · avg 31%          4.6%  blunt · at its level
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU (lab)</a>                           80.6%  ▁▁▁▁▁▂▂▅██●▄ beats 170/214  medium · avg 71%        3.6%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU-Pro (lab)</a>                       66.8%  ▁▁·▁▁▁▃▂●▅█▁ beats 78/188   medium · avg 56%        2.8%  at its level · small run
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                       10.4%  ▄▄▄▆●▆███·▂█ beats 12/32    very hard · avg 7.3%    2.6%  small run
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   61.2%  ▁··▃▁▁▁▅●▅▁▅ beats 10/24    hard · avg 51%          1.6%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   93.1%  ▃·▁▁▂▁▂▅█▇▄● beats 99/100   medium · avg 66%        1.3%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   94.4%  ▁▁▁▁▁▁▁▂▄█▄● beats 139/146  easy · avg 82%          0.7%  noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 1.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 4/135    very hard · avg 5.8%    0.6%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 1.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 4/136    very hard · avg 5.8%    0.6%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   94.4%  ▁▁▂▃▄●█▆▃▂▂▁ beats 52/140   very easy · avg 94%     0.4%  blunt · maxed out · noisy
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">WildBench v2 (lab)</a>                   55.6%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">GPQA Main (lab)</a>                      44.4%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
@@ -129,11 +129,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        4   33% ▇▇▇▇
 <a name="card2-mistralai-mistral-small-3-2-24b-instruct-2506"></a><a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">mistralai/Mistral-Small-3.2-24B-Instruc…</a>        9   25% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   13% ▇▇
-<a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">Mistral AI vendor-reported benchmark sc…</a>        3    5% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   13% ▇▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    5% ▇
+<a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">Mistral AI vendor-reported benchmark sc…</a>        3    5% ▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    5% ▇
-<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    4% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    5% ▇
 <a name="paper-2508.00828v1-finance-agent-benchmark"></a><a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark</a>                         1    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
@@ -141,7 +141,7 @@ source                                    results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.0
+weighted average                                   = 54.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card ([Apache-2.0](../../licenses/mistralai--Mistral-Small-3.2-24B-Instruct-2506.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

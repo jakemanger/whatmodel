@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▅▇█▇▅▄▂▁   #512 of 529*     13%      1
-chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃    #448 of 466     31%      3
+coding          ▁▁●▂▅▇█▇▅▄▃▁   #518 of 535*     13%      1
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃    #451 of 469     31%      3
 </pre>
 
-<details><summary>coding · #512 of 529 · 13% of its score</summary>
+<details><summary>coding · #518 of 535 · 13% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -31,15 +31,15 @@ test       result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #448 of 466 · 31% of its score</summary>
+<details><summary>chat &amp; writing · #451 of 469 · 31% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.9  ▁▁●▂▃▃▃▆▆▇█▃ beats 12/379  avg 1258                     12%  blunt
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         967.0  ▂▁▂●▃▇█▆▇▄▂▂ beats 11/95   avg 1186                     11%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.3500 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 10/28   avg 8.514 MT-Bench scor…    8.4%  sharp · noisy
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1071.1  ▁▁●▂▃▃▃▆▆▇█▃ beats 12/382  avg 1259                     12%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         967.0  ▂▁▂●▃▇█▆▇▄▂▂ beats 11/95   avg 1187                     11%  typical
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.3500 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 10/28   avg 8.525 MT-Bench scor…    8.4%  sharp · noisy
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        52.9%  ▄·▄···●·▄··▄ beats 3/5    easy · avg 86%          11%  sharp · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            77.5%  ▄·▄●··▄····▄ beats 3/5    very easy · avg 92%    5.0%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   24.9%  ▂··●·▂▆▄▂█·▂ beats 1/14   medium · avg 53%       4.0%  typical
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   52.8%  █▁····●▁·▁·▁ beats 11/14  hard · avg 66%         1.3%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   52.8%  █▁····●▁·▁·▁ beats 11/14  hard · avg 66%         1.2%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">TruthfulQA MC2</a>                       50.1%  ▃···█·▃····● beats 5/5    medium · avg 56%       0.4%  blunt · at its level
 </pre>
 
@@ -67,7 +67,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    3   35% ▇▇▇▇
 <a name="acl-2023-emnlp-main-183"></a><a href="https://aclanthology.org/2023.emnlp-main.183.pdf">Enhancing Chat Language Models by Scali…</a>        4   28% ▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   11% ▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    8% ▇
 <a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    4% ▇

@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 45.6** ±1.3 · #458 of 725 · from 14 benchmark results across 4 sources
+**score 45.5** ±1.3 · #462 of 729 · from 14 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #254 of 306     19%      3
-coding          ▁▁▁▃●██▇▆▄▃▁    #364 of 460     35%      5
-chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #223 of 395*     12%      2
+agent tasks     ▁▁▃●█▅▅▅▅▄▂▁    #258 of 310     19%      3
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #370 of 466     35%      5
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃   #227 of 398*     12%      2
 </pre>
 
-<details><summary>agent tasks · #254 of 306 · 19% of its score</summary>
+<details><summary>agent tasks · #258 of 310 · 19% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -29,12 +29,12 @@ Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Smal
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>           3.6%  ●···▃·▃·▃█·▃ beats 0/7     hard · avg 17%       10%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   32.1%  ▁▁▁▂█●▅▅▆▂▂▂ beats 35/77   hard · avg 31%      5.9%  typical
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           51.7%  ▁▁▁▁▁▃●█▅▄▁▁ beats 42/114  medium · avg 51%    3.6%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           51.7%  ▁▁▁▁▁▃●█▅▄▁▁ beats 42/114  medium · avg 51%    3.7%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #364 of 460 · 35% of its score</summary>
+<details><summary>coding · #370 of 466 · 35% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -42,16 +42,16 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          72.0%  ●█·██···████ beats 0/7    easy · avg 78%           10%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>              3.6%  ●···▃·▃·▃█·▃ beats 0/7    hard · avg 17%           10%  sharp
-<a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>    9.0%  ●▄·▄·····█▄█ beats 0/7    hard · avg 18%          6.7%  typical
-<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 42.2%  ●··▄·▄·█··▄█ beats 0/7    medium · avg 47%        5.5%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>    9.0%  ●▄·▄·····█▄█ beats 0/7    hard · avg 18%          6.6%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 42.2%  ●··▄·▄·█··▄█ beats 0/7    medium · avg 47%        5.6%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.7%  █●··█·█····▄ beats 2/7    very hard · avg 5.4%    3.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #223 of 395 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #227 of 398 · 12% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -66,9 +66,9 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    69.6%  ●▄▄··▄▄··▄·█ beats 0/7     easy · avg 79%          15%  at its level
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 30/81   medium · avg 56%       7.7%  blunt · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        30.9%  ▄··●▄···▄▄█▄ beats 1/7     hard · avg 34%         6.3%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                       42.4%  ▁▁·▁▁▁●▂▄▅█▁ beats 33/188  medium · avg 53%       6.1%  at its level · small run
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 30/81   medium · avg 56%       7.8%  blunt · at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        30.9%  ▄··●▄···▄▄█▄ beats 1/7     hard · avg 35%         6.4%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                       42.4%  ▁▁·▁▁▁●▂▄▅█▁ beats 33/188  medium · avg 54%       6.0%  at its level · small run
 <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (lab)</a>    26.3%  ●·····▄█▂▂▃▃ beats 0/22    very hard · avg 35%    5.2%  sharp · too hard for it · small run
 <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot CoT…</a>   65.2%  ●···▂▁▅█▂▂▃▁ beats 0/22    easy · avg 76%         3.0%  at its level · small run
 <a href="https://arxiv.org/pdf/2504.00698v2">InFoBench (lab)</a>                      85.6%  ●··········█ beats 0/1                               —  not counted yet: no other model in the …
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   10% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    8% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 45.6
+weighted average                                   = 45.5
 </pre>
 
 <sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

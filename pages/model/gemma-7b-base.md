@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 37.2** ±0.5 · #600 of 725 · from 37 benchmark results across 9 sources
+**score 37.2** ±0.5 · #604 of 729 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #416 of 460     70%      7
+coding  ▁▁▁●▆▇█▇▅▄▃▁   #422 of 466     70%      7
 math    ▁▁▃▅█●▄█▄▁▁▁   #222 of 427    5.6%      2
 </pre>
 
-<details><summary>coding · #416 of 460 · 70% of its score</summary>
+<details><summary>coding · #422 of 466 · 70% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   34.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 12/35  medium · avg 61%    4.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                43.4%  ▁···▁▁●▅▇█▆▂ beats 9/75   easy · avg 66%      3.4%  at its level
 <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           44.4%  ▁▁▁▄●█▆▅▄▁▂▁ beats 25/86  easy · avg 71%      2.8%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 9/35   medium · avg 45%    2.4%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 9/35   medium · avg 46%    2.4%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    7.4%  ▁·▁▁●██▄█▁▅▅ beats 3/35   medium · avg 51%    2.1%  sharp
 </pre>
 
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                     72.3%  ▁▁▁▁▂▁▁▅▇●▃▁ beats 102/131  easy · avg 84%         0.8%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed book) (…</a>   23.0%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 48/68    medium · avg 39%       0.8%  small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report) (l…</a>   41.7%  ▄··········● beats 2/2      medium · avg 62%       0.7%  at its level · small run
-<a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                       63.4%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 54/80    easy · avg 80%         0.7%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                       63.4%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 54/80    easy · avg 81%         0.7%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                      81.2%  ▁▁▁▂▂▂▄▆█▇●▂ beats 117/135  easy · avg 89%         0.6%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 109/276  medium · avg 72%       0.6%  at its level · noisy
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                          83.2%  ▁····▁▂█▆▅●▄ beats 84/103   easy · avg 89%         0.6%  at its level · small run

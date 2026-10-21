@@ -6,7 +6,7 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.7** ±4.4 · #334 of 725 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.7** ±4.3 · #338 of 729 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,8 +22,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   56.9%  ●·▂··▂·▄▂·█▆ beats 0/12   medium · avg 63%     55%  at its level · noisy
-<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        76.9%  ●·▃·▅▅▃···▃▃ beats 2/10   easy · avg 70%       20%  blunt · at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   56.9%  ●·▂··▂·▄▂·█▆ beats 0/12   medium · avg 63%     54%  at its level · noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        76.9%  ●·▃·▅▅▃···▃▃ beats 2/10   easy · avg 70%       21%  blunt · at its level
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   70.0%  ▄·▄●▄·▄██▄█▄ beats 2/12   medium · avg 65%     17%  blunt · at its level
 </pre>
 

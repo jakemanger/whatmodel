@@ -6,7 +6,7 @@
 
 Nyra Health · released 2024-08 · 1.61B params · cc-by-nc-4.0
 
-**score 47.2** ±2.5 · #111 of 162 · from 3 benchmark results across 2 sources
+**score 47.1** ±2.5 · #113 of 163 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ source                         results  share of the score
 <a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                2   76% ▇▇▇▇▇▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   22% ▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 47.2
+weighted average                        = 47.1
 </pre>
 
 <sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>

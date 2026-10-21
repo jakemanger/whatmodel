@@ -6,7 +6,7 @@
 
 Mistral · released 2025-05 · proprietary
 
-**score 60.3** ±1.2 · comparison only: no current run option verified · from 8 benchmark results across 5 sources
+**score 60.2** ±1.2 · comparison only: no current run option verified · from 8 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,42 +16,42 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #231 of 346*    6.7%      1
-coding              ▁▁▁▃▅▇█●▅▄▂▁   #200 of 529*    8.3%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #142 of 466*     14%      1
+agent tasks         ▁▁▂▆●▅▅▄▄▄▁▁   #235 of 350*    6.8%      1
+coding              ▁▁▁▂▅▇█●▅▄▃▁   #206 of 535*    8.4%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #146 of 469*     14%      1
 math                ▁▁▃▆██●█▄▁▁▁   #208 of 526*     34%      2
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #113 of 182*     10%      1
+vision &amp; documents  ▁▁▂▃▂▃▅●▇██▄   #120 of 189*    9.2%      1
 </pre>
 
-<details><summary>agent tasks · #231 of 346 · 6.7% of its score</summary>
+<details><summary>agent tasks · #235 of 350 · 6.8% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   37.6%  ▁▁▁▂██●▅▆▂▂▂ beats 43/77  hard · avg 31%    6.7%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   37.6%  ▁▁▁▂██●▅▆▂▂▂ beats 43/77  hard · avg 31%    6.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #200 of 529 · 8.3% of its score</summary>
+<details><summary>coding · #206 of 535 · 8.4% of its score</summary>
 
-Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   53.7%  ▁··▁·▁▁▁●█▇█ beats 7/45   hard · avg 29%    8.3%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   53.7%  ▁··▁·▁▁▁●█▇█ beats 7/45   hard · avg 29%    8.4%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #142 of 466 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #146 of 469 · 14% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 229/379  avg 1258       14%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 227/382  avg 1259       14%  blunt
 </pre>
 
 </details>
@@ -62,19 +62,19 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) h
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 66/92   hard · avg 27%           22%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   32.2%  ▃▃▄▃▃●▇▇█▃▂▅ beats 68/195  very hard · avg 6.9%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 66/92   hard · avg 28%           23%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   32.2%  ▃▃▄▃▃●▇▇█▃▂▅ beats 68/195  very hard · avg 7.0%     11%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #113 of 182 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #120 of 189 · 9.2% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1155.2  ▁▁▂▂▂▂▄●▅▆██ beats 50/145  avg 1058       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1155.2  ▁▁▂▂▂▂▃●▄▅█▇ beats 51/152  avg 1061      9.2%  blunt
 </pre>
 
 </details>
@@ -84,7 +84,7 @@ test                             result  vs the others in its run   difficulty  
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         59.5%  ▁▁▁▁▂▄▆●▅▇█▄ beats 87/209  hard · avg 38%     24%  sharp · at its level
-<a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   60.3%  ▁··▃▁▁▁●█▅▁▅ beats 9/24    hard · avg 51%    2.9%  blunt · at its level
+<a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   60.3%  ▁··▃▁▁▁●█▅▁▅ beats 9/24    hard · avg 51%    3.0%  blunt · at its level
 </pre>
 
 </details>
@@ -95,13 +95,13 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   57% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   24% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   58% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   23% ▇▇▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    8% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    7% ▇
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 60.3
+weighted average                                   = 60.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

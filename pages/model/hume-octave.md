@@ -6,7 +6,7 @@
 
 Hume AI · released 2025-02 · proprietary
 
-**score 57.9** ±3.9 · #46 of 118 · from 4 benchmark results across 3 sources
+**score 57.8** ±3.9 · #46 of 119 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     46.8%  ▅▅▃▃█▅▅●·▃·▅ beats 13/16  hard · avg 30%          50%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     46.8%  ▅▅▃▃█▅▅●·▃·▅ beats 13/16  hard · avg 31%          50%  at its level
 <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean instruc…</a>     71.1%  ▄····●··▄··▄ beats 2/4    easy · avg 66%          21%  at its level
 <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  4.18 / 5  ▄·█·█▄····●▄ beats 6/8    easy · avg 3.93 / 5     12%  blunt
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           12.8%  ▂▄··▂▄▄··●▄▆ beats 10/16  avg 16%                 11%  blunt
@@ -40,7 +40,7 @@ source                                    results  share of the score
 <a name="speech-instructttseval-ccby"></a><a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval: instruction-following …</a>        1   21% ▇▇▇
 <a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   12% ▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 57.9
+weighted average                                   = 57.8
 </pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>
