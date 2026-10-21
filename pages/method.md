@@ -681,8 +681,8 @@ test (evaluator)                                          models     a      σ  
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>                                     8  1.39   0.50     7.8   0.0%
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified) (paper-2411.15124v5)</a>                 3  1.54   0.36    18.5   0.0%
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro">MMLU-Pro (first-party-arcee-scores)</a>                            2  1.41   0.39    12.9   0.0%
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.87   0.35    27.8   0.0%
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-3b-reasoning-2512)</a>       3  1.87   0.35    27.8   0.0%
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.87   0.35    27.8   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (paper-2408.12570v1-jamba15)</a>         3  1.90   0.35    28.8   0.0%
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified) (paper-2607.20062v2-s…</a>       6  1.15   0.34    11.7   0.0%
 <a href="https://nlp.cs.washington.edu/triviaqa/">TriviaQA (paper-2210.11399v2)</a>                                  4  1.15   0.33    11.9   0.0%
@@ -854,8 +854,8 @@ test (evaluator)                                          models     a      σ  
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (first-party-openai-scores)</a>                  14  2.22   0.76     8.5   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (paper-2406.12793v2-chatglm)</a>         2  1.90   0.39    23.9   0.0%
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (card-liquidai-lfm2-5-1-2b-thinking)</a>                  7  1.34   0.54     6.1   0.0%
-<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (card2-zai-org-glm-5)</a>                   7  1.25   0.31    16.3   0.0%
 <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (report-2602.15763v2)</a>                   7  1.25   0.31    16.3   0.0%
+<a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (card2-zai-org-glm-5)</a>                   7  1.25   0.31    16.3   0.0%
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>                                        8  1.29   0.40    10.1   0.0%
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (card2-qwen-qwen2-0-5b-instruct)</a>                     2  1.91   0.40    22.5   0.0%
 <a href="https://arxiv.org/html/2511.23404v1#A3">MMMLU seven languages (Liquid)</a>                                 6  1.00   0.30    10.9   0.0%
