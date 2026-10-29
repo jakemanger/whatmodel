@@ -10292,6 +10292,30 @@
     "local": null
   },
   {
+    "id": "speechify-simba-3-5",
+    "name": "Simba 3.5",
+    "provider": "Speechify",
+    "category": "tts",
+    "released": "2026-10",
+    "released_source": "https://speechify.ai/blog/simba-3-5",
+    "open_weights": false,
+    "license": "proprietary",
+    "identity_sources": [
+      "https://speechify.ai/blog/simba-3-5",
+      "https://speechify.ai/models"
+    ],
+    "identity_note": "SpeechifyAI API model id simba-3.5, launched 2026-10-21, 48 languages under one model id. Distinct from Simba 3.2 (speechify-simba-3-2, English) and Simba 3.0 (6 languages).",
+    "api": {
+      "url": "https://speechify.ai/pricing",
+      "provider": "Speechify",
+      "price": 12,
+      "unit": "1M-chars",
+      "price_source": "https://speechify.ai/pricing",
+      "price_note": "USD per 1M characters: SpeechifyAI lists Simba 3.5 at $12 per 1M characters on Scale ($499/month, lowest published rate), $16 on Pro, $20 on Starter. Launch price bills at $6/$8/$10 until 21 Nov 2026. Product: SpeechifyAI text-to-speech API. API model: simba-3.5. Settings: Scale-plan list rate. Price basis: published list rate. Exclusions: monthly plan fee. Currency: USD. Speechify official API pricing page, observed 2026-10-27."
+    },
+    "local": null
+  },
+  {
     "id": "elevenlabs-v3-conversational",
     "name": "Eleven v3 Conversational",
     "provider": "ElevenLabs",
