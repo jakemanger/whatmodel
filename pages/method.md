@@ -615,8 +615,8 @@ test (evaluator)                                          models     a      σ  
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (lm-eval-harness-results-2023-05)</a>                        8  2.01   0.36    31.1   0.0%
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, two attempts) (card-qwen…</a>       4  2.99   0.40    55.6   0.0%
 <a href="https://www.swebench.com">SWE-bench Verified (first-party-nvidia-scores)</a>                 3  1.85   0.36    27.1   0.0%
-<a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.98   0.36    30.8   0.0%
 <a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card-mistralai-ministral-3-3b-reasoning-2512)</a>       3  1.98   0.36    30.8   0.0%
+<a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.98   0.36    30.8   0.0%
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (granite-3-0-paper-github)</a>                                8  1.29   0.33    14.9   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (card2-ibm-granite-granite-4-1-8b)</a>                       3  2.01   0.35    32.5   0.0%
 <a href="https://arxiv.org/html/2511.23404v1#A3">IFEval mean of four measures (report-2511.23404v1)</a>             6  1.22   0.30    15.9   0.0%
