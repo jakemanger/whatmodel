@@ -6,7 +6,7 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 53.5** ±2.6 · #70 of 144 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 53.4** ±2.6 · #70 of 144 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▁▂▁▁   #60 of 126     97%      6
+text to image  ▂▅▅▃▄●█▃▂▂▁▁   #60 of 126     97%      6
 </pre>
 
 <details><summary>text to image · #60 of 126 · 97% of its score</summary>
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>            91.9%  ▃·······█●██ beats 5/12   very easy · avg 89%     15%  small run
 <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                        82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 31/39  easy · avg 79%          14%  small run
 <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>          84.0%  ●▄▄█▄▄·▄···▄ beats 0/8    easy · avg 81%          12%  small run
-<a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                      88.5%  ▄·▂·▂▆█▄▂▄●▂ beats 16/17  very easy · avg 87%     10%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                      88.5%  ▄·▂·▂▆█▄▂▄●▂ beats 16/17  very easy · avg 87%     11%  small run
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ source                                    results  share of the score
 <a name="visual-llada-image"></a><a href="https://arxiv.org/html/2609.03796v1#S5.T5">LLaDA-Image: Building Strong Image Gene…</a>        5   71% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   26% ▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 53.5
+weighted average                                   = 53.4
 </pre>
 
 <sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

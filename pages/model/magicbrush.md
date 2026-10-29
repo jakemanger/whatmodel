@@ -6,7 +6,7 @@
 
 Ohio State University (OSU NLP) · released 2023-07 · creativeml-openrail-m
 
-**score 28.7** ±7.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.7** ±7.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

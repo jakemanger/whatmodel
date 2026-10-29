@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 3.03B params · bigcode-openrail-m
 
-**score 35.2** ±0.6 · #622 of 729 · from 17 benchmark results across 5 sources
+**score 35.2** ±0.6 · #624 of 731 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▇▅▄▃▁    #424 of 466     87%      9
-math    ▁▁▃●█▆▄█▄▁▁▁   #350 of 427*    2.8%      1
+coding  ▁▁▁●▅▇█▇▅▄▃▁    #426 of 468     87%      9
+math    ▁▁▃●█▇▄█▄▂▁▁   #350 of 429*    2.8%      1
 </pre>
 
-<details><summary>coding · #424 of 466 · 87% of its score</summary>
+<details><summary>coding · #426 of 468 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -29,19 +29,19 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            31.7%  ▁·▁▁▃●▆▅█▃▁▁ beats 16/99  easy · avg 76%       46%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           27.4%  ▁·▁▁▁●▄▄▄█▃▁ beats 16/99  easy · avg 70%       17%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 42.4%  █·▅▃▃▃●▃▃▅·▅ beats 9/15   easy · avg 81%      7.1%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.7%  ▁·▂▁▂●▅█▄▄▁▂ beats 9/35   medium · avg 61%    4.9%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.7%  ▁·▂▁▂●▅█▄▄▁▂ beats 9/35   medium · avg 62%    4.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           32.1%  ▃▅●▃▃▅·▃▃▅·▅ beats 5/15   medium · avg 56%    3.0%  at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        25.0%  ▄▄·▄█●▄█·█·▄ beats 6/12   medium · avg 49%    2.9%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        25.0%  ▄▄·▄█●▄█·█·▄ beats 6/12   medium · avg 49%    2.8%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.1%  ▄●█▃▄▇▄▁▇▃·▁ beats 5/35   medium · avg 46%    2.5%  typical
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           34.0%  ▃·▃█●▅▃·▃▃▅▃ beats 6/15   medium · avg 53%    2.5%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           34.0%  ▃·▃█●▅▃·▃▃▅▃ beats 6/15   medium · avg 54%    2.5%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   11.0%  ▁·▁▁▄●█▄█▁▅▅ beats 8/35   medium · avg 51%    2.0%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #350 of 427 · 2.8% of its score</summary>
+<details><summary>math · #350 of 429 · 2.8% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
@@ -66,7 +66,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   40% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   41% ▇▇▇▇▇
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   20% ▇▇
 <a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        6   20% ▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   17% ▇▇

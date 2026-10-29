@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 44.2** ±1.8 · #495 of 729 · from 7 benchmark results across 4 sources
+**score 44.1** ±1.8 · #497 of 731 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,9 +26,9 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedQA (USMLE, 4 options)</a>             55.4%  ▁▁··▄▁▁··▄▃● beats 14/17    medium · avg 71%     29%  sharp · at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedMCQA</a>                              53.3%  ▂▂··▄▄▂▂·▄█● beats 14/17    medium · avg 63%     13%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 145/276  medium · avg 72%    7.9%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   79.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 69/100   medium · avg 66%    6.2%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   79.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 69/100   medium · avg 67%    6.2%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 83/146   easy · avg 82%      5.1%  at its level · noisy
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">PubMedQA</a>                             71.6%  ▂·▂▆·▄▂▄●▂█▂ beats 11/17    medium · avg 75%    1.5%  blunt · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">PubMedQA</a>                             71.6%  ▂·▂▆·▄▂▄●▂█▂ beats 11/17    medium · avg 75%    1.6%  blunt · at its level
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ source                                results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                       2   11% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    8% ▇
 prior: pull toward the middle                    1% ▇
-weighted average                               = 44.2
+weighted average                               = 44.1
 </pre>
 
 <sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

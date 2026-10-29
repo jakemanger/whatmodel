@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.248B params · apache-2.0
 
-**score 24.9** ±1.4 · #683 of 729 · from 16 benchmark results across 9 sources
+**score 24.9** ±1.4 · #685 of 731 · from 16 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▆▄█▄▁▁▁   #424 of 427*     15%      2
+math  ●▁▃▅█▇▄█▄▂▁▁   #426 of 429*     15%      2
 </pre>
 
-<details><summary>math · #424 of 427 · 15% of its score</summary>
+<details><summary>math · #426 of 429 · 15% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 

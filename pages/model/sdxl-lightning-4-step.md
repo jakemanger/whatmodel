@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▁▂▁▁   #93 of 126*     74%      1
+text to image  ▂▅●▃▄▄█▃▂▂▁▁   #93 of 126*     74%      1
 </pre>
 
 <details><summary>text to image · #93 of 126 · 74% of its score</summary>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  22.3000 FID  █··●█······█ beats 1/3    avg 11.697 FID     22%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  22.3000 FID  █··●█······█ beats 1/3    avg 11.694 FID     22%  typical
 </pre>
 
 </details>

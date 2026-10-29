@@ -6,7 +6,7 @@
 
 Nexusflow · released 2023-12 · 13.02B params · other
 
-**score 30.3** ±2.9 · #657 of 729 · from 5 benchmark results across 2 sources
+**score 30.3** ±2.9 · #659 of 731 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▅▅▅▅▄▂▁   #299 of 310*     17%      1
+agent tasks  ▁▁●▆█▄▅▅▄▄▂▁   #301 of 312*     17%      1
 </pre>
 
-<details><summary>agent tasks · #299 of 310 · 17% of its score</summary>
+<details><summary>agent tasks · #301 of 312 · 17% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 

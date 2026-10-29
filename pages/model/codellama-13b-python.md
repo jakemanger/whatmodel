@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 40.0** ±0.9 · #566 of 729 · from 6 benchmark results across 3 sources
+**score 40.0** ±0.9 · #568 of 731 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #395 of 466     78%      4
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #397 of 468     78%      4
 </pre>
 
-<details><summary>coding · #395 of 466 · 78% of its score</summary>
+<details><summary>coding · #397 of 468 · 78% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          42.7%  ▁█▄▅●█·▄▇▅▄▄ beats 14/42  easy · avg 74%       62%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          42.7%  ▁█▄▅●█·▄▇▅▄▄ beats 14/42  easy · avg 75%       62%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         49.0%  ▃▃▃●··▃▅··▅▃ beats 4/11   easy · avg 71%       11%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   39.7%  ▁··▁▅▂●▇▁··▁ beats 11/22  medium · avg 52%    3.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   39.8%  ▁·▂▃▁●▁▂···▁ beats 10/22  medium · avg 51%    3.0%  blunt · at its level

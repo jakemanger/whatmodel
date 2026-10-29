@@ -6,7 +6,7 @@
 
 DeepSeek · 685B params (37B active) · mit
 
-**score 74.3** ±2.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 74.1** ±2.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▆██▅█▄●▁▁   #25 of 526*     67%      2
+math  ▁▁▃▆██▅█▄●▁▁   #27 of 528*     67%      2
 </pre>
 
-<details><summary>math · #25 of 526 · 67% of its score</summary>
+<details><summary>math · #27 of 528 · 67% of its score</summary>
 
-Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
+Beats [Gemini 3.8 Flash](gemini-3-8-flash.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">AIME 2025 (lab)</a>                      96.0%  ▁·▁▁▁▂▅▆█▇▅● beats 131/133  medium · avg 53%     37%  sharp · maxed out · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">HMMT 2025 (edition unspecified) (…</a>   99.2%  ▃█▇▅▇▅▁·▁··● beats 32/32    medium · avg 47%     30%  sharp · maxed out · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">HMMT 2025 (edition unspecified) (…</a>   99.2%  ▃█▇▅▇▅▁·▁··● beats 32/32    medium · avg 48%     30%  sharp · maxed out · small run
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                        result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">Humanity's Last Exam (lab)</a>   30.6%  ▁▁▁▄▅▆▆█●▆▁▃ beats 75/108  very hard · avg 4.6%     30%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">Humanity's Last Exam (lab)</a>   30.6%  ▁▁▁▄▅▆▆█●▆▁▃ beats 76/109  very hard · avg 4.7%     30%  at its level · small run
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-deepseek-ai-deepseek-v3-2"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">deepseek-ai/DeepSeek-V3.2 model card (l…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 74.3
+weighted average                                   = 74.1
 </pre>
 
 <sub>Licences: deepseek-ai/DeepSeek-V3.2 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3.2.txt))</sub>

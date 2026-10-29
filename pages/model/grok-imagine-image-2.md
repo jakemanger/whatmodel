@@ -6,7 +6,7 @@
 
 SpaceXAI · released 2026-08 · proprietary
 
-**score 78.7** ±2.1 · #5 of 144 · from 3 benchmark results across 2 sources
+**score 80.1** ±2.1 · #5 of 144 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,15 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄█▃▁●▁▁   #6 of 126*     64%      1
-image to image / edit…  ▁▁·▃▂▂█▃▅▅●▁    #4 of 62*     24%      1
+text to image           ▂▅▅▃▄▄█▃▂●▁▁   #5 of 126*     64%      1
+image to image / edit…  ▁▁·▃▂▃█▅▄▅●▁    #4 of 62*     24%      1
 </pre>
 
-<details><summary>text to image · #6 of 126 · 64% of its score</summary>
-
-Trails [Reve 2.1](reve-2-1.md) here, though they rank lower overall.
+<details><summary>text to image · #5 of 126 · 64% of its score</summary>
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1300.8  ▂▂▃▄▇█▅▂▄●·▂ beats 69/75  avg 1027       64%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1316.6  ▁▂▃▃▆█▃▂▂●▁▁ beats 70/75  avg 1027       64%  typical
 </pre>
 
 </details>
@@ -37,7 +35,7 @@ Beats [Nano Banana 2.1](nano-banana-2-1.md) here, though they rank higher overal
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1426.9  ▂▁▁▃▆█▄█▄●▁▂ beats 50/53  avg 1153       24%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1438.6  ▂▁▁▃▆█▄█▇▄●▂ beats 50/53  avg 1153       24%  typical
 </pre>
 
 </details>
@@ -46,7 +44,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1107.5  ▁▁▁▄▂█▂▁●▂▁▁ beats 28/34  avg 874        10%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1107.5  ▁▁▁▄▂█▂▁●▂▁▁ beats 28/34  avg 875        10%  typical
 </pre>
 
 </details>
@@ -57,10 +55,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   88% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   10% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 78.7
+weighted average                                   = 80.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

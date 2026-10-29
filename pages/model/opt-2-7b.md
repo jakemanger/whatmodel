@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 2.7B params · opt-175b-license-noncommercial
 
-**score 18.6** ±0.7 · #701 of 729 · from 40 benchmark results across 9 sources
+**score 18.6** ±0.7 · #703 of 731 · from 40 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▁▁▁   #345 of 427*    0.7%      1
+math  ▁▁▃●█▇▄█▄▂▁▁   #345 of 429*    0.7%      1
 </pre>
 
-<details><summary>math · #345 of 427 · 0.7% of its score</summary>
+<details><summary>math · #345 of 429 · 0.7% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall.
 

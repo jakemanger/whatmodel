@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 1.01B params · apache-2.0
 
-**score 12.1** ±1.3 · #711 of 729 · from 18 benchmark results across 4 sources
+**score 12.2** ±1.3 · #713 of 731 · from 18 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                                61.8%  ●····▃··█▃·▃ beats 2/8    easy · avg 88%         3.9%  typical
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1b/results_2024-05-20%2011%3A06%3A02.636901.json">MedQA (USMLE, 4 options)</a>             25.6%  ▁●··▄▁▁··▄▃█ beats 1/17   medium · avg 71%       1.5%  sharp · too hard for it
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1b/results_2024-05-20%2011%3A06%3A02.636901.json">MedMCQA</a>                              31.6%  ▂▂··▄●▂▂·▄██ beats 5/17   medium · avg 63%       1.5%  too hard for it
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 9/276  medium · avg 72%       0.8%  too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 9/276  medium · avg 72%       0.9%  too hard for it · noisy
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1b/results_2024-05-20%2011%3A06%3A02.636901.json">PubMedQA</a>                             58.2%  ▂·●▆·▄▂▄▄▂█▂ beats 1/17   medium · avg 75%       0.8%  blunt · at its level
 </pre>
 
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1b/results_2024-05-20%2011%3A06%3A02.636901.json">Open Medical-LLM Leaderboard results</a>            3    4% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 12.1
+weighted average                                   = 12.2
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.acl-long.806.pdf">BIG-Bench Hard</a>                       11.8%  ●▁▁▁▂▄▅▆█▃▃▁ beats 0/155  medium · avg 58%     45%  sharp · too hard for it · small run
-<a href="https://aclanthology.org/2023.acl-long.806.pdf">Super-NaturalInstructions English…</a>   45.6%  ▄·▄······▄▄● beats 5/5    easy · avg 77%       36%  at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.806.pdf">Super-NaturalInstructions English…</a>   45.6%  ▄·▄······▄▄● beats 5/5    easy · avg 77%       35%  at its level · small run
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         48.0%  ▂▆·▄▄●▂·▂··▂ beats 9/14   medium · avg 65%     11%  blunt · at its level
 </pre>
 

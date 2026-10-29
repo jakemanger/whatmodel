@@ -6,7 +6,7 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 31.2** ±2.7 · #867 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.2** ±2.7 · #871 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▃   #457 of 469*     97%      2
+chat &amp; writing  ▁▁●▄▆▅▇█▆▆▆▃   #460 of 472*     97%      2
 </pre>
 
-<details><summary>chat &amp; writing · #457 of 469 · 97% of its score</summary>
+<details><summary>chat &amp; writing · #460 of 472 · 97% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        5.7%  ▁▂●▃▆▆█▆▄▄▁▁ beats 12/122  hard · avg 35%          75%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        5.7%  ▁▂●▃▆▆█▆▄▄▁▁ beats 12/122  medium · avg 35%        75%  sharp · too hard for it
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   48.8%  ▂▂·●·▇▃▆█▆▄▂ beats 8/45    very easy · avg 94%     21%  sharp · at its level · noisy
 </pre>
 

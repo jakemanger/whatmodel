@@ -6,7 +6,7 @@
 
 Krutrim (Ola) · released 2025-02 · other (krutrim-community-license-agreement-version-1.0)
 
-**score 55.8** ±4.1 · #315 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.6** ±4.1 · #322 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   8% ▇
-weighted average                              = 55.8
+weighted average                              = 55.6
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

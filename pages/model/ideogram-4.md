@@ -6,7 +6,7 @@
 
 Ideogram · released 2026-06 · 9.3B params · ideogram-4-nc
 
-**score 66.4** ±2.4 · #19 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 65.9** ±2.4 · #20 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄▄█●▁▂▁▁   #16 of 126*     84%      1
+text to image  ▂▅▅▃▄▄█●▂▂▁▁   #17 of 126*     84%      1
 </pre>
 
-<details><summary>text to image · #16 of 126 · 84% of its score</summary>
+<details><summary>text to image · #17 of 126 · 84% of its score</summary>
 
-Beats [Qwen-Image-2.1](qwen-image-2-1.md), [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Uni-1.1](uni-1-1.md) here, though they rank higher overall. Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md) here, though they rank lower overall.
+Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Uni-1.1](uni-1-1.md) here, though they rank higher overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1205.1  ▂▂▃▄▇█●▂▄▂·▂ beats 58/75  avg 1027       84%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1199.9  ▁▂▃▃▆█●▂▂▂▁▁ beats 58/75  avg 1027       84%  typical
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test                   result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   911.9  ▁▁▁●▂█▂▁▁▂▁▁ beats 4/34   avg 874        13%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   911.9  ▁▁▁●▂█▂▁▁▂▁▁ beats 4/34   avg 875        13%  typical
 </pre>
 
 </details>
@@ -45,10 +45,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   84% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   13% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 66.4
+weighted average                                   = 65.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

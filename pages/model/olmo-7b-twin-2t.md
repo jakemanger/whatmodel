@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 33.2** ±6.6 · #852 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.2** ±6.5 · #856 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 64.7** ±1.4 · #146 of 729 · from 13 benchmark results across 2 sources
+**score 64.6** ±1.4 · #148 of 731 · from 13 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,50 +17,50 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      4
-coding          ▁▁▁▃▆▇█▇●▄▃▁      #104 of 466     28%      5
-chat &amp; writing  ▁▁▁▃▆▄▆█▆▆●▃      #61 of 398*    7.0%      1
-math            ▁▁▃▅█▆▄●▄▁▁▁      #105 of 427     40%      4
+coding          ▁▁▁▃▅▇█▇●▄▃▁      #106 of 468     28%      5
+chat &amp; writing  ▁▁▁▃▆▄▆█▆▇●▃      #65 of 401*    7.0%      1
+math            ▁▁▃▅█▇▄●▄▂▁▁      #106 of 429     40%      4
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
 
 <pre>
-test                                result  vs the others in its run   difficulty             counts  why
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">SWE-bench Verified (lab)</a>             50.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 41/134  hard · avg 18%              —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">BFCL V4 (December 2025 archive) (…</a>   52.9%  ▁▁▁▂▇▆▆▆●▂▄▂ beats 78/112  hard · avg 31%              —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">τ²-bench aggregate (lab)</a>             58.9%  ▁▁▁·▂▂●▃▃▅█▂ beats 10/37   medium · avg 42%            —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Terminal-Bench 2.0 (lab)</a>             21.1%  ▂●▅▅████▆▂▃▃ beats 1/36    very hard · avg 10.0%       —  not counted yet: no other model in the …
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">SWE-bench Verified (lab)</a>             50.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 42/136  hard · avg 18%            —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">BFCL V4 (December 2025 archive) (…</a>   52.9%  ▁▁▁▂▇▆▆▆●▂▄▂ beats 78/112  hard · avg 31%            —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">τ²-bench aggregate (lab)</a>             58.9%  ▁▁▁·▂▂●▃▃▅█▂ beats 10/37   medium · avg 43%          —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Terminal-Bench 2.0 (lab)</a>             21.1%  ▂●▅▅████▆▂▃▃ beats 1/36    very hard · avg 10%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #104 of 466 · 28% of its score</summary>
+<details><summary>coding · #106 of 468 · 28% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>   27.6%  █··▄▂▂██▄·▄● beats 22/22   very hard · avg 3.4%     15%  sharp
-<a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   87.0%  ▂··▃▂▃▆▅█·▃● beats 20/20   medium · avg 47%        7.7%  typical
-<a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (lab)</a>    36.4%  ▁····▃▄▄▅●▇▃ beats 19/37   hard · avg 19%          5.5%  at its level · small run
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">SWE-bench Verified (lab)</a>             50.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 41/134  hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   87.0%  ▂··▃▂▃▆▅█·▃● beats 20/20   medium · avg 47%        7.6%  typical
+<a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (lab)</a>    36.4%  ▁····▃▄▄▅●▇▃ beats 20/38   hard · avg 19%          5.5%  at its level · small run
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">SWE-bench Verified (lab)</a>             50.2%  ▁▁▁▁▁▁▂●█▆▁▁ beats 42/136  hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LiveCodeBench v6 (Aug 2024–May 20…</a>   87.2%  ▂▅▅▃█▃▂····● beats 17/17   medium · avg 45%           —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #61 of 398 · 7.0% of its score</summary>
+<details><summary>chat &amp; writing · #65 of 401 · 7.0% of its score</summary>
 
-Beats [GPT-6 Luna](gpt-6-luna.md), [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank higher overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [GPT-6 Luna](gpt-6-luna.md), [DeepSeek V4 Flash (0731)](deepseek-v4-flash.md) here, though they rank higher overall.
 
 <pre>
 test                           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%  ▁▁··▄▃▁▃█▁▁● beats 22/22  hard · avg 29%    7.0%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%  ▁▁··▄▃▁▃█▁▁● beats 22/22  hard · avg 30%    7.0%  sharp · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #105 of 427 · 40% of its score</summary>
+<details><summary>math · #106 of 429 · 40% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test                      result  vs the others in its run    difficulty        
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>            92.4%  ▁·▁▁▁▂▅▆█▇●▁ beats 122/133  medium · avg 64%     13%  sharp · maxed out
 <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>      79.3%  ▁▁·▁▁▁▄▅●▄▂▃ beats 20/42    medium · avg 43%     11%  typical
 <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>            90.9%  ▁▁▁▂▁▂▆●▆▂·▁ beats 24/50    easy · avg 66%       10%  sharp · maxed out
-<a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>   94.6%  ▁▁▁▃▁▅▅▃█●▁▄ beats 25/31    easy · avg 71%      6.4%  small run
+<a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>   94.6%  ▁▁▁▃▁▅▅▃█●▁▄ beats 25/31    easy · avg 72%      6.3%  small run
 </pre>
 
 </details>
@@ -80,12 +80,12 @@ test                      result  vs the others in its run    difficulty        
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.3%  ▂·▂▂·▂·▃▃·●▃ beats 11/14    easy · avg 80%          5.9%  maxed out
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   70.8%  ▂··▂▂·▂●▆█·▄ beats 5/15     medium · avg 63%        5.6%  typical
-<a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>                 45.3%  ▁·▁·▁▃●▅▃▁█▅ beats 10/29    hard · avg 28%          5.1%  at its level · small run
-<a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                      72.5%  ▁·▁▁▁▂▁●▃█▅▄ beats 10/36    medium · avg 53%        4.4%  small run
+<a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>                 45.3%  ▁·▁·▁▃●▅▃▂█▅ beats 10/30    hard · avg 28%          5.1%  at its level · small run
+<a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                      72.5%  ▁·▁▁▁▂▁●▃█▅▄ beats 10/36    medium · avg 54%        4.4%  small run
 <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                       12.2%  ●··········▄ beats 1/2      very hard · avg 7.2%    3.4%  blunt · small run
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond (lab)</a>                   76.1%  ▁▁▁▁▂▄▅▅●▇█▄ beats 178/315  hard · avg 38%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond (lab)</a>                   76.1%  ▁▁▁▁▂▄▅▅●▇█▄ beats 179/318  hard · avg 39%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Pro (lab)</a>                       79.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 125/188  medium · avg 54%           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam (lab)</a>           17.7%  ▁▁▁▄▅▆●██▆▁▃ beats 41/108   very hard · avg 3.7%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam (lab)</a>           17.7%  ▁▁▁▄▅▆●██▆▁▃ beats 42/109   very hard · avg 3.7%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Redux (lab)</a>                     86.3%  ▁▁▃▁▂▃▄●▇▅█▄ beats 25/63    easy · avg 76%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LongBench v2 (lab)</a>                   40.3%  ▂·▁·▂▂▁●▄▁█▄ beats 9/29     very hard · avg 32%        —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">IFBench prompt-level (lab)</a>           82.9%  █▄▄··▄·▄···● beats 6/6                                 —  not counted yet: no other model in the …
@@ -100,9 +100,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                         results  share of the score
 <a name="report-2603.19220v2"></a><a href="https://arxiv.org/html/2603.19220v2">NVIDIA (lab)</a>                        11   88% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   11% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   12% ▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 64.7
+weighted average                        = 64.6
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

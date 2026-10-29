@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 24.6** ±0.7 · #686 of 729 · from 44 benchmark results across 12 sources
+**score 24.6** ±0.7 · #689 of 731 · from 44 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others            rank  counts  tests
-coding  ▁▁●▃▆▇█▇▅▄▃▁     #455 of 466*     25%      3
+coding  ▁▁●▃▅▇█▇▅▄▃▁     #457 of 468*     25%      3
 math                   not ranked yet       —      1
 </pre>
 
-<details><summary>coding · #455 of 466 · 25% of its score</summary>
+<details><summary>coding · #457 of 468 · 25% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), last-wo…</a>   68.2%  ▁··▂▁▁▁▂●█▅▃ beats 11/26   very easy · avg 86%    3.3%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   49.8%  ▂·▄·▂█▄▄●▄▂▆ beats 12/21   easy · avg 74%         3.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">OpenBookQA</a>                           29.0%  █·▁▁▃·▁●▅▇▃▄ beats 12/26   hard · avg 49%         2.7%  too hard for it · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-j-6b/results_2023-12-18%2022%3A11%3A14.689150.json">TriviaQA</a>                             39.3%  ▁··▁█▃▃▁●▅▄█ beats 15/28   easy · avg 67%         2.5%  several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-j-6b/results_2023-12-18%2022%3A11%3A14.689150.json">TriviaQA</a>                             39.3%  ▁··▁█▃▃▁●▅▄█ beats 15/28   easy · avg 68%         2.5%  several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-j-6b/results_2024-01-03%2010%3A52%3A57.129715.json">Natural Questions (closed book)</a>       9.2%  ▁·▁·▁▂▁●·▅▂█ beats 8/28    medium · avg 48%       2.5%  typical
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness) (lab)</a>               20.9%  ······●····· beats 5/5     very hard · avg 25%    2.1%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   53.0%  ▃···▅·●▅··▃█ beats 3/9     very easy · avg 85%    1.7%  at its level
@@ -75,7 +75,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-j-6b/results_2024-03-03%2014%3A34%3A24.699661.json">HaluEval QA hallucination detecti…</a>   51.4%  █▁▁·●▁·▁▁▁▁▁ beats 18/27   hard · avg 66%         0.1%  too hard for it · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 2/4     easy · avg 75%         0.1%  blunt · at its level
 <a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA generation, % true (hu…</a>   26.8%  ●█····█·██·█ beats 0/5     medium · avg 42%       0.0%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.120.pdf">CommonsenseQA</a>                        34.5%  █·····●▂▃▂▄▄ beats 15/38   easy · avg 87%            —  not counted yet: no other model in the …
+<a href="https://aclanthology.org/2023.emnlp-main.120.pdf">CommonsenseQA</a>                        34.5%  █·····●▂▃▂▄▄ beats 15/38   easy · avg 88%            —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2023.emnlp-main.120.pdf">SVAMP</a>                                20.7%  █▆▆▅▂▅●▅▂▂▅▃ beats 20/30   easy · avg 82%            —  not counted yet: no other model in the …
 <a href="https://aclanthology.org/2023.emnlp-main.120.pdf">StrategyQA</a>                           47.2%  ●····▂▂▁▂▂▂▂ beats 0/25    medium · avg 70%          —  not counted yet: no other model in the …
 </pre>

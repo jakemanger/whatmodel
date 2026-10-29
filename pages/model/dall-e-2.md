@@ -16,10 +16,10 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂●▇▆▅█▇▂▃▁▁   #139 of 157*     34%      2
+text to image  ▁▂●█▇▆██▂▃▁▁   #140 of 157*     34%      2
 </pre>
 
-<details><summary>text to image · #139 of 157 · 34% of its score</summary>
+<details><summary>text to image · #140 of 157 · 34% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  390.0000 wins  ▄·········█● beats 3/3    avg 526.538 wins        43%  sharp
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  390.0000 wins  ▄·········█● beats 3/3    avg 526.573 wins        43%  sharp
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>          97.1%  ▁····█▁·▁··● beats 9/9    very easy · avg 92%     18%  sharp · noisy
 </pre>
 

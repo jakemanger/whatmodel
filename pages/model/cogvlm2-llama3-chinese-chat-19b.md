@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 47.4** ±6.6 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.3** ±6.5 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁▂▃●▃▅▃▇██▄   #153 of 189     81%      3
+vision &amp; documents  ▁▁▂▃●▃▅▄▆██▄   #153 of 189     81%      3
 </pre>
 
 <details><summary>vision &amp; documents · #153 of 189 · 81% of its score</summary>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                       3   81% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            19% ▇▇
-weighted average                        = 47.4
+weighted average                        = 47.3
 </pre>
 
 ## How to run it

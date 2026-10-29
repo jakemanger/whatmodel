@@ -6,7 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-09 · 8B params · apache-2.0
 
-**score 32.4** ±4.2 · #127 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.4** ±4.1 · #127 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁●·▃▂▂█▃▅▅▂▁   #60 of 62*     83%      1
+image to image / edit…  ▁●·▃▂▃█▅▄▅▂▁   #60 of 62*     83%      1
 </pre>
 
 <details><summary>image to image / editing · #60 of 62 · 83% of its score</summary>
@@ -32,7 +32,7 @@ test                        result  vs the others in its run  difficulty      co
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   34.0%  ▂···▂·▂█●▅·▂ beats 10/15  hard · avg 31%    9.4%  typical
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   34.0%  ▂···▂·▂█●▅·▂ beats 10/15  hard · avg 31%    9.3%  typical
 </pre>
 
 </details>

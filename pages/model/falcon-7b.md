@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 30.7** ±0.7 · #655 of 729 · from 37 benchmark results across 10 sources
+**score 30.7** ±0.7 · #657 of 731 · from 37 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.6%  ▅····▃▅·●█·█ beats 7/13    medium · avg 52%       2.1%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   30.4%  ▃▅▃··●▃·█▃▃▅ beats 5/13    medium · avg 61%       1.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">LAMBADA (OpenAI version), last-wo…</a>   74.6%  ▁··▂▁▁▁▂▆█▅● beats 24/26   very easy · avg 86%    1.2%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.9%  ▃▁▁▁●▁▁▁▂█▅▁ beats 46/276  medium · avg 72%       0.8%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.9%  ▃▁▁▁●▁▁▁▂█▅▁ beats 46/276  medium · avg 72%       0.9%  noisy
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2024-02-14%2018%3A50%3A25.663061.json">TriviaQA</a>                             58.7%  ▁··▁█▃▃▁▄▅●█ beats 22/28   easy · avg 73%         0.6%  at its level · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 6/14    hard · avg 66%         0.5%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 53.8%  ●·▃·▃··█▃··▃ beats 1/8     easy · avg 92%         0.3%  at its level · noisy

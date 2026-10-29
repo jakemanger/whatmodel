@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 44.7** ±1.1 · #481 of 729 · from 6 benchmark results across 3 sources
+**score 44.7** ±1.0 · #482 of 731 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▅▄▃▁   #349 of 466     87%      5
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #350 of 468     87%      5
 </pre>
 
-<details><summary>coding · #349 of 466 · 87% of its score</summary>
+<details><summary>coding · #350 of 468 · 87% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                      53.0%  █▃▃▅·▃●·▃··▃ beats 8/11   easy · avg 72%       28%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   52.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 31/35  medium · avg 61%     19%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   52.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 31/35  medium · avg 62%     19%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   28.2%  ▄▇█▃▄▇●▁▇▃·▁ beats 24/35  medium · avg 46%     13%  at its level
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.4%  ▃▃▃█··▃▅··●▃ beats 10/11  easy · avg 71%       13%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   32.8%  ▁·▁▁▄██▄█●▅▅ beats 27/35  medium · avg 51%     13%  sharp · at its level

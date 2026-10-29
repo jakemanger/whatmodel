@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 70.55B params · cc-by-nc-4.0
 
-**score 66.2** ±3.7 · #131 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.1** ±3.7 · #134 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▅●▄▄▄▁▁   #147 of 344*     94%      2
+agent tasks  ▁▁▃▆█▅●▄▃▃▂▁   #148 of 347*     94%      2
 </pre>
 
-<details><summary>agent tasks · #147 of 344 · 94% of its score</summary>
+<details><summary>agent tasks · #148 of 347 · 94% of its score</summary>
 
 Beats [watt-tool-70B](watt-tool-70b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [xLAM-2-32b-fc-r](xlam-2-32b-fc-r.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 66.2
+weighted average                                   = 66.1
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

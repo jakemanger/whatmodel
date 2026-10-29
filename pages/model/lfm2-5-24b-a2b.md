@@ -4,27 +4,96 @@
 
 # LFM2.5 24B-A2B
 
-Liquid AI · released 2026-10
+Liquid AI · released 2026-10 · 24B params (2.45B active) · lfm1.0
 
-[Model and usage documentation](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)
+**score 65.0** ±15.0 · #1 of 2 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
-[Catalogue source](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md)
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond%40first-party-liquid-scores&score=set) comparison set only.
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## What it's good at
+
+<sub>● marks LFM2.5 24B-A2B among every model on that task or test, worst to best.</sub>
 
 <pre>
-test                               result  reported by  source
-BFCL V4 (December 2025 archive)     65.0%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-τ³-bench Banking                     8.0%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-WebArena-Verified                   26.8%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-GPQA Diamond                        74.4%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-Humanity's Last Exam                 7.4%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-IFEval (aggregation unspecified)    96.8%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-IFBench (aggregation unspecified)   74.7%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-MATH-500                            96.0%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-SWE-bench Verified                  51.0%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
-SciCode (level unspecified)         32.7%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark…</a>
+task            vs the others            rank  counts  tests
+agent tasks     █··········●         #1 of 2*     31%      4
+coding          █··········●         #1 of 2*     10%      2
+chat &amp; writing  █··········●         #1 of 2*    8.9%      1
+math                           not ranked yet       —      1
 </pre>
+
+<details><summary>agent tasks · #1 of 2 · 31% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">WebArena-Verified (lab)</a>              26.8%  ●··█···█·█·█ beats 0/4     hard · avg 32%       27%  sharp · at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SWE-bench Verified (lab)</a>             51.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 43/136  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">BFCL V4 (December 2025 archive) (…</a>   65.0%  ▁▁▁▂▇▆▆▆█▂●▂ beats 97/112                         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">τ³-bench Banking (lab)</a>                8.0%  ▂▂·▅█▂●▃▃▆▂▅ beats 11/24                          —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #1 of 2 · 10% of its score</summary>
+
+<pre>
+test                               result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SciCode (level unspecified) (lab)</a>   32.7%  ▁····▃▄▄●█▇▃ beats 15/38   hard · avg 30%      5.8%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SWE-bench Verified (lab)</a>            51.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 43/136  medium · avg 47%    4.1%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #1 of 2 · 8.9% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">IFEval (aggregation unspecified) …</a>   96.8%  ▁▂▄▂▂▄▆█▇▄▂● beats 143/143  very easy · avg 97%    8.9%  maxed out · small run
+</pre>
+
+</details>
+
+<details><summary>math · 0.0% of its score</summary>
+
+<pre>
+test            result  vs the others in its run  counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">MATH-500 (lab)</a>   96.0%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 60/85       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Humanity's Last Exam (lab)</a>            7.4%  ▁▁▁●▅▆▆██▆▁▃ beats 10/109   very hard · avg 7.0%    8.9%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">IFBench (aggregation unspecified)…</a>   74.7%  ▃▇▂▄▅▅▂▄▄▇●▇ beats 64/84    easy · avg 74%          8.0%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">GPQA Diamond (lab)</a>                   74.4%  ▁▁▁▁▂▄▅▅●▇█▄ beats 171/318  medium · avg 69%        0.8%  blunt · at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="first-party-liquid-scores"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Liquid AI own-model benchmark facts (la…</a>        7   64% ▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       36% ▇▇▇▇
+weighted average                                   = 65.0
+</pre>
+
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test                            score  why
+Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">BFCL V4 (December 2025 archiv…</a>  65.0%  too few models have it yet
+Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">τ³-bench Banking</a>                 8.0%  too few models have it yet
+Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">MATH-500</a>                        96.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -80,4 +149,4 @@ SciCode (level unspecified)         32.7%  lab          <a href="https://hugging
 
 Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/lfm2-5-24b-a2b)
+[interactive version](https://whatmodel.sh/model/lfm2-5-24b-a2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

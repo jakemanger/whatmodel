@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▆██▅█▄▁▁▁   #484 of 526    6.6%      2
+math  ▁▁●▆██▅█▄▁▁▁   #485 of 528    6.6%      2
 </pre>
 
-<details><summary>math · #484 of 526 · 6.6% of its score</summary>
+<details><summary>math · #485 of 528 · 6.6% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty        counts  why
-<a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ▂▂▂▂●▄▅▇██▆▄ beats 34/206  medium · avg 61%    4.4%  sharp · small run · several runs
+<a href="https://aclanthology.org/2023.resourceful-1.13.pdf">GSM8K</a>    0.0%  ▂▂▂▂●▄▅▇██▆▄ beats 34/206  medium · avg 62%    4.4%  sharp · small run · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MGSM</a>     5.7%  ▆·▂·▄●▂▂▂█▄▆ beats 6/18    medium · avg 48%    2.2%  sharp · too hard for it
 </pre>
 
@@ -37,15 +37,15 @@ test   result  vs the others in its run   difficulty        counts  why
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        43.5%  ▄····▄···█▄● beats 5/5     easy · avg 78%          14%  sharp · several runs
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                           72.0%  ▄·▄·▄▄▄··█·● beats 7/7     easy · avg 87%          10%  at its level · several runs
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            78.0%  ▄·█·█··▄▄··● beats 7/7     easy · avg 82%         8.2%  at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            78.0%  ▄·█·█··▄▄··● beats 7/7     easy · avg 83%         8.2%  at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        58.2%  █·····▂▂▃●▄▄ beats 26/38   very easy · avg 93%    8.0%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 39.7%  ▁···▁··●▁▅▅█ beats 3/18    easy · avg 74%         7.2%  several runs
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           33.6%  ▅·······█··● beats 5/5     hard · avg 49%         4.8%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.927.pdf">DMath (English) few-shot CoT accu…</a>   17.1%  █·●······▄·▄ beats 2/4     medium · avg 64%       2.9%  typical
-<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5     easy · avg 67%         2.8%  at its level
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       33.6%  ▂▂▂●·▅·▃▂█▃▃ beats 3/18    medium · avg 60%       2.5%  sharp
-<a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     22.7%  ······●····· beats 0/5     very hard · avg 25%    2.4%  too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5     easy · avg 68%         2.8%  at its level
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       33.6%  ▂▂▂●·▅·▃▂█▃▃ beats 3/18    medium · avg 60%       2.4%  sharp
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             76.2%  ▄···▄··█·▄·● beats 5/5     easy · avg 87%         2.4%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness)</a>                     22.7%  ······●····· beats 0/5     very hard · avg 25%    2.4%  too hard for it
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   20.2%  ●········▄·█ beats 0/3     easy · avg 73%         2.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">BoolQ</a>                                62.0%  ▁····▁▂●▆▅▆▄ beats 24/103  medium · avg 78%       2.1%  at its level
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   75.0%  █·▄··█··█··● beats 7/7     very easy · avg 88%    2.1%  blunt · several runs
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   21.6%  ▂··▂·▂▄●·███ beats 5/18    medium · avg 61%       1.9%  typical
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 80.0%  █··▃··▃▃·▃·● beats 7/7     easy · avg 88%         1.7%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">COPA</a>                                 80.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 30/67   easy · avg 92%         1.6%  at its level
-<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>    6.0%  ●······█··██ beats 0/3     medium · avg 46%       1.2%  typical
+<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>    6.0%  ●······█··██ beats 0/3     medium · avg 47%       1.2%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.758.pdf">Natural Questions (closed book)</a>       0.0%  ●▁▁▁▂▄▄▃▅█▅▁ beats 0/68    very hard · avg 13%    1.2%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted)</a>              36.9%  ▃······▃█··● beats 5/5     hard · avg 43%         1.1%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   70.8%  ▃·●·····▃▃▃█ beats 1/7     easy · avg 87%         1.1%  blunt · at its level
@@ -65,7 +65,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.06745v1">PROST (harness, micro accuracy)</a>      26.7%  ▃······●···▅ beats 1/5     very hard · avg 35%    0.8%  blunt · too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                42.6%  ▄····▄█▄···● beats 5/5     medium · avg 56%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-acl.551.pdf">SelfAware unanswerable-question d…</a>   45.7%  ●▄▄▄·······▄ beats 0/5     medium · avg 63%       0.8%  blunt · at its level
-<a href="https://aclanthology.org/2023.acl-long.754.pdf">Super-NaturalInstructions English…</a>    6.8%  ●·▄······▄▄█ beats 0/5     medium · avg 63%       0.7%  at its level · noisy · small run
+<a href="https://aclanthology.org/2023.acl-long.754.pdf">Super-NaturalInstructions English…</a>    6.8%  ●·▄······▄▄█ beats 0/5     medium · avg 63%       0.6%  at its level · noisy · small run
 <a href="https://arxiv.org/html/2204.06745v1">HEAD-QA (English, harness)</a>           35.6%  █··█····█··● beats 3/3     medium · avg 58%       0.6%  blunt · at its level
 <a href="https://arxiv.org/html/2204.06745v1">SuperGLUE WSC (prompted)</a>             54.8%  █··········● beats 4/5     hard · avg 62%         0.6%  blunt
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         38.0%  ▂▆·●▄█▂·▂··▂ beats 5/14    medium · avg 65%       0.3%  blunt · at its level

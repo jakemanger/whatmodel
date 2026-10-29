@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▂▅●█▇▅▄▃▁   #374 of 535     51%      2
-chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #351 of 469     30%      5
-math            ▁▁▃●██▅█▄▁▁▁   #449 of 526    9.0%      3
+coding          ▁▁▁▂▄●█▇▅▄▃▁   #376 of 537     51%      2
+chat &amp; writing  ▁▁▁▃▅●▇█▇▇▇▃   #354 of 472     30%      5
+math            ▁▁▃●██▅█▄▁▁▁   #451 of 528    9.0%      3
 </pre>
 
-<details><summary>coding · #374 of 535 · 51% of its score</summary>
+<details><summary>coding · #376 of 537 · 51% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
 
@@ -33,22 +33,22 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #351 of 469 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #354 of 472 · 30% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             28.2%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 75/122  hard · avg 35%               14%  sharp · at its level
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.0%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 22/60   medium · avg 46%            9.0%  sharp · at its level
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             28.2%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 75/122  medium · avg 35%             14%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.0%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 22/60   medium · avg 47%            9.0%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1164.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 73/95   avg 1187                    3.6%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.0600 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂●▄▆ beats 22/28   avg 8.525 MT-Bench scor…    2.8%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.0600 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂●▄▆ beats 22/28   avg 8.536 MT-Bench scor…    2.8%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         91.4%  ▂▂·▆·▇▃▆●▆▄▂ beats 33/45   very easy · avg 94%         0.4%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #449 of 526 · 9.0% of its score</summary>
+<details><summary>math · #451 of 528 · 9.0% of its score</summary>
 
 Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma
 test                      result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 10/92    hard · avg 28%          5.1%  sharp
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">GSM8K (lab)</a>                88.0%  ▂▂▂▂▃▄▅▇██●▄ beats 171/206  very easy · avg 90%     3.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 20/195   very hard · avg 7.0%    0.5%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 20/197   very hard · avg 7.1%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.7%  ▁▁▁▁▂●▆▄▅▇█▄ beats 27/209   hard · avg 38%         3.0%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.7%  ▁▁▁▁▂●▆▄▅▇█▅ beats 27/211   hard · avg 39%         3.0%  sharp
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (lab)</a>                  91.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 138/140  very easy · avg 90%    2.7%  sharp · small run
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           78.5%  ▁▁▁▁▁▂▂▅██●▄ beats 163/214  easy · avg 81%         2.5%  at its level · small run
 <a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       87.5%  ▁▁▂▂▄▄▃▆▅█▅● beats 80/80    easy · avg 85%         1.2%  small run

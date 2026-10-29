@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄●▃▁▂▁▁   #41 of 126     89%      3
-image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁   #38 of 62*     25%      1
+text to image           ▂▅▅▃▄▄●▃▂▂▁▁   #41 of 126     89%      3
+image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #38 of 62*     26%      1
 </pre>
 
 <details><summary>text to image · #41 of 126 · 89% of its score</summary>
@@ -26,20 +26,20 @@ Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1129.0  ▂▂▃▄▇●▅▂▄▂·▂ beats 36/75  avg 1027             58%  typical
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.0%  ▂▃··▂··▃●··▂ beats 7/11   hard · avg 18%       25%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1129.0  ▁▂▃▃▆●▃▂▂▂▁▁ beats 36/75  avg 1027             57%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.0%  ▂▃··▂··▃●··▂ beats 7/11   hard · avg 17%       26%  sharp · at its level
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>      50.3%  █●▅·▅▅█·█··▃ beats 3/17   medium · avg 46%    6.3%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #38 of 62 · 25% of its score</summary>
+<details><summary>image to image / editing · #38 of 62 · 26% of its score</summary>
 
 Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [LongCat-Image-Edit](longcat-image-edit.md), [Qwen-Image-Edit-2511](qwen-image-edit-2511.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.0%  ▂▃··▂··▃●··▂ beats 7/11   hard · avg 18%     25%  sharp · at its level
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   31.0%  ▂▃··▂··▃●··▂ beats 7/11   hard · avg 17%     26%  sharp · at its level
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   934.7  ▁▁▁●▂█▂▁▁▂▁▁ beats 8/34   avg 874       9.0%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   934.7  ▁▁▁●▂█▂▁▁▂▁▁ beats 8/34   avg 875       9.0%  typical
 </pre>
 
 </details>
@@ -59,8 +59,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   58% ▇▇▇▇▇▇▇
-<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   25% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   57% ▇▇▇▇▇▇▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   26% ▇▇▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    9% ▇
 <a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    6% ▇
 prior: pull toward the middle                        2% ▇

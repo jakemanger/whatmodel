@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-08 · other
 
-**score 30.4** ±1.0 · #656 of 729 · from 11 benchmark results across 2 sources
+**score 30.4** ±1.0 · #658 of 731 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,12 +24,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Challenge</a>                        43.2%  ▁·▁··▁▁▇▂●▆▃ beats 18/26   easy · avg 82%          49%  sharp
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">WinoGrande</a>                           67.6%  ▁····▁··▁▂●▄ beats 18/26   easy · avg 86%          11%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">BoolQ</a>                                73.1%  ▂▃▂▅▆▂▅●█▂▂▂ beats 17/26   easy · avg 88%         8.4%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">BoolQ</a>                                73.1%  ▂▃▂▅▆▂▅●█▂▂▂ beats 17/26   easy · avg 88%         8.3%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">HellaSwag</a>                            72.3%  ▃···▁▇▅●▇▃▁▁ beats 15/26   very easy · avg 91%    5.9%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Easy</a>                             72.8%  ▁▁·▁▁▄▅▄█●▁▃ beats 21/26   easy · avg 85%         5.6%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">SciQ</a>                                 94.6%  ▁·▁·▁·▃▅▃█●▁ beats 24/26   very easy · avg 97%    4.5%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">PIQA</a>                                 76.2%  ▁·▁··▁▁▃●▅█▂ beats 10/26   easy · avg 87%         4.1%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">OpenBookQA</a>                           30.4%  █·▁▁▃·▁▃●▇▃▄ beats 16/26   hard · avg 49%         4.0%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">OpenBookQA</a>                           30.4%  █·▁▁▃·▁▃●▇▃▄ beats 16/26   hard · avg 49%         3.9%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">LAMBADA (OpenAI version), last-wo…</a>   71.0%  ▁··▂▁▁▁▂▆●▅▃ beats 17/26   very easy · avg 86%    2.5%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">Social IQA</a>                           41.8%  ▁···▁▃●▁▁▁·▁ beats 8/26    hard · avg 56%         2.4%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   46.8%  ▃▁▁▁▁▁●▁▂█▅▁ beats 61/276  medium · avg 72%       1.8%  noisy

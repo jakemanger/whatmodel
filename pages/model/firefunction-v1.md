@@ -6,7 +6,7 @@
 
 Fireworks AI · released 2024-02 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.8** ±6.1 · #696 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.8** ±6.0 · #698 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▅▅▄▄▄▁▁   #323 of 344*     84%      1
+agent tasks  ▁▁●▆█▅▄▄▃▃▂▁   #327 of 347*     84%      1
 </pre>
 
-<details><summary>agent tasks · #323 of 344 · 84% of its score</summary>
+<details><summary>agent tasks · #327 of 347 · 84% of its score</summary>
 
-Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why

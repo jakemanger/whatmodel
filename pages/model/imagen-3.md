@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▁▂▇▇▆●█▇▂▃▁▁   #75 of 157     98%      3
+text to image  ▁▂██▇●██▂▃▁▁   #75 of 157     98%      3
 </pre>
 
 <details><summary>text to image · #75 of 157 · 98% of its score</summary>
@@ -25,7 +25,7 @@ Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank lo
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.0  ▂▂▃●▇█▅▂▄▂·▂ beats 17/75  avg 1027             66%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.0  ▁▂▃●▆█▃▂▂▂▁▁ beats 17/75  avg 1027             66%  typical
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              70.7%  ██·▄·●·█···▄ beats 5/8    easy · avg 71%       20%  at its level
 <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   47.4%  █··█●▄·▄▄·▄▄ beats 4/9    medium · avg 51%     12%  at its level
 </pre>

@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #493 of 535     15%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #282 of 526     15%      2
+coding  ▁▁▁●▄▆█▇▅▄▃▁   #495 of 537     15%      2
+math    ▁▁▃▆█●▅█▄▁▁▁   #284 of 528     15%      2
 </pre>
 
-<details><summary>coding · #493 of 535 · 15% of its score</summary>
+<details><summary>coding · #495 of 537 · 15% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #282 of 526 · 15% of its score</summary>
+<details><summary>math · #284 of 528 · 15% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            80.7%  ▅█······▃▃·● beats 8/8     very easy · avg 92%    4.1%  several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   65.1%  ▂·▄·▂█▄▄█▄▂● beats 21/21   easy · avg 74%         3.3%  blunt · at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   35.3%  ▅····▃▅·██·● beats 12/13   medium · avg 52%       2.8%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   35.0%  ▂▁▁▁▂▄▄▃▅█●▁ beats 67/68   medium · avg 52%       2.1%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   35.0%  ▂▁▁▁▂▄▄▃▅█●▁ beats 67/68   medium · avg 53%       2.1%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                     60.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 92/107  easy · avg 76%         2.0%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">TriviaQA (lab)</a>                       72.6%  ▁▁▂▂▄▄▃▆▅█●▂ beats 72/80   easy · avg 84%         1.8%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          85.3%  ▁····▁▂█▆▅▆● beats 93/103  easy · avg 90%         1.5%  at its level

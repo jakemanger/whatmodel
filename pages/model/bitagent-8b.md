@@ -6,7 +6,7 @@
 
 BitAgent (Bittensor) · released 2025-02 · 8.03B params · apache-2.0
 
-**score 62.1** ±6.2 · #199 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.0** ±6.2 · #202 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▄▁▁   #191 of 344*     83%      1
+agent tasks  ▁▁▃▆█●▄▄▃▃▂▁   #192 of 347*     83%      1
 </pre>
 
-<details><summary>agent tasks · #191 of 344 · 83% of its score</summary>
+<details><summary>agent tasks · #192 of 347 · 83% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       17% ▇▇
-weighted average                                   = 62.1
+weighted average                                   = 62.0
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

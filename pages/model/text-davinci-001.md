@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #464 of 469*     18%      2
-math            ▁▁▃●██▅█▄▁▁▁   #416 of 526*     10%      1
+chat &amp; writing  ●▁▁▃▅▄▇█▇▇▇▃   #467 of 472*     18%      2
+math            ▁▁▃●██▅█▄▁▁▁   #418 of 528*     10%      1
 </pre>
 
-<details><summary>chat &amp; writing · #464 of 469 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #467 of 472 · 18% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.0%  ▁▂▂●▆▆█▆▄▄▁▁ beats 19/122  hard · avg 35%          15%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.0%  ▁▂▂●▆▆█▆▄▄▁▁ beats 19/122  medium · avg 35%        15%  sharp · too hard for it
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   15.2%  ●▂·▆·▇▃▆█▆▄▂ beats 0/45    very easy · avg 94%    3.0%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #416 of 526 · 10% of its score</summary>
+<details><summary>math · #418 of 528 · 10% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2211.10435v2">GSM8K</a>   26.5%  ▂▂▂▂▃●▅▇██▆▄ beats 55/206  easy · avg 75%     10%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2211.10435v2">GSM8K</a>   26.5%  ▂▂▂▂▃●▅▇██▆▄ beats 55/206  easy · avg 76%     10%  sharp · at its level · small run
 </pre>
 
 </details>

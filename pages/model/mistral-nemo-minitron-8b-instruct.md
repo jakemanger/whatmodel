@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 8.41B params · nvidia-open-model-license
 
-**score 50.8** ±7.7 · #451 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.8** ±7.7 · #455 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

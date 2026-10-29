@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
-**score 37.3** ±0.5 · #602 of 729 · from 59 benchmark results across 10 sources
+**score 37.3** ±0.5 · #603 of 731 · from 59 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▇▅▄▃▁   #430 of 466     40%      4
-math    ▁▁▃▅●▆▄█▄▁▁▁   #278 of 427    8.8%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #432 of 468     40%      4
+math    ▁▁▃▅●▇▄█▄▂▁▁   #277 of 429    8.7%      2
 </pre>
 
-<details><summary>coding · #430 of 466 · 40% of its score</summary>
+<details><summary>coding · #432 of 468 · 40% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -34,9 +34,9 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #278 of 427 · 8.8% of its score</summary>
+<details><summary>math · #277 of 429 · 8.7% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">ARC Challenge</a>                        54.4%  ▁·▁··▁▁▇▂█▆● beats 26/26   easy · avg 82%          17%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                           62.5%  ▄····▄▄·●··█ beats 3/5     easy · avg 82%         4.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">WinoGrande</a>                           74.0%  ▁····▁··▁▂█● beats 26/26   easy · avg 86%         4.2%  at its level · several runs
-<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       41.1%  ▁▁▁▁▂▄▅●█▃▃▁ beats 78/155  medium · avg 64%       4.1%  sharp · several runs
+<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       41.1%  ▁▁▁▁▂▄▅●█▃▃▁ beats 78/155  medium · avg 65%       4.1%  sharp · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Natural Questions (closed book)</a>      30.1%  ▁·▁·▁▂▁▂·▅▂● beats 26/28   medium · avg 48%       3.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">HellaSwag</a>                            81.1%  ▃···▁▇▅█▇●▁▁ beats 24/26   very easy · avg 91%    2.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">BoolQ</a>                                83.6%  ▂▃▂▅▆▂▅▆█▂▂● beats 26/26   easy · avg 88%         2.0%  at its level · several runs
@@ -62,7 +62,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA</a>                        66.3%  █·····▂▂▃▂●▄ beats 30/38   very easy · avg 94%    1.6%  sharp · at its level · small run
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">PIQA</a>                                 80.8%  ▁·▁··▁▁▃█▅█● beats 26/26   easy · avg 87%         1.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">OpenBookQA</a>                           32.8%  █·▁▁▃·▁▃▅▇●▄ beats 22/26   hard · avg 49%         1.2%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 52%       1.2%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 52%       1.1%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">Social IQA</a>                           42.7%  ▁···▁▃●▁▁▁·▁ beats 19/26   hard · avg 56%         0.8%  blunt · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.8%  ▃▅▃··▅▃·●▃▃▅ beats 7/13    medium · avg 61%       0.6%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">SciQ</a>                                 95.9%  ▁·▁·▁·▃▅▃█▄● beats 26/26   very easy · avg 97%    0.6%  blunt · maxed out

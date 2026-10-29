@@ -16,15 +16,15 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄█▃●▂▁▁   #13 of 126*     62%      1
-image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #19 of 62*     23%      1
+text to image           ▂▅▅▃▄▄█▃●▂▁▁   #13 of 126*     61%      1
+image to image / edit…  ▁▁·▃▂▃█▅●▅▂▁    #19 of 62*     23%      1
 </pre>
 
-<details><summary>text to image · #13 of 126 · 62% of its score</summary>
+<details><summary>text to image · #13 of 126 · 61% of its score</summary>
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1250.2  ▂▂▃▄▇█▅▂●▂·▂ beats 62/75  avg 1027       62%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1249.4  ▁▂▃▃▆█▃●▂▂▁▁ beats 62/75  avg 1027       61%  typical
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Uni-1.1 Max](uni-1-
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1312.7  ▂▁▁▃▆█▄●▄█▁▂ beats 33/53  avg 1153       23%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1312.9  ▂▁▁▃▆█▄●▇▄▂▂ beats 33/53  avg 1153       23%  typical
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">Verifiable Visual Rewards Transfer from…</a>        1   14% ▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 73.0

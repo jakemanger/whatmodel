@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-07
 
-**score 22.7** ±3.7 · #916 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 22.7** ±3.7 · #920 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ●▁▁▄▆▅▆█▆▆▆▃   #467 of 469*     94%      2
+chat &amp; writing  ●▁▁▄▆▅▇█▆▆▆▃   #470 of 472*     94%      2
 </pre>
 
-<details><summary>chat &amp; writing · #467 of 469 · 94% of its score</summary>
+<details><summary>chat &amp; writing · #470 of 472 · 94% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        2.1%  ●▂▂▃▆▆█▆▄▄▁▁ beats 0/122  hard · avg 35%          58%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        2.1%  ●▂▂▃▆▆█▆▄▄▁▁ beats 0/122  medium · avg 35%        58%  sharp · too hard for it
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   21.8%  ●▂·▆·▇▃▆█▆▄▂ beats 1/45   very easy · avg 94%     36%  sharp · at its level · noisy
 </pre>
 

@@ -6,7 +6,7 @@
 
 EPFL LLM · released 2023-11 · 68.98B params · llama2
 
-**score 39.3** ±3.8 · #766 of 957 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.3** ±3.8 · #768 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   15.7%  ▁▁▁●▁▂▂▃▄▆█▃ beats 4/97   hard · avg 31%       68%  blunt
-<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   56.5%  ▂···▂▂·▃▂▃●█ beats 8/17   medium · avg 52%     26%  typical
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   56.5%  ▂···▂▂·▃▂▃●█ beats 8/17   medium · avg 53%     26%  typical
 </pre>
 
 </details>

@@ -23,7 +23,7 @@ Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher over
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1175.2  ▂▂▃●█▆·▆▅▁▂▇ beats 11/41  avg 1147           95%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1175.2  ▂▂▃●█▆·▆▅▁▂▇ beats 11/41  avg 1147           95%  typical
 <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   86.5%  ▂··▂··█●▂··▆ beats 7/11   easy · avg 84%    3.1%  blunt
 </pre>
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    3% ▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 52.4

@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 45.5** ±2.3 · #459 of 729 · from 4 benchmark results across 2 sources
+**score 45.5** ±2.3 · #461 of 731 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ math  █··········●   #1 of 2     62%      3
 
 <pre>
 test                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>      26.7%  ▁▁▁▂▁●▁▅███▃ beats 14/85  medium · avg 38%        27%  sharp · at its level · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>      26.7%  ▁▁▁▂▁●▁▅███▃ beats 14/85  medium · avg 39%        27%  sharp · at its level · small run
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   38.6%  ▁·▃▁▁▂▁●▄▁▃▃ beats 16/27  medium · avg 55%        18%  at its level · small run
 <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       79.2%  ▁▃▂▃●▇▅▇█▄▂▁ beats 21/85  very easy · avg 86%     17%  small run
 </pre>
@@ -34,7 +34,7 @@ test                result  vs the others in its run  difficulty           count
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   33.9%  ▁▁▁▁●▄▆▄▅▇█▄ beats 25/209  hard · avg 38%     35%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   33.9%  ▁▁▁▁●▄▆▄▅▇█▅ beats 25/211  hard · avg 39%     35%  sharp
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Reka AI · released 2025-05 · 20.91B params · apache-2.0
 
-**score 52.2** ±5.3 · #414 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.1** ±5.3 · #418 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.1%  ▃·▁▁▂▁▂▅●▇▄▁ beats 49/100   medium · avg 66%     55%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.1%  ▃·▁▁▂▁▂▅●▇▄▁ beats 49/100   medium · avg 67%     55%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   87.4%  ▁▁▁▁▁▁▁▂▄█●▃ beats 107/146  easy · avg 82%       32%  noisy
 </pre>
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   87% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            13% ▇▇
-weighted average                        = 52.2
+weighted average                        = 52.1
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

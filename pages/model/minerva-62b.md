@@ -6,7 +6,7 @@
 
 Google · released 2022-06 · 62.5B params · proprietary
 
-**score 46.4** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 46.3** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▆█●▅█▄▁▁▁   #280 of 526*     65%      2
+math  ▁▁▃▆█●▅█▄▁▁▁   #280 of 528*     65%      2
 </pre>
 
-<details><summary>math · #280 of 526 · 65% of its score</summary>
+<details><summary>math · #280 of 528 · 65% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          52.4%  ▃····▃··▃··● beats 3/5    easy · avg 66%     54%  sharp · at its level
-<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   27.6%  ▄··▄··▄·▄··● beats 4/5    hard · avg 32%     11%  at its level
+<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   27.6%  ▄··▄··▄·▄··● beats 4/5    hard · avg 33%     11%  at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2206.14858v2"></a><a href="https://arxiv.org/html/2206.14858v2">Solving Quantitative Reasoning Problems…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 46.4
+weighted average                                   = 46.3
 </pre>
 
 <sub>Licences: Solving Quantitative Reasoning Problems with Language Models ([CC BY 4.0](../../licenses/paper-2206.14858v2-CC-BY-4-0.txt))</sub>

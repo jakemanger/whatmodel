@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁   #35 of 62     73%      6
+image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #35 of 62     73%      6
 </pre>
 
 <details><summary>image to image / editing · #35 of 62 · 73% of its score</summary>
@@ -25,7 +25,7 @@ Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 M
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           53.0%  ▃▃▂·▃▆▂●·▃·▃ beats 14/20  hard · avg 45%       39%  at its level
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           53.0%  ▃▃▂·▃▆▂●·▃·▃ beats 14/20  hard · avg 45%       40%  at its level
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   76.5%  ▃·········●▂ beats 6/7    medium · avg 42%     16%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   76.7%  ▄·▄···▄█●··▄ beats 6/7    easy · avg 66%       10%  at its level
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1001.0  ▃▂····▂●▂▃▂▃ beats 5/14   avg 956             7.8%  blunt
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   39% ▇▇▇▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   40% ▇▇▇▇▇
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat (lab)</a>                           2   26% ▇▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   18% ▇▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇

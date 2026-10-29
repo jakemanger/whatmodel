@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 61.3** ±2.3 · #212 of 957 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.2** ±2.3 · #215 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅█▆●█▄▁▁▁   #152 of 429*    7.3%      1
+math  ▁▁▃▅▇▆▄●▄▂▁▁   #153 of 431*    7.2%      1
 </pre>
 
-<details><summary>math · #152 of 429 · 7.3% of its score</summary>
+<details><summary>math · #153 of 431 · 7.2% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    7.3%  typical
+<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    7.2%  typical
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▄ beats 95/209  hard · avg 38%     90%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▅ beats 95/211  hard · avg 39%     90%  sharp · at its level
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   90% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    7% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 61.3
+weighted average                                   = 61.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

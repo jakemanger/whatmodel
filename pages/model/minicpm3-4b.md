@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-09 · minicpm-model-license
 
-**score 48.8** ±2.0 · #392 of 729 · from 3 benchmark results across 2 sources
+**score 48.7** ±2.0 · #394 of 731 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▅▅▅▅▄▂▁   #268 of 310*     26%      2
-coding       ▁▁▁▃▆●█▇▅▄▃▁   #294 of 466*     72%      1
+agent tasks  ▁▁▃●█▄▅▅▄▄▂▁   #270 of 312*     26%      2
+coding       ▁▁▁▃▅●█▇▅▄▃▁   #294 of 468*     72%      1
 </pre>
 
-<details><summary>agent tasks · #268 of 310 · 26% of its score</summary>
+<details><summary>agent tasks · #270 of 312 · 26% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   25.6%  ▁▁▁▂●█▅▅▆▂▂▂ beats 15/77   hard · avg 31%       17%  at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           50.3%  ▁▁▁▁▁▃●█▅▄▁▁ beats 34/114  medium · avg 51%    9.5%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           50.3%  ▁▁▁▁▁▃●█▅▄▁▁ beats 34/114  medium · avg 51%     10%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #294 of 466 · 72% of its score</summary>
+<details><summary>coding · #294 of 468 · 72% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   72% ▇▇▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   26% ▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 48.8
+weighted average                                   = 48.7
 </pre>
 
 <sub>Licences: LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

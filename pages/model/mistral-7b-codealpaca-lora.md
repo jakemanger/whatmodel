@@ -6,7 +6,7 @@
 
 Nondzu · released 2023-10 · 7.24B params · apache-2.0
 
-**score 40.4** ±0.8 · #741 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.4** ±0.8 · #742 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #397 of 478*    100%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #401 of 481*    100%      2
 </pre>
 
-<details><summary>coding · #397 of 478 · 100% of its score</summary>
+<details><summary>coding · #401 of 481 · 100% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 

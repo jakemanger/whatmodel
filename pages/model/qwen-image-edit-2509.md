@@ -16,19 +16,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁   #32 of 62     74%      4
+image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #31 of 62     74%      4
 </pre>
 
-<details><summary>image to image / editing · #32 of 62 · 74% of its score</summary>
+<details><summary>image to image / editing · #31 of 62 · 74% of its score</summary>
 
-Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall.
+Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md), [Imagen 4](imagen-4.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   73.7%  ▃·········●▂ beats 3/7    medium · avg 42%     32%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   74.8%  ▄·▄···▄●█··▄ beats 3/7    easy · avg 66%       20%  typical
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1014.0  ▃▂····▂●▂▃▂▃ beats 8/14   avg 956              17%  blunt
-<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   76.9%  ▃▃▃··▃·····● beats 4/6    medium · avg 65%    5.4%  at its level · noisy
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   76.9%  ▃▃▃··▃·····● beats 4/6    medium · avg 65%    5.3%  at its level · noisy
 </pre>
 
 </details>

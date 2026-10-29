@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.223B params · apache-2.0
 
-**score 14.0** ±2.7 · #709 of 729 · from 8 benchmark results across 2 sources
+**score 14.1** ±2.7 · #711 of 731 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▁▁▁   #416 of 427*     15%      1
+math  ▁●▃▅█▇▄█▄▂▁▁   #418 of 429*     15%      1
 </pre>
 
-<details><summary>math · #416 of 427 · 15% of its score</summary>
+<details><summary>math · #418 of 429 · 15% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-830"></a><a href="https://aclanthology.org/2023.acl-long.830.pdf">Large Language Models Are Reasoning Tea…</a>        5   57% ▇▇▇▇▇▇▇
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3   40% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 14.0
+weighted average                                   = 14.1
 </pre>
 
 <sub>Licences: Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>

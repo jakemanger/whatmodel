@@ -6,7 +6,7 @@
 
 MiniMax · proprietary
 
-**score 52.7** ±4.8 · #75 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±4.8 · #75 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                              results  share of the score
 <a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                 10% ▇
-weighted average                             = 52.7
+weighted average                             = 52.8
 </pre>
 
 <sub>Licences: Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>

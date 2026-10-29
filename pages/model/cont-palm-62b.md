@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █·█······●·█       #2 of 4*     14%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #294 of 526*     23%      2
+math    ▁▁▃▆█●▅█▄▁▁▁   #296 of 528*     23%      2
 </pre>
 
 <details><summary>coding · #2 of 4 · 14% of its score</summary>
@@ -30,7 +30,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>math · #294 of 526 · 23% of its score</summary>
+<details><summary>math · #296 of 528 · 23% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2204.02311v5"></a><a href="https://arxiv.org/html/2204.02311v5">PaLM: Scaling Language Modeling with Pa…</a>       11   51% ▇▇▇▇▇▇
+<a name="paper-2204.02311v5"></a><a href="https://arxiv.org/html/2204.02311v5">PaLM: Scaling Language Modeling with Pa…</a>       11   52% ▇▇▇▇▇▇
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 43.0

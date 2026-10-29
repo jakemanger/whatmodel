@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▆██▅█▄▁▁▁   #499 of 526    9.3%      3
+math  ▁▁●▆██▅█▄▁▁▁   #501 of 528    9.3%      3
 </pre>
 
-<details><summary>math · #499 of 526 · 9.3% of its score</summary>
+<details><summary>math · #501 of 528 · 9.3% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>           4.1%  █·▅▃●▃·▃·▃▃▅ beats 6/12   easy · avg 66%      8.0%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>           4.1%  █·▅▃●▃·▃·▃▃▅ beats 6/12   easy · avg 67%      8.0%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>            3.4%  ▆·▂·●▂▂▂▂█▄▆ beats 4/18   medium · avg 48%    0.9%  sharp · too hard for it
-<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    1.5%  ●··▄··▄·▄··█ beats 0/5    hard · avg 32%      0.4%  too hard for it
+<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>    1.5%  ●··▄··▄·▄··█ beats 0/5    hard · avg 33%      0.4%  too hard for it
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          16.8%  ▃▅█···●·▃▃▃▅ beats 6/12    easy · avg 82%           11%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          25.2%  ▅▃▃▅··▃●·▃▃█ beats 7/12    easy · avg 83%           11%  sharp
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           24.3%  ●···▁··▃▁▅▅█ beats 0/18    easy · avg 74%          4.2%  several runs
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  19.8%  ●······▁·▁▁▃ beats 6/12    easy · avg 87%          4.1%  sharp
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  19.8%  ●······▁·▁▁▃ beats 6/12    easy · avg 88%          4.1%  sharp
 <a href="https://aclanthology.org/2023.eacl-main.7.pdf">WinoGrande (lab)</a>                     69.3%  ▄····▄··▄·●█ beats 3/6     easy · avg 85%          2.7%  at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   12.9%  ▃·▅·▅▃●·▃▃·█ beats 6/12    medium · avg 52%        2.7%  typical
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   55.1%  █·····●·▁·▄▁ beats 6/12    medium · avg 81%        2.2%  sharp
@@ -63,9 +63,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2204.02311v5">Winograd Schema Challenge (WSC273…</a>   80.6%  █▃·▅▃▃●▅██▅▃ beats 9/21    easy · avg 92%          0.8%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">ARC Challenge (lab)</a>                  39.2%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 48/140  medium · avg 72%        0.7%  sharp · noisy · small run
 <a href="https://arxiv.org/html/2204.02311v5">LAMBADA (OpenAI version), last-wo…</a>   69.5%  ▁·····▁▁▃▃●█ beats 52/86   easy · avg 85%          0.7%  blunt · at its level
-<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        34.9%  █▁▃·●·▄·▃··▁ beats 10/16   hard · avg 51%          0.7%  sharp · too hard for it · small run
 <a href="https://arxiv.org/html/2204.02311v5">Story Cloze Test (lab)</a>               77.5%  ▃▃▃▂▅●▅▂▁··▂ beats 30/50   easy · avg 89%          0.7%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2204.02311v5">ARC Easy (lab)</a>                       69.2%  ▁▃▂▄▆●▅▃▁··▁ beats 63/100  easy · avg 85%          0.6%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        34.9%  █▁▃·●·▄·▃··▁ beats 10/16   hard · avg 51%          0.7%  sharp · too hard for it · small run
+<a href="https://arxiv.org/html/2204.02311v5">ARC Easy (lab)</a>                       69.2%  ▁▃▂▄▆●▅▃▁··▁ beats 63/100  easy · avg 85%          0.7%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">ANLI Round 2 (prompted) (lab)</a>        35.8%  █▅▃▅▃▃●▃█··▃ beats 11/16   hard · avg 45%          0.6%  too hard for it · small run
 <a href="https://arxiv.org/html/2204.02311v5">SuperGLUE WSC (prompted) (lab)</a>       78.9%  █··▁·▃·▄▂▁●▃ beats 19/26   medium · avg 82%        0.6%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">ReCoRD (SuperGLUE, prompted) (lab)</a>   87.8%  ▄·▄···▄●██▄▄ beats 4/10    very easy · avg 95%     0.5%  blunt · small run
@@ -73,7 +73,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (lab)</a>   34.0%  ●·······▄▄▄█ beats 0/5     medium · avg 75%        0.5%  noisy
 <a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>            1.5%  ●·····▄█··▄▄ beats 0/5     hard · avg 15%          0.5%  too hard for it
 <a href="https://arxiv.org/html/2204.02311v5">RACE-middle (lab)</a>                    57.9%  ▄▄····▄●·███ beats 4/10    easy · avg 74%          0.4%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2204.02311v5">DROP (lab)</a>                           45.1%  ▃▅█▅·●·▆▄▂▁▃ beats 26/44   medium · avg 61%        0.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2204.02311v5">DROP (lab)</a>                           45.1%  ▃▅█▅·●·▆▄▂▁▃ beats 26/44   medium · avg 62%        0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">QuAC (prompted, F1) (lab)</a>            33.1%  ▅··▃▃●··▃▅·▃ beats 4/10    medium · avg 53%        0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">WiC (prompted) (lab)</a>                 47.0%  ●·▂▁······▁▁ beats 6/13    hard · avg 60%          0.3%  sharp · too hard for it · noisy · small…
 <a href="https://arxiv.org/html/2204.02311v5">RACE-high (lab)</a>                      42.3%  ▂▄·▂▂▂▂▂▆●▂█ beats 11/17   medium · avg 53%        0.3%  blunt · small run

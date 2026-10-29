@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 25.7** ±2.2 · #681 of 729 · from 11 benchmark results across 7 sources
+**score 25.7** ±2.2 · #683 of 731 · from 11 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▆▄▆█▆▆▇▃   #391 of 398*     42%      2
+chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #394 of 401*     42%      2
 </pre>
 
-<details><summary>chat &amp; writing · #391 of 398 · 42% of its score</summary>
+<details><summary>chat &amp; writing · #394 of 401 · 42% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [ChatGLM2-6B](chatglm2-6b.md), [Qwen1.5 1.8B Chat](qwen1-5-1-8b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        4.0%  ▁●▂▃▆▆█▆▄▄▁▁ beats 3/122  hard · avg 35%          28%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        4.0%  ▁●▂▃▆▆█▆▄▄▁▁ beats 3/122  medium · avg 35%        28%  sharp · too hard for it
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   45.7%  ▂▂·●·▇▃▆█▆▄▂ beats 6/45   very easy · avg 94%     14%  sharp · at its level · noisy
 </pre>
 
@@ -34,16 +34,16 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (9)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-01-04%2020%3A46%3A09.405434.json">Natural Questions (closed book)</a>      13.6%  ▁·▁·▁▂▁▂·●▂█ beats 11/28  medium · avg 48%         28%  typical
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   70.1%  ●▁▂▃▄▄█▆▃▂▂▁ beats 0/140  very easy · avg 94%     8.7%  blunt · noisy
-<a href="https://aclanthology.org/2023.findings-emnlp.427.pdf">Conic10K mathQA (zero-shot CoT)</a>       0.0%  ●··▄·······▄ beats 0/3    very hard · avg 9.9%    5.4%  too hard for it
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-02-17%2000%3A50%3A54.701536.json">TriviaQA</a>                             39.2%  ▁··▁█▃▃▁●▅▄█ beats 14/28  easy · avg 73%          5.2%  at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.1%  ●▁····▃▁·▁·▁ beats 1/14   hard · avg 66%          2.4%  sharp · too hard for it · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>    9.8%  ●··█····█··█ beats 0/3    very hard · avg 20%     2.4%  too hard for it
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-02-17%2018%3A48%3A20.011232.json">TruthfulQA MC2</a>                       44.1%  ▅▃█●▁▂▅···▁▁ beats 17/31  medium · avg 57%        1.4%  blunt · at its level
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-03-03%2005%3A52%3A03.427892.json">HaluEval QA hallucination detecti…</a>   29.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 1/27   hard · avg 66%          1.4%  too hard for it · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   43.9%  ●·····▂····▁ beats 4/11   very hard · avg 55%     0.3%  sharp · too hard for it · noisy
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-01-04%2020%3A46%3A09.405434.json">Natural Questions (closed book)</a>      13.6%  ▁·▁·▁▂▁▂·●▂█ beats 11/28  medium · avg 48%        28%  typical
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   70.1%  ●▁▂▃▄▄█▆▃▂▂▁ beats 0/140  very easy · avg 94%    8.7%  blunt · noisy
+<a href="https://aclanthology.org/2023.findings-emnlp.427.pdf">Conic10K mathQA (zero-shot CoT)</a>       0.0%  ●··▄·······▄ beats 0/3    very hard · avg 10%    5.4%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-02-17%2000%3A50%3A54.701536.json">TriviaQA</a>                             39.2%  ▁··▁█▃▃▁●▅▄█ beats 14/28  easy · avg 73%         5.2%  at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.1%  ●▁····▃▁·▁·▁ beats 1/14   hard · avg 66%         2.4%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>    9.8%  ●··█····█··█ beats 0/3    very hard · avg 20%    2.4%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-02-17%2018%3A48%3A20.011232.json">TruthfulQA MC2</a>                       44.1%  ▅▃█●▁▂▅···▁▁ beats 17/31  medium · avg 57%       1.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b-instruct/results_2024-03-03%2005%3A52%3A03.427892.json">HaluEval QA hallucination detecti…</a>   29.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 1/27   hard · avg 66%         1.4%  too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   43.9%  ●·····▂····▁ beats 4/11   very hard · avg 55%    0.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-01 · 2.6B params · apache-2.0
 
-**score 42.7** ±3.7 · #98 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.7** ±3.6 · #98 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅●▄▄█▃▁▂▁▁   #82 of 126*     94%      1
+text to image  ▂▅▅●▄▄█▃▂▂▁▁   #82 of 126*     94%      1
 </pre>
 
 <details><summary>text to image · #82 of 126 · 94% of its score</summary>

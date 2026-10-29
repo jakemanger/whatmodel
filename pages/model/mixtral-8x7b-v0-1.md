@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.8** ±0.9 · #519 of 729 · from 19 benchmark results across 5 sources
+**score 42.7** ±0.9 · #521 of 731 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #397 of 466     51%      7
-math    ▁▁▃▅█▆●█▄▁▁▁   #186 of 427*     11%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #399 of 468     51%      7
+math    ▁▁▃▅█▇●█▄▂▁▁   #187 of 429*     11%      2
 </pre>
 
-<details><summary>coding · #397 of 466 · 51% of its score</summary>
+<details><summary>coding · #399 of 468 · 51% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 22/35  medium · avg 61%     13%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (lab)</a>                      40.2%  █···█·███··● beats 5/5    medium · avg 60%     12%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 22/35  medium · avg 62%     13%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (lab)</a>                      40.2%  █···█·███··● beats 5/5    medium · avg 61%     12%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   20.7%  ▄▇█▃●▇▄▁▇▃·▁ beats 16/35  medium · avg 46%    8.3%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   14.3%  ▁·▁▁▄█●▄█▁▅▅ beats 14/35  medium · avg 51%    8.0%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                           60.7%  ▄··▄·▄··█··● beats 5/5    easy · avg 69%      4.2%  at its level
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #186 of 427 · 11% of its score</summary>
+<details><summary>math · #187 of 429 · 11% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall.
 
@@ -55,7 +55,7 @@ test         result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (lab)</a>                  59.7%  ▄···▄···█▄·● beats 5/5      easy · avg 77%         8.5%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                           70.6%  ▄····▄▄·▄··● beats 5/5      easy · avg 82%         8.1%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (lab)</a>                     77.2%  █··█·█·█●··█ beats 4/5      easy · avg 86%         4.4%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (lab)</a>                     77.2%  █··█·█·█●··█ beats 4/5      easy · avg 86%         4.5%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book) (…</a>   30.6%  █·····▄▄▄··● beats 5/5      medium · avg 41%       4.4%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA (lab)</a>                       71.5%  █···██··█·●█ beats 4/5      easy · avg 83%         3.8%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (lab)</a>                      84.4%  █···██···█●█ beats 4/5      very easy · avg 91%    3.0%  typical
@@ -79,7 +79,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 42.8
+weighted average                                   = 42.7
 </pre>
 
 <sub>Licences: Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

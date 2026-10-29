@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-11 · proprietary
 
-**score 46.2** ±0.5 · comparison only: no current run option verified · from 70 benchmark results across 40 sources
+**score 46.1** ±0.5 · comparison only: no current run option verified · from 70 benchmark results across 40 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #455 of 469*    0.3%      1
-math            ▁▁▃▆█●▅█▄▁▁▁    #278 of 526     29%      2
+chat &amp; writing  ▁▁●▃▅▄▇█▇▇▇▃   #458 of 472*    0.3%      1
+math            ▁▁▃▆█●▅█▄▁▁▁    #279 of 528     29%      2
 </pre>
 
-<details><summary>chat &amp; writing · #455 of 469 · 0.3% of its score</summary>
+<details><summary>chat &amp; writing · #458 of 472 · 0.3% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #278 of 526 · 29% of its score</summary>
+<details><summary>math · #279 of 528 · 29% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -58,10 +58,10 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   43.7%  ▂··▂·▂▄▄·●██ beats 9/18     medium · avg 61%       1.7%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.743.pdf">COPA</a>                                 93.2%  ▁·▁▁▁▅▅█▆▂●▁ beats 63/67    very easy · avg 96%    1.5%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>   68.4%  █·········▄● beats 3/3      medium · avg 68%       1.4%  sharp · at its level · noisy
-<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   66.0%  ▄········●·█ beats 1/3      easy · avg 73%         1.4%  at its level
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   43.7%  ▂··▄·▂▆●▂█·▂ beats 7/14     medium · avg 53%       1.4%  at its level
+<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   66.0%  ▄········●·█ beats 1/3      easy · avg 73%         1.4%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   15.8%  ▄······●·█·▄ beats 1/4      medium · avg 38%       1.3%  sharp · at its level
-<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>   31.2%  █······●··██ beats 1/3      medium · avg 46%       1.2%  at its level
+<a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>   31.2%  █······●··██ beats 1/3      medium · avg 47%       1.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>   12.2%  █··●····█··█ beats 1/3      very hard · avg 20%    0.9%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    52.7%  ▂▂··▂·▂··▂█● beats 9/10     medium · avg 56%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.710.pdf">CoNLL-2003 English NER, few-shot …</a>   77.2%  ▃···▅·▃▅··●█ beats 6/9      easy · avg 83%         0.8%  small run
@@ -71,7 +71,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   60.4%  █·····█····● beats 2/2      medium · avg 65%       0.7%  at its level · small run
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">WinoGrande</a>                           73.5%  ▁▁▁▁▂▁▁▅▇●▃▁ beats 108/131  medium · avg 73%       0.7%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   70.7%  ▄····▄·█···● beats 4/4      hard · avg 65%         0.6%  noisy
-<a href="https://aclanthology.org/2023.emnlp-main.891.pdf">RadNLI (3-class radiology NLI), z…</a>   55.9%  █·●········█ beats 1/2      medium · avg 65%       0.6%  at its level · small run
+<a href="https://aclanthology.org/2023.emnlp-main.891.pdf">RadNLI (3-class radiology NLI), z…</a>   55.9%  █·●········█ beats 1/2      easy · avg 65%         0.6%  at its level · small run
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   84.2%  ▃·▃·····▃▃▃● beats 5/7      easy · avg 87%         0.6%  blunt · at its level
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">HellaSwag</a>                            71.4%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 71/135   easy · avg 77%         0.5%  at its level
 <a href="https://aclanthology.org/2023.findings-acl.551.pdf">SelfAware unanswerable-question d…</a>   51.4%  █▄●▄·······▄ beats 3/5      medium · avg 63%       0.4%  blunt · at its level
@@ -139,7 +139,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 <a name="acl-2023-emnlp-main-706"></a><a href="https://aclanthology.org/2023.emnlp-main.706.pdf">StoryAnalogy: Deriving Story-level Anal…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.2
+weighted average                                   = 46.1
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Faithful Chain-of-Thought Reasoning ([CC BY 4.0](../../licenses/acl-2023-ijcnlp-main-20-CC-BY-4-0.txt)) · Is ChatGPT a General-Purpose Natural Language Processing Task Solver? ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-85-CC-BY-4-0.txt)) · INFORM : Information eNtropy based multi-step reasoning FOR large language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-216-CC-BY-4-0.txt)) · Batch Prompting: Efficient Inference with Large Language Model APIs ([CC BY 4.0](../../licenses/acl-2023-emnlp-industry-74-CC-BY-4-0.txt)) · Unnatural Error Correction: GPT-4 Can Almost Perfectly Handle Unnatural Scrambled Text ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-550-CC-BY-4-0.txt)) · Increasing Probability Mass on Answer Choices Does Not Always Improve Accuracy ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-522-CC-BY-4-0.txt)) · PAL: Program-aided Language Models ([CC0 1.0](../../licenses/paper-2211.10435v2-pal-CC0-1-0.txt)) · Examining Inter-Consistency of Large Language Models Collaboration: An In-depth Analysis via Debate ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-508-CC-BY-4-0.txt)) · Self-Knowledge Guided Retrieval Augmentation for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-691-CC-BY-4-0.txt)) · Explanation Selection Using Unlabeled Data for Chain-of-Thought Prompting ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-41-CC-BY-4-0.txt)) · Self-Consistency of Large Language Models under Ambiguity ([CC BY 4.0](../../licenses/acl-2023-blackboxnlp-1-7-CC-BY-4-0.txt)) · Small Language Models Fine-tuned to Coordinate Larger Language Models improve Complex Reasoning ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-225-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Not All Languages Are Created Equal in LLMs: Improving Multilingual Capability by Cross-Lingual-Thought Prompting ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-826-CC-BY-4-0.txt)) · Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters ([CC BY 4.0](../../licenses/acl-2023-acl-long-153-CC-BY-4-0.txt)) · MoT: Memory-of-Thought Enables ChatGPT to Self-Improve ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-392-CC-BY-4-0.txt)) · HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-397-CC-BY-4-0.txt)) · In-Context Demonstration Selection with Cross Entropy Difference ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-81-CC-BY-4-0.txt)) · Bridging the Resource Gap: Exploring the Efficacy of English and Multilingual LLMs for Swedish ([CC BY 4.0](../../licenses/acl-2023-resourceful-1-13-CC-BY-4-0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt)) · clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-689-CC-BY-4-0.txt)) · Exploring the Curious Case of Code Prompts ([CC BY 4.0](../../licenses/acl-2023-nlrse-1-2-CC-BY-4-0.txt)) · Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark For Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-468-CC-BY-4-0.txt)) · Large Language Model Is Not a Good Few-shot Information Extractor ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-710-CC-BY-4-0.txt)) · Is ChatGPT a Good Causal Reasoner? A Comprehensive Evaluation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-743-CC-BY-4-0.txt)) · trlX: A Framework for Large Scale Reinforcement Learning from Human Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-530-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · Code4Struct: Code Generation for Few-Shot Event Structure Prediction ([CC BY 4.0](../../licenses/acl-2023-acl-long-202-CC-BY-4-0.txt)) · SummEdits: Measuring LLM Ability at Factual Reasoning Through The Lens of Summarization ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-600-CC-BY-4-0.txt)) · Exploring the Boundaries of GPT-4 in Radiology ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-891-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Do Large Language Models Know What They Don't Know? ([CC BY 4.0](../../licenses/acl-2023-findings-acl-551-CC-BY-4-0.txt)) · InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-700-CC-BY-4-0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Aligning Instruction Tasks Unlocks Large Language Models as Zero-Shot Relation Extractors ([CC BY 4.0](../../licenses/acl-2023-findings-acl-50-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Causal Reasoning of Entities and Events in Procedural Texts ([CC BY 4.0](../../licenses/acl-2023-findings-eacl-31-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt)) · StoryAnalogy: Deriving Story-level Analogies from Large Language Models to Unlock Analogical Understanding ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-706-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 50.7** ±1.1 · #351 of 729 · from 17 benchmark results across 6 sources
+**score 50.6** ±1.1 · #353 of 731 · from 17 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▅▅▅▅▄▂▁    #223 of 310     14%      4
-coding              ▁▁▁▃▆▇●▇▅▄▃▁   #269 of 466*     28%      2
-chat &amp; writing      ▁▁▁▃▆▄▆●▆▆▇▃   #236 of 398*     13%      1
+agent tasks         ▁▁▃▆●▄▅▅▄▄▂▁    #224 of 312     14%      4
+coding              ▁▁▁▃▅▇●▇▅▄▃▁   #270 of 468*     28%      2
+chat &amp; writing      ▁▁▁▃▆▄▆●▆▇▇▃   #239 of 401*     13%      1
 math                ●··········█       #2 of 2*     12%      2
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #134 of 154     17%      3
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #135 of 154     17%      3
 </pre>
 
-<details><summary>agent tasks · #223 of 310 · 14% of its score</summary>
+<details><summary>agent tasks · #224 of 312 · 14% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -37,25 +37,25 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #269 of 466 · 28% of its score</summary>
+<details><summary>coding · #270 of 468 · 28% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 19/62  medium · avg 50%     25%  sharp · at its level
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>                   22.3%  ▅····●·█▃▅█▃ beats 2/12   hard · avg 26%      2.9%  at its level · small run
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 19/62  medium · avg 51%     25%  sharp · at its level
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>                   22.3%  ▅····●·█▃▅█▃ beats 2/12   hard · avg 26%      2.8%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #236 of 398 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #239 of 401 · 13% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1290.1  ▁▁▁▂▃▃▃●▆▇█▃ beats 123/382  avg 1259       13%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1290.1  ▁▁▁▂▃▃▃●▆▇█▃ beats 124/385  avg 1259       13%  blunt
 </pre>
 
 </details>
@@ -70,15 +70,15 @@ test             result  vs the others in its run  difficulty           counts  
 
 </details>
 
-<details><summary>vision &amp; documents · #134 of 154 · 17% of its score</summary>
+<details><summary>vision &amp; documents · #135 of 154 · 17% of its score</summary>
 
-Trails [Qwen3.5 2B](qwen3-5-2b.md), [InternVL2-26B](internvl2-26b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
+Trails [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [InternVL2-26B](internvl2-26b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1018.7  ▁▁▂●▂▂▃▄▄▅█▇ beats 14/152  avg 1061            8.4%  blunt
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions) (la…</a>   40.6%  ▂▅▃●▅▆▆▅▆█▆▂ beats 19/100  medium · avg 38%    4.2%  at its level · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv descriptive questions (la…</a>   70.5%  ▂▄▄●▇▄█▇▇▂▁▂ beats 13/58   easy · avg 72%      4.1%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1018.7  ▁▁▂●▂▂▃▄▅▅█▇ beats 14/152  avg 1061            8.5%  blunt
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions) (la…</a>   40.6%  ▂▅▃●▅▆▆▅▆█▆▂ beats 19/101  medium · avg 38%    4.2%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv descriptive questions (la…</a>   70.5%  ▂▄▄●▇▄██▇▂▁▂ beats 13/59   easy · avg 72%      4.1%  at its level · small run
 </pre>
 
 </details>
@@ -87,7 +87,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>                   50.0%  ▁▁▁▁▂▄●▅█▇█▄ beats 86/315   hard · avg 45%          10%  sharp · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>                   50.0%  ▁▁▁▁▂▄●▅█▇█▄ beats 86/318   hard · avg 46%          10%  sharp · at its level · small run
 <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>                           85.9%  ▁▁▁▁▁▂▂▅██●▄ beats 192/214  easy · avg 81%         5.9%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.2%  ▁▁▂▃▄▄█▆▃●▂▁ beats 124/140  very easy · avg 94%    0.8%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▄●▁▁ beats 91/98    very easy · avg 90%    0.0%  blunt
@@ -108,7 +108,7 @@ source                                    results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       2    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.7
+weighted average                                   = 50.6
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · 7B params · qwen-research
 
-**score 68.6** ±1.9 · #16 of 144 · from 3 benchmark results across 2 sources
+**score 68.9** ±2.0 · #16 of 144 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄█●▁▂▁▁   #17 of 126*     77%      2
-image to image / edit…  ▁▁·▃▂▂█▃▅●▂▁    #13 of 62*     21%      1
+text to image           ▂▅▅▃▄▄█●▂▂▁▁   #16 of 126*     77%      2
+image to image / edit…  ▁▁·▃▂▃█▅▄●▂▁    #13 of 62*     22%      1
 </pre>
 
-<details><summary>text to image · #17 of 126 · 77% of its score</summary>
+<details><summary>text to image · #16 of 126 · 77% of its score</summary>
 
-Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md), [Ideogram 4.0](ideogram-4.md) here, though they rank lower overall.
+Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1222.9  ▂▂▃▄▇█▅●▄▂·▂ beats 59/75  avg 1027           57%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1225.1  ▁▂▃▃▆█▃●▂▂▁▁ beats 59/75  avg 1027           57%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   47.1%  ▆▆·●▂····▂▂█ beats 6/13   hard · avg 20%     20%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #13 of 62 · 21% of its score</summary>
+<details><summary>image to image / editing · #13 of 62 · 22% of its score</summary>
 
 Beats [Reve 2.0](reve-2-0.md), [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md), [GPT Image 1.5](gpt-image-1-5.md) here, though they rank higher overall. Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1362.4  ▂▁▁▃▆█▄█●█▁▂ beats 39/53  avg 1153       21%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1362.4  ▂▁▁▃▆█▄█●▄▂▂ beats 39/53  avg 1153       22%  typical
 </pre>
 
 </details>
@@ -49,10 +49,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   78% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   79% ▇▇▇▇▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                  1   20% ▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 68.6
+weighted average                        = 68.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE))</sub>

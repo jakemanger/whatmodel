@@ -6,7 +6,7 @@
 
 Stanford CRFM · released 2023-03 · 13B params · closed weights
 
-**score 29.2** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
+**score 29.1** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃    #452 of 469     69%      3
-math            ▁▁▃●██▅█▄▁▁▁   #464 of 526*     30%      1
+chat &amp; writing  ▁▁●▃▅▄▇█▇▇▇▃    #455 of 472     69%      3
+math            ▁▁▃●██▅█▄▁▁▁   #466 of 528*     30%      1
 </pre>
 
-<details><summary>chat &amp; writing · #452 of 469 · 69% of its score</summary>
+<details><summary>chat &amp; writing · #455 of 472 · 69% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Falcon 40B Instruct](falcon-40b-instruct.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.4  ▁▁●▂▃▃▃▆▆▇█▃ beats 11/382  avg 1259                     27%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.3  ▁▁●▂▃▃▃▆▆▇█▃ beats 11/385  avg 1259                     26%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         955.0  ▂▁●▁▃▇█▆▇▄▂▂ beats 10/95   avg 1187                     24%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5300 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 7/28    avg 8.525 MT-Bench scor…     19%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5300 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 7/28    avg 8.536 MT-Bench scor…     19%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #464 of 526 · 30% of its score</summary>
+<details><summary>math · #466 of 528 · 30% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md) here, though they rank lower overall.
 
@@ -51,11 +51,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="acl-2023-emnlp-main-216"></a><a href="https://aclanthology.org/2023.emnlp-main.216.pdf">INFORM : Information eNtropy based mult…</a>        1   30% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   27% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   26% ▇▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   24% ▇▇▇
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   19% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 29.2
+weighted average                                   = 29.1
 </pre>
 
 <sub>Licences: INFORM : Information eNtropy based multi-step reasoning FOR large language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-216-CC-BY-4-0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

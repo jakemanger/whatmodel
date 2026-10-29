@@ -16,19 +16,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅▃▄▄●▃▁▂▁▁   #28 of 126     61%      3
-image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁    #24 of 62     35%      4
+text to image           ▂▅▅▃▄▄●▃▂▂▁▁   #28 of 126     60%      3
+image to image / edit…  ▁▁·▃▂▃█●▄▅▂▁    #24 of 62     35%      4
 </pre>
 
-<details><summary>text to image · #28 of 126 · 61% of its score</summary>
+<details><summary>text to image · #28 of 126 · 60% of its score</summary>
 
 Trails [FLUX.2 \[flex\]](flux-2-flex.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 \[max\]](flux-2-max.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   59.5%  ▄█▂▂▂▂●▄·▂·▂ beats 12/16  hard · avg 26%       35%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1148.5  ▂▂▃▄▇●▅▂▄▂·▂ beats 43/75  avg 1027             23%  typical
-<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>      56.8%  █▅▅·▅▅●·█··▃ beats 11/17  medium · avg 46%    2.5%  blunt · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1148.8  ▁▂▃▃▆●▃▂▂▂▁▁ beats 44/75  avg 1027             23%  typical
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>      56.8%  █▅▅·▅▅●·█··▃ beats 11/17  medium · avg 46%    2.6%  blunt · at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Trails [HunyuanImage 3.0-Instruct](hunyuanimage-3-0-instruct.md), [Wan 2.7 Image
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           64.4%  ▃▃▂·▃▆▂█·●·▃ beats 17/20  hard · avg 45%     18%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1302.7  ▂▁▁▃▆█▄●▄█▁▂ beats 32/53  avg 1153          8.8%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1302.8  ▂▁▁▃▆█▄●▇▄▂▂ beats 32/53  avg 1153          8.9%  typical
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   50.0%  ▄▄····▄●█▄·█ beats 3/8    hard · avg 34%    4.5%  at its level
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1089.0  ▃▂····▂█▂▃▂● beats 13/14  avg 956           3.5%  blunt
 </pre>
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1046.7  ▁▁▁▄▂█●▁▁▂▁▁ beats 25/34  avg 874       3.7%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1046.7  ▁▁▁▄▂█●▁▁▂▁▁ beats 25/34  avg 875       3.7%  typical
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   35% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   32% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   32% ▇▇▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   18% ▇▇
 <a name="visual-gebench"></a><a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench: Benchmarking Image Generation …</a>        1    5% ▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    4% ▇

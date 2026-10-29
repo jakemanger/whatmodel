@@ -6,7 +6,7 @@
 
 Team-ACE (Huawei Noah's Ark & USTC) · released 2024-08 · 8.03B params · apache-2.0
 
-**score 55.3** ±6.0 · #331 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.3** ±6.0 · #331 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▅▅▄▄▄▁▁   #249 of 344*     84%      1
+agent tasks  ▁▁▃▆●▅▄▄▃▃▂▁   #251 of 347*     84%      1
 </pre>
 
-<details><summary>agent tasks · #249 of 344 · 84% of its score</summary>
+<details><summary>agent tasks · #251 of 347 · 84% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

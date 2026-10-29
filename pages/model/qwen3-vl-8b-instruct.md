@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 55.2** ±0.7 · #278 of 729 · from 31 benchmark results across 5 sources
+**score 55.1** ±0.7 · #281 of 731 · from 31 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▅▅▅▅▄▂▁   #201 of 310*    3.0%      2
-coding              ▁▁▁▃▆●█▇▅▄▃▁   #337 of 466*    4.0%      1
-chat &amp; writing      ▁▁▁▃▆▄▆●▆▆▇▃   #191 of 398*    2.9%      1
-math                ▁▁▃▅█▆●█▄▁▁▁    #185 of 427     12%      4
+agent tasks         ▁▁▃▆●▄▅▅▄▄▂▁   #203 of 312*    3.0%      2
+coding              ▁▁▁▃▅●█▇▅▄▃▁   #339 of 468*    3.9%      1
+chat &amp; writing      ▁▁▁▃▆▄▆●▆▇▇▃   #194 of 401*    2.9%      1
+math                ▁▁▃▅█▇●█▄▂▁▁    #188 of 429     12%      4
 vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄    #111 of 154     50%     16
 </pre>
 
-<details><summary>agent tasks · #201 of 310 · 3.0% of its score</summary>
+<details><summary>agent tasks · #203 of 312 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -35,20 +35,20 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>coding · #337 of 466 · 4.0% of its score</summary>
+<details><summary>coding · #339 of 468 · 3.9% of its score</summary>
 
 Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unspecif…</a>   39.3%  ▃▅●▅▅▃▅···▃█ beats 5/16   hard · avg 34%    4.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unspecif…</a>   39.3%  ▃▅●▅▅▃▅···▃█ beats 5/16   hard · avg 35%    3.9%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #191 of 398 · 2.9% of its score</summary>
+<details><summary>chat &amp; writing · #194 of 401 · 2.9% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -57,16 +57,16 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #185 of 427 · 12% of its score</summary>
+<details><summary>math · #188 of 429 · 12% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>    77.2%  ▃··▃▅·▃█●▅▅█ beats 9/16   medium · avg 68%    5.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>    77.2%  ▃··▃▅·▃█●▅▅█ beats 9/16   medium · avg 69%    5.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>               45.9%  ▃·▃▃●··▃▅▃·█ beats 3/12   medium · avg 44%    4.5%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>   32.3%  █···▄·▄·▄··● beats 6/6    hard · avg 19%      1.5%  at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     91.6%  ██····██·██● beats 6/6    easy · avg 69%      0.8%  noisy
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     91.6%  ██····██·██● beats 6/6    easy · avg 70%      0.8%  noisy
 </pre>
 
 </details>
@@ -80,7 +80,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions) (la…</a>   46.4%  ▄▂▄●▄▄▆··▄█▂ beats 5/21   medium · avg 38%       9.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                     69.6%  ▂···▆▂▂▂●▄▄█ beats 8/16   medium · avg 61%       7.3%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions (la…</a>   83.0%  ▄··▂▂▂·●▄▄▂█ beats 5/14   easy · avg 74%         6.3%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>           77.2%  ▃··▃▅·▃█●▅▅█ beats 9/16   medium · avg 68%       5.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>           77.2%  ▃··▃▅·▃█●▅▅█ beats 9/16   medium · avg 69%       5.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                         70.9%  ▂··▄▂▂·▄●▂▄▆ beats 9/16   medium · avg 65%       4.8%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                       55.9%  ▃·█·▅▃▃▃●▅▃█ beats 9/16   medium · avg 46%       4.1%  at its level
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   37.3%  ▁·▁·▃▃▁●▃█·▄ beats 11/22  hard · avg 26%         2.4%  blunt · at its level
@@ -102,10 +102,10 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      61.9%  ▂····▂·▂▂●▆█ beats 4/14   hard · avg 49%      8.2%  sharp · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       71.6%  ▄·▄·▄▄▄●█▄██ beats 5/12   medium · avg 62%    6.9%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       71.6%  ▄·▄·▄▄▄●█▄██ beats 5/12   medium · avg 63%    6.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     84.9%  ▃··▃·▃·●▃▅▃▅ beats 4/11   easy · avg 79%      5.3%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      44.5%  ▄··▄·▄▄●█▄██ beats 4/11   medium · avg 37%    3.8%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   47.6%  ▃··▃●▃▃▃▃▃·█ beats 3/11   medium · avg 42%    2.9%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   47.6%  ▃··▃●▃▃▃▃▃·█ beats 3/11   medium · avg 43%    2.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        58.0%  ▅··▃·▅●▃·█·▃ beats 5/10   hard · avg 51%      2.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   71.4%  ▃··█··▅●▃▃▅▃ beats 7/13   medium · avg 66%    2.7%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                        68.7%  ▂▂▂·▂●··▆▄·▂ beats 4/13   medium · avg 67%    1.1%  blunt · at its level
@@ -125,7 +125,7 @@ source                                    results  share of the score
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.2
+weighted average                                   = 55.1
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -23,7 +23,7 @@ video editing   ▄··█··▄··●▄█    #4 of 9*    8.6%      1
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1512.9  ▂▂▃▆█▆·▆▅▁▂● beats 40/41  avg 1147           42%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1512.9  ▂▂▃▆█▆·▆▅▁▂● beats 40/41  avg 1147           42%  typical
 <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   63.6%  ▅·▃█▃·▅▃▅▃▃● beats 14/14  hard · avg 44%    3.8%  blunt · at its level
 </pre>
 
@@ -35,7 +35,7 @@ Trails [MiniMax H3](minimax-h3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1464.8  ▁▁▁▁▄▇▃▆▃▂▄● beats 35/40  avg 1189       28%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1464.8  ▁▁▁▁▄▇▃▆▃▂▄● beats 35/40  avg 1189       28%  typical
 <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1286.0  ▂··▂▂▆█▆▂▂●▄ beats 17/19  avg 741        16%  sharp
 </pre>
 
@@ -47,7 +47,7 @@ Trails [Dreamina Seedance 2.5](seedance-2-5.md), [MiniMax H3](minimax-h3.md), [W
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1366.6  █··█··▄··●▄█ beats 6/9    avg 1117      8.6%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1366.6  █··█··▄··●▄█ beats 6/9    avg 1117      8.6%  typical
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   79% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   79% ▇▇▇▇▇▇▇▇▇
 <a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   16% ▇▇
 <a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇

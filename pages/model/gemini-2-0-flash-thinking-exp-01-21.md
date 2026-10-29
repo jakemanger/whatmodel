@@ -6,7 +6,7 @@
 
 Google · released 2025-01 · proprietary
 
-**score 57.6** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 57.5** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▅▅▄▄▄▁▁   #256 of 350*    4.6%      1
-coding       ▁▁▁▂▅▇●▇▅▄▃▁   #271 of 535*     45%      1
-math         ▁▁▃▆██●█▄▁▁▁   #177 of 526*     15%      1
+agent tasks  ▁▁▂▆●▄▅▄▄▄▁▁   #258 of 352*    4.6%      1
+coding       ▁▁▁▂▄▆●▇▅▄▃▁   #274 of 537*     45%      1
+math         ▁▁▃▆██●█▄▁▁▁   #180 of 528*     15%      1
 </pre>
 
-<details><summary>agent tasks · #256 of 350 · 4.6% of its score</summary>
+<details><summary>agent tasks · #258 of 352 · 4.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -32,24 +32,24 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #271 of 535 · 45% of its score</summary>
+<details><summary>coding · #274 of 537 · 45% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   18.2%  ▂·▂▃●▂▃█▆▄▂▂ beats 9/49   very hard · avg 7.5%     45%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   18.2%  ▂·▂▃●▂▃█▆▄▂▂ beats 9/49   very hard · avg 7.6%     45%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #177 of 526 · 15% of its score</summary>
+<details><summary>math · #180 of 528 · 15% of its score</summary>
 
-Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   57.8%  ▃▃▄▃▃▃●▇█▃▂▅ beats 86/195  very hard · avg 7.0%     15%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   57.8%  ▃▃▄▃▃▃●▇█▃▂▅ beats 86/197  very hard · avg 7.1%     15%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test          result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   57.1%  ▁▁▁▁▂▄▆●▅▇█▄ beats 85/209  hard · avg 38%     35%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   57.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 85/211  hard · avg 39%     35%  sharp · at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   45% ▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.6
+weighted average                                   = 57.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

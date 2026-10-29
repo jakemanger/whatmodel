@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 28.0** ±0.7 · #673 of 729 · from 48 benchmark results across 11 sources
+**score 28.0** ±0.7 · #675 of 731 · from 48 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (lab)</a>                 58.1%  ▅▃·▃··▅·●▅▃█ beats 6/13    medium · avg 75%       1.6%  small run
 <a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (lab)</a>                 50.2%  ●·▂▁······▁▁ beats 0/13    medium · avg 71%       1.3%  sharp · too hard for it · noisy · small…
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">HellaSwag</a>                            54.3%  ●█······▃▃·▅ beats 1/8     easy · avg 86%         1.3%  at its level
-<a href="https://arxiv.org/html/2210.01296v2">Natural Questions (closed book)</a>      15.0%  ▂▁▁▁▂▄▄▃●█▅▁ beats 35/68   medium · avg 38%       1.1%  small run
+<a href="https://arxiv.org/html/2210.01296v2">Natural Questions (closed book)</a>      15.0%  ▂▁▁▁▂▄▄▃●█▅▁ beats 35/68   medium · avg 39%       1.1%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.522.pdf">CommonsenseQA</a>                        53.2%  █·····▂▂▃●▄▄ beats 24/38   very easy · avg 91%    1.1%  sharp · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   57.0%  ▂▂··▂·●···▂▂ beats 4/8     easy · avg 79%         1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2212.12017v3">BoolQ (lab)</a>                          64.0%  ▁····▁▂●▆▅▆▄ beats 31/103  easy · avg 84%         0.9%  at its level · small run

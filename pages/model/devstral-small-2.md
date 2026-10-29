@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 61.2** ±1.9 · #192 of 729 · from 6 benchmark results across 4 sources
+**score 61.0** ±1.9 · #194 of 731 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▅●▅▅▄▂▁   #136 of 310     81%      3
-coding       ▁▁▁▃▆▇█●▅▄▃▁   #141 of 466     65%      2
+agent tasks  ▁▁▃▆█▄●▅▄▄▂▁   #138 of 312     81%      3
+coding       ▁▁▁▃▅▇█●▅▄▃▁   #143 of 468     65%      2
 </pre>
 
-<details><summary>agent tasks · #136 of 310 · 81% of its score</summary>
+<details><summary>agent tasks · #138 of 312 · 81% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>             59.1%  ▁▁▁▁▁▁▂▅●▆▁▁ beats 70/134  hard · avg 22%          51%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>             59.1%  ▁▁▁▁▁▁▂▅●▆▁▁ beats 71/136  hard · avg 23%          51%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       22.5%  ▂▂●▅████▆▂▃▃ beats 3/36    very hard · avg 11%     16%  at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▁●▇█▂▂▁ beats 16/62   hard · avg 30%          14%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▁●▇█▂▂▁ beats 17/63   hard · avg 30%          14%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #141 of 466 · 65% of its score</summary>
+<details><summary>coding · #143 of 468 · 65% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>             59.1%  ▁▁▁▁▁▁▂▅●▆▁▁ beats 70/134  hard · avg 22%     51%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▁●▇█▂▂▁ beats 16/62   hard · avg 30%     14%  at its level · small run
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>             59.1%  ▁▁▁▁▁▁▂▅●▆▁▁ beats 71/136  hard · avg 23%     51%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▁●▇█▂▂▁ beats 17/63   hard · avg 30%     14%  at its level · small run
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ test                          result  vs the others in its run   difficulty     
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/pdf/2607.21482v2">Next Steps data preparation (bala…</a>   74.2%  ▄·▄···●·▄▄·▄ beats 3/6    medium · avg 51%         11%  at its level
-<a href="https://arxiv.org/html/2608.18409v2">SCHEDBench subset, solver-mediate…</a>    7.0%  ●·▄·····▄··█ beats 0/4    very hard · avg 5.3%    5.9%  noisy
+<a href="https://arxiv.org/pdf/2607.21482v2">Next Steps data preparation (bala…</a>   74.2%  ▄·▄···●·▄▄·▄ beats 3/6    medium · avg 52%         11%  at its level
+<a href="https://arxiv.org/html/2608.18409v2">SCHEDBench subset, solver-mediate…</a>    7.0%  ●·▄·····▄··█ beats 0/4    very hard · avg 5.4%    5.9%  noisy
 </pre>
 
 </details>
@@ -66,7 +66,7 @@ source                                    results  share of the score
 <a name="paper-2607.21482v2-nextsteps-dataprep"></a><a href="https://arxiv.org/pdf/2607.21482v2">Agentic coding without the cloud: evalu…</a>        1   11% ▇
 <a name="paper-2608.18409v2-schedbench"></a><a href="https://arxiv.org/html/2608.18409v2">Improving Natural-Language Combinatoria…</a>        1    6% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 61.2
+weighted average                                   = 61.0
 </pre>
 
 <sub>Licences: mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · SERA: Soft-Verified Efficient Repository Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agentic coding without the cloud: evaluating open-weight LLMs on longitudinal data preparation tasks ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Improving Natural-Language Combinatorial-Optimization Accuracy in Resource-Constrained Language Models via Formal Abstractions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

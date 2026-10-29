@@ -6,7 +6,7 @@
 
 Google · released 2025-04 · proprietary
 
-**score 66.4** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 66.2** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▅●▄▄▄▁▁   #161 of 350*    3.3%      1
-coding       ▁▁▁▂▅▇█▇●▄▃▁   #127 of 535*     95%      2
+agent tasks  ▁▁▂▆█▄●▄▄▄▁▁   #163 of 352*    3.3%      1
+coding       ▁▁▁▂▄▆█▇●▄▃▁   #130 of 537*     95%      2
 </pre>
 
-<details><summary>agent tasks · #161 of 350 · 3.3% of its score</summary>
+<details><summary>agent tasks · #163 of 352 · 3.3% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -31,13 +31,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #127 of 535 · 95% of its score</summary>
+<details><summary>coding · #130 of 537 · 95% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](deepseek-v3-2.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   72.9%  ▂·▂▃▅▂▃█▆●▂▂ beats 42/49  very hard · avg 7.5%     78%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   72.9%  ▂·▂▃▅▂▃█▆●▂▂ beats 42/49  very hard · avg 7.6%     78%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   58.7%  ▁··▁·▁▁▁●█▇█ beats 13/45  hard · avg 29%           17%  at its level
 </pre>
 
@@ -53,7 +53,7 @@ source                         results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>          1   17% ▇▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>            1    3% ▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 66.4
+weighted average                        = 66.2
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

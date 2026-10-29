@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.077B params · apache-2.0
 
-**score 16.3** ±2.6 · #706 of 729 · from 11 benchmark results across 5 sources
+**score 16.3** ±2.6 · #708 of 731 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▆▄█▄▁▁▁   #423 of 427*    3.9%      1
+math  ●▁▃▅█▇▄█▄▂▁▁   #425 of 429*    3.9%      1
 </pre>
 
-<details><summary>math · #423 of 427 · 3.9% of its score</summary>
+<details><summary>math · #425 of 429 · 3.9% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 

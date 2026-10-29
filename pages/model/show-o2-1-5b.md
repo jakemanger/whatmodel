@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂▇▇●▅█▇▂▃▁▁   #93 of 157*     89%      2
+text to image  ▁▂██●▆██▂▃▁▁   #93 of 157*     89%      2
 </pre>
 
 <details><summary>text to image · #93 of 157 · 89% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>     73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 20/39  easy · avg 80%          50%  at its level · small run
-<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>   85.0%  ▄·▂·▂●█▄▂▄▂▂ beats 6/17   very easy · avg 88%     38%  small run
+<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>   85.0%  ▄·▂·▂●█▄▂▄▂▂ beats 6/17   very easy · avg 88%     39%  small run
 </pre>
 
 </details>

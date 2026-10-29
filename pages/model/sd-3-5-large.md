@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅▅●▄▄█▃▁▂▁▁   #86 of 126     88%      8
-image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁   #57 of 62*    4.9%      1
+text to image           ▂▅●▃▄▄█▃▂▂▁▁   #86 of 126     88%      8
+image to image / edit…  ▁▁·●▂▃█▅▄▅▂▁   #57 of 62*    4.9%      1
 </pre>
 
 <details><summary>text to image · #86 of 126 · 88% of its score</summary>
@@ -26,13 +26,13 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                938.3  ●▂▃▄▇█▅▂▄▂·▂ beats 1/75   avg 1027             27%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                938.3  ●▂▃▃▆█▃▂▂▂▁▁ beats 1/75   avg 1027             27%  typical
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   15.9%  ▄█●▂▂▂▆▄·▂·▂ beats 6/16   hard · avg 26%       19%  sharp
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            55.2%  ▅▂●▂▂▂····▂▂ beats 7/13   easy · avg 69%       16%  at its level
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              59.1%  ●█·▄·▄·█···▄ beats 1/8    easy · avg 71%       10%  at its level
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    8.6%  ▂●··▂··▃█··▂ beats 1/11   hard · avg 18%      4.9%  sharp
-<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   33.2%  ●··█▄▄·▄▄·▄▄ beats 0/9    medium · avg 51%    4.6%  at its level
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   46.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 11/22  medium · avg 60%    3.8%  at its level
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    8.6%  ▂●··▂··▃█··▂ beats 1/11   hard · avg 17%      4.9%  sharp
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   33.2%  ●··█▄▄·▄▄·▄▄ beats 0/9    medium · avg 51%    4.7%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   46.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 11/22  medium · avg 60%    3.7%  at its level
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    7.5%  ●▂▂█▃▁▂▃·▁·▁ beats 0/22   hard · avg 28%      3.4%  sharp · noisy
 </pre>
 
@@ -44,7 +44,7 @@ Beats [UNO](uno.md) here, though they rank higher overall. Trails [OmniGen2](omn
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    8.6%  ▂●··▂··▃█··▂ beats 1/11   hard · avg 18%    4.9%  sharp
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    8.6%  ▂●··▂··▃█··▂ beats 1/11   hard · avg 17%    4.9%  sharp
 </pre>
 
 </details>
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.5%  ▃·●▅▃·▅▃···▃ beats 1/10   very hard · avg 7.6%    5.9%  sharp · too hard for it
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   794.4  ●▁▁▄▂█▂▁▁▂▁▁ beats 0/34   avg 874                 4.2%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   794.4  ●▁▁▄▂█▂▁▁▂▁▁ beats 0/34   avg 875                 4.2%  typical
 <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   31.1%  ▅·▃·▃··●·█▃▃ beats 4/9    hard · avg 28%          0.7%  blunt
 </pre>
 
@@ -66,7 +66,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   27% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   27% ▇▇▇
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   19% ▇▇
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   16% ▇▇
 <a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   15% ▇▇

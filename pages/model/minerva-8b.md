@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●██▅█▄▁▁▁   #422 of 526*     67%      2
+math  ▁▁▃●██▅█▄▁▁▁   #422 of 528*     67%      2
 </pre>
 
-<details><summary>math · #422 of 526 · 67% of its score</summary>
+<details><summary>math · #422 of 528 · 67% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          16.2%  ▃····●··▃··█ beats 1/5    easy · avg 66%     58%  sharp
-<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   14.1%  ▄··▄··▄·●··█ beats 3/5    hard · avg 32%    8.6%  typical
+<a href="https://arxiv.org/html/2206.14858v2">GSM8K (lab)</a>          16.2%  ▃····●··▃··█ beats 1/5    easy · avg 66%     59%  sharp
+<a href="https://arxiv.org/html/2206.14858v2">Minerva MATH (lab)</a>   14.1%  ▄··▄··▄·●··█ beats 3/5    hard · avg 33%    8.6%  typical
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                result  vs the others in its run  difficulty      counts  wh
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   35.6%  ▄······●▄·▄█ beats 1/5    medium · avg 62%     23%  sharp
+<a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   35.6%  ▄······●▄·▄█ beats 1/5    medium · avg 62%     22%  sharp
 <a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>          7.7%  ▄·····▄●··▄▄ beats 3/5    hard · avg 15%      8.4%  too hard for it
 </pre>
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 0.49B params · apache-2.0
 
-**score 29.8** ±1.7 · #659 of 729 · from 12 benchmark results across 7 sources
+**score 29.8** ±1.7 · #661 of 731 · from 12 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▅▄▂▁   #300 of 310*    5.2%      1
-chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #357 of 398*    9.4%      2
+agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #302 of 312*    5.2%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #360 of 401*    9.4%      2
 math            █··········●       #1 of 2*     18%      1
 </pre>
 
-<details><summary>agent tasks · #300 of 310 · 5.2% of its score</summary>
+<details><summary>agent tasks · #302 of 312 · 5.2% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -32,14 +32,14 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #357 of 398 · 9.4% of its score</summary>
+<details><summary>chat &amp; writing · #360 of 401 · 9.4% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.9%  ▁·▁▁▂▁●▄▆▄█▄ beats 7/38   medium · avg 45%    5.5%  sharp · too hard for it
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified)</a>     31.6%  ●▂▄▂▂▄▆█▇▄▂▁ beats 0/142  easy · avg 75%      3.9%  at its level · small run
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.9%  ▁·▁▁▂▁●▄▆▄█▄ beats 7/38   medium · avg 46%    5.5%  sharp · too hard for it
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified)</a>     31.6%  ●▂▄▂▂▄▆█▇▄▂▁ beats 0/143  easy · avg 76%      3.9%  at its level · small run
 </pre>
 
 </details>
@@ -57,9 +57,9 @@ test   result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   28.0%  ●▂▂▂▃█▃▆▅▄▂▃ beats 0/95    medium · avg 64%        20%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   28.0%  ●▂▂▂▃█▃▆▅▄▂▃ beats 0/95    medium · avg 65%        20%  at its level
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard</a>                       30.7%  ▁▁▁▁●▄▅▆█▃▃▁ beats 12/155  medium · avg 62%        16%  sharp · too hard for it · small run
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   33.3%  ▂●▂▃█▄▃▆▃▅▂▂ beats 4/81    medium · avg 56%        12%  blunt · at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   33.3%  ▂●▂▃█▄▃▆▃▅▂▂ beats 4/81    medium · avg 57%        12%  blunt · at its level
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag</a>                            48.0%  ▁▁▁▂▂●▄▆█▇▄▂ beats 21/135  easy · avg 83%         5.0%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   50.9%  ▃▁▁▁▁▁▁●▂█▅▁ beats 71/276  medium · avg 72%       4.4%  noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   74.8%  ●▁▂▃▄▄█▆▃▂▂▁ beats 2/140   very easy · avg 94%    4.2%  blunt · noisy

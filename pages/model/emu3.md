@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▁▂▁▁   #103 of 126     98%      6
+text to image  ▂●▅▃▄▄█▃▂▂▁▁   #103 of 126     98%      6
 </pre>
 
 <details><summary>text to image · #103 of 126 · 98% of its score</summary>
@@ -27,7 +27,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            41.7%  ●▂█▂▂▂····▂▂ beats 0/13   easy · avg 69%       45%  at its level
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    8.8%  ●█▂▂▂▂▆▄·▂·▂ beats 1/16   hard · avg 26%       32%  sharp · too hard for it
-<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    6.1%  ●··▃·█▃▃▅··▃ beats 0/9    hard · avg 24%       11%  typical
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    6.1%  ●··▃·█▃▃▅··▃ beats 0/9    hard · avg 24%       10%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   39.0%  ▄·▆▂●█▄▆▂▄·▄ beats 6/22   medium · avg 60%     10%  at its level
 <a href="https://arxiv.org/html/2409.18869v1">GenEval (lab)</a>                        54.0%  ▇▃●▇▁▄▅▃█▃▃▅ beats 8/39   easy · avg 79%         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2409.18869v1">DPG-Bench (lab)</a>                      80.6%  ●·▂·▂▆█▄▂▄▂▂ beats 1/17                          —  not counted yet: no other model in the …
@@ -43,7 +43,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   45% ▇▇▇▇▇
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   32% ▇▇▇▇
-<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   11% ▇
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   10% ▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 35.6

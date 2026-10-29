@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
-**score 57.9** ±2.3 · #56 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.8** ±2.3 · #56 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▁▂▁▁   #57 of 126*     16%      1
+text to image  ▂▅▅▃▄●█▃▂▂▁▁   #57 of 126*     17%      1
 </pre>
 
-<details><summary>text to image · #57 of 126 · 16% of its score</summary>
+<details><summary>text to image · #57 of 126 · 17% of its score</summary>
 
 Trails [LLaDA-Image](llada-image.md), [Z-Image-Turbo](z-image-turbo.md), [Qwen-Image-2512](qwen-image-2512.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>   49.8%  ▄·····●█▄·▄█ beats 1/7    medium · avg 41%     16%  at its level
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>   49.8%  ▄·····●█▄·▄█ beats 1/7    medium · avg 41%     17%  at its level
 </pre>
 
 </details>
@@ -46,9 +46,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1   16% ▇▇
+<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1   17% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 57.9
+weighted average                                   = 57.8
 </pre>
 
 <sub>Licences: Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>

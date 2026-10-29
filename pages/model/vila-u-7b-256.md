@@ -6,7 +6,7 @@
 
 MIT Han Lab / NVIDIA · released 2024-10 · 8.12B params · mit
 
-**score 32.1** ±6.5 · #128 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±6.6 · #128 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▁▂▁▁   #115 of 126*     82%      1
+text to image  ▂●▅▃▄▄█▃▂▂▁▁   #115 of 126*     82%      1
 </pre>
 
 <details><summary>text to image · #115 of 126 · 82% of its score</summary>

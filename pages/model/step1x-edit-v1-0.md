@@ -6,7 +6,7 @@
 
 StepFun · released 2025-04 · 12.43B params · apache-2.0
 
-**score 36.8** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.9** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁●▃▂▂█▃▄▄▂▁   #77 of 81*     72%      2
+image to image / edit…  ▁▁●▃▃▃█▅▃▄▂▁   #77 of 81*     72%      2
 </pre>
 
 <details><summary>image to image / editing · #77 of 81 · 72% of its score</summary>
@@ -25,7 +25,7 @@ Trails [OmniGen (v1)](omnigen-v1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                     996.4  ●▁▁▃▆█▄█▄█▁▂ beats 0/53   avg 1153       72%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                     996.5  ●▁▁▃▆█▄█▇▄▂▂ beats 0/53   avg 1153       72%  typical
 <a href="https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md">GEdit-Bench-EN overall (G_O, GPT-…</a>   64.4%  ▄·····●·▄▄·▄ beats 1/5                     —  not counted yet: no other model in the …
 </pre>
 
@@ -46,10 +46,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   72% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   72% ▇▇▇▇▇▇▇▇▇
 <a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   23% ▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 36.8
+weighted average                                   = 36.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

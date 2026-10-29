@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 59.0** ±2.5 · #46 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.0** ±2.6 · #48 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #43 of 126*     97%      1
+text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #44 of 126*     97%      1
 </pre>
 
-<details><summary>text to image · #43 of 126 · 97% of its score</summary>
+<details><summary>text to image · #44 of 126 · 97% of its score</summary>
 
-Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank lower overall.
+Beats [Wan 2.7 Image](wan-2-7-image.md), [Recraft V4](recraft-v4.md) here, though they rank higher overall. Trails [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1115.6  ▂▂▃▄●█▅▂▄▂·▂ beats 31/75  avg 1027       97%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1115.6  ▁▂▃▃●█▃▂▂▂▁▁ beats 33/75  avg 1027       97%  typical
 </pre>
 
 </details>

@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▆██●█▄▁▁▁   #197 of 526*     23%      1
+math  ▁▁▃▆██●█▄▁▁▁   #199 of 528*     23%      1
 </pre>
 
-<details><summary>math · #197 of 526 · 23% of its score</summary>
+<details><summary>math · #199 of 528 · 23% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 57.9%  ▂▂▂▂·▅·▃▂█▃● beats 17/18  medium · avg 60%     22%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           73.5%  ▁···▁··▃▁▅▅● beats 17/18  easy · avg 74%       21%  at its level
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   60.3%  ▄······▄▄▄·● beats 5/5    medium · avg 58%     12%  at its level
-<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    56.5%  ▄·····▄··█·● beats 5/5    medium · avg 55%     11%  at its level
+<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    56.5%  ▄·····▄··█·● beats 5/5    medium · avg 55%     10%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   67.8%  ▂··▂·▂▄▄·██● beats 17/18  medium · avg 61%    7.7%  at its level
 <a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (lab)</a>   79.0%  ▄·······▄▄▄● beats 5/5    medium · avg 75%    2.8%  at its level · noisy
 </pre>

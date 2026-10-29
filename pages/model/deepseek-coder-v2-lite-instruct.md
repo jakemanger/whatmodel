@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 15.71B params (2.4B active) · deepseek
 
-**score 46.3** ±1.1 · #447 of 729 · from 10 benchmark results across 7 sources
+**score 46.3** ±1.1 · #448 of 731 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▅▅▅▅▄▂▁   #307 of 310*    2.9%      1
-coding       ▁▁▁▃▆●█▇▅▄▃▁    #318 of 466     34%      6
+agent tasks  ●▁▃▆█▄▅▅▄▄▂▁   #309 of 312*    2.9%      1
+coding       ▁▁▁▃▅●█▇▅▄▃▁    #320 of 468     34%      6
 </pre>
 
-<details><summary>agent tasks · #307 of 310 · 2.9% of its score</summary>
+<details><summary>agent tasks · #309 of 312 · 2.9% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -31,17 +31,17 @@ test     result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #318 of 466 · 34% of its score</summary>
+<details><summary>coding · #320 of 468 · 34% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Code Tulu 2 34B](code-tulu-2-34b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   20.6%  ▁▁·▁▂●▆█▅▂·▂ beats 5/31   hard · avg 23%       19%  sharp
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     46.1%  ▃▁▁█▁●▅▃▄▇▁▄ beats 11/31  medium · avg 39%    4.8%  sharp · at its level · noisy
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     46.1%  ▃▁▁█▁●▅▃▄▇▁▄ beats 11/31  medium · avg 40%    4.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   12.8%  ▃··▁▂●▃▂█▃▄▂ beats 10/47  medium · avg 51%    3.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.2%  █▂▁▁▂●▂▃▅▅▅▇ beats 15/47  hard · avg 32%      3.5%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   27.0%  ▁▁▁▁▁▁▂▂●█▅▄ beats 18/47  hard · avg 31%      3.0%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.2%  █▂▁▁▂●▂▃▅▅▅▇ beats 15/47  hard · avg 33%      3.5%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   27.0%  ▁▁▁▁▁▁▂▂●█▅▄ beats 18/47  hard · avg 32%      3.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 31/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 29.5%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 26/61  medium · avg 38%     48%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   79.0%  ▂·▂▂▂▆▅▆●▆▃█ beats 16/29  easy · avg 74%      8.9%  at its level
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   17.1%  ●··▃▅·█·▃██▃ beats 0/15   hard · avg 22%      5.8%  typical
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   17.1%  ●··▃▅·█·▃██▃ beats 0/15   hard · avg 22%      5.9%  typical
 </pre>
 
 </details>

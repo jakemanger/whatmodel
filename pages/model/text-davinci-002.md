@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▆●█▅█▄▁▁▁   #311 of 526     25%      2
+math  ▁▁▃▆█●▅█▄▁▁▁   #304 of 528     25%      2
 </pre>
 
-<details><summary>math · #311 of 526 · 25% of its score</summary>
+<details><summary>math · #304 of 528 · 25% of its score</summary>
 
-Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>   46.9%  █·▅▃▃▃·▃·▃●▅ beats 10/12  easy · avg 66%       22%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>   46.9%  █·▅▃▃▃·▃·▃●▅ beats 10/12  easy · avg 67%       22%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    23.7%  ▆·▂·▄▂▂▂●█▄▆ beats 9/18   medium · avg 48%    2.5%  sharp · at its level
 </pre>
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP</a>                                68.9%  ▃▅█···▅·▃▃●▅ beats 10/12    easy · avg 82%          14%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                             35.8%  █▁·▁▁·····●▁ beats 11/12    medium · avg 48%        12%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        79.5%  █······▁·▁▁● beats 11/12    easy · avg 75%         9.0%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union)</a>              87.1%  ▅▃█···▅·▃▃●▅ beats 10/12    very easy · avg 94%    5.9%  sharp
+<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union)</a>              87.1%  ▅▃█···▅·▃▃●▅ beats 10/12    very easy · avg 94%    5.8%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv</a>                                71.3%  ▅▃▃▅··▃▃·▃▃● beats 10/12    easy · avg 83%         5.2%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11416v5">MMLU</a>                                 63.1%  ▁···▁··▃▁▅●█ beats 11/18    easy · avg 74%         4.5%  at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard</a>                       48.6%  ▂▂▂▂·▅·▃▂●▃▃ beats 11/18    medium · avg 60%       3.8%  sharp · at its level · several runs
@@ -57,8 +57,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2023.nlrse-1.2.pdf">HellaSwag</a>                            71.7%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 74/135   easy · avg 77%         0.5%  at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.530.pdf">Anthropic HH helpful preference c…</a>   61.0%  █········●·█ beats 1/2      hard · avg 65%         0.4%  small run
 <a href="https://aclanthology.org/2023.acl-long.202.pdf">ACE05-E event argument extraction…</a>   56.5%  ●·····█····█ beats 0/2      medium · avg 65%       0.4%  at its level · small run
-<a href="https://aclanthology.org/2023.acl-long.855.pdf">CoNLL-2003 English NER, few-shot …</a>   81.0%  ▃···▅·▃▅··▃● beats 7/9      easy · avg 84%         0.4%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.392.pdf">BoolQ</a>                                58.8%  ▁····▁●█▆▅▆▄ beats 8/103    medium · avg 75%       0.4%  at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.855.pdf">CoNLL-2003 English NER, few-shot …</a>   81.0%  ▃···▅·▃▅··▃● beats 7/9      easy · avg 84%         0.4%  small run
 <a href="https://aclanthology.org/2023.acl-long.136.pdf">PopQA</a>                                34.7%  ▁▂▁▃▃█▂█▆●▁▆ beats 32/40    hard · avg 31%         0.4%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   60.1%  ▄····▄·●···▄ beats 3/4      hard · avg 65%         0.4%  noisy
 <a href="https://aclanthology.org/2023.acl-long.550.pdf">CSK-PN boolean commonsense QA (10…</a>   84.4%  ▃·▃·····▃▃▃● beats 6/7      easy · avg 87%         0.4%  blunt · at its level

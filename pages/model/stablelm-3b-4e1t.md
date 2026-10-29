@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-09 · 2.8B params · cc-by-sa-4.0
 
-**score 29.6** ±1.0 · #662 of 729 · from 11 benchmark results across 2 sources
+**score 29.6** ±1.0 · #664 of 731 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

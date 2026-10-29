@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 57.8** ±0.9 · #228 of 729 · from 24 benchmark results across 5 sources
+**score 57.7** ±0.9 · #230 of 731 · from 24 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆▇█●▅▄▃▁   #146 of 466*     12%      3
-chat &amp; writing  ▁▁▁▃▆▄▆█●▆▇▃    #177 of 398     11%      3
-math            ▁▁▃▅█▆●█▄▁▁▁    #171 of 427     19%      3
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #148 of 468*     12%      3
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃    #180 of 401     10%      3
+math            ▁▁▃▅█▇●█▄▂▁▁    #174 of 429     19%      3
 </pre>
 
-<details><summary>coding · #146 of 466 · 12% of its score</summary>
+<details><summary>coding · #148 of 468 · 12% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 
@@ -34,27 +34,27 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #177 of 398 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #180 of 401 · 10% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2504.21318v1">Arena-Hard (version/judge unspeci…</a>   73.3%  ▃▃▂▅▃▆▅█●▅▂▃ beats 22/30   medium · avg 59%    7.6%  at its level · several runs
+<a href="https://arxiv.org/html/2504.21318v1">Arena-Hard (version/judge unspeci…</a>   73.3%  ▃▃▂▅▃▆▅█●▅▂▃ beats 22/30   medium · avg 59%    7.5%  at its level · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruction…</a>   83.4%  █·········●█ beats 1/2     easy · avg 67%      1.6%  small run
-<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   83.4%  ▁▂▄▂▂▄●█▇▄▂▁ beats 64/142  easy · avg 73%      1.3%  typical
+<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   83.4%  ▁▂▄▂▂▄●█▇▄▂▁ beats 64/143  easy · avg 73%      1.3%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #171 of 427 · 19% of its score</summary>
+<details><summary>math · #174 of 429 · 19% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 44%    8.4%  sharp · at its level · small run · seve…
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 55%    7.4%  sharp · small run · several runs
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 45%    8.4%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 56%    7.4%  sharp · small run · several runs
 <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>   43.8%  ▁▁▁●▁▅▅▃██▁▄ beats 4/31   hard · avg 32%      3.0%  at its level · small run
 </pre>
 
@@ -64,14 +64,14 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>                   67.1%  ●··▄··▄···█▄ beats 1/6      hard · avg 42%       20%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4815  ▁▄▃▃▇●█▃▅▁▁▁ beats 15/30    avg 0.417            15%  sharp
+<a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>                   67.1%  ●··▄··▄···█▄ beats 1/6      hard · avg 43%       20%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4815  ▁▄▃▃▇●█▃▅▁▁▁ beats 15/30    avg 0.418            15%  sharp
 <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                       74.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 100/188  medium · avg 59%    8.6%  at its level · several runs
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 14/34    medium · avg 41%    6.7%  blunt · at its level
-<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.7%  ▄···▄····▄·● beats 3/4      easy · avg 85%      4.0%  sharp · noisy · several runs
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.7%  ▄···▄····▄·● beats 3/4      easy · avg 86%      3.9%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 142/276  medium · avg 72%    1.6%  at its level · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   48.7%  ▃·▁▁▂▁●▅█▇▄▁ beats 25/100   medium · avg 66%    1.2%  sharp · noisy
-<a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                      76.6%  █·█·█·█●··██ beats 4/6      easy · avg 68%      1.0%  blunt · at its level · small run · seve…
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   48.7%  ▃·▁▁▂▁●▅█▇▄▁ beats 25/100   medium · avg 67%    1.2%  sharp · noisy
+<a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                      76.6%  █·█·█·█●··██ beats 4/6      easy · avg 68%      1.1%  blunt · at its level · small run · seve…
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 88/146   easy · avg 82%      0.6%  noisy
 </pre>
 
@@ -89,7 +89,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.8
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.3** ±1.1 · #275 of 729 · from 8 benchmark results across 4 sources
+**score 55.2** ±1.1 · #277 of 731 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▅▅▅▅▄▂▁   #286 of 310*    2.5%      1
-coding       ●█········██       #4 of 4*    6.2%      1
-math         ▁▁▃▅█●▄█▄▁▁▁    #207 of 427     43%      3
+agent tasks  ▁▁●▆█▄▅▅▄▄▂▁   #288 of 312*    2.5%      1
+coding       ●█········██       #4 of 4*    6.1%      1
+math         ▁▁▃▅█●▄█▄▂▁▁    #210 of 429     43%      3
 </pre>
 
-<details><summary>agent tasks · #286 of 310 · 2.5% of its score</summary>
+<details><summary>agent tasks · #288 of 312 · 2.5% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -32,18 +32,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #4 of 4 · 6.2% of its score</summary>
+<details><summary>coding · #4 of 4 · 6.1% of its score</summary>
 
 Trails [Magistral Small 1.1 (2507)](magistral-small-2507.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   55.8%  ●█▄······▄·▄ beats 0/5    medium · avg 50%    6.2%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   55.8%  ●█▄······▄·▄ beats 0/5    medium · avg 50%    6.1%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #207 of 427 · 43% of its score</summary>
+<details><summary>math · #210 of 429 · 43% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 48%         21%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         15%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/195  very hard · avg 7.0%    7.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/197  very hard · avg 7.1%    7.1%  sharp · noisy
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test                      result  vs the others in its run   difficulty         
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▄▆●▅▇█▄ beats 80/209  medium · avg 52%     40%  sharp · at its level · several runs
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.6%  ▁▁▁▁▁▂▂▃▄●█▃ beats 58/97   hard · avg 31%      7.9%  blunt · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 80/211  medium · avg 52%     40%  sharp · at its level · several runs
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.6%  ▁▁▁▁▁▂▂▃▄●█▃ beats 58/97   hard · avg 31%      8.0%  blunt · at its level
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    8% ▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                       1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.3
+weighted average                                   = 55.2
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

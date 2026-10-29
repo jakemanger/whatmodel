@@ -6,7 +6,7 @@
 
 ByteDance · released 2025-04 · cc-by-nc-4.0
 
-**score 43.2** ±4.0 · #96 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.2** ±4.0 · #97 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅●▄▄█▃▁▂▁▁   #79 of 126*     79%      1
-image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁    #58 of 62*     14%      1
+text to image           ▂▅▅●▄▄█▃▂▂▁▁   #79 of 126*     79%      1
+image to image / edit…  ▁▁·●▂▃█▅▄▅▂▁    #58 of 62*     14%      1
 </pre>
 
 <details><summary>text to image · #79 of 126 · 79% of its score</summary>

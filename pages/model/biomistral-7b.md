@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 39.4** ±3.0 · #571 of 729 · from 3 benchmark results across 3 sources
+**score 39.3** ±3.0 · #573 of 731 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   20.4%  ▁▁▁▁▁●▂▃▄▆█▃ beats 12/97  hard · avg 31%       42%  blunt
 <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   30.6%  ●·▂▂▂··█▂▄·▄ beats 1/13   hard · avg 46%       37%  typical
-<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   47.1%  ▂···▂▂·▃●▃██ beats 5/17   medium · avg 52%     16%  typical
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   47.1%  ▂···▂▂·▃●▃██ beats 5/17   medium · avg 53%     16%  typical
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   37% ▇▇▇▇
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   16% ▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 39.4
+weighted average                                   = 39.3
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

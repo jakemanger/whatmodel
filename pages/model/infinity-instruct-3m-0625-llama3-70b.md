@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 70.55B params · apache-2.0
 
-**score 51.1** ±1.5 · #442 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.1** ±1.5 · #445 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #285 of 469*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #288 of 472*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #285 of 469 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #288 of 472 · 99% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
-test                            result  vs the others in its run   difficulty      counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   38.0%  ▁▂▂▃▆▆█▆●▄▁▁ beats 93/122  hard · avg 35%     99%  sharp · at its level
+test                            result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   38.0%  ▁▂▂▃▆▆█▆●▄▁▁ beats 93/122  medium · avg 35%     99%  sharp · at its level
 </pre>
 
 </details>

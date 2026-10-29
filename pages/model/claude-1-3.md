@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-05 · proprietary
 
-**score 48.8** ±1.3 · comparison only: no current run option verified · from 15 benchmark results across 7 sources
+**score 48.7** ±1.3 · comparison only: no current run option verified · from 15 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂▅●█▇▅▄▃▁   #417 of 535*     11%      1
-math    ▁▁▃▆█●▅█▄▁▁▁    #253 of 526     30%      1
+coding  ▁▁▁▂▄●█▇▅▄▃▁   #418 of 537*     11%      1
+math    ▁▁▃▆█●▅█▄▁▁▁    #255 of 528     30%      1
 </pre>
 
-<details><summary>coding · #417 of 535 · 11% of its score</summary>
+<details><summary>coding · #418 of 537 · 11% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
@@ -31,7 +31,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>math · #253 of 526 · 30% of its score</summary>
+<details><summary>math · #255 of 528 · 30% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-600"></a><a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits: Measuring LLM Ability at Fac…</a>        1    4% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.8
+weighted average                                   = 48.7
 </pre>
 
 <sub>Licences: Chain-of-Thought Hub: A Continuous Effort to Measure Large Language Models' Reasoning Performance ([CC BY 4.0](../../licenses/paper-2305.17306v1-CC-BY-4-0.txt)) · LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-825-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-689-CC-BY-4-0.txt)) · SummEdits: Measuring LLM Ability at Factual Reasoning Through The Lens of Summarization ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-600-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

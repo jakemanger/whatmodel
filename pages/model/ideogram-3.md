@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄●█▃▁▂▁▁   #64 of 126*     82%      2
-image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁    #45 of 62*     21%      1
+text to image           ▂▅▅▃▄●█▃▂▂▁▁   #64 of 126*     82%      2
+image to image / edit…  ▁▁·▃▂●█▅▄▅▂▁    #45 of 62*     21%      1
 </pre>
 
 <details><summary>text to image · #64 of 126 · 82% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1048.4  ▂▂▃●▇█▅▂▄▂·▂ beats 15/75  avg 1027           62%  typical
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   25.9%  ▂▃··▂··●█··▂ beats 5/11   hard · avg 18%     21%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1048.4  ▁▂▃●▆█▃▂▂▂▁▁ beats 15/75  avg 1027           62%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   25.9%  ▂▃··▂··●█··▂ beats 5/11   hard · avg 17%     21%  sharp
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-k
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   25.9%  ▂▃··▂··●█··▂ beats 5/11   hard · avg 18%     21%  sharp
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   25.9%  ▂▃··▂··●█··▂ beats 5/11   hard · avg 17%     21%  sharp
 </pre>
 
 </details>

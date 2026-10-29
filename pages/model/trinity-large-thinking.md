@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 62.3** ±1.5 · #178 of 729 · from 5 benchmark results across 2 sources
+**score 62.2** ±1.5 · #178 of 731 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,47 +17,47 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
-coding          ▁▁▁▃▆▇█●▅▄▃▁     #175 of 466*     44%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█●▆▇▃     #144 of 398*     25%      1
-math            █··········●         #1 of 2*    3.0%      1
+coding          ▁▁▁▃▅▇█●▅▄▃▁     #177 of 468*     44%      1
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃     #147 of 401*     25%      1
+math            █··········●         #1 of 2*    3.1%      1
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
 
 <pre>
 test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (lab)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 8.6%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (lab)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 8.7%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #175 of 466 · 44% of its score</summary>
+<details><summary>coding · #177 of 468 · 44% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.8  ▁▁●▃▆█▄▇▅▅▁▁ beats 9/126  avg 978        44%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1238.0  ▁▁●▂▅█▃▆▅▅▁▂ beats 9/129  avg 982        44%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #144 of 398 · 25% of its score</summary>
+<details><summary>chat &amp; writing · #147 of 401 · 25% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1367.3  ▁▁▁▂▃▃▃▆●▇█▃ beats 211/382  avg 1259       25%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1367.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 211/385  avg 1259       25%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #1 of 2 · 3.0% of its score</summary>
+<details><summary>math · #1 of 2 · 3.1% of its score</summary>
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 36%    3.0%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 36%    3.1%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -66,8 +66,8 @@ test             result  vs the others in its run    difficulty        counts  w
 
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●▇█▄ beats 181/315  hard · avg 43%       19%  sharp · at its level · small run
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 59%    8.3%  small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●▇█▄ beats 182/318  hard · avg 43%       19%  sharp · at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 59%    8.5%  small run
 </pre>
 
 </details>
@@ -78,10 +78,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   69% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   69% ▇▇▇▇▇▇▇▇
 <a name="first-party-arcee-scores"></a><a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">Arcee AI vendor-reported benchmark scor…</a>        3   30% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.3
+weighted average                                   = 62.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

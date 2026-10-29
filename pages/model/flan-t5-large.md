@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.783B params · apache-2.0
 
-**score 31.6** ±1.1 · #650 of 729 · from 18 benchmark results across 11 sources
+**score 31.6** ±1.1 · #652 of 731 · from 18 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▁▁▁   #419 of 427*     19%      2
+math  ▁●▃▅█▇▄█▄▂▁▁   #421 of 429*     19%      2
 </pre>
 
-<details><summary>math · #419 of 427 · 19% of its score</summary>
+<details><summary>math · #421 of 429 · 19% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2301.12726v1">GSM8K</a>         6.9%  ▂▂▂●▃▄▅▇██▆▄ beats 28/206  medium · avg 49%     13%  sharp · too hard for it
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.7%  ●·▂·▄▂▂▂▂█▄▆ beats 2/18    medium · avg 48%    5.5%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.7%  ●·▂·▄▂▂▂▂█▄▆ beats 2/18    medium · avg 48%    5.4%  sharp · too hard for it
 </pre>
 
 </details>

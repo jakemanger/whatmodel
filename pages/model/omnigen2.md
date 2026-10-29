@@ -16,18 +16,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅●▃▄▄█▃▁▂▁▁   #91 of 126*     21%      3
-image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁     #55 of 62     57%      8
+text to image           ▂▅●▃▄▄█▃▂▂▁▁   #92 of 126*     21%      3
+image to image / edit…  ▁▁·●▂▃█▅▄▅▂▁     #55 of 62     57%      8
 </pre>
 
-<details><summary>text to image · #91 of 126 · 21% of its score</summary>
+<details><summary>text to image · #92 of 126 · 21% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md), [Playground v2.5](playground-v2-5.md), [Stable Diffusion 3.5 Medium](sd-3-5-medium.md) here, though they rank lower overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [Stable Cascade](stable-cascade.md), [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md), [Playground v2.5](playground-v2-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   74.0%  ▄··●▄·▄··▄·▄ beats 1/6    easy · avg 84%     16%  at its level
-<a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 1/4    easy · avg 70%    5.9%  at its level
+<a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 1/4    easy · avg 70%    5.8%  at its level
 <a href="https://arxiv.org/html/2506.18871v4">OneIG-Bench (EN) (lab)</a>               47.0%  ●······▃▅█▅▃ beats 0/9                         —  not counted yet: no other model in the …
 </pre>
 
@@ -39,12 +39,12 @@ Beats [UNO](uno.md), [BAGEL](bagel.md), [Stable Diffusion 3.5 Large](sd-3-5-larg
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           37.6%  ▃▃▂·▃●▂█·▃·▃ beats 7/20   hard · avg 45%       22%  typical
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           37.6%  ▃▃▂·▃●▂█·▃·▃ beats 7/20   hard · avg 45%       23%  typical
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              61.2%  ▂····▂●▂▄·█▂ beats 2/11   easy · avg 73%       10%  at its level
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>          888.0  ▃●····▂█▂▃▂▃ beats 2/14   avg 956             6.7%  blunt
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   68.2%  ▄●▄··█··▄·▄▄ beats 1/8    easy · avg 74%      5.9%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   34.7%  ▄·●▄▄▄··█▄·▄ beats 1/8    medium · avg 50%    4.9%  at its level
-<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editing (…</a>   58.0%  █··●··██···█ beats 1/4    easy · avg 73%      4.3%  blunt · at its level
+<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editing (…</a>   58.0%  █··●··██···█ beats 1/4    easy · avg 73%      4.2%  blunt · at its level
 <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   79.5%  ▃▃▃··▃·····● beats 6/6    medium · avg 65%    2.7%  at its level · noisy
 <a href="https://arxiv.org/html/2506.18871v4">GEdit-Bench-EN overall (G_O, GPT-…</a>   72.1%  ▄·····█·▄●·▄ beats 4/5                           —  not counted yet: no other model in the …
 </pre>
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   22% ▇▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   23% ▇▇▇
 <a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        2   20% ▇▇
 <a name="visual-hp-edit"></a><a href="https://arxiv.org/html/2604.19406v1#S5.T1">HP-Edit: A Human-Preference Post-Traini…</a>        1   11% ▇
 <a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   10% ▇

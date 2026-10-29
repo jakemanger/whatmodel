@@ -6,7 +6,7 @@
 
 Saama AI Labs · released 2024-04 · llama3
 
-**score 41.1** ±2.3 · #546 of 729 · from 4 benchmark results across 2 sources
+**score 41.1** ±2.3 · #547 of 731 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

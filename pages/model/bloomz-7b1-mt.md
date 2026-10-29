@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 47.0** ±9.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.9** ±9.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-490"></a><a href="https://aclanthology.org/2023.findings-emnlp.490.pdf">A Comprehensive Evaluation of Large Lan…</a>        1   58% ▇▇▇▇▇▇▇
 prior: pull toward the middle                       42% ▇▇▇▇▇
-weighted average                                   = 47.0
+weighted average                                   = 46.9
 </pre>
 
 <sub>Licences: A Comprehensive Evaluation of Large Language Models on Legal Judgment Prediction ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-490-CC-BY-4-0.txt))</sub>

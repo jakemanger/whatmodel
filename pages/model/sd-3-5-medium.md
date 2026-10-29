@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▁▂▁▁   #89 of 126*     76%      2
+text to image  ▂▅●▃▄▄█▃▂▂▁▁   #89 of 126*     76%      2
 </pre>
 
 <details><summary>text to image · #89 of 126 · 76% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            52.2%  ▅▂●▂▂▂····▂▂ beats 5/13   easy · avg 69%       62%  at its level
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   45.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 10/22  medium · avg 60%     15%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   45.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 10/22  medium · avg 60%     14%  at its level
 </pre>
 
 </details>
@@ -47,8 +47,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   62% ▇▇▇▇▇▇▇
-<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   21% ▇▇
-<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   15% ▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   21% ▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   14% ▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 40.8
 </pre>

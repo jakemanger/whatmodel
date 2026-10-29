@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▆██▅█▄▁▁▁   #522 of 526*    4.3%      1
+math  ●▁▃▆██▅█▄▁▁▁   #524 of 528*    4.3%      1
 </pre>
 
-<details><summary>math · #522 of 526 · 4.3% of its score</summary>
+<details><summary>math · #524 of 528 · 4.3% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>    0.5%  ●·▅▃▃▃·▃·▃▃▅ beats 2/12   easy · avg 66%    4.3%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K</a>    0.5%  ●·▅▃▃▃·▃·▃▃▅ beats 2/12   easy · avg 67%    4.3%  sharp · too hard for it
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.acl-long.41.pdf">New Yorker Caption Contest matchi…</a>   20.1%  ●·····▃··▅·▃ beats 2/6    medium · avg 71%       3.9%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry accuracy (zero-shot)</a>         25.2%  ▂●·▄▄█▂·▂··▂ beats 1/14   medium · avg 65%       3.8%  blunt
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding</a>       33.8%  ●·····▃·▁·▄▁ beats 5/12   medium · avg 81%       2.7%  sharp · too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        14.7%  ●······▁·▁▁▃ beats 5/12   easy · avg 87%         2.7%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA</a>                        14.7%  ●······▁·▁▁▃ beats 5/12   easy · avg 88%         2.7%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   50.6%  ●▂▄··▂▂█▄··▂ beats 0/12   easy · avg 90%         2.1%  too hard for it · noisy
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT</a>                              8.7%  ●▁·▁▁·····▂▁ beats 6/12   medium · avg 48%       0.3%  sharp · too hard for it
 </pre>

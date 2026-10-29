@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 29.7** ±1.0 · #661 of 729 · from 12 benchmark results across 2 sources
+**score 29.7** ±1.0 · #663 of 731 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Challenge</a>                        42.4%  ▁·▁··▁▁▇▂●▆▃ beats 17/26   easy · avg 82%          48%  sharp
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">WinoGrande</a>                           65.8%  ▁····▁··▁▂●▄ beats 13/26   easy · avg 86%          11%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">BoolQ</a>                                71.4%  ▂▃▂▅▆▂▅●█▂▂▂ beats 15/26   easy · avg 88%         8.5%  at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                            74.6%  ▃···▁▇▅█●▃▁▁ beats 18/26   very easy · avg 91%    6.2%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                            74.6%  ▃···▁▇▅█●▃▁▁ beats 18/26   very easy · avg 91%    6.1%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Easy</a>                             69.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 18/26   easy · avg 85%         5.8%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                                 93.8%  ▁·▁·▁·▃▅▃●▄▁ beats 19/26   very easy · avg 97%    4.7%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                                 79.2%  ▁·▁··▁▁▃█▅●▂ beats 23/26   easy · avg 87%         4.2%  blunt · at its level

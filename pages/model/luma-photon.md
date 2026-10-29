@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃●▄█▃▁▂▁▁   #66 of 126     84%      3
+text to image  ▂▅▅▃●▄█▃▂▂▁▁   #66 of 126     84%      3
 </pre>
 
 <details><summary>text to image · #66 of 126 · 84% of its score</summary>
@@ -25,7 +25,7 @@ Beats [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [P-Image](p-image.md) here, tho
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1035.7  ▂▂▃●▇█▅▂▄▂·▂ beats 14/75  avg 1027             56%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1036.1  ▁▂▃●▆█▃▂▂▂▁▁ beats 14/75  avg 1027             56%  typical
 <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              73.8%  ██·▄·▄·●···▄ beats 7/8    easy · avg 71%       18%  at its level
 <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   58.7%  █··█▄▄·●▄·▄▄ beats 6/9    medium · avg 51%     10%  at its level
 </pre>
@@ -47,7 +47,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   56% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   56% ▇▇▇▇▇▇▇
 <a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   28% ▇▇▇
 <a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   14% ▇▇
 prior: pull toward the middle                        2% ▇

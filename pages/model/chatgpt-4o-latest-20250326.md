@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · closed weights
 
-**score 64.8** ±1.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 64.7** ±1.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,40 +16,40 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▂▅▇█●▅▄▃▁   #184 of 535*     60%      1
-chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃    #67 of 469*     24%      1
-vision &amp; documents  ▁▁▂▃▂▃▅▃▇●█▄    #69 of 189*     15%      1
+coding              ▁▁▁▂▄▆█●▅▄▃▁   #183 of 537*     60%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃    #69 of 472*     24%      1
+vision &amp; documents  ▁▁▂▃▂▃▅▄▆●█▄    #69 of 189*     16%      1
 </pre>
 
-<details><summary>coding · #184 of 535 · 60% of its score</summary>
+<details><summary>coding · #183 of 537 · 60% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   45.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 23/49  very hard · avg 7.5%     60%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   45.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 23/49  very hard · avg 7.6%     60%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #67 of 469 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #69 of 472 · 24% of its score</summary>
 
-Beats [GPT-6 Luna](gpt-6-luna.md), [Grok 4.7](grok-4-7.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [GPT-6 Luna](gpt-6-luna.md), [Grok 4.7](grok-4-7.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1442.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 307/382  avg 1259       24%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1442.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 309/385  avg 1259       24%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #69 of 189 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #69 of 189 · 16% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1238.6  ▁▁▂▂▂▂▃▄▄▅●▇ beats 94/152  avg 1061       15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1238.6  ▁▁▂▂▂▂▃▄▅▅●▇ beats 94/152  avg 1061       16%  blunt
 </pre>
 
 </details>
@@ -61,9 +61,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                         results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>        1   60% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   39% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   39% ▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 64.8
+weighted average                        = 64.7
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

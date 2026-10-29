@@ -22,7 +22,7 @@ image to video  ▁▂·▂▅●▅▄▅▆▃▄   #35 of 50*     39%      2
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1181.1  ▂▂▃▆●▆·▆▅▁▂▇ beats 12/41  avg 1147           57%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1181.1  ▂▂▃▆●▆·▆▅▁▂▇ beats 12/41  avg 1147           57%  typical
 <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   85.8%  ▂··▂··●▄▂··▆ beats 4/11   easy · avg 84%    1.8%  blunt
 </pre>
 
@@ -34,7 +34,7 @@ Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.1 Standard](kling-2-1-st
 
 <pre>
 test                            result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1223.7  ▁▁▁▁▄●▃▆▃▂▄█ beats 9/40   avg 1189           38%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1223.7  ▁▁▁▁▄●▃▆▃▂▄█ beats 9/40   avg 1189           38%  typical
 <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   37.5%  █·····▄···●▄ beats 3/4    hard · avg 17%    1.7%  noisy
 </pre>
 
@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
 <a name="visual-v-reasonbench"></a><a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench: Toward Unified Reasoning…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇

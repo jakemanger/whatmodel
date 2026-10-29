@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 42.7** ±0.9 · #520 of 729 · from 6 benchmark results across 3 sources
+**score 42.6** ±0.9 · #522 of 731 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #360 of 466     77%      4
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #361 of 468     77%      4
 </pre>
 
-<details><summary>coding · #360 of 466 · 77% of its score</summary>
+<details><summary>coding · #361 of 468 · 77% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          52.4%  ▁█▄▅▇●·▄▇▅▄▄ beats 24/42  easy · avg 74%       61%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          52.4%  ▁█▄▅▇●·▄▇▅▄▄ beats 24/42  easy · avg 75%       61%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         56.2%  ▃▃▃█··▃●··▅▃ beats 7/11   easy · avg 71%       10%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   43.9%  ▁··▁▅▂█●▁··▁ beats 16/22  medium · avg 52%    3.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   41.4%  ▁·▂▃▁●▁▂···▁ beats 14/22  medium · avg 51%    3.0%  blunt · at its level
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   32% ▇▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    6% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 42.7
+weighted average                                   = 42.6
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

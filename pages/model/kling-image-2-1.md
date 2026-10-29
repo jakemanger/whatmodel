@@ -6,7 +6,7 @@
 
 Kuaishou · closed weights
 
-**score 52.9** ±7.0 · #73 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±6.9 · #73 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▁▂▁▁   #63 of 126*     79%      1
+text to image  ▂▅▅▃▄●█▃▂▂▁▁   #63 of 126*     80%      1
 </pre>
 
-<details><summary>text to image · #63 of 126 · 79% of its score</summary>
+<details><summary>text to image · #63 of 126 · 80% of its score</summary>
 
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>   48.3%  ●▅▅·▅▅█·█··▃ beats 1/17   medium · avg 46%     79%  blunt · at its level
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>   48.3%  ●▅▅·▅▅█·█··▃ beats 1/17   medium · avg 46%     80%  blunt · at its level
 </pre>
 
 </details>
@@ -34,8 +34,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1   79% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       21% ▇▇
+<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       20% ▇▇
 weighted average                                   = 52.9
 </pre>
 

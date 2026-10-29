@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▆██▅█▄▁▁▁   #475 of 526*    9.1%      1
+math  ▁▁●▆██▅█▄▁▁▁   #477 of 528*    9.1%      1
 </pre>
 
-<details><summary>math · #475 of 526 · 9.1% of its score</summary>
+<details><summary>math · #477 of 528 · 9.1% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    8.2%  █·▅▃▃●·▃·▃▃▅ beats 7/12   easy · avg 66%    9.1%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    8.2%  █·▅▃▃●·▃·▃▃▅ beats 7/12   easy · avg 67%    9.1%  sharp · too hard for it
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        30.6%  ▅▃█···●·▃▃▃▅ beats 7/12   very easy · avg 94%     37%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          18.8%  ▃▅█···●·▃▃▃▅ beats 7/12   easy · avg 82%          18%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          23.1%  ▅▃▃▅··●▃·▃▃█ beats 6/12   easy · avg 83%          17%  sharp
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  37.0%  █······●·▁▁▃ beats 7/12   easy · avg 87%         6.8%  sharp
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  37.0%  █······●·▁▁▃ beats 7/12   easy · avg 88%         6.8%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   15.5%  ▃·▅·▅▃●·▃▃·█ beats 7/12   medium · avg 52%       4.1%  typical
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   55.2%  █·····●·▁·▄▁ beats 7/12   medium · avg 81%       3.6%  sharp
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.2%  ●▁·▁▁·····▂▁ beats 0/12   medium · avg 48%       1.8%  sharp · too hard for it

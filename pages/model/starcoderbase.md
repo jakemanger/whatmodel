@@ -6,7 +6,7 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 35.1** ±0.9 · #625 of 729 · from 14 benchmark results across 5 sources
+**score 35.1** ±0.9 · #626 of 731 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆▇█▇▅▄▃▁    #425 of 466     91%      8
-math    ▁▁▃●█▆▄█▄▁▁▁   #368 of 427*    7.1%      1
+coding  ▁▁▁●▅▇█▇▅▄▃▁    #427 of 468     91%      8
+math    ▁▁▃●█▇▄█▄▂▁▁   #369 of 429*    7.1%      1
 </pre>
 
-<details><summary>coding · #425 of 466 · 91% of its score</summary>
+<details><summary>coding · #427 of 468 · 91% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -28,9 +28,9 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                      29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 75%       26%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 37.4%  █·▅▃●▃▅▃▃▅·▅ beats 6/15   easy · avg 81%       18%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 61%     12%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 62%     12%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           31.3%  ▁··▁●▂█▇▁··▁ beats 4/22   medium · avg 56%    8.5%  at its level · several runs
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 53%    7.4%  blunt · at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 54%    7.5%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 49%    7.2%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.3%  ▄▇●▃▄▇▄▁▇▃·▁ beats 11/35  medium · avg 46%    6.3%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.9%  ▁·▁▁▄●█▄█▁▅▅ beats 11/35  medium · avg 51%    5.1%  sharp
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #368 of 427 · 7.1% of its score</summary>
+<details><summary>math · #369 of 429 · 7.1% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   46.5%  ▄▄········▄● beats 3/4    medium · avg 58%    1.5%  blunt · at its level
+<a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">ODEX English pass@1 (zero-shot)</a>   46.5%  ▄▄········▄● beats 3/4    medium · avg 58%    1.4%  blunt · at its level
 </pre>
 
 </details>

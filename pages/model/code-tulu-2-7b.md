@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 39.3** ±1.7 · #572 of 729 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 39.2** ±1.7 · #576 of 731 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #384 of 466*     19%      1
-math    ▁▁▃▅●▆▄█▄▁▁▁   #316 of 427*     21%      1
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #385 of 468*     19%      1
+math    ▁▁▃▅●▇▄█▄▂▁▁   #317 of 429*     21%      1
 </pre>
 
-<details><summary>coding · #384 of 466 · 19% of its score</summary>
+<details><summary>coding · #385 of 468 · 19% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #316 of 427 · 21% of its score</summary>
+<details><summary>math · #317 of 429 · 21% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
@@ -46,8 +46,8 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 49.1%  ▁·····▂●▂▅·▁ beats 11/25  medium · avg 74%     38%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           43.7%  ▁▁▃●▄█▄▁█··▁ beats 5/25   medium · avg 72%     17%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 49.1%  ▁·····▂●▂▅·▁ beats 11/25  easy · avg 74%       38%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           43.7%  ▁▁▃●▄█▄▁█··▁ beats 5/25   medium · avg 73%     17%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   52.6%  ▂··▁▃▂▂▂●▅▁▂ beats 16/25  medium · avg 59%    4.2%  blunt · at its level
 </pre>
 
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                         5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 39.3
+weighted average                        = 39.2
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>

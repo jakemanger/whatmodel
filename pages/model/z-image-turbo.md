@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▁▂▁▁   #55 of 126     95%     17
+text to image  ▂▅▅▃▄●█▃▂▂▁▁   #55 of 126     95%     17
 </pre>
 
 <details><summary>text to image · #55 of 126 · 95% of its score</summary>
@@ -25,10 +25,10 @@ Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher over
 
 <pre>
 test                                 result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1083.5  ▂▂▃▄●█▅▂▄▂·▂ beats 22/75  avg 1027                30%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1082.4  ▁▂▃▃●█▃▂▂▂▁▁ beats 22/75  avg 1027                30%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     85.7%  ▄····▄█●▄█▄█ beats 4/10   easy · avg 82%          10%  typical
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 28%         8.1%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 41%       6.0%  at its level
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 28%         8.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 41%       6.1%  at its level
 <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>             91.7%  ▃·····▅●█▅▃▃ beats 4/12   very easy · avg 88%    5.9%  small run
 <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>             92.6%  ▃·······█●██ beats 6/12   very easy · avg 89%    4.6%  maxed out · small run
 <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                         82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 29/39  easy · avg 77%         4.3%  small run
@@ -39,7 +39,7 @@ test                                 result  vs the others in its run  difficult
 <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                       84.9%  ▄·▂·▂●█▄▂▄▂▂ beats 5/17   very easy · avg 85%    3.2%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>    80.0%  ●······█··▄▄ beats 0/4    easy · avg 74%         2.8%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>    77.7%  ●···█···██·█ beats 0/4    easy · avg 71%         2.8%  small run
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3600  ▄···●··▄·▄·▄ beats 1/5    avg 11.076             1.8%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3600  ▄···●··▄·▄·▄ beats 1/5    avg 11.074             1.9%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    73.3%  ▄·······▄█●▄ beats 4/5    medium · avg 60%       0.5%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    87.0%  █······█●███ beats 2/5    easy · avg 85%         0.0%  blunt
 </pre>
@@ -62,7 +62,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (lab)</a>                                9   34% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   30% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   30% ▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   10% ▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    8% ▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    7% ▇

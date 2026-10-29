@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▂▅▇█▇▅▄▃▁   #520 of 535    6.4%      2
-math    ▁▁▃●██▅█▄▁▁▁   #460 of 526     11%      3
+coding  ▁▁●▂▄▆█▇▅▄▃▁   #522 of 537    6.4%      2
+math    ▁▁▃●██▅█▄▁▁▁   #461 of 528     11%      3
 </pre>
 
-<details><summary>coding · #520 of 535 · 6.4% of its score</summary>
+<details><summary>coding · #522 of 537 · 6.4% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -32,15 +32,15 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #460 of 526 · 11% of its score</summary>
+<details><summary>math · #461 of 528 · 11% of its score</summary>
 
-Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_gsm8k_8-shot.json">GSM8K</a>         8.0%  ▄▄█▄···●·▄·▄ beats 5/7    medium · avg 65%     10%  sharp · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>    2.9%  ●▅▂▆▅▃▅▅█▃▃▂ beats 1/30   hard · avg 24%      1.0%  too hard for it
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_mathematical_reasoning_0-shot.json">MathQA</a>       26.8%  ▃·▃▃█▅··●·▃▃ beats 8/10   hard · avg 34%      0.2%  blunt · small run
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_gsm8k_8-shot.json">GSM8K</a>         8.0%  ▄▄█▄···●·▄·▄ beats 5/7    easy · avg 65%     10%  sharp · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>    2.9%  ●▅▂▆▅▃▅▅█▃▃▂ beats 1/30   hard · avg 24%    1.0%  too hard for it
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_mathematical_reasoning_0-shot.json">MathQA</a>       26.8%  ▃·▃▃█▅··●·▃▃ beats 8/10   hard · avg 34%    0.2%  blunt · small run
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">BoolQ</a>                                75.0%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 22/26  easy · avg 88%          5.2%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">OpenBookQA</a>                           34.4%  █·▁▁▃·▁▃▅▇●▄ beats 23/26  easy · avg 81%          5.1%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">ARC Easy</a>                             72.9%  ▁▁·▁▁▄▅▄█●▁▃ beats 22/26  easy · avg 85%          4.5%  blunt · at its level · several runs
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       30.9%  █●█··█·█·█·█ beats 1/6    medium · avg 67%        4.1%  sharp · several runs
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       30.9%  █●█··█·█·█·█ beats 1/6    medium · avg 68%        4.1%  sharp · several runs
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 35.2%  ▄▄·▄···●▄·██ beats 3/8    easy · avg 74%          3.8%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">PIQA</a>                                 78.7%  ▁·▁··▁▁▃█▅●▂ beats 19/26  easy · avg 87%          3.5%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">SciQ</a>                                 94.6%  ▁·▁·▁·▃▅▃█●▁ beats 23/26  very easy · avg 97%     1.6%  blunt · several runs
@@ -65,7 +65,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2302.13971v1">TriviaQA (lab)</a>                       56.3%  ▁▁▂▂▄▄▃▆●█▅▂ beats 50/80  easy · avg 84%          1.0%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   14.6%  ▅····▃●·██·█ beats 3/13   medium · avg 52%        0.9%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_common_sense_reasoning_0-shot.json">COPA</a>                                 84.0%  ▄··█▄▄···●·█ beats 5/7    very easy · avg 95%     0.8%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   22.0%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 46/68  medium · avg 52%        0.8%  typical
+<a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   22.0%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 46/68  medium · avg 53%        0.8%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.8%  ▁····▁▁·▁·▃● beats 10/11  hard · avg 63%          0.7%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   35.0%  ▃▅▃··▅●·█▃▃▅ beats 6/13   medium · avg 61%        0.6%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_reading_comprehension_0-shot.json">CoQA</a>                                 75.2%  ▄····▄▄·▄▄·● beats 5/6    very easy · avg 92%     0.6%  typical

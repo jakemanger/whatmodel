@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 66.4** ±1.1 · comparison only: no current run option verified · from 19 benchmark results across 8 sources
+**score 66.2** ±1.1 · comparison only: no current run option verified · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▅▅▄▄▄▁▁   #247 of 350*    2.2%      1
-coding              ▁▁▁▂▅▇█▇●▄▃▁    #109 of 535     41%      3
-math                ▁▁▃▆██▅●▄▁▁▁   #109 of 526*    7.3%      1
-vision &amp; documents  ▁▁▂▃▂▃▅▃●██▄    #90 of 189*    1.9%      1
+agent tasks         ▁▁▂▆●▄▅▄▄▄▁▁   #250 of 352*    2.2%      1
+coding              ▁▁▁▂▄▆█▇●▄▃▁    #110 of 537     41%      3
+math                ▁▁▃▆██▅●▄▁▁▁   #110 of 528*    7.4%      1
+vision &amp; documents  ▁▁▂▃▂▃▅▄●██▄    #89 of 189*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #247 of 350 · 2.2% of its score</summary>
+<details><summary>agent tasks · #250 of 352 · 2.2% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,33 +33,33 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #109 of 535 · 41% of its score</summary>
+<details><summary>coding · #110 of 537 · 41% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3](o3.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   76.9%  ▂·▂▃▅▂▃█▆▄●▂ beats 44/49  very hard · avg 7.5%     27%  sharp · at its level
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   71.8%  ▃▃▅▃··▃▅█●▅▃ beats 12/15  hard · avg 24%          7.1%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   76.9%  ▂·▂▃▅▂▃█▆▄●▂ beats 44/49  very hard · avg 7.6%     27%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   71.8%  ▃▃▅▃··▃▅█●▅▃ beats 12/15  hard · avg 24%          7.2%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   67.4%  ▁··▁·▁▁▁▆●▇█ beats 25/45  hard · avg 29%          6.0%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #109 of 526 · 7.3% of its score</summary>
+<details><summary>math · #110 of 528 · 7.4% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   95.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 83/92  hard · avg 28%    7.3%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   95.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 83/92  hard · avg 28%    7.4%  sharp · maxed out
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #90 of 189 · 1.9% of its score</summary>
+<details><summary>vision &amp; documents · #89 of 189 · 1.9% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Nemotron 3.5 Super VL 120B A12B](nemotron-3-5-super-vl-120b-a12b.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -72,15 +72,15 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.7%  ▁▁▁▁▂▄▆▄●▇█▄ beats 99/209  hard · avg 38%          17%  sharp · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    3.9%  ▂·█··▆▄·▂▂·● beats 13/13   avg 35%                8.4%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.7%  ▁▁▁▁▂▄▆▄●▇█▅ beats 99/211  hard · avg 39%          17%  sharp · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    3.9%  ▂·█··▆▄·▂▂·● beats 13/13   avg 34%                8.3%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   68.4%  ▁▁·▁▂▂▄█▄▅●▄ beats 54/66   hard · avg 29%         6.1%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   71.8%  ▁▁▁▁·▂·█▆●▇▁ beats 21/31   medium · avg 46%       4.3%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   75.1%  ▂·▂·▂█▂▄▄··● beats 12/13   very hard · avg 54%    3.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   81.3%  ▂·▄··▂▂·▄▂█● beats 13/13   medium · avg 52%       2.6%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   65.5%  ▂·······▆█▆● beats 12/13   very hard · avg 57%    2.2%  blunt · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   65.5%  ▂·······▆█▆● beats 12/13   very hard · avg 57%    2.1%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    3.9%  ▃···▃·█▃▅▃▅● beats 13/13   avg 11%                2.1%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   68.3%  ▃█▃▅▃·▃·●▅▃▃ beats 9/13    medium · avg 56%       0.7%  blunt · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   68.3%  ▃█▃▅▃·▃·●▅▃▃ beats 9/13    medium · avg 57%       0.7%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   47.3%  ▃··▃▃▃·▃▅▅●▅ beats 10/13   medium · avg 39%       0.6%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   21.1%  ▄▂···▂▆▂█▂·● beats 13/13   avg 83%                0.4%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>   19.8%  ▂▂▂··●▂·▂▂█▆ beats 3/13    avg 14%                0.1%  blunt · noisy
@@ -104,7 +104,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 66.4
+weighted average                                   = 66.2
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

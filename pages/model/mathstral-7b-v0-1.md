@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 44.0** ±1.3 · #501 of 729 · from 4 benchmark results across 4 sources
+**score 44.0** ±1.3 · #500 of 731 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▁▁▁   #336 of 427*    4.6%      1
+math  ▁▁▃●█▇▄█▄▂▁▁   #338 of 429*    4.6%      1
 </pre>
 
-<details><summary>math · #336 of 427 · 4.6% of its score</summary>
+<details><summary>math · #338 of 429 · 4.6% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 

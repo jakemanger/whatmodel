@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅●▃▄▄█▃▁▂▁▁   #98 of 126     98%      6
+text to image  ▂▅●▃▄▄█▃▂▂▁▁   #98 of 126     98%      6
 </pre>
 
 <details><summary>text to image · #98 of 126 · 98% of its score</summary>
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 4/9    hard · avg 24%          11%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   35.0%  ▄·▆●▆█▄▆▂▄·▄ beats 5/22   medium · avg 60%        10%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 2/4    easy · avg 70%          10%  at its level
-<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.4%  small run
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.5%  small run
 </pre>
 
 </details>

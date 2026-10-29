@@ -6,7 +6,7 @@
 
 Part AI · released 2024-12 · 8.03B params · llama3.1
 
-**score 44.7** ±4.3 · #641 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.7** ±4.3 · #644 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   48.8%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 26/81  medium · avg 56%     92%  blunt · at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   48.8%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 26/81  medium · avg 57%     92%  blunt · at its level
 </pre>
 
 </details>

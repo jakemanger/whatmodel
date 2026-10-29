@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 1.54B params · cc-by-nc-4.0
 
-**score 51.9** ±3.7 · #422 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.9** ±3.7 · #423 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▅▅▄▄▄▁▁   #254 of 344*     94%      2
+agent tasks  ▁▁▃▆●▅▄▄▃▃▂▁   #257 of 347*     94%      2
 </pre>
 
-<details><summary>agent tasks · #254 of 344 · 94% of its score</summary>
+<details><summary>agent tasks · #257 of 347 · 94% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 

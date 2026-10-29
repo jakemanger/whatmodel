@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ●·█······█·█       #4 of 4*    1.9%      1
-math    ▁▁▃●██▅█▄▁▁▁   #444 of 526*     13%      1
+math    ▁▁▃●██▅█▄▁▁▁   #445 of 528*     13%      1
 </pre>
 
 <details><summary>coding · #4 of 4 · 1.9% of its score</summary>
@@ -29,13 +29,13 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>math · #444 of 526 · 13% of its score</summary>
+<details><summary>math · #445 of 528 · 13% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>   14.3%  █·▅▃▃▃·●·▃▃▅ beats 8/12   easy · avg 66%     13%  sharp · several runs
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>   14.3%  █·▅▃▃▃·●·▃▃▅ beats 8/12   easy · avg 67%     13%  sharp · several runs
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        57.9%  ▅▃█···▅·●▃▃▅ beats 8/12    very easy · avg 94%     23%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          37.5%  ▃▅█···▅·●▃▃▅ beats 8/12    easy · avg 82%          18%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          46.6%  ▅▃▃▅··▃▃·●▃█ beats 8/12    easy · avg 83%          15%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  53.6%  █······▁·●▁▃ beats 8/12    easy · avg 87%         9.3%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  53.6%  █······▁·●▁▃ beats 8/12    easy · avg 88%         9.3%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.6%  █●·▁▁·····▂▁ beats 7/12    medium · avg 48%       4.8%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2203.11171v4">ARC Challenge (lab)</a>                  55.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 98/140  easy · avg 86%         3.6%  sharp · at its level
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   59.5%  █·····▃·●·▄▁ beats 8/12    medium · avg 81%       3.5%  sharp

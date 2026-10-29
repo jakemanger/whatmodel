@@ -6,7 +6,7 @@
 
 Poolside · released 2026-07 · 118B params (8B active) · openmdw-1.1
 
-**score 72.1** ±3.9 · #62 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 71.9** ±3.9 · #65 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,28 +17,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task         vs the others         rank  counts  tests
 agent tasks  ███········●      #1 of 4*     93%      4
-coding       ▁▁▁▃▆▇█▇▅●▃▁   #56 of 478*     93%      2
+coding       ▁▁▁▃▅▇█▇▅●▃▁   #58 of 481*     93%      2
 </pre>
 
 <details><summary>agent tasks · #1 of 4 · 93% of its score</summary>
 
 <pre>
 test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▁▄▇●▂▂▁ beats 51/62  hard · avg 29%           67%  small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▁▄▇●▂▂▁ beats 52/63  hard · avg 29%           67%  small run
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▄▂▂▂▄▂▆●·▂·▂ beats 13/16  hard · avg 30%           26%  blunt · at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▅●▅█ beats 36/61  very hard · avg 7.1%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▆●▅█ beats 38/63  very hard · avg 7.2%       —  not counted yet: no other model in the …
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Toolathlon-Verified (lab)</a>      49.7%  ▂·▂▂▅●···▂██ beats 6/18   hard · avg 24%             —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #56 of 478 · 93% of its score</summary>
+<details><summary>coding · #58 of 481 · 93% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▁▄▇●▂▂▁ beats 51/62  hard · avg 29%     67%  small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▁▄▇●▂▂▁ beats 52/63  hard · avg 29%     67%  small run
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▄▂▂▂▄▂▆●·▂·▂ beats 13/16  hard · avg 30%     26%  blunt · at its level · small run
 </pre>
 
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-poolside-scores"></a><a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Poolside vendor-reported benchmark scor…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 72.1
+weighted average                                   = 71.9
 </pre>
 
 <details><summary>Not counted (2)</summary>

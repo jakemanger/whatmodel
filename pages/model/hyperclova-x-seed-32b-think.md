@@ -6,7 +6,7 @@
 
 NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
-**score 62.2** ±1.8 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 62.1** ±1.8 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▅●▄▄▄▁▁   #152 of 350     85%      5
+agent tasks  ▁▁▂▆█▄●▄▄▄▁▁   #152 of 352     85%      5
 web search   ●▁▂▆▅█▅▄▁▂▁▁    #96 of 96*     11%      1
 </pre>
 
-<details><summary>agent tasks · #152 of 350 · 85% of its score</summary>
+<details><summary>agent tasks · #152 of 352 · 85% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -66,7 +66,7 @@ source                                    results  share of the score
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think (lab)</a>                    7   87% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1   11% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.2
+weighted average                                   = 62.1
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

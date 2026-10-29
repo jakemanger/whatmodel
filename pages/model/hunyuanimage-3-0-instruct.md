@@ -16,16 +16,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·▃▂▂█▃●▅▂▁   #23 of 62*     53%      1
+image to image / edit…  ▁▁·▃▂▃█●▄▅▂▁   #22 of 62*     54%      1
 </pre>
 
-<details><summary>image to image / editing · #23 of 62 · 53% of its score</summary>
+<details><summary>image to image / editing · #22 of 62 · 54% of its score</summary>
 
-Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md) here, though they rank higher overall.
+Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md), [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall.
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1301.7  ▂▁▁▃▆█▄●▄█▁▂ beats 29/53  avg 1153       53%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1301.8  ▂▁▁▃▆█▄●▇▄▂▂ beats 29/53  avg 1153       54%  typical
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    3.2%  ▄··●█····▄▄▄ beats 1/6    very hard · avg 1.4%     43%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    3.2%  ▄··●█····▄▄▄ beats 1/6    very hard · avg 1.4%     42%  sharp · too hard for it
 </pre>
 
 </details>
@@ -45,8 +45,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   53% ▇▇▇▇▇▇
-<a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   43% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   54% ▇▇▇▇▇▇
+<a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   42% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 62.1
 </pre>

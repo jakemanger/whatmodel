@@ -6,7 +6,7 @@
 
 Meta · released 2026-10 · closed weights
 
-**score 82.1** ±1.9 · #5 of 729 · from 5 benchmark results across 2 sources
+**score 81.8** ±1.9 · #7 of 731 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅▅▅▄●▁   #13 of 310*     17%      2
-coding       ▁▁▁▃▆▇█▇▅▄▃●    #6 of 466*     69%      1
+agent tasks  ▁▁▃▆█▄▅▅▄▄●▁   #14 of 312*     18%      2
+coding       ▁▁▁▃▅▇█▇▅▄▃●    #7 of 468*     68%      1
 </pre>
 
-<details><summary>agent tasks · #13 of 310 · 17% of its score</summary>
+<details><summary>agent tasks · #14 of 312 · 18% of its score</summary>
 
 Trails [DeepSeek V4.1 Flash 1017](deepseek-v4-1-flash-1017.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [Claude Fable 5](claude-fable-5.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty      counts  why
 <a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                      75.3%  █·█····█···● beats 3/3    hard · avg 25%     11%  at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   78.4%  ██·····●··██ beats 2/4    hard · avg 28%    6.9%  small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>   78.4%  ██·····●··██ beats 2/4    hard · avg 28%    7.0%  small run
 </pre>
 
 </details>
 
-<details><summary>coding · #6 of 466 · 69% of its score</summary>
+<details><summary>coding · #7 of 468 · 68% of its score</summary>
 
-Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
+Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall. Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1726.0  ▁▁▃▃▆█▄▇▅▅●▁ beats 121/126  avg 978        69%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1725.3  ▁▁▃▂▅█▃▆▅▅●▂ beats 123/129  avg 982        68%  sharp
 </pre>
 
 </details>
@@ -47,8 +47,8 @@ test                       result  vs the others in its run    difficulty  count
 
 <pre>
 test                            result  vs the others in its run  difficulty           counts  why
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    59.0%  ██·······█·● beats 3/3    very hard · avg 10%    6.8%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 21%         5.6%  blunt · at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    59.0%  ██·······█·● beats 3/3    very hard · avg 10%    6.9%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 21%         5.8%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -59,10 +59,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   69% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   68% ▇▇▇▇▇▇▇▇
 <a name="first-party-meta-scores"></a><a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">Meta vendor-reported benchmark scores f…</a>        4   30% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 82.1
+weighted average                                   = 81.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

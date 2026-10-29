@@ -6,7 +6,7 @@
 
 EleutherAI · released 2022-02 · 20.55B params · apache-2.0
 
-**score 27.9** ±0.8 · #674 of 729 · from 32 benchmark results across 7 sources
+**score 27.9** ±0.8 · #676 of 731 · from 32 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   hard · avg 49%         4.8%  too hard for it · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 97%    4.5%  blunt · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                                 77.4%  ▁·▁··▁▁▃█●█▂ beats 16/26   easy · avg 87%         3.6%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                       25.9%  █···█·██●··█ beats 4/5     easy · avg 67%         3.2%  at its level
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                       25.9%  █···█·██●··█ beats 4/5     easy · avg 68%         3.2%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">LogiQA (harness) (lab)</a>               23.0%  ······●····· beats 4/5     very hard · avg 25%    3.0%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), last-wo…</a>   72.0%  ▁··▂▁▁▁▂▆█●▃ beats 20/26   very easy · avg 86%    2.9%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   58.1%  ▃···▅·▃●··▃█ beats 4/9     very easy · avg 85%    2.4%  at its level

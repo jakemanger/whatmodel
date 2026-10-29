@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂▇▇●▅█▇▂▃▁▁   #99 of 157*     96%      1
+text to image  ▁▂██●▆██▂▃▁▁   #99 of 157*     96%      1
 </pre>
 
 <details><summary>text to image · #99 of 157 · 96% of its score</summary>

@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▁▂▁▁   #110 of 126*    0.3%      1
+text to image  ▂●▅▃▄▄█▃▂▂▁▁   #110 of 126*    0.3%      1
 </pre>
 
 <details><summary>text to image · #110 of 126 · 0.3% of its score</summary>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  4.5600 mean human alignment score  █●▄·█·▄█▄▄·▄ beats 2/11   avg 6.285 mean human al…     73%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  4.5600 mean human alignment score  █●▄·█·▄█▄▄·▄ beats 2/11   avg 6.286 mean human al…     73%  typical
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              85.1%  ▁····█▁·●··▁ beats 8/9    very easy · avg 92%          22%  sharp · at its level · noisy
 </pre>
 

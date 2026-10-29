@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06
 
-**score 34.8** ±2.1 · #628 of 729 · from 4 benchmark results across 2 sources
+**score 34.8** ±2.1 · #630 of 731 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃   #378 of 398*     78%      2
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #381 of 401*     78%      2
 </pre>
 
-<details><summary>chat &amp; writing · #378 of 398 · 78% of its score</summary>
+<details><summary>chat &amp; writing · #381 of 401 · 78% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.2%  ▁▂▂●▆▆█▆▄▄▁▁ beats 15/122  hard · avg 35%          66%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.2%  ▁▂▂●▆▆█▆▄▄▁▁ beats 15/122  medium · avg 35%        66%  sharp
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   76.8%  ▂▂·▆·▇●▆█▆▄▂ beats 17/45   very easy · avg 94%     12%  sharp · at its level · noisy
 </pre>
 

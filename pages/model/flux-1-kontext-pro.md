@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃●▄█▃▁▂▁▁   #65 of 126*     55%      2
-image to image / edit…  ▁▁·▃●▂█▃▅▅▂▁     #51 of 62     56%      5
+text to image           ▂▅▅▃●▄█▃▂▂▁▁   #65 of 126*     55%      2
+image to image / edit…  ▁▁·▃●▃█▅▄▅▂▁     #51 of 62     57%      5
 </pre>
 
 <details><summary>text to image · #65 of 126 · 55% of its score</summary>
@@ -26,21 +26,21 @@ Beats [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [P-Image](p-image.md), [Photon]
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.7  ▂▂▃●▇█▅▂▄▂·▂ beats 18/75  avg 1027           42%  typical
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   16.5%  ▂▃··●··▃█··▂ beats 3/11   hard · avg 18%     13%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.8  ▁▂▃●▆█▃▂▂▂▁▁ beats 18/75  avg 1027           42%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   16.5%  ▂▃··●··▃█··▂ beats 3/11   hard · avg 17%     13%  sharp
 </pre>
 
 </details>
 
-<details><summary>image to image / editing · #51 of 62 · 56% of its score</summary>
+<details><summary>image to image / editing · #51 of 62 · 57% of its score</summary>
 
 Trails [Step1X-Edit v1.1](step1x-edit-v1-1.md), [GLM-Image](glm-image.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1177.2  ▂▁▁▃●█▄█▄█▁▂ beats 7/53   avg 1153             16%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1177.3  ▂▁▁▃●█▄█▇▄▂▂ beats 7/53   avg 1153             16%  typical
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   14.3%  ●·········█▂ beats 0/7    medium · avg 42%     14%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   16.5%  ▂▃··●··▃█··▂ beats 3/11   hard · avg 18%       13%  sharp
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   16.5%  ▂▃··●··▃█··▂ beats 3/11   hard · avg 17%       13%  sharp
 <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   65.3%  ▄·●···▄██··▄ beats 1/7    easy · avg 66%      9.1%  at its level
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   74.9%  ▄█▄··●··▄·▄▄ beats 5/8    easy · avg 74%      4.9%  blunt · at its level
 </pre>
@@ -53,7 +53,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   58% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   58% ▇▇▇▇▇▇▇
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   23% ▇▇▇
 <a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   13% ▇▇
 <a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1    5% ▇

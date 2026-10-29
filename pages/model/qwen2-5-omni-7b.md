@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 10.7B params · apache-2.0
 
-**score 56.9** ±2.3 · #246 of 729 · from 10 benchmark results across 1 source
+**score 56.8** ±2.3 · #248 of 731 · from 10 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,12 +22,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   10.3%  ▂·█··▆▄·●▂·▄ beats 10/13  avg 35%                 41%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   10.3%  ▂·█··▆▄·●▂·▄ beats 10/13  avg 34%                 41%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   56.0%  ▂·▄··▂●·▄▂█▄ beats 4/13   medium · avg 52%        19%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>   10.3%  ▃···▃·●▃▅▃▅█ beats 4/13   avg 11%                 10%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   58.1%  ▂·▂·▂█▂▄●··▄ beats 10/13  very hard · avg 54%     10%  sharp · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   58.8%  ▂·······▆●▆▆ beats 7/13   very hard · avg 57%    8.0%  blunt
-<a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   74.3%  ▃█▃▅▃·▃·▃▅▃● beats 13/13  medium · avg 56%       3.7%  blunt · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   58.8%  ▂·······▆●▆▆ beats 7/13   very hard · avg 57%    8.1%  blunt
+<a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   74.3%  ▃█▃▅▃·▃·▃▅▃● beats 13/13  medium · avg 57%       3.7%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   49.1%  ▃··▃▃▃·▃▅▅●▅ beats 11/13  medium · avg 39%       3.1%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>  193.2%  ▄●···▂▆▂█▂·▂ beats 2/13   avg 83%                2.0%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>   41.6%  ▂●▂··▂▂·▂▂█▆ beats 1/13   avg 14%                0.4%  blunt · noisy
@@ -44,7 +44,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 56.9
+weighted average                                   = 56.8
 </pre>
 
 <sub>Licences: AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

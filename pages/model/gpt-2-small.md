@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -13.1** ±1.5 · #729 of 729 · from 35 benchmark results across 9 sources
+**score -13.0** ±1.5 · #731 of 731 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▆▄█▄▁▁▁   #425 of 427*    0.1%      1
+math  ●▁▃▅█▇▄█▄▂▁▁   #427 of 429*    0.1%      1
 </pre>
 
-<details><summary>math · #425 of 427 · 0.1% of its score</summary>
+<details><summary>math · #427 of 429 · 0.1% of its score</summary>
 
 Beats [GPT-2 Large (774M)](gpt-2-large.md), [GPT-2 Medium (355M)](gpt-2-medium.md) here, though they rank higher overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   22.8%  ●▁▁▁▁▁▁▂▄█▄▃ beats 0/146   easy · avg 82%         0.1%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA generation, % true (hu…</a>   35.4%  ██····●·██·█ beats 2/5     medium · avg 42%       0.1%  blunt · at its level
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   51.5%  █·······●··▁ beats 6/7     very hard · avg 52%    0.0%  blunt · too hard for it · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.7%  ●·▁▁▂▁▂▅█▇▄▁ beats 4/100   medium · avg 66%       0.0%  sharp · too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.7%  ●·▁▁▂▁▂▅█▇▄▁ beats 4/100   medium · avg 67%       0.0%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">AQuA-RAT</a>                             17.3%  ●·····▁·▁··▁ beats 2/9     medium · avg 53%       0.0%  sharp · too hard for it · noisy
 </pre>
 
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    0% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = -13.1
+weighted average                                   = -13.0
 </pre>
 
 <sub>Licences: Coherence boosting: When your pretrained language model is not paying enough attention ([CC BY 4.0](../../licenses/acl-2022-acl-long-565-CC-BY-4-0.txt)) · Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · CASE: Commonsense-Augmented Score with an Expanded Answer Space ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-180-CC-BY-4-0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

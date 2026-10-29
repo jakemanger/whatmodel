@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #38 of 126*     90%      1
+text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #39 of 126*     90%      1
 </pre>
 
-<details><summary>text to image · #38 of 126 · 90% of its score</summary>
+<details><summary>text to image · #39 of 126 · 90% of its score</summary>
 
-Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md) here, though they rank lower overall.
+Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md), [Krea 2 Medium](krea-2-medium.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

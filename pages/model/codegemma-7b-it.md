@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 44.1** ±0.7 · #496 of 729 · from 10 benchmark results across 4 sources
+**score 44.1** ±0.7 · #496 of 731 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▅▄▃▁   #353 of 466     90%      7
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #355 of 468     90%      7
 </pre>
 
-<details><summary>coding · #353 of 466 · 90% of its score</summary>
+<details><summary>coding · #355 of 468 · 90% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -27,7 +27,7 @@ Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-V
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            60.4%  ▁·▁▁▃▄▆●█▃▁▁ beats 46/99  easy · avg 76%       39%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           51.8%  ▁·▁▁▁▃▄▄●█▃▁ beats 45/99  easy · avg 70%       27%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.6%  ▁·▂▁▂▆▅●▄▄▁▂ beats 21/35  medium · avg 61%    7.5%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.6%  ▁·▂▁▂▆▅●▄▄▁▂ beats 21/35  medium · avg 62%    7.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                56.9%  ▁···▁▁▂▅●█▆▂ beats 33/75  easy · avg 66%      5.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   38.4%  ▄▇█▃▄▇▄▁●▃·▁ beats 30/35  medium · avg 46%    5.0%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   45.8%  ▁·▁▁▄██▄█▁●▅ beats 31/35  medium · avg 51%    4.9%  sharp · at its level

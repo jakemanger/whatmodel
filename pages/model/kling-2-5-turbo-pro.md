@@ -24,7 +24,7 @@ Beats [Kling 2.6 Pro](kling-2-6-pro.md), [Cosmos3-Super](cosmos3-super.md) here,
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1219.8  ▂▂▃▆█●·▆▅▁▂▇ beats 19/41  avg 1147           54%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1219.8  ▂▂▃▆█●·▆▅▁▂▇ beats 19/41  avg 1147           54%  typical
 <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   90.8%  ▂··▂··█▄▂··● beats 9/11   easy · avg 84%    1.6%  blunt
 </pre>
 
@@ -36,7 +36,7 @@ Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher over
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1275.6  ▁▁▁▁▄▇●▆▃▂▄█ beats 17/40  avg 1189             36%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1275.6  ▁▁▁▁▄▇●▆▃▂▄█ beats 17/40  avg 1189             36%  typical
 <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   59.4%  █··●······▄█ beats 2/5    medium · avg 50%    5.4%  at its level
 <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>       11.3%  ●·····▄···▄▄ beats 1/4    hard · avg 17%      1.8%  noisy
 </pre>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#S4.T2">From Evaluation to Enhancement: Benchma…</a>        1    5% ▇
 <a name="visual-v-reasonbench"></a><a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench: Toward Unified Reasoning…</a>        1    2% ▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇

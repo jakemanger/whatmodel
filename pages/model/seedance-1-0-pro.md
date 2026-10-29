@@ -24,7 +24,7 @@ Trails [Hailuo 2.3](hailuo-2-3.md), [P-Video](p-video.md), [Kling O1 Pro](kling-
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1190.9  ▂▂▃▆●▆·▆▅▁▂▇ beats 13/41  avg 1147       59%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1190.9  ▂▂▃▆●▆·▆▅▁▂▇ beats 13/41  avg 1147       59%  typical
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.5 Turbo Pro](kling-2-5-t
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1273.0  ▁▁▁▁▄▇●▆▃▂▄█ beats 16/40  avg 1189       39%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1273.0  ▁▁▁▁▄▇●▆▃▂▄█ beats 16/40  avg 1189       39%  typical
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 55.7

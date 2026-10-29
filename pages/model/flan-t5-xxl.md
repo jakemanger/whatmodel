@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 39.1** ±0.9 · #576 of 729 · from 26 benchmark results across 18 sources
+**score 39.1** ±0.9 · #577 of 731 · from 26 benchmark results across 18 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▆▇▃   #226 of 398*    0.0%      1
-math            ▁▁●▅█▆▄█▄▁▁▁    #394 of 427     24%      2
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #229 of 401*    0.0%      1
+math            ▁▁●▅█▇▄█▄▂▁▁    #396 of 429     24%      2
 </pre>
 
-<details><summary>chat &amp; writing · #226 of 398 · 0.0% of its score</summary>
+<details><summary>chat &amp; writing · #229 of 401 · 0.0% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
 
 <pre>
 test                                                 result  vs the others in its run  difficulty                counts  why
@@ -31,7 +31,7 @@ test                                                 result  vs the others in it
 
 </details>
 
-<details><summary>math · #394 of 427 · 24% of its score</summary>
+<details><summary>math · #396 of 429 · 24% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test        result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 45.3%  ▂▂▂▂·▅·▃●█▃▃ beats 9/18   medium · avg 67%        27%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 45.3%  ▂▂▂▂·▅·▃●█▃▃ beats 9/18   medium · avg 68%        27%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           55.1%  ▁···▁··▃▁●▅█ beats 8/18   easy · avg 74%          22%  at its level · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 52%       4.6%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   19.0%  ▂··▂·▂●▄·███ beats 4/18   medium · avg 61%       4.0%  at its level

@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 66B params · opt-175b-license-noncommercial
 
-**score 29.4** ±0.7 · #666 of 729 · from 37 benchmark results across 8 sources
+**score 29.4** ±0.7 · #668 of 731 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅█▆▄█▄▁▁▁   #420 of 427*    1.3%      1
+math  ▁●▃▅█▇▄█▄▂▁▁   #422 of 429*    1.3%      1
 </pre>
 
-<details><summary>math · #420 of 427 · 1.3% of its score</summary>
+<details><summary>math · #422 of 429 · 1.3% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 

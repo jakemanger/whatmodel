@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-10 · 14B params · nvidia-open-model
 
-**score 43.1** ±3.4 · #97 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.2** ±3.4 · #96 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁·▃●▂█▃▅▅▂▁   #53 of 62*     95%      1
+image to image / edit…  ▁▁·▃●▃█▅▄▅▂▁   #53 of 62*     95%      1
 </pre>
 
 <details><summary>image to image / editing · #53 of 62 · 95% of its score</summary>
 
-Beats [FLUX1.1 \[pro\]](flux-1-1-pro.md), [UNO](uno.md) here, though they rank higher overall.
+Beats [FLUX1.1 \[pro\]](flux-1-1-pro.md) here, though they rank higher overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 43.1
+weighted average                                   = 43.2
 </pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>

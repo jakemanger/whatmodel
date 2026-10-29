@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 7.17B params · bigcode-openrail-m
 
-**score 36.6** ±0.6 · #610 of 729 · from 19 benchmark results across 5 sources
+**score 36.6** ±0.6 · #612 of 731 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆▇█▇▅▄▃▁   #419 of 466     86%      9
-math    ▁▁▃▅●▆▄█▄▁▁▁   #312 of 427    4.8%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #421 of 468     86%      9
+math    ▁▁▃▅●▇▄█▄▂▁▁   #311 of 429    4.8%      2
 </pre>
 
-<details><summary>coding · #419 of 466 · 86% of its score</summary>
+<details><summary>coding · #421 of 468 · 86% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -29,19 +29,19 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            35.4%  ▁·▁▁▃●▆▅█▃▁▁ beats 21/99  easy · avg 76%       45%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           29.9%  ▁·▁▁▁▃●▄▄█▃▁ beats 20/99  easy · avg 70%       17%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 45.4%  █·▅▃▃▃▅▃●▅·▅ beats 11/15  easy · avg 81%      6.6%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   37.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 14/35  medium · avg 61%    4.8%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   37.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 14/35  medium · avg 62%    4.8%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           34.2%  ▃▅█▃●▅·▃▃▅·▅ beats 7/15   medium · avg 56%    2.8%  at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        27.8%  ▄▄·▄██▄●·█·▄ beats 8/12   medium · avg 49%    2.8%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.5%  ▄●█▃▄▇▄▁▇▃·▁ beats 6/35   medium · avg 46%    2.5%  typical
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           35.8%  ▃·▃██●▃·▃▃▅▃ beats 8/15   medium · avg 53%    2.3%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           35.8%  ▃·▃██●▃·▃▃▅▃ beats 8/15   medium · avg 54%    2.3%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    8.9%  ▁·▁▁●██▄█▁▅▅ beats 4/35   medium · avg 51%    2.1%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #312 of 427 · 4.8% of its score</summary>
+<details><summary>math · #311 of 429 · 4.8% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall.
 
 <pre>
 test         result  vs the others in its run  difficulty        counts  why

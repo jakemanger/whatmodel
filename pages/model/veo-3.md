@@ -24,7 +24,7 @@ Beats [Wan 2.7](wan-2-7.md), [Wan 2.6](wan-2-6.md) here, though they rank higher
 
 <pre>
 test           result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1340.2  ▂▂▃▆█▆·●▅▁▂▇ beats 26/41  avg 1147       51%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1340.2  ▂▂▃▆█▆·●▅▁▂▇ beats 26/41  avg 1147       51%  typical
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Trails [Wan 2.1 I2V Plus](wan-2-1-i2v-plus.md), [Runway Gen-4.5](runway-gen-4-5.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1331.5  ▁▁▁▁▄▇▃▆●▂▄█ beats 24/40  avg 1189           34%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1331.5  ▁▁▁▁▄▇▃▆●▂▄█ beats 24/40  avg 1189           34%  typical
 <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1112.2  ▄······██··● beats 6/6    avg 1002           11%  typical
 <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   82.2%  ▃······▅·█▅● beats 9/10   easy · avg 81%    2.6%  blunt
 </pre>
@@ -57,7 +57,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   13% ▇▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇

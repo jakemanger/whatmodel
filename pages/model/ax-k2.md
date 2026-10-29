@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 68.3** ±1.3 · #99 of 729 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.1** ±1.3 · #99 of 731 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆▇█▇▅●▃▁   #81 of 466*     17%      2
-math    ▁▁▃▅█▆▄█●▁▁▁   #48 of 427*    7.5%      1
+coding  ▁▁▁▃▅▇█▇▅●▃▁   #83 of 468*     17%      2
+math    ▁▁▃▅█▇▄█●▂▁▁   #49 of 429*    7.5%      1
 </pre>
 
-<details><summary>coding · #81 of 466 · 17% of its score</summary>
+<details><summary>coding · #83 of 468 · 17% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   84.0%  ▄··█····▄●·█ beats 4/6    medium · avg 46%    8.4%  typical
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   84.0%  ▄··█····▄●·█ beats 4/6    medium · avg 47%    8.4%  typical
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (lab)</a>    41.0%  ▄·····▄●▄▄·▄ beats 2/6    hard · avg 16%      8.2%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #48 of 427 · 7.5% of its score</summary>
+<details><summary>math · #49 of 429 · 7.5% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -47,7 +47,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   85.6%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 43%           35%  sharp
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   85.6%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 44%           35%  sharp
 <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               87.6%  ▃······●··█▃ beats 2/6    medium · avg 61%         16%  typical
 <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>           27.8%  ▂········●·▂ beats 3/6    very hard · avg 5.4%     15%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   75.9%  ▃······●▃▃·▃ beats 2/6    medium · avg 43%         10%  typical
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.3
+weighted average                        = 68.1
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

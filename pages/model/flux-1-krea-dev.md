@@ -6,7 +6,7 @@
 
 Black Forest Labs / Krea · released 2025-07 · 12B params · flux-dev-nc
 
-**score 47.1** ±3.4 · #90 of 144 · from 3 benchmark results across 3 sources
+**score 47.0** ±3.4 · #90 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂▅▅▃●▄█▃▁▂▁▁   #75 of 126*     90%      2
+text to image  ▂▅▅▃●▄█▃▂▂▁▁   #75 of 126*     90%      2
 </pre>
 
 <details><summary>text to image · #75 of 126 · 90% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   82.0%  ▄··█▄·●··▄·▄ beats 4/6    easy · avg 84%     52%  typical
-<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   16.4%  ●▆·▂▂····▂▂█ beats 0/13   hard · avg 20%     38%  sharp · noisy
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   16.4%  ●▆·▂▂····▂▂█ beats 0/13   hard · avg 20%     37%  sharp · noisy
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   18.2%  ●·▃·▃··▃·█▃▃ beats 0/9    hard · avg 28%    5.1%  blunt · at its level
+<a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   18.2%  ●·▃·▃··▃·█▃▃ beats 0/9    hard · avg 28%    5.2%  blunt · at its level
 </pre>
 
 </details>
@@ -47,10 +47,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   52% ▇▇▇▇▇▇
-<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   38% ▇▇▇▇▇
+<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   37% ▇▇▇▇
 <a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    5% ▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 47.1
+weighted average                                   = 47.0
 </pre>
 
 <sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Google · released 2025-11 · proprietary
 
-**score 75.8** ±1.1 · #9 of 144 · from 20 benchmark results across 16 sources
+**score 75.7** ±1.1 · #8 of 144 · from 20 benchmark results across 16 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 <pre>
 task                    vs the others        rank  counts  tests
 text to image           ▂▅▅▃▄▄█▃●▂▁▁   #12 of 126     42%      8
-image to image / edit…  ▁▁·▃▂▂█▃▅●▂▁     #7 of 62     26%      5
+image to image / edit…  ▁▁·▃▂▃█▅▄●▂▁     #7 of 62     26%      5
 </pre>
 
 <details><summary>text to image · #12 of 126 · 42% of its score</summary>
@@ -26,12 +26,12 @@ Trails [Reve 2.0](reve-2-0.md), [Seedream 5.0 Pro](seedream-5-0-pro.md), [Qwen-I
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1234.1  ▂▂▃▄▇█▅●▄▂·▂ beats 60/75  avg 1027             19%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1231.8  ▁▂▃▃▆█▃●▂▂▁▁ beats 60/75  avg 1027             19%  typical
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    93.0%  ▄█▂▂▂▂▆▄·▂·● beats 16/16  hard · avg 26%       15%  sharp
 <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    93.1%  ▂█····▄▄▄··● beats 11/11  easy · avg 79%      2.4%  maxed out
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     62.9%  ▄·█···▄▄▄▄●▄ beats 7/8    medium · avg 36%    2.4%  blunt · at its level
 <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>       59.5%  █▅▅·▅▅█·●··▃ beats 14/17  medium · avg 46%    2.0%  blunt · at its level
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.7800  ▄···█··▄·●·▄ beats 4/5    avg 11.076          1.2%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.7800  ▄···█··▄·●·▄ beats 4/5    avg 11.074          1.2%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    76.4%  ▄·······▄█▄● beats 5/5    medium · avg 60%    0.3%  blunt · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    71.8%  ●······█████ beats 0/5    easy · avg 85%      0.0%  blunt
 </pre>
@@ -40,12 +40,12 @@ test                                 result  vs the others in its run  difficult
 
 <details><summary>image to image / editing · #7 of 62 · 26% of its score</summary>
 
-Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-banana-2.md) here, though they rank higher overall.
+Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-banana-2.md) here, though they rank higher overall. Trails [Muse Image](muse-image.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           79.8%  ▃▃▂·▃▆▂█·▃·● beats 20/20  hard · avg 45%           12%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1385.2  ▂▁▁▃▆█▄█▄●▁▂ beats 42/53  avg 1153                7.2%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1385.2  ▂▁▁▃▆█▄█●▄▂▂ beats 42/53  avg 1153                7.2%  typical
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   61.2%  ▄▄····▄▄█▄·● beats 7/8    hard · avg 34%          3.3%  at its level
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1096.0  ▃▂····▂█▂▃▂● beats 14/14  avg 956                 2.9%  blunt
 <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>   22.3%  ▄········▄█● beats 4/4    very hard · avg 7.1%    1.1%  typical
@@ -58,9 +58,9 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>   41.6%  ▄··▄█····▄●▄ beats 5/6    very hard · avg 1.4%     16%  sharp · at its level
-<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    4.6%  ▄·▄···●·▄▄·▄ beats 3/6    very hard · avg 0.6%    5.2%  sharp · too hard for it
+<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    4.6%  ▄·▄···●·▄▄·▄ beats 3/6    very hard · avg 0.6%    5.1%  sharp · too hard for it
 <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    87.8%  ▂··▂█▂▄▂▂·▂● beats 12/12  medium · avg 41%        4.0%  typical
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1071.6  ▁▁▁▄▂█▂●▁▂▁▁ beats 26/34  avg 874                 3.0%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1071.6  ▁▁▁▄▂█▂●▁▂▁▁ beats 26/34  avg 875                 3.0%  typical
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   90.7%  ▄···█··▄···● beats 4/5    easy · avg 78%          1.3%  maxed out
 <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   68.4%  ▂···▂·▂█▆▅·● beats 15/15  hard · avg 31%          1.2%  at its level
 <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   34.4%  ▅·▃·▃··▃·●▃▃ beats 6/9    hard · avg 28%          0.7%  blunt · at its level
@@ -74,7 +74,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   26% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   26% ▇▇▇
 <a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   16% ▇▇
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   15% ▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   12% ▇
@@ -91,7 +91,7 @@ source                                    results  share of the score
 <a name="visual-tecci"></a><a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI: Tricky Edits of Collected and Cu…</a>        1    1% ▇
 <a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 75.8
+weighted average                                   = 75.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

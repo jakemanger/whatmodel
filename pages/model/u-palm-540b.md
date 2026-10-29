@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 540B params · proprietary
 
-**score 48.0** ±0.9 · comparison only: no current run option verified · from 21 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 47.9** ±0.9 · comparison only: no current run option verified · from 21 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▆█●▅█▄▁▁▁   #221 of 526     26%      2
+math  ▁▁▃▆█●▅█▄▁▁▁   #221 of 528     26%      2
 </pre>
 
-<details><summary>math · #221 of 526 · 26% of its score</summary>
+<details><summary>math · #221 of 528 · 26% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run   difficulty        counts  why
@@ -49,7 +49,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11399v2">COPA (lab)</a>                           96.0%  ▁·▁▁▁▅▅█▆▂●▁ beats 64/67    very easy · avg 95%    1.4%  small run
 <a href="https://arxiv.org/html/2210.11399v2">LAMBADA (OpenAI version), last-wo…</a>   80.5%  ▁·····▁▁▃▃█● beats 86/86    easy · avg 84%         1.1%  blunt
 <a href="https://arxiv.org/html/2210.11399v2">Story Cloze Test (lab)</a>               87.0%  ▃▃▃▂▅█▅▂●··▂ beats 46/50    easy · avg 89%         1.0%  blunt · small run
-<a href="https://arxiv.org/html/2210.11399v2">PIQA (lab)</a>                           84.1%  ▁▁▁▂▂▃▅█▅●▁▁ beats 117/123  easy · avg 85%         0.9%  blunt · at its level
+<a href="https://arxiv.org/html/2210.11399v2">PIQA (lab)</a>                           84.1%  ▁▁▁▂▂▃▅█▅●▁▁ beats 117/123  easy · avg 85%         1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2210.11399v2">ARC Easy (lab)</a>                       85.9%  ▁▃▂▄▆█▅▃●··▁ beats 97/100   easy · avg 85%         0.9%  blunt · small run
 </pre>
 
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="paper-2210.11399v2"></a><a href="https://arxiv.org/html/2210.11399v2">Transcending Scaling Laws with 0.1% Ext…</a>       17   58% ▇▇▇▇▇▇▇
 <a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        4   41% ▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.0
+weighted average                                   = 47.9
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>

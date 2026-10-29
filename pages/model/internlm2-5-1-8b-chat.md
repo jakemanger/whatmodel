@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-07 · 1.89B params · other
 
-**score 32.7** ±6.6 · #857 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.6** ±6.6 · #863 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle              20% ▇▇
-weighted average                          = 32.7
+weighted average                          = 32.6
 </pre>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -24,7 +24,7 @@ Beats [T2V-Turbo (VC2)](t2v-turbo-vc2.md), [CogVideoX1.5-5B](cogvideox-1-5-5b.md
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1009.0  ●▂▃▆█▆·▆▅▁▂▇ beats 1/41   avg 1147             54%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1009.0  ●▂▃▆█▆·▆▅▁▂▇ beats 1/41   avg 1147             54%  typical
 <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   32.0%  █··●·█·····█ beats 1/3    medium · avg 46%    5.9%  at its level
 <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     81.6%  ▂··●··█▄▂··▆ beats 1/11   easy · avg 84%      2.3%  blunt
 </pre>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                  result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>   997.1  ●▁▁▁▄▇▃▆▃▂▄█ beats 0/40   avg 1189       36%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>   997.1  ●▁▁▁▄▇▃▆▃▂▄█ beats 0/40   avg 1189       36%  typical
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    6% ▇
 <a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇

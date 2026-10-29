@@ -6,7 +6,7 @@
 
 Swiss AI · released 2026-07 · 72.01B params · apache-2.0
 
-**score 53.1** ±6.2 · #392 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.0** ±6.1 · #396 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                17% ▇▇
-weighted average                            = 53.1
+weighted average                            = 53.0
 </pre>
 
 <sub>Licences: Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

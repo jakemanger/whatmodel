@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 56.9** ±1.5 · #245 of 729 · from 4 benchmark results across 2 sources
+**score 56.8** ±1.5 · #247 of 731 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆▇█●▅▄▃▁    #202 of 466     94%      3
-math    ▁▁▃▅█●▄█▄▁▁▁   #198 of 427*    4.8%      1
+coding  ▁▁▁▃▅▇█●▅▄▃▁    #202 of 468     94%      3
+math    ▁▁▃▅█●▄█▄▂▁▁   #200 of 429*    4.8%      1
 </pre>
 
-<details><summary>coding · #202 of 466 · 94% of its score</summary>
+<details><summary>coding · #202 of 468 · 94% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 3/7    very hard · avg 2.5%     53%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 3/7    very hard · avg 2.5%     52%  sharp · too hard for it
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   64.8%  ▄·▄····▄▄●█▄ beats 4/7    medium · avg 46%         29%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   71.4%  ▄▄···▄·▄▄●·▄ beats 6/7    medium · avg 58%         13%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #198 of 427 · 4.8% of its score</summary>
+<details><summary>math · #200 of 429 · 4.8% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                                    3   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2604.19444v1-calibration"></a><a href="https://arxiv.org/html/2604.19444v1">Unsupervised Confidence Calibration for…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 56.9
+weighted average                                   = 56.8
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Unsupervised Confidence Calibration for Reasoning LLMs from a Single Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

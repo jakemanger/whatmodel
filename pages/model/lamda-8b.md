@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 8B params · proprietary
 
-**score 12.2** ±1.6 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 12.2** ±1.5 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▄▁▁▁   #515 of 526*    5.9%      1
+math  ▁●▃▆██▅█▄▁▁▁   #517 of 528*    5.9%      1
 </pre>
 
-<details><summary>math · #515 of 526 · 5.9% of its score</summary>
+<details><summary>math · #517 of 528 · 5.9% of its score</summary>
 
 Beats [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md), [Flan-T5 Small](flan-t5-small.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    1.6%  █·●▃▃▃·▃·▃▃▅ beats 3/12   easy · avg 66%    5.9%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    1.6%  █·●▃▃▃·▃·▃▃▅ beats 3/12   easy · avg 67%    5.9%  sharp · too hard for it
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                           5.0%  ▅▃▃●··▃▃·▃▃█ beats 5/12   easy · avg 83%          20%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                           3.4%  ▃▅●···▅·▃▃▃▅ beats 5/12   easy · avg 82%          16%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>    9.5%  ▃·▅·▅●▅·▃▃·█ beats 5/12   medium · avg 52%       7.5%  too hard for it
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  19.0%  ●······▁·▁▁▃ beats 0/12   easy · avg 87%         4.2%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  19.0%  ●······▁·▁▁▃ beats 0/12   easy · avg 88%         4.2%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   50.0%  ●·····▃·▁·▄▁ beats 0/12   medium · avg 81%       3.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     54.1%  █·····▅●▃▅▃█ beats 5/12   medium · avg 70%       2.7%  too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       18.6%  ●▁·▁▁·····▂▁ beats 1/12   medium · avg 48%       0.5%  sharp · too hard for it

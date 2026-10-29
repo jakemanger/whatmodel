@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · proprietary
 
-**score 52.2** ±0.9 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 52.1** ±0.9 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▂▅▇●▇▅▄▃▁   #311 of 535*     20%      1
-chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #267 of 469*     20%      1
-math            ▁▁▃●██▅█▄▁▁▁   #446 of 526*    7.7%      1
+coding          ▁▁▁▂▄▆●▇▅▄▃▁   #311 of 537*     20%      1
+chat &amp; writing  ▁▁▁▃▅▄▇●▇▇▇▃   #270 of 472*     20%      1
+math            ▁▁▃●██▅█▄▁▁▁   #449 of 528*    7.7%      1
 </pre>
 
-<details><summary>coding · #311 of 535 · 20% of its score</summary>
+<details><summary>coding · #311 of 537 · 20% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -32,18 +32,18 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #267 of 469 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #270 of 472 · 20% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   63.7%  ▂▁▁▅█▅▄▃●▅▃▁ beats 43/60  medium · avg 46%     20%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   63.7%  ▂▁▁▅█▅▄▃●▅▃▁ beats 43/60  medium · avg 47%     20%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #446 of 526 · 7.7% of its score</summary>
+<details><summary>math · #449 of 528 · 7.7% of its score</summary>
 
 Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             81.2%  ▁·▁▁▄▄▄▅●▄▂▁ beats 31/53  easy · avg 75%          32%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             18.8%  ▁▁▃▆●█▁▁·▁▁▁ beats 26/57  hard · avg 15%          12%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.9273 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 40/52  avg 42.861 WB-Score    8.4%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  48.9273 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 40/52  avg 42.989 WB-Score    8.4%  sharp
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ source                               results  share of the score
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>           1   20% ▇▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>              1    8% ▇
 prior: pull toward the middle                   0% ▇
-weighted average                              = 52.2
+weighted average                              = 52.1
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE))</sub>

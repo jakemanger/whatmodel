@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 17.9** ±0.9 · #703 of 729 · from 47 benchmark results across 14 sources
+**score 17.9** ±0.9 · #705 of 731 · from 47 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁●▁▃▆▇█▇▅▄▃▁   #460 of 466*     20%      2
-math    ▁▁●▅█▆▄█▄▁▁▁    #397 of 427    4.0%      2
+coding  ▁●▁▃▅▇█▇▅▄▃▁   #462 of 468*     20%      2
+math    ▁▁●▅█▇▄█▄▂▁▁    #399 of 429    4.0%      2
 </pre>
 
-<details><summary>coding · #460 of 466 · 20% of its score</summary>
+<details><summary>coding · #462 of 468 · 20% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [ChatGLM-6B](chatglm-6b.md) here, though they rank higher overall.
 
@@ -32,13 +32,13 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #397 of 427 · 4.0% of its score</summary>
+<details><summary>math · #399 of 429 · 4.0% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test    result  vs the others in its run   difficulty      counts  why
-<a href="https://aclanthology.org/2023.findings-emnlp.930.pdf">GSM8K</a>     1.5%  ▂●▂▂▃▄▅▇██▆▄ beats 11/206  easy · avg 67%    2.2%  sharp · too hard for it
+<a href="https://aclanthology.org/2023.findings-emnlp.930.pdf">GSM8K</a>     1.5%  ▂●▂▂▃▄▅▇██▆▄ beats 11/206  easy · avg 68%    2.2%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">MathQA</a>   24.1%  ▃·▃▃█●··▃·▃▃ beats 7/10    hard · avg 33%    1.8%  blunt · too hard for it · several runs
 </pre>
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            42.7%  ▃▃●··▅····▃█ beats 2/8     easy · avg 82%          15%  at its level · several runs
 <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        27.4%  ▅····●▃···▅█ beats 2/8     medium · avg 60%        10%  sharp · too hard for it · noisy · sever…
 <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           57.7%  ●··█···█▄▄·▄ beats 0/8     easy · avg 86%         9.0%  small run · several runs
-<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             61.1%  ▅·●▃··▃··▃·█ beats 2/8     easy · avg 87%         5.8%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             61.1%  ▅·●▃··▃··▃·█ beats 2/8     easy · avg 87%         5.7%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">COPA</a>                                 79.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 28/67   very easy · avg 96%    4.7%  at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   41.6%  ▂·▄·▂●▄▄█▄▂▆ beats 6/21    easy · avg 74%         4.6%  blunt · at its level
 <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 72.9%  ▄▄··●·▄·▄·██ beats 2/8     easy · avg 88%         4.4%  blunt · at its level · several runs

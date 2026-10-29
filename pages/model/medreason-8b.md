@@ -6,7 +6,7 @@
 
 UCSC VLAA · released 2025-04 · 8.03B params · apache-2.0
 
-**score 35.8** ±4.6 · #824 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.8** ±4.6 · #828 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

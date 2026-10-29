@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▆██●█▄▁▁▁   #189 of 526*     31%      1
+math  ▁▁▃▆██●█▄▁▁▁   #189 of 528*     31%      1
 </pre>
 
-<details><summary>math · #189 of 526 · 31% of its score</summary>
+<details><summary>math · #189 of 528 · 31% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 

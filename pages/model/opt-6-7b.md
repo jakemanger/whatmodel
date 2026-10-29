@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 23.7** ±0.7 · #690 of 729 · from 40 benchmark results across 11 sources
+**score 23.7** ±0.7 · #692 of 731 · from 40 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ●▁▁▃▆▇█▇▅▄▃▁   #464 of 466*    1.8%      1
-math    ▁▁●▅█▆▄█▄▁▁▁   #409 of 427*    5.2%      1
+coding  ●▁▁▃▅▇█▇▅▄▃▁   #466 of 468*    1.8%      1
+math    ▁▁●▅█▇▄█▄▂▁▁   #409 of 429*    5.2%      1
 </pre>
 
-<details><summary>coding · #464 of 466 · 1.8% of its score</summary>
+<details><summary>coding · #466 of 468 · 1.8% of its score</summary>
 
 Trails [GPT-Neo 2.7B](gpt-neo-2-7b.md), [Phi-1 (1.3B)](phi-1.md), [Pythia 6.9B](pythia-6-9b.md) here, though they rank lower overall.
 
@@ -31,9 +31,9 @@ test       result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #409 of 427 · 5.2% of its score</summary>
+<details><summary>math · #409 of 429 · 5.2% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Qwen2 1.5B Instruct](qwen2-1-5b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why

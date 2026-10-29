@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-03 · closed weights
 
-**score 67.4** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+**score 67.2** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #89 of 469*     32%      1
-vision &amp; documents  ▁▁▂▃▂▃▅▃▇●█▄    #79 of 189     67%      4
+chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #91 of 472*     31%      1
+vision &amp; documents  ▁▁▂▃▂▃▅▄▆●█▄    #79 of 189     67%      4
 </pre>
 
-<details><summary>chat &amp; writing · #89 of 469 · 32% of its score</summary>
+<details><summary>chat &amp; writing · #91 of 472 · 31% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1430.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 286/382  avg 1259       32%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1430.7  ▁▁▁▂▃▃▃▆▆●█▃ beats 287/385  avg 1259       31%  blunt
 </pre>
 
 </details>
@@ -37,8 +37,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions) (la…</a>   80.1%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 76/100  medium · avg 43%     21%  small run · several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1215.9  ▁▁▂▂▂▂▃▄▄●█▇ beats 83/152  avg 1061             21%  blunt
+<a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions) (la…</a>   80.1%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 77/101  medium · avg 43%     21%  small run · several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1215.9  ▁▁▂▂▂▂▃▄▅●█▇ beats 83/152  avg 1061             21%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.9%  ▁·▁·▃▃▁▇▃●·▄ beats 15/22   hard · avg 26%       17%  blunt · at its level
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro (lab)</a>                       76.8%  ▂▃▁▃▆▇▃▇▇█●▅ beats 43/52   medium · avg 48%    8.4%  at its level · small run
 </pre>
@@ -62,12 +62,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   52% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   52% ▇▇▇▇▇▇
 <a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (lab)</a>           2   19% ▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   17% ▇▇
-<a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo vendor-reported benchmark s…</a>        1   10% ▇
+<a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo vendor-reported benchmark s…</a>        1   11% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.4
+weighted average                                   = 67.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XiaomiMiMo/MiMo-V2.5 model card ([MIT](../../licenses/XiaomiMiMo--MiMo-V2.5.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

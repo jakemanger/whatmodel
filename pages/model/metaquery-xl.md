@@ -6,7 +6,7 @@
 
 Meta / NYU · released 2025-04
 
-**score 46.9** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.9** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂▇▇●▅█▇▂▃▁▁   #85 of 157*     83%      1
+text to image  ▁▂██●▆██▂▃▁▁   #86 of 157*     83%      1
 </pre>
 
-<details><summary>text to image · #85 of 157 · 83% of its score</summary>
+<details><summary>text to image · #86 of 157 · 83% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Ovis-Image-7B](ovis-image-7b.md) here, though they rank higher overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Krea \[dev\]](flux-1-krea-dev.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

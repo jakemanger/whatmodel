@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▁▂▁▁   #113 of 126*    0.4%      1
+text to image  ▂●▅▃▄▄█▃▂▂▁▁   #113 of 126*    0.4%      1
 </pre>
 
 <details><summary>text to image · #113 of 126 · 0.4% of its score</summary>
@@ -34,9 +34,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                      result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  74.0000 wins  ●·········█▄ beats 0/3    avg 526.538 wins        63%  sharp
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  74.0000 wins  ●·········█▄ beats 0/3    avg 526.573 wins        63%  sharp
 <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>          7.4%  ●····█▁·▁··▁ beats 0/9    very easy · avg 92%     16%  sharp · noisy
-<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>   26.2000 FID  ●··········█ beats 0/2    avg 7.872 FID           13%  blunt · small run
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>   26.2000 FID  ●··········█ beats 0/2    avg 7.870 FID           13%  blunt · small run
 </pre>
 
 </details>

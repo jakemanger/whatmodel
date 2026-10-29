@@ -22,7 +22,7 @@ image to video  ▁▂·▂▅█▅▄●▆▃▄   #19 of 50     57%      3
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1326.7  ▂▂▃▆█▆·●▅▁▂▇ beats 24/41  avg 1147           33%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1326.7  ▂▂▃▆█▆·●▅▁▂▇ beats 24/41  avg 1147           33%  typical
 <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   50.4%  ▅·▃█▃·●▃▅▃▃▃ beats 7/14   hard · avg 44%    2.8%  blunt · at its level
 <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     84.8%  ▂··▂··●▄▂··▆ beats 2/11   easy · avg 84%    0.8%  blunt
 </pre>
@@ -36,7 +36,7 @@ Beats [HappyHorse 1.1](happyhorse-1-1.md), [Vidu Q3 Pro](vidu-q3-pro.md) here, t
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>  1211.0  ▃▃··█··▃●▃·▃ beats 6/8    avg 875        23%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1309.5  ▁▁▁▁▄▇▃●▃▂▄█ beats 21/40  avg 1189       22%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1309.5  ▁▁▁▁▄▇▃●▃▂▄█ beats 21/40  avg 1189       22%  typical
 <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1023.0  ▂··▂▂●█▆▂▂▆▄ beats 5/19   avg 741        12%  sharp
 </pre>
 
@@ -57,7 +57,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   54% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   54% ▇▇▇▇▇▇▇
 <a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   23% ▇▇▇
 <a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   12% ▇
 <a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    6% ▇

@@ -6,7 +6,7 @@
 
 Meta · released 2026-04 · closed weights
 
-**score 74.1** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 73.9** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,41 +16,41 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #14 of 469*     35%      1
-math                ▁▁▃▆██▅●▄▁▁▁   #78 of 526*    5.1%      1
-vision &amp; documents  ▁▁▂▃▂▃▅▃▇██●   #15 of 189*     34%      2
+chat &amp; writing      ▁▁▁▃▅▄▇█▇▇▇●   #15 of 472*     34%      1
+math                ▁▁▃▆██▅●▄▁▁▁   #80 of 528*    5.1%      1
+vision &amp; documents  ▁▁▂▃▂▃▅▄▆██●   #15 of 189*     35%      2
 </pre>
 
-<details><summary>chat &amp; writing · #14 of 469 · 35% of its score</summary>
+<details><summary>chat &amp; writing · #15 of 472 · 34% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1489.0  ▁▁▁▂▃▃▃▆▆▇█● beats 370/382  avg 1259       35%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1489.0  ▁▁▁▂▃▃▃▆▆▇█● beats 371/385  avg 1259       34%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #78 of 526 · 5.1% of its score</summary>
+<details><summary>math · #80 of 528 · 5.1% of its score</summary>
 
 Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/195  very hard · avg 7.0%    5.1%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/197  very hard · avg 7.1%    5.1%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #15 of 189 · 34% of its score</summary>
+<details><summary>vision &amp; documents · #15 of 189 · 35% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1294.1  ▁▁▂▂▂▂▃▄▄▅█● beats 147/152  avg 1061       23%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1467.3  ▁▁▃▃▄▃▇█●▇▄▅ beats 22/37    avg 1331       12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1294.1  ▁▁▂▂▂▂▃▄▅▅█● beats 147/152  avg 1061       23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1467.3  ▁▁▃▃▄▃▇█●▇▄▅ beats 22/37    avg 1331       12%  blunt
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test          result  vs the others in its run    difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   89.8%  ▁▁▁▁▂▄▆▄▅▇●▄ beats 172/209  hard · avg 38%     24%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   89.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 172/211  hard · avg 39%     24%  sharp
 </pre>
 
 </details>
@@ -70,10 +70,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   69% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   69% ▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             2   29% ▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 74.1
+weighted average                        = 73.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

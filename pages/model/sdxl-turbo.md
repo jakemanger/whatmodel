@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▁▂▁▁   #105 of 126     89%      3
+text to image  ▂●▅▃▄▄█▃▂▂▁▁   #104 of 126     89%      3
 </pre>
 
-<details><summary>text to image · #105 of 126 · 89% of its score</summary>
+<details><summary>text to image · #104 of 126 · 89% of its score</summary>
 
-Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [IF-XL](deepfloyd-if-xl.md) here, though they rank higher overall.
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
@@ -36,7 +36,7 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.697 FID     10%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.694 FID     10%  typical
 </pre>
 
 </details>

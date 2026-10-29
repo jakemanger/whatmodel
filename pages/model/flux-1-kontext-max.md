@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄●█▃▁▂▁▁   #58 of 126*     71%      2
-image to image / edit…  ▁▁·▃▂●█▃▅▅▂▁    #47 of 62*     20%      1
+text to image           ▂▅▅▃▄●█▃▂▂▁▁   #58 of 126*     71%      2
+image to image / edit…  ▁▁·▃▂●█▅▄▅▂▁    #47 of 62*     20%      1
 </pre>
 
 <details><summary>text to image · #58 of 126 · 71% of its score</summary>
@@ -26,7 +26,7 @@ Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank higher ov
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1074.4  ▂▂▃▄●█▅▂▄▂·▂ beats 20/75  avg 1027           53%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1075.3  ▁▂▃▃●█▃▂▂▂▁▁ beats 20/75  avg 1027           53%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   28.5%  ▆●·▂▂····▂▂█ beats 5/13   hard · avg 20%     18%  sharp · at its level · noisy
 </pre>
 
@@ -38,7 +38,7 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher over
 
 <pre>
 test              result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1182.3  ▂▁▁▃●█▄█▄█▁▂ beats 9/53   avg 1153       20%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1182.3  ▂▁▁▃●█▄█▇▄▂▂ beats 9/53   avg 1153       20%  typical
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test              result  vs the others in its run  difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   53.0%  ▂·▂▃·▂·▃▂·●█ beats 8/14   medium · avg 42%    7.4%  blunt · at its level
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   53.0%  ▂·▂▃·▂·▃▂·●█ beats 8/14   medium · avg 42%    7.5%  blunt · at its level
 </pre>
 
 </details>
@@ -58,9 +58,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   73% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   73% ▇▇▇▇▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   18% ▇▇
-<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1    7% ▇
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1    8% ▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 54.8
 </pre>

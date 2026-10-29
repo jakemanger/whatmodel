@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▁▂▇▇▆▅█▇●▃▁▁   #20 of 157*     88%      1
+text to image  ▁▂██▇▆██●▃▁▁   #21 of 157*     88%      1
 </pre>
 
-<details><summary>text to image · #20 of 157 · 88% of its score</summary>
+<details><summary>text to image · #21 of 157 · 88% of its score</summary>
 
-Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Uni-1.1](uni-1-1.md) here, though they rank higher overall. Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md), [Ideogram 4.0](ideogram-4.md) here, though they rank lower overall.
+Trails [Ideogram 4.0](ideogram-4.md), [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

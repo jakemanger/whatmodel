@@ -6,7 +6,7 @@
 
 Ghost X · released 2024-04 · 7.24B params · other (ghost-7b)
 
-**score 33.5** ±2.0 · #637 of 729 · from 5 benchmark results across 2 sources
+**score 33.4** ±2.0 · #640 of 731 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃   #383 of 398*     61%      2
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #386 of 401*     61%      2
 </pre>
 
-<details><summary>chat &amp; writing · #383 of 398 · 61% of its score</summary>
+<details><summary>chat &amp; writing · #386 of 401 · 61% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        6.9%  ▁▂●▃▆▆█▆▄▄▁▁ beats 13/122  hard · avg 35%          50%  sharp · too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        6.9%  ▁▂●▃▆▆█▆▄▄▁▁ beats 13/122  medium · avg 35%        50%  sharp · too hard for it
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   70.4%  ▂▂·▆·●▃▆█▆▄▂ beats 15/45   very easy · avg 94%     11%  sharp · at its level · noisy
 </pre>
 
@@ -51,7 +51,7 @@ source                                results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>         2   61% ▇▇▇▇▇▇▇
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">Open Medical-LLM Leaderboard results</a>        3   38% ▇▇▇▇▇
 prior: pull toward the middle                    2% ▇
-weighted average                               = 33.5
+weighted average                               = 33.4
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

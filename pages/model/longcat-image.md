@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄●█▃▁▂▁▁   #59 of 126     95%      7
+text to image  ▂▅▅▃▄●█▃▂▂▁▁   #59 of 126     95%      7
 </pre>
 
 <details><summary>text to image · #59 of 126 · 95% of its score</summary>
@@ -25,9 +25,9 @@ Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md), [L
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    83.9%  ▄····●█▄▄█▄█ beats 1/10   easy · avg 82%       68%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    83.9%  ▄····●█▄▄█▄█ beats 1/10   easy · avg 82%       69%  typical
 <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o jud…</a>   65.0%  ▄·▆▂▆█▄▆▂●·▄ beats 20/22  medium · avg 60%     23%  at its level
-<a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   90.7%  ▄█·········● beats 3/3    medium · avg 58%    3.4%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   90.7%  ▄█·········● beats 3/3    medium · avg 58%    3.3%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2512.07584v1">GenEval (lab)</a>                        87.0%  ▇▃▅▇▁▄▅▃█▃●▅ beats 35/39  easy · avg 79%         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2512.07584v1">DPG-Bench (lab)</a>                      86.8%  ▄·▂·▂▆█●▂▄▂▂ beats 12/17                         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2512.07584v1">CVTG-2K word accuracy (lab)</a>          86.6%  ▄▄▄●▄▄·▄···▄ beats 3/8                           —  not counted yet: no other model in the …
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   68% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   69% ▇▇▇▇▇▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   23% ▇▇▇
 <a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat (lab)</a>                           1    3% ▇
 prior: pull toward the middle                        5% ▇

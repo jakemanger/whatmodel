@@ -6,7 +6,7 @@
 
 UNC Chapel Hill · released 2020-09
 
-**score 16.5** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 16.4** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ●▂▇▇▆▅█▇▂▃▁▁   #156 of 157*     93%      1
+text to image  ●▂██▇▆██▂▃▁▁   #156 of 157*     93%      1
 </pre>
 
 <details><summary>text to image · #156 of 157 · 93% of its score</summary>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-tifa"></a><a href="https://arxiv.org/html/2303.11897v3">TIFA: Accurate and Interpretable Text-t…</a>        1   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 16.5
+weighted average                                   = 16.4
 </pre>
 
 <sub>Licences: TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt))</sub>

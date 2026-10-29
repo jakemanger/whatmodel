@@ -16,17 +16,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄●█▃▁▂▁▁   #52 of 126*     46%      1
-image to image / edit…  ▁▁·▃▂▂█●▅▅▂▁    #25 of 62*     53%      2
+text to image           ▂▅▅▃▄●█▃▂▂▁▁   #52 of 126*     45%      1
+image to image / edit…  ▁▁·▃▂▃█●▄▅▂▁    #25 of 62*     53%      2
 </pre>
 
-<details><summary>text to image · #52 of 126 · 46% of its score</summary>
+<details><summary>text to image · #52 of 126 · 45% of its score</summary>
 
 Trails [Qwen-Image-2512](qwen-image-2512.md), [HunyuanImage 3.0](hunyuanimage-3-0.md), [Z-Image (Base)](z-image-base.md) here, though they rank lower overall.
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1101.1  ▂▂▃▄●█▅▂▄▂·▂ beats 25/75  avg 1027       46%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1100.6  ▁▂▃▃●█▃▂▂▂▁▁ beats 25/75  avg 1027       45%  typical
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   64.6%  ▃▃▂·▃▆▂█·●·▃ beats 18/20  hard · avg 45%     36%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1300.6  ▂▁▁▃▆█▄●▄█▁▂ beats 28/53  avg 1153           17%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1300.5  ▂▁▁▃▆█▄●▇▄▂▂ beats 28/53  avg 1153           17%  typical
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   63% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   63% ▇▇▇▇▇▇▇▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   36% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 61.7

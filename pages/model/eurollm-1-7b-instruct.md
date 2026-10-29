@@ -6,7 +6,7 @@
 
 UTTER (EuroLLM) · released 2024-08 · 1.66B params · apache-2.0
 
-**score 29.1** ±3.1 · #668 of 729 · from 3 benchmark results across 3 sources
+**score 29.1** ±3.1 · #670 of 731 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.3%  ▁●▂▂▃█▃▆▅▄▂▃ beats 5/95    medium · avg 64%     67%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.3%  ▁●▂▂▃█▃▆▅▄▂▃ beats 5/95    medium · avg 65%     67%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   30.8%  ●▁▁▁▁▁▁▁▂█▅▁ beats 31/276  medium · avg 72%     15%  noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   29.8%  ▁▁▁●▁▁▁▂▄█▄▃ beats 5/146   easy · avg 82%       14%  at its level · noisy
 </pre>

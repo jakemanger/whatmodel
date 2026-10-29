@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 38.6** ±0.9 · #583 of 729 · from 6 benchmark results across 3 sources
+**score 38.6** ±0.9 · #584 of 731 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #404 of 466     79%      4
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #406 of 468     79%      4
 </pre>
 
-<details><summary>coding · #404 of 466 · 79% of its score</summary>
+<details><summary>coding · #406 of 468 · 79% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          39.6%  ▁█▄●▇█·▄▇▅▄▄ beats 10/42  easy · avg 74%       62%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          39.6%  ▁█▄●▇█·▄▇▅▄▄ beats 10/42  easy · avg 75%       62%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         47.6%  ▃▃▃●··▃▅··▅▃ beats 3/11   easy · avg 71%       11%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   37.3%  ▁··▁▅▂●▇▁··▁ beats 8/22   medium · avg 52%    3.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   35.9%  ▁·▂▃●█▁▂···▁ beats 7/22   medium · avg 51%    3.0%  blunt · at its level

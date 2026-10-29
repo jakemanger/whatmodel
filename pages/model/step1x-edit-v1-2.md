@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others       rank  counts  tests
-image to image / edit…  ▁▁·▃▂▂●▃▅▅▂▁   #44 of 62     72%      5
+image to image / edit…  ▁▁·▃▂▃●▅▄▅▂▁   #44 of 62     72%      5
 </pre>
 
 <details><summary>image to image / editing · #44 of 62 · 72% of its score</summary>
@@ -26,10 +26,10 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-k
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           51.6%  ▃▃▂·▃▆▂●·▃·▃ beats 12/20  hard · avg 45%       41%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>             60.9%  ██·········● beats 2/2    medium · avg 54%    8.6%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>             60.9%  ██·········● beats 2/2    medium · avg 54%    8.5%  at its level · small run
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (lab)</a>    996.0  ▃▂····▂●▂▃▂▃ beats 4/14   avg 956             8.5%  blunt
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   75.8%  █·······█··● beats 2/2    easy · avg 73%      8.0%  small run
-<a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   69.5%  ▄█●··█··▄·▄▄ beats 3/8    easy · avg 74%      6.3%  blunt
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   75.8%  █·······█··● beats 2/2    easy · avg 73%      7.9%  small run
+<a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   69.5%  ▄█●··█··▄·▄▄ beats 3/8    easy · avg 74%      6.2%  blunt
 </pre>
 
 </details>
@@ -52,8 +52,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   41% ▇▇▇▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   19% ▇▇
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   17% ▇▇
-<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    9% ▇
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   16% ▇▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1    7% ▇
 <a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1    6% ▇
 prior: pull toward the middle                        2% ▇

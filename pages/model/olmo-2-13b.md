@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 47.5** ±1.3 · #416 of 729 · from 11 benchmark results across 3 sources
+**score 47.5** ±1.3 · #417 of 731 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▆▇▃   #250 of 398*     15%      2
-math            ▁▁▃●█▆▄█▄▁▁▁   #342 of 427*     19%      2
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #253 of 401*     15%      2
+math            ▁▁▃●█▇▄█▄▂▁▁   #346 of 429*     19%      2
 </pre>
 
-<details><summary>chat &amp; writing · #250 of 398 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #253 of 401 · 15% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -32,9 +32,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #342 of 427 · 19% of its score</summary>
+<details><summary>math · #346 of 429 · 19% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 7/22    easy · avg 75%          28%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 63.0%  ▁▄·▁▁·●█·▄▄▁ beats 6/22    medium · avg 72%        25%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          28.8%  ▁▁▁▃▃▃▁●▁▃·▄ beats 12/21   hard · avg 31%         5.0%  at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.5%  ▃·▁▁▂▁▂▅●▇▄▁ beats 45/100  medium · avg 66%       3.5%  sharp · at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.5%  ▃·▁▁▂▁▂▅●▇▄▁ beats 45/100  medium · avg 67%       3.5%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 84/146  easy · avg 82%         2.5%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   89.2%  ▁▁▂●▄▄█▆▃▂▂▁ beats 22/140  very easy · avg 94%    1.3%  blunt · maxed out · noisy
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 64.3%  ▃▃▂·▃▃·▅●▂▅▂ beats 13/21   medium · avg 60%       0.7%  blunt · at its level

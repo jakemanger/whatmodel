@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 1.3B params · opt-175b-license-noncommercial
 
-**score 14.2** ±0.8 · #708 of 729 · from 61 benchmark results across 11 sources
+**score 14.2** ±0.8 · #710 of 731 · from 61 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▆▄█▄▁▁▁   #360 of 427*    0.8%      1
+math  ▁▁▃●█▇▄█▄▂▁▁   #363 of 429*    0.7%      1
 </pre>
 
-<details><summary>math · #360 of 427 · 0.8% of its score</summary>
+<details><summary>math · #363 of 429 · 0.7% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall.
 
 <pre>
 test    result  vs the others in its run  difficulty      counts  why
-<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">MathQA</a>   23.3%  ▃·▃●█▅··▃·▃▃ beats 2/10   hard · avg 33%    0.8%  blunt · too hard for it
+<a href="https://aclanthology.org/2023.emnlp-main.265.pdf">MathQA</a>   23.3%  ▃·▃●█▅··▃·▃▃ beats 2/10   hard · avg 33%    0.7%  blunt · too hard for it
 </pre>
 
 </details>

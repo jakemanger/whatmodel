@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 28.6** ±1.1 · #671 of 729 · from 16 benchmark results across 7 sources
+**score 28.6** ±1.1 · #673 of 731 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,7 +34,7 @@ test             result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2210.17323v2">ARC Challenge</a>                        45.0%  █▃··▃··▅▃█▅● beats 14/14  easy · avg 81%          27%  sharp
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     48.6%  ●··▁▃·▁··▁·▃ beats 1/12   easy · avg 87%          12%  at its level · several runs
-<a href="https://arxiv.org/html/2210.02414v2">CommonsenseQA</a>                        42.8%  █·····▂▂●▂▄▄ beats 19/38  very easy · avg 93%    9.3%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2210.02414v2">CommonsenseQA</a>                        42.8%  █·····▂▂●▂▄▄ beats 19/38  very easy · avg 93%    9.2%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2210.17323v2">ARC Easy</a>                             67.5%  ▅▃▃▃▃▃▃▃▅·●▃ beats 13/14  easy · avg 83%         7.3%  blunt · at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     76.9%  ▂▂▄▂·▂·▆·▂●▂ beats 11/14  easy · avg 89%         6.3%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 79.2%  ▄·█▄·█▄▄▄█●█ beats 12/14  easy · avg 88%         6.0%  blunt · at its level · several runs

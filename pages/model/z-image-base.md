@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2026-01 · 6B params · apache-2.0
 
-**score 58.0** ±2.0 · #55 of 144 · from 11 benchmark results across 3 sources
+**score 58.0** ±2.0 · #54 of 144 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #47 of 126     98%     11
+text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #47 of 126     98%     11
 </pre>
 
 <details><summary>text to image · #47 of 126 · 98% of its score</summary>
 
-Beats [Wan 2.7 Image](wan-2-7-image.md), [Krea 2 Large](krea-2-large.md), [HiDream-O1-Image](hidream-o1-image.md) here, though they rank higher overall.
+Beats [Wan 2.7 Image](wan-2-7-image.md), [GPT Image 1 Mini](gpt-image-1-mini.md), [HiDream-O1-Image](hidream-o1-image.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

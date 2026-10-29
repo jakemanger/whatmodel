@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · proprietary
 
-**score 75.4** ±2.2 · #10 of 144 · from 3 benchmark results across 3 sources
+**score 75.3** ±2.2 · #10 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others       rank  counts  tests
-text to image  ▂▅▅▃▄▄█▃▁●▁▁   #9 of 126     98%      3
+text to image  ▂▅▅▃▄▄█▃▂●▁▁   #9 of 126     98%      3
 </pre>
 
 <details><summary>text to image · #9 of 126 · 98% of its score</summary>
@@ -25,9 +25,9 @@ Beats [Nano Banana Pro (Gemini 3 Pro Image)](nano-banana-pro.md) here, though th
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1255.2  ▂▂▃▄▇█▅▂●▂·▂ beats 64/75  avg 1027           72%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1254.0  ▁▂▃▃▆█▃▂●▂▁▁ beats 65/75  avg 1027           72%  typical
 <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   93.7%  ▆▆·▂▂····▂▂● beats 10/13  hard · avg 20%     18%  sharp · noisy
-<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   88.3%  ▁▂▂█▃▁▂●·▁·▁ beats 18/22  hard · avg 28%    8.1%  sharp · noisy
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   88.3%  ▁▂▂█▃▁▂●·▁·▁ beats 18/22  hard · avg 28%    8.2%  sharp · noisy
 </pre>
 
 </details>
@@ -38,11 +38,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   72% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   72% ▇▇▇▇▇▇▇▇▇
 <a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   18% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    8% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 75.4
+weighted average                                   = 75.3
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

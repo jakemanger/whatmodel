@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 63.0** ±2.0 · #171 of 729 · from 3 benchmark results across 2 sources
+**score 62.9** ±1.9 · #173 of 731 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▅▅●▅▄▂▁   #101 of 310*    7.5%      1
+agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #102 of 312*    7.4%      1
 </pre>
 
-<details><summary>agent tasks · #101 of 310 · 7.5% of its score</summary>
+<details><summary>agent tasks · #102 of 312 · 7.4% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   78.5%  ▂··▄···▂▄▄●▄ beats 8/13   medium · avg 45%    7.5%  at its level
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   78.5%  ▂··▄···▂▄▄●▄ beats 8/13   medium · avg 45%    7.4%  at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ source                                 results  share of the score
 <a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                             1    7% ▇
 prior: pull toward the middle                     2% ▇
-weighted average                                = 63.0
+weighted average                                = 62.9
 </pre>
 
 <sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

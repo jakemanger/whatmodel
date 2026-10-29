@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2210.17323v2">LAMBADA (OpenAI version), last-wo…</a>   75.6%  ▄▄▄█▄·█·▄██● beats 14/14   very easy · avg 87%    2.4%  blunt · at its level
 <a href="https://arxiv.org/html/2212.12017v3">COPA (lab)</a>                           87.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 50/67   very easy · avg 95%    2.0%  small run
 <a href="https://arxiv.org/html/2212.12017v3">BoolQ (lab)</a>                          60.1%  ▁····▁▂●▆▅▆▄ beats 12/103  easy · avg 84%         1.8%  at its level · small run
-<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (lab)</a>                     58.4%  ▅▁▁▁▂▂▃█●▁▃▁ beats 90/107  easy · avg 74%         1.7%  at its level · noisy · small run
+<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (lab)</a>                     58.4%  ▅▁▁▁▂▂▃█●▁▃▁ beats 90/107  easy · avg 75%         1.7%  at its level · noisy · small run
 <a href="https://arxiv.org/html/2212.12017v3">Winograd Schema Challenge (WSC273…</a>   85.3%  █▃·▅▃▃█▅█●▅▃ beats 16/21   easy · avg 92%         1.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (lab)</a>      46.4%  ▂▃·▂█●▂▂·▂·▂ beats 9/13    medium · avg 60%       0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2212.12017v3">SuperGLUE WSC (prompted) (lab)</a>       51.4%  █··●·▃·▄▂▁▅▃ beats 8/26    medium · avg 70%       0.4%  blunt · noisy · small run

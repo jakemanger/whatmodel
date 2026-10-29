@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 16.5** ±3.5 · #705 of 729 · from 5 benchmark results across 3 sources
+**score 16.5** ±3.5 · #707 of 731 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃   #343 of 398*     44%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #346 of 401*     44%      1
 </pre>
 
-<details><summary>chat &amp; writing · #343 of 398 · 44% of its score</summary>
+<details><summary>chat &amp; writing · #346 of 401 · 44% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   51.2%  ▁▂●▂▂▄▆█▇▄▂▁ beats 11/142  very easy · avg 88%     44%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   51.2%  ▁▂●▂▂▄▆█▇▄▂▁ beats 11/143  very easy · avg 88%     44%  at its level
 </pre>
 
 </details>
@@ -35,9 +35,9 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 26.7%  ▁●▁▁▂▄▅▆█▃▃▁ beats 3/155   easy · avg 79%          30%  sharp · too hard for it
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 82%         8.9%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 82%         8.8%  noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 37/276  medium · avg 72%       8.7%  too hard for it · noisy
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 66%       2.7%  sharp · too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 67%       2.7%  sharp · too hard for it · noisy
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (lab)</a>                  28.2%  ▄▁▁●▁▄█▇▃▂▃▂ beats 23/140  easy · avg 82%            —  not counted yet: no other model in the …
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag (lab)</a>                      37.7%  ▁▁▁●▂▂▄▆█▇▄▂ beats 11/135  very easy · avg 91%       —  not counted yet: no other model in the …
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (lab)</a>                     52.3%  ▁▁▁▁●▁▁▅▇█▃▁ beats 11/131  easy · avg 86%            —  not counted yet: no other model in the …

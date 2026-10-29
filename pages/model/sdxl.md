@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others         rank  counts  tests
-text to image  ▂●▅▃▄▄█▃▁▂▁▁   #106 of 126     82%     12
+text to image  ▂●▅▃▄▄█▃▂▂▁▁   #106 of 126     82%     12
 </pre>
 
 <details><summary>text to image · #106 of 126 · 82% of its score</summary>
@@ -36,7 +36,7 @@ test                                  result  vs the others in its run  difficul
 <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins again…</a>     35.0%  █·●········█ beats 1/2    medium · avg 58%       3.6%  at its level · small run
 <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins again…</a>     41.0%  ●····█·····█ beats 0/2    easy · avg 66%         3.5%  at its level · small run
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>     15.9%  ▃··▃·█▃●▅··▃ beats 6/9    hard · avg 24%         3.2%  typical
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    8.2000  ▃·····●··▃·█ beats 1/5    avg 10.057             0.6%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    8.2000  ▃·····●··▃·█ beats 1/5    avg 10.058             0.6%  sharp · noisy
 </pre>
 
 </details>
@@ -45,8 +45,8 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                                           result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.0300 mean human alignment score  █▄▄·█·●█▄▄·▄ beats 6/11   avg 6.285 mean human al…     11%  typical
-<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        18.4900 FID  █··██······● beats 3/3    avg 11.697 FID              3.8%  typical
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.0300 mean human alignment score  █▄▄·█·●█▄▄·▄ beats 6/11   avg 6.286 mean human al…     11%  typical
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>                        18.4900 FID  █··██······● beats 3/3    avg 11.694 FID              3.8%  typical
 <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>                               0.0%  ●·█▅▃·▅▃···▃ beats 0/10   very hard · avg 7.6%        2.4%  sharp · too hard for it
 </pre>
 

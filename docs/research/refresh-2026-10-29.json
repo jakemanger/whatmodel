@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-29",
+  "baseline": "469c2547",
+  "models_added": [
+    "gpt-6-1-terra",
+    "kimi-k3-1-pro",
+    "gemini-4-carbon",
+    "recursive-flint",
+    "nemotron-3-5-bolt-e4b-4gb",
+    "lfm3-1-7b",
+    "lfm3-vl-2b",
+    "ling-3-1-flash-1019"
+  ],
+  "manual_result_rows": 34,
+  "independent": {
+    "arena": {
+      "text_style_control": 368,
+      "vision_style_control": 146,
+      "document_style_control": 38,
+      "search_style_control": 37,
+      "webdev": 127,
+      "text_to_image": 68,
+      "image_edit": 52,
+      "text_to_video": 42,
+      "image_to_video": 41,
+      "video_edit": 10,
+      "agent": 49
+    },
+    "epoch": 20,
+    "replaced": 970,
+    "epoch_sha256": "f46bbc17f80e181db30be10e046d121bdd357cb16fc2698dfa825072aa90d3b5"
+  },
+  "held": {
+    "arena": {
+      "text_style_control": [
+        "Gemini 3.5 Flash (Medium)",
+        "Grok 4.20 Beta 1",
+        "Claude Opus 4.5 (High, 32K, 20251101)",
+        "Grok 4.20 Beta (Reasoning, 0309)",
+        "Gemini 3 Flash (Minimal)",
+        "Claude Sonnet 4.5 (High, 32K, 20250929)",
+        "DeepSeek-V4-Pro Preview (High)",
+        "GPT-5.3 Chat",
+        "Claude Opus 4.1 (Thinking 16K, 20250805)",
+        "DeepSeek-V4-Flash Preview (High)",
+        "LongCat-Flash-Chat Exp (2602)",
+        "Kimi K2.5 (Instant)",
+        "Claude Opus 4 (Thinking 16K, 20250514)",
+        "Kimi K2 Preview (0905)",
+        "Grok 4 Fast (Non-Reasoning)",
+        "Kimi K2 Preview (0711)",
+        "Qwen3-235B-A22B (Non-Thinking)",
+        "Claude Sonnet 4 (Thinking 32K, 20250514)",
+        "MiMo-V2-Flash (Non-Thinking)",
+        "Claude 3.7 Sonnet (Thinking 32K, 20250219)",
+        "Gemini 2.5 Flash-Lite Preview (Non-Thinking, 09-2025)",
+        "Gemini 2.5 Flash-Lite Preview (Thinking, 06-17)",
+        "Mistral Small 3.2 (2506)",
+        "Gemini Advanced (0514)",
+        "Amazon Nova 2 Lite",
+        "Llama 3.1 405B Instruct (FP8)",
+        "Amazon Nova Pro 1.0",
+        "Amazon Nova Lite 1.0",
+        "Amazon Nova Micro 1.0",
+        "Reka Flash 21B (Online, 20240226)",
+        "Gemini Pro",
+        "OpenAssistant Pythia 12B",
+        "Dolly 2.0 12B"
+      ],
+      "vision_style_control": [
+        "Muse Spark 1.3 (xHigh)",
+        "Gemini 3.5 Flash (Medium)",
+        "Gemini 3 Flash (Minimal)",
+        "Grok 4.20 Beta (Reasoning, 0309)",
+        "Kimi K2.5 (Instant)",
+        "Claude Opus 4 (Thinking 16K, 20250514)",
+        "Claude Sonnet 4 (Thinking 32K, 20250514)",
+        "Claude 3.7 Sonnet (Thinking 32K, 20250219)",
+        "Gemini 2.5 Flash-Lite Preview (Thinking, 06-17)",
+        "Gemini 2.5 Flash-Lite Preview (Non-Thinking, 09-2025)",
+        "Mistral Small 3.2 (2506)",
+        "Amazon Nova Lite 1.0",
+        "Amazon Nova Pro 1.0",
+        "LLaVA 1.6 34B"
+      ],
+      "document_style_control": [
+        "gemini-3.5-flash-medium"
+      ],
+      "search_style_control": [
+        "claude-fable-5.1-high",
+        "claude-opus-5.5-medium",
+        "grok-4.20-beta1",
+        "gpt-5.2-search-non-reasoning",
+        "diffbot-small-xl"
+      ],
+      "webdev": [
+        "Claude Sonnet 5.5 (High)",
+        "Muse Spark 1.3 (xHigh)",
+        "Claude Opus 4.5 (High, 32K, 20251101)",
+        "Gemini 3.5 Flash (Medium)",
+        "GPT-5.5 (High, Codex Harness)",
+        "Spark-X2.6",
+        "DeepSeek-V4-Pro Preview (High)",
+        "GPT-5.5 (Codex Harness)",
+        "GPT-5.4 (Medium, Codex Harness)",
+        "DeepSeek-V4-Flash Preview (High)",
+        "GPT-5.3-Codex (Codex Harness)",
+        "Kimi K2.5 (Instant)",
+        "Claude Sonnet 4.5 (High, 32K, 20250929)",
+        "Gemini 3 Flash (Minimal)",
+        "Grok 4.20 Beta (Reasoning, 0309)",
+        "GPT-5.3-Codex (Codex Harness)",
+        "MiMo-V2-Flash (Non-Thinking)"
+      ],
+      "text_to_image": [
+        "Grok Imagine Image 2.0 (20260801)",
+        "Gemini 3 Pro Image (nano-banana-pro, 2K)",
+        "Cosmos3-Super-Text2Image (Agentic)",
+        "Imagen 4 Ultra (generate-001)",
+        "Seedream 4.0 (2K)",
+        "Imagen 4 (generate-001)",
+        "Seedream 4.0 (fal)",
+        "Seedream 4.0 (High Res, fal)",
+        "Qwen-Image (Prompt Extend)",
+        "Imagen 3 (generate-002)",
+        "Ideogram 3.0 (Quality)",
+        "Runway Gen-4"
+      ],
+      "image_edit": [
+        "MAI-Image-2.7-Preview",
+        "Grok Imagine Image 2.0 (20260801)",
+        "Krea 3 Ultra",
+        "Grok Imagine Image (Quality, 20260519)",
+        "Gemini 3 Pro Image (nano-banana-pro, 2K)",
+        "Seedream 4.0 (2K)",
+        "Seedream 4.0 (High Res, fal)",
+        "Seedream 4.0 (fal)"
+      ],
+      "text_to_video": [
+        "grok-imagine-video-1.5-agent",
+        "veo-3.1-audio-1080p",
+        "veo-3.1-fast-audio-1080p",
+        "hailuo-02-pro"
+      ],
+      "image_to_video": [
+        "veo-3.1-audio-1080p",
+        "grok-imagine-video-480p",
+        "veo-3.1-fast-audio-1080p",
+        "hailuo-02-pro",
+        "hailuo-02-fast"
+      ],
+      "video_edit": [],
+      "agent": [
+        "GPT-6 Luna (Low)",
+        "Nemotron 3 Ultra"
+      ]
+    },
+    "epoch": [
+      "gemini-4-argon_high"
+    ]
+  },
+  "category_collisions": [
+    {
+      "model": "wan-2-6",
+      "bench": "lmarena-image"
+    },
+    {
+      "model": "wan-2-5-preview",
+      "bench": "lmarena-image"
+    },
+    {
+      "model": "wan-2-5-preview",
+      "bench": "lmarena-image-edit"
+    }
+  ],
+  "source_hashes": {
+    "epoch.zip": "f46bbc17f80e181db30be10e046d121bdd357cb16fc2698dfa825072aa90d3b5",
+    "arena-overall.json": "6d61e30b431dc9755a6ed26083051a721faf0d655b0cc6127202800ac0ec702c",
+    "seed.json": "1e19d75b9cd7d1c9d71c17f23c2dd3e1c318959599244a854c346f7f21be99f9"
+  }
+}

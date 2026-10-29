@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂   #343 of 582*     99%      1
+chat &amp; writing  ▁▁▁▃▅▅●█▇▆▆▂   #345 of 585*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #343 of 582 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #345 of 585 · 99% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                            result  vs the others in its run   difficulty      counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   42.8%  ▁▂▂▃▆▆█▆●▄▁▁ beats 99/122  hard · avg 35%     99%  sharp · at its level
+test                            result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   42.8%  ▁▂▂▃▆▆█▆●▄▁▁ beats 99/122  medium · avg 35%     99%  sharp · at its level
 </pre>
 
 </details>

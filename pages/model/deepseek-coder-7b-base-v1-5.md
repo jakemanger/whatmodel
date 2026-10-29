@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 40.2** ±1.2 · #747 of 957 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.2** ±1.2 · #751 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #410 of 478*     65%      1
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #413 of 481*     65%      1
 </pre>
 
-<details><summary>coding · #410 of 478 · 65% of its score</summary>
+<details><summary>coding · #413 of 481 · 65% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 13/42  easy · avg 74%     65%  sharp · at its level
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 13/42  easy · avg 75%     65%  sharp · at its level
 </pre>
 
 </details>

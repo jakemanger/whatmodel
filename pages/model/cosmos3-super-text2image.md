@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 62.8** ±2.3 · #30 of 144 · from 5 benchmark results across 2 sources
+**score 62.7** ±2.3 · #30 of 144 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others        rank  counts  tests
-text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #31 of 126     88%      4
+text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #31 of 126     88%      4
 </pre>
 
 <details><summary>text to image · #31 of 126 · 88% of its score</summary>
@@ -25,8 +25,8 @@ Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher ov
 
 <pre>
 test                                 result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1151.6  ▂▂▃▄▇●▅▂▄▂·▂ beats 46/75  avg 1027             82%  typical
-<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.076          5.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1150.6  ▁▂▃▃▆●▃▂▂▂▁▁ beats 45/75  avg 1027             81%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.074          5.2%  blunt
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    41.2%  ●·······▄█▄▄ beats 0/5    medium · avg 60%    1.3%  blunt · at its level · noisy
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    89.1%  █······███●█ beats 4/5    easy · avg 85%      0.0%  blunt
 </pre>
@@ -48,10 +48,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4   16% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 62.8
+weighted average                                   = 62.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

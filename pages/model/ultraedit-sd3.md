@@ -6,7 +6,7 @@
 
 Peking University / BIGAI (UltraEdit) · released 2024-06
 
-**score 32.4** ±7.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.4** ±6.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   22.9%  ▂·▂●·▂·▃▂·▃█ beats 3/14   medium · avg 42%     79%  blunt · at its level
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   22.9%  ▂·▂●·▂·▃▂·▃█ beats 3/14   medium · avg 42%     80%  blunt · at its level
 </pre>
 
 </details>
@@ -33,8 +33,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   79% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       21% ▇▇
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       20% ▇▇
 weighted average                                   = 32.4
 </pre>
 

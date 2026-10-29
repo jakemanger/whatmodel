@@ -16,23 +16,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-text to image           ▂▅●▃▄▄█▃▁▂▁▁   #87 of 126     61%     10
-image to image / edit…  ▁▁·●▂▂█▃▅▅▂▁    #56 of 62     31%     10
+text to image           ▂▅●▃▄▄█▃▂▂▁▁   #87 of 126     60%     10
+image to image / edit…  ▁▁·●▂▃█▅▄▅▂▁    #56 of 62     31%     10
 </pre>
 
-<details><summary>text to image · #87 of 126 · 61% of its score</summary>
+<details><summary>text to image · #87 of 126 · 60% of its score</summary>
 
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2.5](playground-v2-5.md), [Playground v2 (1024px aesthetic)](playground-v2.md), [Show-o2 7B](show-o2-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                897.8  ●▂▃▄▇█▅▂▄▂·▂ beats 0/75   avg 1027             17%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                897.3  ●▂▃▃▆█▃▂▂▂▁▁ beats 0/75   avg 1027             17%  typical
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   12.9%  ▄●▂▂▂▂▆▄·▂·▂ beats 5/16   hard · avg 26%       12%  sharp
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            55.6%  ▅▂●▂▂▂····▂▂ beats 8/13   easy · avg 69%       10%  at its level
 <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>   71.0%  ▂●····▄▄▄··▂ beats 1/11   easy · avg 79%      8.1%  at its level
 <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   76.0%  ▄··●▄·▄··▄·▄ beats 2/6    easy · avg 84%      5.8%  typical
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   15.0%  ▃··▃·█●▃▅··▃ beats 5/9    hard · avg 24%      3.0%  typical
-<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   70.0%  ▄·▆▂▆█▄▆▂▄·● beats 21/22  medium · avg 60%    2.4%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   70.0%  ▄·▆▂▆█▄▆▂▄·● beats 21/22  medium · avg 60%    2.3%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   72.5%  ▄█·▄·······● beats 4/4    easy · avg 70%      2.2%  at its level
 <a href="https://arxiv.org/html/2505.14683v3">GenEval (lab)</a>                        82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 30/39  easy · avg 79%         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2505.14683v3">WISE overall (model publisher's r…</a>   70.0%  no other model yet                               —  not counted yet: no other model in the …
@@ -46,10 +46,10 @@ Beats [UNO](uno.md) here, though they rank higher overall. Trails [OmniGen2](omn
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           41.6%  ▃▃▂·▃●▂█·▃·▃ beats 10/20  hard · avg 45%      8.6%  typical
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1026.8  ●▁▁▃▆█▄█▄█▁▂ beats 1/53   avg 1153            6.3%  typical
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           41.6%  ▃▃▂·▃●▂█·▃·▃ beats 10/20  hard · avg 45%      8.7%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1026.8  ●▁▁▃▆█▄█▇▄▂▂ beats 1/53   avg 1153            6.4%  typical
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              69.8%  ▂····▂▄▂●·█▂ beats 6/11   easy · avg 73%      3.8%  at its level
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>          851.0  ●▂····▂█▂▃▂▃ beats 0/14   avg 956             2.5%  blunt
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>          851.0  ●▂····▂█▂▃▂▃ beats 0/14   avg 956             2.6%  blunt
 <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   28.0%  ●▄····▄▄█▄·█ beats 0/8    hard · avg 34%      2.5%  at its level
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   68.8%  ▄●▄··█··▄·▄▄ beats 2/8    easy · avg 74%      2.2%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   43.6%  ▄·▄▄●▄··█▄·▄ beats 3/8    medium · avg 50%    1.9%  at its level
@@ -79,7 +79,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   23% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   23% ▇▇▇
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   12% ▇
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   10% ▇
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1    9% ▇

@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 37.2** ±0.9 · #603 of 729 · from 22 benchmark results across 14 sources
+**score 37.2** ±0.9 · #605 of 731 · from 22 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▅█▆▄█▄▁▁▁   #403 of 427     24%      2
+math  ▁▁●▅█▇▄█▄▂▁▁   #404 of 429     24%      2
 </pre>
 
-<details><summary>math · #403 of 427 · 24% of its score</summary>
+<details><summary>math · #404 of 429 · 24% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -36,9 +36,9 @@ test        result  vs the others in its run   difficulty        counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           52.4%  ▁···▁··▃▁●▅█ beats 6/18   easy · avg 74%          27%  at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 67%        24%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 68%        24%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   16.6%  ▂··▂·▂●▄·███ beats 3/18   medium · avg 61%       4.3%  at its level
-<a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   58.0%  █···█·····█● beats 3/3    medium · avg 68%       3.4%  typical
+<a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   58.0%  █···█·····█● beats 3/3    medium · avg 68%       3.3%  typical
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   69.6%  ▃····▃·▃▃●▅▅ beats 6/10   easy · avg 81%         2.6%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    46.6%  ▂▂··▂·▂··●█▄ beats 4/10   medium · avg 56%       2.3%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SciTab 3-class claim verification…</a>   38.0%  █···▄▄·▄▄●·▄ beats 6/7    medium · avg 51%       2.0%  blunt · at its level

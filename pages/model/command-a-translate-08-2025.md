@@ -6,7 +6,7 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.7** ±4.3 · #338 of 729 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.7** ±4.3 · #339 of 731 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

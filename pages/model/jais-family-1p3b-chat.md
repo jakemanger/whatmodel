@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 1.56B params · apache-2.0
 
-**score 38.2** ±4.4 · #788 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 38.2** ±4.4 · #792 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▃   #390 of 469*     91%      1
+chat &amp; writing  ▁▁▁▄●▅▇█▆▆▆▃   #393 of 472*     91%      1
 </pre>
 
-<details><summary>chat &amp; writing · #390 of 469 · 91% of its score</summary>
+<details><summary>chat &amp; writing · #393 of 472 · 91% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.6%  ▁·▁▁▂▁●▄▆▄█▄ beats 6/38   medium · avg 45%     91%  sharp
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.6%  ▁·▁▁▂▁●▄▆▄█▄ beats 6/38   medium · avg 46%     91%  sharp
 </pre>
 
 </details>

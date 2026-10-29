@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-01 · 1.84B params · tongyi-qianwen-research
 
-**score 26.4** ±2.2 · #679 of 729 · from 4 benchmark results across 4 sources
+**score 26.4** ±2.2 · #681 of 731 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁●▁▃▆▄▆█▆▆▇▃   #393 of 398*     30%      1
+chat &amp; writing  ▁●▁▃▆▄▆█▆▇▇▃   #396 of 401*     30%      1
 </pre>
 
-<details><summary>chat &amp; writing · #393 of 398 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #396 of 401 · 30% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                            result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>    2.6%  ●▂▂▃▆▆█▆▄▄▁▁ beats 1/122  hard · avg 35%     30%  sharp · too hard for it
+test                            result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>    2.6%  ●▂▂▃▆▆█▆▄▄▁▁ beats 1/122  medium · avg 35%     30%  sharp · too hard for it
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-11 · other (microsoft-research-license)
 
-**score 34.5** ±2.8 · #630 of 729 · from 5 benchmark results across 2 sources
+**score 34.5** ±2.8 · #632 of 731 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

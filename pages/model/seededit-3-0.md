@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others          rank  counts  tests
-text to image           ▁▂▇●▆▅█▇▂▃▁▁   #118 of 157*     30%      1
-image to image / edit…  ▁▁▁▃●▂█▃▄▄▂▁      #63 of 81     97%      3
+text to image           ▁▂█●▇▆██▂▃▁▁   #118 of 157*     30%      1
+image to image / edit…  ▁▁▁▃●▃█▅▃▄▂▁      #63 of 81     97%      3
 </pre>
 
 <details><summary>text to image · #118 of 157 · 30% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    7.0%  ●▃··▂··▃█··▂ beats 0/11   hard · avg 18%     30%  sharp
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    7.0%  ●▃··▂··▃█··▂ beats 0/11   hard · avg 17%     30%  sharp
 </pre>
 
 </details>
@@ -37,8 +37,8 @@ Beats [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank hig
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1139.0  ▂▁▁●▆█▄█▄█▁▂ beats 5/53   avg 1153           43%  typical
-<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    7.0%  ●▃··▂··▃█··▂ beats 0/11   hard · avg 18%     30%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1139.0  ▂▁▁●▆█▄█▇▄▂▂ beats 5/53   avg 1153           43%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    7.0%  ●▃··▂··▃█··▂ beats 0/11   hard · avg 17%     30%  sharp
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              78.7%  ▂····▂▄▂▄·●▂ beats 8/11   easy · avg 73%     23%  at its level
 </pre>
 
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   43% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   43% ▇▇▇▇▇
 <a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   30% ▇▇▇▇
 <a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   23% ▇▇▇
 prior: pull toward the middle                        3% ▇

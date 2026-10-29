@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 67B params · deepseek
 
-**score 42.9** ±1.2 · #516 of 729 · from 11 benchmark results across 5 sources
+**score 42.8** ±1.2 · #518 of 731 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,46 +16,46 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆▇●▇▅▄▃▁    #254 of 466     10%      4
-chat &amp; writing  ▁▁▁▃●▄▆█▆▆▇▃    #325 of 398     72%      3
-math            ▁▁●▅█▆▄█▄▁▁▁   #391 of 427*     11%      2
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #254 of 468     10%      4
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #327 of 401     72%      3
+math            ▁▁●▅█▇▄█▄▂▁▁   #393 of 429*     11%      2
 </pre>
 
-<details><summary>coding · #254 of 466 · 10% of its score</summary>
+<details><summary>coding · #254 of 468 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   47.0%  ▃··▁▂▂▃▂●▃▄▂ beats 23/47  medium · avg 51%    3.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   39.7%  ▁▁▁▁▁▁▂▂▃█●▄ beats 39/47  hard · avg 31%      3.1%  typical
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.8%  █▂▁▁▂▂▂▃▅●▅▇ beats 31/47  hard · avg 32%      3.0%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   39.7%  ▁▁▁▁▁▁▂▂▃█●▄ beats 39/47  hard · avg 32%      3.1%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.8%  █▂▁▁▂▂▂▃▅●▅▇ beats 31/47  hard · avg 33%      3.0%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 45/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #325 of 398 · 72% of its score</summary>
+<details><summary>chat &amp; writing · #327 of 401 · 72% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       17.8%  ▁▂▂▃▆●█▆▄▄▁▁ beats 47/122  hard · avg 35%     42%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1185.1  ▁▁▁▂●▃▃▆▆▇█▃ beats 63/382  avg 1259           16%  blunt
-<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1092.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 42/95   avg 1187           14%  typical
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       17.8%  ▁▂▂▃▆●█▆▄▄▁▁ beats 47/122  medium · avg 35%     42%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1185.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 63/385  avg 1259             15%  blunt
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1092.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 42/95   avg 1187             14%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #391 of 427 · 11% of its score</summary>
+<details><summary>math · #393 of 429 · 11% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%  ▂●▅▆▄█▆▃▅▂▃▄ beats 4/92   hard · avg 28%           10%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/195  very hard · avg 7.0%    0.7%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/197  very hard · avg 7.1%    0.7%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -64,8 +64,8 @@ test                      result  vs the others in its run  difficulty          
 
 <pre>
 test                   result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            24.6%  ●▁▁▁▂▄▆▄▅▇█▄ beats 2/209   hard · avg 38%          6.9%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>    0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 15/136  very hard · avg 5.8%    0.2%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            24.6%  ●▁▁▁▂▄▆▄▅▇█▅ beats 2/211   hard · avg 39%          6.9%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>    0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 15/137  very hard · avg 5.8%    0.2%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -78,11 +78,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   42% ▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        4   18% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   14% ▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   10% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 42.9
+weighted average                                   = 42.8
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -25,7 +25,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    56.9%  ▂▂··▂·▂··▂█● beats 10/10  medium · avg 56%        33%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   75.6%  ▃····▃·▃▃█●▅ beats 8/10   easy · avg 81%          30%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   25.5%  ▃··▃·█▃·●▃·▃ beats 8/10   hard · avg 29%          18%  blunt · at its level
-<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   23.0%  ●·····▂····▁ beats 6/11   very hard · avg 55%    9.5%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM BeliefQ [Choice], short co…</a>   23.0%  ●·····▂····▁ beats 6/11   very hard · avg 55%    9.4%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   51.3%  ▄·█··██·▄▄▄● beats 10/10  medium · avg 43%       4.9%  blunt · at its level
 </pre>
 

@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 35.8** ±0.5 · #617 of 729 · from 37 benchmark results across 8 sources
+**score 35.8** ±0.5 · #619 of 731 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #416 of 466     79%     11
-math    ▁▁▃●█▆▄█▄▁▁▁   #362 of 427    8.7%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #418 of 468     79%     11
+math    ▁▁▃●█▇▄█▄▂▁▁   #361 of 429    8.7%      2
 </pre>
 
-<details><summary>coding · #416 of 466 · 79% of its score</summary>
+<details><summary>coding · #418 of 468 · 79% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -29,10 +29,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            37.8%  ▁·▁▁▃●▆▅█▃▁▁ beats 22/99  easy · avg 76%       35%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           35.4%  ▁·▁▁▁▃●▄▄█▃▁ beats 23/99  easy · avg 70%       14%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 39.0%  █·▅▃▃●▅▃▃▅·▅ beats 7/15   easy · avg 81%       10%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 61%    4.0%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 62%    4.0%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.8%  ▁···▁▁▂●▇█▆▂ beats 16/75  easy · avg 66%      3.2%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                     35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 56%    2.7%  at its level · several runs
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                     34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 53%    2.4%  blunt · at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                     34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 54%    2.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              21.5%  ▄▄·▄●█▄█·█·▄ beats 3/12   medium · avg 49%    2.3%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.9%  ▄●█▃▄▇▄▁▇▃·▁ beats 7/35   medium · avg 46%    2.1%  typical
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            58.7%  ▃▃▃·▆●▃█▃▂▂▅ beats 10/25  easy · avg 83%      1.9%  sharp · at its level
@@ -41,9 +41,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #362 of 427 · 8.7% of its score</summary>
+<details><summary>math · #361 of 429 · 8.7% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
@@ -57,16 +57,16 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       43.4%  ▁·····▂●▂▅·▁ beats 4/25    medium · avg 74%    3.0%  sharp
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25    medium · avg 72%    2.5%  at its level · several runs
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       43.4%  ▁·····▂●▂▅·▁ beats 4/25    easy · avg 74%      3.0%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25    medium · avg 73%    2.5%  at its level · several runs
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58    medium · avg 48%    2.5%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                        34.5%  ▄▁▁▂▁●█▇▃▂▃▂ beats 35/140  easy · avg 75%      1.2%  sharp · at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">WinoGrande</a>                           62.3%  ▁▁▁▁▂▁▁●▇█▃▁ beats 45/131  easy · avg 84%      0.7%  at its level
-<a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed book)</a>      11.0%  ▂▁▁▁▂▄▄●▅█▅▁ beats 28/68   medium · avg 44%    0.6%  typical
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed book)</a>      11.0%  ▂▁▁▁▂▄▄●▅█▅▁ beats 28/68   medium · avg 45%    0.6%  typical
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">HellaSwag</a>                            62.9%  ▁▁▁▂▂▂▄●█▇▄▂ beats 49/135  easy · avg 88%      0.5%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">TriviaQA</a>                             34.9%  ▁▁▂▂▄▄▃●▅█▅▂ beats 31/80   easy · avg 80%      0.4%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   47.6%  ▂··▁▃▂▂●█▅▁▂ beats 11/25   medium · avg 59%    0.4%  blunt · at its level
-<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Easy</a>                             59.4%  ▁▃▂▄●█▅▃▁··▁ beats 28/100  easy · avg 84%      0.3%  blunt · at its level
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Easy</a>                             59.4%  ▁▃▂▄●█▅▃▁··▁ beats 28/100  easy · avg 85%      0.3%  blunt · at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">PIQA</a>                                 72.8%  ▁▁▁▂▂●▅█▅▃▁▁ beats 31/123  easy · avg 86%      0.2%  blunt · at its level
 </pre>
 
@@ -78,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   36% ▇▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   37% ▇▇▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        8   15% ▇▇
 <a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   15% ▇▇
 <a name="paper-2310.06825v1"></a><a href="https://arxiv.org/html/2310.06825v1#S3.T2">Mistral 7B</a>                                     12   11% ▇

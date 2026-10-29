@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
-**score 53.4** ±1.5 · #310 of 729 · from 16 benchmark results across 7 sources
+**score 53.4** ±1.5 · #311 of 731 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,15 +25,15 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1118.8  ▁▁▂▂▂▂●▄▄▅█▇ beats 34/152  avg 1061                15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1118.8  ▁▁▂▂▂▂●▄▅▅█▇ beats 34/152  avg 1061                15%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   31.8%  ▁·▁·▃▃●▇▃█·▄ beats 6/22    hard · avg 26%          10%  blunt · at its level
-<a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>        39.1%  ▂▅●▅▅▆▆▅▆█▆▂ beats 16/100  medium · avg 36%        10%  at its level · small run
-<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>        72.5%  ▂▄▄●▇▄█▇▇▂▁▂ beats 16/58   easy · avg 71%         9.0%  small run
-<a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   48.2%  █·█···●·█·██ beats 2/5     medium · avg 45%       8.3%  at its level
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                       49.5%  ▂▃▁▃●▇▃▇▇██▅ beats 10/52   hard · avg 43%         7.8%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                         69.5%  ▃▅▂▃▂▂●█▆▆█▅ beats 12/34   medium · avg 64%       6.1%  at its level · small run
-<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   52.1%  ▅······▃·▅·● beats 7/7     very hard · avg 36%    4.1%  noisy
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>                 39.4%  ▂●▅▆██▅▂···▂ beats 1/24    medium · avg 42%       2.9%  blunt · at its level · small run
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>        39.1%  ▂▅●▅▅▆▆▅▆█▆▂ beats 16/101  medium · avg 36%        10%  at its level · small run
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>        72.5%  ▂▄▄●▇▄██▇▂▁▂ beats 16/59   easy · avg 71%         9.0%  small run
+<a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   48.2%  █·█···●·█·██ beats 2/5     medium · avg 46%       8.3%  at its level
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                       49.5%  ▂▃▁▃●▇▃▇▇██▅ beats 10/52   hard · avg 43%         7.7%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                         69.5%  ▃▅▂▃▂▂●██▆█▅ beats 12/35   medium · avg 64%       6.1%  at its level · small run
+<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   52.1%  ▅······▃·▅·● beats 7/7     very hard · avg 36%    4.0%  noisy
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>                 39.4%  ▂●▅▆██▅▂···▂ beats 1/24    medium · avg 42%       2.8%  blunt · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                         94.8%  ▁··▃▁▁▁▇●▇▄▅ beats 15/28   very easy · avg 94%    2.7%  blunt · maxed out · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                         77.1%  ▁·▂··▂▂▃●▂▆█ beats 10/26   easy · avg 72%         1.6%  blunt · at its level · small run
 </pre>
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-qwen-qwen2-5-vl-32b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Qwen2.5-VL-32B-Instruct model card (lab)</a>        9   38% ▇▇▇▇▇
 <a name="paper-2510.01141v1-apriel-1-5"></a><a href="https://arxiv.org/abs/2510.01141v1">Apriel-1.5-15b-Thinker</a>                          2   19% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   10% ▇
 <a name="paper-2504.07072v2-kaleidoscope"></a><a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope: In-language Exams for Mas…</a>        1    8% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇

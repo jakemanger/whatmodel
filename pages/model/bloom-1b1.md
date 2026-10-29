@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 6.8** ±1.1 · #718 of 729 · from 36 benchmark results across 6 sources
+**score 6.9** ±1.1 · #720 of 731 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··●·█·██··█       #5 of 6*    3.0%      1
-math    ▁●▃▅█▆▄█▄▁▁▁   #421 of 427*    1.4%      1
+math    ▁●▃▅█▇▄█▄▂▁▁   #423 of 429*    1.4%      1
 </pre>
 
 <details><summary>coding · #5 of 6 · 3.0% of its score</summary>
@@ -29,13 +29,13 @@ test             result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #421 of 427 · 1.4% of its score</summary>
+<details><summary>math · #423 of 429 · 1.4% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md), [Flan-T5 Small](flan-t5-small.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test   result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_gsm8k_8-shot.json">GSM8K</a>    0.8%  ▄●█▄···▄·▄·▄ beats 1/7    medium · avg 65%    1.4%  sharp · too hard for it
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_gsm8k_8-shot.json">GSM8K</a>    0.8%  ▄●█▄···▄·▄·▄ beats 1/7    easy · avg 65%    1.4%  sharp · too hard for it
 </pre>
 
 </details>
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Hallucinations Leaderboard results</a>              4    3% ▇
 <a name="acl-2023-acl-long-891"></a><a href="https://aclanthology.org/2023.acl-long.891.pdf">Crosslingual Generalization through Mul…</a>        3    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 6.8
+weighted average                                   = 6.9
 </pre>
 
 <sub>Licences: EleutherAI lm-evaluation-harness results folder ([MIT](../../licenses/lm-eval-harness-results-2023-05-MIT.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers ([CC BY 4.0](../../licenses/paper-2210.17323v2-gptq-CC-BY-4-0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt))</sub>

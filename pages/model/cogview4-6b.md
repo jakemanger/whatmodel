@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task           vs the others          rank  counts  tests
-text to image  ▁▂▇●▆▅█▇▂▃▁▁   #110 of 157*     87%      2
+text to image  ▁▂█●▇▆██▂▃▁▁   #110 of 157*     87%      2
 </pre>
 
 <details><summary>text to image · #110 of 157 · 87% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 3/9    hard · avg 24%     77%  typical
-<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  9.6100  ▃·····▃··●·█ beats 2/5    avg 10.057         10%  sharp · noisy
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  9.6100  ▃·····▃··●·█ beats 2/5    avg 10.058         10%  sharp · noisy
 </pre>
 
 </details>

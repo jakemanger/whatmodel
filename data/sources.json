@@ -43,14 +43,25 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/image_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/video_edit/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/agent/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/agent/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/search_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-10-21",
+    "checked": "2026-10-29",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",
@@ -3800,16 +3811,18 @@
       "huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md",
       "huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
       "huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
-      "huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md"
+      "huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md",
+      "huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md",
+      "huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-21",
+    "checked": "2026-10-29",
     "exact": true,
     "icon": "liquid.ai",
-    "attribution": "Liquid AI official pricing/docs, observed 2026-09-25",
+    "attribution": "Liquid AI official pricing/docs, observed 2026-09-25 Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
   },
   {
@@ -7263,16 +7276,17 @@
     "id": "first-party-moonshot",
     "name": "Moonshot AI (Kimi) official pricing and model documentation",
     "match": [
-      "platform.kimi.ai/docs/pricing/chat.md"
+      "platform.kimi.ai/docs/pricing/chat.md",
+      "platform.kimi.ai/docs/pricing/chat"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://platform.kimi.ai/docs/pricing/chat.md",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-29",
     "exact": true,
     "icon": "kimi.ai",
-    "attribution": "Moonshot AI (Kimi) official pricing/docs, observed 2026-09-25",
+    "attribution": "Moonshot AI (Kimi) official pricing/docs, observed 2026-09-25 Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
   },
   {
@@ -7312,16 +7326,17 @@
       "developers.openai.com/api/docs/models/gpt-6.1-sol",
       "developers.openai.com/api/docs/pricing",
       "developers.openai.com/api/docs/models/chatgpt-image-latest",
-      "developers.openai.com/api/docs/models/gpt-4o-search-preview"
+      "developers.openai.com/api/docs/models/gpt-4o-search-preview",
+      "openai.com/index/introducing-gpt-6-1-terra/"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-29",
     "exact": true,
     "icon": "openai.com",
-    "attribution": "OpenAI official pricing/docs, observed 2026-09-25 GPT-6.1 Sol facts observed 2026-10-06.",
+    "attribution": "OpenAI official pricing/docs, observed 2026-09-25 GPT-6.1 Sol facts observed 2026-10-06. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
   },
   {
@@ -11204,15 +11219,16 @@
       "huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md",
       "huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/blob/64261e01bfabab557842e5803a7ea96cc09489a5/config.json",
       "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md",
-      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md"
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
     "terms_url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md",
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
-    "attribution": "NVIDIA official model cards, observed 2026-10-06",
+    "attribution": "NVIDIA official model cards, observed 2026-10-06 Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "verdict": "allowed",
-    "checked": "2026-10-21"
+    "checked": "2026-10-29"
   },
   {
     "id": "first-party-openchat",
@@ -11718,15 +11734,16 @@
       "storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf",
       "deepmind.google/models/model-cards/gemini-3-1-pro",
       "deepmind.google/models/model-cards/gemini-4-argon",
-      "deepmind.google/models/evals-methodology/gemini-4-argon"
+      "deepmind.google/models/evals-methodology/gemini-4-argon",
+      "blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://policies.google.com/terms",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-29",
     "exact": false,
-    "attribution": "Google DeepMind, benchmark results it published for its own Gemini models on deepmind.google (Gemini model page, Gemini 3.8 Flash and 3.7 Flash model cards), observed 2026-10-07. Provenance and settings were checked against Google's evaluation-methodology PDFs. Individual figures were recorded by hand and converted to fractions. Lab-reported, not independent. Not licensed or endorsed by Google.",
+    "attribution": "Google DeepMind, benchmark results it published for its own Gemini models on deepmind.google (Gemini model page, Gemini 3.8 Flash and 3.7 Flash model cards), observed 2026-10-07. Provenance and settings were checked against Google's evaluation-methodology PDFs. Individual figures were recorded by hand and converted to fractions. Lab-reported, not independent. Not licensed or endorsed by Google. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). These are Google's own scores for its own models, recorded by hand one figure at a time from a single fetch. Only Google-computed cells are used: cells the methodology PDFs credit to Vals AI, Zapier, Artificial Analysis, leaderboards or other labs are excluded. Google Terms of Service: 'You may use Google's content as allowed by these terms ... but we retain any intellectual property rights that we have in our content.' Automated access is restricted only through robots.txt, and deepmind.google has 'Allow: /'. There is no anti-quoting clause. The page footers link only Privacy and Terms, with no licence. 'exact' is false only because lib/sources.ts sourceIn() never matches an exact entry against a URL whose path ends in '/' (these canonical URLs do). The paths are page-specific.",
     "icon": "deepmind.google"
   },
@@ -11769,16 +11786,17 @@
       "openai.com/index/introducing-gpt-5-2",
       "openai.com/index/introducing-gpt-5-for-developers",
       "openai.com/index/gpt-5-5-instant",
-      "openai.com/index/gpt-5-1-for-developers"
+      "openai.com/index/gpt-5-1-for-developers",
+      "openai.com/index/introducing-gpt-6-1-terra/#a-significant-step-up-on-factuality-and-coding"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://openai.com/policies/terms-of-use/",
     "verdict": "allowed",
-    "checked": "2026-10-11",
+    "checked": "2026-10-29",
     "exact": true,
     "icon": "openai.com",
-    "attribution": "OpenAI, vendor-reported results for OpenAI's own models from openai.com announcement posts and Deployment Safety Hub system cards; individual figures hand-recorded 2026-10-07 (openai.com posts read from Internet Archive captures because openai.com returns HTTP 403 to direct fetches); percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+    "attribution": "OpenAI, vendor-reported results for OpenAI's own models from openai.com announcement posts and Deployment Safety Hub system cards; individual figures hand-recorded 2026-10-07 (openai.com posts read from Internet Archive captures because openai.com returns HTTP 403 to direct fetches); percentages converted to fractions. Lab-reported, not independent measurements. No endorsement. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "quote": "Owner rule (b), approved 2026-10-07, extending the 2026-09-25 first-party-facts exception: a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; no crawling, scripts or programmatic extraction of vendor pages; no tables, charts or prose reproduced; other labs' cells and cells credited to a third party excluded; rows labelled by: 'lab'; removed if the vendor objects. OpenAI Terms of Use (Effective January 1, 2026), as quoted in docs/research/vendor-terms-2026-10-07.md, forbid users to 'Automatically or programmatically extract data or Output' and to 'Modify, copy, lease, sell or distribute any of our Services'; no clause forbids quoting an individual figure with attribution. The source URLs omit openai.com's trailing slash so that exact matching works."
   },
   {
@@ -12256,16 +12274,17 @@
       "huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks",
       "huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks",
       "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks",
-      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks"
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/blob/1db54d5b12533ff1bcaa8e42cf4c667988a1f1be/README.md#benchmarks"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-21",
+    "checked": "2026-10-29",
     "exact": true,
     "icon": "huggingface.co",
-    "attribution": "NVIDIA, vendor-reported results for NVIDIA's own Nemotron models from pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
+    "attribution": "NVIDIA, vendor-reported results for NVIDIA's own Nemotron models from pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time; one vendor entry groups that vendor's pages into one evaluator. Match URLs carry the '#evaluation-results' fragment so these rows stay separate from the existing per-card entries (card-nvidia-nvidia-nemotron-3-nano-4b-bf16, card-nvidia-nvidia-nemotron-nano-9b-v2) that match the bare README URLs."
   },
   {
@@ -14125,17 +14144,18 @@
     "match": [
       "huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md",
       "huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md",
-      "huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md"
+      "huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md",
+      "www.kimi.ai/blog/kimi-k3-1-pro"
     ],
     "exact": true,
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/LICENSE",
     "quote": "Owner rule (b), approved 2026-10-07 (vendor's own score for its own model, hand-recorded one figure at a time; other labs' cells excluded; by: 'lab'). Licences at the pinned revisions: Kimi-K2.5 and Kimi-K2.6 LICENSE = 'Modified MIT License' - the standard MIT grant ('Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...') plus 'Our only modification part is that, if the Software (or any derivative works thereof) is used for any of your commercial products or services that have more than 100 million monthly active users, or more than 20 million US dollars (or equivalent in other currencies) in monthly revenue, you shall prominently display \"Kimi K2.5\" [resp. \"Kimi K2.6\"] on the user interface of such product or service.' Kimi-K3 LICENSE = 'Kimi K3 License': MIT-style grant but a Model-as-a-Service business with >US$20M revenue over 12 months 'must enter into a separate agreement with Moonshot AI before using the Software or its derivative works for any commercial purpose', plus the same UI-display clause. Because K3 is not open and the K2.x licence is a modified MIT, the entry relies on rule (b) rather than an open-licence claim.",
-    "attribution": "Moonshot AI, vendor-reported results for its own Kimi K2.5, K2.6 and K3 models from the pinned Hugging Face model cards; hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement.",
+    "attribution": "Moonshot AI, vendor-reported results for its own Kimi K2.5, K2.6 and K3 models from the pinned Hugging Face model cards; hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md.",
     "scope": "Own Kimi columns only, CharXiv (RQ) without tools. 'w/ python' / with-tool cells and all other labs' columns (several are re-evaluations marked * or cited from Artificial Analysis / Vals AI) are not used. Alternative: if the owner treats Modified MIT as open, K2.5/K2.6 could get card2-moonshotai-kimi-k2-5 / card2-moonshotai-kimi-k2-6 entries instead, but then each card is a one-model CharXiv run (K2.6 card + its K2.5 column would be two).",
     "icon": "huggingface.co",
     "verdict": "allowed",
-    "checked": "2026-10-09"
+    "checked": "2026-10-29"
   },
   {
     "id": "first-party-xiaomi-scores",
@@ -19106,7 +19126,9 @@
     "id": "first-party-liquid-scores",
     "name": "Liquid AI own-model benchmark facts",
     "match": [
-      "huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations"
+      "huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations",
+      "huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance",
+      "huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance"
     ],
     "exact": true,
     "kind": "first-party",
@@ -19114,9 +19136,9 @@
     "terms_url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md",
     "quote": "Owner rule 2026-10-07: hand-record individual own-model figures on existing benchmarks; exclude competitors and third-party measurements.",
     "verdict": "allowed",
-    "checked": "2026-10-21",
+    "checked": "2026-10-29",
     "icon": "huggingface.co",
-    "attribution": "Liquid AI own-model benchmark facts. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md."
+    "attribution": "Liquid AI own-model benchmark facts. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md. Additional own-model facts reviewed 2026-10-29; see docs/research/refresh-2026-10-29.md."
   },
   {
     "id": "fish-drama3-report",
@@ -19185,5 +19207,22 @@
     "icon": "huggingface.co",
     "attribution": "Phonon-2 model card. Selected original measurements only; percentages normalized to fractions. Derived relative scores, no endorsement. Reviewed 2026-10-21; details in docs/research/refresh-2026-10-21.md.",
     "license_url": "/licenses/CC-BY-4.0.txt"
+  },
+  {
+    "id": "flint-card",
+    "name": "Recursive Flint Apache-2.0 model card",
+    "match": [
+      "huggingface.co/RecursiveSI/flint/blob/2a247be0c0aec895ccb0ac7ca92229ec6df37288/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "Apache-2.0",
+    "terms_url": "https://huggingface.co/RecursiveSI/flint/blob/2a247be0c0aec895ccb0ac7ca92229ec6df37288/LICENSE",
+    "license_url": "/licenses/flint-card.txt",
+    "quote": "Each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.",
+    "verdict": "allowed",
+    "checked": "2026-10-29",
+    "icon": "huggingface.co",
+    "attribution": "Recursive, pinned Apache-2.0 model card. Own BF16 figures only; percentages converted to fractions; no endorsement."
   }
 ]

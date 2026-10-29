@@ -6,7 +6,7 @@
 
 Argilla · released 2023-11 · 7.24B params · mit
 
-**score 45.9** ±5.8 · #605 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.9** ±5.8 · #607 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

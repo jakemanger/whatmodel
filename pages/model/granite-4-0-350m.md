@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.352B params · apache-2.0
 
-**score 28.1** ±1.0 · #672 of 729 · from 24 benchmark results across 3 sources
+**score 28.1** ±1.0 · #674 of 731 · from 24 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▅▅▅▅▄▂▁   #297 of 310*    3.6%      2
+agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #299 of 312*    3.6%      2
 coding          ●··········█        #3 of 4     39%      7
-chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃   #361 of 398*    7.3%      2
-math            ▁▁●▅█▆▄█▄▁▁▁    #410 of 427     26%      6
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #364 of 401*    7.4%      2
+math            ▁●▃▅█▇▄█▄▂▁▁    #413 of 429     26%      6
 </pre>
 
-<details><summary>agent tasks · #297 of 310 · 3.6% of its score</summary>
+<details><summary>agent tasks · #299 of 312 · 3.6% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   19.0%  ▁▁▁●██▅▅▆▂▂▂ beats 4/77    hard · avg 31%      1.8%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                     39.3%  ▁▁▁▁●▃▅█▆▅▄▁ beats 14/170  medium · avg 61%    1.7%  blunt · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                     39.3%  ▁▁▁▁●▃▅█▆▅▄▁ beats 14/171  medium · avg 62%    1.7%  blunt · at its level
 </pre>
 
 </details>
@@ -44,28 +44,28 @@ test                result  vs the others in its run   difficulty           coun
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (lab)</a>     37.0%  ▁·▁▁▂▃●▄█▅▄▃ beats 28/145  very easy · avg 86%     10%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (lab)</a>           48.0%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 31/86   easy · avg 81%         4.9%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP+ (lab)</a>          38.0%  ▁··▁▁●▄█▆▄▁▁ beats 7/120   easy · avg 72%         3.4%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>      16.0%  ●··▄·▅▅▇▄█▃▄ beats 1/31    medium · avg 50%       3.3%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>   11.1%  ●····▃·█▃▅█▃ beats 0/12    medium · avg 40%       3.1%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>      16.0%  ●··▄·▅▅▇▄█▃▄ beats 1/31    medium · avg 51%       3.3%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>   11.1%  ●····▃·█▃▅█▃ beats 0/12    medium · avg 40%       3.0%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">CRUXEval-O (lab)</a>     23.8%  ●▂██▅▂▁·▁·▁▁ beats 1/51    medium · avg 48%       1.9%  blunt
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #361 of 398 · 7.3% of its score</summary>
+<details><summary>chat &amp; writing · #364 of 401 · 7.4% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 34B Instruct](codellama-34b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval instruction-level strict (…</a>   61.6%  ●▄····▄▄█▄·█ beats 0/8    very easy · avg 88%    3.8%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (lab)</a>     49.2%  ▁▁··●··▂▇█▃▃ beats 2/26   easy · avg 80%         3.5%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (lab)</a>     49.2%  ▁▁··●··▂▇█▃▃ beats 2/26   easy · avg 81%         3.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #410 of 427 · 26% of its score</summary>
+<details><summary>math · #413 of 429 · 26% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -74,7 +74,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>            8.5%  ●····▅·█▃▃·▅ beats 1/10    medium · avg 50%        3.7%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (lab)</a>                   13.0%  ▁·▃▁●▂▁█▄▁▃▃ beats 5/27    medium · avg 59%        3.0%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   14.7%  ●·▄▄██···█·▄ beats 0/10    medium · avg 46%        2.4%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 2/195   very hard · avg 7.0%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 2/197   very hard · avg 7.1%    0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -87,10 +87,10 @@ test                             result  vs the others in its run   difficulty  
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (lab)</a>                        35.0%  ▁▁▁▁▁●▂▅██▆▄ beats 20/214  easy · avg 74%          6.7%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (lab)</a>   24.1%  ●▁▂▂▄▃▆▃▅█▄▃ beats 1/104   hard · avg 37%          3.3%  sharp · too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU-Pro (lab)</a>                    12.1%  ●▁·▁▁▁▃▂▄▅█▁ beats 0/188   medium · avg 46%        2.8%  too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                     27.7%  ●····▂▂▄▄▄█▄ beats 1/36    medium · avg 51%        2.4%  too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                     27.7%  ●····▂▂▄▄▄█▄ beats 1/36    medium · avg 52%        2.4%  too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                       28.2%  ●▁▁▂▃▂▄▄▅██▃ beats 1/46    medium · avg 56%        2.1%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>              0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 10/136  very hard · avg 5.8%    0.0%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                      11.2%  ▁▁▁▁▂▄▅▅█▇█▄ beats 0/315   hard · avg 38%             —  failed run: Far below guessing. At 350M…
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>              0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 10/137  very hard · avg 5.8%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                      11.2%  ▁▁▁▁▂▄▅▅█▇█▄ beats 0/318   hard · avg 39%             —  failed run: Far below guessing. At 350M…
 </pre>
 
 </details>

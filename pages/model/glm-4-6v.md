@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 62.1** ±1.6 · #182 of 729 · from 10 benchmark results across 3 sources
+**score 62.0** ±1.6 · #184 of 731 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▆▄▆█●▆▇▃   #133 of 398*     29%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #135 of 401*     28%      1
 vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄     #95 of 154     60%      7
 </pre>
 
-<details><summary>chat &amp; writing · #133 of 398 · 29% of its score</summary>
+<details><summary>chat &amp; writing · #135 of 401 · 28% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [K-EXAONE (236B-A23B)](k-exaone-236b-a23b.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1378.1  ▁▁▁▂▃▃▃▆●▇█▃ beats 218/382  avg 1259       29%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1378.4  ▁▁▁▂▃▃▃▆●▇█▃ beats 219/385  avg 1259       28%  blunt
 </pre>
 
 </details>
@@ -37,12 +37,12 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1161.4  ▁▁▂▂▂▂▃●▄▅█▇ beats 56/152  avg 1061             19%  blunt
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions) (la…</a>   63.2%  ▂▅▃▅▅▆●▅▆█▆▂ beats 48/100  medium · avg 36%    9.3%  at its level · small run
-<a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   42.4%  ▃●···█▃▅▃·▃▅ beats 1/11    hard · avg 25%      9.0%  blunt · at its level
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     76.0%  ▁····▁▁▄█▇●▆ beats 41/52   medium · avg 57%    7.9%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1161.4  ▁▁▂▂▂▂▃●▅▅█▇ beats 56/152  avg 1061             19%  blunt
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions) (la…</a>   63.2%  ▂▅▃▅▅▆●▅▆█▆▂ beats 48/101  medium · avg 36%    9.3%  at its level · small run
+<a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   42.4%  ▃●···█▃▅▃·▃▅ beats 1/11    hard · avg 25%      9.1%  blunt · at its level
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     76.0%  ▁····▁▁▃█▆●▅ beats 42/53   medium · avg 57%    7.9%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       66.0%  ▂▃▁▃▆▇▃●▇██▅ beats 26/52   medium · avg 46%    7.5%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.9%  ▃▅▂▃▂▂▆█●▆█▅ beats 22/34   medium · avg 62%    5.9%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.9%  ▃▅▂▃▂▂▆█●▆█▅ beats 23/35   medium · avg 62%    5.9%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                       86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 21/37   easy · avg 82%      1.8%  blunt · small run
 </pre>
 
@@ -64,11 +64,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/9041150e8a502da9f0e75c89824d34ad7dba7072/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   47% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   47% ▇▇▇▇▇▇
 <a name="glm-v-github-bench-image"></a><a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">Z.ai GLM-V GitHub repository benchmark …</a>        7   42% ▇▇▇▇▇
 <a name="paper-2609.05141v2-scidocbench"></a><a href="https://arxiv.org/html/2609.05141v2">SciDocBench: A Workflow-Centered Benchm…</a>        1    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.1
+weighted average                                   = 62.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

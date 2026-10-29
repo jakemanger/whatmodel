@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 36.4** ±2.1 · #615 of 729 · from 3 benchmark results across 2 sources
+**score 36.4** ±2.1 · #616 of 731 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▄▆█▆▆▇▃   #384 of 398*     88%      2
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #387 of 401*     88%      2
 </pre>
 
-<details><summary>chat &amp; writing · #384 of 398 · 88% of its score</summary>
+<details><summary>chat &amp; writing · #387 of 401 · 88% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.7%  ▁▂▂●▆▆█▆▄▄▁▁ beats 21/122  hard · avg 35%          77%  sharp
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        9.7%  ▁▂▂●▆▆█▆▄▄▁▁ beats 21/122  medium · avg 35%        77%  sharp
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   65.5%  ▂▂·▆·●▃▆█▆▄▂ beats 11/45   very easy · avg 94%     11%  sharp · at its level · noisy
 </pre>
 

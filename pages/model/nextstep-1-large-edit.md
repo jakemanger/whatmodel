@@ -6,7 +6,7 @@
 
 StepFun · released 2025-08 · apache-2.0
 
-**score 37.2** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 37.2** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others        rank  counts  tests
-image to image / edit…  ▁▁●▃▂▂█▃▄▄▂▁   #76 of 81*     79%      2
+image to image / edit…  ▁▁●▃▃▃█▅▃▄▂▁   #76 of 81*     79%      2
 </pre>
 
 <details><summary>image to image / editing · #76 of 81 · 79% of its score</summary>
@@ -25,7 +25,7 @@ Trails [OmniGen (v1)](omnigen-v1.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   29.0%  ▃▃●·▃▆▂█·▃·▃ beats 4/20   hard · avg 45%     50%  typical
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   29.0%  ▃▃●·▃▆▂█·▃·▃ beats 4/20   hard · avg 45%     51%  typical
 <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>      64.1%  ▂····▂●▂▄·█▂ beats 3/11   easy · avg 73%     29%  at its level
 </pre>
 
@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   50% ▇▇▇▇▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   51% ▇▇▇▇▇▇
 <a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   29% ▇▇▇
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   17% ▇▇
 prior: pull toward the middle                        3% ▇

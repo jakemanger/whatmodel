@@ -6,7 +6,7 @@
 
 Sarvam AI · released 2025-05 · 23.57B params · apache-2.0
 
-**score 39.2** ±4.6 · #770 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.2** ±4.6 · #773 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

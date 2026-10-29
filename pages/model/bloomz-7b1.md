@@ -31,13 +31,13 @@ test             result  vs the others in its run  difficulty        counts  why
 <details><summary>other tests (6)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   43.6%  █●···██···██ beats 1/5    easy · avg 74%          9.4%  blunt · at its level
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     55.4%  █··▁▃·▁··●·▃ beats 10/12  medium · avg 68%        8.2%  noisy
-<a href="https://aclanthology.org/2023.findings-emnlp.427.pdf">Conic10K mathQA (zero-shot CoT)</a>       0.0%  ●··▄·······▄ beats 1/3    very hard · avg 9.9%    5.4%  too hard for it
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           83.0%  ▃··█▅▃▃▅·●▃▃ beats 10/12  easy · avg 91%          3.2%  at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 38.0%  ▅▃▅··▃···▃▃● beats 10/10  hard · avg 37%          0.8%  blunt · too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>               89.1%  █·▂··▃··▂▂●▃ beats 10/12  easy · avg 88%          0.7%  blunt · at its level · noisy
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   43.6%  █●···██···██ beats 1/5    easy · avg 74%         9.4%  blunt · at its level
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     55.4%  █··▁▃·▁··●·▃ beats 10/12  medium · avg 68%       8.2%  noisy
+<a href="https://aclanthology.org/2023.findings-emnlp.427.pdf">Conic10K mathQA (zero-shot CoT)</a>       0.0%  ●··▄·······▄ beats 1/3    very hard · avg 10%    5.4%  too hard for it
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           83.0%  ▃··█▅▃▃▅·●▃▃ beats 10/12  easy · avg 91%         3.2%  at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 38.0%  ▅▃▅··▃···▃▃● beats 10/10  hard · avg 37%         0.8%  blunt · too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>               89.1%  █·▂··▃··▂▂●▃ beats 10/12  easy · avg 88%         0.7%  blunt · at its level · noisy
 </pre>
 
 </details>

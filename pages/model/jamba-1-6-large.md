@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2025-02 · 398.56B params (94B active) · other (jamba-open-model-license)
 
-**score 58.7** ±10.6 · #248 of 957 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.6** ±10.6 · #251 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   50% ▇▇▇▇▇▇
 prior: pull toward the middle                50% ▇▇▇▇▇▇
-weighted average                            = 58.7
+weighted average                            = 58.6
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

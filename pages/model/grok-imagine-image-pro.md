@@ -16,8 +16,8 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 <pre>
 task                    vs the others         rank  counts  tests
-text to image           ▂▅▅▃▄▄█●▁▂▁▁   #24 of 126*     81%      1
-image to image / edit…  ▁▁·▃▂▂█▃▅●▂▁    #12 of 62*    3.5%      1
+text to image           ▂▅▅▃▄▄█●▂▂▁▁   #24 of 126*     81%      1
+image to image / edit…  ▁▁·▃▂▃█▅▄●▂▁    #12 of 62*    3.5%      1
 </pre>
 
 <details><summary>text to image · #24 of 126 · 81% of its score</summary>
@@ -26,7 +26,7 @@ Trails [FLUX.2 \[max\]](flux-2-max.md), [Recraft V4.1 Utility Pro](recraft-v4-1-
 
 <pre>
 test                   result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1162.4  ▂▂▃▄▇█●▂▄▂·▂ beats 51/75  avg 1027       81%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1161.2  ▁▂▃▃▆●▃▂▂▂▁▁ beats 50/75  avg 1027       81%  typical
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1009.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 20/34  avg 874        13%  typical
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1009.7  ▁▁▁▄▂●▂▁▁▂▁▁ beats 20/34  avg 875        13%  typical
 </pre>
 
 </details>
@@ -57,9 +57,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   13% ▇▇
-<a name="visual-tecci"></a><a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI: Tricky Edits of Collected and Cu…</a>        1    3% ▇
+<a name="visual-tecci"></a><a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI: Tricky Edits of Collected and Cu…</a>        1    4% ▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 64.7
 </pre>
