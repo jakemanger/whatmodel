@@ -1,0 +1,4 @@
+Perch Semantic Linter / lakeday-org, Perch benchmark results, CC BY 4.0; snapshot 40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac. Selected model mappings and conversion of released confusion counts to Youden J; no endorsement.
+https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md
+https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/results-current.jsonl
+Everything here except the scripts is licensed under CC BY 4.0: the results, predictions, question pack and this card.

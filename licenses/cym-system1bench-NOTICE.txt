@@ -1,0 +1,25 @@
+Copyright (c) 2026 CYMCharming. Original system1bench documentation and independent inference measurements, MIT. Selected scores only; no external task text or model weights redistributed. Upstream dataset and model terms remain separate. No endorsement.
+https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md
+
+# Attribution and data terms
+
+The MIT license applies to this project's original code and documentation. It
+does not relicense external datasets, pretrained models, or third-party content.
+Source text is downloaded into ignored `data/` and is not distributed here.
+Consult [the source review](docs/DATASET_REVIEW.md) and the pinned source cards.
+
+`system1bench/jev_laya_tasks.py` is reproduced from Harry Munro's
+[jev-laya-benchmark](https://github.com/harrymunro/jev-laya-benchmark/blob/0f977d20641e347bffee05745fed265858930489/bench/tasks.py),
+under MIT. Its original license is preserved in
+`docs/third_party/jev-laya-MIT.txt`. Question definitions are kept verbatim.
+
+Laya is developed by NandhaKishorM / Convai Innovations. Jev is associated with
+TypeSafe AI. System1Bench is an independent evaluation project, not an official
+benchmark, endorsement or product of those organizations.
+
+The local v0.2 baselines use Qwen3-8B (Qwen, Apache 2.0) and
+Llama-3.1-8B-Instruct (Meta, Llama 3.1 Community License). This repository
+publishes evaluation code and outputs, not model weights. Model terms and
+required access remain with the original publishers; our MIT license does not
+replace them. Exact checkpoint byte/revision verification is linked in
+[LLM_BASELINES.md](docs/LLM_BASELINES.md).

@@ -80532,24 +80532,27 @@
   },
   {
     "id": "decision-span-02",
-    "name": "span-02 (Gemma 4 26B-A4B)",
-    "provider": "lihe07",
+    "name": "Span-02 (Gemma 4 26B-A4B)",
+    "provider": "Respan",
     "category": "decision",
     "open_weights": true,
-    "api": null,
+    "api": {
+      "url": "https://openrouter.ai/respan/span-02",
+      "provider": "OpenRouter"
+    },
     "local": null,
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine span-02; reported model span-02 (Gemma 4 26B-A4B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
-    "model_repo": "https://huggingface.co/lihe07/span-02",
+    "identity_note": "Exact Decision Index tested engine span-02; reported model span-02 (Gemma 4 26B-A4B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Canonical HF API resolves lihe07/span-02 to respanai/span-02 at the same 63cbdd774391f1b7d9bc3829179efe996d0191ce revision. Maker attribution corrected to Respan, confirmed by the model card citation and official span-02 docs. Native serving uses adaptive reasoning; historical per-evaluator budgets remain in result notes.",
+    "model_repo": "https://huggingface.co/respanai/span-02",
     "license": "apache-2.0",
-    "license_source": "https://huggingface.co/lihe07/span-02/blob/63cbdd774391f1b7d9bc3829179efe996d0191ce/README.md",
+    "license_source": "https://huggingface.co/respanai/span-02/blob/63cbdd774391f1b7d9bc3829179efe996d0191ce/README.md",
     "params_b": 25.81,
     "params_b_source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
     "params_note": "Publisher parameter count; includes the served backbone, not just adapter size.",
     "access": {
       "kind": "weights",
-      "url": "https://huggingface.co/lihe07/span-02/tree/63cbdd774391f1b7d9bc3829179efe996d0191ce",
-      "source": "https://huggingface.co/api/models/lihe07/span-02/revision/63cbdd774391f1b7d9bc3829179efe996d0191ce",
+      "url": "https://huggingface.co/respanai/span-02/tree/63cbdd774391f1b7d9bc3829179efe996d0191ce",
+      "source": "https://huggingface.co/api/models/respanai/span-02/revision/63cbdd774391f1b7d9bc3829179efe996d0191ce",
       "checked": "2026-10-31",
       "revision": "63cbdd774391f1b7d9bc3829179efe996d0191ce",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
@@ -81078,9 +81081,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 10.4,
+          "cmd": "ollaya run pplx-decider:flash --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-19-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine pplx-decider-flash-v1.2; reported model Perplexity Decider Flash v1.2 (4B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine pplx-decider-flash-v1.2; reported model Perplexity Decider Flash v1.2 (4B). Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: pplx-decider:flash, manifest e403f9b1f0ac01129919433e754f66b8718ff76a61055eb841ec4f969173fd40, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (10622 MiB, rounded upward to 10.4 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/blob/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md",
@@ -81093,7 +81106,7 @@
       "source": "https://huggingface.co/api/models/perplexity-ai/pplx-decider-flash-v1.2/revision/9ff7cf9838e59df461c276b7699d56b244d2af58",
       "checked": "2026-10-31",
       "revision": "9ff7cf9838e59df461c276b7699d56b244d2af58",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -81103,9 +81116,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 18,
+          "cmd": "ollaya run d3:flash --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-d3.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-flash; reported model vLLM-SR d3-flash (9B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-flash; reported model vLLM-SR d3-flash (9B). Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: d3:flash, manifest 0f5b2d171ede0443170352adff119afc54283be96d50bd6c6cf8e91380ea41a7, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (18397 MiB, rounded upward to 18.0 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/d3-flash",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/d3-flash/blob/13dc1cc8ef23caefa765907e1d764751e5629f7d/README.md",
@@ -81118,7 +81141,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/d3-flash/revision/13dc1cc8ef23caefa765907e1d764751e5629f7d",
       "checked": "2026-10-31",
       "revision": "13dc1cc8ef23caefa765907e1d764751e5629f7d",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -81328,9 +81351,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 20.7,
+          "cmd": "ollaya run nimble:9b-v3 --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-19-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine nimble-v3; reported model Bespoke Nimble 9B v3. Type: LoRA; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine nimble-v3; reported model Bespoke Nimble 9B v3. Type: LoRA; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: nimble:9b-v3, manifest 01cb73cdc839e8eb25a6209976a2cd1e83048b6b893c809d7144e71b34ff2b31, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (21188 MiB, rounded upward to 20.7 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v3",
     "license": "cc-by-nc-4.0",
     "license_source": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v3/blob/8e927b9b4afdbb14479fac10a7364d1a695be208/README.md",
@@ -81343,7 +81376,7 @@
       "source": "https://huggingface.co/api/models/bespokelabs/Bespoke-Nimble-9B-v3/revision/8e927b9b4afdbb14479fac10a7364d1a695be208",
       "checked": "2026-10-31",
       "revision": "8e927b9b4afdbb14479fac10a7364d1a695be208",
-      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -81400,9 +81433,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 10.9,
+          "cmd": "ollaya run d3:mini --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-d3.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-mini; reported model vLLM-SR d3-mini (4B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-mini; reported model vLLM-SR d3-mini (4B). Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: d3:mini, manifest 5c148d7803097eb575b7b90308496c3f8ec61890a06d5515098c4279aa7b7e39, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (11097 MiB, rounded upward to 10.9 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/d3-mini",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/d3-mini/blob/df99bf4ca4418bc6908ee68e9b7479af1f3b8800/README.md",
@@ -81415,7 +81458,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/d3-mini/revision/df99bf4ca4418bc6908ee68e9b7479af1f3b8800",
       "checked": "2026-10-31",
       "revision": "df99bf4ca4418bc6908ee68e9b7479af1f3b8800",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -81694,9 +81737,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 19.9,
+          "cmd": "ollaya run decision2:lux --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-cob561.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine decision-2.0-lux-9b; reported model vLLM-SR Decision 2.0 Lux 9B. Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine decision-2.0-lux-9b; reported model vLLM-SR Decision 2.0 Lux 9B. Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decision2:lux, manifest 4148abeac890bfcf50bab4fdae636336468b21a9291f9a3f42ae526b17fd32a8, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (20349 MiB, rounded upward to 19.9 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/Decision-2.0-Lux-9B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/Decision-2.0-Lux-9B/blob/1dcd1e7f240eab37ac09a6d0b0f77654b59411f9/README.md",
@@ -81709,7 +81762,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/Decision-2.0-Lux-9B/revision/1dcd1e7f240eab37ac09a6d0b0f77654b59411f9",
       "checked": "2026-10-31",
       "revision": "1dcd1e7f240eab37ac09a6d0b0f77654b59411f9",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -82141,9 +82194,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 20.3,
+          "cmd": "ollaya run nimble:9b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine nimble-v2; reported model Bespoke Nimble 9B v2. Type: LoRA; technique: autoregressive. Implementation: https://github.com/bespokelabsai/nimble. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine nimble-v2; reported model Bespoke Nimble 9B v2. Type: LoRA; technique: autoregressive. Implementation: https://github.com/bespokelabsai/nimble. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: nimble:9b, manifest fb7e7f742e34636e853f91c467b9463e3155dbb08cabc5c49906d52a5750487d, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (20782 MiB, rounded upward to 20.3 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2/blob/4b8c04d1ac2cea3e41e5e3c4d2130bcead2c0abe/README.md",
@@ -82156,7 +82219,7 @@
       "source": "https://huggingface.co/api/models/bespokelabs/Bespoke-Nimble-9B-v2/revision/4b8c04d1ac2cea3e41e5e3c4d2130bcead2c0abe",
       "checked": "2026-10-31",
       "revision": "4b8c04d1ac2cea3e41e5e3c4d2130bcead2c0abe",
-      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -82316,9 +82379,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 12.1,
+          "cmd": "ollaya run decision2:nox --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-cob561.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine decision-2.0-nox-4b; reported model vLLM-SR Decision 2.0 Nox 4B. Type: LoRA + head; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine decision-2.0-nox-4b; reported model vLLM-SR Decision 2.0 Nox 4B. Type: LoRA + head; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decision2:nox, manifest d81d2a4fe5cad9b1e0e6a8c44d9108732a129328a9e595c935c4b6083b5e9133, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (12387 MiB, rounded upward to 12.1 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B/blob/ae269ecf34a0b3a89026bc1afd9c995279212fad/README.md",
@@ -82331,7 +82404,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/Decision-2.0-Nox-4B/revision/ae269ecf34a0b3a89026bc1afd9c995279212fad",
       "checked": "2026-10-31",
       "revision": "ae269ecf34a0b3a89026bc1afd9c995279212fad",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -82660,9 +82733,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 11.1,
+          "cmd": "ollaya run decider:4b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-r0180.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine decider-4b; reported model Decider 4B. Type: full fine-tune; technique: autoregressive. Implementation: https://github.com/Mapika/decider. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine decider-4b; reported model Decider 4B. Type: full fine-tune; technique: autoregressive. Implementation: https://github.com/Mapika/decider. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decider:4b, manifest b4e1276b55eda06fad7af9536a996fc132a1229bb866755cd6f07778dbe98963, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (11279 MiB, rounded upward to 11.1 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/Mapika/decider-4b",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/Mapika/decider-4b/blob/585473dec4fa93f0325c2bf02dda7273b61f44c1/README.md",
@@ -82675,7 +82758,7 @@
       "source": "https://huggingface.co/api/models/Mapika/decider-4b/revision/585473dec4fa93f0325c2bf02dda7273b61f44c1",
       "checked": "2026-10-31",
       "revision": "585473dec4fa93f0325c2bf02dda7273b61f44c1",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -82684,10 +82767,13 @@
     "provider": "baselabs",
     "category": "decision",
     "open_weights": true,
-    "api": null,
+    "api": {
+      "url": "https://openrouter.ai/baseten/joey-1",
+      "provider": "OpenRouter"
+    },
     "local": null,
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine joey-1; reported model baselabs joey-1 (2B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine joey-1; reported model baselabs joey-1 (2B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Native Baseten hosted endpoint verified 2026-10-31; historical hosted and downloaded weight hashes are not assumed identical.",
     "model_repo": "https://huggingface.co/baselabs/joey-1",
     "license": "mit",
     "license_source": "https://huggingface.co/baselabs/joey-1/blob/9efbe485efbed9598dfca5294cbbe8da00e21908/README.md",
@@ -82760,9 +82846,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 11,
+          "cmd": "ollaya run kev:4b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine kev-4b-r10; reported model Kev 4B r10. Type: LoRA + head; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine kev-4b-r10; reported model Kev 4B r10. Type: LoRA + head; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: kev:4b, manifest c0e732655dc9d799dd21ba7f2f9a445fbd50ee83578e96ccfbf691c1be9dde53, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (11200 MiB, rounded upward to 11.0 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/jaredpalmer/kev-4b",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/jaredpalmer/kev-4b/blob/6cfce5c2fa4b4bd64026336ab649c5ca78857d52/README.md",
@@ -82775,7 +82871,7 @@
       "source": "https://huggingface.co/api/models/jaredpalmer/kev-4b/revision/6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
       "checked": "2026-10-31",
       "revision": "6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
-      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -82910,9 +83006,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 8.2,
+          "cmd": "ollaya run d3:nano --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-d3.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-nano; reported model vLLM-SR d3-nano (2B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-nano; reported model vLLM-SR d3-nano (2B). Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: d3:nano, manifest 137bd4f1edd15d843102431d9b4ed066e581549fc3a5e61f72e6d09a28519ecf, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (8363 MiB, rounded upward to 8.2 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/d3-nano",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/d3-nano/blob/462efc366229ea268cf4eed3738b3fc4415e4817/README.md",
@@ -82925,7 +83031,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/d3-nano/revision/462efc366229ea268cf4eed3738b3fc4415e4817",
       "checked": "2026-10-31",
       "revision": "462efc366229ea268cf4eed3738b3fc4415e4817",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -83152,9 +83258,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 2.7,
+          "cmd": "ollaya run gliclass:v4-edge --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-cob560.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine gliclass-v4-edge; reported model GLiClass v4 edge (0.4B). Type: full fine-tune; technique: encoder. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine gliclass-v4-edge; reported model GLiClass v4 edge (0.4B). Type: full fine-tune; technique: encoder. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: gliclass:v4-edge, manifest 3b1849b2b5ec38109cbf8772715bccaf8f546ab48f6ecefdee41f4d6af1c5b39, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (2677 MiB, rounded upward to 2.7 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/knowledgator/gliclass-v4-edge",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/knowledgator/gliclass-v4-edge/blob/885af1af8a07edf4ed34df83ca0d995ed8201283/README.md",
@@ -83167,7 +83283,7 @@
       "source": "https://huggingface.co/api/models/knowledgator/gliclass-v4-edge/revision/885af1af8a07edf4ed34df83ca0d995ed8201283",
       "checked": "2026-10-31",
       "revision": "885af1af8a07edf4ed34df83ca0d995ed8201283",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -83493,9 +83609,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 4.5,
+          "cmd": "ollaya run d3:lite --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-d3.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-lite; reported model vLLM-SR d3-lite (0.8B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-lite; reported model vLLM-SR d3-lite (0.8B). Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: d3:lite, manifest 1f9c3e2dd6c2880348e1000ed93088a98b49ee5f298ca65eec6c49d433ffe53e, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (4539 MiB, rounded upward to 4.5 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/d3-lite",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/d3-lite/blob/03560c26f5199c3c04129a2ccb38960c913635e0/README.md",
@@ -83508,7 +83634,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/d3-lite/revision/03560c26f5199c3c04129a2ccb38960c913635e0",
       "checked": "2026-10-31",
       "revision": "03560c26f5199c3c04129a2ccb38960c913635e0",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -83693,9 +83819,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 10.8,
+          "cmd": "ollaya run decision2:sol --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-cob561.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine decision-2.0-sol-2b; reported model vLLM-SR Decision 2.0 Sol 2B. Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine decision-2.0-sol-2b; reported model vLLM-SR Decision 2.0 Sol 2B. Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decision2:sol, manifest 85d3edf9e8bcf7cb39f0907c504781fd2f57a6c0725a24aa4f202dbe103f28a9, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (11027 MiB, rounded upward to 10.8 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/Decision-2.0-Sol-2B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/Decision-2.0-Sol-2B/blob/df30237f9c1ced5765fdbb499dd1f2c7dca478ad/README.md",
@@ -83708,7 +83844,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/Decision-2.0-Sol-2B/revision/df30237f9c1ced5765fdbb499dd1f2c7dca478ad",
       "checked": "2026-10-31",
       "revision": "df30237f9c1ced5765fdbb499dd1f2c7dca478ad",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -84015,9 +84151,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 5.8,
+          "cmd": "ollaya run decision2:eos --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-cob561.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine decision-2.0-eos-0.8b; reported model vLLM-SR Decision 2.0 Eos 0.8B. Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine decision-2.0-eos-0.8b; reported model vLLM-SR Decision 2.0 Eos 0.8B. Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decision2:eos, manifest 4c8c10ac75b300337e9687b249e879a19287fc4481f23e5c5e98020eb650733b, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (5909 MiB, rounded upward to 5.8 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/Decision-2.0-Eos-0.8B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/Decision-2.0-Eos-0.8B/blob/52cad37ef21f598302fe964cbfa164739cb965d5/README.md",
@@ -84030,7 +84176,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/Decision-2.0-Eos-0.8B/revision/52cad37ef21f598302fe964cbfa164739cb965d5",
       "checked": "2026-10-31",
       "revision": "52cad37ef21f598302fe964cbfa164739cb965d5",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -84113,9 +84259,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 2.6,
+          "cmd": "ollaya run d3:edge --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-d3.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-edge; reported model vLLM-SR d3-edge (0.6B). Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine vllm-sr-d3-edge; reported model vLLM-SR d3-edge (0.6B). Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: d3:edge, manifest 88b3e621e7c659b907938f2a79564734f1f341d0eaace91f9389cdc50555e462, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (2657 MiB, rounded upward to 2.6 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/d3-edge",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/d3-edge/blob/c454ee39b862248d70abd7f84195d2f54ffe6d43/README.md",
@@ -84128,7 +84284,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/d3-edge/revision/c454ee39b862248d70abd7f84195d2f54ffe6d43",
       "checked": "2026-10-31",
       "revision": "c454ee39b862248d70abd7f84195d2f54ffe6d43",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -84258,9 +84414,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 3.7,
+          "cmd": "ollaya run decision2:kai --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-cob561.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine decision-2.0-kai-0.6b; reported model vLLM-SR Decision 2.0 Kai 0.6B. Type: full fine-tune; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine decision-2.0-kai-0.6b; reported model vLLM-SR Decision 2.0 Kai 0.6B. Type: full fine-tune; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decision2:kai, manifest c1f010e05fb8fab53826338931bbd5b5cb7b10ad8410fdf5bf1c344bd6e097f5, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (3701 MiB, rounded upward to 3.7 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B/blob/cc7f30cda9e7c7b28c5f71ef33f01e09385f1c4b/README.md",
@@ -84273,7 +84439,7 @@
       "source": "https://huggingface.co/api/models/vllm-sr/Decision-2.0-Kai-0.6B/revision/cc7f30cda9e7c7b28c5f71ef33f01e09385f1c4b",
       "checked": "2026-10-31",
       "revision": "cc7f30cda9e7c7b28c5f71ef33f01e09385f1c4b",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -84308,9 +84474,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 4.6,
+          "cmd": "ollaya run kev:0.8b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine kev-0.8b-r15; reported model Kev 0.8B r15. Type: LoRA + head; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine kev-0.8b-r15; reported model Kev 0.8B r15. Type: LoRA + head; technique: autoregressive. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: kev:0.8b, manifest 8a0d4094df504ca7329bc999dabbb89c15ad5221f55728acde0ff61c2b3909f2, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (4650 MiB, rounded upward to 4.6 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/jaredpalmer/kev-0.8b",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/jaredpalmer/kev-0.8b/blob/bf75a6a8848ea6960ff2ed108d9ed44c2941174f/README.md",
@@ -84323,7 +84499,7 @@
       "source": "https://huggingface.co/api/models/jaredpalmer/kev-0.8b/revision/bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
       "checked": "2026-10-31",
       "revision": "bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
-      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -84599,9 +84775,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 2.7,
+          "cmd": "ollaya run d1-omni:600m --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-r0180.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine d1-omni-600m; reported model LiquidAI d1-omni-600M. Type: full fine-tune; technique: encoder. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine d1-omni-600m; reported model LiquidAI d1-omni-600M. Type: full fine-tune; technique: encoder. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: d1-omni:600m, manifest 53dfa4be304b8ab233617f432ed655050d6d459a48f89dae94a574f75414f139, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (2681 MiB, rounded upward to 2.7 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/LiquidAI/d1-omni-600M",
     "license": "other",
     "license_source": "https://huggingface.co/LiquidAI/d1-omni-600M/blob/02b55d7076f15129e59ab3f94783f32c4b088674/README.md",
@@ -84614,7 +84800,7 @@
       "source": "https://huggingface.co/api/models/LiquidAI/d1-omni-600M/revision/02b55d7076f15129e59ab3f94783f32c4b088674",
       "checked": "2026-10-31",
       "revision": "02b55d7076f15129e59ab3f94783f32c4b088674",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -84895,9 +85081,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 15.4,
+          "cmd": "ollaya run clm:8b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine clm-v0.1-8b; reported model CLM-v0.1-8B Qwen3-8B heads. Type: full fine-tune; technique: autoregressive. Published checkpoint/base reference: Contrastive-LM/CLM-v0.1-8B. Implementation: https://github.com/Contrastive-LM/CLM. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Exact Decision Index tested engine clm-v0.1-8b; reported model CLM-v0.1-8B Qwen3-8B heads. Type: full fine-tune; technique: autoregressive. Published checkpoint/base reference: Contrastive-LM/CLM-v0.1-8B. Implementation: https://github.com/Contrastive-LM/CLM. No API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: clm:8b, manifest 3f89a66972f1398210d2f41b94667665132aa51c2d313237c3fc70a49c275cb5, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (15678 MiB, rounded upward to 15.4 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B/blob/e939398d4556fcd9400c76fa8c5a513202f42b0a/README.md",
@@ -84910,7 +85106,7 @@
       "source": "https://huggingface.co/api/models/Contrastive-LM/CLM-v0.1-8B/revision/e939398d4556fcd9400c76fa8c5a513202f42b0a",
       "checked": "2026-10-31",
       "revision": "e939398d4556fcd9400c76fa8c5a513202f42b0a",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -85639,9 +85835,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-q8-0",
+          "gb": 15.5,
+          "cmd": "ollaya run winnow:12b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json",
-    "identity_note": "DecisionBench v1 comparison: EldanRing/Winnow-12B, revision b6ac22b0d51b69b18200acacb3fbdd98073fffe8; decision-model; adapter jev-compatible-server-native-systemone-grouped-v1; probability source native-with-anchored-wide-choice-and-noul-adaptation. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified runtime or OpenRouter price imported. Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "DecisionBench v1 comparison: EldanRing/Winnow-12B, revision b6ac22b0d51b69b18200acacb3fbdd98073fffe8; decision-model; adapter jev-compatible-server-native-systemone-grouped-v1; probability source native-with-anchored-wide-choice-and-noul-adaptation. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified OpenRouter price imported. Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: winnow:12b, manifest 8d72fee0e5f92a625cdb85ae4f6abdc024c9e6f124a0ca67e64522c3f24c47ce, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label Q8_0. Memory is measured peak GPU increase (15872 MiB, rounded upward to 15.5 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/EldanRing/Winnow-12B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/EldanRing/Winnow-12B/blob/0b5b7f98e718cf0faffd0acea3093b86ebf00b56/README.md",
@@ -85651,7 +85857,7 @@
       "source": "https://huggingface.co/api/models/EldanRing/Winnow-12B/revision/b6ac22b0d51b69b18200acacb3fbdd98073fffe8",
       "checked": "2026-10-31",
       "revision": "b6ac22b0d51b69b18200acacb3fbdd98073fffe8",
-      "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is the revision recorded by the benchmark. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -86091,9 +86297,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f16",
+          "gb": 1.7,
+          "cmd": "ollaya run laya:en --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json",
-    "identity_note": "DecisionBench v1 comparison: convaiinnovations/laya, revision 1c5edc17a7acd8701df6fc341c0d179f1c62c982; decision-model; adapter laya-hf; probability source native-decisions-probability-distribution. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified runtime or OpenRouter price imported. Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "DecisionBench v1 comparison: convaiinnovations/laya, revision 1c5edc17a7acd8701df6fc341c0d179f1c62c982; decision-model; adapter laya-hf; probability source native-decisions-probability-distribution. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified OpenRouter price imported. Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: laya:en, manifest c305a9276531a47000bf93559d2c94f1ed6cbb67055c9151084682dad7655e9d, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F16. Memory is measured peak GPU increase (1654 MiB, rounded upward to 1.7 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/convaiinnovations/laya",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/convaiinnovations/laya/blob/7b928d828b7b0e022f929d9bd2e44165aa270148/README.md",
@@ -86106,7 +86322,7 @@
       "source": "https://huggingface.co/api/models/convaiinnovations/laya/revision/1c5edc17a7acd8701df6fc341c0d179f1c62c982",
       "checked": "2026-10-31",
       "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
-      "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is the revision recorded by the benchmark. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -86610,9 +86826,19 @@
     "category": "decision",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ollaya-f32",
+          "gb": 5.8,
+          "cmd": "ollaya run decision:eos --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
     "source": "https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json",
-    "identity_note": "DecisionBench v1 comparison: llm-semantic-router/Decision-1.0-Eos-0.8B, revision 3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd; decision-model; adapter jev-compatible-server-v1; probability source native_probability_distribution. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified runtime or OpenRouter price imported. Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "DecisionBench v1 comparison: llm-semantic-router/Decision-1.0-Eos-0.8B, revision 3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd; decision-model; adapter jev-compatible-server-v1; probability source native_probability_distribution. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified OpenRouter price imported. Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run. Reviewed Ollaya local route added 2026-10-31: decision:eos, manifest fc119d7067ecd029a5316442cf42a394236fff8758ab296f3d25a1285a34e047, matching the independent accuracy-run manifest. Native family implementation; published runtime precision label F32. Memory is measured peak GPU increase (5910 MiB, rounded upward to 5.8 GiB) on RTX 5090 during the short five-question triage workload, not download size or a maximum-context guarantee. Runtime installation is required; no fresh execution performed here. Historical benchmark adapter and input protocol still vary by result.",
     "model_repo": "https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B/blob/33e3c44f475b2e02a62ef1326e5168e74db3f411/README.md",
@@ -86622,7 +86848,7 @@
       "source": "https://huggingface.co/api/models/llm-semantic-router/Decision-1.0-Eos-0.8B/revision/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd",
       "checked": "2026-10-31",
       "revision": "3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd",
-      "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published model files verified. This is the revision recorded by the benchmark. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
     }
   },
   {
@@ -87238,6 +87464,290 @@
       "source": "https://github.com/NandhaKishorM/laya/blob/HEAD/README.md",
       "checked": "2026-10-31",
       "note": "Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified."
+    }
+  },
+  {
+    "id": "gpt-6-luna-decisions",
+    "name": "GPT-6 Luna Decisions",
+    "provider": "OpenAI",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/openai/gpt-6-luna-decisions",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
+    "identity_note": "System One Bench identifies the tested endpoint as openai/gpt-6-luna-decisions. Hosted service snapshot, not an immutable weight revision. Separate from chat or open-weight models with similar names. API access verified 2026-10-31; benchmark dates are retained per result.",
+    "model_repo": "https://openrouter.ai/openai/gpt-6-luna-decisions"
+  },
+  {
+    "id": "mercury-decide",
+    "name": "Mercury Decide (free endpoint)",
+    "provider": "Inception",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/inception/mercury-decide:free",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
+    "identity_note": "System One Bench identifies the tested endpoint as inception/mercury-decide:free. Hosted service snapshot, not an immutable weight revision. Separate from chat or open-weight models with similar names. API access verified 2026-10-31; benchmark dates are retained per result. Results are for the :free endpoint; no equivalence to a differently routed paid endpoint is assumed.",
+    "model_repo": "https://openrouter.ai/inception/mercury-decide:free"
+  },
+  {
+    "id": "liquid-d1",
+    "name": "d1 (hosted)",
+    "provider": "Liquid AI",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/liquid/d1",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
+    "identity_note": "System One Bench identifies the tested endpoint as liquid/d1. Hosted service snapshot, not an immutable weight revision. Separate from chat or open-weight models with similar names. API access verified 2026-10-31; benchmark dates are retained per result. OpenRouter announces retirement on 2026-11-20; still available at review time. Not d1-3B or d1-omni-600M.",
+    "model_repo": "https://openrouter.ai/liquid/d1"
+  },
+  {
+    "id": "liquid-d1-ultra",
+    "name": "d1-ultra",
+    "provider": "Liquid AI",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/liquid/d1-ultra",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
+    "identity_note": "System One Bench identifies the tested endpoint as liquid/d1-ultra. Hosted service snapshot, not an immutable weight revision. Separate from chat or open-weight models with similar names. API access verified 2026-10-31; benchmark dates are retained per result.",
+    "model_repo": "https://openrouter.ai/liquid/d1-ultra"
+  },
+  {
+    "id": "mercury-decide-paid",
+    "name": "Mercury Decide (paid endpoint)",
+    "provider": "Inception",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/inception/mercury-decide",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md",
+    "model_repo": "https://openrouter.ai/inception/mercury-decide",
+    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Paid endpoint inception/mercury-decide, recorded revision inception/mercury-decide-20260930; kept separate from the free endpoint."
+  },
+  {
+    "id": "microsoft-decision-1",
+    "name": "Microsoft-Decision-1",
+    "provider": "Microsoft",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/microsoft/microsoft-decision-1",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md",
+    "model_repo": "https://openrouter.ai/microsoft/microsoft-decision-1",
+    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Not merged with similarly named open-weight community checkpoints."
+  },
+  {
+    "id": "respan-span-01-pro",
+    "name": "Span-01 Pro",
+    "provider": "Respan",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.respan.ai/docs/documentation/span-01/quickstart",
+      "provider": "Respan"
+    },
+    "local": null,
+    "source": "https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md",
+    "model_repo": "https://www.respan.ai/docs/documentation/span-01/quickstart",
+    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Not merged with similarly named open-weight community checkpoints."
+  },
+  {
+    "id": "solar-decide",
+    "name": "Solar Decide",
+    "provider": "Upstage",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/upstage/solar-decide",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/oscarfreyer/decision-model-benchmark/blob/f7ef9e81cfdc89fb98e07cef8212d0778b015595/methods/Study_Protocol.md",
+    "model_repo": "https://openrouter.ai/upstage/solar-decide",
+    "identity_note": "Named native decision endpoint verified 2026-10-31. Medical study records exact requested and returned model IDs and pinned Upstage routing. Historical dated service snapshot retained in each result; no claim that current served weights are immutable."
+  },
+  {
+    "id": "solar-decide-flash",
+    "name": "Solar Decide Flash",
+    "provider": "Upstage",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/upstage/solar-decide-flash",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/oscarfreyer/decision-model-benchmark/blob/f7ef9e81cfdc89fb98e07cef8212d0778b015595/methods/Study_Protocol.md",
+    "model_repo": "https://openrouter.ai/upstage/solar-decide-flash",
+    "identity_note": "Named native decision endpoint verified 2026-10-31. Medical study records exact requested and returned model IDs and pinned Upstage routing. Historical dated service snapshot retained in each result; no claim that current served weights are immutable."
+  },
+  {
+    "id": "decision-pplx-decider-v1-1-27b",
+    "name": "Perplexity Decider v1.1 (27B)",
+    "provider": "Perplexity",
+    "category": "decision",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/blob/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md",
+    "api": {
+      "url": "https://openrouter.ai/perplexity/pplx-decider-v1.1-27b",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/oscarfreyer/decision-model-benchmark/blob/f7ef9e81cfdc89fb98e07cef8212d0778b015595/methods/Study_Protocol.md",
+    "model_repo": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
+    "identity_note": "Explicit v1.1 release, kept separate from v1.2. Medical study records requested and returned v1.1 endpoint IDs. Public weight repository verified separately; equivalence between the hosted snapshot and a particular downloadable weight hash is not established.",
+    "access": {
+      "kind": "weights",
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/tree/14c9d90137962d300f3de95633f7b6535e80c5ce",
+      "source": "https://huggingface.co/api/models/perplexity-ai/pplx-decider-v1.1-27b/revision/14c9d90137962d300f3de95633f7b6535e80c5ce",
+      "checked": "2026-10-31",
+      "revision": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+      "note": "Public, ungated model files verified. Named release; historical hosted weights are not proven byte-identical. Custom native decision head, so no unverified chat-model run command supplied."
+    }
+  },
+  {
+    "id": "liquid-d1-1",
+    "name": "d1.1 (hosted)",
+    "provider": "Liquid AI",
+    "category": "decision",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://openrouter.ai/liquid/d1.1",
+      "provider": "OpenRouter"
+    },
+    "local": null,
+    "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
+    "model_repo": "https://openrouter.ai/liquid/d1.1",
+    "identity_note": "Exact named native decision endpoint liquid/d1.1; reported returned version liquid/d1.1-20261027. Kept separate from d1, d1-ultra and downloadable small d1 variants. Hosted service snapshot, not immutable weights."
+  },
+  {
+    "id": "jebadiah-4b-v2-ollaya-q8-0",
+    "name": "Jebadiah 4B v2 (Ollaya Q8_0)",
+    "provider": "frontier-infra",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/frontier-infra/jebadiah-4b-v2-GGUF/blob/7f671f9a31827257c26401000484e154b39417e6/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/frontier-infra/jebadiah-4b-v2-GGUF/blob/7f671f9a31827257c26401000484e154b39417e6/README.md",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-ollaya",
+          "gb": 5.5,
+          "cmd": "ollaya run jeb:4b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/frontier-infra/jebadiah-4b-v2-GGUF",
+    "identity_note": "Ollaya native AINode prompt and per-type temperatures, one pass, Q8_0. This is not the repeated-payload/forward-reverse T1e recipe; its scores stay separate. Source GGUF jebadiah-4b-v2-Q8_0.gguf at 7f671f9a31827257c26401000484e154b39417e6; weight sha256:36f4a54fe07ed79b186a2128bfb1598ba210b1ab0a945296069a4e5cdbb9875a; Ollaya manifest 4aba27707f6f4ba6f116710a0d05743220e5a5819b8826a9bd32385d0d9df2ff. Published training-overlap subsets are excluded. Local memory is the measured RTX 5090 peak increase during the short five-question triage workload (5530 MiB), rounded upward to 0.1 GiB; longer contexts can require more. Command verified from upstream documentation, not freshly executed here.",
+    "access": {
+      "kind": "weights",
+      "url": "https://huggingface.co/frontier-infra/jebadiah-4b-v2-GGUF/tree/7f671f9a31827257c26401000484e154b39417e6",
+      "source": "https://huggingface.co/api/models/frontier-infra/jebadiah-4b-v2-GGUF/revision/7f671f9a31827257c26401000484e154b39417e6",
+      "checked": "2026-10-31",
+      "revision": "7f671f9a31827257c26401000484e154b39417e6",
+      "note": "Public ungated original GGUF verified at the exact benchmark manifest revision. Install the Ollaya runtime separately using its official installation instructions."
+    }
+  },
+  {
+    "id": "jebadiah-9b-v2-1-ollaya-q8-0",
+    "name": "Jebadiah 9B v2.1 (Ollaya Q8_0)",
+    "provider": "frontier-infra",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1-GGUF/blob/2182dd8d70b09ffdce5b68b0ddf6c4591bf38810/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1-GGUF/blob/2182dd8d70b09ffdce5b68b0ddf6c4591bf38810/README.md",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-ollaya",
+          "gb": 9.1,
+          "cmd": "ollaya run jeb:9b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-cob560.json"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1-GGUF",
+    "identity_note": "Ollaya native AINode prompt and per-type temperatures, one pass, Q8_0. This is not the repeated-payload/forward-reverse T1e recipe; its scores stay separate. Source GGUF jebadiah-9b-v2-1-Q8_0.gguf at 2182dd8d70b09ffdce5b68b0ddf6c4591bf38810; weight sha256:031de099ea132414cbcb89ac363d44fe5ff09c71994028825ce671a4e1bd51f1; Ollaya manifest 737d66d5ad2aaf17e4271257a8b7853a6613967d6953bda3c8167fb8e6d5270c. Published training-overlap subsets are excluded. Local memory is the measured RTX 5090 peak increase during the short five-question triage workload (9315 MiB), rounded upward to 0.1 GiB; longer contexts can require more. Command verified from upstream documentation, not freshly executed here.",
+    "access": {
+      "kind": "weights",
+      "url": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1-GGUF/tree/2182dd8d70b09ffdce5b68b0ddf6c4591bf38810",
+      "source": "https://huggingface.co/api/models/frontier-infra/jebadiah-9b-v2-1-GGUF/revision/2182dd8d70b09ffdce5b68b0ddf6c4591bf38810",
+      "checked": "2026-10-31",
+      "revision": "2182dd8d70b09ffdce5b68b0ddf6c4591bf38810",
+      "note": "Public ungated original GGUF verified at the exact benchmark manifest revision. Install the Ollaya runtime separately using its official installation instructions."
+    }
+  },
+  {
+    "id": "jebadiah-27b-v2-1-ollaya-q4-k-m",
+    "name": "Jebadiah 27B v2.1 (Ollaya Q4_K_M)",
+    "provider": "frontier-infra",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-GGUF/blob/ed71f41b8b59e8832c53982cd26e0879824e979c/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-GGUF/blob/ed71f41b8b59e8832c53982cd26e0879824e979c/README.md",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m-ollaya",
+          "gb": 16.3,
+          "cmd": "ollaya run jeb:27b --preset triage \"The customer requests a refund.\"",
+          "platform": "nvidia",
+          "source": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-cob560.json"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-GGUF",
+    "identity_note": "Ollaya native AINode prompt and per-type temperatures, one pass, Q4_K_M. This is not the repeated-payload/forward-reverse T1e recipe; its scores stay separate. Source GGUF jebadiah-27b-v2-1-Q4_K_M.gguf at ed71f41b8b59e8832c53982cd26e0879824e979c; weight sha256:f508eb3ad7b0bee0c9d7460288e0f56b764e5ad01d7bfba7d58c6a347cee4a3a; Ollaya manifest 978465d647d1de010ea24370f135b3b2552020208612163c5907abe92de465de. Published training-overlap subsets are excluded. Local memory is the measured RTX 5090 peak increase during the short five-question triage workload (16591 MiB), rounded upward to 0.1 GiB; longer contexts can require more. Command verified from upstream documentation, not freshly executed here.",
+    "access": {
+      "kind": "weights",
+      "url": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-GGUF/tree/ed71f41b8b59e8832c53982cd26e0879824e979c",
+      "source": "https://huggingface.co/api/models/frontier-infra/jebadiah-27b-v2-1-GGUF/revision/ed71f41b8b59e8832c53982cd26e0879824e979c",
+      "checked": "2026-10-31",
+      "revision": "ed71f41b8b59e8832c53982cd26e0879824e979c",
+      "note": "Public ungated original GGUF verified at the exact benchmark manifest revision. Install the Ollaya runtime separately using its official installation instructions."
     }
   }
 ]

@@ -1,0 +1,2 @@
+Copyright (c) 2026 Leanmcp. Original JevBench result report documents under MIT. Selected measurements and documented arithmetic conversions only. No input datasets, model weights or third-party comparison numbers redistributed. No endorsement.
+https://github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/

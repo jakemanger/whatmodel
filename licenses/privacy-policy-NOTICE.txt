@@ -1,0 +1,2 @@
+Copyright (c) 2026 FloorIsAwake. Privacy Decision Benchmark — Local Model Responses, MIT. Selected original no_samples raw-action accuracy only, checked against saved predictions. Compact/guarded/repeat outcomes excluded; model identities clarified. No input fixtures, model code or weights redistributed. No endorsement.
+https://huggingface.co/datasets/FloorIsAwake/privacy-decision-benchmark-local/blob/fe8ae0ba7aff272d8235cf69d48fb35fdd610f1c/panel_scores.jsonl

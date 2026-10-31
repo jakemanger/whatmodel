@@ -1,0 +1,5 @@
+Valen Team, JevalKit evaluation snapshot 2026-10-27, Apache-2.0. Selected original accuracy/public-index measurements; no endorsement. Toolkit commit c61a32ee7aedfe0404edc5c09e658dc879c92838; Space revision efbc17250e9f0042bf09c80c561f782a8e8c8e09.
+https://huggingface.co/spaces/Valen-Team/JevalKit-Leaderboard/blob/efbc17250e9f0042bf09c80c561f782a8e8c8e09/README.md
+https://huggingface.co/spaces/Valen-Team/JevalKit-Leaderboard/blob/efbc17250e9f0042bf09c80c561f782a8e8c8e09/data/leaderboard.json
+Licence metadata: license: apache-2.0
+Only original inference rows; third-party imported results and benchmark content excluded.

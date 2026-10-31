@@ -1,0 +1,18 @@
+DecisionPivot, StartLux Labs, 2026. CC BY 4.0. Pinned v1.1 report 3e3854f18f7aa27c9f9140a2ce35bd1dd470e02a. Selected original competitor-run primary measurements; core percentages converted to fractions; printed precision retained. No endorsement. Reference inputs retain upstream licences and are not copied.
+https://huggingface.co/datasets/startlux-models/DecisionPivot/blob/3e3854f18f7aa27c9f9140a2ce35bd1dd470e02a/report.md
+https://huggingface.co/datasets/startlux-models/DecisionPivot/blob/3e3854f18f7aa27c9f9140a2ce35bd1dd470e02a/LICENSE.md
+
+# Licences of DecisionPivot
+
+**Core track** (the 13 generated families under `tasks/`: their items, task cards and README files) and the documentation of the
+benchmark: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/legalcode.
+Copyright 2026 StartLux Labs. Attribution: "DecisionPivot, StartLux Labs, 2026".
+
+**Reference track** (the 35 public test sets converted to the item format): these data sets are not ours. They were created by other
+authors, who keep their copyright, and every task follows the licence of its source data set, named with the source in the task's card
+and in `TASKS.md`. Use of these items is subject to those licences, and the original data sets should be cited.
+
+**Code** (`score.py`, `validate.py`, `test_score.py` and the other scripts): Apache License 2.0. The full code of the benchmark is at
+https://github.com/StartLuxLabs/DecisionPivot.
+
+Evaluation only: the items must not enter a training set or a prompt of a model that is being trained.

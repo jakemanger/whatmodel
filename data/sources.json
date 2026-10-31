@@ -19545,5 +19545,486 @@
     "checked": "2026-10-31",
     "verdict": "allowed",
     "icon": "benchmarkheaven.com"
+  },
+  {
+    "id": "jevalkit-original-runs-20261027",
+    "name": "JevalKit (Valen Team)",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/spaces/Valen-Team/JevalKit-Leaderboard/blob/efbc17250e9f0042bf09c80c561f782a8e8c8e09/data/leaderboard.json"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "/licenses/jevalkit-Apache-2.0.txt",
+    "terms_url": "https://huggingface.co/spaces/Valen-Team/JevalKit-Leaderboard/blob/efbc17250e9f0042bf09c80c561f782a8e8c8e09/README.md",
+    "quote": "license: apache-2.0",
+    "scope": "The Apache-2.0-labelled static Space ships this versioned data/leaderboard.json. Scope is only its original jevalkit-inference rows, not imported upstream measurements, underlying test inputs, model weights or toolkit-wide third-party data. Eligible primary complete runs only; selected named-release mappings documented separately.",
+    "attribution": "Valen Team, JevalKit evaluation snapshot 2026-10-27, Apache-2.0. Selected original accuracy/public-index measurements; no endorsement. Toolkit commit c61a32ee7aedfe0404edc5c09e658dc879c92838; Space revision efbc17250e9f0042bf09c80c561f782a8e8c8e09.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "perchscan-results-20261031",
+    "name": "Perch benchmark results",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/results-current.jsonl"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/perchscan-CC-BY-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md",
+    "quote": "Everything here except the scripts is licensed under CC BY 4.0: the results, predictions, question pack and this card.",
+    "scope": "Own published current summary results only. Source code, input datasets, scripts and external benchmarks are not copied. Youden J derived from the exact released confusion counts.",
+    "attribution": "Perch Semantic Linter / lakeday-org, Perch benchmark results, CC BY 4.0; snapshot 40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac. Selected model mappings and conversion of released confusion counts to Youden J; no endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "freyer-medqa-20261027",
+    "name": "Freyer et al. · MedQA",
+    "kind": "paper",
+    "match": [
+      "github.com/oscarfreyer/decision-model-benchmark/blob/f7ef9e81cfdc89fb98e07cef8212d0778b015595/results/verified_exports/primary.csv"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/freyer-medqa-CC-BY-4.0.txt",
+    "terms_url": "https://github.com/oscarfreyer/decision-model-benchmark/blob/f7ef9e81cfdc89fb98e07cef8212d0778b015595/results/LICENSE",
+    "quote": "Study figures and numerical result projections are licensed under CC BY 4.0. See ../data/LICENSE.",
+    "scope": "Numerical primary result projections only; no MedQA inputs, code, other papers or provider billing data.",
+    "attribution": "Oscar Freyer, Daniel Glauert, Moritz Hofmann, Max Ostermann, Stephen Gilbert and Jakob Nikolas Kather, Benchmarking decision models against generative large language models on medical multiple-choice questions: code and structured data, v0.1.0-rc4, snapshot f7ef9e81cfdc89fb98e07cef8212d0778b015595. CC BY 4.0. Selected native decision configurations; converted published correct counts to accuracy fractions. No endorsement. Upstream MedQA inputs are not redistributed.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "decisionpivot-v11-report-20261008",
+    "name": "DecisionPivot · StartLux Labs",
+    "kind": "paper",
+    "match": [
+      "huggingface.co/datasets/startlux-models/DecisionPivot/blob/3e3854f18f7aa27c9f9140a2ce35bd1dd470e02a/report.md"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/decisionpivot-CC-BY-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/startlux-models/DecisionPivot/blob/3e3854f18f7aa27c9f9140a2ce35bd1dd470e02a/LICENSE.md",
+    "quote": "Core track (the 13 generated families under tasks/: their items, task cards and README files) and the documentation of the benchmark: Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "scope": "Published numerical observations in report.md, expressly documented as the benchmark report. Only original evaluations; copied hosted Jev reranking results excluded. This approval does not extend to upstream reference input datasets or a different release.",
+    "attribution": "DecisionPivot, StartLux Labs, 2026. CC BY 4.0. Pinned v1.1 report 3e3854f18f7aa27c9f9140a2ce35bd1dd470e02a. Selected original competitor-run primary measurements; core percentages converted to fractions; printed precision retained. No endorsement. Reference inputs retain upstream licences and are not copied.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "etsabary-decision-benchmarks-20261030",
+    "name": "Etsabary · decision benchmarks",
+    "kind": "community",
+    "match": [
+      "github.com/etsabary/system-1-decision-benchmark/blob/5d7770b94824d273694be55a7d11da2666a15c50/README.md",
+      "github.com/etsabary/visual-decision-benchmark/blob/851577b3bef1994428dc1109ba67e5d821b1232a/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/etsabary-decision-MIT.txt",
+    "terms_url": "https://github.com/etsabary/system-1-decision-benchmark/blob/5d7770b94824d273694be55a7d11da2666a15c50/LICENSE",
+    "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction",
+    "scope": "Only original numerical results published in the two exact repository README documents, covered as associated documentation by each repository MIT licence. Separate CSV exports, input material and the live websites are not approved by this entry. Both tracks are one evaluator.",
+    "attribution": "Copyright (c) 2026 etsabary. System 1 Decision Benchmark and Visual Decision Benchmark, pinned README documents under MIT. Selected complete native decision runs; accuracy derived from printed integer correct/total counts. No input question banks, images, costs or live-site ratings copied. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "ollaya-oct2026-original-runs",
+    "name": "Ollaya · original runs",
+    "kind": "community",
+    "match": [
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-19-latency-rtx5090-cuda.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-19-public-benchmark-rtx5090-cuda.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-19-typed-decisions-rtx5090-cuda.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-cob560.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-latency-rtx5090-cuda-d3.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-public-benchmark-rtx5090-cuda-cob560.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-public-benchmark-rtx5090-cuda-d3.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-typed-decisions-rtx5090-cuda-cob560.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-24-typed-decisions-rtx5090-cuda-d3.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-cob561.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-latency-rtx5090-cuda-r0180.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-public-benchmark-rtx5090-cuda-cob561.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-public-benchmark-rtx5090-cuda-r0180.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-typed-decisions-rtx5090-cuda-cob561.json",
+      "github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-25-typed-decisions-rtx5090-cuda-r0180.json"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "/licenses/ollaya-Apache-2.0.txt",
+    "terms_url": "https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/LICENSE",
+    "quote": "Apache-2.0. Each model keeps its own license",
+    "scope": "Original run JSON files published in results/runs of this pinned Apache-2.0 repository; results/README explicitly identifies them as the measurements behind the public benchmark. The repository licence excludes no results. Model licences remain separate. Only the exact reviewed run files are approved, not model weights, upstream task datasets, parity-docs copied comparisons or live website values.",
+    "attribution": "Copyright 2026 Ollaya contributors, maintained by Mert Cobanov. Original October 2026 benchmark run files, Apache-2.0. Selected published accuracies and measured memory; no input question data or model weights redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "leanmcp-jevbench-original-20261015",
+    "name": "LeanMCP · JevBench",
+    "kind": "community",
+    "match": [
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_jev-1.13.0-20260926T133639.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-liquid-d1-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-cloudflare-clef-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-cloudflare-clef-flash-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-cloudflare-clef-omni-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-perplexity-pplx-decider-v1.1-27b-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-openai-gpt-6-luna-decisions-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-microsoft-microsoft-decision-1-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-upstage-solar-decide-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-upstage-solar-decide-flash-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-nace-ai-drex-v1.5-full.md",
+      "github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/jev_bench/reports/RESULTS_or-inception-mercury-decide-full.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/leanmcp-jevbench-MIT.txt",
+    "terms_url": "https://github.com/Leanmcp/jevbench/blob/6954ce9d98d81210d043ca0e94bc72bff6443140/LICENSE",
+    "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files",
+    "scope": "Only original evaluation measurements in the exact pinned Markdown result report documents, covered by the repository MIT grant for associated documentation. No approval of the external question datasets, live site, raw inputs or copied comparisons. All reports count as one evaluator.",
+    "attribution": "Copyright (c) 2026 Leanmcp. Original JevBench result report documents under MIT. Selected measurements and documented arithmetic conversions only. No input datasets, model weights or third-party comparison numbers redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "cym-system1bench-20260929",
+    "name": "CYMCharming · system1bench",
+    "kind": "community",
+    "match": [
+      "github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/cym-system1bench-MIT.txt",
+    "terms_url": "https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/NOTICE.md",
+    "quote": "The MIT license applies to this project's original code and documentation.",
+    "scope": "Only original numerical measurements in the exact pinned docs/JEV_RESULTS.en.md report, covered by the explicit original-documentation grant in NOTICE.md. No external input data, model weights, raw responses or copied third-party scores licensed by this entry.",
+    "attribution": "Copyright (c) 2026 CYMCharming. Original system1bench documentation and independent inference measurements, MIT. Selected scores only; no external task text or model weights redistributed. Upstream dataset and model terms remain separate. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "paper-2610.29961v1",
+    "name": "Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.29961v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.29961v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.29961v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original measurements by the paper authors only: Table 2, four System One rows, abstain accuracy only. Explicit CC BY 4.0 link verified on arXiv abstract page; excludes quoted prior-work results, input corpora and weights.",
+    "attribution": "M. Mikail Demir (2026). Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority. arXiv:2610.29961v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable, source precision preserved, model identities and task scopes clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.22066v2",
+    "name": "Prism-1: Position- and Rival-Independent Scoring for System One Models",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.22066v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.22066v2-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.22066v2",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original measurements by the paper authors only: Table 1, Jev and Mercury original-order accuracy; Table 3 sizes; Appendix C.1 settings. Explicit CC BY 4.0 link verified on arXiv abstract page; excludes quoted prior-work results, input corpora and weights.",
+    "attribution": "Yao Long Teng, Jianguo Huang, Jiayi Cai, Yanchen Deng, Bo An (2026). Prism-1: Position- and Rival-Independent Scoring for System One Models. arXiv:2610.22066v2. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable, source precision preserved, model identities and task scopes clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.26325v1",
+    "name": "Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.26325v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.26325v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.26325v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original measurements by the paper authors only: Table 8 no-shift macro-F1; Tables 2 and 3 protocol; public pinned model configs. Explicit CC BY 4.0 link verified on arXiv abstract page; excludes quoted prior-work results, input corpora and weights.",
+    "attribution": "Abdul Rahman Iqbal, Muhammad Fawad Nasim, Amir Saleem (2026). Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors. arXiv:2610.26325v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable, source precision preserved, model identities and task scopes clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.37229v1",
+    "name": "Decision Models as Judges for Hallucination Detection",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.37229v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.37229v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.37229v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original author measurements only: Table 2 primary single-judge balanced accuracy for five decision models across five hallucination types. Explicit CC BY 4.0 licence verified; excludes prior-work results, source corpora and model weights.",
+    "attribution": "Haozheng Liu, Zhaoqian Xue, Zhongyin Wang, Junting Mu, Zihui Ma, Shuya Feng and Lingyao Li (2026). Decision Models as Judges for Hallucination Detection. arXiv:2610.37229v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable; source precision preserved; model identities and task scope clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.36915v1",
+    "name": "Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.36915v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.36915v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.36915v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original author measurements only: Table 2 flat-question accuracy for ten existing decision models. Explicit CC BY 4.0 licence verified; excludes prior-work results, source corpora and model weights.",
+    "attribution": "Parv Khatri, Harshul Jain, Mehak Kapoor and Tanya Sah (2026). Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG. arXiv:2610.36915v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable; source precision preserved; model identities and task scope clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.35721v1",
+    "name": "Can JEV Support Clinical Trial Criteria Assessment?",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.35721v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.35721v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.35721v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original author measurements only: Table 5 JEV Batch macro-F1 on three clinical datasets. Explicit CC BY 4.0 licence verified; excludes prior-work results, source corpora and model weights.",
+    "attribution": "Mengxian He, Ziyue Gao, Chun Li, Shunyi Zhang, Hao Wei, Minqing Zhang and Wu Yuan (2026). Can JEV Support Clinical Trial Criteria Assessment?. arXiv:2610.35721v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable; source precision preserved; model identities and task scope clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.32955v1",
+    "name": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.32955v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.32955v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.32955v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Original author measurements only: Tables 2 and 3, hosted Nimble v4-max macro-F1 on five inbox fields. Explicit CC BY 4.0 licence verified; excludes prior-work results, source corpora and model weights.",
+    "attribution": "Federico Lucca (2026). Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox. arXiv:2610.32955v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original numerical cells transcribed into JSON; percentages converted to fractions where applicable; source precision preserved; model identities and task scope clarified. No input datasets, responses or figures redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "privacy-policy-original-20261002",
+    "name": "FloorIsAwake · Privacy Decision Benchmark",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/FloorIsAwake/privacy-decision-benchmark-local/blob/fe8ae0ba7aff272d8235cf69d48fb35fdd610f1c/panel_scores.jsonl"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/privacy-policy-MIT.txt",
+    "terms_url": "https://huggingface.co/datasets/FloorIsAwake/privacy-decision-benchmark-local/blob/fe8ae0ba7aff272d8235cf69d48fb35fdd610f1c/README.md",
+    "quote": "This dataset is licensed under the MIT License. Model weights and third-party implementation files are not included; their licenses remain separate.",
+    "scope": "Only original panel_scores.jsonl values at the pinned release; original raw-action acceptable-set accuracy for two no_samples panels. Licence explicitly covers the dataset. Excludes hosted outputs, EXAONE, external weights/code, repeats and guard-adjusted figures.",
+    "attribution": "Copyright (c) 2026 FloorIsAwake. Privacy Decision Benchmark — Local Model Responses, MIT. Selected original no_samples raw-action accuracy only, checked against saved predictions. Compact/guarded/repeat outcomes excluded; model identities clarified. No input fixtures, model code or weights redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2610.31422v1",
+    "name": "Vietnamese decision model transfer study",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.31422v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/paper-2610.31422v1-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2610.31422v1",
+    "quote": "Creative Commons Attribution 4.0 International",
+    "scope": "Only original JEV macro-F1 cells from Table 1, clean Vietnamese input with English labels. Explicit paper licence; excludes prior-work cells and underlying corpora.",
+    "attribution": "Phat Huu Ha, Nguyen Xuan Phuc, Nong Nhut Quy, Trinh Tran Tran, Nguyen Minh Triet and Dang Van Thin (2026). How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification. arXiv:2610.31422v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Changes: selected original Jev macro-F1 cells transcribed as fractions; model identity and protocol clarified. No datasets, figures or other systems redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "structured-state-probe-20260925",
+    "name": "Structured state reasoning probe",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/blazeofchi/system-one-eval/blob/54c192eb13b4c69b7ef7847018d9d8a2ad3014fd/score_summary.json"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/structured-state-probe-CC-BY-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/blazeofchi/system-one-eval/blob/54c192eb13b4c69b7ef7847018d9d8a2ad3014fd/README.md",
+    "quote": "The authored dataset and accompanying benchmark files are published under CC BY 4.0.",
+    "scope": "Original whole-task accuracy from the pinned score_summary.json. Two identity-verified native decision models only; not generative Luna or unverified local versions. Explicit dataset and accompanying-file grant.",
+    "attribution": "Blazeofchi (2026), System One Eval: Structured State Reasoning Probe v0.1/V3. CC BY 4.0 https://creativecommons.org/licenses/by/4.0/. Selected original results verified against prediction files; task counts converted to fractions and identity/protocol clarified. No source questions or model files redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "decisionmodelhub-support-20261009",
+    "name": "DecisionModelHub · support benchmarks",
+    "kind": "community",
+    "match": [
+      "decisionmodelhub.com/benchmarks/support-routing",
+      "decisionmodelhub.com/benchmarks/support-urgency"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/decisionmodelhub-CC-BY-4.0.txt",
+    "terms_url": "https://decisionmodelhub.com/methodology",
+    "quote": "The results and the run manifest, with the dataset hash and model revisions, can be downloaded under CC BY 4.0.",
+    "scope": "Only numerical observations in the two frozen support v1 result tables, cross-referenced to their downloadable result manifests. Methodology explicitly licenses results, not just source cases. No blanket licence asserted for other site content.",
+    "attribution": "DecisionModelHub (2026), Support routing v1 and Support urgency v1, frozen 9 October 2026. CC BY 4.0 https://creativecommons.org/licenses/by/4.0/. Published correct/attempted counts selected and converted to fractions; task and identity caveats clarified. No ticket text, provider responses, figures or costs redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "decisionmodelhub.com"
+  },
+  {
+    "id": "priorbench-jev-20260920",
+    "name": "PriorBench",
+    "kind": "dataset",
+    "match": [
+      "github.com/priorbench/jev/blob/92e0a55586177df869b919b1ec92bb86de2b7329/paper/REPORT.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/priorbench-jev-MIT.txt",
+    "terms_url": "https://github.com/priorbench/jev/blob/92e0a55586177df869b919b1ec92bb86de2b7329/LICENSE",
+    "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files",
+    "scope": "Original measurement in repository report, covered by MIT associated-documentation grant. Checked against the original reference-run JSONL. Excludes quoted third-party results and synthetic task text.",
+    "attribution": "1j6c (2026), PriorBench — Jev. MIT. Original report measurement checked against published raw answers, converted to fraction, and protocol limits clarified. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "morrenhale-decision-20260927",
+    "name": "Morrenhale · Decision benchmark",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/morrenhale/decision-benchmark-jev-laya-julia/blob/d68bd4b41099ea3ab73ad5b9182072428fae333a/predictions/jev.jsonl"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/morrenhale-decision-CC-BY-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/morrenhale/decision-benchmark-jev-laya-julia/blob/d68bd4b41099ea3ab73ad5b9182072428fae333a/README.md",
+    "quote": "Prediction and manifest files are CC-BY-4.0.",
+    "scope": "Five accuracy measurements independently recomputed from the explicitly licensed predictions/jev.jsonl. Does not relicense original dataset texts or use the grant as a blanket licence for third-party material.",
+    "attribution": "Morren (morrenhale), Decision-Model Benchmark 2026-09-27: jev vs laya vs Julia-1-ONNX. CC BY 4.0 https://creativecommons.org/licenses/by/4.0/. Accuracy independently derived from the explicitly licensed prediction file; original dataset text not redistributed. Identity and protocol limits added. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "anthus-hard-decisions-20261021",
+    "name": "Anthus · Hard-Decisions",
+    "kind": "dataset",
+    "match": [
+      "hard-decisions.anth.us/data/results.json"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/anthus-hard-decisions-MIT.txt",
+    "terms_url": "https://hard-decisions.anth.us/about/",
+    "quote": "Hard-Decisions is MIT-licensed and made by Anthus AI Solutions.",
+    "scope": "Original exported measurements under the results site’s explicit MIT declaration. Does not rely on the ProofWriter input licence as a grant for results; no input text or third-party model material copied.",
+    "attribution": "Anthus AI Solutions, Hard-Decisions, public snapshot generated 2026-10-21T17:02:03.196Z. Site explicitly declares Hard-Decisions MIT-licensed. Selected original overall results only; counts and fractions reconciled, tested checkpoint identity checked. ProofWriter: Tafjord, Dalvi and Clark (2021), AI2, CC BY 4.0; no task text redistributed. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "hard-decisions.anth.us"
+  },
+  {
+    "id": "jevresearch-original-20261003",
+    "name": "JevResearch",
+    "kind": "dataset",
+    "match": [
+      "github.com/JevResearch/Jev-Research/blob/0f1716a209a87b252bca2f55d40c764d3d12af3e/runs_benchmark/bench-mmlu_full-9013bf99bfb6/derived/score.json",
+      "github.com/JevResearch/Jev-Research/blob/0f1716a209a87b252bca2f55d40c764d3d12af3e/runs_benchmark_ext2/bench-gpqa_diamond-8c4bbf2988d4/derived/score.json",
+      "github.com/JevResearch/Jev-Research/blob/0f1716a209a87b252bca2f55d40c764d3d12af3e/runs_benchmark_ext2/bench-hle_text_mc-8c4bbf2988d4/derived/score.json"
+    ],
+    "exact": true,
+    "license": "Unlicense",
+    "license_url": "/licenses/jev-research-Unlicense.txt",
+    "terms_url": "https://github.com/JevResearch/Jev-Research/blob/0f1716a209a87b252bca2f55d40c764d3d12af3e/README.md",
+    "quote": "Everything in this repository - code, report text, figures, and derived data tables - is dedicated to the public domain under the Unlicense (see `LICENSE`).",
+    "scope": "Only original Jev derived/score.json headline aggregates in three pinned direct-answer stages. Third-party item texts and externally quoted leaderboard figures excluded. Current full-requested-denominator policy, no archived superseded scoring.",
+    "attribution": "JevResearch (2026), independent unaffiliated evaluation of TypeSafe Jev. Public-domain derived measurement aggregates; protocol caveats retained in licenses/jev-research-NOTICE.txt. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "takbro-local-jev-20261016",
+    "name": "tak-bro · Local Jev Bench",
+    "kind": "dataset",
+    "match": [
+      "github.com/tak-bro/local-jev-bench/blob/8b2e133e3d4361e839a4b417b66db2d4dccb9c75/bench/runs/"
+    ],
+    "license": "MIT",
+    "license_url": "/licenses/takbro-local-jev-MIT.txt",
+    "terms_url": "https://github.com/tak-bro/local-jev-bench/blob/8b2e133e3d4361e839a4b417b66db2d4dccb9c75/LICENSE",
+    "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files",
+    "scope": "Original benchmark report documentation in the MIT repository. Input datasets and benchmarked models retain their licences. Only original numeric results are redistributed; no input text.",
+    "attribution": "tak-bro, local-jev-bench, commit 8b2e133e3d4361e839a4b417b66db2d4dccb9c75, original runs October 14–16, 2026. Selected checkpoint-matched accuracy counts converted to fractions; no endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "chao-ma-injection-20260922",
+    "name": "Chao Ma · independent injection study",
+    "kind": "dataset",
+    "match": [
+      "github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "/licenses/chao-ma-jev-eval-MIT.txt",
+    "terms_url": "https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/LICENSE",
+    "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files",
+    "scope": "Original authored report and aggregate verdict in MIT repository, second study only. No upstream task text or output text redistributed; root study with incomplete attempted-run history is excluded.",
+    "attribution": "Chao Ma, jev-baselines-eval, confirmatory injection B1, 2026-09-22; commit 3b828cb68992c00835b3f126a3d13534da875277. Correct-count fractions and full-precision E1 AUROC extracted; no endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
   }
 ]

@@ -1,0 +1,4 @@
+Copyright (c) 2026 etsabary. System 1 Decision Benchmark and Visual Decision Benchmark, pinned README documents under MIT. Selected complete native decision runs; accuracy derived from printed integer correct/total counts. No input question banks, images, costs or live-site ratings copied. No endorsement.
+https://github.com/etsabary/system-1-decision-benchmark/blob/5d7770b94824d273694be55a7d11da2666a15c50/README.md
+https://github.com/etsabary/visual-decision-benchmark/blob/851577b3bef1994428dc1109ba67e5d821b1232a/README.md
+Both source repositories retain their original MIT copyright and permission notice.
