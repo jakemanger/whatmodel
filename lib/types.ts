@@ -45,6 +45,8 @@ export type Model = {
   availability_source?: string;
   source?: string;
   model_repo?: string;
+  // Verified files or implementation, without claiming a tested local runtime or RAM requirement.
+  access?: { kind: "weights" | "code" | "gated"; url: string; source: string; checked: string; revision?: string; note: string };
   identity_note?: string;
   open_weights: boolean;
   license?: string;
@@ -69,7 +71,7 @@ export type Result = {
   bench: string;
   score: number;
   source: string;
-  by: "independent" | "lab";
+  by: "independent" | "lab" | "submitted";
   date?: string;
   note?: string;
   source_id?: string; // the data/sources.json entry the source URL falls under
@@ -84,7 +86,7 @@ export type Result = {
 // Linear distances retain their published units with direction "lower".
 export type Benchmark = { id: string; name: string; kind: "acc" | "elo" | "err" | "linear"; chance?: number; url: string; category?: Category; metric?: string; raw_scale_min?: number; raw_scale_max?: number; latent_scale?: number; direction?: "higher" | "lower"; unit?: string };
 
-export type Scored = { id: string; g: number; pm: number; n: number; lab?: number }; // lab: counted results the model's own maker reported
+export type Scored = { id: string; g: number; pm: number; n: number; lab?: number }; // lab: legacy count of results without verified independent execution
 
 export type SpeedUnit = "tok/s" | "s/image" | "s/video" | "x-realtime" | "ms/decision";
 

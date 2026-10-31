@@ -55,6 +55,7 @@ export function whereLabel(r: Row) {
   if (r.where === "research") return "never released";
   if (r.where === "preview") return "limited preview";
   if (r.where === "app") return `${r.app ?? "app"} only`;
+  if (r.where === "setup") return r.access_kind === "gated" ? "request access" : r.access_kind === "code" ? "source code" : "model files";
   const why = [r.need_gb !== null && `needs ${r.need_gb}GB`, r.over_budget && (r.price === null ? "price unknown" : price(r.price, r.category))].filter(Boolean);
   return `✗ ${why.join(" or ")}`;
 }
@@ -173,7 +174,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   out.push('');
   say(`Score ± uncertainty · API $/${CATEGORIES[o.cat].priceUnit} · RAM estimated`, '2');
   if (shown.some((r) => r.thin)) say('* Few benchmark results; ranking is uncertain.', '2');
-  if (shown.some((r) => r.maker_only)) say("† Only the maker's own results.", '2');
+  if (shown.some((r) => r.maker_only)) say("† No independently run results verified.", '2');
   if (shown.some((r) => r.score === null)) say('— not yet calibrated. See ?help=1 for comparison sets.', '2');
   if (width >= 80 && shown.some((r) => r.speed && r.speed.how !== 'measured')) say('~speed: measured on other machines (?format=json says which)', '2');
   if (!specs && max === null) say(`Your machine: curl "${host}${path}?ram=32&gpu=apple"`);

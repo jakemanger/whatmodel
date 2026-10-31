@@ -126,7 +126,7 @@ export function sourcesForFit(id: string, fitted: Fit): SourceSummary[] {
         tests: [],
       };
       s.share += p.share / p.cell.results.length;
-      s.lab &&= r.by === "lab";
+      s.lab &&= r.by !== "independent";
       const test = benchmarkById.get(r.bench)?.name ?? r.bench;
       if (!s.tests.includes(test)) s.tests.push(test);
       by.set(h, s);

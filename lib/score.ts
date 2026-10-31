@@ -252,7 +252,8 @@ export function fit(cells: Cell[], iters = 500): Fit {
   }
 
   const lab = models.map(() => 0);
-  cells.forEach((c, i) => { if (c.results.every((r) => r.by === "lab")) lab[obs[i].m]++; });
+  // Keep unverified submissions conservative; they are not evidence of an independent rerun.
+  cells.forEach((c, i) => { if (c.results.every((r) => r.by !== "independent")) lab[obs[i].m]++; });
   const scores = new Map<string, Scored>(
     models.map((id, m) => [
       id,

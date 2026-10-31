@@ -137,7 +137,7 @@ export function boardMarkdown(v: BoardView, intro = "", head = ""): string {
 
   // Comparison-only models with a score are in the table above; the rest are listed below.
   const { unscored, withoutResults } = v.outside;
-  out.push(`\\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models listed here · [sources and licences](${rel(from, files.method)}#sources)`);
+  out.push(`\\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models listed here · [sources and licences](${rel(from, files.method)}#sources)`);
   if (unscored.length || withoutResults.length) {
     const parts = [
       unscored.length && `Raw results, insufficient overlap for an overall score: ${modelLinks(from, unscored)}`,
@@ -185,7 +185,7 @@ const WHY: Record<TestRow["why"][number], string> = { sharp: "sharp", blunt: "bl
 const testTable = (tests: TestRow[]) => pre(
   [{ head: "test", max: 34 }, { head: "result", right: true }, { head: "vs the others in its run" }, { head: "difficulty", max: 24 }, { head: "counts", right: true }, { head: "why", max: 40 }],
   tests.map((t) => [
-    { text: `${benchName(t.bench)}${t.result.by === "lab" ? " (lab)" : ""}`, href: t.result.source }, resultLabel(t.result),
+    { text: `${benchName(t.bench)}${t.result.by === "lab" ? " (maker)" : t.result.by === "submitted" ? " (submitted)" : ""}`, href: t.result.source }, resultLabel(t.result),
     t.tested > 1 ? `${sparkText(t)} beats ${t.beaten}/${t.tested - 1}` : "no other model yet",
     [t.hard, t.typical && `avg ${t.typical}`].filter(Boolean).join(" · "),
     t.share !== null ? sharePct(t.share) : "—",
@@ -238,8 +238,9 @@ function runMarkdown(m: Model, cat: Category): string[] {
     const others = sec.versions.filter((_, i) => i !== sec.preferred);
     if (others.length) out.push(`Other versions: ${others.map((x) => `${versionLabel(x.v)} (${needsLabel(x.v)}) \`${x.steps.find((st) => st.cmd)?.cmd}\``).join(" · ")}`);
   });
-  if (!m.api && !guide.length) out.push("No verified API or local download yet.");
-  if (m.model_repo) out.push(`Official weights and documentation: ${repoLabel(m.model_repo)}`);
+  if (!m.api && !guide.length && !m.access) out.push("No verified API or local download yet.");
+  if (m.access) out.push(`[${m.access.kind === "gated" ? "Request access" : m.access.kind === "code" ? "Implementation and setup" : "Download model files"}](${m.access.url}) · ${text(m.access.note)} [Evidence](${m.access.source}); checked ${m.access.checked}.`);
+  if (m.model_repo) out.push(`Model repository and documentation: ${repoLabel(m.model_repo)}`);
   return out;
 }
 
@@ -258,7 +259,7 @@ export function modelMarkdown(v: ModelView): string {
     if (m.source) out.push(`[Catalogue source](${m.source})`);
     out.push(v.raw.length ? `Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.` : `No reviewed benchmark results yet. This catalogue entry has no score or rank.`);
     if (v.raw.length) out.push(pre([{ head: "test", max: 34 }, { head: "result", right: true }, { head: "reported by" }, { head: "source", max: 30 }],
-      v.raw.map((r) => [benchName(r.bench), resultLabel(r), (r.by === "lab" ? "lab" : "independent") + (r.invalid ? " · failed run, not counted" : ""), { text: shortName(sourceName(r.source)), href: r.source }])));
+      v.raw.map((r) => [benchName(r.bench), resultLabel(r), (r.by === "lab" ? "maker" : r.by === "submitted" ? "submitted" : "independent") + (r.invalid ? " · failed run, not counted" : ""), { text: shortName(sourceName(r.source)), href: r.source }])));
     out.push(licences(from, v.raw.map((r) => r.source)));
     out.push(...runMarkdown(m, cat));
     out.push(`[Sources and licences](${rel(from, files.method)}#sources) · [raw data](${rel(from, "data/results.json")}) · [interactive version](${SITE}/model/${m.id})`);
@@ -271,7 +272,7 @@ export function modelMarkdown(v: ModelView): string {
     m.params_b && `${m.params_b}B params${m.active_b && m.active_b !== m.params_b ? ` (${m.active_b}B active)` : ""}`,
     m.license ? text(m.license) : !m.open_weights && "closed weights"].filter(Boolean);
   out.push(facts.join(" · "));
-  out.push(`**score ${s.g.toFixed(1)}** ±${s.pm.toFixed(1)} · ${v.place ? `#${v.place} of ${v.total}` : "comparison only: no current run option verified"} · from ${pl(s.n, "benchmark result")} across ${pl(v.sources.length, "source")}${s.n < 3 ? " · \\* thinly tested, treat the rank as provisional" : ""}${s.n > 0 && s.lab === s.n ? " · † every result so far was reported by its maker" : ""}`);
+  out.push(`**score ${s.g.toFixed(1)}** ±${s.pm.toFixed(1)} · ${v.place ? `#${v.place} of ${v.total}` : "comparison only: no current run option verified"} · from ${pl(s.n, "benchmark result")} across ${pl(v.sources.length, "source")}${s.n < 3 ? " · \\* thinly tested, treat the rank as provisional" : ""}${s.n > 0 && s.lab === s.n ? " · † no independently run results verified" : ""}`);
   if (v.set) out.push(`Score within the [${text(v.set.label)}](${SITE}${CATEGORIES[cat].path}?set=${encodeURIComponent(v.set.id)}&score=set) comparison set only.`);
 
   const st = strengths(m.id);
@@ -280,7 +281,7 @@ export function modelMarkdown(v: ModelView): string {
   out.push(`## How the score was worked out`);
   out.push(`Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](${rel(from, files.method)})`);
   const rows: Cell[][] = v.groups.map((grp) => [
-    { text: shortName(sourceName(grp.rows[0].r.source)) + (grp.rows.every((x) => x.r.by === "lab") ? " (lab)" : ""), href: grp.rows[0].r.source, anchor: grp.id },
+    { text: shortName(sourceName(grp.rows[0].r.source)) + (grp.rows.every((x) => x.r.by !== "independent") ? " (submitted / maker-reported)" : ""), href: grp.rows[0].r.source, anchor: grp.id },
     String(grp.rows.length), bar(grp.share),
   ]);
   rows.push(["prior: pull toward the middle", "", bar(e.prior.share)]);

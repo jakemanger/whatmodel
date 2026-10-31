@@ -16,11 +16,11 @@ export const listedByDefault = (cat: Category, n: number | undefined) => cat !==
 // CUDA-only commands need an NVIDIA card (or one whose make we don't know).
 const isNvidia = (s: Specs) => (s.gpu === "card" || s.gpu === "unified") && (!s.hw || s.hw.kind === "nvidia");
 
-export type Where = "local" | "local-slow" | "api" | "preview" | "app" | "none" | "retired" | "research";
+export type Where = "local" | "local-slow" | "api" | "preview" | "app" | "setup" | "none" | "retired" | "research";
 
 // Limited previews belong on the current leaderboard even before a public run route exists. Research models
 // that were never released are listed with retired ones.
-export const catalogueOnly = (m: Model) => !m.api && !m.local?.variants.length && (!m.availability || m.availability === "research");
+export const catalogueOnly = (m: Model) => !m.api && !m.local?.variants.length && !m.access && (!m.availability || m.availability === "research");
 
 // measured: on this exact hardware (or an API's measured speed). scaled: measured on other
 // hardware of the same kind, scaled by memory bandwidth. estimated: from the calibrated formula.
@@ -39,7 +39,8 @@ export type Row = {
   n: number;
   evidence?: "none" | "raw" | "comparison";
   thin: boolean; // too few results to trust the rank much
-  maker_only: boolean; // every counted result was reported by the model's own maker
+  maker_only: boolean; // legacy field: no counted result has verified independent provenance
+  access_kind?: NonNullable<Model["access"]>["kind"];
   where: Where;
   app?: string | null; // the app an app-only model is offered in
   cmd: string | null; // the one thing to paste
@@ -150,6 +151,11 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     else if (!mem && smallest) [run, cmd] = ["local", smallest.cmd]; // no specs: show the model as benchmarked
     // Nothing to run: listed for comparison, but never as fitting a budget or a machine.
     if (gone) run = max !== null || (catalogueOnly(m) && specs) ? "none" : m.availability ?? "retired";
+    // Published files/code are useful, but cannot satisfy a hardware or price filter without a run route.
+    if (gone && m.access) {
+      run = specs || max !== null ? "none" : "setup";
+      if (run === "setup") cmd = m.access.url;
+    }
     // An app-only model links to where it's offered.
     if (run === "app") cmd = m.availability_source ?? null;
 
@@ -175,6 +181,7 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
       thin: !!s && s.n < thinBelow,
       maker_only: !!s && s.n > 0 && s.lab === s.n,
       where: run,
+      ...(m.access ? { access_kind: m.access.kind } : {}),
       ...(run === "app" ? { app: m.app ?? null } : {}),
       cmd,
       quant: q?.label ?? chosen?.quant ?? null,

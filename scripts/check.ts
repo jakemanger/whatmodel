@@ -34,6 +34,10 @@ for (const m of models) {
   if (!/^[a-z0-9][a-z0-9.-]*$/.test(m.id)) errors.push(`model id not kebab-case: ${m.id}`);
   if (ids.has(m.id)) errors.push(`duplicate model: ${m.id}`);
   ids.add(m.id);
+  if (m.access && (!["weights", "code", "gated"].includes(m.access.kind) ||
+      !/^https:\/\//.test(m.access.url) || !/^https:\/\//.test(m.access.source) ||
+      !/^\d{4}-\d\d-\d\d$/.test(m.access.checked) || !m.access.note.trim()))
+    errors.push(`${m.id}: published access needs a kind, HTTPS links, review date and scope note`);
   if (catalogueOnly(m)) retired.push(m.id);
   if (m.availability !== undefined && (!["preview", "app", "research"].includes(m.availability) || !/^https?:\/\//.test(m.availability_source ?? "")))
     errors.push(`${m.id}: ${m.availability} availability needs a reviewed announcement URL`);
@@ -79,7 +83,7 @@ for (const r of results) {
   if (!ids.has(r.model)) errors.push(`${where}: unknown model`);
   if (!b) errors.push(`${where}: unknown benchmark`);
   if (!/^https?:\/\//.test(r.source ?? "")) errors.push(`${where}: missing source url`);
-  if (r.by !== "independent" && r.by !== "lab") errors.push(`${where}: by must be independent|lab`);
+  if (!["independent", "lab", "submitted"].includes(r.by)) errors.push(`${where}: by must be independent|lab|submitted`);
   if (b?.kind === "acc" && !(r.score >= 0 && r.score <= 1)) errors.push(`${where}: acc score must be 0-1, got ${r.score}`);
   if (r.invalid !== undefined && !(typeof r.invalid === "string" && r.invalid.length >= 10)) errors.push(`${where}: invalid must explain why the run failed`);
   if (b?.kind === "elo" && !(r.score > 500 && r.score < 3000)) errors.push(`${where}: implausible elo ${r.score}`);

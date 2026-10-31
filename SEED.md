@@ -46,11 +46,13 @@ runs on the user's hardware or budget, with a one-line command to run each.
 
 ### Result (one benchmark number)
 { "model": "<id>", "bench": "<benchmark id below>", "score": 0.873, "source": "https://exact page",
-  "by": "independent" | "lab", "date": "YYYY-MM-DD", "note": "optional: setting, subset, etc." }
+  "by": "independent" | "lab" | "submitted", "date": "YYYY-MM-DD", "note": "optional: setting, subset, etc." }
 - Accuracy-type scores are fractions 0-1 (0.873, not 87.3). Elo-type scores are the rating number.
   Error rates (WER) are fractions 0-1 (0.052 for 5.2%).
 - by: "independent" if a third party ran it (e.g. the LMArena CC BY dataset, open-licensed leaderboards,
-  papers not by the model's makers); "lab" if the model's makers report it.
+  papers not by the model's makers); "lab" if the model's makers report it; "submitted" for reviewed
+  submissions whose executor has not been established. Rescoring submitted answers does not establish
+  an independent inference run. Both lab and submitted results retain the non-independent warning.
 - Record both independent and lab numbers when both are original evaluations. One verified result is
   acceptable; seek broader overlapping evidence, but never invent results or substitute another checkpoint.
   Mark evaluator, protocol, source version and exact model settings. Copied comparison-table rows need
