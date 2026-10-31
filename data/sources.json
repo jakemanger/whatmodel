@@ -19251,7 +19251,7 @@
   },
   {
     "id": "decision-index-public-041",
-    "name": "Decision Index 0.4.1 public suite",
+    "name": "Decision Index 0.4.1",
     "kind": "dataset",
     "match": [
       "huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet",
@@ -19262,7 +19262,7 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "terms_url": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md",
     "quote": "The dataset README declares 'license: cc-by-4.0' and says 'This repo mirrors the board' and '`benchmarks` the per-benchmark public scores'. CC BY 4.0 section 2(a)(1) permits reproduction, sharing and production of adapted material for any purpose, subject to attribution.",
-    "scope": "Pinned publisher text-board numerical dataset: all 247 engines with 42 per-benchmark rows, plus model metadata including Jev 1.14 without its missing per-benchmark scores. No private content, aggregate indices, ranks or latency.",
+    "scope": "Pinned publisher text-board numerical dataset: public per-benchmark results and model metadata, plus the separately executed private same_skills_eq and new_domains_eq aggregates from leaderboard.parquet. Private suites are run by the maintainers; public submissions retain their own provenance. No private questions, Full score, public aggregate, ranks or latency.",
     "attribution": "Apolinário Passos / Decision Index contributors, Decision Index 0.4.1, generated 2026-10-29; CC BY 4.0. All public per-benchmark values and exact tested engine identities retained; whatmodel fits its own category score. No endorsement.",
     "checked": "2026-10-31",
     "verdict": "allowed",
@@ -19288,7 +19288,7 @@
   },
   {
     "id": "decision-index-vision-04",
-    "name": "Decision Index Vision 0.4 public suite",
+    "name": "Decision Index Vision 0.4",
     "kind": "dataset",
     "match": [
       "huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet",
@@ -19299,7 +19299,7 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "terms_url": "https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/README.md",
     "quote": "Dataset card declares license: cc-by-4.0 and identifies benchmarks as the per-benchmark public scores. CC BY 4.0 section 2(a)(1) permits sharing and adaptation for any purpose with attribution.",
-    "scope": "Pinned publisher numerical export only; all 11 public benchmark point scores, engine identities and image-budget caveats. No private data, aggregate indices, speed or base-model comparisons.",
+    "scope": "Pinned publisher numerical export: all 11 public benchmark point scores, engine identities and image-budget caveats, plus the separately executed private_score aggregate from leaderboard.parquet. Private execution is established by the maintainer protocol. No private questions, Full score, public aggregate, speed or base-model comparisons.",
     "attribution": "Apolinário Passos / Decision Index contributors, 2026-10-29; CC BY 4.0. Original chance-corrected points retained, including negatives. No endorsement.",
     "checked": "2026-10-31",
     "verdict": "allowed",
@@ -19508,5 +19508,42 @@
     "checked": "2026-10-31",
     "verdict": "allowed",
     "icon": "huggingface.co"
+  },
+  {
+    "id": "decidebench-v1-20261031",
+    "name": "DecideBench (Cho Yin Yong)",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/choyiny/decidebench/blob/09c3577ba8c502e3db4b263daec263b93779a977/README.md"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/system-one-bench-CC-BY-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/choyiny/decidebench/blob/09c3577ba8c502e3db4b263daec263b93779a977/README.md",
+    "quote": "license: cc-by-4.0",
+    "scope": "Only original eight-family percentage results published directly in this pinned CC BY dataset card. GitHub metadata used for version/run identification only. No prices, latency, random baseline, pair accuracy or overlapping total imported.",
+    "attribution": "Cho Yin Yong (2026), DecideBench: Accuracy, Cost and Latency of Decision Models, v1.1. CC BY 4.0. Percentages converted to fractions; selected exact named releases. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "benchmarkheaven-own-decision-results",
+    "name": "Benchmark Heaven (own decision evaluations)",
+    "kind": "dataset",
+    "match": [
+      "benchmarkheaven.com/api/decision-results/jevbench/v1.6.1/json",
+      "benchmarkheaven.com/api/decision-results/imagejevbench/v0.3.0/json"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/system-one-bench-CC-BY-4.0.txt",
+    "terms_url": "https://benchmarkheaven.com/jev-models/data",
+    "quote": "Reuse of these aggregate exports is under CC BY 4.0; cite Benchmark Heaven, the exact release, access date and source hash.",
+    "scope": "Only the two named original decision-results exports: JevBench v1.6.1 and ImageJevBench v0.3.0 intelligence and calibration axes. Excludes all Artificial Analysis, third-party model tables, costs, speed, composite/capability, and future/live versions. Source hashes recorded per result.",
+    "attribution": "Benchmark Heaven, JevBench v1.6.1 (source SHA256 5cd8c1332226ea9c179883d2285c0d8b8cc593ae38f2645197364a7ddd9c83c1) and ImageJevBench v0.3.0 (90ec4137edf485c5f6927c14d22188a6cea26e3355f0fd0e93d68da251c5e5d8), accessed 2026-10-31, CC BY 4.0. Selected original axis points retained unchanged. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "benchmarkheaven.com"
   }
 ]

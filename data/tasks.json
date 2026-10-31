@@ -579,7 +579,9 @@
       "decision-index-041-when2call",
       "agentdecisionbench-l1-pooled",
       "agentdecisionbench-l2-shift",
-      "agentdecisionbench-l2-common"
+      "agentdecisionbench-l2-common",
+      "decidebench-v1-agent-routing",
+      "decidebench-v1-action-review"
     ]
   },
   {
@@ -601,7 +603,8 @@
       "system-one-ar-massive-scenario",
       "system-one-ar-miracl-pair",
       "system-one-ar-miracl-rerank",
-      "system-one-banking77"
+      "system-one-banking77",
+      "decidebench-v1-support-intent"
     ]
   },
   {
@@ -628,7 +631,10 @@
       "system-one-sst5",
       "system-one-xnli-ar",
       "system-one-xnli-en",
-      "system-one-xnli-fr"
+      "system-one-xnli-fr",
+      "decidebench-v1-claim-support",
+      "decidebench-v1-review-sentiment",
+      "decidebench-v1-content-moderation"
     ]
   },
   {
@@ -692,7 +698,10 @@
       "system-one-img-pets",
       "system-one-img-sst2",
       "system-one-img-vqa-yesno",
-      "system-one-img-refcoco"
+      "system-one-img-refcoco",
+      "decision-index-vision-04-private",
+      "benchmarkheaven-imagejevbench-v0-3-0-intelligence",
+      "benchmarkheaven-imagejevbench-v0-3-0-calibration"
     ]
   },
   {
@@ -729,7 +738,9 @@
       "decisionbench-v1-target-selection",
       "decisionbench-v1-triage",
       "decisionbench-v1-verification",
-      "system-one-typed-decisions"
+      "system-one-typed-decisions",
+      "decidebench-v1-returns-policy",
+      "decidebench-v1-ticket-triage"
     ]
   },
   {

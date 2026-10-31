@@ -1,0 +1,5083 @@
+{
+  "reviewed": "2026-10-31",
+  "baseline": {
+    "models": 343,
+    "results": 13065,
+    "models_with_independent_results": 52
+  },
+  "sources": [
+    {
+      "source": "Decision Index private suites",
+      "execution_evidence": "https://github.com/apolinario/decision-index/blob/25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d/README.md",
+      "results": [
+        "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
+        "https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/leaderboard.parquet"
+      ],
+      "limitation": "One evaluator; sealed inputs and per-task denominators unavailable. Two text suites plus one vision suite, not dozens of invented subtasks."
+    },
+    {
+      "source": "DecideBench",
+      "results": "https://huggingface.co/datasets/choyiny/decidebench/blob/09c3577ba8c502e3db4b263daec263b93779a977/README.md",
+      "execution_evidence": "https://github.com/choyiny/decidebench/tree/85e701ada5fde191833390c8bb8ab720067e3faa/results/v1/meta"
+    },
+    {
+      "source": "Benchmark Heaven",
+      "results": [
+        "https://benchmarkheaven.com/api/decision-results/jevbench/v1.6.1/json",
+        "https://benchmarkheaven.com/api/decision-results/imagejevbench/v0.3.0/json"
+      ],
+      "execution_evidence": "https://benchmarkheaven.com/jev-models/methodology",
+      "license_evidence": "https://benchmarkheaven.com/jev-models/data"
+    }
+  ],
+  "mappings": [
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-31b-gen1",
+      "field": "same_skills_eq",
+      "model": "decision-knowline-31b-gen1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "glide-v1.2",
+      "field": "same_skills_eq",
+      "model": "decision-glide-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-31b-v3",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-31b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "turion-jev-31b",
+      "field": "same_skills_eq",
+      "model": "decision-turion-jev-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-ultra",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-ultra",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jeffan-31b-1710",
+      "field": "same_skills_eq",
+      "model": "decision-jeffan-31b-1710",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "h2o-lightning-31b-v1.1",
+      "field": "same_skills_eq",
+      "model": "decision-h2o-lightning-31b-v1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "wemm-jev-27b",
+      "field": "same_skills_eq",
+      "model": "decision-wemm-jev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mammoth-1",
+      "field": "same_skills_eq",
+      "model": "decision-mammoth-1",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ainvest-decision-27b-v1.0",
+      "field": "same_skills_eq",
+      "model": "decision-ainvest-decision-27b-v1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "oenogarum",
+      "field": "same_skills_eq",
+      "model": "decision-oenogarum",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pplx-decider-v1.2",
+      "field": "same_skills_eq",
+      "model": "decision-pplx-decider-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "autotrust-jev-27b-v11",
+      "field": "same_skills_eq",
+      "model": "decision-autotrust-jev-27b-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-27b-instant",
+      "field": "same_skills_eq",
+      "model": "decision-startlux-decision-v1-1-27b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "oak-1.1",
+      "field": "same_skills_eq",
+      "model": "decision-oak-1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ajev-lm6q",
+      "field": "same_skills_eq",
+      "model": "decision-ajev-lm6q",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "flexdm-gemma-4-31b",
+      "field": "same_skills_eq",
+      "model": "decision-flexdm-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lychee-27b",
+      "field": "same_skills_eq",
+      "model": "decision-lychee-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-turbo-v11",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-turbo-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-v310",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-v310",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "allec-oavg",
+      "field": "same_skills_eq",
+      "model": "decision-allec-oavg",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "visionjev-1.0.0",
+      "field": "same_skills_eq",
+      "model": "decision-visionjev-1-0-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "aleria-judge-1.1.1",
+      "field": "same_skills_eq",
+      "model": "decision-aleria-judge-1-1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "drex-max-v1",
+      "field": "same_skills_eq",
+      "model": "decision-drex-max-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nimble-v4-max",
+      "field": "same_skills_eq",
+      "model": "decision-nimble-v4-max",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "anyjev-tacitus-31b",
+      "field": "same_skills_eq",
+      "model": "decision-anyjev-tacitus-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-31b",
+      "field": "same_skills_eq",
+      "model": "decision-decider-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-35b-a3b-gen1.5",
+      "field": "same_skills_eq",
+      "model": "decision-knowline-35b-a3b-gen1-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "oneshot-27b",
+      "field": "same_skills_eq",
+      "model": "decision-oneshot-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vera-large",
+      "field": "same_skills_eq",
+      "model": "decision-vera-large",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bobcat-1.3",
+      "field": "same_skills_eq",
+      "model": "decision-bobcat-1-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amos-1-large",
+      "field": "same_skills_eq",
+      "model": "decision-amos-1-large",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "matilda-decision-v1",
+      "field": "same_skills_eq",
+      "model": "decision-matilda-decision-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-brain-gemma-4-31b",
+      "field": "same_skills_eq",
+      "model": "decision-jev-brain-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-26b-a4b-gen2.5",
+      "field": "same_skills_eq",
+      "model": "decision-knowline-26b-a4b-gen2-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jebadiah-27b-v2.1-t1e",
+      "field": "same_skills_eq",
+      "model": "jebadiah-27b-v2-1-t1e",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "anyjev-l0-gemma-4-31b",
+      "field": "same_skills_eq",
+      "model": "decision-anyjev-l0-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "deck31b",
+      "field": "same_skills_eq",
+      "model": "decision-deck31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "darwin-27b-ztc",
+      "field": "same_skills_eq",
+      "model": "decision-darwin-27b-ztc",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisio-0.6.0-gemma-4-31b",
+      "field": "same_skills_eq",
+      "model": "decision-decisio-0-6-0-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cerno-27b",
+      "field": "same_skills_eq",
+      "model": "decision-cerno-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-chat-gemma4-31b",
+      "field": "same_skills_eq",
+      "model": "decision-decider-chat-gemma4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "torchcast-decision-27b",
+      "field": "same_skills_eq",
+      "model": "decision-torchcast-decision-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-27b",
+      "field": "same_skills_eq",
+      "model": "decision-onejev1-6-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "qwen-decision-27b-noncausal",
+      "field": "same_skills_eq",
+      "model": "decision-qwen-decision-27b-noncausal",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "quyet-1.0-large",
+      "field": "same_skills_eq",
+      "model": "decision-quyet-1-0-large",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "garum",
+      "field": "same_skills_eq",
+      "model": "decision-garum",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "elephant-1-baselabs",
+      "field": "same_skills_eq",
+      "model": "decision-elephant-1-baselabs",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev",
+      "field": "same_skills_eq",
+      "model": "jev-1-14",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "standard-one-35b-sh-v1",
+      "field": "same_skills_eq",
+      "model": "decision-standard-one-35b-sh-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lumma-fev-27b",
+      "field": "same_skills_eq",
+      "model": "decision-lumma-fev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-27b-v2",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-27b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mogan-decision-31b-it",
+      "field": "same_skills_eq",
+      "model": "decision-mogan-decision-31b-it",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "linne-fern-1.0",
+      "field": "same_skills_eq",
+      "model": "decision-linne-fern-1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-27b",
+      "field": "same_skills_eq",
+      "model": "decision-kev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "xor-26b-a4b-v1.2",
+      "field": "same_skills_eq",
+      "model": "decision-xor-26b-a4b-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-1.13.0",
+      "field": "same_skills_eq",
+      "model": "jev-1-13",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "span-02",
+      "field": "same_skills_eq",
+      "model": "decision-span-02",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "garas",
+      "field": "same_skills_eq",
+      "model": "decision-garas",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "shisa-de-2.1-repeat",
+      "field": "same_skills_eq",
+      "model": "decision-shisa-de-2-1-repeat",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "eikos-27b-fp8",
+      "field": "same_skills_eq",
+      "model": "decision-eikos-27b-fp8",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "reflex-27b-pmscr",
+      "field": "same_skills_eq",
+      "model": "decision-reflex-27b-pmscr",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rsi-jev-v6.1-vl-27b-auto",
+      "field": "same_skills_eq",
+      "model": "decision-rsi-jev-v6-1-vl-27b-auto",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-9b-gen1",
+      "field": "same_skills_eq",
+      "model": "decision-knowline-9b-gen1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-9b-instant",
+      "field": "same_skills_eq",
+      "model": "decision-startlux-decision-v1-1-9b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-vega-27b",
+      "field": "same_skills_eq",
+      "model": "decision-decision-2-0-vega-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-35b",
+      "field": "same_skills_eq",
+      "model": "decision-jev-35b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-27b",
+      "field": "same_skills_eq",
+      "model": "decision-jev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "simple-jev-qwen3.8-27b",
+      "field": "same_skills_eq",
+      "model": "decision-simple-jev-qwen3-8-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tern-35b-a3b",
+      "field": "same_skills_eq",
+      "model": "decision-tern-35b-a3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rune-26b-a4b-v3",
+      "field": "same_skills_eq",
+      "model": "decision-rune-26b-a4b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "synack-decide-26b-a4b-v7",
+      "field": "same_skills_eq",
+      "model": "decision-synack-decide-26b-a4b-v7",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-4b-gen5.5",
+      "field": "same_skills_eq",
+      "model": "decision-knowline-4b-gen5-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "blink-v0.3-26b-a4b-nvfp4",
+      "field": "same_skills_eq",
+      "model": "decision-blink-v0-3-26b-a4b-nvfp4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jade",
+      "field": "same_skills_eq",
+      "model": "decision-jade",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "wald-26b-a4b",
+      "field": "same_skills_eq",
+      "model": "decision-wald-26b-a4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ajev-gemma26-lora1",
+      "field": "same_skills_eq",
+      "model": "decision-ajev-gemma26-lora1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clef",
+      "field": "same_skills_eq",
+      "model": "clef",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-4b-instant",
+      "field": "same_skills_eq",
+      "model": "decision-startlux-decision-v1-1-4b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-chat-qwen3.6-27b",
+      "field": "same_skills_eq",
+      "model": "decision-decider-chat-qwen3-6-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pplx-decider-flash-v1.2",
+      "field": "same_skills_eq",
+      "model": "decision-pplx-decider-flash-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-flash",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-flash",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-35b-a3b",
+      "field": "same_skills_eq",
+      "model": "decision-jpt-35b-a3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "xor-1.2",
+      "field": "same_skills_eq",
+      "model": "decision-xor-1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-gemma4-26b-a4b",
+      "field": "same_skills_eq",
+      "model": "decision-jev-gemma4-26b-a4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-9b",
+      "field": "same_skills_eq",
+      "model": "decision-onejev1-6-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "drex-v2.0",
+      "field": "same_skills_eq",
+      "model": "decision-drex-v2-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "muria",
+      "field": "same_skills_eq",
+      "model": "decision-muria",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jeffan-4b-2010",
+      "field": "same_skills_eq",
+      "model": "decision-jeffan-4b-2010",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "verdin-4b-v1.1",
+      "field": "same_skills_eq",
+      "model": "decision-verdin-4b-v1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nimble-v3",
+      "field": "same_skills_eq",
+      "model": "decision-nimble-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "senova-4b-v2",
+      "field": "same_skills_eq",
+      "model": "decision-senova-4b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jebadiah-9b-v2.1-t1e",
+      "field": "same_skills_eq",
+      "model": "jebadiah-9b-v2-1-t1e",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisio-0.4.0-qwen3.6-35b-a3b",
+      "field": "same_skills_eq",
+      "model": "decision-decisio-0-4-0-qwen3-6-35b-a3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-mini",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-mini",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "joshua-diffusion-full",
+      "field": "same_skills_eq",
+      "model": "decision-joshua-diffusion-full",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ajev-lora7",
+      "field": "same_skills_eq",
+      "model": "decision-ajev-lora7",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-4b",
+      "field": "same_skills_eq",
+      "model": "decision-onejev1-6-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisio-0.4.0-gemma-4-12b",
+      "field": "same_skills_eq",
+      "model": "decision-decisio-0-4-0-gemma-4-12b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mica-v0.5-4b",
+      "field": "same_skills_eq",
+      "model": "decision-mica-v0-5-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "purplemist-flash-1.0",
+      "field": "same_skills_eq",
+      "model": "decision-purplemist-flash-1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cerno-9b-v11",
+      "field": "same_skills_eq",
+      "model": "decision-cerno-9b-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-9b-plus",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-9b-plus",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-35b-nvfp4",
+      "field": "same_skills_eq",
+      "model": "decision-decider-35b-nvfp4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "winnow-12b-q8",
+      "field": "same_skills_eq",
+      "model": "decision-winnow-12b-q8",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "seb-9b-v2",
+      "field": "same_skills_eq",
+      "model": "decision-seb-9b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-lux-9b",
+      "field": "same_skills_eq",
+      "model": "decision-decision-2-0-lux-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "drex-v1.5",
+      "field": "same_skills_eq",
+      "model": "decision-drex-v1-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "hopper-12b-trained",
+      "field": "same_skills_eq",
+      "model": "decision-hopper-12b-trained",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "trio-spark-di",
+      "field": "same_skills_eq",
+      "model": "decision-trio-spark-di",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "coco-decision-2.4-4b",
+      "field": "same_skills_eq",
+      "model": "decision-coco-decision-2-4-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clef-omni",
+      "field": "same_skills_eq",
+      "model": "clef-omni",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevk5-9b-v0.3.3",
+      "field": "same_skills_eq",
+      "model": "decision-jevk5-9b-v0-3-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clef-flash",
+      "field": "same_skills_eq",
+      "model": "clef-flash",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevfire-uncapped",
+      "field": "same_skills_eq",
+      "model": "decision-jevfire-uncapped",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rsi-jev-v6.1-vl-4b",
+      "field": "same_skills_eq",
+      "model": "decision-rsi-jev-v6-1-vl-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jegue-0.1",
+      "field": "same_skills_eq",
+      "model": "decision-jegue-0-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jiwo-4b-v2",
+      "field": "same_skills_eq",
+      "model": "decision-jiwo-4b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-9b",
+      "field": "same_skills_eq",
+      "model": "decision-jpt-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ezjev-4b-s2",
+      "field": "same_skills_eq",
+      "model": "decision-ezjev-4b-s2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-omni",
+      "field": "same_skills_eq",
+      "model": "decision-jev-omni",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "solomon-v11-bf16-encoding",
+      "field": "same_skills_eq",
+      "model": "decision-solomon-v11-bf16-encoding",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "standard-one-8b-sh-v4",
+      "field": "same_skills_eq",
+      "model": "decision-standard-one-8b-sh-v4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amber-hybrid-4b",
+      "field": "same_skills_eq",
+      "model": "decision-amber-hybrid-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saif-4b",
+      "field": "same_skills_eq",
+      "model": "decision-saif-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-9b",
+      "field": "same_skills_eq",
+      "model": "decision-jev-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nimble-v2",
+      "field": "same_skills_eq",
+      "model": "decision-nimble-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-9b",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cerno-4b-v11",
+      "field": "same_skills_eq",
+      "model": "decision-cerno-4b-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-4b",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-9b-v2",
+      "field": "same_skills_eq",
+      "model": "decision-kev-9b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nari-decision-4b-v3.2",
+      "field": "same_skills_eq",
+      "model": "decision-nari-decision-4b-v3-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "aplomb-1",
+      "field": "same_skills_eq",
+      "model": "decision-aplomb-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-nox-4b",
+      "field": "same_skills_eq",
+      "model": "decision-decision-2-0-nox-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "hopper-g-1.2",
+      "field": "same_skills_eq",
+      "model": "decision-hopper-g-1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-2b-instant",
+      "field": "same_skills_eq",
+      "model": "decision-startlux-decision-v1-1-2b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-4b-v1.6",
+      "field": "same_skills_eq",
+      "model": "decision-decision-4b-v1-6",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "standard-one-3b-sh-v4",
+      "field": "same_skills_eq",
+      "model": "decision-standard-one-3b-sh-v4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-4b",
+      "field": "same_skills_eq",
+      "model": "decision-jpt-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amber-4b",
+      "field": "same_skills_eq",
+      "model": "decision-amber-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intern-decision-4b",
+      "field": "same_skills_eq",
+      "model": "decision-intern-decision-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rsi-jev-v5.0-vl-3b",
+      "field": "same_skills_eq",
+      "model": "decision-rsi-jev-v5-0-vl-3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "djev",
+      "field": "same_skills_eq",
+      "model": "decision-djev",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "valen-4b-r2",
+      "field": "same_skills_eq",
+      "model": "decision-valen-4b-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "razorback-one-read-3e296f08",
+      "field": "same_skills_eq",
+      "model": "decision-razorback-one-read-3e296f08",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "neohorse-jev-4b",
+      "field": "same_skills_eq",
+      "model": "decision-neohorse-jev-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevk5-v0.3",
+      "field": "same_skills_eq",
+      "model": "decision-jevk5-v0-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-4b",
+      "field": "same_skills_eq",
+      "model": "decision-decider-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "joey-1",
+      "field": "same_skills_eq",
+      "model": "decision-joey-1",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lev",
+      "field": "same_skills_eq",
+      "model": "decision-lev",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lev1-3.7b",
+      "field": "same_skills_eq",
+      "model": "decision-lev1-3-7b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-4b-r10",
+      "field": "same_skills_eq",
+      "model": "decision-kev-4b-r10",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-style-2b-v4",
+      "field": "same_skills_eq",
+      "model": "decision-jev-style-2b-v4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-2b-v3",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-2b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "latentmesh-blitz-2b-v1",
+      "field": "same_skills_eq",
+      "model": "decision-latentmesh-blitz-2b-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saracura-ptbr-4b",
+      "field": "same_skills_eq",
+      "model": "decision-saracura-ptbr-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cam1",
+      "field": "same_skills_eq",
+      "model": "decision-cam1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-nano",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-nano",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-pr57250",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-pr57250",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kas-4b",
+      "field": "same_skills_eq",
+      "model": "decision-kas-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tev1-4b",
+      "field": "same_skills_eq",
+      "model": "decision-tev1-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "winnow-e4b-q8",
+      "field": "same_skills_eq",
+      "model": "decision-winnow-e4b-q8",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "aurelis-2b",
+      "field": "same_skills_eq",
+      "model": "decision-aurelis-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevstral-8b",
+      "field": "same_skills_eq",
+      "model": "decision-jevstral-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "metask-jev-4b",
+      "field": "same_skills_eq",
+      "model": "decision-metask-jev-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ryotide-qwen-v0.3.1",
+      "field": "same_skills_eq",
+      "model": "decision-ryotide-qwen-v0-3-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intelif-qwen3-4b",
+      "field": "same_skills_eq",
+      "model": "decision-intelif-qwen3-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gliclass-v4-edge",
+      "field": "same_skills_eq",
+      "model": "decision-gliclass-v4-edge",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "d1-3b",
+      "field": "same_skills_eq",
+      "model": "decision-d1-3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pngwn-space-uncapped-full",
+      "field": "same_skills_eq",
+      "model": "decision-pngwn-space-uncapped-full",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vera-core-2",
+      "field": "same_skills_eq",
+      "model": "decision-vera-core-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jobe",
+      "field": "same_skills_eq",
+      "model": "decision-jobe",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-onejev1-6-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crystal-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-crystal-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vela3-fast",
+      "field": "same_skills_eq",
+      "model": "decision-vela3-fast",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-1b",
+      "field": "same_skills_eq",
+      "model": "decision-crivo-1b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gevva-e4b",
+      "field": "same_skills_eq",
+      "model": "decision-gevva-e4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-0.8b-instant",
+      "field": "same_skills_eq",
+      "model": "decision-startlux-decision-v1-1-0-8b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "openvons",
+      "field": "same_skills_eq",
+      "model": "decision-openvons",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "semif",
+      "field": "same_skills_eq",
+      "model": "decision-semif",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saina-helm-2-omni",
+      "field": "same_skills_eq",
+      "model": "decision-saina-helm-2-omni",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-lite",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-lite",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amber-0.4b",
+      "field": "same_skills_eq",
+      "model": "decision-amber-0-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jiwo-0.8b-v2-r2",
+      "field": "same_skills_eq",
+      "model": "decision-jiwo-0-8b-v2-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saina-helm-2-v2",
+      "field": "same_skills_eq",
+      "model": "decision-saina-helm-2-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "this-that-1.2",
+      "field": "same_skills_eq",
+      "model": "decision-this-that-1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gevva-e2b",
+      "field": "same_skills_eq",
+      "model": "decision-gevva-e2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-400m",
+      "field": "same_skills_eq",
+      "model": "decision-crivo-400m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-2b-fp8-http",
+      "field": "same_skills_eq",
+      "model": "decision-decider-2b-fp8-http",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-sol-2b",
+      "field": "same_skills_eq",
+      "model": "decision-decision-2-0-sol-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jdi-ptr14-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-jdi-ptr14-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mini-jev",
+      "field": "same_skills_eq",
+      "model": "decision-mini-jev",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "valen-2b-r2",
+      "field": "same_skills_eq",
+      "model": "decision-valen-2b-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vela3-fast-vision-text",
+      "field": "same_skills_eq",
+      "model": "decision-vela3-fast-vision-text",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-2b",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "wyat-1-800m",
+      "field": "same_skills_eq",
+      "model": "decision-wyat-1-800m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intern-decision-2b",
+      "field": "same_skills_eq",
+      "model": "decision-intern-decision-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-sieve-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "strands-decider-2b",
+      "field": "same_skills_eq",
+      "model": "strands-decider-2b-hobson-v21",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "exaone-4.0-1.2b-jev-v0.3",
+      "field": "same_skills_eq",
+      "model": "decision-exaone-4-0-1-2b-jev-v0-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tasksource-decider-nano-v5",
+      "field": "same_skills_eq",
+      "model": "decision-tasksource-decider-nano-v5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-68m",
+      "field": "same_skills_eq",
+      "model": "decision-crivo-68m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-ettin-150m",
+      "field": "same_skills_eq",
+      "model": "decision-jev-ettin-150m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-eos-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-decision-2-0-eos-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-150m-v2",
+      "field": "same_skills_eq",
+      "model": "decision-crivo-150m-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bekko-v0-400m",
+      "field": "same_skills_eq",
+      "model": "decision-bekko-v0-400m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mola-150m",
+      "field": "same_skills_eq",
+      "model": "decision-mola-150m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-edge",
+      "field": "same_skills_eq",
+      "model": "decision-vllm-sr-d3-edge",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mola-68m",
+      "field": "same_skills_eq",
+      "model": "decision-mola-68m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-t5-342m-public-v2",
+      "field": "same_skills_eq",
+      "model": "decision-jev-t5-342m-public-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisiontune-1.0",
+      "field": "same_skills_eq",
+      "model": "decision-decisiontune-1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "valen-0.8b-r2",
+      "field": "same_skills_eq",
+      "model": "decision-valen-0-8b-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bosun-v3.1-1.7b",
+      "field": "same_skills_eq",
+      "model": "decision-bosun-v3-1-1-7b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-kai-0.6b",
+      "field": "same_skills_eq",
+      "model": "decision-decision-2-0-kai-0-6b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "dinah-1",
+      "field": "same_skills_eq",
+      "model": "decision-dinah-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-0.8b-r15",
+      "field": "same_skills_eq",
+      "model": "decision-kev-0-8b-r15",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pick-150m-v5",
+      "field": "same_skills_eq",
+      "model": "decision-pick-150m-v5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-jpt-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-ettin-400m",
+      "field": "same_skills_eq",
+      "model": "decision-jev-ettin-400m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sifr-0.8b-v3.1",
+      "field": "same_skills_eq",
+      "model": "decision-sifr-0-8b-v3-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-32m-v2",
+      "field": "same_skills_eq",
+      "model": "decision-crivo-32m-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "prumo",
+      "field": "same_skills_eq",
+      "model": "decision-prumo",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kodiak-v0.2-1b-accuracy",
+      "field": "same_skills_eq",
+      "model": "decision-kodiak-v0-2-1b-accuracy",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intern-decision-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-intern-decision-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-style-0.8b-v3",
+      "field": "same_skills_eq",
+      "model": "decision-jev-style-0-8b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tev1-0.8b",
+      "field": "same_skills_eq",
+      "model": "decision-tev1-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bekko-v0-68m",
+      "field": "same_skills_eq",
+      "model": "decision-bekko-v0-68m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "d1-omni-600m",
+      "field": "same_skills_eq",
+      "model": "decision-d1-omni-600m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-17m",
+      "field": "same_skills_eq",
+      "model": "decision-crivo-17m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "von-1.3",
+      "field": "same_skills_eq",
+      "model": "decision-von-1-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bosun-v3.1-0.6b",
+      "field": "same_skills_eq",
+      "model": "decision-bosun-v3-1-0-6b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vera-spark",
+      "field": "same_skills_eq",
+      "model": "decision-vera-spark",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lavoir",
+      "field": "same_skills_eq",
+      "model": "decision-lavoir",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gliner-decide",
+      "field": "same_skills_eq",
+      "model": "decision-gliner-decide",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "laya-1e28ac20",
+      "field": "same_skills_eq",
+      "model": "decision-laya-1e28ac20",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevk5-lite",
+      "field": "same_skills_eq",
+      "model": "decision-jevk5-lite",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lfm2600",
+      "field": "same_skills_eq",
+      "model": "decision-lfm2600",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "harsha",
+      "field": "same_skills_eq",
+      "model": "decision-harsha",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bekko-v0-17m",
+      "field": "same_skills_eq",
+      "model": "decision-bekko-v0-17m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clm-v0.1-8b",
+      "field": "same_skills_eq",
+      "model": "decision-clm-v0-1-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jeff-uncapped",
+      "field": "same_skills_eq",
+      "model": "decision-jeff-uncapped",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lfm350-sdpa",
+      "field": "same_skills_eq",
+      "model": "decision-lfm350-sdpa",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "akash-gemma",
+      "field": "same_skills_eq",
+      "model": "decision-akash-gemma",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "dm-jepa-1.1",
+      "field": "same_skills_eq",
+      "model": "decision-dm-jepa-1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "julia-1",
+      "field": "same_skills_eq",
+      "model": "decision-julia-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nirnaya-0.4b",
+      "field": "same_skills_eq",
+      "model": "decision-nirnaya-0-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "zev-latest",
+      "field": "same_skills_eq",
+      "model": "decision-zev-latest",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "verdict-8af2496e",
+      "field": "same_skills_eq",
+      "model": "decision-verdict-8af2496e",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-31b-gen1",
+      "field": "new_domains_eq",
+      "model": "decision-knowline-31b-gen1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "glide-v1.2",
+      "field": "new_domains_eq",
+      "model": "decision-glide-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-31b-v3",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-31b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "turion-jev-31b",
+      "field": "new_domains_eq",
+      "model": "decision-turion-jev-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-ultra",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-ultra",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jeffan-31b-1710",
+      "field": "new_domains_eq",
+      "model": "decision-jeffan-31b-1710",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "h2o-lightning-31b-v1.1",
+      "field": "new_domains_eq",
+      "model": "decision-h2o-lightning-31b-v1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "wemm-jev-27b",
+      "field": "new_domains_eq",
+      "model": "decision-wemm-jev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mammoth-1",
+      "field": "new_domains_eq",
+      "model": "decision-mammoth-1",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ainvest-decision-27b-v1.0",
+      "field": "new_domains_eq",
+      "model": "decision-ainvest-decision-27b-v1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "oenogarum",
+      "field": "new_domains_eq",
+      "model": "decision-oenogarum",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pplx-decider-v1.2",
+      "field": "new_domains_eq",
+      "model": "decision-pplx-decider-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "autotrust-jev-27b-v11",
+      "field": "new_domains_eq",
+      "model": "decision-autotrust-jev-27b-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-27b-instant",
+      "field": "new_domains_eq",
+      "model": "decision-startlux-decision-v1-1-27b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "oak-1.1",
+      "field": "new_domains_eq",
+      "model": "decision-oak-1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ajev-lm6q",
+      "field": "new_domains_eq",
+      "model": "decision-ajev-lm6q",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "flexdm-gemma-4-31b",
+      "field": "new_domains_eq",
+      "model": "decision-flexdm-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lychee-27b",
+      "field": "new_domains_eq",
+      "model": "decision-lychee-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-turbo-v11",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-turbo-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-v310",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-v310",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "allec-oavg",
+      "field": "new_domains_eq",
+      "model": "decision-allec-oavg",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "visionjev-1.0.0",
+      "field": "new_domains_eq",
+      "model": "decision-visionjev-1-0-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "aleria-judge-1.1.1",
+      "field": "new_domains_eq",
+      "model": "decision-aleria-judge-1-1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "drex-max-v1",
+      "field": "new_domains_eq",
+      "model": "decision-drex-max-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nimble-v4-max",
+      "field": "new_domains_eq",
+      "model": "decision-nimble-v4-max",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "anyjev-tacitus-31b",
+      "field": "new_domains_eq",
+      "model": "decision-anyjev-tacitus-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-31b",
+      "field": "new_domains_eq",
+      "model": "decision-decider-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-35b-a3b-gen1.5",
+      "field": "new_domains_eq",
+      "model": "decision-knowline-35b-a3b-gen1-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "oneshot-27b",
+      "field": "new_domains_eq",
+      "model": "decision-oneshot-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vera-large",
+      "field": "new_domains_eq",
+      "model": "decision-vera-large",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bobcat-1.3",
+      "field": "new_domains_eq",
+      "model": "decision-bobcat-1-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amos-1-large",
+      "field": "new_domains_eq",
+      "model": "decision-amos-1-large",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "matilda-decision-v1",
+      "field": "new_domains_eq",
+      "model": "decision-matilda-decision-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-brain-gemma-4-31b",
+      "field": "new_domains_eq",
+      "model": "decision-jev-brain-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-26b-a4b-gen2.5",
+      "field": "new_domains_eq",
+      "model": "decision-knowline-26b-a4b-gen2-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jebadiah-27b-v2.1-t1e",
+      "field": "new_domains_eq",
+      "model": "jebadiah-27b-v2-1-t1e",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "anyjev-l0-gemma-4-31b",
+      "field": "new_domains_eq",
+      "model": "decision-anyjev-l0-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "deck31b",
+      "field": "new_domains_eq",
+      "model": "decision-deck31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "darwin-27b-ztc",
+      "field": "new_domains_eq",
+      "model": "decision-darwin-27b-ztc",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisio-0.6.0-gemma-4-31b",
+      "field": "new_domains_eq",
+      "model": "decision-decisio-0-6-0-gemma-4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cerno-27b",
+      "field": "new_domains_eq",
+      "model": "decision-cerno-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-chat-gemma4-31b",
+      "field": "new_domains_eq",
+      "model": "decision-decider-chat-gemma4-31b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "torchcast-decision-27b",
+      "field": "new_domains_eq",
+      "model": "decision-torchcast-decision-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-27b",
+      "field": "new_domains_eq",
+      "model": "decision-onejev1-6-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "qwen-decision-27b-noncausal",
+      "field": "new_domains_eq",
+      "model": "decision-qwen-decision-27b-noncausal",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "quyet-1.0-large",
+      "field": "new_domains_eq",
+      "model": "decision-quyet-1-0-large",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "garum",
+      "field": "new_domains_eq",
+      "model": "decision-garum",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "elephant-1-baselabs",
+      "field": "new_domains_eq",
+      "model": "decision-elephant-1-baselabs",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev",
+      "field": "new_domains_eq",
+      "model": "jev-1-14",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "standard-one-35b-sh-v1",
+      "field": "new_domains_eq",
+      "model": "decision-standard-one-35b-sh-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lumma-fev-27b",
+      "field": "new_domains_eq",
+      "model": "decision-lumma-fev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-27b-v2",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-27b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mogan-decision-31b-it",
+      "field": "new_domains_eq",
+      "model": "decision-mogan-decision-31b-it",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "linne-fern-1.0",
+      "field": "new_domains_eq",
+      "model": "decision-linne-fern-1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-27b",
+      "field": "new_domains_eq",
+      "model": "decision-kev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "xor-26b-a4b-v1.2",
+      "field": "new_domains_eq",
+      "model": "decision-xor-26b-a4b-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-1.13.0",
+      "field": "new_domains_eq",
+      "model": "jev-1-13",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "span-02",
+      "field": "new_domains_eq",
+      "model": "decision-span-02",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "garas",
+      "field": "new_domains_eq",
+      "model": "decision-garas",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "shisa-de-2.1-repeat",
+      "field": "new_domains_eq",
+      "model": "decision-shisa-de-2-1-repeat",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "eikos-27b-fp8",
+      "field": "new_domains_eq",
+      "model": "decision-eikos-27b-fp8",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "reflex-27b-pmscr",
+      "field": "new_domains_eq",
+      "model": "decision-reflex-27b-pmscr",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rsi-jev-v6.1-vl-27b-auto",
+      "field": "new_domains_eq",
+      "model": "decision-rsi-jev-v6-1-vl-27b-auto",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-9b-gen1",
+      "field": "new_domains_eq",
+      "model": "decision-knowline-9b-gen1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-9b-instant",
+      "field": "new_domains_eq",
+      "model": "decision-startlux-decision-v1-1-9b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-vega-27b",
+      "field": "new_domains_eq",
+      "model": "decision-decision-2-0-vega-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-35b",
+      "field": "new_domains_eq",
+      "model": "decision-jev-35b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-27b",
+      "field": "new_domains_eq",
+      "model": "decision-jev-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "simple-jev-qwen3.8-27b",
+      "field": "new_domains_eq",
+      "model": "decision-simple-jev-qwen3-8-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tern-35b-a3b",
+      "field": "new_domains_eq",
+      "model": "decision-tern-35b-a3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rune-26b-a4b-v3",
+      "field": "new_domains_eq",
+      "model": "decision-rune-26b-a4b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "synack-decide-26b-a4b-v7",
+      "field": "new_domains_eq",
+      "model": "decision-synack-decide-26b-a4b-v7",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "knowline-4b-gen5.5",
+      "field": "new_domains_eq",
+      "model": "decision-knowline-4b-gen5-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "blink-v0.3-26b-a4b-nvfp4",
+      "field": "new_domains_eq",
+      "model": "decision-blink-v0-3-26b-a4b-nvfp4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jade",
+      "field": "new_domains_eq",
+      "model": "decision-jade",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "wald-26b-a4b",
+      "field": "new_domains_eq",
+      "model": "decision-wald-26b-a4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ajev-gemma26-lora1",
+      "field": "new_domains_eq",
+      "model": "decision-ajev-gemma26-lora1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clef",
+      "field": "new_domains_eq",
+      "model": "clef",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-4b-instant",
+      "field": "new_domains_eq",
+      "model": "decision-startlux-decision-v1-1-4b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-chat-qwen3.6-27b",
+      "field": "new_domains_eq",
+      "model": "decision-decider-chat-qwen3-6-27b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pplx-decider-flash-v1.2",
+      "field": "new_domains_eq",
+      "model": "decision-pplx-decider-flash-v1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-flash",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-flash",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-35b-a3b",
+      "field": "new_domains_eq",
+      "model": "decision-jpt-35b-a3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "xor-1.2",
+      "field": "new_domains_eq",
+      "model": "decision-xor-1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-gemma4-26b-a4b",
+      "field": "new_domains_eq",
+      "model": "decision-jev-gemma4-26b-a4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-9b",
+      "field": "new_domains_eq",
+      "model": "decision-onejev1-6-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "drex-v2.0",
+      "field": "new_domains_eq",
+      "model": "decision-drex-v2-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "muria",
+      "field": "new_domains_eq",
+      "model": "decision-muria",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jeffan-4b-2010",
+      "field": "new_domains_eq",
+      "model": "decision-jeffan-4b-2010",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "verdin-4b-v1.1",
+      "field": "new_domains_eq",
+      "model": "decision-verdin-4b-v1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nimble-v3",
+      "field": "new_domains_eq",
+      "model": "decision-nimble-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "senova-4b-v2",
+      "field": "new_domains_eq",
+      "model": "decision-senova-4b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jebadiah-9b-v2.1-t1e",
+      "field": "new_domains_eq",
+      "model": "jebadiah-9b-v2-1-t1e",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisio-0.4.0-qwen3.6-35b-a3b",
+      "field": "new_domains_eq",
+      "model": "decision-decisio-0-4-0-qwen3-6-35b-a3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-mini",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-mini",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "joshua-diffusion-full",
+      "field": "new_domains_eq",
+      "model": "decision-joshua-diffusion-full",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ajev-lora7",
+      "field": "new_domains_eq",
+      "model": "decision-ajev-lora7",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-4b",
+      "field": "new_domains_eq",
+      "model": "decision-onejev1-6-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisio-0.4.0-gemma-4-12b",
+      "field": "new_domains_eq",
+      "model": "decision-decisio-0-4-0-gemma-4-12b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mica-v0.5-4b",
+      "field": "new_domains_eq",
+      "model": "decision-mica-v0-5-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "purplemist-flash-1.0",
+      "field": "new_domains_eq",
+      "model": "decision-purplemist-flash-1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cerno-9b-v11",
+      "field": "new_domains_eq",
+      "model": "decision-cerno-9b-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-9b-plus",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-9b-plus",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-35b-nvfp4",
+      "field": "new_domains_eq",
+      "model": "decision-decider-35b-nvfp4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "winnow-12b-q8",
+      "field": "new_domains_eq",
+      "model": "decision-winnow-12b-q8",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "seb-9b-v2",
+      "field": "new_domains_eq",
+      "model": "decision-seb-9b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-lux-9b",
+      "field": "new_domains_eq",
+      "model": "decision-decision-2-0-lux-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "drex-v1.5",
+      "field": "new_domains_eq",
+      "model": "decision-drex-v1-5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "hopper-12b-trained",
+      "field": "new_domains_eq",
+      "model": "decision-hopper-12b-trained",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "trio-spark-di",
+      "field": "new_domains_eq",
+      "model": "decision-trio-spark-di",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "coco-decision-2.4-4b",
+      "field": "new_domains_eq",
+      "model": "decision-coco-decision-2-4-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clef-omni",
+      "field": "new_domains_eq",
+      "model": "clef-omni",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevk5-9b-v0.3.3",
+      "field": "new_domains_eq",
+      "model": "decision-jevk5-9b-v0-3-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clef-flash",
+      "field": "new_domains_eq",
+      "model": "clef-flash",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevfire-uncapped",
+      "field": "new_domains_eq",
+      "model": "decision-jevfire-uncapped",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rsi-jev-v6.1-vl-4b",
+      "field": "new_domains_eq",
+      "model": "decision-rsi-jev-v6-1-vl-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jegue-0.1",
+      "field": "new_domains_eq",
+      "model": "decision-jegue-0-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jiwo-4b-v2",
+      "field": "new_domains_eq",
+      "model": "decision-jiwo-4b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-9b",
+      "field": "new_domains_eq",
+      "model": "decision-jpt-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ezjev-4b-s2",
+      "field": "new_domains_eq",
+      "model": "decision-ezjev-4b-s2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-omni",
+      "field": "new_domains_eq",
+      "model": "decision-jev-omni",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "solomon-v11-bf16-encoding",
+      "field": "new_domains_eq",
+      "model": "decision-solomon-v11-bf16-encoding",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "standard-one-8b-sh-v4",
+      "field": "new_domains_eq",
+      "model": "decision-standard-one-8b-sh-v4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amber-hybrid-4b",
+      "field": "new_domains_eq",
+      "model": "decision-amber-hybrid-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saif-4b",
+      "field": "new_domains_eq",
+      "model": "decision-saif-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-9b",
+      "field": "new_domains_eq",
+      "model": "decision-jev-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nimble-v2",
+      "field": "new_domains_eq",
+      "model": "decision-nimble-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-9b",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-9b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cerno-4b-v11",
+      "field": "new_domains_eq",
+      "model": "decision-cerno-4b-v11",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-4b",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-9b-v2",
+      "field": "new_domains_eq",
+      "model": "decision-kev-9b-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nari-decision-4b-v3.2",
+      "field": "new_domains_eq",
+      "model": "decision-nari-decision-4b-v3-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "aplomb-1",
+      "field": "new_domains_eq",
+      "model": "decision-aplomb-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-nox-4b",
+      "field": "new_domains_eq",
+      "model": "decision-decision-2-0-nox-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "hopper-g-1.2",
+      "field": "new_domains_eq",
+      "model": "decision-hopper-g-1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-2b-instant",
+      "field": "new_domains_eq",
+      "model": "decision-startlux-decision-v1-1-2b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-4b-v1.6",
+      "field": "new_domains_eq",
+      "model": "decision-decision-4b-v1-6",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "standard-one-3b-sh-v4",
+      "field": "new_domains_eq",
+      "model": "decision-standard-one-3b-sh-v4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-4b",
+      "field": "new_domains_eq",
+      "model": "decision-jpt-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amber-4b",
+      "field": "new_domains_eq",
+      "model": "decision-amber-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intern-decision-4b",
+      "field": "new_domains_eq",
+      "model": "decision-intern-decision-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "rsi-jev-v5.0-vl-3b",
+      "field": "new_domains_eq",
+      "model": "decision-rsi-jev-v5-0-vl-3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "djev",
+      "field": "new_domains_eq",
+      "model": "decision-djev",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "valen-4b-r2",
+      "field": "new_domains_eq",
+      "model": "decision-valen-4b-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "razorback-one-read-3e296f08",
+      "field": "new_domains_eq",
+      "model": "decision-razorback-one-read-3e296f08",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "neohorse-jev-4b",
+      "field": "new_domains_eq",
+      "model": "decision-neohorse-jev-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevk5-v0.3",
+      "field": "new_domains_eq",
+      "model": "decision-jevk5-v0-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-4b",
+      "field": "new_domains_eq",
+      "model": "decision-decider-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "joey-1",
+      "field": "new_domains_eq",
+      "model": "decision-joey-1",
+      "caveat": true
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lev",
+      "field": "new_domains_eq",
+      "model": "decision-lev",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lev1-3.7b",
+      "field": "new_domains_eq",
+      "model": "decision-lev1-3-7b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-4b-r10",
+      "field": "new_domains_eq",
+      "model": "decision-kev-4b-r10",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-style-2b-v4",
+      "field": "new_domains_eq",
+      "model": "decision-jev-style-2b-v4",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-2b-v3",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-2b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "latentmesh-blitz-2b-v1",
+      "field": "new_domains_eq",
+      "model": "decision-latentmesh-blitz-2b-v1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saracura-ptbr-4b",
+      "field": "new_domains_eq",
+      "model": "decision-saracura-ptbr-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "cam1",
+      "field": "new_domains_eq",
+      "model": "decision-cam1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-nano",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-nano",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-pr57250",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-pr57250",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kas-4b",
+      "field": "new_domains_eq",
+      "model": "decision-kas-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tev1-4b",
+      "field": "new_domains_eq",
+      "model": "decision-tev1-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "winnow-e4b-q8",
+      "field": "new_domains_eq",
+      "model": "decision-winnow-e4b-q8",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "aurelis-2b",
+      "field": "new_domains_eq",
+      "model": "decision-aurelis-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevstral-8b",
+      "field": "new_domains_eq",
+      "model": "decision-jevstral-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "metask-jev-4b",
+      "field": "new_domains_eq",
+      "model": "decision-metask-jev-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "ryotide-qwen-v0.3.1",
+      "field": "new_domains_eq",
+      "model": "decision-ryotide-qwen-v0-3-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intelif-qwen3-4b",
+      "field": "new_domains_eq",
+      "model": "decision-intelif-qwen3-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gliclass-v4-edge",
+      "field": "new_domains_eq",
+      "model": "decision-gliclass-v4-edge",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "d1-3b",
+      "field": "new_domains_eq",
+      "model": "decision-d1-3b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pngwn-space-uncapped-full",
+      "field": "new_domains_eq",
+      "model": "decision-pngwn-space-uncapped-full",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vera-core-2",
+      "field": "new_domains_eq",
+      "model": "decision-vera-core-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jobe",
+      "field": "new_domains_eq",
+      "model": "decision-jobe",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "onejev1.6-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-onejev1-6-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crystal-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-crystal-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vela3-fast",
+      "field": "new_domains_eq",
+      "model": "decision-vela3-fast",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-1b",
+      "field": "new_domains_eq",
+      "model": "decision-crivo-1b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gevva-e4b",
+      "field": "new_domains_eq",
+      "model": "decision-gevva-e4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "startlux-decision-v1.1-0.8b-instant",
+      "field": "new_domains_eq",
+      "model": "decision-startlux-decision-v1-1-0-8b-instant",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "openvons",
+      "field": "new_domains_eq",
+      "model": "decision-openvons",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "semif",
+      "field": "new_domains_eq",
+      "model": "decision-semif",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saina-helm-2-omni",
+      "field": "new_domains_eq",
+      "model": "decision-saina-helm-2-omni",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-lite",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-lite",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "amber-0.4b",
+      "field": "new_domains_eq",
+      "model": "decision-amber-0-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jiwo-0.8b-v2-r2",
+      "field": "new_domains_eq",
+      "model": "decision-jiwo-0-8b-v2-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "saina-helm-2-v2",
+      "field": "new_domains_eq",
+      "model": "decision-saina-helm-2-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "this-that-1.2",
+      "field": "new_domains_eq",
+      "model": "decision-this-that-1-2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gevva-e2b",
+      "field": "new_domains_eq",
+      "model": "decision-gevva-e2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-400m",
+      "field": "new_domains_eq",
+      "model": "decision-crivo-400m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decider-2b-fp8-http",
+      "field": "new_domains_eq",
+      "model": "decision-decider-2b-fp8-http",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-sol-2b",
+      "field": "new_domains_eq",
+      "model": "decision-decision-2-0-sol-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jdi-ptr14-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-jdi-ptr14-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mini-jev",
+      "field": "new_domains_eq",
+      "model": "decision-mini-jev",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "valen-2b-r2",
+      "field": "new_domains_eq",
+      "model": "decision-valen-2b-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vela3-fast-vision-text",
+      "field": "new_domains_eq",
+      "model": "decision-vela3-fast-vision-text",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-2b",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "wyat-1-800m",
+      "field": "new_domains_eq",
+      "model": "decision-wyat-1-800m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intern-decision-2b",
+      "field": "new_domains_eq",
+      "model": "decision-intern-decision-2b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sieve-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-sieve-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "strands-decider-2b",
+      "field": "new_domains_eq",
+      "model": "strands-decider-2b-hobson-v21",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "exaone-4.0-1.2b-jev-v0.3",
+      "field": "new_domains_eq",
+      "model": "decision-exaone-4-0-1-2b-jev-v0-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tasksource-decider-nano-v5",
+      "field": "new_domains_eq",
+      "model": "decision-tasksource-decider-nano-v5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-68m",
+      "field": "new_domains_eq",
+      "model": "decision-crivo-68m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-ettin-150m",
+      "field": "new_domains_eq",
+      "model": "decision-jev-ettin-150m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-eos-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-decision-2-0-eos-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-150m-v2",
+      "field": "new_domains_eq",
+      "model": "decision-crivo-150m-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bekko-v0-400m",
+      "field": "new_domains_eq",
+      "model": "decision-bekko-v0-400m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mola-150m",
+      "field": "new_domains_eq",
+      "model": "decision-mola-150m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vllm-sr-d3-edge",
+      "field": "new_domains_eq",
+      "model": "decision-vllm-sr-d3-edge",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "mola-68m",
+      "field": "new_domains_eq",
+      "model": "decision-mola-68m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-t5-342m-public-v2",
+      "field": "new_domains_eq",
+      "model": "decision-jev-t5-342m-public-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decisiontune-1.0",
+      "field": "new_domains_eq",
+      "model": "decision-decisiontune-1-0",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "valen-0.8b-r2",
+      "field": "new_domains_eq",
+      "model": "decision-valen-0-8b-r2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bosun-v3.1-1.7b",
+      "field": "new_domains_eq",
+      "model": "decision-bosun-v3-1-1-7b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "decision-2.0-kai-0.6b",
+      "field": "new_domains_eq",
+      "model": "decision-decision-2-0-kai-0-6b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "dinah-1",
+      "field": "new_domains_eq",
+      "model": "decision-dinah-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kev-0.8b-r15",
+      "field": "new_domains_eq",
+      "model": "decision-kev-0-8b-r15",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "pick-150m-v5",
+      "field": "new_domains_eq",
+      "model": "decision-pick-150m-v5",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jpt-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-jpt-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-ettin-400m",
+      "field": "new_domains_eq",
+      "model": "decision-jev-ettin-400m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "sifr-0.8b-v3.1",
+      "field": "new_domains_eq",
+      "model": "decision-sifr-0-8b-v3-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-32m-v2",
+      "field": "new_domains_eq",
+      "model": "decision-crivo-32m-v2",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "prumo",
+      "field": "new_domains_eq",
+      "model": "decision-prumo",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "kodiak-v0.2-1b-accuracy",
+      "field": "new_domains_eq",
+      "model": "decision-kodiak-v0-2-1b-accuracy",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "intern-decision-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-intern-decision-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jev-style-0.8b-v3",
+      "field": "new_domains_eq",
+      "model": "decision-jev-style-0-8b-v3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "tev1-0.8b",
+      "field": "new_domains_eq",
+      "model": "decision-tev1-0-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bekko-v0-68m",
+      "field": "new_domains_eq",
+      "model": "decision-bekko-v0-68m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "d1-omni-600m",
+      "field": "new_domains_eq",
+      "model": "decision-d1-omni-600m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "crivo-17m",
+      "field": "new_domains_eq",
+      "model": "decision-crivo-17m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "von-1.3",
+      "field": "new_domains_eq",
+      "model": "decision-von-1-3",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bosun-v3.1-0.6b",
+      "field": "new_domains_eq",
+      "model": "decision-bosun-v3-1-0-6b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "vera-spark",
+      "field": "new_domains_eq",
+      "model": "decision-vera-spark",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lavoir",
+      "field": "new_domains_eq",
+      "model": "decision-lavoir",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "gliner-decide",
+      "field": "new_domains_eq",
+      "model": "decision-gliner-decide",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "laya-1e28ac20",
+      "field": "new_domains_eq",
+      "model": "decision-laya-1e28ac20",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jevk5-lite",
+      "field": "new_domains_eq",
+      "model": "decision-jevk5-lite",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lfm2600",
+      "field": "new_domains_eq",
+      "model": "decision-lfm2600",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "harsha",
+      "field": "new_domains_eq",
+      "model": "decision-harsha",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "bekko-v0-17m",
+      "field": "new_domains_eq",
+      "model": "decision-bekko-v0-17m",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "clm-v0.1-8b",
+      "field": "new_domains_eq",
+      "model": "decision-clm-v0-1-8b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "jeff-uncapped",
+      "field": "new_domains_eq",
+      "model": "decision-jeff-uncapped",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "lfm350-sdpa",
+      "field": "new_domains_eq",
+      "model": "decision-lfm350-sdpa",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "akash-gemma",
+      "field": "new_domains_eq",
+      "model": "decision-akash-gemma",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "dm-jepa-1.1",
+      "field": "new_domains_eq",
+      "model": "decision-dm-jepa-1-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "julia-1",
+      "field": "new_domains_eq",
+      "model": "decision-julia-1",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "nirnaya-0.4b",
+      "field": "new_domains_eq",
+      "model": "decision-nirnaya-0-4b",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "zev-latest",
+      "field": "new_domains_eq",
+      "model": "decision-zev-latest",
+      "caveat": false
+    },
+    {
+      "source": "decision-index-private",
+      "engine": "verdict-8af2496e",
+      "field": "new_domains_eq",
+      "model": "decision-verdict-8af2496e",
+      "caveat": false
+    },
+    {
+      "source": "DecideBench",
+      "entry": "clef-flash",
+      "model": "clef-flash",
+      "served": "clef-flash"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "clef",
+      "model": "clef",
+      "served": "clef"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "clm",
+      "model": "decision-clm-v0-1-8b",
+      "served": "clm-latest"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "drex-2",
+      "model": "decision-drex-v2-0",
+      "served": "drex-v2.0"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "drex",
+      "model": "decision-drex-v1-5",
+      "served": "drex-v1.5"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "jev",
+      "model": "jev-1-13",
+      "served": "jev-1.13.0"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "jevk5",
+      "model": "decision-jevk5-v0-3",
+      "served": "jevk5"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "julia-1",
+      "model": "decision-julia-1",
+      "served": "SupersonicLabs/Julia-1@a85b127"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "quyet-1-large",
+      "model": "decision-quyet-1-0-large",
+      "served": "quyet-1-large"
+    },
+    {
+      "source": "DecideBench",
+      "entry": "tev",
+      "model": "decision-tev1-4b",
+      "served": "togethercomputer/Tev1-4B-experimental"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jev-1.13.0",
+      "model": "jev-1-13",
+      "pin": "jev-1.13.0 (response model id on all 590 successful rows)"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "quyet-1-0-large",
+      "model": "decision-quyet-1-0-large",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "winnow-12b",
+      "model": "decision-winnow-12b-q8",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "deck31b",
+      "model": "decision-deck31b",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jev-omni",
+      "model": "decision-jev-omni",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "surogate-rune-26b-a4b-v3-v16",
+      "model": "decision-rune-26b-a4b-v3",
+      "pin": "surogate/rune-26b-a4b-GGUF@bd4a7cbbed66af1a95dfbac12cabf52e6e677411"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "bespoke-nimble-9b-v3",
+      "model": "decision-nimble-v3",
+      "pin": "bespokelabs/Bespoke-Nimble-9B-v3@8e927b9b4afdbb14479fac10a7364d1a695be208"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jevk5-v0.3-4b",
+      "model": "decision-jevk5-v0-3",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jpt-35b-a3b",
+      "model": "decision-jpt-35b-a3b",
+      "pin": "kirp/jpt-35b-a3b@f9b45a14df4f7eaf5551f1ab26607237604a8588"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "torchcast-decision-27b",
+      "model": "decision-torchcast-decision-27b",
+      "pin": "torchcast-ai/torchcast-decision-27b@08645834899cb8e00d370b77a3f4e0baa3241dd1"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jade",
+      "model": "decision-jade",
+      "pin": "theunnecessarythings/JADE@8e9f9a3aa4293190fcc4a6ff17ff5f3251f4c270"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "kev-27b",
+      "model": "decision-kev-27b",
+      "pin": "jaredpalmer/kev-27b@af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf"
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "exaone-4.0-1.2b-jev-v0.3",
+      "model": "decision-exaone-4-0-1-2b-jev-v0-3",
+      "pin": "carrtesy/EXAONE-4.0-1.2B-JEV@v0.3"
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "surogate_rune_26b_v3",
+      "model": "decision-rune-26b-a4b-v3",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jev_omni",
+      "model": "decision-jev-omni",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jpt_9b",
+      "model": "decision-jpt-9b",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "neohorse_jev_4b",
+      "model": "decision-neohorse-jev-4b",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jpt_4b",
+      "model": "decision-jpt-4b",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jev_1_13_images",
+      "model": "jev-1-13",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jev_1_14_images",
+      "model": "jev-1-14",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "clef_flash",
+      "model": "clef-flash",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "clef",
+      "model": "clef",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "winnow_12b_q8",
+      "model": "decision-winnow-12b-q8",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jpt_0p8b",
+      "model": "decision-jpt-0-8b",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "liquid_d1_3b",
+      "model": "decision-d1-3b",
+      "pin": null
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "liquid_d1_omni_600m",
+      "model": "decision-d1-omni-600m",
+      "pin": null
+    }
+  ],
+  "held": [
+    {
+      "source": "DecideBench",
+      "entry": "decider-2b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "decider-4b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "deepseek-41",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "deepseek",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "drex-max",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "gliner-decide",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "glm-flash",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "imajev-4b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "jeff-2b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "jeff-800m",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "jeff-gemma4",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "kev-4b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "kev-9b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "laya-typed",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "nimble-9b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "openai-decisions",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "random",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "reax-1",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "s1-fast",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "s1-pro",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "tev-together",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "DecideBench",
+      "entry": "yev0-4b",
+      "reason": "No verified match to an existing exact catalogue configuration; baseline, duplicate hosted TEV, general LLM, or ambiguous release. No new model manufactured to attach the score."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "sage-1.3.0",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "h2o-lightning-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "mercury-decide",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decisio-gemma-4-31b-v080",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decider-12b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "wity-1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decider-12b-v1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "torchcast-decision-12b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "cygnet",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decisio-gemma-4-12b-v080",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decisio-gemma-4-12b-v090",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "xor-26b-a4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "bobcat-flash-1.2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "spx-cd-flash",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decider-chat-gemma4-31b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "hopper-12b-trained",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "gev-26b-decide",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "spx-cd-omni",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "diffusion-jev",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "rene-1-31b-fp8",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "aplomb-1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "apus-openjev-v1-9b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "plumb-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "spx-cd-pro",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "messier-one-v0.2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "spark-s1-4b-v6",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "swanone",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "quyet-1-0-medium",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "lev",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "ninfer-qwen3.8-flash-next",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jev-local",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decider-4b-v2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "classone-qwen3.5-9b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "metask-jev-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "deck-4b-v1-0",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "clef-flash",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "evalengine-decision-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "janus-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "qwen35-9b-jev-data-mix-v2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jevk5-v02",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jevone",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "kahn1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "typecastlm-1.4.0",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "hopper",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "imajev-4b-rtx5090-a2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "malkuth-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jqv",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decider-35b-a3b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "coco-decision-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "manchego-v21-v15",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decision-4b-v12",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "raw-qwen3-4b-instruct-2507",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jev-27b-autotrust",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "nimble-9b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "reflex-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "pplx-decider-v1-1-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "typecastlm",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jebadiah-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decision-2-0-vega-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decision-4b-v11",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "autojev-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "eikos-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "ninfer-qwen3.8-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "openjev-thinking",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "open-jev-zefan-9b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "standardone-8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "clef",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jev-qwen3.5-9b-base-nvfp4",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "semif-qwen3.5-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "bev-bonsai-27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "litjev",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "localjev-qwen3.5-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "system-one-sg",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "kev-8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decision-2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "opensourcejev-qwen35-4b-q4km",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "open-alternative-jev",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "raw-qwen3-8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decider-2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "nemotron-diffusion-8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "kev-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "malkuth-2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "qwen3-reranker-4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "simplejev-qwen3.8-27b-selfhost",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "zerank-2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "open-jev-zefan-2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "open-jev-zefan-27b-v1.1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "raw-phi-4-mini",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "simplejev-qwen3.5-0.8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "smalljev",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "kev-0.6b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "jul-fast",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "opendecision",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "classone-gemma4-e2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "mghafiri-qwen3.5-0.8b-decision-model",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "fastino-gliner-2-5-decide",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "deem-0.8-v1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "decision-fast",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "quyet-1-0-small-en",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "laya-typed-decisions",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "watersheep",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "openjev-verdict-1.4",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "raw-qwen3-0.6b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "lev-350m",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "raw-qwen3-1.7b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "kev-0.5b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "openjev-verdict",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "quyet-1-0-small",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "watt-flash-0.1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "quyet-1-0-tiny",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "open-jev-deberta-v3-large",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "verdict-small",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "tacet-sonata",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "laya",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "mxbai-rerank-base-v2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "laya-multilingual",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "certo",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "clm-8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "bge-reranker-v2-m3",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "gte-reranker-modernbert-base",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "mirror",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "open-jev-json-canvas-joshuasp",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "apus-openjev-v1-35b-a3b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "bb-qwen3.5-4b-lora",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "seb-9b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "wity-1-always",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven jevbench v1.6.1",
+      "entry": "wity-1-off",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "kettei_fat",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "wity_1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "h2o_lightning_4b_v141_image",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "imajev_4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "kettei_chub",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "h2o_lightning_31b_image",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "sage_1_4_images",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "drex_max",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "kushal_gemma4_31b_it_autoloops",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "basal_omni_1_0_ultra",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "celeris_1_decision",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "imajev_9b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "h2o_lightning_4b_image",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "wity_1_off",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jevify_gemma4_26b_a4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "autojev_27b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "seanliu_jev_vision_8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "shisa_de_1",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gpt6_luna_decisions",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "image_hopper",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "omnijev_9b_v4_tzcfly",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "omnijev_4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "reflex_4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gpt6_luna",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "bonsai_2_27b_pq2_0",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "cua_s1_4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "visual_jev_generic_baseline",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "decider_2b_vision",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "vjev_vision",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "visual_jev_4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gpt56_luna",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jevify_gemma4_e4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "glance_qwen3vl_4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gemini31_flash_lite",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "djev_v10_step160_snowicarus",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "imajev_2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gevva_e4b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "djev_distill_v4",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jevify_qwen3vl_2b_t2",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "omnijev_2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gevva_e2b_multimodal",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jev_spatial",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "jevision",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "omnijev_0p8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "playjev_0p8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "djev_dev_bf16",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "qevi_2b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "djev_spark_nvfp4",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "openjev_4b_nli",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "openjev_4b_v5",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "gemini38_flash",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "h2o_lightning_4b_v141_d7f1_image",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "standard_one_3b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "Benchmark Heaven imagejevbench v0.3.0",
+      "entry": "standard_one_8b",
+      "reason": "Exact existing model release/readout equivalence not established; do not merge by similar name or shared base checkpoint."
+    },
+    {
+      "source": "S1MB",
+      "url": "https://huggingface.co/datasets/hotchpotch/s1mb-result/blob/babd95e772c718ed539d1fc0f543ea77c11da0be/README.md",
+      "reason": "Explicitly no blanket result reuse grant; contributor-specific permissions required."
+    },
+    {
+      "source": "Leanmcp JevBench",
+      "url": "https://huggingface.co/datasets/Leanmcp/jevbench/blob/ed50fe0381714d1c0273cbe03cece755b25d586b/LICENSE.md",
+      "reason": "Three-system HF results are MIT; later GitHub results have only a code licence. Historic djev/Laya equivalence to existing entries remains unresolved. Four-system paper CC BY verified, but no cross-version merge performed."
+    },
+    {
+      "source": "Atlan Decision Bench / yanng981 System One / CodyQin Chinese Decision Bench",
+      "reason": "Independent evaluations located; retrieved notices cover code and/or input datasets without an explicit original result grant. Kept for follow-up, no numbers copied."
+    }
+  ],
+  "added": {
+    "models": 0,
+    "benchmarks": 15,
+    "results": 690,
+    "existing_models": 266
+  },
+  "artifacts": {
+    "index.parquet": "6865668dcf4aa0366ab428943825d9cea28aeb436917fe9e649c4462e4c6ed63",
+    "index-vision.parquet": "434ef4469908910312eb66db8402746935dd5ad445af482b18dd93cb9e948147",
+    "choyiny--decidebench/README.md": "76a97963d84eee927569561a9b9ad323fc576a309a285c27af3cbbd43e02f108",
+    "benchmarkheaven--jevbench/text-v161.json": "fe9c601845d14af3637b18b892137942c6b09ca644f316235391901981d8ec1b",
+    "benchmarkheaven--jevbench/vision-v030.json": "bb96b690404ab8516c94838978f3cf69891bf1aae975fb6d5e19511819d37f66",
+    "index-kit-README.md": "803bd1c33f408437b0d1ee5d8c810501a2ed2e617bf2606485cca845d3c580df"
+  },
+  "after": {
+    "models": 343,
+    "results": 13755,
+    "models_with_independent_results": 287,
+    "models_without_independent_results": 56
+  },
+  "remaining": [
+    {
+      "id": "decisionbench-alibaba-nlp-gte-reranker-modernbert-base-f7481e60",
+      "name": "gte-reranker-modernbert-base (DecisionBench f7481e60)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-baai-bge-reranker-v2-m3-953dc6f6",
+      "name": "bge-reranker-v2-m3 (DecisionBench 953dc6f6)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-c-tianyu-nanojev-4a19595e",
+      "name": "NanoJev (DecisionBench 4a19595e)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-davipar-djev-dev-f7f5b7f5",
+      "name": "djev-dev (DecisionBench f7f5b7f5)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-eldanring-winnow-12b-b6ac22b0",
+      "name": "Winnow-12B (DecisionBench b6ac22b0)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-final-bench-ztc-judge-4b-b0bb1603",
+      "name": "ZTC-Judge-4B (DecisionBench b0bb1603)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-final-bench-ztc-judge-9b-05d154a5",
+      "name": "ZTC-Judge-9B (DecisionBench 05d154a5)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-hanno-labs-bosun-v3-1-0-6b-aaa9dd06",
+      "name": "bosun-v3.1-0.6b (DecisionBench aaa9dd06)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-hanno-labs-bosun-v3-1-1-7b-2ef2d972",
+      "name": "bosun-v3.1-1.7b (DecisionBench 2ef2d972)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-ikermoel-open-alternative-jev-4a85df18",
+      "name": "open-alternative-jev (DecisionBench 4a85df18)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-kalm-embedding-kalm-reranker-v1-nano-r2-3902d645",
+      "name": "KaLM-Reranker-V1-Nano-R2 (DecisionBench 3902d645)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-kalm-embedding-kalm-reranker-v1-small-r2-d1c8fdf9",
+      "name": "KaLM-Reranker-V1-Small-R2 (DecisionBench d1c8fdf9)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-mapika-decider-2b-fa996cea",
+      "name": "decider-2b (DecisionBench fa996cea)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-mapika-decider-35b-a3b-d9783c58",
+      "name": "decider-35b-a3b (DecisionBench d9783c58)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-molemo-lab-mojev-0c8695b6",
+      "name": "mojev (DecisionBench 0c8695b6)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-octalab-inc-jqv-9216db57",
+      "name": "jqv (DecisionBench 9216db57)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-qwen-qwen3-reranker-4b-22e68366",
+      "name": "Qwen3-Reranker-4B (DecisionBench 22e68366)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-theoleecj-semif-1f2dea3e",
+      "name": "SemIf (DecisionBench 1f2dea3e)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-zefancai-open-jev-2b-0c7aa498",
+      "name": "Open-Jev-2B (DecisionBench 0c7aa498)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-zefancai-open-jev-9b-47e96688",
+      "name": "Open-Jev-9B (DecisionBench 47e96688)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-altslate-certo-decision-model-7628c0da",
+      "name": "certo-decision-model (DecisionBench 7628c0da)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-bespokelabs-bespoke-nimble-9b-594dfdcf",
+      "name": "Bespoke-Nimble-9B (DecisionBench 594dfdcf)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-com-kotobalabs-open-jev-deberta-v3-large-19bf9a64",
+      "name": "open-jev-deberta-v3-large (DecisionBench 19bf9a64)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-convaiinnovations-laya-1c5edc17",
+      "name": "laya (DecisionBench 1c5edc17)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-convaiinnovations-laya-typed-decisions-bc76315b",
+      "name": "laya-typed-decisions (DecisionBench bc76315b)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-cua-ai-cua-s1-4b-0-2-16818868",
+      "name": "cua-s1-4b-0.2 (DecisionBench 16818868)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-deepanwadhwa-opendecision-a51e07b5",
+      "name": "OpenDecision (DecisionBench a51e07b5)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-deepseek-deepseek-v4-1-flash-openrout",
+      "name": "deepseek-v4.1-flash (DecisionBench openrout)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-ekzhang-openjev-sglang-1355db6a",
+      "name": "openjev-sglang (DecisionBench 1355db6a)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-fastino-gliner2-5-decide-0872ab14",
+      "name": "GLiNER2.5-Decide (DecisionBench 0872ab14)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-fastino-gliner2-large-v1-f32ea6ef",
+      "name": "gliner2-large-v1 (DecisionBench f32ea6ef)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-fastino-gliner2-5-base-v1-1a8bc24e",
+      "name": "gliner2.5-base-v1 (DecisionBench 1a8bc24e)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-fastino-gliner2-5-multi-v1-a221b77a",
+      "name": "gliner2.5-multi-v1 (DecisionBench a221b77a)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-fastino-gliner2-5-small-v1-7e6f537f",
+      "name": "gliner2.5-small-v1 (DecisionBench 7e6f537f)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-featherless-ai-simplejev-qwen3-6-35b-a3b-995ad96e",
+      "name": "simplejev-qwen3.6-35b-a3b (DecisionBench 995ad96e)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-featherless-ai-simplejev-qwen3-8-27b-1d4bf0f2",
+      "name": "simplejev-qwen3.8-27b (DecisionBench 1d4bf0f2)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-heman10x-rlcd-modernbert-151m-8af2496e",
+      "name": "rlcd-modernbert-151m (DecisionBench 8af2496e)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-ishesatoshi-smalljev-semantic-v9-8e2bac7c",
+      "name": "smalljev-semantic-v9 (DecisionBench 8e2bac7c)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-jaredpalmer-kev-0-5b-9ce2fd39",
+      "name": "kev-0.5b (DecisionBench 9ce2fd39)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-jaredpalmer-kev-0-6b-dece6dba",
+      "name": "kev-0.6b (DecisionBench dece6dba)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-jaredpalmer-kev-4b-485ace87",
+      "name": "kev-4b (DecisionBench 485ace87)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-jaredpalmer-kev-8b-c80773da",
+      "name": "kev-8b (DecisionBench c80773da)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-juspay-xor-679decd4",
+      "name": "xor (DecisionBench 679decd4)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-kshetrajna12-reflex-27b-1d4bf0f2",
+      "name": "reflex-27b (DecisionBench 1d4bf0f2)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-kshetrajna12-reflex-qwen3-5-4b-lora-9df1cbbb",
+      "name": "reflex-qwen3.5-4b-lora (DecisionBench 9df1cbbb)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326",
+      "name": "Decision-1.0-Eos-0.8B (DecisionBench 3c2d6326)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-mixedbread-ai-mxbai-rerank-base-v2-3ea9d4df",
+      "name": "mxbai-rerank-base-v2 (DecisionBench 3ea9d4df)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-mmastrac-djev-spark-1444f3e9",
+      "name": "djev-spark (DecisionBench 1444f3e9)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-mohit67890-imajev-4b-712891d1",
+      "name": "imajev-4b (DecisionBench 712891d1)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-mohit67890-imajev-4b-c9e5f132",
+      "name": "imajev-4b (DecisionBench c9e5f132)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-openai-gpt-5-6-luna-openrout",
+      "name": "gpt-5.6-luna (DecisionBench openrout)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-razorback16-openjev-ec4ff3df",
+      "name": "openjev (DecisionBench ec4ff3df)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-togethercomputer-tev1-4b-experimental-0b7becf0",
+      "name": "Tev1-4B-experimental (DecisionBench 0b7becf0)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-z-ai-glm-5-3-flash-openrout",
+      "name": "glm-5.3-flash (DecisionBench openrout)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-zeroentropy-zerank-2-reranker-5eae30d5",
+      "name": "zerank-2-reranker (DecisionBench 5eae30d5)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    },
+    {
+      "id": "decisionbench-zhengxuyu-litjev-1d4bf0f2",
+      "name": "litjev (DecisionBench 1d4bf0f2)",
+      "reason": "No independently executed, reusable, exact-identity numerical result verified in this search."
+    }
+  ],
+  "validation": {
+    "tests": "147/147 pass",
+    "data_validation": "pass: 2296 models, 36181 results, 1123 benchmark definitions, 1036 sources",
+    "value_audit": "All 690 additions compared with pinned original values; all prior models and result values unchanged.",
+    "typecheck": "Website and data package pass",
+    "lint": "pass",
+    "calibration_check": "npm run check passed across all six categories",
+    "decision_fit": {
+      "models": 343,
+      "connected_sets": 1,
+      "cells": 13260,
+      "benchmark_keys": 122,
+      "sampled_loo_r": 0.697,
+      "previous_sampled_loo_r": 0.276,
+      "sampled_loo_without_floor_r": 0.731,
+      "accuracy_median_abs_error_pp": 4.0,
+      "accuracy_p90_abs_error_pp": 15.5,
+      "linear_median_abs_error_points": 5.101,
+      "linear_p90_abs_error_points": 13.2657,
+      "interpretation": "The fixed-index sample changes when new rows are appended, so the correlation increase is not an apples-to-apples improvement claim. Accuracy error is similar to the prior 3.8 pp median / 16.1 pp p90. Top three unchanged; Jeffan and historical imajev occupy the remaining check top-five places, replacing mammoth in that fit. No category or task leader changed."
+    },
+    "rss": "27 existing events preserved byte-for-byte as parsed records; no new leader announcements. Six prior hardware snapshots preserved and one new archive added; final check-feed passes.",
+    "race": "Desktop/mobile MP4s regenerated and hash checks pass",
+    "build": "Webpack compile-only production check passes; full production prerender was not rerun because the prior build exhausted disk space.",
+    "preview": "http://127.0.0.1:3014/decision returns HTTP 200",
+    "publication": "Local only; no push, PR, workflow or deployment."
+  }
+}
