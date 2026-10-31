@@ -54,7 +54,7 @@ API speeds are our own measurements: we stream a fixed prompt to each model thre
 
 ## Benchmarks
 
-22678 results, each with a source link. Download the [raw results](../data/results.json), [benchmark definitions](../data/benchmarks.json), or [rankings as JSON](https://whatmodel.sh/api?format=json&all=1).
+35105 results, each with a source link. Download the [raw results](../data/results.json), [benchmark definitions](../data/benchmarks.json), or [rankings as JSON](https://whatmodel.sh/api?format=json&all=1).
 
 **Share of evidence** is how much of all the weight behind a category's scores comes from that run, averaged over its scored models.
 
@@ -3121,54 +3121,6 @@ test (evaluator)                                          models     a     σ  w
 <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WER of reconstructed speech …</a>       8  0.14  0.57     0.1   0.0%
 </pre>
 
-### Decision models (6 scored models, prior 1.0%)
-
-<pre>
-test (evaluator)                                          models     a     σ  weight  share
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Home appliance simulator (case ex…</a>       6  1.82  0.57    10.1   8.6%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BPoMP (accuracy) (decision-index-…</a>       6  1.14  0.33    12.2   7.2%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ARC-Challenge (accuracy) (decisio…</a>       6  1.10  0.31    12.8   6.7%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: CRUXEval (accuracy) (decision-ind…</a>       6  0.93  0.33     7.8   6.4%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: HellaSwag (accuracy) (decision-in…</a>       6  1.21  0.37    10.6   6.0%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: MMLU (accuracy) (decision-index-p…</a>       6  0.84  0.30     7.8   5.9%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: API-Bank (accuracy) (decision-ind…</a>       6  0.97  0.36     7.2   5.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BFCL (case exact accuracy) (decis…</a>       6  0.94  0.32     8.9   5.0%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ARC-Easy (accuracy) (decision-ind…</a>       6  1.00  0.31    10.4   5.0%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ACOS (per-review F1) (decision-in…</a>       6  0.71  0.32     5.0   4.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: WinoGrande (accuracy) (decision-i…</a>       6  0.95  0.39     5.9   4.1%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: MMLU-Pro (accuracy) (decision-ind…</a>       6  0.61  0.32     3.7   3.2%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: FinEntity (macro-F1) (decision-in…</a>       6  0.78  0.37     4.5   3.1%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: SATA-Bench (case exact accuracy) …</a>       6  0.60  0.34     3.1   2.8%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Amazon ESCI (macro-F1) (decision-…</a>       6  0.56  0.31     3.1   2.7%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ChessBench (accuracy) (decision-i…</a>       6  0.55  0.32     2.9   2.6%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: GSM8K (accuracy (4- and 10-choice…</a>       6  0.61  0.42     2.1   1.9%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: PhishNChips phishing decisions (a…</a>       6  0.45  0.33     1.9   1.6%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Habermas Machine (accuracy) (deci…</a>       6  0.54  0.40     1.8   1.6%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: CLadder (accuracy) (decision-inde…</a>       6  0.86  0.60     2.0   1.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: MuSR (accuracy) (decision-index-p…</a>       6  0.61  0.46     1.8   1.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: New Yorker (accuracy) (decision-i…</a>       6  0.44  0.35     1.6   1.3%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BBH (accuracy) (decision-index-pu…</a>       6  0.47  0.38     1.6   1.3%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Humicroedit (accuracy) (decision-…</a>       6  0.40  0.33     1.5   1.3%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: GPQA Diamond (accuracy) (decision…</a>       6  0.36  0.32     1.2   1.1%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ANLI (macro-F1) (decision-index-p…</a>       6  0.46  0.42     1.2   1.0%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: cfcolor (accuracy) (decision-inde…</a>       6  0.32  0.31     1.1   1.0%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: NLI4CT (macro-F1) (decision-index…</a>       6  0.37  0.36     1.1   0.9%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ContractNLI (macro-F1) (decision-…</a>       6  0.30  0.35     0.7   0.6%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BANKING77 (macro-F1) (decision-in…</a>       6  0.41  0.54     0.6   0.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ToolRet (nDCG@10) (decision-index…</a>       6  0.23  0.31     0.5   0.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BRIGHT (nDCG@10) (decision-index-…</a>       6  0.24  0.33     0.5   0.5%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: VAST (macro-F1) (decision-index-p…</a>       6  0.32  0.49     0.4   0.4%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: CLINC150+OOS (macro-F1) (decision…</a>       6  0.54  0.82     0.4   0.3%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: HoVer (accuracy) (decision-index-…</a>       6  0.26  0.42     0.4   0.3%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: RouterBench (selected quality (qu…</a>       6  0.15  0.31     0.2   0.2%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: When2Call (accuracy) (decision-in…</a>       6  0.21  0.45     0.2   0.2%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: RAGTruth (F1 on hallucinated clas…</a>       6  0.33  0.78     0.2   0.2%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: iSarcasmEval (Sarcasm F1 · track …</a>       6  0.22  0.57     0.1   0.1%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: POP909-CL (accuracy) (decision-in…</a>       6  0.26  0.88     0.1   0.1%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: HLE (accuracy) (decision-index-pu…</a>       6  0.07  0.34     0.0   0.0%
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: SGD/SGD-X (macro-F1) (decision-in…</a>       6  0.05  0.63     0.0   0.0%
-</pre>
-
 ### Speech-to-text models (178 scored models, prior 5.0%)
 
 <pre>
@@ -3314,6 +3266,92 @@ test (evaluator)                                          models     a     σ  w
 <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">TED-LIUM test WER (short-form) (first-party-nvidia-asr-…</a>       5  0.20  0.33     0.4   0.0%
 <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">TED-LIUM test WER (short-form) (card2-distil-whisper-di…</a>       4  0.20  0.33     0.4   0.0%
 <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">TED-LIUM test WER (short-form) (card2-qwen-qwen3-asr-1-…</a>       4  0.20  0.38     0.3   0.0%
+</pre>
+
+### Decision models (321 scored models, prior 0.9%)
+
+<pre>
+test (evaluator)                                          models     a     σ  weight  share
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: MMLU-Pro (accuracy) (decision-ind…</a>     247  0.92  0.25    13.6   7.3%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: MMLU (accuracy) (decision-index-p…</a>     247  0.92  0.28    11.1   5.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: HellaSwag (accuracy) (decision-in…</a>     247  1.28  0.39    11.0   4.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BBH (accuracy) (decision-index-pu…</a>     247  0.81  0.26     9.7   4.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ARC-Challenge (accuracy) (decisio…</a>     247  1.50  0.46    10.5   4.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: NLI4CT (macro-F1) (decision-index…</a>     247  0.62  0.21     8.4   4.2%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ANLI (macro-F1) (decision-index-p…</a>     247  0.69  0.25     7.6   3.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ARC-Easy (accuracy) (decision-ind…</a>     247  1.72  0.56     9.5   3.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: New Yorker (accuracy) (decision-i…</a>     247  0.71  0.30     5.5   2.8%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · action selection (all-request accura…</a>      57  1.01  0.19    29.4   2.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: WinoGrande (accuracy) (decision-i…</a>     247  0.75  0.33     5.4   2.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: GPQA Diamond (accuracy) (decision…</a>     247  0.43  0.20     4.8   2.6%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · routing (all-request accuracy) (deci…</a>      57  1.38  0.27    26.4   2.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: GSM8K (accuracy (4- and 10-choice…</a>     247  0.98  0.48     4.3   2.3%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BFCL (case exact accuracy) (decis…</a>     247  1.36  0.59     5.2   2.2%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · navigation (all-request accuracy) (d…</a>      57  1.53  0.34    20.0   1.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BRIGHT (nDCG@10) (decision-index-…</a>     247  0.43  0.23     3.4   1.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Amazon ESCI (macro-F1) (decision-…</a>     247  0.50  0.28     3.1   1.7%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: iSarcasmEval (Sarcasm F1 · track …</a>     247  0.70  0.41     3.0   1.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: API-Bank (accuracy) (decision-ind…</a>     237  1.09  0.60     3.3   1.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Humicroedit (accuracy) (decision-…</a>     247  0.23  0.13     3.0   1.6%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · record classification (all-request a…</a>      57  0.82  0.21    14.7   1.4%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · verification (all-request accuracy) …</a>      57  0.61  0.17    12.6   1.2%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · completion assessment (all-request a…</a>      57  1.70  0.49    11.9   1.1%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: SATA-Bench (case exact accuracy) …</a>     247  0.70  0.50     1.9   1.1%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BPoMP (accuracy) (decision-index-…</a>     247  0.95  0.64     2.2   1.0%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: MuSR (accuracy) (decision-index-p…</a>     247  0.37  0.27     1.9   1.0%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Mind2Web (chance-corrected …</a>      62  0.21  0.13     2.5   1.0%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · bounded extraction (all-request accu…</a>      57  2.19  0.67    10.5   1.0%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · triage (all-request accuracy) (decis…</a>      57  1.38  0.45     9.6   0.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · MMMU-Pro vision (chance-cor…</a>      62  0.19  0.12     2.2   0.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: RouterBench (selected quality (qu…</a>     245  0.38  0.28     1.8   0.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ACOS (per-review F1) (decision-in…</a>     247  0.80  0.65     1.5   0.9%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: cfcolor (accuracy) (decision-inde…</a>     247  0.24  0.19     1.6   0.8%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · document record classification (all-…</a>      57  0.78  0.26     8.7   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: When2Call (accuracy) (decision-in…</a>     247  0.81  0.62     1.7   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Winoground (chance-correcte…</a>      62  0.19  0.13     2.0   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ContractNLI (macro-F1) (decision-…</a>     247  0.67  0.53     1.6   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: CRUXEval (accuracy) (decision-ind…</a>     247  0.67  0.54     1.5   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: CLadder (accuracy) (decision-inde…</a>     247  0.54  0.44     1.5   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ToolRet (nDCG@10) (decision-index…</a>     247  0.43  0.36     1.5   0.8%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: VAST (macro-F1) (decision-index-p…</a>     247  0.57  0.48     1.4   0.7%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Moderation (Hateful Memes) …</a>      62  0.18  0.13     1.8   0.7%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · rubric scoring prioritization (all-r…</a>      57  0.74  0.27     7.4   0.7%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · content classification (all-request …</a>      57  1.28  0.48     7.1   0.7%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · RealWorldQA (chance-correct…</a>      62  0.16  0.13     1.6   0.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Home appliance simulator (case ex…</a>     244  1.66  1.54     1.2   0.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CharXiv (chance-corrected p…</a>      62  0.17  0.13     1.5   0.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: POP909-CL (accuracy) (decision-in…</a>     238  1.41  1.40     1.0   0.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: FinEntity (macro-F1) (decision-in…</a>     247  0.85  0.77     1.2   0.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: RAGTruth (F1 on hallucinated clas…</a>     247  0.78  0.74     1.1   0.6%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: ChessBench (accuracy) (decision-i…</a>     247  0.38  0.40     0.9   0.5%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · review scoring (all-request accuracy…</a>      57  0.77  0.34     5.2   0.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · R-Bench-M (chance-corrected…</a>      62  0.14  0.12     1.3   0.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · InfographicVQA (chance-corr…</a>      62  0.13  0.12     1.2   0.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · BLINK (chance-corrected poi…</a>      62  0.18  0.17     1.2   0.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: HoVer (accuracy) (decision-index-…</a>     247  0.45  0.47     0.9   0.5%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: PhishNChips phishing decisions (a…</a>     246  0.53  0.58     0.8   0.4%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CV-Bench (chance-corrected …</a>      62  0.11  0.12     0.9   0.4%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · risk scoring (all-request accuracy) …</a>      57  0.66  0.34     3.9   0.4%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · retrieval ranking (all-request accur…</a>      57  1.34  0.72     3.5   0.3%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: CLINC150+OOS (macro-F1) (decision…</a>     239  0.95  1.12     0.7   0.3%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · target selection (all-request accura…</a>      57  1.16  0.64     3.3   0.3%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · KIE (CORD+FUNSD) (chance-co…</a>      62  0.10  0.12     0.7   0.3%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: Habermas Machine (accuracy) (deci…</a>     247  0.23  0.33     0.5   0.3%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: BANKING77 (macro-F1) (decision-in…</a>     239  0.60  0.81     0.5   0.3%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · reasoning (all-request accuracy) (de…</a>      57  0.75  0.52     2.1   0.2%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · retrieval verification (all-request …</a>      57  0.79  0.59     1.8   0.2%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · document workflows (all-request accu…</a>      57  0.57  0.47     1.5   0.1%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · guardrails moderation (all-request a…</a>      57  0.53  0.51     1.1   0.1%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · safety gating (all-request accuracy)…</a>      57  1.12  1.10     1.0   0.1%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · semantic filtering (all-request accu…</a>      57  0.66  0.82     0.7   0.1%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · document classification (all-request…</a>      57  0.58  0.77     0.6   0.1%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · content moderation (all-request accu…</a>      57  1.02  1.43     0.5   0.0%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · context management (all-request accu…</a>      57  0.63  1.02     0.4   0.0%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · entity alignment (all-request accura…</a>      57  0.79  1.45     0.3   0.0%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · function agent skill routing (all-re…</a>      57  0.65  1.36     0.2   0.0%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: HLE (accuracy) (decision-index-pu…</a>     247  0.05  0.25     0.0   0.0%
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/README.md">DecisionBench v1 · routing triage (all-request accuracy…</a>      57  0.24  1.31     0.0   0.0%
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md">Decision Index 0.4.1: SGD/SGD-X (macro-F1) (decision-in…</a>     246  0.05  0.80     0.0   0.0%
 </pre>
 
 <a name="sources"></a>
@@ -5800,8 +5838,16 @@ Changes: selected numerical cells transcribed into JSON; percentages divided by 
 - **Spark-X2.6 model cards (thinking high)** · first-party · [Apache-2.0](../licenses/spark-x26.txt) · [terms](https://huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/LICENSE) · checked 2026-10-31  
   <sub>XHToken / SparkLLM. Spark-X2.6 model cards and benchmark figures (2026), Apache-2.0. Selected own-model numbers converted to fractions; no endorsement.</sub>
 - **Decision Index 0.4.1 public suite** · dataset · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [terms](https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md) · checked 2026-10-31  
-  <sub>Apolinário Passos / Decision Index contributors, Decision Index 0.4.1, generated 2026-10-29; CC BY 4.0. Selected per-benchmark values and exact engines retained; whatmodel fits its own within-category score. No endorsement.</sub>
+  <sub>Apolinário Passos / Decision Index contributors, Decision Index 0.4.1, generated 2026-10-29; CC BY 4.0. All public per-benchmark values and exact tested engine identities retained; whatmodel fits its own category score. No endorsement.</sub>
 - **Cloudflare Workers AI decision model pricing and limits** · first-party · Factual list price and context limit (not licensed content) · [terms](https://developers.cloudflare.com/workers-ai/platform/pricing/) · checked 2026-10-31  
   <sub>Cloudflare official Workers AI model documentation. Own endpoint prices and context limits manually observed 2026-10-31; token limits expressed in thousands. No endorsement.</sub>
+- **Decision Index Vision 0.4 public suite** · dataset · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [terms](https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/README.md) · checked 2026-10-31  
+  <sub>Apolinário Passos / Decision Index contributors, 2026-10-29; CC BY 4.0. Original chance-corrected points retained, including negatives. No endorsement.</sub>
+- **Hanno Labs DecisionBench v1 reviewed results** · dataset · [CC0 1.0](../licenses/decisionbench-results-CC0.txt) · [terms](https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/LICENSE) · checked 2026-10-31  
+  <sub>Hanno Labs and result submitters, DecisionBench v1 results registry, CC0 1.0. whatmodel converts supported-family accuracy to all-request accuracy; missing/error requests count incorrect. Recipe and checkpoint identities preserved.</sub>
+- **JevBench 0.1.0 mini evaluation reports** · dataset · [Apache-2.0](../licenses/jevbench-Apache-2.0.txt) · [terms](https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/README.md) · checked 2026-10-31  
+  <sub>Chen Feng, ML Lab, Queen’s University Belfast (2026), JevBench. Apache-2.0. Selected mini-suite dimensions and accuracy, with tested readout identities preserved. No endorsement.</sub>
+- **TypeSafe official model pricing and context** · first-party · Factual vendor-reported price/context (not licensed content) · [terms](https://docs.typesafe.ai/models) · checked 2026-10-31  
+  <sub>TypeSafe official Models documentation, observed 2026-10-31.</sub>
 
 [interactive version](https://whatmodel.sh/method)

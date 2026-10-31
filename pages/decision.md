@@ -2,9 +2,17 @@
 
 # whatmodel.sh · find the best decision models you can run
 
-[llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · **decision** · [stt](stt.md)
+[llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · [stt](stt.md) · **decision**
 
-updated 2026-10-31 01:54 UTC · 6 models · scores combine 42 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/decision)
+updated 2026-10-31 02:55 UTC · 322 models · scores combine 80 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/decision)
+
+<details><summary>Extra: filter models and choose a score scale</summary>
+
+[All sets](https://whatmodel.sh/decision) · [Decision Index 0.4.1: ACOS (per-review F1) · 321 models](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041) · [JevBench mini 0.1.0 · unchanged-answer accuracy · 21 models](https://whatmodel.sh/decision?set=jevbench-mini-010-accuracy)
+
+Filtering keeps overall scores. On the site, choose **within selected set** to use only that set’s evaluations. Models without a shared score scale are marked **not yet calibrated**.
+
+</details>
 
 Run `curl "whatmodel.sh/decision?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/decision` for this list in your terminal.
 
@@ -21,11 +29,11 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
 
 ```text
   score vs API price
-  61.0 ┤ ·●·Clef-flash · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │              ·                              ·                             ·       ∘
-  60.0 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │              ·                              ·                             ·
-       │                                                              ∘
+    70 ┤ · · · ◆ Jev 1.13· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+       │       │      ·                              ·                             ·
+    65 ┤ · · · │ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+    60 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ ·
+       │  ●─Clef-flash                                                ∘
        └──────────────┬──────────────────────────────┬─────────────────────────────┬──────────
                     $0.05                          $0.1                          $0.2
 ```
@@ -36,22 +44,22 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
   score vs API price (USD per million input tokens, log)
   ● open weights  ◆ API only  ─┘ best for the price
        │
-       │  ● Clef-flash·                              ·                             ·
-  61.0 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │              ·                              ·                             ·       ∘
-       │
-       │              ·                              ·                             ·
-       │
-       │              ·                              ·                             ·
-       │
-       │              ·                              ·                             ·
-  60.0 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │              ·                              ·                             ·
-       │
-       │              ·                              ·                             ·
-       │
-       │              ·                              ·                             ·
-       │                                                              ∘
+    70 ┤ · · · ◆ Jev 1.13· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+       │       │
+       │       │      ·                              ·                             ·
+       │       │
+       │       │      ·                              ·                             ·
+       │       │
+    65 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+       │       │
+       │       │      ·                              ·                             ·
+       │       │
+       │       │      ·                              ·                             ·
+       │       │
+    60 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ ·
+       │       │
+       │       │      ·                              ·                             ·
+       │  ●─Clef-flash                                                ∘
        │              ·                              ·                             ·
        └──────────────┬──────────────────────────────┬─────────────────────────────┬──────────
                     $0.05                          $0.1                          $0.2
@@ -61,22 +69,22 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
   score vs memory to run it (GB, log)
   ─┘ best for the memory
        │
-       │              ·                     ·      ● Clef-flash          ·         ∘
-    60 ┤ · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · · · · · · · · · · · · ∘ ·
-       │              ·                     ·      │                     ·         ∘
+       │              ·                     ·              Jebadiah 27B v2.1 (T1e) ● Clef
+    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · ·
+       │              ·                     ·      ●─Clef-flash────────────────────┘       ∘
        │                                           │
        │              ·                     ·      │                     ·
-       │                                           │
-       │              ·                     ·      ∘                     ·
-       │                                           │
-    40 ┤ · · · · · · ··· · · · · · · · · · ··· · · │ · · · · · · · · · · · · · · · · · · · · ·
-       │                                           │
-       │              ·                     ·      │                     ·
+       │                                           ∘
+    50 ┤ · · · · · · ··· · · · · · · · · · ··· · · │ · · · · · · · · · · · · · · · · · · · · ·
        │                                           │
        │              ·                     ·      │                     ·
        │                                           │
        │              ·                     ·      │                     ·
-    20 ┤ ·●─Strands Decider 2B (Hobso…─────────────┘ · · · · · · · · · · · · · · · · · · · · ·
+    40 ┤ · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · · · · · · · · · · · · · ·
+       │              ·                     ·      │                     ·
+       │                                           │
+       │              ·                     ·      │                     ·
+       │  ●─Strands Decider 2B (Hobso…─────────────┘
        │              ·                     ·                            ·
        └──────────────┬─────────────────────┬────────────────────────────┬────────────────────
                     10GB                  20GB                         50GB
@@ -85,13 +93,329 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
 </details>
 
 <pre>
-#  model                       score  where                  RAM  get it
-1  <a href="model/clef-flash.md">Clef-flash</a>                  61±2†  api $0.038/M inpu…   ~25GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-flash/">cloudflare.com ↗</a>
-2  <a href="model/clef.md">Clef</a>                        61±2†  api $0.24/M input…   ~68GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef/">cloudflare.com ↗</a>
-3  <a href="model/clef-omni.md">Clef-omni</a>                   59±2†  api $0.15/M input…   ~87GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-omni/">cloudflare.com ↗</a>
-4  <a href="model/jebadiah-27b-v2-1-t1e.md">Jebadiah 27B v2.1 (T1e)</a>     55±2†  local                ~69GB  <a href="model/jebadiah-27b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
-5  <a href="model/jebadiah-9b-v2-1-t1e.md">Jebadiah 9B v2.1 (T1e)</a>      45±1†  local                ~25GB  <a href="model/jebadiah-9b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
-6  <a href="model/strands-decider-2b-hobson-v21.md">Strands Decider 2B (Hobso…</a>  19±1†  local               ~6.6GB  <a href="model/strands-decider-2b-hobson-v21.md#run-it-on-your-own-machine">how to run ›</a>
+  #  model                                     score  where                  RAM  get it
+  1  <a href="model/decisionbench-hanno-labs-bosun-v3-1-1-7b-2ef2d972.md">bosun-v3.1-1.7b (Decision…</a>                77±1†  comparison only
+  2  <a href="model/decisionbench-hanno-labs-bosun-v3-1-0-6b-aaa9dd06.md">bosun-v3.1-0.6b (Decision…</a>                75±1†  comparison only
+  3  <a href="model/decisionbench-kshetrajna12-reflex-27b-1d4bf0f2.md">reflex-27b (DecisionBench…</a>                74±1†  comparison only
+  4  <a href="model/decision-mammoth-1.md">baselabs mammoth-1 (27B)</a>                  74±2†  comparison only
+  5  <a href="model/decisionbench-mohit67890-imajev-4b-712891d1.md">imajev-4b (DecisionBench …</a>                73±1†  comparison only
+  6  <a href="model/decisionbench-zhengxuyu-litjev-1d4bf0f2.md">litjev (DecisionBench 1d4…</a>                73±1†  comparison only
+  7  <a href="model/decisionbench-z-ai-glm-5-3-flash-openrout.md">glm-5.3-flash (DecisionBe…</a>                73±1†  comparison only
+  8  <a href="model/decisionbench-kshetrajna12-reflex-qwen3-5-4b-lora-9df1cbbb.md">reflex-qwen3.5-4b-lora (D…</a>                73±1†  comparison only
+  9  <a href="model/decisionbench-mohit67890-imajev-4b-c9e5f132.md">imajev-4b (DecisionBench …</a>                73±1†  comparison only
+ 10  <a href="model/decisionbench-mapika-decider-35b-a3b-d9783c58.md">decider-35b-a3b (Decision…</a>                72±1†  comparison only
+ 11  <a href="model/decisionbench-ekzhang-openjev-sglang-1355db6a.md">openjev-sglang (DecisionB…</a>                72±1†  comparison only
+ 12  <a href="model/decision-jeffan-31b-1710.md">Jeffan-31b-1710</a>                           72±2†  comparison only
+ 13  <a href="model/decisionbench-eldanring-winnow-12b-b6ac22b0.md">Winnow-12B (DecisionBench…</a>                72±1†  comparison only
+ 14  <a href="model/decisionbench-juspay-xor-679decd4.md">xor (DecisionBench 679dec…</a>                72±1†  comparison only
+ 15  <a href="model/decisionbench-openai-gpt-5-6-luna-openrout.md">gpt-5.6-luna (DecisionBen…</a>                72±1†  comparison only
+ 16  <a href="model/decisionbench-featherless-ai-simplejev-qwen3-8-27b-1d4bf0f2.md">simplejev-qwen3.8-27b (De…</a>                72±1†  comparison only
+ 17  <a href="model/decisionbench-deepseek-deepseek-v4-1-flash-openrout.md">deepseek-v4.1-flash (Deci…</a>                71±1†  comparison only
+ 18  <a href="model/decisionbench-featherless-ai-simplejev-qwen3-6-35b-a3b-995ad96e.md">simplejev-qwen3.6-35b-a3b…</a>                71±1†  comparison only
+ 19  <a href="model/decisionbench-octalab-inc-jqv-9216db57.md">jqv (DecisionBench 9216db…</a>                71±1†  comparison only
+ 20  <a href="model/decisionbench-razorback16-openjev-ec4ff3df.md">openjev (DecisionBench ec…</a>                70±1†  comparison only
+ 21  <a href="model/jev-1-13.md">Jev 1.13</a>                                  70±1†  api $0.042/M inpu…          <a href="https://docs.typesafe.ai/models">typesafe.ai ↗</a>
+ 22  <a href="model/decisionbench-zefancai-open-jev-9b-47e96688.md">Open-Jev-9B (DecisionBenc…</a>                70±1†  comparison only
+ 23  <a href="model/decisionbench-davipar-djev-dev-f7f5b7f5.md">djev-dev (DecisionBench f…</a>                70±1†  comparison only
+ 24  <a href="model/decisionbench-ikermoel-open-alternative-jev-4a85df18.md">open-alternative-jev (Dec…</a>                70±1†  comparison only
+ 25  <a href="model/decision-sieve-31b-v3.md">Sieve 31B v3</a>                              70±2†  comparison only
+ 26  <a href="model/decisionbench-jaredpalmer-kev-4b-485ace87.md">kev-4b (DecisionBench 485…</a>                69±1†  comparison only
+ 27  <a href="model/decision-glide-v1-2.md">Fastino GLiDE 1.2</a>                         69±2†  comparison only
+ 28  <a href="model/decisionbench-togethercomputer-tev1-4b-experimental-0b7becf0.md">Tev1-4B-experimental (Dec…</a>                69±1†  comparison only
+ 29  <a href="model/decisionbench-jaredpalmer-kev-8b-c80773da.md">kev-8b (DecisionBench c80…</a>                69±1†  comparison only
+ 30  <a href="model/decision-knowline-31b-gen1.md">KnowLine 31B Gen1</a>                         69±2†  comparison only
+ 31  <a href="model/decision-ainvest-decision-27b-v1-0.md">Ainvest-Decision-27B v1.0</a>                 69±2†  comparison only
+ 32  <a href="model/decision-vllm-sr-d3-ultra.md">vLLM-SR d3-ultra (Decisio…</a>                69±2†  comparison only
+ 33  <a href="model/decision-startlux-decision-v1-1-27b-instant.md">StartLux-Decision v1.1 27B</a>                69±2†  comparison only
+ 34  <a href="model/decisionbench-mapika-decider-2b-fa996cea.md">decider-2b (DecisionBench…</a>                68±1†  comparison only
+ 35  <a href="model/decisionbench-bespokelabs-bespoke-nimble-9b-594dfdcf.md">Bespoke-Nimble-9B (Decisi…</a>                68±1†  comparison only
+ 36  <a href="model/decisionbench-theoleecj-semif-1f2dea3e.md">SemIf (DecisionBench 1f2d…</a>                68±1†  comparison only
+ 37  <a href="model/decision-vllm-sr-d3-turbo-v11.md">vLLM-SR d3-turbo v1.1 (27…</a>                68±2†  comparison only
+ 38  <a href="model/decisionbench-cua-ai-cua-s1-4b-0-2-16818868.md">cua-s1-4b-0.2 (DecisionBe…</a>                68±1†  comparison only
+ 39  <a href="model/decision-elephant-1-baselabs.md">baselabs elephant-1 (9B)</a>                  67±2†  comparison only
+ 40  <a href="model/decision-wemm-jev-27b.md">WeMM-JEV-27B</a>                              67±1†  comparison only
+ 41  <a href="model/decision-knowline-35b-a3b-gen1-5.md">KnowLine 35B-A3B Gen1.5</a>                   67±2†  comparison only
+ 42  <a href="model/decisionbench-final-bench-ztc-judge-9b-05d154a5.md">ZTC-Judge-9B (DecisionBen…</a>                67±1†  comparison only
+ 43  <a href="model/decisionbench-mmastrac-djev-spark-1444f3e9.md">djev-spark (DecisionBench…</a>                66±1†  comparison only
+ 44  <a href="model/decision-h2o-lightning-31b-v1-1.md">H2O Lightning 31B v1.1</a>                    66±2†  comparison only
+ 45  <a href="model/decision-drex-max-v1.md">Nace.AI Drex Max v1 (27B)</a>                 66±1†  comparison only
+ 46  <a href="model/decision-nimble-v4-max.md">Bespoke Nimble v4 Max (27…</a>                66±2†  comparison only
+ 47  <a href="model/decision-vera-large.md">vera-large</a>                                66±2†  comparison only
+ 48  <a href="model/decision-onejev1-6-27b.md">OneJev1.6-27B</a>                             66±2†  comparison only
+ 49  <a href="model/decision-pplx-decider-v1-2.md">Perplexity Decider v1.2 (…</a>                65±1†  comparison only
+ 50  <a href="model/decision-autotrust-jev-27b-v11.md">AutoTrust-JEV-27B v1.1</a>                    65±1†  comparison only
+ 51  <a href="model/decision-oak-1-1.md">MISA AI 2.0 Decision Plus…</a>                65±2†  comparison only
+ 52  <a href="model/decision-knowline-26b-a4b-gen2-5.md">KnowLine 26B-A4B Gen2.5</a>                   65±2†  comparison only
+ 53  <a href="model/decision-turion-jev-31b.md">Turion Jev 31B</a>                            65±2†  comparison only
+ 54  <a href="model/decisionbench-zeroentropy-zerank-2-reranker-5eae30d5.md">zerank-2-reranker (Decisi…</a>                65±1†  comparison only
+ 55  <a href="model/decision-startlux-decision-v1-1-9b-instant.md">StartLux-Decision v1.1 9B</a>                 65±2†  comparison only
+ 56  <a href="model/decisionbench-zefancai-open-jev-2b-0c7aa498.md">Open-Jev-2B (DecisionBenc…</a>                65±1†  comparison only
+ 57  <a href="model/decision-vllm-sr-d3-v310.md">vLLM-SR d3 (27B)</a>                          65±1†  comparison only
+ 58  <a href="model/decision-ajev-lm6q.md">AJev lm6q (Gemma 4 31B)</a>                   64±2†  comparison only
+ 59  <a href="model/decision-anyjev-tacitus-31b.md">AnyJev Tacitus 31B</a>                        64±2†  comparison only
+ 60  <a href="model/decision-matilda-decision-v1.md">Matilda Decision v1</a>                       64±2†  comparison only
+ 61  <a href="model/decision-oneshot-27b.md">OneShot 27B</a>                               64±2†  comparison only
+ 62  <a href="model/decision-amos-1-large.md">Amos 1 Large (27B)</a>                        64±1†  comparison only
+ 63  <a href="model/decision-visionjev-1-0-0.md">VisionJEV 1.0.0 (27B)</a>                     64±1†  comparison only
+ 64  <a href="model/decision-mogan-decision-31b-it.md">mogan-decision-31B-it</a>                     64±2†  comparison only
+ 65  <a href="model/decision-rbdash-decision-v0-2.md">RBDash-Decision v0.2</a>                      64±4†  comparison only
+ 66  <a href="model/decision-h2o-lightning-31b.md">H2O Lightning 31B</a>                         63±4†  comparison only
+ 67  <a href="model/decision-sieve-27b-v2.md">Sieve 27B v2</a>                              63±2†  comparison only
+ 68  <a href="model/decision-cerno-27b.md">Cerno 27B</a>                                 63±2†  comparison only
+ 69  <a href="model/decision-torchcast-decision-27b.md">Torchcast Decision 27B</a>                    63±2†  comparison only
+ 70  <a href="model/decision-oenogarum.md">oenogarum (Gemma 4 31B)</a>                   63±2†  comparison only
+ 71  <a href="model/decision-aleria-judge-1-1-1.md">Aleria Judge 1.1.1 (Gemma…</a>                62±2†  comparison only
+ 72  <a href="model/decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326.md">Decision-1.0-Eos-0.8B (De…</a>                62±1†  comparison only
+ 73  <a href="model/decision-standard-one-35b-sh-v1.md">Standard One 35B SH (v1)</a>                  62±2†  comparison only
+ 74  <a href="model/decision-decider-31b.md">Decider 31B (NVFP4)</a>                       62±2†  comparison only
+ 75  <a href="model/decision-lychee-27b.md">Lychee-27B</a>                                62±2†  comparison only
+ 76  <a href="model/decision-darwin-27b-ztc.md">Darwin-27B-ZTC</a>                            62±2†  comparison only
+ 77  <a href="model/decision-flexdm-gemma-4-31b.md">FlexDM · Gemma-4-31B (dec…</a>                62±1†  comparison only
+ 78  <a href="model/decision-rsi-jev-v6-1-vl-27b-auto.md">RSI-Jev v6.1 VL 27B (effo…</a>                62±1†  comparison only
+ 79  <a href="model/decision-knowline-9b-gen1.md">KnowLine 9B Gen1</a>                          62±1†  comparison only
+ 80  <a href="model/decision-startlux-decision-v1-1-4b-instant.md">StartLux-Decision v1.1 4B</a>                 62±1†  comparison only
+ 81  <a href="model/decision-herbert-v0-5.md">Herbert v0.5</a>                              62±4†  comparison only
+ 82  <a href="model/decision-allec-oavg.md">allec-oavg (Gemma 4 31B)</a>                  62±1†  comparison only
+ 83  <a href="model/decision-onejev1-5-27b.md">OneJev1.5-27B</a>                             61±4†  comparison only
+ 84  <a href="model/decision-span-02.md">span-02 (Gemma 4 26B-A4B)</a>                 61±1†  comparison only
+ 85  <a href="model/jebadiah-27b-v2-1-t1e.md">Jebadiah 27B v2.1 (T1e)</a>                   61±1†  local                ~69GB  <a href="model/jebadiah-27b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
+ 86  <a href="model/decision-jeffan-4b-2010.md">Jeffan-4B-2010</a>                            61±1†  comparison only
+ 87  <a href="model/decision-quyet-1-0-large.md">Quyet-1.0-Large</a>                           61±1†  comparison only
+ 88  <a href="model/decision-knowline-4b-gen5-5.md">KnowLine 4B Gen5.5</a>                        61±1†  comparison only
+ 89  <a href="model/clef.md">Clef</a>                                      61±1†  api $0.24/M input…   ~68GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef/">cloudflare.com ↗</a>
+ 90  <a href="model/decision-aleria-judge-1-1-0.md">Aleria Judge 1.1.0 (Gemma…</a>                60±4†  comparison only
+ 91  <a href="model/decision-onejev1-6-9b.md">OneJev1.6-9B</a>                              60±1†  comparison only
+ 92  <a href="model/decision-jev-brain-gemma-4-31b.md">jev-brain · Gemma-4-31B (…</a>                60±1†  comparison only
+ 93  <a href="model/decisionbench-qwen-qwen3-reranker-4b-22e68366.md">Qwen3-Reranker-4B (Decisi…</a>                60±1†  comparison only
+ 94  <a href="model/decision-drex-v2-0.md">Nace.AI Drex v2.0 (35B-A3…</a>                60±1†  comparison only
+ 95  <a href="model/decision-senova-4b-v2.md">Senova-4B v2</a>                              60±1†  comparison only
+ 96  <a href="model/decision-knowline-35b-a3b-gen1.md">KnowLine 35B-A3B Gen1</a>                     60±4†  comparison only
+ 97  <a href="model/decision-jev-vision-27b-r2.md">jev-vision-27b</a>                            60±4†  comparison only
+ 98  <a href="model/decision-anyjev-l0-gemma-4-31b.md">AnyJev L0 · Gemma-4-31B (…</a>                60±1†  comparison only
+ 99  <a href="model/decision-jev-27b-vl.md">JEV-27B-VL</a>                                60±4†  comparison only
+100  <a href="model/decision-sieve-vision-27b.md">Sieve-Vision-27B</a>                          60±4†  comparison only
+101  <a href="model/decision-bobcat-1-3.md">Bobcat 1.3 (31B)</a>                          59±1†  comparison only
+102  <a href="model/decision-linne-fern-1-0.md">linne-fern 1.0 (27B)</a>                      59±1†  comparison only
+103  <a href="model/decision-xor-26b-a4b-v1-2.md">Xor 26B-A4B v1.2</a>                          59±1†  comparison only
+104  <a href="model/decision-jev-35b.md">JEV-35B</a>                                   59±1†  comparison only
+105  <a href="model/decision-synack-decide-26b-a4b-v7.md">SynACK Decide 26B-A4B v7</a>                  59±1†  comparison only
+106  <a href="model/decision-decisio-0-6-0-gemma-4-31b.md">decisio 0.6.0 (Gemma 4 31…</a>                58±1†  comparison only
+107  <a href="model/decision-deck31b.md">deck31b (Gemma 4 31B) (de…</a>                58±1†  comparison only
+108  <a href="model/decision-tern-35b-a3b.md">Tern-35B-A3B</a>                              58±1†  comparison only
+109  <a href="model/decision-decider-chat-gemma4-31b.md">Decider chat · Gemma-4-31…</a>                58±1†  comparison only
+110  <a href="model/decision-kev-27b.md">Kev 27B</a>                                   58±1†  comparison only
+111  <a href="model/decision-shisa-de-2-1-repeat.md">Shisa DE-2.1 (repeat)</a>                     58±1†  comparison only
+112  <a href="model/decision-wald-26b-a4b.md">Wald-26B-A4B</a>                              58±1†  comparison only
+113  <a href="model/clef-flash.md">Clef-flash</a>                                58±1†  api $0.038/M inpu…   ~25GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-flash/">cloudflare.com ↗</a>
+114  <a href="model/decision-garum.md">garum (Gemma 4 31B)</a>                       58±1†  comparison only
+115  <a href="model/clef-omni.md">Clef-omni</a>                                 58±1†  api $0.15/M input…   ~87GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-omni/">cloudflare.com ↗</a>
+116  <a href="model/decision-blink-v0-3-26b-a4b-nvfp4.md">Blink v0.3 26B-A4B (NVFP4)</a>                58±1†  comparison only
+117  <a href="model/decision-vllm-sr-d3-flash.md">vLLM-SR d3-flash (9B)</a>                     58±1†  comparison only
+118  <a href="model/decision-jev-gemma4-26b-a4b.md">GEV-26B-Decide</a>                            58±1†  comparison only
+119  <a href="model/decisionbench-jaredpalmer-kev-0-6b-dece6dba.md">kev-0.6b (DecisionBench d…</a>                58±1†  comparison only
+120  <a href="model/decision-decision-2-0-vega-27b.md">vLLM-SR Decision 2.0 Vega…</a>                57±1†  comparison only
+121  <a href="model/decision-rune-26b-a4b-v3.md">Surogate Rune 26B-A4B v3</a>                  57±1†  comparison only
+122  <a href="model/decisionbench-molemo-lab-mojev-0c8695b6.md">mojev (DecisionBench 0c86…</a>                57±1†  comparison only
+123  <a href="model/decision-lumma-fev-27b.md">Lumma-fev-27B</a>                             57±1†  comparison only
+124  <a href="model/decision-onejev1-5-9b.md">OneJev1.5-9B</a>                              57±4†  comparison only
+125  <a href="model/decision-qwen-decision-27b-noncausal.md">Qwen Decision 27B noncaus…</a>                57±1†  comparison only
+126  <a href="model/decision-verdin-4b-v1-1.md">Verdin-4B v1.1</a>                            57±1†  comparison only
+127  <a href="model/decision-pplx-decider-flash-v1-2.md">Perplexity Decider Flash …</a>                57±1†  comparison only
+128  <a href="model/decision-garas.md">garas (Gemma 4 31B)</a>                       57±1†  comparison only
+129  <a href="model/decision-reflex-27b-pmscr.md">reflex Qwen3.8-27B-FP8 (p…</a>                57±1†  comparison only
+130  <a href="model/decision-ajev-gemma26-lora1.md">AJev lora1 (Gemma 4 26B-A…</a>                57±1†  comparison only
+131  <a href="model/decision-cerno-9b-v11.md">Cerno 9B v1.1</a>                             56±1†  comparison only
+132  <a href="model/decisionbench-ishesatoshi-smalljev-semantic-v9-8e2bac7c.md">smalljev-semantic-v9 (Dec…</a>                56±1†  comparison only
+133  <a href="model/decision-onejev1-6-4b.md">OneJev1.6-4B</a>                              56±1†  comparison only
+134  <a href="model/decision-drex-v1-5.md">Nace.AI Drex v1.5</a>                         56±1†  comparison only
+135  <a href="model/decision-jade.md">JADE</a>                                      56±1†  comparison only
+136  <a href="model/decision-jev-27b.md">JEV-27B</a>                                   56±1†  comparison only
+137  <a href="model/decision-simple-jev-qwen3-8-27b.md">simple-jev · Qwen3.8-27B …</a>                56±1†  comparison only
+138  <a href="model/decision-eikos-27b-fp8.md">Eikos-27B-FP8 Qwen3.8-27B…</a>                55±1†  comparison only
+139  <a href="model/decision-nimble-v3.md">Bespoke Nimble 9B v3</a>                      55±1†  comparison only
+140  <a href="model/decision-decider-chat-qwen3-6-27b.md">Decider chat · Qwen3.6-27…</a>                55±1†  comparison only
+141  <a href="model/decision-xor-1-2.md">Xor 1.2</a>                                   55±1†  comparison only
+142  <a href="model/decision-seb-9b-v2.md">Seb-9B v2</a>                                 55±1†  comparison only
+143  <a href="model/decision-jev-d3-46k.md">jev-d3-46k</a>                                55±4†  comparison only
+144  <a href="model/decision-vllm-sr-d3-mini.md">vLLM-SR d3-mini (4B)</a>                      55±1†  comparison only
+145  <a href="model/decision-mica-v0-5-4b.md">Mica v0.5 4B</a>                              55±1†  comparison only
+146  <a href="model/decision-jpt-35b-a3b.md">JPT-35B-A3B</a>                               54±1†  comparison only
+147  <a href="model/decision-ajev-lora7.md">AJev lora7 (Gemma 4 12B)</a>                  54±1†  comparison only
+148  <a href="model/decision-cerno-4b-v11.md">Cerno 4B v1.1</a>                             54±1†  comparison only
+149  <a href="model/decision-sieve-9b-plus.md">Sieve 9B v2</a>                               54±1†  comparison only
+150  <a href="model/decision-trio-spark-di.md">Trio-Spark DI (9B)</a>                        53±1†  comparison only
+151  <a href="model/decision-amber-hybrid-4b.md">Amber Hybrid 4B (decision…</a>                53±1†  comparison only
+152  <a href="model/decisionbench-convaiinnovations-laya-typed-decisions-bc76315b.md">laya-typed-decisions (Dec…</a>                53±1†  comparison only
+153  <a href="model/decision-coco-decision-2-4-4b.md">CoCo-Decision-4B 2.4</a>                      53±1†  comparison only
+154  <a href="model/decision-xor-26b-a4b-v1-1.md">xor-26b-a4b-v1.1</a>                          53±4†  comparison only
+155  <a href="model/jebadiah-9b-v2-1-t1e.md">Jebadiah 9B v2.1 (T1e)</a>                    53±1†  local                ~25GB  <a href="model/jebadiah-9b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
+156  <a href="model/decision-matilda-jev-v1-5.md">matilda-jev-v1.5 (27B)</a>                    53±4†  comparison only
+157  <a href="model/decision-sieve-vision-4b.md">Sieve-Vision-4B</a>                           53±4†  comparison only
+158  <a href="model/decisionbench-deepanwadhwa-opendecision-a51e07b5.md">OpenDecision (DecisionBen…</a>                53±1†  comparison only
+159  <a href="model/decisionbench-fastino-gliner2-5-decide-0872ab14.md">GLiNER2.5-Decide (Decisio…</a>                52±1†  comparison only
+160  <a href="model/decision-jegue-0-1.md">Jegue 0.1 (9B)</a>                            52±1†  comparison only
+161  <a href="model/decision-amber-4b.md">Amber 4B</a>                                  52±1†  comparison only
+162  <a href="model/decision-decisio-0-4-0-qwen3-6-35b-a3b.md">decisio 0.4.0 (Qwen3.6-35…</a>                52±1†  comparison only
+163  <a href="model/decision-decider-35b-nvfp4.md">Decider 35B-A3B</a>                           52±1†  comparison only
+164  <a href="model/decision-standard-one-8b-sh-v4.md">Standard One 8B SH (v4)</a>                   52±1†  comparison only
+165  <a href="model/decision-startlux-decision-v1-1-2b-instant.md">StartLux-Decision v1.1 2B</a>                 52±1†  comparison only
+166  <a href="model/decisionbench-final-bench-ztc-judge-4b-b0bb1603.md">ZTC-Judge-4B (DecisionBen…</a>                52±1†  comparison only
+167  <a href="model/decision-muria.md">muria (Gemma 4 12B)</a>                       51±1†  comparison only
+168  <a href="model/decision-ezjev-4b-s2.md">ezjev 4B s2</a>                               51±1†  comparison only
+169  <a href="model/decision-winnow-12b-q8.md">Winnow-12B</a>                                51±1†  comparison only
+170  <a href="model/decision-jevk5-9b-v0-3-3.md">JevK5 9B v0.3.3</a>                           51±1†  comparison only
+171  <a href="model/decision-jevfire-uncapped.md">Jevfire Qwen3.8-27B (deci…</a>                51±1†  comparison only
+172  <a href="model/decision-joshua-diffusion-full.md">JoshuaSP diffgemma (decis…</a>                51±1†  comparison only
+173  <a href="model/decisionbench-com-kotobalabs-open-jev-deberta-v3-large-19bf9a64.md">open-jev-deberta-v3-large…</a>                51±1†  comparison only
+174  <a href="model/decisionbench-mixedbread-ai-mxbai-rerank-base-v2-3ea9d4df.md">mxbai-rerank-base-v2 (Dec…</a>                51±1†  comparison only
+175  <a href="model/decision-decisio-0-4-0-gemma-4-12b.md">decisio 0.4.0 (Gemma 4 12…</a>                51±1†  comparison only
+176  <a href="model/decision-sieve-4b.md">Sieve 4B</a>                                  51±1†  comparison only
+177  <a href="model/decision-joey-1.md">baselabs joey-1 (2B)</a>                      51±1†  comparison only
+178  <a href="model/decision-solomon-v11-bf16-encoding.md">Solomon v1.1</a>                              50±1†  comparison only
+179  <a href="model/decision-standard-one-3b-sh-v4.md">Standard One 3B SH (v4)</a>                   50±1†  comparison only
+180  <a href="model/decision-saif-4b.md">Saif 4B</a>                                   50±1†  comparison only
+181  <a href="model/decision-jpt-9b.md">JPT-9B Qwen3.5-9B LoRA</a>                    50±1†  comparison only
+182  <a href="model/decisionbench-fastino-gliner2-large-v1-f32ea6ef.md">gliner2-large-v1 (Decisio…</a>                50±1†  comparison only
+183  <a href="model/decisionbench-heman10x-rlcd-modernbert-151m-8af2496e.md">rlcd-modernbert-151m (Dec…</a>                50±1†  comparison only
+184  <a href="model/decision-decision-2-0-lux-9b.md">vLLM-SR Decision 2.0 Lux …</a>                50±1†  comparison only
+185  <a href="model/decision-rsi-jev-v6-1-vl-4b.md">RSI-Jev v6.1 VL 4B</a>                        50±1†  comparison only
+186  <a href="model/decision-purplemist-flash-1-0.md">PurpleMIST-Flash-1.0</a>                      50±1†  comparison only
+187  <a href="model/decision-qev-2b.md">QEV-2B</a>                                    49±4†  comparison only
+188  <a href="model/decisionbench-convaiinnovations-laya-1c5edc17.md">laya (DecisionBench 1c5ed…</a>                49±1†  comparison only
+189  <a href="model/decision-jiwo-4b-v2.md">jiwo 4B v2</a>                                49±1†  comparison only
+190  <a href="model/decisionbench-jaredpalmer-kev-0-5b-9ce2fd39.md">kev-0.5b (DecisionBench 9…</a>                49±1†  comparison only
+191  <a href="model/decision-hopper-12b-trained.md">Hopper 12B (trained)</a>                      49±1†  comparison only
+192  <a href="model/decision-aplomb-1.md">Aplomb 1</a>                                  48±1†  comparison only
+193  <a href="model/decision-jev-9b.md">JEV-9B</a>                                    48±1†  comparison only
+194  <a href="model/decision-shisa-de-2-repeat.md">Shisa DE-2 (repeat)</a>                       48±4†  comparison only
+195  <a href="model/decisionbench-fastino-gliner2-5-small-v1-7e6f537f.md">gliner2.5-small-v1 (Decis…</a>                48±1†  comparison only
+196  <a href="model/decision-d1-3b.md">LiquidAI d1-3B</a>                            47±1†  comparison only
+197  <a href="model/decision-jev-omni.md">Jev-Omni</a>                                  47±1†  comparison only
+198  <a href="model/decision-decision-2-0-nox-4b.md">vLLM-SR Decision 2.0 Nox …</a>                47±1†  comparison only
+199  <a href="model/decision-jpt-4b.md">JPT-4B Qwen3.5-4B LoRA</a>                    47±1†  comparison only
+200  <a href="model/decision-nimble-v2.md">Bespoke Nimble 9B v2</a>                      47±1†  comparison only
+201  <a href="model/decision-decider-4b.md">Decider 4B</a>                                47±1†  comparison only
+202  <a href="model/decision-djev.md">djev diffgemma (decision …</a>                47±1†  comparison only
+203  <a href="model/decision-jevk5-v0-3.md">JevK5 v0.3</a>                                47±1†  comparison only
+204  <a href="model/decision-sieve-9b.md">Sieve 9B</a>                                  46±1†  comparison only
+205  <a href="model/decision-kev-9b-v2.md">Kev 9B v2</a>                                 46±1†  comparison only
+206  <a href="model/decisionbench-fastino-gliner2-5-base-v1-1a8bc24e.md">gliner2.5-base-v1 (Decisi…</a>                46±1†  comparison only
+207  <a href="model/decision-decision-4b-v1-6.md">FlyMy.AI Decision 4B v1.6</a>                 46±1†  comparison only
+208  <a href="model/decisionbench-fastino-gliner2-5-multi-v1-a221b77a.md">gliner2.5-multi-v1 (Decis…</a>                46±1†  comparison only
+209  <a href="model/decision-aurelis-2b.md">Aurelis-2B</a>                                46±1†  comparison only
+210  <a href="model/decision-hopper-g-1-2.md">Hopper (G) 1.2 Qwen3.5-4B…</a>                46±1†  comparison only
+211  <a href="model/decisionbench-c-tianyu-nanojev-4a19595e.md">NanoJev (DecisionBench 4a…</a>                46±1†  comparison only
+212  <a href="model/decision-nari-decision-4b-v3-2.md">Nari Decision 4B v3.2</a>                     46±1†  comparison only
+213  <a href="model/decision-vllm-pr57250.md">mmastrac diffgemma (decis…</a>                45±1†  comparison only
+214  <a href="model/decisionbench-baai-bge-reranker-v2-m3-953dc6f6.md">bge-reranker-v2-m3 (Decis…</a>                45±1†  comparison only
+215  <a href="model/decision-razorback-one-read-3e296f08.md">razorback16 diffgemma (de…</a>                45±1†  comparison only
+216  <a href="model/decision-lev.md">Interfaze lev Qwen3.5-4B …</a>                45±1†  comparison only
+217  <a href="model/decision-startlux-decision-v1-1-0-8b-instant.md">StartLux-Decision v1.1 0.…</a>                45±1†  comparison only
+218  <a href="model/decision-vllm-sr-d3-nano.md">vLLM-SR d3-nano (2B)</a>                      45±1†  comparison only
+219  <a href="model/decision-intern-decision-4b.md">InternLM Intern-Decision …</a>                44±1†  comparison only
+220  <a href="model/decision-valen-4b-r2.md">Valen-4B</a>                                  44±1†  comparison only
+221  <a href="model/decision-tev1-4b.md">Together Tev1 Qwen3.5-4B</a>                  44±1†  comparison only
+222  <a href="model/decisionbench-kalm-embedding-kalm-reranker-v1-small-r2-d1c8fdf9.md">KaLM-Reranker-V1-Small-R2…</a>                44±1†  comparison only
+223  <a href="model/decision-ryotide-qwen-v0-3-1.md">Ryotide Qwen v0.3.1 (deci…</a>                44±1†  comparison only
+224  <a href="model/decision-rsi-jev-v5-0-vl-3b.md">RSI-Jev v5.0 VL 3B</a>                        44±1†  comparison only
+225  <a href="model/decisionbench-kalm-embedding-kalm-reranker-v1-nano-r2-3902d645.md">KaLM-Reranker-V1-Nano-R2 …</a>                44±1†  comparison only
+226  <a href="model/decision-lev1-3-7b.md">Lev1 3.7B</a>                                 44±1†  comparison only
+227  <a href="model/decision-sieve-2b-v3.md">Sieve 2B v3</a>                               44±1†  comparison only
+228  <a href="model/decision-jev-style-2b-v4.md">Jev-Style 2B v4</a>                           43±1†  comparison only
+229  <a href="model/decision-kev-4b-r10.md">Kev 4B r10</a>                                43±1†  comparison only
+230  <a href="model/decision-saracura-ptbr-4b.md">Saracura PT-BR 4B</a>                         43±1†  comparison only
+231  <a href="model/decision-winnow-e4b-q8.md">Winnow-E4B</a>                                43±1†  comparison only
+232  <a href="model/decision-latentmesh-blitz-2b-v1.md">LatentMesh Blitz 2B v1</a>                    43±1†  comparison only
+233  <a href="model/decision-kas-4b.md">Kas 4B</a>                                    43±1†  comparison only
+234  <a href="model/decision-semif.md">SemIf Qwen3.5-4B Base (de…</a>                43±1†  comparison only
+235  <a href="model/decision-vera-core-2.md">vera-core-2</a>                               43±1†  comparison only
+236  <a href="model/decision-neohorse-jev-4b.md">TokenRhythm NeoHorse-Jev-…</a>                42±1†  comparison only
+237  <a href="model/decision-metask-jev-4b.md">Metask-Jev-4B</a>                             42±1†  comparison only
+238  <a href="model/decision-jobe.md">Jobe Qwen3.5-4B (decision…</a>                42±1†  comparison only
+239  <a href="model/decision-onejev1-6-0-8b.md">OneJev1.6-0.8B</a>                            42±1†  comparison only
+240  <a href="model/decision-jevstral-8b.md">Jevstral 8B</a>                               41±1†  comparison only
+241  <a href="model/decision-gliclass-v4-edge.md">GLiClass v4 edge (0.4B)</a>                   41±1†  comparison only
+242  <a href="model/decision-qev-0-8b.md">QEV-0.8B</a>                                  41±4†  comparison only
+243  <a href="model/decision-crystal-0-8b.md">crystal-0.8b</a>                              41±1†  comparison only
+244  <a href="model/decision-openvons.md">openvons Qwen3-4B (decisi…</a>                40±1†  comparison only
+245  <a href="model/decision-intelif-qwen3-4b.md">Intelif Qwen3-4B</a>                          40±1†  comparison only
+246  <a href="model/decision-onejev1-5-0-8b.md">OneJev1.5-0.8B</a>                            40±4†  comparison only
+247  <a href="model/decision-crivo-1b.md">Crivo-1B</a>                                  39±1†  comparison only
+248  <a href="model/decision-gevva-e4b.md">Gevva E4B</a>                                 38±1†  comparison only
+249  <a href="model/decision-mini-jev.md">mini-jev Qwen3-4B (decisi…</a>                38±1†  comparison only
+250  <a href="model/decision-cam1.md">Cam1</a>                                      38±1†  comparison only
+251  <a href="model/decision-vllm-sr-d3-lite.md">vLLM-SR d3-lite (0.8B)</a>                    38±1†  comparison only
+252  <a href="model/decision-vela3-fast.md">vLLM-SR vela3-fast (Vela …</a>                38±1†  comparison only
+253  <a href="model/decision-decider-2b-fp8-http.md">Decider 2B</a>                                38±1†  comparison only
+254  <a href="model/decision-pngwn-space-uncapped-full.md">open-jev (pngwn)</a>                          38±1†  comparison only
+255  <a href="model/decisionbench-altslate-certo-decision-model-7628c0da.md">certo-decision-model (Dec…</a>                38±1†  comparison only
+256  <a href="model/decisionbench-alibaba-nlp-gte-reranker-modernbert-base-f7481e60.md">gte-reranker-modernbert-b…</a>                38±1†  comparison only
+257  <a href="model/decision-this-that-1-2.md">FLock this-that 1.2</a>                       37±1†  comparison only
+258  <a href="model/decision-valen-2b-r2.md">Valen-2B</a>                                  36±1†  comparison only
+259  <a href="model/decision-saina-helm-2-v2.md">Saina Helm 2.0 v2</a>                         36±1†  comparison only
+260  <a href="model/decision-jdi-ptr14-0-8b.md">jdi-ptr14-0.8b</a>                            36±1†  comparison only
+261  <a href="model/decision-saina-helm-2-omni.md">Saina Helm 2 Omni (0.8B)</a>                  36±1†  comparison only
+262  <a href="model/decision-exaone-4-0-1-2b-jev-v0-3.md">EXAONE-4.0-1.2B-JEV v0.3</a>                  35±1†  comparison only
+263  <a href="model/decision-decision-2-0-sol-2b.md">vLLM-SR Decision 2.0 Sol …</a>                35±1†  comparison only
+264  <a href="model/decision-sieve-0-8b.md">Sieve 0.8B</a>                                35±1†  comparison only
+265  <a href="model/decision-gevva-e2b.md">Gevva E2B</a>                                 34±1†  comparison only
+266  <a href="model/decision-amber-0-4b.md">Amber 0.4B</a>                                34±1†  comparison only
+267  <a href="model/decision-jiwo-0-8b-v2-r2.md">jiwo 0.8B v2</a>                              34±1†  comparison only
+268  <a href="model/decision-sieve-2b.md">Sieve 2B</a>                                  34±1†  comparison only
+269  <a href="model/decision-crivo-400m.md">Crivo-400M</a>                                33±1†  comparison only
+270  <a href="model/decision-intern-decision-2b.md">InternLM Intern-Decision …</a>                33±1†  comparison only
+271  <a href="model/strands-decider-2b-hobson-v21.md">Strands Decider 2B (Hobso…</a>                33±1†  local               ~6.6GB  <a href="model/strands-decider-2b-hobson-v21.md#run-it-on-your-own-machine">how to run ›</a>
+272  <a href="model/decision-vela3-fast-vision-text.md">vLLM-SR vela3-fast-vision…</a>                31±1†  comparison only
+273  <a href="model/decision-wyat-1-800m.md">wyat-1-800m</a>                               31±1†  comparison only
+274  <a href="model/decision-tasksource-decider-nano-v5.md">tasksource Decider nano v…</a>                31±1†  comparison only
+275  <a href="model/decision-valen-0-8b-r2.md">Valen-0.8B</a>                                31±1†  comparison only
+276  <a href="model/decision-jev-ettin-150m.md">JEV Ettin 150M</a>                            30±1†  comparison only
+277  <a href="model/decision-dm-jepa-1-1.md">DM-JEPA 1.1</a>                               30±1†  comparison only
+278  <a href="model/decision-jpt-0-8b.md">JPT-0.8B Qwen3.5-0.8B LoRA</a>                30±1†  comparison only
+279  <a href="model/decision-sifr-0-8b-v3-1.md">Sifr 0.8B v3.1</a>                            30±1†  comparison only
+280  <a href="model/decision-vllm-sr-d3-edge.md">vLLM-SR d3-edge (0.6B)</a>                    29±1†  comparison only
+281  <a href="model/decision-mola-150m.md">Mola-150M</a>                                 29±1†  comparison only
+282  <a href="model/decision-jev-t5-342m-public-v2.md">JEV FLAN-T5 Large public …</a>                29±1†  comparison only
+283  <a href="model/decision-kodiak-v0-2-1b-accuracy.md">Kodiak v0.2 1B (accuracy)</a>                 29±1†  comparison only
+284  <a href="model/decision-bekko-v0-400m.md">Bekko System One v0 400M</a>                  29±1†  comparison only
+285  <a href="model/decision-crivo-150m-v2.md">Crivo-150M v2</a>                             28±1†  comparison only
+286  <a href="model/decision-vera-spark.md">vera-spark</a>                                28±1†  comparison only
+287  <a href="model/decision-tev1-0-8b.md">Together Tev1 Qwen3.5-0.8B</a>                28±1†  comparison only
+288  <a href="model/decision-kev-0-8b-r15.md">Kev 0.8B r15</a>                              27±1†  comparison only
+289  <a href="model/decision-decision-2-0-eos-0-8b.md">vLLM-SR Decision 2.0 Eos …</a>                27±1†  comparison only
+290  <a href="model/decision-decisiontune-1-0.md">DecisionTune 1.0</a>                          27±1†  comparison only
+291  <a href="model/decision-dinah-1.md">Dinah-1</a>                                   27±1†  comparison only
+292  <a href="model/decision-pick-150m-v5.md">PICK-150M v5</a>                              26±1†  comparison only
+293  <a href="model/decision-intern-decision-0-8b.md">InternLM Intern-Decision …</a>                26±1†  comparison only
+294  <a href="model/decision-crivo-68m.md">Crivo-68M</a>                                 26±1†  comparison only
+295  <a href="model/decision-bosun-v3-1-1-7b.md">Bosun v3.1 1.7B LoRA</a>                      26±1†  comparison only
+296  <a href="model/decision-decision-2-0-kai-0-6b.md">vLLM-SR Decision 2.0 Kai …</a>                25±1†  comparison only
+297  <a href="model/decision-mola-68m.md">Mola-68M</a>                                  25±1†  comparison only
+298  <a href="model/decision-jev-ettin-400m.md">JEV Ettin 400M</a>                            25±1†  comparison only
+299  <a href="model/decision-jev-style-0-8b-v3.md">Jev-Style 0.8B v3</a>                         25±1†  comparison only
+300  <a href="model/decision-d1-omni-600m.md">LiquidAI d1-omni-600M</a>                     25±1†  comparison only
+301  <a href="model/decision-lfm2600.md">LFM2.5-2.6B-RLCD</a>                          23±1†  comparison only
+302  <a href="model/decision-crivo-32m-v2.md">Crivo-32M v2</a>                              23±1†  comparison only
+303  <a href="model/decision-jevk5-lite.md">JevK5 Lite</a>                                22±1†  comparison only
+304  <a href="model/decision-von-1-3.md">Von 1.3</a>                                   21±1†  comparison only
+305  <a href="model/decision-bosun-v3-1-0-6b.md">Bosun v3.1 0.6B LoRA</a>                      21±1†  comparison only
+306  <a href="model/decision-crivo-17m.md">Crivo-17M</a>                                 20±1†  comparison only
+307  <a href="model/decision-lavoir.md">MoganAI Lavoir ModernBERT…</a>                20±1†  comparison only
+308  <a href="model/decision-bekko-v0-68m.md">Bekko System One v0 68M</a>                   20±1†  comparison only
+309  <a href="model/decision-gliner-decide.md">GLiNER2.5-Decide</a>                          20±1†  comparison only
+310  <a href="model/decision-prumo.md">Prumo (decision readout)</a>                  19±1†  comparison only
+311  <a href="model/decision-clm-v0-1-8b.md">CLM-v0.1-8B Qwen3-8B heads</a>                19±1†  comparison only
+312  <a href="model/decision-harsha.md">Qwen-2.5-1B-RLCD (decisio…</a>                18±1†  comparison only
+313  <a href="model/decision-laya-1e28ac20.md">Laya</a>                                      18±1†  comparison only
+314  <a href="model/decision-verdict-8af2496e.md">Verdict</a>                                   18±1†  comparison only
+315  <a href="model/decision-jeff-uncapped.md">jeff GLiFormer-large (dec…</a>                17±1†  comparison only
+316  <a href="model/decision-julia-1.md">Supersonic Labs Julia 1</a>                   16±1†  comparison only
+317  <a href="model/decision-bekko-v0-17m.md">Bekko System One v0 17M</a>                   16±1†  comparison only
+318  <a href="model/decision-akash-gemma.md">system-one-gemma</a>                          15±1†  comparison only
+319  <a href="model/decision-nirnaya-0-4b.md">Nirnaya 0.4B</a>                              13±1†  comparison only
+320  <a href="model/decision-lfm350-sdpa.md">LFM2.5-350M-RLCD</a>                          12±1†  comparison only
+321  <a href="model/decision-zev-latest.md">Zev (decision readout)</a>                    12±1†  comparison only
+  —  <a href="model/jev-1-14.md">Jev 1.14</a>                    no reviewed results  api $0.042/M inpu…          <a href="https://docs.typesafe.ai/models">typesafe.ai ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 6 of 6 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 322 of 343 catalogue models listed here · [sources and licences](method.md#sources)

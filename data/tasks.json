@@ -650,5 +650,75 @@
       "decision-index-041-mmlu-pro",
       "decision-index-041-bbh"
     ]
+  },
+  {
+    "id": "decision-vision",
+    "category": "decision",
+    "label": "vision",
+    "title": "Decision models for images & screens",
+    "description": "Typed decisions over images and screens; published chance-corrected benchmark points, including unsupported-image limits.",
+    "benchmarks": [
+      "decision-index-vision-04-blink",
+      "decision-index-vision-04-cv-bench",
+      "decision-index-vision-04-charxiv",
+      "decision-index-vision-04-infographicvqa",
+      "decision-index-vision-04-kie-cord-funsd",
+      "decision-index-vision-04-mmmu-pro-vision",
+      "decision-index-vision-04-mind2web",
+      "decision-index-vision-04-moderation-hateful-memes",
+      "decision-index-vision-04-r-bench-m",
+      "decision-index-vision-04-realworldqa",
+      "decision-index-vision-04-winoground"
+    ]
+  },
+  {
+    "id": "decision-workflows",
+    "category": "decision",
+    "label": "workflows",
+    "title": "Decision models for document & agent workflows",
+    "description": "DecisionBench v1: 27 disjoint families covering routing, extraction, verification, safety gates, action selection and reasoning. Unsupported/error requests count wrong.",
+    "benchmarks": [
+      "decisionbench-v1-action-selection",
+      "decisionbench-v1-bounded-extraction",
+      "decisionbench-v1-completion-assessment",
+      "decisionbench-v1-content-classification",
+      "decisionbench-v1-content-moderation",
+      "decisionbench-v1-context-management",
+      "decisionbench-v1-document-classification",
+      "decisionbench-v1-document-record-classification",
+      "decisionbench-v1-document-workflows",
+      "decisionbench-v1-entity-alignment",
+      "decisionbench-v1-function-agent-skill-routing",
+      "decisionbench-v1-guardrails-moderation",
+      "decisionbench-v1-navigation",
+      "decisionbench-v1-reasoning",
+      "decisionbench-v1-record-classification",
+      "decisionbench-v1-retrieval-ranking",
+      "decisionbench-v1-retrieval-verification",
+      "decisionbench-v1-review-scoring",
+      "decisionbench-v1-risk-scoring",
+      "decisionbench-v1-routing",
+      "decisionbench-v1-routing-triage",
+      "decisionbench-v1-rubric-scoring-prioritization",
+      "decisionbench-v1-safety-gating",
+      "decisionbench-v1-semantic-filtering",
+      "decisionbench-v1-target-selection",
+      "decisionbench-v1-triage",
+      "decisionbench-v1-verification"
+    ]
+  },
+  {
+    "id": "decision-consistency",
+    "category": "decision",
+    "label": "consistency",
+    "title": "Decision models for probability consistency",
+    "description": "JevBench mini probability-law pass rates. These measure coherence, not correctness; see the separate accuracy measurement on model pages.",
+    "benchmarks": [
+      "jevbench-mini-010-rep",
+      "jevbench-mini-010-bat",
+      "jevbench-mini-010-mea",
+      "jevbench-mini-010-log",
+      "jevbench-mini-010-cho"
+    ]
   }
 ]

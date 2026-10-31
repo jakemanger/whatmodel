@@ -2,11 +2,11 @@
 
 <h1 align="center"><a href="https://whatmodel.sh"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/banner-dark.svg"><img alt="whatmodel.sh: find the best AI models you can run" src="docs/images/banner-light.svg" width="600"></picture></a></h1>
 
-<p align="center"><b>The open AI model leaderboard.</b> Every model is ranked by one score built from 22,678 published benchmark results, with its price, the memory it needs and the command to run it.<br>Filter by your computer or budget at <a href="https://whatmodel.sh">whatmodel.sh</a>, or read the same leaderboard below. <a href="#about-this-repo">About this repo</a></p>
+<p align="center"><b>The open AI model leaderboard.</b> Every model is ranked by one score built from 35,105 published benchmark results, with its price, the memory it needs and the command to run it.<br>Filter by your computer or budget at <a href="https://whatmodel.sh">whatmodel.sh</a>, or read the same leaderboard below. <a href="#about-this-repo">About this repo</a></p>
 
-**llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [decision](pages/decision.md) · [stt](pages/stt.md)
+**llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md) · [decision](pages/decision.md)
 
-updated 2026-10-31 01:54 UTC · 891 models · scores combine 575 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-10-31 02:55 UTC · 891 models · scores combine 575 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 

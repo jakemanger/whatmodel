@@ -1,0 +1,5 @@
+JevBench
+Copyright 2026 Chen Feng
+
+This product is not affiliated with or endorsed by TypeSafe AI. "Jev" is used
+only to describe the wire interface that JevBench tests.

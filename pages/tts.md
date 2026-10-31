@@ -2,9 +2,9 @@
 
 # whatmodel.sh · find the best text-to-speech models you can run
 
-[llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [decision](decision.md) · [stt](stt.md)
+[llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md) · [decision](decision.md)
 
-updated 2026-10-31 01:54 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-10-31 02:55 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
