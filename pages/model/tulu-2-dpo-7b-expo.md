@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 6.74B params · other (ai2-impact-license-low-risk)
 
-**score 38.1** ±2.2 · #794 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.1** ±2.2 · #795 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▇█▆▆▆▃   #425 of 472*     98%      1
+chat &amp; writing  ▁▁▁●▆▅▇█▆▆▆▃   #426 of 473*     98%      1
 </pre>
 
-<details><summary>chat &amp; writing · #425 of 472 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #426 of 473 · 98% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 34B Instruct](codellama-34b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▄▄▄▁▁   #228 of 352*     11%      2
-coding       ▁▁▁▂▄▆█●▅▄▃▁   #161 of 537*     39%      2
-math         ▁▁▃▆██●█▄▁▁▁   #184 of 528*     22%      2
+agent tasks  ▁▁▂▆●▄▅▄▄▃▁▁   #230 of 354*     11%      2
+coding       ▁▁▁▃▄▆█●▅▄▃▁   #164 of 539*     39%      2
+math         ▁▁▃▆██●█▃▁▁▁   #185 of 530*     22%      2
 web search   ▂▁▂▆▅█▅▄▁●▁▁      #6 of 96*    8.3%      1
 </pre>
 
-<details><summary>agent tasks · #228 of 352 · 11% of its score</summary>
+<details><summary>agent tasks · #230 of 354 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -34,9 +34,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #161 of 537 · 39% of its score</summary>
+<details><summary>coding · #164 of 539 · 39% of its score</summary>
 
-Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 12B](gemma-4-12b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank lower overall.
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -46,14 +46,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #184 of 528 · 22% of its score</summary>
+<details><summary>math · #185 of 530 · 22% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               88.7%  ▂▂▅▆▄█▆▃●▂▃▄ beats 76/92   hard · avg 28%           13%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/197  very hard · avg 7.1%    9.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/197  very hard · avg 7.2%    9.4%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.8%  ▁▁▁▁▂▄▆▄●▇█▅ beats 114/211  hard · avg 39%     20%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1033          7.5%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1034          7.5%  typical
 </pre>
 
 </details>

@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▄▁▁▁   #517 of 528*    5.9%      1
+math  ▁●▃▆██▅█▃▁▁▁   #519 of 530*    5.9%      1
 </pre>
 
-<details><summary>math · #517 of 528 · 5.9% of its score</summary>
+<details><summary>math · #519 of 530 · 5.9% of its score</summary>
 
 Beats [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md), [Flan-T5 Small](flan-t5-small.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 

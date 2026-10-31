@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▄▅▄●▄▁▁    #73 of 352     48%      4
-coding       ▁▁▁▂▄▆█▇●▄▃▁   #137 of 537     68%      3
+agent tasks  ▁▁▂▆█▄▅▄●▃▁▁    #72 of 354     48%      4
+coding       ▁▁▁▃▄▆█▇●▄▃▁   #138 of 539     68%      3
 </pre>
 
-<details><summary>agent tasks · #73 of 352 · 48% of its score</summary>
+<details><summary>agent tasks · #72 of 354 · 48% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md), [GPT-5](gpt-5.md) here, though they rank higher overall.
 
@@ -34,13 +34,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #137 of 537 · 68% of its score</summary>
+<details><summary>coding · #138 of 539 · 68% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.7  ▁▁▃▂●█▃▆▅▅▁▂ beats 25/129  avg 982                  51%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.7  ▁▁▃▂●█▃▆▅▅▁▂ beats 25/129  avg 981                  51%  sharp
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.8%     10%  sharp · noisy
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 29%          7.4%  blunt · at its level
 </pre>
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   51% ▇▇▇▇▇▇
-<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-3-codex">OpenAI vendor-reported benchmark scores…</a>        3   39% ▇▇▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-3-codex">OpenAI vendor-reported benchmark scores…</a>        3   38% ▇▇▇▇▇
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1   10% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 67.1

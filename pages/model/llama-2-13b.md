@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 13B params · llama2
 
-**score 35.6** ±0.6 · #620 of 731 · from 55 benchmark results across 10 sources
+**score 35.6** ±0.6 · #621 of 732 · from 55 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁   #451 of 468     15%      3
-math    ▁▁▃▅●▇▄█▄▂▁▁   #333 of 429     12%      2
+coding  ▁▁●▃▅▇█▇▅▄▃▁   #452 of 469     15%      3
+math    ▁▁▃▅●▆▄█▄▂▁▁   #335 of 431     12%      2
 </pre>
 
-<details><summary>coding · #451 of 468 · 15% of its score</summary>
+<details><summary>coding · #452 of 469 · 15% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [StarCoderBase 3B](starcoderbase-3b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>math · #333 of 429 · 12% of its score</summary>
+<details><summary>math · #335 of 431 · 12% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Easy</a>                             77.6%  ▁▁·▁▁▄▅▄█▅▁● beats 25/26   easy · avg 85%         2.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">BoolQ</a>                                80.5%  ▂▃▂▅▆▂▅▆█▂●▂ beats 25/26   easy · avg 88%         2.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">PIQA</a>                                 79.1%  ▁·▁··▁▁▃█▅●▂ beats 22/26   easy · avg 87%         1.9%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                           35.4%  █·▁▁▃·▁▃▅▇▃● beats 24/26   hard · avg 49%         1.6%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                           35.4%  █·▁▁▃·▁▃▅▇▃● beats 24/26   hard · avg 49%         1.7%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   54.6%  ▁····▁▁·▁·●█ beats 4/11    hard · avg 63%         1.4%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">SciQ</a>                                 94.5%  ▁·▁·▁·▃▅▃█●▁ beats 22/26   very easy · avg 97%    1.0%  blunt · maxed out
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">Social IQA</a>                           42.8%  ▁···▁▃█●▁▁·▁ beats 20/26   hard · avg 56%         0.8%  blunt

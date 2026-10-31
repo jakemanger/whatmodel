@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 49.7** ±1.9 · #375 of 731 · from 8 benchmark results across 4 sources
+**score 49.7** ±1.9 · #376 of 732 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▄▅▅▄▄▂▁    #242 of 312     31%      4
-chat &amp; writing      ▁▁▁▃▆▄●█▆▇▇▃   #272 of 401*     39%      1
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄   #136 of 154*     26%      1
+agent tasks         ▁▁▃●█▄▅▅▄▄▂▁    #243 of 313     31%      4
+chat &amp; writing      ▁▁▁▃▆▄●█▆▇▇▃   #271 of 402*     39%      1
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄   #135 of 153*     26%      1
 </pre>
 
-<details><summary>agent tasks · #242 of 312 · 31% of its score</summary>
+<details><summary>agent tasks · #243 of 313 · 31% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -35,18 +35,18 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #272 of 401 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #271 of 402 · 39% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1260.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 94/385  avg 1259       39%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1260.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 94/385  avg 1260       39%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #136 of 154 · 26% of its score</summary>
+<details><summary>vision &amp; documents · #135 of 153 · 26% of its score</summary>
 
 Trails [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [InternVL2-26B](internvl2-26b.md) here, though they rank lower overall.
 

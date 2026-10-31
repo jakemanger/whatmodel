@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▆██▅█▄▁▁▁   #526 of 528*    4.7%      1
+math  ●▁▃▆██▅█▃▁▁▁   #528 of 530*    4.8%      1
 </pre>
 
-<details><summary>math · #526 of 528 · 4.7% of its score</summary>
+<details><summary>math · #528 of 530 · 4.8% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    0.4%  ●·▅▃▃▃·▃·▃▃▅ beats 0/12   easy · avg 67%    4.7%  sharp · too hard for it
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>    0.4%  ●·▅▃▃▃·▃·▃▃▅ beats 0/12   easy · avg 67%    4.8%  sharp · too hard for it
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 49.8** ±1.5 · #373 of 731 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.8** ±1.5 · #374 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●█·········█      #3 of 3*    8.9%      1
-math    ▁▁▃▅█●▄█▄▂▁▁   #254 of 429     61%      3
+coding  ●█·········█      #3 of 3*    9.0%      1
+math    ▁▁▃▅█●▄█▄▂▁▁   #255 of 431     61%      3
 </pre>
 
-<details><summary>coding · #3 of 3 · 8.9% of its score</summary>
+<details><summary>coding · #3 of 3 · 9.0% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▁●▇▃▄▁ beats 14/38  medium · avg 45%    8.9%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▁●▇▃▄▁ beats 14/38  medium · avg 45%    9.0%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #254 of 429 · 61% of its score</summary>
+<details><summary>math · #255 of 431 · 61% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

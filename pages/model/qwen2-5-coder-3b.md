@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 3.09B params · qwen-research
 
-**score 48.7** ±1.2 · #396 of 731 · from 9 benchmark results across 2 sources
+**score 48.6** ±1.2 · #399 of 732 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #310 of 468     95%      8
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #313 of 469     95%      8
 </pre>
 
-<details><summary>coding · #310 of 468 · 95% of its score</summary>
+<details><summary>coding · #313 of 469 · 95% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -55,7 +55,7 @@ source                             results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                               8   72% ▇▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   27% ▇▇▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 48.7
+weighted average                            = 48.6
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

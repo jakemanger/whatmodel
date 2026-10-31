@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.34B params · apache-2.0
 
-**score 29.0** ±1.0 · #671 of 731 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.9** ±1.0 · #672 of 732 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #280 of 312*    1.7%      1
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #281 of 313*    1.7%      1
 coding          ●··········█        #4 of 4     39%      7
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #336 of 401*    7.2%      2
-math            ▁▁●▅█▇▄█▄▂▁▁    #405 of 429     26%      5
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #337 of 402*    7.2%      2
+math            ▁▁●▅█▆▄█▄▂▁▁    #405 of 431     26%      5
 </pre>
 
-<details><summary>agent tasks · #280 of 312 · 1.7% of its score</summary>
+<details><summary>agent tasks · #281 of 313 · 1.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 
@@ -50,7 +50,7 @@ test                result  vs the others in its run   difficulty           coun
 
 </details>
 
-<details><summary>chat &amp; writing · #336 of 401 · 7.2% of its score</summary>
+<details><summary>chat &amp; writing · #337 of 402 · 7.2% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #405 of 429 · 26% of its score</summary>
+<details><summary>math · #405 of 431 · 26% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -83,7 +83,7 @@ test                                result  vs the others in its run   difficult
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BIG-Bench Hard (lab)</a>              33.3%  ▁▁▁▁●▄▅▆█▃▃▁ beats 20/155  easy · avg 75%      7.3%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (lab)</a>                        36.2%  ▁▁▁▁▁●▂▅██▆▄ beats 25/214  easy · avg 74%      7.0%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (lab)</a>   26.1%  ▂●▂▂▄▃▆▃▅█▄▃ beats 7/104   hard · avg 37%      3.6%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (lab)</a>   26.1%  ▂●▂▂▄▃▆▃▅█▃▃ beats 7/106   hard · avg 37%      3.6%  sharp · too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU-Pro (lab)</a>                    14.4%  ▁●·▁▁▁▃▂▄▅█▁ beats 2/188   medium · avg 46%    2.9%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                     27.1%  ●····▂▂▄▄▄█▄ beats 0/36    medium · avg 52%    2.5%  too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                       28.0%  ●▁▁▂▃▂▄▄▅██▃ beats 0/46    medium · avg 56%    2.2%  typical
@@ -99,7 +99,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ibm-granite-granite-4-0-h-1b"></a><a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">ibm-granite/granite-4.0-h-1b model card…</a>       21  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 29.0
+weighted average                                   = 28.9
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-1b model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md))</sub>

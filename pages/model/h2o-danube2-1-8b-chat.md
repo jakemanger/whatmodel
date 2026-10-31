@@ -6,7 +6,7 @@
 
 H2O.ai · released 2024-04 · 1.83B params · apache-2.0
 
-**score 32.4** ±3.2 · #865 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.4** ±3.2 · #866 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

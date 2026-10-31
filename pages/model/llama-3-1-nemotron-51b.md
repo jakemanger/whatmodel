@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 52.6** ±1.7 · #325 of 731 · from 6 benchmark results across 2 sources
+**score 52.6** ±1.7 · #325 of 732 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #246 of 401*     31%      1
-math            ▁▁▃▅●▇▄█▄▂▁▁   #269 of 429*     21%      1
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #247 of 402*     31%      1
+math            ▁▁▃▅●▆▄█▄▂▁▁   #272 of 431*     21%      1
 </pre>
 
-<details><summary>chat &amp; writing · #246 of 401 · 31% of its score</summary>
+<details><summary>chat &amp; writing · #247 of 402 · 31% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 116/385  avg 1259       31%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 116/385  avg 1260       31%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #269 of 429 · 21% of its score</summary>
+<details><summary>math · #272 of 431 · 21% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

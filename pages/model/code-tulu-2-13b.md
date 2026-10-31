@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 41.2** ±1.6 · #543 of 731 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 41.1** ±1.6 · #546 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #353 of 468*     18%      1
-math    ▁▁▃▅●▇▄█▄▂▁▁   #292 of 429*     21%      1
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #354 of 469*     18%      1
+math    ▁▁▃▅●▆▄█▄▂▁▁   #296 of 431*     21%      1
 </pre>
 
-<details><summary>coding · #353 of 468 · 18% of its score</summary>
+<details><summary>coding · #354 of 469 · 18% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall.
 
@@ -31,9 +31,9 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #292 of 429 · 21% of its score</summary>
+<details><summary>math · #296 of 431 · 21% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                         5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 41.2
+weighted average                        = 41.1
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>

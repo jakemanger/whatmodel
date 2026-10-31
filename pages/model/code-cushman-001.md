@@ -6,7 +6,7 @@
 
 OpenAI · released 2021-08 · proprietary
 
-**score 34.7** ±4.9 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.6** ±4.9 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-9"></a><a href="https://aclanthology.org/2023.acl-long.9.pdf">Natural Language to Code Generation in …</a>        1   47% ▇▇▇▇▇▇
 <a name="acl-2023-findings-emnlp-89"></a><a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">Execution-Based Evaluation for Open-Dom…</a>        1   42% ▇▇▇▇▇
 prior: pull toward the middle                       11% ▇
-weighted average                                   = 34.7
+weighted average                                   = 34.6
 </pre>
 
 <sub>Licences: Natural Language to Code Generation in Interactive Data Science Notebooks ([CC BY 4.0](../../licenses/acl-2023-acl-long-9-CC-BY-4-0.txt)) · Execution-Based Evaluation for Open-Domain Code Generation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-89-CC-BY-4-0.txt))</sub>

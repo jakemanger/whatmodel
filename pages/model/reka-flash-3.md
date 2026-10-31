@@ -6,7 +6,7 @@
 
 Reka AI · released 2025-03 · 20.91B params · apache-2.0
 
-**score 52.8** ±5.4 · #403 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±5.4 · #404 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

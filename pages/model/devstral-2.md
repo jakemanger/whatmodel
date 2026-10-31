@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 61.5** ±1.6 · #191 of 731 · from 5 benchmark results across 3 sources
+**score 61.5** ±1.6 · #191 of 732 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #112 of 312     34%      3
-coding       ▁▁▁▃▅▇█●▅▄▃▁   #193 of 468     70%      3
+agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #112 of 313     34%      3
+coding       ▁▁▁▃▅▇█●▅▄▃▁   #194 of 469     70%      3
 </pre>
 
-<details><summary>agent tasks · #112 of 312 · 34% of its score</summary>
+<details><summary>agent tasks · #112 of 313 · 34% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▅●▆▁▁ beats 88/136  hard · avg 33%          15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%          15%  sharp · at its level · small run
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       32.6%  ▂▂▅●████▆▂▃▃ beats 7/36    very hard · avg 11%     11%  at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▁▄●█▂▂▁ beats 22/63   hard · avg 30%         9.1%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%         9.3%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #193 of 468 · 70% of its score</summary>
+<details><summary>coding · #194 of 469 · 70% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1197.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 5/129   avg 982            46%  sharp
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▅●▆▁▁ beats 88/136  hard · avg 33%     15%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▁▄●█▂▂▁ beats 22/63   hard · avg 30%    9.1%  at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1197.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 5/129   avg 981            46%  sharp
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%     15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%    9.3%  at its level · small run
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                          result  vs the others in its run   difficulty     
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   43.0%  ▅··▃▅·●·▃██▃ beats 7/15   hard · avg 22%     18%  at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   43.0%  ▅··▃▅·●·▃██▃ beats 7/15   hard · avg 23%     18%  at its level
 </pre>
 
 </details>

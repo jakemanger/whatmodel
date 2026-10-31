@@ -6,7 +6,7 @@
 
 Biomni (Stanford) · released 2025-10 · 32.76B params · mit
 
-**score 53.7** ±3.9 · #377 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.7** ±3.9 · #378 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

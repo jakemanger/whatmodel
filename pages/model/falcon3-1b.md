@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 1.67B params · falcon-llm
 
-**score 26.4** ±3.8 · #680 of 731 · from 7 benchmark results across 3 sources
+**score 26.4** ±3.8 · #681 of 732 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▄▅▅▄▄▂▁   #311 of 312*     49%      2
-coding       ▁▁▁●▅▇█▇▅▄▃▁    #444 of 468     24%      4
+agent tasks  ●▁▃▆█▄▅▅▄▄▂▁   #312 of 313*     49%      2
+coding       ▁▁▁●▅▇█▇▅▄▃▁    #445 of 469     24%      4
 </pre>
 
-<details><summary>agent tasks · #311 of 312 · 49% of its score</summary>
+<details><summary>agent tasks · #312 of 313 · 49% of its score</summary>
 
 Beats [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #444 of 468 · 24% of its score</summary>
+<details><summary>coding · #445 of 469 · 24% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall.
 

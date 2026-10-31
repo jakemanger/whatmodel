@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 35.1** ±1.3 · #625 of 731 · from 8 benchmark results across 3 sources
+**score 35.0** ±1.3 · #628 of 732 · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #420 of 468     82%      6
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #421 of 469     82%      6
 </pre>
 
-<details><summary>coding · #420 of 468 · 82% of its score</summary>
+<details><summary>coding · #421 of 469 · 82% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   15% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 35.1
+weighted average                                   = 35.0
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

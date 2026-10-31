@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 56.6** ±0.9 · #250 of 731 · from 20 benchmark results across 6 sources
+**score 56.6** ±0.9 · #251 of 732 · from 20 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,27 +16,27 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #249 of 312*    3.0%      2
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #235 of 468     10%      2
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #308 of 401*    0.8%      1
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #250 of 313*    3.0%      2
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #235 of 469     10%      2
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #309 of 402*    0.8%      1
 math            █·····█····●        #1 of 3     26%      2
 </pre>
 
-<details><summary>agent tasks · #249 of 312 · 3.0% of its score</summary>
+<details><summary>agent tasks · #250 of 313 · 3.0% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL V4 (December 2025 archive)</a>   35.9%  ▁▁▁▂▇▆●▆█▂▄▂ beats 43/112  hard · avg 31%      2.1%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL V4 (December 2025 archive)</a>   35.9%  ▁▁▁▂▆▆●▆█▂▄▃ beats 43/114  hard · avg 31%      2.1%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL v3</a>                           52.2%  ▁▁▁▁▁▃●█▆▅▄▁ beats 50/171  medium · avg 57%    0.9%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #235 of 468 · 10% of its score</summary>
+<details><summary>coding · #235 of 469 · 10% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -46,13 +46,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #308 of 401 · 0.8% of its score</summary>
+<details><summary>chat &amp; writing · #309 of 402 · 0.8% of its score</summary>
 
 Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">IFEval (aggregation unspecified)</a>   59.7%  ▁▂▄●▂▄▆█▇▄▂▁ beats 21/143  easy · avg 74%    0.8%  noisy
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">IFEval (aggregation unspecified)</a>   59.7%  ▁▂▄●▂▄▆██▅▂▁ beats 21/145  easy · avg 75%    0.8%  noisy
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond</a>                         46.0%  ▁▁▁▁▂▄▅▅●▇█▄ beats 159/318  medium · avg 53%     24%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond</a>                         46.0%  ▁▁▁▁▂▄▅▅●██▄ beats 161/322  medium · avg 53%     24%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4807  ▁▄▃▃▇●█▃▅▁▁▁ beats 14/30    avg 0.418            16%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 13/34    medium · avg 41%    7.0%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.2%  ▂·▂▂·▂·▃▃·●▃ beats 10/14    easy · avg 80%      4.6%  typical

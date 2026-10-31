@@ -21,7 +21,7 @@ vision &amp; documents  ▁▁●▃▂▃▅▄▇██▄   #194 of 206*     
 
 <details><summary>vision &amp; documents · #194 of 206 · 94% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty  counts  why

@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▆██▅█▄●▁▁   #27 of 528*     67%      2
+math  ▁▁▃▆██▅█▃●▁▁   #27 of 530*     67%      2
 </pre>
 
-<details><summary>math · #27 of 528 · 67% of its score</summary>
+<details><summary>math · #27 of 530 · 67% of its score</summary>
 
 Beats [Gemini 3.8 Flash](gemini-3-8-flash.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                        result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">Humanity's Last Exam (lab)</a>   30.6%  ▁▁▁▄▅▆▆█●▆▁▃ beats 76/109  very hard · avg 4.7%     30%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">Humanity's Last Exam (lab)</a>   30.6%  ▁▁▁▄▆▆▇█●▆▁▃ beats 78/111  very hard · avg 4.7%     30%  at its level · small run
 </pre>
 
 </details>

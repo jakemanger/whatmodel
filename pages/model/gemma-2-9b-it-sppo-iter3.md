@@ -6,7 +6,7 @@
 
 UCLA AGI (SPPO) · released 2024-06 · 9.24B params · gemma
 
-**score 56.4** ±1.4 · #302 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 56.4** ±1.4 · #302 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▇●▆▆▆▃   #213 of 472*     95%      1
+chat &amp; writing  ▁▁▁▄▆▅▇●▆▆▆▃   #212 of 473*     95%      1
 </pre>
 
-<details><summary>chat &amp; writing · #213 of 472 · 95% of its score</summary>
+<details><summary>chat &amp; writing · #212 of 473 · 95% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty        counts  why

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 46.6** ±1.2 · #442 of 731 · from 10 benchmark results across 5 sources
+**score 46.6** ±1.2 · #443 of 732 · from 10 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁    #265 of 468     12%      4
-math    ▁▁▃●█▇▄█▄▂▁▁   #355 of 429*     17%      1
+coding  ▁▁▁▃▅▇●▇▅▄▃▁    #266 of 469     12%      4
+math    ▁▁▃●█▆▄█▄▂▁▁   #355 of 431*     17%      1
 </pre>
 
-<details><summary>coding · #265 of 468 · 12% of its score</summary>
+<details><summary>coding · #266 of 469 · 12% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   50.8%  ▃··▁▂▂▃▂●▃▄▂ beats 26/47  medium · avg 51%    4.3%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   43.0%  █▂▁▁▂▂▂▃▅●▅▇ beats 32/47  hard · avg 33%      4.0%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   43.0%  █▂▁▁▂▂▂▃▅●▅▇ beats 32/47  hard · avg 33%      3.9%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.2%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 20/47  hard · avg 32%      3.3%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.7%  ▁▁▁······▁▃● beats 37/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #355 of 429 · 17% of its score</summary>
+<details><summary>math · #355 of 431 · 17% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 

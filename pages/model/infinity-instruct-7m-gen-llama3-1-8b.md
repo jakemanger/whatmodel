@@ -6,7 +6,7 @@
 
 BAAI · released 2024-08 · 8.03B params · llama3.1
 
-**score 49.6** ±1.5 · #497 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.6** ±1.5 · #498 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #304 of 472*     93%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #305 of 473*     93%      1
 </pre>
 
-<details><summary>chat &amp; writing · #304 of 472 · 93% of its score</summary>
+<details><summary>chat &amp; writing · #305 of 473 · 93% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 185/276  medium · avg 72%    5.6%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 185/276  medium · avg 72%    5.5%  at its level · noisy
 </pre>
 
 </details>

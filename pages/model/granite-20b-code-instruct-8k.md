@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 45.4** ±1.2 · #464 of 731 · from 7 benchmark results across 3 sources
+**score 45.4** ±1.2 · #465 of 732 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #335 of 468     61%      3
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #337 of 469     61%      3
 </pre>
 
-<details><summary>coding · #335 of 468 · 61% of its score</summary>
+<details><summary>coding · #337 of 469 · 61% of its score</summary>
 
-Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

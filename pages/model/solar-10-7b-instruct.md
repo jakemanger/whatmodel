@@ -6,7 +6,7 @@
 
 Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
-**score 39.2** ±0.7 · #574 of 731 · from 13 benchmark results across 8 sources
+**score 39.2** ±0.7 · #575 of 732 · from 13 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #408 of 468     75%      3
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #355 of 401*     10%      2
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #409 of 469     75%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #356 of 402*     10%      2
 </pre>
 
-<details><summary>coding · #408 of 468 · 75% of its score</summary>
+<details><summary>coding · #409 of 469 · 75% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -33,13 +33,13 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #355 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #356 of 402 · 10% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1152.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 42/385  avg 1259      5.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1152.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 42/385  avg 1260      5.1%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1064.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 31/95   avg 1187      4.7%  typical
 </pre>
 

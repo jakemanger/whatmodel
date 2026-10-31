@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
-**score 33.5** ±0.8 · #638 of 731 · from 14 benchmark results across 7 sources
+**score 33.5** ±0.8 · #639 of 732 · from 14 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁●▃▆█▄▅▅▄▄▂▁   #307 of 312*    1.3%      1
+agent tasks     ▁●▃▆█▄▅▅▄▄▂▁   #308 of 313*    1.3%      1
 coding          █··········●       #1 of 2*    3.9%      1
 chat &amp; writing  █··········●       #1 of 2*    1.3%      1
-math            ▁▁●▅█▇▄█▄▂▁▁    #411 of 429     45%      4
+math            ▁▁●▅█▆▄█▄▂▁▁    #412 of 431     45%      4
 </pre>
 
-<details><summary>agent tasks · #307 of 312 · 1.3% of its score</summary>
+<details><summary>agent tasks · #308 of 313 · 1.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #411 of 429 · 45% of its score</summary>
+<details><summary>math · #412 of 431 · 45% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 UCLA AGI (SPPO) · released 2024-06 · 8.03B params · apache-2.0
 
-**score 51.1** ±1.5 · #444 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.1** ±1.5 · #445 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #284 of 472*     94%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #285 of 473*     94%      1
 </pre>
 
-<details><summary>chat &amp; writing · #284 of 472 · 94% of its score</summary>
+<details><summary>chat &amp; writing · #285 of 473 · 94% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 

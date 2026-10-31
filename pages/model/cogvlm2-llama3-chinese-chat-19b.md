@@ -21,7 +21,7 @@ vision &amp; documents  ▁▁▂▃●▃▅▄▆██▄   #153 of 189     8
 
 <details><summary>vision &amp; documents · #153 of 189 · 81% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run  difficulty      counts  why

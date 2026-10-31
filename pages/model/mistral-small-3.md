@@ -6,7 +6,7 @@
 
 Mistral · released 2025-01 · 23.57B params · apache-2.0
 
-**score 53.9** ±1.0 · #304 of 731 · from 18 benchmark results across 12 sources
+**score 53.9** ±1.0 · #305 of 732 · from 18 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #241 of 468*    4.6%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #258 of 401*     10%      1
-math            ▁▁▃▅●▇▄█▄▂▁▁   #283 of 429*     27%      2
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #244 of 469*    4.6%      1
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #259 of 402*     10%      1
+math            ▁▁▃▅●▆▄█▄▂▁▁   #284 of 431*     27%      2
 </pre>
 
-<details><summary>coding · #241 of 468 · 4.6% of its score</summary>
+<details><summary>coding · #244 of 469 · 4.6% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
@@ -32,25 +32,25 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>chat &amp; writing · #258 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #259 of 402 · 10% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1274.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 105/385  avg 1259       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1274.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 105/385  avg 1260       10%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #283 of 429 · 27% of its score</summary>
+<details><summary>math · #284 of 431 · 27% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               44.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 36/92   hard · avg 28%           22%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.7%  ▃▃●▃▃▃▇▇█▃▂▅ beats 38/197  very hard · avg 7.1%    4.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    6.7%  ▃▃●▃▃▃▇▇█▃▂▅ beats 38/197  very hard · avg 7.2%    4.4%  sharp · noisy
 </pre>
 
 </details>
@@ -60,12 +60,12 @@ test                      result  vs the others in its run   difficulty         
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 57/211   hard · avg 39%           14%  sharp · at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.2%  ▁▂▂▂▃█▃▆●▄▂▃ beats 66/95    medium · avg 65%        6.7%  at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.9  ▁·▂▁●▅▅▃█▄▁▁ beats 7/62     avg 1033                6.1%  typical
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   74.2%  ▁▂▂▂▃█▃▆●▄▂▃ beats 66/95    medium · avg 65%        6.8%  at its level
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.9  ▁·▂▁●▅▅▃█▄▁▁ beats 7/62     avg 1034                6.1%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.5%  ▁▁▁▁▁▂▂▃▄●█▃ beats 57/97    hard · avg 31%          5.9%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   39.8%  ▁▁·▁▂▂▄█●▅▄▄ beats 36/66    hard · avg 29%          5.7%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   50.3%  ▁▁▁▁·▂·●▆█▇▁ beats 7/31     medium · avg 46%        5.3%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      70.5%  ▁··▁▁▂▂▆▅▆●▆ beats 53/70    medium · avg 62%        5.3%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      70.5%  ▁··▁▁▂▂▆▅▆●▆ beats 53/70    medium · avg 62%        5.2%  at its level
 <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge for cr…</a>   63.6%  ▃▃··▃▅●···█▃ beats 5/10     medium · avg 53%        3.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   77.2%  ▃▁▁▁▁▁▁▁▂█●▁ beats 239/276  medium · avg 72%        2.2%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   91.0%  ▃·▁▁▂▁▂▅█▇●▁ beats 95/100   medium · avg 67%        1.8%  sharp · at its level · noisy

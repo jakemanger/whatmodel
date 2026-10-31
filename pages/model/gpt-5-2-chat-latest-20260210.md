@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅▆█▇▆●▂   #34 of 585*     59%      1
+chat &amp; writing      ▁▁▁▃▅▅▆█▇▆●▂   #32 of 587*     58%      1
 vision &amp; documents  ▁▁▃▃▂▃▅▄▇█●▄   #30 of 206*     39%      1
 </pre>
 
-<details><summary>chat &amp; writing · #34 of 585 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #32 of 587 · 58% of its score</summary>
 
-Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
+Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1475.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 355/385  avg 1259       59%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1475.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 355/385  avg 1260       58%  blunt
 </pre>
 
 </details>

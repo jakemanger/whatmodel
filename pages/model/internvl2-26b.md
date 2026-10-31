@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
-**score 47.8** ±1.5 · #411 of 731 · from 17 benchmark results across 5 sources
+**score 47.8** ±1.5 · #412 of 732 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▇▄█▄▂▁▁   #264 of 429*    5.8%      1
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #133 of 154     90%     14
+math                ▁▁▃▅●▆▄█▄▂▁▁   #270 of 431*    5.8%      1
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #132 of 153     90%     14
 </pre>
 
-<details><summary>math · #264 of 429 · 5.8% of its score</summary>
+<details><summary>math · #270 of 431 · 5.8% of its score</summary>
 
-Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
@@ -31,7 +31,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #133 of 154 · 90% of its score</summary>
+<details><summary>vision &amp; documents · #132 of 153 · 90% of its score</summary>
 
 Beats [Nova Pro](nova-pro.md), [Nova Lite](nova-lite.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                                 result  vs the others in its run   difficul
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>         62.4%  ▄█▄●▄·██·▄·█ beats 4/12    easy · avg 69%          28%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1024.8  ▁▁▂▂●▂▃▄▅▅█▇ beats 16/152  avg 1061                15%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>         33.4%  ▂▂▂●▃▂·▂▂··▂ beats 7/13    hard · avg 34%          13%  at its level
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -4.601             9.4%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -4.498             9.4%  typical
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (lab)</a>                      51.2%  ▁····▁▁▃●▆▆▅ beats 11/53   medium · avg 57%       6.2%  at its level · small run
 <a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (lab)</a>            59.4%  ▁··▁▄▄●▇▄▅█▄ beats 15/48   medium · avg 65%       5.8%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>    43.5%  ▅▃█··●▃····▃ beats 7/9     hard · avg 42%         2.6%  blunt

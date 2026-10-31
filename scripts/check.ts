@@ -20,7 +20,7 @@ const speeds = load<Speed[]>("speeds.json");
 const quant = load<{ findings: { source: string }[]; memory?: { source: string }[] }>("quant.json");
 const calibration = load<{ measurements: { source: string }[] }>("speed-calibration.json");
 const kv = load<{ source: string; models: Record<string, { full: number; swa?: [number, number][] }> }>("kv.json");
-const UNITS = ["image", "video-second", "1M-chars", "audio-minute"];
+const UNITS = ["image", "video-second", "1M-chars", "audio-minute", "1M-input-tokens"];
 
 const errors: string[] = [];
 // Geographic groups used by the public open-versus-closed chart.

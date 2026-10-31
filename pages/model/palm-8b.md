@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁●▆██▅█▄▁▁▁   #501 of 528    9.3%      3
+math  ▁▁●▆██▅█▃▁▁▁   #503 of 530    9.3%      3
 </pre>
 
-<details><summary>math · #501 of 528 · 9.3% of its score</summary>
+<details><summary>math · #503 of 530 · 9.3% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [Flan-T5 Large](flan-t5-large.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       21.7%  █▁·●▁·····▂▁ beats 8/12    medium · avg 48%        1.0%  sharp · too hard for it
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     55.6%  █·····▅▃●▅▃█ beats 6/12    medium · avg 70%        1.0%  typical
 <a href="https://arxiv.org/html/2204.02311v5">SQuAD 2.0 (prompted, F1) (lab)</a>       56.4%  ▃▃···▃▃●▃▃▃▃ beats 5/10    very easy · avg 85%     1.0%  at its level · small run
-<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    26.7%  ●·····▄··█·█ beats 0/5     medium · avg 55%        1.0%  too hard for it
+<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    26.7%  ●·····▄··█·█ beats 0/5     medium · avg 56%        1.0%  too hard for it
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   25.7%  ●······▄▄▄·█ beats 0/5     medium · avg 58%        1.0%  too hard for it
 <a href="https://arxiv.org/html/2204.02311v5">CoQA (lab)</a>                           66.0%  ▂···▃▂▂·●▅▂█ beats 8/17    very easy · avg 88%     0.8%  at its level · small run
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>    8.4%  ▂▁▁▁▂▄●▃▅█▅▁ beats 21/68   hard · avg 32%          0.8%  too hard for it

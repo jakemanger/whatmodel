@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▂▄●█▇▅▄▃▁    #421 of 537     78%      2
-chat &amp; writing  ▁▁▁▃▅●▇█▇▇▇▃   #355 of 472*     16%      1
-math            ▁▁▃▆●█▅█▄▁▁▁   #340 of 528*    5.7%      1
+coding          ▁▁▁▃▄●█▇▅▄▃▁    #421 of 539     78%      2
+chat &amp; writing  ▁▁▁▃▅●▇█▇▇▇▃   #356 of 474*     16%      1
+math            ▁▁▃▆●█▅█▃▁▁▁   #342 of 530*    5.7%      1
 </pre>
 
-<details><summary>coding · #421 of 537 · 78% of its score</summary>
+<details><summary>coding · #421 of 539 · 78% of its score</summary>
 
-Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
@@ -33,7 +33,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #355 of 472 · 16% of its score</summary>
+<details><summary>chat &amp; writing · #356 of 474 · 16% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                            result  vs the others in its run   difficulty   
 
 </details>
 
-<details><summary>math · #340 of 528 · 5.7% of its score</summary>
+<details><summary>math · #342 of 530 · 5.7% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 

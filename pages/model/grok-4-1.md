@@ -16,28 +16,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▂▄▆█●▅▄▂▁   #224 of 564*     63%      1
-chat &amp; writing  ▁▁▁▃▅▅▆█▇▆●▂    #47 of 585*     36%      1
+coding          ▁▁▁▂▄▆█●▅▄▂▁   #225 of 566*     63%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█▇▆●▂    #47 of 587*     36%      1
 </pre>
 
-<details><summary>coding · #224 of 564 · 63% of its score</summary>
+<details><summary>coding · #225 of 566 · 63% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1214.5  ▁▁●▂▅█▃▆▅▅▁▂ beats 6/129  avg 982        63%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1214.5  ▁▁●▂▅█▃▆▅▅▁▂ beats 6/129  avg 981        63%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #47 of 585 · 36% of its score</summary>
+<details><summary>chat &amp; writing · #47 of 587 · 36% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1465.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 338/385  avg 1259       36%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1465.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 338/385  avg 1260       36%  blunt
 </pre>
 
 </details>

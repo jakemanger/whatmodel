@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 19.5** ±1.9 · #702 of 731 · from 12 benchmark results across 2 sources
+**score 19.4** ±1.9 · #703 of 732 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -47,7 +47,7 @@ source                                    results  share of the score
 <a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   80% ▇▇▇▇▇▇▇▇▇▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Hallucinations Leaderboard results</a>              4   18% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 19.5
+weighted average                                   = 19.4
 </pre>
 
 <sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

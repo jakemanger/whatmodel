@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 28.0** ±0.7 · #675 of 731 · from 48 benchmark results across 11 sources
+**score 28.0** ±0.7 · #676 of 732 · from 48 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 44.0** ±1.3 · #500 of 731 · from 4 benchmark results across 4 sources
+**score 43.9** ±1.3 · #504 of 732 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▇▄█▄▂▁▁   #338 of 429*    4.6%      1
+math  ▁▁▃●█▆▄█▄▂▁▁   #340 of 431*    4.6%      1
 </pre>
 
-<details><summary>math · #338 of 429 · 4.6% of its score</summary>
+<details><summary>math · #340 of 431 · 4.6% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             1   11% ▇
 <a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">Mistral AI vendor-reported benchmark sc…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.0
+weighted average                                   = 43.9
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt))</sub>

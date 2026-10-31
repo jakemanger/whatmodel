@@ -1,4 +1,4 @@
-export type Category = "llm" | "image" | "video" | "tts" | "stt";
+export type Category = "llm" | "image" | "video" | "tts" | "stt" | "decision";
 
 export type Variant = {
   quant: string;
@@ -22,7 +22,7 @@ export type Api = {
   price_in?: number; // LLMs: USD per 1M tokens
   price_out?: number;
   price?: number; // other categories: USD per `unit`
-  unit?: "image" | "video-second" | "1M-chars" | "audio-minute";
+  unit?: "image" | "video-second" | "1M-chars" | "audio-minute" | "1M-input-tokens";
   tps?: number; // LLMs: measured output tokens/sec
   tps_source?: string;
   speed?: number; // other categories: measured, in `speed_unit`
@@ -86,7 +86,7 @@ export type Benchmark = { id: string; name: string; kind: "acc" | "elo" | "err" 
 
 export type Scored = { id: string; g: number; pm: number; n: number; lab?: number }; // lab: counted results the model's own maker reported
 
-export type SpeedUnit = "tok/s" | "s/image" | "s/video" | "x-realtime";
+export type SpeedUnit = "tok/s" | "s/image" | "s/video" | "x-realtime" | "ms/decision";
 
 // A measured speed of one model on one machine.
 export type Speed = {

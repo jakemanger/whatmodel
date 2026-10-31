@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂▄●█▇▅▄▃▁   #418 of 537*     11%      1
-math    ▁▁▃▆█●▅█▄▁▁▁    #255 of 528     30%      1
+coding  ▁▁▁▃▄●█▇▅▄▃▁   #422 of 539*     11%      1
+math    ▁▁▃▆█●▅█▃▁▁▁    #259 of 530     30%      1
 </pre>
 
-<details><summary>coding · #418 of 537 · 11% of its score</summary>
+<details><summary>coding · #422 of 539 · 11% of its score</summary>
 
-Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
@@ -31,7 +31,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>math · #255 of 528 · 30% of its score</summary>
+<details><summary>math · #259 of 530 · 30% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

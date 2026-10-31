@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 50.9** ±1.2 · #349 of 731 · from 13 benchmark results across 7 sources
+**score 50.9** ±1.2 · #350 of 732 · from 13 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▁▃▅●▇▄█▄▂▁▁   #290 of 429     38%      3
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄   #132 of 154     32%      7
+math                ▁▁▃▅●▆▄█▄▂▁▁   #292 of 431     38%      3
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄   #131 of 153     32%      7
 </pre>
 
-<details><summary>math · #290 of 429 · 38% of its score</summary>
+<details><summary>math · #292 of 431 · 38% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               39.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 31/92   hard · avg 28%           31%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/197  very hard · avg 7.1%    4.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/197  very hard · avg 7.2%    4.1%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>       49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 51%        3.3%  at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #132 of 154 · 32% of its score</summary>
+<details><summary>vision &amp; documents · #131 of 153 · 32% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Pixtral 12B (2409)](pixtral-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                                         result  vs the others in its run   difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1032.2  ▁▁▂▂●▂▃▄▅▅█▇ beats 19/152  avg 1061                     11%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -4.601                  6.6%  typical
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.602 MM-MT-Bench s…    4.8%  sharp · noisy
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -4.498                  6.6%  typical
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.605 MM-MT-Bench s…    4.8%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    53.7%  ▂·▂······█●▄ beats 6/9     medium · avg 51%            3.6%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 51%            3.3%  at its level · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.0%  ▃···●▃··▅▃▃▃ beats 1/9     easy · avg 73%              2.7%  blunt · at its level

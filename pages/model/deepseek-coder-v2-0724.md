@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 54.0** ±0.9 · #303 of 731 · from 6 benchmark results across 3 sources
+**score 54.0** ±0.9 · #304 of 732 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▄▅▅▄▄▂▁   #245 of 312*    2.1%      1
-coding       ▁▁▁▃▅▇█●▅▄▃▁   #197 of 468*     39%      2
-math         ▁▁▃▅●▇▄█▄▂▁▁   #302 of 429*    7.3%      1
+agent tasks  ▁▁▃●█▄▅▅▄▄▂▁   #246 of 313*    2.1%      1
+coding       ▁▁▁▃▅▇█●▅▄▃▁   #198 of 469*     39%      2
+math         ▁▁▃▅●▆▄█▄▂▁▁   #303 of 431*    7.3%      1
 </pre>
 
-<details><summary>agent tasks · #245 of 312 · 2.1% of its score</summary>
+<details><summary>agent tasks · #246 of 313 · 2.1% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #197 of 468 · 39% of its score</summary>
+<details><summary>coding · #198 of 469 · 39% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #302 of 429 · 7.3% of its score</summary>
+<details><summary>math · #303 of 431 · 7.3% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 

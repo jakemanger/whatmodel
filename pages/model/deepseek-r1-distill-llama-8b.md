@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 8.03B params · mit
 
-**score 46.4** ±1.2 · #445 of 731 · from 19 benchmark results across 8 sources
+**score 46.4** ±1.2 · #446 of 732 · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #439 of 468     23%      5
-math    ▁▁▃▅█●▄█▄▂▁▁   #211 of 429     33%      3
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #440 of 469     23%      5
+math    ▁▁▃▅█●▄█▄▂▁▁   #213 of 431     33%      3
 </pre>
 
-<details><summary>coding · #439 of 468 · 23% of its score</summary>
+<details><summary>coding · #440 of 469 · 23% of its score</summary>
 
-Beats [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Gemma 7B IT](gemma-7b.md) here, though they rank lower overall.
+Beats [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #211 of 429 · 33% of its score</summary>
+<details><summary>math · #213 of 431 · 33% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>   50.4%  ▃·▃·●▃···█·▃ beats 2/7    medium · avg 54%        15%  sharp · at its level · noisy · several …
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>    89.1%  ▄·●▄·▄▄█···▄ beats 1/7    very easy · avg 91%     10%  several runs
-<a href="https://arxiv.org/html/2604.19444v1">GSM8K</a>             87.2%  ▃··●··▃▃·▃·█ beats 1/7    very easy · avg 93%    8.9%  sharp · noisy
+<a href="https://arxiv.org/html/2604.19444v1">GSM8K</a>             87.2%  ▃··●··▃▃·▃·█ beats 1/7    very easy · avg 93%    8.8%  sharp · noisy
 </pre>
 
 </details>

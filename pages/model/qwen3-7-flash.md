@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 66.1** ±1.2 · #125 of 731 · from 5 benchmark results across 1 source
+**score 66.1** ±1.2 · #125 of 732 · from 5 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅█▇▄●▄▂▁▁   #139 of 429*     65%      2
+math  ▁▁▃▅█▆▄●▄▂▁▁   #140 of 431*     65%      2
 </pre>
 
-<details><summary>math · #139 of 429 · 65% of its score</summary>
+<details><summary>math · #140 of 431 · 65% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▆▄▃ beats 13/86    very hard · avg 1.2%     56%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/197  very hard · avg 7.1%    8.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/197  very hard · avg 7.2%    8.9%  sharp · noisy
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 133/211  hard · avg 39%           22%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   82.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 133/211  hard · avg 39%           21%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   15.0%  █··▂●▇▄█▂▄▂▁ beats 21/77    very hard · avg 9.4%    6.5%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          23.0%  █▁▁▁▁▂▃●▃▂▁▁ beats 91/137   very hard · avg 5.8%    6.2%  sharp · noisy
 </pre>

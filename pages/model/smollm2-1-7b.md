@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 33.0** ±1.0 · #642 of 731 · from 18 benchmark results across 5 sources
+**score 33.0** ±1.0 · #643 of 732 · from 18 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #414 of 468*    6.4%      1
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃    #380 of 401     19%      4
-math            ▁▁●▅█▇▄█▄▂▁▁    #387 of 429     30%      2
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #415 of 469*    6.4%      1
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃    #381 of 402     19%      4
+math            ▁▁●▅█▆▄█▄▂▁▁    #389 of 431     30%      2
 </pre>
 
-<details><summary>coding · #414 of 468 · 6.4% of its score</summary>
+<details><summary>coding · #415 of 469 · 6.4% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
@@ -32,27 +32,27 @@ test             result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #380 of 401 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #381 of 402 · 19% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1114.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 19/385  avg 1259             11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1114.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 19/385  avg 1260             11%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            51.6%  ▁●▁▃▁▄▁▁█▃▃▁ beats 1/22    easy · avg 78%      3.1%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>        5.8%  ●▃·▁▁█▇▅·▁·▁ beats 0/22    medium · avg 39%    2.4%  sharp
-<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified) …</a>   56.7%  ▁▂▄●▂▄▆█▇▄▂▁ beats 20/143  easy · avg 76%      2.1%  at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified) …</a>   56.7%  ▁▂▄●▂▄▆██▅▂▁ beats 20/145  easy · avg 76%      2.0%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #387 of 429 · 30% of its score</summary>
+<details><summary>math · #389 of 431 · 30% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 87%     22%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 88%     22%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   20.3%  ●▃█▂▂▆·····▁ beats 0/22   medium · avg 58%       7.6%  small run · several runs
 </pre>
 
@@ -65,7 +65,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       39.8%  ▁●·▁▁·▅█·▄▄▁ beats 2/22    medium · avg 72%     15%  sharp · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 75%       14%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    medium · avg 65%    8.4%  at its level
-<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.5%  at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.6%  at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 31%      1.8%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 82%      1.8%  at its level · noisy
 <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▂▂▃●█▅▃▁▁ beats 42/123  easy · avg 84%      1.1%  blunt · at its level · small run

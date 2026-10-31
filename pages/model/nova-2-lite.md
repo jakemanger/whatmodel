@@ -6,7 +6,7 @@
 
 Amazon · released 2025-10 · closed weights
 
-**score 57.6** ±1.4 · #231 of 731 · from 7 benchmark results across 5 sources
+**score 57.6** ±1.4 · #232 of 732 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #240 of 312*     13%      2
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #182 of 401*     20%      1
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #241 of 313*     14%      2
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #182 of 402*     20%      1
 </pre>
 
-<details><summary>agent tasks · #240 of 312 · 13% of its score</summary>
+<details><summary>agent tasks · #241 of 313 · 14% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 21/77  hard · avg 31%      9.4%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 21/77  hard · avg 31%      9.5%  at its level
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   72.4%  ▂··▄···▂●▄█▄ beats 4/13   medium · avg 45%    4.1%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #182 of 401 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #182 of 402 · 20% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1335.0  ▁▁▁▂▃▃▃●▆▇█▃ beats 170/385  avg 1259       20%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1335.0  ▁▁▁▂▃▃▃●▆▇█▃ beats 170/385  avg 1260       20%  blunt
 </pre>
 
 </details>

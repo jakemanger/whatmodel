@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 32.8B params · apache-2.0
 
-**score 55.6** ±0.6 · #265 of 731 · from 35 benchmark results across 17 sources
+**score 55.6** ±0.6 · #266 of 732 · from 35 benchmark results across 17 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #210 of 312*    0.8%      1
-coding          ▁▁▁▃▅▇█●▅▄▃▁    #198 of 468     20%      6
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃    #232 of 401    5.8%      3
-math            ▁▁▃▅█●▄█▄▂▁▁    #244 of 429     18%      6
+agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #210 of 313*    0.8%      1
+coding          ▁▁▁▃▅▇█●▅▄▃▁    #200 of 469     20%      6
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃    #233 of 402    5.7%      3
+math            ▁▁▃▅█●▄█▄▂▁▁    #246 of 431     18%      6
 </pre>
 
-<details><summary>agent tasks · #210 of 312 · 0.8% of its score</summary>
+<details><summary>agent tasks · #210 of 313 · 0.8% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #198 of 468 · 20% of its score</summary>
+<details><summary>coding · #200 of 469 · 20% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #232 of 401 · 5.8% of its score</summary>
+<details><summary>chat &amp; writing · #233 of 402 · 5.7% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #244 of 429 · 18% of its score</summary>
+<details><summary>math · #246 of 431 · 18% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -70,9 +70,9 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         56.1%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 48/92   hard · avg 28%          8.0%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   59.5%  ▁▁▁▆█▂▇▇●··▂ beats 33/38   hard · avg 30%          4.9%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              7.4%  ▃▃▄●▃▃▇▇█▃▂▅ beats 42/197  very hard · avg 7.1%    2.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              7.4%  ▃▃▄●▃▃▇▇█▃▂▅ beats 42/197  very hard · avg 7.2%    2.0%  sharp · noisy
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            77.9%  ▃▃█▂▂●·····▁ beats 21/22   medium · avg 58%        1.7%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                87.5%  ▂▃··▃▂▅█●▃▂▃ beats 15/22   very easy · avg 87%     1.0%  sharp · maxed out
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                87.5%  ▂▃··▃▂▅█●▃▂▃ beats 15/22   very easy · avg 88%     1.0%  sharp · maxed out
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>          19.2%  ▅···●▃···▃▃█ beats 2/8     hard · avg 24%          0.9%  at its level
 </pre>
 

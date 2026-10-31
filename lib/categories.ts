@@ -15,6 +15,7 @@ export const CATEGORIES: Record<Category, Cat> = {
   image: { id: "image", path: "/image", title: "image models", priceUnit: "image", speedUnit: "s/image" },
   video: { id: "video", path: "/video", title: "video models", priceUnit: "sec", speedUnit: "s/video" },
   tts: { id: "tts", path: "/tts", title: "text-to-speech models", priceUnit: "M chars", speedUnit: "x-realtime" },
+  decision: { id: "decision", path: "/decision", title: "decision models", priceUnit: "M input tokens", speedUnit: "ms/decision" },
   stt: { id: "stt", path: "/stt", title: "speech-to-text models", priceUnit: "audio min", speedUnit: "x-realtime" },
 };
 

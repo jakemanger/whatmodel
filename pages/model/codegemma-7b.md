@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 40.0** ±0.6 · #567 of 731 · from 14 benchmark results across 4 sources
+**score 40.0** ±0.6 · #568 of 732 · from 14 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #400 of 468     93%      9
-math    ▁▁▃▅█●▄█▄▂▁▁   #230 of 429*    3.1%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #402 of 469     93%      9
+math    ▁▁▃▅█●▄█▄▂▁▁   #235 of 431*    3.1%      2
 </pre>
 
-<details><summary>coding · #400 of 468 · 93% of its score</summary>
+<details><summary>coding · #402 of 469 · 93% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -39,9 +39,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #230 of 429 · 3.1% of its score</summary>
+<details><summary>math · #235 of 431 · 3.1% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why

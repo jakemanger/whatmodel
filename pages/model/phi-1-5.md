@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 32.6** ±0.8 · #647 of 731 · from 22 benchmark results across 4 sources
+**score 32.6** ±0.8 · #647 of 732 · from 22 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">WinoGrande</a>                           72.5%  ▁····▁··▁▂█● beats 25/26   easy · avg 86%          11%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                                74.5%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 20/26   easy · avg 88%         8.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                            62.6%  ▃···▁●▅█▇▃▁▁ beats 6/26    very easy · avg 91%    6.3%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                             73.1%  ▁▁·▁▁▄▅▄█●▁▃ beats 23/26   easy · avg 85%         5.4%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                             73.1%  ▁▁·▁▁▄▅▄█●▁▃ beats 23/26   easy · avg 85%         5.3%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">OpenBookQA</a>                           37.6%  █·▁▁▃·▁▃▅▇▃● beats 26/26   hard · avg 49%         5.2%  several runs
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/microsoft/phi-1_5/results_2024-05-18%2020%3A59%3A28.331099.json">MedQA (USMLE, 4 options)</a>             31.1%  ▁▁··▄▁●··▄▃█ beats 6/17    medium · avg 71%       3.9%  sharp
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">PIQA</a>                                 76.3%  ▁·▁··▁▁▃●▅█▂ beats 12/26   easy · avg 87%         3.9%  blunt · at its level · several runs

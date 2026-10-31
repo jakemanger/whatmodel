@@ -6,7 +6,7 @@
 
 MaziyarPanahi · released 2024-09 · 72.7B params · other (tongyi-qianwen)
 
-**score 58.0** ±3.8 · #266 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.0** ±3.8 · #267 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

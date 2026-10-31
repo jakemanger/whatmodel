@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 43.1** ±1.7 · #516 of 731 · from 9 benchmark results across 4 sources
+**score 43.0** ±1.7 · #518 of 732 · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▇▄█▄▂▁▁   #308 of 429*    5.9%      1
-vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #154 of 154     99%      9
+math                ▁▁▃▅●▆▄█▄▂▁▁   #310 of 431*    5.9%      1
+vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #153 of 153     99%      9
 </pre>
 
-<details><summary>math · #308 of 429 · 5.9% of its score</summary>
+<details><summary>math · #310 of 431 · 5.9% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #154 of 154 · 99% of its score</summary>
+<details><summary>vision &amp; documents · #153 of 153 · 99% of its score</summary>
 
 Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (lab)</a>                    5   18% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.1
+weighted average                                   = 43.0
 </pre>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 6.9** ±1.1 · #720 of 731 · from 36 benchmark results across 6 sources
+**score 6.9** ±1.1 · #721 of 732 · from 36 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··●·█·██··█       #5 of 6*    3.0%      1
-math    ▁●▃▅█▇▄█▄▂▁▁   #423 of 429*    1.4%      1
+math    ▁●▃▅█▆▄█▄▂▁▁   #425 of 431*    1.4%      1
 </pre>
 
 <details><summary>coding · #5 of 6 · 3.0% of its score</summary>
@@ -29,7 +29,7 @@ test             result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #423 of 429 · 1.4% of its score</summary>
+<details><summary>math · #425 of 431 · 1.4% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md), [Flan-T5 Small](flan-t5-small.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -47,12 +47,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             51.5%  ▃·▅▃▃●·██▃██ beats 5/19   easy · avg 87%           19%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 67.2%  ▂·▄▄·●▂▆▂▄█▄ beats 6/19   easy · avg 87%           12%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           54.7%  ▄····▄▆●▄▆▆█ beats 7/19   easy · avg 88%          8.8%  several runs
-<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   42.6%  ▃··▅▃●▅▅▅███ beats 4/19   very easy · avg 87%     7.8%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   42.6%  ▃··▅▃●▅▅▅███ beats 4/19   very easy · avg 87%     7.9%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.6%  ●··▁·▁▁·▁▂▁▂ beats 4/19   easy · avg 81%          7.6%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 83.3%  ▂··▂▃▂▂●▃▃█▂ beats 6/19   very easy · avg 98%     7.0%  blunt · at its level
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     63.3%  ▂▂●▂·▂·▆·▂█▂ beats 3/14   easy · avg 89%          5.0%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           57.0%  ▃··█●▃▃▅·▃▃▃ beats 4/12   very easy · avg 95%     5.0%  at its level · several runs
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-23%2000%3A02%3A01.385072.json">TriviaQA</a>                              8.6%  ▁··▁●▃▃▁▄▅▄█ beats 2/28   medium · avg 44%        4.5%  too hard for it · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2023-12-23%2000%3A02%3A01.385072.json">TriviaQA</a>                              8.6%  ▁··▁●▃▃▁▄▅▄█ beats 2/28   medium · avg 45%        4.5%  too hard for it · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">HellaSwag</a>                            34.6%  ▄·●▄·▄·▄··▄█ beats 1/7    easy · avg 81%          4.3%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_reading_comprehension_0-shot.json">CoQA</a>                                 45.6%  ▄····●▄·▄▄·█ beats 1/6    very easy · avg 92%     3.8%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b1/bloom-1b1_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   68.5%  ▄●·▄·▄··█··█ beats 1/7    very easy · avg 93%     3.1%  blunt · at its level

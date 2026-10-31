@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▄··········●       #2 of 3*    4.4%      2
-chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #293 of 472*    1.8%      1
-math            ▁▁▃●██▅█▄▁▁▁    #440 of 528     36%      5
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #294 of 474*    1.8%      1
+math            ▁▁▃●██▅█▃▁▁▁    #440 of 530     36%      5
 </pre>
 
 <details><summary>coding · #2 of 3 · 4.4% of its score</summary>
@@ -31,7 +31,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #293 of 472 · 1.8% of its score</summary>
+<details><summary>chat &amp; writing · #294 of 474 · 1.8% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -42,9 +42,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #440 of 528 · 36% of its score</summary>
+<details><summary>math · #440 of 530 · 36% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why

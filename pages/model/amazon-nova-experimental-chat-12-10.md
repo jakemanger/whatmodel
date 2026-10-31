@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅▆█▇●▆▂   #159 of 585*     96%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█▇●▆▂   #160 of 587*     96%      1
 </pre>
 
-<details><summary>chat &amp; writing · #159 of 585 · 96% of its score</summary>
+<details><summary>chat &amp; writing · #160 of 587 · 96% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 mini](gpt-5-mini.md), [MiniMax-M2.5](minimax-m2-5.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1392.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 236/385  avg 1259       96%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1392.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 236/385  avg 1260       96%  blunt
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
-**score 57.9** ±1.0 · #227 of 731 · from 22 benchmark results across 6 sources
+**score 57.9** ±1.0 · #228 of 732 · from 22 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁    #196 of 312     28%      6
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #229 of 468     38%      5
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #160 of 401*     10%      2
-math            ▁▁▃▅█●▄█▄▂▁▁   #255 of 429*    8.5%      2
+agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁    #198 of 313     28%      6
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #230 of 469     38%      5
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #161 of 402*     10%      2
+math            ▁▁▃▅█●▄█▄▂▁▁   #256 of 431*    8.5%      2
 web search      ▁▁▁▅▄●▃▄·▁·▁     #46 of 84*    4.4%      1
 </pre>
 
-<details><summary>agent tasks · #196 of 312 · 28% of its score</summary>
+<details><summary>agent tasks · #198 of 313 · 28% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #229 of 468 · 38% of its score</summary>
+<details><summary>coding · #230 of 469 · 38% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -54,19 +54,19 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #160 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #161 of 402 · 10% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1353.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 199/385  avg 1259       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1353.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 199/385  avg 1260       10%  blunt
 <a href="https://arxiv.org/pdf/2504.00698v2">IFEval strict, mean of prompt and…</a>   90.9%  █··········● beats 1/1                       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>math · #255 of 429 · 8.5% of its score</summary>
+<details><summary>math · #256 of 431 · 8.5% of its score</summary>
 
 Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -98,7 +98,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (lab)</a>    50.8%  ▁·····▄●▂▂▃▃ beats 11/22   very hard · avg 35%    4.3%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   70.0%  ▂▄▂▃█▄▃▆▃●▂▂ beats 72/81   medium · avg 57%       4.1%  blunt · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                       69.6%  ▁▁·▁▁▁▃▂●▅█▁ beats 86/188  medium · avg 54%       3.5%  at its level · small run
-<a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>                   43.4%  ▂·▁·▂▂▁▃●▁█▄ beats 11/29   very hard · avg 33%    2.9%  small run
+<a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>                   43.4%  ▂·▁·▂▃▁▄●▃█▄ beats 13/33   very hard · avg 33%    3.2%  small run
 <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                     90.0%  ▃··▅▄█▅█▇·●▃ beats 31/33   easy · avg 70%         1.7%  small run
 <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot CoT…</a>   85.5%  ▁···▂▁▅●▂▂▃▁ beats 9/22    easy · avg 76%         1.5%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.5%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 74/140  very easy · avg 94%    0.4%  blunt · maxed out · noisy

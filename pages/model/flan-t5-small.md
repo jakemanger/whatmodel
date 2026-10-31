@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.077B params · apache-2.0
 
-**score 16.3** ±2.6 · #708 of 731 · from 11 benchmark results across 5 sources
+**score 16.2** ±2.6 · #709 of 732 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▇▄█▄▂▁▁   #425 of 429*    3.9%      1
+math  ●▁▃▅█▆▄█▄▂▁▁   #427 of 431*    3.9%      1
 </pre>
 
-<details><summary>math · #425 of 429 · 3.9% of its score</summary>
+<details><summary>math · #427 of 431 · 3.9% of its score</summary>
 
 Beats [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-emnlp-504"></a><a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA: Probe the World Models of LLMs w…</a>        1    7% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    5% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 16.3
+weighted average                                   = 16.2
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · POSQA: Probe the World Models of LLMs with Size Comparisons ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-504-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

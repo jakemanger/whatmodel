@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-06 · proprietary
 
-**score 45.0** ±1.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.9** ±1.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅●▆█▇▆▆▂   #454 of 585*     99%      2
+chat &amp; writing  ▁▁▁▃▅●▆█▇▆▆▂   #455 of 587*     99%      2
 </pre>
 
-<details><summary>chat &amp; writing · #454 of 585 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #455 of 587 · 99% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 45.0
+weighted average                              = 44.9
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

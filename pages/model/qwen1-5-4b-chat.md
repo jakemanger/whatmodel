@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 3.95B params · tongyi-qianwen-research
 
-**score 34.2** ±1.5 · #634 of 731 · from 5 benchmark results across 5 sources
+**score 34.2** ±1.5 · #635 of 732 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #388 of 401*     45%      2
+chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #389 of 402*     45%      2
 </pre>
 
-<details><summary>chat &amp; writing · #388 of 401 · 45% of its score</summary>
+<details><summary>chat &amp; writing · #389 of 402 · 45% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1091.2  ▁▁●▂▃▃▃▆▆▇█▃ beats 14/385  avg 1259       24%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1091.2  ▁▁●▂▃▃▃▆▆▇█▃ beats 14/385  avg 1260       24%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1026.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 17/95   avg 1187       22%  typical
 </pre>
 

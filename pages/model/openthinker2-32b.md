@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.6** ±1.4 · #292 of 731 · from 6 benchmark results across 2 sources
+**score 54.6** ±1.4 · #293 of 732 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #270 of 401*     22%      2
-math            ▁▁▃▅█▇●█▄▂▁▁    #170 of 429     48%      3
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #273 of 402*     22%      2
+math            ▁▁▃▅█▆●█▄▂▁▁    #171 of 431     48%      3
 </pre>
 
-<details><summary>chat &amp; writing · #270 of 401 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #273 of 402 · 22% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #170 of 429 · 48% of its score</summary>
+<details><summary>math · #171 of 431 · 48% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   58.7%  ▁·▁▁▁▂▅●█▇▅▁ beats 45/133  medium · avg 36%        20%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   58.7%  ▁·▁▁▁▂▅●█▇▅▁ beats 45/133  medium · avg 37%        20%  sharp · at its level
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>   76.7%  ▁▁▁▂▁▃▁▅█●█▃ beats 47/85   medium · avg 56%        17%  sharp · at its level
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.8%  ▁▃▂▃▄▇●▇█▄▂▁ beats 42/85   very easy · avg 86%     11%  typical
 </pre>
@@ -49,7 +49,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   64.1%  ▁▁▁▁▂▄▅●█▇█▄ beats 126/318  hard · avg 51%     29%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 128/322  hard · avg 51%     29%  sharp · at its level
 </pre>
 
 </details>

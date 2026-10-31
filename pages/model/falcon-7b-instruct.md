@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 25.7** ±2.2 · #683 of 731 · from 11 benchmark results across 7 sources
+**score 25.6** ±2.2 · #684 of 732 · from 11 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #394 of 401*     42%      2
+chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #395 of 402*     42%      2
 </pre>
 
-<details><summary>chat &amp; writing · #394 of 401 · 42% of its score</summary>
+<details><summary>chat &amp; writing · #395 of 402 · 42% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [ChatGLM2-6B](chatglm2-6b.md), [Qwen1.5 1.8B Chat](qwen1-5-1-8b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-468"></a><a href="https://aclanthology.org/2023.emnlp-main.468.pdf">Have LLMs Advanced Enough? A Challengin…</a>        1    2% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 25.7
+weighted average                                   = 25.6
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Conic10K: A Challenging Math Problem Understanding and Reasoning Dataset ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-427-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark For Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-468-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

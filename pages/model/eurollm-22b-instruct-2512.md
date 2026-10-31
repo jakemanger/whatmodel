@@ -6,7 +6,7 @@
 
 UTTER (EuroLLM) · released 2025-12 · 22.64B params · apache-2.0
 
-**score 52.9** ±5.4 · #398 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±5.4 · #399 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

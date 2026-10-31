@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others        rank  counts  tests
-coding  ▁▁▁▂▄▆█▇●▄▃▁   #93 of 537     60%      3
+coding  ▁▁▁▃▄▆█▇●▄▃▁   #93 of 539     60%      3
 </pre>
 
-<details><summary>coding · #93 of 537 · 60% of its score</summary>
+<details><summary>coding · #93 of 539 · 60% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         84.8%  ▁▁▁▁▂▄▆▄▅●█▅ beats 145/211  hard · avg 39%          25%  sharp
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1304.7  ▁·▂▁▄▅▅▃●▄▁▁ beats 47/62    avg 1033                14%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1304.7  ▁·▂▁▄▅▅▃●▄▁▁ beats 47/62    avg 1034                14%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.4%  ▁▁▂▃▄▄█▆●▂▂▁ beats 113/140  very easy · avg 94%    0.6%  blunt · maxed out · noisy
 </pre>
 

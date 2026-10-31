@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▂▄▆█▇▅●▂▁   #55 of 564*     98%      1
+coding  ▁▁▁▂▄▆█▇▅●▂▁   #55 of 566*     98%      1
 </pre>
 
-<details><summary>coding · #55 of 564 · 98% of its score</summary>
+<details><summary>coding · #55 of 566 · 98% of its score</summary>
 
-Beats [GPT-5.5](gpt-5-5.md), [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank lower overall.
+Beats [GPT-5.5](gpt-5-5.md), [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1519.1  ▁▁▃▂▅█▃●▅▅▁▂ beats 78/129  avg 982        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1519.1  ▁▁▃▂▅█▃●▅▅▁▂ beats 78/129  avg 981        98%  sharp
 </pre>
 
 </details>

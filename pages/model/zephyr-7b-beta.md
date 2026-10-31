@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 35.4** ±0.6 · #622 of 731 · from 20 benchmark results across 9 sources
+**score 35.4** ±0.6 · #623 of 732 · from 20 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▅▇█▇▅▄▃▁    #435 of 468     59%      4
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃    #369 of 401     15%      4
-math            ▁▁▃▅●▇▄█▄▂▁▁   #328 of 429*    2.5%      1
+coding          ▁▁▁●▅▇█▇▅▄▃▁    #436 of 469     59%      4
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃    #369 of 402     15%      4
+math            ▁▁▃▅●▆▄█▄▂▁▁   #331 of 431*    2.5%      1
 </pre>
 
-<details><summary>coding · #435 of 468 · 59% of its score</summary>
+<details><summary>coding · #436 of 469 · 59% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Gemma 7B IT](gemma-7b.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty      counts  why
@@ -35,23 +35,23 @@ test                       result  vs the others in its run  difficulty      cou
 
 </details>
 
-<details><summary>chat &amp; writing · #369 of 401 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #369 of 402 · 15% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       13.2%  ▁▂▂▃●▆█▆▄▄▁▁ beats 32/122  medium · avg 35%       6.1%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1130.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 28/385  avg 1259               4.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1130.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 28/385  avg 1260               4.1%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1049.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 25/95   avg 1187               3.8%  typical
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   90.6%  ▂▂·▆·▇▃▆●▆▄▂ beats 32/45   very easy · avg 94%    1.0%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #328 of 429 · 2.5% of its score</summary>
+<details><summary>math · #331 of 431 · 2.5% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why

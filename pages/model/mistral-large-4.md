@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
-**score 71.3** ±1.2 · #67 of 731 · from 6 benchmark results across 2 sources
+**score 71.2** ±1.2 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,52 +16,52 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▄▅▅●▄▂▁   #58 of 312*     34%      1
-coding              ▁▁▁▃▅▇█▇▅●▃▁   #42 of 468*     25%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #81 of 401*     14%      1
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #46 of 154*     10%      1
+agent tasks         ▁▁▂▆█▄▅▄●▃▁▁   #59 of 354*     36%      1
+coding              ▁▁▁▃▄▆█▇▅●▃▁   #44 of 539*     25%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃   #90 of 474*     14%      1
+vision &amp; documents  ▁▁▂▃▂▃▅▄▆●█▄   #50 of 189*    9.3%      1
 </pre>
 
-<details><summary>agent tasks · #58 of 312 · 34% of its score</summary>
+<details><summary>agent tasks · #59 of 354 · 36% of its score</summary>
 
 Beats [Muse Spark 1.1](muse-spark-1-1.md), [Muse Spark 1.2](muse-spark-1-2.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [Beam 1.0 501B A23B](beam-1-0-501b-a23b.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0602 IPS  ▁▁▁▃●▃█▁▁▂▁▁ beats 13/54  avg -0.382 IPS     34%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0602 IPS  ▁▁▁▃●▂█▁▂▂▁▁ beats 13/59  avg -0.379 IPS     36%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #42 of 468 · 25% of its score</summary>
+<details><summary>coding · #44 of 539 · 25% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1544.3  ▁▁▃▂▅█▃●▅▅▁▂ beats 86/129  avg 982        25%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1544.3  ▁▁▃▂▅█▃●▅▅▁▂ beats 86/129  avg 981        25%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #81 of 401 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #90 of 474 · 14% of its score</summary>
 
 Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1432.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 289/385  avg 1259       14%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1432.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 289/385  avg 1260       14%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #46 of 154 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #50 of 189 · 9.3% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1251.9  ▁▁▂▂▂▂▃▄▅▅●▇ beats 109/152  avg 1061       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1251.9  ▁▁▂▂▂▂▃▄▅▅●▇ beats 109/152  avg 1061      9.3%  blunt
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ test                             result  vs the others in its run    difficulty 
 <pre>
 test                   result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   33.0%  █▁▁▁▁▂▃▃●▂▁▁ beats 109/137  very hard · avg 5.8%     10%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       20.0%  ▁▁▃▂●▃▆▆█▄▂▅ beats 12/81    very hard · avg 8.0%    5.4%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       20.0%  ▁▁▃▂●▃▆▆█▄▂▅ beats 12/81    very hard · avg 8.0%    5.3%  at its level
 </pre>
 
 </details>
@@ -85,17 +85,13 @@ source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   84% ▇▇▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Epoch AI</a>                             2   16% ▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 71.3
+weighted average                        = 71.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-### Through an API
-
-api (Mistral AI) · $2.06/M blended · $1.36 in / $4.18 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/mistral-large-4)
-
-<sub>[price source](https://docs.mistral.ai/models/mistral-large-4): Observed 2026-10-10 on Mistral's own Mistral Large 4 model page (Price, USD): original (list) price $1.36 input / $4.18 output per million tokens; cached input $0.14. The page also shows a sale price of $0.68 input / $0.07 cached / $2.09 output, which is not used here. API names mistral-large-4 and mistral-large-4-0, version 26.10, status 'Public Preview'. · [context source](https://docs.mistral.ai/models/mistral-large-4): Mistral's model page: Context '1M'. Observed 2026-10-10.</sub>
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/mistral-large-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

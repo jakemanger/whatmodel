@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 62.9** ±1.9 · #173 of 731 · from 3 benchmark results across 2 sources
+**score 62.9** ±1.9 · #173 of 732 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #102 of 312*    7.4%      1
+agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #101 of 313*    7.4%      1
 </pre>
 
-<details><summary>agent tasks · #102 of 312 · 7.4% of its score</summary>
+<details><summary>agent tasks · #101 of 313 · 7.4% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 

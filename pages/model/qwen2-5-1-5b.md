@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 38.0** ±0.9 · #595 of 731 · from 29 benchmark results across 12 sources
+**score 38.0** ±0.9 · #596 of 732 · from 29 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #275 of 312*    1.8%      1
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #364 of 468    9.2%      5
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃    #382 of 401    6.5%      3
-math            ▁▁▃●█▇▄█▄▂▁▁    #359 of 429     24%      2
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #277 of 313*    1.8%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #365 of 469    9.2%      5
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃    #384 of 402    6.5%      3
+math            ▁▁▃●█▆▄█▄▂▁▁    #361 of 431     24%      2
 </pre>
 
-<details><summary>agent tasks · #275 of 312 · 1.8% of its score</summary>
+<details><summary>agent tasks · #277 of 313 · 1.8% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall.
 
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #364 of 468 · 9.2% of its score</summary>
+<details><summary>coding · #365 of 469 · 9.2% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #382 of 401 · 6.5% of its score</summary>
+<details><summary>chat &amp; writing · #384 of 402 · 6.5% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -56,19 +56,19 @@ Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Ge
 test                              result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>      7.4%  ●▃·▁▁█▇▅·▁·▁ beats 1/22   medium · avg 39%    2.8%  sharp
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>          44.2%  ●▃▁▃▁▄▁▁█▃▃▁ beats 0/22   easy · avg 78%      2.2%  at its level
-<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified)</a>   47.4%  ▁●▄▂▂▄▆█▇▄▂▁ beats 7/143  easy · avg 76%      1.5%  at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified)</a>   47.4%  ▁●▄▂▂▄▆██▅▂▁ beats 7/145  easy · avg 76%      1.5%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #359 of 429 · 24% of its score</summary>
+<details><summary>math · #361 of 431 · 24% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       66.2%  ▂▃··●▂▅█▆▃▂▃ beats 3/22   very easy · avg 87%     17%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.6%  ▃▃●▂▂▆·····▁ beats 9/22   medium · avg 58%       7.0%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       66.2%  ▂▃··●▂▅█▆▃▂▃ beats 3/22   very easy · avg 88%     17%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.6%  ▃▃●▂▂▆·····▁ beats 9/22   medium · avg 58%       6.9%  at its level · small run · several runs
 </pre>
 
 </details>
@@ -79,7 +79,7 @@ test                       result  vs the others in its run  difficulty         
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       45.8%  ▁▄·●▁·▅█·▄▄▁ beats 4/22     medium · avg 72%        15%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 59.7%  ▁▂·▁·●▁█·▃▃▅ beats 4/22     easy · avg 75%          13%  at its level
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.2%  ▁●▂▂▃█▃▆▅▄▂▃ beats 4/95     medium · avg 65%       6.7%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.2%  ▁●▂▂▃█▃▆▅▄▂▃ beats 4/95     medium · avg 65%       6.8%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      27.8%  ▁··▁▁●▂▆▅▆█▆ beats 6/70     medium · avg 62%       4.7%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 9/81     medium · avg 57%       3.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 31%         3.6%  blunt

@@ -6,7 +6,7 @@
 
 DeepReinforce · released 2026-08 · 35.95B params (3B active) · mit
 
-**score 69.2** ±1.4 · #87 of 731 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.2** ±1.4 · #86 of 732 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,39 +16,39 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅▅●▄▂▁   #78 of 312     68%      9
-coding       ▁▁▁▃▅▇█▇▅●▃▁   #67 of 468     32%      3
+agent tasks  ▁▁▃▆█▄▅▅●▄▂▁   #78 of 313     68%      9
+coding       ▁▁▁▃▅▇█▇▅●▃▁   #66 of 469     32%      3
 web search   █··········●      #1 of 2     16%      3
 </pre>
 
-<details><summary>agent tasks · #78 of 312 · 68% of its score</summary>
+<details><summary>agent tasks · #78 of 313 · 68% of its score</summary>
 
-Beats [GPT-5 Pro](gpt-5-pro.md), [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
+Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecified)…</a>   59.6%  ▃·▁▁▁▂▂▃█●▃▁ beats 41/56    very hard · avg 11%     12%  sharp · at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>             79.0%  ▁▁▁▁▁▁▂▅█●▁▁ beats 127/136  hard · avg 26%          12%  sharp · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecified)…</a>   59.6%  ▂·▁▁▁▁▂▃█●▂▁ beats 43/58    very hard · avg 10%     13%  sharp · at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>             79.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 129/138  hard · avg 26%          12%  sharp · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Terminal-Bench 2.1 (lab)</a>             67.8%  ▁·▁·▁▁▄▃▆●▅█ beats 37/63    hard · avg 20%          10%  sharp · at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▁▄▇●▂▂▁ beats 38/63    hard · avg 29%         7.4%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     67.6%  ▂·▃▁▂▂▆▄●▂▂▄ beats 30/44    hard · avg 25%         6.7%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>         70.2%  ▂·▁▂▂·▁▃█●▆▂ beats 26/39    hard · avg 31%         6.2%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   33.4%  ▂▃▁▂▃●▃█▇▇▆▂ beats 13/58    very hard · avg 12%    5.5%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▁▅█●▂▂▁ beats 40/65    hard · avg 29%         7.5%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>         70.2%  ▂·▁▂▂·▁▃█●▆▂ beats 26/39    hard · avg 30%         6.2%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     67.6%  ▂·▃▁▂▂▆▅●▂▂▄ beats 32/46    hard · avg 27%         6.0%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   33.4%  ▁·▁▂▂▁●▄▇█▄▅ beats 16/62    very hard · avg 11%    5.8%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     67.8%  █·▂●··▂···▂▂ beats 6/10     medium · avg 37%       4.2%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>            48.7%  ▂·▂▂●▃···▂██ beats 4/18     hard · avg 27%         3.4%  blunt · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #67 of 468 · 32% of its score</summary>
+<details><summary>coding · #66 of 469 · 32% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecified)…</a>   59.6%  ▃·▁▁▁▂▂▃█●▃▁ beats 41/56    very hard · avg 11%     12%  sharp · at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>             79.0%  ▁▁▁▁▁▁▂▅█●▁▁ beats 127/136  hard · avg 26%          12%  sharp · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▁▄▇●▂▂▁ beats 38/63    hard · avg 29%         7.4%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecified)…</a>   59.6%  ▂·▁▁▁▁▂▃█●▂▁ beats 43/58    very hard · avg 10%     13%  sharp · at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>             79.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 129/138  hard · avg 26%          12%  sharp · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▁▅█●▂▂▁ beats 40/65    hard · avg 29%         7.5%  at its level · small run
 </pre>
 
 </details>
@@ -57,8 +57,8 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     67.6%  ▂·▃▁▂▂▆▄●▂▂▄ beats 30/44  hard · avg 25%         6.7%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   33.4%  ▂▃▁▂▃●▃█▇▇▆▂ beats 13/58  very hard · avg 12%    5.5%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     67.6%  ▂·▃▁▂▂▆▅●▂▂▄ beats 32/46  hard · avg 27%         6.0%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   33.4%  ▁·▁▂▂▁●▄▇█▄▅ beats 16/62  very hard · avg 11%    5.8%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     67.8%  █·▂●··▂···▂▂ beats 6/10   medium · avg 37%       4.2%  at its level · small run
 </pre>
 
@@ -68,8 +68,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>           89.2%  ▁▁▁▁▂▄▅▅█▇●▄ beats 262/318  hard · avg 45%           16%  sharp · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>   25.6%  ▁▁▁▄▅▆▆●█▆▁▃ beats 63/109   very hard · avg 4.8%    8.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>           89.2%  ▁▁▁▁▂▄▅▅██●▄ beats 266/322  hard · avg 45%           16%  sharp · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>   25.6%  ▁▁▁▄▆▆▇●█▆▁▃ beats 65/111   very hard · avg 4.8%    8.7%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">NL2Repo (lab)</a>                46.2%  ▂▂▂·▃▃▅█●▂▅▃ beats 15/22    very hard · avg 12%     6.3%  at its level · small run
 </pre>
 

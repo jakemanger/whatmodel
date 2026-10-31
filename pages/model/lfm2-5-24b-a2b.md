@@ -27,8 +27,8 @@ math                           not ranked yet       —      1
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">WebArena-Verified (lab)</a>              26.8%  ●··█···█·█·█ beats 0/4     hard · avg 32%       27%  sharp · at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SWE-bench Verified (lab)</a>             51.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 43/136  medium · avg 47%    4.1%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">BFCL V4 (December 2025 archive) (…</a>   65.0%  ▁▁▁▂▇▆▆▆█▂●▂ beats 97/112                         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SWE-bench Verified (lab)</a>             51.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 43/138  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">BFCL V4 (December 2025 archive) (…</a>   65.0%  ▁▁▁▂▆▆▅▆█▂●▃ beats 98/114                         —  not counted yet: no other model in the …
 <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">τ³-bench Banking (lab)</a>                8.0%  ▂▂·▅█▂●▃▃▆▂▅ beats 11/24                          —  not counted yet: no other model in the …
 </pre>
 
@@ -38,8 +38,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                               result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SciCode (level unspecified) (lab)</a>   32.7%  ▁····▃▄▄●█▇▃ beats 15/38   hard · avg 30%      5.8%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SWE-bench Verified (lab)</a>            51.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 43/136  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SciCode (level unspecified) (lab)</a>   32.7%  ▁····▃▃▄●█▆▂ beats 16/40   hard · avg 30%      5.8%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">SWE-bench Verified (lab)</a>            51.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 43/138  medium · avg 47%    4.1%  at its level · small run
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                               result  vs the others in its run   difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">IFEval (aggregation unspecified) …</a>   96.8%  ▁▂▄▂▂▄▆█▇▄▂● beats 143/143  very easy · avg 97%    8.9%  maxed out · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">IFEval (aggregation unspecified) …</a>   96.8%  ▁▂▄▂▂▄▆██▅▂● beats 145/145  very easy · avg 97%    8.9%  maxed out · small run
 </pre>
 
 </details>
@@ -66,9 +66,9 @@ test            result  vs the others in its run  counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Humanity's Last Exam (lab)</a>            7.4%  ▁▁▁●▅▆▆██▆▁▃ beats 10/109   very hard · avg 7.0%    8.9%  small run
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">IFBench (aggregation unspecified)…</a>   74.7%  ▃▇▂▄▅▅▂▄▄▇●▇ beats 64/84    easy · avg 74%          8.0%  small run
-<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">GPQA Diamond (lab)</a>                   74.4%  ▁▁▁▁▂▄▅▅●▇█▄ beats 171/318  medium · avg 69%        0.8%  blunt · at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">Humanity's Last Exam (lab)</a>            7.4%  ▁▁▁●▆▆▇██▆▁▃ beats 10/111   very hard · avg 7.0%    8.9%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">IFBench (aggregation unspecified)…</a>   74.7%  ▂▆▂▄▄▄▂▄▄▆●▇ beats 65/86    easy · avg 74%          8.0%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/3fcfdbfa1a1b6d8166846a6323e69f1e1254440d/README.md#evaluations">GPQA Diamond (lab)</a>                   74.4%  ▁▁▁▁▂▄▅▅●██▄ beats 174/322  medium · avg 69%        0.8%  blunt · at its level · small run
 </pre>
 
 </details>

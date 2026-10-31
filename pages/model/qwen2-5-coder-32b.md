@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 57.3** ±0.7 · #238 of 731 · from 25 benchmark results across 11 sources
+**score 57.3** ±0.7 · #239 of 732 · from 25 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇█●▅▄▃▁    #187 of 468     87%     17
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #261 of 401*    4.6%      1
+coding          ▁▁▁▃▅▇█●▅▄▃▁    #188 of 469     87%     17
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #262 of 402*    4.6%      1
 </pre>
 
-<details><summary>coding · #187 of 468 · 87% of its score</summary>
+<details><summary>coding · #188 of 469 · 87% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           90.2%  █···███·██·● beats 6/6    easy · avg 77%          2.2%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 70%          2.0%  typical
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     66.8%  ▃▁▁█▁▄●▃▄▇▁▄ beats 16/31  medium · avg 40%        1.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  hard · avg 33%          1.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  hard · avg 33%          1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   44.1%  ▁▁▁▁▁▁▂▂▃█▅● beats 41/47  hard · avg 32%          1.3%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   85.7%  ▃··▁▂▂▃▂█▃▄● beats 45/47  medium · avg 51%        1.1%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     75.2%  █·██·█··█·█● beats 6/6    medium · avg 56%        1.1%  at its level
@@ -47,13 +47,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #261 of 401 · 4.6% of its score</summary>
+<details><summary>chat &amp; writing · #262 of 402 · 4.6% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1270.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 102/385  avg 1259      4.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1270.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 102/385  avg 1260      4.6%  blunt
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   34.1%  ▅··▃●·█·▃██▃ beats 4/15     hard · avg 22%      3.0%  at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   34.1%  ▅··▃●·█·▃██▃ beats 4/15     hard · avg 23%      3.0%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   84.6%  ▁▁●▁█▄▃▃▆▂▂▂ beats 5/49     easy · avg 77%      2.7%  typical
 <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        49.6%  ▄······▄▄█·● beats 6/6      medium · avg 37%    1.6%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 222/276  medium · avg 72%    0.9%  at its level · noisy

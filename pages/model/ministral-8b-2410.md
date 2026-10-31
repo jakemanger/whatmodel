@@ -6,7 +6,7 @@
 
 Mistral · released 2024-10 · 8.02B params · mistral-research
 
-**score 45.2** ±0.6 · #472 of 731 · from 39 benchmark results across 12 sources
+**score 45.2** ±0.6 · #473 of 732 · from 39 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #265 of 312*    1.9%      3
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #265 of 313*    1.9%      3
 coding          █··········●       #1 of 2*    2.9%      2
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃    #291 of 401    8.5%      4
-math            ▁▁▃●█▇▄█▄▂▁▁    #358 of 429     29%      5
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃    #292 of 402    8.5%      4
+math            ▁▁▃●█▆▄█▄▂▁▁    #360 of 431     29%      5
 </pre>
 
-<details><summary>agent tasks · #265 of 312 · 1.9% of its score</summary>
+<details><summary>agent tasks · #265 of 313 · 1.9% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Smal
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   68.9%  ▃●▃▃▆▅▆▅█▂▅▂ beats 3/31    easy · avg 78%      0.9%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              51.5%  ▁▁▁▁▁▃●█▅▄▁▁ beats 41/114  medium · avg 51%    0.9%  blunt · at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      11.1%  ▁▁▁▂▇▆▆▆█▂▄▂ beats 0/112   hard · avg 31%         —  failed run: Same pattern as Nemotron Ul…
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      11.1%  ▁▁▁▂▆▆▅▆█▂▄▃ beats 0/114   hard · avg 31%         —  failed run: Same pattern as Nemotron Ul…
 </pre>
 
 </details>
@@ -45,13 +45,13 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #291 of 401 · 8.5% of its score</summary>
+<details><summary>chat &amp; writing · #292 of 402 · 8.5% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1237.6  ▁▁▁▂▃●▃▆▆▇█▃ beats 87/385  avg 1259            4.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1237.6  ▁▁▁▂▃●▃▆▆▇█▃ beats 87/385  avg 1260            4.1%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       31.4%  ▃▃·▁▁●▇▅·▁·▁ beats 8/22    medium · avg 39%    2.2%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   70.9%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 21/30   easy · avg 70%      1.2%  at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            56.4%  ▁▃●▃▁▄▁▁█▃▃▁ beats 3/22    easy · avg 78%      0.9%  at its level
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #358 of 429 · 29% of its score</summary>
+<details><summary>math · #360 of 431 · 29% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test                       result  vs the others in its run  difficulty         
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                        56.7%  ▅▃▃●·▅···▃·▃ beats 5/10   easy · avg 72%         8.7%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                14.9%  ▂▂●▆▄█▆▃▅▂▃▄ beats 13/92  hard · avg 28%         4.0%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                        41.6%  ●▄██···▄▄▄·▄ beats 0/10   medium · avg 61%       3.0%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.0%  ▃▃●▂▂▆·····▁ beats 7/22   medium · avg 58%       2.7%  at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.0%  ▃▃●▂▂▆·····▁ beats 7/22   medium · avg 58%       2.6%  at its level · several runs
 </pre>
 
 </details>

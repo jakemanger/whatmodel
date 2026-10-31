@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 70B params · llama-3.1
 
-**score 53.4** ±0.4 · #309 of 731 · from 58 benchmark results across 28 sources
+**score 53.4** ±0.4 · #310 of 732 · from 58 benchmark results across 28 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #253 of 312    6.1%      7
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #250 of 468     19%     10
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #243 of 401     10%      5
-math            ▁▁▃▅●▇▄█▄▂▁▁   #293 of 429     16%      7
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #254 of 313    6.1%      7
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #251 of 469     19%     10
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #245 of 402     10%      5
+math            ▁▁▃▅●▆▄█▄▂▁▁   #294 of 431     16%      7
 </pre>
 
-<details><summary>agent tasks · #253 of 312 · 6.1% of its score</summary>
+<details><summary>agent tasks · #254 of 313 · 6.1% of its score</summary>
 
-Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   18.8%  █····███·●██ beats 4/6     very hard · avg 15%     1.6%  sharp
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   27.9%  ●···█▄▄·▄█·█ beats 1/10    hard · avg 28%          1.2%  at its level
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   27.9%  ●···█▄▄·▄█·█ beats 1/10    hard · avg 28%          1.1%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   18.4%  ●··▄·▄█·▄··▄ beats 1/7     hard · avg 17%          1.0%  typical
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-70b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   57.6%  ●····▅▅▃▃·▃█ beats 1/11    medium · avg 53%        0.8%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   17.6%  ●▄····█▄···▄ beats 0/5     hard · avg 26%          0.6%  at its level
@@ -39,7 +39,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #250 of 468 · 19% of its score</summary>
+<details><summary>coding · #251 of 469 · 19% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -59,14 +59,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #243 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #245 of 402 · 10% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   55.7%  ▂▁▁▅█▅▄●▃▅▃▁ beats 39/60    medium · avg 47%    4.9%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1293.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 125/385  avg 1259            2.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1293.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 125/385  avg 1260            2.1%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   44.8%  ▁·▁▁▂▁▄▄▆●█▄ beats 24/38    medium · avg 46%    1.7%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       32.9%  ▃▃·▁▁●▇▅·▁·▁ beats 9/22     medium · avg 39%    1.4%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            88.0%  ▁▃▁▃▁▄▁▁█▃●▁ beats 21/22    easy · avg 78%      0.3%  typical
@@ -74,7 +74,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #293 of 429 · 16% of its score</summary>
+<details><summary>math · #294 of 431 · 16% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -85,7 +85,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   43.1%  ▁▁▁▆█▂●▇▄··▂ beats 21/38   hard · avg 30%          2.7%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                                94.5%  ▂▃··▃▂▅█▆▃▂● beats 21/22   very easy · avg 87%     2.1%  sharp · small run · several runs
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          94.2%  ▁▄·▁▄█▅▅▅█●█ beats 32/43   very easy · avg 87%     1.7%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.6%  ▃▃●▃▃▃▇▇█▃▂▅ beats 24/197  very hard · avg 7.1%    0.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.6%  ▃▃●▃▃▃▇▇█▃▂▅ beats 24/197  very hard · avg 7.2%    0.8%  sharp · noisy
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>            56.2%  ▃▃█●▂▆·····▁ beats 14/22   medium · avg 58%        0.7%  at its level
 </pre>
 
@@ -107,8 +107,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   72.5%  ▁▂▂▂▃█▃●▅▄▂▃ beats 59/95    medium · avg 65%       1.4%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.1%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 64/97    hard · avg 31%         1.2%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.0%  ▁▁·▁▂▂▄█▄●▄▄ beats 42/66    hard · avg 29%         1.2%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      72.5%  ▁··▁▁▂▂▆▅▆█● beats 61/70    medium · avg 62%       1.1%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   70.5%  ▁▁▁▁·▂·█▆●▇▁ beats 19/31    medium · avg 46%       1.1%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      72.5%  ▁··▁▁▂▂▆▅▆█● beats 61/70    medium · avg 62%       1.1%  at its level
 <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>                  70.4%  ▄▁▁▂▁▄█▇●▂▃▂ beats 118/140  medium · avg 66%       1.1%  sharp · at its level · small run
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Llama-3.1-70B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   77.3%  ▂·▂▂▂▆▅●▆▆▃█ beats 12/29    easy · avg 74%         1.0%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   68.0%  ▂▄▂▃█▄▃▆▃●▂▂ beats 67/81    medium · avg 57%       0.9%  blunt · at its level

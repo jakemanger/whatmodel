@@ -6,7 +6,7 @@
 
 Mistral · released 2023-09 · 7.24B params · apache-2.0
 
-**score 34.1** ±1.0 · #635 of 731 · from 13 benchmark results across 9 sources
+**score 34.0** ±1.0 · #637 of 732 · from 13 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▅▇█▇▅▄▃▁   #428 of 468*     36%      1
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #384 of 401*     19%      2
+coding          ▁▁▁●▅▇█▇▅▄▃▁   #429 of 469*     36%      1
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #385 of 402*     19%      2
 </pre>
 
-<details><summary>coding · #428 of 468 · 36% of its score</summary>
+<details><summary>coding · #429 of 469 · 36% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -31,13 +31,13 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #384 of 401 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #385 of 402 · 19% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1110.4  ▁▁▁●▃▃▃▆▆▇█▃ beats 17/385  avg 1259       10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1110.4  ▁▁▁●▃▃▃▆▆▇█▃ beats 17/385  avg 1260       10%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1008.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 16/95   avg 1187      9.0%  typical
 </pre>
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    17.6%  ▂●▃▄▄█▁▄▅▃▁▃ beats 2/42    medium · avg 52%        17%  typical
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    17.6%  ▂●▃▄▄█▁▄▅▃▁▃ beats 2/42    medium · avg 52%        18%  typical
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                             24.2%  ●▂▅█▃·█▃▅··▂ beats 0/23    medium · avg 54%        10%  typical
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 14/28   medium · avg 48%       8.1%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.5%  ▂●▂▃█▄▃▆▃▅▂▂ beats 8/81    medium · avg 57%       4.3%  blunt · at its level
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 34.1
+weighted average                                   = 34.0
 </pre>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

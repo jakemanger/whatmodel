@@ -6,7 +6,7 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 49.6** ±1.3 · #379 of 731 · from 8 benchmark results across 5 sources
+**score 49.6** ±1.3 · #380 of 732 · from 8 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #293 of 468     84%      6
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #295 of 469     84%      6
 </pre>
 
-<details><summary>coding · #293 of 468 · 84% of its score</summary>
+<details><summary>coding · #295 of 469 · 84% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

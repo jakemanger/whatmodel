@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▇█▇▇▇●   #15 of 472*     34%      1
-math                ▁▁▃▆██▅●▄▁▁▁   #80 of 528*    5.1%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇▇▇●   #15 of 474*     34%      1
+math                ▁▁▃▆██▅●▃▁▁▁   #80 of 530*    5.1%      1
 vision &amp; documents  ▁▁▂▃▂▃▅▄▆██●   #15 of 189*     35%      2
 </pre>
 
-<details><summary>chat &amp; writing · #15 of 472 · 34% of its score</summary>
+<details><summary>chat &amp; writing · #15 of 474 · 34% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1489.0  ▁▁▁▂▃▃▃▆▆▇█● beats 371/385  avg 1259       34%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1489.0  ▁▁▁▂▃▃▃▆▆▇█● beats 371/385  avg 1260       34%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #80 of 528 · 5.1% of its score</summary>
+<details><summary>math · #80 of 530 · 5.1% of its score</summary>
 
 Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/197  very hard · avg 7.1%    5.1%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/197  very hard · avg 7.2%    5.1%  sharp · maxed out · noisy
 </pre>
 
 </details>

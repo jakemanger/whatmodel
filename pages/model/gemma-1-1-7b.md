@@ -6,7 +6,7 @@
 
 Google · released 2024-04 · 8.54B params · gemma
 
-**score 38.7** ±0.7 · #580 of 731 · from 12 benchmark results across 8 sources
+**score 38.7** ±0.7 · #581 of 732 · from 12 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #410 of 468     68%      3
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #330 of 401     13%      3
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #411 of 469     68%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #331 of 402     13%      3
 </pre>
 
-<details><summary>coding · #410 of 468 · 68% of its score</summary>
+<details><summary>coding · #411 of 469 · 68% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -33,13 +33,13 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #330 of 401 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #331 of 402 · 13% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 57/385  avg 1259            4.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 57/385  avg 1260            4.7%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1097.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 43/95   avg 1187            4.3%  typical
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   12.1%  ▂▁▁●█▅▄▃▃▅▃▁ beats 6/60    medium · avg 47%    4.3%  sharp
 </pre>
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 18.8%  ▁▁▁▂▂●▂█▆▃▅▃ beats 14/61   medium · avg 38%        12%  typical
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-1.1-7b-it/results_2024-05-16%2018%3A07%3A15.583932.json">MedQA (USMLE, 4 options)</a>             45.7%  ▁▁··▄▁▁··●▃█ beats 9/17    medium · avg 71%       3.6%  sharp · at its level
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-1.1-7b-it/results_2024-05-16%2018%3A07%3A15.583932.json">MedMCQA</a>                              44.4%  ▂▂··▄▄▂▂·●██ beats 8/17    medium · avg 63%       1.7%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-1.1-7b-it/results_2024-05-16%2018%3A07%3A15.583932.json">MedMCQA</a>                              44.4%  ▂▂··▄▄▂▂·●██ beats 8/17    medium · avg 63%       1.6%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   53.9%  ▃▁▁▁▁▁▁●▂█▅▁ beats 73/276  medium · avg 72%       1.0%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   83.0%  ▁▁●▃▄▄█▆▃▂▂▁ beats 8/140   very easy · avg 94%    0.5%  blunt · noisy
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-1.1-7b-it/results_2024-05-16%2018%3A07%3A15.583932.json">PubMedQA</a>                             70.8%  ▂·▂▆·▄▂▄●▂█▂ beats 10/17   medium · avg 75%       0.2%  blunt · at its level

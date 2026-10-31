@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · closed weights
 
-**score 62.7** ±2.4 · #189 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.7** ±2.4 · #189 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅▇█▆●▆▃   #123 of 472*     59%      1
-vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄   #100 of 157*     39%      1
+chat &amp; writing      ▁▁▁▄▆▅▇█▆●▆▃   #123 of 473*     58%      1
+vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄    #99 of 156*     39%      1
 </pre>
 
-<details><summary>chat &amp; writing · #123 of 472 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #123 of 473 · 58% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1394.1  ▁▁▁▂▃▃▃▆▆●█▃ beats 239/385  avg 1259       59%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1394.1  ▁▁▁▂▃▃▃▆▆●█▃ beats 239/385  avg 1260       58%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #100 of 157 · 39% of its score</summary>
+<details><summary>vision &amp; documents · #99 of 156 · 39% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 

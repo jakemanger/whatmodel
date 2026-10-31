@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 46.6** ±1.8 · #443 of 731 · from 4 benchmark results across 3 sources
+**score 46.5** ±1.8 · #445 of 732 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #302 of 401     75%      3
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #303 of 402     75%      3
 </pre>
 
-<details><summary>chat &amp; writing · #302 of 401 · 75% of its score</summary>
+<details><summary>chat &amp; writing · #303 of 402 · 75% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1213.1  ▁▁▁▂▃●▃▆▆▇█▃ beats 75/385  avg 1259           36%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1213.1  ▁▁▁▂▃●▃▆▆▇█▃ beats 75/385  avg 1260           36%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1143.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 63/95   avg 1187           33%  typical
-<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecified) …</a>   65.1%  ▁▂▄▂●▄▆█▇▄▂▁ beats 27/143  easy · avg 70%    6.9%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecified) …</a>   65.1%  ▁▂▄▂●▄▆██▅▂▁ beats 27/145  easy · avg 70%    6.7%  at its level · small run
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   33% ▇▇▇▇
 <a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a><a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">HuggingFaceH4 zephyr-orpo-141b-A35b-v0.…</a>        2   30% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 46.6
+weighted average                                   = 46.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▄▆█▇▅▄▃▁   #495 of 537     15%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #284 of 528     15%      2
+coding  ▁▁▁●▄▆█▇▅▄▃▁   #497 of 539     15%      2
+math    ▁▁▃▆█●▅█▃▁▁▁   #286 of 530     15%      2
 </pre>
 
-<details><summary>coding · #495 of 537 · 15% of its score</summary>
+<details><summary>coding · #497 of 539 · 15% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #284 of 528 · 15% of its score</summary>
+<details><summary>math · #286 of 530 · 15% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 7/14    hard · avg 66%         1.3%  sharp · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">ARC Easy</a>                             58.8%  ▃··●···▃·▃·▃ beats 1/6     easy · avg 87%         1.2%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   57.9%  ██···██···█● beats 5/5     easy · avg 74%         1.1%  blunt · at its level
-<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     52.3%  ▁·▁██▄●▁▂▃▇▁ beats 39/59   medium · avg 62%       0.8%  blunt · at its level
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     52.3%  ▁·▁██▄●▁▂▃▇▁ beats 39/59   medium · avg 63%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.706.pdf">StoryAnalogy multiple-choice stor…</a>   28.6%  ●·······█··█ beats 0/2     hard · avg 42%         0.2%  blunt · noisy · small run
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">TruthfulQA MC2</a>                       42.5%  ▃···█·●····▃ beats 4/5     medium · avg 56%       0.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 35.8%  ▅▃▅··▃···▃▃● beats 8/10    hard · avg 37%         0.1%  blunt · noisy

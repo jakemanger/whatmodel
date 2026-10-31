@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 65.6** ±1.0 · #136 of 731 · from 15 benchmark results across 10 sources
+**score 65.6** ±1.0 · #136 of 732 · from 15 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▄●▅▄▄▂▁   #117 of 312     15%      4
-coding              ▁▁▁▃▅▇█●▅▄▃▁   #173 of 468     29%      3
-chat &amp; writing      ▁▁▁▃▆▄▆█▆●▇▃   #82 of 401*     11%      1
-math                ▁▁▃▅█▇▄●▄▂▁▁    #93 of 429     29%      4
-vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄   #85 of 154*    7.3%      1
+agent tasks         ▁▁▃▆█▄●▅▄▄▂▁   #118 of 313     16%      4
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #174 of 469     29%      3
+chat &amp; writing      ▁▁▁▃▆▄▆█▆●▇▃   #82 of 402*     11%      1
+math                ▁▁▃▅█▆▄●▄▂▁▁    #94 of 431     29%      4
+vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄   #84 of 153*    7.3%      1
 web search          ▁▁▁▅▄●▃▄·▁·▁    #38 of 84*    4.0%      1
 </pre>
 
-<details><summary>agent tasks · #117 of 312 · 15% of its score</summary>
+<details><summary>agent tasks · #118 of 313 · 16% of its score</summary>
 
-Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      69.6%  ▁▁▁▂██▅▅▆▂●▂ beats 74/77  hard · avg 31%          5.2%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      69.6%  ▁▁▁▂██▅▅▆▂●▂ beats 74/77  hard · avg 31%          5.3%  at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   13.1%  ▃●▂▃·▆▃▂█▅▅▂ beats 2/25   very hard · avg 4.3%    5.0%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>    1.2%  ●··▃·▃██▃▃▃█ beats 0/14   very hard · avg 2.8%    3.3%  sharp · noisy
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     82.7%  ▂··▄···▂▄▄█● beats 13/13  medium · avg 45%        1.9%  at its level
@@ -38,37 +38,37 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #173 of 468 · 29% of its score</summary>
+<details><summary>coding · #174 of 469 · 29% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1242.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 10/129  avg 982                  19%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1242.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 10/129  avg 981                  19%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   71.6%  ▁··▁·▁▁▁▆█●█ beats 33/45   hard · avg 29%          5.8%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>    1.2%  ●··▃·▃██▃▃▃█ beats 0/14    very hard · avg 2.8%    3.3%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #82 of 401 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #82 of 402 · 11% of its score</summary>
 
 Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1430.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 286/385  avg 1259       11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1430.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 286/385  avg 1260       11%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #93 of 429 · 29% of its score</summary>
+<details><summary>math · #94 of 431 · 29% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.0%  ▁▁▁▁●▇▄▃▁▃·▃ beats 8/24   very hard · avg 9.3%     12%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.0%  ▁▁▁▁●▇▄▃▁▃·▃ beats 8/24   very hard · avg 9.4%     12%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   53.3%  ▂··▄▂▄●▆▆▄▄█ beats 8/23   hard · avg 23%          9.5%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   50.0%  ▃·▃▃█▁·●·▁▁▁ beats 13/18  hard · avg 19%          6.2%  at its level
 <a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench (200 graduate-le…</a>    4.0%  ▃●·▃··▅▃█··▃ beats 1/10   very hard · avg 3.1%    1.5%  noisy
@@ -76,7 +76,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #85 of 154 · 7.3% of its score</summary>
+<details><summary>vision &amp; documents · #84 of 153 · 7.3% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
@@ -102,7 +102,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   33.7%  ▁▁▂▁▃▄█▆●▅▂▃ beats 26/39  very hard · avg 21%    7.8%  at its level
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   33.7%  ▁▁▂▁▃▄█▆●▅▂▃ beats 26/39  very hard · avg 21%    7.7%  at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   80.8%  ▁●▁▂▅█▂▃▄▃▁▁ beats 6/98   very easy · avg 90%    0.0%  blunt
 </pre>
 

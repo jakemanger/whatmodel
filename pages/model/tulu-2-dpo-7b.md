@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.1** ±1.3 · #607 of 731 · from 8 benchmark results across 3 sources
+**score 37.1** ±1.3 · #608 of 732 · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▅▇█▇▅▄▃▁   #449 of 468*     13%      1
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #367 of 401*     36%      2
-math            ▁▁▃▅●▇▄█▄▂▁▁   #310 of 429*     12%      1
+coding          ▁▁●▃▅▇█▇▅▄▃▁   #450 of 469*     13%      1
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #370 of 402*     36%      2
+math            ▁▁▃▅●▆▄█▄▂▁▁   #314 of 431*     12%      1
 </pre>
 
-<details><summary>coding · #449 of 468 · 13% of its score</summary>
+<details><summary>coding · #450 of 469 · 13% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 1.1 2B IT](gemma-1-1-2b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #367 of 401 · 36% of its score</summary>
+<details><summary>chat &amp; writing · #370 of 402 · 36% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -44,9 +44,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #310 of 429 · 12% of its score</summary>
+<details><summary>math · #314 of 431 · 12% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why

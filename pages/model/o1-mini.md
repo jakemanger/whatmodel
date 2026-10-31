@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█●▅▄▄▄▁▁    #184 of 352    6.0%      4
-coding          ▁▁▁▂▄▆█●▅▄▃▁    #169 of 537     41%     12
-chat &amp; writing  ▁▁▁▃▅▄▇█●▇▇▃   #206 of 472*    5.9%      2
-math            ▁▁▃▆██●█▄▁▁▁    #186 of 528     14%      9
+agent tasks     ▁▁▂▆█●▅▄▄▃▁▁    #186 of 354    6.0%      4
+coding          ▁▁▁▃▄▆█●▅▄▃▁    #170 of 539     41%     12
+chat &amp; writing  ▁▁▁▃▅▄▇█●▇▇▃   #208 of 474*    5.9%      2
+math            ▁▁▃▆██●█▃▁▁▁    #187 of 530     14%      9
 </pre>
 
-<details><summary>agent tasks · #184 of 352 · 6.0% of its score</summary>
+<details><summary>agent tasks · #186 of 354 · 6.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #169 of 537 · 41% of its score</summary>
+<details><summary>coding · #170 of 539 · 41% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
@@ -58,19 +58,19 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #206 of 472 · 5.9% of its score</summary>
+<details><summary>chat &amp; writing · #208 of 474 · 5.9% of its score</summary>
 
-Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [MiniCPM5 2B](minicpm5-2b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   92.0%  ▂▁▁▅█▅▄▃▃▅▃● beats 60/60    medium · avg 47%    3.2%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1336.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 175/385  avg 1259            2.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1336.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 175/385  avg 1260            2.8%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #186 of 528 · 14% of its score</summary>
+<details><summary>math · #187 of 530 · 14% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md) here, though they rank lower overall.
 
@@ -78,8 +78,8 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         89.2%  ▂▂▅▆▄█▆▃●▂▃▄ beats 77/92   hard · avg 28%          3.9%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   89.3%  ▁▁▁▆█▂▇▇▄··● beats 38/38   hard · avg 30%          3.2%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             46.9%  ▃▃▄▃▃●▇▇█▃▂▅ beats 75/197  very hard · avg 7.1%    2.3%  sharp · at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        90.0%  ▃··▅▅●···▃·█ beats 5/9     medium · avg 60%        1.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             46.9%  ▃▃▄▃▃●▇▇█▃▂▅ beats 75/197  very hard · avg 7.2%    2.3%  sharp · at its level · noisy
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        90.0%  ▃··▅▅●···▃·█ beats 5/9     medium · avg 61%        1.8%  sharp
 <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025</a>                   38.0%  ▁▁▁●▁▅▅▃██▁▄ beats 3/31    hard · avg 32%          1.0%  at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          96.1%  ▁▄·▁▄█▅▅▅██● beats 41/43   very easy · avg 87%     0.9%  sharp · maxed out
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            89.9%  ▁····▁▅▁●▁▃▁ beats 10/16   easy · avg 80%          0.8%  typical
@@ -119,7 +119,7 @@ source                                    results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             5   21% ▇▇▇
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   14% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   11% ▇
-<a name="openai-simple-evals-readme"></a><a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">OpenAI simple-evals README benchmark re…</a>        7   10% ▇
+<a name="openai-simple-evals-readme"></a><a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">OpenAI simple-evals README benchmark re…</a>        7   11% ▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1    7% ▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1    7% ▇
 <a name="servicenow-browsergym-leaderboard"></a><a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json">ServiceNow BrowserGym leaderboard</a>               4    6% ▇

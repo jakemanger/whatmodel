@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 9.24B params
 
-**score 59.9** ±1.3 · #204 of 731 · from 3 benchmark results across 3 sources
+**score 59.9** ±1.3 · #204 of 732 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #142 of 401*     76%      1
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #142 of 402*     76%      1
 </pre>
 
-<details><summary>chat &amp; writing · #142 of 401 · 76% of its score</summary>
+<details><summary>chat &amp; writing · #142 of 402 · 76% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.2230 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 43/52    avg 42.989 WB-Score     20%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.2230 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 43/52    avg 43.019 WB-Score     20%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             70.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 167/276  medium · avg 72%       3.2%  noisy
 </pre>
 

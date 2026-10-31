@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▂▄●█▇▅▄▃▁   #350 of 537     33%      5
-chat &amp; writing  ▁▁▁▃●▄▇█▇▇▇▃   #389 of 472     14%      3
-math            ▁▁▃▆█●▅█▄▁▁▁   #230 of 528    8.0%      3
+coding          ▁▁▁▃▄●█▇▅▄▃▁   #352 of 539     33%      5
+chat &amp; writing  ▁▁▁▃●▄▇█▇▇▇▃   #391 of 474     14%      3
+math            ▁▁▃▆█●▅█▃▁▁▁   #235 of 530    8.0%      3
 </pre>
 
-<details><summary>coding · #350 of 537 · 33% of its score</summary>
+<details><summary>coding · #352 of 539 · 33% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #389 of 472 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #391 of 474 · 14% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #230 of 528 · 8.0% of its score</summary>
+<details><summary>math · #235 of 530 · 8.0% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

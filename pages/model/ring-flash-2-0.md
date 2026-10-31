@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 56.6** ±3.0 · #296 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.6** ±3.0 · #297 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▇●▆▆▆▃   #211 of 472*     96%      1
+chat &amp; writing  ▁▁▁▄▆▅▇●▆▆▆▃   #210 of 473*     96%      1
 </pre>
 
-<details><summary>chat &amp; writing · #211 of 472 · 96% of its score</summary>
+<details><summary>chat &amp; writing · #210 of 473 · 96% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1322.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 158/385  avg 1259       96%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1322.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 158/385  avg 1260       96%  blunt
 </pre>
 
 </details>

@@ -54,14 +54,15 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/image_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/video_edit/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-10-29",
+    "checked": "2026-10-31",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",
@@ -19224,5 +19225,65 @@
     "checked": "2026-10-29",
     "icon": "huggingface.co",
     "attribution": "Recursive, pinned Apache-2.0 model card. Own BF16 figures only; percentages converted to fractions; no endorsement."
+  },
+  {
+    "id": "spark-x26-cards",
+    "name": "Spark-X2.6 model cards (thinking high)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/README.md",
+      "huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/images/all_benchmark.svg",
+      "huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/config.json",
+      "huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/README.md",
+      "huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg",
+      "huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/config.json"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "/licenses/spark-x26.txt",
+    "terms_url": "https://huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/LICENSE",
+    "quote": "README front matter: 'license: apache-2.0'. Apache section 2 grants a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work. Work includes documentation source. Only Spark's own unstarred columns are imported; starred third-party results are excluded.",
+    "scope": "Pinned README/config and embedded all_benchmark.svg; Spark-X2.6 and X2.5 own-model columns only. No third-party measurements or unpublished in-house benchmarks.",
+    "attribution": "XHToken / SparkLLM. Spark-X2.6 model cards and benchmark figures (2026), Apache-2.0. Selected own-model numbers converted to fractions; no endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "decision-index-public-041",
+    "name": "Decision Index 0.4.1 public suite",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet",
+      "huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/README.md",
+    "quote": "The dataset README declares 'license: cc-by-4.0' and says 'This repo mirrors the board' and '`benchmarks` the per-benchmark public scores'. CC BY 4.0 section 2(a)(1) permits reproduction, sharing and production of adapted material for any purpose, subject to attribution.",
+    "scope": "Publisher numerical text-board dataset at the pinned revision; selected 42 public per-benchmark scores only. No private test content, aggregate Full/public index, ranks or latency imported.",
+    "attribution": "Apolinário Passos / Decision Index contributors, Decision Index 0.4.1, generated 2026-10-29; CC BY 4.0. Selected per-benchmark values and exact engines retained; whatmodel fits its own within-category score. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "first-party-cloudflare",
+    "name": "Cloudflare Workers AI decision model pricing and limits",
+    "match": [
+      "developers.cloudflare.com/workers-ai/models/clef",
+      "developers.cloudflare.com/workers-ai/models/clef-flash",
+      "developers.cloudflare.com/workers-ai/models/clef-omni"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "Factual list price and context limit (not licensed content)",
+    "terms_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "verdict": "allowed",
+    "checked": "2026-10-31",
+    "icon": "providers/cloudflare",
+    "attribution": "Cloudflare official Workers AI model documentation. Own endpoint prices and context limits manually observed 2026-10-31; token limits expressed in thousands. No endorsement.",
+    "quote": "Owner policy 2026-09-25: the vendor’s own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
   }
 ]

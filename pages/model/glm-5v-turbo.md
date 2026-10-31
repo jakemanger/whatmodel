@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 67.7** ±1.6 · #106 of 731 · from 4 benchmark results across 1 source
+**score 67.7** ±1.6 · #107 of 732 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,34 +16,34 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ▁▁▁▃▅▇█▇●▄▃▁   #94 of 468*     46%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #79 of 401*     26%      1
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #70 of 154*     26%      2
+coding              ▁▁▁▃▅▇█▇●▄▃▁   #93 of 469*     46%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #79 of 402*     26%      1
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #69 of 153*     26%      2
 </pre>
 
-<details><summary>coding · #94 of 468 · 46% of its score</summary>
+<details><summary>coding · #93 of 469 · 46% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1401.0  ▁▁▃▂▅●▃▆▅▅▁▂ beats 47/129  avg 982        46%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1401.0  ▁▁▃▂▅●▃▆▅▅▁▂ beats 47/129  avg 981        46%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #79 of 401 · 26% of its score</summary>
+<details><summary>chat &amp; writing · #79 of 402 · 26% of its score</summary>
 
-Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1434.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 292/385  avg 1259       26%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1434.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 292/385  avg 1260       26%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #70 of 154 · 26% of its score</summary>
+<details><summary>vision &amp; documents · #69 of 153 · 26% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [o3](o3.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 

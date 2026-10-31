@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score -3.3** ±2.2 · #728 of 731 · from 20 benchmark results across 6 sources
+**score -3.4** ±2.2 · #729 of 732 · from 20 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▇▄█▄▂▁▁   #379 of 429*    3.5%      1
+math  ▁▁▃●█▆▄█▄▂▁▁   #381 of 431*    3.5%      1
 </pre>
 
-<details><summary>math · #379 of 429 · 3.5% of its score</summary>
+<details><summary>math · #381 of 431 · 3.5% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall.
 
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = -3.3
+weighted average                                   = -3.4
 </pre>
 
 <sub>Licences: Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · Prompting Language Models for Linguistic Structure ([CC BY 4.0](../../licenses/acl-2023-acl-long-367-CC-BY-4-0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

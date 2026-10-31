@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂▄▆█●▅▄▂▁   #195 of 564*     99%      2
+coding  ▁▁▁▂▄▆█●▅▄▂▁   #196 of 566*     99%      2
 </pre>
 
-<details><summary>coding · #195 of 564 · 99% of its score</summary>
+<details><summary>coding · #196 of 566 · 99% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 

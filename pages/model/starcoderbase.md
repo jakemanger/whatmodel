@@ -6,7 +6,7 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 35.1** ±0.9 · #626 of 731 · from 14 benchmark results across 5 sources
+**score 35.1** ±0.9 · #626 of 732 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁    #427 of 468     91%      8
-math    ▁▁▃●█▇▄█▄▂▁▁   #369 of 429*    7.1%      1
+coding  ▁▁▁●▅▇█▇▅▄▃▁    #428 of 469     91%      8
+math    ▁▁▃●█▆▄█▄▂▁▁   #372 of 431*    7.0%      1
 </pre>
 
-<details><summary>coding · #427 of 468 · 91% of its score</summary>
+<details><summary>coding · #428 of 469 · 91% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -38,13 +38,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #369 of 429 · 7.1% of its score</summary>
+<details><summary>math · #372 of 431 · 7.0% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 75%    7.1%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 75%    7.0%  sharp · at its level
 </pre>
 
 </details>

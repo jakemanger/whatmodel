@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 44.0** ±1.1 · #502 of 731 · from 9 benchmark results across 2 sources
+**score 44.0** ±1.1 · #502 of 732 · from 9 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #356 of 468     96%      8
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #356 of 469     96%      8
 </pre>
 
-<details><summary>coding · #356 of 468 · 96% of its score</summary>
+<details><summary>coding · #356 of 469 · 96% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 

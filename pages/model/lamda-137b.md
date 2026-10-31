@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 137B params · proprietary
 
-**score 33.9** ±0.6 · comparison only: no current run option verified · from 20 benchmark results across 3 sources · † every result so far was reported by its maker
+**score 33.8** ±0.6 · comparison only: no current run option verified · from 20 benchmark results across 3 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ●·█······█·█       #4 of 4*    1.9%      1
-math    ▁▁▃●██▅█▄▁▁▁   #445 of 528*     13%      1
+math    ▁▁▃●██▅█▃▁▁▁   #449 of 530*     13%      1
 </pre>
 
 <details><summary>coding · #4 of 4 · 1.9% of its score</summary>
@@ -29,7 +29,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>math · #445 of 528 · 13% of its score</summary>
+<details><summary>math · #449 of 530 · 13% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="paper-2203.11171v4"></a><a href="https://arxiv.org/html/2203.11171v4">Self-Consistency Improves Chain of Thou…</a>       10   21% ▇▇▇
 <a name="paper-2204.02311v5"></a><a href="https://arxiv.org/html/2204.02311v5">PaLM: Scaling Language Modeling with Pa…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 33.9
+weighted average                                   = 33.8
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · Self-Consistency Improves Chain of Thought Reasoning in Language Models ([CC BY 4.0](../../licenses/paper-2203.11171v4-CC-BY-4-0.txt)) · PaLM: Scaling Language Modeling with Pathways ([CC BY 4.0](../../licenses/paper-2204.02311v5-CC-BY-4-0.txt))</sub>

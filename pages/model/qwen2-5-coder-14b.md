@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 55.8** ±1.2 · #263 of 731 · from 15 benchmark results across 5 sources
+**score 55.8** ±1.2 · #264 of 732 · from 15 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁   #215 of 468     83%     12
+coding  ▁▁▁▃▅▇●▇▅▄▃▁   #216 of 469     83%     12
 </pre>
 
-<details><summary>coding · #215 of 468 · 83% of its score</summary>
+<details><summary>coding · #216 of 469 · 83% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   32.8%  ▅··▃●·█·▃██▃ beats 3/15     hard · avg 22%      8.9%  at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   32.8%  ▅··▃●·█·▃██▃ beats 3/15     hard · avg 23%      8.9%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        48.4%  ▄······▄▄█·● beats 5/6      medium · avg 37%    4.8%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 204/276  medium · avg 72%    2.9%  at its level · noisy
 </pre>

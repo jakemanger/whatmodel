@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 14B params · mit
 
-**score 46.4** ±1.0 · #446 of 731 · from 7 benchmark results across 7 sources
+**score 46.4** ±1.0 · #447 of 732 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #310 of 401     44%      3
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #311 of 402     44%      3
 </pre>
 
-<details><summary>chat &amp; writing · #310 of 401 · 44% of its score</summary>
+<details><summary>chat &amp; writing · #311 of 402 · 44% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   33.4%  ▂▁▁▅█●▄▃▃▅▃▁ beats 29/60   medium · avg 47%     23%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1198.0  ▁▁▁▂▃●▃▆▆▇█▃ beats 68/385  avg 1259             11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1198.0  ▁▁▁▂▃●▃▆▆▇█▃ beats 68/385  avg 1260             11%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1126.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 58/95   avg 1187             10%  typical
 </pre>
 

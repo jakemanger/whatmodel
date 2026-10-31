@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 52.8** ±0.9 · #320 of 731 · from 19 benchmark results across 10 sources
+**score 52.8** ±0.9 · #321 of 732 · from 19 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #276 of 468*     19%      2
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃    #220 of 401     41%      6
-math            ▁▁▃▅●▇▄█▄▂▁▁   #314 of 429*     10%      2
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #278 of 469*     19%      2
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃    #221 of 402     41%      6
+math            ▁▁▃▅●▆▄█▄▂▁▁   #312 of 431*     10%      2
 </pre>
 
-<details><summary>coding · #276 of 468 · 19% of its score</summary>
+<details><summary>coding · #278 of 469 · 19% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -33,25 +33,25 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #220 of 401 · 41% of its score</summary>
+<details><summary>chat &amp; writing · #221 of 402 · 41% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   84.9%  ▂▁▁▅█▅▄▃▃▅●▁ beats 56/60    medium · avg 47%        20%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1298.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 127/385  avg 1259               8.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1298.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 127/385  avg 1260               8.1%  blunt
 <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   10.3%  ▂·●▅▅·▃█▆▂▂▂ beats 2/22     very hard · avg 12%    5.9%  sharp
 <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled</a>       66.1%  ▁▁▃▄▆██▆▃●▁▁ beats 146/155  medium · avg 43%       3.6%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose</a>            79.9%  ▁▂▁▂▁▃▁●█▂▂▁ beats 11/25    easy · avg 78%         2.0%  small run
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   26.9%  ▆▂▂●▂▂▃█▂▃·▂ beats 8/22     hard · avg 19%         1.5%  sharp · noisy
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   26.9%  ▆▂▂●▂▂▃█▂▃·▂ beats 8/22     hard · avg 19%         1.6%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #314 of 429 · 10% of its score</summary>
+<details><summary>math · #312 of 431 · 10% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty        counts  why

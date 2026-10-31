@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 50.2** ±1.2 · #366 of 731 · from 14 benchmark results across 5 sources
+**score 50.2** ±1.2 · #367 of 732 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #276 of 401     27%      3
-math            ▁▁▃●█▇▄█▄▂▁▁   #336 of 429     19%      3
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #277 of 402     27%      3
+math            ▁▁▃●█▆▄█▄▂▁▁   #339 of 431     19%      3
 </pre>
 
-<details><summary>chat &amp; writing · #276 of 401 · 27% of its score</summary>
+<details><summary>chat &amp; writing · #277 of 402 · 27% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1251.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 91/385  avg 1259             15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1251.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 91/385  avg 1260             15%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   42.8%  ▃▃·▁▁█●▅·▁·▁ beats 16/22   medium · avg 39%     10%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      85.6%  ▁▃▁▃▁▄▁▁█●▃▁ beats 18/22   easy · avg 78%      2.8%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #336 of 429 · 19% of its score</summary>
+<details><summary>math · #339 of 431 · 19% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 58%       8.3%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 87%    7.5%  sharp
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 88%    7.5%  sharp
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>    9.8%  ●···▃▃···▃▃█ beats 1/8    hard · avg 24%         2.9%  typical
 </pre>
 

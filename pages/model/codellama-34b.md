@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 41.6** ±0.5 · #539 of 731 · from 23 benchmark results across 7 sources
+**score 41.5** ±0.5 · #541 of 732 · from 23 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #378 of 468     86%     11
-math    ▁▁▃▅●▇▄█▄▂▁▁   #282 of 429*    4.8%      1
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #379 of 469     86%     11
+math    ▁▁▃▅●▆▄█▄▂▁▁   #286 of 431*    4.8%      1
 </pre>
 
-<details><summary>coding · #378 of 468 · 86% of its score</summary>
+<details><summary>coding · #379 of 469 · 86% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #282 of 429 · 4.8% of its score</summary>
+<details><summary>math · #286 of 431 · 4.8% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 41.6
+weighted average                                   = 41.5
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

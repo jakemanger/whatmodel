@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 52.3** ±4.9 · #417 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.3** ±4.9 · #418 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

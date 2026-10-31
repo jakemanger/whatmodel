@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 37.8** ±0.7 · #598 of 731 · from 14 benchmark results across 5 sources
+**score 37.8** ±0.7 · #598 of 732 · from 14 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #405 of 468     64%      6
-math    ▁▁▃●█▇▄█▄▂▁▁   #353 of 429*    3.7%      1
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #406 of 469     64%      6
+math    ▁▁▃●█▆▄█▄▂▁▁   #357 of 431*    3.7%      1
 </pre>
 
-<details><summary>coding · #405 of 468 · 64% of its score</summary>
+<details><summary>coding · #406 of 469 · 64% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -36,9 +36,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #353 of 429 · 3.7% of its score</summary>
+<details><summary>math · #357 of 431 · 3.7% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why

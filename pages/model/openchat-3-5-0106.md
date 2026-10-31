@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-01 · 7.24B params · apache-2.0
 
-**score 47.2** ±0.6 · #427 of 731 · from 10 benchmark results across 7 sources
+**score 47.2** ±0.6 · #428 of 732 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #303 of 468     73%      3
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #324 of 401*    8.1%      2
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #304 of 469     73%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #324 of 402*    8.1%      2
 </pre>
 
-<details><summary>coding · #303 of 468 · 73% of its score</summary>
+<details><summary>coding · #304 of 469 · 73% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -33,13 +33,13 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #324 of 401 · 8.1% of its score</summary>
+<details><summary>chat &amp; writing · #324 of 402 · 8.1% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.8  ▁▁▁▂●▃▃▆▆▇█▃ beats 58/385  avg 1259      4.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.8  ▁▁▁▂●▃▃▆▆▇█▃ beats 58/385  avg 1260      4.2%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1114.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 55/95   avg 1187      3.9%  typical
 </pre>
 

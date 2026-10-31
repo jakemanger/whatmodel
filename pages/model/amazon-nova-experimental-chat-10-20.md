@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▂   #223 of 585*     96%      1
+chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▂   #225 of 587*     96%      1
 </pre>
 
-<details><summary>chat &amp; writing · #223 of 585 · 96% of its score</summary>
+<details><summary>chat &amp; writing · #225 of 587 · 96% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1348.2  ▁▁▁▂▃▃▃▆●▇█▃ beats 191/385  avg 1259       96%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1348.2  ▁▁▁▂▃▃▃▆●▇█▃ beats 191/385  avg 1260       96%  blunt
 </pre>
 
 </details>

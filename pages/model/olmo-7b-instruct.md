@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 31.9** ±1.5 · #650 of 731 · from 7 benchmark results across 3 sources
+**score 31.9** ±1.5 · #651 of 732 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          █··········●       #1 of 2*     13%      1
-chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #390 of 401*     46%      2
+chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #391 of 402*     46%      2
 math            █··········●       #1 of 2*     17%      1
 </pre>
 
@@ -30,13 +30,13 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #390 of 401 · 46% of its score</summary>
+<details><summary>chat &amp; writing · #391 of 402 · 46% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1073.7  ▁▁●▂▃▃▃▆▆▇█▃ beats 13/385  avg 1259       24%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1073.7  ▁▁●▂▃▃▃▆▆▇█▃ beats 13/385  avg 1260       24%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>   995.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 13/95   avg 1187       22%  typical
 </pre>
 

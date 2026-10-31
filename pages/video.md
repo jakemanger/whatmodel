@@ -2,9 +2,9 @@
 
 # whatmodel.sh · find the best video models you can run
 
-[llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md)
+[llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [decision](decision.md) · [stt](stt.md)
 
-updated 2026-10-29 04:56 UTC · 142 models · scores combine 55 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-10-31 01:54 UTC · 142 models · scores combine 55 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 

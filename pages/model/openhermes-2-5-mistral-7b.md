@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-10 · 7.24B params · apache-2.0
 
-**score 41.6** ±0.9 · #537 of 731 · from 14 benchmark results across 8 sources
+**score 41.6** ±0.9 · #537 of 732 · from 14 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #367 of 468*    6.6%      1
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #338 of 401     36%      3
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #368 of 469*    6.6%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #339 of 402     36%      3
 math            ●··········█       #2 of 2*    5.6%      1
 </pre>
 
-<details><summary>coding · #367 of 468 · 6.6% of its score</summary>
+<details><summary>coding · #368 of 469 · 6.6% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -32,14 +32,14 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #338 of 401 · 36% of its score</summary>
+<details><summary>chat &amp; writing · #339 of 402 · 36% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       16.3%  ▁▂▂▃▆●█▆▄▄▁▁ beats 42/122  medium · avg 35%     21%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1176.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 53/385  avg 1259            8.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1176.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 53/385  avg 1260            8.2%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1075.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 35/95   avg 1187            7.5%  typical
 </pre>
 

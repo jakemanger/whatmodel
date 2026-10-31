@@ -6,7 +6,7 @@
 
 Nanbeige · released 2025-11 · 3.93B params · apache-2.0
 
-**score 54.6** ±2.9 · #355 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.6** ±2.9 · #355 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▄▄▃▃▂▁   #159 of 347*     41%      1
+agent tasks  ▁▁▃▆█●▅▄▄▄▁▁   #162 of 350*     41%      1
 </pre>
 
-<details><summary>agent tasks · #159 of 347 · 41% of its score</summary>
+<details><summary>agent tasks · #162 of 350 · 41% of its score</summary>
 
 Beats [watt-tool-70B](watt-tool-70b.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1014.3  ▁·▂●▄▅▅▃█▄▁▁ beats 4/62   avg 1033       55%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1014.3  ▁·▂●▄▅▅▃█▄▁▁ beats 4/62   avg 1034       55%  typical
 </pre>
 
 </details>

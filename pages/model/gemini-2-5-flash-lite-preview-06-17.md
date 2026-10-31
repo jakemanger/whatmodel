@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▄▅▄▄▄▁▁   #278 of 352*     12%      1
-chat &amp; writing      ▁▁▁▃▅▄▇█●▇▇▃   #161 of 472*     52%      1
+agent tasks         ▁▁▂●█▄▅▄▄▃▁▁   #280 of 354*     12%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█●▇▇▃   #161 of 474*     52%      1
 vision &amp; documents  ▁▁▂▃▂▃▅▄●██▄   #104 of 189*     34%      1
 </pre>
 
-<details><summary>agent tasks · #278 of 352 · 12% of its score</summary>
+<details><summary>agent tasks · #280 of 354 · 12% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #161 of 472 · 52% of its score</summary>
+<details><summary>chat &amp; writing · #161 of 474 · 52% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1374.9  ▁▁▁▂▃▃▃▆●▇█▃ beats 218/385  avg 1259       52%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1374.9  ▁▁▁▂▃▃▃▆●▇█▃ beats 218/385  avg 1260       52%  blunt
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 50.5** ±0.9 · #358 of 731 · from 17 benchmark results across 3 sources
+**score 50.5** ±0.9 · #359 of 732 · from 17 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #260 of 468     10%      3
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #344 of 401*    5.3%      2
-math            ▁▁▃▅█▇●█▄▂▁▁    #169 of 429     36%      4
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #261 of 469     10%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #345 of 402*    5.3%      2
+math            ▁▁▃▅█▆●█▄▂▁▁    #170 of 431     36%      4
 </pre>
 
-<details><summary>coding · #260 of 468 · 10% of its score</summary>
+<details><summary>coding · #261 of 469 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -34,19 +34,19 @@ test              result  vs the others in its run  difficulty        counts  wh
 
 </details>
 
-<details><summary>chat &amp; writing · #344 of 401 · 5.3% of its score</summary>
+<details><summary>chat &amp; writing · #345 of 402 · 5.3% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>     24.0%  ●···█·█·█·██ beats 0/5    medium · avg 43%    4.7%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 79%      0.7%  noisy
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 79%      0.6%  noisy
 </pre>
 
 </details>
 
-<details><summary>math · #169 of 429 · 36% of its score</summary>
+<details><summary>math · #170 of 431 · 36% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall.
 
@@ -71,7 +71,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   19.8%  ▁▁▁▁●▂▂▃▄▆█▃ beats 8/97   hard · avg 31%      4.6%  blunt · at its level
 <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           34.9%  █●····▄·▄·▄▄ beats 2/6    medium · avg 52%    3.6%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                                18.0%  ▄··●···▄···█ beats 2/5    hard · avg 20%      2.5%  typical
-<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    23.0%  ●·██·██····█ beats 0/5    medium · avg 35%    2.0%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    23.0%  ●·██·██····█ beats 0/5    medium · avg 36%    1.8%  at its level
 </pre>
 
 </details>

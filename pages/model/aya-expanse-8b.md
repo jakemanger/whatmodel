@@ -6,7 +6,7 @@
 
 Cohere · released 2024-10 · 8.03B params · cc-by-nc-4.0
 
-**score 47.8** ±1.9 · #412 of 731 · from 7 benchmark results across 6 sources
+**score 47.8** ±1.9 · #413 of 732 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #296 of 401*     65%      2
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #297 of 402*     65%      2
 </pre>
 
-<details><summary>chat &amp; writing · #296 of 401 · 65% of its score</summary>
+<details><summary>chat &amp; writing · #297 of 402 · 65% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1223.1  ▁▁▁▂▃●▃▆▆▇█▃ beats 78/385  avg 1259             36%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1223.1  ▁▁▁▂▃●▃▆▆▇█▃ beats 78/385  avg 1260             36%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   48.5%  ▁·▁▁▂▁▄▄▆▄●▄ beats 25/38   medium · avg 46%     29%  sharp · at its level
 </pre>
 

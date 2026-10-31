@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▄▁▁▁   #509 of 528*    3.7%      2
+math  ▁●▃▆██▅█▃▁▁▁   #511 of 530*    3.7%      2
 </pre>
 
-<details><summary>math · #509 of 528 · 3.7% of its score</summary>
+<details><summary>math · #511 of 530 · 3.7% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                              5.0%  ●···█·███··█ beats 0/5    easy · avg 68%         4.1%  too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">CommonsenseQA</a>                        18.4%  ●····▁·····▁ beats 7/9    easy · avg 75%         2.4%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 2.0%  █·●▂▄▂▂····▂ beats 6/12   easy · avg 70%         2.2%  sharp · too hard for it
-<a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                32.0%  ●····▄█▄···▄ beats 0/5    medium · avg 56%       2.0%  blunt
+<a href="https://arxiv.org/html/2204.06745v1">QA4MRE 2013 (harness)</a>                32.0%  ●····▄█▄···▄ beats 0/5    medium · avg 57%       2.0%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           17.2%  ●·······█··▃ beats 1/5    hard · avg 49%         1.9%  too hard for it
 <a href="https://arxiv.org/html/2204.06745v1">HEAD-QA (English, harness)</a>           24.5%  ●··█····█··█ beats 0/3    medium · avg 58%       1.7%  blunt
 <a href="https://arxiv.org/html/2204.06745v1">ANLI Round 3 (prompted)</a>              35.4%  ▃······▃●··▃ beats 2/5    hard · avg 43%         1.3%  too hard for it

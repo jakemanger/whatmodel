@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 72.71B params · tongyi-qianwen
 
-**score 51.7** ±0.5 · #337 of 731 · from 29 benchmark results across 20 sources
+**score 51.6** ±0.5 · #339 of 732 · from 29 benchmark results across 20 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #263 of 468     17%      4
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #271 of 401     22%      4
-math            ▁▁▃▅●▇▄█▄▂▁▁   #294 of 429     17%      6
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #263 of 469     17%      4
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #270 of 402     22%      4
+math            ▁▁▃▅●▆▄█▄▂▁▁   #293 of 431     17%      6
 </pre>
 
-<details><summary>coding · #263 of 468 · 17% of its score</summary>
+<details><summary>coding · #263 of 469 · 17% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -35,23 +35,23 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #271 of 401 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #270 of 402 · 22% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       38.1%  ▁▂▂▃▆▆█▆●▄▁▁ beats 94/122  medium · avg 35%     11%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   46.9%  ▂▁▁▅█▅●▃▃▅▃▁ beats 37/60   medium · avg 47%    6.4%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1261.9  ▁▁▁▂▃▃●▆▆▇█▃ beats 98/385  avg 1259            2.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1261.9  ▁▁▁▂▃▃●▆▆▇█▃ beats 98/385  avg 1260            2.6%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1182.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 78/95   avg 1187            2.3%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #294 of 429 · 17% of its score</summary>
+<details><summary>math · #293 of 431 · 17% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -75,7 +75,7 @@ test                                          result  vs the others in its run  
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>                  38.2%  ▃▂·▆▆██●▅▃▃▃ beats 21/33    medium · avg 39%       3.1%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 41/211   hard · avg 39%         3.0%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>                  53.9%  ▂▁▁▄▂▅▇█▆▂●▂ beats 54/58    medium · avg 48%       2.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.4977 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 33/52    avg 42.989 WB-Score    2.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.4977 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 33/52    avg 43.019 WB-Score    2.7%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             73.1%  ▁▂▂▂▃█▃●▅▄▂▃ beats 63/95    medium · avg 65%       1.8%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                72.1%  ▁··▁▁▂▂▆▅▆█● beats 59/70    medium · avg 62%       1.4%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             65.1%  ▂▄▂▃█▄▃▆●▅▂▂ beats 64/81    medium · avg 57%       1.2%  blunt · at its level
@@ -115,7 +115,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 51.7
+weighted average                                   = 51.6
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

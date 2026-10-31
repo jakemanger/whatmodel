@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 70.55B params · llama3.1
 
-**score 53.9** ±1.5 · #374 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.9** ±1.5 · #374 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▇●▆▆▆▃   #248 of 472*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅▇●▆▆▆▃   #249 of 473*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #248 of 472 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #249 of 473 · 99% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty        counts  why

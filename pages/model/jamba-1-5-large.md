@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 51.7** ±1.1 · #338 of 731 · from 12 benchmark results across 3 sources
+**score 51.7** ±1.1 · #338 of 732 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▄●▅▄▄▂▁   #118 of 312*    2.3%      1
+agent tasks     ▁▁▃▆█▄●▅▄▄▂▁   #117 of 313*    2.3%      1
 coding          █··········●       #1 of 2*    7.5%      1
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃    #241 of 401     20%      3
-math            ▁▁▃▅●▇▄█▄▂▁▁   #271 of 429*     11%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃    #242 of 402     20%      3
+math            ▁▁▃▅●▆▄█▄▂▁▁   #274 of 431*     11%      1
 </pre>
 
-<details><summary>agent tasks · #118 of 312 · 2.3% of its score</summary>
+<details><summary>agent tasks · #117 of 313 · 2.3% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -42,20 +42,20 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #241 of 401 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #242 of 402 · 20% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1289.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 120/385  avg 1259             13%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1289.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 120/385  avg 1260             13%  blunt
 <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge unspeci…</a>   65.4%  ▃▃▂▅▃▆●█▅▅▂▃ beats 15/30    medium · avg 55%    4.1%  at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecified) …</a>   81.5%  ▁▂▄▂▂▄●█▇▄▂▁ beats 56/143   easy · avg 79%      2.8%  small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecified) …</a>   81.5%  ▁▂▄▂▂▄●██▅▂▁ beats 56/145   easy · avg 79%      2.8%  small run
 </pre>
 
 </details>
 
-<details><summary>math · #271 of 429 · 11% of its score</summary>
+<details><summary>math · #274 of 431 · 11% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ test         result  vs the others in its run    difficulty      counts  why
 <pre>
 test                             result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                          49.5%  ▃▂▅█●·█▃▅··▂ beats 12/23    medium · avg 54%        27%  at its level · several runs
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▄▃ beats 32/104   very hard · avg 35%     11%  sharp · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▃▃ beats 32/106   very hard · avg 35%     11%  sharp · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>              65.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 98/155   medium · avg 61%        10%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/214  easy · avg 75%         8.1%  at its level · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>               93.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 139/140  easy · avg 76%         1.9%  sharp · at its level · noisy · small run

@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
-**score 57.9** ±0.9 · #228 of 731 · from 18 benchmark results across 4 sources
+**score 57.9** ±0.9 · #229 of 732 · from 18 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #213 of 468    7.6%      3
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #217 of 401     14%      3
-math            ▁▁▃▅█▇▄●▄▂▁▁   #136 of 429     22%      4
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #214 of 469    7.6%      3
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #218 of 402     14%      3
+math            ▁▁▃▅█▆▄●▄▂▁▁   #137 of 431     22%      4
 </pre>
 
-<details><summary>coding · #213 of 468 · 7.6% of its score</summary>
+<details><summary>coding · #214 of 469 · 7.6% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -34,20 +34,20 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #217 of 401 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #218 of 402 · 14% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1305.9  ▁▁▁▂▃▃▃●▆▇█▃ beats 135/385  avg 1259            8.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1305.9  ▁▁▁▂▃▃▃●▆▇█▃ beats 135/385  avg 1260            8.6%  blunt
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (l…</a>   74.2%  █···█·█·█·█● beats 5/5      medium · avg 43%    4.6%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   89.0%  ▄▄·····█▄●·▄ beats 5/6      easy · avg 79%      0.5%  noisy
 </pre>
 
 </details>
 
-<details><summary>math · #136 of 429 · 22% of its score</summary>
+<details><summary>math · #137 of 431 · 22% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall.
 
@@ -72,7 +72,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.2%  ▄····▄·▄▄··● beats 4/5    easy · avg 76%      3.6%  typical
 <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     76.0%  █▄····▄·▄·●▄ beats 5/6    medium · avg 52%    3.3%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          31.9%  ▄··█···▄···● beats 5/5    hard · avg 20%      3.2%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   47.6%  █·██·█●····█ beats 4/5    medium · avg 35%    2.2%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   47.6%  █·██·█●····█ beats 4/5    medium · avg 36%    2.0%  at its level
 </pre>
 
 </details>

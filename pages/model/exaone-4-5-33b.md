@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 63.5** ±1.6 · #164 of 731 · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 63.5** ±1.6 · #163 of 732 · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,35 +16,35 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▄●▅▄▄▂▁     #124 of 312*     14%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃     #145 of 401*    4.7%      1
-math                ▁▁▃▅█▇▄●▄▂▁▁      #81 of 429*     19%      1
+agent tasks         ▁▁▃▆█▄●▅▄▄▂▁     #123 of 313*     15%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃     #144 of 402*    4.6%      1
+math                ▁▁▃▅█▆▄●▄▂▁▁      #81 of 431*     19%      1
 vision &amp; documents                 not ranked yet       —      3
 </pre>
 
-<details><summary>agent tasks · #124 of 312 · 14% of its score</summary>
+<details><summary>agent tasks · #123 of 313 · 15% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">τ²-bench Telecom (lab)</a>   73.0%  ▁·▅█▆▅●▃▃▂▃▁ beats 57/89  hard · avg 17%     14%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">τ²-bench Telecom (lab)</a>   73.0%  ▁·▅█▆▅●▃▃▂▃▁ beats 57/89  hard · avg 17%     15%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #145 of 401 · 4.7% of its score</summary>
+<details><summary>chat &amp; writing · #144 of 402 · 4.6% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.6%  ▄·▄·▄·▄▄···● beats 5/6    easy · avg 78%    4.7%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.6%  ▄·▄·▄·▄▄···● beats 5/6    easy · avg 78%    4.6%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #81 of 429 · 19% of its score</summary>
+<details><summary>math · #81 of 431 · 19% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
 
@@ -71,9 +71,9 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>                   80.5%  █···▄▄···▄·● beats 6/6      hard · avg 51%          27%  sharp
-<a href="https://arxiv.org/html/2609.05395v1">KOPA-Bench (pass@1) (lab)</a>            25.9%  ▄·█··●··█▄·█ beats 3/8      very hard · avg 13%     14%  at its level
+<a href="https://arxiv.org/html/2609.05395v1">KOPA-Bench (pass@1) (lab)</a>            25.9%  ▄·█··●··█▄·█ beats 3/8      very hard · avg 14%     14%  at its level
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                       83.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 155/188  medium · avg 62%        13%  typical
-<a href="https://arxiv.org/html/2609.05395v1">BFCL multi-turn (version not stat…</a>   53.0%  ▄▄···▄·▄●▄▄▄ beats 5/8      hard · avg 26%         7.0%  at its level
+<a href="https://arxiv.org/html/2609.05395v1">BFCL multi-turn (version not stat…</a>   53.0%  ▄▄···▄·▄●▄▄▄ beats 5/8      hard · avg 26%         6.9%  at its level
 </pre>
 
 </details>

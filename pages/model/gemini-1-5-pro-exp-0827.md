@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂▄▆█●▅▄▃▁   #231 of 537*     25%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #239 of 528*    9.3%      1
+coding  ▁▁▁▃▄▆█●▅▄▃▁   #234 of 539*     25%      2
+math    ▁▁▃▆█●▅█▃▁▁▁   #240 of 530*    9.3%      1
 </pre>
 
-<details><summary>coding · #231 of 537 · 25% of its score</summary>
+<details><summary>coding · #234 of 539 · 25% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #239 of 528 · 9.3% of its score</summary>
+<details><summary>math · #240 of 530 · 9.3% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

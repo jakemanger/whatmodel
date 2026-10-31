@@ -6,7 +6,7 @@
 
 SILMA AI · released 2024-08 · 9.24B params · gemma
 
-**score 43.4** ±3.0 · #681 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.4** ±3.0 · #682 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #318 of 472*     63%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #319 of 473*     63%      1
 </pre>
 
-<details><summary>chat &amp; writing · #318 of 472 · 63% of its score</summary>
+<details><summary>chat &amp; writing · #319 of 473 · 63% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

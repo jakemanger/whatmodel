@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
-**score 62.9** ±0.8 · #172 of 731 · from 31 benchmark results across 6 sources
+**score 62.9** ±0.8 · #172 of 732 · from 31 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #204 of 312     15%      6
-coding          ▁▁▁▃▅▇█●▅▄▃▁   #175 of 468     16%      3
-chat &amp; writing  ▁▁▁▃▆▄▆█▆●▇▃   #117 of 401     10%      3
-math            ▁▁▃▅█▇▄●▄▂▁▁    #79 of 429    8.0%      3
+agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #205 of 313     15%      6
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #177 of 469     16%      3
+chat &amp; writing  ▁▁▁▃▆▄▆█▆●▇▃   #117 of 402     10%      3
+math            ▁▁▃▅█▆▄●▄▂▁▁    #78 of 431    8.0%      3
 </pre>
 
-<details><summary>agent tasks · #204 of 312 · 15% of its score</summary>
+<details><summary>agent tasks · #205 of 313 · 15% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -38,9 +38,9 @@ test                    result  vs the others in its run    difficulty          
 
 </details>
 
-<details><summary>coding · #175 of 468 · 16% of its score</summary>
+<details><summary>coding · #177 of 469 · 16% of its score</summary>
 
-Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -51,20 +51,20 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #117 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #117 of 402 · 10% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1398.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 244/385  avg 1259          6.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1398.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 244/385  avg 1260          6.1%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Arena-Hard v2 aggregate (lab)</a>        82.7%  ▁▁··▄▃▁▃█▁▁● beats 21/22    hard · avg 32%    2.3%  sharp · at its level
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">IFEval (aggregation unspecified) …</a>   87.6%  ▁▂▄▂▂▄▆●▇▄▂▁ beats 89/143   easy · avg 76%    1.7%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">IFEval (aggregation unspecified) …</a>   87.6%  ▁▂▄▂▂▄▆●█▅▂▁ beats 89/145   easy · avg 76%    1.6%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #79 of 429 · 8.0% of its score</summary>
+<details><summary>math · #78 of 431 · 8.0% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -82,11 +82,11 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5687  ▁▄▃▃▇▄█▃●▁▁▁ beats 25/30    avg 0.418               11%  sharp
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">GPQA (subset unspecified) (lab)</a>      72.9%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 80/104   hard · avg 44%         5.6%  sharp · at its level
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">GPQA (subset unspecified) (lab)</a>      72.9%  ▂▁▂▂▄▃▆▃▅●▃▃ beats 82/106   hard · avg 44%         5.6%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   56.9%  ▂▃▅▂▆▃█▅█●▃▆ beats 26/34    medium · avg 41%       4.9%  blunt · at its level
-<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.1%  ▁▁▂▁▃▄█●▄▅▂▃ beats 21/39    very hard · avg 21%    4.0%  typical
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.1%  ▁▁▂▁▃▄█●▄▅▂▃ beats 21/39    very hard · avg 21%    3.9%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.8%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 71/97    hard · avg 31%         3.9%  blunt · at its level
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-Pro (lab)</a>                       80.6%  ▁▁·▁▁▁▃▂▄▅●▁ beats 129/188  medium · avg 57%       3.5%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-Pro (lab)</a>                       80.6%  ▁▁·▁▁▁▃▂▄▅●▁ beats 129/188  medium · avg 58%       3.5%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">INCLUDE (lab)</a>                        78.9%  ▂····▂▂▄▄▄●▄ beats 25/36    medium · avg 57%       3.1%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-Redux (lab)</a>                     90.9%  ▁▁▃▁▂▃▄▅▇●█▄ beats 41/63    easy · avg 78%         2.9%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Creative Writing v3 (lab)</a>            85.3%  ▂····▂▆··▆●▆ beats 8/14     easy · avg 69%         2.1%  typical

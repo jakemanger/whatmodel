@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 3.09B params · qwen-research
 
-**score 44.3** ±0.6 · #490 of 731 · from 32 benchmark results across 11 sources
+**score 44.3** ±0.6 · #490 of 732 · from 32 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #266 of 312*    0.8%      1
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #336 of 468     13%      5
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #279 of 401*    2.5%      1
-math            ▁▁▃●█▇▄█▄▂▁▁    #342 of 429     20%      4
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #266 of 313*    0.8%      1
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #338 of 469     13%      5
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #281 of 402*    2.5%      1
+math            ▁▁▃●█▆▄█▄▂▁▁    #345 of 431     20%      4
 </pre>
 
-<details><summary>agent tasks · #266 of 312 · 0.8% of its score</summary>
+<details><summary>agent tasks · #266 of 313 · 0.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -33,9 +33,9 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #336 of 468 · 13% of its score</summary>
+<details><summary>coding · #338 of 469 · 13% of its score</summary>
 
-Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #279 of 401 · 2.5% of its score</summary>
+<details><summary>chat &amp; writing · #281 of 402 · 2.5% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
@@ -59,9 +59,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #342 of 429 · 20% of its score</summary>
+<details><summary>math · #345 of 431 · 20% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

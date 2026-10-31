@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · 27.01B params · health-ai-developer-foundations
 
-**score 57.7** ±3.3 · #272 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.7** ±3.4 · #273 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

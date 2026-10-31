@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 42.7** ±0.9 · #521 of 731 · from 19 benchmark results across 5 sources
+**score 42.7** ±0.9 · #522 of 732 · from 19 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #399 of 468     51%      7
-math    ▁▁▃▅█▇●█▄▂▁▁   #187 of 429*     11%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #400 of 469     51%      7
+math    ▁▁▃▅█▆●█▄▂▁▁   #189 of 431*     11%      2
 </pre>
 
-<details><summary>coding · #399 of 468 · 51% of its score</summary>
+<details><summary>coding · #400 of 469 · 51% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #187 of 429 · 11% of its score</summary>
+<details><summary>math · #189 of 431 · 11% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall.
 

@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-31",
+  "status": "prepared locally; not published",
+  "issues": [
+    12,
+    13
+  ],
+  "baseline_commit": "ce24c14a37d936f1d71885af8ee75bf9e6048592",
+  "counts": {
+    "models": {
+      "before": 1950,
+      "after": 1959,
+      "net": 9
+    },
+    "results": {
+      "before": 22353,
+      "after": 22678,
+      "net": 325
+    },
+    "benchmarks": {
+      "before": 997,
+      "after": 1039,
+      "net": 42
+    },
+    "sources": {
+      "before": 1025,
+      "after": 1028,
+      "net": 3
+    }
+  },
+  "added_models": [
+    {
+      "id": "spark-x2-6-4b",
+      "name": "Spark-X2.6 4B",
+      "category": "llm",
+      "reference": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "reviewed_results": 17
+    },
+    {
+      "id": "spark-x2-6-1-7b",
+      "name": "Spark-X2.6 1.7B",
+      "category": "llm",
+      "reference": "https://huggingface.co/XHToken/Spark-X2.6-1.7B",
+      "reviewed_results": 17
+    },
+    {
+      "id": "jebadiah-9b-v2-1-t1e",
+      "name": "Jebadiah 9B v2.1 (T1e)",
+      "category": "decision",
+      "reference": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1",
+      "reviewed_results": 42
+    },
+    {
+      "id": "jebadiah-27b-v2-1-t1e",
+      "name": "Jebadiah 27B v2.1 (T1e)",
+      "category": "decision",
+      "reference": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1",
+      "reviewed_results": 42
+    },
+    {
+      "id": "clef",
+      "name": "Clef",
+      "category": "decision",
+      "reference": "https://huggingface.co/Cloudflare/clef",
+      "reviewed_results": 42
+    },
+    {
+      "id": "clef-flash",
+      "name": "Clef-flash",
+      "category": "decision",
+      "reference": "https://huggingface.co/Cloudflare/clef-flash",
+      "reviewed_results": 42
+    },
+    {
+      "id": "clef-omni",
+      "name": "Clef-omni",
+      "category": "decision",
+      "reference": "https://huggingface.co/Cloudflare/clef-omni",
+      "reviewed_results": 42
+    },
+    {
+      "id": "strands-decider-2b-hobson-v21",
+      "name": "Strands Decider 2B (Hobson v21)",
+      "category": "decision",
+      "reference": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21",
+      "reviewed_results": 42
+    },
+    {
+      "id": "mistral-large-4-2610",
+      "name": "Mistral Large 4 (October 29 weights)",
+      "category": "llm",
+      "reference": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "reviewed_results": 0
+    }
+  ],
+  "imports": [
+    {
+      "source": "Spark-X2.6 original Apache-2.0 cards and embedded SVGs",
+      "models": [
+        "spark-x2-6-4b",
+        "spark-x2-6-1-7b",
+        "spark-x2-5-4b",
+        "spark-x2-5-1-7b"
+      ],
+      "results": 68,
+      "review": "17 existing benchmark definitions per own-model column. Starred/third-party columns and undefined in-house metrics excluded. Percentage results converted to fractions. Source-reported thinking high settings retained."
+    },
+    {
+      "source": "Decision Index 0.4.1 publisher dataset",
+      "revision": "ce1e2f1cdd5792b88827bae406057a215d3b0784",
+      "license": "CC BY 4.0",
+      "reference": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard",
+      "results": 252,
+      "review": "Six exact decision engines, 42 public benchmarks each. Public raw metrics only; no private Full index, preassigned ranks, question text or latency. Submitted run scores conservatively labelled lab-reported. One evaluation suite, not 42 independent studies. Exact T1e engine and model revisions documented in results and model metadata."
+    },
+    {
+      "source": "LMArena reviewed leaderboard split",
+      "revision": "323062f70843f40e3f739865c3fe9d806126e412",
+      "results": 5,
+      "review": "New agent IPS observations. Exact existing aliases and highest reasoning configurations; signed values retained without conversion. Other ten checked splits had no eligible new observations."
+    },
+    {
+      "source": "Epoch licensed internal CSV members",
+      "sha256": "802c21469883fd30dd06b8ab292954ff9b891a1380f1123d1387346866991df2",
+      "results": 1,
+      "replaces": 1,
+      "review": "GPT-6 Astra MirrorCode, 2026-10-29, run FGZUtmNQZpZtk8ft5uCJkA, score 0.6. Ignore precision-only changes and older observations; external CSVs not used."
+    }
+  ],
+  "metadata": [
+    "Cloudflare Clef, Clef-flash and Clef-omni official hosted prices and context limits manually checked 2026-10-31. Prices use USD per million INPUT tokens (0.24, 0.038, 0.15 respectively); no chat 3:1 blend and no per-decision estimate.",
+    "Cloudflare release months use official announcements rather than repository creation dates.",
+    "Mistral Large 4 October 29 open weights are a separate identity from the earlier preview. Retain preview results; remove superseded rolling API route. Do not copy preview or third-party-attributed quality scores into the new entry.",
+    "Official maker logos added for frontier-infra and Cloudflare and visually inspected.",
+    "Local memory labelled estimated; documented commands reviewed but model weights not downloaded or executed."
+  ],
+  "wider_search": [
+    "Hugging Face trending, Ollama newest and official release announcements reviewed. Existing Flint/LFM3/Nemotron entries already covered.",
+    "GPT-6 Rosalind Research announcement: limited approved access, no eligible exact quality rows found; held.",
+    "OpenASR latest edd68424736537b6d0191be325ae3605c33de284 contains no new reviewed numerical artifact; no import.",
+    "carun/tts-bench remains at 27727b24abbc688f718992eb5bfc5c7121facfcb; no new results.",
+    "Spark speed figure contains curves without exact numeric point labels; no values estimated from pixels.",
+    "Jev reference omitted: publisher per-benchmark dataset has no corresponding rows. Jebadiah standard-read GGUF/MLX/Ollama variants are not assigned the T1e benchmark scores."
+  ],
+  "scoring_review": {
+    "llm_main_leave_one_out_r": {
+      "before": 0.824,
+      "after": 0.806,
+      "after_without_floor_weight_series": 0.827
+    },
+    "existing_category_winners": "unchanged",
+    "decision": {
+      "models": 6,
+      "cells": 252,
+      "benchmark_keys": 42,
+      "leave_one_out_r": -0.41,
+      "without_floor_weight_series_r": 0.077,
+      "median_absolute_error_percentage_points": 5.2,
+      "p90_absolute_error_percentage_points": 20.4,
+      "limitation": "Overall fit predicts individual tasks poorly with six models from one suite. Page explicitly labels early comparison and directs users to task scores/raw results. No scoring code changed and no hand-assigned ranks."
+    }
+  },
+  "publication": "No push, PR, workflow, issue comment, issue closure or deployment performed. Publish the data commit before the website submodule pin.",
+  "reply_drafts_after_publication": {
+    "13": "Thanks! Added Spark-X2.6-4B with 17 source-linked, maker-reported benchmarks and the official GGUF run options. Also added the 1.7B sibling.",
+    "12": "Thanks! Added Jebadiah 9B v2.1 (T1e) to a separate decision-model category, using 42 public benchmarks from the CC BY 4.0 Decision Index dataset. The tested inference recipe is documented, and its scores stay separate from chat models."
+  },
+  "validation": {
+    "data_validation": "passed: 1,959 models, 22,678 results, 1,039 benchmarks, 1,028 sources, 312 maker logos",
+    "full_scoring_check": "passed; diagnostics reviewed above",
+    "tests": "145 passed, 0 failed",
+    "lint": "passed",
+    "data_types": "passed",
+    "site_types": "passed",
+    "source_recheck": "All 252 decision values re-read from the pinned parquet and matched to exact engine and benchmark.",
+    "rss_preservation": "20 existing announcements, 20 saved chart images and two existing hardware snapshots unchanged; one new hardware snapshot. No new winner announcements.",
+    "race_assets": "Desktop and mobile MP4s regenerated and freshness checks passed.",
+    "browser": "Mobile layout and desktop task navigation checked; no page-width overflow at 390px. Existing five-second email CTA observed.",
+    "production_build": "passed: all 8,253 generated pages. Initial attempt ran out of disk; successful retry used transparent APFS compression of disposable build artifacts, verifying identical bytes.",
+    "static_pages": "768 filter pages passed exact model rows, canonical URLs, headings and sitemap checks; plus three editable content pages.",
+    "production_smoke": "Browser /decision HTML, curl /decision text and JSON, input-token pricing and Vary: User-Agent, both issue model pages, decision task/browse routes and RSS returned correct local production responses.",
+    "post_refresh_tests": "3 focused decision and hardware archive tests passed after contributor credits and final feed refresh."
+  },
+  "contributor_credits": [
+    {
+      "github": "webdevtodayjason",
+      "issue": 12
+    },
+    {
+      "github": "Leo6432",
+      "issue": 13
+    }
+  ]
+}

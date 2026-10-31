@@ -6,7 +6,7 @@
 
 OpenAI · released 2021-08 · proprietary
 
-**score 32.7** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 4 sources
+**score 32.6** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●██▅█▄▁▁▁   #453 of 528*     28%      1
+math  ▁▁▃●██▅█▃▁▁▁   #457 of 530*     28%      1
 </pre>
 
-<details><summary>math · #453 of 528 · 28% of its score</summary>
+<details><summary>math · #457 of 530 · 28% of its score</summary>
 
-Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run   difficulty      counts  why
@@ -54,7 +54,7 @@ source                                    results  share of the score
 <a name="acl-2023-acl-long-855"></a><a href="https://aclanthology.org/2023.acl-long.855.pdf">CodeIE: Large Code Generation Models ar…</a>        1    5% ▇
 <a name="acl-2023-findings-emnlp-89"></a><a href="https://aclanthology.org/2023.findings-emnlp.89.pdf">Execution-Based Evaluation for Open-Dom…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 32.7
+weighted average                                   = 32.6
 </pre>
 
 <sub>Licences: Faithful Chain-of-Thought Reasoning ([CC BY 4.0](../../licenses/acl-2023-ijcnlp-main-20-CC-BY-4-0.txt)) · Large Language Models are Better Reasoners with Self-Verification ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-167-CC-BY-4-0.txt)) · CodeIE: Large Code Generation Models are Better Few-Shot Information Extractors ([CC BY 4.0](../../licenses/acl-2023-acl-long-855-CC-BY-4-0.txt)) · Execution-Based Evaluation for Open-Domain Code Generation ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-89-CC-BY-4-0.txt))</sub>

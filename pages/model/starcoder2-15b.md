@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 40.5** ±0.5 · #556 of 731 · from 17 benchmark results across 5 sources
+**score 40.5** ±0.5 · #556 of 732 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #398 of 468     87%      9
-math    ▁▁▃▅█●▄█▄▂▁▁   #240 of 429*    2.8%      1
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #399 of 469     87%      9
+math    ▁▁▃▅█●▄█▄▂▁▁   #242 of 431*    2.8%      1
 </pre>
 
-<details><summary>coding · #398 of 468 · 87% of its score</summary>
+<details><summary>coding · #399 of 469 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #240 of 429 · 2.8% of its score</summary>
+<details><summary>math · #242 of 431 · 2.8% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

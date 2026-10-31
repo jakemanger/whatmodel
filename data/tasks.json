@@ -563,5 +563,92 @@
       "mu-bench-batch-uer",
       "aura-ar-en-22set-avg-wer"
     ]
+  },
+  {
+    "id": "decision-tools",
+    "category": "decision",
+    "label": "tools & automation",
+    "title": "Decision models for tools & automation",
+    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "benchmarks": [
+      "decision-index-041-bfcl",
+      "decision-index-041-toolret",
+      "decision-index-041-api-bank",
+      "decision-index-041-routerbench",
+      "decision-index-041-home-appliance-simulator",
+      "decision-index-041-when2call"
+    ]
+  },
+  {
+    "id": "decision-retrieval",
+    "category": "decision",
+    "label": "retrieval & classification",
+    "title": "Decision models for retrieval & classification",
+    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "benchmarks": [
+      "decision-index-041-banking77",
+      "decision-index-041-clinc150-oos",
+      "decision-index-041-sgd-sgd-x",
+      "decision-index-041-bright",
+      "decision-index-041-amazon-esci",
+      "decision-index-041-phishnchips-phishing-decisions",
+      "decision-index-041-hover"
+    ]
+  },
+  {
+    "id": "decision-language",
+    "category": "decision",
+    "label": "language understanding",
+    "title": "Decision models for language understanding",
+    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "benchmarks": [
+      "decision-index-041-contractnli",
+      "decision-index-041-anli",
+      "decision-index-041-hellaswag",
+      "decision-index-041-acos",
+      "decision-index-041-finentity",
+      "decision-index-041-isarcasmeval",
+      "decision-index-041-vast",
+      "decision-index-041-nli4ct",
+      "decision-index-041-ragtruth"
+    ]
+  },
+  {
+    "id": "decision-arts",
+    "category": "decision",
+    "label": "arts & human taste",
+    "title": "Decision models for arts & human taste",
+    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "benchmarks": [
+      "decision-index-041-bpomp",
+      "decision-index-041-humicroedit",
+      "decision-index-041-pop909-cl",
+      "decision-index-041-cfcolor",
+      "decision-index-041-habermas-machine",
+      "decision-index-041-new-yorker"
+    ]
+  },
+  {
+    "id": "decision-knowledge",
+    "category": "decision",
+    "label": "knowledge & reasoning",
+    "title": "Decision models for knowledge & reasoning",
+    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "benchmarks": [
+      "decision-index-041-mmlu",
+      "decision-index-041-gpqa-diamond",
+      "decision-index-041-arc-easy",
+      "decision-index-041-arc-challenge",
+      "decision-index-041-winogrande",
+      "decision-index-041-gsm8k",
+      "decision-index-041-chessbench",
+      "decision-index-041-musr",
+      "decision-index-041-sata-bench",
+      "decision-index-041-cruxeval",
+      "decision-index-041-cladder",
+      "decision-index-041-hle",
+      "decision-index-041-mmlu-pro",
+      "decision-index-041-bbh"
+    ]
   }
 ]

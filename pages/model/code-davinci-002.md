@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂●▆█▇▅▄▃▁   #450 of 537*    1.0%      1
-math    ▁▁▃▆█●▅█▄▁▁▁    #263 of 528     27%      2
+coding  ▁▁▁▃●▆█▇▅▄▃▁   #452 of 539*    1.0%      1
+math    ▁▁▃▆█●▅█▃▁▁▁    #269 of 530     27%      2
 </pre>
 
-<details><summary>coding · #450 of 537 · 1.0% of its score</summary>
+<details><summary>coding · #452 of 539 · 1.0% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
 test       result  vs the others in its run   difficulty      counts  why
@@ -31,9 +31,9 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>math · #263 of 528 · 27% of its score</summary>
+<details><summary>math · #269 of 530 · 27% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why

@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 47.5** ±0.9 · #416 of 731 · from 16 benchmark results across 9 sources
+**score 47.5** ±0.9 · #417 of 732 · from 16 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,45 +16,45 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #292 of 312*    6.0%      1
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #346 of 468     37%      6
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #255 of 401*    8.7%      1
+agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #293 of 313*    5.9%      1
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #347 of 469     37%      6
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #256 of 402*    8.7%      1
 </pre>
 
-<details><summary>agent tasks · #292 of 312 · 6.0% of its score</summary>
+<details><summary>agent tasks · #293 of 313 · 5.9% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>   11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%    6.0%  sharp
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>   11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%    5.9%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #346 of 468 · 37% of its score</summary>
+<details><summary>coding · #347 of 469 · 37% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   38.3%  ▁·▁▂●▁▆▄█▆▂▂ beats 9/62   medium · avg 51%         17%  sharp · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%          6.0%  sharp
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%          5.9%  sharp
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          74.3%  █●·██···████ beats 1/7    easy · avg 78%          4.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   11.0%  ▄●·▄·····█▄█ beats 1/7    hard · avg 18%          3.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 47%        3.0%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 5.5%    2.6%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 5.5%    2.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #255 of 401 · 8.7% of its score</summary>
+<details><summary>chat &amp; writing · #256 of 402 · 8.7% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.3  ▁▁▁▂▃▃●▆▆▇█▃ beats 108/385  avg 1259      8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1276.3  ▁▁▁▂▃▃●▆▆▇█▃ beats 108/385  avg 1260      8.7%  blunt
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.2** ±1.1 · #277 of 731 · from 8 benchmark results across 4 sources
+**score 55.2** ±1.1 · #277 of 732 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▄▅▅▄▄▂▁   #288 of 312*    2.5%      1
+agent tasks  ▁▁●▆█▄▅▅▄▄▂▁   #288 of 313*    2.5%      1
 coding       ●█········██       #4 of 4*    6.1%      1
-math         ▁▁▃▅█●▄█▄▂▁▁    #210 of 429     43%      3
+math         ▁▁▃▅█●▄█▄▂▁▁    #211 of 431     43%      3
 </pre>
 
-<details><summary>agent tasks · #288 of 312 · 2.5% of its score</summary>
+<details><summary>agent tasks · #288 of 313 · 2.5% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #210 of 429 · 43% of its score</summary>
+<details><summary>math · #211 of 431 · 43% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 48%         21%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         15%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/197  very hard · avg 7.1%    7.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/197  very hard · avg 7.2%    7.1%  sharp · noisy
 </pre>
 
 </details>

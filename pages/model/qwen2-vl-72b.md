@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
-**score 53.5** ±0.9 · #307 of 731 · from 29 benchmark results across 6 sources
+**score 53.5** ±0.9 · #308 of 732 · from 29 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▁▃▅█●▄█▄▂▁▁   #242 of 429     16%      2
-vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄   #124 of 154     87%     18
+math                ▁▁▃▅█●▄█▄▂▁▁   #244 of 431     16%      2
+vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄   #123 of 153     87%     18
 </pre>
 
-<details><summary>math · #242 of 429 · 16% of its score</summary>
+<details><summary>math · #244 of 431 · 16% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #124 of 154 · 87% of its score</summary>
+<details><summary>vision &amp; documents · #123 of 153 · 87% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank lower overall.
 
@@ -44,11 +44,11 @@ test                                                         result  vs the othe
 <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                                                46.2%  ▃·█·▅●▃▃▅▅▃█ beats 6/16    medium · avg 46%             11%  at its level · several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1084.6  ▁▁▂▂▂●▃▄▅▅█▇ beats 27/152  avg 1061                    6.1%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                             25.9%  ▁▁·●··▄▁▃▇▇█ beats 2/24    hard · avg 25%              4.7%  small run
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                          -9.0000  ▃▃▃·▃●·▅▃▃▃▃ beats 5/12    avg -4.601                  3.9%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                          -9.0000  ▃▃▃·▃●·▅▃▃▃▃ beats 5/12    avg -4.498                  3.9%  typical
 <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                                  96.5%  ▃··▅▃▅▃█▃█●▅ beats 14/17   very easy · avg 94%         3.7%  blunt · maxed out · several runs
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                                          58.1%  ▃·▃·▅▃▅●▃▅█▅ beats 8/16    medium · avg 54%            3.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                                                 88.3%  ▂··▂·▂▃·▅●▆█ beats 8/17    easy · avg 85%              3.0%  blunt · several runs
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.5900 MM-MT-Bench score (1-10)  ▅··▃·█·▃●··▅ beats 7/9     avg 5.602 MM-MT-Bench s…    2.8%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.5900 MM-MT-Bench score (1-10)  ▅··▃·█·▃●··▅ beats 7/9     avg 5.605 MM-MT-Bench s…    2.8%  sharp · noisy
 <a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                                             77.8%  ▅▃·▃▅▅·█·▃●█ beats 13/16   easy · avg 70%              2.6%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>                                          84.5%  ▃·▃▅█▃▃▃●▃▃▃ beats 10/13   easy · avg 80%              2.5%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   81.6%  ▃···█▃··▅▃▃● beats 9/9     easy · avg 73%              1.5%  blunt

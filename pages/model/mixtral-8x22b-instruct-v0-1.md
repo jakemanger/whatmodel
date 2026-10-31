@@ -6,7 +6,7 @@
 
 Mistral · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 49.9** ±0.6 · #371 of 731 · from 20 benchmark results across 15 sources
+**score 49.9** ±0.6 · #372 of 732 · from 20 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #290 of 312*    0.8%      1
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #277 of 468     56%      8
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃    #295 of 401     29%      4
+agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #291 of 313*    0.8%      1
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #279 of 469     56%      8
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃    #296 of 402     29%      4
 </pre>
 
-<details><summary>agent tasks · #290 of 312 · 0.8% of its score</summary>
+<details><summary>agent tasks · #291 of 313 · 0.8% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #277 of 468 · 56% of its score</summary>
+<details><summary>coding · #279 of 469 · 56% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #295 of 401 · 29% of its score</summary>
+<details><summary>chat &amp; writing · #296 of 402 · 29% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       30.9%  ▁▂▂▃▆▆█●▄▄▁▁ beats 80/122  medium · avg 35%     14%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   36.4%  ▂▁▁▅█●▄▃▃▅▃▁ beats 31/60   medium · avg 47%    8.5%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1229.7  ▁▁▁▂▃●▃▆▆▇█▃ beats 82/385  avg 1259            3.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1229.7  ▁▁▁▂▃●▃▆▆▇█▃ beats 82/385  avg 1260            3.4%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1152.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 67/95   avg 1187            3.1%  typical
 </pre>
 

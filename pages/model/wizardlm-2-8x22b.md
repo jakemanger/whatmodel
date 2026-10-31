@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 50.5** ±1.2 · #356 of 731 · from 7 benchmark results across 6 sources
+**score 50.5** ±1.2 · #357 of 732 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #314 of 468*     29%      1
-math    ▁▁▃▅●▇▄█▄▂▁▁   #332 of 429*     28%      1
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #315 of 469*     29%      1
+math    ▁▁▃▅●▆▄█▄▂▁▁   #333 of 431*     28%      1
 </pre>
 
-<details><summary>coding · #314 of 468 · 29% of its score</summary>
+<details><summary>coding · #315 of 469 · 29% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -31,9 +31,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #332 of 429 · 28% of its score</summary>
+<details><summary>math · #333 of 431 · 28% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why

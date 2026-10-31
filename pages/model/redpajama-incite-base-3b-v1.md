@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 24.9** ±3.0 · #686 of 731 · from 5 benchmark results across 2 sources
+**score 24.8** ±3.0 · #687 of 732 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ source                           results  share of the score
 <a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama (lab)</a>                        4   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   11% ▇
 prior: pull toward the middle               4% ▇
-weighted average                          = 24.9
+weighted average                          = 24.8
 </pre>
 
 <sub>Licences: RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

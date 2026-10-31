@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 73.6** ±2.3 · #45 of 731 · from 8 benchmark results across 2 sources
+**score 73.6** ±2.3 · #45 of 732 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▄▅▅▄●▂▁     #41 of 312     58%      4
-coding              ▁▁▁▃▅▇█▇▅●▃▁    #77 of 468*     12%      1
-vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄   #128 of 154*    1.0%      1
+agent tasks         ▁▁▃▆█▄▅▅▄●▂▁     #41 of 313     58%      4
+coding              ▁▁▁▃▅▇█▇▅●▃▁    #76 of 469*     12%      1
+vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄   #127 of 153*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #41 of 312 · 58% of its score</summary>
+<details><summary>agent tasks · #41 of 313 · 58% of its score</summary>
 
 Beats [GPT-5.6 Luna](gpt-5-6-luna.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), [Muse Spark Open](muse-spark-open.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #77 of 468 · 12% of its score</summary>
+<details><summary>coding · #76 of 469 · 12% of its score</summary>
 
 Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                           result  vs the others in its run  difficulty     
 
 </details>
 
-<details><summary>vision &amp; documents · #128 of 154 · 1.0% of its score</summary>
+<details><summary>vision &amp; documents · #127 of 153 · 1.0% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
 

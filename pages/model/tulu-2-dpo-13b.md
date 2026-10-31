@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 39.4** ±1.3 · #572 of 731 · from 8 benchmark results across 3 sources
+**score 39.4** ±1.3 · #573 of 732 · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▅▇█▇▅▄▃▁   #437 of 468*     11%      1
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #352 of 401*     38%      2
-math            ▁▁▃▅●▇▄█▄▂▁▁   #275 of 429*     12%      1
+coding          ▁▁▁●▅▇█▇▅▄▃▁   #438 of 469*     11%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #352 of 402*     38%      2
+math            ▁▁▃▅●▆▄█▄▂▁▁   #279 of 431*     12%      1
 </pre>
 
-<details><summary>coding · #437 of 468 · 11% of its score</summary>
+<details><summary>coding · #438 of 469 · 11% of its score</summary>
 
-Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Gemma 7B IT](gemma-7b.md) here, though they rank lower overall.
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
@@ -32,9 +32,9 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #352 of 401 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #352 of 402 · 38% of its score</summary>
 
-Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
@@ -44,9 +44,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #275 of 429 · 12% of its score</summary>
+<details><summary>math · #279 of 431 · 12% of its score</summary>
 
-Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Mistral Large 2 (2407)](mistral-large-2407.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why

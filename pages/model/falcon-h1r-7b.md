@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 59.8** ±1.0 · #205 of 731 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.8** ±1.0 · #205 of 732 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▄▅▅▄▄▂▁   #197 of 312*     20%      2
-coding       ▁▁▁▃▅▇●▇▅▄▃▁   #212 of 468*    9.1%      2
-math         ▁▁▃▅█▇▄●▄▂▁▁    #125 of 429     38%      4
+agent tasks  ▁▁▃▆●▄▅▅▄▄▂▁   #199 of 313*     20%      2
+coding       ▁▁▁▃▅▇●▇▅▄▃▁   #213 of 469*    9.2%      2
+math         ▁▁▃▅█▆▄●▄▂▁▁    #126 of 431     38%      4
 </pre>
 
-<details><summary>agent tasks · #197 of 312 · 20% of its score</summary>
+<details><summary>agent tasks · #199 of 313 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>coding · #212 of 468 · 9.1% of its score</summary>
+<details><summary>coding · #213 of 469 · 9.2% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #125 of 429 · 38% of its score</summary>
+<details><summary>math · #126 of 431 · 38% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>                   61.3%  ●·········▂▂ beats 2/5    hard · avg 44%           16%  sharp · at its level
 <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.7%    7.9%  typical
 <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 57%        6.8%  at its level
-<a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 33%          2.2%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 34%          2.0%  at its level
 </pre>
 
 </details>

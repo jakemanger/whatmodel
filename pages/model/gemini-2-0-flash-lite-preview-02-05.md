@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▇█●▇▇▃   #187 of 472*     57%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█●▇▇▃   #190 of 474*     57%      1
 vision &amp; documents  ▁▁▂▃▂▃●▄▆██▄   #129 of 189*     38%      1
 </pre>
 
-<details><summary>chat &amp; writing · #187 of 472 · 57% of its score</summary>
+<details><summary>chat &amp; writing · #190 of 474 · 57% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1353.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 198/385  avg 1259       57%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1353.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 198/385  avg 1260       57%  blunt
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #129 of 189 · 38% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

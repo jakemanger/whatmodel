@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · apache-2.0
 
-**score 51.4** ±0.9 · #341 of 731 · from 3 benchmark results across 1 source
+**score 51.4** ±0.9 · #342 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁   #261 of 468    100%      3
+coding  ▁▁▁▃▅▇●▇▅▄▃▁   #264 of 469    100%      3
 </pre>
 
-<details><summary>coding · #261 of 468 · 100% of its score</summary>
+<details><summary>coding · #264 of 469 · 100% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 

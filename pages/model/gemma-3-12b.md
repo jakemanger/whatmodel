@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 12.2B params · gemma
 
-**score 52.3** ±0.6 · #331 of 731 · from 56 benchmark results across 16 sources
+**score 52.3** ±0.6 · #331 of 732 · from 56 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▄▅▅▄▄▂▁   #261 of 312*    2.4%      2
-coding              ▁▁▁▃▅●█▇▅▄▃▁    #301 of 468    8.7%      5
-chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #174 of 401*    4.2%      2
-math                ▁▁▃▅█●▄█▄▂▁▁    #206 of 429     15%      6
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #131 of 154    6.9%      9
+agent tasks         ▁▁▃●█▄▅▅▄▄▂▁   #262 of 313*    2.4%      2
+coding              ▁▁▁▃▅●█▇▅▄▃▁    #302 of 469    8.7%      5
+chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #175 of 402*    4.2%      2
+math                ▁▁▃▅█●▄█▄▂▁▁    #208 of 431     15%      6
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #130 of 153    6.9%      9
 </pre>
 
-<details><summary>agent tasks · #261 of 312 · 2.4% of its score</summary>
+<details><summary>agent tasks · #262 of 313 · 2.4% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #301 of 468 · 8.7% of its score</summary>
+<details><summary>coding · #302 of 469 · 8.7% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -50,35 +50,35 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #174 of 401 · 4.2% of its score</summary>
+<details><summary>chat &amp; writing · #175 of 402 · 4.2% of its score</summary>
 
-Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
+Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1341.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 179/385  avg 1259               3.6%  blunt
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   88.9%  ▁▂▄▂▂▄▆█●▄▂▁ beats 105/143  very easy · avg 88%    0.6%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1341.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 179/385  avg 1260               3.6%  blunt
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   88.9%  ▁▂▄▂▂▄▆█●▅▂▁ beats 105/145  very easy · avg 88%    0.6%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #206 of 429 · 15% of its score</summary>
+<details><summary>math · #208 of 431 · 15% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         89.7%  █····█··▄·▄● beats 7/7     very easy · avg 86%     5.8%  sharp · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         89.7%  █····█··▄·▄● beats 7/7     very easy · avg 86%     5.7%  sharp · several runs
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     83.8%  █▄··▄●▄····▄ beats 4/7     easy · avg 80%          4.0%  several runs
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   35.5%  ▄··▄██··●··▄ beats 6/7     hard · avg 29%          1.5%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>    62.9%  ▁··▁▄▄▆●▄▅█▄ beats 19/48   medium · avg 60%        1.3%  at its level · small run
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       84.0%  ▄·▄·▄▄▄·▄··● beats 6/7     easy · avg 69%          1.3%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      16.7%  ▃▃▄▃●▃▇▇█▃▂▅ beats 56/197  very hard · avg 7.1%    1.2%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      16.7%  ▃▃▄▃●▃▇▇█▃▂▅ beats 56/197  very hard · avg 7.2%    1.2%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #131 of 154 · 6.9% of its score</summary>
+<details><summary>vision &amp; documents · #130 of 153 · 6.9% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Pixtral 12B (2409)](pixtral-12b.md) here, though they rank lower overall.
 

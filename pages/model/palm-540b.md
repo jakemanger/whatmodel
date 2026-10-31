@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others         rank  counts  tests
 coding  █·█······█·●      #1 of 4*    2.5%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #266 of 528     21%      3
+math    ▁▁▃▆█●▅█▃▁▁▁   #271 of 530     21%      3
 </pre>
 
 <details><summary>coding · #1 of 4 · 2.5% of its score</summary>
@@ -30,9 +30,9 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>math · #266 of 528 · 21% of its score</summary>
+<details><summary>math · #271 of 530 · 21% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
@@ -49,7 +49,7 @@ test                result  vs the others in its run  difficulty        counts  
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       35.8%  █▁·▁▁·····●▁ beats 10/12    medium · avg 48%         10%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          79.0%  ▃▅█···▅·▃▃▃● beats 12/12    easy · avg 82%          7.2%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  78.1%  █······▁·▁▁● beats 10/12    easy · avg 88%          6.8%  sharp · several runs
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  78.1%  █······▁·▁▁● beats 10/12    easy · avg 88%          6.9%  sharp · several runs
 <a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          73.9%  ▅▃▃▅··▃▃·▃▃● beats 11/12    easy · avg 83%          5.4%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 49.1%  ▂▂▂▂·▅·▃▂●▃▃ beats 12/18    medium · avg 60%        4.7%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           71.3%  ▁···▁··▃▁▅▅● beats 15/18    easy · avg 74%          4.5%  at its level · several runs
@@ -65,7 +65,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     68.6%  █·····▅▃▃▅▃● beats 12/12    medium · avg 70%        1.4%  at its level · several runs
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   58.9%  ▄······▄▄▄·● beats 4/5      medium · avg 58%        1.3%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">ANLI Round 1 (prompted) (lab)</a>        48.4%  █▁▃·▃·▄·▃··● beats 16/16    hard · avg 51%          1.2%  sharp · small run
-<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    54.5%  ▄·····▄··█·● beats 4/5      medium · avg 55%        1.1%  at its level
+<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    54.5%  ▄·····▄··█·● beats 4/5      medium · avg 56%        1.1%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">HellaSwag (lab)</a>                      83.4%  ▁▁▁▂▂▂▄▆█▇●▂ beats 121/135  easy · avg 87%          1.0%  several runs
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   52.9%  ▂··▂·▂▄▄·█●█ beats 13/18    medium · avg 61%        1.0%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">COPA (lab)</a>                           93.0%  ▁·▁▁▁▅▅█▆●▁▁ beats 60/67    very easy · avg 95%     0.8%  small run · several runs

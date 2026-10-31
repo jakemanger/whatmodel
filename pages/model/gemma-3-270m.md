@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 16.5** ±3.5 · #707 of 731 · from 5 benchmark results across 3 sources
+**score 16.3** ±3.6 · #708 of 732 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #346 of 401*     44%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #347 of 402*     44%      1
 </pre>
 
-<details><summary>chat &amp; writing · #346 of 401 · 44% of its score</summary>
+<details><summary>chat &amp; writing · #347 of 402 · 44% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   51.2%  ▁▂●▂▂▄▆█▇▄▂▁ beats 11/143  very easy · avg 88%     44%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecified) …</a>   51.2%  ▁▂●▂▂▄▆██▅▂▁ beats 11/145  very easy · avg 88%     44%  at its level
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 26.7%  ▁●▁▁▂▄▅▆█▃▃▁ beats 3/155   easy · avg 79%          30%  sharp · too hard for it
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 82%         8.8%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 82%         8.9%  noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 37/276  medium · avg 72%       8.7%  too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 67%       2.7%  sharp · too hard for it · noisy
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (lab)</a>                  28.2%  ▄▁▁●▁▄█▇▃▂▃▂ beats 23/140  easy · avg 82%            —  not counted yet: no other model in the …
@@ -56,7 +56,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   12% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    9% ▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 16.5
+weighted average                                   = 16.3
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

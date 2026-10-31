@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
-**score 64.4** ±0.9 · #151 of 731 · from 25 benchmark results across 3 sources
+**score 64.4** ±0.9 · #151 of 732 · from 25 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▄●▅▄▄▂▁    #132 of 312     24%      7
-coding          ▁▁▁▃▅▇█▇●▄▃▁    #132 of 468     13%      3
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #138 of 401*    4.2%      1
-math            ▁▁▃▅█▇▄●▄▂▁▁    #104 of 429     30%      5
+agent tasks     ▁▁▃▆█▄●▅▄▄▂▁    #131 of 313     24%      7
+coding          ▁▁▁▃▅▇█▇●▄▃▁    #132 of 469     13%      3
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #138 of 402*    4.1%      1
+math            ▁▁▃▅█▆▄●▄▂▁▁    #105 of 431     31%      5
 web search      ▁●▁▅▄█▃▄·▁·▁     #80 of 84*    3.5%      1
 </pre>
 
-<details><summary>agent tasks · #132 of 312 · 24% of its score</summary>
+<details><summary>agent tasks · #131 of 313 · 24% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 41/136  hard · avg 19%          6.0%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 41/138  hard · avg 19%          5.9%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>               73.5%  ▁·▅█▆▅●▃▃▂▃▁ beats 58/89   hard · avg 17%          4.4%  sharp · at its level · noisy · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>             30.3%  ▁·▁·▁▁●▃▆█▅█ beats 10/63   very hard · avg 11%     3.9%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   10.3%  ▃····●··▃█·▃ beats 1/8     very hard · avg 3.6%    3.5%  typical
@@ -40,39 +40,39 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #132 of 468 · 13% of its score</summary>
+<details><summary>coding · #132 of 469 · 13% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [Solar Pro 4](solar-pro-4.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 41/136  hard · avg 19%          6.0%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 41/138  hard · avg 19%          5.9%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>   25.9%  █··▄▂▂██▄·▄● beats 21/22   very hard · avg 3.3%    3.9%  sharp · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   80.7%  ▂▃▄▄▅██▆●▇▄▆ beats 46/67   medium · avg 46%        3.4%  small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #138 of 401 · 4.2% of its score</summary>
+<details><summary>chat &amp; writing · #138 of 402 · 4.1% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.7%  ▄·▄·▄·▄▄···● beats 6/6    easy · avg 79%    4.2%  several runs
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.7%  ▄·▄·▄·▄▄···● beats 6/6    easy · avg 80%    4.1%  several runs
 </pre>
 
 </details>
 
-<details><summary>math · #104 of 429 · 30% of its score</summary>
+<details><summary>math · #105 of 431 · 31% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>            92.2%  ▁▁▁▂▁▂▆●▆▂·▁ beats 28/50  medium · avg 62%    8.0%  sharp · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>      76.3%  ▁▁·▁▁▁▄●█▄▂▃ beats 15/42  medium · avg 39%    7.7%  small run · several runs
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>   80.7%  ▃▃▂▃·██●█▅▃▅ beats 19/33  medium · avg 35%    7.2%  sharp · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>            92.2%  ▁▁▁▂▂▂▆●▆▂·▁ beats 30/52  medium · avg 61%    8.1%  sharp · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>      76.3%  ▁▁·▁▁▁▄●█▄▂▃ beats 17/44  medium · avg 38%    8.0%  small run · several runs
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>   80.7%  ▃▃▂▅·██●█▅▃▅ beats 20/35  hard · avg 35%      7.4%  sharp · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">AIME 2025 (lab)</a>            92.8%  █·▄▄····▄··● beats 5/6    medium · avg 54%    5.4%  sharp
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>   86.8%  ▁▁····▁▅●█▇▁ beats 8/23   easy · avg 66%      2.0%  small run
 </pre>
@@ -95,9 +95,9 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">GPQA Diamond (lab)</a>                   79.1%  █···▄▄···▄·● beats 5/6      hard · avg 51%           15%  sharp · several runs
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">MMLU-Pro (lab)</a>                       83.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 159/188  medium · avg 55%        8.2%  small run · several runs
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>           13.6%  ▁▁▁▄▅●▆██▆▁▃ beats 32/109   very hard · avg 4.3%    6.8%  small run · several runs
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecified)…</a>   67.3%  ▃▇▂▄▅▅▂▄●▇█▇ beats 51/84    medium · avg 40%        3.9%  at its level · small run · several runs
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">MMLU-Pro (lab)</a>                       83.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 159/188  medium · avg 55%        8.1%  small run · several runs
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>           13.6%  ▁▁▁▄▆●▇██▆▁▃ beats 33/111   very hard · avg 4.3%    6.8%  small run · several runs
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecified)…</a>   67.3%  ▂▆▂▄▄▄▂▄●▆█▇ beats 52/86    medium · avg 41%        3.6%  at its level · small run · several runs
 </pre>
 
 </details>

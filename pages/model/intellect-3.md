@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.2** ±1.1 · #154 of 731 · from 9 benchmark results across 3 sources
+**score 64.2** ±1.1 · #154 of 732 · from 9 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇█●▅▄▃▁   #159 of 468*    3.9%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #159 of 401*     12%      1
-math            ▁▁▃▅█▇▄█●▂▁▁     #59 of 429     22%      3
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #160 of 469*    3.9%      1
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #160 of 402*     12%      1
+math            ▁▁▃▅█▆▄█●▂▁▁     #59 of 431     22%      3
 </pre>
 
-<details><summary>coding · #159 of 468 · 3.9% of its score</summary>
+<details><summary>coding · #160 of 469 · 3.9% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -32,18 +32,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #159 of 401 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #160 of 402 · 12% of its score</summary>
 
 Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1355.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 200/385  avg 1259       12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1355.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 200/385  avg 1260       12%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #59 of 429 · 22% of its score</summary>
+<details><summary>math · #59 of 431 · 22% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall.
 

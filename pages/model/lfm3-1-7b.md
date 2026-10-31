@@ -27,10 +27,10 @@ web search                     not ranked yet       —      1
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">WebArena-Verified (lab)</a>              38.4%  █··●···█·█·█ beats 1/4     hard · avg 32%       27%  sharp · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (lab)</a>             43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/136  medium · avg 47%    4.1%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (lab)</a>         23.0%  ▁··●▃▁▄▇█▂▂▁ beats 1/63                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (lab)</a>             43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/138  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (lab)</a>         23.0%  ▁··●▃▁▅██▂▂▁ beats 1/65                           —  not counted yet: no other model in the …
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Terminal-Bench 2.1 (lab)</a>             12.9%  ▁·▁·▁●▄▃▆█▅█ beats 3/63                           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam with tools (…</a>   13.9%  ●▃▁▂▃▃▃█▇▇▆▂ beats 0/58                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam with tools (…</a>   13.9%  ▁·●▂▂▁▄▄▇█▄▅ beats 1/62                           —  not counted yet: no other model in the …
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">MCP-Atlas (public set) (lab)</a>         32.6%  ▂·▁▂●·▁▃█▆▆▂ beats 5/39                           —  not counted yet: no other model in the …
 </pre>
 
@@ -40,10 +40,10 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SciCode (level unspecified) (lab)</a>    28.5%  ▁····▃▄●▅█▇▃ beats 10/38   hard · avg 30%      5.8%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (lab)</a>             43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/136  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SciCode (level unspecified) (lab)</a>    28.5%  ▁····▃▃●▅█▆▂ beats 11/40   hard · avg 30%      5.8%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (lab)</a>             43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/138  medium · avg 47%    4.1%  at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">LiveCodeBench v6 (window unspecif…</a>   73.5%  ▂▃▄▄▅██●▄▇▄▆ beats 40/67                          —  not counted yet: no other model in the …
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (lab)</a>         23.0%  ▁··●▃▁▄▇█▂▂▁ beats 1/63                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (lab)</a>         23.0%  ▁··●▃▁▅██▂▂▁ beats 1/65                           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">IFEval (aggregation unspecified) …</a>   96.7%  ▁▂▄▂▂▄▆█▇▄▂● beats 142/143  very easy · avg 97%    8.9%  maxed out · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">IFEval (aggregation unspecified) …</a>   96.7%  ▁▂▄▂▂▄▆██▅▂● beats 144/145  very easy · avg 97%    8.9%  maxed out · small run
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run  counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam with tools (…</a>   13.9%  ●▃▁▂▃▃▃█▇▇▆▂ beats 0/58        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam with tools (…</a>   13.9%  ▁·●▂▂▁▄▄▇█▄▅ beats 1/62        —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -70,9 +70,9 @@ test                                result  vs the others in its run  counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam (lab)</a>            7.2%  ▁▁▁●▅▆▆██▆▁▃ beats 8/109    very hard · avg 7.0%    8.9%  too hard for it · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">IFBench (aggregation unspecified)…</a>   73.0%  ▃▇▂▄▅▅▂▄▄●█▇ beats 61/84    easy · avg 74%          8.0%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">GPQA Diamond (lab)</a>                   63.4%  ▁▁▁▁▂▄▅●█▇█▄ beats 122/318  medium · avg 69%        0.8%  blunt · at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam (lab)</a>            7.2%  ▁▁▁●▆▆▇██▆▁▃ beats 8/111    very hard · avg 7.0%    8.9%  too hard for it · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">IFBench (aggregation unspecified)…</a>   73.0%  ▂▆▂▄▄▄▂▄▄●█▇ beats 62/86    easy · avg 74%          8.0%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">GPQA Diamond (lab)</a>                   63.4%  ▁▁▁▁▂▄▅●███▄ beats 124/322  medium · avg 69%        0.8%  blunt · at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">RULER 128k (lab)</a>                     65.6%  ▃··▅▄●▅█▇·▃▃ beats 12/33                               —  not counted yet: no other model in the …
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">AutomationBench (Public) (lab)</a>       41.3%  █····▄····▄● beats 4/4                                 —  not counted yet: no other model in the …
 </pre>

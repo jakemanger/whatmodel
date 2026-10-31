@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 7.24B params · apache-2.0
 
-**score 51.7** ±1.5 · #431 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±1.5 · #430 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #279 of 472*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #280 of 473*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #279 of 472 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #280 of 473 · 99% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

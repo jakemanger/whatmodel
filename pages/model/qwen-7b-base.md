@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 32.8** ±1.0 · #644 of 731 · from 11 benchmark results across 2 sources
+**score 32.8** ±1.0 · #644 of 732 · from 11 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

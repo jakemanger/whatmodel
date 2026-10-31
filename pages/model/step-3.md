@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 321B params (38B active) · apache-2.0
 
-**score 59.4** ±2.4 · #242 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.4** ±2.4 · #242 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅▇█●▆▆▃   #174 of 472*     59%      1
-vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄   #103 of 157*     39%      1
+chat &amp; writing      ▁▁▁▄▆▅▇█●▆▆▃   #173 of 473*     58%      1
+vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄   #102 of 156*     39%      1
 </pre>
 
-<details><summary>chat &amp; writing · #174 of 472 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #173 of 473 · 58% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1349.0  ▁▁▁▂▃▃▃▆●▇█▃ beats 193/385  avg 1259       59%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1349.0  ▁▁▁▂▃▃▃▆●▇█▃ beats 193/385  avg 1260       58%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #103 of 157 · 39% of its score</summary>
+<details><summary>vision &amp; documents · #102 of 156 · 39% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 

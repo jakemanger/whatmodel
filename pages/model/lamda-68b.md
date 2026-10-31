@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 68B params · proprietary
 
-**score 26.7** ±0.8 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 26.6** ±0.8 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▆██▅█▄▁▁▁   #477 of 528*    9.1%      1
+math  ▁▁●▆██▅█▃▁▁▁   #479 of 530*    9.1%      1
 </pre>
 
-<details><summary>math · #477 of 528 · 9.1% of its score</summary>
+<details><summary>math · #479 of 530 · 9.1% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2201.11903v6"></a><a href="https://arxiv.org/html/2201.11903v6">Chain-of-Thought Prompting Elicits Reas…</a>        9  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 26.7
+weighted average                                   = 26.6
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt))</sub>

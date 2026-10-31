@@ -6,7 +6,7 @@
 
 Databricks · released 2023-04 · 12B params · mit
 
-**score 22.3** ±1.3 · comparison only: no current run option verified · from 14 benchmark results across 9 sources
+**score 22.2** ±1.3 · comparison only: no current run option verified · from 14 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▂▄▆█▇▅▄▃▁   #526 of 537*    8.7%      1
-chat &amp; writing  ●▁▁▃▅▄▇█▇▇▇▃    #470 of 472     48%      4
+coding          ▁▁●▃▄▆█▇▅▄▃▁   #528 of 539*    8.7%      1
+chat &amp; writing  ●▁▁▃▅▄▇█▇▇▇▃    #472 of 474     48%      4
 </pre>
 
-<details><summary>coding · #526 of 537 · 8.7% of its score</summary>
+<details><summary>coding · #528 of 539 · 8.7% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 
 <pre>
 test       result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    7.9%  ▄··▄····●▄█▄ beats 2/6    medium · avg 62%    8.7%  sharp · too hard for it
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    7.9%  ▄··▄····●▄█▄ beats 2/6    medium · avg 63%    8.7%  sharp · too hard for it
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #470 of 472 · 48% of its score</summary>
+<details><summary>chat &amp; writing · #472 of 474 · 48% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [FastChat-T5 3B](fastchat-t5-3b.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run  difficulty                counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             982.4  ●▁▁▂▃▃▃▆▆▇█▃ beats 2/385  avg 1259                     18%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             982.4  ●▁▁▂▃▃▃▆▆▇█▃ beats 2/385  avg 1260                     18%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         856.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 2/95   avg 1187                     17%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.2800 MT-Bench score (1-10)  ▆●▂▆▆▄██▂▄▄▆ beats 3/28   avg 8.536 MT-Bench scor…     13%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.2800 MT-Bench score (1-10)  ▆●▂▆▆▄██▂▄▄▆ beats 3/28   avg 8.539 MT-Bench scor…     13%  sharp · noisy
 <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       6.9000 mean rank (1-11)  █···●··▄···▄ beats 2/4    avg 6.709 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 25.7%  ●▄·▄···▄▄·██ beats 0/8    easy · avg 79%          15%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">ARC Challenge</a>                        42.2%  ●·▄···█·▄··▄ beats 0/5    easy · avg 86%          10%  sharp
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">HellaSwag</a>                            72.6%  ●·▄█··▄····▄ beats 0/5    very easy · avg 92%    8.7%  at its level
-<a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   56.6%  ●·█········█ beats 0/2    medium · avg 77%       4.0%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.844.pdf">Static HHH alignment (BIG-bench h…</a>   56.6%  ●·█········█ beats 0/2    medium · avg 77%       4.1%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.844.pdf">TruthfulQA MC1</a>                       15.2%  ●·····█····█ beats 0/2    medium · avg 50%       2.6%  small run
 <a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Spider dev execution accuracy, ze…</a>    9.5%  █·●▄··▄····▄ beats 3/6    medium · avg 54%       1.2%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">TruthfulQA MC2</a>                       34.1%  ●···█·▃····▃ beats 0/5    medium · avg 56%       0.6%  blunt · at its level
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-531"></a><a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset: A Large Negation…</a>        1    1% ▇
 <a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 22.3
+weighted average                                   = 22.2
 </pre>
 
 <sub>Licences: Enhancing Chat Language Models by Scaling High-quality Instructional Conversations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-183-CC-BY-4-0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Aligning Large Language Models through Synthetic Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-844-CC-BY-4-0.txt)) · Battle of the Large Language Models: Dolly vs LLaMA vs Vicuna vs Guanaco vs Bard vs ChatGPT - A Text-to-SQL Parsing Comparison ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-750-CC-BY-4-0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

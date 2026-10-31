@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 55.5** ±1.7 · #268 of 731 · from 15 benchmark results across 2 sources
+**score 55.5** ±1.7 · #269 of 732 · from 15 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▆▄▆●▆▇▇▃   #203 of 401*     30%      1
-math                ▁▁▃▅●▇▄█▄▂▁▁   #316 of 429*    8.3%      1
-vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄    #116 of 154     69%     14
+chat &amp; writing      ▁▁▁▃▆▄▆●▆▇▇▃   #203 of 402*     30%      1
+math                ▁▁▃▅●▆▄█▄▂▁▁   #316 of 431*    8.3%      1
+vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄    #115 of 153     69%     14
 </pre>
 
-<details><summary>chat &amp; writing · #203 of 401 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #203 of 402 · 30% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1321.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 154/385  avg 1259       30%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1321.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 154/385  avg 1260       30%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #316 of 429 · 8.3% of its score</summary>
+<details><summary>math · #316 of 431 · 8.3% of its score</summary>
 
-Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
@@ -43,7 +43,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #116 of 154 · 69% of its score</summary>
+<details><summary>vision &amp; documents · #115 of 153 · 69% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

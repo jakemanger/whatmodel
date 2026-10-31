@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 45.5** ±2.3 · #461 of 731 · from 4 benchmark results across 2 sources
+**score 45.4** ±2.3 · #464 of 732 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (l…</a>        3   62% ▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   35% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 45.5
+weighted average                                   = 45.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

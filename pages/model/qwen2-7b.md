@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 45.5** ±0.6 · #462 of 731 · from 22 benchmark results across 10 sources
+**score 45.5** ±0.6 · #462 of 732 · from 22 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #291 of 312*    0.9%      1
-coding          ▁▁▁▃▅●█▇▅▄▃▁   #351 of 468*     11%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #280 of 401*    2.8%      1
-math            ▁▁▃●█▇▄█▄▂▁▁    #354 of 429     28%      5
+agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #292 of 313*    0.9%      1
+coding          ▁▁▁▃▅●█▇▅▄▃▁   #352 of 469*     11%      1
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #282 of 402*    2.8%      1
+math            ▁▁▃●█▆▄█▄▂▁▁    #356 of 431     28%      5
 </pre>
 
-<details><summary>agent tasks · #291 of 312 · 0.9% of its score</summary>
+<details><summary>agent tasks · #292 of 313 · 0.9% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #351 of 468 · 11% of its score</summary>
+<details><summary>coding · #352 of 469 · 11% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #280 of 401 · 2.8% of its score</summary>
+<details><summary>chat &amp; writing · #282 of 402 · 2.8% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
@@ -55,9 +55,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #354 of 429 · 28% of its score</summary>
+<details><summary>math · #356 of 431 · 28% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -83,7 +83,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                 70.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 141/214  easy · avg 77%      2.8%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      53.7%  ▁··▁▁▂▂▆●▆█▆ beats 28/70    medium · avg 62%    2.4%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.0%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 28/81    medium · avg 57%    1.8%  blunt · at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>            38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 34/104   hard · avg 38%      1.6%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>            38.4%  ▂▁▂▂▄▃●▃▅█▃▃ beats 34/106   hard · avg 38%      1.6%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 192/276  medium · avg 72%    0.9%  at its level · noisy
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU</a>                                80.9%  ▅·▅····█●▅█▅ beats 7/14     medium · avg 73%    0.7%  at its level · noisy
 </pre>

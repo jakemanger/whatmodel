@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 22.9** ±0.7 · #694 of 731 · from 37 benchmark results across 8 sources
+**score 22.8** ±0.7 · #695 of 732 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁   #459 of 468*    1.8%      1
-math    ▁▁●▅█▇▄█▄▂▁▁   #402 of 429*    2.0%      1
+coding  ▁▁●▃▅▇█▇▅▄▃▁   #460 of 469*    1.8%      1
+math    ▁▁●▅█▆▄█▄▂▁▁   #406 of 431*    2.0%      1
 </pre>
 
-<details><summary>coding · #459 of 468 · 1.8% of its score</summary>
+<details><summary>coding · #460 of 469 · 1.8% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md) here, though they rank lower overall.
 
@@ -31,9 +31,9 @@ test       result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #402 of 429 · 2.0% of its score</summary>
+<details><summary>math · #406 of 431 · 2.0% of its score</summary>
 
-Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
@@ -57,7 +57,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   46.8%  ▂·▄·▂█▄●█▄▂▆ beats 10/21  easy · avg 74%         3.6%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), last-wo…</a>   67.0%  ▁··▂▁▁▁▂●█▅▃ beats 9/26   very easy · avg 87%    3.1%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.1%  ●···▄··▄··▄▄ beats 0/5    easy · avg 74%         2.2%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                       15.1%  ▁▁▂▂▄●▃▆▅█▅▂ beats 18/80  medium · avg 61%       2.0%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                       15.1%  ▁▁▂▂▄●▃▆▅█▅▂ beats 18/80  medium · avg 61%       2.1%  small run
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   11.0%  ▅····●▅·██·█ beats 2/13   medium · avg 52%       1.3%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.7%  ▃●▃··▅▃·█▃▃▅ beats 2/13   medium · avg 61%       1.2%  typical
 <a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 26.2%  ▄·●····▄·▄·█ beats 1/5    easy · avg 75%         1.0%  noisy
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 22.9
+weighted average                                   = 22.8
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · trlX: A Framework for Large Scale Reinforcement Learning from Human Feedback ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-530-CC-BY-4-0.txt)) · How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources ([CC BY 4.0](../../licenses/paper-2306.04751v2-tulu1-CC-BY-4-0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

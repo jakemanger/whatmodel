@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 3.75B params · qwen-research
 
-**score 44.6** ±1.0 · #484 of 731 · from 14 benchmark results across 2 sources
+**score 44.6** ±1.0 · #485 of 732 · from 14 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▇▄█▄▂▁▁   #298 of 429*     12%      1
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #140 of 154    100%     14
+math                ▁▁▃▅●▆▄█▄▂▁▁   #299 of 431*     12%      1
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #139 of 153    100%     14
 </pre>
 
-<details><summary>math · #298 of 429 · 12% of its score</summary>
+<details><summary>math · #299 of 431 · 12% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #140 of 154 · 100% of its score</summary>
+<details><summary>vision &amp; documents · #139 of 153 · 100% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md) here, though they rank higher overall. Trails [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                 46.3%  ▃·●·▅▃▅▅▃▅█▅ beats 1/16   medium · avg 54%       4.1%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                        84.0%  ▂··▂·▂●·▅▂▆█ beats 3/17   easy · avg 85%         4.0%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                         93.9%  ▃··▅●▅▃█▃█▅▅ beats 3/17   very easy · avg 94%    3.9%  blunt · maxed out
-<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   21.4%  ▁·▁·●▃▁▇▃█·▄ beats 2/22   hard · avg 26%         3.7%  blunt
+<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   21.4%  ▁·▁·●▃▁▇▃█·▄ beats 2/22   hard · avg 27%         3.7%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                    65.4%  ▅●·▃▅▅·█·▃▅█ beats 2/16   easy · avg 70%         3.2%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                         74.5%  ▃··▃●·▅▅·█▅▃ beats 3/13   easy · avg 74%         2.2%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">OCRBench (lab)</a>                       79.7%  ●█·▃▃█▃▅▅▃·▃ beats 1/16   easy · avg 84%         1.2%  blunt

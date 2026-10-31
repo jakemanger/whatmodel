@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 74.4** ±0.8 · #39 of 731 · from 10 benchmark results across 4 sources
+**score 74.4** ±0.8 · #39 of 732 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅▅▄●▂▁   #33 of 312*    8.7%      2
-coding       ▁▁▁▃▅▇█▇▅▄●▁   #11 of 468*     11%      1
-math         ▁▁▃▅█▇▄█▄●▁▁    #29 of 429     56%      3
+agent tasks  ▁▁▃▆█▄▅▅▄●▂▁   #35 of 313*    8.7%      2
+coding       ▁▁▁▃▅▇█▇▅▄●▁   #11 of 469*     11%      1
+math         ▁▁▃▅█▆▄█▄●▁▁    #28 of 431     56%      3
 </pre>
 
-<details><summary>agent tasks · #33 of 312 · 8.7% of its score</summary>
+<details><summary>agent tasks · #35 of 313 · 8.7% of its score</summary>
 
-Beats [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+Beats [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.6 Luna](gpt-5-6-luna.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Grok 4.5](grok-4-5.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -33,26 +33,26 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #11 of 468 · 11% of its score</summary>
+<details><summary>coding · #11 of 469 · 11% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1675.9  ▁▁▃▂▅█▃▆▅●▁▂ beats 118/129  avg 982        11%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1675.9  ▁▁▃▂▅█▃▆▅●▁▂ beats 118/129  avg 981        11%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #29 of 429 · 56% of its score</summary>
+<details><summary>math · #28 of 431 · 56% of its score</summary>
 
-Beats [Gemini 3.8 Flash](gemini-3-8-flash.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall. Trails [Muse Spark Open](muse-spark-open.md) here, though they rank lower overall.
+Beats [Gemini 3.8 Flash](gemini-3-8-flash.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   65.6%  ▂··▁▁▃▄▄●▆▄▃ beats 51/86    very hard · avg 1.2%     28%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      34.1%  ▁▂▁▂█●▂▃▂▁▁▁ beats 40/67    very hard · avg 0.1%     27%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 192/197  very hard · avg 7.1%    0.9%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 192/197  very hard · avg 7.2%    0.9%  sharp · maxed out · noisy
 </pre>
 
 </details>

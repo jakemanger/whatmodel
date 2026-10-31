@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▄▄▄▁▁   #270 of 352     95%      3
+agent tasks  ▁▁▂▆●▄▅▄▄▃▁▁   #272 of 354     95%      3
 </pre>
 
-<details><summary>agent tasks · #270 of 352 · 95% of its score</summary>
+<details><summary>agent tasks · #272 of 354 · 95% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.9%  ▁▁▁▂█●▅▅▆▂▂▂ beats 23/77   hard · avg 31%       49%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.9%  ▁▁▁▂█●▅▅▆▂▂▂ beats 23/77   hard · avg 31%       50%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              56.8%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 65/114  medium · avg 51%     25%  blunt · at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   88.6%  ▃▃▃▃▆▅▆●█▂▅▂ beats 19/31   easy · avg 78%       20%  typical
 </pre>

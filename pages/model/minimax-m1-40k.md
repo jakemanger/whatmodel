@@ -25,7 +25,7 @@ math         ●··········█    #2 of 2     30%      3
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             55.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/136  hard · avg 23%     11%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             55.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/138  hard · avg 23%     11%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Airline (GPT-4.1 user) (l…</a>   60.0%  ●··········█ beats 0/1                          —  not counted yet: no other model in the …
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Retail (GPT-4.1 user) (la…</a>   67.8%  █··········● beats 1/1                          —  not counted yet: no other model in the …
 </pre>
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             55.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/136  hard · avg 23%       11%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>             55.6%  ▁▁▁▁▁▁▂●█▆▁▁ beats 45/138  hard · avg 23%       11%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   62.3%  ▃···●··▅··▃▃ beats 1/7     medium · avg 43%    4.6%  at its level · small run
 </pre>
 
@@ -57,9 +57,9 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (lab)</a>           69.2%  ▁▁▁▁▂▄▅▅●▇█▄ beats 150/318  hard · avg 41%           15%  sharp · at its level · small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>    7.2%  ▁▁▁●▅▆▆██▆▁▃ beats 9/109    very hard · avg 3.1%    7.4%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (lab)</a>           61.0%  ▂·▁·▂▂▁▃▄▁●▄ beats 23/29    hard · avg 40%          7.1%  at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (lab)</a>           69.2%  ▁▁▁▁▂▄▅▅●██▄ beats 152/322  hard · avg 41%           15%  sharp · at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (lab)</a>           61.0%  ▂·▁·▂▃▁▄▄▃●▄ beats 27/33    hard · avg 39%          7.6%  at its level · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>    7.2%  ▁▁▁●▆▆▇██▆▁▃ beats 9/111    very hard · avg 3.1%    7.4%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (lab)</a>             80.1%  █·▁▁▁●·▄▄▁▄▁ beats 11/24    medium · avg 59%        7.0%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (lab)</a>               80.6%  ▁▁·▁▁▁▃▂▄▅●▁ beats 128/188  medium · avg 59%        6.9%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (lab)</a>               17.9%  ▄▄▄▆█▆●██·▂█ beats 18/32    very hard · avg 7.5%    6.4%  small run

@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 34.1** ±5.5 · #846 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 34.1** ±5.5 · #846 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄   #152 of 157*     86%      2
+vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄   #151 of 156*     86%      2
 </pre>
 
-<details><summary>vision &amp; documents · #152 of 157 · 86% of its score</summary>
+<details><summary>vision &amp; documents · #151 of 156 · 86% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md), [LLaVA-v1.6-34B](llava-v1-6-34b.md) here, though they rank higher overall.
 

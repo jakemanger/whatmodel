@@ -6,7 +6,7 @@
 
 wzhouad (WPO) · released 2024-08 · 9.24B params
 
-**score 65.4** ±1.7 · #150 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.4** ±1.7 · #148 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▇█▆●▆▃   #109 of 472*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅▇█▆●▆▃   #109 of 473*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #109 of 472 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #109 of 473 · 99% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.0** ±1.4 · #243 of 731 · from 4 benchmark results across 2 sources
+**score 57.0** ±1.4 · #244 of 732 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #210 of 468     79%      3
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #173 of 401*     20%      1
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #211 of 469     79%      3
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #174 of 402*     20%      1
 </pre>
 
-<details><summary>coding · #210 of 468 · 79% of its score</summary>
+<details><summary>coding · #211 of 469 · 79% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Falcon-H1R 7B](falcon-h1r-7b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.5%     44%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.6%     44%  sharp · too hard for it
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   61.9%  ▄·▄····▄●▄█▄ beats 3/7    medium · avg 46%         24%  at its level
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   68.1%  ▄▄···▄·●▄█·▄ beats 3/7    medium · avg 58%         10%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #173 of 401 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #174 of 402 · 20% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.1  ▁▁▁▂▃▃▃▆●▇█▃ beats 182/385  avg 1259       20%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.1  ▁▁▁▂▃▃▃▆●▇█▃ beats 182/385  avg 1260       20%  blunt
 </pre>
 
 </details>

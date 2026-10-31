@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▄▄▄▁▁   #266 of 352*     10%      2
+agent tasks  ▁▁▂▆●▄▅▄▄▃▁▁   #268 of 354*     10%      2
 </pre>
 
-<details><summary>agent tasks · #266 of 352 · 10% of its score</summary>
+<details><summary>agent tasks · #268 of 354 · 10% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    4.9%  ▂·█··▆▄·▂▂·● beats 12/13    avg 34%                 22%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    4.9%  ▂·█··▆▄·▂▂·● beats 12/13    avg 34%                 23%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   81.9%  ▁▂▂▂▃█▃▆▅●▂▃ beats 85/95    medium · avg 65%        16%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   69.1%  ▂▄▂▃█▄▃▆▃●▂▂ beats 71/81    medium · avg 57%        12%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   73.7%  ▂·▄··▂▂·▄▂●▄ beats 8/13     medium · avg 52%       8.8%  typical

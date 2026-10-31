@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█▄▅●▄▄▁▁    #114 of 352     17%      4
-coding          ▁▁▁▂▄▆█▇▅●▃▁    #62 of 537*    5.3%      1
-chat &amp; writing  ▁▁▁▃▅▄▇█●▇▇▃   #152 of 472*    3.0%      1
-math            ▁▁▃▆██▅●▄▁▁▁     #82 of 528     30%      4
+agent tasks     ▁▁▂▆█▄▅●▄▃▁▁    #114 of 354     17%      4
+coding          ▁▁▁▃▄▆█▇▅●▃▁    #62 of 539*    5.3%      1
+chat &amp; writing  ▁▁▁▃▅▄▇█●▇▇▃   #153 of 474*    3.0%      1
+math            ▁▁▃▆██▅●▃▁▁▁     #82 of 530     30%      4
 </pre>
 
-<details><summary>agent tasks · #114 of 352 · 17% of its score</summary>
+<details><summary>agent tasks · #114 of 354 · 17% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                    result  vs the others in its run    difficulty          
 
 </details>
 
-<details><summary>coding · #62 of 537 · 5.3% of its score</summary>
+<details><summary>coding · #62 of 539 · 5.3% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #152 of 472 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #153 of 474 · 3.0% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #82 of 528 · 30% of its score</summary>
+<details><summary>math · #82 of 530 · 30% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
@@ -79,7 +79,7 @@ test                    result  vs the others in its run  difficulty            
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">GPQA Diamond (lab)</a>       81.5%  ▄··▄··●▄···█ beats 2/5    hard · avg 42%           15%  sharp
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Pro (lab)</a>           82.6%  ▄·●···█·▄··▄ beats 1/5    medium · avg 55%        7.2%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux (lab)</a>         89.3%  ●███··█····█ beats 0/5    medium · avg 73%        6.0%  typical
-<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">ZebraLogic (lab)</a>         95.5%  ██··█·●█···█ beats 3/5    easy · avg 74%          4.7%  maxed out
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">ZebraLogic (lab)</a>         95.5%  ██··█·●█···█ beats 3/5    easy · avg 75%          4.7%  maxed out
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench (lab)</a>            40.7%  ▄······▄▄·▄● beats 4/5    very hard · avg 12%     4.6%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench (lab)</a>          29.5%  █····██·█●·█ beats 4/5    very hard · avg 8.2%    4.4%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BeyondAIME (lab)</a>         69.5%  █··▄····●··█ beats 3/5    medium · avg 42%        2.8%  at its level

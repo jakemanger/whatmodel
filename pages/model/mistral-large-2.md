@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 123B params · mistral-research
 
-**score 55.8** ±0.9 · #262 of 731 · from 18 benchmark results across 14 sources
+**score 55.8** ±0.9 · #263 of 732 · from 18 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁    #232 of 312    7.1%      3
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #219 of 468*     15%      1
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #221 of 401*    8.4%      1
-math            ▁▁▃▅●▇▄█▄▂▁▁   #263 of 429*     23%      2
+agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁    #233 of 313    7.1%      3
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #220 of 469*     15%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #222 of 402*    8.4%      1
+math            ▁▁▃▅●▆▄█▄▂▁▁   #265 of 431*     23%      2
 </pre>
 
-<details><summary>agent tasks · #232 of 312 · 7.1% of its score</summary>
+<details><summary>agent tasks · #233 of 313 · 7.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #219 of 468 · 15% of its score</summary>
+<details><summary>coding · #220 of 469 · 15% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -46,25 +46,25 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #221 of 401 · 8.4% of its score</summary>
+<details><summary>chat &amp; writing · #222 of 402 · 8.4% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1305.6  ▁▁▁▂▃▃▃●▆▇█▃ beats 133/385  avg 1259      8.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1305.6  ▁▁▁▂▃▃▃●▆▇█▃ beats 133/385  avg 1260      8.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #263 of 429 · 23% of its score</summary>
+<details><summary>math · #265 of 431 · 23% of its score</summary>
 
 Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               50.3%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 43/92   hard · avg 28%           18%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    7.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 44/197  very hard · avg 7.1%    4.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    7.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 44/197  very hard · avg 7.2%    4.9%  sharp · noisy
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ test                      result  vs the others in its run   difficulty         
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         51.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 72/211  hard · avg 39%          13%  sharp · at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   80.1%  ▁▂▂▂▃█▃▆▅●▂▃ beats 81/95   medium · avg 65%       5.4%  at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1108.9  ▁·▂▁▄●▅▃█▄▁▁ beats 13/62   avg 1033               5.2%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1108.9  ▁·▂▁▄●▅▃█▄▁▁ beats 13/62   avg 1034               5.2%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   42.3%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 87/97   hard · avg 31%         5.1%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   52.0%  ▁▁·▁▂▂▄█▄●▄▄ beats 47/66   hard · avg 29%         5.0%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      77.3%  ▁··▁▁▂▂▆▅▆█● beats 68/70   medium · avg 62%       4.1%  at its level

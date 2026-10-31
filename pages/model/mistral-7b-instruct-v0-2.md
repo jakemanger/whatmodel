@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 7.24B params · apache-2.0
 
-**score 37.8** ±0.5 · #597 of 731 · from 24 benchmark results across 15 sources
+**score 37.8** ±0.5 · #597 of 732 · from 24 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #413 of 468     61%      6
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #351 of 401     11%      4
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #414 of 469     61%      6
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #351 of 402     11%      4
 </pre>
 
-<details><summary>coding · #413 of 468 · 61% of its score</summary>
+<details><summary>coding · #414 of 469 · 61% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
 
@@ -36,14 +36,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #351 of 401 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #351 of 402 · 11% of its score</summary>
 
-Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       17.1%  ▁▂▂▃▆●█▆▄▄▁▁ beats 43/122  medium · avg 35%       5.2%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1149.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 38/385  avg 1259               2.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1149.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 38/385  avg 1260               2.8%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1054.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 27/95   avg 1187               2.6%  typical
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   92.8%  ▂▂·▆·▇▃▆█●▄▂ beats 36/45   very easy · avg 94%    0.6%  sharp · noisy
 </pre>
@@ -57,7 +57,7 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           20.1%  ▁▁▁▂▂●▂█▆▃▅▃ beats 15/61    medium · avg 38%       6.9%  typical
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              14.7%  ●▂▃▄▄█▁▄▅▃▁▃ beats 1/42     medium · avg 52%       6.2%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.2_5shots.zip">MMLU-Pro</a>                                       28.8%  ▃●▅█▃·█▃▅··▂ beats 2/23     medium · avg 54%       3.4%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.6337 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 8/52     avg 42.989 WB-Score    3.0%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.6337 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 8/52     avg 43.019 WB-Score    3.0%  sharp
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.2/results_2024-02-12%2015%3A18%3A27.775649.json">Natural Questions (closed book)</a>                24.7%  ▁·▁·▁▂▁▂·▅▂● beats 19/28    medium · avg 48%       2.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                53.3%  ▁··▁▁▂▂▆●▆█▆ beats 27/70    medium · avg 62%       1.6%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             39.4%  ▂▄●▃█▄▃▆▃▅▂▂ beats 13/81    medium · avg 57%       1.3%  blunt · at its level

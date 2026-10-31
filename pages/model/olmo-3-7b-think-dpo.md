@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 53.3** ±2.5 · #389 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 53.3** ±2.5 · #389 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅▇▆●█▄▂▁▁   #179 of 431*     97%      2
+math  ▁▁▃▅█▆●█▄▂▁▁   #180 of 433*     97%      2
 </pre>
 
-<details><summary>math · #179 of 431 · 97% of its score</summary>
+<details><summary>math · #180 of 433 · 97% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

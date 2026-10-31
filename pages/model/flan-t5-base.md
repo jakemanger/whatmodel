@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.248B params · apache-2.0
 
-**score 24.9** ±1.4 · #685 of 731 · from 16 benchmark results across 9 sources
+**score 24.8** ±1.4 · #686 of 732 · from 16 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▇▄█▄▂▁▁   #426 of 429*     15%      2
+math  ●▁▃▅█▆▄█▄▂▁▁   #428 of 431*     15%      2
 </pre>
 
-<details><summary>math · #426 of 429 · 15% of its score</summary>
+<details><summary>math · #428 of 431 · 15% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-483"></a><a href="https://aclanthology.org/2023.emnlp-main.483.pdf">SCITAB: A Challenging Benchmark for Com…</a>        1    4% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 24.9
+weighted average                                   = 24.8
 </pre>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · Model-Generated Pretraining Signals Improves Zero-Shot Generalization of Text-to-Text Transformers ([CC BY 4.0](../../licenses/acl-2023-acl-long-724-CC-BY-4-0.txt)) · ZeroSCROLLS: A Zero-Shot Benchmark for Long Text Understanding ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-536-CC-BY-4-0.txt)) · Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In ([CC BY 4.0](../../licenses/acl-2023-acl-long-136-CC-BY-4-0.txt)) · Specializing Smaller Language Models towards Multi-Step Reasoning ([CC BY 4.0](../../licenses/paper-2301.12726v1-specializing-CC-BY-4-0.txt)) · POSQA: Probe the World Models of LLMs with Size Comparisons ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-504-CC-BY-4-0.txt)) · SCITAB: A Challenging Benchmark for Compositional Reasoning and Claim Verification on Scientific Tables ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-483-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

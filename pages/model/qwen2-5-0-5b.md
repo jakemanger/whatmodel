@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 0.49B params · apache-2.0
 
-**score 29.8** ±1.7 · #661 of 731 · from 12 benchmark results across 7 sources
+**score 29.8** ±1.7 · #662 of 732 · from 12 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #302 of 312*    5.2%      1
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #360 of 401*    9.4%      2
+agent tasks     ▁▁●▆█▄▅▅▄▄▂▁   #303 of 313*    5.2%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #361 of 402*    9.3%      2
 math            █··········●       #1 of 2*     18%      1
 </pre>
 
-<details><summary>agent tasks · #302 of 312 · 5.2% of its score</summary>
+<details><summary>agent tasks · #303 of 313 · 5.2% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -32,14 +32,14 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #360 of 401 · 9.4% of its score</summary>
+<details><summary>chat &amp; writing · #361 of 402 · 9.3% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.9%  ▁·▁▁▂▁●▄▆▄█▄ beats 7/38   medium · avg 46%    5.5%  sharp · too hard for it
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified)</a>     31.6%  ●▂▄▂▂▄▆█▇▄▂▁ beats 0/143  easy · avg 76%      3.9%  at its level · small run
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.9%  ▁·▁▁▂▁●▄▆▄█▄ beats 7/38   medium · avg 46%    5.4%  sharp · too hard for it
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified)</a>     31.6%  ●▂▄▂▂▄▆██▅▂▁ beats 0/145  easy · avg 76%      3.9%  at its level · small run
 </pre>
 
 </details>

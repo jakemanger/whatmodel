@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-03 · 7.24B params · apache-2.0
 
-**score 41.5** ±1.0 · #540 of 731 · from 11 benchmark results across 9 sources
+**score 41.5** ±1.0 · #540 of 732 · from 11 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #333 of 401     34%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #334 of 402     34%      3
 </pre>
 
-<details><summary>chat &amp; writing · #333 of 401 · 34% of its score</summary>
+<details><summary>chat &amp; writing · #334 of 402 · 34% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   23.0%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 18/60   medium · avg 47%     14%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1171.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 50/385  avg 1259             10%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1171.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 50/385  avg 1260             10%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1111.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 52/95   avg 1187             10%  typical
 </pre>
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           16.6%  ▁▁▁▂●▃▂█▆▃▅▃ beats 9/61     medium · avg 38%        31%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.1694 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 15/52    avg 42.989 WB-Score     11%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.1694 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 15/52    avg 43.019 WB-Score     11%  sharp
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Nexusflow/Starling-LM-7B-beta/results_2024-03-31%2023%3A41%3A55.096049.json">MedQA (USMLE, 4 options)</a>                       52.5%  ▁▁··▄▁▁··▄●█ beats 11/17    medium · avg 71%       8.7%  sharp · at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                45.1%  ▁··▁▁▂▂●▅▆█▆ beats 14/70    medium · avg 62%       6.3%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/Nexusflow/Starling-LM-7B-beta/results_2024-03-31%2023%3A41%3A55.096049.json">MedMCQA</a>                                        50.2%  ▂▂··▄▄▂▂·▄●█ beats 13/17    medium · avg 63%       4.0%  at its level

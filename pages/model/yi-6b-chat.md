@@ -6,7 +6,7 @@
 
 01.AI · released 2023-11 · 6.06B params · apache-2.0
 
-**score 32.5** ±2.2 · #864 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.4** ±2.2 · #865 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,7 +37,7 @@ source                           results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>              1   89% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    9% ▇
 prior: pull toward the middle               2% ▇
-weighted average                          = 32.5
+weighted average                          = 32.4
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

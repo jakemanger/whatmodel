@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 14.8B params · mit
 
-**score 55.6** ±1.0 · #267 of 731 · from 18 benchmark results across 8 sources
+**score 55.6** ±1.0 · #268 of 732 · from 18 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁   #245 of 468     19%      5
-math    ▁▁▃▅█▇●█▄▂▁▁   #177 of 429     38%      5
+coding  ▁▁▁▃▅▇●▇▅▄▃▁   #246 of 469     19%      5
+math    ▁▁▃▅█▆●█▄▂▁▁   #178 of 431     38%      5
 </pre>
 
-<details><summary>coding · #245 of 468 · 19% of its score</summary>
+<details><summary>coding · #246 of 469 · 19% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -35,14 +35,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #177 of 429 · 38% of its score</summary>
+<details><summary>math · #178 of 431 · 38% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         87.1%  ▂▂▅▆▄█▆▃●▂▃▄ beats 73/92   hard · avg 28%           25%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             50.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 76/197  very hard · avg 7.1%    6.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             50.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 76/197  very hard · avg 7.2%    6.3%  sharp · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      69.7%  ▃·▃·▃▃···●·▃ beats 4/7     medium · avg 50%        2.9%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       93.9%  ▄·▄▄·▄●█···▄ beats 4/7     very easy · avg 91%     2.4%  maxed out
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   70.2%  ▄●·▄····▄▄·█ beats 2/7     easy · avg 76%          1.9%  typical

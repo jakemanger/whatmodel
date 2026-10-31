@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 45.5** ±1.3 · #463 of 731 · from 14 benchmark results across 4 sources
+**score 45.5** ±1.3 · #463 of 732 · from 14 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,32 +16,32 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁    #260 of 312     19%      3
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #375 of 468     35%      5
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #230 of 401*     12%      2
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁    #261 of 313     19%      3
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #375 of 469     35%      5
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #231 of 402*     12%      2
 </pre>
 
-<details><summary>agent tasks · #260 of 312 · 19% of its score</summary>
+<details><summary>agent tasks · #261 of 313 · 19% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>           3.6%  ●···▃·▃·▃█·▃ beats 0/7     hard · avg 17%       10%  sharp
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   32.1%  ▁▁▁▂█●▅▅▆▂▂▂ beats 35/77   hard · avg 31%      5.9%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>           3.6%  ●···▃·▃·▃█·▃ beats 0/7     hard · avg 17%      9.3%  sharp
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   32.1%  ▁▁▁▂█●▅▅▆▂▂▂ beats 35/77   hard · avg 31%      6.0%  typical
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           51.7%  ▁▁▁▁▁▃●█▅▄▁▁ beats 42/114  medium · avg 51%    3.7%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #375 of 468 · 35% of its score</summary>
+<details><summary>coding · #375 of 469 · 35% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Tulu 2 13B](code-tulu-2-13b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          72.0%  ●█·██···████ beats 0/7    easy · avg 78%           10%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>              3.6%  ●···▃·▃·▃█·▃ beats 0/7    hard · avg 17%           10%  sharp
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>              3.6%  ●···▃·▃·▃█·▃ beats 0/7    hard · avg 17%          9.3%  sharp
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>    9.0%  ●▄·▄·····█▄█ beats 0/7    hard · avg 18%          6.6%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 42.2%  ●··▄·▄·█··▄█ beats 0/7    medium · avg 47%        5.6%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.7%  █●··█·█····▄ beats 2/7    very hard · avg 5.5%    3.3%  sharp · too hard for it · noisy
@@ -49,9 +49,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #230 of 401 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #231 of 402 · 12% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

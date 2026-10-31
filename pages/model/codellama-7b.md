@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 35.8** ±0.5 · #619 of 731 · from 37 benchmark results across 8 sources
+**score 35.7** ±0.5 · #620 of 732 · from 37 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #418 of 468     79%     11
-math    ▁▁▃●█▇▄█▄▂▁▁   #361 of 429    8.7%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #419 of 469     79%     11
+math    ▁▁▃●█▆▄█▄▂▁▁   #366 of 431    8.6%      2
 </pre>
 
-<details><summary>coding · #418 of 468 · 79% of its score</summary>
+<details><summary>coding · #419 of 469 · 79% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -41,9 +41,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #361 of 429 · 8.7% of its score</summary>
+<details><summary>math · #366 of 431 · 8.6% of its score</summary>
 
-Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    2% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 35.8
+weighted average                                   = 35.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

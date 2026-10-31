@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 47.5** ±0.6 · #415 of 731 · from 13 benchmark results across 7 sources
+**score 47.5** ±0.6 · #416 of 732 · from 13 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #311 of 468     77%      6
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #375 of 401*    6.3%      2
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #314 of 469     77%      6
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #377 of 402*    6.3%      2
 </pre>
 
-<details><summary>coding · #311 of 468 · 77% of its score</summary>
+<details><summary>coding · #314 of 469 · 77% of its score</summary>
 
-Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -36,13 +36,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #375 of 401 · 6.3% of its score</summary>
+<details><summary>chat &amp; writing · #377 of 402 · 6.3% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1119.2  ▁▁▁●▃▃▃▆▆▇█▃ beats 22/385  avg 1259      3.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1119.2  ▁▁▁●▃▃▃▆▆▇█▃ beats 22/385  avg 1260      3.3%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1039.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 22/95   avg 1187      3.0%  typical
 </pre>
 

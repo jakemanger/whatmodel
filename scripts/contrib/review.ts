@@ -15,7 +15,7 @@ export type Issue = { body: string; labels?: (string | { name: string })[]; numb
 export type Change = { file: 'models.json' | 'results.json' | 'benchmarks.json'; id: string; before: unknown; after: unknown; reason: string };
 export type Evidence = { source: string; fetched?: Fetched; sha256?: string; ledger?: string; problem?: string };
 export type Review = { status: 'invalid' | 'needs-review' | 'no-change'; kind?: Kind; submission?: Record<string, unknown>; problems: Problem[]; warnings: string[]; changes: Change[]; evidence: Evidence[]; sourceProposals: { url: string; claimedLicence: string; licenceUrl: string; verdict: 'unclear' }[] };
-const cats: Category[] = ['llm', 'image', 'video', 'tts', 'stt'];
+const cats: Category[] = ['llm', 'image', 'video', 'tts', 'stt', 'decision'];
 const digest = (s: string) => createHash('sha256').update(s).digest('hex');
 const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
 

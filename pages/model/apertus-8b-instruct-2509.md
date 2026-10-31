@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 40.0** ±3.4 · #569 of 731 · from 5 benchmark results across 3 sources
+**score 39.9** ±3.4 · #570 of 732 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁●▅█▇▄█▄▂▁▁   #385 of 429*     44%      2
+math  ▁▁●▅█▆▄█▄▂▁▁   #387 of 431*     43%      2
 </pre>
 
-<details><summary>math · #385 of 429 · 44% of its score</summary>
+<details><summary>math · #387 of 431 · 43% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
@@ -48,11 +48,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                 results  share of the score
-<a name="card2-allenai-olmo-3-7b-instruct"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">allenai/Olmo-3-7B-Instruct model card</a>        2   44% ▇▇▇▇▇
+<a name="card2-allenai-olmo-3-7b-instruct"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">allenai/Olmo-3-7B-Instruct model card</a>        2   43% ▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                        2   40% ▇▇▇▇▇
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>            1   12% ▇
 prior: pull toward the middle                     5% ▇
-weighted average                                = 40.0
+weighted average                                = 39.9
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

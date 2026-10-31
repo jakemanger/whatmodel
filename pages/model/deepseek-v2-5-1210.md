@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
-**score 56.4** ±1.3 · #253 of 731 · from 6 benchmark results across 5 sources
+**score 56.4** ±1.3 · #253 of 732 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇█●▅▄▃▁   #207 of 468*     66%      2
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #199 of 401*     27%      2
-math            ▁▁▃▅█●▄█▄▂▁▁   #239 of 429*    5.5%      1
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #208 of 469*     66%      2
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #199 of 402*     27%      2
+math            ▁▁▃▅█●▄█▄▂▁▁   #240 of 431*    5.5%      1
 </pre>
 
-<details><summary>coding · #207 of 468 · 66% of its score</summary>
+<details><summary>coding · #208 of 469 · 66% of its score</summary>
 
 Beats [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -33,19 +33,19 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #199 of 401 · 27% of its score</summary>
+<details><summary>chat &amp; writing · #199 of 402 · 27% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>              1323.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 159/385  avg 1259           18%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>              1323.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 159/385  avg 1260           18%  blunt
 <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>   79.3%  ▄●··▄·▄··█·▄ beats 1/6      easy · avg 73%    8.4%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #239 of 429 · 5.5% of its score</summary>
+<details><summary>math · #240 of 431 · 5.5% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

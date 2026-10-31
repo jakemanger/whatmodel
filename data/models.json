@@ -56446,19 +56446,12 @@
     "active_b": 52,
     "params_b_source": "https://docs.mistral.ai/models/mistral-large-4",
     "params_note": "Mistral's model page: '52B active parameters and 1.05T total parameters, and a 1.6B vision encoder'. Observed 2026-10-10.",
-    "api": {
-      "url": "https://docs.mistral.ai/models/mistral-large-4",
-      "provider": "Mistral AI",
-      "price_in": 1.36,
-      "price_out": 4.18,
-      "price_source": "https://docs.mistral.ai/models/mistral-large-4",
-      "price_note": "Observed 2026-10-10 on Mistral's own Mistral Large 4 model page (Price, USD): original (list) price $1.36 input / $4.18 output per million tokens; cached input $0.14. The page also shows a sale price of $0.68 input / $0.07 cached / $2.09 output, which is not used here. API names mistral-large-4 and mistral-large-4-0, version 26.10, status 'Public Preview'."
-    },
+    "api": null,
     "local": null,
     "context_k": 1000,
     "context_source": "https://docs.mistral.ai/models/mistral-large-4",
     "context_note": "Mistral's model page: Context '1M'. Observed 2026-10-10.",
-    "identity_note": "Mistral AI's Mistral Large 4, API model 'mistral-large-4' (alias 'mistral-large-4-0'), version 26.10, launched 6 October 2026 as a 'Public Preview' that anyone can call on Mistral's API ('You can try the preview API today on Mistral Studio'). Mistral describes it as open-weight, but the weights are not out yet: the model page's Weights link (huggingface.co/mistralai/Mistral-Large-4-1T-A52B) says 'Coming soon', the repository returns HTTP 401, and the announcement says 'Weights drop end of this month'. It is therefore recorded as open_weights false with no local variant and licence 'proprietary' for now; switch both when the weights and their licence are published. Arena entry 'mistral-large-4' (organization mistral, licence 'Proprietary') first appears in the 2026-10-08 text, webdev and agent snapshots, after the public API launch. A new model, not Mistral Large 3 (mistral-large-2512).",
+    "identity_note": "Mistral AI's Mistral Large 4, API model 'mistral-large-4' (alias 'mistral-large-4-0'), version 26.10, launched 6 October 2026 as a 'Public Preview' that anyone can call on Mistral's API ('You can try the preview API today on Mistral Studio'). Mistral describes it as open-weight, but the weights are not out yet: the model page's Weights link (huggingface.co/mistralai/Mistral-Large-4-1T-A52B) says 'Coming soon', the repository returns HTTP 401, and the announcement says 'Weights drop end of this month'. It is therefore recorded as open_weights false with no local variant and licence 'proprietary' for now; switch both when the weights and their licence are published. Arena entry 'mistral-large-4' (organization mistral, licence 'Proprietary') first appears in the 2026-10-08 text, webdev and agent snapshots, after the public API launch. A new model, not Mistral Large 3 (mistral-large-2512). Update reviewed 2026-10-31: the October 29 open-weight release explicitly includes additional reinforcement learning and improved performance. It is tracked separately as mistral-large-4-2610; the rolling API no longer establishes a route to these original preview weights. Historical preview results are preserved, not transferred to the improved release.",
     "identity_sources": [
       "https://docs.mistral.ai/models/mistral-large-4",
       "https://mistral.ai/news/mistral-large-4"
@@ -78779,5 +78772,341 @@
     "params_b": 560,
     "active_b": 25,
     "identity_note": "Exact 1019 post-trained checkpoint, distinct from Ling 3.1 Flash and base. All AA-linked numerical evaluation claims withheld. No guessed API price or serving command."
+  },
+  {
+    "id": "spark-x2-6-4b",
+    "name": "Spark-X2.6 4B",
+    "provider": "iFLYTEK (SparkLLM)",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/XHToken/Spark-X2.6-4B/tree/d1b5f26071101c27fcd07728e7a7770e428281f4",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/LICENSE",
+    "params_b": 4.112,
+    "active_b": 4.112,
+    "params_b_source": "https://huggingface.co/XHToken/Spark-X2.6-4B/tree/d1b5f26071101c27fcd07728e7a7770e428281f4",
+    "params_note": "Hugging Face safetensors metadata: 4,112,079,360 parameters.",
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/XHToken/Spark-X2.6-4B/blob/d1b5f26071101c27fcd07728e7a7770e428281f4/README.md",
+    "context_note": "Maker serving example configures 1,048,576 tokens; this requires sufficient device memory, not a guarantee at the listed weight size.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 3.5434,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.6-4B-GGUF -hff Spark-X2.6-4B-Q4_K_M.gguf",
+          "source": "https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF/tree/0e8aa39a34063946ce07bbaaff392093b11b6829",
+          "note": "Official GGUF, 3543441312 bytes. Download size; runtime memory is estimated separately. Requires llama.cpp b10828+ with native spark2_5 support, per pinned maker card. Command documentation-reviewed, not executed."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 4.375,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.6-4B-GGUF -hff Spark-X2.6-4B-Q8_0.gguf",
+          "source": "https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF/tree/0e8aa39a34063946ce07bbaaff392093b11b6829",
+          "note": "Official GGUF, 4375021824 bytes. Download size; runtime memory is estimated separately. Requires llama.cpp b10828+ with native spark2_5 support, per pinned maker card. Command documentation-reviewed, not executed."
+        },
+        {
+          "quant": "bf16",
+          "gb": 8.2299,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.6-4B-GGUF -hff Spark-X2.6-4B.gguf",
+          "source": "https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF/tree/0e8aa39a34063946ce07bbaaff392093b11b6829",
+          "note": "Official GGUF, 8229921024 bytes. Download size; runtime memory is estimated separately. Requires llama.cpp b10828+ with native spark2_5 support, per pinned maker card. Command documentation-reviewed, not executed."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+    "identity_note": "Post-trained Spark-X2.6 checkpoint, distinct from X2.5 and Base. Published evaluations use thinking high, temperature 1.0, top_p 0.95, top_k -1. Quantized download quality and speed were not measured in this update."
+  },
+  {
+    "id": "spark-x2-6-1-7b",
+    "name": "Spark-X2.6 1.7B",
+    "provider": "iFLYTEK (SparkLLM)",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B/tree/f18c032c7675f807c0fdffe281dbe124edba2605",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/LICENSE",
+    "params_b": 1.708,
+    "active_b": 1.708,
+    "params_b_source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B/tree/f18c032c7675f807c0fdffe281dbe124edba2605",
+    "params_note": "Hugging Face safetensors metadata: 1,707,657,216 parameters.",
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/README.md",
+    "context_note": "Maker serving example configures 1,048,576 tokens; this requires sufficient device memory, not a guarantee at the listed weight size.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.7687,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.6-1.7B-GGUF -hff Spark-X2.6-1.7B-Q4_K_M.gguf",
+          "source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0",
+          "note": "Official GGUF, 1768720512 bytes. Download size; runtime memory is estimated separately. Requires llama.cpp b10828+ with native spark2_5 support, per pinned maker card. Command documentation-reviewed, not executed."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.8201,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.6-1.7B-GGUF -hff Spark-X2.6-1.7B-Q8_0.gguf",
+          "source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0",
+          "note": "Official GGUF, 1820113440 bytes. Download size; runtime memory is estimated separately. Requires llama.cpp b10828+ with native spark2_5 support, per pinned maker card. Command documentation-reviewed, not executed."
+        },
+        {
+          "quant": "bf16",
+          "gb": 3.4209,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.6-1.7B-GGUF -hff Spark-X2.6-1.7B.gguf",
+          "source": "https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF/tree/cdc3d8893fba4ce0687f1b49ce1e18b29cae96d0",
+          "note": "Official GGUF, 3420932640 bytes. Download size; runtime memory is estimated separately. Requires llama.cpp b10828+ with native spark2_5 support, per pinned maker card. Command documentation-reviewed, not executed."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/XHToken/Spark-X2.6-1.7B",
+    "identity_note": "Post-trained Spark-X2.6 checkpoint, distinct from X2.5 and Base. Published evaluations use thinking high, temperature 1.0, top_p 0.95, top_k -1. Quantized download quality and speed were not measured in this update."
+  },
+  {
+    "id": "jebadiah-9b-v2-1-t1e",
+    "name": "Jebadiah 9B v2.1 (T1e)",
+    "provider": "frontier-infra",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1/blob/a05f6e1f6d1018db249d4df5e12b51f33cfa8b0d/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1/blob/a05f6e1f6d1018db249d4df5e12b51f33cfa8b0d/README.md",
+    "params_b": 9.653,
+    "params_b_source": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1/tree/a05f6e1f6d1018db249d4df5e12b51f33cfa8b0d",
+    "params_note": "HF safetensors metadata for full weights; Strands uses its documented approximate served backbone size. Memory estimate: BF16 weights plus 20% runtime allowance and 2 GB; not a measured requirement.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16-t1e",
+          "gb": 25.2,
+          "gb_estimated": true,
+          "cmd": "pip install torch==2.8.0 transformers==5.17.0 accelerate safetensors git+https://github.com/apolinario/decision-index.git@25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d && git clone https://github.com/getainode/jebadiah.git jebadiah-t1e && git -C jebadiah-t1e checkout 678f6e2cc2bb1b51f34407d00255b5e13109ce3f && PYTHONPATH=jebadiah-t1e/eval/decision-index python -c 'from jebadiah_engine import JebadiahEngine; e=JebadiahEngine(model=\"frontier-infra/jebadiah-9b-v2-1\", revision=\"de19e80e18aa23420be410d54fdee435587eaad3\", device=\"cuda\", dtype=\"bfloat16\", repeat_payload=True, reverse_avg_below=0.7, prefix_cache=True, max_batch=64, batch_tokens=32768); print(e(\"The invoice is overdue.\", {\"overdue\":{\"type\":\"noul\",\"instructions\":\"Is the invoice overdue?\"}}))'",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1/blob/a05f6e1f6d1018db249d4df5e12b51f33cfa8b0d/README.md"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/frontier-infra/jebadiah-9b-v2-1",
+    "identity_note": "Exact Decision Index 0.4.1 text-board engine jebadiah-9b-v2.1-t1e. Produces probabilities over supplied choices, not conversational text. Only public per-benchmark results are used; no Full index, private scores or latency is treated as an ability measurement. Model and runtime documentation reviewed 2026-10-31; no fresh hardware execution. T1e uses repeated payloads, forward/reverse choice scoring with threshold 0.7, and the shipped calibration. Standard-read Ollama/GGUF/MLX does not reproduce these scores; no such variant is attached."
+  },
+  {
+    "id": "jebadiah-27b-v2-1-t1e",
+    "name": "Jebadiah 27B v2.1 (T1e)",
+    "provider": "frontier-infra",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1/blob/b1df30c3cd9ad97c31ddb0b7c6884b580876bcdd/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1/blob/b1df30c3cd9ad97c31ddb0b7c6884b580876bcdd/README.md",
+    "params_b": 27.781,
+    "params_b_source": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1/tree/b1df30c3cd9ad97c31ddb0b7c6884b580876bcdd",
+    "params_note": "HF safetensors metadata for full weights; Strands uses its documented approximate served backbone size. Memory estimate: BF16 weights plus 20% runtime allowance and 2 GB; not a measured requirement.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16-t1e",
+          "gb": 68.7,
+          "gb_estimated": true,
+          "cmd": "pip install torch==2.8.0 transformers==5.17.0 accelerate safetensors git+https://github.com/apolinario/decision-index.git@25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d && git clone https://github.com/getainode/jebadiah.git jebadiah-t1e && git -C jebadiah-t1e checkout 678f6e2cc2bb1b51f34407d00255b5e13109ce3f && PYTHONPATH=jebadiah-t1e/eval/decision-index python -c 'from jebadiah_engine import JebadiahEngine; e=JebadiahEngine(model=\"frontier-infra/jebadiah-27b-v2-1\", revision=\"e38b48b82bcda8943d0958072c042c5867284838\", device=\"cuda\", dtype=\"bfloat16\", repeat_payload=True, reverse_avg_below=0.7, prefix_cache=True, max_batch=64, batch_tokens=32768); print(e(\"The invoice is overdue.\", {\"overdue\":{\"type\":\"noul\",\"instructions\":\"Is the invoice overdue?\"}}))'",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1/blob/b1df30c3cd9ad97c31ddb0b7c6884b580876bcdd/README.md"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1",
+    "identity_note": "Exact Decision Index 0.4.1 text-board engine jebadiah-27b-v2.1-t1e. Produces probabilities over supplied choices, not conversational text. Only public per-benchmark results are used; no Full index, private scores or latency is treated as an ability measurement. Model and runtime documentation reviewed 2026-10-31; no fresh hardware execution. T1e uses repeated payloads, forward/reverse choice scoring with threshold 0.7, and the shipped calibration. Standard-read Ollama/GGUF/MLX does not reproduce these scores; no such variant is attached."
+  },
+  {
+    "id": "clef",
+    "name": "Clef",
+    "provider": "Cloudflare",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://blog.cloudflare.com/clef-decision-models/",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Cloudflare/clef/blob/cfddda043dd190ef3b01cff449d5ee8cff1e8ec6/README.md",
+    "params_b": 27.357,
+    "params_b_source": "https://huggingface.co/Cloudflare/clef/tree/cfddda043dd190ef3b01cff449d5ee8cff1e8ec6",
+    "params_note": "HF safetensors metadata for full weights. Memory estimate: BF16 weights plus 20% runtime allowance and 2 GB; not a measured requirement.",
+    "api": {
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef/",
+      "provider": "Cloudflare",
+      "price": 0.24,
+      "unit": "1M-input-tokens",
+      "price_source": "https://developers.cloudflare.com/workers-ai/models/clef",
+      "price_note": "Cloudflare Workers AI list price, observed 2026-10-31. USD per million input tokens, including tokenized media; no output-token charge. Not a fixed price per decision."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 67.7,
+          "gb_estimated": true,
+          "cmd": "docker run --gpus all --shm-size 32g -p 30000:30000 -v ~/.cache/huggingface:/root/.cache/huggingface --ipc=host lmsysorg/sglang:dev-clef sglang serve --model-path Cloudflare/clef --host 0.0.0.0 --port 30000",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Cloudflare/clef/blob/cfddda043dd190ef3b01cff449d5ee8cff1e8ec6/README.md"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Cloudflare/clef",
+    "identity_note": "Exact Decision Index 0.4.1 text-board engine clef. Produces probabilities over supplied choices, not conversational text. Only public per-benchmark results are used; no Full index, private scores or latency is treated as an ability measurement. Model and runtime documentation reviewed 2026-10-31; no fresh hardware execution.",
+    "context_k": 65.536,
+    "context_source": "https://developers.cloudflare.com/workers-ai/models/clef",
+    "context_note": "Cloudflare hosted endpoint limit, observed 2026-10-31. State, questions and tokenized media share the context window; this is not a local-memory guarantee."
+  },
+  {
+    "id": "clef-flash",
+    "name": "Clef-flash",
+    "provider": "Cloudflare",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://blog.cloudflare.com/clef-decision-models/",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Cloudflare/clef-flash/blob/fb4417d31c1d0f9e7e77f1141b40aaede7491e00/README.md",
+    "params_b": 9.41,
+    "params_b_source": "https://huggingface.co/Cloudflare/clef-flash/tree/fb4417d31c1d0f9e7e77f1141b40aaede7491e00",
+    "params_note": "HF safetensors metadata for full weights. Memory estimate: BF16 weights plus 20% runtime allowance and 2 GB; not a measured requirement.",
+    "api": {
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef-flash/",
+      "provider": "Cloudflare",
+      "price": 0.038,
+      "unit": "1M-input-tokens",
+      "price_source": "https://developers.cloudflare.com/workers-ai/models/clef-flash",
+      "price_note": "Cloudflare Workers AI list price, observed 2026-10-31. USD per million input tokens, including tokenized media; no output-token charge. Not a fixed price per decision."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 24.6,
+          "gb_estimated": true,
+          "cmd": "docker run --gpus all --shm-size 32g -p 30000:30000 -v ~/.cache/huggingface:/root/.cache/huggingface --ipc=host lmsysorg/sglang:dev-clef sglang serve --model-path Cloudflare/clef-flash --host 0.0.0.0 --port 30000",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Cloudflare/clef-flash/blob/fb4417d31c1d0f9e7e77f1141b40aaede7491e00/README.md"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Cloudflare/clef-flash",
+    "identity_note": "Exact Decision Index 0.4.1 text-board engine clef-flash. Produces probabilities over supplied choices, not conversational text. Only public per-benchmark results are used; no Full index, private scores or latency is treated as an ability measurement. Model and runtime documentation reviewed 2026-10-31; no fresh hardware execution.",
+    "context_k": 24.576,
+    "context_source": "https://developers.cloudflare.com/workers-ai/models/clef-flash",
+    "context_note": "Cloudflare hosted endpoint limit, observed 2026-10-31. State, questions and tokenized media share the context window; this is not a local-memory guarantee."
+  },
+  {
+    "id": "clef-omni",
+    "name": "Clef-omni",
+    "provider": "Cloudflare",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Cloudflare/clef-omni/blob/f32dfc060386af3eadec676c64b34f24ece2bcde/README.md",
+    "params_b": 35.26,
+    "params_b_source": "https://huggingface.co/Cloudflare/clef-omni/tree/f32dfc060386af3eadec676c64b34f24ece2bcde",
+    "params_note": "HF safetensors metadata for full weights. Memory estimate: BF16 weights plus 20% runtime allowance and 2 GB; not a measured requirement.",
+    "api": {
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef-omni/",
+      "provider": "Cloudflare",
+      "price": 0.15,
+      "unit": "1M-input-tokens",
+      "price_source": "https://developers.cloudflare.com/workers-ai/models/clef-omni",
+      "price_note": "Cloudflare Workers AI list price, observed 2026-10-31. USD per million input tokens, including tokenized media; no output-token charge. Not a fixed price per decision."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 86.6,
+          "gb_estimated": true,
+          "cmd": "pip install torch==2.11 transformers==5.10.2 huggingface-hub pillow av && python -c 'import sys; from huggingface_hub import snapshot_download; p=snapshot_download(\"Cloudflare/clef-omni\",revision=\"f32dfc060386af3eadec676c64b34f24ece2bcde\"); sys.path.insert(0,p); from joint_schema_model import load_release_model,systemone; m,t=load_release_model(p,device=\"cuda\"); print(systemone(m,t,{\"model\":\"clef-omni\",\"state\":\"The invoice is overdue.\",\"questions\":{\"overdue\":{\"type\":\"noul\",\"instructions\":\"Is the invoice overdue?\"}}}))'",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Cloudflare/clef-omni/blob/f32dfc060386af3eadec676c64b34f24ece2bcde/README.md"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Cloudflare/clef-omni",
+    "identity_note": "Exact Decision Index 0.4.1 text-board engine clef-omni. Produces probabilities over supplied choices, not conversational text. Only public per-benchmark results are used; no Full index, private scores or latency is treated as an ability measurement. Model and runtime documentation reviewed 2026-10-31; no fresh hardware execution.",
+    "context_k": 64.0,
+    "context_source": "https://developers.cloudflare.com/workers-ai/models/clef-omni",
+    "context_note": "Cloudflare hosted endpoint limit, observed 2026-10-31. State, questions and tokenized media share the context window; this is not a local-memory guarantee."
+  },
+  {
+    "id": "strands-decider-2b-hobson-v21",
+    "name": "Strands Decider 2B (Hobson v21)",
+    "provider": "Amazon Web Services",
+    "category": "decision",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21/blob/2b52a6235c1b8306bbfa30b00b9d4b74b63a39f5/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21/blob/2b52a6235c1b8306bbfa30b00b9d4b74b63a39f5/README.md",
+    "params_b": 1.9,
+    "params_b_source": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21/tree/2b52a6235c1b8306bbfa30b00b9d4b74b63a39f5",
+    "params_note": "HF safetensors metadata for full weights; Strands uses its documented approximate served backbone size. Memory estimate: BF16 weights plus 20% runtime allowance and 2 GB; not a measured requirement.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 6.6,
+          "gb_estimated": true,
+          "cmd": "pip install strands-decider && strands-decider serve StrandsAgents/strands-decider-2B-hobson-v21 --port 8000",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21/blob/2b52a6235c1b8306bbfa30b00b9d4b74b63a39f5/README.md"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21",
+    "identity_note": "Exact Decision Index 0.4.1 text-board engine strands-decider-2b. Produces probabilities over supplied choices, not conversational text. Only public per-benchmark results are used; no Full index, private scores or latency is treated as an ability measurement. Model and runtime documentation reviewed 2026-10-31; no fresh hardware execution. LoRA adapter plus decision head on Qwen3.5-2B-Base; size is the approximately 1.9B served model, not the adapter download alone."
+  },
+  {
+    "id": "mistral-large-4-2610",
+    "name": "Mistral Large 4 (October 29 weights)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://mistral.ai/news/mistral-large-4-oss/",
+    "open_weights": true,
+    "license": "Mistral Ecosystem Open-Weight License",
+    "license_source": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/f12dabdc0c1e99e7f7924461a6f308859b05af4d/LICENSE",
+    "params_b": 1000,
+    "active_b": 52,
+    "params_b_source": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/f12dabdc0c1e99e7f7924461a6f308859b05af4d/README.md",
+    "params_note": "Maker describes approximately 1 trillion total and 52B active parameters including embeddings/output layers (49B without them); nominal size, not a summed weight inventory.",
+    "api": {
+      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "provider": "Mistral AI"
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 2000,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "cmd": "docker run --runtime nvidia --gpus all -v ~/.cache/huggingface:/root/.cache/huggingface -p 8000:8000 --ipc=host vllm/vllm-openai:mistral-large-4 --model mistralai/Mistral-Large-4-1T-A52B --tensor-parallel-size 8 --tool-call-parser mistral --reasoning-parser mistral --enable-auto-tool-choice --gpu-memory-utilization 0.85",
+          "source": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/f12dabdc0c1e99e7f7924461a6f308859b05af4d/README.md",
+          "note": "Official 8-GPU deployment example. BF16 weight estimate from nominal 1T parameters; runtime adds headroom. Not a single consumer GPU run, and not freshly executed."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+    "identity_note": "Improved October 29 open-weight release following three weeks of additional reinforcement learning, distinct from the October 6 public preview. Preview benchmark results are not assigned to this checkpoint. No verified eligible exact-release benchmark imported yet; unknown API price omitted. Custom ecosystem licence allows commercial/noncommercial use subject to conditions; Model-as-a-Service businesses require a separate commercial licence. Native text/image inputs, reasoning high by default; NVFP4 is a separate artifact and its quality is not assumed identical."
   }
 ]

@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 49.1** ±1.3 · #388 of 731 · from 12 benchmark results across 4 sources
+**score 49.1** ±1.3 · #389 of 732 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others          rank  counts  tests
 coding          █··········●        #1 of 2     21%      3
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #207 of 401*     19%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #207 of 402*     19%      1
 math            █··········●       #1 of 2*     25%      2
 </pre>
 
@@ -25,20 +25,20 @@ math            █··········●       #1 of 2*     25%      2
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      75.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 158/205  easy · avg 77%     11%  sharp · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      75.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 158/205  easy · avg 78%     11%  sharp · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 68%    5.7%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   25.7%  ▃●·····▃█··▅ beats 1/7      hard · avg 32%    4.2%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #207 of 401 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #207 of 402 · 19% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1317.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 148/385  avg 1259       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1317.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 148/385  avg 1260       19%  blunt
 </pre>
 
 </details>

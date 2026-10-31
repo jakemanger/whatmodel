@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▂▄▆●▇▅▄▃▁   #291 of 537*     16%      2
-chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #285 of 472*    5.1%      1
-math                ▁▁▃▆●█▅█▄▁▁▁    #392 of 528     23%      4
+coding              ▁▁▁▃▄▆●▇▅▄▃▁   #295 of 539*     16%      2
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #287 of 474*    5.1%      1
+math                ▁▁▃▆●█▅█▃▁▁▁    #395 of 530     23%      4
 vision &amp; documents  ▁▁▂▃●▃▅▄▆██▄    #156 of 189     12%      4
 </pre>
 
-<details><summary>coding · #291 of 537 · 16% of its score</summary>
+<details><summary>coding · #295 of 539 · 16% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -34,18 +34,18 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #285 of 472 · 5.1% of its score</summary>
+<details><summary>chat &amp; writing · #287 of 474 · 5.1% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.5  ▁▁▁▂▃▃●▆▆▇█▃ beats 115/385  avg 1259      5.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.5  ▁▁▁▂▃▃●▆▆▇█▃ beats 115/385  avg 1260      5.1%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #392 of 528 · 23% of its score</summary>
+<details><summary>math · #395 of 530 · 23% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Falcon 40B (base)](falcon-40b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.1%  ▂▂▅●▄█▆▃▅▂▃▄ beats 23/92   hard · avg 28%           10%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   34.8%  ▁▁▁▆█●▇▇▄··▂ beats 17/38   hard · avg 30%          6.2%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          91.4%  ▁▄·▁▄█▅▅●███ beats 23/43   very easy · avg 87%     5.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 26/197  very hard · avg 7.1%    1.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              3.9%  ▃▃●▃▃▃▇▇█▃▂▅ beats 26/197  very hard · avg 7.2%    1.4%  sharp · noisy
 </pre>
 
 </details>

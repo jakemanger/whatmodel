@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 124B params · mistral-research
 
-**score 54.8** ±2.6 · #288 of 731 · from 4 benchmark results across 2 sources
+**score 54.7** ±2.6 · #289 of 732 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅█●▄█▄▂▁▁   #237 of 429*     21%      1
-vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄    #119 of 154     97%      4
+math                ▁▁▃▅█●▄█▄▂▁▁   #239 of 431*     21%      1
+vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄    #118 of 153     97%      4
 </pre>
 
-<details><summary>math · #237 of 429 · 21% of its score</summary>
+<details><summary>math · #239 of 431 · 21% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #119 of 154 · 97% of its score</summary>
+<details><summary>vision &amp; documents · #118 of 153 · 97% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Gemma 4 E4B](gemma-4-e4b.md), [Qwen2.5-VL 32B Instruct](qwen2-5-vl-32b.md), [Gemma 3 27B](gemma-3-27b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   49% ▇▇▇▇▇▇
 <a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">Mistral AI vendor-reported benchmark sc…</a>        3   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 54.8
+weighted average                                   = 54.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

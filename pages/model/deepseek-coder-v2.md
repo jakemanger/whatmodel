@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 236B params (21B active) · deepseek
 
-**score 54.1** ±0.6 · #302 of 731 · from 12 benchmark results across 8 sources
+**score 54.0** ±0.6 · #303 of 732 · from 12 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #218 of 468     54%      6
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃    #266 of 401     19%      3
-math            ▁▁▃▅●▇▄█▄▂▁▁   #284 of 429*    3.5%      1
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #218 of 469     54%      6
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃    #267 of 402     19%      3
+math            ▁▁▃▅●▆▄█▄▂▁▁   #285 of 431*    3.5%      1
 </pre>
 
-<details><summary>coding · #218 of 468 · 54% of its score</summary>
+<details><summary>coding · #218 of 469 · 54% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -37,20 +37,20 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #266 of 401 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #267 of 402 · 19% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   62.3%  ▂▁▁▅█▅▄▃●▅▃▁ beats 42/60   medium · avg 47%     10%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1265.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 99/385  avg 1259            4.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1265.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 99/385  avg 1260            4.4%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1181.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 76/95   avg 1187            4.1%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #284 of 429 · 3.5% of its score</summary>
+<details><summary>math · #285 of 431 · 3.5% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -86,7 +86,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K models leaderboard</a>                     1    2% ▇
 <a name="scicode-readme-leaderboard"></a><a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode leaderboard</a>                             1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 54.1
+weighted average                                   = 54.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt))</sub>

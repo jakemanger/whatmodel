@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 54.9** ±0.6 · comparison only: no current run option verified · from 21 benchmark results across 11 sources
+**score 54.8** ±0.6 · comparison only: no current run option verified · from 21 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▂▄▆●▇▅▄▃▁   #260 of 537     41%      6
-chat &amp; writing  ▁▁▁▃▅▄▇●▇▇▇▃   #253 of 472     22%      5
-math            ▁▁▃▆●█▅█▄▁▁▁   #348 of 528     10%      3
+coding          ▁▁▁▃▄▆●▇▅▄▃▁   #264 of 539     41%      6
+chat &amp; writing  ▁▁▁▃▅▄▇●▇▇▇▃   #255 of 474     22%      5
+math            ▁▁▃▆●█▅█▃▁▁▁   #350 of 530     10%      3
 </pre>
 
-<details><summary>coding · #260 of 537 · 41% of its score</summary>
+<details><summary>coding · #264 of 539 · 41% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -37,22 +37,22 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #253 of 472 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #255 of 474 · 22% of its score</summary>
 
-Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run    difficulty                counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             50.0%  ▁▂▂▃▆▆█▆▄●▁▁ beats 105/122  medium · avg 35%             14%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1312.9  ▁▁▁▂▃▃▃●▆▇█▃ beats 141/385  avg 1259                    3.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1312.9  ▁▁▁▂▃▃▃●▆▇█▃ beats 141/385  avg 1260                    3.2%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1265.0  ▂▁▂▁▃▇█▆▇▄▂● beats 92/95    avg 1187                    2.9%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  9.3200 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄▄● beats 28/28    avg 8.536 MT-Bench scor…    2.3%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  9.3200 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄▄● beats 28/28    avg 8.539 MT-Bench scor…    2.2%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         97.7%  ▂▂·▆·▇▃▆█▆▄● beats 45/45    very easy · avg 94%         0.1%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #348 of 528 · 10% of its score</summary>
+<details><summary>math · #350 of 530 · 10% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -98,7 +98,7 @@ source                                    results  share of the score
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    2% ▇
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 54.9
+weighted average                                   = 54.8
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · OpenAI simple-evals README benchmark results ([MIT](../../licenses/openai-simple-evals-MIT.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>

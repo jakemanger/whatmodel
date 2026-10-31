@@ -17,21 +17,21 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
-coding          ▁▁▁▂▄▆█▇●▄▃▁      #151 of 537     42%     11
-chat &amp; writing  ▁▁▁▃▅▄▇█▇●▇▃     #145 of 472*    7.2%      2
-math            ▁▁▃▆██●█▄▁▁▁      #207 of 528     14%      5
+coding          ▁▁▁▃▄▆█▇●▄▃▁      #152 of 539     42%     11
+chat &amp; writing  ▁▁▁▃▅▄▇█▇●▇▃     #146 of 474*    7.2%      2
+math            ▁▁▃▆██●█▃▁▁▁      #208 of 530     14%      5
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
 
 <pre>
 test                      result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2412.16720v2#S5.SS8.SSS2">SWE-bench Verified (lab)</a>   41.3%  ▁▁▁▁▁▁▂●█▆▁▁ beats 28/136  hard · avg 18%       —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2412.16720v2#S5.SS8.SSS2">SWE-bench Verified (lab)</a>   41.3%  ▁▁▁▁▁▁▂●█▆▁▁ beats 28/138  hard · avg 19%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #151 of 537 · 42% of its score</summary>
+<details><summary>coding · #152 of 539 · 42% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 12B](gemma-4-12b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank lower overall.
 
@@ -47,24 +47,24 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   65.2%  ▁··▁·▁▁▁▆●▇█ beats 21/45   hard · avg 29%          2.2%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     95.2%  ▃▁▁█▁▄▅▃▄▇▁● beats 30/31   medium · avg 40%        0.9%  sharp · noisy
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>       92.4%  ▆█▆●▂··▂···▂ beats 11/15   easy · avg 83%          0.8%  maxed out
-<a href="https://arxiv.org/html/2412.16720v2#S5.SS8.SSS2">SWE-bench Verified (lab)</a>             41.3%  ▁▁▁▁▁▁▂●█▆▁▁ beats 28/136  hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2412.16720v2#S5.SS8.SSS2">SWE-bench Verified (lab)</a>             41.3%  ▁▁▁▁▁▁▂●█▆▁▁ beats 28/138  hard · avg 19%             —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #145 of 472 · 7.2% of its score</summary>
+<details><summary>chat &amp; writing · #146 of 474 · 7.2% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1388.6  ▁▁▁▂▃▃▃▆▆●█▃ beats 231/385  avg 1259            3.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1388.6  ▁▁▁▂▃▃▃▆▆●█▃ beats 231/385  avg 1260            3.9%  blunt
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   90.4%  ▂▁▁▅█▅▄▃▃▅▃● beats 59/60    medium · avg 47%    3.3%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #207 of 528 · 14% of its score</summary>
+<details><summary>math · #208 of 530 · 14% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -72,8 +72,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Tra
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 67/92   hard · avg 28%          4.1%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   84.5%  ▁▁▁▆█▂▇▇▄··● beats 37/38   hard · avg 30%          4.0%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 66/197  very hard · avg 7.1%    3.0%  sharp · at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        85.5%  ▃··▅●▃···▃·█ beats 3/9     medium · avg 60%        2.1%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 66/197  very hard · avg 7.2%    3.0%  sharp · at its level · noisy
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        85.5%  ▃··▅●▃···▃·█ beats 3/9     medium · avg 61%        2.1%  sharp
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            90.8%  ▁····▁▅▁█●▃▁ beats 13/16   easy · avg 80%          1.0%  typical
 </pre>
 

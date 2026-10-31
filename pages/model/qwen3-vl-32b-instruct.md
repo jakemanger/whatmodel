@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 59.8** ±0.7 · #207 of 731 · from 26 benchmark results across 2 sources
+**score 59.8** ±0.7 · #207 of 732 · from 26 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▄▄▂▁   #171 of 312*    2.1%      1
-coding              ▁▁▁▃▅●█▇▅▄▃▁   #312 of 468*    4.3%      1
-chat &amp; writing      ▁▁▁▃▆▄▆●▆▇▇▃   #185 of 401*    2.7%      1
-math                ▁▁▃▅█▇●█▄▂▁▁   #161 of 429*    9.0%      2
-vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄     #93 of 154     46%     13
+agent tasks         ▁▁▃▆█●▅▅▄▄▂▁   #172 of 313*    2.1%      1
+coding              ▁▁▁▃▅●█▇▅▄▃▁   #311 of 469*    4.3%      1
+chat &amp; writing      ▁▁▁▃▆▄▆●▆▇▇▃   #185 of 402*    2.6%      1
+math                ▁▁▃▅█▆●█▄▂▁▁   #162 of 431*    9.0%      2
+vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄     #92 of 153     46%     13
 </pre>
 
-<details><summary>agent tasks · #171 of 312 · 2.1% of its score</summary>
+<details><summary>agent tasks · #172 of 313 · 2.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test           result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #312 of 468 · 4.3% of its score</summary>
+<details><summary>coding · #311 of 469 · 4.3% of its score</summary>
 
 Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -45,18 +45,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #185 of 401 · 2.7% of its score</summary>
+<details><summary>chat &amp; writing · #185 of 402 · 2.6% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=22">IFEval (aggregation unspecified) …</a>   84.7%  ▃··▃···██●▃▃ beats 8/11   easy · avg 77%    2.7%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=22">IFEval (aggregation unspecified) …</a>   84.7%  ▃··▃···██●▃▃ beats 8/11   easy · avg 77%    2.6%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #161 of 429 · 9.0% of its score</summary>
+<details><summary>math · #162 of 431 · 9.0% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #93 of 154 · 46% of its score</summary>
+<details><summary>vision &amp; documents · #92 of 153 · 46% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall.
 

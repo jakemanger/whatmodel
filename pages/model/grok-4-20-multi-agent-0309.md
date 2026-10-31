@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 72.2** ±2.1 · #60 of 731 · from 3 benchmark results across 1 source
+**score 72.2** ±2.1 · #60 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #35 of 401*     48%      1
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #50 of 154*     32%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #35 of 402*     48%      1
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆●█▄   #49 of 153*     32%      1
 web search          ▁▁▁▅▄●▃▄·▁·▁    #31 of 84*     17%      1
 </pre>
 
-<details><summary>chat &amp; writing · #35 of 401 · 48% of its score</summary>
+<details><summary>chat &amp; writing · #35 of 402 · 48% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1470.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 346/385  avg 1259       48%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1470.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 346/385  avg 1260       48%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #50 of 154 · 32% of its score</summary>
+<details><summary>vision &amp; documents · #49 of 153 · 32% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
 

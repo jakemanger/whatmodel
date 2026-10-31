@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 46.9** ±9.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.9** ±9.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

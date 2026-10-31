@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 54.2** ±1.1 · #299 of 731 · from 12 benchmark results across 2 sources
+**score 54.2** ±1.1 · #299 of 732 · from 12 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #236 of 401*    8.8%      2
-math            ▁▁▃▅●▇▄█▄▂▁▁    #286 of 429     50%      4
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #237 of 402*    8.8%      2
+math            ▁▁▃▅●▆▄█▄▂▁▁    #287 of 431     50%      4
 </pre>
 
-<details><summary>chat &amp; writing · #236 of 401 · 8.8% of its score</summary>
+<details><summary>chat &amp; writing · #237 of 402 · 8.8% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #286 of 429 · 50% of its score</summary>
+<details><summary>math · #287 of 431 · 50% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -40,8 +40,8 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [
 test                             result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 28%           29%  sharp · at its level
 <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 190/206  easy · avg 84%          8.4%  sharp · small run
-<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 54%        7.3%  at its level · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/197   very hard · avg 7.1%    5.9%  sharp · noisy
+<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 54%        7.2%  at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/197   very hard · avg 7.2%    5.9%  sharp · noisy
 </pre>
 
 </details>

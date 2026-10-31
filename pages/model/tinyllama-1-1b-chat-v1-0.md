@@ -6,7 +6,7 @@
 
 TinyLlama · released 2023-12 · 1.1B params · apache-2.0
 
-**score 21.5** ±8.4 · #924 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.4** ±8.4 · #925 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   69% ▇▇▇▇▇▇▇▇
 prior: pull toward the middle              31% ▇▇▇▇
-weighted average                          = 21.5
+weighted average                          = 21.4
 </pre>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▄▅▄▄▄▁▁   #250 of 352*    2.2%      1
-coding              ▁▁▁▂▄▆█▇●▄▃▁    #110 of 537     41%      3
-math                ▁▁▃▆██▅●▄▁▁▁   #110 of 528*    7.4%      1
+agent tasks         ▁▁▂▆●▄▅▄▄▃▁▁   #252 of 354*    2.2%      1
+coding              ▁▁▁▃▄▆█▇●▄▃▁    #111 of 539     41%      3
+math                ▁▁▃▆██▅●▃▁▁▁   #111 of 530*    7.4%      1
 vision &amp; documents  ▁▁▂▃▂▃▅▄●██▄    #89 of 189*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #250 of 352 · 2.2% of its score</summary>
+<details><summary>agent tasks · #252 of 354 · 2.2% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #110 of 537 · 41% of its score</summary>
+<details><summary>coding · #111 of 539 · 41% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #110 of 528 · 7.4% of its score</summary>
+<details><summary>math · #111 of 530 · 7.4% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -74,7 +74,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.7%  ▁▁▁▁▂▄▆▄●▇█▅ beats 99/211  hard · avg 39%          17%  sharp · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    3.9%  ▂·█··▆▄·▂▂·● beats 13/13   avg 34%                8.3%  typical
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   68.4%  ▁▁·▁▂▂▄█▄▅●▄ beats 54/66   hard · avg 29%         6.1%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   68.4%  ▁▁·▁▂▂▄█▄▅●▄ beats 54/66   hard · avg 29%         6.0%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   71.8%  ▁▁▁▁·▂·█▆●▇▁ beats 21/31   medium · avg 46%       4.3%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   75.1%  ▂·▂·▂█▂▄▄··● beats 12/13   very hard · avg 54%    3.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   81.3%  ▂·▄··▂▂·▄▂█● beats 13/13   medium · avg 52%       2.6%  typical

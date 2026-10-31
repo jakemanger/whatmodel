@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 42.7** ±0.8 · #520 of 731 · from 22 benchmark results across 6 sources
+**score 42.7** ±0.8 · #521 of 732 · from 22 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #419 of 468     19%      3
-math    ▁▁▃▅█●▄█▄▂▁▁   #229 of 429     16%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #420 of 469     19%      3
+math    ▁▁▃▅█●▄█▄▂▁▁   #232 of 431     16%      2
 </pre>
 
-<details><summary>coding · #419 of 468 · 19% of its score</summary>
+<details><summary>coding · #420 of 469 · 19% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Code Llama 7B (base)](codellama-7b.md) here, though they rank lower overall.
 
@@ -33,9 +33,9 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>math · #229 of 429 · 16% of its score</summary>
+<details><summary>math · #232 of 431 · 16% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why

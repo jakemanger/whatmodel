@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 67B params · deepseek
 
-**score 42.8** ±1.2 · #518 of 731 · from 11 benchmark results across 5 sources
+**score 42.8** ±1.2 · #519 of 732 · from 11 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #254 of 468     10%      4
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #327 of 401     72%      3
-math            ▁▁●▅█▇▄█▄▂▁▁   #393 of 429*     11%      2
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #255 of 469     10%      4
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #329 of 402     72%      3
+math            ▁▁●▅█▆▄█▄▂▁▁   #395 of 431*     11%      2
 </pre>
 
-<details><summary>coding · #254 of 468 · 10% of its score</summary>
+<details><summary>coding · #255 of 469 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   47.0%  ▃··▁▂▂▃▂●▃▄▂ beats 23/47  medium · avg 51%    3.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   47.0%  ▃··▁▂▂▃▂●▃▄▂ beats 23/47  medium · avg 51%    3.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   39.7%  ▁▁▁▁▁▁▂▂▃█●▄ beats 39/47  hard · avg 32%      3.1%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.8%  █▂▁▁▂▂▂▃▅●▅▇ beats 31/47  hard · avg 33%      3.0%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 45/47  easy · avg 67%      0.1%  blunt · at its level · noisy
@@ -35,27 +35,27 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #327 of 401 · 72% of its score</summary>
+<details><summary>chat &amp; writing · #329 of 402 · 72% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       17.8%  ▁▂▂▃▆●█▆▄▄▁▁ beats 47/122  medium · avg 35%     42%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1185.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 63/385  avg 1259             15%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1185.0  ▁▁▁▂●▃▃▆▆▇█▃ beats 63/385  avg 1260             15%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1092.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 42/95   avg 1187             14%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #393 of 429 · 11% of its score</summary>
+<details><summary>math · #395 of 431 · 11% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%  ▂●▅▆▄█▆▃▅▂▃▄ beats 4/92   hard · avg 28%           10%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/197  very hard · avg 7.1%    0.7%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/197  very hard · avg 7.2%    0.7%  sharp · too hard for it · noisy
 </pre>
 
 </details>

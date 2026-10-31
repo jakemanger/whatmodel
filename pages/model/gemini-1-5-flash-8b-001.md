@@ -16,29 +16,29 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #324 of 472*     33%      1
-math                ▁▁▃▆●█▅█▄▁▁▁   #356 of 528*    6.0%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #326 of 474*     33%      1
+math                ▁▁▃▆●█▅█▃▁▁▁   #358 of 530*    6.0%      1
 vision &amp; documents  ▁▁▂▃●▃▅▄▆██▄   #154 of 189*     22%      1
 </pre>
 
-<details><summary>chat &amp; writing · #324 of 472 · 33% of its score</summary>
+<details><summary>chat &amp; writing · #326 of 474 · 33% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1258.8  ▁▁▁▂▃▃●▆▆▇█▃ beats 93/385  avg 1259       33%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1258.8  ▁▁▁▂▃▃●▆▆▇█▃ beats 93/385  avg 1260       33%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #356 of 528 · 6.0% of its score</summary>
+<details><summary>math · #358 of 530 · 6.0% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    4.6%  ▃▃●▃▃▃▇▇█▃▂▅ beats 30/197  very hard · avg 7.1%    6.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    4.6%  ▃▃●▃▃▃▇▇█▃▂▅ beats 30/197  very hard · avg 7.2%    6.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>

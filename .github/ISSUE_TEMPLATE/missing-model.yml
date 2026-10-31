@@ -29,6 +29,7 @@ body:
         - "Video"
         - "Text-to-speech"
         - "Speech-to-text"
+        - "Decision models"
   - type: input
     id: maker
     attributes:

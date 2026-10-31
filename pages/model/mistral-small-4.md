@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 59.5** ±1.5 · #210 of 731 · from 10 benchmark results across 4 sources
+**score 59.4** ±1.5 · #211 of 732 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▄●▅▄▄▂▁     #149 of 312*     19%      1
+agent tasks         ▁▁▃▆█▄●▅▄▄▂▁     #150 of 313*     19%      1
 coding              ██········█●         #1 of 4*    7.3%      1
-chat &amp; writing      ▁▁▁▃▆▄●█▆▇▇▃     #263 of 401*    7.5%      1
+chat &amp; writing      ▁▁▁▃▆▄●█▆▇▇▃     #264 of 402*    7.5%      1
 math                               not ranked yet       —      1
-vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄      #94 of 154*    7.9%      1
+vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄      #93 of 153*    7.9%      1
 </pre>
 
-<details><summary>agent tasks · #149 of 312 · 19% of its score</summary>
+<details><summary>agent tasks · #150 of 313 · 19% of its score</summary>
 
 Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #263 of 401 · 7.5% of its score</summary>
+<details><summary>chat &amp; writing · #264 of 402 · 7.5% of its score</summary>
 
 Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -58,12 +58,12 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">AIME 2025 (lab)</a>   83.8%  ▁·▁▁▁▂▅▆█●▅▁ beats 96/133  medium · avg 41%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">AIME 2025 (lab)</a>   83.8%  ▁·▁▁▁▂▅▆█●▅▁ beats 96/133  medium · avg 42%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #94 of 154 · 7.9% of its score</summary>
+<details><summary>vision &amp; documents · #93 of 153 · 7.9% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall.
 
@@ -78,12 +78,12 @@ test            result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>                   71.2%  ▁▁▁▁▂▄▅▅●▇█▄ beats 158/318  hard · avg 42%          16%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>                   71.2%  ▁▁▁▁▂▄▅▅●██▄ beats 160/322  hard · avg 42%          16%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   33.9%  ▁▁·▁▂▂▄●▄▅▄▄ beats 31/66    hard · avg 29%          15%  at its level
 <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                       78.0%  ▁▁·▁▁▁▃▂▄●█▁ beats 115/188  medium · avg 59%       9.2%  at its level · small run
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   48.0%  ▃▇▂▄▅●▂▄▄▇█▇ beats 36/84    hard · avg 28%         7.0%  at its level · small run
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   20.6%  ▁▁▃▂●▄▁▃▄▄▄█ beats 7/38     very hard · avg 14%    7.0%  at its level
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text generati…</a>   62.9%  ▄·▄█▄··▄▄·▄● beats 8/8      medium · avg 42%       4.2%  at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   48.0%  ▂▆▂▄▄●▂▄▄▆█▇ beats 36/86    hard · avg 29%         6.6%  at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text generati…</a>   62.9%  ▄·▄█▄··▄▄·▄● beats 8/8      medium · avg 42%       4.3%  at its level · small run
 </pre>
 
 </details>
@@ -94,12 +94,12 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        7   59% ▇▇▇▇▇▇▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        7   58% ▇▇▇▇▇▇▇
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1   19% ▇▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1   15% ▇▇
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 59.5
+weighted average                                   = 59.4
 </pre>
 
 <sub>Licences: mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

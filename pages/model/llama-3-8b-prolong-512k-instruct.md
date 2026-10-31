@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-08 · 8.03B params · llama3
 
-**score 50.8** ±4.2 · #352 of 731 · from 3 benchmark results across 2 sources
+**score 50.8** ±4.2 · #353 of 732 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

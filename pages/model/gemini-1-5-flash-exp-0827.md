@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂▄▆●▇▅▄▃▁   #299 of 537*     27%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #295 of 528*    8.8%      1
+coding  ▁▁▁▃▄▆●▇▅▄▃▁   #302 of 539*     27%      2
+math    ▁▁▃▆█●▅█▃▁▁▁   #297 of 530*    8.8%      1
 </pre>
 
-<details><summary>coding · #299 of 537 · 27% of its score</summary>
+<details><summary>coding · #302 of 539 · 27% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #295 of 528 · 8.8% of its score</summary>
+<details><summary>math · #297 of 530 · 8.8% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Baichuan · released 2025-08 · 32.76B params · apache-2.0
 
-**score 56.1** ±3.8 · #307 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.1** ±3.8 · #308 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

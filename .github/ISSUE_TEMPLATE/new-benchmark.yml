@@ -36,6 +36,7 @@ body:
         - "Video"
         - "Text-to-speech"
         - "Speech-to-text"
+        - "Decision models"
   - type: dropdown
     id: scale
     attributes:

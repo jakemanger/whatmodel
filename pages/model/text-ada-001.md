@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▆██▅█▄▁▁▁   #524 of 528*    4.3%      1
+math  ●▁▃▆██▅█▃▁▁▁   #526 of 530*    4.3%      1
 </pre>
 
-<details><summary>math · #524 of 528 · 4.3% of its score</summary>
+<details><summary>math · #526 of 530 · 4.3% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 

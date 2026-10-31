@@ -24,7 +24,7 @@ export type Field = {
 export type Form = { kind: Kind; name: string; description: string; labels: string[]; intro: string; fields: Field[] };
 
 export const REPO = "https://github.com/jakemanger/whatmodel";
-export const CATEGORIES = ["Text (LLM)", "Image", "Video", "Text-to-speech", "Speech-to-text"];
+export const CATEGORIES = ["Text (LLM)", "Image", "Video", "Text-to-speech", "Speech-to-text", "Decision models"];
 export const BY = ["The source's authors, on models they didn't make", "The model's own makers", "Not sure"];
 export const CONFIRM = "These are the source's own measurements";
 const intro = `Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](${REPO}/blob/main/CONTRIBUTING.md).`;

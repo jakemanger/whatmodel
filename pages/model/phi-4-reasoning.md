@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 57.7** ±0.9 · #230 of 731 · from 24 benchmark results across 5 sources
+**score 57.7** ±0.9 · #231 of 732 · from 24 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇█●▅▄▃▁   #148 of 468*     12%      3
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃    #180 of 401     10%      3
-math            ▁▁▃▅█▇●█▄▂▁▁    #174 of 429     19%      3
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #148 of 469*     12%      3
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃    #181 of 402     10%      3
+math            ▁▁▃▅█▆●█▄▂▁▁    #175 of 431     19%      3
 </pre>
 
-<details><summary>coding · #148 of 468 · 12% of its score</summary>
+<details><summary>coding · #148 of 469 · 12% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 
@@ -34,20 +34,20 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #180 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #181 of 402 · 10% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2504.21318v1">Arena-Hard (version/judge unspeci…</a>   73.3%  ▃▃▂▅▃▆▅█●▅▂▃ beats 22/30   medium · avg 59%    7.5%  at its level · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruction…</a>   83.4%  █·········●█ beats 1/2     easy · avg 67%      1.6%  small run
-<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   83.4%  ▁▂▄▂▂▄●█▇▄▂▁ beats 64/143  easy · avg 73%      1.3%  typical
+<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   83.4%  ▁▂▄▂▂▄●██▅▂▁ beats 64/145  easy · avg 74%      1.3%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #174 of 429 · 19% of its score</summary>
+<details><summary>math · #175 of 431 · 19% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 

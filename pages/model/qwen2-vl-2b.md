@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
-**score 38.1** ±1.1 · #594 of 731 · from 16 benchmark results across 2 sources
+**score 38.1** ±1.1 · #595 of 732 · from 16 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁●▅█▇▄█▄▂▁▁   #407 of 429*     19%      2
-vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #152 of 154     85%     12
+math                ▁▁●▅█▆▄█▄▂▁▁   #409 of 431*     19%      2
+vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #151 of 153     85%     12
 </pre>
 
-<details><summary>math · #407 of 429 · 19% of its score</summary>
+<details><summary>math · #409 of 431 · 19% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #152 of 154 · 85% of its score</summary>
+<details><summary>vision &amp; documents · #151 of 153 · 85% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 

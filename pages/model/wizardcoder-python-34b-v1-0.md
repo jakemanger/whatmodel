@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 34B params · llama2
 
-**score 47.2** ±0.7 · #428 of 731 · from 8 benchmark results across 4 sources
+**score 47.2** ±0.7 · #429 of 732 · from 8 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #315 of 468     87%      5
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #316 of 469     87%      5
 </pre>
 
-<details><summary>coding · #315 of 468 · 87% of its score</summary>
+<details><summary>coding · #316 of 469 · 87% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

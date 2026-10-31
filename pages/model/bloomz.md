@@ -6,7 +6,7 @@
 
 BigScience · released 2022-11 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 32.8** ±1.5 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
+**score 32.7** ±1.5 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-102"></a><a href="https://aclanthology.org/2023.emnlp-main.102.pdf">Outlier Suppression+: Accurate quantiza…</a>        3   27% ▇▇▇
 <a name="acl-2023-wmt-1-44"></a><a href="https://aclanthology.org/2023.wmt-1.44.pdf">Towards Effective Disambiguation for Ma…</a>        1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 32.8
+weighted average                                   = 32.7
 </pre>
 
 <sub>Licences: Crosslingual Generalization through Multitask Finetuning ([CC BY 4.0](../../licenses/acl-2023-acl-long-891-CC-BY-4-0.txt)) · Outlier Suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-102-CC-BY-4-0.txt)) · Towards Effective Disambiguation for Machine Translation with Large Language Models ([CC BY 4.0](../../licenses/acl-2023-wmt-1-44-CC-BY-4-0.txt))</sub>

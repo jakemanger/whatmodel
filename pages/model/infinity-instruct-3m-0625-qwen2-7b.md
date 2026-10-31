@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 7.62B params · apache-2.0
 
-**score 44.8** ±1.7 · #639 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.8** ±1.7 · #640 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▇█▆▆▆▃   #361 of 472*     92%      1
+chat &amp; writing  ▁▁▁▄▆●▇█▆▆▆▃   #362 of 473*     92%      1
 </pre>
 
-<details><summary>chat &amp; writing · #361 of 472 · 92% of its score</summary>
+<details><summary>chat &amp; writing · #362 of 473 · 92% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

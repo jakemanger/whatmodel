@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▄▇█▇▇▇▃   #458 of 472*    0.3%      1
-math            ▁▁▃▆█●▅█▄▁▁▁    #279 of 528     29%      2
+chat &amp; writing  ▁▁●▃▅▄▇█▇▇▇▃   #460 of 474*    0.3%      1
+math            ▁▁▃▆█●▅█▃▁▁▁    #283 of 530     29%      2
 </pre>
 
-<details><summary>chat &amp; writing · #458 of 472 · 0.3% of its score</summary>
+<details><summary>chat &amp; writing · #460 of 474 · 0.3% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -31,13 +31,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #279 of 528 · 29% of its score</summary>
+<details><summary>math · #283 of 530 · 29% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.emnlp-main.216.pdf">GSM8K</a>   56.5%  █··█······▄● beats 5/5    easy · avg 66%       23%  sharp · at its level · several runs
+<a href="https://aclanthology.org/2023.emnlp-main.216.pdf">GSM8K</a>   56.5%  █··█······▄● beats 5/5    easy · avg 67%       23%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2210.11416v5">MGSM</a>    36.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 13/18  medium · avg 48%    6.4%  sharp · at its level · several runs
 </pre>
 
@@ -58,8 +58,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   43.7%  ▂··▂·▂▄▄·●██ beats 9/18     medium · avg 61%       1.7%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.743.pdf">COPA</a>                                 93.2%  ▁·▁▁▁▅▅█▆▂●▁ beats 63/67    very easy · avg 96%    1.5%  several runs
 <a href="https://aclanthology.org/2023.emnlp-main.397.pdf">HaluEval knowledge-grounded dialo…</a>   68.4%  █·········▄● beats 3/3      medium · avg 68%       1.4%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   43.7%  ▂··▄·▂▆●▂█·▂ beats 7/14     medium · avg 53%       1.4%  at its level
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence completion, unam…</a>   66.0%  ▄········●·█ beats 1/3      easy · avg 73%         1.4%  at its level
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   43.7%  ▂··▄·▂▆●▂█·▂ beats 7/14     medium · avg 53%       1.4%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   15.8%  ▄······●·█·▄ beats 1/4      medium · avg 38%       1.3%  sharp · at its level
 <a href="https://aclanthology.org/2023.blackboxnlp-1.7.pdf">Integer-sequence explanation as P…</a>   31.2%  █······●··██ beats 1/3      medium · avg 47%       1.2%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.468.pdf">JEEBench total score (zero-shot, …</a>   12.2%  █··●····█··█ beats 1/3      very hard · avg 20%    0.9%  too hard for it

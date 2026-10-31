@@ -6,7 +6,7 @@
 
 Google · released 2024-04 · 2.51B params · gemma
 
-**score 30.8** ±0.9 · #656 of 731 · from 9 benchmark results across 7 sources
+**score 30.7** ±0.9 · #657 of 732 · from 9 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁●▅▇█▇▅▄▃▁   #447 of 468     77%      3
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #379 of 401     17%      3
+coding          ▁▁▁●▅▇█▇▅▄▃▁   #448 of 469     77%      3
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #380 of 402     17%      3
 </pre>
 
-<details><summary>coding · #447 of 468 · 77% of its score</summary>
+<details><summary>coding · #448 of 469 · 77% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -33,13 +33,13 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #379 of 401 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #380 of 402 · 17% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1116.7  ▁▁▁●▃▃▃▆▆▇█▃ beats 21/385  avg 1259            7.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1116.7  ▁▁▁●▃▃▃▆▆▇█▃ beats 21/385  avg 1260            7.8%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1044.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 24/95   avg 1187            7.1%  typical
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>    3.4%  ●▁▁▅█▅▄▃▃▅▃▁ beats 1/60    medium · avg 47%    1.9%  sharp · too hard for it
 </pre>
@@ -71,7 +71,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 30.8
+weighted average                                   = 30.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

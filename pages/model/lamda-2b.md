@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 2B params · proprietary
 
-**score 10.0** ±1.8 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 9.9** ±1.8 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▄▁▁▁   #515 of 528*    5.7%      1
+math  ▁●▃▆██▅█▃▁▁▁   #516 of 530*    5.7%      1
 </pre>
 
-<details><summary>math · #515 of 528 · 5.7% of its score</summary>
+<details><summary>math · #516 of 530 · 5.7% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2201.11903v6"></a><a href="https://arxiv.org/html/2201.11903v6">Chain-of-Thought Prompting Elicits Reas…</a>        9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 10.0
+weighted average                                   = 9.9
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt))</sub>

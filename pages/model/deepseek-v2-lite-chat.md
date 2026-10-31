@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-05 · 15.71B params (2.4B active) · deepseek
 
-**score 39.8** ±1.1 · #570 of 731 · from 15 benchmark results across 5 sources
+**score 39.8** ±1.1 · #571 of 732 · from 15 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #389 of 468     29%      7
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #390 of 469     29%      7
 math    █··········●      #1 of 2*     13%      2
 </pre>
 
-<details><summary>coding · #389 of 468 · 29% of its score</summary>
+<details><summary>coding · #390 of 469 · 29% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 

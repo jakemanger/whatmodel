@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▄●▄▄▄▁▁   #123 of 352*     11%      1
-chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #122 of 472*     51%      1
+agent tasks         ▁▁▂▆█▄●▄▄▃▁▁   #124 of 354*     11%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #123 of 474*     51%      1
 vision &amp; documents  ▁▁▂▃▂▃▅●▆██▄   #119 of 189*     34%      1
 </pre>
 
-<details><summary>agent tasks · #123 of 352 · 11% of its score</summary>
+<details><summary>agent tasks · #124 of 354 · 11% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Devstral 2 (2512)](devstral-2.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -32,13 +32,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #122 of 472 · 51% of its score</summary>
+<details><summary>chat &amp; writing · #123 of 474 · 51% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [Gemma 4 12B](gemma-4-12b.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1407.8  ▁▁▁▂▃▃▃▆▆●█▃ beats 252/385  avg 1259       51%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1407.8  ▁▁▁▂▃▃▃▆▆●█▃ beats 252/385  avg 1260       51%  blunt
 </pre>
 
 </details>

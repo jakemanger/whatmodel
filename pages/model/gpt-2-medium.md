@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-05 · 0.355B params · mit
 
-**score -5.3** ±1.3 · #729 of 731 · from 36 benchmark results across 9 sources
+**score -5.4** ±1.3 · #730 of 732 · from 36 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▇▄█▄▂▁▁   #428 of 429*    0.3%      1
+math  ●▁▃▅█▆▄█▄▂▁▁   #430 of 431*    0.3%      1
 </pre>
 
-<details><summary>math · #428 of 429 · 0.3% of its score</summary>
+<details><summary>math · #430 of 431 · 0.3% of its score</summary>
 
 Beats [GPT-2 Large (774M)](gpt-2-large.md) here, though they rank higher overall. Trails [GPT-2 Small (124M)](gpt-2-small.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 67.0%  ▁·▁▁▁●▅█▆▂▁▁ beats 15/67   very easy · avg 97%     13%  at its level · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     63.0%  ▃▃●▂▅█▅▂▁··▂ beats 12/50   easy · avg 91%          10%  blunt · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             49.4%  ▁▃●▄▆█▅▃▁··▁ beats 12/100  very easy · avg 90%    9.3%  blunt · at its level · several runs
-<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.8%  █···██·●···█ beats 3/4     easy · avg 86%         4.9%  too hard for it
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.8%  █···██·●···█ beats 3/4     easy · avg 86%         4.8%  too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   32.0%  ▃···▃●·▃·▃·█ beats 2/7     easy · avg 81%         3.5%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">Social IQA</a>                           41.4%  ▁·▁●█▄▅▁▂▃▇▁ beats 12/59   medium · avg 71%       2.2%  blunt
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">PIQA</a>                                 67.6%  ▁▁▁●▂▃▅█▅▃▁▁ beats 15/123  easy · avg 89%         1.9%  blunt · at its level
@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    0% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = -5.3
+weighted average                                   = -5.4
 </pre>
 
 <sub>Licences: Coherence boosting: When your pretrained language model is not paying enough attention ([CC BY 4.0](../../licenses/acl-2022-acl-long-565-CC-BY-4-0.txt)) · Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · CASE: Commonsense-Augmented Score with an Expanded Answer Space ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-180-CC-BY-4-0.txt)) · RankGen: Improving Text Generation with Large Ranking Models ([CC BY 4.0](../../licenses/acl-2022-emnlp-main-15-CC-BY-4-0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Large Language Models Are Reasoning Teachers ([CC BY 4.0](../../licenses/acl-2023-acl-long-830-CC-BY-4-0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

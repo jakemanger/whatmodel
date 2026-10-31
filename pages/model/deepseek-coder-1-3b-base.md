@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 34.3** ±0.6 · #633 of 731 · from 12 benchmark results across 5 sources
+**score 34.3** ±0.6 · #634 of 732 · from 12 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁    #430 of 468     86%      7
-math    ▁▁●▅█▇▄█▄▂▁▁   #390 of 429*    3.2%      1
+coding  ▁▁▁●▅▇█▇▅▄▃▁    #431 of 469     86%      7
+math    ▁▁●▅█▆▄█▄▂▁▁   #392 of 431*    3.1%      1
 </pre>
 
-<details><summary>coding · #430 of 468 · 86% of its score</summary>
+<details><summary>coding · #431 of 469 · 86% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -37,13 +37,13 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #390 of 429 · 3.2% of its score</summary>
+<details><summary>math · #392 of 431 · 3.1% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   12.6%  ▄●▄·▄█·██·█▄ beats 1/12   easy · avg 75%    3.2%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   12.6%  ▄●▄·▄█·██·█▄ beats 1/12   easy · avg 75%    3.1%  sharp · at its level
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
 <a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   21% ▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
-<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 34.3
 </pre>

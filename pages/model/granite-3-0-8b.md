@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 8.17B params · apache-2.0
 
-**score 45.3** ±0.8 · #467 of 731 · from 22 benchmark results across 5 sources
+**score 45.3** ±0.8 · #468 of 732 · from 22 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #326 of 468     17%      6
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #326 of 401*    9.3%      2
-math            ▁▁▃●█▇▄█▄▂▁▁   #348 of 429*     15%      2
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #330 of 469     17%      6
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #327 of 402*    9.3%      2
+math            ▁▁▃●█▆▄█▄▂▁▁   #347 of 431*     15%      2
 </pre>
 
-<details><summary>coding · #326 of 468 · 17% of its score</summary>
+<details><summary>coding · #330 of 469 · 17% of its score</summary>
 
-Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      64.6%  ▄·▄█·▄·▄···● beats 7/7    easy · avg 78%      7.7%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      64.6%  ▄·▄█·▄·▄···● beats 7/7    easy · avg 78%      7.6%  sharp · at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           49.6%  ▄···▄·▄▄█··● beats 6/7    medium · avg 61%    4.2%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   25.3%  ▃··▁▂▂●▂█▃▄▂ beats 16/47  medium · avg 51%    1.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   22.7%  █▂▁▁▂▂▂▃●▅▅▇ beats 22/47  hard · avg 33%      1.7%  sharp · noisy
@@ -37,21 +37,21 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #326 of 401 · 9.3% of its score</summary>
+<details><summary>chat &amp; writing · #327 of 402 · 9.3% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1183.2  ▁▁▁▂●▃▃▆▆▇█▃ beats 60/385  avg 1259          6.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1183.2  ▁▁▁▂●▃▃▆▆▇█▃ beats 60/385  avg 1260          6.8%  blunt
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecified) …</a>   52.3%  ▄····█·▄··█● beats 6/7     easy · avg 65%    2.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #348 of 429 · 15% of its score</summary>
+<details><summary>math · #347 of 431 · 15% of its score</summary>
 
-Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
@@ -68,8 +68,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard (lab)</a>                 51.5%  ▃▃···▃··█··● beats 7/7     medium · avg 63%        15%  sharp · at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified) (lab)</a>      33.8%  ▄·▄··▄··▄█·● beats 7/7     hard · avg 37%          11%  sharp
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU (lab)</a>                           65.8%  ▄····▄·▄▄█·● beats 6/7     easy · avg 76%         7.8%  at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                       34.4%  ▄·····█··█▄● beats 6/7     medium · avg 44%       6.5%  at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                     77.5%  █···▄▄▄▄···● beats 6/7     medium · avg 80%       5.0%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                       34.4%  ▄·····█··█▄● beats 6/7     medium · avg 44%       6.6%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                     77.5%  █···▄▄▄▄···● beats 6/7     medium · avg 81%       5.0%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                     46.6%  ▄▄··▄··▄·█▄● beats 7/7     medium · avg 55%       3.5%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>                  64.2%  ▄····█··▄▄▄● beats 7/7     medium · avg 72%       3.1%  sharp · at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                      82.6%  ▄·▄··█▄·▄·▄● beats 7/7     easy · avg 85%         2.8%  at its level

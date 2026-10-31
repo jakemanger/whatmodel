@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 12.1** ±1.4 · comparison only: no current run option verified · from 18 benchmark results across 9 sources
+**score 12.0** ±1.4 · comparison only: no current run option verified · from 18 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▆██▅█▄▁▁▁   #511 of 528*    5.6%      1
+math  ▁●▃▆██▅█▃▁▁▁   #513 of 530*    5.6%      1
 </pre>
 
-<details><summary>math · #511 of 528 · 5.6% of its score</summary>
+<details><summary>math · #513 of 530 · 5.6% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="acl-2023-resourceful-1-13"></a><a href="https://aclanthology.org/2023.resourceful-1.13.pdf">Bridging the Resource Gap: Exploring th…</a>        1    1% ▇
 <a name="acl-2023-emnlp-main-890"></a><a href="https://aclanthology.org/2023.emnlp-main.890.pdf">FANToM: A Benchmark for Stress-testing …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 12.1
+weighted average                                   = 12.0
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · In-Context Demonstration Selection with Cross Entropy Difference ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-81-CC-BY-4-0.txt)) · Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge ([CC BY 4.0](../../licenses/acl-2023-acl-long-550-CC-BY-4-0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt)) · Causal Reasoning of Entities and Events in Procedural Texts ([CC BY 4.0](../../licenses/acl-2023-findings-eacl-31-CC-BY-4-0.txt)) · Bridging the Resource Gap: Exploring the Efficacy of English and Multilingual LLMs for Swedish ([CC BY 4.0](../../licenses/acl-2023-resourceful-1-13-CC-BY-4-0.txt)) · FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-890-CC-BY-4-0.txt))</sub>

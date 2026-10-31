@@ -6,7 +6,7 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 29.6** ±0.8 · #665 of 731 · from 12 benchmark results across 3 sources
+**score 29.6** ±0.8 · #665 of 732 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁    #450 of 468     96%      9
-math    ▁▁●▅█▇▄█▄▂▁▁   #400 of 429*    3.4%      1
+coding  ▁▁●▃▅▇█▇▅▄▃▁    #451 of 469     96%      9
+math    ▁▁●▅█▆▄█▄▂▁▁   #402 of 431*    3.4%      1
 </pre>
 
-<details><summary>coding · #450 of 468 · 96% of its score</summary>
+<details><summary>coding · #451 of 469 · 96% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #400 of 429 · 3.4% of its score</summary>
+<details><summary>math · #402 of 431 · 3.4% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 

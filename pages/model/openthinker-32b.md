@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.5** ±1.2 · #294 of 731 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.5** ±1.2 · #296 of 732 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▅▄▃▁   #183 of 468*    4.0%      1
-math    ▁▁▃▅█▇●█▄▂▁▁    #182 of 429     57%      3
+coding  ▁▁▁▃▅▇█●▅▄▃▁   #185 of 469*    4.0%      1
+math    ▁▁▃▅█▆●█▄▂▁▁    #184 of 431     57%      3
 </pre>
 
-<details><summary>coding · #183 of 468 · 4.0% of its score</summary>
+<details><summary>coding · #185 of 469 · 4.0% of its score</summary>
 
-Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Apriel 1.6 15B Thinker](apriel-1-6-15b-thinker.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                    result  vs the others in its run  difficulty        counts  why
@@ -31,14 +31,14 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>math · #182 of 429 · 57% of its score</summary>
+<details><summary>math · #184 of 431 · 57% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>   68.0%  ▁▁▁▂▁▃▁▅●██▃ beats 34/85   medium · avg 56%        26%  sharp · at its level · several runs
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   49.3%  ▁·▁▁▁▂▅●█▇▅▁ beats 35/133  medium · avg 36%        16%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   49.3%  ▁·▁▁▁▂▅●█▇▅▁ beats 35/133  medium · avg 37%        16%  sharp · at its level
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.6%  ▁▃▂▃▄▇●▇█▄▂▁ beats 41/85   very easy · avg 86%     15%  several runs
 </pre>
 
@@ -48,7 +48,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●█▇█▄ beats 123/318  hard · avg 51%     38%  sharp · at its level · several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●███▄ beats 125/322  hard · avg 51%     38%  sharp · at its level · several runs
 </pre>
 
 </details>

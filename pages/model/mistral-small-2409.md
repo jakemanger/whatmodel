@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-09 · 22.25B params · mistral-research
 
-**score 50.5** ±1.7 · #357 of 731 · from 9 benchmark results across 6 sources
+**score 50.5** ±1.7 · #358 of 732 · from 9 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▄▅▅▄▄▂▁   #268 of 312*    5.8%      1
-coding       ▁▁▁▃▅▇●▇▅▄▃▁    #244 of 468     28%      4
+agent tasks  ▁▁▃●█▄▅▅▄▄▂▁   #269 of 313*    5.8%      1
+coding       ▁▁▁▃▅▇●▇▅▄▃▁    #245 of 469     28%      4
 </pre>
 
-<details><summary>agent tasks · #268 of 312 · 5.8% of its score</summary>
+<details><summary>agent tasks · #269 of 313 · 5.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #244 of 468 · 28% of its score</summary>
+<details><summary>coding · #245 of 469 · 28% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 

@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    9.5%  ▃···▃·█●▅▃▅█ beats 5/13   avg 11%                 11%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   58.3%  ▂·······▆●▆▆ beats 6/13   very hard · avg 57%    6.4%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   57.5%  ▂·▂·▂█▂●▄··▄ beats 9/13   very hard · avg 54%    5.6%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   56.0%  ▃█▃●▃·▃·▃▅▃▃ beats 6/13   medium · avg 57%       4.0%  blunt · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   56.0%  ▃█▃●▃·▃·▃▅▃▃ beats 6/13   medium · avg 57%       4.1%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   49.7%  ▃··▃▃▃·▃▅▅█● beats 12/13  medium · avg 39%       3.1%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>   45.6%  ▄▂···▂▆▂●▂·▂ beats 10/13  avg 83%                2.1%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>    7.3%  ▂▂▂··▂▂·▂▂●▆ beats 8/13   avg 14%                0.4%  blunt · noisy

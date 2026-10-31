@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 42.5** ±1.9 · #525 of 731 · from 19 benchmark results across 4 sources
+**score 42.5** ±1.9 · #526 of 732 · from 19 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▇▄█▄▂▁▁   #258 of 429*     14%      1
-vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄    #149 of 154     84%     13
+math                ▁▁▃▅●▆▄█▄▂▁▁   #261 of 431*     14%      1
+vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄    #148 of 153     84%     13
 </pre>
 
-<details><summary>math · #258 of 429 · 14% of its score</summary>
+<details><summary>math · #261 of 431 · 14% of its score</summary>
 
 Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                  result  vs the others in its run  difficulty        counts
 
 </details>
 
-<details><summary>vision &amp; documents · #149 of 154 · 84% of its score</summary>
+<details><summary>vision &amp; documents · #148 of 153 · 84% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
 

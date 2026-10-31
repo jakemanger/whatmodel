@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -13.0** ±1.5 · #731 of 731 · from 35 benchmark results across 9 sources
+**score -13.0** ±1.5 · #731 of 732 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▇▄█▄▂▁▁   #427 of 429*    0.1%      1
+math  ●▁▃▅█▆▄█▄▂▁▁   #429 of 431*    0.1%      1
 </pre>
 
-<details><summary>math · #427 of 429 · 0.1% of its score</summary>
+<details><summary>math · #429 of 431 · 0.1% of its score</summary>
 
 Beats [GPT-2 Large (774M)](gpt-2-large.md), [GPT-2 Medium (355M)](gpt-2-medium.md) here, though they rank higher overall.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             42.9%  ▁●▂▄▆█▅▃▁··▁ beats 6/100   very easy · avg 90%     10%  blunt · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     60.0%  ●▃▃▂▅█▅▂▁··▂ beats 3/50    easy · avg 91%          10%  blunt · several runs
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                            28.6%  ●▁▁▂▂▂▄▆█▇▄▂ beats 1/135   easy · avg 87%         8.8%  too hard for it · several runs
-<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   23.6%  ●···██·█···█ beats 0/4     easy · avg 86%         3.4%  too hard for it
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   23.6%  ●···██·█···█ beats 0/4     easy · avg 86%         3.3%  too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   31.1%  ▃···●▃·▃·▃·█ beats 1/7     easy · avg 81%         3.0%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.180.pdf">Social IQA</a>                           39.7%  ▁·▁●█▄▅▁▂▃▇▁ beats 3/59    medium · avg 71%       2.3%  blunt · too hard for it
 <a href="https://aclanthology.org/2022.acl-long.565.pdf">PIQA</a>                                 62.9%  ▁●▁▂▂▃▅█▅▃▁▁ beats 2/123   easy · avg 89%         2.2%  blunt

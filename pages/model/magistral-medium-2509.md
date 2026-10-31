@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃█······●·▃▃       #3 of 7*     12%      1
-math    ▁▁▃▆██●█▄▁▁▁   #164 of 528*     53%      2
+math    ▁▁▃▆██●█▃▁▁▁   #165 of 530*     53%      2
 </pre>
 
 <details><summary>coding · #3 of 7 · 12% of its score</summary>
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #164 of 528 · 53% of its score</summary>
+<details><summary>math · #165 of 530 · 53% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 

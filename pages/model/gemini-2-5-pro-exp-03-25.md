@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▄▄▄▁▁   #231 of 352*     11%      1
-coding       ▁▁▁▂▄▆█▇▅●▃▁    #57 of 537*    4.5%      1
+agent tasks  ▁▁▂▆●▄▅▄▄▃▁▁   #233 of 354*     11%      1
+coding       ▁▁▁▃▄▆█▇▅●▃▁    #57 of 539*    4.5%      1
 </pre>
 
-<details><summary>agent tasks · #231 of 352 · 11% of its score</summary>
+<details><summary>agent tasks · #233 of 354 · 11% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #57 of 537 · 4.5% of its score</summary>
+<details><summary>coding · #57 of 539 · 4.5% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall.
 

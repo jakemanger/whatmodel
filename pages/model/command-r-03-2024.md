@@ -6,7 +6,7 @@
 
 Cohere · released 2024-03 · 35B params · cc-by-nc-4.0
 
-**score 43.5** ±0.7 · #507 of 731 · from 15 benchmark results across 12 sources
+**score 43.5** ±0.7 · #508 of 732 · from 15 benchmark results across 12 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃    #282 of 401     19%      3
-math            ▁▁●▅█▇▄█▄▂▁▁   #412 of 429*     11%      1
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃    #283 of 402     19%      3
+math            ▁▁●▅█▆▄█▄▂▁▁   #415 of 431*     11%      1
 </pre>
 
-<details><summary>chat &amp; writing · #282 of 401 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #283 of 402 · 19% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   17.0%  ▂▁▁●█▅▄▃▃▅▃▁ beats 10/60   medium · avg 47%    8.9%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1261.8  ▁▁▁▂▃▃●▆▆▇█▃ beats 97/385  avg 1259            5.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1261.8  ▁▁▁▂▃▃●▆▆▇█▃ beats 97/385  avg 1260            5.3%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1175.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 75/95   avg 1187            4.9%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #412 of 429 · 11% of its score</summary>
+<details><summary>math · #415 of 431 · 11% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             61.1%  ▁·▁▁●▄▄▅█▄▂▁ beats 3/53     easy · avg 75%          26%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           26.8%  ▁▁▁▂▂▃●█▆▃▅▃ beats 20/61    medium · avg 38%        17%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_c4ai-command-r-v01_5shots.zip">MMLU-Pro</a>                                       36.6%  ▃▂●█▃·█▃▅··▂ beats 5/23     medium · avg 54%       8.0%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.5331 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 12/52    avg 42.989 WB-Score    5.6%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.5331 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 12/52    avg 43.019 WB-Score    5.6%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                56.4%  ▁··▁▁▂▂▆▅●█▆ beats 33/70    medium · avg 62%       3.3%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>              9.9%  ▁▁▃●██▁▁·▁▁▁ beats 9/57     hard · avg 15%         3.0%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             55.4%  ▂▄▂▃█▄●▆▃▅▂▂ beats 44/81    medium · avg 57%       2.5%  blunt · at its level

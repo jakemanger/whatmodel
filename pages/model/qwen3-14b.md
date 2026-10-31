@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 14.8B params · apache-2.0
 
-**score 58.1** ±1.0 · #222 of 731 · from 18 benchmark results across 13 sources
+**score 58.1** ±1.0 · #223 of 732 · from 18 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▅▄▄▂▁    #180 of 312     28%      3
-math         ▁▁▃▅█▇●█▄▂▁▁   #159 of 429*    9.4%      2
+agent tasks  ▁▁▃▆█●▅▅▄▄▂▁    #180 of 313     28%      3
+math         ▁▁▃▅█▆●█▄▂▁▁   #160 of 431*    9.4%      2
 </pre>
 
-<details><summary>agent tasks · #180 of 312 · 28% of its score</summary>
+<details><summary>agent tasks · #180 of 313 · 28% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -33,13 +33,13 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>math · #159 of 429 · 9.4% of its score</summary>
+<details><summary>math · #160 of 431 · 9.4% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   66.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 94/197  very hard · avg 7.1%    7.7%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   66.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 94/197  very hard · avg 7.2%    7.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2604.19444v1">GSM8K</a>                      94.7%  ▃··▃··▃▃·▃·● beats 5/7     very easy · avg 93%     1.8%  sharp · maxed out · noisy
 </pre>
 

@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 30.7** ±0.7 · #657 of 731 · from 37 benchmark results across 10 sources
+**score 30.6** ±0.7 · #658 of 732 · from 37 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Challenge</a>                        43.7%  ▁·▁··▁▁▇▂█●▃ beats 19/26   easy · avg 82%          35%  sharp · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">WinoGrande</a>                           67.2%  ▁····▁··▁▂●▄ beats 17/26   easy · avg 86%          12%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">BoolQ</a>                                73.5%  ▂▃▂▅▆▂▅●█▂▂▂ beats 18/26   easy · avg 88%         7.9%  at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">HellaSwag</a>                            76.3%  ▃···▁▇▅█●▃▁▁ beats 22/26   very easy · avg 91%    7.5%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">HellaSwag</a>                            76.3%  ▃···▁▇▅█●▃▁▁ beats 22/26   very easy · avg 91%    7.4%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">OpenBookQA</a>                           30.6%  █·▁▁▃·▁▃▅●▃▄ beats 17/26   easy · avg 81%         6.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Easy</a>                             70.8%  ▁▁·▁▁▄▅▄█●▁▃ beats 20/26   easy · avg 85%         5.8%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">PIQA</a>                                 79.5%  ▁·▁··▁▁▃█▅█● beats 25/26   easy · avg 87%         4.0%  blunt · at its level · several runs
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 <a name="acl-2023-emnlp-main-760"></a><a href="https://aclanthology.org/2023.emnlp-main.760.pdf">Large Language Models Only Pass Primary…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 30.7
+weighted average                                   = 30.6
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · This is not a Dataset: A Large Negation Benchmark to Challenge Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-531-CC-BY-4-0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Large Language Models Only Pass Primary School Exams in Indonesia: A Comprehensive Test on IndoMMLU ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-760-CC-BY-4-0.txt))</sub>

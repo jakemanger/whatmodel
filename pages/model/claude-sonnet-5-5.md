@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-09 · proprietary
 
-**score 81.7** ±0.6 · #8 of 731 · from 26 benchmark results across 6 sources
+**score 81.7** ±0.6 · #8 of 732 · from 26 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▄▅▅▄▄▂●     #3 of 312     38%      8
-coding              ▁▁▁▃▅▇█▇▅▄▃●     #4 of 468     21%      5
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #26 of 401*    4.1%      1
-math                ▁▁▃▅█▇▄█▄▂●▁     #9 of 429     19%      4
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇●▄   #37 of 154*    2.7%      1
-web search          ▁▁▁▅▄█●▄·▁·▁    #19 of 84*    2.2%      1
+agent tasks         ▁▁▃▆█▄▅▅▄▄▂●     #3 of 313     38%      8
+coding              ▁▁▁▃▅▇█▇▅▄▃●     #4 of 469     21%      5
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #26 of 402*    4.0%      1
+math                ▁▁▃▅█▆▄█▄▂●▁     #9 of 431     19%      4
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇●▄   #37 of 153*    2.7%      1
+web search          ▁▁▁▅▄█●▄·▁·▁    #19 of 84*    2.4%      1
 </pre>
 
-<details><summary>agent tasks · #3 of 312 · 38% of its score</summary>
+<details><summary>agent tasks · #3 of 313 · 38% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Terra](gpt-6-1-terra.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-anthropic-claude-sonnet-5-5-max-claude-code.json">Terminal-Bench 4.0</a>                       61.8%  █▅▅▅▅·▅▃▃▅▅● beats 19/20  very hard · avg 0.7%     11%  sharp · at its level · several runs
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1384 IPS  ▁▁▁▃▃▃█▁▁●▁▁ beats 52/54  avg -0.382 IPS           10%  sharp
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Pro (split unspecified)…</a>       81.3%  ▄█·▄·▄█●···▄ beats 8/9    very hard · avg 8.4%    6.6%  sharp
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Multilingual (lab)</a>             90.3%  ▃··▃·▅▃▃●··▃ beats 8/9    hard · avg 32%          3.3%  typical
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam with tools (…</a>       64.5%  ▁······▁·▄·● beats 7/10   very hard · avg 15%     2.2%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1384 IPS  ▁▁▁▃▃▂█▁▂●▁▁ beats 57/59  avg -0.379 IPS           10%  sharp
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Pro (split unspecified)…</a>       81.3%  ▄█·▄·▄█●···▄ beats 8/9    very hard · avg 7.4%    7.0%  sharp
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Multilingual (lab)</a>             90.3%  ▃··▃·▅▃▃●··▃ beats 8/9    hard · avg 31%          3.3%  typical
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam with tools (…</a>       64.5%  ▁······▁·▄·● beats 7/10   very hard · avg 14%     2.4%  at its level
 <a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=110">DeepSWE v1.1 (resolved) (lab)</a>            71.0%  █·····███●·█ beats 4/5    hard · avg 19%          1.9%  at its level
 <a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=125">Chartography with tools (lab)</a>            90.2%  ▃········▃█● beats 7/7    very hard · avg 6.5%    1.9%  sharp
 <a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=135">Toolathlon-Verified (lab)</a>                77.8%  ▃·····●···▃▃ beats 1/5    medium · avg 37%        1.0%  blunt
@@ -42,33 +42,33 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #4 of 468 · 21% of its score</summary>
+<details><summary>coding · #4 of 469 · 21% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1769.7  ▁▁▃▂▅█▃▆▅▅▁● beats 127/129  avg 982                 7.2%  sharp
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Pro (split unspecified)…</a>   81.3%  ▄█·▄·▄█●···▄ beats 8/9      very hard · avg 8.4%    6.6%  sharp
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Multilingual (lab)</a>         90.3%  ▃··▃·▅▃▃●··▃ beats 8/9      hard · avg 32%          3.3%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1769.7  ▁▁▃▂▅█▃▆▅▅▁● beats 127/129  avg 981                 7.2%  sharp
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Pro (split unspecified)…</a>   81.3%  ▄█·▄·▄█●···▄ beats 8/9      very hard · avg 7.4%    7.0%  sharp
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">SWE-bench Multilingual (lab)</a>         90.3%  ▃··▃·▅▃▃●··▃ beats 8/9      hard · avg 31%          3.3%  typical
 <a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=110">DeepSWE v1.1 (resolved) (lab)</a>        71.0%  █·····███●·█ beats 4/5      hard · avg 19%          1.9%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   80.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 35/49    hard · avg 17%          1.7%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #26 of 401 · 4.1% of its score</summary>
+<details><summary>chat &amp; writing · #26 of 402 · 4.0% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md), [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1477.1  ▁▁▁▂▃▃▃▆▆▇●▃ beats 358/385  avg 1259      4.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1477.1  ▁▁▁▂▃▃▃▆▆▇●▃ beats 358/385  avg 1260      4.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #9 of 429 · 19% of its score</summary>
+<details><summary>math · #9 of 431 · 19% of its score</summary>
 
 Trails [Claude Fable 5](claude-fable-5.md), [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank lower overall.
 
@@ -77,12 +77,12 @@ test                          result  vs the others in its run    difficulty    
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>         80.5%  ▁▂▁▂█▅▂●▂▁▁▁ beats 59/67    very hard · avg 0.1%     11%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>      88.8%  ▂··▁▁▃▄▄█▆▄● beats 79/86    very hard · avg 1.2%    7.0%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv">FrontierMath: Erdős problems</a>    2.9%  █··········● beats 4/6      very hard · avg 0.0%    0.6%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 190/197  very hard · avg 7.1%    0.1%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 190/197  very hard · avg 7.2%    0.1%  sharp · maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #37 of 154 · 2.7% of its score</summary>
+<details><summary>vision &amp; documents · #37 of 153 · 2.7% of its score</summary>
 
 Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank lower overall.
 
@@ -93,13 +93,13 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>web search · #19 of 84 · 2.2% of its score</summary>
+<details><summary>web search · #19 of 84 · 2.4% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam with tools (…</a>   64.5%  ▁······▁·▄·● beats 7/10   very hard · avg 15%    2.2%  at its level
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam with tools (…</a>   64.5%  ▁······▁·▄·● beats 7/10   very hard · avg 14%    2.4%  at its level
 </pre>
 
 </details>
@@ -108,9 +108,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         65.0%  █··▂▃▇▄█▂▄●▁ beats 73/77    very hard · avg 9.4%    8.6%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           75.0%  █▆▆▆▆▂▆▂▂●▂▅ beats 28/32    very hard · avg 1.2%    7.0%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam (lab)</a>           56.9%  ▂·····▂·▄▂●▄ beats 7/10     very hard · avg 5.9%    4.7%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         65.0%  █··▂▃▇▄█▂▄●▁ beats 73/77    very hard · avg 9.4%    8.5%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           75.0%  █▆▆▆▆▂▆▂▂●▂▅ beats 28/32    very hard · avg 1.2%    6.9%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109">Humanity's Last Exam (lab)</a>           56.9%  ▂·····▂·▄▂●▄ beats 7/10     very hard · avg 5.9%    4.6%  at its level
 <a href="https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=140">Global-MMLU (lab)</a>                    92.1%  ▄▄····●▄··▄█ beats 2/6      medium · avg 64%        1.6%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    46.5%  ▁▁▃▂▃▃▆▆●▄▂▅ beats 46/81    very hard · avg 8.0%    1.4%  at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   62.1%  ▁▁▃▂▂▄▁▃▄▄●█ beats 26/38    very hard · avg 14%     1.4%  at its level

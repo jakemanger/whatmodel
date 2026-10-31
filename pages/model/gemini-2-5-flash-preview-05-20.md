@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▄▅▄▄▄▁▁   #239 of 352*     12%      1
-coding       ▁▁▁▂▄▆█▇●▄▃▁    #152 of 537     50%      3
-math         ▁▁▃▆██▅●▄▁▁▁   #153 of 528*     10%      1
+agent tasks  ▁▁▂▆●▄▅▄▄▃▁▁   #242 of 354*     12%      1
+coding       ▁▁▁▃▄▆█▇●▄▃▁    #153 of 539     50%      3
+math         ▁▁▃▆██▅●▃▁▁▁   #154 of 530*     10%      1
 </pre>
 
-<details><summary>agent tasks · #239 of 352 · 12% of its score</summary>
+<details><summary>agent tasks · #242 of 354 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>   16.9%  ●█··█·██··██ beats 0/6    very hard · avg 8.8%     12%  sharp · at its level
+<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>   16.9%  ●█··█·██··██ beats 0/6    very hard · avg 8.9%     12%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #152 of 537 · 50% of its score</summary>
+<details><summary>coding · #153 of 539 · 50% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -45,13 +45,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #153 of 528 · 10% of its score</summary>
+<details><summary>math · #154 of 530 · 10% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   70.8%  ▃▃▄▃▃▃▇●█▃▂▅ beats 102/197  very hard · avg 7.1%     10%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   70.8%  ▃▃▄▃▃▃▇●█▃▂▅ beats 102/197  very hard · avg 7.2%     10%  sharp · at its level · noisy
 </pre>
 
 </details>

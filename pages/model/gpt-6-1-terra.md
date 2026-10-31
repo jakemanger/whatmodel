@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-10 · closed weights
 
-**score 83.8** ±0.9 · #3 of 731 · from 10 benchmark results across 3 sources
+**score 83.5** ±0.8 · #3 of 732 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,42 +16,43 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅▅▄▄●▁   #11 of 312*     11%      1
-coding       ▁▁▁▃▅▇█▇▅▄●▁   #13 of 468*     14%      1
-math         ▁▁▃▅█▇▄█▄▂●▁     #4 of 429     24%      3
+agent tasks  ▁▁▃▆█▄▅▅▄▄●▁    #8 of 313*     26%      2
+coding       ▁▁▁▃▅▇█▇▅▄●▁   #13 of 469*     11%      1
+math         ▁▁▃▅█▆▄█▄▂●▁     #4 of 431     21%      3
 </pre>
 
-<details><summary>agent tasks · #11 of 312 · 11% of its score</summary>
+<details><summary>agent tasks · #8 of 313 · 26% of its score</summary>
 
-Trails [Claude Fable 5](claude-fable-5.md), [GPT-6 Sol](gpt-6-sol.md), [Claude Opus 5](claude-opus-5.md) here, though they rank lower overall.
+Trails [Gemini 4 Argon](gemini-4-argon.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-6-1-terra#a-significant-step-up-on-factuality-and-coding">Terminal-Bench 4.0 (lab)</a>   50.3%  ▁·▁··▁▆▆▅█●▃ beats 25/33  very hard · avg 0.4%     11%  sharp · at its level · small run
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1057 IPS  ▁▁▁▃▃▂█▁▂●▁▁ beats 52/59  avg -0.379 IPS           16%  sharp
+<a href="https://openai.com/index/introducing-gpt-6-1-terra#a-significant-step-up-on-factuality-and-coding">Terminal-Bench 4.0 (lab)</a>                 50.3%  ▁·▁··▁▆▆▅█●▃ beats 25/33  very hard · avg 0.4%    9.2%  sharp · at its level · small run
 </pre>
 
 </details>
 
-<details><summary>coding · #13 of 468 · 14% of its score</summary>
+<details><summary>coding · #13 of 469 · 11% of its score</summary>
 
 Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1672.7  ▁▁▃▂▅█▃▆▅●▁▂ beats 117/129  avg 982        14%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1672.7  ▁▁▃▂▅█▃▆▅●▁▂ beats 117/129  avg 981        11%  sharp
 </pre>
 
 </details>
 
-<details><summary>math · #4 of 429 · 24% of its score</summary>
+<details><summary>math · #4 of 431 · 21% of its score</summary>
 
 Trails [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      92.7%  ▁▂▁▂█▅▂▃●▁▁▁ beats 64/67    very hard · avg 0.1%     14%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   90.9%  ▂··▁▁▃▄▄█▆▄● beats 83/86    very hard · avg 1.2%    9.3%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 187/197  very hard · avg 7.1%    0.1%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      92.7%  ▁▂▁▂█▅▂▃●▁▁▁ beats 64/67    very hard · avg 0.1%     13%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   90.9%  ▂··▁▁▃▄▄█▆▄● beats 83/86    very hard · avg 1.2%    8.1%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 187/197  very hard · avg 7.2%    0.1%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -60,11 +61,11 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>              78.1%  ▄▂·▆█▂█▆▄▆·● beats 25/25    very hard · avg 0.3%     20%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   74.0%  █··▂▃▇▄█▂▄●▁ beats 75/77    very hard · avg 9.4%     15%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     79.2%  █▆▆▆▆▂▆▂▂▂●▅ beats 29/32    very hard · avg 1.2%     12%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              57.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 64/81    very hard · avg 8.0%    2.6%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   94.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 203/211  hard · avg 39%          1.5%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>              78.1%  ▄▂·▆█▂█▆▄▆·● beats 25/25    very hard · avg 0.3%     16%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   74.0%  █··▂▃▇▄█▂▄●▁ beats 75/77    very hard · avg 9.4%     12%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     79.2%  █▆▆▆▆▂▆▂▂▂●▅ beats 29/32    very hard · avg 1.2%     10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              57.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 64/81    very hard · avg 8.0%    2.1%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   94.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 203/211  hard · avg 39%          1.3%  sharp · maxed out
 </pre>
 
 </details>
@@ -75,11 +76,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        8   75% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   14% ▇▇
-<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-6-1-terra#a-significant-step-up-on-factuality-and-coding">OpenAI vendor-reported benchmark scores…</a>        1   11% ▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        8   63% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   28% ▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-6-1-terra#a-significant-step-up-on-factuality-and-coding">OpenAI vendor-reported benchmark scores…</a>        1    9% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 83.8
+weighted average                                   = 83.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

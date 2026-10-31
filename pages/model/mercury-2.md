@@ -16,28 +16,28 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▂▄▆●▇▅▄▃▁   #248 of 537*     63%      1
-chat &amp; writing  ▁▁▁▃▅▄▇█●▇▇▃   #202 of 472*     36%      1
+coding          ▁▁▁▃▄▆●▇▅▄▃▁   #248 of 539*     63%      1
+chat &amp; writing  ▁▁▁▃▅▄▇█●▇▇▃   #204 of 474*     36%      1
 </pre>
 
-<details><summary>coding · #248 of 537 · 63% of its score</summary>
+<details><summary>coding · #248 of 539 · 63% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Falcon-H1R 7B](falcon-h1r-7b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1170.4  ▁●▃▂▅█▃▆▅▅▁▂ beats 3/129  avg 982        63%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1170.4  ▁●▃▂▅█▃▆▅▅▁▂ beats 3/129  avg 981        63%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #202 of 472 · 36% of its score</summary>
+<details><summary>chat &amp; writing · #204 of 474 · 36% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1342.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 181/385  avg 1259       36%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1342.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 181/385  avg 1260       36%  blunt
 </pre>
 
 </details>

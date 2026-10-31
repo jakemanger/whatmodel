@@ -6,7 +6,7 @@
 
 UIUC ConvAI & Oumi (CoALM) · released 2025-02 · 8.03B params · cc-by-nc-4.0
 
-**score 49.3** ±3.8 · #502 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.3** ±3.8 · #503 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▅▄▄▃▃▂▁   #277 of 347*     94%      2
+agent tasks  ▁▁▃●█▅▅▄▄▄▁▁   #280 of 350*     94%      2
 </pre>
 
-<details><summary>agent tasks · #277 of 347 · 94% of its score</summary>
+<details><summary>agent tasks · #280 of 350 · 94% of its score</summary>
 
-Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3 1.7B](qwen3-1-7b.md) here, though they rank lower overall.
+Beats [o3-mini](o3-mini.md), [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why

@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 36.4** ±2.1 · #616 of 731 · from 3 benchmark results across 2 sources
+**score 36.3** ±2.1 · #618 of 732 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #387 of 401*     88%      2
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #388 of 402*     88%      2
 </pre>
 
-<details><summary>chat &amp; writing · #387 of 401 · 88% of its score</summary>
+<details><summary>chat &amp; writing · #388 of 402 · 88% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   88% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1   10% ▇
 prior: pull toward the middle                   2% ▇
-weighted average                              = 36.4
+weighted average                              = 36.3
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

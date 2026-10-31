@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▄▅▄▄▄▁▁   #237 of 352*    6.7%      1
-coding              ▁▁▁▂▄▆█●▅▄▃▁   #208 of 537*    8.4%      1
-chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #148 of 472*     14%      1
-math                ▁▁▃▆██●█▄▁▁▁   #210 of 528*     34%      2
+agent tasks         ▁▁▂▆●▄▅▄▄▃▁▁   #238 of 354*    6.8%      1
+coding              ▁▁▁▃▄▆█●▅▄▃▁   #210 of 539*    8.4%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #149 of 474*     14%      1
+math                ▁▁▃▆██●█▃▁▁▁   #211 of 530*     34%      2
 vision &amp; documents  ▁▁▂▃▂▃▅●▆██▄   #120 of 189*    9.4%      1
 </pre>
 
-<details><summary>agent tasks · #237 of 352 · 6.7% of its score</summary>
+<details><summary>agent tasks · #238 of 354 · 6.8% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   37.6%  ▁▁▁▂██●▅▆▂▂▂ beats 43/77  hard · avg 31%    6.7%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   37.6%  ▁▁▁▂██●▅▆▂▂▂ beats 43/77  hard · avg 31%    6.8%  at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #208 of 537 · 8.4% of its score</summary>
+<details><summary>coding · #210 of 539 · 8.4% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -45,25 +45,25 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #148 of 472 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #149 of 474 · 14% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 227/385  avg 1259       14%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 227/385  avg 1260       14%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #210 of 528 · 34% of its score</summary>
+<details><summary>math · #211 of 530 · 34% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 66/92   hard · avg 28%           23%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   32.2%  ▃▃▄▃▃●▇▇█▃▂▅ beats 68/197  very hard · avg 7.1%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   32.2%  ▃▃▄▃▃●▇▇█▃▂▅ beats 68/197  very hard · avg 7.2%     11%  sharp · at its level · noisy
 </pre>
 
 </details>

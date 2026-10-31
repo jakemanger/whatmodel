@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-03 · 8.54B params · other (gemma-terms-of-use)
 
-**score 46.9** ±2.4 · #441 of 731 · from 3 benchmark results across 3 sources
+**score 46.9** ±2.4 · #441 of 732 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

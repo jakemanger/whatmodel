@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 70.55B params · llama3.1
 
-**score 53.6** ±2.6 · #380 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 53.6** ±2.6 · #381 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

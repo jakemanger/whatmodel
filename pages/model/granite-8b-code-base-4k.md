@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 40.5** ±1.1 · #555 of 731 · from 10 benchmark results across 3 sources
+**score 40.5** ±1.1 · #555 of 732 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁    #391 of 468     75%      6
-math    ▁▁▃▅█●▄█▄▂▁▁   #203 of 429*     10%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁    #392 of 469     75%      6
+math    ▁▁▃▅█●▄█▄▂▁▁   #206 of 431*     10%      2
 </pre>
 
-<details><summary>coding · #391 of 468 · 75% of its score</summary>
+<details><summary>coding · #392 of 469 · 75% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #203 of 429 · 10% of its score</summary>
+<details><summary>math · #206 of 431 · 10% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall.
 

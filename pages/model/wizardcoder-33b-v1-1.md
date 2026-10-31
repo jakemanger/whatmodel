@@ -6,7 +6,7 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 50.9** ±0.7 · #350 of 731 · from 5 benchmark results across 3 sources
+**score 50.9** ±0.7 · #351 of 732 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁   #268 of 468     83%      2
+coding  ▁▁▁▃▅▇●▇▅▄▃▁   #269 of 469     83%      2
 </pre>
 
-<details><summary>coding · #268 of 468 · 83% of its score</summary>
+<details><summary>coding · #269 of 469 · 83% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 

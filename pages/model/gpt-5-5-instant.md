@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃   #34 of 472*    9.5%      1
-math                ▁▁▃▆██▅●▄▁▁▁   #144 of 528     59%      3
+chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃   #34 of 474*    9.4%      1
+math                ▁▁▃▆██▅●▃▁▁▁   #145 of 530     59%      3
 vision &amp; documents  ▁▁▂▃▂▃▅▄▆█●▄    #29 of 189     15%      3
 </pre>
 
-<details><summary>chat &amp; writing · #34 of 472 · 9.5% of its score</summary>
+<details><summary>chat &amp; writing · #34 of 474 · 9.4% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1473.2  ▁▁▁▂▃▃▃▆▆▇●▃ beats 350/385  avg 1259      9.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1473.2  ▁▁▁▂▃▃▃▆▆▇●▃ beats 350/385  avg 1260      9.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #144 of 528 · 59% of its score</summary>
+<details><summary>math · #145 of 530 · 59% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 test                       result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   26.3%  ▂··▁▁▃●▄█▆▄▃ beats 18/86   very hard · avg 1.2%     41%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       2.4%  ▁●▁▂█▅▂▃▂▁▁▁ beats 5/67    very hard · avg 0.1%     14%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    68.1%  ▃▃▄▃▃▃●▇█▃▂▅ beats 98/197  very hard · avg 7.1%    4.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    68.1%  ▃▃▄▃▃▃●▇█▃▂▅ beats 98/197  very hard · avg 7.2%    4.3%  sharp · noisy
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1276.1  ▁▁▂▂▂▂▃▄▅▅█● beats 127/152  avg 1061          6.3%  blunt
 <a href="https://openai.com/index/gpt-5-5-instant">CharXiv (reasoning questions) (la…</a>   81.6%  ▄··▂█··▂···● beats 8/9      hard · avg 32%    5.3%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1460.3  ▁▁▃▃▄▃▇●▅▇▄▅ beats 17/37    avg 1331          3.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1460.3  ▁▁▃▃▄▃▇●▅▇▄▅ beats 17/37    avg 1331          3.2%  blunt
 </pre>
 
 </details>

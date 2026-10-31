@@ -7,7 +7,7 @@ This is the prompt for the scheduled agent that keeps `data/` current. Prepare u
 You collect raw facts: benchmark results, prices, run commands and measured speeds. You never assign
 scores or rankings. The score is computed from `data/results.json` by `lib/score.ts`, one fit per category.
 
-Categories: `llm` (default), `image`, `video`, `tts`, `stt`. Benchmarks and their category are in
+Categories: `llm` (default), `image`, `video`, `tts`, `stt`, `decision`. Benchmarks and their category are in
 `data/benchmarks.json`.
 
 Task membership is explicitly reviewed in `data/tasks.json`. Assign a new benchmark only to tasks

@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others         rank  counts  tests
 agent tasks         ······●·····      #1 of 1*     31%      1
-chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃   #54 of 472*     40%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇▇●▃   #53 of 474*     40%      1
 vision &amp; documents  ▁▁▂▃▂▃▅▄▆█●▄   #47 of 189*     27%      1
 </pre>
 
@@ -30,13 +30,13 @@ test                    result  vs the others in its run  difficulty      counts
 
 </details>
 
-<details><summary>chat &amp; writing · #54 of 472 · 40% of its score</summary>
+<details><summary>chat &amp; writing · #53 of 474 · 40% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1456.1  ▁▁▁▂▃▃▃▆▆▇●▃ beats 331/385  avg 1259       40%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1456.1  ▁▁▁▂▃▃▃▆▆▇●▃ beats 331/385  avg 1260       40%  blunt
 </pre>
 
 </details>

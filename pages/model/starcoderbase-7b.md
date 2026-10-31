@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 7.53B params · bigcode-openrail-m
 
-**score 32.7** ±0.7 · #645 of 731 · from 16 benchmark results across 4 sources
+**score 32.7** ±0.7 · #646 of 732 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #443 of 468     94%      9
-math    ▁▁●▅█▇▄█▄▂▁▁   #391 of 429    5.9%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #444 of 469     94%      9
+math    ▁▁●▅█▆▄█▄▂▁▁   #394 of 431    5.9%      2
 </pre>
 
-<details><summary>coding · #443 of 468 · 94% of its score</summary>
+<details><summary>coding · #444 of 469 · 94% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #391 of 429 · 5.9% of its score</summary>
+<details><summary>math · #394 of 431 · 5.9% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 

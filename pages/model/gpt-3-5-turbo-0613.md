@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▂▄▆●▇▅▄▃▁    #333 of 537     17%      4
-chat &amp; writing  ▁▁▁▃▅●▇█▇▇▇▃    #357 of 472     42%      4
-math            ▁▁▃▆█●▅█▄▁▁▁   #224 of 528*    4.0%      1
+coding          ▁▁▁▃▄▆●▇▅▄▃▁    #335 of 539     18%      4
+chat &amp; writing  ▁▁▁▃▅●▇█▇▇▇▃    #358 of 474     42%      4
+math            ▁▁▃▆█●▅█▃▁▁▁   #225 of 530*    4.0%      1
 </pre>
 
-<details><summary>coding · #333 of 537 · 17% of its score</summary>
+<details><summary>coding · #335 of 539 · 18% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #357 of 472 · 42% of its score</summary>
+<details><summary>chat &amp; writing · #358 of 474 · 42% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -44,12 +44,12 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             22.4%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 57/122  medium · avg 35%             20%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.8%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 24/60   medium · avg 47%             13%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1161.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 70/95   avg 1187                    5.2%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.536 MT-Bench scor…    4.0%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.539 MT-Bench scor…    4.0%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #224 of 528 · 4.0% of its score</summary>
+<details><summary>math · #225 of 530 · 4.0% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 30.9** ±0.6 · #655 of 731 · from 37 benchmark results across 9 sources
+**score 30.9** ±0.6 · #656 of 732 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁    #445 of 468     67%      7
-math    ▁▁▃▅●▇▄█▄▂▁▁   #329 of 429*    3.9%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁    #447 of 469     67%      7
+math    ▁▁▃▅●▆▄█▄▂▁▁   #334 of 431*    3.9%      2
 </pre>
 
-<details><summary>coding · #445 of 468 · 67% of its score</summary>
+<details><summary>coding · #447 of 469 · 67% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -37,9 +37,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #329 of 429 · 3.9% of its score</summary>
+<details><summary>math · #334 of 431 · 3.9% of its score</summary>
 
-Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall.
 
 <pre>
 test         result  vs the others in its run   difficulty        counts  why

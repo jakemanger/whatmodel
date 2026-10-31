@@ -6,7 +6,7 @@
 
 Google · released 2026-10 · closed weights
 
-**score 83.3** ±1.4 · #4 of 731 · from 3 benchmark results across 1 source
+**score 83.4** ±1.3 · #4 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,40 +16,40 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others        rank  counts  tests
-agent tasks     ▁▁▃▆█▄▅▅▄▄▂●   #2 of 312*     46%      1
-coding          ▁▁▁▃▅▇█▇▅▄▃●   #3 of 468*     34%      1
-chat &amp; writing  ▁▁▁▃▆▄▆█▆▇▇●   #1 of 401*     19%      1
+agent tasks     ▁▁▃▆█▄▅▅▄▄▂●   #2 of 313*     48%      1
+coding          ▁▁▁▃▅▇█▇▅▄▃●   #3 of 469*     33%      1
+chat &amp; writing  ▁▁▁▃▆▄▆█▆▇▇●   #1 of 402*     19%      1
 </pre>
 
-<details><summary>agent tasks · #2 of 312 · 46% of its score</summary>
+<details><summary>agent tasks · #2 of 313 · 48% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall.
 
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1604 IPS  ▁▁▁▃▃▃█▁▁▂●▁ beats 53/54  avg -0.382 IPS     46%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1604 IPS  ▁▁▁▃▃▂█▁▂▂●▁ beats 58/59  avg -0.379 IPS     48%  sharp
 </pre>
 
 </details>
 
-<details><summary>coding · #3 of 468 · 34% of its score</summary>
+<details><summary>coding · #3 of 469 · 33% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1768.2  ▁▁▃▂▅█▃▆▅▅▁● beats 126/129  avg 982        34%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1768.2  ▁▁▃▂▅█▃▆▅▅▁● beats 126/129  avg 981        33%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #1 of 401 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #1 of 402 · 19% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1527.5  ▁▁▁▂▃▃▃▆▆▇█● beats 385/385  avg 1259       19%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1527.5  ▁▁▁▂▃▃▃▆▆▇█● beats 385/385  avg 1260       19%  blunt
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 83.3
+weighted average                        = 83.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

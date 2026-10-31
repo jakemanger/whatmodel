@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆●▄▅▄▄▄▁▁   #244 of 352*    3.2%      1
+agent tasks     ▁▁▂▆●▄▅▄▄▃▁▁   #246 of 354*    3.2%      1
 coding          ▃●······▃·▃▃       #4 of 7*    7.9%      1
-chat &amp; writing  ▁▁▁▃▅▄▇●▇▇▇▃   #263 of 472*     17%      1
-math            ▁▁▃▆█●▅█▄▁▁▁   #235 of 528*     45%      2
+chat &amp; writing  ▁▁▁▃▅▄▇●▇▇▇▃   #265 of 474*     17%      1
+math            ▁▁▃▆█●▅█▃▁▁▁   #236 of 530*     45%      2
 </pre>
 
-<details><summary>agent tasks · #244 of 352 · 3.2% of its score</summary>
+<details><summary>agent tasks · #246 of 354 · 3.2% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -42,20 +42,20 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #263 of 472 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #265 of 474 · 17% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Granite 4.2 8B](granite-4-2-8b.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1304.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 132/385  avg 1259       17%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1304.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 132/385  avg 1260       17%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #235 of 528 · 45% of its score</summary>
+<details><summary>math · #236 of 530 · 45% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why

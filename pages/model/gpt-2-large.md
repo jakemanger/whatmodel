@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-08 · 0.774B params · mit
 
-**score -3.0** ±1.3 · #726 of 731 · from 35 benchmark results across 9 sources
+**score -3.0** ±1.3 · #727 of 732 · from 35 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▅█▇▄█▄▂▁▁   #429 of 429*    0.4%      1
+math  ●▁▃▅█▆▄█▄▂▁▁   #431 of 431*    0.4%      1
 </pre>
 
-<details><summary>math · #429 of 429 · 0.4% of its score</summary>
+<details><summary>math · #431 of 431 · 0.4% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-2 Medium (355M)](gpt-2-medium.md), [GPT-Neo 125M](gpt-neo-125m.md) here, though they rank lower overall.
 

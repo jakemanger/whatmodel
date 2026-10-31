@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 33.34B params · deepseek
 
-**score 51.1** ±0.6 · #345 of 731 · from 16 benchmark results across 7 sources
+**score 51.1** ±0.6 · #346 of 732 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁   #266 of 468     74%     10
+coding  ▁▁▁▃▅▇●▇▅▄▃▁   #267 of 469     74%     10
 </pre>
 
-<details><summary>coding · #266 of 468 · 74% of its score</summary>
+<details><summary>coding · #267 of 469 · 74% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              41.8%  ▃▂·▆▆██▆●▃▃▃ beats 27/33  medium · avg 39%    4.9%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              51.1%  ▂▁▁▄▂▅▇█▆●▂▂ beats 52/58  medium · avg 48%    4.7%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--deepseek-coder-33b-instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   77.5%  ▂·▂▂▂▆▅●▆▆▃█ beats 13/29  easy · avg 74%      2.3%  typical
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   17.5%  ●··▃▅·█·▃██▃ beats 1/15   hard · avg 22%      2.3%  typical
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   17.5%  ●··▃▅·█·▃██▃ beats 1/15   hard · avg 23%      2.3%  typical
 </pre>
 
 </details>

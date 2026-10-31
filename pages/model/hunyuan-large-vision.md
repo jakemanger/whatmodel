@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅▆●▇▆▆▂   #327 of 585*     59%      1
+chat &amp; writing      ▁▁▁▃▅▅▆●▇▆▆▂   #329 of 587*     58%      1
 vision &amp; documents  ▁▁▃▃▂▃●▄▇██▄   #129 of 206*     39%      1
 </pre>
 
-<details><summary>chat &amp; writing · #327 of 585 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #329 of 587 · 58% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1293.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 126/385  avg 1259       59%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1293.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 126/385  avg 1260       58%  blunt
 </pre>
 
 </details>

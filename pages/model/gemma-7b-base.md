@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 37.1** ±0.5 · #606 of 731 · from 37 benchmark results across 9 sources
+**score 37.1** ±0.5 · #607 of 732 · from 37 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▃▁   #423 of 468     70%      7
-math    ▁▁▃▅█●▄█▄▂▁▁   #224 of 429    5.6%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #425 of 469     70%      7
+math    ▁▁▃▅█●▄█▄▂▁▁   #227 of 431    5.6%      2
 </pre>
 
-<details><summary>coding · #423 of 468 · 70% of its score</summary>
+<details><summary>coding · #425 of 469 · 70% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #224 of 429 · 5.6% of its score</summary>
+<details><summary>math · #227 of 431 · 5.6% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 

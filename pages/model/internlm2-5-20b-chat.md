@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-08 · 19.9B params · other
 
-**score 47.0** ±1.5 · #436 of 731 · from 7 benchmark results across 4 sources
+**score 47.0** ±1.5 · #437 of 732 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁    #236 of 468     19%      4
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #315 of 401*     74%      2
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #237 of 469     19%      4
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #316 of 402*     74%      2
 </pre>
 
-<details><summary>coding · #236 of 468 · 19% of its score</summary>
+<details><summary>coding · #237 of 469 · 19% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   70.7%  ▃··▁▂▂▃▂█●▄▂ beats 38/47  medium · avg 51%    7.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   70.7%  ▃··▁▂▂▃▂█●▄▂ beats 38/47  medium · avg 51%    6.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   55.3%  █▂▁▁▂▂▂▃▅▅●▇ beats 38/47  hard · avg 33%      6.5%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   33.4%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 32/47  hard · avg 32%      5.4%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 30/47  easy · avg 67%      0.2%  blunt · at its level · noisy
@@ -34,14 +34,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #315 of 401 · 74% of its score</summary>
+<details><summary>chat &amp; writing · #316 of 402 · 74% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   31.2%  ▂▁▁▅█●▄▃▃▅▃▁ beats 26/60   medium · avg 47%     52%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1190.8  ▁▁▁▂●▃▃▆▆▇█▃ beats 64/385  avg 1259             23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1190.8  ▁▁▁▂●▃▃▆▆▇█▃ beats 64/385  avg 1260             23%  blunt
 </pre>
 
 </details>

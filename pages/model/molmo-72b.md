@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
-**score 50.4** ±1.7 · #363 of 731 · from 17 benchmark results across 4 sources
+**score 50.4** ±1.7 · #363 of 732 · from 17 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▁▃▅●▇▄█▄▂▁▁   #313 of 429*     15%      1
-vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄    #129 of 154     99%     13
+math                ▁▁▃▅●▆▄█▄▂▁▁   #311 of 431*     15%      1
+vision &amp; documents  ▁▁▂▂●▃▄▂▆▇█▄    #128 of 153     99%     13
 </pre>
 
-<details><summary>math · #313 of 429 · 15% of its score</summary>
+<details><summary>math · #311 of 431 · 15% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
 test                  result  vs the others in its run  difficulty        counts  why
@@ -31,7 +31,7 @@ test                  result  vs the others in its run  difficulty        counts
 
 </details>
 
-<details><summary>vision &amp; documents · #129 of 154 · 99% of its score</summary>
+<details><summary>vision &amp; documents · #128 of 153 · 99% of its score</summary>
 
 Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md), [Nova Pro](nova-pro.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                                                         result  vs the othe
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1044.8  ▁▁▂▂●▂▃▄▅▅█▇ beats 21/152  avg 1061                     20%  blunt
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    52.7%  ▂·▂······●▄▄ beats 5/9     medium · avg 53%             16%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          52.2%  ▂····▂···▂●▆ beats 4/9     medium · avg 59%             15%  at its level · small run · several runs
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.5100 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 0/9     avg 5.602 MM-MT-Bench s…    9.2%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.5100 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 0/9     avg 5.605 MM-MT-Bench s…    9.2%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   75.2%  ▃···█▃··●▃▃▃ beats 5/9     easy · avg 73%              8.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                          81.9%  ▃·▃▅█▃▃●▃▃▃▃ beats 9/13    easy · avg 78%              7.9%  small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                              91.2%  ▂▂▃▂·▂▂●▃·▅█ beats 7/18    very easy · avg 91%         6.6%  small run

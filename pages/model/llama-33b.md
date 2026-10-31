@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▄▆█▇▅▄▃▁   #506 of 537     13%      2
-math    ▁▁▃▆●█▅█▄▁▁▁   #345 of 528     19%      3
+coding  ▁▁▁●▄▆█▇▅▄▃▁   #508 of 539     13%      2
+math    ▁▁▃▆●█▅█▃▁▁▁   #347 of 530     19%      3
 </pre>
 
-<details><summary>coding · #506 of 537 · 13% of its score</summary>
+<details><summary>coding · #508 of 539 · 13% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test       result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #345 of 528 · 19% of its score</summary>
+<details><summary>math · #347 of 530 · 19% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-30B/llama-30B_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   86.8%  ▄▄·▄·▄··█··● beats 7/7    very easy · avg 93%    0.6%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   52.4%  █▁····●▁·▁·▁ beats 10/14  hard · avg 66%         0.6%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   72.2%  ▂▂··▂·█···▂● beats 8/8    easy · avg 79%         0.5%  blunt · at its level
-<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     50.4%  ▁·▁██▄●▁▂▃▇▁ beats 35/59  medium · avg 62%       0.5%  blunt · at its level
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     50.4%  ▁·▁██▄●▁▂▃▇▁ beats 35/59  medium · avg 63%       0.5%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 26.5%  ▅▃▅··●···▃▃█ beats 5/10   hard · avg 37%         0.1%  blunt · noisy
 </pre>
 

@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
-**score 46.9** ±0.8 · #440 of 731 · from 3 benchmark results across 1 source
+**score 46.9** ±0.8 · #440 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #324 of 468    100%      3
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #325 of 469    100%      3
 </pre>
 
-<details><summary>coding · #324 of 468 · 100% of its score</summary>
+<details><summary>coding · #325 of 469 · 100% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 

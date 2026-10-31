@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 47.1** ±1.1 · #432 of 731 · from 11 benchmark results across 4 sources
+**score 47.1** ±1.1 · #433 of 732 · from 11 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #306 of 468     65%      7
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #308 of 469     65%      7
 </pre>
 
-<details><summary>coding · #306 of 468 · 65% of its score</summary>
+<details><summary>coding · #308 of 469 · 65% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

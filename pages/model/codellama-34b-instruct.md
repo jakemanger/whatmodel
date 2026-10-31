@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.7B params · llama2
 
-**score 41.6** ±0.7 · #538 of 731 · from 16 benchmark results across 7 sources
+**score 41.6** ±0.7 · #538 of 732 · from 16 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #368 of 468     57%      6
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #366 of 401*    8.8%      2
-math            ▁▁▃▅●▇▄█▄▂▁▁   #297 of 429*    3.4%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #369 of 469     57%      6
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #367 of 402*    8.8%      2
+math            ▁▁▃▅●▆▄█▄▂▁▁   #301 of 431*    3.4%      1
 </pre>
 
-<details><summary>coding · #368 of 468 · 57% of its score</summary>
+<details><summary>coding · #369 of 469 · 57% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -37,19 +37,19 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #366 of 401 · 8.8% of its score</summary>
+<details><summary>chat &amp; writing · #367 of 402 · 8.8% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1136.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 29/385  avg 1259      4.6%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1136.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 29/385  avg 1260      4.6%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1070.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 33/95   avg 1187      4.2%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #297 of 429 · 3.4% of its score</summary>
+<details><summary>math · #301 of 431 · 3.4% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 

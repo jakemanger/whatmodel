@@ -197,6 +197,7 @@ export const PRICE_AXIS: Record<string, string> = {
   video: "USD per second of video",
   tts: "USD per 1M characters",
   stt: "USD per audio minute",
+  decision: "USD per million input tokens",
 };
 
 type RowLike = { id: string; name: string; score: number | null; price: number | null; need_gb: number | null; open_weights: boolean };

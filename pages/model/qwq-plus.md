@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 61.2** ±2.3 · #215 of 961 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.2** ±2.3 · #215 of 962 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃▅▇▆▄●▄▂▁▁   #153 of 431*    7.2%      1
+math  ▁▁▃▅█▆▄●▄▂▁▁   #153 of 433*    7.2%      1
 </pre>
 
-<details><summary>math · #153 of 431 · 7.2% of its score</summary>
+<details><summary>math · #153 of 433 · 7.2% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 

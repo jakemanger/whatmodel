@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 7B params · llama2
 
-**score 35.0** ±1.1 · #627 of 731 · from 10 benchmark results across 7 sources
+**score 35.0** ±1.1 · #627 of 732 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #378 of 401     55%      4
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #379 of 402     55%      4
 </pre>
 
-<details><summary>chat &amp; writing · #378 of 401 · 55% of its score</summary>
+<details><summary>chat &amp; writing · #379 of 402 · 55% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              7.6%  ▁▂▂●▆▆█▆▄▄▁▁ beats 16/122  medium · avg 35%             19%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1115.4  ▁▁▁●▃▃▃▆▆▇█▃ beats 20/385  avg 1259                     14%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1115.4  ▁▁▁●▃▃▃▆▆▇█▃ beats 20/385  avg 1260                     14%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1058.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 29/95   avg 1187                     12%  typical
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.1700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 13/28   avg 8.536 MT-Bench scor…     10%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.1700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 13/28   avg 8.539 MT-Bench scor…     10%  sharp · noisy
 </pre>
 
 </details>

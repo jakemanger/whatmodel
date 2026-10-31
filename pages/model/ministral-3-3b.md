@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 46.1** ±0.8 · #452 of 731 · from 33 benchmark results across 8 sources
+**score 46.1** ±0.8 · #453 of 732 · from 33 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▄▅▅▄▄▂▁   #295 of 312*    1.7%      1
-chat &amp; writing      ▁▁▁▃●▄▆█▆▇▇▃   #335 of 401*    3.6%      2
-math                ▁▁▃▅●▇▄█▄▂▁▁    #273 of 429     28%      4
-vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #137 of 154     10%      9
+agent tasks         ▁▁●▆█▄▅▅▄▄▂▁   #296 of 313*    1.7%      1
+chat &amp; writing      ▁▁▁▃●▄▆█▆▇▇▃   #336 of 402*    3.6%      2
+math                ▁▁▃▅●▆▄█▄▂▁▁    #275 of 431     28%      4
+vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #136 of 153     10%      9
 </pre>
 
-<details><summary>agent tasks · #295 of 312 · 1.7% of its score</summary>
+<details><summary>agent tasks · #296 of 313 · 1.7% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #335 of 401 · 3.6% of its score</summary>
+<details><summary>chat &amp; writing · #336 of 402 · 3.6% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #273 of 429 · 28% of its score</summary>
+<details><summary>math · #275 of 431 · 28% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                         result  vs the others in its run  difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #137 of 154 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #136 of 153 · 10% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 
@@ -107,7 +107,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   50% ▇▇▇▇▇▇
 <a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   19% ▇▇
-<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   16% ▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   17% ▇▇
 <a name="card-mistralai-ministral-3-14b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">mistralai/Ministral-3-14B-Instruct-2512…</a>        2    6% ▇
 <a name="card-mistralai-ministral-3-8b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md">mistralai/Ministral-3-8B-Instruct-2512 …</a>        1    4% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇

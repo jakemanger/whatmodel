@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 44.7** ±0.5 · #483 of 731 · from 38 benchmark results across 10 sources
+**score 44.7** ±0.5 · #484 of 732 · from 38 benchmark results across 10 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #237 of 312*    0.4%      1
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #338 of 468     12%      5
+agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #238 of 313*    0.4%      1
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #339 of 469     12%      5
 chat &amp; writing  ●··········█       #2 of 2*    0.4%      1
-math            ▁▁▃●█▇▄█▄▂▁▁    #360 of 429     21%      5
+math            ▁▁▃●█▆▄█▄▂▁▁    #362 of 431     21%      5
 </pre>
 
-<details><summary>agent tasks · #237 of 312 · 0.4% of its score</summary>
+<details><summary>agent tasks · #238 of 313 · 0.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nova 2 Lite](nova-2-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #338 of 468 · 12% of its score</summary>
+<details><summary>coding · #339 of 469 · 12% of its score</summary>
 
 Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -52,12 +52,12 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecified) …</a>   50.6%  ▁▂●▂▂▄▆█▇▄▂▁ beats 9/143  easy · avg 73%    0.4%  at its level · small run
+<a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecified) …</a>   50.6%  ▁▂●▂▂▄▆██▅▂▁ beats 9/145  easy · avg 74%    0.4%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #360 of 429 · 21% of its score</summary>
+<details><summary>math · #362 of 431 · 21% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
@@ -100,7 +100,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (lab)</a>        14.3%  ▁●··▁▁▂▅█▅▅▅ beats 1/49     hard · avg 34%         0.3%  at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (lab)</a>                           78.2%  ▃·▅·▃●·▃▅··▃ beats 5/10     medium · avg 82%       0.3%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.9%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 85/140   very easy · avg 94%    0.2%  blunt · noisy
-<a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">LIBRA Mini (Russian long context,…</a>   28.3%  ●···▄█·██··▄ beats 0/8      medium · avg 37%       0.1%  blunt · at its level
+<a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">LIBRA Mini (Russian long context,…</a>   28.3%  ●···▄█·██··▄ beats 0/8      medium · avg 38%       0.1%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2 (lab)</a>                 65.2%  ▂·█●▂▄····▂▂ beats 5/10     medium · avg 64%       0.1%  blunt · at its level
 </pre>
 

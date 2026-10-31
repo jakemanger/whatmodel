@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 111B params · tongyi-qianwen
 
-**score 48.4** ±0.8 · #401 of 731 · from 8 benchmark results across 7 sources
+**score 48.4** ±0.8 · #402 of 732 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▃▁   #341 of 468*     14%      1
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃    #285 of 401     41%      3
+coding          ▁▁▁▃▅●█▇▅▄▃▁   #342 of 469*     14%      1
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃    #286 of 402     40%      3
 </pre>
 
-<details><summary>coding · #341 of 468 · 14% of its score</summary>
+<details><summary>coding · #342 of 469 · 14% of its score</summary>
 
 Beats [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -31,14 +31,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #285 of 401 · 41% of its score</summary>
+<details><summary>chat &amp; writing · #286 of 402 · 40% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       43.9%  ▁▂▂▃▆▆█▆●▄▁▁ beats 100/122  medium · avg 35%     27%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1234.2  ▁▁▁▂▃●▃▆▆▇█▃ beats 85/385   avg 1259            7.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1234.2  ▁▁▁▂▃●▃▆▆▇█▃ beats 85/385   avg 1260            7.1%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1161.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 71/95    avg 1187            6.5%  typical
 </pre>
 

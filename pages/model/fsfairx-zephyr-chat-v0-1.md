@@ -6,7 +6,7 @@
 
 sfairXC (RLHFlow) · released 2024-04 · 7.24B params · cc-by-sa-4.0
 
-**score 49.9** ±1.5 · #485 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.9** ±1.5 · #486 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #300 of 472*     99%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▃   #301 of 473*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #300 of 472 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #301 of 473 · 99% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

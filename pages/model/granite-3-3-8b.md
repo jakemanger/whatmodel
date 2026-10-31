@@ -6,7 +6,7 @@
 
 IBM · released 2025-04 · 8.17B params · apache-2.0
 
-**score 46.9** ±1.2 · #439 of 731 · from 13 benchmark results across 4 sources
+**score 46.8** ±1.2 · #442 of 732 · from 13 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #269 of 401*     12%      2
-math            ▁▁▃▅█●▄█▄▂▁▁    #247 of 429     46%      5
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #272 of 402*     12%      2
+math            ▁▁▃▅█●▄█▄▂▁▁    #249 of 431     46%      5
 </pre>
 
-<details><summary>chat &amp; writing · #269 of 401 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #272 of 402 · 12% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   57.6%  █·▄··▄·····● beats 5/5    medium · avg 55%    6.3%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   74.8%  ▄▄·▄······▄● beats 5/5    easy · avg 78%      5.6%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   74.8%  ▄▄·▄······▄● beats 5/5    easy · avg 78%      5.5%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #247 of 429 · 46% of its score</summary>
+<details><summary>math · #249 of 431 · 46% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
@@ -72,7 +72,7 @@ source                                    results  share of the score
 <a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 46.9
+weighted average                                   = 46.8
 </pre>
 
 <sub>Licences: ibm-granite/granite-3.3-8b-instruct model card ([Apache-2.0](../../licenses/ibm-granite--granite-3.3-8b-instruct.txt)) · allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

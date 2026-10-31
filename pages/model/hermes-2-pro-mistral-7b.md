@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-03 · 7.24B params · apache-2.0
 
-**score 43.2** ±6.0 · #687 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.2** ±6.0 · #685 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▅▄▄▃▃▂▁   #324 of 347*     84%      1
+agent tasks  ▁▁●▆█▅▅▄▄▄▁▁   #327 of 350*     84%      1
 </pre>
 
-<details><summary>agent tasks · #324 of 347 · 84% of its score</summary>
+<details><summary>agent tasks · #327 of 350 · 84% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 71.5** ±0.9 · #65 of 731 · from 7 benchmark results across 3 sources
+**score 71.5** ±0.9 · #65 of 732 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▄▅●▄▄▂▁   #82 of 312*    5.1%      1
-math         ▁▁▃▅█▇▄█●▂▁▁   #50 of 429*     63%      2
-web search   ▁▁▁●▄█▃▄·▁·▁    #61 of 84*    5.1%      1
+agent tasks  ▁▁▃▆█▄▅▅●▄▂▁   #77 of 313*    5.3%      1
+math         ▁▁▃▅█▆▄█●▂▁▁   #50 of 431*     63%      2
+web search   ▁▁▁●▄█▃▄·▁·▁    #61 of 84*    5.3%      1
 </pre>
 
-<details><summary>agent tasks · #82 of 312 · 5.1% of its score</summary>
+<details><summary>agent tasks · #77 of 313 · 5.3% of its score</summary>
 
-Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
+Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.1%  at its level
+<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.3%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #50 of 429 · 63% of its score</summary>
+<details><summary>math · #50 of 431 · 63% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [GPT-5](gpt-5.md) here, though they rank lower overall.
 
@@ -44,13 +44,13 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>web search · #61 of 84 · 5.1% of its score</summary>
+<details><summary>web search · #61 of 84 · 5.3% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.1%  at its level
+<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with tools (…</a>   42.0%  ▃·▃·●····▅·█ beats 3/8    very hard · avg 12%    5.3%  at its level
 </pre>
 
 </details>
@@ -59,9 +59,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>                   88.4%  ▁▁▁▁▂▄▅▅█▇●▄ beats 256/318  hard · avg 38%           11%  sharp
+<a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>                   88.4%  ▁▁▁▁▂▄▅▅██●▄ beats 260/322  hard · avg 38%           11%  sharp
 <a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>           30.7%  ▃··▃·▃●···▃█ beats 3/7      very hard · avg 4.4%    8.1%  at its level
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    8.0%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    7.9%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-pro-2025-10-06">ARC-AGI-1 public evaluation set (…</a>   77.0%  ▁·▇▃▁·█●▁·▇▃ beats 18/27    very hard · avg 4.0%    4.4%  sharp · noisy
 </pre>
 

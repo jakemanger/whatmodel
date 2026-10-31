@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 46.3** ±1.7 · #447 of 731 · from 8 benchmark results across 8 sources
+**score 46.3** ±1.7 · #448 of 732 · from 8 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ●▁▃▆█▄▅▅▄▄▂▁   #310 of 312*    6.7%      1
-coding          ▁▁▁▃▅▇█●▅▄▃▁   #157 of 468*    2.9%      1
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #349 of 401*     30%      1
+agent tasks     ●▁▃▆█▄▅▅▄▄▂▁   #311 of 313*    6.7%      1
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #157 of 469*    2.9%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃   #353 of 402*     30%      1
 </pre>
 
-<details><summary>agent tasks · #310 of 312 · 6.7% of its score</summary>
+<details><summary>agent tasks · #311 of 313 · 6.7% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test     result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #157 of 468 · 2.9% of its score</summary>
+<details><summary>coding · #157 of 469 · 2.9% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 
@@ -43,13 +43,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #349 of 401 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #353 of 402 · 30% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1154.2  ▁▁▁▂●▃▃▆▆▇█▃ beats 43/385  avg 1259       30%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1154.2  ▁▁▁▂●▃▃▆▆▇█▃ beats 43/385  avg 1260       30%  blunt
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 39.7** ±1.4 · #571 of 731 · from 6 benchmark results across 3 sources
+**score 39.6** ±1.4 · #572 of 732 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #380 of 468     71%      3
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #381 of 469     71%      3
 </pre>
 
-<details><summary>coding · #380 of 468 · 71% of its score</summary>
+<details><summary>coding · #381 of 469 · 71% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   21% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 39.7
+weighted average                                   = 39.6
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 9.24B params · mit
 
-**score 59.9** ±1.2 · #203 of 731 · from 4 benchmark results across 4 sources
+**score 59.9** ±1.2 · #203 of 732 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #224 of 401*     80%      2
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #225 of 402*     80%      2
 </pre>
 
-<details><summary>chat &amp; writing · #224 of 401 · 80% of its score</summary>
+<details><summary>chat &amp; writing · #225 of 402 · 80% of its score</summary>
 
 Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   72.4%  ▁▂▂▃▆▆█▆▄▄▁● beats 121/122  medium · avg 35%     64%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1280.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 111/385  avg 1259             16%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1280.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 111/385  avg 1260             16%  blunt
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.2792 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 44/52    avg 42.989 WB-Score     17%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  53.2792 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 44/52    avg 43.019 WB-Score     17%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             73.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 206/276  medium · avg 72%       2.7%  noisy
 </pre>
 

@@ -6,7 +6,7 @@
 
 Google · released 2025-12 · closed weights
 
-**score 71.0** ±0.6 · #70 of 731 · from 30 benchmark results across 14 sources
+**score 71.0** ±0.6 · #69 of 732 · from 30 benchmark results across 14 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,55 +16,55 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▄▅●▄▄▂▁    #83 of 312     16%      6
-coding              ▁▁▁▃▅▇█▇▅●▃▁    #74 of 468     16%      3
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #32 of 401*    3.9%      1
-math                ▁▁▃▅█▇▄█●▂▁▁    #55 of 429     37%      6
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇●▄    #29 of 154     10%      5
+agent tasks         ▁▁▃▆█▄▅●▄▄▂▁    #82 of 313     16%      6
+coding              ▁▁▁▃▅▇█▇▅●▃▁    #73 of 469     16%      3
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃   #32 of 402*    3.9%      1
+math                ▁▁▃▅█▆▄█●▂▁▁    #55 of 431     37%      6
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇●▄    #29 of 153     10%      5
 web search          ▁▁▁▅▄●▃▄·▁·▁    #41 of 84*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #83 of 312 · 16% of its score</summary>
+<details><summary>agent tasks · #82 of 313 · 16% of its score</summary>
 
 Beats [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29  hard · avg 18%          7.6%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29  hard · avg 19%          7.5%  sharp · at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   27.3%  ▃▃▂▃·▆●▂█▅▅▂ beats 12/25  very hard · avg 4.3%    2.4%  at its level
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   20.2%  ▃··▃·▃█●▃▃▃█ beats 7/14   very hard · avg 2.8%    1.6%  sharp · at its level · noisy
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   20.2%  ▃··▃·▃█●▃▃▃█ beats 7/14   very hard · avg 2.8%    1.7%  sharp · at its level · noisy
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   82.5%  ▃······▃·▃●▃ beats 4/6    medium · avg 51%        1.5%  typical
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   76.8%  ▄▄·●··▄·▄··▄ beats 3/6    medium · avg 47%        1.4%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   76.8%  ▄▄·●··▄·▄··▄ beats 3/6    medium · avg 48%        1.4%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   91.2%  █·▄●▄······▄ beats 4/6    medium · avg 64%        1.1%  typical
 </pre>
 
 </details>
 
-<details><summary>coding · #74 of 468 · 16% of its score</summary>
+<details><summary>coding · #73 of 469 · 16% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29   hard · avg 18%          7.6%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1440.1  ▁▁▃▂▅●▃▆▅▅▁▂ beats 61/129  avg 982                 6.9%  sharp
-<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   20.2%  ▃··▃·▃█●▃▃▃█ beats 7/14    very hard · avg 2.8%    1.6%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   75.4%  ▁··▁·▁▂▁▄●▄▁ beats 19/29   hard · avg 19%          7.5%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1440.1  ▁▁▃▂▅●▃▆▅▅▁▂ beats 61/129  avg 981                 6.9%  sharp
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   20.2%  ▃··▃·▃█●▃▃▃█ beats 7/14    very hard · avg 2.8%    1.7%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #32 of 401 · 3.9% of its score</summary>
+<details><summary>chat &amp; writing · #32 of 402 · 3.9% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1472.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 349/385  avg 1259      3.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1472.7  ▁▁▁▂▃▃▃▆▆▇●▃ beats 349/385  avg 1260      3.9%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #55 of 429 · 37% of its score</summary>
+<details><summary>math · #55 of 431 · 37% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
 
@@ -74,13 +74,13 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               17.1%  ▁▂▁▂●▅▂▃▂▁▁▁ beats 17/67    very hard · avg 0.1%     11%  sharp
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   58.2%  ▂··▄▂▄█●▆▄▄█ beats 12/23    hard · avg 23%          3.1%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   43.4%  ▃·▃▃█●·▄·▁▁▁ beats 12/18    hard · avg 19%          2.3%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             95.6%  ▃▃▄▃▃▃▇▇█●▂▅ beats 161/197  very hard · avg 7.1%    1.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             95.6%  ▃▃▄▃▃▃▇▇█●▂▅ beats 161/197  very hard · avg 7.2%    1.0%  sharp · noisy
 <a href="https://arxiv.org/abs/2603.26996v1">FormalProofBench (200 graduate-le…</a>   15.0%  ▃▅·▃··▅●█··▃ beats 6/10     very hard · avg 3.1%    0.7%  noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #29 of 154 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #29 of 153 · 10% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank lower overall.
 
@@ -90,7 +90,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1272.5  ▁▁▂▂▂▂▃▄▅▅●▇ beats 125/152  avg 1061               2.6%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1439.2  ▁▁▃▃●▃▇█▅▇▄▅ beats 7/37     avg 1331               1.3%  blunt
 <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question answ…</a>   84.1%  ▄·····▄▄·●·█ beats 4/6      medium · avg 56%       0.5%  blunt
-<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   56.7%  ▃·▅▃▅▃··▅··● beats 10/11    very hard · avg 32%    0.4%  at its level · noisy
+<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   56.7%  ▃·▅▃▅▃··▅··● beats 10/11    very hard · avg 33%    0.4%  at its level · noisy
 </pre>
 
 </details>

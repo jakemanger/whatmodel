@@ -82,8 +82,9 @@ export function parseSize(s: string): number | undefined {
   return Number.isFinite(gb) && gb > 0 ? Math.round(gb * 100) / 100 : undefined;
 }
 
-export const UNITS = { image: "image", video_second: "video-second", "1m_chars": "1M-chars", audio_minute: "audio-minute" } as const;
+export const UNITS = { image: "image", video_second: "video-second", "1m_chars": "1M-chars", audio_minute: "audio-minute", "1m_input_tokens": "1M-input-tokens" } as const;
 const UNIT_WORDS: [RegExp, (typeof UNITS)[keyof typeof UNITS]][] = [
+  [/^(1m|1 ?million|million)[ -]?input[ -]?tokens?$/, "1M-input-tokens"],
   [/^(image|images|img)$/, "image"],
   [/^(video[ -]?)?(second|seconds|sec|s)( of video)?$/, "video-second"],
   [/^(1m|1 ?million|million)[ -]?(chars?|characters?)$/, "1M-chars"],

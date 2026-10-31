@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 34.39B params · apache-2.0
 
-**score 47.2** ±0.7 · #426 of 731 · from 20 benchmark results across 11 sources
+**score 47.2** ±0.7 · #427 of 732 · from 20 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▃▁    #302 of 468     17%      5
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #305 of 401*    9.2%      2
-math            ▁▁▃●█▇▄█▄▂▁▁    #340 of 429     18%      3
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #303 of 469     17%      5
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #306 of 402*    9.2%      2
+math            ▁▁▃●█▆▄█▄▂▁▁    #342 of 431     18%      3
 </pre>
 
-<details><summary>coding · #302 of 468 · 17% of its score</summary>
+<details><summary>coding · #303 of 469 · 17% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -36,26 +36,26 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #305 of 401 · 9.2% of its score</summary>
+<details><summary>chat &amp; writing · #306 of 402 · 9.2% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1212.9  ▁▁▁▂▃●▃▆▆▇█▃ beats 74/385  avg 1259      4.8%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1212.9  ▁▁▁▂▃●▃▆▆▇█▃ beats 74/385  avg 1260      4.8%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1126.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 59/95   avg 1187      4.4%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #340 of 429 · 18% of its score</summary>
+<details><summary>math · #342 of 431 · 18% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md), [Gemma 2 9B IT](gemma-2-9b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          84.1%  ▁▄·▁▄█●▅▅███ beats 17/43  very easy · avg 87%    7.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 24/92  hard · avg 28%         6.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 24/92  hard · avg 28%         6.3%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   18.2%  ▁▁▁●█▂▇▇▄··▂ beats 5/38   hard · avg 30%         4.6%  sharp
 </pre>
 
@@ -68,7 +68,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             72.8%  ▁·▁▁▄▄●▅█▄▂▁ beats 17/53    easy · avg 75%          23%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        33.5%  ▃▂·▆▆●█▆▅▃▃▃ beats 12/33    medium · avg 39%       5.4%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        43.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 37/58    medium · avg 48%       5.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 42.989 WB-Score    5.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 43.019 WB-Score    5.1%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             11.5%  ▁▁▃●██▁▁·▁▁▁ beats 11/57    hard · avg 15%         4.4%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             46.6%  ▁▂▂●▃█▃▆▅▄▂▃ beats 14/95    medium · avg 65%       3.8%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.0%  ▁▁▁▁●▄▆▄▅▇█▅ beats 20/211   hard · avg 39%         3.6%  sharp

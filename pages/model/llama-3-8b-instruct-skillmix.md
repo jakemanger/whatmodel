@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅●█▇▆▆▂   #345 of 585*     99%      1
+chat &amp; writing  ▁▁▁▃▅▅●█▇▆▆▂   #347 of 587*     99%      1
 </pre>
 
-<details><summary>chat &amp; writing · #345 of 585 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #347 of 587 · 99% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 

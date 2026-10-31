@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · llama2
 
-**score 48.2** ±0.9 · #405 of 731 · from 3 benchmark results across 1 source
+**score 48.2** ±0.9 · #405 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▅●█▇▅▄▃▁   #309 of 468    100%      3
+coding  ▁▁▁▃▅●█▇▅▄▃▁   #310 of 469    100%      3
 </pre>
 
-<details><summary>coding · #309 of 468 · 100% of its score</summary>
+<details><summary>coding · #310 of 469 · 100% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

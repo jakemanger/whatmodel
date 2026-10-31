@@ -6,7 +6,7 @@
 
 Magpie-Align · released 2024-06 · 8.03B params · llama3
 
-**score 48.0** ±2.9 · #536 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±2.9 · #537 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                          result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.2902 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 29/52  avg 42.989 WB-Score     96%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.2902 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 29/52  avg 43.019 WB-Score     96%  sharp
 </pre>
 
 </details>

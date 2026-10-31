@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 3.9** ±2.4 · comparison only: no current run option verified · from 12 benchmark results across 4 sources
+**score 3.8** ±2.4 · comparison only: no current run option verified · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ●▁▃▆██▅█▄▁▁▁   #525 of 528*    4.6%      1
+math  ●▁▃▆██▅█▃▁▁▁   #527 of 530*    4.6%      1
 </pre>
 
-<details><summary>math · #525 of 528 · 4.6% of its score</summary>
+<details><summary>math · #527 of 530 · 4.6% of its score</summary>
 
 Trails [GPT-2 Small (124M)](gpt-2-small.md), [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="acl-2023-findings-acl-666"></a><a href="https://aclanthology.org/2023.findings-acl.666.pdf">LMentry: A Language Model Benchmark of …</a>        1    3% ▇
 <a name="acl-2023-emnlp-main-429"></a><a href="https://aclanthology.org/2023.emnlp-main.429.pdf">An Investigation of LLMs' Inefficacy in…</a>        1    2% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 3.9
+weighted average                                   = 3.8
 </pre>
 
 <sub>Licences: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models ([CC BY 4.0](../../licenses/paper-2201.11903v6-CC-BY-4-0.txt)) · Do Androids Laugh at Electric Sheep? Humor \`\`Understanding'' Benchmarks from The New Yorker Caption Contest ([CC BY 4.0](../../licenses/acl-2023-acl-long-41-CC-BY-4-0.txt)) · LMentry: A Language Model Benchmark of Elementary Language Tasks ([CC BY 4.0](../../licenses/acl-2023-findings-acl-666-CC-BY-4-0.txt)) · An Investigation of LLMs' Inefficacy in Understanding Converse Relations ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-429-CC-BY-4-0.txt))</sub>

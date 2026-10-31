@@ -6,7 +6,7 @@
 
 Mistral · released 2024-07 · 12.25B params · apache-2.0
 
-**score 45.9** ±0.7 · #455 of 731 · from 23 benchmark results across 15 sources
+**score 45.9** ±0.7 · #456 of 732 · from 23 benchmark results across 15 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▄▅▅▄▄▂▁    #267 of 312    4.3%      3
-coding       ▁▁▁▃▅▇●▇▅▄▃▁    #273 of 468    4.2%      4
-math         ▁▁▃●█▇▄█▄▂▁▁   #373 of 429*     15%      2
+agent tasks  ▁▁▃●█▄▅▅▄▄▂▁    #268 of 313    4.3%      3
+coding       ▁▁▁▃▅▇●▇▅▄▃▁    #274 of 469    4.2%      4
+math         ▁▁▃●█▆▄█▄▂▁▁   #375 of 431*     15%      2
 </pre>
 
-<details><summary>agent tasks · #267 of 312 · 4.3% of its score</summary>
+<details><summary>agent tasks · #268 of 313 · 4.3% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.6%  ▁▁▁▂█●▅▅▆▂▂▂ beats 22/77   hard · avg 31%      1.9%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.6%  ▁▁▁▂█●▅▅▆▂▂▂ beats 22/77   hard · avg 31%      2.0%  at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   66.1%  ●▃▃▃▆▅▆▅█▂▅▂ beats 1/31    easy · avg 78%      1.2%  at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              51.5%  ▁▁▁▁▁▃●█▅▄▁▁ beats 40/114  medium · avg 51%    1.2%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #273 of 468 · 4.2% of its score</summary>
+<details><summary>coding · #274 of 469 · 4.2% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #373 of 429 · 15% of its score</summary>
+<details><summary>math · #375 of 431 · 15% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test                         result  vs the others in its run  difficulty       
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             66.9%  ▁·▁▁▄●▄▅█▄▂▁ beats 9/53     easy · avg 75%          26%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           29.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 24/61    medium · avg 38%        19%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.3751 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 32/52    avg 42.989 WB-Score    5.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  44.3751 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 32/52    avg 43.019 WB-Score    5.7%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             58.8%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 27/95    medium · avg 65%       4.2%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             11.8%  ▁▁▃●██▁▁·▁▁▁ beats 13/57    hard · avg 15%         4.2%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Mistral-Nemo-Instruct-2407_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             57.4%  ▂·●▂▂▆▅▆▆▆▃█ beats 1/29     easy · avg 74%         3.6%  at its level

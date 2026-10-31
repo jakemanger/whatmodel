@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 40.3** ±0.6 · #559 of 731 · from 19 benchmark results across 8 sources
+**score 40.3** ±0.6 · #559 of 732 · from 19 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #381 of 468     70%      6
-chat &amp; writing  ▁●▁▃▆▄▆█▆▇▇▃   #397 of 401*    8.0%      2
-math            ▁▁▃▅█●▄█▄▂▁▁   #215 of 429*    2.8%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #383 of 469     70%      6
+chat &amp; writing  ▁●▁▃▆▄▆█▆▇▇▃   #398 of 402*    8.0%      2
+math            ▁▁▃▅█●▄█▄▂▁▁   #219 of 431*    2.8%      1
 </pre>
 
-<details><summary>coding · #381 of 468 · 70% of its score</summary>
+<details><summary>coding · #383 of 469 · 70% of its score</summary>
 
-Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
@@ -37,7 +37,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #397 of 401 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #398 of 402 · 8.0% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #215 of 429 · 2.8% of its score</summary>
+<details><summary>math · #219 of 431 · 2.8% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 43.8** ±0.9 · #504 of 731 · from 25 benchmark results across 6 sources
+**score 43.8** ±0.9 · #505 of 732 · from 25 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▄▅●▄▄▂▁   #106 of 312*    1.7%      1
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #390 of 468*    2.2%      1
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #289 of 401*    7.5%      2
-math            ▁▁▃▅●▇▄█▄▂▁▁    #262 of 429     11%      3
+agent tasks     ▁▁▃▆█▄▅●▄▄▂▁   #106 of 313*    1.7%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #391 of 469*    2.2%      1
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #290 of 402*    7.5%      2
+math            ▁▁▃▅●▆▄█▄▂▁▁    #264 of 431     11%      3
 </pre>
 
-<details><summary>agent tasks · #106 of 312 · 1.7% of its score</summary>
+<details><summary>agent tasks · #106 of 313 · 1.7% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #390 of 468 · 2.2% of its score</summary>
+<details><summary>coding · #391 of 469 · 2.2% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -44,19 +44,19 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #289 of 401 · 7.5% of its score</summary>
+<details><summary>chat &amp; writing · #290 of 402 · 7.5% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>         72.4%  ●··▄▄·▄····▄ beats 1/5     easy · avg 84%    5.4%  typical
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecified) …</a>   71.2%  ▁▂▄▂●▄▆█▇▄▂▁ beats 33/143  easy · avg 80%    2.1%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecified) …</a>   71.2%  ▁▂▄▂●▄▆██▅▂▁ beats 33/145  easy · avg 80%    2.1%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #262 of 429 · 11% of its score</summary>
+<details><summary>math · #264 of 431 · 11% of its score</summary>
 
 Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Llama 3.1 405B Instruct](llama-3-1-405b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -77,11 +77,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                         26.3%  ●█····███··█ beats 0/5      medium · avg 52%     13%  sharp · small run · several runs
 <a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                                 59.8%  ▄●···█·····▄ beats 1/5      medium · avg 73%    7.8%  at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   35.5%  ▂●▅▂▆▃█▅█▅▃▆ beats 2/34     medium · avg 41%    6.6%  blunt · at its level
-<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)</a>    17.9%  ●··███··█··█ beats 0/5      hard · avg 31%      4.4%  typical
 <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                             23.9%  █●█···██···█ beats 1/5      medium · avg 42%    4.3%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)</a>    17.9%  ●··███··█··█ beats 0/5      hard · avg 31%      4.1%  typical
 <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>          58.9%  ▄··●▄··▄···▄ beats 2/5      easy · avg 70%      3.8%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>       50.0%  ▄·●····█···▄ beats 1/5      medium · avg 59%    3.4%  at its level
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   16.2%  ▁▁·▁▂▂●█▄▅▄▄ beats 14/66    hard · avg 29%      3.1%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   16.2%  ▁▁·▁▂▂●█▄▅▄▄ beats 14/66    hard · avg 29%      3.2%  typical
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid)</a>   68.7%  ▄·●·█···▄··▄ beats 1/5      easy · avg 81%      2.6%  at its level
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (lab)</a>                    64.1%  ▃▅●·▃···▅·▅█ beats 3/11     medium · avg 70%    2.4%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.5%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 135/276  medium · avg 72%    2.1%  at its level · noisy

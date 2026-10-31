@@ -6,7 +6,7 @@
 
 beowolx · released 2023-12 · 7.24B params · mit
 
-**score 40.1** ±0.8 · #565 of 731 · from 3 benchmark results across 1 source
+**score 40.1** ±0.8 · #566 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #395 of 468    100%      3
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #397 of 469    100%      3
 </pre>
 
-<details><summary>coding · #395 of 468 · 100% of its score</summary>
+<details><summary>coding · #397 of 469 · 100% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 

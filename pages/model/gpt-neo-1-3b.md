@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 11.9** ±1.6 · #714 of 731 · from 20 benchmark results across 9 sources
+**score 11.8** ±1.6 · #715 of 732 · from 20 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▇▄█▄▂▁▁   #372 of 429*    2.5%      1
+math  ▁▁▃●█▆▄█▄▂▁▁   #374 of 431*    2.5%      1
 </pre>
 
-<details><summary>math · #372 of 429 · 2.5% of its score</summary>
+<details><summary>math · #374 of 431 · 2.5% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall.
 
@@ -34,7 +34,7 @@ test          result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                      48.9%  ▄·●·█··▄▄··▄ beats 1/7     very easy · avg 91%     24%  at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                      48.9%  ▄·●·█··▄▄··▄ beats 1/7     very easy · avg 91%     23%  at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   40.8%  ▂·▄·▂●▄▄█▄▂▆ beats 5/21    easy · avg 74%          14%  blunt
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                     55.0%  ▄·●·▄▄▄··█·▄ beats 1/7     easy · avg 88%          12%  several runs
 <a href="https://aclanthology.org/2023.acl-long.367.pdf">CoNLL-2003 English NER, few-shot …</a>   39.1%  ▃···●·▃▅··▃█ beats 1/9     very easy · avg 85%    8.3%  at its level
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-418"></a><a href="https://aclanthology.org/2023.emnlp-main.418.pdf">Do Language Models Have a Common Sense …</a>        1    1% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 11.9
+weighted average                                   = 11.8
 </pre>
 
 <sub>Licences: Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-265-CC-BY-4-0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · ImageNetVC: Zero- and Few-Shot Visual Commonsense Evaluation on 1000 ImageNet Categories ([CC BY 4.0](../../licenses/acl-2023-findings-emnlp-133-CC-BY-4-0.txt)) · Prompting Language Models for Linguistic Structure ([CC BY 4.0](../../licenses/acl-2023-acl-long-367-CC-BY-4-0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models ([CC BY 4.0](../../licenses/acl-2023-emnlp-main-418-CC-BY-4-0.txt)) · TruthfulQA: Measuring How Models Mimic Human Falsehoods ([CC BY 4.0](../../licenses/acl-2022-acl-long-229-CC-BY-4-0.txt))</sub>

@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 44.4** ±0.9 · #488 of 731 · from 19 benchmark results across 6 sources
+**score 44.4** ±0.9 · #489 of 732 · from 19 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,44 +16,44 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #269 of 312*    3.1%      1
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃    #304 of 401     18%      3
-math            ▁▁▃▅●▇▄█▄▂▁▁    #315 of 429     33%      3
+agent tasks     ▁▁▃●█▄▅▅▄▄▂▁   #270 of 313*    3.2%      1
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃    #305 of 402     18%      3
+math            ▁▁▃▅●▆▄█▄▂▁▁    #315 of 431     33%      3
 </pre>
 
-<details><summary>agent tasks · #269 of 312 · 3.1% of its score</summary>
+<details><summary>agent tasks · #270 of 313 · 3.2% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 20/77  hard · avg 31%    3.1%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 20/77  hard · avg 31%    3.2%  typical
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #304 of 401 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #305 of 402 · 18% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1208.6  ▁▁▁▂▃●▃▆▆▇█▃ beats 72/385  avg 1259            9.1%  blunt
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   73.2%  ▄▄·▄······●█ beats 3/5     easy · avg 78%      5.8%  at its level · several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1208.6  ▁▁▁▂▃●▃▆▆▇█▃ beats 72/385  avg 1260            9.1%  blunt
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   73.2%  ▄▄·▄······●█ beats 3/5     easy · avg 78%      5.6%  at its level · several runs
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   37.6%  █·▄··●·····█ beats 3/5     medium · avg 55%    3.6%  at its level
 </pre>
 
 </details>
 
-<details><summary>math · #315 of 429 · 33% of its score</summary>
+<details><summary>math · #315 of 431 · 33% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [Molmo 2 8B](molmo-2-8b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       79.1%  █··▄·····●·█ beats 3/5    very easy · avg 89%      23%  sharp · several runs
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    2.0%  █···●▄▄····▄ beats 2/5    very hard · avg 8.9%    6.6%  sharp · too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    48.7%  █···●·▄▄···▄ beats 2/5    easy · avg 70%          4.1%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    2.0%  █···●▄▄····▄ beats 2/5    very hard · avg 8.9%    6.7%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    48.7%  █···●·▄▄···▄ beats 2/5    easy · avg 70%          4.2%  at its level
 </pre>
 
 </details>

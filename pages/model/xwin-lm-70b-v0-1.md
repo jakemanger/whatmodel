@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 45.6** ±1.2 · #460 of 731 · from 7 benchmark results across 2 sources
+**score 45.6** ±1.2 · #461 of 732 · from 7 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁   #401 of 468*    7.5%      1
-chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #300 of 401*     49%      2
-math            ▁▁▃▅█●▄█▄▂▁▁   #231 of 429*     11%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #401 of 469*    7.5%      1
+chat &amp; writing  ▁▁▁▃▆●▆█▆▇▇▃   #300 of 402*     49%      2
+math            ▁▁▃▅█●▄█▄▂▁▁   #236 of 431*     11%      1
 </pre>
 
-<details><summary>coding · #401 of 468 · 7.5% of its score</summary>
+<details><summary>coding · #401 of 469 · 7.5% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                       result  vs the others in its run  difficulty      cou
 
 </details>
 
-<details><summary>chat &amp; writing · #300 of 401 · 49% of its score</summary>
+<details><summary>chat &amp; writing · #300 of 402 · 49% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 700M](lfm2-700m.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -44,9 +44,9 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #231 of 429 · 11% of its score</summary>
+<details><summary>math · #236 of 431 · 11% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                     5   51% ▇▇▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                     5   50% ▇▇▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   49% ▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
 weighted average                              = 45.6

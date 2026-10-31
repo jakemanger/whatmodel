@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 61.5** ±0.8 · #188 of 731 · from 26 benchmark results across 13 sources
+**score 61.5** ±0.8 · #188 of 732 · from 26 benchmark results across 13 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▄▅▅▄▄▂▁    #183 of 312     19%      6
-chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #179 of 401*    6.3%      1
-math                ▁▁▃▅█▇▄●▄▂▁▁    #135 of 429     32%      7
-vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄   #100 of 154*    6.1%      2
+agent tasks         ▁▁▃▆●▄▅▅▄▄▂▁    #184 of 313     19%      6
+chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #180 of 402*    6.3%      1
+math                ▁▁▃▅█▆▄●▄▂▁▁    #136 of 431     33%      7
+vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄    #99 of 153*    6.1%      2
 </pre>
 
-<details><summary>agent tasks · #183 of 312 · 19% of its score</summary>
+<details><summary>agent tasks · #184 of 313 · 19% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -38,18 +38,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #179 of 401 · 6.3% of its score</summary>
+<details><summary>chat &amp; writing · #180 of 402 · 6.3% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1337.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 176/385  avg 1259      6.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1337.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 176/385  avg 1260      6.3%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #135 of 429 · 32% of its score</summary>
+<details><summary>math · #136 of 431 · 33% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            20.0%  ▂··▁▁●▄▄█▆▄▃ beats 14/86    very hard · avg 1.2%     13%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         94.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 82/92    hard · avg 28%          8.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             81.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 116/197  very hard · avg 7.1%    5.1%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             81.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 116/197  very hard · avg 7.2%    5.1%  sharp · at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md">MATH-Vision</a>                          62.2%  ▁▁·▁··▄▁●▇▇█ beats 7/24     medium · avg 47%        1.9%  at its level
 <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-average …</a>   42.2%  ▃▃···●▃·▃·▃▃ beats 4/8      very hard · avg 15%     1.9%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>                2.4%  ▁●▁▂█▅▂▃▂▁▁▁ beats 7/67     very hard · avg 0.1%    1.8%  sharp · too hard for it
@@ -66,7 +66,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #100 of 154 · 6.1% of its score</summary>
+<details><summary>vision &amp; documents · #99 of 153 · 6.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 

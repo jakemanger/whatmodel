@@ -6,7 +6,7 @@
 
 Arcee AI · released 2025-12 · 26.12B params (3B active) · openmdw-1.1
 
-**score 53.2** ±5.4 · #392 of 961 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.1** ±5.4 · #393 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   87% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            13% ▇▇
-weighted average                        = 53.2
+weighted average                        = 53.1
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

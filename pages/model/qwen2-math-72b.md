@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 50.6** ±1.2 · #355 of 731 · from 4 benchmark results across 2 sources
+**score 50.6** ±1.2 · #356 of 732 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▄▂▁▁   #243 of 429     37%      3
+math  ▁▁▃▅█●▄█▄▂▁▁   #245 of 431     37%      3
 </pre>
 
-<details><summary>math · #243 of 429 · 37% of its score</summary>
+<details><summary>math · #245 of 431 · 37% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 405B params · llama-3.1
 
-**score 55.8** ±0.5 · #261 of 731 · from 36 benchmark results across 19 sources
+**score 55.8** ±0.5 · #262 of 732 · from 36 benchmark results across 19 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #215 of 312     12%      8
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #222 of 468     30%     10
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #191 of 401     10%      3
-math            ▁▁▃▅●▇▄█▄▂▁▁   #265 of 429     12%      4
+agent tasks     ▁▁▃▆●▄▅▅▄▄▂▁   #216 of 313     12%      8
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #223 of 469     29%     10
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #192 of 402     10%      3
+math            ▁▁▃▅●▆▄█▄▂▁▁   #267 of 431     12%      4
 </pre>
 
-<details><summary>agent tasks · #215 of 312 · 12% of its score</summary>
+<details><summary>agent tasks · #216 of 313 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 17%          3.2%  sharp · at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 17%          3.1%  sharp · at its level
 <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   25.6%  █····███·█●█ beats 5/6    very hard · avg 15%     2.4%  sharp
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   43.3%  █···█●▄·▄█·█ beats 4/10   hard · avg 28%          1.6%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   24.0%  █··●·▄█·▄··▄ beats 2/7    hard · avg 17%          1.5%  typical
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #222 of 468 · 30% of its score</summary>
+<details><summary>coding · #223 of 469 · 29% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -49,31 +49,31 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   37.3%  ▁▁·▁▂▄▆●▅▂·▂ beats 22/31  hard · avg 23%          6.5%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    73.5%  ▁▂▆▃▆█●▃▂·▁▁ beats 32/47  medium · avg 57%        5.9%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.2%  ▁·▁▂▄▁▆▄●▆▂▂ beats 39/62  medium · avg 51%        4.8%  sharp · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 17%          3.2%  sharp · at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 17%          3.1%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>   13.8%  █▄··█·●····▄ beats 5/7    very hard · avg 5.5%    2.8%  sharp · noisy
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   29.3%  ▄▄·▄·····█●█ beats 5/7    hard · avg 18%          1.8%  at its level
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    1.5%  ▃···●··▂·▃·▂ beats 10/17  very hard · avg 1.0%    1.3%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     30.2%  ▃▁▁●▁▄▅▃▄▇▁▄ beats 5/31   medium · avg 40%        1.2%  sharp · at its level · noisy
-<a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                                87.0%  ██·██···█●██ beats 5/7    easy · avg 78%          1.1%  typical
-<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                       59.4%  ▄··▄·▄·█··▄● beats 6/7    medium · avg 47%        0.9%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                                87.0%  ██·██···█●██ beats 5/7    easy · avg 78%          1.2%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                       59.4%  ▄··▄·▄·█··▄● beats 6/7    medium · avg 47%        1.0%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #191 of 401 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #192 of 402 · 10% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   69.3%  ▂▁▁▅█▅▄▃●▅▃▁ beats 45/60    medium · avg 47%    5.6%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1335.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 171/385  avg 1259            2.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1335.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 171/385  avg 1260            2.7%  blunt
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   50.7%  ▁·▁▁▂▁▄▄▆▄●▄ beats 27/38    medium · avg 46%    2.1%  sharp · at its level
 </pre>
 
 </details>
 
-<details><summary>math · #265 of 429 · 12% of its score</summary>
+<details><summary>math · #267 of 431 · 12% of its score</summary>
 
 Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -81,8 +81,8 @@ Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gp
 test                         result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  49.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 42/92   hard · avg 28%          6.0%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                     20.0%  ▁▁▁▂▁●▁▅███▃ beats 11/85   very hard · avg 14%     2.2%  sharp · small run
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   96.0%  ▁▄·▁▄█▅▅▅██● beats 40/43   very easy · avg 87%     1.7%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       9.7%  ▃▃▄●▃▃▇▇█▃▂▅ beats 50/197  very hard · avg 7.1%    1.6%  sharp · noisy
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   96.0%  ▁▄·▁▄█▅▅▅██● beats 40/43   very easy · avg 87%     1.8%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       9.7%  ▃▃▄●▃▃▇▇█▃▂▅ beats 50/197  very hard · avg 7.2%    1.6%  sharp · noisy
 </pre>
 
 </details>
@@ -95,7 +95,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   84.4%  ▁·▁▁▄▄▄▅●▄▂▁ beats 42/53    easy · avg 75%         9.1%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   25.0%  ▁▁▃▆█●▁▁·▁▁▁ beats 38/57    hard · avg 15%         5.5%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.9%  ▁▁▁▁▂▄●▄▅▇█▅ beats 71/211   hard · avg 39%         4.2%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.4  ▁·▂▁●▅▅▃█▄▁▁ beats 6/62     avg 1033               1.7%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.4  ▁·▂▁●▅▅▃█▄▁▁ beats 6/62     avg 1034               1.7%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>          90.4%  ▄▄▄··▄▄··●·█ beats 5/7      easy · avg 80%         1.5%  typical
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   29.6%  ▁▁▂▁▃▄●▆▄▅▂▃ beats 19/39    very hard · avg 21%    1.4%  typical
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      77.2%  ▁··▁▁▂▂▆▅▆█● beats 67/70    medium · avg 62%       1.3%  at its level

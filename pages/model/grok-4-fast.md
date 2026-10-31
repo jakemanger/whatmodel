@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-09 · closed weights
 
-**score 60.7** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 5 sources
+**score 60.6** ±1.4 · comparison only: no current run option verified · from 9 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▄●▄▄▄▁▁   #136 of 352*    6.6%      1
-coding              ▁▁▁▂▄▆●▇▅▄▃▁   #261 of 537*     36%      1
-chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #126 of 472*     21%      1
+agent tasks         ▁▁▂▆█▄●▄▄▃▁▁   #136 of 354*    6.6%      1
+coding              ▁▁▁▃▄▆●▇▅▄▃▁   #259 of 539*     36%      1
+chat &amp; writing      ▁▁▁▃▅▄▇█▇●▇▃   #127 of 474*     21%      1
 vision &amp; documents  ▁▁▂●▂▃▅▄▆██▄   #161 of 189*     12%      2
 web search          ▂▁▂▆●█▅▄▁▂▁▁     #64 of 96*    7.4%      1
 </pre>
 
-<details><summary>agent tasks · #136 of 352 · 6.6% of its score</summary>
+<details><summary>agent tasks · #136 of 354 · 6.6% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,24 +34,24 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #261 of 537 · 36% of its score</summary>
+<details><summary>coding · #259 of 539 · 36% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1159.1  ▁●▃▂▅█▃▆▅▅▁▂ beats 1/129  avg 982        36%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1159.1  ▁●▃▂▅█▃▆▅▅▁▂ beats 1/129  avg 981        36%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #126 of 472 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #127 of 474 · 21% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1405.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 250/385  avg 1259       21%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1405.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 250/385  avg 1260       21%  blunt
 </pre>
 
 </details>
@@ -102,7 +102,7 @@ source                                    results  share of the score
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-fast_sierra_2026-05-05/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    7% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 60.7
+weighted average                                   = 60.6
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-10 · closed weights
 
-**score 79.6** ±2.3 · #14 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 79.2** ±1.5 · #16 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,30 +16,33 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task         vs the others            rank  counts  tests
-agent tasks                 not ranked yet       —      4
-coding       ▁▁▁▃▅▇█▇▅▄▃●       #9 of 481*     98%      1
+agent tasks  ▁▁▃▆█▅▅▄▄▄●▁      #14 of 350*     58%      5
+coding       ▁▁▁▃▅▇█▇▅▄▃●       #9 of 482*     41%      1
 web search                  not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · 0.0% of its score</summary>
+<details><summary>agent tasks · #14 of 350 · 58% of its score</summary>
+
+Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
 
 <pre>
-test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>   70.0%  ▂▃▁▂▃▃▃█▇▇▆● beats 58/58  hard · avg 16%             —  not counted yet: no other model in the …
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Terminal-Bench 4.0 (lab)</a>             65.7%  ▁·▁··▁▆▆▅██● beats 31/33  very hard · avg 0.5%       —  not counted yet: no other model in the …
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Agents' Last Exam (metric/harness…</a>   43.2%  ▂·▂·█▄▂·●▂▄▄ beats 9/14                              —  not counted yet: no other model in the …
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Chartography with tools (lab)</a>        90.2%  ▂········▄█● beats 9/10                              —  not counted yet: no other model in the …
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0596 IPS  ▁▁▁▃▃▂█●▂▂▁▁ beats 46/59  avg -0.379 IPS           58%  sharp
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>       70.0%  ▁·▁▂▂▁▄▄▇█▄● beats 62/62  hard · avg 15%             —  not counted yet: no other model in the …
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Terminal-Bench 4.0 (lab)</a>                 65.7%  ▁·▁··▁▆▆▅██● beats 31/33  very hard · avg 0.5%       —  not counted yet: no other model in the …
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Agents' Last Exam (metric/harness…</a>       43.2%  ▂·▂·█▄▂·●▂▄▄ beats 9/14                              —  not counted yet: no other model in the …
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Chartography with tools (lab)</a>            90.2%  ▂········▄█● beats 9/10                              —  not counted yet: no other model in the …
 </pre>
 
 </details>
 
-<details><summary>coding · #9 of 481 · 98% of its score</summary>
+<details><summary>coding · #9 of 482 · 41% of its score</summary>
 
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [Gemini 4 Argon](gemini-4-argon.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1694.6  ▁▁▃▂▅█▃▆▅▅●▂ beats 122/129  avg 982        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1694.6  ▁▁▃▂▅█▃▆▅▅●▂ beats 122/129  avg 981        41%  sharp
 </pre>
 
 </details>
@@ -48,7 +51,7 @@ test                       result  vs the others in its run    difficulty  count
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>   70.0%  ▂▃▁▂▃▃▃█▇▇▆● beats 58/58  hard · avg 16%       —  not counted yet: no other model in the …
+<a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Humanity's Last Exam with tools (…</a>   70.0%  ▁·▁▂▂▁▄▄▇█▄● beats 62/62  hard · avg 15%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -68,9 +71,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             2% ▇
-weighted average                        = 79.6
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 79.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

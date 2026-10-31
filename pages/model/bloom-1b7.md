@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.72B params · bigscience-bloom-rail-1.0
 
-**score 10.7** ±1.0 · #716 of 731 · from 37 benchmark results across 7 sources
+**score 10.7** ±1.0 · #717 of 732 · from 37 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █··█·●·██··█       #4 of 6*    4.1%      1
-math    ▁●▃▅█▇▄█▄▂▁▁   #419 of 429*    2.0%      1
+math    ▁●▃▅█▆▄█▄▂▁▁   #421 of 431*    2.0%      1
 </pre>
 
 <details><summary>coding · #4 of 6 · 4.1% of its score</summary>
@@ -29,7 +29,7 @@ test             result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #419 of 429 · 2.0% of its score</summary>
+<details><summary>math · #421 of 431 · 2.0% of its score</summary>
 
 Beats [Flan-T5 Large](flan-t5-large.md), [OPT-66B](opt-66b.md), [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           57.2%  ▄····▄▆▂●▆▆█ beats 8/19    easy · avg 88%           10%  several runs
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   46.2%  ▃··▅▃▃●▅▅███ beats 6/19    very easy · avg 87%     6.9%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 85.1%  ▂··▂▃▂▂●▃▃█▂ beats 9/19    very easy · avg 98%     5.5%  blunt
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2023-12-21%2013%3A02%3A13.597525.json">TriviaQA</a>                             12.7%  ▁··▁█●▃▁▄▅▄█ beats 8/28    medium · avg 44%        5.0%  too hard for it · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2023-12-21%2013%3A02%3A13.597525.json">TriviaQA</a>                             12.7%  ▁··▁█●▃▁▄▅▄█ beats 8/28    medium · avg 45%        5.0%  too hard for it · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     65.4%  ▂▂▄●·▂·▆·▂█▂ beats 4/14    easy · avg 89%          4.7%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           54.0%  ▃··●▅▃▃▅·▃▃▃ beats 1/12    very easy · avg 95%     4.7%  at its level · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b7/bloom-1b7_common_sense_reasoning_0-shot.json">HellaSwag</a>                            37.6%  ▄·▄●·▄·▄··▄█ beats 2/7     easy · avg 81%          4.5%  typical

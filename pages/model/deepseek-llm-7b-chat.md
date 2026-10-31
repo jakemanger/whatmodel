@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 7B params · deepseek
 
-**score 36.5** ±1.6 · #613 of 731 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.5** ±1.6 · #614 of 732 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●▇█▇▅▄▃▁   #412 of 468*     26%      2
+coding  ▁▁▁▃●▇█▇▅▄▃▁   #413 of 469*     26%      2
 math    ●··········█       #2 of 2*     29%      2
 </pre>
 
-<details><summary>coding · #412 of 468 · 26% of its score</summary>
+<details><summary>coding · #413 of 469 · 26% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 44.7** ±1.5 · #481 of 731 · from 12 benchmark results across 4 sources
+**score 44.7** ±1.5 · #482 of 732 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,7 +24,7 @@ math    ●··········█   #2 of 2*     28%      2
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      66.5%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 127/205  easy · avg 77%     14%  sharp · at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      66.5%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 127/205  easy · avg 78%     14%  sharp · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           56.6%  ▁▁▁▄▅█●▅▄▁▂▁ beats 51/86    easy · avg 68%    6.9%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   18.6%  ●▃·····▃█··▅ beats 0/7      hard · avg 32%    4.6%  small run
 </pre>

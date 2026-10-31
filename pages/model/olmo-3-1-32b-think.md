@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 58.2** ±0.9 · #221 of 731 · from 21 benchmark results across 5 sources
+**score 58.2** ±0.9 · #222 of 732 · from 21 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▃▁   #211 of 468    6.9%      3
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #235 of 401     13%      3
-math            ▁▁▃▅█▇▄●▄▂▁▁   #113 of 429     20%      4
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #212 of 469    6.9%      3
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #236 of 402     13%      3
+math            ▁▁▃▅█▆▄●▄▂▁▁   #114 of 431     20%      4
 </pre>
 
-<details><summary>coding · #211 of 468 · 6.9% of its score</summary>
+<details><summary>coding · #212 of 469 · 6.9% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Falcon-H1R 7B](falcon-h1r-7b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -34,27 +34,27 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #235 of 401 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #236 of 402 · 13% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 114/385  avg 1259            8.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 114/385  avg 1260            8.0%  blunt
 <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (l…</a>   69.1%  █···█·█·█·●█ beats 4/5      medium · avg 43%    4.2%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   93.8%  ▄▄·····█▄▄·● beats 6/6      easy · avg 79%      0.5%  noisy
 </pre>
 
 </details>
 
-<details><summary>math · #113 of 429 · 20% of its score</summary>
+<details><summary>math · #114 of 431 · 20% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall.
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                     78.1%  ▄··▄····█▄▄● beats 6/6    medium · avg 50%     10%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     80.6%  ▄·····▄··▄█● beats 6/6    medium · avg 58%    7.4%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     80.6%  ▄·····▄··▄█● beats 6/6    medium · avg 58%    7.5%  sharp
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>   53.4%  ▅···▃▃···▃▃● beats 8/8    hard · avg 24%      2.0%  at its level
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified) (lab)</a>     96.2%  ▅····▃▃··▃▃● beats 7/8    easy · avg 73%      1.0%  noisy
 </pre>
@@ -67,13 +67,13 @@ test                               result  vs the others in its run  difficulty 
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5067  ▁▄▃▃▇▄●▃▅▁▁▁ beats 18/30    avg 0.418            15%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      56.7%  ▃······▃·▅·● beats 5/6      hard · avg 43%       13%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 88.6%  ▄·····▄·▄·█● beats 5/6      easy · avg 77%      7.1%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 88.6%  ▄·····▄·▄·█● beats 5/6      easy · avg 77%      7.2%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   50.7%  ▂▃▅▂▆▃█●█▅▃▆ beats 18/34    medium · avg 41%    6.6%  blunt · at its level
 <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           86.4%  ▄···▄··█··▄● beats 6/6      easy · avg 76%      5.5%  typical
 <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.8%  ▄····▄·▄▄··● beats 5/5      easy · avg 76%      3.3%  typical
 <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          30.9%  ▄··█···▄···● beats 4/5      hard · avg 20%      3.0%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     80.1%  █▄····▄·▄·▄● beats 6/6      medium · avg 52%    3.0%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   68.1%  █·██·██····● beats 5/5      medium · avg 35%    2.0%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   68.1%  █·██·██····● beats 5/5      medium · avg 36%    1.9%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   74.3%  ▃·▁▁▂▁▂▅●▇▄▁ beats 59/100   medium · avg 67%    1.1%  sharp · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   89.9%  ▁▁▁▁▁▁▁▂▄█●▃ beats 116/146  easy · avg 82%      0.6%  noisy
 </pre>

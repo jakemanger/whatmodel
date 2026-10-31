@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 117B params (5.1B active) · apache-2.0
 
-**score 61.5** ±0.5 · #187 of 731 · from 59 benchmark results across 25 sources
+**score 61.5** ±0.5 · #187 of 732 · from 59 benchmark results across 25 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▅▄▄▂▁    #158 of 312     18%     13
-coding          ▁▁▁▃▅▇█●▅▄▃▁    #163 of 468     24%      4
-chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #163 of 401*    2.9%      1
-math            ▁▁▃▅█▇▄●▄▂▁▁    #111 of 429     13%      5
-web search      █··········●       #1 of 2*    0.7%      1
+agent tasks     ▁▁▃▆█●▅▅▄▄▂▁    #159 of 313     18%     13
+coding          ▁▁▁▃▅▇█●▅▄▃▁    #164 of 469     24%      4
+chat &amp; writing  ▁▁▁▃▆▄▆█●▇▇▃   #164 of 402*    2.9%      1
+math            ▁▁▃▅█▆▄●▄▂▁▁    #112 of 431     13%      5
+web search      █··········●       #1 of 2*    0.8%      1
 </pre>
 
-<details><summary>agent tasks · #158 of 312 · 18% of its score</summary>
+<details><summary>agent tasks · #159 of 313 · 18% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -40,13 +40,13 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>                 67.8%  ▁····▃·▂▇●▂▆ beats 16/28  medium · avg 37%        1.1%  at its level · small run
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   66.4%  ▅····▅▅●▃·▃█ beats 6/11   medium · avg 53%        1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>                49.2%  ▁▁▁·▅▄▁█●▁▁▇ beats 21/28  hard · avg 25%          0.8%  at its level · small run
-<a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with tools (…</a>   19.0%  ▂●▁▂▃▃▃█▇▇▆▂ beats 5/58   very hard · avg 11%     0.7%  small run
+<a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with tools (…</a>   19.0%  ▁·▁▂●▁▄▄▇█▄▅ beats 6/62   very hard · avg 11%     0.8%  small run
 <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain conversatio…</a>   29.3%  ▂▂··▂·▂·▂●█▄ beats 5/11   hard · avg 25%          0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>coding · #163 of 468 · 24% of its score</summary>
+<details><summary>coding · #164 of 469 · 24% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -60,18 +60,18 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #163 of 401 · 2.9% of its score</summary>
+<details><summary>chat &amp; writing · #164 of 402 · 2.9% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1351.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 195/385  avg 1259      2.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1351.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 195/385  avg 1260      2.9%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #111 of 429 · 13% of its score</summary>
+<details><summary>math · #112 of 431 · 13% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall.
 
@@ -79,18 +79,18 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [N
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                            75.8%  ●···███·█··█ beats 0/5      medium · avg 50%        4.8%  sharp · several runs
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                            77.7%  █·●···███··█ beats 1/5      medium · avg 42%        4.5%  sharp · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 139/197  very hard · avg 7.1%    2.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 139/197  very hard · avg 7.2%    2.3%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>   39.5%  ▄··▄▄·▄●█▄·▄ beats 4/8      very hard · avg 11%     0.5%  typical
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                             96.0%  ▄······●▄▄·█ beats 1/5      very easy · avg 86%     0.3%  maxed out · noisy
 </pre>
 
 </details>
 
-<details><summary>web search · #1 of 2 · 0.7% of its score</summary>
+<details><summary>web search · #1 of 2 · 0.8% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with tools (…</a>   19.0%  ▂●▁▂▃▃▃█▇▇▆▂ beats 5/58   very hard · avg 11%    0.7%  small run
+<a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with tools (…</a>   19.0%  ▁·▁▂●▁▄▄▇█▄▅ beats 6/62   very hard · avg 11%    0.8%  small run
 </pre>
 
 </details>
@@ -105,7 +105,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   58.7%  ▂▃▅▂▆▃█▅█●▃▆ beats 28/34    medium · avg 41%        2.3%  blunt · at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    31.6%  ▁···▁▃▂●▂▃▃▂ beats 10/23    hard · avg 17%          2.1%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.2%  ▁▁▁▁▁▂▂▃▄●█▃ beats 55/97    hard · avg 31%          1.8%  blunt · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1167.5  ▁·▂▁▄▅●▃█▄▁▁ beats 24/62    avg 1033                1.8%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1167.5  ▁·▂▁▄▅●▃█▄▁▁ beats 24/62    avg 1034                1.7%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   43.2%  ▁▁·▁▂▂▄█●▅▄▄ beats 37/66    hard · avg 29%          1.7%  at its level
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                             67.1%  ▁▁·▁▁▁▃▂●▅█▁ beats 80/188   medium · avg 50%        1.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   76.4%  ▁▂▂▂▃█▃▆●▄▂▃ beats 73/95    medium · avg 65%        1.5%  typical
@@ -113,7 +113,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     29.2%  ▂···●▂▆▆██▆▂ beats 3/23     very hard · avg 29%     1.0%  at its level
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   39.5%  ▆▂·●█·▂▂·▄▄▂ beats 4/16     very hard · avg 36%     0.9%  blunt
 <a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                       16.8%  ▄▄▄▆█▆●██·▂█ beats 17/32    very hard · avg 6.0%    0.9%  small run
-<a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                          81.3%  ▂▁▁▂▃▂▄▄▅●█▃ beats 31/46    medium · avg 63%        0.8%  at its level · small run
+<a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                          81.3%  ▂▁▁▂▃▂▄▄▅●█▃ beats 31/46    medium · avg 64%        0.8%  at its level · small run
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   83.0%  ▄·····▄●▄▄·▄ beats 2/6      easy · avg 66%          0.7%  typical
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   64.6%  ▂···▂▂·▃▂▃█● beats 14/17    medium · avg 53%        0.7%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                20.0%  █▁▁▁▁▂●▃▃▂▁▁ beats 81/137   very hard · avg 5.8%    0.6%  sharp · too hard for it · noisy

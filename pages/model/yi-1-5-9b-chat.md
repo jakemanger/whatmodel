@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 45.7** ±0.8 · #458 of 731 · from 15 benchmark results across 7 sources
+**score 45.7** ±0.8 · #459 of 732 · from 15 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▃▁    #283 of 468     22%      5
-math    ▁▁▃●█▇▄█▄▂▁▁   #370 of 429*     16%      2
+coding  ▁▁▁▃▅▇●▇▅▄▃▁    #285 of 469     22%      5
+math    ▁▁▃●█▆▄█▄▂▁▁   #371 of 431*     16%      2
 </pre>
 
-<details><summary>coding · #283 of 468 · 22% of its score</summary>
+<details><summary>coding · #285 of 469 · 22% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #370 of 429 · 16% of its score</summary>
+<details><summary>math · #371 of 431 · 16% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             65.0%  ▁·▁▁●▄▄▅█▄▂▁ beats 8/53     easy · avg 75%          30%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        42.2%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 33/58    medium · avg 48%       6.9%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        34.3%  ▃▂·▆▆●█▆▅▃▃▃ beats 15/33    medium · avg 39%       6.8%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.6654 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 25/52    avg 42.989 WB-Score    6.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.6654 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 25/52    avg 43.019 WB-Score    6.6%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>              2.3%  ●▁▃▆██▁▁·▁▁▁ beats 0/57     hard · avg 15%         4.8%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                48.8%  ▁··▁▁▂▂▆●▆█▆ beats 23/70    medium · avg 62%       3.9%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 143/276  medium · avg 72%       1.5%  at its level · noisy

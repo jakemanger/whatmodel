@@ -6,7 +6,7 @@
 
 PrentisAI (HiveLabsAI) · released 2026-04 · 32.76B params · other (proprietary)
 
-**score 72.8** ±3.8 · #54 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 72.8** ±3.8 · #54 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1351.0  ▁·▂▁▄▅▅▃█●▁▁ beats 59/62  avg 1033       93%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1351.0  ▁·▂▁▄▅▅▃█●▁▁ beats 59/62  avg 1034       93%  typical
 </pre>
 
 </details>

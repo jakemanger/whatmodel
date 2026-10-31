@@ -115,7 +115,7 @@ export function terminalHelp(base: string, cat: Category, width = 80) {
     'format=json  Full names, commands, links and source attribution',
     'color=1      ANSI colour (off by default)',
     'chart=1      Add text charts', '',
-    'Lists: /  /image  /video  /tts  /stt',
+    'Lists: /  /image  /video  /tts  /stt  /decision',
     `Sources and scoring: ${host}/method`,
     `Terms: ${host}/terms`, '',
     'curl does not send your terminal size. Set width explicitly, or:',
@@ -180,7 +180,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   if (o.withApis) say(`Include API models: ${o.withApis}`);
   say(`Help: curl "${host}${path}?help=1"`, '2');
   say('?n=20 more · ?format=json full details', '2');
-  say(`Sources: ${host}/method · Lists: /image /video /tts /stt`, '2');
+  say(`Sources: ${host}/method · Lists: /image /video /tts /stt /decision`, '2');
   if (sponsor) say(`Sponsor: ${sponsor.text} — ${sponsor.url}`, '35');
   out.push('');
   return out.join('\n');

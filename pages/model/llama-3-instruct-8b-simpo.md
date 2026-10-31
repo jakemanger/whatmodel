@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-05 · 8.03B params
 
-**score 51.9** ±1.3 · #335 of 731 · from 3 benchmark results across 3 sources
+**score 51.9** ±1.3 · #336 of 732 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #237 of 401*     76%      1
+chat &amp; writing  ▁▁▁▃▆▄▆●▆▇▇▃   #239 of 402*     76%      1
 </pre>
 
-<details><summary>chat &amp; writing · #237 of 401 · 76% of its score</summary>
+<details><summary>chat &amp; writing · #239 of 402 · 76% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.0497 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 23/52    avg 42.989 WB-Score     19%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.0497 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 23/52    avg 43.019 WB-Score     19%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 152/276  medium · avg 72%       4.1%  at its level · noisy
 </pre>
 

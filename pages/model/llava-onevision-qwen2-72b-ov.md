@@ -6,7 +6,7 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 45.3** ±2.7 · #468 of 731 · from 3 benchmark results across 3 sources
+**score 45.3** ±2.7 · #469 of 732 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #145 of 154     97%      3
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #144 of 153     97%      3
 </pre>
 
-<details><summary>vision &amp; documents · #145 of 154 · 97% of its score</summary>
+<details><summary>vision &amp; documents · #144 of 153 · 97% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        977.9  ▁▁●▂▂▂▃▄▅▅█▇ beats 6/152  avg 1061           53%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -4.601         33%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -4.498         33%  typical
 <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>     51.1%  █·█●····██·█ beats 2/5    hard · avg 48%     11%  blunt · at its level
 </pre>
 

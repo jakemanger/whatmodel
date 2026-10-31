@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 61.6** ±0.7 · #186 of 731 · from 35 benchmark results across 3 sources
+**score 61.6** ±0.7 · #186 of 732 · from 35 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▅▄▄▂▁    #165 of 312     21%      5
-coding              ▁▁▁▃▅▇█●▅▄▃▁   #184 of 468*    3.6%      1
-chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #157 of 401*    2.1%      1
-math                ▁▁▃▅█▇▄●▄▂▁▁    #110 of 429    8.7%      4
-vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄     #90 of 154     38%     13
+agent tasks         ▁▁▃▆█●▅▅▄▄▂▁    #166 of 313     21%      5
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #184 of 469*    3.6%      1
+chat &amp; writing      ▁▁▁▃▆▄▆█●▇▇▃   #158 of 402*    2.1%      1
+math                ▁▁▃▅█▆▄●▄▂▁▁    #111 of 431    8.7%      4
+vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄     #89 of 153     38%     13
 </pre>
 
-<details><summary>agent tasks · #165 of 312 · 21% of its score</summary>
+<details><summary>agent tasks · #166 of 313 · 21% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -31,16 +31,16 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 test                    result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>   46.9%  ▃·█········● beats 6/6    very hard · avg 9.8%     11%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>       6.9%  ▂▅▆▂●▆▂▂█▅▅▂ beats 9/27   very hard · avg 2.1%    3.5%  sharp · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>          57.0%  ▁····▂▁●▆█▃▁ beats 7/44   medium · avg 37%        2.4%  at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>         54.4%  ▁▁·▂▁▃▂●█▅▂▃ beats 15/42  hard · avg 28%          2.0%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>            71.7%  █▄··▄█·█▄█▄● beats 12/13  medium · avg 59%        1.7%  blunt · at its level
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>          57.0%  ▁····▂▁●▆█▃▁ beats 7/44   medium · avg 37%        2.5%  at its level
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>         54.4%  ▁▁·▂▁▃▂●█▅▂▃ beats 15/42  hard · avg 29%          2.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>            71.7%  █▄··▄█·█▄█▄● beats 12/13  medium · avg 59%        1.8%  blunt · at its level
 </pre>
 
 </details>
 
-<details><summary>coding · #184 of 468 · 3.6% of its score</summary>
+<details><summary>coding · #184 of 469 · 3.6% of its score</summary>
 
-Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #157 of 401 · 2.1% of its score</summary>
+<details><summary>chat &amp; writing · #158 of 402 · 2.1% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #110 of 429 · 8.7% of its score</summary>
+<details><summary>math · #111 of 431 · 8.7% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall.
 
@@ -74,7 +74,7 @@ test                         result  vs the others in its run  difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #90 of 154 · 38% of its score</summary>
+<details><summary>vision &amp; documents · #89 of 153 · 38% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 41.0** ±1.5 · #549 of 731 · from 8 benchmark results across 5 sources
+**score 41.0** ±1.5 · #548 of 732 · from 8 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄   #150 of 154     99%      8
+vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄   #149 of 153     99%      8
 </pre>
 
-<details><summary>vision &amp; documents · #150 of 154 · 99% of its score</summary>
+<details><summary>vision &amp; documents · #149 of 153 · 99% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                  result  vs the others in its run  difficul
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv descriptive questions (te…</a>     51.5%  ●··▄··█··▄·▄ beats 0/6    easy · avg 69%       16%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        964.4  ▁▁●▂▂▂▃▄▅▅█▇ beats 5/152  avg 1061             16%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          22.5%  ●▂▂█▃▂·▂▂··▂ beats 0/13   hard · avg 34%       10%  typical
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -4.601           10%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -4.498           10%  typical
 <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                       51.1%  ▁····▁▁▃●▆▆▅ beats 10/53  medium · avg 59%    6.6%  at its level · small run
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv reasoning questions (test…</a>     20.0%  ●··▄▄▄█····▄ beats 0/6    hard · avg 30%      5.8%  typical
 <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                          69.5%  ▁▁▁▄●▁▃·▃▃▃█ beats 6/24   easy · avg 77%      0.9%  blunt · at its level · small run

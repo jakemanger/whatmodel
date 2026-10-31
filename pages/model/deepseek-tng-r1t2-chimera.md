@@ -6,7 +6,7 @@
 
 TNG Technology Consulting · released 2025-07 · 684.53B params (37B active) · mit
 
-**score 51.6** ±9.7 · #435 of 961 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.6** ±9.7 · #435 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

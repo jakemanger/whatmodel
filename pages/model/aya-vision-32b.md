@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 43.5** ±2.9 · #508 of 731 · from 3 benchmark results across 3 sources
+**score 43.5** ±2.9 · #509 of 732 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #142 of 154     96%      3
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #141 of 153     96%      3
 </pre>
 
-<details><summary>vision &amp; documents · #142 of 154 · 96% of its score</summary>
+<details><summary>vision &amp; documents · #141 of 153 · 96% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why

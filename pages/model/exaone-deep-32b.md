@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 32B params · exaone
 
-**score 55.4** ±1.5 · #271 of 731 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.4** ±1.5 · #271 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ██·········●      #1 of 3*    9.5%      1
-math    ▁▁▃▅█●▄█▄▂▁▁   #199 of 429     56%      3
+coding  ██·········●      #1 of 3*     10%      1
+math    ▁▁▃▅█●▄█▄▂▁▁   #200 of 431     56%      3
 </pre>
 
-<details><summary>coding · #1 of 3 · 9.5% of its score</summary>
+<details><summary>coding · #1 of 3 · 10% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   59.5%  ▁···▁▁▁█●▃▄▁ beats 24/38  medium · avg 45%    9.5%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   59.5%  ▁···▁▁▁█●▃▄▁ beats 24/38  medium · avg 45%     10%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #199 of 429 · 56% of its score</summary>
+<details><summary>math · #200 of 431 · 56% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why

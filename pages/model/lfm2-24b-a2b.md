@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 51.2** ±1.1 · #343 of 731 · from 11 benchmark results across 1 source
+**score 51.2** ±1.1 · #344 of 732 · from 11 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▅█●▄█▄▂▁▁   #220 of 429     31%      4
+math  ▁▁▃▅█●▄█▄▂▁▁   #222 of 431     31%      4
 </pre>
 
-<details><summary>math · #220 of 429 · 31% of its score</summary>
+<details><summary>math · #222 of 431 · 31% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                               result  vs the others in its run  difficulty 
 <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                        39.7%  ▄···█·▄·●·▄▄ beats 5/7    hard · avg 37%       20%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                74.9%  ▄···▄▄·●█··█ beats 3/7    easy · avg 74%       15%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                            57.6%  ▄····█·▄●·▄▄ beats 5/7    medium · avg 54%     11%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>              43.3%  █··▄··●··█·▄ beats 4/7    medium · avg 42%    7.9%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>              43.3%  █··▄··●··█·▄ beats 4/7    medium · avg 42%    8.0%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>       57.0%  ▃··▃▃··●···█ beats 4/7    medium · avg 56%    5.8%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>            62.3%  ▄···▄·█·●·▄█ beats 4/7    medium · avg 59%    5.0%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>   49.0%  ▄··▄█▄··●··█ beats 5/7    medium · avg 46%    4.0%  blunt · at its level

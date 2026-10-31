@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.9** ±1.6 · #596 of 731 · from 6 benchmark results across 2 sources
+**score 37.8** ±1.6 · #599 of 732 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▃▁   #453 of 468*     19%      1
-math    ▁▁▃▅●▇▄█▄▂▁▁   #312 of 429*     19%      1
+coding  ▁▁●▃▅▇█▇▅▄▃▁   #454 of 469*     19%      1
+math    ▁▁▃▅●▆▄█▄▂▁▁   #318 of 431*     19%      1
 </pre>
 
-<details><summary>coding · #453 of 468 · 19% of its score</summary>
+<details><summary>coding · #454 of 469 · 19% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -31,9 +31,9 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #312 of 429 · 19% of its score</summary>
+<details><summary>math · #318 of 431 · 19% of its score</summary>
 
-Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run  difficulty      counts  why
@@ -63,7 +63,7 @@ source                           results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                           5   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    6% ▇
 prior: pull toward the middle               1% ▇
-weighted average                          = 37.9
+weighted average                          = 37.8
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

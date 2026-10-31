@@ -6,7 +6,7 @@
 
 01.AI · released 2023-11 · 34.39B params · apache-2.0
 
-**score 44.9** ±1.0 · #478 of 731 · from 8 benchmark results across 7 sources
+**score 44.9** ±1.0 · #479 of 732 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #318 of 401     81%      5
-math            ▁▁●▅█▇▄█▄▂▁▁   #395 of 429*     11%      1
+chat &amp; writing  ▁▁▁▃●▄▆█▆▇▇▃    #319 of 402     81%      5
+math            ▁▁●▅█▆▄█▄▂▁▁   #397 of 431*     11%      1
 </pre>
 
-<details><summary>chat &amp; writing · #318 of 401 · 81% of its score</summary>
+<details><summary>chat &amp; writing · #319 of 402 · 81% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -28,14 +28,14 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Cod
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       27.2%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 72/122  medium · avg 35%        36%  sharp
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   23.1%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 19/60   medium · avg 47%        22%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1183.8  ▁▁▁▂●▃▃▆▆▇█▃ beats 61/385  avg 1259                11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1183.8  ▁▁▁▂●▃▃▆▆▇█▃ beats 61/385  avg 1260                11%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1101.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 46/95   avg 1187                10%  typical
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   94.1%  ▂▂·▆·▇▃▆█●▄▂ beats 39/45   very easy · avg 94%    1.3%  sharp · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #395 of 429 · 11% of its score</summary>
+<details><summary>math · #397 of 431 · 11% of its score</summary>
 
 Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test          result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   51.0%  ▂··▄·▂▆▄▂●·▂ beats 11/14    medium · avg 53%    5.0%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   70.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 173/276  medium · avg 72%    2.7%  at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         14.7%  ▁▁▁▁▂▄▅▅█▇█▄ beats 0/318    hard · avg 39%         —  failed run: Well below the 25% guess ra…
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         14.7%  ▁▁▁▁▂▄▅▅███▄ beats 0/322    hard · avg 39%         —  failed run: Well below the 25% guess ra…
 </pre>
 
 </details>

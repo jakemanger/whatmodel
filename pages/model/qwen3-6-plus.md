@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 68.9** ±0.8 · #90 of 731 · from 14 benchmark results across 7 sources
+**score 68.9** ±0.8 · #89 of 732 · from 14 benchmark results across 7 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,62 +16,62 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▄●▅▄▄▂▁   #120 of 312*     18%      2
-coding              ▁▁▁▃▅▇█▇▅●▃▁    #69 of 468*     25%      2
-chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃    #60 of 401*    6.4%      1
-math                ▁▁▃▅█▇▄█●▂▁▁     #69 of 429     33%      3
-vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇●▄    #28 of 154*     10%      2
+agent tasks         ▁▁▃▆█▄●▅▄▄▂▁   #120 of 313*     17%      2
+coding              ▁▁▁▃▅▇█▇▅●▃▁    #68 of 469*     25%      2
+chat &amp; writing      ▁▁▁▃▆▄▆█▆▇●▃    #60 of 402*    6.4%      1
+math                ▁▁▃▅█▆▄█●▂▁▁     #69 of 431     33%      3
+vision &amp; documents  ▁▁▂▂▁▃▄▂▆▇●▄    #28 of 153*     10%      2
 </pre>
 
-<details><summary>agent tasks · #120 of 312 · 18% of its score</summary>
+<details><summary>agent tasks · #120 of 313 · 17% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   57.9%  ▁··▁·●▂▁▄█▄▁ beats 3/29   hard · avg 18%           14%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   57.9%  ▁··▁·●▂▁▄█▄▁ beats 3/29   hard · avg 19%           14%  sharp · at its level
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    8.6%  ▄···●▄▄▄█▄·█ beats 1/10   very hard · avg 1.9%    3.8%  typical
 </pre>
 
 </details>
 
-<details><summary>coding · #69 of 468 · 25% of its score</summary>
+<details><summary>coding · #68 of 469 · 25% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          57.9%  ▁··▁·●▂▁▄█▄▁ beats 3/29    hard · avg 18%     14%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1461.6  ▁▁▃▂▅█●▆▅▅▁▂ beats 63/129  avg 982            11%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          57.9%  ▁··▁·●▂▁▄█▄▁ beats 3/29    hard · avg 19%     14%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1461.6  ▁▁▃▂▅█●▆▅▅▁▂ beats 63/129  avg 981            11%  sharp
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #60 of 401 · 6.4% of its score</summary>
+<details><summary>chat &amp; writing · #60 of 402 · 6.4% of its score</summary>
 
 Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [GPT-6 Luna](gpt-6-luna.md), [Grok 4.7](grok-4-7.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1443.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 310/385  avg 1259      6.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1443.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 310/385  avg 1260      6.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #69 of 429 · 33% of its score</summary>
+<details><summary>math · #69 of 431 · 33% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            38.2%  ▂··▁▁▃▄●█▆▄▃ beats 28/86    very hard · avg 1.2%     29%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 155/197  very hard · avg 7.1%    2.5%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 155/197  very hard · avg 7.2%    2.5%  sharp · noisy
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>   47.4%  ▄··▄▄·▄▄●▄·▄ beats 6/8      very hard · avg 11%     1.4%  at its level
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #28 of 154 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #28 of 153 · 10% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall.
 

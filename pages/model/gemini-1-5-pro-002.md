@@ -16,13 +16,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▂▄▆●▇▅▄▃▁    #250 of 537     50%      5
-chat &amp; writing      ▁▁▁▃▅▄▇█●▇▇▃   #191 of 472*    4.4%      1
-math                ▁▁▃▆█●▅█▄▁▁▁   #243 of 528*     12%      2
+coding              ▁▁▁▃▄▆●▇▅▄▃▁    #252 of 539     50%      5
+chat &amp; writing      ▁▁▁▃▅▄▇█●▇▇▃   #193 of 474*    4.4%      1
+math                ▁▁▃▆█●▅█▃▁▁▁   #245 of 530*     12%      2
 vision &amp; documents  ▁▁▂▃▂▃▅●▆██▄   #109 of 189*    4.8%      2
 </pre>
 
-<details><summary>coding · #250 of 537 · 50% of its score</summary>
+<details><summary>coding · #252 of 539 · 50% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [s1.1 32B](s1-1-32b.md) here, though they rank lower overall.
 
@@ -37,25 +37,25 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #191 of 472 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #193 of 474 · 4.4% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1351.3  ▁▁▁▂▃▃▃▆●▇█▃ beats 194/385  avg 1259      4.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1351.3  ▁▁▁▂▃▃▃▆●▇█▃ beats 194/385  avg 1260      4.4%  blunt
 </pre>
 
 </details>
 
-<details><summary>math · #243 of 528 · 12% of its score</summary>
+<details><summary>math · #245 of 530 · 12% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 28%          9.2%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/197  very hard · avg 7.1%    3.0%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/197  very hard · avg 7.2%    3.0%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.
 <pre>
 test                                 result  vs the others in its run   difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1179.5  ▁▁▂▂▂▂▃▄●▅█▇ beats 61/152  avg 1061      3.0%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -4.601    1.9%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -4.498    1.9%  typical
 </pre>
 
 </details>

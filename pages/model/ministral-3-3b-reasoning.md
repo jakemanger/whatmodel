@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.8B params · apache-2.0
 
-**score 50.1** ±1.0 · #367 of 731 · from 12 benchmark results across 4 sources
+**score 50.1** ±1.0 · #368 of 732 · from 12 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▅▄▃▁   #200 of 468*    8.0%      1
+coding  ▁▁▁▃▅▇█●▅▄▃▁   #201 of 469*    8.1%      1
 math    ●·····█····█        #3 of 3     39%      2
 </pre>
 
-<details><summary>coding · #200 of 468 · 8.0% of its score</summary>
+<details><summary>coding · #201 of 469 · 8.1% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md), [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">LiveCodeBench (version unspecifie…</a>   54.8%  ▁···▁▁▁█●▃▄▁ beats 20/38  medium · avg 49%    8.0%  at its level · small run · several runs
+<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">LiveCodeBench (version unspecifie…</a>   54.8%  ▁···▁▁▁█●▃▄▁ beats 20/38  medium · avg 49%    8.1%  at its level · small run · several runs
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>                   53.4%  ▁▁▁▁▂▄▅●█▇█▄ beats 94/318  medium · avg 53%     23%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>                   53.4%  ▁▁▁▁▂▄▅●███▄ beats 95/322  medium · avg 53%     23%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3741  ▁●▃▃▇▄█▃▅▁▁▁ beats 3/30    avg 0.418            18%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   37.4%  ▂▃●▂▆▃█▅█▅▃▆ beats 3/34    medium · avg 41%    8.0%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   75.6%  ▃·▁▁▂▁▂▅●▇▄▁ beats 61/100  medium · avg 67%    1.9%  sharp · at its level · noisy

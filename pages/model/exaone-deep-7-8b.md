@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 7.82B params · exaone
 
-**score 53.8** ±1.5 · #306 of 731 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 53.8** ±1.5 · #307 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  █●·········█      #2 of 3*    9.2%      1
-math    ▁▁▃▅█●▄█▄▂▁▁   #219 of 429     57%      3
+coding  █●·········█      #2 of 3*    9.3%      1
+math    ▁▁▃▅█●▄█▄▂▁▁   #221 of 431     57%      3
 </pre>
 
-<details><summary>coding · #2 of 3 · 9.2% of its score</summary>
+<details><summary>coding · #2 of 3 · 9.3% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   55.2%  ▁···▁▁▁█●▃▄▁ beats 21/38  medium · avg 45%    9.2%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   55.2%  ▁···▁▁▁█●▃▄▁ beats 21/38  medium · avg 45%    9.3%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>math · #219 of 429 · 57% of its score</summary>
+<details><summary>math · #221 of 431 · 57% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

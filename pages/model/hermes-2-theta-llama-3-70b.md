@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 48.8** ±1.9 · #393 of 731 · from 3 benchmark results across 1 source
+**score 48.8** ±1.9 · #394 of 732 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▁▃●█▇▄█▄▂▁▁   #343 of 429*     65%      2
+math  ▁▁▃●█▆▄█▄▂▁▁   #344 of 431*     65%      2
 </pre>
 
-<details><summary>math · #343 of 429 · 65% of its score</summary>
+<details><summary>math · #344 of 431 · 65% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 28%           59%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/197  very hard · avg 7.1%    6.3%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/197  very hard · avg 7.2%    6.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>

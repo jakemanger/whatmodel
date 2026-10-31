@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 38.4** ±1.1 · #587 of 731 · from 10 benchmark results across 6 sources
+**score 38.3** ±1.1 · #592 of 732 · from 10 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #372 of 401     51%      4
+chat &amp; writing  ▁▁▁●▆▄▆█▆▇▇▃   #374 of 402     51%      4
 </pre>
 
-<details><summary>chat &amp; writing · #372 of 401 · 51% of its score</summary>
+<details><summary>chat &amp; writing · #374 of 402 · 51% of its score</summary>
 
 Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Gemma 4 E2B](gemma-4-e2b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       10.3%  ▁▂▂▃●▆█▆▄▄▁▁ beats 22/122  medium · avg 35%        24%  sharp
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1127.0  ▁▁▁●▃▃▃▆▆▇█▃ beats 24/385  avg 1259                13%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1127.0  ▁▁▁●▃▃▃▆▆▇█▃ beats 24/385  avg 1260                13%  blunt
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1051.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 26/95   avg 1187                11%  typical
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   85.8%  ▂▂·▆·▇▃●█▆▄▂ beats 23/45   very easy · avg 94%    2.5%  sharp · noisy
 </pre>
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   11% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 38.4
+weighted average                                   = 38.3
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -16,16 +16,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▂▄▆█●▅▄▂▁   #208 of 564*     98%      1
+coding  ▁▁▁▂▄▆█●▅▄▂▁   #210 of 566*     98%      1
 </pre>
 
-<details><summary>coding · #208 of 564 · 98% of its score</summary>
+<details><summary>coding · #210 of 566 · 98% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1243.5  ▁▁●▂▅█▃▆▅▅▁▂ beats 11/129  avg 982        98%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1243.5  ▁▁●▂▅█▃▆▅▅▁▂ beats 11/129  avg 981        98%  sharp
 </pre>
 
 </details>

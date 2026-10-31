@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 57.6** ±1.0 · #232 of 731 · from 14 benchmark results across 6 sources
+**score 57.6** ±1.0 · #233 of 732 · from 14 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,8 +17,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task                vs the others          rank  counts  tests
 coding              ██········●█       #2 of 4*    8.4%      2
-math                ▁▁▃▅█▇●█▄▂▁▁    #184 of 429     35%      3
-vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄   #105 of 154*    8.7%      2
+math                ▁▁▃▅█▆●█▄▂▁▁    #185 of 431     35%      3
+vision &amp; documents  ▁▁▂▂▁▃●▂▆▇█▄   #104 of 153*    8.7%      2
 </pre>
 
 <details><summary>coding · #2 of 4 · 8.4% of its score</summary>
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #184 of 429 · 35% of its score</summary>
+<details><summary>math · #185 of 431 · 35% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -39,14 +39,14 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 48%         16%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         11%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/197  very hard · avg 7.1%    7.9%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/197  very hard · avg 7.2%    7.9%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #105 of 154 · 8.7% of its score</summary>
+<details><summary>vision &amp; documents · #104 of 153 · 8.7% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run   difficulty        counts  why

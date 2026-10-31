@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 37.5** ±2.1 · #601 of 731 · from 7 benchmark results across 3 sources
+**score 37.5** ±2.1 · #602 of 732 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▃▁    #404 of 468     21%      4
-chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #278 of 401*     39%      2
+coding          ▁▁▁▃●▇█▇▅▄▃▁    #405 of 469     21%      4
+chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #279 of 402*     39%      2
 </pre>
 
-<details><summary>coding · #404 of 468 · 21% of its score</summary>
+<details><summary>coding · #405 of 469 · 21% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #278 of 401 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #279 of 402 · 39% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   medium · avg 65%     38%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   medium · avg 65%     39%  at its level
 </pre>
 
 </details>
@@ -61,8 +61,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   39% ▇▇▇▇▇
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   39% ▇▇▇▇▇
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   38% ▇▇▇▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   21% ▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 37.5

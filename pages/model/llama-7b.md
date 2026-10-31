@@ -16,25 +16,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▂▄▆█▇▅▄▃▁   #522 of 537    6.4%      2
-math    ▁▁▃●██▅█▄▁▁▁   #461 of 528     11%      3
+coding  ▁▁●▃▄▆█▇▅▄▃▁   #524 of 539    6.4%      2
+math    ▁▁▃●██▅█▃▁▁▁   #464 of 530     11%      3
 </pre>
 
-<details><summary>coding · #522 of 537 · 6.4% of its score</summary>
+<details><summary>coding · #524 of 539 · 6.4% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    10.3%  ▄··▄····▄▄●▄ beats 4/6    medium · avg 62%    5.4%  sharp · several runs
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    10.3%  ▄··▄····▄▄●▄ beats 4/6    medium · avg 63%    5.4%  sharp · several runs
 <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>   17.7%  ●▁▁▄▅█▆▅▄▁▂▁ beats 2/86   medium · avg 59%    1.0%  typical
 </pre>
 
 </details>
 
-<details><summary>math · #461 of 528 · 11% of its score</summary>
+<details><summary>math · #464 of 530 · 11% of its score</summary>
 
-Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
+Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why

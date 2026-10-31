@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▂▄▆●▇▅▄▃▁   #243 of 537     68%      3
+coding  ▁▁▁▃▄▆●▇▅▄▃▁   #245 of 539     68%      3
 </pre>
 
-<details><summary>coding · #243 of 537 · 68% of its score</summary>
+<details><summary>coding · #245 of 539 · 68% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Falcon-H1R 7B](falcon-h1r-7b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 

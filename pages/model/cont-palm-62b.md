@@ -17,7 +17,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 task    vs the others          rank  counts  tests
 coding  █·█······●·█       #2 of 4*     14%      2
-math    ▁▁▃▆█●▅█▄▁▁▁   #296 of 528*     23%      2
+math    ▁▁▃▆█●▅█▃▁▁▁   #299 of 530*     23%      2
 </pre>
 
 <details><summary>coding · #2 of 4 · 14% of its score</summary>
@@ -30,7 +30,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>math · #296 of 528 · 23% of its score</summary>
+<details><summary>math · #299 of 530 · 23% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

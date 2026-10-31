@@ -16,10 +16,10 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▁▃▆█●▅█▄▁▁▁   #250 of 528     53%      2
+math  ▁▁▃▆█●▅█▃▁▁▁   #256 of 530     53%      2
 </pre>
 
-<details><summary>math · #250 of 528 · 53% of its score</summary>
+<details><summary>math · #256 of 530 · 53% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                              result  vs the others in its run   difficulty 
 <a href="https://arxiv.org/html/2210.11399v2">CommonsenseQA (lab)</a>                72.2%  █·····▂▂▃▂●▄ beats 32/38   easy · avg 83%       17%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2206.14858v2">MMLU-STEM (Minerva subset) (lab)</a>   63.9%  ▄······▄▄·▄● beats 5/5     medium · avg 62%     14%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11399v2">BIG-Bench Hard (lab)</a>               37.2%  ▁▁▁▁▂●▅▆█▃▃▁ beats 28/155  medium · avg 52%     10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>         17.6%  ▄·····▄█··▄● beats 5/5     hard · avg 15%      5.8%  typical
+<a href="https://arxiv.org/html/2206.14858v2">OCWCourses (Minerva) (lab)</a>         17.6%  ▄·····▄█··▄● beats 5/5     hard · avg 15%      5.9%  typical
 </pre>
 
 </details>
