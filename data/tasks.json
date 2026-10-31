@@ -569,14 +569,17 @@
     "category": "decision",
     "label": "tools & automation",
     "title": "Decision models for tools & automation",
-    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "description": "Published typed-decision evaluations, with evaluator-specific protocols and tested settings retained. Each task score uses only its reviewed benchmarks.",
     "benchmarks": [
       "decision-index-041-bfcl",
       "decision-index-041-toolret",
       "decision-index-041-api-bank",
       "decision-index-041-routerbench",
       "decision-index-041-home-appliance-simulator",
-      "decision-index-041-when2call"
+      "decision-index-041-when2call",
+      "agentdecisionbench-l1-pooled",
+      "agentdecisionbench-l2-shift",
+      "agentdecisionbench-l2-common"
     ]
   },
   {
@@ -584,7 +587,7 @@
     "category": "decision",
     "label": "retrieval & classification",
     "title": "Decision models for retrieval & classification",
-    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "description": "Published typed-decision evaluations, with evaluator-specific protocols and tested settings retained. Each task score uses only its reviewed benchmarks.",
     "benchmarks": [
       "decision-index-041-banking77",
       "decision-index-041-clinc150-oos",
@@ -592,7 +595,13 @@
       "decision-index-041-bright",
       "decision-index-041-amazon-esci",
       "decision-index-041-phishnchips-phishing-decisions",
-      "decision-index-041-hover"
+      "decision-index-041-hover",
+      "system-one-ag-news",
+      "system-one-ar-massive-intent",
+      "system-one-ar-massive-scenario",
+      "system-one-ar-miracl-pair",
+      "system-one-ar-miracl-rerank",
+      "system-one-banking77"
     ]
   },
   {
@@ -600,7 +609,7 @@
     "category": "decision",
     "label": "language understanding",
     "title": "Decision models for language understanding",
-    "description": "Typed-choice results from the Decision Index 0.4.1 public suite. These are decisions over supplied options, not generated answers.",
+    "description": "Published typed-decision evaluations, with evaluator-specific protocols and tested settings retained. Each task score uses only its reviewed benchmarks.",
     "benchmarks": [
       "decision-index-041-contractnli",
       "decision-index-041-anli",
@@ -610,7 +619,16 @@
       "decision-index-041-isarcasmeval",
       "decision-index-041-vast",
       "decision-index-041-nli4ct",
-      "decision-index-041-ragtruth"
+      "decision-index-041-ragtruth",
+      "system-one-ar-offensive",
+      "system-one-ar-sentiment",
+      "system-one-boolq",
+      "system-one-emotion",
+      "system-one-sst2",
+      "system-one-sst5",
+      "system-one-xnli-ar",
+      "system-one-xnli-en",
+      "system-one-xnli-fr"
     ]
   },
   {
@@ -656,7 +674,7 @@
     "category": "decision",
     "label": "vision",
     "title": "Decision models for images & screens",
-    "description": "Typed decisions over images and screens; published chance-corrected benchmark points, including unsupported-image limits.",
+    "description": "Published typed-decision evaluations, with evaluator-specific protocols and tested settings retained. Each task score uses only its reviewed benchmarks.",
     "benchmarks": [
       "decision-index-vision-04-blink",
       "decision-index-vision-04-cv-bench",
@@ -668,7 +686,13 @@
       "decision-index-vision-04-moderation-hateful-memes",
       "decision-index-vision-04-r-bench-m",
       "decision-index-vision-04-realworldqa",
-      "decision-index-vision-04-winoground"
+      "decision-index-vision-04-winoground",
+      "system-one-img-ar-sentiment",
+      "system-one-img-count",
+      "system-one-img-pets",
+      "system-one-img-sst2",
+      "system-one-img-vqa-yesno",
+      "system-one-img-refcoco"
     ]
   },
   {
@@ -676,7 +700,7 @@
     "category": "decision",
     "label": "workflows",
     "title": "Decision models for document & agent workflows",
-    "description": "DecisionBench v1: 27 disjoint families covering routing, extraction, verification, safety gates, action selection and reasoning. Unsupported/error requests count wrong.",
+    "description": "Published typed-decision evaluations, with evaluator-specific protocols and tested settings retained. Each task score uses only its reviewed benchmarks.",
     "benchmarks": [
       "decisionbench-v1-action-selection",
       "decisionbench-v1-bounded-extraction",
@@ -704,7 +728,8 @@
       "decisionbench-v1-semantic-filtering",
       "decisionbench-v1-target-selection",
       "decisionbench-v1-triage",
-      "decisionbench-v1-verification"
+      "decisionbench-v1-verification",
+      "system-one-typed-decisions"
     ]
   },
   {

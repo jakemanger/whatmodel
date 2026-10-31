@@ -1,0 +1,3 @@
+https://huggingface.co/datasets/JevAgentHarness/AgentDecisionBench/blob/f188132349fe95d96990cfb7d5b34f473374efde/README.md
+Licence: CC BY 4.0 for what we created: the recorded DecisionGym states, answer keys, task lists, our models' answers and the leaderboard.
+Kunlun Zhu et al. (2026), JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs, AgentDecisionBench, CC BY 4.0. Selected published leaderboard percentages converted to fractions. No endorsement.

@@ -19471,5 +19471,42 @@
     "checked": "2026-10-31",
     "verdict": "allowed",
     "icon": "providers/typesafe"
+  },
+  {
+    "id": "system-one-bench-20261031",
+    "name": "System One Bench (Ali Alhashimi)",
+    "kind": "dataset",
+    "match": [
+      "github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/results.json",
+      "github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/results_vision.json"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/system-one-bench-CC-BY-4.0.txt",
+    "terms_url": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
+    "quote": "Results (`results.json`, `results_vision.json` and the numbers on the site): CC BY 4.0.",
+    "scope": "Only original aggregate accuracy values from the pinned text and vision results files. No cases, images, latency, price, or third-party model-card numbers.",
+    "attribution": "Ali Alhashimi, System One Bench (2026), CC BY 4.0. Selected per-suite accuracies mapped to exact named model releases; aggregates and repeated metrics omitted. No endorsement. Publisher: https://systemonebench.dev/.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "github.com"
+  },
+  {
+    "id": "agent-decision-bench-20261031",
+    "name": "AgentDecisionBench",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/JevAgentHarness/AgentDecisionBench/blob/f188132349fe95d96990cfb7d5b34f473374efde/leaderboard/headline_numbers.jsonl.gz"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "/licenses/system-one-bench-CC-BY-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/JevAgentHarness/AgentDecisionBench/blob/f188132349fe95d96990cfb7d5b34f473374efde/README.md",
+    "quote": "Licence: CC BY 4.0 for what we created: the recorded DecisionGym states, answer keys, task lists, our models' answers and the leaderboard.",
+    "scope": "Only published L1 pooled and L2 common/shift all-state leaderboard accuracies. No third-party raw outputs, training data, L3 closed-loop metrics or overlapping subgroup metrics.",
+    "attribution": "Kunlun Zhu et al. (2026), JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs, AgentDecisionBench, CC BY 4.0. Selected published leaderboard percentages converted to fractions. No endorsement.",
+    "checked": "2026-10-31",
+    "verdict": "allowed",
+    "icon": "huggingface.co"
   }
 ]

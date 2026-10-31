@@ -1,0 +1,989 @@
+{
+  "date": "2026-10-31",
+  "new_results": 386,
+  "models_with_new_results": [
+    "clef",
+    "clef-flash",
+    "clef-omni",
+    "decision-clm-v0-1-8b",
+    "decision-d1-3b",
+    "decision-d1-omni-600m",
+    "decision-decider-4b-jevbench-mini",
+    "decision-drex-max-v1",
+    "decision-drex-v1-5",
+    "decision-drex-v2-0",
+    "decision-elephant-1-baselabs",
+    "decision-intern-decision-4b",
+    "decision-joey-1",
+    "decision-kev-0-8b-r15",
+    "decision-kev-4b-r10",
+    "decision-mammoth-1",
+    "decision-pplx-decider-flash-v1-2",
+    "decision-pplx-decider-v1-2",
+    "decision-tev1-4b",
+    "decision-verdict-jevbench-mini",
+    "decision-vllm-sr-d3-edge",
+    "decision-vllm-sr-d3-lite",
+    "decision-vllm-sr-d3-nano",
+    "jev-1-13",
+    "jev-1-14"
+  ],
+  "new_benchmarks": [
+    "agentdecisionbench-l1-pooled",
+    "agentdecisionbench-l2-common",
+    "agentdecisionbench-l2-shift",
+    "system-one-ag-news",
+    "system-one-ar-massive-intent",
+    "system-one-ar-massive-scenario",
+    "system-one-ar-miracl-pair",
+    "system-one-ar-miracl-rerank",
+    "system-one-ar-offensive",
+    "system-one-ar-sentiment",
+    "system-one-banking77",
+    "system-one-boolq",
+    "system-one-emotion",
+    "system-one-img-ar-sentiment",
+    "system-one-img-count",
+    "system-one-img-pets",
+    "system-one-img-refcoco",
+    "system-one-img-sst2",
+    "system-one-img-vqa-yesno",
+    "system-one-sst2",
+    "system-one-sst5",
+    "system-one-typed-decisions",
+    "system-one-xnli-ar",
+    "system-one-xnli-en",
+    "system-one-xnli-fr"
+  ],
+  "invalidated_results": 491,
+  "sources": [
+    "system-one-bench-20261031",
+    "agent-decision-bench-20261031"
+  ],
+  "system_one_mapping": {
+    "or_jev": "jev-1-13",
+    "or_jev_114": "jev-1-14",
+    "clef": "clef",
+    "clef_flash": "clef-flash",
+    "clef_omni": "clef-omni",
+    "drex": "decision-drex-v1-5",
+    "drex_v2": "decision-drex-v2-0",
+    "drex_max": "decision-drex-max-v1",
+    "pplx_v12": "decision-pplx-decider-v1-2",
+    "pplx_flash_v12": "decision-pplx-decider-flash-v1-2",
+    "mammoth1": "decision-mammoth-1",
+    "elephant1": "decision-elephant-1-baselabs",
+    "joey1": "decision-joey-1",
+    "kev": "decision-kev-4b-r10",
+    "kev_0_8b": "decision-kev-0-8b-r15",
+    "tev1": "decision-tev1-4b",
+    "d1_omni_600m": "decision-d1-omni-600m",
+    "d1_3b": "decision-d1-3b",
+    "d3_nano": "decision-vllm-sr-d3-nano",
+    "d3_lite": "decision-vllm-sr-d3-lite",
+    "d3_edge": "decision-vllm-sr-d3-edge"
+  },
+  "agent_mapping": {
+    "jev": "jev-1-13",
+    "intern": "decision-intern-decision-4b",
+    "clefflash": "clef-flash",
+    "clm": "decision-clm-v0-1-8b",
+    "verdict": "decision-verdict-jevbench-mini",
+    "decider": "decision-decider-4b-jevbench-mini"
+  },
+  "held": [
+    "Leanmcp later GitHub reports: code-only licence statement; dataset licence clearly covers only published dataset files.",
+    "System One unmatched model versions/endpoints, Span maker identity, Laya code revisions.",
+    "AgentDecisionBench JevK5 v0.2, older StartLux, and checkpoint-ambiguous Imajev/Bosun runs.",
+    "Unclear BenchmarkHeaven results reuse grant.",
+    "Restricted Artificial Analysis and JevAdvBench data excluded."
+  ],
+  "limitations": [
+    "Multiple suites from a single evaluator are not independent studies.",
+    "Most long-tail models still only have one evaluator.",
+    "No bulk conversion of maker-reported flags without per-run provenance."
+  ],
+  "icons": {
+    "new_marks": 29,
+    "missing_before": 198,
+    "missing_after": 130,
+    "repaired_models": [
+      "decision-mammoth-1",
+      "decision-ainvest-decision-27b-v1-0",
+      "decision-oak-1-1",
+      "decision-aleria-judge-1-1-1",
+      "decision-drex-max-v1",
+      "decision-vera-large",
+      "decision-jev-brain-gemma-4-31b",
+      "decision-decisio-0-6-0-gemma-4-31b",
+      "decision-elephant-1-baselabs",
+      "decision-linne-fern-1-0",
+      "decision-kev-27b",
+      "decision-simple-jev-qwen3-8-27b",
+      "decision-jpt-35b-a3b",
+      "decision-decisio-0-4-0-qwen3-6-35b-a3b",
+      "decision-decisio-0-4-0-gemma-4-12b",
+      "decision-winnow-12b-q8",
+      "decision-seb-9b-v2",
+      "decision-jpt-9b",
+      "decision-amber-hybrid-4b",
+      "decision-kev-9b-v2",
+      "decision-jpt-4b",
+      "decision-amber-4b",
+      "decision-razorback-one-read-3e296f08",
+      "decision-joey-1",
+      "decision-kev-4b-r10",
+      "decision-vllm-pr57250",
+      "decision-winnow-e4b-q8",
+      "decision-vera-core-2",
+      "decision-jobe",
+      "decision-crystal-0-8b",
+      "decision-openvons",
+      "decision-amber-0-4b",
+      "decision-wyat-1-800m",
+      "decision-bekko-v0-400m",
+      "decision-kev-0-8b-r15",
+      "decision-pick-150m-v5",
+      "decision-jpt-0-8b",
+      "decision-bekko-v0-68m",
+      "decision-von-1-3",
+      "decision-vera-spark",
+      "decision-laya-1e28ac20",
+      "decision-lfm2600",
+      "decision-harsha",
+      "decision-bekko-v0-17m",
+      "decision-clm-v0-1-8b",
+      "decision-aleria-judge-1-1-0",
+      "decisionbench-eldanring-winnow-12b-b6ac22b0",
+      "decisionbench-convaiinnovations-laya-1c5edc17",
+      "decisionbench-convaiinnovations-laya-typed-decisions-bc76315b",
+      "decisionbench-featherless-ai-simplejev-qwen3-6-35b-a3b-995ad96e",
+      "decisionbench-featherless-ai-simplejev-qwen3-8-27b-1d4bf0f2",
+      "decisionbench-ishesatoshi-smalljev-semantic-v9-8e2bac7c",
+      "decisionbench-jaredpalmer-kev-0-5b-9ce2fd39",
+      "decisionbench-jaredpalmer-kev-0-6b-dece6dba",
+      "decisionbench-jaredpalmer-kev-4b-485ace87",
+      "decisionbench-jaredpalmer-kev-8b-c80773da",
+      "decisionbench-mohit67890-imajev-4b-712891d1",
+      "decisionbench-mohit67890-imajev-4b-c9e5f132",
+      "decision-jevany-gemma-4b-jevbench-mini",
+      "decision-jevany-qwen-4b-jevbench-mini",
+      "decision-jevany-qwen-4b-direct-jevbench-mini",
+      "decision-jebadiah-9b-jevbench-mini",
+      "decision-von-jevbench-mini",
+      "decision-kev-4b-jevbench-mini",
+      "decision-clm-jevbench-mini",
+      "decision-openthai-systemone-jevbench-mini",
+      "decision-laya-typed-jevbench-mini",
+      "decision-laya-jevbench-mini"
+    ],
+    "remaining": [
+      {
+        "id": "decision-knowline-31b-gen1",
+        "provider": "PelaAI"
+      },
+      {
+        "id": "decision-jeffan-31b-1710",
+        "provider": "tattrongvu"
+      },
+      {
+        "id": "decision-wemm-jev-27b",
+        "provider": "Rover00"
+      },
+      {
+        "id": "decision-oenogarum",
+        "provider": "plantwaterer"
+      },
+      {
+        "id": "decision-ajev-lm6q",
+        "provider": "andyzhang232"
+      },
+      {
+        "id": "decision-flexdm-gemma-4-31b",
+        "provider": "1000luca"
+      },
+      {
+        "id": "decision-lychee-27b",
+        "provider": "LycheeAI"
+      },
+      {
+        "id": "decision-allec-oavg",
+        "provider": "plantwaterer"
+      },
+      {
+        "id": "decision-visionjev-1-0-0",
+        "provider": "taoszhang"
+      },
+      {
+        "id": "decision-anyjev-tacitus-31b",
+        "provider": "morriszjm"
+      },
+      {
+        "id": "decision-decider-31b",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-knowline-35b-a3b-gen1-5",
+        "provider": "PelaAI"
+      },
+      {
+        "id": "decision-oneshot-27b",
+        "provider": "OneShot"
+      },
+      {
+        "id": "decision-bobcat-1-3",
+        "provider": "sanghwa-na"
+      },
+      {
+        "id": "decision-amos-1-large",
+        "provider": "mukaddamzaid"
+      },
+      {
+        "id": "decision-knowline-26b-a4b-gen2-5",
+        "provider": "PelaAI"
+      },
+      {
+        "id": "decision-anyjev-l0-gemma-4-31b",
+        "provider": "MorrisZJ"
+      },
+      {
+        "id": "decision-deck31b",
+        "provider": "krishna-gogineni-765"
+      },
+      {
+        "id": "decision-cerno-27b",
+        "provider": "apertixai"
+      },
+      {
+        "id": "decision-decider-chat-gemma4-31b",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-qwen-decision-27b-noncausal",
+        "provider": "jsaurabh"
+      },
+      {
+        "id": "decision-quyet-1-0-large",
+        "provider": "chinhnc"
+      },
+      {
+        "id": "decision-garum",
+        "provider": "plantwaterer"
+      },
+      {
+        "id": "decision-span-02",
+        "provider": "lihe07"
+      },
+      {
+        "id": "decision-garas",
+        "provider": "plantwaterer"
+      },
+      {
+        "id": "decision-eikos-27b-fp8",
+        "provider": "caiovicentino1"
+      },
+      {
+        "id": "decision-reflex-27b-pmscr",
+        "provider": "kshetrajna12"
+      },
+      {
+        "id": "decision-rsi-jev-v6-1-vl-27b-auto",
+        "provider": "shgao"
+      },
+      {
+        "id": "decision-knowline-9b-gen1",
+        "provider": "PelaAI"
+      },
+      {
+        "id": "decision-tern-35b-a3b",
+        "provider": "matthewagi"
+      },
+      {
+        "id": "decision-synack-decide-26b-a4b-v7",
+        "provider": "SkyPanther"
+      },
+      {
+        "id": "decision-knowline-4b-gen5-5",
+        "provider": "PelaAI"
+      },
+      {
+        "id": "decision-jade",
+        "provider": "theunnecessarythings"
+      },
+      {
+        "id": "decision-ajev-gemma26-lora1",
+        "provider": "andyzhang232"
+      },
+      {
+        "id": "decision-decider-chat-qwen3-6-27b",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-muria",
+        "provider": "plantwaterer"
+      },
+      {
+        "id": "decision-jeffan-4b-2010",
+        "provider": "tattrongvu"
+      },
+      {
+        "id": "decision-verdin-4b-v1-1",
+        "provider": "victorbennett"
+      },
+      {
+        "id": "decision-senova-4b-v2",
+        "provider": "WangSenQWQ"
+      },
+      {
+        "id": "decision-joshua-diffusion-full",
+        "provider": "JoshuaSP"
+      },
+      {
+        "id": "decision-ajev-lora7",
+        "provider": "andyzhang232"
+      },
+      {
+        "id": "decision-mica-v0-5-4b",
+        "provider": "akivet"
+      },
+      {
+        "id": "decision-cerno-9b-v11",
+        "provider": "apertixai"
+      },
+      {
+        "id": "decision-decider-35b-nvfp4",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-jevk5-9b-v0-3-3",
+        "provider": "alibiserikbay"
+      },
+      {
+        "id": "decision-jevfire-uncapped",
+        "provider": "kikoncuo"
+      },
+      {
+        "id": "decision-rsi-jev-v6-1-vl-4b",
+        "provider": "shgao"
+      },
+      {
+        "id": "decision-jegue-0-1",
+        "provider": "fdemelo"
+      },
+      {
+        "id": "decision-jiwo-4b-v2",
+        "provider": "eljiwo"
+      },
+      {
+        "id": "decision-ezjev-4b-s2",
+        "provider": "everettjf"
+      },
+      {
+        "id": "decision-jev-omni",
+        "provider": "akhilaaa3"
+      },
+      {
+        "id": "decision-cerno-4b-v11",
+        "provider": "apertixai"
+      },
+      {
+        "id": "decision-rsi-jev-v5-0-vl-3b",
+        "provider": "shgao"
+      },
+      {
+        "id": "decision-djev",
+        "provider": "Davipar"
+      },
+      {
+        "id": "decision-jevk5-v0-3",
+        "provider": "alibiserikbay"
+      },
+      {
+        "id": "decision-decider-4b",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-lev1-3-7b",
+        "provider": "theaviv"
+      },
+      {
+        "id": "decision-jev-style-2b-v4",
+        "provider": "chaoliangUNSW"
+      },
+      {
+        "id": "decision-cam1",
+        "provider": "cbuk10001"
+      },
+      {
+        "id": "decision-kas-4b",
+        "provider": "kpiya"
+      },
+      {
+        "id": "decision-jevstral-8b",
+        "provider": "AmirBraham"
+      },
+      {
+        "id": "decision-metask-jev-4b",
+        "provider": "Metask-AI-Lab"
+      },
+      {
+        "id": "decision-ryotide-qwen-v0-3-1",
+        "provider": "csabag"
+      },
+      {
+        "id": "decision-intelif-qwen3-4b",
+        "provider": "UserMoonlight"
+      },
+      {
+        "id": "decision-pngwn-space-uncapped-full",
+        "provider": "pngwn"
+      },
+      {
+        "id": "decision-crivo-1b",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-gevva-e4b",
+        "provider": "davidburhans"
+      },
+      {
+        "id": "decision-semif",
+        "provider": "TheoLeeCJ"
+      },
+      {
+        "id": "decision-jiwo-0-8b-v2-r2",
+        "provider": "eljiwo"
+      },
+      {
+        "id": "decision-gevva-e2b",
+        "provider": "davidburhans"
+      },
+      {
+        "id": "decision-crivo-400m",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-decider-2b-fp8-http",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-jdi-ptr14-0-8b",
+        "provider": "AnamK"
+      },
+      {
+        "id": "decision-mini-jev",
+        "provider": "r-ms"
+      },
+      {
+        "id": "decision-exaone-4-0-1-2b-jev-v0-3",
+        "provider": "carrtesy"
+      },
+      {
+        "id": "decision-crivo-68m",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-jev-ettin-150m",
+        "provider": "Elfsong"
+      },
+      {
+        "id": "decision-crivo-150m-v2",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-mola-150m",
+        "provider": "codavidgarcia"
+      },
+      {
+        "id": "decision-mola-68m",
+        "provider": "codavidgarcia"
+      },
+      {
+        "id": "decision-jev-t5-342m-public-v2",
+        "provider": "Elfsong"
+      },
+      {
+        "id": "decision-dinah-1",
+        "provider": "Lukitaduarte"
+      },
+      {
+        "id": "decision-jev-ettin-400m",
+        "provider": "Elfsong"
+      },
+      {
+        "id": "decision-sifr-0-8b-v3-1",
+        "provider": "mohamedlotfy50"
+      },
+      {
+        "id": "decision-crivo-32m-v2",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-prumo",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-jev-style-0-8b-v3",
+        "provider": "chaoliangUNSW"
+      },
+      {
+        "id": "decision-crivo-17m",
+        "provider": "tardellirs"
+      },
+      {
+        "id": "decision-jevk5-lite",
+        "provider": "alibiserikbay"
+      },
+      {
+        "id": "decision-jeff-uncapped",
+        "provider": "logan-markewich"
+      },
+      {
+        "id": "decision-lfm350-sdpa",
+        "provider": "notnotsamuel"
+      },
+      {
+        "id": "decision-akash-gemma",
+        "provider": "akash-kamat"
+      },
+      {
+        "id": "decision-nirnaya-0-4b",
+        "provider": "kshitijthakkar"
+      },
+      {
+        "id": "decision-zev-latest",
+        "provider": "bhubbard"
+      },
+      {
+        "id": "decision-verdict-8af2496e",
+        "provider": "heman10x"
+      },
+      {
+        "id": "decision-jev-vision-27b-r2",
+        "provider": "e12ex2"
+      },
+      {
+        "id": "decision-knowline-35b-a3b-gen1",
+        "provider": "PelaAI"
+      },
+      {
+        "id": "decision-jev-d3-46k",
+        "provider": "tinnel123"
+      },
+      {
+        "id": "decision-matilda-jev-v1-5",
+        "provider": "Decision Index submission: matilda-jev-v1.5"
+      },
+      {
+        "id": "decision-xor-26b-a4b-v1-1",
+        "provider": "Decision Index submission: xor-26b-a4b-v1.1"
+      },
+      {
+        "id": "decision-qev-2b",
+        "provider": "ken-jo"
+      },
+      {
+        "id": "decision-qev-0-8b",
+        "provider": "ken-jo"
+      },
+      {
+        "id": "decisionbench-c-tianyu-nanojev-4a19595e",
+        "provider": "C-Tianyu"
+      },
+      {
+        "id": "decisionbench-davipar-djev-dev-f7f5b7f5",
+        "provider": "Davipar"
+      },
+      {
+        "id": "decisionbench-ikermoel-open-alternative-jev-4a85df18",
+        "provider": "IkerMoel"
+      },
+      {
+        "id": "decisionbench-mapika-decider-2b-fa996cea",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decisionbench-mapika-decider-35b-a3b-d9783c58",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decisionbench-molemo-lab-mojev-0c8695b6",
+        "provider": "MoLeMo-Lab"
+      },
+      {
+        "id": "decisionbench-octalab-inc-jqv-9216db57",
+        "provider": "Octalab-Inc"
+      },
+      {
+        "id": "decisionbench-theoleecj-semif-1f2dea3e",
+        "provider": "TheoLeeCJ"
+      },
+      {
+        "id": "decisionbench-zefancai-open-jev-2b-0c7aa498",
+        "provider": "ZefanCai"
+      },
+      {
+        "id": "decisionbench-zefancai-open-jev-9b-47e96688",
+        "provider": "ZefanCai"
+      },
+      {
+        "id": "decisionbench-deepanwadhwa-opendecision-a51e07b5",
+        "provider": "deepanwadhwa"
+      },
+      {
+        "id": "decisionbench-ekzhang-openjev-sglang-1355db6a",
+        "provider": "ekzhang"
+      },
+      {
+        "id": "decisionbench-heman10x-rlcd-modernbert-151m-8af2496e",
+        "provider": "heman10x"
+      },
+      {
+        "id": "decisionbench-kshetrajna12-reflex-27b-1d4bf0f2",
+        "provider": "kshetrajna12"
+      },
+      {
+        "id": "decisionbench-kshetrajna12-reflex-qwen3-5-4b-lora-9df1cbbb",
+        "provider": "kshetrajna12"
+      },
+      {
+        "id": "decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326",
+        "provider": "llm-semantic-router"
+      },
+      {
+        "id": "decisionbench-mmastrac-djev-spark-1444f3e9",
+        "provider": "mmastrac"
+      },
+      {
+        "id": "decisionbench-razorback16-openjev-ec4ff3df",
+        "provider": "razorback16"
+      },
+      {
+        "id": "decisionbench-zhengxuyu-litjev-1d4bf0f2",
+        "provider": "zhengxuyu"
+      },
+      {
+        "id": "decision-open-jev-9b-jevbench-mini",
+        "provider": "Zefan Cai"
+      },
+      {
+        "id": "decision-decider-4b-jevbench-mini",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-tinyjev-4b-jevbench-mini",
+        "provider": "AnkitAI"
+      },
+      {
+        "id": "decision-jevk5-4b-jevbench-mini",
+        "provider": "Alibi Serikbay"
+      },
+      {
+        "id": "decision-rsi-jev-2b-jevbench-mini",
+        "provider": "Shanghua Gao"
+      },
+      {
+        "id": "decision-decider-2b-jevbench-mini",
+        "provider": "Mapika"
+      },
+      {
+        "id": "decision-jevhome-e-jevbench-mini",
+        "provider": "Jibril Frej"
+      },
+      {
+        "id": "decision-jevhome-ettin-1b-jevbench-mini",
+        "provider": "Jibril Frej"
+      },
+      {
+        "id": "decision-verdict-jevbench-mini",
+        "provider": "Heman10x"
+      }
+    ]
+  },
+  "valid_new_results": 385,
+  "failed_new_results_retained": 1,
+  "per_model_coverage": [
+    {
+      "id": "clef",
+      "before": 42,
+      "after": 61,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "clef-flash",
+      "before": 42,
+      "after": 63,
+      "sources_after": [
+        "agent-decision-bench-20261031",
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "clef-omni",
+      "before": 53,
+      "after": 72,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-clm-v0-1-8b",
+      "before": 42,
+      "after": 42,
+      "sources_after": [
+        "agent-decision-bench-20261031",
+        "decision-index-public-041"
+      ]
+    },
+    {
+      "id": "decision-d1-3b",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-d1-omni-600m",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-decider-4b-jevbench-mini",
+      "before": 6,
+      "after": 8,
+      "sources_after": [
+        "agent-decision-bench-20261031",
+        "jevbench-mini-010"
+      ]
+    },
+    {
+      "id": "decision-drex-max-v1",
+      "before": 53,
+      "after": 67,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-drex-v1-5",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-drex-v2-0",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-elephant-1-baselabs",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-intern-decision-4b",
+      "before": 53,
+      "after": 54,
+      "sources_after": [
+        "agent-decision-bench-20261031",
+        "decision-index-public-041",
+        "decision-index-vision-04"
+      ]
+    },
+    {
+      "id": "decision-joey-1",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-kev-0-8b-r15",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-kev-4b-r10",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-mammoth-1",
+      "before": 42,
+      "after": 56,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-pplx-decider-flash-v1-2",
+      "before": 53,
+      "after": 72,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-pplx-decider-v1-2",
+      "before": 53,
+      "after": 72,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-tev1-4b",
+      "before": 38,
+      "after": 51,
+      "sources_after": [
+        "decision-index-public-041",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-verdict-jevbench-mini",
+      "before": 6,
+      "after": 8,
+      "sources_after": [
+        "agent-decision-bench-20261031",
+        "jevbench-mini-010"
+      ]
+    },
+    {
+      "id": "decision-vllm-sr-d3-edge",
+      "before": 53,
+      "after": 67,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-vllm-sr-d3-lite",
+      "before": 53,
+      "after": 67,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "decision-vllm-sr-d3-nano",
+      "before": 53,
+      "after": 67,
+      "sources_after": [
+        "decision-index-public-041",
+        "decision-index-vision-04",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "jev-1-13",
+      "before": 69,
+      "after": 91,
+      "sources_after": [
+        "agent-decision-bench-20261031",
+        "decision-index-public-041",
+        "decisionbench-results-20261031",
+        "system-one-bench-20261031"
+      ]
+    },
+    {
+      "id": "jev-1-14",
+      "before": 0,
+      "after": 22,
+      "sources_after": [
+        "system-one-bench-20261031"
+      ]
+    }
+  ],
+  "protocol_review": {
+    "system_one": "22 suites, with one accuracy per suite. MIRACL listwise and pairwise use disjoint queries (build_arabic.py usable[:N] vs usable[N:2*N]); typed-decisions counted once, omitting type/workflow/overall aggregates. Fixed choice baselines reviewed against builder; variable-arity and grounding use no chance correction. Image and text screenshots are correlated modalities, not new independent studies.",
+    "agent": "Three distinct levels/datasets; no L3 agent success, no overlapping BFCL-only or must-ask subgroup. Named v1.4 Verdict and v2.1 Decider attach to the corresponding existing JevBench identities, connecting that group without transferring weights or guessing revisions.",
+    "failed": "All-request Tev1 Banking77 protocol unsupported (77 labels exceeds endpoint cap 20): preserved but invalid. Other failed requests retain publisher all-request denominators.",
+    "identity": "Published exact named models/API slugs in site/meta.json and AgentDecisionBench models.jsonl. Local System One results are llama.cpp Q8_0 configurations, explicitly recorded; they do not replace native/BF16 observations. Endpoint observations retain requested release names; no served weight hash is invented."
+  },
+  "validation": {
+    "tests": "145 total: 143 passed on initial run; stale Jev 1.14 assertion updated and the three decision/hardware tests passed on targeted rerun. Hardware test initially raced the in-progress feed refresh; rerun after sync passed.",
+    "root_typecheck": "npx tsc --noEmit: passed",
+    "data_typecheck": "npx tsc --noEmit -p whatmodel/tsconfig.json: passed",
+    "lint": "npm run lint: passed",
+    "feed": "npm run sync-data -- --check-feed: passed; 27 events, 0 newly added; 5 frozen hardware snapshots, no changes. All 25 earlier events and four earlier archives preserved.",
+    "race": "Desktop and mobile assets regenerated; source/hash check passed.",
+    "production_compile": "next build --webpack --experimental-build-mode compile: passed.",
+    "production_full_build": "Not verified: full prerender previously exhausted disk; this turn Turbopack compile also exhausted disk. Failed generated output removed, webpack compile passed. Do not describe compile-only mode as a complete production build.",
+    "browser": "Jev 1.14 model page renders, 22 raw results / 21 calibrated, one RefCOCO result correctly withheld because fewer than three models have that protocol. Official logo visible; new source and licence links render. Main decision board preview shows new maker logos and sources.",
+    "calibration": "npm run check: passed (exit 0). 343 decision models in one connected comparison group; 12,570 calibrated cells across 107 benchmark keys. Other categories\u2019 top-five rankings and held-out metrics unchanged."
+  },
+  "calibration_review": {
+    "before": {
+      "groups": [
+        321,
+        21
+      ],
+      "main_loo_r": 0.265,
+      "main_loo_without_floor_r": 0.78,
+      "main_accuracy_median_error_pp": 3.9,
+      "main_accuracy_p90_error_pp": 15.5
+    },
+    "after": {
+      "groups": [
+        343
+      ],
+      "loo_r": 0.276,
+      "loo_without_floor_r": 0.582,
+      "accuracy_median_error_pp": 3.8,
+      "accuracy_p90_error_pp": 16.1
+    },
+    "top_five": [
+      "Bosun v3.1 1.7B: 76",
+      "Bosun v3.1 0.6B: 75",
+      "Reflex-27B: 74",
+      "Mammoth-1: 74",
+      "Jeffan-31B-1710: 74"
+    ],
+    "interpretation": "Top four identities unchanged; Jeffan replaces Imajev at fifth. Overall held-out correlation stays low. Correlation excluding floor-weight series decreased materially (0.780 to 0.582); the connected population and deterministic 300-cell sample changed, so this is not a paired improvement claim. Median accuracy error is similar and p90 slightly worse. Keep limited-evidence warnings; more suites are not more independent evaluators."
+  }
+}
