@@ -84627,24 +84627,24 @@
   },
   {
     "id": "decision-prumo",
-    "name": "Prumo (decision readout)",
+    "name": "Prumo (rule-based engine)",
     "provider": "tardellirs",
     "category": "decision",
-    "open_weights": true,
+    "open_weights": false,
     "api": null,
     "local": null,
     "source": "https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet",
-    "identity_note": "Exact Decision Index tested engine prumo; reported model Prumo. Type: inference technique; technique: autoregressive. Comparison entry; no current run command, API price or speed inferred from the benchmark.  Current repository metadata checked separately; an unpinned alias is not evidence that today’s weights reproduce this historical run.",
+    "identity_note": "Decision Index entry prumo is a deterministic, symbolic decision engine with zero learned parameters. The pinned author README explicitly states that model.safetensors contains 527 hand-set numeric constants, not trained model weights. Retained as a rule-based comparison baseline; not a separately trained neural model. Historical benchmark scores and provenance are unchanged.",
     "model_repo": "https://huggingface.co/tardellirs/prumo",
     "license": "apache-2.0",
     "license_source": "https://huggingface.co/tardellirs/prumo/blob/5d7c9ef87490ed88e19b57f798e4036c8516f474/README.md",
     "access": {
-      "kind": "weights",
+      "kind": "code",
       "url": "https://huggingface.co/tardellirs/prumo/tree/5d7c9ef87490ed88e19b57f798e4036c8516f474",
-      "source": "https://huggingface.co/api/models/tardellirs/prumo/revision/5d7c9ef87490ed88e19b57f798e4036c8516f474",
-      "checked": "2026-10-31",
+      "source": "https://huggingface.co/tardellirs/prumo/blob/5d7c9ef87490ed88e19b57f798e4036c8516f474/README.md",
+      "checked": "2026-11-01",
       "revision": "5d7c9ef87490ed88e19b57f798e4036c8516f474",
-      "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
+      "note": "Published Python rule engine and setup documentation verified. The 10,320-byte safetensors file stores hand-set constants; this is source-code access, not learned weights. No local execution performed during this review."
     }
   },
   {
