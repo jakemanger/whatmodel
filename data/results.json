@@ -468217,5 +468217,55 @@
     "date": "2026-09-22",
     "note": "com-kotobalabs/open-jev-deberta-v3-large@19bf9a64815add579fbf6c907bef584d9277a8e4, native decide on Modal L4. Confirmatory B1, distinct from 50-case exploratory B0. Published original aggregate: clean 252/300; authority resisted/hijacked 197/103; E1 95% bootstrap interval [0.500763885466463, 0.6397417574294022]. No missing confidence; exact reported fraction retained. Checkpoint pins match catalogue. Original aggregate reviewed, not a new model rerun.",
     "source_id": "chao-ma-injection-20260922"
+  },
+  {
+    "model": "jev-1-13",
+    "bench": "geo-citation-202610-listwise-spearman",
+    "score": 0.575199442081554,
+    "source": "https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/judges/jev_1.13_listwise.json",
+    "source_id": "citead-geo-citation-20261028",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "TypeSafe Jev 1.13, API snapshot 20260917. Authors ran original inference with the model-card runtime; hosted Jev uses the named API snapshot. Mean Spearman recomputed offline from released predictions and citation_labels.jsonl, not a new inference run; matches the published statistic to four decimals. Listwise protocol; 1,220 nonconstant groups. Labels SHA256 328aeaf42c39c9fa090adae21c60e6beb949fb05fd4d53d1462c6b4eebd57471; predictions SHA256 2f8a994684c42575e3d9582427626b64b86d9ae74752a0d6c6130e00d172e3c2. Open-model tested commit not reported; no equivalence to a later weight revision claimed. Evaluator authors work for Citead and publish a competing citation-ranker student; their own student rows are not imported."
+  },
+  {
+    "model": "decision-decider-4b",
+    "bench": "geo-citation-202610-listwise-spearman",
+    "score": 0.48028639712796545,
+    "source": "https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/decider4b_listwise.json",
+    "source_id": "citead-geo-citation-20261028",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "Mapika/decider-4b. Authors ran original inference with the model-card runtime; hosted Jev uses the named API snapshot. Mean Spearman recomputed offline from released predictions and citation_labels.jsonl, not a new inference run; matches the published statistic to four decimals. Listwise protocol; 1,220 nonconstant groups. Labels SHA256 328aeaf42c39c9fa090adae21c60e6beb949fb05fd4d53d1462c6b4eebd57471; predictions SHA256 793697d4682dd33ec370f6730673307234c79d3923da5cd738f06c14df17f1fc. Open-model tested commit not reported; no equivalence to a later weight revision claimed. Evaluator authors work for Citead and publish a competing citation-ranker student; their own student rows are not imported."
+  },
+  {
+    "model": "decision-jev-27b",
+    "bench": "geo-citation-202610-listwise-spearman",
+    "score": 0.5782717143252606,
+    "source": "https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/jev27b_listwise.json",
+    "source_id": "citead-geo-citation-20261028",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "autotrust/JEV-27B; not AutoTrust-JEV-27B-v1.1. Authors ran original inference with the model-card runtime; hosted Jev uses the named API snapshot. Mean Spearman recomputed offline from released predictions and citation_labels.jsonl, not a new inference run; matches the published statistic to four decimals. Listwise protocol; 1,220 nonconstant groups. Labels SHA256 328aeaf42c39c9fa090adae21c60e6beb949fb05fd4d53d1462c6b4eebd57471; predictions SHA256 afb3a3afbbefe9c41856d1cfdd5a9920ceacb3e692f1a7d2207f4445ab715837. Open-model tested commit not reported; no equivalence to a later weight revision claimed. Evaluator authors work for Citead and publish a competing citation-ranker student; their own student rows are not imported."
+  },
+  {
+    "model": "decision-jev-9b",
+    "bench": "geo-citation-202610-listwise-spearman",
+    "score": 0.5156733979604758,
+    "source": "https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/jev9b_listwise.json",
+    "source_id": "citead-geo-citation-20261028",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "autotrust/JEV-9B. Authors ran original inference with the model-card runtime; hosted Jev uses the named API snapshot. Mean Spearman recomputed offline from released predictions and citation_labels.jsonl, not a new inference run; matches the published statistic to four decimals. Listwise protocol; 1,220 nonconstant groups. Labels SHA256 328aeaf42c39c9fa090adae21c60e6beb949fb05fd4d53d1462c6b4eebd57471; predictions SHA256 ebbe71ced826638c7500aa9ab473ccc210350012c70d866655e075cf8c8a6d19. Open-model tested commit not reported; no equivalence to a later weight revision claimed. Evaluator authors work for Citead and publish a competing citation-ranker student; their own student rows are not imported."
+  },
+  {
+    "model": "decision-pplx-decider-v1-1-27b",
+    "bench": "geo-citation-202610-listwise-spearman",
+    "score": 0.5748194110314974,
+    "source": "https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/pplx27b_listwise.json",
+    "source_id": "citead-geo-citation-20261028",
+    "by": "independent",
+    "date": "2026-10-28",
+    "note": "perplexity-ai/pplx-decider-v1.1-27b; not v1.2. Authors ran original inference with the model-card runtime; hosted Jev uses the named API snapshot. Mean Spearman recomputed offline from released predictions and citation_labels.jsonl, not a new inference run; matches the published statistic to four decimals. Listwise protocol; 1,220 nonconstant groups. Labels SHA256 328aeaf42c39c9fa090adae21c60e6beb949fb05fd4d53d1462c6b4eebd57471; predictions SHA256 3ad3d3d027442fa1d54c6cc457d78c88ff82f40686d371d731fe765d726bb87c. Open-model tested commit not reported; no equivalence to a later weight revision claimed. Evaluator authors work for Citead and publish a competing citation-ranker student; their own student rows are not imported."
   }
 ]

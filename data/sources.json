@@ -20026,5 +20026,28 @@
     "checked": "2026-10-31",
     "verdict": "allowed",
     "icon": "github.com"
+  },
+  {
+    "id": "citead-geo-citation-20261028",
+    "name": "Citead GEO Citation Benchmark (October 2026)",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/citation_labels.jsonl",
+      "huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/judges/jev_1.13_listwise.json",
+      "huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/jev27b_listwise.json",
+      "huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/jev9b_listwise.json",
+      "huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/decider4b_listwise.json",
+      "huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/benchmark/predictions/open_decision_models/pplx27b_listwise.json"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "/licenses/CC-BY-SA-4.0.txt",
+    "terms_url": "https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/README.md",
+    "quote": "Passages, citation labels, folds and predictions are released under CC BY-SA 4.0.",
+    "scope": "Only the named pinned label file and five prediction files. Derived mean within-group Spearman correlations, computed from these licensed predictions. No permission inferred for the paper, unrelated results tables, model weights, or code. Does not include the authors’ own student models.",
+    "attribution": "Elisha Bajemon and André-Louis Rochet, TW3 Partners / Citead, GEO Citation Benchmark (2026), dataset revision cd2abf6868e15902735c35435410354f20df070d. Underlying passages: GEO-Optim GEO-Bench (CC BY-SA 4.0). Selected third-party model predictions; recomputed the original mean within-group Spearman statistic over 1,220 nonconstant engine-query groups; mapped exact named model releases. These adaptations and the separate extract remain CC BY-SA 4.0. No endorsement. Full source notice: /licenses/citead-geo-citation-NOTICE.txt.",
+    "verdict": "allowed",
+    "checked": "2026-11-01",
+    "icon": "huggingface.co"
   }
 ]

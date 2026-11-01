@@ -1,0 +1,94 @@
+Elisha Bajemon and André-Louis Rochet, TW3 Partners / Citead, GEO Citation Benchmark (2026), dataset revision cd2abf6868e15902735c35435410354f20df070d. Underlying passages: GEO-Optim GEO-Bench (CC BY-SA 4.0). Selected third-party model predictions; recomputed the original mean within-group Spearman statistic over 1,220 nonconstant engine-query groups; mapped exact named model releases. These adaptations and the separate extract remain CC BY-SA 4.0. No endorsement. Full source notice: /licenses/citead-geo-citation-NOTICE.txt.
+
+Full CC BY-SA 4.0 legal text: CC-BY-SA-4.0.txt
+Dataset card URL: https://huggingface.co/datasets/citead/geo-citation-benchmark/blob/cd2abf6868e15902735c35435410354f20df070d/README.md
+
+Dataset card at the reviewed revision follows:
+
+---
+license: cc-by-sa-4.0
+language:
+- en
+pretty_name: GEO Citation Benchmark
+tags:
+- generative-engine-optimization
+- citation
+- reranking
+- benchmark
+size_categories:
+- 1K<n<10K
+---
+
+# GEO Citation Benchmark
+
+Benchmark, predictions and code for *Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a
+Distilled 4B Student on Ten Engines under Controlled Retrieval* (Bajemon and Rochet, 2026). The
+model is [citead/geo-citation-ranker-4b](https://huggingface.co/citead/geo-citation-ranker-4b).
+
+The task: given a query and five candidate sources, rank the sources by the share of citations
+each receives in the answer of an answer engine that was given the five sources in its prompt.
+
+## Reproduce the paper
+
+Everything below runs offline in a few minutes and needs only `numpy` (plus `matplotlib` for
+the figure).
+
+```bash
+python code/reproduce_tables.py          # every scorer: rho, 95% CI, paired differences -> results/tables/all_scorers.csv
+python code/analyses.py .                # cross-engine agreement, baselines, top-1, per-engine and per-query means, overlap -> results/analyses/extra_analyses.json
+python paper/make_tables.py .            # the LaTeX tables of the paper -> paper/tables/, paper/numbers.json
+python paper/make_figures.py .           # Figure 1 -> paper/figures/fig_scorers.pdf
+```
+
+## Contents
+
+| Path | Content |
+|---|---|
+| `benchmark/passages.jsonl` | 1145 evaluation passages: 229 GEO-Bench test queries times 5 sources (`query`, `src_idx` = position of the source in the engine prompt, `text` = first 320 words) |
+| `benchmark/citation_labels.jsonl` | 6345 rows, one per (engine, query, source): `label_pawc`, the position-adjusted word count share of citation in the engine's answer, and `label_top` |
+| `benchmark/folds_query.json` | Query to fold (0 to 4), for the students trained on observed citations |
+| `benchmark/predictions/` | Predictions of the 36 scorer configurations of the paper on every evaluation passage |
+| `benchmark/training_groups.jsonl` | The 757 training groups (one per GEO-Bench test query outside the evaluation set, five sources each), without labels |
+| `benchmark/training_groups_mixed.jsonl` | The 757 groups mixing three own sources and two sources of other queries, used in one ablation |
+| `code/label_jev.py` | Labels the training groups with Jev (OpenRouter), as in the paper |
+| `code/train_student.py` | Trains a Qwen3-Reranker student with LoRA and a pairwise loss, then predicts the benchmark |
+| `code/score_passages.py` | Scores any (query, text) JSONL with a trained adapter |
+| `results/analyses/extra_analyses.json` | Analysis outputs cited by the paper (the agreement between the two teachers is kept from the authors' run, since teacher labels are not redistributed) |
+
+Prediction files map `"query||src_idx"` to a score, except files ending in `_by_group`, which map
+`"engine::query"` to `{src_idx: score}`.
+
+## Engines
+
+Ten configurations: gemini-3.1-flash-lite, gemma-4-31b-it, gpt-5.4, gpt-5.4-mini, gpt-5.5,
+llama-3.3-70b-instruct, mistral-medium-3.5-128b, nex-n2-pro, gpt-oss-120b, qwen3.5-122b-a10b.
+Each query is answered by one to ten of them (79 queries by one engine, 77 by all ten). Groups whose five labels are all equal are excluded,
+which leaves 1220 groups.
+
+## Retraining a student
+
+```bash
+OPENROUTER_API_KEY=... python code/label_jev.py benchmark/training_groups.jsonl jev_labels.jsonl   # about 0.10 USD
+python code/train_student.py --labels jev_labels.jsonl --base Qwen/Qwen3-Reranker-4B --out runs/student_4b
+```
+
+Teacher labels are not redistributed. The commands above train a student on Jev labels alone;
+the students reported in the paper, including GEO Citation Ranker 4B, used the mean of Jev and an
+LLM judge.
+
+## License
+
+Passages come from GEO-Bench (`GEO-Optim/geo-bench`, CC BY-SA 4.0). Passages, citation labels,
+folds and predictions are released under CC BY-SA 4.0. Code is released under
+the Apache 2.0 license.
+
+## Citation
+
+```bibtex
+@misc{bajemon2026citationranking,
+  author = {Bajemon, Elisha and Rochet, Andr{\'e}-Louis},
+  title  = {Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval},
+  year   = {2026},
+  note   = {arXiv preprint}
+}
+```

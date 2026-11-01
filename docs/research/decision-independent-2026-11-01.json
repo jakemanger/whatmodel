@@ -1,0 +1,186 @@
+{
+  "reviewed": "2026-11-01",
+  "scope": "Additional independent decision rankings; local preparation only. No publication authorized.",
+  "imported": {
+    "source": "citead-geo-citation-20261028",
+    "revision": "cd2abf6868e15902735c35435410354f20df070d",
+    "results": 5,
+    "benchmarks": 1,
+    "models_added": 0,
+    "inference_evaluators_added": 1,
+    "verification": [
+      {
+        "model": "jev-1-13",
+        "scorer": "judges/jev_1.13_listwise",
+        "groups": 1220,
+        "recomputed_rho": 0.575199442081554,
+        "published_rho": 0.5752,
+        "prediction_sha256": "2f8a994684c42575e3d9582427626b64b86d9ae74752a0d6c6130e00d172e3c2"
+      },
+      {
+        "model": "decision-decider-4b",
+        "scorer": "open_decision_models/decider4b_listwise",
+        "groups": 1220,
+        "recomputed_rho": 0.48028639712796545,
+        "published_rho": 0.4803,
+        "prediction_sha256": "793697d4682dd33ec370f6730673307234c79d3923da5cd738f06c14df17f1fc"
+      },
+      {
+        "model": "decision-jev-27b",
+        "scorer": "open_decision_models/jev27b_listwise",
+        "groups": 1220,
+        "recomputed_rho": 0.5782717143252606,
+        "published_rho": 0.5783,
+        "prediction_sha256": "afb3a3afbbefe9c41856d1cfdd5a9920ceacb3e692f1a7d2207f4445ab715837"
+      },
+      {
+        "model": "decision-jev-9b",
+        "scorer": "open_decision_models/jev9b_listwise",
+        "groups": 1220,
+        "recomputed_rho": 0.5156733979604758,
+        "published_rho": 0.5157,
+        "prediction_sha256": "ebbe71ced826638c7500aa9ab473ccc210350012c70d866655e075cf8c8a6d19"
+      },
+      {
+        "model": "decision-pplx-decider-v1-1-27b",
+        "scorer": "open_decision_models/pplx27b_listwise",
+        "groups": 1220,
+        "recomputed_rho": 0.5748194110314974,
+        "published_rho": 0.5748,
+        "prediction_sha256": "3ad3d3d027442fa1d54c6cc457d78c88ff82f40686d371d731fe765d726bb87c"
+      }
+    ],
+    "inputs_sha256": {
+      "benchmark/citation_labels.jsonl": "328aeaf42c39c9fa090adae21c60e6beb949fb05fd4d53d1462c6b4eebd57471",
+      "benchmark/predictions/judges/jev_1.13_listwise.json": "2f8a994684c42575e3d9582427626b64b86d9ae74752a0d6c6130e00d172e3c2",
+      "benchmark/predictions/open_decision_models/jev27b_listwise.json": "afb3a3afbbefe9c41856d1cfdd5a9920ceacb3e692f1a7d2207f4445ab715837",
+      "benchmark/predictions/open_decision_models/jev9b_listwise.json": "ebbe71ced826638c7500aa9ab473ccc210350012c70d866655e075cf8c8a6d19",
+      "benchmark/predictions/open_decision_models/decider4b_listwise.json": "793697d4682dd33ec370f6730673307234c79d3923da5cd738f06c14df17f1fc",
+      "benchmark/predictions/open_decision_models/pplx27b_listwise.json": "3ad3d3d027442fa1d54c6cc457d78c88ff82f40686d371d731fe765d726bb87c"
+    },
+    "identity_limits": "Named version/repository matching only; open-model tested weight commits were not published. Jev snapshot explicit. Three ambiguous older names held rather than joined to pinned or newer recipes.",
+    "evaluation_conflict": "Authors offer Citead visibility services and their own citation-ranking model. Independent of the five imported model makers; this commercial interest is disclosed."
+  },
+  "held": [
+    {
+      "name": "Benchmark Heaven current JevBench / Jeffan run",
+      "url": "https://benchmarkheaven.com/jev-models/jeffan-31b-1710",
+      "reason": "New original evaluator run identified, but current licensed decision-results release pointer remains v1.6.1. It does not contain Jeffan. Live method v1.8 and dated reruns are separate. Do not transplant live scores or infer numeric-data permission from the code MIT licence.",
+      "evidence": [
+        "https://benchmarkheaven.com/jev-models/data",
+        "https://benchmarkheaven.com/api/jevbench/manifest",
+        "https://github.com/fstandhartinger/model-market-comparison/blob/6ddd7d530b9cd55930747f5aac80618d68fcf6e4/lib/jevbench-current.mjs"
+      ],
+      "follow_up": "Recheck the explicitly published CC BY export when release pointer advances; verify exact model pin and method then."
+    },
+    {
+      "name": "Vals AI ClaimBench",
+      "url": "https://www.vals.ai/benchmarks/claimbench",
+      "reason": "Original independent financial-claim comparison found, but no commercial reuse grant for leaderboard measurements established. Footer reserves rights. No numeric cells imported.",
+      "follow_up": "Need an expressly licensed original-results export or permission before database import."
+    },
+    {
+      "name": "Citead alternate protocols and ambiguous identities",
+      "reason": "Pointwise protocol repeats the same study and labels, so kept as a research lead rather than duplicate corroboration. NeoHorse covers only 1,011 listwise and 1,211 pointwise groups, unlike the common 1,220 groups. Kev-4B has no tested revision linking it to existing pinned/r10 catalogue identities; Laya has the same issue. OpenDecider-small-td not added without a separate model identity/access review. No synthetic all-group score assigned."
+    },
+    {
+      "name": "Artificial Analysis Decision Index reference",
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-decision-index",
+      "reason": "Methodology reference requested by owner; no numbers imported. Existing source policy excludes its restricted data. Its fixed mix of evaluations differs from our multi-evaluator fit, so more evidence does not imply convergence to the same model order."
+    }
+  ],
+  "conclusion": "One additional inference evaluator, not five independent studies. This improves evidence for five existing models but does not add a second admitted evaluator for Jeffan or resolve breadth of the leaders. No scoring weights tuned to reproduce another leaderboard.",
+  "validation": {
+    "data_schema": "passed",
+    "offline_recomputation": "all five scores match within 1e-12; six input hashes verified",
+    "tests": "147 passed, zero failures",
+    "data_typecheck": "passed",
+    "score_coverage": "passed; all 357 decision models remain in the main comparison set",
+    "production_prebuild": "passed; --check-feed made no new announcements or snapshots",
+    "full_check": "passed; existing missing-logo / unscored-model warnings remain",
+    "production_build": "Blocked by local disk exhaustion (ENOSPC) after compilation and TypeScript passed, during page generation around 6,290/9,432 pages. Failed .next/server output removed to recover space; source data and saved artifacts preserved. Must rerun the production build successfully before publication.",
+    "static_page_check": "Not run against the incomplete build; rerun after a successful build."
+  },
+  "ranking_review": {
+    "before_top_five": [
+      {
+        "id": "decision-jeffan-31b-1710",
+        "score": 75.82023331436014
+      },
+      {
+        "id": "decision-mammoth-1",
+        "score": 74.80933123555278
+      },
+      {
+        "id": "decision-sieve-31b-v3",
+        "score": 73.69856852253528
+      },
+      {
+        "id": "decision-glide-v1-2",
+        "score": 73.26332604189184
+      },
+      {
+        "id": "decision-knowline-31b-gen1",
+        "score": 73.15098946783077
+      }
+    ],
+    "after_top_five": [
+      {
+        "id": "decision-jeffan-31b-1710",
+        "score": 75.82652529905323
+      },
+      {
+        "id": "decision-mammoth-1",
+        "score": 74.8091730708037
+      },
+      {
+        "id": "decision-sieve-31b-v3",
+        "score": 73.70494947323759
+      },
+      {
+        "id": "decision-glide-v1-2",
+        "score": 73.26937956591696
+      },
+      {
+        "id": "decision-knowline-31b-gen1",
+        "score": 73.15769025865022
+      }
+    ],
+    "top_five_order_unchanged": true,
+    "largest_absolute_change": {
+      "model": "decision-pplx-decider-v1-1-27b",
+      "name": "Perplexity Decider v1.1 (27B)",
+      "before": 72.15688337270129,
+      "after": 71.94445901102064,
+      "delta": -0.2124243616806467
+    },
+    "decision_models": 357,
+    "decision_results_before": 15059,
+    "decision_results_after": 15064,
+    "scored_decision_models": 357,
+    "additional_independent_source_for": {
+      "decision-jev-27b": "1 -> 2",
+      "decision-jev-9b": "1 -> 2"
+    },
+    "jeffan_admitted_evaluators": "1 -> 1",
+    "leave_one_out": {
+      "before_correlation": 0.594,
+      "after_correlation": 0.667,
+      "after_without_floor_weight_series": 0.682,
+      "sample_size": 300,
+      "cell_count": 14461,
+      "note": "The fixed-seed sample depends on total cell count, which changed. This is not an apples-to-apples prediction-quality improvement claim. Overall top-five order unchanged."
+    }
+  },
+  "rss_review": {
+    "existing_announcements": 31,
+    "new_announcements": 0,
+    "entire_feed_history_unchanged": true,
+    "existing_hardware_snapshots": 10,
+    "all_existing_archives_and_rss_png_bytes_unchanged": true,
+    "new_hardware_snapshot": "784b187205f384c683a83438aa22c55b5d792fb917d9e63f069d6678030ce302",
+    "desktop_and_mobile_mp4_refreshed": "Evidence-count footer updated; chart/source hashes verified by production prebuild."
+  },
+  "verification_command": "python3 docs/research/verify-geo-citation-2026-11-01.py /path/to/pinned-dataset",
+  "publication": "No push, pull request, workflow run or deployment performed. Build remains blocked by disk capacity."
+}

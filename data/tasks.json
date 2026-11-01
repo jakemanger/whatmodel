@@ -612,7 +612,8 @@
       "decisionpivot-v11-rerank-nfcorpus",
       "decisionpivot-v11-rerank-scifact",
       "leanmcp-202610-nfcorpus-rank-noul",
-      "leanmcp-202610-scifact-rank-noul"
+      "leanmcp-202610-scifact-rank-noul",
+      "geo-citation-202610-listwise-spearman"
     ]
   },
   {
