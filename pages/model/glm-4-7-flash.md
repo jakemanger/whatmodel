@@ -28,10 +28,10 @@ web search                     not ranked yet       —      1
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>         39.7%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 54/138  hard · avg 23%          10%  sharp · at its level · small run
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (lab)</a>           42.8%  ▂·▃▁▂▂●▅█▂▂▄ beats 16/46   very hard · avg 11%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">τ²-bench aggregate (lab)</a>   79.5%  ▁▁▁·▁▁▃▃▃●█▁ beats 22/39   medium · avg 45%          —  not counted yet: no other model in the …
+test                        result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>           39.7%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 54/138  hard · avg 23%          10%  sharp · at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (maker)</a>           42.8%  ▂·▃▁▂▂●▅█▂▂▄ beats 16/46   very hard · avg 11%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">τ²-bench aggregate (maker)</a>   79.5%  ▁▁▁·▁▁▃▃▃●█▁ beats 22/39   medium · avg 45%          —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   58.3%  ▃▃▄▃▃▃●▇█▃▂▅ beats 88/197   very hard · avg 7.2%     10%  sharp · at its level · noisy
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">AIME 2025 (lab)</a>            91.6%  ▁·▁▁▁▂▅▆█▇●▁ beats 118/133  medium · avg 42%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">AIME 2025 (maker)</a>          91.6%  ▁·▁▁▁▂▅▆█▇●▁ beats 118/133  medium · avg 42%           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -75,8 +75,8 @@ test                      result  vs the others in its run    difficulty        
 <details><summary>web search · 0.0% of its score</summary>
 
 <pre>
-test              result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (lab)</a>   42.8%  ▂·▃▁▂▂●▅█▂▂▄ beats 16/46  very hard · avg 11%       —  not counted yet: no other model in the …
+test                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (maker)</a>   42.8%  ▂·▃▁▂▂●▅█▂▂▄ beats 16/46  very hard · avg 11%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -92,8 +92,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   74.8%  ▂··▂▂·▂▆●█·▄ beats 7/15    medium · avg 63%        5.0%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 31/137  very hard · avg 5.8%    1.9%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.7%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 51/98   very easy · avg 90%     0.0%  blunt
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">Humanity's Last Exam (lab)</a>           14.4%  ▁▁▁▄▆●▇██▆▁▃ beats 36/111  very hard · avg 3.8%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">GPQA (subset unspecified) (lab)</a>      75.2%  ▂▁▂▂▄▃▆▃▅●▃▃ beats 89/106  very hard · avg 32%        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">Humanity's Last Exam (maker)</a>         14.4%  ▁▁▁▄▆●▇██▆▁▃ beats 36/111  very hard · avg 3.8%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">GPQA (subset unspecified) (maker)</a>    75.2%  ▂▁▂▂▄▃▆▃▅●▃▃ beats 89/106  very hard · avg 32%        —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -219,7 +219,7 @@ Other versions: Q8_0 (~31.8 GB) `lms get https://huggingface.co/lmstudio-communi
 
 Other versions: 8bit (~31.8 GB, Mac only) `mlx_lm.chat --model lmstudio-community/GLM-4.7-Flash-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.7-Flash)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.7-Flash)
 
 ## Published speed measurements
 

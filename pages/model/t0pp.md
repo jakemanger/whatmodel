@@ -56,6 +56,6 @@ weighted average                                   = 22.5
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/T0pp)
+Model repository and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/T0pp)
 
 [interactive version](https://whatmodel.sh/model/t0pp) · [JSON](https://whatmodel.sh/api?format=json&all=1)

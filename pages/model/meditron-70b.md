@@ -108,6 +108,6 @@ Other versions: Q2_K (~29.3 GB) `ollama run hf.co/TheBloke/meditron-70B-GGUF:Q2_
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/epfl-llm](https://huggingface.co/epfl-llm/meditron-70b)
+Model repository and documentation: [huggingface.co/epfl-llm](https://huggingface.co/epfl-llm/meditron-70b)
 
 [interactive version](https://whatmodel.sh/model/meditron-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

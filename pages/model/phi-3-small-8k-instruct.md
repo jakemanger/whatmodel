@@ -67,6 +67,6 @@ weighted average                                   = 44.1
    pip install tiktoken==0.6.0 triton==2.3.0 transformers==4.40.2 torch && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline; r='microsoft/Phi-3-small-8k-instruct'; d=torch.cuda.current_device(); m=AutoModelForCausalLM.from_pretrained(r, torch_dtype='auto', trust_remote_code=True).to(d); t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); print(pipeline('text-generation', model=m, tokenizer=t, device=d)([{'role': 'user', 'content': 'What about solving an 2x + 3 = 7 equation?'}], max_new_tokens=500, return_full_text=False, do_sample=False)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-small-8k-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-small-8k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-small-8k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

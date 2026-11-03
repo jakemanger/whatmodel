@@ -48,10 +48,10 @@ test            result  vs the others in its run    difficulty  counts  why
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 50%        11%  sharp
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>   88.0%  █·█···███··● beats 5/5    medium · avg 42%        10%  sharp
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>    98.1%  ▄······▄▄▄·● beats 5/5    very easy · avg 86%    1.1%  maxed out · noisy
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (maker)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 50%        11%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (maker)</a>   88.0%  █·█···███··● beats 5/5    medium · avg 42%        10%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (maker)</a>    98.1%  ▄······▄▄▄·● beats 5/5    very easy · avg 86%    1.1%  maxed out · noisy
 </pre>
 
 </details>
@@ -60,10 +60,10 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (lab)</a>                   74.4%  █··█●·██···█ beats 2/5      hard · avg 41%           23%  sharp · at its level
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (maker)</a>                 74.4%  █··█●·██···█ beats 2/5      hard · avg 41%           23%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5660  ▁▄▃▃▇▄█▃●▁▁▁ beats 24/30    avg 0.418                22%  sharp
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (lab)</a>           14.6%  ▄····▄·●·▄·▄ beats 2/5      very hard · avg 4.1%     11%  typical
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                       81.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 139/188  medium · avg 50%        6.2%  typical
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (maker)</a>         14.6%  ▄····▄·●·▄·▄ beats 2/5      very hard · avg 4.1%     11%  typical
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (maker)</a>                     81.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 139/188  medium · avg 50%        6.2%  typical
 </pre>
 
 </details>
@@ -164,6 +164,6 @@ Other versions: Q2_K (~44.71 GB) `lms get https://huggingface.co/bartowski/Prime
 
 Other versions: 8bit (~113.6 GB, Mac only) `mlx_lm.chat --model mlx-community/INTELLECT-3-8bit`
 
-Official weights and documentation: [huggingface.co/PrimeIntellect](https://huggingface.co/PrimeIntellect/INTELLECT-3)
+Model repository and documentation: [huggingface.co/PrimeIntellect](https://huggingface.co/PrimeIntellect/INTELLECT-3)
 
 [interactive version](https://whatmodel.sh/model/intellect-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

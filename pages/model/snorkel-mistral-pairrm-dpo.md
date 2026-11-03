@@ -111,6 +111,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/mradermacher/Snorkel-Mistral-Pa
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='snorkelai/Snorkel-Mistral-PairRM-DPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/snorkelai](https://huggingface.co/snorkelai/Snorkel-Mistral-PairRM-DPO)
+Model repository and documentation: [huggingface.co/snorkelai](https://huggingface.co/snorkelai/Snorkel-Mistral-PairRM-DPO)
 
 [interactive version](https://whatmodel.sh/model/snorkel-mistral-pairrm-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

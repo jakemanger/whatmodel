@@ -109,6 +109,6 @@ Other versions: Q8_0 (~6.6 GB) `ollama run hf.co/mradermacher/chatglm3-6b-128k-G
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='zai-org/chatglm3-6b-128k', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm3-6b-128k)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm3-6b-128k)
 
 [interactive version](https://whatmodel.sh/model/chatglm3-6b-128k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

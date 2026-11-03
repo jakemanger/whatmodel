@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                                    3   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (submitted / maker-reported)</a>             3   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2604.19444v1-calibration"></a><a href="https://arxiv.org/html/2604.19444v1">Unsupervised Confidence Calibration for…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 56.8
@@ -139,6 +139,6 @@ Other versions: Q8_0 (~8.71 GB) `ollama run hf.co/bartowski/nvidia_Nemotron-Casc
    mlx_lm.server --model introvoyz041/Nemotron-Cascade-8B-Thinking-mlx-4Bit
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-Cascade-8B-Thinking)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-Cascade-8B-Thinking)
 
 [interactive version](https://whatmodel.sh/model/nemotron-cascade-8b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

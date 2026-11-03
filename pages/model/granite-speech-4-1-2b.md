@@ -65,6 +65,6 @@ IBM Granite Speech 4.…  <a href="https://huggingface.co/ibm-granite/granite-sp
 
 Other versions: BF16 (~6.04 GB, NVIDIA only) `vllm serve ibm-granite/granite-speech-4.1-2b --max-model-len 2048`
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-4.1-2b)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-4.1-2b)
 
 [interactive version](https://whatmodel.sh/model/granite-speech-4-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

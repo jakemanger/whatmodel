@@ -86,6 +86,6 @@ weighted average                                   = 41.3
 
 Other versions: Q8_0 (~40.1 GB) `ollama run vicuna:33b-q8_0`
 
-Official weights and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-33b-v1.3)
+Model repository and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-33b-v1.3)
 
 [interactive version](https://whatmodel.sh/model/vicuna-33b-v1-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

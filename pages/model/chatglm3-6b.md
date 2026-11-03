@@ -25,8 +25,8 @@ chat &amp; writing  ▁▁●▃▆▄▆█▆▇▇▃   #394 of 402*     81% 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (lab)</a>   57.9%  ●·········██ beats 0/5    easy · avg 77%     10%  blunt · at its level
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (maker)</a>   57.9%  ●·········██ beats 0/5    easy · avg 77%     10%  blunt · at its level
 </pre>
 
 </details>
@@ -134,6 +134,6 @@ Other versions: Q8_0 (~6.6 GB) `ollama run hf.co/mradermacher/chatglm3-6b-GGUF:Q
    vllm serve zai-org/chatglm3-6b --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm3-6b)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm3-6b)
 
 [interactive version](https://whatmodel.sh/model/chatglm3-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

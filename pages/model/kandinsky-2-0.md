@@ -14,7 +14,7 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                                     result  reported by  source
-COCO-30k zero-shot FID ↓ (Kandins…  20.0000 FID  lab          <a href="https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md">Kandinsky 2.1 card</a>
+COCO-30k zero-shot FID ↓ (Kandins…  20.0000 FID  maker        <a href="https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md">Kandinsky 2.1 card</a>
 </pre>
 
 <sub>Licences: Kandinsky 2.1 card ([Apache-2.0](../../licenses/kandinsky21-card-original-fid-Apache-2.0.txt))</sub>
@@ -23,6 +23,6 @@ COCO-30k zero-shot FID ↓ (Kandins…  20.0000 FID  lab          <a href="https
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/ai-forever](https://huggingface.co/ai-forever/Kandinsky_2.0)
+Model repository and documentation: [huggingface.co/ai-forever](https://huggingface.co/ai-forever/Kandinsky_2.0)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kandinsky-2-0)

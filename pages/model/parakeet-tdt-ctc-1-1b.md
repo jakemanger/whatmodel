@@ -51,6 +51,6 @@ weighted average                                   = 55.9
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-tdt_ctc-1.1b-gguf parakeet-tdt_ctc-1.1b-Q8_0.gguf --local-dir models/parakeet-tdt_ctc-1.1b && build/bin/transcribe-cli -m models/parakeet-tdt_ctc-1.1b/parakeet-tdt_ctc-1.1b-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b)
 
 [interactive version](https://whatmodel.sh/model/parakeet-tdt-ctc-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

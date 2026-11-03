@@ -29,13 +29,13 @@ Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Pre
 
 <pre>
 test                               result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">τ²-bench Telecom (lab)</a>              33.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 27/89    hard · avg 19%           10%  sharp · at its level
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">τ²-bench Telecom (maker)</a>            33.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 27/89    hard · avg 19%           10%  sharp · at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive)</a>     43.7%  ▄·●·▄▄▄▄·▄·▄ beats 2/8      medium · avg 43%        2.9%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                   3.0%  ▄··▄●█··▄·▄█ beats 2/8      very hard · avg 11%     2.4%  sharp · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>                        3.3%  ●▄·▄▄▄·█···█ beats 0/8      very hard · avg 13%     2.1%  noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>    0.1%  ●▂···▂···▄·▂ beats 1/8      very hard · avg 3.9%    1.6%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                     1.2%  ●▂·▅█▂▃▃▃▆▂▅ beats 0/24     very hard · avg 3.6%    1.2%  blunt · too hard for it
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                       61.1%  ▁▁▁▁▁▃▅█●▅▄▁ beats 102/171  medium · avg 58%        1.0%  blunt · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (maker)</a>                     61.1%  ▁▁▁▁▁▃▅█●▅▄▁ beats 102/171  medium · avg 58%        1.0%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -97,7 +97,7 @@ test           result  vs the others in its run  difficulty           counts  wh
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (lab)</a>      53.2%  ▂▁▂▂▄▃▆●▅█▃▃ beats 55/106  hard · avg 48%         7.6%  sharp · at its level
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (maker)</a>    53.2%  ▂▁▂▂▄▃▆●▅█▃▃ beats 55/106  hard · avg 48%         7.6%  sharp · at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                             65.7%  ▂··▂●·▂▂···▂ beats 4/8     medium · avg 59%       4.1%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux</a>                           79.8%  ▂···●··▂▂··▂ beats 2/8     easy · avg 76%         3.6%  typical
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench</a>                              20.0%  ▃····▃▅··●▃▃ beats 5/8     very hard · avg 12%    2.8%  typical
@@ -220,7 +220,7 @@ Other versions: Q8_0 (~5.26 GB) `ollama run nemotron-3-nano:4b-q8_0`
 
 Other versions: 8bit (~4.2 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16)
 
 ## Published speed measurements
 

@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-07 · 4B params
 
-**score 48.1** ±19.1 · #2 of 3 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 48.1** ±19.1 · #2 of 3 · from 9 benchmark results across 1 source · † no independently run results verified
 
 Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow&score=set) comparison set only.
 
@@ -23,15 +23,15 @@ text to image  █····●·····█   #2 of 3     77%      9
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (lab)</a>                        79.0%  ▇▃▅▇▁▄▅●█▃▃▅ beats 25/39  very easy · avg 87%     23%  sharp · small run
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (lab)</a>          85.1%  ▄●▄█▄▄·▄···▄ beats 1/8    very easy · avg 87%     10%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (maker)</a>                      79.0%  ▇▃▅▇▁▄▅●█▃▃▅ beats 25/39  very easy · avg 87%     23%  sharp · small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (maker)</a>        85.1%  ▄●▄█▄▄·▄···▄ beats 1/8    very easy · avg 87%     10%  small run
 <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (short prompt…</a>   82.5%  █·●········█ beats 1/2    easy · avg 83%         7.9%  small run
 <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (long prompts…</a>   83.2%  ●······█···█ beats 0/2    easy · avg 84%         7.8%  small run
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (lab)</a>            79.2%  ▃·······●███ beats 1/12   easy · avg 81%         7.2%  small run
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (lab)</a>            90.4%  ▃·····●██▅▃▃ beats 2/12   very easy · avg 92%    6.5%  small run
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (lab)</a>                      86.3%  ▄·▂·▂▆●▄▂▄▂▂ beats 10/17  very easy · avg 86%    5.4%  small run
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (lab)</a>               50.9%  ▃·▃●▃·▃··▃·▃ beats 4/8    medium · avg 50%       4.8%  at its level · small run
-<a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (lab)</a>               54.2%  ▃······▃▅█●▃ beats 7/9    medium · avg 53%       4.8%  at its level · small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (maker)</a>          79.2%  ▃·······●███ beats 1/12   easy · avg 81%         7.2%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (maker)</a>          90.4%  ▃·····●██▅▃▃ beats 2/12   very easy · avg 92%    6.5%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (maker)</a>                    86.3%  ▄·▂·▂▆●▄▂▄▂▂ beats 10/17  very easy · avg 86%    5.4%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (maker)</a>             50.9%  ▃·▃●▃·▃··▃·▃ beats 4/8    medium · avg 50%       4.8%  at its level · small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (maker)</a>             54.2%  ▃······▃▅█●▃ beats 7/9    medium · avg 53%       4.8%  at its level · small run
 </pre>
 
 </details>
@@ -59,6 +59,6 @@ weighted average                                   = 48.1
    sd-cli --diffusion-model models/mage_flow_base_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 5.0 --steps 30 --diffusion-fa -v --offload-to-cpu
    ```
 
-Official weights and documentation: [github.com/microsoft](https://github.com/microsoft/Mage)
+Model repository and documentation: [github.com/microsoft](https://github.com/microsoft/Mage)
 
 [interactive version](https://whatmodel.sh/model/mage-flow-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

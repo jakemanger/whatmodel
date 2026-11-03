@@ -28,8 +28,8 @@ Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [Muse Wonder Full](muse-wonder-full.md)
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1073 IPS  ▁▁▁▃▃▂█▁▂●▁▁ beats 53/59  avg -0.379 IPS           43%  sharp
-<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>            77.9%  ▂····▂▁▁▆██● beats 31/31  hard · avg 25%          4.4%  small run
-<a href="https://deepmind.google/models/gemini/#performance">Terminal-Bench 4.0 (lab)</a>                 57.4%  ▁·▁··▁▆▆▅█●▃ beats 27/33  very hard · avg 0.5%       —  not counted yet: no other model in the …
+<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (maker)</a>          77.9%  ▂····▂▁▁▆██● beats 31/31  hard · avg 25%          4.4%  small run
+<a href="https://deepmind.google/models/gemini/#performance">Terminal-Bench 4.0 (maker)</a>               57.4%  ▁·▁··▁▆▆▅█●▃ beats 27/33  very hard · avg 0.5%       —  not counted yet: no other model in the …
 <a href="https://deepmind.google/models/model-cards/gemini-4-argon/">Agents' Last Exam (pass@1, offici…</a>       39.5%  █····▄·····● beats 3/3                               —  not counted yet: no other model in the …
 </pre>
 
@@ -40,9 +40,9 @@ test                                    result  vs the others in its run  diffic
 Beats [GPT-6.1 Terra](gpt-6-1-terra.md) here, though they rank higher overall. Trails [Claude Opus 5](claude-opus-5.md) here, though they rank lower overall.
 
 <pre>
-test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1679.2  ▁▁▃▂▅█▃▆▅●▁▂ beats 120/129  avg 981            30%  sharp
-<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>   77.9%  ▂····▂▁▁▆██● beats 31/31    hard · avg 25%    4.4%  small run
+test                             result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>        1679.2  ▁▁▃▂▅█▃▆▅●▁▂ beats 120/129  avg 981            30%  sharp
+<a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (maker)</a>   77.9%  ▂····▂▁▁▆██● beats 31/31    hard · avg 25%    4.4%  small run
 </pre>
 
 </details>
@@ -61,8 +61,8 @@ test            result  vs the others in its run    difficulty  counts  why
 <details><summary>other tests (1)</summary>
 
 <pre>
-test           result  vs the others in its run  difficulty        counts  why
-<a href="https://deepmind.google/models/gemini/#performance">LVBench (lab)</a>   91.7%  ▇·█▅▅▄▄··▃▁● beats 28/28  medium · avg 59%    4.2%  typical
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://deepmind.google/models/gemini/#performance">LVBench (maker)</a>   91.7%  ▇·█▅▅▄▄··▃▁● beats 28/28  medium · avg 59%    4.2%  typical
 </pre>
 
 </details>

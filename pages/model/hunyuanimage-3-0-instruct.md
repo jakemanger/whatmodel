@@ -69,6 +69,6 @@ api (fal.ai) · $0.090/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-im
    git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0-Instruct --local-dir ./HunyuanImage-3-Instruct && python3 -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-Instruct', attn_implementation='sdpa', trust_remote_code=True, torch_dtype='auto', device_map='auto', moe_impl='eager', moe_drop_tokens=True); m.load_tokenizer('./HunyuanImage-3-Instruct'); cot,s=m.generate_image(prompt='Make a new fridge magnet from the logo in image 1 using the fridge-magnet material in image 2', image=['./assets/demo_instruct_imgs/input_1_0.png','./assets/demo_instruct_imgs/input_1_1.png'], seed=42, image_size='auto', use_system_prompt='en_unified', bot_task='think_recaption', infer_align_image_size=True, diff_infer_steps=50, verbose=2); s[0].save('image_edit.png')"
    ```
 
-Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct)
+Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct)
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -22,11 +22,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                     63.2%  ▁▁▁▁▂▁▁▅●█▃▁ beats 50/131  easy · avg 86%          37%  small run
-<a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                      63.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 50/135  very easy · avg 89%     27%  at its level · small run
+<a href="https://arxiv.org/html/2411.12372v1">WinoGrande (maker)</a>                   63.2%  ▁▁▁▁▂▁▁▅●█▃▁ beats 50/131  easy · avg 86%          37%  small run
+<a href="https://arxiv.org/html/2411.12372v1">HellaSwag (maker)</a>                    63.2%  ▁▁▁▂▂▂▄●█▇▄▂ beats 50/135  very easy · avg 89%     27%  at its level · small run
 <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), last-wo…</a>   65.4%  ▁·····▁▁▃▃●█ beats 39/86   very easy · avg 87%     12%  blunt · at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 3/276   medium · avg 72%        11%  noisy
-<a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                           74.7%  ▁▁▁▂▂▃●█▅▃▁▁ beats 43/123  easy · avg 86%         9.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.12372v1">PIQA (maker)</a>                         74.7%  ▁▁▁▂▂▃●█▅▃▁▁ beats 43/123  easy · avg 86%         9.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -36,11 +36,11 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                           results  share of the score
-<a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama (lab)</a>                        4   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   11% ▇
-prior: pull toward the middle               4% ▇
-weighted average                          = 24.8
+source                                  results  share of the score
+<a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama (submitted / maker-reported)</a>        4   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1   11% ▇
+prior: pull toward the middle                      4% ▇
+weighted average                                 = 24.8
 </pre>
 
 <sub>Licences: RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
@@ -105,6 +105,6 @@ weighted average                          = 24.8
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-Base-3B-v1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1)
+Model repository and documentation: [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1)
 
 [interactive version](https://whatmodel.sh/model/redpajama-incite-base-3b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

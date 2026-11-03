@@ -22,6 +22,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
    uvx pocket-tts generate --text "Hello world, this is a test."
    ```
 
-Official weights and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/pocket-tts)
+Model repository and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/pocket-tts)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/pocket-tts)

@@ -22,6 +22,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
    pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts_turbo import ChatterboxTurboTTS; m = ChatterboxTurboTTS.from_pretrained(device='cpu'); ta.save('test-turbo.wav', m.generate('Hi there, Sarah here from MochaFone calling you back [chuckle], have you got one minute to chat about the billing issue?'), m.sr)"
    ```
 
-Official weights and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox-turbo)
+Model repository and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox-turbo)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/chatterbox-turbo)

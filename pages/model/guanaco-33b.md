@@ -70,6 +70,6 @@ weighted average                                   = 35.3
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='timdettmers/guanaco-33b-merged', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/timdettmers](https://huggingface.co/timdettmers/guanaco-33b-merged)
+Model repository and documentation: [huggingface.co/timdettmers](https://huggingface.co/timdettmers/guanaco-33b-merged)
 
 [interactive version](https://whatmodel.sh/model/guanaco-33b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

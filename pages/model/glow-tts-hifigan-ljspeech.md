@@ -44,6 +44,6 @@ weighted average                                   = 46.2
 
 No verified API or local download yet.
 
-Official weights and documentation: [github.com/jaywalnut310](https://github.com/jaywalnut310/glow-tts)
+Model repository and documentation: [github.com/jaywalnut310](https://github.com/jaywalnut310/glow-tts)
 
 [interactive version](https://whatmodel.sh/model/glow-tts-hifigan-ljspeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

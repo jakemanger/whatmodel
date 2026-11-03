@@ -25,8 +25,8 @@ math            █··········●       #1 of 2*     25%      2
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      75.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 158/205  easy · avg 78%     11%  sharp · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 68%    5.7%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (maker)</a>                    75.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 158/205  easy · avg 78%     11%  sharp · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (maker)</a>                         63.6%  ▁▁▁▄▅█▆●▄▁▂▁ beats 59/86    easy · avg 68%    5.7%  at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   25.7%  ▃●·····▃█··▅ beats 1/7      hard · avg 32%    4.2%  at its level · small run
 </pre>
 
@@ -46,9 +46,9 @@ test            result  vs the others in its run    difficulty  counts  why
 <details><summary>math · #1 of 2 · 25% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty      counts  why
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>   11.6%  ▁·▁▁●▂▅▆█▇▅▁ beats 6/133  hard · avg 17%     13%  sharp · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        60.7%  ▂·▁▁▁▁▁▂▅█●▂ beats 35/42  easy · avg 67%     12%  sharp · at its level · small run
+test               result  vs the others in its run  difficulty      counts  why
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (maker)</a>   11.6%  ▁·▁▁●▂▅▆█▇▅▁ beats 6/133  hard · avg 17%     13%  sharp · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (maker)</a>        60.7%  ▂·▁▁▁▁▁▂▅█●▂ beats 35/42  easy · avg 67%     12%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -58,12 +58,12 @@ test             result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   55.0%  ▂▄▂▃█●▃▆▃▅▂▂ beats 40/81    medium · avg 57%    8.8%  blunt · at its level
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                           64.9%  ▁▁▁▁▁▂▂▅●█▆▄ beats 105/214  medium · avg 70%    8.6%  at its level · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                       50.6%  ▁▁·▁▁▁▃●▄▅█▁ beats 51/188   medium · avg 53%    7.0%  at its level · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                    60.3%  ▃●▃·▃···▅·▅█ beats 1/11     medium · avg 63%    3.9%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (maker)</a>                         64.9%  ▁▁▁▁▁▂▂▅●█▆▄ beats 105/214  medium · avg 70%    8.6%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (maker)</a>                     50.6%  ▁▁·▁▁▁▃●▄▅█▁ beats 51/188   medium · avg 53%    7.0%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (maker)</a>                  60.3%  ▃●▃·▃···▅·▅█ beats 1/11     medium · avg 63%    3.9%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   71.3%  ▃·▁▁▂▁▂▅●▇▄▁ beats 54/100   medium · avg 67%    3.7%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.2%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 66/146   easy · avg 82%      2.4%  at its level · noisy
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Codegolf v2.2 (lab)</a>                  16.8%  █··········● beats 1/1                             —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Codegolf v2.2 (maker)</a>                16.8%  █··········● beats 1/1                             —  not counted yet: no other model in the …
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">GPQA Diamond (Google RelaxedAccur…</a>   23.7%  ······●····· beats 0/1                             —  not counted yet: no other model in the …
 </pre>
 
@@ -178,6 +178,6 @@ Other versions: Q8_0 (~9.92 GB) `ollama run gemma3n:e4b-it-q8_0`
 
 Other versions: 8bit (~9.3 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-3n-E4B-it-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3n-E4B-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3n-E4B-it)
 
 [interactive version](https://whatmodel.sh/model/gemma-3n-e4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

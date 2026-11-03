@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-06 · 34.66B params (3B active) · apache-2.0
 
-**score 71.3** ±4.1 · #70 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 71.3** ±4.1 · #70 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -127,6 +127,6 @@ Other versions: 8bit (~36.8 GB, Mac only) `mlx_lm.chat --model DreamFoundries/Qw
    vllm serve Qwen/Qwen-AgentWorld-35B-A3B
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B)
 
 [interactive version](https://whatmodel.sh/model/qwen-agentworld-35b-a3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

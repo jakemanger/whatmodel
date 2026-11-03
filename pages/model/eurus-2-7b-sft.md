@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 36.3** ±3.0 · #617 of 732 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.3** ±3.0 · #617 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,10 +22,10 @@ math  ●··········█   #2 of 2     96%      3
 <details><summary>math · #2 of 2 · 96% of its score</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 39%        35%  sharp · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       65.1%  ▁▃▂●▄▇▅▇█▄▂▁ beats 12/85  very easy · avg 86%     34%  at its level · small run
-<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   32.7%  ▁·▃▁▁▂▁●▄▁▃▃ beats 12/27  medium · avg 55%        27%  small run
+test                  result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (maker)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 39%        35%  sharp · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (maker)</a>       65.1%  ▁▃▂●▄▇▅▇█▄▂▁ beats 12/85  very easy · avg 86%     34%  at its level · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (maker)</a>   32.7%  ▁·▃▁▁▂▁●▄▁▃▃ beats 12/27  medium · avg 55%        27%  small run
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (l…</a>        3   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (s…</a>        3   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 36.3
 </pre>
@@ -99,6 +99,6 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/mradermacher/Euru
 
 Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0`
 
-Official weights and documentation: [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT)
+Model repository and documentation: [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT)
 
 [interactive version](https://whatmodel.sh/model/eurus-2-7b-sft) · [JSON](https://whatmodel.sh/api?format=json&all=1)

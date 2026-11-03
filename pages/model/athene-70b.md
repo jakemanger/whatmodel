@@ -141,6 +141,6 @@ Other versions: Q2_K (~26.38 GB) `lms get https://huggingface.co/bartowski/Athen
 
 Other versions: Q2_K (~26.38 GB) `ollama run hf.co/bartowski/Athene-70B-GGUF:Q2_K`
 
-Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-70B)
+Model repository and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-70B)
 
 [interactive version](https://whatmodel.sh/model/athene-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

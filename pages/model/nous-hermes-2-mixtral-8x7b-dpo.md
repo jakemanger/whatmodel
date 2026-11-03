@@ -115,6 +115,6 @@ Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/TheBloke/Nous-He
 
 Other versions: Q8_0 (~56.54 GB) `ollama run nous-hermes2-mixtral:8x7b-dpo-q8_0`
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO)
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-mixtral-8x7b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -144,6 +144,6 @@ Other versions: Q8_0 (~2.7 GB) `ollama run codegemma:2b-code-q8_0`
    mlx_lm.server --model mlx-community/codegemma-2b-4bit
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/codegemma-2b)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/codegemma-2b)
 
 [interactive version](https://whatmodel.sh/model/codegemma-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

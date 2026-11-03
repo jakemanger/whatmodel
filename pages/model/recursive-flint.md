@@ -16,8 +16,8 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                result  reported by  source
-Terminal-Bench 2.1   54.9%  lab          <a href="https://huggingface.co/RecursiveSI/flint/blob/2a247be0c0aec895ccb0ac7ca92229ec6df37288/README.md">Recursive Flint Apache-2.0 mo…</a>
-SWE-bench Verified   74.2%  lab          <a href="https://huggingface.co/RecursiveSI/flint/blob/2a247be0c0aec895ccb0ac7ca92229ec6df37288/README.md">Recursive Flint Apache-2.0 mo…</a>
+Terminal-Bench 2.1   54.9%  maker        <a href="https://huggingface.co/RecursiveSI/flint/blob/2a247be0c0aec895ccb0ac7ca92229ec6df37288/README.md">Recursive Flint Apache-2.0 mo…</a>
+SWE-bench Verified   74.2%  maker        <a href="https://huggingface.co/RecursiveSI/flint/blob/2a247be0c0aec895ccb0ac7ca92229ec6df37288/README.md">Recursive Flint Apache-2.0 mo…</a>
 </pre>
 
 <sub>Licences: Recursive Flint Apache-2.0 model card ([Apache-2.0](../../licenses/flint-card.txt))</sub>
@@ -26,6 +26,6 @@ SWE-bench Verified   74.2%  lab          <a href="https://huggingface.co/Recursi
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/RecursiveSI](https://huggingface.co/RecursiveSI/flint)
+Model repository and documentation: [huggingface.co/RecursiveSI](https://huggingface.co/RecursiveSI/flint)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/recursive-flint)

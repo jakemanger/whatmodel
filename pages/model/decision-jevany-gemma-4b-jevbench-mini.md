@@ -6,9 +6,7 @@
 
 SimpleJev
 
-**score 65.3** ±4.7 · comparison only: no current run option verified · from 6 benchmark results across 1 source
-
-Score within the [JevBench mini 0.1.0 · unchanged-answer accuracy](https://whatmodel.sh/decision?set=jevbench-mini-010-accuracy&score=set) comparison set only.
+**score 53.7** ±2.4 · #175 of 355 · from 6 benchmark results across 1 source
 
 ## What it's good at
 
@@ -16,17 +14,19 @@ Score within the [JevBench mini 0.1.0 · unchanged-answer accuracy](https://what
 
 <pre>
 task         vs the others      rank  counts  tests
-consistency  ▃·▂▂·▅▃·▃▅▃●   #1 of 21     64%      5
+consistency  ▃·▂▂·▅▃·▃▅▃●   #1 of 21     69%      5
 </pre>
 
-<details><summary>consistency · #1 of 21 · 64% of its score</summary>
+<details><summary>consistency · #1 of 21 · 69% of its score</summary>
+
+Beats [Open-Jev-9B (JevBench mini)](decision-open-jev-9b-jevbench-mini.md), [JevAny-Qwen-4B (pointer) (JevBench mini)](decision-jevany-qwen-4b-jevbench-mini.md), [decider-4b v2.1 (JevBench mini)](decision-decider-4b-jevbench-mini.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Probability…</a>   52.0%  ▄·▁·▃▃▁·▃▄▁● beats 18/20  medium · avg 35%        50%  sharp · at its level
-<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Representat…</a>   81.4%  ▃·▂·▂▂▂▃▅▅▃● beats 17/20  easy · avg 75%          12%  typical
-<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Logical coh…</a>   83.8%  ▃·▃·█▅▅██▃●▅ beats 17/20  easy · avg 75%         1.8%  blunt
-<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Choice-set …</a>   88.9%  ▁▃▄█▄●·····▄ beats 16/20  easy · avg 76%         0.9%  noisy
+<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Probability…</a>   52.0%  ▄·▁·▃▃▁·▃▄▁● beats 18/20  medium · avg 43%        52%  sharp · at its level
+<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Representat…</a>   81.4%  ▃·▂·▂▂▂▃▅▅▃● beats 17/20  easy · avg 79%          13%  typical
+<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Logical coh…</a>   83.8%  ▃·▃·█▅▅██▃●▅ beats 17/20  easy · avg 78%         2.3%  blunt
+<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Choice-set …</a>   88.9%  ▁▃▄█▄●·····▄ beats 16/20  easy · avg 79%         1.2%  noisy
 <a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · Batch indep…</a>  100.0%  ▁··········● beats 19/20  very easy · avg 97%    0.0%  blunt · maxed out · noisy
 </pre>
 
@@ -35,8 +35,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · unchanged-a…</a>   87.6%  ▁·▂·▂···▂▂▁● beats 11/20  easy · avg 83%     28%  sharp
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench mini 0.1.0 · unchanged-a…</a>   87.6%  ▁·▂·▂···▂▂▁● beats 11/20  very easy · avg 87%     29%  sharp
 </pre>
 
 </details>
@@ -47,17 +47,17 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                  results  share of the score
-<a name="jevbench-mini-010"></a><a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench 0.1.0 mini evaluation reports</a>        6   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                      8% ▇
-weighted average                                 = 65.3
+<a name="jevbench-mini-010"></a><a href="https://huggingface.co/datasets/JevBench/jevbench/blob/cfd3325a6ff0752cda83f799c507ce81c4d0c58d/results/leaderboard.json">JevBench 0.1.0 mini evaluation reports</a>        6   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                      3% ▇
+weighted average                                 = 53.7
 </pre>
 
 <sub>Licences: JevBench 0.1.0 mini evaluation reports ([Apache-2.0](../../licenses/jevbench-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Implementation and setup](https://github.com/SimpleJev/JevAny) · Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified. [Evidence](https://github.com/SimpleJev/JevAny/blob/HEAD/README.md); checked 2026-10-31.
 
-Official weights and documentation: [github.com/SimpleJev](https://github.com/SimpleJev/JevAny)
+Model repository and documentation: [github.com/SimpleJev](https://github.com/SimpleJev/JevAny)
 
 [interactive version](https://whatmodel.sh/model/decision-jevany-gemma-4b-jevbench-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

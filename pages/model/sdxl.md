@@ -96,7 +96,7 @@ api (Together AI) · $0.0019/image · [together.ai](https://www.together.ai/mode
 
 Other versions: fp16 + model CPU offload (~8.9 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16'); p.enable_model_cpu_offload(); p('a cat holding a sign').images[0].save('out.png')"` · fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/sd_xl_base_1.0.safetensors --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sd_xl_base_1.0.safetensors --type q8_0 --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v`
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 
 ## Published speed measurements
 

@@ -26,8 +26,8 @@ math            ▁▁▃▅█●▄█▄▂▁▁    #215 of 431     38%     
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
 <pre>
-test           result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>   57.0%  ▄▄·······▄█● beats 6/6    medium · avg 55%    3.1%  blunt · at its level
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (maker)</a>   57.0%  ▄▄·······▄█● beats 6/6    medium · avg 55%    3.1%  blunt · at its level
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (lab)</a>   88.4%  █·█··█·██·█● beats 6/6    very easy · avg 86%    8.3%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (mak…</a>   88.4%  █·█··█·██·█● beats 6/6    very easy · avg 86%    8.3%  typical
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>       85.6%  █····▄▄▄···● beats 6/6    very easy · avg 87%     20%  sharp
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>   31.7%  ▄█··▄···▄··● beats 5/6    hard · avg 30%          13%  sharp · at its level · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>    88.0%  ▄··█▄·▄···▄● beats 6/6    easy · avg 77%         5.6%  noisy
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (maker)</a>       85.6%  █····▄▄▄···● beats 6/6    very easy · avg 87%     20%  sharp
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (maker)</a>   31.7%  ▄█··▄···▄··● beats 5/6    hard · avg 30%          13%  sharp · at its level · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (maker)</a>    88.0%  ▄··█▄·▄···▄● beats 6/6    easy · avg 77%         5.6%  noisy
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>                   37.9%  █··········● beats 4/5     hard · avg 40%       17%  sharp · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                       49.6%  █···█·██·█●█ beats 5/6     medium · avg 52%     12%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (maker)</a>                 37.9%  █··········● beats 4/5     hard · avg 40%       17%  sharp · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (maker)</a>                     49.6%  █···█·██·█●█ beats 5/6     medium · avg 52%     12%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)…</a>   44.9%  ▄·█·█······● beats 5/6     medium · avg 42%     10%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   38.9%  ▃·▁▁▂●▂▅█▇▄▁ beats 20/100  medium · avg 67%    5.7%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   75.2%  ▁▁▁▁▁▁▁▂●█▄▃ beats 50/146  easy · avg 82%      3.7%  at its level · noisy
@@ -166,6 +166,6 @@ Other versions: Q8_0 (~1.9 GB) `ollama run lfm2.5-thinking:1.2b-q8_0`
 
 Other versions: 8bit (~1.2 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-1.2B-Thinking-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
 
 [interactive version](https://whatmodel.sh/model/lfm2-5-1-2b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

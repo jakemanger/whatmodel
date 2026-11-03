@@ -82,6 +82,6 @@ api (Lightricks (LTX API)) · $0.040/sec · [docs.ltx.io](https://docs.ltx.io/pr
    sd-cli -M vid_gen --diffusion-model models/ltx-2.3-22b-dev-UD-Q4_K_M.gguf --vae models/ltx-2.3-22b-dev_video_vae.safetensors --audio-vae models/ltx-2.3-22b-dev_audio_vae.safetensors --llm models/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf --embeddings-connectors models/ltx-2.3-22b-dev_embeddings_connectors.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 33 --fps 24 -o t2v.webm
    ```
 
-Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2.3)
+Model repository and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2.3)
 
 [interactive version](https://whatmodel.sh/model/ltx-2-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

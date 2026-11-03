@@ -118,6 +118,6 @@ Other versions: Q8_0 (~45 GB) `lms get https://huggingface.co/mradermacher/falco
    ollama run falcon:40b
    ```
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-40b-instruct)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-40b-instruct)
 
 [interactive version](https://whatmodel.sh/model/falcon-40b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

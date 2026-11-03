@@ -133,6 +133,6 @@ Other versions: 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-co
 
 Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-8bit`
 
-Official weights and documentation: [huggingface.co/NovaSky-AI](https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview)
+Model repository and documentation: [huggingface.co/NovaSky-AI](https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview)
 
 [interactive version](https://whatmodel.sh/model/sky-t1-32b-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

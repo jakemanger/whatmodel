@@ -106,6 +106,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama-3.1-8B-Ultra
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='TsinghuaC3I/Llama-3.1-8B-UltraMedical', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/TsinghuaC3I](https://huggingface.co/TsinghuaC3I/Llama-3.1-8B-UltraMedical)
+Model repository and documentation: [huggingface.co/TsinghuaC3I](https://huggingface.co/TsinghuaC3I/Llama-3.1-8B-UltraMedical)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-8b-ultramedical) · [JSON](https://whatmodel.sh/api?format=json&all=1)

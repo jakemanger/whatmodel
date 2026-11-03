@@ -47,6 +47,6 @@ weighted average                                   = 16.2
 
 No verified API or local download yet.
 
-Official weights and documentation: [github.com/taoxugit](https://github.com/taoxugit/AttnGAN)
+Model repository and documentation: [github.com/taoxugit](https://github.com/taoxugit/AttnGAN)
 
 [interactive version](https://whatmodel.sh/model/attngan-coco) · [JSON](https://whatmodel.sh/api?format=json&all=1)

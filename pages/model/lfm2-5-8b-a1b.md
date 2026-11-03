@@ -32,11 +32,11 @@ test                               result  vs the others in its run    difficult
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive)</a>     49.2%  ▄·█·▄●▄▄·▄·▄ beats 4/8      medium · avg 43%        5.2%  at its level · several runs
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                   0.4%  ●··▄▄█··▄·▄█ beats 0/8      very hard · avg 11%     2.6%  sharp · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>                       13.2%  ▄▄·▄▄●·█···█ beats 4/8      very hard · avg 13%     2.3%  noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>               39.8%  ▁····●▁▃▆█▃▁ beats 3/44     hard · avg 29%          1.8%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (maker)</a>             39.8%  ▁····●▁▃▆█▃▁ beats 3/44     hard · avg 29%          1.8%  at its level · small run
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>    0.4%  ●▂···▂···▄·▂ beats 0/8      very hard · avg 3.9%    1.7%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                     3.4%  ▂▂·●█▂▃▃▃▆▂▅ beats 2/24     very hard · avg 3.6%    1.4%  blunt · too hard for it
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>              88.1%  ▄█▄········● beats 5/5      hard · avg 25%          1.4%  sharp · at its level · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                       64.4%  ▁▁▁▁▁▃▅█●▅▄▁ beats 120/171  medium · avg 57%        0.9%  blunt · at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (maker)</a>            88.1%  ▄█▄········● beats 5/5      hard · avg 25%          1.4%  sharp · at its level · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (maker)</a>                     64.4%  ▁▁▁▁▁▃▅█●▅▄▁ beats 120/171  medium · avg 57%        0.9%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -112,11 +112,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                   results  share of the score
-<a name="card3-openbmb-minicpm5-2b"></a><a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">openbmb/MiniCPM5-2B model card</a>                20   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="card-liquidai-lfm2-5-8b-a1b"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model card (lab)</a>        9   18% ▇▇
-prior: pull toward the middle                       0% ▇
-weighted average                                  = 52.3
+source                                    results  share of the score
+<a name="card3-openbmb-minicpm5-2b"></a><a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">openbmb/MiniCPM5-2B model card</a>                 20   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="card-liquidai-lfm2-5-8b-a1b"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model card (subm…</a>        9   18% ▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 52.3
 </pre>
 
 <sub>Licences: openbmb/MiniCPM5-2B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>
@@ -213,7 +213,7 @@ Other versions: Q8_0 (~10.66 GB) `ollama run lfm2.5:8b-a1b-q8_0`
 
 Other versions: 8bit (~9 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-8B-A1B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
 
 ## Published speed measurements
 

@@ -6,7 +6,7 @@
 
 Google · released 2026-01 · 28.84B params · gemma
 
-**score 64.4** ±9.7 · #164 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 64.4** ±9.7 · #164 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,8 +21,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <details><summary>other tests (1)</summary>
 
 <pre>
-test           result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>   84.4%  █···█·█··██● beats 5/5    easy · avg 73%     58%  blunt
+test             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (maker)</a>   84.4%  █···█·█··██● beats 5/5    easy · avg 73%     58%  blunt
 </pre>
 
 </details>
@@ -32,10 +32,10 @@ test           result  vs the others in its run  difficulty      counts  why
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                 results  share of the score
-<a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>        1   58% ▇▇▇▇▇▇▇
-prior: pull toward the middle                    42% ▇▇▇▇▇
-weighted average                                = 64.4
+source                                    results  share of the score
+<a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (submit…</a>        1   58% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       42% ▇▇▇▇▇
+weighted average                                   = 64.4
 </pre>
 
 <sub>Licences: TranslateGemma Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
@@ -121,6 +121,6 @@ Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/mradermacher/tra
 
 Other versions: 8bit (~28.7 GB, Mac only) `mlx_lm.chat --model mlx-community/translategemma-27b-it-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/translategemma-27b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/translategemma-27b-it)
 
 [interactive version](https://whatmodel.sh/model/translategemma-27b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

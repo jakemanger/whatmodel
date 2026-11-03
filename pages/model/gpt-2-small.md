@@ -171,6 +171,6 @@ Other versions: 8bit (~0.1 GB, Mac only) `mlx_lm.chat --model jesusoctavioas/gpt
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2)
+Model repository and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2)
 
 [interactive version](https://whatmodel.sh/model/gpt-2-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

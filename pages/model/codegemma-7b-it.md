@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                56.9%  ▁···▁▁▂▅●█▆▂ beats 33/75  easy · avg 66%      5.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   38.4%  ▄▇█▃▄▇▄▁●▃·▁ beats 30/35  medium · avg 46%    5.0%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   45.8%  ▁·▁▁▄██▄█▁●▅ beats 31/35  medium · avg 51%    4.9%  sharp · at its level
-<a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           54.2%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 44/86  easy · avg 71%      2.2%  at its level
+<a href="https://arxiv.org/html/2406.11409v2">MBPP (maker)</a>                         54.2%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 44/86  easy · avg 71%      2.2%  at its level
 </pre>
 
 </details>
@@ -145,6 +145,6 @@ Other versions: Q8_0 (~9.1 GB) `ollama run codegemma:7b-instruct-q8_0`
 
 Other versions: 8bit (~9.6 GB, Mac only) `mlx_lm.chat --model mlx-community/codegemma-7b-it-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/codegemma-7b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/codegemma-7b-it)
 
 [interactive version](https://whatmodel.sh/model/codegemma-7b-it) · [JSON](https://whatmodel.sh/api?format=json&all=1)

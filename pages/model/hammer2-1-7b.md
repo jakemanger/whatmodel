@@ -110,6 +110,6 @@ Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/eaddario/Hammer2.1-7b-GGUF:Q8_0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MadeAgents/Hammer2.1-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-7b)
+Model repository and documentation: [huggingface.co/MadeAgents](https://huggingface.co/MadeAgents/Hammer2.1-7b)
 
 [interactive version](https://whatmodel.sh/model/hammer2-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

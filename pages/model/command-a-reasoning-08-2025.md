@@ -27,9 +27,9 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                             result  vs the others in its run  difficulty            counts  why
-<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>            37.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 30/89  hard · avg 26%           27%  sharp · at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (maker)</a>          37.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 30/89  hard · avg 26%           27%  sharp · at its level · small run
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   57.1%  ▁▁▁▂██▅▅●▂▂▂ beats 68/77  hard · avg 31%           20%  at its level
-<a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>          3.0%  ▂▅●▂▂▆▂▂█▅▅▂ beats 4/27   very hard · avg 4.3%     13%  sharp · too hard for it · small run
+<a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (maker)</a>        3.0%  ▂▅●▂▂▆▂▂█▅▅▂ beats 4/27   very hard · avg 4.3%     13%  sharp · too hard for it · small run
 </pre>
 
 </details>
@@ -39,8 +39,8 @@ test                             result  vs the others in its run  difficulty   
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Devstral 2 (2512)](devstral-2.md), [Qwen3 30B-A3B Thinking 2507](qwen3-30b-a3b-thinking-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
 <pre>
-test                               result  vs the others in its run  difficulty      counts  why
-<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>   30.0%  ▁····▃▃●▅█▆▂ beats 12/40  hard · avg 19%    9.0%  small run
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (make…</a>   30.0%  ▁····▃▃●▅█▆▂ beats 12/40  hard · avg 19%    9.0%  small run
 </pre>
 
 </details>
@@ -50,8 +50,8 @@ test                               result  vs the others in its run  difficulty 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run   difficulty        counts  why
-<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>   57.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 43/133  medium · avg 47%     24%  sharp · at its level · small run
+test               result  vs the others in its run   difficulty        counts  why
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (maker)</a>   57.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 43/133  medium · avg 47%     24%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   36.0%  ●········██▅ beats 0/8    medium · avg 42%    6.0%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (mak…</a>   36.0%  ●········██▅ beats 0/8    medium · avg 42%    6.0%  at its level · small run
 </pre>
 
 </details>
@@ -158,6 +158,6 @@ Other versions: Q8_0 (~118 GB) `lms get https://huggingface.co/bartowski/CohereL
    mlx_lm.server --model mlx-community/command-a-reasoning-08-2025-8bit
    ```
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-reasoning-08-2025)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-reasoning-08-2025)
 
 [interactive version](https://whatmodel.sh/model/command-a-reasoning-08-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

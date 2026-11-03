@@ -53,6 +53,6 @@ weighted average                              = 50.1
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='general-preference/SPPO-Llama-3-8B-Instruct-GPM-2B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/general-preference](https://huggingface.co/general-preference/SPPO-Llama-3-8B-Instruct-GPM-2B)
+Model repository and documentation: [huggingface.co/general-preference](https://huggingface.co/general-preference/SPPO-Llama-3-8B-Instruct-GPM-2B)
 
 [interactive version](https://whatmodel.sh/model/sppo-llama-3-8b-instruct-gpm-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

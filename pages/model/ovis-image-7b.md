@@ -55,6 +55,6 @@ weighted average                        = 47.6
 
 Other versions: BF16 (~20 GB, NVIDIA only) `uv run --with 'diffusers>=0.36.0' --with transformers --with accelerate --with torch python -c "import torch; from diffusers import OvisImagePipeline; p=OvisImagePipeline.from_pretrained('ATH-MaaS/Ovis-Image-7B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', negative_prompt='', num_inference_steps=50, guidance_scale=5.0).images[0].save('out.png')"`
 
-Official weights and documentation: [huggingface.co/ATH-MaaS](https://huggingface.co/ATH-MaaS/Ovis-Image-7B)
+Model repository and documentation: [huggingface.co/ATH-MaaS](https://huggingface.co/ATH-MaaS/Ovis-Image-7B)
 
 [interactive version](https://whatmodel.sh/model/ovis-image-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

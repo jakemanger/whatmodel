@@ -77,6 +77,6 @@ api (Replicate) · price unknown · [replicate.com](https://replicate.com/genmoa
 
 Other versions: default (~6.5 GB, NVIDIA only) `python3 ./demos/cli.py --model_dir weights/ --cpu_offload`
 
-Official weights and documentation: [huggingface.co/genmo](https://huggingface.co/genmo/mochi-1-preview)
+Model repository and documentation: [huggingface.co/genmo](https://huggingface.co/genmo/mochi-1-preview)
 
 [interactive version](https://whatmodel.sh/model/mochi-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

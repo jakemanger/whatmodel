@@ -139,6 +139,6 @@ Other versions: 8bit (~44.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi
    vllm serve microsoft/Phi-3.5-MoE-instruct
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-5-moe-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

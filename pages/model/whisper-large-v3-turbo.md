@@ -131,7 +131,7 @@ api (Cloudflare) · $0.0005/audio min · [developers.cloudflare.com](https://dev
 
 Other versions: fp16 (~2.44 GB, Mac only) `uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-turbo` · fp16 (~2.44 GB, NVIDIA only) `uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3-turbo`
 
-Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large-v3-turbo)
+Model repository and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large-v3-turbo)
 
 ## Published speed measurements
 

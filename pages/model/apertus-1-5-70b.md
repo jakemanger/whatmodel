@@ -50,6 +50,6 @@ weighted average                            = 53.0
    vllm serve swiss-ai/Apertus-v1.5-70B --chat-template-content-format string --tensor-parallel-size 4 --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true
    ```
 
-Official weights and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-70B)
+Model repository and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-70B)
 
 [interactive version](https://whatmodel.sh/model/apertus-1-5-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

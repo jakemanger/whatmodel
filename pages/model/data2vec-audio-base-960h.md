@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   28.3%  ▁▁●▃··▁▁▂██▆ beats 2/86   avg 8.2%       43%  blunt
-<a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      7.1%  ▂·●·▂······█ beats 1/6    avg 0.2%       38%  typical
-<a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-clean WER (lab)</a>      2.8%  ▂··▂●·····▂█ beats 2/8    avg 0.4%       13%  blunt
+<a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-other WER (maker)</a>    7.1%  ▂·●·▂······█ beats 1/6    avg 0.2%       38%  typical
+<a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-clean WER (maker)</a>    2.8%  ▂··▂●·····▂█ beats 2/8    avg 0.4%       13%  blunt
 </pre>
 
 </details>
@@ -34,11 +34,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">Meta (lab)</a>                           2   52% ▇▇▇▇▇▇
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   43% ▇▇▇▇▇
-prior: pull toward the middle             5% ▇
-weighted average                        = 4.1
+source                             results  share of the score
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">Meta (submitted / maker-reported)</a>        2   52% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                     1   43% ▇▇▇▇▇
+prior: pull toward the middle                 5% ▇
+weighted average                            = 4.1
 </pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
@@ -53,6 +53,6 @@ weighted average                        = 4.1
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/data2vec-audio-base-960h', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/data2vec-audio-base-960h)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/data2vec-audio-base-960h)
 
 [interactive version](https://whatmodel.sh/model/data2vec-audio-base-960h) · [JSON](https://whatmodel.sh/api?format=json&all=1)

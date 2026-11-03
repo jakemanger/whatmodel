@@ -6,7 +6,7 @@
 
 Google DeepMind · released 2022-03 · 70B params · proprietary
 
-**score 73.5** ±2.5 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 73.5** ±2.5 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmodel.sh/?set=lambada-openai%40paper-2112.11446v2&score=set) comparison set only.
 
@@ -22,15 +22,15 @@ Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmode
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2203.15556v1">MMLU (lab)</a>                           67.6%  ▁▁▁▁▁▂▂▅█●▆▄ beats 121/214  very hard · avg 31%      31%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2203.15556v1">WinoGrande (lab)</a>                     74.9%  ▁▁▁▁▂▁▁▅▇█●▁ beats 112/131  hard · avg 58%          8.7%  at its level · small run
-<a href="https://arxiv.org/html/2203.15556v1">BoolQ (lab)</a>                          83.7%  ▁····▁▂█▆▅●▄ beats 86/103   hard · avg 64%          8.7%  at its level · small run
-<a href="https://arxiv.org/html/2203.15556v1">TriviaQA (lab)</a>                       67.0%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 63/80    hard · avg 25%          8.5%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">MMLU (maker)</a>                         67.6%  ▁▁▁▁▁▂▂▅█●▆▄ beats 121/214  very hard · avg 31%      31%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">WinoGrande (maker)</a>                   74.9%  ▁▁▁▁▂▁▁▅▇█●▁ beats 112/131  hard · avg 58%          8.7%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">BoolQ (maker)</a>                        83.7%  ▁····▁▂█▆▅●▄ beats 86/103   hard · avg 64%          8.7%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">TriviaQA (maker)</a>                     67.0%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 63/80    hard · avg 25%          8.5%  at its level · small run
 <a href="https://arxiv.org/html/2203.15556v1">Natural Questions (closed book) (…</a>   16.6%  ▂▁▁▁▂▄▄▃●█▅▁ beats 36/68    very hard · avg 3.3%    8.5%  small run
-<a href="https://arxiv.org/html/2203.15556v1">HellaSwag (lab)</a>                      80.8%  ▁▁▁▂▂▂▄▆█●▄▂ beats 114/135  medium · avg 55%        8.2%  small run
-<a href="https://arxiv.org/html/2203.15556v1">Social IQA (lab)</a>                     51.3%  ▁·▁██▄●▁▂▃▇▁ beats 37/59    very hard · avg 39%     8.1%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">HellaSwag (maker)</a>                    80.8%  ▁▁▁▂▂▂▄▆█●▄▂ beats 114/135  medium · avg 55%        8.2%  small run
+<a href="https://arxiv.org/html/2203.15556v1">Social IQA (maker)</a>                   51.3%  ▁·▁██▄●▁▂▃▇▁ beats 37/59    very hard · avg 39%     8.1%  at its level · small run
 <a href="https://arxiv.org/html/2203.15556v1">LAMBADA (OpenAI version), last-wo…</a>   77.4%  ▁·····▁▁▃▃█● beats 83/86    medium · avg 55%        7.9%  small run
-<a href="https://arxiv.org/html/2203.15556v1">PIQA (lab)</a>                           81.8%  ▁▁▁▂▂▃▅█●▃▁▁ beats 107/123  hard · avg 65%          7.9%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">PIQA (maker)</a>                         81.8%  ▁▁▁▂▂▃▅█●▃▁▁ beats 107/123  hard · avg 65%          7.9%  at its level · small run
 </pre>
 
 </details>

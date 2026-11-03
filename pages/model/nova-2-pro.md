@@ -45,11 +45,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                 results  share of the score
-<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                             1    7% ▇
-prior: pull toward the middle                     2% ▇
-weighted average                                = 62.9
+source                                   results  share of the score
+<a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>          2   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (submitted / maker-reported)</a>        1    7% ▇
+prior: pull toward the middle                       2% ▇
+weighted average                                  = 62.9
 </pre>
 
 <sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

@@ -37,9 +37,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                     45.3%  ●▄······▄█▄▄ beats 0/6    hard · avg 28%          1.4%  at its level
 <a href="https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md">Terminal-Bench Hard</a>                  22.0%  ▂▅▆▂▂▆▂▂●▅▅▂ beats 16/27  very hard · avg 4.7%    1.4%  sharp · small run
 <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom</a>                     57.7%  ▁·▅█▆●▂▃▃▂▃▁ beats 49/89  very hard · avg 15%     1.3%  sharp · at its level · noisy · small run
-<a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>                 67.8%  ▁····▃·▂▇●▂▆ beats 16/28  medium · avg 37%        1.1%  at its level · small run
+<a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (maker)</a>               67.8%  ▁····▃·▂▇●▂▆ beats 16/28  medium · avg 37%        1.1%  at its level · small run
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   66.4%  ▅····▅▅●▃·▃█ beats 6/11   medium · avg 53%        1.0%  blunt · at its level
-<a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>                49.2%  ▁▁▁·▅▄▁█●▁▁▇ beats 21/28  hard · avg 25%          0.8%  at its level · small run
+<a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (maker)</a>              49.2%  ▁▁▁·▅▄▁█●▁▁▇ beats 21/28  hard · avg 25%          0.8%  at its level · small run
 <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with tools (…</a>   19.0%  ▁·▁▂●▁▄▄▇█▄▅ beats 6/62   very hard · avg 11%     0.8%  small run
 <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain conversatio…</a>   29.3%  ▂▂··▂·▂·▂●█▄ beats 5/11   hard · avg 25%          0.0%  blunt · at its level · noisy
 </pre>
@@ -109,11 +109,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   43.2%  ▁▁·▁▂▂▄█●▅▄▄ beats 37/66    hard · avg 29%          1.7%  at its level
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                             67.1%  ▁▁·▁▁▁▃▂●▅█▁ beats 80/188   medium · avg 50%        1.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   76.4%  ▁▂▂▂▃█▃▆●▄▂▃ beats 73/95    medium · avg 65%        1.5%  typical
-<a href="https://arxiv.org/html/2508.10925v1">MMLU (lab)</a>                           90.0%  ▁▁▁▁▁▂▂▅██▆● beats 209/214  medium · avg 73%        1.3%  small run
+<a href="https://arxiv.org/html/2508.10925v1">MMLU (maker)</a>                         90.0%  ▁▁▁▁▁▂▂▅██▆● beats 209/214  medium · avg 73%        1.3%  small run
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     29.2%  ▂···●▂▆▆██▆▂ beats 3/23     very hard · avg 29%     1.0%  at its level
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   39.5%  ▆▂·●█·▂▂·▄▄▂ beats 4/16     very hard · avg 36%     0.9%  blunt
-<a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                       16.8%  ▄▄▄▆█▆●██·▂█ beats 17/32    very hard · avg 6.0%    0.9%  small run
-<a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                          81.3%  ▂▁▁▂▃▂▄▄▅●█▃ beats 31/46    medium · avg 64%        0.8%  at its level · small run
+<a href="https://arxiv.org/html/2508.10925v1">SimpleQA (maker)</a>                     16.8%  ▄▄▄▆█▆●██·▂█ beats 17/32    very hard · avg 6.0%    0.9%  small run
+<a href="https://arxiv.org/html/2508.10925v1">MMMLU (maker)</a>                        81.3%  ▂▁▁▂▃▂▄▄▅●█▃ beats 31/46    medium · avg 64%        0.8%  at its level · small run
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   83.0%  ▄·····▄●▄▄·▄ beats 2/6      easy · avg 66%          0.7%  typical
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   64.6%  ▂···▂▂·▃▂▃█● beats 14/17    medium · avg 53%        0.7%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                20.0%  █▁▁▁▁▂●▃▃▂▁▁ beats 81/137   very hard · avg 5.8%    0.6%  sharp · too hard for it · noisy
@@ -122,9 +122,9 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   43.0%  ▃▁▁▁▁▁●▁▂█▅▁ beats 52/276   medium · avg 72%        0.5%  noisy
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Avg@3)</a>    61.0%  ▄··▄·▄·●▄█·▄ beats 3/7      medium · avg 36%        0.4%  blunt · at its level
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problems, A…</a>   11.3%  █·███●█··█·█ beats 4/7      very hard · avg 4.3%    0.3%  typical
-<a href="https://arxiv.org/html/2508.10925v1">HealthBench (lab)</a>                    57.6%  ▂▂·▂·▅●▃▂·▃▃ beats 8/17     hard · avg 32%          0.3%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2508.10925v1">HealthBench (maker)</a>                  57.6%  ▂▂·▂·▅●▃▂·▃▃ beats 8/17     hard · avg 32%          0.3%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              76.6%  ●·▃·▅▅▃···▃▃ beats 0/10     easy · avg 70%          0.3%  blunt
-<a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (lab)</a>               30.0%  ▁····▁▁●█·▁▁ beats 3/13     very hard · avg 13%     0.2%  blunt · small run
+<a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (maker)</a>             30.0%  ▁····▁▁●█·▁▁ beats 3/13     very hard · avg 13%     0.2%  blunt · small run
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   72.3%  ▄·▄▄●·▄██▄█▄ beats 3/12     medium · avg 65%        0.2%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.6%  ▁▁▂▃▄▄█▆●▂▂▁ beats 117/140  very easy · avg 94%     0.1%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   85.8%  ▁▂▁●▅█▂▃▄▃▁▁ beats 13/98    very easy · avg 90%     0.0%  blunt
@@ -138,7 +138,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2508.10925v1"></a><a href="https://arxiv.org/html/2508.10925v1">OpenAI (lab)</a>                                   14   18% ▇▇
+<a name="report-2508.10925v1"></a><a href="https://arxiv.org/html/2508.10925v1">OpenAI (submitted / maker-reported)</a>            14   18% ▇▇
 <a name="primeintellect-intellect3-card-eval"></a><a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Prime Intellect INTELLECT-3 model card:…</a>        7   18% ▇▇
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        5   13% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        4    8% ▇
@@ -254,7 +254,7 @@ Other versions: 4bit (~65.8 GB, Mac only) `lms get https://huggingface.co/egorio
 
 Other versions: 8bit (~124.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gpt-oss-120b-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/gpt-oss-120b)
+Model repository and documentation: [huggingface.co/openai](https://huggingface.co/openai/gpt-oss-120b)
 
 ## Published speed measurements
 

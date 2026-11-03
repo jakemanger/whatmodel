@@ -53,6 +53,6 @@ weighted average                                   = 36.3
 
 Other versions: BF16 (NEUTTS 1.4.1) (~5 GB) `git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air` · BF16 (NEUTTS 1.4.1) (~4.98 GB, Mac only) `git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air --device mps --codec_device mps`
 
-Official weights and documentation: [huggingface.co/neuphonic](https://huggingface.co/neuphonic/neutts-air)
+Model repository and documentation: [huggingface.co/neuphonic](https://huggingface.co/neuphonic/neutts-air)
 
 [interactive version](https://whatmodel.sh/model/neutts-air) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -24,9 +24,9 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.0%  ▁▁▁▃··▁▁▂█●▆ beats 60/86   avg 8.2%       51%  blunt
 <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting error ra…</a>    6.7%  ▄···▄·····▄● beats 3/4     avg 19%        17%  sharp · noisy · small run
-<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (lab)</a>      4.2%  ▁···▁▁▁▆▆●▆▁ beats 35/56   avg 5.3%       16%  small run
-<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (lab)</a>      2.0%  ▁·▁·▁▁▁▁▃▇●▆ beats 58/102  avg 2.2%      5.5%  blunt · small run
-<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (lab)</a>         5.8%  ▁··▁▁▁▁▂●█▂▁ beats 22/64   avg 6.4%      4.9%  blunt · small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (maker)</a>    4.2%  ▁···▁▁▁▆▆●▆▁ beats 35/56   avg 5.3%       16%  small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (maker)</a>    2.0%  ▁·▁·▁▁▁▁▃▇●▆ beats 58/102  avg 2.2%      5.5%  blunt · small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (maker)</a>       5.8%  ▁··▁▁▁▁▂●█▂▁ beats 22/64   avg 6.4%      4.9%  blunt · small run
 </pre>
 
 </details>
@@ -55,6 +55,6 @@ weighted average                                   = 56.7
    uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoModelForSeq2SeqLM, AutoProcessor; r='zai-org/GLM-ASR-Nano-2512'; p=AutoProcessor.from_pretrained(r); m=AutoModelForSeq2SeqLM.from_pretrained(r, dtype='auto', device_map='auto'); i=p.apply_transcription_request('audio.wav').to(m.device, dtype=m.dtype); o=m.generate(**i, do_sample=False, max_new_tokens=500); print(p.batch_decode(o[:, i.input_ids.shape[1]:], skip_special_tokens=True)[0])"
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-ASR-Nano-2512)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-ASR-Nano-2512)
 
 [interactive version](https://whatmodel.sh/model/glm-asr-nano-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

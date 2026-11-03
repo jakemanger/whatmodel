@@ -23,11 +23,11 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.8%  ▁▁▁▃··▁▁▂●█▆ beats 43/86  avg 8.2%       35%  blunt
-<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (lab)</a>      5.8%  ██●·····██·█ beats 2/5    avg 5.7%       27%  typical
-<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (lab)</a>      4.9%  ▄··▄··▄···█● beats 5/5    avg 7.4%       12%  typical
-<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (lab)</a>      2.2%  █·█·●·█···██ beats 2/5    avg 2.2%      7.7%  blunt
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (maker)</a>    5.8%  ██●·····██·█ beats 2/5    avg 5.7%       27%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (maker)</a>    4.9%  ▄··▄··▄···█● beats 5/5    avg 7.4%       12%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (maker)</a>    2.2%  █·█·●·█···██ beats 2/5    avg 2.2%      7.7%  blunt
 <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error rate (…</a>    7.9%  ▄·▂▄▂▄█●▂▂·▆ beats 14/20  avg 7.3%      7.4%  typical
-<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>         4.7%  ▄·····▄▄●··█ beats 3/5    avg 5.4%      7.0%  blunt
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (maker)</a>       4.7%  ▄·····▄▄●··█ beats 3/5    avg 5.4%      7.0%  blunt
 </pre>
 
 </details>
@@ -56,6 +56,6 @@ weighted average                                   = 51.8
    uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoProcessor, VibeVoiceAsrForConditionalGeneration as M; r='microsoft/VibeVoice-ASR-HF'; p=AutoProcessor.from_pretrained(r); m=M.from_pretrained(r, device_map='auto'); i=p.apply_transcription_request(audio='audio.wav').to(m.device, m.dtype); o=m.generate(**i); print(p.decode(o[:, i['input_ids'].shape[1]:], return_format='transcription_only')[0])"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-HF)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-HF)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-hf) · [JSON](https://whatmodel.sh/api?format=json&all=1)

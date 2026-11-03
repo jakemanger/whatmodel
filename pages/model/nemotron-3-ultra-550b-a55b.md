@@ -29,12 +29,12 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>             70.7%  ●····██·████ beats 0/6    hard · avg 21%         6.2%  sharp · at its level
-<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>         67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%         4.4%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>             56.4%  █··▄●·▄····▄ beats 4/6    very hard · avg 13%    4.1%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (maker)</a>           70.7%  ●····██·████ beats 0/6    hard · avg 21%         6.2%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (maker)</a>       67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%         4.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (maker)</a>           56.4%  █··▄●·▄····▄ beats 4/6    very hard · avg 13%    4.1%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with tools (…</a>   37.4%  ●····▄·█·▄·▄ beats 0/5    hard · avg 15%         2.4%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                     44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 18%         2.0%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                       70.9%  ▄····▄·●·▄·█ beats 2/6    medium · avg 42%       1.9%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">BrowseComp (maker)</a>                   44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 18%         2.0%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">τ³-bench (maker)</a>                     70.9%  ▄····▄·●·▄·█ beats 2/6    medium · avg 42%       1.9%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">τ³-bench telecom (tau2-bench ≥ v1…</a>   92.9%  ▄·●···▄·▄·█▄ beats 1/6    easy · avg 79%         1.2%  maxed out
 </pre>
 
@@ -46,10 +46,10 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>             70.7%  ●····██·████ beats 0/6    hard · avg 21%      6.2%  sharp · at its level
-<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>         67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%      4.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (maker)</a>           70.7%  ●····██·████ beats 0/6    hard · avg 21%      6.2%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (maker)</a>       67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%      4.4%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unspecif…</a>   89.0%  ██···█··●███ beats 3/6    medium · avg 46%    2.8%  typical
-<a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>            44.6%  ▃····●··█·▃▃ beats 1/6    hard · avg 19%      2.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (maker)</a>          44.6%  ▃····●··█·▃▃ beats 1/6    hard · avg 19%      2.4%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>          39.9%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 16%      2.2%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025)</a>      76.4%  ▄··●····▄▄·█ beats 2/6    medium · avg 47%    2.1%  typical
 </pre>
@@ -73,7 +73,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md) her
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>      88.6%  ▄····▄·▄●·█▄ beats 3/6      medium · avg 41%        2.3%  typical
+<a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (maker)</a>    88.6%  ▄····▄·▄●·█▄ beats 3/6      medium · avg 41%        2.3%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 135/197  very hard · avg 7.2%    2.0%  sharp · noisy
 <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                  85.4%  ●·▄·▄▄··█··▄ beats 0/6      medium · avg 57%        1.9%  sharp · maxed out · noisy
 </pre>
@@ -87,7 +87,7 @@ Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gp
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with tools (…</a>   37.4%  ●····▄·█·▄·▄ beats 0/5    hard · avg 15%    2.4%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                     44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 18%    2.0%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">BrowseComp (maker)</a>                   44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 18%    2.0%  at its level
 </pre>
 
 </details>
@@ -97,18 +97,18 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         85.4%  ▁▁▁▁▂▄▆▄▅●█▅ beats 147/211  hard · avg 44%           14%  sharp · several runs
-<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>           26.7%  ▄··●▄··▄·▄·▄ beats 1/6      very hard · avg 5.7%    8.3%  at its level · several runs
-<a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (lab)</a>      87.0%  ▄●▄▄·▄·····▄ beats 2/6      hard · avg 47%          7.7%  sharp
-<a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                       86.8%  ▄·····▄▄●·▄█ beats 3/6      medium · avg 53%        4.5%  typical
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (maker)</a>         26.7%  ▄··●▄··▄·▄·▄ beats 1/6      very hard · avg 5.7%    8.3%  at its level · several runs
+<a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (maker)</a>    87.0%  ▄●▄▄·▄·····▄ beats 2/6      hard · avg 47%          7.7%  sharp
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (maker)</a>                     86.8%  ▄·····▄▄●·▄█ beats 3/6      medium · avg 53%        4.5%  typical
 <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                     90.9%  ▃······▅··●▃ beats 5/6      medium · avg 61%        3.9%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         20.0%  █··▂▃●▄█▂▄▂▁ beats 35/77    very hard · avg 9.4%    3.0%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                12.0%  █▁▁▁▁●▃▃▃▂▁▁ beats 62/137   very hard · avg 5.8%    2.5%  sharp · noisy
-<a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>                   61.9%  ▂·▁·▂▃▁▄▄▃█● beats 29/33    very hard · avg 34%     2.4%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                      83.0%  ▄·····●·▄▄█▄ beats 1/6      medium · avg 58%        2.3%  typical
+<a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (maker)</a>                 61.9%  ▂·▁·▂▃▁▄▄▃█● beats 29/33    very hard · avg 34%     2.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (maker)</a>                    83.0%  ▄·····●·▄▄█▄ beats 1/6      medium · avg 58%        2.3%  typical
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)</a>    81.4%  ▃······█▃▃·● beats 6/6      medium · avg 45%        2.3%  typical
-<a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) (lab)</a>   81.7%  ▄▄·▄··▄▄···● beats 5/6      medium · avg 47%        2.0%  typical
-<a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>                 63.8%  ▁··········● beats 4/6      hard · avg 28%          1.8%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                          3.1%  ▄····▄●···█▄ beats 2/6      very hard · avg 1.1%    0.9%  too hard for it · noisy
+<a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) (mak…</a>   81.7%  ▄▄·▄··▄▄···● beats 5/6      medium · avg 47%        2.0%  typical
+<a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (maker)</a>               63.8%  ▁··········● beats 4/6      hard · avg 28%          1.8%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">CritPt (maker)</a>                        3.1%  ▄····▄●···█▄ beats 2/6      very hard · avg 1.1%    0.9%  too hard for it · noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   84.8%  ▂·▂··▂·●▂·█▆ beats 4/12     medium · avg 63%        0.7%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   67.1%  ▄·●▄▄·▄██▄█▄ beats 1/12     medium · avg 65%        0.3%  blunt
 </pre>
@@ -120,14 +120,14 @@ test                                result  vs the others in its run    difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="report-2606.15007v1"></a><a href="https://arxiv.org/html/2606.15007v1">NVIDIA (lab)</a>                        18   56% ▇▇▇▇▇▇▇
-<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report</a>              7   25% ▇▇▇
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             4   13% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1    5% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                               2    1% ▇
-prior: pull toward the middle             0% ▇
-weighted average                        = 68.3
+source                               results  share of the score
+<a name="report-2606.15007v1"></a><a href="https://arxiv.org/html/2606.15007v1">NVIDIA (submitted / maker-reported)</a>       18   56% ▇▇▇▇▇▇▇
+<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report</a>                    7   25% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                   4   13% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1    5% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                                     2    1% ▇
+prior: pull toward the middle                   0% ▇
+weighted average                              = 68.3
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -204,6 +204,6 @@ Other versions: ud-q2_k_xl (~165.5 GB) `lms get https://huggingface.co/unsloth/N
 
 Other versions: 8bit (~583.8 GB, Mac only) `mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-ultra-550b-a55b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

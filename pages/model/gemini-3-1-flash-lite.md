@@ -76,7 +76,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (la…</a>   73.2%  ▃·▃·▃●▃·▃▃█▅ beats 3/11    medium · avg 38%     12%  at its level
+<a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (ma…</a>   73.2%  ▃·▃·▃●▃·▃▃█▅ beats 3/11    medium · avg 38%     12%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1234.6  ▁▁▂▂▂▂▃▄▅●█▇ beats 93/152  avg 1061            5.7%  blunt
 </pre>
 

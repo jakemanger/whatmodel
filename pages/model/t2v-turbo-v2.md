@@ -22,8 +22,8 @@ text to video  ▆▄▃▄●▅█▃▂▂▂▄   #44 of 68*     48%      1
 Beats [Open-Sora 2.0](open-sora-2-0.md), [Wan 2.1 T2V 1.3B](wan-2-1-1-3b.md), [Mochi 1](mochi-1.md) here, though they rank higher overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>   83.5%  █···▄●▄····▄ beats 3/5    very easy · avg 90%     48%  small run
+test                        result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (maker)</a>   83.5%  █···▄●▄····▄ beats 3/5    very easy · avg 90%     48%  small run
 </pre>
 
 </details>
@@ -69,6 +69,6 @@ api (Replicate) · price unknown · [replicate.com](https://replicate.com/chenxw
 
 Other versions: fp32 checkpoints (official Gradio demo, MPS) (~16.2 GB, Mac only) `git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0`
 
-Official weights and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-v2)
+Model repository and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-v2)
 
 [interactive version](https://whatmodel.sh/model/t2v-turbo-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

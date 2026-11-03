@@ -86,7 +86,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://qwen.ai/blog?id=qwen3.8">CharXiv (reasoning questions) (la…</a>   88.4%  ▄▂▄▆▄▄▆··▄█● beats 21/21    medium · avg 38%    3.1%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8">CharXiv (reasoning questions) (ma…</a>   88.4%  ▄▂▄▆▄▄▆··▄█● beats 21/21    medium · avg 38%    3.1%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1300.0  ▁▁▂▂▂▂▃▄▅▅█● beats 151/152  avg 1061            2.4%  blunt
 </pre>
 
@@ -126,7 +126,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        7   43% ▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     5   23% ▇▇▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        6   21% ▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8">Qwen (lab)</a>                                      1    3% ▇
+<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8">Qwen (submitted / maker-reported)</a>               1    3% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    3% ▇
 <a name="paper-2609.21562v2-gamelogicbench"></a><a href="https://arxiv.org/html/2609.21562v2">GameLogicBench: Evaluating Coding Agent…</a>        1    3% ▇
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-8-max_sierra_2026-08-04/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    3% ▇
@@ -184,6 +184,6 @@ Other versions: ud-iq1_m (~360.5 GB) `llama cli -hf unsloth/Qwen3.8-2.4T-A95B-GG
 
 Other versions: ud-iq1_m (~360.5 GB) `lms get https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF@UD-IQ1_M -y`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
 
 [interactive version](https://whatmodel.sh/model/qwen3-8-2-4t-a95b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

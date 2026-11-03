@@ -45,11 +45,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                   results  share of the score
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                           2   78% ▇▇▇▇▇▇▇▇▇
-<a name="speech-distil-whisper-readme-mit"></a><a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">huggingface/distil-whisper README (lab)</a>        1   18% ▇▇
-prior: pull toward the middle                       4% ▇
-weighted average                                  = 44.1
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   78% ▇▇▇▇▇▇▇▇▇
+<a name="speech-distil-whisper-readme-mit"></a><a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">huggingface/distil-whisper README (subm…</a>        1   18% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 44.1
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · huggingface/distil-whisper README ([MIT](https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/LICENSE))</sub>
@@ -64,6 +64,6 @@ weighted average                                  = 44.1
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-medium.en')('audio.wav', return_timestamps=True)['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-medium.en)
+Model repository and documentation: [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-medium.en)
 
 [interactive version](https://whatmodel.sh/model/distil-medium-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

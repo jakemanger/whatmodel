@@ -51,6 +51,6 @@ weighted average                                   = 31.9
    git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-1/inference/sample.py --prompt "A beautiful sunset over the city" --num-frames 32 --image-size 480 854
    ```
 
-Official weights and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/OpenSora-STDiT-v2-stage3)
+Model repository and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/OpenSora-STDiT-v2-stage3)
 
 [interactive version](https://whatmodel.sh/model/open-sora-1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

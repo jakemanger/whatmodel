@@ -98,6 +98,6 @@ Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/mradermacher/Open
 
 Other versions: Q8_0 (~3.2 GB) `ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
 
-Official weights and documentation: [huggingface.co/apple](https://huggingface.co/apple/OpenELM-3B-Instruct)
+Model repository and documentation: [huggingface.co/apple](https://huggingface.co/apple/OpenELM-3B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/openelm-3b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

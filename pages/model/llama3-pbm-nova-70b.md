@@ -109,6 +109,6 @@ Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Llama3-PBM-Nova-7
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PKU-Baichuan-MLSystemLab/Llama3-PBM-Nova-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/PKU-Baichuan-MLSystemLab](https://huggingface.co/PKU-Baichuan-MLSystemLab/Llama3-PBM-Nova-70B)
+Model repository and documentation: [huggingface.co/PKU-Baichuan-MLSystemLab](https://huggingface.co/PKU-Baichuan-MLSystemLab/Llama3-PBM-Nova-70B)
 
 [interactive version](https://whatmodel.sh/model/llama3-pbm-nova-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

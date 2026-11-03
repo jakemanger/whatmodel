@@ -103,7 +103,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1264.6  ▁▁▂▂▂▂▃▄▅▅●▇ beats 119/152  avg 1061            1.6%  blunt
-<a href="https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md">CharXiv (reasoning questions) (la…</a>   80.4%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 79/101   medium · avg 38%    1.1%  small run
+<a href="https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md">CharXiv (reasoning questions) (ma…</a>   80.4%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 79/101   medium · avg 38%    1.1%  small run
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1449.8  ▁▁▃▃▄▃●█▅▇▄▅ beats 11/37    avg 1331            0.8%  blunt
 <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   70.1%  ▂·▁·▂▂▅●·▁▂▂ beats 15/22    medium · avg 62%    0.0%  blunt · at its level
 </pre>
@@ -249,6 +249,6 @@ Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/K
    mlx_lm.server --model aidiffuser/Kimi-K2.6-MLX-4bit
    ```
 
-Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.6)
+Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.6)
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-6) · [JSON](https://whatmodel.sh/api?format=json&all=1)

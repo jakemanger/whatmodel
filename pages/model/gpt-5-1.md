@@ -31,7 +31,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher o
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   68.0%  ▁··▁·▁▂●▄█▄▁ beats 7/29   hard · avg 19%           10%  sharp · at its level
-<a href="https://openai.com/index/gpt-5-1-for-developers">τ²-bench Telecom (lab)</a>               95.6%  ▃·▅▅▃▃··█●▃▅ beats 10/13  very hard · avg 12%     4.4%  sharp · at its level · noisy · several …
+<a href="https://openai.com/index/gpt-5-1-for-developers">τ²-bench Telecom (maker)</a>             95.6%  ▃·▅▅▃▃··█●▃▅ beats 10/13  very hard · avg 12%     4.4%  sharp · at its level · noisy · several …
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   48.5%  ▆··▆▄▂▄▂●▆█▄ beats 12/23  very hard · avg 13%     3.9%  sharp · at its level
 <a href="https://arxiv.org/html/2601.03286v1">τ²-bench Retail</a>                      78.1%  ▁····▂▁▃▆█●▁ beats 39/44  medium · avg 37%        2.0%  typical
 <a href="https://arxiv.org/html/2601.03286v1">τ²-bench Airline</a>                     64.0%  ▁▁·▂▁▃▂▁█▅●▃ beats 36/42  hard · avg 29%          1.9%  at its level
@@ -83,7 +83,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1251.2  ▁▁▂▂▂▂▃▄▅▅●▇ beats 108/152  avg 1061          3.4%  blunt
-<a href="https://openai.com/index/introducing-gpt-5-2">CharXiv (reasoning questions) (la…</a>   67.0%  ▄··▂█··●···▄ beats 7/9      hard · avg 32%    2.7%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-2">CharXiv (reasoning questions) (ma…</a>   67.0%  ▄··▂█··●···▄ beats 7/9      hard · avg 32%    2.7%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1415.8  ▁●▃▃▄▃▇█▅▇▄▅ beats 1/37     avg 1331          1.8%  blunt
 </pre>
 

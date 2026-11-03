@@ -70,6 +70,6 @@ weighted average                                   = 27.5
    vllm serve zai-org/chatglm2-6b --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm2-6b)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm2-6b)
 
 [interactive version](https://whatmodel.sh/model/chatglm2-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

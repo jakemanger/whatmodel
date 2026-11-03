@@ -34,8 +34,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>math · #2 of 2 · 36% of its score</summary>
 
 <pre>
-test         result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>    7.4%  ▂▂▂●▃▄▅▇██▆▄ beats 29/206  easy · avg 82%     36%  sharp · small run
+test           result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (maker)</a>    7.4%  ▂▂▂●▃▄▅▇██▆▄ beats 29/206  easy · avg 82%     36%  sharp · small run
 </pre>
 
 </details>
@@ -44,9 +44,9 @@ test         result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (lab)</a>                 27.3%  ▁▁●▁▂▄▅▆█▃▃▁ beats 4/155   medium · avg 62%     32%  sharp · too hard for it · small run
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                      52.1%  ▁▁▁▂▂●▄▆█▇▄▂ beats 25/135  easy · avg 83%       12%  at its level · small run
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                           70.8%  ▁▁▁▂●▃▅█▅▃▁▁ beats 23/123  easy · avg 85%      5.1%  blunt · at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (maker)</a>               27.3%  ▁▁●▁▂▄▅▆█▃▃▁ beats 4/155   medium · avg 62%     32%  sharp · too hard for it · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (maker)</a>                    52.1%  ▁▁▁▂▂●▄▆█▇▄▂ beats 25/135  easy · avg 83%       12%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (maker)</a>                         70.8%  ▁▁▁▂●▃▅█▅▃▁▁ beats 23/123  easy · avg 85%      5.1%  blunt · at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.9%  ●·▁▁▂▁▂▅█▇▄▁ beats 6/100   medium · avg 67%    2.6%  sharp · too hard for it · noisy
 </pre>
 
@@ -145,6 +145,6 @@ Other versions: Q8_0 (~0.39 GB) `lms get https://huggingface.co/HuggingFaceTB/Sm
 
 Other versions: 8bit (~0.4 GB, Mac only) `mlx_lm.chat --model HuggingFaceTB/SmolLM2-360M-Instruct-Q8-mlx`
 
-Official weights and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct)
+Model repository and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct)
 
 [interactive version](https://whatmodel.sh/model/smollm2-360m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

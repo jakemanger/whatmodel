@@ -112,6 +112,6 @@ weighted average                          = 29.6
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openlm-research/open_llama_7b_v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_7b_v2)
+Model repository and documentation: [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_7b_v2)
 
 [interactive version](https://whatmodel.sh/model/open-llama-7b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

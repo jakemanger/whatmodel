@@ -40,10 +40,10 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                      41.5%  ▁▁▁▁▂▂●▆█▅▂▁ beats 70/205  easy · avg 83%      5.7%  sharp · at its level
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                           35.2%  ▁▁▁●▅█▆▅▄▁▂▁ beats 10/86   easy · avg 70%      2.4%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (maker)</a>                    41.5%  ▁▁▁▁▂▂●▆█▅▂▁ beats 70/205  easy · avg 83%      5.7%  sharp · at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (maker)</a>                         35.2%  ▁▁▁●▅█▆▅▄▁▂▁ beats 10/86   easy · avg 70%      2.4%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspecifie…</a>    1.9%  ●···▁▁▁█▇▃▄▁ beats 0/38    hard · avg 23%      0.8%  too hard for it
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>                  6.4%  ●·······▂▂█▆ beats 0/11    medium · avg 43%    0.6%  typical
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (maker)</a>                6.4%  ●·······▂▂█▆ beats 0/11    medium · avg 43%    0.6%  typical
 </pre>
 
 </details>
@@ -90,17 +90,17 @@ test                                result  vs the others in its run   difficult
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         19.9%  ●▁▁▁▂▄▆▄▅▇█▅ beats 3/211   hard · avg 37%          2.0%  sharp · too hard for it · small run · s…
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   37.5%  ▂▄●▃█▄▃▆▃▅▂▂ beats 12/81   medium · avg 57%        2.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   21.4%  ●······█··██ beats 0/3     medium · avg 60%        1.9%  at its level
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>               34.2%  ●···▂·▂▂▂·██ beats 0/12    medium · avg 64%        1.8%  typical
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (maker)</a>             34.2%  ●···▂·▂▂▂·██ beats 0/12    medium · avg 64%        1.8%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   15.7%  ▁▁▁●▁▂▂▃▄▆█▃ beats 5/97    hard · avg 31%          1.7%  blunt
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>                36.4%  ●········▄·█ beats 0/3     easy · avg 72%          1.7%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (maker)</a>              36.4%  ●········▄·█ beats 0/3     easy · avg 72%          1.7%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU</a>                                34.4%  ▄···●·▄▄··▄█ beats 1/6     medium · avg 57%        1.6%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   54.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 74/276  medium · avg 72%        0.8%  noisy
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified)</a>            21.1%  ●······▄▄█·▄ beats 0/6     hard · avg 37%          0.8%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro avg (l…</a>    7.2%  ●▄·█▄·▄·▄·▄▄ beats 0/8     hard · avg 18%          0.8%  too hard for it · small run
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                        2.2%  ●▄▄▆█▆███·▂█ beats 0/32    very hard · avg 6.8%    0.7%  too hard for it
+<a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro avg (m…</a>    7.2%  ●▄·█▄·▄·▄·▄▄ beats 0/8     hard · avg 18%          0.8%  too hard for it · small run
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (maker)</a>                      2.2%  ●▄▄▆█▆███·▂█ beats 0/32    very hard · avg 6.8%    0.7%  too hard for it
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                 9.6%  ●▁▁▃▃▃▁█▁▃·▄ beats 0/21    hard · avg 31%          0.7%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   43.7%  ▁▁▁▁▁▁●▂▄█▄▃ beats 15/146  easy · avg 82%          0.7%  at its level · noisy
-<a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>                 35.9%  ●······█··██ beats 0/3     medium · avg 52%        0.7%  blunt · at its level
+<a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (maker)</a>               35.9%  ●······█··██ beats 0/3     medium · avg 52%        0.7%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   94.7%  ▁▁▂▃▄●█▆▃▂▂▁ beats 58/140  very easy · avg 94%     0.6%  blunt · noisy
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       43.8%  ●▃▂·▃▃·▅█▂▅▂ beats 1/21    medium · avg 60%        0.2%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 29/137  very hard · avg 5.8%    0.0%  sharp · too hard for it · noisy
@@ -118,7 +118,7 @@ source                                    results  share of the score
 <a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card</a>                   7   19% ▇▇
 <a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                                8   19% ▇▇
 <a name="card-liquidai-lfm2-5-1-2b-thinking"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">LiquidAI/LFM2.5-1.2B-Thinking model card</a>        8   13% ▇▇
-<a name="report-2503.19786v1"></a><a href="https://arxiv.org/html/2503.19786v1">Gemma Team (lab)</a>                                3    4% ▇
+<a name="report-2503.19786v1"></a><a href="https://arxiv.org/html/2503.19786v1">Gemma Team (submitted / maker-reported)</a>         3    4% ▇
 <a name="mimic-cdm-leaderboard"></a><a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC Clinical Decision Making leaderbo…</a>        2    4% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    2% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    2% ▇
@@ -216,7 +216,7 @@ Other versions: qat (~1.1 GB) `ollama run gemma3:1b-it-qat`
 
 Other versions: 8bit (~1.4 GB, Mac only) `mlx_lm.chat --model mlx-community/gemma-3-1b-it-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-1b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-1b-it)
 
 ## Published speed measurements
 

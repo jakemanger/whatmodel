@@ -6,7 +6,7 @@
 
 nineninesix.ai · released 2026-06 · 0.556B params · apache-2.0
 
-**score 52.7** ±3.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 52.7** ±3.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -37,10 +37,10 @@ test                                  result  vs the others in its run  difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                   results  share of the score
-<a name="card3-nineninesix-gepard-1-0"></a><a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">nineninesix/gepard-1.0 model card (lab)</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       6% ▇
-weighted average                                  = 52.7
+source                                    results  share of the score
+<a name="card3-nineninesix-gepard-1-0"></a><a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">nineninesix/gepard-1.0 model card (subm…</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 52.7
 </pre>
 
 <sub>Licences: nineninesix/gepard-1.0 model card ([Apache-2.0](https://opensource.org/licenses/Apache-2.0))</sub>
@@ -49,6 +49,6 @@ weighted average                                  = 52.7
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/nineninesix](https://huggingface.co/nineninesix/gepard-1.0)
+Model repository and documentation: [huggingface.co/nineninesix](https://huggingface.co/nineninesix/gepard-1.0)
 
 [interactive version](https://whatmodel.sh/model/gepard-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

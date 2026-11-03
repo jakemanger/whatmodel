@@ -129,6 +129,6 @@ Other versions: Q8_0 (~13 GB) `ollama run hf.co/mradermacher/PLLuM-12B-nc-chat-2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-nc-chat-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-nc-chat-2412)
+Model repository and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-nc-chat-2412)
 
 [interactive version](https://whatmodel.sh/model/pllum-12b-nc-chat-2412) · [JSON](https://whatmodel.sh/api?format=json&all=1)

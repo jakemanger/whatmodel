@@ -54,6 +54,6 @@ weighted average                                   = 25.2
    git clone https://github.com/showlab/Show-1 && cd Show-1 && pip install -r requirements.txt && python run_inference.py
    ```
 
-Official weights and documentation: [github.com/showlab](https://github.com/showlab/Show-1)
+Model repository and documentation: [github.com/showlab](https://github.com/showlab/Show-1)
 
 [interactive version](https://whatmodel.sh/model/show-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

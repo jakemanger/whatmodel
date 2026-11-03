@@ -113,6 +113,6 @@ weighted average                              = 44.1
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B)
 
 [interactive version](https://whatmodel.sh/model/infinity-instruct-3m-0625-yi-1-5-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

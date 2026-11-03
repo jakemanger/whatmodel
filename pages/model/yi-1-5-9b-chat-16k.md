@@ -108,6 +108,6 @@ Other versions: Q8_0 (~9.4 GB) `ollama run hf.co/mradermacher/Yi-1.5-9B-Chat-16K
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-9B-Chat-16K', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-9B-Chat-16K)
+Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-9B-Chat-16K)
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-9b-chat-16k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -50,6 +50,6 @@ weighted average                                   = 29.2
    git clone https://github.com/baaivision/NOVA && cd NOVA && pip install diffusers transformers accelerate imageio-ffmpeg omegaconf wandb && pip install . && python -c "import torch; from diffnext.pipelines import NOVAPipeline; from diffnext.utils import export_to_video; p=NOVAPipeline.from_pretrained('BAAI/nova-d48w1024-osp480', torch_dtype=torch.float16, trust_remote_code=True).to('cuda'); export_to_video(p('Many spotted jellyfish pulsating under water.', max_latent_length=9).frames[0], 'nova.mp4', fps=12)"
    ```
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/nova-d48w1024-osp480)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/nova-d48w1024-osp480)
 
 [interactive version](https://whatmodel.sh/model/nova-0-6b-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

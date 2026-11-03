@@ -28,7 +28,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   35.3%  ▄··●·▄··▄█·▄ beats 2/7      hard · avg 33%     14%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                      72.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 143/205  easy · avg 67%    7.1%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (maker)</a>                    72.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 143/205  easy · avg 67%    7.1%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -38,9 +38,9 @@ test                                result  vs the others in its run    difficul
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (lab)</a>   48.1%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 24/80  medium · avg 51%    9.0%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>        58.3%  ▂····▂···▂●▆ beats 6/9    medium · avg 51%    6.0%  at its level · noisy
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (maker)</a>   48.1%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 24/80  medium · avg 51%    9.0%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (maker)</a>        58.3%  ▂····▂···▂●▆ beats 6/9    medium · avg 51%    6.0%  at its level · noisy
 </pre>
 
 </details>
@@ -54,11 +54,11 @@ test                                                         result  vs the othe
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1025.2  ▁▁▂▂●▂▃▄▅▅█▇ beats 17/152  avg 1061                     20%  blunt
 <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>                            35.3%  ▄··●·▄··▄█·▄ beats 2/7     hard · avg 33%               14%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.0500 MM-MT-Bench score (1-10)  ▅··▃·█·●▃··▅ beats 6/9     avg 5.605 MM-MT-Bench s…    9.0%  sharp · noisy
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                              52.0%  ▂·▂······●▄▄ beats 4/9     medium · avg 51%            6.5%  at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                    58.3%  ▂····▂···▂●▆ beats 6/9     medium · avg 51%            6.0%  at its level · noisy
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                             78.6%  ▃···█▃··▅▃●▃ beats 8/9     easy · avg 73%              5.1%  blunt · at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (maker)</a>                                            52.0%  ▂·▂······●▄▄ beats 4/9     medium · avg 51%            6.5%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (maker)</a>                                  58.3%  ▂····▂···▂●▆ beats 6/9     medium · avg 51%            6.0%  at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (maker)</a>                                           78.6%  ▃···█▃··▅▃●▃ beats 8/9     easy · avg 73%              5.1%  blunt · at its level
 <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1016.0  ▄▄·▄·●▄▄·▄·█ beats 3/8     avg 1032                    2.8%  blunt
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                                 81.8%  ▄·▄▄▄··▄▄▄●█ beats 7/9     easy · avg 74%              0.5%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (maker)</a>                                               81.8%  ▄·▄▄▄··▄▄▄●█ beats 7/9     easy · avg 74%              0.5%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -66,8 +66,8 @@ test                                                         result  vs the othe
 <details><summary>other tests (1)</summary>
 
 <pre>
-test        result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>   69.2%  ▁▁▁▁▁▂▂▅█●▆▄ beats 134/214  easy · avg 75%     19%  at its level
+test          result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (maker)</a>   69.2%  ▁▁▁▁▁▂▂▅█●▆▄ beats 134/214  easy · avg 75%     19%  at its level
 </pre>
 
 </details>
@@ -78,7 +78,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B (lab)</a>                               8   62% ▇▇▇▇▇▇▇
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B (submitted / maker-reported)</a>        8   62% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
 <a name="paper-2608.10408v1-viseditbench"></a><a href="https://arxiv.org/html/2608.10408v1">VisEditBench: Can Vision-Language Model…</a>        1   14% ▇▇
 <a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    3% ▇
@@ -154,6 +154,6 @@ Other versions: Q8_0 (~13 GB) `ollama run hf.co/EnlistedGhost/Pixtral-12B-2409-G
    pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-12B-2409 --tokenizer_mode mistral --limit_mm_per_prompt 'image=4'
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-12B-2409)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-12B-2409)
 
 [interactive version](https://whatmodel.sh/model/pixtral-12b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

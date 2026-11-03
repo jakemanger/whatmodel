@@ -43,9 +43,9 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               89.9%  ▂▂▅▆▄█▆▃▅●▃▄ beats 78/92   hard · avg 28%           18%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   51.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 78/197  very hard · avg 7.2%    6.7%  sharp · at its level · noisy
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>            70.0%  ▃·▃·▃▃···●·▃ beats 5/7     medium · avg 43%        5.2%  sharp · at its level · noisy · several …
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>          70.0%  ▃·▃·▃▃···●·▃ beats 5/7     medium · avg 43%        5.2%  sharp · at its level · noisy · several …
 <a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                  51.5%  ●··▄··█··▄·▄ beats 0/6     hard · avg 32%          4.6%  sharp · at its level · noisy
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>             94.5%  ▄·▄▄·▄▄●···▄ beats 6/7     very easy · avg 91%     1.6%  maxed out
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>           94.5%  ▄·▄▄·▄▄●···▄ beats 6/7     very easy · avg 91%     1.6%  maxed out
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   40% ▇▇▇▇▇
 <a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft</a>                                       4   23% ▇▇▇
-<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (lab)</a>        4   18% ▇▇
+<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (sub…</a>        4   18% ▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    8% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    6% ▇
 <a name="judgemark-v2-results"></a><a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 results</a>                            1    3% ▇
@@ -169,7 +169,7 @@ Other versions: Q8_0 (~74.98 GB) `lms get https://huggingface.co/unsloth/DeepSee
 
 Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B)
 
 ## Quantization evidence
 

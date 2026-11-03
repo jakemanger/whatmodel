@@ -180,7 +180,7 @@ Other versions: Q8_0 (~18.26 GB) `ollama run qwen3:14b-q8_0`
 
 Other versions: 8bit (~15.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-14B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-14B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-14B)
 
 ## Quantization evidence
 

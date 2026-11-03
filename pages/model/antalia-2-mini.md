@@ -6,7 +6,7 @@
 
 Patientdesk.ai · released 2026-10 · 0.0076B params · apache-2.0
 
-**score 40.3** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 40.3** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -32,10 +32,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                           results  share of the score
-<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card (lab)</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle               6% ▇
-weighted average                          = 40.3
+source                                    results  share of the score
+<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card (submitted / …</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 40.3
 </pre>
 
 <sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
@@ -44,6 +44,6 @@ weighted average                          = 40.3
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/cloud0day3](https://huggingface.co/cloud0day3/antalia-mini)
+Model repository and documentation: [huggingface.co/cloud0day3](https://huggingface.co/cloud0day3/antalia-mini)
 
 [interactive version](https://whatmodel.sh/model/antalia-2-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

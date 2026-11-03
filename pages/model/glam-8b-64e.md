@@ -6,7 +6,7 @@
 
 Google · released 2021-12 · 143B params (9.8B active) · proprietary
 
-**score 58.4** ±1.3 · comparison only: no current run option verified · from 29 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.4** ±1.3 · comparison only: no current run option verified · from 29 benchmark results across 1 source · † no independently run results verified
 
 Score within the [ANLI Round 1 (prompted)](https://whatmodel.sh/?set=anli-r1%40paper-2112.06905v2&score=set) comparison set only.
 
@@ -22,35 +22,35 @@ Score within the [ANLI Round 1 (prompted)](https://whatmodel.sh/?set=anli-r1%40p
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2112.06905v2">TriviaQA (lab)</a>                       55.1%  ▄··▄···▄·█●█ beats 5/7    hard · avg 35%           15%  sharp · at its level
+<a href="https://arxiv.org/html/2112.06905v2">TriviaQA (maker)</a>                     55.1%  ▄··▄···▄·█●█ beats 5/7    hard · avg 35%           15%  sharp · at its level
 <a href="https://arxiv.org/html/2112.06905v2">Natural Questions (closed book) (…</a>   11.9%  ▄·▄··▄·█●·▄▄ beats 5/7    very hard · avg 7.2%     10%  sharp
-<a href="https://arxiv.org/html/2112.06905v2">ARC Challenge (lab)</a>                  42.8%  ▂··▂·····▄·● beats 5/7    very hard · avg 35%     8.4%  sharp
-<a href="https://arxiv.org/html/2112.06905v2">WinoGrande (lab)</a>                     67.8%  ▃··▃·····▃●█ beats 4/7    hard · avg 61%          7.7%  sharp · at its level
-<a href="https://arxiv.org/html/2112.06905v2">HellaSwag (lab)</a>                      74.0%  ▃··▃···▃·▃▃● beats 5/7    medium · avg 62%        6.4%  sharp · at its level
-<a href="https://arxiv.org/html/2112.06905v2">WebQuestions (closed book) (lab)</a>     10.7%  ▄····▄·▄█●▄▄ beats 5/7    very hard · avg 6.7%    6.3%  sharp
-<a href="https://arxiv.org/html/2112.06905v2">SQuAD 2.0 (prompted, F1) (lab)</a>       57.1%  ██····███●██ beats 5/7    medium · avg 47%        6.2%  sharp · at its level
-<a href="https://arxiv.org/html/2112.06905v2">RACE-high (lab)</a>                      43.4%  ▃▃······▅·●█ beats 4/7    hard · avg 39%          4.0%  typical
-<a href="https://arxiv.org/html/2112.06905v2">COPA (lab)</a>                           86.0%  ▄·▄···▄·▄●·█ beats 5/7    easy · avg 83%          3.6%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">BoolQ (lab)</a>                          72.2%  █···▃··●▃·▃▃ beats 4/7    hard · avg 65%          3.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2112.06905v2">ARC Challenge (maker)</a>                42.8%  ▂··▂·····▄·● beats 5/7    very hard · avg 35%     8.4%  sharp
+<a href="https://arxiv.org/html/2112.06905v2">WinoGrande (maker)</a>                   67.8%  ▃··▃·····▃●█ beats 4/7    hard · avg 61%          7.7%  sharp · at its level
+<a href="https://arxiv.org/html/2112.06905v2">HellaSwag (maker)</a>                    74.0%  ▃··▃···▃·▃▃● beats 5/7    medium · avg 62%        6.4%  sharp · at its level
+<a href="https://arxiv.org/html/2112.06905v2">WebQuestions (closed book) (maker)</a>   10.7%  ▄····▄·▄█●▄▄ beats 5/7    very hard · avg 6.7%    6.3%  sharp
+<a href="https://arxiv.org/html/2112.06905v2">SQuAD 2.0 (prompted, F1) (maker)</a>     57.1%  ██····███●██ beats 5/7    medium · avg 47%        6.2%  sharp · at its level
+<a href="https://arxiv.org/html/2112.06905v2">RACE-high (maker)</a>                    43.4%  ▃▃······▅·●█ beats 4/7    hard · avg 39%          4.0%  typical
+<a href="https://arxiv.org/html/2112.06905v2">COPA (maker)</a>                         86.0%  ▄·▄···▄·▄●·█ beats 5/7    easy · avg 83%          3.6%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">BoolQ (maker)</a>                        72.2%  █···▃··●▃·▃▃ beats 4/7    hard · avg 65%          3.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2112.06905v2">Winograd Schema Challenge (WSC273…</a>   83.9%  █·····▄▄▄●▄▄ beats 5/7    medium · avg 79%        3.1%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">Story Cloze Test (lab)</a>               78.9%  ▄·▄····▄▄●▄█ beats 4/7    medium · avg 75%        3.0%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">SuperGLUE WSC (prompted) (lab)</a>       81.8%  █·····▄·▄●▄▄ beats 5/7    medium · avg 77%        2.9%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">RACE-middle (lab)</a>                    61.9%  ▄▄····▄▄·●█▄ beats 4/7    medium · avg 56%        2.7%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">ARC Easy (lab)</a>                       66.2%  ▄··▄···▄·●▄█ beats 3/7    medium · avg 63%        2.4%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">CoQA (lab)</a>                           65.5%  ▃▃·····●▃▃·▃ beats 3/7    medium · avg 64%        2.1%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">DROP (lab)</a>                           16.8%  ▄·▄█●▄·····▄ beats 4/7    hard · avg 16%          2.1%  sharp · noisy
-<a href="https://arxiv.org/html/2112.06905v2">OpenBookQA (lab)</a>                     50.0%  ▄·▄····█·●·█ beats 5/7    hard · avg 46%          1.8%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">PIQA (lab)</a>                           78.6%  ▃···▃··▃·▃●▃ beats 6/7    medium · avg 75%        1.7%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">Story Cloze Test (maker)</a>             78.9%  ▄·▄····▄▄●▄█ beats 4/7    medium · avg 75%        3.0%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">SuperGLUE WSC (prompted) (maker)</a>     81.8%  █·····▄·▄●▄▄ beats 5/7    medium · avg 77%        2.9%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">RACE-middle (maker)</a>                  61.9%  ▄▄····▄▄·●█▄ beats 4/7    medium · avg 56%        2.7%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">ARC Easy (maker)</a>                     66.2%  ▄··▄···▄·●▄█ beats 3/7    medium · avg 63%        2.4%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">CoQA (maker)</a>                         65.5%  ▃▃·····●▃▃·▃ beats 3/7    medium · avg 64%        2.1%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">DROP (maker)</a>                         16.8%  ▄·▄█●▄·····▄ beats 4/7    hard · avg 16%          2.1%  sharp · noisy
+<a href="https://arxiv.org/html/2112.06905v2">OpenBookQA (maker)</a>                   50.0%  ▄·▄····█·●·█ beats 5/7    hard · avg 46%          1.8%  at its level
+<a href="https://arxiv.org/html/2112.06905v2">PIQA (maker)</a>                         78.6%  ▃···▃··▃·▃●▃ beats 6/7    medium · avg 75%        1.7%  at its level
 <a href="https://arxiv.org/html/2112.06905v2">LAMBADA (OpenAI version), last-wo…</a>   67.3%  ▄▄·····▄·█●█ beats 5/7    medium · avg 60%        1.7%  at its level
-<a href="https://arxiv.org/html/2112.06905v2">ReCoRD (SuperGLUE, prompted) (lab)</a>   88.9%  ▄·▄·····▄▄●█ beats 4/7    very easy · avg 86%     1.6%  typical
-<a href="https://arxiv.org/html/2112.06905v2">RTE (prompted) (lab)</a>                 60.3%  █▄··▄····▄●█ beats 5/7    very hard · avg 55%     1.6%  sharp · noisy
-<a href="https://arxiv.org/html/2112.06905v2">ANLI Round 3 (prompted) (lab)</a>        34.6%  ▄·▄▄●█·····▄ beats 4/7    very hard · avg 35%     0.9%  sharp · too hard for it · noisy
-<a href="https://arxiv.org/html/2112.06905v2">QuAC (prompted, F1) (lab)</a>            33.8%  █···▄·█●··▄▄ beats 5/7    hard · avg 32%          0.7%  blunt · at its level
-<a href="https://arxiv.org/html/2112.06905v2">ANLI Round 1 (prompted) (lab)</a>        33.4%  ●·▄▄·▄··▄··█ beats 1/7    very hard · avg 35%     0.3%  too hard for it · noisy
-<a href="https://arxiv.org/html/2112.06905v2">ANLI Round 2 (prompted) (lab)</a>        34.9%  █▄·····●·▄·█ beats 4/7    very hard · avg 35%     0.1%  blunt · too hard for it · noisy
+<a href="https://arxiv.org/html/2112.06905v2">ReCoRD (SuperGLUE, prompted) (mak…</a>   88.9%  ▄·▄·····▄▄●█ beats 4/7    very easy · avg 86%     1.6%  typical
+<a href="https://arxiv.org/html/2112.06905v2">RTE (prompted) (maker)</a>               60.3%  █▄··▄····▄●█ beats 5/7    very hard · avg 55%     1.6%  sharp · noisy
+<a href="https://arxiv.org/html/2112.06905v2">ANLI Round 3 (prompted) (maker)</a>      34.6%  ▄·▄▄●█·····▄ beats 4/7    very hard · avg 35%     0.9%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2112.06905v2">QuAC (prompted, F1) (maker)</a>          33.8%  █···▄·█●··▄▄ beats 5/7    hard · avg 32%          0.7%  blunt · at its level
+<a href="https://arxiv.org/html/2112.06905v2">ANLI Round 1 (prompted) (maker)</a>      33.4%  ●·▄▄·▄··▄··█ beats 1/7    very hard · avg 35%     0.3%  too hard for it · noisy
+<a href="https://arxiv.org/html/2112.06905v2">ANLI Round 2 (prompted) (maker)</a>      34.9%  █▄·····●·▄·█ beats 4/7    very hard · avg 35%     0.1%  blunt · too hard for it · noisy
 <a href="https://arxiv.org/html/2112.06905v2">MultiRC (SuperGLUE, prompted, F1a…</a>   52.4%  ▃···●▃█····▃ beats 1/7    medium · avg 56%        0.1%  blunt · at its level · noisy
-<a href="https://arxiv.org/html/2112.06905v2">CommitmentBank (prompted) (lab)</a>      40.7%  █▄●█·▄·····▄ beats 3/7    medium · avg 43%        0.0%  blunt · at its level · noisy
-<a href="https://arxiv.org/html/2112.06905v2">WiC (prompted) (lab)</a>                 49.5%  ●▄·······▂·▂ beats 1/7    very hard · avg 50%     0.0%  blunt · too hard for it · noisy
+<a href="https://arxiv.org/html/2112.06905v2">CommitmentBank (prompted) (maker)</a>    40.7%  █▄●█·▄·····▄ beats 3/7    medium · avg 43%        0.0%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2112.06905v2">WiC (prompted) (maker)</a>               49.5%  ●▄·······▂·▂ beats 1/7    very hard · avg 50%     0.0%  blunt · too hard for it · noisy
 </pre>
 
 </details>

@@ -24,9 +24,9 @@ math  ▁▁▃▅█▆●█▄▂▁▁   #181 of 431*     25%      2
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 54%        20%  sharp · at its level · noisy
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>    94.6%  ▁▃▂▃▄▇▅●█▄▂▁ beats 52/85  very easy · avg 86%    5.0%  noisy
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (maker)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 54%        20%  sharp · at its level · noisy
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (maker)</a>    94.6%  ▁▃▂▃▄▇▅●█▄▂▁ beats 52/85  very easy · avg 86%    5.0%  noisy
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>                   52.0%  ▁▁▁▁▂▄●▅███▄ beats 94/322  medium · avg 52%     31%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (maker)</a>                 52.0%  ▁▁▁▁▂▄●▅███▄ beats 94/322  medium · avg 52%     31%  sharp
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   21.3%  ▁▁▁▁▁●▂▃▄▆█▃ beats 14/97   hard · avg 31%       25%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   41.0%  ▃·▁▁▂●▂▅█▇▄▁ beats 22/100  medium · avg 67%     10%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   55.7%  ▁▁▁▁▁▁▁●▄█▄▃ beats 26/146  easy · avg 82%      7.0%  at its level · noisy
@@ -145,6 +145,6 @@ Other versions: Q8_0 (~4.08 GB) `lms get https://huggingface.co/unsloth/Phi-4-mi
 
 Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-mini-reasoning-8bit`
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-mini-reasoning)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-mini-reasoning)
 
 [interactive version](https://whatmodel.sh/model/phi-4-mini-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

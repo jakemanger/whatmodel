@@ -122,6 +122,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/ghost-x/ghost-7b-alpha-gguf:Q8_
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ghost-x/ghost-7b-alpha', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ghost-x](https://huggingface.co/ghost-x/ghost-7b-alpha)
+Model repository and documentation: [huggingface.co/ghost-x](https://huggingface.co/ghost-x/ghost-7b-alpha)
 
 [interactive version](https://whatmodel.sh/model/ghost-7b-alpha) · [JSON](https://whatmodel.sh/api?format=json&all=1)

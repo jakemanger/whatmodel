@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   38.9%  ▅▅▃▃█▅●▃·▃·▅ beats 12/16  hard · avg 31%       31%  at its level
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   56.0%  ▃·····▂▂▂▃●▆ beats 9/15   medium · avg 46%     14%  blunt · at its level
-<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER (lab)</a>   19.4%  ▂▄··▂●▄··█▄▆ beats 4/16   avg 16%             7.2%  blunt
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER (mak…</a>   19.4%  ▂▄··▂●▄··█▄▆ beats 4/16   avg 16%             7.2%  blunt
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>   49.9%  ▃·●·▃·····▃█ beats 1/6    avg 44%             6.9%  sharp · noisy
 <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice clone…</a>   21.2%  ▃·····●···▅█ beats 1/6    avg 20%             5.0%  noisy
 <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   25.0%  ▂●▂··▂·▃▃▃█▂ beats 1/15   avg 8.6%            0.2%  blunt · noisy
@@ -71,6 +71,6 @@ weighted average                                   = 54.7
 
 Other versions: 8bit (mlx-audio) (~7 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/higgs-audio-v2-3B-mlx-q8 --text "Hello from Higgs Audio on MLX." --ref_audio path/to/reference.wav --ref_text "Transcript of the reference clip."`
 
-Official weights and documentation: [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-2-3b-base)
+Model repository and documentation: [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-2-3b-base)
 
 [interactive version](https://whatmodel.sh/model/higgs-audio-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

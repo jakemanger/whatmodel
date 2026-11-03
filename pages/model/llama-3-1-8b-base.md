@@ -136,6 +136,6 @@ Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Meta
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meta-llama/Llama-3.1-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-8B)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-8B)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-8b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

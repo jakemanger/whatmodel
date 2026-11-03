@@ -22,13 +22,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       52.1%  ▃·▅▃▃●·██▃██ beats 6/19   easy · avg 87%          21%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           81.1%  ▂··▂▃▂●▆▃▃█▂ beats 5/19   very easy · avg 98%     19%  blunt
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (maker)</a>                     52.1%  ▃·▅▃▃●·██▃██ beats 6/19   easy · avg 87%          21%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (maker)</a>                         81.1%  ▂··▂▃▂●▆▃▃█▂ beats 5/19   very easy · avg 98%     19%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   37.1%  ▂·▄·●█▄▄█▄▂▆ beats 3/21   easy · avg 74%          16%  blunt
-<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           66.8%  ▂·▄▄·●▂▆▂▄█▄ beats 5/19   easy · avg 87%          13%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (maker)</a>                         66.8%  ▂·▄▄·●▂▆▂▄█▄ beats 5/19   easy · avg 87%          13%  blunt · at its level
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   51.6%  ▃··▅▃▃▅●▅███ beats 7/19   very easy · avg 87%     12%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     53.7%  ▄····▄●▂▄▆▆█ beats 6/19   easy · avg 87%          11%  typical
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  21.3%  ●··▁·▁▁·▁▂▁▂ beats 7/19   medium · avg 71%       6.3%  sharp · too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (maker)</a>                   53.7%  ▄····▄●▂▄▆▆█ beats 6/19   easy · avg 87%          11%  typical
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (maker)</a>                21.3%  ●··▁·▁▁·▁▂▁▂ beats 7/19   medium · avg 71%       6.3%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   26.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 7/276  medium · avg 72%       1.1%  too hard for it · noisy
 </pre>
 
@@ -115,6 +115,6 @@ Other versions: Q8_0 (~0.4 GB) `ollama run hf.co/mradermacher/pythia-410m-GGUF:Q
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-410m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-410m)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-410m)
 
 [interactive version](https://whatmodel.sh/model/pythia-410m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

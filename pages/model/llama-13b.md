@@ -26,9 +26,9 @@ math            ▁▁▃●██▅█▃▁▁▁   #429 of 530     15%      
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [Tulu 2 7B](tulu-2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 1.1 2B IT](gemma-1-1-2b.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    13.4%  ▄··▄····▄▄█● beats 6/6    medium · avg 63%    7.5%  sharp · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>   22.0%  ▁●▁▄▅█▆▅▄▁▂▁ beats 4/86   medium · avg 59%    1.3%  typical
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>      13.4%  ▄··▄····▄▄█● beats 6/6    medium · avg 63%    7.5%  sharp · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MBPP (maker)</a>   22.0%  ▁●▁▄▅█▆▅▄▁▂▁ beats 4/86   medium · avg 59%    1.3%  typical
 </pre>
 
 </details>
@@ -51,10 +51,10 @@ test                                                      result  vs the others 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_gsm8k_8-shot.json">GSM8K</a>        13.6%  ▄▄█▄···▄·●·▄ beats 6/7    easy · avg 65%     13%  sharp · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>    3.9%  ▃●▂▆▅▃▅▅█▃▃▂ beats 3/30   hard · avg 24%    1.4%  too hard for it
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_mathematical_reasoning_0-shot.json">MathQA</a>       28.4%  ▃·▃▃█▅··▃·●▃ beats 9/10   hard · avg 34%    0.2%  blunt · small run
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_gsm8k_8-shot.json">GSM8K</a>          13.6%  ▄▄█▄···▄·●·▄ beats 6/7    easy · avg 65%     13%  sharp · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MATH (maker)</a>    3.9%  ▃●▂▆▅▃▅▅█▃▃▂ beats 3/30   hard · avg 24%    1.4%  too hard for it
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_mathematical_reasoning_0-shot.json">MathQA</a>         28.4%  ▃·▃▃█▅··▃·●▃ beats 9/10   hard · avg 34%    0.2%  blunt · small run
 </pre>
 
 </details>
@@ -76,12 +76,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>   21.4%  ▄···●·▄█··▄▄ beats 2/7    medium · avg 56%        1.8%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_common_sense_reasoning_0-shot.json">COPA</a>                                 90.0%  ▄··█▄▄···▄·● beats 7/7    very easy · avg 95%     1.7%  at its level · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.3%  ▅····▃▅·●█·█ beats 6/13   medium · avg 52%        1.2%  typical
-<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (lab)</a>                       63.1%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 53/80  easy · avg 84%          1.1%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (maker)</a>                     63.1%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 53/80  easy · avg 84%          1.1%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   28.1%  ▂▁▁▁▂▄▄▃▅█●▁ beats 58/68  medium · avg 53%        1.0%  typical
 <a href="https://aclanthology.org/2023.findings-emnlp.508.pdf">CommonsenseQA</a>                        66.2%  █·····▂▂▃▂●▄ beats 29/38  very easy · avg 90%     1.0%  sharp · at its level · noisy · small run
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   52.8%  ▁····▁▁·●·▃█ beats 3/11   hard · avg 63%          1.0%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   41.2%  ▃▅▃··▅▃·●▃▃▅ beats 8/13   medium · avg 61%        0.7%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     50.4%  ▁·▁██▄▅●▂▃▇▁ beats 41/59  medium · avg 63%        0.7%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (maker)</a>                   50.4%  ▁·▁██▄▅●▂▃▇▁ beats 41/59  medium · avg 63%        0.7%  blunt · at its level · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   86.1%  ▄▄·▄·▄··█··● beats 6/7    very easy · avg 93%     0.6%  blunt · at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-13B/llama-13B_reading_comprehension_0-shot.json">CoQA</a>                                 77.0%  ▄····▄▄·▄▄·● beats 6/6    very easy · avg 92%     0.6%  typical
 <a href="https://aclanthology.org/2023.emnlp-main.225.pdf">AQuA-RAT</a>                             17.7%  ●··▁▁▁··▁▁▁▁ beats 1/27   hard · avg 47%          0.6%  sharp · too hard for it · noisy · small…

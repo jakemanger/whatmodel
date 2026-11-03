@@ -35,9 +35,9 @@ test        result  vs the others in its run  difficulty      counts  why
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 39%    7.1%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 48%    7.0%  at its level
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 39%    7.1%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 48%    7.0%  at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   14% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2   14% ▇▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 47.0
 </pre>
@@ -122,6 +122,6 @@ Other versions: Q4_0 (~9.1 GB) `ollama run starcoder2:15b-instruct`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder2-15b-instruct-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1)
+Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1)
 
 [interactive version](https://whatmodel.sh/model/starcoder2-15b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

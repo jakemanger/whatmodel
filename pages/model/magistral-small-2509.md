@@ -37,8 +37,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 48%         16%  sharp · at its level
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         11%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>          77.3%  █▃·····●···▃ beats 4/5     medium · avg 48%         16%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>          86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         11%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/197  very hard · avg 7.2%    7.9%  sharp · at its level · noisy
 </pre>
 
@@ -177,6 +177,6 @@ Other versions: gguf-q8_0 (~29.3 GB) `ollama run hf.co/mistralai/Magistral-Small
 
 Other versions: 8bit (~25.9 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Magistral-Small-2509-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2509)
 
 [interactive version](https://whatmodel.sh/model/magistral-small-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

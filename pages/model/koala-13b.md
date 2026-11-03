@@ -82,6 +82,6 @@ weighted average                                   = 31.8
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/young-geng](https://huggingface.co/young-geng/koala)
+Model repository and documentation: [huggingface.co/young-geng](https://huggingface.co/young-geng/koala)
 
 [interactive version](https://whatmodel.sh/model/koala-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

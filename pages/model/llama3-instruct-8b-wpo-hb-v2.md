@@ -53,6 +53,6 @@ weighted average                              = 56.4
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='wzhouad/Llama3-Instruct-8B-WPO-HB-v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/wzhouad](https://huggingface.co/wzhouad/Llama3-Instruct-8B-WPO-HB-v2)
+Model repository and documentation: [huggingface.co/wzhouad](https://huggingface.co/wzhouad/Llama3-Instruct-8B-WPO-HB-v2)
 
 [interactive version](https://whatmodel.sh/model/llama3-instruct-8b-wpo-hb-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

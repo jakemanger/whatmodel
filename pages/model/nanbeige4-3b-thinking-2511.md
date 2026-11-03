@@ -142,6 +142,6 @@ Other versions: Q8_0 (~4.2 GB) `ollama run hf.co/bartowski/Nanbeige_Nanbeige4-3B
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Nanbeige/Nanbeige4-3B-Thinking-2511', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Nanbeige](https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2511)
+Model repository and documentation: [huggingface.co/Nanbeige](https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2511)
 
 [interactive version](https://whatmodel.sh/model/nanbeige4-3b-thinking-2511) · [JSON](https://whatmodel.sh/api?format=json&all=1)

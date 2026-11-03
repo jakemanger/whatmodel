@@ -67,6 +67,6 @@ weighted average                                   = 35.7
    uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors --with sentencepiece python -c "import torch; from diffusers import PixArtAlphaPipeline; p=PixArtAlphaPipeline.from_pretrained('PixArt-alpha/PixArt-XL-2-1024-MS', torch_dtype=torch.float16).to('cuda'); p(prompt='An astronaut riding a green horse').images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/PixArt-alpha](https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS)
+Model repository and documentation: [huggingface.co/PixArt-alpha](https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS)
 
 [interactive version](https://whatmodel.sh/model/pixart-alpha) · [JSON](https://whatmodel.sh/api?format=json&all=1)

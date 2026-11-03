@@ -34,8 +34,8 @@ test            result  vs the others in its run    difficulty  counts  why
 <details><summary>math · #2 of 2 · 6.0% of its score</summary>
 
 <pre>
-test             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>   24.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 14/133  medium · avg 36%    6.0%  sharp · at its level · noisy · small run
+test               result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (maker)</a>   24.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 14/133  medium · avg 36%    6.0%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -44,8 +44,8 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>                   63.3%  ▁▁▁▁▂▄▅●███▄ beats 123/322  hard · avg 43%          33%  sharp · at its level · small run
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                       75.2%  ▁▁·▁▁▁▃▂▄●█▁ beats 103/188  medium · avg 59%        16%  at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (maker)</a>                 63.3%  ▁▁▁▁▂▄▅●███▄ beats 123/322  hard · avg 43%          33%  sharp · at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (maker)</a>                     75.2%  ▁▁·▁▁▁▃▂▄●█▁ beats 103/188  medium · avg 59%        16%  at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.1%  ▁▂▁▂▅█▂●▄▃▁▁ beats 71/98    very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -107,6 +107,6 @@ Other versions: ud-q2_k_xl (~145.84 GB) `llama cli -hf unsloth/Trinity-Large-Pre
 
 Other versions: ud-q2_k_xl (~145.84 GB) `lms get https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Preview)
+Model repository and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Preview)
 
 [interactive version](https://whatmodel.sh/model/trinity-large-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

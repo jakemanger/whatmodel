@@ -52,6 +52,6 @@ weighted average                                   = 57.0
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Fun-ASR-MLT-Nano-2512-gguf Fun-ASR-MLT-Nano-2512-Q8_0.gguf --local-dir models/fun-asr-mlt-nano-2512 && build/bin/transcribe-cli -m models/fun-asr-mlt-nano-2512/Fun-ASR-MLT-Nano-2512-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512)
+Model repository and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512)
 
 [interactive version](https://whatmodel.sh/model/fun-asr-mlt-nano-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -69,6 +69,6 @@ weighted average                        = 63.0
    git clone https://github.com/zai-org/GLM-TTS.git && cd GLM-TTS && pip install -r requirements.txt && pip install -U huggingface_hub && huggingface-cli download zai-org/GLM-TTS --local-dir ckpt && python glmtts_inference.py --data=example_zh --exp_name=_test --use_cache
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-TTS)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-TTS)
 
 [interactive version](https://whatmodel.sh/model/glm-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

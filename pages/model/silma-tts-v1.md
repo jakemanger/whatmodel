@@ -50,6 +50,6 @@ weighted average                        = 48.0
    pip install silma-tts && python -c "from silma_tts.api import SilmaTTS; silma_tts = SilmaTTS(); silma_tts.infer(ref_file='ref.wav', ref_text=None, gen_text='أنا نموذج جديد من سلمى لتحويل النص إلى كلام.', file_wave='generated_audio.wav', seed=None, speed=1)"
    ```
 
-Official weights and documentation: [huggingface.co/silma-ai](https://huggingface.co/silma-ai/silma-tts)
+Model repository and documentation: [huggingface.co/silma-ai](https://huggingface.co/silma-ai/silma-tts)
 
 [interactive version](https://whatmodel.sh/model/silma-tts-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -192,6 +192,6 @@ Other versions: Q4_K_M (~7.85 GB) `ollama run mistral-nemo:12b-instruct-2407-q4_
 
 Other versions: 8bit (~13 GB, Mac only) `mlx_lm.chat --model mlx-community/Mistral-Nemo-Instruct-2407-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
 
 [interactive version](https://whatmodel.sh/model/mistral-nemo-instruct-2407) · [JSON](https://whatmodel.sh/api?format=json&all=1)

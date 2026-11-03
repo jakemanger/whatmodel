@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   14.3%  ▁▁▁▃··●▁▂██▆ beats 12/86   avg 8.2%       66%  blunt
-<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (lab)</a>      4.0%  ▁···▁▁▁▆▆●▆▁ beats 41/56   avg 2.8%       20%  small run
-<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (lab)</a>      1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 64/102  avg 1.6%      6.7%  blunt · small run
+<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (maker)</a>    4.0%  ▁···▁▁▁▆▆●▆▁ beats 41/56   avg 2.8%       20%  small run
+<a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (maker)</a>    1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 64/102  avg 1.6%      6.7%  blunt · small run
 </pre>
 
 </details>
@@ -53,6 +53,6 @@ weighted average                                   = 34.8
    uv run --with speechbrain --with transformers python -c "from speechbrain.inference.ASR import EncoderASR as A; print(A.from_hparams(source='speechbrain/asr-wav2vec2-librispeech', savedir='pretrained_models/asr-wav2vec2-librispeech').transcribe_file('audio.wav'))"
    ```
 
-Official weights and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech)
+Model repository and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech)
 
 [interactive version](https://whatmodel.sh/model/speechbrain-asr-wav2vec2-librispeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

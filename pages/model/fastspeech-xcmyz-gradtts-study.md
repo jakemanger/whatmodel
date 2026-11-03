@@ -44,6 +44,6 @@ weighted average                                   = 26.4
 
 No verified API or local download yet.
 
-Official weights and documentation: [github.com/xcmyz](https://github.com/xcmyz/FastSpeech)
+Model repository and documentation: [github.com/xcmyz](https://github.com/xcmyz/FastSpeech)
 
 [interactive version](https://whatmodel.sh/model/fastspeech-xcmyz-gradtts-study) · [JSON](https://whatmodel.sh/api?format=json&all=1)

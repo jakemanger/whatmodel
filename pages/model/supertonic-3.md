@@ -52,6 +52,6 @@ weighted average                        = 54.9
 
 Other versions: onnx-fp32 (Supertonic sample code) (~0.4 GB) `git clone https://github.com/supertone-oss-archive/supertonic.git && cd supertonic && python3.11 -m venv .venv && source .venv/bin/activate && python -m pip install huggingface_hub && hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir assets && python -m pip install -r py/requirements.txt && cd py && python example_onnx.py --n-test 1 --text "This speech was generated locally with the archived Supertonic model." --lang en`
 
-Official weights and documentation: [huggingface.co/Supertone](https://huggingface.co/Supertone/supertonic-3)
+Model repository and documentation: [huggingface.co/Supertone](https://huggingface.co/Supertone/supertonic-3)
 
 [interactive version](https://whatmodel.sh/model/supertonic-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -138,6 +138,6 @@ weighted average                                   = 25.2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5', torch_dtype='auto', device_map='auto')('<|prompter|>What is a meme?<|endoftext|><|assistant|>', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5)
+Model repository and documentation: [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5)
 
 [interactive version](https://whatmodel.sh/model/oasst-sft-4-pythia-12b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

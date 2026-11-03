@@ -90,6 +90,6 @@ weighted average                                   = 24.5
    pip install protobuf==3.20.0 transformers==4.27.1 icetk cpm_kernels torch && python -c "from transformers import AutoTokenizer, AutoModel; t=AutoTokenizer.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True); m=AutoModel.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True).half().cuda().eval(); print(m.chat(t, '你好', history=[])[0])"
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm-6b)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm-6b)
 
 [interactive version](https://whatmodel.sh/model/chatglm-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

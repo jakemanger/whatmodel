@@ -71,6 +71,6 @@ api (Stability AI) · $0.035/image · [platform.stability.ai](https://platform.s
    uv run --with torch --with diffusers --with transformers --with accelerate --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-medium', torch_dtype=torch.bfloat16).to('cuda'); p('A capybara holding a sign that reads Hello World', num_inference_steps=40, guidance_scale=4.5).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)
 
 [interactive version](https://whatmodel.sh/model/sd-3-5-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

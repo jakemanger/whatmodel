@@ -35,11 +35,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="speech-stt-liteasr-report-ccby"></a><a href="https://arxiv.org/html/2502.20583v2">LiteASR (lab)</a>                        3   64% ▇▇▇▇▇▇▇▇
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   33% ▇▇▇▇
-prior: pull toward the middle             4% ▇
-weighted average                        = 51.9
+source                                results  share of the score
+<a name="speech-stt-liteasr-report-ccby"></a><a href="https://arxiv.org/html/2502.20583v2">LiteASR (submitted / maker-reported)</a>        3   64% ▇▇▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                        1   33% ▇▇▇▇
+prior: pull toward the middle                    4% ▇
+weighted average                               = 51.9
 </pre>
 
 <sub>Licences: LiteASR ([CC BY 4.0](../../licenses/speech-stt-liteasr-report-ccby.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
@@ -54,6 +54,6 @@ weighted average                        = 51.9
    uv run --with transformers --with torch --with librosa python -c "import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-fast', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])"
    ```
 
-Official weights and documentation: [huggingface.co/efficient-speech](https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast)
+Model repository and documentation: [huggingface.co/efficient-speech](https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast)
 
 [interactive version](https://whatmodel.sh/model/lite-whisper-large-v3-fast) · [JSON](https://whatmodel.sh/api?format=json&all=1)

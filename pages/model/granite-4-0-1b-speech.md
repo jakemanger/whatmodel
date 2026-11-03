@@ -55,6 +55,6 @@ weighted average                                   = 62.4
 
 Other versions: BF16 (~6.04 GB, Mac only) `uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-4.0-1b-speech --audio audio.wav --output-path transcript`
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-1b-speech)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-1b-speech)
 
 [interactive version](https://whatmodel.sh/model/granite-4-0-1b-speech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

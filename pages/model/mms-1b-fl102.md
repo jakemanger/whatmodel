@@ -53,6 +53,6 @@ weighted average                        = -9.8
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/mms-1b-fl102', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/mms-1b-fl102)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/mms-1b-fl102)
 
 [interactive version](https://whatmodel.sh/model/mms-1b-fl102) · [JSON](https://whatmodel.sh/api?format=json&all=1)

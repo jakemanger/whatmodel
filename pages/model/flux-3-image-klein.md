@@ -20,6 +20,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 api (Black Forest Labs) · price unknown · [bfl.ai](https://bfl.ai)
 
-Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/flux-3-image-klein)
+Model repository and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/flux-3-image-klein)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/flux-3-image-klein)

@@ -54,6 +54,6 @@ weighted average                                   = 46.4
    python -c "import torch;from diffusers import CogVideoXImageToVideoPipeline;from diffusers.utils import export_to_video,load_image;p=CogVideoXImageToVideoPipeline.from_pretrained('THUDM/CogVideoX-5b-I2V',torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_tiling();p.vae.enable_slicing();export_to_video(p(prompt='A little girl is riding a bicycle at high speed. Focused, detailed, realistic.',image=load_image('input.jpg'),num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX-5b-I2V)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX-5b-I2V)
 
 [interactive version](https://whatmodel.sh/model/cogvideox-5b-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

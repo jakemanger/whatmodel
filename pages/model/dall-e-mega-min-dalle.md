@@ -65,6 +65,6 @@ weighted average                                   = 28.7
    uv run --with torch --with min-dalle python -c "import torch; from min_dalle import MinDalle; m=MinDalle(models_root='./pretrained', dtype=torch.float32, device='cpu', is_mega=True, is_reusable=True); m.generate_image(text='A lighthouse at sunset', seed=1, grid_size=1, is_seamless=False, temperature=1, top_k=256, supercondition_factor=32, is_verbose=False).save('image.png')"
    ```
 
-Official weights and documentation: [github.com/kuprel](https://github.com/kuprel/min-dalle)
+Model repository and documentation: [github.com/kuprel](https://github.com/kuprel/min-dalle)
 
 [interactive version](https://whatmodel.sh/model/dall-e-mega-min-dalle) · [JSON](https://whatmodel.sh/api?format=json&all=1)

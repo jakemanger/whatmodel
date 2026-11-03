@@ -118,6 +118,6 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/mlx-co
    mlx_lm.server --model mlx-community/reka-flash-3-4bit
    ```
 
-Official weights and documentation: [huggingface.co/RekaAI](https://huggingface.co/RekaAI/reka-flash-3)
+Model repository and documentation: [huggingface.co/RekaAI](https://huggingface.co/RekaAI/reka-flash-3)
 
 [interactive version](https://whatmodel.sh/model/reka-flash-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

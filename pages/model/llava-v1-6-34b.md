@@ -30,9 +30,9 @@ test                                  result  vs the others in its run  difficul
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        964.4  ▁▁●▂▂▂▃▄▅▅█▇ beats 5/152  avg 1061             16%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          22.5%  ●▂▂█▃▂·▂▂··▂ beats 0/13   hard · avg 34%       10%  typical
 <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -4.498           10%  typical
-<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                       51.1%  ▁····▁▁▃●▆▆▅ beats 10/53  medium · avg 59%    6.6%  at its level · small run
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (maker)</a>                     51.1%  ▁····▁▁▃●▆▆▅ beats 10/53  medium · avg 59%    6.6%  at its level · small run
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv reasoning questions (test…</a>     20.0%  ●··▄▄▄█····▄ beats 0/6    hard · avg 30%      5.8%  typical
-<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                          69.5%  ▁▁▁▄●▁▃·▃▃▃█ beats 6/24   easy · avg 77%      0.9%  blunt · at its level · small run
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (maker)</a>                        69.5%  ▁▁▁▄●▁▃·▃▃▃█ beats 6/24   easy · avg 77%      0.9%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ source                                    results  share of the score
 <a name="paper-2406.18521v1-charxiv"></a><a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv: Charting Gaps in Realistic Cha…</a>        2   22% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   10% ▇
-<a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>                2    7% ▇
+<a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (submitted /…</a>        2    7% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 41.0
 </pre>
@@ -73,6 +73,6 @@ weighted average                                   = 41.0
 
 Other versions: Q8_0 (~42.26 GB) `ollama run llava:34b-v1.6-q8_0`
 
-Official weights and documentation: [huggingface.co/liuhaotian](https://huggingface.co/liuhaotian/llava-v1.6-34b)
+Model repository and documentation: [huggingface.co/liuhaotian](https://huggingface.co/liuhaotian/llava-v1.6-34b)
 
 [interactive version](https://whatmodel.sh/model/llava-v1-6-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

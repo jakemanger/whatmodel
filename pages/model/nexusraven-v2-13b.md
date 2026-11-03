@@ -135,6 +135,6 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/NexusRa
    mlx_lm.server --model k8smee/NexusRaven-V2-13B-mlx-6Bit
    ```
 
-Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/NexusRaven-V2-13B)
+Model repository and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/NexusRaven-V2-13B)
 
 [interactive version](https://whatmodel.sh/model/nexusraven-v2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -47,6 +47,6 @@ weighted average                        = 46.0
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/FoundationVision](https://huggingface.co/FoundationVision/Infinity)
+Model repository and documentation: [huggingface.co/FoundationVision](https://huggingface.co/FoundationVision/Infinity)
 
 [interactive version](https://whatmodel.sh/model/infinity-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

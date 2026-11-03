@@ -149,6 +149,6 @@ Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/WizardL
 
 Other versions: Q4_0 (~38.87 GB) `ollama run wizardlm:70b-llama2-q4_0`
 
-Official weights and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardLM-70B-V1.0)
+Model repository and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardLM-70B-V1.0)
 
 [interactive version](https://whatmodel.sh/model/wizardlm-70b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

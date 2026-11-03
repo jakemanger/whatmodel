@@ -89,7 +89,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (la…</a>   63.7%  ▃·●·▃▃▃·▃▃█▅ beats 1/11    medium · avg 38%     10%  at its level · several runs
+<a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (ma…</a>   63.7%  ▃·●·▃▃▃·▃▃█▅ beats 1/11    medium · avg 38%     10%  at its level · several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1215.5  ▁▁▂▂▂▂▃▄▅●█▇ beats 81/152  avg 1061            3.3%  blunt
 <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   49.0%  ▃▃·▅·▃·●·█▅▅ beats 6/14    hard · avg 24%      1.7%  at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        83.6%  ▄····●···█▄▄ beats 1/5     easy · avg 67%      1.1%  noisy

@@ -111,6 +111,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/Magicoder-S-CL-7B-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ise-uiuc/Magicoder-S-CL-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ise-uiuc](https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B)
+Model repository and documentation: [huggingface.co/ise-uiuc](https://huggingface.co/ise-uiuc/Magicoder-S-CL-7B)
 
 [interactive version](https://whatmodel.sh/model/magicoder-s-cl-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

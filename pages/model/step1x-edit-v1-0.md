@@ -67,6 +67,6 @@ stepfun-ai/Step1X-Edi…  <a href="https://github.com/stepfun-ai/Step1X-Edit/blo
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit)
+Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit)
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

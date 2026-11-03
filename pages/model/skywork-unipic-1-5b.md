@@ -44,6 +44,6 @@ weighted average                                   = 39.9
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/Skywork](https://huggingface.co/Skywork/Skywork-UniPic-1.5B)
+Model repository and documentation: [huggingface.co/Skywork](https://huggingface.co/Skywork/Skywork-UniPic-1.5B)
 
 [interactive version](https://whatmodel.sh/model/skywork-unipic-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

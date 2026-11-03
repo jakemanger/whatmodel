@@ -59,12 +59,12 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime (lab)</a>               4   68% ▇▇▇▇▇▇▇▇
-<a name="speech-stt-dutch-asr-tvosch-apache"></a><a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json">Dutch ASR Leaderboard</a>                1   20% ▇▇
-<a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                 1    9% ▇
-prior: pull toward the middle             3% ▇
-weighted average                        = 59.3
+source                                    results  share of the score
+<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime (submitted / maker-rep…</a>        4   68% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-dutch-asr-tvosch-apache"></a><a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json">Dutch ASR Leaderboard</a>                           1   20% ▇▇
+<a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                            1    9% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 59.3
 </pre>
 
 <sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Dutch ASR Leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>

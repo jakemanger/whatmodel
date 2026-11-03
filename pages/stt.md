@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · **stt** · [decision](decision.md)
 
-updated 2026-10-31 02:55 UTC · 184 models · scores combine 87 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
+updated 2026-11-03 02:37 UTC · 184 models · scores combine 87 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -280,7 +280,7 @@ curl.exe "whatmodel.sh/stt?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   —  <a href="model/voxtral-small-transcribe-3.md">Voxtral Small Transcribe 3</a>  no reviewed results  api $0.0040/audio…                 <a href="https://mistral.ai/news/voxtral-3">mistral.ai ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 184 of 187 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 184 of 187 catalogue models listed here · [sources and licences](method.md#sources)
 
 <details><summary>Models without a score (1)</summary>
 

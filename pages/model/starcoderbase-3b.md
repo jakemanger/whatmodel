@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           15.9%  ▁·▁▁●▃▄▄▄█▃▁ beats 6/99   easy · avg 70%       21%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 29.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 0/15   easy · avg 81%       12%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   21.8%  ▁·▂●▂▆▅█▄▄▁▂ beats 3/35   medium · avg 62%    7.0%  typical
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        14.2%  ●▄·▄██▄█·█·▄ beats 0/12   medium · avg 49%    4.0%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (maker)</a>                      14.2%  ●▄·▄██▄█·█·▄ beats 0/12   medium · avg 49%    4.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           27.5%  ●▅█▃▃▅·▃▃▅·▅ beats 0/15   medium · avg 56%    3.6%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   11.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 2/35   medium · avg 46%    3.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           27.0%  ●·▃██▅▃·▃▃▅▃ beats 0/15   medium · avg 54%    3.0%  blunt · at its level
@@ -44,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Llama-3-Instruct-8B-SimPO-v0.2](llama-3-instruct-8b-simpo-v0-2.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>    8.0%  ●▄▄·▄█·██·█▄ beats 0/12   easy · avg 75%    3.4%  sharp
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (maker)</a>    8.0%  ●▄▄·▄█·██·█▄ beats 0/12   easy · avg 75%    3.4%  sharp
 </pre>
 
 </details>
@@ -92,6 +92,6 @@ Other versions: Q4_0 (~1.8 GB) `ollama run starcoder:3b`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-3b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-3b)
+Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-3b)
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -71,6 +71,6 @@ api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/cogvideox-5b
    python -c "import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-5b',torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX-5b)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX-5b)
 
 [interactive version](https://whatmodel.sh/model/cogvideox-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

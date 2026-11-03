@@ -108,6 +108,6 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/HuatuoGPT-o1-70B-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/HuatuoGPT-o1-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-70B)
+Model repository and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-70B)
 
 [interactive version](https://whatmodel.sh/model/huatuogpt-o1-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

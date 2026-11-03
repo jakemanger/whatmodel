@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 8.63B params · proprietary
 
-**score 37.4** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 37.4** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,8 +24,8 @@ math  ▁▁▃●██▅█▃▁▁▁   #462 of 530*     17%      1
 Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    8.2%  ▆·▂·▄▂●▂▂█▄▆ beats 7/18   medium · avg 48%     17%  sharp
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    8.2%  ▆·▂·▄▂●▂▂█▄▆ beats 7/18   medium · avg 48%     17%  sharp
 </pre>
 
 </details>
@@ -34,12 +34,12 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           49.3%  ▁···▁··▃▁●▅█ beats 5/18   easy · avg 74%       30%  at its level
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 36.4%  ▂▂▂▂·●·▃▂█▃▃ beats 4/18   medium · avg 60%     17%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         49.3%  ▁···▁··▃▁●▅█ beats 5/18   easy · avg 74%       30%  at its level
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               36.4%  ▂▂▂▂·●·▃▂█▃▃ beats 4/18   medium · avg 60%     17%  sharp
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   35.4%  ▄······●▄▄·█ beats 1/5    medium · avg 58%     11%  typical
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   47.5%  ▂··▂·▂▄▄·█●█ beats 11/18  medium · avg 61%     10%  at its level
-<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    34.5%  ▄·····●··█·█ beats 1/5    medium · avg 56%     10%  typical
-<a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (lab)</a>   67.6%  ▄·······▄▄●█ beats 3/5    medium · avg 75%    4.0%  at its level · noisy
+<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (make…</a>   34.5%  ▄·····●··█·█ beats 1/5    medium · avg 56%     10%  typical
+<a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (mak…</a>   67.6%  ▄·······▄▄●█ beats 3/5    medium · avg 75%    4.0%  at its level · noisy
 </pre>
 
 </details>

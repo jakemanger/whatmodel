@@ -193,6 +193,6 @@ Other versions: Q8_0 (~3.63 GB) `ollama run gemma2:2b-instruct-q8_0`
 
 Other versions: 8bit (~2.8 GB, Mac only) `mlx_lm.chat --model mlx-community/gemma-2-2b-it-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-2-2b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-2-2b-it)
 
 [interactive version](https://whatmodel.sh/model/gemma-2-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

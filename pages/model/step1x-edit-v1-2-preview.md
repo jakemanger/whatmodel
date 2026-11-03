@@ -6,7 +6,7 @@
 
 StepFun · released 2025-09 · apache-2.0
 
-**score 49.9** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 49.9** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -25,7 +25,7 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[pro\]](flux-1-k
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>             52.5%  █●·········█ beats 1/2    medium · avg 54%     46%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           52.5%  █●·········█ beats 1/2    medium · avg 54%     46%  at its level · small run
 <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   74.2%  █·······●··█ beats 1/2    easy · avg 73%       45%  at its level · small run
 </pre>
 

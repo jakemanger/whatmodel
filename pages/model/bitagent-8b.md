@@ -109,6 +109,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/BitAgent-8B-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BitAgent/BitAgent-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/BitAgent](https://huggingface.co/BitAgent/BitAgent-8B)
+Model repository and documentation: [huggingface.co/BitAgent](https://huggingface.co/BitAgent/BitAgent-8B)
 
 [interactive version](https://whatmodel.sh/model/bitagent-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

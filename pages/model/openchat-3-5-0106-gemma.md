@@ -110,6 +110,6 @@ Other versions: Q8_0 (~9.1 GB) `ollama run hf.co/bartowski/openchat-3.5-0106-gem
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openchat/openchat-3.5-0106-gemma', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat-3.5-0106-gemma)
+Model repository and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat-3.5-0106-gemma)
 
 [interactive version](https://whatmodel.sh/model/openchat-3-5-0106-gemma) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -111,6 +111,6 @@ Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/starchat2-15b-v0.1-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='HuggingFaceH4/starchat2-15b-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1)
+Model repository and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1)
 
 [interactive version](https://whatmodel.sh/model/starchat2-15b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 1.5B params · apache-2.0
 
-**score 44.8** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 44.8** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -24,9 +24,9 @@ text to image  ▁▂██●▆██▂▃▁▁   #93 of 157*     89%      2
 Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>     73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 20/39  easy · avg 80%          50%  at its level · small run
-<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>   85.0%  ▄·▂·▂●█▄▂▄▂▂ beats 6/17   very easy · avg 88%     39%  small run
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (maker)</a>     73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 20/39  easy · avg 80%          50%  at its level · small run
+<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (maker)</a>   85.0%  ▄·▂·▂●█▄▂▄▂▂ beats 6/17   very easy · avg 88%     39%  small run
 </pre>
 
 </details>
@@ -36,16 +36,16 @@ test             result  vs the others in its run  difficulty           counts  
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (lab)</a>         2   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            11% ▇
-weighted average                        = 44.8
+source                                    results  share of the score
+<a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (submitted / mak…</a>        2   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       11% ▇
+weighted average                                   = 44.8
 </pre>
 
 ## How to run it
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-1.5B)
+Model repository and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-1.5B)
 
 [interactive version](https://whatmodel.sh/model/show-o2-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

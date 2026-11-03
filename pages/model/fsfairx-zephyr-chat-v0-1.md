@@ -109,6 +109,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/featherless-ai-quants/sfairXC-F
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='sfairXC/FsfairX-Zephyr-Chat-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/sfairXC](https://huggingface.co/sfairXC/FsfairX-Zephyr-Chat-v0.1)
+Model repository and documentation: [huggingface.co/sfairXC](https://huggingface.co/sfairXC/FsfairX-Zephyr-Chat-v0.1)
 
 [interactive version](https://whatmodel.sh/model/fsfairx-zephyr-chat-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

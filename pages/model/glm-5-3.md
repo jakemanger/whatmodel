@@ -171,6 +171,6 @@ Other versions: ud-q2_k_xl (~226.4 GB) `lms get https://huggingface.co/unsloth/G
 
 Other versions: 8bit (~790.1 GB, Mac only) `mlx_lm.chat --model pipenetwork/GLM-5.3-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5.3)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5.3)
 
 [interactive version](https://whatmodel.sh/model/glm-5-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

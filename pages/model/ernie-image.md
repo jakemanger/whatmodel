@@ -26,11 +26,11 @@ Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Cosmos3-Super-Text2Image](cosm
 <pre>
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>   89.4%  ▄····▄█▄▄█▄● beats 9/10   easy · avg 82%          24%  typical
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>           96.8%  ▃·····▅██▅●▃ beats 11/12  very easy · avg 90%     16%  maxed out · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>           95.9%  ▃·······██●█ beats 9/12   very easy · avg 91%     13%  maxed out · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>                       88.6%  ▇▃▅▇▁▄▅▃█▃▃● beats 37/39  easy · avg 78%          12%  small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>              52.1%  ▃·▃█▃·●··▃·▃ beats 6/8    medium · avg 37%        10%  at its level · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>              55.4%  ▃······▃▅█▅● beats 9/9    medium · avg 39%        10%  at its level · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (maker)</a>         96.8%  ▃·····▅██▅●▃ beats 11/12  very easy · avg 90%     16%  maxed out · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (maker)</a>         95.9%  ▃·······██●█ beats 9/12   very easy · avg 91%     13%  maxed out · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (maker)</a>                     88.6%  ▇▃▅▇▁▄▅▃█▃▃● beats 37/39  easy · avg 78%          12%  small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (maker)</a>            52.1%  ▃·▃█▃·●··▃·▃ beats 6/8    medium · avg 37%        10%  at its level · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (maker)</a>            55.4%  ▃······▃▅█▅● beats 9/9    medium · avg 39%        10%  at its level · small run
 </pre>
 
 </details>
@@ -77,6 +77,6 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 Other versions: BF16 (~19.7 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"`
 
-Official weights and documentation: [huggingface.co/baidu](https://huggingface.co/baidu/ERNIE-Image)
+Model repository and documentation: [huggingface.co/baidu](https://huggingface.co/baidu/ERNIE-Image)
 
 [interactive version](https://whatmodel.sh/model/ernie-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

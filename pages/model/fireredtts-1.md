@@ -69,6 +69,6 @@ weighted average                                   = 47.8
    git clone -b main https://github.com/FireRedTeam/FireRedTTS.git && cd FireRedTTS && conda create --name redtts python=3.10 && conda activate redtts && conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia && pip install -e . && pip install -r requirements.txt && huggingface-cli download FireRedTeam/FireRedTTS --local-dir pretrained_models && python -c "import os; import torchaudio; from fireredtts.fireredtts import FireRedTTS; tts = FireRedTTS(config_path='configs/config_24k.json', pretrained_path='pretrained_models'); rec_wavs = tts.synthesize(prompt_wav='examples/prompt_1.wav', text='小红书，是中国大陆的网络购物和社交平台，成立于二零一三年六月。', lang='zh'); rec_wavs = rec_wavs.detach().cpu(); out_wav_path = os.path.join('./example.wav'); torchaudio.save(out_wav_path, rec_wavs, 24000)"
    ```
 
-Official weights and documentation: [huggingface.co/FireRedTeam](https://huggingface.co/FireRedTeam/FireRedTTS)
+Model repository and documentation: [huggingface.co/FireRedTeam](https://huggingface.co/FireRedTeam/FireRedTTS)
 
 [interactive version](https://whatmodel.sh/model/fireredtts-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

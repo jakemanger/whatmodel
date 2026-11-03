@@ -104,6 +104,6 @@ Other versions: Q2_K (~29.8 GB) `lms get https://huggingface.co/mradermacher/cal
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MaziyarPanahi/calme-2.1-qwen2.5-72b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/calme-2.1-qwen2.5-72b)
+Model repository and documentation: [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/calme-2.1-qwen2.5-72b)
 
 [interactive version](https://whatmodel.sh/model/calme-2-1-qwen2-5-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

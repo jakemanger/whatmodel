@@ -100,6 +100,6 @@ weighted average                                   = 50.9
 
 Other versions: Q8_0 (~106.81 GB) `ollama run llama3.2-vision:90b-instruct-q8_0`
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-2-90b-vision) · [JSON](https://whatmodel.sh/api?format=json&all=1)

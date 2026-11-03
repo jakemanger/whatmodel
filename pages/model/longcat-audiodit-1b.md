@@ -6,7 +6,7 @@
 
 Meituan · released 2026-03 · 1B params · mit
 
-**score 66.0** ±4.1 · #10 of 119 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.0** ±4.1 · #10 of 119 · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -56,6 +56,6 @@ weighted average                                   = 66.0
    git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text "Today is a sunny day, let's go for a walk in the park." --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-1B
    ```
 
-Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B)
+Model repository and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B)
 
 [interactive version](https://whatmodel.sh/model/longcat-audiodit-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

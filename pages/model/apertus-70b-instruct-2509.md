@@ -107,6 +107,6 @@ Other versions: UD-IQ2_XXS (~19.9 GB) `ollama run hf.co/unsloth/Apertus-70B-Inst
    vllm serve swiss-ai/Apertus-70B-Instruct-2509
    ```
 
-Official weights and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509)
+Model repository and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509)
 
 [interactive version](https://whatmodel.sh/model/apertus-70b-instruct-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

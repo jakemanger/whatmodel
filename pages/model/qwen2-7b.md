@@ -61,10 +61,10 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                          85.7%  ▄···█●▄·▄·▄█ beats 3/8    very easy · avg 92%     10%  sharp · several runs
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (maker)</a>                        85.7%  ▄···█●▄·▄·▄█ beats 3/8    very easy · avg 92%     10%  sharp · several runs
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          80.1%  ▁▄·▁▄●▅▅▅███ beats 10/43  very easy · avg 87%    7.1%  sharp
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>      52.9%  ▃····●·▅·▅·█ beats 1/8    easy · avg 74%         4.6%  at its level · several runs
-<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                   19.5%  ▃·····●··█▅▅ beats 1/8    hard · avg 34%         3.3%  typical
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (maker)</a>    52.9%  ▃····●·▅·▅·█ beats 1/8    easy · avg 74%         4.6%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (maker)</a>                 19.5%  ▃·····●··█▅▅ beats 1/8    hard · avg 34%         3.3%  typical
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   23.9%  ▁▁▁▆●▂▇▇▄··▂ beats 12/38  hard · avg 30%         3.2%  sharp
 </pre>
 
@@ -76,8 +76,8 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   66.9%  ▁·▁▁▄●▄▅█▄▂▁ beats 10/53    easy · avg 75%       19%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 26.6%  ▁▁▁▂▂▃●█▆▃▅▃ beats 19/61    medium · avg 38%     14%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        40.7%  ▂▁▁▄▂▅●█▆▂▂▂ beats 29/58    medium · avg 48%    4.3%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        28.0%  ▃▂·●▆██▆▅▃▃▃ beats 3/33     medium · avg 39%    4.2%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>      40.7%  ▂▁▁▄▂▅●█▆▂▂▂ beats 29/58    medium · avg 48%    4.3%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>      28.0%  ▃▂·●▆██▆▅▃▃▃ beats 3/33     medium · avg 39%    4.2%  at its level
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                       65.0%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 96/155   medium · avg 72%    3.0%  sharp · at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    8.4%  ▁▁●▆██▁▁·▁▁▁ beats 5/57     hard · avg 15%      2.9%  sharp
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                 70.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 141/214  easy · avg 77%      2.8%  at its level
@@ -99,8 +99,8 @@ source                                    results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             5   43% ▇▇▇▇▇
 <a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards</a>          6   15% ▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   14% ▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                                      3   11% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2    8% ▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (submitted / maker-reported)</a>               3   11% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2    8% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>             1    3% ▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    2% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    2% ▇
@@ -195,6 +195,6 @@ Other versions: Q8_0 (~9.64 GB) `ollama run qwen2:7b-instruct-q8_0`
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-7B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -73,6 +73,6 @@ weighted average                                   = 40.1
    ollama run falcon:180b-chat-q4_0
    ```
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-180B-chat)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-180B-chat)
 
 [interactive version](https://whatmodel.sh/model/falcon-180b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -143,6 +143,6 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Yi-34B-
 
 Other versions: Q8_0 (~41.77 GB) `ollama run yi:34b-chat-q8_0`
 
-Official weights and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-34B-Chat)
+Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-34B-Chat)
 
 [interactive version](https://whatmodel.sh/model/yi-34b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

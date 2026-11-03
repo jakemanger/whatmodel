@@ -29,11 +29,11 @@ web search          ▂▁▂●▅█▅▄▁▂▁▁     #68 of 96*    2.6% 
 Beats [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
-test                   result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      70.7%  ▁··▁·▁▂▁●█▄▁ beats 8/29   hard · avg 19%           17%  sharp · at its level
-<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>        57.0%  ██··█·██··●█ beats 5/6    very hard · avg 8.9%    7.2%  sharp · at its level
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Retail (lab)</a>    81.4%  ▁····▃·▂▇█▂● beats 27/28  medium · avg 45%        4.0%  small run
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Airline (lab)</a>   59.6%  ▁▁▁·▅▄▁█▇▁▁● beats 24/28  hard · avg 26%          2.8%  at its level · small run
+test                     result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>        70.7%  ▁··▁·▁▂▁●█▄▁ beats 8/29   hard · avg 19%           17%  sharp · at its level
+<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>          57.0%  ██··█·██··●█ beats 5/6    very hard · avg 8.9%    7.2%  sharp · at its level
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Retail (maker)</a>    81.4%  ▁····▃·▂▇█▂● beats 27/28  medium · avg 45%        4.0%  small run
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Airline (maker)</a>   59.6%  ▁▁▁·▅▄▁█▇▁▁● beats 24/28  hard · avg 26%          2.8%  at its level · small run
 </pre>
 
 </details>

@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>                          1   45% ▇▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (submitted / maker-rep…</a>        1   45% ▇▇▇▇▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   34% ▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   18% ▇▇
 prior: pull toward the middle                        3% ▇
@@ -136,6 +136,6 @@ Other versions: 8bit (~11.9 GB, Mac only) `mlx_lm.chat --model speakleash/Bielik
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-11B-v2.6-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.6-Instruct)
+Model repository and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.6-Instruct)
 
 [interactive version](https://whatmodel.sh/model/bielik-11b-v2-6-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

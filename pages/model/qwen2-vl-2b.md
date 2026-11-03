@@ -25,9 +25,9 @@ vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #151 of 153     
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>   43.0%  ●··▃▅·▃█▅▅▅█ beats 0/16   medium · avg 69%     15%  at its level
-<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 25%      3.7%  too hard for it · small run
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (maker)</a>   43.0%  ●··▃▅·▃█▅▅▅█ beats 0/16   medium · avg 69%     15%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (maker)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 25%      3.7%  too hard for it · small run
 </pre>
 
 </details>
@@ -37,19 +37,19 @@ test                        result  vs the others in its run  difficulty        
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>             41.1%  ●···▆▂▂▂▄▄▄█ beats 0/16   medium · avg 61%        16%  at its level
-<a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>   43.0%  ●··▃▅·▃█▅▅▅█ beats 0/16   medium · avg 69%        15%  at its level
-<a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                 48.0%  ●··▄▂▂·▄█▂▄▆ beats 0/16   medium · avg 65%        12%  at its level
-<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>               37.6%  ▃·●·▅▃▃▃▅▅▃█ beats 2/16   medium · avg 46%       7.1%  typical
-<a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                 90.1%  ●··▅▃▅▃█▃█▅▅ beats 0/17   very easy · avg 94%    6.5%  blunt
-<a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                73.5%  ●··▂·▂▃·▅▂▆█ beats 0/17   easy · avg 85%         6.2%  blunt
-<a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>         41.7%  ●·▃·▅▃▅▅▃▅█▅ beats 0/16   medium · avg 54%       5.3%  blunt · at its level
-<a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>         65.5%  ▃·▃●█▃▃▃▃▃▃▃ beats 3/13   easy · avg 80%         5.2%  at its level · small run
-<a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>            62.9%  ●▃·▃▅▅·█·▃▅█ beats 0/16   easy · avg 70%         4.6%  blunt · at its level
-<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 25%         3.7%  too hard for it · small run
-<a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>               80.9%  ▅●·▃▃█▃▅▅▃·▃ beats 3/16   easy · avg 84%         1.9%  blunt
-<a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                79.7%  ●······▄·▄▄▄ beats 1/5    easy · avg 80%         0.9%  blunt
+test                          result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (maker)</a>             41.1%  ●···▆▂▂▂▄▄▄█ beats 0/16   medium · avg 61%        16%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (maker)</a>   43.0%  ●··▃▅·▃█▅▅▅█ beats 0/16   medium · avg 69%        15%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">MMStar (maker)</a>                 48.0%  ●··▄▂▂·▄█▂▄▆ beats 0/16   medium · avg 65%        12%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (maker)</a>               37.6%  ▃·●·▅▃▃▃▅▅▃█ beats 2/16   medium · avg 46%       7.1%  typical
+<a href="https://arxiv.org/html/2409.12191v2">DocVQA (maker)</a>                 90.1%  ●··▅▃▅▃█▃█▅▅ beats 0/17   very easy · avg 94%    6.5%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">ChartQA (maker)</a>                73.5%  ●··▂·▂▃·▅▂▆█ beats 0/17   easy · avg 85%         6.2%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">HallusionBench (maker)</a>         41.7%  ●·▃·▅▃▅▅▃▅█▅ beats 0/16   medium · avg 54%       5.3%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (maker)</a>         65.5%  ▃·▃●█▃▃▃▃▃▃▃ beats 3/13   easy · avg 80%         5.2%  at its level · small run
+<a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (maker)</a>            62.9%  ●▃·▃▅▅·█·▃▅█ beats 0/16   easy · avg 70%         4.6%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (maker)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 25%         3.7%  too hard for it · small run
+<a href="https://arxiv.org/html/2409.12191v2">OCRBench (maker)</a>               80.9%  ▅●·▃▃█▃▅▅▃·▃ beats 3/16   easy · avg 84%         1.9%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">TextVQA (maker)</a>                79.7%  ●······▄·▄▄▄ beats 1/5    easy · avg 80%         0.9%  blunt
 </pre>
 
 </details>
@@ -58,9 +58,9 @@ test                        result  vs the others in its run  difficulty        
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles) (la…</a>   55.6%  ●··█··▅█▃▃▅▃ beats 0/13    medium · avg 66%       7.1%  blunt · at its level
-<a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (lab)</a>     60.4%  ▁▁●▁▁·▁▃▁▁▁█ beats 2/16    medium · avg 73%       3.3%  at its level · small run
-<a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                        63.2%  ▂●▂·▂█··▆▄·▂ beats 1/13    medium · avg 67%       3.0%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles) (ma…</a>   55.6%  ●··█··▅█▃▃▅▃ beats 0/13    medium · avg 66%       7.1%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (maker)</a>   60.4%  ▁▁●▁▁·▁▃▁▁▁█ beats 2/16    medium · avg 73%       3.3%  at its level · small run
+<a href="https://arxiv.org/html/2409.12191v2">MVBench (maker)</a>                      63.2%  ▂●▂·▂█··▆▄·▂ beats 1/13    medium · avg 67%       3.0%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.7%  ▁▁▂▃●▄█▆▃▂▂▁ beats 33/140  very easy · avg 94%    1.4%  blunt · noisy
 </pre>
 
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (lab)</a>                              15   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (submitted / maker-reported)</a>       15   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    1% ▇
 prior: pull toward the middle                 1% ▇
 weighted average                            = 38.1
@@ -159,6 +159,6 @@ Other versions: 4bit (~1.2 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 Other versions: 8bit (~2.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-VL-2B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-vl-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

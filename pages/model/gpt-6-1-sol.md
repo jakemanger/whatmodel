@@ -102,12 +102,12 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         80.0%  █··▂▃▇▄█▂▄▂● beats 76/77    very hard · avg 9.4%     10%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           80.0%  █▆▆▆▆▂▆▂▂▂▂● beats 30/32    very hard · avg 1.2%    7.8%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                61.0%  █▁▁▁▁▂▃▃▃▂●▁ beats 134/137  very hard · avg 5.8%    4.9%  sharp · at its level · noisy
-<a href="https://deploymentsafety.openai.com/gpt-6-1-sol">HealthBench Professional (lab)</a>       64.2%  ▄·▄··▄▄·▄█·● beats 7/8      hard · avg 20%          1.7%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-1-sol">HealthBench Professional (maker)</a>     64.2%  ▄·▄··▄▄·▄█·● beats 7/8      hard · avg 20%          1.7%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    73.9%  ▁▁▃▂▃▃▆▆█▄▂● beats 80/81    very hard · avg 8.0%    1.6%  at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   68.2%  ▁▁▃▂▂▄▁▃▄▄▄● beats 34/38    very hard · avg 14%     1.6%  at its level
-<a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench Hard (lab)</a>               33.4%  ▂··▂····▂▄·● beats 5/8      very hard · avg 9.6%    1.2%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench Hard (maker)</a>             33.4%  ▂··▂····▂▄·● beats 5/8      very hard · avg 9.6%    1.2%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         95.4%  ▁▁▁▁▂▄▆▄▅▇█● beats 208/211  hard · avg 39%          1.1%  sharp · maxed out
-<a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench (lab)</a>                    56.7%  ▃·▃·····█●▃▅ beats 5/8      hard · avg 24%          1.0%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench (maker)</a>                  56.7%  ▃·▃·····█●▃▅ beats 5/8      hard · avg 24%          1.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   98.6%  ▁▁▃▁█▄▃▃▆▂▂● beats 48/49    easy · avg 77%          0.7%  maxed out
 </pre>
 

@@ -69,6 +69,6 @@ weighted average                                   = 62.1
 
 Other versions: onnx-fp32 (ZipVoice repo) (~0.55 GB) `git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav` · onnx-int8 (ZipVoice repo) (~0.18 GB) `git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav`
 
-Official weights and documentation: [huggingface.co/k2-fsa](https://huggingface.co/k2-fsa/ZipVoice)
+Model repository and documentation: [huggingface.co/k2-fsa](https://huggingface.co/k2-fsa/ZipVoice)
 
 [interactive version](https://whatmodel.sh/model/zipvoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

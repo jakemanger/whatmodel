@@ -163,6 +163,6 @@ Other versions: Q8_0 (~11.1 GB) `ollama run yi:9b-chat-v1.5-q8_0`
    mlx_lm.server --model mlx-community/Yi-1.5-9B-Chat-4bit
    ```
 
-Official weights and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-9B-Chat)
+Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-9B-Chat)
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-9b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

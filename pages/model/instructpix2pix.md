@@ -69,6 +69,6 @@ weighted average                                   = 18.8
    uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionInstructPix2PixPipeline; from diffusers.utils import load_image; p=StableDiffusionInstructPix2PixPipeline.from_pretrained('timbrooks/instruct-pix2pix', torch_dtype=torch.float16, safety_checker=None).to('cuda'); p('turn him into cyborg', image=load_image('https://raw.githubusercontent.com/timothybrooks/instruct-pix2pix/main/imgs/example.jpg'), num_inference_steps=10, image_guidance_scale=1).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/timbrooks](https://huggingface.co/timbrooks/instruct-pix2pix)
+Model repository and documentation: [huggingface.co/timbrooks](https://huggingface.co/timbrooks/instruct-pix2pix)
 
 [interactive version](https://whatmodel.sh/model/instructpix2pix) · [JSON](https://whatmodel.sh/api?format=json&all=1)

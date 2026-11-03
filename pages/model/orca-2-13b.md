@@ -111,6 +111,6 @@ Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/TheBloke/Orca-2-13B-GGUF:Q8_0`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Orca-2-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Orca-2-13b)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Orca-2-13b)
 
 [interactive version](https://whatmodel.sh/model/orca-2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

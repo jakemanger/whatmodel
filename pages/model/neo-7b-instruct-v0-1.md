@@ -106,6 +106,6 @@ Other versions: Q8_0 (~8.3 GB) `ollama run hf.co/mradermacher/neo_7b_instruct_v0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='m-a-p/neo_7b_instruct_v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/m-a-p](https://huggingface.co/m-a-p/neo_7b_instruct_v0.1)
+Model repository and documentation: [huggingface.co/m-a-p](https://huggingface.co/m-a-p/neo_7b_instruct_v0.1)
 
 [interactive version](https://whatmodel.sh/model/neo-7b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

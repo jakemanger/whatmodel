@@ -65,6 +65,6 @@ weighted average                                   = 31.4
    uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-M-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-M-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/DeepFloyd](https://huggingface.co/DeepFloyd/IF-I-M-v1.0)
+Model repository and documentation: [huggingface.co/DeepFloyd](https://huggingface.co/DeepFloyd/IF-I-M-v1.0)
 
 [interactive version](https://whatmodel.sh/model/deepfloyd-if-m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · proprietary
 
-**score 62.0** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.0** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,9 +36,9 @@ test                                result  vs the others in its run  difficulty
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 48%     32%  sharp
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 60%     21%  sharp
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>   83.5%  █▃·····▃···● beats 5/5    medium · avg 48%     32%  sharp
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>   91.8%  █▃·····▃···● beats 5/5    medium · avg 60%     21%  sharp
 </pre>
 
 </details>
@@ -46,8 +46,8 @@ test             result  vs the others in its run  difficulty        counts  why
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 52%     34%  sharp
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (maker)</a>   76.3%  █·█·███····● beats 5/5    medium · avg 52%     34%  sharp
 </pre>
 
 </details>

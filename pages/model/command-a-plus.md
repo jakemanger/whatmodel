@@ -27,13 +27,13 @@ vision &amp; documents  ······●·····      #1 of 1*    5.9%      2
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
-test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.6%    8.3%  sharp · several runs
-<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>   85.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 63/89  hard · avg 26%          5.7%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>      1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.9%    3.5%  too hard for it
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>   27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.1%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>       14.4%  ●··········█ beats 0/5    hard · avg 15%          2.6%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>          5.8%  ●·▄▄······▄▄ beats 1/5    very hard · avg 5.3%    1.0%  blunt
+test                      result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>        25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.6%    8.3%  sharp · several runs
+<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (maker)</a>   85.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 63/89  hard · avg 26%          5.7%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>        1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.9%    3.5%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>     27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.1%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>         14.4%  ●··········█ beats 0/5    hard · avg 15%          2.6%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>            5.8%  ●·▄▄······▄▄ beats 1/5    very hard · avg 5.3%    1.0%  blunt
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   86.1%  ▄······▄●▄·█ beats 2/5    medium · avg 50%    4.3%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   14.4%  ●··········█ beats 0/5    hard · avg 15%      2.6%  sharp · at its level · noisy
-<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>    38.0%  ▁····▃▃▄▅●▆▂ beats 25/40  hard · avg 19%      2.3%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (make…</a>   38.0%  ▁····▃▃▄▅●▆▂ beats 25/40  hard · avg 19%      2.3%  at its level · small run
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      medium · avg 65%    8.3%  sharp
-<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 47%    4.5%  sharp · small run
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (maker)</a>    90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 47%    4.5%  sharp · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   73.5%  █▄●········█ beats 3/5      hard · avg 31%      3.8%  sharp · at its level · noisy
 </pre>
 
@@ -68,8 +68,8 @@ test                result  vs the others in its run    difficulty        counts
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (la…</a>   52.7%  ▂▅▃▅●▆▆▅▆█▆▂ beats 32/101  hard · avg 32%    3.0%  at its level · small run
-<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (la…</a>   88.0%  ▂▄▄▅▇▄█●▇▂▁▂ beats 43/59   easy · avg 70%    2.9%  small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (ma…</a>   52.7%  ▂▅▃▅●▆▆▅▆█▆▂ beats 32/101  hard · avg 32%    3.0%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (ma…</a>   88.0%  ▂▄▄▅▇▄█●▇▂▁▂ beats 43/59   easy · avg 70%    2.9%  small run
 </pre>
 
 </details>
@@ -84,8 +84,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    73.9%  ▄···▄▄··●··█ beats 3/5    medium · avg 43%        4.1%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       45.8%  █··●·▄·····█ beats 2/5    hard · avg 25%          3.2%  at its level
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   68.7%  ▂·●··▂·▄▂·█▆ beats 1/12   medium · avg 63%        1.8%  noisy
-<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   74.0%  ▃········●█▅ beats 2/8    medium · avg 42%        1.3%  at its level · small run
-<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        81.0%  █·▃·▅▅▃···▃● beats 10/10  easy · avg 70%          0.9%  blunt
+<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (mak…</a>   74.0%  ▃········●█▅ beats 2/8    medium · avg 42%        1.3%  at its level · small run
+<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (maker)</a>                      81.0%  █·▃·▅▅▃···▃● beats 10/10  easy · avg 70%          0.9%  blunt
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   76.5%  ▄·▄▄▄·▄●█▄█▄ beats 6/12   medium · avg 65%        0.7%  blunt · at its level
 </pre>
 
@@ -99,7 +99,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report</a>                  13   72% ▇▇▇▇▇▇▇▇▇
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        7   24% ▇▇▇
-<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                                    3    3% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (submitted / maker-reported)</a>             3    3% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 63.7
 </pre>
@@ -153,6 +153,6 @@ Other versions: IQ2_M (~65.9 GB) `llama cli -hf bartowski/command-a-plus-05-2026
 
 Other versions: IQ2_M (~65.9 GB) `lms get https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF@IQ2_M -y`
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16)
 
 [interactive version](https://whatmodel.sh/model/command-a-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

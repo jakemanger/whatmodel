@@ -57,7 +57,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   46.8%  ▂·▄·▂█▄●█▄▂▆ beats 10/21  easy · avg 74%         3.6%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), last-wo…</a>   67.0%  ▁··▂▁▁▁▂●█▅▃ beats 9/26   very easy · avg 87%    3.1%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2306.04751v2">BIG-Bench Hard</a>                       28.1%  ●···▄··▄··▄▄ beats 0/5    easy · avg 74%         2.2%  sharp · too hard for it
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                       15.1%  ▁▁▂▂▄●▃▆▅█▅▂ beats 18/80  medium · avg 61%       2.1%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (maker)</a>                     15.1%  ▁▁▂▂▄●▃▆▅█▅▂ beats 18/80  medium · avg 61%       2.1%  small run
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   11.0%  ▅····●▅·██·█ beats 2/13   medium · avg 52%       1.3%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.7%  ▃●▃··▅▃·█▃▃▅ beats 2/13   medium · avg 61%       1.2%  typical
 <a href="https://arxiv.org/html/2306.04751v2">MMLU</a>                                 26.2%  ▄·●····▄·▄·█ beats 1/5    easy · avg 75%         1.0%  noisy
@@ -153,6 +153,6 @@ Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-6.9b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-6.9b)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-6.9b)
 
 [interactive version](https://whatmodel.sh/model/pythia-6-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

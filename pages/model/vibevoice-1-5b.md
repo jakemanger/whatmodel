@@ -53,6 +53,6 @@ weighted average                                   = 53.3
    pip install "transformers[torch]>=5.17.0" diffusers soundfile && python -c "import os; from transformers import AutoProcessor, AutoModelForTextToWaveform; model_id='vibevoice/VibeVoice-1.5B-hf'; processor=AutoProcessor.from_pretrained(model_id); model=AutoModelForTextToWaveform.from_pretrained(model_id, device_map='auto'); conversation=[{'role':'0','content':[{'type':'text','text':'Hello, nice to meet you. How are you?'}]}]; inputs=processor.apply_chat_template(conversation, return_dict=True, tokenize=True, add_generation_prompt=True).to(model.device, model.dtype); audio=model.generate(**inputs); processor.save_audio(audio, 'VibeVoice-1.5B-hf_tts.wav')"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-1.5B)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-1.5B)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

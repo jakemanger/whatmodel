@@ -40,10 +40,10 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2412.08905v1">HumanEval+ (lab)</a>                     82.8%  ▁·▁▁▂▃▄▄█●▄▃ beats 116/145  easy · avg 77%       11%  sharp · several runs
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (lab)</a>                      82.6%  ▁▁▁▁▂▂▆▆█●▂▁ beats 183/205  easy · avg 71%      2.1%  sharp · small run
+<a href="https://arxiv.org/html/2412.08905v1">HumanEval+ (maker)</a>                   82.8%  ▁·▁▁▂▃▄▄█●▄▃ beats 116/145  easy · avg 77%       11%  sharp · several runs
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (maker)</a>                    82.6%  ▁▁▁▁▂▂▆▆█●▂▁ beats 183/205  easy · avg 71%      2.1%  sharp · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   44.8%  █▂▁▁▂▂▂▃▅▅●▇ beats 34/47    hard · avg 33%      1.5%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2412.08905v1">HumanEval (simple-evals) (lab)</a>       82.6%  ▂●▆█▅▃··▂··▂ beats 3/19     easy · avg 76%      1.2%  typical
+<a href="https://arxiv.org/html/2412.08905v1">HumanEval (simple-evals) (maker)</a>     82.6%  ▂●▆█▅▃··▂··▂ beats 3/19     easy · avg 76%      1.2%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   77.5%  ▃··▁▂▂▃▂█▃●▂ beats 42/47    medium · avg 51%    1.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   37.1%  ▁▁▁▁▁▁▂▂▃█●▄ beats 37/47    hard · avg 32%      1.1%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.6%  ▁▁▁······▁▃● beats 35/47    easy · avg 67%      0.0%  blunt · at its level · noisy
@@ -70,12 +70,12 @@ test                                result  vs the others in its run   difficult
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      64.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 56/92   hard · avg 28%          8.8%  sharp · at its level
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MGSM (lab)</a>                        80.6%  ▂·▁▁▁▁▁▂▅█▃● beats 41/42   easy · avg 72%          2.7%  sharp · small run
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified) (lab)</a>   80.4%  ▂▄▄▃█▇▅●▄▃▄▁ beats 54/80   easy · avg 72%          1.6%  small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          13.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 52/197  very hard · avg 7.2%    1.6%  sharp · noisy
-<a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals) (lab)</a>         80.6%  ▁·▁●·▁▇▃█▁▃▁ beats 2/20    easy · avg 81%          1.1%  typical
+test                               result  vs the others in its run   difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                        64.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 56/92   hard · avg 28%          8.8%  sharp · at its level
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MGSM (maker)</a>                        80.6%  ▂·▁▁▁▁▁▂▅█▃● beats 41/42   easy · avg 72%          2.7%  sharp · small run
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified) (maker)</a>   80.4%  ▂▄▄▃█▇▅●▄▃▄▁ beats 54/80   easy · avg 72%          1.6%  small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            13.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 52/197  very hard · avg 7.2%    1.6%  sharp · noisy
+<a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals) (maker)</a>         80.6%  ▁·▁●·▁▇▃█▁▃▁ beats 2/20    easy · avg 81%          1.1%  typical
 </pre>
 
 </details>
@@ -84,30 +84,30 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2412.08905v1">MMLU-Pro (lab)</a>                       70.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 92/188   medium · avg 59%        7.3%  at its level · several runs
+<a href="https://arxiv.org/html/2412.08905v1">MMLU-Pro (maker)</a>                     70.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 92/188   medium · avg 59%        7.3%  at its level · several runs
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           59.2%  ▆▄●▄█▄▂·▄█·▄ beats 5/23     medium · avg 56%        6.3%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            59.2%  ▄▄●▂▂█▂▄▂█▂▄ beats 4/22     medium · avg 61%        5.4%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 81/211   hard · avg 39%          5.3%  sharp · at its level
-<a href="https://arxiv.org/html/2412.08905v1">GPQA Diamond (simple-evals) (lab)</a>    56.1%  ▁·····▄█●▂▃▃ beats 13/22    hard · avg 39%          3.2%  sharp · at its level
+<a href="https://arxiv.org/html/2412.08905v1">GPQA Diamond (simple-evals) (make…</a>   56.1%  ▁·····▄█●▂▃▃ beats 13/22    hard · avg 39%          3.2%  sharp · at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   66.1%  ▁▂▂▂▃█●▆▅▄▂▃ beats 46/95    medium · avg 65%        2.8%  at its level
-<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       82.0%  ●···▄····▄·█ beats 0/4      easy · avg 86%          2.4%  sharp · noisy · several runs
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (maker)</a>     82.0%  ●···▄····▄·█ beats 0/4      easy · avg 86%          2.4%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   36.1%  ▁▁▁▁▁▂▂▃▄●█▃ beats 51/97    hard · avg 31%          2.3%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   30.0%  ▁▁·▁▂▂▄●▄▅▄▄ beats 26/66    hard · avg 29%          2.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      64.4%  ▁··▁▁▂▂▆▅▆●▆ beats 44/70    medium · avg 62%        2.2%  at its level
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified) (lab)</a>      56.1%  ▂▁▂▂▄▃▆▃●█▃▃ beats 60/106   hard · avg 44%          1.9%  sharp · at its level · small run
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU (lab)</a>                           84.8%  ▁▁▁▁▁▂▂▅██●▄ beats 185/214  easy · avg 77%          1.8%  small run
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified) (maker)</a>    56.1%  ▂▁▂▂▄▃▆▃●█▃▃ beats 60/106   hard · avg 44%          1.9%  sharp · at its level · small run
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU (maker)</a>                         84.8%  ▁▁▁▁▁▂▂▅██●▄ beats 185/214  easy · avg 77%          1.8%  small run
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.2%  ●···▁▁▁▂▃·▆▂ beats 6/23     very hard · avg 29%     1.7%  sharp · too hard for it
 <a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot CoT…</a>   84.8%  ▁···▂▁●█▂▂▃▁ beats 5/22     easy · avg 80%          1.4%  typical
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA (lab)</a>                        3.0%  ●▄▄▆█▆███·▂█ beats 1/32     very hard · avg 4.6%    1.2%  too hard for it · small run
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA (maker)</a>                      3.0%  ●▄▄▆█▆███·▂█ beats 1/32     very hard · avg 4.6%    1.2%  too hard for it · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 230/276  medium · avg 72%        0.9%  at its level · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   50.5%  ▁··▃●▁▁▅█▅▁▅ beats 3/24     hard · avg 51%          0.8%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   84.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 82/100   medium · avg 67%        0.7%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   89.2%  ▁▁▁▁▁▁▁▂▄█●▃ beats 114/146  easy · avg 82%          0.4%  noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 1.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 32/137   very hard · avg 5.8%    0.2%  sharp · too hard for it · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.3%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 67/140   very easy · avg 94%     0.2%  blunt · maxed out · noisy
-<a href="https://arxiv.org/html/2412.08905v1">DROP F1, 3-shot (simple-evals) (l…</a>   75.5%  ●▂▆█▆·▃·▂▅·▂ beats 1/23     easy · avg 79%          0.2%  blunt
+<a href="https://arxiv.org/html/2412.08905v1">DROP F1, 3-shot (simple-evals) (m…</a>   75.5%  ●▂▆█▆·▃·▂▅·▂ beats 1/23     easy · avg 79%          0.2%  blunt
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   96.3%  ▁▂▁▂▅█▂▃▄▃▁● beats 96/98    very easy · avg 90%     0.0%  blunt
-<a href="https://arxiv.org/html/2412.08905v1">LiveBench (release not stated) (l…</a>   47.6%  no other model yet                                     —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2412.08905v1">LiveBench (release not stated) (m…</a>   47.6%  no other model yet                                     —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -119,11 +119,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        4   16% ▇▇
-<a name="report-2412.08905v1"></a><a href="https://arxiv.org/html/2412.08905v1">Microsoft Research (lab)</a>                        9   16% ▇▇
+<a name="report-2412.08905v1"></a><a href="https://arxiv.org/html/2412.08905v1">Microsoft Research (submitted / maker-r…</a>        9   16% ▇▇
 <a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>           3   13% ▇▇
-<a name="card-microsoft-phi-4"></a><a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">microsoft/phi-4 model card (lab)</a>                6   11% ▇
-<a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft (lab)</a>                                 5   11% ▇
-<a name="card-microsoft--phi-4-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">microsoft/Phi-4-reasoning model card (l…</a>        5    9% ▇
+<a name="card-microsoft-phi-4"></a><a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">microsoft/phi-4 model card (submitted /…</a>        6   11% ▇
+<a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft (submitted / maker-reported)</a>          5   11% ▇
+<a name="card-microsoft--phi-4-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">microsoft/Phi-4-reasoning model card (s…</a>        5    9% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    4% ▇
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    3% ▇
@@ -239,7 +239,7 @@ Other versions: Q8_0 (~18.14 GB) `ollama run phi4:14b-q8_0`
 
 Other versions: 8bit (~15.6 GB, Mac only) `mlx_lm.chat --model mlx-community/phi-4-8bit`
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-4)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-4)
 
 ## Quantization evidence
 

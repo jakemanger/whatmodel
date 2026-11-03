@@ -40,11 +40,11 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>        63.0%  ▄·····▄▄·●·█ beats 3/5     hard · avg 31%       16%  at its level · several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1153.1  ▁▁▂▂▂▂▃●▅▅█▇ beats 49/152  avg 1061             15%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.8%  ▁·▁·▃▃▁▇▃●·▄ beats 14/22   hard · avg 27%       12%  blunt · at its level
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     75.4%  ▁····▁▁▃█▆●▅ beats 39/53   medium · avg 57%    6.5%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.2%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (maker)</a>                   75.4%  ▁····▁▁▃█▆●▅ beats 39/53   medium · avg 57%    6.5%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (maker)</a>                     65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.2%  at its level · small run
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        90.8%  ▄····▄···●▄▄ beats 3/5     easy · avg 67%      5.1%  noisy
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 21/35   medium · avg 62%    4.8%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                       86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 20/37   easy · avg 82%      1.5%  blunt · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (maker)</a>                       75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 21/35   medium · avg 62%    4.8%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (maker)</a>                     86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 20/37   easy · avg 82%      1.5%  blunt · small run
 </pre>
 
 </details>
@@ -52,9 +52,9 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>        53.8%  ▇·●▅▅▄▄··▃▁▁ beats 6/28   hard · avg 48%      4.3%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>   57.0%  ▁·▁▁▂▃●▅▂▂·▂ beats 10/24  medium · avg 40%    3.9%  at its level · small run
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (maker)</a>        53.8%  ▇·●▅▅▄▄··▃▁▁ beats 6/28   hard · avg 48%      4.3%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (maker)</a>   57.0%  ▁·▁▁▂▃●▅▂▂·▂ beats 10/24  medium · avg 40%    3.9%  at its level · small run
 </pre>
 
 </details>
@@ -118,6 +118,6 @@ api (Z.ai) · $0.90/M blended · $0.6 in / $1.8 out per 1M tokens · [docs.z.ai]
 
 3. Then run lms ls to see its name, and lms chat followed by that name
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.5V)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.5V)
 
 [interactive version](https://whatmodel.sh/model/glm-4-5v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

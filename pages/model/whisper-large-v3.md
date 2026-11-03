@@ -166,7 +166,7 @@ api (Groq) · $0.0018/audio min · [console.groq.com](https://console.groq.com/d
 
 Other versions: fp16 (~4.22 GB, Mac only) `uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-mlx` · fp16 (~4.22 GB, NVIDIA only) `uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3`
 
-Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large-v3)
+Model repository and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large-v3)
 
 ## Quantization evidence
 

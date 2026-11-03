@@ -158,6 +158,6 @@ Other versions: Q8_0 (~27.2 GB) `ollama run mistral-small:22b-instruct-2409-q8_0
 
 Other versions: 8bit (~23.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Mistral-Small-Instruct-2409-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Small-Instruct-2409)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Small-Instruct-2409)
 
 [interactive version](https://whatmodel.sh/model/mistral-small-2409) · [JSON](https://whatmodel.sh/api?format=json&all=1)

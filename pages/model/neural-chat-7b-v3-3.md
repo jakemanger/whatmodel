@@ -108,6 +108,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/TheBloke/neural-chat-7B-v3-3-GG
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Intel/neural-chat-7b-v3-3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Intel](https://huggingface.co/Intel/neural-chat-7b-v3-3)
+Model repository and documentation: [huggingface.co/Intel](https://huggingface.co/Intel/neural-chat-7b-v3-3)
 
 [interactive version](https://whatmodel.sh/model/neural-chat-7b-v3-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

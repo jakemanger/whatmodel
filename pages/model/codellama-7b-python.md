@@ -24,11 +24,11 @@ coding  ▁▁▁▃●▇█▇▅▄▃▁   #407 of 469     79%      4
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [Code Llama 7B Instruct](codellama-7b-instruct.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
-test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          39.6%  ▁█▄●▇█·▄▇▅▄▄ beats 10/42  easy · avg 75%       62%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         47.6%  ▃▃▃●··▃▅··▅▃ beats 3/11   easy · avg 71%       11%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   37.3%  ▁··▁▅▂●▇▁··▁ beats 8/22   medium · avg 52%    3.1%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   35.9%  ▁·▂▃●█▁▂···▁ beats 7/22   medium · avg 51%    3.0%  blunt · at its level
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>            39.6%  ▁█▄●▇█·▄▇▅▄▄ beats 10/42  easy · avg 75%       62%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (maker)</a>         47.6%  ▃▃▃●··▃▅··▅▃ beats 3/11   easy · avg 71%       11%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (maker)</a>   37.3%  ▁··▁▅▂●▇▁··▁ beats 8/22   medium · avg 52%    3.1%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (maker)</a>   35.9%  ▁·▂▃●█▁▂···▁ beats 7/22   medium · avg 51%    3.0%  blunt · at its level
 </pre>
 
 </details>
@@ -115,6 +115,6 @@ Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/mradermacher/Code
 
 Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-python-q8_0`
 
-Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-7b-Python-hf)
+Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-7b-Python-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-7b-python) · [JSON](https://whatmodel.sh/api?format=json&all=1)

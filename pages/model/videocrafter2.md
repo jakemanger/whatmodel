@@ -58,6 +58,6 @@ weighted average                                   = 34.1
    git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir checkpoints/base_512_v2 && sh scripts/run_text2video.sh
    ```
 
-Official weights and documentation: [huggingface.co/VideoCrafter](https://huggingface.co/VideoCrafter/VideoCrafter2)
+Model repository and documentation: [huggingface.co/VideoCrafter](https://huggingface.co/VideoCrafter/VideoCrafter2)
 
 [interactive version](https://whatmodel.sh/model/videocrafter2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

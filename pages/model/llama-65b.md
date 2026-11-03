@@ -25,9 +25,9 @@ math    ▁▁▃▆█●▅█▃▁▁▁   #286 of 530     15%      2
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2306.04751v2">HumanEval</a>    23.5%  ▄······▄·▄▄● beats 5/5    medium · avg 59%     12%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>   37.7%  ▁▁▁▄●█▆▅▄▁▂▁ beats 16/86  medium · avg 59%    2.7%  at its level
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2306.04751v2">HumanEval</a>      23.5%  ▄······▄·▄▄● beats 5/5    medium · avg 59%     12%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MBPP (maker)</a>   37.7%  ▁▁▁▄●█▆▅▄▁▂▁ beats 16/86  medium · avg 59%    2.7%  at its level
 </pre>
 
 </details>
@@ -37,9 +37,9 @@ test        result  vs the others in its run  difficulty        counts  why
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2306.04751v2">GSM8K</a>        50.0%  █···▄▄····▄● beats 5/5    easy · avg 72%     11%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>   10.6%  ▃▅▂●▅▃▅▅█▃▃▂ beats 8/30   hard · avg 24%    4.0%  typical
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2306.04751v2">GSM8K</a>          50.0%  █···▄▄····▄● beats 5/5    easy · avg 72%     11%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MATH (maker)</a>   10.6%  ▃▅▂●▅▃▅▅█▃▃▂ beats 8/30   hard · avg 24%    4.0%  typical
 </pre>
 
 </details>
@@ -57,16 +57,16 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   65.1%  ▂·▄·▂█▄▄█▄▂● beats 21/21   easy · avg 74%         3.3%  blunt · at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   35.3%  ▅····▃▅·██·● beats 12/13   medium · avg 52%       2.8%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   35.0%  ▂▁▁▁▂▄▄▃▅█●▁ beats 67/68   medium · avg 53%       2.1%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                     60.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 92/107  easy · avg 76%         2.0%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (lab)</a>                       72.6%  ▁▁▂▂▄▄▃▆▅█●▂ beats 72/80   easy · avg 84%         1.8%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          85.3%  ▁····▁▂█▆▅▆● beats 93/103  easy · avg 90%         1.5%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (maker)</a>                   60.2%  ▅▁▁▁▂▂▃█●▁▃▁ beats 92/107  easy · avg 76%         2.0%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (maker)</a>                     72.6%  ▁▁▂▂▄▄▃▆▅█●▂ beats 72/80   easy · avg 84%         1.8%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">BoolQ (maker)</a>                        85.3%  ▁····▁▂█▆▅▆● beats 93/103  easy · avg 90%         1.5%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   52.4%  ▃▅▃··▅▃·█▃▃● beats 13/13   medium · avg 61%       1.5%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.750.pdf">Spider dev execution accuracy, ze…</a>   12.2%  █·█●··▄····▄ beats 4/6     medium · avg 54%       1.3%  sharp · at its level · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">PIQA</a>                                 80.8%  ▄··▄··▄█··▄● beats 6/6     easy · avg 86%         1.3%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   50.3%  ●▁····▃▁·▁·▁ beats 7/14    hard · avg 66%         1.3%  sharp · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">ARC Easy</a>                             58.8%  ▃··●···▃·▃·▃ beats 1/6     easy · avg 87%         1.2%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.wmt-1.44.pdf">DiBiMT lexical-ambiguity translat…</a>   57.9%  ██···██···█● beats 5/5     easy · avg 74%         1.1%  blunt · at its level
-<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     52.3%  ▁·▁██▄●▁▂▃▇▁ beats 39/59   medium · avg 63%       0.8%  blunt · at its level
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (maker)</a>                   52.3%  ▁·▁██▄●▁▂▃▇▁ beats 39/59   medium · avg 63%       0.8%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.706.pdf">StoryAnalogy multiple-choice stor…</a>   28.6%  ●·······█··█ beats 0/2     hard · avg 42%         0.2%  blunt · noisy · small run
 <a href="https://aclanthology.org/2023.emnlp-main.183.pdf">TruthfulQA MC2</a>                       42.5%  ▃···█·●····▃ beats 4/5     medium · avg 56%       0.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 35.8%  ▅▃▅··▃···▃▃● beats 8/10    hard · avg 37%         0.1%  blunt · noisy

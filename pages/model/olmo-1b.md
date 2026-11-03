@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-02 · 1.18B params · apache-2.0
 
-**score 20.8** ±1.7 · #699 of 732 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 20.8** ±1.7 · #699 of 732 · from 8 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,15 +21,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <details><summary>other tests (8)</summary>
 
 <pre>
-test                 result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>   34.5%  ▃●······▃▅▃█ beats 1/8    easy · avg 86%          17%  sharp
-<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>       62.5%  ▂·····●▂·▂·█ beats 1/8    very easy · avg 91%     16%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>      58.9%  ▂····●·▂·▂▂█ beats 1/8    easy · avg 86%          16%  typical
-<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>            88.1%  ▂·●···▂·▂·█▂ beats 1/8    very easy · avg 98%     13%  blunt
-<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>      46.4%  ▄·····▄●▄██▄ beats 2/8    easy · avg 81%          12%  typical
-<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>        58.1%  ▃···●·▃··▃▅█ beats 1/8    easy · avg 85%          10%  blunt · at its level
-<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>           60.7%  ●····▃··█▃·▃ beats 0/8    easy · avg 88%         8.7%  at its level
-<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>            73.7%  ▄····●·▄▄▄██ beats 1/8    easy · avg 86%         6.1%  blunt · at its level
+test                   result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (maker)</a>   34.5%  ▃●······▃▅▃█ beats 1/8    easy · avg 86%          17%  sharp
+<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (maker)</a>       62.5%  ▂·····●▂·▂·█ beats 1/8    very easy · avg 91%     16%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (maker)</a>      58.9%  ▂····●·▂·▂▂█ beats 1/8    easy · avg 86%          16%  typical
+<a href="https://arxiv.org/html/2402.00838v4">SciQ (maker)</a>            88.1%  ▂·●···▂·▂·█▂ beats 1/8    very easy · avg 98%     13%  blunt
+<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (maker)</a>      46.4%  ▄·····▄●▄██▄ beats 2/8    easy · avg 81%          12%  typical
+<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (maker)</a>        58.1%  ▃···●·▃··▃▅█ beats 1/8    easy · avg 85%          10%  blunt · at its level
+<a href="https://arxiv.org/html/2402.00838v4">BoolQ (maker)</a>           60.7%  ●····▃··█▃·▃ beats 0/8    easy · avg 88%         8.7%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">PIQA (maker)</a>            73.7%  ▄····●·▄▄▄██ beats 1/8    easy · avg 86%         6.1%  blunt · at its level
 </pre>
 
 </details>
@@ -113,6 +113,6 @@ Other versions: Q8_0 (~1.3 GB) `ollama run hf.co/mradermacher/OLMo-1B-hf-GGUF:Q8
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-1B-hf')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-1B-hf)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-1B-hf)
 
 [interactive version](https://whatmodel.sh/model/olmo-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

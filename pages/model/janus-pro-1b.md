@@ -25,9 +25,9 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                        73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 21/39  easy · avg 83%          35%  at its level · small run
+<a href="https://arxiv.org/html/2501.17811v1">GenEval (maker)</a>                      73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 21/39  easy · avg 83%          35%  at its level · small run
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   26.0%  ●·▆▂▆█▄▆▂▄·▄ beats 1/22   medium · avg 60%        30%  at its level
-<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      82.6%  ▄·●·▂▆█▄▂▄▂▂ beats 2/17   very easy · avg 89%     29%  small run
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (maker)</a>                    82.6%  ▄·●·▂▆█▄▂▄▂▂ beats 2/17   very easy · avg 89%     29%  small run
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (lab)</a>                               2   63% ▇▇▇▇▇▇▇▇
+<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (submitted / maker-reported)</a>        2   63% ▇▇▇▇▇▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   30% ▇▇▇▇
 prior: pull toward the middle                        6% ▇
 weighted average                                   = 36.2
@@ -62,6 +62,6 @@ api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepse
    git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-1B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-Pro-1B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-Pro-1B)
 
 [interactive version](https://whatmodel.sh/model/janus-pro-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

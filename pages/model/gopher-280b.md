@@ -6,7 +6,7 @@
 
 Google DeepMind · released 2021-12 · 280B params · proprietary
 
-**score 70.1** ±1.9 · comparison only: no current run option verified · from 11 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 70.1** ±1.9 · comparison only: no current run option verified · from 11 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmodel.sh/?set=lambada-openai%40paper-2112.11446v2&score=set) comparison set only.
 
@@ -22,15 +22,15 @@ Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmode
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2112.11446v2">MMLU (lab)</a>                           60.0%  ▁▁▁▁▁▂▂▅●█▆▄ beats 87/214   very hard · avg 30%      53%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2112.11446v2">MMLU (maker)</a>                         60.0%  ▁▁▁▁▁▂▂▅●█▆▄ beats 87/214   very hard · avg 30%      53%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2112.11446v2">LAMBADA (OpenAI version), last-wo…</a>   74.5%  █··█·█··█·█● beats 5/5      medium · avg 55%         10%  small run · several runs
-<a href="https://arxiv.org/html/2203.15556v1">WinoGrande (lab)</a>                     70.1%  ▁▁▁▁▂▁▁▅▇●▃▁ beats 92/131   hard · avg 58%          5.2%  at its level · small run
-<a href="https://arxiv.org/html/2203.15556v1">BoolQ (lab)</a>                          79.3%  ▁····▁▂█▆▅●▄ beats 73/103   hard · avg 64%          5.2%  at its level · small run
-<a href="https://arxiv.org/html/2203.15556v1">TriviaQA (lab)</a>                       52.8%  ▁▁▂▂▄▄▃▆●█▅▂ beats 47/80    hard · avg 25%          5.1%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">WinoGrande (maker)</a>                   70.1%  ▁▁▁▁▂▁▁▅▇●▃▁ beats 92/131   hard · avg 58%          5.2%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">BoolQ (maker)</a>                        79.3%  ▁····▁▂█▆▅●▄ beats 73/103   hard · avg 64%          5.2%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">TriviaQA (maker)</a>                     52.8%  ▁▁▂▂▄▄▃▆●█▅▂ beats 47/80    hard · avg 25%          5.1%  at its level · small run
 <a href="https://arxiv.org/html/2203.15556v1">Natural Questions (closed book) (…</a>   10.1%  ▂▁▁▁▂▄▄●▅█▅▁ beats 26/68    very hard · avg 3.3%    5.1%  small run
-<a href="https://arxiv.org/html/2203.15556v1">HellaSwag (lab)</a>                      79.2%  ▁▁▁▂▂▂▄▆█●▄▂ beats 106/135  medium · avg 55%        4.9%  at its level · small run
-<a href="https://arxiv.org/html/2203.15556v1">Social IQA (lab)</a>                     50.6%  ▁·▁██▄●▁▂▃▇▁ beats 36/59    very hard · avg 39%     4.8%  small run
-<a href="https://arxiv.org/html/2203.15556v1">PIQA (lab)</a>                           81.8%  ▁▁▁▂▂▃▅█●▃▁▁ beats 106/123  hard · avg 65%          4.7%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">HellaSwag (maker)</a>                    79.2%  ▁▁▁▂▂▂▄▆█●▄▂ beats 106/135  medium · avg 55%        4.9%  at its level · small run
+<a href="https://arxiv.org/html/2203.15556v1">Social IQA (maker)</a>                   50.6%  ▁·▁██▄●▁▂▃▇▁ beats 36/59    very hard · avg 39%     4.8%  small run
+<a href="https://arxiv.org/html/2203.15556v1">PIQA (maker)</a>                         81.8%  ▁▁▁▂▂▃▅█●▃▁▁ beats 106/123  hard · avg 65%          4.7%  at its level · small run
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-2203.15556v1"></a><a href="https://arxiv.org/html/2203.15556v1">Training Compute-Optimal Large Language…</a>        9   59% ▇▇▇▇▇▇▇
-<a name="paper-2112.11446v2"></a><a href="https://arxiv.org/html/2112.11446v2">Scaling Language Models: Methods (lab)</a>          2   40% ▇▇▇▇▇
+<a name="paper-2112.11446v2"></a><a href="https://arxiv.org/html/2112.11446v2">Scaling Language Models: Methods (submi…</a>        2   40% ▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 70.1
 </pre>

@@ -132,6 +132,6 @@ Other versions: 8bit (~24.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Eur
    vllm serve utter-project/EuroLLM-22B-Instruct-2512
    ```
 
-Official weights and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512)
+Model repository and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512)
 
 [interactive version](https://whatmodel.sh/model/eurollm-22b-instruct-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

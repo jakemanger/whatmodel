@@ -132,6 +132,6 @@ Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/bartowski/FuseChat-Llama-3.2-3B
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FuseAI/FuseChat-Llama-3.2-3B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Llama-3.2-3B-Instruct)
+Model repository and documentation: [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Llama-3.2-3B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/fusechat-llama-3-2-3b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

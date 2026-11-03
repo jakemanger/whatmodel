@@ -22,7 +22,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">TED-LIUM long-form WER (lab)</a>          2.5%  █····█·███●█ beats 5/6    avg 4.5%       27%  sharp · small run
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">TED-LIUM long-form WER (maker)</a>        2.5%  █····█·███●█ beats 5/6    avg 4.5%       27%  sharp · small run
 <a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">FLEURS 25 European languages, mea…</a>   10.6%  █····●·····█ beats 1/2    avg 18%        24%  small run
 <a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Granite 5.0 report · Open ASR pub…</a>    6.6%  ●···█······█ beats 0/2    avg 10%        23%  small run
 <a href="https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md">Open ASR seven English sets (Ferm…</a>    5.7%  █······●···█ beats 1/2    avg 8.4%       22%  small run
@@ -54,6 +54,6 @@ weighted average                                   = 56.5
    pip install "moondream>=2.4.0" && python -c "import moondream as md; speech_cm = md.photon('moondream/parakeet-redux', device='cpu'); speech = speech_cm.__enter__(); print(speech.transcribe(audio='speech.wav')['text']); speech_cm.__exit__(None, None, None)"
    ```
 
-Official weights and documentation: [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-redux)
+Model repository and documentation: [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-redux)
 
 [interactive version](https://whatmodel.sh/model/parakeet-redux) · [JSON](https://whatmodel.sh/api?format=json&all=1)

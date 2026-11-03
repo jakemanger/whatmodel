@@ -53,6 +53,6 @@ weighted average                          = 48.4
    uv run --with diffusers --with transformers --with accelerate --with torch python -c "from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('CompVis/ldm-text2im-large-256').to('cuda'); p(['a cat holding a sign'], num_inference_steps=50, eta=0.3, guidance_scale=6).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/CompVis](https://huggingface.co/CompVis/ldm-text2im-large-256)
+Model repository and documentation: [huggingface.co/CompVis](https://huggingface.co/CompVis/ldm-text2im-large-256)
 
 [interactive version](https://whatmodel.sh/model/ldm-text2im-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

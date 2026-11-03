@@ -55,6 +55,6 @@ weighted average                                   = 41.2
 
 Other versions: fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/playground-v2.fp16.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/playground-v2.fp16.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v`
 
-Official weights and documentation: [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic)
+Model repository and documentation: [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic)
 
 [interactive version](https://whatmodel.sh/model/playground-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

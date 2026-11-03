@@ -24,8 +24,8 @@ math  ▁▁▃●█▆▄█▄▂▁▁   #340 of 431*    4.6%      1
 Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (lab)</a>   56.6%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 33/80  medium · avg 63%    4.6%  at its level · noisy
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (maker)</a>   56.6%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 33/80  medium · avg 63%    4.6%  at its level · noisy
 </pre>
 
 </details>
@@ -140,6 +140,6 @@ Other versions: Q8_0 (~9.2 GB) `ollama run mathstral:7b-v0.1-q8_0`
 
 Other versions: 8bit (~7.7 GB, Mac only) `mlx_lm.chat --model mlx-community/mathstral-7B-v0.1-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mathstral-7B-v0.1)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mathstral-7B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mathstral-7b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

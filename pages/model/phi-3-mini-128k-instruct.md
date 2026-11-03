@@ -87,6 +87,6 @@ weighted average                                   = 41.2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Phi-3-mini-128k-instruct', revision='bb5bf1e4001277a606e11debca0ef80323e5f824', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-mini-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 62.5B params · proprietary
 
-**score 43.0** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 43.0** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,9 +23,9 @@ math    ▁▁▃▆█●▅█▃▁▁▁   #299 of 530*     23%      2
 <details><summary>coding · #2 of 4 · 14% of its score</summary>
 
 <pre>
-test             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   23.7%  ▁▁▁▁▂●▆▆█▅▂▁ beats 34/205  medium · avg 46%     10%  sharp · at its level
-<a href="https://arxiv.org/html/2204.02311v5">MBPP (lab)</a>        31.2%  ▁▁▁●▅█▆▅▄▁▂▁ beats 8/86    medium · avg 50%    4.5%  at its level · small run
+test               result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2204.02311v5">HumanEval (maker)</a>   23.7%  ▁▁▁▁▂●▆▆█▅▂▁ beats 34/205  medium · avg 46%     10%  sharp · at its level
+<a href="https://arxiv.org/html/2204.02311v5">MBPP (maker)</a>        31.2%  ▁▁▁●▅█▆▅▄▁▂▁ beats 8/86    medium · avg 50%    4.5%  at its level · small run
 </pre>
 
 </details>
@@ -35,9 +35,9 @@ test             result  vs the others in its run   difficulty        counts  wh
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 48%     13%  sharp · at its level
-<a href="https://arxiv.org/html/2204.02311v5">GSM8K (lab)</a>   48.7%  ▂▂▂▂▃▄▅●██▆▄ beats 84/206  easy · avg 69%       10%  sharp · at its level · small run
+test           result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    32.0%  ▆·▂·▄▂▂▂▂●▄▆ beats 11/18   medium · avg 48%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2204.02311v5">GSM8K (maker)</a>   48.7%  ▂▂▂▂▃▄▅●██▆▄ beats 84/206  easy · avg 69%       10%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -46,16 +46,16 @@ test         result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           61.2%  ▁···▁··▃▁▅●█ beats 10/18    easy · avg 74%       22%  at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.7%  ▂▂▂▂·▅·●▂█▃▃ beats 8/18     medium · avg 60%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         61.2%  ▁···▁··▃▁▅●█ beats 10/18    easy · avg 74%       22%  at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               41.7%  ▂▂▂▂·▅·●▂█▃▃ beats 8/18     medium · avg 60%     13%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   45.7%  ▂··▂·▂▄▄·●██ beats 10/18    medium · avg 61%    5.7%  at its level
-<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (lab)</a>                       71.8%  ▁▁▂▂▄▄▃▆▅█●▂ beats 71/80    easy · avg 81%      4.4%  at its level
+<a href="https://arxiv.org/html/2204.02311v5">TriviaQA (maker)</a>                     71.8%  ▁▁▂▂▄▄▃▆▅█●▂ beats 71/80    easy · avg 81%      4.4%  at its level
 <a href="https://arxiv.org/html/2204.02311v5">Natural Questions (closed book) (…</a>   21.8%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 45/68    hard · avg 32%      4.4%  typical
-<a href="https://arxiv.org/html/2204.02311v5">WinoGrande (lab)</a>                     77.0%  ▁▁▁▁▂▁▁▅▇█●▁ beats 118/131  easy · avg 85%      4.3%  at its level
-<a href="https://arxiv.org/html/2204.02311v5">BoolQ (lab)</a>                          83.9%  ▁····▁▂█▆▅●▄ beats 87/103   easy · avg 89%      3.2%  at its level
-<a href="https://arxiv.org/html/2204.02311v5">HellaSwag (lab)</a>                      80.6%  ▁▁▁▂▂▂▄▆█●▄▂ beats 112/135  easy · avg 88%      2.9%  typical
+<a href="https://arxiv.org/html/2204.02311v5">WinoGrande (maker)</a>                   77.0%  ▁▁▁▁▂▁▁▅▇█●▁ beats 118/131  easy · avg 85%      4.3%  at its level
+<a href="https://arxiv.org/html/2204.02311v5">BoolQ (maker)</a>                        83.9%  ▁····▁▂█▆▅●▄ beats 87/103   easy · avg 89%      3.2%  at its level
+<a href="https://arxiv.org/html/2204.02311v5">HellaSwag (maker)</a>                    80.6%  ▁▁▁▂▂▂▄▆█●▄▂ beats 112/135  easy · avg 88%      2.9%  typical
 <a href="https://arxiv.org/html/2204.02311v5">LAMBADA (OpenAI version), last-wo…</a>   76.3%  ▁·····▁▁▃▃█● beats 81/86    easy · avg 85%      1.3%  blunt
-<a href="https://arxiv.org/html/2204.02311v5">PIQA (lab)</a>                           81.4%  ▁▁▁▂▂▃▅█●▃▁▁ beats 105/123  easy · avg 86%      1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2204.02311v5">PIQA (maker)</a>                         81.4%  ▁▁▁▂▂▃▅█●▃▁▁ beats 105/123  easy · avg 86%      1.1%  blunt · at its level
 </pre>
 
 </details>

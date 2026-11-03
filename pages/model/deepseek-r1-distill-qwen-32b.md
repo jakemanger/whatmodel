@@ -44,8 +44,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      72.6%  ▃·▃·▃▃···●·▃ beats 6/7     medium · avg 56%         13%  sharp · at its level · several runs
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       94.3%  ▄·▄▄·▄▄●···▄ beats 5/7     very easy · avg 86%     7.9%  several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>                    72.6%  ▃·▃·▃▃···●·▃ beats 6/7     medium · avg 56%         13%  sharp · at its level · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>                     94.3%  ▄·▄▄·▄▄●···▄ beats 5/7     very easy · avg 86%     7.9%  several runs
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025</a>                            50.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 36/133  medium · avg 37%        7.1%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 83/197  very hard · avg 7.2%    4.1%  sharp · noisy
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>          38.9%  ▅···▃▃···●▃█ beats 4/8     hard · avg 24%          1.7%  at its level
@@ -79,7 +79,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   27% ▇▇▇
 <a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model card</a>        4   17% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   16% ▇▇
-<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (lab)</a>        4   15% ▇▇
+<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (sub…</a>        4   15% ▇▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     2    7% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    7% ▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    4% ▇
@@ -191,7 +191,7 @@ Other versions: Q8_0 (~39.86 GB) `ollama run deepseek-r1:32b-qwen-distill-q8_0`
 
 Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Qwen-32B-MLX-8Bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
 
 ## Published speed measurements
 

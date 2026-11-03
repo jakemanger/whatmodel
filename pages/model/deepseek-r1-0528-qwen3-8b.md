@@ -56,7 +56,7 @@ test                             result  vs the others in its run   difficulty  
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   54.3%  ▄··▄▄·●····█ beats 3/5     hard · avg 29%          9.1%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          43.9%  ▃▃▄▃▃●▇▇█▃▂▅ beats 73/197  very hard · avg 7.2%    5.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                          96.8%  ▄·▄·····●··█ beats 3/5     very easy · avg 92%     3.7%  maxed out
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (lab)</a>          61.5%  ▁▁▁▃▁●▅▃██▁▄ beats 6/31    medium · avg 61%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (maker)</a>        61.5%  ▁▁▁▃▁●▅▃██▁▄ beats 6/31    medium · avg 61%           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -193,7 +193,7 @@ Other versions: Q8_0 (~10.33 GB) `ollama run deepseek-r1:8b-0528-qwen3-q8_0`
 
 Other versions: 8bit (~8.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B)
 
 ## Published speed measurements
 

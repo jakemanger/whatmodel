@@ -107,6 +107,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/LWM-Text-Chat-1M-G
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='LargeWorldModel/LWM-Text-Chat-1M', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/LargeWorldModel](https://huggingface.co/LargeWorldModel/LWM-Text-Chat-1M)
+Model repository and documentation: [huggingface.co/LargeWorldModel](https://huggingface.co/LargeWorldModel/LWM-Text-Chat-1M)
 
 [interactive version](https://whatmodel.sh/model/lwm-text-chat-1m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

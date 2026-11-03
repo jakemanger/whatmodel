@@ -43,19 +43,19 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (12)</summary>
 
 <pre>
-test                             result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▃▃ beats 48/106   hard · avg 38%       13%  sharp · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>              75.4%  ▁▁▁▁▂▄▅▆█●▃▁ beats 129/155  medium · avg 68%     12%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 67%    8.6%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        85.0%  ▁▁▁▁▁▂▂▅██●▄ beats 186/214  easy · avg 78%      8.3%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 48%    7.4%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 49%      5.0%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 83%      4.9%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 87%      3.6%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.5%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 51%    2.2%  blunt · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                        86.0%  ▁▁▁▂▂▃▅█▅▃●▁ beats 121/123  easy · avg 85%      1.4%  blunt · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>              65.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 64/79    medium · avg 59%    0.4%  blunt · at its level · small run
+test                               result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (maker)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▃▃ beats 48/106   hard · avg 38%       13%  sharp · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (maker)</a>              75.4%  ▁▁▁▁▂▄▅▆█●▃▁ beats 129/155  medium · avg 68%     12%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>               69.5%  ▄▁▁▂▁▄█▇●▂▃▂ beats 117/140  medium · avg 67%    8.6%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                        85.0%  ▁▁▁▁▁▂▂▅██●▄ beats 186/214  easy · avg 78%      8.3%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 48%    7.4%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                  48.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 66/107   hard · avg 49%      5.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                  86.3%  ▁▁▁▁▂▁▁▅▇█▃● beats 131/131  easy · avg 83%      4.9%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                   90.2%  ▁▁▁▂▂▂▄▆█▇▄● beats 135/135  easy · avg 87%      3.6%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                       88.9%  ▁····▁▂█▆▅▆● beats 102/103  easy · avg 88%      3.5%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (maker)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 51%    2.2%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (maker)</a>                        86.0%  ▁▁▁▂▂▃▅█▅▃●▁ beats 121/123  easy · avg 85%      1.4%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (maker)</a>              65.6%  █▇▇▄▂▄▁▆●▄▁▁ beats 64/79    medium · avg 59%    0.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -130,6 +130,6 @@ Other versions: Q8_0 (~431.2 GB) `lms get https://huggingface.co/bartowski/Herme
    ollama run hermes3:405b
    ```
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B)
 
 [interactive version](https://whatmodel.sh/model/hermes-3-llama-3-1-405b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

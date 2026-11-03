@@ -52,7 +52,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1276.1  ▁▁▂▂▂▂▃▄▅▅█● beats 127/152  avg 1061          6.3%  blunt
-<a href="https://openai.com/index/gpt-5-5-instant">CharXiv (reasoning questions) (la…</a>   81.6%  ▄··▂█··▂···● beats 8/9      hard · avg 32%    5.3%  at its level
+<a href="https://openai.com/index/gpt-5-5-instant">CharXiv (reasoning questions) (ma…</a>   81.6%  ▄··▂█··▂···● beats 8/9      hard · avg 32%    5.3%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1460.3  ▁▁▃▃▄▃▇●▅▇▄▅ beats 17/37    avg 1331          3.2%  blunt
 </pre>
 

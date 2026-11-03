@@ -69,6 +69,6 @@ api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-ima
    uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import HunyuanImagePipeline; p=HunyuanImagePipeline.from_pretrained('hunyuanvideo-community/HunyuanImage-2.1-Diffusers', torch_dtype=torch.bfloat16).to('cuda:0'); p('a cute cartoon penguin plush toy painting the Mona Lisa in a studio', num_inference_steps=50, height=2048, width=2048, generator=torch.Generator(device='cuda:0').manual_seed(649151)).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-2.1)
+Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-2.1)
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

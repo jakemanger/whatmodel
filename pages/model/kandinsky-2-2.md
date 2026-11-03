@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-**score 36.7** ±4.6 · #115 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 36.7** ±4.6 · #115 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -36,10 +36,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="kandinsky3-original-human-comparison"></a><a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 (lab)</a>                  2   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             9% ▇
-weighted average                        = 36.7
+source                                    results  share of the score
+<a name="kandinsky3-original-human-comparison"></a><a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 (submitted / maker-report…</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 36.7
 </pre>
 
 <sub>Licences: Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt))</sub>
@@ -54,6 +54,6 @@ weighted average                        = 36.7
    uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-2-decoder', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
    ```
 
-Official weights and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder)
+Model repository and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-2-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-05 · 0.125B params · proprietary
 
-**score 22.3** ±2.8 · comparison only: no current run option verified · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 22.3** ±2.8 · comparison only: no current run option verified · from 13 benchmark results across 1 source · † no independently run results verified
 
 Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge%40paper-2005.14165v4&score=set) comparison set only.
 
@@ -22,19 +22,19 @@ Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge%40paper
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2005.14165v4">HellaSwag (lab)</a>                      33.7%  ●··█·██·████ beats 0/7    medium · avg 57%         16%  sharp
-<a href="https://arxiv.org/html/2005.14165v4">COPA (lab)</a>                           66.0%  ●··▄█·▄▄···▄ beats 0/7    medium · avg 77%         10%  at its level
+<a href="https://arxiv.org/html/2005.14165v4">HellaSwag (maker)</a>                    33.7%  ●··█·██·████ beats 0/7    medium · avg 57%         16%  sharp
+<a href="https://arxiv.org/html/2005.14165v4">COPA (maker)</a>                         66.0%  ●··▄█·▄▄···▄ beats 0/7    medium · avg 77%         10%  at its level
 <a href="https://arxiv.org/html/2005.14165v4">LAMBADA (OpenAI version), last-wo…</a>   42.7%  ●··█·█·█████ beats 0/7    medium · avg 64%         10%  at its level
-<a href="https://arxiv.org/html/2005.14165v4">TriviaQA (lab)</a>                        4.2%  ●·█·██·███·█ beats 0/7    hard · avg 22%           10%  sharp · too hard for it
-<a href="https://arxiv.org/html/2005.14165v4">Story Cloze Test (lab)</a>               63.3%  ●··▄·▄▄·█▄·▄ beats 0/7    medium · avg 74%        9.4%  at its level
-<a href="https://arxiv.org/html/2005.14165v4">ARC Easy (lab)</a>                       43.6%  ●█··██·███·█ beats 0/7    medium · avg 55%        7.1%  typical
-<a href="https://arxiv.org/html/2005.14165v4">ARC Challenge (lab)</a>                  26.6%  ●···██·█████ beats 0/7    very hard · avg 35%     7.0%  sharp · too hard for it
-<a href="https://arxiv.org/html/2005.14165v4">PIQA (lab)</a>                           64.6%  ●···█·██████ beats 0/7    medium · avg 74%        6.7%  at its level
-<a href="https://arxiv.org/html/2005.14165v4">WinoGrande (lab)</a>                     52.0%  ●·····█·▄▄·█ beats 0/7    hard · avg 59%          6.4%  sharp · too hard for it
-<a href="https://arxiv.org/html/2005.14165v4">OpenBookQA (lab)</a>                     35.6%  ●····▄▄▄▄·▄█ beats 0/7    hard · avg 48%          5.4%  typical
+<a href="https://arxiv.org/html/2005.14165v4">TriviaQA (maker)</a>                      4.2%  ●·█·██·███·█ beats 0/7    hard · avg 22%           10%  sharp · too hard for it
+<a href="https://arxiv.org/html/2005.14165v4">Story Cloze Test (maker)</a>             63.3%  ●··▄·▄▄·█▄·▄ beats 0/7    medium · avg 74%        9.4%  at its level
+<a href="https://arxiv.org/html/2005.14165v4">ARC Easy (maker)</a>                     43.6%  ●█··██·███·█ beats 0/7    medium · avg 55%        7.1%  typical
+<a href="https://arxiv.org/html/2005.14165v4">ARC Challenge (maker)</a>                26.6%  ●···██·█████ beats 0/7    very hard · avg 35%     7.0%  sharp · too hard for it
+<a href="https://arxiv.org/html/2005.14165v4">PIQA (maker)</a>                         64.6%  ●···█·██████ beats 0/7    medium · avg 74%        6.7%  at its level
+<a href="https://arxiv.org/html/2005.14165v4">WinoGrande (maker)</a>                   52.0%  ●·····█·▄▄·█ beats 0/7    hard · avg 59%          6.4%  sharp · too hard for it
+<a href="https://arxiv.org/html/2005.14165v4">OpenBookQA (maker)</a>                   35.6%  ●····▄▄▄▄·▄█ beats 0/7    hard · avg 48%          5.4%  typical
 <a href="https://arxiv.org/html/2005.14165v4">Natural Questions (closed book) (…</a>    0.6%  ●··▄·▄·▄█▄·▄ beats 0/7    very hard · avg 4.0%    4.8%  sharp · too hard for it
-<a href="https://arxiv.org/html/2005.14165v4">DROP (lab)</a>                            9.4%  ●···▄▄▄▄·▄·█ beats 0/7    hard · avg 16%          3.2%  typical
-<a href="https://arxiv.org/html/2005.14165v4">BoolQ (lab)</a>                          49.7%  ●········▃██ beats 0/7    hard · avg 61%          1.7%  noisy
+<a href="https://arxiv.org/html/2005.14165v4">DROP (maker)</a>                          9.4%  ●···▄▄▄▄·▄·█ beats 0/7    hard · avg 16%          3.2%  typical
+<a href="https://arxiv.org/html/2005.14165v4">BoolQ (maker)</a>                        49.7%  ●········▃██ beats 0/7    hard · avg 61%          1.7%  noisy
 </pre>
 
 </details>

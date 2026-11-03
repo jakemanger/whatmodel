@@ -111,6 +111,6 @@ Other versions: Q8_0 (~35.9 GB) `ollama run hf.co/mradermacher/code-millenials-3
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='budecosystem/code-millenials-34b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/budecosystem](https://huggingface.co/budecosystem/code-millenials-34b)
+Model repository and documentation: [huggingface.co/budecosystem](https://huggingface.co/budecosystem/code-millenials-34b)
 
 [interactive version](https://whatmodel.sh/model/code-millenials-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

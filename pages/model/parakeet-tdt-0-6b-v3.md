@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">FLEURS 25 European languages, mea…</a>   11.6%  ●····█·····█ beats 0/2    avg 18%           6.3%  small run · several runs
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v3.json">LibriSpeech test-clean WER</a>            1.9%  ▁···▁▁▂·▄▄●█ beats 27/56  avg 2.3%          5.6%  blunt · several runs
 <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition suite …</a>   11.2%  ▄····█●▄···▄ beats 3/5    avg 19%           4.3%  typical
-<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">SPGISpeech test WER (lab)</a>             4.0%  ▄●··▄██··▄██ beats 1/11   avg 5.4%          3.9%  sharp
+<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">SPGISpeech test WER (maker)</a>           4.0%  ▄●··▄██··▄██ beats 1/11   avg 5.4%          3.9%  sharp
 <a href="https://arxiv.org/html/2509.14128v2#A2.T13">CoVoST 2 source speech, 13 langua…</a>   12.0%  ●·····█····█ beats 0/2    avg 17%           3.9%  small run · several runs
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.3%  ▁▁▁▃··▁▁▂██● beats 74/86  avg 8.2%          3.8%  blunt
 <a href="https://arxiv.org/html/2509.14128v2#A2.T12">Multilingual LibriSpeech 6 langua…</a>    7.8%  ●·▄········▄ beats 1/3    avg 11%           3.6%  several runs
@@ -59,10 +59,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">Earnings-22 WER (short-form, Open…</a>   11.4%  █······█●█·█ beats 2/4    avg 21%           3.3%  typical
 <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">AMI WER (Open ASR / ESB test spli…</a>   11.3%  ▄▄·······●·▄ beats 2/4    avg 24%           3.1%  typical
 <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    8.3%  █▃▃▅●···▃··▃ beats 7/9    avg 15%           3.0%  typical
-<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">GigaSpeech test WER (lab)</a>             9.6%  ▁····▁··▁▄●▂ beats 14/17  avg 17%           2.9%  typical
+<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">GigaSpeech test WER (maker)</a>           9.6%  ▁····▁··▁▄●▂ beats 14/17  avg 17%           2.9%  typical
 <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/nvidia__parakeet-tdt-0.6b-v3.json">Dutch ASR Leaderboard · average W…</a>   10.1%  ▄··▄●···█··▄ beats 3/6    avg 16%           2.8%  typical
 <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER</a>                2.7%  █····█·██●██ beats 4/6    avg 4.5%          2.7%  sharp · small run
-<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">LibriSpeech test-other WER (lab)</a>      3.6%  ▁···▁▁▁▆▆█●▁ beats 49/56  avg 5.4%          2.3%  typical
+<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">LibriSpeech test-other WER (maker)</a>    3.6%  ▁···▁▁▁▆▆█●▁ beats 49/56  avg 5.4%          2.3%  typical
 <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Granite 5.0 report · Open ASR pub…</a>    6.3%  █···●······█ beats 1/2    avg 10%           2.3%  small run
 <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. Shmyr…</a>   14.8%  █·····█····● beats 2/2    avg 25%           2.3%  small run
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus WER…</a>    9.3%  ●··········▄ beats 0/2    avg 16%           2.2%  small run
@@ -71,13 +71,13 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v3.json">FLEURS English test WER</a>               4.8%  ▁··▁▁▁▁▁▁▃●▁ beats 28/56  avg 5.8%          2.0%  blunt
 <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>    7.9%  ▂▂·····▂▂·●▂ beats 7/8    avg 13%           1.8%  typical
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus WER</a>       5.6%  █··●·······█ beats 1/2    avg 9.8%          1.7%  small run
-<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">VoxPopuli English test WER (lab)</a>      6.1%  █▄▄··███●▄██ beats 11/16  avg 9.0%          1.6%  typical
+<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">VoxPopuli English test WER (maker)</a>    6.1%  █▄▄··███●▄██ beats 11/16  avg 9.0%          1.6%  typical
 <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   30.7%  ▂▂···▃▂●█▃▂▂ beats 6/16   avg 32%           1.5%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   15.6%  ▄·█·▄▄▄●·█▄▄ beats 6/10   avg 15%           1.1%  blunt
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    3.8%  ▂·····●▂█▂▂▄ beats 2/11   avg 4.6%          1.1%  typical
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   11.2%  ▃·▃▅··▃▃▅●█▃ beats 9/13   avg 16%           1.0%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   43.1%  ▃█····▃●▃·▅▃ beats 6/10   avg 41%           0.5%  blunt
-<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">TED-LIUM test WER (short-form) (l…</a>    2.8%  ▁·▁▇█▃·▁▁▃█● beats 26/27  avg 5.0%          0.1%  blunt
+<a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">TED-LIUM test WER (short-form) (m…</a>    2.8%  ▁·▁▇█▃·▁▁▃█● beats 26/27  avg 5.0%          0.1%  blunt
 </pre>
 
 </details>
@@ -88,7 +88,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">NVIDIA ASR model cards (lab)</a>                   11   22% ▇▇▇
+<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md">NVIDIA ASR model cards (submitted / mak…</a>       11   22% ▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            3   21% ▇▇
 <a name="card3-moondream-parakeet-cards"></a><a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Moondream parakeet-ultra and parakeet-r…</a>        3    7% ▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v3.json">transcribe.cpp model catalog · LibriSpe…</a>        2    7% ▇
@@ -138,7 +138,7 @@ api (Together AI) · $0.0015/audio min · [together.ai](https://www.together.ai/
 
 Other versions: fp32 (~3.52 GB, NVIDIA only) `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v3').transcribe(['audio.wav']))"` · onnx-fp32 (~3.52 GB) `uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v3 audio.wav`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 
 ## Published speed measurements
 

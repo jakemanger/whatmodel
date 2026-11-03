@@ -55,6 +55,6 @@ weighted average                                   = 36.1
 
 Other versions: fp16 (sd.cpp) (~5.9 GB) `sd-cli -m models/SSD-1B-A1111.safetensors -H 1024 -W 1024 -p "a lovely cat" -v` · Q8_0 (SD.CPP --TYPE) (~3.3 GB) `sd-cli -m models/SSD-1B-A1111.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v`
 
-Official weights and documentation: [huggingface.co/segmind](https://huggingface.co/segmind/SSD-1B)
+Model repository and documentation: [huggingface.co/segmind](https://huggingface.co/segmind/SSD-1B)
 
 [interactive version](https://whatmodel.sh/model/ssd-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

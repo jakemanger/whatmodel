@@ -121,6 +121,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/vicuna-7b-v1.3-GGU
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='lmsys/vicuna-7b-v1.3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-7b-v1.3)
+Model repository and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-7b-v1.3)
 
 [interactive version](https://whatmodel.sh/model/vicuna-7b-v1-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

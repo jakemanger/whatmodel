@@ -195,6 +195,6 @@ Other versions: ud-q2_k_xl (~96.83 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-
 
 Other versions: ud-q2_k_xl (~96.83 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-flash-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

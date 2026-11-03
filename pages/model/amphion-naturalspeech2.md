@@ -58,6 +58,6 @@ weighted average                                 = 13.6
    git lfs install && git clone https://huggingface.co/amphion/naturalspeech2_libritts && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts && ln -s ../../../naturalspeech2_libritts ckpts/tts/ && bash egs/tts/NaturalSpeech2/run_inference.sh --text "Hello, world."
    ```
 
-Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/naturalspeech2_libritts)
+Model repository and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/naturalspeech2_libritts)
 
 [interactive version](https://whatmodel.sh/model/amphion-naturalspeech2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

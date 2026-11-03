@@ -28,7 +28,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   74.0%  ▄··●▄·▄··▄·▄ beats 1/6    easy · avg 84%     16%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 1/4    easy · avg 70%    5.8%  at its level
-<a href="https://arxiv.org/html/2506.18871v4">OneIG-Bench (EN) (lab)</a>               47.0%  ●······▃▅█▅▃ beats 0/9                         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2506.18871v4">OneIG-Bench (EN) (maker)</a>             47.0%  ●······▃▅█▅▃ beats 0/9                         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1    6% ▇
 <a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1    6% ▇
 <a name="visual-multitextedit-ccby"></a><a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit: Benchmarking Cross-Lingu…</a>        1    5% ▇
-<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI (lab)</a>                                      1    3% ▇
+<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI (submitted / maker-reported)</a>               1    3% ▇
 <a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    2% ▇
 <a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
 prior: pull toward the middle                        1% ▇
@@ -113,6 +113,6 @@ api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/omnigen-v2)
    git clone https://github.com/VectorSpaceLab/OmniGen2.git && cd OmniGen2 && pip install torch==2.6.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu124 && pip install -r requirements.txt && bash example_t2i.sh
    ```
 
-Official weights and documentation: [huggingface.co/OmniGen2](https://huggingface.co/OmniGen2/OmniGen2)
+Model repository and documentation: [huggingface.co/OmniGen2](https://huggingface.co/OmniGen2/OmniGen2)
 
 [interactive version](https://whatmodel.sh/model/omnigen2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

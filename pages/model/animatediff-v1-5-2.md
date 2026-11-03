@@ -24,6 +24,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
    sd-cli -M vid_gen --model models/v1-5-pruned-emaonly.safetensors --motion-module models/mm_sd_v15_v2.ckpt --offload-to-cpu --diffusion-fa -p "a red apple on a wooden table" --cfg-scale 8.0 --sampling-method euler --scheduler discrete -H 384 -W 384 --video-frames 16 --fps 8 --steps 20 -s 42 -o out.avi
    ```
 
-Official weights and documentation: [huggingface.co/guoyww](https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2)
+Model repository and documentation: [huggingface.co/guoyww](https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/animatediff-v1-5-2)

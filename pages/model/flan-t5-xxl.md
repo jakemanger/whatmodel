@@ -36,9 +36,9 @@ test                                                 result  vs the others in it
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        16.1%  ▂▂▂▂▃●▅▇██▆▄ beats 44/206  medium · avg 49%     16%  sharp · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    4.9%  ▆·▂·●▂▂▂▂█▄▆ beats 5/18    medium · avg 48%    7.2%  sharp
+test          result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>          16.1%  ▂▂▂▂▃●▅▇██▆▄ beats 44/206  medium · avg 49%     16%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    4.9%  ▆·▂·●▂▂▂▂█▄▆ beats 5/18    medium · avg 48%    7.2%  sharp
 </pre>
 
 </details>
@@ -47,8 +47,8 @@ test        result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 45.3%  ▂▂▂▂·▅·▃●█▃▃ beats 9/18   medium · avg 68%        27%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           55.1%  ▁···▁··▃▁●▅█ beats 8/18   easy · avg 74%          22%  at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               45.3%  ▂▂▂▂·▅·▃●█▃▃ beats 9/18   medium · avg 68%        27%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         55.1%  ▁···▁··▃▁●▅█ beats 8/18   easy · avg 74%          22%  at its level · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 52%       4.6%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   19.0%  ▂··▂·▂●▄·███ beats 4/18   medium · avg 61%       4.0%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   medium · avg 61%       2.5%  at its level
@@ -109,6 +109,6 @@ weighted average                                   = 39.0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xxl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-xxl)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-xxl)
 
 [interactive version](https://whatmodel.sh/model/flan-t5-xxl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

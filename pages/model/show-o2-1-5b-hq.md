@@ -53,6 +53,6 @@ weighted average                                   = 40.0
    git clone https://github.com/showlab/Show-o && cd Show-o/show-o2 && bash build_env.sh && wandb login && wget https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/resolve/main/Wan2.1_VAE.pth && python3 inference_t2i.py config=configs/showo2_1.5b_demo_1024x1024.yaml batch_size=4 guidance_scale=7.5 num_inference_steps=50
    ```
 
-Official weights and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-1.5B-HQ)
+Model repository and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-1.5B-HQ)
 
 [interactive version](https://whatmodel.sh/model/show-o2-1-5b-hq) · [JSON](https://whatmodel.sh/api?format=json&all=1)

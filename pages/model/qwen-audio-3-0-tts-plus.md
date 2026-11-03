@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 69.0** ±2.0 · #3 of 119 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.0** ±2.0 · #3 of 119 · from 8 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -37,9 +37,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>            6.7%  █····█·██●██ beats 4/6    avg 27%                   20%  sharp
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (maker)</a>          6.7%  █····█·██●██ beats 4/6    avg 27%                   20%  sharp
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  4.04 / 5  █·▄·▄▄·▄···● beats 6/6    medium · avg 2.98 / 5     14%  typical
-<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>            7.4%  ▄▄▄···▄··▄·● beats 5/6    avg 23%                   14%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (maker)</a>          7.4%  ▄▄▄···▄··▄·● beats 5/6    avg 23%                   14%  typical
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      4.7%  ▄···▄··▄··█● beats 6/6    avg 20%                   13%  typical
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added langua…</a>      3.1%  █··█······●█ beats 2/3    avg 12%                   10%  typical
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     76.6%  ▄·····▄▄·▄▄● beats 6/6    medium · avg 49%         6.8%  typical
@@ -53,7 +53,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (la…</a>        8   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (su…</a>        8   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 69.0
 </pre>

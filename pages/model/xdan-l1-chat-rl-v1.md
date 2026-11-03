@@ -111,6 +111,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/TheBloke/xDAN-L1-Chat-RL-v1-GGU
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='xDAN-AI/xDAN-L1-Chat-RL-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/xDAN-AI](https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1)
+Model repository and documentation: [huggingface.co/xDAN-AI](https://huggingface.co/xDAN-AI/xDAN-L1-Chat-RL-v1)
 
 [interactive version](https://whatmodel.sh/model/xdan-l1-chat-rl-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

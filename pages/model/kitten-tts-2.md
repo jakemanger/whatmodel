@@ -22,6 +22,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
    pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; m = KittenTTS('KittenML/kitten-tts-2'); audio = m.generate('One day, a little girl named Lily found a needle in her room.', voice='Bruno'); sf.write('output.wav', audio, m.sample_rate)"
    ```
 
-Official weights and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-2)
+Model repository and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-2)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kitten-tts-2)

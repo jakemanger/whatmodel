@@ -178,7 +178,7 @@ Other versions: Q8_0 (~1.7 GB) `ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q8_0`
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-xl')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-xl)
+Model repository and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-xl)
 
 ## Published speed measurements
 

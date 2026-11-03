@@ -48,6 +48,6 @@ weighted average                                   = 48.8
    git clone https://github.com/PKU-YuanGroup/Open-Sora-Plan && cd Open-Sora-Plan && git checkout v1.3.1 && pip install -e . && hf download LanguageBind/Open-Sora-Plan-v1.3.0 --include 'any93x640x640/*' 'vae/*' --local-dir osp13 && hf download google/mt5-xxl --local-dir mt5-xxl && torchrun --nnodes=1 --nproc_per_node 1 -m opensora.sample.sample --model_path osp13/any93x640x640 --version v1_3 --num_frames 93 --height 352 --width 640 --text_encoder_name_1 mt5-xxl --text_prompt examples/sora.txt --ae WFVAEModel_D8_4x8x8 --ae_path osp13/vae --save_img_path ./samples --fps 18 --guidance_scale 7.5 --num_sampling_steps 100 --max_sequence_length 512 --sample_method EulerAncestralDiscrete --seed 1234 --num_samples_per_prompt 1 --rescale_betas_zero_snr --prediction_type v_prediction --save_memory
    ```
 
-Official weights and documentation: [huggingface.co/LanguageBind](https://huggingface.co/LanguageBind/Open-Sora-Plan-v1.3.0)
+Model repository and documentation: [huggingface.co/LanguageBind](https://huggingface.co/LanguageBind/Open-Sora-Plan-v1.3.0)
 
 [interactive version](https://whatmodel.sh/model/open-sora-plan-1-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

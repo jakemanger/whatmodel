@@ -49,6 +49,6 @@ weighted average                                   = 47.7
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/flan-ul2)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/flan-ul2)
 
 [interactive version](https://whatmodel.sh/model/flan-ul2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

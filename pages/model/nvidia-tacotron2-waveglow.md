@@ -16,7 +16,7 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                                  result  reported by  source
-FastPitch 2020 LJ Speech human MOS  3.95 / 5  lab          <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md">NVIDIA FastPitch: original li…</a>
+FastPitch 2020 LJ Speech human MOS  3.95 / 5  maker        <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md">NVIDIA FastPitch: original li…</a>
 </pre>
 
 <sub>Licences: NVIDIA FastPitch: original listening studies in committed README ([BSD-3-Clause](../../licenses/speech-nvidia-fastpitch-readme.txt))</sub>
@@ -31,6 +31,6 @@ FastPitch 2020 LJ Speech human MOS  3.95 / 5  lab          <a href="https://gith
    pip install torch numpy scipy librosa unidecode inflect && apt-get update && apt-get install -y libsndfile1 && python -c "import torch; from scipy.io.wavfile import write; tacotron2 = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_tacotron2', model_math='fp16', trust_repo=True); tacotron2 = tacotron2.to('cuda'); tacotron2.eval(); waveglow = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_waveglow', model_math='fp16', trust_repo=True); waveglow = waveglow.remove_weightnorm(waveglow); waveglow = waveglow.to('cuda'); waveglow.eval(); utils = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_tts_utils', trust_repo=True); sequences, lengths = utils.prepare_input_sequence(['Hello world, I missed you so much.']); torch.set_grad_enabled(False); mel, _, _ = tacotron2.infer(sequences, lengths); audio = waveglow.infer(mel); write('audio.wav', 22050, audio[0].data.cpu().numpy())"
    ```
 
-Official weights and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
+Model repository and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/nvidia-tacotron2-waveglow)

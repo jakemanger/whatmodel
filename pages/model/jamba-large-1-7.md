@@ -95,6 +95,6 @@ Other versions: Q8_0 (~423.6 GB) `lms get https://huggingface.co/bartowski/ai21l
    vllm serve ai21labs/AI21-Jamba-Large-1.7 --tensor-parallel-size 8 --quantization experts_int8
    ```
 
-Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7)
+Model repository and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7)
 
 [interactive version](https://whatmodel.sh/model/jamba-large-1-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

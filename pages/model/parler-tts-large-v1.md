@@ -57,6 +57,6 @@ weighted average                                   = 28.5
    pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d='cuda:0' if torch.cuda.is_available() else 'cpu'; m=ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler-tts-large-v1').to(d); t=AutoTokenizer.from_pretrained('parler-tts/parler-tts-large-v1'); g=m.generate(input_ids=t('A female speaker delivers a slightly expressive speech with a very clear recording.', return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hello, world!', return_tensors='pt').input_ids.to(d)); sf.write('out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
    ```
 
-Official weights and documentation: [huggingface.co/parler-tts](https://huggingface.co/parler-tts/parler-tts-large-v1)
+Model repository and documentation: [huggingface.co/parler-tts](https://huggingface.co/parler-tts/parler-tts-large-v1)
 
 [interactive version](https://whatmodel.sh/model/parler-tts-large-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

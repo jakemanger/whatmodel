@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   83.0%  ▃······▃·▃●▃ beats 5/6    medium · avg 51%        0.9%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   81.6%  ▄▄·█··▄·●··▄ beats 5/6    medium · avg 48%        0.8%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   89.7%  █·●█▄······▄ beats 2/6    medium · avg 64%        0.7%  maxed out
-<a href="https://openai.com/index/introducing-gpt-5-2">τ²-bench Telecom (lab)</a>               98.7%  ▃·▅▅▃▃··█▃▃● beats 13/13  hard · avg 16%          0.6%  sharp · noisy
+<a href="https://openai.com/index/introducing-gpt-5-2">τ²-bench Telecom (maker)</a>             98.7%  ▃·▅▅▃▃··█▃▃● beats 13/13  hard · avg 16%          0.6%  sharp · noisy
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     80.3%  ▂··▄···▂▄▄●▄ beats 11/13  medium · avg 45%        0.4%  typical
 </pre>
 
@@ -98,7 +98,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1242.8  ▁▁▂▂▂▂▃▄▅▅●▇ beats 99/152  avg 1061            1.7%  blunt
-<a href="https://openai.com/index/introducing-gpt-5-2">CharXiv (reasoning questions) (la…</a>   82.1%  ▄··▂█··▂···● beats 9/9     hard · avg 32%      1.2%  typical
+<a href="https://openai.com/index/introducing-gpt-5-2">CharXiv (reasoning questions) (ma…</a>   82.1%  ▄··▂█··▂···● beats 9/9     hard · avg 32%      1.2%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1423.2  ▁▁●▃▄▃▇█▅▇▄▅ beats 3/37    avg 1331            0.9%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">MATH-Vision</a>                          83.0%  █·····●▄·▄·▄ beats 2/5     medium · avg 47%    0.8%  typical
 <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question answ…</a>   81.7%  ▄·····▄●·█·█ beats 2/6     medium · avg 56%    0.3%  blunt

@@ -70,7 +70,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-30B/llama-30B_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   86.8%  ▄▄·▄·▄··█··● beats 7/7    very easy · avg 93%    0.6%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.531.pdf">This is not a Dataset (negation),…</a>   52.4%  █▁····●▁·▁·▁ beats 10/14  hard · avg 66%         0.6%  sharp · too hard for it · noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">12-dataset text classification, 4…</a>   72.2%  ▂▂··▂·█···▂● beats 8/8    easy · avg 79%         0.5%  blunt · at its level
-<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     50.4%  ▁·▁██▄●▁▂▃▇▁ beats 35/59  medium · avg 63%       0.5%  blunt · at its level
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (maker)</a>                   50.4%  ▁·▁██▄●▁▂▃▇▁ beats 35/59  medium · avg 63%       0.5%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 26.5%  ▅▃▅··●···▃▃█ beats 5/10   hard · avg 37%         0.1%  blunt · noisy
 </pre>
 

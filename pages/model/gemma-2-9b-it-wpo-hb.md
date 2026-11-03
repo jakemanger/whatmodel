@@ -109,6 +109,6 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/gemma-2-9b-it-WPO-HB-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='wzhouad/gemma-2-9b-it-WPO-HB', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/wzhouad](https://huggingface.co/wzhouad/gemma-2-9b-it-WPO-HB)
+Model repository and documentation: [huggingface.co/wzhouad](https://huggingface.co/wzhouad/gemma-2-9b-it-WPO-HB)
 
 [interactive version](https://whatmodel.sh/model/gemma-2-9b-it-wpo-hb) · [JSON](https://whatmodel.sh/api?format=json&all=1)

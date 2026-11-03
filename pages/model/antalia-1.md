@@ -32,11 +32,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                           results  share of the score
-<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card (lab)</a>        1   54% ▇▇▇▇▇▇
-<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>               1   42% ▇▇▇▇▇
-prior: pull toward the middle               3% ▇
-weighted average                          = 17.0
+source                                    results  share of the score
+<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card (submitted / …</a>        1   54% ▇▇▇▇▇▇
+<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>                        1   42% ▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 17.0
 </pre>
 
 <sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
@@ -45,6 +45,6 @@ weighted average                          = 17.0
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/cloud0day3](https://huggingface.co/cloud0day3/antalia-1)
+Model repository and documentation: [huggingface.co/cloud0day3](https://huggingface.co/cloud0day3/antalia-1)
 
 [interactive version](https://whatmodel.sh/model/antalia-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -66,6 +66,6 @@ api (DeepInfra) · $7.00/M chars · [deepinfra.com](https://deepinfra.com/sesame
    pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/csm-1b --text "Hello from Sesame." --ref_audio ./reference_voice.wav --ref_text "This is what my voice sounds like." --play
    ```
 
-Official weights and documentation: [huggingface.co/sesame](https://huggingface.co/sesame/csm-1b)
+Model repository and documentation: [huggingface.co/sesame](https://huggingface.co/sesame/csm-1b)
 
 [interactive version](https://whatmodel.sh/model/sesame-csm-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

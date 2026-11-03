@@ -27,8 +27,8 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    3.6%  ●▁·▁▂▄▆█▅▂·▂ beats 0/31     hard · avg 23%       10%  sharp
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                      57.3%  ▁▁▁▁▂▂▆●█▅▂▁ beats 111/205  easy · avg 81%      7.8%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>                           45.8%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 27/86    easy · avg 68%      4.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (maker)</a>                    57.3%  ▁▁▁▁▂▂▆●█▅▂▁ beats 111/205  easy · avg 81%      7.8%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (maker)</a>                         45.8%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 27/86    easy · avg 68%      4.0%  at its level · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   20.5%  ▃··▁▂▂●▂█▃▄▂ beats 15/47    medium · avg 51%    2.5%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   15.0%  ▁▁▁▁▁▁●▂▃█▅▄ beats 10/47    hard · avg 32%      2.2%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.9%  █▂▁▁▂●▂▃▅▅▅▇ beats 16/47    hard · avg 33%      1.8%  sharp · noisy
@@ -40,9 +40,9 @@ test                                result  vs the others in its run    difficul
 <details><summary>math · #1 of 2 · 13% of its score</summary>
 
 <pre>
-test         result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   72.0%  ▂▂▂▂▃▄▅▇●█▆▄ beats 121/206  very easy · avg 89%    8.4%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>    27.9%  ▃▅▂▆▅▃●▅█▃▃▂ beats 16/30    medium · avg 45%       4.7%  small run
+test           result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (maker)</a>   72.0%  ▂▂▂▂▃▄▅▇●█▆▄ beats 121/206  very easy · avg 89%    8.4%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (maker)</a>    27.9%  ▃▅▂▆▅▃●▅█▃▃▂ beats 16/30    medium · avg 45%       4.7%  small run
 </pre>
 
 </details>
@@ -52,10 +52,10 @@ test         result  vs the others in its run    difficulty           counts  wh
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 17.7%  ▁▁▁▂●▃▂█▆▃▅▃ beats 11/61    medium · avg 38%     34%  typical
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>                 48.1%  ▁▁▁▁▂▄●▆█▃▃▁ beats 55/155   medium · avg 71%    7.5%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>                           55.7%  ▁▁▁▁▁▂▂▅●█▆▄ beats 71/214   easy · avg 76%      6.1%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>                         60.1%  ▁···▁▁▂▁●▂▃█ beats 8/33     medium · avg 72%    3.7%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                          62.5%  ▅·●····█▃▅█▅ beats 3/14     easy · avg 74%      3.2%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (maker)</a>               48.1%  ▁▁▁▁▂▄●▆█▃▃▁ beats 55/155   medium · avg 71%    7.5%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (maker)</a>                         55.7%  ▁▁▁▁▁▂▂▅●█▆▄ beats 71/214   easy · avg 76%      6.1%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (maker)</a>                       60.1%  ▁···▁▁▂▁●▂▃█ beats 8/33     medium · avg 72%    3.7%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (maker)</a>                        62.5%  ▅·●····█▃▅█▅ beats 3/14     easy · avg 74%      3.2%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 102/276  medium · avg 72%    2.8%  at its level · noisy
 </pre>
 
@@ -159,6 +159,6 @@ Other versions: Q8_0 (~19.35 GB) `ollama run deepseek-v2:16b-lite-chat-q8_0`
    mlx_lm.server --model mlx-community/DeepSeek-V2-Lite-Chat-4bit-mlx
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-lite-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

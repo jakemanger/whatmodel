@@ -52,6 +52,6 @@ weighted average                                   = 53.6
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/MOSS-Transcribe-Diarize-gguf MOSS-Transcribe-Diarize-Q8_0.gguf --local-dir models/moss-transcribe-diarize && build/bin/transcribe-cli --diarize -m models/moss-transcribe-diarize/MOSS-Transcribe-Diarize-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize)
+Model repository and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize)
 
 [interactive version](https://whatmodel.sh/model/moss-transcribe-diarize) · [JSON](https://whatmodel.sh/api?format=json&all=1)

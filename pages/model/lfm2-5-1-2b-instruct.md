@@ -26,8 +26,8 @@ math            ▁▁▃▅●▆▄█▄▂▁▁    #319 of 431     44%     
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
-test           result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>   49.1%  ▄▄·······●██ beats 2/6    medium · avg 55%    3.1%  blunt · at its level
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (maker)</a>   49.1%  ▄▄·······●██ beats 2/6    medium · avg 55%    3.1%  blunt · at its level
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 3
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (lab)</a>   86.2%  █·█··█·██·●█ beats 5/6    very easy · avg 86%     10%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures (mak…</a>   86.2%  █·█··█·██·●█ beats 5/6    very easy · avg 86%     10%  typical
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ test                                result  vs the others in its run  difficulty
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>       64.5%  █····●▄▄···█ beats 2/6    very easy · avg 87%     28%  sharp
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>   14.0%  ▄█··▄···●··█ beats 4/6    hard · avg 30%         9.4%  sharp · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>    63.2%  ▄··█▄·●···▄▄ beats 4/6    easy · avg 77%         6.5%  at its level · noisy
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (maker)</a>       64.5%  █····●▄▄···█ beats 2/6    very easy · avg 87%     28%  sharp
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (maker)</a>   14.0%  ▄█··▄···●··█ beats 4/6    hard · avg 30%         9.4%  sharp · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (maker)</a>    63.2%  ▄··█▄·●···▄▄ beats 4/6    easy · avg 77%         6.5%  at its level · noisy
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>                   38.9%  █··········● beats 5/5     hard · avg 40%       11%  sharp · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                       44.4%  █···█·██·●██ beats 4/6     medium · avg 52%     11%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (maker)</a>                 38.9%  █··········● beats 5/5     hard · avg 40%       11%  sharp · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (maker)</a>                     44.4%  █···█·██·●██ beats 4/6     medium · avg 52%     11%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)…</a>   47.3%  ▄·█·█······● beats 6/6     medium · avg 42%    9.2%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   32.5%  ▃·▁▁●▁▂▅█▇▄▁ beats 15/100  medium · avg 67%    5.4%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   61.2%  ▁▁▁▁▁▁▁●▄█▄▃ beats 31/146  easy · avg 82%      4.3%  at its level · noisy
@@ -162,6 +162,6 @@ Other versions: 4bit (~0.7 GB, Mac only) `lms get https://huggingface.co/LiquidA
 
 Other versions: 8bit (~1.2 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2.5-1.2B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/lfm2-5-1-2b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

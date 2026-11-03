@@ -28,12 +28,12 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deep
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   23.9%  ▃··▃·▃▃●█▅▃▅ beats 4/14     very hard · avg 6.1%    9.4%  sharp
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 78/138   hard · avg 28%          7.8%  sharp · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                 77.5%  ▁····▃·▂▇█▂● beats 23/28    medium · avg 46%        5.3%  small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▁●██▂▂▁ beats 16/65    hard · avg 24%          5.0%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>                60.0%  ▁▁▁·▅▄▁█▇▁▁● beats 26/28    hard · avg 29%          4.2%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                        68.7%  ▁▁▁▁▁▃▅█▆●▄▁ beats 144/171  medium · avg 56%        1.6%  blunt · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 26.3%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (maker)</a>           67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 78/138   hard · avg 28%          7.8%  sharp · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (maker)</a>               77.5%  ▁····▃·▂▇█▂● beats 23/28    medium · avg 46%        5.3%  small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (maker)</a>       54.7%  ▁··▁▃▁●██▂▂▁ beats 16/65    hard · avg 24%          5.0%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (maker)</a>              60.0%  ▁▁▁·▅▄▁█▇▁▁● beats 26/28    hard · avg 29%          4.2%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (maker)</a>                      68.7%  ▁▁▁▁▁▃▅█▆●▄▁ beats 144/171  medium · avg 56%        1.6%  blunt · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (maker)</a>               26.3%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -47,9 +47,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1274.8  ▁▁▃●▅█▃▆▅▅▁▂ beats 18/129  avg 981                 25%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   61.8%  ▂▁▁▃▆▃▄▆●▃▄▂ beats 55/71   very hard · avg 10%     19%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   61.2%  ▁··▁·▁▁▁▆●▇█ beats 15/45   hard · avg 29%         8.0%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 78/138  hard · avg 28%         7.8%  sharp · at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▁●██▂▂▁ beats 16/65   hard · avg 24%         5.0%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 26.3%  █··········● beats 1/1                               —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (maker)</a>           67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 78/138  hard · avg 28%         7.8%  sharp · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (maker)</a>       54.7%  ▁··▁▃▁●██▂▂▁ beats 16/65   hard · avg 24%         5.0%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (maker)</a>               26.3%  █··········● beats 1/1                               —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -184,6 +184,6 @@ Other versions: ud-q2_k_xl (~144.5 GB) `lms get https://huggingface.co/unsloth/Q
 
 Other versions: 8bit (~510.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen3-coder-480b-a35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

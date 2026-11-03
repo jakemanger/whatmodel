@@ -77,6 +77,6 @@ weighted average                                   = 38.6
 
 Other versions: fp32 (~1.7 GB) `uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-small')('audio.wav', return_timestamps=True)['text'])"`
 
-Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-small)
+Model repository and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-small)
 
 [interactive version](https://whatmodel.sh/model/whisper-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

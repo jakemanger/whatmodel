@@ -32,7 +32,7 @@ Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Mu
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.9%  ▁··▁·▁▂▁●█▄▁ beats 11/29  hard · avg 19%          8.9%  sharp
 <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set)</a>               66.6%  ▄······▄▄▄●█ beats 4/6    hard · avg 26%          5.6%  at its level · several runs
-<a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf#page=2">τ²-bench Telecom (lab)</a>               98.0%  ▁·▅█▆▅▂▃▃▂●▁ beats 81/89  medium · avg 61%        3.6%  sharp · maxed out · small run
+<a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf#page=2">τ²-bench Telecom (maker)</a>             98.0%  ▁·▅█▆▅▂▃▃▂●▁ beats 81/89  medium · avg 61%        3.6%  sharp · maxed out · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-pro_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   18.0%  ▃▃▂●·▆▃▂█▅▅▂ beats 6/25   very hard · avg 4.3%    2.9%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">τ²-bench aggregate</a>                   85.4%  ▄····●▄▄···▄ beats 2/5    medium · avg 45%        2.4%  typical
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      68.1%  ▁▁▁▂██▅▅▆▂●▂ beats 72/77  hard · avg 31%          2.1%  at its level
@@ -89,7 +89,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions) (la…</a>   81.4%  ▃·▃·▃▃▃·▃●█▅ beats 6/11     medium · avg 38%    5.5%  typical
+<a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions) (ma…</a>   81.4%  ▃·▃·▃▃▃·▃●█▅ beats 6/11     medium · avg 38%    5.5%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1289.3  ▁▁▂▂▂▂▃▄▅▅█● beats 141/152  avg 1061            3.2%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1451.1  ▁▁▃▃▄▃●█▅▇▄▅ beats 12/37    avg 1331            1.6%  blunt
 <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">MATH-Vision</a>                          86.6%  █·····▄▄·●·▄ beats 4/5      medium · avg 47%    1.6%  typical

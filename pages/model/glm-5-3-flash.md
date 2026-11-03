@@ -32,11 +32,11 @@ Beats [GPT-5.6 Luna](gpt-5-6-luna.md), [Gemini 3.7 Flash](gemini-3-7-flash.md), 
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0233 IPS  ▁▁▁▃▃●█▁▂▂▁▁ beats 21/59  avg -0.379 IPS           12%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-z-ai-glm-5-3-flash-none-claude-code.json">Terminal-Bench 4.0</a>                        35.8%  █▅▅▅▅·●▃▃▅▅▅ beats 11/20  very hard · avg 0.5%    3.7%  sharp
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Terminal-Bench 2.1 (lab)</a>                  84.3%  ▁·▁·▁▁▄▃▆█▅● beats 51/63  hard · avg 25%          2.2%  sharp · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Terminal-Bench 2.1 (maker)</a>                84.3%  ▁·▁·▁▁▄▃▆█▅● beats 51/63  hard · avg 25%          2.2%  sharp · small run
 <a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>        25.7%  ●··▄█·▄····▄ beats 0/6    very hard · avg 7.3%    1.8%  at its level
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Humanity's Last Exam with tools (…</a>        55.3%  ▁·▁▂▂▁▄▄▇●▄▅ beats 45/62  hard · avg 16%          1.3%  at its level · small run
 <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/harness…</a>        26.3%  ▂·▂·●▄▂·▂▂▄▄ beats 3/14   very hard · avg 7.0%    0.9%  at its level · small run
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>             63.4%  ▂····▂▁▁▆●██ beats 11/31  hard · avg 20%          0.9%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (maker)</a>           63.4%  ▂····▂▁▁▆●██ beats 11/31  hard · avg 20%          0.9%  at its level · small run
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1606.6  ▁▁▃▂▅█▃▆●▅▁▂ beats 101/129  avg 981           8.4%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   68.8%  ▁▁▁▁·▁▂▃●▃█▇ beats 22/49    hard · avg 17%    3.6%  sharp · at its level
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>        63.4%  ▂····▂▁▁▆●██ beats 11/31    hard · avg 20%    0.9%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (maker)</a>      63.4%  ▂····▂▁▁▆●██ beats 11/31    hard · avg 20%    0.9%  at its level · small run
 </pre>
 
 </details>
@@ -110,7 +110,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                14.0%  █▁▁▁▁●▃▃▃▂▁▁ beats 68/137   very hard · avg 5.8%    3.8%  sharp · noisy
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   27.9%  ▁▁▃▂▂●▁▃▄▄▄█ beats 11/38    very hard · avg 14%     1.8%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   94.6%  ▁▁▃▁█▄●▃▆▂▂▂ beats 28/49    easy · avg 77%          1.3%  maxed out
-<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">AutomationBench v1.0.6 (lab)</a>         48.8%  ▃···▃·▃▃··●▅ beats 4/8      very hard · avg 7.4%    1.0%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">AutomationBench v1.0.6 (maker)</a>       48.8%  ▃···▃·▃▃··●▅ beats 4/8      very hard · avg 7.4%    1.0%  at its level · small run
 </pre>
 
 </details>
@@ -123,7 +123,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        6   53% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   28% ▇▇▇
-<a name="card2-zai-org-glm-5-3-flash"></a><a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">zai-org/GLM-5.3-Flash model card (lab)</a>          5    6% ▇
+<a name="card2-zai-org-glm-5-3-flash"></a><a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">zai-org/GLM-5.3-Flash model card (submi…</a>        5    6% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    5% ▇
 <a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-z-ai-glm-5-3-flash-none-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1    4% ▇
 <a name="paper-2610.04432v2-video2world"></a><a href="https://arxiv.org/html/2610.04432v2">Video2World: Benchmarking Coding Agents…</a>        1    2% ▇
@@ -182,6 +182,6 @@ Other versions: ud-q2_k_xl (~96.5 GB) `llama cli -hf unsloth/GLM-5.3-Flash-GGUF:
 
 Other versions: ud-q2_k_xl (~96.5 GB) `lms get https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5.3-Flash)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5.3-Flash)
 
 [interactive version](https://whatmodel.sh/model/glm-5-3-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

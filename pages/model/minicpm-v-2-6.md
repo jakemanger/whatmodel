@@ -108,6 +108,6 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/openbmb/MiniCPM-V
 
 Other versions: Q8_0 (~10.22 GB) `ollama run minicpm-v:8b-2.6-q8_0`
 
-Official weights and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6)
+Model repository and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM-V-2_6)
 
 [interactive version](https://whatmodel.sh/model/minicpm-v-2-6) · [JSON](https://whatmodel.sh/api?format=json&all=1)

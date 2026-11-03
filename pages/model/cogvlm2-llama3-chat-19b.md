@@ -27,9 +27,9 @@ Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails 
 test                                 result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>       963.7  ▁▁●▂▂▂▃▄▅▅█▇ beats 4/152  avg 1061           51%  blunt
 <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -8.5000  ▃▃▃·▃●·▅▃▃▃▃ beats 6/12   avg -4.498         32%  typical
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                         81.0%  ▁··▁▁▁▁▁▂●▅█ beats 15/44  easy · avg 80%    6.4%  blunt · small run
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                        75.6%  ▁·▃●▆▅▂█▅█▁▃ beats 4/37   easy · avg 82%    5.1%  blunt · small run
-<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                         84.2%  ▁▁▁▄▅▁▃·▃▃▃● beats 19/24  easy · avg 78%    2.9%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (maker)</a>                       81.0%  ▁··▁▁▁▁▁▂●▅█ beats 15/44  easy · avg 80%    6.4%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (maker)</a>                      75.6%  ▁·▃●▆▅▂█▅█▁▃ beats 4/37   easy · avg 82%    5.1%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (maker)</a>                       84.2%  ▁▁▁▄▅▁▃·▃▃▃● beats 19/24  easy · avg 78%    2.9%  blunt · small run
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   51% ▇▇▇▇▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   32% ▇▇▇▇
-<a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                                  3   14% ▇▇
+<a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (submitted / maker-reported)</a>           3   14% ▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 44.2
 </pre>
@@ -61,6 +61,6 @@ weighted average                                   = 44.2
 
 Other versions: int4 (bitsandbytes at load) (~39.01 GB, NVIDIA only) `git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py --quant 4`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B)
 
 [interactive version](https://whatmodel.sh/model/cogvlm2-llama3-chat-19b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -66,6 +66,6 @@ weighted average                                   = 43.2
    git clone https://github.com/bytedance/UNO.git && cd UNO && pip install -e . && python inference.py --prompt "A clock on the beach is under a red sun umbrella" --image_paths "assets/clock.png" --width 704 --height 704 --offload --model_type flux-dev-fp8
    ```
 
-Official weights and documentation: [huggingface.co/bytedance-research](https://huggingface.co/bytedance-research/UNO)
+Model repository and documentation: [huggingface.co/bytedance-research](https://huggingface.co/bytedance-research/UNO)
 
 [interactive version](https://whatmodel.sh/model/uno) · [JSON](https://whatmodel.sh/api?format=json&all=1)

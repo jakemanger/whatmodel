@@ -53,6 +53,6 @@ weighted average                              = 55.0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Cornell-AGI/REBEL-Llama-3-Armo-iter_1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Cornell-AGI](https://huggingface.co/Cornell-AGI/REBEL-Llama-3-Armo-iter_1)
+Model repository and documentation: [huggingface.co/Cornell-AGI](https://huggingface.co/Cornell-AGI/REBEL-Llama-3-Armo-iter_1)
 
 [interactive version](https://whatmodel.sh/model/rebel-llama-3-armo-iter-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

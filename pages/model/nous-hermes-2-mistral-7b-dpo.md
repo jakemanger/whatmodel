@@ -96,6 +96,6 @@ weighted average                               = 42.3
    ollama run hf.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-mistral-7b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

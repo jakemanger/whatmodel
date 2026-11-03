@@ -18,6 +18,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/qwen-image-2-1-turbo)

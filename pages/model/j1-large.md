@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2021-08 · 7.5B params · proprietary
 
-**score 35.0** ±10.7 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 35.0** ±10.7 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge%40first-party-ai21&score=set) comparison set only.
 
@@ -21,15 +21,15 @@ Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge%40first
 <details><summary>other tests (8)</summary>
 
 <pre>
-test                    result  vs the others in its run   difficulty        counts  why
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">PIQA (lab)</a>               78.8%  ▁▁▁▂▂▃▅●▅▃▁▁ beats 83/123  medium · avg 80%    9.4%  sharp · at its level · small run
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">Story Cloze Test (lab)</a>   80.2%  ▃▃▃▂▅█▅●▁··▂ beats 43/50   medium · avg 82%    8.4%  sharp · at its level · small run
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">ARC Easy (lab)</a>           62.2%  ▁▃▂▄●█▅▃▁··▁ beats 37/100  medium · avg 65%    8.1%  at its level · small run
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">WinoGrande (lab)</a>         64.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 54/131  hard · avg 67%      4.5%  at its level · small run
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">ARC Challenge (lab)</a>      41.7%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 58/140  hard · avg 45%      3.9%  small run
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">HellaSwag (lab)</a>          71.9%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 76/135  easy · avg 75%      3.7%  at its level · small run
-<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">BoolQ (lab)</a>              65.0%  ▁····▁▂●▆▅▆▄ beats 36/103  medium · avg 70%    0.4%  blunt · at its level · small run
-<a href="https://aclanthology.org/2023.acl-long.352.pdf">OpenBookQA (lab)</a>         46.0%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 53/107                         —  not counted yet: no other model in the …
+test                      result  vs the others in its run   difficulty        counts  why
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">PIQA (maker)</a>               78.8%  ▁▁▁▂▂▃▅●▅▃▁▁ beats 83/123  medium · avg 80%    9.4%  sharp · at its level · small run
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">Story Cloze Test (maker)</a>   80.2%  ▃▃▃▂▅█▅●▁··▂ beats 43/50   medium · avg 82%    8.4%  sharp · at its level · small run
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">ARC Easy (maker)</a>           62.2%  ▁▃▂▄●█▅▃▁··▁ beats 37/100  medium · avg 65%    8.1%  at its level · small run
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">WinoGrande (maker)</a>         64.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 54/131  hard · avg 67%      4.5%  at its level · small run
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">ARC Challenge (maker)</a>      41.7%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 58/140  hard · avg 45%      3.9%  small run
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">HellaSwag (maker)</a>          71.9%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 76/135  easy · avg 75%      3.7%  at its level · small run
+<a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">BoolQ (maker)</a>              65.0%  ▁····▁▂●▆▅▆▄ beats 36/103  medium · avg 70%    0.4%  blunt · at its level · small run
+<a href="https://aclanthology.org/2023.acl-long.352.pdf">OpenBookQA (maker)</a>         46.0%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 53/107                         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -39,10 +39,10 @@ test                    result  vs the others in its run   difficulty        cou
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="first-party-ai21"></a><a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">AI21 Labs official docs (lab)</a>        7   38% ▇▇▇▇▇
-prior: pull toward the middle            62% ▇▇▇▇▇▇▇
-weighted average                        = 35.0
+source                                    results  share of the score
+<a name="first-party-ai21"></a><a href="https://ai21.com/wp-content/uploads/2024/10/jurassic-1-technical-details-and-evaluation.pdf">AI21 Labs official docs (submitted / ma…</a>        7   38% ▇▇▇▇▇
+prior: pull toward the middle                       62% ▇▇▇▇▇▇▇
+weighted average                                   = 35.0
 </pre>
 
 <details><summary>Not counted (2)</summary>

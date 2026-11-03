@@ -121,6 +121,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/Llama-3-Instruct-8B-S
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO)
+Model repository and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO)
 
 [interactive version](https://whatmodel.sh/model/llama-3-instruct-8b-simpo-expo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 57.2** ±3.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 57.2** ±3.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,8 +23,8 @@ vision &amp; documents  ●··········█   #2 of 2*     94%      2
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (la…</a>   82.0%  ▂▄▄▅▇●██▇▂▁▂ beats 27/59   easy · avg 70%     50%  small run
-<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (la…</a>   46.9%  ▂▅▃●▅▆▆▅▆█▆▂ beats 25/101  hard · avg 32%     44%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (ma…</a>   82.0%  ▂▄▄▅▇●██▇▂▁▂ beats 27/59   easy · avg 70%     50%  small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (ma…</a>   46.9%  ▂▅▃●▅▆▆▅▆█▆▂ beats 25/101  hard · avg 32%     44%  at its level · small run
 </pre>
 
 </details>
@@ -44,6 +44,6 @@ weighted average                                   = 57.2
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-vision-07-2025)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-vision-07-2025)
 
 [interactive version](https://whatmodel.sh/model/command-a-vision-07-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

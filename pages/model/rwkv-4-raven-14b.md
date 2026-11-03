@@ -51,6 +51,6 @@ weighted average                                   = 27.4
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/BlinkDL](https://huggingface.co/BlinkDL/rwkv-4-raven)
+Model repository and documentation: [huggingface.co/BlinkDL](https://huggingface.co/BlinkDL/rwkv-4-raven)
 
 [interactive version](https://whatmodel.sh/model/rwkv-4-raven-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

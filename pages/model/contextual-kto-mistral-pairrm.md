@@ -109,6 +109,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/featherless-ai-quants/Contextua
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ContextualAI/Contextual_KTO_Mistral_PairRM', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ContextualAI](https://huggingface.co/ContextualAI/Contextual_KTO_Mistral_PairRM)
+Model repository and documentation: [huggingface.co/ContextualAI](https://huggingface.co/ContextualAI/Contextual_KTO_Mistral_PairRM)
 
 [interactive version](https://whatmodel.sh/model/contextual-kto-mistral-pairrm) · [JSON](https://whatmodel.sh/api?format=json&all=1)

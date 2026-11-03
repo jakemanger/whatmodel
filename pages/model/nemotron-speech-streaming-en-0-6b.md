@@ -51,6 +51,6 @@ weighted average                                   = 48.8
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/nemotron-speech-streaming-en-0.6b-gguf nemotron-speech-streaming-en-0.6b-Q8_0.gguf --local-dir models/nemotron-speech-streaming-en-0.6b && build/bin/transcribe-cli -m models/nemotron-speech-streaming-en-0.6b/nemotron-speech-streaming-en-0.6b-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b)
 
 [interactive version](https://whatmodel.sh/model/nemotron-speech-streaming-en-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

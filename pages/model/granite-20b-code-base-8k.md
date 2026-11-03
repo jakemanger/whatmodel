@@ -26,11 +26,11 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   44.3%  ▁·▂▁▂▆▅█●▄▁▂ beats 25/35  medium · avg 62%     24%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           43.8%  █·▅▃▃▃▅●▃▅·▅ beats 10/15  easy · avg 67%       14%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         43.8%  █·▅▃▃▃▅●▃▅·▅ beats 10/15  easy · avg 67%       14%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   18.8%  ▄▇█●▄▇▄▁▇▃·▁ beats 15/35  medium · avg 46%     14%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   17.7%  ▁·▁▁▄█●▄█▁▅▅ beats 17/35  medium · avg 51%     12%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     39.1%  ▃▅█▃▃▅·●▃▅·▅ beats 10/15  medium · avg 56%     11%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     37.5%  ▃·▃██▅●·▃▃▅▃ beats 10/15  medium · avg 54%    8.8%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   39.1%  ▃▅█▃▃▅·●▃▅·▅ beats 10/15  medium · avg 56%     11%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (maker)</a>                   37.5%  ▃·▃██▅●·▃▃▅▃ beats 10/15  medium · avg 54%    8.8%  blunt · at its level
 </pre>
 
 </details>
@@ -110,6 +110,6 @@ weighted average                                   = 38.7
    ollama run hf.co/ibm-granite/granite-20b-code-base-8k-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-base-8k)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-base-8k)
 
 [interactive version](https://whatmodel.sh/model/granite-20b-code-base-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

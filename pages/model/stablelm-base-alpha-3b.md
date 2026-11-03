@@ -22,17 +22,17 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">SciQ (lab)</a>                           71.7%  ●·▁·▁·▃▅▃█▄▁ beats 0/26   very easy · avg 97%     31%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Easy (lab)</a>                       42.0%  ●▁·▁▁▄▅▄█▅▁▃ beats 0/26   easy · avg 85%          12%  blunt
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">HellaSwag (lab)</a>                      38.3%  ●···▁▇▅█▇▃▁▁ beats 0/26   very easy · avg 91%     11%  typical
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">PIQA (lab)</a>                           63.8%  ●·▁··▁▁▃█▅█▂ beats 0/26   easy · avg 87%         9.4%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">BoolQ (lab)</a>                          57.6%  ●▃▂▅▆▂▅▆█▂▂▂ beats 0/26   easy · avg 88%         8.3%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">SciQ (maker)</a>                         71.7%  ●·▁·▁·▃▅▃█▄▁ beats 0/26   very easy · avg 97%     31%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Easy (maker)</a>                     42.0%  ●▁·▁▁▄▅▄█▅▁▃ beats 0/26   easy · avg 85%          12%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">HellaSwag (maker)</a>                    38.3%  ●···▁▇▅█▇▃▁▁ beats 0/26   very easy · avg 91%     11%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">PIQA (maker)</a>                         63.8%  ●·▁··▁▁▃█▅█▂ beats 0/26   easy · avg 87%         9.4%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">BoolQ (maker)</a>                        57.6%  ●▃▂▅▆▂▅▆█▂▂▂ beats 0/26   easy · avg 88%         8.3%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">LAMBADA (OpenAI version), last-wo…</a>   41.7%  ●··▂▁▁▁▂▆█▅▃ beats 0/26   very easy · avg 86%    8.0%  blunt · at its level
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (lab)</a>                  25.8%  ●·▁··▁▁▇▂█▆▃ beats 0/26   easy · avg 82%         7.7%  sharp · too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">WinoGrande (lab)</a>                     52.6%  ▁····●··▁▂█▄ beats 1/26   easy · avg 86%         6.5%  too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Social IQA (lab)</a>                     35.6%  ●···▁▃█▁▁▁·▁ beats 0/26   hard · avg 56%         2.2%  blunt · too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (lab)</a>                     17.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 5/26   hard · avg 49%         0.9%  too hard for it
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">TruthfulQA MC2 (lab)</a>                 40.5%  █·█·█▄···▄·● beats 9/9    medium · avg 55%       0.8%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (maker)</a>                25.8%  ●·▁··▁▁▇▂█▆▃ beats 0/26   easy · avg 82%         7.7%  sharp · too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">WinoGrande (maker)</a>                   52.6%  ▁····●··▁▂█▄ beats 1/26   easy · avg 86%         6.5%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Social IQA (maker)</a>                   35.6%  ●···▁▃█▁▁▁·▁ beats 0/26   hard · avg 56%         2.2%  blunt · too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (maker)</a>                   17.0%  ●·▁▁▃·▁▃▅▇▃▄ beats 5/26   hard · avg 49%         0.9%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">TruthfulQA MC2 (maker)</a>               40.5%  █·█·█▄···▄·● beats 9/9    medium · avg 55%       0.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 2/276  medium · avg 72%       0.6%  too hard for it · noisy
 </pre>
 
@@ -43,11 +43,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                           results  share of the score
-<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Stability AI (lab)</a>                    11   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
-prior: pull toward the middle               1% ▇
-weighted average                          = 0.5
+source                                    results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Stability AI (submitted / maker-reporte…</a>       11   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 0.5
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
@@ -62,6 +62,6 @@ weighted average                          = 0.5
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-3b)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-3b)
 
 [interactive version](https://whatmodel.sh/model/stablelm-base-alpha-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

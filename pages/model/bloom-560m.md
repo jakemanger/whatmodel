@@ -23,8 +23,8 @@ math    ●▁▃▅█▆▄█▄▂▁▁   #426 of 431*    0.7%      1
 <details><summary>coding · #6 of 6 · 1.6% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    0.8%  ●···▄·▄·█··▄ beats 0/5    easy · avg 79%    1.6%  sharp · too hard for it
+test               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (maker)</a>    0.8%  ●···▄·▄·█··▄ beats 0/5    easy · avg 79%    1.6%  sharp · too hard for it
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   34.1%  ▃··●▃▃▅▅▅███ beats 2/19    very easy · avg 87%      10%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           50.4%  ●····▄▆▂▄▆▆█ beats 1/19    easy · avg 88%          6.9%  too hard for it · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     61.9%  ▂●▄▂·▂·▆·▂█▂ beats 1/14    easy · avg 89%          5.4%  blunt · several runs
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           55.0%  ▃··●▅▃▃▅·▃▃▃ beats 3/12    very easy · avg 95%     5.1%  several runs
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         55.0%  ▃··●▅▃▃▅·▃▃▃ beats 3/12    very easy · avg 95%     5.1%  several runs
 <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        22.1%  ●··▁·▁▁·▁▂▁▂ beats 5/19    easy · avg 81%          4.3%  sharp · too hard for it · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-560m/bloom-560m_reading_comprehension_0-shot.json">CoQA</a>                                 22.7%  ●····▄▄·▄▄·█ beats 0/6     very easy · avg 92%     4.3%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-560m/bloom-560m_common_sense_reasoning_0-shot.json">HellaSwag</a>                            31.6%  ●·▄▄·▄·▄··▄█ beats 0/7     easy · avg 81%          3.8%  typical
@@ -155,6 +155,6 @@ Other versions: Q8_0 (~0.9 GB) `ollama run hf.co/afrideva/bloom-560m-GGUF:q8_0`
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-560m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-560m)
+Model repository and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-560m)
 
 [interactive version](https://whatmodel.sh/model/bloom-560m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

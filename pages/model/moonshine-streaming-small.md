@@ -55,6 +55,6 @@ weighted average                                   = 45.5
    uv run --with transformers --with torch --with librosa python -c "import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-small'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))"
    ```
 
-Official weights and documentation: [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-streaming-small)
+Model repository and documentation: [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-streaming-small)
 
 [interactive version](https://whatmodel.sh/model/moonshine-streaming-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

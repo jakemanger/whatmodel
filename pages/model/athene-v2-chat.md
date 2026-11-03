@@ -141,6 +141,6 @@ Other versions: Q8_0 (~87.74 GB) `ollama run athene-v2:72b-q8_0`
 
 Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Athene-V2-Chat-8bit`
 
-Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-V2-Chat)
+Model repository and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-V2-Chat)
 
 [interactive version](https://whatmodel.sh/model/athene-v2-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

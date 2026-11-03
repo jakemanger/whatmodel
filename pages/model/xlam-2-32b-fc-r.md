@@ -135,6 +135,6 @@ Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mxmcc/xLAM-2-32b-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/xLAM-2-32b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Salesforce](https://huggingface.co/Salesforce/xLAM-2-32b-fc-r)
+Model repository and documentation: [huggingface.co/Salesforce](https://huggingface.co/Salesforce/xLAM-2-32b-fc-r)
 
 [interactive version](https://whatmodel.sh/model/xlam-2-32b-fc-r) · [JSON](https://whatmodel.sh/api?format=json&all=1)

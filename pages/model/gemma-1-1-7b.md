@@ -159,6 +159,6 @@ Other versions: Q8_0 (~10.75 GB) `ollama run gemma:7b-instruct-v1.1-q8_0`
    mlx_lm.server --model mlx-community/gemma-1.1-7b-it-4bit
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-1.1-7b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-1.1-7b-it)
 
 [interactive version](https://whatmodel.sh/model/gemma-1-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -215,6 +215,6 @@ Other versions: ud-iq1_s (~60.8 GB) `lms get https://huggingface.co/unsloth/Llam
    ollama run llama4:maverick
    ```
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-4-maverick) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -34,14 +34,14 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>                 26.7%  ▁●▁▁▂▄▅▆█▃▃▁ beats 3/155   easy · avg 79%          30%  sharp · too hard for it
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (maker)</a>               26.7%  ▁●▁▁▂▄▅▆█▃▃▁ beats 3/155   easy · avg 79%          30%  sharp · too hard for it
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.7%  ▁▁●▁▁▁▁▂▄█▄▃ beats 4/146   easy · avg 82%         8.9%  noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 37/276  medium · avg 72%       8.7%  too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.2%  ●·▁▁▂▁▂▅█▇▄▁ beats 1/100   medium · avg 67%       2.7%  sharp · too hard for it · noisy
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (lab)</a>                  28.2%  ▄▁▁●▁▄█▇▃▂▃▂ beats 23/140  easy · avg 82%            —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag (lab)</a>                      37.7%  ▁▁▁●▂▂▄▆█▇▄▂ beats 11/135  very easy · avg 91%       —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (lab)</a>                     52.3%  ▁▁▁▁●▁▁▅▇█▃▁ beats 11/131  easy · avg 86%            —  not counted yet: no other model in the …
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">PIQA (lab)</a>                           66.2%  ▁▁▁●▂▃▅█▅▃▁▁ beats 10/123  easy · avg 87%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge (maker)</a>                28.2%  ▄▁▁●▁▄█▇▃▂▃▂ beats 23/140  easy · avg 82%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag (maker)</a>                    37.7%  ▁▁▁●▂▂▄▆█▇▄▂ beats 11/135  very easy · avg 91%       —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande (maker)</a>                   52.3%  ▁▁▁▁●▁▁▅▇█▃▁ beats 11/131  easy · avg 86%            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">PIQA (maker)</a>                         66.2%  ▁▁▁●▂▃▅█▅▃▁▁ beats 10/123  easy · avg 87%            —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -156,6 +156,6 @@ Other versions: qat (~0.66 GB) `ollama run gemma3:270m-it-qat`
 
 Other versions: 8bit (~0.5 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-3-270m-it-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-270m-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-270m-it)
 
 [interactive version](https://whatmodel.sh/model/gemma-3-270m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

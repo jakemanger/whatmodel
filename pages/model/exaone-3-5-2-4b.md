@@ -153,6 +153,6 @@ Other versions: Q8_0 (~3.39 GB) `ollama run exaone3.5:2.4b-instruct-q8_0`
 
 Other versions: 8bit (~2.6 GB, Mac only) `mlx_lm.chat --model alexgusevski/EXAONE-3.5-2.4B-Instruct-q8-mlx`
 
-Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct)
+Model repository and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/exaone-3-5-2-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

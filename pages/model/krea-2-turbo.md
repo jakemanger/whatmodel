@@ -61,6 +61,6 @@ api (Krea) · $0.015/image · [krea.ai](https://www.krea.ai/docs/api-reference/k
 
 Other versions: BF16 (~43.3 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import Krea2Pipeline; p=Krea2Pipeline.from_pretrained('krea/Krea-2-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a fox in the snow', num_inference_steps=8, guidance_scale=0.0).images[0].save('krea2.png')"`
 
-Official weights and documentation: [huggingface.co/krea](https://huggingface.co/krea/Krea-2-Turbo)
+Model repository and documentation: [huggingface.co/krea](https://huggingface.co/krea/Krea-2-Turbo)
 
 [interactive version](https://whatmodel.sh/model/krea-2-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

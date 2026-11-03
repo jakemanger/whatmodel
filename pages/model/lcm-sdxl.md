@@ -65,6 +65,6 @@ weighted average                                   = 34.0
    uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import UNet2DConditionModel, DiffusionPipeline, LCMScheduler; u=UNet2DConditionModel.from_pretrained('latent-consistency/lcm-sdxl', torch_dtype=torch.float16, variant='fp16'); p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', unet=u, torch_dtype=torch.float16, variant='fp16'); p.scheduler=LCMScheduler.from_config(p.scheduler.config); p.to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=8.0).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/latent-consistency](https://huggingface.co/latent-consistency/lcm-sdxl)
+Model repository and documentation: [huggingface.co/latent-consistency](https://huggingface.co/latent-consistency/lcm-sdxl)
 
 [interactive version](https://whatmodel.sh/model/lcm-sdxl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

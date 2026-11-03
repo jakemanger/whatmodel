@@ -105,6 +105,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/dolphin-
 
 Other versions: Q8_0 (~9.19 GB) `ollama run dolphin-mistral:7b-v2.2.1-q8_0`
 
-Official weights and documentation: [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.2.1-mistral-7b)
+Model repository and documentation: [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.2.1-mistral-7b)
 
 [interactive version](https://whatmodel.sh/model/dolphin-2-2-1-mistral-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

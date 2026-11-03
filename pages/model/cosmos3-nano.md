@@ -79,6 +79,6 @@ weighted average                                   = 51.8
    uvx --from huggingface_hub hf download nvidia/Cosmos3-Nano assets/ --local-dir Cosmos3-Nano && cd Cosmos3-Nano && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c "import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Nano', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_nano_t2v.mp4', fps=24)"
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos3-Nano)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos3-Nano)
 
 [interactive version](https://whatmodel.sh/model/cosmos3-nano) · [JSON](https://whatmodel.sh/api?format=json&all=1)

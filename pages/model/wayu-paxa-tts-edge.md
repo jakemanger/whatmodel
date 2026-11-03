@@ -6,7 +6,7 @@
 
 Wayu Research / Paxa Labs · released 2026-08 · 0.082B params · cc-by-nc-4.0
 
-**score 63.9** ±3.9 · #22 of 119 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.9** ±3.9 · #22 of 119 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -52,6 +52,6 @@ weighted average                                   = 63.9
    pip install git+https://github.com/wayu-research/wayu-tts-inference && wayu-tts "สวัสดีค่ะ" --voice f_young_clear --out hello.wav
    ```
 
-Official weights and documentation: [huggingface.co/wayu-ai](https://huggingface.co/wayu-ai/wayu-paxa-tts-edge)
+Model repository and documentation: [huggingface.co/wayu-ai](https://huggingface.co/wayu-ai/wayu-paxa-tts-edge)
 
 [interactive version](https://whatmodel.sh/model/wayu-paxa-tts-edge) · [JSON](https://whatmodel.sh/api?format=json&all=1)

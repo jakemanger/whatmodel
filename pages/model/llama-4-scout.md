@@ -185,7 +185,7 @@ api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepi
    ollama run llama4:scout
    ```
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct)
 
 ## Published speed measurements
 

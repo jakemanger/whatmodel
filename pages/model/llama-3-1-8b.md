@@ -271,7 +271,7 @@ Other versions: Q8_0 (~10.14 GB) `ollama run llama3.1:8b-instruct-q8_0`
 
 Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Meta-Llama-3.1-8B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 
 ## Published speed measurements
 

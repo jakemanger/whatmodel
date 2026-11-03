@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">LibriSpeech test-clean WER</a>            1.8%  ▁···▁▁▂·▄▄●█ beats 36/56  avg 2.3%       33%  blunt
-<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER (lab)</a>          1.9%  █····█·████● beats 6/6    avg 4.5%       19%  sharp · small run
+<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER (maker)</a>        1.9%  █····█·████● beats 6/6    avg 4.5%       19%  sharp · small run
 <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">FLEURS 25 European languages, mea…</a>    9.6%  █····█·····● beats 2/2    avg 18%        17%  small run
 <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Granite 5.0 report · Open ASR pub…</a>    5.8%  █···█······● beats 2/2    avg 10%        16%  small run
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">FLEURS English test WER</a>               4.3%  ▁··▁▁▁▁▁▁▃●▁ beats 44/56  avg 5.8%       13%  blunt
@@ -55,6 +55,6 @@ weighted average                                   = 58.5
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-ultra-gguf parakeet-ultra-Q8_0.gguf --local-dir models/parakeet-ultra && build/bin/transcribe-cli -m models/parakeet-ultra/parakeet-ultra-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-ultra)
+Model repository and documentation: [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-ultra)
 
 [interactive version](https://whatmodel.sh/model/parakeet-ultra) · [JSON](https://whatmodel.sh/api?format=json&all=1)

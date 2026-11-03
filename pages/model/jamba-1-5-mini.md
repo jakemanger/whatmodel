@@ -27,8 +27,8 @@ math            ▁▁▃▅●▆▄█▄▂▁▁   #328 of 431*     16%     
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (lab)</a>   80.7%  ▄▆▄▂·●▆·▄··▂ beats 8/17   easy · avg 81%    3.0%  blunt · small run
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (maker)</a>   80.7%  ▄▆▄▂·●▆·▄··▂ beats 8/17   easy · avg 81%    3.0%  blunt · small run
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ test                             result  vs the others in its run  difficulty   
 <details><summary>coding · #2 of 2 · 9.3% of its score</summary>
 
 <pre>
-test             result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   62.8%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 119/205  easy · avg 69%    9.3%  sharp · at its level · small run
+test               result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (maker)</a>   62.8%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 119/205  easy · avg 69%    9.3%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test                                result  vs the others in its run   difficult
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Falcon 40B (base)](falcon-40b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>   75.8%  ▂▂▂▂▃▄▅▇●█▆▄ beats 130/206  easy · avg 82%     16%  sharp · small run
+test           result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (maker)</a>   75.8%  ▂▂▂▂▃▄▅▇●█▆▄ beats 130/206  easy · avg 82%     16%  sharp · small run
 </pre>
 
 </details>
@@ -70,12 +70,12 @@ test         result  vs the others in its run    difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>                 53.4%  ▁▁▁▁▂▄▅●█▃▃▁ beats 74/155   medium · avg 61%        12%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                           69.7%  ▁▁▁▁▁▂▂▅█●▆▄ beats 135/214  easy · avg 75%          10%  at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>      32.3%  ▂▁▂▂▄●▆▃▅█▃▃ beats 28/106   very hard · avg 35%     10%  sharp · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                       39.8%  ▁▁·▁▁▁●▂▄▅█▁ beats 25/188   medium · avg 46%       7.2%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (maker)</a>               53.4%  ▁▁▁▁▂▄▅●█▃▃▁ beats 74/155   medium · avg 61%        12%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (maker)</a>                         69.7%  ▁▁▁▁▁▂▂▅█●▆▄ beats 135/214  easy · avg 75%          10%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (maker)</a>    32.3%  ▂▁▂▂▄●▆▃▅█▃▃ beats 28/106   very hard · avg 35%     10%  sharp · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (maker)</a>                     39.8%  ▁▁·▁▁▁●▂▄▅█▁ beats 25/188   medium · avg 46%       7.2%  at its level · small run
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            92.8%  ▁▁·▁·▂▃▄█▂·● beats 22/22    easy · avg 82%         3.4%  typical
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>                  85.7%  ▄▁▁▂▁▄█▇▃▂●▂ beats 134/140  easy · avg 76%         2.5%  sharp · at its level · noisy · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (maker)</a>                85.7%  ▄▁▁▂▁▄█▇▃▂●▂ beats 134/140  easy · avg 76%         2.5%  sharp · at its level · noisy · small run
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           90.0%  ▄··▂▄▂▆██▄▄● beats 21/21    easy · avg 67%         1.2%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.1%  ▁▁▂▃▄▄█●▃▂▂▁ beats 106/140  very easy · avg 94%    1.0%  blunt · maxed out · noisy
 </pre>
@@ -158,6 +158,6 @@ weighted average                                   = 48.0
    vllm serve ai21labs/AI21-Jamba-Mini-1.5
    ```
 
-Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.5)
+Model repository and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.5)
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

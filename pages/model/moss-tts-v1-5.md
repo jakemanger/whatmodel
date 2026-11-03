@@ -89,6 +89,6 @@ SGLang-Omni serving c…  <a href="https://github.com/sgl-project/sglang-omni/bl
 
 Other versions: BF16 (MLX-AUDIO 0.5.X) (~24.08 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model OpenMOSS-Team/MOSS-TTS-v1.5 --text "Hello, this is MOSS-TTS running on MLX." --output_path outputs`
 
-Official weights and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5)
+Model repository and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5)
 
 [interactive version](https://whatmodel.sh/model/moss-tts-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -263,6 +263,6 @@ Other versions: Q8_0 (~77.5 GB) `lms get https://huggingface.co/Qwen/Qwen2.5-72B
 
 Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model GGorman/Qwen2.5-72B-Instruct-Q8-mlx`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

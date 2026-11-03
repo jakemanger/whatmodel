@@ -26,8 +26,8 @@ math            ▁▁▃▅●▆▄█▄▂▁▁   #279 of 431*     12%     
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   48.9%  ▃▃▃·●▃▃█▃▂▂▅ beats 6/25   easy · avg 83%     11%  sharp · at its level
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (maker)</a>   48.9%  ▃▃▃·●▃▃█▃▂▂▅ beats 6/25   easy · avg 83%     11%  sharp · at its level
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ test                                result  vs the others in its run   difficult
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Mistral Large 2 (2407)](mistral-large-2407.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   49.5%  ▆▂▅█▅●▃▆···▂ beats 16/25  easy · avg 72%     12%  sharp · at its level
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (maker)</a>   49.5%  ▆▂▅█▅●▃▆···▂ beats 16/25  easy · avg 72%     12%  sharp · at its level
 </pre>
 
 </details>
@@ -59,8 +59,8 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 49.4%  ▁·····▂●▂▅·▁ beats 12/25    easy · avg 74%       22%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           55.3%  ▁▁▃▃▄█●▁█··▁ beats 15/25    medium · avg 73%     10%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (maker)</a>               49.4%  ▁·····▂●▂▅·▁ beats 12/25    easy · avg 74%       22%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (maker)</a>                         55.3%  ▁▁▃▃▄█●▁█··▁ beats 15/25    medium · avg 73%     10%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 120/276  medium · avg 72%    3.7%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   39.7%  ▂··▁▃●▂▂█▅▁▂ beats 6/25     medium · avg 59%    2.5%  blunt · at its level
 </pre>
@@ -73,7 +73,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                               results  share of the score
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                               5   57% ▇▇▇▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (submitted / maker-reported)</a>        5   57% ▇▇▇▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   38% ▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    4% ▇
 prior: pull toward the middle                   1% ▇
@@ -148,6 +148,6 @@ Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/TheBloke/tulu-2-dpo-13B-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-13b)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-13b)
 
 [interactive version](https://whatmodel.sh/model/tulu-2-dpo-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

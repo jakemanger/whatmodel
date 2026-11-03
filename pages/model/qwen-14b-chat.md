@@ -137,6 +137,6 @@ Other versions: Q8_0 (~15.1 GB) `ollama run hf.co/mradermacher/Qwen-14B-Chat-GGU
    pip install torch transformers==4.32.0 accelerate tiktoken einops scipy transformers_stream_generator==0.0.4 && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer; t=AutoTokenizer.from_pretrained('Qwen/Qwen-14B-Chat', trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained('Qwen/Qwen-14B-Chat', device_map='auto', trust_remote_code=True).eval(); print(m.chat(t, '你好', history=None)[0])"
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-14B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-14B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen-14b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

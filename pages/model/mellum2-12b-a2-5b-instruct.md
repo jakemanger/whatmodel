@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.5** ±1.6 · #362 of 732 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.5** ±1.6 · #362 of 732 · from 8 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,7 +28,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archive) (…</a>   44.2%  ▁▁▁▂▆▆▅●█▂▄▃ beats 60/114   medium · avg 36%    6.8%  at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                        66.3%  ▁▁▁▁▁▃▅█▆●▄▁ beats 129/171  medium · avg 55%    3.6%  blunt · at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (maker)</a>                      66.3%  ▁▁▁▁▁▃▅█▆●▄▁ beats 129/171  medium · avg 55%    3.6%  blunt · at its level
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Beats [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qw
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   37.2%  ▂▃●▄▅██▆▄▇▄▆ beats 6/67   hard · avg 33%       20%  at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                      67.1%  ▃··▄·▅▅●▄█▃▄ beats 17/31  medium · avg 54%    4.8%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (maker)</a>                    67.1%  ▃··▄·▅▅●▄█▃▄ beats 17/31  medium · avg 54%    4.8%  at its level
 </pre>
 
 </details>
@@ -59,10 +59,10 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (lab)</a>   40.9%  ▁▁▁▁▂●▅▅███▄ beats 53/322  hard · avg 46%     36%  sharp · at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (lab)</a>     78.1%  ▁▁▃▁●▃▄▅▇▅█▄ beats 8/63    easy · avg 78%     19%  at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (lab)</a>       80.5%  ▁··▁▁▁·●▁▄█▁ beats 5/16    easy · avg 82%    3.9%  blunt
+test                  result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (maker)</a>   40.9%  ▁▁▁▁▂●▅▅███▄ beats 53/322  hard · avg 46%     36%  sharp · at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (maker)</a>     78.1%  ▁▁▃▁●▃▄▅▇▅█▄ beats 8/63    easy · avg 78%     19%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (maker)</a>       80.5%  ▁··▁▁▁·●▁▄█▁ beats 5/16    easy · avg 82%    3.9%  blunt
 </pre>
 
 </details>
@@ -171,6 +171,6 @@ Other versions: 8bit (~12.9 GB, Mac only) `mlx_lm.chat --model mlx-community/Mel
    vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct
    ```
 
-Official weights and documentation: [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct)
+Model repository and documentation: [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/mellum2-12b-a2-5b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

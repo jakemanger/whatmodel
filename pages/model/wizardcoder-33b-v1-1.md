@@ -136,6 +136,6 @@ Other versions: Q8_0 (~35 GB) `ollama run wizardcoder:33b-v1.1-q8_0`
    mlx_lm.server --model GGorman/WizardCoder-33B-V1.1-Q8-mlx
    ```
 
-Official weights and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-33B-V1.1)
+Model repository and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-33B-V1.1)
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-33b-v1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

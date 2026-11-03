@@ -37,10 +37,10 @@ test                                result  vs the others in its run  difficulty
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   58.7%  ▁·▁▁▁▂▅●█▇▅▁ beats 45/133  medium · avg 37%        20%  sharp · at its level
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>   76.7%  ▁▁▁▂▁▃▁▅█●█▃ beats 47/85   medium · avg 56%        17%  sharp · at its level
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.8%  ▁▃▂▃▄▇●▇█▄▂▁ beats 42/85   very easy · avg 86%     11%  typical
+test               result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (maker)</a>   58.7%  ▁·▁▁▁▂▅●█▇▅▁ beats 45/133  medium · avg 37%        20%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (maker)</a>   76.7%  ▁▁▁▂▁▃▁▅█●█▃ beats 47/85   medium · avg 56%        17%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (maker)</a>    90.8%  ▁▃▂▃▄▇●▇█▄▂▁ beats 42/85   very easy · avg 86%     11%  typical
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ test             result  vs the others in its run   difficulty           counts 
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 128/322  hard · avg 51%     29%  sharp · at its level
+test                  result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (maker)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 128/322  hard · avg 51%     29%  sharp · at its level
 </pre>
 
 </details>
@@ -159,6 +159,6 @@ Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model alexgusevski/Open
    vllm serve open-thoughts/OpenThinker2-32B
    ```
 
-Official weights and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker2-32B)
+Model repository and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker2-32B)
 
 [interactive version](https://whatmodel.sh/model/openthinker2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -110,6 +110,6 @@ Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Llama-xLAM-2-70b-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/Llama-xLAM-2-70b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-70b-fc-r)
+Model repository and documentation: [huggingface.co/Salesforce](https://huggingface.co/Salesforce/Llama-xLAM-2-70b-fc-r)
 
 [interactive version](https://whatmodel.sh/model/llama-xlam-2-70b-fc-r) · [JSON](https://whatmodel.sh/api?format=json&all=1)

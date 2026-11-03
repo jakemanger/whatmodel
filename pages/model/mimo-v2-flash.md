@@ -171,6 +171,6 @@ Other versions: Q8_0 (~328.2 GB) `lms get https://huggingface.co/unsloth/MiMo-V2
    mlx_lm.server --model mlx-community/MiMo-V2-Flash-4bit
    ```
 
-Official weights and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash)
+Model repository and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash)
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

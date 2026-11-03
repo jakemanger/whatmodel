@@ -41,15 +41,15 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val)</a>                           44.2%  ▁····▁▁●█▆▆▅ beats 6/53   medium · avg 51%        19%  several runs
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini)</a>                 53.7%  ▁··▁▄▄●▇▄▅█▄ beats 12/48  medium · avg 65%        14%  at its level · small run · several runs
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                              78.8%  ▁··▁▁▁▁▁▂●▅█ beats 17/44  easy · avg 82%         4.6%  blunt · small run · several runs
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">DocVQA (lab)</a>                         89.2%  ▁··▃●▁▁▇█▇▄▅ beats 3/28   very easy · avg 93%    3.8%  blunt · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">DocVQA (maker)</a>                       89.2%  ▁··▃●▁▁▇█▇▄▅ beats 3/28   very easy · avg 93%    3.8%  blunt · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   39.7%  ▅▃●··▅▃····▃ beats 4/9    hard · avg 42%         3.7%  blunt
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">HallusionBench (lab)</a>                 41.9%  ●▁·▂▂▂▃▅▃█▅▅ beats 1/33   medium · avg 55%       3.6%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">HallusionBench (maker)</a>               41.9%  ●▁·▂▂▂▃▅▃█▅▅ beats 1/33   medium · avg 55%       3.6%  blunt · at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                              66.2%  ▁▁▁▄▅▁●·▃▃▃█ beats 11/24  easy · avg 75%         3.2%  blunt · at its level · several runs
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (lab)</a>                    60.7%  ▁▃●▇▃▇▇▅█▁▅▅ beats 3/39   easy · avg 71%         2.9%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (maker)</a>                  60.7%  ▁▃●▇▃▇▇▅█▁▅▅ beats 3/39   easy · avg 71%         2.9%  blunt · at its level · small run
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                            77.3%  ▁▁▅▇●▇·▄·█·▃ beats 11/28  easy · avg 84%         2.6%  blunt · small run · several runs
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (lab)</a>                       78.8%  ▁·▃▁●▅▂█▅█▁▃ beats 6/37   easy · avg 83%         2.4%  blunt · small run
-<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv (reasoning questions) (la…</a>   24.5%  ●▅▃▅▅▆▆▅▆█▆▂ beats 1/101  hard · avg 34%            —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descriptive questions (la…</a>   48.0%  ●▄▄▅▇▄██▇▂▁▂ beats 0/59   easy · avg 69%            —  not counted yet: no other model in the …
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (maker)</a>                     78.8%  ▁·▃▁●▅▂█▅█▁▃ beats 6/37   easy · avg 83%         2.4%  blunt · small run
+<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv (reasoning questions) (ma…</a>   24.5%  ●▅▃▅▅▆▆▅▆█▆▂ beats 1/101  hard · avg 34%            —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descriptive questions (ma…</a>   48.0%  ●▄▄▅▇▄██▇▂▁▂ beats 0/59   easy · avg 69%            —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -58,9 +58,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (with subtitles) (lab)</a>     53.4%  ●▁▁▁▁·▁▃▁▁▁█ beats 0/16   medium · avg 66%    6.5%  at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (without subtitles) (la…</a>   51.4%  ●▃▁▃▁·█▄▄▅·▇ beats 0/27   medium · avg 63%    5.0%  blunt · at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MVBench (lab)</a>                        63.7%  ▁··▃●▁▃▄▄▄█▄ beats 3/26   medium · avg 67%    2.6%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (with subtitles) (maker)</a>   53.4%  ●▁▁▁▁·▁▃▁▁▁█ beats 0/16   medium · avg 66%    6.5%  at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (without subtitles) (ma…</a>   51.4%  ●▃▁▃▁·█▄▄▅·▇ beats 0/27   medium · avg 63%    5.0%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MVBench (maker)</a>                      63.7%  ▁··▃●▁▃▄▄▄█▄ beats 3/26   medium · avg 67%    2.6%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OpenGVLab InternVL2 model cards (lab)</a>          12   52% ▇▇▇▇▇▇
+<a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OpenGVLab InternVL2 model cards (submit…</a>       12   52% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   24% ▇▇▇
 <a name="microsoft-phi35-vision-card-benchmarks"></a><a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">Microsoft Phi-3.5-vision-instruct model…</a>        5   19% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    4% ▇
@@ -101,6 +101,6 @@ OpenGVLab  <a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descripti
    vllm serve OpenGVLab/InternVL2-4B --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/OpenGVLab](https://huggingface.co/OpenGVLab/InternVL2-4B)
+Model repository and documentation: [huggingface.co/OpenGVLab](https://huggingface.co/OpenGVLab/InternVL2-4B)
 
 [interactive version](https://whatmodel.sh/model/internvl2-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

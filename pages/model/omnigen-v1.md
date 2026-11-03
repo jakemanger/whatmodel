@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   41% ▇▇▇▇▇
 <a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   33% ▇▇▇▇
-<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI (lab)</a>                                      1   18% ▇▇
+<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI (submitted / maker-reported)</a>               1   18% ▇▇
 prior: pull toward the middle                        8% ▇
 weighted average                                   = 34.0
 </pre>
@@ -63,6 +63,6 @@ weighted average                                   = 34.0
    git clone https://github.com/staoxiao/OmniGen.git && cd OmniGen && pip install -e . && python -c "from OmniGen import OmniGenPipeline; pipe = OmniGenPipeline.from_pretrained('Shitao/OmniGen-v1'); pipe(prompt='A curly-haired man in a red shirt is drinking tea.', height=1024, width=1024, guidance_scale=2.5, seed=0)[0].save('example_t2i.png')"
    ```
 
-Official weights and documentation: [huggingface.co/Shitao](https://huggingface.co/Shitao/OmniGen-v1)
+Model repository and documentation: [huggingface.co/Shitao](https://huggingface.co/Shitao/OmniGen-v1)
 
 [interactive version](https://whatmodel.sh/model/omnigen-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

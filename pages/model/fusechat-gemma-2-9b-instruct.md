@@ -109,6 +109,6 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/FuseChat-Gemma-2-9B-I
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FuseAI/FuseChat-Gemma-2-9B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Gemma-2-9B-Instruct)
+Model repository and documentation: [huggingface.co/FuseAI](https://huggingface.co/FuseAI/FuseChat-Gemma-2-9B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/fusechat-gemma-2-9b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

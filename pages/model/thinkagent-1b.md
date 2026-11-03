@@ -53,6 +53,6 @@ weighted average                                   = 27.4
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='AymanTarig/Llama-3.2-1B-FC-v3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/AymanTarig](https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3)
+Model repository and documentation: [huggingface.co/AymanTarig](https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3)
 
 [interactive version](https://whatmodel.sh/model/thinkagent-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

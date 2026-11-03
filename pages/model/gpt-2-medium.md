@@ -168,6 +168,6 @@ Other versions: Q8_0 (~0.4 GB) `ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-medium')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-medium)
+Model repository and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-medium)
 
 [interactive version](https://whatmodel.sh/model/gpt-2-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

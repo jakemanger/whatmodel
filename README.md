@@ -2,11 +2,11 @@
 
 <h1 align="center"><a href="https://whatmodel.sh"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/banner-dark.svg"><img alt="whatmodel.sh: find the best AI models you can run" src="docs/images/banner-light.svg" width="600"></picture></a></h1>
 
-<p align="center"><b>The open AI model leaderboard.</b> Every model is ranked by one score built from 35,105 published benchmark results, with its price, the memory it needs and the command to run it.<br>Filter by your computer or budget at <a href="https://whatmodel.sh">whatmodel.sh</a>, or read the same leaderboard below. <a href="#about-this-repo">About this repo</a></p>
+<p align="center"><b>The open AI model leaderboard.</b> Every model is ranked by one score built from 37,490 published benchmark results, with its price, the memory it needs and the command to run it.<br>Filter by your computer or budget at <a href="https://whatmodel.sh">whatmodel.sh</a>, or read the same leaderboard below. <a href="#about-this-repo">About this repo</a></p>
 
 **llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md) · [decision](pages/decision.md)
 
-updated 2026-10-31 02:55 UTC · 891 models · scores combine 575 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-11-03 02:37 UTC · 891 models · scores combine 575 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -991,7 +991,7 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 
 \+ 308 models with fewer than 3 results aren't ranked here · [show them](https://whatmodel.sh/?thin=1)
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 891 of 1230 catalogue models listed here · [sources and licences](pages/method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 891 of 1230 catalogue models listed here · [sources and licences](pages/method.md#sources)
 
 <details><summary>Models without a score (3)</summary>
 

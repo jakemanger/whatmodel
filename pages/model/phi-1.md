@@ -24,11 +24,11 @@ coding  ▁▁●▃▅▇█▇▅▄▃▁   #457 of 469*     75%      4
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        21.7%  ●·▂▃▁█▁▂···▁ beats 0/22    medium · avg 51%     39%  blunt
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        13.1%  ●··▁▅▂█▇▁··▁ beats 0/22    medium · avg 52%     36%  typical
-<a href="https://arxiv.org/html/2306.11644v2">HumanEval (lab)</a>   50.6%  ▁▁▁▁▂▂▆●█▅▂▁ beats 94/205  easy · avg 76%         —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2306.11644v2">MBPP (lab)</a>        55.5%  ▁▁▁▄▅█●▅▄▁▂▁ beats 48/86   easy · avg 67%         —  not counted yet: no other model in the …
+test               result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>          21.7%  ●·▂▃▁█▁▂···▁ beats 0/22    medium · avg 51%     39%  blunt
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>          13.1%  ●··▁▅▂█▇▁··▁ beats 0/22    medium · avg 52%     36%  typical
+<a href="https://arxiv.org/html/2306.11644v2">HumanEval (maker)</a>   50.6%  ▁▁▁▁▂▂▆●█▅▂▁ beats 94/205  easy · avg 76%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2306.11644v2">MBPP (maker)</a>        55.5%  ▁▁▁▄▅█●▅▄▁▂▁ beats 48/86   easy · avg 67%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -132,6 +132,6 @@ Other versions: Q8_0 (~1.5 GB) `ollama run hf.co/mradermacher/phi-1-GGUF:Q8_0`
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1')('def fibonacci(n):', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-1)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-1)
 
 [interactive version](https://whatmodel.sh/model/phi-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

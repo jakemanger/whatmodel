@@ -128,6 +128,6 @@ Other versions: Q8_0 (~3.2 GB) `ollama run hf.co/mradermacher/MiniChat-3B-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='GeneZC/MiniChat-3B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/GeneZC](https://huggingface.co/GeneZC/MiniChat-3B)
+Model repository and documentation: [huggingface.co/GeneZC](https://huggingface.co/GeneZC/MiniChat-3B)
 
 [interactive version](https://whatmodel.sh/model/minichat-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

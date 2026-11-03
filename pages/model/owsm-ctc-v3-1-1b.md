@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    8.1%  ▁▁▁▃··▁▁▂●█▆ beats 34/86   avg 8.2%       59%  blunt
-<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (lab)</a>      5.1%  ▁···▁▁▁▆●█▆▁ beats 23/56   avg 4.9%       26%  small run
-<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (lab)</a>      2.4%  ▁·▁·▁▁▁▁▃●█▆ beats 40/102  avg 2.3%      8.0%  blunt · small run
+<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (maker)</a>    5.1%  ▁···▁▁▁▆●█▆▁ beats 23/56   avg 4.9%       26%  small run
+<a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (maker)</a>    2.4%  ▁·▁·▁▁▁▁▃●█▆ beats 40/102  avg 2.3%      8.0%  blunt · small run
 </pre>
 
 </details>
@@ -34,11 +34,11 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                          results  share of the score
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                  1   59% ▇▇▇▇▇▇▇
-<a name="first-party-espnet-owsm-v4-report"></a><a href="https://arxiv.org/html/2506.00338v1">OWSM v4 technical report (lab)</a>        2   34% ▇▇▇▇
-prior: pull toward the middle              7% ▇
-weighted average                         = 49.8
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   59% ▇▇▇▇▇▇▇
+<a name="first-party-espnet-owsm-v4-report"></a><a href="https://arxiv.org/html/2506.00338v1">OWSM v4 technical report (submitted / m…</a>        2   34% ▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 49.8
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
@@ -53,6 +53,6 @@ weighted average                         = 49.8
    uv run --python 3.12 --with espnet --with espnet_model_zoo --with librosa python -c "from espnet2.bin.s2t_inference import Speech2Text; s=Speech2Text.from_pretrained('espnet/owsm_ctc_v3.1_1B', device='cuda', lang_sym='<eng>', task_sym='<asr>'); print(' '.join(t for _, _, t in s.decode_long('audio.wav', batch_size=16)))"
    ```
 
-Official weights and documentation: [huggingface.co/espnet](https://huggingface.co/espnet/owsm_ctc_v3.1_1B)
+Model repository and documentation: [huggingface.co/espnet](https://huggingface.co/espnet/owsm_ctc_v3.1_1B)
 
 [interactive version](https://whatmodel.sh/model/owsm-ctc-v3-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

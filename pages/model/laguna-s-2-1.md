@@ -6,7 +6,7 @@
 
 Poolside · released 2026-07 · 118B params (8B active) · openmdw-1.1
 
-**score 71.9** ±3.9 · #65 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 71.9** ±3.9 · #65 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,11 +23,11 @@ coding       ▁▁▁▃▅▇█▇▅●▃▁   #57 of 482*     93%      2
 <details><summary>agent tasks · #1 of 4 · 93% of its score</summary>
 
 <pre>
-test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▁▅█●▂▂▁ beats 54/65  hard · avg 29%           68%  small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▄▂▂▂▄▂▆●·▂·▂ beats 13/16  hard · avg 30%           26%  blunt · at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▆●▅█ beats 38/63  very hard · avg 7.2%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Toolathlon-Verified (lab)</a>      49.7%  ▂·▂▂▅●···▂██ beats 6/18   hard · avg 24%             —  not counted yet: no other model in the …
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (maker)</a>   78.5%  ▁··▁▃▁▅█●▂▂▁ beats 54/65  hard · avg 29%           68%  small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (maker)</a>            59.4%  ▄▂▂▂▄▂▆●·▂·▂ beats 13/16  hard · avg 30%           26%  blunt · at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (maker)</a>       70.2%  ▁·▁·▁▁▄▃▆●▅█ beats 38/63  very hard · avg 7.2%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Toolathlon-Verified (maker)</a>      49.7%  ▂·▂▂▅●···▂██ beats 6/18   hard · avg 24%             —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -37,9 +37,9 @@ test                          result  vs the others in its run  difficulty      
 Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Kimi K2.6](kimi-k2-6.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▁▅█●▂▂▁ beats 54/65  hard · avg 29%     68%  small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▄▂▂▂▄▂▆●·▂·▂ beats 13/16  hard · avg 30%     26%  blunt · at its level · small run
+test                            result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (maker)</a>   78.5%  ▁··▁▃▁▅█●▂▂▁ beats 54/65  hard · avg 29%     68%  small run
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (maker)</a>            59.4%  ▄▂▂▂▄▂▆●·▂·▂ beats 13/16  hard · avg 30%     26%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -156,6 +156,6 @@ Other versions: 8bit (~124.9 GB, Mac only) `mlx_lm.chat --model TensorFold/Lagun
    vllm serve --model poolside/Laguna-S-2.1 --tensor-parallel-size 4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
    ```
 
-Official weights and documentation: [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1)
+Model repository and documentation: [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1)
 
 [interactive version](https://whatmodel.sh/model/laguna-s-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

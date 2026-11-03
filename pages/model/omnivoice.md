@@ -79,6 +79,6 @@ weighted average                                   = 65.8
    pip install omnivoice && omnivoice-infer --model k2-fsa/OmniVoice --text "This is a test for text to speech." --output hello.wav
    ```
 
-Official weights and documentation: [huggingface.co/k2-fsa](https://huggingface.co/k2-fsa/OmniVoice)
+Model repository and documentation: [huggingface.co/k2-fsa](https://huggingface.co/k2-fsa/OmniVoice)
 
 [interactive version](https://whatmodel.sh/model/omnivoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

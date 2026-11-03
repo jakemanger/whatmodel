@@ -6,52 +6,50 @@
 
 ekzhang · 35.951822704B params · apache-2.0
 
-**score 72.3** ±1.2 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 59.7** ±1.7 · #111 of 355 · from 27 benchmark results across 1 source · † no independently run results verified
 
 ## What it's good at
 
 <sub>● marks openjev-sglang (DecisionBench 1355db6a) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃▃▃▁▂▁▂▅●▂   #11 of 57     99%     27
+task       vs the others        rank  counts  tests
+workflows  ▁▁▁▂▁▂▂▆●▄▁▁   #29 of 114     99%     27
 </pre>
 
-<details><summary>workflows · #11 of 57 · 99% of its score</summary>
+<details><summary>workflows · #29 of 114 · 99% of its score</summary>
 
-Trails [Jev 1.13](jev-1-13.md) here, though they rank lower overall.
+Beats [d1.1 (hosted)](liquid-d1-1.md), [Span-02 (Gemma 4 26B-A4B)](decision-span-02.md), [Mercury Decide (free endpoint)](mercury-decide.md) here, though they rank higher overall. Trails [StartLux-Decision v1.1 2B](decision-startlux-decision-v1-1-2b-instant.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · action selecti…</a>   60.9%  ▂▁▂▃▄▃▁▁▂█●▄ beats 44/56  hard · avg 26%          18%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   75.7%  ▁▁▁▁▂▂▁▁▁▁▃● beats 44/56  hard · avg 29%          14%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   72.0%  ▁▁·▃▁▁▁▁▁▁▃● beats 46/56  hard · avg 22%          12%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · record classif…</a>   43.0%  ▃▂▁▂▂▂▄▁▃●██ beats 34/56  hard · avg 21%          10%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · verification (…</a>   60.0%  ▁▁▅▁▃▂▂▁▁▇●█ beats 37/56  medium · avg 40%       7.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · document recor…</a>   53.5%  ▂▂·▁▂▄▃▆▄●▁▁ beats 40/56  hard · avg 27%         5.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   49.1%  ▁▁▅▅▃▃▅●▃▃·▁ beats 41/56  hard · avg 27%         4.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   87.0%  ▁·▁·▂▃▄▃▂█●▂ beats 47/56  medium · avg 45%       3.7%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · completion ass…</a>   96.0%  ▁▁▂▃▄·▂▁▁▆█● beats 55/56  medium · avg 51%       3.2%  sharp · maxed out
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · content classi…</a>   80.0%  ▁····▁▁▁▁▁▁● beats 46/56  medium · avg 41%       3.2%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · review scoring…</a>   62.0%  ▁······▂▃▅▇● beats 50/56  hard · avg 32%         3.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   94.6%  ▃▃▂·▁▁▁▁▁▁●▅ beats 45/56  medium · avg 38%       2.7%  sharp · maxed out · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   56.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 42/56  very hard · avg 12%    2.6%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · target selecti…</a>   47.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 46/56  very hard · avg 11%    2.6%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   68.0%  ▁▁·▁▂▂▁▃▃█●▃ beats 45/56  medium · avg 45%       2.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   60.6%  ▂·▁▁▆█▅●▃▂▁▁ beats 43/56  hard · avg 33%         1.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   87.6%  █▁▂▁▁▁▁▁▂●▁▁ beats 45/56  medium · avg 55%       0.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · document workf…</a>   75.4%  █▄▃▁▁●▂▂▁·▁▁ beats 42/56  medium · avg 51%       0.8%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.3%  ▁▁▁▂▆▃▃●···▁ beats 51/56  medium · avg 38%       0.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · safety gating …</a>   98.0%  ▂·····▆█▂▂▄● beats 55/56  medium · avg 51%       0.4%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · document class…</a>   37.0%  ▂▁·▂▁▁▁▄▁▂▂● beats 51/56  very hard · avg 13%    0.4%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   86.0%  ▁·▁▁·▁▁█▂▃●▂ beats 49/56  medium · avg 55%       0.3%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · content modera…</a>  100.0%  ▁····▃▅▃▂▂·● beats 51/56  medium · avg 61%       0.2%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · context manage…</a>   86.5%  ▁·····▁▇▆▁●▃ beats 34/56  medium · avg 59%       0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   98.6%  ▁·▁▄▇▄▅▄▂▁●█ beats 44/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · function agent…</a>   93.8%  ▃▃▄▅▆▂▅▄●▄█▃ beats 39/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · routing triage…</a>   71.5%  █▁···▁·▂▆●▂▂ beats 44/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · action selecti…</a>   60.9%  ▂▁▂▃▄▃▁▁▂█●▄ beats 44/56  medium · avg 51%        21%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   75.7%  ▁▁▁▁▂▂▁▁▁▁▃● beats 44/56  medium · avg 64%        13%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   72.0%  ▁▁·▃▁▁▁▁▁▁▃● beats 46/56  medium · avg 58%        10%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · record classif…</a>   43.0%  ▃▂▁▂▂▂▄▁▃●██ beats 34/56  medium · avg 39%        10%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · verification (…</a>   60.0%  ▁▁▅▁▃▂▂▁▁▇●█ beats 37/56  medium · avg 56%       6.6%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · document recor…</a>   53.5%  ▂▂·▁▂▄▃▆▄●▁▁ beats 40/56  medium · avg 46%       5.5%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   49.1%  ▁▁▅▅▃▃▅●▃▃·▁ beats 41/56  medium · avg 45%       4.7%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   87.0%  ▁·▁·▂▃▄▃▂█●▂ beats 47/56  easy · avg 78%         3.8%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · completion ass…</a>   96.0%  ▁▁▂▃▄·▂▁▁▆█● beats 55/56  very easy · avg 86%    3.3%  sharp · maxed out
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · content classi…</a>   80.0%  ▁····▁▁▁▁▁▁● beats 46/56  easy · avg 73%         3.0%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · review scoring…</a>   62.0%  ▁······▂▃▅▇● beats 50/56  medium · avg 52%       3.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   94.6%  ▃▃▂·▁▁▁▁▁▁●▅ beats 45/56  very easy · avg 86%    2.6%  sharp · maxed out · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   56.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 42/56  medium · avg 35%       2.5%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · target selecti…</a>   47.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 46/56  hard · avg 29%         2.4%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   68.0%  ▁▁·▁▂▂▁▃▃█●▃ beats 45/56  medium · avg 62%       2.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   60.6%  ▂·▁▁▆█▅●▃▂▁▁ beats 43/56  medium · avg 52%       1.3%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · document workf…</a>   75.4%  █▄▃▁▁●▂▂▁·▁▁ beats 42/56  easy · avg 66%         0.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   87.6%  █▁▂▁▁▁▁▁▂●▁▁ beats 45/56  easy · avg 74%         0.7%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.3%  ▁▁▁▂▆▃▃●···▁ beats 51/56  medium · avg 52%       0.6%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · safety gating …</a>   98.0%  ▂·····▆█▂▂▄● beats 55/56  easy · avg 77%         0.4%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · document class…</a>   37.0%  ▂▁·▂▁▁▁▄▁▂▂● beats 51/56  hard · avg 21%         0.4%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   86.0%  ▁·▁▁·▁▁█▂▃●▂ beats 49/56  easy · avg 71%         0.3%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · content modera…</a>  100.0%  ▁····▃▅▃▂▂·● beats 51/56  easy · avg 82%         0.2%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · context manage…</a>   86.5%  ▁·····▁▇▆▁●▃ beats 34/56  easy · avg 73%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   98.6%  ▁·▁▄▇▄▅▄▂▁●█ beats 44/56  easy · avg 66%         0.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · function agent…</a>   93.8%  ▃▃▄▅▆▂▅▄●▄█▃ beats 39/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">DecisionBench v1 · routing triage…</a>   71.5%  █▁···▁·▂▆●▂▂ beats 44/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -64,15 +62,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/ekzhang__openjev-sglang/1355db6a052410cfd62085d94b58866fd0f2c3c5/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 72.3
+weighted average                                   = 59.7
 </pre>
 
 <sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/tree/1355db6a052410cfd62085d94b58866fd0f2c3c5) · Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/nvidia/Qwen3.6-35B-A3B-NVFP4/revision/1355db6a052410cfd62085d94b58866fd0f2c3c5); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-ekzhang-openjev-sglang-1355db6a) · [JSON](https://whatmodel.sh/api?format=json&all=1)

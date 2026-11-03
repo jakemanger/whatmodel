@@ -26,19 +26,19 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.emnlp-main.102.pdf">WinoGrande</a>                           72.5%  ▃·▃▃▃▅·●···▃ beats 7/9     easy · avg 87%          12%  at its level · several runs
 <a href="https://arxiv.org/html/2210.17323v2">ARC Easy</a>                             71.0%  ▅▃▃▃▃▃▃▃▅·█● beats 14/14   easy · avg 83%         8.0%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     79.8%  ▂▂▄▂·▂·▆·▂█● beats 14/14   easy · avg 89%         7.7%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2212.12017v3">MMLU (lab)</a>                           34.2%  ▁▁▁▁▁●▂▅██▆▄ beats 18/214  medium · avg 59%       4.8%  small run
-<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (lab)</a>                 30.2%  ▁▁▁●▂▄▅▆█▃▃▁ beats 11/155  medium · avg 59%       4.6%  sharp · noisy · small run
+<a href="https://arxiv.org/html/2212.12017v3">MMLU (maker)</a>                         34.2%  ▁▁▁▁▁●▂▅██▆▄ beats 18/214  medium · avg 59%       4.8%  small run
+<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (maker)</a>               30.2%  ▁▁▁●▂▄▅▆█▃▃▁ beats 11/155  medium · avg 59%       4.6%  sharp · noisy · small run
 <a href="https://arxiv.org/html/2210.17323v2">PIQA</a>                                 81.1%  ▄·█▄·█▄▄▄██● beats 14/14   easy · avg 88%         4.0%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   55.8%  ▁····▁▁·▁·▃● beats 8/11    hard · avg 63%         3.7%  typical
-<a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (lab)</a>                 60.3%  ▅▃·▃··▅·▅●▃█ beats 8/13    medium · avg 75%       3.3%  small run
-<a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (lab)</a>                 56.6%  █·▂▁······●▁ beats 12/13   medium · avg 71%       3.0%  sharp · too hard for it · noisy · small…
+<a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (maker)</a>               60.3%  ▅▃·▃··▅·▅●▃█ beats 8/13    medium · avg 75%       3.3%  small run
+<a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (maker)</a>               56.6%  █·▂▁······●▁ beats 12/13   medium · avg 71%       3.0%  sharp · too hard for it · noisy · small…
 <a href="https://arxiv.org/html/2210.17323v2">LAMBADA (OpenAI version), last-wo…</a>   75.6%  ▄▄▄█▄·█·▄██● beats 14/14   very easy · avg 87%    2.4%  blunt · at its level
-<a href="https://arxiv.org/html/2212.12017v3">COPA (lab)</a>                           87.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 50/67   very easy · avg 95%    2.0%  small run
-<a href="https://arxiv.org/html/2212.12017v3">BoolQ (lab)</a>                          60.1%  ▁····▁▂●▆▅▆▄ beats 12/103  easy · avg 84%         1.8%  at its level · small run
-<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (lab)</a>                     58.4%  ▅▁▁▁▂▂▃█●▁▃▁ beats 90/107  easy · avg 74%         1.7%  at its level · noisy · small run
+<a href="https://arxiv.org/html/2212.12017v3">COPA (maker)</a>                         87.0%  ▁·▁▁▁▅▅█●▂▁▁ beats 50/67   very easy · avg 95%    2.0%  small run
+<a href="https://arxiv.org/html/2212.12017v3">BoolQ (maker)</a>                        60.1%  ▁····▁▂●▆▅▆▄ beats 12/103  easy · avg 84%         1.8%  at its level · small run
+<a href="https://arxiv.org/html/2212.12017v3">OpenBookQA (maker)</a>                   58.4%  ▅▁▁▁▂▂▃█●▁▃▁ beats 90/107  easy · avg 74%         1.7%  at its level · noisy · small run
 <a href="https://arxiv.org/html/2212.12017v3">Winograd Schema Challenge (WSC273…</a>   85.3%  █▃·▅▃▃█▅█●▅▃ beats 16/21   easy · avg 92%         1.4%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (lab)</a>      46.4%  ▂▃·▂█●▂▂·▂·▂ beats 9/13    medium · avg 60%       0.4%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2212.12017v3">SuperGLUE WSC (prompted) (lab)</a>       51.4%  █··●·▃·▄▂▁▅▃ beats 8/26    medium · avg 70%       0.4%  blunt · noisy · small run
+<a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (maker)</a>    46.4%  ▂▃·▂█●▂▂·▂·▂ beats 9/13    medium · avg 60%       0.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2212.12017v3">SuperGLUE WSC (prompted) (maker)</a>     51.4%  █··●·▃·▄▂▁▅▃ beats 8/26    medium · avg 70%       0.4%  blunt · noisy · small run
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   69.9%  ▅▅▃█·▃··▃·▃● beats 11/11   hard · avg 66%         0.1%  blunt · at its level
 </pre>
 

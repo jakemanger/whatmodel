@@ -135,6 +135,6 @@ Other versions: 8bit (~54.8 GB, Mac only) `mlx_lm.chat --model ncls-p/AI21-Jamba
    vllm serve ai21labs/AI21-Jamba2-Mini --mamba-ssm-cache-dtype float32 --enable-auto-tool-choice --tool-call-parser hermes --enable-prefix-caching --quantization experts_int8
    ```
 
-Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba2-Mini)
+Model repository and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba2-Mini)
 
 [interactive version](https://whatmodel.sh/model/jamba2-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

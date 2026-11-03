@@ -132,6 +132,6 @@ Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-G
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/Falcon-H1-3B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/falcon-h1-3b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

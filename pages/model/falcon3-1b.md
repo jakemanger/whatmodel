@@ -153,6 +153,6 @@ Other versions: Q8_0 (~2.5 GB) `ollama run falcon3:1b-instruct-q8_0`
 
 Other versions: 8bit (~1.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Falcon3-1B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-1B-Instruct)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-1B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/falcon3-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

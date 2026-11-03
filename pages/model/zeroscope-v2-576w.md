@@ -56,6 +56,6 @@ weighted average                                   = 27.3
    python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w',torch_dtype=torch.float16);p.enable_model_cpu_offload();export_to_video(p('Darth Vader is surfing on waves',num_inference_steps=40,height=320,width=576,num_frames=24).frames[0],'zeroscope.mp4')"
    ```
 
-Official weights and documentation: [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_576w)
+Model repository and documentation: [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_576w)
 
 [interactive version](https://whatmodel.sh/model/zeroscope-v2-576w) · [JSON](https://whatmodel.sh/api?format=json&all=1)

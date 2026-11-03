@@ -61,6 +61,6 @@ api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-gui
 
 Other versions: BF16 (FISH-SPEECH OFFICIAL REPO CLI) (~3.61 GB) `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cpu]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i temp/codes_0.npy --device cpu`
 
-Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/s1-mini)
+Model repository and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/s1-mini)
 
 [interactive version](https://whatmodel.sh/model/openaudio-s1-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

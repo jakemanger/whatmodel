@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-03 · 0.83B params · coqui-public-model-license
 
-**score 32.1** ±4.2 · #102 of 119 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 32.1** ±4.2 · #102 of 119 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -52,6 +52,6 @@ weighted average                                   = 32.1
    git clone https://github.com/jasonppy/VoiceCraft && cd VoiceCraft && conda create -n voicecraft python=3.9.16 && conda activate voicecraft && pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft && pip install xformers==0.0.22 && pip install torchaudio==2.0.2 torch==2.0.1 && apt-get install ffmpeg && apt-get install espeak-ng && pip install tensorboard==2.16.2 && pip install phonemizer==3.2.1 && pip install datasets==2.16.0 && pip install torchmetrics==0.11.1 && pip install huggingface_hub==0.22.2 && conda install -c conda-forge montreal-forced-aligner=2.2.17 openfst=1.8.2 kaldi=5.5.1068 && mfa model download dictionary english_us_arpa && mfa model download acoustic english_us_arpa && python3 tts_demo.py -m giga830M
    ```
 
-Official weights and documentation: [huggingface.co/pyp1](https://huggingface.co/pyp1/VoiceCraft_giga830M)
+Model repository and documentation: [huggingface.co/pyp1](https://huggingface.co/pyp1/VoiceCraft_giga830M)
 
 [interactive version](https://whatmodel.sh/model/voicecraft-830m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

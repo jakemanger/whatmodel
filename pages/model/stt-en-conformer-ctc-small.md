@@ -35,8 +35,8 @@ test                            result  vs the others in its run  difficulty  co
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   11.2%  ▁▁▁▃··▁●▂██▆ beats 16/86   avg 8.2%       35%  blunt
-<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (lab)</a>      8.1%  ▁···▁▁●▆▆█▆▁ beats 5/56    avg 3.4%       21%  typical
-<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (lab)</a>      3.7%  ▁·▁·▁▁▁●▃▇█▆ beats 12/102  avg 1.8%      6.0%  blunt
+<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (maker)</a>    8.1%  ▁···▁▁●▆▆█▆▁ beats 5/56    avg 3.4%       21%  typical
+<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (maker)</a>    3.7%  ▁·▁·▁▁▁●▃▇█▆ beats 12/102  avg 1.8%      6.0%  blunt
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   69% ▇▇▇▇▇▇▇▇
-<a name="speech-nemo-asr-scores-apache"></a><a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">NVIDIA NeMo docs: ASR scores tables (la…</a>        2   27% ▇▇▇
+<a name="speech-nemo-asr-scores-apache"></a><a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">NVIDIA NeMo docs: ASR scores tables (su…</a>        2   27% ▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 38.8
 </pre>
@@ -65,6 +65,6 @@ weighted average                                   = 38.8
    uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/stt_en_conformer_ctc_small').transcribe(['audio.wav']))"
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/stt_en_conformer_ctc_small)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/stt_en_conformer_ctc_small)
 
 [interactive version](https://whatmodel.sh/model/stt-en-conformer-ctc-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -144,6 +144,6 @@ Other versions: 8bit (~9.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Gemm
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3)
+Model repository and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3)
 
 [interactive version](https://whatmodel.sh/model/gemma-2-9b-it-sppo-iter3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

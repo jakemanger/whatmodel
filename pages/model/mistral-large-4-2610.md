@@ -26,6 +26,6 @@ api (Mistral AI) · price unknown · [docs.mistral.ai](https://docs.mistral.ai/m
    docker run --runtime nvidia --gpus all -v ~/.cache/huggingface:/root/.cache/huggingface -p 8000:8000 --ipc=host vllm/vllm-openai:mistral-large-4 --model mistralai/Mistral-Large-4-1T-A52B --tensor-parallel-size 8 --tool-call-parser mistral --reasoning-parser mistral --enable-auto-tool-choice --gpu-memory-utilization 0.85
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/mistral-large-4-2610)

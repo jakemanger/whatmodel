@@ -30,7 +30,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               34.0%  ▃·●▅▃▃··█▃▃▅ beats 1/13     very hard · avg 9.9%     11%  sharp · at its level · several runs
+<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (maker)</a>             34.0%  ▃·●▅▃▃··█▃▃▅ beats 1/13     very hard · avg 9.9%     11%  sharp · at its level · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   48.5%  ▁··●·▁▂▁▄█▄▁ beats 1/29     hard · avg 19%          7.3%  sharp · at its level · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Retail</a>                      74.1%  ▅···█·●····▃ beats 5/6      medium · avg 40%        2.6%  at its level · several runs
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">τ²-bench Airline</a>                     56.0%  ▄·▄··▄···●▄▄ beats 4/6      hard · avg 28%          1.7%  at its level · several runs
@@ -57,7 +57,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">HumanEval+</a>                           93.3%  ▄▄▄·····▄●·█ beats 4/6    easy · avg 66%          1.3%  sharp
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   68.8%  ▁··▁·▁▁▁▆█●█ beats 29/45  hard · avg 29%          1.3%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MBPP+</a>                                79.4%  ▃·····●█▃··▃ beats 1/6    medium · avg 60%        1.2%  typical
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>       94.5%  ▆█▆▆●··▂···▂ beats 13/15  easy · avg 83%          0.5%  maxed out
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (maker)</a>     94.5%  ▆█▆▆●··▂···▂ beats 13/15  easy · avg 83%          0.5%  maxed out
 </pre>
 
 </details>
@@ -85,11 +85,11 @@ test                                result  vs the others in its run   difficult
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             6.0%  ▂··●▁▃▄▄█▆▄▃ beats 4/86    very hard · avg 1.2%    4.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         83.0%  ▂▂▅▆▄█▆▃●▂▃▄ beats 69/92   hard · avg 28%          2.6%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             38.3%  ▃▃▄▃▃●▇▇█▃▂▅ beats 71/197  very hard · avg 7.2%    1.7%  sharp · at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        82.1%  ▃··●▅▃···▃·█ beats 2/9     medium · avg 61%        1.3%  sharp
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (maker)</a>      82.1%  ▃··●▅▃···▃·█ beats 2/9     medium · avg 61%        1.3%  sharp
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2025</a>                            32.0%  ●▄···▄▄··▄·█ beats 0/6     hard · avg 16%          1.1%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-average …</a>   21.4%  ▃●···█▃·▃·▃▃ beats 1/8     very hard · avg 15%     0.7%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">AIME 2024</a>                            47.0%  ▁▁▁▂▁▃▁●███▃ beats 21/85   hard · avg 30%          0.6%  sharp · at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            86.9%  ▁····▁●▁█▁▃▁ beats 3/16    easy · avg 80%          0.6%  typical
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (maker)</a>          86.9%  ▁····▁●▁█▁▃▁ beats 3/16    easy · avg 80%          0.6%  typical
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MATH-500</a>                             90.6%  ●·▄··█··▄·▄▄ beats 0/6     very easy · avg 87%     0.5%  maxed out · noisy
 </pre>
 
@@ -102,8 +102,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1213.9  ▁▁▂▂▂▂▃▄▅●█▇ beats 79/152  avg 1061          1.5%  blunt
-<a href="https://openai.com/index/gpt-4-1">CharXiv (reasoning questions) (la…</a>   56.7%  ▄··▂●··▂···▄ beats 5/9     hard · avg 32%    1.4%  at its level
-<a href="https://openai.com/index/gpt-4-1">CharXiv descriptive questions (la…</a>   87.9%  ▄▄·····▄·●█▄ beats 3/6     easy · avg 71%    1.3%  typical
+<a href="https://openai.com/index/gpt-4-1">CharXiv (reasoning questions) (ma…</a>   56.7%  ▄··▂●··▂···▄ beats 5/9     hard · avg 32%    1.4%  at its level
+<a href="https://openai.com/index/gpt-4-1">CharXiv descriptive questions (ma…</a>   87.9%  ▄▄·····▄·●█▄ beats 3/6     easy · avg 71%    1.3%  typical
 </pre>
 
 </details>
@@ -124,7 +124,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.9%  ▁▁▁▁▂▄▆▄●▇█▅ beats 100/211  hard · avg 39%          6.1%  sharp · at its level · several runs
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    66.3%  █▃▃█·▃▃●▃▃▃▅ beats 10/16    hard · avg 39%          4.0%  sharp · at its level
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (make…</a>   66.3%  █▃▃█·▃▃●▃▃▃▅ beats 10/16    hard · avg 39%          4.0%  sharp · at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">MMLU</a>                                 89.6%  ▄·····●▄▄▄·▄ beats 1/6      medium · avg 68%        2.8%  typical
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           80.5%  ▆▄▄▄█●▂·▄█·▄ beats 14/23    medium · avg 56%        2.5%  typical
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   42.8%  █···▁▁▁●▃·▆▂ beats 11/23    very hard · avg 29%     2.4%  sharp · at its level
@@ -146,8 +146,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 6.0%  █●▁▁▁▂▃▃▃▂▁▁ beats 49/137   very hard · avg 5.8%    0.5%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4-1-2025-04-14">ARC-AGI-2 public evaluation set (…</a>    0.0%  ●··▂▅▁▃▁▃·▁▃ beats 2/24     very hard · avg 0.3%    0.5%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">BeyondAIME</a>                           22.1%  ●····█·▄▄··▄ beats 1/6      hard · avg 24%          0.3%  at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (lab)</a>        41.6%  ▄·▁▁▁▁··●▁·▁ beats 10/14    hard · avg 17%          0.2%  at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>   79.4%  ▂▂●▆▆█·▂···▄ beats 2/16     easy · avg 78%          0.2%  blunt
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (maker)</a>      41.6%  ▄·▁▁▁▁··●▁·▁ beats 10/14    hard · avg 17%          0.2%  at its level · noisy
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (m…</a>   79.4%  ▂▂●▆▆█·▂···▄ beats 2/16     easy · avg 78%          0.2%  blunt
 <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md">DROP</a>                                 66.9%  ▄···●·▄█·▄·▄ beats 1/6      medium · avg 58%        0.1%  blunt · at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.0%  ▁▁▂▃▄▄█▆●▂▂▁ beats 121/140  very easy · avg 94%     0.1%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.4%  ▁▂▁▂▅█▂▃●▃▁▁ beats 80/98    very easy · avg 90%     0.0%  blunt

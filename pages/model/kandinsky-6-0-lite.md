@@ -6,7 +6,7 @@
 
 Sber · released 2026-10 · 3B params · mit
 
-**score 51.1** ±7.4 · #51 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 51.1** ±7.4 · #51 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [LTX-2.5](ltx-2-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA (lab)</a>   69.1%  ▄█··●·▄···▄█ beats 3/7    easy · avg 68%     76%  at its level · small run
+<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA (mak…</a>   69.1%  ▄█··●·▄···▄█ beats 3/7    easy · avg 68%     76%  at its level · small run
 </pre>
 
 </details>
@@ -51,6 +51,6 @@ weighted average                                   = 51.1
    uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c "import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)"
    ```
 
-Official weights and documentation: [huggingface.co/kandinskylab](https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers)
+Model repository and documentation: [huggingface.co/kandinskylab](https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-6-0-lite) · [JSON](https://whatmodel.sh/api?format=json&all=1)

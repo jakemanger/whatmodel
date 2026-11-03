@@ -119,6 +119,6 @@ Other versions: Q8_0 (~1.8 GB) `lms get https://huggingface.co/mradermacher/stab
    mlx_lm.server --model mlx-community/stablelm-2-1_6b-chat-4bit
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-1_6b-chat)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-1_6b-chat)
 
 [interactive version](https://whatmodel.sh/model/stablelm-2-1-6b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

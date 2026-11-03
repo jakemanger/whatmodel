@@ -106,6 +106,6 @@ Other versions: Q8_0 (~13 GB) `ollama run hf.co/bartowski/krutrim-ai-labs_Krutri
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='krutrim-ai-labs/Krutrim-2-instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/krutrim-ai-labs](https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct)
+Model repository and documentation: [huggingface.co/krutrim-ai-labs](https://huggingface.co/krutrim-ai-labs/Krutrim-2-instruct)
 
 [interactive version](https://whatmodel.sh/model/krutrim-2-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

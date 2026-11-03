@@ -105,6 +105,6 @@ weighted average                                   = 45.4
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='dphn/dolphin-2.6-mixtral-8x7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b)
+Model repository and documentation: [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.6-mixtral-8x7b)
 
 [interactive version](https://whatmodel.sh/model/dolphin-2-6-mixtral-8x7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

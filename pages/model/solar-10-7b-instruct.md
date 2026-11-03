@@ -139,6 +139,6 @@ Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/mradermacher/SOL
 
 Other versions: Q8_0 (~13.34 GB) `ollama run solar:10.7b-instruct-v1-q8_0`
 
-Official weights and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0)
+Model repository and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0)
 
 [interactive version](https://whatmodel.sh/model/solar-10-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

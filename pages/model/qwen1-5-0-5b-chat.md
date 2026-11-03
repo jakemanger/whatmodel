@@ -121,6 +121,6 @@ Other versions: 4bit (~0.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/Qwen1.5-0.5B-Chat-4bit
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-0-5b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

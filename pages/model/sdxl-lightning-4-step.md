@@ -65,6 +65,6 @@ weighted average                                   = 36.9
 
 Other versions: fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/sdxl_lightning_4step.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sdxl_lightning_4step.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v`
 
-Official weights and documentation: [huggingface.co/ByteDance](https://huggingface.co/ByteDance/SDXL-Lightning)
+Model repository and documentation: [huggingface.co/ByteDance](https://huggingface.co/ByteDance/SDXL-Lightning)
 
 [interactive version](https://whatmodel.sh/model/sdxl-lightning-4-step) · [JSON](https://whatmodel.sh/api?format=json&all=1)

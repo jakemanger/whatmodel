@@ -32,7 +32,7 @@ Beats [Hy4 preview (770B-A49B)](hy4-preview.md), [GPT-5.6 Terra](gpt-5-6-terra.m
 test                                    result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0223 IPS  ▁▁▁▃▃▂●▁▂▂▁▁ beats 36/59  avg -0.379 IPS           11%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-luna-max-codex.json">Terminal-Bench 4.0</a>                       16.4%  █●▅▅▅·▅▃▃▅▅▅ beats 4/20   very hard · avg 0.5%    4.1%  sharp
-<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>            66.6%  ●··▃▃····▃·▃ beats 0/6    hard · avg 22%          2.2%  at its level
+<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (maker)</a>          66.6%  ●··▃▃····▃·▃ beats 0/6    hard · avg 22%          2.2%  at its level
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1579.4  ▁▁▃▂▅█▃▆●▅▁▂ beats 92/129  avg 981           7.3%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   80.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 34/49   hard · avg 17%    2.7%  sharp
-<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        66.6%  ●··▃▃····▃·▃ beats 0/6     hard · avg 22%    2.2%  at its level
+<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (maker)</a>      66.6%  ●··▃▃····▃·▃ beats 0/6     hard · avg 22%    2.2%  at its level
 </pre>
 
 </details>
@@ -106,11 +106,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.5%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 176/211  hard · avg 39%          2.5%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    41.4%  ▁▁▃▂▃▃▆●█▄▂▅ beats 38/81    very hard · avg 8.0%    1.6%  at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   57.1%  ▁▁▃▂▂▄▁▃▄●▄█ beats 25/38    very hard · avg 14%     1.5%  at its level
-<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Professional (lab)</a>       60.8%  ▄·▄··▄▄·▄●·█ beats 5/8      hard · avg 20%          1.5%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Professional (maker)</a>     60.8%  ▄·▄··▄▄·▄●·█ beats 5/8      hard · avg 20%          1.5%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   26.7%  ▄·█▄▄●██·▄▄█ beats 5/13     very hard · avg 1.6%    1.1%  sharp · at its level · noisy
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   95.6%  ▁▁▃▁█▄▃●▆▂▂▂ beats 30/49    easy · avg 77%          0.9%  maxed out
-<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Hard (lab)</a>               25.4%  ▂··●····▂▄·█ beats 1/8      very hard · avg 9.6%    0.9%  blunt · at its level
-<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench (lab)</a>                    50.0%  ▃·●·····█▃▃▅ beats 1/8      hard · avg 24%          0.9%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Hard (maker)</a>             25.4%  ▂··●····▂▄·█ beats 1/8      very hard · avg 9.6%    0.9%  blunt · at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench (maker)</a>                  50.0%  ▃·●·····█▃▃▅ beats 1/8      hard · avg 24%          0.9%  blunt · at its level
 </pre>
 
 </details>

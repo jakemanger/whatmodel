@@ -121,6 +121,6 @@ Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/unsloth/medgemma
    mlx_lm.server --model andosen/medgemma-27b-it-mlx-5Bit
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-27b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-27b-it)
 
 [interactive version](https://whatmodel.sh/model/medgemma-27b-it) · [JSON](https://whatmodel.sh/api?format=json&all=1)

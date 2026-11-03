@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 7.82B params · exaone
 
-**score 50.2** ±3.6 · #475 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.2** ±3.6 · #475 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -119,6 +119,6 @@ Other versions: 4bit (~4.4 GB, Mac only) `lms get https://huggingface.co/alexand
    mlx_lm.server --model alexander583/EXAONE-3.5-7.8B-Instruct-Q4-mlx
    ```
 
-Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
+Model repository and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/exaone-3-5-7-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

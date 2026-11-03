@@ -41,9 +41,9 @@ Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       83.9%  ●·▄▄·▄▄█···▄ beats 0/7     very easy · avg 91%      18%  typical
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>                     83.9%  ●·▄▄·▄▄█···▄ beats 0/7     very easy · avg 91%      18%  typical
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   62.9%  ●█·▄····▄▄·█ beats 0/7     easy · avg 76%          8.1%  at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      28.9%  ●·▃·▃▃···█·▃ beats 0/7     medium · avg 50%        5.1%  sharp · noisy
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>                    28.9%  ●·▃·▃▃···█·▃ beats 0/7     medium · avg 50%        5.1%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             21.4%  ▃▃▄▃●▃▇▇█▃▂▅ beats 59/197  very hard · avg 7.2%    0.3%  sharp · too hard for it · noisy
 </pre>
 
@@ -69,7 +69,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (lab)</a>        4   44% ▇▇▇▇▇
+<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (sub…</a>        4   44% ▇▇▇▇▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   13% ▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   12% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    9% ▇
@@ -165,7 +165,7 @@ Other versions: Q8_0 (~2.64 GB) `ollama run deepseek-r1:1.5b-qwen-distill-q8_0`
 
 Other versions: 8bit (~1.9 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Qwen-1.5B-8bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 
 ## Quantization evidence
 

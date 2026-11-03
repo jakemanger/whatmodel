@@ -27,10 +27,10 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                          64.7%  ▄▄····●·▄··█ beats 2/5    medium · avg 61%    2.5%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                     89.9%  ▂·······▂·▂● beats 4/6    easy · avg 78%      2.3%  sharp · noisy
+<a href="https://arxiv.org/html/2512.13961v2">MBPP+ (maker)</a>                        64.7%  ▄▄····●·▄··█ beats 2/5    medium · avg 61%    2.5%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (maker)</a>                   89.9%  ▂·······▂·▂● beats 4/6    easy · avg 78%      2.3%  sharp · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">LiveCodeBench v6 (window unspecif…</a>   59.8%  ▂▃▄▄▅●█▆▄▇▄▆ beats 24/67  medium · avg 42%    2.3%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>               75.2%  ▃▃·····▃·●·█ beats 3/6    medium · avg 64%    2.3%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (maker)</a>             75.2%  ▃▃·····▃·●·█ beats 3/6    medium · avg 64%    2.3%  at its level
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Beats [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md), [Granite 4.2 8B](granite-4-2-8
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (l…</a>   52.1%  █···█·●·█·██ beats 2/5    medium · avg 43%    3.7%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (m…</a>   52.1%  █···█·●·█·██ beats 2/5    medium · avg 43%    3.7%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   88.2%  ▄▄·····█●▄·▄ beats 4/6    easy · avg 75%      1.1%  noisy · several runs
 </pre>
 
@@ -52,11 +52,11 @@ test                                result  vs the others in its run  difficulty
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall.
 
 <pre>
-test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                     64.6%  ▄··▄····█●▄▄ beats 4/6    medium · avg 50%        10%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     71.6%  ▄·····▄··▄●█ beats 3/6    medium · avg 58%       7.8%  sharp · at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     95.1%  ▃·····▃···▅● beats 5/6    very easy · avg 91%    5.4%  maxed out
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   37.8%  ▄······●▄▄·█ beats 1/6    hard · avg 31%         4.2%  at its level
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (maker)</a>                    64.6%  ▄··▄····█●▄▄ beats 4/6    medium · avg 50%        10%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (maker)</a>                    71.6%  ▄·····▄··▄●█ beats 3/6    medium · avg 58%       7.8%  sharp · at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (maker)</a>    95.1%  ▃·····▃···▅● beats 5/6    very easy · avg 91%    5.4%  maxed out
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (make…</a>   37.8%  ▄······●▄▄·█ beats 1/6    hard · avg 31%         4.2%  at its level
 </pre>
 
 </details>
@@ -66,15 +66,15 @@ test                               result  vs the others in its run  difficulty 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4130  ▁▄▃●▇▄█▃▅▁▁▁ beats 6/30     avg 0.418            12%  sharp
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      46.2%  ▃······▃·●·█ beats 2/6      hard · avg 43%      9.1%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 86.6%  ▄·····▄·▄·●█ beats 4/6      easy · avg 77%      8.2%  sharp
-<a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           77.8%  ▄···▄··●··▄█ beats 3/6      easy · avg 76%      6.0%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (maker)</a>    46.2%  ▃······▃·●·█ beats 2/6      hard · avg 43%      9.1%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (maker)</a>               86.6%  ▄·····▄·▄·●█ beats 4/6      easy · avg 77%      8.2%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">MMLU (maker)</a>                         77.8%  ▄···▄··●··▄█ beats 3/6      easy · avg 76%      6.0%  at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   41.3%  ▂▃▅●▆▃█▅█▅▃▆ beats 6/34     medium · avg 41%    5.2%  blunt · at its level
-<a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                81.5%  ▄····▄·●▄··█ beats 2/5      easy · avg 76%      3.4%  typical
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     66.5%  █▄····▄·●·▄▄ beats 4/6      medium · avg 52%    2.8%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">AGIEval English (maker)</a>              81.5%  ▄····▄·●▄··█ beats 2/5      easy · avg 76%      3.4%  typical
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (maker)</a>                   66.5%  █▄····▄·●·▄▄ beats 4/6      medium · avg 52%    2.8%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">MMLU-Redux</a>                           71.3%  ▁▁●▁▂▃▄▅▇▅█▄ beats 2/63     easy · avg 76%      2.7%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond</a>                         29.3%  ▁▁▁●▂▄▅▅███▄ beats 17/322   hard · avg 41%      2.6%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          23.7%  ▄··█···●···█ beats 3/5      hard · avg 20%      2.1%  typical
+<a href="https://arxiv.org/html/2512.13961v2">PopQA (maker)</a>                        23.7%  ▄··█···●···█ beats 3/5      hard · avg 20%      2.1%  typical
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   41.6%  █·██·●█····█ beats 3/5      medium · avg 36%    1.5%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   60.4%  ▃·▁▁▂▁▂●█▇▄▁ beats 35/100   medium · avg 67%    1.2%  sharp · at its level · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GSM-Plus</a>                             88.1%  ▁··▁▁▁·▃▁▄●▁ beats 12/16    easy · avg 84%      1.2%  blunt
@@ -89,9 +89,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3 (lab)</a>                                   14   62% ▇▇▇▇▇▇▇
+<a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3 (submitted / maker-reported)</a>            14   62% ▇▇▇▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   17% ▇▇
-<a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card (lab)</a>        2   10% ▇
+<a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card (sub…</a>        2   10% ▇
 <a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">JetBrains/Mellum2-12B-A2.5B-Thinking mo…</a>        5    9% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 prior: pull toward the middle                        0% ▇
@@ -183,6 +183,6 @@ Other versions: Q8_0 (~9.26 GB) `ollama run olmo-3:7b-think-q8_0`
 
 Other versions: 8bit (~7.8 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Olmo-3-7B-Think-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3-7B-Think)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3-7B-Think)
 
 [interactive version](https://whatmodel.sh/model/olmo-3-7b-think) · [JSON](https://whatmodel.sh/api?format=json&all=1)

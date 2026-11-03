@@ -110,6 +110,6 @@ Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/TheBloke/minotaur-13B-fixed-GG
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openaccess-ai-collective/minotaur-13b-fixed', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openaccess-ai-collective](https://huggingface.co/openaccess-ai-collective/minotaur-13b-fixed)
+Model repository and documentation: [huggingface.co/openaccess-ai-collective](https://huggingface.co/openaccess-ai-collective/minotaur-13b-fixed)
 
 [interactive version](https://whatmodel.sh/model/minotaur-13b-fixed) · [JSON](https://whatmodel.sh/api?format=json&all=1)

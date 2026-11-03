@@ -110,6 +110,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/ToolACE-2-Llama-3.
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Team-ACE/ToolACE-2-Llama-3.1-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Team-ACE](https://huggingface.co/Team-ACE/ToolACE-2-Llama-3.1-8B)
+Model repository and documentation: [huggingface.co/Team-ACE](https://huggingface.co/Team-ACE/ToolACE-2-Llama-3.1-8B)
 
 [interactive version](https://whatmodel.sh/model/toolace-2-llama-3-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

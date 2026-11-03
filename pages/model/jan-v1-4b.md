@@ -119,6 +119,6 @@ Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 Other versions: 8bit (~4.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Jan-v1-4B-8bit`
 
-Official weights and documentation: [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B)
+Model repository and documentation: [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B)
 
 [interactive version](https://whatmodel.sh/model/jan-v1-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

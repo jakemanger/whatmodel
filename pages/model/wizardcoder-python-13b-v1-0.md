@@ -24,10 +24,10 @@ coding  ▁▁▁▃▅●█▇▅▄▃▁   #355 of 469     97%      3
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>   64.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 120/205  easy · avg 79%       56%  sharp · at its level · small run
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        36.5%  ▁··▁▅●█▇▁··▁ beats 7/22     medium · avg 52%     21%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        41.3%  ▁·▂▃▁●▁▂···▁ beats 13/22    medium · avg 51%     20%  blunt · at its level
+test               result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (maker)</a>   64.0%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 120/205  easy · avg 79%       56%  sharp · at its level · small run
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>          36.5%  ▁··▁▅●█▇▁··▁ beats 7/22     medium · avg 52%     21%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>          41.3%  ▁·▂▃▁●▁▂···▁ beats 13/22    medium · avg 51%     20%  blunt · at its level
 </pre>
 
 </details>
@@ -104,6 +104,6 @@ Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/WizardC
 
 Other versions: Q8_0 (~14 GB) `ollama run wizardcoder:13b-python-q8_0`
 
-Official weights and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0)
+Model repository and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0)
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-python-13b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

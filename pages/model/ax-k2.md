@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 68.1** ±1.3 · #98 of 732 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.1** ±1.3 · #98 of 732 · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](gro
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (lab)</a>    41.0%  ▄·····▄●▄▄·▄ beats 2/6    hard · avg 16%      8.9%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (make…</a>   41.0%  ▄·····▄●▄▄·▄ beats 2/6    hard · avg 16%      8.9%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   84.0%  ▄··█····▄●·█ beats 4/6    medium · avg 47%    8.4%  typical
 </pre>
 
@@ -37,8 +37,8 @@ test                                result  vs the others in its run  difficulty
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   97.1%  ▄·▄·▄▄··█··● beats 6/6    medium · avg 57%    7.5%  sharp · maxed out · noisy
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (maker)</a>   97.1%  ▄·▄·▄▄··█··● beats 6/6    medium · avg 57%    7.5%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -47,9 +47,9 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   85.6%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 44%           35%  sharp
-<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               87.6%  ▃······●··█▃ beats 2/6    medium · avg 61%         16%  typical
-<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>           27.8%  ▂········●·▂ beats 3/6    very hard · avg 5.4%     15%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (maker)</a>                 85.6%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 44%           35%  sharp
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (maker)</a>             87.6%  ▃······●··█▃ beats 2/6    medium · avg 61%         16%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (maker)</a>         27.8%  ▂········●·▂ beats 3/6    very hard · avg 5.4%     15%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   75.9%  ▃······●▃▃·▃ beats 2/6    medium · avg 45%        9.2%  typical
 </pre>
 
@@ -60,10 +60,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 68.1
+source                                    results  share of the score
+<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (submitted / ma…</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 68.1
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
@@ -78,6 +78,6 @@ weighted average                        = 68.1
    vllm serve skt/A.X-K2 --tensor-parallel-size 8
    ```
 
-Official weights and documentation: [huggingface.co/skt](https://huggingface.co/skt/A.X-K2)
+Model repository and documentation: [huggingface.co/skt](https://huggingface.co/skt/A.X-K2)
 
 [interactive version](https://whatmodel.sh/model/ax-k2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

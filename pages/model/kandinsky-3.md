@@ -73,6 +73,6 @@ Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · vi
    uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-3', torch_dtype=torch.float16, variant='fp16').to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
    ```
 
-Official weights and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-3)
+Model repository and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-3)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

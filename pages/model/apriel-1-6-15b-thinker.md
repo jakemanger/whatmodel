@@ -6,7 +6,7 @@
 
 ServiceNow · released 2025-11 · 14.9B params · mit
 
-**score 61.5** ±1.4 · #190 of 732 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.5** ±1.4 · #190 of 732 · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ vision &amp; documents  ▁▁▂▂▁▃▄●▆▇█▄    #96 of 153*     
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>      66.7%  █▄··●··▄·▄·▄ beats 3/6    medium · avg 36%        13%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>     58.0%  ▄▄······▄●▄▄ beats 4/6    hard · avg 28%          10%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>   23.0%  ●·█▄·······█ beats 1/6    very hard · avg 10%    9.4%  sharp · at its level
+test                        result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (maker)</a>      66.7%  █▄··●··▄·▄·▄ beats 3/6    medium · avg 36%        13%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (maker)</a>     58.0%  ▄▄······▄●▄▄ beats 4/6    hard · avg 28%          10%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (maker)</a>   23.0%  ●·█▄·······█ beats 1/6    very hard · avg 10%    9.4%  sharp · at its level
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here,
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   37.7%  ●▄····▄··█·▄ beats 0/6    very hard · avg 7.3%     51%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>             23.0%  ●·█▄·······█ beats 1/6    very hard · avg 10%     9.4%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (maker)</a>           23.0%  ●·█▄·······█ beats 1/6    very hard · avg 10%     9.4%  sharp · at its level
 </pre>
 
 </details>
@@ -52,8 +52,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions) (la…</a>   56.0%  ▄·····●▄·▄·█ beats 1/5    hard · avg 31%    7.2%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions (la…</a>   89.8%  ▄····▄···●▄▄ beats 2/5    easy · avg 67%    4.3%  noisy
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions) (ma…</a>   56.0%  ▄·····●▄·▄·█ beats 1/5    hard · avg 31%    7.2%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions (ma…</a>   89.8%  ▄····▄···●▄▄ beats 2/5    easy · avg 67%    4.3%  noisy
 </pre>
 
 </details>
@@ -163,6 +163,6 @@ Other versions: gguf-q8_0 (~18.38 GB) `ollama run hf.co/bartowski/ServiceNow-AI_
 
 Other versions: 8bit (~15.3 GB, Mac only) `mlx_lm.chat --model cnfusion/Apriel-1.6-15b-Thinker-mlx-8Bit`
 
-Official weights and documentation: [huggingface.co/ServiceNow-AI](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker)
+Model repository and documentation: [huggingface.co/ServiceNow-AI](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker)
 
 [interactive version](https://whatmodel.sh/model/apriel-1-6-15b-thinker) · [JSON](https://whatmodel.sh/api?format=json&all=1)

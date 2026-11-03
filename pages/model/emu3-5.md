@@ -53,6 +53,6 @@ weighted average                                   = 57.0
    git clone https://github.com/baaivision/Emu3.5 && cd Emu3.5 && pip install -r requirements/transformers.txt && pip install flash_attn==2.8.3 --no-build-isolation && CUDA_VISIBLE_DEVICES=0,1 python inference.py --cfg configs/example_config_visual_guidance.py && python src/utils/vis_proto.py --input outputs/emu3p5
    ```
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3.5)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3.5)
 
 [interactive version](https://whatmodel.sh/model/emu3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

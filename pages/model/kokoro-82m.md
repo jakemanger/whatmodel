@@ -67,6 +67,6 @@ api (DeepInfra) · $0.62/M chars · [deepinfra.com](https://deepinfra.com/hexgra
 
 Other versions: fp32 (kokoro package 0.9.4) (~0.33 GB) `pip install "kokoro>=0.9.4" soundfile && python3 -m kokoro --text "The sky above the port was the color of television, tuned to a dead channel." -o file.wav`
 
-Official weights and documentation: [huggingface.co/hexgrad](https://huggingface.co/hexgrad/Kokoro-82M)
+Model repository and documentation: [huggingface.co/hexgrad](https://huggingface.co/hexgrad/Kokoro-82M)
 
 [interactive version](https://whatmodel.sh/model/kokoro-82m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

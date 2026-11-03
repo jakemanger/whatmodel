@@ -87,7 +87,7 @@ api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14
 
 Other versions: BF16 (~65.3 GB, NVIDIA only) `python generate.py --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --offload_model True --convert_model_dtype --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."` · BF16 (~65.3 GB, Mac only) `rapid-mlx serve wan2.2-t2v-a14b-bf16` · gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp) (~45 GB) `sd-cli -M vid_gen --diffusion-model models/Wan2.2-T2V-A14B-LowNoise-Q8_0.gguf --high-noise-diffusion-model models/Wan2.2-T2V-A14B-HighNoise-Q8_0.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p "a lovely cat" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0`
 
-Official weights and documentation: [huggingface.co/Wan-AI](https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B)
+Model repository and documentation: [huggingface.co/Wan-AI](https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B)
 
 ## Published speed measurements
 

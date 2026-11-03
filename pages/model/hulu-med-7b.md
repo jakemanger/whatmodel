@@ -44,6 +44,6 @@ weighted average                        = 49.4
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/ZJU-AI4H](https://huggingface.co/ZJU-AI4H/Hulu-Med-7B)
+Model repository and documentation: [huggingface.co/ZJU-AI4H](https://huggingface.co/ZJU-AI4H/Hulu-Med-7B)
 
 [interactive version](https://whatmodel.sh/model/hulu-med-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

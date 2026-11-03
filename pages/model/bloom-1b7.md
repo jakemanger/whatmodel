@@ -23,8 +23,8 @@ math    ▁●▃▅█▆▄█▄▂▁▁   #421 of 431*    2.0%      1
 <details><summary>coding · #4 of 6 · 4.1% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    4.0%  ▄···▄·●·█··▄ beats 2/5    easy · avg 79%    4.1%  sharp · too hard for it
+test               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (maker)</a>    4.0%  ▄···▄·●·█··▄ beats 2/5    easy · avg 79%    4.1%  sharp · too hard for it
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 85.1%  ▂··▂▃▂▂●▃▃█▂ beats 9/19    very easy · avg 98%     5.5%  blunt
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2023-12-21%2013%3A02%3A13.597525.json">TriviaQA</a>                             12.7%  ▁··▁█●▃▁▄▅▄█ beats 8/28    medium · avg 45%        5.0%  too hard for it · several runs
 <a href="https://arxiv.org/html/2210.17323v2">Story Cloze Test</a>                     65.4%  ▂▂▄●·▂·▆·▂█▂ beats 4/14    easy · avg 89%          4.7%  blunt · at its level · several runs
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           54.0%  ▃··●▅▃▃▅·▃▃▃ beats 1/12    very easy · avg 95%     4.7%  at its level · several runs
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         54.0%  ▃··●▅▃▃▅·▃▃▃ beats 1/12    very easy · avg 95%     4.7%  at its level · several runs
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b7/bloom-1b7_common_sense_reasoning_0-shot.json">HellaSwag</a>                            37.6%  ▄·▄●·▄·▄··▄█ beats 2/7     easy · avg 81%          4.5%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b7/bloom-1b7_reading_comprehension_0-shot.json">CoQA</a>                                 53.5%  ▄····▄●·▄▄·█ beats 2/6     very easy · avg 92%     3.3%  at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/bloom/bloom-1b7/bloom-1b7_common_sense_reasoning_0-shot.json">Winograd Schema Challenge (WSC273)</a>   72.9%  ▄▄·●·▄··█··█ beats 2/7     very easy · avg 93%     2.8%  blunt · at its level
@@ -155,6 +155,6 @@ Other versions: Q8_0 (~2.4 GB) `ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q8_
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-1b7)
+Model repository and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-1b7)
 
 [interactive version](https://whatmodel.sh/model/bloom-1b7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

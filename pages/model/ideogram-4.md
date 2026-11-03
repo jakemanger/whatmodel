@@ -71,6 +71,6 @@ api (Together AI) · $0.060/image · [together.ai](https://www.together.ai/model
 
 Other versions: nf4 (~6.08 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"` · fp8 + Qwen3-VL 8B q4_k_m (sd.cpp) (~29.2 GB) `sd-cli --diffusion-model models/ideogram4_fp8.safetensors --uncond-diffusion-model models/ideogram4_uncond_fp8.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf --vae models/flux2_ae.safetensors -p "$(cat caption.json)" --diffusion-fa -v --offload-to-cpu -H 1024 -W 1024`
 
-Official weights and documentation: [huggingface.co/ideogram-ai](https://huggingface.co/ideogram-ai/ideogram-4-fp8)
+Model repository and documentation: [huggingface.co/ideogram-ai](https://huggingface.co/ideogram-ai/ideogram-4-fp8)
 
 [interactive version](https://whatmodel.sh/model/ideogram-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

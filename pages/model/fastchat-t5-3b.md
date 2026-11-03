@@ -59,6 +59,6 @@ weighted average                                   = 21.1
 
 Other versions: fp16 (~6.71 GB, Mac only) `pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0 --device mps`
 
-Official weights and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/fastchat-t5-3b-v1.0)
+Model repository and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/fastchat-t5-3b-v1.0)
 
 [interactive version](https://whatmodel.sh/model/fastchat-t5-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

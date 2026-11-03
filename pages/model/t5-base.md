@@ -79,6 +79,6 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-base')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/google-t5](https://huggingface.co/google-t5/t5-base)
+Model repository and documentation: [huggingface.co/google-t5](https://huggingface.co/google-t5/t5-base)
 
 [interactive version](https://whatmodel.sh/model/t5-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -53,6 +53,6 @@ weighted average                                   = 59.5
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-405B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-405B)
+Model repository and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-405B)
 
 [interactive version](https://whatmodel.sh/model/coalm-405b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

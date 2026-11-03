@@ -68,6 +68,6 @@ weighted average                                   = 43.1
    pip install 'transformers>=4.39.0' 'deepspeed>=0.14.2' accelerate && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer; from deepspeed.linear.config import QuantizationConfig; r='Snowflake/snowflake-arctic-instruct'; t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained(r, trust_remote_code=True, low_cpu_mem_usage=True, device_map='auto', ds_quantization_config=QuantizationConfig(q_bits=8), max_memory={i: '150GiB' for i in range(8)}, torch_dtype=torch.bfloat16); x=t.apply_chat_template([{'role': 'user', 'content': '5x + 35 = 7x - 60 + 10. Solve for x'}], add_generation_prompt=True, return_tensors='pt').to('cuda'); print(t.decode(m.generate(input_ids=x, max_new_tokens=256)[0]))"
    ```
 
-Official weights and documentation: [huggingface.co/Snowflake](https://huggingface.co/Snowflake/snowflake-arctic-instruct)
+Model repository and documentation: [huggingface.co/Snowflake](https://huggingface.co/Snowflake/snowflake-arctic-instruct)
 
 [interactive version](https://whatmodel.sh/model/snowflake-arctic-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

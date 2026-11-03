@@ -52,6 +52,6 @@ weighted average                                   = 35.0
    python -c "import torch;from diffusers import AutoencoderKLAllegro,AllegroPipeline;from diffusers.utils import export_to_video;v=AutoencoderKLAllegro.from_pretrained('rhymes-ai/Allegro',subfolder='vae',torch_dtype=torch.float32);p=AllegroPipeline.from_pretrained('rhymes-ai/Allegro',vae=v,torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_tiling();export_to_video(p('A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water',guidance_scale=7.5,max_sequence_length=512,num_inference_steps=100).frames[0],'allegro.mp4',fps=15)"
    ```
 
-Official weights and documentation: [huggingface.co/rhymes-ai](https://huggingface.co/rhymes-ai/Allegro)
+Model repository and documentation: [huggingface.co/rhymes-ai](https://huggingface.co/rhymes-ai/Allegro)
 
 [interactive version](https://whatmodel.sh/model/allegro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

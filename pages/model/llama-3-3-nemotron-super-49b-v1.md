@@ -25,8 +25,8 @@ math            █··········●          #1 of 2     40%      3
 <details><summary>agent tasks · 0.0% of its score</summary>
 
 <pre>
-test                result  vs the others in its run  counts  why
-<a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (lab)</a>   73.7%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+test                  result  vs the others in its run  counts  why
+<a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (maker)</a>   73.7%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -58,10 +58,10 @@ test                                result  vs the others in its run    difficul
 Beats [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   60.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 47/133  medium · avg 38%        17%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   67.5%  ▁▁▁▂▁▃▁▅●██▃ beats 32/85   medium · avg 48%        14%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    96.6%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 63/85   very easy · avg 91%    8.9%  maxed out · small run
+test               result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (maker)</a>   60.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 47/133  medium · avg 38%        17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (maker)</a>   67.5%  ▁▁▁▂▁▃▁▅●██▃ beats 32/85   medium · avg 48%        14%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (maker)</a>    96.6%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 63/85   very easy · avg 91%    8.9%  maxed out · small run
 </pre>
 
 </details>
@@ -69,8 +69,8 @@ test             result  vs the others in its run   difficulty           counts 
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>   66.7%  ▁▁▁▁▂▄▅▅●██▄ beats 143/322  hard · avg 46%     21%  sharp · at its level · small run
+test                  result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (maker)</a>   66.7%  ▁▁▁▁▂▄▅▅●██▄ beats 143/322  hard · avg 46%     21%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -80,11 +80,11 @@ test                result  vs the others in its run    difficulty      counts  
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (lab)</a>                         6   73% ▇▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   26% ▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 58.1
+source                               results  share of the score
+<a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (submitted / maker-reported)</a>        6   73% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1   26% ▇▇▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 58.1
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -182,6 +182,6 @@ Other versions: ud-q2_k_xl (~19.31 GB) `ollama run hf.co/unsloth/Llama-3_3-Nemot
 
 Other versions: 8bit (~56.1 GB, Mac only) `mlx_lm.chat --model sjug/Llama-3_3-Nemotron-Super-49B-v1-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1)
 
 [interactive version](https://whatmodel.sh/model/llama-3-3-nemotron-super-49b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

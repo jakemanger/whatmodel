@@ -115,6 +115,6 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/Phind-C
 
 Other versions: Q8_0 (~36 GB) `ollama run phind-codellama:34b-v2-q8_0`
 
-Official weights and documentation: [huggingface.co/Phind](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)
+Model repository and documentation: [huggingface.co/Phind](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2)
 
 [interactive version](https://whatmodel.sh/model/phind-codellama-34b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

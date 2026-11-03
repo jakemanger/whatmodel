@@ -110,6 +110,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/CoALM-8B-GGUF:Q8_0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-8B)
+Model repository and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-8B)
 
 [interactive version](https://whatmodel.sh/model/coalm-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

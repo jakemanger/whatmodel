@@ -129,6 +129,6 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/bartowski/baichuan-inc_Baichua
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M2-32B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M2-32B)
+Model repository and documentation: [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M2-32B)
 
 [interactive version](https://whatmodel.sh/model/baichuan-m2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

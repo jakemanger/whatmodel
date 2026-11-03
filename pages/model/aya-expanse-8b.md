@@ -145,6 +145,6 @@ Other versions: Q8_0 (~10.14 GB) `ollama run aya-expanse:8b-q8_0`
 
 Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/aya-expanse-8b-8bit`
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/aya-expanse-8b)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/aya-expanse-8b)
 
 [interactive version](https://whatmodel.sh/model/aya-expanse-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

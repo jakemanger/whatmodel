@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 48.6** ±4.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 48.6** ±4.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -44,6 +44,6 @@ weighted average                                   = 48.6
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Video2World)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Video2World)
 
 [interactive version](https://whatmodel.sh/model/cosmos-1-0-diffusion-7b-video2world) · [JSON](https://whatmodel.sh/api?format=json&all=1)

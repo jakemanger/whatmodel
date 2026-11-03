@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md) · [decision](decision.md)
 
-updated 2026-10-31 02:55 UTC · 142 models · scores combine 55 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-11-03 02:37 UTC · 142 models · scores combine 55 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
@@ -230,4 +230,4 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
   —  <a href="model/stable-video-diffusion-xt.md">Stable Video Diffusion XT…</a>  no reviewed results  local                 ~8GB                 <a href="model/stable-video-diffusion-xt.md#run-it-on-your-own-machine">how to run ›</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 142 of 142 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 142 of 142 catalogue models listed here · [sources and licences](method.md#sources)

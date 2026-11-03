@@ -44,6 +44,6 @@ weighted average                        = 9.3
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/freyavoice](https://huggingface.co/freyavoice/freya-tts)
+Model repository and documentation: [huggingface.co/freyavoice](https://huggingface.co/freyavoice/freya-tts)
 
 [interactive version](https://whatmodel.sh/model/freyatts-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

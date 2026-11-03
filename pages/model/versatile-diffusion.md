@@ -64,6 +64,6 @@ weighted average                                   = 29.0
    uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import VersatileDiffusionTextToImagePipeline; p=VersatileDiffusionTextToImagePipeline.from_pretrained('shi-labs/versatile-diffusion', torch_dtype=torch.float16); p.remove_unused_weights(); p=p.to('cuda'); p('an astronaut riding on a horse on mars', generator=torch.Generator(device='cuda').manual_seed(0)).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/shi-labs](https://huggingface.co/shi-labs/versatile-diffusion)
+Model repository and documentation: [huggingface.co/shi-labs](https://huggingface.co/shi-labs/versatile-diffusion)
 
 [interactive version](https://whatmodel.sh/model/versatile-diffusion) · [JSON](https://whatmodel.sh/api?format=json&all=1)

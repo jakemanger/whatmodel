@@ -29,14 +29,14 @@ test                                 result  vs the others in its run  difficult
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     85.7%  ▄····▄█●▄█▄█ beats 4/10   easy · avg 82%          10%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 28%         8.0%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 41%       6.1%  at its level
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>             91.7%  ▃·····▅●█▅▃▃ beats 4/12   very easy · avg 88%    5.9%  small run
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>             92.6%  ▃·······█●██ beats 6/12   very easy · avg 89%    4.6%  maxed out · small run
-<a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                         82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 29/39  easy · avg 77%         4.3%  small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (maker)</a>           91.7%  ▃·····▅●█▅▃▃ beats 4/12   very easy · avg 88%    5.9%  small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (maker)</a>           92.6%  ▃·······█●██ beats 6/12   very easy · avg 89%    4.6%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">GenEval (maker)</a>                       82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 29/39  easy · avg 77%         4.3%  small run
 <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     39.0%  ▄·●···▄▄▄▄▄▄ beats 1/8    medium · avg 36%       3.9%  blunt · at its level
-<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>           85.9%  ▄▄●█▄▄·▄···▄ beats 2/8    easy · avg 81%         3.6%  small run
-<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>                50.7%  ▃·▃●▃·▃··▃·▃ beats 3/8    medium · avg 39%       3.5%  at its level · small run
-<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>                52.8%  ▃······▃●█▅▃ beats 2/9    medium · avg 41%       3.5%  at its level · small run
-<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                       84.9%  ▄·▂·▂●█▄▂▄▂▂ beats 5/17   very easy · avg 85%    3.2%  small run
+<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (maker)</a>         85.9%  ▄▄●█▄▄·▄···▄ beats 2/8    easy · avg 81%         3.6%  small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (maker)</a>              50.7%  ▃·▃●▃·▃··▃·▃ beats 3/8    medium · avg 39%       3.5%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (maker)</a>              52.8%  ▃······▃●█▅▃ beats 2/9    medium · avg 41%       3.5%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (maker)</a>                     84.9%  ▄·▂·▂●█▄▂▄▂▂ beats 5/17   very easy · avg 85%    3.2%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>    80.0%  ●······█··▄▄ beats 0/4    easy · avg 74%         2.8%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>    77.7%  ●···█···██·█ beats 0/4    easy · avg 71%         2.8%  small run
 <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3600  ▄···●··▄·▄·▄ beats 1/5    avg 11.074             1.9%  blunt
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (lab)</a>                                9   34% ▇▇▇▇
+<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (submitted / maker-reported)</a>         9   34% ▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   30% ▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   10% ▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    8% ▇
@@ -92,6 +92,6 @@ api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://
 
 Other versions: BF16 (~14.9 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ZImagePipeline; p=ZImagePipeline.from_pretrained('Tongyi-MAI/Z-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=9, guidance_scale=0.0).images[0].save('out.png')"`
 
-Official weights and documentation: [huggingface.co/Tongyi-MAI](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)
+Model repository and documentation: [huggingface.co/Tongyi-MAI](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)
 
 [interactive version](https://whatmodel.sh/model/z-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

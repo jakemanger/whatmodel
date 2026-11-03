@@ -48,8 +48,8 @@ test                                result  vs the others in its run  difficulty
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>   93.0%  ▁▁▁▂▁▃▁▅███● beats 81/85  medium · avg 50%     13%  sharp · maxed out · small run
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (maker)</a>   93.0%  ▁▁▁▂▁▃▁▅███● beats 81/85  medium · avg 50%     13%  sharp · maxed out · small run
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>                   84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 228/322  hard · avg 38%          36%  sharp
+<a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (maker)</a>                 84.0%  ▁▁▁▁▂▄▅▅█●█▄ beats 228/322  hard · avg 38%          36%  sharp
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   76.7%  ●▂▁▂▅█▂▃▄▃▁▁ beats 2/98     very easy · avg 90%    0.0%  blunt
 </pre>
 

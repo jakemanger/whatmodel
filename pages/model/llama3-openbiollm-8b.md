@@ -133,6 +133,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama3-OpenBioLLM-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B)
+Model repository and documentation: [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B)
 
 [interactive version](https://whatmodel.sh/model/llama3-openbiollm-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

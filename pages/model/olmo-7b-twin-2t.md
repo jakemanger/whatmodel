@@ -50,6 +50,6 @@ weighted average                          = 33.2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-Twin-2T-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf)
 
 [interactive version](https://whatmodel.sh/model/olmo-7b-twin-2t) · [JSON](https://whatmodel.sh/api?format=json&all=1)

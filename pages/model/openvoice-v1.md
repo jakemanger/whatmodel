@@ -70,6 +70,6 @@ weighted average                        = 50.7
    "
    ```
 
-Official weights and documentation: [huggingface.co/myshell-ai](https://huggingface.co/myshell-ai/OpenVoice)
+Model repository and documentation: [huggingface.co/myshell-ai](https://huggingface.co/myshell-ai/OpenVoice)
 
 [interactive version](https://whatmodel.sh/model/openvoice-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,50 +6,50 @@
 
 Fastino · 0.486444053B params · apache-2.0
 
-**score 50.1** ±1.1 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 26.2** ±1.6 · #324 of 355 · from 27 benchmark results across 1 source · † no independently run results verified
 
 ## What it's good at
 
 <sub>● marks gliner2-large-v1 (DecisionBench f32ea6ef) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃●▃▁▂▁▂▅█▂   #45 of 57     99%     27
+task       vs the others         rank  counts  tests
+workflows  ▁▁▁●▁▂▂▆█▄▁▁   #100 of 114     99%     27
 </pre>
 
-<details><summary>workflows · #45 of 57 · 99% of its score</summary>
+<details><summary>workflows · #100 of 114 · 99% of its score</summary>
+
+Trails [GLiNER2.5-Decide](decision-gliner-decide.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   20.7%  ▁▁▁●▂▂▁▁▁▁▃█ beats 6/56   hard · avg 29%          14%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · action selecti…</a>   16.9%  ▂●▂▃▄▃▁▁▂█▇▄ beats 3/56   hard · avg 26%          13%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · completion ass…</a>   75.0%  ▁▁▂▃▄·●▁▁▆█▂ beats 21/56  medium · avg 51%        10%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   38.6%  ▃▃●·▁▁▁▁▁▁█▅ beats 17/56  medium · avg 38%        10%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   23.0%  ▁▁·▃▁●▁▁▁▁▃█ beats 15/56  hard · avg 22%         9.1%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   63.0%  ▁·▁·▂▃▄●▂█▄▂ beats 21/56  medium · avg 45%       6.9%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · verification (…</a>   44.0%  ▁▁▅▁▃●▂▁▁▇▇█ beats 17/56  medium · avg 40%       6.4%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · record classif…</a>   26.0%  ▃▂▁▂▂●▄▁▃▆██ beats 16/56  hard · avg 21%         5.9%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · content classi…</a>    0.0%  ●····▁▁▁▁▁▁█ beats 1/56   medium · avg 41%       4.6%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · document recor…</a>   31.1%  ▂▂·▁▂●▃▆▄█▁▁ beats 12/56  hard · avg 27%         3.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   24.8%  ▁▁●▅▃▃▅█▃▃·▁ beats 4/56   hard · avg 27%         3.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · review scoring…</a>   39.0%  ▁······▂▃●▇█ beats 16/56  hard · avg 32%         2.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   53.0%  ▁▁·▁▂▂▁●▃█▇▃ beats 16/56  medium · avg 45%       2.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   47.9%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 0/56   medium · avg 55%       1.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   45.8%  ▂·▁▁▆●▅▃▃▂▁▁ beats 30/56  hard · avg 33%         1.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   20.0%  ▁▁·▁▁▂▃▂●▁▁█ beats 24/56  very hard · avg 12%    1.0%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · target selecti…</a>    8.0%  ▁▁·▁▁▁●▁▂▁▁█ beats 12/56  very hard · avg 11%    0.9%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · document workf…</a>   51.5%  █●▃▁▁▃▂▂▁·▁▁ beats 23/56  medium · avg 51%       0.8%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · safety gating …</a>   64.0%  ▂·····▆●▂▂▄▇ beats 25/56  medium · avg 51%       0.7%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   44.6%  ▁▁▁▂▆●▃█···▁ beats 24/56  medium · avg 38%       0.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   58.0%  ▁·▁▁·▁▁●▂▃█▂ beats 21/56  medium · avg 55%       0.4%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · content modera…</a>   59.0%  ▁····▃●▃▂▂·█ beats 15/56  medium · avg 61%       0.4%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · context manage…</a>   73.0%  ▁·····▁▇●▁█▃ beats 31/56  medium · avg 59%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · document class…</a>   12.0%  ▂▁·▂▁▁▁▄●▂▂█ beats 24/56  very hard · avg 13%    0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · entity alignme…</a>    3.2%  ▁·●▄▇▄▅▄▂▁▄█ beats 1/56   medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · function agent…</a>    5.4%  ●▃▄▅▆▂▅▄▃▄█▃ beats 0/56   medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · routing triage…</a>   45.5%  █▁···▁·●▆▅▂▂ beats 25/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · action selecti…</a>   16.9%  ▂●▂▃▄▃▁▁▂█▇▄ beats 3/56   medium · avg 51%        15%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   20.7%  ▁▁▁●▂▂▁▁▁▁▃█ beats 6/56   medium · avg 64%        13%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · completion ass…</a>   75.0%  ▁▁▂▃▄·●▁▁▆█▂ beats 21/56  very easy · avg 86%     11%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   38.6%  ▃▃●·▁▁▁▁▁▁█▅ beats 17/56  very easy · avg 86%     10%  sharp · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   23.0%  ▁▁·▃▁●▁▁▁▁▃█ beats 15/56  medium · avg 58%       8.1%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   63.0%  ▁·▁·▂▃▄●▂█▄▂ beats 21/56  easy · avg 78%         7.2%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · record classif…</a>   26.0%  ▃▂▁▂▂●▄▁▃▆██ beats 16/56  medium · avg 39%       6.0%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · verification (…</a>   44.0%  ▁▁▅▁▃●▂▁▁▇▇█ beats 17/56  medium · avg 56%       6.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · content classi…</a>    0.0%  ●····▁▁▁▁▁▁█ beats 1/56   easy · avg 73%         4.4%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · document recor…</a>   31.1%  ▂▂·▁▂●▃▆▄█▁▁ beats 12/56  medium · avg 46%       3.9%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   24.8%  ▁▁●▅▃▃▅█▃▃·▁ beats 4/56   medium · avg 45%       3.3%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · review scoring…</a>   39.0%  ▁······▂▃●▇█ beats 16/56  medium · avg 52%       2.4%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   53.0%  ▁▁·▁▂▂▁●▃█▇▃ beats 16/56  medium · avg 62%       2.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   45.8%  ▂·▁▁▆●▅▃▃▂▁▁ beats 30/56  medium · avg 52%       1.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   47.9%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 0/56   easy · avg 74%         1.0%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   20.0%  ▁▁·▁▁▂▃▂●▁▁█ beats 24/56  medium · avg 35%       0.9%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · target selecti…</a>    8.0%  ▁▁·▁▁▁●▁▂▁▁█ beats 12/56  hard · avg 29%         0.9%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · document workf…</a>   51.5%  █●▃▁▁▃▂▂▁·▁▁ beats 23/56  easy · avg 66%         0.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · safety gating …</a>   64.0%  ▂·····▆●▂▂▄▇ beats 25/56  easy · avg 77%         0.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   44.6%  ▁▁▁▂▆●▃█···▁ beats 24/56  medium · avg 52%       0.5%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   58.0%  ▁·▁▁·▁▁●▂▃█▂ beats 21/56  easy · avg 71%         0.4%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · content modera…</a>   59.0%  ▁····▃●▃▂▂·█ beats 15/56  easy · avg 82%         0.3%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · context manage…</a>   73.0%  ▁·····▁▇●▁█▃ beats 31/56  easy · avg 73%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · document class…</a>   12.0%  ▂▁·▂▁▁▁▄●▂▂█ beats 24/56  hard · avg 21%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · entity alignme…</a>    3.2%  ▁·●▄▇▄▅▄▂▁▄█ beats 1/56   easy · avg 66%         0.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · function agent…</a>    5.4%  ●▃▄▅▆▂▅▄▃▄█▃ beats 0/56   easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">DecisionBench v1 · routing triage…</a>   45.5%  █▁···▁·●▆▅▂▂ beats 25/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -62,15 +62,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/fastino__gliner2-large-v1/f32ea6ef6e26d8264fdc72431b4b3b041eadc537/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.1
+weighted average                                   = 26.2
 </pre>
 
 <sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/fastino/gliner2-large-v1/tree/f32ea6ef6e26d8264fdc72431b4b3b041eadc537) · Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/fastino/gliner2-large-v1/revision/f32ea6ef6e26d8264fdc72431b4b3b041eadc537); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/fastino](https://huggingface.co/fastino/gliner2-large-v1)
+Model repository and documentation: [huggingface.co/fastino](https://huggingface.co/fastino/gliner2-large-v1)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-fastino-gliner2-large-v1-f32ea6ef) · [JSON](https://whatmodel.sh/api?format=json&all=1)

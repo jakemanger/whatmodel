@@ -18,6 +18,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.1-flash-1019)
+Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-3.1-flash-1019)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ling-3-1-flash-1019)

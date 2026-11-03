@@ -33,10 +33,10 @@ test                                    result  vs the others in its run  diffic
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0259 IPS  ▁▁▁▃▃▂●▁▂▂▁▁ beats 38/59  avg -0.379 IPS           12%  sharp
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-meta-muse-spark-1-3-xhigh-muse-code.json">Terminal-Bench 4.0</a>                       14.5%  █●▅▅▅·▅▃▃▅▅▅ beats 3/20   very hard · avg 0.5%    4.9%  sharp · at its level
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>       45.2%  ▃··▅··▃●▃▅▃▅ beats 6/12   very hard · avg 3.7%    2.9%  sharp · at its level
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Terminal-Bench 2.1 (lab)</a>                 88.8%  ▁·▁·▁▁▄▃▆█▅● beats 59/63  hard · avg 26%          2.2%  sharp · small run
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">JobBench (lab)</a>                           64.9%  █·●····█···█ beats 1/3    hard · avg 25%          1.5%  at its level
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (lab)</a>                       90.3%  ▄·▄▄···▄▄··● beats 5/6    medium · avg 54%        1.0%  small run
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSWE v1.1 (resolved) (lab)</a>            75.4%  ▂····▂▁▁▆██● beats 29/31                             —  not counted yet: no other model in the …
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=3">Terminal-Bench 2.1 (maker)</a>               88.8%  ▁·▁·▁▁▄▃▆█▅● beats 59/63  hard · avg 26%          2.2%  sharp · small run
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">JobBench (maker)</a>                         64.9%  █·●····█···█ beats 1/3    hard · avg 25%          1.5%  at its level
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (maker)</a>                     90.3%  ▄·▄▄···▄▄··● beats 5/6    medium · avg 54%        1.0%  small run
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSWE v1.1 (resolved) (maker)</a>          75.4%  ▂····▂▁▁▆██● beats 29/31                             —  not counted yet: no other model in the …
 <a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">OSWorld 2.0, 2026.08.08 release (…</a>       66.9%  ●·····█·█··█ beats 0/3                               —  not counted yet: no other model in the …
 </pre>
 
@@ -50,7 +50,7 @@ Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [Muse 
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1656.2  ▁▁▃▂▅█▃▆▅●▁▂ beats 113/129  avg 981                 8.4%  sharp
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>   45.2%  ▃··▅··▃●▃▅▃▅ beats 6/12     very hard · avg 3.7%    2.9%  sharp · at its level
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSWE v1.1 (resolved) (lab)</a>        75.4%  ▂····▂▁▁▆██● beats 29/31                               —  not counted yet: no other model in the …
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSWE v1.1 (resolved) (maker)</a>      75.4%  ▂····▂▁▁▆██● beats 29/31                               —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -96,8 +96,8 @@ test                               result  vs the others in its run    difficult
 <details><summary>web search · #1 of 2 · 1.0% of its score</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty        counts  why
-<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (lab)</a>   90.3%  ▄·▄▄···▄▄··● beats 5/6    medium · avg 54%    1.0%  small run
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://research.meta.ai/static/muse-spark-1-3-multimodal-evaluation-methodology#page=2">DeepSearchQA (maker)</a>   90.3%  ▄·▄▄···▄▄··● beats 5/6    medium · avg 54%    1.0%  small run
 </pre>
 
 </details>

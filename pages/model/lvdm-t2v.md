@@ -52,6 +52,6 @@ weighted average                                   = 24.6
    git clone https://github.com/YingqingHe/LVDM && cd LVDM && conda create -y -n lvdm python=3.8.5 && conda run -n lvdm pip install -r requirements.txt && mkdir -p models/t2v && wget -O models/t2v/model.ckpt https://huggingface.co/Yingqing/LVDM/resolve/main/lvdm_short/t2v.ckpt && conda run -n lvdm bash shellscripts/sample_lvdm_text2video.sh
    ```
 
-Official weights and documentation: [github.com/YingqingHe](https://github.com/YingqingHe/LVDM)
+Model repository and documentation: [github.com/YingqingHe](https://github.com/YingqingHe/LVDM)
 
 [interactive version](https://whatmodel.sh/model/lvdm-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

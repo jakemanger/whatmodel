@@ -6,7 +6,7 @@
 
 NVIDIA · released 2021-07 · closed weights
 
-**score 35.0** ±30.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 35.0** ±30.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-nvidia-dle-asr&score=set) comparison set only.
 
@@ -21,9 +21,9 @@ Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=libri
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                              result  vs the others in its run   difficulty  counts  why
-<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-clean WER (lab)</a>    3.7%  ▁·▁·▁▁▁●▃▇█▆ beats 13/102  avg 3.5%       17%  small run
-<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-other WER (lab)</a>   10.7%  ▁···●▁▁▆▆█▆▁ beats 1/56    avg 10%        16%  small run
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-clean WER (maker)</a>    3.7%  ▁·▁·▁▁▁●▃▇█▆ beats 13/102  avg 3.5%       17%  small run
+<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-other WER (maker)</a>   10.7%  ▁···●▁▁▆▆█▆▁ beats 1/56    avg 10%        16%  small run
 </pre>
 
 </details>

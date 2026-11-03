@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   26.7%  ▁·▂▁●▆▅█▄▄▁▂ beats 4/35   medium · avg 62%    6.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           29.7%  ▁··▁●▂█▇▁··▁ beats 3/22   medium · avg 56%    4.5%  at its level · several runs
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           32.2%  ▁·▂●▁█▁▂···▁ beats 3/22   medium · avg 54%    4.0%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        19.1%  ▄▄·●██▄█·█·▄ beats 2/12   medium · avg 49%    3.6%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (maker)</a>                      19.1%  ▄▄·●██▄█·█·▄ beats 2/12   medium · avg 49%    3.6%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   14.8%  ▄▇●▃▄▇▄▁▇▃·▁ beats 8/35   medium · avg 46%    3.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.5%  ▁·▁▁▄●█▄█▁▅▅ beats 9/35   medium · avg 51%    2.2%  sharp
 </pre>
@@ -44,9 +44,9 @@ test                                result  vs the others in its run  difficulty
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   14.9%  ▄▄●·▄█·██·█▄ beats 2/12   easy · avg 75%      4.9%  sharp · several runs
-<a href="https://arxiv.org/html/2405.04324v1">MATH</a>           2.4%  ●·▃····▃···█ beats 0/5    medium · avg 37%    1.0%  noisy
+test           result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (maker)</a>   14.9%  ▄▄●·▄█·██·█▄ beats 2/12   easy · avg 75%      4.9%  sharp · several runs
+<a href="https://arxiv.org/html/2405.04324v1">MATH</a>             2.4%  ●·▃····▃···█ beats 0/5    medium · avg 37%    1.0%  noisy
 </pre>
 
 </details>
@@ -94,6 +94,6 @@ Other versions: Q4_0 (~4.3 GB) `ollama run starcoder:7b`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-7b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-7b)
+Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-7b)
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -57,6 +57,6 @@ weighted average                                   = 38.4
    git clone -b main https://github.com/JiuhaiChen/BLIP3o.git && cd BLIP3o && conda create -n blip3o python=3.11 -y && conda activate blip3o && pip install --upgrade pip setuptools && pip install -r requirements.txt && python inference.py $(python -c "from huggingface_hub import snapshot_download; print(snapshot_download(repo_id='BLIP3o/BLIP3o-Model-8B', repo_type='model'))")
    ```
 
-Official weights and documentation: [huggingface.co/BLIP3o](https://huggingface.co/BLIP3o/BLIP3o-Model-8B)
+Model repository and documentation: [huggingface.co/BLIP3o](https://huggingface.co/BLIP3o/BLIP3o-Model-8B)
 
 [interactive version](https://whatmodel.sh/model/blip3o-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

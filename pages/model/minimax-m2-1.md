@@ -30,7 +30,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   60.6%  ▆··▆▄▂▄▂▆●█▄ beats 16/23  very hard · avg 13%     12%  sharp · at its level
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 38%        12%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (maker)</a>             87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 38%        12%  sharp · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 20%         8.6%  at its level
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   86.6%  ▄······▄█·●▄ beats 4/5    medium · avg 51%       7.7%  typical
 </pre>
@@ -175,6 +175,6 @@ Other versions: Q8_0 (~243.1 GB) `lms get https://huggingface.co/unsloth/MiniMax
 
 Other versions: 8bit (~243 GB, Mac only) `mlx_lm.chat --model mlx-community/MiniMax-M2.1-8bit`
 
-Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2.1)
+Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2.1)
 
 [interactive version](https://whatmodel.sh/model/minimax-m2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -168,6 +168,6 @@ Other versions: Q8_0 (~42.5 GB) `ollama run command-r:35b-v0.1-q8_0`
    mlx_lm.server --model mlx-community/c4ai-command-r-v01-4bit
    ```
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-v01)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-v01)
 
 [interactive version](https://whatmodel.sh/model/command-r-03-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

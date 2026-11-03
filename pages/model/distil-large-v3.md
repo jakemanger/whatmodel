@@ -35,19 +35,19 @@ test                            result  vs the others in its run  difficulty  co
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.5%  ▁▁▁▃··▁▁▂█●▆ beats 46/86   avg 8.2%       10%  blunt
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER (lab)</a>             3.3%  ▄▄··●██··▄██ beats 2/11    avg 5.2%       10%  sharp
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER (lab)</a>         7.0%  █·······●█·█ beats 1/3     avg 11%       8.8%  sharp
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER (lab)</a>          3.9%  █······█·●·█ beats 2/3     avg 6.8%      8.2%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER (maker)</a>           3.3%  ▄▄··●██··▄██ beats 2/11    avg 5.2%       10%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER (maker)</a>       7.0%  █·······●█·█ beats 1/3     avg 11%       8.8%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER (maker)</a>        3.9%  █······█·●·█ beats 2/3     avg 6.8%      8.2%  sharp
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">AMI WER (Open ASR / ESB test spli…</a>   15.2%  ▃█●▃·····▅·▃ beats 4/8     avg 24%       7.7%  typical
 <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 WER (short-form, Open…</a>   11.8%  ▃······●█▃·▃ beats 2/8     avg 18%       7.4%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER (lab)</a>            13.8%  █········█●█ beats 2/3     avg 20%       6.7%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER (lab)</a>            10.1%  ▁····▁··▁▄●▂ beats 9/17    avg 15%       6.4%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER (lab)</a>      10.5%  █········█●█ beats 2/3     avg 15%       6.3%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER (lab)</a>      15.1%  █······●·█·█ beats 1/3     avg 20%       5.9%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER (lab)</a>      5.2%  ▁···▁▁▁▆●█▆▁ beats 22/56   avg 6.6%      5.3%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER (maker)</a>          13.8%  █········█●█ beats 2/3     avg 20%       6.7%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER (maker)</a>          10.1%  ▁····▁··▁▄●▂ beats 9/17    avg 15%       6.4%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER (maker)</a>    10.5%  █········█●█ beats 2/3     avg 15%       6.3%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER (maker)</a>    15.1%  █······●·█·█ beats 1/3     avg 20%       5.9%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER (maker)</a>    5.2%  ▁···▁▁▁▆●█▆▁ beats 22/56   avg 6.6%      5.3%  typical
 <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of-dis…</a>    9.7%  █·█··█·●···█ beats 3/4     avg 10%       4.6%  typical
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-clean WER (lab)</a>      2.5%  ▁·▁·▁▁▁▁▃●█▆ beats 32/102  avg 2.6%      1.6%  blunt
-<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form) (l…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 21/27   avg 5.3%      0.4%  blunt
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-clean WER (maker)</a>    2.5%  ▁·▁·▁▁▁▁▃●█▆ beats 32/102  avg 2.6%      1.6%  blunt
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form) (m…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 21/27   avg 5.3%      0.4%  blunt
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-distil-whisper-distil-large-v3-5"></a><a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">distil-whisper/distil-large-v3.5 model …</a>       12   74% ▇▇▇▇▇▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   20% ▇▇
-<a name="speech-distil-whisper-readme-mit"></a><a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">huggingface/distil-whisper README (lab)</a>         1    5% ▇
+<a name="speech-distil-whisper-readme-mit"></a><a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">huggingface/distil-whisper README (subm…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 55.5
 </pre>
@@ -77,6 +77,6 @@ weighted average                                   = 55.5
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-large-v3')('audio.wav', return_timestamps=True)['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-large-v3)
+Model repository and documentation: [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-large-v3)
 
 [interactive version](https://whatmodel.sh/model/distil-large-v3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

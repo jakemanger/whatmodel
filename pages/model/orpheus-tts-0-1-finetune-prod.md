@@ -104,6 +104,6 @@ for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id
 buffer = np.concatenate(buffer, axis=1)
 write("output.wav", 24_000, np.concatenate(buffer))'`
 
-Official weights and documentation: [huggingface.co/canopylabs](https://huggingface.co/canopylabs/orpheus-3b-0.1-ft)
+Model repository and documentation: [huggingface.co/canopylabs](https://huggingface.co/canopylabs/orpheus-3b-0.1-ft)
 
 [interactive version](https://whatmodel.sh/model/orpheus-tts-0-1-finetune-prod) · [JSON](https://whatmodel.sh/api?format=json&all=1)

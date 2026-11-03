@@ -24,6 +24,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
    uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/uk/mai/glow-tts --text "Привіт, світе." --out_path speech.wav --device cpu
    ```
 
-Official weights and documentation: [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
+Model repository and documentation: [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/coqui-uk-mai-glow-tts)

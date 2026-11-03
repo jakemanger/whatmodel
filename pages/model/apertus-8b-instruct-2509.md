@@ -146,6 +146,6 @@ Other versions: Q8_0 (~8.6 GB) `ollama run hf.co/unsloth/Apertus-8B-Instruct-250
    vllm serve swiss-ai/Apertus-8B-Instruct-2509
    ```
 
-Official weights and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509)
+Model repository and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509)
 
 [interactive version](https://whatmodel.sh/model/apertus-8b-instruct-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

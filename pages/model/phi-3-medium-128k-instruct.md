@@ -158,6 +158,6 @@ Other versions: Q8_0 (~17.25 GB) `ollama run phi3:14b-medium-128k-instruct-q8_0`
 
 Other versions: 8bit (~14.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-3-medium-128k-instruct-8bit`
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-medium-128k-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-medium-128k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-medium-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

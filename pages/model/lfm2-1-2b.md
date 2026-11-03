@@ -36,9 +36,9 @@ test                                result  vs the others in its run  difficulty
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (lab)</a>    55.0%  █···█▄··●··▄ beats 5/6    easy · avg 83%     29%  sharp · at its level
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K (lab)</a>   58.3%  ▄·█···▄·▄··● beats 5/6    easy · avg 83%     10%  sharp · at its level
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (maker)</a>    55.0%  █···█▄··●··▄ beats 5/6    easy · avg 83%     29%  sharp · at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K (maker)</a>   58.3%  ▄·█···▄·▄··● beats 5/6    easy · avg 83%     10%  sharp · at its level
 </pre>
 
 </details>
@@ -47,10 +47,10 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                           55.2%  █·███·█··●·█ beats 5/6     easy · avg 74%       21%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (maker)</a>                         55.2%  █·███·█··●·█ beats 5/6     easy · avg 74%       21%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecified)…</a>   20.7%  ▄▄·▄····▄·●▄ beats 5/6     medium · avg 38%    8.9%  typical
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                          46.7%  ▄···▄·▄▄··▄● beats 6/6     medium · avg 57%    8.8%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (lab)</a>      31.5%  █······▄▄█·● beats 6/6     hard · avg 37%      6.6%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (maker)</a>                        46.7%  ▄···▄·▄▄··▄● beats 6/6     medium · avg 57%    8.8%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (maker)</a>    31.5%  █······▄▄█·● beats 6/6     hard · avg 37%      6.6%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   58.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 86/276  medium · avg 72%    4.1%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   29.6%  ▃·▁●▂▁▂▅█▇▄▁ beats 12/100  medium · avg 67%    3.0%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   63.1%  ▁▁▁▁▁▁▁●▄█▄▃ beats 33/146  easy · avg 82%      2.9%  at its level · noisy
@@ -63,12 +63,12 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                               results  share of the score
-<a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card (lab)</a>        7   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                      2    6% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    4% ▇
-prior: pull toward the middle                   1% ▇
-weighted average                              = 40.8
+source                                    results  share of the score
+<a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card (submitte…</a>        7   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    6% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 40.8
 </pre>
 
 <sub>Licences: LiquidAI/LFM2-1.2B model card ([LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/LICENSE)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
@@ -152,6 +152,6 @@ Other versions: 4bit (~0.7 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 Other versions: 8bit (~1.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/LFM2-1.2B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-1.2B)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-1.2B)
 
 [interactive version](https://whatmodel.sh/model/lfm2-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

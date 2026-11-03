@@ -6,7 +6,7 @@
 
 Zyphra · released 2026-06 · 8B params (0.9B active) · apache-2.0
 
-**score 56.5** ±2.5 · #50 of 119 · from 5 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 56.5** ±2.5 · #50 of 119 · from 5 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -47,11 +47,11 @@ test                                  result  vs the others in its run  difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                             results  share of the score
-<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report (lab)</a>            4   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot (lab)</a>        1   11% ▇
-prior: pull toward the middle                 2% ▇
-weighted average                            = 56.5
+source                                    results  share of the score
+<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report (submitted / ma…</a>        4   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot (submitted …</a>        1   11% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 56.5
 </pre>
 
 <sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt))</sub>
@@ -78,6 +78,6 @@ ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">Seed-TTS
 
 Other versions: Q8_0 (ZONOS2.CPP) (~8.8 GB) `git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1` · Q4_K (ZONOS2.CPP) (~5.17 GB, Mac only) `git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1` · Q8_0 (ZONOS2.CPP) (~8.8 GB, Mac only) `git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1` · BF16 (MLX-AUDIO) (~15.64 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/Zyphra-ZONOS2 --text "Hello, this is ZONOS two running with MLX audio." --output_path outputs --file_prefix zonos2` · BF16 (ZYPHRA ZONOS2 PYTORCH SERVER) (~15.67 GB, NVIDIA only) `git clone https://github.com/Zyphra/Zonos2.git && cd Zonos2 && uv sync && uv run python -m zonos2 --model-path Zyphra/ZONOS2 --tts-default-voices-dir ./default_voices/`
 
-Official weights and documentation: [huggingface.co/Zyphra](https://huggingface.co/Zyphra/ZONOS2)
+Model repository and documentation: [huggingface.co/Zyphra](https://huggingface.co/Zyphra/ZONOS2)
 
 [interactive version](https://whatmodel.sh/model/zonos2-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

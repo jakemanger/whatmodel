@@ -53,6 +53,6 @@ weighted average                                   = 38.4
    uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableCascadePriorPipeline, StableCascadeDecoderPipeline; pr=StableCascadePriorPipeline.from_pretrained('stabilityai/stable-cascade-prior', variant='bf16', torch_dtype=torch.bfloat16); de=StableCascadeDecoderPipeline.from_pretrained('stabilityai/stable-cascade', variant='bf16', torch_dtype=torch.float16); pr.enable_model_cpu_offload(); o=pr(prompt='a cat holding a sign', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=20); de.enable_model_cpu_offload(); de(image_embeddings=o.image_embeddings.to(torch.float16), prompt='a cat holding a sign', guidance_scale=0.0, num_inference_steps=10, output_type='pil').images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-cascade)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-cascade)
 
 [interactive version](https://whatmodel.sh/model/stable-cascade) · [JSON](https://whatmodel.sh/api?format=json&all=1)

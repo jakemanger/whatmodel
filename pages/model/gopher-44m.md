@@ -6,7 +6,7 @@
 
 Google DeepMind · released 2021-12 · 0.044B params · proprietary
 
-**score 30.7** ±6.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 30.7** ±6.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmodel.sh/?set=lambada-openai%40paper-2112.11446v2&score=set) comparison set only.
 
@@ -32,10 +32,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                  results  share of the score
-<a name="paper-2112.11446v2"></a><a href="https://arxiv.org/html/2112.11446v2">Scaling Language Models: Methods (lab)</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                     19% ▇▇
-weighted average                                 = 30.7
+source                                    results  share of the score
+<a name="paper-2112.11446v2"></a><a href="https://arxiv.org/html/2112.11446v2">Scaling Language Models: Methods (submi…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       19% ▇▇
+weighted average                                   = 30.7
 </pre>
 
 ## How to run it

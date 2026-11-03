@@ -80,6 +80,6 @@ api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/longcat-vide
    git clone https://github.com/meituan-longcat/LongCat-Video && cd LongCat-Video && pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 && pip install ninja psutil packaging && pip install flash_attn==2.7.4.post1 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && huggingface-cli download meituan-longcat/LongCat-Video --local-dir ./weights/LongCat-Video && torchrun run_demo_text_to_video.py --checkpoint_dir=./weights/LongCat-Video --enable_compile
    ```
 
-Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Video)
+Model repository and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Video)
 
 [interactive version](https://whatmodel.sh/model/longcat-video) · [JSON](https://whatmodel.sh/api?format=json&all=1)

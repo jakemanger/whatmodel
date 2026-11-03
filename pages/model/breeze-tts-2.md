@@ -28,6 +28,6 @@ api (BreezeBlue) · $28.00/M chars · [breezeblue.ai](https://breezeblue.ai)
 
 Other versions: BF16 (MLX-AUDIO 0.5.7) (~7.63 GB, Mac only) `pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design` · mxfp8 (mlx-audio 0.5.7) (~4.6 GB, Mac only) `pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-8bit --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design` · mxfp4 (mlx-audio 0.5.7) (~3.04 GB, Mac only) `pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-4bit --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design`
 
-Official weights and documentation: [huggingface.co/BreezeBlue](https://huggingface.co/BreezeBlue/Breeze-TTS-2)
+Model repository and documentation: [huggingface.co/BreezeBlue](https://huggingface.co/BreezeBlue/Breeze-TTS-2)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/breeze-tts-2)

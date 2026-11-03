@@ -25,8 +25,8 @@ math    ▁▁▃▆●█▅█▃▁▁▁   #371 of 530*     28%      1
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run   difficulty      counts  why
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">HumanEval (lab)</a>   52.8%  ▁▁▁▁▂▂▆●█▅▂▁ beats 99/205  easy · avg 71%     20%  sharp · at its level
+test               result  vs the others in its run   difficulty      counts  why
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">HumanEval (maker)</a>   52.8%  ▁▁▁▁▂▂▆●█▅▂▁ beats 99/205  easy · avg 71%     20%  sharp · at its level
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ test             result  vs the others in its run   difficulty      counts  why
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run    difficulty           counts  why
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">GSM8K (lab)</a>   80.9%  ▂▂▂▂▃▄▅▇█●▆▄ beats 141/206  very easy · avg 90%     28%  sharp
+test           result  vs the others in its run    difficulty           counts  why
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">GSM8K (maker)</a>   80.9%  ▂▂▂▂▃▄▅▇█●▆▄ beats 141/206  very easy · avg 90%     28%  sharp
 </pre>
 
 </details>
@@ -46,9 +46,9 @@ test         result  vs the others in its run    difficulty           counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (lab)</a>                  85.7%  ▄▁▁▂▁▄█▇▃▂●▂ beats 133/140  very easy · avg 90%     21%  sharp · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           73.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 150/214  easy · avg 81%          18%  at its level · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       78.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 76/80    easy · avg 85%         9.1%  small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (maker)</a>                85.7%  ▄▁▁▂▁▄█▇▃▂●▂ beats 133/140  very easy · avg 90%     21%  sharp · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (maker)</a>                         73.4%  ▁▁▁▁▁▂▂▅█●▆▄ beats 150/214  easy · avg 81%          18%  at its level · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (maker)</a>                     78.9%  ▁▁▂▂▄▄▃▆▅█●▂ beats 76/80    easy · avg 85%         9.1%  small run
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   65.7%  ▂▂▄··●▂█▄··▂ beats 4/12     easy · avg 90%         2.6%  at its level · noisy
 </pre>
 

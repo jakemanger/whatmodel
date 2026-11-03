@@ -25,14 +25,14 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      61.6%  ●·▄···█··█·▄ beats 0/6    easy · avg 84%       27%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     57.3%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 80%       20%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval (maker)</a>                    61.6%  ●·▄···█··█·▄ beats 0/6    easy · avg 84%       27%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   57.3%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 80%       20%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   14.3%  ●·▁▂▄▁▆▄█▆▂▂ beats 0/62   medium · avg 51%     17%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           52.4%  ●···███·██·█ beats 0/6    easy · avg 77%       12%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      49.6%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 70%      8.3%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          43.7%  ●····▄▄·▄·█▄ beats 0/6    easy · avg 66%      7.1%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     33.9%  ●·██·█··█·██ beats 0/6    medium · avg 56%    3.1%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     27.8%  ●·█··▄·▄··▄▄ beats 0/6    medium · avg 54%    1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (maker)</a>                         52.4%  ●···███·██·█ beats 0/6    easy · avg 77%       12%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (maker)</a>                    49.6%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 70%      8.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (maker)</a>                        43.7%  ●····▄▄·▄·█▄ beats 0/6    easy · avg 66%      7.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (maker)</a>                   33.9%  ●·██·█··█·██ beats 0/6    medium · avg 56%    3.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (maker)</a>                   27.8%  ●·█··▄·▄··▄▄ beats 0/6    medium · avg 54%    1.1%  blunt · at its level
 </pre>
 
 </details>
@@ -40,8 +40,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   11.1%  ●······▄▄█·█ beats 0/6    medium · avg 37%    3.2%  typical
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (maker)</a>   11.1%  ●······▄▄█·█ beats 0/6    medium · avg 37%    3.2%  typical
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                               8   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (submitted / maker-reported)</a>        8   82% ▇▇▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   17% ▇▇
 prior: pull toward the middle                 1% ▇
 weighted average                            = 38.4
@@ -139,6 +139,6 @@ Other versions: 4bit (~0.3 GB, Mac only) `lms get https://huggingface.co/lmstudi
 
 Other versions: 8bit (~0.5 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-coder-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

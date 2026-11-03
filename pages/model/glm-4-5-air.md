@@ -31,13 +31,13 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [Qwen3 235B-A2
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>                   57.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 51/138   hard · avg 23%         7.4%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom</a>                     28.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 22/89    very hard · avg 15%    2.6%  sharp · at its level · noisy · small run
-<a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>                 77.9%  ▁····▃·▂▇█▂● beats 24/28    medium · avg 46%       2.4%  at its level · small run
-<a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>                60.8%  ▁▁▁·▅▄▁█▇▁▁● beats 28/28    hard · avg 30%         1.7%  at its level · small run
-<a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                     21.3%  ▂·▃▁●▂▆▅█▂▂▄ beats 7/46     very hard · avg 13%    1.6%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (maker)</a>               77.9%  ▁····▃·▂▇█▂● beats 24/28    medium · avg 46%       2.4%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (maker)</a>              60.8%  ▁▁▁·▅▄▁█▇▁▁● beats 28/28    hard · avg 30%         1.7%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">BrowseComp (maker)</a>                   21.3%  ▂·▃▁●▂▆▅█▂▂▄ beats 7/46     very hard · avg 13%    1.6%  at its level · small run
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">BFCL V4 (2025-11-03 archive, mode…</a>   68.9%  ▃··▅▃▃·▅·▃·● beats 8/10     hard · avg 33%         1.3%  at its level
 <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 release) …</a>   30.0%  ▃·▃···▃▃●·▅█ beats 4/10     hard · avg 15%         1.3%  at its level · small run
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   44.0%  ▅▃·▃▃▅▅●▃█▅▅ beats 11/19    hard · avg 26%         1.2%  at its level
-<a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                        76.4%  ▁▁▁▁▁▃▅█▆▅▄● beats 168/171  medium · avg 60%       0.7%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (maker)</a>                      76.4%  ▁▁▁▁▁▃▅█▆▅▄● beats 168/171  medium · avg 60%       0.7%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>                   57.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 51/138  hard · avg 23%      7.4%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   61.5%  ●▄·▄·····█·▄ beats 0/5     medium · avg 45%    2.0%  at its level
-<a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (lab)</a>    37.3%  ▁····▃▃▄▅●▆▂ beats 23/40   hard · avg 18%      1.4%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (make…</a>   37.3%  ▁····▃▃▄▅●▆▂ beats 23/40   hard · avg 18%      1.4%  at its level · small run
 <a href="https://arxiv.org/html/2508.06471v1">LiveCodeBench 2024-07 to 2025-01 …</a>   70.7%  ●··········█ beats 0/1                            —  not counted yet: no other model in the …
 </pre>
 
@@ -61,9 +61,9 @@ test                                result  vs the others in its run   difficult
 Beats [o3-mini](o3-mini.md), [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
 <pre>
-test                              result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                    1373.0  ▁▁▁▂▃▃▃▆●▇█▃ beats 214/385  avg 1260          5.8%  blunt
-<a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (lab)</a>   86.3%  ▁▁··▂··▂▇●▃▃ beats 20/26    easy · avg 74%    1.1%  small run
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1373.0  ▁▁▁▂▃▃▃▆●▇█▃ beats 214/385  avg 1260          5.8%  blunt
+<a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (maker)</a>   86.3%  ▁▁··▂··▂▇●▃▃ beats 20/26    easy · avg 74%    1.1%  small run
 </pre>
 
 </details>
@@ -86,8 +86,8 @@ test       result  vs the others in its run  difficulty           counts  why
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
-test              result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>   21.3%  ▂·▃▁●▂▆▅█▂▂▄ beats 7/46   very hard · avg 13%    1.6%  at its level · small run
+test                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2508.06471v1">BrowseComp (maker)</a>   21.3%  ▂·▃▁●▂▆▅█▂▂▄ beats 7/46   very hard · avg 13%    1.6%  at its level · small run
 </pre>
 
 </details>
@@ -101,15 +101,15 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>                 13.3%  ▄····●·█·▄·▄ beats 1/5      very hard · avg 4.1%    7.2%  several runs
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                             73.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 134/188  medium · avg 50%        5.5%  at its level · several runs
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   54.1%  ▂▃▅▂▆▃█▅●▅▃▆ beats 24/34    medium · avg 41%        4.7%  blunt · at its level
-<a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (lab)</a>      75.0%  ▂▁▂▂▄▃▆▃▅●▃▃ beats 88/106   hard · avg 46%          3.6%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                           87.4%  ▁▁▁▁▁▂▂▅██▆● beats 200/214  medium · avg 69%        2.8%  small run
-<a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                       14.5%  ▄▄▄▆█▆●██·▂█ beats 16/32    very hard · avg 7.5%    1.7%  small run
-<a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>                 42.5%  ▁·▁·▁▃●▅▃▂█▅ beats 7/30     hard · avg 27%          1.2%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (maker)</a>    75.0%  ▂▁▂▂▄▃▆▃▅●▃▃ beats 88/106   hard · avg 46%          3.6%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">MMLU (maker)</a>                         87.4%  ▁▁▁▁▁▂▂▅██▆● beats 200/214  medium · avg 69%        2.8%  small run
+<a href="https://arxiv.org/html/2508.06471v1">SimpleQA (maker)</a>                     14.5%  ▄▄▄▆█▆●██·▂█ beats 16/32    very hard · avg 7.5%    1.7%  small run
+<a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (maker)</a>               42.5%  ▁·▁·▁▃●▅▃▂█▅ beats 7/30     hard · avg 27%          1.2%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 73/100   medium · avg 67%        0.6%  sharp · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   95.8%  ▁▁▁▁▁▁▁▂▄█▄● beats 144/146  easy · avg 82%          0.3%  noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.1%  ▁▁▂▃▄▄█▆▃●▂▁ beats 123/140  very easy · avg 94%     0.2%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.7%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 54/98    very easy · avg 90%     0.0%  blunt
-<a href="https://arxiv.org/html/2508.06471v1">SysBench (ISR) (lab)</a>                 77.4%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2508.06471v1">SysBench (ISR) (maker)</a>               77.4%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -121,7 +121,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="primeintellect-intellect3-card-eval"></a><a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Prime Intellect INTELLECT-3 model card:…</a>        7   35% ▇▇▇▇
-<a name="report-2508.06471v1"></a><a href="https://arxiv.org/html/2508.06471v1">GLM-4.5 Team (lab)</a>                             16   33% ▇▇▇▇
+<a name="report-2508.06471v1"></a><a href="https://arxiv.org/html/2508.06471v1">GLM-4.5 Team (submitted / maker-reporte…</a>       16   33% ▇▇▇▇
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   15% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    6% ▇
 <a name="paper-2601.20789v3-sera"></a><a href="https://arxiv.org/html/2601.20789v3">SERA: Soft-Verified Efficient Repositor…</a>        1    4% ▇
@@ -233,7 +233,7 @@ Other versions: ud-q2_k_xl (~32.3 GB) `lms get https://huggingface.co/unsloth/GL
 
 Other versions: 8bit (~113.6 GB, Mac only) `mlx_lm.chat --model lmstudio-community/GLM-4.5-Air-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.5-Air)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.5-Air)
 
 ## Published speed measurements
 

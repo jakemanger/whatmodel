@@ -28,10 +28,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1114.8  ▁▂▃▃●█▃▂▂▂▁▁ beats 29/75  avg 1027                53%  typical
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    86.8%  ▄····▄█▄●█▄█ beats 5/10   easy · avg 82%          16%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   45.6%  ▁▂▂●▃▁▂▃·▁·▁ beats 11/22  hard · avg 28%          15%  sharp · at its level · noisy
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                      89.8%  ▄·▂·▂▆█▄▂▄▂● beats 17/17  very easy · avg 87%    4.3%  small run
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (lab)</a>            97.9%  ▃·····▅██▅▃● beats 12/12  very easy · avg 85%    1.9%  noisy · small run
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (lab)</a>            97.8%  ▃·······███● beats 11/12  very easy · avg 88%    0.2%  maxed out · noisy · small run
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">GenEval (lab)</a>                        90.0%  ▇▃▅▇▁▄▅▃█▃▃● beats 38/39  easy · avg 79%            —  not counted yet: no other model in the …
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (maker)</a>                    89.8%  ▄·▂·▂▆█▄▂▄▂● beats 17/17  very easy · avg 87%    4.3%  small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (maker)</a>          97.9%  ▃·····▅██▅▃● beats 12/12  very easy · avg 85%    1.9%  noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (maker)</a>          97.8%  ▃·······███● beats 11/12  very easy · avg 88%    0.2%  maxed out · noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">GenEval (maker)</a>                      90.0%  ▇▃▅▇▁▄▅▃█▃▃● beats 38/39  easy · avg 79%            —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -89,6 +89,6 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-o1
 
 Other versions: fp8 (~5.3 GB, NVIDIA only) `cd ComfyUI/custom_nodes && git clone https://github.com/Saganaki22/HiDream_O1-ComfyUI && pip install -r HiDream_O1-ComfyUI/requirements.txt && hf download drbaph/HiDream-O1-Image-FP8 --local-dir ../models/diffusion_models/HiDream-O1-Image-fp8  # then load the node's workflow in ComfyUI`
 
-Official weights and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-O1-Image)
+Model repository and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-O1-Image)
 
 [interactive version](https://whatmodel.sh/model/hidream-o1-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

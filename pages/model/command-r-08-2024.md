@@ -26,8 +26,8 @@ chat &amp; writing  ▁▁▁▃▆▄●█▆▇▇▃   #256 of 402*    8.7% 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>   11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%    5.9%  sharp
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (maker)</a>   11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%    5.9%  sharp
 </pre>
 
 </details>
@@ -39,10 +39,10 @@ Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-V
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   38.3%  ▁·▁▂●▁▆▄█▆▂▂ beats 9/62   medium · avg 51%         17%  sharp · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%          5.9%  sharp
-<a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          74.3%  █●·██···████ beats 1/7    easy · avg 78%          4.9%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (maker)</a>           11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 17%          5.9%  sharp
+<a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (maker)</a>                        74.3%  █●·██···████ beats 1/7    easy · avg 78%          4.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   11.0%  ▄●·▄·····█▄█ beats 1/7    hard · avg 18%          3.9%  typical
-<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 47%        3.0%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (maker)</a>               47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 47%        3.0%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 5.5%    2.5%  sharp · too hard for it · noisy
 </pre>
 
@@ -64,9 +64,9 @@ test            result  vs the others in its run    difficulty  counts  why
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 30.8%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 29/61    medium · avg 38%        33%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    73.2%  ▄●▄··▄▄··▄·█ beats 1/7      easy · avg 80%         7.1%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (make…</a>   73.2%  ▄●▄··▄▄··▄·█ beats 1/7      easy · avg 80%         7.1%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   59.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 49/81    medium · avg 57%       4.1%  blunt · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        34.3%  ▄··▄●···▄▄█▄ beats 2/7      hard · avg 35%         3.5%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (maker)</a>      34.3%  ▄··▄●···▄▄█▄ beats 2/7      hard · avg 35%         3.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 218/276  medium · avg 72%       2.1%  at its level · noisy
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.6%  ▁▁·▁·▂▃▄●▂·▁ beats 18/22    easy · avg 82%         2.0%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   88.2%  ▁▁▁▁▁▁▁▂▄█●▃ beats 109/146  easy · avg 82%         1.2%  at its level · noisy
@@ -83,7 +83,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   33% ▇▇▇▇
-<a name="report-2504.00698v2"></a><a href="https://arxiv.org/pdf/2504.00698v2">Cohere (lab)</a>                                    7   31% ▇▇▇▇
+<a name="report-2504.00698v2"></a><a href="https://arxiv.org/pdf/2504.00698v2">Cohere (submitted / maker-reported)</a>             7   31% ▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   17% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
@@ -186,6 +186,6 @@ Other versions: Q8_0 (~39.26 GB) `ollama run command-r:35b-08-2024-q8_0`
 
 Other versions: 8bit (~34.3 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-08-2024-8bit`
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024)
 
 [interactive version](https://whatmodel.sh/model/command-r-08-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

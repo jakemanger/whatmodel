@@ -37,10 +37,10 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions) (la…</a>   80.1%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 77/101  medium · avg 44%     21%  small run · several runs
+<a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions) (ma…</a>   80.1%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 77/101  medium · avg 44%     21%  small run · several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1215.9  ▁▁▂▂▂▂▃▄▅●█▇ beats 83/152  avg 1061             21%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.9%  ▁·▁·▃▃▁▇▃●·▄ beats 15/22   hard · avg 27%       17%  blunt · at its level
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro (lab)</a>                       76.8%  ▂▃▁▃▆▇▃▇▇█●▅ beats 43/52   medium · avg 48%    8.4%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro (maker)</a>                     76.8%  ▂▃▁▃▆▇▃▇▇█●▅ beats 43/52   medium · avg 48%    8.4%  at its level · small run
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                result  vs the others in its run  counts  why
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">HR-Bench 4K (lab)</a>    83.3%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Daily-Omni (lab)</a>     80.5%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Video-Holmes (lab)</a>   59.5%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+test                  result  vs the others in its run  counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">HR-Bench 4K (maker)</a>    83.3%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Daily-Omni (maker)</a>     80.5%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Video-Holmes (maker)</a>   59.5%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   52% ▇▇▇▇▇▇
-<a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (lab)</a>           2   19% ▇▇
+<a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (submit…</a>        2   19% ▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   17% ▇▇
 <a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo vendor-reported benchmark s…</a>        1   11% ▇
 prior: pull toward the middle                        1% ▇

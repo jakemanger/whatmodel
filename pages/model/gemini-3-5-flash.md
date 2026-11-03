@@ -90,7 +90,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions) (la…</a>   84.2%  ▃·▃·▃▃▃·▃▃●▅ beats 8/11     medium · avg 38%       3.5%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions) (ma…</a>   84.2%  ▃·▃·▃▃▃·▃▃●▅ beats 8/11     medium · avg 38%       3.5%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1282.2  ▁▁▂▂▂▂▃▄▅▅█● beats 134/152  avg 1061               2.1%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1453.4  ▁▁▃▃▄▃●█▅▇▄▅ beats 14/37    avg 1331               1.1%  blunt
 <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   58.0%  ▃·▅▃▅▃··▅··● beats 11/11    very hard · avg 33%    0.3%  at its level · noisy

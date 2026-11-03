@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   21.3%  ▁▁▁●··▁▁▂██▆ beats 11/86  avg 8.2%       38%  blunt
-<a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      3.9%  ▂·▂·▂······● beats 5/6    avg 0.2%       34%  typical
+<a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">LibriSpeech test-other WER (maker)</a>    3.9%  ▂·▂·▂······● beats 5/6    avg 0.2%       34%  typical
 <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>            1.8%  ▂··▂·▃▂█▂▃▃● beats 15/16  avg 0.4%       14%  blunt · several runs
 <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 African …</a>   61.1%  ██●····█████ beats 2/7    avg 30%       6.2%  blunt
 <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>       13.5%  ▂····▂▂▂●▃▃▂ beats 8/13   avg 9.2%      2.8%  blunt
@@ -36,13 +36,13 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">Meta (lab)</a>                           2   46% ▇▇▇▇▇▇
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   38% ▇▇▇▇▇
-<a name="speech-stt-afrispeech200-report-ccby"></a><a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200</a>                       1    6% ▇
-<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                  2    5% ▇
-prior: pull toward the middle             4% ▇
-weighted average                        = 15.6
+source                             results  share of the score
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">Meta (submitted / maker-reported)</a>        2   46% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                     1   38% ▇▇▇▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a><a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200</a>                           1    6% ▇
+<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                      2    5% ▇
+prior: pull toward the middle                 4% ▇
+weighted average                            = 15.6
 </pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
@@ -57,6 +57,6 @@ weighted average                        = 15.6
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-960h-lv60-self', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self)
 
 [interactive version](https://whatmodel.sh/model/wav2vec2-large-960h-lv60-self) · [JSON](https://whatmodel.sh/api?format=json&all=1)

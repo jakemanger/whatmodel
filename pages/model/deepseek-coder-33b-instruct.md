@@ -152,6 +152,6 @@ Other versions: Q8_0 (~35 GB) `ollama run deepseek-coder:33b-instruct-q8_0`
    mlx_lm.server --model mlx-community/deepseek-coder-33b-instruct
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-33b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

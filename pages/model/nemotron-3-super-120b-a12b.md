@@ -29,16 +29,16 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks">τ²-bench Telecom (lab)</a>               64.4%  ▁·▅█▆●▂▃▃▂▃▁ beats 51/89   hard · avg 19%           10%  sharp · at its level
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (lab)</a>             59.5%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/138  hard · avg 22%          5.5%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2604.12374v1#S3.T5">Terminal-Bench Hard (lab)</a>            25.8%  ▂▅▆▂▂▆▂▂●▅▅▂ beats 20/27   very hard · avg 5.2%    5.3%  sharp · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (lab)</a>                64.3%  ▁····▂▁▃●█▃▁ beats 16/44   medium · avg 35%        2.3%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Airline (lab)</a>               56.9%  ▁▁·▂▁▃▂▁●▅▂▃ beats 20/42   hard · avg 29%          1.8%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">SWE-bench Multilingual (lab)</a>         45.8%  ▁··▁▃●▅██▂▂▁ beats 11/65   hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks">τ²-bench Telecom (maker)</a>             64.4%  ▁·▅█▆●▂▃▃▂▃▁ beats 51/89   hard · avg 19%           10%  sharp · at its level
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (maker)</a>           59.5%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/138  hard · avg 22%          5.5%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2604.12374v1#S3.T5">Terminal-Bench Hard (maker)</a>          25.8%  ▂▅▆▂▂▆▂▂●▅▅▂ beats 20/27   very hard · avg 5.2%    5.3%  sharp · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (maker)</a>              64.3%  ▁····▂▁▃●█▃▁ beats 16/44   medium · avg 35%        2.3%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Airline (maker)</a>             56.9%  ▁▁·▂▁▃▂▁●▅▂▃ beats 20/42   hard · avg 29%          1.8%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">SWE-bench Multilingual (maker)</a>       45.8%  ▁··▁▃●▅██▂▂▁ beats 11/65   hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2604.12374v1">Humanity's Last Exam with tools (…</a>   22.8%  ▁·▁▂●▁▄▄▇█▄▅ beats 9/62    hard · avg 15%             —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2604.12374v1">BrowseComp (lab)</a>                     31.3%  ▂·▃▁▂●▆▅█▂▂▄ beats 11/46   very hard · avg 11%        —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">τ²-bench aggregate (lab)</a>             61.2%  ▁▁▁·▁▁●▃▃▄█▁ beats 11/39   medium · avg 45%           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">Terminal-Bench 2.0 (lab)</a>             31.0%  ▂▂▅●████▆▂▃▃ beats 6/36    very hard · avg 10%        —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2604.12374v1">BrowseComp (maker)</a>                   31.3%  ▂·▃▁▂●▆▅█▂▂▄ beats 11/46   very hard · avg 11%        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">τ²-bench aggregate (maker)</a>           61.2%  ▁▁▁·▁▁●▃▃▄█▁ beats 11/39   medium · avg 45%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">Terminal-Bench 2.0 (maker)</a>           31.0%  ▂▂▅●████▆▂▃▃ beats 6/36    very hard · avg 10%        —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -49,12 +49,12 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (lab)</a>             59.5%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/138  hard · avg 22%          5.5%  sharp · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (maker)</a>           59.5%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 55/138  hard · avg 22%          5.5%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>   23.2%  █··▄▂▂██▄·▄● beats 20/22   very hard · avg 3.5%    4.8%  sharp
 <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   81.7%  ▂··▃▂▃▆▅█·●▂ beats 19/20   medium · avg 47%        2.7%  typical
-<a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (lab)</a>    42.1%  ▁····▃▃▄▅█●▂ beats 32/40   hard · avg 19%          2.0%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SciCode subproblems (lab)</a>            42.3%  ▃··▃▃●·▃▃█·▅ beats 3/10    hard · avg 21%          1.8%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">SWE-bench Multilingual (lab)</a>         45.8%  ▁··▁▃●▅██▂▂▁ beats 11/65   hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (make…</a>   42.1%  ▁····▃▃▄▅█●▂ beats 32/40   hard · avg 19%          2.0%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SciCode subproblems (maker)</a>          42.3%  ▃··▃▃●·▃▃█·▅ beats 3/10    hard · avg 21%          1.8%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">SWE-bench Multilingual (maker)</a>       45.8%  ▁··▁▃●▅██▂▂▁ beats 11/65   hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">LiveCodeBench v5 (Jul–Dec 2024) (…</a>   82.1%  █··········● beats 1/1                                —  not counted yet: no other model in the …
 </pre>
 
@@ -77,13 +77,13 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                      90.2%  ▁·▁▁▁▂▅▆█▇●▁ beats 121/133  medium · avg 64%        9.3%  sharp · several runs
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (maker)</a>                    90.2%  ▁·▁▁▁▂▅▆█▇●▁ beats 121/133  medium · avg 64%        9.3%  sharp · several runs
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   30.5%  ▁▁▁▁●▇▄▃▁▃·▃ beats 5/24     very hard · avg 9.4%    6.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   48.9%  ▂··▄▂●█▆▆▄▄█ beats 4/23     hard · avg 23%          5.9%  at its level
-<a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>                77.2%  ▁▁·▁▁▁▄●█▄▂▃ beats 19/44    medium · avg 43%        4.1%  typical
-<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                      89.8%  ▁▁▁▂▂▂●█▆▂·▁ beats 22/52    easy · avg 66%          3.8%  sharp
+<a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (maker)</a>              77.2%  ▁▁·▁▁▁▄●█▄▂▃ beats 19/44    medium · avg 43%        4.1%  typical
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (maker)</a>                    89.8%  ▁▁▁▂▂▂●█▆▂·▁ beats 22/52    easy · avg 66%          3.8%  sharp
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   33.8%  ▃·●▃█▁·▄·▁▁▁ beats 3/18     hard · avg 19%          3.7%  at its level
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">HMMT February 2025 (lab)</a>             94.2%  ▁▁▁▃▁▅▅▃█●▁▄ beats 24/31    easy · avg 75%          2.7%  maxed out · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">HMMT February 2025 (maker)</a>           94.2%  ▁▁▁▃▁▅▅▃█●▁▄ beats 24/31    easy · avg 75%          2.7%  maxed out · small run
 </pre>
 
 </details>
@@ -93,7 +93,7 @@ test                                result  vs the others in its run    difficul
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2604.12374v1">Humanity's Last Exam with tools (…</a>   22.8%  ▁·▁▂●▁▄▄▇█▄▅ beats 9/62   hard · avg 15%            —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2604.12374v1">BrowseComp (lab)</a>                     31.3%  ▂·▃▁▂●▆▅█▂▂▄ beats 11/46  very hard · avg 11%       —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2604.12374v1">BrowseComp (maker)</a>                   31.3%  ▂·▃▁▂●▆▅█▂▂▄ beats 11/46  very hard · avg 11%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -101,15 +101,15 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (8)</summary>
 
 <pre>
-test                             result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">GPQA (subset unspecified) (lab)</a>   80.5%  ▂▁▂▂▄▃▆▃▅█●▃ beats 96/106   hard · avg 48%          6.2%  sharp · at its level
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Humanity's Last Exam (lab)</a>        18.5%  ▁▁▁▄▆▆●██▆▁▃ beats 51/111   very hard · avg 5.5%    3.4%  small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">MMLU-Pro (lab)</a>                    83.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 161/188  medium · avg 59%        2.5%  small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset</a>      19.5%  ●······▃▃▃█▃ beats 0/7      hard · avg 22%          2.1%  at its level · noisy
-<a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>              55.2%  ▁·▁·▁▃▆▅▃●█▅ beats 18/30    hard · avg 28%          1.8%  at its level · small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>        20.3%  ▄··●▄▄···█·█ beats 1/7      very hard · avg 9.1%    1.7%  at its level
-<a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                   79.4%  ▁·▁▁▁▂▁▃▃●▅▄ beats 22/36    medium · avg 54%        1.5%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">IFBench prompt-level (lab)</a>        73.4%  █●▄··▄·▄···▄ beats 2/6      medium · avg 56%        1.1%  small run
+test                               result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">GPQA (subset unspecified) (maker)</a>   80.5%  ▂▁▂▂▄▃▆▃▅█●▃ beats 96/106   hard · avg 48%          6.2%  sharp · at its level
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Humanity's Last Exam (maker)</a>        18.5%  ▁▁▁▄▆▆●██▆▁▃ beats 51/111   very hard · avg 5.5%    3.4%  small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">MMLU-Pro (maker)</a>                    83.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 161/188  medium · avg 59%        2.5%  small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset</a>        19.5%  ●······▃▃▃█▃ beats 0/7      hard · avg 22%          2.1%  at its level · noisy
+<a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (maker)</a>              55.2%  ▁·▁·▁▃▆▅▃●█▅ beats 18/30    hard · avg 28%          1.8%  at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>          20.3%  ▄··●▄▄···█·█ beats 1/7      very hard · avg 9.1%    1.7%  at its level
+<a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (maker)</a>                   79.4%  ▁·▁▁▁▂▁▃▃●▅▄ beats 22/36    medium · avg 54%        1.5%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">IFBench prompt-level (maker)</a>        73.4%  █●▄··▄·▄···▄ beats 2/6      medium · avg 56%        1.1%  small run
 </pre>
 
 </details>
@@ -121,7 +121,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="first-party-nvidia-scores"></a><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks">NVIDIA vendor-reported benchmark scores…</a>       12   47% ▇▇▇▇▇▇
-<a name="report-2603.19220v2"></a><a href="https://arxiv.org/html/2603.19220v2">NVIDIA (lab)</a>                                    8   26% ▇▇▇
+<a name="report-2603.19220v2"></a><a href="https://arxiv.org/html/2603.19220v2">NVIDIA (submitted / maker-reported)</a>             8   26% ▇▇▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        3   16% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
 <a name="card-final-ling-3-0-flash"></a><a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash model card</a>           2    4% ▇
@@ -242,7 +242,7 @@ Other versions: Q8_0 (~128.5 GB) `lms get https://huggingface.co/lmstudio-commun
 
 Other versions: 8bit (~128.3 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16)
 
 ## Published speed measurements
 

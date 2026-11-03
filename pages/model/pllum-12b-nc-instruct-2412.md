@@ -131,6 +131,6 @@ Other versions: 8bit (~13 GB, Mac only) `mlx_lm.chat --model lknik/PLLuM-12B-nc-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-nc-instruct-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-nc-instruct-2412)
+Model repository and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-nc-instruct-2412)
 
 [interactive version](https://whatmodel.sh/model/pllum-12b-nc-instruct-2412) · [JSON](https://whatmodel.sh/api?format=json&all=1)

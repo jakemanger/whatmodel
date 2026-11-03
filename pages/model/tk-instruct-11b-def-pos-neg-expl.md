@@ -44,6 +44,6 @@ weighted average                                   = 41.9
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tk-instruct-11b-def-pos-neg-expl)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tk-instruct-11b-def-pos-neg-expl)
 
 [interactive version](https://whatmodel.sh/model/tk-instruct-11b-def-pos-neg-expl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

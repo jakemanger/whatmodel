@@ -49,8 +49,8 @@ test                                result  vs the others in its run    difficul
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 29.8%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 27/61    medium · avg 38%     28%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        33.6%  ▃▂·▆▆●█▆▅▃▃▃ beats 13/33    medium · avg 39%    8.2%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        43.2%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 34/58    medium · avg 48%    8.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>      33.6%  ▃▂·▆▆●█▆▅▃▃▃ beats 13/33    medium · avg 39%    8.2%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>      43.2%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 34/58    medium · avg 48%    8.0%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 220/276  medium · avg 72%    1.7%  at its level · noisy
 </pre>
 
@@ -64,7 +64,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   28% ▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   27% ▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   16% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2   16% ▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   14% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    7% ▇
@@ -156,6 +156,6 @@ Other versions: Q8_0 (~133.7 GB) `ollama run qwen:110b-chat-v1.5-q8_0`
    mlx_lm.server --model mlx-community/Qwen1.5-110B-Chat-4bit
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-110B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-110B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-110b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -134,6 +134,6 @@ Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model alexgusevski/open
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenHands/openhands-lm-32b-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/OpenHands](https://huggingface.co/OpenHands/openhands-lm-32b-v0.1)
+Model repository and documentation: [huggingface.co/OpenHands](https://huggingface.co/OpenHands/openhands-lm-32b-v0.1)
 
 [interactive version](https://whatmodel.sh/model/openhands-lm-32b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

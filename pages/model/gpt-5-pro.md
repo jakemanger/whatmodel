@@ -59,8 +59,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>                   88.4%  ▁▁▁▁▂▄▅▅██●▄ beats 260/322  hard · avg 38%           11%  sharp
-<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>           30.7%  ▃··▃·▃●···▃█ beats 3/7      very hard · avg 4.4%    8.1%  at its level
+<a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (maker)</a>                 88.4%  ▁▁▁▁▂▄▅▅██●▄ beats 260/322  hard · avg 38%           11%  sharp
+<a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (maker)</a>         30.7%  ▃··▃·▃●···▃█ beats 3/7      very hard · avg 4.4%    8.1%  at its level
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06">ARC-AGI-2 public evaluation set (…</a>   13.3%  █··▂▅▁●▁▃·▁▃ beats 14/24    very hard · avg 0.3%    7.9%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-pro-2025-10-06">ARC-AGI-1 public evaluation set (…</a>   77.0%  ▁·▇▃▁·█●▁·▇▃ beats 18/27    very hard · avg 4.0%    4.4%  sharp · noisy
 </pre>

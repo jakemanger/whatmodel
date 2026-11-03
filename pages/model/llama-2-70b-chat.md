@@ -176,6 +176,6 @@ Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/Llama-2
 
 Other versions: Q8_0 (~83.28 GB) `ollama run llama2:70b-chat-q8_0`
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)
 
 [interactive version](https://whatmodel.sh/model/llama-2-70b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 66.7** ±2.5 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.7** ±2.5 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -37,9 +37,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>          6.0%  ▂······▅▅█●▃ beats 15/18  avg 27%        24%  sharp · small run
+<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (maker)</a>        6.0%  ▂······▅▅█●▃ beats 15/18  avg 27%        24%  sharp · small run
 <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot English) ·…</a>    5.2%  ▁·······▁▃●▇ beats 6/14   avg 16%        20%  small run
-<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>          9.7%  ▃▅·▃●▅▅▃▅▃·█ beats 4/15   avg 23%        15%  small run
+<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (maker)</a>        9.7%  ▃▅·▃●▅▅▃▅▃·█ beats 4/15   avg 23%        15%  small run
 </pre>
 
 </details>
@@ -49,10 +49,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                           results  share of the score
-<a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (lab)</a>        7   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle               2% ▇
-weighted average                          = 66.7
+source                                    results  share of the score
+<a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (submitted / …</a>        7   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 66.7
 </pre>
 
 <sub>Licences: dots.tts Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -61,6 +61,6 @@ weighted average                          = 66.7
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-base)
+Model repository and documentation: [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-base)
 
 [interactive version](https://whatmodel.sh/model/dots-tts-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

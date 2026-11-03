@@ -155,6 +155,6 @@ Other versions: Q2_K (~85.95 GB) `lms get https://huggingface.co/bartowski/DeepS
    mlx_lm.server --model GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

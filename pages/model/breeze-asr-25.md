@@ -52,6 +52,6 @@ weighted average                                   = 54.4
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Breeze-ASR-25-gguf Breeze-ASR-25-Q8_0.gguf --local-dir models/breeze-asr-25 && build/bin/transcribe-cli -m models/breeze-asr-25/Breeze-ASR-25-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/MediaTek-Research](https://huggingface.co/MediaTek-Research/Breeze-ASR-25)
+Model repository and documentation: [huggingface.co/MediaTek-Research](https://huggingface.co/MediaTek-Research/Breeze-ASR-25)
 
 [interactive version](https://whatmodel.sh/model/breeze-asr-25) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -130,6 +130,6 @@ Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model LogicBombaklot/cogi
    vllm serve deepcogito/cogito-v2-preview-llama-70B --tensor-parallel-size 4
    ```
 
-Official weights and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B)
+Model repository and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B)
 
 [interactive version](https://whatmodel.sh/model/cogito-v2-preview-llama-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

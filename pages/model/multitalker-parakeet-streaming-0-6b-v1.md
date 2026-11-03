@@ -51,6 +51,6 @@ weighted average                                   = 49.7
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf bundle/multitalker-parakeet-streaming-0.6b-v1-Q8_0.gguf --local-dir models/multitalker-parakeet-streaming-0.6b-v1 && build/bin/transcribe-cli -m models/multitalker-parakeet-streaming-0.6b-v1/bundle/multitalker-parakeet-streaming-0.6b-v1-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1)
 
 [interactive version](https://whatmodel.sh/model/multitalker-parakeet-streaming-0-6b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

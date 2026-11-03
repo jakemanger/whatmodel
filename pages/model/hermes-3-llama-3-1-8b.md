@@ -44,20 +44,20 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>                 52.9%  ▁▁▁▁▂▄▅●█▃▃▁ beats 73/155   medium · avg 68%     11%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                           64.8%  ▁▁▁▁▁▂▂▅●█▆▄ beats 104/214  easy · avg 78%       10%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>                  58.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 104/140  medium · avg 67%    8.3%  sharp · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>      29.4%  ▂▁▂▂●▃▆▃▅█▃▃ beats 17/106   hard · avg 38%      7.2%  sharp · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (maker)</a>               52.9%  ▁▁▁▁▂▄▅●█▃▃▁ beats 73/155   medium · avg 68%     11%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (maker)</a>                         64.8%  ▁▁▁▁▁▂▂▅●█▆▄ beats 104/214  easy · avg 78%       10%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (maker)</a>                58.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 104/140  medium · avg 67%    8.3%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (maker)</a>    29.4%  ▂▁▂▂●▃▆▃▅█▃▃ beats 17/106   hard · avg 38%      7.2%  sharp · small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 31/81    medium · avg 57%    6.4%  blunt · at its level
-<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                       32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/188   medium · avg 48%    6.1%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                     77.7%  ▁▁▁▁▂▁▁▅▇█●▁ beats 123/131  easy · avg 83%      5.3%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                      82.8%  ▁▁▁▂▂▂▄▆█▇●▂ beats 120/135  easy · avg 87%      4.5%  small run
-<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                          85.0%  ▁····▁▂█▆▅▆● beats 92/103   easy · avg 88%      4.0%  at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                     47.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 61/107   hard · avg 49%      3.7%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (maker)</a>                     32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/188   medium · avg 48%    6.1%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (maker)</a>                   77.7%  ▁▁▁▁▂▁▁▅▇█●▁ beats 123/131  easy · avg 83%      5.3%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (maker)</a>                    82.8%  ▁▁▁▂▂▂▄▆█▇●▂ beats 120/135  easy · avg 87%      4.5%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (maker)</a>                        85.0%  ▁····▁▂█▆▅▆● beats 92/103   easy · avg 88%      4.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (maker)</a>                   47.8%  ▅▁▁▁▂▂▃●▃▁▃▁ beats 61/107   hard · avg 49%      3.7%  small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 154/276  medium · avg 72%    3.2%  at its level · noisy
-<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                           43.5%  ●······█···█ beats 0/2      medium · avg 51%    2.1%  blunt · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                           80.3%  ▁▁▁▂▂▃▅█●▃▁▁ beats 95/123   easy · avg 85%      1.4%  blunt · at its level · small run
-<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>                 58.7%  █▇▇▄▂▄●▆▅▄▁▁ beats 51/79    medium · avg 59%    0.4%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (maker)</a>                         43.5%  ●······█···█ beats 0/2      medium · avg 51%    2.1%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (maker)</a>                         80.3%  ▁▁▁▂▂▃▅█●▃▁▁ beats 95/123   easy · avg 85%      1.4%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (maker)</a>               58.7%  █▇▇▄▂▄●▆▅▄▁▁ beats 51/79    medium · avg 59%    0.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -159,6 +159,6 @@ Other versions: Q8_0 (~10.14 GB) `ollama run hermes3:8b-llama3.1-q8_0`
    mlx_lm.server --model Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit
    ```
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B)
 
 [interactive version](https://whatmodel.sh/model/hermes-3-llama-3-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

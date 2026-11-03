@@ -29,8 +29,8 @@ Trails [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Opus 4.8](claude-o
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0314 IPS  ▁▁▁▃▃▂●▁▂▂▁▁ beats 44/59  avg -0.379 IPS     13%  sharp
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                           70.5%  █·█····●···█ beats 2/3    hard · avg 25%    1.5%  at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>        72.6%  ●█·····█··██ beats 0/4    hard · avg 28%    1.0%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (maker)</a>                         70.5%  █·█····●···█ beats 2/3    hard · avg 25%    1.5%  at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (make…</a>       72.6%  ●█·····█··██ beats 0/4    hard · avg 28%    1.0%  at its level · small run
 </pre>
 
 </details>
@@ -73,12 +73,12 @@ test                       result  vs the others in its run    difficulty       
 <details><summary>other tests (5)</summary>
 
 <pre>
-test                            result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                31.4%  ▄▂·▆█▂█●▄▆·▆ beats 15/25  very hard · avg 0.3%     12%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     51.0%  █··▂▃▇▄█▂●▂▁ beats 66/77  very hard · avg 9.4%     11%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       54.2%  █▆▆▆▆▂●▂▂▂▂▅ beats 22/32  very hard · avg 1.2%    9.3%  sharp · at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 10%     0.9%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%          0.8%  blunt · at its level · small run
+test                              result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                  31.4%  ▄▂·▆█▂█●▄▆·▆ beats 15/25  very hard · avg 0.3%     12%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>       51.0%  █··▂▃▇▄█▂●▂▁ beats 66/77  very hard · avg 9.4%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>         54.2%  █▆▆▆▆▂●▂▂▂▂▅ beats 22/32  very hard · avg 1.2%    9.3%  sharp · at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (maker)</a>    50.0%  ██·······●·█ beats 2/3    very hard · avg 10%     0.9%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (maker)</a>   60.5%  ▂·▂··▂▂▂●▄▂▄ beats 6/13   hard · avg 21%          0.8%  blunt · at its level · small run
 </pre>
 
 </details>

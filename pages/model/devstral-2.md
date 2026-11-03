@@ -25,10 +25,10 @@ coding       ▁▁▁▃▅▇█●▅▄▃▁   #194 of 469     70%      3
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%          15%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       32.6%  ▂▂▅●████▆▂▃▃ beats 7/36    very hard · avg 11%     11%  at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%         9.3%  at its level · small run
+test                            result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (maker)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%          15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (maker)</a>       32.6%  ▂▂▅●████▆▂▃▃ beats 7/36    very hard · avg 11%     11%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%         9.3%  at its level · small run
 </pre>
 
 </details>
@@ -38,10 +38,10 @@ test                          result  vs the others in its run   difficulty     
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1197.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 5/129   avg 981            46%  sharp
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%     15%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%    9.3%  at its level · small run
+test                            result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1197.1  ▁▁●▂▅█▃▆▅▅▁▂ beats 5/129   avg 981            46%  sharp
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (maker)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 90/138  hard · avg 33%     15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   61.3%  ▁··▁▃▁▅●█▂▂▁ beats 23/65   hard · avg 30%    9.3%  at its level · small run
 </pre>
 
 </details>
@@ -153,6 +153,6 @@ Other versions: Q8_0 (~148.1 GB) `ollama run devstral-2:123b-instruct-2512-q8_0`
 
 Other versions: 8bit (~132.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Devstral-2-123B-Instruct-2512-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512)
 
 [interactive version](https://whatmodel.sh/model/devstral-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

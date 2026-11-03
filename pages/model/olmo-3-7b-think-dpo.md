@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 53.3** ±2.5 · #389 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 53.3** ±2.5 · #389 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,9 +24,9 @@ math  ▁▁▃▅█▆●█▄▂▁▁   #180 of 433*     97%      2
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
-test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     92.4%  ▃·····●···▅█ beats 1/6    very easy · avg 91%     54%  maxed out
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 31%          43%  at its level
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (maker)</a>    92.4%  ▃·····●···▅█ beats 1/6    very easy · avg 91%     54%  maxed out
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (make…</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 31%          43%  at its level
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card (lab)</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card (sub…</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 53.3
 </pre>
@@ -102,6 +102,6 @@ Other versions: Q8_0 (~7.8 GB) `lms get https://huggingface.co/mradermacher/Olmo
 
 Other versions: Q8_0 (~7.8 GB) `ollama run hf.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0`
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3-7B-Think-DPO)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3-7B-Think-DPO)
 
 [interactive version](https://whatmodel.sh/model/olmo-3-7b-think-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

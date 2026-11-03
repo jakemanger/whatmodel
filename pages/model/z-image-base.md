@@ -27,13 +27,13 @@ Beats [Wan 2.7 Image](wan-2-7-image.md), [GPT Image 1 Mini](gpt-image-1-mini.md)
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    88.1%  ▄····▄█▄▄█●█ beats 8/10   easy · avg 82%          18%  typical
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   61.9%  ▁▂▂█●▁▂▃·▁·▁ beats 14/22  hard · avg 28%          16%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>            93.5%  ▃·····▅█●▅▃▃ beats 6/12   very easy · avg 88%     11%  maxed out · small run
-<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>            93.6%  ▃·······██●█ beats 7/12   very easy · avg 89%    8.3%  maxed out · small run
-<a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                        84.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 32/39  easy · avg 77%         7.8%  small run
-<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>               53.5%  ▃·▃█▃·▃··●·▃ beats 7/8    medium · avg 39%       6.9%  at its level · small run
-<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>               54.6%  ▃······▃▅█●▃ beats 8/9    medium · avg 41%       6.8%  at its level · small run
-<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>          86.7%  ▄▄▄●▄▄·▄···▄ beats 4/8    easy · avg 81%         6.7%  small run
-<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                      88.1%  ▄·▂·▂▆█▄▂●▂▂ beats 14/17  very easy · avg 85%    5.8%  small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (maker)</a>          93.5%  ▃·····▅█●▅▃▃ beats 6/12   very easy · avg 88%     11%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (maker)</a>          93.6%  ▃·······██●█ beats 7/12   very easy · avg 89%    8.3%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">GenEval (maker)</a>                      84.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 32/39  easy · avg 77%         7.8%  small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (maker)</a>             53.5%  ▃·▃█▃·▃··●·▃ beats 7/8    medium · avg 39%       6.9%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (maker)</a>             54.6%  ▃······▃▅█●▃ beats 8/9    medium · avg 41%       6.8%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (maker)</a>        86.7%  ▄▄▄●▄▄·▄···▄ beats 4/8    easy · avg 81%         6.7%  small run
+<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (maker)</a>                    88.1%  ▄·▂·▂▆█▄▂●▂▂ beats 14/17  very easy · avg 85%    5.8%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>   83.0%  ▄······●··▄▄ beats 1/4    easy · avg 74%         5.5%  small run
 <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>   80.2%  █···●···██·█ beats 1/4    easy · avg 71%         5.5%  small run
 </pre>
@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (lab)</a>                                9   64% ▇▇▇▇▇▇▇▇
+<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (submitted / maker-reported)</a>         9   64% ▇▇▇▇▇▇▇▇
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
 <a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   16% ▇▇
 prior: pull toward the middle                        2% ▇
@@ -73,6 +73,6 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/z-image/ba
 
 Other versions: BF16 + QWEN3 4B BF16 (SD.CPP) (~25.3 GB) `sd-cli --diffusion-model models/z_image_bf16.safetensors --vae models/ae.safetensors --llm models/qwen_3_4b.safetensors -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512`
 
-Official weights and documentation: [huggingface.co/Tongyi-MAI](https://huggingface.co/Tongyi-MAI/Z-Image)
+Model repository and documentation: [huggingface.co/Tongyi-MAI](https://huggingface.co/Tongyi-MAI/Z-Image)
 
 [interactive version](https://whatmodel.sh/model/z-image-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -214,6 +214,6 @@ Other versions: ud-q2_k_xl (~38.9 GB) `lms get https://huggingface.co/unsloth/Mi
    mlx_lm.server --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B)
 
 [interactive version](https://whatmodel.sh/model/mistral-medium-3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

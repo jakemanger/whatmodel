@@ -156,6 +156,6 @@ Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/TheBloke/WizardLM-13B-V1.2-GGU
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WizardLMTeam/WizardLM-13B-V1.2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardLM-13B-V1.2)
+Model repository and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardLM-13B-V1.2)
 
 [interactive version](https://whatmodel.sh/model/wizardlm-13b-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

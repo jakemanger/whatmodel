@@ -119,6 +119,6 @@ Other versions: Q8_0 (~1.8 GB) `lms get https://huggingface.co/afrideva/stablelm
    mlx_lm.server --model mlx-community/stablelm-2-zephyr-1_6b-4bit
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b)
 
 [interactive version](https://whatmodel.sh/model/stablelm-2-zephyr-1-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -111,6 +111,6 @@ Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/WizardCoder-15B-V1.
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WizardLMTeam/WizardCoder-15B-V1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardCoder-15B-V1.0)
+Model repository and documentation: [huggingface.co/WizardLMTeam](https://huggingface.co/WizardLMTeam/WizardCoder-15B-V1.0)
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-15b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -103,7 +103,7 @@ api  · price unknown · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-
 
 Other versions: BF16 (~12.5 GB, NVIDIA only) `python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage"` · Q8 (~6.5 GB, Mac only) `rapid-mlx serve wan2.2-ti2v-5b-q8` · BF16 (~12.5 GB, Mac only) `rapid-mlx serve wan2.2-ti2v-5b-bf16` · fp16 + umt5 q8_0 (sd.cpp) (~21.4 GB) `sd-cli -M vid_gen --diffusion-model models/wan2.2_ti2v_5B_fp16.safetensors --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0`
 
-Official weights and documentation: [huggingface.co/Wan-AI](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B)
+Model repository and documentation: [huggingface.co/Wan-AI](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B)
 
 ## Published speed measurements
 

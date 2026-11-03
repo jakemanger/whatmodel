@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="speech-higgs3-sglang-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Higgs Audio v3 comparison tables in SGL…</a>        3    8% ▇
 <a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot</a>                     1    3% ▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2    3% ▇
-<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (lab)</a>            2    3% ▇
+<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (submitt…</a>        2    3% ▇
 <a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                                1    1% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 62.6
@@ -110,6 +110,6 @@ api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/
 
 Other versions: BF16 (FISH-SPEECH OFFICIAL REPO CLI) (~11.01 GB) `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e ".[cpu]" && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth --device cpu` · BF16 (MLX-AUDIO) (~11.01 GB, Mac only) `pip install -U mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/fish-audio-s2-pro-bf16 --text "Hello, this is a test."`
 
-Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/s2-pro)
+Model repository and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/s2-pro)
 
 [interactive version](https://whatmodel.sh/model/fish-audio-s2-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

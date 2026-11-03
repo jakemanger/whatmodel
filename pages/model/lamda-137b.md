@@ -6,7 +6,7 @@
 
 Google · released 2022-01 · 137B params · proprietary
 
-**score 33.8** ±0.6 · comparison only: no current run option verified · from 20 benchmark results across 3 sources · † every result so far was reported by its maker
+**score 33.8** ±0.6 · comparison only: no current run option verified · from 20 benchmark results across 3 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,8 +23,8 @@ math    ▁▁▃●██▅█▃▁▁▁   #449 of 530*     13%      1
 <details><summary>coding · #4 of 4 · 1.9% of its score</summary>
 
 <pre>
-test             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2204.02311v5">HumanEval (lab)</a>   14.0%  ▁▁▁▁●▂▆▆█▅▂▁ beats 24/205  medium · avg 46%    1.9%  sharp
+test               result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2204.02311v5">HumanEval (maker)</a>   14.0%  ▁▁▁▁●▂▆▆█▅▂▁ beats 24/205  medium · avg 46%    1.9%  sharp
 </pre>
 
 </details>
@@ -34,8 +34,8 @@ test             result  vs the others in its run   difficulty        counts  wh
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2201.11903v6">GSM8K (lab)</a>   14.3%  █·▅▃▃▃·●·▃▃▅ beats 8/12   easy · avg 67%     13%  sharp · several runs
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2201.11903v6">GSM8K (maker)</a>   14.3%  █·▅▃▃▃·●·▃▃▅ beats 8/12   easy · avg 67%     13%  sharp · several runs
 </pre>
 
 </details>
@@ -44,18 +44,18 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (lab)</a>        57.9%  ▅▃█···▅·●▃▃▅ beats 8/12    very easy · avg 94%     23%  sharp · at its level
-<a href="https://arxiv.org/html/2201.11903v6">SVAMP (lab)</a>                          37.5%  ▃▅█···▅·●▃▃▅ beats 8/12    easy · avg 82%          18%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">ASDiv (lab)</a>                          46.6%  ▅▃▃▅··▃▃·●▃█ beats 8/12    easy · avg 83%          15%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (lab)</a>                  53.6%  █······▁·●▁▃ beats 8/12    easy · avg 88%         9.3%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (lab)</a>                       20.6%  █●·▁▁·····▂▁ beats 7/12    medium · avg 48%       4.8%  sharp · too hard for it · several runs
-<a href="https://arxiv.org/html/2203.11171v4">ARC Challenge (lab)</a>                  55.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 98/140  easy · avg 86%         3.6%  sharp · at its level
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (l…</a>   59.5%  █·····▃·●·▄▁ beats 8/12    medium · avg 81%       3.5%  sharp
-<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (lab)</a>   21.5%  ▃·▅·▅▃▅·●▃·█ beats 8/12    medium · avg 52%       3.0%  at its level
-<a href="https://arxiv.org/html/2201.11903v6">StrategyQA (lab)</a>                     62.4%  █·····▅▃▃▅●█ beats 9/12    medium · avg 70%       2.0%  several runs
-<a href="https://arxiv.org/html/2203.11171v4">AddSub (lab)</a>                         52.9%  ●·········██ beats 0/2     very easy · avg 89%    1.4%  at its level · small run
-<a href="https://arxiv.org/html/2203.11171v4">MultiArith (lab)</a>                     51.8%  ●·········██ beats 0/2     very easy · avg 93%    1.2%  sharp · at its level · noisy · small run
-<a href="https://arxiv.org/html/2203.11171v4">ARC Easy (lab)</a>                       75.3%  ▁▃▂▄▆█●▃▁··▁ beats 78/100  easy · avg 87%         0.3%  blunt · at its level
+<a href="https://arxiv.org/html/2201.11903v6">MAWPS (CoT-paper union) (maker)</a>      57.9%  ▅▃█···▅·●▃▃▅ beats 8/12    very easy · avg 94%     23%  sharp · at its level
+<a href="https://arxiv.org/html/2201.11903v6">SVAMP (maker)</a>                        37.5%  ▃▅█···▅·●▃▃▅ beats 8/12    easy · avg 82%          18%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">ASDiv (maker)</a>                        46.6%  ▅▃▃▅··▃▃·●▃█ beats 8/12    easy · avg 83%          15%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">CommonsenseQA (maker)</a>                53.6%  █······▁·●▁▃ beats 8/12    easy · avg 88%         9.3%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2201.11903v6">AQuA-RAT (maker)</a>                     20.6%  █●·▁▁·····▂▁ beats 7/12    medium · avg 48%       4.8%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2203.11171v4">ARC Challenge (maker)</a>                55.1%  ▄▁▁▂▁▄█●▃▂▃▂ beats 98/140  easy · avg 86%         3.6%  sharp · at its level
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Sports Understanding (m…</a>   59.5%  █·····▃·●·▄▁ beats 8/12    medium · avg 81%       3.5%  sharp
+<a href="https://arxiv.org/html/2201.11903v6">BIG-bench Date Understanding (mak…</a>   21.5%  ▃·▅·▅▃▅·●▃·█ beats 8/12    medium · avg 52%       3.0%  at its level
+<a href="https://arxiv.org/html/2201.11903v6">StrategyQA (maker)</a>                   62.4%  █·····▅▃▃▅●█ beats 9/12    medium · avg 70%       2.0%  several runs
+<a href="https://arxiv.org/html/2203.11171v4">AddSub (maker)</a>                       52.9%  ●·········██ beats 0/2     very easy · avg 89%    1.4%  at its level · small run
+<a href="https://arxiv.org/html/2203.11171v4">MultiArith (maker)</a>                   51.8%  ●·········██ beats 0/2     very easy · avg 93%    1.2%  sharp · at its level · noisy · small run
+<a href="https://arxiv.org/html/2203.11171v4">ARC Easy (maker)</a>                     75.3%  ▁▃▂▄▆█●▃▁··▁ beats 78/100  easy · avg 87%         0.3%  blunt · at its level
 </pre>
 
 </details>

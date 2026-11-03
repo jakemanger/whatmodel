@@ -53,6 +53,6 @@ weighted average                                   = 32.1
    git clone https://github.com/mit-han-lab/vila-u && cd vila-u && ./environment_setup.sh vila-u && conda activate vila-u && git lfs install && git clone https://huggingface.co/mit-han-lab/vila-u-7b-256 && CUDA_VISIBLE_DEVICES=0 python inference.py --model_path vila-u-7b-256 --prompt "A snowy mountain." --save_path generated_images --generation_nums 8
    ```
 
-Official weights and documentation: [huggingface.co/mit-han-lab](https://huggingface.co/mit-han-lab/vila-u-7b-256)
+Model repository and documentation: [huggingface.co/mit-han-lab](https://huggingface.co/mit-han-lab/vila-u-7b-256)
 
 [interactive version](https://whatmodel.sh/model/vila-u-7b-256) · [JSON](https://whatmodel.sh/api?format=json&all=1)

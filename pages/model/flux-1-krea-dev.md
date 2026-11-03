@@ -71,6 +71,6 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
    uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-Krea-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A frog holding a sign that says hello world', height=1024, width=1024, guidance_scale=4.5).images[0].save('flux-krea-dev.png')"
    ```
 
-Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev)
+Model repository and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev)
 
 [interactive version](https://whatmodel.sh/model/flux-1-krea-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

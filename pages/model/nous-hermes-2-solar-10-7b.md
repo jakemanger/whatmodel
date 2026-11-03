@@ -98,6 +98,6 @@ Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/TheBloke/Nous-He
    ollama run nous-hermes2:10.7b
    ```
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B)
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-solar-10-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

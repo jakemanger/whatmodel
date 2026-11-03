@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 14.77B params · nvidia-open-model-license
 
-**score 59.8** ±1.0 · #206 of 732 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.8** ±1.0 · #206 of 732 · from 12 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,9 +27,9 @@ math            ▁▁▃▅█▆▄●▄▂▁▁   #124 of 431*     17%     
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>   43.1%  ▁▁▁▁▁▁▂●█▆▁▁ beats 32/138   hard · avg 19%      6.1%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>              67.5%  ▁▁▁▁▁▃▅█▆●▄▁ beats 136/171  medium · avg 58%    1.4%  blunt · at its level · small run
+test                        result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (maker)</a>   43.1%  ▁▁▁▁▁▁▂●█▆▁▁ beats 32/138   hard · avg 19%      6.1%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (maker)</a>              67.5%  ▁▁▁▁▁▃▅█▆●▄▁ beats 136/171  medium · avg 58%    1.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>   10.5%  ▃▃····▃·█·▃● beats 7/7     very hard · avg 2.6%     31%  sharp
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   68.9%  ▄·▄····▄▄▄█● beats 7/7     medium · avg 46%         12%  at its level
-<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>             43.1%  ▁▁▁▁▁▁▂●█▆▁▁ beats 32/138  hard · avg 19%          6.1%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (maker)</a>           43.1%  ▁▁▁▁▁▁▂●█▆▁▁ beats 32/138  hard · avg 19%          6.1%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   74.6%  ▄▄···▄·▄▄█·● beats 7/7     medium · avg 58%        5.1%  at its level
 </pre>
 
@@ -53,8 +53,8 @@ test                                result  vs the others in its run   difficult
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
 <pre>
-test                              result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (lab)</a>   81.9%  ▁▁··▂··▂●█▃▃ beats 12/26  easy · avg 77%    1.8%  small run
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (maker)</a>   81.9%  ▁▁··▂··▂●█▃▃ beats 12/26  easy · avg 77%    1.8%  small run
 </pre>
 
 </details>
@@ -64,9 +64,9 @@ test                              result  vs the others in its run  difficulty  
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13607v2">AIME 2025 (lab)</a>   83.3%  ▁·▁▁▁▂▅▆█●▅▁ beats 93/133  medium · avg 56%    9.1%  sharp · small run
-<a href="https://arxiv.org/html/2512.13607v2">AIME 2024 (lab)</a>   89.7%  ▁▁▁▂▁▃▁▅██●▃ beats 71/85   easy · avg 70%      7.6%  sharp · small run
+test               result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13607v2">AIME 2025 (maker)</a>   83.3%  ▁·▁▁▁▂▅▆█●▅▁ beats 93/133  medium · avg 56%    9.1%  sharp · small run
+<a href="https://arxiv.org/html/2512.13607v2">AIME 2024 (maker)</a>   89.7%  ▁▁▁▂▁▃▁▅██●▃ beats 71/85   easy · avg 70%      7.6%  sharp · small run
 </pre>
 
 </details>
@@ -75,9 +75,9 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>                   69.6%  ▁▁▁▁▂▄▅▅●██▄ beats 155/322  hard · avg 46%       11%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                           85.1%  ▁▁▁▁▁▂▂▅██●▄ beats 187/214  medium · avg 71%    6.2%  small run
-<a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                       77.0%  ▁▁·▁▁▁▃▂▄●█▁ beats 108/188  medium · avg 60%    4.9%  small run
+<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (maker)</a>                 69.6%  ▁▁▁▁▂▄▅▅●██▄ beats 155/322  hard · avg 46%       11%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">MMLU (maker)</a>                         85.1%  ▁▁▁▁▁▂▂▅██●▄ beats 187/214  medium · avg 71%    6.2%  small run
+<a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (maker)</a>                     77.0%  ▁▁·▁▁▁▃▂▄●█▁ beats 108/188  medium · avg 60%    4.9%  small run
 <a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecified)…</a>   41.7%  ▂▆▂▄●▄▂▄▄▆█▇ beats 29/86    hard · avg 30%      3.4%  at its level · small run
 </pre>
 
@@ -88,10 +88,10 @@ test                                result  vs the others in its run    difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                        12  100% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             0% ▇
-weighted average                        = 59.8
+source                               results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (submitted / maker-reported)</a>       12  100% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   0% ▇
+weighted average                              = 59.8
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -177,6 +177,6 @@ Other versions: Q8_0 (~15.7 GB) `ollama run hf.co/bartowski/nvidia_Nemotron-Casc
    mlx_lm.server --model introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-Cascade-14B-Thinking)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-Cascade-14B-Thinking)
 
 [interactive version](https://whatmodel.sh/model/nemotron-cascade-14b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

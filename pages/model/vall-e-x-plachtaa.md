@@ -56,6 +56,6 @@ weighted average                                   = 31.2
    git clone https://github.com/Plachtaa/VALL-E-X.git && cd VALL-E-X && pip install -r requirements.txt && python -c "from utils.generation import SAMPLE_RATE, generate_audio, preload_models; from scipy.io.wavfile import write as write_wav; preload_models(); audio_array = generate_audio('Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.'); write_wav('vallex_generation.wav', SAMPLE_RATE, audio_array)"
    ```
 
-Official weights and documentation: [huggingface.co/Plachta](https://huggingface.co/Plachta/VALL-E-X)
+Model repository and documentation: [huggingface.co/Plachta](https://huggingface.co/Plachta/VALL-E-X)
 
 [interactive version](https://whatmodel.sh/model/vall-e-x-plachtaa) · [JSON](https://whatmodel.sh/api?format=json&all=1)

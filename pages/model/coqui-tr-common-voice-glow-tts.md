@@ -50,6 +50,6 @@ weighted average                        = 10.7
    uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/tr/common-voice/glow-tts --text "Merhaba dünya." --out_path speech.wav --device cpu
    ```
 
-Official weights and documentation: [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
+Model repository and documentation: [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
 
 [interactive version](https://whatmodel.sh/model/coqui-tr-common-voice-glow-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

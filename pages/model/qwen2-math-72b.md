@@ -24,10 +24,10 @@ math  ▁▁▃▅█●▄█▄▂▁▁   #245 of 431     37%      3
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                40.1%  ▃·····▃··█▅● beats 7/8    hard · avg 34%          16%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       96.7%  ▄···█▄▄·▄·▄● beats 8/8    very easy · avg 92%     13%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 74%         8.4%  at its level
+test                               result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (maker)</a>                40.1%  ▃·····▃··█▅● beats 7/8    hard · avg 34%          16%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (maker)</a>                       96.7%  ▄···█▄▄·▄·▄● beats 8/8    very easy · avg 92%     13%  sharp · maxed out
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (maker)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 74%         8.4%  at its level
 </pre>
 
 </details>
@@ -46,11 +46,11 @@ test                  result  vs the others in its run  difficulty        counts
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>            1   62% ▇▇▇▇▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   37% ▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 50.6
+source                             results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                1   62% ▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (submitted / maker-reported)</a>        3   37% ▇▇▇▇
+prior: pull toward the middle                 1% ▇
+weighted average                            = 50.6
 </pre>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0))</sub>
@@ -136,6 +136,6 @@ Other versions: IQ2_M (~29.3 GB) `lms get https://huggingface.co/lmstudio-commun
 
 Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-Math-72B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-math-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

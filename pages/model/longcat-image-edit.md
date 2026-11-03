@@ -53,7 +53,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   40% ▇▇▇▇▇
-<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat (lab)</a>                           2   26% ▇▇▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat (submitted / maker-repo…</a>        2   26% ▇▇▇
 <a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   18% ▇▇
 <a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇
 <a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    4% ▇
@@ -90,6 +90,6 @@ api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
    uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from PIL import Image; from diffusers import LongCatImageEditPipeline; p=LongCatImageEditPipeline.from_pretrained('meituan-longcat/LongCat-Image-Edit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(Image.open('input.png').convert('RGB'), 'turn the cat into a dog', negative_prompt='', guidance_scale=4.5, num_inference_steps=50, num_images_per_prompt=1, generator=torch.Generator('cpu').manual_seed(43)).images[0].save('edit_example.png')"
    ```
 
-Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image-Edit)
+Model repository and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image-Edit)
 
 [interactive version](https://whatmodel.sh/model/longcat-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

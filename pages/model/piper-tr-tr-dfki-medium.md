@@ -50,6 +50,6 @@ weighted average                        = 26.6
    pip install piper-tts && python3 -m piper.download_voices tr_TR-dfki-medium && python3 -m piper -m tr_TR-dfki-medium -f test.wav -- 'Merhaba, nasılsınız?'
    ```
 
-Official weights and documentation: [huggingface.co/rhasspy](https://huggingface.co/rhasspy/piper-voices)
+Model repository and documentation: [huggingface.co/rhasspy](https://huggingface.co/rhasspy/piper-voices)
 
 [interactive version](https://whatmodel.sh/model/piper-tr-tr-dfki-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

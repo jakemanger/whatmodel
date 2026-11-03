@@ -46,6 +46,6 @@ weighted average                                   = 26.8
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/Doubiiu](https://huggingface.co/Doubiiu/DynamiCrafter_1024)
+Model repository and documentation: [huggingface.co/Doubiiu](https://huggingface.co/Doubiiu/DynamiCrafter_1024)
 
 [interactive version](https://whatmodel.sh/model/dynamicrafter-1024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

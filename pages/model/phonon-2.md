@@ -6,7 +6,7 @@
 
 Fermion Research · released 2026-09 · 0.6B params · cc-by-4.0
 
-**score 56.1** ±6.5 · #62 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 56.1** ±6.5 · #62 of 163 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -32,10 +32,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="phonon-2-card"></a><a href="https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md">Phonon-2 model card (lab)</a>            1   84% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            16% ▇▇
-weighted average                        = 56.1
+source                                    results  share of the score
+<a name="phonon-2-card"></a><a href="https://huggingface.co/FermionResearch/Phonon-2/blob/fb09063c9dc8e130d97b3a2191ed5aed6b71bb31/README.md">Phonon-2 model card (submitted / maker-…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       16% ▇▇
+weighted average                                   = 56.1
 </pre>
 
 <sub>Licences: Phonon-2 model card ([cc-by-4.0](../../licenses/CC-BY-4.0.txt))</sub>
@@ -50,6 +50,6 @@ weighted average                        = 56.1
    python3.12 -m venv .venv && source .venv/bin/activate && pip install fermion-research mlx mlx-audio mlx-lm soundfile scipy zstandard && phonon transcribe recording.wav
    ```
 
-Official weights and documentation: [huggingface.co/FermionResearch](https://huggingface.co/FermionResearch/Phonon-2)
+Model repository and documentation: [huggingface.co/FermionResearch](https://huggingface.co/FermionResearch/Phonon-2)
 
 [interactive version](https://whatmodel.sh/model/phonon-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

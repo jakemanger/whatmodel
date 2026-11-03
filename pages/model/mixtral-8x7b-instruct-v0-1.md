@@ -217,6 +217,6 @@ Other versions: Q4_K_M (~28.52 GB) `ollama run mixtral:8x7b-instruct-v0.1-q4_K_M
 
 Other versions: 8bit (~49.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Mixtral-8x7B-Instruct-v0.1-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mixtral-8x7b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

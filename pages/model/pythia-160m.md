@@ -22,16 +22,16 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           74.1%  ▂··●▃▂▂▆▃▃█▂ beats 1/19    very easy · avg 98%     22%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       43.5%  ▃·●▃▃▅·██▃██ beats 2/19    easy · avg 87%          21%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (maker)</a>                         74.1%  ▂··●▃▂▂▆▃▃█▂ beats 1/19    very easy · avg 98%     22%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (maker)</a>                     43.5%  ▃·●▃▃▅·██▃██ beats 2/19    easy · avg 87%          21%  blunt · at its level · several runs
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   34.1%  ▂·●·▂█▄▄█▄▂▆ beats 2/21    easy · avg 74%          11%  blunt
-<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           62.7%  ▂·●▄·▄▂▆▂▄█▄ beats 1/19    easy · avg 87%          11%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (maker)</a>                         62.7%  ▂·●▄·▄▂▆▂▄█▄ beats 1/19    easy · avg 87%          11%  blunt · at its level
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   32.8%  ▃··●▃▃▅▅▅███ beats 1/19    very easy · avg 87%     10%  blunt · at its level
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     53.1%  ▄····▄●▂▄▆▆█ beats 4/19    easy · avg 87%         5.6%  too hard for it
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  18.8%  ●··▁·▁▁·▁▂▁▂ beats 8/19    easy · avg 74%         5.0%  sharp · too hard for it · small run · s…
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">HellaSwag (lab)</a>                      29.4%  ●▁▁▂▂▂▄▆█▇▄▂ beats 3/135   easy · avg 83%         4.9%  small run
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (lab)</a>                        1.1%  ●▁▂▂▄▄▃▆▅█▅▂ beats 0/80    medium · avg 61%       3.7%  too hard for it · small run
-<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">OpenBookQA (lab)</a>                     17.2%  ●▁▁▁▂▂▃█▃▁▃▁ beats 1/107   very hard · avg 29%    3.1%  too hard for it · small run
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (maker)</a>                   53.1%  ▄····▄●▂▄▆▆█ beats 4/19    easy · avg 87%         5.6%  too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (maker)</a>                18.8%  ●··▁·▁▁·▁▂▁▂ beats 8/19    easy · avg 74%         5.0%  sharp · too hard for it · small run · s…
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">HellaSwag (maker)</a>                    29.4%  ●▁▁▂▂▂▄▆█▇▄▂ beats 3/135   easy · avg 83%         4.9%  small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">TriviaQA (maker)</a>                      1.1%  ●▁▂▂▄▄▃▆▅█▅▂ beats 0/80    medium · avg 61%       3.7%  too hard for it · small run
+<a href="https://aclanthology.org/2023.emnlp-main.530.pdf">OpenBookQA (maker)</a>                   17.2%  ●▁▁▁▂▂▃█▃▁▃▁ beats 1/107   very hard · avg 29%    3.1%  too hard for it · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 10/276  medium · avg 72%       0.5%  too hard for it · noisy
 </pre>
 
@@ -142,6 +142,6 @@ Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/pythia-160m-GGUF:Q
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-160m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-160m)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-160m)
 
 [interactive version](https://whatmodel.sh/model/pythia-160m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -79,6 +79,6 @@ api (fal.ai) · $0.075/sec · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-vide
    uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import HunyuanVideo15ImageToVideoPipeline; from diffusers.utils import export_to_video, load_image; p=HunyuanVideo15ImageToVideoPipeline.from_pretrained('hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p.vae.enable_tiling(); image=load_image('https://huggingface.co/datasets/YiYiXu/testing-images/resolve/main/wan_i2v_input.JPG'); export_to_video(p(prompt='Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.', image=image, generator=torch.Generator(device='cuda:0').manual_seed(1), num_frames=121, num_inference_steps=50).frames[0], 'output.mp4', fps=24)"
    ```
 
-Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-1.5)
+Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-1.5)
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

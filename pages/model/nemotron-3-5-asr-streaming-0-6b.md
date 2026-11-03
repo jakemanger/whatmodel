@@ -63,6 +63,6 @@ weighted average                                   = 43.4
 
 Other versions: fp32 (transformers >=5.13.0) (~2.55 GB) `uv run --with 'transformers>=5.13.0' --with torch --with librosa python -c "from transformers import pipeline; pipe = pipeline('automatic-speech-recognition', model='nvidia/nemotron-3.5-asr-streaming-0.6b'); print(pipe('audio.wav'))"`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-asr-streaming-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -53,6 +53,6 @@ weighted average                                = 27.7
    uv run --python 3.12 --with whisperspeech==0.8.9 --with webdataset --with torchcodec python -c "from whisperspeech.pipeline import Pipeline; pipe = Pipeline(t2s_ref='WhisperSpeech/WhisperSpeech:t2s-v1.95-medium-7lang.model', s2a_ref='WhisperSpeech/WhisperSpeech:s2a-v1.95-medium-7lang.model'); pipe.generate_to_file('output.wav', 'This is a test')"
    ```
 
-Official weights and documentation: [huggingface.co/WhisperSpeech](https://huggingface.co/WhisperSpeech/WhisperSpeech)
+Model repository and documentation: [huggingface.co/WhisperSpeech](https://huggingface.co/WhisperSpeech/WhisperSpeech)
 
 [interactive version](https://whatmodel.sh/model/whisperspeech-v1-95-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

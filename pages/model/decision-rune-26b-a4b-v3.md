@@ -6,9 +6,7 @@
 
 Surogate · 25.81B params · apache-2.0
 
-**score 57.4** ±1.3 · comparison only: no current run option verified · from 53 benchmark results across 2 sources · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 61.1** ±1.2 · #100 of 355 · from 58 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -16,117 +14,138 @@ Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.
 
 <pre>
 task                    vs the others         rank  counts  tests
-tools &amp; automation      ▁▂▁▁▁▂▃▃▅●█▃   #121 of 247    7.3%      6
-retrieval &amp; classific…  ▁▁▁▁▁▁▁▁▂●█▃   #143 of 247    6.7%      7
-language understanding  ▂▂▂▃▂▅▅▃●▅▃▂   #101 of 247     21%      9
-arts &amp; human taste      ▁▇▄▃▅▅●▅▄▂▁▁   #113 of 247    9.3%      6
-knowledge &amp; reasoning   ▁▃▂▃▃▃▄▇▅●█▁    #62 of 247     43%     14
-vision                  ▁·▁▂▂▂▂▅●▃▄█     #32 of 62     12%     11
+tools &amp; automation      ▁▃▁▁▁▂▃▄▆●█▆   #122 of 250    5.6%      6
+retrieval &amp; classific…  ▁▁▁·▁▁▁▁▃▃●▅    #91 of 258    6.0%      7
+language understanding  ▂▂▂▃▂▅▆▃●▆▄▃   #105 of 256     19%      9
+arts &amp; human taste      ▁▇▄▃▅▅●▅▄▂▁▁   #113 of 247    8.3%      6
+knowledge &amp; reasoning   ▁▂▂▂▂▃▃▅▅●█▂    #71 of 263     37%     14
+vision                  ▁·▃▂▃▃▇●▄█▄▃     #45 of 79     13%     14
 </pre>
 
-<details><summary>tools &amp; automation · #121 of 247 · 7.3% of its score</summary>
+<details><summary>tools &amp; automation · #122 of 250 · 5.6% of its score</summary>
+
+Beats [Tern-35B-A3B](decision-tern-35b-a3b.md), [GEV-26B-Decide](decision-jev-gemma4-26b-a4b.md) here, though they rank higher overall. Trails [OneJev1.6-0.8B](decision-onejev1-6-0-8b.md), [TokenRhythm NeoHorse-Jev-4B](decision-neohorse-jev-4b.md), [razorback16 diffgemma (decision readout)](decision-razorback-one-read-3e296f08.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: API-Bank (a…</a>   83.3%  ▁▁▁▁▁▁▁▂▃▂●▂ beats 136/236  easy · avg 75%         1.9%  sharp
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BFCL (case …</a>   94.8%  ▁▂▁▁▁▂▂▄●▆█▁ beats 127/246  very easy · avg 94%    1.2%  sharp · maxed out
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Home applia…</a>   46.6%  █▁▁▃▄●▆▄▁▂▁▃ beats 126/243  medium · avg 46%       1.1%  sharp · at its level · noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: RouterBench…</a>   79.9%  ▁··▁▁▁▁▁▁▁▁● beats 179/244  easy · avg 76%         1.1%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ToolRet (nD…</a>   64.4%  ▁▁▁▁▁·▁▁▁▄●▁ beats 122/246  medium · avg 62%       1.0%  blunt · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: When2Call (…</a>   76.0%  ▁▁▁▂▃▅▅▆●▇█▃ beats 118/246  easy · avg 76%         1.0%  noisy
-</pre>
-
-</details>
-
-<details><summary>retrieval &amp; classification · #143 of 247 · 6.7% of its score</summary>
-
-Beats [Clef-flash](clef-flash.md) here, though they rank higher overall.
-
-<pre>
-test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BRIGHT (nDC…</a>   46.3%  ▁▁▁▁▁▁▁▂▂▄●█ beats 171/246  medium · avg 41%       2.6%  blunt · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Amazon ESCI…</a>   55.3%  ▁▁▁▁▁▁▂▂▃▃●▅ beats 157/246  medium · avg 50%       2.3%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: HoVer (accu…</a>   80.7%  ▆▆▇▅▄▄▃●▄█▆▄ beats 149/246  easy · avg 76%         0.6%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: PhishNChips…</a>   80.9%  █▅▅●▃▂▁▁▁▁·▁ beats 175/245  easy · avg 73%         0.5%  typical
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: CLINC150+OO…</a>   87.4%  ▁▁▁▁▁▁▁▂▃●█▄ beats 96/238   very easy · avg 86%    0.3%  sharp · noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BANKING77 (…</a>   83.8%  ▁·▁▁▁▁▁▁▂█●█ beats 127/238  easy · avg 81%         0.3%  noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: SGD/SGD-X (…</a>   66.4%  ▁▁▁▁▁▁▁▂▆█●▁ beats 217/245  medium · avg 46%       0.0%  blunt · at its level · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: API-Bank (a…</a>   83.3%  ▁▁▁▁▁▁▁▂▃▂●▂ beats 136/236  easy · avg 70%         1.7%  sharp · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BFCL (case …</a>   94.8%  ▁▂▁▁▁▂▂▄●▆█▁ beats 127/246  very easy · avg 92%    1.1%  sharp · maxed out · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Home applia…</a>   46.6%  █▁▁▃▄●▆▄▁▂▁▃ beats 126/243  medium · avg 37%       1.0%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ToolRet (nD…</a>   64.4%  ▁▁▁▁▁·▁▁▁▄●▁ beats 122/246  medium · avg 60%       0.9%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: When2Call (…</a>   76.0%  ▁▁▁▂▃▅▅▆●▇█▃ beats 118/246  easy · avg 72%         0.9%  noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: RouterBench…</a>   79.9%  no other model yet                                    —  failed run: Publisher excludes this pro…
 </pre>
 
 </details>
 
-<details><summary>language understanding · #101 of 247 · 21% of its score</summary>
+<details><summary>retrieval &amp; classification · #91 of 258 · 6.0% of its score</summary>
+
+Beats [AutoTrust-JEV-27B v1.1](decision-autotrust-jev-27b-v11.md), [Decider 31B (NVFP4)](decision-decider-31b.md), [Jev 1.13](jev-1-13.md) here, though they rank higher overall. Trails [Jev-Style 2B v4](decision-jev-style-2b-v4.md), [Sieve 2B v3](decision-sieve-2b-v3.md), [StartLux-Decision v1.1 0.8B](decision-startlux-decision-v1-1-0-8b-instant.md) here, though they rank lower overall.
 
 <pre>
-test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ANLI (macro…</a>   73.5%  ▁▂▃▅▅●▂····▁ beats 182/246  medium · avg 64%       5.2%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: NLI4CT (mac…</a>   80.4%  ▁▁▁▂▂▃▃▄▇●█▄ beats 155/246  easy · avg 77%         4.9%  typical
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: HellaSwag (…</a>   92.4%  ▂▄▂▂▄▇▃●█▅▃▁ beats 146/246  very easy · avg 89%    3.8%  sharp · maxed out
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: iSarcasmEva…</a>   60.4%  ▁·▁·▁▁▂▄▅█●▄ beats 187/246  medium · avg 48%       2.3%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ACOS (per-r…</a>   26.8%  ▁··▂▃▃▅▇●▇▃▃ beats 152/246  hard · avg 25%         1.4%  at its level · noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ContractNLI…</a>   77.0%  ▁▁▁▁▁▁▁▂▂▇●█ beats 134/246  easy · avg 74%         1.0%  typical
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: VAST (macro…</a>   76.6%  ▁▁▁▂▅▄▄▂▄▆●▄ beats 179/246  medium · avg 65%       1.0%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: RAGTruth (F…</a>   76.8%  ▁▁▁▁▁▁▁▁▁▃●█ beats 142/246  easy · avg 70%         0.7%  noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: FinEntity (…</a>   88.4%  ▁···▁▁▁▁▃●█▃ beats 128/246  very easy · avg 87%    0.5%  noisy
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BRIGHT (nDC…</a>   46.3%  ▁▁▁▁▁▁▁▂▂▄●█ beats 171/246  medium · avg 38%    2.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Amazon ESCI…</a>   55.3%  ▁▁▁▁▁▁▂▂▃▃●▅ beats 157/246  medium · avg 47%    2.1%  at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: HoVer (accu…</a>   80.7%  ▆▆▇▅▄▄▃●▄█▆▄ beats 149/246  easy · avg 74%      0.5%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: PhishNChips…</a>   80.9%  █▅▅●▃▂▁▁▁▁·▁ beats 175/245  easy · avg 70%      0.5%  noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: CLINC150+OO…</a>   87.4%  ▁▁▁▁▁▁▁▂▃●█▄ beats 96/238   easy · avg 83%      0.3%  sharp · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BANKING77 (…</a>   83.8%  ▁·▁▁▁▁▁▁▂█●█ beats 127/238  easy · avg 79%      0.3%  noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: SGD/SGD-X (…</a>   66.4%  no other model yet                                 —  failed run: Publisher reports a builder…
 </pre>
 
 </details>
 
-<details><summary>arts &amp; human taste · #113 of 247 · 9.3% of its score</summary>
+<details><summary>language understanding · #105 of 256 · 19% of its score</summary>
 
-Trails [Jebadiah 9B v2.1 (T1e)](jebadiah-9b-v2-1-t1e.md) here, though they rank lower overall.
+Beats [jev-brain · Gemma-4-31B (decision readout)](decision-jev-brain-gemma-4-31b.md), [AnyJev L0 · Gemma-4-31B (decision readout)](decision-anyjev-l0-gemma-4-31b.md), [decisio 0.6.0 (Gemma 4 31B) (decision readout)](decision-decisio-0-6-0-gemma-4-31b.md) here, though they rank higher overall. Trails [Decider 4B](decision-decider-4b.md), [jiwo 4B v2](decision-jiwo-4b-v2.md), [Sieve 4B](decision-sieve-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: New Yorker …</a>   74.1%  ▁▁▂▃▃▃▇▅●▅▃▁ beats 182/246  easy · avg 65%         3.7%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Humicroedit…</a>   62.2%  ▁·▁▃▂▂▅●▄▂▁▁ beats 158/246  medium · avg 61%       2.1%  blunt · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: cfcolor (ac…</a>   63.1%  ▁········▁▇● beats 148/246  medium · avg 61%       1.1%  blunt · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: POP909-CL (…</a>   66.8%  ▄▅▅▃▆▅▃▅▂▅●█ beats 191/237  hard · avg 27%         1.1%  sharp · at its level · noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BPoMP (accu…</a>   89.6%  ▁█▄▄▅●▆▅▄▁▁▁ beats 134/246  very easy · avg 86%    1.0%  sharp · noisy
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Habermas Ma…</a>   42.2%  ▁▂▄●▇▅▁▁▄▄▁▁ beats 99/246   medium · avg 48%       0.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ANLI (macro…</a>   73.5%  ▁▂▃▅▅●▂····▁ beats 182/246  medium · avg 60%       4.6%  at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: NLI4CT (mac…</a>   80.4%  ▁▁▁▂▂▃▃▄▇●█▄ beats 155/246  easy · avg 74%         4.5%  typical
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: HellaSwag (…</a>   92.4%  ▂▄▂▂▄▇▃●█▅▃▁ beats 146/246  very easy · avg 85%    3.3%  sharp · maxed out
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: iSarcasmEva…</a>   60.4%  ▁·▁·▁▁▂▄▅█●▄ beats 187/246  medium · avg 44%       2.2%  at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ACOS (per-r…</a>   26.8%  ▁··▂▃▃▅▇●▇▃▃ beats 152/246  hard · avg 22%         1.3%  at its level · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: VAST (macro…</a>   76.6%  ▁▁▁▂▅▄▄▂▄▆●▄ beats 179/246  medium · avg 62%       0.9%  at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ContractNLI…</a>   77.0%  ▁▁▁▁▁▁▁▂▂▇●█ beats 134/246  easy · avg 71%         0.9%  noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: RAGTruth (F…</a>   76.8%  ▁▁▁▁▁▁▁▁▁▃●█ beats 142/246  easy · avg 66%         0.6%  noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: FinEntity (…</a>   88.4%  ▁···▁▁▁▁▃●█▃ beats 128/246  easy · avg 84%         0.5%  noisy
 </pre>
 
 </details>
 
-<details><summary>knowledge &amp; reasoning · #62 of 247 · 43% of its score</summary>
+<details><summary>arts &amp; human taste · #113 of 247 · 8.3% of its score</summary>
+
+Beats [Bobcat 1.3 (31B)](decision-bobcat-1-3.md), [Nace.AI Drex v2.0 (35B-A3B)](decision-drex-v2-0.md), [decisio 0.6.0 (Gemma 4 31B) (decision readout)](decision-decisio-0-6-0-gemma-4-31b.md) here, though they rank higher overall. Trails [vLLM-SR vela3-fast-vision (Vela 3.0, 0.25B)](decision-vela3-fast-vision-text.md), [Crivo-400M](decision-crivo-400m.md), [Amber 0.4B](decision-amber-0-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: New Yorker …</a>   74.1%  ▁▁▂▃▃▃▇▅●▅▃▁ beats 182/246  medium · avg 61%    3.4%  at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Humicroedit…</a>   62.2%  ▁·▁▃▂▂▅●▄▂▁▁ beats 158/246  medium · avg 60%    1.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: cfcolor (ac…</a>   63.1%  ▁········▁▇● beats 148/246  medium · avg 60%    1.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: POP909-CL (…</a>   66.8%  ▄▅▅▃▆▅▃▅▂▅●█ beats 191/237  hard · avg 21%      1.0%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BPoMP (accu…</a>   89.6%  ▁█▄▄▅●▆▅▄▁▁▁ beats 134/246  easy · avg 83%      0.9%  sharp · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: Habermas Ma…</a>   42.2%  ▁▂▄●▇▅▁▁▄▄▁▁ beats 99/246   medium · avg 47%    0.3%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>knowledge &amp; reasoning · #71 of 263 · 37% of its score</summary>
+
+Beats [StartLux-Decision v1.1 9B](decision-startlux-decision-v1-1-9b-instant.md), [Sieve 27B v2](decision-sieve-27b-v2.md), [RSI-Jev v6.1 VL 27B (effort auto)](decision-rsi-jev-v6-1-vl-27b-auto.md) here, though they rank higher overall. Trails [Solar Decide](solar-decide.md), [Clef-flash](clef-flash.md), [Clef-omni](clef-omni.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: MMLU-Pro (a…</a>   67.2%  ▄▄▃▃▂▄▅▇█●▅▁ beats 191/246  medium · avg 52%        11%  sharp · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: MMLU (accur…</a>   83.9%  ▁▄▄▃▃▂▅▇▅●▇▁ beats 176/246  easy · avg 75%         6.4%  sharp
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BBH (accura…</a>   81.2%  ▄▆▄▄█▇●▄▃▁▁▁ beats 199/246  easy · avg 70%         6.1%  typical
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: GPQA Diamon…</a>   46.9%  ▂▆▅▅▆●▆▃▁··▁ beats 168/246  medium · avg 42%       3.7%  blunt · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: GSM8K (accu…</a>   77.1%  ▁··▄█▆▆▆▅●▃▁ beats 218/246  medium · avg 51%       3.4%  sharp · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: WinoGrande …</a>   86.0%  █▅█▅▄●▆▄▃▃▁▁ beats 169/246  easy · avg 81%         2.8%  typical
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ARC-Challen…</a>   96.8%  ▂▂▂▂▂▂▁▃▄▆●▆ beats 188/246  very easy · avg 92%    2.6%  sharp · maxed out
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: SATA-Bench …</a>   34.8%  ▁▁▁▁▁▁▁▂▅●▂▁ beats 205/246  hard · avg 25%         1.7%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: MuSR (accur…</a>   64.9%  ▁▁▂█●▄▁▁▁▁▁▁ beats 175/246  medium · avg 62%       1.3%  blunt · at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ARC-Easy (a…</a>   99.0%  ▁▁▂▁▂▂▂▂▃▆●▅ beats 200/246  very easy · avg 97%    1.2%  sharp · maxed out
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: CRUXEval (a…</a>   74.4%  ██▄●▃▄▁▁···▁ beats 182/246  medium · avg 62%       1.1%  at its level
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: CLadder (ac…</a>   72.7%  ▁███●▅▃▃▁▁▁▁ beats 144/246  easy · avg 74%         0.9%  typical
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ChessBench …</a>   18.7%  ▄▇▄▄▄▆●█▄▁▁▁ beats 159/246  hard · avg 17%         0.8%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: MMLU-Pro (a…</a>   67.2%  ▄▄▃▃▂▄▅▇█●▅▁ beats 191/246  medium · avg 46%       9.4%  sharp · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: MMLU (accur…</a>   83.9%  ▁▄▄▃▃▂▅▇▅●▇▁ beats 176/246  easy · avg 70%         5.4%  sharp
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: BBH (accura…</a>   81.2%  ▄▆▄▄█▇●▄▃▁▁▁ beats 199/246  easy · avg 66%         5.2%  typical
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: GSM8K (accu…</a>   77.1%  ▁··▄█▆▆▆▅●▃▁ beats 218/246  medium · avg 45%       3.1%  sharp · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: GPQA Diamon…</a>   46.9%  ▂▆▅▅▆●▆▃▁··▁ beats 168/246  medium · avg 39%       3.1%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: WinoGrande …</a>   86.0%  █▅█▅▄●▆▄▃▃▁▁ beats 169/246  easy · avg 78%         2.5%  typical
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ARC-Challen…</a>   96.8%  ▂▂▂▂▂▂▁▃▄▆●▆ beats 188/246  very easy · avg 90%    2.2%  sharp · maxed out
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: SATA-Bench …</a>   34.8%  ▁▁▁▁▁▁▁▂▅●▂▁ beats 205/246  hard · avg 22%         1.5%  at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: MuSR (accur…</a>   64.9%  ▁▁▂█●▄▁▁▁▁▁▁ beats 175/246  medium · avg 60%       1.1%  blunt · at its level
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ARC-Easy (a…</a>   99.0%  ▁▁▂▁▂▂▂▂▃▆●▅ beats 200/246  very easy · avg 96%    1.0%  sharp · maxed out · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: CRUXEval (a…</a>   74.4%  ██▄●▃▄▁▁···▁ beats 182/246  medium · avg 58%       1.0%  at its level · noisy
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: CLadder (ac…</a>   72.7%  ▁███●▅▃▃▁▁▁▁ beats 144/246  easy · avg 71%         0.8%  typical
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: ChessBench …</a>   18.7%  ▄▇▄▄▄▆●█▄▁▁▁ beats 159/246  hard · avg 16%         0.7%  blunt
 <a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: HLE (accura…</a>   10.6%  ▁▁▂▃●█▇▅▅▃▁▁ beats 53/246   very hard · avg 13%    0.0%  blunt
 </pre>
 
 </details>
 
-<details><summary>vision · #32 of 62 · 12% of its score</summary>
+<details><summary>vision · #45 of 79 · 13% of its score</summary>
 
-Beats [Clef-omni](clef-omni.md) here, though they rank higher overall.
+Trails [LiquidAI d1-3B](decision-d1-3b.md), [JPT-9B Qwen3.5-9B LoRA](decision-jpt-9b.md), [Solomon v1.1](decision-solomon-v11-bf16-encoding.md) here, though they rank lower overall.
 
 <pre>
 test                                        result  vs the others in its run  difficulty         counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Mind2…</a>  63.8200 points  ▁·▁▁▃▁●▄▃▅█▂ beats 18/61  avg 68.211 points    1.7%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · MMMU-…</a>  30.7200 points  ▁▁▅▁▄▁▄●▄▃▇▇ beats 30/61  avg 27.174 points    1.6%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Winog…</a>  78.5000 points  ▁·▁▁▁▁·▂▁▃●█ beats 27/61  avg 71.393 points    1.4%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Moder…</a>  38.1700 points  ▆▃▃▆▄▄▇●█▁▆▆ beats 33/61  avg 32.571 points    1.3%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · RealW…</a>  54.2200 points  ▁·▂▂▁▃●▅▅▃▂█ beats 17/61  avg 57.381 points    1.1%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CharX…</a>  73.4300 points  ▂▁▁▁▁▃▁▅▅●██ beats 34/61  avg 66.037 points    1.1%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · R-Ben…</a>  33.2200 points  ▂▄▇▆█▄●▇▂··▁ beats 45/61  avg 22.912 points    0.9%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Infog…</a>  89.6200 points  ▁·▁▂▁▁▃▁●▂▅█ beats 25/61  avg 86.972 points    0.9%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · BLINK…</a>  53.1200 points  ▁···▁▂▂▂●▄▂▃ beats 26/61  avg 49.241 points    0.8%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CV-Be…</a>  70.2100 points  ▁▁▁▁▂▁▁●▄█▃▃ beats 18/61  avg 70.318 points    0.7%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · KIE (…</a>  90.9800 points  ▁··▁▁▁▁▁▂●█▁ beats 27/61  avg 87.417 points    0.5%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Mind2…</a>  63.8200 points  ▁·▁▁▃▁●▄▃▅█▂ beats 18/61  avg 63.423 points    1.5%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · MMMU-…</a>  30.7200 points  ▁▁▅▁▄▁▄●▄▃▇▇ beats 30/61  avg 22.797 points    1.4%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Winog…</a>  78.5000 points  ▁·▁▁▁▁·▂▁▃●█ beats 27/61  avg 66.987 points    1.3%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/leaderboard.parquet">Decision Index Vision 0.4: privat…</a>  51.9900 points  ▁▁▃▃▁▂▄●▃▃▅█ beats 24/61  avg 48.067 points    1.3%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Moder…</a>  38.1700 points  ▆▃▃▆▄▄▇●█▁▆▆ beats 33/61  avg 28.443 points    1.1%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · RealW…</a>  54.2200 points  ▁·▂▂▁▃●▅▅▃▂█ beats 17/61  avg 53.651 points    1.0%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CharX…</a>  73.4300 points  ▂▁▁▁▁▃▁▅▅●██ beats 34/61  avg 62.137 points    1.0%  blunt
+<a href="https://benchmarkheaven.com/api/decision-results/imagejevbench/v0.3.0/json">Benchmark Heaven imagejevbench v0…</a>  44.8023 points  ▃·▃▃··▅█●▅·▃ beats 9/12   avg 32.235 points    0.9%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Infog…</a>  89.6200 points  ▁·▁▂▁▁▃▁●▂▅█ beats 25/61  avg 83.859 points    0.8%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · R-Ben…</a>  33.2200 points  ▂▄▇▆█▄●▇▂··▁ beats 45/61  avg 19.676 points    0.8%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · BLINK…</a>  53.1200 points  ▁···▁▂▂▂●▄▂▃ beats 26/61  avg 44.994 points    0.7%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CV-Be…</a>  70.2100 points  ▁▁▁▁▂▁▁●▄█▃▃ beats 18/61  avg 67.662 points    0.6%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · KIE (…</a>  90.9800 points  ▁··▁▁▁▁▁▂●█▁ beats 27/61  avg 85.184 points    0.4%  blunt
+<a href="https://benchmarkheaven.com/api/decision-results/imagejevbench/v0.3.0/json">Benchmark Heaven imagejevbench v0…</a>  84.8124 points  ▃···▃·▅█▅▃▃● beats 11/12  avg 68.584 points    0.4%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                        result  vs the others in its run    difficulty         counts  why
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet">Decision Index 0.4.1: private sam…</a>  56.7000 points  ▂▂▂▃▃▃▄▅▅●█▃ beats 185/247  avg 41.206 points    5.1%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/leaderboard.parquet">Decision Index 0.4.1: private new…</a>  56.0000 points  ▃█▃▃▂▆▃▃●▄▄▄ beats 173/247  avg 38.861 points    2.8%  blunt
+<a href="https://benchmarkheaven.com/api/decision-results/jevbench/v1.6.1/json">Benchmark Heaven jevbench v1.6.1:…</a>  56.0557 points  ▃···▃·▃▃●▅▅█ beats 5/13     avg 32.166 points    2.2%  blunt
+<a href="https://benchmarkheaven.com/api/decision-results/jevbench/v1.6.1/json">Benchmark Heaven jevbench v1.6.1:…</a>  90.8804 points  ▂······▂▆▂█● beats 11/13    avg 70.133 points    0.6%  blunt
 </pre>
 
 </details>
@@ -136,19 +155,30 @@ test                                        result  vs the others in its run  di
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                    results  share of the score
-<a name="decision-index-public-041"></a><a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1 public suite (lab)</a>        42   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="decision-index-vision-04"></a><a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 public suite …</a>       11   12% ▇
-prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.4
+source                         results  share of the score
+<a name="decision-index-public-041"></a><a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1</a>                42   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="decision-index-vision-04"></a><a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4</a>           12   12% ▇
+<a name="benchmarkheaven-own-decision-results"></a><a href="https://benchmarkheaven.com/api/decision-results/jevbench/v1.6.1/json">Benchmark Heaven</a>                     4    4% ▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 61.1
 </pre>
 
-<sub>Licences: Decision Index 0.4.1 public suite ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Decision Index Vision 0.4 public suite ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Decision Index 0.4.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Decision Index Vision 0.4 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Benchmark Heaven ([CC BY 4.0](../../licenses/system-one-bench-CC-BY-4.0.txt))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                test                            score  why
+Decision Index 0.4.1  <a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: RouterB…</a>  79.9%  failed run: Publisher excludes this protocol because its prompt reveals GPT-4 as the best route. Evidence: https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/c130faf65f82e81d3bdefb01e758c712dc5c5199/data/index.json
+Decision Index 0.4.1  <a href="https://huggingface.co/datasets/multimodalart/decision-index-leaderboard/blob/ce1e2f1cdd5792b88827bae406057a215d3b0784/benchmarks.parquet">Decision Index 0.4.1: SGD/SGD…</a>  66.4%  failed run: Publisher reports a builder bug exposing dialogue turns after the classified turn; awaiting corrected rerun. Evidence: https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/c130faf65f82e81d3bdefb01e758c712dc5c5199/data/index.json
+</pre>
+
+</details>
 
 ## How to run it
 
-No verified API or local download yet.
+[Request access](https://huggingface.co/surogate/rune-26b-a4b-GGUF/tree/bd4a7cbbed66af1a95dfbac12cabf52e6e677411) · Gated files: the publisher requires access approval. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/surogate/rune-26b-a4b-GGUF/revision/bd4a7cbbed66af1a95dfbac12cabf52e6e677411); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/surogate](https://huggingface.co/surogate/rune-26b-a4b-GGUF)
+Model repository and documentation: [huggingface.co/surogate](https://huggingface.co/surogate/rune-26b-a4b-GGUF)
 
 [interactive version](https://whatmodel.sh/model/decision-rune-26b-a4b-v3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

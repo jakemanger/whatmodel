@@ -51,6 +51,6 @@ weighted average                                   = 52.4
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-primeline-gguf parakeet-primeline-Q8_0.gguf --local-dir models/parakeet-primeline && build/bin/transcribe-cli -m models/parakeet-primeline/parakeet-primeline-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/primeline](https://huggingface.co/primeline/parakeet-primeline)
+Model repository and documentation: [huggingface.co/primeline](https://huggingface.co/primeline/parakeet-primeline)
 
 [interactive version](https://whatmodel.sh/model/parakeet-primeline) · [JSON](https://whatmodel.sh/api?format=json&all=1)

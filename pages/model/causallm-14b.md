@@ -110,6 +110,6 @@ Other versions: Q8_0 (~15.1 GB) `ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q8_
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CausalLM/14B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/CausalLM](https://huggingface.co/CausalLM/14B)
+Model repository and documentation: [huggingface.co/CausalLM](https://huggingface.co/CausalLM/14B)
 
 [interactive version](https://whatmodel.sh/model/causallm-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -62,6 +62,6 @@ weighted average                                   = 19.4
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-rw-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-rw-1b)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-rw-1b)
 
 [interactive version](https://whatmodel.sh/model/falcon-rw-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -54,6 +54,6 @@ weighted average                              = 28.6
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/pythia-12b-sft-v8-7k-steps', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/pythia-12b-sft-v8-7k-steps)
+Model repository and documentation: [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/pythia-12b-sft-v8-7k-steps)
 
 [interactive version](https://whatmodel.sh/model/oasst-pythia-12b-sft-v8-7k-steps) · [JSON](https://whatmodel.sh/api?format=json&all=1)

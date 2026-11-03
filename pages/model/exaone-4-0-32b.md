@@ -27,14 +27,14 @@ math            ▁▁▃▅█▆●█▄▂▁▁    #159 of 431     17%     
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                   result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>        26.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 16/89    very hard · avg 12%     9.1%  sharp · at its level · noisy · several …
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>         59.5%  ▁····▂▁▃▆●▃▁ beats 22/44    medium · avg 37%        7.2%  at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>        45.6%  ▁▁·▂▁▃▂●█▅▂▃ beats 14/42    hard · avg 29%          5.6%  at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>      3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.1%    4.8%  sharp · too hard for it · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>    62.8%  ▁····▃·▂▇●▂▆ beats 13/28    medium · avg 38%        3.3%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>   51.5%  ▁▁▁·▅▄▁█▇●▁▇ beats 22/28    hard · avg 28%          2.4%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>           63.9%  ▁▁▁▁▁▃▅█●▅▄▁ beats 117/171  medium · avg 57%        0.9%  blunt · at its level · small run
+test                     result  vs the others in its run    difficulty            counts  why
+<a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>          26.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 16/89    very hard · avg 12%     9.1%  sharp · at its level · noisy · several …
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>           59.5%  ▁····▂▁▃▆●▃▁ beats 22/44    medium · avg 37%        7.2%  at its level · several runs
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>          45.6%  ▁▁·▂▁▃▂●█▅▂▃ beats 14/42    hard · avg 29%          5.6%  at its level · several runs
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>        3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.1%    4.8%  sharp · too hard for it · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (maker)</a>    62.8%  ▁····▃·▂▇●▂▆ beats 13/28    medium · avg 38%        3.3%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (maker)</a>   51.5%  ▁▁▁·▅▄▁█▇●▁▇ beats 22/28    hard · avg 28%          2.4%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (maker)</a>           63.9%  ▁▁▁▁▁▃▅█●▅▄▁ beats 117/171  medium · avg 57%        0.9%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -67,11 +67,11 @@ test                                result  vs the others in its run  difficulty
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>            85.3%  █·▄▄····●··█ beats 4/6    medium · avg 54%    8.3%  sharp
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>      66.1%  ▁▁·▁▁●▄▆█▄▂▃ beats 7/44   medium · avg 41%    4.0%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>   72.9%  ▁▁▁▃▁▅●▃██▁▄ beats 10/31  medium · avg 51%    2.8%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>   78.1%  ▁▁····▁●▃█▇▁ beats 5/23   easy · avg 66%      2.3%  small run
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (maker)</a>            85.3%  █·▄▄····●··█ beats 4/6    medium · avg 54%    8.3%  sharp
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (maker)</a>      66.1%  ▁▁·▁▁●▄▆█▄▂▃ beats 7/44   medium · avg 41%    4.0%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (maker)</a>   72.9%  ▁▁▁▃▁▅●▃██▁▄ beats 10/31  medium · avg 51%    2.8%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (maker)</a>   78.1%  ▁▁····▁●▃█▇▁ beats 5/23   easy · avg 66%      2.3%  small run
 </pre>
 
 </details>
@@ -80,14 +80,14 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>                   75.4%  █···▄▄···●·█ beats 4/6      hard · avg 51%           11%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (maker)</a>                 75.4%  █···▄▄···●·█ beats 4/6      hard · avg 51%           11%  sharp · at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    32.6%  ▁···▁▃▂●▂▃▃▂ beats 11/23    hard · avg 17%          5.5%  at its level
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                       81.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 136/188  medium · avg 62%        4.7%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (maker)</a>                     81.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 136/188  medium · avg 62%        4.7%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.6%  ▂·▂▂·▂·●▃·█▃ beats 5/14     easy · avg 80%          4.0%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 63%        2.9%  at its level
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>           10.6%  ▁▁▁▄●▆▇██▆▁▃ beats 21/111   very hard · avg 4.3%    2.8%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (maker)</a>         10.6%  ▁▁▁▄●▆▇██▆▁▃ beats 21/111   very hard · avg 4.3%    2.8%  small run
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     36.4%  ▂···█▂●▆██▆▂ beats 8/23     very hard · avg 29%     2.6%  typical
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                     92.3%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 46/63    easy · avg 79%          1.8%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (maker)</a>                   92.3%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 46/63    easy · avg 79%          1.8%  small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 89.9%  ▁▁▁▁▁▂▂▅██▆● beats 208/214  medium · avg 68%        1.8%  noisy · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            65.7%  ▁▁▁▂▂▂▄●█▇▄▂ beats 55/135   medium · avg 63%        1.7%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecified)…</a>   36.0%  ▂▆▂▄●▄▂▄▄▆█▇ beats 23/86    medium · avg 35%        1.5%  at its level · small run
@@ -205,6 +205,6 @@ Other versions: gguf-q8_0 (~38.9 GB) `ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32
 
 Other versions: 8bit (~34 GB, Mac only) `mlx_lm.chat --model lmstudio-community/EXAONE-4.0-32B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B)
+Model repository and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B)
 
 [interactive version](https://whatmodel.sh/model/exaone-4-0-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

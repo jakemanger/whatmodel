@@ -31,16 +31,16 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3
 <pre>
 test                                     result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1580 IPS  ▁●▁▃▃▂█▁▂▂▁▁ beats 2/59     avg -0.379 IPS           12%  sharp
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>                  77.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 120/138  hard · avg 28%          2.6%  sharp · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (maker)</a>                77.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 120/138  hard · avg 28%          2.6%  sharp · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/inkling_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        25.0%  ▃▃▂▃·●▃▂█▅▅▂ beats 8/25     very hard · avg 4.3%    2.3%  typical
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>                  63.8%  ▁·▁·▁▁▄▃▆●▅█ beats 30/63    hard · avg 19%          2.2%  sharp · at its level · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MCP-Atlas (public set) (lab)</a>              78.8%  ▂·▁▂▂·▁▃█▆●▂ beats 35/39    medium · avg 39%        1.3%  at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (maker)</a>                63.8%  ▁·▁·▁▁▄▃▆●▅█ beats 30/63    hard · avg 19%          2.2%  sharp · at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MCP-Atlas (public set) (maker)</a>            78.8%  ▂·▁▂▂·▁▃█▆●▂ beats 35/39    medium · avg 39%        1.3%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam with tools (…</a>        46.0%  ▁·▁▂▂▁▄▄●█▄▅ beats 26/62    hard · avg 16%          1.2%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">OSWorld-Verified</a>                          40.1%  ●▃·▂▅▂▃▂▅▃▆▆ beats 4/27     hard · avg 19%          1.1%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">BrowseComp with context managemen…</a>        77.1%  ▄·▄▂·●▂·▆▄·▂ beats 7/15     medium · avg 46%        1.0%  small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified (lab)</a>                 45.5%  ▂·▂▂●▃···▂██ beats 3/18     hard · avg 28%          0.7%  blunt · at its level · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                       54.3%  ▄▂▂▂●▂▆█·▂·▂ beats 5/16     hard · avg 31%          0.6%  blunt · at its level · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">τ³-bench Banking (lab)</a>                    23.7%  ▂▂·▅█▂▃▃▃●▂▅ beats 20/24    very hard · avg 6.6%    0.5%  blunt · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified (maker)</a>               45.5%  ▂·▂▂●▃···▂██ beats 3/18     hard · avg 28%          0.7%  blunt · at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (maker)</a>                     54.3%  ▄▂▂▂●▂▆█·▂·▂ beats 5/16     hard · avg 31%          0.6%  blunt · at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">τ³-bench Banking (maker)</a>                  23.7%  ▂▂·▅█▂▃▃▃●▂▅ beats 20/24    very hard · avg 6.6%    0.5%  blunt · small run
 </pre>
 
 </details>
@@ -50,11 +50,11 @@ test                                     result  vs the others in its run    dif
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
 
 <pre>
-test                               result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>          1415.2  ▁▁▃▂▅●▃▆▅▅▁▂ beats 49/129   avg 981           8.0%  sharp
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>            77.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 120/138  hard · avg 28%    2.6%  sharp · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SciCode (level unspecified) (lab)</a>   46.1%  ▁····▃▃▄▅█●▂ beats 36/40    hard · avg 18%    1.1%  at its level · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                 54.3%  ▄▂▂▂●▂▆█·▂·▂ beats 5/16     hard · avg 31%    0.6%  blunt · at its level · small run
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1415.2  ▁▁▃▂▅●▃▆▅▅▁▂ beats 49/129   avg 981           8.0%  sharp
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (maker)</a>           77.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 120/138  hard · avg 28%    2.6%  sharp · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SciCode (level unspecified) (make…</a>   46.1%  ▁····▃▃▄▅█●▂ beats 36/40    hard · avg 18%    1.1%  at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (maker)</a>                54.3%  ▄▂▂▂●▂▆█·▂·▂ beats 5/16     hard · avg 31%    0.6%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -75,12 +75,12 @@ test            result  vs the others in its run    difficulty  counts  why
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   33.3%  ▂··▁▁▃●▄█▆▄▃ beats 21/86    very hard · avg 1.2%     19%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       4.9%  ▁▂●▂█▅▂▃▂▁▁▁ beats 10/67    very hard · avg 0.1%    6.5%  sharp
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">HMMT February 2026 (lab)</a>    86.3%  ▃▃▂▅·████●▃▅ beats 28/35    medium · avg 41%        2.6%  sharp · small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">AIME 2026 (lab)</a>             97.1%  ▁▁▁▂▂▂▆█▆●·▁ beats 50/52    easy · avg 69%          2.5%  sharp · maxed out · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 140/197  very hard · avg 7.2%    2.1%  sharp · noisy
+test                        result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>    33.3%  ▂··▁▁▃●▄█▆▄▃ beats 21/86    very hard · avg 1.2%     19%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>        4.9%  ▁▂●▂█▅▂▃▂▁▁▁ beats 10/67    very hard · avg 0.1%    6.5%  sharp
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">HMMT February 2026 (maker)</a>   86.3%  ▃▃▂▅·████●▃▅ beats 28/35    medium · avg 41%        2.6%  sharp · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">AIME 2026 (maker)</a>            97.1%  ▁▁▁▂▂▂▆█▆●·▁ beats 50/52    easy · avg 69%          2.5%  sharp · maxed out · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 140/197  very hard · avg 7.2%    2.1%  sharp · noisy
 </pre>
 
 </details>
@@ -91,8 +91,8 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CharXiv (reasoning questions) (la…</a>   78.1%  ▂▅▃▅▅▆▆▅●█▆▂ beats 73/101  medium · avg 40%    1.5%  small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMMU Pro (lab)</a>                       73.5%  ▂▃▁▃▆▇▃▇▇●█▅ beats 35/52   medium · avg 45%    1.2%  at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CharXiv (reasoning questions) (ma…</a>   78.1%  ▂▅▃▅▅▆▆▅●█▆▂ beats 73/101  medium · avg 40%    1.5%  small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMMU Pro (maker)</a>                     73.5%  ▂▃▁▃▆▇▃▇▇●█▅ beats 35/52   medium · avg 45%    1.2%  at its level · small run
 </pre>
 
 </details>
@@ -114,17 +114,17 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.3%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 162/211  hard · avg 39%          9.3%  sharp · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    40.3%  ▁▁▃▂▃▃▆●█▄▂▅ beats 33/81    very hard · avg 8.0%    2.5%  at its level · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                21.0%  █▁▁▁▁▂●▃▃▂▁▁ beats 85/137   very hard · avg 5.8%    2.3%  sharp · noisy
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam (lab)</a>           29.7%  ▁▁▁▄▆▆▇█●▆▁▃ beats 74/111   very hard · avg 6.2%    1.8%  at its level · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam (maker)</a>         29.7%  ▁▁▁▄▆▆▇█●▆▁▃ beats 74/111   very hard · avg 6.2%    1.8%  at its level · small run
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   46.5%  ▁▁▃▂▂▄▁▃●▄▄█ beats 17/38    very hard · avg 14%     1.6%  at its level
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Global-MMLU-Lite (lab)</a>               88.7%  ▂···▂·▂▂▂·●█ beats 8/12     medium · avg 60%        1.6%  small run
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CritPt (lab)</a>                          5.4%  ▄···▄▄▄●█▄▄▄ beats 4/9      very hard · avg 1.3%    1.4%  too hard for it · small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Global-MMLU-Lite (maker)</a>             88.7%  ▂···▂·▂▂▂·●█ beats 8/12     medium · avg 60%        1.6%  small run
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CritPt (maker)</a>                        5.4%  ▄···▄▄▄●█▄▄▄ beats 4/9      very hard · avg 1.3%    1.4%  too hard for it · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">SimpleVQA with tools (search)</a>        52.3%  ●·········██ beats 0/2      hard · avg 27%          1.2%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Video-MME v2 (with subtitles)</a>        36.9%  ●·········██ beats 0/2      hard · avg 17%          1.1%  at its level · small run
 <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">IFBench (aggregation unspecified)…</a>   79.8%  ▂▆▂▄▄▄▂▄▄▆█● beats 80/86    medium · avg 47%        1.1%  small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">IntPhys 2</a>                            55.2%  ●···█······█ beats 0/2      hard · avg 27%          0.9%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools</a>                34.2%  ●······█··██ beats 0/3      hard · avg 30%          0.5%  at its level · noisy · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">ZeroBench main with tools (pass@5)</a>   14.0%  ●········█·▄ beats 0/3                                 —  not counted yet: no other model in the …
-<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMAU (lab)</a>                           77.2%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+<a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMAU (maker)</a>                         77.2%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools</a>                  18.0%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 </pre>
 
@@ -206,6 +206,6 @@ Other versions: ud-q2_k_xl (~293 GB) `llama cli -hf unsloth/inkling-GGUF:UD-Q2_K
 
 Other versions: ud-q2_k_xl (~293 GB) `lms get https://huggingface.co/unsloth/inkling-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~146.75 GB) `lms get https://huggingface.co/unsloth/inkling-GGUF@UD-IQ1_S -y`
 
-Official weights and documentation: [huggingface.co/thinkingmachines](https://huggingface.co/thinkingmachines/Inkling)
+Model repository and documentation: [huggingface.co/thinkingmachines](https://huggingface.co/thinkingmachines/Inkling)
 
 [interactive version](https://whatmodel.sh/model/inkling) · [JSON](https://whatmodel.sh/api?format=json&all=1)

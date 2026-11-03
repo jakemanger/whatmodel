@@ -74,7 +74,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">UltraEval-Audio</a>                                 9   32% ▇▇▇▇
 <a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        9   27% ▇▇▇
-<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (la…</a>        5   17% ▇▇
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (su…</a>        5   17% ▇▇
 <a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report</a>                         4   14% ▇▇
 <a name="speech-higgs3-sglang-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Higgs Audio v3 comparison tables in SGL…</a>        3    4% ▇
 <a name="card2-qwen-qwen3-tts-12hz-1-7b-base"></a><a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Qwen/Qwen3-TTS-12Hz-1.7B-Base model car…</a>        1    2% ▇
@@ -108,6 +108,6 @@ Qwen/Qwen3-TTS-12Hz-1…  <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.
 
 Other versions: BF16 (MLX-AUDIO) (~4.54 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16 --text 'Hello from Sesame.' --ref_audio sample_audio.wav --ref_text 'This is what my voice sounds like.'` · BF16 (QWEN-TTS) (~4.54 GB, NVIDIA only) `pip install -U qwen-tts && pip install -U flash-attn --no-build-isolation && python -c "import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-1.7B-Base', device_map='cuda:0', dtype=torch.bfloat16, attn_implementation='flash_attention_2'); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)"`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base)
 
 [interactive version](https://whatmodel.sh/model/qwen3-tts-12hz-1-7b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

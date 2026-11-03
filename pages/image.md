@@ -4,7 +4,7 @@
 
 [llm](../README.md) · **image** · [video](video.md) · [tts](tts.md) · [stt](stt.md) · [decision](decision.md)
 
-updated 2026-10-31 02:55 UTC · 203 models · scores combine 73 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
+updated 2026-11-03 02:37 UTC · 203 models · scores combine 73 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -299,7 +299,7 @@ curl.exe "whatmodel.sh/image?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
   —  <a href="model/moss-image-sft.md">MOSS-Image SFT</a>              no reviewed results  api price unknown                        <a href="https://platform.mosi.cn">mosi.cn ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 203 of 205 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 203 of 205 catalogue models listed here · [sources and licences](method.md#sources)
 
 <details><summary>Models without a score (2)</summary>
 

@@ -27,8 +27,8 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      50.6%  ▄·▄█·▄·●···█ beats 5/7    easy · avg 78%      9.1%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           41.0%  ▄···▄·▄▄●··█ beats 5/7    medium · avg 61%    4.5%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (maker)</a>                    50.6%  ▄·▄█·▄·●···█ beats 5/7    easy · avg 78%      9.1%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (maker)</a>                         41.0%  ▄···▄·▄▄●··█ beats 5/7    medium · avg 61%    4.5%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   14.2%  ▃··▁▂●▃▂█▃▄▂ beats 11/47  medium · avg 51%    1.6%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.4%  ▁▁▁▁▁▁▂●▃█▅▄ beats 12/47  hard · avg 32%      1.3%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.0%  █●▁▁▂▂▂▃▅▅▅▇ beats 9/47   hard · avg 33%      1.1%  sharp · noisy
@@ -54,9 +54,9 @@ test                                result  vs the others in its run   difficult
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (lab)</a>                       59.7%  █▄····▄··●▄▄ beats 5/7    easy · avg 80%      8.2%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (lab)</a>   23.7%  ▄···▄▄▄●··█▄ beats 4/7    medium · avg 49%    7.5%  at its level
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (maker)</a>                       59.7%  █▄····▄··●▄▄ beats 5/7    easy · avg 80%      8.2%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (maker)</a>   23.7%  ▄···▄▄▄●··█▄ beats 4/7    medium · avg 49%    7.5%  at its level
 </pre>
 
 </details>
@@ -65,18 +65,18 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard (lab)</a>                 43.7%  ▃▃···▃··●··▅ beats 4/7     medium · avg 63%        14%  sharp
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU (lab)</a>                           56.0%  ▄····▄·▄●█·█ beats 3/7     easy · avg 76%         8.5%  at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified) (lab)</a>      28.6%  ▄·▄··▄··●█·█ beats 3/7     hard · avg 37%         8.0%  sharp · too hard for it
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                       27.9%  ▄·····█··●▄█ beats 4/7     medium · avg 44%       5.9%  typical
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                     71.9%  █···▄▄▄●···█ beats 5/7     medium · avg 81%       5.3%  at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                      76.8%  ▄·▄··█▄·●·▄▄ beats 5/7     easy · avg 85%         3.5%  at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                     43.2%  ▄▄··▄··▄·●▄▄ beats 5/7     medium · avg 55%       3.3%  typical
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>                  54.4%  ▄····█··▄●▄█ beats 4/7     medium · avg 72%       3.2%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (lab)</a>                          84.9%  ▄▄····▄▄·●·█ beats 5/7     easy · avg 88%         2.2%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard (maker)</a>               43.7%  ▃▃···▃··●··▅ beats 4/7     medium · avg 63%        14%  sharp
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU (maker)</a>                         56.0%  ▄····▄·▄●█·█ beats 3/7     easy · avg 76%         8.5%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified) (maker)</a>    28.6%  ▄·▄··▄··●█·█ beats 3/7     hard · avg 37%         8.0%  sharp · too hard for it
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (maker)</a>                     27.9%  ▄·····█··●▄█ beats 4/7     medium · avg 44%       5.9%  typical
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (maker)</a>                   71.9%  █···▄▄▄●···█ beats 5/7     medium · avg 81%       5.3%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (maker)</a>                    76.8%  ▄·▄··█▄·●·▄▄ beats 5/7     easy · avg 85%         3.5%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (maker)</a>                   43.2%  ▄▄··▄··▄·●▄▄ beats 5/7     medium · avg 55%       3.3%  typical
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (maker)</a>                54.4%  ▄····█··▄●▄█ beats 4/7     medium · avg 72%       3.2%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (maker)</a>                        84.9%  ▄▄····▄▄·●·█ beats 5/7     easy · avg 88%         2.2%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   71.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 40/146  easy · avg 82%         1.2%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   91.2%  ▁▁▂▃●▄█▆▃▂▂▁ beats 28/140  very easy · avg 94%    0.7%  blunt · noisy
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (lab)</a>                     66.4%  ▃·····▃··█▃● beats 6/7     medium · avg 66%       0.6%  blunt · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (maker)</a>                   66.4%  ▃·····▃··█▃● beats 6/7     medium · avg 66%       0.6%  blunt · at its level
 </pre>
 
 </details>
@@ -179,6 +179,6 @@ Other versions: Q8_0 (~3.66 GB) `ollama run granite3-dense:2b-instruct-q8_0`
    mlx_lm.server --model ekryski/granite-3.0-2b-instruct-4bit
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.0-2b-instruct)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.0-2b-instruct)
 
 [interactive version](https://whatmodel.sh/model/granite-3-0-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

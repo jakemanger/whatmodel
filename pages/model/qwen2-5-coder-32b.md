@@ -34,14 +34,14 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                77.0%  ▁···▁▁▂▅▇█▆● beats 73/75  easy · avg 66%          5.9%  several runs
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   24.5%  ▁▁▁●·▁▂▃▅▃█▇ beats 5/49   hard · avg 17%          3.7%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   41.6%  ▁··▁·▁●▁▆█▇█ beats 4/45   hard · avg 29%          2.8%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           90.2%  █···███·██·● beats 6/6    easy · avg 77%          2.2%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 70%          2.0%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (maker)</a>                         90.2%  █···███·██·● beats 6/6    easy · avg 77%          2.2%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (maker)</a>                    79.4%  ▄·▄····▄▄·▄● beats 5/6    easy · avg 70%          2.0%  typical
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     66.8%  ▃▁▁█▁▄●▃▄▇▁▄ beats 16/31  medium · avg 40%        1.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   64.3%  █▂▁▁▂▂▂▃▅▅▅● beats 43/47  hard · avg 33%          1.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   44.1%  ▁▁▁▁▁▁▂▂▃█▅● beats 41/47  hard · avg 32%          1.3%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   85.7%  ▃··▁▂▂▃▂█▃▄● beats 45/47  medium · avg 51%        1.1%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     75.2%  █·██·█··█·█● beats 6/6    medium · avg 56%        1.1%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     83.4%  ▄·█··▄·▄··▄● beats 6/6    medium · avg 54%        0.4%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (maker)</a>                   75.2%  █·██·█··█·█● beats 6/6    medium · avg 56%        1.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (maker)</a>                   83.4%  ▄·█··▄·▄··▄● beats 6/6    medium · avg 54%        0.4%  blunt · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   79.1%  ▁▁▁······▁▃● beats 46/47  easy · avg 67%          0.0%  blunt · at its level · noisy
 </pre>
 
@@ -64,7 +64,7 @@ test            result  vs the others in its run    difficulty  counts  why
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   34.1%  ▅··▃●·█·▃██▃ beats 4/15     hard · avg 23%      3.0%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   84.6%  ▁▁●▁█▄▃▃▆▂▂▂ beats 5/49     easy · avg 77%      2.7%  typical
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        49.6%  ▄······▄▄█·● beats 6/6      medium · avg 37%    1.6%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (maker)</a>      49.6%  ▄······▄▄█·● beats 6/6      medium · avg 37%    1.6%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 222/276  medium · avg 72%    0.9%  at its level · noisy
 </pre>
 
@@ -77,7 +77,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   32% ▇▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   15% ▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (submitted / maker-reported)</a>               8   15% ▇▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   11% ▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   10% ▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1    8% ▇
@@ -182,6 +182,6 @@ Other versions: Q8_0 (~39.86 GB) `ollama run qwen2.5-coder:32b-instruct-q8_0`
 
 Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen2.5-Coder-32B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-coder-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

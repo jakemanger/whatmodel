@@ -77,7 +77,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://qwen.ai/blog?id=qwen3.6">CharXiv (reasoning questions) (la…</a>   81.5%  ▄▂▄▆▄▄▆··●█▂ beats 16/21  medium · avg 38%    8.3%  typical
+<a href="https://qwen.ai/blog?id=qwen3.6">CharXiv (reasoning questions) (ma…</a>   81.5%  ▄▂▄▆▄▄▆··●█▂ beats 16/21  medium · avg 38%    8.3%  typical
 <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   65.0%  ▃▃·▅·▃·█·█●▅ beats 11/14  hard · avg 24%      2.1%  at its level
 </pre>
 
@@ -104,7 +104,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        7   63% ▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   18% ▇▇
-<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.6">Qwen (lab)</a>                                      1    8% ▇
+<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.6">Qwen (submitted / maker-reported)</a>               1    8% ▇
 <a name="paper-2606.05405v2"></a><a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam</a>                               1    4% ▇
 <a name="card3-qwen-qwen-agentworld-35b-a3b"></a><a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">Qwen/Qwen-AgentWorld-35B-A3B model card…</a>        1    3% ▇
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇

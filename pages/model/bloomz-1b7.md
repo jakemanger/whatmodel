@@ -22,8 +22,8 @@ coding  █···●·▄·▄··▄   #4 of 6*     78%      1
 <details><summary>coding · #4 of 6 · 78% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (lab)</a>    4.4%  ██··●··█·█·█ beats 2/5    medium · avg 59%     78%  sharp · too hard for it
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    4.4%  ██··●··█·█·█ beats 2/5    medium · avg 59%     78%  sharp · too hard for it
 </pre>
 
 </details>
@@ -31,11 +31,11 @@ test             result  vs the others in its run  difficulty        counts  why
 <details><summary>other tests (4)</summary>
 
 <pre>
-test                    result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>         50.7%  █··●▃·▁··▁·▃ beats 6/12   medium · avg 68%     11%  too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>               66.0%  ▃··█▅▃●▅·▃▃▃ beats 7/12   easy · avg 91%      5.8%  at its level · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>   79.6%  █·▂··▃··●▂▂▃ beats 8/12   easy · avg 88%      1.3%  blunt · at its level · noisy
-<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>     34.4%  ▅▃▅··▃···▃●█ beats 7/10   hard · avg 37%      1.2%  blunt · too hard for it · noisy
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (maker)</a>         50.7%  █··●▃·▁··▁·▃ beats 6/12   medium · avg 68%     11%  too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>               66.0%  ▃··█▅▃●▅·▃▃▃ beats 7/12   easy · avg 91%      5.8%  at its level · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (maker)</a>   79.6%  █·▂··▃··●▂▂▃ beats 8/12   easy · avg 88%      1.3%  blunt · at its level · noisy
+<a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>       34.4%  ▅▃▅··▃···▃●█ beats 7/10   hard · avg 37%      1.2%  blunt · too hard for it · noisy
 </pre>
 
 </details>
@@ -58,6 +58,6 @@ weighted average                                   = 23.1
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloomz-1b7)
+Model repository and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloomz-1b7)
 
 [interactive version](https://whatmodel.sh/model/bloomz-1b7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

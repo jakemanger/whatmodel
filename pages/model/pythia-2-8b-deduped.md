@@ -122,6 +122,6 @@ Other versions: Q8_0 (~3 GB) `ollama run hf.co/mradermacher/pythia-2.8b-deduped-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-2.8b-deduped', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-2.8b-deduped)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-2.8b-deduped)
 
 [interactive version](https://whatmodel.sh/model/pythia-2-8b-deduped) · [JSON](https://whatmodel.sh/api?format=json&all=1)

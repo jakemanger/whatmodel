@@ -89,7 +89,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1252.4  ▁▁▂▂▂▂▃▄▅▅●▇ beats 110/152  avg 1061            3.2%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   54.8%  ▁·▁·▃▃▁▇▃█·● beats 21/22    hard · avg 27%      2.6%  blunt · at its level
-<a href="https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md">CharXiv (reasoning questions) (la…</a>   77.5%  ▂▅▃▅▅▆▆▅●█▆▂ beats 69/101   medium · avg 38%    2.4%  small run
+<a href="https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md">CharXiv (reasoning questions) (ma…</a>   77.5%  ▂▅▃▅▅▆▆▅●█▆▂ beats 69/101   medium · avg 38%    2.4%  small run
 <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">MATH-Vision</a>                          84.2%  █·····▄●·▄·▄ beats 3/5      medium · avg 47%    1.9%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1436.0  ▁▁▃▃●▃▇█▅▇▄▅ beats 6/37     avg 1331            1.7%  blunt
 <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   50.4%  ▃▃···●▃▅▃·▃▅ beats 3/11     hard · avg 25%      1.6%  blunt · at its level
@@ -234,6 +234,6 @@ Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/K
    mlx_lm.server --model mlx-community/Kimi-K2.5
    ```
 
-Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.5)
+Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.5)
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

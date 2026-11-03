@@ -267,7 +267,7 @@ Other versions: ud-q2_k_xl (~21.5 GB) `lms get https://huggingface.co/unsloth/Ll
 
 Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.3-70B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
 
 ## Published speed measurements
 

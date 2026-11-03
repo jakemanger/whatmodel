@@ -56,6 +56,6 @@ weighted average                                   = 59.9
    uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-flash').transcribe(['audio.wav']))"
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-flash)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-flash)
 
 [interactive version](https://whatmodel.sh/model/canary-1b-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

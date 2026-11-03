@@ -24,9 +24,9 @@ math  ▁▁▃▅●▆▄█▄▂▁▁   #329 of 431*     37%      2
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Falcon 40B (base)](falcon-40b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                       86.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 158/206  very easy · avg 88%     23%  sharp
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (lab)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 56%        14%  at its level
+test                               result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (maker)</a>                       86.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 158/206  very easy · avg 88%     23%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (maker)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 56%        14%  at its level
 </pre>
 
 </details>
@@ -35,11 +35,11 @@ test                             result  vs the others in its run    difficulty 
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>                 71.6%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 121/155  medium · avg 72%     20%  sharp · at its level · small run
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                           72.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 149/214  easy · avg 77%       18%  at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (lab)</a>      38.4%  ▂▁▂▂▄▃●▃▅█▃▃ beats 35/106   hard · avg 38%       14%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (maker)</a>               71.6%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 121/155  medium · avg 72%     20%  sharp · at its level · small run
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (maker)</a>                         72.8%  ▁▁▁▁▁▂▂▅█●▆▄ beats 149/214  easy · avg 77%       18%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (maker)</a>    38.4%  ▂▁▂▂▄▃●▃▅█▃▃ beats 35/106   hard · avg 38%       14%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 159/276  medium · avg 72%    6.2%  at its level · noisy
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                          78.0%  ▅·▅····●▃▅█▅ beats 5/14     medium · avg 73%    4.4%  at its level · noisy
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (maker)</a>                        78.0%  ▅·▅····●▃▅█▅ beats 5/14     medium · avg 73%    4.4%  at its level · noisy
 </pre>
 
 </details>
@@ -141,6 +141,6 @@ Other versions: Q8_0 (~9.79 GB) `ollama run internlm2:7b-chat-v2.5-q8_0`
 
 Other versions: 8bit (~8.2 GB, Mac only) `mlx_lm.chat --model mlx-community/internlm2_5-7b-chat-8bit`
 
-Official weights and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-7b-chat)
+Model repository and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-7b-chat)
 
 [interactive version](https://whatmodel.sh/model/internlm2-5-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -25,8 +25,8 @@ math            █··········●         #1 of 2*    3.0%      1
 <details><summary>agent tasks · 0.0% of its score</summary>
 
 <pre>
-test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (lab)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 8.8%       —  not counted yet: no other model in the …
+test                      result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (maker)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 8.8%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -56,8 +56,8 @@ test            result  vs the others in its run    difficulty  counts  why
 <details><summary>math · #1 of 2 · 3.0% of its score</summary>
 
 <pre>
-test             result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 36%    3.0%  sharp · at its level · noisy · small run
+test               result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (maker)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 36%    3.0%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -65,9 +65,9 @@ test             result  vs the others in its run    difficulty        counts  w
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●██▄ beats 185/322  hard · avg 43%       19%  sharp · at its level · small run
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 59%    8.5%  small run
+test                  result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (maker)</a>   76.3%  ▁▁▁▁▂▄▅▅●██▄ beats 185/322  hard · avg 43%       19%  sharp · at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (maker)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 59%    8.5%  small run
 </pre>
 
 </details>
@@ -142,6 +142,6 @@ Other versions: IQ2_M (~133.01 GB) `llama cli -hf arcee-ai/Trinity-Large-Thinkin
 
 Other versions: IQ2_M (~133.01 GB) `lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@IQ2_M -y`
 
-Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking)
+Model repository and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking)
 
 [interactive version](https://whatmodel.sh/model/trinity-large-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

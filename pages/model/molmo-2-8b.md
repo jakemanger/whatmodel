@@ -37,8 +37,8 @@ test            result  vs the others in its run    difficulty  counts  why
 Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>   58.9%  ▁··▁▄▄●▇▄▅█▄ beats 14/48  medium · avg 59%    8.3%  at its level · small run
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (maker)</a>   58.9%  ▁··▁▄▄●▇▄▅█▄ beats 14/48  medium · avg 59%    8.3%  at its level · small run
 </pre>
 
 </details>
@@ -50,19 +50,19 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1111.9  ▁▁▂▂▂▂●▄▅▅█▇ beats 32/152  avg 1061                20%  blunt
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                     53.0%  ▁····▁▁▃●▆▆▅ beats 14/53   medium · avg 53%       9.2%  at its level · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>           58.9%  ▁··▁▄▄●▇▄▅█▄ beats 14/48   medium · avg 59%       8.3%  at its level · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                 80.1%  ▃·▃▅█▃●▃▃▃▃▃ beats 8/13    easy · avg 78%         6.5%  small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                     93.7%  ▂▂▃▂·▂▂▃●·▅█ beats 9/18    very easy · avg 91%    5.2%  maxed out · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                    87.0%  ▃▅▃█·▃▅·▃·▃● beats 13/13   easy · avg 82%         3.2%  blunt · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                        86.0%  ▁··▁▁▁▁▁▂▅●█ beats 26/44   easy · avg 83%         2.7%  blunt · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                         93.2%  ▁··▃▁▁▁●█▇▄▅ beats 8/28    very easy · avg 93%    2.7%  blunt · maxed out · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (maker)</a>                   53.0%  ▁····▁▁▃●▆▆▅ beats 14/53   medium · avg 53%       9.2%  at its level · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (maker)</a>         58.9%  ▁··▁▄▄●▇▄▅█▄ beats 14/48   medium · avg 59%       8.3%  at its level · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (maker)</a>               80.1%  ▃·▃▅█▃●▃▃▃▃▃ beats 8/13    easy · avg 78%         6.5%  small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (maker)</a>                   93.7%  ▂▂▃▂·▂▂▃●·▅█ beats 9/18    very easy · avg 91%    5.2%  maxed out · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (maker)</a>                  87.0%  ▃▅▃█·▃▅·▃·▃● beats 13/13   easy · avg 82%         3.2%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (maker)</a>                      86.0%  ▁··▁▁▁▁▁▂▅●█ beats 26/44   easy · avg 83%         2.7%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (maker)</a>                       93.2%  ▁··▃▁▁▁●█▇▄▅ beats 8/28    very easy · avg 93%    2.7%  blunt · maxed out · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (val) …</a>   35.5%  ▃··▃·▃····●▃ beats 3/6     hard · avg 22%         2.6%  blunt · at its level
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                    77.6%  ▁▃▁▇▃▇▇●█▁▅▅ beats 23/39   easy · avg 73%         2.5%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (maker)</a>                  77.6%  ▁▃▁▇▃▇▇●█▁▅▅ beats 23/39   easy · avg 73%         2.5%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference Elo (…</a>  1057.0  ▄··▄··●··▄█▄ beats 2/6     avg 968                2.3%  blunt
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                      95.8%  ▁▁▅▇▃▇·▄·█·● beats 27/28   easy · avg 87%         1.3%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (maker)</a>                    95.8%  ▁▁▅▇▃▇·▄·█·● beats 27/28   easy · avg 87%         1.3%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video captio…</a>   43.2%  █···█·█●██·█ beats 3/6     hard · avg 31%         1.2%  blunt · at its level
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                        85.7%  ▁▁▁▄▅▁▃·▃▃▃● beats 24/24   easy · avg 79%         1.2%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (maker)</a>                      85.7%  ▁▁▁▄▅▁▃·▃▃▃● beats 24/24   easy · avg 79%         1.2%  blunt · small run
 </pre>
 
 </details>
@@ -147,6 +147,6 @@ Other versions: Q8_0 (~8.7 GB) `ollama run hf.co/mu2solutions/Molmo2-8B-GGUF:Q8_
    vllm serve allenai/Molmo2-8B --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Molmo2-8B)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Molmo2-8B)
 
 [interactive version](https://whatmodel.sh/model/molmo-2-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

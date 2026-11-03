@@ -110,6 +110,6 @@ Other versions: Q8_0 (~21.5 GB) `ollama run hf.co/mradermacher/granite-20b-funct
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ibm-granite/granite-20b-functioncalling', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-functioncalling)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-functioncalling)
 
 [interactive version](https://whatmodel.sh/model/granite-20b-functioncalling) · [JSON](https://whatmodel.sh/api?format=json&all=1)

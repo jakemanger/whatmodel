@@ -63,6 +63,6 @@ weighted average                                   = 24.5
    python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('ali-vilab/text-to-video-ms-1.7b',torch_dtype=torch.float16,variant='fp16');p.enable_model_cpu_offload();export_to_video(p('Spiderman is surfing',num_inference_steps=25).frames[0],'modelscope.mp4')"
    ```
 
-Official weights and documentation: [huggingface.co/ali-vilab](https://huggingface.co/ali-vilab/text-to-video-ms-1.7b)
+Model repository and documentation: [huggingface.co/ali-vilab](https://huggingface.co/ali-vilab/text-to-video-ms-1.7b)
 
 [interactive version](https://whatmodel.sh/model/modelscope-t2v-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

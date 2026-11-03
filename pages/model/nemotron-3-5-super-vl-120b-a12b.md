@@ -30,11 +30,11 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro
 <pre>
 test                                     result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1494 IPS  ▁●▁▃▃▂█▁▂▂▁▁ beats 3/59    avg -0.379 IPS           29%  sharp
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Verified (lab)</a>                  71.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 87/138  hard · avg 22%          8.7%  sharp · at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">Terminal-Bench 2.1 (lab)</a>                  60.7%  ▁·▁·▁▁▄▃●█▅█ beats 27/63   hard · avg 16%          5.2%  sharp · at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">BrowseComp (lab)</a>                          78.0%  ▂·▃▁▂▂▆▅█●▂▄ beats 37/46   hard · avg 31%          3.0%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">τ³-bench Banking (lab)</a>                    18.9%  ▂▂·▅█▂▃▃▃●▂▅ beats 17/24   very hard · avg 6.5%    1.6%  blunt · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Multilingual (lab)</a>              67.7%  ▁··▁▃▁▅●█▂▂▁ beats 34/65   hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Verified (maker)</a>                71.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 87/138  hard · avg 22%          8.7%  sharp · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">Terminal-Bench 2.1 (maker)</a>                60.7%  ▁·▁·▁▁▄▃●█▅█ beats 27/63   hard · avg 16%          5.2%  sharp · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">BrowseComp (maker)</a>                        78.0%  ▂·▃▁▂▂▆▅█●▂▄ beats 37/46   hard · avg 31%          3.0%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">τ³-bench Banking (maker)</a>                  18.9%  ▂▂·▅█▂▃▃▃●▂▅ beats 17/24   very hard · avg 6.5%    1.6%  blunt · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Multilingual (maker)</a>            67.7%  ▁··▁▃▁▅●█▂▂▁ beats 34/65   hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Pro (split unspecified)…</a>        51.8%  ▂·▁▁▁▁▂▃●▇▂▁ beats 30/58   very hard · avg 3.9%       —  not counted yet: no other model in the …
 </pre>
 
@@ -47,10 +47,10 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1399.2  ▁▁▃▂▅●▃▆▅▅▁▂ beats 45/129  avg 981                  20%  sharp
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Verified (lab)</a>             71.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 87/138  hard · avg 22%          8.7%  sharp · at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SciCode subproblems (lab)</a>            47.1%  ▃··▃▃▃·▃●█·▅ beats 5/10    hard · avg 21%          3.1%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Verified (maker)</a>           71.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 87/138  hard · avg 22%          8.7%  sharp · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SciCode subproblems (maker)</a>          47.1%  ▃··▃▃▃·▃●█·▅ beats 5/10    hard · avg 21%          3.1%  at its level · small run
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">LiveCodeBench v6 (window unspecif…</a>   88.2%  ▂▃▄▄▅██▆▄▇●▆ beats 57/67   medium · avg 38%           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Multilingual (lab)</a>         67.7%  ▁··▁▃▁▅●█▂▂▁ beats 34/65   hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Multilingual (maker)</a>       67.7%  ▁··▁▃▁▅●█▂▂▁ beats 34/65   hard · avg 18%             —  not counted yet: no other model in the …
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">SWE-bench Pro (split unspecified)…</a>   51.8%  ▂·▁▁▁▁▂▃●▇▂▁ beats 30/58   very hard · avg 3.9%       —  not counted yet: no other model in the …
 </pre>
 
@@ -83,8 +83,8 @@ test                             result  vs the others in its run   difficulty  
 Beats [Nemotron 3.5 Bolt 74B A9B](nemotron-3-5-bolt-74b-a9b.md) here, though they rank higher overall.
 
 <pre>
-test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">BrowseComp (lab)</a>   78.0%  ▂·▃▁▂▂▆▅█●▂▄ beats 37/46  hard · avg 31%    3.0%  at its level · small run
+test                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">BrowseComp (maker)</a>   78.0%  ▂·▃▁▂▂▆▅█●▂▄ beats 37/46  hard · avg 31%    3.0%  at its level · small run
 </pre>
 
 </details>
@@ -93,10 +93,10 @@ test              result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">GPQA Diamond (lab)</a>                   89.5%  ▁▁▁▁▂▄▅▅██●▄ beats 272/322  hard · avg 47%      9.1%  sharp · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">GPQA Diamond (maker)</a>                 89.5%  ▁▁▁▁▂▄▅▅██●▄ beats 272/322  hard · avg 47%      9.1%  sharp · small run
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">IFBench (aggregation unspecified)…</a>   70.9%  ▂▆▂▄▄▄▂▄▄●█▇ beats 58/86    medium · avg 44%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">MMLU-ProX (lab)</a>                      76.9%  ▁·▁▁▁▂▁▃●█▅▄ beats 15/36    medium · avg 58%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">MMLongBench-Doc (lab)</a>                62.8%  ▃···▃···▃▅█● beats 9/9                             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">MMLU-ProX (maker)</a>                    76.9%  ▁·▁▁▁▂▁▃●█▅▄ beats 15/36    medium · avg 58%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/1f8953f7f0935358e3605150d22bc15df062061c/README.md#benchmarks">MMLongBench-Doc (maker)</a>              62.8%  ▃···▃···▃▅█● beats 9/9                             —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -153,6 +153,6 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
      --speculative_config.num_speculative_tokens 3
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-super-vl-120b-a12b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

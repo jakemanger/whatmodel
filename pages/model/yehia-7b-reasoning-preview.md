@@ -50,6 +50,6 @@ weighted average                              = 56.1
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='JasperV13/Yehia-7B-Reasoning-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/JasperV13](https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview)
+Model repository and documentation: [huggingface.co/JasperV13](https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview)
 
 [interactive version](https://whatmodel.sh/model/yehia-7b-reasoning-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

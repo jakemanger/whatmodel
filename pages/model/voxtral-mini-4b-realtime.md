@@ -70,7 +70,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            2   32% ▇▇▇▇
 <a name="speech-stt-pipecat-bsd2"></a><a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · semantic WER re…</a>        1   18% ▇▇
-<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime (lab)</a>                          4   18% ▇▇
+<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime (submitted / maker-rep…</a>        4   18% ▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">transcribe.cpp model catalog · LibriSpe…</a>        3   17% ▇▇
 <a name="speech-vibevoice-asr-streaming-report-ccby"></a><a href="https://arxiv.org/html/2609.02812v2">VibeVoice-ASR-Streaming Technical Report</a>        3    7% ▇
 <a name="speech-stt-dutch-asr-tvosch-apache"></a><a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/mistralai__Voxtral-Mini-4B-Realtime-2602.json">Dutch ASR Leaderboard</a>                           1    5% ▇
@@ -99,6 +99,6 @@ api (Mistral AI) · $0.0060/audio min · [docs.mistral.ai](https://docs.mistral.
 
 Other versions: BF16 (~11.13 GB, NVIDIA only) `VLLM_DISABLE_COMPILE_CACHE=1 vllm serve mistralai/Voxtral-Mini-4B-Realtime-2602 --compilation_config '{"cudagraph_mode": "PIECEWISE"}'`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602)
 
 [interactive version](https://whatmodel.sh/model/voxtral-mini-4b-realtime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

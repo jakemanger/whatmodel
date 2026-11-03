@@ -183,6 +183,6 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/phi-2-GGUF
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-2)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/phi-2)
 
 [interactive version](https://whatmodel.sh/model/phi-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

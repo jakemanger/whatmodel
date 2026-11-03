@@ -83,6 +83,6 @@ weighted average                                   = -3.2
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-125m)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-125m)
 
 [interactive version](https://whatmodel.sh/model/opt-125m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

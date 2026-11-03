@@ -129,6 +129,6 @@ Other versions: Q8_0 (~9.4 GB) `ollama run hf.co/internlm/internlm3-8b-instruct-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='internlm/internlm3-8b-instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct)
+Model repository and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm3-8b-instruct)
 
 [interactive version](https://whatmodel.sh/model/internlm3-8b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

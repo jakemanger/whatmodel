@@ -38,12 +38,12 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1161.4  ▁▁▂▂▂▂▃●▅▅█▇ beats 56/152  avg 1061             19%  blunt
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions) (la…</a>   63.2%  ▂▅▃▅▅▆●▅▆█▆▂ beats 48/101  medium · avg 36%    9.3%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions) (ma…</a>   63.2%  ▂▅▃▅▅▆●▅▆█▆▂ beats 48/101  medium · avg 36%    9.3%  at its level · small run
 <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   42.4%  ▃●···█▃▅▃·▃▅ beats 1/11    hard · avg 25%      9.1%  blunt · at its level
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     76.0%  ▁····▁▁▃█▆●▅ beats 42/53   medium · avg 57%    7.9%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       66.0%  ▂▃▁▃▆▇▃●▇██▅ beats 26/52   medium · avg 46%    7.5%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.9%  ▃▅▂▃▂▂▆█●▆█▅ beats 23/35   medium · avg 62%    5.9%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                       86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 21/37   easy · avg 82%      1.8%  blunt · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (maker)</a>                   76.0%  ▁····▁▁▃█▆●▅ beats 42/53   medium · avg 57%    7.9%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (maker)</a>                     66.0%  ▂▃▁▃▆▇▃●▇██▅ beats 26/52   medium · avg 46%    7.5%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (maker)</a>                       75.9%  ▃▅▂▃▂▂▆█●▆█▅ beats 23/35   medium · avg 62%    5.9%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (maker)</a>                     86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 21/37   easy · avg 82%      1.8%  blunt · small run
 </pre>
 
 </details>
@@ -51,9 +51,9 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>        59.5%  ▇·█●▅▄▄··▃▁▁ beats 12/28  hard · avg 48%      5.2%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>   57.0%  ▁·▁▁▂▃●▅▂▂·▂ beats 11/24  medium · avg 40%    4.8%  at its level · small run
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (maker)</a>        59.5%  ▇·█●▅▄▄··▃▁▁ beats 12/28  hard · avg 48%      5.2%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (maker)</a>   57.0%  ▁·▁▁▂▃●▅▂▂·▂ beats 11/24  medium · avg 40%    4.8%  at its level · small run
 </pre>
 
 </details>
@@ -120,6 +120,6 @@ Other versions: ud-q2_k_xl (~47.55 GB) `llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q
 
 Other versions: ud-q2_k_xl (~47.55 GB) `lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.6V)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.6V)
 
 [interactive version](https://whatmodel.sh/model/glm-4-6v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

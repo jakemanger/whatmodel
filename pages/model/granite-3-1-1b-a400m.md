@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
-**score 31.1** ±1.7 · #655 of 732 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 31.1** ±1.7 · #655 of 732 · from 6 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,8 +36,8 @@ test                                result  vs the others in its run  difficulty
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md), [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   33.9%  ▂▂▂▂▃▄●▇██▆▄ beats 65/206  easy · avg 85%     36%  sharp · at its level
+test           result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (maker)</a>   33.9%  ▂▂▂▂▃▄●▇██▆▄ beats 65/206  easy · avg 85%     36%  sharp · at its level
 </pre>
 
 </details>
@@ -45,11 +45,11 @@ test         result  vs the others in its run   difficulty      counts  why
 <details><summary>other tests (4)</summary>
 
 <pre>
-test                 result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>   42.7%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 62/140  easy · avg 77%       22%  sharp
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>      62.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 46/131  medium · avg 80%     12%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>       66.0%  ▁▁▁▂▂▂▄●█▇▄▂ beats 57/135  easy · avg 87%       12%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>            26.1%  ▁●▁▁▁▂▂▅██▆▄ beats 5/214   medium · avg 74%    8.5%  typical
+test                   result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (maker)</a>   42.7%  ▄▁▁▂▁▄●▇▃▂▃▂ beats 62/140  easy · avg 77%       22%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (maker)</a>      62.4%  ▁▁▁▁▂▁▁▅●█▃▁ beats 46/131  medium · avg 80%     12%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (maker)</a>       66.0%  ▁▁▁▂▂▂▄●█▇▄▂ beats 57/135  easy · avg 87%       12%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (maker)</a>            26.1%  ▁●▁▁▁▂▂▅██▆▄ beats 5/214   medium · avg 74%    8.5%  typical
 </pre>
 
 </details>
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~1.4 GB) `lms get https://huggingface.co/lmstudio-communit
    ollama run granite3.1-moe:1b
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct)
 
 ## Published speed measurements
 

@@ -111,6 +111,6 @@ Other versions: Q8_0 (~1.2 GB) `ollama run hf.co/mradermacher/Zyte-1B-GGUF:Q8_0`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='venkycs/Zyte-1B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/venkycs](https://huggingface.co/venkycs/Zyte-1B)
+Model repository and documentation: [huggingface.co/venkycs](https://huggingface.co/venkycs/Zyte-1B)
 
 [interactive version](https://whatmodel.sh/model/zyte-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

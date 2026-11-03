@@ -69,6 +69,6 @@ weighted average                        = 68.9
 
 Other versions: gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp) (~12.4 GB) `sd-cli --diffusion-model models/qwen_image_2.1-Q4_K.gguf --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2.1)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2.1)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

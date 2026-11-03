@@ -117,6 +117,6 @@ Other versions: Q8_0 (~8.2 GB) `ollama run hf.co/mradermacher/Qwen-7B-Chat-GGUF:
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen-7B-Chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-7B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-7B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.34B params · apache-2.0
 
-**score 28.9** ±1.0 · #672 of 732 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.9** ±1.0 · #672 of 732 · from 21 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,8 +27,8 @@ math            ▁▁●▅█▆▄█▄▂▁▁    #405 of 431     26%     
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 
 <pre>
-test           result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>   43.3%  ▁▁▁▁▁●▅█▆▅▄▁ beats 23/171  medium · avg 62%    1.7%  blunt · at its level
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (maker)</a>   43.3%  ▁▁▁▁▁●▅█▆▅▄▁ beats 23/171  medium · avg 62%    1.7%  blunt · at its level
 </pre>
 
 </details>
@@ -38,14 +38,14 @@ test           result  vs the others in its run   difficulty        counts  why
 Trails [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
-test                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      38.0%  ▁▁▁▁▂▂●▆█▅▂▁ beats 62/205  very easy · avg 89%     12%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (lab)</a>     35.0%  ▁·▁▁▂●▄▄█▅▄▃ beats 24/145  very easy · avg 86%     10%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (lab)</a>           49.0%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 32/86   easy · avg 81%         4.9%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>      14.3%  ●··▄·▅▅▇▄█▃▄ beats 0/31    medium · avg 51%       3.4%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP+ (lab)</a>          44.0%  ▁··▁▁●▄█▆▄▁▁ beats 12/120  easy · avg 72%         3.4%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>   11.2%  ●····▃·█▃▅█▃ beats 1/12    medium · avg 40%       3.1%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">CRUXEval-O (lab)</a>     25.5%  ●▂██▅▂▁·▁·▁▁ beats 2/51    medium · avg 48%       1.9%  blunt
+test                  result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (maker)</a>      38.0%  ▁▁▁▁▂▂●▆█▅▂▁ beats 62/205  very easy · avg 89%     12%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (maker)</a>     35.0%  ▁·▁▁▂●▄▄█▅▄▃ beats 24/145  very easy · avg 86%     10%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (maker)</a>           49.0%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 32/86   easy · avg 81%         4.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (maker)</a>      14.3%  ●··▄·▅▅▇▄█▃▄ beats 0/31    medium · avg 51%       3.4%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP+ (maker)</a>          44.0%  ▁··▁▁●▄█▆▄▁▁ beats 12/120  easy · avg 72%         3.4%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (maker)</a>   11.2%  ●····▃·█▃▅█▃ beats 1/12    medium · avg 40%       3.1%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">CRUXEval-O (maker)</a>     25.5%  ●▂██▅▂▁·▁·▁▁ beats 2/51    medium · avg 48%       1.9%  blunt
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Code Llama 70B Instruct](codellama
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval instruction-level strict (…</a>   67.6%  ▄●····▄▄█▄·█ beats 1/8    very easy · avg 88%    3.7%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (lab)</a>     55.6%  ▁▁··●··▂▇█▃▃ beats 3/26   easy · avg 81%         3.5%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (maker)</a>   55.6%  ▁▁··●··▂▇█▃▃ beats 3/26   easy · avg 81%         3.5%  at its level
 </pre>
 
 </details>
@@ -68,10 +68,10 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mi
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM8K (lab)</a>                          39.3%  ▂▂▂▂▃▄●▇██▆▄ beats 71/206  very easy · avg 89%     12%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (lab)</a>                   33.7%  ▃●····▃·▅▅█▃ beats 1/10    easy · avg 78%         4.4%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>            6.2%  ●····▅·█▃▃·▅ beats 0/10    medium · avg 50%       3.8%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (lab)</a>                    5.8%  ▁·●▁▁▂▁█▄▁▃▃ beats 3/27    medium · avg 59%       3.1%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM8K (maker)</a>                        39.3%  ▂▂▂▂▃▄●▇██▆▄ beats 71/206  very easy · avg 89%     12%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (maker)</a>                 33.7%  ▃●····▃·▅▅█▃ beats 1/10    easy · avg 78%         4.4%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (maker)</a>          6.2%  ●····▅·█▃▃·▅ beats 0/10    medium · avg 50%       3.8%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (maker)</a>                  5.8%  ▁·●▁▁▂▁█▄▁▃▃ beats 3/27    medium · avg 59%       3.1%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   16.2%  ●·▄▄██···█·▄ beats 1/10    medium · avg 46%       2.4%  typical
 </pre>
 
@@ -80,13 +80,13 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (6)</summary>
 
 <pre>
-test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BIG-Bench Hard (lab)</a>              33.3%  ▁▁▁▁●▄▅▆█▃▃▁ beats 20/155  easy · avg 75%      7.3%  sharp
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (lab)</a>                        36.2%  ▁▁▁▁▁●▂▅██▆▄ beats 25/214  easy · avg 74%      7.0%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (lab)</a>   26.1%  ▂●▂▂▄▃▆▃▅█▃▃ beats 7/106   hard · avg 37%      3.6%  sharp · too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU-Pro (lab)</a>                    14.4%  ▁●·▁▁▁▃▂▄▅█▁ beats 2/188   medium · avg 46%    2.9%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                     27.1%  ●····▂▂▄▄▄█▄ beats 0/36    medium · avg 52%    2.5%  too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                       28.0%  ●▁▁▂▃▂▄▄▅██▃ beats 0/46    medium · avg 56%    2.2%  typical
+test                               result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BIG-Bench Hard (maker)</a>              33.3%  ▁▁▁▁●▄▅▆█▃▃▁ beats 20/155  easy · avg 75%      7.3%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (maker)</a>                        36.2%  ▁▁▁▁▁●▂▅██▆▄ beats 25/214  easy · avg 74%      7.0%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (maker)</a>   26.1%  ▂●▂▂▄▃▆▃▅█▃▃ beats 7/106   hard · avg 37%      3.6%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU-Pro (maker)</a>                    14.4%  ▁●·▁▁▁▃▂▄▅█▁ beats 2/188   medium · avg 46%    2.9%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (maker)</a>                     27.1%  ●····▂▂▄▄▄█▄ beats 0/36    medium · avg 52%    2.5%  too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (maker)</a>                       28.0%  ●▁▁▂▃▂▄▄▅██▃ beats 0/46    medium · avg 56%    2.2%  typical
 </pre>
 
 </details>
@@ -183,6 +183,6 @@ Other versions: 4bit (~0.2 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 Other versions: 8bit (~0.4 GB, Mac only) `mlx_lm.chat --model mlx-community/granite-4.0-h-350m-8bit`
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-350m)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-350m)
 
 [interactive version](https://whatmodel.sh/model/granite-4-0-h-350m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

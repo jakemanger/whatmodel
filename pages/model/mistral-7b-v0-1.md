@@ -25,11 +25,11 @@ math    ▁▁▃▅●▆▄█▄▂▁▁   #282 of 431    8.7%      2
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 11/99  easy · avg 76%     22%  sharp · at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   23.8%  ▁·▁▁▁●▄▄▄█▃▁ beats 12/99  easy · avg 70%     12%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>   50.2%  ▄··▄·▄··●··▄ beats 4/5    easy · avg 69%    3.9%  at its level · several runs
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        42.1%  ▁···▁▁●▅▇█▆▂ beats 8/75   easy · avg 66%    2.5%  at its level
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>      28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 11/99  easy · avg 76%     22%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>     23.8%  ▁·▁▁▁●▄▄▄█▃▁ beats 12/99  easy · avg 70%     12%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (maker)</a>   50.2%  ▄··▄·▄··●··▄ beats 4/5    easy · avg 69%    3.9%  at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>          42.1%  ▁···▁▁●▅▇█▆▂ beats 8/75   easy · avg 66%    2.5%  at its level
 </pre>
 
 </details>
@@ -39,9 +39,9 @@ test        result  vs the others in its run  difficulty      counts  why
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>   50.0%  █···█·█●··██ beats 3/5    easy · avg 82%    6.9%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>    12.7%  █·█·█·●█···█ beats 3/5    hard · avg 27%    1.9%  several runs
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (maker)</a>   50.0%  █···█·█●··██ beats 3/5    easy · avg 82%    6.9%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (maker)</a>    12.7%  █·█·█·●█···█ beats 3/5    hard · avg 27%    1.9%  several runs
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test         result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">ARC Challenge</a>                        54.4%  ▁·▁··▁▁▇▂█▆● beats 26/26   easy · avg 82%          17%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                           62.5%  ▄····▄▄·●··█ beats 3/5     easy · avg 82%         4.5%  at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (maker)</a>                         62.5%  ▄····▄▄·●··█ beats 3/5     easy · avg 82%         4.5%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">WinoGrande</a>                           74.0%  ▁····▁··▁▂█● beats 26/26   easy · avg 86%         4.2%  at its level · several runs
 <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       41.1%  ▁▁▁▁▂▄▅●█▃▃▁ beats 78/155  medium · avg 65%       4.1%  sharp · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Natural Questions (closed book)</a>      30.1%  ▁·▁·▁▂▁▂·▅▂● beats 26/28   medium · avg 48%       3.5%  at its level · several runs
@@ -85,9 +85,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   30% ▇▇▇▇
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">Stability AI</a>                                   10   22% ▇▇▇
-<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts (lab)</a>                       12   16% ▇▇
+<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts (submitted / maker-r…</a>       12   16% ▇▇
 <a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   11% ▇
-<a name="paper-2310.06825v1"></a><a href="https://arxiv.org/html/2310.06825v1">Mistral 7B (lab)</a>                               12    9% ▇
+<a name="paper-2310.06825v1"></a><a href="https://arxiv.org/html/2310.06825v1">Mistral 7B (submitted / maker-reported)</a>        12    9% ▇
 <a name="paper-gemma-2403.08295v4"></a><a href="https://arxiv.org/html/2403.08295v4#S3.T6">Gemma report</a>                                    7    7% ▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2024-02-12%2009%3A16%3A34.131422.json">Hallucinations Leaderboard results</a>              4    2% ▇
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    2% ▇
@@ -188,6 +188,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/MaziyarPanahi/Mistral-7B-v0.1-G
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mistral-7B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mistral-7b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

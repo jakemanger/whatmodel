@@ -197,6 +197,6 @@ Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-q8_0`
 
 Other versions: 8bit (~113.2 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-plus-8bit`
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-plus)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-plus)
 
 [interactive version](https://whatmodel.sh/model/command-r-plus-04-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

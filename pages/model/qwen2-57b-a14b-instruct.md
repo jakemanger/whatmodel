@@ -22,8 +22,8 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        35.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 17/33    medium · avg 39%     32%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        46.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 44/58    medium · avg 48%     31%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>      35.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 17/33    medium · avg 39%     32%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>      46.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 44/58    medium · avg 48%     31%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      57.6%  ▁··▁▁▂▂▆▅●█▆ beats 36/70    medium · avg 62%     17%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   56.5%  ▂▄▂▃█▄●▆▃▅▂▂ beats 46/81    medium · avg 57%     13%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   75.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 229/276  medium · avg 72%    6.5%  at its level · noisy
@@ -36,13 +36,13 @@ test                                result  vs the others in its run    difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                  results  share of the score
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                      2   63% ▇▇▇▇▇▇▇▇
-<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   17% ▇▇
-<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>               1   13% ▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1    7% ▇
-prior: pull toward the middle                      1% ▇
-weighted average                                 = 48.9
+source                                    results  share of the score
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2   63% ▇▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1   17% ▇▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1   13% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 48.9
 </pre>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
@@ -136,6 +136,6 @@ Other versions: 8bit (~61 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen2-57B-A14B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-57b-a14b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   15.0%  ▃··▃·█●▃▅··▃ beats 5/9    hard · avg 24%      3.0%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   70.0%  ▄·▆▂▆█▄▆▂▄·● beats 21/22  medium · avg 60%    2.3%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   72.5%  ▄█·▄·······● beats 4/4    easy · avg 70%      2.2%  at its level
-<a href="https://arxiv.org/html/2505.14683v3">GenEval (lab)</a>                        82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 30/39  easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2505.14683v3">GenEval (maker)</a>                      82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 30/39  easy · avg 79%         —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2505.14683v3">WISE overall (model publisher's r…</a>   70.0%  no other model yet                               —  not counted yet: no other model in the …
 </pre>
 
@@ -134,6 +134,6 @@ api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/bagel)
 
 Other versions: nf4 (app.py --mode 2, bitsandbytes) (~12 GB, NVIDIA only) `git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py --mode 2`
 
-Official weights and documentation: [huggingface.co/ByteDance-Seed](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT)
+Model repository and documentation: [huggingface.co/ByteDance-Seed](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT)
 
 [interactive version](https://whatmodel.sh/model/bagel) · [JSON](https://whatmodel.sh/api?format=json&all=1)

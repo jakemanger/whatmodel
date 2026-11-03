@@ -37,8 +37,8 @@ test                              result  vs the others in its run  difficulty  
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Stable Code 3B](stable-code-3b.md), [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (lab)</a>   43.9%  ▁··▁●▄▆▇▄▅█▄ beats 3/48   medium · avg 52%    2.8%  noisy
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (maker)</a>   43.9%  ▁··▁●▄▆▇▄▅█▄ beats 3/48   medium · avg 52%    2.8%  noisy
 </pre>
 
 </details>
@@ -52,10 +52,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      919.0  ▁●▂▂▂▂▃▄▅▅█▇ beats 1/152  avg 1061             15%  blunt
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>        63.7%  █·●·······▄█ beats 2/5    easy · avg 78%       14%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                               49.5%  ●▄▄█·······▄ beats 0/5    medium · avg 61%    7.8%  at its level
-<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (lab)</a>                     43.0%  ▁····▁▁●█▆▆▅ beats 4/53   medium · avg 51%    5.4%  typical
+<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (maker)</a>                   43.0%  ▁····▁▁●█▆▆▅ beats 4/53   medium · avg 51%    5.4%  typical
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>                  73.1%  █·····●··▃·▃ beats 3/5    easy · avg 79%      5.4%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                       58.5%  ●▄·▄·····█·▄ beats 0/5    easy · avg 66%      4.2%  blunt · at its level
-<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (lab)</a>           43.9%  ▁··▁●▄▆▇▄▅█▄ beats 3/48   medium · avg 52%    2.8%  noisy
+<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (maker)</a>         43.9%  ▁··▁●▄▆▇▄▅█▄ beats 3/48   medium · avg 52%    2.8%  noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                           64.5%  ▄··●··█··▄·▄ beats 1/5    easy · avg 84%      2.6%  at its level · noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                          58.0%  ▄···●··▄▄··▄ beats 1/5    easy · avg 68%      2.3%  blunt · at its level
 <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>   982.0  ▄●·▄·▄▄▄·▄·█ beats 1/8    avg 1032            2.2%  blunt
@@ -63,7 +63,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                            79.0%  █···▄▄···▄·● beats 5/5    easy · avg 81%      1.9%  blunt · at its level · several runs
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                             64.2%  ●··███·█···█ beats 0/5    easy · avg 81%      1.7%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                              82.1%  ▄······▄··█● beats 5/5    easy · avg 79%      1.5%  blunt · at its level · noisy · several …
-<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA (lab)</a>                        72.0%  ▁▁▁▄▅●▃·▃▃▃█ beats 10/24  easy · avg 75%      1.2%  blunt · at its level
+<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA (maker)</a>                      72.0%  ▁▁▁▄▅●▃·▃▃▃█ beats 10/24  easy · avg 75%      1.2%  blunt · at its level
 </pre>
 
 </details>
@@ -106,6 +106,6 @@ weighted average                                   = 38.7
    vllm serve microsoft/Phi-3.5-vision-instruct --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-5-vision-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

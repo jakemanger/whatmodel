@@ -182,6 +182,6 @@ Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/K
    mlx_lm.server --model mlx-community/Kimi-K2-Thinking
    ```
 
-Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2-Thinking)
+Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2-Thinking)
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

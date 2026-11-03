@@ -66,6 +66,6 @@ weighted average                                   = 62.3
    git clone https://github.com/index-tts/index-tts.git && cd index-tts && git checkout 8d2759b2b73b920e58ccc0167fc2a445fb170860 && pip install -r requirements.txt && huggingface-cli download IndexTeam/Index-TTS bigvgan_discriminator.pth bigvgan_generator.pth bpe.model dvae.pth gpt.pth unigram_12000.vocab --local-dir checkpoints && pip install -e . && indextts "大家好，我现在正在bilibili 体验 ai 科技，说实话，来之前我绝对想不到！AI技术已经发展到这样匪夷所思的地步了！" --voice reference_voice.wav --model_dir checkpoints --config checkpoints/config.yaml --output output.wav
    ```
 
-Official weights and documentation: [huggingface.co/IndexTeam](https://huggingface.co/IndexTeam/Index-TTS)
+Model repository and documentation: [huggingface.co/IndexTeam](https://huggingface.co/IndexTeam/Index-TTS)
 
 [interactive version](https://whatmodel.sh/model/indextts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

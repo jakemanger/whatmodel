@@ -27,10 +27,10 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 22/35  medium · avg 62%     13%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (lab)</a>                      40.2%  █···█·███··● beats 5/5    medium · avg 61%     12%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (maker)</a>                    40.2%  █···█·███··● beats 5/5    medium · avg 61%     12%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   20.7%  ▄▇█▃●▇▄▁▇▃·▁ beats 16/35  medium · avg 46%    8.3%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   14.3%  ▁·▁▁▄█●▄█▁▅▅ beats 14/35  medium · avg 51%    8.0%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                           60.7%  ▄··▄·▄··█··● beats 5/5    easy · avg 69%      4.2%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (maker)</a>                         60.7%  ▄··▄·▄··█··● beats 5/5    easy · avg 69%      4.2%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           39.3%  ▁··▁▅▂●▇▁··▁ beats 10/22  medium · avg 52%    2.8%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           40.5%  ▁·▂▃▁●▁▂···▁ beats 11/22  medium · avg 51%    2.7%  blunt · at its level
 </pre>
@@ -42,9 +42,9 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>   74.4%  █···█·██··█● beats 5/5    easy · avg 82%    6.9%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>    28.4%  █·█·█·██···● beats 5/5    hard · avg 32%    4.1%  typical
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (maker)</a>   74.4%  █···█·██··█● beats 5/5    easy · avg 82%    6.9%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (maker)</a>    28.4%  █·█·█·██···● beats 5/5    hard · avg 32%    4.1%  typical
 </pre>
 
 </details>
@@ -53,16 +53,16 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (lab)</a>                  59.7%  ▄···▄···█▄·● beats 5/5      easy · avg 77%         8.5%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                           70.6%  ▄····▄▄·▄··● beats 5/5      easy · avg 82%         8.1%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (lab)</a>                     77.2%  █··█·█·█●··█ beats 4/5      easy · avg 86%         4.5%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (maker)</a>                59.7%  ▄···▄···█▄·● beats 5/5      easy · avg 77%         8.5%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (maker)</a>                         70.6%  ▄····▄▄·▄··● beats 5/5      easy · avg 82%         8.1%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (maker)</a>                   77.2%  █··█·█·█●··█ beats 4/5      easy · avg 86%         4.5%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book) (…</a>   30.6%  █·····▄▄▄··● beats 5/5      medium · avg 41%       4.4%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA (lab)</a>                       71.5%  █···██··█·●█ beats 4/5      easy · avg 83%         3.8%  at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (lab)</a>                      84.4%  █···██···█●█ beats 4/5      very easy · avg 91%    3.0%  typical
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA (maker)</a>                     71.5%  █···██··█·●█ beats 4/5      easy · avg 83%         3.8%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (maker)</a>                    84.4%  █···██···█●█ beats 4/5      very easy · avg 91%    3.0%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 141/276  medium · avg 72%       1.8%  at its level · noisy
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                       83.1%  ▄···▄···█▄·● beats 5/5      easy · avg 86%         1.6%  blunt
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (maker)</a>                     83.1%  ▄···▄···█▄·● beats 5/5      easy · avg 86%         1.6%  blunt
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   87.2%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 105/146  easy · avg 82%         1.2%  at its level · noisy
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (lab)</a>                           83.6%  ▄····▄··█▄·● beats 5/5      easy · avg 87%         1.1%  blunt · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (maker)</a>                         83.6%  ▄····▄··█▄·● beats 5/5      easy · avg 87%         1.1%  blunt · at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts (lab)</a>                       12   62% ▇▇▇▇▇▇▇
+<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts (submitted / maker-r…</a>       12   62% ▇▇▇▇▇▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   29% ▇▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    5% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
@@ -165,6 +165,6 @@ Other versions: Q8_0 (~50 GB) `ollama run mixtral:8x7b-text-v0.1-q8_0`
    mlx_lm.server --model mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mixtral-8x7b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -92,6 +92,6 @@ weighted average                        = 50.8
    ollama run hf.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/mistral-nemo-minitron-8b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

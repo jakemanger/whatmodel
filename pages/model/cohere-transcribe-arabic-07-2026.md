@@ -66,6 +66,6 @@ weighted average                                   = 63.3
    uv run --with 'transformers>=5.4.0' --with torch --with huggingface_hub --with soundfile --with librosa --with sentencepiece --with protobuf --with accelerate python -c "from transformers import AutoProcessor, CohereAsrForConditionalGeneration; from transformers.audio_utils import load_audio; processor = AutoProcessor.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026'); model = CohereAsrForConditionalGeneration.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026', device_map='auto'); audio = load_audio('audio.wav', sampling_rate=16000); inputs = processor(audio, sampling_rate=16000, return_tensors='pt', language='ar'); inputs.to(model.device, dtype=model.dtype); outputs = model.generate(**inputs, max_new_tokens=256); print(processor.decode(outputs, skip_special_tokens=True))"
    ```
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026)
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-arabic-07-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,9 +42,9 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), 
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      55.5%  ▃·▃·▃●···█·▃ beats 3/7     medium · avg 54%        14%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>                    55.5%  ▃·▃·▃●···█·▃ beats 3/7     medium · avg 54%        14%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>            87.9%  ●·····▃···▅█ beats 0/6     very easy · avg 91%    8.9%  typical
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       92.8%  ▄·▄▄·●▄█···▄ beats 3/7     very easy · avg 89%    8.6%  small run · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>                     92.8%  ▄·▄▄·●▄█···▄ beats 3/7     very easy · avg 89%    8.6%  small run · several runs
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025</a>                            33.3%  ▁·▁▁▁▂●▆█▇▅▁ beats 20/133  medium · avg 38%       7.1%  sharp · at its level · small run
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>          28.5%  ●······█▄▄·█ beats 0/6     hard · avg 31%         4.3%  at its level
 <a href="https://arxiv.org/html/2604.19444v1">GSM8K</a>                                91.5%  ▃··▃··▃●·▃·█ beats 3/7     very easy · avg 93%    3.9%  sharp · noisy
@@ -57,7 +57,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>                   49.1%  ▄·····●·█▄▄▄ beats 2/7     medium · avg 52%     26%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (maker)</a>                 49.1%  ▄·····●·█▄▄▄ beats 2/7     medium · avg 52%     26%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   25.3%  ▁▁▁▁▁▂●▃▄▆█▃ beats 19/97   hard · avg 31%      4.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   50.4%  ▃▁▁▁▁▁▁●▂█▅▁ beats 69/276  medium · avg 72%    1.8%  at its level · noisy
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   34.0%  ▂···●▂·▃▂▃██ beats 1/17    medium · avg 53%    1.7%  at its level
@@ -74,7 +74,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-7b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">open-thoughts/OpenThinker2-7B model card</a>        5   26% ▇▇▇
-<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (lab)</a>        4   15% ▇▇
+<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (sub…</a>        4   15% ▇▇
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>              2   13% ▇▇
 <a name="card-microsoft-phi-4-mini-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">microsoft/Phi-4-mini-reasoning model ca…</a>        3    9% ▇
 <a name="report-2503.01743v2"></a><a href="https://arxiv.org/html/2503.01743v2">Microsoft</a>                                       3    9% ▇
@@ -175,7 +175,7 @@ Other versions: Q8_0 (~9.64 GB) `ollama run deepseek-r1:7b-qwen-distill-q8_0`
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Qwen-7B-8bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
 
 ## Published speed measurements
 

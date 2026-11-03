@@ -67,6 +67,6 @@ weighted average                                   = 29.9
 
 Other versions: Q8_0 (SD.CPP --TYPE) (~2.1 GB) `sd-cli -m models/dreamlike-photoreal-2.0.safetensors --type q8_0 -p "a lovely cat"`
 
-Official weights and documentation: [huggingface.co/dreamlike-art](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0)
+Model repository and documentation: [huggingface.co/dreamlike-art](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0)
 
 [interactive version](https://whatmodel.sh/model/dreamlike-photoreal-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

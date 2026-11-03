@@ -53,6 +53,6 @@ weighted average                        = 47.1
    uv run --with 'transformers @ git+https://github.com/nyrahealth/transformers.git@crisper_whisper' --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='nyrahealth/CrisperWhisper', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/nyralabs](https://huggingface.co/nyralabs/CrisperWhisper)
+Model repository and documentation: [huggingface.co/nyralabs](https://huggingface.co/nyralabs/CrisperWhisper)
 
 [interactive version](https://whatmodel.sh/model/crisperwhisper) · [JSON](https://whatmodel.sh/api?format=json&all=1)

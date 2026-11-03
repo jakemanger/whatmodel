@@ -53,6 +53,6 @@ weighted average                                   = 50.8
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/Llama-3-8B-ProLong-512k-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-8B-ProLong-512k-Instruct)
+Model repository and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-8B-ProLong-512k-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-8b-prolong-512k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

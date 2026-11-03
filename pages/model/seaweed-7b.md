@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-04 · 7B params · proprietary
 
-**score 50.3** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.3** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 

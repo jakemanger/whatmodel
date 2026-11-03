@@ -23,8 +23,8 @@ math    ▁●▃▅█▆▄█▄▂▁▁   #418 of 431*    5.5%      1
 <details><summary>coding · #2 of 6 · 5.1% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    7.7%  ▄···▄·▄·●··▄ beats 4/5    easy · avg 79%    5.1%  sharp · too hard for it
+test               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (maker)</a>    7.7%  ▄···▄·▄·●··▄ beats 4/5    easy · avg 79%    5.1%  sharp · too hard for it
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">HellaSwag</a>                            62.3%  ▃···▁●▅█▇▃▁▁ beats 5/26    easy · avg 81%          7.8%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                                 72.7%  ▁·▁··▁●▃█▅█▂ beats 3/26    easy · avg 87%          5.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                                62.8%  ▂▃▂●▆▂▅▆█▂▂▂ beats 4/26    easy · avg 88%          5.5%  at its level · several runs
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           69.0%  ▃··█▅▃▃●·▃▃▃ beats 8/12    very easy · avg 95%     4.1%  at its level · several runs
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         69.0%  ▃··█▅▃▃●·▃▃▃ beats 8/12    very easy · avg 95%     4.1%  at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-7b1/results_2023-12-23%2002%3A01%3A26.108634.json">TriviaQA</a>                             26.3%  ▁··▁█▃▃●▄▅▄█ beats 12/28   medium · avg 45%        3.8%  too hard for it · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                                 90.1%  ▁·▁·▁·▃●▃█▄▁ beats 7/26    very easy · avg 97%     2.9%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                           25.2%  ●·▁▁▃·▁▃▅▇▃▄ beats 2/26    easy · avg 77%          2.9%  several runs
@@ -166,6 +166,6 @@ Other versions: Q8_0 (~8.6 GB) `ollama run hf.co/mradermacher/bloom-7b1-GGUF:Q8_
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-7b1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-7b1)
+Model repository and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-7b1)
 
 [interactive version](https://whatmodel.sh/model/bloom-7b1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

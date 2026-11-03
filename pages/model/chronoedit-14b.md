@@ -53,6 +53,6 @@ weighted average                                   = 43.2
    git clone https://github.com/nv-tlabs/ChronoEdit && cd ChronoEdit && conda env create -f environment.yml -n chronoedit_mini && conda activate chronoedit_mini && pip install torch==2.7.1 torchvision==0.22.1 && pip install -r requirements_minimal.txt && hf download nvidia/ChronoEdit-14B-Diffusers --local-dir checkpoints/ChronoEdit-14B-Diffusers && PYTHONPATH=$(pwd) python scripts/run_inference_diffusers.py --input assets/images/input_2.png --offload_model --prompt "Add a sunglasses to the cat's face" --output output.mp4 --model-path ./checkpoints/ChronoEdit-14B-Diffusers
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers)
 
 [interactive version](https://whatmodel.sh/model/chronoedit-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

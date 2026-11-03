@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-voicecraft-report-bysa"></a><a href="https://arxiv.org/html/2403.16973v3">VoiceCraft: Zero-Shot Speech Editing an…</a>        3   41% ▇▇▇▇▇
-<a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation (lab)</a>                         2   32% ▇▇▇▇
+<a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation (submitted / maker-re…</a>        2   32% ▇▇▇▇
 <a name="speech-ditto-tts-report-ccby"></a><a href="https://arxiv.org/html/2406.11427v2">DiTTo-TTS: Diffusion Transformers for S…</a>        2   24% ▇▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 17.9
@@ -67,6 +67,6 @@ weighted average                                   = 17.9
    uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --text "This is an example!" --model_name tts_models/multilingual/multi-dataset/your_tts --speaker_wav target_speaker_wav.wav --language_idx "en" --out_path speech.wav --device cpu
    ```
 
-Official weights and documentation: [github.com/Edresson](https://github.com/Edresson/YourTTS)
+Model repository and documentation: [github.com/Edresson](https://github.com/Edresson/YourTTS)
 
 [interactive version](https://whatmodel.sh/model/yourtts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

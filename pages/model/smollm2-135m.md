@@ -121,6 +121,6 @@ Other versions: Q8_0 (~0.1 GB) `lms get https://huggingface.co/lmstudio-communit
 
 Other versions: 8bit (~0.1 GB, Mac only) `mlx_lm.chat --model HuggingFaceTB/SmolLM2-135M-Instruct-Q8-mlx`
 
-Official weights and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
+Model repository and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
 
 [interactive version](https://whatmodel.sh/model/smollm2-135m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

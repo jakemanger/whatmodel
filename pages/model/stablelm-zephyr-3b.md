@@ -96,6 +96,6 @@ Other versions: Q8_0 (~3 GB) `lms get https://huggingface.co/TheBloke/stablelm-z
    ollama run stablelm-zephyr:3b
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-zephyr-3b)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-zephyr-3b)
 
 [interactive version](https://whatmodel.sh/model/stablelm-zephyr-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

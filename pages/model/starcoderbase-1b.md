@@ -71,6 +71,6 @@ Other versions: Q4_0 (~0.726 GB) `ollama run starcoder:1b`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-1b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-1b)
+Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-1b)
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -4,15 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · [stt](stt.md) · **decision**
 
-updated 2026-10-31 02:55 UTC · 322 models · scores combine 80 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/decision)
-
-<details><summary>Extra: filter models and choose a score scale</summary>
-
-[All sets](https://whatmodel.sh/decision) · [Decision Index 0.4.1: ACOS (per-review F1) · 321 models](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041) · [JevBench mini 0.1.0 · unchanged-answer accuracy · 21 models](https://whatmodel.sh/decision?set=jevbench-mini-010-accuracy)
-
-Filtering keeps overall scores. On the site, choose **within selected set** to use only that set’s evaluations. Models without a shared score scale are marked **not yet calibrated**.
-
-</details>
+updated 2026-11-03 02:37 UTC · 357 models · scores combine 238 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/decision)
 
 Run `curl "whatmodel.sh/decision?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/decision` for this list in your terminal.
 
@@ -29,11 +21,11 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
 
 ```text
   score vs API price
-    70 ┤ · · · ◆ Jev 1.13· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │       │      ·                              ·                             ·
-    65 ┤ · · · │ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-    60 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ ·
-       │  ●─Clef-flash                                                ∘
+       │       ◆ Jev 1.13
+    65 ┤ · · · ◇ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ ·
+       │       │
+    60 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · ·∘· · · · · · · · · · · ·
+       │  ●─Clef-flash
        └──────────────┬──────────────────────────────┬─────────────────────────────┬──────────
                     $0.05                          $0.1                          $0.2
 ```
@@ -44,23 +36,23 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
   score vs API price (USD per million input tokens, log)
   ● open weights  ◆ API only  ─┘ best for the price
        │
-    70 ┤ · · · ◆ Jev 1.13· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │       │
-       │       │      ·                              ·                             ·
-       │       │
-       │       │      ·                              ·                             ·
+       │       ◆ Jev 1.13                            ·                             ·
        │       │
     65 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+       │       ◇
+       │       │      ·                              ·                             ·
+       │       │                                                                           ∘
+    63 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
        │       │
        │       │      ·                              ·                             ·
        │       │
        │       │      ·                              ·                             ·
-       │       │
-    60 ┤ · · · │ · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ ·
-       │       │
+    60 ┤ · · · │ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
        │       │      ·                              ·                             ·
-       │  ●─Clef-flash                                                ∘
-       │              ·                              ·                             ·
+       │       │                                                      ∘
+       │       │      ·                              ·                             ·
+       │  ●─Clef-flash
+    58 ┤ · · · · · · ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
        └──────────────┬──────────────────────────────┬─────────────────────────────┬──────────
                     $0.05                          $0.1                          $0.2
 ```
@@ -69,353 +61,388 @@ curl.exe "whatmodel.sh/decision?ram=$((gcim Win32_ComputerSystem).TotalPhysicalM
   score vs memory to run it (GB, log)
   ─┘ best for the memory
        │
-       │              ·                     ·              Jebadiah 27B v2.1 (T1e) ● Clef
-    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · ·
-       │              ·                     ·      ●─Clef-flash────────────────────┘       ∘
-       │                                           │
-       │              ·                     ·      │                     ·
-       │                                           ∘
-    50 ┤ · · · · · · ··· · · · · · · · · · ··· · · │ · · · · · · · · · · · · · · · · · · · · ·
-       │                                           │
-       │              ·                     ·      │                     ·
-       │                                           │
-       │              ·                     ·      │                     ·
-    40 ┤ · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · · · · · · · · · · · · · ·
-       │              ·                     ·      │                     ·
-       │                                           │
-       │              ·                     ·      │                     ·
-       │  ●─Strands Decider 2B (Hobso…─────────────┘
-       │              ·                     ·                            ·
-       └──────────────┬─────────────────────┬────────────────────────────┬────────────────────
-                    10GB                  20GB                         50GB
+       │                                                   ·  Jebadiah 27B v2.1 (T1e) ●  ·
+       │                                     ●─Perplexity Decider Flash …────────────●┘Clef
+    60 ┤ · · · · · · · · · · · · · · · · · · │ ∘ · · · ∘ ∘ · · · · · · · ··· · · · · · · · ∘ ·
+       │                                     │         ∘    ∘   ∘
+       │       Jebadiah 9B v2.1 (Ollaya … ●──┘             ∘              ·        ·     ·
+       │                          ●───────┘    ∘∘          ∘
+       │                          │     ∘      ∘           ·              ·        ·     ·
+       │           ●─GLiClass v4 edge (0.4B)
+       │           │          ∘   ∘                        ·              ·        ·     ·
+    40 ┤ · · · · · │ · · · · · · · · · · · · · ∘ · · · · · · · · · · · · · · · · · · · · · · ·
+       │           │                 ∘                     ·              ·        ·     ·
+       │           ∘
+       │           ∘     ∘    ∘   ∘                        ·              ·        ·     ·
+       │           │
+       │  ●─laya (DecisionBench 1c5ed…                     ·              ·        ·     ·
+       │                                             ∘
+    20 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ··· · · · · · · · · ·
+       └───────────────────────────────────────────────────┬──────────────┬────────┬─────┬────
+                                                         20GB           40GB     60GB  80GB
 ```
 
 </details>
 
 <pre>
-  #  model                                     score  where                  RAM  get it
-  1  <a href="model/decisionbench-hanno-labs-bosun-v3-1-1-7b-2ef2d972.md">bosun-v3.1-1.7b (Decision…</a>                77±1†  comparison only
-  2  <a href="model/decisionbench-hanno-labs-bosun-v3-1-0-6b-aaa9dd06.md">bosun-v3.1-0.6b (Decision…</a>                75±1†  comparison only
-  3  <a href="model/decisionbench-kshetrajna12-reflex-27b-1d4bf0f2.md">reflex-27b (DecisionBench…</a>                74±1†  comparison only
-  4  <a href="model/decision-mammoth-1.md">baselabs mammoth-1 (27B)</a>                  74±2†  comparison only
-  5  <a href="model/decisionbench-mohit67890-imajev-4b-712891d1.md">imajev-4b (DecisionBench …</a>                73±1†  comparison only
-  6  <a href="model/decisionbench-zhengxuyu-litjev-1d4bf0f2.md">litjev (DecisionBench 1d4…</a>                73±1†  comparison only
-  7  <a href="model/decisionbench-z-ai-glm-5-3-flash-openrout.md">glm-5.3-flash (DecisionBe…</a>                73±1†  comparison only
-  8  <a href="model/decisionbench-kshetrajna12-reflex-qwen3-5-4b-lora-9df1cbbb.md">reflex-qwen3.5-4b-lora (D…</a>                73±1†  comparison only
-  9  <a href="model/decisionbench-mohit67890-imajev-4b-c9e5f132.md">imajev-4b (DecisionBench …</a>                73±1†  comparison only
- 10  <a href="model/decisionbench-mapika-decider-35b-a3b-d9783c58.md">decider-35b-a3b (Decision…</a>                72±1†  comparison only
- 11  <a href="model/decisionbench-ekzhang-openjev-sglang-1355db6a.md">openjev-sglang (DecisionB…</a>                72±1†  comparison only
- 12  <a href="model/decision-jeffan-31b-1710.md">Jeffan-31b-1710</a>                           72±2†  comparison only
- 13  <a href="model/decisionbench-eldanring-winnow-12b-b6ac22b0.md">Winnow-12B (DecisionBench…</a>                72±1†  comparison only
- 14  <a href="model/decisionbench-juspay-xor-679decd4.md">xor (DecisionBench 679dec…</a>                72±1†  comparison only
- 15  <a href="model/decisionbench-openai-gpt-5-6-luna-openrout.md">gpt-5.6-luna (DecisionBen…</a>                72±1†  comparison only
- 16  <a href="model/decisionbench-featherless-ai-simplejev-qwen3-8-27b-1d4bf0f2.md">simplejev-qwen3.8-27b (De…</a>                72±1†  comparison only
- 17  <a href="model/decisionbench-deepseek-deepseek-v4-1-flash-openrout.md">deepseek-v4.1-flash (Deci…</a>                71±1†  comparison only
- 18  <a href="model/decisionbench-featherless-ai-simplejev-qwen3-6-35b-a3b-995ad96e.md">simplejev-qwen3.6-35b-a3b…</a>                71±1†  comparison only
- 19  <a href="model/decisionbench-octalab-inc-jqv-9216db57.md">jqv (DecisionBench 9216db…</a>                71±1†  comparison only
- 20  <a href="model/decisionbench-razorback16-openjev-ec4ff3df.md">openjev (DecisionBench ec…</a>                70±1†  comparison only
- 21  <a href="model/jev-1-13.md">Jev 1.13</a>                                  70±1†  api $0.042/M inpu…          <a href="https://docs.typesafe.ai/models">typesafe.ai ↗</a>
- 22  <a href="model/decisionbench-zefancai-open-jev-9b-47e96688.md">Open-Jev-9B (DecisionBenc…</a>                70±1†  comparison only
- 23  <a href="model/decisionbench-davipar-djev-dev-f7f5b7f5.md">djev-dev (DecisionBench f…</a>                70±1†  comparison only
- 24  <a href="model/decisionbench-ikermoel-open-alternative-jev-4a85df18.md">open-alternative-jev (Dec…</a>                70±1†  comparison only
- 25  <a href="model/decision-sieve-31b-v3.md">Sieve 31B v3</a>                              70±2†  comparison only
- 26  <a href="model/decisionbench-jaredpalmer-kev-4b-485ace87.md">kev-4b (DecisionBench 485…</a>                69±1†  comparison only
- 27  <a href="model/decision-glide-v1-2.md">Fastino GLiDE 1.2</a>                         69±2†  comparison only
- 28  <a href="model/decisionbench-togethercomputer-tev1-4b-experimental-0b7becf0.md">Tev1-4B-experimental (Dec…</a>                69±1†  comparison only
- 29  <a href="model/decisionbench-jaredpalmer-kev-8b-c80773da.md">kev-8b (DecisionBench c80…</a>                69±1†  comparison only
- 30  <a href="model/decision-knowline-31b-gen1.md">KnowLine 31B Gen1</a>                         69±2†  comparison only
- 31  <a href="model/decision-ainvest-decision-27b-v1-0.md">Ainvest-Decision-27B v1.0</a>                 69±2†  comparison only
- 32  <a href="model/decision-vllm-sr-d3-ultra.md">vLLM-SR d3-ultra (Decisio…</a>                69±2†  comparison only
- 33  <a href="model/decision-startlux-decision-v1-1-27b-instant.md">StartLux-Decision v1.1 27B</a>                69±2†  comparison only
- 34  <a href="model/decisionbench-mapika-decider-2b-fa996cea.md">decider-2b (DecisionBench…</a>                68±1†  comparison only
- 35  <a href="model/decisionbench-bespokelabs-bespoke-nimble-9b-594dfdcf.md">Bespoke-Nimble-9B (Decisi…</a>                68±1†  comparison only
- 36  <a href="model/decisionbench-theoleecj-semif-1f2dea3e.md">SemIf (DecisionBench 1f2d…</a>                68±1†  comparison only
- 37  <a href="model/decision-vllm-sr-d3-turbo-v11.md">vLLM-SR d3-turbo v1.1 (27…</a>                68±2†  comparison only
- 38  <a href="model/decisionbench-cua-ai-cua-s1-4b-0-2-16818868.md">cua-s1-4b-0.2 (DecisionBe…</a>                68±1†  comparison only
- 39  <a href="model/decision-elephant-1-baselabs.md">baselabs elephant-1 (9B)</a>                  67±2†  comparison only
- 40  <a href="model/decision-wemm-jev-27b.md">WeMM-JEV-27B</a>                              67±1†  comparison only
- 41  <a href="model/decision-knowline-35b-a3b-gen1-5.md">KnowLine 35B-A3B Gen1.5</a>                   67±2†  comparison only
- 42  <a href="model/decisionbench-final-bench-ztc-judge-9b-05d154a5.md">ZTC-Judge-9B (DecisionBen…</a>                67±1†  comparison only
- 43  <a href="model/decisionbench-mmastrac-djev-spark-1444f3e9.md">djev-spark (DecisionBench…</a>                66±1†  comparison only
- 44  <a href="model/decision-h2o-lightning-31b-v1-1.md">H2O Lightning 31B v1.1</a>                    66±2†  comparison only
- 45  <a href="model/decision-drex-max-v1.md">Nace.AI Drex Max v1 (27B)</a>                 66±1†  comparison only
- 46  <a href="model/decision-nimble-v4-max.md">Bespoke Nimble v4 Max (27…</a>                66±2†  comparison only
- 47  <a href="model/decision-vera-large.md">vera-large</a>                                66±2†  comparison only
- 48  <a href="model/decision-onejev1-6-27b.md">OneJev1.6-27B</a>                             66±2†  comparison only
- 49  <a href="model/decision-pplx-decider-v1-2.md">Perplexity Decider v1.2 (…</a>                65±1†  comparison only
- 50  <a href="model/decision-autotrust-jev-27b-v11.md">AutoTrust-JEV-27B v1.1</a>                    65±1†  comparison only
- 51  <a href="model/decision-oak-1-1.md">MISA AI 2.0 Decision Plus…</a>                65±2†  comparison only
- 52  <a href="model/decision-knowline-26b-a4b-gen2-5.md">KnowLine 26B-A4B Gen2.5</a>                   65±2†  comparison only
- 53  <a href="model/decision-turion-jev-31b.md">Turion Jev 31B</a>                            65±2†  comparison only
- 54  <a href="model/decisionbench-zeroentropy-zerank-2-reranker-5eae30d5.md">zerank-2-reranker (Decisi…</a>                65±1†  comparison only
- 55  <a href="model/decision-startlux-decision-v1-1-9b-instant.md">StartLux-Decision v1.1 9B</a>                 65±2†  comparison only
- 56  <a href="model/decisionbench-zefancai-open-jev-2b-0c7aa498.md">Open-Jev-2B (DecisionBenc…</a>                65±1†  comparison only
- 57  <a href="model/decision-vllm-sr-d3-v310.md">vLLM-SR d3 (27B)</a>                          65±1†  comparison only
- 58  <a href="model/decision-ajev-lm6q.md">AJev lm6q (Gemma 4 31B)</a>                   64±2†  comparison only
- 59  <a href="model/decision-anyjev-tacitus-31b.md">AnyJev Tacitus 31B</a>                        64±2†  comparison only
- 60  <a href="model/decision-matilda-decision-v1.md">Matilda Decision v1</a>                       64±2†  comparison only
- 61  <a href="model/decision-oneshot-27b.md">OneShot 27B</a>                               64±2†  comparison only
- 62  <a href="model/decision-amos-1-large.md">Amos 1 Large (27B)</a>                        64±1†  comparison only
- 63  <a href="model/decision-visionjev-1-0-0.md">VisionJEV 1.0.0 (27B)</a>                     64±1†  comparison only
- 64  <a href="model/decision-mogan-decision-31b-it.md">mogan-decision-31B-it</a>                     64±2†  comparison only
- 65  <a href="model/decision-rbdash-decision-v0-2.md">RBDash-Decision v0.2</a>                      64±4†  comparison only
- 66  <a href="model/decision-h2o-lightning-31b.md">H2O Lightning 31B</a>                         63±4†  comparison only
- 67  <a href="model/decision-sieve-27b-v2.md">Sieve 27B v2</a>                              63±2†  comparison only
- 68  <a href="model/decision-cerno-27b.md">Cerno 27B</a>                                 63±2†  comparison only
- 69  <a href="model/decision-torchcast-decision-27b.md">Torchcast Decision 27B</a>                    63±2†  comparison only
- 70  <a href="model/decision-oenogarum.md">oenogarum (Gemma 4 31B)</a>                   63±2†  comparison only
- 71  <a href="model/decision-aleria-judge-1-1-1.md">Aleria Judge 1.1.1 (Gemma…</a>                62±2†  comparison only
- 72  <a href="model/decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326.md">Decision-1.0-Eos-0.8B (De…</a>                62±1†  comparison only
- 73  <a href="model/decision-standard-one-35b-sh-v1.md">Standard One 35B SH (v1)</a>                  62±2†  comparison only
- 74  <a href="model/decision-decider-31b.md">Decider 31B (NVFP4)</a>                       62±2†  comparison only
- 75  <a href="model/decision-lychee-27b.md">Lychee-27B</a>                                62±2†  comparison only
- 76  <a href="model/decision-darwin-27b-ztc.md">Darwin-27B-ZTC</a>                            62±2†  comparison only
- 77  <a href="model/decision-flexdm-gemma-4-31b.md">FlexDM · Gemma-4-31B (dec…</a>                62±1†  comparison only
- 78  <a href="model/decision-rsi-jev-v6-1-vl-27b-auto.md">RSI-Jev v6.1 VL 27B (effo…</a>                62±1†  comparison only
- 79  <a href="model/decision-knowline-9b-gen1.md">KnowLine 9B Gen1</a>                          62±1†  comparison only
- 80  <a href="model/decision-startlux-decision-v1-1-4b-instant.md">StartLux-Decision v1.1 4B</a>                 62±1†  comparison only
- 81  <a href="model/decision-herbert-v0-5.md">Herbert v0.5</a>                              62±4†  comparison only
- 82  <a href="model/decision-allec-oavg.md">allec-oavg (Gemma 4 31B)</a>                  62±1†  comparison only
- 83  <a href="model/decision-onejev1-5-27b.md">OneJev1.5-27B</a>                             61±4†  comparison only
- 84  <a href="model/decision-span-02.md">span-02 (Gemma 4 26B-A4B)</a>                 61±1†  comparison only
- 85  <a href="model/jebadiah-27b-v2-1-t1e.md">Jebadiah 27B v2.1 (T1e)</a>                   61±1†  local                ~69GB  <a href="model/jebadiah-27b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
- 86  <a href="model/decision-jeffan-4b-2010.md">Jeffan-4B-2010</a>                            61±1†  comparison only
- 87  <a href="model/decision-quyet-1-0-large.md">Quyet-1.0-Large</a>                           61±1†  comparison only
- 88  <a href="model/decision-knowline-4b-gen5-5.md">KnowLine 4B Gen5.5</a>                        61±1†  comparison only
- 89  <a href="model/clef.md">Clef</a>                                      61±1†  api $0.24/M input…   ~68GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef/">cloudflare.com ↗</a>
- 90  <a href="model/decision-aleria-judge-1-1-0.md">Aleria Judge 1.1.0 (Gemma…</a>                60±4†  comparison only
- 91  <a href="model/decision-onejev1-6-9b.md">OneJev1.6-9B</a>                              60±1†  comparison only
- 92  <a href="model/decision-jev-brain-gemma-4-31b.md">jev-brain · Gemma-4-31B (…</a>                60±1†  comparison only
- 93  <a href="model/decisionbench-qwen-qwen3-reranker-4b-22e68366.md">Qwen3-Reranker-4B (Decisi…</a>                60±1†  comparison only
- 94  <a href="model/decision-drex-v2-0.md">Nace.AI Drex v2.0 (35B-A3…</a>                60±1†  comparison only
- 95  <a href="model/decision-senova-4b-v2.md">Senova-4B v2</a>                              60±1†  comparison only
- 96  <a href="model/decision-knowline-35b-a3b-gen1.md">KnowLine 35B-A3B Gen1</a>                     60±4†  comparison only
- 97  <a href="model/decision-jev-vision-27b-r2.md">jev-vision-27b</a>                            60±4†  comparison only
- 98  <a href="model/decision-anyjev-l0-gemma-4-31b.md">AnyJev L0 · Gemma-4-31B (…</a>                60±1†  comparison only
- 99  <a href="model/decision-jev-27b-vl.md">JEV-27B-VL</a>                                60±4†  comparison only
-100  <a href="model/decision-sieve-vision-27b.md">Sieve-Vision-27B</a>                          60±4†  comparison only
-101  <a href="model/decision-bobcat-1-3.md">Bobcat 1.3 (31B)</a>                          59±1†  comparison only
-102  <a href="model/decision-linne-fern-1-0.md">linne-fern 1.0 (27B)</a>                      59±1†  comparison only
-103  <a href="model/decision-xor-26b-a4b-v1-2.md">Xor 26B-A4B v1.2</a>                          59±1†  comparison only
-104  <a href="model/decision-jev-35b.md">JEV-35B</a>                                   59±1†  comparison only
-105  <a href="model/decision-synack-decide-26b-a4b-v7.md">SynACK Decide 26B-A4B v7</a>                  59±1†  comparison only
-106  <a href="model/decision-decisio-0-6-0-gemma-4-31b.md">decisio 0.6.0 (Gemma 4 31…</a>                58±1†  comparison only
-107  <a href="model/decision-deck31b.md">deck31b (Gemma 4 31B) (de…</a>                58±1†  comparison only
-108  <a href="model/decision-tern-35b-a3b.md">Tern-35B-A3B</a>                              58±1†  comparison only
-109  <a href="model/decision-decider-chat-gemma4-31b.md">Decider chat · Gemma-4-31…</a>                58±1†  comparison only
-110  <a href="model/decision-kev-27b.md">Kev 27B</a>                                   58±1†  comparison only
-111  <a href="model/decision-shisa-de-2-1-repeat.md">Shisa DE-2.1 (repeat)</a>                     58±1†  comparison only
-112  <a href="model/decision-wald-26b-a4b.md">Wald-26B-A4B</a>                              58±1†  comparison only
-113  <a href="model/clef-flash.md">Clef-flash</a>                                58±1†  api $0.038/M inpu…   ~25GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-flash/">cloudflare.com ↗</a>
-114  <a href="model/decision-garum.md">garum (Gemma 4 31B)</a>                       58±1†  comparison only
-115  <a href="model/clef-omni.md">Clef-omni</a>                                 58±1†  api $0.15/M input…   ~87GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-omni/">cloudflare.com ↗</a>
-116  <a href="model/decision-blink-v0-3-26b-a4b-nvfp4.md">Blink v0.3 26B-A4B (NVFP4)</a>                58±1†  comparison only
-117  <a href="model/decision-vllm-sr-d3-flash.md">vLLM-SR d3-flash (9B)</a>                     58±1†  comparison only
-118  <a href="model/decision-jev-gemma4-26b-a4b.md">GEV-26B-Decide</a>                            58±1†  comparison only
-119  <a href="model/decisionbench-jaredpalmer-kev-0-6b-dece6dba.md">kev-0.6b (DecisionBench d…</a>                58±1†  comparison only
-120  <a href="model/decision-decision-2-0-vega-27b.md">vLLM-SR Decision 2.0 Vega…</a>                57±1†  comparison only
-121  <a href="model/decision-rune-26b-a4b-v3.md">Surogate Rune 26B-A4B v3</a>                  57±1†  comparison only
-122  <a href="model/decisionbench-molemo-lab-mojev-0c8695b6.md">mojev (DecisionBench 0c86…</a>                57±1†  comparison only
-123  <a href="model/decision-lumma-fev-27b.md">Lumma-fev-27B</a>                             57±1†  comparison only
-124  <a href="model/decision-onejev1-5-9b.md">OneJev1.5-9B</a>                              57±4†  comparison only
-125  <a href="model/decision-qwen-decision-27b-noncausal.md">Qwen Decision 27B noncaus…</a>                57±1†  comparison only
-126  <a href="model/decision-verdin-4b-v1-1.md">Verdin-4B v1.1</a>                            57±1†  comparison only
-127  <a href="model/decision-pplx-decider-flash-v1-2.md">Perplexity Decider Flash …</a>                57±1†  comparison only
-128  <a href="model/decision-garas.md">garas (Gemma 4 31B)</a>                       57±1†  comparison only
-129  <a href="model/decision-reflex-27b-pmscr.md">reflex Qwen3.8-27B-FP8 (p…</a>                57±1†  comparison only
-130  <a href="model/decision-ajev-gemma26-lora1.md">AJev lora1 (Gemma 4 26B-A…</a>                57±1†  comparison only
-131  <a href="model/decision-cerno-9b-v11.md">Cerno 9B v1.1</a>                             56±1†  comparison only
-132  <a href="model/decisionbench-ishesatoshi-smalljev-semantic-v9-8e2bac7c.md">smalljev-semantic-v9 (Dec…</a>                56±1†  comparison only
-133  <a href="model/decision-onejev1-6-4b.md">OneJev1.6-4B</a>                              56±1†  comparison only
-134  <a href="model/decision-drex-v1-5.md">Nace.AI Drex v1.5</a>                         56±1†  comparison only
-135  <a href="model/decision-jade.md">JADE</a>                                      56±1†  comparison only
-136  <a href="model/decision-jev-27b.md">JEV-27B</a>                                   56±1†  comparison only
-137  <a href="model/decision-simple-jev-qwen3-8-27b.md">simple-jev · Qwen3.8-27B …</a>                56±1†  comparison only
-138  <a href="model/decision-eikos-27b-fp8.md">Eikos-27B-FP8 Qwen3.8-27B…</a>                55±1†  comparison only
-139  <a href="model/decision-nimble-v3.md">Bespoke Nimble 9B v3</a>                      55±1†  comparison only
-140  <a href="model/decision-decider-chat-qwen3-6-27b.md">Decider chat · Qwen3.6-27…</a>                55±1†  comparison only
-141  <a href="model/decision-xor-1-2.md">Xor 1.2</a>                                   55±1†  comparison only
-142  <a href="model/decision-seb-9b-v2.md">Seb-9B v2</a>                                 55±1†  comparison only
-143  <a href="model/decision-jev-d3-46k.md">jev-d3-46k</a>                                55±4†  comparison only
-144  <a href="model/decision-vllm-sr-d3-mini.md">vLLM-SR d3-mini (4B)</a>                      55±1†  comparison only
-145  <a href="model/decision-mica-v0-5-4b.md">Mica v0.5 4B</a>                              55±1†  comparison only
-146  <a href="model/decision-jpt-35b-a3b.md">JPT-35B-A3B</a>                               54±1†  comparison only
-147  <a href="model/decision-ajev-lora7.md">AJev lora7 (Gemma 4 12B)</a>                  54±1†  comparison only
-148  <a href="model/decision-cerno-4b-v11.md">Cerno 4B v1.1</a>                             54±1†  comparison only
-149  <a href="model/decision-sieve-9b-plus.md">Sieve 9B v2</a>                               54±1†  comparison only
-150  <a href="model/decision-trio-spark-di.md">Trio-Spark DI (9B)</a>                        53±1†  comparison only
-151  <a href="model/decision-amber-hybrid-4b.md">Amber Hybrid 4B (decision…</a>                53±1†  comparison only
-152  <a href="model/decisionbench-convaiinnovations-laya-typed-decisions-bc76315b.md">laya-typed-decisions (Dec…</a>                53±1†  comparison only
-153  <a href="model/decision-coco-decision-2-4-4b.md">CoCo-Decision-4B 2.4</a>                      53±1†  comparison only
-154  <a href="model/decision-xor-26b-a4b-v1-1.md">xor-26b-a4b-v1.1</a>                          53±4†  comparison only
-155  <a href="model/jebadiah-9b-v2-1-t1e.md">Jebadiah 9B v2.1 (T1e)</a>                    53±1†  local                ~25GB  <a href="model/jebadiah-9b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
-156  <a href="model/decision-matilda-jev-v1-5.md">matilda-jev-v1.5 (27B)</a>                    53±4†  comparison only
-157  <a href="model/decision-sieve-vision-4b.md">Sieve-Vision-4B</a>                           53±4†  comparison only
-158  <a href="model/decisionbench-deepanwadhwa-opendecision-a51e07b5.md">OpenDecision (DecisionBen…</a>                53±1†  comparison only
-159  <a href="model/decisionbench-fastino-gliner2-5-decide-0872ab14.md">GLiNER2.5-Decide (Decisio…</a>                52±1†  comparison only
-160  <a href="model/decision-jegue-0-1.md">Jegue 0.1 (9B)</a>                            52±1†  comparison only
-161  <a href="model/decision-amber-4b.md">Amber 4B</a>                                  52±1†  comparison only
-162  <a href="model/decision-decisio-0-4-0-qwen3-6-35b-a3b.md">decisio 0.4.0 (Qwen3.6-35…</a>                52±1†  comparison only
-163  <a href="model/decision-decider-35b-nvfp4.md">Decider 35B-A3B</a>                           52±1†  comparison only
-164  <a href="model/decision-standard-one-8b-sh-v4.md">Standard One 8B SH (v4)</a>                   52±1†  comparison only
-165  <a href="model/decision-startlux-decision-v1-1-2b-instant.md">StartLux-Decision v1.1 2B</a>                 52±1†  comparison only
-166  <a href="model/decisionbench-final-bench-ztc-judge-4b-b0bb1603.md">ZTC-Judge-4B (DecisionBen…</a>                52±1†  comparison only
-167  <a href="model/decision-muria.md">muria (Gemma 4 12B)</a>                       51±1†  comparison only
-168  <a href="model/decision-ezjev-4b-s2.md">ezjev 4B s2</a>                               51±1†  comparison only
-169  <a href="model/decision-winnow-12b-q8.md">Winnow-12B</a>                                51±1†  comparison only
-170  <a href="model/decision-jevk5-9b-v0-3-3.md">JevK5 9B v0.3.3</a>                           51±1†  comparison only
-171  <a href="model/decision-jevfire-uncapped.md">Jevfire Qwen3.8-27B (deci…</a>                51±1†  comparison only
-172  <a href="model/decision-joshua-diffusion-full.md">JoshuaSP diffgemma (decis…</a>                51±1†  comparison only
-173  <a href="model/decisionbench-com-kotobalabs-open-jev-deberta-v3-large-19bf9a64.md">open-jev-deberta-v3-large…</a>                51±1†  comparison only
-174  <a href="model/decisionbench-mixedbread-ai-mxbai-rerank-base-v2-3ea9d4df.md">mxbai-rerank-base-v2 (Dec…</a>                51±1†  comparison only
-175  <a href="model/decision-decisio-0-4-0-gemma-4-12b.md">decisio 0.4.0 (Gemma 4 12…</a>                51±1†  comparison only
-176  <a href="model/decision-sieve-4b.md">Sieve 4B</a>                                  51±1†  comparison only
-177  <a href="model/decision-joey-1.md">baselabs joey-1 (2B)</a>                      51±1†  comparison only
-178  <a href="model/decision-solomon-v11-bf16-encoding.md">Solomon v1.1</a>                              50±1†  comparison only
-179  <a href="model/decision-standard-one-3b-sh-v4.md">Standard One 3B SH (v4)</a>                   50±1†  comparison only
-180  <a href="model/decision-saif-4b.md">Saif 4B</a>                                   50±1†  comparison only
-181  <a href="model/decision-jpt-9b.md">JPT-9B Qwen3.5-9B LoRA</a>                    50±1†  comparison only
-182  <a href="model/decisionbench-fastino-gliner2-large-v1-f32ea6ef.md">gliner2-large-v1 (Decisio…</a>                50±1†  comparison only
-183  <a href="model/decisionbench-heman10x-rlcd-modernbert-151m-8af2496e.md">rlcd-modernbert-151m (Dec…</a>                50±1†  comparison only
-184  <a href="model/decision-decision-2-0-lux-9b.md">vLLM-SR Decision 2.0 Lux …</a>                50±1†  comparison only
-185  <a href="model/decision-rsi-jev-v6-1-vl-4b.md">RSI-Jev v6.1 VL 4B</a>                        50±1†  comparison only
-186  <a href="model/decision-purplemist-flash-1-0.md">PurpleMIST-Flash-1.0</a>                      50±1†  comparison only
-187  <a href="model/decision-qev-2b.md">QEV-2B</a>                                    49±4†  comparison only
-188  <a href="model/decisionbench-convaiinnovations-laya-1c5edc17.md">laya (DecisionBench 1c5ed…</a>                49±1†  comparison only
-189  <a href="model/decision-jiwo-4b-v2.md">jiwo 4B v2</a>                                49±1†  comparison only
-190  <a href="model/decisionbench-jaredpalmer-kev-0-5b-9ce2fd39.md">kev-0.5b (DecisionBench 9…</a>                49±1†  comparison only
-191  <a href="model/decision-hopper-12b-trained.md">Hopper 12B (trained)</a>                      49±1†  comparison only
-192  <a href="model/decision-aplomb-1.md">Aplomb 1</a>                                  48±1†  comparison only
-193  <a href="model/decision-jev-9b.md">JEV-9B</a>                                    48±1†  comparison only
-194  <a href="model/decision-shisa-de-2-repeat.md">Shisa DE-2 (repeat)</a>                       48±4†  comparison only
-195  <a href="model/decisionbench-fastino-gliner2-5-small-v1-7e6f537f.md">gliner2.5-small-v1 (Decis…</a>                48±1†  comparison only
-196  <a href="model/decision-d1-3b.md">LiquidAI d1-3B</a>                            47±1†  comparison only
-197  <a href="model/decision-jev-omni.md">Jev-Omni</a>                                  47±1†  comparison only
-198  <a href="model/decision-decision-2-0-nox-4b.md">vLLM-SR Decision 2.0 Nox …</a>                47±1†  comparison only
-199  <a href="model/decision-jpt-4b.md">JPT-4B Qwen3.5-4B LoRA</a>                    47±1†  comparison only
-200  <a href="model/decision-nimble-v2.md">Bespoke Nimble 9B v2</a>                      47±1†  comparison only
-201  <a href="model/decision-decider-4b.md">Decider 4B</a>                                47±1†  comparison only
-202  <a href="model/decision-djev.md">djev diffgemma (decision …</a>                47±1†  comparison only
-203  <a href="model/decision-jevk5-v0-3.md">JevK5 v0.3</a>                                47±1†  comparison only
-204  <a href="model/decision-sieve-9b.md">Sieve 9B</a>                                  46±1†  comparison only
-205  <a href="model/decision-kev-9b-v2.md">Kev 9B v2</a>                                 46±1†  comparison only
-206  <a href="model/decisionbench-fastino-gliner2-5-base-v1-1a8bc24e.md">gliner2.5-base-v1 (Decisi…</a>                46±1†  comparison only
-207  <a href="model/decision-decision-4b-v1-6.md">FlyMy.AI Decision 4B v1.6</a>                 46±1†  comparison only
-208  <a href="model/decisionbench-fastino-gliner2-5-multi-v1-a221b77a.md">gliner2.5-multi-v1 (Decis…</a>                46±1†  comparison only
-209  <a href="model/decision-aurelis-2b.md">Aurelis-2B</a>                                46±1†  comparison only
-210  <a href="model/decision-hopper-g-1-2.md">Hopper (G) 1.2 Qwen3.5-4B…</a>                46±1†  comparison only
-211  <a href="model/decisionbench-c-tianyu-nanojev-4a19595e.md">NanoJev (DecisionBench 4a…</a>                46±1†  comparison only
-212  <a href="model/decision-nari-decision-4b-v3-2.md">Nari Decision 4B v3.2</a>                     46±1†  comparison only
-213  <a href="model/decision-vllm-pr57250.md">mmastrac diffgemma (decis…</a>                45±1†  comparison only
-214  <a href="model/decisionbench-baai-bge-reranker-v2-m3-953dc6f6.md">bge-reranker-v2-m3 (Decis…</a>                45±1†  comparison only
-215  <a href="model/decision-razorback-one-read-3e296f08.md">razorback16 diffgemma (de…</a>                45±1†  comparison only
-216  <a href="model/decision-lev.md">Interfaze lev Qwen3.5-4B …</a>                45±1†  comparison only
-217  <a href="model/decision-startlux-decision-v1-1-0-8b-instant.md">StartLux-Decision v1.1 0.…</a>                45±1†  comparison only
-218  <a href="model/decision-vllm-sr-d3-nano.md">vLLM-SR d3-nano (2B)</a>                      45±1†  comparison only
-219  <a href="model/decision-intern-decision-4b.md">InternLM Intern-Decision …</a>                44±1†  comparison only
-220  <a href="model/decision-valen-4b-r2.md">Valen-4B</a>                                  44±1†  comparison only
-221  <a href="model/decision-tev1-4b.md">Together Tev1 Qwen3.5-4B</a>                  44±1†  comparison only
-222  <a href="model/decisionbench-kalm-embedding-kalm-reranker-v1-small-r2-d1c8fdf9.md">KaLM-Reranker-V1-Small-R2…</a>                44±1†  comparison only
-223  <a href="model/decision-ryotide-qwen-v0-3-1.md">Ryotide Qwen v0.3.1 (deci…</a>                44±1†  comparison only
-224  <a href="model/decision-rsi-jev-v5-0-vl-3b.md">RSI-Jev v5.0 VL 3B</a>                        44±1†  comparison only
-225  <a href="model/decisionbench-kalm-embedding-kalm-reranker-v1-nano-r2-3902d645.md">KaLM-Reranker-V1-Nano-R2 …</a>                44±1†  comparison only
-226  <a href="model/decision-lev1-3-7b.md">Lev1 3.7B</a>                                 44±1†  comparison only
-227  <a href="model/decision-sieve-2b-v3.md">Sieve 2B v3</a>                               44±1†  comparison only
-228  <a href="model/decision-jev-style-2b-v4.md">Jev-Style 2B v4</a>                           43±1†  comparison only
-229  <a href="model/decision-kev-4b-r10.md">Kev 4B r10</a>                                43±1†  comparison only
-230  <a href="model/decision-saracura-ptbr-4b.md">Saracura PT-BR 4B</a>                         43±1†  comparison only
-231  <a href="model/decision-winnow-e4b-q8.md">Winnow-E4B</a>                                43±1†  comparison only
-232  <a href="model/decision-latentmesh-blitz-2b-v1.md">LatentMesh Blitz 2B v1</a>                    43±1†  comparison only
-233  <a href="model/decision-kas-4b.md">Kas 4B</a>                                    43±1†  comparison only
-234  <a href="model/decision-semif.md">SemIf Qwen3.5-4B Base (de…</a>                43±1†  comparison only
-235  <a href="model/decision-vera-core-2.md">vera-core-2</a>                               43±1†  comparison only
-236  <a href="model/decision-neohorse-jev-4b.md">TokenRhythm NeoHorse-Jev-…</a>                42±1†  comparison only
-237  <a href="model/decision-metask-jev-4b.md">Metask-Jev-4B</a>                             42±1†  comparison only
-238  <a href="model/decision-jobe.md">Jobe Qwen3.5-4B (decision…</a>                42±1†  comparison only
-239  <a href="model/decision-onejev1-6-0-8b.md">OneJev1.6-0.8B</a>                            42±1†  comparison only
-240  <a href="model/decision-jevstral-8b.md">Jevstral 8B</a>                               41±1†  comparison only
-241  <a href="model/decision-gliclass-v4-edge.md">GLiClass v4 edge (0.4B)</a>                   41±1†  comparison only
-242  <a href="model/decision-qev-0-8b.md">QEV-0.8B</a>                                  41±4†  comparison only
-243  <a href="model/decision-crystal-0-8b.md">crystal-0.8b</a>                              41±1†  comparison only
-244  <a href="model/decision-openvons.md">openvons Qwen3-4B (decisi…</a>                40±1†  comparison only
-245  <a href="model/decision-intelif-qwen3-4b.md">Intelif Qwen3-4B</a>                          40±1†  comparison only
-246  <a href="model/decision-onejev1-5-0-8b.md">OneJev1.5-0.8B</a>                            40±4†  comparison only
-247  <a href="model/decision-crivo-1b.md">Crivo-1B</a>                                  39±1†  comparison only
-248  <a href="model/decision-gevva-e4b.md">Gevva E4B</a>                                 38±1†  comparison only
-249  <a href="model/decision-mini-jev.md">mini-jev Qwen3-4B (decisi…</a>                38±1†  comparison only
-250  <a href="model/decision-cam1.md">Cam1</a>                                      38±1†  comparison only
-251  <a href="model/decision-vllm-sr-d3-lite.md">vLLM-SR d3-lite (0.8B)</a>                    38±1†  comparison only
-252  <a href="model/decision-vela3-fast.md">vLLM-SR vela3-fast (Vela …</a>                38±1†  comparison only
-253  <a href="model/decision-decider-2b-fp8-http.md">Decider 2B</a>                                38±1†  comparison only
-254  <a href="model/decision-pngwn-space-uncapped-full.md">open-jev (pngwn)</a>                          38±1†  comparison only
-255  <a href="model/decisionbench-altslate-certo-decision-model-7628c0da.md">certo-decision-model (Dec…</a>                38±1†  comparison only
-256  <a href="model/decisionbench-alibaba-nlp-gte-reranker-modernbert-base-f7481e60.md">gte-reranker-modernbert-b…</a>                38±1†  comparison only
-257  <a href="model/decision-this-that-1-2.md">FLock this-that 1.2</a>                       37±1†  comparison only
-258  <a href="model/decision-valen-2b-r2.md">Valen-2B</a>                                  36±1†  comparison only
-259  <a href="model/decision-saina-helm-2-v2.md">Saina Helm 2.0 v2</a>                         36±1†  comparison only
-260  <a href="model/decision-jdi-ptr14-0-8b.md">jdi-ptr14-0.8b</a>                            36±1†  comparison only
-261  <a href="model/decision-saina-helm-2-omni.md">Saina Helm 2 Omni (0.8B)</a>                  36±1†  comparison only
-262  <a href="model/decision-exaone-4-0-1-2b-jev-v0-3.md">EXAONE-4.0-1.2B-JEV v0.3</a>                  35±1†  comparison only
-263  <a href="model/decision-decision-2-0-sol-2b.md">vLLM-SR Decision 2.0 Sol …</a>                35±1†  comparison only
-264  <a href="model/decision-sieve-0-8b.md">Sieve 0.8B</a>                                35±1†  comparison only
-265  <a href="model/decision-gevva-e2b.md">Gevva E2B</a>                                 34±1†  comparison only
-266  <a href="model/decision-amber-0-4b.md">Amber 0.4B</a>                                34±1†  comparison only
-267  <a href="model/decision-jiwo-0-8b-v2-r2.md">jiwo 0.8B v2</a>                              34±1†  comparison only
-268  <a href="model/decision-sieve-2b.md">Sieve 2B</a>                                  34±1†  comparison only
-269  <a href="model/decision-crivo-400m.md">Crivo-400M</a>                                33±1†  comparison only
-270  <a href="model/decision-intern-decision-2b.md">InternLM Intern-Decision …</a>                33±1†  comparison only
-271  <a href="model/strands-decider-2b-hobson-v21.md">Strands Decider 2B (Hobso…</a>                33±1†  local               ~6.6GB  <a href="model/strands-decider-2b-hobson-v21.md#run-it-on-your-own-machine">how to run ›</a>
-272  <a href="model/decision-vela3-fast-vision-text.md">vLLM-SR vela3-fast-vision…</a>                31±1†  comparison only
-273  <a href="model/decision-wyat-1-800m.md">wyat-1-800m</a>                               31±1†  comparison only
-274  <a href="model/decision-tasksource-decider-nano-v5.md">tasksource Decider nano v…</a>                31±1†  comparison only
-275  <a href="model/decision-valen-0-8b-r2.md">Valen-0.8B</a>                                31±1†  comparison only
-276  <a href="model/decision-jev-ettin-150m.md">JEV Ettin 150M</a>                            30±1†  comparison only
-277  <a href="model/decision-dm-jepa-1-1.md">DM-JEPA 1.1</a>                               30±1†  comparison only
-278  <a href="model/decision-jpt-0-8b.md">JPT-0.8B Qwen3.5-0.8B LoRA</a>                30±1†  comparison only
-279  <a href="model/decision-sifr-0-8b-v3-1.md">Sifr 0.8B v3.1</a>                            30±1†  comparison only
-280  <a href="model/decision-vllm-sr-d3-edge.md">vLLM-SR d3-edge (0.6B)</a>                    29±1†  comparison only
-281  <a href="model/decision-mola-150m.md">Mola-150M</a>                                 29±1†  comparison only
-282  <a href="model/decision-jev-t5-342m-public-v2.md">JEV FLAN-T5 Large public …</a>                29±1†  comparison only
-283  <a href="model/decision-kodiak-v0-2-1b-accuracy.md">Kodiak v0.2 1B (accuracy)</a>                 29±1†  comparison only
-284  <a href="model/decision-bekko-v0-400m.md">Bekko System One v0 400M</a>                  29±1†  comparison only
-285  <a href="model/decision-crivo-150m-v2.md">Crivo-150M v2</a>                             28±1†  comparison only
-286  <a href="model/decision-vera-spark.md">vera-spark</a>                                28±1†  comparison only
-287  <a href="model/decision-tev1-0-8b.md">Together Tev1 Qwen3.5-0.8B</a>                28±1†  comparison only
-288  <a href="model/decision-kev-0-8b-r15.md">Kev 0.8B r15</a>                              27±1†  comparison only
-289  <a href="model/decision-decision-2-0-eos-0-8b.md">vLLM-SR Decision 2.0 Eos …</a>                27±1†  comparison only
-290  <a href="model/decision-decisiontune-1-0.md">DecisionTune 1.0</a>                          27±1†  comparison only
-291  <a href="model/decision-dinah-1.md">Dinah-1</a>                                   27±1†  comparison only
-292  <a href="model/decision-pick-150m-v5.md">PICK-150M v5</a>                              26±1†  comparison only
-293  <a href="model/decision-intern-decision-0-8b.md">InternLM Intern-Decision …</a>                26±1†  comparison only
-294  <a href="model/decision-crivo-68m.md">Crivo-68M</a>                                 26±1†  comparison only
-295  <a href="model/decision-bosun-v3-1-1-7b.md">Bosun v3.1 1.7B LoRA</a>                      26±1†  comparison only
-296  <a href="model/decision-decision-2-0-kai-0-6b.md">vLLM-SR Decision 2.0 Kai …</a>                25±1†  comparison only
-297  <a href="model/decision-mola-68m.md">Mola-68M</a>                                  25±1†  comparison only
-298  <a href="model/decision-jev-ettin-400m.md">JEV Ettin 400M</a>                            25±1†  comparison only
-299  <a href="model/decision-jev-style-0-8b-v3.md">Jev-Style 0.8B v3</a>                         25±1†  comparison only
-300  <a href="model/decision-d1-omni-600m.md">LiquidAI d1-omni-600M</a>                     25±1†  comparison only
-301  <a href="model/decision-lfm2600.md">LFM2.5-2.6B-RLCD</a>                          23±1†  comparison only
-302  <a href="model/decision-crivo-32m-v2.md">Crivo-32M v2</a>                              23±1†  comparison only
-303  <a href="model/decision-jevk5-lite.md">JevK5 Lite</a>                                22±1†  comparison only
-304  <a href="model/decision-von-1-3.md">Von 1.3</a>                                   21±1†  comparison only
-305  <a href="model/decision-bosun-v3-1-0-6b.md">Bosun v3.1 0.6B LoRA</a>                      21±1†  comparison only
-306  <a href="model/decision-crivo-17m.md">Crivo-17M</a>                                 20±1†  comparison only
-307  <a href="model/decision-lavoir.md">MoganAI Lavoir ModernBERT…</a>                20±1†  comparison only
-308  <a href="model/decision-bekko-v0-68m.md">Bekko System One v0 68M</a>                   20±1†  comparison only
-309  <a href="model/decision-gliner-decide.md">GLiNER2.5-Decide</a>                          20±1†  comparison only
-310  <a href="model/decision-prumo.md">Prumo (decision readout)</a>                  19±1†  comparison only
-311  <a href="model/decision-clm-v0-1-8b.md">CLM-v0.1-8B Qwen3-8B heads</a>                19±1†  comparison only
-312  <a href="model/decision-harsha.md">Qwen-2.5-1B-RLCD (decisio…</a>                18±1†  comparison only
-313  <a href="model/decision-laya-1e28ac20.md">Laya</a>                                      18±1†  comparison only
-314  <a href="model/decision-verdict-8af2496e.md">Verdict</a>                                   18±1†  comparison only
-315  <a href="model/decision-jeff-uncapped.md">jeff GLiFormer-large (dec…</a>                17±1†  comparison only
-316  <a href="model/decision-julia-1.md">Supersonic Labs Julia 1</a>                   16±1†  comparison only
-317  <a href="model/decision-bekko-v0-17m.md">Bekko System One v0 17M</a>                   16±1†  comparison only
-318  <a href="model/decision-akash-gemma.md">system-one-gemma</a>                          15±1†  comparison only
-319  <a href="model/decision-nirnaya-0-4b.md">Nirnaya 0.4B</a>                              13±1†  comparison only
-320  <a href="model/decision-lfm350-sdpa.md">LFM2.5-350M-RLCD</a>                          12±1†  comparison only
-321  <a href="model/decision-zev-latest.md">Zev (decision readout)</a>                    12±1†  comparison only
-  —  <a href="model/jev-1-14.md">Jev 1.14</a>                    no reviewed results  api $0.042/M inpu…          <a href="https://docs.typesafe.ai/models">typesafe.ai ↗</a>
+  #  model                       score  where                  RAM  get it
+  1  <a href="model/decision-jeffan-31b-1710.md">Jeffan-31b-1710</a>             76±2   model files                 <a href="https://huggingface.co/tattrongvu/Jeffan-31b-1710/tree/cebfa86c2bed2b5c83b12e44de4374b20c87fd79">huggingface.co ↗</a>
+  2  <a href="model/decision-mammoth-1.md">baselabs mammoth-1 (27B)</a>    75±1   model files                 <a href="https://huggingface.co/baselabs/mammoth-1/tree/9d1962f193e48a68cf0f3598dc7fb4462fd23ad9">huggingface.co ↗</a>
+  3  <a href="model/decision-sieve-31b-v3.md">Sieve 31B v3</a>                74±2   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-31B-v3/tree/8fcee858f7f20a50bfa3c8f984c22adb3cbb46a2">huggingface.co ↗</a>
+  4  <a href="model/decision-glide-v1-2.md">Fastino GLiDE 1.2</a>           73±1   model files                 <a href="https://huggingface.co/fastino/GLiDE/tree/a7e45896be7c96ba3354891da790c5ec99c30b6c">huggingface.co ↗</a>
+  5  <a href="model/decision-knowline-31b-gen1.md">KnowLine 31B Gen1</a>           73±2   model files                 <a href="https://huggingface.co/PelaAI/KnowLine-31B-Gen1/tree/8f052a8130e599b53e5324c34f0f5ff90696e1c6">huggingface.co ↗</a>
+  6  <a href="model/decision-ainvest-decision-27b-v1-0.md">Ainvest-Decision-27B v1.0</a>   73±2   model files                 <a href="https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0/tree/96599823ab01c9c06b61598ee38704d454bc3b71">huggingface.co ↗</a>
+  7  <a href="model/decision-startlux-decision-v1-1-27b-instant.md">StartLux-Decision v1.1 27B</a>  73±1   model files                 <a href="https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant/tree/32e7d35d74db615c4a059181efbf21c5421f3561">huggingface.co ↗</a>
+  8  <a href="model/decision-vllm-sr-d3-ultra.md">vLLM-SR d3-ultra (Decisio…</a>  72±1   model files                 <a href="https://huggingface.co/vllm-sr/d3-ultra/tree/37fee01926f3de396620e794201b074fb427ac2d">huggingface.co ↗</a>
+  9  <a href="model/decision-vllm-sr-d3-turbo-v11.md">vLLM-SR d3-turbo v1.1 (27…</a>  72±1   model files                 <a href="https://huggingface.co/vllm-sr/d3-turbo/tree/a0f3e9e59ebd1202fe1d4de1c4c0f9a986758cbb">huggingface.co ↗</a>
+ 10  <a href="model/decision-pplx-decider-v1-1-27b.md">Perplexity Decider v1.1 (…</a>  72±1   api price unknown           <a href="https://openrouter.ai/perplexity/pplx-decider-v1.1-27b">openrouter.ai ↗</a>
+ 11  <a href="model/decision-wemm-jev-27b.md">WeMM-JEV-27B</a>                71±1   model files                 <a href="https://huggingface.co/Rover00/WeMM-JEV/tree/a463f840c9259ff9139ab02181e01f20aca91b4b">huggingface.co ↗</a>
+ 12  <a href="model/decision-knowline-35b-a3b-gen1-5.md">KnowLine 35B-A3B Gen1.5</a>     71±2   model files                 <a href="https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1.5/tree/9adcf717361b2f7d2946d093f1e85efdf1e59010">huggingface.co ↗</a>
+ 13  <a href="model/decision-h2o-lightning-31b-v1-1.md">H2O Lightning 31B v1.1</a>      70±2   request access              <a href="https://huggingface.co/h2oai/h2o-lightning-31b/tree/f28212fc0d450226675b15f053cee67cda504108">huggingface.co ↗</a>
+ 14  <a href="model/decision-drex-max-v1.md">Nace.AI Drex Max v1 (27B)</a>   70±1   model files                 <a href="https://huggingface.co/nace-ai/drex-max-v1/tree/a67fa2808b5d91a4db62629beb14eba6d3f3e53c">huggingface.co ↗</a>
+ 15  <a href="model/decision-nimble-v4-max.md">Bespoke Nimble v4 Max (27…</a>  70±1   model files                 <a href="https://huggingface.co/bespokelabs/Nimble-v4-max/tree/655aa7051c2ab39660193ebb70c8926d3d2cb7aa">huggingface.co ↗</a>
+ 16  <a href="model/decision-turion-jev-31b.md">Turion Jev 31B</a>              70±1   model files                 <a href="https://huggingface.co/turion-ai/turion-jev-31b/tree/866c0fc6e040cba23fcc72113a80e5c99d5ebab1">huggingface.co ↗</a>
+ 17  <a href="model/decision-pplx-decider-v1-2.md">Perplexity Decider v1.2 (…</a>  70±1   model files                 <a href="https://huggingface.co/perplexity-ai/pplx-decider-v1.2/tree/cce0f3f80033e9d89d80831d5281fd72124aacce">huggingface.co ↗</a>
+ 18  <a href="model/decision-autotrust-jev-27b-v11.md">AutoTrust-JEV-27B v1.1</a>      70±1   model files                 <a href="https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1/tree/ae156900e9f338e423042b89e25d0fd8093064d4">huggingface.co ↗</a>
+ 19  <a href="model/decision-oak-1-1.md">MISA AI 2.0 Decision Plus…</a>  70±2   model files                 <a href="https://huggingface.co/PNPM244/oak1.1/tree/2fdfb926d3ad4a252db034bcaeb5271d46a6557a">huggingface.co ↗</a>
+ 20  <a href="model/decision-vera-large.md">vera-large</a>                  70±2   model files                 <a href="https://huggingface.co/scar-ai/vera-large/tree/f42d32abe5b26aa051678b974ba4edd55d9ac3db">huggingface.co ↗</a>
+ 21  <a href="model/liquid-d1-ultra.md">d1-ultra</a>                    69±2   api price unknown           <a href="https://openrouter.ai/liquid/d1-ultra">openrouter.ai ↗</a>
+ 22  <a href="model/decision-knowline-26b-a4b-gen2-5.md">KnowLine 26B-A4B Gen2.5</a>     69±2   model files                 <a href="https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2.5/tree/7486767f8546beb510e61aef07d0e74219ceb4e3">huggingface.co ↗</a>
+ 23  <a href="model/decision-onejev1-6-27b.md">OneJev1.6-27B</a>               69±2   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.6-27B/tree/b8c4a4579e310b24973e5486a6a9ed5866a1b6f6">huggingface.co ↗</a>
+ 24  <a href="model/decision-elephant-1-baselabs.md">baselabs elephant-1 (9B)</a>    69±1   model files                 <a href="https://huggingface.co/baselabs/elephant-1/tree/14537f08b0374edf9867ed0a4d2bd8df59e0400c">huggingface.co ↗</a>
+ 25  <a href="model/decision-vllm-sr-d3-v310.md">vLLM-SR d3 (27B)</a>            69±1   model files                 <a href="https://huggingface.co/vllm-sr/d3/tree/20f37b9a892acc13d4b07a4f3c4f11b2518c615c">huggingface.co ↗</a>
+ 26  <a href="model/decision-amos-1-large.md">Amos 1 Large (27B)</a>          69±1   model files                 <a href="https://huggingface.co/mukaddamzaid/amos-1-large/tree/d67e051c763dc88a1e3662a5003c1e1ea5ffaa74">huggingface.co ↗</a>
+ 27  <a href="model/decision-ajev-lm6q.md">AJev lm6q (Gemma 4 31B)</a>     69±2   model files                 <a href="https://huggingface.co/andyzhang232/ajev-gemma4-31b-lm6q/tree/bdcfb05db02f48729f5f5a0b6b1c8cf6d6406d06">huggingface.co ↗</a>
+ 28  <a href="model/decision-anyjev-tacitus-31b.md">AnyJev Tacitus 31B</a>          69±2   model files                 <a href="https://huggingface.co/morriszjm/AnyJev-Tacitus-31B/tree/616d51437306694b0c13e56b8ed5d1f79874cabb">huggingface.co ↗</a>
+ 29  <a href="model/decision-startlux-decision-v1-1-9b-instant.md">StartLux-Decision v1.1 9B</a>   68±1   model files                 <a href="https://huggingface.co/startlux-models/StartLux-Decision-v1.1-9B-Instant/tree/18a17f734966b213b2f00fa9c915e8b9af2a9b20">huggingface.co ↗</a>
+ 30  <a href="model/decision-oneshot-27b.md">OneShot 27B</a>                 68±2   model files                 <a href="https://huggingface.co/OneShotOrg/OneShot/tree/db7e5a20c7f23067d6c3bb9ea8beac8b0bf1828c">huggingface.co ↗</a>
+ 31  <a href="model/decision-matilda-decision-v1.md">Matilda Decision v1</a>         68±2   model files                 <a href="https://huggingface.co/Maincode/matilda-decision-v1/tree/be4954283ee026a279b01ffe21b7579b10d4465d">huggingface.co ↗</a>
+ 32  <a href="model/liquid-d1-1.md">d1.1 (hosted)</a>               68±2   api price unknown           <a href="https://openrouter.ai/liquid/d1.1">openrouter.ai ↗</a>
+ 33  <a href="model/decision-visionjev-1-0-0.md">VisionJEV 1.0.0 (27B)</a>       68±1   model files                 <a href="https://huggingface.co/taoszhang/VisionJEV/tree/cd6353aaea57561bd8c9beee69311f104dd77528">huggingface.co ↗</a>
+ 34  <a href="model/decision-rbdash-decision-v0-2.md">RBDash-Decision v0.2</a>        68±4   model files                 <a href="https://huggingface.co/RBDash-Team/RBDash-Decision-v0.2/tree/c06b8050333757ddc9f7a8d6e78563a91a5acd98">huggingface.co ↗</a>
+ 35  <a href="model/decision-mogan-decision-31b-it.md">mogan-decision-31B-it</a>       67±1   model files                 <a href="https://huggingface.co/moganai/mogan-decision-31B-it/tree/676d52d1bbea46fe33b7d94b99949bc694dee070">huggingface.co ↗</a>
+ 36  <a href="model/decision-oenogarum.md">oenogarum (Gemma 4 31B)</a>     67±1   model files                 <a href="https://huggingface.co/plantwaterer/oenogarum/tree/9b684d7da38eb200fe4c5d11c36e3ce819ea2cfb">huggingface.co ↗</a>
+ 37  <a href="model/decision-sieve-27b-v2.md">Sieve 27B v2</a>                67±1   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-27B-v2/tree/8ed4d904ab94b007b37fc645f00aaca0173defe4">huggingface.co ↗</a>
+ 38  <a href="model/decision-h2o-lightning-31b.md">H2O Lightning 31B</a>           67±4   request access              <a href="https://huggingface.co/h2oai/h2o-lightning-31b/tree/f28212fc0d450226675b15f053cee67cda504108">huggingface.co ↗</a>
+ 39  <a href="model/decision-aleria-judge-1-1-1.md">Aleria Judge 1.1.1 (Gemma…</a>  67±1   source code                 <a href="https://github.com/ALERIA-ML/aleria-judge/tree/v1.1.1">github.com ↗</a>
+ 40  <a href="model/decision-cerno-27b.md">Cerno 27B</a>                   67±1   model files                 <a href="https://huggingface.co/apertixai/cerno-27b/tree/c2f7efe54fe4d3dfd7136bb2e9daf2c0c0633e3d">huggingface.co ↗</a>
+ 41  <a href="model/decision-torchcast-decision-27b.md">Torchcast Decision 27B</a>      67±1   model files                 <a href="https://huggingface.co/torchcast-ai/torchcast-decision-27b/tree/08645834899cb8e00d370b77a3f4e0baa3241dd1">huggingface.co ↗</a>
+ 42  <a href="model/decisionbench-hanno-labs-bosun-v3-1-1-7b-2ef2d972.md">bosun-v3.1-1.7b (Decision…</a>  67±2†  model files                 <a href="https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b/tree/2ef2d97227434a701e8134b90d62ef7669a197d5">huggingface.co ↗</a>
+ 43  <a href="model/decision-decider-31b.md">Decider 31B (NVFP4)</a>         66±1   model files                 <a href="https://huggingface.co/Mapika/decider-31b/tree/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2">huggingface.co ↗</a>
+ 44  <a href="model/decision-lychee-27b.md">Lychee-27B</a>                  66±1   model files                 <a href="https://huggingface.co/LycheeAI/Lychee-27B/tree/f3f95d18a3b1ef3c483c2a5d7e8e5272a2af31e2">huggingface.co ↗</a>
+ 45  <a href="model/decision-darwin-27b-ztc.md">Darwin-27B-ZTC</a>              66±1   model files                 <a href="https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC/tree/606f2a30b12d1eff0243dbb79e74a3726c481c56">huggingface.co ↗</a>
+ 46  <a href="model/decision-flexdm-gemma-4-31b.md">FlexDM · Gemma-4-31B (dec…</a>  66±1   source code                 <a href="https://github.com/1000luca/FlexDM/tree/v1.0">github.com ↗</a>
+ 47  <a href="model/decision-standard-one-35b-sh-v1.md">Standard One 35B SH (v1)</a>    66±1   model files                 <a href="https://huggingface.co/StandardThinking/StandardOne-35B-SH/tree/4e3b3a568f404b25ba9748d3933eb2c887214b2e">huggingface.co ↗</a>
+ 48  <a href="model/decision-allec-oavg.md">allec-oavg (Gemma 4 31B)</a>    66±1   model files                 <a href="https://huggingface.co/plantwaterer/allec/tree/e54027aa1f865bdd25724e9b3c1acb51b2bbc3c3">huggingface.co ↗</a>
+ 49  <a href="model/jev-1-13.md">Jev 1.13</a>                    66±1   api $0.042/M inpu…          <a href="https://docs.typesafe.ai/models">typesafe.ai ↗</a>
+ 50  <a href="model/decision-span-02.md">Span-02 (Gemma 4 26B-A4B)</a>   66±1   api price unknown           <a href="https://openrouter.ai/respan/span-02">openrouter.ai ↗</a>
+ 51  <a href="model/decision-rsi-jev-v6-1-vl-27b-auto.md">RSI-Jev v6.1 VL 27B (effo…</a>  66±1   model files                 <a href="https://huggingface.co/shgao/rsi-jev-v6.1-vl-27b/tree/d0dccc052ee844ab7481ddfacad1b7335ab394e0">huggingface.co ↗</a>
+ 52  <a href="model/decision-knowline-9b-gen1.md">KnowLine 9B Gen1</a>            66±1   model files                 <a href="https://huggingface.co/PelaAI/KnowLine-9B-Gen1/tree/4083a79ae652000b3d0c67698d86b0b0de514d6c">huggingface.co ↗</a>
+ 53  <a href="model/decision-herbert-v0-5.md">Herbert v0.5</a>                65±4   model files                 <a href="https://huggingface.co/leinenterprises/Herbert_v0.5/tree/3110e849f6361d4db5e8d114d56958a54320297e">huggingface.co ↗</a>
+ 54  <a href="model/decision-startlux-decision-v1-1-4b-instant.md">StartLux-Decision v1.1 4B</a>   65±1   model files                 <a href="https://huggingface.co/startlux-models/StartLux-Decision-v1.1-4B-Instant/tree/416088f77cfce09633906a3675c7cd2e5dabcf10">huggingface.co ↗</a>
+ 55  <a href="model/decision-quyet-1-0-large.md">Quyet-1.0-Large</a>             65±1   model files                 <a href="https://huggingface.co/chinhnc/Quyet-1.0-Large/tree/9a0f051112ba4301f6e4c8b87fc088ce00b11aae">huggingface.co ↗</a>
+ 56  <a href="model/mercury-decide-paid.md">Mercury Decide (paid endp…</a>  65±1   api price unknown           <a href="https://openrouter.ai/inception/mercury-decide">openrouter.ai ↗</a>
+ 57  <a href="model/jebadiah-27b-v2-1-t1e.md">Jebadiah 27B v2.1 (T1e)</a>     65±1   local                ~69GB  <a href="model/jebadiah-27b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
+ 58  <a href="model/decision-onejev1-5-27b.md">OneJev1.5-27B</a>               65±4   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.5-27B/tree/0742f8d16dd42c97643eec095cfc252acc4db18f">huggingface.co ↗</a>
+ 59  <a href="model/decision-jev-brain-gemma-4-31b.md">jev-brain · Gemma-4-31B (…</a>  65±1   source code                 <a href="https://github.com/wcole3/jev-brain/tree/di-0.3-gemma-4-31b-r2">github.com ↗</a>
+ 60  <a href="model/decision-aleria-judge-1-1-0.md">Aleria Judge 1.1.0 (Gemma…</a>  65±4   source code                 <a href="https://github.com/ALERIA-ML/aleria-judge/tree/4956428">github.com ↗</a>
+ 61  <a href="model/liquid-d1.md">d1 (hosted)</a>                 65±1   api price unknown           <a href="https://openrouter.ai/liquid/d1">openrouter.ai ↗</a>
+ 62  <a href="model/decision-knowline-4b-gen5-5.md">KnowLine 4B Gen5.5</a>          64±1   model files                 <a href="https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5/tree/779944d2cc8ffa19cef386aee83c83bcb967ade2">huggingface.co ↗</a>
+ 63  <a href="model/jev-1-14.md">Jev 1.14</a>                    64±1   api $0.042/M inpu…          <a href="https://docs.typesafe.ai/models">typesafe.ai ↗</a>
+ 64  <a href="model/decision-jeffan-4b-2010.md">Jeffan-4B-2010</a>              64±1   model files                 <a href="https://huggingface.co/tattrongvu/Jeffan-4B-2010/tree/937a008f86f4a20a903d628f22ffad3e3f431d2c">huggingface.co ↗</a>
+ 65  <a href="model/decisionbench-hanno-labs-bosun-v3-1-0-6b-aaa9dd06.md">bosun-v3.1-0.6b (Decision…</a>  64±2†  model files                 <a href="https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b/tree/aaa9dd06d4d6501b33df61942472fed9284bc5e6">huggingface.co ↗</a>
+ 66  <a href="model/decision-bobcat-1-3.md">Bobcat 1.3 (31B)</a>            64±1   model files                 <a href="https://huggingface.co/sanghwa-na/bobcat-1.3/tree/4f25c70ece312ec4e74c47f1c5264cb2aeea956a">huggingface.co ↗</a>
+ 67  <a href="model/decision-anyjev-l0-gemma-4-31b.md">AnyJev L0 · Gemma-4-31B (…</a>  64±1   source code                 <a href="https://github.com/MorrisZJ/anyjev-l0-gemma">github.com ↗</a>
+ 68  <a href="model/decision-onejev1-6-9b.md">OneJev1.6-9B</a>                64±1   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.6-9B/tree/259e5470b0abfd795a0bbb4598d6e319fa224a38">huggingface.co ↗</a>
+ 69  <a href="model/decision-jev-27b-vl.md">JEV-27B-VL</a>                  64±4   model files                 <a href="https://huggingface.co/autotrust/JEV-27B-VL/tree/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a">huggingface.co ↗</a>
+ 70  <a href="model/decision-knowline-35b-a3b-gen1.md">KnowLine 35B-A3B Gen1</a>       64±4   model files                 <a href="https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1/tree/e800968d38761c190476da5c69c6a5087a3c9b29">huggingface.co ↗</a>
+ 71  <a href="model/decision-jev-vision-27b-r2.md">jev-vision-27b</a>              64±4   model files                 <a href="https://huggingface.co/e12ex2/jev-vision-27b/tree/4084f7f755fd16f6c54a87c9a4534c6b877d02e4">huggingface.co ↗</a>
+ 72  <a href="model/decision-xor-26b-a4b-v1-2.md">Xor 26B-A4B v1.2</a>            63±1   model files                 <a href="https://huggingface.co/juspay/Xor-26B-A4B/tree/e4d0e99442def315d0c8fc9430cfd78367be6466">huggingface.co ↗</a>
+ 73  <a href="model/decision-senova-4b-v2.md">Senova-4B v2</a>                63±1   model files                 <a href="https://huggingface.co/WangSenQWQ/Senova-4B-v2/tree/61170a55c975227588109dc080b2b7bf259d3cb6">huggingface.co ↗</a>
+ 74  <a href="model/clef.md">Clef</a>                        63±1   api $0.24/M input…   ~68GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef/">cloudflare.com ↗</a>
+ 75  <a href="model/decision-linne-fern-1-0.md">linne-fern 1.0 (27B)</a>        63±1   model files                 <a href="https://huggingface.co/MISA-core/linne-fern-1-0/tree/2d505d583d6234c0407947ee3d61c15db91e4f86">huggingface.co ↗</a>
+ 76  <a href="model/microsoft-decision-1.md">Microsoft-Decision-1</a>        63±1   api price unknown           <a href="https://openrouter.ai/microsoft/microsoft-decision-1">openrouter.ai ↗</a>
+ 77  <a href="model/mercury-decide.md">Mercury Decide (free endp…</a>  63±2   api price unknown           <a href="https://openrouter.ai/inception/mercury-decide:free">openrouter.ai ↗</a>
+ 78  <a href="model/decision-drex-v2-0.md">Nace.AI Drex v2.0 (35B-A3…</a>  63±1   model files                 <a href="https://huggingface.co/nace-ai/drex-v2.0/tree/e646674476744e3826caf62b834054151e2aba51">huggingface.co ↗</a>
+ 79  <a href="model/decision-sieve-vision-27b.md">Sieve-Vision-27B</a>            63±4   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-Vision-27B/tree/1b9396f9c949fd5d22316d5a09abe048dbc8553a">huggingface.co ↗</a>
+ 80  <a href="model/decisionbench-kshetrajna12-reflex-27b-1d4bf0f2.md">reflex-27b (DecisionBench…</a>  63±2†  model files                 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0">huggingface.co ↗</a>
+ 81  <a href="model/decision-decisio-0-6-0-gemma-4-31b.md">decisio 0.6.0 (Gemma 4 31…</a>  63±1   source code                 <a href="https://github.com/aminry/decisio">github.com ↗</a>
+ 82  <a href="model/decision-deck31b.md">deck31b (Gemma 4 31B) (de…</a>  63±1   source code                 <a href="https://github.com/krishna-gogineni-765/deck31b">github.com ↗</a>
+ 83  <a href="model/decision-jev-35b.md">JEV-35B</a>                     63±1   model files                 <a href="https://huggingface.co/autotrust/JEV-35B/tree/a5d0d580bb9324f0f4c07dcba5c5ca91e813e7c9">huggingface.co ↗</a>
+ 84  <a href="model/decision-synack-decide-26b-a4b-v7.md">SynACK Decide 26B-A4B v7</a>    62±1   model files                 <a href="https://huggingface.co/SkyPanther/synack-decide-26b-a4b/tree/173a2c3b4cc0588f8a1ffee4e15eab80251b477a">huggingface.co ↗</a>
+ 85  <a href="model/decision-decider-chat-gemma4-31b.md">Decider chat · Gemma-4-31…</a>  62±1   source code                 <a href="https://github.com/Mapika/decider">github.com ↗</a>
+ 86  <a href="model/decision-tern-35b-a3b.md">Tern-35B-A3B</a>                62±1   model files                 <a href="https://huggingface.co/matthewagi/Tern-35B-A3B/tree/b293e272dfe80841644bdd22ef446698b9f006cc">huggingface.co ↗</a>
+ 87  <a href="model/decision-garum.md">garum (Gemma 4 31B)</a>         62±1   model files                 <a href="https://huggingface.co/plantwaterer/garum/tree/8df5df36a82edf4bcb71b65ebe7fc32fab03fdac">huggingface.co ↗</a>
+ 88  <a href="model/decision-kev-27b.md">Kev 27B</a>                     62±1   model files                 <a href="https://huggingface.co/jaredpalmer/kev-27b/tree/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf">huggingface.co ↗</a>
+ 89  <a href="model/decision-shisa-de-2-1-repeat.md">Shisa DE-2.1 (repeat)</a>       62±1   model files                 <a href="https://huggingface.co/shisa-ai/shisa-de-2.1/tree/9084fca74aeb70a1d219ed0a0c382d4e35c3d1e6">huggingface.co ↗</a>
+ 90  <a href="model/decision-pplx-decider-flash-v1-2.md">Perplexity Decider Flash …</a>  62±1   local                ~10GB  <a href="model/decision-pplx-decider-flash-v1-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 91  <a href="model/decision-wald-26b-a4b.md">Wald-26B-A4B</a>                62±1   model files                 <a href="https://huggingface.co/org2ai/Wald-26B-A4B/tree/4a5d0b94bff26a8bba359ef311b3e535cefae901">huggingface.co ↗</a>
+ 92  <a href="model/decision-blink-v0-3-26b-a4b-nvfp4.md">Blink v0.3 26B-A4B (NVFP4)</a>  62±1   model files                 <a href="https://huggingface.co/PixilabAI/Blink-v0.3-26B-A4B-NVFP4/tree/08caad20c1574fb76341ca809ff38fdb081f7d4a">huggingface.co ↗</a>
+ 93  <a href="model/decisionbench-mohit67890-imajev-4b-712891d1.md">imajev-4b (DecisionBench …</a>  62±2†  model files                 <a href="https://huggingface.co/mohit67890/imajev-4b/tree/712891d1192c6491441a19bdea254d8a6e1048d0">huggingface.co ↗</a>
+ 94  <a href="model/gpt-6-luna-decisions.md">GPT-6 Luna Decisions</a>        62±1   api price unknown           <a href="https://openrouter.ai/openai/gpt-6-luna-decisions">openrouter.ai ↗</a>
+ 95  <a href="model/decision-qwen-decision-27b-noncausal.md">Qwen Decision 27B noncaus…</a>  61±1   model files                 <a href="https://huggingface.co/jsaurabh/qwen-decision-27b-noncausal-lora/tree/b2eefb929a883136b3bd56ce70999fdac656ee8a">huggingface.co ↗</a>
+ 96  <a href="model/decision-lumma-fev-27b.md">Lumma-fev-27B</a>               61±1   model files                 <a href="https://huggingface.co/FrontiersMind/Lumma-fev-27B/tree/2c080fb4b44bbad2a140353393d935e8b7af8bcb">huggingface.co ↗</a>
+ 97  <a href="model/decision-decision-2-0-vega-27b.md">vLLM-SR Decision 2.0 Vega…</a>  61±1   model files                 <a href="https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B/tree/71d6ae1db4a786d98775d65c68c41be0e39bfe7c">huggingface.co ↗</a>
+ 98  <a href="model/decision-jev-gemma4-26b-a4b.md">GEV-26B-Decide</a>              61±1   model files                 <a href="https://huggingface.co/autotrust/GEV-26B-Decide/tree/eea849038e792cd09aa731d59d586f0eaf2c18f6">huggingface.co ↗</a>
+ 99  <a href="model/decisionbench-zhengxuyu-litjev-1d4bf0f2.md">litjev (DecisionBench 1d4…</a>  61±2†  model files                 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0">huggingface.co ↗</a>
+100  <a href="model/decision-rune-26b-a4b-v3.md">Surogate Rune 26B-A4B v3</a>    61±1   request access              <a href="https://huggingface.co/surogate/rune-26b-a4b-GGUF/tree/bd4a7cbbed66af1a95dfbac12cabf52e6e677411">huggingface.co ↗</a>
+101  <a href="model/decision-verdin-4b-v1-1.md">Verdin-4B v1.1</a>              61±1   model files                 <a href="https://huggingface.co/victorbennett/Verdin-4B-v1.1/tree/45830d216bb7e45f43f0a482c131a7cafa6d189f">huggingface.co ↗</a>
+102  <a href="model/decision-garas.md">garas (Gemma 4 31B)</a>         61±1   model files                 <a href="https://huggingface.co/plantwaterer/garas/tree/feea8bbed541ae9858d3651af3863efda303c7e2">huggingface.co ↗</a>
+103  <a href="model/decision-vllm-sr-d3-flash.md">vLLM-SR d3-flash (9B)</a>       61±1   local                ~18GB  <a href="model/decision-vllm-sr-d3-flash.md#run-it-on-your-own-machine">how to run ›</a>
+104  <a href="model/decisionbench-z-ai-glm-5-3-flash-openrout.md">glm-5.3-flash (DecisionBe…</a>  61±2†  comparison only
+105  <a href="model/decisionbench-kshetrajna12-reflex-qwen3-5-4b-lora-9df1cbbb.md">reflex-qwen3.5-4b-lora (D…</a>  61±2†  model files                 <a href="https://huggingface.co/kshetrajna12/reflex-qwen3.5-4b-lora/tree/9df1cbbbc1837ba494530a59d3d9d345688ed250">huggingface.co ↗</a>
+106  <a href="model/decision-reflex-27b-pmscr.md">reflex Qwen3.8-27B-FP8 (p…</a>  61±1   source code                 <a href="https://github.com/kshetrajna12/reflex">github.com ↗</a>
+107  <a href="model/decision-onejev1-5-9b.md">OneJev1.5-9B</a>                61±4   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.5-9B/tree/ec2f276eab207810f576fb1f2d68c2acabd3eb71">huggingface.co ↗</a>
+108  <a href="model/decisionbench-mohit67890-imajev-4b-c9e5f132.md">imajev-4b (DecisionBench …</a>  61±2†  model files                 <a href="https://huggingface.co/mohit67890/imajev-4b/tree/c9e5f132465da85d31735ec502d5557982671a7d">huggingface.co ↗</a>
+109  <a href="model/decision-ajev-gemma26-lora1.md">AJev lora1 (Gemma 4 26B-A…</a>  60±1   model files                 <a href="https://huggingface.co/andyzhang232/ajev-gemma4-26b-a4b-lora1/tree/a0a33e34fd54834ce9a068593221b49d06148661">huggingface.co ↗</a>
+110  <a href="model/decisionbench-mapika-decider-35b-a3b-d9783c58.md">decider-35b-a3b (Decision…</a>  60±2†  model files                 <a href="https://huggingface.co/Mapika/decider-35b-a3b/tree/d9783c58ad4fbff3a6030c8332d29738ec49d22a">huggingface.co ↗</a>
+111  <a href="model/decision-cerno-9b-v11.md">Cerno 9B v1.1</a>               60±1   model files                 <a href="https://huggingface.co/apertixai/cerno-9b/tree/80010f97eaa989b41c908ecba7d7b7fadaa99239">huggingface.co ↗</a>
+112  <a href="model/decisionbench-ekzhang-openjev-sglang-1355db6a.md">openjev-sglang (DecisionB…</a>  60±2†  model files                 <a href="https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/tree/1355db6a052410cfd62085d94b58866fd0f2c3c5">huggingface.co ↗</a>
+113  <a href="model/decision-jev-27b.md">JEV-27B</a>                     60±1   model files                 <a href="https://huggingface.co/autotrust/JEV-27B/tree/14b425269ed24452e0a5ad5a8f3e51d139647a88">huggingface.co ↗</a>
+114  <a href="model/decision-simple-jev-qwen3-8-27b.md">simple-jev · Qwen3.8-27B …</a>  60±1   source code                 <a href="https://github.com/featherless-ai/simple-jev">github.com ↗</a>
+115  <a href="model/decision-onejev1-6-4b.md">OneJev1.6-4B</a>                60±1   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.6-4B/tree/bb248003b6eb771a995cb3672ad47db090a9cd48">huggingface.co ↗</a>
+116  <a href="model/decision-eikos-27b-fp8.md">Eikos-27B-FP8 Qwen3.8-27B…</a>  59±1   model files                 <a href="https://huggingface.co/caiovicentino1/Eikos-27B-FP8/tree/8b053df4e225b6acca8ce4aeed49ee3c74e5b3fd">huggingface.co ↗</a>
+117  <a href="model/decision-jade.md">JADE</a>                        59±1   model files                 <a href="https://huggingface.co/theunnecessarythings/JADE/tree/8e9f9a3aa4293190fcc4a6ff17ff5f3251f4c270">huggingface.co ↗</a>
+118  <a href="model/decisionbench-juspay-xor-679decd4.md">xor (DecisionBench 679dec…</a>  59±2†  model files                 <a href="https://huggingface.co/juspay/xor/tree/679decd4c669e5c37f4ac29dbd9957997424c876">huggingface.co ↗</a>
+119  <a href="model/decisionbench-openai-gpt-5-6-luna-openrout.md">gpt-5.6-luna (DecisionBen…</a>  59±2†  comparison only
+120  <a href="model/decisionbench-featherless-ai-simplejev-qwen3-8-27b-1d4bf0f2.md">simplejev-qwen3.8-27b (De…</a>  59±2†  model files                 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0">huggingface.co ↗</a>
+121  <a href="model/clef-omni.md">Clef-omni</a>                   59±1   api $0.15/M input…   ~87GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-omni/">cloudflare.com ↗</a>
+122  <a href="model/decision-decider-chat-qwen3-6-27b.md">Decider chat · Qwen3.6-27…</a>  59±1   source code                 <a href="https://github.com/Mapika/decider">github.com ↗</a>
+123  <a href="model/decision-xor-1-2.md">Xor 1.2</a>                     59±1   model files                 <a href="https://huggingface.co/juspay/xor/tree/a286a461e6daedee1e2400bdbe81cbb741cd592f">huggingface.co ↗</a>
+124  <a href="model/decision-jev-d3-46k.md">jev-d3-46k</a>                  59±4   model files                 <a href="https://huggingface.co/tinnel123/jev-d3-46k/tree/9833703ab599826179b43e8c6a2280a96bfce052">huggingface.co ↗</a>
+125  <a href="model/jebadiah-27b-v2-1-ollaya-q4-k-m.md">Jebadiah 27B v2.1 (Ollaya…</a>  59±4   local                ~16GB  <a href="model/jebadiah-27b-v2-1-ollaya-q4-k-m.md#run-it-on-your-own-machine">how to run ›</a>
+126  <a href="model/decision-vllm-sr-d3-mini.md">vLLM-SR d3-mini (4B)</a>        58±1   local                ~11GB  <a href="model/decision-vllm-sr-d3-mini.md#run-it-on-your-own-machine">how to run ›</a>
+127  <a href="model/decision-seb-9b-v2.md">Seb-9B v2</a>                   58±1   model files                 <a href="https://huggingface.co/ironbcc/Seb-9B-v2/tree/c01ef79eb54b491c83ed1260ab8444cbc662e65c">huggingface.co ↗</a>
+128  <a href="model/decision-jpt-35b-a3b.md">JPT-35B-A3B</a>                 58±1   model files                 <a href="https://huggingface.co/kirp/jpt-35b-a3b/tree/f9b45a14df4f7eaf5551f1ab26607237604a8588">huggingface.co ↗</a>
+129  <a href="model/decision-mica-v0-5-4b.md">Mica v0.5 4B</a>                58±1   model files                 <a href="https://huggingface.co/sky7350/Mica-v0.5-4B/tree/f87da85ba6f53c0a67c8b9407a03d2b18274c24a">huggingface.co ↗</a>
+130  <a href="model/decision-ajev-lora7.md">AJev lora7 (Gemma 4 12B)</a>    58±1   model files                 <a href="https://huggingface.co/andyzhang232/ajev-gemma4-12b-lora7/tree/94859621adf8f8dfd96f27c278192dfd0509eb72">huggingface.co ↗</a>
+131  <a href="model/decisionbench-eldanring-winnow-12b-b6ac22b0.md">Winnow-12B (DecisionBench…</a>  58±2   local                ~16GB  <a href="model/decisionbench-eldanring-winnow-12b-b6ac22b0.md#run-it-on-your-own-machine">how to run ›</a>
+132  <a href="model/decisionbench-deepseek-deepseek-v4-1-flash-openrout.md">deepseek-v4.1-flash (Deci…</a>  58±2†  model files                 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/tree/314113f8a7dadb388215396ba5fbee2c610a04d6">huggingface.co ↗</a>
+133  <a href="model/decision-drex-v1-5.md">Nace.AI Drex v1.5</a>           58±1   model files                 <a href="https://huggingface.co/nace-ai/drex-v1.5/tree/73ec0ca21f4be829f706353cd06d8873598608bf">huggingface.co ↗</a>
+134  <a href="model/clef-flash.md">Clef-flash</a>                  58±1   api $0.038/M inpu…   ~25GB  <a href="https://developers.cloudflare.com/workers-ai/models/clef-flash/">cloudflare.com ↗</a>
+135  <a href="model/decision-nimble-v3.md">Bespoke Nimble 9B v3</a>        58±1   local                ~21GB  <a href="model/decision-nimble-v3.md#run-it-on-your-own-machine">how to run ›</a>
+136  <a href="model/decisionbench-featherless-ai-simplejev-qwen3-6-35b-a3b-995ad96e.md">simplejev-qwen3.6-35b-a3b…</a>  58±2†  model files                 <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0">huggingface.co ↗</a>
+137  <a href="model/decision-sieve-9b-plus.md">Sieve 9B v2</a>                 57±1   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-9B-v2/tree/d5564ca95a06881d7532dfede5f7d3fca5621e19">huggingface.co ↗</a>
+138  <a href="model/decision-cerno-4b-v11.md">Cerno 4B v1.1</a>               57±1   model files                 <a href="https://huggingface.co/apertixai/cerno-4b/tree/ed4b5c59b542ee96c227ee874776c973980c640b">huggingface.co ↗</a>
+139  <a href="model/decisionbench-octalab-inc-jqv-9216db57.md">jqv (DecisionBench 9216db…</a>  57±2†  model files                 <a href="https://huggingface.co/Qwen/Qwen3-32B/tree/9216db5781bf21249d130ec9da846c4624c16137">huggingface.co ↗</a>
+140  <a href="model/decision-trio-spark-di.md">Trio-Spark DI (9B)</a>          57±1   request access              <a href="https://huggingface.co/MachineFi/Trio-Spark-DI/tree/8e9c6b0a3ea94f820d253c94c800c4c3797d3af2">huggingface.co ↗</a>
+141  <a href="model/decisionbench-razorback16-openjev-ec4ff3df.md">openjev (DecisionBench ec…</a>  57±2†  model files                 <a href="https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/tree/ec4ff3df205028f4e81c954c2227f9312b3ec2ea">huggingface.co ↗</a>
+142  <a href="model/decision-matilda-jev-v1-5.md">matilda-jev-v1.5 (27B)</a>      57±4   model files                 <a href="https://huggingface.co/Maincode/Matilda-Jev-v1.5/tree/9a732d3d635e519ab06e21f9c60db3b2acd1eed1">huggingface.co ↗</a>
+143  <a href="model/jebadiah-9b-v2-1-t1e.md">Jebadiah 9B v2.1 (T1e)</a>      57±1   local                ~25GB  <a href="model/jebadiah-9b-v2-1-t1e.md#run-it-on-your-own-machine">how to run ›</a>
+144  <a href="model/decision-coco-decision-2-4-4b.md">CoCo-Decision-4B 2.4</a>        57±1   model files                 <a href="https://huggingface.co/corners-ai/CoCo-Decision-2.4-4B/tree/64ce98c8b3a2661362ff6213bc350c26124247ea">huggingface.co ↗</a>
+145  <a href="model/decision-amber-hybrid-4b.md">Amber Hybrid 4B (decision…</a>  57±1   model files                 <a href="https://huggingface.co/MLukauskas/amber-hybrid-4b/tree/7e247b28735b2e0075868ae3336e4bc31f1303a9">huggingface.co ↗</a>
+146  <a href="model/solar-decide.md">Solar Decide</a>                57±1   api price unknown           <a href="https://openrouter.ai/upstage/solar-decide">openrouter.ai ↗</a>
+147  <a href="model/decision-sieve-vision-4b.md">Sieve-Vision-4B</a>             56±4   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-Vision-4B/tree/96b409242defa21aa5eb5e8a067a260d564e9bc6">huggingface.co ↗</a>
+148  <a href="model/decision-xor-26b-a4b-v1-1.md">xor-26b-a4b-v1.1</a>            56±4   model files                 <a href="https://huggingface.co/juspay/Xor-26B-A4B/tree/28ca09c7b76648b24d3561c940d1a7460d12fb8e">huggingface.co ↗</a>
+149  <a href="model/decision-decisio-0-4-0-qwen3-6-35b-a3b.md">decisio 0.4.0 (Qwen3.6-35…</a>  56±1   source code                 <a href="https://github.com/aminry/decisio">github.com ↗</a>
+150  <a href="model/decision-jegue-0-1.md">Jegue 0.1 (9B)</a>              56±1   model files                 <a href="https://huggingface.co/fdemelo/jegue/tree/571b7044deb31d152cf20ec1fa1a727ce97fa179">huggingface.co ↗</a>
+151  <a href="model/decisionbench-davipar-djev-dev-f7f5b7f5.md">djev-dev (DecisionBench f…</a>  56±2†  model files                 <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/tree/f7f5b7f5fa82ffc52addd066915886d497f5517b">huggingface.co ↗</a>
+152  <a href="model/decisionbench-ikermoel-open-alternative-jev-4a85df18.md">open-alternative-jev (Dec…</a>  56±2†  source code                 <a href="https://github.com/ikermoel/open-alternative-jev">github.com ↗</a>
+153  <a href="model/decisionbench-zefancai-open-jev-9b-47e96688.md">Open-Jev-9B (DecisionBenc…</a>  56±2†  model files                 <a href="https://huggingface.co/ZefanCai/Open-Jev-9B/tree/47e966881e489511c0c7f5633a9e1960a676a551">huggingface.co ↗</a>
+154  <a href="model/decisionbench-togethercomputer-tev1-4b-experimental-0b7becf0.md">Tev1-4B-experimental (Dec…</a>  56±2   model files                 <a href="https://huggingface.co/togethercomputer/Tev1-4B-experimental/tree/0b7becf017daa0e5eb222f8ce7483c8c8259c52f">huggingface.co ↗</a>
+155  <a href="model/decision-muria.md">muria (Gemma 4 12B)</a>         55±1   model files                 <a href="https://huggingface.co/plantwaterer/muria/tree/00ff739733ee5fa55a34722f2ac6b3cec737d23c">huggingface.co ↗</a>
+156  <a href="model/decision-decider-35b-nvfp4.md">Decider 35B-A3B</a>             55±1   model files                 <a href="https://huggingface.co/Mapika/decider-35b-a3b-nvfp4/tree/798555c06e419c4638c9ebd06c78ed8b5e92c868">huggingface.co ↗</a>
+157  <a href="model/decision-amber-4b.md">Amber 4B</a>                    55±1   model files                 <a href="https://huggingface.co/MLukauskas/amber-4b/tree/71c37554758f6df3034aac5c632030a1216a7392">huggingface.co ↗</a>
+158  <a href="model/decision-startlux-decision-v1-1-2b-instant.md">StartLux-Decision v1.1 2B</a>   55±1   model files                 <a href="https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/tree/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1">huggingface.co ↗</a>
+159  <a href="model/decisionbench-jaredpalmer-kev-4b-485ace87.md">kev-4b (DecisionBench 485…</a>  55±2†  model files                 <a href="https://huggingface.co/jaredpalmer/kev-4b/tree/485ace8703592fcf405488b262449990824cfed1">huggingface.co ↗</a>
+160  <a href="model/jebadiah-9b-v2-1-ollaya-q8-0.md">Jebadiah 9B v2.1 (Ollaya …</a>  55±3   local               ~9.1GB  <a href="model/jebadiah-9b-v2-1-ollaya-q8-0.md#run-it-on-your-own-machine">how to run ›</a>
+161  <a href="model/decision-standard-one-8b-sh-v4.md">Standard One 8B SH (v4)</a>     55±1   model files                 <a href="https://huggingface.co/StandardThinking/StandardOne-8B-SH/tree/534cedffb5324a3b49d2cd40c35a5df4198b9992">huggingface.co ↗</a>
+162  <a href="model/decisionbench-jaredpalmer-kev-8b-c80773da.md">kev-8b (DecisionBench c80…</a>  55±2†  model files                 <a href="https://huggingface.co/jaredpalmer/kev-8b/tree/c80773da7f383f93c4dbff0c0b008e0463f9145a">huggingface.co ↗</a>
+163  <a href="model/decision-winnow-12b-q8.md">Winnow-12B</a>                  55±1   model files                 <a href="https://huggingface.co/EldanRing/Winnow-12B/tree/0b5b7f98e718cf0faffd0acea3093b86ebf00b56">huggingface.co ↗</a>
+164  <a href="model/decision-ezjev-4b-s2.md">ezjev 4B s2</a>                 55±1   model files                 <a href="https://huggingface.co/everettjf/ezjev-4b-s2/tree/92cc763640fd41042415c9961d826e2283fffb1c">huggingface.co ↗</a>
+165  <a href="model/decision-joshua-diffusion-full.md">JoshuaSP diffgemma (decis…</a>  55±1   source code                 <a href="https://github.com/JoshuaSP/open-jev">github.com ↗</a>
+166  <a href="model/decision-decisio-0-4-0-gemma-4-12b.md">decisio 0.4.0 (Gemma 4 12…</a>  54±1   source code                 <a href="https://github.com/aminry/decisio">github.com ↗</a>
+167  <a href="model/decision-jevk5-9b-v0-3-3.md">JevK5 9B v0.3.3</a>             54±1   model files                 <a href="https://huggingface.co/alibiserikbay/JevK5-9B/tree/d6521a18a86999190e9d775c915af3d6d6772fc4">huggingface.co ↗</a>
+168  <a href="model/decision-jevfire-uncapped.md">Jevfire Qwen3.8-27B (deci…</a>  54±1   source code                 <a href="https://github.com/kikoncuo/jevfire">github.com ↗</a>
+169  <a href="model/decision-open-jev-9b-jevbench-mini.md">Open-Jev-9B (JevBench min…</a>  54±2   source code                 <a href="https://github.com/Zefan-Cai/Open-Jev">github.com ↗</a>
+170  <a href="model/decision-solomon-v11-bf16-encoding.md">Solomon v1.1</a>                54±1   model files                 <a href="https://huggingface.co/DoccyHealth/Solomon/tree/6b9bcc4a517bdbcecd4493f962446436c368ccb5">huggingface.co ↗</a>
+171  <a href="model/decision-sieve-4b.md">Sieve 4B</a>                    54±1   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-4B/tree/86e80288f6fb3d2d3eb4e72d1a3d4e83fda16520">huggingface.co ↗</a>
+172  <a href="model/decisionbench-bespokelabs-bespoke-nimble-9b-594dfdcf.md">Bespoke-Nimble-9B (Decisi…</a>  54±2   model files                 <a href="https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/tree/594dfdcfb6f94e3d0c0db7535180d3c71689169a">huggingface.co ↗</a>
+173  <a href="model/decision-jevany-qwen-4b-jevbench-mini.md">JevAny-Qwen-4B (pointer) …</a>  54±2   source code                 <a href="https://github.com/SimpleJev/JevAny">github.com ↗</a>
+174  <a href="model/decision-standard-one-3b-sh-v4.md">Standard One 3B SH (v4)</a>     54±1   model files                 <a href="https://huggingface.co/StandardThinking/StandardOne-3B-SH/tree/7f56f73be882bc3fb2b69abe609bab1de8297d77">huggingface.co ↗</a>
+175  <a href="model/decision-decider-4b-jevbench-mini.md">decider-4b v2.1 (JevBench…</a>  54±2   source code                 <a href="https://github.com/Mapika/decider">github.com ↗</a>
+176  <a href="model/decision-decision-2-0-lux-9b.md">vLLM-SR Decision 2.0 Lux …</a>  54±1   local                ~20GB  <a href="model/decision-decision-2-0-lux-9b.md#run-it-on-your-own-machine">how to run ›</a>
+177  <a href="model/decision-jevany-gemma-4b-jevbench-mini.md">JevAny-Gemma-4B (pointer)…</a>  54±2   source code                 <a href="https://github.com/SimpleJev/JevAny">github.com ↗</a>
+178  <a href="model/decision-jpt-9b.md">JPT-9B Qwen3.5-9B LoRA</a>      54±1   model files                 <a href="https://huggingface.co/kirp/jpt-9b/tree/7114b0c3d9bea6b82dfa2d0691e8d5562cd26d4e">huggingface.co ↗</a>
+179  <a href="model/decision-saif-4b.md">Saif 4B</a>                     54±1   model files                 <a href="https://huggingface.co/GyrTechnology/saif-4b/tree/622e4c8e483a265abb1a9907bd3a3e142e2672ef">huggingface.co ↗</a>
+180  <a href="model/decisionbench-theoleecj-semif-1f2dea3e.md">SemIf (DecisionBench 1f2d…</a>  54±2†  source code                 <a href="https://github.com/TheoLeeCJ/SemIf-OpenJev">github.com ↗</a>
+181  <a href="model/decision-rsi-jev-v6-1-vl-4b.md">RSI-Jev v6.1 VL 4B</a>          53±1   model files                 <a href="https://huggingface.co/shgao/rsi-jev-v6.1-vl-4b/tree/7f93b1926dc23c62635538f5d40f1dabbddee5b6">huggingface.co ↗</a>
+182  <a href="model/decision-purplemist-flash-1-0.md">PurpleMIST-Flash-1.0</a>        53±1   model files                 <a href="https://huggingface.co/olaverse/PurpleMIST-Flash-1.0/tree/a48fe0206ee0d8a3f4458a3581468c24a7365ac5">huggingface.co ↗</a>
+183  <a href="model/decision-jevany-qwen-4b-direct-jevbench-mini.md">JevAny-Qwen-4B (direct to…</a>  53±2   source code                 <a href="https://github.com/SimpleJev/JevAny">github.com ↗</a>
+184  <a href="model/decisionbench-mapika-decider-2b-fa996cea.md">decider-2b (DecisionBench…</a>  53±2   model files                 <a href="https://huggingface.co/Mapika/decider-2b/tree/fa996cea58e1c1d8d1ab4d7124154f303b017f95">huggingface.co ↗</a>
+185  <a href="model/decisionbench-cua-ai-cua-s1-4b-0-2-16818868.md">cua-s1-4b-0.2 (DecisionBe…</a>  53±2†  model files                 <a href="https://huggingface.co/cua-ai/cua-s1-4b-0.2/tree/16818868b0cc7813808aae4e87b417657046ab79">huggingface.co ↗</a>
+186  <a href="model/decision-bespoke-nimble-9b-jevbench-mini.md">Bespoke-Nimble-9B (JevBen…</a>  53±2   source code                 <a href="https://github.com/bespokelabsai/nimble">github.com ↗</a>
+187  <a href="model/decision-hopper-12b-trained.md">Hopper 12B (trained)</a>        52±1   model files                 <a href="https://huggingface.co/HopitAI/hopper/tree/fa02effb1cfef5b3c22096c6eef0f9670a56bf04">huggingface.co ↗</a>
+188  <a href="model/decision-jebadiah-9b-jevbench-mini.md">Jebadiah 9B v2 (JevBench …</a>  52±2   source code                 <a href="https://github.com/getainode/jebadiah">github.com ↗</a>
+189  <a href="model/decision-jiwo-4b-v2.md">jiwo 4B v2</a>                  52±1   model files                 <a href="https://huggingface.co/eljiwo/jiwo-4b/tree/9adc559ff7ec5baffade3998f7bca85da0d124ed">huggingface.co ↗</a>
+190  <a href="model/decision-joey-1.md">baselabs joey-1 (2B)</a>        52±1   api price unknown           <a href="https://openrouter.ai/baseten/joey-1">openrouter.ai ↗</a>
+191  <a href="model/decision-qev-2b.md">QEV-2B</a>                      52±4   model files                 <a href="https://huggingface.co/ken-jo/QEV-2B/tree/2ad955be56e8a68fe5a05ffb0423efed762a7bbd">huggingface.co ↗</a>
+192  <a href="model/jebadiah-4b-v2-ollaya-q8-0.md">Jebadiah 4B v2 (Ollaya Q8…</a>  52±3   local               ~5.5GB  <a href="model/jebadiah-4b-v2-ollaya-q8-0.md#run-it-on-your-own-machine">how to run ›</a>
+193  <a href="model/decision-jev-9b.md">JEV-9B</a>                      52±1   model files                 <a href="https://huggingface.co/autotrust/JEV-9B/tree/7ac669b8fb476ba926491e3d1c39f9330d68dbed">huggingface.co ↗</a>
+194  <a href="model/decision-aplomb-1.md">Aplomb 1</a>                    52±1   request access              <a href="https://huggingface.co/empiriolabsai/aplomb-1/tree/60b3a1c67d6fee193d1543b6530b4cc9c57c7fae">huggingface.co ↗</a>
+195  <a href="model/decision-shisa-de-2-repeat.md">Shisa DE-2 (repeat)</a>         51±4   model files                 <a href="https://huggingface.co/shisa-ai/shisa-de-2/tree/fd9f487763b4d5b7dc4c719f2704290330a65d62">huggingface.co ↗</a>
+196  <a href="model/decisionbench-final-bench-ztc-judge-9b-05d154a5.md">ZTC-Judge-9B (DecisionBen…</a>  51±2†  model files                 <a href="https://huggingface.co/FINAL-Bench/ZTC-Judge-9B/tree/05d154a56b6d48ea7f2d999cabbafae3f26734b9">huggingface.co ↗</a>
+197  <a href="model/decision-jev-omni.md">Jev-Omni</a>                    51±1   model files                 <a href="https://huggingface.co/akhilaaa3/Jev-Omni/tree/fee89b076e2263bfa8bce8d34142caa4ca733a48">huggingface.co ↗</a>
+198  <a href="model/decision-d1-3b.md">LiquidAI d1-3B</a>              51±1   model files                 <a href="https://huggingface.co/LiquidAI/d1-3B/tree/051bcc464b01b9f92942b364d9586b0ef5912432">huggingface.co ↗</a>
+199  <a href="model/decisionbench-mmastrac-djev-spark-1444f3e9.md">djev-spark (DecisionBench…</a>  51±2†  source code                 <a href="https://github.com/mmastrac/djev-spark">github.com ↗</a>
+200  <a href="model/decision-decision-2-0-nox-4b.md">vLLM-SR Decision 2.0 Nox …</a>  51±1   local                ~12GB  <a href="model/decision-decision-2-0-nox-4b.md#run-it-on-your-own-machine">how to run ›</a>
+201  <a href="model/decision-decider-4b.md">Decider 4B</a>                  51±1   local                ~11GB  <a href="model/decision-decider-4b.md#run-it-on-your-own-machine">how to run ›</a>
+202  <a href="model/decision-tev1-4b.md">Together Tev1 Qwen3.5-4B</a>    51±1   model files                 <a href="https://huggingface.co/togethercomputer/Tev1-4B-experimental/tree/0b7becf017daa0e5eb222f8ce7483c8c8259c52f">huggingface.co ↗</a>
+203  <a href="model/decision-onejev-4b-jevbench-mini.md">OneJev-4B (JevBench mini)</a>   51±2   source code                 <a href="https://github.com/OmniJev/OneJev">github.com ↗</a>
+204  <a href="model/decision-jpt-4b.md">JPT-4B Qwen3.5-4B LoRA</a>      50±1   model files                 <a href="https://huggingface.co/kirp/jpt-4b/tree/277ae37b7a6398a8ec3b86712ac16c1991ab6ef1">huggingface.co ↗</a>
+205  <a href="model/decision-nimble-v2.md">Bespoke Nimble 9B v2</a>        50±1   local                ~20GB  <a href="model/decision-nimble-v2.md#run-it-on-your-own-machine">how to run ›</a>
+206  <a href="model/decision-jevk5-v0-3.md">JevK5 v0.3</a>                  50±1   model files                 <a href="https://huggingface.co/alibiserikbay/JevK5/tree/c4f7fdb3aeab5582336406e78d3bef11bf98833d">huggingface.co ↗</a>
+207  <a href="model/respan-span-01-pro.md">Span-01 Pro</a>                 50±9   api price unknown           <a href="https://www.respan.ai/docs/documentation/span-01/quickstart">respan.ai ↗</a>
+208  <a href="model/decision-sieve-9b.md">Sieve 9B</a>                    50±1   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-9B/tree/eb411e0830f437e8554ec5e709c120cd7969d85d">huggingface.co ↗</a>
+209  <a href="model/decision-kev-9b-v2.md">Kev 9B v2</a>                   50±1   model files                 <a href="https://huggingface.co/jaredpalmer/kev-9b/tree/db029f08b290afd9fee4aa4bbcd9ae48602d1eb0">huggingface.co ↗</a>
+210  <a href="model/decision-djev.md">djev diffgemma (decision …</a>  50±1   source code                 <a href="https://github.com/Davipar/djev-dev">github.com ↗</a>
+211  <a href="model/decision-jevk5-4b-jevbench-mini.md">JevK5 v0.3 (JevBench mini)</a>  50±2   source code                 <a href="https://github.com/allebee/jevk5">github.com ↗</a>
+212  <a href="model/decision-decision-4b-v1-6.md">FlyMy.AI Decision 4B v1.6</a>   50±1   model files                 <a href="https://huggingface.co/flymy-ai/decision-4b-v1.6/tree/669cf8d8453ed6c2960a6787b8d2f3c76ea500cc">huggingface.co ↗</a>
+213  <a href="model/decision-tinyjev-4b-jevbench-mini.md">TinyJev-4B (JevBench mini)</a>  50±2   source code                 <a href="https://github.com/ankit-aglawe/tinyjev">github.com ↗</a>
+214  <a href="model/decision-nari-decision-4b-v3-2.md">Nari Decision 4B v3.2</a>       49±1   model files                 <a href="https://huggingface.co/blackmallangcow/nari-decision-4b/tree/029c4628a38859dce5b0db1742e9c97545aabe12">huggingface.co ↗</a>
+215  <a href="model/decision-hopper-g-1-2.md">Hopper (G) 1.2 Qwen3.5-4B…</a>  49±1   model files                 <a href="https://huggingface.co/HopitAI/hopper-g/tree/387b2b3995ff9f40b747491cfd3067a258417147">huggingface.co ↗</a>
+216  <a href="model/decision-vllm-sr-d3-nano.md">vLLM-SR d3-nano (2B)</a>        49±1   local               ~8.2GB  <a href="model/decision-vllm-sr-d3-nano.md#run-it-on-your-own-machine">how to run ›</a>
+217  <a href="model/decision-aurelis-2b.md">Aurelis-2B</a>                  49±1   model files                 <a href="https://huggingface.co/Leptos-ai/Aurelis-2B/tree/1b56513618a9de9378440d3bca5e4e163f142279">huggingface.co ↗</a>
+218  <a href="model/decisionbench-zeroentropy-zerank-2-reranker-5eae30d5.md">zerank-2-reranker (Decisi…</a>  49±2†  model files                 <a href="https://huggingface.co/zeroentropy/zerank-2-reranker/tree/5eae30d5ee3c6b2df2ef6d723bde45172d761c4c">huggingface.co ↗</a>
+219  <a href="model/decision-kev-4b-r10.md">Kev 4B r10</a>                  49±1   local                ~11GB  <a href="model/decision-kev-4b-r10.md#run-it-on-your-own-machine">how to run ›</a>
+220  <a href="model/decision-startlux-decision-v1-1-0-8b-instant.md">StartLux-Decision v1.1 0.…</a>  49±1   model files                 <a href="https://huggingface.co/startlux-models/StartLux-Decision-v1.1-0.8B-Instant/tree/6496ae641cc71b149ce9dad69bd97f2a44e7bf11">huggingface.co ↗</a>
+221  <a href="model/decision-vllm-pr57250.md">mmastrac diffgemma (decis…</a>  48±1   source code                 <a href="https://github.com/vllm-project/vllm/pull/57250">github.com ↗</a>
+222  <a href="model/decision-intern-decision-4b.md">InternLM Intern-Decision …</a>  48±1   model files                 <a href="https://huggingface.co/internlm/Intern-Decision-4B/tree/38c9dafbbef52dd04bae943c0c6ac918419adfd5">huggingface.co ↗</a>
+223  <a href="model/solar-decide-flash.md">Solar Decide Flash</a>          48±1   api price unknown           <a href="https://openrouter.ai/upstage/solar-decide-flash">openrouter.ai ↗</a>
+224  <a href="model/decision-razorback-one-read-3e296f08.md">razorback16 diffgemma (de…</a>  48±1   source code                 <a href="https://github.com/vllm-project/vllm/pull/57250">github.com ↗</a>
+225  <a href="model/decision-lev.md">Interfaze lev Qwen3.5-4B …</a>  48±1   model files                 <a href="https://huggingface.co/interfaze-ai/lev/tree/8721908e50dffd5fe8726507c09498e3def5b2f6">huggingface.co ↗</a>
+226  <a href="model/decisionbench-zefancai-open-jev-2b-0c7aa498.md">Open-Jev-2B (DecisionBenc…</a>  48±2†  model files                 <a href="https://huggingface.co/ZefanCai/Open-Jev-2B/tree/0c7aa498b1627be8da4acf34c863ff0ee0a92785">huggingface.co ↗</a>
+227  <a href="model/decision-valen-4b-r2.md">Valen-4B</a>                    48±1   model files                 <a href="https://huggingface.co/Valen-Team/Valen-4B/tree/a94ffc427babf5c8959584ec8cd0cdd701487d6e">huggingface.co ↗</a>
+228  <a href="model/decision-rsi-jev-v5-0-vl-3b.md">RSI-Jev v5.0 VL 3B</a>          48±1   model files                 <a href="https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/tree/66eeaee47dce202c4d802e469ad9b806e0ff6df2">huggingface.co ↗</a>
+229  <a href="model/decision-sieve-2b-v3.md">Sieve 2B v3</a>                 48±1   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-2B-v3/tree/090734211f7d8d306d1a9f350ac19f78513f8267">huggingface.co ↗</a>
+230  <a href="model/decision-lev1-3-7b.md">Lev1 3.7B</a>                   47±1   model files                 <a href="https://huggingface.co/theaviv/Lev1-3.7B/tree/a713e34a53c6009f4af0cd3c1a1c7c127d4ca63a">huggingface.co ↗</a>
+231  <a href="model/decision-ryotide-qwen-v0-3-1.md">Ryotide Qwen v0.3.1 (deci…</a>  47±1   source code                 <a href="https://github.com/csabag/ryotide">github.com ↗</a>
+232  <a href="model/decision-decider-2b-jevbench-mini.md">decider-2b v10 (JevBench …</a>  47±2   source code                 <a href="https://github.com/Mapika/decider">github.com ↗</a>
+233  <a href="model/decision-jev-style-2b-v4.md">Jev-Style 2B v4</a>             47±1   model files                 <a href="https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/tree/61e43347cd7b5342e1b86d85787e9c71112166e0">huggingface.co ↗</a>
+234  <a href="model/decision-saracura-ptbr-4b.md">Saracura PT-BR 4B</a>           46±1   model files                 <a href="https://huggingface.co/felhen-ai/saracura-ptbr-4b/tree/9b27a7be153afee62b778b61eb5d664ce978d3b1">huggingface.co ↗</a>
+235  <a href="model/decision-latentmesh-blitz-2b-v1.md">LatentMesh Blitz 2B v1</a>      46±1   request access              <a href="https://huggingface.co/LatentMesh-Labs/latentmesh-blitz-2b-v1/tree/2ed2944a8b29b4fb8de77750234a068b9a6a978f">huggingface.co ↗</a>
+236  <a href="model/decision-winnow-e4b-q8.md">Winnow-E4B</a>                  46±1   model files                 <a href="https://huggingface.co/EldanRing/Winnow-E4B/tree/17871fd27a880b3f8dad94841774db70e59fca47">huggingface.co ↗</a>
+237  <a href="model/decision-kas-4b.md">Kas 4B</a>                      46±1   model files                 <a href="https://huggingface.co/kpiya/kas-4b/tree/eb59930976ee392cb0557528a7520935f33a386e">huggingface.co ↗</a>
+238  <a href="model/decision-openthai-systemone-jevbench-mini.md">OpenThai-SystemOne (JevBe…</a>  46±2   source code                 <a href="https://github.com/iapp-technology/openthai-systemone">github.com ↗</a>
+239  <a href="model/decision-vera-core-2.md">vera-core-2</a>                 46±1   model files                 <a href="https://huggingface.co/scar-ai/vera-core-2/tree/33eb02b963acec5c0282a61cb5aff0f3f220998a">huggingface.co ↗</a>
+240  <a href="model/decision-kev-4b-jevbench-mini.md">Kev-4B (JevBench mini)</a>      46±2   source code                 <a href="https://github.com/jaredpalmer/kev">github.com ↗</a>
+241  <a href="model/decision-neohorse-jev-4b.md">TokenRhythm NeoHorse-Jev-…</a>  46±1   model files                 <a href="https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/tree/434cb21d3a994a953d3ae5788405fcb2c4970554">huggingface.co ↗</a>
+242  <a href="model/decision-semif.md">SemIf Qwen3.5-4B Base (de…</a>  46±1   source code                 <a href="https://github.com/TheoLeeCJ/SemIf-OpenJev">github.com ↗</a>
+243  <a href="model/decision-rsi-jev-2b-jevbench-mini.md">RSI-Jev v3.0 2B (JevBench…</a>  45±2   source code                 <a href="https://github.com/Shanghua-Gao/RSI-Jev">github.com ↗</a>
+244  <a href="model/decision-metask-jev-4b.md">Metask-Jev-4B</a>               45±1   model files                 <a href="https://huggingface.co/wayfind/metask-jev-4b-policy-mix/tree/ea20fe85b28733b1522721dec119bec50947a869">huggingface.co ↗</a>
+245  <a href="model/decision-jobe.md">Jobe Qwen3.5-4B (decision…</a>  45±1   source code                 <a href="https://github.com/MantisShrimpdev/jobe">github.com ↗</a>
+246  <a href="model/decision-onejev1-6-0-8b.md">OneJev1.6-0.8B</a>              45±1   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.6-0.8B/tree/c89933c277629b707895bff752c61d2b0664c85e">huggingface.co ↗</a>
+247  <a href="model/decision-gliclass-v4-edge.md">GLiClass v4 edge (0.4B)</a>     45±1   local               ~2.7GB  <a href="model/decision-gliclass-v4-edge.md#run-it-on-your-own-machine">how to run ›</a>
+248  <a href="model/decision-jevstral-8b.md">Jevstral 8B</a>                 44±1   model files                 <a href="https://huggingface.co/AmirBraham/jevstral-8b/tree/2470bfd847cf983b9056a0e73e5f0c5edf5efea9">huggingface.co ↗</a>
+249  <a href="model/decision-crystal-0-8b.md">crystal-0.8b</a>                44±1   model files                 <a href="https://huggingface.co/Kyunghwan-kim/crystal-0.8b/tree/befc98ecaf858a5e4cafc11b8921fea709092943">huggingface.co ↗</a>
+250  <a href="model/decision-qev-0-8b.md">QEV-0.8B</a>                    44±4   model files                 <a href="https://huggingface.co/ken-jo/QEV-0.8B/tree/3933310d0637b5721c05633cb07b7de5fd11d050">huggingface.co ↗</a>
+251  <a href="model/decision-openvons.md">openvons Qwen3-4B (decisi…</a>  43±1   source code                 <a href="https://github.com/genai-craft/openvons">github.com ↗</a>
+252  <a href="model/decision-intelif-qwen3-4b.md">Intelif Qwen3-4B</a>            43±1   model files                 <a href="https://huggingface.co/UserMoonlight/intelif-qwen3-4b/tree/872faaf72478e762643657f290aad6fb6ed9f5bc">huggingface.co ↗</a>
+253  <a href="model/decision-crivo-1b.md">Crivo-1B</a>                    43±1   model files                 <a href="https://huggingface.co/tardellirs/crivo-1b/tree/b55d6e9fea9a80384059be2f639c78fe1fa0a892">huggingface.co ↗</a>
+254  <a href="model/decision-vllm-sr-d3-lite.md">vLLM-SR d3-lite (0.8B)</a>      42±1   local               ~4.5GB  <a href="model/decision-vllm-sr-d3-lite.md#run-it-on-your-own-machine">how to run ›</a>
+255  <a href="model/decision-onejev1-5-0-8b.md">OneJev1.5-0.8B</a>              42±4   model files                 <a href="https://huggingface.co/OmniJev/OneJev1.5-0.8B/tree/99d60969338977d3f23a023b1dd7a0fd51946069">huggingface.co ↗</a>
+256  <a href="model/decision-jevhome-ettin-1b-jevbench-mini.md">jevhome-ettin-1b (JevBenc…</a>  42±2   source code                 <a href="https://github.com/Jibril-Frej/jev-at-home">github.com ↗</a>
+257  <a href="model/decision-vela3-fast.md">vLLM-SR vela3-fast (Vela …</a>  42±1   model files                 <a href="https://huggingface.co/vllm-sr/vela3-fast/tree/078c42f90cabdac7964f8e206d95a6f3a1aafacb">huggingface.co ↗</a>
+258  <a href="model/decision-cam1.md">Cam1</a>                        42±1   model files                 <a href="https://huggingface.co/cbuk10001/Cam1/tree/d9ccd7257f3ff5fe8251e91174a09ce30ef3f5e6">huggingface.co ↗</a>
+259  <a href="model/decision-gevva-e4b.md">Gevva E4B</a>                   42±1   model files                 <a href="https://huggingface.co/davidburhans/gevva-e4b/tree/1511be903351e5724379afe51a3ba79a2f4b5c7e">huggingface.co ↗</a>
+260  <a href="model/decisionbench-qwen-qwen3-reranker-4b-22e68366.md">Qwen3-Reranker-4B (Decisi…</a>  41±2†  model files                 <a href="https://huggingface.co/Qwen/Qwen3-Reranker-4B/tree/22e683669bc0f0bd69640a1354a6d0aebcfeede5">huggingface.co ↗</a>
+261  <a href="model/decision-mini-jev.md">mini-jev Qwen3-4B (decisi…</a>  41±1   source code                 <a href="https://github.com/r-ms/mini-jev">github.com ↗</a>
+262  <a href="model/decision-pngwn-space-uncapped-full.md">open-jev (pngwn)</a>            41±1   model files                 <a href="https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b/tree/3ec7785bf6aa1e8b0ade992c85206d46711d86c2">huggingface.co ↗</a>
+263  <a href="model/decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326.md">Decision-1.0-Eos-0.8B (De…</a>  41±1   local               ~5.8GB  <a href="model/decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326.md#run-it-on-your-own-machine">how to run ›</a>
+264  <a href="model/decision-decider-2b-fp8-http.md">Decider 2B</a>                  41±1   model files                 <a href="https://huggingface.co/Mapika/decider-2b/tree/7614a6c7ea5a047aa7d7bcfb1a0015469381c3e3">huggingface.co ↗</a>
+265  <a href="model/decision-this-that-1-2.md">FLock this-that 1.2</a>         40±1   model files                 <a href="https://huggingface.co/flock-io/this-that-model-1.2/tree/c4d1c30b8d512d278726de439b8cc81fccc70c8f">huggingface.co ↗</a>
+266  <a href="model/decision-jdi-ptr14-0-8b.md">jdi-ptr14-0.8b</a>              40±1   model files                 <a href="https://huggingface.co/AnamK/jdi-ptr14-0.8b/tree/5bb55cb177d4f0d344f891af146775be30dbb3c5">huggingface.co ↗</a>
+267  <a href="model/decision-saina-helm-2-v2.md">Saina Helm 2.0 v2</a>           39±1   model files                 <a href="https://huggingface.co/run-saina/saina-helm-2-0.8b/tree/a00e9cda8c5f26d5d403adf9440128d7e85e4251">huggingface.co ↗</a>
+268  <a href="model/decision-valen-2b-r2.md">Valen-2B</a>                    39±1   model files                 <a href="https://huggingface.co/Valen-Team/Valen-2B/tree/44b0a60511e5f1fbeb25d1b943b9d065006ea2f4">huggingface.co ↗</a>
+269  <a href="model/decision-saina-helm-2-omni.md">Saina Helm 2 Omni (0.8B)</a>    39±1   model files                 <a href="https://huggingface.co/run-saina/saina-helm-2-omni-0.8b/tree/d7ee0a54214d4acaaddd6e8225d8f92b40795b33">huggingface.co ↗</a>
+270  <a href="model/decision-exaone-4-0-1-2b-jev-v0-3.md">EXAONE-4.0-1.2B-JEV v0.3</a>    39±1   model files                 <a href="https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/tree/bc5012eabb1c5231cafec849843e51bbb5fb9630">huggingface.co ↗</a>
+271  <a href="model/decision-von-jevbench-mini.md">Von 1.3 (JevBench mini)</a>     39±2   source code                 <a href="https://github.com/wfzyx/von">github.com ↗</a>
+272  <a href="model/decision-decision-2-0-sol-2b.md">vLLM-SR Decision 2.0 Sol …</a>  38±1   local                ~11GB  <a href="model/decision-decision-2-0-sol-2b.md#run-it-on-your-own-machine">how to run ›</a>
+273  <a href="model/decision-sieve-0-8b.md">Sieve 0.8B</a>                  38±1   model files                 <a href="https://huggingface.co/sthanika-ai/Sieve-0.8B/tree/792bab3e270173a32ab7d8912e0441bd748714fe">huggingface.co ↗</a>
+274  <a href="model/decision-amber-0-4b.md">Amber 0.4B</a>                  37±1   model files                 <a href="https://huggingface.co/MLukauskas/amber-0.4b/tree/0ecab0d7bbe8f46d1faca64d3af73d5b697cf1f9">huggingface.co ↗</a>
+275  <a href="model/decisionbench-jaredpalmer-kev-0-6b-dece6dba.md">kev-0.6b (DecisionBench d…</a>  37±2†  model files                 <a href="https://huggingface.co/jaredpalmer/kev-0.6b/tree/dece6dba8d43f0f7ded45e9f5b9df12474d90843">huggingface.co ↗</a>
+276  <a href="model/decision-jiwo-0-8b-v2-r2.md">jiwo 0.8B v2</a>                37±1   model files                 <a href="https://huggingface.co/eljiwo/jiwo-0.8b/tree/71b7911cf68f7df52fdc2dbf07de1e158bb807f2">huggingface.co ↗</a>
+277  <a href="model/decision-gevva-e2b.md">Gevva E2B</a>                   37±1   model files                 <a href="https://huggingface.co/davidburhans/gevva-e2b/tree/1cfb4c4c7688cb7febd20e8d451619dbc2323a7d">huggingface.co ↗</a>
+278  <a href="model/decisionbench-molemo-lab-mojev-0c8695b6.md">mojev (DecisionBench 0c86…</a>  37±2†  request access              <a href="https://huggingface.co/MoLeMo-Lab/mojev/tree/0c8695b6252f4205907433d4e196a94f032e60c3">huggingface.co ↗</a>
+279  <a href="model/decision-crivo-400m.md">Crivo-400M</a>                  37±1   model files                 <a href="https://huggingface.co/tardellirs/crivo-400m/tree/1620098013c2dd8bb9763e79a76740a2d278ee0e">huggingface.co ↗</a>
+280  <a href="model/decision-intern-decision-2b.md">InternLM Intern-Decision …</a>  37±1   model files                 <a href="https://huggingface.co/internlm/Intern-Decision-2B/tree/85c5657708a09884ff9fd8d7f57789b410a97b33">huggingface.co ↗</a>
+281  <a href="model/decision-sieve-2b.md">Sieve 2B</a>                    37±1   model files                 <a href="https://huggingface.co/sthanika-ai/sieve-2b/tree/e9ffdddcefc811086f7342384623913c3915d4eb">huggingface.co ↗</a>
+282  <a href="model/decisionbench-ishesatoshi-smalljev-semantic-v9-8e2bac7c.md">smalljev-semantic-v9 (Dec…</a>  36±2†  model files                 <a href="https://huggingface.co/isHeSatoshi/smalljev-semantic-v9/tree/8e2bac7c4e922371c05899f4f000233e8096fee6">huggingface.co ↗</a>
+283  <a href="model/strands-decider-2b-hobson-v21.md">Strands Decider 2B (Hobso…</a>  36±1   local               ~6.6GB  <a href="model/strands-decider-2b-hobson-v21.md#run-it-on-your-own-machine">how to run ›</a>
+284  <a href="model/decision-vela3-fast-vision-text.md">vLLM-SR vela3-fast-vision…</a>  35±1   model files                 <a href="https://huggingface.co/vllm-sr/vela3-fast-vision/tree/1e13154c1c2137654c79c4a08b912f0085bf9fe8">huggingface.co ↗</a>
+285  <a href="model/decision-wyat-1-800m.md">wyat-1-800m</a>                 34±1   model files                 <a href="https://huggingface.co/teilomillet/wyat-1-800m/tree/552166bdaa102bab14d9c0e4cea893a5a5aa234f">huggingface.co ↗</a>
+286  <a href="model/decision-tasksource-decider-nano-v5.md">tasksource Decider nano v…</a>  34±1   model files                 <a href="https://huggingface.co/tasksource/tasksource-decider-nano/tree/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810">huggingface.co ↗</a>
+287  <a href="model/decision-jev-ettin-150m.md">JEV Ettin 150M</a>              34±1   model files                 <a href="https://huggingface.co/Elfsong/jev-ettin-150m-v16/tree/eae2fdc005c4e19f9bd8c42950120667231503df">huggingface.co ↗</a>
+288  <a href="model/decision-valen-0-8b-r2.md">Valen-0.8B</a>                  34±1   model files                 <a href="https://huggingface.co/Valen-Team/Valen-0.8B/tree/3471bde55167f8d0b16f70988e3a1f76efd79d60">huggingface.co ↗</a>
+289  <a href="model/decision-jpt-0-8b.md">JPT-0.8B Qwen3.5-0.8B LoRA</a>  33±1   model files                 <a href="https://huggingface.co/kirp/jpt-0.8b/tree/5921ae03fbaff98fcbe781c1ff3f1200dc897fd1">huggingface.co ↗</a>
+290  <a href="model/decision-clm-jevbench-mini.md">CLM v0.1 (JevBench mini)</a>    33±2   source code                 <a href="https://github.com/Contrastive-LM/CLM">github.com ↗</a>
+291  <a href="model/decision-laya-typed-jevbench-mini.md">Laya (typed-decisions) (J…</a>  33±2   source code                 <a href="https://github.com/NandhaKishorM/laya">github.com ↗</a>
+292  <a href="model/decision-sifr-0-8b-v3-1.md">Sifr 0.8B v3.1</a>              33±1   model files                 <a href="https://huggingface.co/mohamedlotfy50/sifr-0.8b-v3/tree/fdedb868ae7088335cbde79e3a603d05add66377">huggingface.co ↗</a>
+293  <a href="model/decision-jevhome-e-jevbench-mini.md">jevhome-E (JevBench mini)</a>   33±2   source code                 <a href="https://github.com/Jibril-Frej/jev-at-home">github.com ↗</a>
+294  <a href="model/decision-vllm-sr-d3-edge.md">vLLM-SR d3-edge (0.6B)</a>      33±1   local               ~2.6GB  <a href="model/decision-vllm-sr-d3-edge.md#run-it-on-your-own-machine">how to run ›</a>
+295  <a href="model/decision-mola-150m.md">Mola-150M</a>                   33±1   model files                 <a href="https://huggingface.co/codavidgarcia/mola-150m/tree/fc92bea8ec5240050ae0eb52248187a198e9ea04">huggingface.co ↗</a>
+296  <a href="model/decision-dm-jepa-1-1.md">DM-JEPA 1.1</a>                 33±1   model files                 <a href="https://huggingface.co/DangerLabs/DM-JEPA/tree/6c7b6a6c5ca3bfa5221130fc00cc2c3cbb4a5a8c">huggingface.co ↗</a>
+297  <a href="model/decision-laya-jevbench-mini.md">Laya (english) (JevBench …</a>  33±2   source code                 <a href="https://github.com/NandhaKishorM/laya">github.com ↗</a>
+298  <a href="model/decision-kodiak-v0-2-1b-accuracy.md">Kodiak v0.2 1B (accuracy)</a>   32±1   model files                 <a href="https://huggingface.co/cortex-agent-llc/kodiak-v0.2-1b-accuracy/tree/645b22fe2089f509e22f8d390e311735b4019202">huggingface.co ↗</a>
+299  <a href="model/decision-jev-t5-342m-public-v2.md">JEV FLAN-T5 Large public …</a>  32±1   model files                 <a href="https://huggingface.co/Elfsong/jev-flan-t5-large-20261017-public-v2/tree/97b334940005438cfd846ab14e0d102218719962">huggingface.co ↗</a>
+300  <a href="model/decision-verdict-jevbench-mini.md">Verdict 1.4 (JevBench min…</a>  32±2   source code                 <a href="https://github.com/Heman10x-NGU/Verdict-open-jev">github.com ↗</a>
+301  <a href="model/decision-crivo-150m-v2.md">Crivo-150M v2</a>               32±1   model files                 <a href="https://huggingface.co/tardellirs/crivo-150m/tree/455b3c22138ceded1cbb190ebda8f415bed7bb84">huggingface.co ↗</a>
+302  <a href="model/decision-bekko-v0-400m.md">Bekko System One v0 400M</a>    32±1   model files                 <a href="https://huggingface.co/hotchpotch/bekko-system-one-v0-400m/tree/1960df5602bd93cc8d336fdebd9fb68a30926e13">huggingface.co ↗</a>
+303  <a href="model/decision-vera-spark.md">vera-spark</a>                  31±1   model files                 <a href="https://huggingface.co/scar-ai/vera-spark/tree/6fdfcade87e61fffa37f889fcecd1931f624d346">huggingface.co ↗</a>
+304  <a href="model/decision-decision-2-0-eos-0-8b.md">vLLM-SR Decision 2.0 Eos …</a>  31±1   local               ~5.8GB  <a href="model/decision-decision-2-0-eos-0-8b.md#run-it-on-your-own-machine">how to run ›</a>
+305  <a href="model/decision-decisiontune-1-0.md">DecisionTune 1.0</a>            31±1   model files                 <a href="https://huggingface.co/decision-tune/decisiontune-1.0/tree/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d">huggingface.co ↗</a>
+306  <a href="model/decision-tev1-0-8b.md">Together Tev1 Qwen3.5-0.8B</a>  31±1   model files                 <a href="https://huggingface.co/togethercomputer/Tev1-0.8B-experimental/tree/6bb2dff14b38fea90ddb14d870166ccaf77374e9">huggingface.co ↗</a>
+307  <a href="model/decision-dinah-1.md">Dinah-1</a>                     30±1   model files                 <a href="https://huggingface.co/Lukitaduarte/dinah-1/tree/b518a5e773597a00b13cfdae928ca1fd65c208f1">huggingface.co ↗</a>
+308  <a href="model/decision-kev-0-8b-r15.md">Kev 0.8B r15</a>                30±1   local               ~4.6GB  <a href="model/decision-kev-0-8b-r15.md#run-it-on-your-own-machine">how to run ›</a>
+309  <a href="model/decision-pick-150m-v5.md">PICK-150M v5</a>                30±1   model files                 <a href="https://huggingface.co/lCREEl/pick-150m/tree/16d738a918bcfcb35fe3fc9e14e22a28760bd525">huggingface.co ↗</a>
+310  <a href="model/decision-intern-decision-0-8b.md">InternLM Intern-Decision …</a>  30±1   model files                 <a href="https://huggingface.co/internlm/Intern-Decision-0.8B/tree/42457fafd13d10d0b0d9be46cb30a23caa409994">huggingface.co ↗</a>
+311  <a href="model/decisionbench-deepanwadhwa-opendecision-a51e07b5.md">OpenDecision (DecisionBen…</a>  30±2†  model files                 <a href="https://huggingface.co/MoritzLaurer/ModernBERT-large-zeroshot-v2.0/tree/a51e07b524299e309dd2b88d48b0cfa2bd9ec598">huggingface.co ↗</a>
+312  <a href="model/decision-crivo-68m.md">Crivo-68M</a>                   30±1   model files                 <a href="https://huggingface.co/tardellirs/crivo-68m/tree/9c93d5f78dbe2ff0aed00d82fcb7a4cc8c908a75">huggingface.co ↗</a>
+313  <a href="model/decisionbench-fastino-gliner2-5-decide-0872ab14.md">GLiNER2.5-Decide (Decisio…</a>  30±2†  model files                 <a href="https://huggingface.co/fastino/GLiNER2.5-Decide/tree/0872ab149bd2f8a50ed5fc7ad8cfc3293e9a3bad">huggingface.co ↗</a>
+314  <a href="model/decision-d1-omni-600m.md">LiquidAI d1-omni-600M</a>       30±1   local               ~2.7GB  <a href="model/decision-d1-omni-600m.md#run-it-on-your-own-machine">how to run ›</a>
+315  <a href="model/decisionbench-convaiinnovations-laya-typed-decisions-bc76315b.md">laya-typed-decisions (Dec…</a>  29±2   model files                 <a href="https://huggingface.co/convaiinnovations/laya-typed-decisions/tree/bc76315b568af04bc19f133c8bca9a2b3a2d9905">huggingface.co ↗</a>
+316  <a href="model/decision-bosun-v3-1-1-7b.md">Bosun v3.1 1.7B LoRA</a>        29±1   model files                 <a href="https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b/tree/1d8dc82a20e4a32ed60927a47272d6efff48eed2">huggingface.co ↗</a>
+317  <a href="model/decision-decision-2-0-kai-0-6b.md">vLLM-SR Decision 2.0 Kai …</a>  29±1   local               ~3.7GB  <a href="model/decision-decision-2-0-kai-0-6b.md#run-it-on-your-own-machine">how to run ›</a>
+318  <a href="model/decision-mola-68m.md">Mola-68M</a>                    29±1   model files                 <a href="https://huggingface.co/codavidgarcia/mola-68m/tree/186ea4358b70596513cf21425a9aa51c6b1353d4">huggingface.co ↗</a>
+319  <a href="model/decision-jev-ettin-400m.md">JEV Ettin 400M</a>              29±1   model files                 <a href="https://huggingface.co/Elfsong/jev-ettin-400m-20261013-v0/tree/fa19b65df304893b43390780f4ab4eac5a23d221">huggingface.co ↗</a>
+320  <a href="model/decisionbench-final-bench-ztc-judge-4b-b0bb1603.md">ZTC-Judge-4B (DecisionBen…</a>  29±2†  model files                 <a href="https://huggingface.co/FINAL-Bench/ZTC-Judge-4B/tree/b0bb16038d7adbca6f4edda90ac72fb960d8319f">huggingface.co ↗</a>
+321  <a href="model/decision-jev-style-0-8b-v3.md">Jev-Style 0.8B v3</a>           28±1   model files                 <a href="https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/tree/96314bd83d7b51d415ffa1497405f0f919db43e8">huggingface.co ↗</a>
+322  <a href="model/decisionbench-mixedbread-ai-mxbai-rerank-base-v2-3ea9d4df.md">mxbai-rerank-base-v2 (Dec…</a>  27±2†  model files                 <a href="https://huggingface.co/mixedbread-ai/mxbai-rerank-base-v2/tree/3ea9d4dffa7d12a4f366be8e275c349de9fc9865">huggingface.co ↗</a>
+323  <a href="model/decisionbench-com-kotobalabs-open-jev-deberta-v3-large-19bf9a64.md">open-jev-deberta-v3-large…</a>  27±2   model files                 <a href="https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/tree/19bf9a64815add579fbf6c907bef584d9277a8e4">huggingface.co ↗</a>
+324  <a href="model/decision-crivo-32m-v2.md">Crivo-32M v2</a>                27±1   model files                 <a href="https://huggingface.co/tardellirs/crivo-32m/tree/141bf5c0077f266936be785452f2140c80f59c5a">huggingface.co ↗</a>
+325  <a href="model/decision-lfm2600.md">LFM2.5-2.6B-RLCD</a>            26±1   model files                 <a href="https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD/tree/31455458983bdbdc41b69ebbcedabd0d5de299c9">huggingface.co ↗</a>
+326  <a href="model/decisionbench-fastino-gliner2-large-v1-f32ea6ef.md">gliner2-large-v1 (Decisio…</a>  26±2†  model files                 <a href="https://huggingface.co/fastino/gliner2-large-v1/tree/f32ea6ef6e26d8264fdc72431b4b3b041eadc537">huggingface.co ↗</a>
+327  <a href="model/decisionbench-heman10x-rlcd-modernbert-151m-8af2496e.md">rlcd-modernbert-151m (Dec…</a>  26±2†  model files                 <a href="https://huggingface.co/heman10x/rlcd-modernbert-151m/tree/8af2496eb63c7fa66d7d234e1f62629380030eb4">huggingface.co ↗</a>
+328  <a href="model/decision-jevk5-lite.md">JevK5 Lite</a>                  25±1   model files                 <a href="https://huggingface.co/alibiserikbay/JevK5-Lite/tree/315ee211f828a899161477c534cea23e84ba3568">huggingface.co ↗</a>
+329  <a href="model/decision-von-1-3.md">Von 1.3</a>                     25±1   model files                 <a href="https://huggingface.co/wfzyx/von/tree/3a34cbdfaa1e90f2a9eb6b3bfc5ac5c92a18cb01">huggingface.co ↗</a>
+330  <a href="model/decision-bosun-v3-1-0-6b.md">Bosun v3.1 0.6B LoRA</a>        25±1   model files                 <a href="https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b/tree/5e78a37c8d86860ebac9ef2d5327d6299498498e">huggingface.co ↗</a>
+331  <a href="model/decisionbench-convaiinnovations-laya-1c5edc17.md">laya (DecisionBench 1c5ed…</a>  25±1   local               ~1.7GB  <a href="model/decisionbench-convaiinnovations-laya-1c5edc17.md#run-it-on-your-own-machine">how to run ›</a>
+332  <a href="model/decisionbench-jaredpalmer-kev-0-5b-9ce2fd39.md">kev-0.5b (DecisionBench 9…</a>  24±2†  model files                 <a href="https://huggingface.co/jaredpalmer/kev-0.5b/tree/9ce2fd39db3a397c89733f94af948e3d1fdfffcd">huggingface.co ↗</a>
+333  <a href="model/decision-crivo-17m.md">Crivo-17M</a>                   24±1   model files                 <a href="https://huggingface.co/tardellirs/crivo-17m/tree/8e42a0dbc309ca3360bfa94ebfd30061d6994ba7">huggingface.co ↗</a>
+334  <a href="model/decision-bekko-v0-68m.md">Bekko System One v0 68M</a>     24±1   model files                 <a href="https://huggingface.co/hotchpotch/bekko-system-one-v0-68m/tree/ab7685f23e5edbc1acb12ced4f2c4e12591efa69">huggingface.co ↗</a>
+335  <a href="model/decision-lavoir.md">MoganAI Lavoir ModernBERT…</a>  24±1   model files                 <a href="https://huggingface.co/moganai/lavoir/tree/4c5eaeb99b2368f1416b9893c7aacc58235aa09f">huggingface.co ↗</a>
+336  <a href="model/decision-gliner-decide.md">GLiNER2.5-Decide</a>            23±1   model files                 <a href="https://huggingface.co/fastino/GLiNER2.5-Decide/tree/9d1bfb848cd16d93ee56ccbc59cd92bf0f284d90">huggingface.co ↗</a>
+337  <a href="model/decision-prumo.md">Prumo (rule-based engine)</a>   23±1   source code                 <a href="https://huggingface.co/tardellirs/prumo/tree/5d7c9ef87490ed88e19b57f798e4036c8516f474">huggingface.co ↗</a>
+338  <a href="model/decisionbench-fastino-gliner2-5-small-v1-7e6f537f.md">gliner2.5-small-v1 (Decis…</a>  23±2†  model files                 <a href="https://huggingface.co/fastino/gliner2.5-small-v1/tree/7e6f537f10337497069276892a5ef435028252ce">huggingface.co ↗</a>
+339  <a href="model/decision-harsha.md">Qwen-2.5-1B-RLCD (decisio…</a>  21±1   source code                 <a href="https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD/tree/2af86848be75847ccb3553b0941cc51d6ef7e4e9">huggingface.co ↗</a>
+340  <a href="model/decision-laya-1e28ac20.md">Laya</a>                        21±1   model files                 <a href="https://huggingface.co/convaiinnovations/laya/tree/7b928d828b7b0e022f929d9bd2e44165aa270148">huggingface.co ↗</a>
+341  <a href="model/decision-verdict-8af2496e.md">Verdict</a>                     21±1   model files                 <a href="https://huggingface.co/heman10x/rlcd-modernbert-151m/tree/8af2496eb63c7fa66d7d234e1f62629380030eb4">huggingface.co ↗</a>
+342  <a href="model/decision-jeff-uncapped.md">jeff GLiFormer-large (dec…</a>  21±1   source code                 <a href="https://github.com/logan-markewich/jeff">github.com ↗</a>
+343  <a href="model/decision-clm-v0-1-8b.md">CLM-v0.1-8B Qwen3-8B heads</a>  20±1   local                ~15GB  <a href="model/decision-clm-v0-1-8b.md#run-it-on-your-own-machine">how to run ›</a>
+344  <a href="model/decisionbench-fastino-gliner2-5-base-v1-1a8bc24e.md">gliner2.5-base-v1 (Decisi…</a>  20±2†  model files                 <a href="https://huggingface.co/fastino/gliner2.5-base-v1/tree/1a8bc24e00dc7300b9017c81d63e3dcdabb26596">huggingface.co ↗</a>
+345  <a href="model/decisionbench-fastino-gliner2-5-multi-v1-a221b77a.md">gliner2.5-multi-v1 (Decis…</a>  20±2†  model files                 <a href="https://huggingface.co/fastino/gliner2.5-multi-v1/tree/a221b77a8baf4a613b8f8652661d41fa10a5641e">huggingface.co ↗</a>
+346  <a href="model/decisionbench-c-tianyu-nanojev-4a19595e.md">NanoJev (DecisionBench 4a…</a>  19±2†  model files                 <a href="https://huggingface.co/C-Tianyu/NanoJev/tree/4a19595eada0857133c0d2be024f879a4077054b">huggingface.co ↗</a>
+347  <a href="model/decision-bekko-v0-17m.md">Bekko System One v0 17M</a>     19±1   model files                 <a href="https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/tree/b886a1f9b91f4e8368d7830080d52d955e2c8dfa">huggingface.co ↗</a>
+348  <a href="model/decisionbench-baai-bge-reranker-v2-m3-953dc6f6.md">bge-reranker-v2-m3 (Decis…</a>  19±2†  model files                 <a href="https://huggingface.co/BAAI/bge-reranker-v2-m3/tree/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e">huggingface.co ↗</a>
+349  <a href="model/decision-akash-gemma.md">system-one-gemma</a>            18±1   source code                 <a href="https://github.com/akash-kamat/system-one-gemma">github.com ↗</a>
+350  <a href="model/decision-julia-1.md">Supersonic Labs Julia 1</a>     18±1   model files                 <a href="https://huggingface.co/SupersonicLabs/Julia-1/tree/a85b127321d580d65176c89ced8273f305745d85">huggingface.co ↗</a>
+351  <a href="model/decisionbench-kalm-embedding-kalm-reranker-v1-small-r2-d1c8fdf9.md">KaLM-Reranker-V1-Small-R2…</a>  18±2†  model files                 <a href="https://huggingface.co/KaLM-Embedding/KaLM-Reranker-V1-Small-R2/tree/d1c8fdf974e904da12f700e700eca6c868426001">huggingface.co ↗</a>
+352  <a href="model/decisionbench-kalm-embedding-kalm-reranker-v1-nano-r2-3902d645.md">KaLM-Reranker-V1-Nano-R2 …</a>  17±2†  model files                 <a href="https://huggingface.co/KaLM-Embedding/KaLM-Reranker-V1-Nano-R2/tree/3902d6453ea915007dcbf88fbc8a1d7dd5f8df10">huggingface.co ↗</a>
+353  <a href="model/decision-nirnaya-0-4b.md">Nirnaya 0.4B</a>                16±1   model files                 <a href="https://huggingface.co/kshitijthakkar/nirnaya-0.4b-0.2a-decision/tree/8d81850e41ae31a423d89aaf0b8bd77e946df502">huggingface.co ↗</a>
+354  <a href="model/decision-lfm350-sdpa.md">LFM2.5-350M-RLCD</a>            16±1   model files                 <a href="https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD/tree/deb589d803d141cabd158ef55f6617b128529f36">huggingface.co ↗</a>
+355  <a href="model/decision-zev-latest.md">Zev (decision readout)</a>      15±1   source code                 <a href="https://github.com/bhubbard/zev-rs">github.com ↗</a>
+356  <a href="model/decisionbench-alibaba-nlp-gte-reranker-modernbert-base-f7481e60.md">gte-reranker-modernbert-b…</a>   7±2†  model files                 <a href="https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base/tree/f7481e6055501a30fb19d090657df9ec1f79ab2c">huggingface.co ↗</a>
+357  <a href="model/decisionbench-altslate-certo-decision-model-7628c0da.md">certo-decision-model (Dec…</a>   7±2†  model files                 <a href="https://huggingface.co/altslate/certo-decision-model/tree/7628c0da918c5fce96a6629c548630ac6bed8c58">huggingface.co ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 322 of 343 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 357 of 357 catalogue models listed here · [sources and licences](method.md#sources)

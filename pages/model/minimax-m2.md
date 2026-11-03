@@ -28,7 +28,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [o3-pro](o3-pro.md), [Grok 4.3
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   53.5%  ▆··▆▄▂▄▂●▆█▄ beats 14/23  very hard · avg 13%      11%  sharp · at its level
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 38%         10%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (maker)</a>             87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 38%         10%  sharp · small run
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 6.1%    8.8%  sharp
 </pre>
 
@@ -130,6 +130,6 @@ Other versions: ud-q2_k_xl (~69.5 GB) `llama cli -hf unsloth/MiniMax-M2-GGUF:UD-
 
 Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/MiniMax-M2-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2)
+Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2)
 
 [interactive version](https://whatmodel.sh/model/minimax-m2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

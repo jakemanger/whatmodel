@@ -58,9 +58,9 @@ test            result  vs the others in its run    difficulty  counts  why
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   65.0%  █●·····▃···▃ beats 3/5    medium · avg 48%     26%  sharp · at its level
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   73.6%  █●·····▃···▃ beats 3/5    medium · avg 60%     19%  sharp · at its level
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>   65.0%  █●·····▃···▃ beats 3/5    medium · avg 48%     26%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>   73.6%  █●·····▃···▃ beats 3/5    medium · avg 60%     19%  sharp · at its level
 </pre>
 
 </details>
@@ -68,8 +68,8 @@ test             result  vs the others in its run  difficulty        counts  why
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   70.8%  █·█·█●█····█ beats 3/5    medium · avg 52%     26%  sharp · at its level
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (maker)</a>   70.8%  █·█·█●█····█ beats 3/5    medium · avg 52%     26%  sharp · at its level
 </pre>
 
 </details>

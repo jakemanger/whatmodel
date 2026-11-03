@@ -26,12 +26,12 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                      29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 75%       26%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2402.19173v1">HumanEval (maker)</a>                    29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 75%       26%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 37.4%  █·▅▃●▃▅▃▃▅·▅ beats 6/15   easy · avg 81%       18%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 62%     12%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           31.3%  ▁··▁●▂█▇▁··▁ beats 4/22   medium · avg 56%    8.5%  at its level · several runs
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 54%    7.5%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 49%    7.2%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (maker)</a>                      23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 49%    7.2%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.3%  ▄▇●▃▄▇▄▁▇▃·▁ beats 11/35  medium · avg 46%    6.3%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.9%  ▁·▁▁▄●█▄█▁▅▅ beats 11/35  medium · avg 51%    5.1%  sharp
 </pre>
@@ -43,8 +43,8 @@ test                                result  vs the others in its run  difficulty
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 75%    7.0%  sharp · at its level
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (maker)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 75%    7.0%  sharp · at its level
 </pre>
 
 </details>
@@ -141,6 +141,6 @@ Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/starcoderbase-GGUF:
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase)
+Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase)
 
 [interactive version](https://whatmodel.sh/model/starcoderbase) · [JSON](https://whatmodel.sh/api?format=json&all=1)

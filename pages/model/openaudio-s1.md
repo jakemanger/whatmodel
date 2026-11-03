@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · proprietary
 
-**score 71.4** ±7.5 · #1 of 119 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 71.4** ±7.5 · #1 of 119 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -46,10 +46,10 @@ test                                result  vs the others in its run  counts  wh
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                results  share of the score
-<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (lab)</a>        2   77% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   23% ▇▇▇
-weighted average                               = 71.4
+source                                    results  share of the score
+<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (submitt…</a>        2   77% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       23% ▇▇▇
+weighted average                                   = 71.4
 </pre>
 
 <sub>Licences: Fish Audio S2 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

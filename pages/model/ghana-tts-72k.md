@@ -6,7 +6,7 @@
 
 GhanaNLP · released 2026-06 · 0.652B params · mit
 
-**score 61.9** ±7.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 61.9** ±7.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,10 +35,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="nsanku-tts-benchmark-mit"></a><a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark (lab)</a>           1   79% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            21% ▇▇▇
-weighted average                        = 61.9
+source                                    results  share of the score
+<a name="nsanku-tts-benchmark-mit"></a><a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json">nsanku TTS Benchmark (submitted / maker…</a>        1   79% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       21% ▇▇▇
+weighted average                                   = 61.9
 </pre>
 
 <sub>Licences: nsanku TTS Benchmark ([MIT](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/README.md))</sub>
@@ -47,6 +47,6 @@ weighted average                        = 61.9
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/ghananlpcommunity](https://huggingface.co/ghananlpcommunity/ghana-tts-72k)
+Model repository and documentation: [huggingface.co/ghananlpcommunity](https://huggingface.co/ghananlpcommunity/ghana-tts-72k)
 
 [interactive version](https://whatmodel.sh/model/ghana-tts-72k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

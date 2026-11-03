@@ -55,6 +55,6 @@ weighted average                                   = 43.8
 
 Other versions: fp32 (mlx-audio) (~0.65 GB, Mac only) `pip install mlx-audio g2p_en && mlx_audio.tts.generate --model mlx-community/MeloTTS-English-MLX --text 'Hello, world!' --voice EN-US`
 
-Official weights and documentation: [huggingface.co/myshell-ai](https://huggingface.co/myshell-ai/MeloTTS-English)
+Model repository and documentation: [huggingface.co/myshell-ai](https://huggingface.co/myshell-ai/MeloTTS-English)
 
 [interactive version](https://whatmodel.sh/model/melotts-english) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -119,6 +119,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/featherless-ai-quants/BAAI-Infi
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-3M-0625-Llama3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Llama3-8B)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Llama3-8B)
 
 [interactive version](https://whatmodel.sh/model/infinity-instruct-3m-0625-llama3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

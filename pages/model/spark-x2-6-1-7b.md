@@ -6,7 +6,7 @@
 
 iFLYTEK (SparkLLM) · released 2026-10 · 1.708B params · apache-2.0
 
-**score 58.6** ±1.0 · #217 of 732 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.6** ±1.0 · #217 of 732 · from 17 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,10 +30,10 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Pro (split unspecified)…</a>   26.7%  ▂·▁▁▁▁●▃█▇▂▁ beats 13/58   very hard · avg 9.8%    8.2%  sharp
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Verified (lab)</a>             59.8%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 56/138  hard · avg 19%          3.9%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">BrowseComp (lab)</a>                     41.7%  ▂·▃▁▂▂●▅█▂▂▄ beats 15/46   hard · avg 21%          3.7%  at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">τ²-bench aggregate (lab)</a>             85.3%  ▁▁▁·▁▁▃▃▃▄●▁ beats 29/39   medium · avg 54%        3.7%  at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Multilingual (lab)</a>         57.3%  ▁··▁▃▁●██▂▂▁ beats 19/65   hard · avg 25%          3.4%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Verified (maker)</a>           59.8%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 56/138  hard · avg 19%          3.9%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">BrowseComp (maker)</a>                   41.7%  ▂·▃▁▂▂●▅█▂▂▄ beats 15/46   hard · avg 21%          3.7%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">τ²-bench aggregate (maker)</a>           85.3%  ▁▁▁·▁▁▃▃▃▄●▁ beats 29/39   medium · avg 54%        3.7%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Multilingual (maker)</a>       57.3%  ▁··▁▃▁●██▂▂▁ beats 19/65   hard · avg 25%          3.4%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">BFCL V4 (December 2025 archive) (…</a>   55.2%  ▁▁▁▂▆▆▅▆●▂▄▃ beats 85/114  medium · avg 40%        3.1%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">Humanity's Last Exam with tools (…</a>   19.9%  ▁·▁▂●▁▄▄▇█▄▅ beats 7/62    very hard · avg 11%     2.5%  typical
 </pre>
@@ -47,9 +47,9 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Pro (split unspecified)…</a>   26.7%  ▂·▁▁▁▁●▃█▇▂▁ beats 13/58   very hard · avg 9.8%    8.2%  sharp
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Verified (lab)</a>             59.8%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 56/138  hard · avg 19%          3.9%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Multilingual (lab)</a>         57.3%  ▁··▁▃▁●██▂▂▁ beats 19/65   hard · avg 25%          3.4%  at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SciCode (level unspecified) (lab)</a>    20.1%  ▁····●▃▄▅█▆▂ beats 3/40    very hard · avg 14%     3.4%  typical
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Verified (maker)</a>           59.8%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 56/138  hard · avg 19%          3.9%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SWE-bench Multilingual (maker)</a>       57.3%  ▁··▁▃▁●██▂▂▁ beats 19/65   hard · avg 25%          3.4%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">SciCode (level unspecified) (make…</a>   20.1%  ▁····●▃▄▅█▆▂ beats 3/40    very hard · avg 14%     3.4%  typical
 </pre>
 
 </details>
@@ -70,10 +70,10 @@ test                                result  vs the others in its run    difficul
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">AIME 2026 (lab)</a>            70.1%  ▁▁▁▂●▂▆█▆▂·▁ beats 10/52  medium · avg 53%    9.1%  sharp
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">HMMT February 2026 (lab)</a>   48.8%  ▃▃▂●·████▅▃▅ beats 6/35   hard · avg 32%      8.6%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">IMO-AnswerBench (lab)</a>      47.1%  ▁▁·●▁▁▄▆█▄▂▃ beats 4/44   hard · avg 32%      7.4%  at its level
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">AIME 2026 (maker)</a>            70.1%  ▁▁▁▂●▂▆█▆▂·▁ beats 10/52  medium · avg 53%    9.1%  sharp
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">HMMT February 2026 (maker)</a>   48.8%  ▃▃▂●·████▅▃▅ beats 6/35   hard · avg 32%      8.6%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">IMO-AnswerBench (maker)</a>      47.1%  ▁▁·●▁▁▄▆█▄▂▃ beats 4/44   hard · avg 32%      7.4%  at its level
 </pre>
 
 </details>
@@ -84,7 +84,7 @@ Beats [MiniCPM5 2B](minicpm5-2b.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 12B](
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">BrowseComp (lab)</a>                     41.7%  ▂·▃▁▂▂●▅█▂▂▄ beats 15/46  hard · avg 21%         3.7%  at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">BrowseComp (maker)</a>                   41.7%  ▂·▃▁▂▂●▅█▂▂▄ beats 15/46  hard · avg 21%         3.7%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">Humanity's Last Exam with tools (…</a>   19.9%  ▁·▁▂●▁▄▄▇█▄▅ beats 7/62   very hard · avg 11%    2.5%  typical
 </pre>
 
@@ -94,10 +94,10 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">GPQA Diamond (lab)</a>                   56.1%  ▁▁▁▁▂▄▅●███▄ beats 103/322  hard · avg 38%           15%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">GPQA (subset unspecified) (lab)</a>      51.3%  ▂▁▂▂▄▃▆●▅█▃▃ beats 53/106   hard · avg 37%           10%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">LongBench v2 (lab)</a>                   40.4%  ▂·▁·▂▃▁●▄▃█▄ beats 11/33    very hard · avg 32%     5.8%  typical
-<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">Humanity's Last Exam (lab)</a>            8.7%  ▁▁▁▄●▆▇██▆▁▃ beats 16/111   very hard · avg 3.8%    5.1%  typical
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">GPQA Diamond (maker)</a>                 56.1%  ▁▁▁▁▂▄▅●███▄ beats 103/322  hard · avg 38%           15%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">GPQA (subset unspecified) (maker)</a>    51.3%  ▂▁▂▂▄▃▆●▅█▃▃ beats 53/106   hard · avg 37%           10%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">LongBench v2 (maker)</a>                 40.4%  ▂·▁·▂▃▁●▄▃█▄ beats 11/33    very hard · avg 32%     5.8%  typical
+<a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">Humanity's Last Exam (maker)</a>          8.7%  ▁▁▁▄●▆▇██▆▁▃ beats 16/111   very hard · avg 3.8%    5.1%  typical
 <a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">IFBench (aggregation unspecified)…</a>   65.5%  ▂▆▂▄▄▄▂▄●▆█▇ beats 48/86    medium · avg 49%        3.5%  at its level
 </pre>
 
@@ -108,10 +108,10 @@ test                                result  vs the others in its run    difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="spark-x26-cards"></a><a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">Spark-X2.6 model cards (lab)</a>        17  100% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             0% ▇
-weighted average                        = 58.6
+source                                    results  share of the score
+<a name="spark-x26-cards"></a><a href="https://huggingface.co/XHToken/Spark-X2.6-1.7B/blob/f18c032c7675f807c0fdffe281dbe124edba2605/images/all_benchmark.svg">Spark-X2.6 model cards (submitted / mak…</a>       17  100% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 58.6
 </pre>
 
 <sub>Licences: Spark-X2.6 model cards ([Apache-2.0](../../licenses/spark-x26.txt))</sub>
@@ -174,6 +174,6 @@ Other versions: Q8_0 (~1.8201 GB) `lms get https://huggingface.co/XHToken/Spark-
 
 Other versions: Q8_0 (~1.8201 GB) `ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF` · BF16 (~3.4209 GB) `ollama run hf.co/XHToken/Spark-X2.6-1.7B-GGUF`
 
-Official weights and documentation: [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B)
+Model repository and documentation: [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.6-1.7B)
 
 [interactive version](https://whatmodel.sh/model/spark-x2-6-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

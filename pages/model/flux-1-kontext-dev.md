@@ -106,6 +106,6 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 Other versions: gguf-q8_0 (sd.cpp) (~28.2 GB) `sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu`
 
-Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev)
+Model repository and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev)
 
 [interactive version](https://whatmodel.sh/model/flux-1-kontext-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

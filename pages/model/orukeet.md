@@ -51,6 +51,6 @@ weighted average                                   = 56.5
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/orukeet-gguf orukeet-Q8_0.gguf --local-dir models/orukeet && build/bin/transcribe-cli -m models/orukeet/orukeet-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/oruk](https://huggingface.co/oruk/orukeet)
+Model repository and documentation: [huggingface.co/oruk](https://huggingface.co/oruk/orukeet)
 
 [interactive version](https://whatmodel.sh/model/orukeet) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -28,13 +28,13 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.8-Omni-Flash](qwen3-
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   74.8%  ▁··▁·▁▂▁▄●▄▁ beats 17/29  hard · avg 19%           33%  sharp
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     77.3%  ●··█▄··▄·▄█▄ beats 0/8    medium · avg 38%         17%  typical
-<a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (lab)</a>    51.9%  ▃··▃··▃··●█▅ beats 3/8    very hard · avg 13%      12%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>             77.3%  ██···██··█●█ beats 5/6    hard · avg 15%           11%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>                   77.3%  ●··█▄··▄·▄█▄ beats 0/8    medium · avg 38%         17%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (make…</a>   51.9%  ▃··▃··▃··●█▅ beats 3/8    very hard · avg 13%      12%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (maker)</a>           77.3%  ██···██··█●█ beats 5/6    hard · avg 15%           11%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.8%    8.5%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 16%          8.2%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (maker)</a>             64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 16%          8.2%  at its level
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    3.6%  ▁▁·▁▁●▁▅▃█▅█ beats 4/27   very hard · avg 2.4%    4.9%  typical
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 29%          4.8%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 29%          4.8%  blunt · at its level
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Dee
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   74.8%  ▁··▁·▁▂▁▄●▄▁ beats 17/29  hard · avg 19%           33%  sharp
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.8%    8.5%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 29%          4.8%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 29%          4.8%  blunt · at its level
 </pre>
 
 </details>
@@ -57,8 +57,8 @@ test                                result  vs the others in its run  difficulty
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 
 <pre>
-test              result  vs the others in its run  difficulty        counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>   77.3%  ●··█▄··▄·▄█▄ beats 0/8    medium · avg 38%     17%  typical
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (maker)</a>   77.3%  ●··█▄··▄·▄█▄ beats 0/8    medium · avg 38%     17%  typical
 </pre>
 
 </details>

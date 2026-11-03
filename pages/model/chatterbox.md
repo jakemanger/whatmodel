@@ -62,7 +62,7 @@ api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resem
 
 Other versions: fp32 (~2.9 GB, Mac only) `pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"` · fp32 (chatterbox-tts 0.1.7) (~3.19 GB) `pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cpu'); ta.save('out.wav', m.generate('Hello world'), m.sr)"`
 
-Official weights and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox)
+Model repository and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox)
 
 ## Published speed measurements
 

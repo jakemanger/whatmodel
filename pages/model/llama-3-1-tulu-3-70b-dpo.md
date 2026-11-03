@@ -26,8 +26,8 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Ins
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.6%  ▁▁▃▄▆██●▃▃▁▁ beats 127/155  medium · avg 43%    5.7%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (lab)</a>      82.6%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 16/25    easy · avg 78%      3.1%  small run
+<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (m…</a>   49.6%  ▁▁▃▄▆██●▃▃▁▁ beats 127/155  medium · avg 43%    5.7%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (maker)</a>    82.6%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 16/25    easy · avg 78%      3.1%  small run
 </pre>
 
 </details>
@@ -37,11 +37,11 @@ test                                result  vs the others in its run    difficul
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 28%           29%  sharp · at its level
-<a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 190/206  easy · avg 84%          8.4%  sharp · small run
-<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 54%        7.2%  at its level · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/197   very hard · avg 7.2%    5.9%  sharp · noisy
+test                               result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                        42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 28%           29%  sharp · at its level
+<a href="https://arxiv.org/html/2411.15124v5">GSM8K (maker)</a>                       93.5%  ▂▂▂▂▃▄▅▇██▆● beats 190/206  easy · avg 84%          8.4%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (maker)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 54%        7.2%  at its level · small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/197   very hard · avg 7.2%    5.9%  sharp · noisy
 </pre>
 
 </details>
@@ -49,13 +49,13 @@ test                             result  vs the others in its run    difficulty 
 <details><summary>other tests (6)</summary>
 
 <pre>
-test                  result  vs the others in its run    difficulty        counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>           46.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 54/211   hard · avg 39%       18%  sharp · at its level
-<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   84.8%  ▁▁▁▁▂▄▅▆█▃●▁ beats 144/155  easy · avg 75%       10%  sharp · small run
-<a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>             83.3%  ▁▁▁▁▁▂▂▅██●▄ beats 180/214  easy · avg 77%      8.0%  small run
-<a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>            46.3%  ▁▂▁▃▃█▂█▆▅▁● beats 37/40    hard · avg 34%      3.0%  at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.1%  ▃▅█▅·▃·▆●▂▁▃ beats 37/44    medium · avg 62%    1.2%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>   67.9%  █▇▇▄▂▄▁▆●▄▁▁ beats 70/79    medium · avg 59%    0.3%  blunt · at its level · small run
+test                    result  vs the others in its run    difficulty        counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>             46.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 54/211   hard · avg 39%       18%  sharp · at its level
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (maker)</a>   84.8%  ▁▁▁▁▂▄▅▆█▃●▁ beats 144/155  easy · avg 75%       10%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">MMLU (maker)</a>             83.3%  ▁▁▁▁▁▂▂▅██●▄ beats 180/214  easy · avg 77%      8.0%  small run
+<a href="https://arxiv.org/html/2411.15124v5">PopQA (maker)</a>            46.3%  ▁▂▁▃▃█▂█▆▅▁● beats 37/40    hard · avg 34%      3.0%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">DROP (maker)</a>             74.1%  ▃▅█▅·▃·▆●▂▁▃ beats 37/44    medium · avg 62%    1.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (maker)</a>   67.9%  █▇▇▄▂▄▁▆●▄▁▁ beats 70/79    medium · avg 59%    0.3%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -163,6 +163,6 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/Llama-3.1-Tulu-3-
    vllm serve allenai/Llama-3.1-Tulu-3-70B-DPO
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-tulu-3-70b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

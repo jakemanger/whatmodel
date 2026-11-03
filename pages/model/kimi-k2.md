@@ -201,6 +201,6 @@ Other versions: ud-q2_k_xl (~300.5 GB) `lms get https://huggingface.co/unsloth/K
    mlx_lm.server --model mlx-community/Kimi-K2-Instruct-4bit
    ```
 
-Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2-Instruct)
+Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2-Instruct)
 
 [interactive version](https://whatmodel.sh/model/kimi-k2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

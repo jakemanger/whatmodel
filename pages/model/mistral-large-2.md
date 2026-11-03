@@ -193,6 +193,6 @@ Other versions: Q8_0 (~130.3 GB) `lms get https://huggingface.co/lmstudio-commun
    mlx_lm.server --model sjug/Mistral-Large-Instruct-2411-8bit
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-Instruct-2411)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-Instruct-2411)
 
 [interactive version](https://whatmodel.sh/model/mistral-large-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

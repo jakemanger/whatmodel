@@ -107,6 +107,6 @@ Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/mradermacher/Qwen
 
 Other versions: Q8_0 (~8.2 GB) `ollama run hf.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF:Q8_0`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-audio-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

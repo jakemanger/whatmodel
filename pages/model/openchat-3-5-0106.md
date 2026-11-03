@@ -134,6 +134,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/openchat
 
 Other versions: Q8_0 (~9.19 GB) `ollama run openchat:7b-v3.5-0106-q8_0`
 
-Official weights and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat-3.5-0106)
+Model repository and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat-3.5-0106)
 
 [interactive version](https://whatmodel.sh/model/openchat-3-5-0106) · [JSON](https://whatmodel.sh/api?format=json&all=1)

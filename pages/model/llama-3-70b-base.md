@@ -91,6 +91,6 @@ weighted average                                 = 47.4
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meta-llama/Meta-Llama-3-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Meta-Llama-3-70B)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Meta-Llama-3-70B)
 
 [interactive version](https://whatmodel.sh/model/llama-3-70b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

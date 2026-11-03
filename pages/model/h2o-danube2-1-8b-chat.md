@@ -131,6 +131,6 @@ Other versions: Q8_0 (~1.9 GB) `ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGU
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='h2oai/h2o-danube2-1.8b-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat)
+Model repository and documentation: [huggingface.co/h2oai](https://huggingface.co/h2oai/h2o-danube2-1.8b-chat)
 
 [interactive version](https://whatmodel.sh/model/h2o-danube2-1-8b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

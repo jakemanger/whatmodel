@@ -131,6 +131,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/TheBloke/meditron-7B-GGUF:Q8_0`
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/epfl-llm](https://huggingface.co/epfl-llm/meditron-7b)
+Model repository and documentation: [huggingface.co/epfl-llm](https://huggingface.co/epfl-llm/meditron-7b)
 
 [interactive version](https://whatmodel.sh/model/meditron-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

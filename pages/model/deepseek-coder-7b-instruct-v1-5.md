@@ -126,6 +126,6 @@ Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/Edmon02/deepseek-coder-7b-instr
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/deepseek-coder-7b-instruct-v1.5', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-7b-instruct-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

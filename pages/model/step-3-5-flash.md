@@ -29,11 +29,11 @@ Beats [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](g
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (lab)</a>                  66.9%  ▁▁▁▁▁▃·▁▄▅▄● beats 19/23    hard · avg 20%         4.6%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate (lab)</a>             88.2%  ▄······▄█·▄● beats 5/5      medium · avg 51%       3.7%  typical
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0 (lab)</a>             51.0%  ▂▂▅▅██●█▆▂▃▃ beats 20/36    very hard · avg 12%    3.1%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                     51.6%  ▂·▃▁▂▂▆●█▂▂▄ beats 20/46    hard · avg 19%         2.1%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">SWE-bench Verified (lab)</a>             74.4%  ▁▁▁▁▁▁▂▄█●▁▁ beats 102/138  hard · avg 19%            —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (maker)</a>                66.9%  ▁▁▁▁▁▃·▁▄▅▄● beats 19/23    hard · avg 20%         4.6%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate (maker)</a>           88.2%  ▄······▄█·▄● beats 5/5      medium · avg 51%       3.7%  typical
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0 (maker)</a>           51.0%  ▂▂▅▅██●█▆▂▃▃ beats 20/36    very hard · avg 12%    3.1%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (maker)</a>                   51.6%  ▂·▃▁▂▂▆●█▂▂▄ beats 20/46    hard · avg 19%         2.1%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">SWE-bench Verified (maker)</a>           74.4%  ▁▁▁▁▁▁▂▄█●▁▁ beats 102/138  hard · avg 19%            —  not counted yet: no other model in the …
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp with context managemen…</a>   69.0%  ▄·▄●·█▂·▆▄·▂ beats 4/15                               —  not counted yet: no other model in the …
 </pre>
 
@@ -46,7 +46,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unspecif…</a>   86.4%  ▂▃▄▄▅██▆▄●▄▆ beats 56/67    medium · avg 48%    3.3%  small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">SWE-bench Verified (lab)</a>             74.4%  ▁▁▁▁▁▁▂▄█●▁▁ beats 102/138  hard · avg 19%         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">SWE-bench Verified (maker)</a>           74.4%  ▁▁▁▁▁▁▂▄█●▁▁ beats 102/138  hard · avg 19%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -72,15 +72,15 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.8%  ▁▁▁▁●▇▄▃▁▃·▃ beats 9/24     very hard · avg 9.4%    8.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   43.3%  ●▃▅·█▃▃·▅·▃▃ beats 0/14     hard · avg 16%          7.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   60.3%  ▂··▄▂▄█▆●▄▄█ beats 13/23    hard · avg 23%          6.8%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025 (lab)</a>                      97.3%  ▁·▁▁▁▂▅▆█▇▅● beats 133/133  easy · avg 69%          4.8%  sharp · maxed out · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025 (maker)</a>                    97.3%  ▁·▁▁▁▂▅▆█▇▅● beats 133/133  easy · avg 69%          4.8%  sharp · maxed out · small run
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   41.9%  ▃·▃▃●▁·▄·▁▁▁ beats 10/18    hard · avg 19%          4.5%  at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   13.9%  ▂▂●█▃▃▂▂▂··▂ beats 2/18     very hard · avg 0.8%    3.1%  sharp · noisy
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench (lab)</a>                85.4%  ▁▁·▁▁▁▄▆█●▂▃ beats 35/44    medium · avg 36%        2.6%  small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench (maker)</a>              85.4%  ▁▁·▁▁▁▄▆█●▂▃ beats 35/44    medium · avg 36%        2.6%  small run
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>    7.1%  ●·▆█▂·▂▂···▂ beats 3/14     very hard · avg 1.0%    1.8%  sharp · noisy
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.3%  ▃▂▂▃●▃▂·▃··▂ beats 6/16     very hard · avg 0.9%    1.7%  sharp · noisy
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 2026 (4…</a>    0.0%  ●····▂·····█ beats 0/5      very hard · avg 1.2%    1.7%  too hard for it
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025 (lab)</a>             94.0%  ▁▁····▁▅▃█●▁ beats 19/23    easy · avg 66%          1.1%  noisy
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025 (lab)</a>             98.4%  ▁▁▁▃▁▅▅▃██▁● beats 31/31    medium · avg 61%        0.8%  noisy · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025 (maker)</a>           94.0%  ▁▁····▁▅▃█●▁ beats 19/23    easy · avg 66%          1.1%  noisy
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025 (maker)</a>           98.4%  ▁▁▁▃▁▅▅▃██▁● beats 31/31    medium · avg 61%        0.8%  noisy · small run
 </pre>
 
 </details>
@@ -91,8 +91,8 @@ Beats [Kimi K2.5](kimi-k2-5.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (lab)</a>                  66.9%  ▁▁▁▁▁▃·▁▄▅▄● beats 19/23  hard · avg 20%    4.6%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                     51.6%  ▂·▃▁▂▂▆●█▂▂▄ beats 20/46  hard · avg 19%    2.1%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (maker)</a>                66.9%  ▁▁▁▁▁▃·▁▄▅▄● beats 19/23  hard · avg 20%    4.6%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (maker)</a>                   51.6%  ▂·▃▁▂▂▆●█▂▂▄ beats 20/46  hard · avg 19%    2.1%  at its level · small run
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp with context managemen…</a>   69.0%  ▄·▄●·█▂·▆▄·▂ beats 4/15                        —  not counted yet: no other model in the …
 </pre>
 
@@ -104,11 +104,11 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   29.1%  ▁▁▂▁▃▄●▆▄▅▂▃ beats 17/39  very hard · avg 21%    5.8%  at its level
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        26.7%  ▃·●▅█·▅█▅▃▃▃ beats 1/17   very hard · avg 11%    3.7%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics (lab)</a>                65.3%  ███··██·█··● beats 6/6    hard · avg 33%         3.1%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset) (lab)</a>          84.5%  ▃▃····█▃···● beats 6/6    medium · avg 49%       1.6%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics (maker)</a>              65.3%  ███··██·█··● beats 6/6    hard · avg 33%         3.1%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset) (maker)</a>        84.5%  ▃▃····█▃···● beats 6/6    medium · avg 49%       1.6%  at its level
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH with context manage…</a>   73.7%  no other model yet                                  —  not counted yet: no other model in the …
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">xbench-DeepSearch (2025.05) (lab)</a>    83.7%  no other model yet                                  —  not counted yet: no other model in the …
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">xbench-DeepSearch (2025.10) (lab)</a>    56.3%  no other model yet                                  —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">xbench-DeepSearch (2025.05) (make…</a>   83.7%  no other model yet                                  —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">xbench-DeepSearch (2025.10) (make…</a>   56.3%  no other model yet                                  —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -120,7 +120,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        9   52% ▇▇▇▇▇▇
-<a name="card2-stepfun-ai-step-3-5-flash"></a><a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">stepfun-ai/Step-3.5-Flash model card (l…</a>       11   31% ▇▇▇▇
+<a name="card2-stepfun-ai-step-3-5-flash"></a><a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">stepfun-ai/Step-3.5-Flash model card (s…</a>       11   31% ▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="paper-2606.05104v2-kina"></a><a href="https://arxiv.org/html/2606.05104v2">Knowledge Index of Noah's Ark</a>                   1    6% ▇
 <a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    4% ▇
@@ -213,7 +213,7 @@ Other versions: 4bit (~110.8 GB, Mac only) `lms get https://huggingface.co/mlx-c
 
 Other versions: 8bit (~209.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Step-3.5-Flash-8bit`
 
-Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.5-Flash)
+Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.5-Flash)
 
 ## Published speed measurements
 

@@ -51,6 +51,6 @@ weighted average                                   = 60.6
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/granite-speech-4.1-2b-plus-gguf granite-speech-4.1-2b-plus-Q8_0.gguf --local-dir models/granite-speech-4.1-2b-plus && build/bin/transcribe-cli -m models/granite-speech-4.1-2b-plus/granite-speech-4.1-2b-plus-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus)
 
 [interactive version](https://whatmodel.sh/model/granite-speech-4-1-2b-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

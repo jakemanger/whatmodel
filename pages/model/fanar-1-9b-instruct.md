@@ -106,6 +106,6 @@ Other versions: Q8_0 (~9.3 GB) `ollama run hf.co/mradermacher/Fanar-1-9B-Instruc
    vllm serve QCRI/Fanar-1-9B-Instruct
    ```
 
-Official weights and documentation: [huggingface.co/QCRI](https://huggingface.co/QCRI/Fanar-1-9B-Instruct)
+Model repository and documentation: [huggingface.co/QCRI](https://huggingface.co/QCRI/Fanar-1-9B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/fanar-1-9b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -59,6 +59,6 @@ weighted average                                   = 37.2
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit)
+Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit)
 
 [interactive version](https://whatmodel.sh/model/nextstep-1-large-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

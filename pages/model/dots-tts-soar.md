@@ -58,7 +58,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>             7   56% ▇▇▇▇▇▇▇
-<a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (lab)</a>                 7   40% ▇▇▇▇▇
+<a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (submitted / …</a>        7   40% ▇▇▇▇▇
 <a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2    3% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 65.3
@@ -76,6 +76,6 @@ weighted average                                   = 65.3
    pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --output clone.wav
    ```
 
-Official weights and documentation: [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-soar)
+Model repository and documentation: [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-soar)
 
 [interactive version](https://whatmodel.sh/model/dots-tts-soar) · [JSON](https://whatmodel.sh/api?format=json&all=1)

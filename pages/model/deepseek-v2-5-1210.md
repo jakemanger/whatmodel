@@ -50,8 +50,8 @@ test                        result  vs the others in its run    difficulty      
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
-test            result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>   82.8%  ▁▃▂▃▄●▅▇█▄▂▁ beats 24/85  easy · avg 76%    5.5%  small run
+test              result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (maker)</a>   82.8%  ▁▃▂▃▄●▅▇█▄▂▁ beats 24/85  easy · avg 76%    5.5%  small run
 </pre>
 
 </details>
@@ -148,6 +148,6 @@ Other versions: IQ2_M (~76.92 GB) `lms get https://huggingface.co/bartowski/Deep
 
 Other versions: 8bit (~250.5 GB, Mac only) `mlx_lm.chat --model dong-99/DeepSeek-V2.5-1210-mlx-8Bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-5-1210) · [JSON](https://whatmodel.sh/api?format=json&all=1)

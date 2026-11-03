@@ -63,7 +63,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 
 <pre>
 test                             result  vs the others in its run   difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1199.1  ▁▁▂▂▂▂▃▄●▅█▇ beats 72/152  avg 1061           10%  blunt
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                    54.0%  ▂▃▁▃▆●▃▇▇██▅ beats 16/52   hard · avg 41%    4.8%  at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (maker)</a>                  54.0%  ▂▃▁▃▆●▃▇▇██▅ beats 16/52   hard · avg 41%    4.8%  at its level · small run
 </pre>
 
 </details>
@@ -72,8 +72,8 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>                   64.1%  ▁▁▁▁▂▄▅●███▄ beats 129/322  hard · avg 42%         9.4%  sharp · at its level · small run
-<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                       80.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 130/188  medium · avg 59%       5.4%  small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (maker)</a>                 64.1%  ▁▁▁▁▂▄▅●███▄ beats 129/322  hard · avg 42%         9.4%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (maker)</a>                     80.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 130/188  medium · avg 59%       5.4%  small run
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   42.0%  ▆▂·▄●·▂▂·▄▄▂ beats 9/16     very hard · avg 36%    4.9%  blunt
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   25.7%  ▁▁▃▂▂●▁▃▄▄▄█ beats 9/38     very hard · avg 14%    4.6%  at its level
 <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   37.8%  ▂▆▂▄●▄▂▄▄▆█▇ beats 25/86    hard · avg 29%         4.1%  at its level · small run
@@ -151,6 +151,6 @@ Other versions: ud-q2_k_xl (~203 GB) `llama cli -hf unsloth/Mistral-Large-3-675B
 
 Other versions: ud-q2_k_xl (~203 GB) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~101.75 GB) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-IQ1_S -y`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512)
 
 [interactive version](https://whatmodel.sh/model/mistral-large-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

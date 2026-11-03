@@ -6,50 +6,50 @@
 
 C-Tianyu · 0.6B params
 
-**score 45.7** ±1.2 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 19.4** ±1.8 · #344 of 355 · from 27 benchmark results across 1 source · † no independently run results verified
 
 ## What it's good at
 
 <sub>● marks NanoJev (DecisionBench 4a19595e) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁●▃▃▁▂▁▂▅█▂   #52 of 57     99%     27
+task       vs the others         rank  counts  tests
+workflows  ▁▁●▂▁▂▂▆█▄▁▁   #107 of 114     99%     27
 </pre>
 
-<details><summary>workflows · #52 of 57 · 99% of its score</summary>
+<details><summary>workflows · #107 of 114 · 99% of its score</summary>
+
+Beats [CLM-v0.1-8B Qwen3-8B heads](decision-clm-v0-1-8b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   30.7%  ▁▁▁▁▂●▁▁▁▁▃█ beats 13/56  hard · avg 29%          13%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · action selecti…</a>   20.7%  ▂▁●▃▄▃▁▁▂█▇▄ beats 4/56   hard · avg 26%          13%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · completion ass…</a>   31.0%  ▁▁●▃▄·▂▁▁▆█▂ beats 3/56   medium · avg 51%        11%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   22.4%  ●▃▂·▁▁▁▁▁▁█▅ beats 4/56   medium · avg 38%       8.7%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   17.0%  ▁▁·●▁▁▁▁▁▁▃█ beats 11/56  hard · avg 22%         7.9%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   36.0%  ▁·▁·●▃▄▃▂█▄▂ beats 6/56   medium · avg 45%       7.3%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · verification (…</a>   35.0%  ▁▁●▁▃▂▂▁▁▇▇█ beats 8/56   medium · avg 40%       7.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · record classif…</a>   17.0%  ▃▂●▂▂▂▄▁▃▆██ beats 7/56   hard · avg 21%         5.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · content classi…</a>   38.0%  ▁····▁▁▁●▁▁█ beats 9/56   medium · avg 41%       4.8%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · document recor…</a>   15.1%  ▂●·▁▂▄▃▆▄█▁▁ beats 4/56   hard · avg 27%         4.0%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   24.5%  ▁▁●▅▃▃▅█▃▃·▁ beats 3/56   hard · avg 27%         3.4%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · review scoring…</a>   41.0%  ▁······▂▃●▇█ beats 19/56  hard · avg 32%         2.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   41.0%  ▁▁·▁▂●▁▃▃█▇▃ beats 9/56   medium · avg 45%       2.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   50.8%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 12/56  medium · avg 55%       1.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   22.8%  ▂·●▁▆█▅▃▃▂▁▁ beats 3/56   hard · avg 33%         1.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · document workf…</a>   50.2%  ●▄▃▁▁▃▂▂▁·▁▁ beats 17/56  medium · avg 51%       1.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   10.0%  ▁▁·▁▁▂●▂▃▁▁█ beats 13/56  very hard · avg 12%    0.8%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · safety gating …</a>    0.0%  ●·····▆█▂▂▄▇ beats 2/56   medium · avg 51%       0.8%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · target selecti…</a>    6.0%  ▁▁·▁▁●▃▁▂▁▁█ beats 9/56   very hard · avg 11%    0.8%  sharp · too hard for it · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   61.7%  ▁▁▁▂▆▃▃●···▁ beats 38/56  medium · avg 38%       0.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · semantic filte…</a>    3.0%  ●·▁▁·▁▁█▂▃█▂ beats 0/56   medium · avg 55%       0.4%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · content modera…</a>    0.0%  ●····▃▅▃▂▂·█ beats 2/56   medium · avg 61%       0.4%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · context manage…</a>    0.0%  ●·····▁▇▆▁█▃ beats 2/56   medium · avg 59%       0.3%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · document class…</a>    7.0%  ▂▁·▂▁▁●▄▁▂▂█ beats 14/56  very hard · avg 13%    0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   18.1%  ▁·▁▄●▄▅▄▂▁▄█ beats 9/56   medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · function agent…</a>   59.8%  ▃▃▄▅▆●▅▄▃▄█▃ beats 24/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · routing triage…</a>   45.0%  █▁···▁·●▆▅▂▂ beats 24/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · action selecti…</a>   20.7%  ▂▁●▃▄▃▁▁▂█▇▄ beats 4/56   medium · avg 51%        15%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · completion ass…</a>   31.0%  ▁▁●▃▄·▂▁▁▆█▂ beats 3/56   very easy · avg 86%     12%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   30.7%  ▁▁▁▁▂●▁▁▁▁▃█ beats 13/56  medium · avg 64%        12%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   22.4%  ●▃▂·▁▁▁▁▁▁█▅ beats 4/56   very easy · avg 86%    8.6%  sharp · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   36.0%  ▁·▁·●▃▄▃▂█▄▂ beats 6/56   easy · avg 78%         7.6%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   17.0%  ▁▁·●▁▁▁▁▁▁▃█ beats 11/56  medium · avg 58%       7.0%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · verification (…</a>   35.0%  ▁▁●▁▃▂▂▁▁▇▇█ beats 8/56   medium · avg 56%       6.5%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · record classif…</a>   17.0%  ▃▂●▂▂▂▄▁▃▆██ beats 7/56   medium · avg 39%       5.9%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · content classi…</a>   38.0%  ▁····▁▁▁●▁▁█ beats 9/56   easy · avg 73%         4.5%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · document recor…</a>   15.1%  ▂●·▁▂▄▃▆▄█▁▁ beats 4/56   medium · avg 46%       4.0%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   24.5%  ▁▁●▅▃▃▅█▃▃·▁ beats 3/56   medium · avg 45%       3.4%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · review scoring…</a>   41.0%  ▁······▂▃●▇█ beats 19/56  medium · avg 52%       2.5%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   41.0%  ▁▁·▁▂●▁▃▃█▇▃ beats 9/56   medium · avg 62%       2.2%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   50.8%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 12/56  easy · avg 74%         1.1%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   22.8%  ▂·●▁▆█▅▃▃▂▁▁ beats 3/56   medium · avg 52%       1.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · document workf…</a>   50.2%  ●▄▃▁▁▃▂▂▁·▁▁ beats 17/56  easy · avg 66%         0.9%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   10.0%  ▁▁·▁▁▂●▂▃▁▁█ beats 13/56  medium · avg 35%       0.8%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · target selecti…</a>    6.0%  ▁▁·▁▁●▃▁▂▁▁█ beats 9/56   hard · avg 29%         0.8%  too hard for it · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · safety gating …</a>    0.0%  ●·····▆█▂▂▄▇ beats 2/56   easy · avg 77%         0.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   61.7%  ▁▁▁▂▆▃▃●···▁ beats 38/56  medium · avg 52%       0.5%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · semantic filte…</a>    3.0%  ●·▁▁·▁▁█▂▃█▂ beats 0/56   easy · avg 71%         0.4%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · content modera…</a>    0.0%  ●····▃▅▃▂▂·█ beats 2/56   easy · avg 82%         0.4%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · context manage…</a>    0.0%  ●·····▁▇▆▁█▃ beats 2/56   easy · avg 73%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · document class…</a>    7.0%  ▂▁·▂▁▁●▄▁▂▂█ beats 14/56  hard · avg 21%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   18.1%  ▁·▁▄●▄▅▄▂▁▄█ beats 9/56   easy · avg 66%         0.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · function agent…</a>   59.8%  ▃▃▄▅▆●▅▄▃▄█▃ beats 24/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">DecisionBench v1 · routing triage…</a>   45.0%  █▁···▁·●▆▅▂▂ beats 24/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -62,15 +62,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/C-Tianyu__NanoJev/4a19595eada0857133c0d2be024f879a4077054b/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 45.7
+weighted average                                   = 19.4
 </pre>
 
 <sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/C-Tianyu/NanoJev/tree/4a19595eada0857133c0d2be024f879a4077054b) · Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/C-Tianyu/NanoJev/revision/4a19595eada0857133c0d2be024f879a4077054b); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/C-Tianyu](https://huggingface.co/C-Tianyu/NanoJev)
+Model repository and documentation: [huggingface.co/C-Tianyu](https://huggingface.co/C-Tianyu/NanoJev)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-c-tianyu-nanojev-4a19595e) · [JSON](https://whatmodel.sh/api?format=json&all=1)

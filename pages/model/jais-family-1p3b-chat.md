@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 1.56B params · apache-2.0
 
-**score 38.1** ±4.4 · #794 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 38.1** ±4.4 · #794 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards (la…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards (su…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        9% ▇
 weighted average                                   = 38.1
 </pre>
@@ -109,6 +109,6 @@ Other versions: Q8_0 (~1.7 GB) `ollama run hf.co/mradermacher/jais-family-1p3b-c
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-family-1p3b-chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-1p3b-chat)
+Model repository and documentation: [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-1p3b-chat)
 
 [interactive version](https://whatmodel.sh/model/jais-family-1p3b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

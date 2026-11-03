@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 7.62B params · apache-2.0
 
-**score 49.6** ±1.9 · #384 of 732 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.6** ±1.9 · #384 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,10 +24,10 @@ math  ▁▁▃▅●▆▄█▄▂▁▁   #291 of 431     98%      3
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                34.6%  ▃·····▃··█●▅ beats 5/8    hard · avg 34%          39%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       89.9%  ▄···█▄●·▄·▄█ beats 4/8    very easy · avg 92%     37%  sharp
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.1%  ▃····▃·▅·●·█ beats 4/8    easy · avg 74%          22%  at its level
+test                               result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (maker)</a>                34.6%  ▃·····▃··█●▅ beats 5/8    hard · avg 34%          39%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (maker)</a>                       89.9%  ▄···█▄●·▄·▄█ beats 4/8    very easy · avg 92%     37%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (maker)</a>   75.1%  ▃····▃·▅·●·█ beats 4/8    easy · avg 74%          22%  at its level
 </pre>
 
 </details>
@@ -37,10 +37,10 @@ test                             result  vs the others in its run  difficulty   
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             2% ▇
-weighted average                        = 49.6
+source                             results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (submitted / maker-reported)</a>        3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                 2% ▇
+weighted average                            = 49.6
 </pre>
 
 ## How to run it
@@ -124,6 +124,6 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/lmstudio-communit
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-Math-7B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Math-7B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-Math-7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-math-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

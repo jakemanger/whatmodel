@@ -6,7 +6,7 @@
 
 Sber · released 2026-07 · 0.22B params · mit
 
-**score 42.1** ±7.0 · #135 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 42.1** ±7.0 · #135 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">Common Voice English WER (version…</a>   26.0%  ●···█·█····█ beats 0/3    avg 20%        62%  typical
-<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER (lab)</a>        12.2%  ▁··▁▁●▁▂▃█▂▁ beats 5/64   avg 6.6%       19%  blunt
+<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER (maker)</a>      12.2%  ▁··▁▁●▁▂▃█▂▁ beats 5/64   avg 6.6%       19%  blunt
 </pre>
 
 </details>
@@ -51,6 +51,6 @@ weighted average                                   = 42.1
    pip install "transformers>=5" torch torchaudio hydra-core omegaconf && python -c "from transformers import AutoModel; model = AutoModel.from_pretrained('ai-sage/GigaAM-Multilingual', revision='ctc', trust_remote_code=True); print(model.transcribe('example.wav'))"
    ```
 
-Official weights and documentation: [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaAM-Multilingual)
+Model repository and documentation: [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaAM-Multilingual)
 
 [interactive version](https://whatmodel.sh/model/gigaam-multilingual-ctc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

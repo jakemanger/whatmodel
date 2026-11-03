@@ -34,11 +34,11 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>               1   68% ▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   28% ▇▇▇
-prior: pull toward the middle             4% ▇
-weighted average                        = 41.2
+source                                    results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (submitted / maker-rep…</a>        1   68% ▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   28% ▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 41.2
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
@@ -134,6 +134,6 @@ Other versions: 8bit (~1.7 GB, Mac only) `mlx_lm.chat --model speakleash/Bielik-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-1.5B-v3.0-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct)
+Model repository and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct)
 
 [interactive version](https://whatmodel.sh/model/bielik-1-5b-v3-0-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

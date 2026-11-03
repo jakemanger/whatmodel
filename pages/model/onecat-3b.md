@@ -51,6 +51,6 @@ weighted average                                   = 24.1
    git clone https://github.com/onecat-ai/OneCAT && cd OneCAT && pip3 install -r requirements.txt && hf download onecat-ai/OneCAT-3B --local-dir OneCAT-3B && wget -O infinity_vae_d32reg.pth "https://huggingface.co/FoundationVision/Infinity/resolve/main/infinity_vae_d32reg.pth?download=true" && accelerate launch --num_processes=1 generate_txt2img.py --model_name_or_path="OneCAT-3B" --vae_path="infinity_vae_d32reg.pth" --prompt="Fashion model with iridescent makeup, prismatic light reflections, high-fashion studio setting." --output_dir="output/txt2img"
    ```
 
-Official weights and documentation: [huggingface.co/onecat-ai](https://huggingface.co/onecat-ai/OneCAT-3B)
+Model repository and documentation: [huggingface.co/onecat-ai](https://huggingface.co/onecat-ai/OneCAT-3B)
 
 [interactive version](https://whatmodel.sh/model/onecat-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

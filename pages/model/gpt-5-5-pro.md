@@ -28,7 +28,7 @@ Trails [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [Cla
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    7.9%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 38%       7.5%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (maker)</a>                   90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 38%       7.5%  typical
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    7.9%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 38%       7.5%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (maker)</a>                   90.1%  ▄··█▄··▄·▄●▄ beats 6/8    medium · avg 38%       7.5%  typical
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                        result  vs the others in its run  difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7    very hard · avg 4.4%     14%  at its level
+test                          result  vs the others in its run  difficulty            counts  why
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (maker)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7    very hard · avg 4.4%     14%  at its level
 </pre>
 
 </details>

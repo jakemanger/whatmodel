@@ -26,9 +26,9 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   11.2%  ▄●▂▂▂▂▆▄·▂·▂ beats 3/16   hard · avg 26%          63%  sharp
-<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>                        76.0%  ▇▃▅▇▁▄▅●█▃▃▅ beats 24/39  easy · avg 80%          12%  at its level · small run
+<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (maker)</a>                      76.0%  ▇▃▅▇▁▄▅●█▃▃▅ beats 24/39  easy · avg 80%          12%  at its level · small run
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   46.5%  ●█·▄·······▄ beats 0/4    easy · avg 70%          12%  at its level
-<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>                      86.1%  ▄·▂·▂▆●▄▂▄▂▂ beats 9/17   very easy · avg 88%     10%  small run
+<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (maker)</a>                    86.1%  ▄·▂·▂▆●▄▂▄▂▂ beats 9/17   very easy · avg 88%     10%  small run
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   63% ▇▇▇▇▇▇▇▇
-<a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (lab)</a>                    2   22% ▇▇▇
+<a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (submitted / mak…</a>        2   22% ▇▇▇
 <a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   12% ▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 41.5
@@ -58,6 +58,6 @@ weighted average                                   = 41.5
    git clone https://github.com/showlab/Show-o && cd Show-o/show-o2 && bash build_env.sh && wandb login && wget https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/resolve/main/Wan2.1_VAE.pth && python3 inference_t2i.py config=configs/showo2_7b_demo_432x432.yaml batch_size=4 guidance_scale=7.5 num_inference_steps=50
    ```
 
-Official weights and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-7B)
+Model repository and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-7B)
 
 [interactive version](https://whatmodel.sh/model/show-o2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

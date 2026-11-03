@@ -28,9 +28,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    83.9%  ▄····●█▄▄█▄█ beats 1/10   easy · avg 82%       69%  typical
 <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o jud…</a>   65.0%  ▄·▆▂▆█▄▆▂●·▄ beats 20/22  medium · avg 60%     23%  at its level
 <a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   90.7%  ▄█·········● beats 3/3    medium · avg 58%    3.3%  blunt · at its level · noisy
-<a href="https://arxiv.org/html/2512.07584v1">GenEval (lab)</a>                        87.0%  ▇▃▅▇▁▄▅▃█▃●▅ beats 35/39  easy · avg 79%         —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2512.07584v1">DPG-Bench (lab)</a>                      86.8%  ▄·▂·▂▆█●▂▄▂▂ beats 12/17                         —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2512.07584v1">CVTG-2K word accuracy (lab)</a>          86.6%  ▄▄▄●▄▄·▄···▄ beats 3/8                           —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">GenEval (maker)</a>                      87.0%  ▇▃▅▇▁▄▅▃█▃●▅ beats 35/39  easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">DPG-Bench (maker)</a>                    86.8%  ▄·▂·▂▆█●▂▄▂▂ beats 12/17                         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">CVTG-2K word accuracy (maker)</a>        86.6%  ▄▄▄●▄▄·▄···▄ beats 3/8                           —  not counted yet: no other model in the …
 <a href="https://arxiv.org/html/2512.07584v1">WISE overall (model publisher's r…</a>   65.0%  no other model yet                               —  not counted yet: no other model in the …
 </pre>
 
@@ -44,7 +44,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   69% ▇▇▇▇▇▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   23% ▇▇▇
-<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat (lab)</a>                           1    3% ▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat (submitted / maker-repo…</a>        1    3% ▇
 prior: pull toward the middle                        5% ▇
 weighted average                                   = 53.4
 </pre>
@@ -79,6 +79,6 @@ api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
    sd-cli --diffusion-model models/LongCat-Image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p "a lovely cat holding a sign says 'longcat.cpp'" --cfg-scale 5.0 --sampling-method euler --flow-shift 3 -v --offload-to-cpu --diffusion-fa
    ```
 
-Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image)
+Model repository and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image)
 
 [interactive version](https://whatmodel.sh/model/longcat-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

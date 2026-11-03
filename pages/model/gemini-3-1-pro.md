@@ -32,7 +32,7 @@ Trails [Beam 1.0 501B A23B](beam-1-0-501b-a23b.md), [Claude Sonnet 4.6](claude-s
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0445 IPS  ▁▁▁▃●▂█▁▂▂▁▁ beats 16/59  avg -0.379 IPS          5.3%  sharp
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>        14.1%  ▄···█▄▄▄●▄·█ beats 7/10   very hard · avg 1.9%    1.7%  typical
-<a href="https://deepmind.google/models/model-cards/gemini-3-1-pro">τ²-bench Telecom (lab)</a>                    99.3%  ▁·▅█▆▅▂▃▃▂▃● beats 88/89  medium · avg 61%        1.4%  sharp · maxed out · small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-1-pro">τ²-bench Telecom (maker)</a>                  99.3%  ▁·▅█▆▅▂▃▃▂▃● beats 88/89  medium · avg 61%        1.4%  sharp · maxed out · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        26.0%  ▃▃▂▃·●▃▂█▅▅▂ beats 10/25  very hard · avg 4.3%    1.4%  at its level
 <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set)</a>                    69.2%  ●··█·██·████ beats 0/7    hard · avg 30%          1.1%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>        32.0%  ▃··▃·▃██●▃▃█ beats 9/14   very hard · avg 2.8%    1.0%  sharp · at its level · noisy
@@ -106,7 +106,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions) (la…</a>   83.3%  ▃·▃·▃▃▃·▃▃●▅ beats 7/11     medium · avg 38%    2.1%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions) (ma…</a>   83.3%  ▃·▃·▃▃▃·▃▃●▅ beats 7/11     medium · avg 38%    2.1%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1279.5  ▁▁▂▂▂▂▃▄▅▅█● beats 130/152  avg 1061            1.4%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   59.2%  ▁·▁·▃▃▁▇▃█·● beats 22/22    hard · avg 27%      1.1%  blunt · at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1458.9  ▁▁▃▃▄▃▇●▅▇▄▅ beats 16/37    avg 1331            0.7%  blunt

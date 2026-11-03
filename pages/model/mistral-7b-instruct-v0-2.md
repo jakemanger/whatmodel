@@ -179,6 +179,6 @@ Other versions: Q8_0 (~9.19 GB) `ollama run mistral:7b-instruct-v0.2-q8_0`
    mlx_lm.server --model mlx-community/Mistral-7B-Instruct-v0.2-4bit
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)
 
 [interactive version](https://whatmodel.sh/model/mistral-7b-instruct-v0-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

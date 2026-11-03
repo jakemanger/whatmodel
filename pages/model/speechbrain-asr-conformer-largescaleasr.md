@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    8.5%  ▁▁▁▃··▁▁▂●█▆ beats 28/86  avg 8.2%       70%  blunt
-<a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (lab)</a>      4.6%  ▁···▁▁▁▆▆●▆▁ beats 30/56  avg 2.8%       22%  small run
-<a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">VoxPopuli English test WER (lab)</a>      6.9%  █▄▄··█●██▄██ beats 6/16   avg 7.4%         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (maker)</a>    4.6%  ▁···▁▁▁▆▆●▆▁ beats 30/56  avg 2.8%       22%  small run
+<a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">VoxPopuli English test WER (maker)</a>    6.9%  █▄▄··█●██▄██ beats 6/16   avg 7.4%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -62,6 +62,6 @@ SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-confor
    uv run --with speechbrain python -c "from speechbrain.inference.ASR import EncoderDecoderASR as A; print(A.from_hparams(source='speechbrain/asr-conformer-loquacious', savedir='pretrained_models/asr-conformer-loquacious').transcribe_file('audio.wav'))"
    ```
 
-Official weights and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-conformer-loquacious)
+Model repository and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-conformer-loquacious)
 
 [interactive version](https://whatmodel.sh/model/speechbrain-asr-conformer-largescaleasr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

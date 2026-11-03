@@ -6,7 +6,7 @@
 
 ESPnet · released 2023-01 · 0.14892B params · cc-by-4.0
 
-**score 46.0** ±3.9 · #117 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 46.0** ±3.9 · #117 of 163 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -21,9 +21,9 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                              result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (lab)</a>    4.6%  █▃▃·▃▅·●···▅ beats 9/11   avg 3.7%       73%  typical
-<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (lab)</a>    2.2%  █··▃▃▅●▃···▅ beats 7/11   avg 1.9%       21%  blunt
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (maker)</a>    4.6%  █▃▃·▃▅·●···▅ beats 9/11   avg 3.7%       73%  typical
+<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (maker)</a>    2.2%  █··▃▃▅●▃···▅ beats 7/11   avg 1.9%       21%  blunt
 </pre>
 
 </details>
@@ -51,6 +51,6 @@ weighted average                                   = 46.0
    uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('asapp/e_branchformer_librispeech@f50914447c48b091738b3e020023ac69dbde9ea9', beam_size=60, ctc_weight=0.3, lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
    ```
 
-Official weights and documentation: [huggingface.co/asapp](https://huggingface.co/asapp/e_branchformer_librispeech)
+Model repository and documentation: [huggingface.co/asapp](https://huggingface.co/asapp/e_branchformer_librispeech)
 
 [interactive version](https://whatmodel.sh/model/espnet-e-branchformer) · [JSON](https://whatmodel.sh/api?format=json&all=1)

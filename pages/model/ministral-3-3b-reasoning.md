@@ -34,9 +34,9 @@ test                                result  vs the others in its run  difficulty
 <details><summary>math · #3 of 3 · 39% of its score</summary>
 
 <pre>
-test             result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2025 (lab)</a>   72.1%  ▁·▁▁▁▂▅▆●▇▅▁ beats 68/133  easy · avg 67%     20%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2024 (lab)</a>   77.5%  ▁▁▁▂▁▃▁▅█●█▃ beats 50/85   easy · avg 75%     19%  sharp · small run · several runs
+test               result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2025 (maker)</a>   72.1%  ▁·▁▁▁▂▅▆●▇▅▁ beats 68/133  easy · avg 67%     20%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2024 (maker)</a>   77.5%  ▁▁▁▂▁▃▁▅█●█▃ beats 50/85   easy · avg 75%     19%  sharp · small run · several runs
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>                   53.4%  ▁▁▁▁▂▄▅●███▄ beats 95/322  medium · avg 53%     23%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (maker)</a>                 53.4%  ▁▁▁▁▂▄▅●███▄ beats 95/322  medium · avg 53%     23%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3741  ▁●▃▃▇▄█▃▅▁▁▁ beats 3/30    avg 0.418            18%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   37.4%  ▂▃●▂▆▃█▅█▅▃▆ beats 3/34    medium · avg 41%    8.0%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   75.6%  ▃·▁▁▂▁▂▅●▇▄▁ beats 61/100  medium · avg 67%    1.9%  sharp · at its level · noisy
@@ -149,6 +149,6 @@ Other versions: 4bit (~1.9 GB, Mac only) `lms get https://huggingface.co/alexgus
 
 Other versions: 8bit (~3.6 GB, Mac only) `mlx_lm.chat --model alexgusevski/Ministral-3-3B-Reasoning-2512-q8-mlx`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512)
 
 [interactive version](https://whatmodel.sh/model/ministral-3-3b-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

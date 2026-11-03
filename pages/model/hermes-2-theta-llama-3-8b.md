@@ -110,6 +110,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/QuantFactory/Hermes-2-Theta-Lla
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='NousResearch/Hermes-2-Theta-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-8B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-8B)
 
 [interactive version](https://whatmodel.sh/model/hermes-2-theta-llama-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md) · [decision](decision.md)
 
-updated 2026-10-31 02:55 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-11-03 02:37 UTC · 181 models · scores combine 102 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -277,7 +277,7 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
   —  <a href="model/voxtral-mini-tts-3.md">Voxtral Mini TTS 3</a>          no reviewed results  api $13.00/M chars                 <a href="https://mistral.ai/news/voxtral-3">mistral.ai ↗</a>
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 181 of 189 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † no independently run results verified · ~RAM is estimated; full context may need more memory · 181 of 189 catalogue models listed here · [sources and licences](method.md#sources)
 
 <details><summary>Models without a score (1)</summary>
 

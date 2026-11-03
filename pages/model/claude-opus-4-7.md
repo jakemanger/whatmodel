@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   83.5%  ▁··▁·▁▂▁▄█▄● beats 29/29  hard · avg 19%          4.5%  sharp
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>   15.1%  ▄···█▄▄▄█●·█ beats 8/10   very hard · avg 1.9%    2.2%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   40.2%  ▃▃▂▃·▆▃▂█●▅▂ beats 19/25  very hard · avg 4.3%    1.9%  at its level
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=295">Toolathlon (Tool Decathlon) (lab)</a>    59.3%  █···█··█·●██ beats 3/5    hard · avg 16%          1.5%  at its level
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=295">Toolathlon (Tool Decathlon) (make…</a>   59.3%  █···█··█·●██ beats 3/5    hard · avg 16%          1.5%  at its level
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   38.9%  ▄·▄··█···▄·● beats 6/6    very hard · avg 6.6%    1.3%  at its level
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch</a>                             79.3%  ███●··█····█ beats 3/5    medium · avg 45%        0.9%  typical
 <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 tasks…</a>   62.5%  ▄··▄·▄·█···● beats 5/5    hard · avg 28%          0.6%  blunt · at its level
@@ -83,7 +83,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>    4.0%  ▃●▂▃█▃▂·▃··▂ beats 2/16     very hard · avg 0.9%    1.1%  sharp · noisy
 <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench</a>                      81.8%  ▁▁·▁▁▁▄▆●▄▂▃ beats 27/44    hard · avg 25%          1.0%  typical
 <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 2026 (4…</a>   14.6%  ▂····▂·····● beats 3/5      very hard · avg 1.2%    0.9%  typical
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=260">USAMO 2026 (lab)</a>                     69.3%  █·●█······██ beats 1/4      hard · avg 19%          0.7%  sharp · noisy
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=260">USAMO 2026 (maker)</a>                   69.3%  █·●█······██ beats 1/4      hard · avg 19%          0.7%  sharp · noisy
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>   42.6%  ▄··▄▄·▄▄●▄·▄ beats 5/8      very hard · avg 11%     0.7%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 132/197  very hard · avg 7.2%    0.4%  sharp · maxed out · noisy
 </pre>
@@ -97,7 +97,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1297.7  ▁▁▂▂▂▂▃▄▅▅█● beats 149/152  avg 1061          1.9%  blunt
-<a href="https://www-cdn.anthropic.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61/Claude%20Opus%204.8%20System%20Card.pdf#page=219">CharXiv (reasoning questions) (la…</a>   81.3%  ███··█·█●··█ beats 5/6      hard · avg 28%    1.8%  typical
+<a href="https://www-cdn.anthropic.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61/Claude%20Opus%204.8%20System%20Card.pdf#page=219">CharXiv (reasoning questions) (ma…</a>   81.3%  ███··█·█●··█ beats 5/6      hard · avg 28%    1.8%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1493.0  ▁▁▃▃▄▃▇█▅▇▄● beats 35/37    avg 1331          1.0%  blunt
 </pre>
 

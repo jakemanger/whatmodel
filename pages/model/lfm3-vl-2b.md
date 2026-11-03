@@ -16,19 +16,19 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                           result  reported by  source
-MMStar                          74.4%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
-MMMU (val)                      55.7%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
-MathVista (testmini)            84.2%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
-RealWorldQA                     79.3%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
-HallusionBench                  65.6%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
-CharXiv (reasoning questions)   70.2%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
-CharXiv descriptive questions   87.5%  lab          <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+MMStar                          74.4%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+MMMU (val)                      55.7%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+MathVista (testmini)            84.2%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+RealWorldQA                     79.3%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+HallusionBench                  65.6%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+CharXiv (reasoning questions)   70.2%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
+CharXiv descriptive questions   87.5%  maker        <a href="https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/ba44bd51db20a2753f28c273a1571ccaa210d954/README.md#performance">Liquid AI own-model benchmark…</a>
 </pre>
 
 ## How to run it
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM3-VL-2B)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM3-VL-2B)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/lfm3-vl-2b)

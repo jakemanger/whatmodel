@@ -123,6 +123,6 @@ Other versions: Q8_0 (~7.4 GB) `lms get https://huggingface.co/QuantFactory/falc
    ollama run falcon:7b
    ```
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-7b-instruct)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-7b-instruct)
 
 [interactive version](https://whatmodel.sh/model/falcon-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

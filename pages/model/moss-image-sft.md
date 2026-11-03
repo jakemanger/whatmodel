@@ -20,6 +20,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 api (OpenMOSS) · price unknown · [platform.mosi.cn](https://platform.mosi.cn)
 
-Official weights and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
+Model repository and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/moss-image-sft)

@@ -62,6 +62,6 @@ weighted average                                   = 19.4
    git clone https://github.com/metavoiceio/metavoice-src.git && cd metavoice-src && pip install -r requirements.txt && pip install torch==2.2.1 torchaudio==2.2.1 && pip install -e . && python -c "from fam.llm.fast_inference import TTS; tts = TTS(); tts.synthesise(text='This is a demo of text to speech by MetaVoice-1B, an open-source foundational audio model.', spk_ref_path='assets/bria.mp3')"
    ```
 
-Official weights and documentation: [huggingface.co/metavoiceio](https://huggingface.co/metavoiceio/metavoice-1B-v0.1)
+Model repository and documentation: [huggingface.co/metavoiceio](https://huggingface.co/metavoiceio/metavoice-1B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/metavoice-1b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

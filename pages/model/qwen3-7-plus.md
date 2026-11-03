@@ -31,11 +31,11 @@ Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [LongCat 2.0 (1.6T-A48B)](longcat
 test                                     result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0737 IPS  ▁▁▁●▃▂█▁▂▂▁▁ beats 10/59  avg -0.379 IPS     11%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwen-re…</a>        57.6%  ▂·····▂·▂█●▅ beats 9/12   hard · avg 21%    3.6%  at its level · several runs
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>                  64.0%  ▁·▁·▁▁▄▃▆●▅█ beats 31/63  hard · avg 17%    2.6%  sharp · at its level · small run
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>              75.8%  ▁··▁▃▁▅█●▂▂▁ beats 47/65  hard · avg 29%    2.6%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>                    73.3%  █▃·▂▅▂▃▂●▃▆▆ beats 15/27  hard · avg 27%    1.6%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>                   55.3%  █···●······█ beats 1/2    hard · avg 24%    0.9%  at its level · small run
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>             16.5%  ●····▂▁▁▆███ beats 0/31   hard · avg 16%    0.6%  at its level · noisy
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (maker)</a>                64.0%  ▁·▁·▁▁▄▃▆●▅█ beats 31/63  hard · avg 17%    2.6%  sharp · at its level · small run
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (maker)</a>            75.8%  ▁··▁▃▁▅█●▂▂▁ beats 47/65  hard · avg 29%    2.6%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (maker)</a>                  73.3%  █▃·▂▅▂▃▂●▃▆▆ beats 15/27  hard · avg 27%    1.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (maker)</a>                 55.3%  █···●······█ beats 1/2    hard · avg 24%    0.9%  at its level · small run
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (maker)</a>           16.5%  ●····▂▁▁▆███ beats 0/31   hard · avg 16%    0.6%  at its level · noisy
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ Beats [GPT-5.4](gpt-5-4.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Dee
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   89.6%  ▃▅█▅▅▃▅···●█ beats 13/16  medium · avg 47%    4.3%  small run · several runs
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwen-re…</a>   57.6%  ▂·····▂·▂█●▅ beats 9/12   hard · avg 21%      3.6%  at its level · several runs
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>         75.8%  ▁··▁▃▁▅█●▂▂▁ beats 47/65  hard · avg 29%      2.6%  at its level
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        16.5%  ●····▂▁▁▆███ beats 0/31   hard · avg 16%      0.6%  at its level · noisy
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (maker)</a>       75.8%  ▁··▁▃▁▅█●▂▂▁ beats 47/65  hard · avg 29%      2.6%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (maker)</a>      16.5%  ●····▂▁▁▆███ beats 0/31   hard · avg 16%      0.6%  at its level · noisy
 </pre>
 
 </details>
@@ -83,13 +83,13 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://qwen.ai/blog?id=qwen3.7-plus">CharXiv (reasoning questions) (la…</a>   84.4%  ▄▂▄▆▄▄▆··▄●▂ beats 19/21    medium · avg 38%       6.7%  several runs
+<a href="https://qwen.ai/blog?id=qwen3.7-plus">CharXiv (reasoning questions) (ma…</a>   84.4%  ▄▂▄▆▄▄▆··▄●▂ beats 19/21    medium · avg 38%       6.7%  several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1263.3  ▁▁▂▂▂▂▃▄▅▅●▇ beats 118/152  avg 1061               2.8%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1452.5  ▁▁▃▃▄▃●█▅▇▄▅ beats 13/37    avg 1331               1.4%  blunt
 <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   55.9%  ▃▃···█▃▅●·▃▅ beats 8/11     hard · avg 25%         1.4%  blunt · at its level
 <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OmniDocBench 1.5 overall (higher …</a>   91.4%  ▂··▂▂▂··▂▂█● beats 13/13    easy · avg 70%         1.1%  small run
 <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   55.3%  ▃·▅▃▅▃··▅··● beats 9/11     very hard · avg 33%    0.4%  at its level · noisy
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">RealWorldQA (lab)</a>                    86.9%  ▁▃▁▇▃▇▇▅█▁▅● beats 39/39    easy · avg 72%         0.4%  blunt · small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">RealWorldQA (maker)</a>                  86.9%  ▁▃▁▇▃▇▇▅█▁▅● beats 39/39    easy · avg 72%         0.4%  blunt · small run
 </pre>
 
 </details>
@@ -99,13 +99,13 @@ test                                result  vs the others in its run    difficul
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         87.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 161/211  hard · avg 40%           15%  sharp · several runs
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>           34.7%  ▁▁▁▄▆▆▇█●▆▁▃ beats 86/111   very hard · avg 5.2%    4.8%  at its level · several runs
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (maker)</a>         34.7%  ▁▁▁▄▆▆▇█●▆▁▃ beats 86/111   very hard · avg 5.2%    4.8%  at its level · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         17.0%  █··▂▃●▄█▂▄▂▁ beats 28/77    very hard · avg 9.4%    4.1%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                24.0%  █▁▁▁▁▂▃●▃▂▁▁ beats 93/137   very hard · avg 5.8%    2.9%  sharp · noisy
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecified)…</a>   79.1%  ▂▆▂▄▄▄▂▄▄▆█● beats 77/86    medium · avg 43%        2.9%  several runs
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo (lab)</a>                        41.1%  ▂▂▂·▃▃▅●▃▂▅▃ beats 10/22    very hard · avg 11%     1.7%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">ERQA (lab)</a>                           69.8%  ▃··▃··█·▃█▅● beats 12/12    medium · avg 36%        0.9%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">AndroidWorld (lab)</a>                   81.0%  ▁·▁▁▂▃█▅▂▂·● beats 23/24    medium · avg 47%        0.8%  small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo (maker)</a>                      41.1%  ▂▂▂·▃▃▅●▃▂▅▃ beats 10/22    very hard · avg 11%     1.7%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">ERQA (maker)</a>                         69.8%  ▃··▃··█·▃█▅● beats 12/12    medium · avg 36%        0.9%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">AndroidWorld (maker)</a>                 81.0%  ▁·▁▁▂▃█▅▂▂·● beats 23/24    medium · avg 47%        0.8%  small run
 </pre>
 
 </details>
@@ -117,8 +117,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        5   32% ▇▇▇▇
-<a name="card-qwen--qwen3.8-27b"></a><a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Qwen/Qwen3.8-27B model card (lab)</a>              14   24% ▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Qwen (lab)</a>                                      8   23% ▇▇▇
+<a name="card-qwen--qwen3.8-27b"></a><a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Qwen/Qwen3.8-27B model card (submitted …</a>       14   24% ▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Qwen (submitted / maker-reported)</a>               8   23% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   19% ▇▇
 <a name="paper-2609.05141v2-scidocbench"></a><a href="https://arxiv.org/html/2609.05141v2">SciDocBench: A Workflow-Centered Benchm…</a>        1    1% ▇
 <a name="paper-2610.12402v1-spacecast-bench"></a><a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench: Evaluating Predictive …</a>        1    0% ▇

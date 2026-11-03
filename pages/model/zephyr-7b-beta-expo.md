@@ -109,6 +109,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/mradermacher/zephyr-7b-beta-ExP
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/zephyr-7b-beta-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/zephyr-7b-beta-ExPO)
+Model repository and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/zephyr-7b-beta-ExPO)
 
 [interactive version](https://whatmodel.sh/model/zephyr-7b-beta-expo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

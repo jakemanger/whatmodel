@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    9.9%  ▁▁·▁▁▁▁▅●█▅█ beats 10/27  very hard · avg 2.4%    0.6%  typical
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     73.3%  ▂··▄···▂●▄█▄ beats 5/13   medium · avg 45%        0.5%  at its level
 <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain conversatio…</a>   33.7%  ▂▂··▂·▂·▂▂●▄ beats 6/11   hard · avg 25%          0.0%  blunt · at its level · noisy
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json">τ²-bench Telecom (lab)</a>               98.0%  ▁·▅█▆▅▂▃▃▂●▁ beats 82/89  very hard · avg 8.8%       —  not counted yet: no other model in the …
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json">τ²-bench Telecom (maker)</a>             98.0%  ▁·▅█▆▅▂▃▃▂●▁ beats 82/89  very hard · avg 8.8%       —  not counted yet: no other model in the …
 </pre>
 
 </details>

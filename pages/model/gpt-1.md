@@ -60,6 +60,6 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/openai-gpt)
+Model repository and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/openai-gpt)
 
 [interactive version](https://whatmodel.sh/model/gpt-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

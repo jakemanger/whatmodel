@@ -25,8 +25,8 @@ math    ▁▁▃▆█●▅█▃▁▁▁    #259 of 530     30%      1
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run    difficulty      counts  why
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">HumanEval (lab)</a>   56.0%  ▁▁▁▁▂▂▆●█▅▂▁ beats 107/205  easy · avg 71%     11%  sharp · at its level
+test               result  vs the others in its run    difficulty      counts  why
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">HumanEval (maker)</a>   56.0%  ▁▁▁▁▂▂▆●█▅▂▁ beats 107/205  easy · avg 71%     11%  sharp · at its level
 </pre>
 
 </details>
@@ -46,11 +46,11 @@ test   result  vs the others in its run    difficulty           counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (lab)</a>                  90.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 136/140  very easy · avg 90%     10%  sharp · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           77.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 158/214  easy · avg 81%          10%  at its level · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (maker)</a>                90.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 136/140  very easy · avg 90%     10%  sharp · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (maker)</a>                         77.0%  ▁▁▁▁▁▂▂▅█●▆▄ beats 158/214  easy · avg 81%          10%  at its level · small run
 <a href="https://arxiv.org/html/2305.17306v1">BIG-Bench Hard</a>                       67.3%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 106/155  medium · avg 69%       9.4%  sharp · at its level · small run
 <a href="https://aclanthology.org/2023.emnlp-main.689.pdf">clembench v1.0 clemscore (self-pl…</a>   37.1%  ▄······▄·●·▄ beats 3/4      medium · avg 38%       7.7%  sharp · at its level
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       86.7%  ▁▁▂▂▄▄▃▆▅█▅● beats 79/80    easy · avg 85%         4.8%  small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (maker)</a>                     86.7%  ▁▁▂▂▄▄▃▆▅█▅● beats 79/80    easy · avg 85%         4.8%  small run
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    52.3%  ▂▂··▂·▂··▂●▄ beats 8/10     medium · avg 56%       4.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   84.8%  ▃····▃·▃▃█▅● beats 9/10     easy · avg 81%         3.7%  at its level
 <a href="https://aclanthology.org/2023.emnlp-main.600.pdf">SummEdits factual-consistency det…</a>   59.8%  ▄····▄·●···▄ beats 2/4      hard · avg 65%         3.6%  at its level · noisy

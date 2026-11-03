@@ -69,6 +69,6 @@ weighted average                                   = 33.5
 
 Other versions: fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors --type q8_0 -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v`
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/sdxl-turbo)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/sdxl-turbo)
 
 [interactive version](https://whatmodel.sh/model/sdxl-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

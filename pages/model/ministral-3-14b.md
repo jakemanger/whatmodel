@@ -64,8 +64,8 @@ test                                result  vs the others in its run   difficult
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified) (lab)</a>   90.4%  ▂▄▄▃█▇▅▆●▃▄▁ beats 66/80  easy · avg 84%    9.0%  small run · several runs
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified) (maker)</a>   90.4%  ▂▄▄▃█▇▅▆●▃▄▁ beats 66/80  easy · avg 84%    9.0%  small run · several runs
 </pre>
 
 </details>
@@ -194,7 +194,7 @@ Other versions: Q8_0 (~17.18 GB) `ollama run ministral-3:14b-instruct-2512-q8_0`
    mlx_lm.server --model mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512)
 
 ## Published speed measurements
 

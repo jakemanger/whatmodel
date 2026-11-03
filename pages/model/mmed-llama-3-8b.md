@@ -100,6 +100,6 @@ weighted average                        = 38.5
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Henrychur/MMed-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Henrychur](https://huggingface.co/Henrychur/MMed-Llama-3-8B)
+Model repository and documentation: [huggingface.co/Henrychur](https://huggingface.co/Henrychur/MMed-Llama-3-8B)
 
 [interactive version](https://whatmodel.sh/model/mmed-llama-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

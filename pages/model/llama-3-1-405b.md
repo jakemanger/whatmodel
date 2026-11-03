@@ -221,6 +221,6 @@ Other versions: 8bit (~431.2 GB, Mac only) `lms get https://huggingface.co/mlx-c
    mlx_lm.server --model mlx-community/Llama-3.1-405B-Instruct-8bit
    ```
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-405b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

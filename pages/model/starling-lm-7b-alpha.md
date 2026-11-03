@@ -126,6 +126,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/MaziyarPanahi/Sta
 
 Other versions: Q8_0 (~9.19 GB) `ollama run starling-lm:7b-alpha-q8_0`
 
-Official weights and documentation: [huggingface.co/berkeley-nest](https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha)
+Model repository and documentation: [huggingface.co/berkeley-nest](https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha)
 
 [interactive version](https://whatmodel.sh/model/starling-lm-7b-alpha) · [JSON](https://whatmodel.sh/api?format=json&all=1)

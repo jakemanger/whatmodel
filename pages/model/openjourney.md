@@ -71,6 +71,6 @@ weighted average                                   = 27.6
 
 Other versions: Q8_0 (SD.CPP --TYPE) (~2.1 GB) `sd-cli -m models/mdjrny-v4.safetensors --type q8_0 -p "a lovely cat"`
 
-Official weights and documentation: [huggingface.co/prompthero](https://huggingface.co/prompthero/openjourney)
+Model repository and documentation: [huggingface.co/prompthero](https://huggingface.co/prompthero/openjourney)
 
 [interactive version](https://whatmodel.sh/model/openjourney) · [JSON](https://whatmodel.sh/api?format=json&all=1)

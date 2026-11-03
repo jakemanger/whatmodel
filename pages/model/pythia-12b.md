@@ -127,6 +127,6 @@ Other versions: Q8_0 (~12.6 GB) `ollama run hf.co/mradermacher/pythia-12b-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-12b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-12b)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-12b)
 
 [interactive version](https://whatmodel.sh/model/pythia-12b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

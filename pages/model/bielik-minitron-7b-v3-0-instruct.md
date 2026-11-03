@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2026-01 · 7.48B params · apache-2.0
 
-**score 51.7** ±3.5 · #429 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 51.7** ±3.5 · #429 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -32,10 +32,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>               1   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             6% ▇
-weighted average                        = 51.7
+source                                    results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (submitted / maker-rep…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 51.7
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
@@ -131,6 +131,6 @@ Other versions: 8bit (~7.9 GB, Mac only) `mlx_lm.chat --model lukagra/Bielik-Min
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-Minitron-7B-v3.0-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct)
+Model repository and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct)
 
 [interactive version](https://whatmodel.sh/model/bielik-minitron-7b-v3-0-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -123,6 +123,6 @@ Other versions: Q8_0 (~4.35 GB) `ollama run hermes3:3b-llama3.2-q8_0`
 
 Other versions: 8bit (~3.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Hermes-3-Llama-3.2-3B-8bit`
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B)
 
 [interactive version](https://whatmodel.sh/model/hermes-3-llama-3-2-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

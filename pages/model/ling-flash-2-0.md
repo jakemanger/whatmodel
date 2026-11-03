@@ -109,6 +109,6 @@ Other versions: Q2_K (~36.25 GB) `lms get https://huggingface.co/bartowski/inclu
    ollama run hf.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K
    ```
 
-Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-flash-2.0)
+Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-flash-2.0)
 
 [interactive version](https://whatmodel.sh/model/ling-flash-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -157,6 +157,6 @@ Other versions: Q8_0 (~3 GB) `ollama run stable-code:3b-code-q8_0`
    mlx_lm.server --model mlx-community/stable-code-3b-4bit
    ```
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-code-3b)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-code-3b)
 
 [interactive version](https://whatmodel.sh/model/stable-code-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

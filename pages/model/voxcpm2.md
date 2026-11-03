@@ -42,8 +42,8 @@ test                                  result  vs the others in its run  difficul
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · WER (lab)</a>            7.2%  █··██·████●█ beats 7/8    avg 27%                   13%  sharp · several runs
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-zh · CER (lab)</a>            8.3%  ▃▃·▃··▃▃●··▃ beats 7/8    avg 23%                  8.9%  several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · WER (maker)</a>          7.2%  █··██·████●█ beats 7/8    avg 27%                   13%  sharp · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-zh · CER (maker)</a>          8.3%  ▃▃·▃··▃▃●··▃ beats 7/8    avg 23%                  8.9%  several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval hard-en · speaker simila…</a>     69.1%  ▄█▄·●··▄··▄█ beats 4/8    medium · avg 49%         6.7%  at its level · several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      3.5%  █▄···█●·█··▄ beats 5/8    avg 9.3%                 5.9%  typical
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      3.6%  ▄·····●··▄██ beats 2/7    avg 8.3%                 5.0%  typical
@@ -65,15 +65,15 @@ test                                  result  vs the others in its run  difficul
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                               results  share of the score
-<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">UltraEval-Audio (lab)</a>                     10   42% ▇▇▇▇▇
-<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>        8   31% ▇▇▇▇
-<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report</a>                    4   17% ▇▇
-<a name="card3-nineninesix-gepard-1-0"></a><a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">nineninesix/gepard-1.0 model card</a>          3    7% ▇
-<a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot</a>                1    2% ▇
-<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                           1    1% ▇
-prior: pull toward the middle                   0% ▇
-weighted average                              = 64.1
+source                                    results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">UltraEval-Audio (submitted / maker-repo…</a>       10   42% ▇▇▇▇▇
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>             8   31% ▇▇▇▇
+<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report</a>                         4   17% ▇▇
+<a name="card3-nineninesix-gepard-1-0"></a><a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">nineninesix/gepard-1.0 model card</a>               3    7% ▇
+<a name="speech-ztts1-eval-apache"></a><a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval results snapshot</a>                     1    2% ▇
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                                1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 64.1
 </pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · nineninesix/gepard-1.0 model card ([Apache-2.0](https://opensource.org/licenses/Apache-2.0)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
@@ -90,6 +90,6 @@ weighted average                              = 64.1
 
 Other versions: BF16 (VOXCPM) (~4.96 GB) `pip install voxcpm && voxcpm design --text "VoxCPM2 brings studio-quality multilingual speech synthesis." --output out.wav` · Q8_0 (LLAMA.CPP-OMNI) (~3.55 GB) `git clone https://github.com/tc-mb/llama.cpp-omni.git && cd llama.cpp-omni && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build --target voxcpm2-cli -j && huggingface-cli download DennisHuang648/VoxCPM2-GGUF VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf --local-dir . && ./build/bin/voxcpm2-cli -t "Hello, this is VoxCPM2 running through llama.cpp-omni." -o output.wav VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf` · BF16 (MLX-AUDIO) (~4.96 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-bf16 --text "Hello world" --play` · 8bit (mlx-audio) (~3.23 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-8bit --text "Hello world" --play`
 
-Official weights and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/VoxCPM2)
+Model repository and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/VoxCPM2)
 
 [interactive version](https://whatmodel.sh/model/voxcpm2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

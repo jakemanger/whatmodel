@@ -105,6 +105,6 @@ weighted average                        = 48.8
    ollama run hf.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B)
 
 [interactive version](https://whatmodel.sh/model/hermes-2-theta-llama-3-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

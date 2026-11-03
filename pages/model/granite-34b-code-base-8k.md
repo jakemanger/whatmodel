@@ -28,9 +28,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 62%     23%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   34.1%  ▄▇█▃▄▇▄●▇▃·▁ beats 27/35  medium · avg 46%     15%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 51%     15%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 67%       13%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 56%     10%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     44.8%  ▃·▃██▅▃·▃▃●▃ beats 14/15  medium · avg 54%    8.3%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 67%       13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 56%     10%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (maker)</a>                   44.8%  ▃·▃██▅▃·▃▃●▃ beats 14/15  medium · avg 54%    8.3%  blunt · at its level
 </pre>
 
 </details>
@@ -110,6 +110,6 @@ weighted average                                   = 43.3
    ollama run hf.co/ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-34b-code-base-8k)
 
 [interactive version](https://whatmodel.sh/model/granite-34b-code-base-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

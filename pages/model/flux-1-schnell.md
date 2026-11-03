@@ -85,6 +85,6 @@ api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-
 
 Other versions: BF16 (~29.3 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-schnell', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0.0, max_sequence_length=256).images[0].save('out.png')"` · gguf-q8_0 (~28.3 GB) `sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu` · BF16 (~29.3 GB, Mac only) `uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2`
 
-Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell)
+Model repository and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell)
 
 [interactive version](https://whatmodel.sh/model/flux-1-schnell) · [JSON](https://whatmodel.sh/api?format=json&all=1)

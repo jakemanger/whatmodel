@@ -31,8 +31,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 39.0%  █·▅▃▃●▅▃▃▅·▅ beats 7/15   easy · avg 81%       10%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 62%    4.0%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.8%  ▁···▁▁▂●▇█▆▂ beats 16/75  easy · avg 66%      3.2%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                     35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 56%    2.7%  at its level · several runs
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                     34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 54%    2.4%  blunt · at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (maker)</a>                   35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 56%    2.7%  at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (maker)</a>                   34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 54%    2.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              21.5%  ▄▄·▄●█▄█·█·▄ beats 3/12   medium · avg 49%    2.3%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.9%  ▄●█▃▄▇▄▁▇▃·▁ beats 7/35   medium · avg 46%    2.1%  typical
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            58.7%  ▃▃▃·▆●▃█▃▂▂▅ beats 10/25  easy · avg 83%      1.9%  sharp · at its level
@@ -173,6 +173,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run codellama:7b-code-q8_0`
    mlx_lm.server --model mlx-community/CodeLlama-7b-hf-4bit-mlx
    ```
 
-Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-7b-hf)
+Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-7b-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

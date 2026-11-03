@@ -62,6 +62,6 @@ weighted average                              = 45.0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/AceGPT-13B-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat)
+Model repository and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat)
 
 [interactive version](https://whatmodel.sh/model/acegpt-13b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

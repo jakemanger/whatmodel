@@ -46,6 +46,6 @@ weighted average                                   = 42.9
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tk-instruct-11b-def-pos)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tk-instruct-11b-def-pos)
 
 [interactive version](https://whatmodel.sh/model/tk-instruct-11b-def-pos) · [JSON](https://whatmodel.sh/api?format=json&all=1)

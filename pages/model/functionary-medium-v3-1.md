@@ -109,6 +109,6 @@ Other versions: Q2_K (~26.4 GB) `ollama run hf.co/second-state/functionary-mediu
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meetkai/functionary-medium-v3.1', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/meetkai](https://huggingface.co/meetkai/functionary-medium-v3.1)
+Model repository and documentation: [huggingface.co/meetkai](https://huggingface.co/meetkai/functionary-medium-v3.1)
 
 [interactive version](https://whatmodel.sh/model/functionary-medium-v3-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

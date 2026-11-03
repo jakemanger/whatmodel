@@ -55,6 +55,6 @@ weighted average                                   = 42.4
 
 Other versions: BF16 256PX DIRECT TEXT-TO-VIDEO (~54.5 GB, NVIDIA only) `git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/256px.py --prompt "raining, sea"`
 
-Official weights and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/Open-Sora-v2)
+Model repository and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/Open-Sora-v2)
 
 [interactive version](https://whatmodel.sh/model/open-sora-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

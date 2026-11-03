@@ -28,7 +28,7 @@ Trails [Gemini 4 Argon](gemini-4-argon.md), [Claude Sonnet 5.5](claude-sonnet-5-
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1057 IPS  ▁▁▁▃▃▂█▁▂●▁▁ beats 52/59  avg -0.379 IPS           16%  sharp
-<a href="https://openai.com/index/introducing-gpt-6-1-terra#a-significant-step-up-on-factuality-and-coding">Terminal-Bench 4.0 (lab)</a>                 50.3%  ▁·▁··▁▆▆▅█●▃ beats 25/33  very hard · avg 0.4%    9.2%  sharp · at its level · small run
+<a href="https://openai.com/index/introducing-gpt-6-1-terra#a-significant-step-up-on-factuality-and-coding">Terminal-Bench 4.0 (maker)</a>               50.3%  ▁·▁··▁▆▆▅█●▃ beats 25/33  very hard · avg 0.4%    9.2%  sharp · at its level · small run
 </pre>
 
 </details>

@@ -29,7 +29,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                            83.5%  ▁█▄▅▇█·▄▇▅▄● beats 42/42  easy · avg 75%       10%  sharp
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.2%  ▁·▁▂▄▁▆▄●▆▂▂ beats 41/62  medium · avg 51%    7.6%  sharp · at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>       86.6%  ●█▆▆▂··▂···▂ beats 1/15   easy · avg 83%      1.4%  typical
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (maker)</a>     86.6%  ●█▆▆▂··▂···▂ beats 1/15   easy · avg 83%      1.4%  typical
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails 
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         35.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 27/92  hard · avg 28%      9.4%  sharp · at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH (simple-evals, original test…</a>   64.5%  ●····▄··▄··█ beats 1/5    medium · avg 62%    1.7%  at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            85.1%  ▁····●▅▁█▁▃▁ beats 1/16   easy · avg 80%      1.7%  typical
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (maker)</a>          85.1%  ▁····●▅▁█▁▃▁ beats 1/16   easy · avg 80%      1.7%  typical
 </pre>
 
 </details>
@@ -66,11 +66,11 @@ test                                result  vs the others in its run  difficulty
 test                                          result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           48.9%  ▁▁▁▂▂▃▂█▆▃●▃ beats 52/61   medium · avg 38%        18%  at its level
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              65.1%  ▂▂▃▄▄█▁▄▅▃▁● beats 41/42   medium · avg 52%        11%  at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>              41.4%  ●▃▃█·▃▃▅▃▃▃▅ beats 1/16    hard · avg 39%         6.5%  sharp · at its level
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (make…</a>             41.4%  ●▃▃█·▃▃▅▃▃▃▅ beats 1/16    hard · avg 39%         6.5%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   42.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 45/211  hard · avg 39%         6.1%  sharp · at its level
 <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  52.2775 WB-Score  ▁·▁▁·▃█▄▇▆●▆ beats 42/52   avg 43.019 WB-Score    4.5%  sharp
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>             85.4%  ▂▂·●▄▄▂·█▂·▂ beats 4/16    easy · avg 79%         3.3%  typical
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>             81.5%  ▂▂▄▆●█·▂···▄ beats 7/16    easy · avg 78%         0.4%  blunt
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (m…</a>             81.5%  ▂▂▄▆●█·▂···▄ beats 7/16    easy · avg 78%         0.4%  blunt
 </pre>
 
 </details>

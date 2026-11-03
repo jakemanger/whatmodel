@@ -25,8 +25,8 @@ vision &amp; documents  ▁▁▂▂▁●▄▂▆▇█▄    #118 of 153     
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>   69.4%  ▁··▁▄▄▆▇●▅█▄ beats 25/48  medium · avg 62%     21%  at its level · small run
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (maker)</a>   69.4%  ▁··▁▄▄▆▇●▅█▄ beats 25/48  medium · avg 62%     21%  at its level · small run
 </pre>
 
 </details>
@@ -38,9 +38,9 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1095.4  ▁▁▂▂▂▂●▄▅▅█▇ beats 29/152  avg 1061             49%  blunt
-<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>        69.4%  ▁··▁▄▄▆▇●▅█▄ beats 25/48   medium · avg 62%     21%  at its level · small run
-<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▃█●▆▅ beats 26/53   medium · avg 56%     21%  at its level · small run
-<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                     88.1%  ▁··▁▁▁▁▁▂▅▅● beats 34/44   easy · avg 82%      6.8%  blunt · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (maker)</a>      69.4%  ▁··▁▄▄▆▇●▅█▄ beats 25/48   medium · avg 62%     21%  at its level · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (maker)</a>                64.0%  ▁····▁▁▃█●▆▅ beats 26/53   medium · avg 56%     21%  at its level · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (maker)</a>                   88.1%  ▁··▁▁▁▁▁▂▅▅● beats 34/44   easy · avg 82%      6.8%  blunt · small run
 </pre>
 
 </details>
@@ -104,6 +104,6 @@ weighted average                                   = 54.7
    pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-Large-Instruct-2411 --config-format mistral --load-format mistral --tokenizer_mode mistral --limit_mm_per_prompt 'image=10' --tensor-parallel-size 8
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411)
 
 [interactive version](https://whatmodel.sh/model/pixtral-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

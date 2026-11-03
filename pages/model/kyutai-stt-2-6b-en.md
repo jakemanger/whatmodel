@@ -66,6 +66,6 @@ weighted average                        = 56.9
 
 Other versions: BF16 (~6.74 GB, Mac only) `uvx --with moshi-mlx python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3 --temp 0`
 
-Official weights and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/stt-2.6b-en)
+Model repository and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/stt-2.6b-en)
 
 [interactive version](https://whatmodel.sh/model/kyutai-stt-2-6b-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

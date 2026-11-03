@@ -37,11 +37,11 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                  result  vs the others in its run  difficulty             counts  why
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval hard-en · WER (lab)</a>            7.4%  █··██·███●██ beats 6/8    avg 27%                   12%  sharp · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval hard-en · WER (maker)</a>          7.4%  █··██·███●██ beats 6/8    avg 27%                   12%  sharp · several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval hard-en · speaker simila…</a>     65.0%  ●█▄·▄··▄··▄█ beats 0/8    medium · avg 49%          10%  at its level · several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval EN (zero-shot English) ·…</a>      6.6%  ▃·······▃●█▅ beats 2/8    avg 16%                   10%  several runs
 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      3.4%  █▄···█▄·●··▄ beats 7/8    avg 9.3%                 6.9%  typical
-<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval hard-zh · CER (lab)</a>           10.0%  ▃▃·●··▃▃█··▃ beats 2/8    avg 23%                  5.6%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">CV3-Eval hard-zh · CER (maker)</a>         10.0%  ▃▃·●··▃▃█··▃ beats 2/8    avg 23%                  5.6%  typical
 <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (predic…</a>  3.78 / 5  ▄·····●·▄▄·█ beats 2/6    medium · avg 2.98 / 5    4.6%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall speak…</a>     64.2%  ▄·█·●▄·····▄ beats 4/6    medium · avg 44%         4.4%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.54 / 5  ●··██······▄ beats 1/6    medium · avg 2.83 / 5    4.0%  at its level
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">UltraEval-Audio (lab)</a>                           9   46% ▇▇▇▇▇▇
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">UltraEval-Audio (submitted / maker-repo…</a>        9   46% ▇▇▇▇▇▇
 <a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        9   40% ▇▇▇▇▇
 <a name="speech-voxcpm-report-ccby"></a><a href="https://arxiv.org/html/2509.24650v1">VoxCPM: Tokenizer-Free TTS for Context-…</a>        4   13% ▇▇
 prior: pull toward the middle                        1% ▇
@@ -91,6 +91,6 @@ VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">Seed-TTS
    pip install voxcpm && voxcpm design --text "Hello, world." --hf-model-id openbmb/VoxCPM-0.5B --output out.wav
    ```
 
-Official weights and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/VoxCPM-0.5B)
+Model repository and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/VoxCPM-0.5B)
 
 [interactive version](https://whatmodel.sh/model/voxcpm-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

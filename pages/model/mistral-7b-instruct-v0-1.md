@@ -138,6 +138,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/Mistral-
    ollama run mistral:v0.1
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mistral-7b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

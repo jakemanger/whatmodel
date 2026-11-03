@@ -30,7 +30,7 @@ Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolL
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           56.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 64/114  medium · avg 51%    4.5%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   10.0%  ▁▁▁▂▆▆▅▆█▂▄▃ beats 0/114   hard · avg 31%         —  failed run: No function call was ever e…
-<a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (lab)</a>                74.1%  █··········● beats 1/1                            —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (maker)</a>              74.1%  █··········● beats 1/1                            —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -65,10 +65,10 @@ test                                result  vs the others in its run    difficul
 Trails [Llama 3.3 Nemotron Super 49B v1](llama-3-3-nemotron-super-49b-v1.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   72.5%  ▁·▁▁▁▂▅▆●▇▅▁ beats 70/133  medium · avg 38%        13%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 48%        11%  sharp · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 69/85   very easy · avg 91%    6.8%  maxed out · small run
+test               result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (maker)</a>   72.5%  ▁·▁▁▁▂▅▆●▇▅▁ beats 70/133  medium · avg 38%        13%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (maker)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 48%        11%  sharp · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (maker)</a>    97.0%  ▁▃▂▃▄▇▅▇●▄▂▁ beats 69/85   very easy · avg 91%    6.8%  maxed out · small run
 </pre>
 
 </details>
@@ -77,7 +77,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 181/322  hard · avg 46%     17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (maker)</a>                 76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 181/322  hard · avg 46%     17%  sharp · at its level · small run
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1034           13%  typical
 </pre>
 
@@ -89,7 +89,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (lab)</a>                                    6   58% ▇▇▇▇▇▇▇
+<a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (submitted / maker-reported)</a>             6   58% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   13% ▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    4% ▇
@@ -175,6 +175,6 @@ Other versions: ud-q2_k_xl (~76.4 GB) `lms get https://huggingface.co/unsloth/Ll
    mlx_lm.server --model LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-ultra-253b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

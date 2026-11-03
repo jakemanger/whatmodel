@@ -57,6 +57,6 @@ weighted average                                   = 27.0
    git clone https://github.com/hotshotco/Hotshot-XL && cd Hotshot-XL && pip install -r requirements.txt && python inference.py --prompt="a bulldog in the captains chair of a spaceship, hd, high quality" --output="output.gif"
    ```
 
-Official weights and documentation: [huggingface.co/hotshotco](https://huggingface.co/hotshotco/Hotshot-XL)
+Model repository and documentation: [huggingface.co/hotshotco](https://huggingface.co/hotshotco/Hotshot-XL)
 
 [interactive version](https://whatmodel.sh/model/hotshot-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

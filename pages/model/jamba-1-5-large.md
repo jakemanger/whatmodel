@@ -27,8 +27,8 @@ math            ▁▁▃▅●▆▄█▄▂▁▁   #274 of 431*     11%     
 Beats [o3-pro](o3-pro.md), [Grok 4.3](grok-4-3.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (lab)</a>   85.5%  ▄▆▄▂·█●·▄··▂ beats 14/17  easy · avg 81%    2.3%  blunt · small run
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (maker)</a>   85.5%  ▄▆▄▂·█●·▄··▂ beats 14/17  easy · avg 81%    2.3%  blunt · small run
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ test                             result  vs the others in its run  difficulty   
 <details><summary>coding · #1 of 2 · 7.5% of its score</summary>
 
 <pre>
-test             result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 69%    7.5%  sharp · at its level · small run
+test               result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (maker)</a>   71.3%  ▁▁▁▁▂▂▆▆●▅▂▁ beats 138/205  easy · avg 69%    7.5%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -60,8 +60,8 @@ test                                result  vs the others in its run    difficul
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>   87.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 161/206  easy · avg 82%     11%  sharp · small run
+test           result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (maker)</a>   87.0%  ▂▂▂▂▃▄▅▇█●▆▄ beats 161/206  easy · avg 82%     11%  sharp · small run
 </pre>
 
 </details>
@@ -69,12 +69,12 @@ test         result  vs the others in its run    difficulty      counts  why
 <details><summary>other tests (5)</summary>
 
 <pre>
-test                             result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                          49.5%  ▃▂▅█●·█▃▅··▂ beats 12/23    medium · avg 54%        27%  at its level · several runs
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▃▃ beats 32/106   very hard · avg 35%     11%  sharp · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>              65.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 98/155   medium · avg 61%        10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/214  easy · avg 75%         8.1%  at its level · small run
-<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>               93.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 139/140  easy · avg 76%         1.9%  sharp · at its level · noisy · small run
+test                               result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                            49.5%  ▃▂▅█●·█▃▅··▂ beats 12/23    medium · avg 54%        27%  at its level · several runs
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (maker)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▃▃ beats 32/106   very hard · avg 35%     11%  sharp · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (maker)</a>              65.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 98/155   medium · avg 61%        10%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (maker)</a>                        80.0%  ▁▁▁▁▁▂▂▅██●▄ beats 166/214  easy · avg 75%         8.1%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (maker)</a>               93.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 139/140  easy · avg 76%         1.9%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -104,6 +104,6 @@ weighted average                                   = 51.7
    pip install 'vllm>=0.5.5' && vllm serve ai21labs/AI21-Jamba-Large-1.5 --tensor-parallel-size 8 --max-model-len 225280 --quantization experts_int8
    ```
 
-Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5)
+Model repository and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5)
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

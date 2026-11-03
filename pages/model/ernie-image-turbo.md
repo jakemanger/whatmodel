@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 60.5** ±3.0 · #40 of 144 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.5** ±3.0 · #40 of 144 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -24,12 +24,12 @@ text to image  ▂▅▅▃▄▄●▃▂▂▁▁   #32 of 126     96%      5
 Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md), [Imagen 4 Ultra](imagen-4-ultra.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md) here, though they rank lower overall.
 
 <pre>
-test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>   96.0%  ▃·····▅██●▃▃ beats 10/12  very easy · avg 90%     25%  maxed out · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>   96.8%  ▃·······███● beats 10/12  very easy · avg 91%     20%  maxed out · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>               86.7%  ▇▃▅▇▁▄▅▃█▃●▅ beats 34/39  easy · avg 78%          19%  small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>      50.6%  ▃·▃●▃·▃··▃·▃ beats 2/8    medium · avg 37%        16%  at its level · small run
-<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>      53.4%  ▃······▃▅●▅▃ beats 4/9    medium · avg 39%        16%  at its level · small run
+test                         result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (maker)</a>   96.0%  ▃·····▅██●▃▃ beats 10/12  very easy · avg 90%     25%  maxed out · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (maker)</a>   96.8%  ▃·······███● beats 10/12  very easy · avg 91%     20%  maxed out · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (maker)</a>               86.7%  ▇▃▅▇▁▄▅▃█▃●▅ beats 34/39  easy · avg 78%          19%  small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (maker)</a>      50.6%  ▃·▃●▃·▃··▃·▃ beats 2/8    medium · avg 37%        16%  at its level · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (maker)</a>      53.4%  ▃······▃▅●▅▃ beats 4/9    medium · avg 39%        16%  at its level · small run
 </pre>
 
 </details>
@@ -65,6 +65,6 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 Other versions: BF16 (~19.7 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=8, guidance_scale=1.0).images[0].save('out.png')"` · BF16 + MINISTRAL 3B (SD.CPP) (~29.4 GB) `sd-cli --diffusion-model models/ernie-image-turbo.safetensors --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa`
 
-Official weights and documentation: [huggingface.co/baidu](https://huggingface.co/baidu/ERNIE-Image-Turbo)
+Model repository and documentation: [huggingface.co/baidu](https://huggingface.co/baidu/ERNIE-Image-Turbo)
 
 [interactive version](https://whatmodel.sh/model/ernie-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

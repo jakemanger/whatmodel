@@ -73,7 +73,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card</a>                       1   19% ▇▇
 <a name="speech-voicecraft-report-bysa"></a><a href="https://arxiv.org/html/2403.16973v3">VoiceCraft: Zero-Shot Speech Editing an…</a>        3   17% ▇▇
-<a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv">ZS-TTS-Evaluation (lab)</a>                         2   14% ▇▇
+<a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv">ZS-TTS-Evaluation (submitted / maker-re…</a>        2   14% ▇▇
 <a name="speech-stylettszs-report-bysa"></a><a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS: Efficient High-Quality Zer…</a>        3   11% ▇
 <a name="speech-ditto-tts-report-ccby"></a><a href="https://arxiv.org/html/2406.11427v2">DiTTo-TTS: Diffusion Transformers for S…</a>        2   11% ▇
 <a name="speech-cloneval-space-apache"></a><a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · Open Voice Cloning Leaderboa…</a>        1    7% ▇
@@ -102,6 +102,6 @@ weighted average                                   = 29.9
 
 Other versions: fp32 (coqui-tts 0.27.5) (~1.88 GB, NVIDIA only) `uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text "It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." --speaker_idx "Ana Florence" --language_idx en --use_cuda --out_path speech.wav`
 
-Official weights and documentation: [huggingface.co/coqui](https://huggingface.co/coqui/XTTS-v2)
+Model repository and documentation: [huggingface.co/coqui](https://huggingface.co/coqui/XTTS-v2)
 
 [interactive version](https://whatmodel.sh/model/xtts-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

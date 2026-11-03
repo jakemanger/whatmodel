@@ -121,6 +121,6 @@ Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/mradermacher/gemma-2-9b-it-DPO-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/gemma-2-9b-it-DPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/gemma-2-9b-it-DPO)
+Model repository and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/gemma-2-9b-it-DPO)
 
 [interactive version](https://whatmodel.sh/model/gemma-2-9b-it-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

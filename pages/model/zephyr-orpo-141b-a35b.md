@@ -35,8 +35,8 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                  result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard (lab)</a>   59.0%  ▁▁▁▁▂▄▅●█▃▃▁ beats 83/155  medium · avg 62%     23%  sharp · at its level · small run
+test                    result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard (maker)</a>   59.0%  ▁▁▁▁▂▄▅●█▃▃▁ beats 83/155  medium · avg 62%     23%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -114,6 +114,6 @@ Other versions: Q8_0 (~149.4 GB) `lms get https://huggingface.co/MaziyarPanahi/z
 
 Other versions: Q8_0 (~169.7 GB) `ollama run zephyr:141b-v0.1-q8_0`
 
-Official weights and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1)
+Model repository and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1)
 
 [interactive version](https://whatmodel.sh/model/zephyr-orpo-141b-a35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

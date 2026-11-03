@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-10 · 74B params (9B active) · open-mdw-1.1
 
-**score 67.8** ±2.1 · #104 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 67.8** ±2.1 · #104 of 732 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ web search   ●··········█         #2 of 2*     12%      1
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">Terminal-Bench 2.1 (lab)</a>   53.9%  ▁·▁·▁▁▄▃●█▅█ beats 20/63  hard · avg 16%           20%  sharp · at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">BrowseComp (lab)</a>           70.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 35/46  hard · avg 31%           12%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">τ³-bench Banking (lab)</a>     17.0%  ▂▂·▅█▂▃▃●▆▂▅ beats 16/24  very hard · avg 6.5%    6.1%  blunt · small run
+test                        result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">Terminal-Bench 2.1 (maker)</a>   53.9%  ▁·▁·▁▁▄▃●█▅█ beats 20/63  hard · avg 16%           20%  sharp · at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">BrowseComp (maker)</a>           70.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 35/46  hard · avg 31%           12%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">τ³-bench Banking (maker)</a>     17.0%  ▂▂·▅█▂▃▃●▆▂▅ beats 16/24  very hard · avg 6.5%    6.1%  blunt · small run
 </pre>
 
 </details>
@@ -37,8 +37,8 @@ test                      result  vs the others in its run  difficulty          
 <details><summary>coding · 0.0% of its score</summary>
 
 <pre>
-test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">SciCode (level unspecified) (lab)</a>   44.5%  ▁····▃▃▄▅█●▂ beats 35/40  very hard · avg 13%       —  not counted yet: no other model in the …
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">SciCode (level unspecified) (make…</a>   44.5%  ▁····▃▃▄▅█●▂ beats 35/40  very hard · avg 13%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ test                               result  vs the others in its run  difficulty 
 Trails [Nemotron 3.5 Super VL 120B A12B](nemotron-3-5-super-vl-120b-a12b.md) here, though they rank lower overall.
 
 <pre>
-test              result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">BrowseComp (lab)</a>   70.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 35/46  hard · avg 31%     12%  at its level · small run
+test                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">BrowseComp (maker)</a>   70.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 35/46  hard · avg 31%     12%  at its level · small run
 </pre>
 
 </details>
@@ -57,10 +57,10 @@ test              result  vs the others in its run  difficulty      counts  why
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">GPQA Diamond (lab)</a>             88.8%  ▁▁▁▁▂▄▅▅██●▄ beats 263/322  hard · avg 47%           35%  sharp · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">Humanity's Last Exam (lab)</a>     28.7%  ▁▁▁▄▆▆▇●█▆▁▃ beats 72/111   very hard · avg 5.5%     26%  at its level · small run
-<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">MCP-Atlas v1 public500 (lab)</a>   55.6%  ●·····█····█ beats 0/2                                 —  not counted yet: no other model in the …
+test                            result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">GPQA Diamond (maker)</a>             88.8%  ▁▁▁▁▂▄▅▅██●▄ beats 263/322  hard · avg 47%           35%  sharp · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">Humanity's Last Exam (maker)</a>     28.7%  ▁▁▁▄▆▆▇●█▆▁▃ beats 72/111   very hard · avg 5.5%     26%  at its level · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16/blob/567021037ff88364143e24ea05e6abd0f72086ff/README.md#benchmarks">MCP-Atlas v1 public500 (maker)</a>   55.6%  ●·····█····█ beats 0/2                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -118,6 +118,6 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
      --reasoning-parser ultra_v3
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-bolt-74b-a9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

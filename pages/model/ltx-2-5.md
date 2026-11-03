@@ -69,6 +69,6 @@ api (Lightricks (LTX API)) · $0.12/sec · [docs.ltx.io](https://docs.ltx.io/pri
 
 Other versions: Q8 (~26.9 GB, Mac only) `rapid-mlx serve ltx-2.5-mlx-q8` · gguf-q8_0 22B dev + Gemma 4 12B q8_0 (sd.cpp) (~47.7 GB) `sd-cli -M convert -m models/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --type q8_0 -o models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf && sd-cli -M vid_gen --diffusion-model models/ltx-2.5-22b-dev-transformer-Q8_0.gguf --vae models/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae models/ltx-2.5-audio-vae-bf16.safetensors --llm models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf -p "A wide aerial shot of a red vintage convertible driving along a coastal cliff road at sunset, waves crashing below" --cfg-scale 3.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 121 --fps 24 -o t2v.webm`
 
-Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2.5)
+Model repository and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2.5)
 
 [interactive version](https://whatmodel.sh/model/ltx-2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

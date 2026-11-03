@@ -90,7 +90,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md">CharXiv (reasoning questions) (la…</a>   84.8%  ▂▅▃▅▅▆▆▅▆█●▂ beats 94/101  medium · avg 38%    1.2%  small run
+<a href="https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md">CharXiv (reasoning questions) (ma…</a>   84.8%  ▂▅▃▅▅▆▆▅▆█●▂ beats 94/101  medium · avg 38%    1.2%  small run
 </pre>
 
 </details>
@@ -186,6 +186,6 @@ Other versions: ud-q2_k_xl (~840.5 GB) `llama cli -hf unsloth/Kimi-K3-GGUF:UD-Q2
 
 Other versions: ud-q2_k_xl (~840.5 GB) `lms get https://huggingface.co/unsloth/Kimi-K3-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K3)
+Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K3)
 
 [interactive version](https://whatmodel.sh/model/kimi-k3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

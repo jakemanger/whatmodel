@@ -152,6 +152,6 @@ Other versions: Q8_0 (~24.38 GB) `ollama run internlm2:20b-chat-v2.5-q8_0`
    mlx_lm.server --model mlx-community/internlm2_5-20b-chat_8bit
    ```
 
-Official weights and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-20b-chat)
+Model repository and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-20b-chat)
 
 [interactive version](https://whatmodel.sh/model/internlm2-5-20b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

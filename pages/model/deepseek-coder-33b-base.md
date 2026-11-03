@@ -132,6 +132,6 @@ Other versions: Q8_0 (~35.4 GB) `lms get https://huggingface.co/TheBloke/deepsee
 
 Other versions: Q8_0 (~35 GB) `ollama run deepseek-coder:33b-base-q8_0`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-33b-base)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-33b-base)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-33b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

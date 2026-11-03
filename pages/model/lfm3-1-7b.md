@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-10 · 1.73B params · lfm1.0
 
-**score 35.0** ±15.0 · #2 of 2 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 35.0** ±15.0 · #2 of 2 · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond%40first-party-liquid-scores&score=set) comparison set only.
 
@@ -26,12 +26,12 @@ web search                     not ranked yet       —      1
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">WebArena-Verified (lab)</a>              38.4%  █··●···█·█·█ beats 1/4     hard · avg 32%       27%  sharp · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (lab)</a>             43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/138  medium · avg 47%    4.1%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (lab)</a>         23.0%  ▁··●▃▁▅██▂▂▁ beats 1/65                           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Terminal-Bench 2.1 (lab)</a>             12.9%  ▁·▁·▁●▄▃▆█▅█ beats 3/63                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">WebArena-Verified (maker)</a>            38.4%  █··●···█·█·█ beats 1/4     hard · avg 32%       27%  sharp · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (maker)</a>           43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/138  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (maker)</a>       23.0%  ▁··●▃▁▅██▂▂▁ beats 1/65                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Terminal-Bench 2.1 (maker)</a>           12.9%  ▁·▁·▁●▄▃▆█▅█ beats 3/63                           —  not counted yet: no other model in the …
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam with tools (…</a>   13.9%  ▁·●▂▂▁▄▄▇█▄▅ beats 1/62                           —  not counted yet: no other model in the …
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">MCP-Atlas (public set) (lab)</a>         32.6%  ▂·▁▂●·▁▃█▆▆▂ beats 5/39                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">MCP-Atlas (public set) (maker)</a>       32.6%  ▂·▁▂●·▁▃█▆▆▂ beats 5/39                           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -40,10 +40,10 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SciCode (level unspecified) (lab)</a>    28.5%  ▁····▃▃●▅█▆▂ beats 11/40   hard · avg 30%      5.8%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (lab)</a>             43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/138  medium · avg 47%    4.1%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SciCode (level unspecified) (make…</a>   28.5%  ▁····▃▃●▅█▆▂ beats 11/40   hard · avg 30%      5.8%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Verified (maker)</a>           43.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 33/138  medium · avg 47%    4.1%  at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">LiveCodeBench v6 (window unspecif…</a>   73.5%  ▂▃▄▄▅██●▄▇▄▆ beats 40/67                          —  not counted yet: no other model in the …
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (lab)</a>         23.0%  ▁··●▃▁▅██▂▂▁ beats 1/65                           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">SWE-bench Multilingual (maker)</a>       23.0%  ▁··●▃▁▅██▂▂▁ beats 1/65                           —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -70,11 +70,11 @@ test                                result  vs the others in its run  counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam (lab)</a>            7.2%  ▁▁▁●▆▆▇██▆▁▃ beats 8/111    very hard · avg 7.0%    8.9%  too hard for it · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Humanity's Last Exam (maker)</a>          7.2%  ▁▁▁●▆▆▇██▆▁▃ beats 8/111    very hard · avg 7.0%    8.9%  too hard for it · small run
 <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">IFBench (aggregation unspecified)…</a>   73.0%  ▂▆▂▄▄▄▂▄▄●█▇ beats 62/86    easy · avg 74%          8.0%  at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">GPQA Diamond (lab)</a>                   63.4%  ▁▁▁▁▂▄▅●███▄ beats 124/322  medium · avg 69%        0.8%  blunt · at its level · small run
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">RULER 128k (lab)</a>                     65.6%  ▃··▅▄●▅█▇·▃▃ beats 12/33                               —  not counted yet: no other model in the …
-<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">AutomationBench (Public) (lab)</a>       41.3%  █····▄····▄● beats 4/4                                 —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">GPQA Diamond (maker)</a>                 63.4%  ▁▁▁▁▂▄▅●███▄ beats 124/322  medium · avg 69%        0.8%  blunt · at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">RULER 128k (maker)</a>                   65.6%  ▃··▅▄●▅█▇·▃▃ beats 12/33                               —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">AutomationBench (Public) (maker)</a>     41.3%  █····▄····▄● beats 4/4                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-liquid-scores"></a><a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Liquid AI own-model benchmark facts (la…</a>        7   64% ▇▇▇▇▇▇▇▇
+<a name="first-party-liquid-scores"></a><a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/README.md#performance">Liquid AI own-model benchmark facts (su…</a>        7   64% ▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       36% ▇▇▇▇
 weighted average                                   = 35.0
 </pre>
@@ -157,6 +157,6 @@ Liquid AI own-model b…  <a href="https://huggingface.co/LiquidAI/LFM3-1.7B/blo
    ollama run hf.co/LiquidAI/LFM3-1.7B-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM3-1.7B)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM3-1.7B)
 
 [interactive version](https://whatmodel.sh/model/lfm3-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -22,11 +22,11 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           84.0%  ▂··▂▃▂▂●▃▃█▂ beats 7/19   very easy · avg 98%     19%  blunt · several runs
-<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       56.9%  ▃·▅▃▃▅·●█▃██ beats 8/19   easy · avg 87%          17%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     53.7%  ▄····▄●▂▄▆▆█ beats 5/19   easy · avg 87%          14%  several runs
-<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           70.7%  ▂·▄▄·▄▂●▂▄█▄ beats 8/19   easy · avg 87%          11%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  24.4%  ●··▁·▁▁·▁▂▁▂ beats 6/19   medium · avg 71%        10%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (maker)</a>                         84.0%  ▂··▂▃▂▂●▃▃█▂ beats 7/19   very easy · avg 98%     19%  blunt · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (maker)</a>                     56.9%  ▃·▅▃▃▅·●█▃██ beats 8/19   easy · avg 87%          17%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (maker)</a>                   53.7%  ▄····▄●▂▄▆▆█ beats 5/19   easy · avg 87%          14%  several runs
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (maker)</a>                         70.7%  ▂·▄▄·▄▂●▂▄█▄ beats 8/19   easy · avg 87%          11%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (maker)</a>                24.4%  ●··▁·▁▁·▁▂▁▂ beats 6/19   medium · avg 71%        10%  sharp · too hard for it · several runs
 <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                            44.7%  ●·····▂▂·▂·█ beats 0/8    very easy · avg 91%    8.9%  at its level
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   56.2%  ▃··▅▃▃▅▅●███ beats 9/19   very easy · avg 87%    6.2%  blunt · at its level
 <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                           37.8%  ●·····▄▄▄██▄ beats 0/8    easy · avg 81%         4.2%  typical
@@ -121,6 +121,6 @@ Other versions: Q8_0 (~1.1 GB) `ollama run hf.co/mradermacher/pythia-1b-GGUF:Q8_
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-1b)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-1b)
 
 [interactive version](https://whatmodel.sh/model/pythia-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

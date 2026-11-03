@@ -24,11 +24,11 @@ coding  ▁▁▁▃▅●█▇▅▄▃▁   #363 of 469     77%      4
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Code Tulu 2 13B](code-tulu-2-13b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
 <pre>
-test              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          52.4%  ▁█▄▅▇●·▄▇▅▄▄ beats 24/42  easy · avg 75%       61%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         56.2%  ▃▃▃█··▃●··▅▃ beats 7/11   easy · avg 71%       10%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   43.9%  ▁··▁▅▂█●▁··▁ beats 16/22  medium · avg 52%    3.1%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   41.4%  ▁·▂▃▁●▁▂···▁ beats 14/22  medium · avg 51%    3.0%  blunt · at its level
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>            52.4%  ▁█▄▅▇●·▄▇▅▄▄ beats 24/42  easy · avg 75%       61%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (maker)</a>         56.2%  ▃▃▃█··▃●··▅▃ beats 7/11   easy · avg 71%       10%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (maker)</a>   43.9%  ▁··▁▅▂█●▁··▁ beats 16/22  medium · avg 52%    3.1%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (maker)</a>   41.4%  ▁·▂▃▁●▁▂···▁ beats 14/22  medium · avg 51%    3.0%  blunt · at its level
 </pre>
 
 </details>
@@ -115,6 +115,6 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/mradermacher/Cod
 
 Other versions: Q8_0 (~36 GB) `ollama run codellama:34b-python-q8_0`
 
-Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-34b-Python-hf)
+Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-34b-Python-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-34b-python) · [JSON](https://whatmodel.sh/api?format=json&all=1)

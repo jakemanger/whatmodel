@@ -16,8 +16,8 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                        result  reported by  source
-LibriSpeech test-clean WER    4.3%  lab          <a href="https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md">Cactus Whistle model card</a>
-LibriSpeech test-other WER   10.5%  lab          <a href="https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md">Cactus Whistle model card</a>
+LibriSpeech test-clean WER    4.3%  maker        <a href="https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md">Cactus Whistle model card</a>
+LibriSpeech test-other WER   10.5%  maker        <a href="https://huggingface.co/Cactus-Compute/whistle/blob/741118687e1f008f06d1351a402a731274789790/README.md">Cactus Whistle model card</a>
 </pre>
 
 <sub>Licences: Cactus Whistle model card ([apache-2.0](../../licenses/cards-gap-LICENSE-Apache-2.0.txt))</sub>
@@ -26,6 +26,6 @@ LibriSpeech test-other WER   10.5%  lab          <a href="https://huggingface.co
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/Cactus-Compute](https://huggingface.co/Cactus-Compute/whistle)
+Model repository and documentation: [huggingface.co/Cactus-Compute](https://huggingface.co/Cactus-Compute/whistle)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/cactus-whistle)

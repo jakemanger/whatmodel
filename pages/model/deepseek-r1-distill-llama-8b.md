@@ -40,10 +40,10 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>   50.4%  ▃·▃·●▃···█·▃ beats 2/7    medium · avg 54%        15%  sharp · at its level · noisy · several …
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>    89.1%  ▄·●▄·▄▄█···▄ beats 1/7    very easy · avg 91%     10%  several runs
-<a href="https://arxiv.org/html/2604.19444v1">GSM8K</a>             87.2%  ▃··●··▃▃·▃·█ beats 1/7    very easy · avg 93%    8.8%  sharp · noisy
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (maker)</a>   50.4%  ▃·▃·●▃···█·▃ beats 2/7    medium · avg 54%        15%  sharp · at its level · noisy · several …
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (maker)</a>    89.1%  ▄·●▄·▄▄█···▄ beats 1/7    very easy · avg 91%     10%  several runs
+<a href="https://arxiv.org/html/2604.19444v1">GSM8K</a>               87.2%  ▃··●··▃▃·▃·█ beats 1/7    very easy · avg 93%    8.8%  sharp · noisy
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test             result  vs the others in its run  difficulty           counts  
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>                   49.0%  ▄·····●·█▄▄▄ beats 1/7     hard · avg 49%       27%  sharp · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (maker)</a>                 49.0%  ▄·····●·█▄▄▄ beats 1/7     hard · avg 49%       27%  sharp · several runs
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   28.5%  ▁▁▁▁▁▂▂●▄▆█▃ beats 24/97   hard · avg 31%      7.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   42.4%  ▃▁▁▁▁▁●▁▂█▅▁ beats 50/276  medium · avg 72%    3.6%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   53.7%  ▃·▁▁▂▁▂●█▇▄▁ beats 28/100  medium · avg 67%    2.9%  sharp · at its level · noisy
@@ -67,7 +67,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (lab)</a>        4   28% ▇▇▇
+<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (sub…</a>        4   28% ▇▇▇
 <a name="card-microsoft-phi-4-mini-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">microsoft/Phi-4-mini-reasoning model ca…</a>        3   17% ▇▇
 <a name="report-2503.01743v2"></a><a href="https://arxiv.org/html/2503.01743v2">Microsoft</a>                                       3   17% ▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   12% ▇
@@ -164,7 +164,7 @@ Other versions: Q8_0 (~10.14 GB) `ollama run deepseek-r1:8b-llama-distill-q8_0`
 
 Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-8B-8bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
 
 ## Quantization evidence
 

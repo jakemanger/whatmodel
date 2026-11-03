@@ -42,14 +42,14 @@ test                                                         result  vs the othe
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          52.2%  ▂····▂···▂●▆ beats 4/9     medium · avg 59%             15%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.5100 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 0/9     avg 5.605 MM-MT-Bench s…    9.2%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   75.2%  ▃···█▃··●▃▃▃ beats 5/9     easy · avg 73%              8.8%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                          81.9%  ▃·▃▅█▃▃●▃▃▃▃ beats 9/13    easy · avg 78%              7.9%  small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                              91.2%  ▂▂▃▂·▂▂●▃·▅█ beats 7/18    very easy · avg 91%         6.6%  small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (maker)</a>                                        81.9%  ▃·▃▅█▃▃●▃▃▃▃ beats 9/13    easy · avg 78%              7.9%  small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (maker)</a>                                            91.2%  ▂▂▃▂·▂▂●▃·▅█ beats 7/18    very easy · avg 91%         6.6%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       75.6%  ▄·▄▄▄··▄▄●▄█ beats 6/9     easy · avg 83%              3.6%  blunt · small run · several runs
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                                  93.5%  ▁··▃▁▁▁●█▇▄▅ beats 10/28   very easy · avg 93%         3.2%  blunt · maxed out · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (maker)</a>                                                93.5%  ▁··▃▁▁▁●█▇▄▅ beats 10/28   very easy · avg 93%         3.2%  blunt · maxed out · small run
 <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1077.0  ▄▄·▄·▄▄▄·▄·● beats 8/8     avg 1032                    2.9%  blunt
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                             75.2%  ▁▃▁▇▃▇●▅█▁▅▅ beats 20/39   easy · avg 73%              2.8%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                               96.3%  ▁▁▅▇▃▇·▄·█·● beats 28/28   easy · avg 87%              1.5%  blunt · small run
-<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                                 83.1%  ▁▁▁▄▅▁▃·▃▃●█ beats 17/24   easy · avg 79%              1.3%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (maker)</a>                                           75.2%  ▁▃▁▇▃▇●▅█▁▅▅ beats 20/39   easy · avg 73%              2.8%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (maker)</a>                                             96.3%  ▁▁▅▇▃▇·▄·█·● beats 28/28   easy · avg 87%              1.5%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (maker)</a>                                               83.1%  ▁▁▁▄▅▁▃·▃▃●█ beats 17/24   easy · avg 79%              1.3%  blunt · small run
 </pre>
 
 </details>
@@ -80,6 +80,6 @@ weighted average                                   = 50.4
    vllm serve allenai/Molmo-72B-0924 --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Molmo-72B-0924)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Molmo-72B-0924)
 
 [interactive version](https://whatmodel.sh/model/molmo-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

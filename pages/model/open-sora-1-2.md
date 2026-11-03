@@ -63,6 +63,6 @@ weighted average                                   = 26.6
    git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-2/inference/sample.py --num-frames 4s --resolution 720p --aspect-ratio 9:16 --prompt "a beautiful waterfall"
    ```
 
-Official weights and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/OpenSora-STDiT-v3)
+Model repository and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/OpenSora-STDiT-v3)
 
 [interactive version](https://whatmodel.sh/model/open-sora-1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

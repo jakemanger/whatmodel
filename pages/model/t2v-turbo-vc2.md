@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 37.8** ±2.7 · #73 of 93 · from 3 benchmark results across 3 sources · † every result so far was reported by its maker
+**score 37.8** ±2.7 · #73 of 93 · from 3 benchmark results across 3 sources · † no independently run results verified
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md) here, though they rank low
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1054.7  ▃▃···▅▃·▃●·█ beats 7/10   avg 1229                67%  sharp
-<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>             80.5%  ●···▄▄▄····▄ beats 1/5    very easy · avg 90%     30%  small run · several runs
+<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (maker)</a>           80.5%  ●···▄▄▄····▄ beats 1/5    very easy · avg 90%     30%  small run · several runs
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena (lab)</a>                               1   67% ▇▇▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena (submitted / maker-reported)</a>        1   67% ▇▇▇▇▇▇▇▇
 <a name="paper-2405.18750v2-t2vturbo"></a><a href="https://arxiv.org/html/2405.18750v2">T2V-Turbo: Breaking the Quality Bottlen…</a>        1   15% ▇▇
 <a name="paper-2410.05677v3-t2vturbo2"></a><a href="https://arxiv.org/html/2410.05677v3#S4.T1">T2V-Turbo-v2: Enhancing Video Generatio…</a>        1   15% ▇▇
 prior: pull toward the middle                        3% ▇
@@ -56,6 +56,6 @@ weighted average                                   = 37.8
 
 Other versions: fp32 checkpoints (official Gradio demo, MPS) (~9.9 GB, Mac only) `git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-VC2 unet_lora.pt --local-dir t2v-turbo-vc2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-vc2/unet_lora.pt --base_model_dir vc2/model.ckpt --version v1`
 
-Official weights and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-VC2)
+Model repository and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-VC2)
 
 [interactive version](https://whatmodel.sh/model/t2v-turbo-vc2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

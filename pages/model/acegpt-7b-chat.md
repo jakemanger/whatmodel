@@ -118,6 +118,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/AceGPT-7B-chat-GGU
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/AceGPT-7B-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-7B-chat)
+Model repository and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-7B-chat)
 
 [interactive version](https://whatmodel.sh/model/acegpt-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

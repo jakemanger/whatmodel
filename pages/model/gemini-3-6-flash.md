@@ -30,9 +30,9 @@ Trails [GLM-5.1](glm-5-1.md), [Beam 1.0 501B A23B](beam-1-0-501b-a23b.md), [Qwen
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0768 IPS  ▁▁▁●▃▂█▁▂▂▁▁ beats 7/59   avg -0.379 IPS          8.6%  sharp
-<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  73.0%  ▁·▁·▁▁▄▃▆█●█ beats 42/63  hard · avg 25%          3.9%  sharp · small run · several runs
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new">Terminal-Bench 2.1 (maker)</a>                73.0%  ▁·▁·▁▁▄▃▆█●█ beats 42/63  hard · avg 25%          3.9%  sharp · small run · several runs
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>        11.7%  ●··▅··▃█▃▅▃▅ beats 0/12   very hard · avg 3.7%    1.9%  sharp · at its level
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (lab)</a>                   5.4%  ●·█··██····█ beats 0/4    very hard · avg 1.9%    0.6%  small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (maker)</a>                 5.4%  ●·█··██····█ beats 0/4    very hard · avg 1.9%    0.6%  small run
 </pre>
 
 </details>
@@ -84,7 +84,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">CharXiv (reasoning questions) (la…</a>   85.2%  ▃·▃·▃▃▃·▃▃█● beats 10/11    medium · avg 38%    3.7%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">CharXiv (reasoning questions) (ma…</a>   85.2%  ▃·▃·▃▃▃·▃▃█● beats 10/11    medium · avg 38%    3.7%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1282.0  ▁▁▂▂▂▂▃▄▅▅█● beats 132/152  avg 1061            2.2%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1453.4  ▁▁▃▃▄▃●█▅▇▄▅ beats 15/37    avg 1331            1.2%  blunt
 <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   59.9%  ▃▃···█▃▅▃·●▅ beats 9/11     hard · avg 25%      1.1%  blunt · at its level
@@ -96,14 +96,14 @@ test                                result  vs the others in its run    difficul
 <details><summary>other tests (7)</summary>
 
 <pre>
-test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     23.3%  ●▆▆▆▆▂▆▂▂▂▂▅ beats 4/32     very hard · avg 1.2%    5.1%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   30.0%  █··▂▃▇▄●▂▄▂▁ beats 49/77    very hard · avg 9.4%    4.1%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   94.1%  ▁▁▁▁▂▄▆▄▅▇█● beats 202/211  hard · avg 39%          2.8%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          40.0%  █▁▁▁▁▂▃▃●▂▁▁ beats 120/137  very hard · avg 5.8%    2.7%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              66.2%  ▁▁▃▂▃▃▆▆█▄●▅ beats 70/81    very hard · avg 8.0%    1.3%  at its level
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (lab)</a>                  84.2%  ▇·█▅▅▄▄··●▁▁ beats 25/28    medium · avg 59%        1.1%  typical
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (lab)</a>   91.8%  █▄▄█·▄···●·▄ beats 7/8      medium · avg 53%        1.0%  small run
+test                            result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       23.3%  ●▆▆▆▆▂▆▂▂▂▂▅ beats 4/32     very hard · avg 1.2%    5.1%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     30.0%  █··▂▃▇▄●▂▄▂▁ beats 49/77    very hard · avg 9.4%    4.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     94.1%  ▁▁▁▁▂▄▆▄▅▇█● beats 202/211  hard · avg 39%          2.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            40.0%  █▁▁▁▁▂▃▃●▂▁▁ beats 120/137  very hard · avg 5.8%    2.7%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                66.2%  ▁▁▃▂▃▃▆▆█▄●▅ beats 70/81    very hard · avg 8.0%    1.3%  at its level
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (maker)</a>                  84.2%  ▇·█▅▅▄▄··●▁▁ beats 25/28    medium · avg 59%        1.1%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (maker)</a>   91.8%  █▄▄█·▄···●·▄ beats 7/8      medium · avg 53%        1.0%  small run
 </pre>
 
 </details>

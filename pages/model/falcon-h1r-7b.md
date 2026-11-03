@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 59.8** ±1.0 · #205 of 732 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.8** ±1.0 · #205 of 732 · from 12 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,9 +26,9 @@ math         ▁▁▃▅█▆▄●▄▂▁▁    #126 of 431     38%      4
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
-test                       result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (lab)</a>      25.4%  ▁·▅●▆▅▂▃▃▂▃▁ beats 15/89  very hard · avg 11%      10%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>    4.9%  ▂▅▆●▂▆▂▂█▅▅▂ beats 8/27   very hard · avg 1.3%     10%  sharp · too hard for it
+test                         result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (maker)</a>      25.4%  ▁·▅●▆▅▂▃▃▂▃▁ beats 15/89  very hard · avg 11%      10%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (maker)</a>    4.9%  ▂▅▆●▂▆▂▂█▅▅▂ beats 8/27   very hard · avg 1.3%     10%  sharp · too hard for it
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md) here, though they rank higher overall. Trails 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   68.6%  █·▄·▄····●·▄ beats 4/5    medium · avg 41%        7.3%  at its level
-<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>           3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.8%    1.8%  too hard for it
+<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (maker)</a>         3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.8%    1.8%  too hard for it
 </pre>
 
 </details>
@@ -52,9 +52,9 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified) (…</a>   64.9%  ▄··▄▄·▄····● beats 5/5    hard · avg 29%          12%  sharp · at its level
-<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                      88.1%  █▄···█·····● beats 5/5    medium · avg 62%        11%  sharp
-<a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                      83.1%  ▄·█··▄····●▄ beats 4/5    medium · avg 52%        11%  sharp
-<a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                       97.4%  ▄·▄·····█··● beats 5/5    very easy · avg 92%    4.3%  maxed out
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (maker)</a>                    88.1%  █▄···█·····● beats 5/5    medium · avg 62%        11%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (maker)</a>                    83.1%  ▄·█··▄····●▄ beats 4/5    medium · avg 52%        11%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">MATH-500 (maker)</a>                     97.4%  ▄·▄·····█··● beats 5/5    very easy · avg 92%    4.3%  maxed out
 </pre>
 
 </details>
@@ -63,9 +63,9 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>                   61.3%  ●·········▂▂ beats 2/5    hard · avg 44%           16%  sharp · at its level
-<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.7%    7.9%  typical
-<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 57%        6.8%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (maker)</a>                 61.3%  ●·········▂▂ beats 2/5    hard · avg 44%           16%  sharp · at its level
+<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (maker)</a>         11.1%  █··██···█·█● beats 5/5    very hard · avg 3.7%    7.9%  typical
+<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (maker)</a>                     72.1%  █··█··●██··█ beats 2/5    medium · avg 57%        6.8%  at its level
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 34%          2.0%  at its level
 </pre>
 
@@ -167,6 +167,6 @@ Other versions: gguf-q8_0 (~9.61 GB) `ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Falcon-H1R-7B-8bit`
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1R-7B)
 
 [interactive version](https://whatmodel.sh/model/falcon-h1r-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

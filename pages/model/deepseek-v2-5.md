@@ -55,7 +55,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) he
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   44.7%  ▁▁▁▆█▂●▇▄··▂ beats 22/38  hard · avg 30%         8.3%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          92.5%  ▁▄·▁▄█▅▅▅●██ beats 26/43  very easy · avg 87%    4.6%  sharp · maxed out
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                       74.8%  ▁▃▂▃●▇▅▇█▄▂▁ beats 17/85  easy · avg 76%         2.0%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (maker)</a>                     74.8%  ▁▃▂▃●▇▅▇█▄▂▁ beats 17/85  easy · avg 76%         2.0%  small run
 </pre>
 
 </details>
@@ -149,6 +149,6 @@ Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-commun
 
 Other versions: Q8_0 (~283.7 GB) `ollama run deepseek-v2.5:236b-q8_0`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -99,6 +99,6 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/MaziyarPanahi/fire
    ollama run firefunction-v2:70b
    ```
 
-Official weights and documentation: [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/llama-3-firefunction-v2)
+Model repository and documentation: [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/llama-3-firefunction-v2)
 
 [interactive version](https://whatmodel.sh/model/firefunction-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

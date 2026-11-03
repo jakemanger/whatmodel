@@ -24,8 +24,8 @@ math            █··········●       #1 of 2*     17%      1
 <details><summary>coding · #1 of 2 · 13% of its score</summary>
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   27.8%  ▃●▄▁▄▃▃█▃▁▁▄ beats 3/27   easy · avg 78%     13%  sharp · at its level · small run
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (maker)</a>   27.8%  ▃●▄▁▄▃▃█▃▁▁▄ beats 3/27   easy · avg 78%     13%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -45,8 +45,8 @@ test                                result  vs the others in its run   difficult
 <details><summary>math · #1 of 2 · 17% of its score</summary>
 
 <pre>
-test         result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>   11.0%  ▂▂▂▂●▄▅▇██▆▄ beats 35/206  medium · avg 63%     17%  sharp · small run
+test           result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (maker)</a>   11.0%  ▂▂▂▂●▄▅▇██▆▄ beats 35/206  medium · avg 63%     17%  sharp · small run
 </pre>
 
 </details>
@@ -55,8 +55,8 @@ test         result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 35.8%  ▁▁▁▁▂●▅▆█▃▃▁ beats 25/155  medium · avg 68%     14%  sharp · small run
-<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           46.1%  ▁▁▁▁▁▂▂●██▆▄ beats 43/214  medium · avg 71%    7.2%  noisy · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (maker)</a>               35.8%  ▁▁▁▁▂●▅▆█▃▃▁ beats 25/155  medium · avg 68%     14%  sharp · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (maker)</a>                         46.1%  ▁▁▁▁▁▂▂●██▆▄ beats 43/214  medium · avg 71%    7.2%  noisy · small run
 <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   21.7%  ●··▂▂▃▂▂█▅▁▂ beats 0/27    medium · avg 54%    2.3%  blunt · at its level · small run
 </pre>
 
@@ -87,6 +87,6 @@ weighted average                                   = 31.9
    pip install ai2-olmo && python -c "from hf_olmo import OLMoForCausalLM, OLMoTokenizerFast; o=OLMoForCausalLM.from_pretrained('allenai/OLMo-7B-Instruct'); t=OLMoTokenizerFast.from_pretrained('allenai/OLMo-7B-Instruct'); p=t.apply_chat_template([{'role': 'user', 'content': 'What is language modeling?'}], tokenize=False, add_generation_prompt=True); i=t.encode(p, add_special_tokens=False, return_tensors='pt'); print(t.batch_decode(o.generate(input_ids=i.to(o.device), max_new_tokens=100, do_sample=True, top_k=50, top_p=0.95), skip_special_tokens=True)[0])"
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Instruct)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/olmo-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

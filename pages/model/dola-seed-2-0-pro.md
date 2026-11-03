@@ -24,8 +24,8 @@ vision &amp; documents  ▁▁▂▃▂▃▅▄▆█●▄   #47 of 189*     2
 <details><summary>agent tasks · #1 of 1 · 31% of its score</summary>
 
 <pre>
-test                    result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (lab)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 28%     31%  sharp · small run
+test                      result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (maker)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 28%     31%  sharp · small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
-<a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (la…</a>        1   31% ▇▇▇▇
+<a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (su…</a>        1   31% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 72.2
 </pre>

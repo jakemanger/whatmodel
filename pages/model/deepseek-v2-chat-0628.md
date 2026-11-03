@@ -118,6 +118,6 @@ Other versions: IQ2_XXS (~61.5 GB) `lms get https://huggingface.co/bartowski/Dee
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-V2-Chat-0628', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-chat-0628) · [JSON](https://whatmodel.sh/api?format=json&all=1)

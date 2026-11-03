@@ -106,6 +106,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/mradermacher/PersianMind-v1.0-G
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='universitytehran/PersianMind-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/universitytehran](https://huggingface.co/universitytehran/PersianMind-v1.0)
+Model repository and documentation: [huggingface.co/universitytehran](https://huggingface.co/universitytehran/PersianMind-v1.0)
 
 [interactive version](https://whatmodel.sh/model/persianmind-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

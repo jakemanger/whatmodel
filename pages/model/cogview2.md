@@ -68,6 +68,6 @@ weighted average                                   = 1.4
 
 Other versions: fp16 (--fp16), first stage only (~13.5 GB, NVIDIA only) `git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8 --only-first-stage`
 
-Official weights and documentation: [github.com/zai-org](https://github.com/zai-org/CogView2)
+Model repository and documentation: [github.com/zai-org](https://github.com/zai-org/CogView2)
 
 [interactive version](https://whatmodel.sh/model/cogview2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

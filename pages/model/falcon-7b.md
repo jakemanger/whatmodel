@@ -133,6 +133,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/falc
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-7b)
+Model repository and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-7b)
 
 [interactive version](https://whatmodel.sh/model/falcon-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

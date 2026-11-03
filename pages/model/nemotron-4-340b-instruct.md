@@ -61,6 +61,6 @@ weighted average                                   = 52.6
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-4-340B-Instruct)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Nemotron-4-340B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/nemotron-4-340b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

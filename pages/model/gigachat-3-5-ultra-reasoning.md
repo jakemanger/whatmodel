@@ -6,7 +6,7 @@
 
 Sber · released 2026-09 · 438.09B params (28B active) · mit
 
-**score 65.8** ±1.3 · #131 of 732 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.8** ±1.3 · #131 of 732 · from 10 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,10 +26,10 @@ math         ▁▁▃▅█▆▄●▄▂▁▁     #90 of 431     41%      4
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>   64.7%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 68/138  hard · avg 24%          14%  sharp · at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">Terminal-Bench 2.0 (lab)</a>   30.3%  ▂▂▅●████▆▂▃▃ beats 5/36    very hard · avg 10%     10%  at its level · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench (lab)</a>             47.8%  ▁▁▂▁·▁▁·●▁▂█ beats 9/25    hard · avg 34%         3.0%  at its level · small run
+test                        result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (maker)</a>   64.7%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 68/138  hard · avg 24%          14%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">Terminal-Bench 2.0 (maker)</a>   30.3%  ▂▂▅●████▆▂▃▃ beats 5/36    very hard · avg 10%     10%  at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench (maker)</a>             47.8%  ▁▁▂▁·▁▁·●▁▂█ beats 9/25    hard · avg 34%         3.0%  at its level · small run
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>             64.7%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 68/138  hard · avg 24%       14%  sharp · at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (maker)</a>           64.7%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 68/138  hard · avg 24%       14%  sharp · at its level · small run
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">LiveCodeBench v6 (window unspecif…</a>   85.4%  ▂▃▄▄▅██▆▄●▄▆ beats 53/67   medium · avg 47%     10%  small run
 </pre>
 
@@ -52,10 +52,10 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025 (lab)</a>                      89.0%  ▁·▁▁▁▂▅▆█●▅▁ beats 110/133  medium · avg 48%     11%  sharp · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026 (lab)</a>                      92.0%  ▁▁▁▂▂▂▆●▆▂·▁ beats 29/52    medium · avg 53%     11%  sharp · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025 (maker)</a>                    89.0%  ▁·▁▁▁▂▅▆█●▅▁ beats 110/133  medium · avg 48%     11%  sharp · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026 (maker)</a>                    92.0%  ▁▁▁▂▂▂▆●▆▂·▁ beats 29/52    medium · avg 53%     11%  sharp · small run
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">HMMT 2025 (edition unspecified) (…</a>   83.1%  ▃█▇▅▇●▁·▁··▁ beats 26/32    hard · avg 31%       10%  sharp · small run
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (lab)</a>                73.0%  ▁▁·▁▁▁●▆█▄▂▃ beats 12/44    hard · avg 31%      9.2%  at its level · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (maker)</a>              73.0%  ▁▁·▁▁▁●▆█▄▂▃ beats 12/44    hard · avg 31%      9.2%  at its level · small run
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond (lab)</a>                   82.3%  ▁▁▁▁▂▄▅▅█●█▄ beats 218/322  hard · avg 44%       17%  sharp · small run
+<a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond (maker)</a>                 82.3%  ▁▁▁▁▂▄▅▅█●█▄ beats 218/322  hard · avg 44%       17%  sharp · small run
 <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecified)…</a>   77.0%  ▂▆▂▄▄▄▂▄▄▆●▇ beats 74/86    medium · avg 40%    4.7%  at its level · small run
 </pre>
 
@@ -93,6 +93,6 @@ weighted average                                   = 65.8
    vllm serve ai-sage/GigaChat3.5-432B-A28B-Reasoning --tensor-parallel-size 8
    ```
 
-Official weights and documentation: [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning)
+Model repository and documentation: [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning)
 
 [interactive version](https://whatmodel.sh/model/gigachat-3-5-ultra-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

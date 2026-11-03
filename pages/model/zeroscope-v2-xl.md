@@ -52,6 +52,6 @@ weighted average                                   = 23.5
    uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from PIL import Image; from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler; from diffusers.utils import export_to_video; p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w', torch_dtype=torch.float16); p.scheduler=DPMSolverMultistepScheduler.from_config(p.scheduler.config); p.enable_model_cpu_offload(); p.enable_vae_slicing(); prompt='Darth Vader is surfing on waves'; f=p(prompt, num_inference_steps=40, height=320, width=576, num_frames=36).frames[0]; x=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_XL', torch_dtype=torch.float16); x.scheduler=DPMSolverMultistepScheduler.from_config(x.scheduler.config); x.enable_model_cpu_offload(); x.enable_vae_slicing(); v=[Image.fromarray((fr * 255).round().astype('uint8')).resize((1024, 576)) for fr in f]; export_to_video(x(prompt, video=v, strength=0.6).frames[0], 'video_1024.mp4')"
    ```
 
-Official weights and documentation: [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_XL)
+Model repository and documentation: [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_XL)
 
 [interactive version](https://whatmodel.sh/model/zeroscope-v2-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

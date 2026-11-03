@@ -30,14 +30,14 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>         18.0%  ██··█·█·●··█ beats 4/5     very hard · avg 4.7%    6.0%  sharp
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>            54.4%  ▄····█··▄·●▄ beats 4/5     very hard · avg 13%     4.7%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>              75.0%  ▃·▃··▃·····● beats 3/5     medium · avg 42%        3.4%  at its level
-<a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>          69.0%  ▄·▄··▄····●▄ beats 4/5     hard · avg 34%          2.3%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (maker)</a>       18.0%  ██··█·█·●··█ beats 4/5     very hard · avg 4.7%    6.0%  sharp
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (maker)</a>          54.4%  ▄····█··▄·●▄ beats 4/5     very hard · avg 13%     4.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (maker)</a>            75.0%  ▃·▃··▃·····● beats 3/5     medium · avg 42%        3.4%  at its level
+<a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (maker)</a>        69.0%  ▄·▄··▄····●▄ beats 4/5     hard · avg 34%          2.3%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archive)</a>   37.4%  ▁▁▁▂▆▆●▆█▂▄▃ beats 48/114  hard · avg 34%          1.5%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                          13.3%  ▃·▃·█·●··▃·▃ beats 5/7     very hard · avg 13%     1.3%  typical
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>                        10.0%  ▅···●·▃···▃▃ beats 4/7     very hard · avg 11%     1.2%  at its level · noisy
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               77.6%  ▄····▄··▄·●█ beats 3/5     medium · avg 40%        1.1%  at its level · noisy
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (maker)</a>             77.6%  ▄····▄··▄·●█ beats 3/5     medium · avg 40%        1.1%  at its level · noisy
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                        38.0%  █▄·······●▄▄ beats 3/5    hard · avg 21%      2.7%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (maker)</a>                      38.0%  █▄·······●▄▄ beats 3/5    hard · avg 21%      2.7%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified)</a>          39.8%  █·····█████● beats 6/6    hard · avg 17%      2.2%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 2025) (…</a>   72.0%  ▄··▄·▄···●·█ beats 3/5    medium · avg 43%    1.9%  at its level
 </pre>
@@ -61,7 +61,7 @@ Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [LongCat 2.0 (1.6T-A48B)](longcat
 
 <pre>
 test                              result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                       97.2%  ▄··▄··●···▄▄ beats 3/5      very easy · avg 94%    0.7%  maxed out
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (maker)</a>                     97.2%  ▄··▄··●···▄▄ beats 3/5      very easy · avg 94%    0.7%  maxed out
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFEval (aggregation unspecified)</a>   94.8%  ▁▂▄▂▂▄▆██▅●▁ beats 140/145  easy · avg 73%         0.2%  noisy
 </pre>
 
@@ -72,11 +72,11 @@ test                              result  vs the others in its run    difficulty
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
 <pre>
-test                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026</a>   65.6%  █·▄··▄··●█·▄ beats 4/7    hard · avg 32%      9.3%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench</a>      57.2%  ▄▄···▄·●··█▄ beats 3/6    hard · avg 32%      4.9%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>    79.7%  ██·█·····●██ beats 3/5    medium · avg 53%    2.6%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>      77.5%  ▄·▄▄····●··█ beats 3/5    medium · avg 40%    2.5%  sharp · noisy
+test                 result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026</a>    65.6%  █·▄··▄··●█·▄ beats 4/7    hard · avg 32%      9.3%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench</a>       57.2%  ▄▄···▄·●··█▄ beats 3/6    hard · avg 32%      4.9%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (maker)</a>   79.7%  ██·█·····●██ beats 3/5    medium · avg 53%    2.6%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (maker)</a>     77.5%  ▄·▄▄····●··█ beats 3/5    medium · avg 40%    2.5%  sharp · noisy
 </pre>
 
 </details>
@@ -86,11 +86,11 @@ test                result  vs the others in its run  difficulty        counts  
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Nemotron 3.5 Super VL 120B A12B](nemotron-3-5-super-vl-120b-a12b.md) here, though they rank higher overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>             69.1%  ██·█····●·██ beats 3/5    medium · avg 48%    3.7%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>          79.7%  ██·█·····●██ beats 3/5    medium · avg 53%    2.6%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>       88.4%  ▄█·······●·▄ beats 3/5    easy · avg 70%      2.5%  typical
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>   16.4%  █·█·····█●██ beats 3/5    avg 31%             1.4%  blunt
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (maker)</a>             69.1%  ██·█····●·██ beats 3/5    medium · avg 48%    3.7%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (maker)</a>          79.7%  ██·█·····●██ beats 3/5    medium · avg 53%    2.6%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (maker)</a>       88.4%  ▄█·······●·▄ beats 3/5    easy · avg 70%      2.5%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (maker)</a>   16.4%  █·█·····█●██ beats 3/5    avg 31%             1.4%  blunt
 </pre>
 
 </details>
@@ -111,15 +111,15 @@ test        result  vs the others in its run  difficulty           counts  why
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>                 13.1%  ▄▄·▄··▄·▄·▄● beats 6/7    very hard · avg 3.8%    8.1%  typical
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>                   78.8%  █···▄·····●█ beats 3/5    hard · avg 46%          7.5%  sharp · at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (maker)</a>                 78.8%  █···▄·····●█ beats 3/5    hard · avg 46%          7.5%  sharp · at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified)</a>            72.8%  █···▃···▅·●▃ beats 6/7    hard · avg 44%          5.7%  sharp · at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>                  48.7%  ▂···▂·▃··●▂█ beats 5/13   very hard · avg 30%     5.5%  sharp · at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                       77.2%  ▄··█···●··▄▄ beats 3/5    medium · avg 60%        3.9%  typical
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                          83.4%  ██··█···●·██ beats 3/5    medium · avg 69%        3.5%  typical
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>         43.4%  ▄▄·▄···●···▄ beats 3/5    hard · avg 22%          3.2%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                        74.0%  ▄▄·▄······▄● beats 4/5    medium · avg 40%        2.7%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro avg (l…</a>   53.0%  █··▄···●·▄·▄ beats 3/5    hard · avg 28%          2.5%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                             5.2%  ●···█······█ beats 0/2    very hard · avg 4.0%    1.0%  small run
+<a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (maker)</a>                48.7%  ▂···▂·▃··●▂█ beats 5/13   very hard · avg 30%     5.5%  sharp · at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (maker)</a>                     77.2%  ▄··█···●··▄▄ beats 3/5    medium · avg 60%        3.9%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (maker)</a>                        83.4%  ██··█···●·██ beats 3/5    medium · avg 69%        3.5%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (maker)</a>       43.4%  ▄▄·▄···●···▄ beats 3/5    hard · avg 22%          3.2%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (maker)</a>                      74.0%  ▄▄·▄······▄● beats 4/5    medium · avg 40%        2.7%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro avg (m…</a>   53.0%  █··▄···●·▄·▄ beats 3/5    hard · avg 28%          2.5%  at its level
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (maker)</a>                           5.2%  ●···█······█ beats 0/2    very hard · avg 4.0%    1.0%  small run
 </pre>
 
 </details>
@@ -129,12 +129,12 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                  results  share of the score
-<a name="gemma4-report"></a><a href="https://arxiv.org/html/2607.02770v1#S2.T5">Gemma Team (lab)</a>                             20   63% ▇▇▇▇▇▇▇▇
-<a name="card3-xhtoken-spark-x2-5-4b"></a><a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">XHToken/Spark-X2.5-4B model card</a>              9   34% ▇▇▇▇
-<a name="card2-google-gemma-4-31b-it"></a><a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">google/gemma-4-31B-it model card (lab)</a>        1    2% ▇
-prior: pull toward the middle                      0% ▇
-weighted average                                 = 62.0
+source                                    results  share of the score
+<a name="gemma4-report"></a><a href="https://arxiv.org/html/2607.02770v1#S2.T5">Gemma Team (submitted / maker-reported)</a>        20   63% ▇▇▇▇▇▇▇▇
+<a name="card3-xhtoken-spark-x2-5-4b"></a><a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">XHToken/Spark-X2.5-4B model card</a>                9   34% ▇▇▇▇
+<a name="card2-google-gemma-4-31b-it"></a><a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">google/gemma-4-31B-it model card (submi…</a>        1    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 62.0
 </pre>
 
 <sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XHToken/Spark-X2.5-4B model card ([Apache-2.0](https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt))</sub>
@@ -222,7 +222,7 @@ Other versions: qat (~7.64 GB) `ollama run gemma4:12b-it-qat`
 
 Other versions: 8bit (~12.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-4-12B-it-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-4-12B-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-4-12B-it)
 
 ## Published speed measurements
 

@@ -24,9 +24,9 @@ math            ▁▁●▅█▆▄█▄▂▁▁    #410 of 431    7.8%     
 <details><summary>coding · #2 of 2 · 7.8% of its score</summary>
 
 <pre>
-test             result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   38.4%  ▁▁▁▁▂▂●▆█▅▂▁ beats 63/205  easy · avg 80%    4.2%  sharp · at its level · noisy · small run
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>        50.2%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 37/86   easy · avg 74%    3.6%  at its level · small run
+test               result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (maker)</a>   38.4%  ▁▁▁▁▂▂●▆█▅▂▁ beats 63/205  easy · avg 80%    4.2%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (maker)</a>        50.2%  ▁▁▁▄▅●▆▅▄▁▂▁ beats 37/86   easy · avg 74%    3.6%  at its level · small run
 </pre>
 
 </details>
@@ -48,10 +48,10 @@ test                                result  vs the others in its run   difficult
 Beats [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                       3.6%  ●▂▅▆▄█▆▃▅▂▃▄ beats 1/92   hard · avg 28%          4.8%  sharp · too hard for it
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (lab)</a>   13.2%  ●▄▄▃█▇▅▆▄▃▄▁ beats 2/80   medium · avg 63%        2.7%  at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 0/197  very hard · avg 7.2%    0.3%  sharp · too hard for it · noisy
+test                               result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         3.6%  ●▂▅▆▄█▆▃▅▂▃▄ beats 1/92   hard · avg 28%          4.8%  sharp · too hard for it
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (maker)</a>   13.2%  ●▄▄▃█▇▅▆▄▃▄▁ beats 2/80   medium · avg 63%        2.7%  at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 0/197  very hard · avg 7.2%    0.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -187,6 +187,6 @@ Other versions: Q8_0 (~9.2 GB) `ollama run mistral:7b-instruct-v0.3-q8_0`
 
 Other versions: 8bit (~7.7 GB, Mac only) `mlx_lm.chat --model mlx-community/Mistral-7B-Instruct-v0.3-8bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
 
 [interactive version](https://whatmodel.sh/model/mistral-7b-instruct-v0-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

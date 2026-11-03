@@ -51,6 +51,6 @@ weighted average                        = 47.0
    uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import Kandinsky5T2VPipeline; from diffusers.utils import export_to_video; p=Kandinsky5T2VPipeline.from_pretrained('kandinskylab/Kandinsky-5.0-T2V-Lite-sft-5s-Diffusers', torch_dtype=torch.bfloat16).to('cuda'); export_to_video(p(prompt='A cat and a dog baking a cake together in a kitchen.', negative_prompt='Static, 2D cartoon, cartoon, 2d animation, paintings, images, worst quality, low quality, ugly, deformed, walking backwards', height=512, width=768, num_frames=121, num_inference_steps=50, guidance_scale=5.0).frames[0], 'output.mp4', fps=24, quality=9)"
    ```
 
-Official weights and documentation: [github.com/kandinskylab](https://github.com/kandinskylab/kandinsky-5)
+Model repository and documentation: [github.com/kandinskylab](https://github.com/kandinskylab/kandinsky-5)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-5-0-t2v-lite) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -51,6 +51,6 @@ weighted average                                   = 46.5
    pip install piper-tts && python3 -m piper.download_voices en_US-lessac-medium && python3 -m piper -m en_US-lessac-medium -f test.wav -- 'This is a test.'
    ```
 
-Official weights and documentation: [huggingface.co/rhasspy](https://huggingface.co/rhasspy/piper-voices)
+Model repository and documentation: [huggingface.co/rhasspy](https://huggingface.co/rhasspy/piper-voices)
 
 [interactive version](https://whatmodel.sh/model/piper-en-us-lessac-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

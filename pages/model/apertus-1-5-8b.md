@@ -89,6 +89,6 @@ Other versions: 8bit (~8.6 GB, Mac only) `mlx_lm.chat --model tokimoa/apertus-v1
    vllm serve swiss-ai/Apertus-v1.5-8B --chat-template-content-format string --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true
    ```
 
-Official weights and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-8B)
+Model repository and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-v1.5-8B)
 
 [interactive version](https://whatmodel.sh/model/apertus-1-5-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

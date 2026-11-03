@@ -27,7 +27,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwe
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                     92.3%  ▁·▁▁▂▃▄▄█▅▄● beats 139/145  easy · avg 77%          8.0%  sharp · several runs
+<a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (maker)</a>                   92.3%  ▁·▁▁▂▃▄▄█▅▄● beats 139/145  easy · avg 77%          8.0%  sharp · several runs
 <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   53.1%  ●·▄·▄····▄·▄ beats 1/5      medium · avg 41%        4.1%  at its level
 <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>                 7.2%  ▄··▄····█●·▄ beats 4/5      very hard · avg 3.8%    0.9%  too hard for it
 <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">LiveCodeBench (Aug 1, 2024–Feb 1,…</a>   53.1%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
@@ -55,11 +55,11 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [M
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                   78.0%  █··▄··█··●·▄ beats 5/6    medium · avg 52%        12%  sharp · several runs
-<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                   81.3%  ▄···▄█·▄●··▄ beats 5/6    medium · avg 62%        12%  sharp · several runs
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (maker)</a>                 78.0%  █··▄··█··●·▄ beats 5/6    medium · avg 52%        12%  sharp · several runs
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (maker)</a>                 81.3%  ▄···▄█·▄●··▄ beats 5/6    medium · avg 62%        12%  sharp · several runs
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   47.7%  ▄··●▄·▄····█ beats 1/5    hard · avg 29%         6.7%  sharp · at its level
 <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                          95.4%  ▄·●·····█··█ beats 1/5    very easy · avg 92%    2.5%  maxed out
-<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>          53.6%  ▁▁▁▃●▅▅▃██▁▄ beats 5/31   hard · avg 32%         2.2%  at its level · small run
+<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (maker)</a>        53.6%  ▁▁▁▃●▅▅▃██▁▄ beats 5/31   hard · avg 32%         2.2%  at its level · small run
 </pre>
 
 </details>
@@ -68,14 +68,14 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>                   69.3%  █··●··▄···█▄ beats 2/6      hard · avg 43%           23%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (maker)</a>                 69.3%  █··●··▄···█▄ beats 2/6      hard · avg 43%           23%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                             79.2%  █··█··███··● beats 5/5      medium · avg 57%         10%  at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>                  5.9%  █··█●···█·██ beats 2/5      very hard · avg 3.7%    3.9%  typical
-<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.9%  ▄···▄····▄·● beats 4/4      easy · avg 86%          2.7%  sharp · noisy · several runs
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (maker)</a>     97.9%  ▄···▄····▄·● beats 4/4      easy · avg 86%          2.7%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 121/276  medium · avg 72%        1.1%  at its level · noisy
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)</a>    51.7%  ███···●█···█ beats 3/5      hard · avg 34%          1.1%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.0%  ●·▁▁▂▁▂▅█▇▄▁ beats 0/100    medium · avg 67%        0.8%  sharp · noisy
-<a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                      81.9%  █·█·█·██··●█ beats 5/6      easy · avg 68%          0.8%  blunt · small run · several runs
+<a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (maker)</a>                    81.9%  █·█·█·██··●█ beats 5/6      easy · avg 68%          0.8%  blunt · small run · several runs
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   52.8%  ▁▁▁▁▁▁●▂▄█▄▃ beats 22/146   easy · avg 82%          0.4%  noisy
 </pre>
 
@@ -88,8 +88,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       10   45% ▇▇▇▇▇
-<a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft (lab)</a>                                10   30% ▇▇▇▇
-<a name="card-microsoft--phi-4-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">microsoft/Phi-4-reasoning model card (l…</a>        9   22% ▇▇▇
+<a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft (submitted / maker-reported)</a>         10   30% ▇▇▇▇
+<a name="card-microsoft--phi-4-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">microsoft/Phi-4-reasoning model card (s…</a>        9   22% ▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
@@ -189,6 +189,6 @@ Other versions: Q8_0 (~15.6 GB) `lms get https://huggingface.co/lmstudio-communi
 
 Other versions: 8bit (~15.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-reasoning-plus-8bit`
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-reasoning-plus)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-reasoning-plus)
 
 [interactive version](https://whatmodel.sh/model/phi-4-reasoning-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

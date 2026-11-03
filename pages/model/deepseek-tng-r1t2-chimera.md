@@ -89,6 +89,6 @@ Other versions: Q8_0 (~713.3 GB) `lms get https://huggingface.co/unsloth/DeepSee
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tngtech/DeepSeek-TNG-R1T2-Chimera', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/tngtech](https://huggingface.co/tngtech/DeepSeek-TNG-R1T2-Chimera)
+Model repository and documentation: [huggingface.co/tngtech](https://huggingface.co/tngtech/DeepSeek-TNG-R1T2-Chimera)
 
 [interactive version](https://whatmodel.sh/model/deepseek-tng-r1t2-chimera) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -113,6 +113,6 @@ weighted average                                   = 45.4
 
 Other versions: Q4_0 (~12 GB) `ollama run granite-code:20b`
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k)
 
 [interactive version](https://whatmodel.sh/model/granite-20b-code-instruct-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

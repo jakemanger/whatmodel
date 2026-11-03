@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      77.5%  ▁▁▁▂██▅▅▆▂▂● beats 77/77  hard · avg 31%          1.5%  at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   84.0%  ▃······▃·▃█● beats 6/6    medium · avg 51%        1.3%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   79.6%  ▄▄·█··●·▄··▄ beats 4/6    medium · avg 48%        1.2%  typical
-<a href="https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf#page=26">τ²-bench Telecom (lab)</a>               98.2%  ▁·▅█▆▅▂▃▃▂●▁ beats 84/89  hard · avg 30%          1.0%  sharp · noisy
+<a href="https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf#page=26">τ²-bench Telecom (maker)</a>             98.2%  ▁·▅█▆▅▂▃▃▂●▁ beats 84/89  hard · avg 30%          1.0%  sharp · noisy
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   92.3%  █·▄█●······▄ beats 5/6    medium · avg 64%        1.0%  typical
 <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user)</a>     82.0%  ▂··▄···▂▄▄█● beats 12/13  medium · avg 45%        0.5%  typical
 </pre>
@@ -92,7 +92,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf#page=36">CharXiv (reasoning questions) (la…</a>   65.7%  ●██··█·██··█ beats 0/6    hard · avg 28%      2.3%  at its level
+<a href="https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf#page=36">CharXiv (reasoning questions) (ma…</a>   65.7%  ●██··█·██··█ beats 0/6    hard · avg 28%      2.3%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">MATH-Vision</a>                          74.3%  ●·····▄▄·▄·▄ beats 0/5    medium · avg 47%    1.1%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1464.6  ▁▁▃▃▄▃▇●▅▇▄▅ beats 21/37  avg 1331            1.1%  blunt
 </pre>

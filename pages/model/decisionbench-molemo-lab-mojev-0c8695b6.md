@@ -4,52 +4,52 @@
 
 # mojev (DecisionBench 0c8695b6)
 
-MoLeMo-Lab · 0.854036544B params · closed weights
+MoLeMo-Lab · 0.854036544B params
 
-**score 57.4** ±1.0 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 37.1** ±1.6 · #276 of 355 · from 27 benchmark results across 1 source · † no independently run results verified
 
 ## What it's good at
 
 <sub>● marks mojev (DecisionBench 0c8695b6) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃▃▃▁●▁▂▅█▂   #37 of 57    100%     27
+task       vs the others        rank  counts  tests
+workflows  ▁▁▁▂●▂▂▆█▄▁▁   #92 of 114     99%     27
 </pre>
 
-<details><summary>workflows · #37 of 57 · 100% of its score</summary>
+<details><summary>workflows · #92 of 114 · 99% of its score</summary>
+
+Trails [GLiNER2.5-Decide](decision-gliner-decide.md), [vLLM-SR Decision 2.0 Kai 0.6B](decision-decision-2-0-kai-0-6b.md), [LiquidAI d1-omni-600M](decision-d1-omni-600m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   47.7%  ▁▁▁▁▂▂▁●▁▁▃█ beats 19/56  hard · avg 29%          15%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · action selecti…</a>   35.0%  ▂▁▂▃▄●▁▁▂█▇▄ beats 19/56  hard · avg 26%          14%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   46.0%  ▁▁·▃▁▁▁▁●▁▃█ beats 22/56  hard · avg 22%          11%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   38.4%  ▃▃●·▁▁▁▁▁▁█▅ beats 16/56  medium · avg 38%       8.5%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · completion ass…</a>   56.0%  ▁▁▂▃●·▂▁▁▆█▂ beats 16/56  medium · avg 51%       7.9%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · record classif…</a>   37.0%  ▃▂▁▂▂▂▄▁●▆██ beats 24/56  hard · avg 21%         6.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · verification (…</a>   45.0%  ▁▁▅▁▃●▂▁▁▇▇█ beats 18/56  medium · avg 40%       6.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   65.0%  ▁·▁·▂▃▄●▂█▄▂ beats 22/56  medium · avg 45%       5.9%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · content classi…</a>   65.0%  ▁····▁▁▁▁▁●█ beats 19/56  medium · avg 41%       4.2%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · document recor…</a>   32.7%  ▂▂·▁▂●▃▆▄█▁▁ beats 15/56  hard · avg 27%         4.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   33.5%  ▁▁▅▅●▃▅█▃▃·▁ beats 20/56  hard · avg 27%         3.4%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · review scoring…</a>   29.0%  ▁······▂●▅▇█ beats 7/56   hard · avg 32%         2.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   62.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 27/56  medium · avg 45%       1.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   25.0%  ▁▁·▁▁▂▃▂●▁▁█ beats 29/56  very hard · avg 12%    1.4%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · target selecti…</a>   32.0%  ▁▁·▁▁▁▃▁▂▁●█ beats 31/56  very hard · avg 11%    1.3%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   31.4%  ▂·▁▁●█▅▃▃▂▁▁ beats 7/56   hard · avg 33%         1.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   73.4%  █▁▂▁▁●▁▁▂▅▁▁ beats 31/56  medium · avg 55%       0.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · document workf…</a>   54.5%  █●▃▁▁▃▂▂▁·▁▁ beats 27/56  medium · avg 51%       0.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · safety gating …</a>   49.0%  ▂·····●█▂▂▄▇ beats 10/56  medium · avg 51%       0.6%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   55.7%  ▁▁▁▂▆▃●█···▁ beats 31/56  medium · avg 38%       0.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   77.0%  ▁·▁▁·▁▁█▂●█▂ beats 30/56  medium · avg 55%       0.3%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · content modera…</a>   92.0%  ▁····▃▅▃●▂·█ beats 33/56  medium · avg 61%       0.3%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · document class…</a>   17.0%  ▂▁·▂▁▁▁▄▁●▂█ beats 26/56  very hard · avg 13%    0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · context manage…</a>   72.0%  ▁·····▁▇●▁█▃ beats 29/56  medium · avg 59%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   95.4%  ▁·▁▄▇▄▅▄▂●▄█ beats 39/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · function agent…</a>   95.3%  ▃▃▄▅▆▂▅▄▃●█▃ beats 41/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · routing triage…</a>   50.9%  █▁···▁·▂●▅▂▂ beats 27/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · action selecti…</a>   35.0%  ▂▁▂▃▄●▁▁▂█▇▄ beats 19/56  medium · avg 51%        17%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   47.7%  ▁▁▁▁▂▂▁●▁▁▃█ beats 19/56  medium · avg 64%        14%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   46.0%  ▁▁·▃▁▁▁▁●▁▃█ beats 22/56  medium · avg 58%        10%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   38.4%  ▃▃●·▁▁▁▁▁▁█▅ beats 16/56  very easy · avg 86%    8.6%  sharp · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · completion ass…</a>   56.0%  ▁▁▂▃●·▂▁▁▆█▂ beats 16/56  very easy · avg 86%    8.5%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · record classif…</a>   37.0%  ▃▂▁▂▂▂▄▁●▆██ beats 24/56  medium · avg 39%       6.6%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   65.0%  ▁·▁·▂▃▄●▂█▄▂ beats 22/56  easy · avg 78%         6.3%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · verification (…</a>   45.0%  ▁▁▅▁▃●▂▁▁▇▇█ beats 18/56  medium · avg 56%       5.6%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · document recor…</a>   32.7%  ▂▂·▁▂●▃▆▄█▁▁ beats 15/56  medium · avg 46%       4.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · content classi…</a>   65.0%  ▁····▁▁▁▁▁●█ beats 19/56  easy · avg 73%         4.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   33.5%  ▁▁▅▅●▃▅█▃▃·▁ beats 20/56  medium · avg 45%       3.4%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · review scoring…</a>   29.0%  ▁······▂●▅▇█ beats 7/56   medium · avg 52%       2.4%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   62.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 27/56  medium · avg 62%       1.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   25.0%  ▁▁·▁▁▂▃▂●▁▁█ beats 29/56  medium · avg 35%       1.3%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · target selecti…</a>   32.0%  ▁▁·▁▁▁▃▁▂▁●█ beats 31/56  hard · avg 29%         1.2%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   31.4%  ▂·▁▁●█▅▃▃▂▁▁ beats 7/56   medium · avg 52%       1.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   73.4%  █▁▂▁▁●▁▁▂▅▁▁ beats 31/56  easy · avg 74%         0.8%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · document workf…</a>   54.5%  █●▃▁▁▃▂▂▁·▁▁ beats 27/56  easy · avg 66%         0.7%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · safety gating …</a>   49.0%  ▂·····●█▂▂▄▇ beats 10/56  easy · avg 77%         0.5%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   55.7%  ▁▁▁▂▆▃●█···▁ beats 31/56  medium · avg 52%       0.5%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   77.0%  ▁·▁▁·▁▁█▂●█▂ beats 30/56  easy · avg 71%         0.3%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · content modera…</a>   92.0%  ▁····▃▅▃●▂·█ beats 33/56  easy · avg 82%         0.3%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · document class…</a>   17.0%  ▂▁·▂▁▁▁▄▁●▂█ beats 26/56  hard · avg 21%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · context manage…</a>   72.0%  ▁·····▁▇●▁█▃ beats 29/56  easy · avg 73%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   95.4%  ▁·▁▄▇▄▅▄▂●▄█ beats 39/56  easy · avg 66%         0.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · function agent…</a>   95.3%  ▃▃▄▅▆▂▅▄▃●█▃ beats 41/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">DecisionBench v1 · routing triage…</a>   50.9%  █▁···▁·▂●▅▂▂ beats 27/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -60,15 +60,17 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27  100% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.4
+<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/MoLeMo-Lab__mojev/0c8695b6252f4205907433d4e196a94f032e60c3/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 37.1
 </pre>
 
 <sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Request access](https://huggingface.co/MoLeMo-Lab/mojev/tree/0c8695b6252f4205907433d4e196a94f032e60c3) · Gated files: the publisher requires access approval. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/MoLeMo-Lab/mojev/revision/0c8695b6252f4205907433d4e196a94f032e60c3); checked 2026-10-31.
+
+Model repository and documentation: [huggingface.co/MoLeMo-Lab](https://huggingface.co/MoLeMo-Lab/mojev)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-molemo-lab-mojev-0c8695b6) · [JSON](https://whatmodel.sh/api?format=json&all=1)

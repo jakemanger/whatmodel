@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   73.6%  ▁··▁·▁▂▁▄●▄▁ beats 13/29  hard · avg 19%          5.6%  sharp
 <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   35.2%  ▃··▃·▃▃██●▃▅ beats 10/14  very hard · avg 6.1%    2.7%  sharp · at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   69.4%  ▃▅▃·▅▃▃··█·● beats 11/11  very hard · avg 3.6%    2.4%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               96.7%  ▃·▅▅▃▃··█▃●▅ beats 11/13  very hard · avg 13%     2.3%  sharp · several runs
+<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (maker)</a>             96.7%  ▃·▅▅▃▃··█▃●▅ beats 11/13  very hard · avg 13%     2.3%  sharp · several runs
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   70.7%  ▆··▆▄▂▄▂▆▆●▄ beats 21/23  very hard · avg 13%     2.2%  sharp · at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5_sierra_2025-08-09/submission.json">τ²-bench Retail</a>                      81.6%  ▁····▂▁▃▆█▃● beats 43/44  medium · avg 40%        1.3%  typical
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5_sierra_2025-08-09/submission.json">τ²-bench Airline</a>                     62.5%  ▁▁·▂▁▃▂▁█●▂▃ beats 35/42  hard · avg 28%          1.1%  at its level
@@ -131,12 +131,12 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   84.3%  ▁▁·▁▂▂▄█▄▅▄● beats 65/66    hard · avg 29%          1.2%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    50.1%  ▁▁▃▂▃▃▆▆●▄▂▅ beats 55/81    very hard · avg 8.0%    1.1%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   94.4%  ▁▁▃▁█▄●▃▆▂▂▂ beats 27/49    easy · avg 77%          0.9%  typical
-<a href="https://arxiv.org/html/2601.03267v2#S3.T11">MMMLU (lab)</a>                          89.4%  ▂▁▁▂▃▂▄▄▅██● beats 44/46    medium · avg 64%        0.9%  small run
-<a href="https://arxiv.org/html/2601.03267v2#S3.T8">SimpleQA (lab)</a>                       55.0%  ▄▄▄▆█▆███·▂● beats 32/32    very hard · avg 9.2%    0.8%  at its level · noisy
+<a href="https://arxiv.org/html/2601.03267v2#S3.T11">MMMLU (maker)</a>                        89.4%  ▂▁▁▂▃▂▄▄▅██● beats 44/46    medium · avg 64%        0.9%  small run
+<a href="https://arxiv.org/html/2601.03267v2#S3.T8">SimpleQA (maker)</a>                     55.0%  ▄▄▄▆█▆███·▂● beats 32/32    very hard · avg 9.2%    0.8%  at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                    4.4%  ●·█▄▄▄██·▄▄█ beats 0/13     very hard · avg 1.6%    0.7%  sharp · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   65.9%  ▁··▃▁▁▁▅█●▁▅ beats 19/24    hard · avg 51%          0.6%  blunt · at its level
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problems, A…</a>   26.4%  █·█████··█·● beats 7/7      very hard · avg 4.3%    0.5%  typical
-<a href="https://arxiv.org/html/2601.03267v2#S3.SS10">HealthBench Hard (lab)</a>               46.2%  ▁····▁▁▂█·▁● beats 13/13    hard · avg 16%          0.4%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2601.03267v2#S3.SS10">HealthBench Hard (maker)</a>             46.2%  ▁····▁▁▂█·▁● beats 13/13    hard · avg 16%          0.4%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Avg@3)</a>    72.2%  ▄··▄·▄·▄▄█·● beats 7/7      medium · avg 36%        0.4%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   83.4%  ▃▁▁▁▁▁▁▁▂█▅● beats 271/276  medium · avg 72%        0.3%  noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.6%  ▁▁▂▃▄▄█▆▃●▂▁ beats 131/140  very easy · avg 94%     0.1%  blunt · maxed out · noisy
@@ -161,7 +161,7 @@ source                                    results  share of the score
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    3% ▇
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1    3% ▇
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    2% ▇
-<a name="paper-2601.03267v2"></a><a href="https://arxiv.org/html/2601.03267v2#S3.T11">OpenAI (lab)</a>                                    3    2% ▇
+<a name="paper-2601.03267v2"></a><a href="https://arxiv.org/html/2601.03267v2#S3.T11">OpenAI (submitted / maker-reported)</a>             3    2% ▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    2% ▇
 <a name="paper-2608.10408v1-viseditbench"></a><a href="https://arxiv.org/html/2608.10408v1">VisEditBench: Can Vision-Language Model…</a>        1    1% ▇
 <a name="zai-rpc-bench-leaderboard"></a><a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench leaderboard</a>                           1    1% ▇

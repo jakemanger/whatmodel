@@ -44,6 +44,6 @@ weighted average                                   = 19.2
 
 No verified API or local download yet.
 
-Official weights and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/tacotron2)
+Model repository and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/tacotron2)
 
 [interactive version](https://whatmodel.sh/model/tacotron2-hifigan-vctk-vits-study) · [JSON](https://whatmodel.sh/api?format=json&all=1)

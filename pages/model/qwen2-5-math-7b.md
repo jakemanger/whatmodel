@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 53.1** ±2.0 · #316 of 732 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 53.1** ±2.0 · #316 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,10 +24,10 @@ math  ▁▁▃▅█●▄█▄▂▁▁   #251 of 431     98%      3
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                37.1%  ▃·····▃··█●▅ beats 6/8    hard · avg 34%          48%  at its level
-<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       95.2%  ▄···█▄▄·▄·●█ beats 6/8    very easy · avg 92%     29%  sharp · maxed out
-<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   83.6%  ▃····▃·▅·▅·● beats 6/8    easy · avg 74%          21%  typical
+test                               result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (maker)</a>                37.1%  ▃·····▃··█●▅ beats 6/8    hard · avg 34%          48%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (maker)</a>                       95.2%  ▄···█▄▄·▄·●█ beats 6/8    very easy · avg 92%     29%  sharp · maxed out
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (maker)</a>   83.6%  ▃····▃·▅·▅·● beats 6/8    easy · avg 74%          21%  typical
 </pre>
 
 </details>
@@ -37,10 +37,10 @@ test                             result  vs the others in its run  difficulty   
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             2% ▇
-weighted average                        = 53.1
+source                             results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (submitted / maker-reported)</a>        3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                 2% ▇
+weighted average                            = 53.1
 </pre>
 
 ## How to run it
@@ -122,6 +122,6 @@ Other versions: 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-math-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

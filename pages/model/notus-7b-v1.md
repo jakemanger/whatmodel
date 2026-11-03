@@ -96,6 +96,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/notus-7B
    ollama run notus:7b
    ```
 
-Official weights and documentation: [huggingface.co/argilla](https://huggingface.co/argilla/notus-7b-v1)
+Model repository and documentation: [huggingface.co/argilla](https://huggingface.co/argilla/notus-7b-v1)
 
 [interactive version](https://whatmodel.sh/model/notus-7b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

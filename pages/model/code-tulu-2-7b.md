@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 39.2** ±1.7 · #576 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 39.2** ±1.7 · #576 of 732 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,8 +25,8 @@ math    ▁▁▃▅●▆▄█▄▂▁▁   #321 of 431*     21%      1
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   68.9%  ▃▃▃·▆▃▃●▃▂▂▅ beats 15/25  easy · avg 83%     19%  sharp · at its level
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (maker)</a>   68.9%  ▃▃▃·▆▃▃●▃▂▂▅ beats 15/25  easy · avg 83%     19%  sharp · at its level
 </pre>
 
 </details>
@@ -36,8 +36,8 @@ test                             result  vs the others in its run  difficulty   
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [StarCoder2 7B](starcoder2-7b.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   33.0%  ▆▂▅●▅▅▃▆···▂ beats 9/25   easy · avg 72%     21%  sharp · at its level
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (maker)</a>   33.0%  ▆▂▅●▅▅▃▆···▂ beats 9/25   easy · avg 72%     21%  sharp · at its level
 </pre>
 
 </details>
@@ -46,8 +46,8 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 49.1%  ▁·····▂●▂▅·▁ beats 11/25  easy · avg 74%       38%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           43.7%  ▁▁▃●▄█▄▁█··▁ beats 5/25   medium · avg 73%     17%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (maker)</a>               49.1%  ▁·····▂●▂▅·▁ beats 11/25  easy · avg 74%       38%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (maker)</a>                         43.7%  ▁▁▃●▄█▄▁█··▁ beats 5/25   medium · avg 73%     17%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   52.6%  ▂··▁▃▂▂▂●▅▁▂ beats 16/25  medium · avg 59%    4.3%  blunt · at its level
 </pre>
 
@@ -58,10 +58,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                         5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 39.2
+source                               results  share of the score
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (submitted / maker-reported)</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 39.2
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
@@ -76,6 +76,6 @@ weighted average                        = 39.2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/codetulu-2-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/codetulu-2-7b)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/codetulu-2-7b)
 
 [interactive version](https://whatmodel.sh/model/code-tulu-2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

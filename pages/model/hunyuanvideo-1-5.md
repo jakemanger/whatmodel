@@ -89,6 +89,6 @@ api (fal.ai) · $0.075/sec · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-vide
 
 Other versions: fp16 720p T2V (sd.cpp) (~43.9 GB) `sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/qwen_2.5_vl_7b.safetensors --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling` · fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp) (~33.8 GB) `sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling`
 
-Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-1.5)
+Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-1.5)
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -131,6 +131,6 @@ Other versions: 4bit (~5.1 GB, Mac only) `lms get https://huggingface.co/stelter
    vllm serve utter-project/EuroLLM-9B-Instruct
    ```
 
-Official weights and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-9B-Instruct)
+Model repository and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-9B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/eurollm-9b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

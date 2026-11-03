@@ -26,8 +26,8 @@ math            █··········●       #1 of 2*     13%      1
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">HumanEval (lab)</a>   55.5%  ▁▁▁▁▂▂▆●█▅▂▁ beats 106/205  easy · avg 72%     16%  sharp · at its level · small run
+test               result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">HumanEval (maker)</a>   55.5%  ▁▁▁▁▂▂▆●█▅▂▁ beats 106/205  easy · avg 72%     16%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -47,8 +47,8 @@ test                                result  vs the others in its run   difficult
 <details><summary>math · #1 of 2 · 13% of its score</summary>
 
 <pre>
-test         result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K (lab)</a>   77.3%  ▂▂▂▂▃▄▅▇█●▆▄ beats 134/206  very easy · avg 88%     13%  sharp · at its level · small run
+test           result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K (maker)</a>   77.3%  ▂▂▂▂▃▄▅▇█●▆▄ beats 134/206  very easy · avg 88%     13%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -57,8 +57,8 @@ test         result  vs the others in its run    difficulty           counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard (lab)</a>                 63.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 93/155   easy · avg 76%       12%  sharp · at its level · small run
-<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU (lab)</a>                           64.3%  ▁▁▁▁▁▂▂▅●█▆▄ beats 101/214  easy · avg 75%       10%  at its level · small run
+<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard (maker)</a>               63.5%  ▁▁▁▁▂▄▅▆●▃▃▁ beats 93/155   easy · avg 76%       12%  sharp · at its level · small run
+<a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU (maker)</a>                         64.3%  ▁▁▁▁▁▂▂▅●█▆▄ beats 101/214  easy · avg 75%       10%  at its level · small run
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   37.1%  ▂··▄·▂●▄▂█·▂ beats 5/14     medium · avg 53%    8.7%  at its level
 </pre>
 
@@ -70,7 +70,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card2-openchat-openchat-3-5"></a><a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">OpenChat 3.5 model card (lab)</a>                   4   52% ▇▇▇▇▇▇
+<a name="card2-openchat-openchat-3-5"></a><a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">OpenChat 3.5 model card (submitted / ma…</a>        4   52% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   19% ▇▇
 <a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    9% ▇
@@ -138,6 +138,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/openchat
 
 Other versions: Q8_0 (~8.9 GB) `ollama run openchat:7b-v3.5-q8_0`
 
-Official weights and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat_3.5)
+Model repository and documentation: [huggingface.co/openchat](https://huggingface.co/openchat/openchat_3.5)
 
 [interactive version](https://whatmodel.sh/model/openchat-3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

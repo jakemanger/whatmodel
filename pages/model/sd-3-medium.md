@@ -67,6 +67,6 @@ api (fal.ai) · $0.035/image · [fal.ai](https://fal.ai/models/fal-ai/stable-dif
 
 Other versions: Q8_0 (SD.CPP --TYPE) (~10.5 GB) `sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu`
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
 
 [interactive version](https://whatmodel.sh/model/sd-3-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

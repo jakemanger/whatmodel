@@ -106,6 +106,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama-3-8B-Magpie-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Magpie-Align/Llama-3-8B-Magpie-Align-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Magpie-Align](https://huggingface.co/Magpie-Align/Llama-3-8B-Magpie-Align-v0.1)
+Model repository and documentation: [huggingface.co/Magpie-Align](https://huggingface.co/Magpie-Align/Llama-3-8B-Magpie-Align-v0.1)
 
 [interactive version](https://whatmodel.sh/model/llama-3-8b-magpie-align-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

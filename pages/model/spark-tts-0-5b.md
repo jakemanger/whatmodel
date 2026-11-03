@@ -81,6 +81,6 @@ Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS
 
 Other versions: BF16 (MLX-AUDIO 0.5.X) (~2.9 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Spark-TTS-0.5B-bf16 --text 'Hello, world!'`
 
-Official weights and documentation: [huggingface.co/SparkAudio](https://huggingface.co/SparkAudio/Spark-TTS-0.5B)
+Model repository and documentation: [huggingface.co/SparkAudio](https://huggingface.co/SparkAudio/Spark-TTS-0.5B)
 
 [interactive version](https://whatmodel.sh/model/spark-tts-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

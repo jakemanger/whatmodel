@@ -105,6 +105,6 @@ weighted average                                   = 50.5
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Artigenz/Artigenz-Coder-DS-6.7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Artigenz](https://huggingface.co/Artigenz/Artigenz-Coder-DS-6.7B)
+Model repository and documentation: [huggingface.co/Artigenz](https://huggingface.co/Artigenz/Artigenz-Coder-DS-6.7B)
 
 [interactive version](https://whatmodel.sh/model/artigenz-coder-ds-6-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

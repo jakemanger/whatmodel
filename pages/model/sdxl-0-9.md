@@ -57,6 +57,6 @@ weighted average                                   = 39.8
 
 Other versions: Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sd_xl_base_0.9.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v`
 
-Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9)
+Model repository and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9)
 
 [interactive version](https://whatmodel.sh/model/sdxl-0-9) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 55.1** ±2.6 · #65 of 144 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 55.1** ±2.6 · #65 of 144 · from 6 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -26,11 +26,11 @@ Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher over
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   43.9%  ▁▂▂●▃▁▂▃·▁·▁ beats 10/22  hard · avg 28%          28%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>            92.3%  ▃·····▅●█▅▃▃ beats 5/12   very easy · avg 88%     19%  small run
-<a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>            91.3%  ▃·······█●██ beats 4/12   very easy · avg 89%     15%  maxed out · small run
-<a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                        85.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 33/39  easy · avg 79%          14%  small run
-<a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>          87.5%  ▄▄▄█▄●·▄···▄ beats 6/8    easy · avg 81%          12%  small run
-<a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                      87.5%  ▄·▂·▂▆█▄●▄▂▂ beats 13/17  very easy · avg 87%     10%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (maker)</a>          92.3%  ▃·····▅●█▅▃▃ beats 5/12   very easy · avg 88%     19%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (maker)</a>          91.3%  ▃·······█●██ beats 4/12   very easy · avg 89%     15%  maxed out · small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (maker)</a>                      85.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 33/39  easy · avg 79%          14%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (maker)</a>        87.5%  ▄▄▄█▄●·▄···▄ beats 6/8    easy · avg 81%          12%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (maker)</a>                    87.5%  ▄·▂·▂▆█▄●▄▂▂ beats 13/17  very easy · avg 87%     10%  small run
 </pre>
 
 </details>
@@ -61,6 +61,6 @@ weighted average                                   = 55.1
 
 Other versions: BF16 (~59.6 GB, NVIDIA only) `git clone https://github.com/inclusionAI/LLaDA-Image && cd LLaDA-Image && pip install -r requirements.txt && python -c "import torch; from src import LLaDAImagePipeline; p=LLaDAImagePipeline.from_pretrained('inclusionAI/LLaDA-Image', torch_dtype=torch.bfloat16, device='cuda'); p(prompt='A cinematic photograph of a red fox standing in fresh snow, soft winter light, detailed fur, shallow depth of field', negative_prompt='', generation_mode='text', height=1024, width=1024, num_inference_steps=50, guidance_scale=5.0, generator=torch.Generator('cuda').manual_seed(42)).images[0].save('out.png')"` · F16 + LLADA2 TEXT ENCODER Q8_0 (SD.CPP) (~38.5 GB) `sd-cli --diffusion-model models/llada-image-f16.gguf --llm models/llada-image-text_encoder-q8_0.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 50 --cfg-scale 5.0 --seed 42 --output output.png`
 
-Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/LLaDA-Image)
+Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/LLaDA-Image)
 
 [interactive version](https://whatmodel.sh/model/llada-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

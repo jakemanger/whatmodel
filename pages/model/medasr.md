@@ -51,6 +51,6 @@ weighted average                                   = -14.2
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/medasr-gguf medasr-Q8_0.gguf --local-dir models/medasr && build/bin/transcribe-cli --language en -m models/medasr/medasr-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/medasr)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/medasr)
 
 [interactive version](https://whatmodel.sh/model/medasr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

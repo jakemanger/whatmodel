@@ -80,6 +80,6 @@ weighted average                                   = 60.0
    pip install f5-tts && f5-tts_infer-cli --model E2TTS_Base --gen_text "Hello, world."
    ```
 
-Official weights and documentation: [huggingface.co/SWivid](https://huggingface.co/SWivid/E2-TTS)
+Model repository and documentation: [huggingface.co/SWivid](https://huggingface.co/SWivid/E2-TTS)
 
 [interactive version](https://whatmodel.sh/model/e2-tts-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

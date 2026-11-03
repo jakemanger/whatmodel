@@ -109,6 +109,6 @@ weighted average                                   = 45.3
    ollama run hf.co/ibm-granite/granite-8b-code-instruct-4k-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k)
 
 [interactive version](https://whatmodel.sh/model/granite-8b-code-instruct-4k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

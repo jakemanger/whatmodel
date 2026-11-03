@@ -134,6 +134,6 @@ Other versions: 4bit (~2.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
    mlx_lm.server --model mlx-community/MiniCPM3-4B-4bit
    ```
 
-Official weights and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B)
+Model repository and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/MiniCPM3-4B)
 
 [interactive version](https://whatmodel.sh/model/minicpm3-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

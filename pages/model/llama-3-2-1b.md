@@ -246,7 +246,7 @@ Other versions: fp16 (~3.48 GB) `ollama run llama3.2:1b-instruct-fp16`
 
 Other versions: 8bit (~1.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.2-1B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 
 ## Published speed measurements
 

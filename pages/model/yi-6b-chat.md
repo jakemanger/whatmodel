@@ -133,6 +133,6 @@ Other versions: 8bit (~6.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Yi-6
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-6B-Chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-6B-Chat)
+Model repository and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-6B-Chat)
 
 [interactive version](https://whatmodel.sh/model/yi-6b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

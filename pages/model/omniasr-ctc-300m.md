@@ -66,6 +66,6 @@ weighted average                                   = 44.5
    uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_300M').transcribe(['audio.wav'], batch_size=1))"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/omniASR-CTC-300M)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/omniASR-CTC-300M)
 
 [interactive version](https://whatmodel.sh/model/omniasr-ctc-300m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

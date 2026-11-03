@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 62.5B params · proprietary
 
-**score 47.0** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.0** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,8 +24,8 @@ math  ▁▁▃▆█●▅█▃▁▁▁   #257 of 530*     29%      1
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   40.3%  ▆·▂·▄▂▂▂▂█●▆ beats 14/18  medium · avg 48%     29%  sharp · at its level
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>   40.3%  ▆·▂·▄▂▂▂▂█●▆ beats 14/18  medium · avg 48%     29%  sharp · at its level
 </pre>
 
 </details>
@@ -34,8 +34,8 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           66.1%  ▁···▁··▃▁▅▅● beats 13/18  easy · avg 74%       31%  at its level
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 51.0%  ▂▂▂▂·▅·▃▂█●▃ beats 15/18  medium · avg 60%     28%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         66.1%  ▁···▁··▃▁▅▅● beats 13/18  easy · avg 74%       31%  at its level
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               51.0%  ▂▂▂▂·▅·▃▂█●▃ beats 15/18  medium · avg 60%     28%  sharp · at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   62.7%  ▂··▂·▂▄▄·██● beats 16/18  medium · avg 61%     11%  at its level
 </pre>
 

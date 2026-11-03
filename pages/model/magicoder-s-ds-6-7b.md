@@ -38,9 +38,9 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>              50.0%  ▂▂▃▄▄█▁▄●▃▁▃ beats 35/42  medium · avg 52%     13%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        36.0%  ▃▂·▆▆█●▆▅▃▃▃ beats 19/33  medium · avg 39%    5.4%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 48%    5.2%  at its level
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (maker)</a>            50.0%  ▂▂▃▄▄█▁▄●▃▁▃ beats 35/42  medium · avg 52%     13%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>      36.0%  ▃▂·▆▆█●▆▅▃▃▃ beats 19/33  medium · avg 39%    5.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>      47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 48%    5.2%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   69.8%  ▂·▂▂▂●▅▆▆▆▃█ beats 7/29   easy · avg 74%      2.7%  at its level
 </pre>
 
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   57% ▇▇▇▇▇▇▇
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   29% ▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   11% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2   11% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 49.9
@@ -128,6 +128,6 @@ Other versions: Q8_0 (~7.2 GB) `ollama run hf.co/TheBloke/Magicoder-S-DS-6.7B-GG
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ise-uiuc/Magicoder-S-DS-6.7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ise-uiuc](https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B)
+Model repository and documentation: [huggingface.co/ise-uiuc](https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B)
 
 [interactive version](https://whatmodel.sh/model/magicoder-s-ds-6-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

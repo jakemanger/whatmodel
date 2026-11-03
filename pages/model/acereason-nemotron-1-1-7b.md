@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-06 · 7.62B params · nvidia-open-model-license
 
-**score 48.1** ±1.9 · #408 of 732 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 48.1** ±1.9 · #408 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,10 +37,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             2% ▇
-weighted average                        = 48.1
+source                               results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (submitted / maker-reported)</a>        3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   2% ▇
+weighted average                              = 48.1
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -128,6 +128,6 @@ Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/bartowski/nvidia_AceReason-Nemo
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/AceReason-Nemotron-1.1-7B-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B)
 
 [interactive version](https://whatmodel.sh/model/acereason-nemotron-1-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -129,6 +129,6 @@ Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-commun
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-Coder-V2-Instruct-0724', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-v2-0724) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Aleph Alpha · released 2023-02 · 13B params · proprietary
 
-**score 28.9** ±12.9 · comparison only: no current run option verified · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.9** ±12.9 · comparison only: no current run option verified · from 10 benchmark results across 1 source · † no independently run results verified
 
 Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge%40first-party-aleph-alpha&score=set) comparison set only.
 
@@ -22,16 +22,16 @@ Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge%40first
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">COPA (lab)</a>                           83.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 37/67   easy · avg 86%          17%  sharp · at its level · small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">OpenBookQA (lab)</a>                     27.8%  ▅▁▁●▂▂▃█▃▁▃▁ beats 22/107  very hard · avg 29%     12%  sharp · too hard for it · small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">TriviaQA (lab)</a>                       20.5%  ▁▁▂▂▄●▃▆▅█▅▂ beats 23/80   hard · avg 28%          10%  small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">BoolQ (lab)</a>                          68.3%  ▁····▁▂█●▅▆▄ beats 47/103  medium · avg 70%        10%  at its level · small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">ARC Challenge (lab)</a>                  37.0%  ▄▁▁▂▁●█▇▃▂▃▂ beats 45/140  hard · avg 40%         7.3%  small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">WinoGrande (lab)</a>                     64.6%  ▁▁▁▁▂▁▁▅●█▃▁ beats 56/131  hard · avg 67%         7.2%  small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">ARC Easy (lab)</a>                       70.3%  ▁▃▂▄▆●▅▃▁··▁ beats 67/100  easy · avg 74%         6.8%  at its level · small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">HellaSwag (lab)</a>                      53.3%  ▁▁▁▂▂▂●▆█▇▄▂ beats 27/135  medium · avg 56%       5.8%  at its level · small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">COPA (maker)</a>                         83.0%  ▁·▁▁▁▅▅●▆▂▁▁ beats 37/67   easy · avg 86%          17%  sharp · at its level · small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">OpenBookQA (maker)</a>                   27.8%  ▅▁▁●▂▂▃█▃▁▃▁ beats 22/107  very hard · avg 29%     12%  sharp · too hard for it · small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">TriviaQA (maker)</a>                     20.5%  ▁▁▂▂▄●▃▆▅█▅▂ beats 23/80   hard · avg 28%          10%  small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">BoolQ (maker)</a>                        68.3%  ▁····▁▂█●▅▆▄ beats 47/103  medium · avg 70%        10%  at its level · small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">ARC Challenge (maker)</a>                37.0%  ▄▁▁▂▁●█▇▃▂▃▂ beats 45/140  hard · avg 40%         7.3%  small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">WinoGrande (maker)</a>                   64.6%  ▁▁▁▁▂▁▁▅●█▃▁ beats 56/131  hard · avg 67%         7.2%  small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">ARC Easy (maker)</a>                     70.3%  ▁▃▂▄▆●▅▃▁··▁ beats 67/100  easy · avg 74%         6.8%  at its level · small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">HellaSwag (maker)</a>                    53.3%  ▁▁▁▂▂▂●▆█▇▄▂ beats 27/135  medium · avg 56%       5.8%  at its level · small run
 <a href="https://aleph-alpha.com/luminous-performance-benchmarks/">LAMBADA (OpenAI version), last-wo…</a>   70.2%  ▁·····▁▁▃▃●█ beats 55/86   easy · avg 73%         5.5%  at its level · small run
-<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">PIQA (lab)</a>                           77.3%  ▁▁▁▂▂▃▅●▅▃▁▁ beats 65/123  medium · avg 79%       5.4%  at its level · small run
+<a href="https://aleph-alpha.com/luminous-performance-benchmarks/">PIQA (maker)</a>                         77.3%  ▁▁▁▂▂▃▅●▅▃▁▁ beats 65/123  medium · avg 79%       5.4%  at its level · small run
 </pre>
 
 </details>

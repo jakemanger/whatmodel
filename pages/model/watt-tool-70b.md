@@ -132,6 +132,6 @@ Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/watt-ai_watt-tool
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='watt-ai/watt-tool-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/watt-ai](https://huggingface.co/watt-ai/watt-tool-70B)
+Model repository and documentation: [huggingface.co/watt-ai](https://huggingface.co/watt-ai/watt-tool-70B)
 
 [interactive version](https://whatmodel.sh/model/watt-tool-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

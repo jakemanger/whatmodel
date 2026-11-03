@@ -52,6 +52,6 @@ weighted average                                   = 59.4
    vllm serve ibm-granite/granite-speech-3.3-8b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-8b --max-lora-rank 64
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-3.3-8b)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-3.3-8b)
 
 [interactive version](https://whatmodel.sh/model/granite-speech-3-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

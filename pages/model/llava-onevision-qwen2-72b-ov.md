@@ -57,6 +57,6 @@ weighted average                                   = 45.3
    vllm serve llava-hf/llava-onevision-qwen2-72b-ov-hf
    ```
 
-Official weights and documentation: [huggingface.co/lmms-lab](https://huggingface.co/lmms-lab/llava-onevision-qwen2-72b-ov-sft)
+Model repository and documentation: [huggingface.co/lmms-lab](https://huggingface.co/lmms-lab/llava-onevision-qwen2-72b-ov-sft)
 
 [interactive version](https://whatmodel.sh/model/llava-onevision-qwen2-72b-ov) · [JSON](https://whatmodel.sh/api?format=json&all=1)

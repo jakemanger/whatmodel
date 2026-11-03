@@ -144,6 +144,6 @@ Other versions: Q8_0 (~29.06 GB) `ollama run lfm2:24b-q8_0`
 
 Other versions: 8bit (~25.3 GB, Mac only) `mlx_lm.chat --model LiquidAI/LFM2-24B-A2B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-24B-A2B)
 
 [interactive version](https://whatmodel.sh/model/lfm2-24b-a2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -152,6 +152,6 @@ Other versions: Q8_0 (~9.19 GB) `ollama run starling-lm:7b-beta-q8_0`
 
 Other versions: 8bit (~7.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Starling-LM-7B-beta-8bit`
 
-Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Starling-LM-7B-beta)
+Model repository and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Starling-LM-7B-beta)
 
 [interactive version](https://whatmodel.sh/model/starling-lm-7b-beta) · [JSON](https://whatmodel.sh/api?format=json&all=1)

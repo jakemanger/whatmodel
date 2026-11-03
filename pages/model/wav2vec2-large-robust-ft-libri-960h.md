@@ -55,6 +55,6 @@ weighted average                                   = 14.6
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-robust-ft-libri-960h', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h)
 
 [interactive version](https://whatmodel.sh/model/wav2vec2-large-robust-ft-libri-960h) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -38,9 +38,9 @@ Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command
 
 <pre>
 test                         result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                   80.9%  █··▄·····▄·● beats 4/5    very easy · avg 89%      18%  sharp
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                8.1%  █···▄▄▄····● beats 5/5    very hard · avg 8.9%     14%  sharp · too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                69.0%  █···▄·▄▄···● beats 5/5    easy · avg 70%          6.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (maker)</a>                 80.9%  █··▄·····▄·● beats 4/5    very easy · avg 89%      18%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (maker)</a>              8.1%  █···▄▄▄····● beats 5/5    very hard · avg 8.9%     14%  sharp · too hard for it
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (maker)</a>              69.0%  █···▄·▄▄···● beats 5/5    easy · avg 70%          6.9%  at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>   10.7%  █···●·▄·▄··█ beats 2/6    hard · avg 19%          3.3%  typical
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     67.3%  ██····●█·███ beats 2/6    easy · avg 70%          3.3%  at its level · noisy
 </pre>
@@ -51,11 +51,11 @@ test                         result  vs the others in its run  difficulty       
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>                 69.1%  █·▄·····●▄·▄ beats 3/5    easy · avg 81%          16%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                           65.5%  ▄█········●█ beats 3/5    easy · avg 76%          15%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          26.2%  ▄·█······●·█ beats 3/5    hard · avg 33%         6.7%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (maker)</a>               69.1%  █·▄·····●▄·▄ beats 3/5    easy · avg 81%          16%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (maker)</a>                         65.5%  ▄█········●█ beats 3/5    easy · avg 76%          15%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (maker)</a>                        26.2%  ▄·█······●·█ beats 3/5    hard · avg 33%         6.7%  at its level
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   59.5%  ▁··▃▁▁▁●█▅▁▅ beats 8/24   hard · avg 51%         2.9%  blunt · at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                           59.4%  ▃▃·····▃···● beats 5/5    medium · avg 54%       0.7%  blunt · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (maker)</a>                         59.4%  ▃▃·····▃···● beats 5/5    medium · avg 54%       0.7%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.4%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 37/98  very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -158,6 +158,6 @@ Other versions: Q8_0 (~8.7 GB) `lms get https://huggingface.co/ibm-granite/grani
 
 Other versions: 8bit (~8.7 GB, Mac only) `mlx_lm.chat --model mlx-community/granite-3.3-8b-instruct-8bit`
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-8b-instruct)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.3-8b-instruct)
 
 [interactive version](https://whatmodel.sh/model/granite-3-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

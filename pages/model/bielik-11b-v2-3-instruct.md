@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>                          1   31% ▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (submitted / maker-rep…</a>        1   31% ▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   28% ▇▇▇
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   25% ▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   10% ▇
@@ -141,6 +141,6 @@ Other versions: Q8_0 (~11.87 GB) `ollama run hf.co/speakleash/Bielik-11B-v2.3-In
    mlx_lm.server --model lknik/Bielik-11B-v2.3-Instruct-8bit
    ```
 
-Official weights and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct)
+Model repository and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct)
 
 [interactive version](https://whatmodel.sh/model/bielik-11b-v2-3-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

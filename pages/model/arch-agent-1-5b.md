@@ -132,6 +132,6 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/mradermacher/Arch-Agent-1.5B-GG
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='katanemo/Arch-Agent-1.5B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/katanemo](https://huggingface.co/katanemo/Arch-Agent-1.5B)
+Model repository and documentation: [huggingface.co/katanemo](https://huggingface.co/katanemo/Arch-Agent-1.5B)
 
 [interactive version](https://whatmodel.sh/model/arch-agent-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -28,9 +28,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   21.2%  ▄█▂●▂▂▆▄·▂·▂ beats 7/16   hard · avg 26%          43%  sharp
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            64.2%  ▅▂█▂●▂····▂▂ beats 10/13  easy · avg 69%          23%  at its level
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   28.0%  ▃··▃·█▃▃▅··● beats 9/9    hard · avg 24%         8.8%  typical
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                      85.9%  ▄·▂·▂▆●▄▂▄▂▂ beats 8/17   very easy · avg 87%    4.8%  small run
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (lab)</a>            54.3%  ●·····▅██▅▃▃ beats 0/12   very easy · avg 85%    2.7%  noisy · small run
-<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (lab)</a>             2.4%  ●·······████ beats 0/12   very easy · avg 88%    0.3%  noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (maker)</a>                    85.9%  ▄·▂·▂▆●▄▂▄▂▂ beats 8/17   very easy · avg 87%    4.8%  small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (maker)</a>          54.3%  ●·····▅██▅▃▃ beats 0/12   very easy · avg 85%    2.7%  noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (maker)</a>           2.4%  ●·······████ beats 0/12   very easy · avg 88%    0.3%  noisy · small run
 </pre>
 
 </details>
@@ -77,6 +77,6 @@ api (fal.ai) · $0.050/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-i1
    git clone https://github.com/HiDream-ai/HiDream-I1 && cd HiDream-I1 && pip install -r requirements.txt && python ./inference.py --model_type full
    ```
 
-Official weights and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-I1-Full)
+Model repository and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-I1-Full)
 
 [interactive version](https://whatmodel.sh/model/hidream-i1-full) · [JSON](https://whatmodel.sh/api?format=json&all=1)

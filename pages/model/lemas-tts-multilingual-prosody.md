@@ -6,7 +6,7 @@
 
 LEMAS Project · released 2026-01 · cc-by-4.0
 
-**score 52.1** ±6.1 · #59 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 52.1** ±6.1 · #59 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -50,6 +50,6 @@ weighted average                                   = 52.1
    git clone https://github.com/LEMAS-Project/LEMAS-TTS.git && cd LEMAS-TTS && pip install -r requirements.txt && hf download LEMAS-Project/LEMAS-TTS --include "pretrained_models/*" --local-dir . && PYTHONPATH=$PWD python -m lemas_tts.scripts.tts_multilingual --model multilingual_prosody --ckpt_file pretrained_models/ckpts/multilingual_prosody/multilingual_prosody.safetensors --vocab_file pretrained_models/data/multilingual_prosody/vocab.txt --frontend phone --use_ema --enable_prosody_encoder --ref_audio pretrained_models/demos/lemas_tts_test/es.wav --ref_text "Te voy a dar un tip que le copié a John Rockefeller, uno de los empresarios más picudos de la historia. " --text "I want to give you a tip I copied from John Rockefeller." --output_wave out.wav --nfe_step 64 --cfg_strength 5.0 --sway_sampling_coef 3.0 --ref_ratio 1.0 --separate_langs --speed 1.0 --seed -1
    ```
 
-Official weights and documentation: [huggingface.co/LEMAS-Project](https://huggingface.co/LEMAS-Project/LEMAS-TTS)
+Model repository and documentation: [huggingface.co/LEMAS-Project](https://huggingface.co/LEMAS-Project/LEMAS-TTS)
 
 [interactive version](https://whatmodel.sh/model/lemas-tts-multilingual-prosody) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -29,12 +29,12 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nem
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2606.03892v2">τ²-bench Telecom</a>                  13.2%  ▁·●█▆▅▂▃▃▂▃▁ beats 4/89   very hard · avg 11%    5.6%  sharp · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                     61.9%  █▄··●█·█▄█▄█ beats 3/13   medium · avg 59%       1.7%  blunt · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (maker)</a>                   61.9%  █▄··●█·█▄█▄█ beats 3/13   medium · avg 59%       1.7%  blunt · at its level · several runs
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   35.7%  ▁▁▁▂██●▅▆▂▂▂ beats 39/77  hard · avg 31%         1.5%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Retail (lab)</a>              48.7%  ▁····▃·●▇█▂▆ beats 4/28   hard · avg 30%         1.5%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Retail (lab)</a>             40.4%  ▁····●▁▃▆█▃▁ beats 4/44   hard · avg 28%         1.4%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Airline (lab)</a>            24.0%  ●▁·▂▁▃▂▁█▅▂▃ beats 0/42   hard · avg 17%         1.1%  small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Airline (lab)</a>             32.0%  ▁▁▁·●▄▁█▇▁▁▇ beats 5/28   hard · avg 18%         1.0%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Retail (maker)</a>            48.7%  ▁····▃·●▇█▂▆ beats 4/28   hard · avg 30%         1.5%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Retail (maker)</a>           40.4%  ▁····●▁▃▆█▃▁ beats 4/44   hard · avg 28%         1.4%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Airline (maker)</a>          24.0%  ●▁·▂▁▃▂▁█▅▂▃ beats 0/42   hard · avg 17%         1.1%  small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Airline (maker)</a>           32.0%  ▁▁▁·●▄▁█▇▁▁▇ beats 5/28   hard · avg 18%         1.0%  at its level · small run
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unspecif…</a>   35.1%  ▃▅●▅▅▃▅···▃█ beats 3/16   hard · avg 35%          2.5%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   15.4%  ▁●▁▁·▁▂▃▅▃█▇ beats 2/49   hard · avg 17%          2.3%  sharp · at its level
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   35.1%  ▁●▃▁█▅▄▇▅▅▃█ beats 1/38   hard · avg 27%          1.3%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MultiPL-E (lab)</a>                      76.8%  ▃··▄·▅▅▇▄●▃▄ beats 23/31  easy · avg 65%          1.0%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MultiPL-E (maker)</a>                    76.8%  ▃··▄·▅▅▇▄●▃▄ beats 23/31  easy · avg 65%          1.0%  at its level · small run
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 2 9B IT SimPO](gemma-2-9b
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   83.4%  ▃··▃···█●▅▃▃ beats 6/11   easy · avg 77%    2.5%  several runs
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Arena-Hard v2 aggregate (lab)</a>        43.4%  ▁▁··▄●▁▃█▁▁▇ beats 6/22   hard · avg 19%    1.3%  sharp · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Arena-Hard v2 aggregate (maker)</a>      43.4%  ▁▁··▄●▁▃█▁▁▇ beats 6/22   hard · avg 19%    1.3%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -72,14 +72,14 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                      47.4%  ▃·▃▃●··▃▅▃·█ beats 5/12    medium · avg 44%        4.6%  sharp · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (maker)</a>                    47.4%  ▃·▃▃●··▃▅▃·█ beats 5/12    medium · avg 44%        4.6%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                88.6%  █····█··▄·●█ beats 5/7     very easy · avg 86%     2.3%  sharp · maxed out
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">HMMT 2025 (edition unspecified) (…</a>   31.0%  ●█▇▅▇▅▁·▁··▁ beats 1/32    very hard · avg 14%     1.8%  sharp · small run
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             52.2%  ▃▃▄▃▃▃●▇█▃▂▅ beats 79/197  very hard · avg 7.2%    1.7%  sharp · noisy
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            93.4%  █▄··▄█▄····● beats 7/7     easy · avg 80%          1.5%  typical
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          47.2%  ▄··▄██··▄··● beats 7/7     hard · avg 29%          1.4%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              84.4%  ▄·▄·▄▄▄·▄··● beats 7/7     easy · avg 69%          1.0%  typical
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">PolyMATH (lab)</a>                       31.1%  ▁···▃●·▇█▄▄▄ beats 3/23    hard · avg 22%          0.9%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">PolyMATH (maker)</a>                     31.1%  ▁···▃●·▇█▄▄▄ beats 3/23    hard · avg 22%          0.9%  at its level · small run
 </pre>
 
 </details>
@@ -89,26 +89,26 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         45.8%  ▁▁▁▁▂▄●▄▅▇█▅ beats 50/211   hard · avg 37%           11%  sharp · at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       69.6%  ▄·▄·▄▄●▄█▄██ beats 4/12     medium · avg 63%        8.5%  at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      62.0%  ▂····▂·▂▂●▆█ beats 6/14     hard · avg 49%          7.4%  sharp · at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     84.2%  ▃··▃·▃·●▃▅▃▅ beats 3/11     easy · avg 79%          4.7%  several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      42.8%  ▄··▄·▄●▄█▄██ beats 3/11     medium · avg 37%        3.4%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (maker)</a>                     69.6%  ▄·▄·▄▄●▄█▄██ beats 4/12     medium · avg 63%        8.5%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (maker)</a>    62.0%  ▂····▂·▂▂●▆█ beats 6/14     hard · avg 49%          7.4%  sharp · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (maker)</a>                   84.2%  ▃··▃·▃·●▃▅▃▅ beats 3/11     easy · avg 79%          4.7%  several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (maker)</a>                    42.8%  ▄··▄·▄●▄█▄██ beats 3/11     medium · avg 37%        3.4%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 80.8%  ▄···▄▄·▄█··● beats 7/7      easy · avg 74%          3.2%  typical
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   82.1%  ▁●▃▁█▄▃▃▆▂▂▂ beats 2/49     easy · avg 77%          2.1%  typical
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               58.3%  █··▄··█··█·● beats 7/7      medium · avg 42%        2.0%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   34.1%  ▁▁▁▁▁▂▂▃●▆█▃ beats 42/97    hard · avg 31%          1.9%  blunt · at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        70.2%  ▃··▃▃··▅···● beats 7/7      medium · avg 56%        1.5%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             71.3%  ▄···▄·█·▄·▄● beats 7/7      medium · avg 59%        1.3%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">INCLUDE (lab)</a>                        60.1%  ▂····▂▂▄●▄█▄ beats 12/36    medium · avg 55%        1.3%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">INCLUDE (maker)</a>                      60.1%  ▂····▂▂▄●▄█▄ beats 12/36    medium · avg 55%        1.3%  at its level · small run
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    51.7%  ▄··▄█▄··▄··● beats 6/7      medium · avg 46%        1.0%  blunt · at its level
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MMLU-ProX (lab)</a>                      61.6%  ▁·▁▁▁●▁▃▃█▅▄ beats 5/36     medium · avg 54%        0.8%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">LiveBench 2024-11-25 (lab)</a>           63.0%  ●··▂·▂·▂█▆▂▂ beats 0/13     medium · avg 53%        0.7%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MMLU-ProX (maker)</a>                    61.6%  ▁·▁▁▁●▁▃▃█▅▄ beats 5/36     medium · avg 54%        0.8%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">LiveBench 2024-11-25 (maker)</a>         63.0%  ●··▂·▂·▂█▆▂▂ beats 0/13     medium · avg 53%        0.7%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 221/276  medium · avg 72%        0.7%  at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Multi-IF (aggregation unspecified…</a>   69.0%  ▁▁▁▁▁▁●▄█▄▁▂ beats 11/41    medium · avg 62%        0.7%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">WritingBench (lab)</a>                   83.4%  ▁·▁▂▁··●█▂▂▁ beats 6/20     easy · avg 69%          0.6%  small run
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Creative Writing v3 (lab)</a>            83.5%  ▂····▂▆··●█▆ beats 5/14     medium · avg 64%        0.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">WritingBench (maker)</a>                 83.4%  ▁·▁▂▁··●█▂▂▁ beats 6/20     easy · avg 69%          0.6%  small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Creative Writing v3 (maker)</a>          83.5%  ▂····▂▆··●█▆ beats 5/14     medium · avg 64%        0.6%  at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   77.3%  ▃·▁▁▂▁▂▅█●▄▁ beats 65/100   medium · avg 67%        0.5%  sharp · at its level · noisy
-<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">ZebraLogic (lab)</a>                     80.2%  █·▁▁▁●·▄▄▁▄▁ beats 13/24    medium · avg 45%        0.5%  at its level · noisy · small run
+<a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">ZebraLogic (maker)</a>                   80.2%  █·▁▁▁●·▄▄▁▄▁ beats 13/24    medium · avg 45%        0.5%  at its level · noisy · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   81.7%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 74/146   easy · avg 82%          0.3%  noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 4.0%  ●▁▁▁▁▂▃▃▃▂▁▁ beats 35/137   very hard · avg 5.8%    0.3%  sharp · too hard for it · noisy
 </pre>
@@ -123,7 +123,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-qwen--qwen3-4b-instruct-2507"></a><a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Qwen/Qwen3-4B-Instruct-2507 model card …</a>       25   33% ▇▇▇▇
 <a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   24% ▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=23">Qwen (lab)</a>                                      8   24% ▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=23">Qwen (submitted / maker-reported)</a>               8   24% ▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3    7% ▇
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    4% ▇
 <a name="paper-2606.03892v2-synthesize-and-reward"></a><a href="https://arxiv.org/html/2606.03892v2">Synthesize and Reward: Reinforcement Le…</a>        1    3% ▇
@@ -220,7 +220,7 @@ Other versions: Q8_0 (~5.32 GB) `ollama run qwen3:4b-instruct-2507-q8_0`
 
 Other versions: 8bit (~4.3 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-4B-Instruct-2507-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 
 ## Published speed measurements
 

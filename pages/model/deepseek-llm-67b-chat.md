@@ -145,6 +145,6 @@ Other versions: Q2_K (~28.5 GB) `lms get https://huggingface.co/TheBloke/deepsee
 
 Other versions: Q4_K_M (~40.7 GB) `ollama run deepseek-llm:67b-chat-q4_K_M`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat)
 
 [interactive version](https://whatmodel.sh/model/deepseek-llm-67b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

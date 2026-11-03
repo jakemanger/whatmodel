@@ -117,6 +117,6 @@ Other versions: fp16 (~7.64 GB) `lms get https://huggingface.co/microsoft/Phi-3-
 
 Other versions: fp16 (~7.64 GB) `ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf`
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-mini-4k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

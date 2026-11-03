@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-09 · 12.15B params (2.5B active) · apache-2.0
 
-**score 60.0** ±1.4 · #202 of 732 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.0** ±1.4 · #202 of 732 · from 11 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,8 +27,8 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o4-mini](o4-mini.md), [Qwen3 235B-A2
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (lab)</a>             17.4%  ▁·▁·▁●▄▃▆█▅█ beats 4/63    very hard · avg 6.2%     10%  sharp
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>             47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/138  hard · avg 16%          8.6%  sharp · at its level · noisy
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (maker)</a>           17.4%  ▁·▁·▁●▄▃▆█▅█ beats 4/63    very hard · avg 6.2%     10%  sharp
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (maker)</a>           47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/138  hard · avg 16%          8.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>   28.0%  ▂·▁▁▁▁●▃█▇▂▁ beats 14/58   very hard · avg 7.2%    8.6%  sharp · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archive) (…</a>   62.3%  ▁▁▁▂▆▆▅▆█●▄▃ beats 96/114  medium · avg 42%        6.3%  at its level
 </pre>
@@ -42,10 +42,10 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">LiveCodeBench v6 (window unspecif…</a>   82.0%  ▂▃▄▄▅██▆●▇▄▆ beats 48/67    medium · avg 56%         11%  typical
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>             47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/138   hard · avg 16%          8.6%  sharp · at its level · noisy
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (maker)</a>           47.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 37/138   hard · avg 16%          8.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecified)…</a>   28.0%  ▂·▁▁▁▁●▃█▇▂▁ beats 14/58    very hard · avg 7.2%    8.6%  sharp · noisy
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+ (lab)</a>                     91.5%  ▁·▁▁▂▃▄▄█▅▄● beats 136/145  easy · avg 80%          7.9%  sharp · maxed out
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+ (lab)</a>                          79.4%  ▁··▁▁▃▄█▆●▁▁ beats 108/120  medium · avg 65%        4.2%  typical
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+ (maker)</a>                   91.5%  ▁·▁▁▂▃▄▄█▅▄● beats 136/145  easy · avg 80%          7.9%  sharp · maxed out
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+ (maker)</a>                        79.4%  ▁··▁▁▃▄█▆●▁▁ beats 108/120  medium · avg 65%        4.2%  typical
 </pre>
 
 </details>
@@ -64,10 +64,10 @@ test                                result  vs the others in its run    difficul
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GPQA Diamond (lab)</a>   64.6%  ▁▁▁▁▂▄▅●███▄ beats 131/322  hard · avg 43%     27%  sharp · at its level
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux (lab)</a>     87.8%  ▁▁▃▁▂▃▄●▇▅█▄ beats 27/63    easy · avg 79%    8.7%  typical
-<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus (lab)</a>       88.3%  ▁··▁▁▁·▃▁▄●▁ beats 14/16    easy · avg 83%    2.8%  blunt
+test                  result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GPQA Diamond (maker)</a>   64.6%  ▁▁▁▁▂▄▅●███▄ beats 131/322  hard · avg 43%     27%  sharp · at its level
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux (maker)</a>     87.8%  ▁▁▃▁▂▃▄●▇▅█▄ beats 27/63    easy · avg 79%    8.7%  typical
+<a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus (maker)</a>       88.3%  ▁··▁▁▁·▃▁▄●▁ beats 14/16    easy · avg 83%    2.8%  blunt
 </pre>
 
 </details>
@@ -174,6 +174,6 @@ Other versions: Q8_0 (~12.9 GB) `ollama run hf.co/JetBrains/Mellum2.1-12B-A2.5B-
    vllm serve JetBrains/Mellum2.1-12B-A2.5B-Thinking
    ```
 
-Official weights and documentation: [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking)
+Model repository and documentation: [huggingface.co/JetBrains](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking)
 
 [interactive version](https://whatmodel.sh/model/mellum2-1-12b-a2-5b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -27,8 +27,8 @@ Trails [Gemini 4 Argon](gemini-4-argon.md), [Claude Sonnet 5.5](claude-sonnet-5-
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/323062f70843f40e3f739865c3fe9d806126e412/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1009 IPS  ▁▁▁▃▃▂█▁●▂▁▁ beats 51/59  avg -0.379 IPS     49%  sharp
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (lab)</a>                           75.3%  █·█····█···● beats 3/3    hard · avg 25%    5.5%  at its level
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (lab)</a>        78.4%  ██·····●··██ beats 2/4    hard · avg 28%    3.5%  small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">JobBench (maker)</a>                         75.3%  █·█····█···● beats 3/3    hard · avg 25%    5.5%  at its level
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">OSWorld 2.1 (partial score) (make…</a>       78.4%  ██·····●··██ beats 2/4    hard · avg 28%    3.5%  small run
 </pre>
 
 </details>
@@ -47,9 +47,9 @@ test                       result  vs the others in its run    difficulty  count
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                            result  vs the others in its run  difficulty           counts  why
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (lab)</a>    59.0%  ██·······█·● beats 3/3    very hard · avg 10%    3.5%  at its level · small run
-<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (lab)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 21%         2.9%  blunt · at its level · small run
+test                              result  vs the others in its run  difficulty           counts  why
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">ProgramBench (Almost@1) (maker)</a>    59.0%  ██·······█·● beats 3/3    very hard · avg 10%    3.5%  at its level · small run
+<a href="https://research.meta.ai/static/muse-wonder-model-card#page=3">HealthBench Professional (maker)</a>   62.3%  ▂·▂··▂▂▂█●▂▄ beats 10/13  hard · avg 21%         2.9%  blunt · at its level · small run
 </pre>
 
 </details>

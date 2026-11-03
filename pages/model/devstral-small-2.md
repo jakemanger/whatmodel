@@ -25,10 +25,10 @@ coding       ▁▁▁▃▅▇█●▅▄▃▁   #142 of 469     65%      2
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>             59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/138  hard · avg 23%          51%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       22.5%  ▂▂●▅████▆▂▃▃ beats 3/36    very hard · avg 11%     16%  at its level · small run
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▁●██▂▂▁ beats 17/65   hard · avg 30%          14%  at its level · small run
+test                            result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>               59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/138  hard · avg 23%          51%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (maker)</a>       22.5%  ▂▂●▅████▆▂▃▃ beats 3/36    very hard · avg 11%     16%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   55.7%  ▁··▁▃▁●██▂▂▁ beats 17/65   hard · avg 30%          14%  at its level · small run
 </pre>
 
 </details>
@@ -38,9 +38,9 @@ test                          result  vs the others in its run   difficulty     
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>             59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/138  hard · avg 23%     51%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▁●██▂▂▁ beats 17/65   hard · avg 30%     14%  at its level · small run
+test                            result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2601.20789v3">SWE-bench Verified</a>               59.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 73/138  hard · avg 23%     51%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (maker)</a>   55.7%  ▁··▁▃▁●██▂▂▁ beats 17/65   hard · avg 30%     14%  at its level · small run
 </pre>
 
 </details>
@@ -154,6 +154,6 @@ Other versions: Q8_0 (~29.3 GB) `ollama run devstral-small-2:24b-instruct-2512-q
 
 Other versions: 8bit (~26.6 GB, Mac only) `mlx_lm.chat --model mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
 
 [interactive version](https://whatmodel.sh/model/devstral-small-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

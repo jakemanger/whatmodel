@@ -23,11 +23,11 @@ coding       ▁▁▁▃▅▇█▇●▄▃▁   #123 of 469     85%      4
 <details><summary>agent tasks · #1 of 3 · 43% of its score</summary>
 
 <pre>
-test                          result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 103/138  hard · avg 28%          17%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%  ▂▂▅▅█●██▆▂▃▃ beats 16/36    very hard · avg 12%     14%  at its level · small run
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▁▅●█▂▂▁ beats 27/65    hard · avg 27%          11%  at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▄▂●▂▄▂▆█·▂·▂ beats 3/16                               —  not counted yet: no other model in the …
+test                            result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (maker)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 103/138  hard · avg 28%          17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (maker)</a>       45.8%  ▂▂▅▅█●██▆▂▃▃ beats 16/36    very hard · avg 12%     14%  at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (maker)</a>   63.1%  ▁··▁▃▁▅●█▂▂▁ beats 27/65    hard · avg 27%          11%  at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (maker)</a>            49.2%  ▄▂●▂▄▂▆█·▂·▂ beats 3/16                               —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -37,11 +37,11 @@ test                          result  vs the others in its run    difficulty    
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1349.2  ▁▁▃▂●█▃▆▅▅▁▂ beats 27/129   avg 981            56%  sharp
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 103/138  hard · avg 28%     17%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▁▅●█▂▂▁ beats 27/65    hard · avg 27%     11%  at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▄▂●▂▄▂▆█·▂·▂ beats 3/16                          —  not counted yet: no other model in the …
+test                            result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1349.2  ▁▁▃▂●█▃▆▅▅▁▂ beats 27/129   avg 981            56%  sharp
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (maker)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 103/138  hard · avg 28%     17%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (maker)</a>   63.1%  ▁··▁▃▁▅●█▂▂▁ beats 27/65    hard · avg 27%     11%  at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (maker)</a>            49.2%  ▄▂●▂▄▂▆█·▂·▂ beats 3/16                          —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -51,11 +51,11 @@ test                          result  vs the others in its run    difficulty    
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   56% ▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (lab)</a>                       3   43% ▇▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 65.9
+source                                 results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                  1   56% ▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (submitted / maker-reported)</a>        3   43% ▇▇▇▇▇
+prior: pull toward the middle                     1% ▇
+weighted average                                = 65.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Poolside ([CC BY-SA 4.0](../../licenses/report-2605.27605v1.txt))</sub>
@@ -149,6 +149,6 @@ Other versions: 8bit (~239.9 GB, Mac only) `mlx_lm.chat --model mlx-community/La
 
 Other versions: fp8 (~229.08 GB, NVIDIA only) `pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-FP8 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'` · nvfp4 (~139.29 GB, NVIDIA only) `pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-NVFP4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'`
 
-Official weights and documentation: [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-M.1)
+Model repository and documentation: [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-M.1)
 
 [interactive version](https://whatmodel.sh/model/laguna-m-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

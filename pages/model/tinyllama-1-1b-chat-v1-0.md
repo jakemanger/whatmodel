@@ -123,6 +123,6 @@ Other versions: Q8_0 (~1.82 GB) `ollama run tinyllama:1.1b-chat-v1-q8_0`
 
 Other versions: 8bit (~1.2 GB, Mac only) `mlx_lm.chat --model pcuenq/TinyLlama-1.1B-Chat-v1.0-Q8-mlx`
 
-Official weights and documentation: [huggingface.co/TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+Model repository and documentation: [huggingface.co/TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 
 [interactive version](https://whatmodel.sh/model/tinyllama-1-1b-chat-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

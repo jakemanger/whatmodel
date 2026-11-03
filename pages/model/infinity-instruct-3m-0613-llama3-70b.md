@@ -109,6 +109,6 @@ Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Infinity-Instruct
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-3M-0613-Llama3-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0613-Llama3-70B)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0613-Llama3-70B)
 
 [interactive version](https://whatmodel.sh/model/infinity-instruct-3m-0613-llama3-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

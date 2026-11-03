@@ -59,6 +59,6 @@ weighted average                                   = 31.8
    git clone https://github.com/Vchitect/LaVie && cd LaVie && hf download Vchitect/LaVie lavie_base.pt --local-dir pretrained_models && hf download CompVis/stable-diffusion-v1-4 --local-dir pretrained_models/stable-diffusion-v1-4 && cd base && python pipelines/sample.py --config configs/sample.yaml
    ```
 
-Official weights and documentation: [huggingface.co/Vchitect](https://huggingface.co/Vchitect/LaVie)
+Model repository and documentation: [huggingface.co/Vchitect](https://huggingface.co/Vchitect/LaVie)
 
 [interactive version](https://whatmodel.sh/model/lavie) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -35,8 +35,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        41.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 30/58    medium · avg 48%     19%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        31.8%  ▃▂·▆●██▆▅▃▃▃ beats 9/33     medium · avg 39%     19%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>      41.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 30/58    medium · avg 48%     19%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>      31.8%  ▃▂·▆●██▆▅▃▃▃ beats 9/33     medium · avg 39%     19%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         30.7%  ▁▁▁▁●▄▆▄▅▇█▅ beats 19/211   hard · avg 39%       11%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      60.7%  ▁··▁▁▂▂▆▅●█▆ beats 41/70    medium · avg 62%     11%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 223/276  medium · avg 72%    4.3%  at its level · noisy
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   39% ▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2   39% ▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   18% ▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   16% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   11% ▇
@@ -120,6 +120,6 @@ Other versions: Q8_0 (~34.6 GB) `lms get https://huggingface.co/Qwen/Qwen1.5-32B
 
 Other versions: Q8_0 (~39.51 GB) `ollama run qwen:32b-chat-v1.5-q8_0`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-32B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-32b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

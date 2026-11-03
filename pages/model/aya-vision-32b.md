@@ -63,6 +63,6 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
    pip install 'git+https://github.com/huggingface/transformers.git@v4.49.0-AyaVision' torch accelerate && python -c "import torch; from transformers import AutoProcessor, AutoModelForImageTextToText; r='CohereLabs/aya-vision-32b'; p=AutoProcessor.from_pretrained(r); m=AutoModelForImageTextToText.from_pretrained(r, device_map='auto', torch_dtype=torch.float16); i=p.apply_chat_template([{'role': 'user', 'content': [{'type': 'image', 'url': 'https://pbs.twimg.com/media/Fx7YvfQWYAIp6rZ?format=jpg&name=medium'}, {'type': 'text', 'text': 'What does the text in the image say?'}]}], padding=True, add_generation_prompt=True, tokenize=True, return_dict=True, return_tensors='pt').to(m.device); g=m.generate(**i, max_new_tokens=300, do_sample=True, temperature=0.3); print(p.tokenizer.decode(g[0][i['input_ids'].shape[-1]:], skip_special_tokens=True))"
    ```
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/aya-vision-32b)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/aya-vision-32b)
 
 [interactive version](https://whatmodel.sh/model/aya-vision-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

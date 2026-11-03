@@ -114,6 +114,6 @@ weighted average                                   = 65.9
 
 Other versions: fp8 (~689.48 GB, NVIDIA only) `vllm serve deepseek-ai/DeepSeek-V3.2-Exp`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v3-2-exp) · [JSON](https://whatmodel.sh/api?format=json&all=1)

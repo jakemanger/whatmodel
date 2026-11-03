@@ -24,6 +24,6 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 Other versions: fp32 (mlx-audio) (~0.29 GB, Mac only) `pip install mlx-audio phonemizer-fork && mlx_audio.tts.generate --model mlx-community/kitten-tts-mini-0.8 --text 'Hello, world!' --voice Jasper`
 
-Official weights and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-mini-0.8)
+Model repository and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-mini-0.8)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kitten-tts-mini-0-8)

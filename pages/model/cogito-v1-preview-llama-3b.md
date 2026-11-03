@@ -126,6 +126,6 @@ Other versions: Q8_0 (~4.83 GB) `ollama run cogito:3b-v1-preview-llama-q8_0`
 
 Other versions: 8bit (~3.4 GB, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-3B-8bit`
 
-Official weights and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B)
+Model repository and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B)
 
 [interactive version](https://whatmodel.sh/model/cogito-v1-preview-llama-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

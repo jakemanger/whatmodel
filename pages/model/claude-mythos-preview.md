@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-04 · proprietary
 
-**score 79.3** ±1.1 · #15 of 732 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 79.3** ±1.1 · #15 of 732 · from 12 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,11 +30,11 @@ Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">SWE-bench Pro (split unspecified)…</a>   77.8%  ▄█·▄·●██···▄ beats 4/9      very hard · avg 7.4%     24%  sharp
-<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=188">SWE-bench Multilingual (lab)</a>         87.3%  ▃··▃·▅▃●█··▃ beats 5/9      hard · avg 31%           11%  typical
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">SWE-bench Verified (lab)</a>             93.9%  ▁▁▁▁▁▁▂▄█▆▁● beats 136/138  hard · avg 28%          9.4%  sharp · maxed out
+<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=188">SWE-bench Multilingual (maker)</a>       87.3%  ▃··▃·▅▃●█··▃ beats 5/9      hard · avg 31%           11%  typical
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">SWE-bench Verified (maker)</a>           93.9%  ▁▁▁▁▁▁▂▄█▆▁● beats 136/138  hard · avg 28%          9.4%  sharp · maxed out
 <a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">Humanity's Last Exam with tools (…</a>   64.7%  ▁······▁·▄·● beats 8/10     very hard · avg 14%     7.4%  at its level
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">OSWorld-Verified (lab)</a>               85.4%  █▃·▂▅▂▃▂▅▃▆● beats 27/27    hard · avg 28%          6.7%  typical
-<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=190">Terminal-Bench 2.0 (lab)</a>             82.0%  ▂▂▅▅████▆▂▃● beats 35/36    very hard · avg 14%     4.8%  small run
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">OSWorld-Verified (maker)</a>             85.4%  █▃·▂▅▂▃▂▅▃▆● beats 27/27    hard · avg 28%          6.7%  typical
+<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=190">Terminal-Bench 2.0 (maker)</a>           82.0%  ▂▂▅▅████▆▂▃● beats 35/36    very hard · avg 14%     4.8%  small run
 <a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=193">BrowseComp with context managemen…</a>   86.9%  ▄·▄▂·█▂·▆●·▂ beats 13/15    medium · avg 47%        4.3%  typical
 </pre>
 
@@ -47,8 +47,8 @@ Beats [GPT-6.1 Terra](gpt-6-1-terra.md), [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">SWE-bench Pro (split unspecified)…</a>   77.8%  ▄█·▄·●██···▄ beats 4/9      very hard · avg 7.4%     24%  sharp
-<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=188">SWE-bench Multilingual (lab)</a>         87.3%  ▃··▃·▅▃●█··▃ beats 5/9      hard · avg 31%           11%  typical
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">SWE-bench Verified (lab)</a>             93.9%  ▁▁▁▁▁▁▂▄█▆▁● beats 136/138  hard · avg 28%          9.4%  sharp · maxed out
+<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=188">SWE-bench Multilingual (maker)</a>       87.3%  ▃··▃·▅▃●█··▃ beats 5/9      hard · avg 31%           11%  typical
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">SWE-bench Verified (maker)</a>           93.9%  ▁▁▁▁▁▁▂▄█▆▁● beats 136/138  hard · avg 28%          9.4%  sharp · maxed out
 </pre>
 
 </details>
@@ -58,8 +58,8 @@ test                                result  vs the others in its run    difficul
 Beats [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall.
 
 <pre>
-test              result  vs the others in its run  difficulty      counts  why
-<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=191">USAMO 2026 (lab)</a>   97.6%  █·██······█● beats 4/4    hard · avg 19%    2.2%  sharp · noisy
+test                result  vs the others in its run  difficulty      counts  why
+<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=191">USAMO 2026 (maker)</a>   97.6%  █·██······█● beats 4/4    hard · avg 19%    2.2%  sharp · noisy
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">CharXiv (reasoning questions) (la…</a>   86.2%  ███··█·██··● beats 6/6    hard · avg 28%    5.7%  typical
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">CharXiv (reasoning questions) (ma…</a>   86.2%  ███··█·██··● beats 6/6    hard · avg 28%    5.7%  typical
 </pre>
 
 </details>
@@ -90,10 +90,10 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                        result  vs the others in its run    difficulty            counts  why
-<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">Humanity's Last Exam (lab)</a>   56.8%  ▂·····▂·▄▂●▄ beats 6/10     very hard · avg 5.9%     14%  at its level
-<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=191">GPQA Diamond (lab)</a>           94.5%  ▁▁▁▁▂▄▅▅███● beats 316/322  hard · avg 39%          7.0%  sharp · maxed out · small run
-<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=191">MMMLU (lab)</a>                  92.7%  ▂▁▁▂▃▂▄▄▅██● beats 46/46    medium · avg 61%        3.0%  small run
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&amp;%20Claude%20Mythos%205%20System%20Card.pdf#page=251">Humanity's Last Exam (maker)</a>   56.8%  ▂·····▂·▄▂●▄ beats 6/10     very hard · avg 5.9%     14%  at its level
+<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=191">GPQA Diamond (maker)</a>           94.5%  ▁▁▁▁▂▄▅▅███● beats 316/322  hard · avg 39%          7.0%  sharp · maxed out · small run
+<a href="https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf#page=191">MMMLU (maker)</a>                  92.7%  ▂▁▁▂▃▂▄▄▅██● beats 46/46    medium · avg 61%        3.0%  small run
 </pre>
 
 </details>

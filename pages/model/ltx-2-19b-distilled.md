@@ -59,6 +59,6 @@ api (Replicate) · $0.020/sec · [replicate.com](https://replicate.com/lightrick
 
 Other versions: BF16 MLX (MLX-VIDEO) (~110.4 GB, Mac only) `pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768 --model-repo prince-canuma/LTX-2-distilled`
 
-Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2)
+Model repository and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2)
 
 [interactive version](https://whatmodel.sh/model/ltx-2-19b-distilled) · [JSON](https://whatmodel.sh/api?format=json&all=1)

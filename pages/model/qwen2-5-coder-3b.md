@@ -26,13 +26,13 @@ Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [Qwen3-VL 30B-A3B Instr
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   39.1%  ▁·▁▂●▁▆▄█▆▂▂ beats 11/62  medium · avg 51%     27%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      84.1%  ▄·▄···●··█·▄ beats 3/6    easy · avg 84%       20%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     80.5%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 80%       17%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           73.6%  █···█●█·██·█ beats 2/6    easy · avg 77%       10%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      72.1%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 70%      8.2%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          62.4%  ▄····▄●·▄·█▄ beats 2/6    easy · avg 66%      7.3%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     53.2%  █·██·●··█·██ beats 3/6    medium · avg 56%    3.5%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     56.0%  ▄·█··●·▄··▄▄ beats 3/6    medium · avg 54%    1.3%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval (maker)</a>                    84.1%  ▄·▄···●··█·▄ beats 3/6    easy · avg 84%       20%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   80.5%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 80%       17%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (maker)</a>                         73.6%  █···█●█·██·█ beats 2/6    easy · avg 77%       10%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (maker)</a>                    72.1%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 70%      8.2%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (maker)</a>                        62.4%  ▄····▄●·▄·█▄ beats 2/6    easy · avg 66%      7.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (maker)</a>                   53.2%  █·██·●··█·██ beats 3/6    medium · avg 56%    3.5%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (maker)</a>                   56.0%  ▄·█··●·▄··▄▄ beats 3/6    medium · avg 54%    1.3%  blunt · at its level
 </pre>
 
 </details>
@@ -40,8 +40,8 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   35.8%  ▄······▄●█·█ beats 2/6    medium · avg 37%    4.5%  at its level
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (maker)</a>   35.8%  ▄······▄●█·█ beats 2/6    medium · avg 37%    4.5%  at its level
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                               8   72% ▇▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (submitted / maker-reported)</a>        8   72% ▇▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   27% ▇▇▇
 prior: pull toward the middle                 1% ▇
 weighted average                            = 48.6
@@ -139,7 +139,7 @@ Other versions: 4bit (~1.7 GB, Mac only) `lms get https://huggingface.co/lmstudi
 
 Other versions: 8bit (~3.3 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen2.5-Coder-3B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)
 
 ## Published speed measurements
 

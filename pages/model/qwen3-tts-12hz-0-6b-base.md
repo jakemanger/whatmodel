@@ -84,6 +84,6 @@ Qwen/Qwen3-TTS-12Hz-1…  <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.
 
 Other versions: BF16 (MLX-AUDIO) (~2.52 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16 --text 'Hello from Sesame.' --ref_audio sample_audio.wav --ref_text 'This is what my voice sounds like.'` · BF16 (QWEN-TTS) (~2.52 GB, NVIDIA only) `pip install -U qwen-tts && pip install -U flash-attn --no-build-isolation && python -c "import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cuda:0', dtype=torch.bfloat16, attn_implementation='flash_attention_2'); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)"`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)
 
 [interactive version](https://whatmodel.sh/model/qwen3-tts-12hz-0-6b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

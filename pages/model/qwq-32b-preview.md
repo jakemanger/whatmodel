@@ -170,6 +170,6 @@ Other versions: Q8_0 (~39.86 GB) `ollama run qwq:32b-preview-q8_0`
 
 Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/QwQ-32B-Preview-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-Preview)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-Preview)
 
 [interactive version](https://whatmodel.sh/model/qwq-32b-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

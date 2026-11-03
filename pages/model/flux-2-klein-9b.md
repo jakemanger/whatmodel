@@ -91,6 +91,6 @@ api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://develope
 
 Other versions: BF16 (CPU OFFLOAD) (~22.1 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"` · qint8 (Flux2CLI, Swift) (~11.3 GB, Mac only) `./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8`
 
-Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B)
+Model repository and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B)
 
 [interactive version](https://whatmodel.sh/model/flux-2-klein-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

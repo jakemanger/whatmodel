@@ -44,7 +44,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 19/62  medium · avg 51%     25%  sharp · at its level
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>                   22.3%  ▅····●·█▃▅█▃ beats 2/12   hard · avg 26%      2.8%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (maker)</a>                 22.3%  ▅····●·█▃▅█▃ beats 2/12   hard · avg 26%      2.8%  at its level · small run
 </pre>
 
 </details>
@@ -63,9 +63,9 @@ test            result  vs the others in its run    difficulty  counts  why
 <details><summary>math · #2 of 2 · 12% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>    5.3%  ▁·▁●▁▂▅▆█▇▅▁ beats 4/133  very hard · avg 12%    7.1%  sharp · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>    76.6%  ▁▃▂▃●▇▅▇█▄▂▁ beats 20/85  easy · avg 79%         4.5%  small run
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (maker)</a>    5.3%  ▁·▁●▁▂▅▆█▇▅▁ beats 4/133  very hard · avg 12%    7.1%  sharp · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (maker)</a>    76.6%  ▁▃▂▃●▇▅▇█▄▂▁ beats 20/85  easy · avg 79%         4.5%  small run
 </pre>
 
 </details>
@@ -77,8 +77,8 @@ Trails [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [Int
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1018.7  ▁▁▂●▂▂▃▄▅▅█▇ beats 14/152  avg 1061            8.5%  blunt
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions) (la…</a>   40.6%  ▂▅▃●▅▆▆▅▆█▆▂ beats 19/101  medium · avg 38%    4.2%  at its level · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv descriptive questions (la…</a>   70.5%  ▂▄▄●▇▄██▇▂▁▂ beats 13/59   easy · avg 72%      4.1%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions) (ma…</a>   40.6%  ▂▅▃●▅▆▆▅▆█▆▂ beats 19/101  medium · avg 38%    4.2%  at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv descriptive questions (ma…</a>   70.5%  ▂▄▄●▇▄██▇▂▁▂ beats 13/59   easy · avg 72%      4.1%  at its level · small run
 </pre>
 
 </details>
@@ -87,8 +87,8 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>                   50.0%  ▁▁▁▁▂▄●▅███▄ beats 87/322   hard · avg 46%          10%  sharp · at its level · small run
-<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>                           85.9%  ▁▁▁▁▁▂▂▅██●▄ beats 192/214  easy · avg 81%         5.9%  small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (maker)</a>                 50.0%  ▁▁▁▁▂▄●▅███▄ beats 87/322   hard · avg 46%          10%  sharp · at its level · small run
+<a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (maker)</a>                         85.9%  ▁▁▁▁▁▂▂▅██●▄ beats 192/214  easy · avg 81%         5.9%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   98.2%  ▁▁▂▃▄▄█▆▃●▂▁ beats 124/140  very easy · avg 94%    0.8%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.9%  ▁▂▁▂▅█▂▃▄●▁▁ beats 91/98    very easy · avg 90%    0.0%  blunt
 </pre>

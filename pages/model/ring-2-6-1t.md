@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2026-05 · 1025B params (63B active) · mit
 
-**score 68.2** ±1.5 · comparison only: no current run option verified · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.2** ±1.5 · comparison only: no current run option verified · from 13 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,7 +26,7 @@ math         ●··········█   #2 of 2     32%      3
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Pro (split unspecified)…</a>   53.9%  ▂·▁▁▁▁▂▃●▇▂▁ beats 31/58   very hard · avg 9.1%     15%  sharp · at its level · small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Multilingual (lab)</a>         56.7%  ▁··▁▃▁●██▂▂▁ beats 18/65   hard · avg 24%          7.5%  at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Multilingual (maker)</a>       56.7%  ▁··▁▃▁●██▂▂▁ beats 18/65   hard · avg 24%          7.5%  at its level · small run
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">BFCL V4 (December 2025 archive) (…</a>   64.8%  ▁▁▁▂▆▆▅▆█▂●▃ beats 97/114  medium · avg 38%        4.7%  at its level · small run
 </pre>
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Pro (split unspecified)…</a>   53.9%  ▂·▁▁▁▁▂▃●▇▂▁ beats 31/58  very hard · avg 9.1%     15%  sharp · at its level · small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Multilingual (lab)</a>         56.7%  ▁··▁▃▁●██▂▂▁ beats 18/65  hard · avg 24%          7.5%  at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Multilingual (maker)</a>       56.7%  ▁··▁▃▁●██▂▂▁ beats 18/65  hard · avg 24%          7.5%  at its level · small run
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   87.0%  ▃···█··▅··▃● beats 7/7    medium · avg 51%        5.4%  small run
 </pre>
 
@@ -46,10 +46,10 @@ test                                result  vs the others in its run  difficulty
 <details><summary>math · #2 of 2 · 32% of its score</summary>
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">AIME 2026 (lab)</a>            95.8%  ▁▁▁▂▂▂▆█●▂·▁ beats 46/52  medium · avg 60%     12%  sharp · maxed out · small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">IMO-AnswerBench (lab)</a>      86.1%  ▁▁·▁▁▁▄▆█●▂▃ beats 36/44  medium · avg 40%     11%  small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">HMMT February 2026 (lab)</a>   93.5%  ▃▃▂▅·████▅▃● beats 33/35  medium · avg 42%     10%  sharp · small run
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">AIME 2026 (maker)</a>            95.8%  ▁▁▁▂▂▂▆█●▂·▁ beats 46/52  medium · avg 60%     12%  sharp · maxed out · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">IMO-AnswerBench (maker)</a>      86.1%  ▁▁·▁▁▁▄▆█●▂▃ beats 36/44  medium · avg 40%     11%  small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">HMMT February 2026 (maker)</a>   93.5%  ▃▃▂▅·████▅▃● beats 33/35  medium · avg 42%     10%  sharp · small run
 </pre>
 
 </details>
@@ -58,13 +58,13 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Humanity's Last Exam (lab)</a>           18.3%  ▁▁▁▄▆▆●██▆▁▃ beats 50/111  very hard · avg 4.0%    9.2%  small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset (lab)</a>     11.9%  ●··▄▄▄···█·█ beats 0/7     very hard · avg 9.1%    6.9%  at its level
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset (lab)</a>   62.2%  ▃······▃●▃█▃ beats 2/7     hard · avg 22%          6.8%  at its level · noisy
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Humanity's Last Exam (maker)</a>         18.3%  ▁▁▁▄▆▆●██▆▁▃ beats 50/111  very hard · avg 4.0%    9.2%  small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset (maker)</a>   11.9%  ●··▄▄▄···█·█ beats 0/7     very hard · avg 9.1%    6.9%  at its level
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset (mak…</a>   62.2%  ▃······▃●▃█▃ beats 2/7     hard · avg 22%          6.8%  at its level · noisy
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SysBench (aggregation unspecified…</a>   86.5%  █··█····●··█ beats 2/3     medium · avg 64%        4.3%  small run
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Multi-IF (aggregation unspecified…</a>   89.3%  ▁▁▁▁▁▁▃▄█▄▁● beats 41/41   easy · avg 66%          4.0%  small run
 <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">IFBench (aggregation unspecified)…</a>   44.6%  ▂▆▂▄▄●▂▄▄▆█▇ beats 31/86   hard · avg 33%          3.3%  at its level · noisy · small run
-<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">MCP-Atlas v1 public500 (lab)</a>         61.2%  ●··········█ beats 0/1                                —  not counted yet: no other model in the …
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">MCP-Atlas v1 public500 (maker)</a>       61.2%  ●··········█ beats 0/1                                —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -95,6 +95,6 @@ inclusionAI/Ling-3.0-…  <a href="https://huggingface.co/inclusionAI/Ling-3.0-f
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ring-2.6-1T)
+Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ring-2.6-1T)
 
 [interactive version](https://whatmodel.sh/model/ring-2-6-1t) · [JSON](https://whatmodel.sh/api?format=json&all=1)

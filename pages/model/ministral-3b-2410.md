@@ -24,9 +24,9 @@ math            ▁▁▃●██▅█▃▁▁▁    #440 of 530     36%     
 <details><summary>coding · #2 of 3 · 4.4% of its score</summary>
 
 <pre>
-test             result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   77.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 168/205  easy · avg 80%    2.4%  sharp · at its level · noisy · small run
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>        67.7%  ▁▁▁▄▅█▆●▄▁▂▁ beats 65/86    easy · avg 74%    2.1%  at its level · small run
+test               result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (maker)</a>   77.4%  ▁▁▁▁▂▂▆▆█●▂▁ beats 168/205  easy · avg 80%    2.4%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (maker)</a>        67.7%  ▁▁▁▄▅█▆●▄▁▂▁ beats 65/86    easy · avg 74%    2.1%  at its level · small run
 </pre>
 
 </details>
@@ -47,12 +47,12 @@ test                                result  vs the others in its run  difficulty
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                              44.6%  ●▃▃█·▅···▃·▃ beats 0/10   easy · avg 72%          13%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                             80.1%  █·●▄▄█···█·▄ beats 2/10   very easy · avg 90%     13%  sharp
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                              41.8%  ●▄██···▄▄▄·▄ beats 1/10   medium · avg 61%       4.3%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      14.4%  ▂▂●▆▄█▆▃▅▂▃▄ beats 11/92  hard · avg 28%         4.1%  sharp
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (lab)</a>   51.7%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 28/80  medium · avg 63%       1.6%  at its level · noisy
+test                               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                                44.6%  ●▃▃█·▅···▃·▃ beats 0/10   easy · avg 72%          13%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                               80.1%  █·●▄▄█···█·▄ beats 2/10   very easy · avg 90%     13%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                41.8%  ●▄██···▄▄▄·▄ beats 1/10   medium · avg 61%       4.3%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                        14.4%  ▂▂●▆▄█▆▃▅▂▃▄ beats 11/92  hard · avg 28%         4.1%  sharp
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (maker)</a>   51.7%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 28/80  medium · avg 63%       1.6%  at its level · noisy
 </pre>
 
 </details>

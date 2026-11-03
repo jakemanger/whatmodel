@@ -46,6 +46,6 @@ weighted average                                   = 48.3
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/sand-ai](https://huggingface.co/sand-ai/MAGI-1)
+Model repository and documentation: [huggingface.co/sand-ai](https://huggingface.co/sand-ai/MAGI-1)
 
 [interactive version](https://whatmodel.sh/model/magi-1-24b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

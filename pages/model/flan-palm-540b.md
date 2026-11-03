@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 540B params · proprietary
 
-**score 50.9** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 50.9** ±1.2 · comparison only: no current run option verified · from 7 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,8 +24,8 @@ math  ▁▁▃▆██●█▃▁▁▁   #201 of 530*     23%      1
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>   57.0%  ▆·▂·▄▂▂▂▂█▄● beats 17/18  medium · avg 48%     23%  sharp · at its level
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>   57.0%  ▆·▂·▄▂▂▂▂█▄● beats 17/18  medium · avg 48%     23%  sharp · at its level
 </pre>
 
 </details>
@@ -34,12 +34,12 @@ test        result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 57.9%  ▂▂▂▂·▅·▃▂█▃● beats 17/18  medium · avg 60%     22%  sharp · at its level
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           73.5%  ▁···▁··▃▁▅▅● beats 17/18  easy · avg 74%       21%  at its level
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               57.9%  ▂▂▂▂·▅·▃▂█▃● beats 17/18  medium · avg 60%     22%  sharp · at its level
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         73.5%  ▁···▁··▃▁▅▅● beats 17/18  easy · avg 74%       21%  at its level
 <a href="https://arxiv.org/html/2212.13138v1">MedQA USMLE 4-option (few-shot pr…</a>   60.3%  ▄······▄▄▄·● beats 5/5    medium · avg 58%     12%  at its level
-<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (lab)</a>    56.5%  ▄·····▄··█·● beats 5/5    medium · avg 56%     10%  at its level
+<a href="https://arxiv.org/html/2212.13138v1">MedMCQA (few-shot prompted) (make…</a>   56.5%  ▄·····▄··█·● beats 5/5    medium · avg 56%     10%  at its level
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   67.8%  ▂··▂·▂▄▄·██● beats 17/18  medium · avg 61%    7.7%  at its level
-<a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (lab)</a>   79.0%  ▄·······▄▄▄● beats 5/5    medium · avg 75%    2.8%  at its level · noisy
+<a href="https://arxiv.org/html/2212.13138v1">PubMedQA (few-shot prompted) (mak…</a>   79.0%  ▄·······▄▄▄● beats 5/5    medium · avg 75%    2.8%  at its level · noisy
 </pre>
 
 </details>

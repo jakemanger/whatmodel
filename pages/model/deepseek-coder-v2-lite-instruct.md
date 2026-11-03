@@ -160,6 +160,6 @@ Other versions: Q8_0 (~19.35 GB) `ollama run deepseek-coder-v2:16b-lite-instruct
 
 Other versions: 8bit (~16.7 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-Coder-V2-Lite-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-v2-lite-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

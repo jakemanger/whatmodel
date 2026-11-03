@@ -34,12 +34,12 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   64% ▇▇▇▇▇▇▇▇
-<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation">Meta (lab)</a>                           1   20% ▇▇
-<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                  2    8% ▇
-prior: pull toward the middle             7% ▇
-weighted average                        = 15.0
+source                             results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                     1   64% ▇▇▇▇▇▇▇▇
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation">Meta (submitted / maker-reported)</a>        1   20% ▇▇
+<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                      2    8% ▇
+prior: pull toward the middle                 7% ▇
+weighted average                            = 15.0
 </pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
@@ -54,6 +54,6 @@ weighted average                        = 15.0
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/hubert-large-ls960-ft', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/hubert-large-ls960-ft)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/hubert-large-ls960-ft)
 
 [interactive version](https://whatmodel.sh/model/hubert-large-ls960-ft) · [JSON](https://whatmodel.sh/api?format=json&all=1)

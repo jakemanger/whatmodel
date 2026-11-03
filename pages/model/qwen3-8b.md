@@ -67,7 +67,7 @@ Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.1](minimax-m2-1.md), [M
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>                   67.3%  ▃·▃▃█··▃●▃·█ beats 7/12    medium · avg 52%        7.1%  sharp · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (maker)</a>                 67.3%  ▃·▃▃█··▃●▃·█ beats 7/12    medium · avg 52%        7.1%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                         77.9%  ●▄···█·····▄ beats 1/5     medium · avg 62%        4.4%  sharp
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   41.0%  ●··▄▄·▄····█ beats 0/5     hard · avg 29%          3.8%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>       43.4%  ▄······█▄▄·● beats 6/6     hard · avg 31%          3.3%  at its level · several runs
@@ -84,11 +84,11 @@ test                             result  vs the others in its run   difficulty  
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.8%  ▁▁▁▁▂▄▆●▅▇█▅ beats 84/211   hard · avg 39%           10%  sharp · at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                       74.6%  ▄·▄·▄▄▄▄●▄██ beats 7/12     medium · avg 63%        6.9%  at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (lab)</a>      62.0%  ▂····▂·▂▂●▆█ beats 5/14     hard · avg 49%          5.5%  sharp · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                     87.5%  ▃··▃·▃·█●▅▃▅ beats 6/11     easy · avg 79%          3.5%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (maker)</a>                     74.6%  ▄·▄·▄▄▄▄●▄██ beats 7/12     medium · avg 63%        6.9%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (maker)</a>    62.0%  ▂····▂·▂▂●▆█ beats 5/14     hard · avg 49%          5.5%  sharp · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (maker)</a>                   87.5%  ▃··▃·▃·█●▅▃▅ beats 6/11     easy · avg 79%          3.5%  typical
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   50.2%  ▂▃▅▂▆▃●▅█▅▃▆ beats 17/34    medium · avg 41%        2.8%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      47.6%  ▄··▄·▄▄▄●▄██ beats 6/11     medium · avg 37%        2.6%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (maker)</a>                    47.6%  ▄··▄·▄▄▄●▄██ beats 6/11     medium · avg 37%        2.6%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   61.2%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 35/95    medium · avg 65%        2.2%  at its level
 <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1083.3  ▁·▂▁●▅▅▃█▄▁▁ beats 11/62    avg 1034                2.1%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   40.0%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 75/97    hard · avg 31%          2.0%  blunt · at its level
@@ -115,7 +115,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       12   31% ▇▇▇▇
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=24">Qwen (lab)</a>                                      8   25% ▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=24">Qwen (submitted / maker-reported)</a>               8   25% ▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3    7% ▇
 <a name="paper-2508.18669v1-mua-rl"></a><a href="https://arxiv.org/html/2508.18669v1">MUA-RL: Multi-turn User-interacting Age…</a>        1    6% ▇
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>              2    5% ▇
@@ -230,7 +230,7 @@ Other versions: Q8_0 (~10.33 GB) `ollama run qwen3:8b-q8_0`
 
 Other versions: 8bit (~8.4 GB, Mac only) `mlx_lm.chat --model Qwen/Qwen3-8B-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-8B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-8B)
 
 ## Published speed measurements
 

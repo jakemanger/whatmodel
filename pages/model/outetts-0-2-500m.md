@@ -52,6 +52,6 @@ weighted average                                   = 31.0
 
 Other versions: Q8_0 (OUTETTS 0.3.3 + LLAMA-CPP-PYTHON) (~0.88 GB) `pip install outetts==0.3.3 llama-cpp-python && huggingface-cli download OuteAI/OuteTTS-0.2-500M-GGUF OuteTTS-0.2-500M-Q8_0.gguf --local-dir . && python -c "import outetts; model_config = outetts.GGUFModelConfig_v1(model_path='OuteTTS-0.2-500M-Q8_0.gguf', language='en', n_gpu_layers=0); interface = outetts.InterfaceGGUF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')"`
 
-Official weights and documentation: [huggingface.co/OuteAI](https://huggingface.co/OuteAI/OuteTTS-0.2-500M)
+Model repository and documentation: [huggingface.co/OuteAI](https://huggingface.co/OuteAI/OuteTTS-0.2-500M)
 
 [interactive version](https://whatmodel.sh/model/outetts-0-2-500m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

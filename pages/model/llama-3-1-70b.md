@@ -109,14 +109,14 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   50.0%  ▁▁·▁▂▂▄█▄●▄▄ beats 42/66    hard · avg 29%         1.2%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   70.5%  ▁▁▁▁·▂·█▆●▇▁ beats 19/31    medium · avg 46%       1.1%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      72.5%  ▁··▁▁▂▂▆▅▆█● beats 61/70    medium · avg 62%       1.1%  at its level
-<a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>                  70.4%  ▄▁▁▂▁▄█▇●▂▃▂ beats 118/140  medium · avg 66%       1.1%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (maker)</a>                70.4%  ▄▁▁▂▁▄█▇●▂▃▂ beats 118/140  medium · avg 66%       1.1%  sharp · at its level · small run
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Llama-3.1-70B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   77.3%  ▂·▂▂▂▆▅●▆▆▃█ beats 12/29    easy · avg 74%         1.0%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   68.0%  ▂▄▂▃█▄▃▆▃●▂▂ beats 67/81    medium · avg 57%       0.9%  blunt · at its level
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                46.5%  ▁▁▁▃▃▃▁█▁▃·● beats 20/21    hard · avg 31%         0.7%  at its level
-<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>                     85.1%  ▁▁▁▁▂▁▁▅▇█▃● beats 130/131  easy · avg 83%         0.6%  at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (maker)</a>                   85.1%  ▁▁▁▁▂▁▁▅▇█▃● beats 130/131  easy · avg 83%         0.6%  at its level · small run
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   38.0%  ▆●·▄█·▂▂·▄▄▂ beats 3/16     very hard · avg 36%    0.5%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 255/276  medium · avg 72%       0.4%  at its level · noisy
-<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>                      86.4%  ▁▁▁▂▂▂▄▆█▇▄● beats 130/135  easy · avg 85%         0.4%  small run
+<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (maker)</a>                    86.4%  ▁▁▁▂▂▂▄▆█▇▄● beats 130/135  easy · avg 85%         0.4%  small run
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            88.4%  ▁▁·▁·▂▃▄█●·▁ beats 21/22    easy · avg 82%         0.4%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.9%  ▁▁▁▁▁▁▁▂▄█▄● beats 133/146  easy · avg 82%         0.2%  noisy
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           66.6%  ▄··▂▄▂▆●█▄▄▂ beats 9/21     easy · avg 67%         0.1%  at its level · noisy
@@ -253,6 +253,6 @@ Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community
 
 Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Meta-Llama-3.1-70B-Instruct-8bit`
 
-Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct)
+Model repository and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

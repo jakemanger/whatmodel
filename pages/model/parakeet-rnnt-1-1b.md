@@ -37,15 +37,15 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   25.6%  ▂····▂···▂●█ beats 3/11   avg 46%        16%  typical
 <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   26.8%  ▂▂····▂·●·▃█ beats 5/12   avg 52%        13%  sharp
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>            1.5%  ▁···▁▁▂·▄▄█● beats 48/56  avg 2.3%       12%  blunt · several runs
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER (lab)</a>             3.1%  ▄▄··▄●█··▄██ beats 3/11   avg 5.4%      8.5%  sharp
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER (maker)</a>           3.1%  ▄▄··▄●█··▄██ beats 3/11   avg 5.4%      8.5%  sharp
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.1%  ▁▁▁▃··▁▁▂█●▆ beats 56/86  avg 8.2%      8.3%  blunt
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, Open…</a>   14.1%  ●······███·█ beats 0/4    avg 21%       7.0%  typical
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">AMI WER (Open ASR / ESB test spli…</a>   17.1%  ●▄·······█·▄ beats 0/4    avg 24%       6.7%  typical
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER (lab)</a>            10.0%  ▁····▁··▁▄●▂ beats 10/17  avg 17%       6.2%  typical
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER (lab)</a>      2.5%  ▁···▁▁▁▆▆█▆● beats 56/56  avg 5.4%      5.0%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER (maker)</a>          10.0%  ▁····▁··▁▄●▂ beats 10/17  avg 17%       6.2%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER (maker)</a>    2.5%  ▁···▁▁▁▆▆█▆● beats 56/56  avg 5.4%      5.0%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">FLEURS English test WER</a>               4.5%  ▁··▁▁▁▁▁▁▃●▁ beats 39/56  avg 5.8%      4.2%  blunt
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER (lab)</a>      5.4%  █▄▄··████▄●█ beats 13/16  avg 9.0%      3.3%  typical
-<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form) (l…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 19/27  avg 5.0%      0.3%  blunt
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER (maker)</a>    5.4%  █▄▄··████▄●█ beats 13/16  avg 9.0%      3.3%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form) (m…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 19/27  avg 5.0%      0.3%  blunt
 <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test WER…</a>    5.8%  no other model yet                         —  not counted yet: no other model in the …
 </pre>
 
@@ -57,7 +57,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">NVIDIA ASR model cards (lab)</a>                    8   39% ▇▇▇▇▇
+<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">NVIDIA ASR model cards (submitted / mak…</a>        8   39% ▇▇▇▇▇
 <a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   29% ▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   17% ▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   15% ▇▇
@@ -86,6 +86,6 @@ NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1
    uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-1.1b').transcribe(['audio.wav']))"
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-rnnt-1.1b)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-rnnt-1.1b)
 
 [interactive version](https://whatmodel.sh/model/parakeet-rnnt-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

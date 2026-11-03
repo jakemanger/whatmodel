@@ -26,8 +26,8 @@ math            ▁▁▃▅█●▄█▄▂▁▁   #217 of 431*    6.4%     
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
 <pre>
-test                             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   68.9%  ▃▃▃·▆▃▃●▃▂▂▅ beats 16/25  easy · avg 83%    4.8%  sharp · at its level
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (maker)</a>   68.9%  ▃▃▃·▆▃▃●▃▂▂▅ beats 16/25  easy · avg 83%    4.8%  sharp · at its level
 </pre>
 
 </details>
@@ -52,8 +52,8 @@ test                                result  vs the others in its run   difficult
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   71.5%  ▆▂▅█▅▅▃●···▂ beats 21/25  easy · avg 72%    6.4%  sharp · at its level
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (maker)</a>   71.5%  ▆▂▅█▅▅▃●···▂ beats 21/25  easy · avg 72%    6.4%  sharp · at its level
 </pre>
 
 </details>
@@ -62,9 +62,9 @@ test         result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                           66.0%  ▁·····▂█▂●·▁ beats 21/25    easy · avg 74%          12%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (maker)</a>                         66.0%  ▁·····▂█▂●·▁ beats 21/25    easy · avg 74%          12%  sharp · at its level
 <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro…</a>  27.9838 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 10/52    avg 43.019 WB-Score    9.1%  sharp
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                                     67.8%  ▁▁▃▃▄█▄▁●··▁ beats 23/25    medium · avg 73%       5.5%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (maker)</a>                                   67.8%  ▁▁▃▃▄█▄▁●··▁ beats 23/25    medium · avg 73%       5.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             74.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 213/276  medium · avg 72%       2.0%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>             35.8%  ▂··▁●▂▂▂█▅▁▂ beats 3/25     medium · avg 59%       1.3%  blunt · at its level
 </pre>
@@ -77,10 +77,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                                    5   30% ▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (submitted / maker-reported)</a>             5   30% ▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   27% ▇▇▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   15% ▇▇
-<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data (lab)</a>             1    9% ▇
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data (submitte…</a>        1    9% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    8% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
@@ -156,6 +156,6 @@ Other versions: Q2_K (~29.3 GB) `ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-70b)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-70b)
 
 [interactive version](https://whatmodel.sh/model/tulu-2-dpo-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

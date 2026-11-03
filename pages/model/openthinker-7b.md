@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-01 · 7.62B params · apache-2.0
 
-**score 45.1** ±1.6 · #477 of 732 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 45.1** ±1.6 · #477 of 732 · from 9 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -25,8 +25,8 @@ math    ▁▁▃▅█●▄█▄▂▁▁    #241 of 431     55%      3
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test                    result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">LiveCodeBench v2 (lab)</a>   39.9%  ●··█·▄···▄▄█ beats 0/7    medium · avg 50%     11%  at its level · several runs
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">LiveCodeBench v2 (maker)</a>   39.9%  ●··█·▄···▄▄█ beats 0/7    medium · avg 50%     11%  at its level · several runs
 </pre>
 
 </details>
@@ -36,10 +36,10 @@ test                    result  vs the others in its run  difficulty        coun
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025 (lab)</a>   23.3%  ▁·▁▁▁●▅▆█▇▅▁ beats 13/133  medium · avg 38%        22%  sharp · small run
-<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">AIME 2024 (lab)</a>   31.3%  ▁▁▁▂▁▃●▅███▃ beats 17/85   medium · avg 54%        18%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">MATH-500 (lab)</a>    83.0%  ▁▃▂▃▄●▅▇█▄▂▁ beats 25/85   very easy · avg 89%     15%  small run · several runs
+test               result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025 (maker)</a>   23.3%  ▁·▁▁▁●▅▆█▇▅▁ beats 13/133  medium · avg 38%        22%  sharp · small run
+<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">AIME 2024 (maker)</a>   31.3%  ▁▁▁▂▁▃●▅███▃ beats 17/85   medium · avg 54%        18%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">MATH-500 (maker)</a>    83.0%  ▁▃▂▃▄●▅▇█▄▂▁ beats 25/85   very easy · avg 89%     15%  small run · several runs
 </pre>
 
 </details>
@@ -47,8 +47,8 @@ test             result  vs the others in its run   difficulty           counts 
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">GPQA Diamond (lab)</a>   42.4%  ▁▁▁▁▂▄●▅███▄ beats 60/322  medium · avg 52%     32%  sharp · small run · several runs
+test                  result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">GPQA Diamond (maker)</a>   42.4%  ▁▁▁▁▂▄●▅███▄ beats 60/322  medium · avg 52%     32%  sharp · small run · several runs
 </pre>
 
 </details>
@@ -148,6 +148,6 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/OpenThi
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model AlejandroOlmedo/OpenThinker-7B-8bit-mlx`
 
-Official weights and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker-7B)
+Model repository and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker-7B)
 
 [interactive version](https://whatmodel.sh/model/openthinker-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

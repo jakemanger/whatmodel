@@ -23,7 +23,7 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   26.8%  ▁▁●▃··▁▁▂██▆ beats 3/86   avg 8.2%       37%  blunt
-<a href="https://huggingface.co/facebook/wav2vec2-large-960h/blob/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      6.3%  ▂·▂·●······█ beats 2/6    avg 0.2%       33%  typical
+<a href="https://huggingface.co/facebook/wav2vec2-large-960h/blob/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab/README.md#evaluation">LibriSpeech test-other WER (maker)</a>    6.3%  ▂·▂·●······█ beats 2/6    avg 0.2%       33%  typical
 <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>            3.0%  ▂··▂·▃▂█▂●▃▃ beats 11/16  avg 0.4%       14%  blunt · several runs
 <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 African …</a>   71.7%  ●██····█████ beats 0/7    avg 30%       5.9%  blunt
 <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   39.3%  ●·▂··▂····▆█ beats 0/9    avg 18%       4.2%  blunt
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/wav2vec2-large-960h/blob/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab/README.md#evaluation">Meta (lab)</a>                                      2   44% ▇▇▇▇▇
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/wav2vec2-large-960h/blob/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab/README.md#evaluation">Meta (submitted / maker-reported)</a>               2   44% ▇▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   37% ▇▇▇▇
 <a name="speech-stt-afrispeech200-report-ccby"></a><a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200</a>                                  1    6% ▇
 <a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                             2    5% ▇
@@ -59,6 +59,6 @@ weighted average                                   = 6.7
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-960h', chunk_length_s=30)('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-960h)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-960h)
 
 [interactive version](https://whatmodel.sh/model/wav2vec2-large-960h) · [JSON](https://whatmodel.sh/api?format=json&all=1)

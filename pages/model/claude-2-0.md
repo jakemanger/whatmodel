@@ -55,7 +55,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank highe
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 10/92    hard · avg 28%          5.1%  sharp
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">GSM8K (lab)</a>                88.0%  ▂▂▂▂▃▄▅▇██●▄ beats 171/206  very easy · avg 90%     3.4%  sharp
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">GSM8K (maker)</a>              88.0%  ▂▂▂▂▃▄▅▇██●▄ beats 171/206  very easy · avg 90%     3.4%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 20/197   very hard · avg 7.2%    0.5%  sharp · too hard for it · noisy
 </pre>
 
@@ -66,9 +66,9 @@ test                      result  vs the others in its run    difficulty        
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         34.7%  ▁▁▁▁▂●▆▄▅▇█▅ beats 27/211   hard · avg 39%         3.0%  sharp
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (lab)</a>                  91.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 138/140  very easy · avg 90%    2.7%  sharp · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (lab)</a>                           78.5%  ▁▁▁▁▁▂▂▅██●▄ beats 163/214  easy · avg 81%         2.5%  at its level · small run
-<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (lab)</a>                       87.5%  ▁▁▂▂▄▄▃▆▅█▅● beats 80/80    easy · avg 85%         1.2%  small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">ARC Challenge (maker)</a>                91.0%  ▄▁▁▂▁▄█▇▃▂▃● beats 138/140  very easy · avg 90%    2.7%  sharp · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">MMLU (maker)</a>                         78.5%  ▁▁▁▁▁▂▂▅██●▄ beats 163/214  easy · avg 81%         2.5%  at its level · small run
+<a href="https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf">TriviaQA (maker)</a>                     87.5%  ▁▁▂▂▄▄▃▆▅█▅● beats 80/80    easy · avg 85%         1.2%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   82.6%  ▁▁●▃▄▄█▆▃▂▂▁ beats 7/140    very easy · avg 94%    0.3%  blunt · maxed out · noisy
 </pre>
 

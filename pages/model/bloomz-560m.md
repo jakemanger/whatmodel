@@ -22,8 +22,8 @@ coding  ●···▄·▄·▄··▄   #6 of 6*     63%      1
 <details><summary>coding · #6 of 6 · 63% of its score</summary>
 
 <pre>
-test             result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (lab)</a>    2.2%  ●█··█··█·█·█ beats 0/5    medium · avg 59%     63%  sharp · too hard for it
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">HumanEval (maker)</a>    2.2%  ●█··█··█·█·█ beats 0/5    medium · avg 59%     63%  sharp · too hard for it
 </pre>
 
 </details>
@@ -32,10 +32,10 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (lab)</a>                     49.8%  ●··▁▃·▁··▁·▃ beats 0/12   medium · avg 68%     12%  too hard for it · noisy
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (lab)</a>                           51.0%  ●··█▅▃▃▅·▃▃▃ beats 0/12   easy · avg 91%       11%  at its level · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">WinoGrande (maker)</a>                   49.8%  ●··▁▃·▁··▁·▃ beats 0/12   medium · avg 68%     12%  too hard for it · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">COPA (maker)</a>                         51.0%  ●··█▅▃▃▅·▃▃▃ beats 0/12   easy · avg 91%       11%  at its level · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.418.pdf">MC-TACO as yes/no plausibility cl…</a>   59.0%  ●··········▅ beats 0/4    easy · avg 75%      3.4%  blunt · at its level
-<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (lab)</a>               58.5%  █·▂··●··▂▂▂▃ beats 6/12   easy · avg 88%      2.6%  blunt · at its level · noisy
+<a href="https://aclanthology.org/2023.acl-long.891.pdf">Story Cloze Test (maker)</a>             58.5%  █·▂··●··▂▂▂▃ beats 6/12   easy · avg 88%      2.6%  blunt · at its level · noisy
 <a href="https://aclanthology.org/2023.emnlp-main.760.pdf">IndoMMLU (zero-shot)</a>                 24.0%  ●▃▅··▃···▃▃█ beats 1/10   hard · avg 37%      1.7%  blunt · too hard for it · noisy
 </pre>
 
@@ -60,6 +60,6 @@ weighted average                                   = 14.4
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloomz-560m)
+Model repository and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloomz-560m)
 
 [interactive version](https://whatmodel.sh/model/bloomz-560m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

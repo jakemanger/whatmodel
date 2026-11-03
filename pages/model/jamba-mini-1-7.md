@@ -104,6 +104,6 @@ Other versions: Q8_0 (~54.8 GB) `lms get https://huggingface.co/bartowski/ai21la
    vllm serve ai21labs/AI21-Jamba-Mini-1.7
    ```
 
-Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.7)
+Model repository and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.7)
 
 [interactive version](https://whatmodel.sh/model/jamba-mini-1-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

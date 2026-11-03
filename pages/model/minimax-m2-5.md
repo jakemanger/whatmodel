@@ -165,6 +165,6 @@ Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/Mi
 
 Other versions: 8bit (~243 GB, Mac only) `mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2.5)
+Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2.5)
 
 [interactive version](https://whatmodel.sh/model/minimax-m2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

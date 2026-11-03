@@ -12,13 +12,13 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                                result  reported by  source
-HMMT February 2026                   73.3%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
-SWE-bench Verified                   70.6%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
-Humanity's Last Exam                 18.6%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
-SciCode (level unspecified)          31.6%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
-Terminal-Bench 2.1                   39.1%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
-BrowseComp with context management   59.0%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
-τ³-bench Banking                     25.8%  lab          <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+HMMT February 2026                   73.3%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+SWE-bench Verified                   70.6%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+Humanity's Last Exam                 18.6%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+SciCode (level unspecified)          31.6%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+Terminal-Bench 2.1                   39.1%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+BrowseComp with context management   59.0%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
+τ³-bench Banking                     25.8%  maker        <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">IFM/K2-Horizon-7B model card</a>
 </pre>
 
 <sub>Licences: IFM/K2-Horizon-7B model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
@@ -81,6 +81,6 @@ Other versions: gguf-q8_0 (~11.3 GB) `lms get https://huggingface.co/IFM/K2-Hori
 
 Other versions: gguf-q8_0 (~11.3 GB) `ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q8_0`
 
-Official weights and documentation: [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B)
+Model repository and documentation: [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/k2-horizon-7b)

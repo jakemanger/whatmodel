@@ -125,6 +125,6 @@ Other versions: Q8_0 (~4.1 GB) `lms get https://huggingface.co/lmstudio-communit
    mlx_lm.server --model lmstudio-community/medgemma-4b-it-MLX-4bit
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-4b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-4b-it)
 
 [interactive version](https://whatmodel.sh/model/medgemma-4b-it) · [JSON](https://whatmodel.sh/api?format=json&all=1)

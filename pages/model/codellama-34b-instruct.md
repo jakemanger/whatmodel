@@ -29,7 +29,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                            51.8%  ▁█▄▅▇●·▄▇▅▄▄ beats 23/42  easy · avg 75%       32%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 19/35  medium · avg 62%    7.6%  at its level
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           57.0%  ▃▃▃█··▃●··▅▃ beats 8/11   easy · avg 71%      5.4%  at its level
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (maker)</a>                         57.0%  ▃▃▃█··▃●··▅▃ beats 8/11   easy · avg 71%      5.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   30.3%  ▄▇█▃▄▇●▁▇▃·▁ beats 26/35  medium · avg 46%    4.7%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   28.2%  ▁·▁▁▄██▄●▁▅▅ beats 23/35  medium · avg 51%    4.4%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            76.5%  ▃▃▃·▆▃▃█●▂▂▅ beats 20/25  easy · avg 83%      2.9%  sharp · at its level
@@ -174,6 +174,6 @@ Other versions: Q8_0 (~40.94 GB) `ollama run codellama:34b-instruct-q8_0`
    mlx_lm.server --model mlx-community/CodeLlama-34b-Instruct-hf-4bit
    ```
 
-Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-34b-Instruct-hf)
+Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-34b-Instruct-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-34b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

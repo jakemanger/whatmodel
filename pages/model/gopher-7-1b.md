@@ -6,7 +6,7 @@
 
 Google DeepMind · released 2021-12 · 7.1B params · proprietary
 
-**score 50.8** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.8** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmodel.sh/?set=lambada-openai%40paper-2112.11446v2&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [LAMBADA (OpenAI version), last-word accuracy](https://whatmode
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2112.11446v2">MMLU (lab)</a>                           29.5%  ▁▁▁▁●▂▂▅██▆▄ beats 13/214  very hard · avg 30%     70%  sharp · too hard for it
+<a href="https://arxiv.org/html/2112.11446v2">MMLU (maker)</a>                         29.5%  ▁▁▁▁●▂▂▅██▆▄ beats 13/214  very hard · avg 30%     70%  sharp · too hard for it
 <a href="https://arxiv.org/html/2112.11446v2">LAMBADA (OpenAI version), last-wo…</a>   68.5%  █··█·█··█·●█ beats 4/5     medium · avg 58%        25%  at its level
 </pre>
 
@@ -33,10 +33,10 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                  results  share of the score
-<a name="paper-2112.11446v2"></a><a href="https://arxiv.org/html/2112.11446v2">Scaling Language Models: Methods (lab)</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                      5% ▇
-weighted average                                 = 50.8
+source                                    results  share of the score
+<a name="paper-2112.11446v2"></a><a href="https://arxiv.org/html/2112.11446v2">Scaling Language Models: Methods (submi…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 50.8
 </pre>
 
 ## How to run it

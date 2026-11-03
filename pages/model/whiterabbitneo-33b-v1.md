@@ -111,6 +111,6 @@ Other versions: Q8_0 (~35.4 GB) `ollama run hf.co/TheBloke/WhiteRabbitNeo-33B-v1
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WhiteRabbitNeo/WhiteRabbitNeo-33B-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/WhiteRabbitNeo](https://huggingface.co/WhiteRabbitNeo/WhiteRabbitNeo-33B-v1)
+Model repository and documentation: [huggingface.co/WhiteRabbitNeo](https://huggingface.co/WhiteRabbitNeo/WhiteRabbitNeo-33B-v1)
 
 [interactive version](https://whatmodel.sh/model/whiterabbitneo-33b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

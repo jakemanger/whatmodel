@@ -110,6 +110,6 @@ Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/CoALM-70B-GGUF:Q2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-70B)
+Model repository and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-70B)
 
 [interactive version](https://whatmodel.sh/model/coalm-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

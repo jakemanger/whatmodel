@@ -139,6 +139,6 @@ Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/second-state/Gemm
 
 Other versions: Q8_0 (~3.51 GB) `ollama run gemma:2b-instruct-q8_0`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-2b-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-2b-it)
 
 [interactive version](https://whatmodel.sh/model/gemma-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

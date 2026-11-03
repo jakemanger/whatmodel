@@ -71,6 +71,6 @@ weighted average                                   = 66.0
    git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text "Today is a sunny day, let's go for a walk in the park." --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-3.5B
    ```
 
-Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B)
+Model repository and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B)
 
 [interactive version](https://whatmodel.sh/model/longcat-audiodit-3-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

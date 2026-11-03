@@ -50,6 +50,6 @@ weighted average                                   = 44.7
    git clone https://github.com/nari-labs/dia2.git && cd dia2 && uv sync && uv run -m dia2.cli --hf nari-labs/Dia2-2B --input input.txt --cfg 6.0 --temperature 0.8 --cuda-graph --verbose output.wav
    ```
 
-Official weights and documentation: [huggingface.co/nari-labs](https://huggingface.co/nari-labs/Dia2-2B)
+Model repository and documentation: [huggingface.co/nari-labs](https://huggingface.co/nari-labs/Dia2-2B)
 
 [interactive version](https://whatmodel.sh/model/dia2-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

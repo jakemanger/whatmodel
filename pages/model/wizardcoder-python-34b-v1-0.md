@@ -117,6 +117,6 @@ Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/WizardC
 
 Other versions: Q8_0 (~36 GB) `ollama run wizardcoder:34b-python-q8_0`
 
-Official weights and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)
+Model repository and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-python-34b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

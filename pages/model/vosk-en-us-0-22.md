@@ -23,8 +23,8 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · English…</a>   11.5%  █·█···▄●▄··▄ beats 5/7    avg 8.3%       67%  typical
-<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (lab)</a>      5.7%  ▁·▁·▁●▁▁▃▇█▆ beats 6/102  avg 3.1%       14%  blunt · small run
-<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form) (l…</a>    6.0%  ▁·▁▇█▃·▁●▃█▄ beats 16/27  avg 6.3%      3.3%  blunt · small run
+<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (maker)</a>    5.7%  ▁·▁·▁●▁▁▃▇█▆ beats 6/102  avg 3.1%       14%  blunt · small run
+<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form) (m…</a>    6.0%  ▁·▁▇█▃·▁●▃█▄ beats 16/27  avg 6.3%      3.3%  blunt · small run
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="speech-stt-picovoice-apache"></a><a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice speech-to-text-benchmark · En…</a>        1   67% ▇▇▇▇▇▇▇▇
-<a name="first-party-alphacephei-vosk-models"></a><a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">Alpha Cephei Vosk models page (lab)</a>             2   18% ▇▇
+<a name="first-party-alphacephei-vosk-models"></a><a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">Alpha Cephei Vosk models page (submitte…</a>        2   18% ▇▇
 prior: pull toward the middle                       15% ▇▇
 weighted average                                   = 42.1
 </pre>
@@ -53,6 +53,6 @@ weighted average                                   = 42.1
    uvx --from vosk vosk-transcriber -n vosk-model-en-us-0.22 -i audio.wav -o out.txt
    ```
 
-Official weights and documentation: [alphacephei.com/vosk](https://alphacephei.com/vosk/models)
+Model repository and documentation: [alphacephei.com/vosk](https://alphacephei.com/vosk/models)
 
 [interactive version](https://whatmodel.sh/model/vosk-en-us-0-22) · [JSON](https://whatmodel.sh/api?format=json&all=1)

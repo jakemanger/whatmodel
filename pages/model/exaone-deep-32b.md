@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 32B params · exaone
 
-**score 55.4** ±1.5 · #271 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.4** ±1.5 · #271 of 732 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -34,10 +34,10 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 
 <pre>
-test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>   65.8%  █·▄●····▄··█ beats 3/6    medium · avg 54%        28%  sharp · at its level
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>   72.1%  ▁▁▁▂▁▃▁▅●██▃ beats 43/85  medium · avg 56%        18%  sharp · at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>    95.7%  ▁▃▂▃▄▇▅●█▄▂▁ beats 57/85  very easy · avg 92%    9.3%  maxed out · small run
+test               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (maker)</a>   65.8%  █·▄●····▄··█ beats 3/6    medium · avg 54%        28%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (maker)</a>   72.1%  ▁▁▁▂▁▃▁▅●██▃ beats 43/85  medium · avg 56%        18%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (maker)</a>    95.7%  ▁▃▂▃▄▇▅●█▄▂▁ beats 57/85  very easy · avg 92%    9.3%  maxed out · small run
 </pre>
 
 </details>
@@ -45,8 +45,8 @@ test             result  vs the others in its run  difficulty           counts  
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>   66.1%  █···▄●···▄·█ beats 3/6    hard · avg 51%     34%  sharp · at its level
+test                  result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (maker)</a>   66.1%  █···▄●···▄·█ beats 3/6    hard · avg 51%     34%  sharp · at its level
 </pre>
 
 </details>
@@ -114,6 +114,6 @@ weighted average                                   = 55.4
    ollama run exaone-deep:32b
    ```
 
-Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B)
+Model repository and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B)
 
 [interactive version](https://whatmodel.sh/model/exaone-deep-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

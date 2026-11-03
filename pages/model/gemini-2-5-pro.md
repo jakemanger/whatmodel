@@ -95,7 +95,7 @@ Beats [GPT-6 Luna](gpt-6-luna.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions) (la…</a>   69.6%  ▃·▃·●▃▃·▃▃█▅ beats 2/11     medium · avg 38%    4.3%  at its level
+<a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions) (ma…</a>   69.6%  ▃·▃·●▃▃·▃▃█▅ beats 2/11     medium · avg 38%    4.3%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1247.6  ▁▁▂▂▂▂▃▄▅▅●▇ beats 104/152  avg 1061            2.0%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   47.7%  ▁·▁·▃▃▁▇▃●·▄ beats 19/22    hard · avg 27%      1.6%  blunt · at its level
 <a href="https://arxiv.org/html/2602.04705v1#S6.T3">CharXiv descriptive questions</a>        93.4%  ▂▄▄▅▇▄██▇●▁▂ beats 56/59    easy · avg 69%      1.2%  typical

@@ -49,8 +49,8 @@ test                            result  vs the others in its run   difficulty   
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run    difficulty           counts  why
-<a href="https://www.anthropic.com/news/releasing-claude-instant-1-2">GSM8K (lab)</a>   86.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 159/206  very easy · avg 90%    5.7%  sharp
+test           result  vs the others in its run    difficulty           counts  why
+<a href="https://www.anthropic.com/news/releasing-claude-instant-1-2">GSM8K (maker)</a>   86.7%  ▂▂▂▂▃▄▅▇█●▆▄ beats 159/206  very easy · avg 90%    5.7%  sharp
 </pre>
 
 </details>

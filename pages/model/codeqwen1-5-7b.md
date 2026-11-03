@@ -121,6 +121,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/bartowski/CodeQwen1.5-7B-GGUF:Q
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/CodeQwen1.5-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/CodeQwen1.5-7B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/CodeQwen1.5-7B)
 
 [interactive version](https://whatmodel.sh/model/codeqwen1-5-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

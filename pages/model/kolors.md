@@ -39,7 +39,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   73% ▇▇▇▇▇▇▇▇▇
-<a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README (l…</a>        1   19% ▇▇
+<a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README (s…</a>        1   19% ▇▇
 <a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    3% ▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 38.6
@@ -57,6 +57,6 @@ weighted average                                   = 38.6
    uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import KolorsPipeline; p=KolorsPipeline.from_pretrained('Kwai-Kolors/Kolors-diffusers', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=5.0, num_inference_steps=50).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/Kwai-Kolors](https://huggingface.co/Kwai-Kolors/Kolors)
+Model repository and documentation: [huggingface.co/Kwai-Kolors](https://huggingface.co/Kwai-Kolors/Kolors)
 
 [interactive version](https://whatmodel.sh/model/kolors) · [JSON](https://whatmodel.sh/api?format=json&all=1)

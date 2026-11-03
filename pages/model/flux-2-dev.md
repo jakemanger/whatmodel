@@ -110,6 +110,6 @@ api (Cloudflare) · $0.046/image · [developers.cloudflare.com](https://develope
 
 Other versions: BF16 (CPU OFFLOAD) (~77.3 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('black-forest-labs/FLUX.2-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"` · int4 (Flux2CLI, Swift) (~19.7 GB, Mac only) `./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4` · gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp) (~41.3 GB) `sd-cli --diffusion-model models/flux2-dev-Q4_K_S.gguf --vae models/flux2_ae.safetensors --llm models/Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --sampling-method euler -v --diffusion-fa --offload-to-cpu`
 
-Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-dev)
+Model repository and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-dev)
 
 [interactive version](https://whatmodel.sh/model/flux-2-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -205,6 +205,6 @@ Other versions: Q8_0 (~1671.8 GB) `lms get https://huggingface.co/teamblobfish/D
    vllm serve deepseek-ai/DeepSeek-V4-Pro
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-pro-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

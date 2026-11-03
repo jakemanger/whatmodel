@@ -29,11 +29,11 @@ Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   55.0%  ▂·▁▁▁▁▂▃●▇▂▁ beats 33/58    very hard · avg 9.7%     18%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Terminal-Bench 2.0 (lab)</a>             57.1%  ▂▂▅▅███●▆▂▃▃ beats 25/36    hard · avg 16%           12%  at its level · small run · several runs
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">SWE-bench Verified (lab)</a>             78.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 123/138  hard · avg 26%          8.2%  sharp · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Terminal-Bench 2.0 (maker)</a>           57.1%  ▂▂▅▅███●▆▂▃▃ beats 25/36    hard · avg 16%           12%  at its level · small run · several runs
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">SWE-bench Verified (maker)</a>           78.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 123/138  hard · avg 26%          8.2%  sharp · small run
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">Humanity's Last Exam with tools (…</a>   40.0%  ▁·▁▂▂▁▄●▇█▄▅ beats 21/62    very hard · avg 15%     3.7%  at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">τ³-bench (lab)</a>                       64.5%  ▁▁▂▁·▁▁·▁▁●█ beats 13/25    medium · avg 37%        2.3%  at its level · small run
-<a href="https://mimo.xiaomi.com/mimo-v2-pro">τ²-bench Telecom (lab)</a>               96.8%  ▁·▅█▆▅▂▃▃●▃▁ beats 78/89    very hard · avg 8.8%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">τ³-bench (maker)</a>                     64.5%  ▁▁▂▁·▁▁·▁▁●█ beats 13/25    medium · avg 37%        2.3%  at its level · small run
+<a href="https://mimo.xiaomi.com/mimo-v2-pro">τ²-bench Telecom (maker)</a>             96.8%  ▁·▅█▆▅▂▃▃●▃▁ beats 78/89    very hard · avg 8.8%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1434.2  ▁▁▃▂▅●▃▆▅▅▁▂ beats 54/129   avg 981                  26%  sharp
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecified)…</a>   55.0%  ▂·▁▁▁▁▂▃●▇▂▁ beats 33/58    very hard · avg 9.7%     18%  sharp · at its level · small run · seve…
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">SWE-bench Verified (lab)</a>             78.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 123/138  hard · avg 26%          8.2%  sharp · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">SWE-bench Verified (maker)</a>           78.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 123/138  hard · avg 26%          8.2%  sharp · small run
 </pre>
 
 </details>
@@ -76,10 +76,10 @@ test                                result  vs the others in its run  difficulty
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                        result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                40.2%  ▃·▅▅█·●█▅▃▃▃ beats 8/17    very hard · avg 11%     7.1%  at its level
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">Humanity's Last Exam (lab)</a>   28.0%  ▁▁▁▄▆▆▇●█▆▁▃ beats 68/111  very hard · avg 6.0%    5.5%  at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">Claw-Eval Pass^3 (lab)</a>       57.8%  █▄▄·▄·●▄·▄·▄ beats 5/8     hard · avg 29%          2.7%  at its level · small run
+test                          result  vs the others in its run   difficulty            counts  why
+<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                  40.2%  ▃·▅▅█·●█▅▃▃▃ beats 8/17    very hard · avg 11%     7.1%  at its level
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">Humanity's Last Exam (maker)</a>   28.0%  ▁▁▁▄▆▆▇●█▆▁▃ beats 68/111  very hard · avg 6.0%    5.5%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">Claw-Eval Pass^3 (maker)</a>       57.8%  █▄▄·▄·●▄·▄·▄ beats 5/8     hard · avg 29%          2.7%  at its level · small run
 </pre>
 
 </details>
@@ -91,8 +91,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   40% ▇▇▇▇▇
-<a name="card2-xiaomimimo-mimo-v2-5-pro"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">XiaomiMiMo/MiMo-V2.5-Pro model card (la…</a>        7   37% ▇▇▇▇
-<a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (lab)</a>           2   15% ▇▇
+<a name="card2-xiaomimimo-mimo-v2-5-pro"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/README.md">XiaomiMiMo/MiMo-V2.5-Pro model card (su…</a>        7   37% ▇▇▇▇
+<a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (submit…</a>        2   15% ▇▇
 <a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    7% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 68.7

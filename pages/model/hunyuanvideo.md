@@ -65,7 +65,7 @@ api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-vide
 
 Other versions: BF16 (~31.7 GB, NVIDIA only) `python3 sample_video.py --video-size 720 1280 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results` · Draw Things q8p (~27.6 GB, Mac only) `brew install draw-things-cli && draw-things-cli generate --model hunyuan_video_t2v_720p_q8p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4`
 
-Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo)
+Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo)
 
 ## Published speed measurements
 

@@ -27,7 +27,7 @@ Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   21.2%  ▄●····█▄···▄ beats 1/5     hard · avg 26%      7.2%  typical
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              39.1%  ▁▁▁▁●▃▅█▅▄▁▁ beats 12/114  medium · avg 51%    6.5%  blunt · at its level
-<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (lab)</a>      81.0%  █·········●█ beats 2/5     easy · avg 77%      5.5%  blunt
+<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (maker)</a>    81.0%  █·········●█ beats 2/5     easy · avg 77%      5.5%  blunt
 </pre>
 
 </details>
@@ -122,6 +122,6 @@ Other versions: Q8_0 (~10 GB) `lms get https://huggingface.co/bartowski/glm-4-9b
 
 Other versions: Q8_0 (~11.78 GB) `ollama run glm4:9b-chat-q8_0`
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/glm-4-9b-chat)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/glm-4-9b-chat)
 
 [interactive version](https://whatmodel.sh/model/glm-4-9b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

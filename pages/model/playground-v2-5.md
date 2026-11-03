@@ -65,6 +65,6 @@ weighted average                                   = 40.8
    uv run --with torch --with 'diffusers>=0.27.0' --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2.5-1024px-aesthetic', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='Astronaut in a jungle, cold color palette, muted colors, detailed, 8k', num_inference_steps=50, guidance_scale=3).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic)
+Model repository and documentation: [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic)
 
 [interactive version](https://whatmodel.sh/model/playground-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -130,6 +130,6 @@ Other versions: 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-com
    vllm serve lm-provers/QED-Nano
    ```
 
-Official weights and documentation: [huggingface.co/lm-provers](https://huggingface.co/lm-provers/QED-Nano)
+Model repository and documentation: [huggingface.co/lm-provers](https://huggingface.co/lm-provers/QED-Nano)
 
 [interactive version](https://whatmodel.sh/model/qed-nano) · [JSON](https://whatmodel.sh/api?format=json&all=1)

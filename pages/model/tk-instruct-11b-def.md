@@ -47,6 +47,6 @@ weighted average                                   = 26.4
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tk-instruct-11b-def)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tk-instruct-11b-def)
 
 [interactive version](https://whatmodel.sh/model/tk-instruct-11b-def) · [JSON](https://whatmodel.sh/api?format=json&all=1)

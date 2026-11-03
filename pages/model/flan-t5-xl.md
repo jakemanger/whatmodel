@@ -24,9 +24,9 @@ math  ▁▁●▅█▆▄█▄▂▁▁   #407 of 431     24%      2
 Beats [Command R (03-2024)](command-r-03-2024.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md), [Gemma 2 2B IT](gemma-2-2b.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>        13.5%  ▂▂▂▂●▄▅▇██▆▄ beats 40/206  medium · avg 49%     17%  sharp · several runs
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    1.9%  ▆·●·▄▂▂▂▂█▄▆ beats 3/18    medium · avg 48%    7.0%  sharp
+test          result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2305.17306v1">GSM8K</a>          13.5%  ▂▂▂▂●▄▅▇██▆▄ beats 40/206  medium · avg 49%     17%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    1.9%  ▆·●·▄▂▂▂▂█▄▆ beats 3/18    medium · avg 48%    7.0%  sharp
 </pre>
 
 </details>
@@ -35,8 +35,8 @@ test        result  vs the others in its run   difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           52.4%  ▁···▁··▃▁●▅█ beats 6/18   easy · avg 74%          27%  at its level · several runs
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 68%        24%  sharp · several runs
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         52.4%  ▁···▁··▃▁●▅█ beats 6/18   easy · avg 74%          27%  at its level · several runs
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               41.0%  ▂▂▂▂·▅·●▂█▃▃ beats 7/18   medium · avg 68%        24%  sharp · several runs
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>   16.6%  ▂··▂·▂●▄·███ beats 3/18   medium · avg 61%       4.3%  at its level
 <a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   58.0%  █···█·····█● beats 3/3    medium · avg 68%       3.3%  typical
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   69.6%  ▃····▃·▃▃●▅▅ beats 6/10   easy · avg 81%         2.6%  at its level
@@ -91,6 +91,6 @@ weighted average                                   = 37.2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-xl)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-xl)
 
 [interactive version](https://whatmodel.sh/model/flan-t5-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

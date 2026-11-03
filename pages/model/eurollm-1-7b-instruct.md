@@ -129,6 +129,6 @@ Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/jevoma4
    vllm serve utter-project/EuroLLM-1.7B-Instruct
    ```
 
-Official weights and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct)
+Model repository and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/eurollm-1-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

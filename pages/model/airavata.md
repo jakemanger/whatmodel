@@ -106,6 +106,6 @@ Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/mradermacher/Airavata-GGUF:Q8_0
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ai4bharat/Airavata', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ai4bharat](https://huggingface.co/ai4bharat/Airavata)
+Model repository and documentation: [huggingface.co/ai4bharat](https://huggingface.co/ai4bharat/Airavata)
 
 [interactive version](https://whatmodel.sh/model/airavata) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -52,6 +52,6 @@ weighted average                        = 53.7
 
 Other versions: fp32 (chatterbox) (~3.21 GB) `git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cpu', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"` · fp32 (chatterbox) (~3.21 GB, Mac only) `git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='mps', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"`
 
-Official weights and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox)
+Model repository and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox)
 
 [interactive version](https://whatmodel.sh/model/chatterbox-multilingual-v3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

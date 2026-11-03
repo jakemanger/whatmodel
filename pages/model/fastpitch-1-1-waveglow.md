@@ -16,7 +16,7 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                                result  reported by  source
-FastPitch 1.0 vs 1.1 pairwise pre…   56.5%  lab          <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md">NVIDIA FastPitch: original li…</a>
+FastPitch 1.0 vs 1.1 pairwise pre…   56.5%  maker        <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md">NVIDIA FastPitch: original li…</a>
 </pre>
 
 <sub>Licences: NVIDIA FastPitch: original listening studies in committed README ([BSD-3-Clause](../../licenses/speech-nvidia-fastpitch-readme.txt))</sub>
@@ -31,6 +31,6 @@ FastPitch 1.0 vs 1.1 pairwise pre…   56.5%  lab          <a href="https://gith
    git clone https://github.com/NVIDIA/DeepLearningExamples.git && cd DeepLearningExamples/PyTorch/SpeechSynthesis/FastPitch && bash scripts/docker/build.sh && docker run --gpus=all --rm --ipc=host -v $PWD:/workspace/fastpitch/ fastpitch:latest bash -c "bash scripts/download_cmudict.sh && HIFIGAN= WAVEGLOW=pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt bash scripts/inference_example.sh"
    ```
 
-Official weights and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
+Model repository and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/fastpitch-1-1-waveglow)

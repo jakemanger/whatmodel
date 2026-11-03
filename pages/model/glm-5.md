@@ -30,23 +30,23 @@ Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.1%  ▁··▁·▁▂▁●█▄▁ beats 10/29  hard · avg 19%          9.0%  sharp · at its level · several runs
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set) (lab)</a>         67.8%  ▄······▄▄▄▄● beats 5/6    hard · avg 26%          5.1%  at its level · several runs
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Terminal-Bench 2.0 (lab)</a>             56.2%  ▂▂▅▅███●▆▂▃▃ beats 23/36  hard · avg 15%          2.8%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set) (maker)</a>       67.8%  ▄······▄▄▄▄● beats 5/6    hard · avg 26%          5.1%  at its level · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Terminal-Bench 2.0 (maker)</a>           56.2%  ▂▂▅▅███●▆▂▃▃ beats 23/36  hard · avg 15%          2.8%  at its level · small run · several runs
 <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">SWE-bench Pro (split unspecified)…</a>   55.1%  ▂·▁▁▁▁▂▃●▇▂▁ beats 34/58  very hard · avg 9.6%    2.1%  sharp · at its level · small run
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (lab)</a>                     62.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 29/46  hard · avg 25%          1.8%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (maker)</a>                   62.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 29/46  hard · avg 25%          1.8%  at its level · small run · several runs
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>    9.8%  ●▃▂▃·▆▃▂█▅▅▂ beats 1/25   very hard · avg 4.3%    1.8%  typical
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Toolathlon (Tool Decathlon) (lab)</a>    38.0%  ▂▂▄▂▄▄●▂█▆██ beats 10/27  very hard · avg 13%     1.5%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Toolathlon (Tool Decathlon) (make…</a>   38.0%  ▂▂▄▂▄▄●▂█▆██ beats 10/27  very hard · avg 13%     1.5%  at its level · small run · several runs
 <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context managemen…</a>   75.9%  ▄·▄▂·●▂·▆▄·▂ beats 5/15   medium · avg 46%        1.4%  small run · several runs
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   82.5%  ▃······▃·▃●▃ beats 3/6    medium · avg 51%        1.4%  typical
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   24.0%  ▄·▄··●···▄·█ beats 3/6    very hard · avg 6.6%    1.3%  typical
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (lab)</a>                  72.7%  ▁▁▁▁▁▃·▁▄▅▄● beats 23/23  hard · avg 25%          1.3%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (maker)</a>                72.7%  ▁▁▁▁▁▃·▁▄▅▄● beats 23/23  hard · avg 25%          1.3%  at its level · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   73.7%  ▄●·█··▄·▄··▄ beats 1/6    medium · avg 48%        1.2%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   23.4%  ▃··▃·▃█●▃▃▃█ beats 8/14   very hard · avg 2.8%    1.2%  sharp · at its level · noisy
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (lab)</a>             89.7%  ▁▁▁·▁▁▃▃▃▄█● beats 38/39  medium · avg 54%        1.2%  small run
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>         73.3%  ▁··▁▃▁▅█●▂▂▁ beats 43/65  hard · avg 28%          1.2%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (maker)</a>           89.7%  ▁▁▁·▁▁▃▃▃▄█● beats 38/39  medium · avg 54%        1.2%  small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (maker)</a>       73.3%  ▁··▁▃▁▅█●▂▂▁ beats 43/65  hard · avg 28%          1.2%  at its level · small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   86.8%  ●·▄█▄······▄ beats 1/6    medium · avg 64%        1.1%  typical
 <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with tools (…</a>   50.4%  ▁·▁▂▂▁▄▄▇●▄▅ beats 36/62  hard · avg 16%          0.9%  at its level · small run
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">τ³-bench (lab)</a>                       69.2%  ▁▁▂▁·▁▁·▁▁▂● beats 18/25  medium · avg 38%        0.6%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">τ³-bench (maker)</a>                     69.2%  ▁▁▂▁·▁▁·▁▁▂● beats 18/25  medium · avg 38%        0.6%  at its level · small run
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">SWE-bench Pro (split unspecified)…</a>   55.1%  ▂·▁▁▁▁▂▃●▇▂▁ beats 34/58   very hard · avg 9.6%    2.1%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   24.0%  ▄·▄··●···▄·█ beats 3/6     very hard · avg 6.6%    1.3%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   23.4%  ▃··▃·▃█●▃▃▃█ beats 8/14    very hard · avg 2.8%    1.2%  sharp · at its level · noisy
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>         73.3%  ▁··▁▃▁▅█●▂▂▁ beats 43/65   hard · avg 28%          1.2%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (maker)</a>       73.3%  ▁··▁▃▁▅█●▂▂▁ beats 43/65   hard · avg 28%          1.2%  at its level · small run
 </pre>
 
 </details>
@@ -87,16 +87,16 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   41.4%  ▁▁▁▁█●▄▃▁▃·▃ beats 14/24    very hard · avg 9.4%    3.8%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   45.8%  ●▃▅·█▃▃·▅·▃▃ beats 2/14     hard · avg 16%          3.2%  at its level
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   54.3%  ▂··▄▂▄●▆▆▄▄█ beats 9/23     hard · avg 23%          2.8%  at its level
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">AIME 2026 (lab)</a>                      95.4%  ▁▁▁▂▂▂▆█●▂·▁ beats 43/52    medium · avg 63%        2.0%  sharp · maxed out · small run
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">HMMT February 2026 (lab)</a>             82.8%  ▃▃▂▅·███●▅▃▅ beats 24/35    hard · avg 30%          2.0%  sharp · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">AIME 2026 (maker)</a>                    95.4%  ▁▁▁▂▂▂▆█●▂·▁ beats 43/52    medium · avg 63%        2.0%  sharp · maxed out · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">HMMT February 2026 (maker)</a>           82.8%  ▃▃▂▅·███●▅▃▅ beats 24/35    hard · avg 30%          2.0%  sharp · small run
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   38.2%  ▃·▃●█▁·▄·▁▁▁ beats 5/18     hard · avg 19%          1.9%  at its level
-<a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench (lab)</a>                82.5%  ▁▁·▁▁▁▄▆●▄▂▃ beats 30/44    medium · avg 38%        1.5%  small run
+<a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench (maker)</a>              82.5%  ▁▁·▁▁▁▄▆●▄▂▃ beats 30/44    medium · avg 38%        1.5%  small run
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             80.0%  ▃▃▄▃▃▃▇●█▃▂▅ beats 113/197  very hard · avg 7.2%    1.4%  sharp · noisy
-<a href="https://arxiv.org/html/2602.15763v2">HMMT February 2025 (lab)</a>             97.9%  ▁▁▁▃▁▅▅▃██▁● beats 29/31    easy · avg 80%          1.3%  maxed out · small run
+<a href="https://arxiv.org/html/2602.15763v2">HMMT February 2025 (maker)</a>           97.9%  ▁▁▁▃▁▅▅▃██▁● beats 29/31    easy · avg 80%          1.3%  maxed out · small run
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   12.1%  █·●█▂·▂▂···▂ beats 6/14     very hard · avg 1.0%    0.9%  sharp · noisy
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.7%  ▃▂▂▃●▃▂·▃··▂ beats 8/16     very hard · avg 0.9%    0.8%  sharp · noisy
-<a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>             96.9%  ▁▁····▁▅▃█▇● beats 23/23    easy · avg 77%          0.8%  maxed out · small run
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">AIME 2026 I (lab)</a>                    92.7%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (maker)</a>           96.9%  ▁▁····▁▅▃█▇● beats 23/23    easy · avg 77%          0.8%  maxed out · small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">AIME 2026 I (maker)</a>                  92.7%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -107,9 +107,9 @@ Beats [Kimi K2.6](kimi-k2-6.md), [GPT-5 Pro](gpt-5-pro.md), [DeepSeek V4 Flash (
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (lab)</a>                     62.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 29/46  hard · avg 25%      1.8%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (maker)</a>                   62.0%  ▂·▃▁▂▂▆▅●▂▂▄ beats 29/46  hard · avg 25%      1.8%  at its level · small run · several runs
 <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context managemen…</a>   75.9%  ▄·▄▂·●▂·▆▄·▂ beats 5/15   medium · avg 46%    1.4%  small run · several runs
-<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (lab)</a>                  72.7%  ▁▁▁▁▁▃·▁▄▅▄● beats 23/23  hard · avg 25%      1.3%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (maker)</a>                72.7%  ▁▁▁▁▁▃·▁▄▅▄● beats 23/23  hard · avg 25%      1.3%  at its level · small run
 <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with tools (…</a>   50.4%  ▁·▁▂▂▁▄▄▇●▄▅ beats 36/62  hard · avg 16%      0.9%  at its level · small run
 </pre>
 
@@ -120,7 +120,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         87.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 159/211  hard · avg 39%          9.2%  sharp · several runs
-<a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>           30.5%  ▁▁▁▄▆▆▇█●▆▁▃ beats 77/111   very hard · avg 5.8%    2.6%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (maker)</a>         30.5%  ▁▁▁▄▆▆▇█●▆▁▃ beats 77/111   very hard · avg 5.8%    2.6%  at its level · small run · several runs
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   35.9%  ▁▁▂▁▃▄█▆●▅▂▃ beats 28/39    very hard · avg 21%     2.5%  at its level
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/glm-5">ARC-AGI-2 public evaluation set (…</a>    5.4%  █··▂●▁▃▁▃·▁▃ beats 12/24    very hard · avg 0.3%    2.3%  sharp · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/glm-5">ARC-AGI-1 public evaluation set (…</a>   58.6%  ▁·▇▃▁·●▇▁·▇▃ beats 11/27    very hard · avg 4.0%    2.3%  sharp · at its level · noisy
@@ -128,10 +128,10 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                10.0%  █▁▁▁●▂▃▃▃▂▁▁ beats 55/137   very hard · avg 5.8%    1.8%  sharp · noisy
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        42.6%  ▃·▅▅█·▅●▅▃▃▃ beats 10/17    very hard · avg 11%     1.6%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   46.0%  ▁▁·▁▂▂▄█●▅▄▄ beats 40/66    hard · avg 29%          1.5%  at its level
-<a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (lab)</a>                   64.5%  ▂·▁·▂▃▁▄▄▃█● beats 31/33    very hard · avg 35%     1.3%  at its level · small run
+<a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (maker)</a>                 64.5%  ▂·▁·▂▃▁▄▄▃█● beats 31/33    very hard · avg 35%     1.3%  at its level · small run
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   41.5%  ▆▂·▄●·▂▂·▄▄▂ beats 7/16     very hard · avg 36%     1.3%  blunt · at its level
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">CyberGym (lab)</a>                       48.3%  ▄···●··▄█▄█▄ beats 1/8      hard · avg 19%          1.1%  at its level · small run · several runs
-<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">NL2Repo (lab)</a>                        35.9%  ▂▂▂·▃▃●█▃▂▅▃ beats 8/22     very hard · avg 11%     1.0%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">CyberGym (maker)</a>                     48.3%  ▄···●··▄█▄█▄ beats 1/8      hard · avg 19%          1.1%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">NL2Repo (maker)</a>                      35.9%  ▂▂▂·▃▃●█▃▂▅▃ beats 8/22     very hard · avg 11%     1.0%  at its level · small run
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problems, A…</a>    9.6%  █·█●███··█·█ beats 2/7      very hard · avg 4.3%    0.5%  typical
 <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Avg@3)</a>    63.1%  ▄··▄·▄·▄●█·▄ beats 4/7      medium · avg 36%        0.4%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.9%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 44/98    very easy · avg 90%     0.0%  blunt
@@ -145,11 +145,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="card-zai-org--glm-5.1"></a><a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">zai-org/GLM-5.1 model card (lab)</a>               13   17% ▇▇
+<a name="card-zai-org--glm-5.1"></a><a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">zai-org/GLM-5.1 model card (submitted /…</a>       13   17% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">Epoch AI</a>                                        4   14% ▇▇
 <a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        6   13% ▇▇
-<a name="report-2602.15763v2"></a><a href="https://arxiv.org/html/2602.15763v2">GLM-5 Team (lab)</a>                               10   13% ▇▇
-<a name="card2-zai-org-glm-5"></a><a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">zai-org/GLM-5 model card (lab)</a>                  8   10% ▇
+<a name="report-2602.15763v2"></a><a href="https://arxiv.org/html/2602.15763v2">GLM-5 Team (submitted / maker-reported)</a>        10   13% ▇▇
+<a name="card2-zai-org-glm-5"></a><a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">zai-org/GLM-5 model card (submitted / m…</a>        8   10% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    9% ▇
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        4    6% ▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/glm-5">ARC Prize Foundation model_baseline out…</a>        2    5% ▇
@@ -247,6 +247,6 @@ Other versions: ud-q2_k_xl (~223.7 GB) `lms get https://huggingface.co/unsloth/G
    mlx_lm.server --model mlx-community/GLM-5-4bit
    ```
 
-Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5)
+Model repository and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-5)
 
 [interactive version](https://whatmodel.sh/model/glm-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

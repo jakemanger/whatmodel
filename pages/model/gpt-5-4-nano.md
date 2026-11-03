@@ -30,12 +30,12 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [o3-pro
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (lab)</a>             46.3%  █●···██··███ beats 1/6    hard · avg 15%         3.5%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (maker)</a>           46.3%  █●···██··███ beats 1/6    hard · avg 15%         3.5%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam with tools (…</a>   37.7%  ▃·●·▅····▅·█ beats 1/8    very hard · avg 12%    3.5%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Toolathlon (Tool Decathlon) (lab)</a>    35.5%  ▃··●··▃··▃█▅ beats 1/8    very hard · avg 13%    3.5%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (lab)</a>               39.0%  ●▄·····▄·▄▄▄ beats 1/6    hard · avg 16%         2.6%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">τ²-bench Telecom (lab)</a>               92.5%  ▃·▅▅▃▃··●▃▃▅ beats 7/13   hard · avg 16%         2.1%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>                  52.4%  ▄·····●·▄▄▄█ beats 1/6    hard · avg 29%         1.5%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Toolathlon (Tool Decathlon) (make…</a>   35.5%  ▃··●··▃··▃█▅ beats 1/8    very hard · avg 13%    3.5%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (maker)</a>             39.0%  ●▄·····▄·▄▄▄ beats 1/6    hard · avg 16%         2.6%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">τ²-bench Telecom (maker)</a>             92.5%  ▃·▅▅▃▃··●▃▃▅ beats 7/13   hard · avg 16%         2.1%  sharp · at its level · noisy
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (maker)</a>                52.4%  ▄·····●·▄▄▄█ beats 1/6    hard · avg 29%         1.5%  blunt · at its level
 <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain conversatio…</a>    7.2%  ●▂··▂·▂·▂▂█▄ beats 0/11   hard · avg 25%         0.0%  blunt · at its level · noisy
 </pre>
 
@@ -48,7 +48,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   64.9%  ▁▁▁▁·▁▂▃●▃█▇ beats 17/49  hard · avg 17%    5.0%  sharp · at its level
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>                  52.4%  ▄·····●·▄▄▄█ beats 1/6    hard · avg 29%    1.5%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (maker)</a>                52.4%  ▄·····●·▄▄▄█ beats 1/6    hard · avg 29%    1.5%  blunt · at its level
 </pre>
 
 </details>
@@ -83,7 +83,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, th
 
 <pre>
 test                             result  vs the others in its run   difficulty      counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">MMMU Pro (lab)</a>                    66.1%  ●·····▃·▃·█▃ beats 0/7     hard · avg 40%    4.5%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">MMMU Pro (maker)</a>                  66.1%  ●·····▃·▃·█▃ beats 0/7     hard · avg 40%    4.5%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1198.8  ▁▁▂▂▂▂▃▄●▅█▇ beats 71/152  avg 1061          3.8%  blunt
 </pre>
 
@@ -105,7 +105,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         78.5%  ▁▁▁▁▂▄▆▄▅●█▅ beats 122/211  hard · avg 39%          7.2%  sharp
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>           24.3%  ▃··●·▃▃···▃█ beats 1/7      very hard · avg 4.4%    4.8%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (maker)</a>         24.3%  ▃··●·▃▃···▃█ beats 1/7      very hard · avg 4.4%    4.8%  typical
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-nano-high">ARC-AGI-1 public evaluation set (…</a>   51.6%  ▁·▇▃▁·●▇▁·▇▃ beats 9/27     very hard · avg 4.0%    4.1%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-nano-medium">ARC-AGI-2 public evaluation set (…</a>    3.5%  █··●▅▁▃▁▃·▁▃ beats 7/24     very hard · avg 0.3%    3.5%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          5.0%  ●··▂▃▇▄█▂▄▂▁ beats 11/77    very hard · avg 9.4%    3.2%  sharp · too hard for it · noisy

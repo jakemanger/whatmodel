@@ -70,6 +70,6 @@ weighted average                                   = 57.9
    uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_7B').transcribe(['audio.wav'], batch_size=1))"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/omniASR-LLM-7B)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/omniASR-LLM-7B)
 
 [interactive version](https://whatmodel.sh/model/omniasr-llm-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -199,7 +199,7 @@ Other versions: Q8_0 (~1.4 GB) `ollama run qwen3:0.6b-q8_0`
 
 Other versions: 8bit (~0.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen3-0.6B-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-0.6B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-0.6B)
 
 ## Published speed measurements
 

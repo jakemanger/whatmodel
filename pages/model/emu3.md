@@ -29,8 +29,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    8.8%  ●█▂▂▂▂▆▄·▂·▂ beats 1/16   hard · avg 26%       32%  sharp · too hard for it
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    6.1%  ●··▃·█▃▃▅··▃ beats 0/9    hard · avg 24%       10%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   39.0%  ▄·▆▂●█▄▆▂▄·▄ beats 6/22   medium · avg 60%     10%  at its level
-<a href="https://arxiv.org/html/2409.18869v1">GenEval (lab)</a>                        54.0%  ▇▃●▇▁▄▅▃█▃▃▅ beats 8/39   easy · avg 79%         —  not counted yet: no other model in the …
-<a href="https://arxiv.org/html/2409.18869v1">DPG-Bench (lab)</a>                      80.6%  ●·▂·▂▆█▄▂▄▂▂ beats 1/17                          —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2409.18869v1">GenEval (maker)</a>                      54.0%  ▇▃●▇▁▄▅▃█▃▃▅ beats 8/39   easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2409.18869v1">DPG-Bench (maker)</a>                    80.6%  ●·▂·▂▆█▄▂▄▂▂ beats 1/17                          —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -71,6 +71,6 @@ BAAI    <a href="https://arxiv.org/html/2409.18869v1">GenEval</a>    54.0%  too 
    git clone https://github.com/baaivision/Emu3 && cd Emu3 && pip install -r requirements.txt && python image_generation.py
    ```
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3-Gen)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3-Gen)
 
 [interactive version](https://whatmodel.sh/model/emu3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

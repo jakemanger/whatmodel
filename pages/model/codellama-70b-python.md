@@ -24,9 +24,9 @@ coding  ▁▁▁▃▅●█▇▅▄▃▁   #343 of 469     74%      2
 Beats [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>    60.4%  ▁█▄▅▇█·●▇▅▄▄ beats 25/42  easy · avg 75%     63%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>   65.6%  ▃▃▃█··▃▅··▅● beats 11/11  easy · avg 71%     11%  at its level
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>      60.4%  ▁█▄▅▇█·●▇▅▄▄ beats 25/42  easy · avg 75%     63%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (maker)</a>   65.6%  ▃▃▃█··▃▅··▅● beats 11/11  easy · avg 71%     11%  at its level
 </pre>
 
 </details>
@@ -135,6 +135,6 @@ Other versions: Q8_0 (~73 GB) `ollama run codellama:70b-python-q8_0`
    mlx_lm.server --model mlx-community/CodeLlama-70b-Python-hf-4bit-MLX
    ```
 
-Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-70b-Python-hf)
+Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-70b-Python-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-70b-python) · [JSON](https://whatmodel.sh/api?format=json&all=1)

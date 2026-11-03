@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 3.3B params (0.8B active) · apache-2.0
 
-**score 36.8** ±1.6 · #611 of 732 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 36.8** ±1.6 · #611 of 732 · from 6 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -36,8 +36,8 @@ test                                result  vs the others in its run   difficult
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   49.0%  ▂▂▂▂▃▄▅●██▆▄ beats 86/206  easy · avg 85%     35%  sharp · at its level
+test           result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (maker)</a>   49.0%  ▂▂▂▂▃▄▅●██▆▄ beats 86/206  easy · avg 85%     35%  sharp · at its level
 </pre>
 
 </details>
@@ -45,11 +45,11 @@ test         result  vs the others in its run   difficulty      counts  why
 <details><summary>other tests (4)</summary>
 
 <pre>
-test                 result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>   50.4%  ▄▁▁▂▁▄█●▃▂▃▂ beats 87/140  easy · avg 77%       24%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>      64.9%  ▁▁▁▁▂▁▁▅●█▃▁ beats 58/131  medium · avg 80%     12%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>            52.2%  ▁▁▁▁▁▂▂●██▆▄ beats 57/214  medium · avg 74%     10%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>       73.0%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 83/135  easy · avg 87%       10%  at its level
+test                   result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (maker)</a>   50.4%  ▄▁▁▂▁▄█●▃▂▃▂ beats 87/140  easy · avg 77%       24%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (maker)</a>      64.9%  ▁▁▁▁▂▁▁▅●█▃▁ beats 58/131  medium · avg 80%     12%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (maker)</a>            52.2%  ▁▁▁▁▁▂▂●██▆▄ beats 57/214  medium · avg 74%     10%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (maker)</a>       73.0%  ▁▁▁▂▂▂▄▆●▇▄▂ beats 83/135  easy · avg 87%       10%  at its level
 </pre>
 
 </details>
@@ -123,7 +123,7 @@ Other versions: Q8_0 (~3.5 GB) `lms get https://huggingface.co/lmstudio-communit
    ollama run granite3.1-moe:3b
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct)
 
 ## Published speed measurements
 

@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 39.1** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 39.1** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 ## What it's good at
 
@@ -22,8 +22,8 @@ text to video  ▇▅▄●█▆▇▂▃▃▂▄   #64 of 94*     83%      1
 Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (lab)</a>   80.6%  ●···▄▄▄····▄ beats 0/5    very easy · avg 90%     83%  small run
+test                        result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (maker)</a>   80.6%  ●···▄▄▄····▄ beats 0/5    very easy · avg 90%     83%  small run
 </pre>
 
 </details>
@@ -45,6 +45,6 @@ weighted average                                   = 39.1
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS)
+Model repository and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS)
 
 [interactive version](https://whatmodel.sh/model/t2v-turbo-ms) · [JSON](https://whatmodel.sh/api?format=json&all=1)

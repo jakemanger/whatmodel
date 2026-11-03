@@ -88,6 +88,6 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 Other versions: gguf-q8_0 + Qwen2.5-VL bf16 (sd.cpp) (~46.8 GB) `sd-cli --diffusion-model models/Qwen_Image_Edit-Q8_0.gguf --vae models/qwen_image_vae.safetensors --llm models/qwen_2.5_vl_7b.safetensors --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'edit.cpp'"`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-Edit)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-Edit)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

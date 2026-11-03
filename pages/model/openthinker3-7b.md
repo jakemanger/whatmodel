@@ -182,6 +182,6 @@ Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Open
    vllm serve open-thoughts/OpenThinker3-7B
    ```
 
-Official weights and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker3-7B)
+Model repository and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker3-7B)
 
 [interactive version](https://whatmodel.sh/model/openthinker3-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

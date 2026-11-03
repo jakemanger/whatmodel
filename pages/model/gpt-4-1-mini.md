@@ -30,7 +30,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>               44.0%  ▃·▅●▃▃··█▃▃▅ beats 4/13    very hard · avg 13%     3.8%  sharp · at its level · several runs
+<a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (maker)</a>             44.0%  ▃·▅●▃▃··█▃▃▅ beats 4/13    very hard · avg 13%     3.8%  sharp · at its level · several runs
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4.1-Mini/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   30.7%  █··▄·▄●·▄··▄ beats 4/7     hard · avg 17%          2.2%  at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json">τ²-bench Retail</a>                      61.4%  ▁····▂▁▃●█▃▁ beats 12/44   medium · avg 40%        2.2%  at its level
 <a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   20.3%  █·▃▃·█▅●▅▅▃▅ beats 11/18   very hard · avg 5.5%    2.0%  sharp
@@ -51,7 +51,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwe
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   32.4%  ▂·▂▃▅●▃█▆▄▂▂ beats 16/49  very hard · avg 7.6%    9.0%  sharp · at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>       93.8%  ▆█▆●▂··▂···▂ beats 12/15  easy · avg 83%          0.9%  typical
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (maker)</a>     93.8%  ▆█▆●▂··▂···▂ beats 12/15  easy · avg 83%          0.9%  typical
 </pre>
 
 </details>
@@ -74,12 +74,12 @@ test                                result  vs the others in its run    difficul
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
-test                           result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        6.7%  ▂··●▁▃▄▄█▆▄▃ beats 5/86    very hard · avg 1.2%    5.8%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    87.3%  ▂▂▅▆▄█▆▃●▂▃▄ beats 74/92   hard · avg 28%          5.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        44.7%  ▃▃▄▃▃●▇▇█▃▂▅ beats 74/197  very hard · avg 7.2%    2.9%  sharp · at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>   81.4%  ▃··●▅▃···▃·█ beats 1/9     medium · avg 61%        2.5%  sharp
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>       88.2%  ▁····▁▅●█▁▃▁ beats 6/16    easy · avg 80%          1.1%  typical
+test                             result  vs the others in its run   difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>          6.7%  ▂··●▁▃▄▄█▆▄▃ beats 5/86    very hard · avg 1.2%    5.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      87.3%  ▂▂▅▆▄█▆▃●▂▃▄ beats 74/92   hard · avg 28%          5.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          44.7%  ▃▃▄▃▃●▇▇█▃▂▅ beats 74/197  very hard · avg 7.2%    2.9%  sharp · at its level · noisy
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (maker)</a>   81.4%  ▃··●▅▃···▃·█ beats 1/9     medium · avg 61%        2.5%  sharp
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (maker)</a>       88.2%  ▁····▁▅●█▁▃▁ beats 6/16    easy · avg 80%          1.1%  typical
 </pre>
 
 </details>
@@ -90,9 +90,9 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://openai.com/index/gpt-4-1">CharXiv descriptive questions (la…</a>   88.4%  ▄▄·····▄·▄●▄ beats 4/6     easy · avg 71%    2.5%  typical
+<a href="https://openai.com/index/gpt-4-1">CharXiv descriptive questions (ma…</a>   88.4%  ▄▄·····▄·▄●▄ beats 4/6     easy · avg 71%    2.5%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1200.7  ▁▁▂▂▂▂▃▄●▅█▇ beats 74/152  avg 1061          2.4%  blunt
-<a href="https://openai.com/index/gpt-4-1">CharXiv (reasoning questions) (la…</a>   56.8%  ▄··▂●··▂···▄ beats 6/9     hard · avg 32%    2.3%  at its level
+<a href="https://openai.com/index/gpt-4-1">CharXiv (reasoning questions) (ma…</a>   56.8%  ▄··▂●··▂···▄ beats 6/9     hard · avg 32%    2.3%  at its level
 </pre>
 
 </details>
@@ -112,7 +112,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    65.0%  █▃▃█·▃●▅▃▃▃▅ beats 9/16     hard · avg 39%          6.5%  sharp · at its level
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (make…</a>   65.0%  █▃▃█·▃●▅▃▃▃▅ beats 9/16     hard · avg 39%          6.5%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         65.8%  ▁▁▁▁▂▄▆▄●▇█▅ beats 98/211   hard · avg 39%          6.1%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           72.1%  ▆▄▄▄●▄▂·▄█·▄ beats 10/23    medium · avg 56%        4.5%  typical
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            78.9%  ▄▄▄▂▂●▂▄▂█▂▄ beats 11/22    medium · avg 61%        3.6%  typical
@@ -128,8 +128,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 7.0%  █▁●▁▁▂▃▃▃▂▁▁ beats 51/137   very hard · avg 5.8%    0.6%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4-1-mini-2025-04-14">ARC-AGI-2 public evaluation set (…</a>    0.0%  ●··▂▅▁▃▁▃·▁▃ beats 1/24     very hard · avg 0.3%    0.5%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          7.0%  ●··▂▃▇▄█▂▄▂▁ beats 6/77     very hard · avg 9.4%    0.5%  sharp · too hard for it · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (lab)</a>        16.8%  ▄·▁●▁▁··█▁·▁ beats 4/14     hard · avg 17%          0.3%  at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>   81.0%  ▂▂▄●▆█·▂···▄ beats 6/16     easy · avg 78%          0.3%  blunt
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (maker)</a>      16.8%  ▄·▁●▁▁··█▁·▁ beats 4/14     hard · avg 17%          0.3%  at its level · noisy
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (m…</a>   81.0%  ▂▂▄●▆█·▂···▄ beats 6/16     easy · avg 78%          0.3%  blunt
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.8%  ▁▁▂▃▄▄█▆●▂▂▁ beats 120/140  very easy · avg 94%     0.1%  blunt · maxed out · noisy
 </pre>
 

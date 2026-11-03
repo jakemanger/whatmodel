@@ -110,6 +110,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/TheBloke/Mistral-7B-codealpaca-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Nondzu/Mistral-7B-codealpaca-lora', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Nondzu](https://huggingface.co/Nondzu/Mistral-7B-codealpaca-lora)
+Model repository and documentation: [huggingface.co/Nondzu](https://huggingface.co/Nondzu/Mistral-7B-codealpaca-lora)
 
 [interactive version](https://whatmodel.sh/model/mistral-7b-codealpaca-lora) · [JSON](https://whatmodel.sh/api?format=json&all=1)

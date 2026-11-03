@@ -4,52 +4,65 @@
 
 # decider-2b (DecisionBench fa996cea)
 
-Mapika · 1.881825088B params · apache-2.0
+Mapika · released 2026-09-19 · 1.881825088B params · apache-2.0
 
-**score 68.1** ±1.1 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 53.0** ±1.6 · #182 of 355 · from 29 benchmark results across 2 sources
 
 ## What it's good at
 
 <sub>● marks decider-2b (DecisionBench fa996cea) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃▃▃▁▂▁▂●█▂   #26 of 57     99%     27
+task         vs the others        rank  counts  tests
+workflows    ▁▁▁▂▁▂▂●█▄▁▁   #61 of 114     99%     28
+consistency  █····●·····█     #2 of 3*    0.1%      1
 </pre>
 
-<details><summary>workflows · #26 of 57 · 99% of its score</summary>
+<details><summary>workflows · #61 of 114 · 99% of its score</summary>
+
+Beats [Clef-omni](clef-omni.md), [Clef-flash](clef-flash.md), [Bespoke Nimble 9B v3](decision-nimble-v3.md) here, though they rank higher overall. Trails [InternLM Intern-Decision Qwen3.5-4B](decision-intern-decision-4b.md), [StartLux-Decision v1.1 0.8B](decision-startlux-decision-v1-1-0-8b-instant.md), [JevK5 v0.3](decision-jevk5-v0-3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · action selecti…</a>   49.6%  ▂▁▂▃▄▃▁▁●█▇▄ beats 26/56  hard · avg 26%          17%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   73.0%  ▁▁▁▁▂▂▁▁▁▁▃● beats 37/56  hard · avg 29%          15%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   65.0%  ▁▁·▃▁▁▁▁▁▁●█ beats 27/56  hard · avg 22%          12%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · record classif…</a>   38.0%  ▃▂▁▂▂▂▄▁●▆██ beats 26/56  hard · avg 21%         8.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · verification (…</a>   57.0%  ▁▁▅▁▃▂▂▁▁●▇█ beats 27/56  medium · avg 40%       6.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · document recor…</a>   45.4%  ▂▂·▁▂▄▃●▄█▁▁ beats 30/56  hard · avg 27%         5.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   77.0%  ▁·▁·▂▃▄▃●█▄▂ beats 25/56  medium · avg 45%       4.3%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · completion ass…</a>   92.0%  ▁▁▂▃▄·▂▁▁▆●▂ beats 40/56  medium · avg 51%       4.3%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   45.1%  ▁▁▅▅▃▃●█▃▃·▁ beats 31/56  hard · avg 27%         4.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   93.6%  ▃▃▂·▁▁▁▁▁▁●▅ beats 34/56  medium · avg 38%       4.0%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · content classi…</a>   78.0%  ▁····▁▁▁▁▁▁● beats 31/56  medium · avg 41%       3.5%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · review scoring…</a>   51.0%  ▁······▂▃▅●█ beats 29/56  hard · avg 32%         2.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   61.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 55/56  very hard · avg 12%    2.3%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · target selecti…</a>   45.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 42/56  very hard · avg 11%    2.1%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   65.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 38/56  medium · avg 45%       2.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   42.6%  ▂·▁▁▆●▅▃▃▂▁▁ beats 25/56  hard · avg 33%         1.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   85.7%  █▁▂▁▁▁▁▁●▅▁▁ beats 38/56  medium · avg 55%       0.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · document workf…</a>   76.0%  █▄▃▁▁●▂▂▁·▁▁ beats 44/56  medium · avg 51%       0.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.2%  ▁▁▁▂▆▃▃●···▁ beats 49/56  medium · avg 38%       0.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · safety gating …</a>   86.0%  ▂·····▆█▂●▄▇ beats 34/56  medium · avg 51%       0.5%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · document class…</a>   21.0%  ▂▁·▂▁▁▁▄▁●▂█ beats 30/56  very hard · avg 13%    0.3%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   81.0%  ▁·▁▁·▁▁█▂▃●▂ beats 34/56  medium · avg 55%       0.3%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · content modera…</a>  100.0%  ▁····▃▅▃▂▂·● beats 55/56  medium · avg 61%       0.2%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · context manage…</a>   88.0%  ▁·····▁▇▆▁●▃ beats 38/56  medium · avg 59%       0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   76.4%  ▁·▁▄▇▄▅●▂▁▄█ beats 29/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · function agent…</a>   74.2%  ▃▃▄▅▆▂●▄▃▄█▃ beats 26/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · routing triage…</a>    0.0%  ●▁···▁·▂▆▅▂▂ beats 14/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · action selecti…</a>   49.6%  ▂▁▂▃▄▃▁▁●█▇▄ beats 26/56  medium · avg 51%        19%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   73.0%  ▁▁▁▁▂▂▁▁▁▁▃● beats 37/56  medium · avg 64%        13%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   65.0%  ▁▁·▃▁▁▁▁▁▁●█ beats 27/56  medium · avg 58%        11%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · record classif…</a>   38.0%  ▃▂▁▂▂▂▄▁●▆██ beats 26/56  medium · avg 39%       8.4%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · verification (…</a>   57.0%  ▁▁▅▁▃▂▂▁▁●▇█ beats 27/56  medium · avg 56%       6.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · document recor…</a>   45.4%  ▂▂·▁▂▄▃●▄█▁▁ beats 30/56  medium · avg 46%       4.8%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   77.0%  ▁·▁·▂▃▄▃●█▄▂ beats 25/56  easy · avg 78%         4.4%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · completion ass…</a>   92.0%  ▁▁▂▃▄·▂▁▁▆●▂ beats 40/56  very easy · avg 86%    4.4%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   45.1%  ▁▁▅▅▃▃●█▃▃·▁ beats 31/56  medium · avg 45%       4.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   93.6%  ▃▃▂·▁▁▁▁▁▁●▅ beats 34/56  very easy · avg 86%    3.9%  sharp · noisy
+<a href="https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json">Chao Ma · clean support routing</a>      96.0%  █····●·····█ beats 1/2    very easy · avg 96%    3.5%  sharp · maxed out · small run
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · content classi…</a>   78.0%  ▁····▁▁▁▁▁▁● beats 31/56  easy · avg 73%         3.3%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · review scoring…</a>   51.0%  ▁······▂▃▅●█ beats 29/56  medium · avg 52%       2.7%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   61.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 55/56  medium · avg 35%       2.1%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · target selecti…</a>   45.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 42/56  hard · avg 29%         1.9%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   65.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 38/56  medium · avg 62%       1.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   42.6%  ▂·▁▁▆●▅▃▃▂▁▁ beats 25/56  medium · avg 52%       1.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   85.7%  █▁▂▁▁▁▁▁●▅▁▁ beats 38/56  easy · avg 74%         0.7%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · document workf…</a>   76.0%  █▄▃▁▁●▂▂▁·▁▁ beats 44/56  easy · avg 66%         0.7%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.2%  ▁▁▁▂▆▃▃●···▁ beats 49/56  medium · avg 52%       0.5%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · safety gating …</a>   86.0%  ▂·····▆█▂●▄▇ beats 34/56  easy · avg 77%         0.4%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · document class…</a>   21.0%  ▂▁·▂▁▁▁▄▁●▂█ beats 30/56  hard · avg 21%         0.3%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   81.0%  ▁·▁▁·▁▁█▂▃●▂ beats 34/56  easy · avg 71%         0.3%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · content modera…</a>  100.0%  ▁····▃▅▃▂▂·● beats 55/56  easy · avg 82%         0.2%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · context manage…</a>   88.0%  ▁·····▁▇▆▁●▃ beats 38/56  easy · avg 73%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   76.4%  ▁·▁▄▇▄▅●▂▁▄█ beats 29/56  easy · avg 66%         0.1%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · function agent…</a>   74.2%  ▃▃▄▅▆▂●▄▃▄█▃ beats 26/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">DecisionBench v1 · routing triage…</a>    0.0%  ●▁···▁·▂▆▅▂▂ beats 14/56  medium · avg 42%       0.0%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>consistency · #2 of 3 · 0.1% of its score</summary>
+
+Beats [Jev 1.13](jev-1-13.md) here, though they rank higher overall. Trails [open-jev-deberta-v3-large (DecisionBench 19bf9a64)](decisionbench-com-kotobalabs-open-jev-deberta-v3-large-19bf9a64.md) here, though they rank lower overall.
+
+<pre>
+test                                      result  vs the others in its run  difficulty       counts  why
+<a href="https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json">Chao Ma · confidence under author…</a>  0.4120 auroc  █····●·····█ beats 1/2    avg 0.426 auroc    0.1%  blunt · small run
 </pre>
 
 </details>
@@ -60,17 +73,18 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Mapika__decider-2b/fa996cea58e1c1d8d1ab4d7124154f303b017f95/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="chao-ma-injection-20260922"></a><a href="https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json">Chao Ma · independent injection study</a>           2    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 68.1
+weighted average                                   = 53.0
 </pre>
 
-<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
+<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt)) · Chao Ma · independent injection study ([MIT](../../licenses/chao-ma-jev-eval-MIT.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/Mapika/decider-2b/tree/fa996cea58e1c1d8d1ab4d7124154f303b017f95) · Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/Mapika/decider-2b/revision/fa996cea58e1c1d8d1ab4d7124154f303b017f95); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/Mapika](https://huggingface.co/Mapika/decider-2b)
+Model repository and documentation: [huggingface.co/Mapika](https://huggingface.co/Mapika/decider-2b)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-mapika-decider-2b-fa996cea) · [JSON](https://whatmodel.sh/api?format=json&all=1)

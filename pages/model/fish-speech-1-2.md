@@ -50,6 +50,6 @@ weighted average                        = 48.7
    git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout 5dd593fef32546f2c0a7d99babbbb27a9478d759 && pip3 install torch torchvision torchaudio && pip3 install -e . && huggingface-cli download fishaudio/fish-speech-1.2 --local-dir checkpoints/fish-speech-1.2 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.2" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.2/firefly-gan-vq-fsq-4x1024-42hz-generator.pth"
    ```
 
-Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/fish-speech-1.2)
+Model repository and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/fish-speech-1.2)
 
 [interactive version](https://whatmodel.sh/model/fish-speech-1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

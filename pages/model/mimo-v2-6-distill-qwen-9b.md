@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-09 · 9.41B params · mit
 
-**score 64.4** ±2.2 · #149 of 732 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.4** ±2.2 · #149 of 732 · from 5 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,9 +27,9 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Pro (split unspecified)…</a>   44.6%  ▂·▁▁▁▁▂▃●▇▂▁ beats 24/58   very hard · avg 9.6%     31%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 61/138  hard · avg 23%           27%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Terminal-Bench 2.1 (lab)</a>             37.1%  ▁·▁·▁▁▄●▆█▅█ beats 14/63   very hard · avg 11%      24%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Toolathlon-Verified (lab)</a>            35.2%  ▂·●▂▅▃···▂██ beats 1/18    hard · avg 24%          7.8%  blunt · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (maker)</a>           61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 61/138  hard · avg 23%           27%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Terminal-Bench 2.1 (maker)</a>           37.1%  ▁·▁·▁▁▄●▆█▅█ beats 14/63   very hard · avg 11%      24%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Toolathlon-Verified (maker)</a>          35.2%  ▂·●▂▅▃···▂██ beats 1/18    hard · avg 24%          7.8%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Pro (split unspecified)…</a>   44.6%  ▂·▁▁▁▁▂▃●▇▂▁ beats 24/58   very hard · avg 9.6%     31%  sharp · at its level · small run
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 61/138  hard · avg 23%           27%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (maker)</a>           61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 61/138  hard · avg 23%           27%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -49,8 +49,8 @@ test                                result  vs the others in its run   difficult
 <details><summary>other tests (1)</summary>
 
 <pre>
-test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">AutomationBench v1.0.6 (lab)</a>   30.3%  ▃···▃·▃●··█▅ beats 3/8    very hard · avg 6.9%    8.4%  noisy · small run
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">AutomationBench v1.0.6 (maker)</a>   30.3%  ▃···▃·▃●··█▅ beats 3/8    very hard · avg 6.9%    8.4%  noisy · small run
 </pre>
 
 </details>
@@ -149,6 +149,6 @@ Other versions: Q8_0 (~10.15 GB) `ollama run hf.co/ggml-org/MiMo-V2.6-Distill-Qw
    mlx_lm.server --model agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit
    ```
 
-Official weights and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
+Model repository and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-6-distill-qwen-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

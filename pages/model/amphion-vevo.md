@@ -61,6 +61,6 @@ weighted average                                   = 46.2
    git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create -n vevo python=3.10 && conda activate vevo && pip install -r models/vc/vevo/requirements.txt && python -m models.vc.vevo.infer_vevotts
    ```
 
-Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/Vevo)
+Model repository and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/Vevo)
 
 [interactive version](https://whatmodel.sh/model/amphion-vevo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

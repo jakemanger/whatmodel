@@ -6,7 +6,7 @@
 
 Kakao / KAIST · released 2021-06
 
-**score 67.4** ±24.0 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 67.4** ±24.0 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vi
 
 <pre>
 test                                  result  vs the others in its run  difficulty           counts  why
-<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS (la…</a>  4.43 / 5  █····█·█·█·● beats 4/4    easy · avg 4.22 / 5     53%  typical
+<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS (ma…</a>  4.43 / 5  █····█·█·█·● beats 4/4    easy · avg 4.22 / 5     53%  typical
 </pre>
 
 </details>
@@ -50,6 +50,6 @@ weighted average                                   = 67.4
    git clone https://github.com/jaywalnut310/vits && cd vits && pip install -r requirements.txt && apt-get install espeak && cd monotonic_align && python setup.py build_ext --inplace && cd .. && python -c "import torch, commons, utils; from models import SynthesizerTrn; from text.symbols import symbols; from text import text_to_sequence; from scipy.io.wavfile import write; hps = utils.get_hparams_from_file('./configs/ljs_base.json'); net_g = SynthesizerTrn(len(symbols), hps.data.filter_length // 2 + 1, hps.train.segment_size // hps.data.hop_length, **hps.model).cuda(); _ = net_g.eval(); _ = utils.load_checkpoint('/path/to/pretrained_ljs.pth', net_g, None); text_norm = text_to_sequence('VITS is Awesome!', hps.data.text_cleaners); text_norm = commons.intersperse(text_norm, 0) if hps.data.add_blank else text_norm; stn_tst = torch.LongTensor(text_norm); torch.set_grad_enabled(False); x_tst = stn_tst.cuda().unsqueeze(0); x_tst_lengths = torch.LongTensor([stn_tst.size(0)]).cuda(); audio = net_g.infer(x_tst, x_tst_lengths, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy(); write('ljs.wav', hps.data.sampling_rate, audio)"
    ```
 
-Official weights and documentation: [github.com/jaywalnut310](https://github.com/jaywalnut310/vits)
+Model repository and documentation: [github.com/jaywalnut310](https://github.com/jaywalnut310/vits)
 
 [interactive version](https://whatmodel.sh/model/vits-ljspeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

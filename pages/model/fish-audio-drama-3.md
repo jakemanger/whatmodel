@@ -6,7 +6,7 @@
 
 Fish Audio · released 2026-10 · 35B params (3B active) · fish-audio-research-license
 
-**score 48.5** ±12.7 · #71 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 48.5** ±12.7 · #71 of 119 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="fish-drama3-report"></a><a href="https://arxiv.org/html/2610.18010v1">Fish Audio Drama 3 technical report (la…</a>        1   35% ▇▇▇▇
+<a name="fish-drama3-report"></a><a href="https://arxiv.org/html/2610.18010v1">Fish Audio Drama 3 technical report (su…</a>        1   35% ▇▇▇▇
 prior: pull toward the middle                       65% ▇▇▇▇▇▇▇▇
 weighted average                                   = 48.5
 </pre>
@@ -50,6 +50,6 @@ weighted average                                   = 48.5
    sgl-omni serve --model-path fishaudio/drama-3 --port 8000
    ```
 
-Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/drama-3)
+Model repository and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/drama-3)
 
 [interactive version](https://whatmodel.sh/model/fish-audio-drama-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

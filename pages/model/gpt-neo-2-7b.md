@@ -83,14 +83,14 @@ source                                    results  share of the score
 <a name="acl-2023-emnlp-main-758"></a><a href="https://aclanthology.org/2023.emnlp-main.758.pdf">UPRISE: Universal Prompt Retrieval for …</a>        9   17% ▇▇
 <a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   16% ▇▇
 <a name="acl-2023-emnlp-main-265"></a><a href="https://aclanthology.org/2023.emnlp-main.265.pdf">Preserving Privacy Through Dememorizati…</a>        7   14% ▇▇
-<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card (lab)</a>            4   10% ▇
+<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card (submitt…</a>        4   10% ▇
 <a name="redpajama-2024-original-zero-shot"></a><a href="https://arxiv.org/html/2411.12372v1">RedPajama</a>                                       4    6% ▇
 <a name="acl-2023-findings-emnlp-133"></a><a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC: Zero- and Few-Shot Visual C…</a>        1    5% ▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-2.7B/results_2024-03-06%2021%3A19%3A57.134182.json">Hallucinations Leaderboard results</a>              4    4% ▇
 <a name="acl-2023-acl-long-367"></a><a href="https://aclanthology.org/2023.acl-long.367.pdf">Prompting Language Models for Linguisti…</a>        2    3% ▇
 <a name="acl-2023-findings-emnlp-930"></a><a href="https://aclanthology.org/2023.findings-emnlp.930.pdf">Coverage-based Example Selection for In…</a>        1    2% ▇
 <a name="acl-2023-findings-emnlp-152"></a><a href="https://aclanthology.org/2023.findings-emnlp.152.pdf">Generative Calibration for In-context L…</a>        1    1% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card (lab)</a>        2    1% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card (sub…</a>        2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="acl-2022-acl-long-229"></a><a href="https://aclanthology.org/2022.acl-long.229.pdf">TruthfulQA: Measuring How Models Mimic …</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
@@ -109,6 +109,6 @@ weighted average                                   = 17.9
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-2.7B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-2.7B)
+Model repository and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-2.7B)
 
 [interactive version](https://whatmodel.sh/model/gpt-neo-2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

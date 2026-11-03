@@ -47,15 +47,15 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   40.7%  ▂·▄·▂●▄▄█▄▂▆ beats 4/21    easy · avg 74%         3.7%  blunt · at its level
 <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                59.6%  ●█▄···▄··█▄▄ beats 0/8     easy · avg 88%         2.6%  several runs
 <a href="https://aclanthology.org/2023.acl-long.150.pdf">CommonsenseQA</a>                        17.9%  ●·····▂▂▃▂▄▄ beats 5/38    easy · avg 83%         1.1%  sharp · too hard for it · small run
-<a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (lab)</a>                 54.2%  ▅▃·▃··●·▅▅▃█ beats 4/13    medium · avg 75%       1.1%  too hard for it · small run
+<a href="https://arxiv.org/html/2212.12017v3">RTE (prompted) (maker)</a>               54.2%  ▅▃·▃··●·▅▅▃█ beats 4/13    medium · avg 75%       1.1%  too hard for it · small run
 <a href="https://arxiv.org/html/2212.12017v3">Winograd Schema Challenge (WSC273…</a>   73.3%  █▃·●▃▃█▅██▅▃ beats 5/21    easy · avg 92%         1.0%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2212.12017v3">MMLU (lab)</a>                           25.9%  ▁●▁▁▁▂▂▅██▆▄ beats 3/214   medium · avg 59%       0.8%  too hard for it · small run
+<a href="https://arxiv.org/html/2212.12017v3">MMLU (maker)</a>                         25.9%  ▁●▁▁▁▂▂▅██▆▄ beats 3/214   medium · avg 59%       0.8%  too hard for it · small run
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC embodied concepts, zero-shot …</a>   51.3%  ▁····●▁·▁·▃█ beats 1/11    hard · avg 63%         0.8%  too hard for it
-<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (lab)</a>                 27.9%  ▁▁●▁▂▄▅▆█▃▃▁ beats 5/155   medium · avg 59%       0.6%  sharp · too hard for it · noisy · small…
-<a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (lab)</a>                 50.5%  █·●▁······▁▁ beats 9/13    medium · avg 71%       0.4%  sharp · too hard for it · noisy · small…
+<a href="https://arxiv.org/html/2212.12017v3">BIG-Bench Hard (maker)</a>               27.9%  ▁▁●▁▂▄▅▆█▃▃▁ beats 5/155   medium · avg 59%       0.6%  sharp · too hard for it · noisy · small…
+<a href="https://arxiv.org/html/2212.12017v3">WiC (prompted) (maker)</a>               50.5%  █·●▁······▁▁ beats 9/13    medium · avg 71%       0.4%  sharp · too hard for it · noisy · small…
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 17/276  medium · avg 72%       0.4%  too hard for it · noisy
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-1.3b/opt-1.3b.json">SuperGLUE WSC (prompted)</a>             38.5%  ●·······▂·▂▃ beats 1/8     medium · avg 68%       0.3%  blunt · noisy · several runs
-<a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (lab)</a>      42.9%  ▂▃·▂●▂▂▂·▂·▂ beats 6/13    medium · avg 60%       0.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2212.12017v3">CommitmentBank (prompted) (maker)</a>    42.9%  ▂▃·▂●▂▂▂·▂·▂ beats 6/13    medium · avg 60%       0.2%  blunt · at its level · small run
 <a href="https://aclanthology.org/2023.emnlp-main.265.pdf">PubMedQA</a>                             57.9%  ▂·····▅●▅▆▆█ beats 5/24    medium · avg 73%       0.2%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-main.726.pdf">VEC visual concepts, zero-shot pe…</a>   67.3%  ▅▅▃█·▃··●·▃▃ beats 9/11    hard · avg 66%         0.0%  blunt · at its level
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/opt/opt-1.3b/opt-1.3b.json">LogiQA (harness)</a>                     22.3%  ●··········▁ beats 5/14    very hard · avg 25%    0.0%  too hard for it · noisy
@@ -96,6 +96,6 @@ weighted average                                   = 14.2
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-1.3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-1.3b)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-1.3b)
 
 [interactive version](https://whatmodel.sh/model/opt-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

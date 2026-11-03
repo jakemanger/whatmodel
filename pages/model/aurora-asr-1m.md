@@ -16,8 +16,8 @@ Published measurements are available, but there is not enough shared evaluation 
 
 <pre>
 test                        result  reported by  source
-LibriSpeech test-clean WER   11.4%  lab          <a href="https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md">AuroraASR-1M model card</a>
-LibriSpeech test-other WER   26.5%  lab          <a href="https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md">AuroraASR-1M model card</a>
+LibriSpeech test-clean WER   11.4%  maker        <a href="https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md">AuroraASR-1M model card</a>
+LibriSpeech test-other WER   26.5%  maker        <a href="https://huggingface.co/AuroraAI-Research/AuroraASR-1M/blob/cd307b54b4d666d6ad7dc982a7a58a96d6e7f942/README.md">AuroraASR-1M model card</a>
 </pre>
 
 <sub>Licences: AuroraASR-1M model card ([apache-2.0](../../licenses/cards-gap-LICENSE-Apache-2.0.txt))</sub>
@@ -32,6 +32,6 @@ LibriSpeech test-other WER   26.5%  lab          <a href="https://huggingface.co
    python -m pip install torch transformers sentencepiece soundfile && python -c "import soundfile as sf; from transformers import AutoModelForCTC; model = AutoModelForCTC.from_pretrained('AuroraAI-Research/AuroraASR-1M', trust_remote_code=True).eval(); wav, sr = sf.read('audio.wav', dtype='float32'); print(model.transcribe(wav)[0])"
    ```
 
-Official weights and documentation: [huggingface.co/AuroraAI-Research](https://huggingface.co/AuroraAI-Research/AuroraASR-1M)
+Model repository and documentation: [huggingface.co/AuroraAI-Research](https://huggingface.co/AuroraAI-Research/AuroraASR-1M)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/aurora-asr-1m)

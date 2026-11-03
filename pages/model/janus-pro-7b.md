@@ -26,11 +26,11 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            42.3%  ●▂█▂▂▂····▂▂ beats 1/13   easy · avg 69%          45%  at its level
-<a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                        80.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 27/39  easy · avg 83%          12%  at its level · small run
+<a href="https://arxiv.org/html/2501.17811v1">GenEval (maker)</a>                      80.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 27/39  easy · avg 83%          12%  at its level · small run
 <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 4/9    hard · avg 24%          11%  typical
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   35.0%  ▄·▆●▆█▄▆▂▄·▄ beats 5/22   medium · avg 60%        10%  at its level
 <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 2/4    easy · avg 70%          10%  at its level
-<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.5%  small run
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (maker)</a>                    84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.5%  small run
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   45% ▇▇▇▇▇
-<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (lab)</a>                               2   21% ▇▇▇
+<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (submitted / maker-reported)</a>        2   21% ▇▇▇
 <a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   11% ▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
 <a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   10% ▇
@@ -68,6 +68,6 @@ api (DeepInfra) · $0.0020/image · [deepinfra.com](https://deepinfra.com/deepse
    git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-7B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-Pro-7B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-Pro-7B)
 
 [interactive version](https://whatmodel.sh/model/janus-pro-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

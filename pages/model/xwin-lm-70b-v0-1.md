@@ -136,6 +136,6 @@ Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/mradermacher/Xwi
    ollama run xwinlm:70b-v0.1
    ```
 
-Official weights and documentation: [huggingface.co/Xwin-LM](https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1)
+Model repository and documentation: [huggingface.co/Xwin-LM](https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1)
 
 [interactive version](https://whatmodel.sh/model/xwin-lm-70b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

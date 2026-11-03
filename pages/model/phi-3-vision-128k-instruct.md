@@ -25,8 +25,8 @@ vision &amp; documents  ●▁▂▂▁▃▄▂▆▇█▄    #153 of 153     
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [Mistral 7B v0.1 (base)](mistral-7b-v0-1.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>   44.5%  ▁··▁●▄▆▇▄▅█▄ beats 4/48   medium · avg 49%    5.9%  at its level · small run
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (maker)</a>   44.5%  ▁··▁●▄▆▇▄▅█▄ beats 4/48   medium · avg 49%    5.9%  at its level · small run
 </pre>
 
 </details>
@@ -40,12 +40,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>        60.5%  ▄█●▄▄·██·▄·█ beats 3/12   easy · avg 69%       42%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      880.5  ●▁▂▂▂▂▃▄▅▅█▇ beats 0/152  avg 1061             21%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        31.6%  ▂▂▂●▃▂·▂▂··▂ beats 4/13   hard · avg 34%       15%  typical
-<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                     40.4%  ▁····▁●▃█▆▆▅ beats 2/53   hard · avg 48%      9.1%  small run
-<a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>           44.5%  ▁··▁●▄▆▇▄▅█▄ beats 4/48   medium · avg 49%    5.9%  at its level · small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (maker)</a>                   40.4%  ▁····▁●▃█▆▆▅ beats 2/53   hard · avg 48%      9.1%  small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (maker)</a>         44.5%  ▁··▁●▄▆▇▄▅█▄ beats 4/48   medium · avg 49%    5.9%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   38.4%  ▅●█··▅▃····▃ beats 2/9    hard · avg 42%      3.2%  blunt
-<a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                        81.4%  ▁··▁▁▁▁▁▂●▅█ beats 16/44  easy · avg 78%      1.3%  blunt · at its level · noisy · small run
-<a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                        70.9%  ▁▁▁▄●▁▃·▃▃▃█ beats 9/24   easy · avg 75%      1.2%  blunt · at its level · small run
-<a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                      76.7%  ▁▁▅●▃▇·▄·█·▃ beats 9/28   easy · avg 82%      0.8%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (maker)</a>                      81.4%  ▁··▁▁▁▁▁▂●▅█ beats 16/44  easy · avg 78%      1.3%  blunt · at its level · noisy · small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (maker)</a>                      70.9%  ▁▁▁▄●▁▃·▃▃▃█ beats 9/24   easy · avg 75%      1.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (maker)</a>                    76.7%  ▁▁▅●▃▇·▄·█·▃ beats 9/28   easy · avg 82%      0.8%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   56% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇
-<a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (lab)</a>                    5   18% ▇▇
+<a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (submitted / mak…</a>        5   18% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 43.0
@@ -76,6 +76,6 @@ weighted average                                   = 43.0
    vllm serve microsoft/Phi-3-vision-128k-instruct --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-vision-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

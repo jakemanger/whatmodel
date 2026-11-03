@@ -6,7 +6,7 @@
 
 Addis AI · closed weights
 
-**score 50.1** ±15.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.1** ±15.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -32,10 +32,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                results  share of the score
-<a name="speech-amharic-addis-bysa"></a><a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Addis AI Amharic TTS benchmark (lab)</a>        1    0% ▇
-prior: pull toward the middle                  100% ▇▇▇▇▇▇▇▇▇▇▇▇
-weighted average                               = 50.1
+source                                    results  share of the score
+<a name="speech-amharic-addis-bysa"></a><a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Addis AI Amharic TTS benchmark (submitt…</a>        1    0% ▇
+prior: pull toward the middle                      100% ▇▇▇▇▇▇▇▇▇▇▇▇
+weighted average                                   = 50.1
 </pre>
 
 <sub>Licences: Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>

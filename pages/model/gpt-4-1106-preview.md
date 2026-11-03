@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   35.7%  ▁▁·▁▂▄▆●▅▂·▂ beats 20/31  hard · avg 23%      7.4%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   65.4%  ▁·▁▂▄▁▆▄●▆▂▂ beats 38/62  medium · avg 51%    5.7%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                73.3%  ▁···▁▁▂▅▇█●▂ beats 69/75  easy · avg 66%      3.0%  at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>       83.7%  ●█▆▆▂··▂···▂ beats 0/15   easy · avg 83%      1.1%  typical
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (maker)</a>     83.7%  ●█▆▆▂··▂···▂ beats 0/15   easy · avg 83%      1.1%  typical
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails 
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         40.0%  ▂▂▅▆●█▆▃▅▂▃▄ beats 32/92  hard · avg 28%      7.1%  sharp · at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH (simple-evals, original test…</a>   64.3%  ●····▄··▄··█ beats 0/5    medium · avg 62%    1.3%  at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            87.1%  ▁····▁●▁█▁▃▁ beats 5/16   easy · avg 80%      1.2%  typical
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (maker)</a>          87.1%  ▁····▁●▁█▁▃▁ beats 5/16   easy · avg 80%      1.2%  typical
 </pre>
 
 </details>
@@ -70,11 +70,11 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 52.0%  ▁▁▁▂▂▃▂█▆▃●▃ beats 54/61   medium · avg 38%     14%  at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    42.5%  ●▃▃█·▃▃▅▃▃▃▅ beats 2/16    hard · avg 39%      5.0%  sharp · at its level
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (make…</a>   42.5%  ●▃▃█·▃▃▅▃▃▃▅ beats 2/16    hard · avg 39%      5.0%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         42.4%  ▁▁▁▁▂▄●▄▅▇█▅ beats 46/211  hard · avg 39%      4.7%  sharp · at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>   84.7%  ▂▂·●▄▄▂·█▂·▂ beats 2/16    easy · avg 79%      2.4%  typical
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            87.0%  ▁▁·▁·▂▃▄█●·▁ beats 20/22   easy · avg 82%      0.5%  typical
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>   83.2%  ▂▂▄▆▆●·▂···▄ beats 10/16   easy · avg 78%      0.3%  blunt
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (m…</a>   83.2%  ▂▂▄▆▆●·▂···▄ beats 10/16   easy · avg 78%      0.3%  blunt
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           81.2%  ▄··▂▄▂▆██●▄▂ beats 17/21   easy · avg 67%      0.2%  at its level · noisy
 </pre>
 

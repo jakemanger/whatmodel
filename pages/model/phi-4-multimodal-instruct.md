@@ -71,6 +71,6 @@ weighted average                                   = 57.9
    vllm serve microsoft/Phi-4-multimodal-instruct --trust-remote-code --max-model-len 12800 --enable-lora --max-lora-rank 320 --limit-mm-per-prompt '{"audio":1}' --lora-modules speech=$(hf download microsoft/Phi-4-multimodal-instruct)/speech-lora
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-4-multimodal-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

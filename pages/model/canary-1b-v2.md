@@ -37,21 +37,21 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty  counts  why
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">LibriSpeech test-clean WER</a>            1.9%  ▁···▁▁▂·▄▄●█ beats 29/56  avg 2.3%      9.1%  blunt · several runs
 <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition suite …</a>   11.8%  ▄····●▄▄···▄ beats 2/5    avg 19%       7.0%  typical
-<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">SPGISpeech test WER (lab)</a>             2.3%  ▄▄··▄██··●██ beats 7/11   avg 5.4%      6.4%  sharp
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">SPGISpeech test WER (maker)</a>           2.3%  ▄▄··▄██··●██ beats 7/11   avg 5.4%      6.4%  sharp
 <a href="https://arxiv.org/html/2509.14128v2#A2.T11">FLEURS 25 European languages, mea…</a>    8.4%  ██·········● beats 2/2    avg 18%       6.3%  small run · several runs
 <a href="https://arxiv.org/html/2509.14128v2#A2.T13">CoVoST 2 source speech, 13 langua…</a>    8.9%  █·····█····● beats 2/2    avg 17%       6.3%  small run · several runs
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.1%  ▁▁▁▃··▁▁▂█●▆ beats 55/86  avg 8.2%      6.2%  blunt
 <a href="https://arxiv.org/html/2509.14128v2#A2.T12">Multilingual LibriSpeech 6 langua…</a>    7.3%  █·●········▄ beats 2/3    avg 11%       5.9%  several runs
 <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 WER (short-form, Open…</a>   11.8%  █······●██·█ beats 1/4    avg 21%       5.3%  typical
 <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">AMI WER (Open ASR / ESB test spli…</a>   16.0%  ▄●·······█·▄ beats 1/4    avg 24%       5.0%  typical
-<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">GigaSpeech test WER (lab)</a>            10.8%  ▁····▁··▁●█▂ beats 3/17   avg 17%       4.6%  typical
-<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-other WER (lab)</a>      3.6%  ▁···▁▁▁▆▆█●▁ beats 50/56  avg 5.4%      3.8%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">GigaSpeech test WER (maker)</a>          10.8%  ▁····▁··▁●█▂ beats 3/17   avg 17%       4.6%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-other WER (maker)</a>    3.6%  ▁···▁▁▁▆▆█●▁ beats 50/56  avg 5.4%      3.8%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">FLEURS English test WER</a>               4.5%  ▁··▁▁▁▁▁▁▃●▁ beats 36/56  avg 5.8%      3.2%  blunt
 <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>    9.8%  ▂▂·····●▂·█▂ beats 2/8    avg 13%       2.9%  typical
-<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">VoxPopuli English test WER (lab)</a>      6.3%  █▄▄··███●▄██ beats 10/16  avg 9.0%      2.5%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">VoxPopuli English test WER (maker)</a>    6.3%  █▄▄··███●▄██ beats 10/16  avg 9.0%      2.5%  typical
 <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   24.7%  ▂▂···▃▂▅●▃▂▂ beats 11/16  avg 32%       2.4%  blunt
-<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">TED-LIUM test WER (short-form) (l…</a>    4.3%  ▁·▁▇█▃·▁▁●█▄ beats 18/27  avg 5.0%      0.2%  blunt
-<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 long-form WER (lab)</a>      13.8%  █······█·█●█ beats 3/4    avg 20%          —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">TED-LIUM test WER (short-form) (m…</a>    4.3%  ▁·▁▇█▃·▁▁●█▄ beats 18/27  avg 5.0%      0.2%  blunt
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 long-form WER (maker)</a>    13.8%  █······█·█●█ beats 3/4    avg 20%          —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">NVIDIA ASR model cards (lab)</a>                   11   36% ▇▇▇▇
+<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">NVIDIA ASR model cards (submitted / mak…</a>       11   36% ▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            2   27% ▇▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">transcribe.cpp model catalog · LibriSpe…</a>        2   11% ▇
 <a name="paper-2509.14128v2-canary-parakeet"></a><a href="https://arxiv.org/html/2509.14128v2#A2.T13">Canary-1B-v2 &amp; Parakeet-TDT-0.6B-v3: Ef…</a>        3   11% ▇
@@ -97,7 +97,7 @@ NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob
 
 Other versions: fp32 (~5.2 GB, NVIDIA only) `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-v2').transcribe(['audio.wav']))"`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-v2)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-v2)
 
 ## Published speed measurements
 

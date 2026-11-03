@@ -52,6 +52,6 @@ weighted average                                 = 37.7
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Voicelab/trurl-2-13b-academic', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Voicelab](https://huggingface.co/Voicelab/trurl-2-13b-academic)
+Model repository and documentation: [huggingface.co/Voicelab](https://huggingface.co/Voicelab/trurl-2-13b-academic)
 
 [interactive version](https://whatmodel.sh/model/trurl-2-13b-academic) · [JSON](https://whatmodel.sh/api?format=json&all=1)

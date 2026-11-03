@@ -109,6 +109,6 @@ Other versions: Q8_0 (~17.9 GB) `ollama run hf.co/mradermacher/Ling-lite-1.5-GGU
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inclusionAI/Ling-lite-1.5', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-lite-1.5)
+Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ling-lite-1.5)
 
 [interactive version](https://whatmodel.sh/model/ling-lite-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

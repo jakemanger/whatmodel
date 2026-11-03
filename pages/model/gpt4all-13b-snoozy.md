@@ -57,6 +57,6 @@ weighted average                                   = 29.2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='nomic-ai/gpt4all-13b-snoozy', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/nomic-ai](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy)
+Model repository and documentation: [huggingface.co/nomic-ai](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy)
 
 [interactive version](https://whatmodel.sh/model/gpt4all-13b-snoozy) · [JSON](https://whatmodel.sh/api?format=json&all=1)

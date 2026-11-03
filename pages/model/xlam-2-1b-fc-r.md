@@ -110,6 +110,6 @@ Other versions: Q8_0 (~1.6 GB) `ollama run hf.co/Salesforce/xLAM-2-1b-fc-r-gguf:
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/xLAM-2-1b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/Salesforce](https://huggingface.co/Salesforce/xLAM-2-1b-fc-r)
+Model repository and documentation: [huggingface.co/Salesforce](https://huggingface.co/Salesforce/xLAM-2-1b-fc-r)
 
 [interactive version](https://whatmodel.sh/model/xlam-2-1b-fc-r) · [JSON](https://whatmodel.sh/api?format=json&all=1)

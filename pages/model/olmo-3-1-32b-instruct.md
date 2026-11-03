@@ -139,6 +139,6 @@ Other versions: Q8_0 (~39.14 GB) `ollama run olmo-3.1:32b-instruct-q8_0`
 
 Other versions: 8bit (~34.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3.1-32B-Instruct)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3.1-32B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/olmo-3-1-32b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

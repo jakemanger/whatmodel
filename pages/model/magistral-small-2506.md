@@ -49,8 +49,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), 
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 48%         21%  sharp · at its level
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         15%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (maker)</a>          62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 48%         21%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (maker)</a>          70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         15%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/197  very hard · avg 7.2%    7.1%  sharp · noisy
 </pre>
 
@@ -163,6 +163,6 @@ Other versions: Q8_0 (~28.78 GB) `ollama run magistral:24b-small-2506-q8_0`
    mlx_lm.server --model lmstudio-community/Magistral-Small-2506-MLX-4bit
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2506)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2506)
 
 [interactive version](https://whatmodel.sh/model/magistral-small-2506) · [JSON](https://whatmodel.sh/api?format=json&all=1)

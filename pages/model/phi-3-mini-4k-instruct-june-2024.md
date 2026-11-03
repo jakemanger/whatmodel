@@ -164,6 +164,6 @@ Other versions: Q8_0 (~4.06 GB) `ollama run hf.co/bartowski/Phi-3.1-mini-4k-inst
 
 Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-3-mini-4k-instruct-8bit`
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-mini-4k-instruct-june-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

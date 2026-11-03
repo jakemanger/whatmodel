@@ -111,6 +111,6 @@ Other versions: Q8_0 (~7.6 GB) `ollama run hf.co/bartowski/speechless-starcoder2
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uukuguy/speechless-starcoder2-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-starcoder2-7b)
+Model repository and documentation: [huggingface.co/uukuguy](https://huggingface.co/uukuguy/speechless-starcoder2-7b)
 
 [interactive version](https://whatmodel.sh/model/speechless-starcoder2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

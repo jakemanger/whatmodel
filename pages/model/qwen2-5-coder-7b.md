@@ -27,16 +27,16 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   26.2%  ▁▁·▁▂▄●█▅▂·▂ beats 13/31  hard · avg 23%       22%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   57.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 26/62  medium · avg 51%     20%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      88.4%  ▄·▄···█··●·▄ beats 4/6    easy · avg 84%       11%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     84.1%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 80%       10%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           83.5%  █···███·●█·█ beats 4/6    easy · avg 77%      6.5%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      76.5%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 70%      5.5%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          71.7%  ▄····▄▄·▄·●▄ beats 4/6    easy · avg 66%      5.0%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval (maker)</a>                    88.4%  ▄·▄···█··●·▄ beats 4/6    easy · avg 84%       11%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (maker)</a>                   84.1%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 80%       10%  sharp
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (maker)</a>                         83.5%  █···███·●█·█ beats 4/6    easy · avg 77%      6.5%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (maker)</a>                    76.5%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 70%      5.5%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (maker)</a>                        71.7%  ▄····▄▄·▄·●▄ beats 4/6    easy · avg 66%      5.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   10.7%  █▂▁▁▂▂●▃▅▅▅▇ beats 17/47  hard · avg 33%      4.0%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   55.2%  ▃··▁▂▂▃▂●▃▄▂ beats 30/47  medium · avg 51%    3.2%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   41.0%  ▁▁▁▁▁▁▂▂▃█●▄ beats 40/47  hard · avg 32%      2.9%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     65.8%  █·██·█··●·██ beats 4/6    medium · avg 56%    2.6%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     65.9%  ▄·█··▄·●··▄▄ beats 4/6    medium · avg 54%    0.9%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (maker)</a>                   65.8%  █·██·█··●·██ beats 4/6    medium · avg 56%    2.6%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (maker)</a>                   65.9%  ▄·█··▄·●··▄▄ beats 4/6    medium · avg 54%    0.9%  blunt · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 43/47  easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>        41.0%  ▄······▄▄●·█ beats 4/6      medium · avg 37%    3.5%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (maker)</a>      41.0%  ▄······▄▄●·█ beats 4/6      medium · avg 37%    3.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 187/276  medium · avg 72%    2.4%  at its level · noisy
 </pre>
 
@@ -58,7 +58,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   45% ▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (submitted / maker-reported)</a>               8   45% ▇▇▇▇▇
 <a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   22% ▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   20% ▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   10% ▇
@@ -152,7 +152,7 @@ Other versions: Q8_0 (~9.64 GB) `ollama run qwen2.5-coder:7b-instruct-q8_0`
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen2.5-Coder-7B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
 
 ## Published speed measurements
 

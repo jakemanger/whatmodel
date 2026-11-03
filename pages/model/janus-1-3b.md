@@ -25,8 +25,8 @@ Beats [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher 
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                        61.0%  ▇▃▅●▁▄▅▃█▃▃▅ beats 13/39  easy · avg 83%          35%  at its level · small run
-<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      79.7%  ●·▂·▂▆█▄▂▄▂▂ beats 0/17   very easy · avg 89%     31%  at its level · small run
+<a href="https://arxiv.org/html/2501.17811v1">GenEval (maker)</a>                      61.0%  ▇▃▅●▁▄▅▃█▃▃▅ beats 13/39  easy · avg 83%          35%  at its level · small run
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (maker)</a>                    79.7%  ●·▂·▂▆█▄▂▄▂▂ beats 0/17   very easy · avg 89%     31%  at its level · small run
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   23.0%  ●·▆▂▆█▄▆▂▄·▄ beats 0/22   medium · avg 60%        28%  at its level
 </pre>
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (lab)</a>                               2   66% ▇▇▇▇▇▇▇▇
+<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (submitted / maker-reported)</a>        2   66% ▇▇▇▇▇▇▇▇
 <a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   28% ▇▇▇
 prior: pull toward the middle                        6% ▇
 weighted average                                   = 31.7
@@ -65,6 +65,6 @@ DeepSeek-AI  <a href="https://arxiv.org/html/2410.13848v1">GenEval</a>  61.0%  o
    git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && python generation_inference.py
    ```
 
-Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-1.3B)
+Model repository and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-1.3B)
 
 [interactive version](https://whatmodel.sh/model/janus-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

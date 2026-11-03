@@ -107,6 +107,6 @@ Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/ggml-org/Qwen2.5-
 
 Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Omni-7B)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Omni-7B)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-omni-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

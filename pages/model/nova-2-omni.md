@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 65.7** ±6.6 · #144 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 65.7** ±6.6 · #144 of 962 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -35,10 +35,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                     1   80% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle            20% ▇▇
-weighted average                        = 65.7
+source                                   results  share of the score
+<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (submitted / maker-reported)</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                      20% ▇▇
+weighted average                                  = 65.7
 </pre>
 
 <sub>Licences: Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

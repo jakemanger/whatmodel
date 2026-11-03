@@ -28,7 +28,7 @@ Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">OSWorld-Verified (lab)</a>               80.4%  █▃·▂▅▂▃▂▅▃●▆ beats 20/27  hard · avg 19%    1.7%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">OSWorld-Verified (maker)</a>             80.4%  █▃·▂▅▂▃▂▅▃●▆ beats 20/27  hard · avg 19%    1.7%  at its level · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Humanity's Last Exam with tools (…</a>   61.0%  ▁·▁▂▂▁▄▄▇█●▅ beats 54/62  hard · avg 15%       —  not counted yet: no other model in the …
 </pre>
 
@@ -73,12 +73,12 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.6%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 166/211  hard · avg 39%          5.3%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    56.6%  ▁▁▃▂▃▃▆▆█●▂▅ beats 63/81    very hard · avg 8.0%    3.1%  at its level
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Video-MME v2 (with subtitles) (la…</a>   61.5%  █·········●█ beats 1/2      hard · avg 17%          2.0%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">SimpleVQA with tools (search) (la…</a>   73.6%  █·········█● beats 2/2      hard · avg 27%          1.9%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">IntPhys 2 (lab)</a>                      68.3%  █···█······● beats 2/2      hard · avg 27%          1.5%  at its level · small run
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools (lab)</a>          80.2%  █······●··██ beats 1/3      hard · avg 30%          0.8%  noisy · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">Video-MME v2 (with subtitles) (ma…</a>   61.5%  █·········●█ beats 1/2      hard · avg 17%          2.0%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">SimpleVQA with tools (search) (ma…</a>   73.6%  █·········█● beats 2/2      hard · avg 27%          1.9%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">IntPhys 2 (maker)</a>                    68.3%  █···█······● beats 2/2      hard · avg 27%          1.5%  at its level · small run
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">BabyVision with tools (maker)</a>        80.2%  █······●··██ beats 1/3      hard · avg 30%          0.8%  noisy · small run
 <a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">ZeroBench main with tools (pass@5…</a>   50.0%  ▄········●·▄ beats 2/3                                 —  not counted yet: no other model in the …
-<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools (lab)</a>            49.4%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+<a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/0fb02478b02565b2ce7fc57e6051c91172774ac9/README.md">WorldVQA with tools (maker)</a>          49.4%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -181,6 +181,6 @@ Other versions: ud-iq1_s (~179.74 GB) `lms get https://huggingface.co/unsloth/Mu
 
 Other versions: 3bit (~359.21 GB, Mac only) `mlx_lm.chat --model mlx-community/Muse-Spark-Open-816B-A42B-3bit`
 
-Official weights and documentation: [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)
+Model repository and documentation: [huggingface.co/meta-models](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B)
 
 [interactive version](https://whatmodel.sh/model/muse-spark-open) · [JSON](https://whatmodel.sh/api?format=json&all=1)

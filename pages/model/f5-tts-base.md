@@ -72,6 +72,6 @@ weighted average                                   = 57.1
    pip install f5-tts && f5-tts_infer-cli --model F5TTS_Base --gen_text "Hello, world."
    ```
 
-Official weights and documentation: [huggingface.co/SWivid](https://huggingface.co/SWivid/F5-TTS)
+Model repository and documentation: [huggingface.co/SWivid](https://huggingface.co/SWivid/F5-TTS)
 
 [interactive version](https://whatmodel.sh/model/f5-tts-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

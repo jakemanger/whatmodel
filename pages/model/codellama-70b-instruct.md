@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   58.9%  ▁·▂▁▂▆▅█▄▄●▂ beats 33/35  medium · avg 62%    5.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.1%  ▄▇█▃▄▇▄▁●▃·▁ beats 32/35  medium · avg 46%    4.0%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   53.0%  ▁·▁▁▄██▄█▁▅● beats 34/35  medium · avg 51%    4.0%  sharp · at its level
-<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.2%  ▃▃▃█··▃▅··●▃ beats 9/11   easy · avg 71%      3.5%  at its level
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (maker)</a>                         62.2%  ▃▃▃█··▃▅··●▃ beats 9/11   easy · avg 71%      3.5%  at its level
 </pre>
 
 </details>
@@ -159,6 +159,6 @@ Other versions: Q8_0 (~83.3 GB) `ollama run codellama:70b-instruct-q8_0`
    mlx_lm.server --model mlx-community/CodeLlama-70b-Instruct-hf-4bit-MLX
    ```
 
-Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf)
+Model repository and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-70b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

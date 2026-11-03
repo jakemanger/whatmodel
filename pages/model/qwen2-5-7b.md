@@ -234,7 +234,7 @@ Other versions: Q8_0 (~9.64 GB) `ollama run qwen2.5:7b-instruct-q8_0`
 
 Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen2.5-7B-Instruct-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 
 ## Published speed measurements
 

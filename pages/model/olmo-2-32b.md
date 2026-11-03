@@ -27,8 +27,8 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1251.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 91/385  avg 1260             15%  blunt
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   42.8%  ▃▃·▁▁█●▅·▁·▁ beats 16/22   medium · avg 39%     10%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      85.6%  ▁▃▁▃▁▄▁▁█●▃▁ beats 18/22   easy · avg 78%      2.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (m…</a>   42.8%  ▃▃·▁▁█●▅·▁·▁ beats 16/22   medium · avg 39%     10%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (maker)</a>    85.6%  ▁▃▁▃▁▄▁▁█●▃▁ beats 18/22   easy · avg 78%      2.8%  typical
 </pre>
 
 </details>
@@ -38,10 +38,10 @@ test                                result  vs the others in its run   difficult
 Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md), [Zephyr 7B beta](zephyr-7b-beta.md) here, though they rank lower overall.
 
 <pre>
-test                               result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 58%       8.3%  at its level · several runs
-<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 88%    7.5%  sharp
-<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>    9.8%  ●···▃▃···▃▃█ beats 1/8    hard · avg 24%         2.9%  typical
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (maker)</a>    49.7%  ▃▃█●▂▆·····▁ beats 13/22  medium · avg 58%       8.3%  at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (maker)</a>                        87.6%  ▂▃··▃▂▅█●▃▂▃ beats 16/22  very easy · avg 88%    7.5%  sharp
+<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (make…</a>    9.8%  ●···▃▃···▃▃█ beats 1/8    hard · avg 24%         2.9%  typical
 </pre>
 
 </details>
@@ -50,13 +50,13 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           77.3%  ▁▂·▁·▁▁█·●▃▅ beats 14/22    easy · avg 75%       21%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 70.6%  ▁▄·▁▁·▅●·▄▄▁ beats 12/22    medium · avg 72%     19%  sharp · at its level
-<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 31%      4.4%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (maker)</a>                         77.3%  ▁▂·▁·▁▁█·●▃▅ beats 14/22    easy · avg 75%       21%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (maker)</a>               70.6%  ▁▄·▁▁·▅●·▄▄▁ beats 12/22    medium · avg 72%     19%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (maker)</a>                        37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 31%      4.4%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 224/276  medium · avg 72%    3.4%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 67%    2.9%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   90.8%  ▁▁▁▁▁▁▁▂▄█●▃ beats 119/146  easy · avg 82%      1.8%  noisy
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 73.2%  ▃▃▂·▃▃·▅█▂▅● beats 21/21    medium · avg 60%    0.6%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (maker)</a>               73.2%  ▃▃▂·▃▃·▅█▂▅● beats 21/21    medium · avg 60%    0.6%  blunt · at its level
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (lab)</a>                          8   71% ▇▇▇▇▇▇▇▇
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (submitted / maker-rep…</a>        8   71% ▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card (…</a>        2    6% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    5% ▇
@@ -159,6 +159,6 @@ Other versions: Q8_0 (~34.26 GB) `ollama run hf.co/allenai/OLMo-2-0325-32B-Instr
    mlx_lm.server --model mlx-community/OLMo-2-0325-32B-Instruct-4bit
    ```
 
-Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct)
+Model repository and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/olmo-2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

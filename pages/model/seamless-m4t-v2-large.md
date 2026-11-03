@@ -74,6 +74,6 @@ weighted average                                   = 54.9
    git clone https://github.com/facebookresearch/seamless_communication && cd seamless_communication && pip install . && m4t_predict audio.wav --task asr --tgt_lang eng --model_name seamlessM4T_v2_large
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/seamless-m4t-v2-large)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/seamless-m4t-v2-large)
 
 [interactive version](https://whatmodel.sh/model/seamless-m4t-v2-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

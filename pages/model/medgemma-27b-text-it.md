@@ -121,6 +121,6 @@ Other versions: 4bit (~16 GB, Mac only) `lms get https://huggingface.co/lmstudio
 
 Other versions: 8bit (~30.2 GB, Mac only) `mlx_lm.chat --model mlx-community/medgemma-27b-text-it-8bit`
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-27b-text-it)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/medgemma-27b-text-it)
 
 [interactive version](https://whatmodel.sh/model/medgemma-27b-text-it) · [JSON](https://whatmodel.sh/api?format=json&all=1)

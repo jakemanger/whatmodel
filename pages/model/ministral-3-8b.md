@@ -190,7 +190,7 @@ Other versions: Q8_0 (~11.2 GB) `ollama run ministral-3:8b-instruct-2512-q8_0`
 
 Other versions: 8bit (~9 GB, Mac only) `mlx_lm.chat --model alexgusevski/Ministral-3-8B-Instruct-2512-q8-mlx`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512)
 
 ## Published speed measurements
 

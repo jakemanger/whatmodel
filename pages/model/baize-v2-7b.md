@@ -54,6 +54,6 @@ weighted average                              = 30.6
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='project-baize/baize-v2-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/project-baize](https://huggingface.co/project-baize/baize-v2-7b)
+Model repository and documentation: [huggingface.co/project-baize](https://huggingface.co/project-baize/baize-v2-7b)
 
 [interactive version](https://whatmodel.sh/model/baize-v2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

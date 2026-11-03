@@ -88,6 +88,6 @@ api (Replicate (PrunaAI optimized)) · $0.080/image · [replicate.com](https://r
 
 Other versions: nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) (~48.5 GB, NVIDIA only) `hf download EricRollei/HunyuanImage-3-NF4-v2 --local-dir ./HunyuanImage-3-NF4 && uv run --with transformers --with accelerate --with torch --with bitsandbytes python -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-NF4', trust_remote_code=True, device_map='auto'); m.load_tokenizer('./HunyuanImage-3-NF4'); m.generate_image(prompt='a cat holding a sign', stream=True).save('out.png')"`
 
-Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0)
+Model repository and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0)
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -27,7 +27,7 @@ Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-lar
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   55.0%  ▄·▆▂▆█▄●▂▄·▄ beats 17/22  medium · avg 60%     11%  at its level
-<a href="https://arxiv.org/html/2506.03147v4">GenEval (lab)</a>                        80.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 26/39  easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2506.03147v4">GenEval (maker)</a>                      80.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 26/39  easy · avg 79%         —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -90,6 +90,6 @@ PKU-YuanGroup  <a href="https://arxiv.org/html/2506.03147v4">ImgEdit-Bench overa
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/LanguageBind](https://huggingface.co/LanguageBind/UniWorld-V1)
+Model repository and documentation: [huggingface.co/LanguageBind](https://huggingface.co/LanguageBind/UniWorld-V1)
 
 [interactive version](https://whatmodel.sh/model/uniworld-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

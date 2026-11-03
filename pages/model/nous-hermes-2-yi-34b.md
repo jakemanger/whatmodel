@@ -121,6 +121,6 @@ Other versions: Q8_0 (~36.5 GB) `lms get https://huggingface.co/TheBloke/Nous-He
 
 Other versions: 8bit (~36.5 GB, Mac only) `mlx_lm.chat --model tstepspam/Nous-Hermes-2-Yi-34B-Q8-MLX`
 
-Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B)
+Model repository and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B)
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-yi-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

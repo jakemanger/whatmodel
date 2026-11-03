@@ -172,6 +172,6 @@ Other versions: Q8_0 (~9.19 GB) `ollama run openhermes:7b-mistral-v2.5-q8_0`
    mlx_lm.server --model TheBlueObserver/OpenHermes-2.5-Mistral-7B-MLX
    ```
 
-Official weights and documentation: [huggingface.co/teknium](https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B)
+Model repository and documentation: [huggingface.co/teknium](https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B)
 
 [interactive version](https://whatmodel.sh/model/openhermes-2-5-mistral-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

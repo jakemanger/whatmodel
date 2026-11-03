@@ -6,50 +6,75 @@
 
 llm-semantic-router · apache-2.0
 
-**score 62.4** ±1.0 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 40.9** ±1.3 · #261 of 355 · from 41 benchmark results across 2 sources
 
 ## What it's good at
 
 <sub>● marks Decision-1.0-Eos-0.8B (DecisionBench 3c2d6326) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃▃▃▁▂●▂▅█▂   #34 of 57    100%     27
+task                   vs the others         rank  counts  tests
+knowledge &amp; reasoning  ▁▂●▂▂▃▃▅▅▆█▂   #237 of 263    8.7%      5
+workflows              ▁▁▁▂▁▂●▆█▄▁▁    #84 of 114     91%     36
 </pre>
 
-<details><summary>workflows · #34 of 57 · 100% of its score</summary>
+<details><summary>knowledge &amp; reasoning · #237 of 263 · 8.7% of its score</summary>
+
+Trails [laya (DecisionBench 1c5edc17)](decisionbench-convaiinnovations-laya-1c5edc17.md), [JevK5 Lite](decision-jevk5-lite.md), [LFM2.5-2.6B-RLCD](decision-lfm2600.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · PubMedQA</a>                37.2%  ●▂▃▃·▂▃▃▆█▆▂ beats 0/25   easy · avg 69%         3.0%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · BoolQ</a>                   68.3%  ▁··●▃▁▄▁▃█▇▄ beats 1/25   easy · avg 84%         2.6%  typical
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SQuAD 2 answerability</a>   87.3%  ▁▁▃▁▇█▃▃▄●·▁ beats 23/25  easy · avg 80%         1.2%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · VitaminC verification</a>   62.4%  ▁···●·▄█▃··▁ beats 1/25   easy · avg 78%         1.2%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MultiNLI</a>                76.9%  ▂··●██▂▆▆█▆▂ beats 1/25   very easy · avg 87%    0.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>workflows · #84 of 114 · 91% of its score</summary>
+
+Beats [Qwen3-Reranker-4B (DecisionBench 22e68366)](decisionbench-qwen-qwen3-reranker-4b-22e68366.md) here, though they rank higher overall. Trails [LiquidAI d1-omni-600M](decision-d1-omni-600m.md), [InternLM Intern-Decision Qwen3.5-0.8B](decision-intern-decision-0-8b.md), [InternLM Intern-Decision Qwen3.5-2B](decision-intern-decision-2b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · action selecti…</a>   37.7%  ▂▁▂▃▄▃●▁▂█▇▄ beats 22/56  hard · avg 26%          16%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   59.3%  ▁▁▁▁▂▂▁▁▁●▃█ beats 24/56  hard · avg 29%          15%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   58.0%  ▁▁·▃▁▁▁▁▁●▃█ beats 25/56  hard · avg 22%          12%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · record classif…</a>   27.0%  ▃▂▁▂▂▂●▁▃▆██ beats 17/56  hard · avg 21%         7.4%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   89.9%  ▃▃▂·▁▁▁▁▁●█▅ beats 25/56  medium · avg 38%       6.4%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · verification (…</a>   56.5%  ▁▁▅▁▃▂▂▁▁●▇█ beats 25/56  medium · avg 40%       6.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · completion ass…</a>   75.0%  ▁▁▂▃▄·●▁▁▆█▂ beats 20/56  medium · avg 51%       6.1%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   66.0%  ▁·▁·▂▃▄●▂█▄▂ beats 23/56  medium · avg 45%       5.2%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · document recor…</a>   40.4%  ▂▂·▁▂▄●▆▄█▁▁ beats 22/56  hard · avg 27%         4.4%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · content classi…</a>   73.0%  ▁····▁▁▁▁▁▁● beats 23/56  medium · avg 41%       3.9%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   35.6%  ▁▁▅▅▃●▅█▃▃·▁ beats 21/56  hard · avg 27%         3.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · review scoring…</a>   57.0%  ▁······▂▃▅●█ beats 36/56  hard · avg 32%         2.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   61.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 25/56  medium · avg 45%       1.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   46.0%  ▁▁·▁▁▂▃▂▃▁●█ beats 34/56  very hard · avg 12%    1.8%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · target selecti…</a>   40.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 35/56  very hard · avg 11%    1.6%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   37.1%  ▂·▁▁●█▅▃▃▂▁▁ beats 16/56  hard · avg 33%         1.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   63.1%  █▁●▁▁▁▁▁▂▅▁▁ beats 28/56  medium · avg 55%       0.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · document workf…</a>   59.0%  █▄●▁▁▃▂▂▁·▁▁ beats 32/56  medium · avg 51%       0.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · safety gating …</a>   73.0%  ▂·····▆█●▂▄▇ beats 31/56  medium · avg 51%       0.5%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   46.1%  ▁▁▁▂▆●▃█···▁ beats 27/56  medium · avg 38%       0.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   52.0%  ▁·▁▁·▁▁●▂▃█▂ beats 13/56  medium · avg 55%       0.3%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · document class…</a>   26.0%  ▂▁·▂▁▁▁▄▁▂●█ beats 34/56  very hard · avg 13%    0.3%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · content modera…</a>   81.0%  ▁····▃▅●▂▂·█ beats 24/56  medium · avg 61%       0.2%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · context manage…</a>   59.0%  ▁·····▁▇●▁█▃ beats 19/56  medium · avg 59%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   76.5%  ▁·▁▄▇▄▅●▂▁▄█ beats 30/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · function agent…</a>   97.4%  ▃▃▄▅▆▂▅▄▃▄●▃ beats 50/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · routing triage…</a>   73.9%  █▁···▁·▂▆●▂▂ beats 47/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · action selecti…</a>   37.7%  ▂▁▂▃▄▃●▁▂█▇▄ beats 22/56  medium · avg 51%        12%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   59.3%  ▁▁▁▁▂▂▁▁▁●▃█ beats 24/56  medium · avg 64%        10%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   58.0%  ▁▁·▃▁▁▁▁▁●▃█ beats 25/56  medium · avg 58%       7.5%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   89.9%  ▃▃▂·▁▁▁▁▁●█▅ beats 25/56  very easy · avg 86%    5.4%  sharp · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · completion ass…</a>   75.0%  ▁▁▂▃▄·●▁▁▆█▂ beats 20/56  very easy · avg 86%    5.3%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · record classif…</a>   27.0%  ▃▂▁▂▂▂●▁▃▆██ beats 17/56  medium · avg 39%       5.0%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json">Ollaya · Typed decisions test</a>        51.2%  ▄·▂▆●▄▂·▄█▆▆ beats 7/22   medium · avg 64%       4.5%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   66.0%  ▁·▁·▂▃▄●▂█▄▂ beats 23/56  easy · avg 78%         4.2%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · verification (…</a>   56.5%  ▁▁▅▁▃▂▂▁▁●▇█ beats 25/56  medium · avg 56%       4.1%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · PAWS paraphrase</a>             67.2%  ▂▂▂●·▃█▆·▂·▁ beats 6/25   easy · avg 81%         3.2%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MASSIVE German intent</a>       75.4%  ▁····▁·▂▃●█▃ beats 8/23   easy · avg 84%         3.2%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · document recor…</a>   40.4%  ▂▂·▁▂▄●▆▄█▁▁ beats 22/56  medium · avg 46%       3.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · content classi…</a>   73.0%  ▁····▁▁▁▁▁▁● beats 23/56  easy · avg 73%         2.8%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · Aegis 2 safety</a>              68.8%  ▂·▁▁▂·●▃▂█▃▁ beats 6/25   easy · avg 77%         2.6%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   35.6%  ▁▁▅▅▃●▅█▃▃·▁ beats 21/56  medium · avg 45%       2.5%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SummEval relevance</a>          22.1%  ▁··▁▂▁●··▃██ beats 5/25   medium · avg 41%       2.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · review scoring…</a>   57.0%  ▁······▂▃▅●█ beats 36/56  medium · avg 52%       1.8%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SummEval consistency</a>        29.2%  ▁·▁▁··●▁▁▁▄█ beats 3/25   easy · avg 75%         1.6%  sharp · at its level · noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MASSIVE English intent</a>      81.7%  ▁·······▂●█▃ beats 7/23   very easy · avg 86%    1.6%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   61.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 25/56  medium · avg 62%       1.3%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   46.0%  ▁▁·▁▁▂▃▂▃▁●█ beats 34/56  medium · avg 35%       1.1%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · target selecti…</a>   40.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 35/56  hard · avg 29%         1.0%  noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · HelpSteer 2 scoring</a>         25.7%  ▁▁··●·▁▃▇█▅▄ beats 2/23   medium · avg 38%       0.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   37.1%  ▂·▁▁●█▅▃▃▂▁▁ beats 16/56  medium · avg 52%       0.8%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   63.1%  █▁●▁▁▁▁▁▂▅▁▁ beats 28/56  easy · avg 74%         0.6%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · document workf…</a>   59.0%  █▄●▁▁▃▂▂▁·▁▁ beats 32/56  easy · avg 66%         0.5%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · safety gating …</a>   73.0%  ▂·····▆█●▂▄▇ beats 31/56  easy · avg 77%         0.4%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   46.1%  ▁▁▁▂▆●▃█···▁ beats 27/56  medium · avg 52%       0.3%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   52.0%  ▁·▁▁·▁▁●▂▃█▂ beats 13/56  easy · avg 71%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · document class…</a>   26.0%  ▂▁·▂▁▁▁▄▁▂●█ beats 34/56  hard · avg 21%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · content modera…</a>   81.0%  ▁····▃▅●▂▂·█ beats 24/56  easy · avg 82%         0.2%  noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · Civil Comments</a>              65.3%  ▂●▂·▂▅▅▆▃▅·█ beats 1/23   very easy · avg 86%    0.1%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · context manage…</a>   59.0%  ▁·····▁▇●▁█▃ beats 19/56  easy · avg 73%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   76.5%  ▁·▁▄▇▄▅●▂▁▄█ beats 30/56  easy · avg 66%         0.1%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · function agent…</a>   97.4%  ▃▃▄▅▆▂▅▄▃▄●▃ beats 50/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">DecisionBench v1 · routing triage…</a>   73.9%  █▁···▁·▂▆●▂▂ beats 47/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -60,17 +85,26 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27  100% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        0% ▇
-weighted average                                   = 62.4
+<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/llm-semantic-router__Decision-1.0-Eos-0.8B/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   71% ▇▇▇▇▇▇▇▇▇
+<a name="ollaya-oct2026-original-runs"></a><a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json">Ollaya · original runs</a>                         14   28% ▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 40.9
 </pre>
 
-<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
+<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt)) · Ollaya · original runs ([Apache-2.0](../../licenses/ollaya-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+### Other ways to run it
 
-Official weights and documentation: [huggingface.co/llm-semantic-router](https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B)
+1. Run it as published (ollaya-f32, needs 5.8 GB, NVIDIA only, from [github.com/ollaya-dev](https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json))
+   
+   ```sh
+   ollaya run decision:eos --preset triage "The customer requests a refund."
+   ```
+
+[Download model files](https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B/tree/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd) · Published model files verified. This is the revision recorded by the benchmark. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity\_note. The command was not executed in this review. [Evidence](https://huggingface.co/api/models/llm-semantic-router/Decision-1.0-Eos-0.8B/revision/3c2d632609ceb66f3a13bbc5f77f3ab8cdeebcdd); checked 2026-10-31.
+
+Model repository and documentation: [huggingface.co/llm-semantic-router](https://huggingface.co/llm-semantic-router/Decision-1.0-Eos-0.8B)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-llm-semantic-router-decision-1-0-eos-0-8b-3c2d6326) · [JSON](https://whatmodel.sh/api?format=json&all=1)

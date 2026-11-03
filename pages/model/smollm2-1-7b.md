@@ -26,8 +26,8 @@ math            ▁▁●▅█▆▄█▄▂▁▁    #389 of 431     30%     
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
 <pre>
-test             result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>   28.1%  ▁▁▁▁▂●▆▆█▅▂▁ beats 40/205  easy · avg 76%    6.4%  sharp · at its level · small run
+test               result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2502.02737v1">HumanEval (maker)</a>   28.1%  ▁▁▁▁▂●▆▆█▅▂▁ beats 40/205  easy · avg 76%    6.4%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -65,10 +65,10 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       39.8%  ▁●·▁▁·▅█·▄▄▁ beats 2/22    medium · avg 72%     15%  sharp · several runs
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 75%       14%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    medium · avg 65%    8.4%  at its level
-<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.6%  at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (maker)</a>                    66.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 58/135  easy · avg 82%      2.6%  at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 31%      1.8%  typical
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 82%      1.8%  at its level · noisy
-<a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▂▂▃●█▅▃▁▁ beats 42/123  easy · avg 84%      1.1%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">PIQA (maker)</a>                         74.4%  ▁▁▁▂▂▃●█▅▃▁▁ beats 42/123  easy · avg 84%      1.1%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 60%    0.5%  blunt · at its level
 </pre>
 
@@ -79,14 +79,14 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                     8   46% ▇▇▇▇▇
-<a name="paper-2502.02737v1"></a><a href="https://arxiv.org/html/2502.02737v1">SmolLM2 paper (lab)</a>                  7   33% ▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   11% ▇
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1    8% ▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1    2% ▇
-prior: pull toward the middle             0% ▇
-weighted average                        = 33.0
+source                                    results  share of the score
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                                8   46% ▇▇▇▇▇
+<a name="paper-2502.02737v1"></a><a href="https://arxiv.org/html/2502.02737v1">SmolLM2 paper (submitted / maker-report…</a>        7   33% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    8% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 33.0
 </pre>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
@@ -172,6 +172,6 @@ Other versions: Q8_0 (~2.55 GB) `ollama run smollm2:1.7b-instruct-q8_0`
 
 Other versions: 8bit (~1.8 GB, Mac only) `mlx_lm.chat --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx`
 
-Official weights and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct)
+Model repository and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/smollm2-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

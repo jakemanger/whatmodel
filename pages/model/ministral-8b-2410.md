@@ -38,9 +38,9 @@ test                                result  vs the others in its run   difficult
 <details><summary>coding · #1 of 2 · 2.9% of its score</summary>
 
 <pre>
-test             result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>   76.8%  ▁▁▁▁▂▂▆▆█●▂▁ beats 163/205  easy · avg 80%    1.5%  sharp · at its level · noisy · small run
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>        70.0%  ▁▁▁▄▅█▆●▄▁▂▁ beats 68/86    easy · avg 74%    1.4%  at its level · small run
+test               result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (maker)</a>   76.8%  ▁▁▁▁▂▂▆▆█●▂▁ beats 163/205  easy · avg 80%    1.5%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (maker)</a>        70.0%  ▁▁▁▄▅█▆●▄▁▂▁ beats 68/86    easy · avg 74%    1.4%  at its level · small run
 </pre>
 
 </details>
@@ -227,6 +227,6 @@ Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model alexgusevski/Minis
    vllm serve mistralai/Ministral-8B-Instruct-2410 --tokenizer_mode mistral --config_format mistral --load_format mistral
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
 
 [interactive version](https://whatmodel.sh/model/ministral-8b-2410) · [JSON](https://whatmodel.sh/api?format=json&all=1)

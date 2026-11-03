@@ -26,8 +26,8 @@ Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-k
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           51.6%  ▃▃▂·▃▆▂●·▃·▃ beats 12/20  hard · avg 45%       41%  at its level
-<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>             60.9%  ██·········● beats 2/2    medium · avg 54%    8.5%  at its level · small run
-<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (lab)</a>    996.0  ▃▂····▂●▂▃▂▃ beats 4/14   avg 956             8.5%  blunt
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (maker)</a>           60.9%  ██·········● beats 2/2    medium · avg 54%    8.5%  at its level · small run
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (make…</a>   996.0  ▃▂····▂●▂▃▂▃ beats 4/14   avg 956             8.5%  blunt
 <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   75.8%  █·······█··● beats 2/2    easy · avg 73%      7.9%  small run
 <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   69.5%  ▄█●··█··▄·▄▄ beats 3/8    easy · avg 74%      6.2%  blunt
 </pre>
@@ -72,6 +72,6 @@ weighted average                                   = 53.0
    git clone -b step1xedit_v1p2 https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipelineV1P2; from diffusers.utils import load_image; p=Step1XEditPipelineV1P2.from_pretrained('stepfun-ai/Step1X-Edit-v1p2', torch_dtype=torch.bfloat16); p.to('cuda'); o=p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant on the neck of the girl.', num_inference_steps=50, true_cfg_scale=6, generator=torch.Generator().manual_seed(42), enable_thinking_mode=True, enable_reflection_mode=True); o.final_images[0].save('0001-final.jpg')"
    ```
 
-Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2)
+Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2)
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

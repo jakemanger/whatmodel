@@ -61,6 +61,6 @@ weighted average                                   = 32.4
    git clone https://github.com/Alpha-VLLM/Lumina-DiMOO.git && cd Lumina-DiMOO && conda create -n lumina_dimoo python=3.10 -y && conda activate lumina_dimoo && pip install -r requirements.txt && python inference/inference_t2i.py --checkpoint Alpha-VLLM/Lumina-DiMOO --prompt "A striking photograph of a glass of orange juice on a wooden kitchen table" --height 768 --width 1536 --timesteps 64 --cfg_scale 4.0 --seed 65513 --vae_ckpt Alpha-VLLM/Lumina-DiMOO --output_dir output/results_text_to_image
    ```
 
-Official weights and documentation: [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-DiMOO)
+Model repository and documentation: [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-DiMOO)
 
 [interactive version](https://whatmodel.sh/model/lumina-dimoo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

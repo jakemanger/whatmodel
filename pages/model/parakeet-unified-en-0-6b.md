@@ -51,6 +51,6 @@ weighted average                                   = 60.4
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-unified-en-0.6b-gguf parakeet-unified-en-0.6b-Q8_0.gguf --local-dir models/parakeet-unified-en-0.6b && build/bin/transcribe-cli -m models/parakeet-unified-en-0.6b/parakeet-unified-en-0.6b-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-unified-en-0.6b)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-unified-en-0.6b)
 
 [interactive version](https://whatmodel.sh/model/parakeet-unified-en-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

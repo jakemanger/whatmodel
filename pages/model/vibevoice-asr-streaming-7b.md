@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-09 · 8.67B params · mit
 
-**score 47.2** ±5.1 · #112 of 163 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.2** ±5.1 · #112 of 163 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -21,10 +21,10 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <details><summary>other tests (3)</summary>
 
 <pre>
-test                              result  vs the others in its run   difficulty  counts  why
-<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER (lab)</a>          10.2%  ▁····▁··▁●█▂ beats 6/17    avg 9.9%       40%  small run
-<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER (lab)</a>    6.5%  ▁···▁▁▁●▆█▆▁ beats 13/56   avg 4.8%       38%  small run
-<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER (lab)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 41/102  avg 2.1%       12%  blunt · small run
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER (maker)</a>          10.2%  ▁····▁··▁●█▂ beats 6/17    avg 9.9%       40%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER (maker)</a>    6.5%  ▁···▁▁▁●▆█▆▁ beats 13/56   avg 4.8%       38%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER (maker)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 41/102  avg 2.1%       12%  blunt · small run
 </pre>
 
 </details>
@@ -52,6 +52,6 @@ weighted average                                   = 47.2
    git clone https://github.com/microsoft/VibeVoice.git && cd VibeVoice && pip install -e . && python demo/vibevoice_asr_streaming_inference_from_file.py --model_path microsoft/VibeVoice-ASR-Streaming-7B --audio_files audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-streaming-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

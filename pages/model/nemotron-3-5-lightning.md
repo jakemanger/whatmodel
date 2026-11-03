@@ -154,7 +154,7 @@ Other versions: Q8_0 (~38.42 GB) `ollama run nemotron-3.5-lightning:30b-a3b-q8_0
 
 Other versions: 8bit (~33.6 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 
 ## Published speed measurements
 

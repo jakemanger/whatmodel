@@ -119,6 +119,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/Llama-3-Instruct-8B-S
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3)
+Model repository and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3)
 
 [interactive version](https://whatmodel.sh/model/llama-3-instruct-8b-sppo-iter3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

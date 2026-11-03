@@ -183,6 +183,6 @@ Other versions: Q8_0 (~85.22 GB) `ollama run nemotron:70b-instruct-q8_0`
 
 Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -53,6 +53,6 @@ weighted average                                   = 50.0
    uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt_ctc-110m').transcribe(['audio.wav']))"
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-110m)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-110m)
 
 [interactive version](https://whatmodel.sh/model/parakeet-tdt-ctc-110m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 62.5B params · proprietary
 
-**score 42.2** ±2.1 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 42.2** ±2.1 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,13 +22,13 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2210.11399v2">WinoGrande (lab)</a>                     76.2%  ▁▁▁▁▂▁▁▅▇█●▁ beats 115/131  easy · avg 85%     20%  at its level
-<a href="https://arxiv.org/html/2210.11399v2">TriviaQA (lab)</a>                       68.3%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 65/80    easy · avg 80%     19%  at its level
-<a href="https://arxiv.org/html/2210.11399v2">HellaSwag (lab)</a>                      79.7%  ▁▁▁▂▂▂▄▆█●▄▂ beats 108/135  easy · avg 87%     16%  at its level
-<a href="https://arxiv.org/html/2210.11399v2">BoolQ (lab)</a>                          85.4%  ▁····▁▂█▆▅▆● beats 94/103   easy · avg 90%     16%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">WinoGrande (maker)</a>                   76.2%  ▁▁▁▁▂▁▁▅▇█●▁ beats 115/131  easy · avg 85%     20%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">TriviaQA (maker)</a>                     68.3%  ▁▁▂▂▄▄▃▆▅●▅▂ beats 65/80    easy · avg 80%     19%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">HellaSwag (maker)</a>                    79.7%  ▁▁▁▂▂▂▄▆█●▄▂ beats 108/135  easy · avg 87%     16%  at its level
+<a href="https://arxiv.org/html/2210.11399v2">BoolQ (maker)</a>                        85.4%  ▁····▁▂█▆▅▆● beats 94/103   easy · avg 90%     16%  at its level
 <a href="https://arxiv.org/html/2210.11399v2">Natural Questions (closed book) (…</a>   18.7%  ▂▁▁▁▂▄▄▃●█▅▁ beats 41/68    hard · avg 29%     16%  typical
 <a href="https://arxiv.org/html/2210.11399v2">LAMBADA (OpenAI version), last-wo…</a>   79.7%  ▁·····▁▁▃▃█● beats 85/86    easy · avg 84%    7.0%  blunt
-<a href="https://arxiv.org/html/2210.11399v2">PIQA (lab)</a>                           81.4%  ▁▁▁▂▂▃▅█●▃▁▁ beats 104/123  easy · avg 85%    5.4%  blunt · at its level
+<a href="https://arxiv.org/html/2210.11399v2">PIQA (maker)</a>                         81.4%  ▁▁▁▂▂▃▅█●▃▁▁ beats 104/123  easy · avg 85%    5.4%  blunt · at its level
 </pre>
 
 </details>

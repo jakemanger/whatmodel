@@ -62,6 +62,6 @@ api  · price unknown · [zyphra.com](https://zyphra.com)
    git clone https://github.com/Zyphra/Zonos && cd Zonos && uv sync && uv pip install -e . && uv run sample.py
    ```
 
-Official weights and documentation: [huggingface.co/Zyphra](https://huggingface.co/Zyphra/Zonos-v0.1-transformer)
+Model repository and documentation: [huggingface.co/Zyphra](https://huggingface.co/Zyphra/Zonos-v0.1-transformer)
 
 [interactive version](https://whatmodel.sh/model/zonos-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

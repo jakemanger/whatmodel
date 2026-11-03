@@ -84,6 +84,6 @@ weighted average                                   = 29.4
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-66b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-66b)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-66b)
 
 [interactive version](https://whatmodel.sh/model/opt-66b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

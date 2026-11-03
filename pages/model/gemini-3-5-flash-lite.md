@@ -63,7 +63,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/#evaluation">CharXiv (reasoning questions) (la…</a>   74.5%  ▃·▃·▃▃●·▃▃█▅ beats 4/11     medium · avg 38%     10%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/#evaluation">CharXiv (reasoning questions) (ma…</a>   74.5%  ▃·▃·▃▃●·▃▃█▅ beats 4/11     medium · avg 38%     10%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1266.9  ▁▁▂▂▂▂▃▄▅▅●▇ beats 122/152  avg 1061            4.9%  blunt
 </pre>
 

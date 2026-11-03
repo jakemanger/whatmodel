@@ -55,6 +55,6 @@ weighted average                                   = 45.4
    git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/SenseVoiceSmall-gguf SenseVoiceSmall-Q8_0.gguf --local-dir models/sensevoice-small && build/bin/transcribe-cli --language en -m models/sensevoice-small/SenseVoiceSmall-Q8_0.gguf audio.wav
    ```
 
-Official weights and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/SenseVoiceSmall)
+Model repository and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/SenseVoiceSmall)
 
 [interactive version](https://whatmodel.sh/model/sensevoice-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -96,6 +96,6 @@ Other versions: Q8_0 (~2 GB) `lms get https://huggingface.co/lmstudio-community/
    ollama run internlm2:1.8b
    ```
 
-Official weights and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-1_8b-chat)
+Model repository and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-1_8b-chat)
 
 [interactive version](https://whatmodel.sh/model/internlm2-5-1-8b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

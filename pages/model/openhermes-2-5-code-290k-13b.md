@@ -111,6 +111,6 @@ Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/mradermacher/OpenHermes-2.5-Co
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ajibawa-2023/OpenHermes-2.5-Code-290k-13B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/OpenHermes-2.5-Code-290k-13B)
+Model repository and documentation: [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/OpenHermes-2.5-Code-290k-13B)
 
 [interactive version](https://whatmodel.sh/model/openhermes-2-5-code-290k-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

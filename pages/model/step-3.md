@@ -65,6 +65,6 @@ weighted average                        = 59.4
    uv pip install -U vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly && vllm serve stepfun-ai/step3-fp8 --tensor-parallel-size 8 --reasoning-parser step3 --enable-auto-tool-choice --tool-call-parser step3 --gpu-memory-utilization 0.85 --max-num-batched-tokens 4096 --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/step3)
+Model repository and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/step3)
 
 [interactive version](https://whatmodel.sh/model/step-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

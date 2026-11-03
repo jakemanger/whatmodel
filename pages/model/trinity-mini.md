@@ -93,6 +93,6 @@ weighted average                        = 53.1
    ollama run hf.co/arcee-ai/Trinity-Mini-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini)
+Model repository and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini)
 
 [interactive version](https://whatmodel.sh/model/trinity-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

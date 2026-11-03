@@ -96,6 +96,6 @@ weighted average                                   = 59.0
    git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && pip install -r models/tts/maskgct/requirements.txt && python -m models.tts.maskgct.maskgct_inference
    ```
 
-Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/MaskGCT)
+Model repository and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/MaskGCT)
 
 [interactive version](https://whatmodel.sh/model/maskgct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

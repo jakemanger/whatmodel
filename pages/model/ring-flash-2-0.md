@@ -103,6 +103,6 @@ weighted average                        = 56.6
    vllm serve inclusionAI/Ring-flash-2.0
    ```
 
-Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ring-flash-2.0)
+Model repository and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ring-flash-2.0)
 
 [interactive version](https://whatmodel.sh/model/ring-flash-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

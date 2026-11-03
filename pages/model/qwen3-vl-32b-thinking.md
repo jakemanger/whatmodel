@@ -28,12 +28,12 @@ vision &amp; documents  ▁▁▂▂▁▃▄▂●▇█▄     #89 of 153     
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
-test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>   46.9%  ▃·█········● beats 6/6    very hard · avg 9.8%     11%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>       6.9%  ▂▅▆▂●▆▂▂█▅▅▂ beats 9/27   very hard · avg 2.1%    3.5%  sharp · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>          57.0%  ▁····▂▁●▆█▃▁ beats 7/44   medium · avg 37%        2.5%  at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>         54.4%  ▁▁·▂▁▃▂●█▅▂▃ beats 15/42  hard · avg 29%          2.0%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>            71.7%  █▄··▄█·█▄█▄● beats 12/13  medium · avg 59%        1.8%  blunt · at its level
+test                      result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (maker)</a>   46.9%  ▃·█········● beats 6/6    very hard · avg 9.8%     11%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>         6.9%  ▂▅▆▂●▆▂▂█▅▅▂ beats 9/27   very hard · avg 2.1%    3.5%  sharp · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>            57.0%  ▁····▂▁●▆█▃▁ beats 7/44   medium · avg 37%        2.5%  at its level
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>           54.4%  ▁▁·▂▁▃▂●█▅▂▃ beats 15/42  hard · avg 29%          2.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (maker)</a>            71.7%  █▄··▄█·█▄█▄● beats 12/13  medium · avg 59%        1.8%  blunt · at its level
 </pre>
 
 </details>
@@ -65,11 +65,11 @@ test                                result  vs the others in its run  difficulty
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall.
 
 <pre>
-test                         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (lab)</a>    85.9%  ▃··▃▅·▃█▅▅▅● beats 16/16  medium · avg 69%    3.8%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>               83.7%  ▃·▃▃█··▃▅▃·● beats 12/12  medium · avg 44%    3.2%  sharp
-<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>   50.8%  ▅···▃▃···▃▃● beats 6/8    hard · avg 24%      1.3%  at its level
-<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified)</a>     96.7%  ▅····▃▃··▃▃● beats 8/8    easy · avg 73%      0.5%  noisy
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (maker)</a>   85.9%  ▃··▃▅·▃█▅▅▅● beats 16/16  medium · avg 69%    3.8%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (maker)</a>              83.7%  ▃·▃▃█··▃▅▃·● beats 12/12  medium · avg 44%    3.2%  sharp
+<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>    50.8%  ▅···▃▃···▃▃● beats 6/8    hard · avg 24%      1.3%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified)</a>      96.7%  ▅····▃▃··▃▃● beats 8/8    easy · avg 73%      0.5%  noisy
 </pre>
 
 </details>
@@ -80,19 +80,19 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv (reasoning questions) (la…</a>   65.2%  ▄▂▄▆▄▄●··▄█▂ beats 13/21  medium · avg 38%       8.3%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (lab)</a>                     78.1%  ▂···▆▂▂▂▄▄▄● beats 15/16  medium · avg 61%       6.0%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv descriptive questions (la…</a>   90.2%  ▄··▂▂▂·▂▄▄▂● beats 12/14  easy · avg 74%         4.1%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMStar (lab)</a>                         79.4%  ▂··▄▂▂·▄█▂▄● beats 16/16  medium · avg 65%       4.1%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU Pro (lab)</a>                       68.1%  ▃·█·▅▃▃▃▅▅▃● beats 15/16  medium · avg 46%       3.9%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (lab)</a>           85.9%  ▃··▃▅·▃█▅▅▅● beats 16/16  medium · avg 69%       3.8%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (lab)</a>                 67.4%  ▃·▃·▅▃▅▅▃▅█● beats 16/16  medium · avg 54%       1.8%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>                    78.4%  ▅▃·▃▅▅·█·▃▅● beats 14/16  easy · avg 70%         1.2%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">ChartQA (lab)</a>                        89.0%  ▂··▂·▂▃·▅▂●█ beats 12/17  easy · avg 85%         1.2%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">ScreenSpot-Pro (lab)</a>                 57.1%  ▂····▂▄··▂●▆ beats 5/11   medium · avg 46%       1.1%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (lab)</a>                         96.1%  ▃··▅▃▅▃█▃●▅▅ beats 12/17  very easy · avg 94%    1.0%  blunt · maxed out
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">CC-OCR (lab)</a>                         79.6%  ▃··▃▅·▅▅·●▅▃ beats 8/13   easy · avg 74%         0.8%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">OCRBench (lab)</a>                       85.5%  ▅█·▃●█▃▅▅▃·▃ beats 6/16   easy · avg 84%         0.4%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv (reasoning questions) (ma…</a>   65.2%  ▄▂▄▆▄▄●··▄█▂ beats 13/21  medium · avg 38%       8.3%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (maker)</a>                   78.1%  ▂···▆▂▂▂▄▄▄● beats 15/16  medium · avg 61%       6.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv descriptive questions (ma…</a>   90.2%  ▄··▂▂▂·▂▄▄▂● beats 12/14  easy · avg 74%         4.1%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMStar (maker)</a>                       79.4%  ▂··▄▂▂·▄█▂▄● beats 16/16  medium · avg 65%       4.1%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU Pro (maker)</a>                     68.1%  ▃·█·▅▃▃▃▅▅▃● beats 15/16  medium · avg 46%       3.9%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (maker)</a>         85.9%  ▃··▃▅·▃█▅▅▅● beats 16/16  medium · avg 69%       3.8%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (maker)</a>               67.4%  ▃·▃·▅▃▅▅▃▅█● beats 16/16  medium · avg 54%       1.8%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (maker)</a>                  78.4%  ▅▃·▃▅▅·█·▃▅● beats 14/16  easy · avg 70%         1.2%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">ChartQA (maker)</a>                      89.0%  ▂··▂·▂▃·▅▂●█ beats 12/17  easy · avg 85%         1.2%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">ScreenSpot-Pro (maker)</a>               57.1%  ▂····▂▄··▂●▆ beats 5/11   medium · avg 46%       1.1%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (maker)</a>                       96.1%  ▃··▅▃▅▃█▃●▅▅ beats 12/17  very easy · avg 94%    1.0%  blunt · maxed out
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">CC-OCR (maker)</a>                       79.6%  ▃··▃▅·▅▅·●▅▃ beats 8/13   easy · avg 74%         0.8%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">OCRBench (maker)</a>                     85.5%  ▅█·▃●█▃▅▅▃·▃ beats 6/16   easy · avg 84%         0.4%  blunt
 </pre>
 
 </details>
@@ -101,14 +101,14 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      73.1%  ▂····▂·▂▂█▆● beats 11/14    hard · avg 49%      7.1%  sharp · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       82.1%  ▄·▄·▄▄▄▄█▄█● beats 12/12    medium · avg 63%    5.0%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      59.0%  ▄··▄·▄▄▄█▄█● beats 11/11    medium · avg 37%    3.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     91.9%  ▃··▃·▃·█▃▅▃● beats 11/11    easy · avg 79%      3.6%  typical
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>                   63.7%  ▃··▃▅▃▃▃▃▃·● beats 10/11    medium · avg 43%    2.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                        62.6%  ▅··▃·▅▃▃·●·▃ beats 8/10     hard · avg 51%      2.7%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (la…</a>   77.3%  ▃··█··▅█▃▃●▃ beats 12/13    medium · avg 66%    2.3%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MVBench (lab)</a>                        73.2%  ▂▂▂·▂█··▆●·▂ beats 11/13    medium · avg 67%    1.0%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (maker)</a>    73.1%  ▂····▂·▂▂█▆● beats 11/14    hard · avg 49%      7.1%  sharp · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (maker)</a>                     82.1%  ▄·▄·▄▄▄▄█▄█● beats 12/12    medium · avg 63%    5.0%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (maker)</a>                    59.0%  ▄··▄·▄▄▄█▄█● beats 11/11    medium · avg 37%    3.7%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (maker)</a>                   91.9%  ▃··▃·▃·█▃▅▃● beats 11/11    easy · avg 79%      3.6%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (maker)</a>                 63.7%  ▃··▃▅▃▃▃▃▃·● beats 10/11    medium · avg 43%    2.7%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (maker)</a>                      62.6%  ▅··▃·▅▃▃·●·▃ beats 8/10     hard · avg 51%      2.7%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (ma…</a>   77.3%  ▃··█··▅█▃▃●▃ beats 12/13    medium · avg 66%    2.3%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">MVBench (maker)</a>                      73.2%  ▂▂▂·▂█··▆●·▂ beats 11/13    medium · avg 67%    1.0%  blunt · at its level
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            62.1%  ▁▁▁▂▂▂▄●█▇▄▂ beats 44/135   medium · avg 63%    1.0%  at its level · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 71.5%  ▁▁▁▁▁▂▂▅█●▆▄ beats 145/214  medium · avg 68%    0.9%  noisy · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                                 88.0%  ▁▁▁▂▂▃▅█▅▃▁● beats 122/123  easy · avg 83%      0.2%  blunt · small run
@@ -122,7 +122,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                 results  share of the score
-<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=23">Qwen (lab)</a>                                  26   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=23">Qwen (submitted / maker-reported)</a>           26   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think</a>                       7   13% ▇▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card</a>        2    2% ▇
 prior: pull toward the middle                     0% ▇
@@ -220,6 +220,6 @@ Other versions: Q8_0 (~36 GB) `ollama run qwen3-vl:32b-thinking-q8_0`
 
 Other versions: 8bit (~36 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-VL-32B-Thinking-MLX-8bit`
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking)
 
 [interactive version](https://whatmodel.sh/model/qwen3-vl-32b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

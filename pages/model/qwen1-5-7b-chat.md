@@ -164,6 +164,6 @@ Other versions: Q8_0 (~9.76 GB) `ollama run qwen:7b-chat-v1.5-q8_0`
    mlx_lm.server --model mlx-community/Qwen1.5-7B-Chat-4bit
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-7B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-7B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

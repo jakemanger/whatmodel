@@ -53,6 +53,6 @@ weighted average                                   = 46.8
 
 Other versions: BF16 (MOSHI) (~4.07 GB, NVIDIA only) `git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi python scripts/tts_pytorch.py - audio_output.wav`
 
-Official weights and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/tts-1.6b-en_fr)
+Model repository and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/tts-1.6b-en_fr)
 
 [interactive version](https://whatmodel.sh/model/kyutai-tts-1-6b-en-fr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

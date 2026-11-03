@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 32.76B params · cc-by-4.0
 
-**score 58.7** ±1.5 · #216 of 732 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.7** ±1.5 · #216 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -37,10 +37,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 58.7
+source                               results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (submitted / maker-reported)</a>        3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 58.7
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -128,6 +128,6 @@ Other versions: Q8_0 (~34.82 GB) `ollama run hf.co/bartowski/nvidia_OpenReasonin
 
 Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model litmudoc/OpenReasoning-Nemotron-32B-MLX-Q8`
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/OpenReasoning-Nemotron-32B)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/OpenReasoning-Nemotron-32B)
 
 [interactive version](https://whatmodel.sh/model/openreasoning-nemotron-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

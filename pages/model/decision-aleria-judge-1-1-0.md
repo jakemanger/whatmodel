@@ -4,11 +4,9 @@
 
 # Aleria Judge 1.1.0 (Gemma 4 31B) (decision readout)
 
-Decision Index submission: aleria-judge-1.1.0 · 31.27B params · closed weights
+Decision Index submission: aleria-judge-1.1.0 · released 2026-10-14 · 31.27B params · closed weights
 
-**score 60.4** ±3.6 · comparison only: no current run option verified · from 11 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 64.5** ±3.5 · #60 of 355 · from 12 benchmark results across 1 source
 
 ## What it's good at
 
@@ -16,24 +14,27 @@ Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.
 
 <pre>
 task    vs the others       rank  counts  tests
-vision  ▁·▁▂▂▂▂▅▄▃●█   #16 of 62     94%     11
+vision  ▁·▃▂▃▃▇▄▄●▄▃   #27 of 79     95%     12
 </pre>
 
-<details><summary>vision · #16 of 62 · 94% of its score</summary>
+<details><summary>vision · #27 of 79 · 95% of its score</summary>
+
+Beats [StartLux-Decision v1.1 9B](decision-startlux-decision-v1-1-9b-instant.md), [RSI-Jev v6.1 VL 27B (effort auto)](decision-rsi-jev-v6-1-vl-27b-auto.md), [StartLux-Decision v1.1 4B](decision-startlux-decision-v1-1-4b-instant.md) here, though they rank higher overall. Trails [Clef-flash](clef-flash.md), [Perplexity Decider Flash v1.2 (4B)](decision-pplx-decider-flash-v1-2.md), [Mercury Decide (free endpoint)](mercury-decide.md) here, though they rank lower overall.
 
 <pre>
 test                                        result  vs the others in its run  difficulty         counts  why
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Mind2…</a>  79.9900 points  ▁·▁▁▃▁▄▄▃●█▂ beats 39/61  avg 68.211 points     14%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · MMMU-…</a>  41.0600 points  ▁▁▅▁▄▁▄█▄▃●▇ beats 45/61  avg 27.174 points     12%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Winog…</a>  85.7500 points  ▁·▁▁▁▁·▂▁▃▅● beats 53/61  avg 71.393 points     11%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Moder…</a>  51.2000 points  ▆▃▃▆▄▄▇██▁●▆ beats 51/61  avg 32.571 points     10%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · RealW…</a>  60.6000 points  ▁·▂▂▁▃▃▅●▃▂█ beats 32/61  avg 57.381 points    9.0%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CharX…</a>  81.2000 points  ▂▁▁▁▁▃▁▅▅▆█● beats 57/61  avg 66.037 points    8.6%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · R-Ben…</a>  40.0800 points  ▂▄▇▆█▄▄▇●··▁ beats 58/61  avg 22.912 points    7.0%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Infog…</a>  97.8100 points  ▁·▁▂▁▁▃▁▂▂▅● beats 54/61  avg 86.972 points    7.0%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · BLINK…</a>  59.8900 points  ▁···▁▂▂▂█●▂▃ beats 45/61  avg 49.241 points    6.6%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CV-Be…</a>  76.1200 points  ▁▁▁▁▂▁▁▁▄●▃▃ beats 39/61  avg 70.318 points    5.2%  blunt
-<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · KIE (…</a>  92.7900 points  ▁··▁▁▁▁▁▂▄●▁ beats 53/61  avg 87.417 points    3.9%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Mind2…</a>  79.9900 points  ▁·▁▁▃▁▄▄▃●█▂ beats 39/61  avg 63.423 points     12%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · MMMU-…</a>  41.0600 points  ▁▁▅▁▄▁▄█▄▃●▇ beats 45/61  avg 22.797 points     11%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Winog…</a>  85.7500 points  ▁·▁▁▁▁·▂▁▃▅● beats 53/61  avg 66.987 points     10%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/leaderboard.parquet">Decision Index Vision 0.4: privat…</a>  66.7000 points  ▁▁▃▃▁▂▄▆▃▃▅● beats 52/61  avg 48.067 points     10%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Moder…</a>  51.2000 points  ▆▃▃▆▄▄▇██▁●▆ beats 51/61  avg 28.443 points    8.8%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · RealW…</a>  60.6000 points  ▁·▂▂▁▃▃▅●▃▂█ beats 32/61  avg 53.651 points    8.0%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CharX…</a>  81.2000 points  ▂▁▁▁▁▃▁▅▅▆█● beats 57/61  avg 62.137 points    7.8%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · Infog…</a>  97.8100 points  ▁·▁▂▁▁▃▁▂▂▅● beats 54/61  avg 83.859 points    6.2%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · R-Ben…</a>  40.0800 points  ▂▄▇▆█▄▄▇●··▁ beats 58/61  avg 19.676 points    6.2%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · BLINK…</a>  59.8900 points  ▁···▁▂▂▂█●▂▃ beats 45/61  avg 44.994 points    5.9%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · CV-Be…</a>  76.1200 points  ▁▁▁▁▂▁▁▁▄●▃▃ beats 39/61  avg 67.662 points    4.7%  blunt
+<a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 · KIE (…</a>  92.7900 points  ▁··▁▁▁▁▁▂▄●▁ beats 53/61  avg 85.184 points    3.4%  blunt
 </pre>
 
 </details>
@@ -43,18 +44,18 @@ test                                        result  vs the others in its run  di
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                                    results  share of the score
-<a name="decision-index-vision-04"></a><a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4 public suite …</a>       11   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                        6% ▇
-weighted average                                   = 60.4
+source                         results  share of the score
+<a name="decision-index-vision-04"></a><a href="https://huggingface.co/datasets/multimodalart/decision-index-vision-leaderboard/blob/7b4f33ec85120700f8daed7381b0b54542315811/benchmarks.parquet">Decision Index Vision 0.4</a>           12   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             5% ▇
+weighted average                        = 64.5
 </pre>
 
-<sub>Licences: Decision Index Vision 0.4 public suite ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Decision Index Vision 0.4 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Implementation and setup](https://github.com/ALERIA-ML/aleria-judge/tree/4956428) · Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified. [Evidence](https://github.com/ALERIA-ML/aleria-judge/blob/4956428/README.md); checked 2026-10-31.
 
-Official weights and documentation: [github.com/ALERIA-ML](https://github.com/ALERIA-ML/aleria-judge/tree/4956428)
+Model repository and documentation: [github.com/ALERIA-ML](https://github.com/ALERIA-ML/aleria-judge/tree/4956428)
 
 [interactive version](https://whatmodel.sh/model/decision-aleria-judge-1-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -109,6 +109,6 @@ Other versions: Q8_0 (~7.8 GB) `ollama run hf.co/mradermacher/mistral-orpo-beta-
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='kaist-ai/mistral-orpo-beta', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/kaist-ai](https://huggingface.co/kaist-ai/mistral-orpo-beta)
+Model repository and documentation: [huggingface.co/kaist-ai](https://huggingface.co/kaist-ai/mistral-orpo-beta)
 
 [interactive version](https://whatmodel.sh/model/mistral-orpo-beta) · [JSON](https://whatmodel.sh/api?format=json&all=1)

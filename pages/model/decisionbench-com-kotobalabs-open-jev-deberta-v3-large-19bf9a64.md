@@ -6,50 +6,63 @@
 
 com-kotobalabs · 0.43401216B params · apache-2.0
 
-**score 50.7** ±1.1 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 27.2** ±1.6 · #321 of 355 · from 29 benchmark results across 2 sources
 
 ## What it's good at
 
 <sub>● marks open-jev-deberta-v3-large (DecisionBench 19bf9a64) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃▃●▁▂▁▂▅█▂   #43 of 57     99%     27
+task         vs the others        rank  counts  tests
+workflows    ▁▁▁●▁▂▂▆█▄▁▁   #99 of 114     99%     28
+consistency  █····█·····●     #1 of 3*    0.1%      1
 </pre>
 
-<details><summary>workflows · #43 of 57 · 99% of its score</summary>
+<details><summary>workflows · #99 of 114 · 99% of its score</summary>
+
+Trails [GLiNER2.5-Decide](decision-gliner-decide.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   32.3%  ▁▁▁▁▂●▁▁▁▁▃█ beats 15/56  hard · avg 29%          14%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · action selecti…</a>   29.1%  ▂▁▂▃●▃▁▁▂█▇▄ beats 16/56  hard · avg 26%          13%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · completion ass…</a>   52.0%  ▁▁▂▃●·▂▁▁▆█▂ beats 13/56  medium · avg 51%        10%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   41.0%  ▃▃●·▁▁▁▁▁▁█▅ beats 18/56  medium · avg 38%        10%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   18.0%  ▁▁·▃●▁▁▁▁▁▃█ beats 12/56  hard · avg 22%         9.3%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   40.0%  ▁·▁·▂●▄▃▂█▄▂ beats 7/56   medium · avg 45%       6.8%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · verification (…</a>   46.0%  ▁▁▅▁▃●▂▁▁▇▇█ beats 19/56  medium · avg 40%       6.4%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · record classif…</a>   20.0%  ▃▂▁●▂▂▄▁▃▆██ beats 10/56  hard · avg 21%         5.9%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · content classi…</a>   67.0%  ▁····▁▁▁▁▁●█ beats 20/56  medium · avg 41%       4.6%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · document recor…</a>   24.7%  ▂▂·●▂▄▃▆▄█▁▁ beats 6/56   hard · avg 27%         3.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   25.8%  ▁▁●▅▃▃▅█▃▃·▁ beats 8/56   hard · avg 27%         3.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · review scoring…</a>   30.0%  ▁······▂●▅▇█ beats 9/56   hard · avg 32%         2.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   53.0%  ▁▁·▁▂▂▁●▃█▇▃ beats 17/56  medium · avg 45%       2.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   59.9%  █▁●▁▁▁▁▁▂▅▁▁ beats 24/56  medium · avg 55%       1.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   11.0%  ▁▁·▁▁▂●▂▃▁▁█ beats 14/56  very hard · avg 12%    1.0%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   29.7%  ▂·▁●▆█▅▃▃▂▁▁ beats 5/56   hard · avg 33%         1.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · target selecti…</a>   10.0%  ▁▁·▁▁▁▃●▂▁▁█ beats 19/56  very hard · avg 11%    0.9%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · document workf…</a>   66.5%  █▄▃●▁▃▂▂▁·▁▁ beats 36/56  medium · avg 51%       0.8%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · safety gating …</a>    0.0%  ●·····▆█▂▂▄▇ beats 0/56   medium · avg 51%       0.7%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   53.0%  ▁▁▁▂▆▃●█···▁ beats 30/56  medium · avg 38%       0.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   11.0%  ▁·●▁·▁▁█▂▃█▂ beats 1/56   medium · avg 55%       0.4%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · content modera…</a>    0.0%  ●····▃▅▃▂▂·█ beats 0/56   medium · avg 61%       0.4%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · context manage…</a>    0.0%  ●·····▁▇▆▁█▃ beats 0/56   medium · avg 59%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · document class…</a>   11.0%  ▂▁·▂▁▁▁●▁▂▂█ beats 21/56  very hard · avg 13%    0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   40.1%  ▁·▁▄▇●▅▄▂▁▄█ beats 19/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · function agent…</a>   49.9%  ▃▃▄▅●▂▅▄▃▄█▃ beats 23/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · routing triage…</a>    1.4%  █●···▁·▂▆▅▂▂ beats 17/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · action selecti…</a>   29.1%  ▂▁▂▃●▃▁▁▂█▇▄ beats 16/56  medium · avg 51%        15%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   32.3%  ▁▁▁▁▂●▁▁▁▁▃█ beats 15/56  medium · avg 64%        12%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · completion ass…</a>   52.0%  ▁▁▂▃●·▂▁▁▆█▂ beats 13/56  very easy · avg 86%     10%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   41.0%  ▃▃●·▁▁▁▁▁▁█▅ beats 18/56  very easy · avg 86%    9.2%  sharp · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   18.0%  ▁▁·▃●▁▁▁▁▁▃█ beats 12/56  medium · avg 58%       7.9%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   40.0%  ▁·▁·▂●▄▃▂█▄▂ beats 7/56   easy · avg 78%         6.8%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · record classif…</a>   20.0%  ▃▂▁●▂▂▄▁▃▆██ beats 10/56  medium · avg 39%       5.7%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · verification (…</a>   46.0%  ▁▁▅▁▃●▂▁▁▇▇█ beats 19/56  medium · avg 56%       5.6%  blunt · at its level
+<a href="https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json">Chao Ma · clean support routing</a>      84.0%  ●····█·····█ beats 0/2    very easy · avg 96%    4.4%  sharp · small run
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · content classi…</a>   67.0%  ▁····▁▁▁▁▁●█ beats 20/56  easy · avg 73%         4.2%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · document recor…</a>   24.7%  ▂▂·●▂▄▃▆▄█▁▁ beats 6/56   medium · avg 46%       3.7%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   25.8%  ▁▁●▅▃▃▅█▃▃·▁ beats 8/56   medium · avg 45%       3.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · review scoring…</a>   30.0%  ▁······▂●▅▇█ beats 9/56   medium · avg 52%       2.3%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   53.0%  ▁▁·▁▂▂▁●▃█▇▃ beats 17/56  medium · avg 62%       1.9%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   29.7%  ▂·▁●▆█▅▃▃▂▁▁ beats 5/56   medium · avg 52%       1.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   11.0%  ▁▁·▁▁▂●▂▃▁▁█ beats 14/56  medium · avg 35%       0.9%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   59.9%  █▁●▁▁▁▁▁▂▅▁▁ beats 24/56  easy · avg 74%         0.9%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · target selecti…</a>   10.0%  ▁▁·▁▁▁▃●▂▁▁█ beats 19/56  hard · avg 29%         0.9%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · document workf…</a>   66.5%  █▄▃●▁▃▂▂▁·▁▁ beats 36/56  easy · avg 66%         0.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · safety gating …</a>    0.0%  ●·····▆█▂▂▄▇ beats 0/56   easy · avg 77%         0.6%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   53.0%  ▁▁▁▂▆▃●█···▁ beats 30/56  medium · avg 52%       0.5%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   11.0%  ▁·●▁·▁▁█▂▃█▂ beats 1/56   easy · avg 71%         0.3%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · content modera…</a>    0.0%  ●····▃▅▃▂▂·█ beats 0/56   easy · avg 82%         0.3%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · context manage…</a>    0.0%  ●·····▁▇▆▁█▃ beats 0/56   easy · avg 73%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · document class…</a>   11.0%  ▂▁·▂▁▁▁●▁▂▂█ beats 21/56  hard · avg 21%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   40.1%  ▁·▁▄▇●▅▄▂▁▄█ beats 19/56  easy · avg 66%         0.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · function agent…</a>   49.9%  ▃▃▄▅●▂▅▄▃▄█▃ beats 23/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">DecisionBench v1 · routing triage…</a>    1.4%  █●···▁·▂▆▅▂▂ beats 17/56  medium · avg 42%       0.0%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>consistency · #1 of 3 · 0.1% of its score</summary>
+
+Beats [Jev 1.13](jev-1-13.md), [decider-2b (DecisionBench fa996cea)](decisionbench-mapika-decider-2b-fa996cea.md) here, though they rank higher overall.
+
+<pre>
+test                                      result  vs the others in its run  difficulty       counts  why
+<a href="https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json">Chao Ma · confidence under author…</a>  0.5714 auroc  █····█·····● beats 2/2    avg 0.426 auroc    0.1%  blunt · small run
 </pre>
 
 </details>
@@ -60,17 +73,18 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/com-kotobalabs__open-jev-deberta-v3-large/19bf9a64815add579fbf6c907bef584d9277a8e4/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="chao-ma-injection-20260922"></a><a href="https://github.com/ickma2311/jev-baselines-eval/blob/3b828cb68992c00835b3f126a3d13534da875277/injection/results/b1_verdict.json">Chao Ma · independent injection study</a>           2    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.7
+weighted average                                   = 27.2
 </pre>
 
-<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
+<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt)) · Chao Ma · independent injection study ([MIT](../../licenses/chao-ma-jev-eval-MIT.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/tree/19bf9a64815add579fbf6c907bef584d9277a8e4) · Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/com-kotobalabs/open-jev-deberta-v3-large/revision/19bf9a64815add579fbf6c907bef584d9277a8e4); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/com-kotobalabs](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large)
+Model repository and documentation: [huggingface.co/com-kotobalabs](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-com-kotobalabs-open-jev-deberta-v3-large-19bf9a64) · [JSON](https://whatmodel.sh/api?format=json&all=1)

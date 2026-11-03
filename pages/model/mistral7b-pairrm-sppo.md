@@ -119,6 +119,6 @@ Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/mradermacher/Mistral7B-PairRM-S
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCLA-AGI/Mistral7B-PairRM-SPPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Mistral7B-PairRM-SPPO)
+Model repository and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Mistral7B-PairRM-SPPO)
 
 [interactive version](https://whatmodel.sh/model/mistral7b-pairrm-sppo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

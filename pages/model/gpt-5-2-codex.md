@@ -26,10 +26,10 @@ Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 Pro](gpt-5-pro.md), [GPT
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>             64.0%  ██···█●··███ beats 3/6    hard · avg 15%           18%  at its level
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               38.2%  ●▄·····▄·▄▄▄ beats 0/6    hard · avg 16%           13%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (maker)</a>           64.0%  ██···█●··███ beats 3/6    hard · avg 15%           18%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (maker)</a>             38.2%  ●▄·····▄·▄▄▄ beats 0/6    hard · avg 16%           13%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14  very hard · avg 2.8%     10%  sharp · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 29%          7.4%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 29%          7.4%  blunt · at its level
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Tra
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.7  ▁▁▃▂●█▃▆▅▅▁▂ beats 25/129  avg 981                  51%  sharp
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.8%     10%  sharp · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 29%          7.4%  blunt · at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (maker)</a>                56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 29%          7.4%  blunt · at its level
 </pre>
 
 </details>

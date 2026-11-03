@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">UltraEval-Audio</a>                                 9   51% ▇▇▇▇▇▇
 <a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        9   43% ▇▇▇▇▇
-<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (la…</a>        1    5% ▇
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (su…</a>        1    5% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 64.2
 </pre>
@@ -76,6 +76,6 @@ weighted average                                   = 64.2
    git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/Fun-CosyVoice3-0.5B-2512', local_dir='pretrained_models/Fun-CosyVoice3-0.5B')" && python -c "import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/Fun-CosyVoice3-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', 'You are a helpful assistant.<|endofprompt|>希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav', stream=False))]"
    ```
 
-Official weights and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512)
+Model repository and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512)
 
 [interactive version](https://whatmodel.sh/model/fun-cosyvoice3-0-5b-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

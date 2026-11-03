@@ -53,6 +53,6 @@ weighted average                                   = 37.7
    uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='moonshine-ai/moonshine-base')('audio.wav')['text'])"
    ```
 
-Official weights and documentation: [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-base)
+Model repository and documentation: [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-base)
 
 [interactive version](https://whatmodel.sh/model/moonshine-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

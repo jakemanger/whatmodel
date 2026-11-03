@@ -69,6 +69,6 @@ weighted average                                   = 46.8
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-Predict2.5-14B)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-Predict2.5-14B)
 
 [interactive version](https://whatmodel.sh/model/cosmos-predict2-5-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

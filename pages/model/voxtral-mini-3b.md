@@ -40,17 +40,17 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-3b-2507.json">LibriSpeech test-clean WER</a>            1.9%  ▁···▁▁▂·▄▄●█ beats 30/56  avg 2.3%      7.9%  blunt · several runs
 <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition suite …</a>   12.2%  ▄····●▄▄···▄ beats 1/5    avg 19%       6.1%  typical
 <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.0%  ▁▁▁▃··▁▁▂█●▆ beats 59/86  avg 8.2%      5.5%  blunt
-<a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>             2.2%  ▄▄··▄██··▄●█ beats 8/11   avg 5.4%      4.6%  sharp
-<a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>                11.3%  ▄······▄···● beats 2/3    avg 22%       4.2%  typical
-<a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                    10.6%  █··█·●·····█ beats 2/3    avg 18%       3.9%  typical
+<a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (maker)</a>           2.2%  ▄▄··▄██··▄●█ beats 8/11   avg 5.4%      4.6%  sharp
+<a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (maker)</a>              11.3%  ▄······▄···● beats 2/3    avg 22%       4.2%  typical
+<a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (maker)</a>                  10.6%  █··█·●·····█ beats 2/3    avg 18%       3.9%  typical
 <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-form W…</a>    9.6%  █···█·····●█ beats 2/3    avg 16%       3.7%  typical
 <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-3b-2507.json">FLEURS English test WER</a>               3.9%  ▁··▁▁▁▁▁▁▃█● beats 53/56  avg 5.8%      3.6%  blunt · several runs
 <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-form W…</a>   11.8%  █····█·█···● beats 3/3    avg 21%       3.5%  typical
-<a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>            10.7%  ▁····▁··▁●█▂ beats 4/17   avg 19%       3.5%  typical
-<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (lab)</a>      4.0%  ▁···▁▁▁▆▆●▆▁ beats 38/56  avg 6.0%      3.0%  typical
+<a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (maker)</a>          10.7%  ▁····▁··▁●█▂ beats 4/17   avg 19%       3.5%  typical
+<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (maker)</a>    4.0%  ▁···▁▁▁▆▆●▆▁ beats 38/56  avg 6.0%      3.0%  typical
 <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>    8.3%  ▂▂·····▂▂·●▂ beats 4/8    avg 13%       2.6%  typical
 <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   25.5%  ▂▂···▃▂▅●▃▂▂ beats 10/16  avg 32%       2.1%  blunt
-<a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (lab)</a>      6.9%  █▄▄··█●██▄██ beats 7/16   avg 11%       1.8%  typical
+<a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (maker)</a>    6.9%  █▄▄··█●██▄██ beats 7/16   avg 11%       1.8%  typical
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   12.1%  ▄·█·▄▄▄▄·●▄▄ beats 8/10   avg 15%       1.6%  blunt
 <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   42.6%  ▃·▂▂●█▅▃▂▅▂▂ beats 4/22   avg 40%       1.6%  blunt
 <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   34.0%  ▃█····▃▅▃·●▃ beats 8/10   avg 41%       0.7%  blunt
@@ -65,7 +65,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2507.13264v1"></a><a href="https://arxiv.org/html/2507.13264v1">Mistral AI (lab)</a>                               10   30% ▇▇▇▇
+<a name="report-2507.13264v1"></a><a href="https://arxiv.org/html/2507.13264v1">Mistral AI (submitted / maker-reported)</a>        10   30% ▇▇▇▇
 <a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            2   24% ▇▇▇
 <a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   19% ▇▇
 <a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-3b-2507.json">transcribe.cpp model catalog · LibriSpe…</a>        2   10% ▇
@@ -100,7 +100,7 @@ api (DeepInfra) · $0.0010/audio min · [deepinfra.com](https://deepinfra.com/mi
 
 Other versions: BF16 (~11.73 GB, Mac only) `uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-3B-2507-bf16 --audio audio.wav --output-path out`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)
 
 ## Quantization evidence
 

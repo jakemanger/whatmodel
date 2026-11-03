@@ -6,7 +6,7 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.6** ±4.3 · #341 of 732 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.6** ±4.3 · #341 of 732 · from 3 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   56.9%  ●·▂··▂·▄▂·█▆ beats 0/12   medium · avg 63%     54%  at its level · noisy
-<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        76.9%  ●·▃·▅▅▃···▃▃ beats 2/10   easy · avg 70%       21%  blunt · at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (maker)</a>                      76.9%  ●·▃·▅▅▃···▃▃ beats 2/10   easy · avg 70%       21%  blunt · at its level
 <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   70.0%  ▄·▄●▄·▄██▄█▄ beats 2/12   medium · avg 65%     17%  blunt · at its level
 </pre>
 
@@ -34,10 +34,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                         3   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             8% ▇
-weighted average                        = 51.6
+source                               results  share of the score
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (submitted / maker-reported)</a>        3   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   8% ▇
+weighted average                              = 51.6
 </pre>
 
 <sub>Licences: Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -50,6 +50,6 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <sub>[context source](https://docs.cohere.com/docs/models): Cohere API model table: command-a-translate-08-2025, Live, context length 8K, maximum output 8k tokens. Observed 2026-10-10.</sub>
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-translate-08-2025)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-translate-08-2025)
 
 [interactive version](https://whatmodel.sh/model/command-a-translate-08-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.4** ±1.1 · #213 of 732 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.4** ±1.1 · #213 of 732 · from 14 benchmark results across 2 sources · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,13 +26,13 @@ math         ▁▁▃▅█▆●█▄▂▁▁   #182 of 431*     19%      2
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  very hard · avg 15%     5.3%  sharp · at its level · noisy · small run
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.6%    3.8%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          3.6%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.9%    3.1%  too hard for it
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       15.4%  ●··········█ beats 1/5    hard · avg 15%          3.0%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.3%    1.0%  blunt
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (maker)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  very hard · avg 15%     5.3%  sharp · at its level · noisy · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (maker)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.6%    3.8%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (maker)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          3.6%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (maker)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.9%    3.1%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>       15.4%  ●··········█ beats 1/5    hard · avg 15%          3.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (maker)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.3%    1.0%  blunt
 </pre>
 
 </details>
@@ -44,7 +44,7 @@ Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wi
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   56.5%  ●······▄▄▄·█ beats 0/5    medium · avg 50%    6.4%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             15.4%  ●··········█ beats 1/5    hard · avg 15%      3.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>           15.4%  ●··········█ beats 1/5    hard · avg 15%      3.0%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -54,9 +54,9 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    medium · avg 65%     14%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   68.9%  █●▄········█ beats 2/5    hard · avg 31%      5.4%  sharp · at its level · noisy
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (maker)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    medium · avg 65%     14%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (maker)</a>   68.9%  █●▄········█ beats 2/5    hard · avg 31%      5.4%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -65,11 +65,11 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   66.2%  ●···██·█··██ beats 0/5    hard · avg 41%           29%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       80.4%  ▄·●▄····▄··█ beats 1/5    medium · avg 55%         10%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.7%    5.7%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (maker)</a>                 66.2%  ●···██·█··██ beats 0/5    hard · avg 41%           29%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (maker)</a>                     80.4%  ▄·●▄····▄··█ beats 1/5    medium · avg 55%         10%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (maker)</a>         11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.7%    5.7%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   57.7%  ●···▄▄··▄··█ beats 0/5    medium · avg 43%        5.5%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 40.5%  ●··▄·▄·····█ beats 1/5    hard · avg 25%          3.8%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (maker)</a>               40.5%  ●··▄·▄·····█ beats 1/5    hard · avg 25%          3.8%  at its level
 </pre>
 
 </details>
@@ -79,11 +79,11 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                               results  share of the score
-<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   94% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="report-2601.07022v1"></a><a href="https://arxiv.org/html/2601.07022v1">Solar Open Technical Report (lab)</a>          1    5% ▇
-prior: pull toward the middle                   1% ▇
-weighted average                              = 59.4
+source                                    results  share of the score
+<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (submitte…</a>       13   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="report-2601.07022v1"></a><a href="https://arxiv.org/html/2601.07022v1">Solar Open Technical Report (submitted …</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 59.4
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Solar Open Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -177,6 +177,6 @@ Other versions: 8bit (~109.1 GB, Mac only) `mlx_lm.chat --model mlx-community/So
    vllm serve upstage/Solar-Open-100B --trust-remote-code --enable-auto-tool-choice --tool-call-parser solar_open --reasoning-parser solar_open --logits-processors vllm.model_executor.models.parallel_tool_call_logits_processor:ParallelToolCallLogitsProcessor --logits-processors vllm.model_executor.models.solar_open_logits_processor:SolarOpenTemplateLogitsProcessor --tensor-parallel-size 8
    ```
 
-Official weights and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open-100B)
+Model repository and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open-100B)
 
 [interactive version](https://whatmodel.sh/model/solar-open-100b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

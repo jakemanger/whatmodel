@@ -25,9 +25,9 @@ math    ▁▁▃●██▅█▃▁▁▁   #464 of 530     11%      3
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    10.3%  ▄··▄····▄▄●▄ beats 4/6    medium · avg 63%    5.4%  sharp · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>   17.7%  ●▁▁▄▅█▆▅▄▁▂▁ beats 2/86   medium · avg 59%    1.0%  typical
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>      10.3%  ▄··▄····▄▄●▄ beats 4/6    medium · avg 63%    5.4%  sharp · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MBPP (maker)</a>   17.7%  ●▁▁▄▅█▆▅▄▁▂▁ beats 2/86   medium · avg 59%    1.0%  typical
 </pre>
 
 </details>
@@ -37,10 +37,10 @@ test        result  vs the others in its run  difficulty        counts  why
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [GPT-Neo 1.3B](gpt-neo-1-3b.md), [OPT-1.3B](opt-1-3b.md), [OPT-2.7B](opt-2-7b.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_gsm8k_8-shot.json">GSM8K</a>         8.0%  ▄▄█▄···●·▄·▄ beats 5/7    easy · avg 65%     10%  sharp · several runs
-<a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>    2.9%  ●▅▂▆▅▃▅▅█▃▃▂ beats 1/30   hard · avg 24%    1.0%  too hard for it
-<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_mathematical_reasoning_0-shot.json">MathQA</a>       26.8%  ▃·▃▃█▅··●·▃▃ beats 8/10   hard · avg 34%    0.2%  blunt · small run
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_gsm8k_8-shot.json">GSM8K</a>           8.0%  ▄▄█▄···●·▄·▄ beats 5/7    easy · avg 65%     10%  sharp · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MATH (maker)</a>    2.9%  ●▅▂▆▅▃▅▅█▃▃▂ beats 1/30   hard · avg 24%    1.0%  too hard for it
+<a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_mathematical_reasoning_0-shot.json">MathQA</a>         26.8%  ▃·▃▃█▅··●·▃▃ beats 8/10   hard · avg 34%    0.2%  blunt · small run
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://aclanthology.org/2023.findings-emnlp.133.pdf">ImageNetVC visual commonsense, te…</a>   55.7%  ▂·▄·▂█▄▄█●▂▆ beats 16/21  easy · avg 74%          1.6%  blunt · at its level
 <a href="https://aclanthology.org/2023.emnlp-industry.17.pdf">F2WTQ free-form table QA, 2-shot …</a>   19.0%  ▄···●·▄█··▄▄ beats 1/7    medium · avg 56%        1.4%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">Social IQA</a>                           44.8%  ▁···▁▃█▁●▁·▁ beats 22/26  medium · avg 60%        1.3%  blunt · several runs
-<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (lab)</a>                       56.3%  ▁▁▂▂▄▄▃▆●█▅▂ beats 50/80  easy · avg 84%          1.0%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">TriviaQA (maker)</a>                     56.3%  ▁▁▂▂▄▄▃▆●█▅▂ beats 50/80  easy · avg 84%          1.0%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   14.6%  ▅····▃●·██·█ beats 3/13   medium · avg 52%        0.9%  typical
 <a href="https://github.com/EleutherAI/lm-evaluation-harness/blob/afbf8e6639c86490cc086eb949eac89b55ce58ab/results/llama/llama-7B/llama-7B_common_sense_reasoning_0-shot.json">COPA</a>                                 84.0%  ▄··█▄▄···●·█ beats 5/7    very easy · avg 95%     0.8%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">Natural Questions (closed book) (…</a>   22.0%  ▂▁▁▁▂▄▄▃▅●▅▁ beats 46/68  medium · avg 53%        0.8%  typical

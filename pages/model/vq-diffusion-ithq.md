@@ -53,6 +53,6 @@ weighted average                          = 47.8
    uv run --with torch --with diffusers --with transformers python -c "import torch; from diffusers import VQDiffusionPipeline; p=VQDiffusionPipeline.from_pretrained('microsoft/vq-diffusion-ithq', torch_dtype=torch.float16).to('cuda'); p('teddy bear playing in the pool', truncation_rate=1.0).images[0].save('out.png')"
    ```
 
-Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/vq-diffusion-ithq)
+Model repository and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/vq-diffusion-ithq)
 
 [interactive version](https://whatmodel.sh/model/vq-diffusion-ithq) · [JSON](https://whatmodel.sh/api?format=json&all=1)

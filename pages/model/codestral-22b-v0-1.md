@@ -141,6 +141,6 @@ Other versions: Q8_0 (~27.2 GB) `ollama run codestral:22b-v0.1-q8_0`
    mlx_lm.server --model rairahulr1/Codestral-22B-v0.1-mlx-4Bit
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Codestral-22B-v0.1)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Codestral-22B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/codestral-22b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -78,6 +78,6 @@ api (Boson AI) · $15.00/M chars · [docs.boson.ai](https://docs.boson.ai)
 
 Other versions: BF16 (~10.1 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model bosonai/higgs-audio-v3-tts-4b --text 'Hello, world!'`
 
-Official weights and documentation: [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-3-4b)
+Model repository and documentation: [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-3-4b)
 
 [interactive version](https://whatmodel.sh/model/higgs-audio-v3-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

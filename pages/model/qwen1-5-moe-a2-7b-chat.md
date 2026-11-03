@@ -125,6 +125,6 @@ Other versions: 4bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-com
    vllm serve Qwen/Qwen1.5-MoE-A2.7B-Chat
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-moe-a2-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

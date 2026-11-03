@@ -60,9 +60,9 @@ test                              result  vs the others in its run   difficulty 
 <details><summary>math · #1 of 3 · 26% of its score</summary>
 
 <pre>
-test             result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>   85.0%  ▁·▁▁▁▂▅▆█●▅▁ beats 99/133  easy · avg 67%     14%  sharp · small run · several runs
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>   89.8%  ▁▁▁▂▁▃▁▅██●▃ beats 72/85   easy · avg 75%     12%  sharp · small run · several runs
+test               result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (maker)</a>   85.0%  ▁·▁▁▁▂▅▆█●▅▁ beats 99/133  easy · avg 67%     14%  sharp · small run · several runs
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (maker)</a>   89.8%  ▁▁▁▂▁▃▁▅██●▃ beats 72/85   easy · avg 75%     12%  sharp · small run · several runs
 </pre>
 
 </details>
@@ -190,6 +190,6 @@ Other versions: 4bit (~8.4 GB, Mac only) `lms get https://huggingface.co/hunterb
    mlx_lm.server --model hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit
    ```
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512)
 
 [interactive version](https://whatmodel.sh/model/ministral-3-14b-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -36,8 +36,8 @@ test            result  vs the others in its run    difficulty  counts  why
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run    difficulty           counts  why
-<a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>   91.4%  ▂▂▂▂▃▄▅▇██●▄ beats 183/206  very easy · avg 87%     21%  sharp · small run
+test           result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2411.19146v5">GSM8K (maker)</a>   91.4%  ▂▂▂▂▃▄▅▇██●▄ beats 183/206  very easy · avg 87%     21%  sharp · small run
 </pre>
 
 </details>
@@ -45,11 +45,11 @@ test         result  vs the others in its run    difficulty           counts  wh
 <details><summary>other tests (4)</summary>
 
 <pre>
-test                 result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>   69.2%  ▄▁▁▂▁▄█▇●▂▃▂ beats 116/140  medium · avg 66%     16%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>            80.2%  ▁▁▁▁▁▂▂▅██●▄ beats 168/214  easy · avg 76%       15%  at its level · small run
-<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>      84.5%  ▁▁▁▁▂▁▁▅▇█▃● beats 129/131  easy · avg 83%      8.6%  at its level · small run
-<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>       85.6%  ▁▁▁▂▂▂▄▆█▇●▂ beats 128/135  easy · avg 85%      7.0%  small run
+test                   result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (maker)</a>   69.2%  ▄▁▁▂▁▄█▇●▂▃▂ beats 116/140  medium · avg 66%     16%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">MMLU (maker)</a>            80.2%  ▁▁▁▁▁▂▂▅██●▄ beats 168/214  easy · avg 76%       15%  at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (maker)</a>      84.5%  ▁▁▁▁▂▁▁▅▇█▃● beats 129/131  easy · avg 83%      8.6%  at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (maker)</a>       85.6%  ▁▁▁▂▂▂▄▆█▇●▂ beats 128/135  easy · avg 85%      7.0%  small run
 </pre>
 
 </details>
@@ -124,6 +124,6 @@ Other versions: Q8_0 (~54.73 GB) `lms get https://huggingface.co/bartowski/Llama
    ollama run hf.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_1-Nemotron-51B-Instruct)
+Model repository and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_1-Nemotron-51B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-51b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

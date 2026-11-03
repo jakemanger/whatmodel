@@ -49,6 +49,6 @@ weighted average                                   = 23.2
    git clone -b CogVideo https://github.com/zai-org/CogVideo && cd CogVideo && pip install -r requirements.txt && pip install git+https://github.com/Sleepychord/Image-Local-Attention && MASTER_PORT=$(shuf -n 1 -i 10000-65535) SAT_HOME=./sat_models python cogvideo_pipeline.py --input-source interactive --output-path ./output --parallel-size 1 --both-stages --use-guidance-stage1 --guidance-alpha 3.0 --generate-frame-num 5 --tokenizer-type fake --mode inference --distributed-backend nccl --fp16 --model-parallel-size 1 --temperature 1.05 --coglm-temperature2 0.89 --top_k 12 --sandwich-ln --seed 1234 --num-workers 0 --batch-size 4 --max-inference-batch-size 8
    ```
 
-Official weights and documentation: [huggingface.co/THUDM](https://huggingface.co/THUDM/CogVideo)
+Model repository and documentation: [huggingface.co/THUDM](https://huggingface.co/THUDM/CogVideo)
 
 [interactive version](https://whatmodel.sh/model/cogvideo-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

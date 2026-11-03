@@ -24,8 +24,8 @@ math  ●▁▃▅█▆▄█▄▂▁▁   #427 of 431*    3.9%      1
 Beats [Flan-T5 Base](flan-t5-base.md) here, though they rank higher overall. Trails [GPT-Neo 125M](gpt-neo-125m.md), [OPT-125M](opt-125m.md), [BLOOM 560M](bloom-560m.md) here, though they rank lower overall.
 
 <pre>
-test        result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.2%  ●·▂·▄▂▂▂▂█▄▆ beats 1/18   medium · avg 48%    3.9%  sharp · too hard for it
+test          result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (maker)</a>    0.2%  ●·▂·▄▂▂▂▂█▄▆ beats 1/18   medium · avg 48%    3.9%  sharp · too hard for it
 </pre>
 
 </details>
@@ -35,12 +35,12 @@ test        result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://aclanthology.org/2023.acl-long.830.pdf">SVAMP</a>                                 1.7%  █·●▂▄▂▂····▂ beats 5/12   easy · avg 70%       20%  sharp · too hard for it
-<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           28.7%  ▁···●··▃▁▅▅█ beats 1/18   easy · avg 74%       20%  too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (maker)</a>                         28.7%  ▁···●··▃▁▅▅█ beats 1/18   easy · avg 74%       20%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS Qasper (zero-shot F1)</a>    18.5%  ▂●··▂·▂··▂█▄ beats 1/10   medium · avg 56%     11%  blunt
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS QuALITY (zero-shot ac…</a>   34.6%  ▃····●·▃▃█▅▅ beats 1/10   easy · avg 81%       10%  typical
 <a href="https://arxiv.org/html/2210.11416v5">TyDiQA-GoldP (1-shot, EM, 8-langu…</a>    1.1%  ●··▂·▂▄▄·███ beats 0/18   medium · avg 61%    7.5%  too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.504.pdf">POSQA general (yes/no) size quest…</a>   51.0%  █···●·····██ beats 1/3    medium · avg 68%    7.3%  too hard for it
-<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 29.1%  ●▂▂▂·▅·▃▂█▃▃ beats 0/18   medium · avg 60%    5.7%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (maker)</a>               29.1%  ●▂▂▂·▅·▃▂█▃▃ beats 0/18   medium · avg 60%    5.7%  sharp · too hard for it
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS NarrativeQA (zero-sho…</a>   11.6%  ●··▃·█▃·█▃·▃ beats 0/10   hard · avg 29%      5.5%  blunt
 <a href="https://aclanthology.org/2023.emnlp-main.429.pdf">ConvRe Re2Text, normal relation, …</a>   51.8%  ▂●▄··▂▂█▄··▂ beats 1/12   easy · avg 90%      4.8%  noisy
 <a href="https://aclanthology.org/2023.findings-emnlp.536.pdf">ZeroSCROLLS MuSiQue (zero-shot F1)</a>   21.0%  ●·█··██·▄▄▄▄ beats 0/10   medium · avg 43%    2.1%  blunt
@@ -75,6 +75,6 @@ weighted average                                   = 16.2
    uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-small')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-small)
+Model repository and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-small)
 
 [interactive version](https://whatmodel.sh/model/flan-t5-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

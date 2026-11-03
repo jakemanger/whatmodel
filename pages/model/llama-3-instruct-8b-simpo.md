@@ -121,6 +121,6 @@ Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/Llama-3-Instruct-8B-S
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/Llama-3-Instruct-8B-SimPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-Instruct-8B-SimPO)
+Model repository and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-Instruct-8B-SimPO)
 
 [interactive version](https://whatmodel.sh/model/llama-3-instruct-8b-simpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

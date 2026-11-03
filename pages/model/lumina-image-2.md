@@ -59,6 +59,6 @@ api (fal.ai) · $0.075/image · [fal.ai](https://fal.ai/models/fal-ai/lumina-ima
    uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import Lumina2Pipeline; p=Lumina2Pipeline.from_pretrained('Alpha-VLLM/Lumina-Image-2.0', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A serene photograph of golden sunlight reflecting on a vast expanse of water', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=50, cfg_trunc_ratio=0.25, cfg_normalization=True, generator=torch.Generator('cpu').manual_seed(0)).images[0].save('lumina_demo.png')"
    ```
 
-Official weights and documentation: [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0)
+Model repository and documentation: [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0)
 
 [interactive version](https://whatmodel.sh/model/lumina-image-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

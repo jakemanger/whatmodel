@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 71.4** ±3.9 · #2 of 119 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.4** ±3.9 · #2 of 119 · from 4 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -36,10 +36,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="speech-voxtral-tts-report"></a><a href="https://arxiv.org/html/2603.25551v2">Voxtral TTS (lab)</a>                    4   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             6% ▇
-weighted average                        = 71.4
+source                                    results  share of the score
+<a name="speech-voxtral-tts-report"></a><a href="https://arxiv.org/html/2603.25551v2">Voxtral TTS (submitted / maker-reported)</a>        4   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 71.4
 </pre>
 
 <sub>Licences: Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -62,6 +62,6 @@ api (Mistral AI) · $16.00/M chars · [docs.mistral.ai](https://docs.mistral.ai/
 
 Other versions: BF16 (~10.1 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Voxtral-4B-TTS-2603-mlx-bf16 --text 'Hello, world!' --voice casual_male`
 
-Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603)
+Model repository and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603)
 
 [interactive version](https://whatmodel.sh/model/voxtral-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

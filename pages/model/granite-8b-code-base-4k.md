@@ -28,10 +28,10 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 24/35  medium · avg 62%     21%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   26.4%  ▄▇█▃▄●▄▁▇▃·▁ beats 22/35  medium · avg 46%     13%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           42.2%  █·▅▃▃▃●▃▃▅·▅ beats 8/15   easy · avg 67%       12%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (maker)</a>                         42.2%  █·▅▃▃▃●▃▃▅·▅ beats 8/15   easy · avg 67%       12%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.6%  ▁·▁▁▄██▄●▁▅▅ beats 26/35  medium · avg 51%     12%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     36.0%  ▃▅█▃▃●·▃▃▅·▅ beats 8/15   medium · avg 56%    9.2%  at its level
-<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     36.1%  ▃·▃██●▃·▃▃▅▃ beats 9/15   medium · avg 54%    7.6%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (maker)</a>                   36.0%  ▃▅█▃▃●·▃▃▅·▅ beats 8/15   medium · avg 56%    9.2%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (maker)</a>                   36.1%  ▃·▃██●▃·▃▃▅▃ beats 9/15   medium · avg 54%    7.6%  blunt · at its level
 </pre>
 
 </details>
@@ -41,9 +41,9 @@ test                                result  vs the others in its run  difficulty
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall.
 
 <pre>
-test         result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>   61.9%  ▄··▄···▄··█● beats 5/5    easy · avg 75%      5.2%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>    21.4%  ▃·▃····▃···● beats 3/5    medium · avg 37%    4.5%  noisy
+test           result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2405.04324v1">GSM8K (maker)</a>   61.9%  ▄··▄···▄··█● beats 5/5    easy · avg 75%      5.2%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2405.04324v1">MATH (maker)</a>    21.4%  ▃·▃····▃···● beats 3/5    medium · avg 37%    4.5%  noisy
 </pre>
 
 </details>
@@ -125,6 +125,6 @@ weighted average                                   = 40.5
    ollama run hf.co/ibm-granite/granite-8b-code-base-4k-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k)
+Model repository and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-8b-code-base-4k)
 
 [interactive version](https://whatmodel.sh/model/granite-8b-code-base-4k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

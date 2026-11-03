@@ -6,52 +6,75 @@
 
 EldanRing · apache-2.0
 
-**score 72.0** ±1.2 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 58.0** ±1.5 · #129 of 355 · from 41 benchmark results across 2 sources
 
 ## What it's good at
 
 <sub>● marks Winnow-12B (DecisionBench b6ac22b0) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃▃▃▁▂▁▂▅●▂   #13 of 57     99%     27
+task                   vs the others         rank  counts  tests
+knowledge &amp; reasoning  ▁▂▂▂▂▃▃●▅▆█▂   #152 of 263    8.0%      5
+workflows              ▁▁▁▂▁▂▂▆●▄▁▁    #37 of 114     91%     36
 </pre>
 
-<details><summary>workflows · #13 of 57 · 99% of its score</summary>
+<details><summary>knowledge &amp; reasoning · #152 of 263 · 8.0% of its score</summary>
 
-Trails [Jev 1.13](jev-1-13.md) here, though they rank lower overall.
+Trails [Ryotide Qwen v0.3.1 (decision readout)](decision-ryotide-qwen-v0-3-1.md), [Interfaze lev Qwen3.5-4B LoRA](decision-lev.md), [razorback16 diffgemma (decision readout)](decision-razorback-one-read-3e296f08.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · PubMedQA</a>                71.2%  ▃▂▃▃·▂▃▃●█▆▂ beats 13/25  easy · avg 69%         2.9%  typical
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · BoolQ</a>                   87.3%  ▁··▃▃▁▄▁▃█●▄ beats 20/25  easy · avg 84%         2.1%  typical
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SQuAD 2 answerability</a>   87.6%  ▁▁▃▁▇█▃▃▄●·▁ beats 24/25  easy · avg 80%         1.1%  blunt
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · VitaminC verification</a>   75.5%  ▁···▃·●█▃··▁ beats 8/25   easy · avg 78%         1.1%  blunt
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MultiNLI</a>                81.6%  ▂··▄●█▂▆▆█▆▂ beats 6/25   very easy · avg 87%    0.7%  blunt
+</pre>
+
+</details>
+
+<details><summary>workflows · #37 of 114 · 91% of its score</summary>
+
+Beats [vLLM-SR d3-flash (9B)](decision-vllm-sr-d3-flash.md), [Clef-omni](clef-omni.md), [Jebadiah 27B v2.1 (Ollaya Q4\_K\_M)](jebadiah-27b-v2-1-ollaya-q4-k-m.md) here, though they rank higher overall. Trails [StartLux-Decision v1.1 2B](decision-startlux-decision-v1-1-2b-instant.md), [Solar Decide](solar-decide.md), [deepseek-v4.1-flash (DecisionBench openrout)](decisionbench-deepseek-deepseek-v4-1-flash-openrout.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · action selecti…</a>   57.7%  ▂▁▂▃▄▃▁▁▂●▇▄ beats 38/56  hard · avg 26%          18%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   77.0%  ▁▁▁▁▂▂▁▁▁▁▃● beats 52/56  hard · avg 29%          14%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   73.0%  ▁▁·▃▁▁▁▁▁▁▃● beats 50/56  hard · avg 22%          12%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · record classif…</a>   46.0%  ▃▂▁▂▂▂▄▁▃▆●█ beats 43/56  hard · avg 21%          10%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · verification (…</a>   57.5%  ▁▁▅▁▃▂▂▁▁●▇█ beats 29/56  medium · avg 40%       7.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · document recor…</a>   46.0%  ▂▂·▁▂▄▃●▄█▁▁ beats 32/56  hard · avg 27%         5.4%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   56.1%  ▁▁▅▅▃▃▅█●▃·▁ beats 49/56  hard · avg 27%         4.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   84.0%  ▁·▁·▂▃▄▃▂●▄▂ beats 35/56  medium · avg 45%       3.7%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · completion ass…</a>   93.0%  ▁▁▂▃▄·▂▁▁▆●▂ beats 47/56  medium · avg 51%       3.3%  sharp · maxed out
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · content classi…</a>   79.0%  ▁····▁▁▁▁▁▁● beats 40/56  medium · avg 41%       3.2%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · review scoring…</a>   62.0%  ▁······▂▃▅▇● beats 52/56  hard · avg 32%         3.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   94.5%  ▃▃▂·▁▁▁▁▁▁●▅ beats 44/56  medium · avg 38%       2.8%  sharp · maxed out · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   57.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 43/56  very hard · avg 12%    2.6%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · target selecti…</a>   50.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 56/56  very hard · avg 11%    2.6%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   64.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 34/56  medium · avg 45%       2.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   70.3%  ▂·▁▁▆█▅▃●▂▁▁ beats 49/56  hard · avg 33%         1.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   87.5%  █▁▂▁▁▁▁▁▂●▁▁ beats 44/56  medium · avg 55%       0.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · document workf…</a>   84.5%  █▄▃▁▁▃▂●▁·▁▁ beats 52/56  medium · avg 51%       0.8%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.6%  ▁▁▁▂▆▃▃●···▁ beats 53/56  medium · avg 38%       0.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · safety gating …</a>   96.0%  ▂·····▆█▂▂▄● beats 47/56  medium · avg 51%       0.4%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · document class…</a>   38.0%  ▂▁·▂▁▁▁▄▁▂▂● beats 54/56  very hard · avg 13%    0.4%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   86.0%  ▁·▁▁·▁▁█▂▃●▂ beats 51/56  medium · avg 55%       0.3%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · content modera…</a>   95.0%  ▁····▃▅▃▂●·█ beats 36/56  medium · avg 61%       0.2%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · context manage…</a>   90.5%  ▁·····▁▇▆▁●▃ beats 46/56  medium · avg 59%       0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   99.5%  ▁·▁▄▇▄▅▄▂▁▄● beats 56/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · function agent…</a>   95.9%  ▃▃▄▅▆▂▅▄▃●█▃ beats 43/56  medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · routing triage…</a>   75.5%  █▁···▁·▂▆●▂▂ beats 48/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · action selecti…</a>   57.7%  ▂▁▂▃▄▃▁▁▂●▇▄ beats 38/56  medium · avg 51%        15%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   77.0%  ▁▁▁▁▂▂▁▁▁▁▃● beats 52/56  medium · avg 64%        10%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   73.0%  ▁▁·▃▁▁▁▁▁▁▃● beats 50/56  medium · avg 58%       7.9%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · record classif…</a>   46.0%  ▃▂▁▂▂▂▄▁▃▆●█ beats 43/56  medium · avg 39%       7.2%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · verification (…</a>   57.5%  ▁▁▅▁▃▂▂▁▁●▇█ beats 29/56  medium · avg 56%       4.8%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json">Ollaya · Typed decisions test</a>        70.2%  ▄·▂▆▄▄▂·▄█●▆ beats 17/22  medium · avg 64%       4.7%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · document recor…</a>   46.0%  ▂▂·▁▂▄▃●▄█▁▁ beats 32/56  medium · avg 46%       4.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   56.1%  ▁▁▅▅▃▃▅█●▃·▁ beats 49/56  medium · avg 45%       3.4%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   84.0%  ▁·▁·▂▃▄▃▂●▄▂ beats 35/56  easy · avg 78%         3.0%  sharp
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SummEval relevance</a>          49.6%  ▁··▁▂▁▅··▃█● beats 20/25  medium · avg 41%       2.9%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · completion ass…</a>   93.0%  ▁▁▂▃▄·▂▁▁▆●▂ beats 47/56  very easy · avg 86%    2.7%  sharp · maxed out
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · PAWS paraphrase</a>             83.2%  ▂▂▂▂·▃█●·▂·▁ beats 19/25  easy · avg 81%         2.6%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · content classi…</a>   79.0%  ▁····▁▁▁▁▁▁● beats 40/56  easy · avg 73%         2.3%  typical
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · Aegis 2 safety</a>              81.6%  ▂·▁▁▂·▃▃▂●▃▁ beats 21/25  easy · avg 77%         2.2%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · review scoring…</a>   62.0%  ▁······▂▃▅▇● beats 52/56  medium · avg 52%       2.2%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   94.5%  ▃▃▂·▁▁▁▁▁▁●▅ beats 44/56  very easy · avg 86%    2.2%  sharp · maxed out · noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MASSIVE German intent</a>       85.1%  ▁····▁·▂▃▆●▃ beats 16/23  easy · avg 84%         1.9%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   57.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 43/56  medium · avg 35%       1.8%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · target selecti…</a>   50.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 56/56  hard · avg 29%         1.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   64.0%  ▁▁·▁▂▂▁▃▃●▇▃ beats 34/56  medium · avg 62%       1.5%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SummEval consistency</a>        87.5%  ▁·▁▁··▁▁▁▁▄● beats 25/25  easy · avg 75%         1.1%  sharp · noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · HelpSteer 2 scoring</a>         40.6%  ▁▁··▁·▁▃▇█●▄ beats 17/23  medium · avg 38%       1.1%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MASSIVE English intent</a>      86.6%  ▁·······▂▃●▃ beats 19/23  very easy · avg 86%    1.0%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   70.3%  ▂·▁▁▆█▅▃●▂▁▁ beats 49/56  medium · avg 52%       0.9%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · document workf…</a>   84.5%  █▄▃▁▁▃▂●▁·▁▁ beats 52/56  easy · avg 66%         0.6%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   87.5%  █▁▂▁▁▁▁▁▂●▁▁ beats 44/56  easy · avg 74%         0.6%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.6%  ▁▁▁▂▆▃▃●···▁ beats 53/56  medium · avg 52%       0.4%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · safety gating …</a>   96.0%  ▂·····▆█▂▂▄● beats 47/56  easy · avg 77%         0.3%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · document class…</a>   38.0%  ▂▁·▂▁▁▁▄▁▂▂● beats 54/56  hard · avg 21%         0.3%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   86.0%  ▁·▁▁·▁▁█▂▃●▂ beats 51/56  easy · avg 71%         0.2%  blunt · noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · Civil Comments</a>              87.0%  ▂▂▂·▂▅▅●▃▅·█ beats 13/23  very easy · avg 86%    0.1%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · content modera…</a>   95.0%  ▁····▃▅▃▂●·█ beats 36/56  easy · avg 82%         0.1%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · context manage…</a>   90.5%  ▁·····▁▇▆▁●▃ beats 46/56  easy · avg 73%         0.1%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   99.5%  ▁·▁▄▇▄▅▄▂▁▄● beats 56/56  easy · avg 66%         0.1%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · function agent…</a>   95.9%  ▃▃▄▅▆▂▅▄▃●█▃ beats 43/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">DecisionBench v1 · routing triage…</a>   75.5%  █▁···▁·▂▆●▂▂ beats 48/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -62,17 +85,26 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/EldanRing__Winnow-12B/b6ac22b0d51b69b18200acacb3fbdd98073fffe8/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   73% ▇▇▇▇▇▇▇▇▇
+<a name="ollaya-oct2026-original-runs"></a><a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json">Ollaya · original runs</a>                         14   26% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 72.0
+weighted average                                   = 58.0
 </pre>
 
-<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
+<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt)) · Ollaya · original runs ([Apache-2.0](../../licenses/ollaya-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+### Other ways to run it
 
-Official weights and documentation: [huggingface.co/EldanRing](https://huggingface.co/EldanRing/Winnow-12B)
+1. Run it as published (ollaya-q8-0, needs 15.5 GB, NVIDIA only, from [github.com/ollaya-dev](https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json))
+   
+   ```sh
+   ollaya run winnow:12b --preset triage "The customer requests a refund."
+   ```
+
+[Download model files](https://huggingface.co/EldanRing/Winnow-12B/tree/b6ac22b0d51b69b18200acacb3fbdd98073fffe8) · Published model files verified. This is the revision recorded by the benchmark. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity\_note. The command was not executed in this review. [Evidence](https://huggingface.co/api/models/EldanRing/Winnow-12B/revision/b6ac22b0d51b69b18200acacb3fbdd98073fffe8); checked 2026-10-31.
+
+Model repository and documentation: [huggingface.co/EldanRing](https://huggingface.co/EldanRing/Winnow-12B)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-eldanring-winnow-12b-b6ac22b0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

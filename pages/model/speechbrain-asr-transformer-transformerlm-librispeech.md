@@ -6,7 +6,7 @@
 
 SpeechBrain · released 2022-03 · apache-2.0
 
-**score 40.3** ±7.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 40.3** ±7.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -21,9 +21,9 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                              result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (lab)</a>    5.5%  ▁···▁▁▁▆●█▆▁ beats 19/56   avg 2.8%       59%  small run
-<a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (lab)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 46/102  avg 1.6%       19%  blunt · small run
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (maker)</a>    5.5%  ▁···▁▁▁▆●█▆▁ beats 19/56   avg 2.8%       59%  small run
+<a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (maker)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 46/102  avg 1.6%       19%  blunt · small run
 </pre>
 
 </details>
@@ -45,6 +45,6 @@ weighted average                                   = 40.3
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech)
+Model repository and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech)
 
 [interactive version](https://whatmodel.sh/model/speechbrain-asr-transformer-transformerlm-librispeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

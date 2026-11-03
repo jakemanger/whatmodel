@@ -105,6 +105,6 @@ api (fal.ai) · $0.13/sec · [fal.ai](https://fal.ai/models/minimax/h3/text-to-v
 
 Other versions: int8 (~40.1 GB, NVIDIA only) `pip install comfy-kitchen && sglang generate --model-path MiniMaxAI/MiniMax-H3 --model-variant fl2va --quantization kitchen_int8 --attention-backend fa --performance-mode memory --layerwise-offload-components dit,text_encoder --dit-offload-prefetch-size 1 --dit-layerwise-resident-layers 0 --enable-torch-compile false --prompt "A cat walking on a sunny beach, gentle waves." --save-output`
 
-Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-H3)
+Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 
 [interactive version](https://whatmodel.sh/model/minimax-h3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

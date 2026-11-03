@@ -44,6 +44,6 @@ weighted average                                   = 53.9
 
 No verified API or local download yet.
 
-Official weights and documentation: [github.com/jik876](https://github.com/jik876/hifi-gan)
+Model repository and documentation: [github.com/jik876](https://github.com/jik876/hifi-gan)
 
 [interactive version](https://whatmodel.sh/model/tacotron2-hifigan-ft-ljspeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

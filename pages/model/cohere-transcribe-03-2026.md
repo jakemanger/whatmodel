@@ -92,6 +92,6 @@ api (fal.ai) · $0.0042/audio min · [fal.ai](https://fal.ai/models/fal-ai/coher
    vllm serve CohereLabs/cohere-transcribe-03-2026 --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-03-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

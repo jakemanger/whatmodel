@@ -202,6 +202,6 @@ Other versions: ud-q2_k_xl (~128.9 GB) `lms get https://huggingface.co/unsloth/M
 
 Other versions: 8bit (~454.4 GB, Mac only) `mlx_lm.chat --model inferencerlabs/MiniMax-M3-MLX-Q8`
 
-Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M3)
+Model repository and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M3)
 
 [interactive version](https://whatmodel.sh/model/minimax-m3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

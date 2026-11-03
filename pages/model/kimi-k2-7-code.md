@@ -116,6 +116,6 @@ Other versions: ud-q2_k_xl (~340.42 GB) `llama cli -hf unsloth/Kimi-K2.7-Code-GG
 
 Other versions: ud-q2_k_xl (~340.42 GB) `lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q2_K_XL -y`
 
-Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
+Model repository and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-7-code) · [JSON](https://whatmodel.sh/api?format=json&all=1)

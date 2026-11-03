@@ -6,7 +6,7 @@
 
 KRAFTON · released 2026-04 · 0.3B params · cc-by-nc-4.0
 
-**score 65.1** ±1.9 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.1** ±1.9 · comparison only: no current run option verified · from 9 benchmark results across 1 source · † no independently run results verified
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -40,7 +40,7 @@ test                                  result  vs the others in its run  difficul
 <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (predic…</a>  3.77 / 5  ▄·····●·▄▄·█ beats 1/6    medium · avg 2.98 / 5     11%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall speak…</a>     62.3%  ▄·●·█▄·····▄ beats 1/6    medium · avg 44%          11%  at its level
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.60 / 5  █··█●······▄ beats 5/6    medium · avg 2.83 / 5     10%  at its level
-<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER (lab)</a>            7.3%  ▄·······█·●█ beats 4/6    avg 27%                  9.4%  sharp
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER (maker)</a>          7.3%  ▄·······█·●█ beats 4/6    avg 27%                  9.4%  sharp
 <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall WER (…</a>      2.9%  ▄··▄█····▄·● beats 5/6    avg 20%                  5.5%  noisy
 </pre>
 
@@ -63,6 +63,6 @@ weighted average                                   = 65.1
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/KRAFTON](https://huggingface.co/KRAFTON/Raon-OpenTTS-0.3B)
+Model repository and documentation: [huggingface.co/KRAFTON](https://huggingface.co/KRAFTON/Raon-OpenTTS-0.3B)
 
 [interactive version](https://whatmodel.sh/model/raon-opentts-0-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -86,7 +86,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [MiM
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions) (la…</a>   80.3%  ▃·▃·▃▃▃·●▃█▅ beats 5/11     medium · avg 38%       4.6%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions) (ma…</a>   80.3%  ▃·▃·▃▃▃·●▃█▅ beats 5/11     medium · avg 38%       4.6%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1272.5  ▁▁▂▂▂▂▃▄▅▅●▇ beats 125/152  avg 1061               2.6%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1439.2  ▁▁▃▃●▃▇█▅▇▄▅ beats 7/37     avg 1331               1.3%  blunt
 <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question answ…</a>   84.1%  ▄·····▄▄·●·█ beats 4/6      medium · avg 56%       0.5%  blunt

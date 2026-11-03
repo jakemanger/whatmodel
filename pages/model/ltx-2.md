@@ -75,6 +75,6 @@ weighted average                                   = 49.0
    pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --pipeline dev-two-stage-hq --prompt "A cinematic scene of ocean waves at golden hour" --model-repo prince-canuma/LTX-2-dev
    ```
 
-Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2)
+Model repository and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2)
 
 [interactive version](https://whatmodel.sh/model/ltx-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

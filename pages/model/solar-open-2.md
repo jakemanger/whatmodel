@@ -6,7 +6,7 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 70.5** ±1.2 · #75 of 732 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.5** ±1.2 · #75 of 732 · from 13 benchmark results across 1 source · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,12 +26,12 @@ math         ▁▁▃▅█▆▄█●▂▁▁   #66 of 431*     11%      2
 Beats [GPT-5 Pro](gpt-5-pro.md), [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
 <pre>
-test                          result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.6%    9.3%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 1.9%    8.8%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 19%          5.1%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       70.4%  ▄··········● beats 3/5    hard · avg 15%          3.8%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>         19.6%  █·▄▄······●▄ beats 4/5    very hard · avg 5.3%    2.0%  blunt
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (maker)</a>      28.3%  ▄········●█▄ beats 2/5    very hard · avg 4.6%    9.3%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (maker)</a>     16.6%  ▄▄····▄···█● beats 5/5    very hard · avg 1.9%    8.8%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (maker)</a>   58.2%  ▄▄▄·······●▄ beats 3/5    hard · avg 19%          5.1%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>       70.4%  ▄··········● beats 3/5    hard · avg 15%          3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (maker)</a>         19.6%  █·▄▄······●▄ beats 4/5    very hard · avg 5.3%    2.0%  blunt
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [DeepSeek V4 Flash Vision (
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   92.4%  ▄······▄▄▄·● beats 5/5    medium · avg 50%    4.6%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             70.4%  ▄··········● beats 3/5    hard · avg 15%      3.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (maker)</a>           70.4%  ▄··········● beats 3/5    hard · avg 15%      3.8%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -53,9 +53,9 @@ test                                result  vs the others in its run  difficulty
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank lower overall.
 
 <pre>
-test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    medium · avg 65%    7.1%  sharp · maxed out
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 31%      4.0%  sharp · noisy
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (maker)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    medium · avg 65%    7.1%  sharp · maxed out
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (maker)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 31%      4.0%  sharp · noisy
 </pre>
 
 </details>
@@ -64,11 +64,11 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   86.3%  █···██·█··●█ beats 4/5    hard · avg 41%           23%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           28.8%  █▄······▄·●▄ beats 4/5    very hard · avg 4.7%     14%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       86.2%  ▄·▄▄····▄··● beats 5/5    medium · avg 55%        7.7%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (maker)</a>                 86.3%  █···██·█··●█ beats 4/5    hard · avg 41%           23%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (maker)</a>         28.8%  █▄······▄·●▄ beats 4/5    very hard · avg 4.7%     14%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (maker)</a>                     86.2%  ▄·▄▄····▄··● beats 5/5    medium · avg 55%        7.7%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   80.0%  ▄···▄▄··▄··● beats 4/5    medium · avg 43%        5.6%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 61.0%  █··▄·▄·····● beats 4/5    hard · avg 25%          5.1%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (maker)</a>               61.0%  █··▄·▄·····● beats 4/5    hard · avg 25%          5.1%  at its level
 </pre>
 
 </details>
@@ -78,10 +78,10 @@ test                                result  vs the others in its run  difficulty
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                               results  share of the score
-<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                   1% ▇
-weighted average                              = 70.5
+source                                    results  share of the score
+<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (submitte…</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 70.5
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
@@ -96,6 +96,6 @@ weighted average                              = 70.5
    vllm serve upstage/Solar-Open2-250B --served-model-name solar-open2-250b --tensor-parallel-size 8 --enable-expert-parallel --moe-backend triton --default-chat-template-kwargs '{"think_render_option":"preserved"}' --reasoning-parser solar_open2 --tool-call-parser solar_open2 --enable-auto-tool-choice --logits-processors vllm.v1.sample.logits_processor.solar_open2:SolarOpen2TemplateLogitsProcessor
    ```
 
-Official weights and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open2-250B)
+Model repository and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open2-250B)
 
 [interactive version](https://whatmodel.sh/model/solar-open-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

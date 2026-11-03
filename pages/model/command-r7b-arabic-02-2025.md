@@ -96,6 +96,6 @@ Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/matrixportalx/c4a
    ollama run command-r7b-arabic:7b
    ```
 
-Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025)
+Model repository and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025)
 
 [interactive version](https://whatmodel.sh/model/command-r7b-arabic-02-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

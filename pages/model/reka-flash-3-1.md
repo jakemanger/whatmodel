@@ -120,6 +120,6 @@ Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/cnfusi
 
 Other versions: 8bit (~22.2 GB, Mac only) `mlx_lm.chat --model cnfusion/reka-flash-3.1-mlx-8Bit`
 
-Official weights and documentation: [huggingface.co/RekaAI](https://huggingface.co/RekaAI/reka-flash-3.1)
+Model repository and documentation: [huggingface.co/RekaAI](https://huggingface.co/RekaAI/reka-flash-3.1)
 
 [interactive version](https://whatmodel.sh/model/reka-flash-3-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

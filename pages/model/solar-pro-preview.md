@@ -96,6 +96,6 @@ Other versions: Q8_0 (~23.5 GB) `lms get https://huggingface.co/MaziyarPanahi/so
    ollama run solar-pro:22b
    ```
 
-Official weights and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/solar-pro-preview-instruct)
+Model repository and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/solar-pro-preview-instruct)
 
 [interactive version](https://whatmodel.sh/model/solar-pro-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

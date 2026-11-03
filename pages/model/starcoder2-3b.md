@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 42.4%  █·▅▃▃▃●▃▃▅·▅ beats 9/15   easy · avg 81%      7.1%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.7%  ▁·▂▁▂●▅█▄▄▁▂ beats 9/35   medium · avg 62%    4.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           32.1%  ▃▅●▃▃▅·▃▃▅·▅ beats 5/15   medium · avg 56%    3.0%  at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        25.0%  ▄▄·▄█●▄█·█·▄ beats 6/12   medium · avg 49%    2.9%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (maker)</a>                      25.0%  ▄▄·▄█●▄█·█·▄ beats 6/12   medium · avg 49%    2.9%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.1%  ▄●█▃▄▇▄▁▇▃·▁ beats 5/35   medium · avg 46%    2.5%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           34.0%  ▃·▃█●▅▃·▃▃▅▃ beats 6/15   medium · avg 54%    2.5%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   11.0%  ▁·▁▁▄●█▄█▁▅▅ beats 8/35   medium · avg 51%    2.0%  sharp
@@ -44,8 +44,8 @@ test                                result  vs the others in its run  difficulty
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank higher overall. Trails [OPT-2.7B](opt-2-7b.md), [Gemma 2B (base)](gemma-2b-base.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   27.7%  ▄▄▄·▄●·██·█▄ beats 5/12   easy · avg 75%    2.8%  sharp · at its level
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (maker)</a>   27.7%  ▄▄▄·▄●·██·█▄ beats 5/12   easy · avg 75%    2.8%  sharp · at its level
 </pre>
 
 </details>
@@ -53,9 +53,9 @@ test         result  vs the others in its run  difficulty      counts  why
 <details><summary>other tests (2)</summary>
 
 <pre>
-test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.2%  ▂▂●▄▄█▁▄▅▃▁▃ beats 4/42   medium · avg 52%    6.6%  typical
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   21.4%  ●▁▁▄▂▅▇█▆▂▂▂ beats 1/58   medium · avg 48%    3.0%  at its level
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                 20.2%  ▂▂●▄▄█▁▄▅▃▁▃ beats 4/42   medium · avg 52%    6.6%  typical
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>   21.4%  ●▁▁▄▂▅▇█▆▂▂▂ beats 1/58   medium · avg 48%    3.0%  at its level
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   20% ▇▇
 <a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        6   20% ▇▇
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   17% ▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        1    3% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
 weighted average                                   = 35.1
 </pre>
@@ -160,6 +160,6 @@ Other versions: Q8_0 (~3.2 GB) `ollama run starcoder2:3b-q8_0`
 
 Other versions: 8bit (~3.4 GB, Mac only) `mlx_lm.chat --model OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit`
 
-Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-3b)
+Model repository and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoder2-3b)
 
 [interactive version](https://whatmodel.sh/model/starcoder2-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

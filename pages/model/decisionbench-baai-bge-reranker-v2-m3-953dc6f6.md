@@ -6,50 +6,50 @@
 
 BAAI · 0.567755777B params · apache-2.0
 
-**score 45.1** ±1.2 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 18.8** ±1.8 · #346 of 355 · from 27 benchmark results across 1 source · † no independently run results verified
 
 ## What it's good at
 
 <sub>● marks bge-reranker-v2-m3 (DecisionBench 953dc6f6) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁●▃▃▁▂▁▂▅█▂   #53 of 57     99%     27
+task       vs the others         rank  counts  tests
+workflows  ▁●▁▂▁▂▂▆█▄▁▁   #108 of 114     99%     27
 </pre>
 
-<details><summary>workflows · #53 of 57 · 99% of its score</summary>
+<details><summary>workflows · #108 of 114 · 99% of its score</summary>
+
+Beats [CLM-v0.1-8B Qwen3-8B heads](decision-clm-v0-1-8b.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   22.7%  ▁▁▁●▂▂▁▁▁▁▃█ beats 7/56   hard · avg 29%          13%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · action selecti…</a>   22.3%  ▂▁●▃▄▃▁▁▂█▇▄ beats 6/56   hard · avg 26%          13%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · completion ass…</a>   34.0%  ▁▁●▃▄·▂▁▁▆█▂ beats 4/56   medium · avg 51%        12%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   27.2%  ▃●▂·▁▁▁▁▁▁█▅ beats 11/56  medium · avg 38%       8.5%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · navigation (al…</a>    9.0%  ▁●·▃▁▁▁▁▁▁▃█ beats 2/56   hard · avg 22%         7.7%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   32.0%  ▁·▁·●▃▄▃▂█▄▂ beats 3/56   medium · avg 45%       7.4%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · verification (…</a>   31.5%  ●▁▅▁▃▂▂▁▁▇▇█ beats 1/56   medium · avg 40%       7.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · record classif…</a>   15.0%  ▃●▁▂▂▂▄▁▃▆██ beats 6/56   hard · avg 21%         5.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · content classi…</a>   18.0%  ▁····▁●▁▁▁▁█ beats 4/56   medium · avg 41%       4.8%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · document recor…</a>   25.2%  ▂▂·●▂▄▃▆▄█▁▁ beats 7/56   hard · avg 27%         4.0%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   26.1%  ▁▁▅●▃▃▅█▃▃·▁ beats 11/56  hard · avg 27%         3.4%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · review scoring…</a>   32.0%  ▁······▂●▅▇█ beats 10/56  hard · avg 32%         2.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   37.0%  ▁▁·▁●▂▁▃▃█▇▃ beats 6/56   medium · avg 45%       2.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   51.3%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 16/56  medium · avg 55%       1.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   30.4%  ▂·▁▁●█▅▃▃▂▁▁ beats 6/56   hard · avg 33%         1.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · document workf…</a>   51.4%  █●▃▁▁▃▂▂▁·▁▁ beats 22/56  medium · avg 51%       1.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · safety gating …</a>   65.0%  ▂·····▆●▂▂▄▇ beats 27/56  medium · avg 51%       0.8%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   13.0%  ▁▁·▁▁▂▃●▃▁▁█ beats 19/56  very hard · avg 12%    0.8%  sharp · too hard for it · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · target selecti…</a>    8.0%  ▁▁·▁▁▁●▁▂▁▁█ beats 13/56  very hard · avg 11%    0.8%  sharp · too hard for it · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   51.1%  ▁▁▁▂▆●▃█···▁ beats 29/56  medium · avg 38%       0.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   63.0%  ▁·▁▁·▁▁█●▃█▂ beats 24/56  medium · avg 55%       0.5%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · content modera…</a>   46.0%  ▁····●▅▃▂▂·█ beats 8/56   medium · avg 61%       0.5%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · context manage…</a>   52.0%  ▁·····▁●▆▁█▃ beats 11/56  medium · avg 59%       0.3%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · document class…</a>    5.0%  ▂▁·▂▁●▁▄▁▂▂█ beats 12/56  very hard · avg 13%    0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   98.1%  ▁·▁▄▇▄▅▄▂▁●█ beats 43/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · function agent…</a>   86.4%  ▃▃▄▅▆▂▅●▃▄█▃ beats 34/56  medium · avg 52%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · routing triage…</a>   59.5%  █▁···▁·▂●▅▂▂ beats 37/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · action selecti…</a>   22.3%  ▂▁●▃▄▃▁▁▂█▇▄ beats 6/56   medium · avg 51%        15%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · completion ass…</a>   34.0%  ▁▁●▃▄·▂▁▁▆█▂ beats 4/56   very easy · avg 86%     12%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   22.7%  ▁▁▁●▂▂▁▁▁▁▃█ beats 7/56   medium · avg 64%        12%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   27.2%  ▃●▂·▁▁▁▁▁▁█▅ beats 11/56  very easy · avg 86%    8.4%  sharp · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   32.0%  ▁·▁·●▃▄▃▂█▄▂ beats 3/56   easy · avg 78%         7.6%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · navigation (al…</a>    9.0%  ▁●·▃▁▁▁▁▁▁▃█ beats 2/56   medium · avg 58%       6.9%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · verification (…</a>   31.5%  ●▁▅▁▃▂▂▁▁▇▇█ beats 1/56   medium · avg 56%       6.6%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · record classif…</a>   15.0%  ▃●▁▂▂▂▄▁▃▆██ beats 6/56   medium · avg 39%       5.9%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · content classi…</a>   18.0%  ▁····▁●▁▁▁▁█ beats 4/56   easy · avg 73%         4.6%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · document recor…</a>   25.2%  ▂▂·●▂▄▃▆▄█▁▁ beats 7/56   medium · avg 46%       4.0%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   26.1%  ▁▁▅●▃▃▅█▃▃·▁ beats 11/56  medium · avg 45%       3.4%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · review scoring…</a>   32.0%  ▁······▂●▅▇█ beats 10/56  medium · avg 52%       2.6%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   37.0%  ▁▁·▁●▂▁▃▃█▇▃ beats 6/56   medium · avg 62%       2.2%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   51.3%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 16/56  easy · avg 74%         1.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   30.4%  ▂·▁▁●█▅▃▃▂▁▁ beats 6/56   medium · avg 52%       1.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · document workf…</a>   51.4%  █●▃▁▁▃▂▂▁·▁▁ beats 22/56  easy · avg 66%         1.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   13.0%  ▁▁·▁▁▂▃●▃▁▁█ beats 19/56  medium · avg 35%       0.8%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · target selecti…</a>    8.0%  ▁▁·▁▁▁●▁▂▁▁█ beats 13/56  hard · avg 29%         0.7%  too hard for it · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · safety gating …</a>   65.0%  ▂·····▆●▂▂▄▇ beats 27/56  easy · avg 77%         0.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   51.1%  ▁▁▁▂▆●▃█···▁ beats 29/56  medium · avg 52%       0.5%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   63.0%  ▁·▁▁·▁▁█●▃█▂ beats 24/56  easy · avg 71%         0.4%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · content modera…</a>   46.0%  ▁····●▅▃▂▂·█ beats 8/56   easy · avg 82%         0.4%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · context manage…</a>   52.0%  ▁·····▁●▆▁█▃ beats 11/56  easy · avg 73%         0.3%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · document class…</a>    5.0%  ▂▁·▂▁●▁▄▁▂▂█ beats 12/56  hard · avg 21%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   98.1%  ▁·▁▄▇▄▅▄▂▁●█ beats 43/56  easy · avg 66%         0.2%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · function agent…</a>   86.4%  ▃▃▄▅▆▂▅●▃▄█▃ beats 34/56  easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">DecisionBench v1 · routing triage…</a>   59.5%  █▁···▁·▂●▅▂▂ beats 37/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -62,15 +62,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/BAAI__bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 45.1
+weighted average                                   = 18.8
 </pre>
 
 <sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/BAAI/bge-reranker-v2-m3/tree/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e) · Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/revision/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/bge-reranker-v2-m3)
+Model repository and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/bge-reranker-v2-m3)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-baai-bge-reranker-v2-m3-953dc6f6) · [JSON](https://whatmodel.sh/api?format=json&all=1)

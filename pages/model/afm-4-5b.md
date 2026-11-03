@@ -93,6 +93,6 @@ weighted average                        = 49.6
    ollama run hf.co/arcee-ai/AFM-4.5B-GGUF:Q4_K_M
    ```
 
-Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B)
+Model repository and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B)
 
 [interactive version](https://whatmodel.sh/model/afm-4-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

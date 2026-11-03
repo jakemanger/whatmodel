@@ -106,6 +106,6 @@ Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/mradermacher/Biomni-R0-32B-Pre
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='biomni/Biomni-R0-32B-Preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/biomni](https://huggingface.co/biomni/Biomni-R0-32B-Preview)
+Model repository and documentation: [huggingface.co/biomni](https://huggingface.co/biomni/Biomni-R0-32B-Preview)
 
 [interactive version](https://whatmodel.sh/model/biomni-r0-32b-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

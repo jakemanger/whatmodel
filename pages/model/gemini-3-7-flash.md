@@ -30,13 +30,13 @@ Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0135 IPS  ▁▁▁▃▃●█▁▂▂▁▁ beats 23/59  avg -0.379 IPS          7.8%  sharp
-<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  81.6%  ▁·▁·▁▁▄▃▆█▅● beats 55/63  hard · avg 25%          3.2%  sharp · small run · several runs
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">Terminal-Bench 2.1 (maker)</a>                81.6%  ▁·▁·▁▁▄▃▆█▅● beats 55/63  hard · avg 25%          3.2%  sharp · small run · several runs
 <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-gemini-gemini-3-7-flash-high-mini-swe-agent.json">Terminal-Bench 4.0</a>                        11.2%  ●▅▅▅▅·▅▃▃▅▅▅ beats 0/20   very hard · avg 0.5%    3.0%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecified)…</a>        60.4%  ▂·▁▁▁▁▂▃█●▂▁ beats 44/58  very hard · avg 6.0%    1.9%  sharp · at its level · small run
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>             65.3%  ▂····▂▁▁▆●██ beats 12/31  hard · avg 25%          0.9%  at its level · small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (maker)</a>           65.3%  ▂····▂▁▁▆●██ beats 12/31  hard · avg 25%          0.9%  at its level · small run
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>        10.8%  ▁▁·▁▁▁▁▅●█▅█ beats 11/27  very hard · avg 2.4%    0.9%  typical
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (lab)</a>                  14.9%  █·█··█●····█ beats 3/4    very hard · avg 1.9%    0.5%  small run
-<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">τ³-bench Banking (lab)</a>                    30.9%  ▂▂·▅█▂▃▃▃▆▂● beats 22/24  very hard · avg 7.9%    0.4%  blunt · small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (maker)</a>                14.9%  █·█··█●····█ beats 3/4    very hard · avg 1.9%    0.5%  small run
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">τ³-bench Banking (maker)</a>                  30.9%  ▂▂·▅█▂▃▃▃▆▂● beats 22/24  very hard · avg 7.9%    0.4%  blunt · small run
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1589.7  ▁▁▃▂▅█▃▆●▅▁▂ beats 98/129  avg 981                 5.4%  sharp
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   79.8%  ▁▁▁▁·▁▂▃▅▃●▇ beats 32/49   hard · avg 17%          2.0%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecified)…</a>   60.4%  ▂·▁▁▁▁▂▃█●▂▁ beats 44/58   very hard · avg 6.0%    1.9%  sharp · at its level · small run
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>        65.3%  ▂····▂▁▁▆●██ beats 12/31   hard · avg 25%          0.9%  at its level · small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">DeepSWE v1.1 (resolved) (maker)</a>      65.3%  ▂····▂▁▁▆●██ beats 12/31   hard · avg 25%          0.9%  at its level · small run
 </pre>
 
 </details>
@@ -90,7 +90,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">CharXiv (reasoning questions) (la…</a>   84.5%  ▃·▃·▃▃▃·▃▃●▅ beats 9/11     medium · avg 38%    2.9%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">CharXiv (reasoning questions) (ma…</a>   84.5%  ▃·▃·▃▃▃·▃▃●▅ beats 9/11     medium · avg 38%    2.9%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1295.2  ▁▁▂▂▂▂▃▄▅▅█● beats 148/152  avg 1061            2.0%  blunt
 </pre>
 
@@ -106,8 +106,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.8%  ▁▁▁▁▂▄▆▄▅▇█● beats 207/211  hard · avg 39%          1.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    69.2%  ▁▁▃▂▃▃▆▆█▄▂● beats 73/81    very hard · avg 8.0%    1.2%  at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   65.0%  ▁▁▃▂▂▄▁▃▄▄▄● beats 30/38    very hard · avg 14%     1.1%  at its level
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (lab)</a>                        85.4%  ▇·█▅▅▄▄··●▁▁ beats 26/28    medium · avg 59%        0.9%  typical
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (lab)</a>         97.0%  █▄▄█·▄···▄·● beats 8/8      medium · avg 53%        0.9%  small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (maker)</a>                      85.4%  ▇·█▅▅▄▄··●▁▁ beats 26/28    medium · avg 59%        0.9%  typical
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (maker)</a>       97.0%  █▄▄█·▄···▄·● beats 8/8      medium · avg 53%        0.9%  small run
 <a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   41.1%  ▄·█▄▄▄█●·▄▄█ beats 9/13     very hard · avg 1.6%    0.8%  sharp · at its level · noisy
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   96.8%  ▁▁▃▁█▄▃▃●▂▂▂ beats 40/49    easy · avg 77%          0.7%  maxed out
 </pre>

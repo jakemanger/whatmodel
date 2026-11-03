@@ -166,6 +166,6 @@ Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/zephyr-7
 
 Other versions: Q8_0 (~9.19 GB) `ollama run zephyr:7b-beta-q8_0`
 
-Official weights and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
+Model repository and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
 
 [interactive version](https://whatmodel.sh/model/zephyr-7b-beta) · [JSON](https://whatmodel.sh/api?format=json&all=1)

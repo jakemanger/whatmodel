@@ -25,8 +25,8 @@ vision &amp; documents  ▁▁▂●▁▃▄▂▆▇█▄    #132 of 153     
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Gemma 7B (base)](gemma-7b-base.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
-test                        result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (lab)</a>   59.4%  ▁··▁▄▄●▇▄▅█▄ beats 15/48  medium · avg 65%    5.8%  at its level · small run
+test                          result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (maker)</a>   59.4%  ▁··▁▄▄●▇▄▅█▄ beats 15/48  medium · avg 65%    5.8%  at its level · small run
 </pre>
 
 </details>
@@ -41,16 +41,16 @@ test                                 result  vs the others in its run   difficul
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1024.8  ▁▁▂▂●▂▃▄▅▅█▇ beats 16/152  avg 1061                15%  blunt
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>         33.4%  ▂▂▂●▃▂·▂▂··▂ beats 7/13    hard · avg 34%          13%  at its level
 <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  13.0000  ▃▃▃·▃█·●▃▃▃▃ beats 8/12    avg -4.498             9.4%  typical
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (lab)</a>                      51.2%  ▁····▁▁▃●▆▆▅ beats 11/53   medium · avg 57%       6.2%  at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (lab)</a>            59.4%  ▁··▁▄▄●▇▄▅█▄ beats 15/48   medium · avg 65%       5.8%  at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MMMU (val) (maker)</a>                    51.2%  ▁····▁▁▃●▆▆▅ beats 11/53   medium · avg 57%       6.2%  at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MathVista (testmini) (maker)</a>          59.4%  ▁··▁▄▄●▇▄▅█▄ beats 15/48   medium · avg 65%       5.8%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>    43.5%  ▅▃█··●▃····▃ beats 7/9     hard · avg 42%         2.6%  blunt
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">HallusionBench (lab)</a>                  50.7%  ▂▁·●▂▂▃▅▃█▅▅ beats 4/33    medium · avg 55%       2.2%  blunt · at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">DocVQA (lab)</a>                          92.9%  ▁··▃▁▁▁●█▇▄▅ beats 7/28    very easy · avg 93%    2.0%  blunt · maxed out · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">ChartQA (lab)</a>                         84.9%  ▁··▁▁▁▁▁▂▅●█ beats 24/44   easy · avg 82%         2.0%  blunt · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">RealWorldQA (lab)</a>                     68.3%  ▁▃▁▇●▇▇▅█▁▅▅ beats 9/39    easy · avg 71%         1.7%  blunt · at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OCRBench (lab)</a>                        82.5%  ▁·▃▁▆●▂█▅█▁▃ beats 13/37   easy · avg 83%         1.4%  blunt · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">AI2D test (lab)</a>                       84.5%  ▁▁▅▇▃●·▄·█·▃ beats 16/28   easy · avg 84%         0.9%  blunt · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">TextVQA (lab)</a>                         82.3%  ▁▁▁▄▅▁▃·▃●▃█ beats 16/24   easy · avg 77%         0.8%  blunt · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">HallusionBench (maker)</a>                50.7%  ▂▁·●▂▂▃▅▃█▅▅ beats 4/33    medium · avg 55%       2.2%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">DocVQA (maker)</a>                        92.9%  ▁··▃▁▁▁●█▇▄▅ beats 7/28    very easy · avg 93%    2.0%  blunt · maxed out · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">ChartQA (maker)</a>                       84.9%  ▁··▁▁▁▁▁▂▅●█ beats 24/44   easy · avg 82%         2.0%  blunt · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">RealWorldQA (maker)</a>                   68.3%  ▁▃▁▇●▇▇▅█▁▅▅ beats 9/39    easy · avg 71%         1.7%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OCRBench (maker)</a>                      82.5%  ▁·▃▁▆●▂█▅█▁▃ beats 13/37   easy · avg 83%         1.4%  blunt · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">AI2D test (maker)</a>                     84.5%  ▁▁▅▇▃●·▄·█·▃ beats 16/28   easy · avg 84%         0.9%  blunt · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">TextVQA (maker)</a>                       82.3%  ▁▁▁▄▅▁▃·▃●▃█ beats 16/24   easy · avg 77%         0.8%  blunt · small run
 </pre>
 
 </details>
@@ -59,9 +59,9 @@ test                                 result  vs the others in its run   difficul
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (with subtitles) (lab)</a>     57.1%  ▁●▁▁▁·▁▃▁▁▁█ beats 1/16   medium · avg 66%    4.1%  at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (without subtitles) (la…</a>   54.8%  ▁●▁▃▁·█▄▄▅·▇ beats 1/27   medium · avg 63%    3.2%  blunt · at its level · small run
-<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MVBench (lab)</a>                        67.5%  ▁··▃▄▁●▄▄▄█▄ beats 7/26   medium · avg 67%    1.6%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (with subtitles) (maker)</a>   57.1%  ▁●▁▁▁·▁▃▁▁▁█ beats 1/16   medium · avg 66%    4.1%  at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">Video-MME (without subtitles) (ma…</a>   54.8%  ▁●▁▃▁·█▄▄▅·▇ beats 1/27   medium · avg 63%    3.2%  blunt · at its level · small run
+<a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">MVBench (maker)</a>                      67.5%  ▁··▃▄▁●▄▄▄█▄ beats 7/26   medium · avg 67%    1.6%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   40% ▇▇▇▇▇
-<a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OpenGVLab InternVL2 model cards (lab)</a>          12   32% ▇▇▇▇
+<a name="card-opengvlab-internvl2-cards"></a><a href="https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation">OpenGVLab InternVL2 model cards (submit…</a>       12   32% ▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    9% ▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
@@ -93,6 +93,6 @@ weighted average                                   = 47.8
    vllm serve OpenGVLab/InternVL2-26B --trust-remote-code
    ```
 
-Official weights and documentation: [huggingface.co/OpenGVLab](https://huggingface.co/OpenGVLab/InternVL2-26B)
+Model repository and documentation: [huggingface.co/OpenGVLab](https://huggingface.co/OpenGVLab/InternVL2-26B)
 
 [interactive version](https://whatmodel.sh/model/internvl2-26b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

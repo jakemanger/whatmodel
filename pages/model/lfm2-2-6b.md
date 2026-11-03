@@ -26,7 +26,7 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen2.5 Coder 32B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures (lab)</a>   79.6%  █··▄▄·●····▄ beats 4/5    easy · avg 84%     12%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures (mak…</a>   79.6%  █··▄▄·●····▄ beats 4/5    easy · avg 84%     12%  typical
 </pre>
 
 </details>
@@ -37,8 +37,8 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       63.6%  ▃····●·█···▃ beats 1/5    easy · avg 79%    7.1%  at its level
-<a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (l…</a>   82.4%  █·█··█●█···█ beats 3/5    easy · avg 83%    1.1%  blunt
+<a href="https://arxiv.org/html/2511.23404v1">MATH-500 (maker)</a>                     63.6%  ▃····●·█···▃ beats 1/5    easy · avg 79%    7.1%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (m…</a>   82.4%  █·█··█●█···█ beats 3/5    easy · avg 83%    1.1%  blunt
 </pre>
 
 </details>
@@ -47,16 +47,16 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2511.23404v1">MMLU (lab)</a>                           64.4%  ▄█···●·····▄ beats 3/5     medium · avg 73%        18%  at its level
-<a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond (lab)</a>                   26.6%  █●····███··█ beats 1/5     very hard · avg 34%     11%  sharp · too hard for it
-<a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (lab)</a>                       26.0%  ██●···██···█ beats 2/5     medium · avg 42%        10%  typical
+<a href="https://arxiv.org/html/2511.23404v1">MMLU (maker)</a>                         64.4%  ▄█···●·····▄ beats 3/5     medium · avg 73%        18%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond (maker)</a>                 26.6%  █●····███··█ beats 1/5     very hard · avg 34%     11%  sharp · too hard for it
+<a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (maker)</a>                     26.0%  ██●···██···█ beats 2/5     medium · avg 42%        10%  typical
 <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   22.2%  █··█●█··█··█ beats 2/5     hard · avg 31%         9.4%  typical
-<a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (lab)</a>    60.3%  ▄··█●··▄···▄ beats 3/5     easy · avg 70%         8.6%  at its level
-<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (l…</a>   55.4%  ▄·█····●···▄ beats 4/5     medium · avg 59%       7.8%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (make…</a>   60.3%  ▄··█●··▄···▄ beats 3/5     easy · avg 70%         8.6%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (m…</a>   55.4%  ▄·█····●···▄ beats 4/5     medium · avg 59%       7.8%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid…</a>   74.3%  ▄·▄·●···▄··▄ beats 3/5     easy · avg 81%         5.8%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.5%  ▃·▁▁▂▁▂●█▇▄▁ beats 39/100  medium · avg 67%       3.8%  sharp · at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 54/146  easy · avg 82%         3.1%  at its level · noisy
-<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (lab)</a>                       60.8%  █·····██●·██ beats 3/5     easy · avg 71%         2.0%  blunt · at its level
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (maker)</a>                     60.8%  █·····██●·██ beats 3/5     easy · avg 71%         2.0%  blunt · at its level
 </pre>
 
 </details>
@@ -66,11 +66,11 @@ test                                result  vs the others in its run   difficult
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                         results  share of the score
-<a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (lab)</a>         11   92% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2    7% ▇
-prior: pull toward the middle             1% ▇
-weighted average                        = 44.2
+source                                    results  share of the score
+<a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (submitted / make…</a>       11   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 44.2
 </pre>
 
 <sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
@@ -154,6 +154,6 @@ Other versions: 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-com
 
 Other versions: 8bit (~2.7 GB, Mac only) `mlx_lm.chat --model mlx-community/LFM2-2.6B-8bit`
 
-Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B)
+Model repository and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B)
 
 [interactive version](https://whatmodel.sh/model/lfm2-2-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

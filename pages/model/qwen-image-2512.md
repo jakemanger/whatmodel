@@ -82,6 +82,6 @@ api (Replicate) · $0.020/image · [replicate.com](https://replicate.com/qwen/qw
    sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2512)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2512)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

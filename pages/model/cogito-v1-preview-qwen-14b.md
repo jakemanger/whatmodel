@@ -122,6 +122,6 @@ Other versions: Q8_0 (~15.7 GB) `lms get https://huggingface.co/lmstudio-communi
 
 Other versions: 8bit (~15.7 GB, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-qwen-14B-8bit`
 
-Official weights and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B)
+Model repository and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B)
 
 [interactive version](https://whatmodel.sh/model/cogito-v1-preview-qwen-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

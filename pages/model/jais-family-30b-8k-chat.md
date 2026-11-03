@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 30.82B params · apache-2.0
 
-**score 46.9** ±2.8 · #582 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 46.9** ±2.8 · #582 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -45,7 +45,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards (la…</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards (su…</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
 weighted average                                   = 46.9
 </pre>
@@ -62,6 +62,6 @@ weighted average                                   = 46.9
    uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-family-30b-8k-chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
    ```
 
-Official weights and documentation: [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-30b-8k-chat)
+Model repository and documentation: [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-30b-8k-chat)
 
 [interactive version](https://whatmodel.sh/model/jais-family-30b-8k-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,50 +6,101 @@
 
 ConvAI Innovations · 0.42129383B params · apache-2.0
 
-**score 48.9** ±1.1 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 24.5** ±1.4 · #329 of 355 · from 41 benchmark results across 2 sources
 
 ## What it's good at
 
 <sub>● marks laya (DecisionBench 1c5edc17) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others       rank  counts  tests
-workflows  ▁▁▃●▃▁▂▁▂▅█▂   #47 of 57     99%     27
+task                   vs the others         rank  counts  tests
+knowledge &amp; reasoning  ▁▂▂▂▂●▃▅▅▆█▂   #193 of 263     11%      9
+workflows              ▁▁▁●▁▂▂▆█▄▁▁   #102 of 114     88%     58
 </pre>
 
-<details><summary>workflows · #47 of 57 · 99% of its score</summary>
+<details><summary>knowledge &amp; reasoning · #193 of 263 · 11% of its score</summary>
+
+Beats [StartLux-Decision v1.1 0.8B](decision-startlux-decision-v1-1-0-8b-instant.md), [Sieve 2B v3](decision-sieve-2b-v3.md), [OneJev1.6-0.8B](decision-onejev1-6-0-8b.md) here, though they rank higher overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · BoolQ</a>                   83.7%  ▁··▃▃▁▄▁●█▇▄ beats 11/25  easy · avg 84%         3.5%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · PubMedQA</a>                50.0%  ▃▂▃●·▂▃▃▆█▆▂ beats 5/25   easy · avg 69%         3.2%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SQuAD 2 answerability</a>   61.9%  ▁●▃▁▇█▃▃▄▃·▁ beats 1/25   easy · avg 80%         1.6%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · VitaminC verification</a>   79.0%  ▁···▃·▄●▃··▁ beats 18/25  easy · avg 78%         1.4%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MultiNLI</a>                87.6%  ▂··▄██▂●▆█▆▂ beats 13/25  very easy · avg 87%    1.0%  blunt
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · boolq</a>             84.6%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · xnli en</a>           86.0%  █··········● beats 1/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · xnli zh</a>           61.5%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · turtlebench</a>       42.6%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>workflows · #102 of 114 · 88% of its score</summary>
+
+Trails [GLiNER2.5-Decide](decision-gliner-decide.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   30.0%  ▁▁▁▁●▂▁▁▁▁▃█ beats 12/56  hard · avg 29%          14%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · action selecti…</a>   25.7%  ▂▁▂●▄▃▁▁▂█▇▄ beats 11/56  hard · avg 26%          13%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · completion ass…</a>   35.0%  ▁▁●▃▄·▂▁▁▆█▂ beats 5/56   medium · avg 51%        11%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   24.8%  ▃●▂·▁▁▁▁▁▁█▅ beats 7/56   medium · avg 38%       9.4%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   15.0%  ▁▁·●▁▁▁▁▁▁▃█ beats 6/56   hard · avg 22%         8.7%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   41.0%  ▁·▁·▂●▄▃▂█▄▂ beats 10/56  medium · avg 45%       7.0%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · verification (…</a>   42.5%  ▁▁▅▁●▂▂▁▁▇▇█ beats 16/56  medium · avg 40%       6.6%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · record classif…</a>   23.0%  ▃▂▁▂●▂▄▁▃▆██ beats 13/56  hard · avg 21%         5.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · content classi…</a>   49.0%  ▁····▁▁▁▁●▁█ beats 12/56  medium · avg 41%       4.6%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · document recor…</a>   32.5%  ▂▂·▁▂●▃▆▄█▁▁ beats 14/56  hard · avg 27%         3.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   32.8%  ▁▁▅▅●▃▅█▃▃·▁ beats 19/56  hard · avg 27%         3.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · review scoring…</a>   22.0%  ▁······●▃▅▇█ beats 4/56   hard · avg 32%         2.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   42.0%  ▁▁·▁▂●▁▃▃█▇▃ beats 10/56  medium · avg 45%       2.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   50.7%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 11/56  medium · avg 55%       1.2%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   40.8%  ▂·▁▁▆●▅▃▃▂▁▁ beats 21/56  hard · avg 33%         1.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>    4.0%  ▁▁·▁●▂▃▂▃▁▁█ beats 5/56   very hard · avg 12%    0.9%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · target selecti…</a>    7.0%  ▁▁·▁▁▁●▁▂▁▁█ beats 10/56  very hard · avg 11%    0.9%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · document workf…</a>   50.5%  █●▃▁▁▃▂▂▁·▁▁ beats 20/56  medium · avg 51%       0.9%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · safety gating …</a>   60.0%  ▂·····▆●▂▂▄▇ beats 23/56  medium · avg 51%       0.7%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   39.3%  ▁▁▁▂●▃▃█···▁ beats 22/56  medium · avg 38%       0.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   53.0%  ▁·▁▁·▁▁●▂▃█▂ beats 16/56  medium · avg 55%       0.4%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · content modera…</a>   49.0%  ▁····●▅▃▂▂·█ beats 10/56  medium · avg 61%       0.4%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · context manage…</a>   51.0%  ▁·····▁●▆▁█▃ beats 9/56   medium · avg 59%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · document class…</a>    4.0%  ▂▁·▂▁●▁▄▁▂▂█ beats 11/56  very hard · avg 13%    0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   19.0%  ▁·▁▄●▄▅▄▂▁▄█ beats 10/56  medium · avg 46%       0.2%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · function agent…</a>   22.8%  ▃▃●▅▆▂▅▄▃▄█▃ beats 9/56   medium · avg 52%       0.1%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · routing triage…</a>   18.4%  █▁···●·▂▆▅▂▂ beats 20/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · action selecti…</a>   25.7%  ▂▁▂●▄▃▁▁▂█▇▄ beats 11/56  medium · avg 51%        10%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   30.0%  ▁▁▁▁●▂▁▁▁▁▃█ beats 12/56  medium · avg 64%       8.4%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · completion ass…</a>   35.0%  ▁▁●▃▄·▂▁▁▆█▂ beats 5/56   very easy · avg 86%    7.6%  sharp · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   24.8%  ▃●▂·▁▁▁▁▁▁█▅ beats 7/56   very easy · avg 86%    6.3%  sharp · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   15.0%  ▁▁·●▁▁▁▁▁▁▃█ beats 6/56   medium · avg 58%       5.2%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   41.0%  ▁·▁·▂●▄▃▂█▄▂ beats 10/56  easy · avg 78%         4.9%  sharp · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json">Ollaya · Typed decisions test</a>        35.8%  ●·▂▆▄▄▂·▄█▆▆ beats 1/22   medium · avg 64%       4.6%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MASSIVE German intent</a>       40.9%  ▁····●·▂▃▆█▃ beats 1/23   easy · avg 84%         4.3%  sharp · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · PAWS paraphrase</a>             57.6%  ▂●▂▂·▃█▆·▂·▁ beats 2/25   easy · avg 81%         4.2%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · verification (…</a>   42.5%  ▁▁▅▁●▂▂▁▁▇▇█ beats 16/56  medium · avg 56%       4.1%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · record classif…</a>   23.0%  ▃▂▁▂●▂▄▁▃▆██ beats 13/56  medium · avg 39%       4.0%  typical
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · Aegis 2 safety</a>              42.8%  ●·▁▁▂·▃▃▂█▃▁ beats 1/25   easy · avg 77%         3.1%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · content classi…</a>   49.0%  ▁····▁▁▁▁●▁█ beats 12/56  easy · avg 73%         3.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · document recor…</a>   32.5%  ▂▂·▁▂●▃▆▄█▁▁ beats 14/56  medium · avg 46%       2.6%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · MASSIVE English intent</a>      68.6%  ▁·······●▃█▃ beats 1/23   very easy · avg 86%    2.3%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   32.8%  ▁▁▅▅●▃▅█▃▃·▁ beats 19/56  medium · avg 45%       2.2%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · review scoring…</a>   22.0%  ▁······●▃▅▇█ beats 4/56   medium · avg 52%       1.6%  at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SummEval consistency</a>         4.2%  ▁·●▁··▁▁▁▁▄█ beats 1/25   easy · avg 75%         1.5%  sharp · at its level · noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · SummEval relevance</a>           6.3%  ●··▁▂▁▅··▃██ beats 0/25   medium · avg 41%       1.4%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   42.0%  ▁▁·▁▂●▁▃▃█▇▃ beats 10/56  medium · avg 62%       1.4%  blunt · at its level
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · HelpSteer 2 scoring</a>         15.7%  ●▁··▁·▁▃▇█▅▄ beats 0/23   medium · avg 38%       0.7%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   40.8%  ▂·▁▁▆●▅▃▃▂▁▁ beats 21/56  medium · avg 52%       0.7%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   50.7%  ●▁▂▁▁▁▁▁▂▅▁▁ beats 11/56  easy · avg 74%         0.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>    4.0%  ▁▁·▁●▂▃▂▃▁▁█ beats 5/56   medium · avg 35%       0.6%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · document workf…</a>   50.5%  █●▃▁▁▃▂▂▁·▁▁ beats 20/56  easy · avg 66%         0.6%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · target selecti…</a>    7.0%  ▁▁·▁▁▁●▁▂▁▁█ beats 10/56  hard · avg 29%         0.6%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · safety gating …</a>   60.0%  ▂·····▆●▂▂▄▇ beats 23/56  easy · avg 77%         0.5%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   39.3%  ▁▁▁▂●▃▃█···▁ beats 22/56  medium · avg 52%       0.3%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   53.0%  ▁·▁▁·▁▁●▂▃█▂ beats 16/56  easy · avg 71%         0.2%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · content modera…</a>   49.0%  ▁····●▅▃▂▂·█ beats 10/56  easy · avg 82%         0.2%  at its level · noisy
+<a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-public-benchmark-rtx5090-cuda.json">Ollaya · Civil Comments</a>              93.7%  ▂▂▂·▂▅▅▆▃▅·● beats 23/23  very easy · avg 86%    0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · context manage…</a>   51.0%  ▁·····▁●▆▁█▃ beats 9/56   easy · avg 73%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · document class…</a>    4.0%  ▂▁·▂▁●▁▄▁▂▂█ beats 11/56  hard · avg 21%         0.1%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   19.0%  ▁·▁▄●▄▅▄▂▁▄█ beats 10/56  easy · avg 66%         0.1%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · function agent…</a>   22.8%  ▃▃●▅▆▂▅▄▃▄█▃ beats 9/56   easy · avg 68%         0.1%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">DecisionBench v1 · routing triage…</a>   18.4%  █▁···●·▂▆▅▂▂ beats 20/56  medium · avg 42%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · ag news</a>               94.3%  █··········● beats 1/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · emotion</a>               59.1%  █··········● beats 1/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · banking77</a>             55.3%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · sst5</a>                  34.6%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · massive en</a>            54.1%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · massive zh</a>            30.4%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · prompt injections</a>     70.7%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · typed decisions</a>       36.4%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jevbench original</a>     70.8%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jevbench easy</a>         95.8%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jevbench hard</a>         29.7%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · reflexbench reflex…</a>   59.0%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya triage</a>       62.5%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya moderation</a>   67.8%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya routing</a>      64.2%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya claims</a>       90.0%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya reviews</a>      70.7%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya guard</a>        60.6%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya multiling…</a>   57.8%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya needle</a>       50.2%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · clinc150 oos</a>          55.7%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
+<a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · aegis2 prompt</a>         49.6%  ●··········█ beats 0/1                              —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -60,17 +111,60 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/convaiinnovations__laya/1c5edc17a7acd8701df6fc341c0d179f1c62c982/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   66% ▇▇▇▇▇▇▇▇
+<a name="ollaya-oct2026-original-runs"></a><a href="https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-typed-decisions-rtx5090-cuda.json">Ollaya · original runs</a>                         14   33% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.9
+weighted average                                   = 24.5
 </pre>
 
-<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
+<sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt)) · Ollaya · original runs ([Apache-2.0](../../licenses/ollaya-Apache-2.0.txt))</sub>
+
+<details><summary>Not counted (26)</summary>
+
+<pre>
+source                  test                            score  why
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · ag news</a>          94.3%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · emotion</a>          59.1%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · banking77</a>        55.3%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · boolq</a>            84.6%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · sst5</a>             34.6%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · xnli en</a>          86.0%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · xnli zh</a>          61.5%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · massive en</a>       54.1%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · massive zh</a>       30.4%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · prompt injecti…</a>  70.7%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · typed decisions</a>  36.4%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jevbench origi…</a>  70.8%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jevbench easy</a>    95.8%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jevbench hard</a>    29.7%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · reflexbench re…</a>  59.0%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya triage</a>  62.5%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya moder…</a>  67.8%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya routi…</a>  64.2%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya claims</a>  90.0%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya revie…</a>  70.7%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya guard</a>   60.6%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya multi…</a>  57.8%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · jev laya needle</a>  50.2%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · clinc150 oos</a>     55.7%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · turtlebench</a>      42.6%  too few models have it yet
+CYMCharming · system1…  <a href="https://github.com/CYMCharming/system1bench/blob/5f0e94a00480e0e6fc08598427bba6924b22ac7a/docs/JEV_RESULTS.en.md">system1bench · aegis2 prompt</a>    49.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-No verified API or local download yet.
+### Other ways to run it
 
-Official weights and documentation: [huggingface.co/convaiinnovations](https://huggingface.co/convaiinnovations/laya)
+1. Run it as published (ollaya-f16, needs 1.7 GB, NVIDIA only, from [github.com/ollaya-dev](https://github.com/ollaya-dev/ollaya/blob/9b8698e39f11a0f0bcd08ad686de51cd1b4f6fa8/results/runs/2026-10-14-latency-rtx5090-cuda.json))
+   
+   ```sh
+   ollaya run laya:en --preset triage "The customer requests a refund."
+   ```
+
+[Download model files](https://huggingface.co/convaiinnovations/laya/tree/1c5edc17a7acd8701df6fc341c0d179f1c62c982) · Published model files verified. This is the revision recorded by the benchmark. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity\_note. The command was not executed in this review. [Evidence](https://huggingface.co/api/models/convaiinnovations/laya/revision/1c5edc17a7acd8701df6fc341c0d179f1c62c982); checked 2026-10-31.
+
+Model repository and documentation: [huggingface.co/convaiinnovations](https://huggingface.co/convaiinnovations/laya)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-convaiinnovations-laya-1c5edc17) · [JSON](https://whatmodel.sh/api?format=json&all=1)

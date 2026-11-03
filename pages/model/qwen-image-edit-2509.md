@@ -76,6 +76,6 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
    sd-cli --diffusion-model models/Qwen-Image-Edit-2509-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'Qwen Image Edit 2509'"
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-Edit-2509)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-Edit-2509)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-edit-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

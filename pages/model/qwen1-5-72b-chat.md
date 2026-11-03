@@ -55,8 +55,8 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           29.3%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 25/61    medium · avg 38%       9.3%  at its level
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                              42.0%  ▂▂▃▄▄█▁●▅▃▁▃ beats 28/42    medium · avg 52%       7.1%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro</a>                                       47.1%  ▃▂▅█●·█▃▅··▂ beats 11/23    medium · avg 54%       4.1%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>                  32.6%  ▃▂·▆▆●█▆▅▃▃▃ beats 11/33    medium · avg 39%       2.8%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>                  39.8%  ▂▁▁▄▂▅●█▆▂▂▂ beats 27/58    medium · avg 48%       2.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (maker)</a>                32.6%  ▃▂·▆▆●█▆▅▃▃▃ beats 11/33    medium · avg 39%       2.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (maker)</a>                39.8%  ▂▁▁▄▂▅●█▆▂▂▂ beats 27/58    medium · avg 48%       2.8%  at its level
 <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.9277 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 30/52    avg 43.019 WB-Score    2.7%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             63.2%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 42/95    medium · avg 65%       2.0%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   28.8%  ▁▁▁●▂▄▆▄▅▇█▅ beats 15/211   hard · avg 39%         1.8%  sharp
@@ -77,7 +77,7 @@ source                                    results  share of the score
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1    9% ▇
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1    9% ▇
 <a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1    6% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2    6% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (submitted / maker-r…</a>        2    6% ▇
 <a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1    4% ▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    3% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/4491b06c6382aebe3224461fc7209b57f7beb1ae/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
@@ -174,6 +174,6 @@ Other versions: Q8_0 (~87.25 GB) `ollama run qwen:72b-chat-v1.5-q8_0`
    mlx_lm.server --model mlx-community/Qwen1.5-72B-Chat-4bit
    ```
 
-Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-72B-Chat)
+Model repository and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-72B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-72b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

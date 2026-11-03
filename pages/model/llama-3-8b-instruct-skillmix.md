@@ -47,6 +47,6 @@ weighted average                              = 52.8
 
 No verified API or local download yet.
 
-Official weights and documentation: [huggingface.co/PrincetonPLI](https://huggingface.co/PrincetonPLI/Llama-3-8B-Instruct-SkillMix)
+Model repository and documentation: [huggingface.co/PrincetonPLI](https://huggingface.co/PrincetonPLI/Llama-3-8B-Instruct-SkillMix)
 
 [interactive version](https://whatmodel.sh/model/llama-3-8b-instruct-skillmix) · [JSON](https://whatmodel.sh/api?format=json&all=1)

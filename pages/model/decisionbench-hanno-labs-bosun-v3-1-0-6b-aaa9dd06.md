@@ -4,52 +4,52 @@
 
 # bosun-v3.1-0.6b (DecisionBench aaa9dd06)
 
-Hanno Labs · 0.6B params · apache-2.0
+Hanno Labs · released 2026-09-22 · 0.6B params · apache-2.0
 
-**score 75.0** ±1.2 · comparison only: no current run option verified · from 27 benchmark results across 1 source · † every result so far was reported by its maker
-
-Score within the [Decision Index 0.4.1: ACOS (per-review F1)](https://whatmodel.sh/decision?set=decision-index-041-acos%40decision-index-public-041&score=set) comparison set only.
+**score 64.1** ±1.8 · #65 of 355 · from 27 benchmark results across 1 source · † no independently run results verified
 
 ## What it's good at
 
 <sub>● marks bosun-v3.1-0.6b (DecisionBench aaa9dd06) among every model on that task or test, worst to best.</sub>
 
 <pre>
-task       vs the others      rank  counts  tests
-workflows  ▁▁▃▃▃▁▂▁▂▅█●   #2 of 57     99%     27
+task       vs the others        rank  counts  tests
+workflows  ▁▁▁▂▁▂▂▆█●▁▁   #10 of 114     99%     27
 </pre>
 
-<details><summary>workflows · #2 of 57 · 99% of its score</summary>
+<details><summary>workflows · #10 of 114 · 99% of its score</summary>
+
+Beats [baselabs mammoth-1 (27B)](decision-mammoth-1.md), [Nace.AI Drex Max v1 (27B)](decision-drex-max-v1.md), [Perplexity Decider v1.2 (27B)](decision-pplx-decider-v1-2.md) here, though they rank higher overall. Trails [Microsoft-Decision-1](microsoft-decision-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · action selecti…</a>   66.9%  ▂▁▂▃▄▃▁▁▂█▇● beats 55/56  hard · avg 26%          19%  sharp · at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   74.0%  ▁▁▁▁▂▂▁▁▁▁▃● beats 40/56  hard · avg 29%          13%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   71.0%  ▁▁·▃▁▁▁▁▁▁▃● beats 41/56  hard · avg 22%          11%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · record classif…</a>   47.0%  ▃▂▁▂▂▂▄▁▃▆●█ beats 45/56  hard · avg 21%          11%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · verification (…</a>   60.5%  ▁▁▅▁▃▂▂▁▁▇●█ beats 40/56  medium · avg 40%       7.5%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · document recor…</a>   66.8%  ▂▂·▁▂▄▃▆▄█▁● beats 55/56  hard · avg 27%         5.8%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   70.3%  ▁▁▅▅▃▃▅█▃▃·● beats 55/56  hard · avg 27%         5.0%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   94.0%  ▁·▁·▂▃▄▃▂█▄● beats 56/56  medium · avg 45%       3.3%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · review scoring…</a>   69.0%  ▁······▂▃▅▇● beats 55/56  hard · avg 32%         3.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · content classi…</a>   80.0%  ▁····▁▁▁▁▁▁● beats 51/56  medium · avg 41%       2.9%  sharp
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · target selecti…</a>   41.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 37/56  very hard · avg 11%    2.9%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   55.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 39/56  very hard · avg 12%    2.8%  sharp · at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · completion ass…</a>   95.0%  ▁▁▂▃▄·▂▁▁▆█● beats 54/56  medium · avg 51%       2.7%  sharp · maxed out
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   74.0%  ▁▁·▁▂▂▁▃▃█▇● beats 55/56  medium · avg 45%       2.1%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   96.0%  ▃▃▂·▁▁▁▁▁▁█● beats 55/56  medium · avg 38%       2.0%  sharp · maxed out · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   43.1%  ▂·▁▁▆●▅▃▃▂▁▁ beats 27/56  hard · avg 33%         1.3%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   91.3%  █▁▂▁▁▁▁▁▂▅▁● beats 55/56  medium · avg 55%       0.8%  typical
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · document workf…</a>   91.4%  █▄▃▁▁▃▂▂▁·●▁ beats 55/56  medium · avg 51%       0.8%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.5%  ▁▁▁▂▆▃▃●···▁ beats 52/56  medium · avg 38%       0.7%  at its level
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · document class…</a>   25.0%  ▂▁·▂▁▁▁▄▁▂●█ beats 33/56  very hard · avg 13%    0.5%  at its level · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · safety gating …</a>   96.0%  ▂·····▆█▂▂▄● beats 46/56  medium · avg 51%       0.4%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   90.0%  ▁·▁▁·▁▁█▂▃█● beats 55/56  medium · avg 55%       0.3%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · context manage…</a>   94.0%  ▁·····▁▇▆▁█● beats 55/56  medium · avg 59%       0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · content modera…</a>  100.0%  ▁····▃▅▃▂▂·● beats 56/56  medium · avg 61%       0.2%  sharp · noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   99.9%  ▁·▁▄▇▄▅▄▂▁▄● beats 55/56  medium · avg 46%       0.2%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · function agent…</a>   97.3%  ▃▃▄▅▆▂▅▄▃▄●▃ beats 49/56  medium · avg 52%       0.1%  noisy
-<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · routing triage…</a>   86.1%  █▁···▁·▂▆▅▂● beats 53/56  medium · avg 37%       0.0%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · action selecti…</a>   66.9%  ▂▁▂▃▄▃▁▁▂█▇● beats 55/56  medium · avg 51%        22%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · routing (all-r…</a>   74.0%  ▁▁▁▁▂▂▁▁▁▁▃● beats 40/56  medium · avg 64%        12%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · record classif…</a>   47.0%  ▃▂▁▂▂▂▄▁▃▆●█ beats 45/56  medium · avg 39%        11%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · navigation (al…</a>   71.0%  ▁▁·▃▁▁▁▁▁▁▃● beats 41/56  medium · avg 58%        10%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · verification (…</a>   60.5%  ▁▁▅▁▃▂▂▁▁▇●█ beats 40/56  medium · avg 56%       7.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · document recor…</a>   66.8%  ▂▂·▁▂▄▃▆▄█▁● beats 55/56  medium · avg 46%       5.9%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · rubric scoring…</a>   70.3%  ▁▁▅▅▃▃▅█▃▃·● beats 55/56  medium · avg 45%       5.0%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · triage (all-re…</a>   94.0%  ▁·▁·▂▃▄▃▂█▄● beats 56/56  easy · avg 78%         3.4%  sharp
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · review scoring…</a>   69.0%  ▁······▂▃▅▇● beats 55/56  medium · avg 52%       3.2%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · content classi…</a>   80.0%  ▁····▁▁▁▁▁▁● beats 51/56  easy · avg 73%         2.8%  typical
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · completion ass…</a>   95.0%  ▁▁▂▃▄·▂▁▁▆█● beats 54/56  very easy · avg 86%    2.7%  sharp · maxed out
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · target selecti…</a>   41.0%  ▁▁·▁▁▁▃▁▂▁▁● beats 37/56  hard · avg 29%         2.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · retrieval rank…</a>   55.0%  ▁▁·▁▁▂▃▂▃▁▁● beats 39/56  medium · avg 35%       2.7%  at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · risk scoring (…</a>   74.0%  ▁▁·▁▂▂▁▃▃█▇● beats 55/56  medium · avg 62%       2.0%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · bounded extrac…</a>   96.0%  ▃▃▂·▁▁▁▁▁▁█● beats 55/56  very easy · avg 86%    1.9%  sharp · maxed out · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · reasoning (all…</a>   43.1%  ▂·▁▁▆●▅▃▃▂▁▁ beats 27/56  medium · avg 52%       1.3%  at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · document workf…</a>   91.4%  █▄▃▁▁▃▂▂▁·●▁ beats 55/56  easy · avg 66%         0.8%  blunt · at its level
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · retrieval veri…</a>   91.3%  █▁▂▁▁▁▁▁▂▅▁● beats 55/56  easy · avg 74%         0.7%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · guardrails mod…</a>   63.5%  ▁▁▁▂▆▃▃●···▁ beats 52/56  medium · avg 52%       0.6%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · document class…</a>   25.0%  ▂▁·▂▁▁▁▄▁▂●█ beats 33/56  hard · avg 21%         0.4%  blunt · at its level · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · safety gating …</a>   96.0%  ▂·····▆█▂▂▄● beats 46/56  easy · avg 77%         0.4%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · semantic filte…</a>   90.0%  ▁·▁▁·▁▁█▂▃█● beats 55/56  easy · avg 71%         0.3%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · context manage…</a>   94.0%  ▁·····▁▇▆▁█● beats 55/56  easy · avg 73%         0.2%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · content modera…</a>  100.0%  ▁····▃▅▃▂▂·● beats 56/56  easy · avg 82%         0.2%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · entity alignme…</a>   99.9%  ▁·▁▄▇▄▅▄▂▁▄● beats 55/56  easy · avg 66%         0.2%  noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · function agent…</a>   97.3%  ▃▃▄▅▆▂▅▄▃▄●▃ beats 49/56  easy · avg 68%         0.1%  blunt · noisy
+<a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">DecisionBench v1 · routing triage…</a>   86.1%  █▁···▁·▂▆▅▂● beats 53/56  medium · avg 42%       0.0%  blunt · at its level · noisy
 </pre>
 
 </details>
@@ -62,15 +62,15 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="decisionbench-results-20261031"></a><a href="https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/Hanno-Labs__bosun-v3.1-0.6b/aaa9dd06d4d6501b33df61942472fed9284bc5e6/DecisionBench.json">Hanno Labs DecisionBench v1 reviewed re…</a>       27   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 75.0
+weighted average                                   = 64.1
 </pre>
 
 <sub>Licences: Hanno Labs DecisionBench v1 reviewed results ([CC0 1.0](../../licenses/decisionbench-results-CC0.txt))</sub>
 
 ## How to run it
 
-No verified API or local download yet.
+[Download model files](https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b/tree/aaa9dd06d4d6501b33df61942472fed9284bc5e6) · Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry. [Evidence](https://huggingface.co/api/models/Hanno-Labs/bosun-v3.1-0.6b/revision/aaa9dd06d4d6501b33df61942472fed9284bc5e6); checked 2026-10-31.
 
-Official weights and documentation: [huggingface.co/Hanno-Labs](https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b)
+Model repository and documentation: [huggingface.co/Hanno-Labs](https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b)
 
 [interactive version](https://whatmodel.sh/model/decisionbench-hanno-labs-bosun-v3-1-0-6b-aaa9dd06) · [JSON](https://whatmodel.sh/api?format=json&all=1)

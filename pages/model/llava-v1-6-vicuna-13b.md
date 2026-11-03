@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 34.1** ±5.5 · #846 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 34.1** ±5.5 · #846 of 962 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † no independently run results verified
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -24,9 +24,9 @@ vision &amp; documents  ▁●▂▂▁▃▄▂▆▇█▄   #151 of 156*     
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md), [LLaVA-v1.6-34B](llava-v1-6-34b.md) here, though they rank higher overall.
 
 <pre>
-test              result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>   36.2%  ▁····●▁▃█▆▆▅ beats 1/53   medium · avg 59%     74%  small run
-<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>      67.1%  ▁▁▁●▅▁▃·▃▃▃█ beats 3/24   easy · avg 77%       12%  blunt · at its level · small run
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (maker)</a>   36.2%  ▁····●▁▃█▆▆▅ beats 1/53   medium · avg 59%     74%  small run
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (maker)</a>      67.1%  ▁▁▁●▅▁▃·▃▃▃█ beats 3/24   easy · avg 77%       12%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -36,10 +36,10 @@ test              result  vs the others in its run  difficulty        counts  wh
 Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                            results  share of the score
-<a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>        2   86% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle               14% ▇▇
-weighted average                           = 34.1
+source                                    results  share of the score
+<a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (submitted /…</a>        2   86% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       14% ▇▇
+weighted average                                   = 34.1
 </pre>
 
 <sub>Licences: LLaVA repository model zoo ([Apache-2.0](https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE))</sub>

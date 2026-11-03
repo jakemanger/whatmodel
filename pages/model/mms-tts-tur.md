@@ -50,6 +50,6 @@ weighted average                        = 18.2
    uv run --python 3.11 --with transformers --with torch --with scipy python -c "from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-tur'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-tur'); inputs = tokenizer('Merhaba, nasılsınız?', return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('out.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())"
    ```
 
-Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/mms-tts-tur)
+Model repository and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/mms-tts-tur)
 
 [interactive version](https://whatmodel.sh/model/mms-tts-tur) · [JSON](https://whatmodel.sh/api?format=json&all=1)

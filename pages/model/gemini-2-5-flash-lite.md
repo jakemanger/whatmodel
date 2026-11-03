@@ -50,7 +50,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (la…</a>   55.5%  ●·▃·▃▃▃·▃▃█▅ beats 0/11   medium · avg 38%     53%  at its level
+<a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions) (ma…</a>   55.5%  ●·▃·▃▃▃·▃▃█▅ beats 0/11   medium · avg 38%     53%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md">MATH-Vision</a>                          52.1%  ▁▁·▁··●▁▃▇▇█ beats 4/24   medium · avg 47%     10%  at its level
 </pre>
 
