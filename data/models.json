@@ -79180,7 +79180,9 @@
       "checked": "2026-10-31",
       "revision": "8f052a8130e599b53e5324c34f0f5ff90696e1c6",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-24",
+    "released_source": "https://huggingface.co/PelaAI/KnowLine-31B-Gen1/blob/8f052a8130e599b53e5324c34f0f5ff90696e1c6/README.md"
   },
   {
     "id": "decision-glide-v1-2",
@@ -79205,7 +79207,9 @@
       "checked": "2026-10-31",
       "revision": "a7e45896be7c96ba3354891da790c5ec99c30b6c",
       "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-22",
+    "released_source": "https://fastino.ai/blog/training-glide-sota-decision-model"
   },
   {
     "id": "decision-sieve-31b-v3",
@@ -79230,7 +79234,9 @@
       "checked": "2026-10-31",
       "revision": "8fcee858f7f20a50bfa3c8f984c22adb3cbb46a2",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-27",
+    "released_source": "https://huggingface.co/sthanika-ai/Sieve-31B-v3/commit/481c43fb8ab910e6c9ca83d229ae6a32a9f18f5c"
   },
   {
     "id": "decision-turion-jev-31b",
@@ -79380,7 +79386,9 @@
       "checked": "2026-10-31",
       "revision": "9d1962f193e48a68cf0f3598dc7fb4462fd23ad9",
       "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-21",
+    "released_source": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/"
   },
   {
     "id": "decision-ainvest-decision-27b-v1-0",
@@ -79405,7 +79413,9 @@
       "checked": "2026-10-31",
       "revision": "96599823ab01c9c06b61598ee38704d454bc3b71",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-27",
+    "released_source": "https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0/commit/96599823ab01c9c06b61598ee38704d454bc3b71"
   },
   {
     "id": "decision-oenogarum",
@@ -79480,7 +79490,9 @@
       "checked": "2026-10-31",
       "revision": "ae156900e9f338e423042b89e25d0fd8093064d4",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-17",
+    "released_source": "https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1/commit/ae156900e9f338e423042b89e25d0fd8093064d4"
   },
   {
     "id": "decision-startlux-decision-v1-1-27b-instant",
@@ -79724,7 +79736,9 @@
       "source": "https://github.com/ALERIA-ML/aleria-judge/blob/v1.1.1/README.md",
       "checked": "2026-10-31",
       "note": "Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified."
-    }
+    },
+    "released": "2026-10-19",
+    "released_source": "https://github.com/ALERIA-ML/aleria-judge/releases/tag/v1.1.1"
   },
   {
     "id": "decision-drex-max-v1",
@@ -79772,7 +79786,9 @@
       "checked": "2026-10-31",
       "revision": "655aa7051c2ab39660193ebb70c8926d3d2cb7aa",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10",
+    "released_source": "https://github.com/bespokelabsai/nimble/blob/main/README.md"
   },
   {
     "id": "decision-anyjev-tacitus-31b",
@@ -79822,7 +79838,9 @@
       "checked": "2026-10-31",
       "revision": "53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/Mapika/decider-31b/blob/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md"
   },
   {
     "id": "decision-knowline-35b-a3b-gen1-5",
@@ -79847,7 +79865,9 @@
       "checked": "2026-10-31",
       "revision": "9adcf717361b2f7d2946d093f1e85efdf1e59010",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-22",
+    "released_source": "https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1.5/blob/9adcf717361b2f7d2946d093f1e85efdf1e59010/README.md"
   },
   {
     "id": "decision-oneshot-27b",
@@ -79920,7 +79940,9 @@
       "checked": "2026-10-31",
       "revision": "4f25c70ece312ec4e74c47f1c5264cb2aeea956a",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-11",
+    "released_source": "https://huggingface.co/sanghwa-na/bobcat-1.3/blob/4f25c70ece312ec4e74c47f1c5264cb2aeea956a/README.md"
   },
   {
     "id": "decision-amos-1-large",
@@ -79945,7 +79967,9 @@
       "checked": "2026-10-31",
       "revision": "d67e051c763dc88a1e3662a5003c1e1ea5ffaa74",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-30",
+    "released_source": "https://huggingface.co/mukaddamzaid/amos-1-large/blob/d67e051c763dc88a1e3662a5003c1e1ea5ffaa74/serve/amos/serve.py"
   },
   {
     "id": "decision-matilda-decision-v1",
@@ -80017,7 +80041,9 @@
       "checked": "2026-10-31",
       "revision": "7486767f8546beb510e61aef07d0e74219ceb4e3",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-22",
+    "released_source": "https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2.5/blob/7486767f8546beb510e61aef07d0e74219ceb4e3/README.md"
   },
   {
     "id": "decision-anyjev-l0-gemma-4-31b",
@@ -80108,7 +80134,9 @@
       "source": "https://github.com/aminry/decisio/blob/HEAD/README.md",
       "checked": "2026-10-31",
       "note": "Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified."
-    }
+    },
+    "released": "2026-10-05",
+    "released_source": "https://github.com/aminry/decisio/releases/tag/v0.6.0"
   },
   {
     "id": "decision-cerno-27b",
@@ -80180,7 +80208,9 @@
       "checked": "2026-10-31",
       "revision": "08645834899cb8e00d370b77a3f4e0baa3241dd1",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-01",
+    "released_source": "https://huggingface.co/torchcast-ai/torchcast-decision-27b/blob/08645834899cb8e00d370b77a3f4e0baa3241dd1/torchcast_decision/gguf_server.py"
   },
   {
     "id": "decision-onejev1-6-27b",
@@ -80205,7 +80235,9 @@
       "checked": "2026-10-31",
       "revision": "b8c4a4579e310b24973e5486a6a9ed5866a1b6f6",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-17",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decision-qwen-decision-27b-noncausal",
@@ -80305,7 +80337,9 @@
       "checked": "2026-10-31",
       "revision": "14537f08b0374edf9867ed0a4d2bd8df59e0400c",
       "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-21",
+    "released_source": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/"
   },
   {
     "id": "jev-1-14",
@@ -80329,7 +80363,7 @@
     "context_note": "Observed 2026-10-31: 64k per request and 32k per question by default; long-context header is optional and is not the benchmark default.",
     "model_repo": "https://docs.typesafe.ai/models",
     "license": "proprietary",
-    "released": "2026-10",
+    "released": "2026-10-14",
     "released_source": "https://docs.typesafe.ai/models"
   },
   {
@@ -80405,7 +80439,9 @@
       "checked": "2026-10-31",
       "revision": "8ed4d904ab94b007b37fc645f00aaca0173defe4",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-18",
+    "released_source": "https://huggingface.co/sthanika-ai/Sieve-27B-v2/commit/f84ebfaca4073850add1f37eec4f3474d40093bb"
   },
   {
     "id": "decision-mogan-decision-31b-it",
@@ -80480,7 +80516,9 @@
       "checked": "2026-10-31",
       "revision": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/jaredpalmer/kev-27b/blob/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md"
   },
   {
     "id": "decision-xor-26b-a4b-v1-2",
@@ -80505,7 +80543,9 @@
       "checked": "2026-10-31",
       "revision": "e4d0e99442def315d0c8fc9430cfd78367be6466",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-16",
+    "released_source": "https://huggingface.co/juspay/Xor-26B-A4B/commit/0a7eb56e78fe4c501013278ad4d4c82a753d5a05"
   },
   {
     "id": "jev-1-13",
@@ -80528,7 +80568,9 @@
     "context_source": "https://docs.typesafe.ai/models",
     "context_note": "Observed 2026-10-31: 64k per request and 32k per question by default; long-context header is optional and is not the benchmark default.",
     "model_repo": "https://docs.typesafe.ai/models",
-    "license": "proprietary"
+    "license": "proprietary",
+    "released": "2026-09-15",
+    "released_source": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
   },
   {
     "id": "decision-span-02",
@@ -80678,7 +80720,9 @@
       "checked": "2026-10-31",
       "revision": "d0dccc052ee844ab7481ddfacad1b7335ab394e0",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-08",
+    "released_source": "https://github.com/Shanghua-Gao/RSI-Jev/releases/tag/v6.1-VL-27B"
   },
   {
     "id": "decision-knowline-9b-gen1",
@@ -80925,7 +80969,9 @@
       "checked": "2026-10-31",
       "revision": "779944d2cc8ffa19cef386aee83c83bcb967ade2",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-22",
+    "released_source": "https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5/blob/779944d2cc8ffa19cef386aee83c83bcb967ade2/README.md"
   },
   {
     "id": "decision-blink-v0-3-26b-a4b-nvfp4",
@@ -80975,7 +81021,9 @@
       "checked": "2026-10-31",
       "revision": "8e9f9a3aa4293190fcc4a6ff17ff5f3251f4c270",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-01",
+    "released_source": "https://huggingface.co/theunnecessarythings/JADE/commit/fdbed23603604021fbd46295fc7459b4fdd496cb"
   },
   {
     "id": "decision-wald-26b-a4b",
@@ -81192,7 +81240,9 @@
       "checked": "2026-10-31",
       "revision": "a286a461e6daedee1e2400bdbe81cbb741cd592f",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-28",
+    "released_source": "https://huggingface.co/juspay/xor/commit/a286a461e6daedee1e2400bdbe81cbb741cd592f"
   },
   {
     "id": "decision-jev-gemma4-26b-a4b",
@@ -81242,7 +81292,9 @@
       "checked": "2026-10-31",
       "revision": "259e5470b0abfd795a0bbb4598d6e319fa224a38",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-17",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decision-drex-v2-0",
@@ -81377,7 +81429,9 @@
       "checked": "2026-10-31",
       "revision": "8e927b9b4afdbb14479fac10a7364d1a695be208",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
-    }
+    },
+    "released": "2026-10-06",
+    "released_source": "https://github.com/bespokelabsai/nimble/blob/main/README.md"
   },
   {
     "id": "decision-senova-4b-v2",
@@ -81424,7 +81478,9 @@
       "source": "https://github.com/aminry/decisio/blob/HEAD/README.md",
       "checked": "2026-10-31",
       "note": "Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified."
-    }
+    },
+    "released": "2026-10-04",
+    "released_source": "https://github.com/aminry/decisio/releases/tag/v0.4.0"
   },
   {
     "id": "decision-vllm-sr-d3-mini",
@@ -81531,7 +81587,9 @@
       "checked": "2026-10-31",
       "revision": "bb248003b6eb771a995cb3672ad47db090a9cd48",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-17",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decision-decisio-0-4-0-gemma-4-12b",
@@ -81553,7 +81611,9 @@
       "source": "https://github.com/aminry/decisio/blob/HEAD/README.md",
       "checked": "2026-10-31",
       "note": "Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified."
-    }
+    },
+    "released": "2026-10-04",
+    "released_source": "https://github.com/aminry/decisio/releases/tag/v0.4.0"
   },
   {
     "id": "decision-mica-v0-5-4b",
@@ -81578,7 +81638,9 @@
       "checked": "2026-10-31",
       "revision": "f87da85ba6f53c0a67c8b9407a03d2b18274c24a",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/sky7350/Mica-v0.5-4B/blob/f87da85ba6f53c0a67c8b9407a03d2b18274c24a/README.md"
   },
   {
     "id": "decision-purplemist-flash-1-0",
@@ -81628,7 +81690,9 @@
       "checked": "2026-10-31",
       "revision": "80010f97eaa989b41c908ecba7d7b7fadaa99239",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-19",
+    "released_source": "https://huggingface.co/apertixai/cerno-9b/blob/80010f97eaa989b41c908ecba7d7b7fadaa99239/README.md"
   },
   {
     "id": "decision-sieve-9b-plus",
@@ -81653,7 +81717,9 @@
       "checked": "2026-10-31",
       "revision": "d5564ca95a06881d7532dfede5f7d3fca5621e19",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://huggingface.co/sthanika-ai/Sieve-9B-v2/commit/c353ecf0a0c9d545c64a3db9c563d5183cbc2acc"
   },
   {
     "id": "decision-decider-35b-nvfp4",
@@ -81678,7 +81744,9 @@
       "checked": "2026-10-31",
       "revision": "798555c06e419c4638c9ebd06c78ed8b5e92c868",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-20",
+    "released_source": "https://huggingface.co/Mapika/decider-35b-a3b-nvfp4/blob/798555c06e419c4638c9ebd06c78ed8b5e92c868/decider_config.json"
   },
   {
     "id": "decision-winnow-12b-q8",
@@ -81863,7 +81931,9 @@
       "checked": "2026-10-31",
       "revision": "64ce98c8b3a2661362ff6213bc350c26124247ea",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-16",
+    "released_source": "https://huggingface.co/corners-ai/CoCo-Decision-2.4-4B/blob/64ce98c8b3a2661362ff6213bc350c26124247ea/README.md"
   },
   {
     "id": "decision-jevk5-9b-v0-3-3",
@@ -81935,7 +82005,9 @@
       "checked": "2026-10-31",
       "revision": "7f93b1926dc23c62635538f5d40f1dabbddee5b6",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-07",
+    "released_source": "https://github.com/Shanghua-Gao/RSI-Jev/releases/tag/v6.1-VL"
   },
   {
     "id": "decision-jegue-0-1",
@@ -81985,7 +82057,9 @@
       "checked": "2026-10-31",
       "revision": "9adc559ff7ec5baffade3998f7bca85da0d124ed",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-09",
+    "released_source": "https://huggingface.co/eljiwo/jiwo-4b/blob/9adc559ff7ec5baffade3998f7bca85da0d124ed/README.md"
   },
   {
     "id": "decision-jpt-9b",
@@ -82060,7 +82134,9 @@
       "checked": "2026-10-31",
       "revision": "fee89b076e2263bfa8bce8d34142caa4ca733a48",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-22",
+    "released_source": "https://huggingface.co/akhilaaa3/Jev-Omni/commit/22d65eb917eccd4b6273fa5949eca79658fbf7cd"
   },
   {
     "id": "decision-solomon-v11-bf16-encoding",
@@ -82085,7 +82161,9 @@
       "checked": "2026-10-31",
       "revision": "6b9bcc4a517bdbcecd4493f962446436c368ccb5",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-21",
+    "released_source": "https://huggingface.co/DoccyHealth/Solomon/blob/6b9bcc4a517bdbcecd4493f962446436c368ccb5/README.md"
   },
   {
     "id": "decision-standard-one-8b-sh-v4",
@@ -82245,7 +82323,9 @@
       "checked": "2026-10-31",
       "revision": "eb411e0830f437e8554ec5e709c120cd7969d85d",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://huggingface.co/sthanika-ai/Sieve-9B/commit/98ff960eecd245a81ca10b39022a2b63578aedcf"
   },
   {
     "id": "decision-cerno-4b-v11",
@@ -82270,7 +82350,9 @@
       "checked": "2026-10-31",
       "revision": "ed4b5c59b542ee96c227ee874776c973980c640b",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-19",
+    "released_source": "https://huggingface.co/apertixai/cerno-4b/blob/ed4b5c59b542ee96c227ee874776c973980c640b/README.md"
   },
   {
     "id": "decision-sieve-4b",
@@ -82295,7 +82377,9 @@
       "checked": "2026-10-31",
       "revision": "86e80288f6fb3d2d3eb4e72d1a3d4e83fda16520",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://huggingface.co/sthanika-ai/Sieve-4B/commit/8aa532d092e022aa168bbc06cc898101e01b2858"
   },
   {
     "id": "decision-kev-9b-v2",
@@ -82320,7 +82404,9 @@
       "checked": "2026-10-31",
       "revision": "db029f08b290afd9fee4aa4bbcd9ae48602d1eb0",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-30",
+    "released_source": "https://huggingface.co/jaredpalmer/kev-9b/blob/db029f08b290afd9fee4aa4bbcd9ae48602d1eb0/README.md"
   },
   {
     "id": "decision-nari-decision-4b-v3-2",
@@ -82345,7 +82431,9 @@
       "checked": "2026-10-31",
       "revision": "029c4628a38859dce5b0db1742e9c97545aabe12",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-18",
+    "released_source": "https://huggingface.co/blackmallangcow/nari-decision-4b/blob/029c4628a38859dce5b0db1742e9c97545aabe12/README.md"
   },
   {
     "id": "decision-aplomb-1",
@@ -82605,7 +82693,9 @@
       "checked": "2026-10-31",
       "revision": "66eeaee47dce202c4d802e469ad9b806e0ff6df2",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10",
+    "released_source": "https://github.com/Shanghua-Gao/RSI-Jev/releases/tag/v5.0-VL"
   },
   {
     "id": "decision-djev",
@@ -82699,7 +82789,9 @@
       "checked": "2026-10-31",
       "revision": "434cb21d3a994a953d3ae5788405fcb2c4970554",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-25",
+    "released_source": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/commit/b50e043e22e0e41e7fc0c244e4daa707b8124930"
   },
   {
     "id": "decision-jevk5-v0-3",
@@ -82837,7 +82929,9 @@
       "checked": "2026-10-31",
       "revision": "a713e34a53c6009f4af0cd3c1a1c7c127d4ca63a",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-04",
+    "released_source": "https://huggingface.co/theaviv/Lev1-3.7B/commit/7ea4002eb5cd49af2cf5c9ba990ab0a9006aca09"
   },
   {
     "id": "decision-kev-4b-r10",
@@ -82872,7 +82966,9 @@
       "checked": "2026-10-31",
       "revision": "6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
-    }
+    },
+    "released": "2026-09-24",
+    "released_source": "https://huggingface.co/jaredpalmer/kev-4b/blob/6cfce5c2fa4b4bd64026336ab649c5ca78857d52/README.md"
   },
   {
     "id": "decision-jev-style-2b-v4",
@@ -83406,7 +83502,9 @@
       "checked": "2026-10-31",
       "revision": "c89933c277629b707895bff752c61d2b0664c85e",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-17",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decision-crystal-0-8b",
@@ -83685,7 +83783,9 @@
       "checked": "2026-10-31",
       "revision": "71b7911cf68f7df52fdc2dbf07de1e158bb807f2",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-10",
+    "released_source": "https://huggingface.co/eljiwo/jiwo-0.8b/blob/71b7911cf68f7df52fdc2dbf07de1e158bb807f2/README.md"
   },
   {
     "id": "decision-saina-helm-2-v2",
@@ -83967,7 +84067,9 @@
       "checked": "2026-10-31",
       "revision": "e9ffdddcefc811086f7342384623913c3915d4eb",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://huggingface.co/sthanika-ai/sieve-2b/commit/7ca163101c2e0df836649b26a9e6853c1f33f1bb"
   },
   {
     "id": "decision-wyat-1-800m",
@@ -83992,7 +84094,9 @@
       "checked": "2026-10-31",
       "revision": "552166bdaa102bab14d9c0e4cea893a5a5aa234f",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-18",
+    "released_source": "https://huggingface.co/teilomillet/wyat-1-800m/commit/3e1b8868ce8bede1cdbd88972404009533726e9a"
   },
   {
     "id": "decision-intern-decision-2b",
@@ -84042,7 +84146,9 @@
       "checked": "2026-10-31",
       "revision": "792bab3e270173a32ab7d8912e0441bd748714fe",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://huggingface.co/sthanika-ai/Sieve-0.8B/commit/8b882ca830d614ce8e2632d650153c7aa9c9e4c2"
   },
   {
     "id": "decision-exaone-4-0-1-2b-jev-v0-3",
@@ -84067,7 +84173,9 @@
       "checked": "2026-10-31",
       "revision": "bc5012eabb1c5231cafec849843e51bbb5fb9630",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-04",
+    "released_source": "https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/blob/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md"
   },
   {
     "id": "decision-tasksource-decider-nano-v5",
@@ -84142,7 +84250,9 @@
       "checked": "2026-10-31",
       "revision": "eae2fdc005c4e19f9bd8c42950120667231503df",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-23",
+    "released_source": "https://huggingface.co/Elfsong/jev-ettin-150m-v16/commit/10e1e58c6a18bef3880f83697c9fb323e3181ee6"
   },
   {
     "id": "decision-decision-2-0-eos-0-8b",
@@ -84250,7 +84360,9 @@
       "checked": "2026-10-31",
       "revision": "fc92bea8ec5240050ae0eb52248187a198e9ea04",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-14",
+    "released_source": "https://huggingface.co/codavidgarcia/mola-150m/commit/fc92bea8ec5240050ae0eb52248187a198e9ea04"
   },
   {
     "id": "decision-vllm-sr-d3-edge",
@@ -84310,7 +84422,9 @@
       "checked": "2026-10-31",
       "revision": "186ea4358b70596513cf21425a9aa51c6b1353d4",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-14",
+    "released_source": "https://huggingface.co/codavidgarcia/mola-68m/commit/186ea4358b70596513cf21425a9aa51c6b1353d4"
   },
   {
     "id": "decision-jev-t5-342m-public-v2",
@@ -84330,7 +84444,9 @@
       "checked": "2026-10-31",
       "revision": "97b334940005438cfd846ab14e0d102218719962",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-18",
+    "released_source": "https://huggingface.co/Elfsong/jev-flan-t5-large-20261017-public-v2/commit/97b334940005438cfd846ab14e0d102218719962"
   },
   {
     "id": "decision-decisiontune-1-0",
@@ -84500,7 +84616,9 @@
       "checked": "2026-10-31",
       "revision": "bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A matching Ollaya runtime manifest and published short-workload GPU memory measurement were reviewed separately; see local variants and identity_note. The command was not executed in this review."
-    }
+    },
+    "released": "2026-09-24",
+    "released_source": "https://huggingface.co/jaredpalmer/kev-0.8b/blob/bf75a6a8848ea6960ff2ed108d9ed44c2941174f/README.md"
   },
   {
     "id": "decision-pick-150m-v5",
@@ -84525,7 +84643,9 @@
       "checked": "2026-10-31",
       "revision": "16d738a918bcfcb35fe3fc9e14e22a28760bd525",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-18",
+    "released_source": "https://huggingface.co/lCREEl/pick-150m/commit/2a6e76d6ed3481e0aee8f156b3621d58edb6f565"
   },
   {
     "id": "decision-jpt-0-8b",
@@ -84720,7 +84840,9 @@
       "checked": "2026-10-31",
       "revision": "96314bd83d7b51d415ffa1497405f0f919db43e8",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-24",
+    "released_source": "https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/commit/656ca59be52fd6100eb5dba7bc9e79cddcd09251"
   },
   {
     "id": "decision-tev1-0-8b",
@@ -84851,7 +84973,9 @@
       "checked": "2026-10-31",
       "revision": "3a34cbdfaa1e90f2a9eb6b3bfc5ac5c92a18cb01",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-28",
+    "released_source": "https://github.com/wfzyx/von/releases/tag/v1.3.0"
   },
   {
     "id": "decision-bosun-v3-1-0-6b",
@@ -84876,7 +85000,9 @@
       "checked": "2026-10-31",
       "revision": "5e78a37c8d86860ebac9ef2d5327d6299498498e",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-22",
+    "released_source": "https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b/commit/aaa9dd06d4d6501b33df61942472fed9284bc5e6"
   },
   {
     "id": "decision-vera-spark",
@@ -85226,7 +85352,9 @@
       "checked": "2026-10-31",
       "revision": "a85b127321d580d65176c89ced8273f305745d85",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-25",
+    "released_source": "https://huggingface.co/SupersonicLabs/Julia-1/commit/5278d6b34f90b6ac2832309f23fea901edc84cc9"
   },
   {
     "id": "decision-nirnaya-0-4b",
@@ -85249,7 +85377,9 @@
       "checked": "2026-10-31",
       "revision": "8d81850e41ae31a423d89aaf0b8bd77e946df502",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-06",
+    "released_source": "https://huggingface.co/kshitijthakkar/nirnaya-0.4b-0.2a-decision/commit/6de1583394fa38246dbafde0c201d2a890560d6a"
   },
   {
     "id": "decision-zev-latest",
@@ -85365,7 +85495,9 @@
       "source": "https://github.com/ALERIA-ML/aleria-judge/blob/4956428/README.md",
       "checked": "2026-10-31",
       "note": "Published implementation and setup documentation verified. This entry describes a decision readout or evaluated configuration, not necessarily separate trained weights. Follow the referenced version and model settings; hardware compatibility has not been verified."
-    }
+    },
+    "released": "2026-10-14",
+    "released_source": "https://github.com/ALERIA-ML/aleria-judge/releases/tag/v1.1.0"
   },
   {
     "id": "decision-herbert-v0-5",
@@ -85440,7 +85572,9 @@
       "checked": "2026-10-31",
       "revision": "0742f8d16dd42c97643eec095cfc252acc4db18f",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decision-jev-vision-27b-r2",
@@ -85490,7 +85624,9 @@
       "checked": "2026-10-31",
       "revision": "e800968d38761c190476da5c69c6a5087a3c9b29",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-12",
+    "released_source": "https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1/blob/e800968d38761c190476da5c69c6a5087a3c9b29/README.md"
   },
   {
     "id": "decision-sieve-vision-27b",
@@ -85563,7 +85699,9 @@
       "checked": "2026-10-31",
       "revision": "ec2f276eab207810f576fb1f2d68c2acabd3eb71",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decision-matilda-jev-v1-5",
@@ -85583,7 +85721,9 @@
       "checked": "2026-10-31",
       "revision": "9a732d3d635e519ab06e21f9c60db3b2acd1eed1",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-09",
+    "released_source": "https://huggingface.co/Maincode/Matilda-Jev-v1.5/commit/1b88863924498668725182eab64c9997dffde279"
   },
   {
     "id": "decision-sieve-vision-4b",
@@ -85628,7 +85768,9 @@
       "checked": "2026-10-31",
       "revision": "28ca09c7b76648b24d3561c940d1a7460d12fb8e",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-09",
+    "released_source": "https://huggingface.co/juspay/Xor-26B-A4B/commit/28ca09c7b76648b24d3561c940d1a7460d12fb8e"
   },
   {
     "id": "decision-qev-2b",
@@ -85728,7 +85870,9 @@
       "checked": "2026-10-31",
       "revision": "99d60969338977d3f23a023b1dd7a0fd51946069",
       "note": "Published model files verified. This is a verified repository snapshot; the benchmark does not establish an identical weight revision. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-10-13",
+    "released_source": "https://github.com/OmniJev/OneJev/blob/main/README.md"
   },
   {
     "id": "decisionbench-alibaba-nlp-gte-reranker-modernbert-base-f7481e60",
@@ -85933,7 +86077,9 @@
       "checked": "2026-10-31",
       "revision": "aaa9dd06d4d6501b33df61942472fed9284bc5e6",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-22",
+    "released_source": "https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b/commit/aaa9dd06d4d6501b33df61942472fed9284bc5e6"
   },
   {
     "id": "decisionbench-hanno-labs-bosun-v3-1-1-7b-2ef2d972",
@@ -86052,7 +86198,9 @@
       "checked": "2026-10-31",
       "revision": "fa996cea58e1c1d8d1ab4d7124154f303b017f95",
       "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-19",
+    "released_source": "https://huggingface.co/Mapika/decider-2b/blob/fa996cea58e1c1d8d1ab4d7124154f303b017f95/decider_config.json"
   },
   {
     "id": "decisionbench-mapika-decider-35b-a3b-d9783c58",
@@ -86077,7 +86225,9 @@
       "checked": "2026-10-31",
       "revision": "d9783c58ad4fbff3a6030c8332d29738ec49d22a",
       "note": "Published model files verified. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-20",
+    "released_source": "https://huggingface.co/Mapika/decider-35b-a3b/blob/d9783c58ad4fbff3a6030c8332d29738ec49d22a/README.md"
   },
   {
     "id": "decisionbench-molemo-lab-mojev-0c8695b6",
@@ -86194,7 +86344,9 @@
       "checked": "2026-10-31",
       "revision": "0c7aa498b1627be8da4acf34c863ff0ee0a92785",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-20",
+    "released_source": "https://huggingface.co/ZefanCai/Open-Jev-2B/commit/0c7aa498b1627be8da4acf34c863ff0ee0a92785"
   },
   {
     "id": "decisionbench-zefancai-open-jev-9b-47e96688",
@@ -86216,7 +86368,9 @@
       "checked": "2026-10-31",
       "revision": "47e966881e489511c0c7f5633a9e1960a676a551",
       "note": "Published model files verified. Includes adapters or readout weights; follow the model documentation for the required base model. This is the revision recorded by the benchmark. A local run command and hardware requirements have not been verified for this entry."
-    }
+    },
+    "released": "2026-09-20",
+    "released_source": "https://huggingface.co/ZefanCai/Open-Jev-9B/commit/47e966881e489511c0c7f5633a9e1960a676a551"
   },
   {
     "id": "decisionbench-altslate-certo-decision-model-7628c0da",
@@ -86955,7 +87109,9 @@
     "local": null,
     "source": "https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/openai__gpt-5.6-luna/openrouter-service-snapshot-2026-09-21-reasoning-aware-v1/DecisionBench.json",
     "identity_note": "DecisionBench v1 comparison: openai/gpt-5.6-luna, revision openrouter-service-snapshot-2026-09-21-reasoning-aware-v1; language-model; adapter openrouter-chat-completions-json-schema-reasoning-aware-v1; probability source model-emitted-complete-candidate-probability-vector. Kept separate from newer or unpinned Decision Index recipes; standard prompt, not compact. No unverified runtime or OpenRouter price imported.",
-    "model_repo": "https://openrouter.ai/openai/gpt-5.6-luna"
+    "model_repo": "https://openrouter.ai/openai/gpt-5.6-luna",
+    "released": "2026-07-09",
+    "released_source": "https://developers.openai.com/api/docs/changelog"
   },
   {
     "id": "decisionbench-razorback16-openjev-ec4ff3df",
@@ -87015,7 +87171,9 @@
     "model_repo": "https://openrouter.ai/z-ai/glm-5.3-flash",
     "params_b": 320,
     "params_b_source": "https://github.com/Hanno-Labs/decision-bench-results/blob/e2d6a133cee91b9d8c6fbd076b21f32f3d75c81f/results/z-ai__glm-5.3-flash/openrouter-service-snapshot-2026-09-21-reasoning-aware-v1/DecisionBench.json",
-    "params_note": "Published served parameter count; not a RAM or download-size measurement."
+    "params_note": "Published served parameter count; not a RAM or download-size measurement.",
+    "released": "2026-08-26",
+    "released_source": "https://docs.z.ai/release-notes/new-released"
   },
   {
     "id": "decisionbench-zeroentropy-zerank-2-reranker-5eae30d5",
@@ -87480,7 +87638,9 @@
     "local": null,
     "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
     "identity_note": "System One Bench identifies the tested endpoint as openai/gpt-6-luna-decisions. Hosted service snapshot, not an immutable weight revision. Separate from chat or open-weight models with similar names. API access verified 2026-10-31; benchmark dates are retained per result.",
-    "model_repo": "https://openrouter.ai/openai/gpt-6-luna-decisions"
+    "model_repo": "https://openrouter.ai/openai/gpt-6-luna-decisions",
+    "released": "2026-10-06",
+    "released_source": "https://developers.openai.com/api/docs/changelog"
   },
   {
     "id": "mercury-decide",
@@ -87528,7 +87688,9 @@
     "local": null,
     "source": "https://github.com/alilibx/system-one-bench/blob/add8472db7c92857ccaa77ab1f22a73b93110ba8/README.md",
     "identity_note": "System One Bench identifies the tested endpoint as liquid/d1-ultra. Hosted service snapshot, not an immutable weight revision. Separate from chat or open-weight models with similar names. API access verified 2026-10-31; benchmark dates are retained per result.",
-    "model_repo": "https://openrouter.ai/liquid/d1-ultra"
+    "model_repo": "https://openrouter.ai/liquid/d1-ultra",
+    "released": "2026-10-15",
+    "released_source": "https://www.liquid.ai/blog/d1-ultra"
   },
   {
     "id": "mercury-decide-paid",
@@ -87560,7 +87722,9 @@
     "local": null,
     "source": "https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md",
     "model_repo": "https://openrouter.ai/microsoft/microsoft-decision-1",
-    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Not merged with similarly named open-weight community checkpoints."
+    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Not merged with similarly named open-weight community checkpoints.",
+    "released": "2026-10-09",
+    "released_source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-microsoft-decision-1-in-microsoft-foundry-for-decision-and-classific/4562742"
   },
   {
     "id": "respan-span-01-pro",
@@ -87576,7 +87740,9 @@
     "local": null,
     "source": "https://huggingface.co/datasets/perchscan/benchmark-results/blob/40285b3a4a91e3aeefd0c8f5544f5f8e94a4c3ac/README.md",
     "model_repo": "https://www.respan.ai/docs/documentation/span-01/quickstart",
-    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Not merged with similarly named open-weight community checkpoints."
+    "identity_note": "Named hosted endpoint verified 2026-10-31. Perch records the requested model and test date; the service may change its weights. No immutable current-weight equivalence asserted. Not merged with similarly named open-weight community checkpoints.",
+    "released": "2026-09-24",
+    "released_source": "https://www.respan.ai/models/span-01"
   },
   {
     "id": "solar-decide",
@@ -87592,7 +87758,9 @@
     "local": null,
     "source": "https://github.com/oscarfreyer/decision-model-benchmark/blob/f7ef9e81cfdc89fb98e07cef8212d0778b015595/methods/Study_Protocol.md",
     "model_repo": "https://openrouter.ai/upstage/solar-decide",
-    "identity_note": "Named native decision endpoint verified 2026-10-31. Medical study records exact requested and returned model IDs and pinned Upstage routing. Historical dated service snapshot retained in each result; no claim that current served weights are immutable."
+    "identity_note": "Named native decision endpoint verified 2026-10-31. Medical study records exact requested and returned model IDs and pinned Upstage routing. Historical dated service snapshot retained in each result; no claim that current served weights are immutable.",
+    "released": "2026-09-22",
+    "released_source": "https://console.upstage.ai/docs/models/solar-decide"
   },
   {
     "id": "solar-decide-flash",
@@ -87633,7 +87801,9 @@
       "checked": "2026-10-31",
       "revision": "14c9d90137962d300f3de95633f7b6535e80c5ce",
       "note": "Public, ungated model files verified. Named release; historical hosted weights are not proven byte-identical. Custom native decision head, so no unverified chat-model run command supplied."
-    }
+    },
+    "released": "2026-10-05",
+    "released_source": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/commit/db124e5056059be396ec5ba69b97a33dd6adb815"
   },
   {
     "id": "liquid-d1-1",
